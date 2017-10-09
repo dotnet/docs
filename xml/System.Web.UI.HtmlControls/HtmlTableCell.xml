@@ -39,8 +39,8 @@
 ## Examples  
  The following code example demonstrates how to use an <xref:System.Web.UI.HtmlControls.HtmlTableCell> to modify the contents of a cell in a table. Note that the <xref:System.Web.UI.HtmlControls.HtmlTable.Rows%2A> collection of an <xref:System.Web.UI.HtmlControls.HtmlTable> control contains a collection of the rows (<xref:System.Web.UI.HtmlControls.HtmlTableRow> objects) in the table. The <xref:System.Web.UI.HtmlControls.HtmlTableRow.Cells%2A> collection of an <xref:System.Web.UI.HtmlControls.HtmlTableRow> object is a collection of the cells (<xref:System.Web.UI.HtmlControls.HtmlTableCell> objects) in a row.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTblCell#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTblCell/CS/htmltablecellcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTblCell#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTblCell/VB/htmltablecellvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTblCell#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTblCell/CS/htmltablecellcs.aspx#1)]
+ [!code-aspx-vb[HtmlTblCell#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTblCell/VB/htmltablecellvb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -75,8 +75,8 @@
 ## Examples  
  The following code example demonstrates how to create an instance of an <xref:System.Web.UI.HtmlControls.HtmlTable> control with <xref:System.Web.UI.HtmlControls.HtmlTableCell> controls and place the table on the Web page. Note how the <xref:System.Web.UI.HtmlControls.HtmlTableCell> control's default constructor is used to create a `<td>` element, while its overloaded constructor that takes a string parameter is used with the literal string "th" to create a `<th>` element.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTableCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableCtor/CS/htmltablectorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTableCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableCtor/VB/htmltablectorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTableCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableCtor/CS/htmltablectorcs.aspx#1)]
+ [!code-aspx-vb[HtmlTableCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableCtor/VB/htmltablectorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -117,8 +117,8 @@
 ## Examples  
  The following code example demonstrates how to create an instance of an <xref:System.Web.UI.HtmlControls.HtmlTable> control with <xref:System.Web.UI.HtmlControls.HtmlTableCell> controls and place the table on the Web page. Note how the <xref:System.Web.UI.HtmlControls.HtmlTableCell> control's default constructor is used to create a `<td>` element, while its overloaded constructor that takes a string parameter is used with the literal "th" to create a `<th>` element.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTableCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableCtor/CS/htmltablectorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTableCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableCtor/VB/htmltablectorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTableCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableCtor/CS/htmltablectorcs.aspx#1)]
+ [!code-aspx-vb[HtmlTableCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableCtor/VB/htmltablectorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -172,8 +172,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTableCell.Align%2A> property to programmatically control the alignment of the contents of the cells in an <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTblCellBehavior#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTblCellBehavior/CS/htmltablecellbehaviorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTblCellBehavior#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTblCellBehavior/VB/htmltablecellbehaviorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTblCellBehavior#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTblCellBehavior/CS/htmltablecellbehaviorcs.aspx#1)]
+ [!code-aspx-vb[HtmlTblCellBehavior#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTblCellBehavior/VB/htmltablecellbehaviorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -238,8 +238,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTableCell.BgColor%2A> property to programmatically control the background color of the cells in an <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTblCellAppearance#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTblCellAppearance/CS/htmltablecellappearancecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTblCellAppearance#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTblCellAppearance/VB/htmltablecellappearancevb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTblCellAppearance#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTblCellAppearance/CS/htmltablecellappearancecs.aspx#1)]
+ [!code-aspx-vb[HtmlTblCellAppearance#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTblCellAppearance/VB/htmltablecellappearancevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -304,8 +304,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTableCell.BorderColor%2A> property to programmatically control the border color of the cells in an <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTblCellAppearance#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTblCellAppearance/CS/htmltablecellappearancecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTblCellAppearance#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTblCellAppearance/VB/htmltablecellappearancevb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTblCellAppearance#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTblCellAppearance/CS/htmltablecellappearancecs.aspx#1)]
+ [!code-aspx-vb[HtmlTblCellAppearance#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTblCellAppearance/VB/htmltablecellappearancevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -348,8 +348,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTableCell.ColSpan%2A> property to specify that the cell in the first row of the <xref:System.Web.UI.HtmlControls.HtmlTable> control takes up two columns.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTblCellColSpan#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTblCellColSpan/CS/htmltablecellcolspancs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTblCellColSpan#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTblCellColSpan/VB/htmltablecellcolspanvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTblCellColSpan#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTblCellColSpan/CS/htmltablecellcolspancs.aspx#1)]
+ [!code-aspx-vb[HtmlTblCellColSpan#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTblCellColSpan/VB/htmltablecellcolspanvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -392,8 +392,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTableCell.Height%2A> property to programmatically control the height of the cells in the <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTblCellAppearance#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTblCellAppearance/CS/htmltablecellappearancecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTblCellAppearance#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTblCellAppearance/VB/htmltablecellappearancevb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTblCellAppearance#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTblCellAppearance/CS/htmltablecellappearancecs.aspx#1)]
+ [!code-aspx-vb[HtmlTblCellAppearance#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTblCellAppearance/VB/htmltablecellappearancevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -437,8 +437,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTableCell.NoWrap%2A> property to programmatically control whether the text wraps in the cells of an <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTblCellBehavior#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTblCellBehavior/CS/htmltablecellbehaviorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTblCellBehavior#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTblCellBehavior/VB/htmltablecellbehaviorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTblCellBehavior#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTblCellBehavior/CS/htmltablecellbehaviorcs.aspx#1)]
+ [!code-aspx-vb[HtmlTblCellBehavior#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTblCellBehavior/VB/htmltablecellbehaviorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -511,8 +511,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTableCell.RowSpan%2A> property to specify that the cell in the first column of the <xref:System.Web.UI.HtmlControls.HtmlTable> control spans two rows.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTblCellRowSpan#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTblCellRowSpan/CS/htmltablecellrowspancs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTblCellRowSpan#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTblCellRowSpan/VB/htmltablecellrowspanvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTblCellRowSpan#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTblCellRowSpan/CS/htmltablecellrowspancs.aspx#1)]
+ [!code-aspx-vb[HtmlTblCellRowSpan#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTblCellRowSpan/VB/htmltablecellrowspanvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -566,8 +566,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTableCell.VAlign%2A> property to programmatically control the vertical alignment of the contents of the cells in an <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTblCellBehavior#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTblCellBehavior/CS/htmltablecellbehaviorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTblCellBehavior#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTblCellBehavior/VB/htmltablecellbehaviorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTblCellBehavior#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTblCellBehavior/CS/htmltablecellbehaviorcs.aspx#1)]
+ [!code-aspx-vb[HtmlTblCellBehavior#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTblCellBehavior/VB/htmltablecellbehaviorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -610,8 +610,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTableCell.Width%2A> property to programmatically control the width of the cells in the <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTblCellAppearance#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTblCellAppearance/CS/htmltablecellappearancecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTblCellAppearance#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTblCellAppearance/VB/htmltablecellappearancevb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTblCellAppearance#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTblCellAppearance/CS/htmltablecellappearancecs.aspx#1)]
+ [!code-aspx-vb[HtmlTblCellAppearance#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTblCellAppearance/VB/htmltablecellappearancevb.aspx#1)]  
   
  ]]></format>
         </remarks>

@@ -29,8 +29,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsViewModeEventArgs> object passed to the event handler for the <xref:System.Web.UI.WebControls.DetailsView.ModeChanging> event to hide the pager row when the <xref:System.Web.UI.WebControls.DetailsView> control transitions to edit mode.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewModeEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewModeEventArgs/CS/detailsviewmodeeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewModeEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewModeEventArgs/VB/detailsviewmodeeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewModeEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewModeEventArgs/CS/detailsviewmodeeventargscs.aspx#1)]
+ [!code-aspx-vb[DetailsViewModeEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewModeEventArgs/VB/detailsviewmodeeventargsvb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -101,8 +101,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsViewModeEventArgs.CancelingEdit%2A> property to determine whether a mode change is the result of the user canceling an edit operation.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewModeEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewModeEventArgs/CS/detailsviewmodeeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewModeEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewModeEventArgs/VB/detailsviewmodeeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewModeEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewModeEventArgs/CS/detailsviewmodeeventargscs.aspx#1)]
+ [!code-aspx-vb[DetailsViewModeEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewModeEventArgs/VB/detailsviewmodeeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -134,8 +134,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsViewModeEventArgs.NewMode%2A> property to determine the mode to which the <xref:System.Web.UI.WebControls.DetailsView> control is transitioning.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewModeEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewModeEventArgs/CS/detailsviewmodeeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewModeEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewModeEventArgs/VB/detailsviewmodeeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewModeEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewModeEventArgs/CS/detailsviewmodeeventargscs.aspx#1)]
+ [!code-aspx-vb[DetailsViewModeEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewModeEventArgs/VB/detailsviewmodeeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>

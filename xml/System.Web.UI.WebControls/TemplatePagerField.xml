@@ -29,13 +29,13 @@
 ## Examples  
  The following example shows how to add a <xref:System.Web.UI.WebControls.TemplatePagerField> field in a <xref:System.Web.UI.WebControls.DataPager> control. This example uses the <xref:System.Web.UI.WebControls.TemplatePagerField> to display the current page number, the total number of pages, and the total number of records. The <xref:System.Web.UI.WebControls.DataPager> control also contains two <xref:System.Web.UI.WebControls.NextPreviousPagerField> fields and a <xref:System.Web.UI.WebControls.NumericPagerField> field to display navigation controls that enable users to page through data.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.TemplatePagerField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.TemplatePagerField/CS/TemplatePagerFieldCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.TemplatePagerField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.TemplatePagerField/VB/TemplatePagerFieldVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.TemplatePagerField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.TemplatePagerField/CS/TemplatePagerFieldCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.TemplatePagerField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.TemplatePagerField/VB/TemplatePagerFieldVB.aspx#1)]  
   
  The following example shows how to use the <xref:System.Web.UI.WebControls.TemplatePagerField.PagerCommand> event to perform a different action depending on which button was clicked in a <xref:System.Web.UI.WebControls.TemplatePagerField> field. This example uses the <xref:System.Web.UI.WebControls.TemplatePagerField> to display navigation controls that enable users to page through data.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.TemplatePagerField.OnPagerCommand#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.TemplatePagerField.OnPagerCommand/CS/OnPagerCommandCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.TemplatePagerField.OnPagerCommand#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.TemplatePagerField.OnPagerCommand/VB/OnPagerCommandVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.TemplatePagerField.OnPagerCommand#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.TemplatePagerField.OnPagerCommand/CS/OnPagerCommandCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.TemplatePagerField.OnPagerCommand#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.TemplatePagerField.OnPagerCommand/VB/OnPagerCommandVB.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -268,8 +268,8 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.TemplatePagerField.PagerCommand> event to perform a different action depending on which button was clicked in a <xref:System.Web.UI.WebControls.TemplatePagerField> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.TemplatePagerField.OnPagerCommand#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.TemplatePagerField.OnPagerCommand/CS/OnPagerCommandCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.TemplatePagerField.OnPagerCommand#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.TemplatePagerField.OnPagerCommand/VB/OnPagerCommandVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.TemplatePagerField.OnPagerCommand#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.TemplatePagerField.OnPagerCommand/CS/OnPagerCommandCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.TemplatePagerField.OnPagerCommand#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.TemplatePagerField.OnPagerCommand/VB/OnPagerCommandVB.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -319,8 +319,8 @@
 ## Examples  
  The following example shows how to add controls to the <xref:System.Web.UI.WebControls.TemplatePagerField.PagerTemplate%2A> template that access properties of the <xref:System.Web.UI.WebControls.DataPager> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.TemplatePagerField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.TemplatePagerField/CS/TemplatePagerFieldCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.TemplatePagerField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.TemplatePagerField/VB/TemplatePagerFieldVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.TemplatePagerField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.TemplatePagerField/CS/TemplatePagerFieldCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.TemplatePagerField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.TemplatePagerField/VB/TemplatePagerFieldVB.aspx#1)]  
   
  ]]></format>
         </remarks>

@@ -141,23 +141,23 @@
   
  The following example demonstrates how to create a <xref:System.Web.UI.WebControls.FileUpload> control that saves files to a path that is specified in code. The <xref:System.Web.UI.WebControls.FileUpload.SaveAs%2A> method is called to save the file to the specified path on the server.  
   
- <!-- TODO: review snippet reference [!code-csharp[FileUploadClass1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FileUploadClass1/cs/fileuploadclass1cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FileUploadClass1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FileUploadClass1/VB/fileuploadclass1vb.aspx#1)]  -->  
+ [!code-aspx-csharp[FileUploadClass1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FileUploadClass1/cs/fileuploadclass1cs.aspx#1)]
+ [!code-aspx-vb[FileUploadClass1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FileUploadClass1/VB/fileuploadclass1vb.aspx#1)]  
   
  The following example demonstrates how to create a <xref:System.Web.UI.WebControls.FileUpload> control that saves files to a specified directory in the file system for the application. The <xref:System.Web.HttpRequest.PhysicalApplicationPath%2A?displayProperty=nameWithType> property is used to get the physical file system path of the root directory for the currently executing server application. The <xref:System.Web.UI.WebControls.FileUpload.SaveAs%2A> method is called to save the file to the specified path on the server.  
   
- <!-- TODO: review snippet reference [!code-csharp[FileUploadClass2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FileUploadClass2/cs/fileuploadclass2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FileUploadClass2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FileUploadClass2/VB/fileuploadclass2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[FileUploadClass2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FileUploadClass2/cs/fileuploadclass2cs.aspx#1)]
+ [!code-aspx-vb[FileUploadClass2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FileUploadClass2/VB/fileuploadclass2vb.aspx#1)]  
   
  The following example demonstrates how to create a <xref:System.Web.UI.WebControls.FileUpload> control that saves files to a path that is specified in the code. The control limits the size of the file that can be uploaded to 5 MB. The <xref:System.Web.UI.WebControls.FileUpload.PostedFile%2A> property is used to access the underlying <xref:System.Web.HttpPostedFile.ContentLength%2A> property and return the size of the file. If the size of the file to upload is less than 2 MB, the <xref:System.Web.UI.WebControls.FileUpload.SaveAs%2A> method is called to save the file to the specified path on the server. In addition to checking for the maximum file size setting in your application code, you can set the `maxRequestLength` attribute of the  element to a maximum allowable size in the configuration file for your application.  
   
- <!-- TODO: review snippet reference [!code-csharp[FileUploadClass3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FileUploadClass3/cs/fileuploadclass3cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FileUploadClass3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FileUploadClass3/VB/fileuploadclass3vb.aspx#1)]  -->  
+ [!code-aspx-csharp[FileUploadClass3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FileUploadClass3/cs/fileuploadclass3cs.aspx#1)]
+ [!code-aspx-vb[FileUploadClass3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FileUploadClass3/VB/fileuploadclass3vb.aspx#1)]  
   
  The following example demonstrates how to create a <xref:System.Web.UI.WebControls.FileUpload> control that saves files to a path that is specified in the code. This example allows only files that have the .doc or .xls file name extensions to be uploaded. The <xref:System.IO.Path.GetExtension%2A?displayProperty=nameWithType> method is called to return the extension of the file to upload. If the file has a .doc or .xls file name extension, the <xref:System.Web.UI.WebControls.FileUpload.SaveAs%2A> method is called to save the file to the specified path on the server.  
   
- <!-- TODO: review snippet reference [!code-csharp[FileUploadClass4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FileUploadClass4/cs/fileuploadclass4cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FileUploadClass4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FileUploadClass4/VB/fileuploadclass4vb.aspx#1)]  -->  
+ [!code-aspx-csharp[FileUploadClass4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FileUploadClass4/cs/fileuploadclass4cs.aspx#1)]
+ [!code-aspx-vb[FileUploadClass4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FileUploadClass4/VB/fileuploadclass4vb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -188,7 +188,7 @@
   
  This example is part of a larger example provided for the <xref:System.Web.UI.WebControls.FileUpload> class.  
   
- <!-- TODO: review snippet reference [!code-vb[FileUploadCstr#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FileUploadCstr/VB/fileuploadcstrvb.aspx#1)]  -->  
+ [!code-aspx-vb[FileUploadCstr#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FileUploadCstr/VB/fileuploadcstrvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -288,8 +288,8 @@
 ## Examples  
  The following example demonstrates how to create a <xref:System.Web.UI.WebControls.FileUpload> control. When the user clicks the **Upload file** button, the contents of the file are displayed as bytes in a text box on the page. This example uses the <xref:System.Web.UI.WebControls.FileUpload.FileBytes%2A> property to upload the entire file.  
   
- <!-- TODO: review snippet reference [!code-csharp[FileUploadFileBytes#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FileUploadFileBytes/CS/FileUploadFileBytesCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FileUploadFileBytes#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FileUploadFileBytes/VB/FileUploadFileBytesVB.aspx#1)]  -->  
+ [!code-aspx-csharp[FileUploadFileBytes#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FileUploadFileBytes/CS/FileUploadFileBytesCS.aspx#1)]
+ [!code-aspx-vb[FileUploadFileBytes#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FileUploadFileBytes/VB/FileUploadFileBytesVB.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -330,8 +330,8 @@
 ## Examples  
  The following example demonstrates how to create a <xref:System.Web.UI.WebControls.FileUpload> control. The <xref:System.Web.UI.WebControls.FileUpload.FileContent%2A> property is used to read the contents of the file into a byte array. When the user clicks the **Upload file** button, the contents of the file are displayed as bytes in a text box on the page.  
   
- <!-- TODO: review snippet reference [!code-csharp[FileUpload.FileContent#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FileUpload.FileContent/cs/fileupload.filecontentcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FileUpload.FileContent#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FileUpload.FileContent/VB/fileupload.filecontentvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FileUpload.FileContent#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FileUpload.FileContent/cs/fileupload.filecontentcs.aspx#1)]
+ [!code-aspx-vb[FileUpload.FileContent#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FileUpload.FileContent/VB/fileupload.filecontentvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -371,8 +371,8 @@
 ## Examples  
  The following example demonstrates how to create a <xref:System.Web.UI.WebControls.FileUpload> control that saves files to a path that is specified in code. The <xref:System.Web.UI.WebControls.FileUpload.FileName%2A> property is used to get the name of the file to upload. The <xref:System.Web.UI.WebControls.FileUpload.SaveAs%2A> method is called to save the file to the specified path on the server, using the same name the file has on the client. Note that this example demonstrates the basic syntax for this control, but does not demonstrate all the necessary error checking that should be done before saving the file. For a more complete example, see <xref:System.Web.UI.WebControls.FileUpload.SaveAs%2A>.  
   
- <!-- TODO: review snippet reference [!code-csharp[FileUploadClass1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FileUploadClass1/cs/fileuploadclass1cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FileUploadClass1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FileUploadClass1/VB/fileuploadclass1vb.aspx#1)]  -->  
+ [!code-aspx-csharp[FileUploadClass1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FileUploadClass1/cs/fileuploadclass1cs.aspx#1)]
+ [!code-aspx-vb[FileUploadClass1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FileUploadClass1/VB/fileuploadclass1vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -413,8 +413,8 @@
 ## Examples  
  The following example demonstrates how to create a <xref:System.Web.UI.WebControls.FileUpload> control that performs error checking. Before saving the file, the <xref:System.Web.UI.WebControls.FileUpload.HasFile%2A> method is called to verify that the control contains a file to upload. In addition, the <xref:System.IO.File.Exists%2A?displayProperty=nameWithType> method is called to check whether a file with the same name already occurs in the path. If it does, the name of the file to upload is prefixed with an underscore character before the <xref:System.Web.UI.WebControls.FileUpload.SaveAs%2A> method is called. This prevents the existing file from being overwritten.  
   
- <!-- TODO: review snippet reference [!code-csharp[FileUpload.SaveAs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FileUpload.SaveAs/cs/fileupload.saveascs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FileUpload.SaveAs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FileUpload.SaveAs/VB/fileupload.saveasvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FileUpload.SaveAs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FileUpload.SaveAs/cs/fileupload.saveascs.aspx#1)]
+ [!code-aspx-vb[FileUpload.SaveAs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FileUpload.SaveAs/VB/fileupload.saveasvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -518,8 +518,8 @@
 ## Examples  
  The following example demonstrates how to create a <xref:System.Web.UI.WebControls.FileUpload> control. When the user clicks the **Upload file** button, the contents of the file are displayed as bytes in a text box on the page. This example uses the <xref:System.Web.UI.WebControls.FileUpload.PostedFile%2A> property to access the <xref:System.Web.HttpPostedFile.ContentLength%2A?displayProperty=nameWithType> property. The <xref:System.Web.HttpPostedFile.ContentLength%2A> property is used to determine the length of the file before copying the file contents to a byte array.  
   
- <!-- TODO: review snippet reference [!code-csharp[FileUpload.FileContent#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FileUpload.FileContent/cs/fileupload.filecontentcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FileUpload.FileContent#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FileUpload.FileContent/VB/fileupload.filecontentvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FileUpload.FileContent#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FileUpload.FileContent/cs/fileupload.filecontentcs.aspx#1)]
+ [!code-aspx-vb[FileUpload.FileContent#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FileUpload.FileContent/VB/fileupload.filecontentvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -616,8 +616,8 @@
 ## Examples  
  The following example demonstrates how to create a <xref:System.Web.UI.WebControls.FileUpload> control that performs error checking. Before the file is saved, the <xref:System.Web.UI.WebControls.FileUpload.HasFile%2A> method is called to verify that a file to upload exists. In addition, the <xref:System.IO.File.Exists%2A?displayProperty=nameWithType> method is called to check whether a file that has the same name already exists in the path. If it does, the name of the file to upload is prefixed with a number before the <xref:System.Web.UI.WebControls.FileUpload.SaveAs%2A> method is called. This prevents the existing file from being overwritten.  
   
- <!-- TODO: review snippet reference [!code-csharp[FileUpload.SaveAs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FileUpload.SaveAs/cs/fileupload.saveascs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FileUpload.SaveAs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FileUpload.SaveAs/VB/fileupload.saveasvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FileUpload.SaveAs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FileUpload.SaveAs/cs/fileupload.saveascs.aspx#1)]
+ [!code-aspx-vb[FileUpload.SaveAs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FileUpload.SaveAs/VB/fileupload.saveasvb.aspx#1)]  
   
  ]]></format>
         </remarks>

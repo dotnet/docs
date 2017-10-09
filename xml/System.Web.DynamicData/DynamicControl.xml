@@ -100,8 +100,8 @@
   
  The following example demonstrates how to use the <xref:System.Web.DynamicData.DynamicControl> control in a <xref:System.Web.UI.WebControls.ListView> control to display, insert, delete and edit values from a database table. It is important to notice that in order to make the insert operation to work, the <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> property of the `rowguid` and `ModifiedDate` columns are set to `true`.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.DynamicData.DynamicControl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.DynamicControl/CS/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.DynamicData.DynamicControl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.DynamicControl/VB/Default.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.DynamicData.DynamicControl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.DynamicControl/CS/Default.aspx#1)]
+ [!code-aspx-vb[System.Web.DynamicData.DynamicControl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.DynamicControl/VB/Default.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -308,8 +308,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.DynamicData.DynamicControl.DataField%2A> property to specify which field to display in a <xref:System.Web.DynamicData.DynamicControl> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.DynamicData.DynamicControl.DataField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.DynamicControl.DataField/CS/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.DynamicData.DynamicControl.DataField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.DynamicControl.DataField/VB/Default.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.DynamicData.DynamicControl.DataField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.DynamicControl.DataField/CS/Default.aspx#1)]
+ [!code-aspx-vb[System.Web.DynamicData.DynamicControl.DataField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.DynamicControl.DataField/VB/Default.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -687,11 +687,11 @@
   
  The following example shows how you can specify a data field to use a different field template to render its contents. The second example shows the custom field template specified by the <xref:System.Web.DynamicData.DynamicControl.UIHint%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.DynamicData.DynamicControl.UIHint#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.DynamicControl.UIHint/CS/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.DynamicData.DynamicControl.UIHint#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.DynamicControl.UIHint/VB/Default.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.DynamicData.DynamicControl.UIHint#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.DynamicControl.UIHint/CS/Default.aspx#1)]
+ [!code-aspx-vb[System.Web.DynamicData.DynamicControl.UIHint#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.DynamicControl.UIHint/VB/Default.aspx#1)]  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.DynamicData.DynamicControl.UIHint#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.DynamicControl.UIHint/CS/Email.ascx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.DynamicData.DynamicControl.UIHint#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.DynamicControl.UIHint/VB/Email.ascx#2)]  -->  
+ [!code-aspx-csharp[System.Web.DynamicData.DynamicControl.UIHint#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.DynamicControl.UIHint/CS/Email.ascx#2)]
+ [!code-aspx-vb[System.Web.DynamicData.DynamicControl.UIHint#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.DynamicControl.UIHint/VB/Email.ascx#2)]  
   
  ]]></format>
         </remarks>

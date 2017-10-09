@@ -148,18 +148,18 @@
 ## Examples  
  The following code example demonstrates how to declaratively create an <xref:System.Web.UI.WebControls.ImageMap> control that contains two <xref:System.Web.UI.WebControls.CircleHotSpot> objects. The <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=nameWithType> property is set to `HotSpotMode.Navigate`, which causes the page to navigate to the specified URL each time a user clicks one of the circle hot spot regions. For this example to work correctly, you must supply your own image for the <xref:System.Web.UI.WebControls.Image.ImageUrl%2A> property and update the path to the image appropriately so that the application can locate it.  
   
- <!-- TODO: review snippet reference [!code-csharp[ImageMapClass1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageMapClass1/CS/imagemapclass1cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ImageMapClass1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageMapClass1/VB/imagemapclass1vb.aspx#1)]  -->  
+ [!code-aspx-csharp[ImageMapClass1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageMapClass1/CS/imagemapclass1cs.aspx#1)]
+ [!code-aspx-vb[ImageMapClass1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageMapClass1/VB/imagemapclass1vb.aspx#1)]  
   
  The following code example demonstrates how to declaratively create an <xref:System.Web.UI.WebControls.ImageMap> control that contains two <xref:System.Web.UI.WebControls.RectangleHotSpot> objects. The <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=nameWithType> property is set to `HotSpotMode.PostBack`, which causes the page to post back to the server each time a user clicks one of the hot spot regions. For this example to work correctly, you must supply your own image for the <xref:System.Web.UI.WebControls.Image.ImageUrl%2A> property and update the path to the image appropriately so that the application can locate it.  
   
- <!-- TODO: review snippet reference [!code-csharp[ImageMapClass2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageMapClass2/CS/imagemapclass2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ImageMapClass2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageMapClass2/VB/imagemapclass2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[ImageMapClass2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageMapClass2/CS/imagemapclass2cs.aspx#1)]
+ [!code-aspx-vb[ImageMapClass2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageMapClass2/VB/imagemapclass2vb.aspx#1)]  
   
  The following code example demonstrates how to create an <xref:System.Web.UI.WebControls.ImageMap> control that contains hot spots with different behaviors. The background area is a defined as a single <xref:System.Web.UI.WebControls.RectangleHotSpot> that posts back to the server. Three <xref:System.Web.UI.WebControls.RectangleHotSpot> objects are defined in the same region. Each of these hot spots looks like a button and navigates to a URL. When an <xref:System.Web.UI.WebControls.ImageMap> control is clicked in a region where two hot spots overlap, the hot spot that is declared first has precedence. In this example, the button hot spots are declared first and the background hot spot that contains them is declared last. Therefore, the user gets the behavior of the button <xref:System.Web.UI.WebControls.RectangleHotSpot> object, not the background <xref:System.Web.UI.WebControls.RectangleHotSpot> object, when the user clicks a button hot spot. For this example to work correctly, you must supply your own image for the <xref:System.Web.UI.WebControls.Image.ImageUrl%2A> property and update the path to the image appropriately so that the application can locate it.  
   
- <!-- TODO: review snippet reference [!code-csharp[ImageMapClass3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageMapClass3/CS/imagemapclass3cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ImageMapClass3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageMapClass3/VB/imagemapclass3vb.aspx#1)]  -->  
+ [!code-aspx-csharp[ImageMapClass3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageMapClass3/CS/imagemapclass3cs.aspx#1)]
+ [!code-aspx-vb[ImageMapClass3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageMapClass3/VB/imagemapclass3vb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -188,8 +188,8 @@
 ## Examples  
  The following code example demonstrates how to programmatically create an <xref:System.Web.UI.WebControls.ImageMap> control and add it to a page.  
   
- <!-- TODO: review snippet reference [!code-csharp[ImageMap.Cstr#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageMap.Cstr/CS/imagemap.cstrcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ImageMap.Cstr#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageMap.Cstr/VB/imagemap.cstrvb.aspx#1)]  -->  
+ [!code-aspx-csharp[ImageMap.Cstr#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageMap.Cstr/CS/imagemap.cstrcs.aspx#1)]
+ [!code-aspx-vb[ImageMap.Cstr#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageMap.Cstr/VB/imagemap.cstrvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -257,8 +257,8 @@
 ## Examples  
  The following code example demonstrates how to create an <xref:System.Web.UI.WebControls.ImageMap> control that contains two <xref:System.Web.UI.WebControls.RectangleHotSpot> objects. The <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=nameWithType> property is set to `HotSpotMode.PostBack`, which causes the page to post back to the server each time a user clicks one of the hot spot regions. The `VoteMap_Clicked` event handler handles the click event for the <xref:System.Web.UI.WebControls.ImageMap> control. For this example to work correctly, you must supply your own image for the <xref:System.Web.UI.MobileControls.Image.ImageUrl%2A> property and update the path to the image appropriately so that the application can locate it.  
   
- <!-- TODO: review snippet reference [!code-csharp[ImageMapClass2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageMapClass2/CS/imagemapclass2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ImageMapClass2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageMapClass2/VB/imagemapclass2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[ImageMapClass2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageMapClass2/CS/imagemapclass2cs.aspx#1)]
+ [!code-aspx-vb[ImageMapClass2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageMapClass2/VB/imagemapclass2vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -369,8 +369,8 @@
 ## Examples  
  The following code example demonstrates how to declaratively create an <xref:System.Web.UI.WebControls.ImageMap> control that contains two <xref:System.Web.UI.WebControls.RectangleHotSpot> objects. The <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=nameWithType> property is set to `HotSpotMode.PostBack`, which causes the page to post back to the server each time a user clicks one of the hot spot regions. The <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A> property is not set on each of the <xref:System.Web.UI.WebControls.RectangleHotSpot> objects because they get their behavior from the <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=nameWithType> property. For this example to work correctly, you must supply your own image for the <xref:System.Web.UI.WebControls.Image.ImageUrl%2A> property and update the path to the image appropriately so that the application can locate it.  
   
- <!-- TODO: review snippet reference [!code-csharp[ImageMap.HotSpotMode1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageMap.HotSpotMode1/CS/imagemap.hotspotmode1cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ImageMap.HotSpotMode1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageMap.HotSpotMode1/VB/imagemap.hotspotmode1vb.aspx#1)]  -->  
+ [!code-aspx-csharp[ImageMap.HotSpotMode1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageMap.HotSpotMode1/CS/imagemap.hotspotmode1cs.aspx#1)]
+ [!code-aspx-vb[ImageMap.HotSpotMode1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageMap.HotSpotMode1/VB/imagemap.hotspotmode1vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -414,8 +414,8 @@
 ## Examples  
  The following code example demonstrates how to programmatically create an <xref:System.Web.UI.WebControls.ImageMap> control and add two <xref:System.Web.UI.WebControls.CircleHotSpot> objects to it. The <xref:System.Web.UI.WebControls.ImageMap.HotSpots%2A> property is used to access the <xref:System.Web.UI.WebControls.HotSpotCollection> for the <xref:System.Web.UI.WebControls.ImageMap> control and add the <xref:System.Web.UI.WebControls.CircleHotSpot> objects to it. For this example to work correctly, you must supply your own image for the <xref:System.Web.UI.WebControls.Image.ImageUrl%2A> property and update the path to the image appropriately so that the application can locate it.  
   
- <!-- TODO: review snippet reference [!code-csharp[ImageMap.Cstr#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageMap.Cstr/CS/imagemap.cstrcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ImageMap.Cstr#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageMap.Cstr/VB/imagemap.cstrvb.aspx#1)]  -->  
+ [!code-aspx-csharp[ImageMap.Cstr#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageMap.Cstr/CS/imagemap.cstrcs.aspx#1)]
+ [!code-aspx-vb[ImageMap.Cstr#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageMap.Cstr/VB/imagemap.cstrvb.aspx#1)]  
   
  ]]></format>
         </remarks>

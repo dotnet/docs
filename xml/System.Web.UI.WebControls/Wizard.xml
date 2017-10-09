@@ -289,8 +289,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.Wizard#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.Wizard/CS/wizardclasscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.Wizard#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.Wizard/VB/wizardclassvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.Wizard#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.Wizard/CS/wizardclasscs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.Wizard#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.Wizard/VB/wizardclassvb.aspx#1)]  
   
  The following code example is the code-behind file for the Web page used in the preceding example.  
   
@@ -357,8 +357,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Wizard.ActiveStep%2A> property to determine which step to set as the next <xref:System.Web.UI.WebControls.Wizard.ActiveStep%2A> property of the <xref:System.Web.UI.WebControls.Wizard> control. If the value of `CheckBox1.Checked` is `true`, the <xref:System.Web.UI.WebControls.Wizard.ActiveStep%2A> property is set to `Wizard1.Step3`; otherwise, the <xref:System.Web.UI.WebControls.Wizard.ActiveStep%2A> property is set to `Wizard1.Step2`.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardActiveStep#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardActiveStep/CS/wizardactivestepcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardActiveStep#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardActiveStep/VB/wizardactivestepvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardActiveStep#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardActiveStep/CS/wizardactivestepcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardActiveStep#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardActiveStep/VB/wizardactivestepvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -392,8 +392,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Wizard.ActiveStepChanged> event to update the <xref:System.Web.UI.WebControls.Wizard.HeaderText%2A> property of the <xref:System.Web.UI.WebControls.Wizard> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardActiveStepChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardActiveStepChanged/CS/wizardactivestepchangedcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardActiveStepChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardActiveStepChanged/VB/wizardactivestepchangedvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardActiveStepChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardActiveStepChanged/CS/wizardactivestepchangedcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardActiveStepChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardActiveStepChanged/VB/wizardactivestepchangedvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -444,8 +444,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Wizard.ActiveStepIndex%2A> property to set the <xref:System.Web.UI.WebControls.Wizard.ActiveStep%2A> property of the <xref:System.Web.UI.WebControls.Wizard> control. If the value of `CheckBox1.Checked` is `true`, the <xref:System.Web.UI.WebControls.Wizard.ActiveStep%2A> property is set to `Wizard1.Step3`; otherwise, the <xref:System.Web.UI.WebControls.Wizard.ActiveStep%2A> property is set to `Wizard1.Step2`.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardActiveStepIndex#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardActiveStepIndex/CS/wizardactivestepindexcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardActiveStepIndex#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardActiveStepIndex/VB/wizardactivestepindexvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardActiveStepIndex#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardActiveStepIndex/CS/wizardactivestepindexcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardActiveStepIndex#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardActiveStepIndex/VB/wizardactivestepindexvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -483,8 +483,8 @@
 ## Examples  
  The following code example demonstrates how to create a derived class named `CustomWizard` and override the <xref:System.Web.UI.WebControls.Wizard.OnSideBarButtonClick%2A> method. When a button on the sidebar area of the `CustomWizard` control is clicked, the <xref:System.Web.UI.WebControls.Wizard.AllowNavigationToStep%2A> method is called to determine whether the selected step can be accessed. A message is then written to the containing Web page informing the user of what has occurred.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardAllowNavigationToStep#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardAllowNavigationToStep/CS/wizardallownavigationtostepcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardAllowNavigationToStep#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardAllowNavigationToStep/VB/wizardallownavigationtostepvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardAllowNavigationToStep#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardAllowNavigationToStep/CS/wizardallownavigationtostepcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardAllowNavigationToStep#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardAllowNavigationToStep/VB/wizardallownavigationtostepvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -517,8 +517,8 @@
 ## Examples  
  The following code example demonstrates how to specify an event handler for the <xref:System.Web.UI.WebControls.Wizard.CancelButtonClick> event. When the **Cancel** button is clicked, the page is redirected to http://www.wingtiptoys.com/.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardCancelButtonClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardCancelButtonClick/CS/wizardcancelbuttonclickcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardCancelButtonClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardCancelButtonClick/VB/wizardcancelbuttonclickvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardCancelButtonClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardCancelButtonClick/CS/wizardcancelbuttonclickcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardCancelButtonClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardCancelButtonClick/VB/wizardcancelbuttonclickvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -785,8 +785,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Wizard.CellPadding%2A> and <xref:System.Web.UI.WebControls.Wizard.CellSpacing%2A> properties to program the layout of the <xref:System.Web.UI.WebControls.Wizard> control declaratively.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardCellPadding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardCellPadding/CS/wizardcellpaddingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardCellPadding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardCellPadding/VB/wizardcellpaddingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardCellPadding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardCellPadding/CS/wizardcellpaddingcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardCellPadding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardCellPadding/VB/wizardcellpaddingvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -823,8 +823,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Wizard.CellPadding%2A> and <xref:System.Web.UI.WebControls.Wizard.CellSpacing%2A> properties to program the layout of the <xref:System.Web.UI.WebControls.Wizard> control declaratively.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardCellPadding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardCellPadding/CS/wizardcellpaddingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardCellPadding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardCellPadding/VB/wizardcellpaddingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardCellPadding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardCellPadding/CS/wizardcellpaddingcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardCellPadding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardCellPadding/VB/wizardcellpaddingvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1093,8 +1093,8 @@
 ## Examples  
  The following code example demonstrates how to specify an event handler for the <xref:System.Web.UI.WebControls.Wizard.FinishButtonClick> event. When the **Finish** button is clicked, a confirmation message is written to `Label1` and the `Label1.Visible` property is set to `true` so that the message is displayed on the step.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardFinishButtonClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardFinishButtonClick/CS/wizardfinishbuttonclickcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardFinishButtonClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardFinishButtonClick/VB/wizardfinishbuttonclickvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardFinishButtonClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardFinishButtonClick/CS/wizardfinishbuttonclickcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardFinishButtonClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardFinishButtonClick/VB/wizardfinishbuttonclickvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1356,8 +1356,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardFinishNavigationTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardFinishNavigationTemplate/CS/wizardfinishnavigationtemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardFinishNavigationTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardFinishNavigationTemplate/VB/wizardfinishnavigationtemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardFinishNavigationTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardFinishNavigationTemplate/CS/wizardfinishnavigationtemplatecs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardFinishNavigationTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardFinishNavigationTemplate/VB/wizardfinishnavigationtemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1605,8 +1605,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Wizard.GetStepType%2A> method to determine the associated <xref:System.Web.UI.WebControls.WizardStepType> value for the current step of the <xref:System.Web.UI.WebControls.Wizard> control. Each time the <xref:System.Web.UI.WebControls.Wizard.ActiveStepChanged> event is raised, the new <xref:System.Web.UI.WebControls.WizardStepType> value is retrieved and a message is written to `Label1`.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardGetStepType#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardGetStepType/CS/wizardgetsteptypecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardGetStepType#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardGetStepType/VB/wizardgetsteptypevb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardGetStepType#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardGetStepType/CS/wizardgetsteptypecs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardGetStepType#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardGetStepType/VB/wizardgetsteptypevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1761,8 +1761,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Wizard.ActiveStepChanged> event to update the <xref:System.Web.UI.WebControls.Wizard.HeaderText%2A> property of the <xref:System.Web.UI.WebControls.Wizard> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardActiveStepChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardActiveStepChanged/CS/wizardactivestepchangedcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardActiveStepChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardActiveStepChanged/VB/wizardactivestepchangedvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardActiveStepChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardActiveStepChanged/CS/wizardactivestepchangedcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardActiveStepChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardActiveStepChanged/VB/wizardactivestepchangedvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1962,8 +1962,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Wizard.MoveTo%2A> method to control the <xref:System.Web.UI.WebControls.Wizard.ActiveStep%2A> property of the <xref:System.Web.UI.WebControls.Wizard> control. If the value of `CheckBox1.Checked` is `true`, the <xref:System.Web.UI.WebControls.Wizard.ActiveStep%2A> property is set to `Wizard1.Step3`; otherwise, the <xref:System.Web.UI.WebControls.Wizard.ActiveStep%2A> property is set to `Wizard1.Step2`.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardMoveTo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardMoveTo/CS/wizardmovetocs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardMoveTo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardMoveTo/VB/wizardmovetovb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardMoveTo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardMoveTo/CS/wizardmovetocs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardMoveTo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardMoveTo/VB/wizardmovetovb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2166,8 +2166,8 @@
 ## Examples  
  The following code example demonstrates how to specify an event handler for the <xref:System.Web.UI.WebControls.Wizard.NextButtonClick> event. Each time the **Next** button is clicked, the <xref:System.Web.UI.WebControls.WebControl.BorderWidth%2A> property for the <xref:System.Web.UI.WebControls.Wizard> control is increased by 1 pixel, as measured by the <xref:System.Web.UI.WebControls.Unit> class.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardNextPreviousButtonClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardNextPreviousButtonClick/CS/wizardnextpreviousbuttonclickcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardNextPreviousButtonClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardNextPreviousButtonClick/VB/wizardnextpreviousbuttonclickvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardNextPreviousButtonClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardNextPreviousButtonClick/CS/wizardnextpreviousbuttonclickcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardNextPreviousButtonClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardNextPreviousButtonClick/VB/wizardnextpreviousbuttonclickvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2208,8 +2208,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Wizard.ActiveStepChanged> event to update the <xref:System.Web.UI.WebControls.Wizard.HeaderText%2A> property of the <xref:System.Web.UI.WebControls.Wizard> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardActiveStepChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardActiveStepChanged/CS/wizardactivestepchangedcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardActiveStepChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardActiveStepChanged/VB/wizardactivestepchangedvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardActiveStepChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardActiveStepChanged/CS/wizardactivestepchangedcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardActiveStepChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardActiveStepChanged/VB/wizardactivestepchangedvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2276,8 +2276,8 @@
 ## Examples  
  The following code example demonstrates how to specify an event handler for the <xref:System.Web.UI.WebControls.Wizard.CancelButtonClick> event. When the **Cancel** button is clicked, the step is redirected to http://www.wingtiptoys.com/.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardCancelButtonClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardCancelButtonClick/CS/wizardcancelbuttonclickcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardCancelButtonClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardCancelButtonClick/VB/wizardcancelbuttonclickvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardCancelButtonClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardCancelButtonClick/CS/wizardcancelbuttonclickcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardCancelButtonClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardCancelButtonClick/VB/wizardcancelbuttonclickvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2319,8 +2319,8 @@
 ## Examples  
  The following code example demonstrates how to specify an event handler for the <xref:System.Web.UI.WebControls.Wizard.FinishButtonClick> event. When the **Finish** button is clicked, a confirmation message is written to `Label1` and the `Label1.Visible` property is set to `true` so that the message is displayed on the step.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardFinishButtonClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardFinishButtonClick/CS/wizardfinishbuttonclickcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardFinishButtonClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardFinishButtonClick/VB/wizardfinishbuttonclickvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardFinishButtonClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardFinishButtonClick/CS/wizardfinishbuttonclickcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardFinishButtonClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardFinishButtonClick/VB/wizardfinishbuttonclickvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2383,8 +2383,8 @@
 ## Examples  
  The following code example demonstrates how to specify an event handler for the <xref:System.Web.UI.WebControls.Wizard.NextButtonClick> event. Each time the **Next** button is clicked, the <xref:System.Web.UI.WebControls.WebControl.BorderWidth%2A> property for the <xref:System.Web.UI.WebControls.Wizard> control is increased by 1 pixel, as measured by the <xref:System.Web.UI.WebControls.Unit> class.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardNextPreviousButtonClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardNextPreviousButtonClick/CS/wizardnextpreviousbuttonclickcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardNextPreviousButtonClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardNextPreviousButtonClick/VB/wizardnextpreviousbuttonclickvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardNextPreviousButtonClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardNextPreviousButtonClick/CS/wizardnextpreviousbuttonclickcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardNextPreviousButtonClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardNextPreviousButtonClick/VB/wizardnextpreviousbuttonclickvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2426,8 +2426,8 @@
 ## Examples  
  The following code example demonstrates how to specify an event handler for the <xref:System.Web.UI.WebControls.Wizard.PreviousButtonClick> event. Each time the **Previous** button is clicked, the <xref:System.Web.UI.WebControls.WebControl.BorderWidth%2A> property for the <xref:System.Web.UI.WebControls.Wizard> control is decreased by 1 pixel, as measured by the <xref:System.Web.UI.WebControls.Unit> class.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardNextPreviousButtonClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardNextPreviousButtonClick/CS/wizardnextpreviousbuttonclickcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardNextPreviousButtonClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardNextPreviousButtonClick/VB/wizardnextpreviousbuttonclickvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardNextPreviousButtonClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardNextPreviousButtonClick/CS/wizardnextpreviousbuttonclickcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardNextPreviousButtonClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardNextPreviousButtonClick/VB/wizardnextpreviousbuttonclickvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2472,8 +2472,8 @@
 ## Examples  
  The following code example demonstrates how to specify an event handler for the <xref:System.Web.UI.WebControls.Wizard.SideBarButtonClick> event. Each time the <xref:System.Web.UI.WebControls.Wizard.SideBarButtonClick> event is raised, a message is written to the <xref:System.Web.UI.WebControls.Label.Text%2A> property for `Label1` with information on which sidebar area button was clicked.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardSideBarButtonClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardSideBarButtonClick/CS/wizardsidebarbuttonclickcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardSideBarButtonClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardSideBarButtonClick/VB/wizardsidebarbuttonclickvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardSideBarButtonClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardSideBarButtonClick/CS/wizardsidebarbuttonclickcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardSideBarButtonClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardSideBarButtonClick/VB/wizardsidebarbuttonclickvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2509,8 +2509,8 @@
 ## Examples  
  The following code example demonstrates how to specify an event handler for the <xref:System.Web.UI.WebControls.Wizard.PreviousButtonClick> event. Each time the **Previous** button is clicked, the <xref:System.Web.UI.WebControls.WebControl.BorderWidth%2A> property for the <xref:System.Web.UI.WebControls.Wizard> control is decreased by 1 pixel, as measured by the <xref:System.Web.UI.WebControls.Unit> class.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardNextPreviousButtonClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardNextPreviousButtonClick/CS/wizardnextpreviousbuttonclickcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardNextPreviousButtonClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardNextPreviousButtonClick/VB/wizardnextpreviousbuttonclickvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardNextPreviousButtonClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardNextPreviousButtonClick/CS/wizardnextpreviousbuttonclickcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardNextPreviousButtonClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardNextPreviousButtonClick/VB/wizardnextpreviousbuttonclickvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2626,8 +2626,8 @@
 ## Examples  
  The following code example demonstrates how to specify an event handler for the <xref:System.Web.UI.WebControls.Wizard.SideBarButtonClick> event. Each time the <xref:System.Web.UI.WebControls.Wizard.SideBarButtonClick> event is raised, a message is written to the <xref:System.Web.UI.WebControls.Label.Text%2A> property for `Label1` with information on which sidebar area button was clicked.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardSideBarButtonClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardSideBarButtonClick/CS/wizardsidebarbuttonclickcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardSideBarButtonClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardSideBarButtonClick/VB/wizardsidebarbuttonclickvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardSideBarButtonClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardSideBarButtonClick/CS/wizardsidebarbuttonclickcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardSideBarButtonClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardSideBarButtonClick/VB/wizardsidebarbuttonclickvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -3673,8 +3673,8 @@
 ## Examples  
  The following code example demonstrates how to create a <xref:System.Web.UI.WebControls.Wizard> control programmatically and how to use the <xref:System.Web.UI.WebControls.WizardStepCollection.Add%2A> method to add <xref:System.Web.UI.WebControls.WizardStepBase> objects to the <xref:System.Web.UI.WebControls.Wizard.WizardSteps%2A> collection.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardSteps#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardSteps/CS/wizardstepscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardSteps#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardSteps/VB/wizardstepsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardSteps#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardSteps/CS/wizardstepscs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardSteps#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardSteps/VB/wizardstepsvb.aspx#1)]  
   
  ]]></format>
         </remarks>

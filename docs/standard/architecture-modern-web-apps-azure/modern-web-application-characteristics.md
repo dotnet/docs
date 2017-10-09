@@ -73,4 +73,4 @@ In addition to ASP.NET Core, traditional ASP.NET 4.x continues to be a robust an
 
 >[!div class="step-by-step"]
 [Previous] (introduction.md)
-[Next] (choosing-between-traditional-web-apps-and-single-page-apps/index.md)
+[Next] (choose-between-traditional-web-apps-and-single-page-apps.md)

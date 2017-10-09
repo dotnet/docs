@@ -67,11 +67,11 @@ services.AddDbContext<CatalogContext>(options =>
 
 Once you have installed EF Core, created a DbContext child type, and configured it in ConfigureServices, you are ready to use EF Core. You can request an instance of your DbContext type in any service that needs it, and start working with your persisted entities using LINQ as if they were simply in a collection. EF Core does the work of translating your LINQ expressions into SQL queries to store and retrieve your data.
 
-You can see the queries EF Core is executing by configuring a logger and ensuring its level is set to at least Information, as shown in Figure 9-1.
+You can see the queries EF Core is executing by configuring a logger and ensuring its level is set to at least Information, as shown in Figure 8-1.
 
-![](./media/image9-1.png)
+![](./media/image8-1.png)
 
-Figure 9-1 Logging EF Core queries to the console
+Figure 8-1 Logging EF Core queries to the console
 
 ### Fetching and Storing Data
 
@@ -268,9 +268,9 @@ NoSQL databases typically do not enforce [ACID](http://en.wikipedia.org/wiki/ACI
 Azure DocumentDB is a fully managed NoSQL database service that offers cloud-based schema-free data storage. DocumentDB is built for fast and predictable performance, high availability, elastic scaling, and global distribution. Despite being a NoSQL database, developers can use rich and familiar SQL query capabilities on JSON data. All resources in DocumentDB are stored as JSON documents. Resources are managed as *items*, which are documents containing metadata, and *feeds*, which are collections of items. Figure 8-X shows the relationship between different DocumentDB resources.
 
 
-![The hierarchical relationship between resources in DocumentDB, a NoSQL JSON database](./media/image9-2.png)
+![The hierarchical relationship between resources in DocumentDB, a NoSQL JSON database](./media/image8-2.png)
 
-**Figure 9-2.** DocumentDB resource organization.
+**Figure 8-2.** DocumentDB resource organization.
 
 The DocumentDB query language is a simple yet powerful interface for querying JSON documents. The language supports a subset of ANSI SQL grammar and adds deep integration of JavaScript object, arrays, object construction, and function invocation.
 

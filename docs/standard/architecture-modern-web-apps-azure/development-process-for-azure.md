@@ -23,9 +23,9 @@ Whether you prefer a full and powerful IDE or a lightweight and agile editor, Mi
 
 **Visual Studio 2017.** If you're using *Visual Studio 2017* you can build ASP.NET Core applications as long as you have the *.NET Core cross-platform development* workload installed. Figure 10-X shows the required workload in the Visual Studio 2017 setup dialog.
 
-![](./media/image11-1.png)
+![](./media/image10-1.png)
 
-**Figure 11-1.** Installing the .NET Core workload in Visual Studio 2017.
+**Figure 10-1.** Installing the .NET Core workload in Visual Studio 2017.
 
 [Download Visual Studio 2017](https://www.visualstudio.com/downloads/)
 
@@ -53,9 +53,9 @@ To create a release pipeline for your app, you need to have your application cod
 
 Create an Azure App Service where you'll deploy your application. Create a Web App by going to the App Services blade on the Azure portal. Click +Add, select the Web App template, click Create, and provide a name and other details. The web app will be accessible from {name}.azurewebsites.net.
 
-![AzureWebApp](./media/image11-2.png)
+![AzureWebApp](./media/image10-2.png)
 
-**Figure 11-2.** Creating a new Azure App Service Web App in the Azure Portal.
+**Figure 10-2.** Creating a new Azure App Service Web App in the Azure Portal.
 
 Your CI build process will perform an automated build whenever new code is committed to the project's source control repository. This gives you immediate feedback that the code builds (and, ideally, passes automated tests) and can potentially be deployed. This CI build will produce a web deploy package artifact and publish it for consumption by your CD process.
 
@@ -73,9 +73,9 @@ Once your CI/CD pipeline is configured, you can simply make updates to your web 
 
 Once you have configured your Azure account and your CI/CD process, developing Azure-hosted ASP.NET Core applications is simple. The following are the basic steps you usually take when building an ASP.NET Core app, hosted in Azure App Service as a Web App, as illustrated in Figure 10-X.
 
-![EndToEndDevDeployWorkflow](./media/image11-3.png){width="6.25in" height="3.75in"}
+![EndToEndDevDeployWorkflow](./media/image10-3.png){width="6.25in" height="3.75in"}
 
-**Figure 11-3.** Step-by-step workflow for building ASP.NET Core apps and hosting them in Azure
+**Figure 10-3.** Step-by-step workflow for building ASP.NET Core apps and hosting them in Azure
 
 #### Step 1. Local Dev Environment Inner Loop
 
@@ -108,5 +108,5 @@ While the Web App is running, you can monitor the health of the application and 
 
 
 >[!div class="step-by-step"]
-[Previous] (../test-asp/functional-testing-asp.net-core-apps.md)
-[Next] (../azure-hosting-recommendations-for-asp/index.md)
+[Previous] (test-asp-net-core-mvc-apps.md)
+[Next] (azure-host-recommendations-for-asp-net-web-apps.md)

@@ -45,7 +45,7 @@ public class HomeController : Controller
     Routes can be specified on [HttpGet] and similar attributes, avoiding the need to add separate [Route\] attributes. Attribute routes can also use tokens to reduce the need to repeat controller or action names, as shown below:
 
 ```cs
-[Route("[controller\]")]
+[Route("[controller]")]
 public class ProductsController : Controller
 {
     [Route("")] // Matches 'Products'
@@ -92,7 +92,7 @@ public class Startup
         var builder = new ConfigurationBuilder()
         .SetBasePath(env.ContentRootPath)
         .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-        .AddJsonFile(\$"appsettings.{env.EnvironmentName}.json", optional: true);
+        .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true);
     }
 }
 ```
@@ -137,9 +137,9 @@ By default, ASP.NET Core applications organize their folder structure to include
 
 ASP.NET Core MVC supports Areas for this purpose. Using areas, you can create separate sets of Controllers and Views folders (as well as any associated models) in each Area folder. Figure 7-X shows an example folder structure, using Areas.
 
-![](./media/image8-1.png)
+![](./media/image7-1.png)
 
-Figure 8-1 Sample Area Organization
+Figure 7-1 Sample Area Organization
 
 When using Areas, you must use attributes to decorate your controllers with the name of the area to which they belong:
 
@@ -202,11 +202,11 @@ ASP.NET Core MVC also uses a convention to locate views. You can override it wit
 
 ### Cross-Cutting Concerns
 
-As applications grow, it becomes increasingly important to factor out cross-cutting concerns to eliminate duplication and maintain consistency. Some examples of cross-cutting concerns in ASP.NET Core applications are authentication, model validation rules, output caching, and error handling, though there are many others. ASP.NET Core MVC [filters](https://docs.microsoft.com/en-us/aspnet/core/mvc/controllers/filters) allow you to run code before or after certain steps in the request processing pipeline. For instance, a filter can run before and after model binding, before and after an action, or before and after an action's result. You can also use an authorization filter to control access to the rest of the pipeline. Figures 7-X shows how request execution flows through filters, if configured.
+As applications grow, it becomes increasingly important to factor out cross-cutting concerns to eliminate duplication and maintain consistency. Some examples of cross-cutting concerns in ASP.NET Core applications are authentication, model validation rules, output caching, and error handling, though there are many others. ASP.NET Core MVC [filters](https://docs.microsoft.com/en-us/aspnet/core/mvc/controllers/filters) allow you to run code before or after certain steps in the request processing pipeline. For instance, a filter can run before and after model binding, before and after an action, or before and after an action's result. You can also use an authorization filter to control access to the rest of the pipeline. Figures 7-2 shows how request execution flows through filters, if configured.
 
 ![The request is processed through Authorization Filters, Resource Filters, Model Binding, Action Filters, Action Execution and Action Result Conversion, Exception Filters, Result Filters, and Result Execution. On the way out, the request is only processed by Result Filters and Resource Filters before becoming a response sent to the client.](./media/image8-2.png)
 
-Figure 8-2 Request execution through filters and request pipeline.
+Figure 7-2 Request execution through filters and request pipeline.
 
 Filters are usually implemented as attributes, so you can apply them controllers or actions. When added in this fashion, filters specified at the action level override or build upon filters specified at the controller level, which themselves override global filters. For example, the \[Route\] attribute can be used to build up routes between controllers and actions. Likewise, authorization can be configured at the controller level, and then overridden by individual actions, as the following sample demonstrates:
 
@@ -289,13 +289,13 @@ Securing web applications is a large topic, with many considerations. At its mos
 
 ### Authentication
 
-ASP&period;NET Core Identity is a membership system you can use to support login functionality for your application. It has support for local user accounts as well as external login provider support from providers like Microsoft Account, Twitter, Facebook, Google, and more. In addition to ASP&period;NET Core Identity, your application can use windows authentication, or a third-party identity provider like [Identity Server](https://github.com/IdentityServer/IdentityServer4).
+ASP.NET Core Identity is a membership system you can use to support login functionality for your application. It has support for local user accounts as well as external login provider support from providers like Microsoft Account, Twitter, Facebook, Google, and more. In addition to ASP.NET Core Identity, your application can use windows authentication, or a third-party identity provider like [Identity Server](https://github.com/IdentityServer/IdentityServer4).
 
-ASP&period;NET Core Identity is included in new project templates if the Individual User Accounts option is selected. This template includes support for registration, login, external logins, forgotten passwords, and additional functionality.
+ASP.NET Core Identity is included in new project templates if the Individual User Accounts option is selected. This template includes support for registration, login, external logins, forgotten passwords, and additional functionality.
 
-![](./media/image3.png)
+![](./media/image7-3.png)
 
-Figure 7-X Select Individual User Accounts to have Identity preconfigured.
+Figure 7-3 Select Individual User Accounts to have Identity preconfigured.
 
 Identity support is configured in Startup, both in ConfigureServices and Configure:
 
@@ -326,7 +326,7 @@ public void Configure(IApplicationBuilder app)
 
 It's important that UseIdentity appear before UseMvc in the Configure method. When configuring Identity in ConfigureServices, you'll notice a call to AddDefaultTokenProviders. This has nothing to do with tokens that may be used to secure web communications, but instead refers to providers that create prompts that can be sent to users via SMS or email in order for them to confirm their identity.
 
-You can learn more about [configuring two-factor authentication](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/2fa) and [enabling external login providers](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/social/) from the official ASP&period;NET Core docs.
+You can learn more about [configuring two-factor authentication](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/2fa) and [enabling external login providers](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/social/) from the official ASP.NET Core docs.
 
 ### Authorization
 
@@ -375,14 +375,14 @@ This policy could then be used with the \[Authorize\] attribute to protect any c
 
 Most web APIs should implement a token-based authentication system. Token authentication is stateless and designed to be scalable. In a token-based authentication system, the client must first authenticate with the authentication provider. If successful, the client is issued a token, which is simply a cryptographically meaningful string of characters. When the client then needs to issue a request to an API, it adds this token as a header on the request. The server then validates the token found in the request header before completing the request. Figure 8-4 demonstrates this process.
 
-![TokenAuth](./media/image8-4.png)
+![TokenAuth](./media/image7-4.png)
 
-**Figure 8-4.** Token-based authentication for Web APIs.
+**Figure 7-4.** Token-based authentication for Web APIs.
 
 > ### References – Security
 > - **Security Docs Overview**  
 > https://docs.microsoft.com/en-us/aspnet/core/security/
-> - **Enforcing SSL in an ASP&period;NET Core App**  
+> - **Enforcing SSL in an ASP.NET Core App**  
 > <https://docs.microsoft.com/en-us/aspnet/core/security/enforcing-ssl>
 > - **Introduction to Identity**  
 > <https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity>
@@ -506,23 +506,23 @@ A hybrid approach would be to only use DDD for the transactional or more complex
 
 ## Deployment
 
-There are a few steps involved in the process of deploying your ASP&period;NET Core application, regardless of where it will be hosted. The first step is to publish the application, which can be done using the dotnet publish CLI command. This will compile the application and place all of the files needed to run the application into a designated folder. When you deploy from Visual Studio, this step is performed for you automatically. The publish folder contains .exe and .dll files for the application and its dependencies. A self-contained application will also include a version of the .NET runtime. ASP&period;NET Core applications will also include configuration files, static client assets, and MVC views.
+There are a few steps involved in the process of deploying your ASP.NET Core application, regardless of where it will be hosted. The first step is to publish the application, which can be done using the dotnet publish CLI command. This will compile the application and place all of the files needed to run the application into a designated folder. When you deploy from Visual Studio, this step is performed for you automatically. The publish folder contains .exe and .dll files for the application and its dependencies. A self-contained application will also include a version of the .NET runtime. ASP.NET Core applications will also include configuration files, static client assets, and MVC views.
 
-ASP&period;NET Core applications are console applications that must be started when the server boots and restarted if the application (or server) crashes. A process manager can be used to automate this process. The most common process managers for ASP&period;NET Core are Nginx and Apache on Linux and IIS or Windows Service on Windows.
+ASP.NET Core applications are console applications that must be started when the server boots and restarted if the application (or server) crashes. A process manager can be used to automate this process. The most common process managers for ASP.NET Core are Nginx and Apache on Linux and IIS or Windows Service on Windows.
 
-In addition to a process manager, ASP&period;NET Core applications hosted in the Kestrel web server must use a reverse proxy server. A reverse proxy server receives HTTP requests from the internet and forwards them to Kestrel after some preliminary handling. Reverse proxy servers provide a layer of security for the application, and are required for edge deployments (exposed to traffic from the Internet). Kestrel is relatively new and does not yet offer defenses against certain attacks. Kestrel also doesn't support hosting multiple applications on the same port, so techniques like host headers cannot be used with it to enable hosting multiple applications on the same port and IP address.
+In addition to a process manager, ASP.NET Core applications hosted in the Kestrel web server must use a reverse proxy server. A reverse proxy server receives HTTP requests from the internet and forwards them to Kestrel after some preliminary handling. Reverse proxy servers provide a layer of security for the application, and are required for edge deployments (exposed to traffic from the Internet). Kestrel is relatively new and does not yet offer defenses against certain attacks. Kestrel also doesn't support hosting multiple applications on the same port, so techniques like host headers cannot be used with it to enable hosting multiple applications on the same port and IP address.
 
-![Kestrel to Internet](./media/image8-5.png)
+![Kestrel to Internet](./media/image7-5.png)
 
-Figure 8-5 ASP&period;NET hosted in Kestrel behind a reverse proxy server
+Figure 7-5 ASP.NET hosted in Kestrel behind a reverse proxy server
 
-Another scenario in which a reverse proxy can be helpful is to secure multiple applications using SSL/HTTPS. In this case, only the reverse proxy would need to have SSL configured. Communication between the reverse proxy server and Kestrel could take place over HTTP, as shown in Figure 7-X.
+Another scenario in which a reverse proxy can be helpful is to secure multiple applications using SSL/HTTPS. In this case, only the reverse proxy would need to have SSL configured. Communication between the reverse proxy server and Kestrel could take place over HTTP, as shown in Figure 7-6.
 
-![](./media/image8-6.png)
+![](./media/image7-6.png)
 
-Figure 8-6 ASP&period;NET hosted behind an HTTPS-secured reverse proxy server
+Figure 7-6 ASP.NET hosted behind an HTTPS-secured reverse proxy server
 
-An increasingly popular approach is to host your ASP&period;NET Core application in a Docker container, which then can be hosted locally or deployed to Azure for cloud-based hosting. The Docker container could contain your application code, running on Kestrel, and would be deployed behind a reverse proxy server, as shown above.
+An increasingly popular approach is to host your ASP.NET Core application in a Docker container, which then can be hosted locally or deployed to Azure for cloud-based hosting. The Docker container could contain your application code, running on Kestrel, and would be deployed behind a reverse proxy server, as shown above.
 
 If you're hosting your application on Azure, you can use Microsoft Azure Application Gateway as a dedicated virtual appliance to provide several services. In addition to acting as a reverse proxy for individual applications, Application Gateway can also offer the following features:
 
@@ -547,7 +547,7 @@ If you're hosting your application on Azure, you can use Microsoft Azure Applica
 > <https://docs.microsoft.com/en-us/aspnet/core/publishing/>
 > - **When to use Kestrel with a reverse proxy**  
 > <https://docs.microsoft.com/en-us/aspnet/core/fundamentals/servers/kestrel#when-to-use-kestrel-with-a-reverse-proxy>
-> - **Host ASP&period;NET Core apps in Docker**  
+> - **Host ASP.NET Core apps in Docker**  
 > <https://docs.microsoft.com/en-us/aspnet/core/publishing/docker>
 > - **Introducing Azure Application Gateway**  
 > <https://docs.microsoft.com/en-us/azure/application-gateway/application-gateway-introduction>

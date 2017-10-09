@@ -117,4 +117,4 @@ At a minimum, individual web applications should strive to be their own bounded 
 
 > [!div class="step-by-step"]
 [Previous] (choose-between-traditional-web-apps-and-single-page-apps.md)
-[Next] (../common-web-application-architectures/index.md)
+[Next] (common-web-application-architectures.md)

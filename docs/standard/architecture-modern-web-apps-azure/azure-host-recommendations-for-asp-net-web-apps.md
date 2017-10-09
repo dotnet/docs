@@ -54,9 +54,9 @@ Azure Container Service makes it simpler for you to create, configure, and manag
 
 One goal of Azure Container Service is to provide a container hosting environment using open-source tools and technologies that are popular among Microsoft's customers today. To this end, Azure Container Service exposes the standard API endpoints for your chosen orchestrator (DC/OS, Docker Swarm, or Kubernetes). By using these endpoints, you can leverage any software that is capable of talking to those endpoints. For example, in the case of the Docker Swarm endpoint, you might choose to use the Docker command-line interface (CLI). For DC/OS, you might choose the DCOS CLI. For Kubernetes, you might choose kubectl. Figure 11-X shows how you would use these endpoints to manage your container clusters.
 
-![](./media/image12-1.png)
+![](./media/image11-1.png)
 
-**Figure 12-1.** Azure Container Service management with Docker, Kubernetes, or DC/OS endpoints.
+**Figure 11-1.** Azure Container Service management with Docker, Kubernetes, or DC/OS endpoints.
 
 ### Azure Service Fabric
 
@@ -103,9 +103,9 @@ Your application's requirements should dictate its architecture. There are many 
 
 Figure 11-X shows an example reference architecture. This diagram describes a recommended architecture approach for a Sitecore content management system website optimized for marketing.
 
-![](./media/image12-2.png)
+![](./media/image11-2.png)
 
-**Figure 12-2.** Sitecore marketing website reference architecture.
+**Figure 11-2.** Sitecore marketing website reference architecture.
 
 **References – Azure Hosting Recommendations**
 

@@ -9,7 +9,7 @@
 ## [Target Frameworks](standard/frameworks.md)
 ## [.NET Glossary](standard/glossary.md)
 ## [Architecture Guidance](standard/architecture.md)
-### [Architect Modern web applications with ASP.NET Core and Microsoft Azure](standard/architect-modern-web-apps-azure/)
+### [Architect Modern web applications with ASP.NET Core and Microsoft Azure](standard/architecture-modern-web-apps-azure/)
 ### [Containerized Docker Application Lifecycle with the Microsoft Platform and Tools](standard/architecture-containerized-lifecycle/)
 ### [.NET Microservices: Architecture for Containerized .NET Applications](standard/microservices-architecture/)
 ## [Choosing between .NET Core and .NET Framework for server apps](standard/choosing-core-framework-server.md)

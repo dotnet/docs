@@ -1,3 +1,6 @@
+    using System;
+    using System.Collections.Generic;
+    
     public class Shape
     {
         // A few example members
@@ -49,7 +52,7 @@
             // can all be used whereever a Shape is expected. No cast is
             // required because an implicit conversion exists from a derived 
             // class to its base class.
-            var shapes = new System.Collections.Generic.List<Shape>
+            var shapes = new List<Shape>
             {
                 new Rectangle(),
                 new Triangle(),

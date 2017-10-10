@@ -5,9 +5,9 @@ author: billwagner
 ms.author: wiwagn
 ms.date: 09/01/2017
 ms.topic: article
-ms.prod: .net-core
 dev_langs:
-- "vb"
+ - "vb"
+ms.prod: .net-core
 ---
 # Unit testing Visual Basic .NET Core libraries using dotnet test and MStest
 

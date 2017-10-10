@@ -1,10 +1,10 @@
 ---
 title: The .NET Compiler Platform SDK | Microsoft Docs 
-description: 115-145 characters including spaces. Edit the intro para describing article intent to fit here. This abstract displays in the search result.
+description: Learn to use the .NET Compile Platform SDK (also called the Roslyn APIs) to understand .NET code, spot errors, and fix those errors.
 keywords: roslyn, analyzer, code fix
 author: billwagner
 ms.author: wiwagn
-ms.date: 07/19/2017
+ms.date:10/10/2017
 ms.topic: conceptual
 ms.prod: .net
 ms.devlang:devlang-csharp
@@ -23,9 +23,13 @@ do not run the code or provide other testing benefits. They can, however,
 point out practices that often lead to bugs, unmaintanable code, or
 standard guideline validation.
 
-<< add paragraph about design and compiler APIs>>
-
-There are three main scenarios for writing analyzers and code fixes:
+The .NET Compiler platform SDK provides a single set of APIs that enable
+you to examine and understand a C# or Visual Basic codebase. Because you
+can use this single code base, you can write analyzers and code fixes that
+use much less memory when loaded in Visual Studio than would be possible
+if you wrote your own codebase to understand the code in a project. By leveraging
+the same classes used by the compiler and Visual Studio, you can create your own
+static analysis tools. There are three main scenarios for writing analyzers and code fixes:
 
 1. [*Enforce team coding standards*](#enforce-team-coding-standards)
 1. [*Provide guidance with library packages*](#provide-guidance-with-library-packages)
@@ -80,9 +84,15 @@ learn accepted practices quickly and become productive earlier in their .NET
 journey. As these become more widely used, the community adopts these
 practices.
 
+<!--
+
+Turn this on as more of the conceptual content is in place:
+
 ## Next Steps
 
 - Try the [Quickstarts](quickstart/index.md) to create your first tutorial.
 - Experiment with one of the [Tutorials](tutorials/index.md).
 - Explore the [Samples](samples/index.md) to see some simple analyzers.
 - Read the [Concepts](concepts/index.md) to understand the ideas behind analyzers and code fixes.
+
+-->

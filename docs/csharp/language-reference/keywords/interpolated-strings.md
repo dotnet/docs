@@ -50,7 +50,7 @@ If the interpolated string contains other characters with special meaning in an 
 
 [!code-cs[interpolated-strings4](../../../../samples/snippets/csharp/language-reference/keywords/interpolated-strings4.cs#1)]  
 
-Verbatim interpolated strings use the `@` character followed by the `$` character. For more information about verbatim strings, see the         [string](strings.md) topic. The following code is a modified version of the previous snippet using a verbatim interpolated string:
+Verbatim interpolated strings use the `$` character followed by the `@` character. For more information about verbatim strings, see the [string](strings.md) topic. The following code is a modified version of the previous snippet using a verbatim interpolated string:
 
 [!code-cs[interpolated-strings4](../../../../samples/snippets/csharp/language-reference/keywords/interpolated-strings5.cs#1)]  
 

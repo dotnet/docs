@@ -62,21 +62,17 @@ A standard date and time format string uses a single format specifier to define 
 -   You can use the default (or current) culture. The following example displays a date using the current culture's short date format. In this case, the current culture is en-US.  
   
 # [C#](#tab/csharp)
-```csharp-interactive
-using System;
 
-public class Class1
-{
-   public static void Main()
-   {
-      DateTime thisDate = new DateTime(2008, 3, 15);
-      Console.WriteLine(thisDate.ToString("d"));
-      // Displays "3/15/2008". Try it by pressing "Run"
-   }
-}
+```csharp-interactive
+DateTime thisDate = new DateTime(2008, 3, 15);
+Console.WriteLine(thisDate.ToString("d"));
+// Displays "3/15/2008". Try it by pressing "Run"
 ```   
+
 # [Visual Basic](#tab/visual-basic)
-     [!code-vb[System.DateTime.Conceptual.Formatting#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTime.Conceptual.Formatting/vb/StandardFormats1.vb#1)]  
+
+[!code-vb[System.DateTime.Conceptual.Formatting#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTime.Conceptual.Formatting/vb/StandardFormats1.vb#1)]
+
 ---
 
 -   You can pass a <xref:System.Globalization.CultureInfo> object representing the culture whose formatting is to be used to a method that has an <xref:System.IFormatProvider> parameter. The following example displays a date using the short date format of the pt-BR culture.  

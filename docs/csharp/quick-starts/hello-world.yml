@@ -33,7 +33,7 @@ items:
   durationInMinutes: 3
   content: |
     Your first program printed the `string` "Hello World!" on
-    the screen. It used the `Console.WriteLine` method to print that message. `Console` is a type that represents the text console. `WriteLine` is a method that prints a line of text to that text console.
+    the screen. It used the <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> method to print that message. `Console` is a type that represents the console window. `WriteLine` is a method of the `Console` type that prints a line of text to that text console.
     
     The rest of this lesson explores working with the `string` type, which represents text in C#. Like the `Console` type, the `string` type has methods. The `string` methods work with text. 
 

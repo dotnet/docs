@@ -27,8 +27,8 @@
 ## Examples  
  The following code example demonstrates how to route <xref:System.Diagnostics.Trace> messages to Web form output. The code example shows a typical Web form containing a <xref:System.Web.UI.WebControls.BulletedList> and <xref:System.Web.UI.WebControls.AccessDataSource> control. Tracing is enabled on the Web form and trace output is appended to the Web form when it is rendered. You can examine the trace messages in the **Trace Information** table of the trace output. If you have enabled the <xref:System.Web.WebPageTraceListener> correctly in your configuration file, you see both trace messages with the category `"Trace Test"`. However, if you have not enabled the <xref:System.Web.WebPageTraceListener>, you see only the trace message that is written to the <xref:System.Web.TraceContext> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Trace_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Trace_2/CS/form2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Trace_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Trace_2/VB/form2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.Trace_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Trace_2/CS/form2cs.aspx#1)]
+ [!code-aspx-vb[System.Web.Trace_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Trace_2/VB/form2vb.aspx#1)]  
   
  ]]></format>
     </remarks>

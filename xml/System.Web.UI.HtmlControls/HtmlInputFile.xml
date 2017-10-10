@@ -53,8 +53,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputFile> control to create a simple file upload scenario. For this example to work properly, you need to create a directory called `Temp` on your computer's drive C.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HtmlInputFile Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputFile Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HtmlInputFile Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputFile Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HtmlInputFile Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputFile Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HtmlInputFile Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputFile Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -89,8 +89,8 @@
 ## Examples  
  The following code example demonstrates how to create a new instance of the <xref:System.Web.UI.HtmlControls.HtmlInputFile> class. For this example to work properly, you need to create a directory called `Temp` on your computer's drive C.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlInputFileCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputFileCtor/CS/htmlinputfilectorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlInputFileCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputFileCtor/VB/htmlinputfilectorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlInputFileCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputFileCtor/CS/htmlinputfilectorcs.aspx#1)]
+ [!code-aspx-vb[HtmlInputFileCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputFileCtor/VB/htmlinputfilectorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -133,8 +133,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputFile.Accept%2A> property to restrict the user from selecting any file other than an image file. For this example to work properly, you need to create a directory called `Temp` on your computer's drive C. Because support for the <xref:System.Web.UI.HtmlControls.HtmlInputFile.Accept%2A> property is browser-dependent, a server-side check is performed to ensure that only images are uploaded. An exception is thrown if the uploaded file can not be read as an <xref:System.Drawing.Image> type.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HtmlInputFile.Accept Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputFile.Accept Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HtmlInputFile.Accept Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputFile.Accept Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HtmlInputFile.Accept Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputFile.Accept Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HtmlInputFile.Accept Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputFile.Accept Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -238,8 +238,8 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.HtmlControls.HtmlInputFile.OnPreRender%2A> method so that a `Title` attribute is always added to each custom <xref:System.Web.UI.HtmlControls.HtmlInputFile> control. For this example to work properly, you need to create a directory called `Temp` on your computer's drive C.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomHtmlInputFileOnPreRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlInputFileOnPreRender/CS/custom_htmlinputfile_onprerendercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomHtmlInputFileOnPreRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlInputFileOnPreRender/VB/custom_htmlinputfile_onprerendervb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomHtmlInputFileOnPreRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlInputFileOnPreRender/CS/custom_htmlinputfile_onprerendercs.aspx#1)]
+ [!code-aspx-vb[CustomHtmlInputFileOnPreRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlInputFileOnPreRender/VB/custom_htmlinputfile_onprerendervb.aspx#1)]  
   
  [!code-csharp[CustomHtmlInputFileOnPreRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlInputFileOnPreRender/CS/custom_htmlinputfile_onprerender.cs#2)]
  [!code-vb[CustomHtmlInputFileOnPreRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlInputFileOnPreRender/VB/custom_htmlinputfile_onprerender.vb#2)]  
@@ -282,8 +282,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputFile.PostedFile%2A> property to initiate the utility that transfers the file to the server. Note that if the size of the uploaded file in bytes exceeds the value of the <xref:System.Web.HttpPostedFile.ContentLength%2A> property, the file is not uploaded. For this example to work properly, you need to create a directory called `Temp` on your computer's drive C.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HtmlInputFile.PostedFile Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputFile.PostedFile Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HtmlInputFile.PostedFile Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputFile.PostedFile Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HtmlInputFile.PostedFile Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputFile.PostedFile Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HtmlInputFile.PostedFile Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputFile.PostedFile Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -350,8 +350,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputFile.Size%2A> property to specify the width of the text box in which the user enters the file path. For this example to work properly, you need to create a directory called `Temp` on your computer's drive C.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HtmlInputFile.Size Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputFile.Size Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HtmlInputFile.Size Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputFile.Size Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HtmlInputFile.Size Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputFile.Size Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HtmlInputFile.Size Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputFile.Size Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -448,8 +448,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputFile.Value%2A> property to display the full path of the file on the client's computer. For this example to work properly, you need to create a directory called `Temp` on your computer's drive C.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlInputFileValue#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputFileValue/CS/htmlinputfilevaluecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlInputFileValue#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputFileValue/VB/htmlinputfilevaluevb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlInputFileValue#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputFileValue/CS/htmlinputfilevaluecs.aspx#1)]
+ [!code-aspx-vb[HtmlInputFileValue#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputFileValue/VB/htmlinputfilevaluevb.aspx#1)]  
   
  ]]></format>
         </remarks>

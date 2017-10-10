@@ -23,8 +23,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.WebParts.IPersonalizable> interface. The example consists of an .aspx page that references a Web Part control named `UrlListWebPart`. The following code is the .aspx file for the example.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_IPersonalizable_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IPersonalizable_Overview/CS/IPersonalizableCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_IPersonalizable_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IPersonalizable_Overview/VB/IPersonalizableVB.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_IPersonalizable_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IPersonalizable_Overview/CS/IPersonalizableCS.aspx#1)]
+ [!code-aspx-vb[WebParts_IPersonalizable_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IPersonalizable_Overview/VB/IPersonalizableVB.aspx#1)]  
   
  The following code is the source for the custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control. This file should be placed in the App_Code directory.  
   
@@ -69,8 +69,8 @@
 ## Examples  
  The following code example demonstrates use of the <xref:System.Web.UI.WebControls.WebParts.IPersonalizable.IsDirty%2A> property. The first part of the example is the Web page that hosts a <xref:System.Web.UI.WebControls.WebParts.WebPart> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_IPersonalizable_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IPersonalizable_Overview/CS/IPersonalizableCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_IPersonalizable_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IPersonalizable_Overview/VB/IPersonalizableVB.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_IPersonalizable_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IPersonalizable_Overview/CS/IPersonalizableCS.aspx#1)]
+ [!code-aspx-vb[WebParts_IPersonalizable_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IPersonalizable_Overview/VB/IPersonalizableVB.aspx#1)]  
   
  The second part of the example is the code for the custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control called `UrlListWebPart`. This file should be placed in the App_Code directory to run the example. Note that the source code implements the <xref:System.Web.UI.WebControls.WebParts.IPersonalizable.IsDirty%2A> property.  
   

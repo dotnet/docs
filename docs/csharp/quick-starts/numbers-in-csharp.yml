@@ -65,6 +65,9 @@ items:
     > and the code in the interactive window to see what to fix.
     > That exercise will help you learn the structure of C# code.     
 
+    > [!NOTE]
+    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
+
 - title: Explore order of operations
   durationInMinutes: 7
   content: |
@@ -115,6 +118,10 @@ items:
     ```
 
     Click **Run** again to see the results.
+
+    > [!NOTE]
+    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
+    
 - title: Explore integer precision and limits
   durationInMinutes: 5
   content: |
@@ -159,6 +166,9 @@ items:
 
     There are other numeric types with different limits and precision that you
     would use when the `int` type doesn't meet your needs. Let's explore those next.
+
+    > [!NOTE]
+    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
 
 - title: Work with the double type
   durationInMinutes: 5
@@ -220,6 +230,8 @@ items:
     Try other calculations with large numbers, small numbers, multiplication
     and division using the `double` type.  Try more complicated calculations.
 
+    > [!NOTE]
+    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
 
 - title: Work with fixed point types
   durationInMinutes: 8
@@ -261,6 +273,9 @@ items:
     is the radius squared multiplied by PI. One hint: C# contains a constant
     for PI: `Math.PI` that you can use for that value. 
 
+    > [!NOTE]
+    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
+
 - title: Complete challenge
   durationInMinutes: 1
   content: |
@@ -273,6 +288,9 @@ items:
     ```
 
     Try some other formulas if you'd like.
+
+    > [!NOTE]
+    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
 
   content: |
     You've completed the "Numbers in C#" tutorial. You can learn more about numbers in C# in the following topics:

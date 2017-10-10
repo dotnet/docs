@@ -47,13 +47,13 @@
 ## Examples  
  The following example demonstrates how to programmatically add a <xref:System.Web.UI.WebControls.FormViewCommandEventHandler> delegate to the <xref:System.Web.UI.WebControls.FormView.ItemCommand> event of a <xref:System.Web.UI.WebControls.FormView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewCommandEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewCommandEventHandler/CS/formviewcommandeventhandlercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewCommandEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewCommandEventHandler/VB/formviewcommandeventhandlervb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewCommandEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewCommandEventHandler/CS/formviewcommandeventhandlercs.aspx#1)]
+ [!code-aspx-vb[FormViewCommandEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewCommandEventHandler/VB/formviewcommandeventhandlervb.aspx#1)]  
   
  The following example demonstrates how to declaratively add a <xref:System.Web.UI.WebControls.FormViewCommandEventHandler> delegate to the <xref:System.Web.UI.WebControls.FormView.ItemCommand> event of a <xref:System.Web.UI.WebControls.FormView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewCommandEventHandlerDeclarative#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewCommandEventHandlerDeclarative/CS/formviewcommandeventhandlerdeclarativecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewCommandEventHandlerDeclarative#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewCommandEventHandlerDeclarative/VB/formviewcommandeventhandlerdeclarativevb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewCommandEventHandlerDeclarative#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewCommandEventHandlerDeclarative/CS/formviewcommandeventhandlerdeclarativecs.aspx#1)]
+ [!code-aspx-vb[FormViewCommandEventHandlerDeclarative#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewCommandEventHandlerDeclarative/VB/formviewcommandeventhandlerdeclarativevb.aspx#1)]  
   
  ]]></format>
     </remarks>

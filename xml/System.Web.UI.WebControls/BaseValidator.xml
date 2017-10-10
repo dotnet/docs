@@ -130,8 +130,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic BaseValidator Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic BaseValidator Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic BaseValidator Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic BaseValidator Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic BaseValidator Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic BaseValidator Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic BaseValidator Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic BaseValidator Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -382,8 +382,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.BaseValidator.ControlToValidate%2A> property to specify the input control to validate.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic BaseValidator Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic BaseValidator Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic BaseValidator Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic BaseValidator Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic BaseValidator Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic BaseValidator Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic BaseValidator Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic BaseValidator Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -473,8 +473,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic BaseValidator Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic BaseValidator Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic BaseValidator Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic BaseValidator Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic BaseValidator Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic BaseValidator Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic BaseValidator Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic BaseValidator Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -525,8 +525,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic BaseValidator Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic BaseValidator Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic BaseValidator Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic BaseValidator Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic BaseValidator Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic BaseValidator Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic BaseValidator Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic BaseValidator Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -566,8 +566,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic BaseValidator.Enabled Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic BaseValidator.Enabled Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic BaseValidator.Enabled Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic BaseValidator.Enabled Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic BaseValidator.Enabled Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic BaseValidator.Enabled Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic BaseValidator.Enabled Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic BaseValidator.Enabled Example/VB/sourcevb.aspx#1)]  
   
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.BaseValidator.Enabled%2A> property to enable or disable the validation controls on the Web page using client-side code.  
   
@@ -619,8 +619,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic BaseValidator Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic BaseValidator Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic BaseValidator Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic BaseValidator Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic BaseValidator Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic BaseValidator Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic BaseValidator Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic BaseValidator Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -693,8 +693,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic BaseValidator.ForeColor Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic BaseValidator.ForeColor Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic BaseValidator.ForeColor Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic BaseValidator.ForeColor Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic BaseValidator.ForeColor Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic BaseValidator.ForeColor Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic BaseValidator.ForeColor Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic BaseValidator.ForeColor Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -878,8 +878,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[BaseValidatorIsValid#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BaseValidatorIsValid/CS/basevalidatorisvalidcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[BaseValidatorIsValid#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BaseValidatorIsValid/VB/basevalidatorisvalidvb.aspx#1)]  -->  
+ [!code-aspx-csharp[BaseValidatorIsValid#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BaseValidatorIsValid/CS/basevalidatorisvalidcs.aspx#1)]
+ [!code-aspx-vb[BaseValidatorIsValid#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BaseValidatorIsValid/VB/basevalidatorisvalidvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1316,8 +1316,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[BaseValidatorValidationGroup#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BaseValidatorValidationGroup/CS/BaseValidatorValidationGroupcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[BaseValidatorValidationGroup#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BaseValidatorValidationGroup/VB/BaseValidatorValidationGroupvb.aspx#1)]  -->  
+ [!code-aspx-csharp[BaseValidatorValidationGroup#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BaseValidatorValidationGroup/CS/BaseValidatorValidationGroupcs.aspx#1)]
+ [!code-aspx-vb[BaseValidatorValidationGroup#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BaseValidatorValidationGroup/VB/BaseValidatorValidationGroupvb.aspx#1)]  
   
  ]]></format>
         </remarks>

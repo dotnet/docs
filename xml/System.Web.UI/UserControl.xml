@@ -72,8 +72,8 @@
   
  The following example is markup contained in an .ascx file. You can use the `SimpleControl` class defined in the previous example as a code-behind class for the markup in this .ascx file.  
   
- <!-- TODO: review snippet reference [!code-csharp[Sys.Web.UI.TemplateControl_UserControl#3](~/samples/snippets/csharp/VS_Snippets_WebNet/Sys.Web.UI.TemplateControl_UserControl/CS/simpleformcs.ascx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[Sys.Web.UI.TemplateControl_UserControl#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Sys.Web.UI.TemplateControl_UserControl/VB/simpleformvb.ascx#3)]  -->  
+ [!code-aspx-csharp[Sys.Web.UI.TemplateControl_UserControl#3](~/samples/snippets/csharp/VS_Snippets_WebNet/Sys.Web.UI.TemplateControl_UserControl/CS/simpleformcs.ascx#3)]
+ [!code-aspx-vb[Sys.Web.UI.TemplateControl_UserControl#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Sys.Web.UI.TemplateControl_UserControl/VB/simpleformvb.ascx#3)]  
   
  ]]></format>
     </remarks>
@@ -255,8 +255,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.ControlCachePolicy.SupportsCaching%2A> property to determine whether the user control can be cached, and if so, sets the <xref:System.Web.UI.ControlCachePolicy.Duration%2A> property to cache the control for 10 seconds.  
   
- <!-- TODO: review snippet reference [!code-csharp[UserControlCachePolicy#1](~/samples/snippets/csharp/VS_Snippets_WebNet/UserControlCachePolicy/CS/usercontrolcachepolicycs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[UserControlCachePolicy#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/UserControlCachePolicy/VB/usercontrolcachepolicyvb.aspx#1)]  -->  
+ [!code-aspx-csharp[UserControlCachePolicy#1](~/samples/snippets/csharp/VS_Snippets_WebNet/UserControlCachePolicy/CS/usercontrolcachepolicycs.aspx#1)]
+ [!code-aspx-vb[UserControlCachePolicy#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/UserControlCachePolicy/VB/usercontrolcachepolicyvb.aspx#1)]  
   
  ]]></format>
         </remarks>

@@ -29,8 +29,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewUpdateEventArgs> object passed to the event-handling method to HTML-encode all values supplied by the user before updating the data source.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowUpdating#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowUpdating/CS/gridviewrowupdatingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowUpdating#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowUpdating/VB/gridviewrowupdatingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRowUpdating#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowUpdating/CS/gridviewrowupdatingcs.aspx#1)]
+ [!code-aspx-vb[GridViewRowUpdating#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowUpdating/VB/gridviewrowupdatingvb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -103,8 +103,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewDeleteEventArgs.Keys%2A> property to access the values of the key fields in the row to update. The values are then written to a log file of updated records.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewUpdateEventArgsKeys#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewUpdateEventArgsKeys/CS/gridviewupdateeventargskeyscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewUpdateEventArgsKeys#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewUpdateEventArgsKeys/VB/gridviewupdateeventargskeysvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewUpdateEventArgsKeys#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewUpdateEventArgsKeys/CS/gridviewupdateeventargskeyscs.aspx#1)]
+ [!code-aspx-vb[GridViewUpdateEventArgsKeys#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewUpdateEventArgsKeys/VB/gridviewupdateeventargskeysvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -143,8 +143,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewUpdateEventArgs.NewValues%2A> property to HTML-encode all values supplied by the user before updating the data source.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowUpdating#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowUpdating/CS/gridviewrowupdatingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowUpdating#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowUpdating/VB/gridviewrowupdatingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRowUpdating#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowUpdating/CS/gridviewrowupdatingcs.aspx#1)]
+ [!code-aspx-vb[GridViewRowUpdating#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowUpdating/VB/gridviewrowupdatingvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -183,8 +183,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewUpdateEventArgs.OldValues%2A> property to access the original values of the fields in the row to update. The values are then written to a log file of updated records.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewUpdateEventArgsOldValues#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewUpdateEventArgsOldValues/CS/gridviewupdateeventargsoldvaluescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewUpdateEventArgsOldValues#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewUpdateEventArgsOldValues/VB/gridviewupdateeventargsoldvaluesvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewUpdateEventArgsOldValues#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewUpdateEventArgsOldValues/CS/gridviewupdateeventargsoldvaluescs.aspx#1)]
+ [!code-aspx-vb[GridViewUpdateEventArgsOldValues#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewUpdateEventArgsOldValues/VB/gridviewupdateeventargsoldvaluesvb.aspx#1)]  
   
  ]]></format>
         </remarks>

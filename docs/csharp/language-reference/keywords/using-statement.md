@@ -39,7 +39,7 @@ Provides a convenient syntax that ensures the correct use of <xref:System.IDispo
 ## Remarks  
  <xref:System.IO.File> and <xref:System.Drawing.Font> are examples of managed types that access unmanaged resources (in this case file handles and device contexts). There are many other kinds of unmanaged resources and class library types that encapsulate them. All such types must implement the <xref:System.IDisposable> interface.  
   
- As a rule, when you use an `IDisposable` object, you should declare and instantiate it in a `using` statement. The `using` statement calls the <xref:System.IDisposable.Dispose%2A> method on the object in the correct way, and (when you use it as shown earlier) it also causes the object itself to go out of scope as soon as <xref:System.IDisposable.Dispose%2A> is called. Within the `using` block, the object is read-only and cannot be modified or reassigned.  
+When the lifetime of an `IDisposable` object is limited to a single method, you should declare and instantiate it in a `using` statement. The `using` statement calls the <xref:System.IDisposable.Dispose%2A> method on the object in the correct way, and (when you use it as shown earlier) it also causes the object itself to go out of scope as soon as <xref:System.IDisposable.Dispose%2A> is called. Within the `using` block, the object is read-only and cannot be modified or reassigned.  
   
  The `using` statement ensures that <xref:System.IDisposable.Dispose%2A> is called even if an exception occurs while you are calling methods on the object. You can achieve the same result by putting the object inside a try block and then calling <xref:System.IDisposable.Dispose%2A> in a finally block; in fact, this is how the `using` statement is translated by the compiler. The code example earlier expands to the following code at compile time (note the extra curly braces to create the limited scope for the object):  
   
@@ -53,6 +53,8 @@ Provides a convenient syntax that ensures the correct use of <xref:System.IDispo
   
  [!code-cs[csrefKeywordsNamespace#7](../../../csharp/language-reference/keywords/codesnippet/CSharp/using-statement_4.cs)]  
   
+For more information on disposing of `IDisposable` objects, see [Using objects that implement IDisposable](../../../standard/garbage-collection/using-objects.md).
+
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
@@ -62,4 +64,5 @@ Provides a convenient syntax that ensures the correct use of <xref:System.IDispo
  [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
  [using Directive](../../../csharp/language-reference/keywords/using-directive.md)   
  [Garbage Collection](../../../standard/garbage-collection/index.md)   
- [Implementing a Dispose Method](../../../standard/garbage-collection/implementing-dispose.md)
+ [Using objects that implement IDisposable](../../../standard/garbage-collection/using-objects.md)   
+ [IDisposable interface](xref:System.IDisposable)

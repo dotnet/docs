@@ -46,8 +46,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic RegularExpressionValidator Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RegularExpressionValidator Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic RegularExpressionValidator Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RegularExpressionValidator Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic RegularExpressionValidator Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RegularExpressionValidator Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic RegularExpressionValidator Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RegularExpressionValidator Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -100,8 +100,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomRegularExpressionValidatorAddAttributesToRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomRegularExpressionValidatorAddAttributesToRender/CS/custom_regularexpressionvalidator_addattributestorendercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomRegularExpressionValidatorAddAttributesToRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomRegularExpressionValidatorAddAttributesToRender/VB/custom_regularexpressionvalidator_addattributestorendervb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomRegularExpressionValidatorAddAttributesToRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomRegularExpressionValidatorAddAttributesToRender/CS/custom_regularexpressionvalidator_addattributestorendercs.aspx#1)]
+ [!code-aspx-vb[CustomRegularExpressionValidatorAddAttributesToRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomRegularExpressionValidatorAddAttributesToRender/VB/custom_regularexpressionvalidator_addattributestorendervb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -138,8 +138,8 @@
   
  The following code example demonstrates how to use the `CustomRegularExpressionValidatorEvaluateIsValid` control, defined in the preceding example, on a Web Forms page.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomRegularExpressionValidatorEvaluateIsValid#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomRegularExpressionValidatorEvaluateIsValid/CS/custom_regularexpressionvalidator_evaluateisvalidcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomRegularExpressionValidatorEvaluateIsValid#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomRegularExpressionValidatorEvaluateIsValid/VB/custom_regularexpressionvalidator_evaluateisvalidvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomRegularExpressionValidatorEvaluateIsValid#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomRegularExpressionValidatorEvaluateIsValid/CS/custom_regularexpressionvalidator_evaluateisvalidcs.aspx#1)]
+ [!code-aspx-vb[CustomRegularExpressionValidatorEvaluateIsValid#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomRegularExpressionValidatorEvaluateIsValid/VB/custom_regularexpressionvalidator_evaluateisvalidvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -212,8 +212,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic RegularExpressionValidator Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RegularExpressionValidator Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic RegularExpressionValidator Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RegularExpressionValidator Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic RegularExpressionValidator Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RegularExpressionValidator Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic RegularExpressionValidator Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RegularExpressionValidator Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>

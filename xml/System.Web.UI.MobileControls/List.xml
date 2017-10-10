@@ -62,8 +62,8 @@
 ## Examples  
  The following code example demonstrates how an array binds and fills a <xref:System.Web.UI.MobileControls.List>. Notice that you can programmatically set the <xref:System.Web.UI.MobileControls.List.DataTextField%2A> and <xref:System.Web.UI.MobileControls.List.DataValueField%2A> properties of the <xref:System.Web.UI.MobileControls.List> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[MobileListSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileListSample/cs/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MobileListSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileListSample/vb/Default.aspx#1)]  -->  
+ [!code-aspx-csharp[MobileListSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileListSample/cs/Default.aspx#1)]
+ [!code-aspx-vb[MobileListSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileListSample/vb/Default.aspx#1)]  
   
  ]]></format>
     </remarks>

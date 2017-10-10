@@ -1,21 +1,17 @@
 ---
 title: ".NET Framework 4.7, 4.6, and 4.5"
-ms.custom: ""
-ms.date: "03/30/2017"
+ms.date: "10/02/2017"
 ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
+ms.custom: "updateeachrelease"
 f1_keywords: 
   - "f61f02f2-2f20-483d-8f56-a9c8f3a54986"
 helpviewer_keywords: 
   - ".NET Framework, documentation"
   - "documentation, .NET Framework"
-ms.assetid: f61f02f2-2f20-483d-8f56-a9c8f3a54986
-caps.latest.revision: 75
+ms.assetid: f61f02f2-2f20-483d-8f56-a9c8f3a54986 
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

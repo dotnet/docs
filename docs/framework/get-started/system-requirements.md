@@ -1,13 +1,10 @@
 ---
 title: ".NET Framework system requirements"
-ms.custom: ""
+ms.custom: "updateeachrelease"
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "software requirements"
@@ -15,8 +12,7 @@ helpviewer_keywords:
   - "system requirements"
   - "operating systems supported"
   - "hardware requirements"
-ms.assetid: 298275e2-da1d-4618-9f74-6a3567832350
-caps.latest.revision: 95
+ms.assetid: 298275e2-da1d-4618-9f74-6a3567832350 
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

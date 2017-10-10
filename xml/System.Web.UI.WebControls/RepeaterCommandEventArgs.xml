@@ -23,8 +23,8 @@
 ## Examples  
  The following example illustrates a way to handle an <xref:System.Web.UI.WebControls.Repeater.ItemCommand> event of the <xref:System.Web.UI.WebControls.Repeater>. Information about the button is displayed whenever a <xref:System.Web.UI.WebControls.Button> control within the <xref:System.Web.UI.WebControls.Repeater> is clicked.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic RepeaterCommandEventArgs Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RepeaterCommandEventArgs Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic RepeaterCommandEventArgs Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RepeaterCommandEventArgs Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic RepeaterCommandEventArgs Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RepeaterCommandEventArgs Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic RepeaterCommandEventArgs Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RepeaterCommandEventArgs Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
     </remarks>

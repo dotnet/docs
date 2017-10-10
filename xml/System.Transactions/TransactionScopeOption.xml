@@ -24,7 +24,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Transactions.TransactionScopeOption> enumeration is passed to the various constructors of the <xref:System.Transactions.TransactionScope> class to define the transactional behavior of the scope. For more information on how this enumeration is used, see the "Managing Transaction Flow using TransactionScopeOption" section in [Implementing An Implicit Transaction Using Transaction Scope](http://msdn.microsoft.com/en-us/1ddba95e-7587-48b2-8838-708c275e7199).  
+ The <xref:System.Transactions.TransactionScopeOption> enumeration is passed to the various constructors of the <xref:System.Transactions.TransactionScope> class to define the transactional behavior of the scope. For more information on how this enumeration is used, see the "Managing Transaction Flow using TransactionScopeOption" section in [Implementing An Implicit Transaction Using Transaction Scope](~/docs/framework/data/transactions/implementing-an-implicit-transaction-using-transaction-scope.md).  
   
  ]]></format>
     </remarks>

@@ -56,7 +56,11 @@ Value tuples are tuple types introduced in the [!INCLUDE[net_v463](~/includes/ne
 -   Their data members, such as `Item1`, `Item2`, etc., are fields rather than properties.  
   
 The <xref:System.ValueTuple> structure represents a tuple that has no elements. It is useful primarily for its static methods that let you create and compare instances of value tuple types. Its helper methods let you instantiate value tuples without having to explicitly specify the type of each value tuple component. By calling its static <xref:System.ValueTuple.Create%2A> methods, you can create value tuples that have from zero to eight components. For value tuples with more than eight components, you must call the <xref:System.ValueTuple%608.%23ctor%2A> constructor.  
-  
+
+### Serialization and value tuples
+
+The <xref:System.ValueTuple> type is not serializable in .NET Core 1.x or in the .NET Framework 4.7 and earlier versions. In addition, .NET Standard, including .NET Standard 2.0, does not mandate serialization of <xref:System.ValueTuple> instances; whether or not a <xref:System.ValueTuple> instance is serializable depends on the individual .NET Standard implementation. To determine whether a <xref:System.ValueTuple> type is serializable on a particular .NET implementation, get a <xref:System.Type> object that represents the <xref:System.ValueTuple> type and retrieve the value of its <xref:System.Type.IsSerializable%2A> property. For a list of serializable types in .NET Core and the .NET Framework, see [Binary Serialization](~/docs/standard/serialization/binary-serialization.md).
+
  ]]></format>
     </remarks>
   </Docs>

@@ -51,8 +51,8 @@
 ## Examples  
  The following code example demonstrates how to declaratively use a <xref:System.Web.UI.WebControls.SqlDataSource> control to retrieve data from a computer running Microsoft SQL Server and display it in a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_3sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_3sql/CS/sql3cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_3sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_3sql/VB/sql3vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_3sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_3sql/CS/sql3cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_3sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_3sql/VB/sql3vb.aspx#1)]
   
  The code retrieves the following connection string from the Web.config file.  
   

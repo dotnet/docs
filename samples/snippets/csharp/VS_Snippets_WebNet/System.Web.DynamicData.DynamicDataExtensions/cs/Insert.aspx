@@ -1,4 +1,4 @@
-﻿<%--<snippet2>--%>
+﻿<!-- <Snippet2> -->
 <%@ Page Language="C#" MasterPageFile="~/Site.master" CodeFile="Insert.aspx.cs" Inherits="Insert" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
@@ -23,4 +23,4 @@
     </asp:LinqDataSource>
 </asp:Content>
 
-<%--</snippet2>--%>
+<!-- </Snippet2> -->

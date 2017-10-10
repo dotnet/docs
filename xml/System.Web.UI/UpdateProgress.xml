@@ -88,8 +88,8 @@
   
  The template can contain HTML and markup. For example, you can display an animated image that notifies the user that the postback is processing. You can also display a button that the user can click to stop the partial-page update. Additionally, you might want to prevent all other postbacks while one is in progress. The following example shows client script that you can use to accomplish these tasks.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.UpdateProgress4#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.UpdateProgress4/CS/default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.UpdateProgress4#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.UpdateProgress4/VB/default.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.UpdateProgress4#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.UpdateProgress4/CS/default.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.UpdateProgress4#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.UpdateProgress4/VB/default.aspx#1)]  
   
  You can use the example code by setting the `onClick` attribute of an `HtmlButton` control to "AbortPostBack()". For more information, see the  method and the  property of the  class.  
   
@@ -159,13 +159,13 @@
   
  The following example shows one <xref:System.Web.UI.UpdateProgress> control that displays progress status for two <xref:System.Web.UI.UpdatePanel> controls.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.UpdateProgress1#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.UpdateProgress1/CS/default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.UpdateProgress1#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.UpdateProgress1/VB/default.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.UpdateProgress1#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.UpdateProgress1/CS/default.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.UpdateProgress1#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.UpdateProgress1/VB/default.aspx#1)]  
   
  This following example shows two <xref:System.Web.UI.UpdateProgress> controls. Each control displays progress status for an associated <xref:System.Web.UI.UpdatePanel> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.UpdateProgress2#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.UpdateProgress2/CS/default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.UpdateProgress2#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.UpdateProgress2/VB/default.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.UpdateProgress2#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.UpdateProgress2/CS/default.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.UpdateProgress2#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.UpdateProgress2/VB/default.aspx#1)]  
   
  ]]></format>
     </remarks>

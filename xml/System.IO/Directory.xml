@@ -64,7 +64,7 @@
   
  To demand permissions for a directory and all its subdirectories, end the path string with the directory separator character. (For example, "C:\Temp\\" grants access to C:\Temp\ and all its subdirectories.) To demand permissions only for a specific directory, end the path string with a period. (For example, "C:\Temp\\." grants access only to C:\Temp\\, not to its subdirectories.)  
   
- In members that accept a `searchPattern` parameter, the search string can be any combination of literal characters and two wildcard characters; * and ?. This parameter does not recognize regular expressions. For more information, see the <xref:System.IO.Directory.EnumerateDirectories%28System.String%2CSystem.String%29> method or any other method that uses the `searchPattern` parameter.  
+ In members that accept a `searchPattern` parameter, the search string can be any combination of literal characters and two wildcard characters; \* and ?. This parameter does not recognize regular expressions. For more information, see the <xref:System.IO.Directory.EnumerateDirectories%28System.String%2CSystem.String%29> method or any other method that uses the `searchPattern` parameter.  
   
  For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
@@ -536,10 +536,10 @@ Directory::CreateDirectory("Public\\Html");
   
 |Wildcard specifier|Matches|  
 |------------------------|-------------|  
-|* (asterisk)|Zero or more characters in that position.|  
+|\* (asterisk)|Zero or more characters in that position.|  
 |? (question mark)|Zero or one character in that position.|  
   
- Characters other than the wildcard are literal characters. For example, the `searchPattern` string "*t" searches for all names in `path` ending with the letter "t". The `searchPattern` string "s\*" searches for all names in `path` beginning with the letter "s".  
+ Characters other than the wildcard are literal characters. For example, the `searchPattern` string "\*t" searches for all names in `path` ending with the letter "t". The `searchPattern` string "s\*" searches for all names in `path` beginning with the letter "s".  
   
  `searchPattern` cannot end in two periods ("..") or contain two periods ("..") followed by <xref:System.IO.Path.DirectorySeparatorChar> or <xref:System.IO.Path.AltDirectorySeparatorChar>, nor can it contain any invalid characters. You can query for invalid characters by using the <xref:System.IO.Path.GetInvalidPathChars%2A> method.  
   
@@ -623,10 +623,10 @@ Directory::CreateDirectory("Public\\Html");
   
 |Wildcard specifier|Matches|  
 |------------------------|-------------|  
-|* (asterisk)|Zero or more characters in that position.|  
+|\* (asterisk)|Zero or more characters in that position.|  
 |? (question mark)|Exactly one character in that position.|  
   
- Characters other than the wildcard are literal characters. For example, the `searchPattern` string "*t" searches for all names in `path` ending with the letter "t". The `searchPattern` string "s\*" searches for all names in `path` beginning with the letter "s".  
+ Characters other than the wildcard are literal characters. For example, the `searchPattern` string "\*t" searches for all names in `path` ending with the letter "t". The `searchPattern` string "s\*" searches for all names in `path` beginning with the letter "s".  
   
  `searchPattern` cannot end in two periods ("..") or contain two periods ("..") followed by <xref:System.IO.Path.DirectorySeparatorChar> or <xref:System.IO.Path.AltDirectorySeparatorChar>, nor can it contain any invalid characters. You can query for invalid characters by using the <xref:System.IO.Path.GetInvalidPathChars%2A> method.  
   
@@ -775,18 +775,18 @@ Directory::CreateDirectory("Public\\Html");
   
 |Wildcard specifier|Matches|  
 |------------------------|-------------|  
-|* (asterisk)|Zero or more characters in that position.|  
+|\* (asterisk)|Zero or more characters in that position.|  
 |? (question mark)|Zero or one character in that position.|  
   
- Characters other than the wildcard are literal characters. For example, the `searchPattern` string "*t" searches for all names in `path` ending with the letter "t". The `searchPattern` string "s\*" searches for all names in `path` beginning with the letter "s".  
+ Characters other than the wildcard are literal characters. For example, the `searchPattern` string "\*t" searches for all names in `path` ending with the letter "t". The `searchPattern` string "s\*" searches for all names in `path` beginning with the letter "s".  
   
 > [!NOTE]
->  When you use the asterisk wildcard character in a `searchPattern` such as "*.txt", the number of characters in the specified extension affects the search as follows:  
+>  When you use the asterisk wildcard character in a `searchPattern` such as "\*.txt", the number of characters in the specified extension affects the search as follows:  
 >   
->  -   If the specified extension is exactly three characters long, the method returns files with extensions that begin with the specified extension. For example, "*.xls" returns both "book.xls" and "book.xlsx".  
-> -   In all other cases, the method returns files that exactly match the specified extension. For example, "*.ai" returns "file.ai" but not "file.aif".  
+>  -   If the specified extension is exactly three characters long, the method returns files with extensions that begin with the specified extension. For example, "\*.xls" returns both "book.xls" and "book.xlsx".  
+> -   In all other cases, the method returns files that exactly match the specified extension. For example, "\*.ai" returns "file.ai" but not "file.aif".  
 >   
->  When you use the question mark wildcard character, this method returns only files that match the specified file extension. For example, given two files, "file1.txt" and "file1.txtother", in a directory, a search pattern of "file?.txt" returns just the first file, whereas a search pattern of "file*.txt" returns both files.  
+>  When you use the question mark wildcard character, this method returns only files that match the specified file extension. For example, given two files, "file1.txt" and "file1.txtother", in a directory, a search pattern of "file?.txt" returns just the first file, whereas a search pattern of "file\*.txt" returns both files.  
   
  `searchPattern` cannot end in two periods ("..") or contain two periods ("..") followed by <xref:System.IO.Path.DirectorySeparatorChar> or <xref:System.IO.Path.AltDirectorySeparatorChar>, nor can it contain any invalid characters. You can query for invalid characters by using the <xref:System.IO.Path.GetInvalidPathChars%2A> method.  
   
@@ -875,18 +875,18 @@ Directory::CreateDirectory("Public\\Html");
   
 |Wildcard specifier|Matches|  
 |------------------------|-------------|  
-|* (asterisk)|Zero or more characters in that position.|  
+|\* (asterisk)|Zero or more characters in that position.|  
 |? (question mark)|Zero or one character in that position.|  
   
- Characters other than the wildcard are literal characters. For example, the `searchPattern` string "*t" searches for all names in `path` ending with the letter "t". The `searchPattern` string "s\*" searches for all names in `path` beginning with the letter "s".  
+ Characters other than the wildcard are literal characters. For example, the `searchPattern` string "\*t" searches for all names in `path` ending with the letter "t". The `searchPattern` string "s\*" searches for all names in `path` beginning with the letter "s".  
   
 > [!NOTE]
->  When you use the asterisk wildcard character in a `searchPattern` such as "*.txt", the number of characters in the specified extension affects the search as follows:  
+>  When you use the asterisk wildcard character in a `searchPattern` such as "\*.txt", the number of characters in the specified extension affects the search as follows:  
 >   
->  -   If the specified extension is exactly three characters long, the method returns files with extensions that begin with the specified extension. For example, "*.xls" returns both "book.xls" and "book.xlsx".  
-> -   In all other cases, the method returns files that exactly match the specified extension. For example, "*.ai" returns "file.ai" but not "file.aif".  
+>  -   If the specified extension is exactly three characters long, the method returns files with extensions that begin with the specified extension. For example, "\*.xls" returns both "book.xls" and "book.xlsx".  
+> -   In all other cases, the method returns files that exactly match the specified extension. For example, "\*.ai" returns "file.ai" but not "file.aif".  
 >   
->  When you use the question mark wildcard character, this method returns only files that match the specified file extension. For example, given two files, "file1.txt" and "file1.txtother", in a directory, a search pattern of "file?.txt" returns just the first file, whereas a search pattern of "file*.txt" returns both files.  
+>  When you use the question mark wildcard character, this method returns only files that match the specified file extension. For example, given two files, "file1.txt" and "file1.txtother", in a directory, a search pattern of "file?.txt" returns just the first file, whereas a search pattern of "file\*.txt" returns both files.  
   
  `searchPattern` cannot end in two periods ("..") or contain two periods ("..") followed by <xref:System.IO.Path.DirectorySeparatorChar> or <xref:System.IO.Path.AltDirectorySeparatorChar>, nor can it contain any invalid characters. You can query for invalid characters by using the <xref:System.IO.Path.GetInvalidPathChars%2A> method.  
   
@@ -1027,18 +1027,18 @@ Directory::CreateDirectory("Public\\Html");
   
 |Wildcard specifier|Matches|  
 |------------------------|-------------|  
-|* (asterisk)|Zero or more characters in that position.|  
+|\* (asterisk)|Zero or more characters in that position.|  
 |? (question mark)|Zero or one character in that position.|  
   
- Characters other than the wildcard are literal characters. For example, the `searchPattern` string "*t" searches for all names in `path` ending with the letter "t". The `searchPattern` string "s\*" searches for all names in `path` beginning with the letter "s".  
+ Characters other than the wildcard are literal characters. For example, the `searchPattern` string "\*t" searches for all names in `path` ending with the letter "t". The `searchPattern` string "s\*" searches for all names in `path` beginning with the letter "s".  
   
 > [!NOTE]
->  When you use the asterisk wildcard character in a `searchPattern` such as "*.txt", the number of characters in the specified extension affects the search as follows:  
+>  When you use the asterisk wildcard character in a `searchPattern` such as "\*.txt", the number of characters in the specified extension affects the search as follows:  
 >   
->  -   If the specified extension is exactly three characters long, the method returns files with extensions that begin with the specified extension. For example, "*.xls" returns both "book.xls" and "book.xlsx".  
-> -   In all other cases, the method returns files that exactly match the specified extension. For example, "*.ai" returns "file.ai" but not "file.aif".  
+>  -   If the specified extension is exactly three characters long, the method returns files with extensions that begin with the specified extension. For example, "\*.xls" returns both "book.xls" and "book.xlsx".  
+> -   In all other cases, the method returns files that exactly match the specified extension. For example, "\*.ai" returns "file.ai" but not "file.aif".  
 >   
->  When you use the question mark wildcard character, this method returns only files that match the specified file extension. For example, given two files, "file1.txt" and "file1.txtother", in a directory, a search pattern of "file?.txt" returns just the first file, whereas a search pattern of "file*.txt" returns both files.  
+>  When you use the question mark wildcard character, this method returns only files that match the specified file extension. For example, given two files, "file1.txt" and "file1.txtother", in a directory, a search pattern of "file?.txt" returns just the first file, whereas a search pattern of "file\*.txt" returns both files.  
   
  `searchPattern` cannot end in two periods ("..") or contain two periods ("..") followed by <xref:System.IO.Path.DirectorySeparatorChar> or <xref:System.IO.Path.AltDirectorySeparatorChar>, nor can it contain any invalid characters. You can query for invalid characters by using the <xref:System.IO.Path.GetInvalidPathChars%2A> method.  
   
@@ -1114,18 +1114,18 @@ Directory::CreateDirectory("Public\\Html");
   
 |Wildcard specifier|Matches|  
 |------------------------|-------------|  
-|* (asterisk)|Zero or more characters in that position.|  
+|\* (asterisk)|Zero or more characters in that position.|  
 |? (question mark)|Zero or one character in that position.|  
   
- Characters other than the wildcard are literal characters. For example, the `searchPattern` string "*t" searches for all names in `path` ending with the letter "t". The `searchPattern` string "s\*" searches for all names in `path` beginning with the letter "s".  
+ Characters other than the wildcard are literal characters. For example, the `searchPattern` string "\*t" searches for all names in `path` ending with the letter "t". The `searchPattern` string "s\*" searches for all names in `path` beginning with the letter "s".  
   
 > [!NOTE]
->  When you use the asterisk wildcard character in a `searchPattern` such as "*.txt", the number of characters in the specified extension affects the search as follows:  
+>  When you use the asterisk wildcard character in a `searchPattern` such as "\*.txt", the number of characters in the specified extension affects the search as follows:  
 >   
->  -   If the specified extension is exactly three characters long, the method returns files with extensions that begin with the specified extension. For example, "*.xls" returns both "book.xls" and "book.xlsx".  
-> -   In all other cases, the method returns files that exactly match the specified extension. For example, "*.ai" returns "file.ai" but not "file.aif".  
+>  -   If the specified extension is exactly three characters long, the method returns files with extensions that begin with the specified extension. For example, "\*.xls" returns both "book.xls" and "book.xlsx".  
+> -   In all other cases, the method returns files that exactly match the specified extension. For example, "\*.ai" returns "file.ai" but not "file.aif".  
 >   
->  When you use the question mark wildcard character, this method returns only files that match the specified file extension. For example, given two files, "file1.txt" and "file1.txtother", in a directory, a search pattern of "file?.txt" returns just the first file, whereas a search pattern of "file*.txt" returns both files.  
+>  When you use the question mark wildcard character, this method returns only files that match the specified file extension. For example, given two files, "file1.txt" and "file1.txtother", in a directory, a search pattern of "file?.txt" returns just the first file, whereas a search pattern of "file\*.txt" returns both files.  
   
  `searchPattern` cannot end in two periods ("..") or contain two periods ("..") followed by <xref:System.IO.Path.DirectorySeparatorChar> or <xref:System.IO.Path.AltDirectorySeparatorChar>, nor can it contain any invalid characters. You can query for invalid characters by using the <xref:System.IO.Path.GetInvalidPathChars%2A> method.  
   
@@ -1542,7 +1542,7 @@ Directory::CreateDirectory("Public\\Html");
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is identical to <xref:System.IO.Directory.GetDirectories%28System.String%2CSystem.String%29> with the asterisk (*) specified as the search pattern, so it returns all subdirectories.If you need to search subdirectories, use the <xref:System.IO.Directory.GetDirectories%28System.String%2CSystem.String%2CSystem.IO.SearchOption%29> method, which enables you to specify a search of subdirectories with the `searchOption` parameter.  
+ This method is identical to <xref:System.IO.Directory.GetDirectories%28System.String%2CSystem.String%29> with the asterisk (\*) specified as the search pattern, so it returns all subdirectories.If you need to search subdirectories, use the <xref:System.IO.Directory.GetDirectories%28System.String%2CSystem.String%2CSystem.IO.SearchOption%29> method, which enables you to specify a search of subdirectories with the `searchOption` parameter.  
   
  The <xref:System.IO.Directory.EnumerateDirectories%2A> and <xref:System.IO.Directory.GetDirectories%2A> methods differ as follows: When you use <xref:System.IO.Directory.EnumerateDirectories%2A>, you can start enumerating the collection of names before the whole collection is returned; when you use <xref:System.IO.Directory.GetDirectories%2A>, you must wait for the whole array of names to be returned before you can access the array. Therefore, when you are working with many files and directories, <xref:System.IO.Directory.EnumerateDirectories%2A> can be more efficient.  
   
@@ -1618,10 +1618,10 @@ Directory::CreateDirectory("Public\\Html");
   
 |Wildcard specifier|Matches|  
 |------------------------|-------------|  
-|* (asterisk)|Zero or more characters in that position.|  
+|\* (asterisk)|Zero or more characters in that position.|  
 |? (question mark)|Zero or one character in that position.|  
   
- Characters other than the wildcard are literal characters. For example, the `searchPattern` string "*t" searches for all names in `path` ending with the letter "t". The `searchPattern` string "s\*" searches for all names in `path` beginning with the letter "s".  
+ Characters other than the wildcard are literal characters. For example, the `searchPattern` string "\*t" searches for all names in `path` ending with the letter "t". The `searchPattern` string "s\*" searches for all names in `path` beginning with the letter "s".  
   
  `searchPattern` cannot end in two periods ("..") or contain two periods ("..") followed by <xref:System.IO.Path.DirectorySeparatorChar> or <xref:System.IO.Path.AltDirectorySeparatorChar>, nor can it contain any invalid characters. You can query for invalid characters by using the <xref:System.IO.Path.GetInvalidPathChars%2A> method.  
   
@@ -1701,10 +1701,10 @@ Directory::CreateDirectory("Public\\Html");
   
 |Wildcard specifier|Matches|  
 |------------------------|-------------|  
-|* (asterisk)|Zero or more characters in that position.|  
+|\* (asterisk)|Zero or more characters in that position.|  
 |? (question mark)|Zero or one character in that position.|  
   
- Characters other than the wildcard are literal characters. For example, the `searchPattern` string "*t" searches for all names in `path` ending with the letter "t". The `searchPattern` string "s\*" searches for all names in `path` beginning with the letter "s".  
+ Characters other than the wildcard are literal characters. For example, the `searchPattern` string "\*t" searches for all names in `path` ending with the letter "t". The `searchPattern` string "s\*" searches for all names in `path` beginning with the letter "s".  
   
  `searchPattern` cannot end in two periods ("..") or contain two periods ("..") followed by <xref:System.IO.Path.DirectorySeparatorChar> or <xref:System.IO.Path.AltDirectorySeparatorChar>, nor can it contain any invalid characters. You can query for invalid characters by using the <xref:System.IO.Path.GetInvalidPathChars%2A> method.  
   
@@ -1838,7 +1838,7 @@ Directory::CreateDirectory("Public\\Html");
   
  The returned file names are appended to the supplied `path` parameter.  
   
- This method is identical to <xref:System.IO.Directory.GetFiles%28System.String%2CSystem.String%29> with the asterisk (*) specified as the search pattern.  
+ This method is identical to <xref:System.IO.Directory.GetFiles%28System.String%2CSystem.String%29> with the asterisk (\*) specified as the search pattern.  
   
  The `path` parameter can specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
   
@@ -1916,23 +1916,23 @@ Directory::CreateDirectory("Public\\Html");
   
 |Wildcard specifier|Matches|  
 |------------------------|-------------|  
-|* (asterisk)|Zero or more characters in that position.|  
+|\* (asterisk)|Zero or more characters in that position.|  
 |? (question mark)|Zero or one character in that position.|  
   
- Characters other than the wildcard are literal characters. For example, the `searchPattern` string "*t" searches for all names in `path` ending with the letter "t". The `searchPattern` string "s\*" searches for all names in `path` beginning with the letter "s".  
+ Characters other than the wildcard are literal characters. For example, the `searchPattern` string "\*t" searches for all names in `path` ending with the letter "t". The `searchPattern` string "s\*" searches for all names in `path` beginning with the letter "s".  
   
  `searchPattern` cannot end in two periods ("..") or contain two periods ("..") followed by <xref:System.IO.Path.DirectorySeparatorChar> or <xref:System.IO.Path.AltDirectorySeparatorChar>, nor can it contain any invalid characters. You can query for invalid characters by using the <xref:System.IO.Path.GetInvalidPathChars%2A> method.  
   
 > [!NOTE]
->  When you use the asterisk wildcard character in a `searchPattern` such as "*.txt", the number of characters in the specified extension affects the search as follows:  
+>  When you use the asterisk wildcard character in a `searchPattern` such as "\*.txt", the number of characters in the specified extension affects the search as follows:  
 >   
->  -   If the specified extension is exactly three characters long, the method returns files with extensions that begin with the specified extension. For example, "*.xls" returns both "book.xls" and "book.xlsx".  
-> -   In all other cases, the method returns files that exactly match the specified extension. For example, "*.ai" returns "file.ai" but not "file.aif".  
+>  -   If the specified extension is exactly three characters long, the method returns files with extensions that begin with the specified extension. For example, "\*.xls" returns both "book.xls" and "book.xlsx".  
+> -   In all other cases, the method returns files that exactly match the specified extension. For example, "\*.ai" returns "file.ai" but not "file.aif".  
 >   
->  When you use the question mark wildcard character, this method returns only files that match the specified file extension. For example, given two files, "file1.txt" and "file1.txtother", in a directory, a search pattern of "file?.txt" returns just the first file, whereas a search pattern of "file*.txt" returns both files.  
+>  When you use the question mark wildcard character, this method returns only files that match the specified file extension. For example, given two files, "file1.txt" and "file1.txtother", in a directory, a search pattern of "file?.txt" returns just the first file, whereas a search pattern of "file\*.txt" returns both files.  
   
 > [!NOTE]
->  Because this method checks against file names with both the 8.3 file name format and the long file name format, a search pattern similar to "*1\*.txt" may return unexpected file names. For example, using a search pattern of "\*1\*.txt" returns "longfilename.txt" because the equivalent 8.3 file name format is "LONGFI~1.TXT".  
+>  Because this method checks against file names with both the 8.3 file name format and the long file name format, a search pattern similar to "\*1\*.txt" may return unexpected file names. For example, using a search pattern of "\*1\*.txt" returns "longfilename.txt" because the equivalent 8.3 file name format is "LONGFI~1.TXT".  
   
  The <xref:System.IO.Directory.EnumerateFiles%2A> and <xref:System.IO.Directory.GetFiles%2A> methods differ as follows: When you use <xref:System.IO.Directory.EnumerateFiles%2A>, you can start enumerating the collection of names before the whole collection is returned; when you use <xref:System.IO.Directory.GetFiles%2A>, you must wait for the whole array of names to be returned before you can access the array. Therefore, when you are working with many files and directories, <xref:System.IO.Directory.EnumerateFiles%2A> can be more efficient.  
   
@@ -2016,23 +2016,23 @@ Directory::CreateDirectory("Public\\Html");
   
 |Wildcard specifier|Matches|  
 |------------------------|-------------|  
-|* (asterisk)|Zero or more characters in that position.|  
+|\* (asterisk)|Zero or more characters in that position.|  
 |? (question mark)|Zero or one character in that position.|  
   
- Characters other than the wildcard are literal characters. For example, the `searchPattern` string "*t" searches for all names in `path` ending with the letter "t". The `searchPattern` string "s\*" searches for all names in `path` beginning with the letter "s".  
+ Characters other than the wildcard are literal characters. For example, the `searchPattern` string "\*t" searches for all names in `path` ending with the letter "t". The `searchPattern` string "s\*" searches for all names in `path` beginning with the letter "s".  
   
  `searchPattern` cannot end in two periods ("..") or contain two periods ("..") followed by <xref:System.IO.Path.DirectorySeparatorChar> or <xref:System.IO.Path.AltDirectorySeparatorChar>, nor can it contain any invalid characters. You can query for invalid characters by using the <xref:System.IO.Path.GetInvalidPathChars%2A> method.  
   
 > [!NOTE]
->  When you use the asterisk wildcard character in a `searchPattern` such as "*.txt", the number of characters in the specified extension affects the search as follows:  
+>  When you use the asterisk wildcard character in a `searchPattern` such as "\*.txt", the number of characters in the specified extension affects the search as follows:  
 >   
->  -   If the specified extension is exactly three characters long, the method returns files with extensions that begin with the specified extension. For example, "*.xls" returns both "book.xls" and "book.xlsx".  
-> -   In all other cases, the method returns files that exactly match the specified extension. For example, "*.ai" returns "file.ai" but not "file.aif".  
+>  -   If the specified extension is exactly three characters long, the method returns files with extensions that begin with the specified extension. For example, "\*.xls" returns both "book.xls" and "book.xlsx".  
+> -   In all other cases, the method returns files that exactly match the specified extension. For example, "\*.ai" returns "file.ai" but not "file.aif".  
 >   
 >  When you use the question mark wildcard character, this method returns only files that match the specified file extension. For example, given two files, "file1.txt" and "file1.txtother", in a directory, a search pattern of "file?.txt" returns just the first file, whereas a search pattern of "file*.txt" returns both files.  
   
 > [!NOTE]
->  Because this method checks against file names with both the 8.3 file name format and the long file name format, a search pattern similar to "*1\*.txt" may return unexpected file names. For example, using a search pattern of "\*1\*.txt" returns "longfilename.txt" because the equivalent 8.3 file name format is "LONGFI~1.TXT".  
+>  Because this method checks against file names with both the 8.3 file name format and the long file name format, a search pattern similar to "\*1\*.txt" may return unexpected file names. For example, using a search pattern of "\*1\*.txt" returns "longfilename.txt" because the equivalent 8.3 file name format is "LONGFI~1.TXT".  
   
  The <xref:System.IO.Directory.EnumerateFiles%2A> and <xref:System.IO.Directory.GetFiles%2A> methods differ as follows: When you use <xref:System.IO.Directory.EnumerateFiles%2A>, you can start enumerating the collection of names before the whole collection is returned; when you use <xref:System.IO.Directory.GetFiles%2A>, you must wait for the whole array of names to be returned before you can access the array. Therefore, when you are working with many files and directories, <xref:System.IO.Directory.EnumerateFiles%2A> can be more efficient.  
   
@@ -2105,7 +2105,7 @@ Directory::CreateDirectory("Public\\Html");
   
  The <xref:System.IO.Directory.EnumerateFileSystemEntries%2A> and <xref:System.IO.Directory.GetFileSystemEntries%2A> methods differ as follows: When you use <xref:System.IO.Directory.EnumerateFileSystemEntries%2A>, you can start enumerating the collection of entries before the whole collection is returned; when you use <xref:System.IO.Directory.GetFileSystemEntries%2A>, you must wait for the whole array of entries to be returned before you can access the array. Therefore, when you are working with many files and directories, <xref:System.IO.Directory.EnumerateFiles%2A> can be more efficient.  
   
- This method is identical to <xref:System.IO.Directory.GetFileSystemEntries%2A> with the asterisk (*) specified as the search pattern.  
+ This method is identical to <xref:System.IO.Directory.GetFileSystemEntries%2A> with the asterisk (\*) specified as the search pattern.  
   
  The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
   
@@ -2177,20 +2177,20 @@ Directory::CreateDirectory("Public\\Html");
   
 |Wildcard specifier|Matches|  
 |------------------------|-------------|  
-|* (asterisk)|Zero or more characters in that position.|  
+|\* (asterisk)|Zero or more characters in that position.|  
 |? (question mark)|Zero or one character in that position.|  
   
- Characters other than the wildcard are literal characters. For example, the `searchPattern` string "*t" searches for all names in `path` ending with the letter "t". The `searchPattern` string "s\*" searches for all names in `path` beginning with the letter "s".  
+ Characters other than the wildcard are literal characters. For example, the `searchPattern` string "\*t" searches for all names in `path` ending with the letter "t". The `searchPattern` string "s\*" searches for all names in `path` beginning with the letter "s".  
   
  `searchPattern` cannot end in two periods ("..") or contain two periods ("..") followed by <xref:System.IO.Path.DirectorySeparatorChar> or <xref:System.IO.Path.AltDirectorySeparatorChar>, nor can it contain any invalid characters. You can query for invalid characters by using the <xref:System.IO.Path.GetInvalidPathChars%2A> method.  
   
 > [!NOTE]
->  When you use the asterisk wildcard character in a `searchPattern` such as "*.txt", the number of characters in the specified extension affects the search as follows:  
+>  When you use the asterisk wildcard character in a `searchPattern` such as "\*.txt", the number of characters in the specified extension affects the search as follows:  
 >   
->  -   If the specified extension is exactly three characters long, the method returns files with extensions that begin with the specified extension. For example, "*.xls" returns both "book.xls" and "book.xlsx".  
-> -   In all other cases, the method returns files that exactly match the specified extension. For example, "*.ai" returns "file.ai" but not "file.aif".  
+>  -   If the specified extension is exactly three characters long, the method returns files with extensions that begin with the specified extension. For example, "\*.xls" returns both "book.xls" and "book.xlsx".  
+> -   In all other cases, the method returns files that exactly match the specified extension. For example, "\*.ai" returns "file.ai" but not "file.aif".  
 >   
->  When you use the question mark wildcard character, this method returns only files that match the specified file extension. For example, given two files, "file1.txt" and "file1.txtother", in a directory, a search pattern of "file?.txt" returns just the first file, whereas a search pattern of "file*.txt" returns both files.  
+>  When you use the question mark wildcard character, this method returns only files that match the specified file extension. For example, given two files, "file1.txt" and "file1.txtother", in a directory, a search pattern of "file?.txt" returns just the first file, whereas a search pattern of "file\*.txt" returns both files.  
   
  The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
   
@@ -2270,20 +2270,20 @@ Directory::CreateDirectory("Public\\Html");
   
 |Wildcard specifier|Matches|  
 |------------------------|-------------|  
-|* (asterisk)|Zero or more characters in that position.|  
+|\* (asterisk)|Zero or more characters in that position.|  
 |? (question mark)|Zero or one character in that position.|  
   
- Characters other than the wildcard are literal characters. For example, the `searchPattern` string "*t" searches for all names in `path` ending with the letter "t". The `searchPattern` string "s\*" searches for all names in `path` beginning with the letter "s".  
+ Characters other than the wildcard are literal characters. For example, the `searchPattern` string "\*t" searches for all names in `path` ending with the letter "t". The `searchPattern` string "s\*" searches for all names in `path` beginning with the letter "s".  
   
  `searchPattern` cannot end in two periods ("..") or contain two periods ("..") followed by <xref:System.IO.Path.DirectorySeparatorChar> or <xref:System.IO.Path.AltDirectorySeparatorChar>, nor can it contain any invalid characters. You can query for invalid characters by using the <xref:System.IO.Path.GetInvalidPathChars%2A> method.  
   
 > [!NOTE]
->  When you use the asterisk wildcard character in a `searchPattern` such as "*.txt", the number of characters in the specified extension affects the search as follows:  
+>  When you use the asterisk wildcard character in a `searchPattern` such as "\*.txt", the number of characters in the specified extension affects the search as follows:  
 >   
->  -   If the specified extension is exactly three characters long, the method returns files with extensions that begin with the specified extension. For example, "*.xls" returns both "book.xls" and "book.xlsx".  
-> -   In all other cases, the method returns files that exactly match the specified extension. For example, "*.ai" returns "file.ai" but not "file.aif".  
+>  -   If the specified extension is exactly three characters long, the method returns files with extensions that begin with the specified extension. For example, "\*.xls" returns both "book.xls" and "book.xlsx".  
+> -   In all other cases, the method returns files that exactly match the specified extension. For example, "\*.ai" returns "file.ai" but not "file.aif".  
 >   
->  When you use the question mark wildcard character, this method returns only files that match the specified file extension. For example, given two files, "file1.txt" and "file1.txtother", in a directory, a search pattern of "file?.txt" returns just the first file, whereas a search pattern of "file*.txt" returns both files.  
+>  When you use the question mark wildcard character, this method returns only files that match the specified file extension. For example, given two files, "file1.txt" and "file1.txtother", in a directory, a search pattern of "file?.txt" returns just the first file, whereas a search pattern of "file\*.txt" returns both files.  
   
  The <xref:System.IO.Directory.EnumerateFileSystemEntries%2A> and <xref:System.IO.Directory.GetFileSystemEntries%2A> methods differ as follows: When you use <xref:System.IO.Directory.EnumerateFileSystemEntries%2A>, you can start enumerating the collection of entries before the whole collection is returned; when you use <xref:System.IO.Directory.GetFileSystemEntries%2A>, you must wait for the whole array of entries to be returned before you can access the array. Therefore, when you are working with many files and directories, <xref:System.IO.Directory.EnumerateFiles%2A> can be more efficient.  
   

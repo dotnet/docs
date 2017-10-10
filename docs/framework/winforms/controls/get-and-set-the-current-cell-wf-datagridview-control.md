@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], getting current cell"
   - "DataGridView control [Windows Forms], setting current cell"

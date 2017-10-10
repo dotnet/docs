@@ -5,6 +5,9 @@ ms.prod: ".net-framework"
 ms.technology: 
   - "dotnet-clr"
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 ms.custom: "updateeachrelease"
 helpviewer_keywords: 
   - "versions, determining for .NET Framework"

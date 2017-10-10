@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "Freezable objects, making read-only"
 ms.assetid: 6c544b7d-d3c9-4736-aa90-4b8728234ccb

@@ -10,7 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 dev_langs:
- - "cpp"
+ - "csharp"
+ - "vb"
 api_name: 
   - "ICorDebugILFrame3.GetReturnValueForILOffset"
 api_location: 

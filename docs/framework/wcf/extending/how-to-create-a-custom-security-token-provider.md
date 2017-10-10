@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "security [WCF], providing credentials"
 ms.assetid: db8cb478-aa43-478b-bf97-c6489ad7c7fd

@@ -32,8 +32,8 @@
 > [!IMPORTANT]
 >  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewInsertEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertEventArgs/CS/formviewinserteventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewInsertEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertEventArgs/VB/formviewinserteventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewInsertEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertEventArgs/CS/formviewinserteventargscs.aspx#1)]
+ [!code-aspx-vb[FormViewInsertEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertEventArgs/VB/formviewinserteventargsvb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -129,8 +129,8 @@
 ## Examples  
  The following example demonstrates how to iterate through the <xref:System.Web.UI.WebControls.FormViewInsertEventArgs.Values%2A> collection.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewInsertEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertEventArgs/CS/formviewinserteventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewInsertEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertEventArgs/VB/formviewinserteventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewInsertEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertEventArgs/CS/formviewinserteventargscs.aspx#1)]
+ [!code-aspx-vb[FormViewInsertEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertEventArgs/VB/formviewinserteventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>

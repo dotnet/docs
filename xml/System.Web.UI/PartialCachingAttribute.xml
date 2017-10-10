@@ -53,13 +53,13 @@
   
  The second part of the example shows a user control that is used with the previous example to demonstrate user control caching.  
   
- <!-- TODO: review snippet reference [!code-csharp[PartialCachingAttribute_1#5](~/samples/snippets/csharp/VS_Snippets_WebNet/PartialCachingAttribute_1/CS/partialcache.cs.ascx#5)]  -->
- <!-- TODO: review snippet reference [!code-vb[PartialCachingAttribute_1#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PartialCachingAttribute_1/VB/partialcache.vb.ascx#5)]  -->  
+ [!code-aspx-csharp[PartialCachingAttribute_1#5](~/samples/snippets/csharp/VS_Snippets_WebNet/PartialCachingAttribute_1/CS/partialcache.cs.ascx#5)]
+ [!code-aspx-vb[PartialCachingAttribute_1#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PartialCachingAttribute_1/VB/partialcache.vb.ascx#5)]  
   
  The third part of the example demonstrates a Web Forms page that hosts the user control.  
   
- <!-- TODO: review snippet reference [!code-csharp[PartialCachingAttribute_1#6](~/samples/snippets/csharp/VS_Snippets_WebNet/PartialCachingAttribute_1/CS/partialcache.cs.aspx#6)]  -->
- <!-- TODO: review snippet reference [!code-vb[PartialCachingAttribute_1#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PartialCachingAttribute_1/VB/partialcache.vb.aspx#6)]  -->  
+ [!code-aspx-csharp[PartialCachingAttribute_1#6](~/samples/snippets/csharp/VS_Snippets_WebNet/PartialCachingAttribute_1/CS/partialcache.cs.aspx#6)]
+ [!code-aspx-vb[PartialCachingAttribute_1#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PartialCachingAttribute_1/VB/partialcache.vb.aspx#6)]  
   
  ]]></format>
     </remarks>

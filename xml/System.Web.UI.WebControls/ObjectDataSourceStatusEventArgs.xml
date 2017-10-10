@@ -41,8 +41,8 @@
   
  In this code example, some preprocessing and post-processing steps are also performed. The `NorthwindEmployeeDeleting` delegate is called to handle the <xref:System.Web.UI.WebControls.ObjectDataSource.Deleting> event before the <xref:System.Web.UI.WebControls.ObjectDataSource.Delete%2A> action is performed, and the `NorthwindEmployeeDeleted` delegate is called to handle the <xref:System.Web.UI.WebControls.ObjectDataSource.Deleted> event after the <xref:System.Web.UI.WebControls.ObjectDataSource.Delete%2A> action has completed, to handle any exceptions that might have occurred. The `NorthwindEmployeeDeleted` delegate accesses possible exceptions that are thrown by the business object that is using the <xref:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs> object. In this example, if a `NorthwindDataException` is thrown, it is handled by this delegate.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/CS/objds10cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/VB/objds10vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/CS/objds10cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/VB/objds10vb.aspx#1)]  
   
  The following code example provides an example middle-tier business object that the preceding code example uses. The following list describes the two major classes that are defined in the code example:  
   
@@ -174,8 +174,8 @@
   
  To examine the implementation of the `EmployeeLogic` middle-tier business object that this code example uses, see the class overview in <xref:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs>.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/CS/objds10cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/VB/objds10vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/CS/objds10cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/VB/objds10vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -212,8 +212,8 @@
   
  To examine the implementation of the `EmployeeLogic` middle-tier business object that this code example uses, see the class overview in <xref:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs>.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/CS/objds10cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/VB/objds10vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/CS/objds10cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/VB/objds10vb.aspx#1)]  
   
  ]]></format>
         </remarks>

@@ -577,8 +577,8 @@
   
  This section shows an <xref:System.Web.UI.WebControls.ObjectDataSource> in markup in an .aspx page and it shows the business objects that it works with. The example is the .aspx page. It contains a <xref:System.Web.UI.WebControls.GridView> control that is bound to an <xref:System.Web.UI.WebControls.ObjectDataSource> control. The <xref:System.Web.UI.WebControls.ObjectDataSource> control markup specifies the name of the business object and the name of the business object method to call in order to retrieve data.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_1/CS/objds1cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_1/VB/objds1vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_1/CS/objds1cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_1/VB/objds1vb.aspx#1)]  
   
  The following example shows the business object that the <xref:System.Web.UI.WebControls.ObjectDataSource> control in the .aspx page uses. (Many other <xref:System.Web.UI.WebControls.ObjectDataSource> code examples use this business object also.) The example consists of the following two basic classes:  
   
@@ -679,8 +679,8 @@
   
  The following code example demonstrates how an <xref:System.Web.UI.WebControls.ObjectDataSource> control supports caching. To enable caching, you must implement the method that retrieves data, which is identified by the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A> property, to return the data as a <xref:System.Data.DataSet> object. In this example, the <xref:System.Web.UI.WebControls.ObjectDataSource.EnableCaching%2A> property is set to `true`, and the <xref:System.Web.UI.WebControls.ObjectDataSource.CacheDuration%2A> and <xref:System.Web.UI.WebControls.ObjectDataSource.CacheExpirationPolicy%2A> properties are set. The <xref:System.Web.UI.WebControls.ObjectDataSource> caches data that is returned by the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A> property for 30 seconds.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_6#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_6/CS/objds6cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_6#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_6/VB/objds6vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_6#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_6/CS/objds6cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_6#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_6/VB/objds6vb.aspx#1)]  
   
  The following code example demonstrates how to implement a wrapper method that returns a <xref:System.Data.DataSet> object to enable caching with an <xref:System.Web.UI.WebControls.ObjectDataSource> control. In the base implementation of the `EmployeeLogic` class, the `GetAllEmployees` method returns an <xref:System.Collections.ArrayList> object. Instead of refactoring the object completely to work with the <xref:System.Web.UI.WebControls.ObjectDataSource> on a Web Forms page, a wrapper method named `GetAllEmployeesAsDataSet` is added that returns a set of `NorthwindEmployee` data as a <xref:System.Data.DataSet>.  
   
@@ -730,8 +730,8 @@
   
  The following code example demonstrates how an <xref:System.Web.UI.WebControls.ObjectDataSource> control supports filtering and caching. To enable filtering and caching, you must implement the method that retrieves data, which is identified by the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A> property, to return the data as a <xref:System.Data.DataSet> object. In this example, caching is enabled because the `EmployeeLogic` object returns data as a <xref:System.Data.DataSet>, the <xref:System.Web.UI.WebControls.ObjectDataSource.EnableCaching%2A> property is set to `true`, and the <xref:System.Web.UI.WebControls.ObjectDataSource.CacheDuration%2A> and <xref:System.Web.UI.WebControls.ObjectDataSource.CacheExpirationPolicy%2A> properties are set. The <xref:System.Web.UI.WebControls.ObjectDataSource> caches data that is returned by the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A> property for 30 seconds.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_6#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_6/CS/objds6cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_6#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_6/VB/objds6vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_6#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_6/CS/objds6cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_6#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_6/VB/objds6vb.aspx#1)]  
   
  The following code example demonstrates how to implement a wrapper method that returns a <xref:System.Data.DataSet> object to enable caching and filtering with an <xref:System.Web.UI.WebControls.ObjectDataSource> control. In the base implementation of the `EmployeeLogic` class, the `GetAllEmployees` method returns an <xref:System.Collections.ArrayList>. Instead of refactoring the object completely to work with the <xref:System.Web.UI.WebControls.ObjectDataSource> on a Web Forms page, a wrapper method named `GetAllEmployeesAsDataSet` is added that returns a set of `NorthwindEmployee` data as a <xref:System.Data.DataSet>. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.ObjectDataSource> class.  
   
@@ -787,8 +787,8 @@
   
  Caching is enabled for the <xref:System.Web.UI.WebControls.ObjectDataSource> control. Therefore, each record is retrieved only one time from the database. The <xref:System.Web.UI.WebControls.ObjectDataSource.CacheKeyDependency%2A> property is set to "EmployeeDetails", but any string value can work as the key. The Web page also includes a <xref:System.Web.UI.WebControls.Button> control that the user can click to expire the cached data.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_18#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/CS/Default2.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_18#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/VB/Default2.aspx#3)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_18#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/CS/Default2.aspx#3)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_18#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/VB/Default2.aspx#3)]  
   
  The second example shows a handler for the <xref:System.Web.UI.Control.Load> event and a handler for the <xref:System.Web.UI.WebControls.Button.Click> event of the <xref:System.Web.UI.WebControls.Button> control. The <xref:System.Web.UI.Control.Load> event handler creates a cache item with a key set to the <xref:System.Web.UI.WebControls.ObjectDataSource.CacheKeyDependency%2A> value. The <xref:System.Web.UI.WebControls.Button.Click> event handler removes the cache item whose key is equal to the <xref:System.Web.UI.WebControls.ObjectDataSource.CacheKeyDependency%2A> value. When the cache item is removed, all the cached data that is dependent on the key is expired.  
   
@@ -915,8 +915,8 @@
   
  The following code example shows the Web page that uses the two classes that are used in the preceding code example.  
   
- <!-- TODO: review snippet reference [!code-csharp[ObjectDataSourceDataObjectTypeName#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ObjectDataSourceDataObjectTypeName/CS/AggregateDataPageCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ObjectDataSourceDataObjectTypeName#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ObjectDataSourceDataObjectTypeName/VB/AggregateDataPageVB.aspx#1)]  -->  
+ [!code-aspx-csharp[ObjectDataSourceDataObjectTypeName#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ObjectDataSourceDataObjectTypeName/CS/AggregateDataPageCS.aspx#1)]
+ [!code-aspx-vb[ObjectDataSourceDataObjectTypeName#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ObjectDataSourceDataObjectTypeName/VB/AggregateDataPageVB.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -988,8 +988,8 @@
   
  If you click the **Delete** button, the delete operation is performed using the method that is specified by the <xref:System.Web.UI.WebControls.ObjectDataSource.DeleteMethod%2A> property and any parameters that are specified in the <xref:System.Web.UI.WebControls.ObjectDataSource.DeleteParameters%2A> collection. In this code example, some preprocessing and post-processing steps are also performed. The `NorthwindEmployeeDeleting` delegate is called to handle the <xref:System.Web.UI.WebControls.ObjectDataSource.Deleting> event before the operation is performed and the `NorthwindEmployeeDeleted` delegate is called to handle the <xref:System.Web.UI.WebControls.ObjectDataSource.Deleted> event after the operation has completed to perform exception handling. In this code example, if a `NorthwindDataException` is thrown, it is handled by the `NorthwindEmployeeDeleted` method.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/CS/objds10cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/VB/objds10vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/CS/objds10cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/VB/objds10vb.aspx#1)]  
   
  The following code example shows the `EmployeeLogic` class that is used in the preceding code example.  
   
@@ -1058,8 +1058,8 @@
   
  If you click the **Delete** button, the delete operation is performed using the method that is specified by the <xref:System.Web.UI.WebControls.ObjectDataSource.DeleteMethod%2A> property and any parameters that are specified in the <xref:System.Web.UI.WebControls.ObjectDataSource.DeleteParameters%2A> collection. In this code example, some preprocessing and post-processing steps are also performed. The `NorthwindEmployeeDeleting` delegate is called to handle the <xref:System.Web.UI.WebControls.ObjectDataSource.Deleting> event before the operation is performed, and the `NorthwindEmployeeDeleted` delegate is called to handle the <xref:System.Web.UI.WebControls.ObjectDataSource.Deleted> event after the operation has completed to perform exception handling. In this example, if a `NorthwindDataException` is thrown, it is handled by the `NorthwindDataException` delegate.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/CS/objds10cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/VB/objds10vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/CS/objds10cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/VB/objds10vb.aspx#1)]  
   
  The following code example shows the `EmployeeLogic` class that is used in the preceding code example.  
   
@@ -1120,8 +1120,8 @@
   
  The following code example shows the Web page that displays the <xref:System.Web.UI.WebControls.DataGrid> control and handles the <xref:System.Web.UI.WebControls.ObjectDataSource.Deleting> event.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_11#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_11/CS/objds11cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_11#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_11/VB/objds11vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_11#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_11/CS/objds11cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_11#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_11/VB/objds11vb.aspx#1)]  
   
  The following code example shows the `EmployeeLogic` class that is used in the preceding code example.  
   
@@ -1165,8 +1165,8 @@
   
  If you click the **Delete** button, the delete operation is performed using the method that is specified by the <xref:System.Web.UI.WebControls.ObjectDataSource.DeleteMethod%2A> property and any parameters that are specified in the <xref:System.Web.UI.WebControls.ObjectDataSource.DeleteParameters%2A> collection. In this code example, some preprocessing and post-processing steps are also performed. The `NorthwindEmployeeDeleting` delegate is called to handle the <xref:System.Web.UI.WebControls.ObjectDataSource.Deleting> event before the operation is performed, and the `NorthwindEmployeeDeleted` delegate is called to handle the <xref:System.Web.UI.WebControls.ObjectDataSource.Deleted> event after the operation has completed to perform exception handling. In this code example, if a `NorthwindDataException` is thrown, it is handled by the `NorthwindEmployeeDeleted` method.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/CS/objds10cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/VB/objds10vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/CS/objds10cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/VB/objds10vb.aspx#1)]  
   
  The following code example shows the `EmployeeLogic` class that is used in the preceding code example.  
   
@@ -1215,8 +1215,8 @@
   
  Caching is enabled for the <xref:System.Web.UI.WebControls.ObjectDataSource> control. Therefore, each record is retrieved only one time from the database. The <xref:System.Web.UI.WebControls.ObjectDataSource.CacheKeyDependency%2A> property is set to "EmployeeDetails", but any string value can work as the key. The Web page also includes a <xref:System.Web.UI.WebControls.Button> control that the user can click to expire the cached data.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_18#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/CS/Default2.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_18#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/VB/Default2.aspx#3)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_18#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/CS/Default2.aspx#3)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_18#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/VB/Default2.aspx#3)]  
   
  The second example shows a handler for the <xref:System.Web.UI.Control.Load> event and a handler for the <xref:System.Web.UI.WebControls.Button.Click> event of the <xref:System.Web.UI.WebControls.Button> control. The <xref:System.Web.UI.Control.Load> event handler creates a cache item with a key set to the <xref:System.Web.UI.WebControls.ObjectDataSource.CacheKeyDependency%2A> value. The <xref:System.Web.UI.WebControls.Button.Click> event handler removes the cache item whose key is equal to the <xref:System.Web.UI.WebControls.ObjectDataSource.CacheKeyDependency%2A> value. When the cache item is removed, all the cached data that is dependent on the key is expired.  
   
@@ -1271,8 +1271,8 @@
   
  The Web page contains an <xref:System.Web.UI.WebControls.ObjectDataSource> control whose <xref:System.Web.UI.WebControls.ObjectDataSource.EnablePaging%2A> property is set to `true`. The <xref:System.Web.UI.WebControls.ObjectDataSource.SelectCountMethod%2A> property is set to the name of a method that returns the total number of records in the query. The <xref:System.Web.UI.WebControls.ObjectDataSource.MaximumRowsParameterName%2A> property and the <xref:System.Web.UI.WebControls.ObjectDataSource.StartRowIndexParameterName%2A> property are set to the names of the parameters that are used in the Select method. The page also contains a <xref:System.Web.UI.WebControls.DropDownList> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_17#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_17/CS/Default3.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_17#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_17/VB/Default3.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_17#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_17/CS/Default3.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_17#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_17/VB/Default3.aspx#1)]  
   
  The second example shows a handler for the <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged?displayProperty=nameWithType> event of the <xref:System.Web.UI.WebControls.DropDownList> control. The code in the handler sets the <xref:System.Web.UI.WebControls.GridView.PageSize%2A> property to the user's selection.  
   
@@ -1337,8 +1337,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_9#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_9/CS/objds9cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_9#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_9/VB/objds9vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_9#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_9/CS/objds9cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_9#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_9/VB/objds9vb.aspx#1)]  
   
  The following code example provides an example of a middle-tier business object that the preceding code example uses. The code example consists of two basic classes:  
   
@@ -1442,8 +1442,8 @@
 > [!IMPORTANT]
 >  You should validate any filter parameter value that you receive from the client. The runtime simply substitutes the parameter value into the filter expression and applies it to the <xref:System.Data.DataView> object that is returned by the <xref:System.Web.UI.WebControls.ObjectDataSource.Select%2A> method. If you are using the <xref:System.Web.UI.WebControls.ObjectDataSource.FilterExpression%2A> property as a security measure to limit the number of items that are returned, you must validate the parameter values before the filtering occurs.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_9#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_9/CS/objds9cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_9#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_9/VB/objds9vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_9#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_9/CS/objds9cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_9#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_9/VB/objds9vb.aspx#1)]  
   
  The following code example provides an example of a middle-tier business object that the preceding code example uses. The code example consists of two basic classes:  
   
@@ -1613,8 +1613,8 @@
   
  When the <xref:System.Web.UI.WebControls.ObjectDataSource.Insert%2A> operation is performed, the method that is identified by the <xref:System.Web.UI.WebControls.ObjectDataSource.InsertMethod%2A> property is called. If the `Insert` method of the object has a method signature that includes parameters, the <xref:System.Web.UI.WebControls.ObjectDataSource.InsertParameters%2A> collection must contain a parameter with names that match the method signature parameters for the <xref:System.Web.UI.WebControls.ObjectDataSource.Insert%2A> method to complete successfully.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_4/CS/objds4cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_4/VB/objds4vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_4/CS/objds4cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_4/VB/objds4vb.aspx#1)]  
   
  The following code example provides an example of a middle-tier business object that the preceding code example uses. The code example consists of two basic classes:  
   
@@ -1692,8 +1692,8 @@
   
  When the <xref:System.Web.UI.WebControls.ObjectDataSource.Insert%2A> operation is performed, the method that is identified by the <xref:System.Web.UI.WebControls.ObjectDataSource.InsertMethod%2A> property is called. If the `Insert` method of the object has a method signature that includes parameters, the <xref:System.Web.UI.WebControls.ObjectDataSource.InsertParameters%2A> collection must contain a parameter with names that match the method signature parameters for the <xref:System.Web.UI.WebControls.ObjectDataSource.Insert%2A> method to complete successfully.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_4/CS/objds4cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_4/VB/objds4vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_4/CS/objds4cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_4/VB/objds4vb.aspx#1)]  
   
  The following code example provides an example of a middle-tier business object that the preceding code example uses. The code example consists of two basic classes:  
   
@@ -1763,8 +1763,8 @@
 > [!IMPORTANT]
 >  You should validate any parameter value that you receive from the client. The runtime simply substitutes the parameter value into the <xref:System.Web.UI.WebControls.ObjectDataSource.InsertMethod%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_8#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_8/CS/objds8cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_8#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_8/VB/objds8vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_8#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_8/CS/objds8cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_8#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_8/VB/objds8vb.aspx#1)]  
   
  The following code example provides an example implementation of the `Insert` method that the preceding code example uses. The `InsertNewEmployeeWrapper` method is added to the `EmployeeLogic` middle-tier object that is provided in the <xref:System.Web.UI.WebControls.ObjectDataSource> class overview to enable the object to work more easily with the <xref:System.Web.UI.WebControls.ObjectDataSource> control in Web scenarios, without a substantial rewrite to the actual business logic.  
   
@@ -1845,8 +1845,8 @@
   
  The Web page contains an <xref:System.Web.UI.WebControls.ObjectDataSource> control whose <xref:System.Web.UI.WebControls.ObjectDataSource.EnablePaging%2A> property is set to `true`. The <xref:System.Web.UI.WebControls.ObjectDataSource.SelectCountMethod%2A> property is set to the name of a method that returns the total number of records in the query. The <xref:System.Web.UI.WebControls.ObjectDataSource.MaximumRowsParameterName%2A> property and the <xref:System.Web.UI.WebControls.ObjectDataSource.StartRowIndexParameterName%2A> property are set to the names of the parameters that are used in the Select method. The page also contains a <xref:System.Web.UI.WebControls.DropDownList> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_17#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_17/CS/Default3.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_17#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_17/VB/Default3.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_17#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_17/CS/Default3.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_17#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_17/VB/Default3.aspx#1)]  
   
  The second example shows a handler for the <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged?displayProperty=nameWithType> event of the <xref:System.Web.UI.WebControls.DropDownList> control. The code in the handler sets the <xref:System.Web.UI.WebControls.GridView.PageSize%2A> property to the user's selection.  
   
@@ -1926,8 +1926,8 @@
   
  This code example demonstrates this pattern. You can handle the <xref:System.Web.UI.WebControls.ObjectDataSource.ObjectCreating> event to check the cache for an object first, and only create an instance of the object, if one is not already cached. Then, handle the <xref:System.Web.UI.WebControls.ObjectDataSource.ObjectDisposing> event to cache the business object for future use, instead of destroying it. In this code example, the <xref:System.ComponentModel.CancelEventArgs.Cancel?displayProperty=nameWithType> property of the <xref:System.Web.UI.WebControls.ObjectDataSourceDisposingEventArgs> object is set to `true` to direct the <xref:System.Web.UI.WebControls.ObjectDataSource> to not call <xref:System.IDisposable.Dispose%2A> method on the object.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_16#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_16/CS/objds16cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_16#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_16/VB/objds16vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_16#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_16/CS/objds16cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_16#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_16/VB/objds16vb.aspx#1)]  
   
  The following code example provides the example middle-tier business object that the preceding code example uses. The code example consists of a basic business object, defined by the `EmployeeLogic` class, which is a stateful class that encapsulates business logic. For a complete working example, you must compile this code as a library and use these classes from an ASP.NET page (.aspx file).  
   
@@ -1971,8 +1971,8 @@
   
  The following code example demonstrates how to use an <xref:System.Web.UI.WebControls.ObjectDataSource> control with a business object and a <xref:System.Web.UI.WebControls.GridView> control to display information. You might work with a business object that is very expensive to create (in terms of time or resources) for every data operation your Web page performs. One way to work with an expensive object might be to create an instance of it once, and then cache it for subsequent operations instead of creating and destroying it for every data operation. This example demonstrates this pattern. You can handle the <xref:System.Web.UI.WebControls.ObjectDataSource.ObjectCreating> event to check the cache for an object first, and only create an instance of it, if one is not already cached. Then, handle the <xref:System.Web.UI.WebControls.ObjectDataSource.ObjectDisposing> event to cache the business object for future use, instead of destroying it. In this code example, the <xref:System.ComponentModel.CancelEventArgs.Cancel?displayProperty=nameWithType> property of the <xref:System.Web.UI.WebControls.ObjectDataSourceDisposingEventArgs> object is set to `true` to direct the <xref:System.Web.UI.WebControls.ObjectDataSource> to not call the <xref:System.IDisposable.Dispose%2A> method on the object.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_16#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_16/CS/objds16cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_16#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_16/VB/objds16vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_16#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_16/CS/objds16cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_16#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_16/VB/objds16vb.aspx#1)]  
   
  The following code example provides the example middle-tier business object that the preceding code example uses. The code example consists of a basic business object, defined by the `EmployeeLogic` class, which is a stateful class that encapsulates business logic. For a complete working example, you must compile this code as a library and use these classes from an ASP.NET page (.aspx file).  
   
@@ -2202,8 +2202,8 @@ public void ExampleObjectDisposing(object sender,
   
  The Web page contains an <xref:System.Web.UI.WebControls.ObjectDataSource> control whose <xref:System.Web.UI.WebControls.ObjectDataSource.EnablePaging%2A> property is set to `true`. The <xref:System.Web.UI.WebControls.ObjectDataSource.SelectCountMethod%2A> property is set to the name of a method that returns the total number of records in the query. The <xref:System.Web.UI.WebControls.ObjectDataSource.MaximumRowsParameterName%2A> property and the <xref:System.Web.UI.WebControls.ObjectDataSource.StartRowIndexParameterName%2A> property are set to the names of the parameters that are used in the Select method. The page also contains a <xref:System.Web.UI.WebControls.DropDownList> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_17#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_17/CS/Default3.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_17#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_17/VB/Default3.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_17#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_17/CS/Default3.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_17#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_17/VB/Default3.aspx#1)]  
   
  The second example shows a handler for the <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged?displayProperty=nameWithType> event of the <xref:System.Web.UI.WebControls.DropDownList> control. The code in the handler sets the <xref:System.Web.UI.WebControls.GridView.PageSize%2A> property to the user's selection.  
   
@@ -2248,8 +2248,8 @@ public void ExampleObjectDisposing(object sender,
   
  The first example shows a Web page that contains two <xref:System.Web.UI.WebControls.ObjectDataSource> controls, a <xref:System.Web.UI.WebControls.DropDownList> control, and a <xref:System.Web.UI.WebControls.DetailsView> control. The first <xref:System.Web.UI.WebControls.ObjectDataSource> control and the <xref:System.Web.UI.WebControls.DropDownList> control are used to retrieve and display employee names from the database. The second <xref:System.Web.UI.WebControls.ObjectDataSource> control and the <xref:System.Web.UI.WebControls.DetailsView> control are used to retrieve, display, and modify the data from the employee record that is selected by the user.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_18#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/CS/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_18#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/VB/Default.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_18#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/CS/Default.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_18#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/VB/Default.aspx#1)]  
   
  The second example shows handlers for the <xref:System.Web.UI.WebControls.ObjectDataSource.Selected> and <xref:System.Web.UI.WebControls.ObjectDataSource.Updating> events. The <xref:System.Web.UI.WebControls.ObjectDataSource.Selected> event handler serializes the object that contains data that was retrieved from the Employee table. The serialized object is stored in view state. The <xref:System.Web.UI.WebControls.ObjectDataSource.Updating> event handler deserializes the object in view state that contains the original data for the data record that is being updated. The object that contains the original data is passed as a parameter to the Update method. The original data must be passed to the database so that it can be used to check whether the data has been modified by another process.  
   
@@ -2356,8 +2356,8 @@ public void ExampleObjectDisposing(object sender,
 ## Examples  
  The following code example demonstrates how a <xref:System.Web.UI.WebControls.GridView> control can display data using an <xref:System.Web.UI.WebControls.ObjectDataSource> control on a Web Forms page. The <xref:System.Web.UI.WebControls.ObjectDataSource> identifies a partially or fully qualified class name with its <xref:System.Web.UI.WebControls.ObjectDataSource.TypeName%2A> property and a method that is called to retrieve data with its <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A> property. At run time, the object is created and the method is called using reflection. The <xref:System.Web.UI.WebControls.GridView> control enumerates through the <xref:System.Collections.IEnumerable> collection that is returned by the method that is specified by the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A> property, and displays the data.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_1/CS/objds1cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_1/VB/objds1vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_1/CS/objds1cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_1/VB/objds1vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2422,8 +2422,8 @@ public void ExampleObjectDisposing(object sender,
   
 -   The sample code can be run as an .aspx page. If you request the page without a query-string parameter, an error message is displayed. If you request the page using a query string such as `?empid=1` after the name of the .aspx file, you will see the details for the requested employee.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_3/CS/objds3cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_3/VB/objds3vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_3/CS/objds3cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_3/VB/objds3vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2471,8 +2471,8 @@ public void ExampleObjectDisposing(object sender,
   
  The following code example demonstrates how to implement a sort expression. The code in the Web page creates an instance of the <xref:System.Web.UI.WebControls.ObjectDataSource> control. The <xref:System.Web.UI.WebControls.ObjectDataSource.TypeName%2A> property is set to `SortingData` and the <xref:System.Web.UI.WebControls.ObjectDataSource.SortParameterName%2A> property is set to `sortExpression`. The <xref:System.Web.UI.WebControls.GridView.AllowSorting%2A> property of the <xref:System.Web.UI.WebControls.GridView> control is set to `true`. When the user clicks the **Sort** button, the field name, `Name` or `Number`, is passed to `SelectMethod` in the sort parameter.  
   
- <!-- TODO: review snippet reference [!code-csharp[ObjectDataSourceSorting#2](~/samples/snippets/csharp/VS_Snippets_WebNet/ObjectDataSourceSorting/CS/SortingDataExample.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[ObjectDataSourceSorting#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ObjectDataSourceSorting/VB/SortingDataExampleVB.aspx#2)]  -->  
+ [!code-aspx-csharp[ObjectDataSourceSorting#2](~/samples/snippets/csharp/VS_Snippets_WebNet/ObjectDataSourceSorting/CS/SortingDataExample.aspx#2)]
+ [!code-aspx-vb[ObjectDataSourceSorting#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ObjectDataSourceSorting/VB/SortingDataExampleVB.aspx#2)]  
   
  ]]></format>
         </remarks>
@@ -2517,8 +2517,8 @@ public void ExampleObjectDisposing(object sender,
   
  The following code example demonstrates how to create a SQL Server cache dependency and set the <xref:System.Web.UI.WebControls.ObjectDataSource.SqlCacheDependency%2A> property of a <xref:System.Web.UI.WebControls.ObjectDataSource> control. In this example, the database is polled every 120 seconds. If the data in the Northwind Traders Employees table changes during that time, any data that is cached by the <xref:System.Web.UI.WebControls.ObjectDataSource> control and displayed by the <xref:System.Web.UI.WebControls.GridView> control is expired and a new set of data is retrieved on the next request for the page.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_7#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_7/CS/objds7cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_7#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_7/VB/objds7vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_7#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_7/CS/objds7cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_7#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_7/VB/objds7vb.aspx#1)]  
   
  The following code example demonstrates how to implement a wrapper method that returns a <xref:System.Data.DataSet> object to enable caching and filtering with an <xref:System.Web.UI.WebControls.ObjectDataSource> control. In the base implementation of the `EmployeeLogic` class, the `GetAllEmployees` method returns an <xref:System.Collections.ArrayList> object. Instead of refactoring the object completely to work with the <xref:System.Web.UI.WebControls.ObjectDataSource> on a Web Forms page, a wrapper method named `GetAllEmployeesAsDataSet` is added that returns a set of `NorthwindEmployee` data as a <xref:System.Data.DataSet>.  
   
@@ -2564,8 +2564,8 @@ public void ExampleObjectDisposing(object sender,
   
  The Web page contains an <xref:System.Web.UI.WebControls.ObjectDataSource> control whose <xref:System.Web.UI.WebControls.ObjectDataSource.EnablePaging%2A> property is set to `true`. The <xref:System.Web.UI.WebControls.ObjectDataSource.SelectCountMethod%2A> property is set to the name of a method that returns the total number of records in the query. The <xref:System.Web.UI.WebControls.ObjectDataSource.MaximumRowsParameterName%2A> property and the <xref:System.Web.UI.WebControls.ObjectDataSource.StartRowIndexParameterName%2A> property are set to the names of the parameters that are used in the Select method. The page also contains a <xref:System.Web.UI.WebControls.DropDownList> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_17#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_17/CS/Default3.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_17#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_17/VB/Default3.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_17#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_17/CS/Default3.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_17#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_17/VB/Default3.aspx#1)]  
   
  The second example shows a handler for the <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged?displayProperty=nameWithType> event of the <xref:System.Web.UI.WebControls.DropDownList> control. The code in the handler sets the <xref:System.Web.UI.WebControls.GridView.PageSize%2A> property to the user's selection.  
   
@@ -2639,8 +2639,8 @@ public void ExampleObjectDisposing(object sender,
 ## Examples  
  The following code example demonstrates how a <xref:System.Web.UI.WebControls.GridView> control can display data by using an <xref:System.Web.UI.WebControls.ObjectDataSource> control on a Web Forms page. The <xref:System.Web.UI.WebControls.ObjectDataSource> identifies a partially or fully qualified class name with its <xref:System.Web.UI.WebControls.ObjectDataSource.TypeName%2A> property and a method that is called to retrieve data with its <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A> property. At run time, the object is created and the method is called using reflection. The <xref:System.Web.UI.WebControls.GridView> control enumerates through the <xref:System.Collections.IEnumerable> collection that is returned by the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A> property, and displays the data.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_1/CS/objds1cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_1/VB/objds1vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_1/CS/objds1cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_1/VB/objds1vb.aspx#1)]  
   
  The following example shows the class that the <xref:System.Web.UI.WebControls.ObjectDataSource.TypeName%2A> property value refers to.  
   
@@ -2695,8 +2695,8 @@ public void ExampleObjectDisposing(object sender,
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_12#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_12/CS/objds12cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_12#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_12/VB/objds12vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_12#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_12/CS/objds12cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_12#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_12/VB/objds12vb.aspx#1)]  
   
  The following code example shows the `EmployeeLogic` class that is used in the preceding code example.  
   
@@ -2792,8 +2792,8 @@ public void ExampleObjectDisposing(object sender,
   
  The first example shows a Web page that contains two <xref:System.Web.UI.WebControls.ObjectDataSource> controls, a <xref:System.Web.UI.WebControls.DropDownList> control, and a <xref:System.Web.UI.WebControls.DetailsView> control. The first <xref:System.Web.UI.WebControls.ObjectDataSource> control and the <xref:System.Web.UI.WebControls.DropDownList> control are used to retrieve and display employee names from the database. The second <xref:System.Web.UI.WebControls.ObjectDataSource> control and the <xref:System.Web.UI.WebControls.DetailsView> control are used to retrieve, display, and modify the data from the employee record that is selected by the user.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_18#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/CS/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_18#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/VB/Default.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_18#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/CS/Default.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_18#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/VB/Default.aspx#1)]  
   
  The second example shows handlers for the <xref:System.Web.UI.WebControls.ObjectDataSource.Selected> and <xref:System.Web.UI.WebControls.ObjectDataSource.Updating> events. The <xref:System.Web.UI.WebControls.ObjectDataSource.Selected> event handler serializes the object that contains data that was retrieved from the Employee table. The serialized object is stored in view state. The <xref:System.Web.UI.WebControls.ObjectDataSource.Updating> event handler deserializes the object in view state that contains the original data for the data record that is being updated. The object that contains the original data is passed as a parameter to the Update method. The original data must be passed to the database so that it can be used to check whether the data has been modified by another process.  
   
@@ -2861,8 +2861,8 @@ public void ExampleObjectDisposing(object sender,
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_12#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_12/CS/objds12cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_12#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_12/VB/objds12vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_12#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_12/CS/objds12cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_12#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_12/VB/objds12vb.aspx#1)]  
   
  The following code example shows the `EmployeeLogic` class that is used in the preceding code example.  
   
@@ -2902,8 +2902,8 @@ public void ExampleObjectDisposing(object sender,
   
  The first example shows a Web page that contains two <xref:System.Web.UI.WebControls.ObjectDataSource> controls, a <xref:System.Web.UI.WebControls.DropDownList> control, and a <xref:System.Web.UI.WebControls.DetailsView> control. The first <xref:System.Web.UI.WebControls.ObjectDataSource> control and the <xref:System.Web.UI.WebControls.DropDownList> control are used to retrieve and display employee names from the database. The second <xref:System.Web.UI.WebControls.ObjectDataSource> control and the <xref:System.Web.UI.WebControls.DetailsView> control are used to retrieve, display, and modify the data from the employee record that is selected by the user.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_18#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/CS/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_18#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/VB/Default.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_18#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/CS/Default.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_18#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/VB/Default.aspx#1)]  
   
  The second example shows handlers for the <xref:System.Web.UI.WebControls.ObjectDataSource.Selected> and <xref:System.Web.UI.WebControls.ObjectDataSource.Updating> events. The <xref:System.Web.UI.WebControls.ObjectDataSource.Selected> event handler serializes the object that contains data that was retrieved from the Employee table. The serialized object is stored in view state. The <xref:System.Web.UI.WebControls.ObjectDataSource.Updating> event handler deserializes the object in view state that contains the original data for the data record that is being updated. The object that contains the original data is passed as a parameter to the Update method. The original data must be passed to the database so that it can be used to check whether the data has been modified by another process.  
   

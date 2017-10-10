@@ -32,7 +32,7 @@
                 
                 <EditRowStyle backcolor="LightCyan"/>
 
-<%-- <Snippet1> --%>                  
+<!-- <Snippet1> -->                  
   <Columns>                  
     <asp:BoundField DataField="EmployeeID" HeaderText="Employee ID" ReadOnly="true"/>                    
     <asp:BoundField DataField="FirstName"  HeaderText="First Name"/>
@@ -52,7 +52,7 @@
                         DataNavigateUrlFormatString="~/ShowEmployeeDetail.aspx?EmployeeID={0}"
                         DataNavigateUrlFields="EmployeeID" />                   
   </Columns> 
-<%-- </Snippet1> --%>                  
+<!-- </Snippet1> -->                  
               </asp:GridView>
             </td>                
           </tr>            

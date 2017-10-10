@@ -35,13 +35,13 @@
 ## Examples  
  The following example demonstrates how to populate the <xref:System.Web.UI.WebControls.WizardStepCollection> collection using declarative syntax.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardStepCollectionDeclare#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollectionDeclare/CS/wizardstepcollectiondeclarecs.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardStepCollectionDeclare#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollectionDeclare/VB/wizardstepcollectiondeclarevb.aspx#3)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardStepCollectionDeclare#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollectionDeclare/CS/wizardstepcollectiondeclarecs.aspx#3)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardStepCollectionDeclare#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollectionDeclare/VB/wizardstepcollectiondeclarevb.aspx#3)]  
   
  The following example demonstrates how to programmatically populate a <xref:System.Web.UI.WebControls.WizardStepCollection> collection.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardStepCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollection/CS/wizardstepcollectioncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardStepCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollection/VB/wizardstepcollectionvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardStepCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollection/CS/wizardstepcollectioncs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardStepCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollection/VB/wizardstepcollectionvb.aspx#1)]  
   
  The following is the code-behind file for the Web page in the preceding example.  
   
@@ -81,8 +81,8 @@
 ## Examples  
  The following code example demonstrates programmatically creating a <xref:System.Web.UI.WebControls.Wizard> control and using the <xref:System.Web.UI.WebControls.WizardStepCollection.Add%2A> method to add <xref:System.Web.UI.WebControls.WizardStepBase>-derived <xref:System.Web.UI.WebControls.WizardStep> objects to the <xref:System.Web.UI.WebControls.Wizard.WizardSteps%2A> collection. Note that in the example, the <xref:System.Web.UI.WebControls.Wizard.WizardSteps%2A> property of the <xref:System.Web.UI.WebControls.Wizard> control is an instance of the <xref:System.Web.UI.WebControls.WizardStepCollection> class.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardSteps#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardSteps/CS/wizardstepscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardSteps#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardSteps/VB/wizardstepsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardSteps#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardSteps/CS/wizardstepscs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardSteps#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardSteps/VB/wizardstepsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -215,8 +215,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.WizardStepCollection.CopyTo%2A> method to copy the <xref:System.Web.UI.WebControls.WizardStepBase> objects from the collection to an array. The array is then iterated through to display the <xref:System.Web.UI.Control.ID%2A> property of each <xref:System.Web.UI.WebControls.WizardStepBase>-derived object. Note that in the example, the <xref:System.Web.UI.WebControls.Wizard.WizardSteps%2A> property of the <xref:System.Web.UI.WebControls.Wizard> control is an instance of the <xref:System.Web.UI.WebControls.WizardStepCollection> class.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardStepCollectionCopyTo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollectionCopyTo/CS/wizardstepcollectioncopytocs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardStepCollectionCopyTo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollectionCopyTo/VB/wizardstepcollectioncopytovb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardStepCollectionCopyTo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollectionCopyTo/CS/wizardstepcollectioncopytocs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardStepCollectionCopyTo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollectionCopyTo/VB/wizardstepcollectioncopytovb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -332,8 +332,8 @@
 ## Examples  
  The following code example demonstrates programmatically creating a <xref:System.Web.UI.WebControls.Wizard> control and using the <xref:System.Web.UI.WebControls.WizardStepCollection.Insert%2A> method to add <xref:System.Web.UI.WebControls.WizardStepBase>-derived objects to the <xref:System.Web.UI.WebControls.Wizard.WizardSteps%2A> collection. Note that in the example, the <xref:System.Web.UI.WebControls.Wizard.WizardSteps%2A> property of the <xref:System.Web.UI.WebControls.Wizard> control is an instance of the <xref:System.Web.UI.WebControls.WizardStepCollection> class.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardStepCollectionInsert#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollectionInsert/CS/wizardstepcollectioninsertcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardStepCollectionInsert#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollectionInsert/VB/wizardstepcollectioninsertvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardStepCollectionInsert#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollectionInsert/CS/wizardstepcollectioninsertcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardStepCollectionInsert#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollectionInsert/VB/wizardstepcollectioninsertvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -444,8 +444,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.WizardStepCollection.Remove%2A> method to remove a <xref:System.Web.UI.WebControls.WizardStepBase>-derived object from the <xref:System.Web.UI.WebControls.WizardStepCollection> collection. Note that in the example, the <xref:System.Web.UI.WebControls.Wizard.WizardSteps%2A> property of the <xref:System.Web.UI.WebControls.Wizard> control is an instance of the <xref:System.Web.UI.WebControls.WizardStepCollection> class.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardStepCollectionRemove#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollectionRemove/CS/wizardstepcollectionremovecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardStepCollectionRemove#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollectionRemove/VB/wizardstepcollectionremovevb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardStepCollectionRemove#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollectionRemove/CS/wizardstepcollectionremovecs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardStepCollectionRemove#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollectionRemove/VB/wizardstepcollectionremovevb.aspx#1)]  
   
  ]]></format>
         </remarks>

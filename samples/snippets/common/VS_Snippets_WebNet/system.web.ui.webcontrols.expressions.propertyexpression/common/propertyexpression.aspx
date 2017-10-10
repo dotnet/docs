@@ -3,7 +3,7 @@
     <title>Filter Demo</title>
 </head>
 <body>
-<%--<Snippet1>--%>
+<!-- <Snippet1> -->
 <form id="form1" runat="server">
   Make More: <asp:CheckBox ID="MakeCheckBox" runat="server" />
 
@@ -24,7 +24,7 @@
       DataKeyNames="ProductID>
   </asp:GridView>
 </form>
-<%--</Snippet1>--%>
+<!-- </Snippet1> -->
 </body>
 </html>
 

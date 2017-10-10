@@ -182,8 +182,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.ButtonColumn.CommandName%2A> property to associate a command name with a button. Then, the command name of the clicked button is determined programmatically in the event handler for the <xref:System.Web.UI.WebControls.DataGrid.ItemCommand> event and the appropriate action is performed.  
   
- <!-- TODO: review snippet reference [!code-csharp[ButtonColumnCommandName#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonColumnCommandName/CS/ButtonColumnCommandNameCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ButtonColumnCommandName#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonColumnCommandName/VB/ButtonColumnCommandNameVB.aspx#1)]  -->  
+ [!code-aspx-csharp[ButtonColumnCommandName#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonColumnCommandName/CS/ButtonColumnCommandNameCS.aspx#1)]
+ [!code-aspx-vb[ButtonColumnCommandName#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonColumnCommandName/VB/ButtonColumnCommandNameVB.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -224,8 +224,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.ButtonColumn.DataTextField%2A> property to bind the <xref:System.Web.UI.WebControls.ButtonColumn> object to a field in a data source.  
   
- <!-- TODO: review snippet reference [!code-csharp[ButtonColumnDataTextField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonColumnDataTextField/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ButtonColumnDataTextField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonColumnDataTextField/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[ButtonColumnDataTextField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonColumnDataTextField/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[ButtonColumnDataTextField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonColumnDataTextField/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -293,8 +293,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.ButtonColumn.DataTextFormatString%2A> property to display the caption of each button in the <xref:System.Web.UI.WebControls.ButtonColumn> object in currency format.  
   
- <!-- TODO: review snippet reference [!code-csharp[ButtonColumnDataTextField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonColumnDataTextField/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ButtonColumnDataTextField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonColumnDataTextField/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[ButtonColumnDataTextField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonColumnDataTextField/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[ButtonColumnDataTextField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonColumnDataTextField/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -432,8 +432,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.ButtonColumn.Text%2A> property to specify the caption for the buttons in the <xref:System.Web.UI.WebControls.ButtonColumn> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic ButtonColumn.ButtonType Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ButtonColumn.ButtonType Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic ButtonColumn.ButtonType Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ButtonColumn.ButtonType Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic ButtonColumn.ButtonType Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ButtonColumn.ButtonType Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic ButtonColumn.ButtonType Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ButtonColumn.ButtonType Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>

@@ -1,4 +1,4 @@
-<%-- <Snippet1> --%>
+<!-- <Snippet1> -->
 
 <%@ Page Language="C#" %>
 
@@ -45,7 +45,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
     <title>UpdatePanel Error Handling Example</title>
-    <%-- <Snippet3> --%>
+    <!-- <Snippet3> -->
     <style type="text/css">
     #UpdatePanel1 {
       width: 200px; height: 50px;
@@ -65,14 +65,14 @@
     position: absolute; right: 5%; bottom: 5%;
     }
     </style>
-    <%-- </Snippet3> --%>
+    <!-- </Snippet3> -->
 </head>
 <body id="bodytag">
     <form id="form1" runat="server">
         <div>
             <asp:ScriptManager ID="ScriptManager1" runat="server" OnAsyncPostBackError="ScriptManager1_AsyncPostBackError">
             </asp:ScriptManager>
-            <%-- <Snippet4> --%>
+            <!-- <Snippet4> -->
             <script type="text/javascript" language="javascript">
             var divElem = 'AlertDiv';
             var messageElem = 'AlertMessage';
@@ -117,7 +117,7 @@
                }
             }
             </script>
-            <%-- </Snippet4> --%>
+            <!-- </Snippet4> -->
             <asp:UpdatePanel ID="UpdatePanel1" runat="server">
                 <ContentTemplate>
                     <asp:TextBox ID="TextBox1" runat="server" Width="39px"></asp:TextBox>
@@ -128,7 +128,7 @@
                     <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="calculate" />
                 </ContentTemplate>
             </asp:UpdatePanel>
-            <%-- <Snippet2> --%>
+            <!-- <Snippet2> -->
             <div id="AlertDiv">
                 <div id="AlertMessage">
                 </div>
@@ -138,8 +138,8 @@
                 </div>
             </div>
         </div>
-        <%-- </Snippet2> --%>
+        <!-- </Snippet2> -->
     </form>
 </body>
 </html>
-<%-- </Snippet1> --%>
+<!-- </Snippet1> -->

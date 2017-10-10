@@ -29,8 +29,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewSelectEventArgs> object passed to the event-handling method to cancel the select operation of a <xref:System.Web.UI.WebControls.GridView> control when the user selects an author with the last name White.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewSelect#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSelect/CS/gridviewselectcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewSelect#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSelect/VB/gridviewselectvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewSelect#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSelect/CS/gridviewselectcs.aspx#1)]
+ [!code-aspx-vb[GridViewSelect#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSelect/VB/gridviewselectvb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -96,8 +96,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewSelectEventArgs.NewSelectedIndex%2A> property to determine the index of the row selected by the user.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewSelect#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSelect/CS/gridviewselectcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewSelect#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSelect/VB/gridviewselectvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewSelect#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSelect/CS/gridviewselectcs.aspx#1)]
+ [!code-aspx-vb[GridViewSelect#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSelect/VB/gridviewselectvb.aspx#1)]  
   
  ]]></format>
         </remarks>

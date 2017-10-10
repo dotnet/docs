@@ -245,22 +245,22 @@
   
  The following example shows how to use the <xref:System.Web.UI.ScriptManager> control to enable partial-page updates. In this example, a <xref:System.Web.UI.WebControls.Calendar> and a <xref:System.Web.UI.WebControls.DropDownList> control are inside an <xref:System.Web.UI.UpdatePanel> control. By default, the value of the <xref:System.Web.UI.UpdatePanel.UpdateMode%2A> property is <xref:System.Web.UI.UpdatePanelUpdateMode.Always>, and the value of the <xref:System.Web.UI.UpdatePanel.ChildrenAsTriggers%2A> property is `true`. Therefore, child controls of the panel cause an asynchronous postback.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.UpdatePanel#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.UpdatePanel/CS/UpdatePanelExample1CS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.UpdatePanel#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.UpdatePanel/VB/UpdatePanelExample1VB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.UpdatePanel#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.UpdatePanel/CS/UpdatePanelExample1CS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.UpdatePanel#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.UpdatePanel/VB/UpdatePanelExample1VB.aspx#1)]  
   
  **Handling Partial-Page Update Errors and Registering Script**  
   
  The following example shows how to provide custom error handling during partial-page updates. By default, when an error occurs during partial-page updates, a JavaScript message box is displayed. This example demonstrates how to use custom error handling by providing a handler for the <xref:System.Web.UI.ScriptManager.AsyncPostBackError> event, and by setting the <xref:System.Web.UI.ScriptManager.AsyncPostBackErrorMessage%2A> property in the event handler. You can also set the <xref:System.Web.UI.ScriptManager.AllowCustomErrorsRedirect%2A> property to specify how the custom errors section of the Web.config file is used when an error occurs during partial-page updates. In this example, the default value of the <xref:System.Web.UI.ScriptManager.AllowCustomErrorsRedirect%2A> property is used. This means that if the Web.config file contains a  element, that element determines how errors are displayed. For more information, see [customErrors Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/288c32e2-df1f-4548-abda-de6b4cb989a6).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ScriptManager.OnAsyncPostBackError#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.OnAsyncPostBackError/CS/default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ScriptManager.OnAsyncPostBackError#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptManager.OnAsyncPostBackError/VB/default.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.ScriptManager.OnAsyncPostBackError#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.OnAsyncPostBackError/CS/default.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.ScriptManager.OnAsyncPostBackError#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptManager.OnAsyncPostBackError/VB/default.aspx#1)]  
   
  **Globalizing the Date and Time That Are Displayed in the Browser**  
   
  The following example shows how to set the <xref:System.Web.UI.ScriptManager.EnableScriptGlobalization%2A> property so that client script can display a culture-specific date and time in the browser. In the example, the `Culture` attribute of the  directive is set to `auto`. As a result, the first language that is specified in the current browser settings determines the culture and UI culture for the page. For more information, see [How to: Set the Culture and UI Culture for ASP.NET Web Page Globalization](http://msdn.microsoft.com/library/76091f86-f967-4687-a40f-de87bd8cc9a0).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ScriptManager.EnableScriptGlobalization#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.EnableScriptGlobalization/CS/default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ScriptManager.EnableScriptGlobalization#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptManager.EnableScriptGlobalization/VB/default.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.ScriptManager.EnableScriptGlobalization#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.EnableScriptGlobalization/CS/default.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.ScriptManager.EnableScriptGlobalization#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptManager.EnableScriptGlobalization/VB/default.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -539,8 +539,8 @@
 ## Examples  
  The following example shows how to handle the <xref:System.Web.UI.ScriptManager.AsyncPostBackError> event to set the <xref:System.Web.UI.ScriptManager.AsyncPostBackErrorMessage%2A> property (which is sent to the client) to the server exception error message.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ScriptManager.AsyncPostBackErrorMessage#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.AsyncPostBackErrorMessage/CS/ScriptManager_AsyncPostBackErrorMessageCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ScriptManager.AsyncPostBackErrorMessage#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptManager.AsyncPostBackErrorMessage/VB/ScriptManager_AsyncPostBackErrorMessageVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.ScriptManager.AsyncPostBackErrorMessage#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.AsyncPostBackErrorMessage/CS/ScriptManager_AsyncPostBackErrorMessageCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.ScriptManager.AsyncPostBackErrorMessage#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptManager.AsyncPostBackErrorMessage/VB/ScriptManager_AsyncPostBackErrorMessageVB.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -580,8 +580,8 @@
 ## Examples  
  The following example shows how to handle the <xref:System.Web.UI.ScriptManager.AsyncPostBackError> event to set the <xref:System.Web.UI.ScriptManager.AsyncPostBackErrorMessage%2A> property (which is sent to the client) to the server exception error message.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ScriptManager.AsyncPostBackErrorMessage#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.AsyncPostBackErrorMessage/CS/ScriptManager_AsyncPostBackErrorMessageCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ScriptManager.AsyncPostBackErrorMessage#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptManager.AsyncPostBackErrorMessage/VB/ScriptManager_AsyncPostBackErrorMessageVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.ScriptManager.AsyncPostBackErrorMessage#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.AsyncPostBackErrorMessage/CS/ScriptManager_AsyncPostBackErrorMessageCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.ScriptManager.AsyncPostBackErrorMessage#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptManager.AsyncPostBackErrorMessage/VB/ScriptManager_AsyncPostBackErrorMessageVB.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1560,8 +1560,8 @@
 ## Examples  
  The following example shows how to handle the <xref:System.Web.UI.ScriptManager.AsyncPostBackError> event to set the <xref:System.Web.UI.ScriptManager.AsyncPostBackErrorMessage%2A> property (which is sent to the client) to the server exception error message.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ScriptManager.AsyncPostBackErrorMessage#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.AsyncPostBackErrorMessage/CS/ScriptManager_AsyncPostBackErrorMessageCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ScriptManager.AsyncPostBackErrorMessage#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptManager.AsyncPostBackErrorMessage/VB/ScriptManager_AsyncPostBackErrorMessageVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.ScriptManager.AsyncPostBackErrorMessage#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.AsyncPostBackErrorMessage/CS/ScriptManager_AsyncPostBackErrorMessageCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.ScriptManager.AsyncPostBackErrorMessage#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptManager.AsyncPostBackErrorMessage/VB/ScriptManager_AsyncPostBackErrorMessageVB.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1887,13 +1887,13 @@
 ## Examples  
  The following example shows how to call the <xref:System.Web.UI.ScriptManager.RegisterAsyncPostBackControl%2A> method to register a <xref:System.Web.UI.WebControls.Button> control so that it causes an update of an <xref:System.Web.UI.UpdatePanel> control's content. The <xref:System.Web.UI.WebControls.Button> control is not inside the <xref:System.Web.UI.UpdatePanel> control. Two buttons are shown: `Button1` and `Button2`. `Button1` refreshes the content of the panel, and `Button2` refreshes the whole page.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ScriptManager.RegisterAsyncPostBackControl#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.RegisterAsyncPostBackControl/CS/ScriptManager1CS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ScriptManager.RegisterAsyncPostBackControl#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptManager.RegisterAsyncPostBackControl/VB/ScriptManager1VB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.ScriptManager.RegisterAsyncPostBackControl#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.RegisterAsyncPostBackControl/CS/ScriptManager1CS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.ScriptManager.RegisterAsyncPostBackControl#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptManager.RegisterAsyncPostBackControl/VB/ScriptManager1VB.aspx#1)]  
   
  The following example shows how to call the <xref:System.Web.UI.ScriptManager.RegisterAsyncPostBackControl%2A> method to register a user control so that it causes an update of an <xref:System.Web.UI.UpdatePanel> control's content. The first example shows a page using the user control. The second example shows the user control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ScriptManager.RegisterAsyncPostBackControl#2](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.RegisterAsyncPostBackControl/CS/ScriptManager2CS.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ScriptManager.RegisterAsyncPostBackControl#2](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptManager.RegisterAsyncPostBackControl/VB/ScriptManager2VB.aspx#2)]  -->  
+ [!code-aspx-csharp[System.Web.UI.ScriptManager.RegisterAsyncPostBackControl#2](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.RegisterAsyncPostBackControl/CS/ScriptManager2CS.aspx#2)]
+ [!code-aspx-vb[System.Web.UI.ScriptManager.RegisterAsyncPostBackControl#2](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptManager.RegisterAsyncPostBackControl/VB/ScriptManager2VB.aspx#2)]  
   
   
   
@@ -1946,8 +1946,8 @@
    
   
 ## Examples  
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ScriptManager.RegisterClientScriptBlock#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.RegisterClientScriptBlock/CS/ScriptManager_RegisterClientScriptBlockCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ScriptManager.RegisterClientScriptBlock#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptManager.RegisterClientScriptBlock/vb/ScriptManager_RegisterClientScriptBlockVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.ScriptManager.RegisterClientScriptBlock#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.RegisterClientScriptBlock/CS/ScriptManager_RegisterClientScriptBlockCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.ScriptManager.RegisterClientScriptBlock#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptManager.RegisterClientScriptBlock/vb/ScriptManager_RegisterClientScriptBlockVB.aspx#1)]  
   
  [!code-xml[System.Web.UI.ScriptManager.RegisterClientScriptBlock#2](~/samples/snippets/common/VS_Snippets_Atlas/System.Web.UI.ScriptManager.RegisterClientScriptBlock/Common/App_Data/Contacts.xml#2)]  
   
@@ -2044,7 +2044,7 @@
    
   
 ## Examples  
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ScriptManager.RegisterClientScriptInclude#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.RegisterClientScriptInclude/CS/ScriptManager_RegisterClientScriptIncludeCS.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.ScriptManager.RegisterClientScriptInclude#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.RegisterClientScriptInclude/CS/ScriptManager_RegisterClientScriptIncludeCS.aspx#1)]  
   
  [!code-javascript[System.Web.UI.ScriptManager.RegisterClientScriptInclude#2](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.RegisterClientScriptInclude/CS/scripts/script_alertdiv.js#2)]  
   
@@ -2234,8 +2234,8 @@
 > [!NOTE]
 >  The data that is sent in this example is for illustration only. In a real-world application, you would use the <xref:System.Web.UI.ScriptManager.RegisterDataItem%2A> method to send custom data from the server.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ScriptManager.RegisterDataItem#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.RegisterDataItem/CS/ScriptManagerRegisterDataItemCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ScriptManager.RegisterDataItem#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptManager.RegisterDataItem/VB/ScriptManagerRegisterDataItemVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.ScriptManager.RegisterDataItem#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.RegisterDataItem/CS/ScriptManagerRegisterDataItemCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.ScriptManager.RegisterDataItem#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptManager.RegisterDataItem/VB/ScriptManagerRegisterDataItemVB.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2289,8 +2289,8 @@
 > [!NOTE]
 >  The data that is sent in this example is for illustration only. In a real-world application, you would use the <xref:System.Web.UI.ScriptManager.RegisterDataItem%2A> method to send custom data from the server. For example, you could use the data item to send information about whether to hide or show client elements that are not inside an <xref:System.Web.UI.UpdatePanel> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ScriptManager.RegisterDataItem#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.RegisterDataItem/CS/ScriptManagerRegisterDataItemCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ScriptManager.RegisterDataItem#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptManager.RegisterDataItem/VB/ScriptManagerRegisterDataItemVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.ScriptManager.RegisterDataItem#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.RegisterDataItem/CS/ScriptManagerRegisterDataItemCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.ScriptManager.RegisterDataItem#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptManager.RegisterDataItem/VB/ScriptManagerRegisterDataItemVB.aspx#1)]  
   
  ]]></format>
         </remarks>

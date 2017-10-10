@@ -52,7 +52,7 @@
                     EnableUpdate="True" EnableDelete="true"
                     ContextTypeName="AdventureWorksLTDataContext"
                     TableName="SalesOrderDetails" />
-               <%-- <Snippet2> --%>
+               <!-- <Snippet2> -->
                 <asp:DetailsView ID="DetailsView1" runat="server" AllowPaging="True" 
                     CssClass="DDDetailsTable"
                     AutoGenerateRows="False" DataSourceID="GridDataSource">
@@ -81,7 +81,7 @@
                     </Fields>
                    
                 </asp:DetailsView>
-                <%-- </Snippet2> --%>
+                <!-- </Snippet2> -->
        
             </ContentTemplate>
   

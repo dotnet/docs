@@ -29,8 +29,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsViewInsertEventArgs> object passed to the event handler for the <xref:System.Web.UI.WebControls.DetailsView.ItemInserting> event to cancel an insert operation.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewInsertEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewInsertEventArgs/CS/detailsviewinserteventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewInsertEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewInsertEventArgs/VB/detailsviewinserteventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewInsertEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewInsertEventArgs/CS/detailsviewinserteventargscs.aspx#1)]
+ [!code-aspx-vb[DetailsViewInsertEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewInsertEventArgs/VB/detailsviewinserteventargsvb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -96,8 +96,8 @@
 ## Examples  
  The following code example demonstrates how to set the <xref:System.Web.UI.WebControls.Button.CommandArgument%2A> property of a <xref:System.Web.UI.WebControls.Button> control and retrieve and use the value during the <xref:System.Web.UI.WebControls.DetailsView.ItemInserting> event.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewInsertEventArgsCommandArgument#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewInsertEventArgsCommandArgument/CS/InsertCommand.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewInsertEventArgsCommandArgument#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewInsertEventArgsCommandArgument/VB/InsertCommandVB.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewInsertEventArgsCommandArgument#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewInsertEventArgsCommandArgument/CS/InsertCommand.aspx#1)]
+ [!code-aspx-vb[DetailsViewInsertEventArgsCommandArgument#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewInsertEventArgsCommandArgument/VB/InsertCommandVB.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -134,8 +134,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsViewInsertEventArgs.Values%2A> property to access the values of fields for the record being inserted.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewInsertEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewInsertEventArgs/CS/detailsviewinserteventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewInsertEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewInsertEventArgs/VB/detailsviewinserteventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewInsertEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewInsertEventArgs/CS/detailsviewinserteventargscs.aspx#1)]
+ [!code-aspx-vb[DetailsViewInsertEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewInsertEventArgs/VB/detailsviewinserteventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>

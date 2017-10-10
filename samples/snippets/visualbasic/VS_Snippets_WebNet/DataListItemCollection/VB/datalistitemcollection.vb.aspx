@@ -1,4 +1,4 @@
-<%--<Snippet1>--%>
+<!-- <Snippet1> -->
 <%@ Import Namespace = "System.Data"  %>
 <%@ Page language="VB" AutoEventWireup="true"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
@@ -170,4 +170,4 @@ End Sub
 </form>
 </body>
 </html>
-<%--</Snippet1>--%>
+<!-- </Snippet1> -->

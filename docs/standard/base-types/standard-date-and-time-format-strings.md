@@ -1,7 +1,7 @@
 ---
 title: "Standard Date and Time Format Strings"
 ms.custom: ""
-ms.date: "03/30/2017"
+ms.date: "10/10/2017"
 ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
@@ -16,7 +16,6 @@ helpviewer_keywords:
   - "custom date and time format strings"
   - "formatting [.NET Framework], time"
   - "date and time strings"
-ms.assetid: bb79761a-ca08-44ee-b142-b06b3e2fc22b
 caps.latest.revision: 92
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -62,9 +61,24 @@ A standard date and time format string uses a single format specifier to define 
   
 -   You can use the default (or current) culture. The following example displays a date using the current culture's short date format. In this case, the current culture is en-US.  
   
-     [!code-csharp[System.DateTime.Conceptual.Formatting#1](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Conceptual.Formatting/cs/StandardFormats1.cs#1)]
+# [C#](#tab/csharp)
+```csharp-interactive
+using System;
+
+public class Class1
+{
+   public static void Main()
+   {
+      DateTime thisDate = new DateTime(2008, 3, 15);
+      Console.WriteLine(thisDate.ToString("d"));
+      // Displays "3/15/2008". Try it by pressing "Run"
+   }
+}
+```   
+# [Visual Basic](#tab/visual-basic)
      [!code-vb[System.DateTime.Conceptual.Formatting#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTime.Conceptual.Formatting/vb/StandardFormats1.vb#1)]  
-  
+---
+
 -   You can pass a <xref:System.Globalization.CultureInfo> object representing the culture whose formatting is to be used to a method that has an <xref:System.IFormatProvider> parameter. The following example displays a date using the short date format of the pt-BR culture.  
   
      [!code-csharp[System.DateTime.Conceptual.Formatting#2](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Conceptual.Formatting/cs/StandardFormats1.cs#2)]

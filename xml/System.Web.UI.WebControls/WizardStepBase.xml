@@ -105,8 +105,8 @@
 ## Examples  
  The following example demonstrates using the <xref:System.Web.UI.WebControls.WizardStepBase.AllowReturn%2A> property to stop the user from returning to a step in the <xref:System.Web.UI.WebControls.Wizard> control after it has been accessed. In the example, the `Step1` step has its <xref:System.Web.UI.WebControls.WizardStepBase.AllowReturn%2A> property set to `false`. After the user leaves the `Step1` step, no Previous button appears on the `Step2` step.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardStepBaseAllowReturn#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepBaseAllowReturn/CS/wizardstepbaseallowreturncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardStepBaseAllowReturn#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepBaseAllowReturn/VB/wizardstepbaseallowreturnvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardStepBaseAllowReturn#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepBaseAllowReturn/CS/wizardstepbaseallowreturncs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardStepBaseAllowReturn#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepBaseAllowReturn/VB/wizardstepbaseallowreturnvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -173,8 +173,8 @@
 ## Examples  
  The following code example defines three wizard steps for a <xref:System.Web.UI.WebControls.Wizard> control in a Web Forms page. In code for the page, the wizard step instances are named by their ID values, and they can be referenced in the code as `WizardStep1`, `WizardStep2`, and `WizardStep3`.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardActiveStep#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardActiveStep/CS/wizardactivestepcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardActiveStep#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardActiveStep/VB/wizardactivestepvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardActiveStep#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardActiveStep/CS/wizardactivestepcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardActiveStep#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardActiveStep/VB/wizardactivestepvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -371,8 +371,8 @@
 ## Examples  
  The following example demonstrates using the <xref:System.Web.UI.WebControls.WizardStepBase.Title%2A> property to display a user-friendly title for a step in the <xref:System.Web.UI.WebControls.Wizard> control. In the example, `Step1` does not have its <xref:System.Web.UI.WebControls.WizardStepBase.Title%2A> property set, so it appears in the <xref:System.Web.UI.WebControls.Wizard> control as "WizardStep1". `Step2` does have its <xref:System.Web.UI.WebControls.WizardStepBase.Title%2A> property set, so it appears as "Step 2".  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardStepBaseTitle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepBaseTitle/CS/wizardstepbasetitlecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardStepBaseTitle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepBaseTitle/VB/wizardstepbasetitlevb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardStepBaseTitle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepBaseTitle/CS/wizardstepbasetitlecs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardStepBaseTitle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepBaseTitle/VB/wizardstepbasetitlevb.aspx#1)]  
   
  ]]></format>
         </remarks>

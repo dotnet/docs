@@ -35,8 +35,8 @@
 ## Examples  
  The following example demonstrates how to programmatically fill a <xref:System.Web.UI.WebControls.Table> control. <xref:System.Web.UI.WebControls.TableCell> objects, which represent individual cells, are added to <xref:System.Web.UI.WebControls.TableRow> objects, which represent the individual rows, through the <xref:System.Web.UI.WebControls.TableRow.Cells%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic TableCellCollection Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic TableCellCollection Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic TableCellCollection Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic TableCellCollection Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic TableCellCollection Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic TableCellCollection Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic TableCellCollection Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic TableCellCollection Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -72,8 +72,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.TableCellCollection.Add%2A> method to add a <xref:System.Web.UI.WebControls.TableCell> to a <xref:System.Web.UI.WebControls.TableCellCollection>. Note that in the example, the <xref:System.Web.UI.WebControls.TableRow.Cells%2A> property of the <xref:System.Web.UI.WebControls.TableRow> is an instance of the <xref:System.Web.UI.WebControls.TableCellCollection> class.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic TableCellCollection.Add Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic TableCellCollection.Add Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic TableCellCollection.Add Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic TableCellCollection.Add Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic TableCellCollection.Add Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic TableCellCollection.Add Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic TableCellCollection.Add Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic TableCellCollection.Add Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -110,8 +110,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.TableCellCollection.AddAt%2A> method to add a <xref:System.Web.UI.WebControls.TableCell> to the middle of a <xref:System.Web.UI.WebControls.TableCellCollection>. Note that in the example, the <xref:System.Web.UI.WebControls.TableRow.Cells%2A> property of the <xref:System.Web.UI.WebControls.TableRow> is an instance of the <xref:System.Web.UI.WebControls.TableCellCollection> class.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic TableCellCollection.AddAt Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic TableCellCollection.AddAt Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic TableCellCollection.AddAt Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic TableCellCollection.AddAt Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic TableCellCollection.AddAt Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic TableCellCollection.AddAt Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic TableCellCollection.AddAt Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic TableCellCollection.AddAt Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -183,8 +183,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.TableCellCollection.Clear%2A> method to remove all <xref:System.Web.UI.WebControls.TableCell> objects from the center row of the table and replace them with new <xref:System.Web.UI.WebControls.TableCell> objects.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic TableCellCollection.Clear Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic TableCellCollection.Clear Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic TableCellCollection.Clear Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic TableCellCollection.Clear Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic TableCellCollection.Clear Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic TableCellCollection.Clear Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic TableCellCollection.Clear Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic TableCellCollection.Clear Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -224,8 +224,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.TableCellCollection.CopyTo%2A> method to copy the items from the <xref:System.Web.UI.WebControls.TableCellCollection> into the specified array.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic TableCellCollection.CopyTo Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic TableCellCollection.CopyTo Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic TableCellCollection.CopyTo Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic TableCellCollection.CopyTo Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic TableCellCollection.CopyTo Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic TableCellCollection.CopyTo Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic TableCellCollection.CopyTo Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic TableCellCollection.CopyTo Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -294,8 +294,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.TableCellCollection.GetCellIndex%2A> property to display the column index of the selected cell.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic TableCellCollection.GetCellIndex Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic TableCellCollection.GetCellIndex Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic TableCellCollection.GetCellIndex Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic TableCellCollection.GetCellIndex Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic TableCellCollection.GetCellIndex Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic TableCellCollection.GetCellIndex Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic TableCellCollection.GetCellIndex Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic TableCellCollection.GetCellIndex Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -337,8 +337,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.TableCellCollection.GetEnumerator%2A> method to create a <xref:System.Collections.IEnumerator?displayProperty=nameWithType> implemented object. It is then iterated through to display the items in the selected row.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic TableCellCollection.GetEnumerator Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic TableCellCollection.GetEnumerator Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic TableCellCollection.GetEnumerator Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic TableCellCollection.GetEnumerator Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic TableCellCollection.GetEnumerator Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic TableCellCollection.GetEnumerator Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic TableCellCollection.GetEnumerator Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic TableCellCollection.GetEnumerator Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -428,8 +428,8 @@
 ## Examples  
  The following example demonstrates how to use the indexer to get a <xref:System.Web.UI.WebControls.TableCell> from a <xref:System.Web.UI.WebControls.TableCellCollection>. Note that in the example, the <xref:System.Web.UI.WebControls.TableRow.Cells%2A> property of the <xref:System.Web.UI.WebControls.TableRow> is an instance of the <xref:System.Web.UI.WebControls.TableCellCollection> class.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic TableCellCollection.this Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic TableCellCollection.this Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic TableCellCollection.this Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic TableCellCollection.this Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic TableCellCollection.this Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic TableCellCollection.this Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic TableCellCollection.this Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic TableCellCollection.this Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -464,8 +464,8 @@
 ## Examples  
  The following example demonstrates how use the <xref:System.Web.UI.WebControls.TableCellCollection.Remove%2A> method to remove the center column from the table. Note that in the example, the <xref:System.Web.UI.WebControls.TableRow.Cells%2A> property of the <xref:System.Web.UI.WebControls.TableRow> is an instance of the <xref:System.Web.UI.WebControls.TableCellCollection> class.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic TableCellCollection.Remove Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic TableCellCollection.Remove Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic TableCellCollection.Remove Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic TableCellCollection.Remove Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic TableCellCollection.Remove Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic TableCellCollection.Remove Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic TableCellCollection.Remove Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic TableCellCollection.Remove Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -500,8 +500,8 @@
 ## Examples  
  The following example demonstrates how use the <xref:System.Web.UI.WebControls.TableCellCollection.RemoveAt%2A> method to remove the fourth column from the table. Note that in the example, the <xref:System.Web.UI.WebControls.TableRow.Cells%2A> property of the <xref:System.Web.UI.WebControls.TableRow> is an instance of the <xref:System.Web.UI.WebControls.TableCellCollection> class. Also note that the index of the <xref:System.Web.UI.WebControls.TableRow.Cells%2A> collection is zero-based.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic TableCellCollection.RemoveAt Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic TableCellCollection.RemoveAt Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic TableCellCollection.RemoveAt Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic TableCellCollection.RemoveAt Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic TableCellCollection.RemoveAt Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic TableCellCollection.RemoveAt Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic TableCellCollection.RemoveAt Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic TableCellCollection.RemoveAt Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>

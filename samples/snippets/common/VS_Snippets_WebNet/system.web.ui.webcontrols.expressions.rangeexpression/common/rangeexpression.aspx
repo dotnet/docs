@@ -3,7 +3,7 @@
     <title>Filter Demo</title>
 </head>
 <body>
-<%-- <Snippet1> --%>
+<!-- <Snippet1> -->
     <form id="form1" runat="server">
 
       <asp:TextBox ID="FromTextBox" runat="server"></asp:TextBox>

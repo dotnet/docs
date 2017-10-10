@@ -49,8 +49,8 @@
 ## Examples  
  The following example demonstrates three user-defined styles in a <xref:System.Web.UI.MobileControls.StyleSheet> object. A <xref:System.Web.UI.MobileControls.SelectionList> object holds three values that correspond to the three defined styles. The `OnClick` command event calls the `SelectStyle` function, which changes the <xref:System.Web.UI.MobileControls.Style.StyleReference%2A> property of the <xref:System.Web.UI.MobileControls.TextView> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[MobileStyleSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileStyleSample/cs/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MobileStyleSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileStyleSample/vb/Default.aspx#1)]  -->  
+ [!code-aspx-csharp[MobileStyleSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileStyleSample/cs/Default.aspx#1)]
+ [!code-aspx-vb[MobileStyleSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileStyleSample/vb/Default.aspx#1)]  
   
  ]]></format>
     </remarks>

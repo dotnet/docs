@@ -41,8 +41,8 @@
 ## Examples  
  The following example shows how to use a <xref:System.Web.UI.WebControls.NextPreviousPagerField> object to page through data that is displayed in a <xref:System.Web.UI.WebControls.ListView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NextPreviousPagerField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerField/CS/NextPreviousPagerFieldCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NextPreviousPagerField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerField/VB/NextPreviousPagerFieldVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.NextPreviousPagerField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerField/CS/NextPreviousPagerFieldCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.NextPreviousPagerField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerField/VB/NextPreviousPagerFieldVB.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -73,8 +73,8 @@
 ## Examples  
  The following example shows how to use the constructor to dynamically add a <xref:System.Web.UI.WebControls.NextPreviousPagerField> object to a <xref:System.Web.UI.WebControls.DataPager> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NextPreviousPagerField.Ctor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerField.Ctor/CS/NextPreviousPagerFieldCtorCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NextPreviousPagerField.Ctor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerField.Ctor/VB/NextPreviousPagerFieldCtorVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.NextPreviousPagerField.Ctor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerField.Ctor/CS/NextPreviousPagerFieldCtorCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.NextPreviousPagerField.Ctor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerField.Ctor/VB/NextPreviousPagerFieldCtorVB.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -122,8 +122,8 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ButtonCssClass%2A> property to specify a CSS class for buttons in the <xref:System.Web.UI.WebControls.NextPreviousPagerField> object of a <xref:System.Web.UI.WebControls.DataPager> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NextPreviousPagerFieldText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldText/CS/NextPreviousPagerTextCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NextPreviousPagerFieldText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldText/VB/NextPreviousPagerTextVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.NextPreviousPagerFieldText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldText/CS/NextPreviousPagerTextCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.NextPreviousPagerFieldText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldText/VB/NextPreviousPagerTextVB.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -180,8 +180,8 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ButtonType%2A> property to specify that image buttons are displayed in the <xref:System.Web.UI.WebControls.NextPreviousPagerField> object of a <xref:System.Web.UI.WebControls.DataPager> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NextPreviousPagerFieldUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldUrl/CS/NextPreviousPagerUrlCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NextPreviousPagerFieldUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldUrl/VB/NextPreviousPagerUrlVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.NextPreviousPagerFieldUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldUrl/CS/NextPreviousPagerUrlCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.NextPreviousPagerFieldUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldUrl/VB/NextPreviousPagerUrlVB.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -358,8 +358,8 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.NextPreviousPagerField.FirstPageImageUrl%2A> property to display an image for the first-page button in the <xref:System.Web.UI.WebControls.NextPreviousPagerField> object of a <xref:System.Web.UI.WebControls.DataPager> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NextPreviousPagerFieldUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldUrl/CS/NextPreviousPagerUrlCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NextPreviousPagerFieldUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldUrl/VB/NextPreviousPagerUrlVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.NextPreviousPagerFieldUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldUrl/CS/NextPreviousPagerUrlCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.NextPreviousPagerFieldUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldUrl/VB/NextPreviousPagerUrlVB.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -403,8 +403,8 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.PagerSettings.FirstPageText%2A> property to customize the text for the first-page button of the pager field in a <xref:System.Web.UI.WebControls.DataPager> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NextPreviousPagerFieldText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldText/CS/NextPreviousPagerTextCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NextPreviousPagerFieldText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldText/VB/NextPreviousPagerTextVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.NextPreviousPagerFieldText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldText/CS/NextPreviousPagerTextCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.NextPreviousPagerFieldText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldText/VB/NextPreviousPagerTextVB.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -512,8 +512,8 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.NextPreviousPagerField.LastPageImageUrl%2A> property to display an image for the last-page button in the <xref:System.Web.UI.WebControls.NextPreviousPagerField> object of a <xref:System.Web.UI.WebControls.DataPager> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NextPreviousPagerFieldUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldUrl/CS/NextPreviousPagerUrlCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NextPreviousPagerFieldUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldUrl/VB/NextPreviousPagerUrlVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.NextPreviousPagerFieldUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldUrl/CS/NextPreviousPagerUrlCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.NextPreviousPagerFieldUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldUrl/VB/NextPreviousPagerUrlVB.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -557,8 +557,8 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.PagerSettings.LastPageText%2A> property to customize the text for the last-page button of the pager field in a <xref:System.Web.UI.WebControls.DataPager> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NextPreviousPagerFieldText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldText/CS/NextPreviousPagerTextCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NextPreviousPagerFieldText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldText/VB/NextPreviousPagerTextVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.NextPreviousPagerFieldText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldText/CS/NextPreviousPagerTextCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.NextPreviousPagerFieldText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldText/VB/NextPreviousPagerTextVB.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -608,8 +608,8 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.NextPreviousPagerField.NextPageImageUrl%2A> property to display an image for the next-page button in the <xref:System.Web.UI.WebControls.NextPreviousPagerField> object of a <xref:System.Web.UI.WebControls.DataPager> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NextPreviousPagerFieldUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldUrl/CS/NextPreviousPagerUrlCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NextPreviousPagerFieldUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldUrl/VB/NextPreviousPagerUrlVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.NextPreviousPagerFieldUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldUrl/CS/NextPreviousPagerUrlCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.NextPreviousPagerFieldUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldUrl/VB/NextPreviousPagerUrlVB.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -653,8 +653,8 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.PagerSettings.NextPageText%2A> property to customize the text for the next-page button of the pager field in a <xref:System.Web.UI.WebControls.DataPager> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NextPreviousPagerFieldText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldText/CS/NextPreviousPagerTextCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NextPreviousPagerFieldText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldText/VB/NextPreviousPagerTextVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.NextPreviousPagerFieldText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldText/CS/NextPreviousPagerTextCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.NextPreviousPagerFieldText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldText/VB/NextPreviousPagerTextVB.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -704,8 +704,8 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.NextPreviousPagerField.PreviousPageImageUrl%2A> property to display an image for the previous-page button in the <xref:System.Web.UI.WebControls.NextPreviousPagerField> object of a <xref:System.Web.UI.WebControls.DataPager> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NextPreviousPagerFieldUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldUrl/CS/NextPreviousPagerUrlCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NextPreviousPagerFieldUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldUrl/VB/NextPreviousPagerUrlVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.NextPreviousPagerFieldUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldUrl/CS/NextPreviousPagerUrlCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.NextPreviousPagerFieldUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldUrl/VB/NextPreviousPagerUrlVB.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -749,8 +749,8 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.PagerSettings.PreviousPageText%2A> property to customize the text for the previous-page button of the pager field in a <xref:System.Web.UI.WebControls.DataPager> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NextPreviousPagerFieldText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldText/CS/NextPreviousPagerTextCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NextPreviousPagerFieldText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldText/VB/NextPreviousPagerTextVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.NextPreviousPagerFieldText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldText/CS/NextPreviousPagerTextCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.NextPreviousPagerFieldText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldText/VB/NextPreviousPagerTextVB.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -869,8 +869,8 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ShowFirstPageButton%2A> property to specify that the first-page button should be displayed.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NextPreviousPagerField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerField/CS/NextPreviousPagerFieldCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NextPreviousPagerField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerField/VB/NextPreviousPagerFieldVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.NextPreviousPagerField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerField/CS/NextPreviousPagerFieldCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.NextPreviousPagerField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerField/VB/NextPreviousPagerFieldVB.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -913,8 +913,8 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ShowLastPageButton%2A> property to specify that the last-page button should be displayed.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NextPreviousPagerField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerField/CS/NextPreviousPagerFieldCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NextPreviousPagerField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerField/VB/NextPreviousPagerFieldVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.NextPreviousPagerField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerField/CS/NextPreviousPagerFieldCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.NextPreviousPagerField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerField/VB/NextPreviousPagerFieldVB.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -957,8 +957,8 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ShowNextPageButton%2A> property to specify that the next-page button should not be displayed.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NextPreviousPagerFieldShowPage#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldShowPage/CS/NextPreviousPagerShowPageCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NextPreviousPagerFieldShowPage#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldShowPage/VB/NextPreviousPagerShowPageVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.NextPreviousPagerFieldShowPage#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldShowPage/CS/NextPreviousPagerShowPageCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.NextPreviousPagerFieldShowPage#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldShowPage/VB/NextPreviousPagerShowPageVB.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1001,8 +1001,8 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ShowPreviousPageButton%2A> property to specify that the previous-page button should not be displayed.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NextPreviousPagerFieldShowPage#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldShowPage/CS/NextPreviousPagerShowPageCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NextPreviousPagerFieldShowPage#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldShowPage/VB/NextPreviousPagerShowPageVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.NextPreviousPagerFieldShowPage#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldShowPage/CS/NextPreviousPagerShowPageCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.NextPreviousPagerFieldShowPage#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldShowPage/VB/NextPreviousPagerShowPageVB.aspx#1)]  
   
  ]]></format>
         </remarks>

@@ -411,8 +411,8 @@
 ## Examples  
  The following code example uses the <xref:System.Web.UI.ControlCollection.Item%2A> property to specify the index location of a child control that is removed in a <xref:System.Web.UI.ControlCollection.Remove%2A> method call. This is performed by the `myButton.Controls.Remove` syntax.  
   
- <!-- TODO: review snippet reference [!code-csharp[ControlCollection_ReSubmit_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlCollection_ReSubmit_2/CS/controlcollection_copyto.cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ControlCollection_ReSubmit_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlCollection_ReSubmit_2/VB/controlcollection_copyto.vb.aspx#1)]  -->  
+ [!code-aspx-csharp[ControlCollection_ReSubmit_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlCollection_ReSubmit_2/CS/controlcollection_copyto.cs.aspx#1)]
+ [!code-aspx-vb[ControlCollection_ReSubmit_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlCollection_ReSubmit_2/VB/controlcollection_copyto.vb.aspx#1)]  
   
  ]]></format>
         </remarks>

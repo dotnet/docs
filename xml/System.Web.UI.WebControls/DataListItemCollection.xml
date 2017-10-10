@@ -35,8 +35,8 @@
 ## Examples  
  The following example creates a data source in the form of a <xref:System.Data.DataView> control and binds it to a <xref:System.Web.UI.WebControls.DataList> control declared in markup. It then displays the contents of the underlying <xref:System.Web.UI.WebControls.DataListItemCollection> object on the page.  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListItemCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListItemCollection/CS/datalistitemcollection.cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListItemCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListItemCollection/VB/datalistitemcollection.vb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListItemCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListItemCollection/CS/datalistitemcollection.cs.aspx#1)]
+ [!code-aspx-vb[DataListItemCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListItemCollection/VB/datalistitemcollection.vb.aspx#1)]  
   
  ]]></format>
     </remarks>

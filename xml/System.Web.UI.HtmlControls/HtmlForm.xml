@@ -35,8 +35,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlForm> class to create a simple form.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlForm#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlForm/CS/htmlformcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlForm#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlForm/VB/htmlformvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlForm#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlForm/CS/htmlformcs.aspx#1)]
+ [!code-aspx-vb[HtmlForm#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlForm/VB/htmlformvb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -71,8 +71,8 @@
 ## Examples  
  The following code example demonstrates how to create a new instance of the <xref:System.Web.UI.HtmlControls.HtmlForm> control and place it on the Web page.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlFormCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlFormCtor/CS/htmlformctorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlFormCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlFormCtor/VB/htmlformctorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlFormCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlFormCtor/CS/htmlformctorcs.aspx#1)]
+ [!code-aspx-vb[HtmlFormCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlFormCtor/VB/htmlformctorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -198,8 +198,8 @@
 ## Examples  
  The following example shows how to set the <xref:System.Web.UI.HtmlControls.HtmlForm.DefaultButton%2A> property to set the default control that causes a postback.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlForm.DefaultButton#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlForm.DefaultButton/CS/htmlform.defaultbuttoncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlForm.DefaultButton#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlForm.DefaultButton/VB/htmlform.defaultbuttonvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlForm.DefaultButton#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlForm.DefaultButton/CS/htmlform.defaultbuttoncs.aspx#1)]
+ [!code-aspx-vb[HtmlForm.DefaultButton#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlForm.DefaultButton/VB/htmlform.defaultbuttonvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -239,8 +239,8 @@
 ## Examples  
  The following code example demonstrates how to set the <xref:System.Web.UI.HtmlControls.HtmlForm.DefaultFocus%2A> property to display a specified control on a form as the control with input focus when the form loads. When `Form1` renders, notice that the insertion point is positioned in `TextBox1`, indicating that `TextBox1` is the control with focus.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlForm.DefaultButton#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlForm.DefaultButton/CS/htmlform.defaultbuttoncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlForm.DefaultButton#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlForm.DefaultButton/VB/htmlform.defaultbuttonvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlForm.DefaultButton#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlForm.DefaultButton/CS/htmlform.defaultbuttoncs.aspx#1)]
+ [!code-aspx-vb[HtmlForm.DefaultButton#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlForm.DefaultButton/VB/htmlform.defaultbuttonvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -290,8 +290,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlForm.Enctype%2A> property to specify the encoding type the browser uses to send data back to the server.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlForm#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlForm/CS/htmlformcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlForm#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlForm/VB/htmlformvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlForm#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlForm/CS/htmlformcs.aspx#1)]
+ [!code-aspx-vb[HtmlForm#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlForm/VB/htmlformvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -334,8 +334,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlForm.Method%2A> property to specify that form data is posted back to the server.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlForm#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlForm/CS/htmlformcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlForm#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlForm/VB/htmlformvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlForm#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlForm/CS/htmlformcs.aspx#1)]
+ [!code-aspx-vb[HtmlForm#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlForm/VB/htmlformvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -606,8 +606,8 @@
 ## Examples  
  The following code example demonstrates how to set the <xref:System.Web.UI.HtmlControls.HtmlForm.SubmitDisabledControls%2A> property on a form to `true` to cause controls disabled by client script to maintain their values after the page posts back to the server. In this example, if you set the <xref:System.Web.UI.HtmlControls.HtmlForm.SubmitDisabledControls%2A> property to `false` and then click the **Post back** button, the text in the HTML text box is lost and the HTML check box is no longer selected.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlForm.SubmitDisabledControls#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlForm.SubmitDisabledControls/CS/htmlform.submitdisabledcontrolscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlForm.SubmitDisabledControls#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlForm.SubmitDisabledControls/VB/htmlform.submitdisabledcontrolsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlForm.SubmitDisabledControls#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlForm.SubmitDisabledControls/CS/htmlform.submitdisabledcontrolscs.aspx#1)]
+ [!code-aspx-vb[HtmlForm.SubmitDisabledControls#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlForm.SubmitDisabledControls/VB/htmlform.submitdisabledcontrolsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -663,8 +663,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlForm.Target%2A> property to specify a new, unframed window to display the results of the information posted back to the server.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlFormTarget#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlFormTarget/CS/htmlformtargetcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlFormTarget#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlFormTarget/VB/htmlformtargetvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlFormTarget#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlFormTarget/CS/htmlformtargetcs.aspx#1)]
+ [!code-aspx-vb[HtmlFormTarget#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlFormTarget/VB/htmlformtargetvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -701,8 +701,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlForm.UniqueID%2A> property to retrieve the unique identifier for an <xref:System.Web.UI.HtmlControls.HtmlForm> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlForm.UniqueID#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlForm.UniqueID/CS/htmlform.uniqueidcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlForm.UniqueID#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlForm.UniqueID/VB/htmlform.uniqueidvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlForm.UniqueID#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlForm.UniqueID/CS/htmlform.uniqueidcs.aspx#1)]
+ [!code-aspx-vb[HtmlForm.UniqueID#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlForm.UniqueID/VB/htmlform.uniqueidvb.aspx#1)]  
   
  ]]></format>
         </remarks>

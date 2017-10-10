@@ -33,8 +33,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlGenericControl> class to represent the `<body>` element.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HtmlGenericControl Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlGenericControl Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HtmlGenericControl Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlGenericControl Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HtmlGenericControl Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlGenericControl Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HtmlGenericControl Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlGenericControl Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -69,8 +69,8 @@
 ## Examples  
  The following code example demonstrates how to create a new instance of the <xref:System.Web.UI.HtmlControls.HtmlGenericControl> class using the default constructor.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlGenericControlDefaultConstructor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlGenericControlDefaultConstructor/CS/htmlgenericcontrolconstructorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlGenericControlDefaultConstructor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlGenericControlDefaultConstructor/VB/htmlgenericcontrolconstructorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlGenericControlDefaultConstructor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlGenericControlDefaultConstructor/CS/htmlgenericcontrolconstructorcs.aspx#1)]
+ [!code-aspx-vb[HtmlGenericControlDefaultConstructor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlGenericControlDefaultConstructor/VB/htmlgenericcontrolconstructorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -111,8 +111,8 @@
 ## Examples  
  The following code example demonstrates how to create a new instance of the <xref:System.Web.UI.HtmlControls.HtmlGenericControl> class using the overloaded constructor.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlGenericControlOverloadConstructor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlGenericControlOverloadConstructor/CS/htmlgenericcontrolconstructoroverloadcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlGenericControlOverloadConstructor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlGenericControlOverloadConstructor/VB/htmlgenericcontrolconstructoroverloadvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlGenericControlOverloadConstructor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlGenericControlOverloadConstructor/CS/htmlgenericcontrolconstructoroverloadcs.aspx#1)]
+ [!code-aspx-vb[HtmlGenericControlOverloadConstructor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlGenericControlOverloadConstructor/VB/htmlgenericcontrolconstructoroverloadvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -152,8 +152,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlGenericControl.TagName%2A> property to programmatically change a tag name from "Body" to "Font" and back.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HtmlGenericControl.TagName Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlGenericControl.TagName Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HtmlGenericControl.TagName Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlGenericControl.TagName Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HtmlGenericControl.TagName Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlGenericControl.TagName Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HtmlGenericControl.TagName Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlGenericControl.TagName Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>

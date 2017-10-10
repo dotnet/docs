@@ -362,16 +362,16 @@
 ## Examples  
  The first code example shows how to use the <xref:System.Web.UI.WebControls.CreateUserWizard> control in its basic form. This page will create a new Web site user account with the site's default <xref:System.Web.Security.MembershipProvider> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardBasic#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardBasic/CS/createuserwizardbasiccs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardBasic#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardBasic/VB/createuserwizardbasicvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardBasic#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardBasic/CS/createuserwizardbasiccs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardBasic#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardBasic/VB/createuserwizardbasicvb.aspx#1)]  
   
  The second code example shows how to use the <xref:System.Web.UI.WebControls.CreateUserWizard> control with the default templates.  
   
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardFullTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardFullTemplate/CS/createuserwizardfulltemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardFullTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardFullTemplate/VB/createuserwizardfulltemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardFullTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardFullTemplate/CS/createuserwizardfulltemplatecs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardFullTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardFullTemplate/VB/createuserwizardfulltemplatevb.aspx#1)]  
   
  The third code example adds an additional step to the <xref:System.Web.UI.WebControls.CreateUserWizard> control and uses the <xref:System.Web.UI.WebControls.CreateUserWizard.CreatedUser> event to store the user's first and last name in personalization properties. The code example requires the following entries in the Web.config file.  
   
@@ -396,8 +396,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardCreatedUser#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardCreatedUser/CS/createuserwizardcreatedusercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardCreatedUser#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardCreatedUser/VB/createuserwizardcreateduservb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardCreatedUser#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardCreatedUser/CS/createuserwizardcreatedusercs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardCreatedUser#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardCreatedUser/VB/createuserwizardcreateduservb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -496,8 +496,8 @@
   
  The following code example demonstrates a Web page that uses the `CustomCreateUserWizard`.  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardOnSendingMail#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardOnSendingMail/CS/createuserwizardonsendingmailcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardOnSendingMail#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardOnSendingMail/VB/createuserwizardonsendingmailvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardOnSendingMail#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardOnSendingMail/CS/createuserwizardonsendingmailcs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardOnSendingMail#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardOnSendingMail/VB/createuserwizardonsendingmailvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -668,8 +668,8 @@
 ## Examples  
  The following code example uses the <xref:System.Web.UI.WebControls.CreateUserWizard.OnCreatedUser%2A> method to change the <xref:System.Web.UI.WebControls.CreateUserWizard.CompleteSuccessText%2A> property to include the user name in the displayed text.  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardCompleteSuccessText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardCompleteSuccessText/CS/createuserwizardcompletesuccesstextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardCompleteSuccessText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardCompleteSuccessText/VB/createuserwizardcompletesuccesstextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardCompleteSuccessText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardCompleteSuccessText/CS/createuserwizardcompletesuccesstextcs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardCompleteSuccessText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardCompleteSuccessText/VB/createuserwizardcompletesuccesstextvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1123,8 +1123,8 @@
 ## Examples  
  The following code example uses the <xref:System.Web.UI.WebControls.CreateUserWizard.ContinueDestinationPageUrl%2A> property to return the user to the page that the user was viewing before reaching the registration page.  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardContinueDestinationPageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardContinueDestinationPageUrl/CS/createuserwizardcontinuedestinationpageurlcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardContinueDestinationPageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardContinueDestinationPageUrl/VB/createuserwizardcontinuedestinationpageurlvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardContinueDestinationPageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardContinueDestinationPageUrl/CS/createuserwizardcontinuedestinationpageurlcs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardContinueDestinationPageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardContinueDestinationPageUrl/VB/createuserwizardcontinuedestinationpageurlvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1199,8 +1199,8 @@
   
  `</configuration>`  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardCreatedUser#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardCreatedUser/CS/createuserwizardcreatedusercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardCreatedUser#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardCreatedUser/VB/createuserwizardcreateduservb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardCreatedUser#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardCreatedUser/CS/createuserwizardcreatedusercs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardCreatedUser#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardCreatedUser/VB/createuserwizardcreateduservb.aspx#1)]  
   
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
@@ -1482,8 +1482,8 @@
 ## Examples  
  The following code example uses the <xref:System.Web.UI.WebControls.CreateUserWizard.CreatingUser> event to make the <xref:System.Web.UI.WebControls.CreateUserWizard.UserName%2A> property all lowercase before submitting it to the membership provider specified in the <xref:System.Web.UI.WebControls.CreateUserWizard.MembershipProvider%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardCreatingUser#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardCreatingUser/CS/createuserwizardcreatingusercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardCreatingUser#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardCreatingUser/VB/createuserwizardcreatinguservb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardCreatingUser#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardCreatingUser/CS/createuserwizardcreatingusercs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardCreatingUser#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardCreatingUser/VB/createuserwizardcreatinguservb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1792,8 +1792,8 @@
 ## Examples  
  The following code example assigns a regular expression to the <xref:System.Web.UI.WebControls.CreateUserWizard.EmailRegularExpression%2A> property to make sure that the user entered their e-mail address in a valid format, such as **username@contoso.com**.  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardEmailRegex#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardEmailRegex/CS/createuserwizardemailregexcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardEmailRegex#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardEmailRegex/VB/createuserwizardemailregexvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardEmailRegex#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardEmailRegex/CS/createuserwizardemailregexcs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardEmailRegex#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardEmailRegex/VB/createuserwizardemailregexvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1825,8 +1825,8 @@
 ## Examples  
  The following code example assigns an error message to the <xref:System.Web.UI.WebControls.CreateUserWizard.EmailRegularExpressionErrorMessage%2A> property to indicate to users that the e-mail address is not in a valid format.  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardEmailRegex#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardEmailRegex/CS/createuserwizardemailregexcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardEmailRegex#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardEmailRegex/VB/createuserwizardemailregexvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardEmailRegex#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardEmailRegex/CS/createuserwizardemailregexcs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardEmailRegex#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardEmailRegex/VB/createuserwizardemailregexvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2245,8 +2245,8 @@
 ## Examples  
  The following code example changes the <xref:System.Web.UI.WebControls.CreateUserWizard.InvalidAnswerErrorMessage%2A> property for a membership provider that requires the answer to have a minimum length. The actual membership provider is not shown.  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardInvalidAnswerErrorMessage#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardInvalidAnswerErrorMessage/CS/createuserwizardinvalidanswererrormessagecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardInvalidAnswerErrorMessage#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardInvalidAnswerErrorMessage/VB/createuserwizardinvalidanswererrormessagevb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardInvalidAnswerErrorMessage#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardInvalidAnswerErrorMessage/CS/createuserwizardinvalidanswererrormessagecs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardInvalidAnswerErrorMessage#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardInvalidAnswerErrorMessage/VB/createuserwizardinvalidanswererrormessagevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2317,8 +2317,8 @@
 ## Examples  
  The following code example changes the <xref:System.Web.UI.WebControls.CreateUserWizard.InvalidPasswordErrorMessage%2A> property for a membership provider that requires a password containing both lowercase and uppercase characters. The actual membership provider is not shown.  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardInvalidPasswordErrorMessage#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardInvalidPasswordErrorMessage/CS/createuserwizardinvalidpassworderrormessagecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardInvalidPasswordErrorMessage#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardInvalidPasswordErrorMessage/VB/createuserwizardinvalidpassworderrormessagevb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardInvalidPasswordErrorMessage#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardInvalidPasswordErrorMessage/CS/createuserwizardinvalidpassworderrormessagecs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardInvalidPasswordErrorMessage#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardInvalidPasswordErrorMessage/VB/createuserwizardinvalidpassworderrormessagevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2357,8 +2357,8 @@
 ## Examples  
  The following code example changes the <xref:System.Web.UI.WebControls.CreateUserWizard.InvalidQuestionErrorMessage%2A> property for a membership provider that restricts questions to the alphanumeric characters a-z, A-Z, and 0-9. The actual membership provider is not shown.  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardInvalidQuestionErrorMessage#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardInvalidQuestionErrorMessage/CS/createuserwizardinvalidquestionerrormessagecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardInvalidQuestionErrorMessage#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardInvalidQuestionErrorMessage/VB/createuserwizardinvalidquestionerrormessagevb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardInvalidQuestionErrorMessage#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardInvalidQuestionErrorMessage/CS/createuserwizardinvalidquestionerrormessagecs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardInvalidQuestionErrorMessage#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardInvalidQuestionErrorMessage/VB/createuserwizardinvalidquestionerrormessagevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2575,8 +2575,8 @@ Thank you for creating an account with our Web site.
   
 ```  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardMailDefinition#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardMailDefinition/CS/createuserwizardmaildefinitioncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardMailDefinition#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardMailDefinition/VB/createuserwizardmaildefinitionvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardMailDefinition#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardMailDefinition/CS/createuserwizardmaildefinitioncs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardMailDefinition#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardMailDefinition/VB/createuserwizardmaildefinitionvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2744,8 +2744,8 @@ Thank you for creating an account with our Web site.
   
  The following code example inserts a step before the user account is created to determine which division of an organization the user belongs to. It then sets the <xref:System.Web.UI.WebControls.CreateUserWizard.MembershipProvider%2A> provider to the appropriate provider for that division.  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardMembershipProvider#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardMembershipProvider/CS/createuserwizardmembershipprovidercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardMembershipProvider#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardMembershipProvider/VB/createuserwizardmembershipprovidervb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardMembershipProvider#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardMembershipProvider/CS/createuserwizardmembershipprovidercs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardMembershipProvider#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardMembershipProvider/VB/createuserwizardmembershipprovidervb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2923,8 +2923,8 @@ Thank you for creating an account with our Web site.
   
  The following code example demonstrates a Web page that uses the `CustomCreateUserWizard`.  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardOnCreatingUser#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardOnCreatingUser/CS/createuserwizardoncreatingusercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardOnCreatingUser#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardOnCreatingUser/VB/createuserwizardoncreatinguservb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardOnCreatingUser#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardOnCreatingUser/CS/createuserwizardoncreatingusercs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardOnCreatingUser#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardOnCreatingUser/VB/createuserwizardoncreatinguservb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -3024,8 +3024,8 @@ To reset your password, you must answer the following question:
 Thank you for creating an account with our Web site.  
 ```  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardOnSendingMail#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardOnSendingMail/CS/createuserwizardonsendingmailcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardOnSendingMail#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardOnSendingMail/VB/createuserwizardonsendingmailvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardOnSendingMail#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardOnSendingMail/CS/createuserwizardonsendingmailcs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardOnSendingMail#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardOnSendingMail/VB/createuserwizardonsendingmailvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -3076,8 +3076,8 @@ Thank you for creating an account with our Web site.
   
  The following code example demonstrates a Web page that uses the `CustomCreateUserWizard`.  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardOnSendMailError#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardOnSendMailError/CS/createuserwizardonsendmailerrorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardOnSendMailError#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardOnSendMailError/VB/createuserwizardonsendmailerrorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardOnSendMailError#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardOnSendMailError/CS/createuserwizardonsendmailerrorcs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardOnSendMailError#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardOnSendMailError/VB/createuserwizardonsendmailerrorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -3280,8 +3280,8 @@ Thank you for creating an account with our Web site.
   
  If the password entered by the user does not meet these criteria, the text contained in the <xref:System.Web.UI.WebControls.CreateUserWizard.PasswordRegularExpressionErrorMessage%2A> property is displayed to the user.  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardPasswordRegex#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardPasswordRegex/CS/createuserwizardpasswordregexcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardPasswordRegex#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardPasswordRegex/VB/createuserwizardpasswordregexvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardPasswordRegex#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardPasswordRegex/CS/createuserwizardpasswordregexcs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardPasswordRegex#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardPasswordRegex/VB/createuserwizardpasswordregexvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -3319,8 +3319,8 @@ Thank you for creating an account with our Web site.
   
 -   Contain at least one special (non-alphanumeric) character.  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardPasswordRegex#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardPasswordRegex/CS/createuserwizardpasswordregexcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardPasswordRegex#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardPasswordRegex/VB/createuserwizardpasswordregexvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardPasswordRegex#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardPasswordRegex/CS/createuserwizardpasswordregexcs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardPasswordRegex#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardPasswordRegex/VB/createuserwizardpasswordregexvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -3397,8 +3397,8 @@ Thank you for creating an account with our Web site.
 ## Examples  
  The following code example modifies the e-mail message in the <xref:System.Web.UI.WebControls.CreateUserWizard.SendingMail> event to include the user's password recovery confirmation question in the message sent to new users.  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardOnSendingMail#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardOnSendingMail/CS/createuserwizardonsendingmailcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardOnSendingMail#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardOnSendingMail/VB/createuserwizardonsendingmailvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardOnSendingMail#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardOnSendingMail/CS/createuserwizardonsendingmailcs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardOnSendingMail#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardOnSendingMail/VB/createuserwizardonsendingmailvb.aspx#1)]  
 [!code-csharp[CreateUserWizardOnSendingMail#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardOnSendingMail/CS/CustomCreateUserWizard.cs#2)]
 [!code-vb[CreateUserWizardOnSendingMail#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardOnSendingMail/VB/CustomCreateUserWizard.vb#2)]  
   
@@ -3601,8 +3601,8 @@ To reset your password, you must answer the following question:
 Thank you for creating an account with our Web site.  
 ```  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardMailDefinition#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardMailDefinition/CS/createuserwizardmaildefinitioncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardMailDefinition#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardMailDefinition/VB/createuserwizardmaildefinitionvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardMailDefinition#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardMailDefinition/CS/createuserwizardmaildefinitioncs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardMailDefinition#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardMailDefinition/VB/createuserwizardmaildefinitionvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -3637,8 +3637,8 @@ Thank you for creating an account with our Web site.
 ## Examples  
  The following code example is a handler for the <xref:System.Web.UI.WebControls.CreateUserWizard.SendMailError> event that calls a site-specific procedure to log the e-mail error. The <xref:System.Web.UI.WebControls.SendMailErrorEventArgs.Handled%2A> property of the <xref:System.Web.UI.WebControls.SendMailErrorEventArgs> object is set to `true` to indicate that the error has been handled.  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardSendMailError#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardSendMailError/CS/createuserwizardsendmailerrorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardSendMailError#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardSendMailError/VB/createuserwizardsendmailerrorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardSendMailError#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardSendMailError/CS/createuserwizardsendmailerrorcs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardSendMailError#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardSendMailError/VB/createuserwizardsendmailerrorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -3913,8 +3913,8 @@ Thank you for creating an account with our Web site.
 ## Examples  
  The following code example sets the <xref:System.Web.UI.WebControls.CreateUserWizard.UserName%2A> property to all lowercase alphabetical characters in the <xref:System.Web.UI.WebControls.CreateUserWizard.CreatingUser> event.  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardLoggingIn#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardLoggingIn/CS/createuserwizardloggingincs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardLoggingIn#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardLoggingIn/VB/createuserwizardlogginginvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardLoggingIn#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardLoggingIn/CS/createuserwizardloggingincs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardLoggingIn#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardLoggingIn/VB/createuserwizardlogginginvb.aspx#1)]  
   
  ]]></format>
         </remarks>

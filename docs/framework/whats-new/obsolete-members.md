@@ -1,20 +1,16 @@
 ---
 title: "Obsolete Members in the .NET Framework"
-ms.custom: ""
+ms.custom: "updateeachrelease"
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - ".NET Framework 4.5, obsolete members"
   - "members, obsolete in .NET Framework 4.5"
   - "obsolete members [.NET Framework]"
 ms.assetid: 0ee25062-4071-4d3c-a552-87a75d3ecd34
-caps.latest.revision: 56
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

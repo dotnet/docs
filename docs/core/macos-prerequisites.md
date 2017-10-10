@@ -30,7 +30,7 @@ See [.NET Core 2.x Supported OS Versions](https://github.com/dotnet/core/blob/ma
 .NET Core 1.x is supported on the following versions of macOS:
 
 * macOS 10.12 "Sierra"
-* macOS 10.11 "El Capitan" (.NET Core 1.x only)
+* macOS 10.11 "El Capitan"
 
 See [.NET Core 1.x Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/1.0/1.0-supported-os.md) for the complete list of .NET Core 1.x supported operating systems, out of support OS versions, and lifecycle policy links.
 

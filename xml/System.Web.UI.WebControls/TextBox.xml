@@ -278,8 +278,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[TextBox Constructor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TextBox Constructor/CS/textboxctorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TextBox Constructor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TextBox Constructor/VB/textboxctorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TextBox Constructor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TextBox Constructor/CS/textboxctorcs.aspx#1)]
+ [!code-aspx-vb[TextBox Constructor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TextBox Constructor/VB/textboxctorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -317,8 +317,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomTextBoxAddAttributesToRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxAddAttributesToRender/CS/custom_textbox_addattributestorendercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomTextBoxAddAttributesToRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxAddAttributesToRender/VB/custom_textbox_addattributestorendervb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomTextBoxAddAttributesToRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxAddAttributesToRender/CS/custom_textbox_addattributestorendercs.aspx#1)]
+ [!code-aspx-vb[CustomTextBoxAddAttributesToRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxAddAttributesToRender/VB/custom_textbox_addattributestorendervb.aspx#1)]  
   
  [!code-csharp[CustomTextBoxAddAttributesToRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxAddAttributesToRender/CS/custom_textbox_addattributestorender.cs#2)]
  [!code-vb[CustomTextBoxAddAttributesToRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxAddAttributesToRender/VB/custom_textbox_addattributestorender.vb#2)]  
@@ -354,8 +354,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomTextBoxAddParsedSubObject#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxAddParsedSubObject/CS/custom_textbox_addparsedsubobjectcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomTextBoxAddParsedSubObject#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxAddParsedSubObject/VB/custom_textbox_addparsedsubobjectvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomTextBoxAddParsedSubObject#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxAddParsedSubObject/CS/custom_textbox_addparsedsubobjectcs.aspx#1)]
+ [!code-aspx-vb[CustomTextBoxAddParsedSubObject#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxAddParsedSubObject/VB/custom_textbox_addparsedsubobjectvb.aspx#1)]  
   
  [!code-csharp[CustomTextBoxAddParsedSubObject#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxAddParsedSubObject/CS/custom_textbox_addparsedsubobject.cs#2)]
  [!code-vb[CustomTextBoxAddParsedSubObject#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxAddParsedSubObject/VB/custom_textbox_addparsedsubobject.vb#2)]  
@@ -414,8 +414,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[AutoCompleteType#1](~/samples/snippets/csharp/VS_Snippets_WebNet/AutoCompleteType/CS/AutoCompleteTypecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[AutoCompleteType#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/AutoCompleteType/VB/AutoCompleteTypevb.aspx#1)]  -->  
+ [!code-aspx-csharp[AutoCompleteType#1](~/samples/snippets/csharp/VS_Snippets_WebNet/AutoCompleteType/CS/AutoCompleteTypecs.aspx#1)]
+ [!code-aspx-vb[AutoCompleteType#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/AutoCompleteType/VB/AutoCompleteTypevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -465,8 +465,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[TextBoxAutoPostBack#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TextBoxAutoPostBack/CS/textboxautopostbackcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TextBoxAutoPostBack#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TextBoxAutoPostBack/VB/textboxautopostbackvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TextBoxAutoPostBack#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TextBoxAutoPostBack/CS/textboxautopostbackcs.aspx#1)]
+ [!code-aspx-vb[TextBoxAutoPostBack#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TextBoxAutoPostBack/VB/textboxautopostbackvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -541,8 +541,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[TextBox#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TextBox/CS/textboxcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TextBox#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TextBox/VB/textboxvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TextBox#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TextBox/CS/textboxcs.aspx#1)]
+ [!code-aspx-vb[TextBox#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TextBox/VB/textboxvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -758,8 +758,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomTextBoxOnPreRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxOnPreRender/CS/custom_textbox_onprerendercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomTextBoxOnPreRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxOnPreRender/VB/custom_textbox_onprerendervb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomTextBoxOnPreRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxOnPreRender/CS/custom_textbox_onprerendercs.aspx#1)]
+ [!code-aspx-vb[CustomTextBoxOnPreRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxOnPreRender/VB/custom_textbox_onprerendervb.aspx#1)]  
   
  [!code-csharp[CustomTextBoxOnPreRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxOnPreRender/CS/custom_textbox_onprerender.cs#2)]
  [!code-vb[CustomTextBoxOnPreRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxOnPreRender/VB/custom_textbox_onprerender.vb#2)]  
@@ -807,8 +807,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomTextBoxOnTextChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxOnTextChanged/CS/custom_textbox_ontextchangedcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomTextBoxOnTextChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxOnTextChanged/VB/custom_textbox_ontextchangedvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomTextBoxOnTextChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxOnTextChanged/CS/custom_textbox_ontextchangedcs.aspx#1)]
+ [!code-aspx-vb[CustomTextBoxOnTextChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxOnTextChanged/VB/custom_textbox_ontextchangedvb.aspx#1)]  
   
  [!code-csharp[CustomTextBoxOnTextChanged#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxOnTextChanged/CS/custom_textbox_ontextchanged.cs#2)]
  [!code-vb[CustomTextBoxOnTextChanged#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxOnTextChanged/VB/custom_textbox_ontextchanged.vb#2)]  
@@ -891,8 +891,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[TextBoxMultiLine#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TextBoxMultiLine/CS/multilinetextboxcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TextBoxMultiLine#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TextBoxMultiLine/VB/multilinetextboxvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TextBoxMultiLine#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TextBoxMultiLine/CS/multilinetextboxcs.aspx#1)]
+ [!code-aspx-vb[TextBoxMultiLine#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TextBoxMultiLine/VB/multilinetextboxvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -932,8 +932,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomTextBoxRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxRender/CS/custom_textbox_rendercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomTextBoxRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxRender/VB/custom_textbox_rendervb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomTextBoxRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxRender/CS/custom_textbox_rendercs.aspx#1)]
+ [!code-aspx-vb[CustomTextBoxRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxRender/VB/custom_textbox_rendervb.aspx#1)]  
   
  [!code-csharp[CustomTextBoxRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxRender/CS/custom_textbox_render.cs#2)]
  [!code-vb[CustomTextBoxRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxRender/VB/custom_textbox_render.vb#2)]  
@@ -984,8 +984,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[TextBoxMultiLine#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TextBoxMultiLine/CS/multilinetextboxcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TextBoxMultiLine#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TextBoxMultiLine/VB/multilinetextboxvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TextBoxMultiLine#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TextBoxMultiLine/CS/multilinetextboxcs.aspx#1)]
+ [!code-aspx-vb[TextBoxMultiLine#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TextBoxMultiLine/VB/multilinetextboxvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1104,8 +1104,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomTextBoxTagKey#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxTagKey/CS/custom_textbox_tagkeycs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomTextBoxTagKey#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxTagKey/VB/custom_textbox_tagkeyvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomTextBoxTagKey#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxTagKey/CS/custom_textbox_tagkeycs.aspx#1)]
+ [!code-aspx-vb[CustomTextBoxTagKey#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxTagKey/VB/custom_textbox_tagkeyvb.aspx#1)]  
   
  [!code-csharp[CustomTextBoxTagKey#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxTagKey/CS/custom_textbox_tagkey.cs#2)]
  [!code-vb[CustomTextBoxTagKey#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxTagKey/VB/custom_textbox_tagkey.vb#2)]  
@@ -1363,8 +1363,8 @@ protected void TextBox1_TextChanged(object sender, EventArgs e)
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[TextBoxMultiLine#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TextBoxMultiLine/CS/multilinetextboxcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TextBoxMultiLine#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TextBoxMultiLine/VB/multilinetextboxvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TextBoxMultiLine#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TextBoxMultiLine/CS/multilinetextboxcs.aspx#1)]
+ [!code-aspx-vb[TextBoxMultiLine#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TextBoxMultiLine/VB/multilinetextboxvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1446,8 +1446,8 @@ protected void TextBox1_TextChanged(object sender, EventArgs e)
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[TextBoxMultiLine#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TextBoxMultiLine/CS/multilinetextboxcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TextBoxMultiLine#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TextBoxMultiLine/VB/multilinetextboxvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TextBoxMultiLine#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TextBoxMultiLine/CS/multilinetextboxcs.aspx#1)]
+ [!code-aspx-vb[TextBoxMultiLine#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TextBoxMultiLine/VB/multilinetextboxvb.aspx#1)]  
   
  ]]></format>
         </remarks>

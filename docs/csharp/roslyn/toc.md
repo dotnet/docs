@@ -8,12 +8,16 @@
 ### Deploy your analyzer as a NuGet package
 -->
 
+<!--
 ## Tutorials
+-->
 <!-- Taken from https://github.com/dotnet/roslyn/wiki/Samples-and-Walkthroughs -->
+<!--
 ### Get started with syntax analysis
 ### Get started with semantic analysis
 ### Get started with Syntax transformation
 ### Get started writing custom analyzers and code fixes
+-->
 
 <!--
 # Samples
@@ -28,12 +32,8 @@
 ### Make const
 -->
 
-<!--
-## Concepts
--->
-<!-- Good Stuff here: https://github.com/dotnet/roslyn/wiki/Roslyn%20Overview -->
-<!--
-### Compiler pipeline functional areas
+## [Concepts](concepts/index.md)
+### [Exposing the compiler APIs](concepts/compiler-api-model.md)
 ### API layers
 #### Compiler APIs
 #### Workspace APIs

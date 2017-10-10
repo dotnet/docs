@@ -4,10 +4,11 @@ description: Learn to use the .NET Compile Platform SDK (also called the Roslyn 
 keywords: roslyn, analyzer, code fix
 author: billwagner
 ms.author: wiwagn
-ms.date:10/10/2017
+ms.date: 10/10/2017
 ms.topic: conceptual
 ms.prod: .net
-ms.devlang:devlang-csharp
+ms.devlang: devlang-csharp
+ms.custom: mvc
 ---
 
 # The .NET compiler platform SDK
@@ -84,12 +85,14 @@ learn accepted practices quickly and become productive earlier in their .NET
 journey. As these become more widely used, the community adopts these
 practices.
 
-<!--
-
-Turn this on as more of the conceptual content is in place:
 
 ## Next Steps
 
+- Read the [SDK Concepts](concepts/index.md) to learn the model for code, and understand the design of the APIs to query and manipulate a code base.
+
+<!--
+
+Turn this on as more of the conceptual content is in place:
 - Try the [Quickstarts](quickstart/index.md) to create your first tutorial.
 - Experiment with one of the [Tutorials](tutorials/index.md).
 - Explore the [Samples](samples/index.md) to see some simple analyzers.

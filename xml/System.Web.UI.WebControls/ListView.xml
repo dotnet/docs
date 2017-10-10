@@ -279,21 +279,21 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.ListView> control to display records from a database by using an HTML table. The values are retrieved by using a <xref:System.Web.UI.WebControls.LinqDataSource> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView_Simple#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView_Simple/CS/ListViewSimpleCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView_Simple#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView_Simple/VB/ListViewSimpleVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView_Simple#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView_Simple/CS/ListViewSimpleCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView_Simple#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView_Simple/VB/ListViewSimpleVB.aspx#1)]
   
  The following example shows how to use the <xref:System.Web.UI.WebControls.ListView> control to display values in a flow layout by using the `div` element. The values are retrieved by using a <xref:System.Web.UI.WebControls.SqlDataSource> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView_FlowLayout#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView_FlowLayout/CS/ListViewFlowLayoutCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView_FlowLayout#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView_FlowLayout/VB/ListViewFlowLayoutVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView_FlowLayout#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView_FlowLayout/CS/ListViewFlowLayoutCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView_FlowLayout#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView_FlowLayout/VB/ListViewFlowLayoutVB.aspx#1)]
   
  The following example shows how to use the <xref:System.Web.UI.WebControls.ListView> control to insert, delete, and update records.  
   
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView_Edit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView_Edit/CS/ListViewEditCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView_Edit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView_Edit/VB/ListViewEditVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView_Edit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView_Edit/CS/ListViewEditCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView_Edit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView_Edit/VB/ListViewEditVB.aspx#1)]
   
  ]]></format>
     </remarks>
@@ -446,8 +446,8 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.ListView.AlternatingItemTemplate%2A> template to define the style for alternating data items in a <xref:System.Web.UI.WebControls.ListView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.AlternatingItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.AlternatingItemTemplate/CS/ListViewAlternatingItemTemplateCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.AlternatingItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.AlternatingItemTemplate/VB/ListViewAlternatingItemTemplateVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.AlternatingItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.AlternatingItemTemplate/CS/ListViewAlternatingItemTemplateCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.AlternatingItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.AlternatingItemTemplate/VB/ListViewAlternatingItemTemplateVB.aspx#1)]
   
  ]]></format>
         </remarks>
@@ -1244,8 +1244,8 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.ListView.DataKeyNames%2A> property to specify the key field of the data source.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListViewItemCommand#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemCommand/CS/ListViewItemCommandCS.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListViewItemCommand#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemCommand/VB/ListViewItemCommandVB.aspx#3)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListViewItemCommand#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemCommand/CS/ListViewItemCommandCS.aspx#3)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListViewItemCommand#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemCommand/VB/ListViewItemCommandVB.aspx#3)]
   
  ]]></format>
         </remarks>
@@ -1327,8 +1327,8 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.ListView.DeleteItem%2A> method to programmatically delete the selected item in a <xref:System.Web.UI.WebControls.ListView> control from the data source.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.DeleteItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.DeleteItem/CS/ListViewDeleteItemCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.DeleteItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.DeleteItem/VB/ListViewDeleteItemVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.DeleteItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.DeleteItem/CS/ListViewDeleteItemCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.DeleteItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.DeleteItem/VB/ListViewDeleteItemVB.aspx#1)]
   
  ]]></format>
         </remarks>
@@ -1462,8 +1462,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.ItemEditing#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemEditing/CS/ListViewItemEditingCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.ItemEditing#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemEditing/VB/ListViewItemEditingVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.ItemEditing#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemEditing/CS/ListViewItemEditingCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.ItemEditing#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemEditing/VB/ListViewItemEditingVB.aspx#1)]
   
  ]]></format>
         </remarks>
@@ -1521,8 +1521,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.EditItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.EditItemTemplate/CS/ListViewEditItemTemplateCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.EditItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.EditItemTemplate/VB/ListViewEditItemTemplateVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.EditItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.EditItemTemplate/CS/ListViewEditItemTemplateCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.EditItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.EditItemTemplate/VB/ListViewEditItemTemplateVB.aspx#1)]
   
  ]]></format>
         </remarks>
@@ -1570,8 +1570,8 @@
 ## Examples  
  The following example shows how to define a custom template for the empty template.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.EmptyDataTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.EmptyDataTemplate/CS/ListViewEmptyDataTemplateCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.EmptyDataTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.EmptyDataTemplate/VB/ListViewEmptyDataTemplateVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.EmptyDataTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.EmptyDataTemplate/CS/ListViewEmptyDataTemplateCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.EmptyDataTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.EmptyDataTemplate/VB/ListViewEmptyDataTemplateVB.aspx#1)]
   
  ]]></format>
         </remarks>
@@ -1619,8 +1619,8 @@
 ## Examples  
  The following example shows how to define a custom template for the empty item.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.EmptyItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.EmptyItemTemplate/CS/ListViewEmptyItemTemplateCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.EmptyItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.EmptyItemTemplate/VB/ListViewEmptyItemTemplateVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.EmptyItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.EmptyItemTemplate/CS/ListViewEmptyItemTemplateCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.EmptyItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.EmptyItemTemplate/VB/ListViewEmptyItemTemplateVB.aspx#1)]
   
  ]]></format>
         </remarks>
@@ -1898,8 +1898,8 @@
 ## Examples  
  The following example shows how to create a tiled layout in the <xref:System.Web.UI.WebControls.ListView> control by using the <xref:System.Web.UI.WebControls.ListView.GroupItemCount%2A> property. It also shows how to change this property programmatically.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.GroupItemCount#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.GroupItemCount/CS/ListViewGroupItemCountCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.GroupItemCount#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.GroupItemCount/VB/ListViewGroupItemCountVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.GroupItemCount#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.GroupItemCount/CS/ListViewGroupItemCountCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.GroupItemCount#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.GroupItemCount/VB/ListViewGroupItemCountVB.aspx#1)]
   
  ]]></format>
         </remarks>
@@ -1940,8 +1940,8 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.ListView.GroupPlaceholderID%2A> property to specify a different ID for the group placeholder of the <xref:System.Web.UI.WebControls.ListView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.ItemContainerID#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemContainerID/CS/ListViewItemContainerIDCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.ItemContainerID#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemContainerID/VB/ListViewItemContainerIDVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.ItemContainerID#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemContainerID/CS/ListViewItemContainerIDCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.ItemContainerID#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemContainerID/VB/ListViewItemContainerIDVB.aspx#1)]
   
  ]]></format>
         </remarks>
@@ -1992,8 +1992,8 @@
 ## Examples  
  The following example shows how to create a group separator in the <xref:System.Web.UI.WebControls.ListView> control by using the <xref:System.Web.UI.WebControls.ListView.GroupSeparatorTemplate%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.GroupTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.GroupTemplate/CS/ListViewGroupTemplateCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.GroupTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.GroupTemplate/VB/ListViewGroupTemplateVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.GroupTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.GroupTemplate/CS/ListViewGroupTemplateCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.GroupTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.GroupTemplate/VB/ListViewGroupTemplateVB.aspx#1)]
   
  ]]></format>
         </remarks>
@@ -2043,8 +2043,8 @@
 ## Examples  
  The following example shows how to create a tiled layout in the <xref:System.Web.UI.WebControls.ListView> control by using the <xref:System.Web.UI.WebControls.ListView.GroupTemplate%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.GroupTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.GroupTemplate/CS/ListViewGroupTemplateCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.GroupTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.GroupTemplate/VB/ListViewGroupTemplateVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.GroupTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.GroupTemplate/CS/ListViewGroupTemplateCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.GroupTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.GroupTemplate/VB/ListViewGroupTemplateVB.aspx#1)]
   
  ]]></format>
         </remarks>
@@ -2127,8 +2127,8 @@
 > [!IMPORTANT]
 >  This example contains text boxes that accept user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.InsertItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.InsertItem/CS/ListViewInsertItemCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.InsertItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.InsertItem/VB/ListViewInsertItemVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.InsertItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.InsertItem/CS/ListViewInsertItemCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.InsertItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.InsertItem/VB/ListViewInsertItemVB.aspx#1)]
   
  ]]></format>
         </remarks>
@@ -2177,8 +2177,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.ItemInserted#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/CS/ListViewItemInsertedCS.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.ItemInserted#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/VB/ListViewItemInsertedVB.aspx#2)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.ItemInserted#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/CS/ListViewItemInsertedCS.aspx#2)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.ItemInserted#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/VB/ListViewItemInsertedVB.aspx#2)]
   
  ]]></format>
         </remarks>
@@ -2240,8 +2240,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.ItemInserted#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/CS/ListViewItemInsertedCS.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.ItemInserted#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/VB/ListViewItemInsertedVB.aspx#2)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.ItemInserted#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/CS/ListViewItemInsertedCS.aspx#2)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.ItemInserted#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/VB/ListViewItemInsertedVB.aspx#2)]
   
  ]]></format>
         </remarks>
@@ -2325,8 +2325,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.InsertNewItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.InsertNewItem/CS/ListViewInsertNewItemCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.InsertNewItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.InsertNewItem/VB/ListViewInsertNewItemVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.InsertNewItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.InsertNewItem/CS/ListViewInsertNewItemCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.InsertNewItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.InsertNewItem/VB/ListViewInsertNewItemVB.aspx#1)]
   
  ]]></format>
         </remarks>
@@ -2609,8 +2609,8 @@
 > [!IMPORTANT]
 >  This example contains text boxes that accept user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.ItemCanceling#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemCanceling/CS/ListViewItemCancelingCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.ItemCanceling#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemCanceling/VB/ListViewItemCancelingVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.ItemCanceling#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemCanceling/CS/ListViewItemCancelingCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.ItemCanceling#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemCanceling/VB/ListViewItemCancelingVB.aspx#1)]
   
  ]]></format>
         </remarks>
@@ -2664,8 +2664,8 @@
 ## Examples  
  The following example shows how to create an <xref:System.Web.UI.WebControls.ListView.ItemCommand> event handler.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListViewItemCommand#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemCommand/CS/ListViewItemCommandCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListViewItemCommand#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemCommand/VB/ListViewItemCommandVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListViewItemCommand#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemCommand/CS/ListViewItemCommandCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListViewItemCommand#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemCommand/VB/ListViewItemCommandVB.aspx#1)]
   
  ]]></format>
         </remarks>
@@ -2738,8 +2738,8 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.ListView.ItemDataBound> event.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.ItemDataBound#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemDataBound/CS/ListViewItemDataBoundCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.ItemDataBound#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemDataBound/VB/ListViewItemDataBoundVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.ItemDataBound#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemDataBound/CS/ListViewItemDataBoundCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.ItemDataBound#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemDataBound/VB/ListViewItemDataBoundVB.aspx#1)]
   
  ]]></format>
         </remarks>
@@ -2779,8 +2779,8 @@
 ## Examples  
  The following example shows how to add an event handler for the <xref:System.Web.UI.WebControls.ListView.ItemDeleted> event.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListViewDeletedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewDeletedEventArgs/CS/ListViewDeletedEventArgsCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListViewDeletedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewDeletedEventArgs/VB/ListViewDeletedEventArgsVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListViewDeletedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewDeletedEventArgs/CS/ListViewDeletedEventArgsCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListViewDeletedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewDeletedEventArgs/VB/ListViewDeletedEventArgsVB.aspx#1)]
   
  ]]></format>
         </remarks>
@@ -2820,8 +2820,8 @@
 ## Examples  
  The following example shows how to declaratively add an event handler for the <xref:System.Web.UI.WebControls.ListView.ItemDeleting> event.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListViewItemDeleting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemDeleting/CS/ListViewItemItemDeletingCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListViewItemDeleting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemDeleting/VB/ListViewItemItemDeletingVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListViewItemDeleting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemDeleting/CS/ListViewItemItemDeletingCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListViewItemDeleting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemDeleting/VB/ListViewItemItemDeletingVB.aspx#1)]
   
  ]]></format>
         </remarks>
@@ -2864,8 +2864,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.ItemEditing#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemEditing/CS/ListViewItemEditingCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.ItemEditing#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemEditing/VB/ListViewItemEditingVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.ItemEditing#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemEditing/CS/ListViewItemEditingCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.ItemEditing#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemEditing/VB/ListViewItemEditingVB.aspx#1)]
   
  ]]></format>
         </remarks>
@@ -2910,8 +2910,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.ItemInserted#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/CS/ListViewItemInsertedCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.ItemInserted#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/VB/ListViewItemInsertedVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.ItemInserted#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/CS/ListViewItemInsertedCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.ItemInserted#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/VB/ListViewItemInsertedVB.aspx#1)]
   
  ]]></format>
         </remarks>
@@ -2954,8 +2954,8 @@
 > [!IMPORTANT]
 >  This example contains controls that accept user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.ItemInserting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserting/CS/ListViewItemInsertingCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.ItemInserting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserting/VB/ListViewItemInsertingVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.ItemInserting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserting/CS/ListViewItemInsertingCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.ItemInserting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserting/VB/ListViewItemInsertingVB.aspx#1)]
   
  ]]></format>
         </remarks>
@@ -2995,8 +2995,8 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.ListView.ItemPlaceholderID%2A> property to specify an ID for the item placeholder of the <xref:System.Web.UI.WebControls.ListView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.ItemContainerID#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemContainerID/CS/ListViewItemContainerIDCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.ItemContainerID#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemContainerID/VB/ListViewItemContainerIDVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.ItemContainerID#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemContainerID/CS/ListViewItemContainerIDCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.ItemContainerID#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemContainerID/VB/ListViewItemContainerIDVB.aspx#1)]
   
  ]]></format>
         </remarks>
@@ -3086,8 +3086,8 @@
 ## Examples  
  The following example shows how to create an item separator in the <xref:System.Web.UI.WebControls.ListView> control by using the <xref:System.Web.UI.WebControls.ListView.ItemSeparatorTemplate%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.GroupTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.GroupTemplate/CS/ListViewGroupTemplateCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.GroupTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.GroupTemplate/VB/ListViewGroupTemplateVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.GroupTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.GroupTemplate/CS/ListViewGroupTemplateCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.GroupTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.GroupTemplate/VB/ListViewGroupTemplateVB.aspx#1)]
   
  ]]></format>
         </remarks>
@@ -3146,8 +3146,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.EditItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.EditItemTemplate/CS/ListViewEditItemTemplateCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.EditItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.EditItemTemplate/VB/ListViewEditItemTemplateVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.EditItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.EditItemTemplate/CS/ListViewEditItemTemplateCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.EditItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.EditItemTemplate/VB/ListViewEditItemTemplateVB.aspx#1)]
   
  ]]></format>
         </remarks>
@@ -3190,8 +3190,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.ItemUpdated#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemUpdated/CS/ListViewItemUpdatedCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.ItemUpdated#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemUpdated/VB/ListViewItemUpdatedVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.ItemUpdated#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemUpdated/CS/ListViewItemUpdatedCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.ItemUpdated#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemUpdated/VB/ListViewItemUpdatedVB.aspx#1)]
   
  ]]></format>
         </remarks>
@@ -3236,8 +3236,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.ItemUpdating#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemUpdating/CS/ListViewItemUpdatingCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.ItemUpdating#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemUpdating/VB/ListViewItemUpdatingVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.ItemUpdating#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemUpdating/CS/ListViewItemUpdatingCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.ItemUpdating#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemUpdating/VB/ListViewItemUpdatingVB.aspx#1)]
   
  ]]></format>
         </remarks>
@@ -3323,8 +3323,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.EditItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.EditItemTemplate/CS/ListViewEditItemTemplateCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.EditItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.EditItemTemplate/VB/ListViewEditItemTemplateVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.EditItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.EditItemTemplate/CS/ListViewEditItemTemplateCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.EditItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.EditItemTemplate/VB/ListViewEditItemTemplateVB.aspx#1)]
   
  The following example shows how to use the <xref:System.Web.UI.WebControls.ListView> control without defining a <xref:System.Web.UI.WebControls.ListView.LayoutTemplate%2A> template in the control. A server control with a known ID is also not specified.  
   
@@ -4249,8 +4249,8 @@
 ## Examples  
  The following example shows how create an event handler for the <xref:System.Web.UI.WebControls.ListView.PagePropertiesChanging> event.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.DeleteItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.DeleteItem/CS/ListViewDeleteItemCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.DeleteItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.DeleteItem/VB/ListViewDeleteItemVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.DeleteItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.DeleteItem/CS/ListViewDeleteItemCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.DeleteItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.DeleteItem/VB/ListViewDeleteItemVB.aspx#1)]
   
  ]]></format>
         </remarks>
@@ -4464,8 +4464,8 @@
 ## Examples  
  The following example shows how to use the second key field as a parameter in a master/detail scenario. A <xref:System.Web.UI.WebControls.ListView> control is used to display records from the Product Inventory table of the AdventureWorks database. When an item is selected in the <xref:System.Web.UI.WebControls.ListView> control, the details of the product are displayed in another <xref:System.Web.UI.WebControls.ListView> control. ProductID is the second key name in the first <xref:System.Web.UI.WebControls.ListView> control. To access the second key, the code uses the value of `ProductInventoryListView.SelectedDataKey[1]` (`ProductInventoryListView.SelectedDataKey(1)` in Visual Basic) as the <xref:System.Web.UI.WebControls.ControlParameter.PropertyName%2A> for the <xref:System.Web.UI.WebControls.ControlParameter> object. This parameter object is in turn used by the <xref:System.Web.UI.WebControls.SqlDataSource> control that the second <xref:System.Web.UI.WebControls.ListView> control is bound to.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.SelectedDataKey#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SelectedDataKey/CS/ListViewSelectedDataKeyCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.SelectedDataKey#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SelectedDataKey/VB/ListViewSelectedDataKeyVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.SelectedDataKey#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SelectedDataKey/CS/ListViewSelectedDataKeyCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.SelectedDataKey#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SelectedDataKey/VB/ListViewSelectedDataKeyVB.aspx#1)]
   
  ]]></format>
         </remarks>
@@ -4546,8 +4546,8 @@
 ## Examples  
  The following example shows how create an event handler for the <xref:System.Web.UI.WebControls.ListView.SelectedIndexChanged> event.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.SelectedIndexChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SelectedIndexChanged/CS/ListViewItemSelectedIndexChanged2CS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.SelectedIndexChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SelectedIndexChanged/VB/ListViewItemSelectedIndexChanged2VB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.SelectedIndexChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SelectedIndexChanged/CS/ListViewItemSelectedIndexChanged2CS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.SelectedIndexChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SelectedIndexChanged/VB/ListViewItemSelectedIndexChanged2VB.aspx#1)]
   
  ]]></format>
         </remarks>
@@ -4590,8 +4590,8 @@
 ## Examples  
  The following example shows how create an event handler for the <xref:System.Web.UI.WebControls.ListView.SelectedIndexChanging> event.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.SelectedIndexChanging#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SelectedIndexChanging/CS/ListViewItemSelectedIndexChangingCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.SelectedIndexChanging#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SelectedIndexChanging/VB/ListViewItemSelectedIndexChangingVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.SelectedIndexChanging#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SelectedIndexChanging/CS/ListViewItemSelectedIndexChangingCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.SelectedIndexChanging#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SelectedIndexChanging/VB/ListViewItemSelectedIndexChangingVB.aspx#1)]
   
  ]]></format>
         </remarks>
@@ -4646,8 +4646,8 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.ListView.SelectedItemTemplate%2A> property to define the contents of the selected item in the <xref:System.Web.UI.WebControls.ListView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListViewItemDeleting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemDeleting/CS/ListViewItemItemDeletingCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListViewItemDeleting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemDeleting/VB/ListViewItemItemDeletingVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListViewItemDeleting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemDeleting/CS/ListViewItemItemDeletingCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListViewItemDeleting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemDeleting/VB/ListViewItemItemDeletingVB.aspx#1)]
   
  ]]></format>
         </remarks>
@@ -4714,13 +4714,13 @@
 ## Examples  
  The following example shows how to use the first key field as a parameter in a master/detail scenario. When an item is selected in the <xref:System.Web.UI.WebControls.ListView> control, the <xref:System.Web.UI.WebControls.ListView.SelectedValue%2A> property is used as the <xref:System.Web.UI.WebControls.ControlParameter.PropertyName%2A> for the <xref:System.Web.UI.WebControls.ControlParameter> object. This parameter object is in turn used by the <xref:System.Web.UI.WebControls.SqlDataSource> control that the second <xref:System.Web.UI.WebControls.ListView> control is bound to.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListViewItemDeleting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemDeleting/CS/ListViewItemItemDeletingCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListViewItemDeleting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemDeleting/VB/ListViewItemItemDeletingVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListViewItemDeleting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemDeleting/CS/ListViewItemItemDeletingCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListViewItemDeleting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemDeleting/VB/ListViewItemItemDeletingVB.aspx#1)]
   
  The following example shows how to use the <xref:System.Web.UI.WebControls.ListView.SelectedValue%2A> property to determine the value of the key field.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.SelectedValue#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SelectedValue/CS/ListViewSelectedValueCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.SelectedValue#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SelectedValue/VB/ListViewSelectedValueVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.SelectedValue#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SelectedValue/CS/ListViewSelectedValueCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.SelectedValue#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SelectedValue/VB/ListViewSelectedValueVB.aspx#1)]
   
  ]]></format>
         </remarks>
@@ -4852,8 +4852,8 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.ListView.Sort%2A> method to programmatically sort the <xref:System.Web.UI.WebControls.ListView> control by multiple data fields.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.Sort#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.Sort/CS/ListViewSortCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.Sort#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.Sort/VB/ListViewSortVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.Sort#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.Sort/CS/ListViewSortCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.Sort#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.Sort/VB/ListViewSortVB.aspx#1)]
   
  ]]></format>
         </remarks>
@@ -4900,8 +4900,8 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.ListView.SortDirection%2A> property to programmatically determine the sort direction of a <xref:System.Web.UI.WebControls.ListView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.SortDirection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SortDirection/CS/ListViewSortCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.SortDirection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SortDirection/VB/ListViewSortVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.SortDirection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SortDirection/CS/ListViewSortCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.SortDirection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SortDirection/VB/ListViewSortVB.aspx#1)]
   
  ]]></format>
         </remarks>
@@ -4972,8 +4972,8 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.ListView.SortExpression%2A> property to programmatically determine the column that is being sorted in a <xref:System.Web.UI.WebControls.ListView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.SortDirection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SortDirection/CS/ListViewSortCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.SortDirection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SortDirection/VB/ListViewSortVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.SortDirection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SortDirection/CS/ListViewSortCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.SortDirection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.SortDirection/VB/ListViewSortVB.aspx#1)]
   
  ]]></format>
         </remarks>
@@ -5013,8 +5013,8 @@
 ## Examples  
  The following example shows how create an event handler for the <xref:System.Web.UI.WebControls.ListView.Sorting> event.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.Sorting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.Sorting/CS/ListViewSortingCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.Sorting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.Sorting/VB/ListViewSortingVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.Sorting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.Sorting/CS/ListViewSortingCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.Sorting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.Sorting/VB/ListViewSortingVB.aspx#1)]
   
  ]]></format>
         </remarks>
@@ -5541,8 +5541,8 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.ListView.UpdateItem%2A> method to programmatically update a <xref:System.Web.UI.WebControls.ListView> item in the data source.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.UpdateItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.UpdateItem/CS/ListViewUpdateItemCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.UpdateItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.UpdateItem/VB/ListViewUpdateItemVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.UpdateItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.UpdateItem/CS/ListViewUpdateItemCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.UpdateItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.UpdateItem/VB/ListViewUpdateItemVB.aspx#1)]
   
  ]]></format>
         </remarks>

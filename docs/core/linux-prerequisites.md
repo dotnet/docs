@@ -58,33 +58,35 @@ See [.NET Core 1.x Supported OS Versions](https://github.com/dotnet/core/blob/ma
 
 ## Linux distribution dependencies
 
+The following are intended to be examples. The exact versions and names may vary slightly on your Linux distribution of choice.
+
 ### Ubuntu
 
 Ubuntu distributions require the following libraries installed:
 
 * libunwind8
-* libunwind8-dev
-* gettext
-* libicu-dev
-* liblttng-ust-dev
-* libcurl4-openssl-dev
-* libssl-dev
-* uuid-dev
-* unzip
+* liblttng-ust0
+* libcurl3
+* libssl1.0.0
+* libuuid1
+* libkrb5
+* zlib1g
+* libicu52 (for 14.X)
+* libicu55 (for 16.X)
+* libicu57 (for 17.X)
 
 ### CentOS
 
 CentOS distributions require the following libraries installed:
 
-* deltarpm
-* epel-release
-* unzip
 * libunwind
-* gettext
-* libcurl-devel
-* openssl-devel
+* lttng-ust
+* libcurl
+* openssl-libs
+* libuuid
+* krb5-libs
+* libicu
 * zlib
-* libicu-devel
 
 For more information about the dependencies, see [Self-contained Linux applications](https://github.com/dotnet/core/blob/master/Documentation/self-contained-linux-apps.md).
 

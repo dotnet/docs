@@ -29,8 +29,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewCancelEditEventArgs> object passed to the event-handling method to determine the index of the row containing the Cancel button clicked by the user.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowCancellingEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowCancellingEdit/CS/gridviewrowcancellingeditcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowCancellingEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowCancellingEdit/VB/gridviewrowcancellingeditvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRowCancellingEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowCancellingEdit/CS/gridviewrowcancellingeditcs.aspx#1)]
+ [!code-aspx-vb[GridViewRowCancellingEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowCancellingEdit/VB/gridviewrowcancellingeditvb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -96,8 +96,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewCancelEditEventArgs.RowIndex%2A> property to determine the index of the row containing the Cancel button clicked by the user.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowCancellingEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowCancellingEdit/CS/gridviewrowcancellingeditcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowCancellingEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowCancellingEdit/VB/gridviewrowcancellingeditvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRowCancellingEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowCancellingEdit/CS/gridviewrowcancellingeditcs.aspx#1)]
+ [!code-aspx-vb[GridViewRowCancellingEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowCancellingEdit/VB/gridviewrowcancellingeditvb.aspx#1)]  
   
  ]]></format>
         </remarks>

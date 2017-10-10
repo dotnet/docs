@@ -15,7 +15,7 @@
     <form id="form1" runat="server">
     <div title="All Templates Sample">
       <asp:PasswordRecovery ID="PasswordRecovery1" runat="server">
-<%--<Snippet3>--%>
+<!-- <Snippet3> -->
         <QuestionTemplate>
           <table border="0" cellpadding="1">
             <tr>
@@ -67,8 +67,8 @@
             </tr>
           </table>
         </QuestionTemplate>
-<%--</Snippet3>--%>
-<%--<Snippet2>--%>
+<!-- </Snippet3> -->
+<!-- <Snippet2> -->
         <UserNameTemplate>
           <table border="0" cellpadding="1">
             <tr>
@@ -106,7 +106,7 @@
             </tr>
           </table>
         </UserNameTemplate>
-<%--</Snippet2>--%>
+<!-- </Snippet2> -->
         <SuccessTemplate>
           <table border="0" cellpadding="1">
             <tr>

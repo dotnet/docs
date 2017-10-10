@@ -210,8 +210,8 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[DataList#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataList/CS/datalistcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataList#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataList/VB/datalistvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataList#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataList/CS/datalistcs.aspx#1)]
+ [!code-aspx-vb[DataList#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataList/VB/datalistvb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -302,8 +302,8 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListItemStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListItemStyle/CS/datalistitemstylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListItemStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListItemStyle/VB/datalistitemstylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListItemStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListItemStyle/CS/datalistitemstylecs.aspx#1)]
+ [!code-aspx-vb[DataListItemStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListItemStyle/VB/datalistitemstylevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -357,8 +357,8 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListAlternatingItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListAlternatingItemTemplate/CS/datalistaltitemtemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListAlternatingItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListAlternatingItemTemplate/VB/datalistaltitemtemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListAlternatingItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListAlternatingItemTemplate/CS/datalistaltitemtemplatecs.aspx#1)]
+ [!code-aspx-vb[DataListAlternatingItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListAlternatingItemTemplate/VB/datalistaltitemtemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -402,11 +402,11 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListEdit/CS/datalisteditcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListEdit/VB/datalisteditvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListEdit/CS/datalisteditcs.aspx#1)]
+ [!code-aspx-vb[DataListEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListEdit/VB/datalisteditvb.aspx#1)]  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListEdit2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListEdit2/CS/datalistedit2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListEdit2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListEdit2/VB/datalistedit2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListEdit2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListEdit2/CS/datalistedit2cs.aspx#1)]
+ [!code-aspx-vb[DataListEdit2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListEdit2/VB/datalistedit2vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -496,8 +496,8 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.DataList.CreateControlStyle%2A> method in a custom server control so that it always displays horizontal grid lines with no cell spacing in the <xref:System.Web.UI.WebControls.DataList> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomDataListCreateControlStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomDataListCreateControlStyle/CS/custom_datalist_createcontrolstylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomDataListCreateControlStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomDataListCreateControlStyle/VB/custom_datalist_createcontrolstylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomDataListCreateControlStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomDataListCreateControlStyle/CS/custom_datalist_createcontrolstylecs.aspx#1)]
+ [!code-aspx-vb[CustomDataListCreateControlStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomDataListCreateControlStyle/VB/custom_datalist_createcontrolstylevb.aspx#1)]  
 [!code-csharp[CustomDataListCreateControlStyle#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomDataListCreateControlStyle/CS/custom_datalist_createcontrolstyle.cs#2)]
 [!code-vb[CustomDataListCreateControlStyle#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomDataListCreateControlStyle/VB/custom_datalist_createcontrolstyle.vb#2)]  
   
@@ -573,11 +573,11 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListEdit/CS/datalisteditcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListEdit/VB/datalisteditvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListEdit/CS/datalisteditcs.aspx#1)]
+ [!code-aspx-vb[DataListEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListEdit/VB/datalisteditvb.aspx#1)]  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListEdit2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListEdit2/CS/datalistedit2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListEdit2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListEdit2/VB/datalistedit2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListEdit2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListEdit2/CS/datalistedit2cs.aspx#1)]
+ [!code-aspx-vb[DataListEdit2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListEdit2/VB/datalistedit2vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -645,11 +645,11 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListEdit/CS/datalisteditcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListEdit/VB/datalisteditvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListEdit/CS/datalisteditcs.aspx#1)]
+ [!code-aspx-vb[DataListEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListEdit/VB/datalisteditvb.aspx#1)]  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListEdit2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListEdit2/CS/datalistedit2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListEdit2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListEdit2/VB/datalistedit2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListEdit2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListEdit2/CS/datalistedit2cs.aspx#1)]
+ [!code-aspx-vb[DataListEdit2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListEdit2/VB/datalistedit2vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -723,8 +723,8 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListEdit/CS/datalisteditcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListEdit/VB/datalisteditvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListEdit/CS/datalisteditcs.aspx#1)]
+ [!code-aspx-vb[DataListEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListEdit/VB/datalisteditvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -786,8 +786,8 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListEdit/CS/datalisteditcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListEdit/VB/datalisteditvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListEdit/CS/datalisteditcs.aspx#1)]
+ [!code-aspx-vb[DataListEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListEdit/VB/datalisteditvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -841,8 +841,8 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListEdit/CS/datalisteditcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListEdit/VB/datalisteditvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListEdit/CS/datalisteditcs.aspx#1)]
+ [!code-aspx-vb[DataListEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListEdit/VB/datalisteditvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -893,8 +893,8 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic DataList.ExtractTemplateRows Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataList.ExtractTemplateRows Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic DataList.ExtractTemplateRows Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataList.ExtractTemplateRows Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic DataList.ExtractTemplateRows Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataList.ExtractTemplateRows Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic DataList.ExtractTemplateRows Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataList.ExtractTemplateRows Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -950,8 +950,8 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListHeaderStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListHeaderStyle/CS/datalistheaderstylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListHeaderStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListHeaderStyle/VB/datalistheaderstylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListHeaderStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListHeaderStyle/CS/datalistheaderstylecs.aspx#1)]
+ [!code-aspx-vb[DataListHeaderStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListHeaderStyle/VB/datalistheaderstylevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1010,8 +1010,8 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListHeaderStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListHeaderStyle/CS/datalistheaderstylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListHeaderStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListHeaderStyle/VB/datalistheaderstylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListHeaderStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListHeaderStyle/CS/datalistheaderstylecs.aspx#1)]
+ [!code-aspx-vb[DataListHeaderStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListHeaderStyle/VB/datalistheaderstylevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1061,8 +1061,8 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListLayout#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListLayout/CS/datalistlayoutcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListLayout#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListLayout/VB/datalistlayoutvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListLayout#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListLayout/CS/datalistlayoutcs.aspx#1)]
+ [!code-aspx-vb[DataListLayout#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListLayout/VB/datalistlayoutvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1116,8 +1116,8 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListHeaderStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListHeaderStyle/CS/datalistheaderstylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListHeaderStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListHeaderStyle/VB/datalistheaderstylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListHeaderStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListHeaderStyle/CS/datalistheaderstylecs.aspx#1)]
+ [!code-aspx-vb[DataListHeaderStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListHeaderStyle/VB/datalistheaderstylevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1174,8 +1174,8 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListLayout#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListLayout/CS/datalistlayoutcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListLayout#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListLayout/VB/datalistlayoutvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListLayout#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListLayout/CS/datalistlayoutcs.aspx#1)]
+ [!code-aspx-vb[DataListLayout#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListLayout/VB/datalistlayoutvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1243,11 +1243,11 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListItemCommand#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListItemCommand/CS/datalistitemcommandcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListItemCommand#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListItemCommand/VB/datalistitemcommandvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListItemCommand#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListItemCommand/CS/datalistitemcommandcs.aspx#1)]
+ [!code-aspx-vb[DataListItemCommand#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListItemCommand/VB/datalistitemcommandvb.aspx#1)]  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListItemCommand2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListItemCommand2/CS/datalistitemcommand2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListItemCommand2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListItemCommand2/VB/datalistitemcommand2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListItemCommand2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListItemCommand2/CS/datalistitemcommand2cs.aspx#1)]
+ [!code-aspx-vb[DataListItemCommand2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListItemCommand2/VB/datalistitemcommand2vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1285,11 +1285,11 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListItemCreated#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListItemCreated/CS/datalistitemcreatedcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListItemCreated#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListItemCreated/VB/datalistitemcreatedvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListItemCreated#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListItemCreated/CS/datalistitemcreatedcs.aspx#1)]
+ [!code-aspx-vb[DataListItemCreated#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListItemCreated/VB/datalistitemcreatedvb.aspx#1)]  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListItemCreated2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListItemCreated2/CS/datalistitemcreated2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListItemCreated2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListItemCreated2/VB/datalistitemcreated2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListItemCreated2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListItemCreated2/CS/datalistitemcreated2cs.aspx#1)]
+ [!code-aspx-vb[DataListItemCreated2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListItemCreated2/VB/datalistitemcreated2vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1325,11 +1325,11 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListItemDataBound#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListItemDataBound/CS/datalistitemdataboundcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListItemDataBound#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListItemDataBound/VB/datalistitemdataboundvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListItemDataBound#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListItemDataBound/CS/datalistitemdataboundcs.aspx#1)]
+ [!code-aspx-vb[DataListItemDataBound#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListItemDataBound/VB/datalistitemdataboundvb.aspx#1)]  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListItemDataBound2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListItemDataBound2/CS/datalistitemdatabound2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListItemDataBound2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListItemDataBound2/VB/datalistitemdatabound2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListItemDataBound2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListItemDataBound2/CS/datalistitemdatabound2cs.aspx#1)]
+ [!code-aspx-vb[DataListItemDataBound2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListItemDataBound2/VB/datalistitemdatabound2vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1375,8 +1375,8 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic DataList.Items Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataList.Items Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic DataList.Items Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataList.Items Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic DataList.Items Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataList.Items Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic DataList.Items Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataList.Items Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1439,8 +1439,8 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListItemStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListItemStyle/CS/datalistitemstylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListItemStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListItemStyle/VB/datalistitemstylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListItemStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListItemStyle/CS/datalistitemstylecs.aspx#1)]
+ [!code-aspx-vb[DataListItemStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListItemStyle/VB/datalistitemstylevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1496,8 +1496,8 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListLayout#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListLayout/CS/datalistlayoutcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListLayout#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListLayout/VB/datalistlayoutvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListLayout#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListLayout/CS/datalistlayoutcs.aspx#1)]
+ [!code-aspx-vb[DataListLayout#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListLayout/VB/datalistlayoutvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1601,11 +1601,11 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListEdit/CS/datalisteditcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListEdit/VB/datalisteditvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListEdit/CS/datalisteditcs.aspx#1)]
+ [!code-aspx-vb[DataListEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListEdit/VB/datalisteditvb.aspx#1)]  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListEdit2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListEdit2/CS/datalistedit2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListEdit2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListEdit2/VB/datalistedit2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListEdit2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListEdit2/CS/datalistedit2cs.aspx#1)]
+ [!code-aspx-vb[DataListEdit2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListEdit2/VB/datalistedit2vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1654,11 +1654,11 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListEdit/CS/datalisteditcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListEdit/VB/datalisteditvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListEdit/CS/datalisteditcs.aspx#1)]
+ [!code-aspx-vb[DataListEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListEdit/VB/datalisteditvb.aspx#1)]  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListEdit2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListEdit2/CS/datalistedit2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListEdit2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListEdit2/VB/datalistedit2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListEdit2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListEdit2/CS/datalistedit2cs.aspx#1)]
+ [!code-aspx-vb[DataListEdit2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListEdit2/VB/datalistedit2vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1710,11 +1710,11 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListEdit/CS/datalisteditcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListEdit/VB/datalisteditvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListEdit/CS/datalisteditcs.aspx#1)]
+ [!code-aspx-vb[DataListEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListEdit/VB/datalisteditvb.aspx#1)]  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListEdit2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListEdit2/CS/datalistedit2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListEdit2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListEdit2/VB/datalistedit2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListEdit2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListEdit2/CS/datalistedit2cs.aspx#1)]
+ [!code-aspx-vb[DataListEdit2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListEdit2/VB/datalistedit2vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1789,11 +1789,11 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListItemCommand#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListItemCommand/CS/datalistitemcommandcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListItemCommand#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListItemCommand/VB/datalistitemcommandvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListItemCommand#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListItemCommand/CS/datalistitemcommandcs.aspx#1)]
+ [!code-aspx-vb[DataListItemCommand#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListItemCommand/VB/datalistitemcommandvb.aspx#1)]  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListItemCommand2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListItemCommand2/CS/datalistitemcommand2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListItemCommand2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListItemCommand2/VB/datalistitemcommand2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListItemCommand2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListItemCommand2/CS/datalistitemcommand2cs.aspx#1)]
+ [!code-aspx-vb[DataListItemCommand2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListItemCommand2/VB/datalistitemcommand2vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1842,11 +1842,11 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListItemCreated#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListItemCreated/CS/datalistitemcreatedcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListItemCreated#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListItemCreated/VB/datalistitemcreatedvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListItemCreated#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListItemCreated/CS/datalistitemcreatedcs.aspx#1)]
+ [!code-aspx-vb[DataListItemCreated#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListItemCreated/VB/datalistitemcreatedvb.aspx#1)]  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListItemCreated2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListItemCreated2/CS/datalistitemcreated2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListItemCreated2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListItemCreated2/VB/datalistitemcreated2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListItemCreated2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListItemCreated2/CS/datalistitemcreated2cs.aspx#1)]
+ [!code-aspx-vb[DataListItemCreated2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListItemCreated2/VB/datalistitemcreated2vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1893,11 +1893,11 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListItemDataBound#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListItemDataBound/CS/datalistitemdataboundcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListItemDataBound#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListItemDataBound/VB/datalistitemdataboundvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListItemDataBound#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListItemDataBound/CS/datalistitemdataboundcs.aspx#1)]
+ [!code-aspx-vb[DataListItemDataBound#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListItemDataBound/VB/datalistitemdataboundvb.aspx#1)]  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListItemDataBound2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListItemDataBound2/CS/datalistitemdatabound2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListItemDataBound2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListItemDataBound2/VB/datalistitemdatabound2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListItemDataBound2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListItemDataBound2/CS/datalistitemdatabound2cs.aspx#1)]
+ [!code-aspx-vb[DataListItemDataBound2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListItemDataBound2/VB/datalistitemdatabound2vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1949,11 +1949,11 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListEdit/CS/datalisteditcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListEdit/VB/datalisteditvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListEdit/CS/datalisteditcs.aspx#1)]
+ [!code-aspx-vb[DataListEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListEdit/VB/datalisteditvb.aspx#1)]  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListEdit2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListEdit2/CS/datalistedit2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListEdit2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListEdit2/VB/datalistedit2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListEdit2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListEdit2/CS/datalistedit2cs.aspx#1)]
+ [!code-aspx-vb[DataListEdit2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListEdit2/VB/datalistedit2vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2023,8 +2023,8 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.DataList.RenderContents%2A> method in a custom server control so that some text precedes the <xref:System.Web.UI.WebControls.DataList> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomDataListRenderContents#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomDataListRenderContents/CS/custom_datalist_rendercontentscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomDataListRenderContents#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomDataListRenderContents/VB/custom_datalist_rendercontentsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomDataListRenderContents#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomDataListRenderContents/CS/custom_datalist_rendercontentscs.aspx#1)]
+ [!code-aspx-vb[CustomDataListRenderContents#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomDataListRenderContents/VB/custom_datalist_rendercontentsvb.aspx#1)]  
 [!code-csharp[CustomDataListRenderContents#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomDataListRenderContents/CS/custom_datalist_rendercontents.cs#2)]
 [!code-vb[CustomDataListRenderContents#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomDataListRenderContents/VB/custom_datalist_rendercontents.vb#2)]  
   
@@ -2069,8 +2069,8 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListLayout#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListLayout/CS/datalistlayoutcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListLayout#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListLayout/VB/datalistlayoutvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListLayout#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListLayout/CS/datalistlayoutcs.aspx#1)]
+ [!code-aspx-vb[DataListLayout#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListLayout/VB/datalistlayoutvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2130,8 +2130,8 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListLayout#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListLayout/CS/datalistlayoutcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListLayout#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListLayout/VB/datalistlayoutvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListLayout#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListLayout/CS/datalistlayoutcs.aspx#1)]
+ [!code-aspx-vb[DataListLayout#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListLayout/VB/datalistlayoutvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2176,8 +2176,8 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListLayout#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListLayout/CS/datalistlayoutcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListLayout#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListLayout/VB/datalistlayoutvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListLayout#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListLayout/CS/datalistlayoutcs.aspx#1)]
+ [!code-aspx-vb[DataListLayout#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListLayout/VB/datalistlayoutvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2282,8 +2282,8 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListItemCommand#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListItemCommand/CS/datalistitemcommandcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListItemCommand#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListItemCommand/VB/datalistitemcommandvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListItemCommand#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListItemCommand/CS/datalistitemcommandcs.aspx#1)]
+ [!code-aspx-vb[DataListItemCommand#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListItemCommand/VB/datalistitemcommandvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2327,8 +2327,8 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic DataList.SelectedItem Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataList.SelectedItem Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic DataList.SelectedItem Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataList.SelectedItem Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic DataList.SelectedItem Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataList.SelectedItem Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic DataList.SelectedItem Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataList.SelectedItem Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2389,8 +2389,8 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListItemCommand#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListItemCommand/CS/datalistitemcommandcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListItemCommand#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListItemCommand/VB/datalistitemcommandvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListItemCommand#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListItemCommand/CS/datalistitemcommandcs.aspx#1)]
+ [!code-aspx-vb[DataListItemCommand#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListItemCommand/VB/datalistitemcommandvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2444,8 +2444,8 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListItemCommand#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListItemCommand/CS/datalistitemcommandcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListItemCommand#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListItemCommand/VB/datalistitemcommandvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListItemCommand#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListItemCommand/CS/datalistitemcommandcs.aspx#1)]
+ [!code-aspx-vb[DataListItemCommand#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListItemCommand/VB/datalistitemcommandvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2520,8 +2520,8 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListSeparatorStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListSeparatorStyle/CS/datalistseparatorstylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListSeparatorStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListSeparatorStyle/VB/datalistseparatorstylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListSeparatorStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListSeparatorStyle/CS/datalistseparatorstylecs.aspx#1)]
+ [!code-aspx-vb[DataListSeparatorStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListSeparatorStyle/VB/datalistseparatorstylevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2575,8 +2575,8 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListSeparatorStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListSeparatorStyle/CS/datalistseparatorstylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListSeparatorStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListSeparatorStyle/VB/datalistseparatorstylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListSeparatorStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListSeparatorStyle/CS/datalistseparatorstylecs.aspx#1)]
+ [!code-aspx-vb[DataListSeparatorStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListSeparatorStyle/VB/datalistseparatorstylevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2619,8 +2619,8 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListShowHeader#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListShowHeader/CS/datalistshowheadercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListShowHeader#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListShowHeader/VB/datalistshowheadervb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListShowHeader#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListShowHeader/CS/datalistshowheadercs.aspx#1)]
+ [!code-aspx-vb[DataListShowHeader#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListShowHeader/VB/datalistshowheadervb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2663,8 +2663,8 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListShowHeader#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListShowHeader/CS/datalistshowheadercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListShowHeader#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListShowHeader/VB/datalistshowheadervb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListShowHeader#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListShowHeader/CS/datalistshowheadercs.aspx#1)]
+ [!code-aspx-vb[DataListShowHeader#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListShowHeader/VB/datalistshowheadervb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2920,11 +2920,11 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListEdit/CS/datalisteditcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListEdit/VB/datalisteditvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListEdit/CS/datalisteditcs.aspx#1)]
+ [!code-aspx-vb[DataListEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListEdit/VB/datalisteditvb.aspx#1)]  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListEdit2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListEdit2/CS/datalistedit2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListEdit2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListEdit2/VB/datalistedit2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListEdit2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListEdit2/CS/datalistedit2cs.aspx#1)]
+ [!code-aspx-vb[DataListEdit2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListEdit2/VB/datalistedit2vb.aspx#1)]  
   
  ]]></format>
         </remarks>

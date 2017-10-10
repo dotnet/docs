@@ -60,13 +60,13 @@
   
  The first part of this code example is the user control that enables you to change display modes on the page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_CatalogZoneBase_Overview#8](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/CS/displaymodemenucs.ascx#8)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_CatalogZoneBase_Overview#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/VB/displaymodemenuvb.ascx#8)]  -->  
+ [!code-aspx-csharp[WebParts_CatalogZoneBase_Overview#8](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/CS/displaymodemenucs.ascx#8)]
+ [!code-aspx-vb[WebParts_CatalogZoneBase_Overview#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/VB/displaymodemenuvb.ascx#8)]  
   
  The second part of the code example is a Web page that contains a declarative reference to a <xref:System.Web.UI.WebControls.WebParts.CatalogZone> control. Near the top of the page are two `Register` directives--one for the user control, and one for the custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control. Notice that below the `<asp:WebPartZone>` element is an `<asp: CatalogZone>` element that contains declarative references to the custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control, and to an ASP.NET <xref:System.Web.UI.WebControls.Calendar> control. The zone also has a variety of tags and properties set to determine its appearance and behavior. Between the `<script>` tags in the page is a variety of event-handling code, most of which demonstrates the various programmatic uses of the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> members.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_CatalogZoneBase_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/CS/catalogzonebasecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_CatalogZoneBase_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/VB/catalogzonebasevb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_CatalogZoneBase_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/CS/catalogzonebasecs.aspx#1)]
+ [!code-aspx-vb[WebParts_CatalogZoneBase_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/VB/catalogzonebasevb.aspx#1)]  
   
  The third part of the code example is the custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control named `TextDisplayWebPart`. It is declared within the zone, and an end user can add it from the catalog to the page. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. For a demonstration of both methods of compiling, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
@@ -156,8 +156,8 @@
   
  The first part of the code example shows how to access the <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase.ApplyVerb%2A> property declaratively in a Web page. This example customizes the text for the verb.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/CS/catalogzonebasecs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/VB/catalogzonebasevb.aspx#2)]  -->  
+ [!code-aspx-csharp[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/CS/catalogzonebasecs.aspx#2)]
+ [!code-aspx-vb[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/VB/catalogzonebasevb.aspx#2)]  
   
  The second part of the example shows how to access the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.AddVerb%2A> property programmatically, by using a toggle button to enable or disable it.  
   
@@ -327,8 +327,8 @@
   
  The first part of the code example shows how to access the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CloseVerb%2A> property declaratively in a Web page. This example customizes the <xref:System.Web.UI.WebControls.WebParts.WebPartVerb.Description%2A> property for the verb.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/CS/catalogzonebasecs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/VB/catalogzonebasevb.aspx#2)]  -->  
+ [!code-aspx-csharp[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/CS/catalogzonebasecs.aspx#2)]
+ [!code-aspx-vb[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/VB/catalogzonebasevb.aspx#2)]  
   
  The second part of the example shows how to access the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CloseVerb%2A> property programmatically, by using a toggle button to enable or disable it.  
   
@@ -447,8 +447,8 @@
   
  Notice that the code example declares two `<asp:catalogzone>` elements, and the second one does not declare any <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls, though it does assign a value to the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.EmptyZoneText%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/CS/catalogzonebasecs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/VB/catalogzonebasevb.aspx#2)]  -->  
+ [!code-aspx-csharp[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/CS/catalogzonebasecs.aspx#2)]
+ [!code-aspx-vb[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/VB/catalogzonebasevb.aspx#2)]  
   
  When you load the page in a browser, you can select **Catalog** from the drop-down list to switch to catalog display mode. When the catalog is visible, notice that below the first zone, which contains two <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls, the second zone appears, and displays the contents of the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.EmptyZoneText%2A> property because it contains no controls.  
   
@@ -484,8 +484,8 @@
   
  Notice that the code example declares two `<asp:catalogzone>` elements. The second one does not declare any <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls, but both declare a value for the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.HeaderText%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/CS/catalogzonebasecs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/VB/catalogzonebasevb.aspx#2)]  -->  
+ [!code-aspx-csharp[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/CS/catalogzonebasecs.aspx#2)]
+ [!code-aspx-vb[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/VB/catalogzonebasevb.aspx#2)]  
   
  In the second part of the code example, the value of the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.HeaderText%2A> property in the first zone is programmatically assigned to a different value.  
   
@@ -528,8 +528,8 @@
   
  Notice that the code example declares two `<asp:catalogzone>` elements, and the first one declares a value for the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.InstructionText%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/CS/catalogzonebasecs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/VB/catalogzonebasevb.aspx#2)]  -->  
+ [!code-aspx-csharp[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/CS/catalogzonebasecs.aspx#2)]
+ [!code-aspx-vb[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/VB/catalogzonebasevb.aspx#2)]  
   
  In the second part of the code example, the value of the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.InstructionText%2A> property in the first zone is programmatically assigned to a different value.  
   
@@ -740,8 +740,8 @@
   
  Notice that the first part of the code example declares two `<asp:catalogzone>` elements, and the first one declares a value for the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.PartLinkStyle%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/CS/catalogzonebasecs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/VB/catalogzonebasevb.aspx#2)]  -->  
+ [!code-aspx-csharp[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/CS/catalogzonebasecs.aspx#2)]
+ [!code-aspx-vb[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/VB/catalogzonebasevb.aspx#2)]  
   
  In the second part of the code example, the text color for the unselected <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls is set to a different value.  
   
@@ -1036,8 +1036,8 @@
   
  Notice that the first part of the code example declares two `<asp:catalogzone>` elements, and the first one declares a value for the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.SelectedCatalogPartID%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/CS/catalogzonebasecs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/VB/catalogzonebasevb.aspx#2)]  -->  
+ [!code-aspx-csharp[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/CS/catalogzonebasecs.aspx#2)]
+ [!code-aspx-vb[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/VB/catalogzonebasevb.aspx#2)]  
   
  In the second part of the code example, the text value for the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.SelectedCatalogPartID%2A> property of the currently selected control is displayed.  
   
@@ -1094,8 +1094,8 @@
   
  Notice that the first part of the code example declares two `<asp:catalogzone>` elements, and the first one declares a value for the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.SelectedPartLinkStyle%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/CS/catalogzonebasecs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/VB/catalogzonebasevb.aspx#2)]  -->  
+ [!code-aspx-csharp[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/CS/catalogzonebasecs.aspx#2)]
+ [!code-aspx-vb[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/VB/catalogzonebasevb.aspx#2)]  
   
  In the second part of the code example, the text color for the selected <xref:System.Web.UI.WebControls.WebParts.CatalogPart> control is set to a different value.  
   
@@ -1143,8 +1143,8 @@
   
  Notice that the first part of the code example declares two `<asp:catalogzone>` elements, and the first one declares a value for the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.SelectTargetZoneText%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/CS/catalogzonebasecs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/VB/catalogzonebasevb.aspx#2)]  -->  
+ [!code-aspx-csharp[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/CS/catalogzonebasecs.aspx#2)]
+ [!code-aspx-vb[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/VB/catalogzonebasevb.aspx#2)]  
   
  In the second part of the code example, the value of the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.SelectTargetZoneText%2A> property is changed programmatically.  
   

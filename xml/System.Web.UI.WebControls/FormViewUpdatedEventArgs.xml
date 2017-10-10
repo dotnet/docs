@@ -31,8 +31,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormViewUpdatedEventArgs> object passed to the event-handling method for the <xref:System.Web.UI.WebControls.FormView.ItemUpdated> event to determine whether an exception occurred during an update operation.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewUpdatedEventArgs/CS/formviewupdatedeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewUpdatedEventArgs/VB/formviewupdatedeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewUpdatedEventArgs/CS/formviewupdatedeventargscs.aspx#1)]
+ [!code-aspx-vb[FormViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewUpdatedEventArgs/VB/formviewupdatedeventargsvb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -109,8 +109,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormViewUpdatedEventArgs.AffectedRows%2A> property to verify that a record was updated.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewUpdatedEventArgs/CS/formviewupdatedeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewUpdatedEventArgs/VB/formviewupdatedeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewUpdatedEventArgs/CS/formviewupdatedeventargscs.aspx#1)]
+ [!code-aspx-vb[FormViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewUpdatedEventArgs/VB/formviewupdatedeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -145,8 +145,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormViewUpdatedEventArgs.Exception%2A> property to determine whether an exception occurred during an update operation.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewUpdatedEventArgs/CS/formviewupdatedeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewUpdatedEventArgs/VB/formviewupdatedeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewUpdatedEventArgs/CS/formviewupdatedeventargscs.aspx#1)]
+ [!code-aspx-vb[FormViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewUpdatedEventArgs/VB/formviewupdatedeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -179,8 +179,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormViewUpdatedEventArgs.ExceptionHandled%2A> property to indicate that the exception was handled in the event handler.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewUpdatedEventArgs/CS/formviewupdatedeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewUpdatedEventArgs/VB/formviewupdatedeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewUpdatedEventArgs/CS/formviewupdatedeventargscs.aspx#1)]
+ [!code-aspx-vb[FormViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewUpdatedEventArgs/VB/formviewupdatedeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -216,8 +216,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormViewUpdatedEventArgs.KeepInEditMode%2A> property to keep a <xref:System.Web.UI.WebControls.FormView> control in edit mode when an exception occurs.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewUpdatedEventArgs/CS/formviewupdatedeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewUpdatedEventArgs/VB/formviewupdatedeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewUpdatedEventArgs/CS/formviewupdatedeventargscs.aspx#1)]
+ [!code-aspx-vb[FormViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewUpdatedEventArgs/VB/formviewupdatedeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -257,8 +257,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormViewUpdatedEventArgs.Keys%2A> property to access the values of the key field for an updated record.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewUpdatedEventArgs/CS/formviewupdatedeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewUpdatedEventArgs/VB/formviewupdatedeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewUpdatedEventArgs/CS/formviewupdatedeventargscs.aspx#1)]
+ [!code-aspx-vb[FormViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewUpdatedEventArgs/VB/formviewupdatedeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -298,8 +298,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormViewUpdatedEventArgs.NewValues%2A> property to access the new values entered by the user for the non-key fields of the updated record.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewUpdatedEventArgs/CS/formviewupdatedeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewUpdatedEventArgs/VB/formviewupdatedeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewUpdatedEventArgs/CS/formviewupdatedeventargscs.aspx#1)]
+ [!code-aspx-vb[FormViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewUpdatedEventArgs/VB/formviewupdatedeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -339,8 +339,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormViewUpdatedEventArgs.OldValues%2A> property to access the original values of the non-key fields for the updated record.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewUpdatedEventArgs/CS/formviewupdatedeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewUpdatedEventArgs/VB/formviewupdatedeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewUpdatedEventArgs/CS/formviewupdatedeventargscs.aspx#1)]
+ [!code-aspx-vb[FormViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewUpdatedEventArgs/VB/formviewupdatedeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>

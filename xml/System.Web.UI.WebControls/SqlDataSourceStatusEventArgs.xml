@@ -31,8 +31,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.SqlDataSourceStatusEventArgs> class to examine the return value and values of output parameters that are returned when using a <xref:System.Web.UI.WebControls.SqlDataSource> control with a stored procedure to populate a <xref:System.Web.UI.WebControls.GridView> control. The stored procedure selects data that is displayed in the <xref:System.Web.UI.WebControls.GridView>, but also passes other information back to the caller, such as an integer output parameter and a return value. The parameters that the <xref:System.Web.UI.WebControls.SqlDataSource> uses for the stored procedure are contained by the <xref:System.Web.UI.WebControls.SqlDataSource.SelectParameters%2A> collection, and consist of parameters that pass information from the Web form to the stored procedure as well as parameters that pass information back to the form. The <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property of these parameters is set to <xref:System.Data.ParameterDirection.Output> and <xref:System.Data.ParameterDirection.ReturnValue>.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1/CS/sql21cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1/VB/sql21vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1/CS/sql21cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1/VB/sql21vb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -115,8 +115,8 @@
 ## Examples  
  The following code example demonstrates how to examine the values of output parameters when using a <xref:System.Web.UI.WebControls.SqlDataSource> control with a stored procedure. The <xref:System.Web.UI.WebControls.SqlDataSource.SelectParameters%2A> collection contains the parameters that the <xref:System.Web.UI.WebControls.SqlDataSource> uses for the stored procedure, and consists of parameters that pass information from the Web form to the stored procedure as well as parameters that pass information back to the form. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.SqlDataSourceStatusEventArgs> class.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1/CS/sql21cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1/VB/sql21vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1/CS/sql21cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1/VB/sql21vb.aspx#1)]  
   
  ]]></format>
         </remarks>

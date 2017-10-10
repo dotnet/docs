@@ -404,8 +404,8 @@
   
  The following example demonstrates how to use the custom repeater control in a Web page.  
   
- <!-- TODO: review snippet reference [!code-csharp[TemplatedDataBoundControl3#2](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplatedDataBoundControl3/cs/default.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[TemplatedDataBoundControl3#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplatedDataBoundControl3/vb/default.aspx#2)]  -->  
+ [!code-aspx-csharp[TemplatedDataBoundControl3#2](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplatedDataBoundControl3/cs/default.aspx#2)]
+ [!code-aspx-vb[TemplatedDataBoundControl3#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplatedDataBoundControl3/vb/default.aspx#2)]  
   
  ]]></format>
         </remarks>
@@ -1895,8 +1895,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
 ## Examples  
  The following example assigns a custom event handler, `Calendar_Init`, to the `Init` event of a <xref:System.Web.UI.WebControls.Calendar> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[Control_Sample#4](~/samples/snippets/csharp/VS_Snippets_WebNet/Control_Sample/CS/controlclass_samples2.cs.aspx#4)]  -->
- <!-- TODO: review snippet reference [!code-vb[Control_Sample#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Control_Sample/VB/controlclass_samples2.vb.aspx#4)]  -->  
+ [!code-aspx-csharp[Control_Sample#4](~/samples/snippets/csharp/VS_Snippets_WebNet/Control_Sample/CS/controlclass_samples2.cs.aspx#4)]
+ [!code-aspx-vb[Control_Sample#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Control_Sample/VB/controlclass_samples2.vb.aspx#4)]  
   
  ]]></format>
         </remarks>
@@ -2242,8 +2242,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
 ## Examples  
  The following example demonstrates using the <xref:System.Web.UI.Control.NamingContainer%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[Control_NamingContainer#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Control_NamingContainer/CS/control_namingcontainer.cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Control_NamingContainer#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Control_NamingContainer/VB/control_namingcontainer.vb.aspx#1)]  -->  
+ [!code-aspx-csharp[Control_NamingContainer#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Control_NamingContainer/CS/control_namingcontainer.cs.aspx#1)]
+ [!code-aspx-vb[Control_NamingContainer#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Control_NamingContainer/VB/control_namingcontainer.vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -3713,8 +3713,8 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
 ## Examples  
  The following example creates an <xref:System.Collections.ArrayList> object and populates it with three text strings, then binds a <xref:System.Web.UI.WebControls.Repeater> Web server control to the data in the <xref:System.Collections.ArrayList> when the page is loaded. The code gets the <xref:System.Web.UI.Control.UniqueID%2A> property for each child control generated during data binding. The code generates three versions of the <xref:System.Web.UI.WebControls.Label> control and writes their `UniqueID` property values to the page.  
   
- <!-- TODO: review snippet reference [!code-csharp[AccessingAspNetControlsProgramaticallyConcepts#2](~/samples/snippets/csharp/VS_Snippets_WebNet/AccessingAspNetControlsProgramaticallyConcepts/CS/WebFormsControlIdResolution12.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[AccessingAspNetControlsProgramaticallyConcepts#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/AccessingAspNetControlsProgramaticallyConcepts/VB/WebFormsControlIdResolution12.aspx#2)]  -->  
+ [!code-aspx-csharp[AccessingAspNetControlsProgramaticallyConcepts#2](~/samples/snippets/csharp/VS_Snippets_WebNet/AccessingAspNetControlsProgramaticallyConcepts/CS/WebFormsControlIdResolution12.aspx#2)]
+ [!code-aspx-vb[AccessingAspNetControlsProgramaticallyConcepts#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/AccessingAspNetControlsProgramaticallyConcepts/VB/WebFormsControlIdResolution12.aspx#2)]  
   
  ]]></format>
         </remarks>

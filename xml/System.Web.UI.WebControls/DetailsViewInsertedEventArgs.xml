@@ -31,8 +31,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsViewInsertedEventArgs> object passed to the event handler for the <xref:System.Web.UI.WebControls.DetailsView.ItemInserted> event to determine whether an exception occurred during an insert operation.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewInsertedEventArgsCodeInline#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewInsertedEventArgsCodeInline/CS/detailsviewinsertedeventargsinlinecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewInsertedEventArgsCodeInline#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewInsertedEventArgsCodeInline/VB/detailsviewinsertedeventargsinlinevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewInsertedEventArgsCodeInline#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewInsertedEventArgsCodeInline/CS/detailsviewinsertedeventargsinlinecs.aspx#1)]
+ [!code-aspx-vb[DetailsViewInsertedEventArgsCodeInline#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewInsertedEventArgsCodeInline/VB/detailsviewinsertedeventargsinlinevb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -103,8 +103,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.AffectedRows%2A> property to determine the number of rows affected by the insert operation.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewInsertedEventArgsCodeInline#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewInsertedEventArgsCodeInline/CS/detailsviewinsertedeventargsinlinecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewInsertedEventArgsCodeInline#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewInsertedEventArgsCodeInline/VB/detailsviewinsertedeventargsinlinevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewInsertedEventArgsCodeInline#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewInsertedEventArgsCodeInline/CS/detailsviewinsertedeventargsinlinecs.aspx#1)]
+ [!code-aspx-vb[DetailsViewInsertedEventArgsCodeInline#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewInsertedEventArgsCodeInline/VB/detailsviewinsertedeventargsinlinevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -139,8 +139,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.Exception%2A> property to determine whether an exception was raised during an insert operation.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewInsertedEventArgsCodeInline#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewInsertedEventArgsCodeInline/CS/detailsviewinsertedeventargsinlinecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewInsertedEventArgsCodeInline#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewInsertedEventArgsCodeInline/VB/detailsviewinsertedeventargsinlinevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewInsertedEventArgsCodeInline#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewInsertedEventArgsCodeInline/CS/detailsviewinsertedeventargsinlinecs.aspx#1)]
+ [!code-aspx-vb[DetailsViewInsertedEventArgsCodeInline#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewInsertedEventArgsCodeInline/VB/detailsviewinsertedeventargsinlinevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -173,8 +173,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.ExceptionHandled%2A> property to indicate that the exception was handled in the event handler.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewInsertedEventArgsCodeInline#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewInsertedEventArgsCodeInline/CS/detailsviewinsertedeventargsinlinecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewInsertedEventArgsCodeInline#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewInsertedEventArgsCodeInline/VB/detailsviewinsertedeventargsinlinevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewInsertedEventArgsCodeInline#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewInsertedEventArgsCodeInline/CS/detailsviewinsertedeventargsinlinecs.aspx#1)]
+ [!code-aspx-vb[DetailsViewInsertedEventArgsCodeInline#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewInsertedEventArgsCodeInline/VB/detailsviewinsertedeventargsinlinevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -210,8 +210,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.KeepInInsertMode%2A> property to keep the <xref:System.Web.UI.WebControls.DetailsView> control in insert mode after an insert operation.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewInsertedEventArgsCodeInline#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewInsertedEventArgsCodeInline/CS/detailsviewinsertedeventargsinlinecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewInsertedEventArgsCodeInline#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewInsertedEventArgsCodeInline/VB/detailsviewinsertedeventargsinlinevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewInsertedEventArgsCodeInline#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewInsertedEventArgsCodeInline/CS/detailsviewinsertedeventargsinlinecs.aspx#1)]
+ [!code-aspx-vb[DetailsViewInsertedEventArgsCodeInline#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewInsertedEventArgsCodeInline/VB/detailsviewinsertedeventargsinlinevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -248,8 +248,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.Values%2A> property to access the values of the fields of the inserted record.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewInsertedEventArgsCodeInline#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewInsertedEventArgsCodeInline/CS/detailsviewinsertedeventargsinlinecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewInsertedEventArgsCodeInline#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewInsertedEventArgsCodeInline/VB/detailsviewinsertedeventargsinlinevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewInsertedEventArgsCodeInline#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewInsertedEventArgsCodeInline/CS/detailsviewinsertedeventargsinlinecs.aspx#1)]
+ [!code-aspx-vb[DetailsViewInsertedEventArgsCodeInline#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewInsertedEventArgsCodeInline/VB/detailsviewinsertedeventargsinlinevb.aspx#1)]  
   
  ]]></format>
         </remarks>

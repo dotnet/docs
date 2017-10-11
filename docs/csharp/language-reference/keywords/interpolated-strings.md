@@ -2,11 +2,9 @@
 title: "Interpolated Strings (C#)"
 ms.date: "09/27/2017"
 ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
+dev_langs: ["CSharp"]
 ms.assetid: 324f267e-1c61-431a-97ed-852c1530742d
 caps.latest.revision: 9
 author: "BillWagner"

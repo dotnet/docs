@@ -2,34 +2,15 @@
 title: "explicit (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-f1_keywords: 
-  - "explicit_CSharpKeyword"
-  - "explicit"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "explicit keyword [C#]"
+f1_keywords: ["explicit_CSharpKeyword", "explicit"]
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["explicit keyword [C#]"]
 ms.assetid: cfb8f42a-e411-4db2-af9b-796b05644846
 caps.latest.revision: 21
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # explicit (C# Reference)
 The `explicit` keyword declares a user-defined type conversion operator that must be invoked with a cast. For example, this operator converts from a class called Fahrenheit to a class called Celsius:  

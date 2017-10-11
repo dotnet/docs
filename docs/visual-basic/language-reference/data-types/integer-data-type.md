@@ -1,53 +1,16 @@
 ---
 title: "Integer Data Type (Visual Basic)"
-
 ms.date: "2017-04-20"
 ms.prod: .net
-
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.Integer"
-  - "Integer"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "numbers, whole"
-  - "enumerated values"
-  - "whole numbers"
-  - "integral data types"
-  - "integer numbers"
-  - "numbers, integer"
-  - "integers, data types"
-  - "literal type characters, I"
-  - "integers, types"
-  - "data types [Visual Basic], integral"
-  - "% identifier type character"
-  - "data types [Visual Basic], assigning"
-  - "identifier type characters, %"
-  - "I literal type character"
-  - "Integer data type"
+f1_keywords: ["vb.Integer", "Integer"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["numbers, whole", "enumerated values", "whole numbers", "integral data types", "integer numbers", "numbers, integer", "integers, data types", "literal type characters, I", "integers, types", "data types [Visual Basic], integral", "% identifier type character", "data types [Visual Basic], assigning", "identifier type characters, %", "I literal type character", "Integer data type"]
 ms.assetid: a8f233b4-4be3-455c-861b-05af2fbb6c60
 author: "rpetrusha"
 ms.author: "ronpet"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Integer data type (Visual Basic)
 Holds signed 32-bit (4-byte) integers that range in value from -2,147,483,648 through 2,147,483,647.  

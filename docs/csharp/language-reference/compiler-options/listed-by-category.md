@@ -2,33 +2,14 @@
 title: "C# Compiler Options Listed by Category"
 ms.date: "2015-07-20"
 ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "Visual C# compiler, options listed by category"
-  - "compiler options [C#], listed by category"
-  - "Visual C#, compiler options listed by category"
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["Visual C# compiler, options listed by category", "compiler options [C#], listed by category", "Visual C#, compiler options listed by category"]
 ms.assetid: 96437ecc-6502-4cd3-b070-e9386a298e83
 caps.latest.revision: 17
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # C# Compiler Options Listed by Category
 The following compiler options are sorted by category. For an alphabetical list, see [C# Compiler Options Listed Alphabetically](../../../csharp/language-reference/compiler-options/listed-alphabetically.md).  

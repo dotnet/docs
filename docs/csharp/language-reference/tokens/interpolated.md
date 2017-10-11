@@ -2,34 +2,14 @@
 title: "$ (C# Reference)"
 ms.date: "2017-02-09"
 ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-f1_keywords: 
-  - "$_CSharpKeyword"
-  - "$"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "$ special character [C#]"
-  - "$ language element [C#]"
+f1_keywords: ["$_CSharpKeyword", "$"]
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["$ special character [C#]", "$ language element [C#]"]
 ms.assetid: 7d9e21b5-eac3-4878-9530-50e4da578acd
 author: "rpetrusha"
 ms.author: "ronpet"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # $ (C# Reference)
 

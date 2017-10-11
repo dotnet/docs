@@ -2,34 +2,15 @@
 title: "enum (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-f1_keywords: 
-  - "enum"
-  - "enum_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "enum keyword [C#]"
+f1_keywords: ["enum", "enum_CSharpKeyword"]
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["enum keyword [C#]"]
 ms.assetid: bbeb9a0f-e9b3-41ab-b0a6-c41b1a08974c
 caps.latest.revision: 36
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # enum (C# Reference)
 The `enum` keyword is used to declare an enumeration, a distinct type that consists of a set of named constants called the enumerator list.  

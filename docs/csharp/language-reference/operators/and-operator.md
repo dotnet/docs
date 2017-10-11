@@ -2,37 +2,15 @@
 title: "&amp; Operator (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-f1_keywords: 
-  - "&_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "bitwise AND operator [C#]"
-  - "ampersand operator (&) [C#]"
-  - "& operator [C#]"
-  - "AND operator (&) [C#]"
+f1_keywords: ["&_CSharpKeyword"]
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["bitwise AND operator [C#]", "ampersand operator (&) [C#]", "& operator [C#]", "AND operator (&) [C#]"]
 ms.assetid: afa346d5-90ec-4b1f-a2c8-3881f018741d
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # &amp; Operator (C# Reference)
 The & operator can function as either a unary or a binary operator.  

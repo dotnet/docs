@@ -1,42 +1,16 @@
 ---
 title: "How to: Read From a Text File (C# Programming Guide)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
-
-ms.technology: 
-  - "devlang-csharp"
-
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-f1_keywords: 
-  - "StreamReader.ReadToEnd"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "text files, writing to"
-  - "reading text files"
-  - "reading data, text files"
-  - "text files, reading"
+f1_keywords: ["StreamReader.ReadToEnd"]
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["text files, writing to", "reading text files", "reading data, text files", "text files, reading"]
 ms.assetid: 92246c5b-e819-4eea-9370-1a9460e12de3
 caps.latest.revision: 17
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Read From a Text File (C# Programming Guide)
 This example reads the contents of a text file by using the static methods <xref:System.IO.File.ReadAllText%2A> and <xref:System.IO.File.ReadAllLines%2A> from the <xref:System.IO.File?displayProperty=nameWithType> class.  

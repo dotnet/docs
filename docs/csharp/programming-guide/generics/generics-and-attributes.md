@@ -1,38 +1,15 @@
 ---
 title: "Generics and Attributes (C# Programming Guide)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
-
-ms.technology: 
-  - "devlang-csharp"
-
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "generics [C#], attributes"
-  - "attributes [C#], with generics"
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["generics [C#], attributes", "attributes [C#], with generics"]
 ms.assetid: da9fc326-4648-454a-8e13-3911a2edefd7
 caps.latest.revision: 13
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Generics and Attributes (C# Programming Guide)
 Attributes can be applied to generic types in the same way as non-generic types. For more information on applying attributes, see [Attributes](../../../csharp/programming-guide/concepts/attributes/index.md).  

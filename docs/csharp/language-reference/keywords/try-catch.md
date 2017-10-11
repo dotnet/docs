@@ -2,38 +2,15 @@
 title: "try-catch (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-f1_keywords: 
-  - "try"
-  - "try_CSharpKeyword"
-  - "catch"
-  - "catch_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "catch keyword [C#]"
-  - "try-catch statement [C#]"
+f1_keywords: ["try", "try_CSharpKeyword", "catch", "catch_CSharpKeyword"]
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["catch keyword [C#]", "try-catch statement [C#]"]
 ms.assetid: cb5503c7-bfa1-4610-8fc2-ddcd2e84c438
 caps.latest.revision: 45
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # try-catch (C# Reference)
 The try-catch statement consists of a `try` block followed by one or more `catch` clauses, which specify handlers for different exceptions.  

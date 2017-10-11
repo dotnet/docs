@@ -1,38 +1,15 @@
 ---
 title: "Inside a C# Program"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
-
-ms.technology: 
-  - "devlang-csharp"
-
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "C# language, about C# program"
-  - "Visual C#, program structure"
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["C# language, about C# program", "Visual C#, program structure"]
 ms.assetid: 9551354b-33f0-4e11-bbf0-1a35e3702b22
 caps.latest.revision: 14
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Inside a C# Program
 The section discusses the general structure of a C# program, and includes the standard "Hello, World!" example.  

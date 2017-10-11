@@ -5,42 +5,14 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "expressions [Visual Basic], parentheses"
-  - "operators [Visual Basic], associativity"
-  - "expressions [Visual Basic], operators"
-  - "operators [Visual Basic], precedence"
-  - "Visual Basic code, operators"
-  - "Visual Basic code, expressions"
-  - "operators [Visual Basic], complex expressions"
-  - "expressions [Visual Basic], complex"
-  - "parentheses, complex expressions"
-  - "numeric expressions"
+dev_langs: ["VB"]
+helpviewer_keywords: ["expressions [Visual Basic], parentheses", "operators [Visual Basic], associativity", "expressions [Visual Basic], operators", "operators [Visual Basic], precedence", "Visual Basic code, operators", "Visual Basic code, expressions", "operators [Visual Basic], complex expressions", "expressions [Visual Basic], complex", "parentheses, complex expressions", "numeric expressions"]
 ms.assetid: bd22340e-b5be-458b-8772-3916c02309a4
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Efficient Combination of Operators (Visual Basic)
 Complex expressions can contain many different operators. The following example illustrates this.  

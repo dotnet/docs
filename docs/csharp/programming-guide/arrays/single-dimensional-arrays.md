@@ -1,38 +1,15 @@
 ---
 title: "Single-Dimensional Arrays (C# Programming Guide)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
-
-ms.technology: 
-  - "devlang-csharp"
-
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "single-dimensional arrays [C#]"
-  - "arrays [C#], single-dimensional"
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["single-dimensional arrays [C#]", "arrays [C#], single-dimensional"]
 ms.assetid: 2cec1196-1de0-49d2-baf2-c607c33310e8
 caps.latest.revision: 18
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Single-Dimensional Arrays (C# Programming Guide)
 You can declare a single-dimensional array of five integers as shown in the following example:  

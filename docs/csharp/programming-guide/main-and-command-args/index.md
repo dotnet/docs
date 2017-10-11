@@ -1,45 +1,16 @@
 ---
 title: "Main() and command-line arguments (C# Programming Guide)"
-
 ms.date: "2017-08-02"
 ms.prod: .net
-
-
-ms.technology: 
-  - "devlang-csharp"
-
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-f1_keywords: 
-  - "CS5001"
-  - "main_CSharpKeyword"
-  - "Main"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "Main method [C#]"
-  - "C# language, command-line arguments"
-  - "arguments [C#], command-line"
-  - "command line [C#], arguments"
-  - "command-line arguments [C#], Main method"
+f1_keywords: ["CS5001", "main_CSharpKeyword", "Main"]
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["Main method [C#]", "C# language, command-line arguments", "arguments [C#], command-line", "command line [C#], arguments", "command-line arguments [C#], Main method"]
 ms.assetid: 73a17231-cf96-44ea-aa8a-54807c6fb1f4
 caps.latest.revision: 30
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Main() and command-line arguments (C# Programming Guide)
 

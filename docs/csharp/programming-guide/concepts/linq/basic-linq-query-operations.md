@@ -5,47 +5,14 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "orderby clause [LINQ in C#]"
-  - "ordering data [LINQ in C#]"
-  - "selecting data [LINQ in C#]"
-  - "queries [LINQ in C#], basic operations"
-  - "grouping data [LINQ in C#]"
-  - "data sources [LINQ in C#]"
-  - "sorting data [LINQ in C#]"
-  - "projections [LINQ in C#]"
-  - "filtering data [LINQ in C#]"
-  - "joining data [LINQ in C#]"
-  - "select clause [LINQ in C#]"
-  - "LINQ [C#], basic query operations"
-  - "join clause [LINQ in C#]"
-  - "group clause [LINQ in C#]"
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["orderby clause [LINQ in C#]", "ordering data [LINQ in C#]", "selecting data [LINQ in C#]", "queries [LINQ in C#], basic operations", "grouping data [LINQ in C#]", "data sources [LINQ in C#]", "sorting data [LINQ in C#]", "projections [LINQ in C#]", "filtering data [LINQ in C#]", "joining data [LINQ in C#]", "select clause [LINQ in C#]", "LINQ [C#], basic query operations", "join clause [LINQ in C#]", "group clause [LINQ in C#]"]
 ms.assetid: a7ea3421-1cf4-4df7-832a-aa22fe6379e9
 caps.latest.revision: 39
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Basic LINQ Query Operations (C#)
 This topic gives a brief introduction to [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query expressions and some of the typical kinds of operations that you perform in a query. More detailed information is in the following topics:  

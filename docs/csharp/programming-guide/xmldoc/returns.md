@@ -1,41 +1,16 @@
 ---
 title: "&lt;returns&gt; (C# Programming Guide)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
-
-ms.technology: 
-  - "devlang-csharp"
-
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-f1_keywords: 
-  - "returns"
-  - "<returns>"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "<returns> C# XML tag"
-  - "returns C# XML tag"
+f1_keywords: ["returns", "<returns>"]
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["<returns> C# XML tag", "returns C# XML tag"]
 ms.assetid: bb2d9958-62fc-47c7-9511-6311171f119f
 caps.latest.revision: 11
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # &lt;returns&gt; (C# Programming Guide)
 ## Syntax  

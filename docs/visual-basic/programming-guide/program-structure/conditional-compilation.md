@@ -5,34 +5,14 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "conditional compilation, about conditional compilation"
-  - "compilation, conditional"
+dev_langs: ["VB"]
+helpviewer_keywords: ["conditional compilation, about conditional compilation", "compilation, conditional"]
 ms.assetid: 9c35e55e-7eee-44fb-a586-dad1f1884848
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Conditional Compilation in Visual Basic
 In *conditional compilation*, particular blocks of code in a program are compiled selectively while others are ignored.  

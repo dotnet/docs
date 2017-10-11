@@ -2,34 +2,15 @@
 title: "volatile (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-f1_keywords: 
-  - "volatile_CSharpKeyword"
-  - "volatile"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "volatile keyword [C#]"
+f1_keywords: ["volatile_CSharpKeyword", "volatile"]
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["volatile keyword [C#]"]
 ms.assetid: 78089bc7-7b38-4cfd-9e49-87ac036af009
 caps.latest.revision: 29
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # volatile (C# Reference)
 The `volatile` keyword indicates that a field might be modified by multiple threads that are executing at the same time. Fields that are declared `volatile` are not subject to compiler optimizations that assume access by a single thread. This ensures that the most up-to-date value is present in the field at all times.  

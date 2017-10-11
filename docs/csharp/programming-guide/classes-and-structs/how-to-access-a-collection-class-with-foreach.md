@@ -1,37 +1,15 @@
 ---
 title: "How to: Access a Collection Class with foreach (C# Programming Guide)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
-
-ms.technology: 
-  - "devlang-csharp"
-
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "collection classes [C#], foreach statement"
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["collection classes [C#], foreach statement"]
 ms.assetid: a6b9cf5c-6c8d-4223-b12c-288949434493
 caps.latest.revision: 21
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Access a Collection Class with foreach (C# Programming Guide)
 The following code example illustrates how to write a non-generic collection class that can be used with [foreach](../../../csharp/language-reference/keywords/foreach-in.md). The example defines a string tokenizer class.  

@@ -2,34 +2,15 @@
 title: "void (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-f1_keywords: 
-  - "void_CSharpKeyword"
-  - "void"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "void keyword [C#]"
+f1_keywords: ["void_CSharpKeyword", "void"]
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["void keyword [C#]"]
 ms.assetid: 0d2d8a95-fe20-4fbd-bf5d-c1e54bce71d4
 caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # void (C# Reference)
 When used as the return type for a method, `void` specifies that the method doesn't return a value.

@@ -5,39 +5,14 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "Visual Basic code, procedures"
-  - "procedures, that call themselves"
-  - "procedures, recursive"
-  - "procedures, calling"
-  - "recursive procedures"
-  - "functions [Visual Basic], calling recursively"
-  - "recursion"
+dev_langs: ["VB"]
+helpviewer_keywords: ["Visual Basic code, procedures", "procedures, that call themselves", "procedures, recursive", "procedures, calling", "recursive procedures", "functions [Visual Basic], calling recursively", "recursion"]
 ms.assetid: ba1d3962-b4c3-48d3-875e-96fdb4198327
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Recursive Procedures (Visual Basic)
 A *recursive* procedure is one that calls itself. In general, this is not the most effective way to write [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] code.  

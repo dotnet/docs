@@ -1,52 +1,16 @@
 ---
 title: "Long Data Type (Visual Basic)"
-
 ms.date: "2017-04-20"
 ms.prod: .net
-
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.Long"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "identifier type characters, &"
-  - "numbers, whole"
-  - "whole numbers"
-  - "integral data types"
-  - "& identifier type character"
-  - "integer numbers"
-  - "literal type characters, L"
-  - "numbers, integer"
-  - "integers, data types"
-  - "L literal type character"
-  - "integers, types"
-  - "Long keyword"
-  - "data types [Visual Basic], integral"
-  - "data types [Visual Basic], assigning"
-  - "Long data type"
+f1_keywords: ["vb.Long"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["identifier type characters, &", "numbers, whole", "whole numbers", "integral data types", "& identifier type character", "integer numbers", "literal type characters, L", "numbers, integer", "integers, data types", "L literal type character", "integers, types", "Long keyword", "data types [Visual Basic], integral", "data types [Visual Basic], assigning", "Long data type"]
 ms.assetid: b4770c34-1804-4f8c-b512-c10b0893e516
 author: "rpetrusha"
 ms.author: "ronpet"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Long data type (Visual Basic)
 

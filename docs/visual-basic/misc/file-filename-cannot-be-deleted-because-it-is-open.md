@@ -1,36 +1,14 @@
 ---
 title: "File &#39;&lt;filename&gt;&#39; cannot be deleted because it is open"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
-
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vbrFileSystem_FileAlreadyOpen1"
+f1_keywords: ["vbrFileSystem_FileAlreadyOpen1"]
 ms.assetid: e1cbc46a-1db0-412d-8109-31342ec9d327
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # File &#39;&lt;filename&gt;&#39; cannot be deleted because it is open
 A deletion is being attempted on an open file.  

@@ -5,34 +5,14 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "typeparam XML tag"
-  - "<typeparam> XML tag"
+dev_langs: ["VB"]
+helpviewer_keywords: ["typeparam XML tag", "<typeparam> XML tag"]
 ms.assetid: 1bb5ba78-f060-478c-905c-77a2e43639af
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # &lt;typeparam&gt; (Visual Basic)
 Defines a type parameter name and description.  

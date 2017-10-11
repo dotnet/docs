@@ -2,35 +2,15 @@
 title: "continue (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-f1_keywords: 
-  - "continue_CSharpKeyword"
-  - "continue"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "continue keyword [C#]"
+f1_keywords: ["continue_CSharpKeyword", "continue"]
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["continue keyword [C#]"]
 ms.assetid: 8a5ac96f-f98a-4519-b32d-345847ed7be0
 caps.latest.revision: 20
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # continue (C# Reference)
 The `continue` statement passes control to the next iteration of the enclosing [while](../../../csharp/language-reference/keywords/while.md), [do](../../../csharp/language-reference/keywords/do.md), [for](../../../csharp/language-reference/keywords/for.md), or [foreach](../../../csharp/language-reference/keywords/foreach-in.md) statement in which it appears.  

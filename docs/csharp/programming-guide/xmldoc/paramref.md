@@ -1,41 +1,16 @@
 ---
 title: "&lt;paramref&gt; (C# Programming Guide)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
-
-ms.technology: 
-  - "devlang-csharp"
-
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-f1_keywords: 
-  - "paramref"
-  - "<paramref>"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "<paramref> C# XML tag"
-  - "paramref C# XML tag"
+f1_keywords: ["paramref", "<paramref>"]
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["<paramref> C# XML tag", "paramref C# XML tag"]
 ms.assetid: 756c24c1-f591-40e8-a838-559761539b0b
 caps.latest.revision: 12
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # &lt;paramref&gt; (C# Programming Guide)
 ## Syntax  

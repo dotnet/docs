@@ -2,35 +2,15 @@
 title: "-nowarn (C# Compiler Options)"
 ms.date: "2015-07-20"
 ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-f1_keywords: 
-  - "/nowarn"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "nowarn compiler option [C#]"
-  - "/nowarn compiler option [C#]"
-  - "-nowarn compiler option [C#]"
+f1_keywords: ["/nowarn"]
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["nowarn compiler option [C#]", "/nowarn compiler option [C#]", "-nowarn compiler option [C#]"]
 ms.assetid: 6dcbc5e8-ae67-4566-9df3-f63cfdd9c4e4
 caps.latest.revision: 24
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /nowarn (C# Compiler Options)
 The **/nowarn** option lets you suppress the compiler from displaying one or more warnings. Separate multiple warning numbers with a comma.  

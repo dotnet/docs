@@ -1,39 +1,15 @@
 ---
 title: "How to: Search Strings Using Regular Expressions (C# Programming Guide)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
-
-ms.technology: 
-  - "devlang-csharp"
-
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "searching strings [C#]"
-  - "strings [C#], searching with RegEx"
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["searching strings [C#]", "strings [C#], searching with RegEx"]
 ms.assetid: dcab2150-a4a2-4fe4-87e3-83b83b58d84a
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # How to: Search Strings Using Regular Expressions (C# Programming Guide)
 The <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> class can be used to search strings. These searches can range in complexity from very simple to making full use of regular expressions. The following are two examples of string searching by using the <xref:System.Text.RegularExpressions.Regex> class. For more information, see [.NET Framework Regular Expressions](https://msdn.microsoft.com/library/hs600312).  

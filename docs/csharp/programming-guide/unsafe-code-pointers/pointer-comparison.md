@@ -1,37 +1,15 @@
 ---
 title: "Pointer Comparison (C# Programming Guide)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
-
-ms.technology: 
-  - "devlang-csharp"
-
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "pointers [C#], comparison"
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["pointers [C#], comparison"]
 ms.assetid: fcafd514-7405-4deb-8490-cc58efda5495
 caps.latest.revision: 14
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Pointer Comparison (C# Programming Guide)
 You can apply the following operators to compare pointers of any type:  

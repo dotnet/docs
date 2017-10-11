@@ -2,18 +2,11 @@
 title: "?: Operator (C# Reference)"
 ms.date: "07/20/2015"
 ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-f1_keywords: 
-  - "?:_CSharpKeyword"
-  - "?_CSharpKeyword"
-  - ":_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "?: operator [C#]"
-  - "conditional operator (?:) [C#]"
+f1_keywords: ["?:_CSharpKeyword", "?_CSharpKeyword", ":_CSharpKeyword"]
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["?: operator [C#]", "conditional operator (?:) [C#]"]
 ms.assetid: e83a17f1-7500-48ba-8bee-2fbc4c847af4
 caps.latest.revision: 23
 author: "BillWagner"

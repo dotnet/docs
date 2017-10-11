@@ -1,37 +1,15 @@
 ---
 title: "How to: Access an Array Element with a Pointer (C# Programming Guide)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
-
-ms.technology: 
-  - "devlang-csharp"
-
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "pointers [C#], array access"
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["pointers [C#], array access"]
 ms.assetid: 6c46f2af-a730-4855-8638-f136d9abaa12
 caps.latest.revision: 16
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Access an Array Element with a Pointer (C# Programming Guide)
 In an unsafe context, you can access an element in memory by using pointer element access, as shown in the following example:  

@@ -2,35 +2,15 @@
 title: "-warnaserror (C# Compiler Options)"
 ms.date: "2015-07-20"
 ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-f1_keywords: 
-  - "/warnaserror"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "/warnaserror compiler option [C#]"
-  - "-warnaserror compiler option [C#]"
-  - "warnaserror compiler option [C#]"
+f1_keywords: ["/warnaserror"]
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["/warnaserror compiler option [C#]", "-warnaserror compiler option [C#]", "warnaserror compiler option [C#]"]
 ms.assetid: 04680ec3-08d6-4e2e-a274-38310e10e33c
 caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /warnaserror (C# Compiler Options)
 The **/warnaserror+** option treats all warnings as errors  

@@ -2,34 +2,15 @@
 title: "on (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-f1_keywords: 
-  - "on_CSharpKeyword"
-  - "on"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "on keyword [C#]"
+f1_keywords: ["on_CSharpKeyword", "on"]
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["on keyword [C#]"]
 ms.assetid: 06abc536-e07c-4e34-88c1-425208bdcb21
 caps.latest.revision: 6
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # on (C# Reference)
 The `on` contextual keyword is used in the [join clause](../../../csharp/language-reference/keywords/join-clause.md) of a query expression to specify the join condition.  

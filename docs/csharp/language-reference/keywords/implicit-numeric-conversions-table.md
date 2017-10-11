@@ -2,34 +2,14 @@
 title: "Implicit Numeric Conversions Table (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "conversions [C#], implicit numeric"
-  - "implicit numeric conversions [C#]"
-  - "numeric conversions [C#], implicit"
-  - "types [C#], implicit numeric conversions"
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["conversions [C#], implicit numeric", "implicit numeric conversions [C#]", "numeric conversions [C#], implicit", "types [C#], implicit numeric conversions"]
 ms.assetid: 72eb5a94-0491-48bf-8032-d7ebfdfeb8d8
 caps.latest.revision: 12
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Implicit Numeric Conversions Table (C# Reference)
 The following table shows the predefined implicit numeric conversions. Implicit conversions might occur in many situations, including method invoking and assignment statements.  

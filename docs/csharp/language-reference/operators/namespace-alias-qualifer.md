@@ -2,35 +2,15 @@
 title: ":: Operator (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-f1_keywords: 
-  - "::_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - ":: operator [C#]"
-  - "namespaces [C#], :: operator"
-  - "namespace alias qualifier operator (::) [C#]"
+f1_keywords: ["::_CSharpKeyword"]
+dev_langs: ["CSharp"]
+helpviewer_keywords: [":: operator [C#]", "namespaces [C#], :: operator", "namespace alias qualifier operator (::) [C#]"]
 ms.assetid: 698b5a73-85cf-4e0e-9e8e-6496887f8527
 caps.latest.revision: 21
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # :: Operator (C# Reference)
 The namespace alias qualifier (`::`) is used to look up identifiers. It is always positioned between two identifiers, as in this example:  

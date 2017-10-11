@@ -1,42 +1,15 @@
 ---
 title: "Using Conversion Operators (C# Programming Guide)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
-
-ms.technology: 
-  - "devlang-csharp"
-
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "conversions [C#], operators"
-  - "conversion operators [C#]"
-  - "operators [C#], conversion"
-  - "user-defined conversions [C#]"
-  - "implicit conversion operators [C#]"
-  - "explicit conversion operators [C#]"
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["conversions [C#], operators", "conversion operators [C#]", "operators [C#], conversion", "user-defined conversions [C#]", "implicit conversion operators [C#]", "explicit conversion operators [C#]"]
 ms.assetid: caf36e89-c6c0-4b87-9f9e-85780a45c9a4
 caps.latest.revision: 20
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Using Conversion Operators (C# Programming Guide)
 You can use `implicit` conversion operators, which are easier to use, or `explicit` conversion operators, which clearly indicate to anyone reading the code that you're converting a type. This topic demonstrates both types of conversion operator.  

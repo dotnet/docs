@@ -1,39 +1,15 @@
 ---
 title: "Walkthrough: Office Programming (C# and Visual Basic)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
-
-ms.technology: 
-  - "devlang-csharp"
-
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "Office, programming in Visual Basic and C#"
-  - "Office programming [C#]"
-  - "Office programming [Visual Basic]"
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["Office, programming in Visual Basic and C#", "Office programming [C#]", "Office programming [Visual Basic]"]
 ms.assetid: 519cff31-f80b-4f0e-a56b-26358d0f8c51
 caps.latest.revision: 46
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Walkthrough: Office Programming (C# and Visual Basic)
 Visual Studio offers features in C# and Visual Basic that improve Microsoft Office programming. Helpful C# features include named and optional arguments and return values of type `dynamic`. In COM programming, you can omit the `ref` keyword and gain access to indexed properties. Features in Visual Basic include auto-implemented properties, statements in lambda expressions, and collection initializers.

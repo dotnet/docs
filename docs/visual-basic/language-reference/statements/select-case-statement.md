@@ -1,54 +1,18 @@
 ---
 title: "Select...Case Statement (Visual Basic)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.Select"
-  - "vb.Case"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "Select statement"
-  - "Case statement"
-  - "Select...Case statements"
-  - "conditional statements, Select Case"
-  - "control flow, branching"
-  - "Else keyword [Visual Basic], in Select...Case statements"
-  - "execution, conditional"
-  - "To keyword, in Select...Case statements"
-  - "Select Case statement, Select...Case"
-  - "Select statement, Select...Case"
-  - "Is operator [Visual Basic], in Select...Case statements"
-  - "branching, conditional"
-  - "Case Else statement, Select...Case"
-  - "End keyword, Select Case statements"
-  - "Case statement, Select...Case"
+f1_keywords: ["vb.Select", "vb.Case"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["Select statement", "Case statement", "Select...Case statements", "conditional statements, Select Case", "control flow, branching", "Else keyword [Visual Basic], in Select...Case statements", "execution, conditional", "To keyword, in Select...Case statements", "Select Case statement, Select...Case", "Select statement, Select...Case", "Is operator [Visual Basic], in Select...Case statements", "branching, conditional", "Case Else statement, Select...Case", "End keyword, Select Case statements", "Case statement, Select...Case"]
 ms.assetid: 68877b65-5419-4bf0-a465-20cd0e4c7d44
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Select...Case Statement (Visual Basic)
 Runs one of several groups of statements, depending on the value of an expression.  

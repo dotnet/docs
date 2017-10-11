@@ -5,40 +5,14 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "classes [Visual Basic], composite data types"
-  - "composite types"
-  - "composite data types"
-  - "data types [Visual Basic], composite"
-  - "arrays [Visual Basic], composite data types"
-  - "structures, composite data types"
-  - "arrays [Visual Basic], compilation errors"
-  - "types [Visual Basic], composite"
+dev_langs: ["VB"]
+helpviewer_keywords: ["classes [Visual Basic], composite data types", "composite types", "composite data types", "data types [Visual Basic], composite", "arrays [Visual Basic], composite data types", "structures, composite data types", "arrays [Visual Basic], compilation errors", "types [Visual Basic], composite"]
 ms.assetid: 5fe0e558-aac2-4a40-b7f2-7cfea7336917
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Hold More Than One Value in a Variable (Visual Basic)
 A variable holds more than one value if you declare it to be of a *composite data type*.  

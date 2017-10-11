@@ -2,34 +2,15 @@
 title: "*= Operator (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-f1_keywords: 
-  - "*=_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "*= operator [C#]"
-  - "binary multiplication assignment operator (*=) [C#]"
+f1_keywords: ["*=_CSharpKeyword"]
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["*= operator [C#]", "binary multiplication assignment operator (*=) [C#]"]
 ms.assetid: 2e472155-59db-4dbf-bb94-bcccfa1a794d
 caps.latest.revision: 16
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # *= Operator (C# Reference)
 The binary multiplication assignment operator.  

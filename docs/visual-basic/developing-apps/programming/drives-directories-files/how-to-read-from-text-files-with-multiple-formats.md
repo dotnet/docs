@@ -5,40 +5,14 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "TextFieldParser object, reading from a file"
-  - "TextFieldType enumeration"
-  - "My.Computer.FileSystem.WriteAllText method, parsing structured text files"
-  - "WriteAllText method, parsing structured text files"
-  - "PeekChars method, determining format of text"
-  - "reading text files, multiple formats"
-  - "I/O [Visual Basic], reading text files"
-  - "text files, reading"
+dev_langs: ["VB"]
+helpviewer_keywords: ["TextFieldParser object, reading from a file", "TextFieldType enumeration", "My.Computer.FileSystem.WriteAllText method, parsing structured text files", "WriteAllText method, parsing structured text files", "PeekChars method, determining format of text", "reading text files, multiple formats", "I/O [Visual Basic], reading text files", "text files, reading"]
 ms.assetid: 8d185eb2-79ca-42cd-95a7-d3ff44a5a0f8
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Read From Text Files with Multiple Formats in Visual Basic
 The <xref:Microsoft.VisualBasic.FileIO.TextFieldParser> object provides a way to easily and efficiently parse structured text files, such as logs. You can process a file with multiple formats by using the `PeekChars` method to determine the format of each line as you parse through the file.  

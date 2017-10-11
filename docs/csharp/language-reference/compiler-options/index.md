@@ -2,37 +2,15 @@
 title: "C# Compiler Options"
 ms.date: "2015-07-20"
 ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-f1_keywords: 
-  - "cs.build.options"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "compiler options [C#]"
-  - "csc.exe"
-  - "cl.exe compiler, C# options"
-  - "Visual C# compiler"
-  - "Visual C#, compiler options"
+f1_keywords: ["cs.build.options"]
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["compiler options [C#]", "csc.exe", "cl.exe compiler, C# options", "Visual C# compiler", "Visual C#, compiler options"]
 ms.assetid: d3403556-1816-4546-a782-e8223a772e44
 caps.latest.revision: 21
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # C# Compiler Options
 The compiler produces executable (.exe) files, dynamic-link libraries (.dll), or code modules (.netmodule).  

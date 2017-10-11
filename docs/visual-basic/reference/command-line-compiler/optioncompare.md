@@ -1,41 +1,18 @@
 ---
 title: "/optioncompare"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "/optioncompare"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "optioncompare compiler option [Visual Basic]"
-  - "-optioncompare compiler option [Visual Basic]"
-  - "/optioncompare compiler option [Visual Basic]"
+f1_keywords: ["/optioncompare"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["optioncompare compiler option [Visual Basic]", "-optioncompare compiler option [Visual Basic]", "/optioncompare compiler option [Visual Basic]"]
 ms.assetid: 7237b766-b44d-4cc5-9a3c-885348a7d9e4
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /optioncompare
 Specifies how string comparisons are made.  

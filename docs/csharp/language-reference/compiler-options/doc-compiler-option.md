@@ -2,39 +2,15 @@
 title: "-doc (C# Compiler Options)"
 ms.date: "2015-07-20"
 ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-f1_keywords: 
-  - "FileProperties.BuildAction"
-  - "/doc"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "comments, C# code"
-  - "XML documentation [C#], comments in source files"
-  - "doc compiler option [C#]"
-  - "Visual C#, XML documentation for"
-  - "-doc compiler option [C#]"
-  - "/doc compiler option [C#]"
+f1_keywords: ["FileProperties.BuildAction", "/doc"]
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["comments, C# code", "XML documentation [C#], comments in source files", "doc compiler option [C#]", "Visual C#, XML documentation for", "-doc compiler option [C#]", "/doc compiler option [C#]"]
 ms.assetid: 849eea59-c936-4311-bad8-d07404480f2a
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /doc (C# Compiler Options)
 The **/doc** option allows you to place documentation comments in an XML file.  

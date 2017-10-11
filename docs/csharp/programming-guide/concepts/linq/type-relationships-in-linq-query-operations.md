@@ -5,42 +5,14 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "inferring type information [LINQ in C#]"
-  - "data sources [LINQ in C#], type relationships"
-  - "queries [LINQ in C#], type relationships"
-  - "relationships [LINQ in C#]"
-  - "type relationships [LINQ in C#]"
-  - "variable relationships [LINQ in C#]"
-  - "type information inferred [LINQ in C#]"
-  - "data transformations [LINQ in C#]"
-  - "LINQ [C#], type relationships"
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["inferring type information [LINQ in C#]", "data sources [LINQ in C#], type relationships", "queries [LINQ in C#], type relationships", "relationships [LINQ in C#]", "type relationships [LINQ in C#]", "variable relationships [LINQ in C#]", "type information inferred [LINQ in C#]", "data transformations [LINQ in C#]", "LINQ [C#], type relationships"]
 ms.assetid: 99118938-d47c-4d7e-bb22-2657a9f95268
 caps.latest.revision: 25
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Type Relationships in LINQ Query Operations (C#)
 To write queries effectively, you should understand how types of the variables in a complete query operation all relate to each other. If you understand these relationships you will more easily comprehend the [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] samples and code examples in the documentation. Furthermore, you will understand what occurs behind the scenes when variables are implicitly typed by using `var`.  

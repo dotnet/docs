@@ -2,32 +2,14 @@
 title: "Types (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "types [C#]"
-  - "data types [C#], type system"
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["types [C#]", "data types [C#], type system"]
 ms.assetid: 16b984df-f417-4e02-b1e6-4589d4a614ea
 caps.latest.revision: 13
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Types (C# Reference)
 The C# typing system contains the following categories:  

@@ -5,40 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "RegistryKey.CreateSubKey"
-  - "RegistryKey.SetValue"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "registry keys, creating"
-  - "registry, adding values"
-  - "registry, adding keys"
-  - "registry keys, setting values"
-  - "examples [Visual Basic], registry"
+f1_keywords: ["RegistryKey.CreateSubKey", "RegistryKey.SetValue"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["registry keys, creating", "registry, adding values", "registry, adding keys", "registry keys, setting values", "examples [Visual Basic], registry"]
 ms.assetid: d3e40f74-c283-480c-ab18-e5e9052cd814
 caps.latest.revision: 30
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Create a Registry Key and Set Its Value in Visual Basic
 The `CreateSubKey` method of the `My.Computer.Registry` object can be used to create a registry key.  

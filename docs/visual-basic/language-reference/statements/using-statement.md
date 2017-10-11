@@ -1,42 +1,18 @@
 ---
 title: "Using Statement (Visual Basic)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.using"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "resource disposal"
-  - "Try...Catch...Finally statements, equivalent to Using statement"
-  - "resources [Visual Basic], disposing"
-  - "Using statement"
+f1_keywords: ["vb.using"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["resource disposal", "Try...Catch...Finally statements, equivalent to Using statement", "resources [Visual Basic], disposing", "Using statement"]
 ms.assetid: 665d1580-dd54-4e96-a9a9-6be2a68948f1
 caps.latest.revision: 36
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Using Statement (Visual Basic)
 Declares the beginning of a `Using` block and optionally acquires the system resources that the block controls.  

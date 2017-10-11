@@ -2,34 +2,15 @@
 title: "lock Statement (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-f1_keywords: 
-  - "lock_CSharpKeyword"
-  - "lock"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "lock keyword [C#]"
+f1_keywords: ["lock_CSharpKeyword", "lock"]
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["lock keyword [C#]"]
 ms.assetid: 656da1a4-707e-4ef6-9c6e-6d13b646af42
 caps.latest.revision: 43
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # lock Statement (C# Reference)
 The `lock` keyword marks a statement block as a critical section by obtaining the mutual-exclusion lock for a given object, executing a statement, and then releasing the lock. The following example includes a `lock` statement.  

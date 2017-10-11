@@ -91,6 +91,8 @@
 ### [Creating a NuGet Package with Cross Platform Tools](core/deploying/creating-nuget-packages.md)
 ### [Runtime package store](core/deploying/runtime-store.md)
 ## [Docker](core/docker/index.md)
+### [Introduction to .NET and Docker](core/docker/intro-net-docker.md)
+### [Learn Docker Basics with .NET Core](core/docker/docker-basics-dotnet-core.md)
 ### [Building Docker Images for .NET Core Applications](core/docker/building-net-docker-images.md)
 ### [Visual Studio Tools for Docker](core/docker/visual-studio-tools-for-docker.md)
 ## [Unit Testing](core/testing/index.md)

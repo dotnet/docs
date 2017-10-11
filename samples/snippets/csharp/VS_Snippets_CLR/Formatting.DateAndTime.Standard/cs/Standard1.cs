@@ -56,7 +56,7 @@ public class Class1
    private static void ShowdSpecifier()
    {
       // d Format Specifier
-      // <Snippet1>
+      // <Snippet1> Lines 60-71
       DateTime date1 = new DateTime(2008,4, 10);
       Console.WriteLine(date1.ToString("d", DateTimeFormatInfo.InvariantInfo));
       // Displays 04/10/2008
@@ -75,7 +75,7 @@ public class Class1
    private static void ShowDSpecifier()
    {
       // D Format Specifier
-      // <Snippet2>
+      // <Snippet2> (Lines 79-88)
       DateTime date1 = new DateTime(2008, 4, 10);
       Console.WriteLine(date1.ToString("D", 
                         CultureInfo.CreateSpecificCulture("en-US")));
@@ -92,7 +92,7 @@ public class Class1
    private static void ShowfSpecifier()
    {
       // f Format Specifier
-      // <Snippet3>
+      // <Snippet3> (Lines 96-102)
       DateTime date1 = new DateTime(2008, 4, 10, 6, 30, 0);
       Console.WriteLine(date1.ToString("f", 
                         CultureInfo.CreateSpecificCulture("en-US")));
@@ -106,7 +106,7 @@ public class Class1
    private static void ShowFSpecifier()
    {
       // F Format Specifier
-      // <Snippet4>
+      // <Snippet4> Lines 109-116)
       DateTime date1 = new DateTime(2008, 4, 10, 6, 30, 0);
       Console.WriteLine(date1.ToString("F", 
                         CultureInfo.CreateSpecificCulture("en-US")));

@@ -112,7 +112,7 @@ A standard date and time format string uses a single format specifier to define 
   
 # [C#](#tab/csharp)
 
-[!code-csharp-interactive[Formatting.DateAndTime.Standard#17](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/stdandparsing1.cs#17)]
+[!code-csharp-interactive[Formatting.DateAndTime.Standard#17](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/stdandparsing1.cs#L9-L20)]
 
 # [Visual Basic](#tab/visual-basic)
 
@@ -137,7 +137,7 @@ A standard date and time format string uses a single format specifier to define 
 
 # [C#](#tab/csharp)
 
-[!code-csharp-interactive[Formatting.DateAndTime.Standard#1](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#1)]
+[!code-csharp-interactive[Formatting.DateAndTime.Standard#1](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#L60-L71)]
 
 # [Visual Basic](#tab/visual-basic)
 
@@ -163,7 +163,7 @@ A standard date and time format string uses a single format specifier to define 
   
 # [C#](#tab/csharp)
 
-[!code-csharp-interactive[Formatting.DateAndTime.Standard#2](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#2)]
+[!code-csharp-interactive[Formatting.DateAndTime.Standard#2](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#L79-L88)]
 
 # [Visual Basic](#tab/visual-basic)
 
@@ -193,7 +193,7 @@ A standard date and time format string uses a single format specifier to define 
   
 # [C#](#tab/csharp)
 
-[!code-csharp-interactive[Formatting.DateAndTime.Standard#3](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#3)]
+[!code-csharp-interactive[Formatting.DateAndTime.Standard#3](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#L96-L102)]
 
 # [Visual Basic](#tab/visual-basic)
 
@@ -222,7 +222,7 @@ A standard date and time format string uses a single format specifier to define 
 
 # [C#](#tab/csharp)
 
-[!code-csharp-interactive[Formatting.DateAndTime.Standard#4](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#4)]
+[!code-csharp-interactive[Formatting.DateAndTime.Standard#4](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#L109-L116)]
 
 # [Visual Basic](#tab/visual-basic)
 
@@ -251,7 +251,7 @@ A standard date and time format string uses a single format specifier to define 
   
 # [C#](#tab/csharp)
 
-[!code-csharp-interactive[Formatting.DateAndTime.Standard#5](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#5)]
+[!code-csharp[Formatting.DateAndTime.Standard#5](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#5)]
 
 # [Visual Basic](#tab/visual-basic)
 
@@ -280,7 +280,7 @@ A standard date and time format string uses a single format specifier to define 
   
 # [C#](#tab/csharp)
 
-[!code-csharp-interactive[Formatting.DateAndTime.Standard#6](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#6)]
+[!code-csharp[Formatting.DateAndTime.Standard#6](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#6)]
 
 # [Visual Basic](#tab/visual-basic)
 
@@ -305,7 +305,7 @@ A standard date and time format string uses a single format specifier to define 
 
 # [C#](#tab/csharp)
 
-[!code-csharp-interactive[Formatting.DateAndTime.Standard#7](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#7)]
+[!code-csharp[Formatting.DateAndTime.Standard#7](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#7)]
 
 # [Visual Basic](#tab/visual-basic)
 
@@ -337,7 +337,7 @@ A standard date and time format string uses a single format specifier to define 
 
 # [C#](#tab/csharp)
 
-[!code-csharp-interactive[Formatting.DateAndTime.Standard#8](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/o1.cs#8)]
+[!code-csharp[Formatting.DateAndTime.Standard#8](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/o1.cs#8)]
 
 # [Visual Basic](#tab/visual-basic)
 
@@ -349,7 +349,7 @@ A standard date and time format string uses a single format specifier to define 
   
 # [C#](#tab/csharp)
 
-[!code-csharp-interactive[Formatting.DateandTime.Standard#16](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Roundtrip1.cs#16)]
+[!code-csharp[Formatting.DateandTime.Standard#16](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Roundtrip1.cs#16)]
 
 # [Visual Basic](#tab/visual-basic)
 
@@ -377,7 +377,7 @@ A standard date and time format string uses a single format specifier to define 
   
 # [C#](#tab/csharp)
 
-[!code-csharp-interactive[Formatting.DateAndTime.Standard#9](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#9)]
+[!code-csharp[Formatting.DateAndTime.Standard#9](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#9)]
 
 # [Visual Basic](#tab/visual-basic)
 
@@ -399,7 +399,7 @@ A standard date and time format string uses a single format specifier to define 
 
 # [C#](#tab/csharp)
 
-[!code-csharp-interactive[Formatting.DateAndTime.Standard#10](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#10)]
+[!code-csharp[Formatting.DateAndTime.Standard#10](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#10)]
 
 # [Visual Basic](#tab/visual-basic)
 
@@ -426,7 +426,7 @@ A standard date and time format string uses a single format specifier to define 
  
 # [C#](#tab/csharp)
 
-[!code-csharp-interactive[Formatting.DateAndTime.Standard#11](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#11)]
+[!code-csharp[Formatting.DateAndTime.Standard#11](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#11)]
 
 # [Visual Basic](#tab/visual-basic)
 
@@ -453,7 +453,7 @@ A standard date and time format string uses a single format specifier to define 
   
 # [C#](#tab/csharp)
 
-[!code-csharp-interactive[Formatting.DateAndTime.Standard#12](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#12)]
+[!code-csharp[Formatting.DateAndTime.Standard#12](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#12)]
 
 # [Visual Basic](#tab/visual-basic)
 
@@ -473,7 +473,7 @@ A standard date and time format string uses a single format specifier to define 
  
 # [C#](#tab/csharp)
 
-[!code-csharp-interactive[Formatting.DateAndTime.Standard#13](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#13)]
+[!code-csharp[Formatting.DateAndTime.Standard#13](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#13)]
 
 # [Visual Basic](#tab/visual-basic)
 
@@ -504,7 +504,7 @@ A standard date and time format string uses a single format specifier to define 
   
 # [C#](#tab/csharp)
 
-[!code-csharp-interactive[Formatting.DateAndTime.Standard#14](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#14)]
+[!code-csharp[Formatting.DateAndTime.Standard#14](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#14)]
 
 # [Visual Basic](#tab/visual-basic)
 
@@ -529,7 +529,7 @@ A standard date and time format string uses a single format specifier to define 
   
 # [C#](#tab/csharp)
 
-[!code-csharp-interactive[Formatting.DateAndTime.Standard#15](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#15)]
+[!code-csharp[Formatting.DateAndTime.Standard#15](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#15)]
 
 # [Visual Basic](#tab/visual-basic)
 

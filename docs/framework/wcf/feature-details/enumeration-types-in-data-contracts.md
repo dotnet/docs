@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "data contracts [WCF], enumeration types"
 ms.assetid: b5d694da-68cb-4b74-a5fb-75108a68ec3b

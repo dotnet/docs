@@ -7,6 +7,9 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 ms.assetid: c0043c89-2192-43c9-986d-3ecec4dd8c9c
 caps.latest.revision: 40
 author: "Erikre"

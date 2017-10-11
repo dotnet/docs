@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+- "csharp"
+- "vb"
 helpviewer_keywords: 
   - "TPL dataflow library, linking to task scheduler in TPL"
   - "Task Parallel Library, dataflows"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorDebugExceptionUnwindCallbackType"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorDebugExceptionUnwindCallbackType enumeration [.NET Framework debugging]"
 ms.assetid: 783dce92-8a98-43db-8f78-888d943dd5b2

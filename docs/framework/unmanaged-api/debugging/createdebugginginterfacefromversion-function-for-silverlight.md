@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "CreateDebuggingInterfaceFromVersion"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CreateDebuggingInterfaceFromVersion function"
   - "debugging API [Silverlight]"

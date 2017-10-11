@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "/fullpaths"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "/fullpaths compiler option [C#]"
   - "absolute paths [C#]"

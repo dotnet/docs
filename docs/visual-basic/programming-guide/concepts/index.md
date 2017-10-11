@@ -5,8 +5,6 @@ ms.prod: .net
 ms.technology: 
   - "devlang-visual-basic"
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 ms.assetid: cc9cac84-61f6-476e-b8c7-9bae7749bd90
 caps.latest.revision: 4
 author: dotnet-bot

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataEmit2::DefineMethodSpec"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "DefineMethodSpec method [.NET Framework metadata]"
   - "IMetaDataEmit2::DefineMethodSpec method [.NET Framework metadata]"

@@ -27,7 +27,7 @@ Configure a tracking participant that listens to the tracking records being emit
   
 ## Syntax  
   
-```vb  
+```xml
    <tracking>    <participants>       <add name="String"            profileName="String"           type="String" />    </participants> </tracking>   
 ```  
   

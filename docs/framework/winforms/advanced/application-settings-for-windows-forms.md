@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "ClientApplicationSettings"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "application settings [Windows Forms]"
   - "Windows Forms, application settings"

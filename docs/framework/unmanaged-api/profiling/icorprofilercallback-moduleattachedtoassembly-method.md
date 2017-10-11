@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::ModuleAttachedToAssembly"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerCallback::ModuleAttachedToAssembly method [.NET Framework profiling]"
   - "ModuleAttachedToAssembly method [.NET Framework profiling]"

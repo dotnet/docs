@@ -14,8 +14,6 @@ f1_keywords:
   - "bc36647"
   - "vbc36647"
   - "vbc36644"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC36644"
   - "BC36647"

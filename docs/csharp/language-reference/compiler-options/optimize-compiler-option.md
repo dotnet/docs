@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "/optimize"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "/optimize compiler option [C#]"
   - "-o compiler option [C#]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerModuleEnum::Reset"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "Reset method, ICorProfilerModuleEnum interface [.NET Framework profiling]"
   - "ICorProfilerModuleEnum::Reset method [.NET Framework profiling]"

@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+- "csharp"
+- "vb"
 helpviewer_keywords: 
   - "parallel for loops, how to use local state"
 ms.assetid: 68384064-7ee7-41e2-90e3-71f00bde01bb

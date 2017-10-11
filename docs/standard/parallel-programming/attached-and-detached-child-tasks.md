@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+- "csharp"
+- "vb"
 helpviewer_keywords: 
   - "tasks, child tasks"
 ms.assetid: c95788bf-90a6-4e96-b7bc-58e36a228cc5

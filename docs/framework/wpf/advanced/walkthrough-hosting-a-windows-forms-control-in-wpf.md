@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "hosting Windows Forms control in WPF"
 ms.assetid: 9cb88415-39b0-4c46-80c4-ff325b674286

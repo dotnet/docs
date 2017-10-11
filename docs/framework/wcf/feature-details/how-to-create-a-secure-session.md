@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "security [WCF], creating a session"
 ms.assetid: b6f42b5a-bbf7-45cf-b917-7ec9fa7ae110

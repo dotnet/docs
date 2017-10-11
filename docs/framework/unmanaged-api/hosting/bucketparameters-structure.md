@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "BucketParameters"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "BucketParameters structure [.NET Framework hosting]"
 ms.assetid: 9432487e-f276-45d6-9a13-9a68024dbd46

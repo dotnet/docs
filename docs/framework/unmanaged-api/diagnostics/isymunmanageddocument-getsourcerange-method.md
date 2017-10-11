@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedDocument::GetSourceRange"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedDocument::GetSourceRange method [.NET Framework debugging]"
   - "GetSourceRange method [.NET Framework debugging]"

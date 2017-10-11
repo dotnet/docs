@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.Xor"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "exclusive OR operator"
   - "logical exclusion"

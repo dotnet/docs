@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IAssemblyName::Clone"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "Clone method, IAssemblyName interface [.NET Framework fusion]"
   - "IAssemblyName::Clone method [.NET Framework fusion]"

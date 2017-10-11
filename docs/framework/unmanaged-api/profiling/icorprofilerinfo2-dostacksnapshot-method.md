@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo2::DoStackSnapshot"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerInfo2::DoStackSnapshot method [.NET Framework profiling]"
   - "DoStackSnapshot method [.NET Framework profiling]"

@@ -13,8 +13,6 @@ f1_keywords:
   - "vb.FALSE"
   - "vb.TRUE"
   - "vb.Boolean"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Boolean data type"
   - "Boolean values, False keyword"

@@ -9,8 +9,8 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
+dev_langs:
+ - "vb"
 helpviewer_keywords: 
   - "inheritance, custom controls"
   - "inheritance, control"

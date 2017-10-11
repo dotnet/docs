@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedReader2"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedReader2 interface [.NET Framework debugging]"
 ms.assetid: a01a881b-82a3-4b3e-a3a9-9dc305c2e5f7

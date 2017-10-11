@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "params_CSharpKeyword"
   - "params"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "parameters [C#], params"
   - "params keyword [C#]"

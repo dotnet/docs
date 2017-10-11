@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.as"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "constraints, Visual Basic generic types"
   - "As keyword, statement syntax"

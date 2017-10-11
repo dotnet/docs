@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "sbyte_CSharpKeyword"
   - "sbyte"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "sbyte keyword [C#]"
 ms.assetid: 1a9c7b48-73d1-4d33-b485-c4faf0a816bc

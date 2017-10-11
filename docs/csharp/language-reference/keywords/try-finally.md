@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "finally"
   - "finally_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "finally keyword [C#]"
   - "try-finally statement [C#]"

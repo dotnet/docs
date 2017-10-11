@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.Array"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "arrays [Visual Basic]"
   - "Visual Basic, arrays"

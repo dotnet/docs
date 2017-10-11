@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vbrTextFieldParser_BufferExceededMaxSize"
-dev_langs: 
-  - "VB"
 ms.assetid: 36565e82-8458-4a08-86af-d9a7a2c32937
 caps.latest.revision: 8
 author: dotnet-bot

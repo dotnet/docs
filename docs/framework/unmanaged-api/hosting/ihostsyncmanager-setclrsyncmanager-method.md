@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostSyncManager::SetCLRSyncManager"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostSyncManager::SetCLRSyncManager method [.NET Framework hosting]"
   - "SetCLRSyncManager method [.NET Framework hosting]"

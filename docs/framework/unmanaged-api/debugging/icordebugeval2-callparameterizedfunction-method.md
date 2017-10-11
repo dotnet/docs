@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEval2::CallParameterizedFunction"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugEval2::CallParameterizedFunction method [.NET Framework debugging]"
   - "CallParameterizedFunction method [.NET Framework debugging]"

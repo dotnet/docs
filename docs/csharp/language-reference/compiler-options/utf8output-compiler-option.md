@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "/utf8output"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "utf8output compiler option [C#]"
   - "/utf8output compiler option [C#]"

@@ -13,8 +13,6 @@ f1_keywords:
   - "vb.QueryOrderBy"
   - "vb.QueryAscending"
   - "vb.QueryDescending"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "queries [Visual Basic], Order By"
   - "Order By clause"

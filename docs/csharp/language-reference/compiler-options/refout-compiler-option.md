@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "/refout"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "refout compiler option [C#]"
   - "/refout compiler option [C#]"

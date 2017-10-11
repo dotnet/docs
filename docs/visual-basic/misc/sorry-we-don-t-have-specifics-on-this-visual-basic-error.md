@@ -3048,8 +3048,6 @@ f1_keywords:
   - "bc31432"
   - "bc30233"
   - "bc30829"
-dev_langs: 
-  - "VB"
 ms.assetid: 0938efc2-e205-450b-9314-99951fcbd702
 caps.latest.revision: 21
 author: dotnet-bot

@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "/win32icon"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "win32icon compiler option [C#]"
   - "/win32icon compiler option [C#]"

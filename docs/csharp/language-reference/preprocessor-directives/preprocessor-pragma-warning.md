@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "#pragma warning"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "#pragma warning [C#]"
 ms.assetid: 723493d5-9753-4cec-babb-54e2b8eb36b6

@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb./"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "division operator, floating point"
   - "floating-point numbers, division operator"

@@ -9,8 +9,6 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "Button control [Windows Forms], selecting"
 ms.assetid: fe2fc058-5118-4f70-b264-6147d64a7a8d

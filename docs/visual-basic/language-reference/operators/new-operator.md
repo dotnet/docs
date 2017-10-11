@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.new"
   - "vb.NewConstraint"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "constraints, Visual Basic generic types"
   - "generics [Visual Basic], constraints"

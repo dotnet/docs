@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.Interface"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "interface statement [Visual Basic]"
   - "interfaces, interface definition"

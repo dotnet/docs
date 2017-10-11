@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "bc36810"
   - "vbc36810"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC36810"
 ms.assetid: 9323b5d2-ba14-4e49-91f1-9ad647162144

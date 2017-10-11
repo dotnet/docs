@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugProcess5::GetTypeFields"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetTypeFields method, ICorDebugProcess5 interface [.NET Framework debugging]"
   - "ICorDebugProcess5::GetTypeFields method [.NET Framework debugging]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugThread2::GetVolatileOSThreadID"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetVolatileOSThreadID method [.NET Framework debugging]"
   - "ICorDebugThread2::GetVolatileOSThreadID method [.NET Framework debugging]"

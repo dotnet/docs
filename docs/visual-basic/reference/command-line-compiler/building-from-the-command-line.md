@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "builds [Visual Basic], command-line"
   - "Visual Basic compiler, about Visual Basic compiler"

@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-bcl"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "expose a server-side UI Automation provider"
   - "UI Automation, server-side provider, exposing"

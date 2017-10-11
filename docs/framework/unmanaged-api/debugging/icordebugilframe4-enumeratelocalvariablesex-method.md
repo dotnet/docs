@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
+dev_langs:
+ - "cpp"
 api_name: 
   - "ICorDebugILFrame4.EnumerateLocalVariablesEx"
 api_location: 
   - "mscordbi.dll"
 api_type: 
   - "COM"
-dev_langs: 
-  - "C++"
 ms.assetid: 6f60aae6-70ec-4c4c-963a-138df98c4668
 topic_type: 
   - "apiref"
@@ -32,7 +32,7 @@ manager: "wpickett"
   
 ## Syntax  
   
-```vb  
+```cpp
 HRESULT EnumerateLocalVariablesEx(  
    [in] ILCodeKind flags,   
    [out] ICorDebugValueEnum **ppValueEnum  

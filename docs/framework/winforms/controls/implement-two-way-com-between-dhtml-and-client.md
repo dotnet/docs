@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 f1_keywords: 
   - "WebBrowser.ObjectForScripting"
   - "WebBrowser.Document"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "WebBrowser control [Windows Forms], examples"
   - "communications, DHTML and client applications"

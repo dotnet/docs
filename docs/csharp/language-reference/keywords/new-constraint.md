@@ -5,8 +5,6 @@ ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "new constraint keyword [C#]"
 ms.assetid: 58850b64-cb97-4136-be50-1f3bc7fc1da9

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostCrst::TryEnter"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostCrst::TryEnter method [.NET Framework hosting]"
   - "TryEnter method [.NET Framework hosting]"

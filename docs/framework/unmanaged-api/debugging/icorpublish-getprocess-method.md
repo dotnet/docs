@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorPublish::GetProcess"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorPublish::GetProcess method [.NET Framework debugging]"
   - "GetProcess method, ICorPublish interface [.NET Framework debugging]"

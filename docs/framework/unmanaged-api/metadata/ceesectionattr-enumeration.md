@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CeeSectionAttr"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CeeSectionAttr enumeration [.NET Framework metadata]"
 ms.assetid: 0db51881-b869-4677-a715-1726a9216489

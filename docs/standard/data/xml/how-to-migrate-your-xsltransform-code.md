@@ -8,11 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+dev_langs:
+- "csharp"
+- "vb"
 ms.assetid: 910beb2f-cfb3-4e8e-9936-f7e0c5f4064a
 caps.latest.revision: 2
 author: "mairaw"

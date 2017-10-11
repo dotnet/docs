@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataEmit::SetMethodImplFlags"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataEmit::SetMethodImplFlags method [.NET Framework metadata]"
   - "SetMethodImpFlags method [.NET Framework metadata]"

@@ -17,8 +17,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "CreateApplicationContext"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CreateApplicationContext function [.NET Framework fusion]"
 ms.assetid: 7bf8a141-b2c0-4058-9885-1cef7dcaa811

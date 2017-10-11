@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IBindingDisplay"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IBindingDisplay interface [.NET Framework debugging]"
 ms.assetid: 3367166f-31fe-43d0-8107-2e786f984e50

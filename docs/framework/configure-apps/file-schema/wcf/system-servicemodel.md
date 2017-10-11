@@ -12,9 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#system.ServiceModel"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.ServiceModel"
-dev_langs: 
-  - "VB"
-  - "CSharp"
 helpviewer_keywords: 
   - "<system.serviceModel> element"
   - "system.serviceModel element"

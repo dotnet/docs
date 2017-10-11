@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+- "csharp"
+- "vb"
 helpviewer_keywords: 
   - "parallel programming, pitfalls"
 ms.assetid: 1e357177-e699-4b8f-9e49-56d3513ed128

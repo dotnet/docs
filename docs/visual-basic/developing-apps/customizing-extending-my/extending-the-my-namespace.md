@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.AddingMyExtensions"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "My namespace, customizing"
   - "My namespace"

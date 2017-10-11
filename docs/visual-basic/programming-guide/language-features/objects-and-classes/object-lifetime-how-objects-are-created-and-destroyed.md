@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.Constructor"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "destructors, object lifetime"
   - "Sub Finalize destructor"

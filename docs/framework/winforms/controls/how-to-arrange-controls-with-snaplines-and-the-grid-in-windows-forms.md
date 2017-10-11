@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "GridSize"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "snap to grid, Windows Forms Designer"
   - "Windows Forms, grid options in designer"

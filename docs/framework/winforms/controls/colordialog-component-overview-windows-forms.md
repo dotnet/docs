@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "ColorDialog"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "color dialog box, about color dialog box"
   - "ColorDialog component, about ColorDialog"

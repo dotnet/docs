@@ -9,8 +9,6 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "MainMenu control [Windows Forms]"
 ms.assetid: 7cd22f29-828b-42e8-9c88-f08aa4533850

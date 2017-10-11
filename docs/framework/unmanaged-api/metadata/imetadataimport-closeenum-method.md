@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataImport::CloseEnum"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataImport::CloseEnum method [.NET Framework metadata]"
   - "CloseEnum method, IMetaDataImport interface [.NET Framework metadata]"

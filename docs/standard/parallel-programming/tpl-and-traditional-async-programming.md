@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+- "csharp"
+- "vb"
 helpviewer_keywords: 
   - "tasks, with other asynchronous models"
 ms.assetid: e7b31170-a156-433f-9f26-b1fc7cd1776f

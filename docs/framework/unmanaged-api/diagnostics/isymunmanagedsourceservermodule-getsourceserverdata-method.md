@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedSourceServerModule::GetSourceServerData"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedSourceServerModule::GetSourceServerData method [.NET Framework debugging]"
   - "GetSourceServerData method [.NET Framework debugging]"

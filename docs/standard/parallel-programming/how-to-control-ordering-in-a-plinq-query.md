@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+- "csharp"
+- "vb"
 helpviewer_keywords: 
   - "PLINQ queries, how to control ordering"
 ms.assetid: c67eccc7-004d-4b2f-987e-919cbbd62ef7

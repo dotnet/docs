@@ -13,8 +13,6 @@ f1_keywords:
   - "vb.#Const"
   - "#vb.Const"
   - "#Const"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "#Const directive"
   - "conditional compilation, directives"

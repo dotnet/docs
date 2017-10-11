@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "adorners, implementing"
 ms.assetid: 56ae32b6-0599-455c-b52f-2ff97e6f1ec2

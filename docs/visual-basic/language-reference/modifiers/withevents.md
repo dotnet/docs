@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.WithEvents"
   - "WithEvents"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "WithEvents keyword"
 ms.assetid: 19d461f5-d72f-4de9-8c1d-0a6650316990

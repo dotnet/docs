@@ -9,6 +9,8 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+- "csharp"
 applies_to: 
   - "Windows 10"
   - "Windows 8"

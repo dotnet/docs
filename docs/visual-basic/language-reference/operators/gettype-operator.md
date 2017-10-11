@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.GetType"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "GetType operator"
   - "GetType keyword"

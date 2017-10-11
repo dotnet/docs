@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "foreach"
   - "foreach_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "foreach keyword [C#]"
   - "foreach statement [C#]"

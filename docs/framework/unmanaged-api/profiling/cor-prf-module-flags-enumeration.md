@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "COR_PRF_MODULE_FLAGS"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "COR_PRF_MODULE_FLAGS enumeration [.NET Framework profiling]"
 ms.assetid: 7bc3a938-0df1-4739-9ff1-89cff454b704

@@ -7,11 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/sectionName"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "custom element"
 ms.assetid: 2303031f-4c1d-4df4-bca1-e9bd96ca40dc

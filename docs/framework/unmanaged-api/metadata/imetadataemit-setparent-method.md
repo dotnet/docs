@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataEmit::SetParent"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SetParent method [.NET Framework metadata]"
   - "IMetaDataEmit::SetParent method [.NET Framework metadata]"

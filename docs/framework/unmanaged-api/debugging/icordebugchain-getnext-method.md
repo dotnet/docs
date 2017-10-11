@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugChain::GetNext"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetNext method [.NET Framework debugging]"
   - "ICorDebugChain::GetNext method [.NET Framework debugging]"

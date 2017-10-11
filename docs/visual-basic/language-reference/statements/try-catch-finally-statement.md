@@ -15,8 +15,6 @@ f1_keywords:
   - "vb.Finally"
   - "vb.Catch"
   - "vb.Try"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Try...Catch...Finally statements"
   - "Try statement"

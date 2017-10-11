@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "bc32022"
   - "vbc32022"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC32022"
 ms.assetid: 4dcfcb8d-a9fa-46a7-a034-29d9ff3a59b3

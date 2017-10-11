@@ -31,9 +31,9 @@ Represents a collection of subscribed states from the tracked workflow instance 
   
 ## Syntax  
   
-```vb  
+```xml
 <tracking>   <trackingProfile name="Name">       <workflow>          <workflowInstanceQueries>             <workflowInstanceQuery>                <states>                   <state name="Name"/>                </states>            </workflowInstanceQuery>         </workflowInstanceQueries>       </workflow>   </trackingProfile></tracking>  
-```  
+```
   
 ## Attributes and Elements  
  The following sections describe attributes, child elements, and parent elements.  

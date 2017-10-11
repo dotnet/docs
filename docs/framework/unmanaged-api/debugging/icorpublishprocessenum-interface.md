@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorPublishProcessEnum"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorPublishProcessEnum interface [.NET Framework debugging]"
 ms.assetid: aac8fcf9-ac09-437c-bd5c-2fda14ae1007

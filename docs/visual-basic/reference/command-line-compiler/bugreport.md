@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "-bugreport compiler option [Visual Basic]"
   - "bugreport compiler option [Visual Basic]"

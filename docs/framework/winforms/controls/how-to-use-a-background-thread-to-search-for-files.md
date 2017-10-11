@@ -9,8 +9,9 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "Multithreaded Windows Forms Control sample [Windows Forms]"
   - "custom controls [Windows Forms], multithreading"

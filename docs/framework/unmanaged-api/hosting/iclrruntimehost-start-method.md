@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRRuntimeHost::Start"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRRuntimeHost::Start method [.NET Framework hosting]"
   - "Start method, ICLRRuntimeHost interface [.NET Framework hosting]"

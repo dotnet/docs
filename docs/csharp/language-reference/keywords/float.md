@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "float"
   - "float_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "float keyword [C#]"
   - "floating-point numbers [C#], float keyword"

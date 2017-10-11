@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "nameof_CSharpKeyword"
   - "nameof"
-dev_langs: 
-  - "CSharp"
 ms.assetid: 33601bf3-cc2c-4496-846d-f9679bccf2a7
 caps.latest.revision: 3
 author: "BillWagner"

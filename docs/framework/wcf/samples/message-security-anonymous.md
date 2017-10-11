@@ -9,9 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
 helpviewer_keywords: 
   - "WS Security"
 ms.assetid: c321cbf9-8c05-4cce-b5a5-4bf7b230ee03

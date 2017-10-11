@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "/netcf"
   - "netcf"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "-netcf compiler option [Visual Basic]"
   - "netcf compiler option [Visual Basic]"

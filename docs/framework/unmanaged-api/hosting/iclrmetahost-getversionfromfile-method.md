@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRMetaHost::GetVersionFromFile"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRMetaHost::GetVersionFromFile method [.NET Framework hosting]"
   - "GetVersionFromFile method [.NET Framework hosting]"

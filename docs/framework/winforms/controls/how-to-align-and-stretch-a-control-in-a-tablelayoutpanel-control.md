@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "net.ComponentModel.StyleCollectionEditor.TLP.AlignStretchCtrl"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "TableLayoutPanel control [Windows Forms], stretching controls"
   - "controls [Windows Forms], stretching"

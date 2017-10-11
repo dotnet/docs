@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback3::ProfilerAttachComplete"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ProfilerAttachComplete method [.NET Framework profiling]"
   - "ICorProfilerCallback3::ProfilerAttachComplete method [.NET Framework profiling]"

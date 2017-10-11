@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "list"
   - "<list>"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "list C# XML tag"
   - "listheader C# XML tag"

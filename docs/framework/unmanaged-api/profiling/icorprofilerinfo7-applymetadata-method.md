@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "cpp"
 api_name: 
   - "ICorProfilerInfo7.ApplyMetaData"
 api_location: 
   - "mscorwks.dll"
 api_type: 
   - "COM"
-dev_langs: 
-  - "C++"
 ms.assetid: a1bfb649-4584-4d35-b3e6-8fe59b53992a
 caps.latest.revision: 4
 author: "rpetrusha"
@@ -30,7 +30,7 @@ manager: "wpickett"
   
 ## Syntax  
   
-```vb  
+```cpp
 HRESULT ApplyMetaData(  
         [in] ModuleID moduleID  
 );  

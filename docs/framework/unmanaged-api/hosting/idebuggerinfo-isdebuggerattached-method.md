@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IsDebuggerAttached"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IDebuggerInfo::IsDebuggerAttached method [.NET Framework hosting]"
   - "IsDebuggerAttached method, IDebuggerInfo interface [.NET Framework hosting]"

@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.Imports"
   - "imports"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "declared element names [Visual Basic], qualification"
   - "imports [Visual Basic]"

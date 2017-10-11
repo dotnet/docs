@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::ManagedToUnmanagedTransition"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ManagedToUnmanagedTransition method [.NET Framework profiling]"
   - "ICorProfilerCallback::ManagedToUnmanagedTransition method [.NET Framework profiling]"

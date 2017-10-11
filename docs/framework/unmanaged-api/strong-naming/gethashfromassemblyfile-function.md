@@ -17,8 +17,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "GetHashFromAssemblyFile"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetHashFromAssemblyFile function [.NET Framework strong naming]"
 ms.assetid: 751ed69f-b7ab-4e07-80de-e17ca9319b0c

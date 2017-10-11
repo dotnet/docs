@@ -13,8 +13,6 @@ f1_keywords:
   - "CS5001"
   - "main_CSharpKeyword"
   - "Main"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "Main method [C#]"
   - "C# language, command-line arguments"

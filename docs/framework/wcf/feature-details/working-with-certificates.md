@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "certificates [WCF]"
 ms.assetid: 6ffb8682-8f07-4a45-afbb-8d2487e9dbc3

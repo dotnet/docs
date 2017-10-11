@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IAppIdAuthority"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IAppIdAuthority interface [.NET Framework fusion]"
 ms.assetid: ec354fa1-1efd-41b0-bc43-b90597b6e253

@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "/filealign"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "/alignment compiler option [C#]"
   - "filealign compiler option [C#]"

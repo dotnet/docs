@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbc40039"
   - "bc40039"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC40039"
 ms.assetid: c5bd5914-ae71-416a-8bed-f76f644f78be

@@ -9,6 +9,8 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+- "cpp"
 helpviewer_keywords: 
   - "hosting WPF content in Win32 window"
 ms.assetid: 38ce284a-4303-46dd-b699-c9365b22a7dc

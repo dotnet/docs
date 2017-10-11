@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "COR_GC_STATS"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "COR_GC_STATS structure [.NET Framework hosting]"
 ms.assetid: 8d4ff73e-739b-40f6-9349-359fbc99c2f9

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugThread3::CreateStackWalk"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CreateStackWalk method [.NET Framework debugging]"
   - "ICorDebugThread3::CreateStackWalk method [.NET Framework debugging]"

@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.AutoProperty"
   - "vb.AutoImplementedProperty"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "properties [Visual Basic], auto-implemented"
   - "properties, auto-implemented [Visual Basic]"

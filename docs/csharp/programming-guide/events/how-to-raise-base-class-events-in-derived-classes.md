@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "events [C#], in derived classes"
 ms.assetid: 2d20556a-0aad-46fc-845e-f85d86ea617a

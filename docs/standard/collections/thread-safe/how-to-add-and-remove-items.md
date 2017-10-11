@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+- "csharp"
+- "vb"
 helpviewer_keywords: 
   - "thread-safe collections, concurrent dictionary"
 ms.assetid: 81b64b95-13f7-4532-9249-ab532f629598

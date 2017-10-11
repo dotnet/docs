@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.XmlPropertyExtensionValue"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Value property [Visual Basic]"
   - "Visual Basic code, accessing XML"

@@ -5,8 +5,6 @@ ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "conversions [C#], implicit numeric"
   - "implicit numeric conversions [C#]"

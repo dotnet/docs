@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.String"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "strings [Visual Basic], character"
   - "strings [Visual Basic], fixed-length"

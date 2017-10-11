@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataTables::GetBlob"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetBlob method [.NET Framework metadata]"
   - "IMetaDataTables::GetBlob method [.NET Framework metadata]"

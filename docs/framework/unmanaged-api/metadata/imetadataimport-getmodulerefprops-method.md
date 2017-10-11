@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataImport::GetModuleRefProps"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetModuleRefProps method [.NET Framework metadata]"
   - "IMetaDataImport::GetModuleRefProps method [.NET Framework metadata]"

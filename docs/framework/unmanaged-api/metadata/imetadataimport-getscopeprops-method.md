@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataImport::GetScopeProps"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataImport::GetScopeProps method [.NET Framework metadata]"
   - "GetScopeProps method [.NET Framework metadata]"

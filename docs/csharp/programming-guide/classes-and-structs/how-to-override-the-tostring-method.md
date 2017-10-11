@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "ToString method, overriding in C#"
   - "inheritance [C#], overriding OnPaint and ToString"

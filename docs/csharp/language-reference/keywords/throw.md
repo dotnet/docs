@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "throw"
   - "throw_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "throw statement [C#]"
   - "throw expression [C#]"

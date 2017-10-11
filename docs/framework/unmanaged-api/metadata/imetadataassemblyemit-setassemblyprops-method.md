@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataAssemblyEmit::SetAssemblyProps"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SetAssemblyProps method [.NET Framework metadata]"
   - "IMetaDataAssemblyEmit::SetAssemblyProps method [.NET Framework metadata]"

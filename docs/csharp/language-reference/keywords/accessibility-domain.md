@@ -5,8 +5,6 @@ ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "accessibility domain [C#]"
 ms.assetid: 8af779c1-275b-44be-a864-9edfbca71bcc

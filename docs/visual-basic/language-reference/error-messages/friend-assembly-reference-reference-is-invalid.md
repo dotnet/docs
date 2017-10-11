@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbc31535"
   - "bc31535"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC31535"
 ms.assetid: 6540c1d0-bb19-4051-a579-2e4f9094585e

@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.Integer"
   - "Integer"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "numbers, whole"
   - "enumerated values"

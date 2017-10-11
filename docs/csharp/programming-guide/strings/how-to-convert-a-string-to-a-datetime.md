@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "strings [C#], converting to DateTIme"
 ms.assetid: 88abef11-3a06-4b49-8dd2-61ed0e876fc3

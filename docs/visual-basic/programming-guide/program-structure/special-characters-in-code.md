@@ -16,8 +16,6 @@ f1_keywords:
   - "vb.!"
   - "vb.."
   - "vb.:"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "special characters, in code"
   - "parentheses, using in code"

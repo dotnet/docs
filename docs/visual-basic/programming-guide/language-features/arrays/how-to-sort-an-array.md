@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "Array.Sort"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "arrays [Visual Basic], sorting"
   - "examples [Visual Basic], arrays"

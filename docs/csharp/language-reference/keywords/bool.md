@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "bool_CSharpKeyword"
   - "bool"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "bool keyword [C#]"
 ms.assetid: 551cfe35-2632-4343-af49-33ad12da08e2

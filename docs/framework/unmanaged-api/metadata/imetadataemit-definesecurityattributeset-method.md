@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataEmit::DefineSecurityAttributeSet"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataEmit::DefineSecurityAttributeSet method [.NET Framework metadata]"
   - "DefineSecurityAttributeSet method [.NET Framework metadata]"

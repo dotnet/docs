@@ -8,8 +8,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "structs [C#], about structs"
   - "classes [C#], overview"

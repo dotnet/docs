@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "whereconstraint"
   - "whereconstraint_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "where (generic type constraint) [C#]"
 ms.assetid: d7aa871b-0714-416a-bab2-96f87ada4310

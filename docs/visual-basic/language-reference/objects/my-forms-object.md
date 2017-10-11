@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "My.Forms"
   - "My.MyProject.Forms"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "My.Forms object"
 ms.assetid: f6bff4e6-6769-4294-956b-037aa6106d2a

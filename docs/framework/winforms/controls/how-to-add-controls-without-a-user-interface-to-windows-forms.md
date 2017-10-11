@@ -9,10 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+- "csharp"
+- "vb"
+- "cpp"
 f1_keywords: 
   - "NonVisualSelection"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "invisible controls"
   - "Windows Forms controls, adding to form"

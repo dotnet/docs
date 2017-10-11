@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "explicit_CSharpKeyword"
   - "explicit"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "explicit keyword [C#]"
 ms.assetid: cfb8f42a-e411-4db2-af9b-796b05644846

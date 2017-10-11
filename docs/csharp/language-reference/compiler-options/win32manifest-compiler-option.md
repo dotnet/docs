@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "/win32manifest"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "/win32manifest compiler option [C#]"
   - "win32manifest compiler option [C#]"

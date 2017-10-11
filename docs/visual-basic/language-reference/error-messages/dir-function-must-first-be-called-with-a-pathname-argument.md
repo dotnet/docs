@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vbrDIR_IllegalCall"
-dev_langs: 
-  - "VB"
 ms.assetid: 7b5d149f-be91-4ac3-8262-86a360894e7d
 caps.latest.revision: 7
 author: dotnet-bot

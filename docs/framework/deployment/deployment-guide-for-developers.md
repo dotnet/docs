@@ -6,11 +6,6 @@ ms.prod: ".net-framework"
 ms.technology: 
   - "dotnet-clr"
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "developer's guide, deploying .NET Framework"
   - "deployment [.NET Framework], developer's guide"

@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "queries [LINQ in Visual Basic], stored procedure calls"
   - "stored procedures sample [Visual Basic]"

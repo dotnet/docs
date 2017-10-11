@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostTask::Start"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostTask::Start method [.NET Framework hosting]"
   - "Start method, IHostTask interface [.NET Framework hosting]"

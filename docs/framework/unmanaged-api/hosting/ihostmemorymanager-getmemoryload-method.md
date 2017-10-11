@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostMemoryManager::GetMemoryLoad"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostMemoryManager::GetMemoryLoad method [.NET Framework hosting]"
   - "GetMemoryLoad method [.NET Framework hosting]"

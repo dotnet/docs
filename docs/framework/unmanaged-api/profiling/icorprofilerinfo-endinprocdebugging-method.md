@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo::EndInprocDebugging"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerInfo::EndInprocDebugging method [.NET Framework profiling]"
   - "EndInprocDebugging method [.NET Framework profiling]"

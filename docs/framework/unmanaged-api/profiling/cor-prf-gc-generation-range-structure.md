@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "COR_PRF_GC_GENERATION_RANGE"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "COR_PRF_GC_GENERATION_RANGE structure [.NET Framework profiling]"
 ms.assetid: e7e07273-8d10-4a68-807e-59634e3f8c5e

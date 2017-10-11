@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRMetaHost::QueryLegacyV2RuntimeBinding"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "QueryLegacyV2RuntimeBinding method [.NET Framework hosting]"
   - "ICLRMetaHost::QueryLegacyV2RuntimeBinding method [.NET Framework hosting]"

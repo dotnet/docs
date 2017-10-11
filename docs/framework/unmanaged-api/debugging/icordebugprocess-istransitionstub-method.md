@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugProcess::IsTransitionStub"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugProcess::IsTransitionStub method [.NET Framework debugging]"
   - "IsTransitionStub method [.NET Framework debugging]"

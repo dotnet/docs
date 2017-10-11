@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRTaskManager::CreateTask"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRTaskManager::CreateTask method [.NET Framework hosting]"
   - "CreateTask method, ICLRTaskManager interface [.NET Framework hosting]"

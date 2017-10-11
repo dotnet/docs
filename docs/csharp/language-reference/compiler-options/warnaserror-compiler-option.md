@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "/warnaserror"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "/warnaserror compiler option [C#]"
   - "-warnaserror compiler option [C#]"

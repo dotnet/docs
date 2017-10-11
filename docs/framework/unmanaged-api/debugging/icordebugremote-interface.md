@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugRemote"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugRemote interface [.NET Framework debugging]"
 ms.assetid: 53d073c6-fa02-40d2-82e1-b9452bb6abaa

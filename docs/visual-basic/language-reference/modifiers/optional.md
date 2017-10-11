@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.Optional"
   - "vb.optional"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Optional keyword, contexts"
   - "Optional keyword"

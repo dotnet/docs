@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataDispenserEx::FindAssembly"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "FindAssembly method [.NET Framework metadata]"
   - "IMetaDataDispenserEx::FindAssembly method [.NET Framework metadata]"

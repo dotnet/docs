@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+- "csharp"
+- "vb"
 helpviewer_keywords: 
   - "PLINQ queries, pitfalls"
 ms.assetid: 75a38b55-4bc4-488a-87d5-89dbdbdc76a2

@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "Module"
   - "vb.Module"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "modules, classes"
   - "modules"

@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.NotOverridable"
   - "NotOverridable"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "sealed methods"
   - "NotOverridable keyword"

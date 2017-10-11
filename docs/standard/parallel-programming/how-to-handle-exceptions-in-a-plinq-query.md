@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+- "csharp"
+- "vb"
 helpviewer_keywords: 
   - "PLINQ queries, how to handle exceptions"
 ms.assetid: 8d56ff9b-a571-4d31-b41f-80c0b51b70a5

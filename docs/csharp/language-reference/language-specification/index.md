@@ -5,8 +5,6 @@ ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "reference"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "C# language, specification"
   - "what's new [C#], language specification"

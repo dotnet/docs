@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "while_CSharpKeyword"
   - "while"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "while keyword [C#]"
 ms.assetid: 72a0765c-6852-4aca-b327-4a11cb7f5c59

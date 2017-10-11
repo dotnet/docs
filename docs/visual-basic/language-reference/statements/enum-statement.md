@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.Enum"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "enumerated constants"
   - "Enum statement"

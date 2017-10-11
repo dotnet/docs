@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "Grid control, creating, grid instance"
 ms.assetid: b2f07626-9df8-43b8-8d36-492f3cb42837

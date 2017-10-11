@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataTables::GetGuid"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetGuid method [.NET Framework metadata]"
   - "IMetaDataTables::GetGuid method [.NET Framework metadata]"

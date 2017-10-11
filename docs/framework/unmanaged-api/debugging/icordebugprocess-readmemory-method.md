@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugProcess::ReadMemory"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ReadMemory method [.NET Framework debugging]"
   - "ICorDebugProcess::ReadMemory method [.NET Framework debugging]"

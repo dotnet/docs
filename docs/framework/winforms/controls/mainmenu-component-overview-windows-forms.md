@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "MenuItem"
   - "MainMenu"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "MainMenu control [Windows Forms], about MainMenu control"
   - "menus"

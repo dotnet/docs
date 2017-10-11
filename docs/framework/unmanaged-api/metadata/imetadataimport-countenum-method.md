@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataImport::CountEnum"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CountEnum method [.NET Framework metadata]"
   - "IMetaDataImport::CountEnum method [.NET Framework metadata]"

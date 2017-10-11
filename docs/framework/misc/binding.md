@@ -7,9 +7,6 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "VB"
-  - "CSharp"
 ms.assetid: 666183d6-4d1f-45c7-ac64-bdf93ee8f36f
 caps.latest.revision: 13
 author: "Erikre"

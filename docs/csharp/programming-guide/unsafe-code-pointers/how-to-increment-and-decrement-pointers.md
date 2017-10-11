@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "pointers [C#], increment and decrement"
   - "pointer expressions [C#], increment and decrement"

@@ -10,8 +10,6 @@ f1_keywords:
   - "remove"
   - "event_CSharpKeyword"
   - "add"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "event keyword [C#]"
 ms.assetid: 7858fd85-153b-4259-85d0-6aa13c35f174

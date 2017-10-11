@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "lock_CSharpKeyword"
   - "lock"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "lock keyword [C#]"
 ms.assetid: 656da1a4-707e-4ef6-9c6e-6d13b646af42

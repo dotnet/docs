@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "/checked"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "checked compiler option [C#]"
   - "-checked compiler option [C#]"

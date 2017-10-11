@@ -8,8 +8,6 @@ ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 ms.assetid: 49794de4-64c3-473c-b8ed-fe98835df69c
 caps.latest.revision: 4
 author: dotnet-bot

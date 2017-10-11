@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "sdkpath"
   - "/sdkpath"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "-sdkpath compiler option [Visual Basic]"
   - "/sdkpath compiler option [Visual Basic]"

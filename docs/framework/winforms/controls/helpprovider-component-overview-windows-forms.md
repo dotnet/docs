@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "HelpProvider"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "HelpProvider component [Windows Forms], about HelpProvider component"
   - "Help, adding to Windows applications"

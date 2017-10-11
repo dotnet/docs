@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataImport::GetFieldProps"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataImport::GetFieldProps method [.NET Framework metadata]"
   - "GetFieldProps method [.NET Framework metadata]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostMemoryManager::AcquiredVirtualAddressSpace"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostMemoryManager::AcquiredVirtualAddressSpace method [.NET Framework hosting]"
   - "AcquiredVirtualAddressSpace method [.NET Framework hosting]"

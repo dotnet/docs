@@ -20,7 +20,7 @@ Applies policy to a type, if that policy has been applied to the containing type
   
 ## Syntax  
   
-```vb  
+```xml
 <ImpliesType Name="type_name"  
              Activate="policy_type"  
              Browse="policy_type"  

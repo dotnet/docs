@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataFilter::IsTokenMarked"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataFilter::IsTokenMarked method [.NET Framework metadata]"
   - "IsTokenMarked method [.NET Framework metadata]"

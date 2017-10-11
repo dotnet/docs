@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorSymSearchPolicyAttributes"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorSymSearchPolicyAttributes enumeration [.NET Framework debugging]"
 ms.assetid: 03abde84-930a-49d3-bac3-23abb34a0184

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback2::FinalizeableObjectQueued"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "FinalizeableObjectQueued method [.NET Framework profiling]"
   - "ICorProfilerCallback2::FinalizeableObjectQueued method [.NET Framework profiling]"

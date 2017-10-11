@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "/win32res"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "win32res compiler option"
   - "/win32res compiler option [C#]"

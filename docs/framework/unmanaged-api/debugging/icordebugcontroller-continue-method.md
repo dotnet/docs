@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugController::Continue"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "Continue method [.NET Framework debugging]"
   - "ICorDebugController::Continue method [.NET Framework debugging]"

@@ -883,8 +883,6 @@ f1_keywords:
   - "CS8168"
   - "CS8172"
   - "CS8179"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "errors [C#], additional information"
 ms.assetid: 48320e4a-6e17-45a6-9966-88c6ec89bd2f

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "NOTIFY_FILTER"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "NOTIFY_FILTER enumeration [.NET Framework debugging]"
 ms.assetid: 4789d08f-8683-45d3-ac30-73d48c61e470

@@ -5,8 +5,6 @@ ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "access modifiers [C#], accessibility level restrictions"
 ms.assetid: 987e2f22-46bf-4fea-80ee-270b9cd01045

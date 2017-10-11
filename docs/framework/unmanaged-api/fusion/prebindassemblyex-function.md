@@ -17,8 +17,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "PreBindAssemblyEx"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "PreBindAssemblyEx function [.NET Framework fusion]"
 ms.assetid: bd285233-a4a2-4b52-bbca-0025a60e4864

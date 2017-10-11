@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.else"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Else keyword [Visual Basic]"
 ms.assetid: 154dd3d3-137b-4de6-a5aa-699b18dfb639

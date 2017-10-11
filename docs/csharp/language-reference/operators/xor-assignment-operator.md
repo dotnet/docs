@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "^=_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "^= operator [C#]"
 ms.assetid: 3658ff9a-61cd-467e-ad6b-8fbf1cfbaae4

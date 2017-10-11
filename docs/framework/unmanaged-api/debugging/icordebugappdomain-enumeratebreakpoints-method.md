@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugAppDomain::EnumerateBreakpoints"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugAppDomain::EnumerateBreakpoints method [.NET Framework debugging]"
   - "EnumerateBreakpoints method [.NET Framework debugging]"

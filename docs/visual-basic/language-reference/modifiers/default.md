@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.Default"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "defaults, properties"
   - "properties [Visual Basic], default"

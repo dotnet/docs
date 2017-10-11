@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "STARTUP_FLAGS"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "STARTUP_FLAGS enumeration [.NET Framework hosting]"
 ms.assetid: 4f043594-0c45-4bc6-988e-a6793f0d8d06

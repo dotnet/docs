@@ -160,11 +160,6 @@ f1_keywords:
   - "WME1015"
   - "WME1047"
   - "WME9"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "Winmdexp.exe, error messages"
   - "Windows Runtime Metadata Export Tool, error messages"

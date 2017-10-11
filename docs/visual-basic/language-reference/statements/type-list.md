@@ -10,8 +10,6 @@ f1_keywords:
   - "vb.StructureConstraint"
   - "ClassConstraint"
   - "vb.ClassConstraint"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "class constraint"
   - "constraints, Visual Basic generic types"

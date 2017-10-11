@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRDataTarget::WriteVirtual"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRDataTarget::WriteVirtual method [.NET Framework debugging]"
   - "WriteVirtual method [.NET Framework debugging]"

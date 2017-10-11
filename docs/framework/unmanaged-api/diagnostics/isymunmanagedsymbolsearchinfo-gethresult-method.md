@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedSymbolSearchInfo::GetHRESULT"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedSymbolSearchInfo::GetHRESULT method [.NET Framework debugging]"
   - "GetHRESULT method [.NET Framework debugging]"

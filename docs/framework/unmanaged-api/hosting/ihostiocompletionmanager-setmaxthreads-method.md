@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostIoCompletionManager::SetMaxThreads"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostIoCompletionManager::SetMaxThreads method [.NET Framework hosting]"
   - "SetMaxThreads method, IHostIoCompletionManager interface [.NET Framework hosting]"

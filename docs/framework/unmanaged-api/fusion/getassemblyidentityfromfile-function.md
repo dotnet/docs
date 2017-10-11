@@ -19,8 +19,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "GetAssemblyIdentityFromFile"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetAssemblyIdentityFromFile function [.NET Framework fusion]"
 ms.assetid: 2c32da53-76c7-4048-84d0-d05207333004

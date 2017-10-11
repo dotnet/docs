@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "get-started-article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "LINQ [C#], walkthroughs"
   - "LINQ [C#], writing queries"

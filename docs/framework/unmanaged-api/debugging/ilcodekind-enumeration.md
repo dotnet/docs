@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
+dev_langs:
+ - "cpp"
 api_name: 
   - "ILCodeKind"
 api_location: 
   - "mscordbi.dll"
 api_type: 
   - "COM"
-dev_langs: 
-  - "C++"
 ms.assetid: b91765e4-82db-46f9-a6dc-6b80610276af
 topic_type: 
   - "apiref"
@@ -32,7 +32,7 @@ manager: "wpickett"
   
 ## Syntax  
   
-```vb  
+```cpp
 typedef enum ILCodeKind {  
    ILCODE_ORIGINAL_IL = 0x1,  
    ILCODE_REJIT_IL = 0x2,  

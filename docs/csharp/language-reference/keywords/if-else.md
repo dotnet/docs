@@ -10,8 +10,6 @@ f1_keywords:
   - "else"
   - "else_CSharpKeyword"
   - "if"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "else keyword [C#]"
   - "if keyword [C#]"

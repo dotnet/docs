@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorPublishProcess::IsManaged"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IsManaged method, ICorPublishProcess interface [.NET Framework debugging]"
   - "ICorPublishProcess::IsManaged method [.NET Framework debugging]"

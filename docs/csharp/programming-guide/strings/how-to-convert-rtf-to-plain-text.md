@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "strings [C#], converting from RTF"
 ms.assetid: 3b386a87-899d-4d98-bc82-a980526ddaac

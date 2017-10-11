@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "C# language, My namespace access"
 ms.assetid: e7152414-0ea5-4c8e-bf02-c8d5bbe45ff4

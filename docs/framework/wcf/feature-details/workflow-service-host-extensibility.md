@@ -40,7 +40,7 @@ host.Description.Behaviors.Add(new WorkflowUnhandledExceptionBehavior { Action =
   
  It can also be configured in a configuration file as shown in the following example.  
   
-```vb-c#  
+```xml
 <behaviors>  
       <serviceBehaviors>  
         <behavior>  

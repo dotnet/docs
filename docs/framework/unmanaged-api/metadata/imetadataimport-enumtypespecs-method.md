@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataImport::EnumTypeSpecs"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "EnumTypeSpecs method [.NET Framework metadata]"
   - "IMetaDataImport::EnumTypeSpecs method [.NET Framework metadata]"

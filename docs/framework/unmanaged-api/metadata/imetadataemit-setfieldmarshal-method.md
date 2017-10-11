@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataEmit::SetFieldMarshal"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SetFieldMarshal method [.NET Framework metadata]"
   - "IMetaDataEmit::SetFieldMarshal method [.NET Framework metadata]"

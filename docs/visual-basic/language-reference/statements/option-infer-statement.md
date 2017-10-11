@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.OptionInfer"
   - "vb.Infer"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "variables [Visual Basic], declaring"
   - "Option Infer statement"

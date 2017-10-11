@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
+dev_langs:
+ - "cpp"
 api_name: 
   - "CorDebugEHClause"
 api_location: 
   - "mscordbi.dll"
 api_type: 
   - "COM"
-dev_langs: 
-  - "C++"
 ms.assetid: 0e350a1b-6997-46d0-bfc5-962a5011ef43
 topic_type: 
   - "apiref"
@@ -32,7 +32,7 @@ manager: "wpickett"
   
 ## Syntax  
   
-```vb  
+```cpp
 typedef struct _CorDebugEHClause {  
    ULONG32 Flags;  
    ULONG32 TryOffset;  

@@ -7,6 +7,9 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 ms.assetid: 5280e816-ae17-48c4-8de0-a1e6895dd8f0
 caps.latest.revision: 7
 author: "Erikre"
@@ -130,7 +133,7 @@ Workflows can be constructed from built-in activities as well as from custom act
   
 11. Type the following expression into the newly added **If** activity’s **Condition** property value box.  
   
-    ```vb-c#  
+    ```
     Guess < Target  
     ```  
   

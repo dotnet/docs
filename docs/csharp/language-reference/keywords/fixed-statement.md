@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "fixed_CSharpKeyword"
   - "fixed"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "fixed keyword [C#]"
 ms.assetid: 7ea6db08-ad49-4a7a-b934-d8c4acad1c3a

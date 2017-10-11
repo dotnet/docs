@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "checked_CSharpKeyword"
   - "checked"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "checked keyword [C#]"
 ms.assetid: 718a1194-988d-48a3-b089-d6ee8bd1608d

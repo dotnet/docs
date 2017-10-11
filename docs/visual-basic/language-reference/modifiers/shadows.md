@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.Shadows"
   - "shadows"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "shadowing"
   - "duplicate names"

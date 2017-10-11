@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+- "csharp"
+- "vb"
 helpviewer_keywords: 
   - "tasks, how to return a value"
 ms.assetid: c4bc0f44-eba2-4e96-9e03-1cc787461e61

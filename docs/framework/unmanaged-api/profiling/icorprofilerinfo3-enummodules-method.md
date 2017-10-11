@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo3::EnumModules"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerInfo3::EnumModules method [.NET Framework profiling]"
   - "EnumModules method [.NET Framework profiling]"

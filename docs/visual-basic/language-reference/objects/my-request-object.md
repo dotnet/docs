@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "My.MyWebExtension.Request"
   - "My.Request"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "My.Request object"
 ms.assetid: 93d5f0e2-6b60-4a2c-8652-d90216f6ad10

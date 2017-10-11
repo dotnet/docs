@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugMDA::GetDescription"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetDescription method [.NET Framework debugging]"
   - "ICorDebugMDA::GetDescription method [.NET Framework debugging]"

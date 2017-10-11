@@ -1,16 +1,13 @@
 ---
 title: "Walkthrough: Office Programming (C# and Visual Basic)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
+dev_langs:
+- "csharp"
+- "vb"
 helpviewer_keywords: 
   - "Office, programming in Visual Basic and C#"
   - "Office programming [C#]"
@@ -19,7 +16,6 @@ ms.assetid: 519cff31-f80b-4f0e-a56b-26358d0f8c51
 caps.latest.revision: 46
 author: "BillWagner"
 ms.author: "wiwagn"
-
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

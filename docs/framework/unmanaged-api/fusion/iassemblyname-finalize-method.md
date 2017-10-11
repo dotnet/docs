@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IAssemblyName::Finalize"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "Finalize method [.NET Framework fusion]"
   - "IAssemblyName::Finalize method [.NET Framework fusion]"

@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "StreamReader.ReadToEnd"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "text files, writing to"
   - "reading text files"

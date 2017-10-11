@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "return_CSharpKeyword"
   - "return"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "return statement [C#]"
   - "return keyword [C#]"

@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: 194282c2-399f-46da-a7a6-96674e00b0b3
 caps.latest.revision: 3
 author: "BillWagner"

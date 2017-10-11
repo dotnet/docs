@@ -5,6 +5,9 @@ ms.prod: ".net"
 ms.technology: 
 - "dotnet-clr"
 ms.topic: "article"
+dev_langs:
+- "csharp"
+- "vb"
 helpviewer_keywords: 
 - ".NET Framework, and TAP"
 - "asynchronous design patterns, .NET Framework"

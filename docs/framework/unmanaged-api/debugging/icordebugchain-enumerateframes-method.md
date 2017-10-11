@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugChain::EnumerateFrames method"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "EnumerateFrames method [.NET Framework debugging]"
   - "ICorDebugChain::EnumerateFrames method [.NET Framework debugging]"

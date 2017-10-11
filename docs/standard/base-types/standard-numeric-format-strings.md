@@ -4,6 +4,10 @@ ms.date: "09/10/2017"
 ms.prod: ".net"
 ms.technology: dotnet-standard
 ms.topic: "article"
+dev_langs:
+- "csharp"
+- "vb"
+- "cpp"
 helpviewer_keywords: 
   - "numeric format strings [.NET Framework]"
   - "formatting [.NET Framework], numbers"

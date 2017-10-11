@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "#pragma checksum"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "#pragma checksum [C#]"
 ms.assetid: 3673e4ca-6098-4ec1-890f-8fceb2a794a2

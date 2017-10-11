@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRPolicyManager"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRPolicyManager interface [.NET Framework hosting]"
 ms.assetid: 5c834aa1-f2db-408a-b230-c7bec093d364

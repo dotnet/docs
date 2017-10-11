@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugController::Detach"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "Detach method, ICorDebugController interface [.NET Framework debugging]"
   - "ICorDebugController::Detach method [.NET Framework debugging]"

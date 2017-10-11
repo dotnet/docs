@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "c"
   - "<c>"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "text, marking as code [C#]"
   - "code, marking text as [C#]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CodeChunkInfo"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CodeChunkInfo structure [.NET Framework debugging]"
 ms.assetid: 0f482454-8517-48de-ba7a-d7aedab13bb5

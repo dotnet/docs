@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataTables::GetNumTables"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetNumTables method [.NET Framework metadata]"
   - "IMetaDataTables::GetNumTables method [.NET Framework metadata]"

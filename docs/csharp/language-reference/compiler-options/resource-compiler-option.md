@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "/resource"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "-resource compiler option [C#]"
   - "/resource compiler option [C#]"

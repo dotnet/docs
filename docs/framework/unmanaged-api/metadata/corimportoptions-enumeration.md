@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorImportOptions"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorImportOptions enumeration [.NET Framework metadata]"
 ms.assetid: 4e5d03cb-97c9-4ff4-8dbd-17d94ee374d3

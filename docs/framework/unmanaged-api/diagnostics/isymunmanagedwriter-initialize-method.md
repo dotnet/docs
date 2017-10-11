@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedWriter::Initialize"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedWriter::Initialize method [.NET Framework debugging]"
   - "Initialize method, ISymUnmanagedWriter interface [.NET Framework debugging]"

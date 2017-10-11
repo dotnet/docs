@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRGCManager::SetGCStartupLimits"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SetGCStartupLimits method, ICLRGCManager interface [.NET Framework hosting]"
   - "ICLRGCManager::SetGCStartupLimits method [.NET Framework hosting]"

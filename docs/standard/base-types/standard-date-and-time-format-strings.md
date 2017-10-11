@@ -1,7 +1,7 @@
 ---
 title: "Standard Date and Time Format Strings"
-ms.custom: ""
-ms.date: "10/10/2017"
+ms.custom: "mvc"
+ms.date: "10/11/2017"
 ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
@@ -63,7 +63,7 @@ A standard date and time format string uses a single format specifier to define 
   
 # [C#](#tab/csharp)
 
-[!code-csharp-interactive[System.DateTime.Conceptual.Formatting#1](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Conceptual.Formatting/cs/StandardFormats1.cs#1)]
+[!code-csharp-interactive[System.DateTime.Conceptual.Formatting#1](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Conceptual.Formatting/cs/StandardFormats1.cs#L16-L18)]
 
 # [Visual Basic](#tab/visual-basic)
 
@@ -72,14 +72,29 @@ A standard date and time format string uses a single format specifier to define 
 ---
 
 -   You can pass a <xref:System.Globalization.CultureInfo> object representing the culture whose formatting is to be used to a method that has an <xref:System.IFormatProvider> parameter. The following example displays a date using the short date format of the pt-BR culture.  
+
+# [C#](#tab/csharp)
+
+[!code-csharp-interactive[System.DateTime.Conceptual.Formatting#2](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Conceptual.Formatting/cs/StandardFormats1.cs#L25-L28)]
+
+# [Visual Basic](#tab/visual-basic)
+
+[!code-vb[System.DateTime.Conceptual.Formatting#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTime.Conceptual.Formatting/vb/StandardFormats1.vb#2)]  
+
+---
   
-     [!code-csharp[System.DateTime.Conceptual.Formatting#2](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Conceptual.Formatting/cs/StandardFormats1.cs#2)]
-     [!code-vb[System.DateTime.Conceptual.Formatting#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTime.Conceptual.Formatting/vb/StandardFormats1.vb#2)]  
   
 -   You can pass a <xref:System.Globalization.DateTimeFormatInfo> object that provides formatting information to a method that has an <xref:System.IFormatProvider> parameter. The following example displays a date using the short date format from a <xref:System.Globalization.DateTimeFormatInfo> object for the hr-HR culture.  
   
-     [!code-csharp[System.DateTime.Conceptual.Formatting#3](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Conceptual.Formatting/cs/StandardFormats1.cs#3)]
-     [!code-vb[System.DateTime.Conceptual.Formatting#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTime.Conceptual.Formatting/vb/StandardFormats1.vb#3)]  
+# [C#](#tab/csharp)
+
+[!code-csharp-interactive[System.DateTime.Conceptual.Formatting#3](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Conceptual.Formatting/cs/StandardFormats1.cs#L35-L38)]
+
+# [Visual Basic](#tab/visual-basic)
+
+[!code-vb[System.DateTime.Conceptual.Formatting#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTime.Conceptual.Formatting/vb/StandardFormats1.vb#3)]  
+
+---
   
 > [!NOTE]
 >  For information about customizing the patterns or strings used in formatting date and time values, see the <xref:System.Globalization.NumberFormatInfo> class topic.  
@@ -95,9 +110,16 @@ A standard date and time format string uses a single format specifier to define 
   
  Standard format strings can also be used in parsing operations with the <xref:System.DateTime.ParseExact%2A?displayProperty=nameWithType> or <xref:System.DateTimeOffset.ParseExact%2A?displayProperty=nameWithType> methods, which require an input string to exactly conform to a particular pattern for the parse operation to succeed. Many standard format strings map to multiple custom format strings, so a date and time value can be represented in a variety of formats and the parse operation will still succeed. You can determine the custom format string or strings that correspond to a standard format string by calling the <xref:System.Globalization.DateTimeFormatInfo.GetAllDateTimePatterns%28System.Char%29?displayProperty=nameWithType> method. The following example displays the custom format strings that map to the "d" (short date pattern) standard format string.  
   
- [!code-csharp[Formatting.DateAndTime.Standard#17](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/stdandparsing1.cs#17)]
- [!code-vb[Formatting.DateAndTime.Standard#17](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Standard/vb/stdandparsing1.vb#17)]  
-  
+# [C#](#tab/csharp)
+
+[!code-csharp-interactive[Formatting.DateAndTime.Standard#17](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/stdandparsing1.cs#17)]
+
+# [Visual Basic](#tab/visual-basic)
+
+[!code-vb[Formatting.DateAndTime.Standard#17](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Standard/vb/stdandparsing1.vb#17)]  
+
+---
+
  The following sections describe the standard format specifiers for <xref:System.DateTime> and <xref:System.DateTimeOffset> values.  
   
 <a name="ShortDate"></a>   
@@ -112,10 +134,17 @@ A standard date and time format string uses a single format specifier to define 
 |<xref:System.Globalization.DateTimeFormatInfo.DateSeparator%2A>|Defines the string that separates the year, month, and day components of a date.|  
   
  The following example uses the "d" format specifier to display a date and time value.  
-  
- [!code-csharp[Formatting.DateAndTime.Standard#1](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#1)]
- [!code-vb[Formatting.DateAndTime.Standard#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Standard/vb/Standard1.vb#1)]  
-  
+
+# [C#](#tab/csharp)
+
+[!code-csharp-interactive[Formatting.DateAndTime.Standard#1](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#1)]
+
+# [Visual Basic](#tab/visual-basic)
+
+[!code-vb[Formatting.DateAndTime.Standard#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Standard/vb/Standard1.vb#1)]  
+
+---
+ 
  [Back to table](#table)  
   
 <a name="LongDate"></a>   
@@ -132,9 +161,16 @@ A standard date and time format string uses a single format specifier to define 
   
  The following example uses the "D" format specifier to display a date and time value.  
   
- [!code-csharp[Formatting.DateAndTime.Standard#2](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#2)]
- [!code-vb[Formatting.DateAndTime.Standard#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Standard/vb/Standard1.vb#2)]  
-  
+# [C#](#tab/csharp)
+
+[!code-csharp-interactive[Formatting.DateAndTime.Standard#2](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#2)]
+
+# [Visual Basic](#tab/visual-basic)
+
+[!code-vb[Formatting.DateAndTime.Standard#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Standard/vb/Standard1.vb#2)]  
+
+---
+
  [Back to table](#table)  
   
 <a name="FullDateShortTime"></a>   
@@ -155,8 +191,15 @@ A standard date and time format string uses a single format specifier to define 
   
  The following example uses the "f" format specifier to display a date and time value.  
   
- [!code-csharp[Formatting.DateAndTime.Standard#3](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#3)]
- [!code-vb[Formatting.DateAndTime.Standard#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Standard/vb/Standard1.vb#3)]  
+# [C#](#tab/csharp)
+
+[!code-csharp-interactive[Formatting.DateAndTime.Standard#3](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#3)]
+
+# [Visual Basic](#tab/visual-basic)
+
+[!code-vb[Formatting.DateAndTime.Standard#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Standard/vb/Standard1.vb#3)]  
+
+---
   
  [Back to table](#table)  
   
@@ -176,9 +219,16 @@ A standard date and time format string uses a single format specifier to define 
 |<xref:System.Globalization.DateTimeFormatInfo.PMDesignator%2A>|Defines the string that indicates times from noon to before midnight in a 12-hour clock.|  
   
  The following example uses the "F" format specifier to display a date and time value.  
-  
- [!code-csharp[Formatting.DateAndTime.Standard#4](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#4)]
- [!code-vb[Formatting.DateAndTime.Standard#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Standard/vb/Standard1.vb#4)]  
+
+# [C#](#tab/csharp)
+
+[!code-csharp-interactive[Formatting.DateAndTime.Standard#4](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#4)]
+
+# [Visual Basic](#tab/visual-basic)
+
+[!code-vb[Formatting.DateAndTime.Standard#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Standard/vb/Standard1.vb#4)]  
+
+---
   
  [Back to table](#table)  
   
@@ -199,8 +249,15 @@ A standard date and time format string uses a single format specifier to define 
   
  The following example uses the "g" format specifier to display a date and time value.  
   
- [!code-csharp[Formatting.DateAndTime.Standard#5](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#5)]
- [!code-vb[Formatting.DateAndTime.Standard#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Standard/vb/Standard1.vb#5)]  
+# [C#](#tab/csharp)
+
+[!code-csharp-interactive[Formatting.DateAndTime.Standard#5](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#5)]
+
+# [Visual Basic](#tab/visual-basic)
+
+[!code-vb[Formatting.DateAndTime.Standard#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Standard/vb/Standard1.vb#5)]  
+
+---
   
  [Back to table](#table)  
   
@@ -221,9 +278,16 @@ A standard date and time format string uses a single format specifier to define 
   
  The following example uses the "G" format specifier to display a date and time value.  
   
- [!code-csharp[Formatting.DateAndTime.Standard#6](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#6)]
- [!code-vb[Formatting.DateAndTime.Standard#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Standard/vb/Standard1.vb#6)]  
-  
+# [C#](#tab/csharp)
+
+[!code-csharp-interactive[Formatting.DateAndTime.Standard#6](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#6)]
+
+# [Visual Basic](#tab/visual-basic)
+
+[!code-vb[Formatting.DateAndTime.Standard#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Standard/vb/Standard1.vb#6)]  
+
+---
+
  [Back to table](#table)  
   
 <a name="MonthDay"></a>   
@@ -238,10 +302,17 @@ A standard date and time format string uses a single format specifier to define 
 |<xref:System.Globalization.DateTimeFormatInfo.MonthNames%2A>|Defines the localized month names that can appear in the result string.|  
   
  The following example uses the "m" format specifier to display a date and time value.  
-  
- [!code-csharp[Formatting.DateAndTime.Standard#7](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#7)]
- [!code-vb[Formatting.DateAndTime.Standard#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Standard/vb/Standard1.vb#7)]  
-  
+
+# [C#](#tab/csharp)
+
+[!code-csharp-interactive[Formatting.DateAndTime.Standard#7](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#7)]
+
+# [Visual Basic](#tab/visual-basic)
+
+[!code-vb[Formatting.DateAndTime.Standard#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Standard/vb/Standard1.vb#7)]  
+
+---
+
  [Back to table](#table)  
   
 <a name="Roundtrip"></a>   
@@ -263,15 +334,29 @@ A standard date and time format string uses a single format specifier to define 
  Strings that are passed to the `Parse`, `TryParse`, `ParseExact`, and `TryParseExact` methods of <xref:System.DateTime> and <xref:System.DateTimeOffset> can be parsed by using the "O" or "o" format specifier if they are in one of these formats. In the case of <xref:System.DateTime> objects, the parsing overload that you call should also include a `styles` parameter with a value of <xref:System.Globalization.DateTimeStyles.RoundtripKind?displayProperty=nameWithType>. Note that if you call a parsing method with the custom format string that corresponds to the "O" or "o" format specifier, you won't get the same results as "O" or "o". This is because parsing methods that use a custom format string can't parse the string representation of date and time values that lack a time zone component or use "Z" to indicate UTC.  
   
  The following example uses the "o" format specifier to display a series of <xref:System.DateTime> values and a <xref:System.DateTimeOffset> value on a system in the U.S. Pacific Time zone.  
-  
- [!code-csharp[Formatting.DateAndTime.Standard#8](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/o1.cs#8)]
- [!code-vb[Formatting.DateAndTime.Standard#8](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Standard/vb/o1.vb#8)]  
+
+# [C#](#tab/csharp)
+
+[!code-csharp-interactive[Formatting.DateAndTime.Standard#8](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/o1.cs#8)]
+
+# [Visual Basic](#tab/visual-basic)
+
+[!code-vb[Formatting.DateAndTime.Standard#8](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Standard/vb/o1.vb#8)]  
+
+---
   
  The following example uses the "o" format specifier to create a formatted string, and then restores the original date and time value by calling a date and time `Parse` method.  
   
- [!code-csharp[Formatting.DateandTime.Standard#16](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Roundtrip1.cs#16)]
- [!code-vb[Formatting.DateandTime.Standard#16](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Standard/vb/RoundTrip1.vb#16)]  
-  
+# [C#](#tab/csharp)
+
+[!code-csharp-interactive[Formatting.DateandTime.Standard#16](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Roundtrip1.cs#16)]
+
+# [Visual Basic](#tab/visual-basic)
+
+[!code-vb[Formatting.DateandTime.Standard#16](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Standard/vb/RoundTrip1.vb#16)]  
+
+---
+
  [Back to table](#table)  
   
 <a name="RFC1123"></a>   
@@ -290,9 +375,16 @@ A standard date and time format string uses a single format specifier to define 
   
  The following example uses the "r" format specifier to display a <xref:System.DateTime> and a <xref:System.DateTimeOffset> value on a system in the U.S. Pacific Time zone.  
   
- [!code-csharp[Formatting.DateAndTime.Standard#9](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#9)]
- [!code-vb[Formatting.DateAndTime.Standard#9](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Standard/vb/Standard1.vb#9)]  
-  
+# [C#](#tab/csharp)
+
+[!code-csharp-interactive[Formatting.DateAndTime.Standard#9](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#9)]
+
+# [Visual Basic](#tab/visual-basic)
+
+[!code-vb[Formatting.DateAndTime.Standard#9](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Standard/vb/Standard1.vb#9)]  
+
+---
+
  [Back to table](#table)  
   
 <a name="Sortable"></a>   
@@ -304,10 +396,17 @@ A standard date and time format string uses a single format specifier to define 
  When this standard format specifier is used, the formatting or parsing operation always uses the invariant culture.  
   
  The following example uses the "s" format specifier to display a <xref:System.DateTime> and a <xref:System.DateTimeOffset> value on a system in the U.S. Pacific Time zone.  
-  
- [!code-csharp[Formatting.DateAndTime.Standard#10](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#10)]
- [!code-vb[Formatting.DateAndTime.Standard#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Standard/vb/Standard1.vb#10)]  
-  
+
+# [C#](#tab/csharp)
+
+[!code-csharp-interactive[Formatting.DateAndTime.Standard#10](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#10)]
+
+# [Visual Basic](#tab/visual-basic)
+
+[!code-vb[Formatting.DateAndTime.Standard#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Standard/vb/Standard1.vb#10)]  
+
+---
+
  [Back to table](#table)  
   
 <a name="ShortTime"></a>   
@@ -324,10 +423,17 @@ A standard date and time format string uses a single format specifier to define 
 |<xref:System.Globalization.DateTimeFormatInfo.PMDesignator%2A>|Defines the string that indicates times from noon to before midnight in a 12-hour clock.|  
   
  The following example uses the "t" format specifier to display a date and time value.  
-  
- [!code-csharp[Formatting.DateAndTime.Standard#11](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#11)]
- [!code-vb[Formatting.DateAndTime.Standard#11](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Standard/vb/Standard1.vb#11)]  
-  
+ 
+# [C#](#tab/csharp)
+
+[!code-csharp-interactive[Formatting.DateAndTime.Standard#11](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#11)]
+
+# [Visual Basic](#tab/visual-basic)
+
+[!code-vb[Formatting.DateAndTime.Standard#11](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Standard/vb/Standard1.vb#11)]  
+
+---
+
  [Back to table](#table)  
   
 <a name="LongTime"></a>   
@@ -345,8 +451,15 @@ A standard date and time format string uses a single format specifier to define 
   
  The following example uses the "T" format specifier to display a date and time value.  
   
- [!code-csharp[Formatting.DateAndTime.Standard#12](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#12)]
- [!code-vb[Formatting.DateAndTime.Standard#12](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Standard/vb/Standard1.vb#12)]  
+# [C#](#tab/csharp)
+
+[!code-csharp-interactive[Formatting.DateAndTime.Standard#12](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#12)]
+
+# [Visual Basic](#tab/visual-basic)
+
+[!code-vb[Formatting.DateAndTime.Standard#12](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Standard/vb/Standard1.vb#12)]  
+
+---
   
  [Back to table](#table)  
   
@@ -357,9 +470,16 @@ A standard date and time format string uses a single format specifier to define 
  Although the result string should express a time as Coordinated Universal Time (UTC), no conversion of the original <xref:System.DateTime> value is performed during the formatting operation. Therefore, you must convert a <xref:System.DateTime> value to UTC by calling the <xref:System.DateTime.ToUniversalTime%2A?displayProperty=nameWithType> method before formatting it.  In contrast, <xref:System.DateTimeOffset> values perform this conversion automatically; there is no need to call the <xref:System.DateTimeOffset.ToUniversalTime%2A?displayProperty=nameWithType> method before the formatting operation.  
   
  The following example uses the "u" format specifier to display a date and time value.  
-  
- [!code-csharp[Formatting.DateAndTime.Standard#13](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#13)]
- [!code-vb[Formatting.DateAndTime.Standard#13](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Standard/vb/Standard1.vb#13)]  
+ 
+# [C#](#tab/csharp)
+
+[!code-csharp-interactive[Formatting.DateAndTime.Standard#13](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#13)]
+
+# [Visual Basic](#tab/visual-basic)
+
+[!code-vb[Formatting.DateAndTime.Standard#13](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Standard/vb/Standard1.vb#13)]  
+
+---
   
  [Back to table](#table)  
   
@@ -382,8 +502,15 @@ A standard date and time format string uses a single format specifier to define 
   
  The following example uses the "U" format specifier to display a date and time value.  
   
- [!code-csharp[Formatting.DateAndTime.Standard#14](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#14)]
- [!code-vb[Formatting.DateAndTime.Standard#14](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Standard/vb/Standard1.vb#14)]  
+# [C#](#tab/csharp)
+
+[!code-csharp-interactive[Formatting.DateAndTime.Standard#14](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#14)]
+
+# [Visual Basic](#tab/visual-basic)
+
+[!code-vb[Formatting.DateAndTime.Standard#14](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Standard/vb/Standard1.vb#14)]  
+
+---
   
  [Back to table](#table)  
   
@@ -400,9 +527,16 @@ A standard date and time format string uses a single format specifier to define 
   
  The following example uses the "y" format specifier to display a date and time value.  
   
- [!code-csharp[Formatting.DateAndTime.Standard#15](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#15)]
- [!code-vb[Formatting.DateAndTime.Standard#15](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Standard/vb/Standard1.vb#15)]  
-  
+# [C#](#tab/csharp)
+
+[!code-csharp-interactive[Formatting.DateAndTime.Standard#15](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#15)]
+
+# [Visual Basic](#tab/visual-basic)
+
+[!code-vb[Formatting.DateAndTime.Standard#15](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Standard/vb/Standard1.vb#15)]  
+
+---
+
  [Back to table](#table)  
   
 <a name="Notes"></a>   
@@ -419,6 +553,6 @@ A standard date and time format string uses a single format specifier to define 
 ## See Also  
  <xref:System.DateTime?displayProperty=nameWithType>   
  <xref:System.DateTimeOffset?displayProperty=nameWithType>   
- [Formatting Types](../../../docs/standard/base-types/formatting-types.md)   
- [Custom Date and Time Format Strings](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)   
+ [Formatting Types](formatting-types.md)   
+ [Custom Date and Time Format Strings](custom-date-and-time-format-strings.md)   
  [Sample: .NET Framework 4 Formatting Utility](http://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d)

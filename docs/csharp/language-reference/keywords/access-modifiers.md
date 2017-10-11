@@ -39,7 +39,7 @@ Access modifiers are keywords used to specify the declared accessibility of a me
   
 -   [private](../../../csharp/language-reference/keywords/private.md)  
   
- The following five accessibility levels can be specified using the access modifiers:  
+ The following six accessibility levels can be specified using the access modifiers:  
   
  `public`: Access is not restricted.  
   
@@ -55,7 +55,7 @@ Access modifiers are keywords used to specify the declared accessibility of a me
   
  This section also introduces the following:  
   
--   [Accessibility Levels](../../../csharp/language-reference/keywords/accessibility-levels.md): Using the four access modifiers to declare five levels of accessibility.  
+-   [Accessibility Levels](../../../csharp/language-reference/keywords/accessibility-levels.md): Using the four access modifiers to declare six levels of accessibility.  
   
 -   [Accessibility Domain](../../../csharp/language-reference/keywords/accessibility-domain.md): Specifies where, in the program sections, a member can be referenced.  
   

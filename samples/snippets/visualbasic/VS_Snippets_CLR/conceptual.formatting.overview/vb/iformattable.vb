@@ -42,7 +42,7 @@ Public Class Temperature : Implements IFormattable
 
       ' Handle null or empty arguments.
       If String.IsNullOrEmpty(format) Then format = "G"
-      ' Remove any whitespace and covert to uppercase.
+      ' Remove any white space and convert to uppercase.
       format = format.Trim().ToUpperInvariant()
 
       If provider Is Nothing Then provider = NumberFormatInfo.CurrentInfo

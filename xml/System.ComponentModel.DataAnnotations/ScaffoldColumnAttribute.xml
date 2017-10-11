@@ -1,4 +1,4 @@
-<Type Name="ScaffoldColumnAttribute" FullName="System.ComponentModel.DataAnnotations.ScaffoldColumnAttribute">
+﻿<Type Name="ScaffoldColumnAttribute" FullName="System.ComponentModel.DataAnnotations.ScaffoldColumnAttribute">
   <TypeSignature Language="C#" Value="public class ScaffoldColumnAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScaffoldColumnAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataAnnotations.ScaffoldColumnAttribute" />
@@ -24,8 +24,7 @@
   <Docs>
     <summary>Specifies whether a class or data column uses scaffolding.</summary>
     <remarks>
-      <format type="text/markdown">
-        <![CDATA[  
+      <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  Scaffolding is the mechanism for generating web page templates based on database schemas. ASP.NET Dynamic Data uses scaffolding to generate Web-based UI that lets a user to view and update a database. This class uses the <xref:System.ComponentModel.DataAnnotations.ScaffoldColumnAttribute.Scaffold%2A> property to enable scaffolding in a Dynamic Data Web Site.  
@@ -95,8 +94,7 @@ End Class
   
 -   A Dynamic Data Web site. This enables you to create a data context for the database and the class that contains the data field to customize and the methods to override. In addition, it creates the environment in which to use the page described before. For more information, see [Walkthrough: Creating a New Dynamic Data Web Site Using Scaffolding](http://msdn.microsoft.com/library/1564aef2-9103-436a-9806-c8ad7abd616a).  
   -->
- ]]>
-      </format>
+ ]]></format>
     </remarks>
   </Docs>
   <Members>
@@ -120,20 +118,14 @@ End Class
       </Parameters>
       <Docs>
         <param name="scaffold">The value that specifies whether scaffolding is enabled.</param>
-        <summary>Initializes a new instance of                               
-          <see cref="T:System.ComponentModel.DataAnnotations.ScaffoldColumnAttribute" /> using the                               
-          <see cref="P:System.ComponentModel.DataAnnotations.ScaffoldColumnAttribute.Scaffold" /> property.
-                        
-        </summary>
+        <summary>Initializes a new instance of <see cref="T:System.ComponentModel.DataAnnotations.ScaffoldColumnAttribute" /> using the <see cref="P:System.ComponentModel.DataAnnotations.ScaffoldColumnAttribute.Scaffold" /> property.</summary>
         <remarks>
-          <format type="text/markdown">
-            <![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  You can set `scaffold` to `true` for the entire data model to expose all data columns in the database for CRUD (Create, Read, Update and Delete) operations by setting `scaffold` to `true` in the Global.asax file or expose individual data columns in a data table to CRUD operations by setting `scaffold` to `true` in the partial class.  
   
- ]]>
-          </format>
+ ]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -158,19 +150,14 @@ End Class
       <Docs>
         <summary>Gets or sets the value that specifies whether scaffolding is enabled.</summary>
         <value>
-          <see langword="true" />, if scaffolding is enabled; otherwise                               
-          <see langword="false" />.
-                        
-        </value>
+          <see langword="true" />, if scaffolding is enabled; otherwise <see langword="false" />.</value>
         <remarks>
-          <format type="text/markdown">
-            <![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  You can use this property to enable scaffolding in individual data columns in a data model. If you set this property to `true` in the global.asax file, the entire data model will expose all data columns in the database for CRUD (Create, Read, Update and Delete) operations.  
   
- ]]>
-          </format>
+ ]]></format>
         </remarks>
       </Docs>
     </Member>

@@ -63,11 +63,7 @@ A standard date and time format string uses a single format specifier to define 
   
 # [C#](#tab/csharp)
 
-```csharp-interactive
-DateTime thisDate = new DateTime(2008, 3, 15);
-Console.WriteLine(thisDate.ToString("d"));
-// Displays "3/15/2008". Try it by pressing "Run"
-```   
+[!code-csharp-interactive[System.DateTime.Conceptual.Formatting#1](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Conceptual.Formatting/cs/StandardFormats1.cs#1)]
 
 # [Visual Basic](#tab/visual-basic)
 

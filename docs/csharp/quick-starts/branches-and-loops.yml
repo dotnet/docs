@@ -45,6 +45,9 @@ items:
 
     This process of checking conditions and executing statements based on those conditions is very powerful. Let's explore more.
 
+    > [!NOTE]
+    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
+
 - title: Make if and else work together
   durationInMinutes: 10
   content: |
@@ -133,6 +136,9 @@ items:
     }
     ```
 
+    > [!NOTE]
+    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
+
 - title: Use loops to repeat operations
   durationInMinutes: 6
   content: |
@@ -181,6 +187,9 @@ items:
     
     Let's move on to one last loop statement.
 
+    > [!NOTE]
+    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
+
 - title: Work with the for loop
   durationInMinutes: 5
   content: |
@@ -216,6 +225,9 @@ items:
     When you're done, let's move on to write some code yourself to
     use what you've learned.
 
+    > [!NOTE]
+    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
+
 - title: Combining branches and loops
   durationInMinutes: 12
   content: |
@@ -229,6 +241,9 @@ items:
     - The `for` loop can help you repeat a series of steps for all the numbers 1 through 20.
 
     Try it yourself. Then check how you did.
+
+    > [!NOTE]
+    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
 
 - title: Complete challenge
   durationInMinutes: 1
@@ -247,6 +262,9 @@ items:
     Console.WriteLine("The sum is " + sum);
     ```
 
+    > [!NOTE]
+    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
+
   content: |
     You've completed the "branches and loops" tutorial. You can learn more about these concepts in these topics:
 
@@ -254,4 +272,3 @@ items:
     [While statement](../language-reference/keywords/while.md)   
     [Do statement](../language-reference/keywords/do.md)   
     [For statement](../language-reference/keywords/for.md)   
-

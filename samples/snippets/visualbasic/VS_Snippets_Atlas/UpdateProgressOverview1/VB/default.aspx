@@ -1,4 +1,4 @@
-<%-- <Snippet1> --%>
+<!-- <Snippet1> -->
 <%@ Page Language="VB" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
@@ -36,15 +36,15 @@
     <asp:Button ID="Button1" runat="server" Text="Refresh Panel" OnClick="Button_Click" />    
     </ContentTemplate>
     </asp:UpdatePanel>
-    <%-- <Snippet2> --%>
+    <!-- <Snippet2> -->
     <asp:UpdateProgress ID="UpdateProgress1" runat="server">
     <ProgressTemplate>
       An update is in progress...
     </ProgressTemplate>
     </asp:UpdateProgress>
-    <%-- </Snippet2> --%>
+    <!-- </Snippet2> -->
     </div>
     </form>
 </body>
 </html>
-<%-- </Snippet1> --%>
+<!-- </Snippet1> -->

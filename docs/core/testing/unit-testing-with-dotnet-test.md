@@ -153,4 +153,6 @@ if (candidate < 2)
 
 Continue to iterate by adding more tests, more theories, and more code in the main library. You have the [finished version of the tests](https://github.com/dotnet/docs/blob/master/samples/core/getting-started/unit-testing-using-dotnet-test/PrimeService.Tests/PrimeService_IsPrimeShould.cs) and the [complete implementation of the library](https://github.com/dotnet/docs/blob/master/samples/core/getting-started/unit-testing-using-dotnet-test/PrimeService/PrimeService.cs).
 
-You've built a small library and a set of unit tests for that library. You've structured the solution so that adding new packages and tests follows the current workflow. You've concentrated most of your time and effort on solving the goals of the application.
+### Additional resources
+
+[Testing controller logic in ASP.NET Core](https://docs.microsoft.com/aspnet/core/mvc/controllers/testing)

@@ -110,8 +110,8 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[TableCell#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TableCell/CS/tablecellcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TableCell#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TableCell/VB/tablecellvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TableCell#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TableCell/CS/tablecellcs.aspx#1)]
+ [!code-aspx-vb[TableCell#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TableCell/VB/tablecellvb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -178,8 +178,8 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.TableCell.AddAttributesToRender%2A> method in a custom server control so that a custom title attribute is rendered for each cell.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomTableCellAddAttributesToRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTableCellAddAttributesToRender/CS/custom_tablecell_addattributestorendercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomTableCellAddAttributesToRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTableCellAddAttributesToRender/VB/custom_tablecell_addattributestorendervb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomTableCellAddAttributesToRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTableCellAddAttributesToRender/CS/custom_tablecell_addattributestorendercs.aspx#1)]
+ [!code-aspx-vb[CustomTableCellAddAttributesToRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTableCellAddAttributesToRender/VB/custom_tablecell_addattributestorendervb.aspx#1)]  
   
  [!code-csharp[CustomTableCellAddAttributesToRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTableCellAddAttributesToRender/CS/custom_tablecell_addattributestorender.cs#2)]
  [!code-vb[CustomTableCellAddAttributesToRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTableCellAddAttributesToRender/VB/custom_tablecell_addattributestorender.vb#2)]  
@@ -358,8 +358,8 @@ HorizontalAlign="Left">(2,0)
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.TableCell.CreateControlStyle%2A> method in a custom server control so that it always returns a new instance of the <xref:System.Web.UI.WebControls.TableStyle> class for the <xref:System.Web.UI.WebControls.TableCell>.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomTableCellCreateControlStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTableCellCreateControlStyle/CS/custom_tablecell_createcontrolstylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomTableCellCreateControlStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTableCellCreateControlStyle/VB/custom_tablecell_createcontrolstylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomTableCellCreateControlStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTableCellCreateControlStyle/CS/custom_tablecell_createcontrolstylecs.aspx#1)]
+ [!code-aspx-vb[CustomTableCellCreateControlStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTableCellCreateControlStyle/VB/custom_tablecell_createcontrolstylevb.aspx#1)]  
   
  [!code-csharp[CustomTableCellCreateControlStyle#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTableCellCreateControlStyle/CS/custom_tablecell_createcontrolstyle.cs#2)]
  [!code-vb[CustomTableCellCreateControlStyle#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTableCellCreateControlStyle/VB/custom_tablecell_createcontrolstyle.vb#2)]  
@@ -448,8 +448,8 @@ HorizontalAlign="Left">(2,0)
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.TableCell.RenderContents%2A> method in a custom <xref:System.Web.UI.WebControls.TableCell> control so that it custom text is inserted in the cell's contents.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomTableCellRenderContents#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTableCellRenderContents/CS/custom_tablecell_rendercontentscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomTableCellRenderContents#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTableCellRenderContents/VB/custom_tablecell_rendercontentsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomTableCellRenderContents#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTableCellRenderContents/CS/custom_tablecell_rendercontentscs.aspx#1)]
+ [!code-aspx-vb[CustomTableCellRenderContents#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTableCellRenderContents/VB/custom_tablecell_rendercontentsvb.aspx#1)]  
   
  [!code-csharp[CustomTableCellRenderContents#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTableCellRenderContents/CS/custom_tablecell_rendercontents.cs#2)]
  [!code-vb[CustomTableCellRenderContents#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTableCellRenderContents/VB/custom_tablecell_rendercontents.vb#2)]  

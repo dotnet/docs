@@ -442,8 +442,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.TemplateControl.GetGlobalResourceObject%2A> method to access a string named `GlobalResourceString1` from a global resource named `MyResource.resx` in the App_GlobalResources folder. The `className` parameter is `MyResource` without the .resx extension.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.TemplateControl_GetResources#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.TemplateControl_GetResources/cs/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.TemplateControl_GetResources#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.TemplateControl_GetResources/vb/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.TemplateControl_GetResources#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.TemplateControl_GetResources/cs/sourcecs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.TemplateControl_GetResources#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.TemplateControl_GetResources/vb/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -514,8 +514,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.TemplateControl.GetLocalResourceObject%2A> method to access a string named `LocalResourceString1` from a local page resource that is located in the App_LocalResources folder.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.TemplateControl_GetResources#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.TemplateControl_GetResources/cs/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.TemplateControl_GetResources#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.TemplateControl_GetResources/vb/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.TemplateControl_GetResources#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.TemplateControl_GetResources/cs/sourcecs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.TemplateControl_GetResources#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.TemplateControl_GetResources/vb/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -873,8 +873,8 @@
 ## Examples  
  The following code example demonstrates how to create a <xref:System.Web.UI.WebControls.Button> Web server control using the <xref:System.Web.UI.TemplateControl.ParseControl%2A> method, and then adds the result to the <xref:System.Web.UI.ControlCollection> collection of a <xref:System.Web.UI.WebControls.PlaceHolder> Web server control named `myPlaceholder`.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.TemplateControl.ParseControl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.TemplateControl.ParseControl/CS/templatecontrol_parsecontrolcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.TemplateControl.ParseControl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.TemplateControl.ParseControl/VB/templatecontrol_parsecontrolvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.TemplateControl.ParseControl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.TemplateControl.ParseControl/CS/templatecontrol_parsecontrolcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.TemplateControl.ParseControl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.TemplateControl.ParseControl/VB/templatecontrol_parsecontrolvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1196,8 +1196,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.TemplateControl.XPath%2A> method in a <xref:System.Web.UI.WebControls.Repeater> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.TemplateControl_XPath1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.TemplateControl_XPath1/cs/templatecontrolxpathcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.TemplateControl_XPath1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.TemplateControl_XPath1/vb/templatecontrolxpathvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.TemplateControl_XPath1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.TemplateControl_XPath1/cs/templatecontrolxpathcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.TemplateControl_XPath1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.TemplateControl_XPath1/vb/templatecontrolxpathvb.aspx#1)]  
   
  The following test XML data can be used in the preceding code example.  
   
@@ -1347,8 +1347,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.TemplateControl.XPathSelect%2A> method in a <xref:System.Web.UI.WebControls.Repeater> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.TemplateControl_XPath1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.TemplateControl_XPath1/cs/templatecontrolxpathcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.TemplateControl_XPath1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.TemplateControl_XPath1/vb/templatecontrolxpathvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.TemplateControl_XPath1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.TemplateControl_XPath1/cs/templatecontrolxpathcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.TemplateControl_XPath1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.TemplateControl_XPath1/vb/templatecontrolxpathvb.aspx#1)]  
   
  The following test XML data can be used in the preceding code example.  
   

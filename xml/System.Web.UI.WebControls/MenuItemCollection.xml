@@ -45,13 +45,13 @@
 ## Examples  
  The following code example demonstrates how to populate the <xref:System.Web.UI.WebControls.Menu.Items%2A> and <xref:System.Web.UI.WebControls.MenuItem.ChildItems%2A> collections using declarative syntax.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuDeclarative#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuDeclarative/CS/menudeclarativecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuDeclarative#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuDeclarative/VB/menudeclarativevb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuDeclarative#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuDeclarative/CS/menudeclarativecs.aspx#1)]
+ [!code-aspx-vb[MenuDeclarative#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuDeclarative/VB/menudeclarativevb.aspx#1)]  
   
  The following code example demonstrates how to programmatically add a <xref:System.Web.UI.WebControls.MenuItem> object to the <xref:System.Web.UI.WebControls.MenuItem.ChildItems%2A> collection of a root menu item.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemCollectionAdd#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCollectionAdd/CS/menuitemcollectionaddcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemCollectionAdd#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCollectionAdd/VB/menuitemcollectionaddvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemCollectionAdd#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCollectionAdd/CS/menuitemcollectionaddcs.aspx#1)]
+ [!code-aspx-vb[MenuItemCollectionAdd#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCollectionAdd/VB/menuitemcollectionaddvb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -148,8 +148,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItemCollection.Add%2A> method to programmatically add a <xref:System.Web.UI.WebControls.MenuItem> object to a <xref:System.Web.UI.WebControls.MenuItemCollection> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemCollectionAdd#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCollectionAdd/CS/menuitemcollectionaddcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemCollectionAdd#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCollectionAdd/VB/menuitemcollectionaddvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemCollectionAdd#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCollectionAdd/CS/menuitemcollectionaddcs.aspx#1)]
+ [!code-aspx-vb[MenuItemCollectionAdd#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCollectionAdd/VB/menuitemcollectionaddvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -193,8 +193,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItemCollection.AddAt%2A> method to programmatically insert a <xref:System.Web.UI.WebControls.MenuItem> object in a <xref:System.Web.UI.WebControls.MenuItemCollection> object at a specified index location.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemCollectionAddAt#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCollectionAddAt/CS/menuitemcollectionaddatcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemCollectionAddAt#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCollectionAddAt/VB/menuitemcollectionaddatvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemCollectionAddAt#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCollectionAddAt/CS/menuitemcollectionaddatcs.aspx#1)]
+ [!code-aspx-vb[MenuItemCollectionAddAt#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCollectionAddAt/VB/menuitemcollectionaddatvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -229,8 +229,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItemCollection.Clear%2A> method to remove all items from the <xref:System.Web.UI.WebControls.Menu.Items%2A> collection of a <xref:System.Web.UI.WebControls.Menu> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemCollectionClear#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCollectionClear/CS/menuitemcollectionclearcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemCollectionClear#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCollectionClear/VB/menuitemcollectionclearvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemCollectionClear#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCollectionClear/CS/menuitemcollectionclearcs.aspx#1)]
+ [!code-aspx-vb[MenuItemCollectionClear#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCollectionClear/VB/menuitemcollectionclearvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -267,8 +267,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItemCollection.Contains%2A> method to determine whether a <xref:System.Web.UI.WebControls.MenuItem> object is contained within a <xref:System.Web.UI.WebControls.MenuItemCollection> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemCollectionContains#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCollectionContains/CS/menuitemcollectioncontainscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemCollectionContains#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCollectionContains/VB/menuitemcollectioncontainsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemCollectionContains#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCollectionContains/CS/menuitemcollectioncontainscs.aspx#1)]
+ [!code-aspx-vb[MenuItemCollectionContains#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCollectionContains/VB/menuitemcollectioncontainsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -341,8 +341,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItemCollection.CopyTo%2A> method to copy the items in a <xref:System.Web.UI.WebControls.MenuItemCollection> object to an array of <xref:System.Web.UI.WebControls.MenuItem> objects.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemCollectionCopyTo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCollectionCopyTo/CS/menuitemcollectioncopytocs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemCollectionCopyTo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCollectionCopyTo/VB/menuitemcollectioncopytovb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemCollectionCopyTo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCollectionCopyTo/CS/menuitemcollectioncopytocs.aspx#1)]
+ [!code-aspx-vb[MenuItemCollectionCopyTo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCollectionCopyTo/VB/menuitemcollectioncopytovb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -374,8 +374,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItemCollection.Count%2A> property to determine the number of menu items in a <xref:System.Web.UI.WebControls.MenuItemCollection> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemCollectionCount#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCollectionCount/CS/menuitemcollectioncountcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemCollectionCount#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCollectionCount/VB/menuitemcollectioncountvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemCollectionCount#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCollectionCount/CS/menuitemcollectioncountcs.aspx#1)]
+ [!code-aspx-vb[MenuItemCollectionCount#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCollectionCount/VB/menuitemcollectioncountvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -413,8 +413,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItemCollection.GetEnumerator%2A> method to create an enumerator that contains the submenu items of the `Music` menu item in a <xref:System.Web.UI.WebControls.Menu> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemCollectionGetEnumerator#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCollectionGetEnumerator/CS/menuitemcollectiongetenumeratorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemCollectionGetEnumerator#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCollectionGetEnumerator/VB/menuitemcollectiongetenumeratorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemCollectionGetEnumerator#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCollectionGetEnumerator/CS/menuitemcollectiongetenumeratorcs.aspx#1)]
+ [!code-aspx-vb[MenuItemCollectionGetEnumerator#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCollectionGetEnumerator/VB/menuitemcollectiongetenumeratorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -453,8 +453,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItemCollection.IndexOf%2A> method to determine the index of a <xref:System.Web.UI.WebControls.MenuItem> object within a <xref:System.Web.UI.WebControls.MenuItemCollection> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemCollectionIndexOf#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCollectionIndexOf/CS/menuitemcollectionindexofcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemCollectionIndexOf#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCollectionIndexOf/VB/menuitemcollectionindexofvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemCollectionIndexOf#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCollectionIndexOf/CS/menuitemcollectionindexofcs.aspx#1)]
+ [!code-aspx-vb[MenuItemCollectionIndexOf#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCollectionIndexOf/VB/menuitemcollectionindexofvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -517,8 +517,8 @@
 ## Examples  
  The following code example demonstrates how to use the indexer to retrieve the root menu item from the <xref:System.Web.UI.WebControls.Menu.Items%2A> collection of a <xref:System.Web.UI.WebControls.Menu> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemCollectionAdd#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCollectionAdd/CS/menuitemcollectionaddcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemCollectionAdd#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCollectionAdd/VB/menuitemcollectionaddvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemCollectionAdd#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCollectionAdd/CS/menuitemcollectionaddcs.aspx#1)]
+ [!code-aspx-vb[MenuItemCollectionAdd#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCollectionAdd/VB/menuitemcollectionaddvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -558,8 +558,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItemCollection.Remove%2A> method to programmatically remove a <xref:System.Web.UI.WebControls.MenuItem> object from a <xref:System.Web.UI.WebControls.MenuItemCollection> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemCollectionRemove#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCollectionRemove/CS/menuitemcollectionremovecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemCollectionRemove#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCollectionRemove/VB/menuitemcollectionremovevb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemCollectionRemove#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCollectionRemove/CS/menuitemcollectionremovecs.aspx#1)]
+ [!code-aspx-vb[MenuItemCollectionRemove#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCollectionRemove/VB/menuitemcollectionremovevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -601,8 +601,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItemCollection.RemoveAt%2A> method to programmatically remove a <xref:System.Web.UI.WebControls.MenuItem> object from a <xref:System.Web.UI.WebControls.MenuItemCollection> object at a specified index location.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemCollectionRemoveAt#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCollectionRemoveAt/CS/menuitemcollectionremoveatcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemCollectionRemoveAt#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCollectionRemoveAt/VB/menuitemcollectionremoveatvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemCollectionRemoveAt#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCollectionRemoveAt/CS/menuitemcollectionremoveatcs.aspx#1)]
+ [!code-aspx-vb[MenuItemCollectionRemoveAt#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCollectionRemoveAt/VB/menuitemcollectionremoveatvb.aspx#1)]  
   
  ]]></format>
         </remarks>

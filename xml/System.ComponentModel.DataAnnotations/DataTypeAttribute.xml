@@ -63,16 +63,21 @@
  [!code-csharp[System.ComponentModel.DataAnnotations.DataTypeAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/CS/Customer.cs#1)]
  [!code-vb[System.ComponentModel.DataAnnotations.DataTypeAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/VB/Customer.vb#1)]    
 
+ [!code-aspx-csharp[System.ComponentModel.DataAnnotations.DataTypeAttribute#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/CS/Text.ascx#2)]
+ [!code-aspx-vb[System.ComponentModel.DataAnnotations.DataTypeAttribute#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/VB/Text.ascx#2)]
+  
+ [!code-csharp[System.ComponentModel.DataAnnotations.DataTypeAttribute#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/CS/Text.ascx.cs#3)]
+ [!code-vb[System.ComponentModel.DataAnnotations.DataTypeAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/VB/Text.ascx.vb#3)]     
 
-                                        
-        <!-- TODO: review snippet reference 
-        [!code-csharp[System.ComponentModel.DataAnnotations.DataTypeAttribute#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/CS/Text.ascx#2)] -->
-        <!-- TODO: review snippet reference [!code-vb[System.ComponentModel.DataAnnotations.DataTypeAttribute#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/VB/Text.ascx#2)] -->      [!code-csharp[System.ComponentModel.DataAnnotations.DataTypeAttribute#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/CS/Text.ascx.cs#3)]
- [!code-vb[System.ComponentModel.DataAnnotations.DataTypeAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/VB/Text.ascx.vb#3)]     To compile and run the example code, you need the following:     
+To compile and run the example code, you need the following:     
+
 -   Any edition of Visual Studio 2010 or later.    
+
 -   The AdventureWorksLT sample database. For information about how to download and install the SQL Server sample database, see [Microsoft SQL Server Product Samples: Database](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks2014). The samples work with SQL Server 2014 and later versions.    
--   A data-driven Web site. This enables you to create a data context for the database and to create the class that contains the data field to customize. For more information, see `Walkthrough: Creating a New Dynamic Data Web Site using Scaffolding`.     ]]>
-      </format>
+
+-   A data-driven Web site. This enables you to create a data context for the database and to create the class that contains the data field to customize. For more information, see `Walkthrough: Creating a New Dynamic Data Web Site using Scaffolding`.     
+
+]]></format>
     </remarks>
   </Docs>
   <Members>

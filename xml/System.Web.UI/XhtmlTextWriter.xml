@@ -49,8 +49,8 @@
   
  The following code example demonstrates how to use the custom control `TestLabel` on an ASP.NET Web page.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.XhtmlTextWriter_Sample1#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.XhtmlTextWriter_Sample1/cs/xhtmltextlabel.aspx#4)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.XhtmlTextWriter_Sample1#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.XhtmlTextWriter_Sample1/VB/xhtmltestlabel.aspx#4)]  -->  
+ [!code-aspx-csharp[System.Web.UI.XhtmlTextWriter_Sample1#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.XhtmlTextWriter_Sample1/cs/xhtmltextlabel.aspx#4)]
+ [!code-aspx-vb[System.Web.UI.XhtmlTextWriter_Sample1#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.XhtmlTextWriter_Sample1/VB/xhtmltestlabel.aspx#4)]  
   
  To use the custom control in the preceding code example, add the following `<controlAdapters>` element to one of two files. You can add it to the appropriate machine-wide file in the subdirectory for a specific browser, as a subfolder of the .NET Framework configuration directory. Alternatively, you can add it to a custom browser file in the App_Browsers directory under the Web application root.  
   

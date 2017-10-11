@@ -27,8 +27,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.FontNamesConverter> class to convert a string with a list of font names to an array of strings containing the individual names. The array of strings is then converted back to a single string and displayed.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic FontNamesConverter.CanConvertFrom Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic FontNamesConverter.CanConvertFrom Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic FontNamesConverter.CanConvertFrom Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic FontNamesConverter.CanConvertFrom Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic FontNamesConverter.CanConvertFrom Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic FontNamesConverter.CanConvertFrom Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic FontNamesConverter.CanConvertFrom Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic FontNamesConverter.CanConvertFrom Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -94,8 +94,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.FontNamesConverter.CanConvertFrom%2A> method. The example determines whether the specified data type can be converted to an array of strings that contains the individual font names before performing the conversion.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic FontNamesConverter.CanConvertFrom Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic FontNamesConverter.CanConvertFrom Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic FontNamesConverter.CanConvertFrom Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic FontNamesConverter.CanConvertFrom Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic FontNamesConverter.CanConvertFrom Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic FontNamesConverter.CanConvertFrom Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic FontNamesConverter.CanConvertFrom Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic FontNamesConverter.CanConvertFrom Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -138,8 +138,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.FontNamesConverter.ConvertFrom%2A> method to convert a string with a list of font names to an array of strings containing the individual names.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic FontNamesConverter.CanConvertFrom Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic FontNamesConverter.CanConvertFrom Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic FontNamesConverter.CanConvertFrom Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic FontNamesConverter.CanConvertFrom Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic FontNamesConverter.CanConvertFrom Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic FontNamesConverter.CanConvertFrom Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic FontNamesConverter.CanConvertFrom Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic FontNamesConverter.CanConvertFrom Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -189,8 +189,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.FontNamesConverter.ConvertTo%2A> method to convert an array of strings containing the individual names to a single string that contains a list of font names.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic FontNamesConverter.CanConvertFrom Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic FontNamesConverter.CanConvertFrom Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic FontNamesConverter.CanConvertFrom Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic FontNamesConverter.CanConvertFrom Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic FontNamesConverter.CanConvertFrom Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic FontNamesConverter.CanConvertFrom Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic FontNamesConverter.CanConvertFrom Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic FontNamesConverter.CanConvertFrom Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>

@@ -25,8 +25,8 @@
   
  The following example demonstrates how to use the <xref:System.Web.HttpServerUtility.HtmlEncode%2A> method and the <xref:System.Web.HttpServerUtility.UrlEncode%2A> method of the <xref:System.Web.HttpServerUtility> class. The <xref:System.Web.HttpServerUtility.HtmlEncode%2A> method helps ensure that any user-supplied string input will be rendered as static text in browsers instead of executable script or HTML elements. The <xref:System.Web.HttpServerUtility.UrlEncode%2A> method encodes URLs so that they are correctly transmitted in the HTTP stream.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpServerUtility1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpServerUtility1/cs/HttpServerUtilityCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.HttpServerUtility1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpServerUtility1/vb/HttpServerUtilityVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.HttpServerUtility1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpServerUtility1/cs/HttpServerUtilityCS.aspx#1)]
+ [!code-aspx-vb[System.Web.HttpServerUtility1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpServerUtility1/vb/HttpServerUtilityVB.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -467,8 +467,8 @@
 ## Examples  
  The following example contains the function `LoadDecodedFile`, which decodes the data from a file and copies it into one string.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HttpServerUtility.HtmlDecode Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpServerUtility.HtmlDecode Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HttpServerUtility.HtmlDecode Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpServerUtility.HtmlDecode Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HttpServerUtility.HtmlDecode Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpServerUtility.HtmlDecode Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HttpServerUtility.HtmlDecode Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpServerUtility.HtmlDecode Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>

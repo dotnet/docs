@@ -62,7 +62,7 @@
                     EntitySetName="Customers">
                 </asp:EntityDataSource>
 
-	      <%-- <Snippet4> --%>
+	      <!-- <Snippet4> -->
               <asp:FormView ID="FormViewId" runat="server" AllowPaging="True"  CssClass="DDDetailsTable"
                   DataSourceID="EntityDataSource1">
                   <EditItemTemplate>
@@ -131,7 +131,7 @@
                   
               </asp:FormView>
 
-	      <%-- </Snippet4> --%>
+	      <!-- </Snippet4> -->
 
             </ContentTemplate>
 

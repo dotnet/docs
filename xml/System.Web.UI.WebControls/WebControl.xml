@@ -157,8 +157,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic WebControl.WebControl Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.WebControl Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic WebControl.WebControl Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.WebControl Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic WebControl.WebControl Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.WebControl Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic WebControl.WebControl Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.WebControl Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -203,8 +203,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic WebControl.AccessKey Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.AccessKey Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic WebControl.AccessKey Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.AccessKey Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic WebControl.AccessKey Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.AccessKey Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic WebControl.AccessKey Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.AccessKey Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -277,8 +277,8 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[WebControlApplyStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebControlApplyStyle/CS/webcontrolapplystylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebControlApplyStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebControlApplyStyle/VB/webcontrolapplystylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebControlApplyStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebControlApplyStyle/CS/webcontrolapplystylecs.aspx#1)]
+ [!code-aspx-vb[WebControlApplyStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebControlApplyStyle/VB/webcontrolapplystylevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -330,8 +330,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic WebControl.Attributes Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.Attributes Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic WebControl.Attributes Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.Attributes Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic WebControl.Attributes Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.Attributes Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic WebControl.Attributes Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.Attributes Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -378,8 +378,8 @@
 ## Examples  
  The following example illustrates how to set the <xref:System.Web.UI.WebControls.WebControl.BackColor%2A> property of the <xref:System.Web.UI.WebControls.Table> control, which is inherited from the <xref:System.Web.UI.WebControls.WebControl> base class.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic WebControl.BackColor Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.BackColor Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic WebControl.BackColor Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.BackColor Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic WebControl.BackColor Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.BackColor Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic WebControl.BackColor Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.BackColor Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -424,16 +424,16 @@
 ## Examples  
  The following example illustrates how to set the <xref:System.Web.UI.WebControls.WebControl.BorderColor%2A> property of the <xref:System.Web.UI.WebControls.Table> control, which is inherited from the <xref:System.Web.UI.WebControls.WebControl> base class.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic WebControl.BorderColor Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.BorderColor Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic WebControl.BorderColor Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.BorderColor Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic WebControl.BorderColor Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.BorderColor Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic WebControl.BorderColor Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.BorderColor Example/VB/sourcevb.aspx#1)]  
   
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControl.BorderProperties#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/CS/borderpropertiescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControl.BorderProperties#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/VB/borderpropertiesvb.aspx#1)]  -->  
-<!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControl.BorderProperties#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/CS/borderpropertiescs.aspx#3)]  -->
-<!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControl.BorderProperties#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/VB/borderpropertiesvb.aspx#3)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControl.BorderProperties#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/CS/borderpropertiescs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControl.BorderProperties#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/VB/borderpropertiesvb.aspx#1)]  
+[!code-aspx-csharp[System.Web.UI.WebControl.BorderProperties#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/CS/borderpropertiescs.aspx#3)]
+[!code-aspx-vb[System.Web.UI.WebControl.BorderProperties#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/VB/borderpropertiesvb.aspx#3)]  
   
  ]]></format>
         </remarks>
@@ -486,16 +486,16 @@
 ## Examples  
  The following example illustrates how to set the <xref:System.Web.UI.WebControls.WebControl.BorderStyle%2A> property of the <xref:System.Web.UI.WebControls.Table> control, which is inherited from the <xref:System.Web.UI.WebControls.WebControl> base class.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic WebControl.BorderStyle Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.BorderStyle Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic WebControl.BorderStyle Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.BorderStyle Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic WebControl.BorderStyle Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.BorderStyle Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic WebControl.BorderStyle Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.BorderStyle Example/VB/sourcevb.aspx#1)]  
   
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControl.BorderProperties#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/CS/borderpropertiescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControl.BorderProperties#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/VB/borderpropertiesvb.aspx#1)]  -->  
-<!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControl.BorderProperties#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/CS/borderpropertiescs.aspx#3)]  -->
-<!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControl.BorderProperties#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/VB/borderpropertiesvb.aspx#3)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControl.BorderProperties#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/CS/borderpropertiescs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControl.BorderProperties#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/VB/borderpropertiesvb.aspx#1)]  
+[!code-aspx-csharp[System.Web.UI.WebControl.BorderProperties#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/CS/borderpropertiescs.aspx#3)]
+[!code-aspx-vb[System.Web.UI.WebControl.BorderProperties#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/VB/borderpropertiesvb.aspx#3)]  
   
  ]]></format>
         </remarks>
@@ -540,16 +540,16 @@
 ## Examples  
  The following example illustrates how to set the <xref:System.Web.UI.WebControls.WebControl.BorderWidth%2A> property of the <xref:System.Web.UI.WebControls.Table> control, inherited from the <xref:System.Web.UI.WebControls.WebControl> base class.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic WebControl.BorderWidth Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.BorderWidth Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic WebControl.BorderWidth Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.BorderWidth Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic WebControl.BorderWidth Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.BorderWidth Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic WebControl.BorderWidth Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.BorderWidth Example/VB/sourcevb.aspx#1)]  
   
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControl.BorderProperties#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/CS/borderpropertiescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControl.BorderProperties#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/VB/borderpropertiesvb.aspx#1)]  -->  
-<!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControl.BorderProperties#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/CS/borderpropertiescs.aspx#3)]  -->
-<!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControl.BorderProperties#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/VB/borderpropertiesvb.aspx#3)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControl.BorderProperties#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/CS/borderpropertiescs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControl.BorderProperties#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/VB/borderpropertiesvb.aspx#1)]  
+[!code-aspx-csharp[System.Web.UI.WebControl.BorderProperties#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/CS/borderpropertiescs.aspx#3)]
+[!code-aspx-vb[System.Web.UI.WebControl.BorderProperties#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/VB/borderpropertiesvb.aspx#3)]  
   
  ]]></format>
         </remarks>
@@ -734,8 +734,8 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic WebControl.CssClass Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.CssClass Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic WebControl.CssClass Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.CssClass Example/VB/sourcevb.aspx#1)]  -->
+ [!code-aspx-csharp[Classic WebControl.CssClass Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.CssClass Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic WebControl.CssClass Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.CssClass Example/VB/sourcevb.aspx#1)]
  [!code-xml[Classic WebControl.CssClass Example#1](~/samples/snippets/common/VS_Snippets_WebNet/Classic WebControl.CssClass Example/Common/source.xml#1)]  
   
  ]]></format>
@@ -856,8 +856,8 @@ void Application_Start(object sender, EventArgs e)
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic WebControl.Enabled Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.Enabled Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic WebControl.Enabled Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.Enabled Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic WebControl.Enabled Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.Enabled Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic WebControl.Enabled Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.Enabled Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -944,8 +944,8 @@ void Application_Start(object sender, EventArgs e)
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic WebControl.Font Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.Font Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic WebControl.Font Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.Font Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic WebControl.Font Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.Font Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic WebControl.Font Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.Font Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -988,8 +988,8 @@ void Application_Start(object sender, EventArgs e)
 ## Examples  
  The following example illustrates how to set the <xref:System.Web.UI.WebControls.WebControl.ForeColor%2A> property of the <xref:System.Web.UI.WebControls.Table> control, inherited from the <xref:System.Web.UI.WebControls.WebControl> base class.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic WebControl.ForeColor Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.ForeColor Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic WebControl.ForeColor Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.ForeColor Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic WebControl.ForeColor Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.ForeColor Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic WebControl.ForeColor Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.ForeColor Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1072,8 +1072,8 @@ void Application_Start(object sender, EventArgs e)
 ## Examples  
  The following example illustrates how to declaratively set the <xref:System.Web.UI.WebControls.WebControl.Height%2A> property of the <xref:System.Web.UI.WebControls.Table> control, inherited from the <xref:System.Web.UI.WebControls.WebControl> base class.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic WebControl.Height Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.Height Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic WebControl.Height Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.Height Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic WebControl.Height Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.Height Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic WebControl.Height Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.Height Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1175,8 +1175,8 @@ void Application_Start(object sender, EventArgs e)
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[WebControlMergeStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebControlMergeStyle/CS/webcontrolmergestylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebControlMergeStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebControlMergeStyle/VB/webcontrolmergestylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebControlMergeStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebControlMergeStyle/CS/webcontrolmergestylecs.aspx#1)]
+ [!code-aspx-vb[WebControlMergeStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebControlMergeStyle/VB/webcontrolmergestylevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1409,8 +1409,8 @@ void Application_Start(object sender, EventArgs e)
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic WebControl.Style Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.Style Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic WebControl.Style Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.Style Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic WebControl.Style Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.Style Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic WebControl.Style Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.Style Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1593,8 +1593,8 @@ void Application_Start(object sender, EventArgs e)
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic WebControl.TabIndex Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.TabIndex Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic WebControl.TabIndex Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.TabIndex Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic WebControl.TabIndex Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.TabIndex Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic WebControl.TabIndex Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.TabIndex Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1709,8 +1709,8 @@ void Application_Start(object sender, EventArgs e)
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic WebControl.ToolTip Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.ToolTip Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic WebControl.ToolTip Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.ToolTip Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic WebControl.ToolTip Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.ToolTip Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic WebControl.ToolTip Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.ToolTip Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1786,8 +1786,8 @@ void Application_Start(object sender, EventArgs e)
 ## Examples  
  The following example illustrates how to declaratively set the <xref:System.Web.UI.WebControls.WebControl.Width%2A> property of the <xref:System.Web.UI.WebControls.Table> control, inherited from the <xref:System.Web.UI.WebControls.WebControl> base class.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic WebControl.Width Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.Width Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic WebControl.Width Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.Width Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic WebControl.Width Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.Width Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic WebControl.Width Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.Width Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>

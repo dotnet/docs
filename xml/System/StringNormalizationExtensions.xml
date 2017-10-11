@@ -26,14 +26,13 @@
   <Docs>
     <summary>Provides extension methods to work with string normalization.</summary>
     <remarks>
-        <format type="text/markdown"><![CDATA[  
+      <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
 
 The extension methods of the <xref:System.StringNormalizationExtensions> class are designed to work with .NET implementations that do not support the <xref:System.String.IsNormalized%2A?displayProperty=nameWithType> and <xref:System.String.Normalize%2A?displayProperty=nameWithType> methods. However, these methods are included in the <xref:System.String> class in .NET Standard 2.0 and are therefore available on all .NET implementations that support the .NET Standard 2.0. For more information, see [.NET Standard](~/docs/standard/net-standard.md).
   
         ]]></format>
-    
     </remarks>
   </Docs>
   <Members>

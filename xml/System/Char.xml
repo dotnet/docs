@@ -75,7 +75,7 @@
   
 <a name="Categories"></a>   
 ## Characters and character categories  
- Each Unicode character or valid surrogate pair belongs to a Unicode category. In the .NET Framework, Unicode categories are represented by members of the <xref:System.Globalization.UnicodeCategory> enumeration and include values such as <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType>, <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType>, and <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType>, for example.  
+ Each Unicode character or valid surrogate pair belongs to a Unicode category. In the .NET Framework, Unicode categories are represented by members of the <xref:System.Globalization.UnicodeCategory> enumeration and include values such as <xref:System.Globalization.UnicodeCategory.CurrencySymbol?displayProperty=nameWithType>, <xref:System.Globalization.UnicodeCategory.LowercaseLetter?displayProperty=nameWithType>, and <xref:System.Globalization.UnicodeCategory.SpaceSeparator?displayProperty=nameWithType>, for example.  
   
  To determine the Unicode category of a character, you call the <xref:System.Char.GetUnicodeCategory%2A> method. For example, the following example calls the <xref:System.Char.GetUnicodeCategory%2A> to display the Unicode category of each character in a string.  
   
@@ -860,7 +860,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Control characters are formatting and other non-printing characters, such as ACK, BEL, CR, FF, LF, and VT. The Unicode standard assigns code points from \U0000 to \U001F, \U007F, and from \U0080 to \U009F to control characters. According to the Unicode standard, these values are to be interpreted as control characters unless their use is otherwise defined by an application. Valid control characters are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category.  
+ Control characters are formatting and other non-printing characters, such as ACK, BEL, CR, FF, LF, and VT. The Unicode standard assigns code points from \U0000 to \U001F, \U007F, and from \U0080 to \U009F to control characters. According to the Unicode standard, these values are to be interpreted as control characters unless their use is otherwise defined by an application. Valid control characters are members of the <xref:System.Globalization.UnicodeCategory.Control?displayProperty=nameWithType> category.  
   
  ]]></format>
         </remarks>
@@ -903,7 +903,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Control characters are formatting and other non-printing characters, such as ACK, BEL, CR, FF, LF, and VT. T The Unicode standard assigns code points from \U0000 to \U001F, \U007F, and from \U0080 to \U009F to control characters. According to the Unicode standard, these values are to be interpreted as control characters unless their use is otherwise defined by an application. Valid control characters are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category.  
+ Control characters are formatting and other non-printing characters, such as ACK, BEL, CR, FF, LF, and VT. T The Unicode standard assigns code points from \U0000 to \U001F, \U007F, and from \U0080 to \U009F to control characters. According to the Unicode standard, these values are to be interpreted as control characters unless their use is otherwise defined by an application. Valid control characters are members of the <xref:System.Globalization.UnicodeCategory.Control?displayProperty=nameWithType> category.  
   
    
   
@@ -959,7 +959,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
 ## Remarks  
  Character positions in a string are indexed starting from zero.  
   
- Control characters are formatting and other non-printing characters, such as ACK, BEL, CR, FF, LF, and VT. The Unicode standard assigns code points from \U0000 to \U001F, \U007F, and from \U0080 to \U009F to control characters. According to the Unicode standard, these values are to be interpreted as control characters unless their use is otherwise defined by an application. Valid control characters are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category.  
+ Control characters are formatting and other non-printing characters, such as ACK, BEL, CR, FF, LF, and VT. The Unicode standard assigns code points from \U0000 to \U001F, \U007F, and from \U0080 to \U009F to control characters. According to the Unicode standard, these values are to be interpreted as control characters unless their use is otherwise defined by an application. Valid control characters are members of the <xref:System.Globalization.UnicodeCategory.Control?displayProperty=nameWithType> category.  
   
    
   
@@ -992,7 +992,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Valid digits are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category.  
+ Valid digits are members of the <xref:System.Globalization.UnicodeCategory.DecimalDigitNumber?displayProperty=nameWithType> category.  
   
  ]]></format>
         </remarks>
@@ -1037,7 +1037,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
 ## Remarks  
  This method determines whether a <xref:System.Char> is a radix-10 digit. This contrasts with <xref:System.Char.IsNumber%2A>, which determines whether a `Char` is of any numeric Unicode category. Numbers include characters such as fractions, subscripts, superscripts, Roman numerals, currency numerators, encircled numbers, and script-specific digits.  
   
- Valid digits are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category.  
+ Valid digits are members of the <xref:System.Globalization.UnicodeCategory.DecimalDigitNumber?displayProperty=nameWithType> category.  
   
    
   
@@ -1095,7 +1095,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  Character positions in a string are indexed starting from zero.  
   
- Valid digits are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category.  
+ Valid digits are members of the <xref:System.Globalization.UnicodeCategory.DecimalDigitNumber?displayProperty=nameWithType> category.  
   
    
   
@@ -1242,15 +1242,15 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
 ## Remarks  
  This method determines whether a <xref:System.Char> is a member of any category of Unicode letter. Unicode letters include the following:  
   
--   Uppercase letters, such as U+0041 (LATIN CAPITAL LETTER A) through U+005A (LATIN CAPITAL LETTER Z), or U+0400 (CYRILLIC CAPITAL LETTER IE WITH GRAVE) through U+042F (CYRILLIC CAPITAL LETTER YA). These characters are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category.  
+-   Uppercase letters, such as U+0041 (LATIN CAPITAL LETTER A) through U+005A (LATIN CAPITAL LETTER Z), or U+0400 (CYRILLIC CAPITAL LETTER IE WITH GRAVE) through U+042F (CYRILLIC CAPITAL LETTER YA). These characters are members of the <xref:System.Globalization.UnicodeCategory.UppercaseLetter?displayProperty=nameWithType> category.  
   
--   Lowercase letters, such as U+0061 (LATIN SMALL LETTER A) through U+007A (LATIN SMALL LETTER Z), or U+03AC (GREEK SMALL LETTER ALPHA WITH TONOS) through U+03CE (GREEK SMALL LETTER OMEGA WITH TONOS). These characters are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category.  
+-   Lowercase letters, such as U+0061 (LATIN SMALL LETTER A) through U+007A (LATIN SMALL LETTER Z), or U+03AC (GREEK SMALL LETTER ALPHA WITH TONOS) through U+03CE (GREEK SMALL LETTER OMEGA WITH TONOS). These characters are members of the <xref:System.Globalization.UnicodeCategory.LowercaseLetter?displayProperty=nameWithType> category.  
   
--   Title case letters, such as U+01C5 (LATIN CAPITAL LETTER D WITH SMALL LETTER Z WITH CARON) or U+1FFC (GREEK CAPITAL LETTER OMEGA WITH PROSGEGRAMMENI). These characters are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category.  
+-   Title case letters, such as U+01C5 (LATIN CAPITAL LETTER D WITH SMALL LETTER Z WITH CARON) or U+1FFC (GREEK CAPITAL LETTER OMEGA WITH PROSGEGRAMMENI). These characters are members of the <xref:System.Globalization.UnicodeCategory.TitlecaseLetter?displayProperty=nameWithType> category.  
   
--   Modifiers, such as U+02B0 (MODIFIER LETTER SMALL H) through U+02C1 (MODIFIER LETTER REVERSED GLOTTAL STOP), or U+1D2C (MODIFIER LETTER CAPITAL A) through U+1D61 (MODIFIER LETTER SMALL CHI). These characters are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category.  
+-   Modifiers, such as U+02B0 (MODIFIER LETTER SMALL H) through U+02C1 (MODIFIER LETTER REVERSED GLOTTAL STOP), or U+1D2C (MODIFIER LETTER CAPITAL A) through U+1D61 (MODIFIER LETTER SMALL CHI). These characters are members of the <xref:System.Globalization.UnicodeCategory.ModifierLetter?displayProperty=nameWithType> category.  
   
--   Other letters, such as U+05D0 (HEBREW LETTER ALEF) through U+05EA (HEBREW LETTER TAV), U+0621 (ARABIC LETTER HAMZA) through U+063A (ARABIC LETTER GHAIN), or U+4E00 (\<CJK Ideograph, First>) through U+9FC3 (\<CJK Ideograph, Last>). These characters are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category.  
+-   Other letters, such as U+05D0 (HEBREW LETTER ALEF) through U+05EA (HEBREW LETTER TAV), U+0621 (ARABIC LETTER HAMZA) through U+063A (ARABIC LETTER GHAIN), or U+4E00 (\<CJK Ideograph, First>) through U+9FC3 (\<CJK Ideograph, Last>). These characters are members of the <xref:System.Globalization.UnicodeCategory.OtherLetter?displayProperty=nameWithType> category.  
   
  ]]></format>
         </remarks>
@@ -1295,15 +1295,15 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
 ## Remarks  
  This method determines whether a <xref:System.Char> is a member of any category of Unicode letter. Unicode letters include the following:  
   
--   Uppercase letters, such as U+0041 (LATIN CAPITAL LETTER A) through U+005A (LATIN CAPITAL LETTER Z), or U+0400 (CYRILLIC CAPITAL LETTER IE WITH GRAVE) through U+042F (CYRILLIC CAPITAL LETTER YA). These characters are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category.  
+-   Uppercase letters, such as U+0041 (LATIN CAPITAL LETTER A) through U+005A (LATIN CAPITAL LETTER Z), or U+0400 (CYRILLIC CAPITAL LETTER IE WITH GRAVE) through U+042F (CYRILLIC CAPITAL LETTER YA). These characters are members of the <xref:System.Globalization.UnicodeCategory.UppercaseLetter?displayProperty=nameWithType> category.  
   
--   Lowercase letters, such as U+0061 (LATIN SMALL LETTER A) through U+007A (LATIN SMALL LETTER Z), or U+03AC (GREEK SMALL LETTER ALPHA WITH TONOS) through U+03CE (GREEK SMALL LETTER OMEGA WITH TONOS). These characters are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category.  
+-   Lowercase letters, such as U+0061 (LATIN SMALL LETTER A) through U+007A (LATIN SMALL LETTER Z), or U+03AC (GREEK SMALL LETTER ALPHA WITH TONOS) through U+03CE (GREEK SMALL LETTER OMEGA WITH TONOS). These characters are members of the <xref:System.Globalization.UnicodeCategory.LowercaseLetter?displayProperty=nameWithType> category.  
   
--   Title case letters, such as U+01C5 (LATIN CAPITAL LETTER D WITH SMALL LETTER Z WITH CARON) or U+1FFC (GREEK CAPITAL LETTER OMEGA WITH PROSGEGRAMMENI). These characters are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category.  
+-   Title case letters, such as U+01C5 (LATIN CAPITAL LETTER D WITH SMALL LETTER Z WITH CARON) or U+1FFC (GREEK CAPITAL LETTER OMEGA WITH PROSGEGRAMMENI). These characters are members of the <xref:System.Globalization.UnicodeCategory.TitlecaseLetter?displayProperty=nameWithType> category.  
   
--   Modifiers, such as U+02B0 (MODIFIER LETTER SMALL H) through U+02C1 (MODIFIER LETTER REVERSED GLOTTAL STOP), or U+1D2C (MODIFIER LETTER CAPITAL A) through U+1D61 (MODIFIER LETTER SMALL CHI). These characters are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category.  
+-   Modifiers, such as U+02B0 (MODIFIER LETTER SMALL H) through U+02C1 (MODIFIER LETTER REVERSED GLOTTAL STOP), or U+1D2C (MODIFIER LETTER CAPITAL A) through U+1D61 (MODIFIER LETTER SMALL CHI). These characters are members of the <xref:System.Globalization.UnicodeCategory.ModifierLetter?displayProperty=nameWithType> category.  
   
--   Other letters, such as U+05D0 (HEBREW LETTER ALEF) through U+05EA (HEBREW LETTER TAV), U+0621 (ARABIC LETTER HAMZA) through U+063A (ARABIC LETTER GHAIN), or U+4E00 (\<CJK Ideograph, First>) through U+9FC3 (\<CJK Ideograph, Last>). These characters are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category.  
+-   Other letters, such as U+05D0 (HEBREW LETTER ALEF) through U+05EA (HEBREW LETTER TAV), U+0621 (ARABIC LETTER HAMZA) through U+063A (ARABIC LETTER GHAIN), or U+4E00 (\<CJK Ideograph, First>) through U+9FC3 (\<CJK Ideograph, Last>). These characters are members of the <xref:System.Globalization.UnicodeCategory.OtherLetter?displayProperty=nameWithType> category.  
   
    
   
@@ -1361,15 +1361,15 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  This method determines whether the character at a specified index position in a string is a member of any category of Unicode letter. Unicode letters include the following:  
   
--   Uppercase letters, such as U+0041 (LATIN CAPITAL LETTER A) through U+005A (LATIN CAPITAL LETTER Z), or U+0400 (CYRILLIC CAPITAL LETTER IE WITH GRAVE) through U+042F (CYRILLIC CAPITAL LETTER YA). These characters are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category.  
+-   Uppercase letters, such as U+0041 (LATIN CAPITAL LETTER A) through U+005A (LATIN CAPITAL LETTER Z), or U+0400 (CYRILLIC CAPITAL LETTER IE WITH GRAVE) through U+042F (CYRILLIC CAPITAL LETTER YA). These characters are members of the <xref:System.Globalization.UnicodeCategory.UppercaseLetter?displayProperty=nameWithType> category.  
   
--   Lowercase letters, such as U+0061 (LATIN SMALL LETTER A) through U+007A (LATIN SMALL LETTER Z), or U+03AC (GREEK SMALL LETTER ALPHA WITH TONOS) through U+03CE (GREEK SMALL LETTER OMEGA WITH TONOS). These characters are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category.  
+-   Lowercase letters, such as U+0061 (LATIN SMALL LETTER A) through U+007A (LATIN SMALL LETTER Z), or U+03AC (GREEK SMALL LETTER ALPHA WITH TONOS) through U+03CE (GREEK SMALL LETTER OMEGA WITH TONOS). These characters are members of the <xref:System.Globalization.UnicodeCategory.LowercaseLetter?displayProperty=nameWithType> category.  
   
--   Title case letters, such as U+01C5 (LATIN CAPITAL LETTER D WITH SMALL LETTER Z WITH CARON) or U+1FFC (GREEK CAPITAL LETTER OMEGA WITH PROSGEGRAMMENI). These characters are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category.  
+-   Title case letters, such as U+01C5 (LATIN CAPITAL LETTER D WITH SMALL LETTER Z WITH CARON) or U+1FFC (GREEK CAPITAL LETTER OMEGA WITH PROSGEGRAMMENI). These characters are members of the <xref:System.Globalization.UnicodeCategory.TitlecaseLetter?displayProperty=nameWithType> category.  
   
--   Modifiers, such as U+02B0 (MODIFIER LETTER SMALL H) through U+02C1 (MODIFIER LETTER REVERSED GLOTTAL STOP), or U+1D2C (MODIFIER LETTER CAPITAL A) through U+1D61 (MODIFIER LETTER SMALL CHI). These characters are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category.  
+-   Modifiers, such as U+02B0 (MODIFIER LETTER SMALL H) through U+02C1 (MODIFIER LETTER REVERSED GLOTTAL STOP), or U+1D2C (MODIFIER LETTER CAPITAL A) through U+1D61 (MODIFIER LETTER SMALL CHI). These characters are members of the <xref:System.Globalization.UnicodeCategory.ModifierLetter?displayProperty=nameWithType> category.  
   
--   Other letters, such as U+05D0 (HEBREW LETTER ALEF) through U+05EA (HEBREW LETTER TAV), U+0621 (ARABIC LETTER HAMZA) through U+063A (ARABIC LETTER GHAIN), or U+4E00 (\<CJK Ideograph, First>) through U+9FC3 (\<CJK Ideograph, Last>). These characters are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category.  
+-   Other letters, such as U+05D0 (HEBREW LETTER ALEF) through U+05EA (HEBREW LETTER TAV), U+0621 (ARABIC LETTER HAMZA) through U+063A (ARABIC LETTER GHAIN), or U+4E00 (\<CJK Ideograph, First>) through U+9FC3 (\<CJK Ideograph, Last>). These characters are members of the <xref:System.Globalization.UnicodeCategory.OtherLetter?displayProperty=nameWithType> category.  
   
    
   
@@ -1786,7 +1786,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
 > [!IMPORTANT]
 >  The <xref:System.Char.IsNumber%28System.Char%29> method is not intended to determine whether a string consists of numeric characters (for example, by calling the method for each character in a string). To determine whether a string consists of numeric characters, call one of the overloads of the `TryParse` method (such as <xref:System.Int32.TryParse%2A?displayProperty=nameWithType> or <xref:System.Double.TryParse%2A?displayProperty=nameWithType> of an integral or floating point type.  
   
- Valid numbers are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType>, <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType>, or <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category.  
+ Valid numbers are members of the <xref:System.Globalization.UnicodeCategory.DecimalDigitNumber?displayProperty=nameWithType>, <xref:System.Globalization.UnicodeCategory.LetterNumber?displayProperty=nameWithType>, or <xref:System.Globalization.UnicodeCategory.OtherNumber?displayProperty=nameWithType> category.  
   
  The <xref:System.Char.IsNumber%28System.Char%29> method assumes that `c` corresponds to a single linguistic character and checks whether that character represents a number. However, some numbers in the Unicode standard are represented by two <xref:System.Char> objects that form a surrogate pair. For example, the Aegean numbering system consists of code points U+10107 through U+10133. The following example uses the <xref:System.Char.ConvertFromUtf32%2A> method to instantiate a string that represents AEGEAN NUMBER ONE. As the output from the example shows, the <xref:System.Char.IsNumber%28System.Char%29> method returns `false` if it is passed either a high surrogate or a low surrogate of this character.  
   
@@ -1852,7 +1852,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
 > [!IMPORTANT]
 >  The <xref:System.Char.IsNumber%28System.String%2CSystem.Int32%29> method is not intended to determine whether a string consists of numeric characters (for example, by calling the method for each character in a string). To determine whether a string consists of numeric characters, call one of the overloads of the `TryParse` method (such as <xref:System.Int32.TryParse%2A?displayProperty=nameWithType> or <xref:System.Double.TryParse%2A?displayProperty=nameWithType> of an integral or floating point type.  
   
- Valid numbers are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType>, <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType>, or <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category.  
+ Valid numbers are members of the <xref:System.Globalization.UnicodeCategory.DecimalDigitNumber?displayProperty=nameWithType>, <xref:System.Globalization.UnicodeCategory.LetterNumber?displayProperty=nameWithType>, or <xref:System.Globalization.UnicodeCategory.OtherNumber?displayProperty=nameWithType> category.  
   
  If the <xref:System.Char> object at position `index` is the first character of a valid surrogate pair, the <xref:System.Char.IsNumber%28System.String%2CSystem.Int32%29> method determines whether the surrogate pair forms a numeric digit. For example, the Aegean numbering system consists of code points U+10107 through U+10133. The following example uses the <xref:System.Char.ConvertFromUtf32%2A> method to instantiate a string that represents AEGEAN NUMBER ONE. As the output from the example shows, the <xref:System.Char.IsNumber%28System.String%2CSystem.Int32%29> method returns `true` if it is passed the high surrogate of AEGEAN NUMBER ONE. However, if it is passed the low surrogate, it considers only the category of the low surrogate and returns `false`.  
   
@@ -2105,14 +2105,14 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
 ## Remarks  
  The Unicode standard recognizes three subcategories of separators:  
   
--   Space separators (the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category), which includes characters such as \u0020.  
+-   Space separators (the <xref:System.Globalization.UnicodeCategory.SpaceSeparator?displayProperty=nameWithType> category), which includes characters such as \u0020.  
   
--   Line separators (the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category), which includes \u2028.  
+-   Line separators (the <xref:System.Globalization.UnicodeCategory.LineSeparator?displayProperty=nameWithType> category), which includes \u2028.  
   
--   Paragraph separators (the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category), which includes \u2029.  
+-   Paragraph separators (the <xref:System.Globalization.UnicodeCategory.ParagraphSeparator?displayProperty=nameWithType> category), which includes \u2029.  
   
 > [!NOTE]
->  The Unicode standard classifies the characters \u000A (LF), \u000C (FF), and \u000D (CR) as control characters (members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category), not as separator characters.  
+>  The Unicode standard classifies the characters \u000A (LF), \u000C (FF), and \u000D (CR) as control characters (members of the <xref:System.Globalization.UnicodeCategory.Control?displayProperty=nameWithType> category), not as separator characters.  
   
  ]]></format>
         </remarks>
@@ -2157,14 +2157,14 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
 ## Remarks  
  The Unicode standard recognizes three subcategories of separators:  
   
--   Space separators (the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category), which includes characters such as \u0020.  
+-   Space separators (the <xref:System.Globalization.UnicodeCategory.SpaceSeparator?displayProperty=nameWithType> category), which includes characters such as \u0020.  
   
--   Line separators (the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category), which includes \u2028.  
+-   Line separators (the <xref:System.Globalization.UnicodeCategory.LineSeparator?displayProperty=nameWithType> category), which includes \u2028.  
   
--   Paragraph separators (the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category), which includes \u2029.  
+-   Paragraph separators (the <xref:System.Globalization.UnicodeCategory.ParagraphSeparator?displayProperty=nameWithType> category), which includes \u2029.  
   
 > [!NOTE]
->  The Unicode standard classifies the characters \u000A (LF), \u000C (FF), and \u000D (CR) as control characters (members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category), not as separator characters.  
+>  The Unicode standard classifies the characters \u000A (LF), \u000C (FF), and \u000D (CR) as control characters (members of the <xref:System.Globalization.UnicodeCategory.Control?displayProperty=nameWithType> category), not as separator characters.  
   
    
   
@@ -2222,14 +2222,14 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  The Unicode standard recognizes three subcategories of separators:  
   
--   Space separators (the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category), which includes characters such as \u0020.  
+-   Space separators (the <xref:System.Globalization.UnicodeCategory.SpaceSeparator?displayProperty=nameWithType> category), which includes characters such as \u0020.  
   
--   Line separators (the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category), which includes \u2028.  
+-   Line separators (the <xref:System.Globalization.UnicodeCategory.LineSeparator?displayProperty=nameWithType> category), which includes \u2028.  
   
--   Paragraph separators (the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category), which includes \u2029.  
+-   Paragraph separators (the <xref:System.Globalization.UnicodeCategory.ParagraphSeparator?displayProperty=nameWithType> category), which includes \u2029.  
   
 > [!NOTE]
->  The Unicode standard classifies the characters \u000A (LF), \u000C (FF), and \u000D (CR) as control characters (members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category), not as separator characters.  
+>  The Unicode standard classifies the characters \u000A (LF), \u000C (FF), and \u000D (CR) as control characters (members of the <xref:System.Globalization.UnicodeCategory.Control?displayProperty=nameWithType> category), not as separator characters.  
   
    
   
@@ -2285,7 +2285,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A surrogate is a <xref:System.Char> object with a UTF-16 code unit in the range from U+D800 to U+DFFF. Each character with a code unit in this range belongs to the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category. The individual surrogate code unit has no interpretation of its own, but has meaning only when used as part of a surrogate pair. For more information about surrogate pairs, see the Unicode Standard at the [Unicode home page](http://go.microsoft.com/fwlink/?linkid=37123).  
+ A surrogate is a <xref:System.Char> object with a UTF-16 code unit in the range from U+D800 to U+DFFF. Each character with a code unit in this range belongs to the <xref:System.Globalization.UnicodeCategory.Surrogate?displayProperty=nameWithType> category. The individual surrogate code unit has no interpretation of its own, but has meaning only when used as part of a surrogate pair. For more information about surrogate pairs, see the Unicode Standard at the [Unicode home page](http://go.microsoft.com/fwlink/?linkid=37123).  
   
    
   
@@ -2341,7 +2341,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
 ## Remarks  
  Character positions in a string are indexed starting from zero.  
   
- A surrogate is a <xref:System.Char> object with a UTF-16 code unit in the range from U+D800 to U+DFFF. Each character with a code unit in this range belongs to the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category. The individual surrogate code unit has no interpretation of its own, but has meaning only when used as part of a surrogate pair. For more information about surrogate pairs, see the Unicode Standard at the [Unicode home page](http://go.microsoft.com/fwlink/?linkid=37123).  
+ A surrogate is a <xref:System.Char> object with a UTF-16 code unit in the range from U+D800 to U+DFFF. Each character with a code unit in this range belongs to the <xref:System.Globalization.UnicodeCategory.Surrogate?displayProperty=nameWithType> category. The individual surrogate code unit has no interpretation of its own, but has meaning only when used as part of a surrogate pair. For more information about surrogate pairs, see the Unicode Standard at the [Unicode home page](http://go.microsoft.com/fwlink/?linkid=37123).  
   
    
   

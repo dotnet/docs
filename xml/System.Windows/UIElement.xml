@@ -12364,7 +12364,7 @@ Image with an Elliptical Clip Region
    
   
 ## Examples  
- The following example implements a handler that references two different named buttons that are intended to be a mutually exclusive pair in the user interface. Prior to running the actual program logic associated with the button, the button itself is set to be <xref:System.Windows.Visibility?displayProperty=nameWithType>, and the other button in the pair is set to <xref:System.Windows.Visibility?displayProperty=nameWithType>.  
+ The following example implements a handler that references two different named buttons that are intended to be a mutually exclusive pair in the user interface. Prior to running the actual program logic associated with the button, the button itself is set to be <xref:System.Windows.Visibility.Hidden?displayProperty=nameWithType>, and the other button in the pair is set to <xref:System.Windows.Visibility.Visible?displayProperty=nameWithType>.  
   
  [!code-csharp[MediaElement_snip#UIElementVisibility](~/samples/snippets/csharp/VS_Snippets_Wpf/MediaElement_snip/CSharp/PlaybackExample.cs#uielementvisibility)]
  [!code-vb[MediaElement_snip#UIElementVisibility](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MediaElement_snip/VB/PlaybackExample.vb#uielementvisibility)]  

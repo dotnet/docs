@@ -1713,13 +1713,13 @@ value Mod 2 = 0
 |`value` parameter|`baseValue` parameter|Return value|  
 |-----------------------|---------------------------|------------------|  
 |`value` > 0|(0 < `baseValue` < 1) -or-(`baseValue` > 1)|logbaseValue(`value`)|  
-|`value` < 0|(any value)|<xref:System.Double?displayProperty=nameWithType>|  
-|(any value)|`baseValue` < 0|<xref:System.Double?displayProperty=nameWithType>|  
-|`value` != 1|`baseValue` = 0|<xref:System.Double?displayProperty=nameWithType>|  
-|`value` != 1|`baseValue` = <xref:System.Double?displayProperty=nameWithType>|<xref:System.Double?displayProperty=nameWithType>|  
-|(any value)|`baseValue` = <xref:System.Double?displayProperty=nameWithType>|<xref:System.Double?displayProperty=nameWithType>|  
-|(any value)|`baseValue` = 1|<xref:System.Double?displayProperty=nameWithType>|  
-|`value` = 0|0 < `baseValue` < 1|<xref:System.Double?displayProperty=nameWithType>|  
+|`value` < 0|(any value)|<xref:System.Double.NaN?displayProperty=nameWithType>|  
+|(any value)|`baseValue` < 0|<xref:System.Double.NaN?displayProperty=nameWithType>|  
+|`value` != 1|`baseValue` = 0|<xref:System.Double.NaN?displayProperty=nameWithType>|  
+|`value` != 1|`baseValue` = <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>|<xref:System.Double.NaN?displayProperty=nameWithType>|  
+|(any value)|`baseValue` = <xref:System.Double.NaN?displayProperty=nameWithType>|<xref:System.Double.NaN?displayProperty=nameWithType>|  
+|(any value)|`baseValue` = 1|<xref:System.Double.NaN?displayProperty=nameWithType>|  
+|`value` = 0|0 < `baseValue` < 1|<xref:System.Double.PositiveInfinity?displayProperty=nameWithType>|  
 |`value` = 0|`baseValue` > 1|<xref:System.Double.PositiveInfinity?displayProperty=nameWithType>|  
 |`value` = 1|`baseValue` = 0|0|  
 |`value` = 1|`baseValue` = <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>|0|  
@@ -1773,8 +1773,8 @@ value Mod 2 = 0
 |Sign of value parameter|Return value|  
 |-----------------------------|------------------|  
 |Positive|The base 10 log of `value`; that is, log10`value`.|  
-|Zero|<xref:System.Double?displayProperty=nameWithType>.|  
-|Negative|<xref:System.Double?displayProperty=nameWithType>.|  
+|Zero|<xref:System.Double.NegativeInfinity?displayProperty=nameWithType>.|  
+|Negative|<xref:System.Double.NaN?displayProperty=nameWithType>.|  
   
  To calculate the natural logarithm of a <xref:System.Numerics.BigInteger> value, call the <xref:System.Numerics.BigInteger.Log%28System.Numerics.BigInteger%29?displayProperty=nameWithType> method. To calculate the logarithm of a number in another base, call the <xref:System.Numerics.BigInteger.Log%28System.Numerics.BigInteger%2CSystem.Double%29?displayProperty=nameWithType> method.  
   
@@ -5699,7 +5699,7 @@ value Mod 2 = 0
 |*digits*|A sequence of digits ranging from 0 to 9. Any leading zeros are ignored.|  
   
 > [!NOTE]
->  The string specified by the `value` parameter is interpreted by using the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> style. It cannot contain any group separators or decimal separator, and it cannot have a decimal portion.  
+>  The string specified by the `value` parameter is interpreted by using the <xref:System.Globalization.NumberStyles.Integer?displayProperty=nameWithType> style. It cannot contain any group separators or decimal separator, and it cannot have a decimal portion.  
   
  The `value` parameter is parsed by using the formatting information in a <xref:System.Globalization.NumberFormatInfo?displayProperty=nameWithType> object that is initialized for the current system culture. For more information, see <xref:System.Globalization.NumberFormatInfo.CurrentInfo%2A?displayProperty=nameWithType>. To parse a string by using the formatting information of a specific culture, use the <xref:System.Numerics.BigInteger.Parse%28System.String%2CSystem.IFormatProvider%29> method.  
   
@@ -5763,7 +5763,7 @@ value Mod 2 = 0
   
  [*ws*][*$*][*sign*][*digits*,]*digits*[.*fractional_digits*][E[*sign*]*exponential_digits*][*ws*]  
   
- If `style` includes <xref:System.Globalization.NumberStyles?displayProperty=nameWithType>, the `value` parameter may contain the following elements:  
+ If `style` includes <xref:System.Globalization.NumberStyles.AllowHexSpecifier?displayProperty=nameWithType>, the `value` parameter may contain the following elements:  
   
  [*ws*]*hexdigits*[*ws*]  
   
@@ -5771,16 +5771,16 @@ value Mod 2 = 0
   
 |Element|Description|  
 |-------------|-----------------|  
-|*ws*|Optional white space. White space can appear at the start of `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag, and it can appear at the end of `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
-|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyNegativePattern%2A?displayProperty=nameWithType> and <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A?displayProperty=nameWithType> properties of the current culture. The current culture's currency symbol can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
-|*sign*|An optional sign. The sign can appear at the start of `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag, and it can appear at the end of `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag. Parentheses can be used in `value` to indicate a negative value if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
+|*ws*|Optional white space. White space can appear at the start of `value` if `style` includes the <xref:System.Globalization.NumberStyles.AllowLeadingWhite?displayProperty=nameWithType> flag, and it can appear at the end of `value` if `style` includes the <xref:System.Globalization.NumberStyles.AllowTrailingWhite?displayProperty=nameWithType> flag.|  
+|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyNegativePattern%2A?displayProperty=nameWithType> and <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A?displayProperty=nameWithType> properties of the current culture. The current culture's currency symbol can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles.AllowCurrencySymbol?displayProperty=nameWithType> flag.|  
+|*sign*|An optional sign. The sign can appear at the start of `value` if `style` includes the <xref:System.Globalization.NumberStyles.AllowLeadingSign?displayProperty=nameWithType> flag, and it can appear at the end of `value` if `style` includes the <xref:System.Globalization.NumberStyles.AllowTrailingSign?displayProperty=nameWithType> flag. Parentheses can be used in `value` to indicate a negative value if `style` includes the <xref:System.Globalization.NumberStyles.AllowParentheses?displayProperty=nameWithType> flag.|  
 |*digits*<br /><br /> *fractional_digits*<br /><br /> *exponential_digits*|A sequence of digits from 0 through 9. For *fractional_digits*, only the digit 0 is valid.|  
-|*,*|A culture-specific group separator symbol. The current culture's group separator can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
-|*.*|A culture-specific decimal point symbol. The current culture's decimal point symbol can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag. Only the digit 0 can appear as a fractional digit for the parse operation to succeed; if *fractional_digits* includes any other digit, a <xref:System.FormatException> is thrown.|  
-|E|The "e" or "E" character, which indicates that the value is represented in exponential (scientific) notation. The `value` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
+|*,*|A culture-specific group separator symbol. The current culture's group separator can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles.AllowThousands?displayProperty=nameWithType> flag.|  
+|*.*|A culture-specific decimal point symbol. The current culture's decimal point symbol can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles.AllowDecimalPoint?displayProperty=nameWithType> flag. Only the digit 0 can appear as a fractional digit for the parse operation to succeed; if *fractional_digits* includes any other digit, a <xref:System.FormatException> is thrown.|  
+|E|The "e" or "E" character, which indicates that the value is represented in exponential (scientific) notation. The `value` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles.AllowExponent?displayProperty=nameWithType> flag.|  
 |*hexdigits*|A sequence of hexadecimal digits from 0 through f, or 0 through F.|  
   
- A string with digits only (which corresponds to the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> style) always parses successfully. Most of the remaining <xref:System.Globalization.NumberStyles> members control elements that may be present, but are not required to be present, in the input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> members affect the elements that may be present in `value`.  
+ A string with digits only (which corresponds to the <xref:System.Globalization.NumberStyles.None?displayProperty=nameWithType> style) always parses successfully. Most of the remaining <xref:System.Globalization.NumberStyles> members control elements that may be present, but are not required to be present, in the input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> members affect the elements that may be present in `value`.  
   
 |`NumberStyles` value|Elements permitted in `value` in addition to digits|  
 |--------------------------|---------------------------------------------------------|  
@@ -5802,7 +5802,7 @@ value Mod 2 = 0
 > [!IMPORTANT]
 >  If you use the <xref:System.Numerics.BigInteger.Parse%2A> method to round-trip the string representation of a <xref:System.Numerics.BigInteger> value that was output by the <xref:System.Numerics.BigInteger.ToString%2A> method, you should use the <xref:System.Numerics.BigInteger.ToString%28System.String%29?displayProperty=nameWithType> method with the "R" format specifier to generate the string representation of the <xref:System.Numerics.BigInteger> value. Otherwise, the string representation of the <xref:System.Numerics.BigInteger> preserves only the 50 most significant digits of the original value, and data may be lost when you use the <xref:System.Numerics.BigInteger.Parse%2A> method to restore the <xref:System.Numerics.BigInteger> value.  
   
- Unlike the other <xref:System.Globalization.NumberStyles> values, which allow for, but do not require, the presence of particular style elements in `value`, the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> style value means that the individual numeric characters in `value` are always interpreted as hexadecimal characters. Valid hexadecimal characters are 0-9, A-F, and a-f. The only other flags that can be combined with the `style` parameter are <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> and <xref:System.Globalization.NumberStyles?displayProperty=nameWithType>. (The <xref:System.Globalization.NumberStyles> enumeration includes a composite number style, <xref:System.Globalization.NumberStyles.HexNumber>, that includes both white-space flags.)  
+ Unlike the other <xref:System.Globalization.NumberStyles> values, which allow for, but do not require, the presence of particular style elements in `value`, the <xref:System.Globalization.NumberStyles.AllowHexSpecifier?displayProperty=nameWithType> style value means that the individual numeric characters in `value` are always interpreted as hexadecimal characters. Valid hexadecimal characters are 0-9, A-F, and a-f. The only other flags that can be combined with the `style` parameter are <xref:System.Globalization.NumberStyles.AllowLeadingWhite?displayProperty=nameWithType> and <xref:System.Globalization.NumberStyles.AllowTrailingWhite?displayProperty=nameWithType>. (The <xref:System.Globalization.NumberStyles> enumeration includes a composite number style, <xref:System.Globalization.NumberStyles.HexNumber>, that includes both white-space flags.)  
   
 > [!NOTE]
 >  If `value` is the string representation of a hexadecimal number, it cannot be preceded by any decoration (such as `0x` or `&h`) that differentiates it as a hexadecimal number. This causes the conversion to fail.  
@@ -5884,7 +5884,7 @@ value Mod 2 = 0
 |*digits*|A sequence of digits ranging from 0 to 9. Any leading zeros are ignored.|  
   
 > [!NOTE]
->  The string specified by the `value` parameter is interpreted using the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> style. It cannot contain any group separators or decimal separator, and it cannot have a decimal portion.  
+>  The string specified by the `value` parameter is interpreted using the <xref:System.Globalization.NumberStyles.Integer?displayProperty=nameWithType> style. It cannot contain any group separators or decimal separator, and it cannot have a decimal portion.  
   
 > [!IMPORTANT]
 >  If you use the <xref:System.Numerics.BigInteger.Parse%2A> method to round-trip the string representation of a <xref:System.Numerics.BigInteger> value that was output by the <xref:System.Numerics.BigInteger.ToString%2A> method, you should use the <xref:System.Numerics.BigInteger.ToString%28System.String%29?displayProperty=nameWithType> method with the "R" format specifier to generate the string representation of the <xref:System.Numerics.BigInteger> value. Otherwise, the string representation of the <xref:System.Numerics.BigInteger> preserves only the 50 most significant digits of the original value, and data may be lost when you use the <xref:System.Numerics.BigInteger.Parse%2A> method to restore the <xref:System.Numerics.BigInteger> value.  
@@ -5970,7 +5970,7 @@ value Mod 2 = 0
   
  [*ws*][*$*][*sign*][*digits*,]*digits*[*.fractional_digits*][E[*sign*]*exponential_digits*][*ws*]  
   
- If `style` includes <xref:System.Globalization.NumberStyles?displayProperty=nameWithType>, the `value` parameter may include the following elements:  
+ If `style` includes <xref:System.Globalization.NumberStyles.AllowHexSpecifier?displayProperty=nameWithType>, the `value` parameter may include the following elements:  
   
  [*ws*]*hexdigits*[*ws*]  
   
@@ -5978,16 +5978,16 @@ value Mod 2 = 0
   
 |Element|Description|  
 |-------------|-----------------|  
-|*ws*|Optional white space. White space can appear at the start of `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag, and it can appear at the end of `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
-|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyNegativePattern%2A?displayProperty=nameWithType> and <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A?displayProperty=nameWithType> properties of the culture indicated by the `provider` parameter. The current culture's currency symbol can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
-|*sign*|An optional sign. The sign can appear at the start of `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag, and it can appear at the end of `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag. Parentheses can be used in `value` to indicate a negative value if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
+|*ws*|Optional white space. White space can appear at the start of `value` if `style` includes the <xref:System.Globalization.NumberStyles.AllowLeadingWhite?displayProperty=nameWithType> flag, and it can appear at the end of `value` if `style` includes the <xref:System.Globalization.NumberStyles.AllowTrailingWhite?displayProperty=nameWithType> flag.|  
+|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyNegativePattern%2A?displayProperty=nameWithType> and <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A?displayProperty=nameWithType> properties of the culture indicated by the `provider` parameter. The current culture's currency symbol can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles.AllowCurrencySymbol?displayProperty=nameWithType> flag.|  
+|*sign*|An optional sign. The sign can appear at the start of `value` if `style` includes the <xref:System.Globalization.NumberStyles.AllowLeadingSign?displayProperty=nameWithType> flag, and it can appear at the end of `value` if `style` includes the <xref:System.Globalization.NumberStyles.AllowTrailingSign?displayProperty=nameWithType> flag. Parentheses can be used in `value` to indicate a negative value if `style` includes the <xref:System.Globalization.NumberStyles.AllowParentheses?displayProperty=nameWithType> flag.|  
 |*digits*<br /><br /> *fractional_digits*<br /><br /> *exponential_digits*|A sequence of digits from 0 through 9. For *fractional_digits*, only the digit 0 is valid.|  
-|*,*|A culture-specific group separator symbol. The group separator symbol of the culture specified by `provider` can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
-|*.*|A culture-specific decimal point symbol. The decimal point symbol of the culture designated by `provider` can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag. Only the digit 0 can appear as a fractional digit for the parse operation to succeed; if *fractional_digits* includes any other digit, a <xref:System.FormatException> is thrown.|  
-|E|The "e" or "E" character, which indicates that the value is represented in exponential (scientific) notation. The `value` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
+|*,*|A culture-specific group separator symbol. The group separator symbol of the culture specified by `provider` can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles.AllowThousands?displayProperty=nameWithType> flag.|  
+|*.*|A culture-specific decimal point symbol. The decimal point symbol of the culture designated by `provider` can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles.AllowDecimalPoint?displayProperty=nameWithType> flag. Only the digit 0 can appear as a fractional digit for the parse operation to succeed; if *fractional_digits* includes any other digit, a <xref:System.FormatException> is thrown.|  
+|E|The "e" or "E" character, which indicates that the value is represented in exponential (scientific) notation. The `value` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles.AllowExponent?displayProperty=nameWithType> flag.|  
 |*hexdigits*|A sequence of hexadecimal digits from 0 through f, or 0 through F.|  
   
- A string with digits only (which corresponds to the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> style) always parses successfully. Most of the remaining <xref:System.Globalization.NumberStyles> members control elements that may be present, but are not required to be present, in the input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> members affect the elements that may be present in `value`.  
+ A string with digits only (which corresponds to the <xref:System.Globalization.NumberStyles.None?displayProperty=nameWithType> style) always parses successfully. Most of the remaining <xref:System.Globalization.NumberStyles> members control elements that may be present, but are not required to be present, in the input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> members affect the elements that may be present in `value`.  
   
 |NumberStyles value|Elements permitted in value in addition to digits|  
 |------------------------|-------------------------------------------------------|  
@@ -6009,7 +6009,7 @@ value Mod 2 = 0
 > [!IMPORTANT]
 >  If you use the <xref:System.Numerics.BigInteger.Parse%2A> method to round-trip the string representation of a <xref:System.Numerics.BigInteger> value that was output by the <xref:System.Numerics.BigInteger.ToString%2A> method, you should use the <xref:System.Numerics.BigInteger.ToString%28System.String%29?displayProperty=nameWithType> method with the "R" format specifier to generate the string representation of the <xref:System.Numerics.BigInteger> value. Otherwise, the string representation of the <xref:System.Numerics.BigInteger> preserves only the 50 most significant digits of the original value, and data may be lost when you use the <xref:System.Numerics.BigInteger.Parse%2A> method to restore the <xref:System.Numerics.BigInteger> value.  
   
- Unlike the other <xref:System.Globalization.NumberStyles> values, which allow for but do not require the presence of particular style elements in `value`, the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> style value means that the individual numeric characters in `value` are always interpreted as hexadecimal characters. Valid hexadecimal characters are 0-9, A-F, and a-f. The only other flags that can be combined with the `style` parameter are <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> and <xref:System.Globalization.NumberStyles?displayProperty=nameWithType>. (The <xref:System.Globalization.NumberStyles> enumeration includes a composite number style, <xref:System.Globalization.NumberStyles.HexNumber>, that includes both white-space flags.)  
+ Unlike the other <xref:System.Globalization.NumberStyles> values, which allow for but do not require the presence of particular style elements in `value`, the <xref:System.Globalization.NumberStyles.AllowHexSpecifier?displayProperty=nameWithType> style value means that the individual numeric characters in `value` are always interpreted as hexadecimal characters. Valid hexadecimal characters are 0-9, A-F, and a-f. The only other flags that can be combined with the `style` parameter are <xref:System.Globalization.NumberStyles.AllowLeadingWhite?displayProperty=nameWithType> and <xref:System.Globalization.NumberStyles.AllowTrailingWhite?displayProperty=nameWithType>. (The <xref:System.Globalization.NumberStyles> enumeration includes a composite number style, <xref:System.Globalization.NumberStyles.HexNumber>, that includes both white-space flags.)  
   
 > [!NOTE]
 >  If `value` is the string representation of a hexadecimal number, it cannot be preceded by any decoration (such as `0x` or `&h`) that differentiates it as a hexadecimal number. This causes the conversion to fail.  
@@ -6665,7 +6665,7 @@ value Mod 2 = 0
 > [!NOTE]
 >  The string specified by the `value` parameter cannot contain any group separators or decimal separator, and it cannot have a decimal portion.  
   
- The `value` parameter is interpreted by using the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> style. In addition to the decimal digits, only leading and trailing spaces with a leading sign are allowed. To explicitly define the style elements with the culture-specific formatting information that can be present in `value`, call the <xref:System.Numerics.BigInteger.TryParse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%2CSystem.Numerics.BigInteger%40%29> method.  
+ The `value` parameter is interpreted by using the <xref:System.Globalization.NumberStyles.Integer?displayProperty=nameWithType> style. In addition to the decimal digits, only leading and trailing spaces with a leading sign are allowed. To explicitly define the style elements with the culture-specific formatting information that can be present in `value`, call the <xref:System.Numerics.BigInteger.TryParse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%2CSystem.Numerics.BigInteger%40%29> method.  
   
  The `value` parameter is parsed by using the formatting information in a <xref:System.Globalization.NumberFormatInfo> object for the current culture. For more information, see <xref:System.Globalization.NumberFormatInfo.CurrentInfo%2A?displayProperty=nameWithType>.  
   
@@ -6739,18 +6739,18 @@ value Mod 2 = 0
   
 |Element|Description|  
 |-------------|-----------------|  
-|*ws*|Optional white space. White space can appear at the start of `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag, or at the end of `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
-|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A> property of the <xref:System.Globalization.NumberFormatInfo> object returned by the <xref:System.IFormatProvider.GetFormat%2A> method of the `provider` parameter. The currency symbol can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
-|*sign*|An optional sign. The sign can appear at the start of `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag, and it can appear at the end of `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag. Parentheses can be used in `value` to indicate a negative value if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
+|*ws*|Optional white space. White space can appear at the start of `value` if `style` includes the <xref:System.Globalization.NumberStyles.AllowLeadingWhite?displayProperty=nameWithType> flag, or at the end of `value` if `style` includes the <xref:System.Globalization.NumberStyles.AllowTrailingWhite?displayProperty=nameWithType> flag.|  
+|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A> property of the <xref:System.Globalization.NumberFormatInfo> object returned by the <xref:System.IFormatProvider.GetFormat%2A> method of the `provider` parameter. The currency symbol can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles.AllowCurrencySymbol?displayProperty=nameWithType> flag.|  
+|*sign*|An optional sign. The sign can appear at the start of `value` if `style` includes the <xref:System.Globalization.NumberStyles.AllowLeadingSign?displayProperty=nameWithType> flag, and it can appear at the end of `value` if `style` includes the <xref:System.Globalization.NumberStyles.AllowTrailingSign?displayProperty=nameWithType> flag. Parentheses can be used in `value` to indicate a negative value if `style` includes the <xref:System.Globalization.NumberStyles.AllowParentheses?displayProperty=nameWithType> flag.|  
 |*digits*|A sequence of digits from 0 through 9.|  
-|*,*|A culture-specific group separator. The group separator of the culture specified by `provider` can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
-|*.*|A culture-specific decimal point symbol. The decimal point symbol of the culture specified by `provider` can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
-|*fractional_digits*|One or more occurrences of the digit 0. Fractional digits can appear in `value` only if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
-|E|The "e" or "E" character, which indicates that the value is represented in exponential (scientific) notation. The `value` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
-|*exponential_digits*|A sequence of digits from 0 through 9. The `value` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
+|*,*|A culture-specific group separator. The group separator of the culture specified by `provider` can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles.AllowThousands?displayProperty=nameWithType> flag.|  
+|*.*|A culture-specific decimal point symbol. The decimal point symbol of the culture specified by `provider` can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles.AllowDecimalPoint?displayProperty=nameWithType> flag.|  
+|*fractional_digits*|One or more occurrences of the digit 0. Fractional digits can appear in `value` only if `style` includes the <xref:System.Globalization.NumberStyles.AllowDecimalPoint?displayProperty=nameWithType> flag.|  
+|E|The "e" or "E" character, which indicates that the value is represented in exponential (scientific) notation. The `value` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles.AllowExponent?displayProperty=nameWithType> flag.|  
+|*exponential_digits*|A sequence of digits from 0 through 9. The `value` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles.AllowExponent?displayProperty=nameWithType> flag.|  
 |*hexdigits*|A sequence of hexadecimal digits from 0 through f, or 0 through F.|  
   
- A string with decimal digits only (which corresponds to the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag) always parses successfully. Most of the remaining <xref:System.Globalization.NumberStyles> members control elements that may be present, but are not required to be present, in this input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> members affect the elements that may be present in `value`.  
+ A string with decimal digits only (which corresponds to the <xref:System.Globalization.NumberStyles.None?displayProperty=nameWithType> flag) always parses successfully. Most of the remaining <xref:System.Globalization.NumberStyles> members control elements that may be present, but are not required to be present, in this input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> members affect the elements that may be present in `value`.  
   
 |Non-composite `NumberStyles` values|Elements permitted in value in addition to digits|  
 |------------------------------------------|-------------------------------------------------------|  
@@ -6772,7 +6772,7 @@ value Mod 2 = 0
 > [!IMPORTANT]
 >  If you use the <xref:System.Numerics.BigInteger.TryParse%2A> method to round-trip the string representation of a <xref:System.Numerics.BigInteger> value that was output by the <xref:System.Numerics.BigInteger.ToString%2A> method, you should use the <xref:System.Numerics.BigInteger.ToString%28System.String%29?displayProperty=nameWithType> method with the "R" format specifier to generate the string representation of the <xref:System.Numerics.BigInteger> value. Otherwise, the string representation of the <xref:System.Numerics.BigInteger> preserves only the 50 most significant digits of the original value, and data may be lost when you use the <xref:System.Numerics.BigInteger.TryParse%2A> method to restore the <xref:System.Numerics.BigInteger> value.  
   
- If the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag is used, `value` must be a hexadecimal value. The only other flags that can be present in `style` are <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> and <xref:System.Globalization.NumberStyles?displayProperty=nameWithType>. (The <xref:System.Globalization.NumberStyles> enumeration has a composite style, <xref:System.Globalization.NumberStyles.HexNumber>, that includes both white-space flags.)  
+ If the <xref:System.Globalization.NumberStyles.AllowHexSpecifier?displayProperty=nameWithType> flag is used, `value` must be a hexadecimal value. The only other flags that can be present in `style` are <xref:System.Globalization.NumberStyles.AllowLeadingWhite?displayProperty=nameWithType> and <xref:System.Globalization.NumberStyles.AllowTrailingWhite?displayProperty=nameWithType>. (The <xref:System.Globalization.NumberStyles> enumeration has a composite style, <xref:System.Globalization.NumberStyles.HexNumber>, that includes both white-space flags.)  
   
 > [!NOTE]
 >  If `value` is the string representation of a hexadecimal number, it cannot be preceded by any decoration (such as `0x` or `&h`) that differentiates it as a hexadecimal number. This causes the conversion to fail.  

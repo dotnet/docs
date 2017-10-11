@@ -1094,7 +1094,7 @@ XmlTextReader reader = new XmlTextReader(s);
  The <xref:System.Xml.DtdProcessing> enumeration contains the <xref:System.Xml.DtdProcessing.Prohibit>, <xref:System.Xml.DtdProcessing.Ignore>, and <xref:System.Xml.DtdProcessing.Parse> enumerators. <xref:System.Xml.DtdProcessing.Parse> is the default behavior. The <xref:System.Xml.XmlTextReader.DtdProcessing%2A> property replaces the `ProhibitDTD` property and adds the ability to ignore the DOCTYPE element.  
   
 > [!IMPORTANT]
->  If the <xref:System.Xml.XmlTextReader.DtdProcessing%2A> property is set to <xref:System.Xml.DtdProcessing?displayProperty=nameWithType>, the <xref:System.Xml.XmlTextReader> will not report the DTDs. This means that the DTD/DOCTYPE will be lost on output.  
+>  If the <xref:System.Xml.XmlTextReader.DtdProcessing%2A> property is set to <xref:System.Xml.DtdProcessing.Ignore?displayProperty=nameWithType>, the <xref:System.Xml.XmlTextReader> will not report the DTDs. This means that the DTD/DOCTYPE will be lost on output.  
   
  ]]></format>
         </remarks>

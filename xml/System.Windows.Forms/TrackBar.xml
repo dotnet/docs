@@ -1084,7 +1084,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Windows.Forms.TrackBar.Orientation%2A> property is set to <xref:System.Windows.Forms.Orientation?displayProperty=nameWithType>, the scroll box moves from left to right as the <xref:System.Windows.Forms.TrackBar.Value%2A> increases. When the <xref:System.Windows.Forms.TrackBar.Orientation%2A> property is set to <xref:System.Windows.Forms.Orientation?displayProperty=nameWithType>, the scroll box moves from bottom to top as the <xref:System.Windows.Forms.TrackBar.Value%2A> increases.  
+ When the <xref:System.Windows.Forms.TrackBar.Orientation%2A> property is set to <xref:System.Windows.Forms.Orientation.Horizontal?displayProperty=nameWithType>, the scroll box moves from left to right as the <xref:System.Windows.Forms.TrackBar.Value%2A> increases. When the <xref:System.Windows.Forms.TrackBar.Orientation%2A> property is set to <xref:System.Windows.Forms.Orientation.Vertical?displayProperty=nameWithType>, the scroll box moves from bottom to top as the <xref:System.Windows.Forms.TrackBar.Value%2A> increases.  
   
    
   

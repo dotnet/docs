@@ -47,10 +47,10 @@
 > [!NOTE]
 >  If the <xref:System.Windows.Forms.CheckBox.ThreeState%2A> property is set to `true`, the <xref:System.Windows.Forms.CheckBox.Checked%2A> property will return `true` for either a checked or indeterminate state.  
   
- The <xref:System.Windows.Forms.ButtonBase.FlatStyle%2A> property determines the style and appearance of the control. If the <xref:System.Windows.Forms.ButtonBase.FlatStyle%2A> property is set to <xref:System.Windows.Forms.FlatStyle?displayProperty=nameWithType>, the user's operating system determines the appearance of the control.  
+ The <xref:System.Windows.Forms.ButtonBase.FlatStyle%2A> property determines the style and appearance of the control. If the <xref:System.Windows.Forms.ButtonBase.FlatStyle%2A> property is set to <xref:System.Windows.Forms.FlatStyle.System?displayProperty=nameWithType>, the user's operating system determines the appearance of the control.  
   
 > [!NOTE]
->  When the <xref:System.Windows.Forms.ButtonBase.FlatStyle%2A> property is set to <xref:System.Windows.Forms.FlatStyle?displayProperty=nameWithType>, the <xref:System.Windows.Forms.CheckBox.CheckAlign%2A> property is ignored and the control is displayed using the <xref:System.Drawing.ContentAlignment?displayProperty=nameWithType> or <xref:System.Drawing.ContentAlignment?displayProperty=nameWithType> alignment. If the <xref:System.Windows.Forms.CheckBox.CheckAlign%2A> property is set to one of the right alignments, the control is displayed using the <xref:System.Drawing.ContentAlignment?displayProperty=nameWithType> alignment; otherwise, it is displayed using the <xref:System.Drawing.ContentAlignment?displayProperty=nameWithType> alignment.  
+>  When the <xref:System.Windows.Forms.ButtonBase.FlatStyle%2A> property is set to <xref:System.Windows.Forms.FlatStyle.System?displayProperty=nameWithType>, the <xref:System.Windows.Forms.CheckBox.CheckAlign%2A> property is ignored and the control is displayed using the <xref:System.Drawing.ContentAlignment.MiddleLeft?displayProperty=nameWithType> or <xref:System.Drawing.ContentAlignment.MiddleRight?displayProperty=nameWithType> alignment. If the <xref:System.Windows.Forms.CheckBox.CheckAlign%2A> property is set to one of the right alignments, the control is displayed using the <xref:System.Drawing.ContentAlignment.MiddleRight?displayProperty=nameWithType> alignment; otherwise, it is displayed using the <xref:System.Drawing.ContentAlignment.MiddleLeft?displayProperty=nameWithType> alignment.  
   
  The following describes an indeterminate state: You have a <xref:System.Windows.Forms.CheckBox> that determines if the selected text in a <xref:System.Windows.Forms.RichTextBox> is bold. When you select text you can click the <xref:System.Windows.Forms.CheckBox> to bold the selection. Likewise, when you select some text, the <xref:System.Windows.Forms.CheckBox> displays whether the selected text is bold. If your selected text contains text that is bold and normal, the <xref:System.Windows.Forms.CheckBox> will have an indeterminate state.  
   
@@ -572,7 +572,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, the <xref:System.Windows.Forms.ControlStyles?displayProperty=nameWithType> and <xref:System.Windows.Forms.ControlStyles?displayProperty=nameWithType> style bits are set to `false` for the <xref:System.Windows.Forms.CheckBox> control, and the <xref:System.Windows.Forms.CheckBox.MouseDoubleClick> event is not raised.  
+ By default, the <xref:System.Windows.Forms.ControlStyles.StandardClick?displayProperty=nameWithType> and <xref:System.Windows.Forms.ControlStyles.StandardDoubleClick?displayProperty=nameWithType> style bits are set to `false` for the <xref:System.Windows.Forms.CheckBox> control, and the <xref:System.Windows.Forms.CheckBox.MouseDoubleClick> event is not raised.  
   
  This event is not relevant to this class.  
   

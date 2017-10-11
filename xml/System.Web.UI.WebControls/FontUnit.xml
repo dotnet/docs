@@ -578,7 +578,7 @@
 ## Remarks  
  Use the static <xref:System.Web.UI.WebControls.FontUnit.Parse%2A> method to convert the specified string to its <xref:System.Web.UI.WebControls.FontUnit> equivalent.  
   
- If the value of the `s` parameter is not `null`, not <xref:System.String?displayProperty=nameWithType>, and a valid <xref:System.Web.UI.WebControls.FontSize> value, the following table shows initial property values for the new instance of <xref:System.Web.UI.WebControls.FontUnit>.  
+ If the value of the `s` parameter is not `null`, not <xref:System.String.Empty?displayProperty=nameWithType>, and a valid <xref:System.Web.UI.WebControls.FontSize> value, the following table shows initial property values for the new instance of <xref:System.Web.UI.WebControls.FontUnit>.  
   
 |Property|Initial Value|  
 |--------------|-------------------|  

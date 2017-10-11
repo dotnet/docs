@@ -511,7 +511,7 @@ goto :EOF
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The first element in the array contains the file name of the executing program. If the file name is not available, the first element is equal to <xref:System.String?displayProperty=nameWithType>. The remaining elements contain any additional tokens entered on the command line.  
+ The first element in the array contains the file name of the executing program. If the file name is not available, the first element is equal to <xref:System.String.Empty?displayProperty=nameWithType>. The remaining elements contain any additional tokens entered on the command line.  
   
  The program file name can, but is not required to, include path information.  
   
@@ -580,15 +580,15 @@ goto :EOF
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Environment.GetEnvironmentVariable%28System.String%29> method retrieves an environment variable from the environment block of the current process only. It is equivalent to calling the <xref:System.Environment.GetEnvironmentVariable%28System.String%2CSystem.EnvironmentVariableTarget%29> method with a `target` value of <xref:System.EnvironmentVariableTarget?displayProperty=nameWithType>. The environment block of the current process includes the following environment variables:  
+ The <xref:System.Environment.GetEnvironmentVariable%28System.String%29> method retrieves an environment variable from the environment block of the current process only. It is equivalent to calling the <xref:System.Environment.GetEnvironmentVariable%28System.String%2CSystem.EnvironmentVariableTarget%29> method with a `target` value of <xref:System.EnvironmentVariableTarget.Process?displayProperty=nameWithType>. The environment block of the current process includes the following environment variables:  
   
 -   All per-machine environment variables that are defined at the time the process is created, along with their values.  
   
 -   All per-user environment variables that are defined at the time the process is created, along with their values.  
   
--   Any variables added to the process block while the process is running by calling either the <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%29> method or the <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%2CSystem.EnvironmentVariableTarget%29> method with a `target` value of <xref:System.EnvironmentVariableTarget?displayProperty=nameWithType>.  
+-   Any variables added to the process block while the process is running by calling either the <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%29> method or the <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%2CSystem.EnvironmentVariableTarget%29> method with a `target` value of <xref:System.EnvironmentVariableTarget.Process?displayProperty=nameWithType>.  
   
- If environment variables are created after the process has started, you can use this method to retrieve only those variables that were created by calling the <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%29> method or the <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%2CSystem.EnvironmentVariableTarget%29> method with a `target` value of .<xref:System.EnvironmentVariableTarget?displayProperty=nameWithType>.  
+ If environment variables are created after the process has started, you can use this method to retrieve only those variables that were created by calling the <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%29> method or the <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%2CSystem.EnvironmentVariableTarget%29> method with a `target` value of .<xref:System.EnvironmentVariableTarget.Process?displayProperty=nameWithType>.  
   
  To retrieve all environment variables along with their values, call the <xref:System.Environment.GetEnvironmentVariables%2A> method.  
   
@@ -1272,7 +1272,7 @@ goto :EOF
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calling this method is equivalent to calling the <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%2CSystem.EnvironmentVariableTarget%29> overload with a value of <xref:System.EnvironmentVariableTarget?displayProperty=nameWithType> for the `target` argument.  
+ Calling this method is equivalent to calling the <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%2CSystem.EnvironmentVariableTarget%29> overload with a value of <xref:System.EnvironmentVariableTarget.Process?displayProperty=nameWithType> for the `target` argument.  
   
  If the `value` argument is not empty (see the discussion of deleting an environment variable later in this section for the definition of an empty value) and the environment variable named by the `variable` parameter does not exist, the environment variable is created and assigned the contents of `value`. If it does exist, its value is modified. Because the environment variable is defined in the environment block of the current process only, it does not persist after the process has ended.  
   
@@ -1360,7 +1360,7 @@ goto :EOF
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%2CSystem.EnvironmentVariableTarget%29> method lets you define an environment variable that is available to all processes that run on a machine (the <xref:System.EnvironmentVariableTarget?displayProperty=nameWithType> value), to all processes run by a user (the <xref:System.EnvironmentVariableTarget?displayProperty=nameWithType> value), or to the current process (the <xref:System.EnvironmentVariableTarget.Process> value). Per-machine and per-user environment variables are copied into the environment block of the current process. However, environment variables that are unique to the current process environment block persist only until the process ends.  
+ The <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%2CSystem.EnvironmentVariableTarget%29> method lets you define an environment variable that is available to all processes that run on a machine (the <xref:System.EnvironmentVariableTarget.Machine?displayProperty=nameWithType> value), to all processes run by a user (the <xref:System.EnvironmentVariableTarget.User?displayProperty=nameWithType> value), or to the current process (the <xref:System.EnvironmentVariableTarget.Process> value). Per-machine and per-user environment variables are copied into the environment block of the current process. However, environment variables that are unique to the current process environment block persist only until the process ends.  
   
  If the `value` argument is not empty (see the discussion of deleting an environment variable later in this section for the definition of an empty value) and the environment variable named by the `variable` parameter does not exist, the environment variable is created and assigned the contents of `value`.  If it does exist, its value is modified.  
   
@@ -1380,16 +1380,16 @@ goto :EOF
   
  If `target` is <xref:System.EnvironmentVariableTarget.User>, the environment variable is stored in the HKEY_CURRENT_USER\Environment key of the local computer's registry. It is also copied to instances of File Explorer that are running as the current user. The environment variable is then inherited by any new processes that the user launches from File Explorer.  
   
- Similarly, if `target` is <xref:System.EnvironmentVariableTarget?displayProperty=nameWithType>, the environment variable is stored in the HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Session Manager\Environment key of the local computer's registry. It is also copied to all instances of File Explorer. The environment variable is then inherited by any new processes that are launched from File Explorer.  
+ Similarly, if `target` is <xref:System.EnvironmentVariableTarget.Machine?displayProperty=nameWithType>, the environment variable is stored in the HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Session Manager\Environment key of the local computer's registry. It is also copied to all instances of File Explorer. The environment variable is then inherited by any new processes that are launched from File Explorer.  
   
  If `target` is <xref:System.EnvironmentVariableTarget.User> or <xref:System.EnvironmentVariableTarget.Machine>, other applications are notified of the set operation by a Windows `WM_SETTINGCHANGE` message.  
   
- If `target` is <xref:System.EnvironmentVariableTarget?displayProperty=nameWithType> or <xref:System.EnvironmentVariableTarget?displayProperty=nameWithType>, we recommend that the length of `value` be less than 2048 characters.  
+ If `target` is <xref:System.EnvironmentVariableTarget.User?displayProperty=nameWithType> or <xref:System.EnvironmentVariableTarget.Machine?displayProperty=nameWithType>, we recommend that the length of `value` be less than 2048 characters.  
   
    
   
 ## Examples  
- The following example creates environment variables for the <xref:System.EnvironmentVariableTarget?displayProperty=nameWithType>, <xref:System.EnvironmentVariableTarget?displayProperty=nameWithType>, and <xref:System.EnvironmentVariableTarget.Machine> targets, checks whether the operating system registry contains the user and machine environment variables, then deletes the environment variables.  
+ The following example creates environment variables for the <xref:System.EnvironmentVariableTarget.Process?displayProperty=nameWithType>, <xref:System.EnvironmentVariableTarget.User?displayProperty=nameWithType>, and <xref:System.EnvironmentVariableTarget.Machine> targets, checks whether the operating system registry contains the user and machine environment variables, then deletes the environment variables.  
   
  [!code-cpp[environment.getsetenvar#1](~/samples/snippets/cpp/VS_Snippets_CLR/environment.getsetenvar/CPP/source.cpp#1)]
  [!code-csharp[environment.getsetenvar#1](~/samples/snippets/csharp/VS_Snippets_CLR/environment.getsetenvar/CS/gsev.cs#1)]
@@ -1569,7 +1569,7 @@ goto :EOF
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This information can be useful when determining whether to use the <xref:System.IO.MemoryMappedFiles.MemoryMappedFileOptions?displayProperty=nameWithType> option when you work with memory-mapped files.  
+ This information can be useful when determining whether to use the <xref:System.IO.MemoryMappedFiles.MemoryMappedFileOptions.DelayAllocatePages?displayProperty=nameWithType> option when you work with memory-mapped files.  
   
  In Windows, this value is the `dwPageSize` member in the `SYSTEM_INFO` structure.  
   
@@ -1614,7 +1614,7 @@ goto :EOF
  The value of this property is derived from the system timer and is stored as a 32-bit signed integer. Note that, because it is derived from the system timer, the resolution of the <xref:System.Environment.TickCount%2A> property is limited to the resolution of the system timer, which is typically in the range of 10 to 16 milliseconds.  
   
 > [!IMPORTANT]
->  Because the value of the <xref:System.Environment.TickCount%2A> property value is a 32-bit signed integer, if the system runs continuously, <xref:System.Environment.TickCount%2A> will increment from zero to <xref:System.Int32?displayProperty=nameWithType> for approximately 24.9 days, then jump to <xref:System.Int32?displayProperty=nameWithType>, which is a negative number, then increment back to zero during the next 24.9 days. You can work around this issue by calling the Windows [GetTickCount](https://msdn.microsoft.com/library/windows/desktop/ms724408.aspx) function, which resets to zero after approximately 49.7 days, or by calling the [GetTickCount64](https://msdn.microsoft.com/library/windows/desktop/ms724411.aspx) function.  
+>  Because the value of the <xref:System.Environment.TickCount%2A> property value is a 32-bit signed integer, if the system runs continuously, <xref:System.Environment.TickCount%2A> will increment from zero to <xref:System.Int32.MaxValue?displayProperty=nameWithType> for approximately 24.9 days, then jump to <xref:System.Int32.MinValue?displayProperty=nameWithType>, which is a negative number, then increment back to zero during the next 24.9 days. You can work around this issue by calling the Windows [GetTickCount](https://msdn.microsoft.com/library/windows/desktop/ms724408.aspx) function, which resets to zero after approximately 49.7 days, or by calling the [GetTickCount64](https://msdn.microsoft.com/library/windows/desktop/ms724411.aspx) function.  
   
  <xref:System.Environment.TickCount%2A> is different from the <xref:System.DateTime.Ticks%2A?displayProperty=nameWithType> property, which is the number of 100-nanosecond intervals that have elapsed since 1/1/0001, 12:00am.  
   

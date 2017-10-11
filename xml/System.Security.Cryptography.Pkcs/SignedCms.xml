@@ -381,13 +381,13 @@
 ## .NET Framework Security  
  The following permissions are required to display the user interface:  
   
--   <xref:System.Security.Permissions.UIPermissionWindow?displayProperty=nameWithType>  
+-   <xref:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows?displayProperty=nameWithType>  
   
  The following permissions are required to access the signature key:  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=nameWithType>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags.Open?displayProperty=nameWithType>  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=nameWithType>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags.Sign?displayProperty=nameWithType>  
   
    
   
@@ -434,9 +434,9 @@
 ## .NET Framework Security  
  The following permissions are required to access the signature key:  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=nameWithType>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags.Open?displayProperty=nameWithType>  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=nameWithType>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags.Sign?displayProperty=nameWithType>  
   
    
   
@@ -486,13 +486,13 @@
 ## .NET Framework Security  
  The following permissions are required to display the user interface:  
   
--   <xref:System.Security.Permissions.UIPermissionWindow?displayProperty=nameWithType>  
+-   <xref:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows?displayProperty=nameWithType>  
   
  The following permissions are required to access the signature key:  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=nameWithType>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags.Open?displayProperty=nameWithType>  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=nameWithType>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags.Sign?displayProperty=nameWithType>  
   
  ]]></format>
         </remarks>

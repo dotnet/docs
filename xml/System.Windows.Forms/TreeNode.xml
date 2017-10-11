@@ -269,7 +269,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Windows.Forms.TreeNode.BackColor%2A> property is set to <xref:System.Drawing.Color?displayProperty=nameWithType>, the <xref:System.Drawing.Color> used is the <xref:System.Windows.Forms.Control.BackColor%2A> property value of the <xref:System.Windows.Forms.TreeView> control that the tree node is assigned to.  
+ If the <xref:System.Windows.Forms.TreeNode.BackColor%2A> property is set to <xref:System.Drawing.Color.Empty?displayProperty=nameWithType>, the <xref:System.Drawing.Color> used is the <xref:System.Windows.Forms.Control.BackColor%2A> property value of the <xref:System.Windows.Forms.TreeView> control that the tree node is assigned to.  
   
    
   

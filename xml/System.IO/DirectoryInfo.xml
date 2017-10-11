@@ -1293,7 +1293,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calling this method overload is equivalent to calling the <xref:System.IO.Directory.GetAccessControl%2A> method overload and specifying the access control sections <xref:System.Security.AccessControl.AccessControlSections?displayProperty=nameWithType> &#124; <xref:System.Security.AccessControl.AccessControlSections?displayProperty=nameWithType> &#124; <xref:System.Security.AccessControl.AccessControlSections?displayProperty=nameWithType> (<xref:System.Security.AccessControl.AccessControlSections?displayProperty=nameWithType>`Or`<xref:System.Security.AccessControl.AccessControlSections?displayProperty=nameWithType>`Or`<xref:System.Security.AccessControl.AccessControlSections?displayProperty=nameWithType> in Visual Basic).  
+ Calling this method overload is equivalent to calling the <xref:System.IO.Directory.GetAccessControl%2A> method overload and specifying the access control sections <xref:System.Security.AccessControl.AccessControlSections.Access?displayProperty=nameWithType> &#124; <xref:System.Security.AccessControl.AccessControlSections.Owner?displayProperty=nameWithType> &#124; <xref:System.Security.AccessControl.AccessControlSections.Group?displayProperty=nameWithType> (<xref:System.Security.AccessControl.AccessControlSections.Access?displayProperty=nameWithType>`Or`<xref:System.Security.AccessControl.AccessControlSections.Owner?displayProperty=nameWithType>`Or`<xref:System.Security.AccessControl.AccessControlSections.Group?displayProperty=nameWithType> in Visual Basic).  
   
  Use the <xref:System.IO.DirectoryInfo.GetAccessControl%2A> method to retrieve the access control list (ACL) entries for the current file.  
   

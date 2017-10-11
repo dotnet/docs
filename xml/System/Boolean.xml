@@ -188,9 +188,9 @@
   
 |Enumeration type|Unmanaged format|  
 |----------------------|----------------------|  
-|<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=nameWithType>|A 4-byte integer value, where any nonzero value represents `true` and 0 represents `false`. This is the default format of a <xref:System.Boolean> field in a structure and of a <xref:System.Boolean> parameter in platform invoke calls.|  
-|<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=nameWithType>|A 1-byte integer value, where the 1 represents `true` and 0 represents `false`.|  
-|<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=nameWithType>|A 2-byte integer value, where -1 represents `true` and 0 represents `false`. This is the default format of a <xref:System.Boolean> parameter in COM interop calls.|  
+|<xref:System.Runtime.InteropServices.UnmanagedType.Bool?displayProperty=nameWithType>|A 4-byte integer value, where any nonzero value represents `true` and 0 represents `false`. This is the default format of a <xref:System.Boolean> field in a structure and of a <xref:System.Boolean> parameter in platform invoke calls.|  
+|<xref:System.Runtime.InteropServices.UnmanagedType.U1?displayProperty=nameWithType>|A 1-byte integer value, where the 1 represents `true` and 0 represents `false`.|  
+|<xref:System.Runtime.InteropServices.UnmanagedType.VariantBool?displayProperty=nameWithType>|A 2-byte integer value, where -1 represents `true` and 0 represents `false`. This is the default format of a <xref:System.Boolean> parameter in COM interop calls.|  
   
  ]]></format>
     </remarks>

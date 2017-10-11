@@ -19,7 +19,8 @@ This article discusses porting library code to .NET Core so that it runs cross-p
 
 This article assumes that you:
 
-- Are using Visual Studio 2017 or later. .NET Core isn't supported on earlier versions of Visual Studio.
+- Are using Visual Studio 2017 or later.
+  - .NET Core isn't supported on earlier versions of Visual Studio
 - Understand the [recommended porting process](index.md).
 - Have resolved any issues with [third-party dependencies](third-party-deps.md).
 

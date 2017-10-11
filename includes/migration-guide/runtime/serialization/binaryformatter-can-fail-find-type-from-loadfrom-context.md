@@ -8,4 +8,5 @@
 |Version|4.5|
 |Type|Runtime|
 |Affected APIs|<ul><li><xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=nameWithType></li><li><xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize(System.IO.Stream)?displayProperty=nameWithType></li><li><xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize(System.IO.Stream%2CSystem.Runtime.Remoting.Messaging.HeaderHandler)?displayProperty=nameWithType></li></ul>|
+|Analyzers|<ul><li>CD0147</li></ul>|
 

@@ -66,8 +66,8 @@ The Docker client can be installed in:
 Open a command prompt and create a folder named *Hello*. Navigate to the folder you created and type the following commands:
 
 ```console
-$ dotnet new console
-$ dotnet run
+dotnet new console
+dotnet run
 ```
 
 Let's do a quick walkthrough:
@@ -105,6 +105,7 @@ Let's do a quick walkthrough:
    
     ```console
     $ dotnet run
+    
     Hello World!
     ```
 
@@ -118,7 +119,7 @@ The Hello .NET Core console app successfully runs locally. Now let's take it a s
 
 Open your text editor and let's get started! We're still working from the Hello directory we built the app in.
 
-Add the following Docker instructions for either Linux or [Windows Containers](https://docs.microsoft.com/en-us/virtualization/windowscontainers/about/) to a new file. When finished, save it in the root of your Hello directory as **Dockerfile**, with no extension (You may need to set your file type to **'All types (*.*)'** or something similar).
+Add the following Docker instructions for either Linux or [Windows Containers](https://docs.microsoft.com/en-us/virtualization/windowscontainers/about/) to a new file. When finished, save it in the root of your Hello directory as **Dockerfile**, with no extension (You may need to set your file type to `All types (*.*)` or something similar).
 
 ```Dockerfile
 FROM microsoft/dotnet:2.0-sdk
@@ -206,7 +207,7 @@ docker build -t dotnetapp-dev .
 docker run --rm dotnetapp-dev Hello from Docker
 ```
 
-The output from the **docker build** command should be similar to the following console output:
+The output from the `docker build` command should be similar to the following console output:
 
 ```console
 Sending build context to Docker daemon   72.7kB
@@ -236,7 +237,7 @@ Successfully tagged dotnetapp-dev:latest
 
 As you can see from the output, the Docker Engine used the Dockerfile to build our container.
 
-The output from the **docker run** command should be similar to the following console output:
+The output from the `docker run` command should be similar to the following console output:
 
 ```console
 Hello World!
@@ -266,7 +267,7 @@ Here are some next steps you can take:
 
 The following Docker images are used in this sample
 
-* ['microsoft/dotnet:2.0-sdk'](https://hub.docker.com/r/microsoft/dotnet)
+* [`microsoft/dotnet:2.0-sdk`](https://hub.docker.com/r/microsoft/dotnet)
 
 ## Related Resources
 

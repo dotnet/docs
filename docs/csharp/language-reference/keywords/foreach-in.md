@@ -47,19 +47,23 @@ The `foreach` statement repeats a group of embedded statements for each element 
  [How to: Access a Collection Class with foreach](../../programming-guide/classes-and-structs/how-to-access-a-collection-class-with-foreach.md)  
 
 ## Example
- The following code shows three examples:
+ The following code shows three examples.
+
+> [!TIP]
+> You can modify the examples to experiment with the syntax and try different
+> usages that are more similar to your use case.
 
 -   a typical `foreach` loop that displays the contents of an array of integers
 
-[!code-csharp-interactive[csrefKeywordsIteration#4](./codesnippet/CSharp/foreach-in_1.cs#L5-L15)]
+[!code-csharp-interactive[csrefKeywordsIteration#4](./codesnippet/CSharp/foreach-in_1.cs#L12-L26)]
 
 -   a [for](../../../csharp/language-reference/keywords/for.md) loop that does the same thing
 
-[!code-csharp-interactive[csrefKeywordsIteration#4](./codesnippet/CSharp/foreach-in_1.cs#L21-L35)]
+[!code-csharp-interactive[csrefKeywordsIteration#4](./codesnippet/CSharp/foreach-in_1.cs#L31-L46)]
 
 -   a `foreach` loop that maintains a count of the number of elements in the array
 
-[!code-csharp-interactive[csrefKeywordsIteration#4](./codesnippet/CSharp/foreach-in_1.cs#L37-L54)]
+[!code-csharp-interactive[csrefKeywordsIteration#4](./codesnippet/CSharp/foreach-in_1.cs#L51-L69)]
  
 ## C# Language Specification
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]

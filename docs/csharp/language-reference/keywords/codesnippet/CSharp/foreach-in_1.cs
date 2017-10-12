@@ -2,6 +2,13 @@ class ForEachTest
 {
     static void Main(string[] args)
     {
+        ExampleOne();
+        ExampleTwo();
+        ExampleThree();
+    }
+
+    private static void ExampleOne() // 12 - 26
+    {
         int[] fibarray = new int[] { 0, 1, 1, 2, 3, 5, 8, 13 };
         foreach (int element in fibarray)
         {
@@ -17,7 +24,11 @@ class ForEachTest
         // 5
         // 8
         // 13
+    }
 
+    private static void ExampleTwo() // 31-46
+    {
+        int[] fibarray = new int[] { 0, 1, 1, 2, 3, 5, 8, 13 };
         // Compare the previous loop to a similar for loop.
         for (int i = 0; i < fibarray.Length; i++)
         {
@@ -33,7 +44,11 @@ class ForEachTest
         // 5
         // 8
         // 13
+    }
 
+    private static void ExampleThree() // 51 - 69
+    {
+        int[] fibarray = new int[] { 0, 1, 1, 2, 3, 5, 8, 13 };
         // You can maintain a count of the elements in the collection.
         int count = 0;
         foreach (int element in fibarray)

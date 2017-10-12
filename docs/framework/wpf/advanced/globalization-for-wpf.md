@@ -1,13 +1,9 @@
 ---
 title: "Globalization for WPF"
-ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "dotnet-wpf"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "XAML, international user interface"
@@ -34,13 +30,13 @@ This topic introduces issues that you should be aware of when writing           
  A character reference gives the number of the particular                          [!INCLUDE[TLA#tla_unicode](../../../../includes/tlasharptla-unicode-md.md)] character it represents, in either decimal or hexadecimal. The following example shows a decimal character reference.  
   
 ```  
-Ϩ  
+&#1000;
 ```  
   
  This example shows a hexadecimal character reference. Notice that it has an                          **x** in front of the hexadecimal number.  
   
 ```  
-Ϩ  
+&#x3E8;
 ```  
   
 <a name="encoding"></a>   

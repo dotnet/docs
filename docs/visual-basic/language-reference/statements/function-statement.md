@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.Function"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "procedures, creating"
   - "Function procedures, Function statement syntax"

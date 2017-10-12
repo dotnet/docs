@@ -9,8 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "interfaces [.NET Framework hosting], version 1"
   - ".NET Framework 1.1, hosting interfaces"

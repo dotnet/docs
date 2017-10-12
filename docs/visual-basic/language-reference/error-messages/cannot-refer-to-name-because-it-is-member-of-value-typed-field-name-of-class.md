@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbc30310"
   - "bc30310"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC30310"
 ms.assetid: 2aeb8872-7c87-4f01-98ef-9714ba3eebbe

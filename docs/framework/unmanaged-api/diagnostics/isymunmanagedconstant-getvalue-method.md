@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedConstant::GetValue"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetValue method, ISymUnmanagedConstant interface [.NET Framework debugging]"
   - "ISymUnmanagedConstant::GetValue method [.NET Framework debugging]"

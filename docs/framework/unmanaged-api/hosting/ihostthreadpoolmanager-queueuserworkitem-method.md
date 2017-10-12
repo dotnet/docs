@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostThreadPoolManager::QueueUserWorkItem"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostThreadPoolManager::QueueUserWorkItem method [.NET Framework hosting]"
   - "QueueUserWorkItem method [.NET Framework hosting]"

@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbc30961"
   - "bc30961"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC30961"
 ms.assetid: 8be5aa0d-d236-4ac3-aa9c-5044f9f6562b

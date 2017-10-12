@@ -9,6 +9,8 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "vb"
 f1_keywords: 
   - "ServiceController.Continue"
 helpviewer_keywords: 

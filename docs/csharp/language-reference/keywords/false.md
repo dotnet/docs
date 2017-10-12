@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "false_CSharpKeyword"
   - "false"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "false keyword [C#]"
 ms.assetid: a11aa532-efe2-442b-9fcc-8fdb33b8c8b4

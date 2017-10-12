@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostTaskManager::EnterRuntime"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostTaskManager::EnterRuntime method [.NET Framework hosting]"
   - "EnterRuntime method [.NET Framework hosting]"

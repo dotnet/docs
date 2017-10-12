@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugModule::GetBaseAddress"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetBaseAddress method [.NET Framework debugging]"
   - "ICorDebugModule::GetBaseAddress method [.NET Framework debugging]"

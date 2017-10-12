@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "double"
   - "double_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "double data type [C#]"
 ms.assetid: 0980e11b-6004-4102-abcf-cfc280fc6991

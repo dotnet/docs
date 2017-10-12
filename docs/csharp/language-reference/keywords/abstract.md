@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "abstract"
   - "abstract_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "abstract keyword [C#]"
 ms.assetid: b0797770-c1f3-4b4d-9441-b9122602a6bb

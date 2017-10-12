@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorDebugThreadState"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorDebugThreadState enumeration [.NET Framework debugging]"
 ms.assetid: a3ccdf18-4ec6-494d-9024-48e5c8c724f5

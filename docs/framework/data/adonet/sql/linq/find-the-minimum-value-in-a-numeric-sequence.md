@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-ado"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 ms.assetid: 78203093-f242-4572-9b31-9495b10926aa
 caps.latest.revision: 2
 author: "JennieHubbard"

@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "/linkresource"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "/linkresource compiler option [C#]"
   - "linkres compiler option [C#]"

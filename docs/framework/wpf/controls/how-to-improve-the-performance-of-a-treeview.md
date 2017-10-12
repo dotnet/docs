@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "TreeView control [WPF], improving the performance"
 ms.assetid: b792c740-cf2b-4da8-8ba8-3d2e5a821874

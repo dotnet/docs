@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugStepper::SetRangeIL"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SetRangeIL method [.NET Framework debugging]"
   - "ICorDebugStepper::SetRangeIL method [.NET Framework debugging]"

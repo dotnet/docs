@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "#pragma"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "#pragma directive [C#]"
 ms.assetid: 5b7944cd-d402-46a1-ad8f-feffb2d83673

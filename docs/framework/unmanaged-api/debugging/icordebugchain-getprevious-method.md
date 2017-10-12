@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugChain::GetPrevious"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugChain::GetPrevious method [.NET Framework debugging]"
   - "GetPrevious method [.NET Framework debugging]"

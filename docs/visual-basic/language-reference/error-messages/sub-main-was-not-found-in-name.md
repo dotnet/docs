@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbc30420"
   - "bc30420"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC30420"
   - "Sub Main error message"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataEmit::SetTypeDefProps"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SetTypeDefProps method [.NET Framework metadata]"
   - "IMetaDataEmit::SetTypeDefProps method [.NET Framework metadata]"

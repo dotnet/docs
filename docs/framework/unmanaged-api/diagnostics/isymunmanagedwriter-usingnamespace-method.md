@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedWriter::UsingNamespace"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "UsingNamespace method [.NET Framework debugging]"
   - "ISymUnmanagedWriter::UsingNamespace method [.NET Framework debugging]"

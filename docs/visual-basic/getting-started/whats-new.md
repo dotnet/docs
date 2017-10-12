@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "VB.StartPage.WhatsNew"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "new features, Visual Basic"
   - "what's new [Visual Basic]"

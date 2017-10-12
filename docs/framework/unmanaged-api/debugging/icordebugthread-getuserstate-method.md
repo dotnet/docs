@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugThread::GetUserState"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetUserState method, ICorDebugThread interface [.NET Framework debugging]"
   - "ICorDebugThread::GetUserState method [.NET Framework debugging]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRAssemblyIdentityManager"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRAssemblyIdentityManager interface [.NET Framework hosting]"
 ms.assetid: 6a81c6fe-cc22-4062-ae27-d6eeee03a7b9

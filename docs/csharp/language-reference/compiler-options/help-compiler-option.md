@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "/?"
   - "/help"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "/? compiler option [C#]"
   - "help compiler option [C#]"

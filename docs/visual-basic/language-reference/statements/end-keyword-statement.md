@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.EndDefinition"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "End keyword"
 ms.assetid: 42d6e088-ab0f-4cda-88e8-fdce3e5fcf4f

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorRuntimeHost::GetDefaultDomain"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorRuntimeHost::GetDefaultDomain method [.NET Framework hosting]"
   - "GetDefaultDomain method [.NET Framework hosting]"

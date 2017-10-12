@@ -25,7 +25,7 @@ Represents a configuration element that contains a namespace to prefix mapping t
   
 ## Syntax  
   
-```vb  
+```xml  
    <routing>   <namespaceTable>  
      <add namespace="String" prefix="String" />    </namespaceTable></routing>  
 ```  

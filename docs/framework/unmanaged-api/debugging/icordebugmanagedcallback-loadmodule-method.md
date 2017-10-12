@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugManagedCallback::LoadModule"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugManagedCallback::LoadModule method [.NET Framework debugging]"
   - "LoadModule method [.NET Framework debugging]"

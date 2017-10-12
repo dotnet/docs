@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "typeof"
   - "typeof_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "typeof keyword [C#]"
 ms.assetid: 0c08d880-515e-46bb-8cd2-48b8dd62c08d

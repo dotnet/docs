@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "remove_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "remove event accessor [C#]"
 ms.assetid: c8223426-c17b-4fe2-8406-01564cf1dd2b

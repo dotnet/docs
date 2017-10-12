@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbc42110"
   - "bc42110"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC42110"
 ms.assetid: ef4442eb-08d1-434f-a03b-4aa2ed4e4414

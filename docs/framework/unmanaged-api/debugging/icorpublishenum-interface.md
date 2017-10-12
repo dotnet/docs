@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorPublishEnum"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorPublishEnum interface [.NET Framework debugging]"
 ms.assetid: 76a136b5-e444-417a-8ade-f1596d597dc7

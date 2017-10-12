@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRAppDomainResourceMonitor::GetCurrentCpuTime"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRAppDomainResourceMonitor::GetCurrentCpuTime method [.NET Framework hosting]"
   - "GetCurrentCpuTime method [.NET Framework hosting]"

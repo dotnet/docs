@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "goto_CSharpKeyword"
   - "goto"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "goto keyword [C#]"
 ms.assetid: 2c03c9c1-8119-44ef-b740-fb3d287a42fe

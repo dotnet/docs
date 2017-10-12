@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "_EFN_GetManagedExcepStack"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "_EFN_GetManagedExcepStack function [.NET Framework debugging]"
 ms.assetid: 21ceed9e-62b2-4024-b027-6d095109955a

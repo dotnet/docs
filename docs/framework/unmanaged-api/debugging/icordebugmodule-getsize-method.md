@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugModule::GetSize"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetSize method, ICorDebugModule interface [.NET Framework debugging]"
   - "ICorDebugModule::GetSize method [.NET Framework debugging]"

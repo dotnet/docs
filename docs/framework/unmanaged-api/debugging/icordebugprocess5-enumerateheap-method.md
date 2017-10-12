@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugProcess5::EnumerateHeap"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "EnumerateHeap method, ICorDebugProcess5 interface [.NET Framework debugging]"
   - "ICorDebugProcess5::EnumerateHeap method [.NET Framework debugging]"

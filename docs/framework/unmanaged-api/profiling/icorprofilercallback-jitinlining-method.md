@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::JITInlining"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "JITInlining method [.NET Framework profiling]"
   - "ICorProfilerCallback::JITInlining method [.NET Framework profiling]"

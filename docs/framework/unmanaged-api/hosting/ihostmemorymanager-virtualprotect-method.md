@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostMemoryManager::VirtualProtect"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostMemoryManager::VirtualProtect method [.NET Framework hosting]"
   - "VirtualProtect method [.NET Framework hosting]"

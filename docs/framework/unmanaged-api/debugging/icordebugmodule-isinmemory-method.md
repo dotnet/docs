@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugModule::IsInMemory"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IsInMemory method [.NET Framework debugging]"
   - "ICorDebugModule::IsInMemory method [.NET Framework debugging]"

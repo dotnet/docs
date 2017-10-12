@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataTables::GetUserStringHeapSize"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataTables::GetUserStringHeapSize method [.NET Framework metadata]"
   - "GetUserStringHeapSize method [.NET Framework metadata]"

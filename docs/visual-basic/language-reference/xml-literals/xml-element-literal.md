@@ -9,8 +9,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.XmlLiteralElement"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "XML element literal [Visual Basic]"
   - "element literal [Visual Basic]"

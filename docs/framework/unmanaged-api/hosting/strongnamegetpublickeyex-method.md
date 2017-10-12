@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "StrongNameGetPublicKeyEx"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "StrongNameGetPublicKeyEx method, ICLRStrongName2 interface [.NET Framework hosting]"
   - "ICLRStrongName2::StrongNameGetPublicKeyEx method [.NET Framework hosting]"

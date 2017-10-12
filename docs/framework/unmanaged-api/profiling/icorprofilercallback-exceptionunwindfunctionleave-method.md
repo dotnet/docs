@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::ExceptionUnwindFunctionLeave"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerCallback::ExceptionUnwindFunctionLeave method [.NET Framework profiling]"
   - "ExceptionUnwindFunctionLeave method [.NET Framework profiling]"

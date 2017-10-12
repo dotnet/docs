@@ -9,8 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "diagnostics symbol store [.NET Framework], using the unmanaged API"
   - "unmanaged API reference [.NET Framework], diagnostics symbol store"

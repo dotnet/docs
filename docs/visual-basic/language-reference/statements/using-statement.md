@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.using"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "resource disposal"
   - "Try...Catch...Finally statements, equivalent to Using statement"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRRuntimeInfo::IsLoaded"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IsLoaded method [.NET Framework hosting]"
   - "ICLRRuntimeInfo::IsLoaded method [.NET Framework hosting]"

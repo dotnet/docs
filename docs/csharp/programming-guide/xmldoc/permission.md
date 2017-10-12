@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "permission"
   - "<permission>"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "<permission> C# XML tag"
   - "permission C# XML tag"

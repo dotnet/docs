@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugArrayValue::GetDimensions"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugArrayValue::GetDimensions method [.NET Framework debugging]"
   - "GetDimensions method [.NET Framework debugging]"

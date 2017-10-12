@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "out_CSharpKeyword"
   - "out"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "out [C#]"
   - "out keyword [C#]"

@@ -15,8 +15,6 @@ api_location:
   - "clr.dll"
 api_type: 
   - "DLLExport"
-dev_langs: 
-  - "C++"
 ms.assetid: 8029633c-b6e4-4665-a7c2-89607c3247ef
 caps.latest.revision: 8
 author: "rpetrusha"

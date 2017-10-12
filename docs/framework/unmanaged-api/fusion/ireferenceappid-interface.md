@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IReferenceAppId"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IReferenceAppId interface [.NET Framework fusion]"
 ms.assetid: 8eb9e565-f358-43ce-900e-a8f8a5aa6cfb

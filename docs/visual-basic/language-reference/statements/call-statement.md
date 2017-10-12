@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.Call"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "procedures, Call statement"
   - "Call statement"

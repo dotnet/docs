@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "DataNavigator"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "BindingNavigator control [Windows Forms], about BindingNavigator control"
   - "records, navigating on a form"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugStackWalk::Next"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugStackWalk::Next method [.NET Framework debugging]"
   - "Next method, ICorDebugStackWalk interface [.NET Framework debugging]"

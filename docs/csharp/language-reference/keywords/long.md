@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "long_CSharpKeyword"
   - "long"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "long keyword [C#]"
 ms.assetid: f9b24319-1f39-48be-a42b-d528ee28a7fd

@@ -239,7 +239,7 @@ dp|http://schemas.microsoft.com/net/2006/06/duplex|
   
  The following policy assertion this indicates that messages sent/received must use WS-Addressing 1.0.  
   
-```vb  
+```xml
 <wsam:Addressing/>   
 ```  
   

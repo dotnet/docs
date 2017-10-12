@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "EnumerateCLRs"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "debugging API [Silverlight]"
   - "Silverlight, debugging"

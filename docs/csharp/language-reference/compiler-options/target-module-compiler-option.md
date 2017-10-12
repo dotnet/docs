@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "/target:module"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "-target compiler options [C#], /target:module"
   - "target compiler options [C#], /target:module"

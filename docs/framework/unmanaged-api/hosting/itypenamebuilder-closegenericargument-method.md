@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CloseGenericArgument"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ITypeNameBuilder::CloseGenericArgument method [.NET Framework hosting]"
   - "CloseGenericArgument method [.NET Framework hosting]"

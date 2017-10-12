@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostMAlloc::Alloc"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "Alloc method, IHostMAlloc interface [.NET Framework hosting]"
   - "IHostMAlloc::Alloc method [.NET Framework hosting]"

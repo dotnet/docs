@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugRemoteTarget::CreateProcessEx"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CreateProcessEx method, ICorDebugRemote interface [.NET Framework debugging]"
   - "ICorDebugRemote::CreateProcessEx method [.NET Framework debugging]"

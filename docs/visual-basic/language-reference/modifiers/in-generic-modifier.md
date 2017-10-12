@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.VarianceIn"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "contravariance, In keyword [Visual Basic]"
   - "In keyword [Visual Basic]"

@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "global"
   - "global_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "global keyword [C#]"
 ms.assetid: 8932c16a-6959-42c2-86e7-2c4221ab788b

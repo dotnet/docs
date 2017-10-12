@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugAppDomain::IsAttached"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IsAttached method [.NET Framework debugging]"
   - "ICorDebugAppDomain::IsAttached method [.NET Framework debugging]"

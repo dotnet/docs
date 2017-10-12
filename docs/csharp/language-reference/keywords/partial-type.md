@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "partialtype"
   - "partialtype_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "partial types [C#]"
 ms.assetid: 27320743-a22e-4c7b-b0b3-53afe3607334

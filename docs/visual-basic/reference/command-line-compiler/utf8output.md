@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "-utf8output compiler option [Visual Basic]"
   - "utf8output compiler option [Visual Basic]"

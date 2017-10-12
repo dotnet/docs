@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "/nowin32manifest"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "nowin32manifest compiler option [C#]"
   - "-nowin32manifest compiler option [C#]"

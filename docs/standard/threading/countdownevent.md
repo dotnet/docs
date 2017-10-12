@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+- "csharp"
+- "vb"
 helpviewer_keywords: 
   - "synchronization primitives, CountdownEvent"
 ms.assetid: eec3812a-e20f-4ecd-bfef-6921d508b708

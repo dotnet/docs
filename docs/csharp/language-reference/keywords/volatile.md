@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "volatile_CSharpKeyword"
   - "volatile"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "volatile keyword [C#]"
 ms.assetid: 78089bc7-7b38-4cfd-9e49-87ac036af009

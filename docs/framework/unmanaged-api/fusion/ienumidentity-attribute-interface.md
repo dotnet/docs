@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IEnumIDENTITY_ATTRIBUTE"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IEnumIDENTITY_ATTRIBUTE interface [.NET Framework fusion]"
 ms.assetid: c2ec2748-e9ae-4e1b-80db-6fcec5cb81a1

@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "CS3024"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "CS3024"
 ms.assetid: fef9db31-9a7f-42d5-ad37-3e7faf661f95

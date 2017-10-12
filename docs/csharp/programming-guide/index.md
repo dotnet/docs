@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "cs.langref"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "reference tables [C#]"
   - "C# language, programming guide"

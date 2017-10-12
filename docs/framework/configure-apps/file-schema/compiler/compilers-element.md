@@ -12,11 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#compilers"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.codedom/compilers"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "compiler configuration elements, <compilers> element"
   - "<compilers> element"

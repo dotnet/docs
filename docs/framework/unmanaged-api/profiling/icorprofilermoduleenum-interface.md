@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerModuleEnum"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerModuleEnum interface [.NET Framework profiling]"
 ms.assetid: 24d0fcfa-1601-4fba-868f-da8c97303467

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "COR_TYPE_LAYOUT"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "COR_TYPE_LAYOUT structure [.NET Framework debugging]"
 ms.assetid: 43a7addd-f25a-4049-9907-abec3eb17af2

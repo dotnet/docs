@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataAssemblyImport::EnumExportedTypes"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "EnumExportedTypes method [.NET Framework metadata]"
   - "IMetaDataAssemblyImport::EnumExportedTypes method [.NET Framework metadata]"

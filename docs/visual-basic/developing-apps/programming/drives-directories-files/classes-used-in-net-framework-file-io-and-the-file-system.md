@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "file I/O classes"
 ms.assetid: 4a5ca924-eea8-4a95-a5f0-6ac10de276a3

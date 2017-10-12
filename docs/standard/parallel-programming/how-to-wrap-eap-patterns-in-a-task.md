@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+- "csharp"
+- "vb"
 helpviewer_keywords: 
   - "tasks, how to wrap EAP patterns"
 ms.assetid: f11ed467-af2f-4504-8a2e-299a6c36d44e

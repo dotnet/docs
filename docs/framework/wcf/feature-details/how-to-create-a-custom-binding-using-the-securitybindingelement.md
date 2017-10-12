@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "security [WCF], creating custom bindings"
 ms.assetid: 203a9f9e-3a73-427c-87aa-721c56265b29

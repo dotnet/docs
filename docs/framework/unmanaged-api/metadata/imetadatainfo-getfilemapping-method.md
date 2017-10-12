@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataInfo::GetFileMapping"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataInfo::GetFileMapping method [.NET Framework metadata]"
   - "GetFileMapping method [.NET Framework metadata]"

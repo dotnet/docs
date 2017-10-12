@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "My.WebServices"
   - "My.MyProject.WebServices"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "My.WebServices object"
 ms.assetid: f188dc05-2c75-41b6-bb68-122d1c3110a2

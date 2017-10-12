@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "pointers [C#], conversions"
 ms.assetid: f0e87502-477a-4ede-a31f-7a3e262e46fb

@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.Namespace"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "namespaces, root"
   - "Namespace statement"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostAutoEvent::Set"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "Set method, IHostAutoEvent interface [.NET Framework hosting]"
   - "IHostAutoEvent::Set method [.NET Framework hosting]"

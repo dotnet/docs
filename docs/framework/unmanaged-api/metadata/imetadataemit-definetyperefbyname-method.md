@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataEmit::DefineTypeRefByName"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "DefineTypeRefByName method [.NET Framework metadata]"
   - "IMetaDataEmit::DefineTypeRefByName method [.NET Framework metadata]"

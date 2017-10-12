@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vbrTextFieldParser_InvalidComment"
-dev_langs: 
-  - "VB"
 ms.assetid: 636d4b81-00ba-4cfd-98f7-4d57036f494d
 caps.latest.revision: 9
 author: dotnet-bot

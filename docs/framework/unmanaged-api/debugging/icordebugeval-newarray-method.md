@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEval::NewArray"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "NewArray method [.NET Framework debugging]"
   - "ICorDebugEval::NewArray method [.NET Framework debugging]"

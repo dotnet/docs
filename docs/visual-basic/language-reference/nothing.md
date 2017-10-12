@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "Nothing"
   - "vb.Nothing"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Nothing keyword"
   - "Nothing keyword, syntax"

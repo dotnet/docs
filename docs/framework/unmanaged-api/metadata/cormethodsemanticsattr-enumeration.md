@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorMethodSemanticsAttr"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorMethodSemanticsAttr enumeration [.NET Framework metadata]"
 ms.assetid: ca2af325-eb9d-4a91-90e4-267e45b98611

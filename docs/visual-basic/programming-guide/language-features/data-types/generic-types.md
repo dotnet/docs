@@ -5,8 +5,6 @@ ms.prod: .net
 ms.technology: 
   - "devlang-visual-basic"
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "generic interfaces"
   - "data type arguments, defining"

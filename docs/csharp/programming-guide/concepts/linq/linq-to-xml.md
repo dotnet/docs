@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: 26c907b1-bc58-465f-bcdc-adbe89df6e55
 caps.latest.revision: 3
 author: "BillWagner"
@@ -29,7 +27,7 @@ LINQ to XML provides an in-memory XML programming interface that leverages the .
   
 ## In this Section  
  [Getting Started (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/getting-started-linq-to-xml.md)  
- Provides introductory information about LINQ to XML, including a conceptual overview and an overview of the <xref:System.Xml.Linq?displayProperty=fullName> classes.  
+ Provides introductory information about LINQ to XML, including a conceptual overview and an overview of the <xref:System.Xml.Linq?displayProperty=nameWithType> classes.  
   
  [Programming Guide (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)  
  Provides conceptual and how-to information about programming with LINQ to XML.  

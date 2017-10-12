@@ -47,8 +47,8 @@
 ## Examples  
  The following example demonstrates how to programmatically add nodes to and remove them from a <xref:System.Web.UI.WebControls.TreeNodeCollection>. Notice that the <xref:System.Web.UI.WebControls.TreeView.Nodes%2A> and <xref:System.Web.UI.WebControls.TreeNode.ChildNodes%2A> properties return a <xref:System.Web.UI.WebControls.TreeNodeCollection> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeNodeCollectionAdd#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeCollectionAdd/CS/treenodecollectionaddcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeNodeCollectionAdd#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeCollectionAdd/VB/treenodecollectionaddvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeNodeCollectionAdd#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeCollectionAdd/CS/treenodecollectionaddcs.aspx#1)]
+ [!code-aspx-vb[TreeNodeCollectionAdd#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeCollectionAdd/VB/treenodecollectionaddvb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -145,8 +145,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeNodeCollection.Add%2A> method to programmatically add a node to the <xref:System.Web.UI.WebControls.TreeNodeCollection>. Notice that the <xref:System.Web.UI.WebControls.TreeView.Nodes%2A> and <xref:System.Web.UI.WebControls.TreeNode.ChildNodes%2A> properties each return a <xref:System.Web.UI.WebControls.TreeNodeCollection> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeNodeCollectionAdd#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeCollectionAdd/CS/treenodecollectionaddcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeNodeCollectionAdd#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeCollectionAdd/VB/treenodecollectionaddvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeNodeCollectionAdd#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeCollectionAdd/CS/treenodecollectionaddcs.aspx#1)]
+ [!code-aspx-vb[TreeNodeCollectionAdd#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeCollectionAdd/VB/treenodecollectionaddvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -188,8 +188,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeNodeCollection.AddAt%2A> method to programmatically add a node to the <xref:System.Web.UI.WebControls.TreeNodeCollection>. Notice that the <xref:System.Web.UI.WebControls.TreeView.Nodes%2A> and <xref:System.Web.UI.WebControls.TreeNode.ChildNodes%2A> properties each return a <xref:System.Web.UI.WebControls.TreeNodeCollection> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeNodeCollectionAdd#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeCollectionAdd/CS/treenodecollectionaddcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeNodeCollectionAdd#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeCollectionAdd/VB/treenodecollectionaddvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeNodeCollectionAdd#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeCollectionAdd/CS/treenodecollectionaddcs.aspx#1)]
+ [!code-aspx-vb[TreeNodeCollectionAdd#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeCollectionAdd/VB/treenodecollectionaddvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -226,8 +226,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeNodeCollection.Clear%2A> method to programmatically empty a <xref:System.Web.UI.WebControls.TreeNodeCollection>. Notice that the <xref:System.Web.UI.WebControls.TreeView.Nodes%2A> and <xref:System.Web.UI.WebControls.TreeNode.ChildNodes%2A> properties return a <xref:System.Web.UI.WebControls.TreeNodeCollection> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeNodeCollectionAdd#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeCollectionAdd/CS/treenodecollectionaddcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeNodeCollectionAdd#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeCollectionAdd/VB/treenodecollectionaddvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeNodeCollectionAdd#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeCollectionAdd/CS/treenodecollectionaddcs.aspx#1)]
+ [!code-aspx-vb[TreeNodeCollectionAdd#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeCollectionAdd/VB/treenodecollectionaddvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -264,8 +264,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeNodeCollection.Contains%2A> method to determine whether the selected node is in the <xref:System.Web.UI.WebControls.TreeView.Nodes%2A> collection. Notice that the <xref:System.Web.UI.WebControls.TreeView.Nodes%2A> property returns a <xref:System.Web.UI.WebControls.TreeNodeCollection> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeNodeCollectionIndexOf#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeCollectionIndexOf/CS/treenodecollectionindexofcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeNodeCollectionIndexOf#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeCollectionIndexOf/VB/treenodecollectionindexofvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeNodeCollectionIndexOf#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeCollectionIndexOf/CS/treenodecollectionindexofcs.aspx#1)]
+ [!code-aspx-vb[TreeNodeCollectionIndexOf#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeCollectionIndexOf/VB/treenodecollectionindexofvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -295,7 +295,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.TreeNodeCollection.CopyTo%2A> method to copy the contents of the <xref:System.Web.UI.WebControls.TreeNodeCollection> into the specified zero-based <xref:System.Array?displayProperty=fullName> object. Items are copied starting at the specified index of the target array. With the <xref:System.Array?displayProperty=fullName> object, you can then use array syntax to access the items in the <xref:System.Web.UI.WebControls.TreeNodeCollection>.  
+ Use the <xref:System.Web.UI.WebControls.TreeNodeCollection.CopyTo%2A> method to copy the contents of the <xref:System.Web.UI.WebControls.TreeNodeCollection> into the specified zero-based <xref:System.Array?displayProperty=nameWithType> object. Items are copied starting at the specified index of the target array. With the <xref:System.Array?displayProperty=nameWithType> object, you can then use array syntax to access the items in the <xref:System.Web.UI.WebControls.TreeNodeCollection>.  
   
  As an alternative, you can also use the <xref:System.Web.UI.WebControls.TreeNodeCollection.GetEnumerator%2A> method to create an enumerator that can be used to access the items in the collection.  
   
@@ -304,8 +304,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeNodeCollection.CopyTo%2A> method to copy the values of a <xref:System.Web.UI.WebControls.TreeNodeCollection> into an array. Notice that the <xref:System.Web.UI.WebControls.TreeView.Nodes%2A> property returns a <xref:System.Web.UI.WebControls.TreeNodeCollection> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeNodeCollectionCopyTo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeCollectionCopyTo/CS/treenodecollectioncopytocs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeNodeCollectionCopyTo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeCollectionCopyTo/VB/treenodecollectioncopytovb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeNodeCollectionCopyTo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeCollectionCopyTo/CS/treenodecollectioncopytocs.aspx#1)]
+ [!code-aspx-vb[TreeNodeCollectionCopyTo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeCollectionCopyTo/VB/treenodecollectioncopytovb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -337,8 +337,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeNodeCollection.Count%2A> property to determine the number of items in the <xref:System.Web.UI.WebControls.TreeNodeCollection>. It then performs a preorder traversal of the <xref:System.Web.UI.WebControls.TreeView> control to display the text of each node.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeNodeCollectionCount#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeCollectionCount/CS/treenodecollectioncountcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeNodeCollectionCount#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeCollectionCount/VB/treenodecollectioncountvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeNodeCollectionCount#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeCollectionCount/CS/treenodecollectioncountcs.aspx#1)]
+ [!code-aspx-vb[TreeNodeCollectionCount#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeCollectionCount/VB/treenodecollectioncountvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -364,20 +364,20 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.TreeNodeCollection.GetEnumerator%2A> method to create an enumerator that can be easily iterated through to get each item in the <xref:System.Web.UI.WebControls.TreeNodeCollection>. To get the item currently pointed to in the enumerator, use the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> property. Use the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=fullName> method to move to the next item. If you need to move the enumerator back to the beginning of the collection, use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName> method.  
+ Use the <xref:System.Web.UI.WebControls.TreeNodeCollection.GetEnumerator%2A> method to create an enumerator that can be easily iterated through to get each item in the <xref:System.Web.UI.WebControls.TreeNodeCollection>. To get the item currently pointed to in the enumerator, use the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=nameWithType> property. Use the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=nameWithType> method to move to the next item. If you need to move the enumerator back to the beginning of the collection, use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=nameWithType> method.  
   
 > [!NOTE]
->  After you create an enumerator or use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName> method, you must call the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=fullName> method. Otherwise, the item represented by the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> property is undefined.  
+>  After you create an enumerator or use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=nameWithType> method, you must call the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=nameWithType> method. Otherwise, the item represented by the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=nameWithType> property is undefined.  
   
- As an alternative, you can also use the <xref:System.Web.UI.WebControls.TreeNodeCollection.CopyTo%2A> method to create an <xref:System.Array?displayProperty=fullName> object that can be used to access the items in the collection. Another alternative is to use a `foreach` or `For Each` structure to iterate through the collection.  
+ As an alternative, you can also use the <xref:System.Web.UI.WebControls.TreeNodeCollection.CopyTo%2A> method to create an <xref:System.Array?displayProperty=nameWithType> object that can be used to access the items in the collection. Another alternative is to use a `foreach` or `For Each` structure to iterate through the collection.  
   
    
   
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeNodeCollection.GetEnumerator%2A> method to create an enumerator that contains root nodes of the <xref:System.Web.UI.WebControls.TreeView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeNodeCollectionGetEnumerator#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeCollectionGetEnumerator/CS/treenodecollectiongetenumeratorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeNodeCollectionGetEnumerator#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeCollectionGetEnumerator/VB/treenodecollectiongetenumeratorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeNodeCollectionGetEnumerator#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeCollectionGetEnumerator/CS/treenodecollectiongetenumeratorcs.aspx#1)]
+ [!code-aspx-vb[TreeNodeCollectionGetEnumerator#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeCollectionGetEnumerator/VB/treenodecollectiongetenumeratorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -416,8 +416,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeNodeCollection.IndexOf%2A> method to determine the index of a root node. Notice that the <xref:System.Web.UI.WebControls.TreeView.Nodes%2A> property returns a <xref:System.Web.UI.WebControls.TreeNodeCollection> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeNodeCollectionIndexOf#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeCollectionIndexOf/CS/treenodecollectionindexofcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeNodeCollectionIndexOf#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeCollectionIndexOf/VB/treenodecollectionindexofvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeNodeCollectionIndexOf#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeCollectionIndexOf/CS/treenodecollectionindexofcs.aspx#1)]
+ [!code-aspx-vb[TreeNodeCollectionIndexOf#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeCollectionIndexOf/VB/treenodecollectionindexofvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -443,9 +443,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.TreeNodeCollection.IsSynchronized%2A> property is used to indicate whether access to the <xref:System.Web.UI.WebControls.TreeNodeCollection> is synchronized (thread safe). This property is derived from the <xref:System.Collections.ICollection?displayProperty=fullName> class and is overridden to always return `false`.  
+ The <xref:System.Web.UI.WebControls.TreeNodeCollection.IsSynchronized%2A> property is used to indicate whether access to the <xref:System.Web.UI.WebControls.TreeNodeCollection> is synchronized (thread safe). This property is derived from the <xref:System.Collections.ICollection?displayProperty=nameWithType> class and is overridden to always return `false`.  
   
- For more information on the <xref:System.Web.UI.WebControls.TreeNodeCollection.IsSynchronized%2A> property, see the <xref:System.Collections.ICollection.IsSynchronized%2A?displayProperty=fullName> property of the <xref:System.Collections.ICollection?displayProperty=fullName> interface.  
+ For more information on the <xref:System.Web.UI.WebControls.TreeNodeCollection.IsSynchronized%2A> property, see the <xref:System.Collections.ICollection.IsSynchronized%2A?displayProperty=nameWithType> property of the <xref:System.Collections.ICollection?displayProperty=nameWithType> interface.  
   
  ]]></format>
         </remarks>
@@ -481,8 +481,8 @@
 ## Examples  
  The following example demonstrates how to use the indexer to access an element in the <xref:System.Web.UI.WebControls.TreeNodeCollection>. Notice that the <xref:System.Web.UI.WebControls.TreeView.Nodes%2A> and <xref:System.Web.UI.WebControls.TreeNode.ChildNodes%2A> properties return a <xref:System.Web.UI.WebControls.TreeNodeCollection> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeNodeCollectionAdd#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeCollectionAdd/CS/treenodecollectionaddcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeNodeCollectionAdd#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeCollectionAdd/VB/treenodecollectionaddvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeNodeCollectionAdd#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeCollectionAdd/CS/treenodecollectionaddcs.aspx#1)]
+ [!code-aspx-vb[TreeNodeCollectionAdd#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeCollectionAdd/VB/treenodecollectionaddvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -522,8 +522,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeNodeCollection.Remove%2A> method to programmatically remove a node from the <xref:System.Web.UI.WebControls.TreeNodeCollection>. Notice that the <xref:System.Web.UI.WebControls.TreeView.Nodes%2A> and <xref:System.Web.UI.WebControls.TreeNode.ChildNodes%2A> properties each return a <xref:System.Web.UI.WebControls.TreeNodeCollection> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeNodeCollectionAdd#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeCollectionAdd/CS/treenodecollectionaddcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeNodeCollectionAdd#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeCollectionAdd/VB/treenodecollectionaddvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeNodeCollectionAdd#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeCollectionAdd/CS/treenodecollectionaddcs.aspx#1)]
+ [!code-aspx-vb[TreeNodeCollectionAdd#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeCollectionAdd/VB/treenodecollectionaddvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -565,8 +565,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeNodeCollection.RemoveAt%2A> method to programmatically remove a node from the <xref:System.Web.UI.WebControls.TreeNodeCollection>. Notice that the <xref:System.Web.UI.WebControls.TreeView.Nodes%2A> and <xref:System.Web.UI.WebControls.TreeNode.ChildNodes%2A> properties each return a <xref:System.Web.UI.WebControls.TreeNodeCollection> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeNodeCollectionAdd#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeCollectionAdd/CS/treenodecollectionaddcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeNodeCollectionAdd#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeCollectionAdd/VB/treenodecollectionaddvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeNodeCollectionAdd#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeCollectionAdd/CS/treenodecollectionaddcs.aspx#1)]
+ [!code-aspx-vb[TreeNodeCollectionAdd#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeCollectionAdd/VB/treenodecollectionaddvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -599,11 +599,11 @@
  Synchronizing code must perform operations on the <xref:System.Web.UI.WebControls.TreeNodeCollection.SyncRoot%2A> object of the <xref:System.Web.UI.WebControls.TreeNodeCollection>, not directly on the <xref:System.Web.UI.WebControls.TreeNodeCollection> itself. This ensures proper operation of collections that are derived from other objects. Specifically, it maintains proper synchronization with other threads that might be simultaneously modifying the <xref:System.Web.UI.WebControls.TreeNodeCollection> object.  
   
 > [!NOTE]
->  The object returned in this implementation is the <xref:System.Collections.ArrayList?displayProperty=fullName> object used to store the <xref:System.Web.UI.WebControls.TreeNode> objects in the collection.  
+>  The object returned in this implementation is the <xref:System.Collections.ArrayList?displayProperty=nameWithType> object used to store the <xref:System.Web.UI.WebControls.TreeNode> objects in the collection.  
   
  Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads could still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
   
- For more information on the <xref:System.Web.UI.WebControls.DataGridColumnCollection.SyncRoot%2A> property, see the <xref:System.Collections.ICollection.SyncRoot%2A?displayProperty=fullName> property of the <xref:System.Collections.ICollection?displayProperty=fullName> interface.  
+ For more information on the <xref:System.Web.UI.WebControls.DataGridColumnCollection.SyncRoot%2A> property, see the <xref:System.Collections.ICollection.SyncRoot%2A?displayProperty=nameWithType> property of the <xref:System.Collections.ICollection?displayProperty=nameWithType> interface.  
   
  ]]></format>
         </remarks>
@@ -633,7 +633,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.TreeNodeCollection.CopyTo%2A> method to copy the contents of the <xref:System.Web.UI.WebControls.TreeNodeCollection> into the specified zero-based <xref:System.Array?displayProperty=fullName> object. Items are copied starting at the specified index of the target array. With the <xref:System.Array?displayProperty=fullName> object, you can then use array syntax to access the items in the <xref:System.Web.UI.WebControls.TreeNodeCollection>.  
+ Use the <xref:System.Web.UI.WebControls.TreeNodeCollection.CopyTo%2A> method to copy the contents of the <xref:System.Web.UI.WebControls.TreeNodeCollection> into the specified zero-based <xref:System.Array?displayProperty=nameWithType> object. Items are copied starting at the specified index of the target array. With the <xref:System.Array?displayProperty=nameWithType> object, you can then use array syntax to access the items in the <xref:System.Web.UI.WebControls.TreeNodeCollection>.  
   
  As an alternative, you can also use the <xref:System.Web.UI.WebControls.TreeNodeCollection.GetEnumerator%2A> method to create an enumerator that can be used to access the items in the collection.  
   
@@ -642,8 +642,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeNodeCollection.CopyTo%2A> method to copy the values of a <xref:System.Web.UI.WebControls.TreeNodeCollection> into an array. Notice that the <xref:System.Web.UI.WebControls.TreeView.Nodes%2A> property returns a <xref:System.Web.UI.WebControls.TreeNodeCollection> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeNodeCollectionCopyTo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeCollectionCopyTo/CS/treenodecollectioncopytocs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeNodeCollectionCopyTo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeCollectionCopyTo/VB/treenodecollectioncopytovb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeNodeCollectionCopyTo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeCollectionCopyTo/CS/treenodecollectioncopytocs.aspx#1)]
+ [!code-aspx-vb[TreeNodeCollectionCopyTo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeCollectionCopyTo/VB/treenodecollectioncopytovb.aspx#1)]  
   
  ]]></format>
         </remarks>

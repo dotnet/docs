@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "My.User property"
   - "My.User object"
@@ -38,7 +36,7 @@ translation.priority.ht:
 Provides access to information about the current user.  
   
 ## Remarks  
- For information about the methods and properties of the `My.User` object, see <xref:Microsoft.VisualBasic.ApplicationServices.User?displayProperty=fullName>.  
+ For information about the methods and properties of the `My.User` object, see <xref:Microsoft.VisualBasic.ApplicationServices.User?displayProperty=nameWithType>.  
   
  For more information, see [Accessing User Data](../../../visual-basic/developing-apps/programming/accessing-user-data.md).  
   

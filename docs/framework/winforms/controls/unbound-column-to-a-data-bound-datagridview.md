@@ -9,8 +9,9 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "columns [Windows Forms], unbound data"
   - "data grids, adding unbound columns"
@@ -24,7 +25,7 @@ manager: "wpickett"
 # How to: Add an Unbound Column to a Data-Bound Windows Forms DataGridView Control
 The data you display in the <xref:System.Windows.Forms.DataGridView> control will normally come from a data source of some kind, but you might want to display a column of data that does not come from the data source. This kind of column is called an unbound column. Unbound columns can take many forms. Frequently, they are used to provide access to the details of a data row.  
   
- The following code example demonstrates how to create an unbound column of **Details** buttons to display a child table related to a particular row in a parent table when you implement a master/detail scenario. To respond to button clicks, implement a <xref:System.Windows.Forms.DataGridView.CellClick?displayProperty=fullName> event handler that displays a form containing the child table.  
+ The following code example demonstrates how to create an unbound column of **Details** buttons to display a child table related to a particular row in a parent table when you implement a master/detail scenario. To respond to button clicks, implement a <xref:System.Windows.Forms.DataGridView.CellClick?displayProperty=nameWithType> event handler that displays a form containing the child table.  
   
  There is support for this task in Visual Studio.  Also see [How to: Add and Remove Columns in the Windows Forms DataGridView Control Using the Designer](http://msdn.microsoft.com/library/dyyesckz\(v=vs.110\))  
   
@@ -37,7 +38,7 @@ The data you display in the <xref:System.Windows.Forms.DataGridView> control wil
   
 -   A <xref:System.Windows.Forms.DataGridView> control named `dataGridView1`.  
   
--   References to the <xref:System?displayProperty=fullName> and <xref:System.Windows.Forms?displayProperty=fullName> assemblies.  
+-   References to the <xref:System?displayProperty=nameWithType> and <xref:System.Windows.Forms?displayProperty=nameWithType> assemblies.  
   
 ## See Also  
  <xref:System.Windows.Forms.DataGridView>   

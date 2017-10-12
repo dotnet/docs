@@ -13,8 +13,6 @@ f1_keywords:
   - "vb.PropertySet"
   - "vb.Property"
   - "vb.PropertyGet"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Property statement"
   - "default modifier"

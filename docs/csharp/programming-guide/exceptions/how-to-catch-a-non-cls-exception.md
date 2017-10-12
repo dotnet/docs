@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "exceptions [C#], non-CLS"
 ms.assetid: db4630b3-5240-471a-b3a7-c7ff6ab31e8d
@@ -51,7 +49,7 @@ Some .NET languages, including C++/CLI, allow objects to throw exceptions that d
 2.  Access the original exception through the <xref:System.Runtime.CompilerServices.RuntimeWrappedException.WrappedException%2A> property.  
   
 ## Example  
- The following example shows how to catch a non-CLS exception that was thrown from a class library written in C++/CLR. Note that in this example, the [!INCLUDE[csprcs](~/includes/csprcs-md.md)] client code knows in advance that the exception type being thrown is a <xref:System.String?displayProperty=fullName>. You can cast the <xref:System.Runtime.CompilerServices.RuntimeWrappedException.WrappedException%2A> property back its original type as long as that type is accessible from your code.  
+ The following example shows how to catch a non-CLS exception that was thrown from a class library written in C++/CLR. Note that in this example, the [!INCLUDE[csprcs](~/includes/csprcs-md.md)] client code knows in advance that the exception type being thrown is a <xref:System.String?displayProperty=nameWithType>. You can cast the <xref:System.Runtime.CompilerServices.RuntimeWrappedException.WrappedException%2A> property back its original type as long as that type is accessible from your code.  
   
 ```  
 // Class library written in C++/CLR.  

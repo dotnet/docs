@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-bcl"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "control patterns, supporting in UI Automation provider"
   - "UI Automation, supporting control patterns in provider"
@@ -28,7 +31,7 @@ manager: "markl"
   
 1.  Implement the appropriate interfaces for the control patterns that the element should support, such as <xref:System.Windows.Automation.Provider.IInvokeProvider> for <xref:System.Windows.Automation.InvokePattern>.  
   
-2.  Return the object containing your implementation of each control interface in your implementation of <xref:System.Windows.Automation.Provider.IRawElementProviderSimple.GetPatternProvider%2A?displayProperty=fullName>  
+2.  Return the object containing your implementation of each control interface in your implementation of <xref:System.Windows.Automation.Provider.IRawElementProviderSimple.GetPatternProvider%2A?displayProperty=nameWithType>  
   
 ## Example  
  The following example shows an implementation of <xref:System.Windows.Automation.Provider.ISelectionProvider> for a single-selection custom list box. It returns three properties and gets the currently selected item.  

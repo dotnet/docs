@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataImport::EnumMethodsWithName"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataImport::EnumMethodsWithName method [.NET Framework metadata]"
   - "EnumMethodsWithName method [.NET Framework metadata]"

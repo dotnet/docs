@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "@"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "response files, specifying for compilation [C#]"
   - "@ compiler option"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLROnEventManager::RegisterActionOnEvent"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLROnEventManager::RegisterActionOnEvent method [.NET Framework hosting]"
   - "RegisterActionOnEvent method [.NET Framework hosting]"

@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "double"
   - "double_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "double data type [C#]"
 ms.assetid: 0980e11b-6004-4102-abcf-cfc280fc6991
@@ -36,7 +34,7 @@ The `double` keyword signifies a simple type that stores 64-bit floating-point v
   
 |Type|Approximate range|Precision|.NET Framework type|  
 |----------|-----------------------|---------------|-------------------------|  
-|`double`|±5.0 × 10<sup>−324</sup> to ±1.7 × 10<sup>308</sup>|15-16 digits|<xref:System.Double?displayProperty=fullName>|  
+|`double`|±5.0 × 10<sup>−324</sup> to ±1.7 × 10<sup>308</sup>|15-16 digits|<xref:System.Double?displayProperty=nameWithType>|  
   
 ## Literals  
  By default, a real numeric literal on the right side of the assignment operator is treated as `double`. However, if you want an integer number to be treated as `double`, use the suffix d or D, for example:  
@@ -62,7 +60,7 @@ double x = 3D;
   
 -   The finite set of nonzero values.  
   
- For more information about these values, see IEEE Standard for Binary Floating-Point Arithmetic, available on the [IEEE](http://go.microsoft.com/fwlink/?LinkId=26269) Web site.  
+ For more information about these values, see IEEE Standard for Binary Floating-Point Arithmetic, available on the [IEEE](http://www.ieee.org) Web site.  
   
 ## Example  
  In the following example, an [int](../../../csharp/language-reference/keywords/int.md), a [short](../../../csharp/language-reference/keywords/short.md), a [float](../../../csharp/language-reference/keywords/float.md), and a `double` are added together giving a `double` result.  

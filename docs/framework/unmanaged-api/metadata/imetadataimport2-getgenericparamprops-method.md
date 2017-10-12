@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataImport2::GetGenericParamProps"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataImport2::GetGenericParamProps method [.NET Framework metadata]"
   - "GetGenericParamProps method [.NET Framework metadata]"

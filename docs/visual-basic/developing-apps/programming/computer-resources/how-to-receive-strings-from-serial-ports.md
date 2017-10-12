@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "serial ports, retrieving strings"
   - "strings [Visual Basic], retrieving from serial ports"
@@ -87,7 +85,7 @@ This topic describes how to use `My.Computer.Ports` to receive strings from the 
   
 ## See Also  
  <xref:Microsoft.VisualBasic.Devices.Ports>   
- <xref:System.IO.Ports.SerialPort?displayProperty=fullName>   
+ <xref:System.IO.Ports.SerialPort?displayProperty=nameWithType>   
  [How to: Dial Modems Attached to Serial Ports](../../../../visual-basic/developing-apps/programming/computer-resources/how-to-dial-modems-attached-to-serial-ports.md)   
  [How to: Send Strings to Serial Ports](../../../../visual-basic/developing-apps/programming/computer-resources/how-to-send-strings-to-serial-ports.md)   
  [How to: Show Available Serial Ports](../../../../visual-basic/developing-apps/programming/computer-resources/how-to-show-available-serial-ports.md)

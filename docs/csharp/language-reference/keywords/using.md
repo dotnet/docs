@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "using_CSharpKeyword"
   - "using"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "using keyword [C#]"
 ms.assetid: 124e1a63-2a4b-4132-b269-3b6d8d3ef72d

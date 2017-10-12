@@ -21,7 +21,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ---
 # Thread.Suspend, Garbage Collection, and Safe Points
-When you call <xref:System.Threading.Thread.Suspend%2A?displayProperty=fullName> on a thread, the system notes that a thread suspension has been requested and allows the thread to execute until it has reached a safe point before actually suspending the thread. A safe point for a thread is a point in its execution at which garbage collection can be performed.  
+When you call <xref:System.Threading.Thread.Suspend%2A?displayProperty=nameWithType> on a thread, the system notes that a thread suspension has been requested and allows the thread to execute until it has reached a safe point before actually suspending the thread. A safe point for a thread is a point in its execution at which garbage collection can be performed.  
   
  Once a safe point is reached, the runtime guarantees that the suspended thread will not make any further progress in managed code. A thread executing outside managed code is always safe for garbage collection, and its execution continues until it attempts to resume execution of managed code.  
   

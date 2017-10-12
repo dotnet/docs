@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "ToolStripPanel"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "toolbars [Windows Forms]"
   - "ToolStripPanel control [Windows Forms], about ToolStripPanel control"

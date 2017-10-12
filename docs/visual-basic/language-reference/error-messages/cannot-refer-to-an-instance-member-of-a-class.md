@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbc30369"
   - "bc30369"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Shared"
   - "BC30369"

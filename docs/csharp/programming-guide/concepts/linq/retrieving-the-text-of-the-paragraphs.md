@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: 127d635e-e559-408f-90c8-2bb621ca50ac
 caps.latest.revision: 3
 author: "BillWagner"
@@ -33,7 +31,7 @@ This example builds on the previous example, [Retrieving the Paragraphs and Thei
   
  For instructions for creating the source document for this example, see [Creating the Source Office Open XML Document (C#)](../../../../csharp/programming-guide/concepts/linq/creating-the-source-office-open-xml-document.md).  
   
- This example uses classes from the WindowsBase assembly. It uses types in the <xref:System.IO.Packaging?displayProperty=fullName> namespace.  
+ This example uses classes from the WindowsBase assembly. It uses types in the <xref:System.IO.Packaging?displayProperty=nameWithType> namespace.  
   
 ```csharp  
 const string fileName = "SampleDoc.docx";  

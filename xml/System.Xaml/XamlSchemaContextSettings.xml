@@ -68,7 +68,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of this property influences the strings that are returned by <xref:System.Xaml.XamlSchemaContext.GetAllXamlNamespaces%2A> in the constructed schema context. If <xref:System.Xaml.XamlSchemaContext.FullyQualifyAssemblyNamesInClrNamespaces%2A> is `true`, the assembly part of the string reports the equivalent of <xref:System.Reflection.Assembly.FullName%2A?displayProperty=fullName>.  
+ The value of this property influences the strings that are returned by <xref:System.Xaml.XamlSchemaContext.GetAllXamlNamespaces%2A> in the constructed schema context. If <xref:System.Xaml.XamlSchemaContext.FullyQualifyAssemblyNamesInClrNamespaces%2A> is `true`, the assembly part of the string reports the equivalent of <xref:System.Reflection.Assembly.FullName%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

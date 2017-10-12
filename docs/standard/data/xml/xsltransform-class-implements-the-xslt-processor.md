@@ -8,11 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+dev_langs:
+- "csharp"
+- "vb"
 ms.assetid: 88373fe2-4a6b-44f9-8a62-8a3e348e3a46
 caps.latest.revision: 6
 author: "mairaw"
@@ -230,7 +228,7 @@ Root node is book.
 |Void Transform(IXPathNavigable input, XsltArgumentList args, Stream output)|Void Transform(IXPathNavigable input, XsltArgumentList args, Stream output, XmlResolver resolver)|  
 |Void Transform(String input, String output);|Void Transform(String input, String output, XmlResolver resolver);|  
   
- The <xref:System.Xml.Xsl.XslTransform.XmlResolver%2A?displayProperty=fullName> property is obsolete in [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] version 1.1. Instead, use the new <xref:System.Xml.Xsl.XslTransform.Transform%2A> overloads which take an <xref:System.Xml.XmlResolver> object.  
+ The <xref:System.Xml.Xsl.XslTransform.XmlResolver%2A?displayProperty=nameWithType> property is obsolete in [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] version 1.1. Instead, use the new <xref:System.Xml.Xsl.XslTransform.Transform%2A> overloads which take an <xref:System.Xml.XmlResolver> object.  
   
 ## See Also  
  <xref:System.Xml.Xsl.XslTransform>   

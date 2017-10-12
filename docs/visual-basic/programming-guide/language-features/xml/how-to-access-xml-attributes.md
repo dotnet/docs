@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "attribute axis property [Visual Basic]"
   - "XML attribute axis property [Visual Basic]"
@@ -43,7 +41,7 @@ This example shows how to use an attribute axis property to access XML attribute
  [!code-vb[VbXMLSamples#11](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-access-xml-attributes_1.vb)]  
   
 ## See Also  
- <xref:System.Xml.Linq.XElement.Attributes%2A?displayProperty=fullName>   
+ <xref:System.Xml.Linq.XElement.Attributes%2A?displayProperty=nameWithType>   
  [XML Attribute Axis Property](../../../../visual-basic/language-reference/xml-axis/xml-attribute-axis-property.md)   
  [Accessing XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/accessing-xml.md)   
  [XML](../../../../visual-basic/programming-guide/language-features/xml/index.md)

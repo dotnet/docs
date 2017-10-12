@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.MustOverride"
   - "MustOverride"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "virtual elements, pure"
   - "elements, pure virtual"

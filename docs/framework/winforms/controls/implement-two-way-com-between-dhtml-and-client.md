@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 f1_keywords: 
   - "WebBrowser.ObjectForScripting"
   - "WebBrowser.Document"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "WebBrowser control [Windows Forms], examples"
   - "communications, DHTML and client applications"
@@ -114,6 +115,6 @@ You can use the <xref:System.Windows.Forms.WebBrowser> control to add existing d
   
 ## See Also  
  <xref:System.Windows.Forms.WebBrowser>   
- <xref:System.Windows.Forms.WebBrowser.Document%2A?displayProperty=fullName>   
- <xref:System.Windows.Forms.WebBrowser.ObjectForScripting%2A?displayProperty=fullName>   
+ <xref:System.Windows.Forms.WebBrowser.Document%2A?displayProperty=nameWithType>   
+ <xref:System.Windows.Forms.WebBrowser.ObjectForScripting%2A?displayProperty=nameWithType>   
  [WebBrowser Control](../../../../docs/framework/winforms/controls/webbrowser-control-windows-forms.md)

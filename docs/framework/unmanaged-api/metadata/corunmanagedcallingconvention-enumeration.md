@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorUnmanagedCallingConvention"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorUnmanagedCallingConvention enumeration [.NET Framework metadata]"
 ms.assetid: 83058790-160b-4703-a5eb-74b66acbdfa9

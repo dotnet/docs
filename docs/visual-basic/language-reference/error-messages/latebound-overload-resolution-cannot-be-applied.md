@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbc30933"
   - "bc30933"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "overload resolution, with late-bound argument"
   - "BC30933"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugExceptionObjectValue::EnumerateExceptionCallStack"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "EnumerateExceptionCallStack method, ICorDebugExceptionObjectValue interface [.NET Framework debugging]"
   - "ICorDebugExceptionObjectValue::EnumerateExceptionCallStack method [.NET Framework debugging]"

@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.Namespace"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "namespaces, root"
   - "Namespace statement"
@@ -113,7 +111,7 @@ End Namespace
  [!code-vb[VbVbalrStatements#42](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/namespace-statement_3.vb)]  
   
 ## Example  
- The following example defines the skeleton of a new generic list class and adds it to the <xref:System.Collections.Generic?displayProperty=fullName> namespace.  
+ The following example defines the skeleton of a new generic list class and adds it to the <xref:System.Collections.Generic?displayProperty=nameWithType> namespace.  
   
 ```vb  
 Namespace System.Collections.Generic  

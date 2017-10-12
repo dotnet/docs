@@ -9,8 +9,9 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "custom controls [Windows Forms], user-drawn"
   - "OnPaint method [Windows Forms]"
@@ -77,7 +78,7 @@ SetStyle(ControlStyles.ResizeRedraw, true);
 ```  
   
 > [!NOTE]
->  Use the <xref:System.Windows.Forms.Control.Region%2A?displayProperty=fullName> property to implement a non-rectangular control.  
+>  Use the <xref:System.Windows.Forms.Control.Region%2A?displayProperty=nameWithType> property to implement a non-rectangular control.  
   
 ## See Also  
  <xref:System.Windows.Forms.Control.Region%2A>   

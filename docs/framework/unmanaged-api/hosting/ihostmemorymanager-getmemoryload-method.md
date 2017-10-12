@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostMemoryManager::GetMemoryLoad"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostMemoryManager::GetMemoryLoad method [.NET Framework hosting]"
   - "GetMemoryLoad method [.NET Framework hosting]"
@@ -75,5 +73,5 @@ HRESULT GetMemoryLoad (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See Also  
- <xref:System.GC?displayProperty=fullName>   
+ <xref:System.GC?displayProperty=nameWithType>   
  [IHostMemoryManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmemorymanager-interface.md)

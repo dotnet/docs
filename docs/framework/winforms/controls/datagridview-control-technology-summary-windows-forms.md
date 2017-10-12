@@ -9,8 +9,6 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], about DataGridView control"
   - "data grids, about data grids"
@@ -29,9 +27,9 @@ This topic summarizes information about the `DataGridView` control and the class
  DataGridView, BindingSource, table, cell, data binding, virtual mode  
   
 ## Namespaces  
- <xref:System.Windows.Forms?displayProperty=fullName>  
+ <xref:System.Windows.Forms?displayProperty=nameWithType>  
   
- <xref:System.Data?displayProperty=fullName>  
+ <xref:System.Data?displayProperty=nameWithType>  
   
 ## Related Technologies  
  `BindingSource`  

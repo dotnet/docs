@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "allowing metadata requests while authorizing [WCF]"
 ms.assetid: 90cec34f-b619-452b-a056-8b1c0de49d05
@@ -30,7 +33,7 @@ During custom authorization, it may be necessary to allow a request for metadata
   
 3.  In the override, check the contract name, namespace, and the action as shown in the following example. If the conditions are valid, then return `true.`  
   
-4.  Use the extensibility point to employ the class. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][How to: Create a Custom Authorization Manager for a Service](../../../../docs/framework/wcf/extending/how-to-create-a-custom-authorization-manager-for-a-service.md).  
+4.  Use the extensibility point to employ the class. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [How to: Create a Custom Authorization Manager for a Service](../../../../docs/framework/wcf/extending/how-to-create-a-custom-authorization-manager-for-a-service.md).  
   
 ## Example  
  The following example shows an override of the <xref:System.ServiceModel.ServiceAuthorizationManager.CheckAccessCore%2A> method.  

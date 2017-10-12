@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "GetNameCount"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetNameCount method [.NET Framework hosting]"
   - "ITypeName::GetNameCount method [.NET Framework hosting]"

@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "sizeof_CSharpKeyword"
   - "sizeof"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "sizeof keyword [C#]"
 ms.assetid: c548592c-677c-4f40-a4ce-e613f7529141
@@ -68,7 +66,7 @@ int intSize = sizeof(int);
 |`sizeof(decimal)`|16|  
 |`sizeof(bool)`|1|  
   
- For all other types, including structs, the `sizeof` operator can be used only in unsafe code blocks. Although you can use the <xref:System.Runtime.InteropServices.Marshal.SizeOf%2A?displayProperty=fullName> method, the value returned by this method is not always the same as the value returned by `sizeof`. <xref:System.Runtime.InteropServices.Marshal.SizeOf%2A?displayProperty=fullName> returns the size after the type has been marshaled, whereas `sizeof` returns the size as it has been allocated by the common language runtime, including any padding.  
+ For all other types, including structs, the `sizeof` operator can be used only in unsafe code blocks. Although you can use the <xref:System.Runtime.InteropServices.Marshal.SizeOf%2A?displayProperty=nameWithType> method, the value returned by this method is not always the same as the value returned by `sizeof`. <xref:System.Runtime.InteropServices.Marshal.SizeOf%2A?displayProperty=nameWithType> returns the size after the type has been marshaled, whereas `sizeof` returns the size as it has been allocated by the common language runtime, including any padding.  
   
 ## Example  
  [!code-cs[csrefKeywordsOperator#11](../../../csharp/language-reference/keywords/codesnippet/CSharp/sizeof_1.cs)]  

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEditAndContinueSnapshot"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugEditAndContinueSnapshot interface [.NET Framework debugging]"
 ms.assetid: 91b558b3-cea9-4106-be8c-3d628d904bfe

@@ -9,11 +9,10 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+dev_langs:
+- "csharp"
+- "vb"
+- "cpp"
 helpviewer_keywords: 
   - "callback function, implementing"
 ms.assetid: e55b3712-b9ea-4453-bd9a-ad5cfa2f6bfa

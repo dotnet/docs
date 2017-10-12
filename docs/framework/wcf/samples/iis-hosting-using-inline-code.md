@@ -9,9 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
 helpviewer_keywords: 
   - "Web hosted service"
   - "IIS Hosting Using Inline Code Sample [Windows Communication Foundation]"

@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "key frames, animating Points with"
   - "Points, animating with key frames"
@@ -41,7 +44,7 @@ This example shows how to use the <xref:System.Windows.Media.Animation.PointAnim
   
 ## See Also  
  <xref:System.Windows.Media.Animation.PointAnimationUsingKeyFrames>   
- <xref:System.Windows.Media.EllipseGeometry.Center%2A?displayProperty=fullName>   
+ <xref:System.Windows.Media.EllipseGeometry.Center%2A?displayProperty=nameWithType>   
  <xref:System.Windows.Media.EllipseGeometry>   
  [Key-Frame Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)   
  [Key-Frame How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animation-how-to-topics.md)

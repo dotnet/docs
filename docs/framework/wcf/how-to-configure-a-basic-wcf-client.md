@@ -9,9 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
 helpviewer_keywords: 
   - "WCF clients [WCF], configuring"
 ms.assetid: d067b86d-afb0-47bf-94f6-45180a3d8d78
@@ -45,27 +42,6 @@ This is the fifth of six tasks required to create a basic [!INCLUDE[indigo1](../
             </bindings>  
             <client>  
                 <!-- specifies the endpoint to use when calling the service -->  
-                <endpoint address="http://localhost:8000/ServiceModelSamples/Service/CalculatorService"  
-                    binding="wsHttpBinding" bindingConfiguration="WSHttpBinding_ICalculator"  
-                    contract="ServiceReference1.ICalculator" name="WSHttpBinding_ICalculator">  
-                    <identity>  
-                        <userPrincipalName value="migree@redmond.corp.microsoft.com" />  
-                    </identity>  
-                </endpoint>  
-            </client>  
-        </system.serviceModel>  
-    </configuration><?xml version="1.0" encoding="utf-8" ?>  
-    <configuration>  
-        <startup>   
-            <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5,Profile=Client" />  
-        </startup>  
-        <system.serviceModel>  
-            <bindings>  
-                <wsHttpBinding>  
-                    <binding name="WSHttpBinding_ICalculator" />  
-                </wsHttpBinding>  
-            </bindings>  
-            <client>  
                 <endpoint address="http://localhost:8000/ServiceModelSamples/Service/CalculatorService"  
                     binding="wsHttpBinding" bindingConfiguration="WSHttpBinding_ICalculator"  
                     contract="ServiceReference1.ICalculator" name="WSHttpBinding_ICalculator">  

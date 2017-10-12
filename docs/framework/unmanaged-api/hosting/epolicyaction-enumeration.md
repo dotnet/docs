@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "EPolicyAction"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "EPolicyAction enumeration [.NET Framework hosting]"
 ms.assetid: 72dd76ba-239e-45ac-9ded-318fb07d6c6d

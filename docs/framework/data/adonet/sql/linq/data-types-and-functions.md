@@ -29,12 +29,12 @@ The topics listed in the following table describe LINQ to SQL support for member
 |[Numeric and Comparison Operators](../../../../../../docs/framework/data/adonet/sql/linq/numeric-and-comparison-operators.md)|Summarizes differences in behavior from the [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort-md.md)].|  
 |[Sequence Operators](../../../../../../docs/framework/data/adonet/sql/linq/sequence-operators.md)|Summarizes differences in behavior from the [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort-md.md)].|  
 |[System.Convert Methods](../../../../../../docs/framework/data/adonet/sql/linq/system-convert-methods.md)|Summarizes differences in behavior from the [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort-md.md)].|  
-|[System.DateTime Methods](../../../../../../docs/framework/data/adonet/sql/linq/system-datetime-methods.md)|Describes LINQ to SQL support for members of the <xref:System.DateTime?displayProperty=fullName> structure.|  
-|[System.DateTimeOffset Methods](../../../../../../docs/framework/data/adonet/sql/linq/system-datetimeoffset-methods.md)|Describes LINQ to SQL support for members of the <xref:System.DateTimeOffset?displayProperty=fullName> structure.|  
+|[System.DateTime Methods](../../../../../../docs/framework/data/adonet/sql/linq/system-datetime-methods.md)|Describes LINQ to SQL support for members of the <xref:System.DateTime?displayProperty=nameWithType> structure.|  
+|[System.DateTimeOffset Methods](../../../../../../docs/framework/data/adonet/sql/linq/system-datetimeoffset-methods.md)|Describes LINQ to SQL support for members of the <xref:System.DateTimeOffset?displayProperty=nameWithType> structure.|  
 |[System.Math Methods](../../../../../../docs/framework/data/adonet/sql/linq/system-math-methods.md)|Summarizes differences in behavior from the [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort-md.md)].|  
 |[System.Object Methods](../../../../../../docs/framework/data/adonet/sql/linq/system-object-methods.md)|Summarizes differences in behavior from the [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort-md.md)].|  
 |[System.String Methods](../../../../../../docs/framework/data/adonet/sql/linq/system-string-methods.md)|Summarizes differences in behavior from the [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort-md.md)].|  
-|[System.TimeSpan Methods](../../../../../../docs/framework/data/adonet/sql/linq/system-timespan-methods.md)|Describes LINQ to SQL support for members of the <xref:System.TimeSpan?displayProperty=fullName> structure.|  
+|[System.TimeSpan Methods](../../../../../../docs/framework/data/adonet/sql/linq/system-timespan-methods.md)|Describes LINQ to SQL support for members of the <xref:System.TimeSpan?displayProperty=nameWithType> structure.|  
 |[Unsupported Functionality](../../../../../../docs/framework/data/adonet/sql/linq/unsupported-functionality.md)|Describes functionality that is not supported in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].|  
   
 ## See Also  

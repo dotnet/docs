@@ -55,17 +55,17 @@
 ## Remarks  
  The <xref:System.Data.Objects.DataClasses.RelatedEnd.AssociationChanged> event is raised by the following methods:  
   
--   <xref:System.Data.Objects.DataClasses.EntityCollection%601.Add%2A?displayProperty=fullName>  
+-   <xref:System.Data.Objects.DataClasses.EntityCollection%601.Add%2A?displayProperty=nameWithType>  
   
--   <xref:System.Data.Objects.DataClasses.EntityCollection%601.Remove%2A?displayProperty=fullName>  
+-   <xref:System.Data.Objects.DataClasses.EntityCollection%601.Remove%2A?displayProperty=nameWithType>  
   
--   <xref:System.Data.Objects.DataClasses.EntityCollection%601.Load%2A?displayProperty=fullName>  
+-   <xref:System.Data.Objects.DataClasses.EntityCollection%601.Load%2A?displayProperty=nameWithType>  
   
--   <xref:System.Data.Objects.DataClasses.EntityReference%601.Load%2A?displayProperty=fullName>  
+-   <xref:System.Data.Objects.DataClasses.EntityReference%601.Load%2A?displayProperty=nameWithType>  
   
--   <xref:System.Data.Objects.DataClasses.EntityCollection%601.Attach%2A?displayProperty=fullName>  
+-   <xref:System.Data.Objects.DataClasses.EntityCollection%601.Attach%2A?displayProperty=nameWithType>  
   
--   <xref:System.Data.Objects.DataClasses.EntityCollection%601.Clear%2A?displayProperty=fullName>  
+-   <xref:System.Data.Objects.DataClasses.EntityCollection%601.Clear%2A?displayProperty=nameWithType>  
   
  Events may be suppressed during bulk operations, such as `Load`, <xref:System.Data.Objects.DataClasses.EntityCollection%601.Attach%2A>, and <xref:System.Data.Objects.DataClasses.EntityCollection%601.Clear%2A>.  
   

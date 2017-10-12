@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "cs.build.options"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "compiler options [C#]"
   - "csc.exe"
@@ -39,7 +37,7 @@ The compiler produces executable (.exe) files, dynamic-link libraries (.dll), or
   
  Every compiler option is available in two forms: **-option** and **/option**. The documentation only shows the **/option** form.  
   
- In Visual Web Developer 2008, you set compiler options in the web.config file. For more information, see [\<compiler> Element](https://msdn.microsoft.com/library/y9x69bzw).  
+ In Visual Studio, you set compiler options in the web.config file. For more information, see [\<compiler> Element](../../../framework/configure-apps/file-schema/compiler/compiler-element.md).  
   
 ## In This Section  
  [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)  

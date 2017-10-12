@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorDebugStepReason"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorDebugStepReason enumeration [.NET Framework debugging]"
 ms.assetid: fe248069-b33c-48e1-a777-06ac9b239c54

@@ -8,11 +8,10 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+dev_langs:
+- "csharp"
+- "vb"
+- "cpp"
 ms.assetid: b5757c4a-ea59-467e-ac62-be2bfe24eb77
 caps.latest.revision: 2
 author: "mairaw"
@@ -20,7 +19,7 @@ ms.author: "mairaw"
 manager: "wpickett"
 ---
 # Reading and Writing XML Schemas
-The Schema Object Model (SOM) API can be used to read and write XML Schema definition language (XSD) schemas from files or other sources and build XML schemas in-memory using the classes in the <xref:System.Xml.Schema?displayProperty=fullName> namespace that map to the structures defined in the World Wide Web Consortium (W3C) XML Schema Recommendation.  
+The Schema Object Model (SOM) API can be used to read and write XML Schema definition language (XSD) schemas from files or other sources and build XML schemas in-memory using the classes in the <xref:System.Xml.Schema?displayProperty=nameWithType> namespace that map to the structures defined in the World Wide Web Consortium (W3C) XML Schema Recommendation.  
   
 ## Reading and Writing XML Schemas  
  The <xref:System.Xml.Schema.XmlSchema> class provides the <xref:System.Xml.Schema.XmlSchema.Read%2A> and <xref:System.Xml.Schema.XmlSchema.Write%2A> methods to read and write XML schemas. The <xref:System.Xml.Schema.XmlSchema.Read%2A> method returns an <xref:System.Xml.Schema.XmlSchema> object representing the XML schema and takes an optional <xref:System.Xml.Schema.ValidationEventHandler> as a parameter to handle schema validation warnings and errors encountered while reading an XML schema.  

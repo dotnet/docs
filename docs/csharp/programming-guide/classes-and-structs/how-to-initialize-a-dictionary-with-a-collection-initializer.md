@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "collection initializers [C#], with Dictionary"
 ms.assetid: 25283922-f8ee-40dc-a639-fac30804ec71

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugModule::GetEditAndContinueSnapshot"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugModule::GetEditAndContinueSnapshot method [.NET Framework debugging]"
   - "GetEditAndContinueSnapshot method [.NET Framework debugging]"

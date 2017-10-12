@@ -65,7 +65,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public CodeMethodInvokeExpression (System.CodeDom.CodeMethodReferenceExpression method, System.CodeDom.CodeExpression[] parameters);" />
+      <MemberSignature Language="C#" Value="public CodeMethodInvokeExpression (System.CodeDom.CodeMethodReferenceExpression method, params System.CodeDom.CodeExpression[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeMethodReferenceExpression method, class System.CodeDom.CodeExpression[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeMethodInvokeExpression.#ctor(System.CodeDom.CodeMethodReferenceExpression,System.CodeDom.CodeExpression[])" />
       <MemberType>Constructor</MemberType>
@@ -95,7 +95,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public CodeMethodInvokeExpression (System.CodeDom.CodeExpression targetObject, string methodName, System.CodeDom.CodeExpression[] parameters);" />
+      <MemberSignature Language="C#" Value="public CodeMethodInvokeExpression (System.CodeDom.CodeExpression targetObject, string methodName, params System.CodeDom.CodeExpression[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeExpression targetObject, string methodName, class System.CodeDom.CodeExpression[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeMethodInvokeExpression.#ctor(System.CodeDom.CodeExpression,System.String,System.CodeDom.CodeExpression[])" />
       <MemberType>Constructor</MemberType>

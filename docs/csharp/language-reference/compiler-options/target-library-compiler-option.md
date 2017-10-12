@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "/dll"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "-target compiler options [C#], /target:library"
   - "target compiler options [C#], /target:library"

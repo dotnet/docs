@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEditAndContinueErrorInfo::GetString"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugEditAndContinueErrorInfo::GetString method [.NET Framework debugging]"
   - "GetString method, ICorDebugEditAndContinueErrorInfo interface [.NET Framework debugging]"

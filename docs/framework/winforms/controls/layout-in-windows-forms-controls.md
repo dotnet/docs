@@ -9,8 +9,6 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "layout [Windows Forms]"
   - "sizing, automatic [Windows Forms]"
@@ -24,7 +22,7 @@ ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Layout in Windows Forms Controls
-Precise placement of controls on your form is a high priority for many applications. The <xref:System.Windows.Forms?displayProperty=fullName> namespace gives you many layout tools to accomplish this.  
+Precise placement of controls on your form is a high priority for many applications. The <xref:System.Windows.Forms?displayProperty=nameWithType> namespace gives you many layout tools to accomplish this.  
   
 ## In This Section  
  [AutoSize Property Overview](../../../../docs/framework/winforms/controls/autosize-property-overview.md)  

@@ -464,7 +464,7 @@
     </Member>
     <Member MemberName="EndReceiveFromGroup">
       <MemberSignature Language="C#" Value="public int EndReceiveFromGroup (IAsyncResult result, out System.Net.IPEndPoint source);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EndReceiveFromGroup(class System.IAsyncResult result, class System.Net.IPEndPoint source) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EndReceiveFromGroup(class System.IAsyncResult result, [out] class System.Net.IPEndPoint&amp; source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpAnySourceMulticastClient.EndReceiveFromGroup(System.IAsyncResult,System.Net.IPEndPoint@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

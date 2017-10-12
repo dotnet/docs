@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "errors [Visual Basic]"
 ms.assetid: 2557da60-c6dc-4e99-8128-fceb6f8a0736

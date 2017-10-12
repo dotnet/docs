@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- No existing keyboard event in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] uses the <xref:System.Windows.Input.KeyboardEventArgs>. <xref:System.Windows.Input.KeyboardEventArgs> serves as the base class for the more specific <xref:System.Windows.Input.KeyEventArgs> and <xref:System.Windows.Input.KeyboardFocusChangedEventArgs> event data classes, which are used by existing [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] events such as <xref:System.Windows.UIElement.KeyDown?displayProperty=fullName> and <xref:System.Windows.UIElement.LostKeyboardFocus?displayProperty=fullName>.  
+ No existing keyboard event in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] uses the <xref:System.Windows.Input.KeyboardEventArgs>. <xref:System.Windows.Input.KeyboardEventArgs> serves as the base class for the more specific <xref:System.Windows.Input.KeyEventArgs> and <xref:System.Windows.Input.KeyboardFocusChangedEventArgs> event data classes, which are used by existing [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] events such as <xref:System.Windows.UIElement.KeyDown?displayProperty=nameWithType> and <xref:System.Windows.UIElement.LostKeyboardFocus?displayProperty=nameWithType>.  
   
  ]]></format>
     </remarks>

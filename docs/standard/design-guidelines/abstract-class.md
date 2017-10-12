@@ -8,11 +8,6 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "type design guidelines, abstract classes"
   - "abstract classes, design guidelines"
@@ -39,7 +34,7 @@ manager: "wpickett"
   
  **✓ DO** provide at least one concrete type that inherits from each abstract class that you ship.  
   
- Doing this helps to validate the design of the abstract class. For example,  <xref:System.IO.FileStream?displayProperty=fullName> is an implementation of the <xref:System.IO.Stream?displayProperty=fullName> abstract class.  
+ Doing this helps to validate the design of the abstract class. For example,  <xref:System.IO.FileStream?displayProperty=nameWithType> is an implementation of the <xref:System.IO.Stream?displayProperty=nameWithType> abstract class.  
   
  *Portions © 2005, 2009 Microsoft Corporation. All rights reserved.*  
   

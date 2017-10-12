@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "String data type, validation"
 ms.assetid: 5d9a918f-6c1f-41a3-a019-b5c2b8ce0381

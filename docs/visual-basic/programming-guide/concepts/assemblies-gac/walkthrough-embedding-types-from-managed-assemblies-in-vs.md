@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 ms.assetid: 56ed12ba-adff-4e9c-a668-7fcba80c4795
 caps.latest.revision: 3
 author: dotnet-bot
@@ -45,7 +43,7 @@ If you embed type information from a strong-named managed assembly, you can loos
   
 -   Constants are not embedded.  
   
--   The <xref:System.Collections.Generic.Dictionary%602?displayProperty=fullName> class does not support an embedded type as a key. You can implement your own dictionary type to support an embedded type as a key.  
+-   The <xref:System.Collections.Generic.Dictionary%602?displayProperty=nameWithType> class does not support an embedded type as a key. You can implement your own dictionary type to support an embedded type as a key.  
   
  In this walkthrough, you will do the following:  
   

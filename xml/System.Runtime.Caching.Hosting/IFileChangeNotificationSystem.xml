@@ -27,7 +27,7 @@
   <Members>
     <Member MemberName="StartMonitoring">
       <MemberSignature Language="C#" Value="public void StartMonitoring (string filePath, System.Runtime.Caching.OnChangedCallback onChangedCallback, out object state, out DateTimeOffset lastWriteTime, out long fileSize);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StartMonitoring(string filePath, class System.Runtime.Caching.OnChangedCallback onChangedCallback, object state, valuetype System.DateTimeOffset lastWriteTime, int64 fileSize) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StartMonitoring(string filePath, class System.Runtime.Caching.OnChangedCallback onChangedCallback, [out] object&amp; state, [out] valuetype System.DateTimeOffset&amp; lastWriteTime, [out] int64&amp; fileSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.Hosting.IFileChangeNotificationSystem.StartMonitoring(System.String,System.Runtime.Caching.OnChangedCallback,System.Object@,System.DateTimeOffset@,System.Int64@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "modules, Visual Basic"
 ms.assetid: 370bfc90-e8f2-4942-bdec-9897ce605d31

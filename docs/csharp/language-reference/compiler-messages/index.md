@@ -5,9 +5,6 @@ ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "error-reference"
-dev_langs: 
-  - "CSharp"
-  - "CSharp"
 helpviewer_keywords: 
   - "C# language, compiler errors"
   - "Visual C# compiler, errors"
@@ -34,7 +31,7 @@ translation.priority.ht:
 # C# Compiler Errors
 Some C# compiler errors have corresponding topics that explain why the error is generated, and, in some cases, how to fix the error. Use one of the following steps to see whether help is available for a particular error message.  
   
--   Find the error number (for example, CS0029) in the [Output Window](/visualstudio/ide/reference/output-window), and then search for it on MSDN.  
+-   Find the error number (for example, CS0029) in the [Output Window](/visualstudio/ide/reference/output-window), and then search for it on Microsoft Docs.  
   
 -   Choose the error number (for example, CS0029) in the [Output Window](/visualstudio/ide/reference/output-window), and then choose the F1 key.  
   

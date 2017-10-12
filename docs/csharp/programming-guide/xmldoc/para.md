@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "<para>"
   - "para"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "<para> C# XML tag"
   - "para C# XML tag"

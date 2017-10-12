@@ -729,7 +729,7 @@ namespace SampleSynthesis
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> method and <xref:System.Speech.Synthesis.VoiceInfo> class to obtain the names of installed text-to-speech (TTS) voices that you can select. To select a voice, pass the entire contents of the <xref:System.Speech.Synthesis.VoiceInfo.Name%2A> property as the argument for the <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoice%2A> method. The <xref:System.Speech.Synthesis.SpeechSynthesizer> object selects the first installed voice that contains `name` in the voice's <xref:System.Speech.Synthesis.VoiceInfo.Name%2A?displayProperty=fullName> property. The <xref:System.Speech.Synthesis.SpeechSynthesizer> performs a case-sensitive, substring comparison to determine if the voice matches the `name`.  
+ Use the <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> method and <xref:System.Speech.Synthesis.VoiceInfo> class to obtain the names of installed text-to-speech (TTS) voices that you can select. To select a voice, pass the entire contents of the <xref:System.Speech.Synthesis.VoiceInfo.Name%2A> property as the argument for the <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoice%2A> method. The <xref:System.Speech.Synthesis.SpeechSynthesizer> object selects the first installed voice that contains `name` in the voice's <xref:System.Speech.Synthesis.VoiceInfo.Name%2A?displayProperty=nameWithType> property. The <xref:System.Speech.Synthesis.SpeechSynthesizer> performs a case-sensitive, substring comparison to determine if the voice matches the `name`.  
   
  When an application calls <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A>, the method verifies that each of the voices it finds in the registry meets certain minimum criteria. For any voice that fails verification, <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> sets its <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property to `False`. An application cannot select a voice whose <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property is `False`. Typically, applications will not set a voice’s <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property.  
   
@@ -1781,13 +1781,13 @@ namespace SampleSynthesis
 ## Remarks  
  You can also use this method to cancel an asynchronous speak operation for the following:  
   
--   The contents of a <xref:System.String> specified by a <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A?displayProperty=fullName> method.  
+-   The contents of a <xref:System.String> specified by a <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A?displayProperty=nameWithType> method.  
   
--   The contents of a <xref:System.Speech.Synthesis.PromptBuilder> specified by a <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A?displayProperty=fullName> method.  
+-   The contents of a <xref:System.Speech.Synthesis.PromptBuilder> specified by a <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A?displayProperty=nameWithType> method.  
   
 -   The contents of a <xref:System.String> containing SSML specified by a <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsmlAsync%2A> method.  
   
- When you call <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A?displayProperty=fullName>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A?displayProperty=fullName>, or <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsmlAsync%2A>, System.Speech creates a <xref:System.Speech.Synthesis.Prompt> object and populates it with the contents of the method's parameter, and returns the <xref:System.Speech.Synthesis.Prompt> object. If you retain a copy of the returned <xref:System.Speech.Synthesis.Prompt>, you can pass it into <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsyncCancel%2A> to cancel speaking content specified in a <xref:System.String> or a <xref:System.Speech.Synthesis.PromptBuilder> object.  
+ When you call <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A?displayProperty=nameWithType>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A?displayProperty=nameWithType>, or <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsmlAsync%2A>, System.Speech creates a <xref:System.Speech.Synthesis.Prompt> object and populates it with the contents of the method's parameter, and returns the <xref:System.Speech.Synthesis.Prompt> object. If you retain a copy of the returned <xref:System.Speech.Synthesis.Prompt>, you can pass it into <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsyncCancel%2A> to cancel speaking content specified in a <xref:System.String> or a <xref:System.Speech.Synthesis.PromptBuilder> object.  
   
  ]]></format>
         </remarks>

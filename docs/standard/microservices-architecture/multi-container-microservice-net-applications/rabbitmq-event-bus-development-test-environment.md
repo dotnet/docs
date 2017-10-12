@@ -7,6 +7,7 @@ ms.author: wiwagn
 ms.date: 05/26/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
+ms.topic: article
 ---
 # Implementing an event bus with RabbitMQ for the development or test environment
 

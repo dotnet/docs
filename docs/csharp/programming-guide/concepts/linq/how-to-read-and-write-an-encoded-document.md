@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: 84f64e71-39a6-42c6-ad68-f052bb158a03
 caps.latest.revision: 3
 author: "BillWagner"
@@ -90,5 +88,5 @@ Encoding of loaded document is:utf-16
 ```  
   
 ## See Also  
- <xref:System.Xml.Linq.XDeclaration.Encoding%2A?displayProperty=fullName>   
+ <xref:System.Xml.Linq.XDeclaration.Encoding%2A?displayProperty=nameWithType>   
  [Advanced LINQ to XML Programming (C#)](../../../../csharp/programming-guide/concepts/linq/advanced-linq-to-xml-programming.md)

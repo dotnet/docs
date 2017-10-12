@@ -9,10 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+- "csharp"
+- "vb"
+- "cpp"
 f1_keywords: 
   - "TextBox"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "TextBox control [Windows Forms], about TextBox controls"
   - "text boxes, adding"

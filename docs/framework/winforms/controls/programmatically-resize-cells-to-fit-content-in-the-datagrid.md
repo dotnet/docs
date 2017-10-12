@@ -9,8 +9,10 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
+dev_langs:
+- "csharp"
+- "vb"
+- "cpp"
 helpviewer_keywords: 
   - "data grids, resizing cells to fit content"
   - "cells, resizing to fit contents"
@@ -43,12 +45,12 @@ You can use the <xref:System.Windows.Forms.DataGridView> control methods to resi
   
 ## See Also  
  <xref:System.Windows.Forms.DataGridView>   
- <xref:System.Windows.Forms.DataGridView.AutoResizeColumn%2A?displayProperty=fullName>   
- <xref:System.Windows.Forms.DataGridView.AutoResizeColumns%2A?displayProperty=fullName>   
- <xref:System.Windows.Forms.DataGridView.AutoResizeColumnHeadersHeight%2A?displayProperty=fullName>   
- <xref:System.Windows.Forms.DataGridView.AutoResizeRow%2A?displayProperty=fullName>   
- <xref:System.Windows.Forms.DataGridView.AutoResizeRows%2A?displayProperty=fullName>   
- <xref:System.Windows.Forms.DataGridView.AutoResizeRowHeadersWidth%2A?displayProperty=fullName>   
+ <xref:System.Windows.Forms.DataGridView.AutoResizeColumn%2A?displayProperty=nameWithType>   
+ <xref:System.Windows.Forms.DataGridView.AutoResizeColumns%2A?displayProperty=nameWithType>   
+ <xref:System.Windows.Forms.DataGridView.AutoResizeColumnHeadersHeight%2A?displayProperty=nameWithType>   
+ <xref:System.Windows.Forms.DataGridView.AutoResizeRow%2A?displayProperty=nameWithType>   
+ <xref:System.Windows.Forms.DataGridView.AutoResizeRows%2A?displayProperty=nameWithType>   
+ <xref:System.Windows.Forms.DataGridView.AutoResizeRowHeadersWidth%2A?displayProperty=nameWithType>   
  <xref:System.Windows.Forms.DataGridViewAutoSizeRowMode>   
  <xref:System.Windows.Forms.DataGridViewAutoSizeRowsMode>   
  <xref:System.Windows.Forms.DataGridViewAutoSizeColumnMode>   

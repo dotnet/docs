@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ThreadIsBlockingForDebugger"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ThreadIsBlockingForDebugger method [.NET Framework hosting]"
   - "IDebuggerThreadControl::ThreadIsBlockingForDebugger method [.NET Framework hosting]"

@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-ado"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 ms.assetid: a15ae411-8dc2-4ca3-84d2-01c9d5f1972a
 caps.latest.revision: 3
 author: "JennieHubbard"
@@ -31,7 +34,7 @@ This topic describes [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq
   
 -   A <xref:System.Data.Linq.DataContext> mode for turning off deferred loading (<xref:System.Data.Linq.DataContext.ObjectTrackingEnabled%2A>). For more information, see <xref:System.Data.Linq.DataContext>.  
   
--   A code-generation switch to generate <xref:System.Runtime.Serialization.DataContractAttribute?displayProperty=fullName> and <xref:System.Runtime.Serialization.DataMemberAttribute?displayProperty=fullName> attributes on generated entities. This aspect, including the behavior of defer-loading classes under serialization, is the major subject of this topic.  
+-   A code-generation switch to generate <xref:System.Runtime.Serialization.DataContractAttribute?displayProperty=nameWithType> and <xref:System.Runtime.Serialization.DataMemberAttribute?displayProperty=nameWithType> attributes on generated entities. This aspect, including the behavior of defer-loading classes under serialization, is the major subject of this topic.  
   
 ### Definitions  
   

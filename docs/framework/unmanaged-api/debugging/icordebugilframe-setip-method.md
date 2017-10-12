@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugILFrame::SetIP"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SetIP method, ICorDebugILFrame interface [.NET Framework debugging]"
   - "ICorDebugILFrame::SetIP method [.NET Framework debugging]"

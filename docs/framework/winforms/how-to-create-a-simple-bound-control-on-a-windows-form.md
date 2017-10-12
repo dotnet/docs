@@ -9,8 +9,6 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "data binding, simple data binding"
   - "Windows Forms controls, data binding"

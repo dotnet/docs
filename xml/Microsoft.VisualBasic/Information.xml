@@ -225,7 +225,7 @@ testVbName = VbTypeName(sysBadName)
 ## Remarks  
  `IsDBNull` returns `True` if the data type of `Expression` evaluates to the <xref:System.DBNull> type; otherwise, `IsDBNull` returns `False`.  
   
- The <xref:System.DBNull?displayProperty=fullName> value indicates that the `Object` represents missing or nonexistent data. `DBNull` is not the same as `Nothing`, which indicates that a variable has not yet been initialized. `DBNull` is also not the same as a zero-length string (`""`), which is sometimes referred to as a null string.  
+ The <xref:System.DBNull?displayProperty=nameWithType> value indicates that the `Object` represents missing or nonexistent data. `DBNull` is not the same as `Nothing`, which indicates that a variable has not yet been initialized. `DBNull` is also not the same as a zero-length string (`""`), which is sometimes referred to as a null string.  
   
    
   
@@ -263,7 +263,7 @@ testVbName = VbTypeName(sysBadName)
 ## Remarks  
  `IsError` returns `True` if the expression represents an `Object` variable that derives from the <xref:System.Exception> class in the <xref:System> namespace.  
   
- An exception that derives from <xref:System.Exception?displayProperty=fullName> can be caught with the `Try...Catch...Finally` statements.  
+ An exception that derives from <xref:System.Exception?displayProperty=nameWithType> can be caught with the `Try...Catch...Finally` statements.  
   
    
   
@@ -640,7 +640,7 @@ Dim a(100, 5, 4) As Byte
   
  If `VarName` is an array, the returned string can be any one of the strings in the preceding table with empty parentheses appended. For example, if `VarName` points to an array of integers, `TypeName` returns "Integer()".  
   
- When `TypeName` returns the name of a reference type such as a class, it returns only the name itself, not the qualified name. For example, if `VarName` points to an object of class <xref:System.Drawing.Printing.PaperSource?displayProperty=fullName>, `TypeName` returns "PaperSource". Note that if the variable is declared to be of a certain class type but does not have an object assigned to it, `TypeName` returns "Nothing".  
+ When `TypeName` returns the name of a reference type such as a class, it returns only the name itself, not the qualified name. For example, if `VarName` points to an object of class <xref:System.Drawing.Printing.PaperSource?displayProperty=nameWithType>, `TypeName` returns "PaperSource". Note that if the variable is declared to be of a certain class type but does not have an object assigned to it, `TypeName` returns "Nothing".  
   
    
   
@@ -751,7 +751,7 @@ total = (UBound(A, 1) + 1) * (UBound(A, 2) + 1) * (UBound(A, 3) + 1)
 |Enumeration|Underlying data type (`SByte`, `Byte`, `Short`, `UShort`, `Integer`, `UInteger`, `Long`, or `ULong`)|  
 |Array|Bitwise OR of array element type and `VariantType.Array`|  
 |Array of arrays|Bitwise OR of `VariantType.Object` and `VariantType.Array`|  
-|Structure (<xref:System.ValueType?displayProperty=fullName>)|`VariantType.UserDefinedType`|  
+|Structure (<xref:System.ValueType?displayProperty=nameWithType>)|`VariantType.UserDefinedType`|  
 |<xref:System.Exception>|`VariantType.Error`|  
 |Unknown|`VariantType.Object`|  
   

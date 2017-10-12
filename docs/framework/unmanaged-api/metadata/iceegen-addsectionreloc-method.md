@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICeeGen::AddSectionReloc"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "AddSectionReloc method [.NET Framework metadata]"
   - "ICeeGen::AddSectionReloc method [.NET Framework metadata]"

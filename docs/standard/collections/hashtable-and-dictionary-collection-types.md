@@ -22,7 +22,7 @@ ms.author: "mairaw"
 manager: "wpickett"
 ---
 # Hashtable and Dictionary Collection Types
-The <xref:System.Collections.Hashtable?displayProperty=fullName> class, and the <xref:System.Collections.Generic.Dictionary%602?displayProperty=fullName> and <xref:System.Collections.Concurrent.ConcurrentDictionary%602?displayProperty=fullName> generic classes, implement the <xref:System.Collections.IDictionary?displayProperty=fullName> interface. The <xref:System.Collections.Generic.Dictionary%602> generic class also implements the <xref:System.Collections.Generic.IDictionary%602> generic interface. Therefore, each element in these collections is a key-and-value pair.  
+The <xref:System.Collections.Hashtable?displayProperty=nameWithType> class, and the <xref:System.Collections.Generic.Dictionary%602?displayProperty=nameWithType> and <xref:System.Collections.Concurrent.ConcurrentDictionary%602?displayProperty=nameWithType> generic classes, implement the <xref:System.Collections.IDictionary?displayProperty=nameWithType> interface. The <xref:System.Collections.Generic.Dictionary%602> generic class also implements the <xref:System.Collections.Generic.IDictionary%602> generic interface. Therefore, each element in these collections is a key-and-value pair.  
   
  A <xref:System.Collections.Hashtable> object consists of buckets that contain the elements of the collection. A bucket is a virtual subgroup of elements within the <xref:System.Collections.Hashtable>, which makes searching and retrieving easier and faster than in most collections. Each bucket is associated with a hash code, which is generated using a hash function and is based on the key of the element.  
   
@@ -43,6 +43,6 @@ The <xref:System.Collections.Hashtable?displayProperty=fullName> class, and the 
  <xref:System.Collections.IDictionary>   
  <xref:System.Collections.IHashCodeProvider>   
  <xref:System.Collections.Generic.Dictionary%602>   
- <xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>   
- <xref:System.Collections.Concurrent.ConcurrentDictionary%602?displayProperty=fullName>   
+ <xref:System.Collections.Generic.IDictionary%602?displayProperty=nameWithType>   
+ <xref:System.Collections.Concurrent.ConcurrentDictionary%602?displayProperty=nameWithType>   
  [Commonly Used Collection Types](../../../docs/standard/collections/commonly-used-collection-types.md)

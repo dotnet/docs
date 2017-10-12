@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRRuntimeInfo::BindAsLegacyV2Runtime"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRRuntimeInfo::BindAsLegacyV2Runtime method [.NET Framework hosting]"
   - "BindAsLegacyV2Runtime method [.NET Framework hosting]"

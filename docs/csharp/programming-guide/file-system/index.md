@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "file system [C#]"
   - "registry [C#]"
@@ -61,4 +59,4 @@ The following topics show how to use C# and the .NET Framework to perform variou
   
  [Files, Folders and Drives](../../../csharp/programming-guide/file-system/index.md)  
   
- <xref:System.IO?displayProperty=fullName>
+ <xref:System.IO?displayProperty=nameWithType>

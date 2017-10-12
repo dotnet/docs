@@ -47,10 +47,10 @@
 > [!NOTE]
 >  If the <xref:System.Windows.Forms.CheckBox.ThreeState%2A> property is set to `true`, the <xref:System.Windows.Forms.CheckBox.Checked%2A> property will return `true` for either a checked or indeterminate state.  
   
- The <xref:System.Windows.Forms.ButtonBase.FlatStyle%2A> property determines the style and appearance of the control. If the <xref:System.Windows.Forms.ButtonBase.FlatStyle%2A> property is set to <xref:System.Windows.Forms.FlatStyle?displayProperty=fullName>, the user's operating system determines the appearance of the control.  
+ The <xref:System.Windows.Forms.ButtonBase.FlatStyle%2A> property determines the style and appearance of the control. If the <xref:System.Windows.Forms.ButtonBase.FlatStyle%2A> property is set to <xref:System.Windows.Forms.FlatStyle?displayProperty=nameWithType>, the user's operating system determines the appearance of the control.  
   
 > [!NOTE]
->  When the <xref:System.Windows.Forms.ButtonBase.FlatStyle%2A> property is set to <xref:System.Windows.Forms.FlatStyle?displayProperty=fullName>, the <xref:System.Windows.Forms.CheckBox.CheckAlign%2A> property is ignored and the control is displayed using the <xref:System.Drawing.ContentAlignment?displayProperty=fullName> or <xref:System.Drawing.ContentAlignment?displayProperty=fullName> alignment. If the <xref:System.Windows.Forms.CheckBox.CheckAlign%2A> property is set to one of the right alignments, the control is displayed using the <xref:System.Drawing.ContentAlignment?displayProperty=fullName> alignment; otherwise, it is displayed using the <xref:System.Drawing.ContentAlignment?displayProperty=fullName> alignment.  
+>  When the <xref:System.Windows.Forms.ButtonBase.FlatStyle%2A> property is set to <xref:System.Windows.Forms.FlatStyle?displayProperty=nameWithType>, the <xref:System.Windows.Forms.CheckBox.CheckAlign%2A> property is ignored and the control is displayed using the <xref:System.Drawing.ContentAlignment?displayProperty=nameWithType> or <xref:System.Drawing.ContentAlignment?displayProperty=nameWithType> alignment. If the <xref:System.Windows.Forms.CheckBox.CheckAlign%2A> property is set to one of the right alignments, the control is displayed using the <xref:System.Drawing.ContentAlignment?displayProperty=nameWithType> alignment; otherwise, it is displayed using the <xref:System.Drawing.ContentAlignment?displayProperty=nameWithType> alignment.  
   
  The following describes an indeterminate state: You have a <xref:System.Windows.Forms.CheckBox> that determines if the selected text in a <xref:System.Windows.Forms.RichTextBox> is bold. When you select text you can click the <xref:System.Windows.Forms.CheckBox> to bold the selection. Likewise, when you select some text, the <xref:System.Windows.Forms.CheckBox> displays whether the selected text is bold. If your selected text contains text that is bold and normal, the <xref:System.Windows.Forms.CheckBox> will have an indeterminate state.  
   
@@ -164,7 +164,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.CheckBox.AppearanceChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.CheckBox.AppearanceChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.CheckBox> named `CheckBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.CheckBox.AppearanceChanged> event.  
   
@@ -245,7 +245,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example displays the values of three properties in a label. The <xref:System.Windows.Forms.CheckBox.ThreeState%2A> property alternates between `true` and `false` with alternating clicks of the control and the <xref:System.Windows.Forms.CheckBox.CheckAlign%2A> alternates between the `MiddleRight` and `MiddleLeft` values of <xref:System.Drawing.ContentAlignment>. This example shows how the property values change as the <xref:System.Windows.Forms.CheckBox.ThreeState%2A> property changes and the control is checked. This example requires that a <xref:System.Windows.Forms.CheckBox>, <xref:System.Windows.Forms.Label> and <xref:System.Windows.Forms.Button> have all been instantiated on a form and that the label is large enough to display three lines of text, as well as a reference to the <xref:System.Drawing?displayProperty=fullName> namespace. This code should be called in the <xref:System.Windows.Forms.Control.Click> event handler of the control.  
+ The following code example displays the values of three properties in a label. The <xref:System.Windows.Forms.CheckBox.ThreeState%2A> property alternates between `true` and `false` with alternating clicks of the control and the <xref:System.Windows.Forms.CheckBox.CheckAlign%2A> alternates between the `MiddleRight` and `MiddleLeft` values of <xref:System.Drawing.ContentAlignment>. This example shows how the property values change as the <xref:System.Windows.Forms.CheckBox.ThreeState%2A> property changes and the control is checked. This example requires that a <xref:System.Windows.Forms.CheckBox>, <xref:System.Windows.Forms.Label> and <xref:System.Windows.Forms.Button> have all been instantiated on a form and that the label is large enough to display three lines of text, as well as a reference to the <xref:System.Drawing?displayProperty=nameWithType> namespace. This code should be called in the <xref:System.Windows.Forms.Control.Click> event handler of the control.  
   
  [!code-cpp[Classic CheckBox.CheckAlign Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic CheckBox.CheckAlign Example/CPP/source.cpp#1)]
  [!code-csharp[Classic CheckBox.CheckAlign Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic CheckBox.CheckAlign Example/CS/source.cs#1)]
@@ -300,7 +300,7 @@
    
   
 ## Examples  
- The following code example displays the values of three properties in a label. The <xref:System.Windows.Forms.CheckBox.ThreeState%2A> property alternates between `true` and `false` with alternating clicks of the control and the <xref:System.Windows.Forms.CheckBox.CheckAlign%2A> alternates between a <xref:System.Drawing.ContentAlignment> value of `MiddleRight` and `MiddleLeft`. This example shows how the property values change as the <xref:System.Windows.Forms.CheckBox.ThreeState%2A> property changes and the control is checked. This example requires that a <xref:System.Windows.Forms.CheckBox>, <xref:System.Windows.Forms.Label> and <xref:System.Windows.Forms.Button> have all been instantiated on a form and that the label is large enough to display three lines of text, as well as a reference to the <xref:System.Drawing?displayProperty=fullName> namespace. This code should be called in the <xref:System.Windows.Forms.Control.Click> event handler of the control.  
+ The following code example displays the values of three properties in a label. The <xref:System.Windows.Forms.CheckBox.ThreeState%2A> property alternates between `true` and `false` with alternating clicks of the control and the <xref:System.Windows.Forms.CheckBox.CheckAlign%2A> alternates between a <xref:System.Drawing.ContentAlignment> value of `MiddleRight` and `MiddleLeft`. This example shows how the property values change as the <xref:System.Windows.Forms.CheckBox.ThreeState%2A> property changes and the control is checked. This example requires that a <xref:System.Windows.Forms.CheckBox>, <xref:System.Windows.Forms.Label> and <xref:System.Windows.Forms.Button> have all been instantiated on a form and that the label is large enough to display three lines of text, as well as a reference to the <xref:System.Drawing?displayProperty=nameWithType> namespace. This code should be called in the <xref:System.Windows.Forms.Control.Click> event handler of the control.  
   
  [!code-cpp[Classic CheckBox.CheckAlign Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic CheckBox.CheckAlign Example/CPP/source.cpp#1)]
  [!code-csharp[Classic CheckBox.CheckAlign Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic CheckBox.CheckAlign Example/CS/source.cs#1)]
@@ -333,7 +333,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.CheckBox.CheckedChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.CheckBox.CheckedChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.CheckBox> named `CheckBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.CheckBox.CheckedChanged> event.  
   
@@ -376,7 +376,7 @@
 ## Remarks  
  If the <xref:System.Windows.Forms.CheckBox.ThreeState%2A> property is set to `false`, the <xref:System.Windows.Forms.CheckBox.CheckState%2A> property value can only be set to `CheckState.Indeterminate` in code and not by user interaction.  
   
- The following table describes the <xref:System.Windows.Forms.Appearance?displayProperty=fullName> of the <xref:System.Windows.Forms.CheckBox> control in its different states for the `Normal` and `Button` style control <xref:System.Windows.Forms.CheckBox.Appearance%2A?displayProperty=fullName>.  
+ The following table describes the <xref:System.Windows.Forms.Appearance?displayProperty=nameWithType> of the <xref:System.Windows.Forms.CheckBox> control in its different states for the `Normal` and `Button` style control <xref:System.Windows.Forms.CheckBox.Appearance%2A?displayProperty=nameWithType>.  
   
 |CheckState|Appearance.Normal|Appearance.Button|  
 |----------------|-----------------------|-----------------------|  
@@ -387,7 +387,7 @@
    
   
 ## Examples  
- The following code example displays the values of three properties in a label. The <xref:System.Windows.Forms.CheckBox.ThreeState%2A> property alternates between `true` and `false` with alternating clicks of the control and the <xref:System.Windows.Forms.CheckBox.CheckAlign%2A> alternates between the `MiddleRight` and `MiddleLeft` values of <xref:System.Drawing.ContentAlignment?displayProperty=fullName>. This example shows how the property values change as the <xref:System.Windows.Forms.CheckBox.ThreeState%2A> property changes and the control is checked. This example requires that a <xref:System.Windows.Forms.CheckBox>, <xref:System.Windows.Forms.Label> and <xref:System.Windows.Forms.Button> have all been instantiated on a form and that the label is large enough to display three lines of text, as well as a reference to the <xref:System.Drawing?displayProperty=fullName> namespace. This code should be called in the <xref:System.Windows.Forms.Control.Click> event handler of the control.  
+ The following code example displays the values of three properties in a label. The <xref:System.Windows.Forms.CheckBox.ThreeState%2A> property alternates between `true` and `false` with alternating clicks of the control and the <xref:System.Windows.Forms.CheckBox.CheckAlign%2A> alternates between the `MiddleRight` and `MiddleLeft` values of <xref:System.Drawing.ContentAlignment?displayProperty=nameWithType>. This example shows how the property values change as the <xref:System.Windows.Forms.CheckBox.ThreeState%2A> property changes and the control is checked. This example requires that a <xref:System.Windows.Forms.CheckBox>, <xref:System.Windows.Forms.Label> and <xref:System.Windows.Forms.Button> have all been instantiated on a form and that the label is large enough to display three lines of text, as well as a reference to the <xref:System.Drawing?displayProperty=nameWithType> namespace. This code should be called in the <xref:System.Windows.Forms.Control.Click> event handler of the control.  
   
  [!code-cpp[Classic CheckBox.CheckAlign Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic CheckBox.CheckAlign Example/CPP/source.cpp#1)]
  [!code-csharp[Classic CheckBox.CheckAlign Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic CheckBox.CheckAlign Example/CS/source.cs#1)]
@@ -421,7 +421,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.CheckBox.CheckStateChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.CheckBox.CheckStateChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.CheckBox> named `CheckBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.CheckBox.CheckStateChanged> event.  
   
@@ -483,7 +483,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example extends the <xref:System.Windows.Forms.Control.CreateParams%2A> property of a <xref:System.Windows.Forms.Button> derived class. The <xref:System.Windows.Forms.CreateParams.Style%2A?displayProperty=fullName> property is changed, which causes the button to display an <xref:System.Drawing.Icon> rather than an <xref:System.Drawing.Image>. This example requires that you have a class that inherits from the <xref:System.Windows.Forms.Button> class.  
+ The following code example extends the <xref:System.Windows.Forms.Control.CreateParams%2A> property of a <xref:System.Windows.Forms.Button> derived class. The <xref:System.Windows.Forms.CreateParams.Style%2A?displayProperty=nameWithType> property is changed, which causes the button to display an <xref:System.Drawing.Icon> rather than an <xref:System.Drawing.Image>. This example requires that you have a class that inherits from the <xref:System.Windows.Forms.Button> class.  
   
  [!code-cpp[CreateParams#3](~/samples/snippets/cpp/VS_Snippets_Winforms/CreateParams/CPP/createparams.cpp#3)]
  [!code-csharp[CreateParams#3](~/samples/snippets/csharp/VS_Snippets_Winforms/CreateParams/CS/createparams.cs#3)]
@@ -572,7 +572,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, the <xref:System.Windows.Forms.ControlStyles?displayProperty=fullName> and <xref:System.Windows.Forms.ControlStyles?displayProperty=fullName> style bits are set to `false` for the <xref:System.Windows.Forms.CheckBox> control, and the <xref:System.Windows.Forms.CheckBox.MouseDoubleClick> event is not raised.  
+ By default, the <xref:System.Windows.Forms.ControlStyles?displayProperty=nameWithType> and <xref:System.Windows.Forms.ControlStyles?displayProperty=nameWithType> style bits are set to `false` for the <xref:System.Windows.Forms.CheckBox> control, and the <xref:System.Windows.Forms.CheckBox.MouseDoubleClick> event is not raised.  
   
  This event is not relevant to this class.  
   
@@ -877,12 +877,12 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Windows.Forms.CheckBox.ThreeState%2A> property is set to `false`, the <xref:System.Windows.Forms.CheckBox.CheckState%2A> property value can only be set to the `Indeterminate` value of <xref:System.Windows.Forms.CheckState?displayProperty=fullName> in code and not by user interaction.  
+ If the <xref:System.Windows.Forms.CheckBox.ThreeState%2A> property is set to `false`, the <xref:System.Windows.Forms.CheckBox.CheckState%2A> property value can only be set to the `Indeterminate` value of <xref:System.Windows.Forms.CheckState?displayProperty=nameWithType> in code and not by user interaction.  
   
    
   
 ## Examples  
- The following code example displays the values of three properties in a label. The <xref:System.Windows.Forms.CheckBox.ThreeState%2A> property alternates between `true` and `false` with alternating clicks of the control and the <xref:System.Windows.Forms.CheckBox.CheckAlign%2A> alternates between the `MiddleRight` and `MiddleLeft` values of <xref:System.Drawing.ContentAlignment?displayProperty=fullName>. This example shows how the property values change as the <xref:System.Windows.Forms.CheckBox.ThreeState%2A> property changes and the control is checked. This code requires that a <xref:System.Windows.Forms.CheckBox>, <xref:System.Windows.Forms.Label> and <xref:System.Windows.Forms.Button> have all been instantiated on a form and that the label is large enough to display three lines of text, as well as a reference to the <xref:System.Drawing?displayProperty=fullName> namespace. This code should be called in the <xref:System.Windows.Forms.Control.Click> event handler of the control.  
+ The following code example displays the values of three properties in a label. The <xref:System.Windows.Forms.CheckBox.ThreeState%2A> property alternates between `true` and `false` with alternating clicks of the control and the <xref:System.Windows.Forms.CheckBox.CheckAlign%2A> alternates between the `MiddleRight` and `MiddleLeft` values of <xref:System.Drawing.ContentAlignment?displayProperty=nameWithType>. This example shows how the property values change as the <xref:System.Windows.Forms.CheckBox.ThreeState%2A> property changes and the control is checked. This code requires that a <xref:System.Windows.Forms.CheckBox>, <xref:System.Windows.Forms.Label> and <xref:System.Windows.Forms.Button> have all been instantiated on a form and that the label is large enough to display three lines of text, as well as a reference to the <xref:System.Drawing?displayProperty=nameWithType> namespace. This code should be called in the <xref:System.Windows.Forms.Control.Click> event handler of the control.  
   
  [!code-cpp[Classic CheckBox.CheckAlign Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic CheckBox.CheckAlign Example/CPP/source.cpp#1)]
  [!code-csharp[Classic CheckBox.CheckAlign Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic CheckBox.CheckAlign Example/CS/source.cs#1)]

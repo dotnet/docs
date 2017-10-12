@@ -33,7 +33,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Instances of the <xref:System.Threading.Mutex>, <xref:System.Threading.Semaphore>, and  <xref:System.Threading.EventWaitHandle> classes can represent named system synchronization objects. When you use the <xref:System.Threading.Mutex.OpenExisting%2A?displayProperty=fullName> method, the <xref:System.Threading.Semaphore.OpenExisting%2A?displayProperty=fullName> method, or the  <xref:System.Threading.EventWaitHandle.OpenExisting%2A?displayProperty=fullName> method to open a named system object that does not exist, a <xref:System.Threading.WaitHandleCannotBeOpenedException> exception is thrown.  
+ Instances of the <xref:System.Threading.Mutex>, <xref:System.Threading.Semaphore>, and  <xref:System.Threading.EventWaitHandle> classes can represent named system synchronization objects. When you use the <xref:System.Threading.Mutex.OpenExisting%2A?displayProperty=nameWithType> method, the <xref:System.Threading.Semaphore.OpenExisting%2A?displayProperty=nameWithType> method, or the  <xref:System.Threading.EventWaitHandle.OpenExisting%2A?displayProperty=nameWithType> method to open a named system object that does not exist, a <xref:System.Threading.WaitHandleCannotBeOpenedException> exception is thrown.  
   
  ]]></format>
     </remarks>

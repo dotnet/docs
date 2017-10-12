@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEditAndContinueSnapshot::SetPEBytes"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SetPEBytes method [.NET Framework debugging]"
   - "ICorDebugEditAndContinueSnapshot::SetPEBytes method [.NET Framework debugging]"

@@ -127,7 +127,7 @@ In [!INCLUDE[net_v35_long](../../../includes/net-v35-long-md.md)] and [!INCLUDE[
   
  `XamlParseException`  
   
- The WPF implementation is found in the <xref:System.Windows.Markup> namespace, and PresentationFramework assembly. The System.Xaml implementation is found in the <xref:System.Xaml> namespace. If you are using WPF types or are deriving from WPF types, you should typically use the WPF implementations of <xref:System.Windows.Markup.XamlReader> and <xref:System.Windows.Markup.XamlWriter> instead of the System.Xaml implementations. For more information, see Remarks in <xref:System.Windows.Markup.XamlReader?displayProperty=fullName> and <xref:System.Windows.Markup.XamlWriter?displayProperty=fullName>.  
+ The WPF implementation is found in the <xref:System.Windows.Markup> namespace, and PresentationFramework assembly. The System.Xaml implementation is found in the <xref:System.Xaml> namespace. If you are using WPF types or are deriving from WPF types, you should typically use the WPF implementations of <xref:System.Windows.Markup.XamlReader> and <xref:System.Windows.Markup.XamlWriter> instead of the System.Xaml implementations. For more information, see Remarks in <xref:System.Windows.Markup.XamlReader?displayProperty=nameWithType> and <xref:System.Windows.Markup.XamlWriter?displayProperty=nameWithType>.  
   
  If you are including references to both WPF assemblies and System.Xaml, and you also are using `include` statements for both the <xref:System.Windows.Markup> and <xref:System.Xaml> namespaces, you may need to fully qualify the calls to these APIs in order to resolve the types without ambiguity.  
   

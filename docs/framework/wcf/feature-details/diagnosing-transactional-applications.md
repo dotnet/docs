@@ -19,7 +19,7 @@ manager: "erikre"
 This topic describes how to use the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] management and diagnostics feature to troubleshoot a transactional application.  
   
 ## Performance Counters  
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] provides a standard set of performance counters for you to measure your transactional application's performance. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Performance Counters](../../../../docs/framework/wcf/diagnostics/performance-counters/index.md).  
+ [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] provides a standard set of performance counters for you to measure your transactional application's performance. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Performance Counters](../../../../docs/framework/wcf/diagnostics/performance-counters/index.md).  
   
  Performance counters are scoped to three different levels: service, endpoint, and operation, as described in the following tables.  
   
@@ -95,7 +95,7 @@ This topic describes how to use the [!INCLUDE[indigo1](../../../../includes/indi
   
 -   Standard [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] tracing  
   
-     This type of tracing is the same as tracing any [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Configuring Tracing](../../../../docs/framework/wcf/diagnostics/tracing/configuring-tracing.md).  
+     This type of tracing is the same as tracing any [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Configuring Tracing](../../../../docs/framework/wcf/diagnostics/tracing/configuring-tracing.md).  
   
 -   WS-AtomicTransaction tracing  
   

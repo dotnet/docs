@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbc30955"
   - "bc30955"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC30955"
 ms.assetid: 966b61eb-441e-48b0-bedf-ca95384ecb8b

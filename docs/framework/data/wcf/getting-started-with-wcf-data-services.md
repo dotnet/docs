@@ -9,11 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "HTML"
-  - "VB"
-  - "CSharp"
-  - "C++"
 helpviewer_keywords: 
   - "WCF Data Services, getting started"
 ms.assetid: c832fa5b-cf86-4690-be5a-a226c0e49530

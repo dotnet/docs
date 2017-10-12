@@ -26,7 +26,7 @@
  For example, a <xref:System.Speech.Recognition.Choices> object could represent the component *colorChoice* in the phrase, "Change the color to *colorChoice*", where acceptable values for *colorChoice* are "red", or "green", or "blue".  
   
 > [!NOTE]
->  To use a <xref:System.Speech.Recognition.Choices> object as an optional component in a phrase, create the <xref:System.Speech.Recognition.Choices> object and add it to a <xref:System.Speech.Recognition.GrammarBuilder.%23ctor%28System.Speech.Recognition.GrammarBuilder%2CSystem.Int32%2CSystem.Int32%29?displayProperty=fullName> object with `minRepeat` and `maxRepeat` set to 0 and 1, respectively. Phrases containing optional components can be recognized whether or not the optional component is spoken.  
+>  To use a <xref:System.Speech.Recognition.Choices> object as an optional component in a phrase, create the <xref:System.Speech.Recognition.Choices> object and add it to a <xref:System.Speech.Recognition.GrammarBuilder.%23ctor%28System.Speech.Recognition.GrammarBuilder%2CSystem.Int32%2CSystem.Int32%29?displayProperty=nameWithType> object with `minRepeat` and `maxRepeat` set to 0 and 1, respectively. Phrases containing optional components can be recognized whether or not the optional component is spoken.  
   
  The <xref:System.Speech.Recognition.Choices> class serves the same function as the `one-of` XML element defined by the [Speech Recognition Grammar Specification (SRGS) Version 1.0](http://www.w3.org/TR/speech-grammar/) and is similar to the <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> class in the <xref:System.Speech.Recognition.SrgsGrammar> namespace.  
   
@@ -165,7 +165,7 @@ public Grammar CreatePhonePhrase()
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public Choices (System.Speech.Recognition.GrammarBuilder[] alternateChoices);" />
+      <MemberSignature Language="C#" Value="public Choices (params System.Speech.Recognition.GrammarBuilder[] alternateChoices);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Speech.Recognition.GrammarBuilder[] alternateChoices) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.Choices.#ctor(System.Speech.Recognition.GrammarBuilder[])" />
       <MemberType>Constructor</MemberType>
@@ -237,7 +237,7 @@ public Grammar CreatePhonePhrase()
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public Choices (string[] phrases);" />
+      <MemberSignature Language="C#" Value="public Choices (params string[] phrases);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] phrases) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.Choices.#ctor(System.String[])" />
       <MemberType>Constructor</MemberType>
@@ -307,7 +307,7 @@ public Grammar CreatePhonePhrase()
       </Docs>
     </Member>
     <Member MemberName="Add">
-      <MemberSignature Language="C#" Value="public void Add (System.Speech.Recognition.GrammarBuilder[] alternateChoices);" />
+      <MemberSignature Language="C#" Value="public void Add (params System.Speech.Recognition.GrammarBuilder[] alternateChoices);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Speech.Recognition.GrammarBuilder[] alternateChoices) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.Choices.Add(System.Speech.Recognition.GrammarBuilder[])" />
       <MemberType>Method</MemberType>
@@ -384,7 +384,7 @@ public Grammar CreatePhonePhrase()
       </Docs>
     </Member>
     <Member MemberName="Add">
-      <MemberSignature Language="C#" Value="public void Add (string[] phrases);" />
+      <MemberSignature Language="C#" Value="public void Add (params string[] phrases);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(string[] phrases) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.Choices.Add(System.String[])" />
       <MemberType>Method</MemberType>

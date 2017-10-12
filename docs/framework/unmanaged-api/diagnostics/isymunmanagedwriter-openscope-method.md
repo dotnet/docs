@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedWriter::OpenScope"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "OpenScope method, ISymUnmanagedWriter interface [.NET Framework debugging]"
   - "ISymUnmanagedWriter::OpenScope method [.NET Framework debugging]"

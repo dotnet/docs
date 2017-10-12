@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedDocument::GetDocumentType"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedDocument::GetDocumentType method [.NET Framework debugging]"
   - "GetDocumentType method [.NET Framework debugging]"

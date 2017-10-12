@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "My.MyWpfExtension.Windows"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "My object"
   - "My namespace"

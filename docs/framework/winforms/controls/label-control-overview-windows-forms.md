@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "Label"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "images [Windows Forms], displaying in labels"
   - "labels"

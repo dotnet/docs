@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "remarks"
   - "<remarks>"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "remarks C# XML tag"
   - "<remarks> C# XML tag"

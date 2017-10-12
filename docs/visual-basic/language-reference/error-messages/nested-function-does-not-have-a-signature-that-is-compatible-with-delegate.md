@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbc36532"
   - "bc36532"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC36532"
 ms.assetid: 493f292c-d81e-40ef-8b47-61f020571829

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugNativeFrame::GetLocalMemoryRegisterValue"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugNativeFrame::GetLocalMemoryRegisterValue method [.NET Framework debugging]"
   - "GetLocalMemoryRegisterValue method"

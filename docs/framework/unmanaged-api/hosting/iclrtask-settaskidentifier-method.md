@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRTask::SetTaskIdentifier"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SetTaskIdentifier method [.NET Framework hosting]"
   - "ICLRTask::SetTaskIdentifier method [.NET Framework hosting]"

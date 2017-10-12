@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo::GetModuleMetaData"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetModuleMetaData method [.NET Framework profiling]"
   - "ICorProfilerInfo::GetModuleMetaData method [.NET Framework profiling]"

@@ -42,7 +42,7 @@
     </Member>
     <Member MemberName="ProcessRequest">
       <MemberSignature Language="C#" Value="public int ProcessRequest (IntPtr ecb, int useProcessModel);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 ProcessRequest(native int ecb, int32 useProcessModel) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 ProcessRequest([in]native int ecb, [in]int32 useProcessModel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IISAPIRuntime.ProcessRequest(System.IntPtr,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

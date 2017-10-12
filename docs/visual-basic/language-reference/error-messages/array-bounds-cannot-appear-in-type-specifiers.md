@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbc30638"
   - "bc30638"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC30638"
 ms.assetid: 93b654f4-70fa-4a48-baed-ffae42075550

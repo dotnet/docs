@@ -99,7 +99,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- After initial type-checking, this implementation forwards to the type-safe method <xref:System.Windows.Markup.XmlnsDictionary.Add%2A?displayProperty=fullName>.  
+ After initial type-checking, this implementation forwards to the type-safe method <xref:System.Windows.Markup.XmlnsDictionary.Add%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -662,7 +662,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation forwards to the type-safe method <xref:System.Windows.Markup.XmlnsDictionary.Remove%28System.String%29?displayProperty=fullName>.  
+ This implementation forwards to the type-safe method <xref:System.Windows.Markup.XmlnsDictionary.Remove%28System.String%29?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

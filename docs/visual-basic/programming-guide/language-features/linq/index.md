@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "what's new [Visual Basic]"
 ms.assetid: ddba5545-ff6e-46c3-8967-5c4280db5aca

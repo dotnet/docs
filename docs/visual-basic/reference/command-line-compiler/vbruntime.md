@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbruntime"
   - "/vbruntime"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "vbruntime compiler option [Visual Basic]"
   - "-vbruntime compiler option [Visual Basic]"

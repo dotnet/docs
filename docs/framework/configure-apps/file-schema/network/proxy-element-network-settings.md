@@ -12,11 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/defaultProxy/proxy"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#proxy"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "<proxy> element"
   - "proxy element"
@@ -102,5 +97,5 @@ proxyaddress="uriString"
 ```  
   
 ## See Also  
- <xref:System.Net.WebProxy?displayProperty=fullName>   
+ <xref:System.Net.WebProxy?displayProperty=nameWithType>   
  [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Clipboard"
   - "My.Computer.Clipboard object"
@@ -43,7 +41,7 @@ Provides methods for manipulating the Clipboard.
  For more information, see [Storing Data to and Reading from the Clipboard](../../../visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md).  
   
 > [!NOTE]
->  You can also use methods of the <xref:System.Windows.Forms.Clipboard?displayProperty=fullName> class to manipulate the Clipboard.  
+>  You can also use methods of the <xref:System.Windows.Forms.Clipboard?displayProperty=nameWithType> class to manipulate the Clipboard.  
   
 ## Requirements  
  **Namespace:** <xref:Microsoft.VisualBasic.MyServices>  

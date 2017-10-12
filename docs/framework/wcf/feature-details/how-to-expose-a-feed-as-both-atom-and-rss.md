@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 ms.assetid: fe374932-67f5-487d-9325-f868812b92e4
 caps.latest.revision: 23
 author: "Erikre"
@@ -20,7 +23,7 @@ manager: "erikre"
   
 ### To create a basic syndication service  
   
-1.  Define a service contract using an interface marked with the <xref:System.ServiceModel.Web.WebGetAttribute> attribute. Each operation that is exposed as a syndication feed returns a <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter> object. Note the parameters for the <xref:System.ServiceModel.Web.WebGetAttribute>. `UriTemplate` specifies the URL used to invoke this service operation. The string for this parameter contains literals and a variable in braces ({*format*}). This variable corresponds to the service operation's `format` parameter. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)]<xref:System.UriTemplate>. `BodyStyle` affects how the messages that this service operation sends and receives are written. <xref:System.ServiceModel.Web.WebMessageBodyStyle.Bare> specifies that the data sent to and from this service operation are not wrapped by infrastructure-defined XML elements. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)]<xref:System.ServiceModel.Web.WebMessageBodyStyle>.  
+1.  Define a service contract using an interface marked with the <xref:System.ServiceModel.Web.WebGetAttribute> attribute. Each operation that is exposed as a syndication feed returns a <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter> object. Note the parameters for the <xref:System.ServiceModel.Web.WebGetAttribute>. `UriTemplate` specifies the URL used to invoke this service operation. The string for this parameter contains literals and a variable in braces ({*format*}). This variable corresponds to the service operation's `format` parameter. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] <xref:System.UriTemplate>. `BodyStyle` affects how the messages that this service operation sends and receives are written. <xref:System.ServiceModel.Web.WebMessageBodyStyle.Bare> specifies that the data sent to and from this service operation are not wrapped by infrastructure-defined XML elements. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] <xref:System.ServiceModel.Web.WebMessageBodyStyle>.  
   
      [!code-csharp[htAtomRss#0](../../../../samples/snippets/csharp/VS_Snippets_CFX/htatomrss/cs/program.cs#0)]
      [!code-vb[htAtomRss#0](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/htatomrss/vb/program.vb#0)]  

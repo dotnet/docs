@@ -9,8 +9,6 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "data grids, examples"
   - "examples [Windows Forms], DataGridView control"

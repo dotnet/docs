@@ -7,9 +7,8 @@ manager: wpickett
 ms.author: wiwagn
 ms.date: 12/1/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
-ms.devlang: dotnet
+ms.prod: .net
+ms.technology: devlang-csharp
 ms.assetid: d75a588e-9b6f-4f37-b195-f99ec8503855
 ---
 # Perform a subquery on a grouping operation

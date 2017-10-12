@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "AddPointer"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ITypeNameBuilder::AddPointer method [.NET Framework hosting]"
   - "AddPointer method [.NET Framework hosting]"

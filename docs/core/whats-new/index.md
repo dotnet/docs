@@ -7,7 +7,6 @@ ms.author: ronpet
 ms.date: 08/13/2017
 ms.topic: article
 ms.prod: .net-core
-ms.devlang: dotnet
 ---
 # What's new in .NET Core
 

@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: 3791b5e0-c502-469b-bb75-a7bf6fdd0a94
 caps.latest.revision: 3
 author: "BillWagner"
@@ -63,7 +61,7 @@ xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml">
   
  The easiest way to see the contents of a WordprocessingML document in XML form is to create one using Microsoft Word, save it, and then run the following program that prints the XML to the console.  
   
- This example uses classes found in the WindowsBase assembly. It uses types in the <xref:System.IO.Packaging?displayProperty=fullName> namespace.  
+ This example uses classes found in the WindowsBase assembly. It uses types in the <xref:System.IO.Packaging?displayProperty=nameWithType> namespace.  
   
 ```csharp  
 const string documentRelationshipType =  

@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "documents, flow documents"
   - "content schema"
@@ -158,7 +161,7 @@ Flow documents are designed to optimize viewing and readability. Rather than bei
   
  [!code-xaml[FlowOvwSnippets_snip#RunExample1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FlowOvwSnippets_snip/CS/RunSnippetsExample.xaml#runexample1)]  
   
- **Note:**  Starting in the                          [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)], the                          <xref:System.Windows.Documents.Run.Text%2A> property of the                          <xref:System.Windows.Documents.Run> object is a dependency property. You can bind the                          <xref:System.Windows.Documents.Run.Text%2A> property to a data source, such as a                          <xref:System.Windows.Controls.TextBlock>. The                          <xref:System.Windows.Documents.Run.Text%2A> property fully supports one-way binding. The                          <xref:System.Windows.Documents.Run.Text%2A> property also supports two-way binding, except for                          <xref:System.Windows.Controls.RichTextBox>. For an example, see                          <xref:System.Windows.Documents.Run.Text%2A?displayProperty=fullName>.  
+ **Note:**  Starting in the                          [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)], the                          <xref:System.Windows.Documents.Run.Text%2A> property of the                          <xref:System.Windows.Documents.Run> object is a dependency property. You can bind the                          <xref:System.Windows.Documents.Run.Text%2A> property to a data source, such as a                          <xref:System.Windows.Controls.TextBlock>. The                          <xref:System.Windows.Documents.Run.Text%2A> property fully supports one-way binding. The                          <xref:System.Windows.Documents.Run.Text%2A> property also supports two-way binding, except for                          <xref:System.Windows.Controls.RichTextBox>. For an example, see                          <xref:System.Windows.Documents.Run.Text%2A?displayProperty=nameWithType>.  
   
  **Span**  
   

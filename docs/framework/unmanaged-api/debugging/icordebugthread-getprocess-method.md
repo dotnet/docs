@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugThread::GetProcess"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugThread::GetProcess method [.NET Framework debugging]"
   - "GetProcess method, ICorDebugThread interface [.NET Framework debugging]"

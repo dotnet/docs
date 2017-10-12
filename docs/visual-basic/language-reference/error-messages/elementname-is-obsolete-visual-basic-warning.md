@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbc40008"
   - "bc40008"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC40008"
 ms.assetid: 729e3eb5-76ac-4c55-9fdd-78350e0de55e

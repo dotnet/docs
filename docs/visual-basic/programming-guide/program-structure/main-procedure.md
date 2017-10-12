@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.Main"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Main procedure"
   - "Main method [Visual Basic]"

@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "queries [LINQ in Visual Basic], writing"
   - "LINQ [Visual Basic], walkthroughs"
@@ -54,7 +52,7 @@ This walkthrough demonstrates how you can use Visual Basic language features to 
   
 4.  In the list of project types, click **Console Application**. In the **Name** box, type a name for the project, and then click **OK**.  
   
-     A project is created. By default, it contains a reference to System.Core.dll. Also, the **Imported namespaces** list on the [References Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/references-page-project-designer-visual-basic) includes the <xref:System.Linq?displayProperty=fullName> namespace.  
+     A project is created. By default, it contains a reference to System.Core.dll. Also, the **Imported namespaces** list on the [References Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/references-page-project-designer-visual-basic) includes the <xref:System.Linq?displayProperty=nameWithType> namespace.  
   
 5.  On the [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic), ensure that **Option infer** is set to **On**.  
   

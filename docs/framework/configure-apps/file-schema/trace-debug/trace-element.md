@@ -12,11 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/trace"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#trace"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "<trace> element"
   - "listeners"
@@ -82,7 +77,7 @@ Contains listeners that collect, store, and route tracing messages.
 |`system.diagnostics`|Specifies trace listeners that collect, store, and route messages and the level where a trace switch is set.|  
   
 ## Example  
- The following example shows how to use the `<trace>` element to add the listener `MyListener` to the `Listeners` collection. `MyListener` creates a file that is named `MyListener.log` and writes the output to the file. The `useGlobalLock` attribute is set to `false`, which causes the global lock not to be used if the trace listener is thread safe. The `autoflush` attribute is set to `true`, which causes the trace listener to write to the file regardless of whether the <xref:System.Diagnostics.Trace.Flush%2A?displayProperty=fullName> method is called. The `indentsize` attribute is set to 0 (zero), which causes the listener to indent zero spaces when the <xref:System.Diagnostics.Trace.Indent%2A?displayProperty=fullName> method is called.  
+ The following example shows how to use the `<trace>` element to add the listener `MyListener` to the `Listeners` collection. `MyListener` creates a file that is named `MyListener.log` and writes the output to the file. The `useGlobalLock` attribute is set to `false`, which causes the global lock not to be used if the trace listener is thread safe. The `autoflush` attribute is set to `true`, which causes the trace listener to write to the file regardless of whether the <xref:System.Diagnostics.Trace.Flush%2A?displayProperty=nameWithType> method is called. The `indentsize` attribute is set to 0 (zero), which causes the listener to indent zero spaces when the <xref:System.Diagnostics.Trace.Indent%2A?displayProperty=nameWithType> method is called.  
   
 ```xml  
 <configuration>  

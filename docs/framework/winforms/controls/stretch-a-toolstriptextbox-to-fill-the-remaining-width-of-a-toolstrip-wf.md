@@ -9,8 +9,9 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "text boxes, stretching in ToolStrip control [Windows Forms]"
   - "ToolStrip control [Windows Forms], stretching a text box"
@@ -36,8 +37,8 @@ When you set the <xref:System.Windows.Forms.ToolStrip.Stretch%2A> property of a 
   
 ## See Also  
  <xref:System.Windows.Forms.ToolStrip>   
- <xref:System.Windows.Forms.ToolStrip.Stretch%2A?displayProperty=fullName>   
+ <xref:System.Windows.Forms.ToolStrip.Stretch%2A?displayProperty=nameWithType>   
  <xref:System.Windows.Forms.ToolStripTextBox>   
- <xref:System.Windows.Forms.ToolStripTextBox.GetPreferredSize%2A?displayProperty=fullName>   
+ <xref:System.Windows.Forms.ToolStripTextBox.GetPreferredSize%2A?displayProperty=nameWithType>   
  [ToolStrip Control Architecture](../../../../docs/framework/winforms/controls/toolstrip-control-architecture.md)   
  [How to: Use the Spring Property Interactively in a StatusStrip](../../../../docs/framework/winforms/controls/how-to-use-the-spring-property-interactively-in-a-statusstrip.md)

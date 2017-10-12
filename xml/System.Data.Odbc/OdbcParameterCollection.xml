@@ -193,7 +193,7 @@ INSERT INTO MyTable VALUES (@p1, @p2, @p3);
 parameters.Add("@pname", Convert.ToInt32(0));  
 ```  
   
- If you do not perform this conversion, the compiler will assume you are attempting to call the <xref:System.Data.Odbc.OdbcParameterCollection.Add%2A?displayProperty=fullName> overload.  
+ If you do not perform this conversion, the compiler will assume you are attempting to call the <xref:System.Data.Odbc.OdbcParameterCollection.Add%2A?displayProperty=nameWithType> overload.  
   
  ]]></format>
         </remarks>

@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "creating an add-in that returns a UI [WPF]"
   - "implementing add-in pipeline segments [WPF]"

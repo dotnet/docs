@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugAppDomain::GetModuleFromMetaDataInterface"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugAppDomain::GetModuleFromMetaDatainterface method [.NET Framework debugging]"
   - "GetModuleFromMetaDatainterface method [.NET Framework debugging]"

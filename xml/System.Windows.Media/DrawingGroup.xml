@@ -360,7 +360,7 @@
   
  When this method copies dependency properties, it copies resource references and data bindings even though they might no longer resolve. It does not copy animations or their current values.  
   
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -390,7 +390,7 @@
   
  This method does not copy resource references, data bindings, and animations, although it does copy their current values.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

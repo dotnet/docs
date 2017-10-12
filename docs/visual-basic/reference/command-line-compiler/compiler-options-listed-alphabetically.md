@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Visual Basic compiler, options"
 ms.assetid: e67febba-bacf-4e1f-a143-c141e063f90e

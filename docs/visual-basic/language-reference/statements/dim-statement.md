@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.Dim"
   - "Dim"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Public keyword, in Dim statement"
   - "Dim statement"

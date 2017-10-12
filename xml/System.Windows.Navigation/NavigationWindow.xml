@@ -144,7 +144,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See <xref:System.Windows.Navigation.NavigationService.AddBackEntry%2A?displayProperty=fullName>.  
+ See <xref:System.Windows.Navigation.NavigationService.AddBackEntry%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -267,7 +267,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See <xref:System.Windows.Navigation.NavigationService.CanGoBack%2A?displayProperty=fullName>.  
+ See <xref:System.Windows.Navigation.NavigationService.CanGoBack%2A?displayProperty=nameWithType>.  
   
 <a name="dependencyPropertyInfo_NavigationWindowCanGoBack"></a>   
 ## Dependency Property Information  
@@ -367,7 +367,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See <xref:System.Windows.Navigation.NavigationWindow.CurrentSource%2A?displayProperty=fullName>.  
+ See <xref:System.Windows.Navigation.NavigationWindow.CurrentSource%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -442,7 +442,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See <xref:System.Windows.Navigation.NavigationService.FragmentNavigation?displayProperty=fullName>.  
+ See <xref:System.Windows.Navigation.NavigationService.FragmentNavigation?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -506,7 +506,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See <xref:System.Windows.Navigation.NavigationService.LoadCompleted?displayProperty=fullName>.  
+ See <xref:System.Windows.Navigation.NavigationService.LoadCompleted?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -536,7 +536,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See <xref:System.Windows.Navigation.NavigationService.Navigate%28System.Object%29?displayProperty=fullName>.  
+ See <xref:System.Windows.Navigation.NavigationService.Navigate%28System.Object%29?displayProperty=nameWithType>.  
   
    
   
@@ -574,7 +574,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See <xref:System.Windows.Navigation.NavigationService.Navigate%28System.Uri%29?displayProperty=fullName>.  
+ See <xref:System.Windows.Navigation.NavigationService.Navigate%28System.Uri%29?displayProperty=nameWithType>.  
   
 > [!NOTE]
 >  [!INCLUDE[TLA#tla_uri#initcap#plural](~/includes/tlasharptla-urisharpinitcapsharpplural-md.md)] can be either relative or absolute. For more information, see [Pack URIs in WPF](~/docs/framework/wpf/app-development/pack-uris-in-wpf.md).  
@@ -617,7 +617,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See <xref:System.Windows.Navigation.NavigationService.Navigate%28System.Object%2CSystem.Object%29?displayProperty=fullName>.  
+ See <xref:System.Windows.Navigation.NavigationService.Navigate%28System.Object%2CSystem.Object%29?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -649,7 +649,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See <xref:System.Windows.Navigation.NavigationService.Navigate%28System.Uri%2CSystem.Object%29?displayProperty=fullName>.  
+ See <xref:System.Windows.Navigation.NavigationService.Navigate%28System.Uri%2CSystem.Object%29?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -673,7 +673,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See <xref:System.Windows.Navigation.NavigationService.Navigated?displayProperty=fullName>.  
+ See <xref:System.Windows.Navigation.NavigationService.Navigated?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -697,7 +697,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See <xref:System.Windows.Navigation.NavigationService.Navigating?displayProperty=fullName>.  
+ See <xref:System.Windows.Navigation.NavigationService.Navigating?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -721,7 +721,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See <xref:System.Windows.Navigation.NavigationService.NavigationFailed?displayProperty=fullName>.  
+ See <xref:System.Windows.Navigation.NavigationService.NavigationFailed?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -745,7 +745,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See <xref:System.Windows.Navigation.NavigationService.NavigationProgress?displayProperty=fullName>.  
+ See <xref:System.Windows.Navigation.NavigationService.NavigationProgress?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -772,7 +772,7 @@
 ## Remarks  
  <xref:System.Windows.Navigation.NavigationWindow> uses a <xref:System.Windows.Navigation.NavigationService> to provide navigation services to content that is hosted by <xref:System.Windows.Navigation.NavigationWindow>. The <xref:System.Windows.Navigation.NavigationWindow.NavigationService%2A> property is useful for code in a custom <xref:System.Windows.Navigation.NavigationWindow> to get a reference to the <xref:System.Windows.Navigation.NavigationService>, to handle navigation events, for example.  
   
- Content that is hosted by a <xref:System.Windows.Navigation.NavigationWindow>, such as <xref:System.Windows.Controls.Page>, should use the <xref:System.Windows.Navigation.NavigationService.GetNavigationService%2A?displayProperty=fullName> method or <xref:System.Windows.Controls.Page.NavigationService%2A?displayProperty=fullName> property to get a reference to the <xref:System.Windows.Navigation.NavigationService>.  
+ Content that is hosted by a <xref:System.Windows.Navigation.NavigationWindow>, such as <xref:System.Windows.Controls.Page>, should use the <xref:System.Windows.Navigation.NavigationService.GetNavigationService%2A?displayProperty=nameWithType> method or <xref:System.Windows.Controls.Page.NavigationService%2A?displayProperty=nameWithType> property to get a reference to the <xref:System.Windows.Navigation.NavigationService>.  
   
  ]]></format>
         </remarks>
@@ -796,7 +796,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See <xref:System.Windows.Navigation.NavigationService.NavigationStopped?displayProperty=fullName>.  
+ See <xref:System.Windows.Navigation.NavigationService.NavigationStopped?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -898,7 +898,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See <xref:System.Windows.Navigation.NavigationService.Refresh%2A?displayProperty=fullName>.  
+ See <xref:System.Windows.Navigation.NavigationService.Refresh%2A?displayProperty=nameWithType>.  
   
    
   
@@ -932,7 +932,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See <xref:System.Windows.Navigation.NavigationService.RemoveBackEntry%2A?displayProperty=fullName>.  
+ See <xref:System.Windows.Navigation.NavigationService.RemoveBackEntry%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1105,7 +1105,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See <xref:System.Windows.Navigation.NavigationService.Source%2A?displayProperty=fullName>.  
+ See <xref:System.Windows.Navigation.NavigationService.Source%2A?displayProperty=nameWithType>.  
   
 > [!NOTE]
 >  [!INCLUDE[TLA#tla_uri#initcap#plural](~/includes/tlasharptla-urisharpinitcapsharpplural-md.md)] can be either relative or absolute. For more information, see [Pack URIs in WPF](~/docs/framework/wpf/app-development/pack-uris-in-wpf.md).  
@@ -1168,7 +1168,7 @@
 ## Remarks  
  <xref:System.Windows.Navigation.NavigationWindow.StopLoading%2A> stops the download of the requested content, and causes the <xref:System.Windows.Navigation.NavigationWindow.NavigationStopped> event to be raised.  
   
- See <xref:System.Windows.Navigation.NavigationService.StopLoading%2A?displayProperty=fullName>.  
+ See <xref:System.Windows.Navigation.NavigationService.StopLoading%2A?displayProperty=nameWithType>.  
   
    
   

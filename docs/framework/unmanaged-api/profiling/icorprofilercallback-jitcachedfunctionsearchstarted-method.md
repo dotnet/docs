@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::JITCachedFunctionSearchStarted"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "JITCachedFunctionSearchStarted method [.NET Framework profiling]"
   - "ICorProfilerCallback::JITCachedFunctionSearchStarted method [.NET Framework profiling]"

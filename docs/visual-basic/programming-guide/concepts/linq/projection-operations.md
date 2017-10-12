@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 ms.assetid: b8d38e6d-21cf-4619-8dbb-94476f4badc7
 caps.latest.revision: 3
 author: dotnet-bot
@@ -31,8 +29,8 @@ Projection refers to the operation of transforming an object into a new form tha
   
 |Method Name|Description|Visual Basic Query Expression Syntax|More Information|  
 |-----------------|-----------------|------------------------------------------|----------------------|  
-|Select|Projects values that are based on a transform function.|`Select`|<xref:System.Linq.Enumerable.Select%2A?displayProperty=fullName><br /><br /> <xref:System.Linq.Queryable.Select%2A?displayProperty=fullName>|  
-|SelectMany|Projects sequences of values that are based on a transform function and then flattens them into one sequence.|Use multiple `From` clauses|<xref:System.Linq.Enumerable.SelectMany%2A?displayProperty=fullName><br /><br /> <xref:System.Linq.Queryable.SelectMany%2A?displayProperty=fullName>|  
+|Select|Projects values that are based on a transform function.|`Select`|<xref:System.Linq.Enumerable.Select%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Select%2A?displayProperty=nameWithType>|  
+|SelectMany|Projects sequences of values that are based on a transform function and then flattens them into one sequence.|Use multiple `From` clauses|<xref:System.Linq.Enumerable.SelectMany%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.SelectMany%2A?displayProperty=nameWithType>|  
   
 ## Query Expression Syntax Examples  
   

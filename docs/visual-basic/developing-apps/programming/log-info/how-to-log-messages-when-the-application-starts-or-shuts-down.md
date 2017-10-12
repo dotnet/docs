@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "event logs, shutdown"
   - "My.Application.Log object, logging"
@@ -82,7 +80,7 @@ You can use the `My.Application.Log` and `My.Log` objects to log information abo
  [!code-vb[VbVbalrMyApplicationLog#3](../../../../visual-basic/developing-apps/programming/log-info/codesnippet/VisualBasic/how-to-log-messages-when-the-application-starts-or-shuts-down_3.vb)]  
   
 ## See Also  
- <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=fullName>   
+ <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=nameWithType>   
  <xref:Microsoft.VisualBasic.Logging.Log.WriteEntry%2A>   
  <xref:Microsoft.VisualBasic.Logging.Log.WriteException%2A>   
  [Application Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/application-page-project-designer-visual-basic)   

@@ -12,11 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#defaultProxy"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/defaultProxy"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "defaultProxy element"
   - "<defaultProxy> element"
@@ -98,5 +93,5 @@ Configures the Hypertext Transfer Protocol (HTTP) proxy server.
 ```  
   
 ## See Also  
- <xref:System.Net.WebProxy?displayProperty=fullName>   
+ <xref:System.Net.WebProxy?displayProperty=nameWithType>   
  [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

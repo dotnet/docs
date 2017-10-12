@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.While"
   - "vb.While...EndWhile"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "While statement, While...End While"
   - "While statement"

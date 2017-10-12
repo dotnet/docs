@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "Button controls [WPF], creating"
 ms.assetid: 607a193c-4098-4dd8-8dc0-51256cec2020

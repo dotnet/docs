@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "source element in event handlers"
   - "event handlers, finding source element in"

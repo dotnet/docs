@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "/dllbase"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "baseaddress compiler option [C#]"
   - "/baseaddress compiler option [C#]"
@@ -33,7 +31,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # /baseaddress (C# Compiler Options)
-The **/baseaddress** option lets you specify the preferred base address at which to load a DLL. For more information about when and why to use this option, see [Improving Application Startup Time](http://go.microsoft.com/fwlink/?LinkId=107043) and [Larry Osterman's WebLog](http://go.microsoft.com/fwlink/?LinkId=107044).  
+The **/baseaddress** option lets you specify the preferred base address at which to load a DLL. For more information about when and why to use this option, see [Larry Osterman's WebLog](http://go.microsoft.com/fwlink/?LinkId=107044).  
   
 ## Syntax  
   
@@ -65,6 +63,6 @@ The **/baseaddress** option lets you specify the preferred base address at which
      To set this compiler option programmatically, see <xref:VSLangProj80.CSharpProjectConfigurationProperties3.BaseAddress%2A>.  
   
 ## See Also  
- <xref:System.Diagnostics.ProcessModule.BaseAddress%2A?displayProperty=fullName>   
+ <xref:System.Diagnostics.ProcessModule.BaseAddress%2A?displayProperty=nameWithType>   
  [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
  [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

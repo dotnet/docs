@@ -25,7 +25,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.BorderStyle> enumeration and the <xref:System.Windows.Forms.TreeView.BorderStyle%2A?displayProperty=fullName>, <xref:System.Windows.Forms.TreeView.HideSelection%2A?displayProperty=fullName> and the <xref:System.Windows.Forms.TreeView.ShowRootLines%2A?displayProperty=fullName> properties. To run this example, paste the following code in a form and call the InitializeTreeView method in the form's constructor or Load method.  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.BorderStyle> enumeration and the <xref:System.Windows.Forms.TreeView.BorderStyle%2A?displayProperty=nameWithType>, <xref:System.Windows.Forms.TreeView.HideSelection%2A?displayProperty=nameWithType> and the <xref:System.Windows.Forms.TreeView.ShowRootLines%2A?displayProperty=nameWithType> properties. To run this example, paste the following code in a form and call the InitializeTreeView method in the form's constructor or Load method.  
   
  [!code-cpp[System.Windows.Forms.TreeViewExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.TreeViewExample/CPP/form1.cpp#1)]
  [!code-csharp[System.Windows.Forms.TreeViewExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TreeViewExample/CS/form1.cs#1)]

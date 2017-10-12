@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.Exit"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "execution, ending"
   - "files, closing"

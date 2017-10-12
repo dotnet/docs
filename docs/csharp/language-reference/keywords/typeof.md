@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "typeof"
   - "typeof_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "typeof keyword [C#]"
 ms.assetid: 0c08d880-515e-46bb-8cd2-48b8dd62c08d
@@ -67,7 +65,7 @@ string s = method.ReturnType.GetInterface
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- <xref:System.Type?displayProperty=fullName>   
+ <xref:System.Type?displayProperty=nameWithType>   
  [C# Reference](../../../csharp/language-reference/index.md)   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [C# Keywords](../../../csharp/language-reference/keywords/index.md)   

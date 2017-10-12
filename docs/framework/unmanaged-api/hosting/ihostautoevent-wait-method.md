@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostAutoEvent::Wait"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "Wait method, IHostAutoEvent interface [.NET Framework hosting]"
   - "IHostAutoEvent::Wait method [.NET Framework hosting]"

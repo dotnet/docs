@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: 82f86677-560b-49dc-a089-610409939b2a
 caps.latest.revision: 3
 author: "BillWagner"
@@ -25,7 +23,7 @@ This topic extends the previous queries to do something useful: find all occurre
   
  For instructions for creating the source document for this example, see [Creating the Source Office Open XML Document (C#)](../../../../csharp/programming-guide/concepts/linq/creating-the-source-office-open-xml-document.md).  
   
- This example uses classes found in the WindowsBase assembly. It uses types in the <xref:System.IO.Packaging?displayProperty=fullName> namespace.  
+ This example uses classes found in the WindowsBase assembly. It uses types in the <xref:System.IO.Packaging?displayProperty=nameWithType> namespace.  
   
 ```csharp  
 public static class LocalExtensions  

@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 ms.assetid: d87ae99a-cfa9-4a31-a5e4-9d6437be6810
 caps.latest.revision: 3
 author: dotnet-bot
@@ -29,7 +27,7 @@ This example builds on the previous example, [Retrieving the Text of the Paragra
   
  You can find instructions for creating the source document for this example in [Creating the Source Office Open XML Document (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/creating-the-source-office-open-xml-document.md).  
   
- This example uses classes from the WindowsBase assembly. It uses types in the <xref:System.IO.Packaging?displayProperty=fullName> namespace.  
+ This example uses classes from the WindowsBase assembly. It uses types in the <xref:System.IO.Packaging?displayProperty=nameWithType> namespace.  
   
 ```vb  
 <System.Runtime.CompilerServices.Extension()> _  

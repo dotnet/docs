@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEditAndContinueErrorInfo::GetErrorCode"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetErrorCode method [.NET Framework debugging]"
   - "ICorDebugEditAndContinueErrorInfo::GetErrorCode method [.NET Framework debugging]"

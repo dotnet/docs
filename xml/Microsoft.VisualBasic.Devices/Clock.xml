@@ -63,7 +63,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `My.Computer.Clock.GmtTime` property has the same behavior as the <xref:System.DateTime.UtcNow%2A?displayProperty=fullName> property.  
+ The `My.Computer.Clock.GmtTime` property has the same behavior as the <xref:System.DateTime.UtcNow%2A?displayProperty=nameWithType> property.  
   
 ## Availability by Project Type  
   
@@ -107,7 +107,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `My.Computer.Clock.LocalTime` property has the same behavior as the <xref:System.DateTime.Now%2A?displayProperty=fullName> property.  
+ The `My.Computer.Clock.LocalTime` property has the same behavior as the <xref:System.DateTime.Now%2A?displayProperty=nameWithType> property.  
   
 ## Availability by Project Type  
   
@@ -164,7 +164,7 @@
   
  Use the <xref:Microsoft.VisualBasic.Devices.Clock.LocalTime%2A> property or <xref:Microsoft.VisualBasic.Devices.Clock.GmtTime%2A> property to obtain the current local date and time on this computer.  
   
- The `My.Computer.Clock.TickCount` property has the same behavior as the <xref:System.Environment.TickCount%2A?displayProperty=fullName> property.  
+ The `My.Computer.Clock.TickCount` property has the same behavior as the <xref:System.Environment.TickCount%2A?displayProperty=nameWithType> property.  
   
 ## Availability by Project Type  
   

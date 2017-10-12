@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: 716b94d3-0091-4de1-8e05-41bc069fa9dd
 caps.latest.revision: 3
 author: "BillWagner"
@@ -77,7 +75,7 @@ select item;
 -   Use a combination of these features to transform XML trees from one shape into another.  
   
 ## Creating XML Trees  
- IOne of the most significant advantages of programming with [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] is that it is easy to create XML trees. For example, to create a small XML tree, you can write code as follows:  
+ One of the most significant advantages of programming with [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] is that it is easy to create XML trees. For example, to create a small XML tree, you can write code as follows:  
   
 ```csharp  
 XElement contacts =  

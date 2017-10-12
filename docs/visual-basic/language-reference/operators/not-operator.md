@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.Not"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Boolean expressions, negating"
   - "operators [Visual Basic], bitwise"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRControl::GetCLRManager"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetCLRManager method [.NET Framework hosting]"
   - "ICLRControl::GetCLRManager method [.NET Framework hosting]"

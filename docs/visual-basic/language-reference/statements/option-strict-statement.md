@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.Strict"
   - "vb.OptionStrict"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Strict keyword"
   - "Option Strict statement"

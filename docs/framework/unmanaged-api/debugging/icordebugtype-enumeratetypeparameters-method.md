@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugType::EnumerateTypeParameters"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "EnumerateTypeParameters method, ICorDebugType interface [.NET Framework debugging]"
   - "ICorDebugType::EnumerateTypeParameters method [.NET Framework debugging]"

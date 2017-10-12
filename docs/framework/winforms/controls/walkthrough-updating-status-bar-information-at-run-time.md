@@ -9,8 +9,10 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
+dev_langs:
+- "csharp"
+- "vb"
+- "cpp"
 helpviewer_keywords: 
   - "status bars, updating at run time"
   - "status bars, refreshing panels"
@@ -43,7 +45,7 @@ manager: "wpickett"
 5.  Add a Windows Forms <xref:System.Windows.Forms.Timer> component to the form.  
   
     > [!NOTE]
-    >  The Windows Forms <xref:System.Windows.Forms.Timer?displayProperty=fullName> component is designed for a Windows Forms environment. If you need a timer that is suitable for a server environment, see [Introduction to Server-Based Timers](http://msdn.microsoft.com/en-us/adc0bc0a-a519-4812-bafc-fb9d1a5801fc).  
+    >  The Windows Forms <xref:System.Windows.Forms.Timer?displayProperty=nameWithType> component is designed for a Windows Forms environment. If you need a timer that is suitable for a server environment, see [Introduction to Server-Based Timers](http://msdn.microsoft.com/en-us/adc0bc0a-a519-4812-bafc-fb9d1a5801fc).  
   
 6.  Set the <xref:System.Windows.Forms.Timer.Enabled%2A> property to `true`.  
   

@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "ErrorProvider"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "errors [Windows Forms], displaying to users"
   - "error messages, displaying"

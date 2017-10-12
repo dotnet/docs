@@ -9,8 +9,10 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
+dev_langs:
+- "csharp"
+- "vb"
+- "cpp"
 helpviewer_keywords: 
   - "layout engines, custom"
   - "TableLayoutPanel control [Windows Forms], layout engine"
@@ -33,4 +35,4 @@ The following code example demonstrates how to create a custom layout engine tha
   
 ## See Also  
  <xref:System.Windows.Forms.Layout.LayoutEngine>   
- <xref:System.Windows.Forms.Control.LayoutEngine%2A?displayProperty=fullName>
+ <xref:System.Windows.Forms.Control.LayoutEngine%2A?displayProperty=nameWithType>

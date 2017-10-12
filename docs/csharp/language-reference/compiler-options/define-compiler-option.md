@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "/define"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "-define compiler option [C#]"
   - "/define compiler option [C#]"

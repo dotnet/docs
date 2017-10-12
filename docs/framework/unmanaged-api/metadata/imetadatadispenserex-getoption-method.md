@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataDispenserEx::GetOption"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetOption method [.NET Framework metadata]"
   - "IMetaDataDispenserEx::GetOption method [.NET Framework metadata]"

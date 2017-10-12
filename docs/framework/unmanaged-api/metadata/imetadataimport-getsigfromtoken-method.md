@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataImport::GetSigFromToken"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataImport::GetSigFromToken method [.NET Framework metadata]"
   - "GetSigFromToken method [.NET Framework metadata]"

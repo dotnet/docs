@@ -4,7 +4,7 @@ Imports System.Globalization
 Public Module NumericLibrary
     Public Function ParseInteger(value As String) As (Success As Boolean, Number As Int32)
         Dim number As Integer
-        Return (Int32.TryParse(value, NumberStyles.Any, Nothing, number), number)
+        Return (Int32.TryParse(value, NumberStyles.Any, CultureInfo.InvariantCulture, number), number)
     End Function
 End Module
 ' </Snippet2>
@@ -29,9 +29,9 @@ Module Module1
 
     Private Sub MethodCallWithTuple()
         ' <Snippet3>
-        Dim number As String = "123,456"
-        Dim result = ParseInteger(number)
-        Console.WriteLine($"{IIf(result.Success, $"Success: {number:N0}", "Failure")}")
+        Dim numericString As String = "123,456"
+        Dim result = ParseInteger(numericString)
+        Console.WriteLine($"{IIf(result.Success, $"Success: {result.Number:N0}", "Failure")}")
         Console.ReadLine()
         '      Output: Success: 123,456
         ' </Snippet3>

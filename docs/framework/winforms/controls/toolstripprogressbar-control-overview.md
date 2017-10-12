@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "ToolStripProgressBar"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "toolbars [Windows Forms], progress bars"
   - "progress controls"

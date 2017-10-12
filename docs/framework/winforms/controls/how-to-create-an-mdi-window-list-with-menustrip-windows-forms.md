@@ -9,8 +9,9 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "MDI, creating window lists"
   - "MenuStrip control [Windows Forms], creating window lists"
@@ -84,7 +85,7 @@ Use the multiple-document interface (MDI) to create applications that can open s
   
 -   A <xref:System.Windows.Forms.MenuStrip> control on `Form1` named `menuStrip1`, and a <xref:System.Windows.Forms.MenuStrip> control on `Form2` named `menuStrip2`.  
   
--   References to the <xref:System?displayProperty=fullName> and <xref:System.Windows.Forms?displayProperty=fullName> assemblies.  
+-   References to the <xref:System?displayProperty=nameWithType> and <xref:System.Windows.Forms?displayProperty=nameWithType> assemblies.  
   
 ## See Also  
  [How to: Create MDI Parent Forms](../../../../docs/framework/winforms/advanced/how-to-create-mdi-parent-forms.md)   

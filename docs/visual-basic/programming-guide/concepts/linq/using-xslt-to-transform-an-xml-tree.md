@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 ms.assetid: 3390ca68-c270-4e1d-b64b-6a063a77017c
 caps.latest.revision: 3
 author: dotnet-bot
@@ -74,6 +72,6 @@ Console.WriteLine(newTree)
 ```  
   
 ## See Also  
- <xref:System.Xml.Linq.XContainer.CreateWriter%2A?displayProperty=fullName>   
- <xref:System.Xml.Linq.XNode.CreateReader%2A?displayProperty=fullName>   
+ <xref:System.Xml.Linq.XContainer.CreateWriter%2A?displayProperty=nameWithType>   
+ <xref:System.Xml.Linq.XNode.CreateReader%2A?displayProperty=nameWithType>   
  [Advanced LINQ to XML Programming (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/advanced-linq-to-xml-programming.md)

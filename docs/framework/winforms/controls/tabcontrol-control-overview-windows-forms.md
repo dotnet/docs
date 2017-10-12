@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "TabControl"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "TabControl control [Windows Forms], about TabControl control"
   - "tab pages, about tab pages"

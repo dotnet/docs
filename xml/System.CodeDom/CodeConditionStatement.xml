@@ -65,7 +65,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public CodeConditionStatement (System.CodeDom.CodeExpression condition, System.CodeDom.CodeStatement[] trueStatements);" />
+      <MemberSignature Language="C#" Value="public CodeConditionStatement (System.CodeDom.CodeExpression condition, params System.CodeDom.CodeStatement[] trueStatements);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeExpression condition, class System.CodeDom.CodeStatement[] trueStatements) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeConditionStatement.#ctor(System.CodeDom.CodeExpression,System.CodeDom.CodeStatement[])" />
       <MemberType>Constructor</MemberType>

@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.VarianceOut"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Out keyword [Visual Basic]"
   - "covariance, Out keyword [Visual Basic]"

@@ -1,4 +1,4 @@
-// <Snippet1>
+ï»¿// <Snippet1>
 using System;
 using System.Globalization;
 using System.Reflection;
@@ -62,6 +62,6 @@ public class Example
 //       -------
 //       
 //       The cost of this item is $1,000.00.
-//       The cost of this item is 1 000,00 €.
+//       The cost of this item is 1Â 000,00 â‚¬.
 // </Snippet1>
 

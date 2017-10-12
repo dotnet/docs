@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "string"
   - "string_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "strings [C#], reference"
   - "@ string literal"

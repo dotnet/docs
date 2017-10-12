@@ -30,7 +30,7 @@
   </head>
   <body>
     <form id="form1" runat="server">
-      <%--<Snippet3>--%>
+      <!--<Snippet3>-->
       <asp:ListView runat="server" 
         ID="EmployeesListView"
         OnItemCommand="EmployeesListView_OnItemCommand"
@@ -78,7 +78,7 @@
                        FROM HumanResources.vEmployee
                        ORDER BY [LastName], [FirstName], [EmployeeID]">
       </asp:SqlDataSource>
-      <%--</Snippet3>--%>
+      <!--</Snippet3>-->
     </form>
   </body>
 </html>

@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: a3416a45-9e12-4e4a-9747-897f06eef510
 caps.latest.revision: 3
 author: "BillWagner"
@@ -25,7 +23,7 @@ The following example refactors the previous example, [Refactoring Using an Exte
   
  For instructions for creating the source document for this example, see [Creating the Source Office Open XML Document (C#)](../../../../csharp/programming-guide/concepts/linq/creating-the-source-office-open-xml-document.md).  
   
- This example uses classes from the WindowsBase assembly. It uses types in the <xref:System.IO.Packaging?displayProperty=fullName> namespace.  
+ This example uses classes from the WindowsBase assembly. It uses types in the <xref:System.IO.Packaging?displayProperty=nameWithType> namespace.  
   
 ```csharp  
 public static class LocalExtensions  

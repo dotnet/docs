@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.constant"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Integer data type, declaring constants"
   - "Single data type, declaring constants"

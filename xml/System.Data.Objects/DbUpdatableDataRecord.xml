@@ -1033,7 +1033,7 @@
       </Docs>
     </Member>
     <Member MemberName="SetValues">
-      <MemberSignature Language="C#" Value="public int SetValues (object[] values);" />
+      <MemberSignature Language="C#" Value="public int SetValues (params object[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 SetValues(object[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DbUpdatableDataRecord.SetValues(System.Object[])" />
       <MemberType>Method</MemberType>

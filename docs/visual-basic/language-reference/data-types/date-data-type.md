@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.Date"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Date data type"
   - "dates, Visual Basic data types"
@@ -83,11 +81,11 @@ Dim dateInMay As New System.DateTime(1993, 5, 31, 12, 14, 0)
   
 ## Programming Tips  
   
--   **Interop Considerations.** If you are interfacing with components not written for the .NET Framework, for example Automation or COM objects, keep in mind that date/time types in other environments are not compatible with the Visual Basic `Date` type. If you are passing a date/time argument to such a component, declare it as `Double` instead of `Date` in your new Visual Basic code, and use the conversion methods <xref:System.DateTime.FromOADate%2A?displayProperty=fullName> and <xref:System.DateTime.ToOADate%2A?displayProperty=fullName>.  
+-   **Interop Considerations.** If you are interfacing with components not written for the .NET Framework, for example Automation or COM objects, keep in mind that date/time types in other environments are not compatible with the Visual Basic `Date` type. If you are passing a date/time argument to such a component, declare it as `Double` instead of `Date` in your new Visual Basic code, and use the conversion methods <xref:System.DateTime.FromOADate%2A?displayProperty=nameWithType> and <xref:System.DateTime.ToOADate%2A?displayProperty=nameWithType>.  
   
 -   **Type Characters.** `Date` has no literal type character or identifier type character. However, the compiler treats literals enclosed within number signs (`# #`) as `Date`.  
   
--   **Framework Type.** The corresponding type in the .NET Framework is the <xref:System.DateTime?displayProperty=fullName> structure.  
+-   **Framework Type.** The corresponding type in the .NET Framework is the <xref:System.DateTime?displayProperty=nameWithType> structure.  
   
 ## Example  
  A variable or constant of the `Date` data type holds both the date and the time. The following example illustrates this.  
@@ -97,7 +95,7 @@ Dim someDateAndTime As Date = #8/13/2002 12:14 PM#
 ```  
   
 ## See Also  
- <xref:System.DateTime?displayProperty=fullName>   
+ <xref:System.DateTime?displayProperty=nameWithType>   
  [Data Types](../../../visual-basic/language-reference/data-types/data-type-summary.md)   
  [Standard Date and Time Format Strings](../../../standard/base-types/standard-date-and-time-format-strings.md)   
  [Custom Date and Time Format Strings](../../../standard/base-types/custom-date-and-time-format-strings.md)   

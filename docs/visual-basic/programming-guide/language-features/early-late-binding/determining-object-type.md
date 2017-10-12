@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "classes [Visual Basic], discovering which an object belongs to"
   - "types [Visual Basic], determining Visual Basic object types"

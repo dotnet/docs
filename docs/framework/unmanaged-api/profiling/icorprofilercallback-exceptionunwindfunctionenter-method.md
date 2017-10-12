@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::ExceptionUnwindFunctionEnter"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerCallback::ExceptionUnwindFunctionEnter method [.NET Framework profiling]"
   - "ExceptionUnwindFunctionEnter method [.NET Framework profiling]"

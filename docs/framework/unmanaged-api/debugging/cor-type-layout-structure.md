@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "COR_TYPE_LAYOUT"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "COR_TYPE_LAYOUT structure [.NET Framework debugging]"
 ms.assetid: 43a7addd-f25a-4049-9907-abec3eb17af2
@@ -48,7 +46,7 @@ typedef struct COR_TYPE_LAYOUT {
   
 |Member|Description|  
 |------------|-----------------|  
-|`parentID`|The identifier of the parent type to this type. This will be the NULL type id (token1= 0, token2 = 0) if the type id corresponds to <xref:System.Object?displayProperty=fullName>.|  
+|`parentID`|The identifier of the parent type to this type. This will be the NULL type id (token1= 0, token2 = 0) if the type id corresponds to <xref:System.Object?displayProperty=nameWithType>.|  
 |`objectSize`|The base size of an object of this type. This is the total size for non-variable sized objects.|  
 |`numFields`|The number of fields included in objects of this type.|  
 |`boxOffset`|If this type is boxed, the beginning offset of an object's fields. This field is valid only for value types such as primitives and structures.|  

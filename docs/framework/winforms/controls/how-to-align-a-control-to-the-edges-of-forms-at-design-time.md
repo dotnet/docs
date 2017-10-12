@@ -9,8 +9,6 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "custom controls [Windows Forms], docking using designer"
   - "Dock property, aligning controls (using designer)"
@@ -50,8 +48,8 @@ You can make your control align to the edge of your forms by setting the <xref:S
 4.  Your control will now dock in the manner specified by the setting.  
   
 ## See Also  
- <xref:System.Windows.Forms.Control.Dock%2A?displayProperty=fullName>   
- <xref:System.Windows.Forms.Control.Anchor%2A?displayProperty=fullName>   
+ <xref:System.Windows.Forms.Control.Dock%2A?displayProperty=nameWithType>   
+ <xref:System.Windows.Forms.Control.Anchor%2A?displayProperty=nameWithType>   
  [How to: Align a Control to the Edges of Forms](../../../../docs/framework/winforms/controls/how-to-align-a-control-to-the-edges-of-forms.md)   
  [Walkthrough: Arranging Controls on Windows Forms Using Snaplines](../../../../docs/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-snaplines.md)   
  [How to: Anchor Controls on Windows Forms](../../../../docs/framework/winforms/controls/how-to-anchor-controls-on-windows-forms.md)   

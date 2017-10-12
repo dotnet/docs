@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "extern_CSharpKeyword"
   - "extern"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "DllImport attribute"
   - "extern keyword [C#]"
@@ -105,7 +103,7 @@ SampleMethod() returns 50.
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>   
+ <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=nameWithType>   
  [C# Reference](../../../csharp/language-reference/index.md)   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [C# Keywords](../../../csharp/language-reference/keywords/index.md)   

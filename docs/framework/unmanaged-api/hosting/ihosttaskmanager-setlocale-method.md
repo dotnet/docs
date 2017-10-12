@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostTaskManager::SetLocale"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SetLocale method, IHostTaskManager interface [.NET Framework hosting]"
   - "IHostTaskManager::SetLocale method [.NET Framework hosting]"
@@ -58,7 +56,7 @@ HRESULT SetLocale (
 |E_NOTIMPL|The host does not allow managed user code to modify the locale.|  
   
 ## Remarks  
- The runtime calls `SetLocale` when the value of the <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=fullName> property is changed by managed code. This method provides an opportunity for the host to execute any mechanisms it might have for synchronization of locales. If a host does not allow the locale to be changed from managed code, or does not implement a mechanism to synchronize locales, it should return E_NOTIMPL from this method.  
+ The runtime calls `SetLocale` when the value of the <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=nameWithType> property is changed by managed code. This method provides an opportunity for the host to execute any mechanisms it might have for synchronization of locales. If a host does not allow the locale to be changed from managed code, or does not implement a mechanism to synchronize locales, it should return E_NOTIMPL from this method.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "keyboards, accessing [Visual Basic]"
   - "My.Computer.Keyboard object, tasks"
@@ -54,4 +52,4 @@ The `My.Computer.Keyboard` object provides properties for accessing the current 
   
 ## See Also  
  <xref:Microsoft.VisualBasic.Devices.Keyboard>   
- <xref:System.Windows.Forms.Keys?displayProperty=fullName>
+ <xref:System.Windows.Forms.Keys?displayProperty=nameWithType>

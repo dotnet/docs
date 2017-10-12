@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "float"
   - "float_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "float keyword [C#]"
   - "floating-point numbers [C#], float keyword"
@@ -37,7 +35,7 @@ The `float` keyword signifies a simple type that stores 32-bit floating-point va
   
 |Type|Approximate range|Precision|.NET Framework type|  
 |----------|-----------------------|---------------|-------------------------|  
-|`float`|-3.4 × 10<sup>38</sup>to +3.4 × 10<sup>38</sup>|7 digits|<xref:System.Single?displayProperty=fullName>|  
+|`float`|-3.4 × 10<sup>38</sup>to +3.4 × 10<sup>38</sup>|7 digits|<xref:System.Single?displayProperty=nameWithType>|  
   
 ## Literals  
  By default, a real numeric literal on the right side of the assignment operator is treated as [double](double.md). Therefore, to initialize a float variable, use the suffix `f` or `F`, as in the following example:  
@@ -65,10 +63,10 @@ float x = 3.5F;
   
 -   The finite set of nonzero values  
   
- For more information about these values, see IEEE Standard for Binary Floating-Point Arithmetic, available on the [IEEE](http://go.microsoft.com/fwlink/?LinkId=26269) Web site.  
+ For more information about these values, see IEEE Standard for Binary Floating-Point Arithmetic, available on the [IEEE](http://www.ieee.org) Web site.  
   
 ## Example  
- In the following example, an [int](int.md), a [short](short.md), and a `float` are included in a mathematical expression giving a `float` result. (Remember that `float` is an alias for the <xref:System.Single?displayProperty=fullName> type.) Notice that there is no [double](double.md) in the expression.  
+ In the following example, an [int](int.md), a [short](short.md), and a `float` are included in a mathematical expression giving a `float` result. (Remember that `float` is an alias for the <xref:System.Single?displayProperty=nameWithType> type.) Notice that there is no [double](double.md) in the expression.  
   
  [!code-cs[csrefKeywordsTypes#13](../../../csharp/language-reference/keywords/codesnippet/CSharp/float_1.cs)]  
   

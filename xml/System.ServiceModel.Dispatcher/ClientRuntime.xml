@@ -7,6 +7,12 @@
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ServiceModel.Dispatcher.ClientRuntimeCompatBase</BaseTypeName>
     <BaseTypeName FrameworkAlternate="xamarinandroid-7.1">System.Object</BaseTypeName>
@@ -61,7 +67,7 @@
    
   
 ## Examples  
- In the following code example an <xref:System.ServiceModel.Description.IEndpointBehavior?displayProperty=fullName> inserts a <xref:System.ServiceModel.Dispatcher.IClientMessageInspector?displayProperty=fullName> into the client runtime by adding it to the <xref:System.ServiceModel.Dispatcher.ClientRuntime.MessageInspectors%2A> property.  
+ In the following code example an <xref:System.ServiceModel.Description.IEndpointBehavior?displayProperty=nameWithType> inserts a <xref:System.ServiceModel.Dispatcher.IClientMessageInspector?displayProperty=nameWithType> into the client runtime by adding it to the <xref:System.ServiceModel.Dispatcher.ClientRuntime.MessageInspectors%2A> property.  
   
  [!code-csharp[Interceptors#2](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/insertingbehaviors.cs#2)]
  [!code-vb[Interceptors#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/insertingbehaviors.vb#2)]  
@@ -121,6 +127,10 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.SynchronizedCollection&lt;System.ServiceModel.Dispatcher.IChannelInitializer&gt;</ReturnType>
       </ReturnValue>
@@ -146,6 +156,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.ICollection&lt;System.ServiceModel.Dispatcher.IClientMessageInspector&gt;</ReturnType>
@@ -173,6 +189,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.ICollection&lt;System.ServiceModel.Dispatcher.ClientOperation&gt;</ReturnType>
       </ReturnValue>
@@ -199,6 +221,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
@@ -217,6 +245,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -237,6 +271,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -255,6 +295,10 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.SynchronizedCollection&lt;System.ServiceModel.Dispatcher.IInteractiveChannelInitializer&gt;</ReturnType>
@@ -290,6 +334,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -319,6 +369,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -361,7 +417,7 @@
    
   
 ## Examples  
- In the following code example an <xref:System.ServiceModel.Description.IEndpointBehavior?displayProperty=fullName> inserts a <xref:System.ServiceModel.Dispatcher.IClientMessageInspector?displayProperty=fullName> into the client runtime by adding it to the <xref:System.ServiceModel.Dispatcher.ClientRuntime.MessageInspectors%2A> property.  
+ In the following code example an <xref:System.ServiceModel.Description.IEndpointBehavior?displayProperty=nameWithType> inserts a <xref:System.ServiceModel.Dispatcher.IClientMessageInspector?displayProperty=nameWithType> into the client runtime by adding it to the <xref:System.ServiceModel.Dispatcher.ClientRuntime.MessageInspectors%2A> property.  
   
  [!code-csharp[Interceptors#2](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/insertingbehaviors.cs#2)]
  [!code-vb[Interceptors#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/insertingbehaviors.vb#2)]  
@@ -419,7 +475,7 @@
    
   
 ## Examples  
- In the following code example an <xref:System.ServiceModel.Description.IEndpointBehavior?displayProperty=fullName> inserts a <xref:System.ServiceModel.Dispatcher.IParameterInspector?displayProperty=fullName> into the client runtime by adding it to each <xref:System.ServiceModel.Dispatcher.ClientOperation> in the <xref:System.ServiceModel.Dispatcher.ClientRuntime.Operations%2A> property.  
+ In the following code example an <xref:System.ServiceModel.Description.IEndpointBehavior?displayProperty=nameWithType> inserts a <xref:System.ServiceModel.Dispatcher.IParameterInspector?displayProperty=nameWithType> into the client runtime by adding it to each <xref:System.ServiceModel.Dispatcher.ClientOperation> in the <xref:System.ServiceModel.Dispatcher.ClientRuntime.Operations%2A> property.  
   
  [!code-csharp[Interceptors#2](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/insertingbehaviors.cs#2)]
  [!code-vb[Interceptors#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/insertingbehaviors.vb#2)]  
@@ -437,6 +493,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Dispatcher.IClientOperationSelector</ReturnType>
@@ -463,6 +525,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Dispatcher.ClientOperation</ReturnType>
@@ -510,6 +578,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
@@ -522,7 +596,7 @@
 ## Remarks  
  Set the <xref:System.ServiceModel.Dispatcher.ClientRuntime.Via%2A> property to specify a transport address for messages when the immediate destination of messages is not the client's <xref:System.ServiceModel.EndpointAddress.Uri%2A>. This enables you to specify SOAP intermediaries and handle scenarios in which the value of the <xref:System.ServiceModel.EndpointAddress.Uri%2A> property of the client is a logical name.  
   
- It is this value that the <xref:System.ServiceModel.Description.ClientViaBehavior?displayProperty=fullName> sets from a configuration file.  
+ It is this value that the <xref:System.ServiceModel.Description.ClientViaBehavior?displayProperty=nameWithType> sets from a configuration file.  
   
  ]]></format>
         </remarks>

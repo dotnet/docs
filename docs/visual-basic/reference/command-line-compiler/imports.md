@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "/imports compiler option [Visual Basic]"
   - "imports compiler option [Visual Basic]"

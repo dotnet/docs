@@ -28,9 +28,9 @@ Represents a collection of configuration elements that track workflow instance l
   
 ## Syntax  
   
-```vb  
+```xml
 <tracking>   <trackingProfile name="Name">       <workflow>          <workflowInstanceQueries>             <workflowInstanceQuery>                <states>                   <state name="Name"/>                </states>            </workflowInstanceQuery>         </workflowInstanceQueries>       </workflow>   </trackingProfile></tracking>  
-```  
+```
   
 ## Attributes and Elements  
  The following sections describe attributes, child elements, and parent elements.  
@@ -77,7 +77,7 @@ Represents a collection of configuration elements that track workflow instance l
 ```  
   
 ## See Also  
- <xref:System.ServiceModel.Activities.Tracking.Configuration.WorkflowInstanceQueryElementCollection?displayProperty=fullName>       
- <xref:System.Activities.Tracking.WorkflowInstanceQuery?displayProperty=fullName>       
+ <xref:System.ServiceModel.Activities.Tracking.Configuration.WorkflowInstanceQueryElementCollection?displayProperty=nameWithType>       
+ <xref:System.Activities.Tracking.WorkflowInstanceQuery?displayProperty=nameWithType>       
  [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)   
  [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)

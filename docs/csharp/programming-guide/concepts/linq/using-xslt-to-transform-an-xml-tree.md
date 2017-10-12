@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: 373a2699-d4c5-471b-9bda-c1f0ab73b477
 caps.latest.revision: 3
 author: "BillWagner"
@@ -72,6 +70,6 @@ Console.WriteLine(newTree);
 ```  
   
 ## See Also  
- <xref:System.Xml.Linq.XContainer.CreateWriter%2A?displayProperty=fullName>   
- <xref:System.Xml.Linq.XNode.CreateReader%2A?displayProperty=fullName>   
+ <xref:System.Xml.Linq.XContainer.CreateWriter%2A?displayProperty=nameWithType>   
+ <xref:System.Xml.Linq.XNode.CreateReader%2A?displayProperty=nameWithType>   
  [Advanced LINQ to XML Programming (C#)](../../../../csharp/programming-guide/concepts/linq/advanced-linq-to-xml-programming.md)

@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.Delegate"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "delegate keyword"
   - "Delegate statement"

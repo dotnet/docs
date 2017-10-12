@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugHeapValue3::GetMonitorEventWaitList"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugHeapValue3::GetMonitorEventWaitList method [.NET Framework debugging]"
   - "GetMonitorEventWaitList method [.NET Framework debugging]"
@@ -56,7 +54,7 @@ HRESULT GetMonitorEventWaitList (
 ## Exceptions  
   
 ## Remarks  
- The first thread in the list is the first thread that is released by the next call to <xref:System.Threading.Monitor.Pulse%28System.Object%29?displayProperty=fullName>. The next thread in the list is released on the following call, and so on.  
+ The first thread in the list is the first thread that is released by the next call to <xref:System.Threading.Monitor.Pulse%28System.Object%29?displayProperty=nameWithType>. The next thread in the list is released on the following call, and so on.  
   
  If the list is not empty, this method returns S_OK. If the list is empty, the method returns S_FALSE; in this case, the enumeration is still valid, although it is empty.  
   

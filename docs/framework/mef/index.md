@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "Managed Extensibility Framework, overview"
   - "MEF, overview"
@@ -474,4 +477,4 @@ public class Mod : SimpleCalculator.IOperation
 ## Where Do I Go Now?  
  To download the complete code for this example, see the [SimpleCalculator sample](http://code.msdn.microsoft.com/windowsdesktop/Simple-Calculator-MEF-1152654e).  
   
- For more information and code examples, see [Managed Extensibility Framework](http://go.microsoft.com/fwlink/?LinkId=144282). For a list of the MEF types, see the <xref:System.ComponentModel.Composition?displayProperty=fullName> namespace.
+ For more information and code examples, see [Managed Extensibility Framework](http://go.microsoft.com/fwlink/?LinkId=144282). For a list of the MEF types, see the <xref:System.ComponentModel.Composition?displayProperty=nameWithType> namespace.

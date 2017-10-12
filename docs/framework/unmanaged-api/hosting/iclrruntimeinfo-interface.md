@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRRuntimeInfo"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRRuntimeInfo interface [.NET Framework hosting]"
 ms.assetid: 287e5ede-b3a7-4ef8-a756-4fca3f285a82

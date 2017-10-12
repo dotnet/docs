@@ -9,8 +9,10 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
+dev_langs:
+- "csharp"
+- "vb"
+- "cpp"
 helpviewer_keywords: 
   - "background colors, Windows Forms Panel controls"
   - "background images, Windows Forms Panel controls"
@@ -27,7 +29,7 @@ A Windows Forms <xref:System.Windows.Forms.Panel> control can display both a bac
   
 ### To set the background programmatically  
   
-1.  Set the panel's <xref:System.Windows.Forms.Control.BackColor%2A> property to a value of type <xref:System.Drawing.Color?displayProperty=fullName>.  
+1.  Set the panel's <xref:System.Windows.Forms.Control.BackColor%2A> property to a value of type <xref:System.Drawing.Color?displayProperty=nameWithType>.  
   
     ```vb  
     Panel1.BackColor = Color.AliceBlue  
@@ -41,7 +43,7 @@ A Windows Forms <xref:System.Windows.Forms.Panel> control can display both a bac
     panel1->BackColor = Color::AliceBlue;  
     ```  
   
-2.  Set the panel's <xref:System.Windows.Forms.Control.BackgroundImage%2A> property using the <xref:System.Drawing.Image.FromFile%2A> method of the <xref:System.Drawing.Image?displayProperty=fullName> class.  
+2.  Set the panel's <xref:System.Windows.Forms.Control.BackgroundImage%2A> property using the <xref:System.Drawing.Image.FromFile%2A> method of the <xref:System.Drawing.Image?displayProperty=nameWithType> class.  
   
     ```vb  
     ' You should replace the bolded image   

@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vbrID9"
-dev_langs: 
-  - "VB"
 ms.assetid: d0344a65-ec02-4caf-8d3c-9977392ca353
 caps.latest.revision: 9
 author: dotnet-bot
@@ -41,5 +39,5 @@ An array subscript is not valid because it falls outside the allowable range. Th
 -   Change the subscript so it falls within the valid range.  
   
 ## See Also  
- <xref:System.Array.GetUpperBound%2A?displayProperty=fullName>   
+ <xref:System.Array.GetUpperBound%2A?displayProperty=nameWithType>   
  [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md)

@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.ObjectInitializer"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "object initializers [Visual Basic]"
   - "anonymous types [Visual Basic], object initializers"

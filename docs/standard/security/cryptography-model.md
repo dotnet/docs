@@ -8,11 +8,6 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "cryptography [.NET Framework], model"
   - "encryption [.NET Framework], model"
@@ -96,4 +91,4 @@ The .NET Framework provides implementations of many standard cryptographic algor
   
 ## See Also  
  [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)   
- [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)
+ 

@@ -7,6 +7,12 @@
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -31,7 +37,7 @@
   
 -   The <xref:System.ServiceModel.OperationContext.ServiceSecurityContext%2A> property returns the security environment under which the method executes.  
   
--   The <xref:System.ServiceModel.OperationContext.EndpointDispatcher%2A> property gets the operation's <xref:System.ServiceModel.Dispatcher.EndpointDispatcher?displayProperty=fullName>.  
+-   The <xref:System.ServiceModel.OperationContext.EndpointDispatcher%2A> property gets the operation's <xref:System.ServiceModel.Dispatcher.EndpointDispatcher?displayProperty=nameWithType>.  
   
 -   The <xref:System.ServiceModel.OperationContext.Extensions%2A> property returns an extension collection for the current <xref:System.ServiceModel.OperationContext>.  
   
@@ -85,6 +91,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="channel" Type="System.ServiceModel.IContextChannel" />
       </Parameters>
@@ -119,6 +131,10 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.IContextChannel</ReturnType>
@@ -156,6 +172,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.OperationContext</ReturnType>
@@ -209,6 +231,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.IExtensionCollection&lt;System.ServiceModel.OperationContext&gt;</ReturnType>
       </ReturnValue>
@@ -233,6 +261,10 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -318,6 +350,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.MessageHeaders</ReturnType>
       </ReturnValue>
@@ -352,6 +390,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.MessageProperties</ReturnType>
       </ReturnValue>
@@ -377,6 +421,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.MessageVersion</ReturnType>
@@ -430,6 +480,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -450,6 +506,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
@@ -459,12 +521,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.ServiceModel.OperationContext.OperationCompleted> event to dispose parameters or a return value if you set <xref:System.ServiceModel.OperationBehaviorAttribute.AutoDisposeParameters%2A?displayProperty=fullName> to `false`. Normally you set <xref:System.ServiceModel.OperationBehaviorAttribute.AutoDisposeParameters%2A?displayProperty=fullName> to `false` to prevent [!INCLUDE[indigo2](~/includes/indigo2-md.md)] from calling <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> on the parameter and return value objects.  However, if some parameters need to be preserved while others need to be disposed, this event is the best place to dispose those parameters.  
+ Use the <xref:System.ServiceModel.OperationContext.OperationCompleted> event to dispose parameters or a return value if you set <xref:System.ServiceModel.OperationBehaviorAttribute.AutoDisposeParameters%2A?displayProperty=nameWithType> to `false`. Normally you set <xref:System.ServiceModel.OperationBehaviorAttribute.AutoDisposeParameters%2A?displayProperty=nameWithType> to `false` to prevent [!INCLUDE[indigo2](~/includes/indigo2-md.md)] from calling <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> on the parameter and return value objects.  However, if some parameters need to be preserved while others need to be disposed, this event is the best place to dispose those parameters.  
   
  Also, with duplex bindings, this event can be used to send a request on the callback channel after the reply for the current operation is sent.  
   
 > [!NOTE]
->  If a caller is listening for the <xref:System.ServiceModel.OperationContext.OperationCompleted?displayProperty=fullName> event for an <xref:System.ServiceModel.OperationContractAttribute.IsTerminating%2A?displayProperty=fullName> operation, it is possible to block when the response is received. The proper way to handle this is to schedule work on another thread when <xref:System.ServiceModel.OperationContext.OperationCompleted> is raised and then immediately return from that event handler.  
+>  If a caller is listening for the <xref:System.ServiceModel.OperationContext.OperationCompleted?displayProperty=nameWithType> event for an <xref:System.ServiceModel.OperationContractAttribute.IsTerminating%2A?displayProperty=nameWithType> operation, it is possible to block when the response is received. The proper way to handle this is to schedule work on another thread when <xref:System.ServiceModel.OperationContext.OperationCompleted> is raised and then immediately return from that event handler.  
   
  ]]></format>
         </remarks>
@@ -479,6 +541,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.MessageHeaders</ReturnType>
@@ -514,6 +582,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.MessageProperties</ReturnType>
       </ReturnValue>
@@ -539,6 +613,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.RequestContext</ReturnType>
@@ -612,7 +692,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This is only useful in operations that set <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete%2A?displayProperty=fullName> to `false`. Typically, services do this on some but not all operations. When <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete%2A?displayProperty=fullName> is false the transaction completes automatically. Use <xref:System.ServiceModel.OperationContext.SetTransactionComplete%2A> in cases where it is not possible to determine at design-time whether an operation needs to complete the transaction.  
+ This is only useful in operations that set <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete%2A?displayProperty=nameWithType> to `false`. Typically, services do this on some but not all operations. When <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete%2A?displayProperty=nameWithType> is false the transaction completes automatically. Use <xref:System.ServiceModel.OperationContext.SetTransactionComplete%2A> in cases where it is not possible to determine at design-time whether an operation needs to complete the transaction.  
   
  ]]></format>
         </remarks>

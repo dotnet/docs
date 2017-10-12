@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class is used by <xref:System.Drawing.Printing.PrinterSettings.PaperSources%2A?displayProperty=fullName> and <xref:System.Drawing.Printing.PageSettings.PaperSource%2A?displayProperty=fullName> properties to get the paper source trays that are available on the printer and to set the paper source for a page, respectively.  
+ This class is used by <xref:System.Drawing.Printing.PrinterSettings.PaperSources%2A?displayProperty=nameWithType> and <xref:System.Drawing.Printing.PageSettings.PaperSource%2A?displayProperty=nameWithType> properties to get the paper source trays that are available on the printer and to set the paper source for a page, respectively.  
   
  For more information about printing, see the <xref:System.Drawing.Printing> namespace overview.  
   
@@ -53,8 +53,8 @@
   
 |Property|Initial value|  
 |--------------|-------------------|  
-|<xref:System.Drawing.Printing.PaperSource.Kind%2A>|<xref:System.Drawing.Printing.PaperSourceKind?displayProperty=fullName>|  
-|<xref:System.Drawing.Printing.PaperSource.SourceName%2A>|<xref:System.String.Empty?displayProperty=fullName>|  
+|<xref:System.Drawing.Printing.PaperSource.Kind%2A>|<xref:System.Drawing.Printing.PaperSourceKind?displayProperty=nameWithType>|  
+|<xref:System.Drawing.Printing.PaperSource.SourceName%2A>|<xref:System.String.Empty?displayProperty=nameWithType>|  
   
  ]]></format>
         </remarks>

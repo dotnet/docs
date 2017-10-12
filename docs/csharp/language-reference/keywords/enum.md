@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "enum"
   - "enum_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "enum keyword [C#]"
 ms.assetid: bbeb9a0f-e9b3-41ab-b0a6-c41b1a08974c
@@ -71,7 +69,7 @@ enum Days : byte {Sat=1, Sun, Mon, Tue, Wed, Thu, Fri};
 int x = (int)Days.Sun;  
 ```  
   
- When you apply <xref:System.FlagsAttribute?displayProperty=fullName> to an enumeration that contains elements that can be combined with a bitwise `OR` operation, the attribute affects the behavior of the `enum` when it is used with some tools. You can notice these changes when you use tools such as the <xref:System.Console> class methods and the Expression Evaluator. (See the third example.)  
+ When you apply <xref:System.FlagsAttribute?displayProperty=nameWithType> to an enumeration that contains elements that can be combined with a bitwise `OR` operation, the attribute affects the behavior of the `enum` when it is used with some tools. You can notice these changes when you use tools such as the <xref:System.Console> class methods and the Expression Evaluator. (See the third example.)  
   
 ## Robust Programming  
  Just as with any constant, all references to the individual values of an enum are converted to numeric literals at compile time. This can create potential versioning issues as described in [Constants](../../../csharp/programming-guide/classes-and-structs/constants.md).  
@@ -91,7 +89,7 @@ int x = (int)Days.Sun;
  [!code-cs[csrefKeywordsTypes#11](../../../csharp/language-reference/keywords/codesnippet/CSharp/enum_2.cs)]  
   
 ## Example  
- The following code example illustrates the use and effect of the <xref:System.FlagsAttribute?displayProperty=fullName> attribute on an `enum` declaration.  
+ The following code example illustrates the use and effect of the <xref:System.FlagsAttribute?displayProperty=nameWithType> attribute on an `enum` declaration.  
   
  [!code-cs[csrefKeywordsTypes#12](../../../csharp/language-reference/keywords/codesnippet/CSharp/enum_3.cs)]  
   

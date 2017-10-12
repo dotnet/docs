@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "into_CSharpKeyword"
   - "into"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "into keyword [C#]"
 ms.assetid: 81ec62c1-f0b1-4755-8a31-959876e77f65

@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "registry, adding keys and values [C#]"
   - "registry keys, creating [C#]"
@@ -78,7 +76,7 @@ key.Close();
  It is not secure to store secrets, such as passwords, in the registry as plain text, even if the registry key is protected by access control lists (ACL).  
   
 ## See Also  
- <xref:System.IO?displayProperty=fullName>   
+ <xref:System.IO?displayProperty=nameWithType>   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [File System and the Registry (C# Programming Guide)](../../../csharp/programming-guide/file-system/index.md)   
  [Read, write and delete from the registry with C#](http://www.codeproject.com/Articles/3389/Read-write-and-delete-from-registry-with-C)

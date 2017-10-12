@@ -17,8 +17,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "GetTypeLibInfo"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetTypeLibInfo function [.NET Framework]"
 ms.assetid: a1c4d165-9bdc-4ca8-940e-292d4ffcc338

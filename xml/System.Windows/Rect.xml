@@ -39,22 +39,22 @@
 <a name="xamlValues_MinWidth"></a>   
 ## XAML Values  
  *x*  
- <xref:System.Double?displayProperty=fullName>  
+ <xref:System.Double?displayProperty=nameWithType>  
   
  The x-coordinate location of the left side of the rectangle.  
   
  *y*  
- <xref:System.Double?displayProperty=fullName>  
+ <xref:System.Double?displayProperty=nameWithType>  
   
  The y-coordinate location of the top side of the rectangle.  
   
  *width*  
- <xref:System.Double?displayProperty=fullName>  
+ <xref:System.Double?displayProperty=nameWithType>  
   
  A non-negative value that represents the <xref:System.Windows.Rect.Width%2A> of the rectangle.  
   
  *height*  
- <xref:System.Double?displayProperty=fullName>  
+ <xref:System.Double?displayProperty=nameWithType>  
   
  A non-negative value that represents the <xref:System.Windows.Rect.Height%2A> of the rectangle.  
   
@@ -473,7 +473,7 @@
 ## Remarks  
  This operation tests for object equality.  
   
- In this comparison, two instances of <xref:System.Double.NaN?displayProperty=fullName> are considered equal.  
+ In this comparison, two instances of <xref:System.Double.NaN?displayProperty=nameWithType> are considered equal.  
   
 > [!NOTE]
 >  A rectangle's position and dimensions are described by <xref:System.Double> values. Because <xref:System.Double> values can lose precision when operated upon, a comparison between two values that are logically equal might fail.  
@@ -515,7 +515,7 @@
 ## Remarks  
  This operation tests for object equality.  
   
- In this comparison, two instances of <xref:System.Double.NaN?displayProperty=fullName> are considered equal.  
+ In this comparison, two instances of <xref:System.Double.NaN?displayProperty=nameWithType> are considered equal.  
   
 > [!NOTE]
 >  A rectangle's position and dimensions are described by <xref:System.Double> values. Because <xref:System.Double> values can lose precision when operated upon, a comparison between two values that are logically equal might fail.  
@@ -559,7 +559,7 @@
 ## Remarks  
  This operation tests for object equality.  
   
- In this comparison, two instances of <xref:System.Double.NaN?displayProperty=fullName> are considered equal.  
+ In this comparison, two instances of <xref:System.Double.NaN?displayProperty=nameWithType> are considered equal.  
   
 > [!NOTE]
 >  A rectangle's position and dimensions are described by <xref:System.Double> values. Because <xref:System.Double> values can lose precision when operated upon, a comparison between two values that are logically equal might fail.  
@@ -795,7 +795,7 @@
 ## Remarks  
  The <xref:System.Windows.Rect.Width%2A> of the resulting rectangle is increased or decreased by twice the specified width offset, because it is applied to both the left and right sides of the rectangle. Likewise, the <xref:System.Windows.Rect.Height%2A> of the resulting rectangle is increased or decreased by twice the specified height.  
   
- If the specified width or height modifiers shrink the rectangle by more than its current <xref:System.Windows.Rect.Width%2A> or <xref:System.Windows.Rect.Height%2A>—giving the rectangle a negative area—this method returns <xref:System.Windows.Rect.Empty%2A?displayProperty=fullName>.  
+ If the specified width or height modifiers shrink the rectangle by more than its current <xref:System.Windows.Rect.Width%2A> or <xref:System.Windows.Rect.Height%2A>—giving the rectangle a negative area—this method returns <xref:System.Windows.Rect.Empty%2A?displayProperty=nameWithType>.  
   
    
   
@@ -832,7 +832,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If no intersection exists, the current rectangle becomes <xref:System.Windows.Rect.Empty%2A?displayProperty=fullName>.  
+ If no intersection exists, the current rectangle becomes <xref:System.Windows.Rect.Empty%2A?displayProperty=nameWithType>.  
   
    
   
@@ -1030,7 +1030,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calling this method on an empty rectangle (<xref:System.Windows.Rect.Empty%2A?displayProperty=fullName>) is not allowed.  
+ Calling this method on an empty rectangle (<xref:System.Windows.Rect.Empty%2A?displayProperty=nameWithType>) is not allowed.  
   
  Note that calling the <xref:System.Windows.Rect.Offset%2A> method will only have an effect if you can change the <xref:System.Windows.Rect.X%2A> and <xref:System.Windows.Rect.Y%2A> properties directly. Because <xref:System.Windows.Rect> is a value type, if you reference a <xref:System.Windows.Rect> object by using a property or indexer, you get a copy of the object, not a reference to the object. If you attempt to change <xref:System.Windows.Rect.X%2A> or <xref:System.Windows.Rect.Y%2A> on a property or indexer reference, a compiler error occurs. Similarly, calling <xref:System.Windows.Rect.Offset%2A> on the property or indexer will not change the underlying object.  If you want to change the value of a <xref:System.Windows.Rect> that is referenced as a property or indexer, create a new <xref:System.Windows.Rect>, modify its fields, and then assign the <xref:System.Windows.Rect> back to the property or indexer.  
   
@@ -1070,7 +1070,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calling this method on an empty rectangle (<xref:System.Windows.Rect.Empty%2A?displayProperty=fullName>) is not allowed.  
+ Calling this method on an empty rectangle (<xref:System.Windows.Rect.Empty%2A?displayProperty=nameWithType>) is not allowed.  
   
  Note that calling the <xref:System.Windows.Rect.Offset%2A> method will only have an effect if you can change the <xref:System.Windows.Rect.X%2A> and <xref:System.Windows.Rect.Y%2A> properties directly. Because <xref:System.Windows.Rect> is a value type, if you reference a <xref:System.Windows.Rect> object by using a property or indexer, you get a copy of the object, not a reference to the object. If you attempt to change <xref:System.Windows.Rect.X%2A> or <xref:System.Windows.Rect.Y%2A> on a property or indexer reference, a compiler error occurs. Similarly, calling <xref:System.Windows.Rect.Offset%2A> on the property or indexer will not change the underlying object.  If you want to change the value of a <xref:System.Windows.Rect> that is referenced as a property or indexer, create a new <xref:System.Windows.Rect>, modify its fields, and then assign the <xref:System.Windows.Rect> back to the property or indexer.  
   
@@ -1111,7 +1111,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calling this method with an empty rectangle (<xref:System.Windows.Rect.Empty%2A?displayProperty=fullName>) is not allowed.  
+ Calling this method with an empty rectangle (<xref:System.Windows.Rect.Empty%2A?displayProperty=nameWithType>) is not allowed.  
   
    
   
@@ -1153,7 +1153,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calling this method with an empty rectangle (<xref:System.Windows.Rect.Empty%2A?displayProperty=fullName>) is not allowed.  
+ Calling this method with an empty rectangle (<xref:System.Windows.Rect.Empty%2A?displayProperty=nameWithType>) is not allowed.  
   
    
   
@@ -1196,12 +1196,12 @@
 ## Remarks  
  This operation tests for object equality.  
   
- In this comparison, two instances of <xref:System.Double.NaN?displayProperty=fullName> are considered equal.  
+ In this comparison, two instances of <xref:System.Double.NaN?displayProperty=nameWithType> are considered equal.  
   
 > [!NOTE]
 >  A rectangle's position and dimensions are described by <xref:System.Double> values. Because <xref:System.Double> values can lose precision when operated upon, a comparison between two values that are logically equal might fail.  
   
- The equivalent method for this operator is <xref:System.Windows.Rect.Equals%28System.Windows.Rect%2CSystem.Windows.Rect%29?displayProperty=fullName>  
+ The equivalent method for this operator is <xref:System.Windows.Rect.Equals%28System.Windows.Rect%2CSystem.Windows.Rect%29?displayProperty=nameWithType>  
   
 ## Examples  
  The following example shows how to use the <xref:System.Windows.Rect.op_Equality%2A> operator to determine if two rectangles are exactly equal.  
@@ -1241,12 +1241,12 @@
 ## Remarks  
  This operation tests for object inequality.  
   
- In this comparison, two instances of <xref:System.Double.NaN?displayProperty=fullName> are considered equal.  
+ In this comparison, two instances of <xref:System.Double.NaN?displayProperty=nameWithType> are considered equal.  
   
 > [!NOTE]
 >  A rectangle's position and dimensions are described by <xref:System.Double> values. Because <xref:System.Double> values can lose precision when operated upon, a comparison between two values that are logically equal might fail.  
   
- The equivalent method for this operator is <xref:System.Windows.Rect.Equals%28System.Windows.Rect%2CSystem.Windows.Rect%29?displayProperty=fullName>  
+ The equivalent method for this operator is <xref:System.Windows.Rect.Equals%28System.Windows.Rect%2CSystem.Windows.Rect%29?displayProperty=nameWithType>  
   
 ## Examples  
  The following example shows how to use the <xref:System.Windows.Rect.op_Inequality%2A> operator to determine if two rectangles are not exactly equal.  

@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: 0c4f8b98-483b-4cf8-86be-fa146eef90dc
 caps.latest.revision: 3
 author: "BillWagner"
@@ -32,13 +30,13 @@ This topic describes how to control white space when serializing an XML tree.
 ## White Space Behavior of Methods that Serialize XML Trees  
  The following methods in the <xref:System.Xml.Linq.XElement> and <xref:System.Xml.Linq.XDocument> classes serialize an XML tree. You can serialize an XML tree to a file, a <xref:System.IO.TextReader>, or an <xref:System.Xml.XmlReader>. The `ToString` method serializes to a string.  
   
--   <xref:System.Xml.Linq.XElement.Save%2A?displayProperty=fullName>  
+-   <xref:System.Xml.Linq.XElement.Save%2A?displayProperty=nameWithType>  
   
--   <xref:System.Xml.Linq.XDocument.Save%2A?displayProperty=fullName>  
+-   <xref:System.Xml.Linq.XDocument.Save%2A?displayProperty=nameWithType>  
   
--   <xref:System.Xml.Linq.XElement.ToString%2A?displayProperty=fullName>  
+-   <xref:System.Xml.Linq.XElement.ToString%2A?displayProperty=nameWithType>  
   
--   <xref:System.Xml.Linq.XDocument.ToString%2A?displayProperty=fullName>  
+-   <xref:System.Xml.Linq.XDocument.ToString%2A?displayProperty=nameWithType>  
   
  If the method does not take <xref:System.Xml.Linq.SaveOptions> as an argument, then the method will format (indent) the serialized XML. In this case, all insignificant white space in the XML tree is discarded.  
   

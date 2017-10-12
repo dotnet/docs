@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "/noconfig"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "/noconfig compiler option [C#]"
   - "csc.rsp"

@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "virtual_CSharpKeyword"
   - "virtual"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "virtual keyword [C#]"
 ms.assetid: 5da9abae-bc1e-434f-8bea-3601b8dcb3b2
@@ -48,7 +46,7 @@ public virtual double Area()
   
  By default, methods are non-virtual. You cannot override a non-virtual method.  
   
- You cannot use the `virtual` modifier with the `static`, `abstract, private`, or `override` modifiers. The following example shows a virtual property:  
+ You cannot use the `virtual` modifier with the `static`, `abstract`, `private`, or `override` modifiers. The following example shows a virtual property:  
   
  [!code-cs[csrefKeywordsModifiers#26](../../../csharp/language-reference/keywords/codesnippet/CSharp/virtual_1.cs)]  
   

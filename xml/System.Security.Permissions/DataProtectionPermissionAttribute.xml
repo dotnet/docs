@@ -113,7 +113,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the value is `false`, a <xref:System.Security.SecurityException> occurs when the <xref:System.Security.Cryptography.ProtectedData.Protect%2A?displayProperty=fullName> method is called.  
+ If the value is `false`, a <xref:System.Security.SecurityException> occurs when the <xref:System.Security.Cryptography.ProtectedData.Protect%2A?displayProperty=nameWithType> method is called.  
   
  ]]></format>
         </remarks>
@@ -139,7 +139,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the value is `false`, a <xref:System.Security.SecurityException> occurs when the <xref:System.Security.Cryptography.ProtectedMemory.Protect%2A?displayProperty=fullName> method is called.  
+ If the value is `false`, a <xref:System.Security.SecurityException> occurs when the <xref:System.Security.Cryptography.ProtectedMemory.Protect%2A?displayProperty=nameWithType> method is called.  
   
  ]]></format>
         </remarks>
@@ -165,7 +165,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If this value is `false`, a <xref:System.Security.SecurityException> occurs when the <xref:System.Security.Cryptography.ProtectedData.Unprotect%2A?displayProperty=fullName> method is called.  
+ If this value is `false`, a <xref:System.Security.SecurityException> occurs when the <xref:System.Security.Cryptography.ProtectedData.Unprotect%2A?displayProperty=nameWithType> method is called.  
   
  ]]></format>
         </remarks>
@@ -191,7 +191,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If this value is `false`, a <xref:System.Security.SecurityException> occurs when the <xref:System.Security.Cryptography.ProtectedMemory.Unprotect%2A?displayProperty=fullName> method is called.  
+ If this value is `false`, a <xref:System.Security.SecurityException> occurs when the <xref:System.Security.Cryptography.ProtectedMemory.Unprotect%2A?displayProperty=nameWithType> method is called.  
   
  ]]></format>
         </remarks>

@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "objects [Visual Basic], converting"
 ms.assetid: 60cb5fc7-7ba4-4ab5-9c24-480fa12ddcdc
@@ -53,7 +51,7 @@ End Sub
 ## Compiling the Code  
  This example requires:  
   
--   A reference to the <xref:System?displayProperty=fullName> namespace.  
+-   A reference to the <xref:System?displayProperty=nameWithType> namespace.  
   
 ## See Also  
  <xref:System.Object>   

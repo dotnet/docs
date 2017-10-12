@@ -9,11 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "PrepareConstrainedRegions method"
   - "managed debugging assistants (MDAs), illegal PrepareConstrainedRegions"
@@ -27,7 +22,7 @@ ms.author: "mairaw"
 manager: "wpickett"
 ---
 # illegalPrepareConstrainedRegion MDA
-The `illegalPrepareConstrainedRegion` managed debugging assistant (MDA) is activated when a <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareConstrainedRegions%2A?displayProperty=fullName> method call does not immediately precede the `try` statement of the exception handler. This restriction is at the MSIL level, so it is permissible to have non-code-generating source between the call and the `try`, such as comments.  
+The `illegalPrepareConstrainedRegion` managed debugging assistant (MDA) is activated when a <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareConstrainedRegions%2A?displayProperty=nameWithType> method call does not immediately precede the `try` statement of the exception handler. This restriction is at the MSIL level, so it is permissible to have non-code-generating source between the call and the `try`, such as comments.  
   
 ## Symptoms  
  A constrained execution region (CER) that is never treated as such, but as a simple exception handling block (`finally` or `catch`). As a consequence, the region does not run in the event of an out-of-memory condition or a thread abort.  

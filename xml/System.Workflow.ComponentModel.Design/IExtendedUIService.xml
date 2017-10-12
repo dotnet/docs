@@ -72,7 +72,7 @@
     </Member>
     <Member MemberName="AddWebReference">
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DialogResult AddWebReference (out Uri url, out Type proxyClass);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Windows.Forms.DialogResult AddWebReference(class System.Uri url, class System.Type proxyClass) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Windows.Forms.DialogResult AddWebReference([out] class System.Uri&amp; url, [out] class System.Type&amp; proxyClass) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IExtendedUIService.AddWebReference(System.Uri@,System.Type@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

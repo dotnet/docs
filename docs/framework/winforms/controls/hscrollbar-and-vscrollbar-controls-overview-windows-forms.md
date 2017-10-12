@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "HScrollBar"
   - "VScrollBar"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "ScrollBar control [Windows Forms]"
   - "HScrollBar control [Windows Forms], about HScrollBar"

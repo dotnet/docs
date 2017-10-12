@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "hybrid applications [WPF interoperability]"
   - "arranging controls"
@@ -95,7 +98,7 @@ This walkthrough shows you how to use              [!INCLUDE[TLA2#tla_winclient]
   
      [!code-xaml[WpfLayoutHostingWfWithXaml#3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#3)]  
   
-2.  Press F5 to build and run the application. The                                  [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)]<xref:System.Windows.Forms.Button?displayProperty=fullName> control appears in the                                  <xref:System.Windows.Controls.Canvas>. The hosted control is sized based on its content, and the                                  <xref:System.Windows.Forms.Integration.WindowsFormsHost> element is sized to accommodate the hosted control.  
+2.  Press F5 to build and run the application. The                                  [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)]<xref:System.Windows.Forms.Button?displayProperty=nameWithType> control appears in the                                  <xref:System.Windows.Controls.Canvas>. The hosted control is sized based on its content, and the                                  <xref:System.Windows.Forms.Integration.WindowsFormsHost> element is sized to accommodate the hosted control.  
   
 ## Sizing to Content  
  The                  <xref:System.Windows.Forms.Integration.WindowsFormsHost> element ensures that the hosted control is sized to display its content properly.  

@@ -43,7 +43,7 @@
   
  Two situations illustrate the need to save information in the state-saver <xref:System.Collections.IDictionary>. First, suppose that your installer sets a registry key. It should save the key's original value in the <xref:System.Collections.IDictionary>. If the installation is rolled back, the original value can be restored. Second, suppose the installer replaces an existing file. Save the existing file in a temporary directory and the location of the new location of the file in the <xref:System.Collections.IDictionary>. If the installation is rolled back, the newer file is deleted and replaced by the original from the temporary location.  
   
- The <xref:System.Configuration.Install.Installer.Context%2A?displayProperty=fullName> property contains information about the installation. For example, information about the location of the log file for the installation, the location of the file to save information required by the <xref:System.Configuration.Install.Installer.Uninstall%2A> method, and the command line that was entered when the installation executable was run.  
+ The <xref:System.Configuration.Install.Installer.Context%2A?displayProperty=nameWithType> property contains information about the installation. For example, information about the location of the log file for the installation, the location of the file to save information required by the <xref:System.Configuration.Install.Installer.Uninstall%2A> method, and the command line that was entered when the installation executable was run.  
   
    
   

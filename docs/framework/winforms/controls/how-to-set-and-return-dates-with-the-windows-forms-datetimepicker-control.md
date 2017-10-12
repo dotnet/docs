@@ -9,8 +9,10 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
+dev_langs:
+- "csharp"
+- "vb"
+- "cpp"
 helpviewer_keywords: 
   - "dates, setting in DateTimePicker"
   - "DateTimePicker control [Windows Forms], setting and returning dates"

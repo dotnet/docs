@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "yield"
   - "yield_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "yield keyword [C#]"
 ms.assetid: 1089194f-9e53-46a2-8642-53ccbe9d414d
@@ -48,7 +46,7 @@ yield break;
   
  You can use a `yield break` statement to end the iteration.  
   
- For more information about iterators, see [Iterators](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7).  
+ For more information about iterators, see [Iterators](../../iterators.md).  
   
 ## Iterator Methods and get Accessors  
  The declaration of an iterator must meet the following requirements:  
@@ -108,4 +106,4 @@ foreach (string element in elements)
  [C# Reference](../../../csharp/language-reference/index.md)   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [foreach, in](../../../csharp/language-reference/keywords/foreach-in.md)   
- [Iterators](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7)
+ [Iterators](../../iterators.md)

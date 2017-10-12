@@ -6,6 +6,9 @@ ms.prod: ".net-framework"
 ms.technology: 
   - "dotnet-wpf"
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "properties, attached"
   - "properties, overview"

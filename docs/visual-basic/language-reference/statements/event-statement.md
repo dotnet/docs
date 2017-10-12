@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.Event"
   - "vb.Custom"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Event statement"
   - "declaring events, syntax"

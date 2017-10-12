@@ -18,7 +18,7 @@ There are multiple ways to get started with F#.  We have multiple articles writt
 
 | OS | Prefer Visual Studio | Prefer Visual Studio Code | Prefer a command line |
 | -- |------------------------|--------------------------|-----------------------------|-------------------------|
-| Windows | [Get started with Visual Studio](get-started-visual-studio.md) | [Get started with VSCode and Ionide](get-started-vscode.md) | [Get started with the .NET Core CLI](get-started-vscode.md) |
+| Windows | [Get started with Visual Studio](get-started-visual-studio.md) | [Get started with VSCode and Ionide](get-started-vscode.md) | [Get started with the .NET Core CLI](get-started-command-line.md) |
 | macOS | [Get started with VS for Mac](get-started-with-visual-studio-for-mac.md) | [Get started with VSCode and Ionide](get-started-vscode.md) | [Get started with the .NET Core CLI](get-started-command-line.md) |
 | Linux | N/A | [Get started with VSCode and Ionide](get-started-vscode.md) | [Get started with the .NET Core CLI](get-started-command-line.md) |
 

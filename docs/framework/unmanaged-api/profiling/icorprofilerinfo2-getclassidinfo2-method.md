@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo2::GetClassIDInfo2"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetClassIDInfo2 method [.NET Framework profiling]"
   - "ICorProfilerInfo2::GetClassIDInfo2 method [.NET Framework profiling]"

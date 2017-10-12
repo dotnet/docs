@@ -145,7 +145,7 @@
   
 -   If the cell is currently in edit mode, this method commits and ends the edit.  
   
--   If the cell is not in edit mode and the <xref:System.Windows.Forms.DataGridView.EditMode%2A?displayProperty=fullName> property is set to <xref:System.Windows.Forms.DataGridViewEditMode.EditProgrammatically>, this method returns.  
+-   If the cell is not in edit mode and the <xref:System.Windows.Forms.DataGridView.EditMode%2A?displayProperty=nameWithType> property is set to <xref:System.Windows.Forms.DataGridViewEditMode.EditProgrammatically>, this method returns.  
   
 -   If none of the preceding actions is taken, this method causes the cell to enter edit mode.  
   

@@ -35,7 +35,7 @@
   
 |Property|Default value|  
 |--------------|-------------------|  
-|<xref:System.Security.Cryptography.Pkcs.CmsSigner.SignerIdentifierType%2A>|<xref:System.Security.Cryptography.Pkcs.SubjectIdentifierType?displayProperty=fullName>|  
+|<xref:System.Security.Cryptography.Pkcs.CmsSigner.SignerIdentifierType%2A>|<xref:System.Security.Cryptography.Pkcs.SubjectIdentifierType?displayProperty=nameWithType>|  
 |<xref:System.Security.Cryptography.Pkcs.CmsSigner.DigestAlgorithm%2A>|1.3.14.3.2.26 (szOID_OIWSEC_sha1)|  
 |<xref:System.Security.Cryptography.Pkcs.CmsSigner.IncludeOption%2A>|<xref:System.Security.Cryptography.X509Certificates.X509IncludeOption.None> if <xref:System.Security.Cryptography.Pkcs.CmsSigner.SignerIdentifierType%2A> is <xref:System.Security.Cryptography.Pkcs.SubjectIdentifierType>,<br /><br /> <xref:System.Security.Cryptography.X509Certificates.X509IncludeOption.ExcludeRoot> otherwise|  
   
@@ -62,7 +62,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For the default property values used with this constructor, see <xref:System.Security.Cryptography.Pkcs.CmsSigner.%23ctor>. An exception to those values when this constructor is used is that <xref:System.Security.Cryptography.Pkcs.CmsSigner.IncludeOption%2A> is set to <xref:System.Security.Cryptography.X509Certificates.X509IncludeOption?displayProperty=fullName>.  
+ For the default property values used with this constructor, see <xref:System.Security.Cryptography.Pkcs.CmsSigner.%23ctor>. An exception to those values when this constructor is used is that <xref:System.Security.Cryptography.Pkcs.CmsSigner.IncludeOption%2A> is set to <xref:System.Security.Cryptography.X509Certificates.X509IncludeOption?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -107,7 +107,7 @@
 ## Remarks  
  For the default property values used with this constructor, see <xref:System.Security.Cryptography.Pkcs.CmsSigner.%23ctor>.  
   
- The signing certificate specified by the `certificate` parameter is not checked for validity on input. To validate the certificate prior to supplying it to this constructor, use the <xref:System.Security.Cryptography.X509Certificates.X509Chain.Build%2A?displayProperty=fullName> method.  
+ The signing certificate specified by the `certificate` parameter is not checked for validity on input. To validate the certificate prior to supplying it to this constructor, use the <xref:System.Security.Cryptography.X509Certificates.X509Chain.Build%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -134,7 +134,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The  signing certificate specified by the `certificate` parameter is not checked for validity on input. To validate the certificate prior to supplying it to this constructor, use the <xref:System.Security.Cryptography.X509Certificates.X509Chain.Build%2A?displayProperty=fullName> method.  
+ The  signing certificate specified by the `certificate` parameter is not checked for validity on input. To validate the certificate prior to supplying it to this constructor, use the <xref:System.Security.Cryptography.X509Certificates.X509Chain.Build%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -272,7 +272,7 @@
 ## Remarks  
  An example of a signed attribute that might be included in the <xref:System.Security.Cryptography.CryptographicAttributeObjectCollection> collection retrieved by the <xref:System.Security.Cryptography.Pkcs.CmsSigner.SignedAttributes%2A> property is the <xref:System.Security.Cryptography.Pkcs.Pkcs9SigningTime> signing time attribute.  
   
- A <xref:System.Security.Cryptography.Pkcs.Pkcs9ContentType> object and a <xref:System.Security.Cryptography.Pkcs.Pkcs9MessageDigest> object will be automatically generated and placed in the <xref:System.Security.Cryptography.Pkcs.SignerInfo.SignedAttributes%2A?displayProperty=fullName> property for the corresponding signer whenever the <xref:System.Security.Cryptography.Pkcs.CmsSigner.SignedAttributes%2A> property is not empty.  
+ A <xref:System.Security.Cryptography.Pkcs.Pkcs9ContentType> object and a <xref:System.Security.Cryptography.Pkcs.Pkcs9MessageDigest> object will be automatically generated and placed in the <xref:System.Security.Cryptography.Pkcs.SignerInfo.SignedAttributes%2A?displayProperty=nameWithType> property for the corresponding signer whenever the <xref:System.Security.Cryptography.Pkcs.CmsSigner.SignedAttributes%2A> property is not empty.  
   
  ]]></format>
         </remarks>

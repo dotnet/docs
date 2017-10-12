@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+- "csharp"
+- "vb"
 helpviewer_keywords: 
   - "tasks, how to unwrap nested tasks"
 ms.assetid: a0769dd2-0f6d-48ca-8418-a9d39de7f450
@@ -43,5 +46,5 @@ You can return a task from a method, and then wait on or continue from that task
  [!code-vb[TPL_UnWrap#04](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_unwrap/vb/snippet04.vb#04)]  
   
 ## See Also  
- <xref:System.Threading.Tasks.TaskExtensions?displayProperty=fullName>   
+ <xref:System.Threading.Tasks.TaskExtensions?displayProperty=nameWithType>   
  [Task-based Asynchronous Programming](../../../docs/standard/parallel-programming/task-based-asynchronous-programming.md)

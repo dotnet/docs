@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Log object"
   - "My.Log object"
@@ -60,6 +58,6 @@ This section contains topics that cover how to log information from your applica
 |Filter the output of the `My.Application.Log` logs.|[Walkthrough: Filtering My.Application.Log Output](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-filtering-my-application-log-output.md)|  
   
 ## See Also  
- <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=fullName>   
+ <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=nameWithType>   
  [Working with Application Logs](../../../../visual-basic/developing-apps/programming/log-info/working-with-application-logs.md)   
  [Troubleshooting: Log Listeners](../../../../visual-basic/developing-apps/programming/log-info/troubleshooting-log-listeners.md)

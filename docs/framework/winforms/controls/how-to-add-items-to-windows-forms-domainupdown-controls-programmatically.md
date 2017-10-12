@@ -9,8 +9,10 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
+dev_langs:
+- "csharp"
+- "vb"
+- "cpp"
 helpviewer_keywords: 
   - "spin button control, adding items"
   - "DomainUpDown control [Windows Forms], adding items to"
@@ -60,7 +62,7 @@ You can add items to the Windows Forms <xref:System.Windows.Forms.DomainUpDown> 
   
 ## See Also  
  <xref:System.Windows.Forms.DomainUpDown>   
- <xref:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.Add%2A?displayProperty=fullName>   
- <xref:System.Collections.ArrayList.Insert%2A?displayProperty=fullName>   
+ <xref:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.Add%2A?displayProperty=nameWithType>   
+ <xref:System.Collections.ArrayList.Insert%2A?displayProperty=nameWithType>   
  [DomainUpDown Control](../../../../docs/framework/winforms/controls/domainupdown-control-windows-forms.md)   
  [DomainUpDown Control Overview](../../../../docs/framework/winforms/controls/domainupdown-control-overview-windows-forms.md)

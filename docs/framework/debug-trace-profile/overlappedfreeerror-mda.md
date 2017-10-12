@@ -9,11 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "OverlappedFreeError MDA"
   - "overlapped free method call error"
@@ -28,7 +23,7 @@ ms.author: "mairaw"
 manager: "wpickett"
 ---
 # overlappedFreeError MDA
-The `overlappedFreeError` managed debugging assistant (MDA) is activated when the <xref:System.Threading.Overlapped.Free%28System.Threading.NativeOverlapped%2A%29?displayProperty=fullName> method is called before the overlapped operation has completed.  
+The `overlappedFreeError` managed debugging assistant (MDA) is activated when the <xref:System.Threading.Overlapped.Free%28System.Threading.NativeOverlapped%2A%29?displayProperty=nameWithType> method is called before the overlapped operation has completed.  
   
 ## Symptoms  
  Access violations or corruption of the garbage-collected heap.  

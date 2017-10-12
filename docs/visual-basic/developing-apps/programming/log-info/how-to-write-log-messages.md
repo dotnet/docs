@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "My.Application.Log object, writing log messags"
 ms.assetid: 972a3e0c-2996-4623-a7a9-d7ebc4d207f8
@@ -48,7 +46,7 @@ You can use the `My.Application.Log` and `My.Log` objects to log information abo
  Make sure the data you write to the log does not include sensitive information such as user passwords. For more information, see [Working with Application Logs](../../../../visual-basic/developing-apps/programming/log-info/working-with-application-logs.md).  
   
 ## See Also  
- <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=fullName>   
+ <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=nameWithType>   
  <xref:Microsoft.VisualBasic.Logging.Log.WriteEntry%2A>   
  <xref:Microsoft.VisualBasic.Logging.Log.WriteException%2A>   
  [Working with Application Logs](../../../../visual-basic/developing-apps/programming/log-info/working-with-application-logs.md)   

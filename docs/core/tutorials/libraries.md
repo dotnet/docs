@@ -254,7 +254,7 @@ It's important to be able to test across platforms. You can use either [xUnit](h
    dotnet build
    ```
 
-[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
+   [!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
 
 1. Verify that xUnit runs by executing the `dotnet test` command. If you chose to use MSTest, then the MSTest console runner should run instead.
     

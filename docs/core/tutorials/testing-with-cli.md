@@ -184,7 +184,10 @@ The following shows the complete project structure:
 ```
 
 Start in the *test/NewTypesTests* directory. Restore the test project with the [`dotnet restore`](../tools/dotnet-restore.md) 
-([see note](#dotnet-restore-note)) command. Run the tests with the [`dotnet test`](../tools/dotnet-test.md) command. This command starts the test runner specified in the project file.
+ command. Run the tests with the [`dotnet test`](../tools/dotnet-test.md) command. This command starts the test runner specified in the project file.
+
+ [!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
+
  
 As expected, testing fails, and the console displays the following output:
  
@@ -255,4 +258,3 @@ Testing passes. The pet types' methods return the correct values when talking to
 
 You've learned techniques for organizing and testing projects using xUnit. Go forward with these techniques applying them in your own projects. *Happy coding!*
 
-[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]

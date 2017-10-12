@@ -65,7 +65,7 @@ The table below shows the mapping between the DNX/DNU commands and their CLI cou
 | dnu pack                       	| dotnet pack    	| Package up a NuGet package of your code.                                                                        	|
 | dnx \[command] (for example, "dnx web") 	| N/A\*          	| In DNX world, run a command as defined in the project.json.                                                     	|
 | dnu install                    	| N/A\*          	| In the DNX world, install a package as a dependency.                                                            	|
-| dnu restore                    	| dotnet restore 	| Restore dependencies specified in your project.json.([see note](#dotnet-restore-note))                                                            	|
+| dnu restore                    	| dotnet restore 	| Restore dependencies specified in your project.json. ([see note](#dotnet-restore-note))                                                            	|
 | dnu publish                    	| dotnet publish 	| Publish your application for deployment in one of the three forms (portable, portable with native and standalone). 	|
 | dnu wrap                       	| N/A\*          	| In DNX world, wrap a project.json in csproj.                                                                    	|
 | dnu commands                   	| N/A\*          	| In DNX world, manage the globally installed commands.                                                           	|

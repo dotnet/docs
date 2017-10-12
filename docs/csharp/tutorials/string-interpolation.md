@@ -47,9 +47,11 @@ dotnet new console
 
 This command will create a barebones .NET core project with a project file, *interpolated.csproj*, and a source code file, *Program.cs*. You will need to execute `dotnet restore` to restore the dependencies needed to compile this project.
 
+[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
+
 To execute the program, use `dotnet run`. You should see "Hello, World" output to the console.
 
-[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
+
 
 ## Intro to String Interpolation
 

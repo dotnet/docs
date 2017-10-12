@@ -37,13 +37,9 @@
   
 -   The attribute can be applied only one time.  
   
-   
 
-        
-        
-        
-        <!-- TODO: Replace or Update example  
-## Examples  
+<!-- TODO: Update or Replace the example -->
+ ## Examples  
  The following example shows how to use the <xref:System.ComponentModel.DataAnnotations.DisplayColumnAttribute> attribute. The example performs the following tasks:  
   
 -   Implements metadata partial classes for the Address and Customer tables, which are parent tables for the CustomerAddress table.  
@@ -63,12 +59,12 @@
   
  To compile the example, you need the following:  
   
--   Visual Studio 2008 Service Pack 1 or Visual Developer 2008 Express Edition Service Pack 1.  
+-   Any edition of Visual Studio 2010 or later.
   
--   The AdventureWorksLT sample database. For information about how to download and install the SQL Server sample database, see [Microsoft SQL Server Product Samples: Database](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks2014). Make sure that you install the correct version of the sample database for the version of SQL Server that you are running (SQL Server 2005 or SQL Server 2008).  
+-   The AdventureWorksLT sample database. For information about how to download and install the SQL Server sample database, see [Microsoft SQL Server Product Samples: Database](http://go.microsoft.com/fwlink/?LinkId=117483) on the CodePlex site. Make sure that you install the correct version of the sample database for the version of SQL Server that you are running.  
   
 -   A dynamic data-driven Web site. This enables you to create a data context for the database and to create the class that contains the data field to customize. For more information, see `Walkthrough: Creating a New Dynamic Data Web Site using Scaffolding`.  
-  -->
+-->  
  ]]></format>
     </remarks>
   </Docs>
@@ -97,7 +93,6 @@
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-            
 ## Examples  
  The following example shows how to define the parent column to display in a page for the child table as the foreign-key column.  
   
@@ -130,8 +125,7 @@
       <Docs>
         <param name="displayColumn">The name of the column to use as the display column.</param>
         <param name="sortColumn">The name of the column to use for sorting.</param>
-        <summary>Initializes a new instance of the                                         
-          <see cref="T:System.ComponentModel.DataAnnotations.DisplayColumnAttribute" /> class by using the specified display and sort columns.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.DisplayColumnAttribute" /> class by using the specified display and sort columns.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -165,11 +159,11 @@
       <Docs>
         <param name="displayColumn">The name of the column to use as the display column.</param>
         <param name="sortColumn">The name of the column to use for sorting.</param>
-        <param name="sortDescending"><see langword="true" /> to sort in descending order; otherwise, <see langword="false" />.The default is <see langword="false" />.</param>
+        <param name="sortDescending">
+          <see langword="true" /> to sort in descending order; otherwise, <see langword="false" />. The default is <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.DisplayColumnAttribute" /> class by using the specified display column, and the specified sort column and sort order.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-
   
 ## Examples  
  The following example shows how to define the parent column to display in a page for the child table as the foreign-key column. It sets the parent table column for sorting and also sets the sort order.  

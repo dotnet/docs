@@ -44,12 +44,9 @@
 -   Issue validation errors as appropriate.  
   
  For more information, see [ASP.NET Dynamic Data Guidelines](http://msdn.microsoft.com/en-us/c563bbf3-feb9-484e-81d1-a585f1b0e192).  
-   
 
-        
-        
-        
-        <!-- TODO: Update or Replace the the example  
+
+<!-- TODO: Update or Replace the the example  -->
 ## Examples  
  The following example uses the <xref:System.ComponentModel.DataAnnotations.DataTypeAttribute> attribute to customize the display of the EmailAddress data field. The e-mail addresses are shown as hyperlinks instead of as simple text, which is what Dynamic Data would infer from the intrinsic data type. The example code is in three parts, and it performs the following steps:  
   
@@ -58,26 +55,25 @@
 -   In the associated metadata class, it applies the <xref:System.ComponentModel.DataAnnotations.DataTypeAttribute> attribute to the EmailAddress data field by specifying the <xref:System.ComponentModel.DataAnnotations.DataType.EmailAddress> enumerated value. This indicates to the Text.ascx field template that it should customize the display of e-mail addresses.  
   
 -   It modifies the Text.ascx field template to customize the display of the EmailAddress data fields.  
- -->
-
+  
  [!code-csharp[System.ComponentModel.DataAnnotations.DataTypeAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/CS/Customer.cs#1)]
- [!code-vb[System.ComponentModel.DataAnnotations.DataTypeAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/VB/Customer.vb#1)]    
-
+ [!code-vb[System.ComponentModel.DataAnnotations.DataTypeAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/VB/Customer.vb#1)]  
+  
  [!code-aspx-csharp[System.ComponentModel.DataAnnotations.DataTypeAttribute#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/CS/Text.ascx#2)]
  [!code-aspx-vb[System.ComponentModel.DataAnnotations.DataTypeAttribute#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/VB/Text.ascx#2)]
   
  [!code-csharp[System.ComponentModel.DataAnnotations.DataTypeAttribute#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/CS/Text.ascx.cs#3)]
- [!code-vb[System.ComponentModel.DataAnnotations.DataTypeAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/VB/Text.ascx.vb#3)]     
-
-To compile and run the example code, you need the following:     
-
--   Any edition of Visual Studio 2010 or later.    
-
--   The AdventureWorksLT sample database. For information about how to download and install the SQL Server sample database, see [Microsoft SQL Server Product Samples: Database](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks2014). The samples work with SQL Server 2014 and later versions.    
-
--   A data-driven Web site. This enables you to create a data context for the database and to create the class that contains the data field to customize. For more information, see `Walkthrough: Creating a New Dynamic Data Web Site using Scaffolding`.     
-
-]]></format>
+ [!code-vb[System.ComponentModel.DataAnnotations.DataTypeAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/VB/Text.ascx.vb#3)]  
+  
+ To compile and run the example code, you need the following:  
+  
+-   Any edition of Visual Studio 2010 or later.
+  
+-   The AdventureWorksLT sample database. For information about how to download and install the SQL Server sample database, see [Microsoft SQL Server Product Samples: Database](http://go.microsoft.com/fwlink/?LinkId=117483) on the Codeplex site. Make sure that you install the correct version of the sample database for the version of SQL Server that you are running.  
+  
+-   A data-driven Web site. This enables you to create a data context for the database and to create the class that contains the data field to customize. For more information, see `Walkthrough: Creating a New Dynamic Data Web Site using Scaffolding`.  
+  
+ ]]></format>
     </remarks>
   </Docs>
   <Members>
@@ -197,8 +193,7 @@ To compile and run the example code, you need the following:
       </ReturnValue>
       <Docs>
         <summary>Gets the type that is associated with the data field.</summary>
-        <value>One of the                                                   
-          <see cref="T:System.ComponentModel.DataAnnotations.DataType" /> values.</value>
+        <value>One of the <see cref="T:System.ComponentModel.DataAnnotations.DataType" /> values.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -49,11 +49,15 @@ The .NET Framework 4.7.1 can be installed on Windows 10, Windows 8.1, Windows 7 
 You can target the .NET Framework 4.7.1 in Visual Studio 2012 or later by installing the [.NET Framework 4.7.1 Developer Pack](http://go.microsoft.com/fwlink/?LinkId=825319). 
 
 ### What's new in the .NET Framework 4.7.1
+
 The .NET Framework 4.7.1 includes new features in the following areas:
  
 - [Core](#core471)
 - [Common language runtime (CLR)](#clr)
+- [Networking](#net471)
 - [ASP.NET](#asp-net471) 
+
+In addition, a major focus in the .NET Framework 4.7.1 is improved accessiblity, so that apps are able to work well with a variety of devices and form factors. For information on accessibility improvements in the .NET Framework 4.7.1, see [What's new in accessibility in the .NET Framework](whats-new-in-accessibility.md). 
 
 <a name="core471" />
 #### Core
@@ -62,19 +66,23 @@ The .NET Framework 4.7.1 includes new features in the following areas:
 
 [.NET Standard](~/docs/standard/net-standard.md) defines a set of APIs that must be available on each .NET implementation that supports that version of the standard. The .NET Framework 4.7.1 fully supports .NET Standard 2.0 and adds [about 200 APIs](https://github.com/dotnet/standard/blob/master/netstandard/src/ApiCompatBaseline.net461.txt) that are defined in .NET Standard 2.0 and are missing from the .NET Framework 4.6.1, 4.6.2, and 4.7. (Note that these versions of the .NET Framework support .NET Standard 2.0 only if additional .NET Standard support files are also deployed on the target system.) For more information, see "BCL - .NET Standard 2.0 Support" in the [.NET Framework 4.7.1 Runtime and Compiler Features](https://blogs.msdn.microsoft.com/dotnet/2017/09/28/net-framework-4-7-1-runtime-and-compiler-features) .NET blog.
 
+**Support for configuration builders**
+
+Configuration builders allow developers to inject and build configuration settings for applications dynamically at runtime. Custom configuration builders can be used to modify existing data in a configuration section or to build a configuration section entirely from scratch. Without configuration builders, .config files are static, and their settings are defined some time before an application is launched.
+
+To create a custom configuration builder, you derive your builder from the abstract <xref:System.Configuration.ConfigurationBuilder> class and override its <xref:System.Configuration.ConfigurationBuilder.ProcessConfigurationSection%2A?displayProperty=nameWithType> and <xref:System.Configuration.ConfigurationBuilder.ProcessRawXml%2A?displayProperty=nameWithType>. You also define your builders in your .config file. For more information, see the "Configuration Builders" section in the [.NET Framework 4.7.1 ASP.NET and Configuration Features](https://blogs.msdn.microsoft.com/dotnet/2017/09/13/net-framework-4-7-1-asp-net-and-configuration-features) .NET blog. 
+
+**Runtime feature detection**
+
+The <xref:System.Runtime.CompilerServices.RuntimeFeature?displayProperty=fullName> class provides a mechanism for determine whether a predefined feature is supported on a given .NET implementation at compile-time or runtime. At compile time, a compiler can check whether a specified field exists to determine whether the feature is supported; if so, it can emit code that takes advantage of that feature. At runtime, an application can call the <xref:System.Runtime.CompilerServices.RuntimeFeature.IsSupported%2A?displayProperty=nameWithType> method before emitting code at runtime. For more information, see [Add helper method to describe features supported by the runtime](https://github.com/dotnet/corefx/issues/17116).
+
 **ValueTuple** is serializable**
 
 Starting with the .NET Framework 4.7.1, <xref:System.ValueTuple?displayProperty=fullName> and its associated generic types are marked as [Serializable](xref:System.SerializationAttribute), which allows binary serialization. This should make migrating Tuple types, such as <xref:System.Tuple%603> and <xref:System.Tuple%604>, to value tuple types easier. For more information, see "Compiler -- ValueTuple is Serializable" in the [.NET Framework 4.7.1 Runtime and Compiler Features](https://blogs.msdn.microsoft.com/dotnet/2017/09/28/net-framework-4-7-1-runtime-and-compiler-features) .NET blog.
 
 **Support for read-only references**
 
-The .NET Framework 4.7.1 adds the <xref:System.Runtime.CompilerServices.IsReadOnlyAttribute?displayProperty=fullName>. This attribute is used by language compilers to mark members that have read-only ref return types or parameters. For more information, see "Compiler -- Support for ReadOnlyReferences" in the [.NET Framework 4.7.1 Runtime and Compiler Features](https://blogs.msdn.microsoft.com/dotnet/2017/09/28/net-framework-4-7-1-runtime-and-compiler-features) .NET blog.
-
-**Support for configuration builders**
-
-Configuration builders allow developers to inject and build configuration settings for applications dynamically at runtime. Custom configuration builders can be used to modify existing data in a configuration section or to build a configuration section entirely from scratch. Without configuration builders, .config files are static, and their settings are defined some time before an application is launched.
-
-To create a custom configuration builder, you derive your builder from the abstract <xref:System.Configuration.ConfigurationBuilder> class and override its <xref:System.Configuration.ConfigurationBuilder.ProcessConfigurationSection%2A?displayProperty=nameWithType> and <xref:System.Configuration.ConfigurationBuilder.ProcessRawXml%2A?displayProperty=nameWithType>. You also define your builders in your .config file. For more information, see the "Configuration Builders" section in the [.NET Framework 4.7.1 ASP.NET and Configuration Features](https://blogs.msdn.microsoft.com/dotnet/2017/09/13/net-framework-4-7-1-asp-net-and-configuration-features) .NET blog. 
+The .NET Framework 4.7.1 adds the <xref:System.Runtime.CompilerServices.IsReadOnlyAttribute?displayProperty=fullName>. This attribute is used by language compilers to mark members that have read-only ref return types or parameters. For more information, see "Compiler -- Support for ReadOnlyReferences" in the [.NET Framework 4.7.1 Runtime and Compiler Features](https://blogs.msdn.microsoft.com/dotnet/2017/09/28/net-framework-4-7-1-runtime-and-compiler-features) .NET blog. For information on ref return values, see [Ref return values and ref locals (C# Guide)](~/docs/csharp/programming-guide/classes-and-structs/ref-returns.md) and [Ref return values (Visual Basic)]().
 
 <a name="clr" />
 ### Common language runtime (CLR)
@@ -82,6 +90,19 @@ To create a custom configuration builder, you derive your builder from the abstr
 **Garbage collection performance improvements**
 
 Changes to garbage collection (GC) in the .NET Framework 4.7.1 improve overall performance, especially for Large Object Heap (LOH) allocations. In the .NET Framework 4.7.1, separate locks are used for Small Object Heap (SOH) and LOH allocations, which allows LOH allocations to occur when Background GC (BGC) is sweeping the SOH. As a result, applications that make a large number of LOH allocations should see a reduction in allocation lock contention and improved performance. For more information, see the "Runtime -- GC Performance Improvements" section in the [.NET Framework 4.7.1 Runtime and Compiler Features](https://blogs.msdn.microsoft.com/dotnet/2017/09/28/net-framework-4-7-1-runtime-and-compiler-features/) .NET blog. 
+
+**Support for portable PDBs**
+
+The .NET Framework starting with version 4.7.1 supports portable PDBs. While standard PDB files are Windows-only, portable PDB files can be created and read on all platforms. In most cases, the file format is transparent to an application running on a particular .NET implementation. An exception is an application that dynamically emits an assembly at runtime; in this case, the ability to emit a portable PDB can offer a performance improvement and reduce the application's memory footprint. 
+
+You can determine at runtime whether portable PDBs are supported on the current .NET implementation by passing the string "PortablePdb" to the <xref:System.Runtime.CompilerServices.RuntimeFeature.IsSupported(System.String)> method before emitting the assembly.  
+ 
+<a name="net471">
+#### Networking
+
+**SHA-2 support for Message.HashAlgorithm**
+
+In the .NET Framework 4.7 and earlier versions, the <xref:System.Messaging.Message.HashAlgorithm%2A?displayProperty=nameWithType> property supported values of <xref:System.Messaging.HashAlgorithm.Md5?displayProperty=nameWithType> and <xref:System.Messaging.HashAlgorithm.Sha?displayProperty=nameWithType> only. Starting with the .NET Framework 4.7.1, <xref:System.Messaging.HashAlgorithm.Sha256?displayProperty=nameWithType>, <xref:System.Messaging.HashAlgorithm.Sha384?displayProperty=nameWithType>, and <xref:System.Messaging.HashAlgorithm.Sha512?displayProperty=nameWithType> are also supported. Whether this value is actually used depends on MSMQ, since the <xref:System.Messaging.Message> instance itself does no hashing but simply passes on values to MSMQ. For more information, see the "SHA-2 support for Message.HashAlgorithm" section in the [.NET Framework 4.7.1 ASP.NET and Configuration features](https://blogs.msdn.microsoft.com/dotnet/2017/09/13/net-framework-4-7-1-asp-net-and-configuration-features/) .NET blog.
 
 <a name="asp-net471" />
 #### ASP.NET
@@ -109,10 +130,6 @@ In the .NET Framework 4.7 and earlier versions, ASP.NET allowed developers to st
     </authentication>
 </system.web>
 ```
-
-**SHA-2 support for Message.HashAlgorithm**
-
-In the .NET Framework 4.7 and earlier versions, the <xref:System.Messaging.Message.HashAlgorithm%2A?displayProperty=nameWithType> property supported values of <xref:System.Messaging.HashAlgorithm.Md5?displayProperty=nameWithType> and <xref:System.Messaging.HashAlgorithm.Sha?displayProperty=nameWithType> only. Starting with the .NET Framework 4.7.1, <xref:System.Messaging.HashAlgorithm.Sha256?displayProperty=nameWithType>, <xref:System.Messaging.HashAlgorithm.Sha384?displayProperty=nameWithType>, and <xref:System.Messaging.HashAlgorithm.Sha512?displayProperty=nameWithType> are also supported. Whether this value is actually used depends on MSMQ, since the <xref:System.Messaging.Message> instance itself does no hashing but simply passes on values to MSMQ. 
 
 <a name="v47"></a> 
 ### What's new in the .NET Framework 4.7

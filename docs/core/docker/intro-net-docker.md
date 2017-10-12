@@ -43,7 +43,7 @@ The Official .NET Docker images are created and optimized by Microsoft. They are
 
 Microsoft’s intent for .NET repositories is to have granular and focused repos, which represent a specific scenario or workload.
 
-The 'microsoft/aspnetcore images are optimized for ASP.NET Core apps on Docker, so containers can start faster.
+The 'microsoft/aspnetcore` images are optimized for ASP.NET Core apps on Docker, so containers can start faster.
 
 The .NET Core images ('microsoft/dotnet') are intended for console apps based on .NET Core. For example, batch processes, Azure WebJobs, and other console scenarios should use optimized .NET Core images.
 
@@ -172,6 +172,7 @@ The [dotnet-framework:4.6.2 sample](https://github.com/Microsoft/dotnet-framewor
 > [!Note]
 > If you do not have an Azure subscription, [sign up today](https://azure.microsoft.com/en-us/free/?b=16.48) for a free 30-day account and get $200 in Azure Credits to try out any combination of Azure services.
 >
+
 #### Microsoft Azure Cosmos DB Emulator (Windows Containers only)
 
 **Microsoft Azure Cosmos DB Emulator resources**

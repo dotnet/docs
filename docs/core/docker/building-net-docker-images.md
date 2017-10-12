@@ -35,8 +35,10 @@ When developing, building, and running containerized applications, we have diffe
     For example, the `dotnet publish` output contains:
 
     * the compiled binaries
-    * images
     * .js and .css files
+
+
+The reason to include the `dotnet publish` command output in your production image is to keep its' size to a minimum.
 
 Though there are multiple versions of the .NET Core image, they all share one or more layers. This architecture decreases the needed disk space.
 
@@ -44,42 +46,35 @@ Though there are multiple versions of the .NET Core image, they all share one or
 
 To achieve the goals above, we provide image variants under [`microsoft/dotnet`](https://hub.docker.com/r/microsoft/dotnet/).
 
-* `microsoft/dotnet:<version>-sdk`(**microsoft/dotnet:2.0.0-sdk**) This image contains the .NET Core SDK, which includes the .NET Core and Command Line Tools (CLI). This image maps to the **development scenario**. You would use this image for local development, debugging, and unit testing. This image can also be used for your **build** scenarios.
+* `microsoft/dotnet:<version>-sdk`(**microsoft/dotnet:2.0.0-sdk**) This image contains the .NET Core SDK, which includes the .NET Core and Command Line Tools (CLI). This image maps to the **development scenario**. You use this image for local development, debugging, and unit testing. This image can also be used for your **build** scenarios. Using `microsoft/dotnet:sdk` always gives you the latest version.
 
-* `microsoft/dotnet:<version>-core`(**microsoft/dotnet:2.0.0-core**) This image, which runs [portable .NET Core applications](../deploying/index.md) and it is optimized for running your application in **production**. It does not contain the SDK, and is meant to take the optimized output of `dotnet publish`. The portable runtime is well suited for Docker container scenarios as running multiple containers benefit from shared image layers.
+> [!TIP]
+> If you are unsure about your needs, you probably want to use the `microsoft/dotnet:<version>-sdk` image. As the "de facto" image, it's designed to be used as a throw away container (mount your source code and start the container to start your app), and as the base image to build other images from.
+
+* `microsoft/dotnet:<version>-runtime`: This image contains the .NET Core (runtime and libraries) and is optimized for running .NET Core apps in **production**.
 
 ## Alternative images
 
 In addition to the optimized scenarios of development, build and production, we provide additional images:
 
-* `microsoft/dotnet:onbuild` contains [`ONBUILD`](https://docs.docker.com/engine/reference/builder/#/onbuild) triggers.
-    The build will:
-    * [`COPY`](https://docs.docker.com/engine/reference/builder/#/copy) your application
-    * execute `dotnet restore`
-    * create an [`ENTRYPOINT`](https://docs.docker.com/engine/reference/builder/#/entrypoint) instruction for application start at Docker image start
-
-     While not an optimized production image, it is useful to copy and run source code within an image.
-
-* `microsoft/dotnet:core-deps`: This image is ideal for self-contained applications, or as a base image for custom CoreFX or CoreCLR builds. A self-contained application is defined as a .NET Core application that has the .NET runtime packaged with it. The **core-deps** image contains the operating system with only the native dependencies needed by .NET Core. This image isn't suitable for image layering as it isn't optimized for running multiple .NET Core containers on the same host.
+* `microsoft/dotnet:<version>-runtime-deps`: The **runtime-deps** image contains the operating system with all of the native dependencies needed by .NET Core. This image is for [self-contained applications](https://docs.microsoft.com/en-us/dotnet/core/deploying/index).
 
 Latest versions of each variant:
 
 * `microsoft/dotnet` or `microsoft/dotnet:latest` (includes SDK)
-* `microsoft/dotnet:onbuild`
-* `microsoft/dotnet:core`
-* `microsoft/dotnet:core-deps`
+* `microsoft/dotnet:sdk`
+* `microsoft/dotnet:runtime`
+* `microsoft/dotnet:runtime-deps`
 
-Here is an images list after a `docker pull <imagename>` to show the various sizes. Notice, the development/build variant, `microsoft/dotnet:2.0.0-sdk` is larger as it contains the SDK to develop and build your application. The production variant, `microsoft/dotnet:core` is smaller, as it only contains the .NET Core runtime. 
-The minimal image capable of being used on Linux, `core-deps`, is the smallest.
+Here is an images list after a `docker pull <imagename>` to show the various sizes. Notice, the development/build variant, `microsoft/dotnet:2.0.0-sdk` is larger as it contains the SDK to develop and build your application. The production optimized variant, `microsoft/dotnet:runtime` is smaller. The minimal image capable of being used on Linux, `runtime-deps`, is the smallest.
 
-```
+```console
 REPOSITORY          TAG                 IMAGE ID            SIZE
-microsoft/dotnet    core                75164c57c893        251MB
-microsoft/dotnet    core-deps           09847487379d        167MB
 microsoft/dotnet    latest              cc72b1545c62        1.64GB
+microsoft/dotnet    runtime             a1d5aead943d        219MB
+microsoft/dotnet    runtime-deps        6cffceb6f230        153MB
 microsoft/dotnet    2.0-sdk             d84f64b126a6        1.64GB
 microsoft/dotnet    2.0.0-sdk           5af1ed26d8e9        1.64GB
-microsoft/dotnet    onbuild             b6321e4fb417        537MB
 ```
 
 ## Samples to explore
@@ -88,7 +83,21 @@ microsoft/dotnet    onbuild             b6321e4fb417        537MB
 
 * This .NET Core Docker sample demonstrates a best practice pattern for [building Docker images for .NET Core apps for production.](https://github.com/dotnet/dotnet-docker-samples/tree/master/dotnetapp-prod)
 
-## Prerequisites
+## Your first ASP.NET Core Docker app
+
+For this tutorial, lets use an ASP.NET Core Docker sample application for the app we want to dockerize. This ASP.NET Core Docker sample application demonstrates a best practice pattern for building Docker images for ASP.NET Core apps for production. The sample works with both Linux and Windows containers.
+
+The sample Dockerfile creates an ASP.NET Core application Docker image based off of the ASP.NET Core Runtime Docker base image.
+
+It uses the [Docker multi-stage build feature](https://docs.docker.com/engine/userguide/eng-image/multistage-build/) to:
+
+* build the sample in a container based on the **larger** ASP.NET Core Build Docker base image 
+* copies the final build result into a Docker image based on the **smaller** ASP.NET Core Docker Runtime base image
+
+> [!Note]
+> The build image contains required tools to build applications while the runtime image does not.
+
+### Prerequisites
 
 To build and run, install the following items:
 
@@ -121,20 +130,6 @@ The Docker client can be installed in:
 #### Installing Git for sample repository
 
 * Install [git](https://git-scm.com/download) if you wish to clone the repository.
-
-## Your first ASP.NET Core Docker app
-
-For this tutorial, lets use an ASP.NET Core Docker sample application for the app we want to dockerize. This ASP.NET Core Docker sample application demonstrates a best practice pattern for building Docker images for ASP.NET Core apps for production. The sample works with both Linux and Windows containers.
-
-The sample Dockerfile creates an ASP.NET Core application Docker image based off of the ASP.NET Core Runtime Docker base image.
-
-It uses the [Docker multi-stage build feature](https://docs.docker.com/engine/userguide/eng-image/multistage-build/) to:
-
-* build the sample in a container based on the **larger** ASP.NET Core Build Docker base image 
-* copies the final build result into a Docker image based on the **smaller** ASP.NET Core Docker Runtime base image
-
-> [!Note]
-> The build image contains required tools to build applications while the runtime image does not.
 
 ### Getting the sample application
 
@@ -191,7 +186,7 @@ docker run -it --rm --name aspnetcore_sample aspnetapp
 * Copy the container IP address and paste into your browser (for example, 172.29.245.43).
 
 > [!Note]
-> Docker exec supports identifying containers with name or hash. The name (aspnetcore_sample) is used in our example.
+> Docker exec supports identifying containers with name or hash. The name (`aspnetcore_sample) is used in our example.
 
 See the following example of how to get the IP address of a running Windows container.
 

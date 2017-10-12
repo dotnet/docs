@@ -51,7 +51,8 @@ The `foreach` statement repeats a group of embedded statements for each element 
 
 > [!TIP]
 > You can modify the examples to experiment with the syntax and try different
-> usages that are more similar to your use case.
+> usages that are more similar to your use case. Press "Run" to run the code,
+> then edit and press "Run" again.
 
 -   a typical `foreach` loop that displays the contents of an array of integers
 
@@ -66,11 +67,16 @@ The `foreach` statement repeats a group of embedded statements for each element 
 [!code-csharp-interactive[csrefKeywordsIteration#4](./codesnippet/CSharp/foreach-in_1.cs#L51-L69)]
  
 ## C# Language Specification
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
+[!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
 
 ## See Also  
- [C# Reference](../index.md)
- [C# Programming Guide](../../programming-guide/index.md)
- [C# Keywords](index.md)
- [Iteration Statements](iteration-statements.md)
- [for](for.md)
+
+[C# Reference](../index.md)
+
+[C# Programming Guide](../../programming-guide/index.md)
+
+[C# Keywords](index.md)
+
+[Iteration Statements](iteration-statements.md)
+
+[for](for.md)

@@ -59,8 +59,7 @@
   
 -   A data-driven Web site. This enables you to create a data context for the database and the class that contains the data field to customize. For more information, see `Walkthrough: Creating a New Dynamic Data Web Site using Scaffolding`.  
 
- ]]>
-      </format>
+ ]]></format>
     </remarks>
   </Docs>
   <Members>
@@ -81,7 +80,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.DisplayFormatAttribute" /> class. </summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.DisplayFormatAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,7 +143,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether empty string values ("") are automatically converted to<see langword="null" /> when the data field is updated in the data source.</summary>
+        <summary>Gets or sets a value that indicates whether empty string values ("") are automatically converted to <see langword="null" /> when the data field is updated in the data source.</summary>
         <value>
           <see langword="true" /> if empty string values are automatically converted to <see langword="null" />; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
@@ -240,7 +239,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates whether the field should be HTML-encoded.</summary>
-        <value><see langword="true" /> if the field should be HTML-encoded; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the field should be HTML-encoded; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

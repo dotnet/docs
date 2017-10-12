@@ -31,7 +31,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # /baseaddress (C# Compiler Options)
-The **/baseaddress** option lets you specify the preferred base address at which to load a DLL. For more information about when and why to use this option, see [Improving Application Startup Time](http://go.microsoft.com/fwlink/?LinkId=107043) and [Larry Osterman's WebLog](http://go.microsoft.com/fwlink/?LinkId=107044).  
+The **/baseaddress** option lets you specify the preferred base address at which to load a DLL. For more information about when and why to use this option, see [Larry Osterman's WebLog](http://go.microsoft.com/fwlink/?LinkId=107044).  
   
 ## Syntax  
   

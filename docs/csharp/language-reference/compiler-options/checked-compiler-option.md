@@ -68,4 +68,3 @@ csc t2.cs /checked
 ## See Also  
  [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
  [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)   
- [Introduction to the Project Designer](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7)

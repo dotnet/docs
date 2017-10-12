@@ -19,10 +19,6 @@ ms.assetid: 03c28597-7e73-46d6-a9c3-f9cb55642739
 ## Docker: Packaging your apps to deploy and run anywhere
 
 [Docker](https://docs.microsoft.com/en-us/dotnet/standard/microservices-architecture/container-docker-introduction/docker-defined) is an open platform that enables developers and administrators to build [images](https://docs.docker.com/glossary/?term=image), ship, and run distributed applications in a loosely isolated environment called a [container](https://www.docker.com/what-container). This approach enables efficient application lifecycle management between development, QA, and production environments.
-
-https://docs.microsoft.com/en-us/dotnet/standard/architecture-containerized-liefecycle/what-is-docker?#comparing-docker-containers-with-vms
-
-https://review.docs.microsoft.com/en-us/dotnet/standard/architecture-containerized-liefecycle/microsoft-platform-tools-containerized-apps/index?branch=pr-en-us-3206
  
 The [Docker platform](https://docs.docker.com/engine/docker-overview/#the-docker-platform) uses the [Docker Engine](https://docs.docker.com/engine/docker-overview/#docker-engine) to quickly build and package apps as [Docker images](https://docs.docker.com/glossary/?term=image) written in the [Dockerfile](https://docs.docker.com/glossary/?term=Dockerfile) [format that then is deployed and run in a [layered container](https://docs.docker.com/engine/userguide/storagedriver/imagesandcontainers/#container-and-layers).
 

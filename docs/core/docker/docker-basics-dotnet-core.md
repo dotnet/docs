@@ -23,7 +23,7 @@ This tutorial teaches the Docker container build and deploy tasks for a .NET Cor
 
 The [Docker platform](https://docs.docker.com/engine/docker-overview/#the-docker-platform) uses the [Docker Engine](https://docs.docker.com/engine/docker-overview/#docker-engine) to quickly build and package apps as [Docker images](https://docs.docker.com/glossary/?term=image). These images are written in the [Dockerfile](https://docs.docker.com/glossary/?term=Dockerfile) format to be deployed and run in a [layered container](https://docs.docker.com/engine/userguide/storagedriver/imagesandcontainers/#container-and-layers).
 
-### .NET Core: Easiest way to get started
+## .NET Core: Easiest way to get started
 
 Before creating the Docker image, you need an application to containerize. You can create it on Linux, MacOS, or Windows. The quickest and easiest way to do that is to use .NET Core.
 

@@ -42,7 +42,7 @@ Though there are multiple versions of the .NET Core image, they all share one or
 
 ## Docker image variations
 
-To achieve the goals above, we provide image variants under [microsoft/dotnet](https://hub.docker.com/r/microsoft/dotnet/).
+To achieve the goals above, we provide image variants under [`microsoft/dotnet`](https://hub.docker.com/r/microsoft/dotnet/).
 
 * `microsoft/dotnet:<version>-sdk`(**microsoft/dotnet:2.0.0-sdk**) This image contains the .NET Core SDK, which includes the .NET Core and Command Line Tools (CLI). This image maps to the **development scenario**. You would use this image for local development, debugging, and unit testing. This image can also be used for your **build** scenarios.
 
@@ -52,11 +52,11 @@ To achieve the goals above, we provide image variants under [microsoft/dotnet](h
 
 In addition to the optimized scenarios of development, build and production, we provide additional images:
 
-* `microsoft/dotnet:onbuild` contains [ONBUILD](https://docs.docker.com/engine/reference/builder/#/onbuild) triggers.
+* `microsoft/dotnet:onbuild` contains [`ONBUILD`](https://docs.docker.com/engine/reference/builder/#/onbuild) triggers.
     The build will:
-    * [COPY](https://docs.docker.com/engine/reference/builder/#/copy) your application
+    * [`COPY`](https://docs.docker.com/engine/reference/builder/#/copy) your application
     * execute `dotnet restore`
-    * create an [ENTRYPOINT](https://docs.docker.com/engine/reference/builder/#/entrypoint) instruction for application start at Docker image start
+    * create an [`ENTRYPOINT`](https://docs.docker.com/engine/reference/builder/#/entrypoint) instruction for application start at Docker image start
 
      While not an optimized production image, it is useful to copy and run source code within an image.
 
@@ -147,6 +147,7 @@ git clone https://github.com/dotnet/dotnet-docker-samples/
 You can also download the repository (it is small) as a zip from the .NET Core Docker samples repository.
 
 ### Run the ASP.NET app locally
+
 For a reference point, before we containerize the application, first run the application locally.
 
 You can build and run the application locally with the .NET Core 2.0 SDK using the following commands (The instructions assume the root of the repository):
@@ -167,7 +168,7 @@ cd aspnetapp
 docker build -t aspnetapp .
 docker run -it --rm -p 8000:80 --name aspnetcore_sample aspnetapp
 ```
-> [!Note] The docker run '-p' argument maps port 8000 on your local machine to port 80 in the container (the port mapping form is 'host:container'). For more information, see the Docker run reference on command-line parameters.
+> [!Note] The `docker run` '-p' argument maps port 8000 on your local machine to port 80 in the container (the port mapping form is `host:container`). For more information, see the [docker run](https://docs.docker.com/engine/reference/commandline/exec/) reference on command-line parameters.
 
 After the application starts, visit **http://localhost:8000** in your web browser.
 
@@ -185,8 +186,8 @@ docker run -it --rm --name aspnetcore_sample aspnetapp
 > You must navigate to the **container IP address** (as opposed to http://localhost) in your browser directly when using Windows containers. You can get the IP address of your container with the following steps:
 
 * Open up another command prompt.
-* Run 'docker ps' to see your running containers. The "aspnetcore_sample" container should be there.
-* Run 'docker exec' aspnetcore_sample ipconfig.
+* Run `docker ps` to see your running containers. The "aspnetcore_sample" container should be there.
+* Run `docker exec` aspnetcore_sample ipconfig.
 * Copy the container IP address and paste into your browser (for example, 172.29.245.43).
 
 > [!Note]
@@ -220,13 +221,13 @@ dotnet publish -c release -o published
 > [!Note]
 > The -c release argument builds the application in release mode (the default is debug mode). For more information, see the [dotnet run reference](../tools/dotnet-run.md) on command-line parameters.
 
-You can run the application on **Windows** using the 'dotnet published' command.
+You can run the application on **Windows** using the `dotnet published` command.
 
 ```console
 dotnet published\aspnetapp.dll
 ```
 
-You can run the application on **Linux** or **macOS** using the 'dotnet published' command.
+You can run the application on **Linux** or **macOS** using the `dotnet published` command.
 
 ```bash
 dotnet published/aspnetapp.dll
@@ -236,8 +237,8 @@ dotnet published/aspnetapp.dll
 
 The following Docker images are used in this sample
 
-* 'microsoft/aspnetcore-build:2.0'
-* 'microsoft/aspnetcore:2.0'
+* `microsoft/aspnetcore-build:2.0`
+* `microsoft/aspnetcore:2.0`
 
 **Next Steps**
 

@@ -1,0 +1,162 @@
+### YamlMime:YamlDocument
+documentType: Tutorial
+title: Collections in C#
+metadata:
+  title:  Collections in C#. Learn to use sequences and collections in C#.
+  description: In this tutorial, you'll use your browser to learn C# interactively. You write C# code and see the results of compiling and running your code directly in the browser.
+  audience: Developer
+  level: Beginner
+  displayType: two-column
+  interactive: csharp
+items:
+- durationInMinutes: 1
+  content: |
+    This tutorial teaches you C# interactively, using your browser to write C# and see the results of compiling and running your code. It contains a series of lessons that create, modify and explore collections and arrays.
+- title: Create lists
+  durationInMinutes: 2
+  content: |
+    Run the following code in the interactive window. To do that, type code block in the interactive window and click the **Run** button:
+
+    ```csharp
+    var names = new List<string> { "<name>", "Ana", "Felipe" };
+    foreach (var name in names)
+    {
+      Console.WriteLine($"Hello {name.ToUpper()}!");
+    }
+    ```
+
+    You've just created a list of strings, added three names to that list, and printed out the names in all CAPS. You're using concepts
+    that you've learned in earlier quick starts to loop through the list.
+
+    Another new feature here is **interpolated strings**.  When you preced a `string` with the `$` character, you can embed C# code in the string declaration. The actual string replaces that C# code with the value it generates. In this example, it replaces the `{name.ToUpper()}` with each name, converted to capital letters, because you called the `ToUpper` method.
+
+    Let's keep exploring.
+    
+    > [!NOTE]
+    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
+
+- title: Modify list contents
+  durationInMinutes: 3
+  content: |
+    The collection you created using the <xref:System.Collections.Generic.List%601> type. This type stores sequences of elements. You specify the type of the elements between the angle brackets.
+    
+    One important aspect of this <xref:System.Collections.Generic.List%601> type is that it can grow or shrink, enabling you to add or remove elements. Add this code below the code you've already written:
+
+    ```csharp
+    Console.WriteLine();
+    names.Add("Maria");
+    names.Add("Bill");
+    names.Remove("Ana");
+    foreach (var name in names)
+    {
+      Console.WriteLine($"Hello {name.ToUpper()}!");
+    }
+    ```
+
+    You've added two more names to the end of the list. You've also removed one as well.
+    
+    The <xref:System.Collections.Generic.List%601> enables you to reference individual items by **index** as well. C# uses 0 for the first index. Add this code to the bottom and try it:
+
+    ```csharp
+    Console.WriteLine($"My name is {names[0]}");
+    Console.WriteLine($"I've added {names[2]} and {names[3]} to the list");
+    ```
+
+    It's not allowed to access past the end of the list. You can check how long the list is using the `<xref:System.Collections.Generic.List%601.Count%2A>` property:
+
+    ```csharp
+    Console.WriteLine($"The list has {names.Count} people in it");
+    ```
+    
+    Click **Run** again to see the results.
+
+    > [!NOTE]
+    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
+
+- title: Search lists
+  durationInMinutes: 5
+  content: |
+    Our samples use relatively small lists, but in your applications you may often create lists with many more elements, sometimes numbering well over the thousands. To find elements in these larger collections, you need to search the list for different items. The <xref:System.Collections.Generic.List%601.IndexOf%2A> method searches for an item and returns the index of the item. Try this to see how it works:
+
+    ```csharp
+    var index = names.IndexOf("Felipe");
+    Console.WriteLine($"The name {names[index]} is at index {index}");
+
+    var notFound = names.IndexOf("Not Found");
+    Console.WriteLine($"When an item is not found, IndexOf returns {notFound}");
+    ```
+
+    The items in your list can be sorted as well. The <xref:System.Collections.Generic.List%601.Sort%2A> method sorts all the items in the list in their normal order (alphabetically in the case of strings):
+
+    ```csharp
+    names.Sort();
+    foreach (var name in names)
+    {
+      Console.WriteLine($"Hello {name.ToUpper()}!");
+    }
+    ```
+
+    > [!NOTE]
+    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
+
+- title: Lists of other types
+  durationInMinutes: 5
+  content: |
+    You've been using the `string` type in lists so far. Let's make a <xref:System.Collections.Generic.List%601> using a different type. Let's build a set of numbers. Delete the code you wrote so far, and replace it with this:
+
+    ```csharp
+    var fibonacciNumbers = new List<int> {1, 1,};
+    ```
+
+    That creates a list of integers, and sets the first two integers to the value 1. These are the first two values of a *Fibonacci Sequence*, a sequence of numbers. Each next Fibonacci number is found by taking the sum of the previous two numbers. Add this code:
+
+    ```csharp
+    var previous = fibonacciNumbers[fibonacciNumbers.Count - 1];
+    var previous2 = fibonacciNumbers[fibonacciNumbers.Count - 2];
+    
+    fibonacciNumbers.Add(previous + previous2);
+
+    foreach(var item in fibonacciNumbers)
+        Console.WriteLine(item);
+    ```
+
+    Press **Run** to see the results;
+
+    > [!NOTE]
+    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
+
+- title: Challenge
+  durationInMinutes: 10
+  content: |
+    See if you can put together some of the lessons from this and earlier lessons. Expand on what you've built so far with Fibonacci Numbers. Try and write the code to generate the first 20 numbers in the sequence.
+
+    > [!NOTE]
+    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
+
+- title: Complete challenge
+  durationInMinutes: 3
+  content: |
+    Did you come up with something like this?
+
+    ```csharp
+    var fibonacciNumbers = new List<int> {1, 1,};
+
+    while (fibonacciNumbers.Count < 20)
+    {
+        var previous = fibonacciNumbers[fibonacciNumbers.Count - 1];
+        var previous2 = fibonacciNumbers[fibonacciNumbers.Count - 2];
+        
+        fibonacciNumbers.Add(previous + previous2);
+    }
+    foreach(var item in fibonacciNumbers)
+        Console.WriteLine(item);
+    ```
+
+    > [!NOTE]
+    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
+    
+- content: |
+    You've completed the list tutorial.
+
+    You can learn more about working with the `List` type in the
+    [.NET Guide](../../standard/index.md) topic on [collections](../../standard/collections/index.md). You'll also learn about many other collection types.

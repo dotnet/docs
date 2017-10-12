@@ -44,3 +44,10 @@ different actions.
 
 This beginner lesson assumes that you have finished the [Hello World](hello-world.yml) and
 [Numbers in C#](numbers-in-csharp.yml) lessons.
+
+## [List collection](list-collection.yml)
+
+The [List collection](list-collection.yml) lesson gives you
+a tour of the List collection type that stores sequences of data. You'll learn how to add and remove items, search for items, and remove items and sort the lists. You'll explore different kinds of lists.
+
+This beginner lesson assumes that you have finished the quick starts listed above.

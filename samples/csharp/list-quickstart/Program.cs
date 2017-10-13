@@ -5,7 +5,7 @@ namespace list_quickstart
 {
     class Program
     {
-#region WorkWithStrings
+#region WorkingWithStrings
         static void Main(string[] args)
         {
             //WorkingWithStrings();

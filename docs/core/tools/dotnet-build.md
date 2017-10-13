@@ -3,7 +3,7 @@ title: dotnet build command - .NET Core CLI
 description: The dotnet build command builds a project and all of its dependencies. 
 author: mairaw
 ms.author: mairaw
-ms.date: 08/13/2017
+ms.date: 10/12/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -20,7 +20,7 @@ ms.technology: dotnet-cli
 
 # [.NET Core 2.x](#tab/netcore2x)
 ```
-dotnet build [<PROJECT>] [-c|--configuration] [-f|--framework] [--force] [--no-dependencies] [--no-incremental] [--no-restore] [-o|--output] [-r|--runtime] [-v|--verbosity] [--version-suffix]
+dotnet build [<PROJECT>] [-c|--configuration] [-f|--framework] [--force] [--no-dependencies] [--no-incremental] [--no-restore] [-o|--output] [-r|--runtime] [--source] [-v|--verbosity] [--version-suffix]
 dotnet build [-h|--help]
 ```
 # [.NET Core 1.x](#tab/netcore1x)
@@ -97,6 +97,10 @@ Directory in which to place the built binaries. You also need to define `--frame
 `-r|--runtime <RUNTIME_IDENTIFIER>`
 
 Specifies the target runtime. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md).
+
+`--source <SOURCE>`
+
+Specifies a NuGet package source to use during the restore operation. This overrides all of the sources specified in the *NuGet.config* files. Multiple sources can be provided by specifying this option multiple times.
 
 `-v|--verbosity <LEVEL>`
 

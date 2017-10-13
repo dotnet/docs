@@ -15,7 +15,7 @@ items:
 - title: Create lists
   durationInMinutes: 2
   content: |
-    Run the following code in the interactive window. To do that, type code block in the interactive window and click the **Run** button:
+    Run the following code in the interactive window. To do that, type the following code block in the interactive window and click the **Run** button:
 
     ```csharp
     var names = new List<string> { "<name>", "Ana", "Felipe" };
@@ -28,7 +28,7 @@ items:
     You've just created a list of strings, added three names to that list, and printed out the names in all CAPS. You're using concepts
     that you've learned in earlier quick starts to loop through the list.
 
-    Another new feature here is **interpolated strings**.  When you preced a `string` with the `$` character, you can embed C# code in the string declaration. The actual string replaces that C# code with the value it generates. In this example, it replaces the `{name.ToUpper()}` with each name, converted to capital letters, because you called the `ToUpper` method.
+    Another new feature here is **interpolated strings**.  When you precede a `string` with the `$` character, you can embed C# code in the string declaration. The actual string replaces that C# code with the value it generates. In this example, it replaces the `{name.ToUpper()}` with each name, converted to capital letters, because you called the `ToUpper` method.
 
     Let's keep exploring.
     

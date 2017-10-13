@@ -63,7 +63,7 @@ The most obvious horizontal scenario for using Docker and .NET applications is f
 
 ### Common Docker development scenarios
 
-### .NET Core
+#### .NET Core
 
 **.NET Core resources**
 
@@ -71,7 +71,7 @@ The most obvious horizontal scenario for using Docker and .NET applications is f
 
 The samples use .NET Core 2.0. They use Docker [multi-stage build](https://github.com/dotnet/announcements/issues/18) and [multi-arch tags](https://github.com/dotnet/announcements/issues/14) where appropriate.
 
-* [.NET Core images on DockerHub](https://hub.docker.com/r/microsoft/aspnet/)
+* [.NET Core images on DockerHub](https://hub.docker.com/r/microsoft/dotnet/)
 
 * [Dockerize a .NET Core application](https://docs.docker.com/engine/examples/dotnetcore/)
 
@@ -81,8 +81,17 @@ The samples use .NET Core 2.0. They use Docker [multi-stage build](https://githu
 
 * This [.NET Core Docker sample](https://github.com/dotnet/dotnet-docker-samples/tree/master/dotnetapp-selfcontained) demonstrates a best practice pattern for building Docker images for [self-contained .NET Core applications](https://docs.microsoft.com/en-us/dotnet/core/deploying/). Used for the smallest production container without a benefit from [sharing base images between containers](https://docs.docker.com/engine/userguide/storagedriver/imagesandcontainers/). However, lower Docker layers could be shared.
 
-#### .NET Framework
+#### ARM32 / Raspberry Pi
 
+**ARM32 / Raspberry Pi resources**
+
+* [.NET Core Runtime ARM32 builds announcement](https://github.com/dotnet/announcements/issues/29)
+
+* [ARM32 / Raspberry Pi .NET Core images on DockerHub](https://hub.docker.com/r/microsoft/dotnet/)
+
+* [ARM32 / Raspberry Pi .NET Core Docker Samples on GitHub](https://github.com/dotnet/dotnet-docker-samples#arm32--raspberry-pi)
+
+#### .NET Framework
 
 **.NET Framework resources**
 

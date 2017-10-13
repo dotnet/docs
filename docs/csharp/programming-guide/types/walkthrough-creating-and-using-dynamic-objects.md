@@ -51,7 +51,7 @@ Dynamic objects expose members such as properties and methods at run time, inste
 -   Create a project that uses an `IronPython` library.  
   
 ## Prerequisites  
- You need IronPython 2.6.1 for .NET 4.0 to complete this walkthrough. You can download IronPython 2.6.1 for .NET 4.0 from [Nuget](https://www.nuget.org/packages/IronPython/2.6.1).  
+ You need IronPython 2.6.1 for .NET 4.0 to complete this walkthrough. You can download IronPython 2.6.1 for .NET 4.0 from [CodePlex](http://go.microsoft.com/fwlink/?LinkId=187223).  
   
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   

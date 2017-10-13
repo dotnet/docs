@@ -134,8 +134,8 @@ This step-by-step article describes how a system administrator can deploy the [!
 |**/norestart**|Prevents the Setup program from rebooting automatically. If you use this option, Configuration Manager must handle the computer restart.|  
 |**/chainingpackage** *PackageName*|Specifies the name of the package that is doing the chaining. This information is reported with other installation session information for those who have signed up for the [Microsoft Customer Experience Improvement Program (CEIP)](http://go.microsoft.com/fwlink/p/?LinkId=248244). If the package name includes spaces, use double quotation marks as delimiters; for example: **/chainingpackage "Chaining Product"**.|  
   
- These steps create a package named .NET Framework 4.5. The program deploys a silent installation of the .NET Framework 4.5. In a silent installation, users do not interact with the installation process, and the chaining application has to capture the return code and handle rebooting; see [Getting Progress Information from an Installation Package](http://go.microsoft.com/fwlink/?LinkId=179606) in the MSDN Library.  
-  
+ These steps create a package named .NET Framework 4.5. The program deploys a silent installation of the .NET Framework 4.5. In a silent installation, users do not interact with the installation process, and the chaining application has to capture the return code and handle rebooting; see [Getting Progress Information from an Installation Package](http://go.microsoft.com/fwlink/?LinkId=179606).  
+ 
 <a name="select_dist_point"></a>   
 ### Select a distribution point  
  To distribute the package and program to client computers from a server, you must first designate a site system as a distribution point and then distribute the package to the distribution point.  

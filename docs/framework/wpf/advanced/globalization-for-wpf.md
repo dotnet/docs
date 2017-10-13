@@ -1,13 +1,9 @@
 ---
 title: "Globalization for WPF"
-ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "dotnet-wpf"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "XAML, international user interface"
@@ -31,18 +27,18 @@ This topic introduces issues that you should be aware of when writing           
   
 <a name="char_reference"></a>   
 ### Character References  
- A character reference gives the number of the particular                          [!INCLUDE[TLA#tla_unicode](../../../../includes/tlasharptla-unicode-md.md)] character it represents, in either decimal or hexadecimal. The following example shows a decimal character reference.  
-  
-```  
-Ϩ  
-```  
-  
- This example shows a hexadecimal character reference. Notice that it has an                          **x** in front of the hexadecimal number.  
-  
-```  
-Ϩ  
-```  
-  
+A character reference gives the UTF16 code unit of the particular [!INCLUDE[TLA#tla_unicode](../../../../includes/tlasharptla-unicode-md.md)] character it represents, in either decimal or hexadecimal. The following example shows a decimal character reference for the COPTIC CAPITAL LETTER HORI, or 'Ϩ':
+
+```
+&#1000;
+```
+
+The following example shows a hexadecimal character reference. Notice that it has an **x** in front of the hexadecimal number.
+
+```
+&#x3E8;
+```
+
 <a name="encoding"></a>   
 ### Encoding  
  The encoding supported by                          [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] are                          [!INCLUDE[TLA#tla_ascii](../../../../includes/tlasharptla-ascii-md.md)],                          [!INCLUDE[TLA2#tla_unicode](../../../../includes/tla2sharptla-unicode-md.md)] UTF-16, and UTF-8. The encoding statement is at the beginning of                          [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] document. If no encoding attribute exists and there is no byte-order, the parser defaults to UTF-8. UTF-8 and UTF-16 are the preferred encodings. UTF-7 is not supported. The following example demonstrates how to specify a UTF-8 encoding in a                          [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] file.  

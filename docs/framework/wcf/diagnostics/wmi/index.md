@@ -19,7 +19,7 @@ manager: "erikre"
 [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] exposes inspection data of a service at runtime through a [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] Windows Management Instrumentation (WMI) provider.  
   
 ## Enabling WMI  
- WMI is Microsoft's implementation of the Web-Based Enterprise Management (WBEM) standard. [!INCLUDE[crabout](../../../../../includes/crabout-md.md)] the WMI SDK, see the MSDN Library. (http://msdn.microsoft.com/library/default.asp?url=/library/wmisdk/wmi/wmi_start_page.asp). WBEM is an industry standard for how applications expose management instrumentation to external management tools.  
+ WMI is Microsoft's implementation of the Web-Based Enterprise Management (WBEM) standard. [!INCLUDE[crabout](../../../../../includes/crabout-md.md)] the WMI SDK, see [Windows Management Instrumentation](https://msdn.microsoft.com/library/aa394582.aspx). WBEM is an industry standard for how applications expose management instrumentation to external management tools.  
   
  A WMI provider is a component that exposes instrumentation at runtime through a WBEM-compatible interface. It consists of a set of WMI objects that have attribute/value pairs. Pairs can be of a number of simple types. Management tools can connect to the services through the interface at runtime. [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] exposes attributes of services such as addresses, bindings, behaviors, and listeners.  
   

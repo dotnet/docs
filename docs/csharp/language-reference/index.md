@@ -57,13 +57,7 @@ This section provides reference material about C# keywords, operators, special c
  Provides pointers to the latest version of the C# Language Specification in Microsoft Word format.  
   
 ## Related Sections  
-<!--
- [C# FAQ](http://go.microsoft.com/fwlink/?LinkId=70367)  
- Provides a growing list of C# Frequently Asked Questions in the C# Developer Center.  
--->  
- [C# KB articles in the Microsoft Knowledge Base](http://go.microsoft.com/fwlink/?LinkId=70368)  
- Opens a Microsoft search page for Knowledge Base articles that are available on MSDN.  
-  
+
  [C#](../../csharp/index.md)
  Provides a portal to Visual C# documentation.  
   

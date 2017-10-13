@@ -59,7 +59,7 @@ Maps an ASN.1 object identifier (OID) to a friendly name.
 |`oidMap`|Contains ASN.1 object identifier (OID) mappings to classes.|  
   
 ## Remarks  
- ASN.1 object identifiers identify algorithms in some cryptographic formats. Map object identifiers to friendly names for the algorithms you want to identify. For more information about object identifiers, see the MSDN Library.  
+ ASN.1 object identifiers identify algorithms in some cryptographic formats. Map object identifiers to friendly names for the algorithms you want to identify.  
   
 ## Example  
  The following example shows how to use the **\<oidEntry>** element to map an object identifier for the RIPEMD-160 hash algorithm to an implementation of that hash algorithm.  

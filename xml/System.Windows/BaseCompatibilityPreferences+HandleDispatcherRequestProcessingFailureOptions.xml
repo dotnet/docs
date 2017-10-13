@@ -1,0 +1,66 @@
+<Type Name="BaseCompatibilityPreferences+HandleDispatcherRequestProcessingFailureOptions" FullName="System.Windows.BaseCompatibilityPreferences+HandleDispatcherRequestProcessingFailureOptions">
+  <TypeSignature Language="C#" Value="public enum BaseCompatibilityPreferences.HandleDispatcherRequestProcessingFailureOptions" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed BaseCompatibilityPreferences/HandleDispatcherRequestProcessingFailureOptions extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.BaseCompatibilityPreferences.HandleDispatcherRequestProcessingFailureOptions" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Continue">
+      <MemberSignature Language="C#" Value="Continue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.BaseCompatibilityPreferences/HandleDispatcherRequestProcessingFailureOptions Continue = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.BaseCompatibilityPreferences.HandleDispatcherRequestProcessingFailureOptions.Continue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.BaseCompatibilityPreferences+HandleDispatcherRequestProcessingFailureOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Reset">
+      <MemberSignature Language="C#" Value="Reset" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.BaseCompatibilityPreferences/HandleDispatcherRequestProcessingFailureOptions Reset = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.BaseCompatibilityPreferences.HandleDispatcherRequestProcessingFailureOptions.Reset" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.BaseCompatibilityPreferences+HandleDispatcherRequestProcessingFailureOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Throw">
+      <MemberSignature Language="C#" Value="Throw" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.BaseCompatibilityPreferences/HandleDispatcherRequestProcessingFailureOptions Throw = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.BaseCompatibilityPreferences.HandleDispatcherRequestProcessingFailureOptions.Throw" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.BaseCompatibilityPreferences+HandleDispatcherRequestProcessingFailureOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

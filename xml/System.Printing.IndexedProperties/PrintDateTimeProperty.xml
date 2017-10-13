@@ -115,6 +115,28 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator ValueType (System.Printing.IndexedProperties.PrintDateTimeProperty attribRef);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.ValueType modopt(System.DateTime) modopt(System.Runtime.CompilerServices.IsBoxed) op_Implicit(class System.Printing.IndexedProperties.PrintDateTimeProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintDateTimeProperty.op_Implicit(System.Printing.IndexedProperties.PrintDateTimeProperty|System.Runtime.CompilerServices.IsImplicitlyDereferenced)~System.ValueType!System.DateTime!System.Runtime.CompilerServices.IsBoxed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ValueType</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attribRef" Type="System.Printing.IndexedProperties.PrintDateTimeProperty" />
+      </Parameters>
+      <Docs>
+        <param name="attribRef">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Value">
       <MemberSignature Language="C#" Value="public override object Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Value" />

@@ -46,7 +46,7 @@ Though there are multiple versions of the .NET Core image, they all share one or
 
 To achieve the goals above, we provide image variants under [`microsoft/dotnet`](https://hub.docker.com/r/microsoft/dotnet/).
 
-* `microsoft/dotnet:<version>-sdk`(**microsoft/dotnet:2.0.0-sdk**) This image contains the .NET Core SDK, which includes the .NET Core and Command Line Tools (CLI). This image maps to the **development scenario**. You use this image for local development, debugging, and unit testing. This image can also be used for your **build** scenarios. Using `microsoft/dotnet:sdk` always gives you the latest version.
+* `microsoft/dotnet:<version>-sdk`(`microsoft/dotnet:2.0.0-sdk`) This image contains the .NET Core SDK, which includes the .NET Core and Command Line Tools (CLI). This image maps to the **development scenario**. You use this image for local development, debugging, and unit testing. This image can also be used for your **build** scenarios. Using `microsoft/dotnet:sdk` always gives you the latest version.
 
 > [!TIP]
 > If you are unsure about your needs, you want to use the `microsoft/dotnet:<version>-sdk` image. As the "de facto" image, it's designed to be used as a throw away container (mount your source code and start the container to start your app), and as the base image to build other images from.
@@ -163,6 +163,7 @@ cd aspnetapp
 docker build -t aspnetapp .
 docker run -it --rm -p 8000:80 --name aspnetcore_sample aspnetapp
 ```
+
 > [!Note] The `docker run` '-p' argument maps port 8000 on your local machine to port 80 in the container (the port mapping form is `host:container`). For more information, see the [docker run](https://docs.docker.com/engine/reference/commandline/exec/) reference on command-line parameters.
 
 After the application starts, visit **http://localhost:8000** in your web browser.
@@ -186,7 +187,7 @@ docker run -it --rm --name aspnetcore_sample aspnetapp
 * Copy the container IP address and paste into your browser (for example, 172.29.245.43).
 
 > [!Note]
-> Docker exec supports identifying containers with name or hash. The name (`aspnetcore_sample) is used in our example.
+> Docker exec supports identifying containers with name or hash. The name (aspnetcore_sample) is used in our example.
 
 See the following example of how to get the IP address of a running Windows container.
 

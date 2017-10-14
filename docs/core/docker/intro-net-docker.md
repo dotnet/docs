@@ -43,9 +43,9 @@ The Official .NET Docker images are created and optimized by Microsoft. They are
 
 Microsoft’s intent for .NET repositories is to have granular and focused repos, which represent a specific scenario or workload.
 
-The 'microsoft/aspnetcore` images are optimized for ASP.NET Core apps on Docker, so containers can start faster.
+The `microsoft/aspnetcore` images are optimized for ASP.NET Core apps on Docker, so containers can start faster.
 
-The .NET Core images ('microsoft/dotnet') are intended for console apps based on .NET Core. For example, batch processes, Azure WebJobs, and other console scenarios should use optimized .NET Core images.
+The .NET Core images (`microsoft/dotnet`) are intended for console apps based on .NET Core. For example, batch processes, Azure WebJobs, and other console scenarios should use optimized .NET Core images.
 
 The most obvious horizontal scenario for using Docker and .NET applications is for production deployment and hosting. It turns out that production is just one scenario and the other ones are equally useful. These scenarios are not specific to .NET, but should apply to most developer platforms.
 
@@ -83,8 +83,6 @@ The samples use .NET Core 2.0. They use Docker [multi-stage build](https://githu
 
 #### ARM32 / Raspberry Pi
 
-**ARM32 / Raspberry Pi resources**
-
 * [.NET Core Runtime ARM32 builds announcement](https://github.com/dotnet/announcements/issues/29)
 
 * [ARM32 / Raspberry Pi .NET Core images on DockerHub](https://hub.docker.com/r/microsoft/dotnet/)
@@ -93,26 +91,22 @@ The samples use .NET Core 2.0. They use Docker [multi-stage build](https://githu
 
 #### .NET Framework
 
-**.NET Framework resources**
-
 * [.NET Framework images on DockerHub](https://hub.docker.com/r/microsoft/dotnet-framework/)
 This repo contain samples that demonstrate various .NET Framework Docker configurations. You can use these images as the basis of your own Docker images.
 
 **.NET Framework 4.7**
 
-[The [dotnet-framework:4.7 sample](https://github.com/Microsoft/dotnet-framework-docker-samples/tree/master/dotnetapp-4.7) demonstrates basic "hello world" usage of the [.NET Framework 4.7](). It shows you how you can build and deploy the app relying on the [.NET Framework 4.7 docker image]().
+[The [dotnet-framework:4.7 sample](https://github.com/Microsoft/dotnet-framework-docker-samples/tree/master/dotnetapp-4.7) demonstrates basic "hello world" usage of the [.NET Framework 4.7](https://docs.microsoft.com/en-us/dotnet/framework/whats-new/index#introducing-the-net-framework-47). It shows you how you can build and deploy the app relying on the [.NET Framework 4.7 docker image](https://github.com/Microsoft/dotnet-framework-docker/blob/master/4.7/Dockerfile).
 
 **.NET Framework 4.6.2**
 
-The [dotnet-framework:4.6.2 sample](https://github.com/Microsoft/dotnet-framework-docker-samples/tree/master/dotnetapp-4.6.2) demonstrates basic "hello world" usage of the [.NET Framework 4.6.2](). It shows you how you can build and deploy the app relying on the [.NET Framework 4.6.2 docker image]().
+The [dotnet-framework:4.6.2 sample](https://github.com/Microsoft/dotnet-framework-docker-samples/tree/master/dotnetapp-4.6.2) demonstrates basic "hello world" usage of the [.NET Framework 4.6.2](https://docs.microsoft.com/en-us/dotnet/framework/whats-new/index#whats-new-in-the-net-framework-462). It shows you how you can build and deploy the app relying on the [.NET Framework 4.6.2 docker image](https://github.com/Microsoft/dotnet-framework-docker/tree/master/4.6.2).
 
 **.NET Framework 3.5**
 
- The [dotnet-framework:3.5 sample](https://github.com/Microsoft/dotnet-framework-docker-samples/tree/master/dotnetapp-3.5) demonstrates basic "hello world" usage of [.NET Framework 3.5](). It shows you how you can build and deploy a project relying on .NET Framework 3.5 in Docker.
+ The [dotnet-framework:3.5 sample](https://github.com/Microsoft/dotnet-framework-docker-samples/tree/master/dotnetapp-3.5) demonstrates basic "hello world" usage of [.NET Framework 3.5](https://github.com/Microsoft/dotnet-framework-docker/tree/master/3.5). It shows you how you can build and deploy a project relying on .NET Framework 3.5 in Docker.
 
 #### ASP.NET Core
-
-**ASP.NET Core resources**
 
 * [This ASP.NET Core Docker sample](https://github.com/dotnet/dotnet-docker-samples/tree/master/aspnetapp) demonstrates a best practice pattern for building Docker images for ASP.NET Core apps for production. The sample works with both Linux and Windows containers.
 
@@ -121,8 +115,6 @@ The [dotnet-framework:4.6.2 sample](https://github.com/Microsoft/dotnet-framewor
 * [ASP.NET Core images on GitHub](https://github.com/aspnet/aspnet-docker)
 
 #### ASP.NET Framework 
-
-**ASP.NET Framework resources**
 
 * [ASP.NET Framework images on DockerHub](https://hub.docker.com/r/microsoft/aspnet/)
 
@@ -172,8 +164,6 @@ The [dotnet-framework:4.6.2 sample](https://github.com/Microsoft/dotnet-framewor
 
 #### Microsoft Azure Command Line Interface (CLI)
 
-**Microsoft Azure Command Line Interface (CLI) container resources:**
-
 * [Microsoft Azure Command Line Interface (CLI) images on DockerHub](Docker image for Microsoft Azure Command Line Interface) 
 
 * [Microsoft Azure Command Line Interface (CLI) images on GitHub](https://github.com/Microsoft/OMS-docker)
@@ -183,8 +173,6 @@ The [dotnet-framework:4.6.2 sample](https://github.com/Microsoft/dotnet-framewor
 >
 
 #### Microsoft Azure Cosmos DB Emulator (Windows Containers only)
-
-**Microsoft Azure Cosmos DB Emulator resources**
 
 * [Microsoft Azure Cosmos DB Emulator images on DockerHub](https://hub.docker.com/r/microsoft/azure-cosmosdb-emulator) 
 

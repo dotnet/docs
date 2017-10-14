@@ -1,7 +1,7 @@
 ---
 title: "&#39;AddressOf&#39; operand must be the name of a method (without parentheses)"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 
 ms.suite: ""

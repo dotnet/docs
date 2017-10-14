@@ -3,7 +3,7 @@ title: "this (C# Reference)"
 description: this keyword (C# Reference)
 keywords: this (C#), this keyword (C#), this keyword (C# reference), this keyword (C# language reference)
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"

@@ -1,7 +1,7 @@
 ---
 title: "Registry key &#39;&lt;keyname&gt;&#39; could not be created"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 
 

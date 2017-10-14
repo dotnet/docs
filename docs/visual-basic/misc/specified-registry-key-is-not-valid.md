@@ -1,7 +1,7 @@
 ---
 title: "Specified registry key is not valid because it contains two or more consecutive backslashes"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Cannot convert anonymous type to expression tree because it contains a field that is used in the initialization of another field"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""

@@ -1,7 +1,7 @@
 ---
 title: "Enabling a Data Source for LINQ Querying1"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""

@@ -1,7 +1,7 @@
 ---
 title: "Variable &#39;&lt;variablename&gt;&#39; hides a variable in an enclosing block"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""

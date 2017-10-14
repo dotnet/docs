@@ -1,6 +1,6 @@
 ---
 title: "-refout (C# Compiler Options)"
-ms.date: "2017-08-08"
+ms.date: 08/08/2017
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"

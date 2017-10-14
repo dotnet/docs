@@ -1,7 +1,7 @@
 ---
 title: "&#39;#Region&#39; and &#39;#End Region&#39; statements are not valid within method bodies-multiline lambdas"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""

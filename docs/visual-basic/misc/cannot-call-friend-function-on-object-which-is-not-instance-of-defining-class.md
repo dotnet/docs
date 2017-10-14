@@ -1,7 +1,7 @@
 ---
 title: "Cannot call friend function on object which is not an instance of defining class"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Extending the My Namespace in Visual Basic"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 
 

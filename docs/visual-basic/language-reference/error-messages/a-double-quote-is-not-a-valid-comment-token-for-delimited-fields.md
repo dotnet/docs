@@ -1,7 +1,7 @@
 ---
 title: "A double quote is not a valid comment token for delimited fields where EscapeQuote is set to True"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 
 ms.suite: ""

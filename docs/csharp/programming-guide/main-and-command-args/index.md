@@ -1,7 +1,7 @@
 ---
 title: "Main() and command-line arguments (C# Programming Guide)"
 
-ms.date: "2017-08-02"
+ms.date: 08/02/2017
 ms.prod: .net
 
 

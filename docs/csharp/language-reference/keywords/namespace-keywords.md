@@ -1,6 +1,6 @@
 ---
 title: "Namespace Keywords (C# Reference)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"

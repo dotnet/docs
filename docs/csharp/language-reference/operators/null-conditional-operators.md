@@ -1,6 +1,6 @@
 ---
 title: "Null-conditional Operators (C# and Visual Basic)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"

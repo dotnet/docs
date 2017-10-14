@@ -1,7 +1,7 @@
 ---
 title: "Non-CLS-compliant &lt;membername&gt; is not allowed in a CLS-compliant interface"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""

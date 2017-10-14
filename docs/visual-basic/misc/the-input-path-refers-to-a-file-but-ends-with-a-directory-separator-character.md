@@ -1,7 +1,7 @@
 ---
 title: "The input path refers to a file but ends with a directory separator character"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 
 

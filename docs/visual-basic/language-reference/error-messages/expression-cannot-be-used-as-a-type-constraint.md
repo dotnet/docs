@@ -1,7 +1,7 @@
 ---
 title: "&#39;&lt;expression&gt;&#39; cannot be used as a type constraint"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""

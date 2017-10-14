@@ -1,7 +1,7 @@
 ---
 title: "&#39;Module&#39; statements can occur only at file or namespace level"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""

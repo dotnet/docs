@@ -1,7 +1,7 @@
 ---
 title: "Cannot refer to an instance member of a class from within a shared method or shared member initializer without an explicit instance of the class"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""

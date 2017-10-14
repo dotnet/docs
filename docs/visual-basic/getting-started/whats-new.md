@@ -1,7 +1,7 @@
 ---
 title: "What's new for Visual Basic"
 
-ms.date: "2017-04-27"
+ms.date: 04/27/2017
 ms.prod: .net
 
 

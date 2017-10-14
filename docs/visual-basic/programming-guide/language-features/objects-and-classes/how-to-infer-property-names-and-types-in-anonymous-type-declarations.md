@@ -1,7 +1,7 @@
 ---
 title: "How to: Infer Property Names and Types in Anonymous Type Declarations (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""

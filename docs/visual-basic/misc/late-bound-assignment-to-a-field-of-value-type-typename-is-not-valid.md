@@ -1,7 +1,7 @@
 ---
 title: "Late-bound assignment to a field of value type &#39;&lt;typename&gt;&#39; is not valid when &#39;&lt;name&gt;&#39; is the result of a late-bound expression"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 
 

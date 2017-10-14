@@ -1,7 +1,7 @@
 ---
 title: "This system does not contain support for the SimplifiedChinese locale"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 
 

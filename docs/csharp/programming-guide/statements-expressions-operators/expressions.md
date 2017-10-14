@@ -1,7 +1,7 @@
 ---
 title: "Expressions (C# Programming Guide)"
 
-ms.date: "2017-05-11"
+ms.date: 05/11/2017
 ms.prod: .net
 
 

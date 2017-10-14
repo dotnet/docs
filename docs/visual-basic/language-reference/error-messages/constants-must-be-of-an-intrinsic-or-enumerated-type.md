@@ -1,7 +1,7 @@
 ---
 title: "Constants must be of an intrinsic or enumerated type, not a class, structure, type parameter, or array type"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""

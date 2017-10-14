@@ -1,7 +1,7 @@
 ---
 title: "C# Programming Guide"
 
-ms.date: "2017-05-02"
+ms.date: 05/02/2017
 ms.prod: .net
 
 

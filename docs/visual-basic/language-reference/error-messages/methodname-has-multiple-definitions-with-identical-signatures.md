@@ -1,7 +1,7 @@
 ---
 title: "&#39;&lt;methodname&gt;&#39; has multiple definitions with identical signatures"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""

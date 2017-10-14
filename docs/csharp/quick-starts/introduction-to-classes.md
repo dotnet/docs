@@ -16,7 +16,7 @@ This lesson assumes installed [.NET Core](http://dot.net/core) and [Visual Studi
 
 ## Create your application
 
-Create a directory named **classes**. You'll build your application tehre. Change to that directory and type `dotnet new console`. This command creates your application. Open **Program.cs**. It should look like this:
+Create a directory named **classes**. You'll build your application there. Change to that directory and type `dotnet new console`. This command creates your application. Open **Program.cs**. It should look like this:
 
 ```csharp
 using System;
@@ -119,11 +119,11 @@ Your bank account class needs to accept deposits and withdrawals to work correct
 
 Let's start by creating a new type to represent a transaction. This is a simple type that doesn't have any responsibilities. It needs a few properties. Create a new file named ***Transaction.cs***. Add the following code to it:
 
-[!code-csharp[Transaction](../../../samples/csharp/quick-start-classes/Transaction.cs "Transaction declaration")]
+[!code-csharp[Transaction](../../../samples/csharp/classes-quickstart/Transaction.cs "Transaction declaration")]
 
 Now, let's add a <xref:System.Collections.Generic.List%601> of `Transaction` objects to the `BankAccount` class. Add the following declaration:
 
-[!code-csharp[TransactionDecl](../../../samples/csharp/quick-start-classes/BankAccount.c#TransactionDeclaration "Transaction declaration")]
+[!code-csharp[TransactionDecl](../../../samples/csharp/classes-quickstart/BankAccount.cs#TransactionDeclaration "Transaction declaration")]
 
 The <xref:System.Collections.Generic.List%601> class requires you to import a different namespace. Add the following at the beginning of **BankAccount.cs**:
 
@@ -133,17 +133,17 @@ using System.Collections.Generic;
 
 Now, let's change how the `Balance` is reported.  It can be found by summing the values of all transactions. Modify the declaration of `Balance` in the `BankAccount` class to the following:
 
-[!code-csharp[BalanceComputation](../../../samples/csharp/quick-start-classes/BankAccount.c#BalanceComputatiom "Computing the balance")]
+[!code-csharp[BalanceComputation](../../../samples/csharp/classes-quickstart/BankAccount.cs#BalanceComputation "Computing the balance")]
 
 This example shows an important aspect of ***properties***. You're now computing the balance when another programmer asks for the value. Your computation enumerates all transactions, and provides the sum as the current balance.
 
 Next implement the `MakeDeposit` and `MakeWithdrawal` methods:
 
-[!code-csharp[DepositAndWithdrawal](../../../samples/csharp/quick-start-classes/BankAccount.c#DepositAndWithdrawal "Make deposits and withdrawals")]
+[!code-csharp[DepositAndWithdrawal](../../../samples/csharp/classes-quickstart/BankAccount.cs#DepositAndWithdrawal "Make deposits and withdrawals")]
 
 The constructor should get one change so that it adds an initial transaction, rather than updating the balance directly. Since you already wrote the `MakeDeposit` method, call it from your constructor. The finished constructor should look like this:
 
-[!code-csharp[Constructor](../../../samples/csharp/quick-start-classes/BankAccount.c#Constructor "The final version of the constructor")]
+[!code-csharp[Constructor](../../../samples/csharp/classes-quickstart/BankAccount.cs#Constructor "The final version of the constructor")]
 
 The <xref:System.DateTime.Now> is a property that returns the current date and time. Test this by adding a few deposits and withdrawals in your `Main` method:
 
@@ -158,7 +158,7 @@ Console.WriteLine(account.Balance);
 
 To finish this quick start, you can write the method that creates a `string` for the transaction history. add this method to the `BankAccount` type:
 
-[!code-csharp[DepositAndWithdrawal](../../../samples/csharp/quick-start-classes/BankAccount.c#DepositAndWithdrawal "Make deposits and withdrawals")]
+[!code-csharp[DepositAndWithdrawal](../../../samples/csharp/classes-quickstart/BankAccount.cs#DepositAndWithdrawal "Make deposits and withdrawals")]
 
 This uses the <xref:System.Text.StringBuilder> class to format a string that contains one line for each transaction. You've seen the string formatting code earlier in these quick starts. One new character is `\t`. That inserts a tab to format the output a little nicer.
 
@@ -174,4 +174,4 @@ Type `dotnet run` to see the results.
 
 If you got stuck, you can see the source for this quick start [in our GitHub repo](https://github.com/dotnet/docs/tree/master/samples/csharp/classes-quickstart/)
 
-Congratulations, you've finished all our Quick Starts.If you're eager to learn more, try our [tutorials](../tutorials/)
+Congratulations, you've finished all our Quick Starts.If you're eager to learn more, try our [tutorials](../tutorials/index.md)

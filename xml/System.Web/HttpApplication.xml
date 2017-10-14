@@ -1728,6 +1728,27 @@ End Sub
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="OnExecuteRequestStep">
+      <MemberSignature Language="C#" Value="public void OnExecuteRequestStep (Action&lt;System.Web.HttpContextBase,Action&gt; callback);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void OnExecuteRequestStep(class System.Action`2&lt;class System.Web.HttpContextBase, class System.Action&gt; callback) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.OnExecuteRequestStep(System.Action{System.Web.HttpContextBase,System.Action})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="callback" Type="System.Action&lt;System.Web.HttpContextBase,System.Action&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="callback">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="PostAcquireRequestState">
       <MemberSignature Language="C#" Value="public event EventHandler PostAcquireRequestState;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler PostAcquireRequestState" />

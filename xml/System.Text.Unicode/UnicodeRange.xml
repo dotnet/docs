@@ -46,16 +46,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only the B
         <param name="length">The number of code points in the range.</param>
         <summary>Creates a new <see cref="System.Text.Unicode.UnicodeRange" /> that includes a specified number of characters starting at a specified Unicode code point.</summary>
         <remarks>
-        <format type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
 ## Remarks  
 
 Any undefined code points between `firstCodePoint` and `firstCodePoint` + `length` - 1 are included in the <xref:System.Text.Unicode.UnicodeRange> instance created by calling this constructor.
 
         ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException"> 
-
-           <paramref name="firstCodePoint" /> is less than zero or greater than 0xFFFF. 
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="firstCodePoint" /> is less than zero or greater than 0xFFFF. 
 
 -or-           
 
@@ -64,7 +63,7 @@ Any undefined code points between `firstCodePoint` and `firstCodePoint` + `lengt
 -or-
 
 <paramref name="firstCodePoint" /> plus <paramref name="length" /> is greater than 0xFFFF.
-        </exception>    
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -89,9 +88,10 @@ Any undefined code points between `firstCodePoint` and `firstCodePoint` + `lengt
         <param name="firstCharacter">The first character in the range.</param>
         <param name="lastCharacter">The last character in the range.</param>
         <summary>Creates a new <see cref="System.Text.Unicode.UnicodeRange" /> instance from a span of characters.</summary>
-        <returns>A range that includes all characters between <paramref name="firstCharacter"/> and <paramref name="lastCharacter"/>.</returns>
+        <returns>A range that includes all characters between <paramref name="firstCharacter" /> and <paramref name="lastCharacter" />.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="System.ArgumentOutOfRangeException"><paramref name="lastCharacter"/> precedes <paramref name="firstCharacter" />.
+        <exception cref="System.ArgumentOutOfRangeException">
+          <paramref name="lastCharacter" /> precedes <paramref name="firstCharacter" />.
         </exception>
       </Docs>
     </Member>
@@ -110,7 +110,7 @@ Any undefined code points between `firstCodePoint` and `firstCodePoint` + `lengt
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the first code point in the range represented by this <see cref="System.Text.Unicode.UnicodeRange"/> instance.</summary>
+        <summary>Gets the first code point in the range represented by this <see cref="System.Text.Unicode.UnicodeRange" /> instance.</summary>
         <value>The first code point in the range.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -130,7 +130,7 @@ Any undefined code points between `firstCodePoint` and `firstCodePoint` + `lengt
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of code points in the range represented by this <see cref="System.Text.Unicode.UnicodeRange"/> instance.</summary>
+        <summary>Gets the number of code points in the range represented by this <see cref="System.Text.Unicode.UnicodeRange" /> instance.</summary>
         <value>The number of code points in the range. </value>
         <remarks>To be added.</remarks>
       </Docs>

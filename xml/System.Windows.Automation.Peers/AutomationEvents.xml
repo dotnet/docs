@@ -129,6 +129,22 @@
         </summary>
       </Docs>
     </Member>
+    <Member MemberName="LiveRegionChanged">
+      <MemberSignature Language="C#" Value="LiveRegionChanged" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationEvents LiveRegionChanged = int32(18)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationEvents.LiveRegionChanged" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
     <Member MemberName="MenuClosed">
       <MemberSignature Language="C#" Value="MenuClosed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationEvents MenuClosed = int32(3)" />

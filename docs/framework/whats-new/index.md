@@ -40,13 +40,13 @@ The .NET Framework 4.7.1 builds on the .NET Framework 4.6, 4.6.1, 4.6.2, and 4.7
  
 You can download the .NET Framework 4.7.1  from the following locations:
 
-- [.NET Framework 4.7.1 Web Installer](http://go.microsoft.com/fwlink/?LinkId=nnnnnn)
+- [.NET Framework 4.7.1 Web Installer](http://go.microsoft.com/fwlink/?LinkId=852095)
 
-- [NET Framework 4.7.1 Offline Installer](http://go.microsoft.com/fwlink/?LinkId=nnnnnn)
+- [NET Framework 4.7.1 Offline Installer](http://go.microsoft.com/fwlink/?LinkId=852107)
 
 The .NET Framework 4.7.1 can be installed on Windows 10, Windows 8.1, Windows 7 SP1, and the corresponding server platforms starting with Windows Server 2008 R2 SP1. You can install the .NET Framework 4.7.1 by using either the web installer or the offline installer. The recommended way for most users is to use the web installer.
 
-You can target the .NET Framework 4.7.1 in Visual Studio 2012 or later by installing the [.NET Framework 4.7.1 Developer Pack](http://go.microsoft.com/fwlink/?LinkId=825319). 
+You can target the .NET Framework 4.7.1 in Visual Studio 2012 or later by installing the [.NET Framework 4.7.1 Developer Pack](http://go.microsoft.com/fwlink/?LinkId=852105). 
 
 ### What's new in the .NET Framework 4.7.1
 

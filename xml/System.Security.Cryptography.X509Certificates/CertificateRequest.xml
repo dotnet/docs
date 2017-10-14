@@ -312,8 +312,7 @@ The type of signing key represented by <paramref name="issuerCertificate"/> coul
         <returns>An <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2"/> object with the specified values. The returned object will assert <see cref="P:System.Security.Cryptography.X509Certificates.X509Certificate2.HasPrivateKey" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException"><paramref name="notAfter"/> represents a date and time that happens before than <paramref name="notBefore"/>.</exception>
-        <exception cref="T:System.InvalidOperationException">
-          The current object was created using a constructor that doesn't accept a signing key.</exception>
+        <exception cref="T:System.InvalidOperationException">The current object was created using a constructor that doesn't accept a signing key.</exception>
         <exception cref="T:System.Security.Cryptography.CryptographicException">An error occurs during the certificate creation process.</exception>
       </Docs>
     </Member>
@@ -333,28 +332,6 @@ The type of signing key represented by <paramref name="issuerCertificate"/> coul
       <Docs>
         <summary>Creates an ASN.1 DER-encoded PKCS#10 CertificationRequest object representing the state of the current object.</summary>
         <returns>A DER-encoded certificate signing request.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="CreateSigningRequest">
-      <MemberSignature Language="C#" Value="public byte[] CreateSigningRequest (System.Security.Cryptography.X509Certificates.X509SignatureGenerator signatureGenerator);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] CreateSigningRequest(class System.Security.Cryptography.X509Certificates.X509SignatureGenerator signatureGenerator) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.CertificateRequest.CreateSigningRequest(System.Security.Cryptography.X509Certificates.X509SignatureGenerator)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Byte[]</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="signatureGenerator" Type="System.Security.Cryptography.X509Certificates.X509SignatureGenerator" />
-      </Parameters>
-      <Docs>
-        <param name="signatureGenerator">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -391,7 +368,31 @@ The type of signing key represented by <paramref name="issuerCertificate"/> coul
                 }
                 ```
  ]]></format>
-            </remarks>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The current object was created using a constructor that doesn't accept a signing key.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateSigningRequest">
+      <MemberSignature Language="C#" Value="public byte[] CreateSigningRequest (System.Security.Cryptography.X509Certificates.X509SignatureGenerator signatureGenerator);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] CreateSigningRequest(class System.Security.Cryptography.X509Certificates.X509SignatureGenerator signatureGenerator) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.CertificateRequest.CreateSigningRequest(System.Security.Cryptography.X509Certificates.X509SignatureGenerator)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="signatureGenerator" Type="System.Security.Cryptography.X509Certificates.X509SignatureGenerator" />
+      </Parameters>
+      <Docs>
+        <param name="signatureGenerator">The signature generator with which to sign the request.</param>
+        <summary>Creates an ASN.1 DER-encoded PKCS#10 CertificationRequest representing the current state of the current object using the provided signature generator.</summary>
+        <returns>A DER-encoded certificate signing request.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="signatureGenerator" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="HashAlgorithm">

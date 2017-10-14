@@ -277,6 +277,24 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="ConfigurationBuilder">
+      <MemberSignature Language="C#" Value="public System.Configuration.ConfigurationBuilder ConfigurationBuilder { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationBuilder ConfigurationBuilder" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.ConfigurationBuilder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationBuilder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <MemberGroup MemberName="ForceDeclaration">
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

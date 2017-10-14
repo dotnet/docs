@@ -1,6 +1,6 @@
 ---
 title: Quick Start - Arrays and Collections - C# Guide
-description: Learn C# in your browser
+description: Learn C# by exploring the List collection in this quick start.
 keywords: C#, Get Started, tutorial, collections, List
 author: billwagner
 ms.author: wiwagn
@@ -16,6 +16,10 @@ This tutorial provides an introduction of the C# language and the basics of the 
 class.
 
 ## A simple list example.
+
+> [!NOTE]
+> If you are starting from the code you wrote in [dot.net](https://dot.net/) you will already have the code written in this section. Jump to [Modify list contents](#modify-list-contents).
+
 
 Create a directory named **list-quickstart** and run `dotnet new console`.
 
@@ -41,9 +45,6 @@ namespace list_quickstart
 }
 ```
 
-> [!NOTE]
-> If you are starting from the code you wrote in [dot.net](https://dot.net/) you will already have that code written.
-
 Replace `<name>` with your name. Save **Program.cs**. Type `dotnet run` in your console window to try it.
 
 You've just created a list of strings, added three names to that list, and printed out the names in all CAPS. You're using concepts that you've learned in earlier quick starts to loop through the list.
@@ -54,7 +55,7 @@ Let's keep exploring.
     
 ## Modify list contents
 
-The collection you created using the <xref:System.Collections.Generic.List%601> type. This type stores sequences of elements. You specify the type of the elements between the angle brackets.
+The collection you created uses the <xref:System.Collections.Generic.List%601> type. This type stores sequences of elements. You specify the type of the elements between the angle brackets.
     
 One important aspect of this <xref:System.Collections.Generic.List%601> type is that it can grow or shrink, enabling you to add or remove elements. Add this code before the closing `}` in the `Main` method:
 

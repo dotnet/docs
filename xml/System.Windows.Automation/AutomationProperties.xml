@@ -331,10 +331,11 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> to check.</param>
+        <summary>Gets the <see cref="P:System.Windows.Automation.AutomationProperties.LiveSetting" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <returns>The <see cref="T:System.Windows.Automation.AutomationLiveSetting" /> value for the <paramref name="element" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetName">
@@ -508,7 +509,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationProperties.LiveSetting" /> attached property. </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -799,9 +800,9 @@
         <Parameter Name="value" Type="System.Windows.Automation.AutomationLiveSetting" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> to check.</param>
+        <param name="value">The value to assign to the property.</param>
+        <summary>Sets the <see cref="P:System.Windows.Automation.AutomationProperties.LiveSetting" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

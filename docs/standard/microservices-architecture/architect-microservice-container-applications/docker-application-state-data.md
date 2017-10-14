@@ -43,7 +43,7 @@ In addition, when Docker containers are managed by an orchestrator, containers m
 
 **Volume plugins** like [Flocker](https://clusterhq.com/flocker/) provide data access across all hosts in a cluster. While not all volume plugins are created equally, volume plugins typically provide externalized persistent reliable storage from immutable containers.
 
-**Remote data sources and cache** tools like Azure SQL Database, Azure Document DB, or a remote cache like Redis can be used in containerized applications the same way they are used when developing without containers. This is a proven way to store business application data.
+**Remote data sources and cache** tools like Azure SQL Database, Azure Cosmos DB, or a remote cache like Redis can be used in containerized applications the same way they are used when developing without containers. This is a proven way to store business application data.
 
 **Azure Storage.** Business data usually will need to be placed in external resources or databases, like relational databases or NoSQL databases like Azure Storage and DocDB. Azure Storage, in concrete, provides the following services in the cloud:
 

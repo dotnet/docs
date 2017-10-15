@@ -55,5 +55,29 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="IsTemplatedValueDynamic">
+      <MemberSignature Language="C#" Value="public static bool IsTemplatedValueDynamic (System.Windows.DependencyObject elementInTemplate, System.Windows.DependencyProperty dependencyProperty);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsTemplatedValueDynamic(class System.Windows.DependencyObject elementInTemplate, class System.Windows.DependencyProperty dependencyProperty) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.DependencyPropertyHelper.IsTemplatedValueDynamic(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="elementInTemplate" Type="System.Windows.DependencyObject" />
+        <Parameter Name="dependencyProperty" Type="System.Windows.DependencyProperty" />
+      </Parameters>
+      <Docs>
+        <param name="elementInTemplate">To be added.</param>
+        <param name="dependencyProperty">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
   </Members>
 </Type>

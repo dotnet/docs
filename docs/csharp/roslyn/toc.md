@@ -34,25 +34,9 @@
 
 ## [Concepts](concepts/index.md)
 ### [Exposing the compiler APIs](concepts/compiler-api-model.md)
-### API layers
-#### Compiler APIs
-#### Workspace APIs
-### Working with syntax
-#### Syntax trees
-#### Syntax nodes
-#### Syntax tokens
-#### Syntax trivia
-#### Spans
-#### Kinds
-#### Errors
-### Working with semantics
-#### Compilation
-#### Symbols
-#### Semantic model
-### Working with a workspace
-#### Workspace
-#### Solutions, projects and documents
--->
+### [Work with syntax](concepts/work-with-syntax.md)
+### [Work with semantics](concepts/work-with-semantics.md)
+### [Work with a workspace](oncepts/work-with-workspace.md)
 
 <!--
 ## How to guides

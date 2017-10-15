@@ -76,7 +76,7 @@ To create a custom configuration builder, you derive your builder from the abstr
 
 The <xref:System.Runtime.CompilerServices.RuntimeFeature?displayProperty=fullName> class provides a mechanism for determine whether a predefined feature is supported on a given .NET implementation at compile-time or runtime. At compile time, a compiler can check whether a specified field exists to determine whether the feature is supported; if so, it can emit code that takes advantage of that feature. At runtime, an application can call the <xref:System.Runtime.CompilerServices.RuntimeFeature.IsSupported%2A?displayProperty=nameWithType> method before emitting code at runtime. For more information, see [Add helper method to describe features supported by the runtime](https://github.com/dotnet/corefx/issues/17116).
 
-**ValueTuple** is serializable**
+**Value tuple types are serializable**
 
 Starting with the .NET Framework 4.7.1, <xref:System.ValueTuple?displayProperty=fullName> and its associated generic types are marked as [Serializable](xref:System.SerializationAttribute), which allows binary serialization. This should make migrating Tuple types, such as <xref:System.Tuple%603> and <xref:System.Tuple%604>, to value tuple types easier. For more information, see "Compiler -- ValueTuple is Serializable" in the [.NET Framework 4.7.1 Runtime and Compiler Features](https://blogs.msdn.microsoft.com/dotnet/2017/09/28/net-framework-4-7-1-runtime-and-compiler-features) .NET blog.
 
@@ -115,7 +115,7 @@ ASP.NET processes requests in a predefined pipeline that includes 23 events. ASP
 
 The .NET Framework 4.7.1 includes a new method, <xref:System.Web.HttpCookie.TryParse%2A?displayProperty=nameWithType>, that provides a standardized way to create an <xref:System.Web.HttpCookie> object from a string and accurately assign cookie values such as expiration date and path. For more information, see "ASP.NET HttpCookie parsing" in the [.NET Framework 4.7.1 ASP.NET and Configuration Features](https://blogs.msdn.microsoft.com/dotnet/2017/09/13/net-framework-4-7-1-asp-net-and-configuration-features) .NET blog. 
 
-**SHA-2 has options for ASP.NET forms authentication credentials**
+**SHA-2 hash options for ASP.NET forms authentication credentials**
 
 In the .NET Framework 4.7 and earlier versions, ASP.NET allowed developers to store user credentials with hashed passwords in configuration files using either MD5 or SHA1. Starting with the .NET Framework 4.7.1, ASP.NET also supports new secure SHA-2 hash options such as SHA256, SHA384, and SHA512. SHA1 remains the default, and a non-default hash algorithm can be defined in the web configuration file. For example:
 

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugStepper::SetUnmappedStopMask"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugStepper::SetUnmappedStopMask method [.NET Framework debugging]"
   - "SetUnmappedStopMask method [.NET Framework debugging]"

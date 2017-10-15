@@ -55,8 +55,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[ListControlSelectedValue#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlSelectedValue/CS/listcontrolselectedvaluecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ListControlSelectedValue#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlSelectedValue/VB/listcontrolselectedvaluevb.aspx#1)]  -->  
+ [!code-aspx-csharp[ListControlSelectedValue#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlSelectedValue/CS/listcontrolselectedvaluecs.aspx#1)]
+ [!code-aspx-vb[ListControlSelectedValue#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlSelectedValue/VB/listcontrolselectedvaluevb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -82,8 +82,8 @@
   
  create a <xref:System.Web.UI.WebControls.ListBox> control. The example uses a <xref:System.Web.UI.WebControls.PlaceHolder> control as a container for the <xref:System.Web.UI.WebControls.ListBox>.  
   
- <!-- TODO: review snippet reference [!code-csharp[ListControlctor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlctor/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ListControlctor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlctor/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[ListControlctor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlctor/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[ListControlctor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlctor/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -159,8 +159,8 @@
 ## Examples  
  The following code example demonstrates how to include both data-bound items and items that are not data-bound in a <xref:System.Web.UI.WebControls.ListBox> control. In the <xref:System.Web.UI.Control.Load> event for the <xref:System.Web.UI.Page>, one item is added to the <xref:System.Web.UI.WebControls.ListControl.Items%2A> collection and the <xref:System.Web.UI.WebControls.ListControl.AppendDataBoundItems%2A> property is set to `true`. Then, the <xref:System.Web.UI.WebControls.ListBox> control is bound to a <xref:System.Data.DataTable> control. The resulting <xref:System.Web.UI.WebControls.ListBox> control contains both the data-bound items and the item that was added individually.  
   
- <!-- TODO: review snippet reference [!code-csharp[ListControlAppendDataBoundItems#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlAppendDataBoundItems/CS/AppendItemsCs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ListControlAppendDataBoundItems#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlAppendDataBoundItems/VB/AppendItemsVb.aspx#1)]  -->  
+ [!code-aspx-csharp[ListControlAppendDataBoundItems#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlAppendDataBoundItems/CS/AppendItemsCs.aspx#1)]
+ [!code-aspx-vb[ListControlAppendDataBoundItems#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlAppendDataBoundItems/VB/AppendItemsVb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -207,8 +207,8 @@
 ## Examples  
  The following example demonstrates how to enable <xref:System.Web.UI.WebControls.ListControl.AutoPostBack%2A> for the <xref:System.Web.UI.WebControls.ListBox> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[ListControlAutoPostBack#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlAutoPostBack/CS/ListControlAutoPostBackcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ListControlAutoPostBack#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlAutoPostBack/VB/ListControlAutoPostBackvb.aspx#1)]  -->  
+ [!code-aspx-csharp[ListControlAutoPostBack#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlAutoPostBack/CS/ListControlAutoPostBackcs.aspx#1)]
+ [!code-aspx-vb[ListControlAutoPostBack#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlAutoPostBack/VB/ListControlAutoPostBackvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -319,8 +319,8 @@
 ## Examples  
  The following example demonstrates how to specify the <xref:System.Web.UI.WebControls.ListControl.DataTextField%2A> for the <xref:System.Web.UI.WebControls.RadioButtonList> control. The <xref:System.Web.UI.WebControls.ListControl.DataTextField%2A> is the text that is displayed in the <xref:System.Web.UI.WebControls.RadioButtonList>.  
   
- <!-- TODO: review snippet reference [!code-csharp[ListControlDataSource#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlDataSource/CS/ListControlDataSourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ListControlDataSource#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlDataSource/VB/ListControlDataSourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[ListControlDataSource#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlDataSource/CS/ListControlDataSourcecs.aspx#1)]
+ [!code-aspx-vb[ListControlDataSource#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlDataSource/VB/ListControlDataSourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -448,8 +448,8 @@
 ## Examples  
  The following example demonstrates how to specify the <xref:System.Web.UI.WebControls.ListControl.DataValueField%2A> for the <xref:System.Web.UI.WebControls.RadioButtonList> control. The <xref:System.Web.UI.WebControls.ListControl.DataValueField%2A> is the value for the each item in the <xref:System.Web.UI.WebControls.RadioButtonList>.  
   
- <!-- TODO: review snippet reference [!code-csharp[ListControlDataSource#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlDataSource/CS/ListControlDataSourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ListControlDataSource#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlDataSource/VB/ListControlDataSourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[ListControlDataSource#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlDataSource/CS/ListControlDataSourcecs.aspx#1)]
+ [!code-aspx-vb[ListControlDataSource#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlDataSource/VB/ListControlDataSourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -495,8 +495,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.ListControl.Items%2A> property to determine the selected items in a <xref:System.Web.UI.WebControls.CheckBoxList> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[ListControlItems#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlItems/CS/ListControlItemscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ListControlItems#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlItems/VB/ListControlItemsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[ListControlItems#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlItems/CS/ListControlItemscs.aspx#1)]
+ [!code-aspx-vb[ListControlItems#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlItems/VB/ListControlItemsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -623,8 +623,8 @@
 ## Examples  
  The following example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> event to display the selection made by the user.  
   
- <!-- TODO: review snippet reference [!code-csharp[ListControlDataSource#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlDataSource/CS/ListControlDataSourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ListControlDataSource#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlDataSource/VB/ListControlDataSourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[ListControlDataSource#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlDataSource/CS/ListControlDataSourcecs.aspx#1)]
+ [!code-aspx-vb[ListControlDataSource#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlDataSource/VB/ListControlDataSourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -825,8 +825,8 @@
 ## Examples  
  The following example demonstrates how to use <xref:System.Web.UI.WebControls.ListControl.SelectedIndex%2A> to determine the lowest index of the selected items in the <xref:System.Web.UI.WebControls.CheckBoxList>.  
   
- <!-- TODO: review snippet reference [!code-csharp[ListControlSelectedIndex#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlSelectedIndex/CS/ListControlSelectedIndexcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ListControlSelectedIndex#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlSelectedIndex/VB/ListControlSelectedIndexvb.aspx#1)]  -->  
+ [!code-aspx-csharp[ListControlSelectedIndex#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlSelectedIndex/CS/ListControlSelectedIndexcs.aspx#1)]
+ [!code-aspx-vb[ListControlSelectedIndex#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlSelectedIndex/VB/ListControlSelectedIndexvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -863,8 +863,8 @@
 ## Examples  
  The following example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> event to display the selection made by the user.  
   
- <!-- TODO: review snippet reference [!code-csharp[ListControlDataSource#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlDataSource/CS/ListControlDataSourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ListControlDataSource#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlDataSource/VB/ListControlDataSourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[ListControlDataSource#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlDataSource/CS/ListControlDataSourcecs.aspx#1)]
+ [!code-aspx-vb[ListControlDataSource#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlDataSource/VB/ListControlDataSourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -907,8 +907,8 @@
 ## Examples  
  The following example demonstrates how to use <xref:System.Web.UI.WebControls.ListControl.SelectedItem%2A> to get the individual properties of the currently selected item in the <xref:System.Web.UI.WebControls.RadioButtonList> and to display that item and its value.  
   
- <!-- TODO: review snippet reference [!code-csharp[ListControlDataSource#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlDataSource/CS/ListControlDataSourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ListControlDataSource#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlDataSource/VB/ListControlDataSourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[ListControlDataSource#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlDataSource/CS/ListControlDataSourcecs.aspx#1)]
+ [!code-aspx-vb[ListControlDataSource#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlDataSource/VB/ListControlDataSourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -980,8 +980,8 @@ if(DropDownList1.Items.FindByValue("2") != null) {
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[ListControlSelectedValue#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlSelectedValue/CS/listcontrolselectedvaluecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ListControlSelectedValue#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlSelectedValue/VB/listcontrolselectedvaluevb.aspx#1)]  -->  
+ [!code-aspx-csharp[ListControlSelectedValue#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlSelectedValue/CS/listcontrolselectedvaluecs.aspx#1)]
+ [!code-aspx-vb[ListControlSelectedValue#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlSelectedValue/VB/listcontrolselectedvaluevb.aspx#1)]  
   
  ]]></format>
         </remarks>

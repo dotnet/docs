@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugManagedCallback3::CustomNotification"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugManagedCallback3::CustomNotification method [.NET Framework debugging]"
   - "CustomNotification method [.NET Framework debugging]"

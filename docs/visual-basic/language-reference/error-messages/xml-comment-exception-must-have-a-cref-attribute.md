@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "bc42319"
   - "vbc42319"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC42319"
 ms.assetid: 62eeeba3-6811-48be-b1ef-c2e4feda3177

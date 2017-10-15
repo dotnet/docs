@@ -354,6 +354,29 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="InvalidatesImplicitDataTemplateResources">
+      <MemberSignature Language="C#" Value="public bool InvalidatesImplicitDataTemplateResources { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool InvalidatesImplicitDataTemplateResources" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.ResourceDictionary.InvalidatesImplicitDataTemplateResources" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="IsFixedSize">
       <MemberSignature Language="C#" Value="public bool IsFixedSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsFixedSize" />

@@ -1,0 +1,66 @@
+<Type Name="AutomationLiveSetting" FullName="System.Windows.Automation.AutomationLiveSetting">
+  <TypeSignature Language="C#" Value="public enum AutomationLiveSetting" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AutomationLiveSetting extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.AutomationLiveSetting" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Assertive">
+      <MemberSignature Language="C#" Value="Assertive" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.AutomationLiveSetting Assertive = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationLiveSetting.Assertive" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationLiveSetting</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Off">
+      <MemberSignature Language="C#" Value="Off" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.AutomationLiveSetting Off = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationLiveSetting.Off" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationLiveSetting</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Polite">
+      <MemberSignature Language="C#" Value="Polite" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.AutomationLiveSetting Polite = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationLiveSetting.Polite" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationLiveSetting</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

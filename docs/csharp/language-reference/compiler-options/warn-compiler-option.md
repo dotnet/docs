@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "/warn"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "warning level [C#]"
   - "/w compiler option [C#]"

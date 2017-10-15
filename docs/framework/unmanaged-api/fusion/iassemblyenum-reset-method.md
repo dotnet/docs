@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IAssemblyEnum::Reset"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IAssemblyEnum::Reset method [.NET Framework fusion]"
   - "Reset method, IAssemblyEnum interface [.NET Framework fusion]"

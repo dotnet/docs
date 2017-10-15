@@ -85,7 +85,7 @@ The ServiceModel Metadata Utility tool is used to generate service model code fr
 |Option|Description|  
 |------------|-----------------|  
 |/async|Generates both synchronous and asynchronous method signatures.<br /><br /> Default: generate only synchronous method signatures.<br /><br /> Short Form: `/a`|  
-|/collectionType:\<type>|Generates both synchronous and asynchronous method signatures.<br /><br /> Default: generate only synchronous method signatures.<br /><br /> Short Form: `/a`|  
+|/collectionType:\<type>|Specifies the list collection type for a WCF client.<br/><br /> Default: collection type is System.Array. <br /><br /> Short Form: `/ct`|  
 |/config:\<configFile>|Specifies the filename for the generated configuration file.<br /><br /> Default: output.config|  
 |/dataContractOnly|Generates code for data contract types only. Service Contract types are not generated.<br /><br /> You should only specify local metadata files for this option.<br /><br /> Short Form: `/dconly`|  
 |/enableDataBinding|Implements the <xref:System.ComponentModel.INotifyPropertyChanged> interface on all Data Contract types to enable data binding.<br /><br /> Short Form: `/edb`|  

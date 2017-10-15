@@ -8,4 +8,5 @@
 |Version|4.5|
 |Type|Runtime|
 |Affected APIs|<ul><li><xref:System.Web.SessionState.SessionStateMode.StateServer?displayProperty=nameWithType></li></ul>|
+|Analyzers|<ul><li>CD0128</li></ul>|
 

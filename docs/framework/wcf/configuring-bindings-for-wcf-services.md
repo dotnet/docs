@@ -9,9 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
 helpviewer_keywords: 
   - "binding configuration [WCF]"
 ms.assetid: 99a85fd8-f7eb-4a84-a93e-7721b37d415c

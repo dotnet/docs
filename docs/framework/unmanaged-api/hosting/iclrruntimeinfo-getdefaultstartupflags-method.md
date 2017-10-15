@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRRuntimeInfo::GetDefaultStartupFlags"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRRuntimeInfo::GetDefaultStartupFlags method [.NET Framework hosting]"
   - "GetDefaultStartupFlags method [.NET Framework hosting]"

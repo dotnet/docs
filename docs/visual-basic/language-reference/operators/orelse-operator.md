@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "OrElse"
   - "vb.OrElse"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "short-circuiting"
   - "operators [Visual Basic], short-circuiting"

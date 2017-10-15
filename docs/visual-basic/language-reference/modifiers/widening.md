@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.widening"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "conversions, type"
   - "type conversion"

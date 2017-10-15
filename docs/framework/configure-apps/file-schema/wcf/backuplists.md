@@ -24,13 +24,10 @@ Represents a configuration section for defining a set of backup services used in
   
 ## Syntax  
   
-```vb  
+```xml
    <routing>  <backupLists>    <backupList name="String">      <add endpointName="String" />    </backupList>    </backupLists></routing>  
-```  
-  
-```csharp  
-```  
-  
+```
+
 ## Attributes and Elements  
  The following sections describe attributes, child elements, and parent elements.  
   

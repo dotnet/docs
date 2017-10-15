@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "<example>"
   - "example"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "<example> C# XML tag"
   - "example C# XML tag"

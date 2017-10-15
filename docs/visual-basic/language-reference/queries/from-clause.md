@@ -13,8 +13,6 @@ f1_keywords:
   - "vb.QueryFrom"
   - "vb.QueryFromIn"
   - "vb.QueryFromLet"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "queries [Visual Basic], From"
   - "From clause"

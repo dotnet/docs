@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "objects [Visual Basic], converting"
 ms.assetid: 60cb5fc7-7ba4-4ab5-9c24-480fa12ddcdc

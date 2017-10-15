@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostThreadPoolManager::SetMaxThreads"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostThreadPoolManager::SetMaxThreads method [.NET Framework hosting]"
   - "SetMaxThreads method, IHostThreadPoolManager interface [.NET Framework hosting]"

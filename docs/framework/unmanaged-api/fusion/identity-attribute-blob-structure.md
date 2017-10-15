@@ -9,6 +9,8 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
+dev_langs:
+- "cpp"
 api_name: 
   - "IDENTITY_ATTRIBUTE_BLOB"
 api_location: 
@@ -17,8 +19,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IDENTITY_ATTRIBUTE_BLOB"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IDENTITY_ATTRIBUTE_BLOB structure [.NET Framework fusion]"
 ms.assetid: af14ae5f-d226-47dd-ba90-8fc6e6605d4d

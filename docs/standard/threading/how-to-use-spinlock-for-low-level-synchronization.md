@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+- "csharp"
+- "vb"
 helpviewer_keywords: 
   - "SpinLock, how to use"
 ms.assetid: a9ed3e4e-4f29-4207-b730-ed0a51ecbc19

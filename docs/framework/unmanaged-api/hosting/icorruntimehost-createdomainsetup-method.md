@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorRuntimeHost::CreateDomainSetup"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CreateDomainSetup method [.NET Framework hosting]"
   - "ICorRuntimeHost::CreateDomainSetup method [.NET Framework hosting]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostSecurityManager"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostSecurityManager interface [.NET Framework hosting]"
 ms.assetid: c3be2cbd-2d93-438b-9888-9a0251b63c03

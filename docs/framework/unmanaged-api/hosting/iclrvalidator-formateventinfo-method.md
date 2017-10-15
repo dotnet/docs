@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRValidator::FormatEventInfo"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "FormatEventInfo method, ICLRValidator interface [.NET Framework hosting]"
   - "ICLRValidator::FormatEventInfo method [.NET Framework hosting]"

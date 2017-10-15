@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback4::SurvivingReferences2"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerCallback4::SurvivingReferences2 method [.NET Framework profiling]"
   - "SurvivingReferences2 method, ICorProfilerCallback4 interface [.NET Framework profiling]"

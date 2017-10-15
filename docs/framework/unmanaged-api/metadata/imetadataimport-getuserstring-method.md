@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataImport::GetUserString"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataImport::GetUserString method [.NET Framework metadata]"
   - "GetUserString method, IMetaDataImport interface [.NET Framework metadata]"

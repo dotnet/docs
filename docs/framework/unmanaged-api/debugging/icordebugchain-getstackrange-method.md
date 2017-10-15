@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugChain::GetStackRange"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugChain::GetStackRange method [.NET Framework debugging]"
   - "GetStackRange method, ICorDebugChain interface [.NET Framework debugging]"

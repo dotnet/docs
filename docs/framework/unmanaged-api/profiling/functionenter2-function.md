@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "FunctionEnter2"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "FunctionEnter2 function [.NET Framework profiling]"
 ms.assetid: ce7a21f9-0ca3-4b92-bc4b-bb803cae3f51

@@ -9,11 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "NetFx45_CultureAwareComparerGetHashCode_LongStrings element"
   - "<NetFx45_CultureAwareComparerGetHashCode_LongStrings> element"
@@ -34,7 +29,7 @@ Specifies whether the runtime uses a fixed amount of memory to calculate hash co
   
 ## Syntax  
   
-```vb  
+```xml
 <NetFx45_CultureAwareComparerGetHashCode_LongStrings enabled="0|1">  
 ```  
   

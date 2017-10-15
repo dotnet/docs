@@ -41,6 +41,24 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="HandleDispatcherRequestProcessingFailure">
+      <MemberSignature Language="C#" Value="public static System.Windows.BaseCompatibilityPreferences.HandleDispatcherRequestProcessingFailureOptions HandleDispatcherRequestProcessingFailure { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.BaseCompatibilityPreferences/HandleDispatcherRequestProcessingFailureOptions HandleDispatcherRequestProcessingFailure" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.BaseCompatibilityPreferences.HandleDispatcherRequestProcessingFailure" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.BaseCompatibilityPreferences+HandleDispatcherRequestProcessingFailureOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="InlineDispatcherSynchronizationContextSend">
       <MemberSignature Language="C#" Value="public static bool InlineDispatcherSynchronizationContextSend { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property bool InlineDispatcherSynchronizationContextSend" />

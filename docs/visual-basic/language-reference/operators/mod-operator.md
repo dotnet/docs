@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.Mod"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "remainder (Mod operator)"
   - "division operator, Mod operator"

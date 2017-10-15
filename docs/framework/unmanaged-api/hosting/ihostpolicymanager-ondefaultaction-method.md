@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostPolicyManager::OnDefaultAction"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "OnDefaultAction method [.NET Framework hosting]"
   - "IHostPolicyManager::OnDefaultAction method [.NET Framework hosting]"

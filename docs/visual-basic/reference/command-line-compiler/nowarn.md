@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "nowarn compiler option [Visual Basic]"
   - "/nowarn compiler option [Visual Basic]"

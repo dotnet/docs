@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Then keyword"
 ms.assetid: 41fdb422-d222-4c10-b5b0-c421c79e9070

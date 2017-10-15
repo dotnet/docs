@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedWriter::DefineLocalVariable"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedWriter::DefineLocalVariable method [.NET Framework debugging]"
   - "DefineLocalVariable method [.NET Framework debugging]"

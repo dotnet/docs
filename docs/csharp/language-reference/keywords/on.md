@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "on_CSharpKeyword"
   - "on"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "on keyword [C#]"
 ms.assetid: 06abc536-e07c-4e34-88c1-425208bdcb21

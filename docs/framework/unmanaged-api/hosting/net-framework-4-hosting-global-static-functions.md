@@ -9,8 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "hosting global static functions [.NET Framework], version 4"
   - "global static functions [.NET Framework hosting], version 4"

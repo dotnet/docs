@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorUnregisterWait"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorUnregisterWait method [.NET Framework hosting]"
   - "ICorThreadpool::CorUnregisterWait method [.NET Framework hosting]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "INotifySource2::SetNotifyFilter"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "INotifySource2::SetNotifyFilter method [.NET Framework debugging]"
   - "SetNotifyFilter method [.NET Framework debugging]"

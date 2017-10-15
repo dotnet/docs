@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataInfo"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataInfo interface [.NET Framework metadata]"
 ms.assetid: 137cb264-64de-46ac-bc6e-2a7db97e8abe

@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "double"
   - "double_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "double data type [C#]"
 ms.assetid: 0980e11b-6004-4102-abcf-cfc280fc6991
@@ -62,7 +60,7 @@ double x = 3D;
   
 -   The finite set of nonzero values.  
   
- For more information about these values, see IEEE Standard for Binary Floating-Point Arithmetic, available on the [IEEE](http://go.microsoft.com/fwlink/?LinkId=26269) Web site.  
+ For more information about these values, see IEEE Standard for Binary Floating-Point Arithmetic, available on the [IEEE](http://www.ieee.org) Web site.  
   
 ## Example  
  In the following example, an [int](../../../csharp/language-reference/keywords/int.md), a [short](../../../csharp/language-reference/keywords/short.md), a [float](../../../csharp/language-reference/keywords/float.md), and a `double` are added together giving a `double` result.  

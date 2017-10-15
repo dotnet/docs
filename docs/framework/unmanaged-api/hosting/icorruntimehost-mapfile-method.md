@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorRuntimeHost::MapFile"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorRuntimeHost::MapFile method [.NET Framework hosting]"
   - "MapFile method [.NET Framework hosting]"

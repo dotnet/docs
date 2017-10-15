@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "RUNTIME_INFO_FLAGS"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "RUNTIME_INFO_FLAGS enumeration [.NET Framework hosting]"
 ms.assetid: adba37be-f775-4cdb-8919-5746ce694f33

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedENCUpdate::UpdateMethodLines"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "UpdateMethodLines method [.NET Framework debugging]"
   - "ISymUnmanagedENCUpdate::UpdateMethodLines method [.NET Framework debugging]"

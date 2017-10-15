@@ -9,8 +9,9 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
+dev_langs:
+- "csharp"
+- "vb"
 helpviewer_keywords: 
   - "Line control, implementing tabbing"
   - "Shape control, implementing tabbing"

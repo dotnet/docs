@@ -9,10 +9,11 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 f1_keywords: 
   - "net.ComponentModel.StyleCollectionEditor.TLP.AnchorDock"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "layout [Windows Forms], child controls"
   - "controls [Windows Forms], child"

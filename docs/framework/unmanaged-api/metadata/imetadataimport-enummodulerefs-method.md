@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataImport::EnumModuleRefs"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "EnumModuleRefs method [.NET Framework metadata]"
   - "IMetaDataImport::EnumModuleRefs method [.NET Framework metadata]"

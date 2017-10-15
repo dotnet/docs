@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "SetDebuggerThreadControl"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SetDebuggerThreadControl method [.NET Framework hosting]"
   - "ICorConfiguration::SetDebuggerThreadControl method [.NET Framework hosting]"

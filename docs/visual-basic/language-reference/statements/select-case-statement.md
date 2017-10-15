@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.Select"
   - "vb.Case"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Select statement"
   - "Case statement"

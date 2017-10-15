@@ -17,8 +17,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "StrongNameHashSize"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "StrongNameHashSize function [.NET Framework strong naming]"
 ms.assetid: 738c98d7-a60c-45fe-a296-220af05e6991

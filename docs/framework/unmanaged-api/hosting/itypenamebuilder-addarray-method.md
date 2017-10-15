@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "AddArray"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ITypeNameBuilder::AddArray method [.NET Framework hosting]"
   - "AddArray method [.NET Framework hosting]"

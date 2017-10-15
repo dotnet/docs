@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.isfalse"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "AndAlso operator"
   - "IsFalse operator"

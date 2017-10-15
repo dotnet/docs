@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymENCUnmanagedMethod::GetSourceExtentInDocument"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetSourceExtentInDocument method [.NET Framework debugging]"
   - "ISymENCUnmanagedMethod::GetSourceExtentInDocument method [.NET Framework debugging]"

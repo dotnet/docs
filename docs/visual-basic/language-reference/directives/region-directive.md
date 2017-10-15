@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.Region"
   - "vb.#Region"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Visual Basic compiler, compiler directives"
   - "#region directive"

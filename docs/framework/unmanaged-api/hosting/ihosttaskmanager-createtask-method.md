@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostTaskManager::CreateTask"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CreateTask method, IHostTaskManager interface [.NET Framework hosting]"
   - "IHostTaskManager::CreateTask method [.NET Framework hosting]"

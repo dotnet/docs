@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "METAHOST_POLICY_FLAGS"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "METAHOST_POLICY_FLAGS enumeration [.NET Framework hosting]"
 ms.assetid: 3bb4b526-0118-42e2-ba59-c95648528ce9

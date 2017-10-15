@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo::ForceGC"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerInfo::ForceGC method [.NET Framework profiling]"
   - "ForceGC method [.NET Framework profiling]"

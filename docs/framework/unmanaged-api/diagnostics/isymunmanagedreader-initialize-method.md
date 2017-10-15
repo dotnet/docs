@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedReader::Initialize"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedReader::Initialize method [.NET Framework debugging]"
   - "Initialize method, ISymUnmanagedReader interface [.NET Framework debugging]"

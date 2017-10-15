@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugThread2::GetTaskID"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugThread2::GetTaskID method [.NET Framework debugging]"
   - "GetTaskID method [.NET Framework debugging]"

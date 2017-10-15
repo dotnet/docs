@@ -28,8 +28,8 @@
 ## Examples  
  The following code example generates a <xref:System.Web.Security.FormsAuthenticationTicket> and then uses it to create an instance of the <xref:System.Web.Security.FormsIdentity> class, based on whether the user supplies the correct user name and password on the form.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.FormsIdentity#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.FormsIdentity/CS/FormsIdentity.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.FormsIdentity#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.FormsIdentity/VB/FormsIdentity.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.FormsIdentity#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.FormsIdentity/CS/FormsIdentity.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.FormsIdentity#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.FormsIdentity/VB/FormsIdentity.aspx#1)]  
   
  ]]></format>
     </remarks>

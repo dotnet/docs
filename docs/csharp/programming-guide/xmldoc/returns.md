@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "returns"
   - "<returns>"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "<returns> C# XML tag"
   - "returns C# XML tag"

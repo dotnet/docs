@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataImport::GetFieldMarshal"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetFieldMarshal method [.NET Framework metadata]"
   - "IMetaDataImport::GetFieldMarshal method [.NET Framework metadata]"

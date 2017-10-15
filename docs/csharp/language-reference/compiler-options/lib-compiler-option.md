@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "/lib"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "lib compiler option [C#]"
   - "-lib compiler option [C#]"

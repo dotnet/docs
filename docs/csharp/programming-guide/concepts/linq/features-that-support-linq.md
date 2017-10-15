@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "LINQ [C#], features supporting LINQ"
 ms.assetid: 524b0078-ebfd-45a7-b390-f2ceb9d84797

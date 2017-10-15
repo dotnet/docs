@@ -17,8 +17,6 @@ api_location:
   - "CorGuids.lib"
 api_type: 
   - "COM"
-dev_langs: 
-  - "C++"
 ms.assetid: 1745a0b9-8332-4777-a670-b549bff3b901
 caps.latest.revision: 3
 author: "rpetrusha"

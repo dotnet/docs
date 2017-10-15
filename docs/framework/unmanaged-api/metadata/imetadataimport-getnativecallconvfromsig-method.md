@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataImport::GetNativeCallConvFromSig"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetNativeCallConvFromSig method [.NET Framework metadata]"
   - "IMetaDataImport::GetNativeCallConvFromSig method [.NET Framework metadata]"

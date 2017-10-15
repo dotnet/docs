@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.global"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "assemblies [Visual Basic], namespaces"
   - "name collisions"

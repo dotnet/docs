@@ -5,8 +5,6 @@ ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "keywords [C#], exception handling"
 ms.assetid: 6d0323a3-3164-411c-9b84-a3606bd0e13c

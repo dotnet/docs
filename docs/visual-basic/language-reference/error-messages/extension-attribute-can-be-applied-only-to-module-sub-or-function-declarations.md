@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "bc36550"
   - "vbc36550"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC36550"
 ms.assetid: 4387a51f-733c-45d7-abdb-eb64d4f51078

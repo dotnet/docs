@@ -9,10 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+- "csharp"
+- "vb"
+- "cpp"
 f1_keywords: 
   - "Graphics.FillRectangle"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "drawing, rectangles"
   - "rectangles, drawing"

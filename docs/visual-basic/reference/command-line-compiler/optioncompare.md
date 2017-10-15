@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "/optioncompare"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "optioncompare compiler option [Visual Basic]"
   - "-optioncompare compiler option [Visual Basic]"

@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.XmlLiteralCdata"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "CDATA literal [Visual Basic]"
   - "XML CDATA literal [Visual Basic]"

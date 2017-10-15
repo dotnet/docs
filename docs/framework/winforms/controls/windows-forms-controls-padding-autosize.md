@@ -15,8 +15,6 @@ f1_keywords:
   - "Margin.Top"
   - "Margin.All"
   - "Margin.Right"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "Margin property [Windows Forms], walkthroughs"
   - "walkthroughs [Windows Forms], layout"

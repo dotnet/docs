@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "whereclause_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "where keyword [C#]"
   - "where clause [C#]"
@@ -60,6 +58,6 @@ The `where` clause is used in a query expression to specify which elements from 
  [Query Keywords (LINQ)](../../../csharp/language-reference/keywords/query-keywords.md)   
  [from clause](../../../csharp/language-reference/keywords/from-clause.md)   
  [select clause](../../../csharp/language-reference/keywords/select-clause.md)   
- [Filtering Data](http://msdn.microsoft.com/library/cee88d0f-31aa-4c60-9452-cc122ed0057d)   
+ [Filtering Data](../../programming-guide/concepts/linq/filtering-data.md)   
  [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)   
  [Getting Started with LINQ in C#](../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md)

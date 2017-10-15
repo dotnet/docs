@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostAssemblyStore"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostAssemblyStore interface [.NET Framework hosting]"
 ms.assetid: cccb650f-abe0-41e2-9fd1-b383788eb1f6

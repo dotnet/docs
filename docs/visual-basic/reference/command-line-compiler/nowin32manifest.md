@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "/nowin32manifest compiler option [Visual Basic]"
   - "nowin32manifest compiler option [Visual Basic]"

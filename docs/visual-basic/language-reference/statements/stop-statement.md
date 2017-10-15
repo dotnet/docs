@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.Stop"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "breakpoints, Stop statements"
   - "Stop statements, syntax"

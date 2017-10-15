@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "FunctionLeave3WithInfo"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "FunctionLeave3WithInfo function [.NET Framework profiling]"
 ms.assetid: 5fa68a67-ced6-41c6-a2c0-467060fd0692

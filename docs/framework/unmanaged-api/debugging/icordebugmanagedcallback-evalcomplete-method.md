@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugManagedCallback::EvalComplete"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugManagedCallback::EvalComplete method [.NET Framework debugging]"
   - "EvalComplete method [.NET Framework debugging]"

@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "#line"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "#line directive [C#]"
 ms.assetid: 6439e525-5dd5-4acb-b8ea-efabb32ff95b

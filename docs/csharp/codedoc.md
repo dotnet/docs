@@ -11,7 +11,6 @@ ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 8e75e317-4a55-45f2-a866-e76124171838
 ---
-
 # Documenting your code with XML comments
 
 XML documentation comments are a special kind of comment, added above the definition of any user-defined type or member. 

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::RemotingClientReceivingReply"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerCallback::RemotingClientReceivingReply method [.NET Framework profiling]"
   - "RemotingClientReceivingReply method [.NET Framework profiling]"

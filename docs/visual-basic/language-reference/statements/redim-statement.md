@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.ReDim"
   - "vb.Preserve"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "fixed-length strings, declaring"
   - "ReDim statement, syntax"

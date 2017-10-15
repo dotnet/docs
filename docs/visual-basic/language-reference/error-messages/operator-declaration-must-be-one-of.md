@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "bc33000"
   - "vbc33000"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC33000"
 ms.assetid: 15c5d8eb-3a8c-4141-8f41-33151afabf97

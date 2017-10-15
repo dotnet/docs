@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.Assign"
   - "vb.="
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "= operator [Visual Basic]"
   - "= assignment statements [Visual Basic]"

@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.Unicode"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Unicode, external references"
   - "Declare statement, marshaling strings"

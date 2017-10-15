@@ -39,8 +39,8 @@
 ## Examples  
  The following example shows how to add an <xref:System.Web.UI.AsyncPostBackTrigger> control declaratively. A <xref:System.Web.UI.WebControls.Button> control that is outside an <xref:System.Web.UI.UpdatePanel> control lets users enter a search term to find in the `Products` table of the Northwind database. A <xref:System.Web.UI.WebControls.GridView> control that is inside the <xref:System.Web.UI.UpdatePanel> control shows the results. The <xref:System.Web.UI.WebControls.Button> control is specified as an asynchronous trigger for the <xref:System.Web.UI.UpdatePanel> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.AsyncPostBackTrigger#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.AsyncPostBackTrigger/CS/AsyncPostBackTriggerCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.AsyncPostBackTrigger#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.AsyncPostBackTrigger/VB/AsyncPostBackTriggerVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.AsyncPostBackTrigger#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.AsyncPostBackTrigger/CS/AsyncPostBackTriggerCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.AsyncPostBackTrigger#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.AsyncPostBackTrigger/VB/AsyncPostBackTriggerVB.aspx#1)]  
   
  ]]></format>
     </remarks>

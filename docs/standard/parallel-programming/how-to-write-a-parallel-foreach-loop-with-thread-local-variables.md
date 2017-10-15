@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+- "csharp"
+- "vb"
 helpviewer_keywords: 
   - "parallel foreach loop, how to use local state"
 ms.assetid: 24b10041-b30b-45cb-aa65-66cf568ca76d

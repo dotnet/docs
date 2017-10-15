@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "FunctionTailcall3WithInfo"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "FunctionTailcall3WithInfo function [.NET Framework profiling]"
 ms.assetid: 46380fcc-0198-43ae-a1f5-2d4939425886

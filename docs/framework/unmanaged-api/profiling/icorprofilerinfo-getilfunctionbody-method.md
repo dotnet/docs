@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo::GetILFunctionBody"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetILFunctionBody method [.NET Framework profiling]"
   - "ICorProfilerInfo::GetILFunctionBody method [.NET Framework profiling]"

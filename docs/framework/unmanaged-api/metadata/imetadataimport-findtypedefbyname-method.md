@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataImport::FindTypeDefByName"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "FindTypeDefByName method [.NET Framework metadata]"
   - "IMetaDataImport::FindTypeDefByName method [.NET Framework metadata]"

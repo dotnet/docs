@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRStrongName::StrongNameKeyDelete"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "StrongNameKeyDelete method, ICLRStrongName interface [.NET Framework hosting]"
   - "ICLRStrongName::StrongNameKeyDelete method [.NET Framework hosting]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataFilter::MarkToken"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataFilter::MarkToken method [.NET Framework metadata]"
   - "MarkToken method, IMetaDataFilter interface [.NET Framework metadata]"

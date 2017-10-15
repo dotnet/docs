@@ -27,7 +27,7 @@ Represents a routing entry that maps a filter to a client endpoint that was prev
   
 ## Syntax  
   
-```vb  
+```xml
    <routing>      <filterTables>        <filterTable name="String">          <entries>            <add backupList="String"                 endpointName="String"                  filterName="String"                  priority="Integer" />          </entries>        </table>      </routingTables></routing>  
 ```  
   

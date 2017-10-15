@@ -10,6 +10,9 @@ ms.prod: .net-core
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 069ad711-3eaa-45c6-94d7-b40249cc8b99
+dev_langs:
+- "csharp"
+- "vb"
 ---
 
 # Testing a class library with .NET Core in Visual Studio 2017

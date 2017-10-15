@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "service contracts [WCF], data transfer"
 ms.assetid: 7c5a26c8-89c9-4bcb-a4bc-7131e6d01f0c
@@ -57,7 +60,7 @@ float GetAirfare(string fromCity, string toCity, out string currency);
   
  Additionally, you may use reference parameters to make a parameter part of both the request and the reply message. The parameters must be of types that can be serialized (converted to XML). By default, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] uses a component called the <xref:System.Runtime.Serialization.DataContractSerializer> class to perform this conversion. Most primitive types (such as `int`, `string`, `float`, and `DateTime`.) are supported. User-defined types must normally have a data contract. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md).  
   
-```  
+```csharp
 public interface IAirfareQuoteService  
 {  
     [OperationContract]  
@@ -383,7 +386,7 @@ End Class
 public bool IsLibraryItemAvailable(LibraryItem item);  
 ```  
   
-```vbs  
+```vb
 <OperationContract()>  
     Function IsLibraryItemAvailable(item As LibraryItem) As Boolean  
 ```  

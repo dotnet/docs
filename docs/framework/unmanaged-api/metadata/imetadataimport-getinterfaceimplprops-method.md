@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataImport::GetInterfaceImplProps"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataImport::GetInterfaceImplProps method [.NET Framework metadata]"
   - "GetInterfaceImpProps method [.NET Framework metadata]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataImport::GetMemberRefProps"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetMemberRefProps method [.NET Framework metadata]"
   - "IMetaDataImport::GetMemberRefProps method [.NET Framework metadata]"

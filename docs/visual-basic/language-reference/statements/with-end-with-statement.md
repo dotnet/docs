@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.With"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "With keyword"
   - "loop structures, and With...End With statements"

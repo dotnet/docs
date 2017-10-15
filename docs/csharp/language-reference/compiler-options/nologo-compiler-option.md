@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "/nologo"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "-nologo compiler option [C#]"
   - "nologo compiler option [C#]"

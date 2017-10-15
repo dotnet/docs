@@ -25,14 +25,14 @@
 ## Examples  
  The following code example demonstrates how to use several methods in the <xref:System.Web.UI.WebControls.WebParts.PersonalizationAdministration> class. This example consists of an .aspx page that references a Web Parts user control named `Persadmin.ascx`. The following code provides the .aspx file for the example.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_PersAdmin#7](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_PersAdmin/CS/defaultcs.aspx#7)]  -->  
+ [!code-aspx-csharp[WebParts_PersAdmin#7](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_PersAdmin/CS/defaultcs.aspx#7)]  
   
  This code provides the `Persadmin.ascx` control.  
   
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_PersAdmin#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_PersAdmin/CS/PersAdmin.ascx#1)]  -->  
+ [!code-aspx-csharp[WebParts_PersAdmin#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_PersAdmin/CS/PersAdmin.ascx#1)]  
   
  ]]></format>
     </remarks>

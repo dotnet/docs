@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "cs.xml"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "XML [C#], code comments"
   - "comments [C#], XML"

@@ -29,8 +29,8 @@
   
  The following example demonstrates how to access and display properties of the <xref:System.Web.HttpContext> object. The context of the current HTTP request is accessed by using the <xref:System.Web.UI.Page.Context%2A> property of the <xref:System.Web.UI.Page> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpContext#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpContext/cs/httpcontextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.HttpContext#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpContext/vb/httpcontextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.HttpContext#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpContext/cs/httpcontextcs.aspx#1)]
+ [!code-aspx-vb[System.Web.HttpContext#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpContext/vb/httpcontextvb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -1123,8 +1123,8 @@ End Sub
 ## Examples  
  The following example shows how to use the <xref:System.Web.HttpContext.RewritePath%2A> method to enable a Web site to respond to URLs that do not reflect the file structure in the Web site. The first block of code is an ASP.NET Web page that is named RewritePath.aspx. It requires a query string. If the name of your site is WebSite1, the URL `http://localhost/WebSite1/RewritePath.aspx?page=1` displays "Page 1" in the browser. The block of code that follows the Web page is the `Application_BeginRequest` event handler in the Global.asax file. This code intercepts requests for URLs such as `http://localhost/WebSite1/page1` and converts them to the form that is required for RewritePath.aspx before they are processed. Therefore, the URL `http://localhost/WebSite1/page1` invokes RewritePath.aspx with the query-string parameter that displays "Page 1" in the browser. If a URL such as `http://localhost/WebSite1/page1` is received, an overload of <xref:System.Web.HttpContext.RewritePath%2A> is invoked that enables you to provide a value for the <xref:System.Web.HttpRequest.PathInfo%2A> property as well as a query string parameter.  
   
- <!-- TODO: review snippet reference [!code-csharp[HttpContext_RewritePath#2](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpContext_ReWritePath/CS/rewritepath.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpContext_RewritePath#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpContext_ReWritePath/VB/rewritepath.aspx#2)]  -->  
+ [!code-aspx-csharp[HttpContext_RewritePath#2](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpContext_ReWritePath/CS/rewritepath.aspx#2)]
+ [!code-aspx-vb[HttpContext_RewritePath#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpContext_ReWritePath/VB/rewritepath.aspx#2)]  
   
  [!code-csharp[HttpContext_RewritePath#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpContext_ReWritePath/CS/global.asax#1)]
  [!code-vb[HttpContext_RewritePath#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpContext_ReWritePath/VB/global.asax#1)]  
@@ -1566,8 +1566,8 @@ firstName = DirectCast(context.Session("FirstName"), String)
   
  If the application uses Windows authentication, the user name includes the domain. For example, the page title would be "Home page for DOMAIN\username".  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpContext.User#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpContext.User/cs/Default.aspx.cs#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.HttpContext.User#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpContext.User/vb/Default.aspx.vb#1)]  -->  
+ [!code-csharp[System.Web.HttpContext.User#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpContext.User/cs/Default.aspx.cs#1)]
+ [!code-vb[System.Web.HttpContext.User#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpContext.User/vb/Default.aspx.vb#1)]  
   
  ]]></format>
         </remarks>

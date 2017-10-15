@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "StatusStrip"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "StatusStrip control [Windows Forms], about StatusStrip control"
   - "status bars, about status bars"

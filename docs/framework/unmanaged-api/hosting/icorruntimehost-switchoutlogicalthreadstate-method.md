@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorRuntimeHost::SwitchOutLogicalThreadState"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorRuntimeHost::SwitchOutLogicalThreadState method [.NET Framework hosting]"
   - "SwitchOutLogicalThreadState method [.NET Framework hosting]"

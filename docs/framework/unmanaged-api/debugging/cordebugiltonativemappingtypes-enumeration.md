@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorDebugIlToNativeMappingTypes"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorDebugIIToNativeMappingTypes enumeration [.NET Framework debugging]"
 ms.assetid: c35e2919-42c3-4ba0-ae28-443c35f66f93

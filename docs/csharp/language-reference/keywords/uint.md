@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "uint"
   - "uint_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "uint keyword [C#]"
 ms.assetid: e93e42c6-ec72-4b0b-89df-2fd8d36f7a7b

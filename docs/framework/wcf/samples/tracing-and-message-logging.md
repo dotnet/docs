@@ -9,9 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
 helpviewer_keywords: 
   - "Tracing and logging"
 ms.assetid: a4f39bfc-3c5e-4d51-a312-71c5c3ce0afd

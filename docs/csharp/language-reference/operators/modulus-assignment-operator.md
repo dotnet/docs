@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "%=_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "modulus assignment operator (=%) [C#]"
   - "%= assignment operator (modulus assignment) [C#]"

@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Into keyword"
 ms.assetid: e1534550-8f4b-4978-b043-fad7b8fd79ac

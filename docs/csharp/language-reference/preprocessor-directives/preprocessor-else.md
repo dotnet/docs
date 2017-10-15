@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "#else"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "#else directive [C#]"
 ms.assetid: 6a347322-cfa2-4a86-98f8-ddfa2cb7d4db

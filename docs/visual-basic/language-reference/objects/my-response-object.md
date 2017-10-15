@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "My.MyWebExtension.Response"
   - "My.Response"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "My.Response object"
 ms.assetid: 626359bc-3165-40b4-bfaf-2c610e26eb5b

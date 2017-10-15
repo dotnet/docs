@@ -27,8 +27,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.SubMenuStyleCollection> class to specify the style settings for the submenus in a <xref:System.Web.UI.WebControls.Menu> control based on the submenu's level. In this example, the <xref:System.Web.UI.WebControls.Menu.LevelSubMenuStyles%2A> property returns a <xref:System.Web.UI.WebControls.SubMenuStyleCollection> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuLevelSubMenuStyles#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuLevelSubMenuStyles/CS/menulevelsubmenustylescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuLevelSubMenuStyles#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuLevelSubMenuStyles/VB/menulevelsubmenustylesvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuLevelSubMenuStyles#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuLevelSubMenuStyles/CS/menulevelsubmenustylescs.aspx#1)]
+ [!code-aspx-vb[MenuLevelSubMenuStyles#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuLevelSubMenuStyles/VB/menulevelsubmenustylesvb.aspx#1)]  
   
  ]]></format>
     </remarks>

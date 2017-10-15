@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.Nullable"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "nullable types [Visual Basic]"
   - "? [Visual Basic]"

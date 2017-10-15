@@ -42,8 +42,6 @@ f1_keywords:
   - "CInt"
   - "CUInt"
   - "CChar"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "CDate function"
   - "CByte function"

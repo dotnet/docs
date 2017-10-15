@@ -20,8 +20,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "CoEEShutDownCOM"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CoEEShutDownCOM function [.NET Framework hosting]"
 ms.assetid: b634cae2-632f-4737-9be4-92d0652844d7

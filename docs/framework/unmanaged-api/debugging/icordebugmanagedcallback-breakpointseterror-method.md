@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugManagedCallback::BreakpointSetError"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "BreakpointSetError method [.NET Framework debugging]"
   - "ICorDebugManagedCallback::BreakpointSetError method [.NET Framework debugging]"

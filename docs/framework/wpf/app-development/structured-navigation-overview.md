@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "structured navigation [WPF]"
 ms.assetid: 025d30ef-fec5-436d-ad7a-5d5483331c26

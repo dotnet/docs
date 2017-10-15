@@ -9,6 +9,8 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
+dev_langs:
+ - "cpp"
 api_name: 
   - "ICorDebugProcess5.GetTypeID"
 api_location: 
@@ -17,8 +19,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugProcess5::GetTypeID"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugProcess5::GetTypeID method [.NET Framework debugging]"
   - "GetTypeID method, ICorDebugProcess5 interface [.NET Framework debugging]"
@@ -35,7 +35,7 @@ Converts an object address to a [COR_TYPEID](../../../../docs/framework/unmanage
   
 ## Syntax  
   
-```vb  
+```cpp
 HRESULT GetTypeID(  
     [in] CORDB_ADDRESS obj,  
     [out] COR_TYPEID *pId  

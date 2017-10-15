@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugStepper::Deactivate"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "Deactivate method [.NET Framework debugging]"
   - "ICorDebugStepper::Deactivate method [.NET Framework debugging]"

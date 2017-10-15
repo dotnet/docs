@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "authentication [WCF], specifying the identity of a service"
 ms.assetid: a4c8f52c-5b30-45c4-a545-63244aba82be

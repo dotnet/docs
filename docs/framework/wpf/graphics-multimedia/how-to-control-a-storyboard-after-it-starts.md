@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "Storyboards, controlling after start"
 ms.assetid: 040f13f0-69f9-4ab5-be2b-079f4f80c7c0

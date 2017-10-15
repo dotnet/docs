@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "Unwrap"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "Unwrap method [.NET Framework hosting]"
   - "IObjectHandle::Unwrap method [.NET Framework hosting]"

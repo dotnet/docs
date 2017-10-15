@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "/optioninfer"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "-optioninfer compiler option [Visual Basic]"
   - "/optioninfer compiler option [Visual Basic]"

@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "event handling [Visual Basic], walkthroughs"
   - "walkthroughs [Visual Basic], event handling"

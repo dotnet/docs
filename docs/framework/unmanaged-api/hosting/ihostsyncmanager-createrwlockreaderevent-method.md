@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostSyncManager::CreateRWLockReaderEvent"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CreateRWLockReaderEvent method [.NET Framework hosting]"
   - "IHostSyncManager::CreateRWLockReaderEvent method [.NET Framework hosting]"

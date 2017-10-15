@@ -43,8 +43,8 @@
   
  The second part of the code example is the Web page that contains the controls. Notice that the controls declared in `WebPartZone1` are standard ASP.NET server controls, but because they are wrapped as <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> controls at run time, and the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> class inherits from the <xref:System.Web.UI.WebControls.WebParts.WebPart> class, the controls are automatically treated as <xref:System.Web.UI.WebControls.WebParts.WebPart> controls at run time and therefore are included in the <xref:System.Web.UI.WebControls.WebParts.WebPartCollection> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartCollection_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartCollection_Overview/CS/webpartcollectioncs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartCollection_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartCollection_Overview/VB/webpartcollectionvb.aspx#2)]  -->  
+ [!code-aspx-csharp[WebParts_WebPartCollection_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartCollection_Overview/CS/webpartcollectioncs.aspx#2)]
+ [!code-aspx-vb[WebParts_WebPartCollection_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartCollection_Overview/VB/webpartcollectionvb.aspx#2)]  
   
  After you load the page in a browser and click the **Toggle ChromeState** button, the code in the partial class loops through the <xref:System.Web.UI.WebControls.WebParts.WebPartCollection> object and alternately minimizes the controls or returns them to normal. Or, if you repeatedly click the **Toggle BulletedList1 Title** button, the title of the uppermost control is changed to alternate values.  
   
@@ -115,8 +115,8 @@
   
  The second part of the code example is the Web page that contains the controls. Notice that the controls declared in `WebPartZone1` are standard ASP.NET server controls, but because they are wrapped as <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> controls at run time, and the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> class inherits from the <xref:System.Web.UI.WebControls.WebParts.WebPart> class, the controls are automatically treated as <xref:System.Web.UI.WebControls.WebParts.WebPart> controls at run time and therefore are included in the <xref:System.Web.UI.WebControls.WebParts.WebPartCollection> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartCollection_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartCollection_Overview/CS/webpartcollectioncs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartCollection_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartCollection_Overview/VB/webpartcollectionvb.aspx#2)]  -->  
+ [!code-aspx-csharp[WebParts_WebPartCollection_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartCollection_Overview/CS/webpartcollectioncs.aspx#2)]
+ [!code-aspx-vb[WebParts_WebPartCollection_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartCollection_Overview/VB/webpartcollectionvb.aspx#2)]  
   
  After you load the page in a browser, click the **Toggle ChromeState** button, and notice that the code in the partial class loops through the <xref:System.Web.UI.WebControls.WebParts.WebPartCollection> object and alternately minimizes the controls or returns them to normal. Or, if you repeatedly click the **Toggle BulletedList1 Title** button, the title of the uppermost control is changed to alternate values.  
   
@@ -262,8 +262,8 @@
   
  The second part of the code example is the Web page that contains the controls. Notice that the controls declared in `WebPartZone1` are standard ASP.NET server controls, but because they are wrapped as <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> controls at run time, and the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> class inherits from the <xref:System.Web.UI.WebControls.WebParts.WebPart> class, the controls can be treated as <xref:System.Web.UI.WebControls.WebParts.WebPart> controls at run time and made part of a <xref:System.Web.UI.WebControls.WebParts.WebPartCollection> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartCollection_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartCollection_Overview/CS/webpartcollectioncs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartCollection_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartCollection_Overview/VB/webpartcollectionvb.aspx#2)]  -->  
+ [!code-aspx-csharp[WebParts_WebPartCollection_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartCollection_Overview/CS/webpartcollectioncs.aspx#2)]
+ [!code-aspx-vb[WebParts_WebPartCollection_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartCollection_Overview/VB/webpartcollectionvb.aspx#2)]  
   
  After you load the page in a browser, click the **Toggle BulletedList1 Title** button, and notice that the code toggles the title of the control between the two available title choices.  
   

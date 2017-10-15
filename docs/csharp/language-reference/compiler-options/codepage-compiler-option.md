@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "/codepage"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "/codepage compiler option [C#]"
   - "codepage compiler option [C#]"

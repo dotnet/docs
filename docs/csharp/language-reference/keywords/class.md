@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "class_CSharpKeyword"
   - "class"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "class keyword [C#]"
 ms.assetid: b95d8815-de18-4c3f-a8cc-a0a53bdf8690

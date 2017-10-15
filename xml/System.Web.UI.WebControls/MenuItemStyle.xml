@@ -58,8 +58,8 @@
 ## Examples  
  The following code example demonstrates how to control the appearance of the menu items in a <xref:System.Web.UI.WebControls.Menu> control by setting the style properties of the <xref:System.Web.UI.WebControls.MenuItemStyle> object returned from the <xref:System.Web.UI.WebControls.Menu.DynamicMenuItemStyle%2A>, <xref:System.Web.UI.WebControls.Menu.DynamicHoverStyle%2A>, <xref:System.Web.UI.WebControls.Menu.StaticMenuItemStyle%2A>, and <xref:System.Web.UI.WebControls.Menu.StaticHoverStyle%2A> properties.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemStyle/CS/menuitemstylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemStyle/VB/menuitemstylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemStyle/CS/menuitemstylecs.aspx#1)]
+ [!code-aspx-vb[MenuItemStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemStyle/VB/menuitemstylevb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -152,8 +152,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItemStyle.CopyFrom%2A> method to copy the style settings of another <xref:System.Web.UI.WebControls.MenuItemStyle> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemStyleCopyFrom#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemStyleCopyFrom/CS/menuitemstylecopyfromcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemStyleCopyFrom#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemStyleCopyFrom/VB/menuitemstylecopyfromvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemStyleCopyFrom#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemStyleCopyFrom/CS/menuitemstylecopyfromcs.aspx#1)]
+ [!code-aspx-vb[MenuItemStyleCopyFrom#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemStyleCopyFrom/VB/menuitemstylecopyfromvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -216,8 +216,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItemStyle.HorizontalPadding%2A> property to pad the horizontal spacing around the text of a menu item by 10 pixels.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemStyleHorizontalPadding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemStyleHorizontalPadding/CS/menuitemstylehorizontalpaddingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemStyleHorizontalPadding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemStyleHorizontalPadding/VB/menuitemstylehorizontalpaddingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemStyleHorizontalPadding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemStyleHorizontalPadding/CS/menuitemstylehorizontalpaddingcs.aspx#1)]
+ [!code-aspx-vb[MenuItemStyleHorizontalPadding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemStyleHorizontalPadding/VB/menuitemstylehorizontalpaddingvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -265,8 +265,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItemStyle.ItemSpacing%2A> property to separate a menu item from its adjacent menu items by 5 pixels.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemStyleItemSpacing#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemStyleItemSpacing/CS/menuitemstyleitemspacingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemStyleItemSpacing#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemStyleItemSpacing/VB/menuitemstyleitemspacingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemStyleItemSpacing#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemStyleItemSpacing/CS/menuitemstyleitemspacingcs.aspx#1)]
+ [!code-aspx-vb[MenuItemStyleItemSpacing#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemStyleItemSpacing/VB/menuitemstyleitemspacingvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -304,8 +304,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItemStyle.MergeWith%2A> method to combine the style settings of the current instance of the <xref:System.Web.UI.WebControls.MenuItemStyle> class with another <xref:System.Web.UI.WebControls.MenuItemStyle> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemStyleMergeWith#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemStyleMergeWith/CS/menuitemstylemergewithcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemStyleMergeWith#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemStyleMergeWith/VB/menuitemstylemergewithvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemStyleMergeWith#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemStyleMergeWith/CS/menuitemstylemergewithcs.aspx#1)]
+ [!code-aspx-vb[MenuItemStyleMergeWith#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemStyleMergeWith/VB/menuitemstylemergewithvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -337,8 +337,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItemStyle.Reset%2A> method to return the current <xref:System.Web.UI.WebControls.MenuItemStyle> object to its original state.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemStyleCopyFrom#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemStyleCopyFrom/CS/menuitemstylecopyfromcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemStyleCopyFrom#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemStyleCopyFrom/VB/menuitemstylecopyfromvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemStyleCopyFrom#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemStyleCopyFrom/CS/menuitemstylecopyfromcs.aspx#1)]
+ [!code-aspx-vb[MenuItemStyleCopyFrom#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemStyleCopyFrom/VB/menuitemstylecopyfromvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -378,8 +378,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItemStyle.VerticalPadding%2A> property to pad the vertical spacing around the text of a menu item by 10 pixels.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemStyleVerticalPadding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemStyleVerticalPadding/CS/menuitemstyleverticalpaddingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemStyleVerticalPadding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemStyleVerticalPadding/VB/menuitemstyleverticalpaddingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemStyleVerticalPadding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemStyleVerticalPadding/CS/menuitemstyleverticalpaddingcs.aspx#1)]
+ [!code-aspx-vb[MenuItemStyleVerticalPadding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemStyleVerticalPadding/VB/menuitemstyleverticalpaddingvb.aspx#1)]  
   
  ]]></format>
         </remarks>

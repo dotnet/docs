@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "WebBrowser"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "WebBrowser control [Windows Forms], about"
   - "Web pages, displaying in applications"

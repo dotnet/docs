@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.Negate"
   - "vb.-"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "- operator [Visual Basic]"
   - "operators [Visual Basic], subtraction"

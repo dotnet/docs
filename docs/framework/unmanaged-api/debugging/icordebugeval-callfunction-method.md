@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEval::CallFunction"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugEval::CallFunction method [.NET Framework debugging]"
   - "CallFunction method [.NET Framework debugging]"

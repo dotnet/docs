@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "files, moving"
 ms.assetid: 53a7457b-5815-41ad-b37d-28537c1fb77a

@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbc30424"
   - "bc30424"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC30424"
 ms.assetid: 2d402c2f-27ad-428b-b699-d45cd62f7196

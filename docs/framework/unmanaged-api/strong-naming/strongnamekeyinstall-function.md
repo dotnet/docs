@@ -17,8 +17,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "StrongNameKeyInstall"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "StrongNameKeyInstall function [.NET Framework strong naming]"
 ms.assetid: e32fd546-7757-4681-be3d-658e93281e50

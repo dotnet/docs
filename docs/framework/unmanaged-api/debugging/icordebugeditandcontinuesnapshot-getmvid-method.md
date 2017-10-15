@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEditAndContinueSnapshot::GetMvid"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugEditAndContinueSnapshot::GetMvid method [.NET Framework debugging]"
   - "GetMvid method [.NET Framework debugging]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugController::IsRunning"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IsRunning method [.NET Framework debugging]"
   - "ICorDebugController::IsRunning method [.NET Framework debugging]"

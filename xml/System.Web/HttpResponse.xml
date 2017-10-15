@@ -54,8 +54,8 @@
 > [!NOTE]
 >  In code, the <xref:System.Web.HttpResponse> object is referred to by the keyword `Response`. For example, `Response.Clear()` refers to the <xref:System.Web.HttpResponse.Clear%2A?displayProperty=nameWithType> method. The <xref:System.Web.UI.Page> class has a property that is named <xref:System.Web.UI.Page.Response%2A> that exposes the current instance of <xref:System.Web.HttpResponse>.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpResponse_Samples1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse_Samples1/CS/responsesamplescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.HttpResponse_Samples1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse_Samples1/VB/responsesamplesvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.HttpResponse_Samples1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse_Samples1/CS/responsesamplescs.aspx#1)]
+ [!code-aspx-vb[System.Web.HttpResponse_Samples1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse_Samples1/VB/responsesamplesvb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -123,8 +123,8 @@
 ## Examples  
  The following example demonstrates how to create a cache dependency by using the <xref:System.Web.HttpResponse.AddCacheDependency%2A> method and a <xref:System.Web.Caching.CacheDependency> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[HttpResponse.AddCacheDependency#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpResponse.AddCacheDependency/CS/httpresponse.addcachedependency_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpResponse.AddCacheDependency#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpResponse.AddCacheDependency/VB/httpresponse.addcachedependency_vb.aspx#1)]  -->  
+ [!code-aspx-csharp[HttpResponse.AddCacheDependency#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpResponse.AddCacheDependency/CS/httpresponse.addcachedependency_cs.aspx#1)]
+ [!code-aspx-vb[HttpResponse.AddCacheDependency#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpResponse.AddCacheDependency/VB/httpresponse.addcachedependency_vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -161,8 +161,8 @@
 ## Examples  
  The following example demonstrates how to use an ASP.NET page that is output cached. The code for the page creates an <xref:System.Collections.ArrayList> object of keys that are associated with items that are stored in the <xref:System.Web.Caching.Cache> object. Next, the code passes the <xref:System.Collections.ArrayList> as the parameter in a call to the <xref:System.Web.HttpResponse.AddCacheItemDependencies%2A> method. This makes the output cached response not valid, if any of the files specified in the <xref:System.Collections.ArrayList> change.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpResponse_Samples2#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse_Samples2/CS/cacheitemsdepscs.aspx#5)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.HttpResponse_Samples2#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse_Samples2/VB/cacheitemsdepsvb.aspx#5)]  -->  
+ [!code-aspx-csharp[System.Web.HttpResponse_Samples2#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse_Samples2/CS/cacheitemsdepscs.aspx#5)]
+ [!code-aspx-vb[System.Web.HttpResponse_Samples2#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse_Samples2/VB/cacheitemsdepsvb.aspx#5)]  
   
  ]]></format>
         </remarks>
@@ -227,8 +227,8 @@
   
  Next, the code checks whether an item associated with a `bookData` key is stored in the `Cache` object, and displays one of two lines of text dependent upon the result. Then, the code sets the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> property of a <xref:System.Web.UI.WebControls.DataGrid> control, which is named `dgBooks`, with a call to a custom `DataHelper` class' shared `GetBookData` method, and populates the <xref:System.Web.UI.WebControls.DataGrid> with the <xref:System.Web.UI.Control.DataBind%2A> method.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpResponse_Samples2#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse_Samples2/CS/bookscs.ascx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.HttpResponse_Samples2#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse_Samples2/VB/booksvb.ascx#3)]  -->  
+ [!code-aspx-csharp[System.Web.HttpResponse_Samples2#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse_Samples2/CS/bookscs.ascx#3)]
+ [!code-aspx-vb[System.Web.HttpResponse_Samples2#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse_Samples2/VB/booksvb.ascx#3)]  
   
  ]]></format>
         </remarks>
@@ -258,8 +258,8 @@
 ## Examples  
  The following example is an ASP.NET page that is output cached. The code for the page creates an <xref:System.Collections.ArrayList> of file paths, and then passes the <xref:System.Collections.ArrayList> as the parameter in a call to the <xref:System.Web.HttpResponse.AddFileDependencies%2A> method. This makes the output cached response invalid if any of the files specified in the <xref:System.Collections.ArrayList> changes.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpResponse_Samples2#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse_Samples2/CS/responsefiledepscs.aspx#6)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.HttpResponse_Samples2#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse_Samples2/VB/responsefiledepsvb.aspx#6)]  -->  
+ [!code-aspx-csharp[System.Web.HttpResponse_Samples2#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse_Samples2/CS/responsefiledepscs.aspx#6)]
+ [!code-aspx-vb[System.Web.HttpResponse_Samples2#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse_Samples2/VB/responsefiledepsvb.aspx#6)]  
   
  ]]></format>
         </remarks>
@@ -289,8 +289,8 @@
 ## Examples  
  The following example adds an array of file names to the <xref:System.Web.HttpResponse.AddFileDependencies%2A> file dependency list. If the files changes, the cached response is invalidated.  
   
- <!-- TODO: review snippet reference [!code-csharp[Response.AddFileDependency#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Response.AddFileDependency/CS/addfiledependency_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Response.AddFileDependency#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Response.AddFileDependency/VB/addfiledependency_vb.aspx#1)]  -->  
+ [!code-aspx-csharp[Response.AddFileDependency#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Response.AddFileDependency/CS/addfiledependency_cs.aspx#1)]
+ [!code-aspx-vb[Response.AddFileDependency#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Response.AddFileDependency/VB/addfiledependency_vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1221,8 +1221,8 @@
 ## Examples  
  The following example is an ASP.NET page that sets the <xref:System.Web.HttpResponse.Filter%2A> property to a new instance of the `UpperCaseFilter` class, a custom <xref:System.IO.Stream> class that converts all text that passes through it to uppercase. The information about the request is saved to a text file, and then the <xref:System.Web.HttpResponse.Filter%2A> property is set. After the response filter is in place, the code calls the <xref:System.Web.HttpRequest.MapPath%2A> method to get the absolute path to a text file named `TestFile.txt` that serves as the source for the content of the response. The code then creates a new <xref:System.IO.StreamReader> object to read the text file from beginning to end, and then calls the <xref:System.Web.HttpResponse.Write%2A> method to display the content of the file on the page.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpRequest_Samples2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_Samples2/CS/requestsamples2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.HttpRequest_Samples2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_Samples2/VB/requestsamples2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.HttpRequest_Samples2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_Samples2/CS/requestsamples2cs.aspx#1)]
+ [!code-aspx-vb[System.Web.HttpRequest_Samples2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_Samples2/VB/requestsamples2vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1257,8 +1257,8 @@
   
  For a complete example, see the <xref:System.Web.HttpResponse> class.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpResponse_Samples1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse_Samples1/CS/responsesamplescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.HttpResponse_Samples1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse_Samples1/VB/responsesamplesvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.HttpResponse_Samples1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse_Samples1/CS/responsesamplescs.aspx#1)]
+ [!code-aspx-vb[System.Web.HttpResponse_Samples1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse_Samples1/VB/responsesamplesvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1395,8 +1395,8 @@
 ## Examples  
  The following example uses the <xref:System.Web.HttpResponse.IsClientConnected%2A> property to check whether the client that is requesting the page remains connected to the server. If <xref:System.Web.HttpResponse.IsClientConnected%2A> is true, the code calls the <xref:System.Web.HttpResponse.Redirect%2A> method, and the client will view another page. If <xref:System.Web.HttpResponse.IsClientConnected%2A> is false, then the code calls the <xref:System.Web.HttpResponse.End%2A> method and all page processing is terminated.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpResponse_Sample4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse_Sample4/CS/page1cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.HttpResponse_Sample4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse_Sample4/VB/page1vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.HttpResponse_Sample4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse_Sample4/CS/page1cs.aspx#1)]
+ [!code-aspx-vb[System.Web.HttpResponse_Sample4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse_Sample4/VB/page1vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1449,8 +1449,8 @@
 ## Examples  
  The following example is an ASP.NET page that contains a <xref:System.Web.UI.WebControls.TextBox> control that has its <xref:System.Web.UI.WebControls.TextBox.TextMode%2A> property set to <xref:System.Web.UI.WebControls.TextBoxMode.MultiLine>. The page's code takes the text that a user enters in the <xref:System.Web.UI.WebControls.TextBox.TextMode%2A>, uses the <xref:System.Web.HttpServerUtility.HtmlEncode%2A> method to HTML encode it, and the <xref:System.Web.HttpResponse.Output%2A> property to display the encoded string to the page.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpResponse.Output_Sample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse.Output_Sample/CS/responseoutputcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.HttpResponse.Output_Sample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse.Output_Sample/VB/responseoutputvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.HttpResponse.Output_Sample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse.Output_Sample/CS/responseoutputcs.aspx#1)]
+ [!code-aspx-vb[System.Web.HttpResponse.Output_Sample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse.Output_Sample/VB/responseoutputvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1488,8 +1488,8 @@
   
  For a complete example, see the <xref:System.Web.HttpResponse> class.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpResponse_Samples1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse_Samples1/CS/responsesamplescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.HttpResponse_Samples1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse_Samples1/VB/responsesamplesvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.HttpResponse_Samples1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse_Samples1/CS/responsesamplescs.aspx#1)]
+ [!code-aspx-vb[System.Web.HttpResponse_Samples1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse_Samples1/VB/responsesamplesvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1528,8 +1528,8 @@
 ## Examples  
  The following example is an ASP.NET page that displays an image. The page code calls the <xref:System.Web.HttpResponse.Pics%2A> method to set the HTTP `PICS-Label` header for the response. The string that is passed as the parameter to the <xref:System.Web.HttpResponse.Pics%2A> method represents a rating label generated from the Internet Content Rating Association (ICRA) Web site.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpResponse_Sample4#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse_Sample4/CS/page2cs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.HttpResponse_Sample4#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse_Sample4/VB/page2vb.aspx#2)]  -->  
+ [!code-aspx-csharp[System.Web.HttpResponse_Sample4#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse_Sample4/CS/page2cs.aspx#2)]
+ [!code-aspx-vb[System.Web.HttpResponse_Sample4#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse_Sample4/VB/page2vb.aspx#2)]  
   
  ]]></format>
         </remarks>
@@ -1677,8 +1677,8 @@
 ## Examples  
  The following example uses the <xref:System.Web.HttpResponse.IsClientConnected%2A> property to check whether the client that is requesting the page remains connected to the server. If <xref:System.Web.HttpResponse.IsClientConnected%2A> is true, the code calls the <xref:System.Web.HttpResponse.Redirect%2A> method, and the client will view another page. If <xref:System.Web.HttpResponse.IsClientConnected%2A> is false, then the code calls the <xref:System.Web.HttpResponse.End%2A> method and all page processing is terminated.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpResponse_Sample4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse_Sample4/CS/page1cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.HttpResponse_Sample4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse_Sample4/VB/page1vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.HttpResponse_Sample4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse_Sample4/CS/page1cs.aspx#1)]
+ [!code-aspx-vb[System.Web.HttpResponse_Sample4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse_Sample4/VB/page1vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2740,8 +2740,8 @@ Response.RedirectToRoutePermanent("Product",
 ## Examples  
  The following example creates a series of constants that are written to an ASP.NET page using the Write method. The code calls this version of the Write method to write individual character constants to the page.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpResponse_Sample5#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse_Sample5/CS/httpresponsewritecharscs.aspx#4)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.HttpResponse_Sample5#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse_Sample5/VB/httpresponsewritecharsvb.aspx#4)]  -->  
+ [!code-aspx-csharp[System.Web.HttpResponse_Sample5#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse_Sample5/CS/httpresponsewritecharscs.aspx#4)]
+ [!code-aspx-vb[System.Web.HttpResponse_Sample5#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse_Sample5/VB/httpresponsewritecharsvb.aspx#4)]  
   
  ]]></format>
         </remarks>
@@ -2838,8 +2838,8 @@ Response.RedirectToRoutePermanent("Product",
 ## Examples  
  The following example creates a series of constants that are written to an ASP.NET page using the Write method. The code calls this version of the Write method to write individual character constants to the page.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpResponse_Sample5#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse_Sample5/CS/httpresponsewritecharscs.aspx#4)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.HttpResponse_Sample5#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse_Sample5/VB/httpresponsewritecharsvb.aspx#4)]  -->  
+ [!code-aspx-csharp[System.Web.HttpResponse_Sample5#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse_Sample5/CS/httpresponsewritecharscs.aspx#4)]
+ [!code-aspx-vb[System.Web.HttpResponse_Sample5#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse_Sample5/VB/httpresponsewritecharsvb.aspx#4)]  
   
  ]]></format>
         </remarks>

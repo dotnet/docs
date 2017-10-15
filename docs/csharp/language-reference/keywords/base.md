@@ -10,8 +10,6 @@ f1_keywords:
   - "base"
   - "BaseClass.BaseClass"
   - "base_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "base keyword [C#]"
 ms.assetid: 8b645dbe-1a33-49b8-8716-1c401f9a5ea5

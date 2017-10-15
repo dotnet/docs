@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorRegisterWaitForSingleObject"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorThreadpool::CorRegisterWaitForSingleObject method [.NET Framework hosting]"
   - "CorRegisterWaitForSingleObject method [.NET Framework hosting]"

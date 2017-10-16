@@ -1,7 +1,7 @@
 ---
 title: "Properties (C# Programming Guide)"
 
-ms.date: "2017-03-10"
+ms.date: 03/10/2017
 ms.prod: .net
 
 

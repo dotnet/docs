@@ -1,7 +1,7 @@
 ---
 title: "Async Return Types (C#)"
 ms.custom: ""
-ms.date: "2075-05-29"
+ms.date: 05/29/2017
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""

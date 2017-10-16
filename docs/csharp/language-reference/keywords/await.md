@@ -1,6 +1,6 @@
 ---
 title: "await (C# Reference)"
-ms.date: "2017-05-22"
+ms.date: 05/22/2017
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"

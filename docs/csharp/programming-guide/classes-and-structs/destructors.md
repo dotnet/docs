@@ -1,7 +1,7 @@
 ---
 title: "Finalizers (C# Programming Guide)"
 
-ms.date: "2017-05-10"
+ms.date: 05/10/2017
 ms.prod: .net
 
 

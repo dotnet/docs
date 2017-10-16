@@ -1,7 +1,7 @@
 ---
 title: "Collection index must be in the range 1 to the size of the collection"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 
 

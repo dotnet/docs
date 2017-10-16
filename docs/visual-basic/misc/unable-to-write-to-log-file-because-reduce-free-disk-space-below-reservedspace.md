@@ -1,7 +1,7 @@
 ---
 title: "Unable to write to log file because writing to it would reduce free disk space below ReservedSpace value"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 
 

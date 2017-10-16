@@ -1,7 +1,7 @@
 ---
 title: "How to: Use Operator Overloading to Create a Complex Number Class (C# Programming Guide)"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 
 

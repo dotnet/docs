@@ -1,7 +1,7 @@
 ---
 title: "Type of optional value for optional parameter &lt;parametername&gt; is not CLS-compliant"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""

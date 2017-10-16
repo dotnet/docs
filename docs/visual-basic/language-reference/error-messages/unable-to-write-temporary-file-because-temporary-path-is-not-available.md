@@ -1,7 +1,7 @@
 ---
 title: "Unable to write temporary file because temporary path is not available"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""

@@ -1,6 +1,6 @@
 ---
 title: "C# Keywords"
-ms.date: "2017-03-07"
+ms.date: 03/07/2017
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"

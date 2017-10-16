@@ -1,7 +1,7 @@
 ---
 title: "&#39;Dir&#39; function must first be called with a &#39;PathName&#39; argument"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""

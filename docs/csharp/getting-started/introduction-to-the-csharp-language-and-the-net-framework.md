@@ -1,7 +1,7 @@
 ---
 title: "Introduction to the C# Language and the .NET Framework"
 description: Learn the basics of C# and .NET. Get an overview of the C# language and .NET ecosystem.
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"

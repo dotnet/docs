@@ -1,7 +1,7 @@
 ---
 title: "You must specify a path that is under the current folder or one of its sub-folders"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 
 

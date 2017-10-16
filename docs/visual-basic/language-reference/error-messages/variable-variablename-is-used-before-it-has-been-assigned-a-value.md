@@ -1,7 +1,7 @@
 ---
 title: "Variable &#39;&lt;variablename&gt;&#39; is used before it has been assigned a value"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""

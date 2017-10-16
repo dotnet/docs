@@ -1,7 +1,7 @@
 ---
 title: "Expression of type &lt;type&gt; is not queryable"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""

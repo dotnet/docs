@@ -1,7 +1,7 @@
 ---
 title: "VbStrConv.Wide and VbStrConv.Narrow are not applicable to the locale specified"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 
 

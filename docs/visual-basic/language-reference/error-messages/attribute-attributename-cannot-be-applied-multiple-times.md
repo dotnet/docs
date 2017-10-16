@@ -1,7 +1,7 @@
 ---
 title: "Attribute &#39;&lt;attributename&gt;&#39; cannot be applied multiple times"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 
 ms.suite: ""

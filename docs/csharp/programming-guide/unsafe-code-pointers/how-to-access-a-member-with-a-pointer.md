@@ -1,7 +1,7 @@
 ---
 title: "How to: Access a Member with a Pointer (C# Programming Guide)"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 
 

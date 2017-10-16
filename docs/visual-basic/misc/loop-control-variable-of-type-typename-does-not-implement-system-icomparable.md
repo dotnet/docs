@@ -1,7 +1,7 @@
 ---
 title: "Loop control variable of type &#39;&lt;typename&gt;&#39; does not implement the &#39;System.IComparable&#39; interface"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 
 

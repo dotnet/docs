@@ -1,7 +1,7 @@
 ---
 title: "&#39;Class&#39; statement must end with a matching &#39;End Class&#39;"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""

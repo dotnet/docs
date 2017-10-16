@@ -10,7 +10,7 @@ ms.technology: dotnet
 ---
 # .NET Architecture Guidance
 
-## [Containerized Docker Application Lifecycle with the Microsoft Platform and Tools](./architecture-containerized-lifecycle/index.md)
+## [Containerized Docker Application Lifecycle with the Microsoft Platform and Tools](./containerized-lifecycle-architecture/index.md)
 
 This guide is an introduction to the recommended end to end lifecycle processes you'll use to develop, validate, and deploy containerized Docker applications using Visual Studio and Microsoft Azure.
 

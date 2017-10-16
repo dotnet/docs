@@ -56,7 +56,7 @@ You can also try this lesson [using the own develoment environment on your machi
 
 ## [Introduction to classes](introduction-to-classes.md)
 
-This final quickstart runs on your machine, using your own local development environment, and .NET Core.
-You'll build a console application, and see the basic object oriented features that are part of the C# language.
+This final quickstart runs on your machine, using your own local development environment and .NET Core.
+You'll build a console application and see the basic object-oriented features that are part of the C# language.
 
 This lesson assumes you've finished the online quick starts, and you've installed [.NET Core](http://dot.net/core) and [Visual Studio Code](https://code.visualstudio.com/).

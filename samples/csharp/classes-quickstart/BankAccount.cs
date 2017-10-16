@@ -28,7 +28,7 @@ namespace classes
             accountNumberSeed++;
             
             this.Owner = name;
-            MakeDeposit(initialDeposit, DateTime.Now, "Initial balance");
+            MakeDeposit(initialBalance, DateTime.Now, "Initial balance");
         }
 #endregion
 
@@ -39,12 +39,18 @@ namespace classes
 #region DepositAndWithdrawal
         public void MakeDeposit(decimal amount, DateTime date, string note)
         {
+            if (amount <= 0)
+                throw new ArgumentOutOfRangeException(nameof(amount), "Amoung of deposit must be positive");
             var deposit = new Transaction(amount, date, note);
             allTransactions.Add(deposit);
         }
 
         public void MakeWithdrawal(decimal amount, DateTime date, string note)
         {
+            if (amount <= 0)
+                throw new ArgumentOutOfRangeException(nameof(amount), "Amoung of withdrawal must be positive");
+            if (Balance - amount < 0)
+                throw new InvalidOperationException("Not sufficient funds for this withdrawal");
             var withdrawal = new Transaction(-amount, date, note);
             allTransactions.Add(withdrawal);
         }

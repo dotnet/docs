@@ -52,7 +52,7 @@ Type providers are best suited to situations where the schema is stable at runti
 
 
 ## A Simple Type Provider
-This sample is Samples.HelloWorldTypeProvider in the `SampleProviders\Providers` directory of the [F# 3.0 Sample Pack](http://go.microsoft.com/fwlink/?LinkId=236999) on the Codeplex website. The provider makes available a "type space" that contains 100 erased types, as the following code shows by using F# signature syntax and omitting the details for all except `Type1`. For more information about erased types, see [Details About Erased Provided Types](https://msdn.microsoft.com/library/#BK_Erased) later in this topic.
+This sample is Samples.HelloWorldTypeProvider in the `SampleProviders\Providers` directory of the [F# 3.0 Sample Pack](http://fsharp3sample.codeplex.com) on the Codeplex website. The provider makes available a "type space" that contains 100 erased types, as the following code shows by using F# signature syntax and omitting the details for all except `Type1`. For more information about erased types, see [Details About Erased Provided Types](https://msdn.microsoft.com/library/#BK_Erased) later in this topic.
 
 ```fsharp
 namespace Samples.HelloWorldTypeProvider
@@ -495,7 +495,7 @@ Note the following points:
 - Each named group results in a provided property, and accessing the property results in a use of an indexer on a match’s `Groups` collection.
 <br />
 
-The following code is the core of the logic to implement such a provider, and this example omits the addition of all members to the provided type. For information about each added member, see the appropriate section later in this topic. For the full code, download the sample from the [F# 3.0 Sample Pack](http://go.microsoft.com/fwlink/?LinkId=236999) on the Codeplex website.
+The following code is the core of the logic to implement such a provider, and this example omits the addition of all members to the provided type. For information about each added member, see the appropriate section later in this topic. For the full code, download the sample from the [F# 3.0 Sample Pack](http://fsharp3sample.codeplex.com) on the Codeplex website.
 
 ```fsharp
 namespace Samples.FSharp.RegexTypeProvider

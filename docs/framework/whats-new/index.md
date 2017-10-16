@@ -57,7 +57,9 @@ The .NET Framework 4.7.1 includes new features in the following areas:
 - [Networking](#net471)
 - [ASP.NET](#asp-net471) 
 
-In addition, a major focus in the .NET Framework 4.7.1 is improved accessibility, so that apps are able to work well with a variety of devices and form factors. For information on accessibility improvements in the .NET Framework 4.7.1, see [What's new in accessibility in the .NET Framework](whats-new-in-accessibility.md). 
+In addition, a major focus in the .NET Framework 4.7.1 is improved accessibility, so that apps are able to work well with a variety of devices and form factors. For information on accessibility improvements in the .NET Framework 4.7.1, see 
+<!-- [What's new in accessibility in the .NET Framework](whats-new-in-accessibility.md). -->
+the [.NET Framework 4.7.1 Accessibility and WPF Improvements](https://blogs.msdn.microsoft.com/dotnet/2017/09/21/net-framework-4-7-1-accessibility-and-wpf-improvements/) blog post.
 
 <a name="core471" />
 #### Core
@@ -78,7 +80,7 @@ The <xref:System.Runtime.CompilerServices.RuntimeFeature?displayProperty=fullNam
 
 **Value tuple types are serializable**
 
-Starting with the .NET Framework 4.7.1, <xref:System.ValueTuple?displayProperty=fullName> and its associated generic types are marked as [Serializable](xref:System.SerializationAttribute), which allows binary serialization. This should make migrating Tuple types, such as <xref:System.Tuple%603> and <xref:System.Tuple%604>, to value tuple types easier. For more information, see "Compiler -- ValueTuple is Serializable" in the [.NET Framework 4.7.1 Runtime and Compiler Features](https://blogs.msdn.microsoft.com/dotnet/2017/09/28/net-framework-4-7-1-runtime-and-compiler-features) blog post.
+Starting with the .NET Framework 4.7.1, <xref:System.ValueTuple?displayProperty=fullName> and its associated generic types are marked as [Serializable](xref:System.SerializableAttribute), which allows binary serialization. This should make migrating Tuple types, such as <xref:System.Tuple%603> and <xref:System.Tuple%604>, to value tuple types easier. For more information, see "Compiler -- ValueTuple is Serializable" in the [.NET Framework 4.7.1 Runtime and Compiler Features](https://blogs.msdn.microsoft.com/dotnet/2017/09/28/net-framework-4-7-1-runtime-and-compiler-features) blog post.
 
 **Support for read-only references**
 
@@ -97,7 +99,7 @@ The .NET Framework starting with version 4.7.1 supports portable PDBs. While sta
 
 You can determine at run time whether portable PDBs are supported on the current .NET implementation by passing the string "PortablePdb" to the <xref:System.Runtime.CompilerServices.RuntimeFeature.IsSupported(System.String)?displayProperty=nameWithType> method before emitting the assembly.  
  
-<a name="net471">
+<a name="net471"/>
 #### Networking
 
 **SHA-2 support for Message.HashAlgorithm**

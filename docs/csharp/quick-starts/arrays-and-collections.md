@@ -80,7 +80,7 @@ Console.WriteLine($"My name is {names[0]}");
 Console.WriteLine($"I've added {names[2]} and {names[3]} to the list");
 ```
 
-You cannot access an index beyond the end of the list. Remember that indices start at 0, so the largest valid index is one less than the number of items in the list. You can check how long the list is using the `<xref:System.Collections.Generic.List%601.Count%2A>` property. Add the following code at the end of the Main method:
+You cannot access an index beyond the end of the list. Remember that indices start at 0, so the largest valid index is one less than the number of items in the list. You can check how long the list is using the <xref:System.Collections.Generic.List%601.Count%2A> property. Add the following code at the end of the Main method:
 
 ```csharp
 Console.WriteLine($"The list has {names.Count} people in it");

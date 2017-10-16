@@ -181,6 +181,8 @@ Restore dependencies for a given application:
 
 `dotnet restore`
 
+[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
+
 Build a project and its dependencies in a given directory:
 
 `dotnet build`

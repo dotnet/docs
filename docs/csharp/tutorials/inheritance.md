@@ -27,7 +27,11 @@ To create and run the examples in this tutorial, you use the [dotnet](../../core
 1. Enter the [dotnet new console](../../core/tools/dotnet-new.md) command at a command prompt to create a new .NET Core project.
 1. Copy and paste the code from the example into your code editor.
 1. Enter the [dotnet restore](../../core/tools/dotnet-restore.md) command from the command line to load or restore the project's dependencies.
+
+  [!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
+
 1. Enter the [dotnet run](../../core/tools/dotnet-run.md) command to compile and execute the example.
+
 
 ## Background: What is inheritance?
 

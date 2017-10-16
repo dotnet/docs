@@ -10,7 +10,7 @@ ms.prod: .net
 ms.devlang: devlang-csharp
 ms.custom: mvc
 ---
-# Exposing the Compiler APIs
+# Understand the compiler API model
 
 << Say something>>
 
@@ -31,7 +31,7 @@ Finally, the emit phase, where all the information built up by the compiler
 is emitted as an assembly.
 
 ![compiler pipeline api](media/compiler-pipeline-api.png)
- 
+
 Corresponding to each of those phases, an object model is surfaced that
 allows access to the information at that phase. The parsing phase is exposed
 as a syntax tree, the declaration phase as a hierarchical symbol table, the

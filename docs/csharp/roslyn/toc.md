@@ -33,7 +33,7 @@
 -->
 
 ## [Concepts](concepts/index.md)
-### [Exposing the compiler APIs](concepts/compiler-api-model.md)
+### [Understand the compiler API model](concepts/compiler-api-model.md)
 ### [Work with syntax](concepts/work-with-syntax.md)
 ### [Work with semantics](concepts/work-with-semantics.md)
 ### [Work with a workspace](oncepts/work-with-workspace.md)

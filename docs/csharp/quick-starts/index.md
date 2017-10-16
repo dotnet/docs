@@ -52,7 +52,7 @@ a tour of the List collection type that stores sequences of data. You'll learn h
 
 This beginning lesson assumes that you have finished the quick starts listed above.
 
-You can also try this lesson [using the own develoment environment on your machine](arrays-and-collections.md).
+You can also try this lesson [using the develoment environment on your machine](arrays-and-collections.md).
 
 ## [Introduction to classes](introduction-to-classes.md)
 

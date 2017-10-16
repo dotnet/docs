@@ -24,6 +24,11 @@
 
         static void PrintOrderDetails(string sellerName, int orderNum, string productName)
         {
+            if (string.IsNullOrWhiteSpace(sellerName))
+            {
+                throw new ArgumentException("Seller name cannot be null or empty.", nameof(sellerName));
+            }
+
             Console.WriteLine($"Seller: {sellerName}, Order #: {orderNum}, Product: {productName}");
         }
     }

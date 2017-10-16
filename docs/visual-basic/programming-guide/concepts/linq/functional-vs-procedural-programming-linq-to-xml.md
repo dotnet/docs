@@ -13,12 +13,6 @@ ms.assetid: ea1015a5-d4c8-4d79-8e1e-ba17a40a4f39
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Functional vs. Procedural Programming (LINQ to XML) (Visual Basic)
 There are various types of XML applications:  

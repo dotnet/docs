@@ -7,18 +7,11 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 ms.assetid: a01bd1d4-133c-4ca2-aa4e-e93e81d6076c
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # How to: Query for the Total Number of Bytes in a Set of Folders (LINQ) (C#)
 This example shows how to retrieve the total number of bytes used by all the files in a specified folder and all its subfolders.  

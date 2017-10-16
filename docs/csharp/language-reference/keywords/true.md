@@ -14,20 +14,6 @@ ms.assetid: 7d0adcdb-02e9-478c-8c84-2e671d4acef3
 caps.latest.revision: 8
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # true (C# Reference)
 Used as an overloaded operator or as a literal:  

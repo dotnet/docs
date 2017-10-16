@@ -13,12 +13,6 @@ ms.assetid: 903c7e9a-f48d-4a07-a8a8-5450d2646efa
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # How to: Compare the Contents of Two Folders (LINQ) (Visual Basic)
 This example demonstrates three ways to compare two file listings:  

@@ -13,12 +13,6 @@ ms.assetid: 428bf4b0-e348-4ffd-986b-d905d5a0e7fa
 caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Working with XML Namespaces (Visual Basic)
 The topics in this section describe how [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] supports namespaces.  

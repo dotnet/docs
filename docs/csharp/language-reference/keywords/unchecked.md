@@ -14,20 +14,6 @@ ms.assetid: 0c021f7c-923f-4b3d-a58f-55336f5ac27e
 caps.latest.revision: 23
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # unchecked (C# Reference)
 The `unchecked` keyword is used to suppress overflow-checking for integral-type arithmetic operations and conversions.  

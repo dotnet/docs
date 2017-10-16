@@ -13,12 +13,6 @@ ms.assetid: f01cc0a1-fb55-4b42-8380-16f4be47d6f4
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Sample XML File: Numerical Data in a Namespace
 The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] documentation. This file contains numerical data for summing, averaging, and grouping. The XML is in a namespace.  

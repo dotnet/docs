@@ -13,12 +13,6 @@ ms.assetid: b5b25474-10a8-4df6-aab5-75621bb6b68e
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # How to: Find the Set Difference Between Two Lists (LINQ) (Visual Basic)
 This example shows how to use LINQ to compare two lists of strings and output those lines that are in names1.txt but not in names2.txt.  

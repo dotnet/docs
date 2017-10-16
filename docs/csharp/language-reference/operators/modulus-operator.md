@@ -14,20 +14,6 @@ ms.assetid: 3b74f4f9-fd9c-45e7-84fa-c8d71a0dfad7
 caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # % Operator (C# Reference)
 The `%` operator computes the remainder after dividing its first operand by its second. All numeric types have predefined remainder operators.  

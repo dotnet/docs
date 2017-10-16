@@ -16,21 +16,6 @@ ms.assetid: 93744f46-bf78-4fa0-9640-1de01bc38d9a
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Move Data Into and Out of a Variable (Visual Basic)
 You store a value in a variable by putting the variable name on the left side of an assignment statement.  

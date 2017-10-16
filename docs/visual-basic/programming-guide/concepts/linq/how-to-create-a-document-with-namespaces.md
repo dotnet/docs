@@ -13,12 +13,6 @@ ms.assetid: cc5b0d4d-360c-4ada-94fa-2d2916e989be
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # How to: Create a Document with Namespaces (LINQ to XML) (Visual Basic)
 This topic shows how to create a document with namespaces in Visual Basic.  

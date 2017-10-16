@@ -26,20 +26,6 @@ ms.assetid: 5252cdf9-964d-4fc6-af0f-0449b7126b5a
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Implements Clause (Visual Basic)
 Indicates that a class or structure member is providing the implementation for a member defined in an interface.  

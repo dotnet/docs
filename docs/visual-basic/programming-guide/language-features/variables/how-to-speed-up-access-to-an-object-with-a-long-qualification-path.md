@@ -19,21 +19,6 @@ ms.assetid: 3eb7657f-c9fe-4e05-8bc3-4bb14d5ae585
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Speed Up Access to an Object with a Long Qualification Path (Visual Basic)
 If you frequently access an object that requires a qualification path of several methods and properties, you can speed up your code by not repeating the qualification path.  

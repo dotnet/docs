@@ -52,4 +52,11 @@ a tour of the List collection type that stores sequences of data. You'll learn h
 
 This beginning lesson assumes that you have finished the quick starts listed above.
 
-You can also try this lesson [using the own develoment environment on your machine](arrays-and-collections.md).
+You can also try this lesson [using the develoment environment on your machine](arrays-and-collections.md).
+
+## [Introduction to classes](introduction-to-classes.md)
+
+This final quickstart runs on your machine, using your own local development environment and .NET Core.
+You'll build a console application and see the basic object-oriented features that are part of the C# language.
+
+This lesson assumes you've finished the online quick starts, and you've installed [.NET Core SDK](http://dot.net/core) and [Visual Studio Code](https://code.visualstudio.com/).

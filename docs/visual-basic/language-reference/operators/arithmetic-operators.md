@@ -1,13 +1,11 @@
 ---
 title: "Arithmetic Operators (Visual Basic)"
-
 ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "operators [Visual Basic], arithmetic"
@@ -17,21 +15,6 @@ ms.assetid: 330178e0-a375-4742-b662-b3080c89fa54
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Arithmetic Operators (Visual Basic)
 The following are the arithmetic operators defined in Visual Basic.  

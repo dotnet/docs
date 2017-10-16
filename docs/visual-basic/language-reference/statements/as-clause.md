@@ -1,13 +1,11 @@
 ---
 title: "As Clause (Visual Basic)"
-
 ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.as"
@@ -19,21 +17,6 @@ ms.assetid: b4281ec8-2be5-49f7-aae8-ae0a96265b0d
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # As Clause (Visual Basic)
 Introduces an `As` clause, which identifies a data type in a declaration statement or a constraint list on a generic type parameter.  

@@ -1,13 +1,9 @@
 ---
 title: "How to: Safely Cast by Using as and is Operators (C# Programming Guide)"
-
 ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "cast operators [C#], as and is operators"
@@ -17,21 +13,6 @@ ms.assetid: c1176cea-1426-4a44-8570-3eadafa58863
 caps.latest.revision: 10
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Safely Cast by Using as and is Operators (C# Programming Guide)
 Because objects are polymorphic, it is possible for a variable of a base class type to hold a derived type. To access the derived type's method, it is necessary to cast the value back to the derived type. However, to attempt a simple cast in these cases creates the risk of throwing an <xref:System.InvalidCastException>. That is why C# provides the [is](../../../csharp/language-reference/keywords/is.md) and [as](../../../csharp/language-reference/keywords/as.md) operators. You can use these operators to test whether a cast will succeed without causing an exception to be thrown. In general, the `as` operator is more efficient because it actually returns the cast value if the cast can be made successfully. The `is` operator returns only a Boolean value. It can therefore be used when you just want to determine an object's type but do not have to actually cast it.  

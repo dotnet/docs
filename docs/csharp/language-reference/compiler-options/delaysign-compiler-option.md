@@ -15,20 +15,6 @@ ms.assetid: bcb058eb-2933-4e7f-b356-5c941db4de75
 caps.latest.revision: 16
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /delaysign (C# Compiler Options)
 This option causes the compiler to reserve space in the output file so that a digital signature can be added later.  

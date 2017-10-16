@@ -9,11 +9,6 @@ ms.assetid: cc9cac84-61f6-476e-b8c7-9bae7749bd90
 caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Programming Concepts (Visual Basic)
 This section explains programming concepts in the Visual Basic language.  

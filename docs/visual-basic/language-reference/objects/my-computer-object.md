@@ -1,13 +1,10 @@
 ---
 title: "My.Computer Object"
-
 ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "My.Computer object"
@@ -15,21 +12,6 @@ ms.assetid: cc814d79-6f7f-4e54-8b9d-5ecfdd77a0b8
 caps.latest.revision: 30
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # My.Computer Object
 Provides properties for manipulating computer components such as audio, the clock, the keyboard, the file system, and so on.  

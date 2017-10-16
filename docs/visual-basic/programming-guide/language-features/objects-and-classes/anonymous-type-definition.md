@@ -7,7 +7,6 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "anonymous types [Visual Basic], type definition"
@@ -15,21 +14,6 @@ ms.assetid: 7a8a0ddc-55ba-4d67-869e-87a84d938bac
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Anonymous Type Definition (Visual Basic)
 In response to the declaration of an instance of an anonymous type, the compiler creates a new class definition that contains the specified properties for the type.  

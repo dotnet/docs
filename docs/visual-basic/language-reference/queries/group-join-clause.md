@@ -1,13 +1,11 @@
 ---
 title: "Group Join Clause (Visual Basic)"
-
 ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.QueryGroupJoinIn"
@@ -22,21 +20,6 @@ ms.assetid: 37dbf79c-7b5c-421b-bbb7-dadfd2b92a1c
 caps.latest.revision: 24
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Group Join Clause (Visual Basic)
 Combines two collections into a single hierarchical collection. The join operation is based on matching keys.  

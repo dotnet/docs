@@ -1,13 +1,10 @@
 ---
 title: "An unexpected error has occurred because an operating system resource required for single instance startup cannot be acquired"
-
 ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vbrAppModel_CantGetMemoryMappedFile"
@@ -15,21 +12,6 @@ ms.assetid: 0d9f2a30-ff72-4355-8060-744f22339359
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # An unexpected error has occurred because an operating system resource required for single instance startup cannot be acquired
 The application could not acquire a necessary operating system resource. Some of the possible causes for this problem are:  

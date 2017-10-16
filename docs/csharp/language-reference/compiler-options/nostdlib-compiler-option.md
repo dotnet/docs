@@ -15,21 +15,6 @@ ms.assetid: ec197989-fa49-4725-a455-e06b551eb65f
 caps.latest.revision: 18
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # /nostdlib (C# Compiler Options)
 **/nostdlib** prevents the import of mscorlib.dll, which defines the entire System namespace.  

@@ -14,20 +14,6 @@ ms.assetid: efe6f0e3-be40-4df2-a144-c7db968ae052
 caps.latest.revision: 6
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # by (C# Reference)
 The `by` contextual keyword is used in the `group` clause in a query expression to specify how the returned items should be grouped. For more information, see [group clause](../../../csharp/language-reference/keywords/group-clause.md).  

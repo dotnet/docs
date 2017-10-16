@@ -1,13 +1,9 @@
 ---
 title: "Arrays (C# Programming Guide)"
-
 ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "arrays [C#]"
@@ -16,21 +12,6 @@ ms.assetid: bb79bdde-e570-4c30-adb0-1dd5759ae041
 caps.latest.revision: 33
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Arrays (C# Programming Guide)
 You can store multiple variables of the same type in an array data structure. You declare an array by specifying the type of its elements.  

@@ -1,13 +1,11 @@
 ---
 title: "Data Types of Operator Results (Visual Basic)"
-
 ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "data types [Visual Basic], operator result data types"
@@ -20,21 +18,6 @@ ms.assetid: 9d524533-e1a1-4aa8-b1b8-622068173d06
 caps.latest.revision: 27
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Data Types of Operator Results (Visual Basic)
 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] determines the result data type of an operation based on the data types of the operands. In some cases this might be a data type with a greater range than that of either operand.  

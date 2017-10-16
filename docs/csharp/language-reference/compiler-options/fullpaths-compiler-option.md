@@ -17,20 +17,6 @@ ms.assetid: d2a5f857-cbb2-430b-879c-d648aaf0b8c4
 caps.latest.revision: 10
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /fullpaths (C# Compiler Options)
 The **/fullpaths** option causes the compiler to specify the full path to the file when listing compilation errors and warnings.  

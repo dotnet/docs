@@ -14,20 +14,6 @@ ms.assetid: adc04c28-3ed2-4326-807a-7545df92b852
 caps.latest.revision: 27
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # stackalloc (C# Reference)
 The `stackalloc` keyword is used in an unsafe code context to allocate a block of memory on the stack.  

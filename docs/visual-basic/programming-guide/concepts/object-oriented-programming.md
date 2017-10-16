@@ -12,11 +12,6 @@ ms.assetid: 49794de4-64c3-473c-b8ed-fe98835df69c
 caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Object-Oriented Programming (Visual Basic)
 Visual Basic provides full support for object-oriented programming including encapsulation, inheritance, and polymorphism.  

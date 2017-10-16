@@ -1,13 +1,9 @@
 ---
 title: "Delegates with Named vs. Anonymous Methods (C# Programming Guide)"
-
 ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "delegates [C#], with named vs. anonymous methods"
@@ -16,21 +12,6 @@ ms.assetid: 98fa8c61-66b6-4146-986c-3236c4045733
 caps.latest.revision: 18
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Delegates with Named vs. Anonymous Methods (C# Programming Guide)
 A [delegate](../../../csharp/language-reference/keywords/delegate.md) can be associated with a named method. When you instantiate a delegate by using a named method, the method is passed as a parameter, for example:  

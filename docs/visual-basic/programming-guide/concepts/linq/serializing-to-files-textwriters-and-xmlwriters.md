@@ -13,12 +13,6 @@ ms.assetid: 7a0c24df-79ef-41a0-87f5-e6cf79382da9
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Serializing to Files, TextWriters, and XmlWriters
 You can serialize XML trees to a <xref:System.IO.File>, a <xref:System.IO.TextWriter>, or an <xref:System.Xml.XmlWriter>.  

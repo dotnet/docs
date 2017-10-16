@@ -1,13 +1,10 @@
 ---
 title: "Shared (Visual Basic)"
-
 ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Shared"
@@ -22,21 +19,6 @@ ms.assetid: 2bf7cf2c-b0dd-485e-8749-b5d674dab4cd
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Shared (Visual Basic)
 Specifies that one or more declared programming elements are associated with a class or structure at large, and not with a specific instance of the class or structure.  

@@ -1,13 +1,11 @@
 ---
 title: "Imports Statement (.NET Namespace and Type)"
-
 ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Imports"
@@ -27,21 +25,6 @@ ms.assetid: 7062f8aa-d890-4232-9eed-92836e13fb6e
 caps.latest.revision: 40
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Imports Statement (.NET Namespace and Type)
 Enables type names to be referenced without namespace qualification.  

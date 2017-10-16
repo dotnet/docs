@@ -1,13 +1,11 @@
 ---
 title: "End &lt;keyword&gt; Statement (Visual Basic)"
-
 ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.EndDefinition"
@@ -17,21 +15,6 @@ ms.assetid: 42d6e088-ab0f-4cda-88e8-fdce3e5fcf4f
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # End &lt;keyword&gt; Statement (Visual Basic)
 When followed by an additional keyword, terminates the definition of the statement block introduced by that keyword.  

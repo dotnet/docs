@@ -14,20 +14,6 @@ ms.assetid: abd9a5f0-9b24-431e-971a-09ee1c45c50e
 caps.latest.revision: 14
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # * Operator (C# Reference)
 The multiplication operator (`*`), which computes the product of its operands.  Also, the dereference operator, which allows reading and writing to a pointer.  

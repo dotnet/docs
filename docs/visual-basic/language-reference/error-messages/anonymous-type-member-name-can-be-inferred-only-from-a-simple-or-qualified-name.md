@@ -1,13 +1,10 @@
 ---
 title: "Anonymous type member name can be inferred only from a simple or qualified name with no arguments"
-
 ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vbc36556"
@@ -18,21 +15,6 @@ ms.assetid: e3ba1f33-3a71-4f03-9b04-ed5ec17de17c
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Anonymous type member name can be inferred only from a simple or qualified name with no arguments
 You cannot infer an anonymous type member name from a complex expression.  

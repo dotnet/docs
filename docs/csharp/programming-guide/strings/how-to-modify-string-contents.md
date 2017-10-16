@@ -1,13 +1,9 @@
 ---
 title: "How to: Modify String Contents (C# Programming Guide)"
-
 ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "strings [C#], modifying"
@@ -15,21 +11,6 @@ ms.assetid: b6c20bba-ce22-43d7-ad1b-5ce65f714055
 caps.latest.revision: 16
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Modify String Contents (C# Programming Guide)
 Because strings are *immutable*, it is not possible (without using unsafe code) to modify the value of a string object after it has been created. However, there are many ways to modify the value of a string and store the result in a new string object. The <xref:System.String?displayProperty=nameWithType> class provides methods that operate on an input string and return a new string object. In many cases, you can assign the new object to the variable that held the original string. The <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> class provides additional methods that work in a similar manner. The <xref:System.Text.StringBuilder?displayProperty=nameWithType> class provides a character buffer that you can modify "in-place." You call the <xref:System.Text.StringBuilder.ToString%2A?displayProperty=nameWithType> method to create a new string object that contains the current contents of the buffer.  

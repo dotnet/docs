@@ -1,13 +1,9 @@
 ---
 title: "Code resource lock error"
-
 ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vbrID455"
@@ -15,22 +11,6 @@ ms.assetid: 67a269bf-f436-4913-bc3c-af7f68116b7d
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Code resource lock error
 A call was made to a procedure in a code resource. The code resource was found, but an error occurred when an attempt was made to lock the resource, perhaps because it is in use.  

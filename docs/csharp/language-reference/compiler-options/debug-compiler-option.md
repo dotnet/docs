@@ -15,20 +15,6 @@ ms.assetid: e2b48c07-01bc-45cc-a52c-92e9085eb969
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /debug (C# Compiler Options)
 The **/debug** option causes the compiler to generate debugging information and place it in the output file or files.  

@@ -17,7 +17,7 @@ manager: "wpickett"
 # What's new in the .NET Framework
 <a name="introduction"></a>This article summarizes key new features and improvements in the following versions of the .NET Framework:  
  
-[.NET Framework 4.7.1](#v471)
+[.NET Framework 4.7.1](#v471)    
 [.NET Framework 4.7](#v47)   
 [.NET Framework 4.6.2](#v462)   
 [.NET Framework 4.6.1](#v461)   
@@ -36,7 +36,7 @@ This article does not provide comprehensive information about each new feature a
 
 The .NET Framework 4.7.1 builds on the .NET Framework 4.6, 4.6.1, 4.6.2, and 4.7 by adding many new fixes and several new features while remaining a very stable product.
 
-### Downloading and installing the .NET Framework 4.7
+### Downloading and installing the .NET Framework 4.7.1
  
 You can download the .NET Framework 4.7.1  from the following locations:
 
@@ -85,7 +85,7 @@ Starting with the .NET Framework 4.7.1, <xref:System.ValueTuple?displayProperty=
 The .NET Framework 4.7.1 adds the <xref:System.Runtime.CompilerServices.IsReadOnlyAttribute?displayProperty=fullName>. This attribute is used by language compilers to mark members that have read-only ref return types or parameters. For more information, see "Compiler -- Support for ReadOnlyReferences" in the [.NET Framework 4.7.1 Runtime and Compiler Features](https://blogs.msdn.microsoft.com/dotnet/2017/09/28/net-framework-4-7-1-runtime-and-compiler-features) .NET blog. For information on ref return values, see [Ref return values and ref locals (C# Guide)](~/docs/csharp/programming-guide/classes-and-structs/ref-returns.md) and [Ref return values (Visual Basic)]().
 
 <a name="clr" />
-### Common language runtime (CLR)
+#### Common language runtime (CLR)
 
 **Garbage collection performance improvements**
 

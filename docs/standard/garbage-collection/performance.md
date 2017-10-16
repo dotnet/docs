@@ -40,7 +40,7 @@ manager: "wpickett"
   
 <a name="sos"></a>   
 ### Debugging with SOS  
- You can use the [Windows Debugger (WinDbg)](http://go.microsoft.com/fwlink/?LinkId=186482) to inspect objects on the managed heap.  
+ You can use the [Windows Debugger (WinDbg)](http://msdn.microsoft.com/en-us/library/cc266321.aspx) to inspect objects on the managed heap.  
   
  To install WinDbg, install Debugging Tools for Windows from the [WDK and Developer Tools Web site](http://go.microsoft.com/fwlink/?LinkID=103787).  
   

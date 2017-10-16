@@ -49,9 +49,9 @@ The .NET Framework Portable Class Library project type in Visual Studio helps yo
   
 |Visual Studio SKU|Support for creating a Portable Class Library|  
 |-----------------------|---------------------------------------------------|  
-|Visual Studio 2010, Professional, Premium, or Ultimate|Yes, when you install the [Portable Library Tools](http://go.microsoft.com/fwlink/?LinkId=210823).|  
+|Visual Studio 2010, Professional, Premium, or Ultimate|Yes, when you install the [Portable Library Tools](http://visualstudiogallery.msdn.microsoft.com/b0e0b5e9-e138-410b-ad10-00cb3caf4981/).|  
 |Visual Studio Express 2010 versions|No.|  
-|Visual Studio 2012 Professional, Premium, or Ultimate|Yes. For phone support, install the [Windows Phone SDK 8.0](http://go.microsoft.com/fwlink/?LinkId=265772).|  
+|Visual Studio 2012 Professional, Premium, or Ultimate|Yes. For phone support, install the [Windows Phone SDK 8.0](http://www.microsoft.com/click/services/Redirect2.ashx?CR_EAC=300063060).|  
 |Visual Studio Express 2012 versions|No.|  
 |Visual Studio 2013 Professional, Premium, or Ultimate|Yes. For Windows Phone 8.1 support, install [Visual Studio 2013 Update 2](http://go.microsoft.com/fwlink/p/?LinkId=393658).|  
 |Visual Studio Express 2013 for Windows|Yes, when you install the [latest version of Visual Studio Express](http://go.microsoft.com/fwlink/p/?LinkId=394629), which includes Update 2, or add [Visual Studio 2013 Update 2](http://go.microsoft.com/fwlink/p/?LinkId=393658).|  
@@ -163,7 +163,7 @@ Change Targets dialog box in Visual Studio 2012
   
  For example, the Portable Class Library contains UI-related types only when you target Windows 8.1 and Windows Phone 8.1. Also, you may encounter limitations if you target platforms (such as Xbox, the .NET Framework 4, and Windows Phone 7) that were released before the introduction of the Portable Class Library. The .NET Framework releases packages through NuGet that improves the Portable Class Library support for some of these older platforms. For more information and a list of NuGet packages, see [The .NET Framework and Out-of-Band Releases](../../../docs/framework/get-started/the-net-framework-and-out-of-band-releases.md).  
   
- If a member is supported in the Portable Class Library and for your selected targets, it will appear in your project in IntelliSense. In addition, the Portable Class Library icon ![Supported by Portable Library](../../../docs/standard/cross-platform/media/portablelibrary-referenceicon.png "PortableLibrary_ReferenceIcon") appears in the members tables, in the [.NET Framework Class Library](http://go.microsoft.com/fwlink/?LinkId=211358) next to supported members. For example, the following members table shows that the <xref:System.String.Chars%2A> property in the <xref:System.String> class is supported in the Portable Class Library:  
+ If a member is supported in the Portable Class Library and for your selected targets, it will appear in your project in IntelliSense. In addition, the Portable Class Library icon ![Supported by Portable Library](../../../docs/standard/cross-platform/media/portablelibrary-referenceicon.png "PortableLibrary_ReferenceIcon") appears in the members tables, in the [.NET Framework Class Library](http://msdn.microsoft.com/en-us/library/ms229335.aspx) next to supported members. For example, the following members table shows that the <xref:System.String.Chars%2A> property in the <xref:System.String> class is supported in the Portable Class Library:  
   
  ![Supported Member icon](../../../docs/standard/cross-platform/media/plibsupportedmemberlist.png "PlibSupportedMemberList")  
 Portable class library icon  
@@ -189,7 +189,7 @@ Version Information example
  When you create a Windows store or Windows Phone app that references a Portable Class Library assembly, everything you need to deploy the app is included in the app package, and no further steps are required.  
   
 ### Deploying a .NET Framework app  
- When you deploy a .NET Framework app that references a Portable Class Library assembly, you must specify a dependency on the correct version of the .NET Framework. By specifying this dependency, you ensure that the required version is installed with your app. If you target the .NET Framework 4 or later, the computer must have the .NET Framework 4 with an [update](http://go.microsoft.com/fwlink/?LinkId=210824), Update 4.0.3 for the .NET Framework 4, or the .NET Framework 4.5 installed.  
+ When you deploy a .NET Framework app that references a Portable Class Library assembly, you must specify a dependency on the correct version of the .NET Framework. By specifying this dependency, you ensure that the required version is installed with your app. If you target the .NET Framework 4 or later, the computer must have the .NET Framework 4 with an [update](http://www.microsoft.com/downloads/en/details.aspx?FamilyID=41bdce1f-3cb3-44bb-9b33-23a1b8c99ac3), Update 4.0.3 for the .NET Framework 4, or the .NET Framework 4.5 installed.  
   
 -   To create a dependency with ClickOnce deployment: In **Solution Explorer**, choose the project node for the project you want to publish. (This is the project that references the Portable Class Library project.) On the menu bar, choose **Project**, **Properties**, and then choose the **Publish** tab. On the **Publish** page, choose **Prerequisites**. Select the required .NET Framework version (or .NET Framework 4 update) as a prerequisite.  
   

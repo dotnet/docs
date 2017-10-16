@@ -275,7 +275,7 @@ manager: "wpickett"
   
 <a name="suite_b"></a>   
 ## Suite B Support  
- The [!INCLUDE[net_v35_short](../../../includes/net-v35-short-md.md)] supports the Suite B set of cryptographic algorithms published by the National Security Agency (NSA). For more information about Suite B, see the [NSA Suite B Cryptography Fact Sheet](http://go.microsoft.com/fwlink/?LinkId=100111).  
+ The [!INCLUDE[net_v35_short](../../../includes/net-v35-short-md.md)] supports the Suite B set of cryptographic algorithms published by the National Security Agency (NSA). For more information about Suite B, see the [NSA Suite B Cryptography Fact Sheet](http://www.nsa.gov/ia/programs/suiteb_cryptography/index.shtml).  
   
  The following algorithms are included:  
   

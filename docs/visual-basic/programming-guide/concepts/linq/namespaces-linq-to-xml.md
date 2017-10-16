@@ -13,12 +13,6 @@ ms.assetid: 0eeae463-4f1c-48e2-9415-9faea0ede2af
 caps.latest.revision: 2
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Namespaces in Visual Basic (LINQ to XML)
 Insert introduction here.  

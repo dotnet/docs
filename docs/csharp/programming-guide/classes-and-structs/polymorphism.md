@@ -1,13 +1,9 @@
 ---
 title: "Polymorphism (C# Programming Guide)"
-
 ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "C# language, polymorphism"
@@ -16,21 +12,6 @@ ms.assetid: 086af969-29a5-4ce8-a993-0b7d53839dab
 caps.latest.revision: 31
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Polymorphism (C# Programming Guide)
 Polymorphism is often referred to as the third pillar of object-oriented programming, after encapsulation and inheritance. Polymorphism is a Greek word that means "many-shaped" and it has two distinct aspects:  

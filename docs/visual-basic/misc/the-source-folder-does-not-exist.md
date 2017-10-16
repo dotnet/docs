@@ -1,34 +1,14 @@
 ---
 title: "The source folder does not exist"
-
 ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 ms.assetid: c891d006-b721-4d93-b57d-ce51d91fca00
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # The source folder does not exist
 You attempted an operation that references a source folder that does not exist. This may be the result of supplying an incorrect file path.  

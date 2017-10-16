@@ -1,13 +1,11 @@
 ---
 title: "Join Clause (Visual Basic)"
-
 ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.QueryJoinIn"
@@ -21,21 +19,6 @@ ms.assetid: 6dd37936-b27c-4e00-98ad-154b23f4de64
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Join Clause (Visual Basic)
 Combines two collections into a single collection. The join operation is based on matching keys and uses the `Equals` operator.  

@@ -1,13 +1,11 @@
 ---
 title: "Class Statement (Visual Basic)"
-
 ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Class"
@@ -24,21 +22,6 @@ ms.assetid: f2664f38-eb5a-4d4b-a374-1d041521fb6c
 caps.latest.revision: 29
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Class Statement (Visual Basic)
 Declares the name of a class and introduces the definition of the variables, properties, events, and procedures that the class comprises.  

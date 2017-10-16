@@ -7,18 +7,11 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 ms.assetid: 7c589367-ef8f-4161-9050-642c47e6bf63
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Set Operations (C#)
 Set operations in LINQ refer to query operations that produce a result set that is based on the presence or absence of equivalent elements within the same or separate collections (or sets).  

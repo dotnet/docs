@@ -13,12 +13,6 @@ ms.assetid: 3da1bd10-b0d8-4d5b-a637-966891c13592
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # How to: Combine LINQ Queries with Regular Expressions (Visual Basic)
 This example shows how to use the <xref:System.Text.RegularExpressions.Regex> class to create a regular expression for more complex matching in text strings. The LINQ query makes it easy to filter on exactly the files that you want to search with the regular expression, and to shape the results.  

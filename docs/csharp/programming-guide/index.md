@@ -1,13 +1,9 @@
 ---
 title: "C# Programming Guide"
-
 ms.date: 05/02/2017
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 f1_keywords: 
   - "cs.langref"
@@ -20,21 +16,6 @@ ms.assetid: ac0f23a2-6bf3-4077-be99-538ae5fd3bc5
 caps.latest.revision: 45
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # C# programming guide
 This section provides detailed information on key C# language features and features accessible to C# through the .NET Framework.  

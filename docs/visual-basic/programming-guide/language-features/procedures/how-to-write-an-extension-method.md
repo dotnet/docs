@@ -7,7 +7,6 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "extending data types"
@@ -17,21 +16,6 @@ ms.assetid: fb2739cc-958d-4ef4-a38b-214a74c93413
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Write an Extension Method (Visual Basic)
 Extension methods enable you to add methods to an existing class. The extension method can be called as if it were an instance of that class.  

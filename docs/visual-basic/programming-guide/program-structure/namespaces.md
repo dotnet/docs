@@ -7,7 +7,6 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.global"
@@ -27,22 +26,6 @@ ms.assetid: cffac744-ab8c-4f1f-ba50-732c22ab4b88
 caps.latest.revision: 27
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Namespaces in Visual Basic
 Namespaces organize the objects defined in an assembly. Assemblies can contain multiple namespaces, which can in turn contain other namespaces. Namespaces prevent ambiguity and simplify references when using large groups of objects such as class libraries.  

@@ -1,13 +1,10 @@
 ---
 title: "Single Data Type (Visual Basic)"
-
 ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Single"
@@ -31,21 +28,6 @@ ms.assetid: 224a2795-4cd5-496c-8f7a-a4f05a06d45d
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Single Data Type (Visual Basic)
 Holds signed IEEE 32-bit (4-byte) single-precision floating-point numbers ranging in value from -3.4028235E+38 through -1.401298E-45 for negative values and from 1.401298E-45 through 3.4028235E+38 for positive values. Single-precision numbers store an approximation of a real number.  

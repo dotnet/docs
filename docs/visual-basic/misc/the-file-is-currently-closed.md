@@ -1,34 +1,14 @@
 ---
 title: "The file is currently closed"
-
 ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 ms.assetid: 095c38ae-a741-4b46-b099-bc6826a49c83
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # The file is currently closed
 An attempt has been made to perform an operation that can only be performed on an open file, but the file is currently closed.  

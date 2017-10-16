@@ -1,13 +1,10 @@
 ---
 title: "Deploying applications that reference Power Packs controls (Visual Studio)"
-
 ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "Power Packs, deploying"
@@ -15,21 +12,6 @@ ms.assetid: f2230f53-a745-4731-89e6-033943faa209
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Deploying applications that reference Power Packs controls (Visual Studio)
 If you want to deploy an application that references the Power Packs controls (<xref:Microsoft.VisualBasic.PowerPacks.LineShape>, <xref:Microsoft.VisualBasic.PowerPacks.OvalShape>, <xref:Microsoft.VisualBasic.PowerPacks.RectangleShape>, or <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater>), the controls must be installed on the destination computer.  

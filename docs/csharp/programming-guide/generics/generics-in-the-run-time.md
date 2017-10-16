@@ -1,13 +1,9 @@
 ---
 title: "Generics in the Run Time (C# Programming Guide)"
-
 ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "generics [C#], at run time"
@@ -15,21 +11,6 @@ ms.assetid: 119df7e6-9ceb-49df-af36-24f8f8c0747f
 caps.latest.revision: 18
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Generics in the Run Time (C# Programming Guide)
 When a generic type or method is compiled into Microsoft intermediate language (MSIL), it contains metadata that identifies it as having type parameters. How the MSIL for a generic type is used differs based on whether the supplied type parameter is a value type or reference type.  

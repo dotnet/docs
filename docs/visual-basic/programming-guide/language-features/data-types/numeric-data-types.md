@@ -7,7 +7,6 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "integral types, Visual Basic"
@@ -34,21 +33,6 @@ ms.assetid: a27bd4d0-7e14-43eb-9cc4-b42eaab323c9
 caps.latest.revision: 25
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Numeric Data Types (Visual Basic)
 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] supplies several *numeric data types* for handling numbers in various representations. *Integral* types represent only whole numbers (positive, negative, and zero), and *nonintegral* types represent numbers with both integer and fractional parts.  

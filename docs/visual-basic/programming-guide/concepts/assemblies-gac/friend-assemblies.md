@@ -13,12 +13,6 @@ ms.assetid: 9b3d5716-e6e4-47a7-a3e9-084d7fba5c28
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Friend Assemblies (Visual Basic)
 A *friend assembly* is an assembly that can access another assembly's [Friend](../../../../visual-basic/language-reference/modifiers/friend.md) types and members. If you identify an assembly as a friend assembly, you no longer have to mark types and members as public in order for them to be accessed by other assemblies. This is especially convenient in the following scenarios:  

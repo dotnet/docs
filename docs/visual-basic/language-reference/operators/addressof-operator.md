@@ -1,13 +1,11 @@
 ---
 title: "AddressOf Operator (Visual Basic)"
-
 ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "AddressOf"
@@ -19,21 +17,6 @@ ms.assetid: 8105a59d-60d8-4ab5-b221-5899cdfacbf4
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # AddressOf Operator (Visual Basic)
 Creates a procedure delegate instance that references the specific procedure.  

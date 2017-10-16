@@ -13,12 +13,6 @@ ms.assetid: 159d868f-5ac8-40f2-95ca-07dd925f35c6
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # How to: Read and Write an Encoded Document (Visual Basic)
 To create an encoded XML document, you add an <xref:System.Xml.Linq.XDeclaration> to the XML tree, setting the encoding to the desired code page name.  

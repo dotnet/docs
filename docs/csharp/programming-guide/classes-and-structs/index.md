@@ -6,7 +6,6 @@ ms.date: 01/17/2016
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "structs [C#], about structs"
@@ -19,21 +18,6 @@ ms.assetid: cc39dbda-8754-423e-b5b1-16a1db0734c0
 caps.latest.revision: 48
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Classes and Structs (C# Programming Guide)
 Classes and structs are two of the basic constructs of the common type system in the .NET Framework. Each is essentially a data structure that encapsulates a set of data and behaviors that belong together as a logical unit. The data and behaviors are the *members* of the class or struct, and they include its methods, properties, and events, and so on, as listed later in this topic.  

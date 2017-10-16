@@ -12,20 +12,6 @@ ms.assetid: 33601bf3-cc2c-4496-846d-f9679bccf2a7
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # nameof (C# Reference)
 

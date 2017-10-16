@@ -1,13 +1,11 @@
 ---
 title: "Cannot convert anonymous type to expression tree because it contains a field that is used in the initialization of another field"
-
 ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "bc36548"
@@ -18,21 +16,6 @@ ms.assetid: 27de068f-080e-4160-86bf-1ec23fd1925a
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Cannot convert anonymous type to expression tree because it contains a field that is used in the initialization of another field
 The compiler does not accept conversion of an anonymous to an expression tree when one property of the anonymous type is used to initialize another property of the anonymous type. For example, in the following code, `Prop1` is declared in the initialization list and then used as the initial value for `Prop2`.  

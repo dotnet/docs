@@ -1,13 +1,9 @@
 ---
 title: "Unable to obtain a stream for the log"
-
 ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vbrApplicationLog_ExhaustedPossibleStreamNames"
@@ -15,22 +11,6 @@ ms.assetid: 33994f52-8efb-4790-a459-033e5c1db632
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Unable to obtain a stream for the log
 Unable to obtain a stream for the log. Potential file names based on \<name> are already in use.  

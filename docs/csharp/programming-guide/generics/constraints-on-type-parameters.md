@@ -1,13 +1,9 @@
 ---
 title: "Constraints on Type Parameters (C# Programming Guide)"
-
 ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "generics [C#], type constraints"
@@ -18,21 +14,6 @@ ms.assetid: 141b003e-1ddb-4e1c-bcb2-e1c3870e6a51
 caps.latest.revision: 41
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Constraints on Type Parameters (C# Programming Guide)
 When you define a generic class, you can apply restrictions to the kinds of types that client code can use for type arguments when it instantiates your class. If client code tries to instantiate your class by using a type that is not allowed by a constraint, the result is a compile-time error. These restrictions are called constraints. Constraints are specified by using the `where` contextual keyword. The following table lists the six types of constraints:  

@@ -1,38 +1,20 @@
 ---
 title: "Troubleshooting the DataRepeater Control (Visual Studio)"
-
 ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "DataRepeater, troubleshooting"
 ms.assetid: c0ab9469-eced-4f52-aa18-4bd8dd4f1a9a
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Troubleshooting the DataRepeater Control (Visual Studio)
 This topic lists common issues that may occur when you are working with the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> control.  

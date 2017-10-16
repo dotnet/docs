@@ -7,7 +7,6 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "troubleshooting file I/O"
@@ -20,21 +19,6 @@ ms.assetid: a8e9b44d-facb-4718-8c0f-466537171182
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Troubleshooting: reading from and writing to text files (Visual Basic)
 This topic discusses common problems encountered when working with text files and suggests an approach to each.  

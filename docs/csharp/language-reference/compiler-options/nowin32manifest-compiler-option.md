@@ -15,20 +15,6 @@ ms.assetid: 6f06365b-b87b-46a2-b187-b3bfeaf4862d
 caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /nowin32manifest (C# Compiler Options)
 Use the **/nowin32manifest** option to instruct the compiler not to embed any application manifest into the executable file.  

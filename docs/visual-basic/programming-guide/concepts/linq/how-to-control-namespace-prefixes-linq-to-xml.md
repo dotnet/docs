@@ -13,12 +13,6 @@ ms.assetid: 2fcf28a5-31b6-409d-84ea-27c22f71fc9f
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # How to: Control Namespace Prefixes (Visual Basic) (LINQ to XML)
 This topic describes how you can control namespace prefixes.  

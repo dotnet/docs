@@ -1,13 +1,10 @@
 ---
 title: "Friend (Visual Basic)"
-
 ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Friend"
@@ -21,22 +18,6 @@ ms.assetid: b664605e-1c79-4728-b996-aa59c50846bc
 caps.latest.revision: 25
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Friend (Visual Basic)
 Specifies that one or more declared programming elements are accessible only from within the assembly that contains their declaration.  

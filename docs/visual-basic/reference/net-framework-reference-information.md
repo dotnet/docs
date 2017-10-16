@@ -1,13 +1,9 @@
 ---
 title: ".NET Framework Reference Information (Visual Basic)"
-
 ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "language reference, .NET Framework"
@@ -17,21 +13,6 @@ ms.assetid: 8b202505-608b-4223-bbd9-2ace3d73e6cd
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # .NET Framework Reference Information (Visual Basic)
 This topic provides links to information about how to work with the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] class library.  

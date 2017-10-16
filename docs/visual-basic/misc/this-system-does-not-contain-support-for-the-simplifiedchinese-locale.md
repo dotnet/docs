@@ -1,13 +1,9 @@
 ---
 title: "This system does not contain support for the SimplifiedChinese locale"
-
 ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vbrArgument_SCNotSupported"
@@ -15,22 +11,6 @@ ms.assetid: 197d17cb-2904-4e12-8e45-aba23bddec8c
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # This system does not contain support for the SimplifiedChinese locale
 You are attempting to use the `VbStrConv.SimplifiedChinese` enumeration member, but your system does not support the Simplified Chinese locale.  

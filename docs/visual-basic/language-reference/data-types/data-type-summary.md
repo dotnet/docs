@@ -1,13 +1,10 @@
 ---
 title: "Data Type Summary (Visual Basic)"
-
 ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "Boolean data type, supported types in Visual Basic"
@@ -48,21 +45,6 @@ ms.assetid: e975cdb6-64d8-4a4a-ae27-f3b3ed198ae0
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Data Type Summary (Visual Basic)
 The following table shows the Visual Basic data types, their supporting common language runtime types, their nominal storage allocation, and their value ranges.  

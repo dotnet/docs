@@ -1,13 +1,11 @@
 ---
 title: "/warnaserror (Visual Basic)"
-
 ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "warnaserror compiler option [Visual Basic]"
@@ -17,21 +15,6 @@ ms.assetid: 49819f1d-a1bd-4201-affe-5afe6d9712e1
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /warnaserror (Visual Basic)
 Causes the compiler to treat the first occurrence of a warning as an error.  

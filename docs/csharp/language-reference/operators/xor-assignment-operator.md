@@ -13,20 +13,6 @@ ms.assetid: 3658ff9a-61cd-467e-ad6b-8fbf1cfbaae4
 caps.latest.revision: 16
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # ^= Operator (C# Reference)
 The exclusive-OR assignment operator.  

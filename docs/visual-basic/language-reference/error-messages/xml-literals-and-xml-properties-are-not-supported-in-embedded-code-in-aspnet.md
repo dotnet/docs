@@ -1,13 +1,11 @@
 ---
 title: "XML literals and XML properties are not supported in embedded code within ASP.NET"
-
 ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vbc31200"
@@ -18,21 +16,6 @@ ms.assetid: 053e8cba-8584-45cc-9fa0-43d122779772
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # XML literals and XML properties are not supported in embedded code within ASP.NET
 XML literals and XML properties are not supported in embedded code within ASP.NET. To use XML features, move the code to code-behind.  

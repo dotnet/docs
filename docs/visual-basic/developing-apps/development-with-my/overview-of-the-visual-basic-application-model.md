@@ -1,13 +1,10 @@
 ---
 title: "Overview of the Visual Basic Application Model"
-
 ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "My.Application object, Visual Basic application model"
@@ -16,21 +13,6 @@ ms.assetid: 17538984-84fe-43c9-82c8-724c9529fe8b
 caps.latest.revision: 30
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Overview of the Visual Basic Application Model
 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] provides a well-defined model for controlling the behavior of Windows Forms applications: the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] Application model. This model includes events for handling the application's startup and shutdown, as well as events for catching unhandled exceptions. It also provides support for developing single-instance applications. The application model is extensible, so developers that need more control can customize its overridable methods.  

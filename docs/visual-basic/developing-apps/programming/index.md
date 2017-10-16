@@ -1,13 +1,10 @@
 ---
 title: "Programming in Visual Basic"
-
 ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "programming, Visual Basic"
@@ -16,21 +13,6 @@ ms.assetid: bc45a3de-ea36-46e6-a106-309a413d7804
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Programming in Visual Basic
 This section discusses programming tasks that you may want to learn more about as you create your Visual Basic application.  

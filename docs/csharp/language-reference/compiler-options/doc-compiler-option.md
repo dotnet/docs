@@ -19,20 +19,6 @@ ms.assetid: 849eea59-c936-4311-bad8-d07404480f2a
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /doc (C# Compiler Options)
 The **/doc** option allows you to place documentation comments in an XML file.  

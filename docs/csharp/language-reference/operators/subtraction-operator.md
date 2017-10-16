@@ -14,20 +14,6 @@ ms.assetid: 4de7a4fa-c69d-48e6-aff1-3130af970b2d
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # - Operator (C# Reference)
 The `-` operator can function as either a unary or a binary operator.  

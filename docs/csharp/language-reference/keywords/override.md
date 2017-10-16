@@ -14,20 +14,6 @@ ms.assetid: dd1907a8-acf8-46d3-80b9-c2ca4febada8
 caps.latest.revision: 26
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # override (C# Reference)
 The `override` modifier is required to extend or modify the abstract or virtual implementation of an inherited method, property, indexer, or event.  

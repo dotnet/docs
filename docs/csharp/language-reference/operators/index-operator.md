@@ -16,20 +16,6 @@ ms.assetid: 5c16bb45-88f7-45ff-b42c-1af1972b042c
 caps.latest.revision: 20
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # [] Operator (C# Reference)
 Square brackets (`[]`) are used for arrays, indexers, and attributes. They can also be used with pointers.  

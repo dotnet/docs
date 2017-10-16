@@ -1,13 +1,11 @@
 ---
 title: "Declare Statement"
-
 ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Declare"
@@ -38,21 +36,6 @@ ms.assetid: d3f21fb0-b804-4c99-97ed-583b23894cf1
 caps.latest.revision: 30
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Declare Statement
 Declares a reference to a procedure implemented in an external file.  

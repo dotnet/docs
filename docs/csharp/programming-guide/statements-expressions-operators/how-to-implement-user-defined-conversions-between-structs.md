@@ -1,13 +1,9 @@
 ---
 title: "How to: Implement User-Defined Conversions Between Structs (C# Programming Guide)"
-
 ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "user-defined conversions [C#]"
@@ -15,21 +11,6 @@ ms.assetid: 97839aef-8fbc-40d5-9769-6b569bc2710b
 caps.latest.revision: 11
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Implement User-Defined Conversions Between Structs (C# Programming Guide)
 This example defines two structs, `RomanNumeral` and `BinaryNumeral`, and demonstrates conversions between them.  

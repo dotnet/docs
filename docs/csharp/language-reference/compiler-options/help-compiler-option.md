@@ -19,20 +19,6 @@ ms.assetid: 8d53f6ba-5c3b-4183-976e-9c0f26fd3680
 caps.latest.revision: 12
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /help, /? (C# Compiler Options)
 This option sends a listing of compiler options, and a brief description of each option, to stdout.  

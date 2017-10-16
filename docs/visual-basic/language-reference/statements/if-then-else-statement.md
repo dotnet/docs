@@ -1,13 +1,11 @@
 ---
 title: "If...Then...Else Statement (Visual Basic)"
-
 ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.ElseIf"
@@ -32,21 +30,6 @@ ms.assetid: 790068a2-1307-4e28-8a72-be5ebda099e9
 caps.latest.revision: 29
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # If...Then...Else Statement (Visual Basic)
 Conditionally executes a group of statements, depending on the value of an expression.  

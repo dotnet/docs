@@ -13,12 +13,6 @@ ms.assetid: 4021e019-a8f7-477b-879e-07dd7f44feb9
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Concatenation Operations (Visual Basic)
 Concatenation refers to the operation of appending one sequence to another.  

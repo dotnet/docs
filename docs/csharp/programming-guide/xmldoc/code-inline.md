@@ -1,13 +1,9 @@
 ---
 title: "&lt;c&gt; (C# Programming Guide)"
-
 ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 f1_keywords: 
   - "c"
@@ -21,21 +17,6 @@ ms.assetid: aad5b16e-a29e-445e-bd0d-eea0b138d7b2
 caps.latest.revision: 12
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # &lt;c&gt; (C# Programming Guide)
 ## Syntax  

@@ -1,13 +1,10 @@
 ---
 title: "Module &lt;keyword&gt; (Visual Basic)"
-
 ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.ModuleAttribute"
@@ -19,21 +16,6 @@ ms.assetid: d971b940-05ab-4d56-8485-e3b8a661906b
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Module &lt;keyword&gt; (Visual Basic)
 Specifies that an attribute at the beginning of a source file applies to the current assembly module.  

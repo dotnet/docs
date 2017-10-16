@@ -1,13 +1,11 @@
 ---
 title: "/target (Visual Basic)"
-
 ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "target compiler options [Visual Basic]"
@@ -17,21 +15,6 @@ ms.assetid: e0954147-548b-461f-9c4b-a8f88845616c
 caps.latest.revision: 29
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /target (Visual Basic)
 Specifies the format of compiler output.  

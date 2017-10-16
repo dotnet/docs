@@ -1,13 +1,9 @@
 ---
 title: "Generic Delegates (C# Programming Guide)"
-
 ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "generics [C#], delegates"
@@ -16,21 +12,6 @@ ms.assetid: bdea509c-44c1-4309-aaa9-15c7aee009df
 caps.latest.revision: 16
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Generic Delegates (C# Programming Guide)
 A [delegate](../../../csharp/language-reference/keywords/delegate.md) can define its own type parameters. Code that references the generic delegate can specify the type argument to create a closed constructed type, just like when instantiating a generic class or calling a generic method, as shown in the following example:  

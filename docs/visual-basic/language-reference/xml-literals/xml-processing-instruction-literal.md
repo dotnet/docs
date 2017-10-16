@@ -1,13 +1,11 @@
 ---
 title: "XML Processing Instruction Literal (Visual Basic)"
-
 ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.XmlLiteralProcessingInstruction"
@@ -19,21 +17,6 @@ ms.assetid: cef4f7f8-0011-4f64-8602-795077ad4f15
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # XML Processing Instruction Literal (Visual Basic)
 A literal representing an <xref:System.Xml.Linq.XProcessingInstruction> object.  

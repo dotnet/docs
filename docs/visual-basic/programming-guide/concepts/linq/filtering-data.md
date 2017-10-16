@@ -13,12 +13,6 @@ ms.assetid: 7749519a-7edc-49fe-aef9-6a353864af6c
 caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Filtering Data (Visual Basic)
 Filtering refers to the operation of restricting the result set to contain only those elements that satisfy a specified condition. It is also known as selection.  

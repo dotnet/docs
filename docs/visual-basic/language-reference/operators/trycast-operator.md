@@ -1,13 +1,11 @@
 ---
 title: "TryCast Operator (Visual Basic)"
-
 ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.trycast"
@@ -18,21 +16,6 @@ ms.assetid: d1ef5d47-fef4-491e-b014-1d910628f65c
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # TryCast Operator (Visual Basic)
 Introduces a type conversion operation that does not throw an exception.  

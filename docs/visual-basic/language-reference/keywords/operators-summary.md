@@ -1,13 +1,10 @@
 ---
 title: "Operators Summary (Visual Basic)"
-
 ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "operators [Visual Basic], about operators"
@@ -17,21 +14,6 @@ ms.assetid: cb44c210-686f-4417-a13f-51c0d60161f8
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Operators Summary (Visual Basic)
 Visual Basic language keywords and run-time library members are organized by purpose and use.  

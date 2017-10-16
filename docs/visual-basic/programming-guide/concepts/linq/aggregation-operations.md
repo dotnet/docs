@@ -13,12 +13,6 @@ ms.assetid: 0f47e92c-5dd2-4007-baf4-c5fe5dc3b4a8
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Aggregation Operations (Visual Basic)
 An aggregation operation computes a single value from a collection of values. An example of an aggregation operation is calculating the average daily temperature from a month's worth of daily temperature values.  

@@ -1,13 +1,11 @@
 ---
 title: "Nullable type inference is not supported in this context"
-
 ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vbc36629"
@@ -18,21 +16,6 @@ ms.assetid: 0a1e2dbc-d9a4-433d-9306-c5540782b81d
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Nullable type inference is not supported in this context
 Value types and structures can be declared nullable.  

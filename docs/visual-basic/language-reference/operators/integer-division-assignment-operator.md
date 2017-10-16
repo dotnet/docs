@@ -1,13 +1,11 @@
 ---
 title: "\\= Operator"
-
 ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "\\="
@@ -22,21 +20,6 @@ ms.assetid: 6f39915d-e398-4045-afcc-da6885e57b9c
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # \\= Operator
 Divides the value of a variable or property by the value of an expression and assigns the integer result to the variable or property.  

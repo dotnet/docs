@@ -1,13 +1,10 @@
 ---
 title: "Return Values for the CStr Function (Visual Basic)"
-
 ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "times, CStr Function return values"
@@ -22,21 +19,6 @@ ms.assetid: 3aa744e7-1419-45d5-85e3-e5abc2953673
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Return Values for the CStr Function (Visual Basic)
 The following table describes the return values for `CStr` for different data types of `expression`.  

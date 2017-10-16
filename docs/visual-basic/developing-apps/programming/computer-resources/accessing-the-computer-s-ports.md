@@ -7,7 +7,6 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "serial ports"
@@ -16,21 +15,6 @@ ms.assetid: b04a2f76-992a-4585-ab41-8bbbdbd554a1
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Accessing the Computer&#39;s Ports (Visual Basic)
 The `My.Computer.Ports` object provides a property and a method for accessing the computer's serial ports.  

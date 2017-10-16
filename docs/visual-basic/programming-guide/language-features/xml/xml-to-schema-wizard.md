@@ -20,21 +20,6 @@ ms.assetid: 98c495ba-8f37-4517-a0db-aa738611ab76
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # XML to Schema Wizard (Visual Basic)
 Use the XML to Schema Wizard to create an XML schema set that is inferred from one or more XML documents and include it your project. You can use any combination of XML documents in the form of text files, XML from HTTP Internet addresses, or XML that is typed or pasted into the XML to Schema Wizard.  

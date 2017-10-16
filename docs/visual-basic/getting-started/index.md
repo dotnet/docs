@@ -1,6 +1,6 @@
 ---
 title: "Get started with Visual Basic"
-ms.date: "2017-08-10"
+ms.date: 08/10/2017
 ms.prod: .net
 ms.technology: 
   - "devlang-visual-basic"

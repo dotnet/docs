@@ -1,7 +1,7 @@
 ---
 title: "An invalid name was specified for the event log"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 
 

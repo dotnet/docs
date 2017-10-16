@@ -1,7 +1,7 @@
 ---
 title: "A class used in the expression is not loaded during debugging session"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 
 

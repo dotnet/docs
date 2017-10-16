@@ -1,7 +1,7 @@
 ---
 title: "Error number must be within the range 0 and 65535"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 
 

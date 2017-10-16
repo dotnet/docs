@@ -1,7 +1,7 @@
 ---
 title: "Events cannot be declared with a delegate type that has a return type"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""

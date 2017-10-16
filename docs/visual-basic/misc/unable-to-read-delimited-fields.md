@@ -1,7 +1,7 @@
 ---
 title: "Unable to read delimited fields because a double quote is not a legal delimiter when EscapeQuotes is set to True"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 
 

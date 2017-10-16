@@ -1,7 +1,7 @@
 ---
 title: "Argument &lt;argumentname&gt; cannot be an empty string or Nothing"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 
 

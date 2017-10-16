@@ -1,7 +1,7 @@
 ---
 title: "How to: Create a Key In the Registry (Visual C#)"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 
 

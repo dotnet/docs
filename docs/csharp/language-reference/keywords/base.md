@@ -1,7 +1,7 @@
 ---
 title: "base (C# Reference)"
 description: Learn about the base keyword, which is used to access members of the base class from within a derived class in C#.
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"

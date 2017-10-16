@@ -1,6 +1,6 @@
 ---
 title: "Visual Basic Language Specification"
-ms.date: "2017-08-02"
+ms.date: 08/02/2017
 ms.prod: .net
 ms.technology: 
   - "devlang-visual-basic"

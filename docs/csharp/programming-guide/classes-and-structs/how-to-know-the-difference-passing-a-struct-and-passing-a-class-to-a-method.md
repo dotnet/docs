@@ -1,7 +1,7 @@
 ---
 title: "How to: Know the Difference Between Passing a Struct and Passing a Class Reference to a Method (C# Programming Guide)"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 
 

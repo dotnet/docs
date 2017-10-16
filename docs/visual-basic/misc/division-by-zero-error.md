@@ -1,7 +1,7 @@
 ---
 title: "Division by zero (Visual Basic Error)"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Lambda expression will not be removed from this event handler"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""

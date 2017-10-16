@@ -1,6 +1,6 @@
 ---
 title: "Sorry, we don&#39;t have specifics on this C# error"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"

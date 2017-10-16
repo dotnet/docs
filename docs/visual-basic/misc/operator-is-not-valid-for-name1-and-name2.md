@@ -1,7 +1,7 @@
 ---
 title: "Operator is not valid for &#39;&lt;name1&gt;&#39; and &#39;&lt;name2&gt;&#39;"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 
 

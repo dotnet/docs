@@ -1,7 +1,7 @@
 ---
 title: "Default values table (C# Reference)"
 descripton: Learn what are the default values of value types returned by the default constructors.
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"

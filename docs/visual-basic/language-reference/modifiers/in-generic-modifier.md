@@ -1,6 +1,6 @@
 ---
 title: "In (Generic Modifier) (Visual Basic)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-visual-basic"

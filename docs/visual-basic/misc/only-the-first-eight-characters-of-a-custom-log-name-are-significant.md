@@ -1,7 +1,7 @@
 ---
 title: "Only the first eight characters of a custom log name are significant"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 
 

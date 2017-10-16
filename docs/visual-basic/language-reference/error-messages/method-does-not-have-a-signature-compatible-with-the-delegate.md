@@ -1,7 +1,7 @@
 ---
 title: "Method does not have a signature compatible with the delegate"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""

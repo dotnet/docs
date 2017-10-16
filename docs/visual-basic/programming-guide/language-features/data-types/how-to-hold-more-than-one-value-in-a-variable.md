@@ -1,7 +1,7 @@
 ---
 title: "How to: Hold More Than One Value in a Variable (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""

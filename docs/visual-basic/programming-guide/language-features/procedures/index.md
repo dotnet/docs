@@ -1,7 +1,7 @@
 ---
 title: "Procedures in Visual Basic"
 ms.custom: ""
-ms.date: "2017-04-28"
+ms.date: 04/28/2017
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""

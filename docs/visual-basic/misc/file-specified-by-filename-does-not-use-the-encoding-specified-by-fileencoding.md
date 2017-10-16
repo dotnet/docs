@@ -1,7 +1,7 @@
 ---
 title: "File specified by FileName does not use the encoding specified by FileEncoding"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 
 

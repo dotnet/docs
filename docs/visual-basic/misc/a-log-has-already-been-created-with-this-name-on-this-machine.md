@@ -1,7 +1,7 @@
 ---
 title: "A log has already been created with this name on this machine"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 
 

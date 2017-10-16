@@ -1,7 +1,7 @@
 ---
 title: "First operand in a binary &#39;If&#39; expression must be nullable or a reference type"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""

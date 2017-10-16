@@ -1,7 +1,7 @@
 ---
 title: "&#39;&lt;functionname&gt;&#39; is not declared (Smart Device-Visual Basic Compiler Error)"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""

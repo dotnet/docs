@@ -1,7 +1,7 @@
 ---
 title: "Path &#39;&lt;pathname&gt;&#39; not found"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 
 

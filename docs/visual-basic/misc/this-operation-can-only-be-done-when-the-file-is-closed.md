@@ -1,7 +1,7 @@
 ---
 title: "This operation can only be done when the File is closed"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 
 

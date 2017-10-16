@@ -1,6 +1,6 @@
 ---
 title: "Special Characters (C# Reference)"
-ms.date: "2017-02-14"
+ms.date: 02/14/2017
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"

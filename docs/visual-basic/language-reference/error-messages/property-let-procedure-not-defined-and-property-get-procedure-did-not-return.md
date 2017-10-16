@@ -1,7 +1,7 @@
 ---
 title: "Property let procedure not defined and property get procedure did not return an object"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""

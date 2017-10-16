@@ -1,7 +1,7 @@
 ---
 title: "Number of indices exceeds the number of dimensions of the indexed array"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""

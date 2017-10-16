@@ -1,7 +1,7 @@
 ---
 title: "&#39;StrConv.LinguisticCasing&#39; requires &#39;StrConv.LowerCase&#39; or &#39;StrConv.UpperCase&#39;"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 
 

@@ -1,7 +1,7 @@
 ---
 title: "No accessible overloaded &#39;&lt;methodname&gt;&#39; can be called with these arguments without a narrowing conversion"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 
 

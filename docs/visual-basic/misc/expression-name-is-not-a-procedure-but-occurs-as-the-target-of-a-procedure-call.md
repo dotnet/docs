@@ -1,7 +1,7 @@
 ---
 title: "Expression &#39;&lt;name&gt;&#39; is not a procedure, but occurs as the target of a procedure call"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Command-line build with csc.exe"
-ms.date: "2017-04-19"
+ms.date: 04/19/2017
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"

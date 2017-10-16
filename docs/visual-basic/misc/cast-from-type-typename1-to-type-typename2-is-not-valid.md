@@ -1,7 +1,7 @@
 ---
 title: "Cast from type &#39;&lt;typename1&gt;&#39; to type &#39;&lt;typename2&gt;&#39; is not valid"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 
 

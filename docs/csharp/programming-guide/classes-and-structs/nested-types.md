@@ -1,7 +1,7 @@
 ---
 title: "Nested Types (C# Programming Guide)"
 
-ms.date: "2017-07-10"
+ms.date: 07/10/2017
 ms.prod: .net
 
 

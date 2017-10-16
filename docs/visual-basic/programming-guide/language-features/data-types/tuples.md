@@ -1,7 +1,7 @@
 ---
 title: "Tuples in Visual Basic"
 ms.custom: ""
-ms.date: "2017-04-23"
+ms.date: 04/23/2017
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""

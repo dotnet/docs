@@ -1,6 +1,6 @@
 ---
 title: "foreach, in (C# Reference)"
-ms.date: 10/11/2017"
+ms.date: 10/11/2017
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"

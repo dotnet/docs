@@ -1,7 +1,7 @@
 ---
 title: "Expression recursively calls the containing property &#39;&lt;propertyname&gt;&#39;"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""

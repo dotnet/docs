@@ -1,33 +1,16 @@
 ---
 title: "Q-Z Statements"
-
 ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 ms.assetid: 32a9e547-c1b7-40f2-8118-7eef1d19649e
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Q-Z Statements
 The following table contains a listing of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language statements.  

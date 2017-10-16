@@ -1,13 +1,10 @@
 ---
 title: "Static (Visual Basic)"
-
 ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Static"
@@ -18,21 +15,6 @@ ms.assetid: 19013910-4658-47b6-a22e-1744b527979e
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Static (Visual Basic)
 Specifies that one or more declared local variables are to continue to exist and retain their latest values after termination of the procedure in which they are declared.  

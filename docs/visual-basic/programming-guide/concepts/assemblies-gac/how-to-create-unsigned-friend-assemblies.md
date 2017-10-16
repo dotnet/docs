@@ -13,12 +13,6 @@ ms.assetid: 5735eb79-9729-4c46-ac1f-537ada3acaa7
 caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # How to: Create Unsigned Friend Assemblies (Visual Basic)
 This example shows how to use friend assemblies with assemblies that are unsigned.  

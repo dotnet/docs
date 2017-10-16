@@ -15,20 +15,6 @@ ms.assetid: 1d2b6a9b-31fd-4fa6-a7b2-bfd9c806ac8a
 caps.latest.revision: 9
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Reference Tables for Types (C# Reference)
 The following reference tables summarize the C# types:  

@@ -16,20 +16,6 @@ ms.assetid: 426afb36-a8fb-469d-9c45-a35d9512557c
 caps.latest.revision: 12
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /nologo (C# Compiler Options)
 The **/nologo** option suppresses display of the sign-on banner when the compiler starts up and display of informational messages during compiling.  

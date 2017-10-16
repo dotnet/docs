@@ -14,20 +14,6 @@ ms.assetid: 47e5f068-1d97-4010-bd3b-e21b5d3a77f5
 caps.latest.revision: 20
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # %= Operator (C# Reference)
 The remainder assignment operator.  

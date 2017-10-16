@@ -1,13 +1,9 @@
 ---
 title: "Line &lt;number&gt; cannot be read because it exceeds the maximum line size."
-
 ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vbrTextFieldParser_MaxLineSizeExceeded"
@@ -15,22 +11,6 @@ ms.assetid: c59116d9-9856-47af-b32d-616d8f2d10d3
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Line &lt;number&gt; cannot be read because it exceeds the maximum line size.
 The line cannot be read because it exceeds the maximum line size. Usually this means that there is an opening quotation mark in the file, but no closing quotation mark.  

@@ -1,34 +1,14 @@
 ---
 title: "Registry key &#39;&lt;keyname&gt;&#39; could not be found"
-
 ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 ms.assetid: ca4eb74f-8303-48fc-9ea8-d792fa4c810b
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Registry key &#39;&lt;keyname&gt;&#39; could not be found
 A registry key cannot be found.  

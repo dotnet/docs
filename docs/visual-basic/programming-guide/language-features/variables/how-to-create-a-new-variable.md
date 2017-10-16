@@ -16,21 +16,6 @@ ms.assetid: 35300be3-77b0-4bef-a156-034d3cdedde0
 caps.latest.revision: 29
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Create a New Variable (Visual Basic)
 You create a variable with a [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md).  

@@ -19,21 +19,6 @@ ms.assetid: 4af2c1df-9e3a-48c1-83ac-b192986fc5bc
 caps.latest.revision: 12
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Default values table (C# Reference)
 The following table shows the default values of value types returned by the default constructors. Default constructors are invoked by using the `new` operator, as follows:

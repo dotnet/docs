@@ -7,18 +7,11 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 ms.assetid: c30e972b-1693-4e05-b115-c31831fdf9f2
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # How to: Share an Assembly with Other Applications (C#)
 Assemblies can be private or shared: by default, most simple programs consist of a private assembly because they are not intended to be used by other applications.  

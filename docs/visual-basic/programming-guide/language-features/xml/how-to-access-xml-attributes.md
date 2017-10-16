@@ -18,21 +18,6 @@ ms.assetid: 66cd704f-990c-4f8d-9b49-2b6aa76ca8fd
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Access XML Attributes (Visual Basic)
 This example shows how to use an attribute axis property to access XML attributes in an XML element by name. In particular, it uses the `type` attribute axis property to access the attribute named `type` in the `phone` object.  

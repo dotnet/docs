@@ -14,20 +14,6 @@ ms.assetid: 62e86126-46ff-40b0-9028-e61d7558268c
 caps.latest.revision: 9
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Integral Types Table (C# Reference)
 The following table shows the sizes and ranges of the integral types, which constitute a subset of simple types.  

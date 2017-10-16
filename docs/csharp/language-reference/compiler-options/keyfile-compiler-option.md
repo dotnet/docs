@@ -15,20 +15,6 @@ ms.assetid: 0815f9de-ace4-4e98-b4c6-13c55dea40c2
 caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /keyfile (C# Compiler Options)
 Specifies the filename containing the cryptographic key.  

@@ -13,20 +13,6 @@ ms.assetid: f2a7f3af-4cf9-4111-b369-70204d24b26b
 caps.latest.revision: 10
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # #error (C# Reference)
 `#error` lets you generate an error from a specific location in your code. For example:  

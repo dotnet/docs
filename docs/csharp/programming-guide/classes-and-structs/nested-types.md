@@ -1,13 +1,9 @@
 ---
 title: "Nested Types (C# Programming Guide)"
-
 ms.date: 07/10/2017
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "nested types [C#]"
@@ -15,22 +11,6 @@ ms.assetid: f2e1b315-e3d1-48ce-977f-7bae0960ba99
 caps.latest.revision: 13
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Nested Types (C# Programming Guide)
 A type defined within a [class](../../../csharp/language-reference/keywords/class.md) or [struct](../../../csharp/language-reference/keywords/struct.md) is called a nested type. For example:  

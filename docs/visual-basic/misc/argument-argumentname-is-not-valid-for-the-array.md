@@ -1,13 +1,9 @@
 ---
 title: "Argument &#39;&lt;argumentname&gt;&#39; is not valid for the array"
-
 ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vbrArgument_InvalidRank1"
@@ -15,22 +11,6 @@ ms.assetid: 2c931ede-9c41-4ad3-8dfd-d649617f567c
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Argument &#39;&lt;argumentname&gt;&#39; is not valid for the array
 An array contains an argument that is not valid.  

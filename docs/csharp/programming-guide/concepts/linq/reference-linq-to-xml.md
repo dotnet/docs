@@ -7,18 +7,11 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 ms.assetid: 815b45e2-3527-4dee-9986-b1277a693cde
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Reference (LINQ to XML)
 This topic contains links to the LINQ to XML reference topics.  

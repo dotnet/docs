@@ -1,13 +1,11 @@
 ---
 title: "/link (Visual Basic)"
-
 ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "l compiler option [Visual Basic]"
@@ -22,21 +20,6 @@ ms.assetid: 1885f24a-86f5-486c-a064-9fb7e455ccec
 caps.latest.revision: 27
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /link (Visual Basic)
 Causes the compiler to make COM type information in the specified assemblies available to the project that you are currently compiling.  

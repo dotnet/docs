@@ -1,13 +1,11 @@
 ---
 title: "Namespace Statement"
-
 ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Namespace"
@@ -23,21 +21,6 @@ ms.assetid: a31fbd95-9ace-4c3d-bbb1-51222a2272b2
 caps.latest.revision: 39
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Namespace Statement
 Declares the name of a namespace and causes the source code that follows the declaration to be compiled within that namespace.  

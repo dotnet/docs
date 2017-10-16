@@ -1,13 +1,9 @@
 ---
 title: "VbStrConv.Wide and VbStrConv.Narrow are not applicable to the locale specified"
-
 ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vbrArgument_WideNarrowNotApplicable"
@@ -15,22 +11,6 @@ ms.assetid: 5811098c-b124-4caf-8a2b-f81f12f1d5f5
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # VbStrConv.Wide and VbStrConv.Narrow are not applicable to the locale specified
 The application is attempting to use the `VbStrConv` enumeration members `Wide` or `Narrow`, which are not applicable to the specified locale.  

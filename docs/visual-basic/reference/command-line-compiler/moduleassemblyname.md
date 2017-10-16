@@ -1,13 +1,11 @@
 ---
 title: "/moduleassemblyname"
-
 ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "moduleassemblyname compiler option [Visual Basic]"
@@ -17,21 +15,6 @@ ms.assetid: 013a57b6-f425-4dd3-b333-512d72c42f55
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /moduleassemblyname
 Specifies the name of the assembly that this module will be a part of.  

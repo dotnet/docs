@@ -17,20 +17,6 @@ ms.assetid: d4f827fe-4710-410b-89b8-867dad44b8a3
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # this (C# Reference)
 The `this` keyword refers to the current instance of the class and is also used as a modifier of the first parameter of an extension method.  

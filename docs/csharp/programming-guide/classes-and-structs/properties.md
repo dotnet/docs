@@ -1,13 +1,9 @@
 ---
 title: "Properties (C# Programming Guide)"
-
 ms.date: 03/10/2017
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 f1_keywords: 
   - "cs.properties"
@@ -18,21 +14,6 @@ ms.assetid: e295a8a2-b357-4ee7-a12e-385a44146fa8
 caps.latest.revision: 38
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Properties (C# Programming Guide)
 

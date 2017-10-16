@@ -7,18 +7,11 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 ms.assetid: 785a0526-6c0e-4599-8c61-ccdc88dd9965
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Common Attributes (C#)
 This topic describes the attributes that are most commonly used in C# programs.  

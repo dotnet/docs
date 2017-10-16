@@ -13,12 +13,6 @@ ms.assetid: 22b8e380-8eb0-4c93-b4ff-7ac21caf27d5
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Generation Operations (Visual Basic)
 Generation refers to creating a new sequence of values.  

@@ -14,20 +14,6 @@ ms.assetid: 72a0765c-6852-4aca-b327-4a11cb7f5c59
 caps.latest.revision: 22
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # while (C# Reference)
 The `while` statement executes a statement or a block of statements until a specified expression evaluates to `false`.  

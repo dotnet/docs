@@ -1,13 +1,9 @@
 ---
 title: "&lt;typeparamref&gt; (C# Programming Guide)"
-
 ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 f1_keywords: 
   - "typeparamref"
@@ -18,21 +14,6 @@ ms.assetid: 6d8ffc58-12c5-4688-8db6-833a7ded5886
 caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # &lt;typeparamref&gt; (C# Programming Guide)
 ## Syntax  

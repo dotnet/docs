@@ -18,20 +18,6 @@ ms.assetid: f17d7b4d-82d0-4133-8563-68cced1cac6e
 caps.latest.revision: 21
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /define (C# Compiler Options)
 The **/define** option defines `name` as a symbol in all source code files your program.  

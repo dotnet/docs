@@ -1,13 +1,9 @@
 ---
 title: "Argument &#39;&lt;argumentname&gt;&#39; is Nothing"
-
 ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vbrArgument_InvalidNullValue1"
@@ -15,22 +11,6 @@ ms.assetid: abbde904-c191-4911-8822-c9dd2f81d616
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Argument &#39;&lt;argumentname&gt;&#39; is Nothing
 An expression contains a null argument.  

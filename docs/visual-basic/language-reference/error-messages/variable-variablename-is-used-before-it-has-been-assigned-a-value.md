@@ -1,13 +1,11 @@
 ---
 title: "Variable &#39;&lt;variablename&gt;&#39; is used before it has been assigned a value"
-
 ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vbc42104"
@@ -18,21 +16,6 @@ ms.assetid: 6909aa0b-b4a1-46f5-a18c-ba3e565c1dd8
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Variable &#39;&lt;variablename&gt;&#39; is used before it has been assigned a value
 Variable '\<variablename>' is used before it has been assigned a value. A null reference exception could result at run time.  

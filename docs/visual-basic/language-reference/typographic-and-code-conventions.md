@@ -1,13 +1,9 @@
 ---
 title: "Typographic and Code Conventions (Visual Basic)"
-
 ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "coding conventions, Visual Basic"
@@ -21,21 +17,6 @@ ms.assetid: 1916cd81-ea9d-4faa-81f7-4a0d864b60f4
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Typographic and Code Conventions (Visual Basic)
 Visual Basic documentation uses the following typographic and code conventions.  

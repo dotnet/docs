@@ -15,20 +15,6 @@ ms.assetid: 9af1e4fa-c749-44e7-ae58-90a3d05d4e72
 caps.latest.revision: 11
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /target:module (C# Compiler Options)
 This option causes the compiler to not generate an assembly manifest.  

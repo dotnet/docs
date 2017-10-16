@@ -1,13 +1,11 @@
 ---
 title: "Not Operator (Visual Basic)"
-
 ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Not"
@@ -25,21 +23,6 @@ ms.assetid: 8f2ea83c-d2ed-480a-a474-3042a1cad9b5
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Not Operator (Visual Basic)
 Performs logical negation on a `Boolean` expression, or bitwise negation on a numeric expression.  

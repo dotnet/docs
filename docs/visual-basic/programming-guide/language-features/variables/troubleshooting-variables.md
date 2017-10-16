@@ -16,22 +16,6 @@ ms.assetid: 928a2dc8-e565-4ae4-8ba3-80cc0cb50090
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Troubleshooting Variables in Visual Basic
 This page lists some common problems that can occur when working with variables in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  

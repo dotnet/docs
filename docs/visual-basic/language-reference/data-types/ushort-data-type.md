@@ -1,13 +1,10 @@
 ---
 title: "UShort Data Type (Visual Basic)"
-
 ms.date: 04/20/2017
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.ushort"
@@ -27,21 +24,6 @@ ms.assetid: 138db892-665d-4ba8-9cae-d8d91c4a8f39
 caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # UShort data type (Visual Basic)
 

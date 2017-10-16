@@ -16,21 +16,6 @@ ms.assetid: 4292e1d9-eb8f-49d6-a3aa-f05a5fbe24d1
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Declare and Use XML Namespace Prefixes (Visual Basic)
 This example shows how to import the XML namespace prefix `ns` and use it in an XML literal and XML axis properties.  

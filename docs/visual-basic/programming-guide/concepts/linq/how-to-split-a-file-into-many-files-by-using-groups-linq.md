@@ -13,12 +13,6 @@ ms.assetid: 5e8b2a2b-0b1d-4933-8a2b-03e91dfaf77f
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # How to: Split a File Into Many Files by Using Groups (LINQ) (Visual Basic)
 This example shows one way to merge the contents of two files and then create a set of new files that organize the data in a new way.  

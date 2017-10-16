@@ -13,12 +13,6 @@ ms.assetid: 5fcb0631-dce5-45ff-8abb-353cae21e14f
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Element Operations (Visual Basic)
 Element operations return a single, specific element from a sequence.  

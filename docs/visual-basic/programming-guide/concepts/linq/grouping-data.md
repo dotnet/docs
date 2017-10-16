@@ -13,12 +13,6 @@ ms.assetid: 8f3a0871-6958-4aef-8f6f-493e189fd57d
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Grouping Data (Visual Basic)
 Grouping refers to the operation of putting data into groups so that the elements in each group share a common attribute.  

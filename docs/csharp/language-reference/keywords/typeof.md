@@ -14,20 +14,6 @@ ms.assetid: 0c08d880-515e-46bb-8cd2-48b8dd62c08d
 caps.latest.revision: 21
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # typeof (C# Reference)
 Used to obtain the `System.Type` object for a type. A `typeof` expression takes the following form:  

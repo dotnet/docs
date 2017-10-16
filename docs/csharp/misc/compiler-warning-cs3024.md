@@ -13,21 +13,6 @@ ms.assetid: fef9db31-9a7f-42d5-ad37-3e7faf661f95
 caps.latest.revision: 7
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Compiler Warning CS3024
 Constraint type 'type' is not CLS-compliant.  

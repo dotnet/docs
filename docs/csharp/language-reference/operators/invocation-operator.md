@@ -15,20 +15,6 @@ ms.assetid: 846e1f94-8a8c-42fc-a42c-fbd38e70d8cc
 caps.latest.revision: 22
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # () Operator (C# Reference)
 In addition to being used to specify the order of operations in an expression, parentheses are used to perform the following tasks:  

@@ -15,20 +15,6 @@ ms.assetid: 7d442d8e-400d-421f-b4d2-034bf82bcbdc
 caps.latest.revision: 25
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # || Operator (C# Reference)
 The conditional-OR operator (`||`) performs a logical-OR of its `bool` operands. If the first operand evaluates to `true`, the second operand isn't evaluated. If the first operand evaluates to `false`, the second operator determines whether the OR expression as a whole evaluates to `true` or `false`.  

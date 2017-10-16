@@ -16,20 +16,6 @@ ms.assetid: 5ac4feef-4b1a-4c61-aeb4-61d549e5dd42
 caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # throw (C# Reference)
 Signals the occurrence of an exception during program execution.  

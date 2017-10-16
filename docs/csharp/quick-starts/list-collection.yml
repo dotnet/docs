@@ -15,7 +15,7 @@ items:
 - title: Create lists
   durationInMinutes: 2
   content: |
-    Run the following code in the interactive window. To do that, type the following code block in the interactive window and click the **Run** button:
+    Run the following code in the interactive window. To do that, type the following code block in the interactive window (replace "<name>" with your name) and click the **Run** button:
 
     ```csharp
     var names = new List<string> { "<name>", "Ana", "Felipe" };
@@ -38,9 +38,9 @@ items:
 - title: Modify list contents
   durationInMinutes: 3
   content: |
-    The collection you created using the <xref:System.Collections.Generic.List%601> type. This type stores sequences of elements. You specify the type of the elements between the angle brackets.
+    The collection you created uses the <xref:System.Collections.Generic.List%601> type. This type stores sequences of elements. You specify the type of the elements between the angle brackets.
     
-    One important aspect of this <xref:System.Collections.Generic.List%601> type is that it can grow or shrink, enabling you to add or remove elements. Add this code below the code you've already written:
+    One important aspect of this <xref:System.Collections.Generic.List%601> type is that it can grow or shrink, enabling you to add or remove elements. Add the following code below the code you've already written:
 
     ```csharp
     Console.WriteLine();
@@ -55,14 +55,14 @@ items:
 
     You've added two more names to the end of the list. You've also removed one as well.
     
-    The <xref:System.Collections.Generic.List%601> enables you to reference individual items by **index** as well. You access items using the `[` and `]` tokens. Add this code to the bottom and try it:
+    The <xref:System.Collections.Generic.List%601> enables you to reference individual items by **index** as well. You access items using the `[` and `]` tokens. Add the following code below what you've already written and try it:
 
     ```csharp
-    Console.WriteLine($"My name is {names[0]}");
-    Console.WriteLine($"I've added {names[2]} and {names[3]} to the list");
+    Console.WriteLine($"My name is {names[0]}.");
+    Console.WriteLine($"I've added {names[2]} and {names[3]} to the list.");
     ```
 
-    You're not allowed to access past the end of the list. You can check how long the list is using the `<xref:System.Collections.Generic.List%601.Count%2A>` property:
+    You're not allowed to access past the end of the list. You can check how long the list is using the <xref:System.Collections.Generic.List%601.Count%2A> property. Add the following code to try it:
 
     ```csharp
     Console.WriteLine($"The list has {names.Count} people in it");
@@ -76,7 +76,7 @@ items:
 - title: Search and sort lists
   durationInMinutes: 5
   content: |
-    Our samples use relatively small lists, but your applications may often create lists with many more elements, sometimes numbering in the thousands. To find elements in these larger collections, you need to search the list for different items. The <xref:System.Collections.Generic.List%601.IndexOf%2A> method searches for an item and returns the index of the item. Try this to see how it works:
+    Our samples use relatively small lists, but your applications may often create lists with many more elements, sometimes numbering in the thousands. To find elements in these larger collections, you need to search the list for different items. The <xref:System.Collections.Generic.List%601.IndexOf%2A> method searches for an item and returns the index of the item. Try this to see how it works.  Add the following code below what you've written so far:
 
     ```csharp
     var index = names.IndexOf("Felipe");
@@ -89,7 +89,7 @@ items:
 
     You may not know if an item is in the list, so you should always check the index returned by <xref:System.Collections.Generic.List%601.IndexOf%2A>. If it is -1, the item was not found.
 
-    The items in your list can be sorted as well. The <xref:System.Collections.Generic.List%601.Sort%2A> method sorts all the items in the list in their normal order (alphabetically in the case of strings):
+    The items in your list can be sorted as well. The <xref:System.Collections.Generic.List%601.Sort%2A> method sorts all the items in the list in their normal order (alphabetically in the case of strings). Add this code and run again:
 
     ```csharp
     names.Sort();
@@ -108,7 +108,7 @@ items:
     You've been using the `string` type in lists so far. Let's make a <xref:System.Collections.Generic.List%601> using a different type. Let's build a set of numbers. Delete the code you wrote so far, and replace it with this:
 
     ```csharp
-    var fibonacciNumbers = new List<int> {1, 1,};
+    var fibonacciNumbers = new List<int> {1, 1};
     ```
 
     That creates a list of integers, and sets the first two integers to the value 1. These are the first two values of a *Fibonacci Sequence*, a sequence of numbers. Each next Fibonacci number is found by taking the sum of the previous two numbers. Add this code:
@@ -142,7 +142,7 @@ items:
     Did you come up with something like this?
 
     ```csharp
-    var fibonacciNumbers = new List<int> {1, 1,};
+    var fibonacciNumbers = new List<int> {1, 1};
 
     while (fibonacciNumbers.Count < 20)
     {

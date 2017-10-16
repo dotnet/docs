@@ -18,12 +18,13 @@ class.
 ## A simple list example.
 
 > [!NOTE]
-> If you are starting from the code you wrote in [dot.net](https://dot.net/), you will already have the code written in this section. Jump to [Modify list contents](#modify-list-contents).
+> If you're starting from the code you wrote in [dot.net](https://dot.net/), you already have the code written in this section. Jump to [Modify list contents](#modify-list-contents).
 
+This lesson assumes you've finished the online quick starts, and you've installed the [.NET Core SDK](http://dot.net/core) and [Visual Studio Code](https://code.visualstudio.com/). 
 
-Create a directory named **list-quickstart** and run `dotnet new console`.
+Create a directory named **list-quickstart**. Make that the current directory and run `dotnet new console`.
 
-Open **program.cs** in your favorite editor, and replace the existing code with the following:
+Open **Program.cs** in your favorite editor, and replace the existing code with the following:
 
 ```csharp
 using System;
@@ -126,43 +127,52 @@ Save the file and type `dotnet run` to try this latest version.
 Before you start the next section, let's move the current code into a separate method. That makes it easier to start working with a new example. Rename your `Main` method to `WorkingWithStrings` and write a new `Main` method that calls `WorkingWithStrings`. When you have finished, your code should look like this:
 
 ```csharp
-static void Main(string[] args)
+using System;
+using System.Collections.Generic;
+
+namespace list_quickstart
 {
-    WorkingWithStrings();
-}
-
-public static void WorkingWithStrings()
-{
-    var names = new List<string> { "<name>", "Ana", "Felipe" };
-    foreach (var name in names)
+    class Program
     {
-        Console.WriteLine($"Hello {name.ToUpper()}!");
-    }
+        static void Main(string[] args)
+        {
+            WorkingWithStrings();
+        }
 
-    Console.WriteLine();
-    names.Add("Maria");
-    names.Add("Bill");
-    names.Remove("Ana");
-    foreach (var name in names)
-    {
-        Console.WriteLine($"Hello {name.ToUpper()}!");
-    }
+        public static void WorkingWithStrings()
+        {
+            var names = new List<string> { "<name>", "Ana", "Felipe" };
+            foreach (var name in names)
+            {
+                Console.WriteLine($"Hello {name.ToUpper()}!");
+            }
 
-    Console.WriteLine($"My name is {names[0]}");
-    Console.WriteLine($"I've added {names[2]} and {names[3]} to the list");
+            Console.WriteLine();
+            names.Add("Maria");
+            names.Add("Bill");
+            names.Remove("Ana");
+            foreach (var name in names)
+            {
+                Console.WriteLine($"Hello {name.ToUpper()}!");
+            }
 
-    Console.WriteLine($"The list has {names.Count} people in it");
+            Console.WriteLine($"My name is {names[0]}");
+            Console.WriteLine($"I've added {names[2]} and {names[3]} to the list");
 
-    var index = names.IndexOf("Felipe");
-    Console.WriteLine($"The name {names[index]} is at index {index}");
+            Console.WriteLine($"The list has {names.Count} people in it");
 
-    var notFound = names.IndexOf("Not Found");
-    Console.WriteLine($"When an item is not found, IndexOf returns {notFound}");
+            var index = names.IndexOf("Felipe");
+            Console.WriteLine($"The name {names[index]} is at index {index}");
 
-    names.Sort();
-    foreach (var name in names)
-    {
-        Console.WriteLine($"Hello {name.ToUpper()}!");
+            var notFound = names.IndexOf("Not Found");
+            Console.WriteLine($"When an item is not found, IndexOf returns {notFound}");
+
+            names.Sort();
+            foreach (var name in names)
+            {
+                Console.WriteLine($"Hello {name.ToUpper()}!");
+            }
+        }
     }
 }
 ```

@@ -68,7 +68,7 @@ translation.priority.ht:
 
  `PrintOrderDetails("Gift Shop", 31, productName: "Red Mug");`
 
-- _starting with C# 7.2_, they're used in the correct position.
+- _starting with C# 7.2_, they're used in the correct position. In the example below, the parameter `orderNum` is in the correct position but isn't explicitly named.
 
  `PrintOrderDetails(sellerName: "Gift Shop", 31, productName: "Red Mug");`
   

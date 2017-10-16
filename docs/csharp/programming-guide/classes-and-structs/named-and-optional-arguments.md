@@ -74,9 +74,10 @@ translation.priority.ht:
   
  However, out-of-order named arguments are invalid if they're followed by positional arguments. The following statements cause a compiler error.
 
- `// PrintOrderDetails(productName: "Red Mug", 31, "Gift Shop");`
-
- `// PrintOrderDetails(31, sellerName: "Gift Shop", "Red Mug");`
+ ```csharp
+ // This generates CS1738: Named argument specifications must appear after all fixed arguments have been specified.
+ PrintOrderDetails(productName: "Red Mug", 31, "Gift Shop");
+ ```
   
 ## Example  
  The following code implements the examples from this section along with some additional ones.  

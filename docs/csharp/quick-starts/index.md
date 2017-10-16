@@ -1,10 +1,10 @@
 ---
 title: Quick Starts - C# Guide
-description: Learn C# in your browser
+description: Learn C# in your browser, and get started with your own development environment
 keywords: C#, Get Started, Lessons, Interactive
 author: billwagner
 ms.author: wiwagn
-ms.date: 09/18s/2017
+ms.date: 09/18/2017
 ms.topic: article
 ms.prod: .net
 ms.technology: devlang-csharp
@@ -42,5 +42,14 @@ different paths of code based on the values stored in variables. You'll learn th
 basics of control flow, which is the basics of how programs make decisions and choose
 different actions.
 
-This beginner lesson assumes that you have finished the [Hello World](hello-world.yml) and
+This beginning lesson assumes that you have finished the [Hello World](hello-world.yml) and
 [Numbers in C#](numbers-in-csharp.yml) lessons.
+
+## [List collection](list-collection.yml)
+
+The [List collection](list-collection.yml) lesson gives you
+a tour of the List collection type that stores sequences of data. You'll learn how to add and remove items, search for items, and remove items and sort the lists. You'll explore different kinds of lists.
+
+This beginning lesson assumes that you have finished the quick starts listed above.
+
+You can also try this lesson [using the own develoment environment on your machine](arrays-and-collections.md).

@@ -1,5 +1,5 @@
 ---
-title: Quick Start - Arrays and Collections - C# Guide
+title: Quick Start - Collections - C# Guide
 description: Learn C# by exploring the List collection in this quick start.
 keywords: C#, Get Started, tutorial, collections, List
 author: billwagner
@@ -10,15 +10,15 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ---
-# C# Quick start: Arrays and Collections #
+# C# Quick start: Collections #
 
-This tutorial provides an introduction of the C# language and the basics of the <xref:System.Collections.Generic.List%601>
+This tutorial provides an introduction to the C# language and the basics of the <xref:System.Collections.Generic.List%601>
 class.
 
 ## A simple list example.
 
 > [!NOTE]
-> If you are starting from the code you wrote in [dot.net](https://dot.net/) you will already have the code written in this section. Jump to [Modify list contents](#modify-list-contents).
+> If you are starting from the code you wrote in [dot.net](https://dot.net/), you will already have the code written in this section. Jump to [Modify list contents](#modify-list-contents).
 
 
 Create a directory named **list-quickstart** and run `dotnet new console`.
@@ -38,7 +38,7 @@ namespace list_quickstart
             var names = new List<string> { "<name>", "Ana", "Felipe" };
             foreach (var name in names)
             {
-            Console.WriteLine($"Hello {name.ToUpper()}!");
+                Console.WriteLine($"Hello {name.ToUpper()}!");
             }
         }
     }
@@ -49,7 +49,7 @@ Replace `<name>` with your name. Save **Program.cs**. Type `dotnet run` in your 
 
 You've just created a list of strings, added three names to that list, and printed out the names in all CAPS. You're using concepts that you've learned in earlier quick starts to loop through the list.
 
-Another new feature here is **interpolated strings**.  When you precede a `string` with the `$` character, you can embed C# code in the string declaration. The actual string replaces that C# code with the value it generates. In this example, it replaces the `{name.ToUpper()}` with each name, converted to capital letters, because you called the `ToUpper` method.
+The code to display names makes use of **interpolated strings**.  When you precede a `string` with the `$` character, you can embed C# code in the string declaration. The actual string replaces that C# code with the value it generates. In this example, it replaces the `{name.ToUpper()}` with each name, converted to capital letters, because you called the <xref:System.String.ToUpper%2A> method.
 
 Let's keep exploring.
     
@@ -72,14 +72,14 @@ foreach (var name in names)
 
 You've added two more names to the end of the list. You've also removed one as well. Save the file, and type `dotnet run` to try it.
     
-The <xref:System.Collections.Generic.List%601> enables you to reference individual items by **index** as well. C# uses 0 for the first index. Add this code directly below the code you just added and try it:
+The <xref:System.Collections.Generic.List%601> enables you to reference individual items by **index** as well. You place the index between `[` and `]` tokens following the list name. C# uses 0 for the first index. Add this code directly below the code you just added and try it:
 
 ```csharp
 Console.WriteLine($"My name is {names[0]}");
 Console.WriteLine($"I've added {names[2]} and {names[3]} to the list");
 ```
 
-It's not allowed to access past the end of the list. You can check how long the list is using the `<xref:System.Collections.Generic.List%601.Count%2A>` property. Add the following code at the end of the Main method:
+You cannot access an index beyond the end of the list. Remember that indices start at 0, so the largest valid index is one less than the number of items in the list. You can check how long the list is using the `<xref:System.Collections.Generic.List%601.Count%2A>` property. Add the following code at the end of the Main method:
 
 ```csharp
 Console.WriteLine($"The list has {names.Count} people in it");
@@ -87,15 +87,28 @@ Console.WriteLine($"The list has {names.Count} people in it");
 
 Save the file, and type `dotnet run` again to see the results.    
 
-## Search lists
-Our samples use relatively small lists, but in your applications you may often create lists with many more elements, sometimes numbering well over the thousands. To find elements in these larger collections, you need to search the list for different items. The <xref:System.Collections.Generic.List%601.IndexOf%2A> method searches for an item and returns the index of the item. Add this code to the bottom of your `Main` method:
+## Search and sort lists
+Our samples use relatively small lists, but your applications may often create lists with many more elements, sometimes numbering in the thousands. To find elements in these larger collections, you need to search the list for different items. The <xref:System.Collections.Generic.List%601.IndexOf%2A> method searches for an item and returns the index of the item. Add this code to the bottom of your `Main` method:
 
 ```csharp
 var index = names.IndexOf("Felipe");
-Console.WriteLine($"The name {names[index]} is at index {index}");
+if (index == -1)
+{
+    Console.WriteLine($"When an item is not found, IndexOf returns {index}");
+} else
+{
+    Console.WriteLine($"The name {names[index]} is at index {index}");
+}
 
-var notFound = names.IndexOf("Not Found");
-Console.WriteLine($"When an item is not found, IndexOf returns {notFound}");
+index = names.IndexOf("Not Found");
+if (index == -1)
+{
+    Console.WriteLine($"When an item is not found, IndexOf returns {index}");
+} else
+{
+    Console.WriteLine($"The name {names[index]} is at index {index}");
+    
+}
 ```
 
 The items in your list can be sorted as well. The <xref:System.Collections.Generic.List%601.Sort%2A> method sorts all the items in the list in their normal order (alphabetically in the case of strings). Add this code to the bottom of our `Main` method:
@@ -110,10 +123,49 @@ foreach (var name in names)
 
 Save the file and type `dotnet run` to try this latest version.
 
-Before you start the next section, let's move the current code into a separate method. That makes it easier to start working with a new example. Rename your `Main` method to `WorkingWithStrings` and write a new `Main` methdo that calls `WorkingWithStrings`. When you have finished, your code should look like this:
+Before you start the next section, let's move the current code into a separate method. That makes it easier to start working with a new example. Rename your `Main` method to `WorkingWithStrings` and write a new `Main` method that calls `WorkingWithStrings`. When you have finished, your code should look like this:
 
-[!code-csharp[WorkingWithStrings](../../../samples/csharp/list-quickstart/program.cs#WorkingWithStrings "Working with Strings")]
+```csharp
+static void Main(string[] args)
+{
+    WorkingWithStrings();
+}
 
+public static void WorkingWithStrings()
+{
+    var names = new List<string> { "<name>", "Ana", "Felipe" };
+    foreach (var name in names)
+    {
+        Console.WriteLine($"Hello {name.ToUpper()}!");
+    }
+
+    Console.WriteLine();
+    names.Add("Maria");
+    names.Add("Bill");
+    names.Remove("Ana");
+    foreach (var name in names)
+    {
+        Console.WriteLine($"Hello {name.ToUpper()}!");
+    }
+
+    Console.WriteLine($"My name is {names[0]}");
+    Console.WriteLine($"I've added {names[2]} and {names[3]} to the list");
+
+    Console.WriteLine($"The list has {names.Count} people in it");
+
+    var index = names.IndexOf("Felipe");
+    Console.WriteLine($"The name {names[index]} is at index {index}");
+
+    var notFound = names.IndexOf("Not Found");
+    Console.WriteLine($"When an item is not found, IndexOf returns {notFound}");
+
+    names.Sort();
+    foreach (var name in names)
+    {
+        Console.WriteLine($"Hello {name.ToUpper()}!");
+    }
+}
+```
 
 ## Lists of other types
 
@@ -122,7 +174,7 @@ You've been using the `string` type in lists so far. Let's make a <xref:System.C
 Add the following to the bottom of your new `Main` method:
 
 ```csharp
-var fibonacciNumbers = new List<int> {1, 1,};
+var fibonacciNumbers = new List<int> {1, 1};
 ```
 
 That creates a list of integers, and sets the first two integers to the value 1. These are the first two values of a *Fibonacci Sequence*, a sequence of numbers. Each next Fibonacci number is found by taking the sum of the previous two numbers. Add this code:
@@ -137,7 +189,7 @@ foreach(var item in fibonacciNumbers)
     Console.WriteLine(item);
 ```
 
-Save the file and type `dotnet run` to see the results.
+Save the file and type `dotnet run` to see the results. 
 
 > [!TIP]
 > To concentrate on just this section, you can comment out the code that calls `WorkingWithStrings();`. Just put two `/` characters in front of the call like this:  `// WorkingWithStrings();`. 
@@ -149,7 +201,9 @@ See if you can put together some of the lessons from this and earlier lessons. E
 
 You can see an example solution by [looking at the finished sample code on GitHub](https://github.com/dotnet/docs/tree/master/samples/csharp/list-quickstart/Program.cs)
 
-You've completed the list tutorial.
+With each iteration of the loop, you're taking the last two integers in the list, summing them, and adding that value to the list. The loop repeats until you've added 20 items to the list.
+
+Congratulations, you've completed the list tutorial.
 
 You can learn more about working with the `List` type in the
 [.NET Guide](../../standard/index.md) topic on [collections](../../standard/collections/index.md). You'll also learn about many other collection types.

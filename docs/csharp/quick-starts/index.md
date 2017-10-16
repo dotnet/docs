@@ -42,7 +42,7 @@ different paths of code based on the values stored in variables. You'll learn th
 basics of control flow, which is the basics of how programs make decisions and choose
 different actions.
 
-This beginner lesson assumes that you have finished the [Hello World](hello-world.yml) and
+This beginning lesson assumes that you have finished the [Hello World](hello-world.yml) and
 [Numbers in C#](numbers-in-csharp.yml) lessons.
 
 ## [List collection](list-collection.yml)
@@ -50,6 +50,6 @@ This beginner lesson assumes that you have finished the [Hello World](hello-worl
 The [List collection](list-collection.yml) lesson gives you
 a tour of the List collection type that stores sequences of data. You'll learn how to add and remove items, search for items, and remove items and sort the lists. You'll explore different kinds of lists.
 
-This beginner lesson assumes that you have finished the quick starts listed above.
+This beginning lesson assumes that you have finished the quick starts listed above.
 
-You can also try this lesson [using your own develoment environment on your machine](arrays-and-collections.md).
+You can also try this lesson [using the own develoment environment on your machine](arrays-and-collections.md).

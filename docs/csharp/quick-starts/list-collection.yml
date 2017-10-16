@@ -28,7 +28,7 @@ items:
     You've just created a list of strings, added three names to that list, and printed out the names in all CAPS. You're using concepts
     that you've learned in earlier quick starts to loop through the list.
 
-    Another new feature here is **interpolated strings**.  When you precede a `string` with the `$` character, you can embed C# code in the string declaration. The actual string replaces that C# code with the value it generates. In this example, it replaces the `{name.ToUpper()}` with each name, converted to capital letters, because you called the `ToUpper` method.
+    The code to display names makes use of **interpolated strings**.  When you precede a `string` with the `$` character, you can embed C# code in the string declaration. The actual string replaces that C# code with the value it generates. In this example, it replaces the `{name.ToUpper()}` with each name, converted to capital letters, because you called the <xref:System.String.ToUpper%2A> method.
 
     Let's keep exploring.
     
@@ -55,36 +55,39 @@ items:
 
     You've added two more names to the end of the list. You've also removed one as well.
     
-    The <xref:System.Collections.Generic.List%601> enables you to reference individual items by **index** as well. C# uses 0 for the first index. Add this code to the bottom and try it:
+    The <xref:System.Collections.Generic.List%601> enables you to reference individual items by **index** as well. You access items using the `[` and `]` tokens. Add this code to the bottom and try it:
 
     ```csharp
     Console.WriteLine($"My name is {names[0]}");
     Console.WriteLine($"I've added {names[2]} and {names[3]} to the list");
     ```
 
-    It's not allowed to access past the end of the list. You can check how long the list is using the `<xref:System.Collections.Generic.List%601.Count%2A>` property:
+    You're not allowed to access past the end of the list. You can check how long the list is using the `<xref:System.Collections.Generic.List%601.Count%2A>` property:
 
     ```csharp
     Console.WriteLine($"The list has {names.Count} people in it");
     ```
     
-    Click **Run** again to see the results.
+    Click **Run** again to see the results. In C#, indices start at 0, so the largest valid index is one less than the number of items in the list.
 
     > [!NOTE]
     > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
 
-- title: Search lists
+- title: Search and sort lists
   durationInMinutes: 5
   content: |
-    Our samples use relatively small lists, but in your applications you may often create lists with many more elements, sometimes numbering well over the thousands. To find elements in these larger collections, you need to search the list for different items. The <xref:System.Collections.Generic.List%601.IndexOf%2A> method searches for an item and returns the index of the item. Try this to see how it works:
+    Our samples use relatively small lists, but your applications may often create lists with many more elements, sometimes numbering in the thousands. To find elements in these larger collections, you need to search the list for different items. The <xref:System.Collections.Generic.List%601.IndexOf%2A> method searches for an item and returns the index of the item. Try this to see how it works:
 
     ```csharp
     var index = names.IndexOf("Felipe");
-    Console.WriteLine($"The name {names[index]} is at index {index}");
+    if (index != -1)
+      Console.WriteLine($"The name {names[index]} is at index {index}");
 
     var notFound = names.IndexOf("Not Found");
-    Console.WriteLine($"When an item is not found, IndexOf returns {notFound}");
+      Console.WriteLine($"When an item is not found, IndexOf returns {notFound}");
     ```
+
+    You may not know if an item is in the list, so you should always check the index returned by <xref:System.Collections.Generic.List%601.IndexOf%2A>. If it is -1, the item was not found.
 
     The items in your list can be sorted as well. The <xref:System.Collections.Generic.List%601.Sort%2A> method sorts all the items in the list in their normal order (alphabetically in the case of strings):
 
@@ -151,6 +154,8 @@ items:
     foreach(var item in fibonacciNumbers)
         Console.WriteLine(item);
     ```
+
+    With each iteration of the loop, you're taking the last two integers in the list, summing them, and adding that value to the list. The loop repeats until you've added 20 items to the list.
 
     > [!NOTE]
     > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).

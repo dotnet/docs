@@ -8,9 +8,9 @@ namespace list_quickstart
 #region WorkingWithStrings
         static void Main(string[] args)
         {
-            //WorkingWithStrings();
+            WorkingWithStrings();
 
-            var fibonacciNumbers = new List<int> {1, 1,};
+            var fibonacciNumbers = new List<int> {1, 1};
 
             fibonacciNumbers.Add(previous + previous2);
 
@@ -23,7 +23,6 @@ namespace list_quickstart
             }
             foreach(var item in fibonacciNumbers)
                 Console.WriteLine(item);
-
         }
 
         public static void WorkingWithStrings()
@@ -31,7 +30,7 @@ namespace list_quickstart
             var names = new List<string> { "<name>", "Ana", "Felipe" };
             foreach (var name in names)
             {
-            Console.WriteLine($"Hello {name.ToUpper()}!");
+                Console.WriteLine($"Hello {name.ToUpper()}!");
             }
 
             Console.WriteLine();

@@ -1,7 +1,7 @@
 ---
 title: "Class does not support Automation or does not support expected interface"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""

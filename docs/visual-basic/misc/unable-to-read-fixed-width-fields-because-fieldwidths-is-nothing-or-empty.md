@@ -1,7 +1,7 @@
 ---
 title: "Unable to read fixed width fields because FieldWidths is Nothing or empty"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 
 

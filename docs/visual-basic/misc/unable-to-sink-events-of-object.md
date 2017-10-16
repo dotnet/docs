@@ -1,7 +1,7 @@
 ---
 title: "Unable to sink events of object because the object is already firing events to the maximum number of event receivers it supports"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 
 

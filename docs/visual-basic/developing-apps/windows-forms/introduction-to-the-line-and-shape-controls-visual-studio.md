@@ -1,7 +1,7 @@
 ---
 title: "Introduction to the Line and Shape Controls (Visual Studio)"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 
 ms.suite: ""

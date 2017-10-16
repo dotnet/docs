@@ -1,7 +1,7 @@
 ---
 title: "How to: Print a Form by Using the PrintForm Component (Visual Basic)"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 
 ms.suite: ""

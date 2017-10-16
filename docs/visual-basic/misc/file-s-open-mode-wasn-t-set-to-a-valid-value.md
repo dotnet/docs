@@ -1,7 +1,7 @@
 ---
 title: "File&#39;s open mode wasn&#39;t set to a valid value"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 
 

@@ -1,7 +1,7 @@
 ---
 title: "No method &#39;&lt;methodname&gt;&#39; can accept an argument of type &#39;&lt;typename&gt;&#39; for parameter &#39;&lt;parametername&gt;&#39;"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 
 

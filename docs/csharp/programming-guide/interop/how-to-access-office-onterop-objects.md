@@ -1,7 +1,7 @@
 ---
 title: "How to: Access Office Interop Objects by Using Visual C# Features (C# Programming Guide)"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 
 

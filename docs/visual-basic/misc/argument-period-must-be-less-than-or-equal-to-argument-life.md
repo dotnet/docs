@@ -1,7 +1,7 @@
 ---
 title: "Argument &#39;Period&#39; must be less than or equal to argument &#39;Life&#39;"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Method &#39;&lt;methodname&gt;&#39; cannot be called with &lt;number&gt; arguments"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 
 

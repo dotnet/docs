@@ -1,7 +1,7 @@
 ---
 title: "Leading &#39;.&#39; or &#39;!&#39; can only appear inside a &#39;With&#39; statement"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""

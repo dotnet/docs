@@ -1,7 +1,7 @@
 ---
 title: "Lambda Expressions (C# Programming Guide)"
 
-ms.date: "2017-03-03"
+ms.date: 03/03/2017
 ms.prod: .net
 
 

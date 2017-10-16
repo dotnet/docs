@@ -1,7 +1,7 @@
 ---
 title: "Expression is a value and therefore cannot be the target of an assignment"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""

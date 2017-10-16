@@ -1,6 +1,6 @@
 ---
 title: "nameof  (C# Reference)"
-ms.date: "2017-06-16"
+ms.date: 06/16/2017
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"

@@ -1,7 +1,7 @@
 ---
 title: "&#39;As Any&#39; is not supported in &#39;Declare&#39; statements"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 
 ms.suite: ""

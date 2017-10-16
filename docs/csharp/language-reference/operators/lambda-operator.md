@@ -1,6 +1,6 @@
 ---
 title: "=&gt; Operator (C# Reference)"
-ms.date: "2017-10-02"
+ms.date: 10/02/2017
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"

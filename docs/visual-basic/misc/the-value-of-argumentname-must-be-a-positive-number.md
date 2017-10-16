@@ -1,7 +1,7 @@
 ---
 title: "The value of &lt;argumentname&gt; must be a positive number"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 
 

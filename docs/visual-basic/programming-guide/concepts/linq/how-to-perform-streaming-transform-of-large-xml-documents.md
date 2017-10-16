@@ -1,7 +1,7 @@
 ---
 title: "How to: Perform Streaming Transform of Large XML Documents (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""

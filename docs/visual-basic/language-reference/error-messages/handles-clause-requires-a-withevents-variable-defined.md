@@ -1,7 +1,7 @@
 ---
 title: "Handles clause requires a WithEvents variable defined in the containing type or one of its base types"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""

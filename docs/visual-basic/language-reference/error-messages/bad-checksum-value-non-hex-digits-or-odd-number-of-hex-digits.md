@@ -1,7 +1,7 @@
 ---
 title: "Bad checksum value, non hex digits or odd number of hex digits"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""

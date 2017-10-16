@@ -1,7 +1,7 @@
 ---
 title: "SByte Data Type (Visual Basic)"
 
-ms.date: "2017-04-20"
+ms.date: 04/20/2017
 ms.prod: .net
 
 ms.suite: ""

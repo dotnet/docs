@@ -1,7 +1,7 @@
 ---
 title: "Argument &lt;argumentname&gt; must be greater than or equal to zero"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 
 

@@ -1,7 +1,7 @@
 ---
 title: "&#39;&lt;elementname&gt;&#39; is obsolete (Visual Basic Warning)"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""

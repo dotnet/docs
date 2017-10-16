@@ -1,7 +1,7 @@
 ---
 title: "This single-instance application could not connect to the original instance"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 
 

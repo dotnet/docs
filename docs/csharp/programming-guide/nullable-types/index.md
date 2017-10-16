@@ -1,7 +1,7 @@
 ---
 title: "Nullable Types (C# Programming Guide)"
 
-ms.date: "2017-05-15"
+ms.date: 05/15/2017
 ms.prod: .net
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Attribute &#39;StructLayout&#39; can not be applied to a generic type"
 
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 
 

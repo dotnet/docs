@@ -1,6 +1,6 @@
 ---
 title: "using static Directive (C# Reference)"
-ms.date: "2017-03-10"
+ms.date: 03/10/2017
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"

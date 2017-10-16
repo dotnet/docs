@@ -1,7 +1,7 @@
 ---
 title: "How to: Create a Copy of a File in a Different Directory in Visual Basic"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""

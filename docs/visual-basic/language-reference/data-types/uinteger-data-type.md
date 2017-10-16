@@ -1,7 +1,7 @@
 ---
 title: "UInteger Data Type"
 
-ms.date: "2017-14-20"
+ms.date: 04/20/2017
 ms.prod: .net
 
 ms.suite: ""

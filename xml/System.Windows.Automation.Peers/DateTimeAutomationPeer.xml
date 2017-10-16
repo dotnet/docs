@@ -256,6 +256,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetLiveSettingCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Automation.AutomationLiveSetting GetLiveSettingCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Automation.AutomationLiveSetting GetLiveSettingCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DateTimeAutomationPeer.GetLiveSettingCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationLiveSetting</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetLocalizedControlTypeCore">
       <MemberSignature Language="C#" Value="protected override string GetLocalizedControlTypeCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetLocalizedControlTypeCore() cil managed" />

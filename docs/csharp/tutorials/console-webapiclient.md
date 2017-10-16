@@ -49,12 +49,12 @@ creates the starter files for a basic "Hello World" application.
 
 Before you start making modifications, let’s go through the steps to run
 the simple Hello World application. After creating the application, type
-`dotnet restore` at the command prompt. This command runs the NuGet
+`dotnet restore` ([see note](#dotnet-restore-note)) at the command prompt. This command runs the NuGet
 package restore process. NuGet is a .NET package manager. This command
 downloads any of the missing dependencies for your project. As this is a
 new project, none of the dependencies are in place, so the first run will
 download the .NET Core framework. After this initial step, you will only
-need to run `dotnet restore` when you add new dependent packages, or update
+need to run `dotnet restore` ([see note](#dotnet-restore-note)) when you add new dependent packages, or update
 the versions of any of your dependencies.  
 
 After restoring packages, you run `dotnet build`. This executes the build
@@ -88,7 +88,7 @@ that you add. However, it is important to make sure that the versions
 of all packages match, and that they also match the version of the .NET
 Core Application framework.
 
-After you've made these changes, you should run `dotnet restore` again so
+After you've made these changes, you should run `dotnet restore` ([see note](#dotnet-restore-note)) again so
 that the package is installed on your system.
 
 ## Making Web Requests
@@ -285,7 +285,7 @@ that library to your C# project file as a dependency. Add the following line to 
 <PackageReference Include="System.Runtime.Serialization.Primitives" Version="4.3.0" />
 ```
 
-After you save the file, run `dotnet restore` to retrieve this package.
+After you save the file, run `dotnet restore` ([see note](#dotnet-restore-note)) to retrieve this package.
 
 Next, open the `repo.cs` file. Let's change the name to use Pascal Case, and fully spell out the name
 `Repository`. We still want to map JSON 'repo' nodes to this type, so you'll need to add the 
@@ -493,3 +493,5 @@ This tutorial showed you how to make web requests, parse the result, and display
 those results. You've also added new packages as dependencies in your project. You've seen some of
 the features of the C# language that support object-oriented techniques.
 
+<a name="dotnet-restore-note"></a>
+[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]

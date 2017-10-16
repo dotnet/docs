@@ -2,3 +2,5 @@
 ## [Hello world](hello-world.yml)
 ## [Numbers in C#](numbers-in-csharp.yml)
 ## [Branches and loops](branches-and-loops.yml)
+## [List collections](list-collection.yml)
+## [Introduction to classes](introduction-to-classes.md)

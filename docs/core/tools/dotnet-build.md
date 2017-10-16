@@ -38,6 +38,8 @@ If the project has third-party dependencies, such as libraries from NuGet, they'
 
 Building requires the *project.assets.json* file, which lists the dependencies of your application. The file is created when [`dotnet restore`](dotnet-restore.md) is executed. Without the assets file in place, the tooling cannot resolve reference assemblies, which results in errors. With .NET Core 1.x SDK, you needed to explicitily run the `dotnet restore` before running `dotnet build`. Starting with .NET Core 2.0 SDK, `dotnet restore` runs implicitily when you run `dotnet build`. If you want to disable implicit restore when running the build command, you can pass the `--no-restore` option.
 
+[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
+
 `dotnet build` uses MSBuild to build the project; thus, it supports both parallel and incremental builds. Refer to [Incremental Builds](/visualstudio/msbuild/incremental-builds) for more information.
 
 In addition to its options, the `dotnet build` command accepts MSBuild options, such as `/p` for setting properties or `/l` to define a logger. Learn more about these options in the [MSBuild Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference). 

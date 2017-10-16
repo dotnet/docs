@@ -1,7 +1,6 @@
 ---
 title: Quick Starts - Introduction to Classes - C# Guide
 description: Create your first C# program and explore object oriented concepts
-keywords: C#, Get Started, Lessons, Classes, Object Oriented Programming
 author: billwagner
 ms.author: wiwagn
 ms.date: 10/11/2017
@@ -12,11 +11,11 @@ ms.devlang: csharp
 ---
 # Introduction to classes
 
-This lesson assumes that you've installed [.NET Core](http://dot.net/core) and [Visual Studio Code](https://code.visualstudio.com/), or [Visual Studio](https://www.visualstudio.com/) on Mac or Windows.
+This lesson assumes that you've installed [.NET Core SDK](http://dot.net/core), and an editor of your choice. If you don't have one, try [Visual Studio Code](https://code.visualstudio.com/), or [Visual Studio](https://www.visualstudio.com/) on Mac or Windows.
 
 ## Create your application
 
-Create a directory named **classes**. You'll build your application there. Change to that directory and type `dotnet new console`. This command creates your application. Open **Program.cs**. It should look like this:
+Using a terminal window, create a directory named **classes**. You'll build your application there. Change to that directory and type `dotnet new console` in the console window. This command creates your application. Open **Program.cs**. It should look like this:
 
 ```csharp
 using System;

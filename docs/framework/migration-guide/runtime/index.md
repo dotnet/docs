@@ -1,4 +1,4 @@
----
+--
 title: "Runtime Changes in the .NET Framework"
 ms.date: "06/14/2017"
 ms.prod: ".net-framework"
@@ -13,7 +13,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ---
 
-# "Runtime Changes in the .NET Framework"
+# Runtime Changes in the .NET Framework
 
 [!include[introduction](../../../../includes/migration-guide/runtime/introduction.md)]
 ## Usage

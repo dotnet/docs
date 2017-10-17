@@ -16,7 +16,7 @@ You may need the .NET Framework to run an app on Windows 10. You can use the fol
 
 The .NET Framework 4.7.1 is included with the [Windows 10 Fall Creators Update](https://www.microsoft.com/software-download/windows10).
 
-If you're on an earlier version of Windows 10, you need to upgrade to [Windows 10 Fall Creators Update](https://www.microsoft.com/software-download/windows10) to get the .NET Framework 4.7.1.
+If you're on the Windows 10 Creators Update or Windows 10 Anniversary Update, you can install the .NET Framework 4.7.1 separately. If you're on even earlier version of Windows 10, you need to upgrade to one of the supported Windows 10 versions to get the .NET Framework 4.7.1. For more information, see [Install the .NET Framework for developers](guide-for-developers.md).
 
 The .NET Framework 4.7.1 supports apps built for .NET Framework 4.0 or later. Other versions of the .NET Framework are available from the [Download .NET Framework](https://www.microsoft.com/net/download/framework) webpage.
 

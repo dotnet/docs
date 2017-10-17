@@ -19,7 +19,9 @@
  This class allows you to check whether a file exists and to open it. The <xref:System.Windows.Forms.OpenFileDialog.ShowReadOnly%2A> property determines whether a read-only check box appears in the dialog box. The <xref:System.Windows.Forms.OpenFileDialog.ReadOnlyChecked%2A> property indicates whether the read-only check box is checked.  
   
  Most of the core functionality for this class is found in the <xref:System.Windows.Forms.FileDialog> class.  
-  
+
+On a right-to-left operating system, setting the containing form's <xref:System.Windows.Forms.Control.RightToLeft> property to <xref:System.Windows.Forms.RightToLeft.Yes?displayProperty=nameWithType> localizes the dialog's **File Name**, **Open**, and **Cancel** buttons. If the property is not set to <xref:System.Windows.Forms.RightToLeft.Yes?displayProperty=nameWithType>, English text is used instead.  
+
  If you want to give the user the ability to select a folder instead of a file, use <xref:System.Windows.Forms.FolderBrowserDialog> instead.  
   
    

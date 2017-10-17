@@ -6,6 +6,7 @@ ms.author: mairaw
 keywords: .NET Framework, Install
 ms.date: 10/16/2017
 ms.topic: article
+ms.custom: "updateeachrelease"
 ms.prod: .net-framework
 ---
 # Install the .NET Framework on Windows 10

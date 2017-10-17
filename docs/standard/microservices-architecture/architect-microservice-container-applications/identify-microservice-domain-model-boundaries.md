@@ -9,7 +9,7 @@ ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.topic: article
 ---
-# Identifying domain-model boundaries for each microservice
+# Identify domain-model boundaries for each microservice
 
 The goal when identifying model boundaries and size for each microservice is not to get to the most granular separation possible, although you should tend toward small microservices if possible. Instead, your goal should be to get to the most meaningful separation guided by your domain knowledge. The emphasis is not on the size, but instead on business capabilities. In addition, if there is clear cohesion needed for a certain area of the application based on a high number of dependencies, that indicates the need for a single microservice, too. Cohesion is a way to identify how to break apart or group together microservices. Ultimately, while you gain more knowledge about the domain, you should adapt the size of your microservice, iteratively. Finding the right size is not a one-shot process.
 

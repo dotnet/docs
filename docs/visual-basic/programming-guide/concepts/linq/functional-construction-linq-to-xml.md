@@ -1,7 +1,7 @@
 ---
 title: "Functional Construction (LINQ to XML) (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -13,12 +13,6 @@ ms.assetid: feac4273-39ab-43ae-bab7-4059c807a785
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Functional Construction (LINQ to XML) (Visual Basic)
 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] provides a powerful way to create XML elements called *functional construction*. Functional construction is the ability to create an XML tree in a single statement.  

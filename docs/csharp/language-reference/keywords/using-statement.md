@@ -1,6 +1,6 @@
 ---
 title: "using Statement (C# Reference)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -11,20 +11,6 @@ ms.assetid: afc355e6-f0b9-4240-94dd-0d93f17d9fc3
 caps.latest.revision: 31
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # using Statement (C# Reference)
 Provides a convenient syntax that ensures the correct use of <xref:System.IDisposable> objects.  

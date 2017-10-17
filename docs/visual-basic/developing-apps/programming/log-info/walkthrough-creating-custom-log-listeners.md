@@ -1,13 +1,12 @@
 ---
 title: "Creating Custom Log Listeners (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "custom log listeners"
@@ -16,21 +15,6 @@ ms.assetid: 0e019115-4b25-4820-afb1-af8c6e391698
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Walkthrough: Creating Custom Log Listeners (Visual Basic)
 This walkthrough demonstrates how to create a custom log listener and configure it to listen to the output of the `My.Application.Log` object.  

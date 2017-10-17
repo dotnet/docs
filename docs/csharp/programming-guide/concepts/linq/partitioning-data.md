@@ -1,24 +1,17 @@
 ---
 title: "Partitioning Data (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 ms.assetid: 2a5c507b-fe22-443c-a768-dec7f9ec568d
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Partitioning Data (C#)
 Partitioning in LINQ refers to the operation of dividing an input sequence into two sections, without rearranging the elements, and then returning one of the sections.  

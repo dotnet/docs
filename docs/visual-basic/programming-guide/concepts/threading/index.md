@@ -1,7 +1,7 @@
 ---
 title: "Threading (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -13,12 +13,6 @@ ms.assetid: 704bb04b-ff23-471d-ab12-3cec1c2bca59
 caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Threading (Visual Basic)
 Threading enables your Visual Basic program to perform concurrent processing so that you can do more than one operation at a time. For example, you can use threading to monitor input from the user, perform background tasks, and handle simultaneous streams of input.  

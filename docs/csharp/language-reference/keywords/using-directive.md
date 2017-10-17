@@ -1,6 +1,6 @@
 ---
 title: "using Directive (C# Reference)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -11,20 +11,6 @@ ms.assetid: b42b8e61-5e7e-439c-bb71-370094b44ae8
 caps.latest.revision: 31
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # using Directive (C# Reference)
 The `using` directive has three uses:  

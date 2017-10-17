@@ -24,10 +24,10 @@ ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Apply Multiple Transforms to an Object
-This example shows how to use a              <xref:System.Windows.Media.TransformGroup> to group two or more              <xref:System.Windows.Media.Transform> objects into a single composite              <xref:System.Windows.Media.Transform>.  
+This example shows how to use a <xref:System.Windows.Media.TransformGroup> to group two or more <xref:System.Windows.Media.Transform> objects into a single composite <xref:System.Windows.Media.Transform>.  
   
 ## Example  
- The following example uses a                      <xref:System.Windows.Media.TransformGroup> to apply a                      <xref:System.Windows.Media.ScaleTransform> and a                      <xref:System.Windows.Media.RotateTransform> to a                      <xref:System.Windows.Controls.Button>.  
+ The following example uses a <xref:System.Windows.Media.TransformGroup> to apply a <xref:System.Windows.Media.ScaleTransform> and a <xref:System.Windows.Media.RotateTransform> to a <xref:System.Windows.Controls.Button>.  
   
  [!code-xaml[Transforms_snip#MultipleTransformExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Transforms_snip/CS/MultipleTransformExample.xaml#multipletransformexamplewholepage)]  
   

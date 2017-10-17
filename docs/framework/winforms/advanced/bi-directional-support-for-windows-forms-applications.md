@@ -1,13 +1,9 @@
 ---
 title: "Bi-Directional Support for Windows Forms Applications"
-ms.custom: ""
-ms.date: "03/30/2017"
+ms.date: "09/30/2017"
 ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "dotnet-winforms"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "globalization [Windows Forms], bi-directional support in Windows"
@@ -15,10 +11,8 @@ helpviewer_keywords:
   - "localization [Windows Forms], bi-directional support in Windows"
   - "bi-directional language support, Windows applications"
   - "Windows Forms, bi-directional support"
-ms.assetid: 7b622fa4-f390-4e4d-b624-83a1917cccf2
-caps.latest.revision: 20
-author: dotnet-bot
-ms.author: dotnetcontent
+author: rpetrusha
+ms.author: ronpet
 manager: "wpickett"
 ---
 # Bi-Directional Support for Windows Forms Applications
@@ -59,7 +53,7 @@ You can use [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] to create Wind
 |<xref:System.Windows.Forms.MonthCalendar>|Not affected; depends on the language of the operating system|Mirrors the control|Yes|  
 |<xref:System.Windows.Forms.NotifyIcon>|Not supported|Not supported|No|  
 |<xref:System.Windows.Forms.NumericUpDown>|Up and down buttons are left-aligned|No effect|No|  
-|<xref:System.Windows.Forms.OpenFileDialog>|Not affected; depends on the language of the operating system|No effect|No|  
+|<xref:System.Windows.Forms.OpenFileDialog>|On right-to-left operating systems, setting the containing form's <xref:System.Windows.Forms.Control.RightToLeft> property to <xref:System.Windows.Forms.RightToLeft.Yes?displayProperty=nameWithType> localizes the dialog |No effect|No|  
 |<xref:System.Windows.Forms.PageSetupDialog>|Not affected; depends on the language of the operating system|No effect|No|  
 |<xref:System.Windows.Forms.Panel>|Child controls may inherit this property|Use <xref:System.Windows.Forms.TableLayoutPanel> within the control for right to left support|Yes|  
 |<xref:System.Windows.Forms.PictureBox>|Not supported|No effect|No|  

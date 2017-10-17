@@ -1,7 +1,7 @@
 ---
 title: "Sample XML File: Multiple Purchase Orders (LINQ to XML)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -13,12 +13,6 @@ ms.assetid: 08e148ff-4070-4bb4-b089-306f4a9a7641
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Sample XML File: Multiple Purchase Orders (LINQ to XML)
 The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] documentation. This file contains several purchase orders.  

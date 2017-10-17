@@ -81,7 +81,7 @@ Add the `Library` project to the `FSNetCore` solution using the `dotnet sln add`
 dotnet sln add src/Library/Library.fsproj
 ```
 
-Restore the NuGet dependencies, `dotnet restore` and run `dotnet build` to build the project.
+Restore the NuGet dependencies, `dotnet restore` ([see note](#dotnet-restore-note)) and run `dotnet build` to build the project.
 
 ### Writing a Console Application which Consumes the Class Library
 
@@ -134,7 +134,7 @@ Add the `App` project to the `FSNetCore` solution using the `dotnet sln add` com
 dotnet sln add src/App/App.fsproj
 ```
 
-Restore the NuGet dependencies, `dotnet restore` and run `dotnet build` to build the project.
+Restore the NuGet dependencies, `dotnet restore` ([see note](#dotnet-restore-note)) and run `dotnet build` to build the project.
 
 Change directory to the `src/App` console project and run the project passing `Hello World` as arguments.
 
@@ -151,3 +151,5 @@ Nice command-line arguments! Here's what JSON.NET has to say about them:
 I used to be Hello but now I'm ""Hello"" thanks to JSON.NET!
 I used to be World but now I'm ""World"" thanks to JSON.NET!
 ```
+<a name="dotnet-restore-note"></a>
+[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]

@@ -1,13 +1,12 @@
 ---
 title: "&lt;paramref&gt; (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "paramref XML tag"
@@ -16,21 +15,6 @@ ms.assetid: 8979d53b-beb1-41b7-b41e-6bbea1c17a03
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # &lt;paramref&gt; (Visual Basic)
 Formats a word as a parameter.  

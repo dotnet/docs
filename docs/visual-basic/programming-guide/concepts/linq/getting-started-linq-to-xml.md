@@ -1,7 +1,7 @@
 ---
 title: "Getting Started (LINQ to XML)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -13,12 +13,6 @@ ms.assetid: c3a9062d-9d51-4a8e-bac6-071d16a7d9ea
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Getting Started (LINQ to XML)
 The following topics introduce LINQ to XML.  

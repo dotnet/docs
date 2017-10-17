@@ -22,7 +22,7 @@ ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Seek a Storyboard
-The following example shows how to use the              <xref:System.Windows.Media.Animation.Storyboard.Seek%2A> method of a              <xref:System.Windows.Media.Animation.Storyboard> to jump to any position in a storyboard animation.  
+The following example shows how to use the <xref:System.Windows.Media.Animation.Storyboard.Seek%2A> method of a <xref:System.Windows.Media.Animation.Storyboard> to jump to any position in a storyboard animation.  
   
 ## Example  
  Below is the XAML markup for the sample.  

@@ -20,14 +20,14 @@ ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Use System Fonts Keys
-System resources expose a number of system metrics as resources to help developers create visuals that are consistent with system settings.              <xref:System.Windows.SystemFonts> is a class that contains both system font values and system font resources that bind to the values—for example,              <xref:System.Windows.SystemFonts.CaptionFontFamily%2A> and              <xref:System.Windows.SystemFonts.CaptionFontFamilyKey%2A>.  
+System resources expose a number of system metrics as resources to help developers create visuals that are consistent with system settings. <xref:System.Windows.SystemFonts> is a class that contains both system font values and system font resources that bind to the values—for example, <xref:System.Windows.SystemFonts.CaptionFontFamily%2A> and <xref:System.Windows.SystemFonts.CaptionFontFamilyKey%2A>.  
   
  System font metrics can be used as either static or dynamic resources. Use a dynamic resource if you want the font metric to update automatically while the application runs; otherwise use a static resource.  
   
 > [!NOTE]
->  Dynamic resources have the keyword                  *Key* appended to the property name.  
+>  Dynamic resources have the keyword *Key* appended to the property name.  
   
- The following example shows how to access and use system font dynamic resources to style or customize a button. This              [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] example creates a button style that assigns              <xref:System.Windows.SystemFonts> values to a button.  
+ The following example shows how to access and use system font dynamic resources to style or customize a button. This [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] example creates a button style that assigns <xref:System.Windows.SystemFonts> values to a button.  
   
 ## Example  
  [!code-xaml[SystemRes_snip#FontDynamicResources](../../../../samples/snippets/csharp/VS_Snippets_Wpf/SystemRes_snip/CSharp/MyApp.xaml#fontdynamicresources)]  

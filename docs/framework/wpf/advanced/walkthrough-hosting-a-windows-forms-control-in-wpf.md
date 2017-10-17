@@ -21,11 +21,11 @@ ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Walkthrough: Hosting a Windows Forms Control in WPF
-[!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] provides many controls with a rich feature set. However, you may sometimes want to use              [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] controls on your              [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] pages. For example, you may have a substantial investment in existing              [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] controls, or you may have a              [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] control that provides unique functionality.  
+[!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] provides many controls with a rich feature set. However, you may sometimes want to use [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] controls on your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] pages. For example, you may have a substantial investment in existing [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] controls, or you may have a [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] control that provides unique functionality.  
   
- This walkthrough shows you how to host a              [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)]<xref:System.Windows.Forms.MaskedTextBox?displayProperty=nameWithType> control on a              [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] page by using code.  
+ This walkthrough shows you how to host a [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)]<xref:System.Windows.Forms.MaskedTextBox?displayProperty=nameWithType> control on a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] page by using code.  
   
- For a complete code listing of the tasks shown in this walkthrough, see              [Hosting a Windows Forms Control in WPF Sample](http://go.microsoft.com/fwlink/?LinkID=160057).  
+ For a complete code listing of the tasks shown in this walkthrough, see [Hosting a Windows Forms Control in WPF Sample](http://go.microsoft.com/fwlink/?LinkID=160057).  
   
 ## Prerequisites  
  You need the following components to complete this walkthrough:  
@@ -36,7 +36,7 @@ manager: "wpickett"
   
 #### To host the MaskedTextBox control  
   
-1.  Create a WPF Application project named                                  `HostingWfInWpf`.  
+1.  Create a WPF Application project named `HostingWfInWpf`.  
   
 2.  Add references to the following assemblies.  
   
@@ -44,24 +44,24 @@ manager: "wpickett"
   
     -   System.Windows.Forms  
   
-3.  Open MainWindow.xaml in the                                  [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)].  
+3.  Open MainWindow.xaml in the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)].  
   
-4.  Name the                                  <xref:System.Windows.Controls.Grid> element                                  `grid1`.  
+4.  Name the <xref:System.Windows.Controls.Grid> element `grid1`.  
   
      [!code-xaml[HostingWfInWPF#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/HostingWfInWPF/CSharp/HostingWfInWPF/Window1.xaml#1)]  
   
-5.  In Design view or XAML view, select the                                  <xref:System.Windows.Window> element.  
+5.  In Design view or XAML view, select the <xref:System.Windows.Window> element.  
   
-6.  In the Properties window, click the                                  **Events** tab.  
+6.  In the Properties window, click the **Events** tab.  
   
-7.  Double-click the                                  <xref:System.Windows.FrameworkElement.Loaded> event.  
+7.  Double-click the <xref:System.Windows.FrameworkElement.Loaded> event.  
   
-8.  Insert the following code to handle the                                  <xref:System.Windows.FrameworkElement.Loaded> event.  
+8.  Insert the following code to handle the <xref:System.Windows.FrameworkElement.Loaded> event.  
   
      [!code-csharp[HostingWfInWPF#10](../../../../samples/snippets/csharp/VS_Snippets_Wpf/HostingWfInWPF/CSharp/HostingWfInWPF/Window1.xaml.cs#10)]
      [!code-vb[HostingWfInWPF#10](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/HostingWfInWPF/VisualBasic/HostingWfInWpf/Window1.xaml.vb#10)]  
   
-9. At the top of the file, add the following                                  `Imports` or                                  `using` statement.  
+9. At the top of the file, add the following `Imports` or `using` statement.  
   
      [!code-csharp[HostingWfInWPF#11](../../../../samples/snippets/csharp/VS_Snippets_Wpf/HostingWfInWPF/CSharp/HostingWfInWPF/Window1.xaml.cs#11)]
      [!code-vb[HostingWfInWPF#11](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/HostingWfInWPF/VisualBasic/HostingWfInWpf/Window1.xaml.vb#11)]  

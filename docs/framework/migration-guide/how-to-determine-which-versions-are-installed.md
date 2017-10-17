@@ -1,6 +1,6 @@
 ---
 title: "How to: Determine which .NET Framework versions are installed"
-ms.date: "08/09/2017"
+ms.date: "10/17/2017"
 ms.prod: ".net-framework"
 ms.technology: 
   - "dotnet-clr"
@@ -92,7 +92,7 @@ Users can install and run multiple versions of the .NET Framework on their compu
     |On Windows 10 November Update systems: 394254<br /><br /> On all other OS versions: 394271|[!INCLUDE[net_v461](../../../includes/net-v461-md.md)]|
     |On Windows 10 Anniversary Update: 394802<br /><br /> On all other OS versions: 394806|[!INCLUDE[net_v462](../../../includes/net-v462-md.md)]| 
     |On Windows 10 Creators Update: 460798<br/><br/> On all other OS versions: 460805 | .NET Framework 4.7 |
-
+    |On Windows 10 Fall Creators Update: 461308<br/><br/> On all other OS versions: 461310 | .NET Framework 4.7.1 |
 <a name="net_c"></a> 
 #### To find .NET Framework versions by querying the registry in code (.NET Framework 1-4)
 
@@ -138,6 +138,8 @@ Users can install and run multiple versions of the .NET Framework on their compu
     |[!INCLUDE[net_v462](../../../includes/net-v462-md.md)] installed on all other Windows OS versions|394806|
     |.NET Framework 4.7 installed on Windows 10 Creators Update|460798|
     |.NET Framework 4.7 installed on all other Windows OS versions|460805|
+    |.NET Framework 4.7.1 installed on Windows 10 Fall Creators Update|461308|
+    |.NET Framework 4.7.1 installed on all other Windows OS versions|461310|
 
      The following example checks the `Release` value in the registry to determine whether the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] or a later version of the .NET Framework is installed.
 
@@ -170,7 +172,8 @@ Users can install and run multiple versions of the .NET Framework on their compu
     |[!INCLUDE[net_v461](../../../includes/net-v461-md.md)]|394254|
     |[!INCLUDE[net_v462](../../../includes/net-v462-md.md)]|394802|
     |.NET Framework 4.7|460798|
-
+    |.NET Framework 4.7.1|461308|
+    
 <a name="clr_a"></a> 
 #### To find the current runtime version by using the Clrver tool
 

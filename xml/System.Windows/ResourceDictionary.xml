@@ -372,8 +372,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether the invalidations fired by the <see cref="T:System.Windows.ResourceDictionary" /> object cause <see cref="T:System.Windows.Controls.ContentPresenter" /> objects to reevaluate their choice of template. 
+The invalidations happen when an implicit data template resource changes.</summary>
+        <returns><see langword="true" /> if the invalidations cause <see cref="T:System.Windows.Controls.ContentPresenter" /> objects to reevaluate their choice of template; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

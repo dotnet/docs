@@ -1127,8 +1127,15 @@
         <ReturnType>System.Windows.Automation.AutomationEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Identifies the event that is raised when a live region changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+This identifier is for use by UI automation providers.
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LiveSettingProperty">
@@ -1144,8 +1151,15 @@
         <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationProperties.LiveSetting" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+This identifier is for use by UI automation providers.
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LocalizedControlTypeProperty">

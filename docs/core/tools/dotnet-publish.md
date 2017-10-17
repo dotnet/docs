@@ -21,7 +21,8 @@ ms.technology: dotnet-cli
 # [.NET Core 2.x](#tab/netcore2x)
 
 ```
-dotnet publish [<PROJECT>] [-c|--configuration] [-f|--framework] [--force] [--manifest] [no-dependencies] [--no-restore] [-o|--output] [-r|--runtime] [--self-contained] [--source] [-v|--verbosity] [--version-suffix]
+dotnet publish [<PROJECT>] [--configfile] [-c|--configuration] [--disable-parallel] [-f|--framework] [--force] [--ignore-failed-sources] [--manifest] [--no-cache]
+    [no-dependencies] [--no-restore] [-o|--output] [--packages] [-r|--runtime] [--self-contained] [--source] [-v|--verbosity] [--version-suffix]
 dotnet publish [-h|--help]
 ```
 
@@ -55,9 +56,17 @@ The project to publish, which defaults to the current directory if not specified
 
 # [.NET Core 2.x](#tab/netcore2x)
 
+`--configfile <FILE>`
+
+The NuGet configuration file (*NuGet.config*) to use for the restore operation.
+
 `-c|--configuration {Debug|Release}`
 
 Defines the build configuration. The default value is `Debug`.
+
+`--disable-parallel`
+
+Disables restoring multiple projects in parallel.
 
 `-f|--framework <FRAMEWORK>`
 
@@ -71,9 +80,17 @@ Forces all dependencies to be resolved even if the last restore was successful. 
 
 Prints out a short help for the command.
 
+`--ignore-failed-sources`
+
+Only warn about failed sources if there are packages meeting the version requirement.
+
 `--manifest <PATH_TO_MANIFEST_FILE>`
 
 Specifies one or several [target manifests](../deploying/runtime-store.md) to use to trim the set of packages published with the app. The manifest file is part of the output of the [`dotnet store` command](dotnet-store.md). To specify multiple manifests, add a `--manifest` option for each manifest. This option is available starting with .NET Core 2.0 SDK.
+
+`--no-cache`
+
+Specifies to not cache packages and HTTP requests.
 
 `--no-dependencies`
 
@@ -87,6 +104,10 @@ Doesn't perform an implicit restore when running the command.
 
 Specifies the path for the output directory. If not specified, it defaults to *./bin/[configuration]/[framework]/* for a framework-dependent deployment or *./bin/[configuration]/[framework]/[runtime]* for a self-contained deployment.
 If a relative path is provided, the output directory generated is relative to the project file location, not to the current working directory.
+
+`--packages <PACKAGES_DIRECTORY>`
+
+Specifies the directory for restored packages.
 
 `-r|--runtime <RUNTIME_IDENTIFIER>`
 

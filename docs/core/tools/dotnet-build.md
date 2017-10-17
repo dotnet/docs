@@ -3,7 +3,7 @@ title: dotnet build command - .NET Core CLI
 description: The dotnet build command builds a project and all of its dependencies. 
 author: mairaw
 ms.author: mairaw
-ms.date: 10/12/2017
+ms.date: 10/16/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -20,7 +20,8 @@ ms.technology: dotnet-cli
 
 # [.NET Core 2.x](#tab/netcore2x)
 ```
-dotnet build [<PROJECT>] [-c|--configuration] [-f|--framework] [--force] [--no-dependencies] [--no-incremental] [--no-restore] [-o|--output] [-r|--runtime] [--source] [-v|--verbosity] [--version-suffix]
+dotnet build [<PROJECT>] [--configfile] [-c|--configuration] [--disable-parallel] [-f|--framework] [--force] [--ignore-failed-sources] [--no-cache]
+    [--no-dependencies] [--no-incremental] [--no-restore] [-o|--output] [--packages] [-r|--runtime] [--source] [-v|--verbosity] [--version-suffix]
 dotnet build [-h|--help]
 ```
 # [.NET Core 1.x](#tab/netcore1x)
@@ -62,9 +63,17 @@ The project file to build. If a project file is not specified, MSBuild searches 
 
 # [.NET Core 2.x](#tab/netcore2x)
 
+`--configfile <FILE>`
+
+The NuGet configuration file (*NuGet.config*) to use for the restore operation.
+
 `-c|--configuration {Debug|Release}`
 
 Defines the build configuration. The default value is `Debug`.
+
+`--disable-parallel`
+
+Disables restoring multiple projects in parallel.
 
 `-f|--framework <FRAMEWORK>`
 
@@ -77,6 +86,14 @@ Compiles for a specific [framework](../../standard/frameworks.md). The framework
 `-h|--help`
 
 Prints out a short help for the command.
+
+`--ignore-failed-sources`
+
+Only warn about failed sources if there are packages meeting the version requirement.
+
+`--no-cache`
+
+Specifies to not cache packages and HTTP requests.
 
 `--no-dependencies`
 
@@ -93,6 +110,10 @@ Doesn't perform an implicit restore during build.
 `-o|--output <OUTPUT_DIRECTORY>`
 
 Directory in which to place the built binaries. You also need to define `--framework` when you specify this option.
+
+`--packages <PACKAGES_DIRECTORY>`
+
+Specifies the directory for restored packages.
 
 `-r|--runtime <RUNTIME_IDENTIFIER>`
 

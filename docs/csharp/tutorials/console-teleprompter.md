@@ -42,17 +42,17 @@ creates the starter files for a basic "Hello World" application.
 
 Before you start making modifications, let’s go through the steps to run
 the simple Hello World application. After creating the application, type
-`dotnet restore` at the command prompt. This command runs the NuGet
+`dotnet restore` ([see note](#dotnet-restore-note)) at the command prompt. This command runs the NuGet
 package restore process. NuGet is a .NET package manager. This command
 downloads any of the missing dependencies for your project. As this is a
 new project, none of the dependencies are in place, so the first run will
 download the .NET Core framework. After this initial step, you will only
-need to run `dotnet restore` when you add new dependent packages, or update
+need to run `dotnet restore` ([see note](#dotnet-restore-note)) when you add new dependent packages, or update
 the versions of any of your dependencies. This process also creates the
 project lock file (project.lock.json) in your project directory. This file
 helps to manage the project dependencies. It contains the local location
 of all the project dependencies. You do not need to put the file in source
-control; it will be generated when you run `dotnet restore`. 
+control; it will be generated when you run `dotnet restore` ([see note](#dotnet-restore-note)). 
 
 After restoring packages, you run `dotnet build`. This executes the build
 engine and creates your application executable. Finally, you execute `dotnet run` to
@@ -437,3 +437,5 @@ I/O, blocking and non-blocking use of the Task based Asynchronous
 programming model, a tour of the C# language and how C# programs are
 organized and the .NET Core Command Line Interface and tools.
  
+<a name="dotnet-restore-note"></a>
+[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]

@@ -1,13 +1,12 @@
 ---
 title: "LINQ in Visual Basic"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "what's new [Visual Basic]"
@@ -15,22 +14,6 @@ ms.assetid: ddba5545-ff6e-46c3-8967-5c4280db5aca
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # LINQ in Visual Basic
 This section contains overviews, examples, and background information that will help you understand and use Visual Basic and [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)].  

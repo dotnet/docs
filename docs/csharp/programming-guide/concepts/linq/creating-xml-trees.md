@@ -1,24 +1,17 @@
 ---
 title: "Creating XML Trees (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 ms.assetid: bccc3e0a-c08c-468e-9d30-e075670fdace
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Creating XML Trees (C#)
 One of the most common XML tasks is constructing an XML tree. This section describes several ways to create them.  

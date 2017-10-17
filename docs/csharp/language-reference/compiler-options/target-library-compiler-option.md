@@ -1,6 +1,6 @@
 ---
 title: "-target:library (C# Compiler Options)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -15,20 +15,6 @@ ms.assetid: c5670e88-2126-47c1-8d1c-217923837d17
 caps.latest.revision: 12
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /target:library (C# Compiler Options)
 The **/target:library** option causes the compiler to create a dynamic-link library (DLL) rather than an executable file (EXE).  

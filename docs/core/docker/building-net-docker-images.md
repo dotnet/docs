@@ -48,7 +48,7 @@ To achieve the goals above, we provide image variants under [microsoft/dotnet](h
 
 In addition to the optimized scenarios of development, build and production, we provide additional images:
 
-- `microsoft/dotnet:<version>-onbuild` : that is **microsoft/dotnet:1.0.0-preview2-onbuild**, contains [ONBUILD](https://docs.docker.com/engine/reference/builder/#/onbuild) triggers. The build will [COPY](https://docs.docker.com/engine/reference/builder/#/copy) your application, run `dotnet restore` and create an [ENTRYPOINT](https://docs.docker.com/engine/reference/builder/#/entrypoint) `dotnet run` instruction to run the application when the Docker image is run. While not an optimized image for production, some may find it useful to simply copy their source code into an image and run it. 
+- `microsoft/dotnet:<version>-onbuild` : that is **microsoft/dotnet:1.0.0-preview2-onbuild**, contains [ONBUILD](https://docs.docker.com/engine/reference/builder/#/onbuild) triggers. The build will [COPY](https://docs.docker.com/engine/reference/builder/#/copy) your application, run `dotnet restore` ([see note](#dotnet-restore-note)) and create an [ENTRYPOINT](https://docs.docker.com/engine/reference/builder/#/entrypoint) `dotnet run` instruction to run the application when the Docker image is run. While not an optimized image for production, some may find it useful to simply copy their source code into an image and run it. 
 
 - `microsoft/dotnet:<version>-core-deps` : that is **microsoft/dotnet:1.0.0-core-deps**, if you wish to run self-contained applications use this image. It contains the operating system with all of the native dependencies needed by .NET Core. This image can also be used as a base image for your own custom CoreFX or CoreCLR builds. While the **onbuild** variant is optimized to simply place your code in an image and run it, this image is optimized to have only the operating system dependencies required to run .NET Core apps that have the .NET runtime packaged with the application. This image isn't generally optimized for running multiple .NET Core containers on the same host, as each image carries the .NET Core runtime within the application, and you will not benefit from image layering.   
 
@@ -107,12 +107,13 @@ Open a command or terminal session in that directory and use the ASP.NET Yeoman 
 yo aspnet
 ```
 
-Select **Web API Application** and type **api** for the name of the app and tap enter.  Once the application is scaffolded, change to the `/api` directory and restore the NuGet dependencies using `dotnet restore`.
+Select **Web API Application** and type **api** for the name of the app and tap enter.  Once the application is scaffolded, change to the `/api` directory and restore the NuGet dependencies using `dotnet restore` ([see note](#dotnet-restore-note)).
 
 ```
 cd api
-dotnet restore
+dotnet restore 
 ```
+
 
 Test the application using `dotnet run` and browsing to **http://localhost:5000/api/values**
 
@@ -181,7 +182,7 @@ Using the `dockerTask.sh` or `dockerTask.ps1` script, we can build or compose th
 ./dockerTask.sh build debug
 ```
 
-The image will build the ASP.NET application, run `dotnet restore`, add the debugger to the image, set an `ENTRYPOINT` and finally copy the app to the image. The result is a Docker image named *api* with a `TAG` of *debug*.  See the images on the machine using `docker images`.
+The image will build the ASP.NET application, run `dotnet restore` ([see note](#dotnet-restore-note)), add the debugger to the image, set an `ENTRYPOINT` and finally copy the app to the image. The result is a Docker image named *api* with a `TAG` of *debug*.  See the images on the machine using `docker images`.
 
 ```bash
 docker images
@@ -208,7 +209,7 @@ Creating the release or production image requires simply running the command fro
 ./dockerTask build release
 ```
 
-The command creates the image based on the smaller **microsoft/dotnet:core** base image, [EXPOSE](https://docs.docker.com/engine/reference/builder/#/expose) port 5000, sets the [ENTRYPOINT](https://docs.docker.com/engine/reference/builder/#/entrypoint) for `dotnet api.dll` and copies it to the `/app` directory. There is no debugger, SDK or `dotnet restore` resulting in a much smaller image. The image is named **api** with a `TAG` of **latest**.
+The command creates the image based on the smaller **microsoft/dotnet:core** base image, [EXPOSE](https://docs.docker.com/engine/reference/builder/#/expose) port 5000, sets the [ENTRYPOINT](https://docs.docker.com/engine/reference/builder/#/entrypoint) for `dotnet api.dll` and copies it to the `/app` directory. There is no debugger, SDK or `dotnet restore` ([see note](#dotnet-restore-note)) resulting in a much smaller image. The image is named **api** with a `TAG` of **latest**.
 
 ```
 REPOSITORY          TAG                  IMAGE ID            CREATED             SIZE
@@ -220,4 +221,5 @@ api                 latest               ef17184c8de6        1 hour ago        2
 
 Using the Docker generator to add the necessary files to our Web API application made the process simple to create the development and production versions of the images.  The tooling is cross platform by also providing a PowerShell script to accomplish the same results on Windows and Visual Studio Code integration providing step through debugging of the application within the container. By understanding the image variants and the target scenarios, you can optimize your inner-loop development process, while achieving optimized images for production deployments.  
 
-
+<a name="dotnet-restore-note"></a>
+[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]

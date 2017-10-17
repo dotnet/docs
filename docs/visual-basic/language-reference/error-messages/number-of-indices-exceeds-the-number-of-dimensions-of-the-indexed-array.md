@@ -1,13 +1,11 @@
 ---
 title: "Number of indices exceeds the number of dimensions of the indexed array"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "bc30106"
@@ -18,21 +16,6 @@ ms.assetid: 2c5363e1-62c2-4f5a-b675-c7337aeb363d
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Number of indices exceeds the number of dimensions of the indexed array
 The number of indices used to access an array element must be exactly the same as the rank of the array, that is, the number of dimensions declared for it.  

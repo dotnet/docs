@@ -1,6 +1,6 @@
 ---
 title: "Local functions (C# Programming Guide)"
-ms.date: "2017-06-14"
+ms.date: 06/14/2017
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"

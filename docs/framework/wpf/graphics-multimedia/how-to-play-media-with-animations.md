@@ -21,12 +21,12 @@ ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Play Media with Animations
-This example shows how to play media and animations at the same time by using the              <xref:System.Windows.Media.MediaTimeline> and              <xref:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames> classes in the same              <xref:System.Windows.Media.Animation.Storyboard>.  
+This example shows how to play media and animations at the same time by using the <xref:System.Windows.Media.MediaTimeline> and <xref:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames> classes in the same <xref:System.Windows.Media.Animation.Storyboard>.  
   
 ## Example  
- You can use one or more                      <xref:System.Windows.Media.MediaTimeline> objects in a                      <xref:System.Windows.Media.Animation.Storyboard> together with other                      <xref:System.Windows.Media.Animation.Timeline> objects, such as animations.  
+ You can use one or more <xref:System.Windows.Media.MediaTimeline> objects in a <xref:System.Windows.Media.Animation.Storyboard> together with other <xref:System.Windows.Media.Animation.Timeline> objects, such as animations.  
   
- The following example sets the                      <xref:System.Windows.Media.Animation.ParallelTimeline.SlipBehavior%2A> property of the                      <xref:System.Windows.Media.Animation.Storyboard> to a value of                      `Slip`, which specifies that the animation does not progress until the media (video in this example) progresses. This functionality might be needed if media playback is delayed because of loading time.  
+ The following example sets the <xref:System.Windows.Media.Animation.ParallelTimeline.SlipBehavior%2A> property of the <xref:System.Windows.Media.Animation.Storyboard> to a value of `Slip`, which specifies that the animation does not progress until the media (video in this example) progresses. This functionality might be needed if media playback is delayed because of loading time.  
   
  [!code-xaml[MediaGallery_snippet#MediaTimelinePlusAnimationExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/MediaGallery_snippet/CSharp/MediaTimelinePlusAnimationExample.xaml#mediatimelineplusanimationexamplewholepage)]  
   

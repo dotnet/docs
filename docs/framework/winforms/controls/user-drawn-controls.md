@@ -38,30 +38,31 @@ The .NET Framework provides you with the ability to easily develop your own cont
  When inheriting from the <xref:System.Windows.Forms.Control> class, you must override the <xref:System.Windows.Forms.Control.OnPaint%2A> method and provide graphics-rendering code within. If you want to provide a custom graphical interface to a user control or an inherited control, you can also do so by overriding the <xref:System.Windows.Forms.Control.OnPaint%2A> method. An example is shown below:  
   
 ```vb  
-Protected Overrides Sub OnPaint(ByVal pe As PaintEventArgs)  
+Protected Overrides Sub OnPaint(ByVal e As PaintEventArgs)  
    ' Call the OnPaint method of the base class.  
-   MyBase.OnPaint(pe)  
+   MyBase.OnPaint(e)  
   
    ' Declare and instantiate a drawing pen.  
-   Dim myPen As System.Drawing.Pen = New System.Drawing.Pen(Color.Aqua)  
-  
-   ' Draw an aqua rectangle in the rectangle represented by the control.  
-   pe.Graphics.DrawRectangle(myPen, New Rectangle(Me.Location, Me.Size))  
+   Using myPen As System.Drawing.Pen = New System.Drawing.Pen(Color.Aqua)  
+      ' Draw an aqua rectangle in the rectangle represented by the control.  
+      e.Graphics.DrawRectangle(myPen, New Rectangle(Me.Location, Me.Size))  
+   End Using
 End Sub  
 ```  
   
 ```csharp  
-protected override void OnPaint(PaintEventArgs pe)  
+protected override void OnPaint(PaintEventArgs e)  
 {  
    // Call the OnPaint method of the base class.  
-   base.OnPaint(pe);  
+   base.OnPaint(e);  
   
    // Declare and instantiate a new pen.  
-   System.Drawing.Pen myPen = new System.Drawing.Pen(Color.Aqua);  
-  
-   // Draw an aqua rectangle in the rectangle represented by the control.  
-   pe.Graphics.DrawRectangle(myPen, new Rectangle(this.Location,   
-      this.Size));  
+   using (System.Drawing.Pen myPen = new System.Drawing.Pen(Color.Aqua))  
+   {
+      // Draw an aqua rectangle in the rectangle represented by the control.  
+      e.Graphics.DrawRectangle(myPen, new Rectangle(this.Location,   
+         this.Size));  
+   }
 }  
 ```  
   

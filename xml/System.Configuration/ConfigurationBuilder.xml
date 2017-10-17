@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the base class to be extended by custom configuration builder implementations.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationBuilder" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,9 +46,9 @@
         <Parameter Name="configSection" Type="System.Configuration.ConfigurationSection" />
       </Parameters>
       <Docs>
-        <param name="configSection">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="configSection">The <see cref="T:System.Configuration.ConfigurationSection" /> to process.</param>
+        <summary>Accepts a <see cref="T:System.Configuration.ConfigurationSection" /> object from the configuration system and returns a modified or new <see cref="T:System.Configuration.ConfigurationSection" /> object for further use.</summary>
+        <returns>The processed <see cref="T:System.Configuration.ConfigurationSection" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,9 +68,9 @@
         <Parameter Name="rawXml" Type="System.Xml.XmlNode" />
       </Parameters>
       <Docs>
-        <param name="rawXml">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="rawXml">The <see cref="T:System.Xml.XmlNode" /> to process.</param>
+        <summary>Accepts an <see cref="T:System.Xml.XmlNode" /> representing the raw configuration section from a config file and returns a modified or new <see cref="T:System.Xml.XmlNode" /> for further use.</summary>
+        <returns>The processed <see cref="T:System.Xml.XmlNode" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

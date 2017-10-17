@@ -381,10 +381,10 @@
         <Parameter Name="result" Type="System.Web.HttpCookie&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="input">To be added.</param>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="input">The string representation of a cookie.</param>
+        <param name="result">If the conversion succeeded, contains the <see cref="T:System.Web.HttpCookie" /> value equivalent to the cookie contained in <paramref name="input" />. If the conversion failed, <paramref name="result" /> is <see langword="null" />. The conversion fails if the <paramref name="input" /> parameter is <see langword="null" /> or empty or if a cookie name can't be determined from <paramref name="input" />. This parameter's value is overwritten by the method; the parameter is passed by reference and set to null as soon as the method is entered.</param>
+        <summary>Converts the specified string representation of a cookie into its <see cref="T:System.Web.HttpCookie" /> equivalent and returns a value that indicates whether the conversion succeeded.</summary>
+        <returns><see langword="true" /> if <paramref name="input" /> was converted successfully; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

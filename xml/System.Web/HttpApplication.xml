@@ -1744,9 +1744,18 @@ End Sub
         <Parameter Name="callback" Type="System.Action&lt;System.Web.HttpContextBase,System.Action&gt;" />
       </Parameters>
       <Docs>
-        <param name="callback">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="callback">The callback method.</param>
+        <summary>Specifies a a callback to invoke when a request execution step is executed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+This method provides extensibility to the ASP.NET pipeline to make it easy for developers to implement features in ambient context scenarios and build libraries that care about ASP.NET execution flow (for example, tracing, profiling, diagnostics, and transactions).
+  
+ ]]></format>
+        </remarks>
+
       </Docs>
     </Member>
     <Member MemberName="PostAcquireRequestState">

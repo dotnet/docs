@@ -1,7 +1,7 @@
 ---
 title: "Obsolete Members in the .NET Framework"
 ms.custom: "updateeachrelease"
-ms.date: "03/30/2017"
+ms.date: "10/17/2017"
 ms.prod: ".net-framework"
 ms.technology: 
   - "dotnet-clr"

@@ -38,7 +38,7 @@ For download links, see the section [Redistributable Packages](#redistributable-
  Important notes:
 
 > [!NOTE]
-> The phrase "the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] and its point releases"  refers to the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, 4.7, and 4.7.1.
+> The phrase "the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] and its point releases"  refers to the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] and all later versions.
 
 - The [!INCLUDE[net_v451](../../../includes/net-v451-md.md)], 4.5.2, 4.6, 4.6.1, 4.6.2, 4.7, and 4.7.1 are in-place updates to the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], which means they use the same runtime version, but the assembly versions are updated and include new types and members.
 
@@ -48,7 +48,7 @@ For download links, see the section [Redistributable Packages](#redistributable-
 
 - You must have administrator privileges to install the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] and its point releases.
 
-- The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] is included in [!INCLUDE[win8](../../../includes/win8-md.md)] and [!INCLUDE[winserver8](../../../includes/winserver8-md.md)], so you don't have to deploy it with your app on those operating systems. Similarly, the [!INCLUDE[net_v451](../../../includes/net-v451-md.md)] is included in [!INCLUDE[win81](../../../includes/win81-md.md)] and Windows Server 2012 R2. The .NET Framework 4.5.2 isn't included in any operating systems. The [!INCLUDE[net_v46](../../../includes/net-v46-md.md)] is included in Windows 10, the [!INCLUDE[net_v461](../../../includes/net-v461-md.md)] is included in Windows 10 November Update, and the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] is included in Windows 10 Anniversary Update.  The .NET Framework 4.7 is included in Windows 10 Creators Update, and the .NET Framework 4.7.1 is includd in Windows 10 Fall Creators Update. For a full list of hardware and software requirements, see [System Requirements](../../../docs/framework/get-started/system-requirements.md).
+- The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] is included in [!INCLUDE[win8](../../../includes/win8-md.md)] and [!INCLUDE[winserver8](../../../includes/winserver8-md.md)], so you don't have to deploy it with your app on those operating systems. Similarly, the [!INCLUDE[net_v451](../../../includes/net-v451-md.md)] is included in [!INCLUDE[win81](../../../includes/win81-md.md)] and Windows Server 2012 R2. The .NET Framework 4.5.2 isn't included in any operating systems. The [!INCLUDE[net_v46](../../../includes/net-v46-md.md)] is included in Windows 10, the [!INCLUDE[net_v461](../../../includes/net-v461-md.md)] is included in Windows 10 November Update, and the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] is included in Windows 10 Anniversary Update.  The .NET Framework 4.7 is included in Windows 10 Creators Update, and the .NET Framework 4.7.1 is included in Windows 10 Fall Creators Update. For a full list of hardware and software requirements, see [System Requirements](../../../docs/framework/get-started/system-requirements.md).
 
 - Starting with the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], your users can view a list of running .NET Framework apps during setup and close them easily. This may help avoid system restarts caused by .NET Framework installations. See [Reducing System Restarts](../../../docs/framework/deployment/reducing-system-restarts.md).
 
@@ -59,7 +59,7 @@ For download links, see the section [Redistributable Packages](#redistributable-
  For information about how a system administrator can deploy the .NET Framework and its system dependencies across a network, see [Deployment Guide for Administrators](../../../docs/framework/deployment/guide-for-administrators.md).
 
 ## Deployment options for your app
- When you're ready to publish your app to a web server or other centralized location so that users can install it, you can choose from several deployment methods. Some of these are provided with Visual Studio. The following table lists the deployment options for your app, and specifies the .NET Framework redistributable package that supports each option. In addition to these, you can write a custom setup program for your app; for more information, see the section [Chaining the .NET Framework Installation to Your App's Setup](#chaining).
+ When you're ready to publish your app to a web server or other centralized location so that users can install it, you can choose from several deployment methods. Some of these are provided with Visual Studio. The following table lists the deployment options for your app and specifies the .NET Framework redistributable package that supports each option. In addition to these, you can write a custom setup program for your app; for more information, see the section [Chaining the .NET Framework Installation to Your App's Setup](#chaining).
 
 |Deployment strategy for your app|Deployment methods available|.NET Framework redistributable to use|
 |--------------------------------------|----------------------------------|-------------------------------------------|
@@ -145,7 +145,7 @@ InstallAware builds Windows app (APPX), Windows Installer (MSI), Native Code (EX
 
 3.  In the **Name** box, type a name for your project, and then choose **OK**.
 
-4.  If you are creating a setup and deployment  project for the first time, choose **Go to InstallShield** or **Enable InstallShield Limited Edition** to download InstallShield Limited Edition for your version of Microsoft Visual Studio . Restart Visual Studio.
+4.  If you are creating a setup and deployment project for the first time, choose **Go to InstallShield** or **Enable InstallShield Limited Edition** to download InstallShield Limited Edition for your version of Microsoft Visual Studio. Restart Visual Studio.
 
 5.  Go to **Project Assistant** wizard and choose **Application Files** to add the Project Output. You can configure other project attributes by using this wizard.
 

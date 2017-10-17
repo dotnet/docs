@@ -138,7 +138,7 @@ Users can install and run multiple versions of the .NET Framework on their compu
     |[!INCLUDE[net_v462](../../../includes/net-v462-md.md)] installed on all other Windows OS versions|394806|
     |.NET Framework 4.7 installed on Windows 10 Creators Update|460798|
     |.NET Framework 4.7 installed on all other Windows OS versions|460805|
-    |.NET Framdwork 4.7.1 installed on Windows 10 Fall Creators Update|461308|
+    |.NET Framework 4.7.1 installed on Windows 10 Fall Creators Update|461308|
     |.NET Framework 4.7.1 installed on all other Windows OS versions|461310|
 
      The following example checks the `Release` value in the registry to determine whether the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] or a later version of the .NET Framework is installed.

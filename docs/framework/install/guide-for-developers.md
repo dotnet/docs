@@ -206,7 +206,7 @@ The following table lists the supported languages.
   
 - If you're new to the .NET Framework, see the [overview](~/docs/framework/get-started/overview.md) for an introduction to key concepts and components.  
   
-- For new features and improvements in the .NET Framework 4.7.1, the .NET Framework 4.7, [!INCLUDE[net_v462](../../../includes/net-v462-md.md)],  [!INCLUDE[net_v461](../../../includes/net-v461-md.md)], [!INCLUDE[net_v46](../../../includes/net-v46-md.md)], 4.5.2, 4.5.1, and 4.5, see [What's New](../../../docs/framework/whats-new/index.md).  
+- For new features and improvements in the .NET Framework 4.5 and all later versions, see [What's New](../../../docs/framework/whats-new/index.md).  
   
 - For detailed information about deploying the .NET Framework with your app, see [Deployment Guide for Developers](~/docs/framework/deployment/deployment-guide-for-developers.md).  
   
@@ -214,7 +214,7 @@ The following table lists the supported languages.
   
 - For information about migrating your app from the .NET Framework 4 to the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] or one of its point releases, see the [migration guide](~/docs/framework/migration-guide/index.md). 
 
-- See the [.NET Framework Reference Source](http://referencesource.microsoft.com/) to browse through the .NET Framework source code online. The reference source is also available on [Github](https://github.com/Microsoft/referencesource). You can [download the reference source](http://referencesource.microsoft.com/download.html) for offline viewing and step through the sources (including patches and updates) during debugging. For more information, see the blog entry [A new look for .NET Reference Source](http://blogs.msdn.com/b/dotnet/archive/2014/02/24/a-new-look-for-net-reference-source.aspx).  
+- See the [.NET Framework Reference Source](http://referencesource.microsoft.com/) to browse through the .NET Framework source code online. The reference source is also available on [GitHub](https://github.com/Microsoft/referencesource). You can [download the reference source](http://referencesource.microsoft.com/download.html) for offline viewing and step through the sources (including patches and updates) during debugging. For more information, see the blog entry [A new look for .NET Reference Source](http://blogs.msdn.com/b/dotnet/archive/2014/02/24/a-new-look-for-net-reference-source.aspx).  
   
 ## See also
 

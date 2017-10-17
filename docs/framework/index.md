@@ -59,4 +59,4 @@ Describes the tools that help you develop, configure, and deploy applications by
 Supplies syntax, code examples, and related information for each class contained in the .NET Framework namespaces.  
   
 [Additional Class Libraries and APIs](../../docs/framework/additional-apis/index.md)  
-Provides documentation for classes contained in out of band (OOB) releases, as well as for classes that target specific platforms or implementations of the .NET Framework.
+Provides documentation for classes contained in out-of-band (OOB) releases, as well as for classes that target specific platforms or implementations of the .NET Framework.

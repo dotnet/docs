@@ -1,13 +1,9 @@
 ---
 title: "How to: Return Subsets of Element Properties in a Query (C# Programming Guide)"
-
 ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "anonymous types [C#], for subsets of element properties"
@@ -15,21 +11,6 @@ ms.assetid: fabdf349-f443-4e3f-8368-6c471be1dd7b
 caps.latest.revision: 11
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Return Subsets of Element Properties in a Query (C# Programming Guide)
 Use an anonymous type in a query expression when both of these conditions apply:  

@@ -473,8 +473,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the notification characteristics of the live region of the <see cref="T:System.Windows.UIElement3D" /> object that is associated with this <see cref="T:System.Windows.Automation.Peers.UIElement3DAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetLiveSetting" />.</summary>
+        <returns>The notification characteristics of the live region.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

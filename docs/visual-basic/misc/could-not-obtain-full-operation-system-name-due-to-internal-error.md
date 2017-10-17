@@ -1,13 +1,9 @@
 ---
 title: "Could not obtain full operation system name due to internal error"
-
 ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vbrDiagnosticInfo_FullOSName"
@@ -15,22 +11,6 @@ ms.assetid: f69da02b-eb9a-4284-bb9e-3025517ae6c1
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Could not obtain full operation system name due to internal error
 Could not obtain full operation system name due to internal error. This might be caused by WMI not existing on the current machine.  

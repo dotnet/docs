@@ -18,20 +18,6 @@ ms.assetid: 00da70c6-9ea1-43c2-86f2-aa7f26c03475
 caps.latest.revision: 13
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /link (C# Compiler Options)
 Causes the compiler to make COM type information in the specified assemblies available to the project that you are currently compiling.  

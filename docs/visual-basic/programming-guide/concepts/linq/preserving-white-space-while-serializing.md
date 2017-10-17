@@ -13,12 +13,6 @@ ms.assetid: 2d7abbd4-37f4-422b-89dd-0a694b5edc17
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Preserving White Space While Serializing
 This topic describes how to control white space when serializing an XML tree.  

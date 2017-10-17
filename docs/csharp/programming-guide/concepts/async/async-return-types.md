@@ -12,11 +12,6 @@ ms.assetid: ddb2539c-c898-48c1-ad92-245e4a996df8
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Async Return Types (C#)
 Async methods can have the following return types:

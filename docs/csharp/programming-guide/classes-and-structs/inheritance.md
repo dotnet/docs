@@ -1,13 +1,9 @@
 ---
 title: "Inheritance (C# Programming Guide)"
-
 ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "abstract methods [C#]"
@@ -20,21 +16,6 @@ ms.assetid: 81d64ee4-50f9-4d6c-a8dc-257c348d2eea
 caps.latest.revision: 38
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Inheritance (C# Programming Guide)
 

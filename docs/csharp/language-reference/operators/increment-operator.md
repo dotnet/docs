@@ -14,21 +14,6 @@ ms.assetid: e9dec353-070b-44fb-98ed-eb8fdf753feb
 caps.latest.revision: 18
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # ++ Operator (C# Reference)
 The increment operator (`++`) increments its operand by 1. The increment operator can appear before or after its operand: `++variable` and `variable++`.  

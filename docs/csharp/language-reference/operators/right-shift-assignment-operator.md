@@ -14,20 +14,6 @@ ms.assetid: b593778c-b9b4-440d-8b29-c1ac22cb81c0
 caps.latest.revision: 14
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # &gt;&gt;= Operator (C# Reference)
 The right-shift assignment operator.  

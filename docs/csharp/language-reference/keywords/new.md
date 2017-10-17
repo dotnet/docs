@@ -14,20 +14,6 @@ ms.assetid: e4136516-f058-45a8-84e5-da00a5cf9b6a
 caps.latest.revision: 9
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # new (C# Reference)
 In C#, the `new` keyword can be used as an operator, a modifier, or a constraint.  

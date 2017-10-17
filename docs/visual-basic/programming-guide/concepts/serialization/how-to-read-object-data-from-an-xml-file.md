@@ -13,12 +13,6 @@ ms.assetid: 1e1423bf-74a4-4dde-a3bb-ae1bfc0a68ed
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # How to: Read Object Data from an XML File (Visual Basic)
 This example reads object data that was previously written to an XML file using the <xref:System.Xml.Serialization.XmlSerializer> class.  

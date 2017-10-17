@@ -1,13 +1,11 @@
 ---
 title: "Exit Statement (Visual Basic)"
-
 ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Exit"
@@ -23,21 +21,6 @@ ms.assetid: 760bfb32-5c3f-4bdb-a432-9a6001c92db7
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Exit Statement (Visual Basic)
 Exits a procedure or block and transfers control immediately to the statement following the procedure call or the block definition.  

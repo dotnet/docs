@@ -13,12 +13,6 @@ ms.assetid: cace24eb-0f43-4016-8e4b-199e5ef73a1c
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # How to: Serialize Using XmlSerializer (Visual Basic)
 This topic shows an example that serializes and deserializes using <xref:System.Xml.Serialization.XmlSerializer>.  

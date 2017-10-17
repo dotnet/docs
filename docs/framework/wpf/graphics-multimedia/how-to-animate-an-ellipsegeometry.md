@@ -23,7 +23,7 @@ ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Animate an EllipseGeometry
-This example shows how to animate a              <xref:System.Windows.Media.Geometry> within a              <xref:System.Windows.Shapes.Path> element. In the following example, a              <xref:System.Windows.Media.Animation.PointAnimation> is used to animate the              <xref:System.Windows.Media.EllipseGeometry.Center%2A> of an              <xref:System.Windows.Media.EllipseGeometry>.  
+This example shows how to animate a <xref:System.Windows.Media.Geometry> within a <xref:System.Windows.Shapes.Path> element. In the following example, a <xref:System.Windows.Media.Animation.PointAnimation> is used to animate the <xref:System.Windows.Media.EllipseGeometry.Center%2A> of an <xref:System.Windows.Media.EllipseGeometry>.  
   
 ## Example  
  [!code-xaml[animatepath_snip_XAML#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/animatepath_snip_XAML/CS/EllipseGeometryExample.xaml#1)]  

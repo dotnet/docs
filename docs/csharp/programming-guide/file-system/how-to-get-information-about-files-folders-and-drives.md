@@ -1,13 +1,9 @@
 ---
 title: "How to: Get Information About Files, Folders, and Drives  (C# Programming Guide)"
-
 ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "files [C#], getting information about"
@@ -15,21 +11,6 @@ ms.assetid: 22fc2da6-5494-405b-995e-c0b99142a93e
 caps.latest.revision: 30
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Get Information About Files, Folders, and Drives  (C# Programming Guide)
 In the .NET Framework, you can access file system information by using the following classes:  

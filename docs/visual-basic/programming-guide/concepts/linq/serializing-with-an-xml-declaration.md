@@ -13,12 +13,6 @@ ms.assetid: 8726f79e-2bb0-4ba0-969d-197cca591647
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Serializing with an XML Declaration (Visual Basic)
 This topic describes how to control whether serialization generates an XML declaration.  

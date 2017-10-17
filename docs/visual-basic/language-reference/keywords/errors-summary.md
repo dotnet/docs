@@ -1,13 +1,10 @@
 ---
 title: "Errors Summary (Visual Basic)"
-
 ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "errors [Visual Basic]"
@@ -15,21 +12,6 @@ ms.assetid: 2557da60-c6dc-4e99-8128-fceb6f8a0736
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Errors Summary (Visual Basic)
 Visual Basic language keywords and run-time library members are organized by purpose and use.  

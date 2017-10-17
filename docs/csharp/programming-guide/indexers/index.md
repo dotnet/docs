@@ -1,6 +1,5 @@
 ---
 title: "Indexers (C# Programming Guide)"
-
 ms.date: 03/10/2017
 ms.prod: .net
 ms.technology: 
@@ -15,20 +14,6 @@ ms.assetid: 022cd27d-d5e0-4cfe-8b97-dc018cc3355d
 caps.latest.revision: 29
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Indexers (C# Programming Guide)
 

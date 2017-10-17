@@ -1,13 +1,9 @@
 ---
 title: "Unable to read delimited fields because Delimiters is Nothing or empty"
-
 ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vbrTextFieldParser_DelimitersNothing"
@@ -15,22 +11,6 @@ ms.assetid: 94f64c48-8e17-449d-b92a-0426efec879c
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Unable to read delimited fields because Delimiters is Nothing or empty
 The `TextFieldParser` is unable to read from the file because the `Delimiters` property is set to `Nothing` or is empty.  

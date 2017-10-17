@@ -36,8 +36,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Disables the <see cref="E:System.Windows.Diagnostics.VisualDiagnostics.VisualTreeChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+This method is for diagnostic use only. Microsoft does not support the use of this method in a production application under any circumstances.
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableVisualTreeChanged">
@@ -54,8 +61,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Enables the <see cref="E:System.Windows.Diagnostics.VisualDiagnostics.VisualTreeChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+This method is for diagnostic use only.
+
+Microsoft does not support the use of this method in a production application under any circumstances.
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetXamlSourceInfo">

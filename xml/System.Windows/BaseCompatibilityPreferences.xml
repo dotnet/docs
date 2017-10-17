@@ -61,7 +61,7 @@
 
 ## Remarks  
 The Windows Presentation Foundation dispatcher reacts to failures that it encounters when requesting processing by setting a timer or posting messages to itself. 
-If this operations fail because the underlying operating system resource is exhausted, the dispatcher becomes unresponsive. 
+If these operations fail because the underlying operating system resource is exhausted, the dispatcher becomes unresponsive. 
 Typically, this failure is caused by an application posting messages faster than the dispatcher can handle them or by starving the dispatcher's message pump. 
 To aid in diagnosing the cause of the dispatcher's unresponsiveness, you can control how the dispatcher responds to these failures by setting this property.
 

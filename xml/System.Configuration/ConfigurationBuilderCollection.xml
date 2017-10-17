@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Maintains a collection of <see cref="T:System.Configuration.ConfigurationBuilder" /> objects by name.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationBuilderCollection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,9 +46,12 @@
         <Parameter Name="builder" Type="System.Configuration.Provider.ProviderBase" />
       </Parameters>
       <Docs>
-        <param name="builder">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="builder">The <see cref="T:System.Configuration.ConfigurationBuilder" /> object to add to the collection.</param>
+        <summary>Adds a <see cref="T:System.Configuration.ConfigurationBuilder" /> object to the <see cref="T:System.Configuration.ConfigurationBuilderCollection" /> object.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="builder" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The configuration provider in <paramref name="builder" /> must implement the class <see cref="T:System.Configuration.ConfigurationBuilder" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -67,9 +70,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="name">A configuration builder name.</param>
+        <summary>Gets the <see cref="T:System.Configuration.ConfigurationBuilder" /> object from the <see cref="T:System.Configuration.ConfigurationBuilderCollection" /> that is configured with the provided name.</summary>
+        <value>The <see cref="T:System.Configuration.ConfigurationBuilder" /> object that is configured with the provided <paramref name="name" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

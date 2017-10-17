@@ -3,7 +3,7 @@ title: dotnet publish command - .NET Core CLI
 description: The dotnet publish command publishes your .NET Core project into a directory. 
 author: mairaw
 ms.author: mairaw
-ms.date: 10/12/2017
+ms.date: 10/16/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -90,7 +90,7 @@ If a relative path is provided, the output directory generated is relative to th
 
 `-r|--runtime <RUNTIME_IDENTIFIER>`
 
-Publishes the application for a given runtime. This is used when creating a [self-contained deployment (SCD)](../deploying/index.md#self-contained-deployments-scd). For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). Default is to publish a [framework-dependent deployment (FDD)](../deploying/index.md#framework-dependent-deployments-fdd).
+Publishes the application for a given runtime. This is used when creating a [self-contained deployment (SCD)](../deploying/index.md#self-contained-deployments-scd). For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). The default behavior is to publish a [framework-dependent deployment (FDD)](../deploying/index.md#framework-dependent-deployments-fdd).
 
 `--self-contained`
 

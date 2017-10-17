@@ -22,7 +22,7 @@
 
 On a right-to-left operating system, setting the containing form's <xref:System.Windows.Forms.Control.RightToLeft> property to <xref:System.Windows.Forms.RightToLeft.Yes?displayProperty=nameWithType> localizes the dialog's **File Name**, **Open**, and **Cancel** buttons. If the property is not set to <xref:System.Windows.Forms.RightToLeft.Yes?displayProperty=nameWithType>, English text is used instead.  
 
- If you want to give the user the ability to select a folder instead of a file,use <xref:System.Windows.Forms.FolderBrowserDialog> instead.  
+ If you want to give the user the ability to select a folder instead of a file, use <xref:System.Windows.Forms.FolderBrowserDialog> instead.  
   
    
   

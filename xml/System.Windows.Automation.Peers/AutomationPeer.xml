@@ -638,9 +638,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets the notification characteristics of a live region that is associated with this automation peer.</summary>
+        <returns>The notification characteristics.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+This method calls the derived implementation of <xref:System.Windows.Automation.Peers.AutomationPeer.GetLiveSettingCore>.
+
+]]></format>
+        
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetLiveSettingCore">
@@ -657,8 +665,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>When overridden in a derived class, returns the notification characteristics of a live region. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetLiveSetting" /> method.</summary>
+        <returns>The notification characteristics of a live region.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

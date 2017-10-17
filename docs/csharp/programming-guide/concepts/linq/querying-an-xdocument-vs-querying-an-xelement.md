@@ -1,7 +1,7 @@
 ---
 title: "Querying an XDocument vs. Querying an XElement (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""

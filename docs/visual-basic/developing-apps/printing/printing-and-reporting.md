@@ -1,33 +1,15 @@
 ---
 title: "Printing and Reporting (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 ms.assetid: 92997b65-0279-4889-8db7-32cb6708be9c
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Printing and Reporting (Visual Basic)
 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] offers several options for printing and reporting. The following topics provide overviews and links to the relevant documentation related to printing and reporting.  

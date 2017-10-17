@@ -1,24 +1,17 @@
 ---
 title: "How to: Catch Parsing Errors (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 ms.assetid: bfb612d4-5605-48ef-8c93-915cf9d5dcfb
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # How to: Catch Parsing Errors (C#)
 This topic shows how to detect badly formed or invalid XML.  

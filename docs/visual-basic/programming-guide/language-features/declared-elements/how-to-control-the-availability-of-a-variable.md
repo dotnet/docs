@@ -1,13 +1,12 @@
 ---
 title: "How to: Control the Availability of a Variable (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "access levels, declared elements"
@@ -22,21 +21,6 @@ ms.assetid: eaf4f073-7922-43ce-ae1e-90ff376ae947
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Control the Availability of a Variable (Visual Basic)
 You control the availability of a variable by specifying its *access level*. The access level determines what code has permission to read or write to the variable.  

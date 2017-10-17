@@ -1,6 +1,6 @@
 ---
 title: "Get started with Visual Basic"
-ms.date: "2017-08-10"
+ms.date: 08/10/2017
 ms.prod: .net
 ms.technology: 
   - "devlang-visual-basic"
@@ -12,21 +12,6 @@ ms.assetid: 6685467b-28fa-4cde-9516-f0e00ad08911
 caps.latest.revision: 36
 author: dotnet-bot
 ms.author: dotnetcontent
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Get started with Visual Basic
 This section of the documentation helps you get started with Visual Basic application development.  

@@ -125,15 +125,15 @@ Content that can be hosted by an [!INCLUDE[TLA#tla_xbap](../../../../includes/tl
   
 -   From the calling page:  
   
-    1.  Instantiate the called                                          <xref:System.Windows.Navigation.PageFunction%601> using the default constructor.  
+    1.  Instantiate the called <xref:System.Windows.Navigation.PageFunction%601> using the default constructor.  
   
-    2.  Store the parameters in                                          <xref:System.Windows.Application.Properties%2A>.  
+    2.  Store the parameters in <xref:System.Windows.Application.Properties%2A>.  
   
-    3.  Navigate to the called                                          <xref:System.Windows.Navigation.PageFunction%601>.  
+    3.  Navigate to the called <xref:System.Windows.Navigation.PageFunction%601>.  
   
--   From the called                                  <xref:System.Windows.Navigation.PageFunction%601>:  
+-   From the called <xref:System.Windows.Navigation.PageFunction%601>:  
   
-    -   Retrieve and use the parameters stored in                                          <xref:System.Windows.Application.Properties%2A>.  
+    -   Retrieve and use the parameters stored in <xref:System.Windows.Application.Properties%2A>.  
   
  But, as you'll see shortly, you'll still need use code to instantiate and navigate to the called page to collect the data returned by the called page. For this reason, the <xref:System.Windows.Navigation.PageFunction%601> needs to be kept alive; otherwise, the next time you navigate to the <xref:System.Windows.Navigation.PageFunction%601>, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] instantiates the <xref:System.Windows.Navigation.PageFunction%601> using the default constructor.  
   
@@ -146,7 +146,7 @@ Content that can be hosted by an [!INCLUDE[TLA#tla_xbap](../../../../includes/tl
   
 2.  The data that was provided by the user.  
   
- To return information,                          <xref:System.Windows.Navigation.PageFunction%601> implements the                          <xref:System.Windows.Navigation.PageFunction%601.OnReturn%2A> method. The following code shows how to call it.  
+ To return information, <xref:System.Windows.Navigation.PageFunction%601> implements the <xref:System.Windows.Navigation.PageFunction%601.OnReturn%2A> method. The following code shows how to call it.  
   
  [!code-csharp[StructuredNavigationSample#ReturnCODEBEHIND1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/StructuredNavigationSample/CSharp/CalledPageFunction.xaml.cs#returncodebehind1)]
  [!code-vb[StructuredNavigationSample#ReturnCODEBEHIND1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/StructuredNavigationSample/VisualBasic/CalledPageFunction.xaml.vb#returncodebehind1)]  

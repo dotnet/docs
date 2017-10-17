@@ -15,7 +15,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The Windows Presentation Foundation dispatcher reacts to failures that it encounters when requesting processing by setting a timer or posting messages to itself. These operations can fail if the underlying operating system resources are exhausted, which causes the dispatcher to become unresponsive. A  <xref:System.Windows.BaseCompatibilityPreferences.HandleDispatcherRequestProcessingFailureOptions> enumeration value can be assigned to the <xref:System.Windows.BaseCompatibilityPreferences.HandleDispatcherRequestProcessingFailure%2A?displayProperty=fullName> property to aid in diagnosing the cause of this unresponsiveness.  
+ The Windows Presentation Foundation dispatcher reacts to failures that it encounters when requesting processing by setting a timer or posting messages to itself. These operations can fail if the underlying operating system resources are exhausted, which causes the dispatcher to become unresponsive. A  <xref:System.Windows.BaseCompatibilityPreferences.HandleDispatcherRequestProcessingFailureOptions> enumeration value can be assigned to the <xref:System.Windows.BaseCompatibilityPreferences.HandleDispatcherRequestProcessingFailure%2A?displayProperty=nameWithType> property to aid in diagnosing the cause of this unresponsiveness.  
   
  ]]></format>
     </remarks>

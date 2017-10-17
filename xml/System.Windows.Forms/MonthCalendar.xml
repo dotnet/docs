@@ -522,8 +522,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a new accessibility object for the current <see cref="T:System.Windows.Forms.MonthCalendar" /> instance. This object provides better <see cref="P:System.Windows.Forms.Control.ControlAccessibleObject.Help" />, <see cref="P:System.Windows.Forms.Control.ControlAccessibleObject.Name" />, and <see cref="P:System.Windows.Forms.Control.ControlAccessibleObject.Role" /> properties, however it's only available in applications that are recompiled to target .NET Framework 4.7.1 or opt-in into this feature using a compatibility switch. For more information, see the <see href="https://docs.microsoft.com/dotnet/framework/migration-guide/retargeting/4.7-4.7.1#windows-forms">Windows Forms</see> section in the Retargeting Changes for Migration to the .NET Framework 4.7.1 topic.</summary>
+        <returns>A new accessibility object for the control.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

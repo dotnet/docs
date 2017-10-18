@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRTaskManager"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRTaskManager interface [.NET Framework hosting]"
 ms.assetid: 2bd55e0c-001b-41fd-b29d-f01670fe8216

@@ -58,7 +58,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Xaml.AttachableMemberIdentifier.DeclaringType%2A> value should match the name of the <xref:System.Xaml.XamlMember.Type%2A?displayProperty=fullName> of the attachable member's XAML type system information.  
+ The <xref:System.Xaml.AttachableMemberIdentifier.DeclaringType%2A> value should match the name of the <xref:System.Xaml.XamlMember.Type%2A?displayProperty=nameWithType> of the attachable member's XAML type system information.  
   
  ]]></format>
         </remarks>
@@ -155,7 +155,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Xaml.AttachableMemberIdentifier.MemberName%2A> value should match the <xref:System.Xaml.XamlMember.Name%2A?displayProperty=fullName> of the attachable member's XAML type system information.  
+ The <xref:System.Xaml.AttachableMemberIdentifier.MemberName%2A> value should match the <xref:System.Xaml.XamlMember.Name%2A?displayProperty=nameWithType> of the attachable member's XAML type system information.  
   
  ]]></format>
         </remarks>

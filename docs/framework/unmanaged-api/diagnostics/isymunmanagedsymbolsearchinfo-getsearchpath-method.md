@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedSymbolSearchInfo::GetSearchPath"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetSearchPath method [.NET Framework debugging]"
   - "ISymUnmanagedSymbolSearchInfo::GetSearchPath method [.NET Framework debugging]"

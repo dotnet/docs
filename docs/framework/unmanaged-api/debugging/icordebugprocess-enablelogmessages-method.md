@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugProcess::EnableLogMessages"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugProcess::EnableLogMessages method [.NET Framework debugging]"
   - "EnableLogMessages method [.NET Framework debugging]"

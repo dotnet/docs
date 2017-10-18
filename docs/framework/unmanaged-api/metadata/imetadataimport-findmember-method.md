@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataImport::FindMember"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataImport::FindMember method [.NET Framework metadata]"
   - "FindMember method [.NET Framework metadata]"

@@ -9,11 +9,13 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+- "csharp"
+- "vb"
+- "cpp"
 f1_keywords: 
   - "StringFormat.FormatFlags"
   - "Graphics.DrawString"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "text [Windows Forms], drawing vertical"
   - "strings [Windows Forms], drawing vertical"

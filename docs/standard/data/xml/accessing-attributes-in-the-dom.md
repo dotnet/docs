@@ -8,11 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+dev_langs:
+- "csharp"
+- "vb"
 ms.assetid: ce2df341-a1a4-4e97-8e1b-cd45b8e3e71e
 caps.latest.revision: 4
 author: "mairaw"
@@ -195,7 +193,7 @@ public class Sample
 ```  
   
 ## Retrieving an Individual Attribute Node  
- To retrieve a single attribute node from an element, the <xref:System.Xml.XmlElement.GetAttributeNode%2A?displayProperty=fullName> method is used. It returns an object of type **XmlAttribute**. Once you have an **XmlAttribute**, all the methods and properties available in the <xref:System.Xml.XmlAttribute?displayProperty=fullName> class are available on that object, such as finding the **OwnerElement**.  
+ To retrieve a single attribute node from an element, the <xref:System.Xml.XmlElement.GetAttributeNode%2A?displayProperty=nameWithType> method is used. It returns an object of type **XmlAttribute**. Once you have an **XmlAttribute**, all the methods and properties available in the <xref:System.Xml.XmlAttribute?displayProperty=nameWithType> class are available on that object, such as finding the **OwnerElement**.  
   
 ```vb  
 Imports System  

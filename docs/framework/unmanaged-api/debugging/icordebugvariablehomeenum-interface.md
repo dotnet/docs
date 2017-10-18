@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugVariableHomeEnum"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugVariableHomeEnum interface [.NET Framework debugging]"
 ms.assetid: c312ae6d-c8dc-48d6-9f1e-ead515c88fdf

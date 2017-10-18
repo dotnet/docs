@@ -91,9 +91,9 @@
   
  If neither `column` nor `row` is -1, `control` will be added at the absolute position given by (`column`, `row`).  
   
- If you set both `column` and `row` to -1, `control` will flow to the first open position, with the specific flow behavior defined by the <xref:System.Windows.Forms.TableLayoutPanel.GrowStyle%2A?displayProperty=fullName> value. This is equivalent to using the <xref:System.Windows.Forms.Control.ControlCollection.Add%2A?displayProperty=fullName> method.  
+ If you set both `column` and `row` to -1, `control` will flow to the first open position, with the specific flow behavior defined by the <xref:System.Windows.Forms.TableLayoutPanel.GrowStyle%2A?displayProperty=nameWithType> value. This is equivalent to using the <xref:System.Windows.Forms.Control.ControlCollection.Add%2A?displayProperty=nameWithType> method.  
   
- To get to the actual current position of a control, use the <xref:System.Windows.Forms.TableLayoutPanel.GetPositionFromControl%2A?displayProperty=fullName> method. This method takes into account the entire <xref:System.Windows.Forms.TableLayoutPanel> control state, including column or row spanning and when the <xref:System.Windows.Forms.TableLayoutPanel.LayoutEngine%2A?displayProperty=fullName> has placed a control with its `Column` and `Row` properties set to -1.  
+ To get to the actual current position of a control, use the <xref:System.Windows.Forms.TableLayoutPanel.GetPositionFromControl%2A?displayProperty=nameWithType> method. This method takes into account the entire <xref:System.Windows.Forms.TableLayoutPanel> control state, including column or row spanning and when the <xref:System.Windows.Forms.TableLayoutPanel.LayoutEngine%2A?displayProperty=nameWithType> has placed a control with its `Column` and `Row` properties set to -1.  
   
  ]]></format>
         </remarks>

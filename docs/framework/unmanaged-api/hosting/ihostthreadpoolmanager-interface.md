@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostThreadPoolManager"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostThreadPoolManager interface [.NET Framework hosting]"
 ms.assetid: c3a2cd90-7c4e-4374-bb87-b41befb8344f

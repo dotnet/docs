@@ -23,7 +23,7 @@
    
   
 ## Examples  
- The following example demonstrates changing the mouse cursor using the <xref:System.Windows.Forms.Control.Cursor%2A?displayProperty=fullName> property, the <xref:System.Windows.Forms.Cursor> class, and the <xref:System.Windows.Forms.Cursors> class. The example creates a form that contains a <xref:System.Windows.Forms.ComboBox> control, a <xref:System.Windows.Forms.Panel> control, and a <xref:System.Windows.Forms.ListView> control. The <xref:System.Windows.Forms.ComboBox> contains all cursors provided by the <xref:System.Windows.Forms.Cursors> class. When the user selects a mouse cursor in the <xref:System.Windows.Forms.ComboBox>, the <xref:System.Windows.Forms.Control.Cursor%2A?displayProperty=fullName> property is set to the selected cursor, which updates the cursor for the <xref:System.Windows.Forms.Panel>. The <xref:System.Windows.Forms.ListView> is updated every time the <xref:System.Windows.Forms.Control.CursorChanged?displayProperty=fullName> event occurs.  
+ The following example demonstrates changing the mouse cursor using the <xref:System.Windows.Forms.Control.Cursor%2A?displayProperty=nameWithType> property, the <xref:System.Windows.Forms.Cursor> class, and the <xref:System.Windows.Forms.Cursors> class. The example creates a form that contains a <xref:System.Windows.Forms.ComboBox> control, a <xref:System.Windows.Forms.Panel> control, and a <xref:System.Windows.Forms.ListView> control. The <xref:System.Windows.Forms.ComboBox> contains all cursors provided by the <xref:System.Windows.Forms.Cursors> class. When the user selects a mouse cursor in the <xref:System.Windows.Forms.ComboBox>, the <xref:System.Windows.Forms.Control.Cursor%2A?displayProperty=nameWithType> property is set to the selected cursor, which updates the cursor for the <xref:System.Windows.Forms.Panel>. The <xref:System.Windows.Forms.ListView> is updated every time the <xref:System.Windows.Forms.Control.CursorChanged?displayProperty=nameWithType> event occurs.  
   
  [!code-cpp[System.Windows.Forms.Cursors#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Cursors/CPP/cursorexample.cpp#1)]
  [!code-csharp[System.Windows.Forms.Cursors#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Cursors/CS/cursorexample.cs#1)]
@@ -141,7 +141,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates how to override the <xref:System.Windows.Forms.Control.OnMouseHover%2A?displayProperty=fullName> method in a derived class and using the <xref:System.Windows.Forms.Cursors.Hand%2A> property. To run the example, paste the following code in a new form and paste this class, forming the same file, after the form. Add a button of type FunButton to the form.  
+ The following code example demonstrates how to override the <xref:System.Windows.Forms.Control.OnMouseHover%2A?displayProperty=nameWithType> method in a derived class and using the <xref:System.Windows.Forms.Cursors.Hand%2A> property. To run the example, paste the following code in a new form and paste this class, forming the same file, after the form. Add a button of type FunButton to the form.  
   
  [!code-cpp[System.Windows.Forms.ControlDefaultProperties#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ControlDefaultProperties/CPP/form1.cpp#2)]
  [!code-csharp[System.Windows.Forms.ControlDefaultProperties#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ControlDefaultProperties/CS/form1.cs#2)]

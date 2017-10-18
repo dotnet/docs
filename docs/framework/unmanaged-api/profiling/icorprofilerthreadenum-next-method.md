@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerThreadEnum::Next"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerThreadEnum::Next method [.NET Framework profiling]"
   - "Next method, ICorProfilerThreadEnum interface [.NET Framework profiling]"

@@ -21,7 +21,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Before the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], almost any object could be used as an evidence object if the hosting code wanted to apply it as evidence. For example, some .NET Framework code recognized <xref:System.Uri?displayProperty=fullName> objects as evidence. The common language runtime (CLR) considered evidence objects as <xref:System.Object?displayProperty=fullName> references, and did not apply any type safety to them.  
+ Before the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], almost any object could be used as an evidence object if the hosting code wanted to apply it as evidence. For example, some .NET Framework code recognized <xref:System.Uri?displayProperty=nameWithType> objects as evidence. The common language runtime (CLR) considered evidence objects as <xref:System.Object?displayProperty=nameWithType> references, and did not apply any type safety to them.  
   
  This presented a problem because there were implicit restrictions on which types could be used as evidence objects. Specifically, any object used as evidence had to be serializable and could not be `null`. If these requirements were not met, the CLR threw an exception whenever an operation that required one of these assumptions was performed.  
   

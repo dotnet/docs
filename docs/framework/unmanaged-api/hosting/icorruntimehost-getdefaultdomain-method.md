@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorRuntimeHost::GetDefaultDomain"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorRuntimeHost::GetDefaultDomain method [.NET Framework hosting]"
   - "GetDefaultDomain method [.NET Framework hosting]"
@@ -31,7 +29,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ---
 # ICorRuntimeHost::GetDefaultDomain Method
-Gets an interface pointer of type <xref:System._AppDomain?displayProperty=fullName> that represents the default domain for the current process.  
+Gets an interface pointer of type <xref:System._AppDomain?displayProperty=nameWithType> that represents the default domain for the current process.  
   
 ## Syntax  
   
@@ -43,9 +41,9 @@ HRESULT GetDefaultDomain (
   
 #### Parameters  
  `pAppDomain`  
- [out] An interface pointer of type <xref:System._AppDomain?displayProperty=fullName> to the <xref:System.AppDomain> instance that represents the default application domain for the process.  
+ [out] An interface pointer of type <xref:System._AppDomain?displayProperty=nameWithType> to the <xref:System.AppDomain> instance that represents the default application domain for the process.  
   
- This pointer is typed `IUnknown`, so callers should generally call `QueryInterface` to obtain an interface pointer of type <xref:System._AppDomain?displayProperty=fullName>.  
+ This pointer is typed `IUnknown`, so callers should generally call `QueryInterface` to obtain an interface pointer of type <xref:System._AppDomain?displayProperty=nameWithType>.  
   
 ## Return Value  
   

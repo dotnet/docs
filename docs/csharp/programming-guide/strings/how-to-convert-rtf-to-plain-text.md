@@ -1,38 +1,16 @@
 ---
 title: "How to: Convert RTF to Plain Text (C# Programming Guide)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "strings [C#], converting from RTF"
 ms.assetid: 3b386a87-899d-4d98-bc82-a980526ddaac
 caps.latest.revision: 21
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # How to: Convert RTF to Plain Text (C# Programming Guide)
 Rich Text Format (RTF) is a document format developed by Microsoft in the late 1980s to enable the exchange of documents across operating systems. Both Microsoft Word and WordPad can read and write RTF documents. In the .NET Framework, you can use the <xref:System.Windows.Forms.RichTextBox> control to create a word processor that supports RTF and enables a user to apply formatting to text in a WYSIWIG manner.  
@@ -57,10 +35,10 @@ These characters are from the extended ASCII character set (Windows code page 12
   
  [!code-cs[csProgGuideStrings#33](../../../csharp/programming-guide/strings/codesnippet/CSharp/how-to-convert-rtf-to-plain-text_1.cs)]  
   
- RTF characters are encoded in eight bits. However, users can specify Unicode characters in addition to extended ASCII characters from specified code pages. Because the <xref:System.Windows.Forms.RichTextBox.Text%2A?displayProperty=fullName> property is of type [string](../../../csharp/language-reference/keywords/string.md), the characters are encoded as Unicode UTF-16. Any extended ASCII characters and Unicode characters from the source RTF document are correctly encoded in the text output.  
+ RTF characters are encoded in eight bits. However, users can specify Unicode characters in addition to extended ASCII characters from specified code pages. Because the <xref:System.Windows.Forms.RichTextBox.Text%2A?displayProperty=nameWithType> property is of type [string](../../../csharp/language-reference/keywords/string.md), the characters are encoded as Unicode UTF-16. Any extended ASCII characters and Unicode characters from the source RTF document are correctly encoded in the text output.  
   
- If you use the <xref:System.IO.File.WriteAllText%2A?displayProperty=fullName> method to write the text to disk, the text will be encoded as UTF-8 (without a Byte Order Mark).  
+ If you use the <xref:System.IO.File.WriteAllText%2A?displayProperty=nameWithType> method to write the text to disk, the text will be encoded as UTF-8 (without a Byte Order Mark).  
   
 ## See Also  
- <xref:System.Windows.Forms.RichTextBox?displayProperty=fullName>   
+ <xref:System.Windows.Forms.RichTextBox?displayProperty=nameWithType>   
  [Strings](../../../csharp/programming-guide/strings/index.md)

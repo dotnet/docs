@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostIoCompletionManager::GetAvailableThreads"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetAvailableThreads method, IHostIoCompletionManager interface [.NET Framework hosting]"
   - "IHostIoCompletionManager::GetAvailableThreads method [.NET Framework hosting]"

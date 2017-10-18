@@ -79,7 +79,7 @@
   
  For example, consider how <xref:System.Type> objects are serialized. Instead of transmitting the data from the <xref:System.Type> object, the system transmits a holder object with the name of the type object and information on the assembly where it is found in an object implementing <xref:System.Runtime.Serialization.IObjectReference>. When both the type name and assembly name are available, the deserialization infrastructure calls <xref:System.Runtime.Serialization.IObjectReference.GetRealObject%2A> on the holder object that has been transmitted. This holder returns the <xref:System.Type> object that is inserted into the graph.  
   
- This method is protected by a <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> for the <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> specified.  
+ This method is protected by a <xref:System.Security.Permissions.SecurityAction.LinkDemand?displayProperty=nameWithType> for the <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter?displayProperty=nameWithType> specified.  
   
    
   

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugArrayValue::GetCount"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugArrayValue::GetCount method [.NET Framework debugging]"
   - "GetCount method, ICorDebugArrayValue interface [.NET Framework debugging]"

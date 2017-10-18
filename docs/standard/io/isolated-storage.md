@@ -121,9 +121,9 @@ manager: "wpickett"
 ## Creating, Enumerating, and Deleting Isolated Storage  
  The .NET Framework provides three classes in the <xref:System.IO.IsolatedStorage> namespace to help you perform tasks that involve isolated storage:  
   
--   <xref:System.IO.IsolatedStorage.IsolatedStorageFile>, derives from <xref:System.IO.IsolatedStorage.IsolatedStorage?displayProperty=fullName> and provides basic management of stored assembly and application files. An instance of the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> class represents a single store located in the file system.  
+-   <xref:System.IO.IsolatedStorage.IsolatedStorageFile>, derives from <xref:System.IO.IsolatedStorage.IsolatedStorage?displayProperty=nameWithType> and provides basic management of stored assembly and application files. An instance of the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> class represents a single store located in the file system.  
   
--   <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream> derives from <xref:System.IO.FileStream?displayProperty=fullName> and provides access to the files in a store.  
+-   <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream> derives from <xref:System.IO.FileStream?displayProperty=nameWithType> and provides access to the files in a store.  
   
 -   <xref:System.IO.IsolatedStorage.IsolatedStorageScope> is an enumeration that enables you to create and select a store with the appropriate isolation type.  
   
@@ -162,8 +162,8 @@ manager: "wpickett"
 |-----------|-----------------|  
 |[Types of Isolation](../../../docs/standard/io/types-of-isolation.md)|Describes the different types of isolation.|  
 |[How to: Obtain Stores for Isolated Storage](../../../docs/standard/io/how-to-obtain-stores-for-isolated-storage.md)|Provides an example of using the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> class to obtain a store isolated by user and assembly.|  
-|[How to: Enumerate Stores for Isolated Storage](../../../docs/standard/io/how-to-enumerate-stores-for-isolated-storage.md)|Shows how to use the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetEnumerator%2A?displayProperty=fullName> method to calculate the size of all isolated storage for the user.|  
-|[How to: Delete Stores in Isolated Storage](../../../docs/standard/io/how-to-delete-stores-in-isolated-storage.md)|Shows how to use the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.Remove%2A?displayProperty=fullName> method in two different ways to delete isolated stores.|  
+|[How to: Enumerate Stores for Isolated Storage](../../../docs/standard/io/how-to-enumerate-stores-for-isolated-storage.md)|Shows how to use the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetEnumerator%2A?displayProperty=nameWithType> method to calculate the size of all isolated storage for the user.|  
+|[How to: Delete Stores in Isolated Storage](../../../docs/standard/io/how-to-delete-stores-in-isolated-storage.md)|Shows how to use the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.Remove%2A?displayProperty=nameWithType> method in two different ways to delete isolated stores.|  
 |[How to: Anticipate Out-of-Space Conditions with Isolated Storage](../../../docs/standard/io/how-to-anticipate-out-of-space-conditions-with-isolated-storage.md)|Shows how to measure the remaining space in an isolated store.|  
 |[How to: Create Files and Directories in Isolated Storage](../../../docs/standard/io/how-to-create-files-and-directories-in-isolated-storage.md)|Provides some examples of creating files and directories in an isolated store.|  
 |[How to: Find Existing Files and Directories in Isolated Storage](../../../docs/standard/io/how-to-find-existing-files-and-directories-in-isolated-storage.md)|Demonstrates how to read the directory structure and files in isolated storage.|  
@@ -173,10 +173,10 @@ manager: "wpickett"
   
 <a name="reference"></a>   
 ## Reference  
- <xref:System.IO.IsolatedStorage.IsolatedStorage?displayProperty=fullName>  
+ <xref:System.IO.IsolatedStorage.IsolatedStorage?displayProperty=nameWithType>  
   
- <xref:System.IO.IsolatedStorage.IsolatedStorageFile?displayProperty=fullName>  
+ <xref:System.IO.IsolatedStorage.IsolatedStorageFile?displayProperty=nameWithType>  
   
- <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream?displayProperty=fullName>  
+ <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream?displayProperty=nameWithType>  
   
- <xref:System.IO.IsolatedStorage.IsolatedStorageScope?displayProperty=fullName>
+ <xref:System.IO.IsolatedStorage.IsolatedStorageScope?displayProperty=nameWithType>

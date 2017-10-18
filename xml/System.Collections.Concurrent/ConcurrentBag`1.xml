@@ -521,7 +521,7 @@
     </Member>
     <Member MemberName="TryPeek">
       <MemberSignature Language="C#" Value="public bool TryPeek (out T result);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryPeek(!T result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryPeek([out] !T&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentBag`1.TryPeek(`0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -554,7 +554,7 @@
     </Member>
     <Member MemberName="TryTake">
       <MemberSignature Language="C#" Value="public bool TryTake (out T result);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryTake(!T result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryTake([out] !T&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentBag`1.TryTake(`0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

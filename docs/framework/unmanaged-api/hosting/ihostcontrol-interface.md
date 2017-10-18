@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostControl"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostControl interface [.NET Framework hosting]"
 ms.assetid: a4ae0d1f-ade9-4b0a-a122-93ed11a5e6b3

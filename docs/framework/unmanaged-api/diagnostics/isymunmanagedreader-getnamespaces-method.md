@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedReader::GetNamespaces"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedReader::GetNamespaces method [.NET Framework debugging]"
   - "GetNamespaces method, ISymUnmanagedReader interface [.NET Framework debugging]"

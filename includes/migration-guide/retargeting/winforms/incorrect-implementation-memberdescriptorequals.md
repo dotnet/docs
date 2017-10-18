@@ -7,5 +7,6 @@
 |Scope|Edge|
 |Version|4.6.2|
 |Type|Retargeting|
-|Affected APIs|<ul><li><xref:System.ComponentModel.MemberDescriptor.Equals(System.Object)?displayProperty=fullName></li></ul>|
+|Affected APIs|<ul><li><xref:System.ComponentModel.MemberDescriptor.Equals(System.Object)?displayProperty=nameWithType></li></ul>|
+|Analyzers|<ul><li>CD0150</li></ul>|
 

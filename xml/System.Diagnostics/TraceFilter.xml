@@ -107,7 +107,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example shows how to override the <xref:System.Diagnostics.TraceFilter.ShouldTrace%2A> method to indicate tracing should occur when the trace event type of the event is equal to <xref:System.Diagnostics.TraceEventType?displayProperty=fullName>.  
+ The following code example shows how to override the <xref:System.Diagnostics.TraceFilter.ShouldTrace%2A> method to indicate tracing should occur when the trace event type of the event is equal to <xref:System.Diagnostics.TraceEventType.Error?displayProperty=nameWithType>.  
   
  [!code-cpp[System.Diagnostics.TraceFilter#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.diagnostics.tracefilter/cpp/source.cpp#2)]
  [!code-csharp[System.Diagnostics.TraceFilter#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.diagnostics.tracefilter/cs/source.cs#2)]

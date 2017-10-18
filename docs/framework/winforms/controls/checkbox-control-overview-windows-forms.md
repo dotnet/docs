@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "CheckBox"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "bound controls, check boxes"
   - "CheckBox control [Windows Forms], about CheckBox control"

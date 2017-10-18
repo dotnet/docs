@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugFunctionBreakpoint::GetOffset"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugFunctionBreakpoint::GetOffset method [.NET Framework debugging]"
   - "GetOffset method, ICorDebugFunctionBreakpoint interface [.NET Framework debugging]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "COR_DEBUG_IL_TO_NATIVE_MAP"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "COR_DEBUG_IL_TO_NATIVE_MAP structure [.NET Framework debugging]"
 ms.assetid: 06f3b504-085f-4142-934a-25381fe23d4c

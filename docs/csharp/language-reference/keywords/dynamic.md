@@ -1,14 +1,12 @@
 ---
 title: "dynamic (C# Reference)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
 f1_keywords: 
   - "dynamic_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "dynamic [C#]"
   - "dynamic keyword [C#]"
@@ -16,20 +14,6 @@ ms.assetid: 9e797102-cc83-4964-bf58-afe4f54d16bc
 caps.latest.revision: 25
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # dynamic (C# Reference)
 The `dynamic` type enables the operations in which it occurs to bypass compile-time type checking. Instead, these operations are resolved at run time. The `dynamic` type simplifies access to COM APIs such as the Office Automation APIs, and also to dynamic APIs such as IronPython libraries, and to the HTML Document Object Model (DOM).  
@@ -78,8 +62,8 @@ obj = obj + 3;
  For more information and examples, see [Using Type dynamic](../../../csharp/programming-guide/types/using-type-dynamic.md).  
   
 ## See Also  
- <xref:System.Dynamic.ExpandoObject?displayProperty=fullName>   
- <xref:System.Dynamic.DynamicObject?displayProperty=fullName>   
+ <xref:System.Dynamic.ExpandoObject?displayProperty=nameWithType>   
+ <xref:System.Dynamic.DynamicObject?displayProperty=nameWithType>   
  [Using Type dynamic](../../../csharp/programming-guide/types/using-type-dynamic.md)   
  [object](../../../csharp/language-reference/keywords/object.md)   
  [is](../../../csharp/language-reference/keywords/is.md)   

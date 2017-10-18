@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+- "csharp"
+- "vb"
 helpviewer_keywords: 
   - "thread-safe collections, blocking dictionary"
 ms.assetid: 38f2f3d8-15e5-4bf4-9c83-2b5b6f22bad1
@@ -34,5 +37,5 @@ This example shows how to add and remove items from a <xref:System.Collections.C
  [!code-vb[CDS_BlockingCollection#02](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/cds_blockingcollection/vb/nonblockingbc.vb#02)]  
   
 ## See Also  
- <xref:System.Collections.Concurrent?displayProperty=fullName>   
+ <xref:System.Collections.Concurrent?displayProperty=nameWithType>   
  [BlockingCollection Overview](../../../../docs/standard/collections/thread-safe/blockingcollection-overview.md)

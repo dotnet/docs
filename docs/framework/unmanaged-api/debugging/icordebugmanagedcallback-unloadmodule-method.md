@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugManagedCallback::UnloadModule"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugManagedCallback::UnloadModule method [.NET Framework debugging]"
   - "UnloadModule method [.NET Framework debugging]"

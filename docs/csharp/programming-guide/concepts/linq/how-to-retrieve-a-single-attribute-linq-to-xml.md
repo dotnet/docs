@@ -1,7 +1,7 @@
 ---
 title: "How to: Retrieve a Single Attribute (LINQ to XML) (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: 1b6b07b9-933f-47e9-874e-e790cab49dc5
 caps.latest.revision: 3
 author: "BillWagner"

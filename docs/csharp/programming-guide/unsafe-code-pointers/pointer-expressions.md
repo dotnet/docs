@@ -1,16 +1,10 @@
 ---
 title: "Pointer Expressions (C# Programming Guide)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "expressions [C#], pointer types"
   - "pointer expressions [C#]"
@@ -18,21 +12,6 @@ ms.assetid: 3e7d9db3-20e9-4493-9c99-53c3214d19e5
 caps.latest.revision: 10
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Pointer Expressions (C# Programming Guide)
 In this section, the following pointer expressions are discussed:  

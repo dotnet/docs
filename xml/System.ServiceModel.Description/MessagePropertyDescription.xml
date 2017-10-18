@@ -7,6 +7,12 @@
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ServiceModel.Description.MessagePartDescription</BaseTypeName>
   </Base>
@@ -17,7 +23,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ServiceModel.Description.MessagePropertyDescription> class represents message properties specified in a message contract by the use of the <xref:System.ServiceModel.MessagePropertyAttribute?displayProperty=fullName>. Message properties are used to place information on the message that can be used by other objects further on in the message pipeline but that are not serialized with the message.  
+ The <xref:System.ServiceModel.Description.MessagePropertyDescription> class represents message properties specified in a message contract by the use of the <xref:System.ServiceModel.MessagePropertyAttribute?displayProperty=nameWithType>. Message properties are used to place information on the message that can be used by other objects further on in the message pipeline but that are not serialized with the message.  
   
  ]]></format>
     </remarks>
@@ -32,6 +38,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />

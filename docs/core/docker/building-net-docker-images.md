@@ -164,6 +164,7 @@ docker build -t aspnetapp .
 docker run -it --rm -p 8000:80 --name aspnetcore_sample aspnetapp
 ```
 
+
 > [!Note] The `docker run` '-p' argument maps port 8000 on your local machine to port 80 in the container (the port mapping form is `host:container`). For more information, see the [docker run](https://docs.docker.com/engine/reference/commandline/exec/) reference on command-line parameters.
 
 After the application starts, visit **http://localhost:8000** in your web browser.
@@ -247,4 +248,5 @@ The following Docker images are used in this sample
 > [!Note]
 > If you do not have an Azure subscription, [sign up today](https://azure.microsoft.com/en-us/free/?b=16.48) for a free 30-day account and get $200 in Azure Credits to try out any combination of Azure services.
 
-
+<a name="dotnet-restore-note"></a>
+[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]

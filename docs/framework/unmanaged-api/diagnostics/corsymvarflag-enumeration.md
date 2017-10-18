@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorSymVarFlag"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorSymVarFlag enumeration [.NET Framework debugging]"
 ms.assetid: c3f7d307-4047-4f9a-be8c-f152fca42fd0

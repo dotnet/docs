@@ -90,7 +90,7 @@
    
   
 ## Examples  
- The following code example uses the <xref:System.Windows.Forms.BindingManagerBase.GetItemProperties%2A> method to return a <xref:System.ComponentModel.PropertyDescriptorCollection?displayProperty=fullName> for a <xref:System.Data.DataTable>. The <xref:System.ComponentModel.PropertyDescriptor> for a <xref:System.Data.DataColumn> is then used to create the <xref:System.Windows.Forms.DataGridBoolColumn>.  
+ The following code example uses the <xref:System.Windows.Forms.BindingManagerBase.GetItemProperties%2A> method to return a <xref:System.ComponentModel.PropertyDescriptorCollection?displayProperty=nameWithType> for a <xref:System.Data.DataTable>. The <xref:System.ComponentModel.PropertyDescriptor> for a <xref:System.Data.DataColumn> is then used to create the <xref:System.Windows.Forms.DataGridBoolColumn>.  
   
  [!code-cpp[Classic DataGridBoolColumn.DataGridBoolColumn1 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGridBoolColumn.DataGridBoolColumn1 Example/CPP/source.cpp#1)]
  [!code-csharp[Classic DataGridBoolColumn.DataGridBoolColumn1 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGridBoolColumn.DataGridBoolColumn1 Example/CS/source.cs#1)]

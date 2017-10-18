@@ -1,16 +1,13 @@
 ---
 title: "Walkthrough: Creating and Using Dynamic Objects (C# and Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 dev_langs: 
-  - "CSharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "dynamic objects [Visual Basic]"
   - "dynamic objects"
@@ -19,30 +16,16 @@ ms.assetid: 568f1645-1305-4906-8625-5d77af81e04f
 caps.latest.revision: 22
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Walkthrough: Creating and Using Dynamic Objects (C# and Visual Basic)
+
 Dynamic objects expose members such as properties and methods at run time, instead of in at compile time. This enables you to create objects to work with structures that do not match a static type or format. For example, you can use a dynamic object to reference the HTML Document Object Model (DOM), which can contain any combination of valid HTML markup elements and attributes. Because each HTML document is unique, the members for a particular HTML document are determined at run time. A common method to reference an attribute of an HTML element is to pass the name of the attribute to the `GetProperty` method of the element. To reference the `id` attribute of the HTML element `<div id="Div1">`, you first obtain a reference to the `<div>` element, and then use `divElement.GetProperty("id")`. If you use a dynamic object, you can reference the `id` attribute as `divElement.id`.  
   
  Dynamic objects also provide convenient access to dynamic languages such as IronPython and IronRuby. You can use a dynamic object to refer to a dynamic script that is interpreted at run time.  
   
  You reference a dynamic object by using late binding. In C#, you specify the type of a late-bound object as `dynamic`. In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], you specify the type of a late-bound object as `Object`. For more information, see [dynamic](../../../csharp/language-reference/keywords/dynamic.md) and [Early and Late Binding](../../../visual-basic/programming-guide/language-features/early-late-binding/index.md).  
   
- You can create custom dynamic objects by using the classes in the <xref:System.Dynamic?displayProperty=fullName> namespace. For example, you can create an <xref:System.Dynamic.ExpandoObject> and specify the members of that object at run time. You can also create your own type that inherits the <xref:System.Dynamic.DynamicObject> class. You can then override the members of the <xref:System.Dynamic.DynamicObject> class to provide run-time dynamic functionality.  
+ You can create custom dynamic objects by using the classes in the <xref:System.Dynamic?displayProperty=nameWithType> namespace. For example, you can create an <xref:System.Dynamic.ExpandoObject> and specify the members of that object at run time. You can also create your own type that inherits the <xref:System.Dynamic.DynamicObject> class. You can then override the members of the <xref:System.Dynamic.DynamicObject> class to provide run-time dynamic functionality.  
   
  In this walkthrough you will perform the following tasks:  
   
@@ -68,7 +51,7 @@ Dynamic objects expose members such as properties and methods at run time, inste
   
 4.  Right-click the DynamicSample project and point to **Add**, and then click **Class**. In the **Name** box, type `ReadOnlyFile`, and then click **OK**. A new file is added that contains the ReadOnlyFile class.  
   
-5.  At the top of the ReadOnlyFile.cs or ReadOnlyFile.vb file, add the following code to import the <xref:System.IO?displayProperty=fullName> and <xref:System.Dynamic?displayProperty=fullName> namespaces.  
+5.  At the top of the ReadOnlyFile.cs or ReadOnlyFile.vb file, add the following code to import the <xref:System.IO?displayProperty=nameWithType> and <xref:System.Dynamic?displayProperty=nameWithType> namespaces.  
   
      [!code-cs[VbDynamicWalkthrough#1](../../../csharp/programming-guide/types/codesnippet/CSharp/walkthrough-creating-and-using-dynamic-objects_1.cs)]
 
@@ -185,8 +168,8 @@ Dynamic objects expose members such as properties and methods at run time, inste
 9. Save the file and press CTRL+F5 to build and run the application.  
   
 ## See Also  
- <xref:System.Dynamic?displayProperty=fullName>   
- <xref:System.Dynamic.DynamicObject?displayProperty=fullName>   
+ <xref:System.Dynamic?displayProperty=nameWithType>   
+ <xref:System.Dynamic.DynamicObject?displayProperty=nameWithType>   
  [Using Type dynamic](../../../csharp/programming-guide/types/using-type-dynamic.md)   
  [Early and Late Binding](../../../visual-basic/programming-guide/language-features/early-late-binding/index.md)   
  [dynamic](../../../csharp/language-reference/keywords/dynamic.md)   

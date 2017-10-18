@@ -16,8 +16,6 @@ api_location:
   - "corprof.idl"
 api_type: 
   - "COM"
-dev_langs: 
-  - "C++"
 ms.assetid: a0be019e-aaa1-4036-990f-565f114d4b5c
 caps.latest.revision: 4
 author: "rpetrusha"

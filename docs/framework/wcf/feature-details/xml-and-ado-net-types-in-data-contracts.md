@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 ms.assetid: c2ce8461-3c15-4c41-8c81-1cb78f5b59a6
 caps.latest.revision: 7
 author: "Erikre"
@@ -157,7 +160,7 @@ The [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] data contract model 
   
 -   The `ReadXml` implementation should not read the wrapper element. It is expected to read the one element that `WriteXml` produces.  
   
--   When serializing an element type regularly (for example, as a data member in a data contract), the serializer outputs a wrapper element before calling `WriteXml`, as with content types. However, when serializing an element type at the top level, the serializer does not normally output a wrapper element at all around the element that `WriteXml` writes, unless a root name and namespace were explicitly specified when constructing the serializer in the `DataContractSerializer` or `NetDataContractSerializer` constructors. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Serialization and Deserialization](../../../../docs/framework/wcf/feature-details/serialization-and-deserialization.md).  
+-   When serializing an element type regularly (for example, as a data member in a data contract), the serializer outputs a wrapper element before calling `WriteXml`, as with content types. However, when serializing an element type at the top level, the serializer does not normally output a wrapper element at all around the element that `WriteXml` writes, unless a root name and namespace were explicitly specified when constructing the serializer in the `DataContractSerializer` or `NetDataContractSerializer` constructors. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Serialization and Deserialization](../../../../docs/framework/wcf/feature-details/serialization-and-deserialization.md).  
   
 -   When serializing an element type at the top level without specifying the root name and namespace at construction time, <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteStartObject%2A> and <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteEndObject%2A> essentially does nothing and <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteObjectContent%2A> calls `WriteXml`. In this mode, the object being serialized cannot be null and cannot be polymorphically assigned. Also, object graph preservation cannot enabled and the `NetDataContractSerializer` cannot be used.  
   

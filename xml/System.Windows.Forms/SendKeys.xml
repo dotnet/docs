@@ -132,7 +132,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use <xref:System.Windows.Forms.SendKeys.Flush%2A> to wait for the application to process keystrokes and other operating system messages that are in the message queue. This is equivalent to calling <xref:System.Windows.Forms.Application.DoEvents%2A?displayProperty=fullName> until there are no more keys to process.  
+ Use <xref:System.Windows.Forms.SendKeys.Flush%2A> to wait for the application to process keystrokes and other operating system messages that are in the message queue. This is equivalent to calling <xref:System.Windows.Forms.Application.DoEvents%2A?displayProperty=nameWithType> until there are no more keys to process.  
   
 > [!NOTE]
 >  Because there is no managed method to activate another application, you can either use this class within the current application or use native Windows methods, such as `FindWindow` and `SetForegroundWindow`, to force focus on other applications.  

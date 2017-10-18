@@ -52,8 +52,8 @@
 ## Examples  
  The following example demonstrates how to retrieve an <xref:System.Web.UI.WebControls.Image> control from the <xref:System.Web.UI.WebControls.FormViewRow> object that represents the item row. The <xref:System.Web.UI.WebControls.Image> controls are declared in the edit and item templates.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewRowClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewRowClass/CS/formviewrowcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewRowClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewRowClass/VB/formviewrowvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewRowClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewRowClass/CS/formviewrowcs.aspx#1)]
+ [!code-aspx-vb[FormViewRowClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewRowClass/VB/formviewrowvb.aspx#1)]  
   
  ]]></format>
     </remarks>

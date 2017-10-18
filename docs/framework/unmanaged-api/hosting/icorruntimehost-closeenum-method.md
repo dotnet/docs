@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorRuntimeHost::CloseEnum"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CloseEnum method, ICorRuntimeHost interface [.NET Framework hosting]"
   - "ICorRuntimeHost::CloseEnum method [.NET Framework hosting]"

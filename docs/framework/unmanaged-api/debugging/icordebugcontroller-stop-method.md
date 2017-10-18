@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugController::Stop"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "Stop method, ICorDebugController interface [.NET Framework debugging]"
   - "ICorDebugController::Stop method [.NET Framework debugging]"

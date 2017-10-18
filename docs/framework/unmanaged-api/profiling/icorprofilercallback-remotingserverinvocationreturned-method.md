@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::RemotingServerInvocationReturned"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerCallback::RemotingServerInvocationReturned method [.NET Framework profiling]"
   - "RemotingServerInvocationReturned method [.NET Framework profiling]"

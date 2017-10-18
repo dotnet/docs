@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataEmit::SetParamProps"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataEmit::SetParamProps method [.NET Framework metadata]"
   - "SetParamProps method [.NET Framework metadata]"

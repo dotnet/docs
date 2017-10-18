@@ -9,8 +9,10 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
+dev_langs:
+- "csharp"
+- "vb"
+- "cpp"
 helpviewer_keywords: 
   - "Windows Forms, captions"
   - "Button control [Windows Forms], button text"
@@ -76,6 +78,6 @@ Windows Forms controls usually display some text that is related to the primary 
     ```  
   
 ## See Also  
- <xref:System.Windows.Forms.Control.Text%2A?displayProperty=fullName>   
+ <xref:System.Windows.Forms.Control.Text%2A?displayProperty=nameWithType>   
  [How to: Create Access Keys for Windows Forms Controls](../../../../docs/framework/winforms/controls/how-to-create-access-keys-for-windows-forms-controls.md)   
  [How to: Respond to Windows Forms Button Clicks](../../../../docs/framework/winforms/controls/how-to-respond-to-windows-forms-button-clicks.md)

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugBreakpoint::IsActive"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugBreakpoint::IsActive method [.NET Framework debugging]"
   - "IsActive method, ICorDebugBreakpoint interface [.NET Framework debugging]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugManagedCallback::ControlCTrap"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugManagedCallback::ControlCTrap method [.NET Framework debugging]"
   - "ControlCTrap method [.NET Framework debugging]"

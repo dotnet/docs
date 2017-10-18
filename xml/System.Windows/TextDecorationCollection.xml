@@ -174,7 +174,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -223,7 +223,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -915,7 +915,7 @@
     </Member>
     <Member MemberName="TryRemove">
       <MemberSignature Language="C#" Value="public bool TryRemove (System.Collections.Generic.IEnumerable&lt;System.Windows.TextDecoration&gt; textDecorations, out System.Windows.TextDecorationCollection result);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryRemove(class System.Collections.Generic.IEnumerable`1&lt;class System.Windows.TextDecoration&gt; textDecorations, class System.Windows.TextDecorationCollection result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryRemove(class System.Collections.Generic.IEnumerable`1&lt;class System.Windows.TextDecoration&gt; textDecorations, [out] class System.Windows.TextDecorationCollection&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.TextDecorationCollection.TryRemove(System.Collections.Generic.IEnumerable{System.Windows.TextDecoration},System.Windows.TextDecorationCollection@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

@@ -19,8 +19,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "ClearDownloadCache"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ClearDownloadCache function [.NET Framework fusion]"
 ms.assetid: df7595d1-430f-44b4-8160-4c2ba9df70b1

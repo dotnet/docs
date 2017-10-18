@@ -18,8 +18,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "AddImport"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "AddImport method"
 ms.assetid: 4fedf8a0-08c8-43d0-aa00-20f2a521c991

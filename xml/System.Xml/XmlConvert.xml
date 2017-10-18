@@ -677,7 +677,7 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
 ## Remarks  
   
 > [!NOTE]
->  The <xref:System.Xml.XmlConvert.ToDateTime%28System.String%29?displayProperty=fullName> method is obsolete in the 2.0 version of the .NET Framework and has been replaced by the <xref:System.Xml.XmlConvert.ToDateTime%28System.String%2CSystem.Xml.XmlDateTimeSerializationMode%29?displayProperty=fullName> method.  
+>  The <xref:System.Xml.XmlConvert.ToDateTime%28System.String%29?displayProperty=nameWithType> method is obsolete in the 2.0 version of the .NET Framework and has been replaced by the <xref:System.Xml.XmlConvert.ToDateTime%28System.String%2CSystem.Xml.XmlDateTimeSerializationMode%29?displayProperty=nameWithType> method.  
   
    
   
@@ -1522,7 +1522,7 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
 ## Remarks  
   
 > [!NOTE]
->  The <xref:System.Xml.XmlConvert.ToString%28System.DateTime%29?displayProperty=fullName> method is obsolete in the 2.0 version of the .NET Framework and has been replaced with the <xref:System.Xml.XmlConvert.ToString%28System.DateTime%2CSystem.Xml.XmlDateTimeSerializationMode%29?displayProperty=fullName> method.  
+>  The <xref:System.Xml.XmlConvert.ToString%28System.DateTime%29?displayProperty=nameWithType> method is obsolete in the 2.0 version of the .NET Framework and has been replaced with the <xref:System.Xml.XmlConvert.ToString%28System.DateTime%2CSystem.Xml.XmlDateTimeSerializationMode%29?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>

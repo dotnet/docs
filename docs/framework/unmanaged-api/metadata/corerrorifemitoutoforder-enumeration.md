@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorErrorIfEmitOutOfOrder"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorErrorIfEmitOutOfOrder enumeration [.NET Framework metadata]"
 ms.assetid: 6d758aad-29a7-44fe-9481-bbff5b799a32

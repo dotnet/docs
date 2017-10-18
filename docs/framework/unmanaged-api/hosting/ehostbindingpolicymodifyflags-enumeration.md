@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "EHostBindingPolicyModifyFlags"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "EHostBindingPolicyModifyFlags enumeration [.NET Framework hosting]"
 ms.assetid: 0339af16-ee1d-48ec-837d-a79d9a9c89f8

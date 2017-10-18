@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRAssemblyIdentityManager::GetBindingIdentityFromStream"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetBindingIdentityFromStream method [.NET Framework hosting]"
   - "ICLRAssemblyIdentityManager::GetBindingIdentityFromStream method [.NET Framework hosting]"

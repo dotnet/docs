@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataEmit::DeleteFieldMarshal"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataEmit::DeleteFieldMarshal method [.NET Framework metadata]"
   - "DeleteFieldMarshal method [.NET Framework metadata]"

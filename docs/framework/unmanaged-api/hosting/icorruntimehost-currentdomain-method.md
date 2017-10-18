@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorRuntimeHost::CurrentDomain"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorRuntimeHost::CreateDomain method [.NET Framework hosting]"
   - "CurrentDomain method [.NET Framework hosting]"
@@ -31,7 +29,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ---
 # ICorRuntimeHost::CurrentDomain Method
-Gets an interface pointer of type <xref:System.AppDomain?displayProperty=fullName> that represents the domain loaded on the current thread.  
+Gets an interface pointer of type <xref:System.AppDomain?displayProperty=nameWithType> that represents the domain loaded on the current thread.  
   
 ## Syntax  
   
@@ -43,7 +41,7 @@ HRESULT CurrentDomain (
   
 #### Parameters  
  `pAppDomain`  
- [out] A pointer of type <xref:System.AppDomain?displayProperty=fullName> that represents the thread's current application domain. This pointer is typed `IUnknown`, so callers should generally call `QueryInterface` to obtain a pointer of type <xref:System._AppDomain>.  
+ [out] A pointer of type <xref:System.AppDomain?displayProperty=nameWithType> that represents the thread's current application domain. This pointer is typed `IUnknown`, so callers should generally call `QueryInterface` to obtain a pointer of type <xref:System._AppDomain>.  
   
 ## Return Value  
   

@@ -32,7 +32,7 @@
 ## Remarks  
  The <xref:System.Net.WebClient> class provides common methods for sending data to or receiving data from any local, intranet, or Internet resource identified by a URI.  
   
- The <xref:System.Net.WebClient> class uses the <xref:System.Net.WebRequest> class to provide access to resources. <xref:System.Net.WebClient> instances can access data with any <xref:System.Net.WebRequest> descendant registered with the <xref:System.Net.WebRequest.RegisterPrefix%2A?displayProperty=fullName> method.  
+ The <xref:System.Net.WebClient> class uses the <xref:System.Net.WebRequest> class to provide access to resources. <xref:System.Net.WebClient> instances can access data with any <xref:System.Net.WebRequest> descendant registered with the <xref:System.Net.WebRequest.RegisterPrefix%2A?displayProperty=nameWithType> method.  
   
 > [!NOTE]
 >  By default, the .NET Framework supports URIs that begin with `http:`, `https:`, ftp:, and `file:` scheme identifiers.  
@@ -352,7 +352,7 @@
   
  If the <xref:System.Net.WebClient> class is being used in a middle tier application, such as an ASP.NET application, the <xref:System.Net.CredentialCache.DefaultCredentials%2A> belong to the account running the ASP page (the server-side credentials). Typically, you would set this property to the credentials of the client on whose behalf the request is made.  
   
-   
+ For security reasons, when automatically following redirects, store the credentials that you want to be included in the redirect in a <xref:System.Net.CredentialCache> and assign it to this property. This property will automatically be set to `null` upon redirection if it contains anything except a <xref:System.Net.CredentialCache>. Having this property value be automatically set to `null` under those conditions prevents credentials from being sent to any unintended destination.
   
 ## Examples  
  The following code example uses the user's system credentials to authenticate a request.  
@@ -2600,7 +2600,7 @@ internal class MyWebClient:WebClient{
  This method uses the RETR command to download an FTP resource. For an HTTP resource, the GET method is used.  
   
 > [!NOTE]
->  You must call <xref:System.IO.Stream.Close%2A?displayProperty=fullName> when finished with the <xref:System.IO.Stream> to avoid running out of system resources.  
+>  You must call <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> when finished with the <xref:System.IO.Stream> to avoid running out of system resources.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -2663,7 +2663,7 @@ internal class MyWebClient:WebClient{
  This method uses the RETR command to download an FTP resource. For an HTTP resource, the GET method is used.  
   
 > [!NOTE]
->  You must call <xref:System.IO.Stream.Close%2A?displayProperty=fullName> when finished with the <xref:System.IO.Stream> to avoid running out of system resources.  
+>  You must call <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> when finished with the <xref:System.IO.Stream> to avoid running out of system resources.  
   
  **Note** This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
@@ -2711,7 +2711,7 @@ internal class MyWebClient:WebClient{
  This method retrieves a <xref:System.IO.Stream> instance used to access the resource specified by the `address` parameter. The stream is obtained using thread resources that are automatically allocated from the thread pool. To receive notification when the stream is available, add an event handler to the <xref:System.Net.WebClient.OpenReadCompleted> event.  
   
 > [!NOTE]
->  You must call <xref:System.IO.Stream.Close%2A?displayProperty=fullName> when you are finished with the <xref:System.IO.Stream> to avoid running out of system resources.  
+>  You must call <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> when you are finished with the <xref:System.IO.Stream> to avoid running out of system resources.  
   
  This method does not block the calling thread while the stream is opening. To block while waiting for the stream, use the <xref:System.Net.WebClient.OpenReadAsync%2A> method.  
   
@@ -2774,7 +2774,7 @@ internal class MyWebClient:WebClient{
  This method retrieves a <xref:System.IO.Stream> instance used to access the resource specified by the `address` parameter. The stream is obtained using thread resources that are automatically allocated from the thread pool. To receive notification when the stream is available, add an event handler to the <xref:System.Net.WebClient.OpenReadCompleted> event.  
   
 > [!NOTE]
->  You must call <xref:System.IO.Stream.Close%2A?displayProperty=fullName> when you are finished with the <xref:System.IO.Stream> to avoid running out of system resources.  
+>  You must call <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> when you are finished with the <xref:System.IO.Stream> to avoid running out of system resources.  
   
  This method does not block the calling thread while the stream is opening. To block while waiting for the stream, use the <xref:System.Net.WebClient.OpenRead%2A> method.  
   
@@ -2891,7 +2891,7 @@ internal class MyWebClient:WebClient{
  This method retrieves a <xref:System.IO.Stream> instance used to access the resource specified by the `address` parameter. The stream is obtained using thread resources that are automatically allocated from the thread pool.  
   
 > [!NOTE]
->  You must call <xref:System.IO.Stream.Close%2A?displayProperty=fullName> when you are finished with the <xref:System.IO.Stream> to avoid running out of system resources.  
+>  You must call <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> when you are finished with the <xref:System.IO.Stream> to avoid running out of system resources.  
   
  Asynchronous operations that have not completed can be canceled using the <xref:System.Net.WebClient.CancelAsync%2A> method.  
   
@@ -2960,7 +2960,7 @@ internal class MyWebClient:WebClient{
  This method retrieves a <xref:System.IO.Stream> instance used to access the resource specified by the `address` parameter. The stream is obtained using thread resources that are automatically allocated from the thread pool.  
   
 > [!NOTE]
->  You must call <xref:System.IO.Stream.Close%2A?displayProperty=fullName> when you are finished with the <xref:System.IO.Stream> to avoid running out of system resources.  
+>  You must call <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> when you are finished with the <xref:System.IO.Stream> to avoid running out of system resources.  
   
  Asynchronous operations that have not completed can be canceled using the <xref:System.Net.WebClient.CancelAsync%2A> method.  
   
@@ -3451,7 +3451,7 @@ internal class MyWebClient:WebClient{
  This method retrieves a <xref:System.IO.Stream> instance used to write data to the resource specified by the `address` parameter. The stream is obtained using thread resources that are automatically allocated from the thread pool.  
   
 > [!NOTE]
->  You must call <xref:System.IO.Stream.Close%2A?displayProperty=fullName> when you are finished with the <xref:System.IO.Stream> to avoid running out of system resources.  
+>  You must call <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> when you are finished with the <xref:System.IO.Stream> to avoid running out of system resources.  
   
  Asynchronous operations that have not completed can be canceled using the <xref:System.Net.WebClient.CancelAsync%2A> method.  
   
@@ -3515,7 +3515,7 @@ internal class MyWebClient:WebClient{
  This method retrieves a <xref:System.IO.Stream> instance used to write data to the resource specified by the `address` parameter. The stream is obtained using thread resources that are automatically allocated from the thread pool.  
   
 > [!NOTE]
->  You must call <xref:System.IO.Stream.Close%2A?displayProperty=fullName> when you are finished with the <xref:System.IO.Stream> to avoid running out of system resources.  
+>  You must call <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> when you are finished with the <xref:System.IO.Stream> to avoid running out of system resources.  
   
  Asynchronous operations that have not completed can be canceled using the <xref:System.Net.WebClient.CancelAsync%2A> method.  
   
@@ -3581,7 +3581,7 @@ internal class MyWebClient:WebClient{
  This method retrieves a <xref:System.IO.Stream> instance used to write data to the resource specified by the `address` parameter. The stream is obtained using thread resources that are automatically allocated from the thread pool.  
   
 > [!NOTE]
->  You must call <xref:System.IO.Stream.Close%2A?displayProperty=fullName> when you are finished with the <xref:System.IO.Stream> to avoid running out of system resources.  
+>  You must call <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> when you are finished with the <xref:System.IO.Stream> to avoid running out of system resources.  
   
  If the `method` parameter specifies a method that is not understood by the server, the underlying protocol classes determine what occurs. Typically, a <xref:System.Net.WebException> is thrown with the <xref:System.Net.WebException.Status%2A> property set to indicate the error.  
   
@@ -3649,7 +3649,7 @@ internal class MyWebClient:WebClient{
  This method retrieves a <xref:System.IO.Stream> instance used to write data to the resource specified by the `address` parameter. The stream is obtained using thread resources that are automatically allocated from the thread pool.  
   
 > [!NOTE]
->  You must call <xref:System.IO.Stream.Close%2A?displayProperty=fullName> when you are finished with the <xref:System.IO.Stream> to avoid running out of system resources.  
+>  You must call <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> when you are finished with the <xref:System.IO.Stream> to avoid running out of system resources.  
   
  If the `method` parameter specifies a method that is not understood by the server, the underlying protocol classes determine what occurs. Typically, a <xref:System.Net.WebException> is thrown with the <xref:System.Net.WebException.Status%2A> property set to indicate the error.  
   
@@ -4626,8 +4626,8 @@ internal class MyWebClient:WebClient{
   
  The following code example shows an ASP.NET page that can accept posted files and is suitable for use with the <xref:System.Net.WebClient.UploadFile%2A> method. The page must reside on a Web server. Its address provides the value for the `address` parameter of the <xref:System.Net.WebClient.UploadFile%2A> method.  
   
- <!-- TODO: review snippet reference [!code-csharp[NCLWebClientAsp#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLWebClientAsp/CS/fileuploadercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[NCLWebClientAsp#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLWebClientAsp/VB/fileuploadervb.aspx#1)]  -->  
+ [!code-aspx-csharp[NCLWebClientAsp#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLWebClientAsp/CS/fileuploadercs.aspx#1)]
+ [!code-aspx-vb[NCLWebClientAsp#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLWebClientAsp/VB/fileuploadervb.aspx#1)]
   
  ]]></format>
         </remarks>
@@ -4784,8 +4784,8 @@ internal class MyWebClient:WebClient{
   
  The following code example shows an ASP.NET page that can accept posted files and is suitable for use with the <xref:System.Net.WebClient.UploadFile%2A> method. The page must reside on a Web server. Its address provides the value for the `address` parameter of the <xref:System.Net.WebClient.UploadFile%2A> method.  
   
- <!-- TODO: review snippet reference [!code-csharp[NCLWebClientAsp#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLWebClientAsp/CS/fileuploadercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[NCLWebClientAsp#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLWebClientAsp/VB/fileuploadervb.aspx#1)]  -->  
+ [!code-aspx-csharp[NCLWebClientAsp#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLWebClientAsp/CS/fileuploadercs.aspx#1)]
+ [!code-aspx-vb[NCLWebClientAsp#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLWebClientAsp/VB/fileuploadervb.aspx#1)]
   
  ]]></format>
         </remarks>

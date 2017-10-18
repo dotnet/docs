@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IInstallReferenceEnum"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IInstallReferenceEnum interface [.NET Framework fusion]"
 ms.assetid: 2863b33b-a541-462c-bbe8-702a2832898e

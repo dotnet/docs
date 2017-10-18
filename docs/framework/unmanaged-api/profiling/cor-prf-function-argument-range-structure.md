@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "COR_PRF_FUNCTION_ARGUMENT_RANGE"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "COR_PRF_FUNCTION_ARGUMENT_RANGE structure [.NET Framework profiling'"
 ms.assetid: 9f469eac-ac66-419b-8668-fe705bc1a51f

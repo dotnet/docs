@@ -660,7 +660,7 @@
       </Docs>
     </Member>
     <Member MemberName="Write">
-      <MemberSignature Language="C#" Value="public override void Write (string format, object[] arg);" />
+      <MemberSignature Language="C#" Value="public override void Write (string format, params object[] arg);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string format, object[] arg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.Write(System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -1130,7 +1130,7 @@
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
-      <MemberSignature Language="C#" Value="public override void WriteLine (string format, object[] arg);" />
+      <MemberSignature Language="C#" Value="public override void WriteLine (string format, params object[] arg);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(string format, object[] arg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLine(System.String,System.Object[])" />
       <MemberType>Method</MemberType>

@@ -8,11 +8,6 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 ms.assetid: 82302f0d-a621-4c6f-b57d-999bd61f21a6
 caps.latest.revision: 4
 author: "rpetrusha"
@@ -20,7 +15,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ---
 # System.Xml Usage
-This section talks about usage of several types residing in <xref:System.Xml?displayProperty=fullName> namespaces that can be used to represent XML data.  
+This section talks about usage of several types residing in <xref:System.Xml?displayProperty=nameWithType> namespaces that can be used to represent XML data.  
   
  **X DO NOT** use <xref:System.Xml.XmlNode> or <xref:System.Xml.XmlDocument> to represent XML data. Favor using instances of <xref:System.Xml.XPath.IXPathNavigable>, <xref:System.Xml.XmlReader>, <xref:System.Xml.XmlWriter>, or subtypes of <xref:System.Xml.Linq.XNode> instead. `XmlNode` and `XmlDocument` are not designed for exposing in public APIs.  
   

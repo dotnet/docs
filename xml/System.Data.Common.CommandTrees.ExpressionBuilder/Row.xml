@@ -16,7 +16,7 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public Row (System.Collections.Generic.KeyValuePair&lt;string,System.Data.Common.CommandTrees.DbExpression&gt; columnValue, System.Collections.Generic.KeyValuePair&lt;string,System.Data.Common.CommandTrees.DbExpression&gt;[] columnValues);" />
+      <MemberSignature Language="C#" Value="public Row (System.Collections.Generic.KeyValuePair&lt;string,System.Data.Common.CommandTrees.DbExpression&gt; columnValue, params System.Collections.Generic.KeyValuePair&lt;string,System.Data.Common.CommandTrees.DbExpression&gt;[] columnValues);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Collections.Generic.KeyValuePair`2&lt;string, class System.Data.Common.CommandTrees.DbExpression&gt; columnValue, valuetype System.Collections.Generic.KeyValuePair`2&lt;string, class System.Data.Common.CommandTrees.DbExpression&gt;[] columnValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.Row.#ctor(System.Collections.Generic.KeyValuePair{System.String,System.Data.Common.CommandTrees.DbExpression},System.Collections.Generic.KeyValuePair{System.String,System.Data.Common.CommandTrees.DbExpression}[])" />
       <MemberType>Constructor</MemberType>

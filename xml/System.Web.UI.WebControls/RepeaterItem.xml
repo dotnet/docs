@@ -36,8 +36,8 @@
 ## Examples  
  The following example demonstrates how to use a <xref:System.Web.UI.WebControls.RepeaterItem> object to display the contents of each data item in the <xref:System.Web.UI.WebControls.Repeater> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic RepeaterItem Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RepeaterItem Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic RepeaterItem Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RepeaterItem Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic RepeaterItem Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RepeaterItem Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic RepeaterItem Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RepeaterItem Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -135,8 +135,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.RepeaterItem.ItemIndex%2A> property to display the index number of the item in the <xref:System.Web.UI.WebControls.Repeater> control from the <xref:System.Web.UI.WebControls.Repeater.Items%2A> collection of the control.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic RepeaterItem.ItemIndex Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RepeaterItem.ItemIndex Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic RepeaterItem.ItemIndex Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RepeaterItem.ItemIndex Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic RepeaterItem.ItemIndex Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RepeaterItem.ItemIndex Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic RepeaterItem.ItemIndex Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RepeaterItem.ItemIndex Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -179,8 +179,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.RepeaterItem.ItemType%2A> property to determine the item type of an item in the <xref:System.Web.UI.WebControls.Repeater> control. The order that items are created in the <xref:System.Web.UI.WebControls.Repeater> control are displayed along with the item type.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic RepeaterItem.ItemType Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RepeaterItem.ItemType Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic RepeaterItem.ItemType Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RepeaterItem.ItemType Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic RepeaterItem.ItemType Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RepeaterItem.ItemType Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic RepeaterItem.ItemType Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RepeaterItem.ItemType Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>

@@ -49,7 +49,7 @@
       </Docs>
     </Member>
     <Member MemberName="CreateInstance">
-      <MemberSignature Language="C#" Value="public Microsoft.JScript.RegExpObject CreateInstance (object[] args);" />
+      <MemberSignature Language="C#" Value="public Microsoft.JScript.RegExpObject CreateInstance (params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.JScript.RegExpObject CreateInstance(object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.RegExpConstructor.CreateInstance(System.Object[])" />
       <MemberType>Method</MemberType>
@@ -121,7 +121,7 @@
       </Docs>
     </Member>
     <Member MemberName="Invoke">
-      <MemberSignature Language="C#" Value="public Microsoft.JScript.RegExpObject Invoke (object[] args);" />
+      <MemberSignature Language="C#" Value="public Microsoft.JScript.RegExpObject Invoke (params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.JScript.RegExpObject Invoke(object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.RegExpConstructor.Invoke(System.Object[])" />
       <MemberType>Method</MemberType>

@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "RadioButton"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "RadioButton control [Windows Forms], about RadioButton control"
   - "RadioButton control [Windows Forms], determining state"

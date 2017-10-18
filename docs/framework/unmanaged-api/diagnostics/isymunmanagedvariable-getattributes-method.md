@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedVariable::GetAttributes"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetAttributes method [.NET Framework debugging]"
   - "ISymUnmanagedVariable::GetAttributes method [.NET Framework debugging]"

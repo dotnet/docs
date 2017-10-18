@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRStrongName::StrongNameSignatureVerificationEx"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "StrongNameSignatureVerificationEx method, ICLRStrongName interface [.NET Framework hosting]"
   - "ICLRStrongName::StrongNameSignatureVerificationEx method [.NET Framework hosting]"

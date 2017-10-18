@@ -1,4 +1,4 @@
-<%-- <Snippet1> --%>
+<!-- <Snippet1> -->
 <%@ Page Language="C#" %>
 <%@ Import Namespace="System.Web.Script.Serialization" %>
 <%@ Import Namespace="System.Web.Script.Serialization.TypeResolver.CS" %>
@@ -67,4 +67,4 @@
     </form>
 </body>
 </html>
-<%-- </Snippet1> --%>
+<!-- </Snippet1> -->

@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
+dev_langs:
+- "cpp"
 api_name: 
   - "ICLRDataTarget3.GetContextRecord"
 api_location: 
   - "mscordbi.dll"
 api_type: 
   - "COM"
-dev_langs: 
-  - "C++"
 ms.assetid: 66076ed5-f05c-4114-9788-94cb143abb8a
 topic_type: 
   - "apiref"

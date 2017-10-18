@@ -7,6 +7,6 @@
 |Scope|Edge|
 |Version|4.5|
 |Type|Retargeting|
-|Affected APIs|<ul><li><xref:System.Collections.Generic.List%601.ForEach(System.Action%7B%600%7D)?displayProperty=fullName></li></ul>|
+|Affected APIs|<ul><li><xref:System.Collections.Generic.List%601.ForEach(System.Action%7B%600%7D)?displayProperty=nameWithType></li></ul>|
 |Analyzers|<ul><li>CD0005</li></ul>|
 

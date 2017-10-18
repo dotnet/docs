@@ -465,8 +465,8 @@ MyObject = Application.Get("MyAppVar1");
 ## Examples  
  The following code example demonstrates how to insert two application variables into the collection, and then use the <xref:System.Web.HttpApplicationState.RemoveAt%2A> method to remove the first variable in a custom <xref:System.Web.HttpApplicationState> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[HttpApplicationStateRemoveAt#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpApplicationStateRemoveAt/CS/httpapplicationstate_removeatcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpApplicationStateRemoveAt#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpApplicationStateRemoveAt/VB/httpapplicationstate_removeatvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HttpApplicationStateRemoveAt#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpApplicationStateRemoveAt/CS/httpapplicationstate_removeatcs.aspx#1)]
+ [!code-aspx-vb[HttpApplicationStateRemoveAt#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpApplicationStateRemoveAt/VB/httpapplicationstate_removeatvb.aspx#1)]  
   
  ]]></format>
         </remarks>

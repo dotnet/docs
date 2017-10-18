@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostMemoryManager::VirtualAlloc"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "VirtualAlloc method [.NET Framework hosting]"
   - "IHostMemoryManager::VirtualAlloc method [.NET Framework hosting]"

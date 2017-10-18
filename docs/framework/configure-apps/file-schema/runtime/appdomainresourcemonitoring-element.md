@@ -9,11 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "appDomainResourceMonitoring element"
   - "<appDomainResourceMonitoring> element"
@@ -82,6 +77,6 @@ Instructs the runtime to collect statistics on all application domains in the pr
 ```  
   
 ## See Also  
- <xref:System.AppDomain.MonitoringIsEnabled%2A?displayProperty=fullName>   
+ <xref:System.AppDomain.MonitoringIsEnabled%2A?displayProperty=nameWithType>   
  [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)   
  [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)

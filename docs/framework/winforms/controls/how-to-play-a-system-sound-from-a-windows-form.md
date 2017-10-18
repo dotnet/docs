@@ -9,8 +9,9 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "sounds, playing for system events"
   - "playing sounds, Windows Forms"
@@ -46,7 +47,7 @@ public void playExclamation()
 ## Compiling the Code  
  This example requires:  
   
--   A reference to the <xref:System.Media?displayProperty=fullName> namespace.  
+-   A reference to the <xref:System.Media?displayProperty=nameWithType> namespace.  
   
 ## See Also  
  <xref:System.Media.SoundPlayer>   

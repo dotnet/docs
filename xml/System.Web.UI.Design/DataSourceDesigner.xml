@@ -50,8 +50,8 @@
   
  [!code-csharp[DataSourceDesignerSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataSourceDesignerSample/CS/DataSourceDesignerSample.cs#1)]
  [!code-vb[DataSourceDesignerSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataSourceDesignerSample/VB/DataSourceDesignerSample.vb#1)]  
-<!-- TODO: review snippet reference [!code-csharp[DataSourceDesignerSample#6](~/samples/snippets/csharp/VS_Snippets_WebNet/DataSourceDesignerSample/CS/DataSourceDesignerSample.aspx#6)]  -->
-<!-- TODO: review snippet reference [!code-vb[DataSourceDesignerSample#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataSourceDesignerSample/VB/DataSourceDesignerSample.aspx#6)]  -->  
+[!code-aspx-csharp[DataSourceDesignerSample#6](~/samples/snippets/csharp/VS_Snippets_WebNet/DataSourceDesignerSample/CS/DataSourceDesignerSample.aspx#6)]
+[!code-aspx-vb[DataSourceDesignerSample#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataSourceDesignerSample/VB/DataSourceDesignerSample.aspx#6)]  
   
  ]]></format>
     </remarks>
@@ -248,7 +248,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default implementation of the <xref:System.Web.UI.Design.DataSourceDesigner.GetDesignTimeHtml%2A> method returns the result from the base <xref:System.Web.UI.Design.ControlDesigner.CreatePlaceHolderDesignTimeHtml%2A?displayProperty=fullName> method.  
+ The default implementation of the <xref:System.Web.UI.Design.DataSourceDesigner.GetDesignTimeHtml%2A> method returns the result from the base <xref:System.Web.UI.Design.ControlDesigner.CreatePlaceHolderDesignTimeHtml%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>

@@ -1,7 +1,7 @@
 ---
 title: "How to: Query An Assembly&#39;s Metadata with Reflection (LINQ) (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: c4cdce49-b1c8-4420-b12a-9ff7e6671368
 caps.latest.revision: 3
 author: "BillWagner"

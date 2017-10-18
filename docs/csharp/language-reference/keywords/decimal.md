@@ -1,6 +1,6 @@
 ---
 title: "decimal (C# Reference)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -8,35 +8,19 @@ ms.topic: "article"
 f1_keywords: 
   - "decimal_CSharpKeyword"
   - "decimal"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "decimal keyword [C#]"
 ms.assetid: b6522132-b5ee-4be3-ad13-3adfdb7de7a1
 caps.latest.revision: 32
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # decimal (C# Reference)
 The `decimal` keyword indicates a 128-bit data type. Compared to other floating-point types, the `decimal` type has more precision and a smaller range, which makes it appropriate for financial and monetary calculations. The approximate range and precision for the `decimal` type are shown in the following table.  
   
 |Type|Approximate Range|Precision|.NET Framework type|  
 |----------|-----------------------|---------------|-------------------------|  
-|`decimal`|(-7.9 x 10<sup>28</sup> to 7.9 x 10<sup>28</sup>) / (10<sup>0</sup> to 10<sup>28</sup>)|28-29 significant digits|<xref:System.Decimal?displayProperty=fullName>|  
+|`decimal`|(-7.9 x 10<sup>28</sup> to 7.9 x 10<sup>28</sup>) / (10<sup>0</sup> to 10<sup>28</sup>)|28-29 significant digits|<xref:System.Decimal?displayProperty=nameWithType>|  
   
 ## Literals  
  If you want a numeric real literal to be treated as `decimal`, use the suffix m or M, for example:  
@@ -69,7 +53,7 @@ myMoney = (decimal)x;
  For more information about explicit numeric conversions, see [Explicit Numeric Conversions Table](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md).  
   
 ## Formatting Decimal Output  
- You can format the results by using the `String.Format` method, or through the <xref:System.Console.Write%2A?displayProperty=fullName> method, which calls `String.Format()`. The currency format is specified by using the standard currency format string "C" or "c," as shown in the second example later in this article. For more information about the `String.Format` method, see <xref:System.String.Format%2A?displayProperty=fullName>.  
+ You can format the results by using the `String.Format` method, or through the <xref:System.Console.Write%2A?displayProperty=nameWithType> method, which calls `String.Format()`. The currency format is specified by using the standard currency format string "C" or "c," as shown in the second example later in this article. For more information about the `String.Format` method, see <xref:System.String.Format%2A?displayProperty=nameWithType>.  
   
 ## Example  
  The following example causes a compiler error by trying to add [double](../../../csharp/language-reference/keywords/double.md) and `decimal` variables.  

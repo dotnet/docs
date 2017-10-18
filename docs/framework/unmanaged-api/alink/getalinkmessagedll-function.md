@@ -17,8 +17,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "GetALinkMessageDll"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "Alink API, GetALinkMessageDll function"
   - "GetALinkMessageDll function"

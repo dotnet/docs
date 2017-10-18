@@ -19,7 +19,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Dates can be added to the <xref:System.Windows.Controls.Calendar.SelectedDates%2A> property of a <xref:System.Windows.Controls.Calendar>. Depending on the value of the <xref:System.Windows.Controls.Calendar.SelectionMode%2A?displayProperty=fullName> property, adding a date or a range to the <xref:System.Windows.Controls.SelectedDatesCollection> may cause it to be cleared. The following table lists how <xref:System.Windows.Controls.CalendarSelectionMode> affects the <xref:System.Windows.Controls.Calendar.SelectedDates%2A> property.  
+ Dates can be added to the <xref:System.Windows.Controls.Calendar.SelectedDates%2A> property of a <xref:System.Windows.Controls.Calendar>. Depending on the value of the <xref:System.Windows.Controls.Calendar.SelectionMode%2A?displayProperty=nameWithType> property, adding a date or a range to the <xref:System.Windows.Controls.SelectedDatesCollection> may cause it to be cleared. The following table lists how <xref:System.Windows.Controls.CalendarSelectionMode> affects the <xref:System.Windows.Controls.Calendar.SelectedDates%2A> property.  
   
 |CalendarSelectionMode|Effect on SelectedDates|  
 |---------------------------|-----------------------------|  

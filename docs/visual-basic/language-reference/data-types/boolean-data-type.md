@@ -1,20 +1,15 @@
 ---
 title: "Boolean Data Type (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.FALSE"
   - "vb.TRUE"
   - "vb.Boolean"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Boolean data type"
   - "Boolean values, False keyword"
@@ -25,21 +20,6 @@ ms.assetid: 4858e630-4813-4216-a55e-f4d0feb884e4
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Boolean Data Type (Visual Basic)
 Holds values that can be only `True` or `False`. The keywords `True` and `False` correspond to the two states of `Boolean` variables.  
@@ -62,7 +42,7 @@ Holds values that can be only `True` or `False`. The keywords `True` and `False`
   
 -   **Type Characters.** `Boolean` has no literal type character or identifier type character.  
   
--   **Framework Type.** The corresponding type in the .NET Framework is the <xref:System.Boolean?displayProperty=fullName> structure.  
+-   **Framework Type.** The corresponding type in the .NET Framework is the <xref:System.Boolean?displayProperty=nameWithType> structure.  
   
 ## Example  
  In the following example, `runningVB` is a `Boolean` variable, which stores a simple yes/no setting.  
@@ -76,7 +56,7 @@ End If
 ```  
   
 ## See Also  
- <xref:System.Boolean?displayProperty=fullName>   
+ <xref:System.Boolean?displayProperty=nameWithType>   
  [Data Types](../../../visual-basic/language-reference/data-types/data-type-summary.md)   
  [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)   
  [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)   

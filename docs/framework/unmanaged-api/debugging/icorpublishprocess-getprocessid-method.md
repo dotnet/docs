@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorPublishProcess::GetProcessID"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorPublishProcess::GetProcessID method [.NET Framework debugging]"
   - "GetProcessID method [.NET Framework debugging]"

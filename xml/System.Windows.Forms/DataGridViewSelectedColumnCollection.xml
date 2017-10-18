@@ -27,7 +27,7 @@
 ## Remarks  
  The order of columns in the collection is not guaranteed to match the order in which they were selected.  
   
- The <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection> does not perform efficiently when working with large numbers of columns. Typically, <xref:System.Windows.Forms.DataGridView> controls will not contain enough columns for this to be an issue, but if you are working with large numbers of columns, you can use the <xref:System.Windows.Forms.DataGridView.AreAllCellsSelected%2A?displayProperty=fullName> to determine if the entire grid is selected, or you can use the <xref:System.Windows.Forms.DataGridViewColumnCollection.GetColumnCount%2A?displayProperty=fullName> to determine the number of selected columns (or the number of columns in a specified state). For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
+ The <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection> does not perform efficiently when working with large numbers of columns. Typically, <xref:System.Windows.Forms.DataGridView> controls will not contain enough columns for this to be an issue, but if you are working with large numbers of columns, you can use the <xref:System.Windows.Forms.DataGridView.AreAllCellsSelected%2A?displayProperty=nameWithType> to determine if the entire grid is selected, or you can use the <xref:System.Windows.Forms.DataGridViewColumnCollection.GetColumnCount%2A?displayProperty=nameWithType> to determine the number of selected columns (or the number of columns in a specified state). For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
     </remarks>
@@ -57,7 +57,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is not relevant for this class. You cannot change the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection> class directly. To clear the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection>, use the <xref:System.Windows.Forms.DataGridView.ClearSelection%2A?displayProperty=fullName> method.  
+ This method is not relevant for this class. You cannot change the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection> class directly. To clear the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection>, use the <xref:System.Windows.Forms.DataGridView.ClearSelection%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -150,7 +150,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is not relevant for this class. You cannot change the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection> class directly. To insert a column into the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection>, use the <xref:System.Windows.Forms.DataGridViewBand.Selected%2A?displayProperty=fullName> property.  
+ This method is not relevant for this class. You cannot change the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection> class directly. To insert a column into the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection>, use the <xref:System.Windows.Forms.DataGridViewBand.Selected%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -369,7 +369,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You cannot change the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection> class directly. To add a column to the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection>, use the <xref:System.Windows.Forms.DataGridViewBand.Selected%2A?displayProperty=fullName> property.  
+ You cannot change the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection> class directly. To add a column to the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection>, use the <xref:System.Windows.Forms.DataGridViewBand.Selected%2A?displayProperty=nameWithType> property.  
   
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
   
@@ -397,7 +397,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You cannot change the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection> class directly. To clear the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection>, use the <xref:System.Windows.Forms.DataGridView.ClearSelection%2A?displayProperty=fullName> method.  
+ You cannot change the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection> class directly. To clear the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection>, use the <xref:System.Windows.Forms.DataGridView.ClearSelection%2A?displayProperty=nameWithType> method.  
   
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
   
@@ -489,7 +489,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You cannot change the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection> class directly. To add a column to the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection>, use the <xref:System.Windows.Forms.DataGridViewBand.Selected%2A?displayProperty=fullName> property.  
+ You cannot change the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection> class directly. To add a column to the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection>, use the <xref:System.Windows.Forms.DataGridViewBand.Selected%2A?displayProperty=nameWithType> property.  
   
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
   
@@ -608,7 +608,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You cannot change the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection> class directly. To remove a column from the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection>, use the <xref:System.Windows.Forms.DataGridViewBand.Selected%2A?displayProperty=fullName> property.  
+ You cannot change the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection> class directly. To remove a column from the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection>, use the <xref:System.Windows.Forms.DataGridViewBand.Selected%2A?displayProperty=nameWithType> property.  
   
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
   
@@ -639,7 +639,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You cannot change the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection> class directly. To remove a column from the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection>, use the <xref:System.Windows.Forms.DataGridViewBand.Selected%2A?displayProperty=fullName> property.  
+ You cannot change the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection> class directly. To remove a column from the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection>, use the <xref:System.Windows.Forms.DataGridViewBand.Selected%2A?displayProperty=nameWithType> property.  
   
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
   

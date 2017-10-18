@@ -102,7 +102,7 @@
 ## Remarks  
  The <xref:System.Drawing.Design.ToolboxService.CreateItemContainer%2A> method gives you the opportunity to provide a derived version of a <xref:System.Drawing.Design.ToolboxItemContainer>. By default, the <xref:System.Drawing.Design.ToolboxService> class does not support linked items, so it returns `null` for link parameters that are not `null`. To provide link support, you should override this method to create a derived <xref:System.Drawing.Design.ToolboxItemContainer> that is capable of handling links.  
   
- The data object passed in should contain data obtained from a prior call to the <xref:System.Drawing.Design.ToolboxItemContainer.ToolboxData%2A?displayProperty=fullName> property on a toolbox item container.  
+ The data object passed in should contain data obtained from a prior call to the <xref:System.Drawing.Design.ToolboxItemContainer.ToolboxData%2A?displayProperty=nameWithType> property on a toolbox item container.  
   
  ]]></format>
         </remarks>

@@ -7,5 +7,5 @@
 |Scope|Edge|
 |Version|4.6.2|
 |Type|Retargeting|
-|Affected APIs|<ul><li><xref:System.Security.Claims.ClaimsIdentity.%23ctor(System.Security.Principal.IIdentity)?displayProperty=fullName></li><li><xref:System.Security.Claims.ClaimsIdentity.%23ctor(System.Security.Principal.IIdentity%2CSystem.Collections.Generic.IEnumerable%7BSystem.Security.Claims.Claim%7D)?displayProperty=fullName></li><li><xref:System.Security.Claims.ClaimsIdentity.%23ctor(System.Security.Principal.IIdentity%2CSystem.Collections.Generic.IEnumerable%7BSystem.Security.Claims.Claim%7D%2CSystem.String%2CSystem.String%2CSystem.String)?displayProperty=fullName></li></ul>|
+|Affected APIs|<ul><li><xref:System.Security.Claims.ClaimsIdentity.%23ctor(System.Security.Principal.IIdentity)?displayProperty=nameWithType></li><li><xref:System.Security.Claims.ClaimsIdentity.%23ctor(System.Security.Principal.IIdentity%2CSystem.Collections.Generic.IEnumerable%7BSystem.Security.Claims.Claim%7D)?displayProperty=nameWithType></li><li><xref:System.Security.Claims.ClaimsIdentity.%23ctor(System.Security.Principal.IIdentity%2CSystem.Collections.Generic.IEnumerable%7BSystem.Security.Claims.Claim%7D%2CSystem.String%2CSystem.String%2CSystem.String)?displayProperty=nameWithType></li></ul>|
 

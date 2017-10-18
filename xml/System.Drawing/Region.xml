@@ -24,7 +24,7 @@
   
  An application can also use regions in hit-testing operations, such as checking whether a point or a rectangle intersects a region. For more information on using regions for hit-testing, see [How to: Use Hit Testing with a Region](~/docs/framework/winforms/advanced/how-to-use-hit-testing-with-a-region.md).  
   
- An application can fill a region by using the <xref:System.Drawing.Graphics.FillRegion%2A?displayProperty=fullName> method and a  <xref:System.Drawing.Brush> object.  
+ An application can fill a region by using the <xref:System.Drawing.Graphics.FillRegion%2A?displayProperty=nameWithType> method and a  <xref:System.Drawing.Brush> object.  
   
    
   
@@ -775,7 +775,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- For code examples, see the <xref:System.Drawing.RectangleF.Intersect%28System.Drawing.RectangleF%29?displayProperty=fullName> and <xref:System.Drawing.Region.Complement%28System.Drawing.Drawing2D.GraphicsPath%29> methods.  
+ For code examples, see the <xref:System.Drawing.RectangleF.Intersect%28System.Drawing.RectangleF%29?displayProperty=nameWithType> and <xref:System.Drawing.Region.Complement%28System.Drawing.Drawing2D.GraphicsPath%29> methods.  
   
  ]]></format>
         </remarks>

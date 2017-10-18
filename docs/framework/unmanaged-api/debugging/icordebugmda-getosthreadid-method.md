@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugMDA::GetOSThreadId"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugMDA::GetOSThreadId method [.NET Framework debugging]"
   - "GetOSThreadId method [.NET Framework debugging]"

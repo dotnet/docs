@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.RowStyle> class represents the user interface (UI) characteristics of a row in a <xref:System.Windows.Forms.TableLayoutPanel>. The styles for all the rows in a <xref:System.Windows.Forms.TableLayoutPanel> are collected in the <xref:System.Windows.Forms.TableLayoutPanel.RowStyles%2A?displayProperty=fullName> property.  
+ The <xref:System.Windows.Forms.RowStyle> class represents the user interface (UI) characteristics of a row in a <xref:System.Windows.Forms.TableLayoutPanel>. The styles for all the rows in a <xref:System.Windows.Forms.TableLayoutPanel> are collected in the <xref:System.Windows.Forms.TableLayoutPanel.RowStyles%2A?displayProperty=nameWithType> property.  
   
  This simple class offers the <xref:System.Windows.Forms.RowStyle.Height%2A> and <xref:System.Windows.Forms.TableLayoutStyle.SizeType%2A> for a row.  
   

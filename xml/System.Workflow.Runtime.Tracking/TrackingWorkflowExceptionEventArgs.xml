@@ -25,7 +25,7 @@
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
   
- When an exception occurs during the execution of a workflow instance and a <xref:System.Workflow.Runtime.Tracking.TrackingProfile> that is associated with the workflow instance includes a <xref:System.Workflow.Runtime.Tracking.WorkflowTrackPoint> configured for a <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent?displayProperty=fullName>, the workflow tracking infrastructure sets <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord.EventArgs%2A> to an <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowExceptionEventArgs> in the <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord> that it sends to the tracking service.  
+ When an exception occurs during the execution of a workflow instance and a <xref:System.Workflow.Runtime.Tracking.TrackingProfile> that is associated with the workflow instance includes a <xref:System.Workflow.Runtime.Tracking.WorkflowTrackPoint> configured for a <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent.Exception?displayProperty=nameWithType>, the workflow tracking infrastructure sets <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord.EventArgs%2A> to an <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowExceptionEventArgs> in the <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord> that it sends to the tracking service.  
   
 > [!NOTE]
 >  <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowExceptionEventArgs> is used only by the runtime tracking service to pass information in a <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord>.  

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostMemoryManager::RegisterMemoryNotificationCallback"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostMemoryManager::RegisterMemoryNotificationCallback method [.NET Framework hosting]"
   - "RegisterMemoryNotificationCallback method [.NET Framework hosting]"

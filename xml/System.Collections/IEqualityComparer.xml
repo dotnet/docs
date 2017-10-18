@@ -35,7 +35,7 @@
   
  This interface supports only equality comparisons. Customization of comparisons for sorting and ordering is provided by the <xref:System.Collections.IComparer> interface.  
   
- For the generic version of this interface, see <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>.  
+ For the generic version of this interface, see <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=nameWithType>.  
   
  ]]></format>
     </remarks>
@@ -85,7 +85,7 @@
    
   
 ## Examples  
- The following code example demonstrates the implementation of a case-insensitive <xref:System.Collections.IEqualityComparer>. In this example, the <xref:System.Collections.CaseInsensitiveComparer.Compare%2A?displayProperty=fullName> method is used to determine whether two objects are equal, based on the provided <xref:System.Globalization.CultureInfo>.  
+ The following code example demonstrates the implementation of a case-insensitive <xref:System.Collections.IEqualityComparer>. In this example, the <xref:System.Collections.CaseInsensitiveComparer.Compare%2A?displayProperty=nameWithType> method is used to determine whether two objects are equal, based on the provided <xref:System.Globalization.CultureInfo>.  
   
  [!code-cpp[System.Collections.Hashtable_ctor#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Hashtable_ctor/CPP/hashtable_ctor.cpp#2)]
  [!code-csharp[System.Collections.Hashtable_ctor#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Hashtable_ctor/CS/hashtable_ctor.cs#2)]

@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "TabStop"
   - "TabIndex"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "tab order, controls on Windows forms"
   - "Windows Forms controls, setting tab order"

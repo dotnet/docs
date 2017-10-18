@@ -7,11 +7,6 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 ms.assetid: 6408d3ef-c9ba-49d9-b15e-fe74bd3ef031
 caps.latest.revision: 9
 author: "mcleblanc"
@@ -45,9 +40,9 @@ To use the IPv6 protocol, ensure that you are running a version of the operating
 </system.net>  
 ```  
   
- For .NET Framework version 1.1 and earlier, the value of the **ipv6 enabled** configuration switch specifies whether members of the <xref:System.Net.Dns?displayProperty=fullName> class return IPv6 addresses.  
+ For .NET Framework version 1.1 and earlier, the value of the **ipv6 enabled** configuration switch specifies whether members of the <xref:System.Net.Dns?displayProperty=nameWithType> class return IPv6 addresses.  
   
- For .NET Framework version 2.0 and later, if Windows supports IPv6, then members of the <xref:System.Net.Dns?displayProperty=fullName> class, (for example, the <xref:System.Net.Dns.GetHostEntry%2A?displayProperty=fullName> method), will return IPv6 addresses with one limitation. Obsolete members of the DNS <xref:System.Net.Dns?displayProperty=fullName> (for example, the <xref:System.Net.Dns.Resolve%2A?displayProperty=fullName> method) will read and recognize the value in the configuration file for the ipv6 enabled setting.  
+ For .NET Framework version 2.0 and later, if Windows supports IPv6, then members of the <xref:System.Net.Dns?displayProperty=nameWithType> class, (for example, the <xref:System.Net.Dns.GetHostEntry%2A?displayProperty=nameWithType> method), will return IPv6 addresses with one limitation. Obsolete members of the DNS <xref:System.Net.Dns?displayProperty=nameWithType> (for example, the <xref:System.Net.Dns.Resolve%2A?displayProperty=nameWithType> method) will read and recognize the value in the configuration file for the ipv6 enabled setting.  
   
 ## See Also  
  [Internet Protocol Version 6](../../../docs/framework/network-programming/internet-protocol-version-6.md)   

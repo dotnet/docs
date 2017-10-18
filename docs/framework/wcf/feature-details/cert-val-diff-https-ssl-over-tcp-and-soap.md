@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "certificates [WCF], validation differences"
 ms.assetid: 953a219f-4745-4019-9894-c70704f352e6

@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "3-D models, applying multiple transformations to"
 ms.assetid: cb72245a-5560-4c96-9f58-593c66296992

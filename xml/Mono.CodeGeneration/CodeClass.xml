@@ -38,7 +38,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public CodeClass (System.Reflection.Emit.ModuleBuilder mb, string name, Type baseType, Type[] interfaces);" />
+      <MemberSignature Language="C#" Value="public CodeClass (System.Reflection.Emit.ModuleBuilder mb, string name, Type baseType, params Type[] interfaces);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Reflection.Emit.ModuleBuilder mb, string name, class System.Type baseType, class System.Type[] interfaces) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeClass.#ctor(System.Reflection.Emit.ModuleBuilder,System.String,System.Type,System.Type[])" />
       <MemberType>Constructor</MemberType>
@@ -69,7 +69,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public CodeClass (System.Reflection.Emit.ModuleBuilder mb, string name, System.Reflection.TypeAttributes attr, Type baseType, Type[] interfaces);" />
+      <MemberSignature Language="C#" Value="public CodeClass (System.Reflection.Emit.ModuleBuilder mb, string name, System.Reflection.TypeAttributes attr, Type baseType, params Type[] interfaces);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Reflection.Emit.ModuleBuilder mb, string name, valuetype System.Reflection.TypeAttributes attr, class System.Type baseType, class System.Type[] interfaces) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeClass.#ctor(System.Reflection.Emit.ModuleBuilder,System.String,System.Reflection.TypeAttributes,System.Type,System.Type[])" />
       <MemberType>Constructor</MemberType>
@@ -102,7 +102,7 @@
       </Docs>
     </Member>
     <Member MemberName="CreateConstructor">
-      <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeMethod CreateConstructor (Type[] parameters);" />
+      <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeMethod CreateConstructor (params Type[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.CodeGeneration.CodeMethod CreateConstructor(class System.Type[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeClass.CreateConstructor(System.Type[])" />
       <MemberType>Method</MemberType>
@@ -131,7 +131,7 @@
       </Docs>
     </Member>
     <Member MemberName="CreateConstructor">
-      <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeMethod CreateConstructor (System.Reflection.MethodAttributes attributes, Type[] parameters);" />
+      <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeMethod CreateConstructor (System.Reflection.MethodAttributes attributes, params Type[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.CodeGeneration.CodeMethod CreateConstructor(valuetype System.Reflection.MethodAttributes attributes, class System.Type[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeClass.CreateConstructor(System.Reflection.MethodAttributes,System.Type[])" />
       <MemberType>Method</MemberType>
@@ -247,7 +247,7 @@
       </Docs>
     </Member>
     <Member MemberName="CreateMethod">
-      <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeMethod CreateMethod (string name, Type returnType, Type[] parameterTypes);" />
+      <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeMethod CreateMethod (string name, Type returnType, params Type[] parameterTypes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.CodeGeneration.CodeMethod CreateMethod(string name, class System.Type returnType, class System.Type[] parameterTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeClass.CreateMethod(System.String,System.Type,System.Type[])" />
       <MemberType>Method</MemberType>
@@ -280,7 +280,7 @@
       </Docs>
     </Member>
     <Member MemberName="CreateMethod">
-      <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeMethod CreateMethod (string name, System.Reflection.MethodAttributes attributes, Type returnType, Type[] parameterTypes);" />
+      <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeMethod CreateMethod (string name, System.Reflection.MethodAttributes attributes, Type returnType, params Type[] parameterTypes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.CodeGeneration.CodeMethod CreateMethod(string name, valuetype System.Reflection.MethodAttributes attributes, class System.Type returnType, class System.Type[] parameterTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeClass.CreateMethod(System.String,System.Reflection.MethodAttributes,System.Type,System.Type[])" />
       <MemberType>Method</MemberType>
@@ -315,7 +315,7 @@
       </Docs>
     </Member>
     <Member MemberName="CreateProperty">
-      <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeProperty CreateProperty (string name, Type returnType, Type[] parameterTypes);" />
+      <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeProperty CreateProperty (string name, Type returnType, params Type[] parameterTypes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.CodeGeneration.CodeProperty CreateProperty(string name, class System.Type returnType, class System.Type[] parameterTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeClass.CreateProperty(System.String,System.Type,System.Type[])" />
       <MemberType>Method</MemberType>
@@ -348,7 +348,7 @@
       </Docs>
     </Member>
     <Member MemberName="CreateProperty">
-      <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeProperty CreateProperty (string name, Type returnType, System.Reflection.MethodAttributes methodAttributes, Type[] parameterTypes);" />
+      <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeProperty CreateProperty (string name, Type returnType, System.Reflection.MethodAttributes methodAttributes, params Type[] parameterTypes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.CodeGeneration.CodeProperty CreateProperty(string name, class System.Type returnType, valuetype System.Reflection.MethodAttributes methodAttributes, class System.Type[] parameterTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeClass.CreateProperty(System.String,System.Type,System.Reflection.MethodAttributes,System.Type[])" />
       <MemberType>Method</MemberType>
@@ -383,7 +383,7 @@
       </Docs>
     </Member>
     <Member MemberName="CreateStaticMethod">
-      <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeMethod CreateStaticMethod (string name, Type returnType, Type[] parameterTypes);" />
+      <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeMethod CreateStaticMethod (string name, Type returnType, params Type[] parameterTypes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.CodeGeneration.CodeMethod CreateStaticMethod(string name, class System.Type returnType, class System.Type[] parameterTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeClass.CreateStaticMethod(System.String,System.Type,System.Type[])" />
       <MemberType>Method</MemberType>
@@ -436,7 +436,7 @@
       </Docs>
     </Member>
     <Member MemberName="CreateVirtualMethod">
-      <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeMethod CreateVirtualMethod (string name, Type returnType, Type[] parameterTypes);" />
+      <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeMethod CreateVirtualMethod (string name, Type returnType, params Type[] parameterTypes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.CodeGeneration.CodeMethod CreateVirtualMethod(string name, class System.Type returnType, class System.Type[] parameterTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeClass.CreateVirtualMethod(System.String,System.Type,System.Type[])" />
       <MemberType>Method</MemberType>
@@ -469,7 +469,7 @@
       </Docs>
     </Member>
     <Member MemberName="DefineField">
-      <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeFieldReference DefineField (string name, Type type, Mono.CodeGeneration.CodeCustomAttribute[] customAttributes);" />
+      <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeFieldReference DefineField (string name, Type type, params Mono.CodeGeneration.CodeCustomAttribute[] customAttributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.CodeGeneration.CodeFieldReference DefineField(string name, class System.Type type, class Mono.CodeGeneration.CodeCustomAttribute[] customAttributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeClass.DefineField(System.String,System.Type,Mono.CodeGeneration.CodeCustomAttribute[])" />
       <MemberType>Method</MemberType>
@@ -502,7 +502,7 @@
       </Docs>
     </Member>
     <Member MemberName="DefineField">
-      <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeFieldReference DefineField (string name, Type type, System.Reflection.FieldAttributes attrs, Mono.CodeGeneration.CodeExpression initialValue, Mono.CodeGeneration.CodeCustomAttribute[] customAttributes);" />
+      <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeFieldReference DefineField (string name, Type type, System.Reflection.FieldAttributes attrs, Mono.CodeGeneration.CodeExpression initialValue, params Mono.CodeGeneration.CodeCustomAttribute[] customAttributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.CodeGeneration.CodeFieldReference DefineField(string name, class System.Type type, valuetype System.Reflection.FieldAttributes attrs, class Mono.CodeGeneration.CodeExpression initialValue, class Mono.CodeGeneration.CodeCustomAttribute[] customAttributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeClass.DefineField(System.String,System.Type,System.Reflection.FieldAttributes,Mono.CodeGeneration.CodeExpression,Mono.CodeGeneration.CodeCustomAttribute[])" />
       <MemberType>Method</MemberType>
@@ -539,7 +539,7 @@
       </Docs>
     </Member>
     <Member MemberName="DefineStaticField">
-      <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeFieldReference DefineStaticField (Mono.CodeGeneration.CodeExpression initialValue, Mono.CodeGeneration.CodeCustomAttribute[] customAttributes);" />
+      <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeFieldReference DefineStaticField (Mono.CodeGeneration.CodeExpression initialValue, params Mono.CodeGeneration.CodeCustomAttribute[] customAttributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.CodeGeneration.CodeFieldReference DefineStaticField(class Mono.CodeGeneration.CodeExpression initialValue, class Mono.CodeGeneration.CodeCustomAttribute[] customAttributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeClass.DefineStaticField(Mono.CodeGeneration.CodeExpression,Mono.CodeGeneration.CodeCustomAttribute[])" />
       <MemberType>Method</MemberType>
@@ -570,7 +570,7 @@
       </Docs>
     </Member>
     <Member MemberName="DefineStaticField">
-      <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeFieldReference DefineStaticField (string name, Type type, Mono.CodeGeneration.CodeExpression initialValue, Mono.CodeGeneration.CodeCustomAttribute[] customAttributes);" />
+      <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeFieldReference DefineStaticField (string name, Type type, Mono.CodeGeneration.CodeExpression initialValue, params Mono.CodeGeneration.CodeCustomAttribute[] customAttributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.CodeGeneration.CodeFieldReference DefineStaticField(string name, class System.Type type, class Mono.CodeGeneration.CodeExpression initialValue, class Mono.CodeGeneration.CodeCustomAttribute[] customAttributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeClass.DefineStaticField(System.String,System.Type,Mono.CodeGeneration.CodeExpression,Mono.CodeGeneration.CodeCustomAttribute[])" />
       <MemberType>Method</MemberType>

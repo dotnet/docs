@@ -1,19 +1,13 @@
 ---
 title: "&lt;param&gt; (C# Programming Guide)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 f1_keywords: 
   - "param"
   - "<param>"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "<param> C# XML tag"
   - "param C# XML tag"
@@ -21,21 +15,6 @@ ms.assetid: 46d329b1-5b84-4537-9e17-73ca97313e4e
 caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # &lt;param&gt; (C# Programming Guide)
 ## Syntax  

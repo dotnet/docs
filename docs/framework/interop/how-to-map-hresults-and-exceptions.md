@@ -9,11 +9,8 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+dev_langs:
+- "cpp"
 helpviewer_keywords: 
   - "interoperation with unmanaged code, HRESULTs"
   - "exceptions, HRESULTs"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugHeapValue::IsValid"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IsValid method [.NET Framework debugging]"
   - "ICorDebugHeapValue::IsValid method [.NET Framework debugging]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugBreakpoint"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugBreakpoint interface [.NET Framework debugging]"
 ms.assetid: aa5ad3d7-e1bb-42af-99bc-471224e3bcaa

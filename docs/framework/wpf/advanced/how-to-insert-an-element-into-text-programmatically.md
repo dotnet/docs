@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "Text Animation sample"
   - "elements, inserting into text"
@@ -22,7 +25,7 @@ ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Insert an Element Into Text Programmatically
-The following example shows how to use two              <xref:System.Windows.Documents.TextPointer> objects to specify a range within text to apply a              <xref:System.Windows.Documents.Span> element to.  
+The following example shows how to use two <xref:System.Windows.Documents.TextPointer> objects to specify a range within text to apply a <xref:System.Windows.Documents.Span> element to.  
   
 ## Example  
  [!code-csharp[FlowMiscSnippets_procedural_snip#InsertInlineIntoTextExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FlowMiscSnippets_procedural_snip/CSharp/InsertInlineIntoTextExample.cs#insertinlineintotextexamplewholepage)]

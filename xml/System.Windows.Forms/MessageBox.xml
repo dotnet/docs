@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You cannot create a new instance of the <xref:System.Windows.Forms.MessageBox> class. To display a message box, call the `static` method <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName>. The title, message, buttons, and icons displayed in the message box are determined by parameters that you pass to this method.  
+ You cannot create a new instance of the <xref:System.Windows.Forms.MessageBox> class. To display a message box, call the `static` method <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType>. The title, message, buttons, and icons displayed in the message box are determined by parameters that you pass to this method.  
   
    
   
@@ -256,7 +256,7 @@
    
   
 ## Examples  
- The following code example demonstrates one of the <xref:System.Windows.Forms.MessageBox.Show%2A> methods when handling the <xref:System.Windows.Forms.ComboBox.DropDown?displayProperty=fullName> event. To run the example, paste the following code in a form and call the `InitializeComboBox` method from the form's constructor or `Load` method.  
+ The following code example demonstrates one of the <xref:System.Windows.Forms.MessageBox.Show%2A> methods when handling the <xref:System.Windows.Forms.ComboBox.DropDown?displayProperty=nameWithType> event. To run the example, paste the following code in a form and call the `InitializeComboBox` method from the form's constructor or `Load` method.  
   
  [!code-cpp[System.Windows.Forms.ComboBoxDropDown#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ComboBoxDropDown/CPP/form1.cpp#2)]
  [!code-csharp[System.Windows.Forms.ComboBoxDropDown#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ComboBoxDropDown/CS/form1.cs#2)]
@@ -608,7 +608,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to show a message box with a Help button, handle the <xref:System.Windows.Forms.Control.HelpRequested?displayProperty=fullName> event, and show a custom help window in response to the event.  
+ The following code example demonstrates how to show a message box with a Help button, handle the <xref:System.Windows.Forms.Control.HelpRequested?displayProperty=nameWithType> event, and show a custom help window in response to the event.  
   
  [!code-cpp[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CPP/form1.cpp#1)]
  [!code-csharp[System.Windows.Forms.MessageBox with Help#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.MessageBox with Help/CS/form1.cs#1)]

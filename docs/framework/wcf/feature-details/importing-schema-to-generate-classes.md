@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "WCF, schema import and export"
   - "XsdDataContractImporter class"
@@ -77,7 +80,7 @@ To generate classes from schemas that are usable with [!INCLUDE[indigo1](../../.
 #### Adding the SerializableAttribute (GenerateSerializable or the /serializable switch)  
  This corresponds to the **/serializable** switch on the `Svcutil.exe` tool.  
   
- Sometimes it is important for the types generated from the schema to be usable with [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] runtime serialization engines (for example, the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=fullName> and the <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter> classes). This is useful when using types for [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] remoting. To enable this, you must apply the <xref:System.SerializableAttribute> attribute to the generated types in addition to the regular <xref:System.Runtime.Serialization.DataContractAttribute> attribute. The attribute is generated automatically if the `GenerateSerializable` import option is set to `true`.  
+ Sometimes it is important for the types generated from the schema to be usable with [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] runtime serialization engines (for example, the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=nameWithType> and the <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter> classes). This is useful when using types for [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] remoting. To enable this, you must apply the <xref:System.SerializableAttribute> attribute to the generated types in addition to the regular <xref:System.Runtime.Serialization.DataContractAttribute> attribute. The attribute is generated automatically if the `GenerateSerializable` import option is set to `true`.  
   
  The following example shows the `Vehicle` class generated with the `GenerateSerializable` import option set to `true`.  
   
@@ -104,7 +107,7 @@ To generate classes from schemas that are usable with [!INCLUDE[indigo1](../../.
  [!code-xml[C_SchemaImportExport#12](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_schemaimportexport/common/source.config#12)]   
   
 > [!NOTE]
->  Any association could also be considered a list. For example, you can view the preceding association as a list of complex `city` objects that happen to have two fields (a string field and an integer field). Both patterns have a representation in the XSD Schema. There is no way to differentiate between a list and an association, so such patterns are always treated as lists unless a special annotation specific to [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] is present in the schema. The annotation indicates that a given pattern represents an association. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Data Contract Schema Reference](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md).  
+>  Any association could also be considered a list. For example, you can view the preceding association as a list of complex `city` objects that happen to have two fields (a string field and an integer field). Both patterns have a representation in the XSD Schema. There is no way to differentiate between a list and an association, so such patterns are always treated as lists unless a special annotation specific to [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] is present in the schema. The annotation indicates that a given pattern represents an association. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Data Contract Schema Reference](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md).  
   
  Normally, a list is imported as a collection data contract that derives from a Generic List or as a [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] array, depending on whether or not the schema follows the standard naming pattern for collections. This is described in more detail in [Collection Types in Data Contracts](../../../../docs/framework/wcf/feature-details/collection-types-in-data-contracts.md). Associations are normally imported as either a <xref:System.Collections.Generic.Dictionary%602> or a collection data contract that derives from the dictionary object. For example, consider the following schema.  
   
@@ -151,7 +154,7 @@ To generate classes from schemas that are usable with [!INCLUDE[indigo1](../../.
   
 ##### Design Considerations  
   
--   It may be difficult to work with the weakly typed XML representation directly. Consider using an alternative serialization engine, such as the <xref:System.Xml.Serialization.XmlSerializer>, to work with schema not compatible with data contracts in a strongly typed way. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Using the XmlSerializer Class](../../../../docs/framework/wcf/feature-details/using-the-xmlserializer-class.md).  
+-   It may be difficult to work with the weakly typed XML representation directly. Consider using an alternative serialization engine, such as the <xref:System.Xml.Serialization.XmlSerializer>, to work with schema not compatible with data contracts in a strongly typed way. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Using the XmlSerializer Class](../../../../docs/framework/wcf/feature-details/using-the-xmlserializer-class.md).  
   
 -   Some schema constructs cannot be imported by the <xref:System.Runtime.Serialization.XsdDataContractImporter> even when the <xref:System.Runtime.Serialization.ImportOptions.ImportXmlType%2A> property is set to `true`. Again, consider using the <xref:System.Xml.Serialization.XmlSerializer> for such cases.  
   
@@ -180,7 +183,7 @@ To generate classes from schemas that are usable with [!INCLUDE[indigo1](../../.
   
 -   <xref:System.Runtime.Serialization.ImportOptions.CodeProvider%2A> property. Specify the <xref:System.CodeDom.Compiler.CodeDomProvider> to use to generate the code for the generated classes. The import mechanism attempts to avoid features that the <xref:System.CodeDom.Compiler.CodeDomProvider> does not support. If the <xref:System.Runtime.Serialization.ImportOptions.CodeProvider%2A> is not set, the full set of [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] features is used with no restrictions.  
   
--   <xref:System.Runtime.Serialization.ImportOptions.DataContractSurrogate%2A> property. An <xref:System.Runtime.Serialization.IDataContractSurrogate> implementation can be specified with this property. The <xref:System.Runtime.Serialization.IDataContractSurrogate> customizes the import process. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Data Contract Surrogates](../../../../docs/framework/wcf/extending/data-contract-surrogates.md). By default, no surrogate is used.  
+-   <xref:System.Runtime.Serialization.ImportOptions.DataContractSurrogate%2A> property. An <xref:System.Runtime.Serialization.IDataContractSurrogate> implementation can be specified with this property. The <xref:System.Runtime.Serialization.IDataContractSurrogate> customizes the import process. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Data Contract Surrogates](../../../../docs/framework/wcf/extending/data-contract-surrogates.md). By default, no surrogate is used.  
   
 ## See Also  
  <xref:System.Runtime.Serialization.DataContractSerializer>   

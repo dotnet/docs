@@ -1,16 +1,13 @@
 ---
 title: "Accessing the Computer&#39;s Ports (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "serial ports"
   - "My.Computer.Ports object, tasks"
@@ -18,21 +15,6 @@ ms.assetid: b04a2f76-992a-4585-ab41-8bbbdbd554a1
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Accessing the Computer&#39;s Ports (Visual Basic)
 The `My.Computer.Ports` object provides a property and a method for accessing the computer's serial ports.  
@@ -61,7 +43,7 @@ The `My.Computer.Ports` object provides a property and a method for accessing th
  Describes the `SerialPortNames` property, which gets a collection of the names of the serial ports on the computer.  
   
  <xref:Microsoft.VisualBasic.Devices.Ports.OpenSerialPort%2A>  
- Describes the `OpenSerialPort` method, which creates and opens a <xref:System.IO.Ports.SerialPort?displayProperty=fullName> object.  
+ Describes the `OpenSerialPort` method, which creates and opens a <xref:System.IO.Ports.SerialPort?displayProperty=nameWithType> object.  
   
 ## Related Sections  
  <xref:System.IO.Ports.SerialPort>  

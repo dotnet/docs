@@ -72,7 +72,7 @@
 
         </asp:UpdatePanel>
 
-        <%-- <Snippet3> --%>
+        <!-- <Snippet3> -->
         <asp:ListView ID="ListView1" runat="server" DataKeyNames="CustomerID"  
             DataSourceID="EntityDataSource1">
             
@@ -225,7 +225,7 @@
             </SelectedItemTemplate>
         </asp:ListView>
 
-        <%-- </Snippet3> --%>
+        <!-- </Snippet3> -->
     </form>
 </body>
 </html>

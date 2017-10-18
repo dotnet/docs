@@ -88,7 +88,7 @@
    
   
 ## Examples  
- The following example demonstrates how to declare and use a <xref:System.Func%602> delegate. This example declares a <xref:System.Func%602> variable and assigns it a lambda expression that converts the characters in a string to uppercase. The delegate that encapsulates this method is subsequently passed to the <xref:System.Linq.Enumerable.Select%2A?displayProperty=fullName> method to change the strings in an array of strings to uppercase.  
+ The following example demonstrates how to declare and use a <xref:System.Func%602> delegate. This example declares a <xref:System.Func%602> variable and assigns it a lambda expression that converts the characters in a string to uppercase. The delegate that encapsulates this method is subsequently passed to the <xref:System.Linq.Enumerable.Select%2A?displayProperty=nameWithType> method to change the strings in an array of strings to uppercase.  
   
  [!code-csharp[System.Func~2#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Func~2/cs/Example.cs#5)]
  [!code-vb[System.Func~2#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Func~2/vb/Example.vb#5)]  

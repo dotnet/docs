@@ -33,8 +33,8 @@
 ## Examples  
  The following example shows how to determine whether an exception occurred during an update operation.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewUpdatedEventArgs/CS/gridviewupdatedeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewUpdatedEventArgs/VB/gridviewupdatedeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewUpdatedEventArgs/CS/gridviewupdatedeventargscs.aspx#1)]
+ [!code-aspx-vb[GridViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewUpdatedEventArgs/VB/gridviewupdatedeventargsvb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -66,7 +66,7 @@
 |Property|Initial Value|  
 |--------------|-------------------|  
 |<xref:System.Web.UI.WebControls.GridViewUpdatedEventArgs.AffectedRows%2A>|The value of the `affectedRows` parameter.|  
-|<xref:System.Web.UI.WebControls.GridViewUpdatedEventArgs.Exception%2A>|The <xref:System.Exception?displayProperty=fullName> object that is contained in the `e` parameter.|  
+|<xref:System.Web.UI.WebControls.GridViewUpdatedEventArgs.Exception%2A>|The <xref:System.Exception?displayProperty=nameWithType> object that is contained in the `e` parameter.|  
 |<xref:System.Web.UI.WebControls.GridViewUpdatedEventArgs.ExceptionHandled%2A>|Initialized to `false`.|  
 |<xref:System.Web.UI.WebControls.GridViewUpdatedEventArgs.KeepInEditMode%2A>|Initialized to `false`.|  
   
@@ -105,8 +105,8 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.GridViewUpdatedEventArgs.AffectedRows%2A> property to verify that a record was updated.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewUpdatedEventArgs/CS/gridviewupdatedeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewUpdatedEventArgs/VB/gridviewupdatedeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewUpdatedEventArgs/CS/gridviewupdatedeventargscs.aspx#1)]
+ [!code-aspx-vb[GridViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewUpdatedEventArgs/VB/gridviewupdatedeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -138,8 +138,8 @@
 ## Examples  
  The following example shows how to determine whether an exception occurred during an update operation.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewUpdatedEventArgs/CS/gridviewupdatedeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewUpdatedEventArgs/VB/gridviewupdatedeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewUpdatedEventArgs/CS/gridviewupdatedeventargscs.aspx#1)]
+ [!code-aspx-vb[GridViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewUpdatedEventArgs/VB/gridviewupdatedeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -172,8 +172,8 @@
 ## Examples  
  The following example shows how to indicate that the exception was handled in the event handler.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewUpdatedEventArgs/CS/gridviewupdatedeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewUpdatedEventArgs/VB/gridviewupdatedeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewUpdatedEventArgs/CS/gridviewupdatedeventargscs.aspx#1)]
+ [!code-aspx-vb[GridViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewUpdatedEventArgs/VB/gridviewupdatedeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -206,8 +206,8 @@
 ## Examples  
  The following example shows how to keep a <xref:System.Web.UI.WebControls.GridView> control in edit mode when an exception occurs.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewUpdatedEventArgs/CS/gridviewupdatedeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewUpdatedEventArgs/VB/gridviewupdatedeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewUpdatedEventArgs/CS/gridviewupdatedeventargscs.aspx#1)]
+ [!code-aspx-vb[GridViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewUpdatedEventArgs/VB/gridviewupdatedeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -234,7 +234,7 @@
 ## Remarks  
  Use the <xref:System.Web.UI.WebControls.GridViewUpdatedEventArgs.Keys%2A> property to access the values of the key field for an updated record. For example, you can use these values to keep a log of updated records.  
   
- The <xref:System.Web.UI.WebControls.GridViewUpdatedEventArgs.Keys%2A> property returns an object that implements the <xref:System.Collections.Specialized.IOrderedDictionary?displayProperty=fullName> interface. The object contains <xref:System.Collections.DictionaryEntry?displayProperty=fullName> objects that represent the fields of the updated record.  
+ The <xref:System.Web.UI.WebControls.GridViewUpdatedEventArgs.Keys%2A> property returns an object that implements the <xref:System.Collections.Specialized.IOrderedDictionary?displayProperty=nameWithType> interface. The object contains <xref:System.Collections.DictionaryEntry?displayProperty=nameWithType> objects that represent the fields of the updated record.  
   
 > [!NOTE]
 >  As a shortcut, you can also use the indexer of the <xref:System.Collections.Specialized.IOrderedDictionary> object to access the field values directly.  
@@ -244,8 +244,8 @@
 ## Examples  
  The following example shows how to access the values of the key field for an updated record.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewUpdatedEventArgs/CS/gridviewupdatedeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewUpdatedEventArgs/VB/gridviewupdatedeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewUpdatedEventArgs/CS/gridviewupdatedeventargscs.aspx#1)]
+ [!code-aspx-vb[GridViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewUpdatedEventArgs/VB/gridviewupdatedeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -272,7 +272,7 @@
 ## Remarks  
  Use the <xref:System.Web.UI.WebControls.GridViewUpdatedEventArgs.NewValues%2A> property to access the new field values for the updated record. For example, you can use these values to keep a log of updated records.  
   
- The <xref:System.Web.UI.WebControls.GridViewUpdatedEventArgs.NewValues%2A> property returns an object that implements the <xref:System.Collections.Specialized.IOrderedDictionary?displayProperty=fullName> interface. The object contains <xref:System.Collections.DictionaryEntry?displayProperty=fullName> objects that represent the fields of the updated record.  
+ The <xref:System.Web.UI.WebControls.GridViewUpdatedEventArgs.NewValues%2A> property returns an object that implements the <xref:System.Collections.Specialized.IOrderedDictionary?displayProperty=nameWithType> interface. The object contains <xref:System.Collections.DictionaryEntry?displayProperty=nameWithType> objects that represent the fields of the updated record.  
   
 > [!NOTE]
 >  As a shortcut, you can also use the indexer of the <xref:System.Collections.Specialized.IOrderedDictionary> object to access the field values directly.  
@@ -282,8 +282,8 @@
 ## Examples  
  The following example shows how to access the new values entered by the user for the non-key fields of the updated record.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewUpdatedEventArgs/CS/gridviewupdatedeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewUpdatedEventArgs/VB/gridviewupdatedeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewUpdatedEventArgs/CS/gridviewupdatedeventargscs.aspx#1)]
+ [!code-aspx-vb[GridViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewUpdatedEventArgs/VB/gridviewupdatedeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -310,7 +310,7 @@
 ## Remarks  
  Use the <xref:System.Web.UI.WebControls.GridViewUpdatedEventArgs.OldValues%2A> property to access the original field values for the updated record. For example, you can use these values to keep a log of updated records.  
   
- The <xref:System.Web.UI.WebControls.GridViewUpdatedEventArgs.OldValues%2A> property returns an object that implements the <xref:System.Collections.Specialized.IOrderedDictionary?displayProperty=fullName> interface. The object contains <xref:System.Collections.DictionaryEntry?displayProperty=fullName> objects that represent the fields of the updated record with their original values.  
+ The <xref:System.Web.UI.WebControls.GridViewUpdatedEventArgs.OldValues%2A> property returns an object that implements the <xref:System.Collections.Specialized.IOrderedDictionary?displayProperty=nameWithType> interface. The object contains <xref:System.Collections.DictionaryEntry?displayProperty=nameWithType> objects that represent the fields of the updated record with their original values.  
   
 > [!NOTE]
 >  As a shortcut, you can also use the indexer of the <xref:System.Collections.Specialized.IOrderedDictionary> object to access the field values directly.  
@@ -320,8 +320,8 @@
 ## Examples  
  The following example shows how to access the original values of the non-key fields for the updated record.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewUpdatedEventArgs/CS/gridviewupdatedeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewUpdatedEventArgs/VB/gridviewupdatedeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewUpdatedEventArgs/CS/gridviewupdatedeventargscs.aspx#1)]
+ [!code-aspx-vb[GridViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewUpdatedEventArgs/VB/gridviewupdatedeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>

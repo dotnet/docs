@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo::SetEventMask"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerInfo::SetEventMask method [.NET Framework profiling]"
   - "SetEventMask method [.NET Framework profiling]"

@@ -9,8 +9,9 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "brushes, GDI+"
   - "filled shapes, GDI+"
@@ -82,10 +83,10 @@ A closed shape, such as a rectangle or an ellipse, consists of an outline and an
  ![Filled Shape](../../../../docs/framework/winforms/advanced/media/aboutgdip02-art23.gif "AboutGdip02_Art23")  
   
 ## See Also  
- <xref:System.Drawing.SolidBrush?displayProperty=fullName>   
- <xref:System.Drawing.Drawing2D.HatchBrush?displayProperty=fullName>   
- <xref:System.Drawing.TextureBrush?displayProperty=fullName>   
- <xref:System.Drawing.Drawing2D.LinearGradientBrush?displayProperty=fullName>   
+ <xref:System.Drawing.SolidBrush?displayProperty=nameWithType>   
+ <xref:System.Drawing.Drawing2D.HatchBrush?displayProperty=nameWithType>   
+ <xref:System.Drawing.TextureBrush?displayProperty=nameWithType>   
+ <xref:System.Drawing.Drawing2D.LinearGradientBrush?displayProperty=nameWithType>   
  [Lines, Curves, and Shapes](../../../../docs/framework/winforms/advanced/lines-curves-and-shapes.md)   
  [How to: Draw a Filled Rectangle on a Windows Form](../../../../docs/framework/winforms/advanced/how-to-draw-a-filled-rectangle-on-a-windows-form.md)   
  [How to: Draw a Filled Ellipse on a Windows Form](../../../../docs/framework/winforms/advanced/how-to-draw-a-filled-ellipse-on-a-windows-form.md)

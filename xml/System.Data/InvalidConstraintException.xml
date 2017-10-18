@@ -27,11 +27,11 @@
 ## Remarks  
  The <xref:System.Data.InvalidConstraintException> is thrown when incorrectly invoking the following methods while trying to create or access a relation.  
   
--   <xref:System.Data.DataRelationCollection.Add%2A?displayProperty=fullName>  
+-   <xref:System.Data.DataRelationCollection.Add%2A?displayProperty=nameWithType>  
   
--   <xref:System.Data.DataRowCollection.Clear%2A?displayProperty=fullName>  
+-   <xref:System.Data.DataRowCollection.Clear%2A?displayProperty=nameWithType>  
   
--   <xref:System.Data.DataRow.GetParentRow%2A?displayProperty=fullName>  
+-   <xref:System.Data.DataRow.GetParentRow%2A?displayProperty=nameWithType>  
   
  If you call <xref:System.Data.DataRelationCollection.Add%2A>, the <xref:System.Data.InvalidConstraintException> may be thrown if a relation cannot be created based on the values supplied in the parameters. If you call <xref:System.Data.DataRowCollection.Clear%2A>, the <xref:System.Data.InvalidConstraintException> may be thrown if a <xref:System.Data.ForeignKeyConstraint> is enforced on the <xref:System.Data.DataRowCollection>. If you call <xref:System.Data.DataRow.GetParentRow%2A>, the <xref:System.Data.InvalidConstraintException> may be thrown if the columns have different data types or the tables do not belong to the same <xref:System.Data.DataSet>.  
   

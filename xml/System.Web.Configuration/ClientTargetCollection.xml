@@ -145,12 +145,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The result of updating the configuration file after calling the <xref:System.Web.Configuration.ClientTargetCollection.Clear%2A> method is dependent upon the <xref:System.Configuration.ConfigurationSaveMode> value chosen. To update the configuration file you use one of these two methods: <xref:System.Configuration.Configuration.Save%2A?displayProperty=fullName> or  <xref:System.Configuration.Configuration.Save%2A?displayProperty=fullName>.  
+ The result of updating the configuration file after calling the <xref:System.Web.Configuration.ClientTargetCollection.Clear%2A> method is dependent upon the <xref:System.Configuration.ConfigurationSaveMode> value chosen. To update the configuration file you use one of these two methods: <xref:System.Configuration.Configuration.Save%2A?displayProperty=nameWithType> or  <xref:System.Configuration.Configuration.Save%2A?displayProperty=nameWithType>.  
   
 > [!NOTE]
->  Calling <xref:System.Configuration.Configuration.Save%2A?displayProperty=fullName> is equivalent to calling <xref:System.Configuration.Configuration.Save%2A> when the <xref:System.Configuration.ConfigurationSaveMode> value is modified.  
+>  Calling <xref:System.Configuration.Configuration.Save%2A?displayProperty=nameWithType> is equivalent to calling <xref:System.Configuration.Configuration.Save%2A> when the <xref:System.Configuration.ConfigurationSaveMode> value is modified.  
   
- If you use the <xref:System.Configuration.Configuration.Save%2A?displayProperty=fullName> method, the following conditions apply:  
+ If you use the <xref:System.Configuration.Configuration.Save%2A?displayProperty=nameWithType> method, the following conditions apply:  
   
 -   If you pass the <xref:System.Configuration.ConfigurationSaveMode.Full> or <xref:System.Configuration.ConfigurationSaveMode.Modified> parameter value, then a `clear` element is inserted into the `clientTarget` section of the configuration file at the current hierarchy level.  
   

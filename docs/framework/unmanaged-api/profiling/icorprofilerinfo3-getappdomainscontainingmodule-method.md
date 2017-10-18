@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo3::GetAppDomainsContainingModule"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetAppDomainsContainingModule method [.NET Framework profiling]"
   - "ICorProfilerInfo3::GetAppDomainsContainingModule method [.NET Framework profiling]"

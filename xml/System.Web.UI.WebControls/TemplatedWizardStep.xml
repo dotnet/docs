@@ -48,8 +48,8 @@
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.TemplatedWizardStep.CustomNavigationTemplate%2A> property allows you to take full control of the navigation block, usually displayed at the bottom of the current view. Normally, you fill the navigation block with a series of buttons. However, other controls are acceptable as long as they support command bubbling, as does the <xref:System.Web.UI.WebControls.Button> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.TemplatedWizardStep#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.TemplatedWizardStep/CS/templatedwizardstepcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.TemplatedWizardStep#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.TemplatedWizardStep/VB/templatedwizardstepvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.TemplatedWizardStep#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.TemplatedWizardStep/CS/templatedwizardstepcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.TemplatedWizardStep#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.TemplatedWizardStep/VB/templatedwizardstepvb.aspx#1)]  
   
  ]]></format>
     </remarks>

@@ -9,8 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "unmanaged interfaces [.NET Framework], metadata"
   - "metadata interfaces [.NET Framework]"
@@ -53,7 +51,7 @@ This section describes the unmanaged interfaces that provide access to the metad
  Provides methods to create, modify and store metadata about the assembly in the currently defined scope.  
   
  [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)  
- Provides methods for defining and modifying the metadata signatures of methods and constructors with parameters of type <xref:System.Type?displayProperty=fullName>.  
+ Provides methods for defining and modifying the metadata signatures of methods and constructors with parameters of type <xref:System.Type?displayProperty=nameWithType>.  
   
  [IMetaDataError Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataerror-interface.md)  
  Provides a callback mechanism for reporting errors during the resolution of the metadata signature for an assembly.  

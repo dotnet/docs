@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRAppDomainResourceMonitor::GetCurrentCpuTime"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRAppDomainResourceMonitor::GetCurrentCpuTime method [.NET Framework hosting]"
   - "GetCurrentCpuTime method [.NET Framework hosting]"
@@ -56,7 +54,7 @@ HRESULT GetCurrentCpuTime([in]  DWORD dwAppDomainId,
 |E_FAIL|Application domain resource monitoring is not enabled.<br /><br /> -or-<br /><br /> All other failures.|  
   
 ## Remarks  
- This method is the unmanaged equivalent of the managed <xref:System.AppDomain.MonitoringTotalProcessorTime%2A?displayProperty=fullName> property.  
+ This method is the unmanaged equivalent of the managed <xref:System.AppDomain.MonitoringTotalProcessorTime%2A?displayProperty=nameWithType> property.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

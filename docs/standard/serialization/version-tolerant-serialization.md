@@ -3,9 +3,9 @@ title: "Version tolerant serialization"
 ms.date: "08/08/2017"
 ms.prod: ".net"
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
-  - "VB"
+dev_langs:
+- "csharp"
+- "vb"
 helpviewer_keywords: 
   - "version tolerant serialization"
   - "serialization, custom serialization"
@@ -257,7 +257,7 @@ End Class
 ```  
   
 ## SerializationBinder  
- Some users may need to control which class to serialize and deserialize because a different version of the class is required on the server and client. <xref:System.Runtime.Serialization.SerializationBinder> is an abstract class used to control the actual types used during serialization and deserialization.  To use this class, derive a class from <xref:System.Runtime.Serialization.SerializationBinder> and override the <xref:System.Runtime.Serialization.SerializationBinder.BindToName%2A> and <xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A> methods. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)][Controlling Serialization and Deserialization with SerializationBinder](../../../docs/framework/wcf/feature-details/controlling-serialization-and-deserialization-with-serializationbinder.md).  
+ Some users may need to control which class to serialize and deserialize because a different version of the class is required on the server and client. <xref:System.Runtime.Serialization.SerializationBinder> is an abstract class used to control the actual types used during serialization and deserialization.  To use this class, derive a class from <xref:System.Runtime.Serialization.SerializationBinder> and override the <xref:System.Runtime.Serialization.SerializationBinder.BindToName%2A> and <xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A> methods. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [Controlling Serialization and Deserialization with SerializationBinder](../../../docs/framework/wcf/feature-details/controlling-serialization-and-deserialization-with-serializationbinder.md).  
   
 ## Best practices  
  To ensure proper versioning behavior, follow these rules when modifying a type from version to version:  

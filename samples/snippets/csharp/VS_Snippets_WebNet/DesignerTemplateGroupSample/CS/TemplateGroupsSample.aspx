@@ -1,3 +1,4 @@
+<!-- <Snippet2> -->
 <%@ Page Language="C#" %>
 <%@ Register TagPrefix="aspSample" Namespace="ASPNet.Design.Samples" %>
 
@@ -17,3 +18,4 @@
     </form>
 </body>
 </html>
+<!-- </Snippet2> -->

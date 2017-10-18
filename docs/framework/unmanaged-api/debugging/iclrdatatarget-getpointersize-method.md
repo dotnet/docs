@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRDataTarget::GetPointerSize"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetPointerSize method [.NET Framework debugging]"
   - "ICLRDataTarget::GetPointerSize method [.NET Framework debugging]"

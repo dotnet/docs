@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerFunctionControl::SetILInstrumentedCodeMap"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerFunctionControl::SetILInstrumentedCodeMap method [.NET Framework profiling]"
   - "SetIILInstrumentedCodeMap method, ICorProfilerFunctionControl interface [.NET Framework profiling]"

@@ -12,11 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/mscorlib/cryptographySettings"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#cryptographySettings"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "cryptographySettings element"
   - "<cryptographySettings> element"
@@ -37,7 +32,7 @@ Contains cryptography settings.
   
 ```xml  
       <cryptographySettings>   
-</crytopgraphySettings>  
+</cryptographySettings>  
 ```  
   
 ## Attributes and Elements  
@@ -61,7 +56,7 @@ Contains cryptography settings.
 |`mscorlib`|Contains the `cryptographySettings` element.|  
   
 ## Example  
- The following example shows how use the **\<cryptographySettings>** element to contain cryptography name mappings and OID mappings. This example configures the runtime so that <xref:System.Security.Cryptography.HashAlgorithm.Create%2A?displayProperty=fullName> returns a `MyHashClass` object and the `MyCryptoClass` class maps to the object identifier 1.3.36.2.1.  
+ The following example shows how use the **\<cryptographySettings>** element to contain cryptography name mappings and OID mappings. This example configures the runtime so that <xref:System.Security.Cryptography.HashAlgorithm.Create%2A?displayProperty=nameWithType> returns a `MyHashClass` object and the `MyCryptoClass` class maps to the object identifier 1.3.36.2.1.  
   
 ```xml  
 <configuration>  

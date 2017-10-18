@@ -194,7 +194,7 @@
     </Member>
     <Member MemberName="TryTransform">
       <MemberSignature Language="C#" Value="public bool TryTransform (System.Windows.Point inPoint, out System.Windows.Media.Media3D.Point3D result);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryTransform(valuetype System.Windows.Point inPoint, valuetype System.Windows.Media.Media3D.Point3D result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryTransform(valuetype System.Windows.Point inPoint, [out] valuetype System.Windows.Media.Media3D.Point3D&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.GeneralTransform2DTo3D.TryTransform(System.Windows.Point,System.Windows.Media.Media3D.Point3D@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

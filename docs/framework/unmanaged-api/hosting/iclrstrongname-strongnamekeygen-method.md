@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRStrongName::StrongNameKeyGen"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "StrongNameKeyGen method, ICLRStrongName interface [.NET Framework hosting]"
   - "ICLRStrongName::StrongNameKeyGen method [.NET Framework hosting]"

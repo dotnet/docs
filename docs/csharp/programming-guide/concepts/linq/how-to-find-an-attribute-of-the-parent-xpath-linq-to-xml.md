@@ -1,7 +1,7 @@
 ---
 title: "How to: Find an Attribute of the Parent (XPath-LINQ to XML) (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: dbef9d89-a5c4-431f-80cc-7a2ebf323f86
 caps.latest.revision: 3
 author: "BillWagner"

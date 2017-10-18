@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "PrincipalPermissionAttribute class"
   - "WCF, authorization"
@@ -64,7 +64,7 @@ Controlling the access to resources on a Windows-domain computer is a basic secu
   
 1.  Apply the <xref:System.Security.Permissions.PrincipalPermissionAttribute> class to the method you want to restrict access to.  
   
-2.  Set the action of the attribute to <xref:System.Security.Permissions.SecurityAction.Demand?displayProperty=fullName>.  
+2.  Set the action of the attribute to <xref:System.Security.Permissions.SecurityAction.Demand?displayProperty=nameWithType>.  
   
 3.  Set the `Name` property to a string that consists of the subject name and the certificate's thumbprint. Separate the two values with a semicolon and a space, as shown in the following example:  
   

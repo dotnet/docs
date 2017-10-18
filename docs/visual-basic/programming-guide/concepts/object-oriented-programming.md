@@ -1,24 +1,17 @@
 ---
 title: "Object-Oriented Programming (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 ms.assetid: 49794de4-64c3-473c-b8ed-fe98835df69c
 caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Object-Oriented Programming (Visual Basic)
 Visual Basic provides full support for object-oriented programming including encapsulation, inheritance, and polymorphism.  

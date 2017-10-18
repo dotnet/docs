@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "GetAssemblyRefHash"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetAssemblyRefHash method"
 ms.assetid: 091a18bd-e901-46f6-b999-74d71c8a7c41

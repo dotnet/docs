@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRMemoryNotificationCallback::OnMemoryNotification"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRMemoryNotificationCallback::OnMemoryNotification method [.NET Framework hosting]"
   - "OnMemoryNotification method [.NET Framework hosting]"

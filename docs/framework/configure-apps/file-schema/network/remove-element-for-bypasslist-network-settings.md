@@ -12,11 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/defaultProxy/bypasslist/remove"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#remove"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "<bypasslist>, remove element"
   - "remove elemment, bypasslist"
@@ -90,5 +85,5 @@ Removes an IP address or DNS name from the proxy bypass list.
 ```  
   
 ## See Also  
- <xref:System.Net.WebProxy?displayProperty=fullName>   
+ <xref:System.Net.WebProxy?displayProperty=nameWithType>   
  [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

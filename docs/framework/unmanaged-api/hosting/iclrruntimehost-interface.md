@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRRuntimeHost"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRRuntimeHost interface [.NET Framework hosting]"
 ms.assetid: cb0c5f65-3791-47bc-b833-2f84f4101ba5

@@ -236,7 +236,7 @@
     </Member>
     <Member MemberName="TryUnwrapMetadataConstraint&lt;T&gt;">
       <MemberSignature Language="C#" Value="public bool TryUnwrapMetadataConstraint&lt;T&gt; (string constraintName, out T constraintValue, out System.Composition.Hosting.Core.CompositionContract remainingContract);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryUnwrapMetadataConstraint&lt;T&gt;(string constraintName, !!T constraintValue, class System.Composition.Hosting.Core.CompositionContract remainingContract) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryUnwrapMetadataConstraint&lt;T&gt;(string constraintName, [out] !!T&amp; constraintValue, [out] class System.Composition.Hosting.Core.CompositionContract&amp; remainingContract) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.CompositionContract.TryUnwrapMetadataConstraint``1(System.String,``0@,System.Composition.Hosting.Core.CompositionContract@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

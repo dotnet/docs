@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "GetTypeArgumentCount"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetTypeArgumentCount method [.NET Framework hosting]"
   - "ITypeName::GetTypeArgumentCount method [.NET Framework hosting]"

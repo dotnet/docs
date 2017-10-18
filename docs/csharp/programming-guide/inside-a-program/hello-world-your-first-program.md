@@ -1,19 +1,13 @@
 ---
 title: "Hello World -- Your First Program (C# Programming Guide)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "get-started-article"
 f1_keywords: 
   - "cs.program"
   - "vs.csharp.startpage.firstapplication"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "examples [C#], Hello World"
   - "Hello World example [C#]"
@@ -21,21 +15,6 @@ ms.assetid: 6493182a-b0b6-4539-a719-518a168cb730
 caps.latest.revision: 39
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Hello World -- Your First Program (C# Programming Guide)
 The following procedure creates a C# version of the traditional "Hello World!" program. The program displays the string `Hello World!`  

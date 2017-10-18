@@ -9,9 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
 helpviewer_keywords: 
   - "service creation [WCF]"
 ms.assetid: 7cf21bfe-23bd-46aa-8033-609f851dbf76

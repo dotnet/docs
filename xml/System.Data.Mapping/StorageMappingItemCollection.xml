@@ -50,7 +50,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public StorageMappingItemCollection (System.Data.Metadata.Edm.EdmItemCollection edmCollection, System.Data.Metadata.Edm.StoreItemCollection storeCollection, string[] filePaths);" />
+      <MemberSignature Language="C#" Value="public StorageMappingItemCollection (System.Data.Metadata.Edm.EdmItemCollection edmCollection, System.Data.Metadata.Edm.StoreItemCollection storeCollection, params string[] filePaths);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.Metadata.Edm.EdmItemCollection edmCollection, class System.Data.Metadata.Edm.StoreItemCollection storeCollection, string[] filePaths) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Mapping.StorageMappingItemCollection.#ctor(System.Data.Metadata.Edm.EdmItemCollection,System.Data.Metadata.Edm.StoreItemCollection,System.String[])" />
       <MemberType>Constructor</MemberType>

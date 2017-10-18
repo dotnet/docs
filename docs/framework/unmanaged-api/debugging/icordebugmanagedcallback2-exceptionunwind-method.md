@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugManagedCallback2::ExceptionUnwind"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugManagedCallback2::ExceptionUnwind method [.NET Framework debugging]"
   - "ExceptionUnwind method [.NET Framework debugging]"

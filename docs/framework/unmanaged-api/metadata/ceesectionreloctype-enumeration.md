@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CeeSectionRelocType"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CeeSectionRelocType enumeration [.NET Framework metadata]"
 ms.assetid: 124656f6-0dad-4ceb-9043-d3869ab65cde

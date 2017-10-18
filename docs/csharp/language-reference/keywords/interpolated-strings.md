@@ -17,7 +17,7 @@ Used to construct strings.  An interpolated string looks like a template string 
 The arguments of an interpolated string are easier to understand than a [composite format string](../../../standard/base-types/composite-formatting.md#composite-format-string).  For example, the interpolated string  
   
 ```csharp  
-Console.WriteLine($"Name = {name}, hours = {date:hh}"); 
+Console.WriteLine($"Name = {name}, hours = {hours}:hh");
 ```  
 contains two interpolated expressions, '{name}' and '{date:hh}'. The equivalent composite format string is:
 

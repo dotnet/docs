@@ -57,8 +57,8 @@
         <ReturnType>System.Configuration.Internal.IInternalConfigurationBuilderHost</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Configuration.Internal.IInternalConfigurationBuilderHost" /> object if the delegated host provides the functionality required by that interface.</summary>
+        <value>An <see cref="T:System.Configuration.Internal.IInternalConfigurationBuilderHost" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1002,10 +1002,10 @@
         <Parameter Name="builder" Type="System.Configuration.ConfigurationBuilder" />
       </Parameters>
       <Docs>
-        <param name="configSection">To be added.</param>
-        <param name="builder">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="configSection">The <see cref="T:System.Configuration.ConfigurationSection" /> to process.</param>
+        <param name="builder"><see cref="T:System.Configuration.ConfigurationBuilder" /> to use to process the <paramref name="configSection" />.</param>
+        <summary>Processes a <see cref="T:System.Configuration.ConfigurationSection" /> object using the provided <see cref="T:System.Configuration.ConfigurationBuilder" />.</summary>
+        <returns>The processed <see cref="T:System.Configuration.ConfigurationSection" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1026,10 +1026,10 @@
         <Parameter Name="builder" Type="System.Configuration.ConfigurationBuilder" />
       </Parameters>
       <Docs>
-        <param name="rawXml">To be added.</param>
-        <param name="builder">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="rawXml">The <see cref="T:System.Xml.XmlNode" /> to process.</param>
+        <param name="builder"><see cref="T:System.Configuration.ConfigurationBuilder" /> to use to process the <paramref name="rawXml" />.</param>
+        <summary>Processes the markup of a configuration section using the provided <see cref="T:System.Configuration.ConfigurationBuilder" />.</summary>
+        <returns>The processed <see cref="T:System.Xml.XmlNode" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

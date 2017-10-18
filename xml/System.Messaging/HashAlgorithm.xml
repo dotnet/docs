@@ -134,7 +134,7 @@
         <ReturnType>System.Messaging.HashAlgorithm</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>SHA-256 hashing algorithm.</summary>
       </Docs>
     </Member>
     <Member MemberName="Sha384">
@@ -150,7 +150,7 @@
         <ReturnType>System.Messaging.HashAlgorithm</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>SHA-384 hashing algorithm.</summary>
       </Docs>
     </Member>
     <Member MemberName="Sha512">
@@ -166,7 +166,7 @@
         <ReturnType>System.Messaging.HashAlgorithm</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>SHA-512 hashing algorithm.</summary>
       </Docs>
     </Member>
   </Members>

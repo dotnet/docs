@@ -4,7 +4,7 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/26/2017
+ms.date: 10/18/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.topic: article
@@ -33,7 +33,7 @@ You should use .NET Framework, with Windows Containers, for your containerized D
 
 -   You need to use third-party .NET libraries or NuGet packages that are not available for .NET Core.
 
-Using .NET Framework on Docker can improve your deployment experiences by minimizing deployment issues. This [*"lift and shift" scenario*](https://aka.ms/liftandshiftwithcontainersebook) (which is not the main focus for this guidance) is important for "dockerizing" legacy applications that were originally developed with the traditional .NET Framework, like ASP.NET WebForms, MVC web apps or WCF (Windows Communication Foundation) services.
+Using .NET Framework on Docker can improve your deployment experiences by minimizing deployment issues. This [*"lift and shift" scenario*](https://aka.ms/liftandshiftwithcontainersebook) is important for "dockerizing" legacy applications that were originally developed with the traditional .NET Framework, like ASP.NET WebForms, MVC web apps or WCF (Windows Communication Foundation) services.
 
 ### Additional resources
 

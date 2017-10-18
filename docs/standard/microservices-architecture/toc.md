@@ -19,7 +19,7 @@
 ### [Logical architecture versus physical architecture](architect-microservice-container-applications/logical-versus-physical-architecture.md)
 ### [Challenges and solutions for distributed data management](architect-microservice-container-applications/distributed-data-management.md)
 ### [Identifying domain-model boundaries for each microservice](architect-microservice-container-applications/identify-microservice-domain-model-boundaries.md)
-### [Direct client-to-microservice communication versus the API Gateway pattern](architect-microservice-container-applications/direct-client-to-microservice-communication-versus-the-API-Gateway-pattern.md)
+### [Direct client-to-microservice communication versus the API Gateway pattern](architect-microservice-container-applications/direct-client-to-microservice-communication-versus-the-api-gateway-pattern.md)
 ### [Communication between microservices](architect-microservice-container-applications/communication-in-microservice-architecture.md)
 ### [Asynchronous message-based communication](architect-microservice-container-applications/asynchronous-message-based-communication.md)
 ### [Creating, evolving, and versioning microservice APIs and contracts](architect-microservice-container-applications/maintain-microservice-apis.md)

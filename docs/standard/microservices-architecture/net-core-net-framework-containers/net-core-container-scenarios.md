@@ -4,7 +4,7 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/26/2017
+ms.date: 10/18/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.topic: article
@@ -27,7 +27,7 @@ Clearly, if your goal is to have an application (web application or service) tha
 
 [Visual Studio for Mac](https://www.visualstudio.com/vs/visual-studio-mac/) is an IDE, evolution of Xamarin Studio, running in macOS and supports Docker since mid-2017.
 
-You can also use [Visual Studio Code](https://code.visualstudio.com/) (VS Code) on macOS, Linux, and Windows. VS Code fully supports .NET Core, including IntelliSense and debugging. Because VS Code is a lightweight editor, you can use it to develop containerized apps on the Mac in conjunction with the Docker CLI and the .NET Core CLI (dotnet cli). You can also target .NET Core with most third-party editors like Sublime, Emacs, vi, and the open-source OmniSharp project, which also provides IntelliSense support. In addition to the IDEs and editors, you can use the .NET Core command-line tools (dotnet CLI) for all supported platforms.
+You can also use [Visual Studio Code](https://code.visualstudio.com/) (VS Code) on macOS, Linux, and Windows. VS Code fully supports .NET Core, including IntelliSense and debugging. Because VS Code is a lightweight editor, you can use it to develop containerized apps on the Mac in conjunction with the Docker CLI and the .NET Core CLI (dotnet cli). You can also target .NET Core with most third-party editors like Sublime Text, Emacs, vi, and the open-source OmniSharp project, which provides IntelliSense support for .NET languages. In addition to the IDEs and editors, you can use the [.NET Core command-line interface (CLI) tools](https://docs.microsoft.com/dotnet/core/tools/?tabs=netcore2x) for all supported platforms.
 
 ## Using containers for new ("green-field") projects
 
@@ -35,9 +35,9 @@ Containers are commonly used in conjunction with a microservices architecture, a
 
 ## Creating and deploying microservices on containers
 
-Even when you could use the full .NET framework for microservices-based applications (without containers) when using plain processes, because .NET Framework is already installed and shared across processes. However, if you are using containers, the image for .NET Framework (Windows Server Core plus the full .NET Framework within each image) is probably too heavy for a microservices-on-containers approach.
+You could use the traditional .NET Framework for building microservices-based applications (without containers) by using plain processes. That way, because the .NET Framework is already installed and shared across processes, processes are light and fast to start. However, if you are using containers, the image for the traditional .NET Framework is also based on Windows Server Core and that makes it too heavy for a microservices-on-containers approach.
 
-In contrast, .NET Core is the best candidate if you are embracing a microservices-oriented system that is based on containers, because .NET Core is lightweight. In addition, its related container images, either the Linux image or the Windows Nano image, are lean and small.
+In contrast, .NET Core is the best candidate if you are embracing a microservices-oriented system that is based on containers, because .NET Core is lightweight. In addition, its related container images, either the Linux image or the Windows Nano image, are lean and small making containers light and fast to start.
 
 A microservice is meant to be as small as possible: to be light when spinning up, to have a small footprint, to have a small Bounded Context, to represent a small area of concerns, and to be able to start and stop fast. For those requirements, you will want to use small and fast-to-instantiate container images like the .NET Core container image.
 

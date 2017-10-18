@@ -1,6 +1,6 @@
 ---
 title: "Interpolated Strings (C#)"
-ms.date: "09/27/2017"
+ms.date: "10/18/2017"
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -17,12 +17,12 @@ Used to construct strings.  An interpolated string looks like a template string 
 The arguments of an interpolated string are easier to understand than a [composite format string](../../../standard/base-types/composite-formatting.md#composite-format-string).  For example, the interpolated string  
   
 ```csharp  
-Console.WriteLine($"Name = {name}, hours = {hours}:hh");
+Console.WriteLine($"Name = {name}, hours = {hours:hh}");
 ```  
 contains two interpolated expressions, '{name}' and '{hour:hh}'. The equivalent composite format string is:
 
 ```csharp
-Console.WriteLine("Name = {0}, hours = {1}:hh", name, hours); 
+Console.WriteLine("Name = {0}, hours = {1:hh}", name, hours); 
 ```  
 
 The structure of an interpolated string is:  

@@ -32,7 +32,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In the .NET Framework version 2.0, <xref:System.Threading.ManualResetEvent> derives from the new <xref:System.Threading.EventWaitHandle> class. A <xref:System.Threading.ManualResetEvent> is functionally equivalent to an <xref:System.Threading.EventWaitHandle> created with <xref:System.Threading.EventResetMode?displayProperty=nameWithType>.  
+ In the .NET Framework version 2.0, <xref:System.Threading.ManualResetEvent> derives from the new <xref:System.Threading.EventWaitHandle> class. A <xref:System.Threading.ManualResetEvent> is functionally equivalent to an <xref:System.Threading.EventWaitHandle> created with <xref:System.Threading.EventResetMode.ManualReset?displayProperty=nameWithType>.  
   
 > [!NOTE]
 >  Unlike the <xref:System.Threading.ManualResetEvent> class, the <xref:System.Threading.EventWaitHandle> class provides access to named system synchronization events.  

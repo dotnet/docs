@@ -524,7 +524,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the key was created as a named curve, the <xref:System.Security.Cryptography.ECParameters?displayProperty=nameWithType> field contains named curve parameters;          otherwise,  it contains explicit parameters.  
+ If the key was created as a named curve, the <xref:System.Security.Cryptography.ECParameters.Curve?displayProperty=nameWithType> field contains named curve parameters;          otherwise,  it contains explicit parameters.  
   
  ]]></format>
         </remarks>

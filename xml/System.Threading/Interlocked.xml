@@ -96,7 +96,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method handles an overflow condition by wrapping: if the value at `location1` is <xref:System.Int32?displayProperty=nameWithType> and `value` is 1, the result is <xref:System.Int32?displayProperty=nameWithType>; if `value` is 2, the result is (<xref:System.Int32?displayProperty=nameWithType> + 1); and so on. No exception is thrown.  
+ This method handles an overflow condition by wrapping: if the value at `location1` is <xref:System.Int32.MaxValue?displayProperty=nameWithType> and `value` is 1, the result is <xref:System.Int32.MinValue?displayProperty=nameWithType>; if `value` is 2, the result is (<xref:System.Int32.MinValue?displayProperty=nameWithType> + 1); and so on. No exception is thrown.  
   
  ]]></format>
         </remarks>
@@ -144,7 +144,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method handles an overflow condition by wrapping: if the value at `location1` is <xref:System.Int64?displayProperty=nameWithType> and `value` is 1, the result is <xref:System.Int64?displayProperty=nameWithType>; if `value` is 2, the result is (<xref:System.Int64?displayProperty=nameWithType> + 1); and so on. No exception is thrown.  
+ This method handles an overflow condition by wrapping: if the value at `location1` is <xref:System.Int64.MaxValue?displayProperty=nameWithType> and `value` is 1, the result is <xref:System.Int64.MinValue?displayProperty=nameWithType>; if `value` is 2, the result is (<xref:System.Int64.MinValue?displayProperty=nameWithType> + 1); and so on. No exception is thrown.  
   
  The <xref:System.Threading.Interlocked.Read%2A> method and the 64-bit overloads of the <xref:System.Threading.Interlocked.Increment%2A>, <xref:System.Threading.Interlocked.Decrement%2A>, and <xref:System.Threading.Interlocked.Add%2A> methods are truly atomic only on systems where a <xref:System.IntPtr?displayProperty=nameWithType> is 64 bits long. On other systems, these methods are atomic with respect to each other, but not with respect to other means of accessing the data. Thus, to be thread safe on 32-bit systems, any access to a 64-bit value must be made through the members of the <xref:System.Threading.Interlocked> class.  
   
@@ -583,7 +583,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method handles an overflow condition by wrapping: If `location` = <xref:System.Int32?displayProperty=nameWithType>, `location` - 1 = <xref:System.Int32?displayProperty=nameWithType>. No exception is thrown.  
+ This method handles an overflow condition by wrapping: If `location` = <xref:System.Int32.MinValue?displayProperty=nameWithType>, `location` - 1 = <xref:System.Int32.MaxValue?displayProperty=nameWithType>. No exception is thrown.  
   
    
   
@@ -637,7 +637,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method handles an overflow condition by wrapping: if `location` = <xref:System.Int64?displayProperty=nameWithType>, `location` - 1 = <xref:System.Int64?displayProperty=nameWithType>. No exception is thrown.  
+ This method handles an overflow condition by wrapping: if `location` = <xref:System.Int64.MinValue?displayProperty=nameWithType>, `location` - 1 = <xref:System.Int64.MaxValue?displayProperty=nameWithType>. No exception is thrown.  
   
  The <xref:System.Threading.Interlocked.Read%2A> method and the 64-bit overloads of the <xref:System.Threading.Interlocked.Increment%2A>, <xref:System.Threading.Interlocked.Decrement%2A>, and <xref:System.Threading.Interlocked.Add%2A> methods are truly atomic only on systems where a <xref:System.IntPtr?displayProperty=nameWithType> is 64 bits long. On other systems, these methods are atomic with respect to each other, but not with respect to other means of accessing the data. Thus, to be thread safe on 32-bit systems, any access to a 64-bit value must be made through the members of the <xref:System.Threading.Interlocked> class.  
   
@@ -1015,7 +1015,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method handles an overflow condition by wrapping: if `location` = <xref:System.Int32?displayProperty=nameWithType>, `location` + 1 = <xref:System.Int32?displayProperty=nameWithType>. No exception is thrown.  
+ This method handles an overflow condition by wrapping: if `location` = <xref:System.Int32.MaxValue?displayProperty=nameWithType>, `location` + 1 = <xref:System.Int32.MinValue?displayProperty=nameWithType>. No exception is thrown.  
   
    
   
@@ -1074,7 +1074,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method handles an overflow condition by wrapping: if `location` = <xref:System.Int64?displayProperty=nameWithType>, `location` + 1 = <xref:System.Int64?displayProperty=nameWithType>. No exception is thrown.  
+ This method handles an overflow condition by wrapping: if `location` = <xref:System.Int64.MaxValue?displayProperty=nameWithType>, `location` + 1 = <xref:System.Int64.MinValue?displayProperty=nameWithType>. No exception is thrown.  
   
  The <xref:System.Threading.Interlocked.Read%2A> method and the 64-bit overloads of the <xref:System.Threading.Interlocked.Increment%2A>, <xref:System.Threading.Interlocked.Decrement%2A>, and <xref:System.Threading.Interlocked.Add%2A> methods are truly atomic only on systems where a <xref:System.IntPtr?displayProperty=nameWithType> is 64 bits long. On other systems, these methods are atomic with respect to each other, but not with respect to other means of accessing the data. Thus, to be thread safe on 32-bit systems, any access to a 64-bit value must be made through the members of the <xref:System.Threading.Interlocked> class.  
   

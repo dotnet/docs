@@ -51,7 +51,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.DataControlFieldHeaderCell.%23ctor%2A> constructor passes the <xref:System.Web.UI.HtmlTextWriterTag?displayProperty=nameWithType> element as its `tagKey` parameter, which is the representation of the HTML tag it is rendered with. The <xref:System.Web.UI.WebControls.DataControlField> passed in the `containingField` parameter is used to determine whether to show headers and what styles to apply to the cell when it is rendered.  
+ The <xref:System.Web.UI.WebControls.DataControlFieldHeaderCell.%23ctor%2A> constructor passes the <xref:System.Web.UI.HtmlTextWriterTag.Th?displayProperty=nameWithType> element as its `tagKey` parameter, which is the representation of the HTML tag it is rendered with. The <xref:System.Web.UI.WebControls.DataControlField> passed in the `containingField` parameter is used to determine whether to show headers and what styles to apply to the cell when it is rendered.  
   
  ]]></format>
         </remarks>

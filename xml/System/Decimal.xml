@@ -3680,7 +3680,7 @@
 |*.*|A culture-specific decimal point symbol.|  
 |*fractional-digits*|A sequence of digits ranging from 0 to 9.|  
   
- Parameter `s` is interpreted using the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> style. This means that white space and thousands separators are allowed but currency symbols are not. To explicitly define the elements (such as currency symbols, thousands separators, and white space) that can be present in `s`, use either the <xref:System.Decimal.Parse%28System.String%2CSystem.Globalization.NumberStyles%29?displayProperty=nameWithType> or the <xref:System.Decimal.Parse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%29?displayProperty=nameWithType> method.  
+ Parameter `s` is interpreted using the <xref:System.Globalization.NumberStyles.Number?displayProperty=nameWithType> style. This means that white space and thousands separators are allowed but currency symbols are not. To explicitly define the elements (such as currency symbols, thousands separators, and white space) that can be present in `s`, use either the <xref:System.Decimal.Parse%28System.String%2CSystem.Globalization.NumberStyles%29?displayProperty=nameWithType> or the <xref:System.Decimal.Parse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%29?displayProperty=nameWithType> method.  
   
  Parameter `s` is parsed using the formatting information in a <xref:System.Globalization.NumberFormatInfo> initialized for the current system culture. For more information, see <xref:System.Globalization.NumberFormatInfo.CurrentInfo%2A>. To parse a string using the formatting information of some other culture, use the <xref:System.Decimal.Parse%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType> or <xref:System.Decimal.Parse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%29?displayProperty=nameWithType> method.  
   
@@ -3748,7 +3748,7 @@
 ## Remarks  
  The `style` parameter defines the style elements (such as thousands separators, white space, and currency symbols) that are allowed in the `s` parameter for the parse operation to succeed. It must be a combination of bit flags from the <xref:System.Globalization.NumberStyles> enumeration. The following <xref:System.Globalization.NumberStyles> members are not supported:  
   
--   <xref:System.Globalization.NumberStyles?displayProperty=nameWithType>  
+-   <xref:System.Globalization.NumberStyles.AllowHexSpecifier?displayProperty=nameWithType>  
   
 -   <xref:System.Globalization.NumberStyles.HexNumber>  
   
@@ -3760,14 +3760,14 @@
   
 |Element|Description|  
 |-------------|-----------------|  
-|*ws*|Optional white space. White space can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag, and it can appear at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
-|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyNegativePattern%2A?displayProperty=nameWithType> and <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A?displayProperty=nameWithType> properties of the current culture. The current culture's currency symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
-|*sign*|An optional sign. The sign can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag, and it can appear at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag. Parentheses can be used in `s` to indicate a negative value if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
+|*ws*|Optional white space. White space can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowLeadingWhite?displayProperty=nameWithType> flag, and it can appear at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowTrailingWhite?displayProperty=nameWithType> flag.|  
+|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyNegativePattern%2A?displayProperty=nameWithType> and <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A?displayProperty=nameWithType> properties of the current culture. The current culture's currency symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowCurrencySymbol?displayProperty=nameWithType> flag.|  
+|*sign*|An optional sign. The sign can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowLeadingSign?displayProperty=nameWithType> flag, and it can appear at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowTrailingSign?displayProperty=nameWithType> flag. Parentheses can be used in `s` to indicate a negative value if `style` includes the <xref:System.Globalization.NumberStyles.AllowParentheses?displayProperty=nameWithType> flag.|  
 |*digits*|A sequence of digits ranging from 0 to 9.|  
-|*,*|A culture-specific thousands separator symbol. The current culture's thousands separator can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
-|*.*|A culture-specific decimal point symbol. The current culture's decimal point symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
-|*fractional-digits*|A sequence of digits ranging from 0 to 9. Fractional digits can appear in `s` only if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
-|*e*|The 'e' or 'E' character, which indicates that the value is represented in exponential notation. The `s` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
+|*,*|A culture-specific thousands separator symbol. The current culture's thousands separator can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowThousands?displayProperty=nameWithType> flag.|  
+|*.*|A culture-specific decimal point symbol. The current culture's decimal point symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowDecimalPoint?displayProperty=nameWithType> flag.|  
+|*fractional-digits*|A sequence of digits ranging from 0 to 9. Fractional digits can appear in `s` only if `style` includes the <xref:System.Globalization.NumberStyles.AllowDecimalPoint?displayProperty=nameWithType> flag.|  
+|*e*|The 'e' or 'E' character, which indicates that the value is represented in exponential notation. The `s` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles.AllowExponent?displayProperty=nameWithType> flag.|  
   
  A string with digits only (which corresponds to the <xref:System.Globalization.NumberStyles.None> style) always parses successfully. The remaining <xref:System.Globalization.NumberStyles> members control elements that may be but are not required to be present in the input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> members affect the elements that may be present in `s`.  
   
@@ -3792,7 +3792,7 @@
   
  A <xref:System.Decimal> has 29 digits of precision. If `s` represents a number that has more than 29 digits, but has a fractional part and is within the range of <xref:System.Decimal.MaxValue> and <xref:System.Decimal.MinValue>, the number is rounded, not truncated, to 29 digits using rounding to nearest.  
   
- If a separator is encountered in the `s` parameter during a parse operation, `styles` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> and <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> values, and the applicable currency or number decimal and group separators are the same, the parse operation assumes that the separator is a decimal separator rather than a group separator. For more information about separators, see <xref:System.Globalization.NumberFormatInfo.CurrencyDecimalSeparator%2A>, <xref:System.Globalization.NumberFormatInfo.NumberDecimalSeparator%2A>, <xref:System.Globalization.NumberFormatInfo.CurrencyGroupSeparator%2A>, and <xref:System.Globalization.NumberFormatInfo.NumberGroupSeparator%2A>.  
+ If a separator is encountered in the `s` parameter during a parse operation, `styles` includes the <xref:System.Globalization.NumberStyles.AllowThousands?displayProperty=nameWithType> and <xref:System.Globalization.NumberStyles.AllowDecimalPoint?displayProperty=nameWithType> values, and the applicable currency or number decimal and group separators are the same, the parse operation assumes that the separator is a decimal separator rather than a group separator. For more information about separators, see <xref:System.Globalization.NumberFormatInfo.CurrencyDecimalSeparator%2A>, <xref:System.Globalization.NumberFormatInfo.NumberDecimalSeparator%2A>, <xref:System.Globalization.NumberFormatInfo.CurrencyGroupSeparator%2A>, and <xref:System.Globalization.NumberFormatInfo.NumberGroupSeparator%2A>.  
   
    
   
@@ -3873,7 +3873,7 @@
 |*.*|A culture-specific decimal point symbol.|  
 |*fractional-digits*|A sequence of digits ranging from 0 to 9.|  
   
- The `s` parameter is interpreted using the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> style. This means that white space and thousands separators are allowed but currency symbols are not. To explicitly define the elements (such as currency symbols, thousands separators, and white space) that can be present in `s`, use the <xref:System.Decimal.Parse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%29?displayProperty=nameWithType> method.  
+ The `s` parameter is interpreted using the <xref:System.Globalization.NumberStyles.Number?displayProperty=nameWithType> style. This means that white space and thousands separators are allowed but currency symbols are not. To explicitly define the elements (such as currency symbols, thousands separators, and white space) that can be present in `s`, use the <xref:System.Decimal.Parse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%29?displayProperty=nameWithType> method.  
   
  The `provider` parameter is an <xref:System.IFormatProvider> implementation, such as a <xref:System.Globalization.NumberFormatInfo> or <xref:System.Globalization.CultureInfo> object. The `provider` parameter supplies culture-specific information used in parsing. If `provider` is `null`, the thread current culture is used.  
   
@@ -3941,7 +3941,7 @@
 ## Remarks  
  The `style` parameter defines the allowable format of the `s` parameter for the parse operation to succeed. It must be a combination of bit flags from the <xref:System.Globalization.NumberStyles> enumeration. The following <xref:System.Globalization.NumberStyles> members are not supported:  
   
--   <xref:System.Globalization.NumberStyles?displayProperty=nameWithType>  
+-   <xref:System.Globalization.NumberStyles.AllowHexSpecifier?displayProperty=nameWithType>  
   
 -   <xref:System.Globalization.NumberStyles.HexNumber>  
   
@@ -3953,14 +3953,14 @@
   
 |Element|Description|  
 |-------------|-----------------|  
-|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyNegativePattern%2A> and <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A> properties of the <xref:System.Globalization.NumberFormatInfo> object returned by the <xref:System.IFormatProvider.GetFormat%2A> method of the `provider` parameter. The currency symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
-|*ws*|Optional white space. White space can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag, and it can appear at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
-|*sign*|An optional sign. The sign can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag, and it can appear at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag. Parentheses can be used in `s` to indicate a negative value if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
+|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyNegativePattern%2A> and <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A> properties of the <xref:System.Globalization.NumberFormatInfo> object returned by the <xref:System.IFormatProvider.GetFormat%2A> method of the `provider` parameter. The currency symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowCurrencySymbol?displayProperty=nameWithType> flag.|  
+|*ws*|Optional white space. White space can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowLeadingWhite?displayProperty=nameWithType> flag, and it can appear at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowTrailingWhite?displayProperty=nameWithType> flag.|  
+|*sign*|An optional sign. The sign can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowLeadingSign?displayProperty=nameWithType> flag, and it can appear at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowTrailingSign?displayProperty=nameWithType> flag. Parentheses can be used in `s` to indicate a negative value if `style` includes the <xref:System.Globalization.NumberStyles.AllowParentheses?displayProperty=nameWithType> flag.|  
 |*digits*|A sequence of digits ranging from 0 to 9.|  
-|*,*|A culture-specific thousands separator symbol. The thousands separator of the culture defined by `provider` can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
-|*.*|A culture-specific decimal point symbol. The decimal point symbol of the culture defined by `provider` can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
-|*fractional-digits*|A sequence of digits ranging from 0 to 9. Fractional digits can appear in `s` only if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
-|*e*|The 'e' or 'E' character, which indicates that the value is represented in exponential notation. The `s` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
+|*,*|A culture-specific thousands separator symbol. The thousands separator of the culture defined by `provider` can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowThousands?displayProperty=nameWithType> flag.|  
+|*.*|A culture-specific decimal point symbol. The decimal point symbol of the culture defined by `provider` can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowDecimalPoint?displayProperty=nameWithType> flag.|  
+|*fractional-digits*|A sequence of digits ranging from 0 to 9. Fractional digits can appear in `s` only if `style` includes the <xref:System.Globalization.NumberStyles.AllowDecimalPoint?displayProperty=nameWithType> flag.|  
+|*e*|The 'e' or 'E' character, which indicates that the value is represented in exponential notation. The `s` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles.AllowExponent?displayProperty=nameWithType> flag.|  
   
  A string with digits only (which corresponds to the <xref:System.Globalization.NumberStyles.None> style) always parses successfully. The remaining <xref:System.Globalization.NumberStyles> members control elements that may be but are not required to be present in the input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> members affect the elements that may be present in `s`.  
   
@@ -4093,7 +4093,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The behavior of this method follows IEEE Standard 754, section 4. This kind of rounding is sometimes called *round half to even* or *banker's rounding*. It minimizes rounding errors that result from consistently rounding a midpoint value in a single direction. It is equivalent to calling the <xref:System.Decimal.Round%28System.Decimal%2CSystem.MidpointRounding%29> method with a `mode` argument of <xref:System.MidpointRounding?displayProperty=nameWithType>.  
+ The behavior of this method follows IEEE Standard 754, section 4. This kind of rounding is sometimes called *round half to even* or *banker's rounding*. It minimizes rounding errors that result from consistently rounding a midpoint value in a single direction. It is equivalent to calling the <xref:System.Decimal.Round%28System.Decimal%2CSystem.MidpointRounding%29> method with a `mode` argument of <xref:System.MidpointRounding.ToEven?displayProperty=nameWithType>.  
   
    
   
@@ -4147,7 +4147,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is equivalent to calling the <xref:System.Decimal.Round%28System.Decimal%2CSystem.Int32%2CSystem.MidpointRounding%29> method with a `mode` argument of <xref:System.MidpointRounding?displayProperty=nameWithType>.When `d` is exactly halfway between two rounded values, the result is the rounded value that has an even digit in the far right decimal position. For example, when rounded to two decimals, the value 2.345 becomes 2.34 and the value 2.355 becomes 2.36. This process is known as *rounding toward even*, or *banker's rounding*. It minimizes rounding errors that result from consistently rounding a midpoint value in a single direction.  
+ This method is equivalent to calling the <xref:System.Decimal.Round%28System.Decimal%2CSystem.Int32%2CSystem.MidpointRounding%29> method with a `mode` argument of <xref:System.MidpointRounding.ToEven?displayProperty=nameWithType>.When `d` is exactly halfway between two rounded values, the result is the rounded value that has an even digit in the far right decimal position. For example, when rounded to two decimals, the value 2.345 becomes 2.34 and the value 2.355 becomes 2.36. This process is known as *rounding toward even*, or *banker's rounding*. It minimizes rounding errors that result from consistently rounding a midpoint value in a single direction.  
   
    
   
@@ -4200,12 +4200,12 @@
  In a midpoint value, the value after the least significant digit in the result is precisely half way between two numbers. For example, 7.5 is a midpoint value if it is to be rounded to an integer. For midpoint values, the nearest value can't be easily identified without a rounding convention, which is specified by the `mode` argument. The <xref:System.Decimal.Round%2A> method supports two rounding conventions for handling midpoint values.  
   
  Rounding away from zero.  
- Midpoint values are rounded to the next number away from zero. For example, 3.5 rounds to 4, 4.5 rounds to 5, -3.5 rounds to -4, and -4.5 rounds to -5. This form of rounding is represented by the <xref:System.MidpointRounding?displayProperty=nameWithType> enumeration member.  
+ Midpoint values are rounded to the next number away from zero. For example, 3.5 rounds to 4, 4.5 rounds to 5, -3.5 rounds to -4, and -4.5 rounds to -5. This form of rounding is represented by the <xref:System.MidpointRounding.AwayFromZero?displayProperty=nameWithType> enumeration member.  
   
  Rounding away from zero is the most widely known form of rounding.  
   
  Rounding to even, or banker's rounding  
- Midpoint values are rounded to the nearest even number. For example, both 3.5 and 4.5 round to 4, and both -3.5 and -4.5 round to -4. This form of rounding is represented by the <xref:System.MidpointRounding?displayProperty=nameWithType> enumeration member.  
+ Midpoint values are rounded to the nearest even number. For example, both 3.5 and 4.5 round to 4, and both -3.5 and -4.5 round to -4. This form of rounding is represented by the <xref:System.MidpointRounding.ToEven?displayProperty=nameWithType> enumeration member.  
   
  Rounding to nearest is the standard form of rounding used in financial and statistical operations. It conforms to IEEE Standard 754, section 4. When used in multiple rounding operations, it reduces the rounding error that is caused by consistently rounding midpoint values in a single direction. In some cases, this rounding error can be significant.  
   
@@ -4270,12 +4270,12 @@
  In a midpoint value, the value after the least significant digit in the result is precisely half way between two numbers. For example, 3.47500 is a midpoint value if it is to be rounded two decimal places, and 7.500 is a midpoint value if it is to be rounded to an integer. In these cases, the nearest value can't be easily identified without a rounding convention, which is specified by the `mode` argument. The <xref:System.Decimal.Round%28System.Decimal%2CSystem.Int32%2CSystem.MidpointRounding%29> method supports two rounding conventions for handling midpoint values.  
   
  Rounding away from zero.  
- Midpoint values are rounded to the next number away from zero. For example, 3.75 rounds to 3.8, 3.85 rounds to 3.9, -3.75 rounds to -3.8, and -3.85 rounds to -3.9. This form of rounding is represented by the <xref:System.MidpointRounding?displayProperty=nameWithType> enumeration member.  
+ Midpoint values are rounded to the next number away from zero. For example, 3.75 rounds to 3.8, 3.85 rounds to 3.9, -3.75 rounds to -3.8, and -3.85 rounds to -3.9. This form of rounding is represented by the <xref:System.MidpointRounding.AwayFromZero?displayProperty=nameWithType> enumeration member.  
   
  Rounding away from zero is the most widely known form of rounding.  
   
  Rounding to even, or banker's rounding  
- Midpoint values are rounded to the nearest even number. For example, both 3.75 and 3.85 round to 3.8, and both -3.75 and -3.85 round to -3.8. This form of rounding is represented by the <xref:System.MidpointRounding?displayProperty=nameWithType> enumeration member.  
+ Midpoint values are rounded to the nearest even number. For example, both 3.75 and 3.85 round to 3.8, and both -3.75 and -3.85 round to -3.8. This form of rounding is represented by the <xref:System.MidpointRounding.ToEven?displayProperty=nameWithType> enumeration member.  
   
  Rounding to nearest is the standard form of rounding used in financial and statistical operations. It conforms to IEEE Standard 754, section 4. When used in multiple rounding operations, it reduces the rounding error that is caused by consistently rounding midpoint values in a single direction. In some cases, this rounding error can be significant.  
   
@@ -6065,7 +6065,7 @@
 |*.*|A culture-specific decimal point symbol.|  
 |*fractional-digits*|A sequence of digits ranging from 0 to 9.|  
   
- Parameter `s` is interpreted using the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> style. This means that white space and thousands separators are allowed but currency symbols are not. To explicitly define the elements (such as currency symbols, thousands separators, and white space) that can be present in `s`, use the <xref:System.Decimal.TryParse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%2CSystem.Decimal%40%29?displayProperty=nameWithType> method overload.  
+ Parameter `s` is interpreted using the <xref:System.Globalization.NumberStyles.Number?displayProperty=nameWithType> style. This means that white space and thousands separators are allowed but currency symbols are not. To explicitly define the elements (such as currency symbols, thousands separators, and white space) that can be present in `s`, use the <xref:System.Decimal.TryParse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%2CSystem.Decimal%40%29?displayProperty=nameWithType> method overload.  
   
  Parameter `s` is parsed using the formatting information in a <xref:System.Globalization.NumberFormatInfo> object initialized for the current system culture. For more information, see <xref:System.Globalization.NumberFormatInfo.CurrentInfo%2A>. To parse a string using the formatting information of some other specified culture, use the <xref:System.Decimal.TryParse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%2CSystem.Decimal%40%29?displayProperty=nameWithType> method overload.  
   
@@ -6134,9 +6134,9 @@
   
  The `style` parameter defines the allowable format of the `s` parameter for the parse operation to succeed. It must be a combination of bit flags from the <xref:System.Globalization.NumberStyles> enumeration. The following <xref:System.Globalization.NumberStyles> members are not supported:  
   
--   <xref:System.Globalization.NumberStyles?displayProperty=nameWithType>  
+-   <xref:System.Globalization.NumberStyles.AllowHexSpecifier?displayProperty=nameWithType>  
   
--   <xref:System.Globalization.NumberStyles?displayProperty=nameWithType>  
+-   <xref:System.Globalization.NumberStyles.HexNumber?displayProperty=nameWithType>  
   
  Depending on the value of style, the `s` parameter may include the following elements:  
   
@@ -6146,14 +6146,14 @@
   
 |Element|Description|  
 |-------------|-----------------|  
-|*ws*|Optional white space. White space can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag. It can appear at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
-|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyNegativePattern%2A?displayProperty=nameWithType> or <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A?displayProperty=nameWithType> properties of the <xref:System.Globalization.NumberFormatInfo> object returned by the <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> method of the `provider` parameter. The currency symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
+|*ws*|Optional white space. White space can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowLeadingWhite?displayProperty=nameWithType> flag. It can appear at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowTrailingWhite?displayProperty=nameWithType> flag.|  
+|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyNegativePattern%2A?displayProperty=nameWithType> or <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A?displayProperty=nameWithType> properties of the <xref:System.Globalization.NumberFormatInfo> object returned by the <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> method of the `provider` parameter. The currency symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowCurrencySymbol?displayProperty=nameWithType> flag.|  
 |*sign*|An optional sign.|  
 |*digits*|A sequence of digits ranging from 0 to 9.|  
 |*.*|A culture-specific decimal point symbol.|  
 |*fractional-digits*|A sequence of digits ranging from 0 to 9.|  
   
- The `style` parameter specifies the permitted format of the `s` parameter, and can be one or more <xref:System.Globalization.NumberStyles> enumerated constants combined using a bitwise OR operation. If `style` is null, `s` is interpreted using the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> style.  
+ The `style` parameter specifies the permitted format of the `s` parameter, and can be one or more <xref:System.Globalization.NumberStyles> enumerated constants combined using a bitwise OR operation. If `style` is null, `s` is interpreted using the <xref:System.Globalization.NumberStyles.Number?displayProperty=nameWithType> style.  
   
  The `provider` parameter is an <xref:System.IFormatProvider> implementation such as a <xref:System.Globalization.NumberFormatInfo> or <xref:System.Globalization.CultureInfo> object. The `provider` parameter supplies culture-specific information used in parsing. If `provider` is `null`, the thread current culture is used.  
   

@@ -380,7 +380,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is set automatically for columns with the <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A> property set to <xref:System.Windows.Forms.DataGridViewColumnSortMode?displayProperty=nameWithType>. You must set this property yourself when sorting by columns with the <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A> property set to <xref:System.Windows.Forms.DataGridViewColumnSortMode?displayProperty=nameWithType>.  
+ This property is set automatically for columns with the <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A> property set to <xref:System.Windows.Forms.DataGridViewColumnSortMode.Automatic?displayProperty=nameWithType>. You must set this property yourself when sorting by columns with the <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A> property set to <xref:System.Windows.Forms.DataGridViewColumnSortMode.Programmatic?displayProperty=nameWithType>.  
   
    
   

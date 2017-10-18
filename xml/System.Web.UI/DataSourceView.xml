@@ -199,7 +199,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A data-bound control can request a total row count by adding the <xref:System.Web.UI.DataSourceCapabilities?displayProperty=nameWithType> field to the <xref:System.Web.UI.DataSourceSelectArguments?displayProperty=nameWithType> object passed to the <xref:System.Web.UI.DataSourceView.ExecuteSelect%2A> method. If a data-bound control requests a total row count, but the <xref:System.Web.UI.DataSourceView.CanRetrieveTotalRowCount%2A> property returns `false`, the data source view throws an exception.  
+ A data-bound control can request a total row count by adding the <xref:System.Web.UI.DataSourceCapabilities.RetrieveTotalRowCount?displayProperty=nameWithType> field to the <xref:System.Web.UI.DataSourceSelectArguments?displayProperty=nameWithType> object passed to the <xref:System.Web.UI.DataSourceView.ExecuteSelect%2A> method. If a data-bound control requests a total row count, but the <xref:System.Web.UI.DataSourceView.CanRetrieveTotalRowCount%2A> property returns `false`, the data source view throws an exception.  
   
  ]]></format>
         </remarks>

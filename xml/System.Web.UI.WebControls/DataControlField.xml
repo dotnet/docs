@@ -668,7 +668,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A data-bound control is in insert mode when the state of the current display row is <xref:System.Web.UI.WebControls.DataControlRowState?displayProperty=nameWithType>.  
+ A data-bound control is in insert mode when the state of the current display row is <xref:System.Web.UI.WebControls.DataControlRowState.Insert?displayProperty=nameWithType>.  
   
  The <xref:System.Web.UI.WebControls.DetailsView> control checks the value of this property before it renders a set of fields. If the <xref:System.Web.UI.WebControls.DataControlField.InsertVisible%2A> property is `false`, the <xref:System.Web.UI.Control.Visible%2A> property of the <xref:System.Web.UI.WebControls.DetailsViewRow> object is set to `false`.  
   

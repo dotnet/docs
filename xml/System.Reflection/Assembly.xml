@@ -846,7 +846,7 @@
   
  When `M1` is not inlined, <xref:System.Reflection.Assembly.GetCallingAssembly%2A> returns `A2`. When `M1` is inlined, <xref:System.Reflection.Assembly.GetCallingAssembly%2A> returns `A3`. Similarly, when `M2` is not inlined, <xref:System.Reflection.Assembly.GetCallingAssembly%2A> returns `A2`. When `M2` is inlined, <xref:System.Reflection.Assembly.GetCallingAssembly%2A> returns `A3`.  
   
- This effect also occurs when `M1` executes as a tail call from `M2`, or when `M2` executes as a tail call from `M3`. You can prevent the JIT compiler from inlining the method that calls <xref:System.Reflection.Assembly.GetCallingAssembly%2A>, by applying the <xref:System.Runtime.CompilerServices.MethodImplAttribute> attribute with the <xref:System.Runtime.CompilerServices.MethodImplOptions?displayProperty=nameWithType> flag, but there is no similar mechanism for preventing tail calls.  
+ This effect also occurs when `M1` executes as a tail call from `M2`, or when `M2` executes as a tail call from `M3`. You can prevent the JIT compiler from inlining the method that calls <xref:System.Reflection.Assembly.GetCallingAssembly%2A>, by applying the <xref:System.Runtime.CompilerServices.MethodImplAttribute> attribute with the <xref:System.Runtime.CompilerServices.MethodImplOptions.NoInlining?displayProperty=nameWithType> flag, but there is no similar mechanism for preventing tail calls.  
   
    
   
@@ -1524,7 +1524,7 @@
  Resource information is returned only if the resource is visible to the caller, or the caller has <xref:System.Security.Permissions.ReflectionPermission>.  
   
 > [!NOTE]
->  This method returns `null` if a private resource in another assembly is accessed and the caller does not have <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=nameWithType> flag.  
+>  This method returns `null` if a private resource in another assembly is accessed and the caller does not have <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess?displayProperty=nameWithType> flag.  
   
  If the assembly manifest lists a resource file, <xref:System.Reflection.Assembly.GetManifestResourceStream%2A> returns a <xref:System.IO.Stream> object even if the resource file cannot be found on disk at the time. If the resource file is not found, passing the resulting <xref:System.IO.Stream> object to the <xref:System.Resources.ResourceReader> constructor causes an <xref:System.ArgumentException>.  
   
@@ -1590,7 +1590,7 @@
  Resource information is returned only if the resource is visible to the caller, or the caller has <xref:System.Security.Permissions.ReflectionPermission>.  
   
 > [!NOTE]
->  This method returns `null` if a private resource in another assembly is accessed and the caller does not have <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=nameWithType> flag.  
+>  This method returns `null` if a private resource in another assembly is accessed and the caller does not have <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess?displayProperty=nameWithType> flag.  
   
  If the assembly manifest lists a resource file, <xref:System.Reflection.Assembly.GetManifestResourceStream%2A> returns a <xref:System.IO.Stream> object even if the resource file cannot be found on disk at the time. If the resource file is not found, passing the resulting <xref:System.IO.Stream> object to the <xref:System.Resources.ResourceReader> constructor causes an <xref:System.ArgumentException>.  
   
@@ -1884,7 +1884,7 @@
 ## Remarks  
   
 > [!IMPORTANT]
->  Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the <xref:System.Reflection.AssemblyName.HashAlgorithm%2A> property of an <xref:System.Reflection.AssemblyName> object that is returned by this method is <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm?displayProperty=nameWithType> if there is no hash algorithm for the referenced assembly, or if the hash algorithm of the referenced assembly is not identified by the <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm?displayProperty=nameWithType> enumeration. In previous versions of the .NET Framework, the <xref:System.Reflection.AssemblyName.HashAlgorithm%2A> property returned <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm?displayProperty=nameWithType> in this situation.  
+>  Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the <xref:System.Reflection.AssemblyName.HashAlgorithm%2A> property of an <xref:System.Reflection.AssemblyName> object that is returned by this method is <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm.None?displayProperty=nameWithType> if there is no hash algorithm for the referenced assembly, or if the hash algorithm of the referenced assembly is not identified by the <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm?displayProperty=nameWithType> enumeration. In previous versions of the .NET Framework, the <xref:System.Reflection.AssemblyName.HashAlgorithm%2A> property returned <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm.SHA1?displayProperty=nameWithType> in this situation.  
   
    
   
@@ -3201,7 +3201,7 @@
   
 -   If an assembly is loaded with <xref:System.Reflection.Assembly.LoadFrom%2A>, and the probing path includes an assembly with the same identity but a different location, an <xref:System.InvalidCastException>, <xref:System.MissingMethodException>, or other unexpected behavior can occur.  
   
--   <xref:System.Reflection.Assembly.LoadFrom%2A> demands <xref:System.Security.Permissions.FileIOPermissionAccess?displayProperty=nameWithType> and <xref:System.Security.Permissions.FileIOPermissionAccess?displayProperty=nameWithType>, or <xref:System.Net.WebPermission>, on the specified path.  
+-   <xref:System.Reflection.Assembly.LoadFrom%2A> demands <xref:System.Security.Permissions.FileIOPermissionAccess.Read?displayProperty=nameWithType> and <xref:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery?displayProperty=nameWithType>, or <xref:System.Net.WebPermission>, on the specified path.  
   
 -   If a native image exists for `assemblyFile`, it is not used. The assembly cannot be loaded as domain neutral.  
   
@@ -3294,7 +3294,7 @@
   
 -   If an assembly is loaded with <xref:System.Reflection.Assembly.LoadFrom%2A>, and the probing path includes an assembly with the same identity but a different location, an <xref:System.InvalidCastException>, <xref:System.MissingMethodException>, or other unexpected behavior can occur.  
   
--   <xref:System.Reflection.Assembly.LoadFrom%2A> demands <xref:System.Security.Permissions.FileIOPermissionAccess?displayProperty=nameWithType> and <xref:System.Security.Permissions.FileIOPermissionAccess?displayProperty=nameWithType>, or <xref:System.Net.WebPermission>, on the specified path.  
+-   <xref:System.Reflection.Assembly.LoadFrom%2A> demands <xref:System.Security.Permissions.FileIOPermissionAccess.Read?displayProperty=nameWithType> and <xref:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery?displayProperty=nameWithType>, or <xref:System.Net.WebPermission>, on the specified path.  
   
 -   If a native image exists for `assemblyFile`, it is not used. The assembly cannot be loaded as domain neutral.  
   
@@ -3400,7 +3400,7 @@
   
 -   If an assembly is loaded with <xref:System.Reflection.Assembly.LoadFrom%2A>, and the probing path includes an assembly with the same identity but a different location, an <xref:System.InvalidCastException>, <xref:System.MissingMethodException>, or other unexpected behavior can occur.  
   
--   <xref:System.Reflection.Assembly.LoadFrom%2A> demands <xref:System.Security.Permissions.FileIOPermissionAccess?displayProperty=nameWithType> and <xref:System.Security.Permissions.FileIOPermissionAccess?displayProperty=nameWithType>, or <xref:System.Net.WebPermission>, on the specified path.  
+-   <xref:System.Reflection.Assembly.LoadFrom%2A> demands <xref:System.Security.Permissions.FileIOPermissionAccess.Read?displayProperty=nameWithType> and <xref:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery?displayProperty=nameWithType>, or <xref:System.Net.WebPermission>, on the specified path.  
   
 -   If a native image exists for `assemblyFile`, it is not used. The assembly cannot be loaded as domain-neutral.  
   
@@ -3489,7 +3489,7 @@
   
 -   If an assembly is loaded with <xref:System.Reflection.Assembly.LoadFrom%2A>, and the probing path includes an assembly with the same identity but a different location, an <xref:System.InvalidCastException>, <xref:System.MissingMethodException>, or other unexpected behavior can occur.  
   
--   <xref:System.Reflection.Assembly.LoadFrom%2A> demands <xref:System.Security.Permissions.FileIOPermissionAccess?displayProperty=nameWithType> and <xref:System.Security.Permissions.FileIOPermissionAccess?displayProperty=nameWithType>, or <xref:System.Net.WebPermission>, on the specified path.  
+-   <xref:System.Reflection.Assembly.LoadFrom%2A> demands <xref:System.Security.Permissions.FileIOPermissionAccess.Read?displayProperty=nameWithType> and <xref:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery?displayProperty=nameWithType>, or <xref:System.Net.WebPermission>, on the specified path.  
   
 -   If a native image exists for `assemblyFile`, it is not used. The assembly cannot be loaded as domain neutral.  
   

@@ -425,7 +425,7 @@ In .NET Framework and .NET Core apps, the current culture is a per-thread settin
 ## Remarks  
  For a list of predefined culture names, see the [National Language Support (NLS) API Reference](http://go.microsoft.com/fwlink/?LinkId=200048) at the Go Global Developer Center. In addition, starting with Windows 10, `name` can be any valid BCP-47 language tag.  
   
- If `name` is <xref:System.String?displayProperty=nameWithType>, the constructor creates an instance of the invariant culture; this is equivalent to retrieving the value of the <xref:System.Globalization.CultureInfo.InvariantCulture%2A> property.  
+ If `name` is <xref:System.String.Empty?displayProperty=nameWithType>, the constructor creates an instance of the invariant culture; this is equivalent to retrieving the value of the <xref:System.Globalization.CultureInfo.InvariantCulture%2A> property.  
   
  The user might choose to override some of the values associated with the current culture of Windows through the regional and language options portion of Control Panel. For example, the user might choose to display the date in a different format or to use a currency other than the default for the culture. If the culture identifier associated with `name` matches the culture identifier of the current Windows culture, this constructor creates a <xref:System.Globalization.CultureInfo> object that uses those overrides, including user settings for the properties of the <xref:System.Globalization.DateTimeFormatInfo> instance returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A> property, and the properties of the <xref:System.Globalization.NumberFormatInfo> instance returned by the <xref:System.Globalization.CultureInfo.NumberFormat%2A> property. If the user settings are incompatible with the culture associated with the <xref:System.Globalization.CultureInfo>, for example, if the selected calendar is not one of the <xref:System.Globalization.CultureInfo.OptionalCalendars%2A>, the results of the methods and the values of the properties are undefined.  
   
@@ -566,7 +566,7 @@ In .NET Framework and .NET Core apps, the current culture is a per-thread settin
 ## Remarks  
  For a list of predefined culture names, see the [National Language Support (NLS) API Reference](http://go.microsoft.com/fwlink/?LinkId=200048) at the Go Global Developer Center. In addition, starting with Windows 10, `name` can be any valid BCP-47 language tag.  
   
- If `name` is <xref:System.String?displayProperty=nameWithType>, the constructor creates an instance of the invariant culture; this is equivalent to retrieving the value of the <xref:System.Globalization.CultureInfo.InvariantCulture%2A> property.  
+ If `name` is <xref:System.String.Empty?displayProperty=nameWithType>, the constructor creates an instance of the invariant culture; this is equivalent to retrieving the value of the <xref:System.Globalization.CultureInfo.InvariantCulture%2A> property.  
   
  The user might choose to override some of the values associated with the current Windows culture through the regional and language options portion of Control Panel. For example, the user might choose to display the date in a different format or to use a currency other than the default for the culture.  
   
@@ -2191,7 +2191,7 @@ csc /resource:GreetingStrings.resources Example1.cs
  [!code-vb[System.Globalization.CultureInfo.InvariantCulture#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.cultureinfo.invariantculture/vb/persist1.vb#1)]  
   
 ## Security Decisions  
- If you are making a security decision (such as whether to allow access to a system resource) based on the result of a string comparison or a case change, you should not use the invariant culture. Instead, you should perform a case-sensitive or case-insensitive ordinal comparison by calling a method that includes a <xref:System.StringComparison> parameter and supplying either <xref:System.StringComparison?displayProperty=nameWithType> or <xref:System.StringComparison?displayProperty=nameWithType> as an argument. Code that performs culture-sensitive string operations can cause security vulnerabilities if the current culture is changed or if the culture on the computer that is running the code differs from the culture that is used to test the code. In contrast, an ordinal comparison depends solely on the binary value of the compared characters.  
+ If you are making a security decision (such as whether to allow access to a system resource) based on the result of a string comparison or a case change, you should not use the invariant culture. Instead, you should perform a case-sensitive or case-insensitive ordinal comparison by calling a method that includes a <xref:System.StringComparison> parameter and supplying either <xref:System.StringComparison.Ordinal?displayProperty=nameWithType> or <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=nameWithType> as an argument. Code that performs culture-sensitive string operations can cause security vulnerabilities if the current culture is changed or if the culture on the computer that is running the code differs from the culture that is used to test the code. In contrast, an ordinal comparison depends solely on the binary value of the compared characters.  
   
  ]]></format>
         </remarks>

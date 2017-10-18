@@ -252,7 +252,7 @@
  Operations for [casing](#casing), [parsing and formatting](#parsing), [comparison and sorting](#comparison), and [testing for equality](#equality) can be either ordinal or culture-sensitive. The following sections discuss each category of operation.  
   
 > [!TIP]
->  You should always call a method overload that makes the intent of your method call clear. For example, instead of calling the <xref:System.String.Compare%28System.String%2CSystem.String%29> method to perform a culture-sensitive comparison of two strings by using the conventions of the current culture, you should call the <xref:System.String.Compare%28System.String%2CSystem.String%2CSystem.StringComparison%29> method with a value of <xref:System.StringComparison?displayProperty=nameWithType> for the `comparisonType` argument. For more information, see [Best Practices for Using Strings](~/docs/standard/base-types/best-practices-strings.md).  
+>  You should always call a method overload that makes the intent of your method call clear. For example, instead of calling the <xref:System.String.Compare%28System.String%2CSystem.String%29> method to perform a culture-sensitive comparison of two strings by using the conventions of the current culture, you should call the <xref:System.String.Compare%28System.String%2CSystem.String%2CSystem.StringComparison%29> method with a value of <xref:System.StringComparison.CurrentCulture?displayProperty=nameWithType> for the `comparisonType` argument. For more information, see [Best Practices for Using Strings](~/docs/standard/base-types/best-practices-strings.md).  
   
 <a name="casing"></a>   
 ### Casing  
@@ -318,7 +318,7 @@
 ### String comparison and sorting  
  Conventions for comparing and sorting strings vary from culture to culture. For example, the sort order may be based on phonetics or on the visual representation of characters. In East Asian languages, characters are sorted by the stroke and radical of ideographs. Sorting also depends on the order languages and cultures use for the alphabet. For example, the Danish language has an "Æ" character that it sorts after "Z" in the alphabet. In addition, comparisons can be case-sensitive or case-insensitive, and in some cases casing rules also differ by culture. Ordinal comparison, on the other hand, uses the Unicode code points of individual characters in a string when comparing and sorting strings.  
   
- Sort rules determine the alphabetic order of Unicode characters and how two strings compare to each other. For example, the <xref:System.String.Compare%28System.String%2CSystem.String%2CSystem.StringComparison%29?displayProperty=nameWithType> method compares two strings based on the <xref:System.StringComparison> parameter. If the parameter value is <xref:System.StringComparison?displayProperty=nameWithType>, the method performs a linguistic comparison that uses the conventions of the current culture; if the parameter value is <xref:System.StringComparison?displayProperty=nameWithType>, the method performs an ordinal comparison. Consequently, as the following example shows, if the current culture is U.S. English, the first call to the <xref:System.String.Compare%28System.String%2CSystem.String%2CSystem.StringComparison%29?displayProperty=nameWithType> method (using culture-sensitive comparison) considers "a" less than "A", but the second call to the same method (using ordinal comparison) considers "a" greater than "A".  
+ Sort rules determine the alphabetic order of Unicode characters and how two strings compare to each other. For example, the <xref:System.String.Compare%28System.String%2CSystem.String%2CSystem.StringComparison%29?displayProperty=nameWithType> method compares two strings based on the <xref:System.StringComparison> parameter. If the parameter value is <xref:System.StringComparison.CurrentCulture?displayProperty=nameWithType>, the method performs a linguistic comparison that uses the conventions of the current culture; if the parameter value is <xref:System.StringComparison.Ordinal?displayProperty=nameWithType>, the method performs an ordinal comparison. Consequently, as the following example shows, if the current culture is U.S. English, the first call to the <xref:System.String.Compare%28System.String%2CSystem.String%2CSystem.StringComparison%29?displayProperty=nameWithType> method (using culture-sensitive comparison) considers "a" less than "A", but the second call to the same method (using ordinal comparison) considers "a" greater than "A".  
   
  [!code-cpp[System.String.Class#10](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Class/cpp/string.compare1.cpp#10)]
  [!code-csharp[System.String.Class#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Class/cs/compare1.cs#10)]
@@ -328,11 +328,11 @@
   
 -   A word sort performs a culture-sensitive comparison of strings in which certain nonalphanumeric Unicode characters might have special weights assigned to them. For example, the hyphen (-) might have a very small weight assigned to it so that "coop" and "co-op" appear next to each other in a sorted list. For a list of the <xref:System.String> methods that compare two strings using word sort rules, see the [String operations by category](#ByCategory) section.  
   
--   A string sort also performs a culture-sensitive comparison. It is similar to a word sort, except that there are no special cases, and all nonalphanumeric symbols come before all alphanumeric Unicode characters. Two strings can be compared using string sort rules by calling the <xref:System.Globalization.CompareInfo.Compare%2A?displayProperty=nameWithType> method overloads that have an `options` parameter that is supplied a value of <xref:System.Globalization.CompareOptions?displayProperty=nameWithType>. Note that this is the only method that the .NET Framework provides to compare two strings using string sort rules.  
+-   A string sort also performs a culture-sensitive comparison. It is similar to a word sort, except that there are no special cases, and all nonalphanumeric symbols come before all alphanumeric Unicode characters. Two strings can be compared using string sort rules by calling the <xref:System.Globalization.CompareInfo.Compare%2A?displayProperty=nameWithType> method overloads that have an `options` parameter that is supplied a value of <xref:System.Globalization.CompareOptions.StringSort?displayProperty=nameWithType>. Note that this is the only method that the .NET Framework provides to compare two strings using string sort rules.  
   
 -   An ordinal sort compares strings based on the numeric value of each <xref:System.Char> object in the string. An ordinal comparison is automatically case-sensitive because the lowercase and uppercase versions of a character have different code points. However, if case is not important, you can specify an ordinal comparison that ignores case. This is equivalent to converting the string to uppercase by using the invariant culture and then performing an ordinal comparison on the result. For a list of the <xref:System.String> methods that compare two strings using ordinal sort rules, see the [String operations by category](#ByCategory) section.  
   
- A culture-sensitive comparison is any comparison that explicitly or implicitly uses a <xref:System.Globalization.CultureInfo> object, including the invariant culture that is specified by the <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> property. The implicit culture is the current culture, which is specified by the <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=nameWithType> and <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> properties. There is considerable variation in the sort order of alphabetic characters (that is, characters for which the <xref:System.Char.IsLetter%2A?displayProperty=nameWithType> property returns `true`) across cultures. You can specify a culture-sensitive comparison that uses the conventions of a specific culture by supplying a <xref:System.Globalization.CultureInfo> object to a string comparison method such as <xref:System.String.Compare%28System.String%2CSystem.String%2CSystem.Globalization.CultureInfo%2CSystem.Globalization.CompareOptions%29>. You can specify a culture-sensitive comparison that uses the conventions of the current culture by supplying <xref:System.StringComparison?displayProperty=nameWithType>, <xref:System.StringComparison?displayProperty=nameWithType>, or any member of the <xref:System.Globalization.CompareOptions> enumeration other than <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> or <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> to an appropriate overload of the <xref:System.String.Compare%2A> method. A culture-sensitive comparison is generally appropriate for sorting whereas an ordinal comparison is not. An ordinal comparison is generally appropriate for determining whether two strings are equal (that is, for determining identity) whereas a culture-sensitive comparison is not.  
+ A culture-sensitive comparison is any comparison that explicitly or implicitly uses a <xref:System.Globalization.CultureInfo> object, including the invariant culture that is specified by the <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> property. The implicit culture is the current culture, which is specified by the <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=nameWithType> and <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> properties. There is considerable variation in the sort order of alphabetic characters (that is, characters for which the <xref:System.Char.IsLetter%2A?displayProperty=nameWithType> property returns `true`) across cultures. You can specify a culture-sensitive comparison that uses the conventions of a specific culture by supplying a <xref:System.Globalization.CultureInfo> object to a string comparison method such as <xref:System.String.Compare%28System.String%2CSystem.String%2CSystem.Globalization.CultureInfo%2CSystem.Globalization.CompareOptions%29>. You can specify a culture-sensitive comparison that uses the conventions of the current culture by supplying <xref:System.StringComparison.CurrentCulture?displayProperty=nameWithType>, <xref:System.StringComparison.CurrentCultureIgnoreCase?displayProperty=nameWithType>, or any member of the <xref:System.Globalization.CompareOptions> enumeration other than <xref:System.Globalization.CompareOptions.Ordinal?displayProperty=nameWithType> or <xref:System.Globalization.CompareOptions.OrdinalIgnoreCase?displayProperty=nameWithType> to an appropriate overload of the <xref:System.String.Compare%2A> method. A culture-sensitive comparison is generally appropriate for sorting whereas an ordinal comparison is not. An ordinal comparison is generally appropriate for determining whether two strings are equal (that is, for determining identity) whereas a culture-sensitive comparison is not.  
   
  The following example illustrates the difference between culture-sensitive and ordinal comparison. The example evaluates three strings, "Apple", "Æble", and "AEble", using ordinal comparison and the conventions of the da-DK and en-US cultures (each of which is the default culture at the time the <xref:System.String.Compare%2A> method is called). Because the Danish language treats the character "Æ" as an individual letter and sorts it after "Z" in the alphabet, the string "Æble" is greater than "Apple". However, "Æble" is not considered equivalent to "AEble", so "Æble" is also greater than "AEble". The en-US culture doesn't include the letter"Æ" but treats it as equivalent to "AE", which explains why  "Æble" is less than "Apple" but equal to "AEble". Ordinal comparison, on the other hand, considers "Apple" to be less than "Æble", and "Æble" to be greater than "AEble".  
   
@@ -416,7 +416,7 @@
   
  An ordinal comparison is a binary comparison of the Unicode scalar value of corresponding <xref:System.Char> objects in each string. The <xref:System.String> class includes a number of methods that can perform an ordinal comparison, including the following:  
   
--   Any overload of the <xref:System.String.Compare%2A>, <xref:System.String.Equals%2A>, <xref:System.String.StartsWith%2A>,  <xref:System.String.EndsWith%2A>, <xref:System.String.IndexOf%2A>, and <xref:System.String.LastIndexOf%2A> methods that includes a <xref:System.StringComparison> parameter. The method performs an ordinal comparison if you supply a value of <xref:System.StringComparison?displayProperty=nameWithType> or <xref:System.StringComparison.OrdinalIgnoreCase> for this parameter.  
+-   Any overload of the <xref:System.String.Compare%2A>, <xref:System.String.Equals%2A>, <xref:System.String.StartsWith%2A>,  <xref:System.String.EndsWith%2A>, <xref:System.String.IndexOf%2A>, and <xref:System.String.LastIndexOf%2A> methods that includes a <xref:System.StringComparison> parameter. The method performs an ordinal comparison if you supply a value of <xref:System.StringComparison.Ordinal?displayProperty=nameWithType> or <xref:System.StringComparison.OrdinalIgnoreCase> for this parameter.  
   
 -   The overloads of the <xref:System.String.CompareOrdinal%2A> method.  
   
@@ -1803,7 +1803,7 @@
 > [!CAUTION]
 >  The <xref:System.String.Compare%28System.String%2CSystem.String%2CSystem.Globalization.CultureInfo%2CSystem.Globalization.CompareOptions%29> method is designed primarily for use in sorting or alphabetizing operations. It should not be used when the primary purpose of the method call is to determine whether two strings are equivalent (that is, when the purpose of the method call is to test for a return value of zero). To determine whether two strings are equivalent, call the <xref:System.String.Equals%2A> method.  
   
- The comparison can be further specified by the `options` parameter, which consists of one or more members of the <xref:System.Globalization.CompareOptions> enumeration. However, because the purpose of this method is to conduct a culture-sensitive string comparison, the <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> and <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> values have no effect.  
+ The comparison can be further specified by the `options` parameter, which consists of one or more members of the <xref:System.Globalization.CompareOptions> enumeration. However, because the purpose of this method is to conduct a culture-sensitive string comparison, the <xref:System.Globalization.CompareOptions.Ordinal?displayProperty=nameWithType> and <xref:System.Globalization.CompareOptions.OrdinalIgnoreCase?displayProperty=nameWithType> values have no effect.  
   
  Either or both comparands can be `null`. By definition, any string, including <xref:System.String.Empty?displayProperty=nameWithType>, compares greater than a null reference, and two null references compare equal to each other.  
   
@@ -2381,7 +2381,7 @@
   
  One or both of `strA` and `strB` can be `null`. By definition, any string, including <xref:System.String.Empty?displayProperty=nameWithType>, compares greater than a null reference, and two null references compare equal to each other.  
   
- The comparison can be further specified by the `options` parameter, which consists of one or more members of the <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> enumeration. However, because the purpose of this method is to conduct a culture-sensitive string comparison, the <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> and <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> values have no effect.  
+ The comparison can be further specified by the `options` parameter, which consists of one or more members of the <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> enumeration. However, because the purpose of this method is to conduct a culture-sensitive string comparison, the <xref:System.Globalization.CompareOptions.Ordinal?displayProperty=nameWithType> and <xref:System.Globalization.CompareOptions.OrdinalIgnoreCase?displayProperty=nameWithType> values have no effect.  
   
  The comparison terminates when an inequality is discovered or both substrings have been compared. However, if the two strings compare equal to the end of one string, and the other string has characters remaining, the string with the remaining characters is considered greater. The return value is the result of the last comparison performed.  
   
@@ -2474,7 +2474,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method performs a case-sensitive comparison using ordinal sort rules. For more information about word, string, and ordinal sorts, see <xref:System.Globalization.CompareOptions?displayProperty=nameWithType>. To perform a case-insensitive comparison using ordinal sort rules, call the <xref:System.String.Compare%28System.String%2CSystem.String%2CSystem.StringComparison%29> method with the `comparisonType` argument set to <xref:System.StringComparison?displayProperty=nameWithType>.  
+ This method performs a case-sensitive comparison using ordinal sort rules. For more information about word, string, and ordinal sorts, see <xref:System.Globalization.CompareOptions?displayProperty=nameWithType>. To perform a case-insensitive comparison using ordinal sort rules, call the <xref:System.String.Compare%28System.String%2CSystem.String%2CSystem.StringComparison%29> method with the `comparisonType` argument set to <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=nameWithType>.  
   
  Because <xref:System.String.CompareOrdinal%28System.String%2CSystem.String%29> is a static method, `strA` and `strB` can be `null`. If both values are `null`, the method returns 0 (zero), which indicates that `strA` and `strB` are equal. If only one of the values is `null`, the method considers the non-null value to be greater.  
   
@@ -2562,7 +2562,7 @@
   
  The number of characters compared is the lesser of the length of `strA` less `indexA`, the length of `strB` less `indexB`, and `length`.  
   
- This method performs a case-sensitive comparison using ordinal sort rules. For more information about word, string, and ordinal sorts, see <xref:System.Globalization.CompareOptions?displayProperty=nameWithType>. To perform a case-insensitive comparison using ordinal sort rules, call the <xref:System.String.Compare%28System.String%2CSystem.Int32%2CSystem.String%2CSystem.Int32%2CSystem.Int32%2CSystem.StringComparison%29> method with the `comparisonType` argument set to <xref:System.StringComparison?displayProperty=nameWithType>.  
+ This method performs a case-sensitive comparison using ordinal sort rules. For more information about word, string, and ordinal sorts, see <xref:System.Globalization.CompareOptions?displayProperty=nameWithType>. To perform a case-insensitive comparison using ordinal sort rules, call the <xref:System.String.Compare%28System.String%2CSystem.Int32%2CSystem.String%2CSystem.Int32%2CSystem.Int32%2CSystem.StringComparison%29> method with the `comparisonType` argument set to <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=nameWithType>.  
   
  Because <xref:System.String.CompareOrdinal%28System.String%2CSystem.String%29> is a static method, `strA` and `strB` can be `null`. If both values are `null`, the method returns 0 (zero), which indicates that `strA` and `strB` are equal. If only one of the values is `null`, the method considers the non-null value to be greater.  
   
@@ -2948,7 +2948,7 @@
 ## Remarks  
  The method concatenates each object in `args` by calling the parameterless `ToString` method of that object; it does not add any delimiters.  
   
- <xref:System.String?displayProperty=nameWithType> is used in place of any null object in the array.  
+ <xref:System.String.Empty?displayProperty=nameWithType> is used in place of any null object in the array.  
   
    
   
@@ -3070,7 +3070,7 @@
 ## Remarks  
  The method concatenates `arg0` and `arg1` by calling the parameterless `ToString` method of `arg0` and `arg1`; it does not add any delimiters.  
   
- <xref:System.String?displayProperty=nameWithType> is used in place of any null argument.  
+ <xref:System.String.Empty?displayProperty=nameWithType> is used in place of any null argument.  
   
  If either of the arguments is an array reference, the method concatenates a string representing that array, instead of its members (for example, "System.String[]").  
   
@@ -3194,7 +3194,7 @@
 ## Remarks  
  The method concatenates `arg0`, `arg1`, and `arg2` by calling the parameterless `ToString` method of each object; it does not add any delimiters.  
   
- <xref:System.String?displayProperty=nameWithType> is used in place of any null argument.  
+ <xref:System.String.Empty?displayProperty=nameWithType> is used in place of any null argument.  
   
    
   
@@ -6246,7 +6246,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
 ## Performance Considerations  
  If you are trying to reduce the total amount of memory your application allocates, keep in mind that interning a string has two unwanted side effects. First, the memory allocated for interned <xref:System.String> objects is not likely be released until the common language runtime (CLR) terminates. The reason is that the CLR's reference to the interned <xref:System.String> object can persist after your application, or even your application domain, terminates. Second, to intern a string, you must first create the string. The memory used by the <xref:System.String> object must still be allocated, even though the memory will eventually be garbage collected.  
   
- The .NET Framework version 2.0 introduces the <xref:System.Runtime.CompilerServices.CompilationRelaxations?displayProperty=nameWithType> enumeration member. The <xref:System.Runtime.CompilerServices.CompilationRelaxations.NoStringInterning> member marks an assembly as not requiring string-literal interning. You can apply <xref:System.Runtime.CompilerServices.CompilationRelaxations.NoStringInterning> to an assembly using the <xref:System.Runtime.CompilerServices.CompilationRelaxationsAttribute> attribute. Also, when you use the [Ngen.exe (Native Image Generator)](~/docs/framework/tools/ngen-exe-native-image-generator.md) to compile an assembly in advance of run time, strings are not interned across modules.  
+ The .NET Framework version 2.0 introduces the <xref:System.Runtime.CompilerServices.CompilationRelaxations.NoStringInterning?displayProperty=nameWithType> enumeration member. The <xref:System.Runtime.CompilerServices.CompilationRelaxations.NoStringInterning> member marks an assembly as not requiring string-literal interning. You can apply <xref:System.Runtime.CompilerServices.CompilationRelaxations.NoStringInterning> to an assembly using the <xref:System.Runtime.CompilerServices.CompilationRelaxationsAttribute> attribute. Also, when you use the [Ngen.exe (Native Image Generator)](~/docs/framework/tools/ngen-exe-native-image-generator.md) to compile an assembly in advance of run time, strings are not interned across modules.  
   
    
   
@@ -6676,7 +6676,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `separator` is `null`, an empty string (<xref:System.String?displayProperty=nameWithType>) is used instead. If any member of `values` is `null`, an empty string is used instead.  
+ If `separator` is `null`, an empty string (<xref:System.String.Empty?displayProperty=nameWithType>) is used instead. If any member of `values` is `null`, an empty string is used instead.  
   
  <xref:System.String.Join%28System.String%2CSystem.Collections.Generic.IEnumerable%7BSystem.String%7D%29> is a convenience method that lets you concatenate each element in an `IEnumerable(Of String)` collection without first converting the elements to a string array. It is particularly useful with Language-Integrated Query (LINQ) query expressions. The following example passes a `List(Of String)` object that contains either the uppercase or lowercase letters of the alphabet to a lambda expression that selects letters that are equal to or greater than a particular letter (which, in the example, is "M"). The `IEnumerable(Of String)` collection returned by the <xref:System.Linq.Enumerable.Where%2A?displayProperty=nameWithType> method is passed to the <xref:System.String.Join%28System.String%2CSystem.Collections.Generic.IEnumerable%7BSystem.String%7D%29> method to display the result as a single string.  
   
@@ -6746,7 +6746,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `separator` is `null` or if any element of `values` other than the first element is `null`, an empty string (<xref:System.String?displayProperty=nameWithType>) is used instead. See the Notes for Callers section if the first element of `values` is `null`.  
+ If `separator` is `null` or if any element of `values` other than the first element is `null`, an empty string (<xref:System.String.Empty?displayProperty=nameWithType>) is used instead. See the Notes for Callers section if the first element of `values` is `null`.  
   
  <xref:System.String.Join%28System.String%2CSystem.Object%5B%5D%29> is a convenience method that lets you concatenate each element in an object array without explicitly converting its elements to strings. The string representation of each object in the array is derived by calling that object's `ToString` method.  
   
@@ -6816,7 +6816,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
 ## Remarks  
  For example, if `separator` is ", " and the elements of `value` are "apple", "orange", "grape", and "pear", `Join(separator, value)` returns "apple, orange, grape, pear".  
   
- If `separator` is `null`, an empty string (<xref:System.String?displayProperty=nameWithType>) is used instead. If any element in `value` is `null`, an empty string is used instead.  
+ If `separator` is `null`, an empty string (<xref:System.String.Empty?displayProperty=nameWithType>) is used instead. If any element in `value` is `null`, an empty string is used instead.  
   
    
   
@@ -6914,7 +6914,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
 ## Remarks  
  For example, if `separator` is ", " and the elements of `value` are "apple", "orange", "grape", and "pear", `Join(separator, value, 1, 2)` returns "orange, grape".  
   
- If `separator` is `null`, an empty string (<xref:System.String?displayProperty=nameWithType>) is used instead. If any element in `value` is `null`, an empty string is used instead.  
+ If `separator` is `null`, an empty string (<xref:System.String.Empty?displayProperty=nameWithType>) is used instead. If any element in `value` is `null`, an empty string is used instead.  
   
    
   
@@ -7013,7 +7013,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `separator` is `null`, an empty string (<xref:System.String?displayProperty=nameWithType>) is used instead. If any member of `values` is `null`, an empty string is used instead.  
+ If `separator` is `null`, an empty string (<xref:System.String.Empty?displayProperty=nameWithType>) is used instead. If any member of `values` is `null`, an empty string is used instead.  
   
  <xref:System.String.Join%60%601%28System.String%2CSystem.Collections.Generic.IEnumerable%7B%60%600%7D%29> is a convenience method that lets you concatenate each member of an <xref:System.Collections.Generic.IEnumerable%601> collection without first converting them to strings. The string representation of each object in the <xref:System.Collections.Generic.IEnumerable%601> collection is derived by calling that object's `ToString` method.  
   
@@ -7962,7 +7962,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
   
 2.  Call the <xref:System.String.Normalize> method to normalize the strings to normalization form C.  
   
-3.  To compare two strings, call a method that supports ordinal string comparison, such as the <xref:System.String.Compare%28System.String%2CSystem.String%2CSystem.StringComparison%29> method, and supply a value of <xref:System.StringComparison?displayProperty=nameWithType> or <xref:System.StringComparison?displayProperty=nameWithType> as the <xref:System.StringComparison> argument. To sort an array of normalized strings, pass a `comparer` value of <xref:System.StringComparer.Ordinal%2A?displayProperty=nameWithType> or <xref:System.StringComparer.OrdinalIgnoreCase%2A?displayProperty=nameWithType> to an appropriate overload of <xref:System.Array.Sort%2A?displayProperty=nameWithType>.  
+3.  To compare two strings, call a method that supports ordinal string comparison, such as the <xref:System.String.Compare%28System.String%2CSystem.String%2CSystem.StringComparison%29> method, and supply a value of <xref:System.StringComparison.Ordinal?displayProperty=nameWithType> or <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=nameWithType> as the <xref:System.StringComparison> argument. To sort an array of normalized strings, pass a `comparer` value of <xref:System.StringComparer.Ordinal%2A?displayProperty=nameWithType> or <xref:System.StringComparer.OrdinalIgnoreCase%2A?displayProperty=nameWithType> to an appropriate overload of <xref:System.Array.Sort%2A?displayProperty=nameWithType>.  
   
 4.  Emit the strings in the sorted output based on the order indicated by the previous step.  
   
@@ -8032,7 +8032,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
   
 2.  Call the <xref:System.String.Normalize%28System.Text.NormalizationForm%29> method to normalize the strings to a specified normalization form.  
   
-3.  To compare two strings, call a method that supports ordinal string comparison, such as the <xref:System.String.Compare%28System.String%2CSystem.String%2CSystem.StringComparison%29> method, and supply a value of <xref:System.StringComparison?displayProperty=nameWithType> or <xref:System.StringComparison?displayProperty=nameWithType> as the <xref:System.StringComparison> argument. To sort an array of normalized strings, pass a `comparer` value of <xref:System.StringComparer.Ordinal%2A?displayProperty=nameWithType> or <xref:System.StringComparer.OrdinalIgnoreCase%2A?displayProperty=nameWithType> to an appropriate overload of <xref:System.Array.Sort%2A?displayProperty=nameWithType>.  
+3.  To compare two strings, call a method that supports ordinal string comparison, such as the <xref:System.String.Compare%28System.String%2CSystem.String%2CSystem.StringComparison%29> method, and supply a value of <xref:System.StringComparison.Ordinal?displayProperty=nameWithType> or <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=nameWithType> as the <xref:System.StringComparison> argument. To sort an array of normalized strings, pass a `comparer` value of <xref:System.StringComparer.Ordinal%2A?displayProperty=nameWithType> or <xref:System.StringComparer.OrdinalIgnoreCase%2A?displayProperty=nameWithType> to an appropriate overload of <xref:System.Array.Sort%2A?displayProperty=nameWithType>.  
   
 4.  Emit the strings in the sorted output based on the order indicated by the previous step.  
   
@@ -9146,7 +9146,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
   
  If the `options` parameter is <xref:System.StringSplitOptions.RemoveEmptyEntries> and the length of this instance is zero, the method returns an empty array.  
   
- Each element of `separator` defines a separate delimiter that consists of a single character. If the `options` argument is <xref:System.StringSplitOptions.None>, and two delimiters are adjacent or a delimiter is found at the beginning or end of this instance, the corresponding array element contains <xref:System.String?displayProperty=nameWithType>. For example, if `separator` includes  two elements, "-" and "_", the value of the string instance is "-_aa-\_", and the value of   the `options` argument is <xref:System.StringSplitOptions.None>, the method returns a string array with the following five elements:  
+ Each element of `separator` defines a separate delimiter that consists of a single character. If the `options` argument is <xref:System.StringSplitOptions.None>, and two delimiters are adjacent or a delimiter is found at the beginning or end of this instance, the corresponding array element contains <xref:System.String.Empty?displayProperty=nameWithType>. For example, if `separator` includes  two elements, "-" and "_", the value of the string instance is "-_aa-\_", and the value of   the `options` argument is <xref:System.StringSplitOptions.None>, the method returns a string array with the following five elements:  
   
 1.  <xref:System.String.Empty?displayProperty=nameWithType>, which represents the empty string that precedes the "-" character at index 0.  
   
@@ -9273,7 +9273,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
   
  If the `options` parameter is <xref:System.StringSplitOptions.RemoveEmptyEntries> and the length of this instance is zero, the method returns an empty array.  
   
- Each element of `separator` defines a separate delimiter that consists of one or more characters. If the `options` argument is <xref:System.StringSplitOptions.None>, and two delimiters are adjacent or a delimiter is found at the beginning or end of this instance, the corresponding array element contains <xref:System.String?displayProperty=nameWithType>. For example, if `separator` includes  two elements, "-" and "_", the value of the string instance is "-_aa-\_", and the value of   the `options` argument is <xref:System.StringSplitOptions.None>, the method returns a sting array with the following five elements:  
+ Each element of `separator` defines a separate delimiter that consists of one or more characters. If the `options` argument is <xref:System.StringSplitOptions.None>, and two delimiters are adjacent or a delimiter is found at the beginning or end of this instance, the corresponding array element contains <xref:System.String.Empty?displayProperty=nameWithType>. For example, if `separator` includes  two elements, "-" and "_", the value of the string instance is "-_aa-\_", and the value of   the `options` argument is <xref:System.StringSplitOptions.None>, the method returns a sting array with the following five elements:  
   
 1.  <xref:System.String.Empty?displayProperty=nameWithType>, which represents the empty string that precedes the "-" substring at index 0.  
   
@@ -9318,17 +9318,17 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
    
   
 ## Examples  
- The following example illustrates the difference in the arrays returned by calling a string's <xref:System.String.Split%28System.String%5B%5D%2CSystem.StringSplitOptions%29?displayProperty=nameWithType> method with its `options` parameter equal to <xref:System.StringSplitOptions?displayProperty=nameWithType> and <xref:System.StringSplitOptions?displayProperty=nameWithType>.  
+ The following example illustrates the difference in the arrays returned by calling a string's <xref:System.String.Split%28System.String%5B%5D%2CSystem.StringSplitOptions%29?displayProperty=nameWithType> method with its `options` parameter equal to <xref:System.StringSplitOptions.None?displayProperty=nameWithType> and <xref:System.StringSplitOptions.RemoveEmptyEntries?displayProperty=nameWithType>.  
   
  [!code-csharp[System.String.Split#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Split/cs/Split.cs#1)]
  [!code-vb[System.String.Split#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Split/vb/Split.vb#1)]  
   
- The following example defines an array of separators that include punctuation and white-space characters. Passing this array along with a value of <xref:System.StringSplitOptions?displayProperty=nameWithType> to the <xref:System.String.Split%28System.String%5B%5D%2CSystem.StringSplitOptions%29> method returns an array that consists of the individual words from the string.  
+ The following example defines an array of separators that include punctuation and white-space characters. Passing this array along with a value of <xref:System.StringSplitOptions.RemoveEmptyEntries?displayProperty=nameWithType> to the <xref:System.String.Split%28System.String%5B%5D%2CSystem.StringSplitOptions%29> method returns an array that consists of the individual words from the string.  
   
  [!code-csharp[System.String.Split#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Split/cs/split7.cs#7)]
  [!code-vb[System.String.Split#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Split/vb/split7.vb#7)]  
   
- Note that the method is called with the `options` argument set to <xref:System.StringSplitOptions?displayProperty=nameWithType>. This prevents the returned array from including <xref:System.String.Empty?displayProperty=nameWithType> values that represent empty substring matches between punctuation marks and white-space characters.  
+ Note that the method is called with the `options` argument set to <xref:System.StringSplitOptions.RemoveEmptyEntries?displayProperty=nameWithType>. This prevents the returned array from including <xref:System.String.Empty?displayProperty=nameWithType> values that represent empty substring matches between punctuation marks and white-space characters.  
   
  ]]></format>
         </remarks>
@@ -9644,7 +9644,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method compares `value` to the substring at the beginning of this instance that is the same length as `value`, and returns an indication whether they are equal. To be equal, `value` must be an empty string (<xref:System.String?displayProperty=nameWithType>), must be a reference to this same instance, or must match the beginning of this instance.  
+ This method compares `value` to the substring at the beginning of this instance that is the same length as `value`, and returns an indication whether they are equal. To be equal, `value` must be an empty string (<xref:System.String.Empty?displayProperty=nameWithType>), must be a reference to this same instance, or must match the beginning of this instance.  
   
  This method performs a word (case-sensitive and culture-sensitive) comparison using the current culture.  
   
@@ -9713,7 +9713,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.String.StartsWith%2A> method compares the `value` parameter to the substring at the beginning of this string and returns a value that indicates whether they are equal. To be equal, `value` must be a reference to this same string, must be the empty string (""), or must match the beginning of this string. The type of comparison performed by the <xref:System.String.StartsWith%2A> method depends on the value of the `comparisonType` parameter. The comparison can use the conventions of the current culture (<xref:System.StringComparison?displayProperty=nameWithType> and <xref:System.StringComparison?displayProperty=nameWithType>) or the invariant culture (<xref:System.StringComparison?displayProperty=nameWithType> and <xref:System.StringComparison?displayProperty=nameWithType>), or it can consist of a character-by-character comparison of code points (<xref:System.StringComparison?displayProperty=nameWithType> or <xref:System.StringComparison?displayProperty=nameWithType>). The comparison can also be case-sensitive (<xref:System.StringComparison?displayProperty=nameWithType>, <xref:System.StringComparison?displayProperty=nameWithType>, or <xref:System.StringComparison?displayProperty=nameWithType>), or it can ignore case (<xref:System.StringComparison?displayProperty=nameWithType>, <xref:System.StringComparison?displayProperty=nameWithType>, <xref:System.StringComparison?displayProperty=nameWithType>).  
+ The <xref:System.String.StartsWith%2A> method compares the `value` parameter to the substring at the beginning of this string and returns a value that indicates whether they are equal. To be equal, `value` must be a reference to this same string, must be the empty string (""), or must match the beginning of this string. The type of comparison performed by the <xref:System.String.StartsWith%2A> method depends on the value of the `comparisonType` parameter. The comparison can use the conventions of the current culture (<xref:System.StringComparison.CurrentCulture?displayProperty=nameWithType> and <xref:System.StringComparison.CurrentCultureIgnoreCase?displayProperty=nameWithType>) or the invariant culture (<xref:System.StringComparison.InvariantCulture?displayProperty=nameWithType> and <xref:System.StringComparison.InvariantCultureIgnoreCase?displayProperty=nameWithType>), or it can consist of a character-by-character comparison of code points (<xref:System.StringComparison.Ordinal?displayProperty=nameWithType> or <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=nameWithType>). The comparison can also be case-sensitive (<xref:System.StringComparison.CurrentCulture?displayProperty=nameWithType>, <xref:System.StringComparison.InvariantCulture?displayProperty=nameWithType>, or <xref:System.StringComparison.Ordinal?displayProperty=nameWithType>), or it can ignore case (<xref:System.StringComparison.CurrentCultureIgnoreCase?displayProperty=nameWithType>, <xref:System.StringComparison.InvariantCultureIgnoreCase?displayProperty=nameWithType>, <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=nameWithType>).  
   
    
   
@@ -9776,7 +9776,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method compares the `value` parameter to the substring at the beginning of this string that is the same length as `value`, and returns a value that indicates whether they are equal. To be equal, `value` must be an empty string (<xref:System.String?displayProperty=nameWithType>), must be a reference to this same instance, or must match the beginning of this instance.  
+ This method compares the `value` parameter to the substring at the beginning of this string that is the same length as `value`, and returns a value that indicates whether they are equal. To be equal, `value` must be an empty string (<xref:System.String.Empty?displayProperty=nameWithType>), must be a reference to this same instance, or must match the beginning of this instance.  
   
  This method performs a comparison using the specified casing and culture.  
   
@@ -11176,7 +11176,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
 > [!NOTE]
 >  This method does not modify the value of the current instance. Instead, it returns a new string in which all characters in the current instance are converted to uppercase.  
   
- The <xref:System.String.ToUpper%2A> method is often used to convert a string to uppercase so that it can be used in a case-insensitive comparison. A better method to perform case-insensitive comparison is to call a string comparison method that has a <xref:System.StringComparison> parameter whose value you set to <xref:System.StringComparison?displayProperty=nameWithType> for a culture-sensitive, case-insensitive comparison.  
+ The <xref:System.String.ToUpper%2A> method is often used to convert a string to uppercase so that it can be used in a case-insensitive comparison. A better method to perform case-insensitive comparison is to call a string comparison method that has a <xref:System.StringComparison> parameter whose value you set to <xref:System.StringComparison.CurrentCultureIgnoreCase?displayProperty=nameWithType> for a culture-sensitive, case-insensitive comparison.  
   
 ## Security Considerations  
  The casing operation that results from calling the <xref:System.String.ToUpper> method takes the casing conventions of the current culture into account. If you need the lowercase or uppercase version of an operating system identifier, such as a file name, named pipe, or registry key, use the <xref:System.String.ToLowerInvariant%2A> or <xref:System.String.ToUpperInvariant%2A> method. This produces the same result in every culture (unlike the <xref:System.String.ToUpper> method) and performs more efficiently.  

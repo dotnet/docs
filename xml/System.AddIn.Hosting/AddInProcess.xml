@@ -53,7 +53,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor has the same effect as using the <xref:System.AddIn.Hosting.AddInProcess.%23ctor%28System.AddIn.Hosting.Platform%29> constructor with the <xref:System.AddIn.Hosting.Platform?displayProperty=nameWithType> flag, to specify that the process that runs the add-in will have the same bits-per-word as the host process.  
+ This constructor has the same effect as using the <xref:System.AddIn.Hosting.AddInProcess.%23ctor%28System.AddIn.Hosting.Platform%29> constructor with the <xref:System.AddIn.Hosting.Platform.Host?displayProperty=nameWithType> flag, to specify that the process that runs the add-in will have the same bits-per-word as the host process.  
   
  ]]></format>
         </remarks>

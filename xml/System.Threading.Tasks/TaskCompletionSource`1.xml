@@ -420,11 +420,11 @@
 ## Remarks  
  The method returns false if the underlying <xref:System.Threading.Tasks.Task%601> object is already in one of the following three final states.  
   
--   <xref:System.Threading.Tasks.TaskStatus?displayProperty=nameWithType>  
+-   <xref:System.Threading.Tasks.TaskStatus.Canceled?displayProperty=nameWithType>  
   
--   <xref:System.Threading.Tasks.TaskStatus?displayProperty=nameWithType>  
+-   <xref:System.Threading.Tasks.TaskStatus.Faulted?displayProperty=nameWithType>  
   
--   <xref:System.Threading.Tasks.TaskStatus?displayProperty=nameWithType>  
+-   <xref:System.Threading.Tasks.TaskStatus.RanToCompletion?displayProperty=nameWithType>  
   
  This method also returns `false` if the underlying <xref:System.Threading.Tasks.Task%601> object has already been disposed.  
   

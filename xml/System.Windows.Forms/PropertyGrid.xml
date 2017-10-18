@@ -2095,7 +2095,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you set the <xref:System.Windows.Forms.PropertyGrid.PropertySort%2A> property, the appearance of the property sort buttons on the grid changes to reflect the current state of the property. Setting <xref:System.Windows.Forms.PropertyGrid.PropertySort%2A> to <xref:System.Windows.Forms.PropertySort?displayProperty=nameWithType> causes the properties to be displayed in the order they were retrieved.  
+ When you set the <xref:System.Windows.Forms.PropertyGrid.PropertySort%2A> property, the appearance of the property sort buttons on the grid changes to reflect the current state of the property. Setting <xref:System.Windows.Forms.PropertyGrid.PropertySort%2A> to <xref:System.Windows.Forms.PropertySort.NoSort?displayProperty=nameWithType> causes the properties to be displayed in the order they were retrieved.  
   
  Setting <xref:System.Windows.Forms.PropertyGrid.PropertySort%2A> to both <xref:System.Windows.Forms.PropertySort.Alphabetical> and <xref:System.Windows.Forms.PropertySort.Categorized> is the same as setting <xref:System.Windows.Forms.PropertyGrid.PropertySort%2A> to <xref:System.Windows.Forms.PropertySort.Categorized> alone. The categorized view is always shown as alphabetical.  
   

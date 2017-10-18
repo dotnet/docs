@@ -133,13 +133,13 @@
 ## Remarks  
  If one of the following cases occurs, this method returns the current <xref:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer> object.  
   
--   `patternInterface` is <xref:System.Windows.Automation.Peers.PatternInterface?displayProperty=nameWithType> and the <xref:System.Windows.Controls.DataGrid> that is associated with this <xref:System.Windows.Automation.Peers.DataGridItemAutomationPeer> is read-only.  
+-   `patternInterface` is <xref:System.Windows.Automation.Peers.PatternInterface.Invoke?displayProperty=nameWithType> and the <xref:System.Windows.Controls.DataGrid> that is associated with this <xref:System.Windows.Automation.Peers.DataGridItemAutomationPeer> is read-only.  
   
--   `patternInterface` is <xref:System.Windows.Automation.Peers.PatternInterface?displayProperty=nameWithType> and the <xref:System.Windows.Controls.DataGridRow> that is associated with this <xref:System.Windows.Automation.Peers.DataGridCellAutomationPeer> can be selected.  
+-   `patternInterface` is <xref:System.Windows.Automation.Peers.PatternInterface.SelectionItem?displayProperty=nameWithType> and the <xref:System.Windows.Controls.DataGridRow> that is associated with this <xref:System.Windows.Automation.Peers.DataGridCellAutomationPeer> can be selected.  
   
--   `patternInterface` is <xref:System.Windows.Automation.Peers.PatternInterface?displayProperty=nameWithType>.  
+-   `patternInterface` is <xref:System.Windows.Automation.Peers.PatternInterface.ScrollItem?displayProperty=nameWithType>.  
   
--   `patternInterface` is <xref:System.Windows.Automation.Peers.PatternInterface?displayProperty=nameWithType>.  
+-   `patternInterface` is <xref:System.Windows.Automation.Peers.PatternInterface.Selection?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

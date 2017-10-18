@@ -135,10 +135,10 @@
   
 |Value|Description|  
 |-----------|-----------------|  
-|<xref:System.Web.UI.MobileControls.Alignment?displayProperty=nameWithType>|No alignment is set for the specified object.|  
-|<xref:System.Web.UI.MobileControls.Alignment?displayProperty=nameWithType>|Aligns to the left.|  
-|<xref:System.Web.UI.MobileControls.Alignment?displayProperty=nameWithType>|Aligns to the center.|  
-|<xref:System.Web.UI.MobileControls.Alignment?displayProperty=nameWithType>|Aligns to the right.|  
+|<xref:System.Web.UI.MobileControls.Alignment.NotSet?displayProperty=nameWithType>|No alignment is set for the specified object.|  
+|<xref:System.Web.UI.MobileControls.Alignment.Left?displayProperty=nameWithType>|Aligns to the left.|  
+|<xref:System.Web.UI.MobileControls.Alignment.Center?displayProperty=nameWithType>|Aligns to the center.|  
+|<xref:System.Web.UI.MobileControls.Alignment.Right?displayProperty=nameWithType>|Aligns to the right.|  
   
  ]]></format>
         </remarks>
@@ -996,9 +996,9 @@
   
 |Enumeration|Value|Description|  
 |-----------------|-----------|-----------------|  
-|<xref:System.Web.UI.MobileControls.Wrapping?displayProperty=nameWithType>|0|No size is set for the specified object. This is the default value.|  
-|<xref:System.Web.UI.MobileControls.Wrapping?displayProperty=nameWithType>|1|Wrap to the next line.|  
-|<xref:System.Web.UI.MobileControls.Wrapping?displayProperty=nameWithType>|2|The text is not wrapped to the next line.|  
+|<xref:System.Web.UI.MobileControls.Wrapping.NotSet?displayProperty=nameWithType>|0|No size is set for the specified object. This is the default value.|  
+|<xref:System.Web.UI.MobileControls.Wrapping.Wrap?displayProperty=nameWithType>|1|Wrap to the next line.|  
+|<xref:System.Web.UI.MobileControls.Wrapping.NoWrap?displayProperty=nameWithType>|2|The text is not wrapped to the next line.|  
   
  ]]></format>
         </remarks>

@@ -951,7 +951,7 @@
 ## Remarks  
  This property is used primarily by control developers.  
   
- Use the <xref:System.Web.UI.WebControls.AdRotator.TagKey%2A> property to determine the <xref:System.Web.UI.HtmlTextWriterTag> value associated with an <xref:System.Web.UI.WebControls.AdRotator> control. This property overrides the base implementation to always return <xref:System.Web.UI.HtmlTextWriterTag?displayProperty=nameWithType>.  
+ Use the <xref:System.Web.UI.WebControls.AdRotator.TagKey%2A> property to determine the <xref:System.Web.UI.HtmlTextWriterTag> value associated with an <xref:System.Web.UI.WebControls.AdRotator> control. This property overrides the base implementation to always return <xref:System.Web.UI.HtmlTextWriterTag.A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

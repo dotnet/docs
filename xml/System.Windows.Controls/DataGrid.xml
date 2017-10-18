@@ -2404,7 +2404,7 @@
 ## Remarks  
  When you set a value for the <xref:System.Windows.Controls.DataGrid.MaxColumnWidth%2A> property, it must be greater than or equal to 0.0.  
   
- <xref:System.Double?displayProperty=nameWithType> is not a valid value for this property. The value restrictions on the <xref:System.Double> value are enforced by a <xref:System.Windows.ValidateValueCallback> mechanism. If you attempt to set a value that is not valid, a run-time exception is thrown.  
+ <xref:System.Double.NaN?displayProperty=nameWithType> is not a valid value for this property. The value restrictions on the <xref:System.Double> value are enforced by a <xref:System.Windows.ValidateValueCallback> mechanism. If you attempt to set a value that is not valid, a run-time exception is thrown.  
   
  The <xref:System.Windows.Controls.DataGridLength.DisplayValue%2A> of the <xref:System.Windows.Controls.DataGrid.ColumnWidth%2A?displayProperty=nameWithType> and <xref:System.Windows.Controls.DataGridColumn.Width%2A?displayProperty=nameWithType> properties are constrained by the following properties if they are set, in order of precedence:  
   
@@ -2480,7 +2480,7 @@
 ## Remarks  
  When you set a value for the <xref:System.Windows.Controls.DataGrid.MinColumnWidth%2A> property, it must be greater than or equal to 0.0.  
   
- <xref:System.Double?displayProperty=nameWithType> and <xref:System.Double?displayProperty=nameWithType> are not valid values for this property. The value restrictions on the <xref:System.Double> value are enforced by a <xref:System.Windows.ValidateValueCallback> mechanism. If you attempt to set a value that is not valid, a run-time exception is thrown.  
+ <xref:System.Double.PositiveInfinity?displayProperty=nameWithType> and <xref:System.Double.NaN?displayProperty=nameWithType> are not valid values for this property. The value restrictions on the <xref:System.Double> value are enforced by a <xref:System.Windows.ValidateValueCallback> mechanism. If you attempt to set a value that is not valid, a run-time exception is thrown.  
   
  The <xref:System.Windows.Controls.DataGridLength.DisplayValue%2A> of the <xref:System.Windows.Controls.DataGrid.ColumnWidth%2A?displayProperty=nameWithType> and <xref:System.Windows.Controls.DataGridColumn.Width%2A?displayProperty=nameWithType> properties are constrained by the following properties if they are set, in order of precedence:  
   
@@ -2534,7 +2534,7 @@
 ## Remarks  
  When you set a value for the <xref:System.Windows.Controls.DataGrid.MinRowHeight%2A> property, it must be greater than or equal to 0.0.  
   
- <xref:System.Double?displayProperty=nameWithType> and <xref:System.Double?displayProperty=nameWithType> are not valid values for this property. The value restrictions on the <xref:System.Double> value are enforced by a <xref:System.Windows.ValidateValueCallback> mechanism. If you attempt to set a value that is not valid, a run-time exception is thrown.  
+ <xref:System.Double.PositiveInfinity?displayProperty=nameWithType> and <xref:System.Double.NaN?displayProperty=nameWithType> are not valid values for this property. The value restrictions on the <xref:System.Double> value are enforced by a <xref:System.Windows.ValidateValueCallback> mechanism. If you attempt to set a value that is not valid, a run-time exception is thrown.  
   
  If a conflict exists between the <xref:System.Windows.Controls.DataGrid.MinRowHeight%2A> property and the <xref:System.Windows.Controls.DataGrid.RowHeight%2A> property, <xref:System.Windows.Controls.DataGrid.MinRowHeight%2A> takes precedence. However, the <xref:System.Windows.FrameworkElement.Height%2A> property set on an individual <xref:System.Windows.Controls.DataGridRow> has higher precedence than a property set at the <xref:System.Windows.Controls.DataGrid> level and is not constrained by the <xref:System.Windows.Controls.DataGrid.MinRowHeight%2A> property.  
   
@@ -4380,7 +4380,7 @@
 ## Remarks  
  When you set a value for the <xref:System.Windows.Controls.DataGrid.RowHeaderWidth%2A> property, it must be equal to or greater than 0.0. Set this property to <xref:System.Double.NaN> ("Auto" in XAML) to make the row header automatically adjust its size to fit its content.  
   
- <xref:System.Double?displayProperty=nameWithType> is not a valid value for this property. The value restrictions on the <xref:System.Double> value are enforced by a <xref:System.Windows.ValidateValueCallback> mechanism. If you attempt to set a value that is not valid, a run-time exception is thrown.  
+ <xref:System.Double.PositiveInfinity?displayProperty=nameWithType> is not a valid value for this property. The value restrictions on the <xref:System.Double> value are enforced by a <xref:System.Windows.ValidateValueCallback> mechanism. If you attempt to set a value that is not valid, a run-time exception is thrown.  
   
  ]]></format>
         </remarks>
@@ -4424,7 +4424,7 @@
 ## Remarks  
  When you set a value for the <xref:System.Windows.Controls.DataGrid.RowHeight%2A> property, it must be equal to or greater than 0.0. Set this property to <xref:System.Double.NaN> ("Auto" in XAML) to make the row automatically adjust its size to fit its content.  
   
- <xref:System.Double?displayProperty=nameWithType> is not a valid value for this property. The value restrictions on the <xref:System.Double> value are enforced by a <xref:System.Windows.ValidateValueCallback> mechanism. If you attempt to set a value that is not valid, a run-time exception is thrown.  
+ <xref:System.Double.PositiveInfinity?displayProperty=nameWithType> is not a valid value for this property. The value restrictions on the <xref:System.Double> value are enforced by a <xref:System.Windows.ValidateValueCallback> mechanism. If you attempt to set a value that is not valid, a run-time exception is thrown.  
   
  The <xref:System.Windows.Controls.DataGrid.RowHeight%2A> property is applied to each <xref:System.Windows.Controls.DataGridRow> that does not have its <xref:System.Windows.FrameworkElement.Height%2A> property set. If a conflict exists between the <xref:System.Windows.Controls.DataGrid.RowHeight%2A> property and the <xref:System.Windows.Controls.DataGrid.MinRowHeight%2A> property, <xref:System.Windows.Controls.DataGrid.MinRowHeight%2A> takes precedence.  
   

@@ -398,9 +398,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If a value is not specified in the configuration file, the <xref:System.Net.ServicePointManager.EncryptionPolicy%2A> property defaults to <xref:System.Net.Security.EncryptionPolicy?displayProperty=nameWithType>. This is applied to an SSL/TLS session on this <xref:System.Net.ServicePointManager> instance.  
+ If a value is not specified in the configuration file, the <xref:System.Net.ServicePointManager.EncryptionPolicy%2A> property defaults to <xref:System.Net.Security.EncryptionPolicy.RequireEncryption?displayProperty=nameWithType>. This is applied to an SSL/TLS session on this <xref:System.Net.ServicePointManager> instance.  
   
- The use of the Null cipher is required when the encryption policy is set to <xref:System.Net.Security.EncryptionPolicy?displayProperty=nameWithType>.  
+ The use of the Null cipher is required when the encryption policy is set to <xref:System.Net.Security.EncryptionPolicy.NoEncryption?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

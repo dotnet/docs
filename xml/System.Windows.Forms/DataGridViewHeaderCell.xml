@@ -190,7 +190,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridViewHeaderCell.Frozen%2A> property is `true` if the cell belongs to a frozen row or column, or if the cell is the top-left header cell. A cell, row, or column is frozen when its <xref:System.Windows.Forms.DataGridViewElement.State%2A> property has a value of <xref:System.Windows.Forms.DataGridViewElementStates?displayProperty=nameWithType>  
+ The <xref:System.Windows.Forms.DataGridViewHeaderCell.Frozen%2A> property is `true` if the cell belongs to a frozen row or column, or if the cell is the top-left header cell. A cell, row, or column is frozen when its <xref:System.Windows.Forms.DataGridViewElement.State%2A> property has a value of <xref:System.Windows.Forms.DataGridViewElementStates.Frozen?displayProperty=nameWithType>  
   
  ]]></format>
         </remarks>

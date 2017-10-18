@@ -27,7 +27,7 @@
 ## Remarks  
  The <xref:System.Configuration.SchemeSettingElementCollection> class represents the \<schemeSettings> element under the Uri section within a configuration file.  
   
- The <xref:System.Configuration.SchemeSettingElementCollection> class and the \<schemeSettings> section in a configuration file looks generic, implying that an application can specify any <xref:System.GenericUriParserOptions?displayProperty=nameWithType> enumeration value for any scheme. In fact, only the <xref:System.GenericUriParserOptions?displayProperty=nameWithType> flag for HTTP and HTTPS schemes are supported. All other settings are ignored.  
+ The <xref:System.Configuration.SchemeSettingElementCollection> class and the \<schemeSettings> section in a configuration file looks generic, implying that an application can specify any <xref:System.GenericUriParserOptions?displayProperty=nameWithType> enumeration value for any scheme. In fact, only the <xref:System.GenericUriParserOptions.DontUnescapePathDotsAndSlashes?displayProperty=nameWithType> flag for HTTP and HTTPS schemes are supported. All other settings are ignored.  
   
  By default, the <xref:System.Uri?displayProperty=nameWithType> class un-escapes percent encoded path delimiters before executing path compression. This was implemented as a security mechanism against attacks like the following:  
   

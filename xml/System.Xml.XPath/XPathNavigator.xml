@@ -1886,7 +1886,7 @@ nav.Evaluate(expr);
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Namespaces `xml` and `xmlns` always return a value. If <xref:System.String?displayProperty=nameWithType> is specified as the `name` parameter, the <xref:System.Xml.XPath.XPathNavigator.GetNamespace%2A> method returns the default `xmlns` namespace.  
+ Namespaces `xml` and `xmlns` always return a value. If <xref:System.String.Empty?displayProperty=nameWithType> is specified as the `name` parameter, the <xref:System.Xml.XPath.XPathNavigator.GetNamespace%2A> method returns the default `xmlns` namespace.  
   
  For a definition of namespace nodes, see section 5.4 of the W3C XML Path Language (XPath) recommendation located at http://www.w3.org/TR/xpath#data-model.  
   
@@ -3355,7 +3355,7 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If <xref:System.String?displayProperty=nameWithType> is specified as the `prefix` parameter, the currently assigned default namespace URI is returned. If no default namespace URI is explicitly assigned, and <xref:System.String?displayProperty=nameWithType> is specified as the `prefix` parameter, the blank prefix is associated with elements that are not in any namespace, and <xref:System.String?displayProperty=nameWithType> is returned.  
+ If <xref:System.String.Empty?displayProperty=nameWithType> is specified as the `prefix` parameter, the currently assigned default namespace URI is returned. If no default namespace URI is explicitly assigned, and <xref:System.String.Empty?displayProperty=nameWithType> is specified as the `prefix` parameter, the blank prefix is associated with elements that are not in any namespace, and <xref:System.String.Empty?displayProperty=nameWithType> is returned.  
   
 > [!NOTE]
 >  The prefix to namespace URI mappings can change from node to node in an XML document. As a result, the value of the <xref:System.Xml.XPath.XPathNavigator.LookupNamespace%2A> method may not be consistent from one node to the next.  
@@ -6902,7 +6902,7 @@ XPathNodeIterator ni = nav.Select(expr);
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If <xref:System.String?displayProperty=nameWithType> is specified as the `name` parameter, all ancestor nodes that belong to the specified namespace URI are selected. If <xref:System.String?displayProperty=nameWithType> is specified as the `namespaceURI` parameter, all ancestor nodes with the specified local name that belong to no namespace are selected. If <xref:System.String?displayProperty=nameWithType> is specified as both the local name and namespace URI, all ancestor nodes that belong to no namespace are selected.  
+ If <xref:System.String.Empty?displayProperty=nameWithType> is specified as the `name` parameter, all ancestor nodes that belong to the specified namespace URI are selected. If <xref:System.String.Empty?displayProperty=nameWithType> is specified as the `namespaceURI` parameter, all ancestor nodes with the specified local name that belong to no namespace are selected. If <xref:System.String.Empty?displayProperty=nameWithType> is specified as both the local name and namespace URI, all ancestor nodes that belong to no namespace are selected.  
   
  The <xref:System.Xml.XPath.XPathNavigator.SelectAncestors%2A> method has no effect on the state of the <xref:System.Xml.XPath.XPathNavigator>.  
   
@@ -7039,7 +7039,7 @@ XPathNodeIterator ni = nav.Select(expr);
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If <xref:System.String?displayProperty=nameWithType> is specified as the `name` parameter, all child nodes that belong to the specified namespace URI are selected. If <xref:System.String?displayProperty=nameWithType> is specified as the `namespaceURI` parameter, all child nodes with the specified local name that belong to no namespace are selected. If both the local name and namespace URI parameters are <xref:System.String?displayProperty=nameWithType>, all child nodes that belong to no namespace are selected.  
+ If <xref:System.String.Empty?displayProperty=nameWithType> is specified as the `name` parameter, all child nodes that belong to the specified namespace URI are selected. If <xref:System.String.Empty?displayProperty=nameWithType> is specified as the `namespaceURI` parameter, all child nodes with the specified local name that belong to no namespace are selected. If both the local name and namespace URI parameters are <xref:System.String.Empty?displayProperty=nameWithType>, all child nodes that belong to no namespace are selected.  
   
  The <xref:System.Xml.XPath.XPathNavigator.SelectChildren%2A> method has no effect on the state of the <xref:System.Xml.XPath.XPathNavigator>.  
   
@@ -7145,7 +7145,7 @@ XPathNodeIterator ni = nav.Select(expr);
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If <xref:System.String?displayProperty=nameWithType> is specified as the `name` parameter, all descendant nodes that belong to the specified namespace URI are selected. If <xref:System.String?displayProperty=nameWithType> is specified as the `namespaceURI` parameter, all descendant nodes with the specified local name that belong to no namespace are selected. If both the local name and namespace URI parameters are <xref:System.String?displayProperty=nameWithType>, all descendant nodes that belong to no namespace are selected.  
+ If <xref:System.String.Empty?displayProperty=nameWithType> is specified as the `name` parameter, all descendant nodes that belong to the specified namespace URI are selected. If <xref:System.String.Empty?displayProperty=nameWithType> is specified as the `namespaceURI` parameter, all descendant nodes with the specified local name that belong to no namespace are selected. If both the local name and namespace URI parameters are <xref:System.String.Empty?displayProperty=nameWithType>, all descendant nodes that belong to no namespace are selected.  
   
  A descendant is a child or a child of a child and so on; thus the selected nodes will never contain attribute or namespace nodes.  
   
@@ -8380,7 +8380,7 @@ XPathNodeIterator ni = nav.Select(expr);
 ## Remarks  
  The following are important notes to consider when using the <xref:System.Xml.XPath.XPathNavigator.XmlType%2A> property.  
   
--   The <xref:System.Xml.XPath.XPathNavigator.XmlType%2A> property is `null`, unless the <xref:System.Xml.Schema.IXmlSchemaInfo.Validity%2A> property of the <xref:System.Xml.XPath.XPathNavigator.SchemaInfo%2A> property of the <xref:System.Xml.XPath.XPathNavigator> is set to <xref:System.Xml.Schema.XmlSchemaValidity?displayProperty=nameWithType>.  
+-   The <xref:System.Xml.XPath.XPathNavigator.XmlType%2A> property is `null`, unless the <xref:System.Xml.Schema.IXmlSchemaInfo.Validity%2A> property of the <xref:System.Xml.XPath.XPathNavigator.SchemaInfo%2A> property of the <xref:System.Xml.XPath.XPathNavigator> is set to <xref:System.Xml.Schema.XmlSchemaValidity.Valid?displayProperty=nameWithType>.  
   
 -   If this node is valid, the <xref:System.Xml.XPath.XPathNavigator.XmlType%2A> property is the same as the <xref:System.Xml.Schema.IXmlSchemaInfo.SchemaType%2A> property of the <xref:System.Xml.XPath.XPathNavigator.SchemaInfo%2A> property of the <xref:System.Xml.XPath.XPathNavigator>, unless this node is a member of a union.  
   

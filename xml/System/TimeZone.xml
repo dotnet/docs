@@ -251,7 +251,7 @@
   
  `time` = UTC + offset  
   
- The method interprets the time zone of `time` based on its <xref:System.DateTime.Kind%2A> property. If the value of the <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind?displayProperty=nameWithType> or <xref:System.DateTimeKind?displayProperty=nameWithType>, the method returns the offset of the local time zone. If the value of the <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind?displayProperty=nameWithType>, the method returns an offset equal to <xref:System.TimeSpan.Zero?displayProperty=nameWithType>.  
+ The method interprets the time zone of `time` based on its <xref:System.DateTime.Kind%2A> property. If the value of the <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind.Local?displayProperty=nameWithType> or <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>, the method returns the offset of the local time zone. If the value of the <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>, the method returns an offset equal to <xref:System.TimeSpan.Zero?displayProperty=nameWithType>.  
   
  If the local time zone observes daylight saving time, <xref:System.TimeZone.GetUtcOffset%2A> applies the current adjustment rule to `time` when determining the offset of the local time zone. That is, the offset returned by <xref:System.TimeZone.GetUtcOffset%2A> reflects whether `time` falls in the time zone's standard time or its daylight saving time.  
   
@@ -430,9 +430,9 @@
   
 |`time` parameter|Behavior|Return value|  
 |----------------------|--------------|------------------|  
-|A Coordinated Universal Time (UTC) time (<xref:System.DateTimeKind?displayProperty=nameWithType>).|Converts the time from UTC to the local time.|A <xref:System.DateTime> object whose value is the local time that corresponds to `time`.|  
-|A local time (<xref:System.DateTimeKind?displayProperty=nameWithType>).|No conversion necessary.|The same <xref:System.DateTime> value represented by the `time` parameter.|  
-|An unspecified time (<xref:System.DateTimeKind?displayProperty=nameWithType>).|Assumes that the time is UTC and converts it from UTC to the local time.|A <xref:System.DateTime> object whose value is the local time that corresponds to `time`.|  
+|A Coordinated Universal Time (UTC) time (<xref:System.DateTimeKind.Utc?displayProperty=nameWithType>).|Converts the time from UTC to the local time.|A <xref:System.DateTime> object whose value is the local time that corresponds to `time`.|  
+|A local time (<xref:System.DateTimeKind.Local?displayProperty=nameWithType>).|No conversion necessary.|The same <xref:System.DateTime> value represented by the `time` parameter.|  
+|An unspecified time (<xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>).|Assumes that the time is UTC and converts it from UTC to the local time.|A <xref:System.DateTime> object whose value is the local time that corresponds to `time`.|  
   
  If the local time zone observes daylight saving time, <xref:System.TimeZone.ToLocalTime%2A> applies the current adjustment rule to `time` when performing the conversion.  
   
@@ -494,7 +494,7 @@
   
  Because `time` is interpreted in relation to the current time zone on the current system, the date and time returned by this method can differ if an application is run on different computers or on the same computer with different time zones. For cases in which a date and time value must represent a single, unambiguous point in time, use a <xref:System.DateTimeOffset> value to represent the local time.  
   
- The <xref:System.TimeZone.ToUniversalTime%2A> method corresponds to the <xref:System.TimeZoneInfo.ConvertTimeToUtc%28System.DateTime%29?displayProperty=nameWithType> method overload with a <xref:System.DateTime> parameter whose <xref:System.DateTime.Kind%2A> property does not equal <xref:System.DateTimeKind?displayProperty=nameWithType>. Whenever possible, use the <xref:System.TimeZoneInfo.ConvertTimeToUtc%28System.DateTime%29?displayProperty=nameWithType> method overload.  
+ The <xref:System.TimeZone.ToUniversalTime%2A> method corresponds to the <xref:System.TimeZoneInfo.ConvertTimeToUtc%28System.DateTime%29?displayProperty=nameWithType> method overload with a <xref:System.DateTime> parameter whose <xref:System.DateTime.Kind%2A> property does not equal <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>. Whenever possible, use the <xref:System.TimeZoneInfo.ConvertTimeToUtc%28System.DateTime%29?displayProperty=nameWithType> method overload.  
   
  ]]></format>
         </remarks>

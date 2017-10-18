@@ -80,7 +80,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the invoked method does not have a return value (for example, the method is a constructor), <xref:System.AddIn.Contract.Automation.IRemoteMethodInfoContract.Invoke%2A> returns a default <xref:System.AddIn.Contract.RemoteArgument> in which the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property is set to the value <xref:System.AddIn.Contract.RemoteArgumentKind?displayProperty=nameWithType> and the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property is set to the value <xref:System.TypeCode?displayProperty=nameWithType>.  
+ If the invoked method does not have a return value (for example, the method is a constructor), <xref:System.AddIn.Contract.Automation.IRemoteMethodInfoContract.Invoke%2A> returns a default <xref:System.AddIn.Contract.RemoteArgument> in which the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property is set to the value <xref:System.AddIn.Contract.RemoteArgumentKind.Missing?displayProperty=nameWithType> and the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property is set to the value <xref:System.TypeCode.Empty?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

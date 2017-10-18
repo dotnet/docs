@@ -7375,7 +7375,7 @@
 ## Remarks  
  If `structure` is a value type, it can be boxed or unboxed. If it is boxed, it is unboxed before copying.  
   
- A formatted class is a reference type whose layout is specified by the <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribute, as either <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=nameWithType> or <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=nameWithType>.  
+ A formatted class is a reference type whose layout is specified by the <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribute, as either <xref:System.Runtime.InteropServices.LayoutKind.Explicit?displayProperty=nameWithType> or <xref:System.Runtime.InteropServices.LayoutKind.Sequential?displayProperty=nameWithType>.  
   
  <xref:System.Runtime.InteropServices.Marshal.StructureToPtr%2A> copies the contents of `structure` to the pre-allocated block of memory that the `ptr` parameter points to. If `structure` contains reference types that marshal to COM interface pointers (interfaces, classes without layout, and <xref:System.Object?displayProperty=nameWithType>), the managed objects are kept alive with reference counts. All other reference types (for example, strings and arrays) are marshaled to copies. To release these managed or unmanaged objects, you must call the <xref:System.Runtime.InteropServices.Marshal.DestroyStructure%2A?displayProperty=nameWithType> method before you free the memory block.  
   
@@ -7460,7 +7460,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A formatted class is a reference type whose layout is specified by the <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribute, as either <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=nameWithType> or <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=nameWithType>.  
+ A formatted class is a reference type whose layout is specified by the <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribute, as either <xref:System.Runtime.InteropServices.LayoutKind.Explicit?displayProperty=nameWithType> or <xref:System.Runtime.InteropServices.LayoutKind.Sequential?displayProperty=nameWithType>.  
   
  <xref:System.Runtime.InteropServices.Marshal.StructureToPtr%60%601%28%60%600%2CSystem.IntPtr%2CSystem.Boolean%29> copies the contents of `structure` to the pre-allocated block of memory that the `ptr` parameter points to. If `structure` contains reference types that marshal to COM interface pointers (interfaces, classes without layout, and <xref:System.Object?displayProperty=nameWithType>), the managed objects are kept alive with reference counts. All other reference types (for example, strings and arrays) are marshaled to copies. To release these managed or unmanaged objects, you must call the <xref:System.Runtime.InteropServices.Marshal.DestroyStructure%60%601%28System.IntPtr%29> method before you free the memory block.  
   

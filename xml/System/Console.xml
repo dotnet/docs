@@ -212,7 +212,7 @@
  [!code-csharp[System.Console.BackgroundColor#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.console.backgroundcolor/cs/backgroundcolor1.cs#1)]
  [!code-vb[System.Console.BackgroundColor#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.console.backgroundcolor/vb/backgroundcolor1.vb#1)]  
   
- A get operation for a Windows-based application, in which a console does not exist, returns <xref:System.ConsoleColor?displayProperty=nameWithType>.  
+ A get operation for a Windows-based application, in which a console does not exist, returns <xref:System.ConsoleColor.Black?displayProperty=nameWithType>.  
   
    
   
@@ -485,7 +485,7 @@
   
  When the user presses either Ctrl+C or Ctrl+Break, the <xref:System.Console.CancelKeyPress> event is fired and the application's <xref:System.ConsoleCancelEventHandler> event handler is executed. The event handler is passed a <xref:System.ConsoleCancelEventArgs> object that has two useful properties:  
   
--   <xref:System.ConsoleCancelEventArgs.SpecialKey%2A>, which allows you to determine whether the handler was invoked as a result of the user pressing Ctrl+C (the property value is <xref:System.ConsoleSpecialKey?displayProperty=nameWithType>) or Ctrl+Break (the property value is <xref:System.ConsoleSpecialKey?displayProperty=nameWithType>).  
+-   <xref:System.ConsoleCancelEventArgs.SpecialKey%2A>, which allows you to determine whether the handler was invoked as a result of the user pressing Ctrl+C (the property value is <xref:System.ConsoleSpecialKey.ControlC?displayProperty=nameWithType>) or Ctrl+Break (the property value is <xref:System.ConsoleSpecialKey.ControlBreak?displayProperty=nameWithType>).  
   
 -   <xref:System.ConsoleCancelEventArgs.Cancel%2A>, which allows you to determine how to your application should respond to the user pressing Ctrl+C or Ctrl+Break. By default, the <xref:System.ConsoleCancelEventArgs.Cancel%2A> property is `false`, which causes program execution to terminate when the event handler exits. Changing its property to `true` specifies that the application should continue to execute.  
   

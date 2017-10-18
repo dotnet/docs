@@ -4555,8 +4555,8 @@
 |<xref:System.Windows.Forms.DataGridViewCellStyle.SelectionBackColor%2A>|The value of the <xref:System.Drawing.SystemBrushes.Highlight%2A?displayProperty=nameWithType> property.|  
 |<xref:System.Windows.Forms.DataGridViewCellStyle.SelectionForeColor%2A>|The value of the <xref:System.Drawing.SystemBrushes.HighlightText%2A?displayProperty=nameWithType> property.|  
 |<xref:System.Windows.Forms.DataGridViewCellStyle.Font%2A>|The value of the <xref:System.Windows.Forms.DataGridView.Font%2A> property.|  
-|<xref:System.Windows.Forms.DataGridViewCellStyle.Alignment%2A>|<xref:System.Windows.Forms.DataGridViewContentAlignment?displayProperty=nameWithType>|  
-|<xref:System.Windows.Forms.DataGridViewCellStyle.WrapMode%2A>|<xref:System.Windows.Forms.DataGridViewTriState?displayProperty=nameWithType>|  
+|<xref:System.Windows.Forms.DataGridViewCellStyle.Alignment%2A>|<xref:System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft?displayProperty=nameWithType>|  
+|<xref:System.Windows.Forms.DataGridViewCellStyle.WrapMode%2A>|<xref:System.Windows.Forms.DataGridViewTriState.True?displayProperty=nameWithType>|  
   
  These values automatically override the values set through the <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A> property. To force column headers to inherit the <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A> values, you must set the values in the <xref:System.Windows.Forms.DataGridView.ColumnHeadersDefaultCellStyle%2A> object to the default values indicated for the <xref:System.Windows.Forms.DataGridViewCellStyle> class.  
   
@@ -6584,7 +6584,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is useful to determine the number of cells in a particular state. To retrieve the number of selected cells, for example, use this method with the <xref:System.Windows.Forms.DataGridViewElementStates?displayProperty=nameWithType> value. This is typically more efficient than using the <xref:System.Windows.Forms.DataGridView.SelectedCells%2A> property.  
+ This method is useful to determine the number of cells in a particular state. To retrieve the number of selected cells, for example, use this method with the <xref:System.Windows.Forms.DataGridViewElementStates.Selected?displayProperty=nameWithType> value. This is typically more efficient than using the <xref:System.Windows.Forms.DataGridView.SelectedCells%2A> property.  
   
    
   
@@ -7360,11 +7360,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Windows.Forms.DataGridView.MultiSelect%2A> property is set to `true`, multiple elements (cells, rows, or columns) can be selected in the <xref:System.Windows.Forms.DataGridView> control. To select multiple elements, the user can hold down the CTRL key while clicking the elements to select. Consecutive elements can be selected by clicking the first element to select and then, while holding down the SHIFT key, clicking the last element to select. The selection scope is based on the <xref:System.Windows.Forms.DataGridView.SelectionMode%2A> property. For example, if <xref:System.Windows.Forms.DataGridView.SelectionMode%2A> is set to <xref:System.Windows.Forms.DataGridViewSelectionMode?displayProperty=nameWithType>, the user can select multiple columns.  
+ When the <xref:System.Windows.Forms.DataGridView.MultiSelect%2A> property is set to `true`, multiple elements (cells, rows, or columns) can be selected in the <xref:System.Windows.Forms.DataGridView> control. To select multiple elements, the user can hold down the CTRL key while clicking the elements to select. Consecutive elements can be selected by clicking the first element to select and then, while holding down the SHIFT key, clicking the last element to select. The selection scope is based on the <xref:System.Windows.Forms.DataGridView.SelectionMode%2A> property. For example, if <xref:System.Windows.Forms.DataGridView.SelectionMode%2A> is set to <xref:System.Windows.Forms.DataGridViewSelectionMode.FullColumnSelect?displayProperty=nameWithType>, the user can select multiple columns.  
   
  You can use the <xref:System.Windows.Forms.DataGridView.MultiSelect%2A> property to allow a user to select multiple elements in the <xref:System.Windows.Forms.DataGridView> control and perform an operation on all the selected elements. For example, the user could select multiple cells and then right-click a selected cell to display a shortcut menu that displays a set of tasks to perform on the selected cells.  
   
- To determine which cells, rows, or columns are selected in the <xref:System.Windows.Forms.DataGridView> control, you can access the <xref:System.Windows.Forms.DataGridView.SelectedCells%2A>, <xref:System.Windows.Forms.DataGridView.SelectedRows%2A>, or <xref:System.Windows.Forms.DataGridView.SelectedColumns%2A> property. To determine the number of selected cells, call the <xref:System.Windows.Forms.DataGridView.GetCellCount%2A> method with an argument value of <xref:System.Windows.Forms.DataGridViewElementStates?displayProperty=nameWithType>. Use the <xref:System.Windows.Forms.DataGridViewRowCollection.GetRowCount%2A> method to retrieve the number of selected rows and the <xref:System.Windows.Forms.DataGridViewColumnCollection.GetColumnCount%2A> method to retrieve the number of columns. These methods are more efficient than accessing the collections directly when working with large amounts of data. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
+ To determine which cells, rows, or columns are selected in the <xref:System.Windows.Forms.DataGridView> control, you can access the <xref:System.Windows.Forms.DataGridView.SelectedCells%2A>, <xref:System.Windows.Forms.DataGridView.SelectedRows%2A>, or <xref:System.Windows.Forms.DataGridView.SelectedColumns%2A> property. To determine the number of selected cells, call the <xref:System.Windows.Forms.DataGridView.GetCellCount%2A> method with an argument value of <xref:System.Windows.Forms.DataGridViewElementStates.Selected?displayProperty=nameWithType>. Use the <xref:System.Windows.Forms.DataGridViewRowCollection.GetRowCount%2A> method to retrieve the number of selected rows and the <xref:System.Windows.Forms.DataGridViewColumnCollection.GetColumnCount%2A> method to retrieve the number of columns. These methods are more efficient than accessing the collections directly when working with large amounts of data. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
    
   
@@ -13972,8 +13972,8 @@
 |<xref:System.Windows.Forms.DataGridViewCellStyle.SelectionBackColor%2A>|The value of the <xref:System.Drawing.SystemBrushes.Highlight%2A?displayProperty=nameWithType> property.|  
 |<xref:System.Windows.Forms.DataGridViewCellStyle.SelectionForeColor%2A>|The value of the <xref:System.Drawing.SystemBrushes.HighlightText%2A?displayProperty=nameWithType> property.|  
 |<xref:System.Windows.Forms.DataGridViewCellStyle.Font%2A>|The value of the <xref:System.Windows.Forms.DataGridView.Font%2A> property.|  
-|<xref:System.Windows.Forms.DataGridViewCellStyle.Alignment%2A>|<xref:System.Windows.Forms.DataGridViewContentAlignment?displayProperty=nameWithType>|  
-|<xref:System.Windows.Forms.DataGridViewCellStyle.WrapMode%2A>|<xref:System.Windows.Forms.DataGridViewTriState?displayProperty=nameWithType>|  
+|<xref:System.Windows.Forms.DataGridViewCellStyle.Alignment%2A>|<xref:System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft?displayProperty=nameWithType>|  
+|<xref:System.Windows.Forms.DataGridViewCellStyle.WrapMode%2A>|<xref:System.Windows.Forms.DataGridViewTriState.True?displayProperty=nameWithType>|  
   
  These values automatically override the values set through the <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A> property. To force row headers to inherit the <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A> values, you must set the values in the <xref:System.Windows.Forms.DataGridView.RowHeadersDefaultCellStyle%2A> object to the default values indicated for the <xref:System.Windows.Forms.DataGridViewCellStyle> class.  
   
@@ -15105,7 +15105,7 @@ if (rowToDelete > -1)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridView.SelectionMode%2A> property must be set to <xref:System.Windows.Forms.DataGridViewSelectionMode?displayProperty=nameWithType> or <xref:System.Windows.Forms.DataGridViewSelectionMode?displayProperty=nameWithType> for the <xref:System.Windows.Forms.DataGridView.SelectedColumns%2A> property to be populated with selected columns.  
+ The <xref:System.Windows.Forms.DataGridView.SelectionMode%2A> property must be set to <xref:System.Windows.Forms.DataGridViewSelectionMode.FullColumnSelect?displayProperty=nameWithType> or <xref:System.Windows.Forms.DataGridViewSelectionMode.ColumnHeaderSelect?displayProperty=nameWithType> for the <xref:System.Windows.Forms.DataGridView.SelectedColumns%2A> property to be populated with selected columns.  
   
  This property contains a read-only snapshot of the selection at the time it is referenced. If you hold onto a copy of this collection, it may differ from the actual, subsequent <xref:System.Windows.Forms.DataGridView> state in which the user may have changed the selection. Therefore, you should not operate on a copy of the collection.  
   
@@ -15596,7 +15596,7 @@ if (rowToDelete > -1)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method allows advanced customization of the sorting feature of the <xref:System.Windows.Forms.DataGridView> class. In order to implement a highly customized sorting operation, you can write an event handler for the <xref:System.Windows.Forms.DataGridView.ColumnHeaderMouseClick> event and call this method with an instance of a class that implements the <xref:System.Collections.IComparer?displayProperty=nameWithType> interface as a parameter. In this case, you will typically set the <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A?displayProperty=nameWithType> property to <xref:System.Windows.Forms.DataGridViewColumnSortMode?displayProperty=nameWithType> to disable automatic sorting and to leave room for a sorting glyph. When sorting by columns set to programmatic sort mode, you must display the sorting glyph yourself by setting the <xref:System.Windows.Forms.DataGridViewColumnHeaderCell.SortGlyphDirection%2A?displayProperty=nameWithType> property.  
+ This method allows advanced customization of the sorting feature of the <xref:System.Windows.Forms.DataGridView> class. In order to implement a highly customized sorting operation, you can write an event handler for the <xref:System.Windows.Forms.DataGridView.ColumnHeaderMouseClick> event and call this method with an instance of a class that implements the <xref:System.Collections.IComparer?displayProperty=nameWithType> interface as a parameter. In this case, you will typically set the <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A?displayProperty=nameWithType> property to <xref:System.Windows.Forms.DataGridViewColumnSortMode.Programmatic?displayProperty=nameWithType> to disable automatic sorting and to leave room for a sorting glyph. When sorting by columns set to programmatic sort mode, you must display the sorting glyph yourself by setting the <xref:System.Windows.Forms.DataGridViewColumnHeaderCell.SortGlyphDirection%2A?displayProperty=nameWithType> property.  
   
  This method works only when the <xref:System.Windows.Forms.DataGridView.DataSource%2A> property is not set. When you bind the <xref:System.Windows.Forms.DataGridView> control to an external data source, you must use the sorting operations provided by that data source. When you provide your own data source by implementing virtual mode, you must also handle the sorting operations yourself.  
   
@@ -15648,7 +15648,7 @@ if (rowToDelete > -1)
 ## Remarks  
  This method sorts the contents of the <xref:System.Windows.Forms.DataGridView> by comparing values in the specified column. By default, the sort operation will use the <xref:System.Collections.Comparer.Compare%2A> method to compare pairs of cells in the column using the <xref:System.Windows.Forms.DataGridViewCell.Value%2A?displayProperty=nameWithType> property.  
   
- For columns with the <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A> property set to <xref:System.Windows.Forms.DataGridViewColumnSortMode?displayProperty=nameWithType>, the <xref:System.Windows.Forms.DataGridView.SortedColumn%2A> and <xref:System.Windows.Forms.DataGridView.SortOrder%2A> properties are set automatically and the appropriate sorting glyph is displayed. For columns with the <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A> property set to <xref:System.Windows.Forms.DataGridViewColumnSortMode?displayProperty=nameWithType>, you must display the sorting glyph yourself through the <xref:System.Windows.Forms.DataGridViewColumnHeaderCell.SortGlyphDirection%2A?displayProperty=nameWithType> property.  
+ For columns with the <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A> property set to <xref:System.Windows.Forms.DataGridViewColumnSortMode.Automatic?displayProperty=nameWithType>, the <xref:System.Windows.Forms.DataGridView.SortedColumn%2A> and <xref:System.Windows.Forms.DataGridView.SortOrder%2A> properties are set automatically and the appropriate sorting glyph is displayed. For columns with the <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A> property set to <xref:System.Windows.Forms.DataGridViewColumnSortMode.Programmatic?displayProperty=nameWithType>, you must display the sorting glyph yourself through the <xref:System.Windows.Forms.DataGridViewColumnHeaderCell.SortGlyphDirection%2A?displayProperty=nameWithType> property.  
   
  You can customize the sorting operation used by this method by handling the <xref:System.Windows.Forms.DataGridView.SortCompare> event. This event occurs only when the <xref:System.Windows.Forms.DataGridView.DataSource%2A> property has not been set.  
   
@@ -15789,9 +15789,9 @@ if (rowToDelete > -1)
 ## Remarks  
  If the <xref:System.Windows.Forms.DataGridView> is not sorted, this property will return `null`.  
   
- When the column indicated by this property has a <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A> property value of <xref:System.Windows.Forms.DataGridViewColumnSortMode?displayProperty=nameWithType>, it will display a sorting glyph based on the value of the <xref:System.Windows.Forms.DataGridView.SortOrder%2A> property.  
+ When the column indicated by this property has a <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A> property value of <xref:System.Windows.Forms.DataGridViewColumnSortMode.Automatic?displayProperty=nameWithType>, it will display a sorting glyph based on the value of the <xref:System.Windows.Forms.DataGridView.SortOrder%2A> property.  
   
- When the column has a <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A> property value of <xref:System.Windows.Forms.DataGridViewColumnSortMode?displayProperty=nameWithType>, you must display the sorting glyph yourself through the <xref:System.Windows.Forms.DataGridViewColumnHeaderCell.SortGlyphDirection%2A?displayProperty=nameWithType> property.  
+ When the column has a <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A> property value of <xref:System.Windows.Forms.DataGridViewColumnSortMode.Programmatic?displayProperty=nameWithType>, you must display the sorting glyph yourself through the <xref:System.Windows.Forms.DataGridViewColumnHeaderCell.SortGlyphDirection%2A?displayProperty=nameWithType> property.  
   
 > [!NOTE]
 >  The value of this property is not meaningful when you sort the control using custom sorting. For more information about custom sorting, see the <xref:System.Windows.Forms.DataGridView.Sort%28System.Collections.IComparer%29> method and the <xref:System.Windows.Forms.DataGridView.SortCompare> event.  

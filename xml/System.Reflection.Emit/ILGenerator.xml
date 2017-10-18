@@ -1255,7 +1255,7 @@
 ## Remarks  
  Use <xref:System.Reflection.Emit.ILGenerator.EmitCalli%2A> to put a <xref:System.Reflection.Emit.OpCodes.Calli> instruction onto the stream. Do not use <xref:System.Reflection.Emit.ILGenerator.Emit%2A>.  
   
- If `optionalParameterTypes` specifies optional arguments, `callingConvention` must include the <xref:System.Reflection.CallingConventions?displayProperty=nameWithType> flag.  
+ If `optionalParameterTypes` specifies optional arguments, `callingConvention` must include the <xref:System.Reflection.CallingConventions.VarArgs?displayProperty=nameWithType> flag.  
   
  ]]></format>
         </remarks>

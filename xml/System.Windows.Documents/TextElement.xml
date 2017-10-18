@@ -106,7 +106,7 @@
 ## Remarks  
  The <xref:System.Windows.Documents.FlowDocument.ContentEnd%2A> property is often used to append content to the end of a <xref:System.Windows.Documents.TextElement>.  
   
- The <xref:System.Windows.Documents.TextPointer> returned by this property always has its <xref:System.Windows.Documents.TextPointer.LogicalDirection%2A> set to <xref:System.Windows.Documents.LogicalDirection?displayProperty=nameWithType>.  
+ The <xref:System.Windows.Documents.TextPointer> returned by this property always has its <xref:System.Windows.Documents.TextPointer.LogicalDirection%2A> set to <xref:System.Windows.Documents.LogicalDirection.Forward?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -133,7 +133,7 @@
 ## Remarks  
  The <xref:System.Windows.Documents.FlowDocument.ContentStart%2A> property is often used to insert content to the beginning of a <xref:System.Windows.Documents.TextElement>.  
   
- The <xref:System.Windows.Documents.TextPointer> returned by this property always has its <xref:System.Windows.Documents.TextPointer.LogicalDirection%2A> set to <xref:System.Windows.Documents.LogicalDirection?displayProperty=nameWithType>.  
+ The <xref:System.Windows.Documents.TextPointer> returned by this property always has its <xref:System.Windows.Documents.TextPointer.LogicalDirection%2A> set to <xref:System.Windows.Documents.LogicalDirection.Backward?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -158,7 +158,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Documents.TextPointer> returned by this property always has its <xref:System.Windows.Documents.TextPointer.LogicalDirection%2A> set to <xref:System.Windows.Documents.LogicalDirection?displayProperty=nameWithType>.  
+ The <xref:System.Windows.Documents.TextPointer> returned by this property always has its <xref:System.Windows.Documents.TextPointer.LogicalDirection%2A> set to <xref:System.Windows.Documents.LogicalDirection.Forward?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -183,7 +183,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Documents.TextPointer> returned by this property always has its <xref:System.Windows.Documents.TextPointer.LogicalDirection%2A> set to <xref:System.Windows.Documents.LogicalDirection?displayProperty=nameWithType>.  
+ The <xref:System.Windows.Documents.TextPointer> returned by this property always has its <xref:System.Windows.Documents.TextPointer.LogicalDirection%2A> set to <xref:System.Windows.Documents.LogicalDirection.Backward?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

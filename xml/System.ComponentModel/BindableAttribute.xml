@@ -291,7 +291,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you mark a property with this value, the <xref:System.ComponentModel.BindableAttribute> is set to the constant member <xref:System.ComponentModel.BindableAttribute.No>. Therefore, when you want to check whether the attribute is set to this value in your code, you must specify the attribute as <xref:System.ComponentModel.BindableAttribute?displayProperty=nameWithType>.  
+ When you mark a property with this value, the <xref:System.ComponentModel.BindableAttribute> is set to the constant member <xref:System.ComponentModel.BindableAttribute.No>. Therefore, when you want to check whether the attribute is set to this value in your code, you must specify the attribute as <xref:System.ComponentModel.BindableAttribute.No?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

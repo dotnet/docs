@@ -350,7 +350,7 @@
 > [!NOTE]
 >  Once the value of this property is set, the getter no longer refers the call to the underlying list. Instead, it simply returns the value that was previously set until the <xref:System.Windows.Forms.BindingSource.ResetAllowNew%2A> method is called.  
   
- Setting this property raises the <xref:System.Windows.Forms.BindingSource.ListChanged> event with <xref:System.ComponentModel.ListChangedEventArgs.ListChangedType?displayProperty=nameWithType> set to <xref:System.ComponentModel.ListChangedType?displayProperty=nameWithType>.  
+ Setting this property raises the <xref:System.Windows.Forms.BindingSource.ListChanged> event with <xref:System.ComponentModel.ListChangedEventArgs.ListChangedType?displayProperty=nameWithType> set to <xref:System.ComponentModel.ListChangedType.Reset?displayProperty=nameWithType>.  
   
  If you set the <xref:System.Windows.Forms.BindingSource.AllowNew%2A> property to `true` and the underlying list type does not have a default constructor, you must handle the <xref:System.Windows.Forms.BindingSource.AddingNew> event and create the appropriate type.  
   
@@ -2347,11 +2347,11 @@
 ## Remarks  
  The <xref:System.Windows.Forms.BindingSource.ResetBindings%2A> method informs all controls bound to the <xref:System.Windows.Forms.BindingSource> to refresh their values. The method does this by raising the <xref:System.Windows.Forms.BindingSource.ListChanged> event at least once; the `metaDataChanged` parameter indicates the nature of the underlying change.  
   
--   A `metaDataChanged` value of `true` indicates that the data schema of <xref:System.Windows.Forms.BindingSource> has changed. A <xref:System.Windows.Forms.BindingSource.ListChanged> event is raised with <xref:System.ComponentModel.ListChangedEventArgs.ListChangedType?displayProperty=nameWithType> set to <xref:System.ComponentModel.ListChangedType?displayProperty=nameWithType>.  
+-   A `metaDataChanged` value of `true` indicates that the data schema of <xref:System.Windows.Forms.BindingSource> has changed. A <xref:System.Windows.Forms.BindingSource.ListChanged> event is raised with <xref:System.ComponentModel.ListChangedEventArgs.ListChangedType?displayProperty=nameWithType> set to <xref:System.ComponentModel.ListChangedType.PropertyDescriptorChanged?displayProperty=nameWithType>.  
   
 -   A `metaDataChanged` value of `false` indicates that only the values of one or more items have changed.  
   
- Regardless of the value of `metaDataChanged`, a <xref:System.Windows.Forms.BindingSource.ListChanged> event is raised with <xref:System.ComponentModel.ListChangedEventArgs.ListChangedType?displayProperty=nameWithType> set to <xref:System.ComponentModel.ListChangedType?displayProperty=nameWithType>. As a consequence, calling <xref:System.Windows.Forms.BindingSource.ResetBindings%2A> with a parameter of `true` will raise two <xref:System.Windows.Forms.BindingSource.ListChanged> events.  
+ Regardless of the value of `metaDataChanged`, a <xref:System.Windows.Forms.BindingSource.ListChanged> event is raised with <xref:System.ComponentModel.ListChangedEventArgs.ListChangedType?displayProperty=nameWithType> set to <xref:System.ComponentModel.ListChangedType.Reset?displayProperty=nameWithType>. As a consequence, calling <xref:System.Windows.Forms.BindingSource.ResetBindings%2A> with a parameter of `true` will raise two <xref:System.Windows.Forms.BindingSource.ListChanged> events.  
   
  <xref:System.Windows.Forms.BindingSource.ResetBindings%2A> is automatically called whenever another member makes major changes to the data-binding, such as setting the <xref:System.Windows.Forms.BindingSource.DataSource%2A> or <xref:System.Windows.Forms.BindingSource.DataMember%2A> properties. However, the programmer can also call this method explicitly.  
   
@@ -2415,7 +2415,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.BindingSource.ResetItem%2A> method notifies all controls bound to the item at the specified <xref:System.Windows.Forms.BindingSource.Position%2A> to refresh their values. The method does this by raising the <xref:System.Windows.Forms.BindingSource.ListChanged> event with <xref:System.ComponentModel.ListChangedEventArgs.ListChangedType?displayProperty=nameWithType> set to <xref:System.ComponentModel.ListChangedType?displayProperty=nameWithType>.  
+ The <xref:System.Windows.Forms.BindingSource.ResetItem%2A> method notifies all controls bound to the item at the specified <xref:System.Windows.Forms.BindingSource.Position%2A> to refresh their values. The method does this by raising the <xref:System.Windows.Forms.BindingSource.ListChanged> event with <xref:System.ComponentModel.ListChangedEventArgs.ListChangedType?displayProperty=nameWithType> set to <xref:System.ComponentModel.ListChangedType.ItemChanged?displayProperty=nameWithType>.  
   
  <xref:System.Windows.Forms.BindingSource.ResetItem%2A> is automatically called whenever changes are made to the value of an individual item. However, the programmer can also call this method explicitly.  
   

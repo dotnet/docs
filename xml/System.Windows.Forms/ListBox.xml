@@ -2184,7 +2184,7 @@
 ## Remarks  
  You can create an event handler for this event to determine when the selected index in the <xref:System.Windows.Forms.ListBox> has been changed. This can be useful when you need to display information in other controls based on the current selection in the <xref:System.Windows.Forms.ListBox>. You can use the event handler for this event to load the information in the other controls.  
   
- If the <xref:System.Windows.Forms.ListBox.SelectionMode%2A> property is set to <xref:System.Windows.Forms.SelectionMode?displayProperty=nameWithType> or <xref:System.Windows.Forms.SelectionMode?displayProperty=nameWithType>, any change to the <xref:System.Windows.Forms.ListBox.SelectedIndices%2A> collection, including removing an item from the selection, will raise this event.  
+ If the <xref:System.Windows.Forms.ListBox.SelectionMode%2A> property is set to <xref:System.Windows.Forms.SelectionMode.MultiSimple?displayProperty=nameWithType> or <xref:System.Windows.Forms.SelectionMode.MultiExtended?displayProperty=nameWithType>, any change to the <xref:System.Windows.Forms.ListBox.SelectedIndices%2A> collection, including removing an item from the selection, will raise this event.  
   
  For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
   

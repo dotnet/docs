@@ -22,7 +22,7 @@ Console.WriteLine($"Name = {name}, hours = {hours}:hh");
 contains two interpolated expressions, '{name}' and '{date:hh}'. The equivalent composite format string is:
 
 ```csharp
-Console.WriteLine("Name = {0}, hours = {1:hh}", name, date);  
+Console.WriteLine("Name = {0}, hours = {1}:hh", name, hours); 
 ```  
 
 The structure of an interpolated string is:  

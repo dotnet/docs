@@ -1,10 +1,10 @@
 ---
 title: State and data in Docker applications
 description: .NET Microservices Architecture for Containerized .NET Applications | State and data in Docker applications
-keywords: Docker, Microservices, ASP.NET, Container
+keywords: Docker, Microservices, ASP.NET, Container, SQL, CosmosDB, Docker
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/26/2017
+ms.date: 10/18/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.topic: article
@@ -25,7 +25,7 @@ The following solutions are used to manage persistent data in Docker application
 
 -   [Azure Storage](https://docs.microsoft.com/azure/storage/), which provides geo-distributable storage, providing a good long-term persistence solution for containers.
 
--   Remote relational databases like [Azure SQL Database](https://azure.microsoft.com/en-us/services/sql-database/) or NoSQL databases like [Azure Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/introduction), or cache services like [Redis](https://redis.io/).
+-   Remote relational databases like [Azure SQL Database](https://azure.microsoft.com/services/sql-database/) or NoSQL databases like [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction), or cache services like [Redis](https://redis.io/).
 
 The following provides more detail about these options.
 

@@ -26,7 +26,7 @@
         {
             if (string.IsNullOrWhiteSpace(sellerName))
             {
-                throw new ArgumentException("Seller name cannot be null or empty.", nameof(sellerName));
+                throw new ArgumentException(message: "Seller name cannot be null or empty.", paramName: nameof(sellerName));
             }
 
             Console.WriteLine($"Seller: {sellerName}, Order #: {orderNum}, Product: {productName}");

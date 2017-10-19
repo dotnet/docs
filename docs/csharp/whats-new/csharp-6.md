@@ -3,7 +3,6 @@ title: What's New in C# 6 - C# Guide
 description: Learn the new features in C# Version 6    
 keywords: .NET, .NET Core
 author: BillWagner
-
 ms.date: 09/22/2016
 ms.topic: article
 ms.prod: .net
@@ -158,7 +157,7 @@ in a namespace.
 Often we use a class' static methods throughout our code. Repeatedly
 typing the class name can obscure the meaning of your code. A common
 example is when you write classes that perform many numeric calculations.
-Your code will be littered with <xref:System.Math.Sin>, <xref:System.Math.Sqrt> and other calls
+Your code will be littered with <xref:System.Math.Sin%2A>, <xref:System.Math.Sqrt%2A> and other calls
 to different methods in the <xref:System.Math> class. The new `using static` syntax can make these
 classes much cleaner to read. You specify the class you're using:
 
@@ -531,7 +530,7 @@ initializers more consistent. In earlier releases of C#, you could use
 
 [!code-csharp[ListInitializer](../../../samples/snippets/csharp/new-in-6/initializers.cs#ListInitializer)]
 
-Now, you can also use them with <xref:System.Collections.Generic.Dictionary> collections and similar types:
+Now, you can also use them with <xref:System.Collections.Generic.Dictionary%602> collections and similar types:
 
 [!code-csharp[DictionaryInitializer](../../../samples/snippets/csharp/new-in-6/initializers.cs#DictionaryInitializer)]
 

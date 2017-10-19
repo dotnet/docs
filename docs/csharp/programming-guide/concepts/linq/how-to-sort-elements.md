@@ -1,7 +1,7 @@
 ---
 title: "How to: Sort Elements (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: aee6fbbc-81fd-4b3e-b40f-6ed7b3bd3fee
 caps.latest.revision: 3
 author: "BillWagner"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedWriter"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedWriter interface [.NET Framework debugging]"
 ms.assetid: 7d6733ec-f081-4166-bc17-de09e16dc304

@@ -1,7 +1,7 @@
 ---
 title: "LINQ to XML Annotations2"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 ms.assetid: c3e8b3ff-fceb-4428-b0ca-1ed6f128aac8
 caps.latest.revision: 3
 author: dotnet-bot

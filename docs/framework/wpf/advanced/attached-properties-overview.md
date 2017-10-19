@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "attached properties [WPF Designer]"
 ms.assetid: 75928354-dc01-47e8-a018-8409aec1f32d

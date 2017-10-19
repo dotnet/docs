@@ -1,7 +1,7 @@
 ---
 title: "Details of Office Open XML WordprocessingML Documents (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: 40c9ed57-b827-4c9e-a3e7-8b2163122106
 caps.latest.revision: 4
 author: "BillWagner"

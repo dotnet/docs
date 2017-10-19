@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::RuntimeSuspendFinished"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerCallback::RuntimeSuspendFinished method [.NET Framework profiling]"
   - "RuntimeSuspendFinished method [.NET Framework profiling]"

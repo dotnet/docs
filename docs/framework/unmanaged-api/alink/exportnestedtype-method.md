@@ -18,8 +18,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ExportNestedType"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ExportNestedType method"
 ms.assetid: dec7df60-4d30-47c8-99db-72e0419e5f76

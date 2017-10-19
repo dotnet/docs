@@ -86,7 +86,7 @@ manager: "wpickett"
 ## Conditions for a garbage collection  
  Garbage collection occurs when one of the following conditions is true:  
   
--   The system has low physical memory.  
+-   The system has low physical memory. This is detected by either the low memory notification from the OS or low memory indicated by the host.
   
 -   The memory that is used by allocated objects on the managed heap surpasses an acceptable threshold. This threshold is continuously adjusted as the process runs.  
   

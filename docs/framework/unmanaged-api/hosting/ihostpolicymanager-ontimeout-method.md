@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostPolicyManager::OnTimeout"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostPolicyManager::OnTimeout method [.NET Framework hosting]"
   - "OnTimeout method [.NET Framework hosting]"

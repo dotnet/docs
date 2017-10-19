@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEnum::Reset"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugEnum::Reset method [.NET Framework debugging]"
   - "Reset method, ICorDebugEnum interface [.NET Framework debugging]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedWriter::OpenNamespace"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedWriter::OpenNamespace method [.NET Framework debugging]"
   - "OpenNamespace method [.NET Framework debugging]"

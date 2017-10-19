@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
+dev_langs:
+ - "cpp"
 api_name: 
   - "ICorProfilerInfo5.GetEventMask2"
 api_location: 
   - "mscorwks.dll"
 api_type: 
   - "COM"
-dev_langs: 
-  - "C++"
 ms.assetid: f854b68f-009c-4ffb-89cd-ca874d1c0fb7
 topic_type: 
   - "apiref"
@@ -32,7 +32,7 @@ manager: "wpickett"
   
 ## Syntax  
   
-```vb  
+```cpp
 HRESULT GetEventMask2(  
         [out] DWORD* pdwEventsLow,  
         [out] DWORD* pdwEventsHigh  

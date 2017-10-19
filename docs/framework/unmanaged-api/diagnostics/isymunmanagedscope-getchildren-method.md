@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedScope::GetChildren"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedScope::GetChildren method [.NET Framework debugging]"
   - "GetChildren method [.NET Framework debugging]"

@@ -54,8 +54,8 @@
 ## Examples  
  The following code example uses the <xref:System.Web.UI.WebControls.SqlDataSource> and <xref:System.Web.UI.WebControls.GridView> controls to display a database table. When the page is loaded, the page attempts to create a <xref:System.Web.Caching.SqlCacheDependency> object. After the <xref:System.Web.Caching.SqlCacheDependency> object is created, the page adds an item to the `Cache` with a dependency on the <xref:System.Web.Caching.SqlCacheDependency> object. You should use exception handling similar to that shown here.  
   
- <!-- TODO: review snippet reference [!code-csharp[CachingSamples_SqlCacheDependency#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CachingSamples_SqlCacheDependency/CS/sqlcachedepsamplecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CachingSamples_SqlCacheDependency#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CachingSamples_SqlCacheDependency/VB/sqlcachedepsamplevb.aspx#1)]  -->  
+ [!code-aspx-csharp[CachingSamples_SqlCacheDependency#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CachingSamples_SqlCacheDependency/CS/sqlcachedepsamplecs.aspx#1)]
+ [!code-aspx-vb[CachingSamples_SqlCacheDependency#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CachingSamples_SqlCacheDependency/VB/sqlcachedepsamplevb.aspx#1)]
   
  ]]></format>
     </remarks>

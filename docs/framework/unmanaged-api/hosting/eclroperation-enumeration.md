@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "EClrOperation"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "EClrOperation enumeration [.NET Framework hosting]"
 ms.assetid: 5aef6808-5aac-4b2f-a2c7-fee1575c55ed

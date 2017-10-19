@@ -1,7 +1,7 @@
 ---
 title: "Querying XML Trees (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: 0913d81b-541a-4fd4-9cbf-7ec89fd817ea
 caps.latest.revision: 4
 author: "BillWagner"

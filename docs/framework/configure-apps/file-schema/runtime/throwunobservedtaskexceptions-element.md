@@ -9,11 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "ThrowUnobservedTaskExceptions element"
   - "<ThrowUnobservedTaskExceptions> element"
@@ -32,7 +30,7 @@ Specifies whether unhandled task exceptions should terminate a running process.
   
 ## Syntax  
   
-```vb  
+```xml  
 <ThrowUnobservedTaskExceptions  
    enabled="true|false"/>  
 ```  

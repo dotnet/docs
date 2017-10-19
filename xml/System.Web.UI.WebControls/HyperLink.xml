@@ -108,8 +108,8 @@
 ## Examples  
  The following example demonstrates how to create a <xref:System.Web.UI.WebControls.HyperLink> control on a Web page that links to another Web page.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HyperLink.NavigateUrl Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HyperLink.NavigateUrl Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HyperLink.NavigateUrl Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HyperLink.NavigateUrl Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HyperLink.NavigateUrl Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HyperLink.NavigateUrl Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HyperLink.NavigateUrl Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HyperLink.NavigateUrl Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -174,8 +174,8 @@
   
  The following Web Form uses the custom server control to display a hyperlink with a bold font.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomHyperLinkAddAttributesToRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHyperLinkAddAttributesToRender/CS/custom_hyperlink_addattributestorendercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomHyperLinkAddAttributesToRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHyperLinkAddAttributesToRender/VB/custom_hyperlink_addattributestorendervb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomHyperLinkAddAttributesToRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHyperLinkAddAttributesToRender/CS/custom_hyperlink_addattributestorendercs.aspx#1)]
+ [!code-aspx-vb[CustomHyperLinkAddAttributesToRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHyperLinkAddAttributesToRender/VB/custom_hyperlink_addattributestorendervb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -212,8 +212,8 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.HyperLink.AddParsedSubObject%2A> method in a custom <xref:System.Web.UI.WebControls.HyperLink> server control so that it always sets the text property to the parsed object's text property, if the parsed object is a <xref:System.Web.UI.WebControls.Literal>, and to an empty string otherwise.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomHyperLinkAddParsedSubObject#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHyperLinkAddParsedSubObject/CS/custom_hyperlink_addparsedsubobjectcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomHyperLinkAddParsedSubObject#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHyperLinkAddParsedSubObject/VB/custom_hyperlink_addparsedsubobjectvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomHyperLinkAddParsedSubObject#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHyperLinkAddParsedSubObject/CS/custom_hyperlink_addparsedsubobjectcs.aspx#1)]
+ [!code-aspx-vb[CustomHyperLinkAddParsedSubObject#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHyperLinkAddParsedSubObject/VB/custom_hyperlink_addparsedsubobjectvb.aspx#1)]  
   
  [!code-csharp[CustomHyperLinkAddParsedSubObject#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHyperLinkAddParsedSubObject/CS/custom_hyperlink_addparsedsubobject.cs#2)]
  [!code-vb[CustomHyperLinkAddParsedSubObject#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHyperLinkAddParsedSubObject/VB/custom_hyperlink_addparsedsubobject.vb#2)]  
@@ -288,8 +288,8 @@
 ## Examples  
  The following example demonstrates how to set the <xref:System.Web.UI.WebControls.HyperLink.ImageUrl%2A> property to specify the path to the image to display.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HyperLink.NavigateUrl Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HyperLink.NavigateUrl Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HyperLink.NavigateUrl Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HyperLink.NavigateUrl Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HyperLink.NavigateUrl Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HyperLink.NavigateUrl Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HyperLink.NavigateUrl Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HyperLink.NavigateUrl Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -379,8 +379,8 @@
 ## Examples  
  The following example demonstrates how to set the <xref:System.Web.UI.WebControls.HyperLink.NavigateUrl%2A> property to specify the URL to link to when the <xref:System.Web.UI.WebControls.HyperLink> control is clicked.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HyperLink.NavigateUrl Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HyperLink.NavigateUrl Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HyperLink.NavigateUrl Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HyperLink.NavigateUrl Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HyperLink.NavigateUrl Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HyperLink.NavigateUrl Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HyperLink.NavigateUrl Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HyperLink.NavigateUrl Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -410,8 +410,8 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.HyperLink.RenderContents%2A> method in a custom server control so that some text is appended to the <xref:System.Web.UI.WebControls.HyperLink> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomHyperLinkRenderContents#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHyperLinkRenderContents/CS/custom_hyperlink_rendercontentscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomHyperLinkRenderContents#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHyperLinkRenderContents/VB/custom_hyperlink_rendercontentsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomHyperLinkRenderContents#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHyperLinkRenderContents/CS/custom_hyperlink_rendercontentscs.aspx#1)]
+ [!code-aspx-vb[CustomHyperLinkRenderContents#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHyperLinkRenderContents/VB/custom_hyperlink_rendercontentsvb.aspx#1)]  
   
  [!code-csharp[CustomHyperLinkRenderContents#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHyperLinkRenderContents/CS/custom_hyperlink_rendercontents.cs#2)]
  [!code-vb[CustomHyperLinkRenderContents#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHyperLinkRenderContents/VB/custom_hyperlink_rendercontents.vb#2)]  
@@ -504,8 +504,8 @@
 ## Examples  
  The following example demonstrates how to set the <xref:System.Web.UI.WebControls.HyperLink.Target%2A> property to specify the window or frame to display the page associated with the <xref:System.Web.UI.WebControls.HyperLink> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HyperLink.Target Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HyperLink.Target Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HyperLink.Target Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HyperLink.Target Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HyperLink.Target Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HyperLink.Target Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HyperLink.Target Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HyperLink.Target Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -558,8 +558,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.HyperLink.Text%2A> property to specify the text to display for the <xref:System.Web.UI.WebControls.HyperLink> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HyperLink.Text Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HyperLink.Text Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HyperLink.Text Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HyperLink.Text Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HyperLink.Text Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HyperLink.Text Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HyperLink.Text Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HyperLink.Text Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>

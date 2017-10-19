@@ -1,18 +1,14 @@
 ---
 title: "Sub Statement (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Sub"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Public keyword, Sub statements"
   - "procedures, creating"
@@ -42,21 +38,6 @@ ms.assetid: e347d700-d06c-405b-b302-e9b1edb57dfc
 caps.latest.revision: 52
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Sub Statement (Visual Basic)
 Declares the name, parameters, and code that define a `Sub` procedure.  

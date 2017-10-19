@@ -1813,7 +1813,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Certain boundaries in the element tree set <xref:System.Windows.FrameworkElement.InheritanceBehavior%2A> to deliberately limit the scope of inheritance behavior, to a force resource lookup to check the application resources, or to prevent a RelativeSource FindAncestor lookup from querying the current element or any further. RelativeSource FindAncestor lookup occurs when a binding uses a <xref:System.Windows.Data.RelativeSource> that has its <xref:System.Windows.Data.RelativeSource.Mode%2A> property set to the <xref:System.Windows.Data.RelativeSourceMode?displayProperty=nameWithType> value.  
+ Certain boundaries in the element tree set <xref:System.Windows.FrameworkElement.InheritanceBehavior%2A> to deliberately limit the scope of inheritance behavior, to a force resource lookup to check the application resources, or to prevent a RelativeSource FindAncestor lookup from querying the current element or any further. RelativeSource FindAncestor lookup occurs when a binding uses a <xref:System.Windows.Data.RelativeSource> that has its <xref:System.Windows.Data.RelativeSource.Mode%2A> property set to the <xref:System.Windows.Data.RelativeSourceMode.FindAncestor?displayProperty=nameWithType> value.  
   
  If you want your derived class to set this property, you should do so within the static constructor or in other initialization routines.  
   

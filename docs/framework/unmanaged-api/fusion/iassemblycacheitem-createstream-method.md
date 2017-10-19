@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IAssemblyCacheItem::CreateStream"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CreateStream method [.NET Framework fusion]"
   - "IAsssemblyCacheItem::CreateStream method [.NET Framework fusion]"

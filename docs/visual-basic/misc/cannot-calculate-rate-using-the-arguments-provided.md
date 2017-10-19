@@ -1,13 +1,9 @@
 ---
 title: "Cannot calculate rate using the arguments provided"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vbrFinancial_CannotCalculateRate"
@@ -15,22 +11,6 @@ ms.assetid: 17d5c8eb-4716-4b72-977f-a640c02e630d
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Cannot calculate rate using the arguments provided
 The rate calculation does not contain the required arguments.  

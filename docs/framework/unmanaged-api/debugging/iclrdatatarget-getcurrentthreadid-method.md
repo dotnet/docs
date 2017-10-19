@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRDataTarget::GetCurrentThreadID"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetCurrentThreadID method, ICLRDataTarget interface [.NET Framework debugging]"
   - "ICLRDataTarget::GetCurrentThreadID method [.NET Framework debugging]"

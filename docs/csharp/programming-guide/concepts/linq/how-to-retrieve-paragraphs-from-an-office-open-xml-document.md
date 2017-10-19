@@ -1,7 +1,7 @@
 ---
 title: "How to: Retrieve Paragraphs from an Office Open XML Document (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: cc2687cf-d648-451e-88ac-3847c6c967c8
 caps.latest.revision: 3
 author: "BillWagner"

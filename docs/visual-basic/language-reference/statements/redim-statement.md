@@ -1,19 +1,15 @@
 ---
 title: "ReDim Statement (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.ReDim"
   - "vb.Preserve"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "fixed-length strings, declaring"
   - "ReDim statement, syntax"
@@ -39,21 +35,6 @@ ms.assetid: ad1c5e07-dcd7-4ae1-a79e-ad3f2dcc2083
 caps.latest.revision: 25
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # ReDim Statement (Visual Basic)
 Reallocates storage space for an array variable.  

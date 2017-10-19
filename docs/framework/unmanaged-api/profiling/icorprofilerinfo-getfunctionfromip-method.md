@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo::GetFunctionFromIP"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetFunctionFromIP method [.NET Framework profiling]"
   - "ICorProfilerInfo::GetFunctionFromIP method [.NET Framework profiling]"

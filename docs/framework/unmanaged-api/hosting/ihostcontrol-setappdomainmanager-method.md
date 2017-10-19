@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostControl::SetAppDomainManager"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostControl::SetAppDomainManager method [.NET Framework hosting]"
   - "SetAppDomainManager method [.NET Framework hosting]"

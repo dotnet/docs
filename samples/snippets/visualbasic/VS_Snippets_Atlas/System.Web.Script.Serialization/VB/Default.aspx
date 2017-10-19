@@ -1,4 +1,4 @@
-<%-- <Snippet4> --%>
+<!-- <Snippet4> -->
 <%@ Page Language="VB" %>
 <%@ Import Namespace="System.Web.Script.Serialization" %>
 
@@ -176,4 +176,4 @@
     </form>
 </body>
 </html>
-<%-- </Snippet4> --%>
+<!-- </Snippet4> -->

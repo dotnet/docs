@@ -1,7 +1,7 @@
 ---
 title: "Functional Programming vs. Imperative Programming (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: 5e35c5a0-c949-422a-873b-fca6b2254f57
 caps.latest.revision: 3
 author: "BillWagner"

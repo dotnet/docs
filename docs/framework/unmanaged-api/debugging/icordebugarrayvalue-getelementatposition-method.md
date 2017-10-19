@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugArrayValue::GetElementAtPosition"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetElementAtPosition method [.NET Framework debugging]"
   - "ICorDebugArrayValue::GetElementAtPosition method [.NET Framework debugging]"

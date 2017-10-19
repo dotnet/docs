@@ -17,8 +17,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "StrongNameGetBlob"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "StrongNameGetBlob function [.NET Framework strong naming]"
 ms.assetid: 15d09166-be00-4696-913f-2c1fbc7ac2e1

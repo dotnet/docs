@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IApartmentCallback"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IApartmentCallback interface [.NET Framework hosting]"
 ms.assetid: 57c33c58-bf0b-4533-b569-e6a682d02cba

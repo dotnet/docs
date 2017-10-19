@@ -56,8 +56,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.FormParameter_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.FormParameter_2/CS/fp2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.FormParameter_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.FormParameter_2/VB/fp2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.FormParameter_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.FormParameter_2/CS/fp2cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.FormParameter_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.FormParameter_2/VB/fp2vb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -111,8 +111,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.FormParameter_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.FormParameter_2/CS/fp2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.FormParameter_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.FormParameter_2/VB/fp2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.FormParameter_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.FormParameter_2/CS/fp2cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.FormParameter_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.FormParameter_2/VB/fp2vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -153,8 +153,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ParameterCollection_2#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ParameterCollection_2/CS/paramcoll2cs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ParameterCollection_2#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ParameterCollection_2/VB/paramcoll2vb.aspx#2)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ParameterCollection_2#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ParameterCollection_2/CS/paramcoll2cs.aspx#2)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ParameterCollection_2#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ParameterCollection_2/VB/paramcoll2vb.aspx#2)]  
   
  ]]></format>
         </remarks>
@@ -227,8 +227,8 @@
 ## Examples  
  The following code example demonstrates how the <xref:System.Web.UI.WebControls.ParameterCollection.Add%28System.String%2CSystem.TypeCode%2CSystem.String%29> method can be used to add new <xref:System.Web.UI.WebControls.Parameter> objects to a <xref:System.Web.UI.WebControls.ParameterCollection> collection by supplying the `name`, `value`, and `type` parameters. In this example, a <xref:System.Web.UI.WebControls.Parameter> object is added to an Update command of an Access data source control that provides the value of the current system time. The parameter is added with the <xref:System.TypeCode> of <xref:System.DateTime>.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ParameterCollection_2#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ParameterCollection_2/CS/paramcoll2cs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ParameterCollection_2#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ParameterCollection_2/VB/paramcoll2vb.aspx#2)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ParameterCollection_2#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ParameterCollection_2/CS/paramcoll2cs.aspx#2)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ParameterCollection_2#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ParameterCollection_2/VB/paramcoll2vb.aspx#2)]  
   
  ]]></format>
         </remarks>
@@ -434,8 +434,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.ParameterCollection.Insert%2A> method to add a <xref:System.Web.UI.WebControls.Parameter> object to a <xref:System.Web.UI.WebControls.ParameterCollection> collection at a specific location. In this example, several <xref:System.Web.UI.WebControls.QueryStringParameter> objects are added to a <xref:System.Web.UI.WebControls.SqlDataSource.SelectParameters%2A> collection, one <xref:System.Web.UI.WebControls.QueryStringParameter> is inserted into the collection, and the order of the collection is printed when the page loads.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.QueryStringParameter_7#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.QueryStringParameter_7/CS/qsp7acs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.QueryStringParameter_7#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.QueryStringParameter_7/VB/qsp7avb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.QueryStringParameter_7#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.QueryStringParameter_7/CS/qsp7acs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.QueryStringParameter_7#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.QueryStringParameter_7/VB/qsp7avb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -506,8 +506,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.ParameterCollection.Remove%2A> method and the <xref:System.Web.UI.WebControls.ParameterCollection.Item%2A> indexer to remove a <xref:System.Web.UI.WebControls.Parameter> object from a <xref:System.Web.UI.WebControls.ParameterCollection> collection. In this example, several <xref:System.Web.UI.WebControls.QueryStringParameter> objects are added to a <xref:System.Web.UI.WebControls.SqlDataSource.SelectParameters%2A> collection, one <xref:System.Web.UI.WebControls.QueryStringParameter> is removed from the collection, and the order of the collection is printed when the page loads.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.QueryStringParameter_6#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.QueryStringParameter_6/CS/qsp6cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.QueryStringParameter_6#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.QueryStringParameter_6/VB/qsp6vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.QueryStringParameter_6#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.QueryStringParameter_6/CS/qsp6cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.QueryStringParameter_6#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.QueryStringParameter_6/VB/qsp6vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -753,8 +753,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.ParameterCollection.Remove%2A> method and the <xref:System.Web.UI.WebControls.ParameterCollection.Item%2A> indexer to remove a <xref:System.Web.UI.WebControls.Parameter> object from a <xref:System.Web.UI.WebControls.ParameterCollection> collection. In this example, several <xref:System.Web.UI.WebControls.QueryStringParameter> objects are added to a <xref:System.Web.UI.WebControls.SqlDataSource.SelectParameters%2A> collection, one <xref:System.Web.UI.WebControls.QueryStringParameter> object is removed from the collection, and the order of the collection is printed when the page loads.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.QueryStringParameter_6#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.QueryStringParameter_6/CS/qsp6cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.QueryStringParameter_6#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.QueryStringParameter_6/VB/qsp6vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.QueryStringParameter_6#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.QueryStringParameter_6/CS/qsp6cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.QueryStringParameter_6#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.QueryStringParameter_6/VB/qsp6vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -789,8 +789,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.ParameterCollection.RemoveAt%2A> method to remove a <xref:System.Web.UI.WebControls.Parameter> object from a <xref:System.Web.UI.WebControls.ParameterCollection> collection at a specific location. In this example, several <xref:System.Web.UI.WebControls.QueryStringParameter> objects are added to a <xref:System.Web.UI.WebControls.SqlDataSource.SelectParameters%2A> collection, one <xref:System.Web.UI.WebControls.QueryStringParameter> object is removed from the collection, and the order of the collection is printed when the page loads.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.QueryStringParameter_5#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.QueryStringParameter_5/CS/qsp5cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.QueryStringParameter_5#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.QueryStringParameter_5/VB/qsp5vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.QueryStringParameter_5#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.QueryStringParameter_5/CS/qsp5cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.QueryStringParameter_5#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.QueryStringParameter_5/VB/qsp5vb.aspx#1)]  
   
  ]]></format>
         </remarks>

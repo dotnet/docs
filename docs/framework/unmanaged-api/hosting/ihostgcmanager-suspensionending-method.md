@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostGCManager::SuspensionEnding"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SuspensionEnding method, IHostGCManager interface [.NET Framework hosting]"
   - "IHostGCManager::SuspensionEnding method [.NET Framework hosting]"

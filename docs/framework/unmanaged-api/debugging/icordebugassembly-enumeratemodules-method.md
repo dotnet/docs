@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugAssembly::EnumerateModules"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugAssembly::EnumerateModules method [.NET Framework debugging]"
   - "EnumerateModules method [.NET Framework debugging]"

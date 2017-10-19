@@ -375,7 +375,7 @@
  This method enables visual styles for the application. Visual styles are the colors, fonts, and other visual elements that form an operating system theme. Controls will draw with visual styles if the control and the operating system support it. To have an effect, <xref:System.Windows.Forms.Application.EnableVisualStyles> must be called before creating any controls in the application; typically, <xref:System.Windows.Forms.Application.EnableVisualStyles> is the first line in the `Main` function. A separate manifest is not required to enable visual styles when calling <xref:System.Windows.Forms.Application.EnableVisualStyles>.  
   
 > [!NOTE]
->  Prior to the .NET Framework 2.0, the `FlatStyle` property of some controls, such as controls that derive from <xref:System.Windows.Forms.ButtonBase>, had to be set to <xref:System.Windows.Forms.FlatStyle?displayProperty=nameWithType> in order for the controls to be drawn with visual styles. In applications written with the .NET Framework 2.0, this is no longer necessary.  
+>  Prior to the .NET Framework 2.0, the `FlatStyle` property of some controls, such as controls that derive from <xref:System.Windows.Forms.ButtonBase>, had to be set to <xref:System.Windows.Forms.FlatStyle.System?displayProperty=nameWithType> in order for the controls to be drawn with visual styles. In applications written with the .NET Framework 2.0, this is no longer necessary.  
   
 > [!NOTE]
 >  This method will have no effect for controls hosted in Internet Explorer.  
@@ -1020,7 +1020,7 @@
 |The operating system supports visual styles|To verify this condition separately, use the <xref:System.Windows.Forms.VisualStyles.VisualStyleInformation.IsSupportedByOS%2A> property of the <xref:System.Windows.Forms.VisualStyles.VisualStyleInformation> class.|  
 |The user has enabled visual styles in the operating system|To verify this condition separately, use the <xref:System.Windows.Forms.VisualStyles.VisualStyleInformation.IsEnabledByUser%2A> property of the <xref:System.Windows.Forms.VisualStyles.VisualStyleInformation> class.|  
 |Visual styles are enabled in the application|Visual styles can be enabled in an application by calling the <xref:System.Windows.Forms.Application.EnableVisualStyles> method or by using an application manifest that specifies that ComCtl32.dll version 6 or later will be used to draw controls.|  
-|Visual styles are being used to draw the client area of application windows|To verify this condition separately, use the <xref:System.Windows.Forms.Application.VisualStyleState%2A> property of the <xref:System.Windows.Forms.Application> class and verify that it has the value <xref:System.Windows.Forms.VisualStyles.VisualStyleState?displayProperty=nameWithType> or <xref:System.Windows.Forms.VisualStyles.VisualStyleState?displayProperty=nameWithType>.|  
+|Visual styles are being used to draw the client area of application windows|To verify this condition separately, use the <xref:System.Windows.Forms.Application.VisualStyleState%2A> property of the <xref:System.Windows.Forms.Application> class and verify that it has the value <xref:System.Windows.Forms.VisualStyles.VisualStyleState.ClientAreaEnabled?displayProperty=nameWithType> or <xref:System.Windows.Forms.VisualStyles.VisualStyleState.ClientAndNonClientAreasEnabled?displayProperty=nameWithType>.|  
   
  ]]></format>
         </remarks>

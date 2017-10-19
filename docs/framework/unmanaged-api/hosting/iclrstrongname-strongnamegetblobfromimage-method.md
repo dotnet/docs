@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRStrongName::StrongNameGetBlobFromImage"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "StrongNameGetBlobFromImage method, ICLRStrongName interface [.NET Framework hosting]"
   - "ICLRStrongName::StrongNameGetBlobFromImage method [.NET Framework hosting]"

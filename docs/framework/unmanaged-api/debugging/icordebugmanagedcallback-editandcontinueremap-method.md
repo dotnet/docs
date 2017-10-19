@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugManagedCallback::EditAndContinueRemap"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "EditAndContinueRemap method [.NET Framework debugging]"
   - "ICorDebugManagedCallback::EditAndContinueRemap method [.NET Framework debugging]"

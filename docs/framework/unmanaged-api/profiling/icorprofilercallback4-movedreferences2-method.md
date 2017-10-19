@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback4::MovedReferences2"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "MovedReferences2 method, ICorProfilerCallback4 interface [.NET Framework profiling]"
   - "ICorProfilerCallback4::MovedReferences2 method [.NET Framework profiling]"

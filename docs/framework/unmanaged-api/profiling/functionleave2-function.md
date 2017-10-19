@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "FunctionLeave2"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "FunctionLeave2 function [.NET Framework profiling]"
 ms.assetid: 8cdac941-8b94-4497-b874-4e571785f3fe

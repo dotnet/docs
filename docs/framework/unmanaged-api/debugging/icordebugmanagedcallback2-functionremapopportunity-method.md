@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugManagedCallback2::FunctionRemapOpportunity"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "FunctionRemapOpportunity method [.NET Framework debugging]"
   - "ICorDebugManagedCallback2::FunctionRemapOpportunity method [.NET Framework debugging]"

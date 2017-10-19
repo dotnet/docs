@@ -134,6 +134,14 @@
         "api/**.yml": ["csharp", "vb", "cpp"],
         "api/System.Convert.yml": ["csharp", "vb", "cpp", "fsharp"]        
       },
+      "dev_langs": {
+        "docs/core/**/**.md": ["csharp"],
+        "docs/csharp/**/**.md": ["csharp"],
+        "docs/framework/**/**.md": ["csharp"],
+        "docs/fsharp/**/**.md": ["fsharp"],
+        "docs/standard/**/**.md": ["csharp"],
+        "docs/visual-basic/**/**.md": ["vb"]
+      },
       "ROBOTS": {
         "api/**.yml": "NOINDEX, NOFOLLOW"
       },

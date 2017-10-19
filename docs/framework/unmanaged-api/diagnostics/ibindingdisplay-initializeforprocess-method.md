@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IBindingDisplay::InitializeForProcess"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IBindingDisplay::InitializeForProcess method [.NET Framework debugging]"
   - "InitializeForProcess method [.NET Framework debugging]"

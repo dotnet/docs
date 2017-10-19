@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugProcess::EnumerateObjects"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "EnumerateObjects method [.NET Framework debugging]"
   - "ICorDebugProcess::EnumerateObjects method [.NET Framework debugging]"

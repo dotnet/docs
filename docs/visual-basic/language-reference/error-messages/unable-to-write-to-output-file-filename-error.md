@@ -1,40 +1,21 @@
 ---
 title: "Unable to write to output file &#39;&lt;filename&gt;&#39;: &lt;error&gt;"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vbc31019"
   - "bc31019"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC31019"
 ms.assetid: 0845b245-11bb-46fd-95ca-f6cef3c318ef
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Unable to write to output file &#39;&lt;filename&gt;&#39;: &lt;error&gt;
 There was a problem creating the file.  

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugNativeFrame::GetRegisterSet"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugNativeFrame::GetRegisterSet method [.NET Framework debugging]"
   - "GetRegisterSet method, ICorDebugNativeFrame interface [.NET Framework debugging]"

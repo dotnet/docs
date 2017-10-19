@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRStrongName::StrongNameSignatureSize"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRStrongName::StrongNameSignatureSize method [.NET Framework hosting]"
   - "StrongNameSignatureSize method, ICLRStrongName interface [.NET Framework hosting]"

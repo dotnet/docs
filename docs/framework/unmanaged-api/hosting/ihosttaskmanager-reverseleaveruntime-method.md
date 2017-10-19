@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostTaskManager::ReverseLeaveRuntime"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostTaskManager::ReverseLeaveRuntime method [.NET Framework hosting]"
   - "ReverseLeaveRuntime method [.NET Framework hosting]"

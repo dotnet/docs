@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugCode::GetAddress"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetAddress method, ICorDebugCode interface [.NET Framework debugging]"
   - "ICorDebugCode::GetAddress method [.NET Framework debugging]"

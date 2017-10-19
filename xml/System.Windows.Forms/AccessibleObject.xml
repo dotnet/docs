@@ -1211,12 +1211,12 @@
   
 |Operation|Flag Combination|  
 |---------------|----------------------|  
-|To simulate a click|<xref:System.Windows.Forms.AccessibleSelection?displayProperty=nameWithType> `OR` <xref:System.Windows.Forms.AccessibleSelection?displayProperty=nameWithType> **Note:**  This combination will not select the desired control if called from within your own application. It will have the desired effect, however, if called from an external application.|  
-|To select a target item by simulating CTRL + click|<xref:System.Windows.Forms.AccessibleSelection?displayProperty=nameWithType> `OR` <xref:System.Windows.Forms.AccessibleSelection?displayProperty=nameWithType>|  
-|To cancel selection of a target item by simulating CTRL + click|<xref:System.Windows.Forms.AccessibleSelection?displayProperty=nameWithType> `OR` <xref:System.Windows.Forms.AccessibleSelection?displayProperty=nameWithType>|  
-|To simulate SHIFT + click|<xref:System.Windows.Forms.AccessibleSelection?displayProperty=nameWithType> `OR` <xref:System.Windows.Forms.AccessibleSelection?displayProperty=nameWithType>|  
-|To select a range of objects and put focus on the last object|Specify <xref:System.Windows.Forms.AccessibleSelection?displayProperty=nameWithType> on the starting object to set the selection anchor. Then call <xref:System.Windows.Forms.AccessibleObject.Select%2A> again and specify <xref:System.Windows.Forms.AccessibleSelection?displayProperty=nameWithType>`OR`<xref:System.Windows.Forms.AccessibleSelection?displayProperty=nameWithType> on the last object.|  
-|To deselect all objects|Specify <xref:System.Windows.Forms.AccessibleSelection?displayProperty=nameWithType> on any object. This flag deselects all selected objects except the one just selected. Then call <xref:System.Windows.Forms.AccessibleObject.Select%2A> again and specify <xref:System.Windows.Forms.AccessibleSelection?displayProperty=nameWithType> on the same object.|  
+|To simulate a click|<xref:System.Windows.Forms.AccessibleSelection.TakeFocus?displayProperty=nameWithType> `OR` <xref:System.Windows.Forms.AccessibleSelection.TakeSelection?displayProperty=nameWithType> **Note:**  This combination will not select the desired control if called from within your own application. It will have the desired effect, however, if called from an external application.|  
+|To select a target item by simulating CTRL + click|<xref:System.Windows.Forms.AccessibleSelection.TakeFocus?displayProperty=nameWithType> `OR` <xref:System.Windows.Forms.AccessibleSelection.AddSelection?displayProperty=nameWithType>|  
+|To cancel selection of a target item by simulating CTRL + click|<xref:System.Windows.Forms.AccessibleSelection.TakeFocus?displayProperty=nameWithType> `OR` <xref:System.Windows.Forms.AccessibleSelection.RemoveSelection?displayProperty=nameWithType>|  
+|To simulate SHIFT + click|<xref:System.Windows.Forms.AccessibleSelection.TakeFocus?displayProperty=nameWithType> `OR` <xref:System.Windows.Forms.AccessibleSelection.ExtendSelection?displayProperty=nameWithType>|  
+|To select a range of objects and put focus on the last object|Specify <xref:System.Windows.Forms.AccessibleSelection.TakeFocus?displayProperty=nameWithType> on the starting object to set the selection anchor. Then call <xref:System.Windows.Forms.AccessibleObject.Select%2A> again and specify <xref:System.Windows.Forms.AccessibleSelection.TakeFocus?displayProperty=nameWithType>`OR`<xref:System.Windows.Forms.AccessibleSelection.ExtendSelection?displayProperty=nameWithType> on the last object.|  
+|To deselect all objects|Specify <xref:System.Windows.Forms.AccessibleSelection.TakeSelection?displayProperty=nameWithType> on any object. This flag deselects all selected objects except the one just selected. Then call <xref:System.Windows.Forms.AccessibleObject.Select%2A> again and specify <xref:System.Windows.Forms.AccessibleSelection.RemoveSelection?displayProperty=nameWithType> on the same object.|  
   
    
   
@@ -1326,7 +1326,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Each field must have a unique name. The <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> flag specifies that nonpublic fields are included in the search. The <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> flag specifies that public fields are included in the search.  
+ Each field must have a unique name. The <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> flag specifies that nonpublic fields are included in the search. The <xref:System.Reflection.BindingFlags.Public?displayProperty=nameWithType> flag specifies that public fields are included in the search.  
   
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.AccessibleObject> instance is cast to an <xref:System.Reflection.IReflect> interface.  
   

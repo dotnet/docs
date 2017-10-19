@@ -131,7 +131,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Configuration.ConfigurationProperty("msmqSecureHashAlgorithm", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+          <AttributeName>System.Configuration.ConfigurationProperty("msmqSecureHashAlgorithm")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

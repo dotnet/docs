@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IGCHost2"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IGCHost2 interface [.NET Framework hosting]"
 ms.assetid: e5323fa4-18ac-424d-859d-a65a550d08d9

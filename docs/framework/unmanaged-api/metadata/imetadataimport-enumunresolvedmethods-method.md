@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataImport::EnumUnresolvedMethods"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "EnumUnresolvedMethods method [.NET Framework metadata]"
   - "IMetaDataImport::EnumUnresolvedMethods method [.NET Framework metadata]"

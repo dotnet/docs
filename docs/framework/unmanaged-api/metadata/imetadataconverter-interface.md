@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataConverter"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataConverter interface [.NET Framework metadata]"
 ms.assetid: 9caea662-0167-4267-b14a-2fa42c3be4ea

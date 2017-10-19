@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "paging output [WCF Data Services]"
 ms.assetid: 9a316cbd-9612-4482-a541-a10bc78b2635

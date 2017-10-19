@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "COR_PRF_RUNTIME_TYPE"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "COR_PRF_RUNTIME_TYPE enumeration [.NET Framework profiling]"
 ms.assetid: 35449514-333f-4918-9c60-7aa198d655d2

@@ -19,8 +19,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "CreateInstallReference"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CreateInstallReference function [.NET Framework fusion]"
 ms.assetid: 80dbbbf8-54fc-4894-b74a-0179d3201083

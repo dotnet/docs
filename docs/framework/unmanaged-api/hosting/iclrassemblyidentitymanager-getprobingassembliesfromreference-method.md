@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRAssemblyIdentityManager::GetProbingAssembliesFromReference"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRAssemblyIdentityManager::GetProbingAssembliesFromReference method [.NET Framework hosting]"
   - "GetProbingAssembliesFromReference method [.NET Framework hosting]"

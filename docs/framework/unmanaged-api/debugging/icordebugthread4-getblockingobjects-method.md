@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugThread4::GetBlockingObjects"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetBlockingObjects method [.NET Framework debugging]"
   - "ICorDebugThread4::GetBlockingObjects method [.NET Framework debugging]"

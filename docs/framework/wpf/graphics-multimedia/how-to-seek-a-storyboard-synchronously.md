@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "seeking Storyboards synchronously"
   - "Storyboards, seeking synchronously"
@@ -19,7 +22,7 @@ ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Seek a Storyboard Synchronously
-The following example shows how to use the              <xref:System.Windows.Media.Animation.Storyboard.SeekAlignedToLastTick%2A> method of a              <xref:System.Windows.Media.Animation.Storyboard> to seek to any position in a storyboard animation synchronously.  
+The following example shows how to use the <xref:System.Windows.Media.Animation.Storyboard.SeekAlignedToLastTick%2A> method of a <xref:System.Windows.Media.Animation.Storyboard> to seek to any position in a storyboard animation synchronously.  
   
 ## Example  
  The following is the XAML markup for the sample.  

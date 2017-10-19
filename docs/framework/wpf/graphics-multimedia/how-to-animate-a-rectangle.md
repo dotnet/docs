@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "animation, rectangles"
   - "rectangles, animating"
@@ -22,7 +25,7 @@ manager: "wpickett"
 This example shows how to animate changes to the size and position of a rectangle.  
   
 ## Example  
- The following example uses an instance of the                      <xref:System.Windows.Media.Animation.RectAnimation> class to animate the                      <xref:System.Windows.Media.RectangleGeometry.Rect%2A> property of a                      <xref:System.Windows.Media.RectangleGeometry>, which animates changes to the size and position of the rectangle.  
+ The following example uses an instance of the <xref:System.Windows.Media.Animation.RectAnimation> class to animate the <xref:System.Windows.Media.RectangleGeometry.Rect%2A> property of a <xref:System.Windows.Media.RectangleGeometry>, which animates changes to the size and position of the rectangle.  
   
  [!code-csharp[BasicAnimations_snip#RectAnimationWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/BasicAnimations_snip/CSharp/RectAnimationExample.cs#rectanimationwholepage)]
  [!code-vb[BasicAnimations_snip#RectAnimationWholePage](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/BasicAnimations_snip/VisualBasic/RectAnimationExample.vb#rectanimationwholepage)]  

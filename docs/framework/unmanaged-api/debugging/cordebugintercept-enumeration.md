@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorDebugIntercept"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorDebugIntercept enumeration [.NET Framework debugging]"
 ms.assetid: 3d5b642e-7ef2-428b-a5ae-509c35ed461a

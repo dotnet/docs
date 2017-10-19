@@ -27,8 +27,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeNodeStyleCollection> class to specify the style settings for the individual levels of a <xref:System.Web.UI.WebControls.TreeView> control. Notice that the <xref:System.Web.UI.WebControls.TreeView.LevelStyles%2A> property returns a <xref:System.Web.UI.WebControls.TreeNodeStyleCollection> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeViewLevelStyles#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewLevelStyles/CS/treeviewlevelstylescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeViewLevelStyles#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewLevelStyles/VB/treeviewlevelstylesvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeViewLevelStyles#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewLevelStyles/CS/treeviewlevelstylescs.aspx#1)]
+ [!code-aspx-vb[TreeViewLevelStyles#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewLevelStyles/VB/treeviewlevelstylesvb.aspx#1)]  
   
  ]]></format>
     </remarks>

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostIoCompletionManager::Bind"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostIoCompletionManager::Bind method [.NET Framework hosting]"
   - "Bind method [.NET Framework hosting]"

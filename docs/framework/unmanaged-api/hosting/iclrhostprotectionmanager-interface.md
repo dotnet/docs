@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRHostProtectionManager"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRHostProtectionManager interface [.NET Framework hosting]"
 ms.assetid: ce2770ae-23d0-45d9-8bcf-46504ac5020e

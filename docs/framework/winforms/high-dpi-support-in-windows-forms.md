@@ -92,7 +92,7 @@ For a list of individual keys and their values, see [Windows Forms Add Configura
 
 Starting with the .NET Framework 4.7, three new events allow you to programmatically handle dynamic DPI changes:
 
-- <xref:System.Windows.Forms.Control.DpiChangedAfterParent>, which is fired Occurs when the DPI setting for a control is changed programmatically after a DPI change event for it's parent control or form has occurred.
+- <xref:System.Windows.Forms.Control.DpiChangedAfterParent>, which is fired when the DPI setting for a control is changed programmatically after a DPI change event for it's parent control or form has occurred.
 - <xref:System.Windows.Forms.Control.DpiChangedBeforeParent>, which is fired when the DPI setting for a control is changed programmatically before a DPI change event for its parent control or form has occurred.
 - <xref:System.Windows.Forms.Form.DpiChanged>, which is fired when the DPI setting changes on the display device where the form is currently displayed.
 

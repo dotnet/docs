@@ -9,6 +9,8 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
+dev_langs:
+ - "cpp"
 api_name: 
   - "ICorProfilerCallback6.GetAssemblyReferences"
 api_location: 
@@ -16,8 +18,6 @@ api_location:
   - "corprof.idl"
 api_type: 
   - "COM"
-dev_langs: 
-  - "C++"
 ms.assetid: 8b391afb-d79f-41bd-94ce-43ce62c6b5fc
 topic_type: 
   - "apiref"
@@ -33,7 +33,7 @@ manager: "wpickett"
   
 ## Syntax  
   
-```vb  
+```cpp
 HRESULT GetAssemblyReferences(        [in, string] const WCHAR* wszAssemblyPath,  
         [in] ICorProfilerAssemblyReferenceProvider* pAsmRefProvider  
 );  

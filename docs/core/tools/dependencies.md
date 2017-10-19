@@ -50,6 +50,8 @@ In this example we will use the default template that is dropped by `dotnet new 
 ```
 After this, we save the project and run the `dotnet restore` command to install the dependency. 
 
+[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
+
 The full project looks like this:
 
 ```xml

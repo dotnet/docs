@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataAssemblyEmit::DefineManifestResource"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "DefineManifestResource method [.NET Framework metadata]"
   - "IMetaDataAssemblyEmit::DefineManifestResource method [.NET Framework metadata]"

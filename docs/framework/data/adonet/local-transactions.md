@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-ado"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 ms.assetid: 8ae3712f-ef5e-41a1-9ea9-b3d0399439f1
 caps.latest.revision: 5
 author: "JennieHubbard"
@@ -16,10 +19,10 @@ ms.author: "jhubbard"
 manager: "jhubbard"
 ---
 # Local Transactions
-Transactions in [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] are used when you want to bind multiple tasks together so that they execute as a single unit of work. For example, imagine that an application performs two tasks. First, it updates a table with order information. Second, it updates a table that contains inventory information, debiting the items ordered. If either task fails, the both updates are rolled back.  
+Transactions in [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] are used when you want to bind multiple tasks together so that they execute as a single unit of work. For example, imagine that an application performs two tasks. First, it updates a table with order information. Second, it updates a table that contains inventory information, debiting the items ordered. If either task fails, then both updates are rolled back.  
   
 ## Determining the Transaction Type  
- A transaction considered to be a local transaction when it is a single-phase transaction and is handled by the database directly. Transactions are considered to be distributed transactions when they are coordinated by a transaction monitor and use fail-safe mechanisms (such as two-phase commit) for transaction resolution.  
+ A transaction is considered to be a local transaction when it is a single-phase transaction and is handled by the database directly. A transaction is considered to be a distributed transaction when it is coordinated by a transaction monitor and uses fail-safe mechanisms (such as two-phase commit) for transaction resolution.  
   
  Each of the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] data providers has its own `Transaction` object for performing local transactions. If you require a transaction to be performed in a SQL Server database, select a <xref:System.Data.SqlClient> transaction. For an Oracle transaction, use the <xref:System.Data.OracleClient> provider. In addition, there is a new <xref:System.Data.Common.DbTransaction> class that is available for writing provider-independent code that requires transactions.  
   

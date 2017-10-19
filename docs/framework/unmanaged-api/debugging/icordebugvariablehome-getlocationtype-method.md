@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugVariableHome::GetLocationType"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugVariableHome::GetLocationType method [.NET Framework debugging]"
   - "GetLocationType method, ICorDebugVariableHome interface [.NET Framework debugging]"

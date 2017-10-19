@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IAssemblyCacheItem"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IAssemblyCacheItem interface [.NET Framework fusion]"
 ms.assetid: ccc9387a-9f44-4f4f-bf8f-0ea6d2afa21b

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugProcess5::EnumerateHeapRegions"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "EnumerateHeapRegions method, ICorDebugProcess5 interface [.NET Framework debugging]"
   - "ICorDebugProcess5::EnumerateHeapRegions method [.NET Framework debugging]"

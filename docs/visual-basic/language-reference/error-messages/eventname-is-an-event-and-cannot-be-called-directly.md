@@ -1,40 +1,21 @@
 ---
 title: "&#39;&lt;eventname&gt;&#39; is an event, and cannot be called directly"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "bc32022"
   - "vbc32022"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC32022"
 ms.assetid: 4dcfcb8d-a9fa-46a7-a034-29d9ff3a59b3
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # &#39;&lt;eventname&gt;&#39; is an event, and cannot be called directly
 '<`eventname`>' is an event, and so cannot be called directly. Use a `RaiseEvent` statement to raise an event.  

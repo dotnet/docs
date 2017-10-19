@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 f1_keywords: 
   - "Designer_GenerateMember"
   - "Designer_Modifiers"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "GenerateMember property"
   - "Modifiers property"

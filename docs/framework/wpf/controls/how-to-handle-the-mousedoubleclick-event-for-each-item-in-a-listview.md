@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "ListView controls, MouseDoubleClick event"
 ms.assetid: 81b39369-655a-4585-ac58-4640e5bb8fed

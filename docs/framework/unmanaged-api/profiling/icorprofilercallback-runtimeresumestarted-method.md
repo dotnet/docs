@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::RuntimeResumeStarted"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerCallback::RuntimeResumeStarted method [.NET Framework profiling]"
   - "RuntimeResumeStarted method [.NET Framework profiling]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRDebugging::OpenVirtualProcess"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "OpenVirtualProcess method [.NET Framework debugging]"
   - "ICLRDebugging::OpenVirtualProcess method [.NET Framework debugging]"

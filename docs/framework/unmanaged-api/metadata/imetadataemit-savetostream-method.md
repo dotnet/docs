@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataEmit::SaveToStream"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataEmit::SaveToStream method [.NET Framework metadata]"
   - "SaveToStream method [.NET Framework metadata]"

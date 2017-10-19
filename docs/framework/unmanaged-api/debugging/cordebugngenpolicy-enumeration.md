@@ -9,6 +9,8 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
+dev_langs:
+ - "cpp"
 api_name: 
   - "CorDebugNGenPolicy"
 api_location: 
@@ -17,8 +19,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorDebugNGenPolicy"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorDebugNgenPolicy enumeration [.NET Framework debugging]"
 ms.assetid: edb4e4d2-3166-44d4-8b17-bf302f7ea093
@@ -34,7 +34,7 @@ Provides a value that determines whether a debugger loads native (NGen) images f
   
 ## Syntax  
   
-```vb  
+```cpp
 enum CorDebugNGENPolicy {  
     DISABLE_LOCAL_NIC = 1  
 } CorDebugNGENPolicy;  

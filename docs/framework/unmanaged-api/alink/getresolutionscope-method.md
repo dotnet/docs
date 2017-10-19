@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "GetResolutionScope"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetResolutionScope method"
 ms.assetid: 5b48ca60-dacd-44b2-9979-4a5122f00812

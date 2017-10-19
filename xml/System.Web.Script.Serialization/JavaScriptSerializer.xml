@@ -56,8 +56,8 @@
   
  The next example shows a more complicated and complete project that uses the <xref:System.Web.Script.Serialization.JavaScriptSerializer> class to save and restore the state of an object by using JSON serialization. This code uses a custom converter that is provided for the <xref:System.Web.Script.Serialization.JavaScriptConverter> class.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Script.Serialization#4](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.Script.Serialization/CS/Default.aspx#4)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Script.Serialization#4](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.Script.Serialization/VB/Default.aspx#4)]  -->  
+ [!code-aspx-csharp[System.Web.Script.Serialization#4](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.Script.Serialization/CS/Default.aspx#4)]
+ [!code-aspx-vb[System.Web.Script.Serialization#4](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.Script.Serialization/VB/Default.aspx#4)]  
   
  ]]></format>
     </remarks>
@@ -327,9 +327,9 @@
 ## Examples  
  The following example provides a simple illustration of how to serialize and deserialize data objects. It requires a class names Person which is shown below.  
   
-<!-- TODO: review snippet reference  [!CODE [System.Web.Script.JavaScriptSerializer#1](System.Web.Script.JavaScriptSerializer#1)]  -->  
+<!-- TODO: review snippet reference  [!CODE [System.Web.Script.JavaScriptSerializer#1](System.Web.Script.JavaScriptSerializer#1)]  
   
-<!-- TODO: review snippet reference  [!CODE [System.Web.Script.JavaScriptSerializer#2](System.Web.Script.JavaScriptSerializer#2)]  -->  
+<!-- TODO: review snippet reference  [!CODE [System.Web.Script.JavaScriptSerializer#2](System.Web.Script.JavaScriptSerializer#2)]  
   
  ]]></format>
         </remarks>
@@ -570,9 +570,9 @@
 ## Examples  
  The following example provides a simple illustration of how to serialize and deserialize data objects. It requires a class names Person which is shown below.  
   
-<!-- TODO: review snippet reference  [!CODE [System.Web.Script.JavaScriptSerializer#1](System.Web.Script.JavaScriptSerializer#1)]  -->  
+<!-- TODO: review snippet reference  [!CODE [System.Web.Script.JavaScriptSerializer#1](System.Web.Script.JavaScriptSerializer#1)]  
   
-<!-- TODO: review snippet reference  [!CODE [System.Web.Script.JavaScriptSerializer#2](System.Web.Script.JavaScriptSerializer#2)]  -->  
+<!-- TODO: review snippet reference  [!CODE [System.Web.Script.JavaScriptSerializer#2](System.Web.Script.JavaScriptSerializer#2)]  
   
  ]]></format>
         </remarks>

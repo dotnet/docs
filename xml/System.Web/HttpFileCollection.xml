@@ -23,8 +23,8 @@
 ## Examples  
  The following example demonstrates how to access the <xref:System.Web.HttpFileCollection> collection returned from the <xref:System.Web.HttpRequest.Files%2A> property of the <xref:System.Web.HttpRequest> object. The <xref:System.Web.HttpFileCollection> collection is populated by two <xref:System.Web.UI.WebControls.FileUpload> controls on the Web page. Items in the file collection are displayed in a <xref:System.Web.UI.WebControls.BulletedList> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpFileCollection1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpFileCollection1/cs/HttpFileCollectionCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.HttpFileCollection1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpFileCollection1/vb/HttpFileCollectionVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.HttpFileCollection1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpFileCollection1/cs/HttpFileCollectionCS.aspx#1)]
+ [!code-aspx-vb[System.Web.HttpFileCollection1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpFileCollection1/vb/HttpFileCollectionVB.aspx#1)]  
   
  ]]></format>
     </remarks>

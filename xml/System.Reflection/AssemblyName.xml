@@ -779,7 +779,7 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
 ## Remarks  
   
 > [!IMPORTANT]
->  Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the <xref:System.Reflection.AssemblyName.HashAlgorithm%2A> property of an <xref:System.Reflection.AssemblyName> object that is returned by the <xref:System.Reflection.Assembly.GetReferencedAssemblies%2A?displayProperty=nameWithType> method is <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm?displayProperty=nameWithType> if there is no hash algorithm for the referenced assembly, or if the hash algorithm of the referenced assembly is not identified by the <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm?displayProperty=nameWithType> enumeration. In previous versions of the .NET Framework, the <xref:System.Reflection.AssemblyName.HashAlgorithm%2A> property returned <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm?displayProperty=nameWithType> in this situation.  
+>  Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the <xref:System.Reflection.AssemblyName.HashAlgorithm%2A> property of an <xref:System.Reflection.AssemblyName> object that is returned by the <xref:System.Reflection.Assembly.GetReferencedAssemblies%2A?displayProperty=nameWithType> method is <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm.None?displayProperty=nameWithType> if there is no hash algorithm for the referenced assembly, or if the hash algorithm of the referenced assembly is not identified by the <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm?displayProperty=nameWithType> enumeration. In previous versions of the .NET Framework, the <xref:System.Reflection.AssemblyName.HashAlgorithm%2A> property returned <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm.SHA1?displayProperty=nameWithType> in this situation.  
   
    
   
@@ -951,7 +951,7 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Beginning with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], this property always returns <xref:System.Reflection.ProcessorArchitecture?displayProperty=nameWithType> for reference assemblies.  
+ Beginning with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], this property always returns <xref:System.Reflection.ProcessorArchitecture.None?displayProperty=nameWithType> for reference assemblies.  
   
  ]]></format>
         </remarks>
@@ -1385,7 +1385,7 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
 ## Remarks  
  <xref:System.Reflection.AssemblyName.VersionCompatibility%2A> information indicates, for example, that the assembly cannot execute side-by-side with other versions due to conflicts over a device driver.  
   
- Currently, <xref:System.Reflection.AssemblyName.VersionCompatibility%2A> always returns <xref:System.Configuration.Assemblies.AssemblyVersionCompatibility?displayProperty=nameWithType>, and is not used by the loader. This property is reserved for a future feature.  
+ Currently, <xref:System.Reflection.AssemblyName.VersionCompatibility%2A> always returns <xref:System.Configuration.Assemblies.AssemblyVersionCompatibility.SameMachine?displayProperty=nameWithType>, and is not used by the loader. This property is reserved for a future feature.  
   
  ]]></format>
         </remarks>

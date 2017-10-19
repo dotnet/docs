@@ -1,7 +1,7 @@
 ---
 title: "Tutorial: Manipulating Content in a WordprocessingML Document (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: bc9815f8-13d2-4f50-a4d1-b1c0d50d37b3
 caps.latest.revision: 3
 author: "BillWagner"

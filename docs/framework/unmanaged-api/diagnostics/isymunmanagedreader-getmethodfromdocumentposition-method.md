@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedReader::GetMethodFromDocumentPosition"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetMethodFromDocumentPosition method [.NET Framework debugging]"
   - "ISymUnmanagedReader::GetMethodFromDocumentPosition method [.NET Framework debugging]"

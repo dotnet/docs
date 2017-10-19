@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedWriter::SetScopeRange"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SetScopeRange method [.NET Framework debugging]"
   - "ISymUnmanagedWriter::SetScopeRange method [.NET Framework debugging]"

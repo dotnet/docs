@@ -29,10 +29,10 @@ Represents a query that is used to track requests to cancel a child activity by 
   
 ## Syntax  
   
-```vb  
+```xml
 <tracking>   <trackingProfile name="Name">       <workflow>          <cancelRequestQueries>             <cancelRequestQuery activityName="String"                 childActivityName="String"/>          </cancelRequestQueries>       </workflow>   </trackingProfile></tracking>  
-```  
-  
+```
+
 ## Attributes and Elements  
  The following sections describe attributes, child elements, and parent elements.  
   

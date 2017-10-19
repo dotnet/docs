@@ -9,11 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 ms.assetid: d30fe7c5-8469-46e2-b804-e3eec7b24256
 caps.latest.revision: 6
 author: "rpetrusha"
@@ -29,7 +24,7 @@ Specifies whether the runtime distributes managed threads across all CPU groups.
   
 ## Syntax  
   
-```vb  
+```xml
 <Thread_UseAllCpuGroups    
    enabled="true|false"/>  
 ```  

@@ -1,7 +1,7 @@
 ---
 title: "How to: List All Nodes in a Tree (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 ms.assetid: e19289c4-26d1-435b-b0db-fb8bc856b753
 caps.latest.revision: 3
 author: dotnet-bot

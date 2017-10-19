@@ -1,7 +1,7 @@
 ---
 title: "How to: Write a Query that Finds Elements Based on Context (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: 3ff79ef0-fc8b-42fe-8cc0-10dc32b06b4e
 caps.latest.revision: 3
 author: "BillWagner"

@@ -1,18 +1,14 @@
 ---
 title: "Function Statement (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Function"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "procedures, creating"
   - "Function procedures, Function statement syntax"
@@ -41,21 +37,6 @@ ms.assetid: a4497077-0f46-4ede-a27f-9e8670df52b9
 caps.latest.revision: 62
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Function Statement (Visual Basic)
 Declares the name, parameters, and code that define a `Function` procedure.  

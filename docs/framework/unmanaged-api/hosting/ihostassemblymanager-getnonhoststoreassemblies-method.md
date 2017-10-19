@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostAssemblyManager::GetNonHostStoreAssemblies"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostAssemblyManager::GetNonHostStoreAssemblies method [.NET Framework hosting]"
   - "GetNonHostStoreAssemblies method [.NET Framework hosting]"

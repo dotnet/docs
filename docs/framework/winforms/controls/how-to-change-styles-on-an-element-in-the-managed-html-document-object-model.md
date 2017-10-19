@@ -9,8 +9,9 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "managed HTML DOM, changing styles on elements"
 ms.assetid: 154e8d9f-3e2d-4e8b-a6f3-c85a070e9cc1

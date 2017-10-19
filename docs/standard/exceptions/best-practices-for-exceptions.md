@@ -8,6 +8,10 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+- "csharp"
+- "vb"
+- "cpp"
 helpviewer_keywords: 
   - "exceptions, best practices"
 ms.assetid: f06da765-235b-427a-bfb6-47cd219af539

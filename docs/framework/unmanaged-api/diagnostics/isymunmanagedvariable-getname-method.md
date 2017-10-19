@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedVariable::GetName"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetName method, ISymUnmanagedVariable interface [.NET Framework debugging]"
   - "ISymUnmanagedVariable::GetName method [.NET Framework debugging]"

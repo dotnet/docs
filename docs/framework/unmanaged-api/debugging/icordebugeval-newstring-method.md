@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEval::NewString"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "NewString method [.NET Framework debugging]"
   - "ICorDebugEval::NewString method [.NET Framework debugging]"

@@ -30,8 +30,8 @@
 ## Examples  
  The following code example demonstrates how to dynamically generate the contents of an <xref:System.Web.UI.HtmlControls.HtmlTable> control by adding rows to an <xref:System.Web.UI.HtmlControls.HtmlTableRowCollection> collection. Notice that the <xref:System.Web.UI.HtmlControls.HtmlTable.Rows%2A> property of a table is the <xref:System.Web.UI.HtmlControls.HtmlTableRowCollection> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTableRowCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableRowCollection/CS/htmltablerowcollectioncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTableRowCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableRowCollection/VB/htmltablerowcollectionvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTableRowCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableRowCollection/CS/htmltablerowcollectioncs.aspx#1)]
+ [!code-aspx-vb[HtmlTableRowCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableRowCollection/VB/htmltablerowcollectionvb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -66,8 +66,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTableRowCollection.Add%2A> method to append a row of a table, represented by an <xref:System.Web.UI.HtmlControls.HtmlTableRow> object, to the end of an <xref:System.Web.UI.HtmlControls.HtmlTableRowCollection> collection. Notice that the <xref:System.Web.UI.HtmlControls.HtmlTable.Rows%2A> property of a table is the <xref:System.Web.UI.HtmlControls.HtmlTableRowCollection> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTableRowCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableRowCollection/CS/htmltablerowcollectioncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTableRowCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableRowCollection/VB/htmltablerowcollectionvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTableRowCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableRowCollection/CS/htmltablerowcollectioncs.aspx#1)]
+ [!code-aspx-vb[HtmlTableRowCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableRowCollection/VB/htmltablerowcollectionvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -99,8 +99,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTableRowCollection.Clear%2A> method to remove all items from the <xref:System.Web.UI.HtmlControls.HtmlTableRowCollection> collection. New entries are then added to the collection and displayed in the <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTableRowCollectionClear#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableRowCollectionClear/CS/htmltablerowcollectionclearcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTableRowCollectionClear#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableRowCollectionClear/VB/htmltablerowcollectionclearvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTableRowCollectionClear#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableRowCollectionClear/CS/htmltablerowcollectionclearcs.aspx#1)]
+ [!code-aspx-vb[HtmlTableRowCollectionClear#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableRowCollectionClear/VB/htmltablerowcollectionclearvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -140,8 +140,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTableRowCollection.CopyTo%2A> method to create an array that contains the same contents as the <xref:System.Web.UI.HtmlControls.HtmlTableRowCollection> collection. The array is then iterated through to display the contents of the collection.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTableRowCollectionCopyTo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableRowCollectionCopyTo/CS/htmltablerowcollectioncopytocs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTableRowCollectionCopyTo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableRowCollectionCopyTo/VB/htmltablerowcollectioncopytovb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTableRowCollectionCopyTo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableRowCollectionCopyTo/CS/htmltablerowcollectioncopytocs.aspx#1)]
+ [!code-aspx-vb[HtmlTableRowCollectionCopyTo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableRowCollectionCopyTo/VB/htmltablerowcollectioncopytovb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -173,8 +173,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTableRowCollection.Count%2A> property to determine the number of rows in the <xref:System.Web.UI.HtmlControls.HtmlTable> control. This value is then used as the upper bound of a loop to iterate through the rows of a table.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTableRowCollectionCount#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableRowCollectionCount/CS/htmltablerowcollectioncountcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTableRowCollectionCount#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableRowCollectionCount/VB/htmltablerowcollectioncountvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTableRowCollectionCount#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableRowCollectionCount/CS/htmltablerowcollectioncountcs.aspx#1)]
+ [!code-aspx-vb[HtmlTableRowCollectionCount#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableRowCollectionCount/VB/htmltablerowcollectioncountvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -216,8 +216,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTableRowCollection.GetEnumerator%2A> method to create an <xref:System.Collections.IEnumerator?displayProperty=nameWithType> object. The <xref:System.Collections.IEnumerator?displayProperty=nameWithType> object is then iterated through to display the contents of the <xref:System.Web.UI.HtmlControls.HtmlTableRowCollection> collection.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTableRowCollectionGetEnumerator#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableRowCollectionGetEnumerator/CS/htmltablerowcollectionienumeratorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTableRowCollectionGetEnumerator#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableRowCollectionGetEnumerator/VB/htmltablerowcollectionienumeratorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTableRowCollectionGetEnumerator#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableRowCollectionGetEnumerator/CS/htmltablerowcollectionienumeratorcs.aspx#1)]
+ [!code-aspx-vb[HtmlTableRowCollectionGetEnumerator#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableRowCollectionGetEnumerator/VB/htmltablerowcollectionienumeratorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -254,8 +254,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTableRowCollection.Insert%2A> method to insert a row of a table, represented by an <xref:System.Web.UI.HtmlControls.HtmlTableRow> object, into an <xref:System.Web.UI.HtmlControls.HtmlTableRowCollection> collection.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTableRowCollectionInsert#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableRowCollectionInsert/CS/htmltablerowcollectioninsertcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTableRowCollectionInsert#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableRowCollectionInsert/VB/htmltablerowcollectioninsertvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTableRowCollectionInsert#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableRowCollectionInsert/CS/htmltablerowcollectioninsertcs.aspx#1)]
+ [!code-aspx-vb[HtmlTableRowCollectionInsert#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableRowCollectionInsert/VB/htmltablerowcollectioninsertvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -348,8 +348,8 @@
 ## Examples  
  The following code example demonstrates how to use the indexer to retrieve a table row, represented by an <xref:System.Web.UI.HtmlControls.HtmlTableRow> object, from the <xref:System.Web.UI.HtmlControls.HtmlTableRowCollection> collection. The cells in the row are then updated with new content. Notice that the <xref:System.Web.UI.HtmlControls.HtmlTable.Rows%2A> property of the table is the <xref:System.Web.UI.HtmlControls.HtmlTableRowCollection> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTableRowCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableRowCollection/CS/htmltablerowcollectioncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTableRowCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableRowCollection/VB/htmltablerowcollectionvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTableRowCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableRowCollection/CS/htmltablerowcollectioncs.aspx#1)]
+ [!code-aspx-vb[HtmlTableRowCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableRowCollection/VB/htmltablerowcollectionvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -387,8 +387,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTableRowCollection.Remove%2A> method to remove the specified table row, represented by an <xref:System.Web.UI.HtmlControls.HtmlTableRow> object, from the <xref:System.Web.UI.HtmlControls.HtmlTableRowCollection> collection. This example removes the cells from the first row of the <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTableRowCollectionRemove#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableRowCollectionRemove/CS/htmltablerowcollectionremovecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTableRowCollectionRemove#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableRowCollectionRemove/VB/htmltablerowcollectionremovevb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTableRowCollectionRemove#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableRowCollectionRemove/CS/htmltablerowcollectionremovecs.aspx#1)]
+ [!code-aspx-vb[HtmlTableRowCollectionRemove#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableRowCollectionRemove/VB/htmltablerowcollectionremovevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -426,8 +426,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTableRowCollection.RemoveAt%2A> method to remove the item at the specified index from the <xref:System.Web.UI.HtmlControls.HtmlTableRowCollection> collection. This example removes the first row of the <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTableRowCollectionRemoveAt#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableRowCollectionRemoveAt/CS/htmltablerowcollectionremoveatcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTableRowCollectionRemoveAt#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableRowCollectionRemoveAt/VB/htmltablerowcollectionremoveatvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTableRowCollectionRemoveAt#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableRowCollectionRemoveAt/CS/htmltablerowcollectionremoveatcs.aspx#1)]
+ [!code-aspx-vb[HtmlTableRowCollectionRemoveAt#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableRowCollectionRemoveAt/VB/htmltablerowcollectionremoveatvb.aspx#1)]  
   
  ]]></format>
         </remarks>

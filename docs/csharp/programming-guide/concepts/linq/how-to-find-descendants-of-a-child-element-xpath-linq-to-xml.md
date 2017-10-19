@@ -1,7 +1,7 @@
 ---
 title: "How to: Find Descendants of a Child Element (XPath-LINQ to XML) (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: 505b7512-bb8b-4f85-abbf-491f039c961e
 caps.latest.revision: 3
 author: "BillWagner"

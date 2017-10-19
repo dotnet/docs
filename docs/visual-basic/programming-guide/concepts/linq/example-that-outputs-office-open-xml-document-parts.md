@@ -1,7 +1,7 @@
 ---
 title: "Example that Outputs Office Open XML Document Parts (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 ms.assetid: a951925b-c985-48ed-b215-2a68b58f1ae5
 caps.latest.revision: 3
 author: dotnet-bot

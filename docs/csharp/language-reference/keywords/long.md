@@ -1,6 +1,6 @@
 ---
 title: "long (C# Reference)"
-ms.date: "2017-03-14"
+ms.date: 03/14/2017
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -8,28 +8,12 @@ ms.topic: "article"
 f1_keywords: 
   - "long_CSharpKeyword"
   - "long"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "long keyword [C#]"
 ms.assetid: f9b24319-1f39-48be-a42b-d528ee28a7fd
 caps.latest.revision: 17
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # long (C# Reference)
 

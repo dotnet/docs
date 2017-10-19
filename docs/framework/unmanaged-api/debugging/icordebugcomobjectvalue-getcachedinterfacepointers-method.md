@@ -15,8 +15,6 @@ api_location:
   - "mscordbi.dll"
 f1_keywords: 
   - "ICorDebugComObjectValue::GetCachedInterfacePointers"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugComObjectValue::GetCachedInterfacePointers method [.NET Framework debugging]"
   - "GetCachedInterfacePointers method, ICorDebugComObjectValue interface [.NET Framework debugging]"

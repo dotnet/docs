@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedReaderSymbolSearchInfo"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedReaderSymbolSearchInfo interface [.NET Framework debugging]"
 ms.assetid: fde7e21d-1169-4bed-a34d-792e69652bf9

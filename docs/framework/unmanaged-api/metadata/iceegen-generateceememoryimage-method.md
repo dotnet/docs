@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICeeGen::GenerateCeeMemoryImage"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICeeGen::GenerateCeeMemoryImage method [.NET Framework metadata]"
   - "GenerateCeeMemoryImage method [.NET Framework metadata]"

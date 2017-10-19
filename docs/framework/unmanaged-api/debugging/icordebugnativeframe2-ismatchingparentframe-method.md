@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugNativeFrame2::IsMatchingParentFrame"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IsMatchingParentFrame method [.NET Framework debugging]"
   - "ICorDebugNativeFrame2::IsMatchingParentFrame method [.NET Framework debugging]"

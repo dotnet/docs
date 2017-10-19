@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedNamespace::GetName"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedNamespace::GetName method [.NET Framework debugging]"
   - "GetName method, ISymUnmanagedNamespace interface [.NET Framework debugging]"

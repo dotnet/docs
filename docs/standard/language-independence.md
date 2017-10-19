@@ -6,6 +6,9 @@ author: dotnet-bot
 ms.author: dotnetcontent
 ms.date: 07/22/2016
 ms.topic: article
+dev_langs:
+- "csharp"
+- "vb"
 ms.prod: .net
 ms.technology: dotnet-standard
 ms.devlang: dotnet

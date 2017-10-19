@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorRuntimeHost::EnumDomains"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorRuntimeHost::EnumDomains method [.NET Framework hosting]"
   - "EnumDomains method [.NET Framework hosting]"

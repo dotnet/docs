@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRStrongName::StrongNameTokenFromPublicKey"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRStrongName::StrongNameTokenFromPublicKey method [.NET Framework hosting]"
   - "StrongNameTokenFromPublicKey method, ICLRStrongName interface [.NET Framework hosting]"

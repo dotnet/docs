@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugProcess5::EnumerateGCReferences"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "EnumerateGCReferences method, ICorDebugProcess5 interface [.NET Framework debugging]"
   - "ICorDebugProcess5::EnumerateGCReferences method [.NET Framework debugging]"

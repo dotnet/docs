@@ -1,7 +1,7 @@
 ---
 title: "Comparison of XPath and LINQ to XML2"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: 87d361b1-daa9-4fd4-a53a-cbfa40111ad3
 caps.latest.revision: 3
 author: "BillWagner"

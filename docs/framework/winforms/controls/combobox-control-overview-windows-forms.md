@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "ComboBox"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "drop-down lists, Windows Forms"
   - "ComboBox control [Windows Forms], about ComboBox control"

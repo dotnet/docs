@@ -1,7 +1,7 @@
 ---
 title: "How to: Join Two Collections (LINQ to XML) (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: 7b817ede-911a-4cff-9dd3-639c3fc228c9
 caps.latest.revision: 3
 author: "BillWagner"

@@ -24,13 +24,10 @@ Represents a configuration section for defining routing tables that contain mapp
   
 ## Syntax  
   
-```vb  
+```xml
    <routing>      <filterTables>        <filterTable name="String">          <entries>            <add backupList="String"                 endpointName="String"                  filterName="String"                  priority="Integer" />          </entries>        </table>      </routingTables></routing>  
-```  
-  
-```csharp  
-```  
-  
+```
+
 ## Attributes and Elements  
  The following sections describe attributes, child elements, and parent elements.  
   

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "GetAssemblyInfo Method"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetAssemblyInfo method [.NET Framework profiling]"
   - "ICorProfilerInfo::GetAssemblyInfo method [.NET Framework profiling]"

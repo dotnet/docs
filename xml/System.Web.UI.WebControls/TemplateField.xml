@@ -50,8 +50,8 @@
 ## Examples  
  The following code example demonstrates how to create a custom <xref:System.Web.UI.WebControls.TemplateField> object that displays two fields in the same cell. The first name and last name fields are combined into the same <xref:System.Web.UI.WebControls.TemplateField> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[TemplateField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateField/CS/templatefieldcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TemplateField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateField/VB/templatefieldvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TemplateField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateField/CS/templatefieldcs.aspx#1)]
+ [!code-aspx-vb[TemplateField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateField/VB/templatefieldvb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -85,8 +85,8 @@
 ## Examples  
  The following code example demonstrates how to use the constructor to dynamically add a <xref:System.Web.UI.WebControls.TemplateField> field column to a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[TemplateFieldCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateFieldCtor/CS/templatefieldctorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TemplateFieldCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateFieldCtor/VB/templatefieldctorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TemplateFieldCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateFieldCtor/CS/templatefieldctorcs.aspx#1)]
+ [!code-aspx-vb[TemplateFieldCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateFieldCtor/VB/templatefieldctorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -139,8 +139,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TemplateField.AlternatingItemTemplate%2A> property to create a custom template for the alternating items in a <xref:System.Web.UI.WebControls.TemplateField> field column of a <xref:System.Web.UI.WebControls.GridView> control. The template is a variation of the template specified by the <xref:System.Web.UI.WebControls.TemplateField.ItemTemplate%2A> property, where an image is displayed on the opposite side of the cell.  
   
- <!-- TODO: review snippet reference [!code-csharp[TemplateFieldAlternatingItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateFieldAlternatingItemTemplate/CS/templatefieldalternatingitemtemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TemplateFieldAlternatingItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateFieldAlternatingItemTemplate/VB/templatefieldalternatingitemtemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[TemplateFieldAlternatingItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateFieldAlternatingItemTemplate/CS/templatefieldalternatingitemtemplatecs.aspx#1)]
+ [!code-aspx-vb[TemplateFieldAlternatingItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateFieldAlternatingItemTemplate/VB/templatefieldalternatingitemtemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -283,8 +283,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TemplateField.EditItemTemplate%2A> property to create a custom template for an item in edit mode in a <xref:System.Web.UI.WebControls.TemplateField> field column of a <xref:System.Web.UI.WebControls.GridView> control. The template contains validation server controls to prevent a user from leaving a value field empty.  
   
- <!-- TODO: review snippet reference [!code-csharp[TemplateFieldEditItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateFieldEditItemTemplate/CS/templatefieldedititemtemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TemplateFieldEditItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateFieldEditItemTemplate/VB/templatefieldedititemtemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[TemplateFieldEditItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateFieldEditItemTemplate/CS/templatefieldedititemtemplatecs.aspx#1)]
+ [!code-aspx-vb[TemplateFieldEditItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateFieldEditItemTemplate/VB/templatefieldedititemtemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -369,8 +369,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TemplateField.FooterTemplate%2A> property to create a custom template for the footer section of a <xref:System.Web.UI.WebControls.TemplateField> field column in a <xref:System.Web.UI.WebControls.GridView> control. The template displays the sum of the values in the <xref:System.Web.UI.WebControls.TemplateField> field column.  
   
- <!-- TODO: review snippet reference [!code-csharp[TemplateFieldFooterTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateFieldFooterTemplate/CS/templatefieldfootertemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TemplateFieldFooterTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateFieldFooterTemplate/VB/templatefieldfootertemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[TemplateFieldFooterTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateFieldFooterTemplate/CS/templatefieldfootertemplatecs.aspx#1)]
+ [!code-aspx-vb[TemplateFieldFooterTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateFieldFooterTemplate/VB/templatefieldfootertemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -420,8 +420,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TemplateField.HeaderTemplate%2A> property to create a custom template for the header section of a <xref:System.Web.UI.WebControls.TemplateField> field column in a <xref:System.Web.UI.WebControls.GridView> control. The template displays a check box that allows the user to show or hide the rows of the <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[TemplateFieldHeaderTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateFieldHeaderTemplate/CS/templatefieldheadertemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TemplateFieldHeaderTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateFieldHeaderTemplate/VB/templatefieldheadertemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[TemplateFieldHeaderTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateFieldHeaderTemplate/CS/templatefieldheadertemplatecs.aspx#1)]
+ [!code-aspx-vb[TemplateFieldHeaderTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateFieldHeaderTemplate/VB/templatefieldheadertemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -508,8 +508,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TemplateField.InsertItemTemplate%2A> property to create a custom template for an item in insert mode in a <xref:System.Web.UI.WebControls.TemplateField> field row in a <xref:System.Web.UI.WebControls.DetailsView> control. The template displays a <xref:System.Web.UI.WebControls.DropDownList> control that allows the user to select a value from a predefined list.  
   
- <!-- TODO: review snippet reference [!code-csharp[TemplateFieldInsertItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateFieldInsertItemTemplate/CS/templatefieldinsertitemtemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TemplateFieldInsertItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateFieldInsertItemTemplate/VB/templatefieldinsertitemtemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[TemplateFieldInsertItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateFieldInsertItemTemplate/CS/templatefieldinsertitemtemplatecs.aspx#1)]
+ [!code-aspx-vb[TemplateFieldInsertItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateFieldInsertItemTemplate/VB/templatefieldinsertitemtemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -562,8 +562,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TemplateField.ItemTemplate%2A> property to create a custom template for the items of a <xref:System.Web.UI.WebControls.TemplateField> field in a <xref:System.Web.UI.WebControls.GridView> control. The template displays the field's value in a <xref:System.Web.UI.WebControls.RadioButtonList> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[TemplateFieldItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateFieldItemTemplate/CS/templatefielditemtemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TemplateFieldItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateFieldItemTemplate/VB/templatefielditemtemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[TemplateFieldItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateFieldItemTemplate/CS/templatefielditemtemplatecs.aspx#1)]
+ [!code-aspx-vb[TemplateFieldItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateFieldItemTemplate/VB/templatefielditemtemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>

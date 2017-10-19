@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "MaskedTextBox"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "MaskedTextBox control [Windows Forms]"
   - "user input, validating in Windows Forms"

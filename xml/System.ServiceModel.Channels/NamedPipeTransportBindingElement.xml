@@ -98,6 +98,24 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="AllowedSecurityIdentifiers">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.Security.Principal.SecurityIdentifier&gt; AllowedSecurityIdentifiers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.Security.Principal.SecurityIdentifier&gt; AllowedSecurityIdentifiers" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.NamedPipeTransportBindingElement.AllowedSecurityIdentifiers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Security.Principal.SecurityIdentifier&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="BuildChannelFactory&lt;TChannel&gt;">
       <MemberSignature Language="C#" Value="public override System.ServiceModel.Channels.IChannelFactory&lt;TChannel&gt; BuildChannelFactory&lt;TChannel&gt; (System.ServiceModel.Channels.BindingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ServiceModel.Channels.IChannelFactory`1&lt;!!TChannel&gt; BuildChannelFactory&lt;TChannel&gt;(class System.ServiceModel.Channels.BindingContext context) cil managed" />

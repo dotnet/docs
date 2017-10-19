@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLROnEventManager::UnregisterActionOnEvent"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "UnRegisterActionOnEvent method [.NET Framework hosting]"
   - "ICLROnEventManager::UnRegisterActionOnEvent method [.NET Framework hosting]"

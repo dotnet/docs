@@ -174,7 +174,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Security.EncryptionPolicy> property can require, allow, or prevent encryption. The <xref:System.Net.Security.EncryptionPolicy> will be applied to an SSL/TLS session. The use of the Null cipher is required when the encryption policy is set to <xref:System.Net.Security.EncryptionPolicy?displayProperty=nameWithType>.  
+ The <xref:System.Net.Security.EncryptionPolicy> property can require, allow, or prevent encryption. The <xref:System.Net.Security.EncryptionPolicy> will be applied to an SSL/TLS session. The use of the Null cipher is required when the encryption policy is set to <xref:System.Net.Security.EncryptionPolicy.NoEncryption?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

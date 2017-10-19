@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedDocument::GetURL"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetURL method [.NET Framework debugging]"
   - "ISymUnmanagedDocument::GetURL method [.NET Framework debugging]"

@@ -19,7 +19,7 @@ manager: "wpickett"
 ---
 # Exception class and properties
 
-The <xref:System.Exception> class is the base class from which exceptions inherit. For example, the <xref:System.InvalidCastException class hierarchy is as follows:
+The <xref:System.Exception> class is the base class from which exceptions inherit. For example, the <xref:System.InvalidCastException> class hierarchy is as follows:
 
 ```
 Object
@@ -41,7 +41,7 @@ The <xref:System.Exception> class has the following properties that help make un
 
 Most of the classes that inherit from <xref:System.Exception> do not implement additional members or provide additional functionality; they simply inherit from <xref:System.Exception>. Therefore, the most important information for an exception can be found in the hierarchy of exception classes, the exception name, and the information contained in the exception.
 
-It is recommended to throw and catch only objects that derive from <xref:System.Exception>, but you can throw any object that derives from the <xref:System.Object> class as an exception. Note that not all languages support throwing and catching objects that do not derive from <xref:System.Exception>.
+We recommend that you throw and catch only objects that derive from <xref:System.Exception>, but you can throw any object that derives from the <xref:System.Object> class as an exception. Note that not all languages support throwing and catching objects that do not derive from <xref:System.Exception>.
   
 ## See Also  
 [Exceptions](index.md)

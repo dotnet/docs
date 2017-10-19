@@ -471,7 +471,7 @@ method parses a string and creates a <xref:System.DateTime> object using a provi
 metadata to the `DateTime` using a `CultureInfo` object. If the parse operation fails, the
 property accessor throws an exception.
 
-To use <xref:System.Globalization.CultureInfo.InvariantCulture>, you will need to add the <xref:System.Globalization namespace to the `using` statements 
+To use <xref:System.Globalization.CultureInfo.InvariantCulture>, you will need to add the <xref:System.Globalization> namespace to the `using` statements 
 in `repo.cs`:
 
 ```csharp

@@ -184,7 +184,7 @@ End Class
   
 -   <xref:System.Collections.Concurrent> classes  
   
--   <xref:System.Collections classes>  
+-   <xref:System.Collections> classes  
   
 -   Visual Basic `Collection` class  
   

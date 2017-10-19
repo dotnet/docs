@@ -162,7 +162,7 @@ Using tuples in this way offers several advantages:
 
 * You save the work of authoring a `class` or a `struct` that defines the type returned. 
 * You do not need to create new type.
-* The language enhancements removes the need to call the <xref:System.Tuple.Create``1(``0)>> methods.
+* The language enhancements removes the need to call the <xref:System.Tuple.Create``1(``0)> methods.
 
 The declaration for the method provides the names for the fields of the
 tuple that is returned. When you call the method, the return value is a 

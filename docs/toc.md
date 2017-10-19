@@ -100,7 +100,7 @@
 ### [F# unit testing with dotnet test and xUnit]()
 ### [F# unit testing with dotnet test and MSTest]()
 ### [Running selective unit tests](core/testing/selective-unit-tests.md)
-### [Live unit testing .NET Core projects with Visual Studio]()
+### [Live unit testing .NET Core projects with Visual Studio](/visualstudio/test/live-unit-testing-start)
 ## [Versioning](core/versions/index.md)
 ### [.NET Core Support](core/versions/lts-current.md)
 <!--### [🔧 Servicing](core/versions/servicing.md)-->

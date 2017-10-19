@@ -27,11 +27,11 @@ The `using static` directive was introduced in C# 6.
 
 ## Remarks
  
-Ordinarily, when you call a static member, you provide the type name along with the member name. Repeatedly entering the same type name to invoke members of the type can result in verbose, obscure code. For example, the following definition of a `Circle` class references a number of members of the @System.Math class.
+Ordinarily, when you call a static member, you provide the type name along with the member name. Repeatedly entering the same type name to invoke members of the type can result in verbose, obscure code. For example, the following definition of a `Circle` class references a number of members of the <xref:System.Math> class.
   
 [!code-cs[using-static#1](../../../../samples/snippets/csharp/language-reference/keywords/using/using-static1.cs#1)]
 
-By eliminating the need to explicitly reference the @System.Math class each time a member is referenced, the `using static` directive produces much cleaner code:
+By eliminating the need to explicitly reference the <xref:System.Math> class each time a member is referenced, the `using static` directive produces much cleaner code:
 
 [!code-cs[using-static#2](../../../../samples/snippets/csharp/language-reference/keywords/using/using-static2.cs#1)]
 
@@ -43,11 +43,11 @@ By eliminating the need to explicitly reference the @System.Math class each time
   
 ## Example
 
-The following example uses the `using static` directive to make the static members of the @System.Console, @System.Math, and @System.String classes available without having to specify their type name.
+The following example uses the `using static` directive to make the static members of the <xref:System.Console>, <xref:System.Math>, and <xref:System.String> classes available without having to specify their type name.
 
 [!code-cs[using-static#3](../../../../samples/snippets/csharp/language-reference/keywords/using/using-static3.cs)]
 
-In the example, the `using static` directive could also have been applied to the @System.Double type. This would have made it possible to call the @System.Double.TryParse(System.String,System.Double@) method without specifying a type name. However, this creates less readable code, since it becomes necessary to check the `using static` statements to determine which numeric type's `TryParse` method is called.
+In the example, the `using static` directive could also have been applied to the <xref:System.Double> type. This would have made it possible to call the <xref:System.Double.TryParse(System.String,System.Double@)> method without specifying a type name. However, this creates less readable code, since it becomes necessary to check the `using static` statements to determine which numeric type's `TryParse` method is called.
 
 ## See also
 

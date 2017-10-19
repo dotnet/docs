@@ -2,7 +2,7 @@
 title: Test Published Output with dotnet vstest
 description: Learn how to run tests on published output with the dotnet vstest command.
 keywords: MSTest, .NET, .NET Core, xUnit, test, published, output, test after publishing, run tests on dll
-author: kehavens
+author: kendrahavens
 ms.author: kehavens
 ms.date: 10/18/2017
 ms.topic: article
@@ -29,3 +29,7 @@ dotnet vstest out/MyProject.Tests.dll
 ```
 
 > [!NOTE] Note: If your app is targeting a framework other than `netcoreapp` you can still run the `dotnet vstest` command by passing in the targeted framework with a framework flag. For example, `dotnet vstest <MyPublishedTests>.dll  --Framework:".NETFramework,Version=v4.6"`. In Visual Studio 2017 Update 5 the desired framework is automatically detected.
+
+### Related Topics
+- [Unit Testing with dotnet test and xUnit](unit-testing-with-dotnet-test.md)
+- [Unit Testing with dotnet test and MSTest](unit-testing-with-mstest.md)

@@ -1,6 +1,6 @@
 ---
 title: "Interpolated Strings (C#)"
-ms.date: "09/27/2017"
+ms.date: "10/18/2017"
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -17,12 +17,12 @@ Used to construct strings.  An interpolated string looks like a template string 
 The arguments of an interpolated string are easier to understand than a [composite format string](../../../standard/base-types/composite-formatting.md#composite-format-string).  For example, the interpolated string  
   
 ```csharp  
-Console.WriteLine($"Name = {name}, hours = {date:hh}"); 
+Console.WriteLine($"Name = {name}, hours = {hours:hh}");
 ```  
-contains two interpolated expressions, '{name}' and '{date:hh}'. The equivalent composite format string is:
+contains two interpolated expressions, '{name}' and '{hour:hh}'. The equivalent composite format string is:
 
 ```csharp
-Console.WriteLine("Name = {0}, hours = {1:hh}", name, date);  
+Console.WriteLine("Name = {0}, hours = {1:hh}", name, hours); 
 ```  
 
 The structure of an interpolated string is:  
@@ -48,7 +48,7 @@ If the interpolated string contains other characters with special meaning in an 
 
 [!code-cs[interpolated-strings4](../../../../samples/snippets/csharp/language-reference/keywords/interpolated-strings4.cs#1)]  
 
-Verbatim interpolated strings use the `$` character followed by the `@` character. For more information about verbatim strings, see the [string](strings.md) topic. The following code is a modified version of the previous snippet using a verbatim interpolated string:
+Verbatim interpolated strings use the `$` character followed by the `@` character. For more information about verbatim strings, see the [string](string.md) topic. The following code is a modified version of the previous snippet using a verbatim interpolated string:
 
 [!code-cs[interpolated-strings4](../../../../samples/snippets/csharp/language-reference/keywords/interpolated-strings5.cs#1)]  
 

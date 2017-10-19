@@ -9,25 +9,19 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "PrintTicket class"
-  - "classes, PrintCapabilities"
-  - "classes, PrintQueue"
-  - "classes, PrintTicket"
-  - "print path, XPS"
-  - "classes, PrintServer"
-  - "printers, XPSDrv-based"
-  - "printing"
-  - "PrintQueue class PrintServer class"
+  - "print path [WPF], XPS"
+  - "printers [WPF], XPSDrv-based"
+  - "printing [WPF]"
+  - "PrintQueue class PrintServer class [WPF]"
   - "XML Paper Specification (XPS) file format"
   - "XPS (XML Paper Specification) file format"
   - "XPSDrv-based printers"
-  - "PrintCapabilities class"
-  - "GDI print path"
+  - "GDI print path [WPF]"
 ms.assetid: 0de8ac41-9aa6-413d-a121-7aa6f41539b1
 caps.latest.revision: 35
 author: dotnet-bot

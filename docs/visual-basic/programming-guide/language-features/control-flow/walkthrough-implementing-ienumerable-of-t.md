@@ -11,8 +11,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "control flow [Visual Basic]"
   - "enumerable interfaces"
-  - "loop structures, optimizing performance"
-  - "control flow"
+  - "loop structures [Visual Basic], optimizing performance"
+  - "control flow [Visual Basic]"
 ms.assetid: c60d7589-51f2-4463-a2d5-22506bbc1554
 caps.latest.revision: 15
 author: dotnet-bot

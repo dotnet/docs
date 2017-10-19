@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "data grids, customizing rows"
+  - "data grids [Windows Forms], customizing rows"
   - "DataGridView control [Windows Forms], customizing rows"
 ms.assetid: 6db61607-7e57-4a84-8d63-9d6a7ed7f9ff
 caps.latest.revision: 13

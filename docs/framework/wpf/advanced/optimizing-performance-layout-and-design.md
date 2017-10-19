@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "layout, optimizing performance"
-  - "design considerations"
-  - "layout pass"
+  - "layout [WPF], optimizing performance"
+  - "design considerations [WPF]"
+  - "layout pass [WPF]"
 ms.assetid: 005f4cda-a849-448b-916b-38d14d9a96fe
 caps.latest.revision: 8
 author: dotnet-bot

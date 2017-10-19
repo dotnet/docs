@@ -9,14 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "documents, flow documents"
-  - "content schema"
-  - "flow content elements [WPF], flow documents"
-  - "flow documents"
+  - "documents [WPF], flow documents [WPF], , "
+  - ", "
+  - "flow documents [WPF]"
 ms.assetid: ef236a50-d44f-43c8-ba7c-82b0c733c0b7
 caps.latest.revision: 39
 author: dotnet-bot

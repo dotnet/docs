@@ -9,8 +9,8 @@ ms.technology:
 ms.topic: "article"
 helpviewer_keywords: 
   - "data types [Visual Basic], operator result data types"
-  - "result data types"
-  - "operator result data types"
+  - "result data types [Visual Basic]"
+  - "operator result data types [Visual Basic]"
   - "operators [Visual Basic], data types"
   - "data types [Visual Basic], ranges"
   - "operators [Visual Basic], result data types"

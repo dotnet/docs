@@ -9,16 +9,16 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "ComboBox control [Windows Forms], accessing items"
   - "ListBox control [Windows Forms], returning item information"
-  - "list boxes, accessing items"
+  - "list boxes [Windows Forms], accessing items"
   - "ListBox control [Windows Forms], accessing items"
-  - "combo boxes, accessing items"
+  - "combo boxes [Windows Forms], accessing items"
   - "CheckedListBox control [Windows Forms], accessing items"
 ms.assetid: 1216742f-bcf9-4ff8-8a62-d7c9053c2b96
 caps.latest.revision: 13

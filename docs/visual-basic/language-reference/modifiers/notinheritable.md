@@ -11,13 +11,13 @@ f1_keywords:
   - "vb.NotInheritable"
 helpviewer_keywords: 
   - "classes [Visual Basic], final"
-  - "NotInheritable keyword"
+  - "NotInheritable keyword [Visual Basic]"
   - "classes [Visual Basic], sealed"
-  - "elements, sealed"
-  - "sealed elements"
-  - "inheritance, NotInheritable keyword"
-  - "final classes"
-  - "sealed classes"
+  - "elements [Visual Basic], sealed"
+  - "sealed [elements VB]"
+  - "inheritance [Visual Basic], NotInheritable keyword"
+  - "final classes [Visual Basic]"
+  - "sealed classes [Visual Basic]"
   - "classes [Visual Basic], not inheritable"
 ms.assetid: 5c4da7c9-9562-4653-a947-1972e992f9f9
 caps.latest.revision: 9

@@ -9,18 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "custom-rendering ink"
-  - "classes, Stroke"
-  - "classes, DynamicRenderer"
-  - "ink, custom-rendering"
-  - "InkCanvas class"
-  - "Stroke class"
-  - "DynamicRenderer class"
-  - "classes, InkCanvas"
+  - "ink [WPF], custom-rendering"
+  - "classes [WPF], InkCanvas"
 ms.assetid: 65c978a7-0ee0-454f-ac7f-b1bd2efecac5
 caps.latest.revision: 10
 author: dotnet-bot

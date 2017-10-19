@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "quotation marks"
   - "TextBox control [Windows Forms], displaying quotation marks"
-  - "quotation marks, adding to strings in text boxes"
+  - "quotation marks [Windows Forms], adding to strings in text boxes"
 ms.assetid: 68bdc3f3-4177-4eab-99cd-cac17a82b515
 caps.latest.revision: 14
 author: dotnet-bot

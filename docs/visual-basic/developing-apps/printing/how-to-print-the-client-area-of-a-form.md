@@ -7,7 +7,7 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "client area, printing"
+  - "client area [Visual Basic], printing"
 ms.assetid: c06c9c0e-bc07-48cd-9596-e29a2ff96236
 caps.latest.revision: 15
 author: dotnet-bot

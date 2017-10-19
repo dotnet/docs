@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "menu items, standard"
+  - "menu items [Windows Forms], standard"
   - "toolbars [Windows Forms], walkthroughs"
   - "StatusStrip control [Windows Forms]"
   - "ToolStrip control [Windows Forms]"

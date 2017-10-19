@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "graphics, rotating objects"
-  - "rotating objects"
+  - "graphics [WPF], rotating objects [WPF]"
+  - "rotating objects [WPF]"
 ms.assetid: ee3466cd-e66f-4e8f-8a5a-71d77bc1e390
 caps.latest.revision: 15
 author: dotnet-bot

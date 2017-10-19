@@ -10,11 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "data binding, binding to methods using ObjectDataProvider"
-  - "binding, to methods"
-  - "ObjectDataProvider class"
-  - "classes, ObjectDataProvider"
-  - "methods, binding to"
+  - "data binding [WPF], binding to methods using ObjectDataProvider"
+  - "binding [WPF], to methods"
+  - "methods [WPF], binding to"
 ms.assetid: 5f55e71e-2182-42a0-88d1-700cc1427a7a
 caps.latest.revision: 10
 author: dotnet-bot

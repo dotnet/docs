@@ -12,7 +12,7 @@ ms.topic: "article"
 f1_keywords: 
   - "GridSize"
 helpviewer_keywords: 
-  - "snap to grid, Windows Forms Designer"
+  - "snap to grid [Windows Forms], Windows Forms Designer"
   - "Windows Forms, grid options in designer"
   - "controls [Windows Forms], aligning"
 ms.assetid: bb54bce5-880f-4a36-af68-8cf92058dc1c

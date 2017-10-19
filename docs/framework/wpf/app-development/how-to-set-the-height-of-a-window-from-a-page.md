@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "windows, setting height from a page"
-  - "pages, setting window height from"
-  - "height of window, setting from a page"
+  - "windows [WPF], setting height from a page"
+  - "pages [WPF], setting window height from"
+  - "height of window [WPF], setting from a page"
 ms.assetid: 4e4488ff-ab5c-4ee9-81a4-e1addb55c5cc
 caps.latest.revision: 4
 author: dotnet-bot

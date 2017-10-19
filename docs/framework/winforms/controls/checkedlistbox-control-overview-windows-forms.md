@@ -14,7 +14,7 @@ f1_keywords:
 helpviewer_keywords: 
   - "CheckedListBox control [Windows Forms], about CheckedListBox control"
   - "check marks"
-  - "list boxes, about list boxes"
+  - "list boxes [Windows Forms], about list boxes"
 ms.assetid: e6cff3ce-e2ba-458e-851f-299e8e9c8abf
 caps.latest.revision: 10
 author: dotnet-bot

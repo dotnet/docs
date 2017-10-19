@@ -9,17 +9,17 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "text boxes, setting indents"
-  - ".rtf files, formatting in RichTextBox control"
+  - "text boxes [Windows Forms], setting indents"
+  - ".rtf files [Windows Forms], formatting in RichTextBox control"
   - "examples [Windows Forms], text boxes"
-  - "RTF files, formatting in RichTextBox control"
+  - "RTF files [Windows Forms], formatting in RichTextBox control"
   - "RichTextBox control [Windows Forms], setting indents and bullets"
-  - "text boxes, bullets"
+  - "text boxes [Windows Forms], bullets"
 ms.assetid: abfb40e6-5642-4691-8ec1-9d9ae91688dc
 caps.latest.revision: 12
 author: dotnet-bot

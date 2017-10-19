@@ -9,11 +9,11 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "procedure parameters, defining data types for"
-  - "procedures, parameters"
-  - "procedures, defining"
+  - "procedure parameters [Visual Basic], defining data types for"
+  - "procedures [Visual Basic], parameters"
+  - "procedures [Visual Basic], defining"
   - "Visual Basic code, procedures"
-  - "procedure parameters, defining"
+  - "procedure parameters [Visual Basic], defining"
 ms.assetid: 7962808d-407e-4e84-984e-43e9857c53c9
 caps.latest.revision: 15
 author: dotnet-bot

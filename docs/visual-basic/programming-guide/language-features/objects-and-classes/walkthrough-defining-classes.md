@@ -9,18 +9,18 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "execution, ending"
+  - "execution [Visual Basic], ending"
   - "objects [Visual Basic], initializing"
-  - "Initialize event"
-  - "files, closing"
-  - "programs, quitting"
+  - "Initialize event [Visual Basic]"
+  - "files [Visual Basic], closing"
+  - "programs [Visual Basic], quitting"
   - "code, exiting"
   - "objects [Visual Basic], creating"
   - "program termination"
   - "classes [Visual Basic], walkthroughs"
   - "class modules, walkthroughs"
-  - "Terminate event"
-  - "execution, stopping"
+  - "Terminate event [Visual Basic]"
+  - "execution [Visual Basic], stopping"
 ms.assetid: 07018828-2d49-4cf5-a44b-19fb15d9efea
 caps.latest.revision: 21
 author: dotnet-bot

@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "lists, selecting items"
+  - "lists [Windows Forms], selecting items"
   - "ListView control [Windows Forms], selecting items"
-  - "selection, in list views"
-  - "list views, selecting items"
+  - "selection [Windows Forms], in list views"
+  - "list views [Windows Forms], selecting items"
 ms.assetid: ddea918e-1ddf-47f4-bd09-1e9b4c9d0c39
 caps.latest.revision: 7
 author: dotnet-bot

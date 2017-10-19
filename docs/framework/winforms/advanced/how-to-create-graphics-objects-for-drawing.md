@@ -9,13 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "graphics [Windows Forms], creating"
-  - "Graphics class"
   - "images [Windows Forms], creating"
   - "GDI+, creating images"
 ms.assetid: 162861f9-f050-445e-8abb-b2c43a918b8b

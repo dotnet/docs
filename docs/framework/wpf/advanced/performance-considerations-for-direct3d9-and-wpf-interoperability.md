@@ -10,7 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "WPF, Direct3D9 interop performance"
+  - "WPF [WPF], Direct3D9 interop performance"
   - "Direct3D9 [WPF interoperability], performance"
 ms.assetid: ea8baf91-12fe-4b44-ac4d-477110ab14dd
 caps.latest.revision: 19

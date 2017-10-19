@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "StatusStrip control [Windows Forms]"
   - "ToolStrip control [Windows Forms]"
-  - "status bars, examples"
+  - "status bars [Windows Forms], examples"
   - "Spring property [Windows Forms]"
 ms.assetid: 18bde842-a93c-48dd-9db3-15738a1775ce
 caps.latest.revision: 9

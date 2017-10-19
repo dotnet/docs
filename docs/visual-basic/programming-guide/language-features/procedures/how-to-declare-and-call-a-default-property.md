@@ -9,10 +9,10 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "defaults, properties"
+  - "defaults [Visual Basic], properties"
   - "properties [Visual Basic], default"
-  - "procedures, defining"
-  - "default properties, in Visual Basic"
+  - "procedures [Visual Basic], defining"
+  - "default properties [Visual Basic], in Visual Basic"
   - "Visual Basic code, procedures"
   - "Visual Basic code, properties"
   - "default properties"

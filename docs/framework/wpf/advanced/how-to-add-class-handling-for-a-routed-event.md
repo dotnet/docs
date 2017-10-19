@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "routed events, class handlers"
-  - "task_core_add_class_handling_routed_event"
-  - "class handlers, routed events"
+  - "routed events [WPF], class handlers"
+  - "task_core_add_class_handling_routed_properties [WPF]"
+  - "class handlers [WPF], routed events"
 ms.assetid: 15b7b06c-9112-4ee5-b30a-65d10c5c5df6
 caps.latest.revision: 9
 author: dotnet-bot

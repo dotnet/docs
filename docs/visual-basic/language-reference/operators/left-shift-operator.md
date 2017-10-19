@@ -10,7 +10,7 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.<<"
 helpviewer_keywords: 
-  - "bit shift operators"
+  - "bit shift operators [Visual Basic]"
   - "<< operator [Visual Basic]"
   - "operator <<, Visual Basic left shift operator"
 ms.assetid: fdb93d25-81ba-417f-b808-41207bfb8440

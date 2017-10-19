@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "controls, Canvas"
-  - "Canvas control, creating"
-  - "Canvas control, using"
+  - "controls [WPF], Canvas"
+  - "Canvas control [WPF], creating"
+  - "Canvas control [WPF], using"
 ms.assetid: 420b9487-9a15-477c-9489-a22a4dec7779
 caps.latest.revision: 12
 author: dotnet-bot

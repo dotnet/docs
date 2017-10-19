@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "binding data, Web service"
-  - "Web service binding"
-  - "data binding, Web service"
+  - "binding data [WPF], Web service"
+  - "Web service binding [WPF]"
+  - "data binding [WPF], Web service"
 ms.assetid: 77e2d373-69ba-4cbd-b6f5-2c83c38fc98b
 caps.latest.revision: 6
 author: dotnet-bot

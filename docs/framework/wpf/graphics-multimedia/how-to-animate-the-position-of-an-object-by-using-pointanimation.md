@@ -9,14 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "PointAnimation class"
   - "graphics [WPF], animation"
-  - "classes, PointAnimation"
-  - "animation, PointAnimation"
+  - "animation [WPF], PointAnimation"
 ms.assetid: 42310977-cc90-438a-8a47-0345898e01be
 caps.latest.revision: 10
 author: dotnet-bot

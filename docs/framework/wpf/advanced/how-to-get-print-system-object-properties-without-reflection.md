@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "PrintSystemObject, getting properties"
+  - "PrintSystemObject [WPF], getting properties"
 ms.assetid: 43560f28-183d-41c1-b9d1-de7c2552273e
 caps.latest.revision: 6
 author: dotnet-bot

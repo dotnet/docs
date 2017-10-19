@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "examples [Windows Forms], TreeView control"
   - "TreeView control [Windows Forms], iterating through nodes"
-  - "tree nodes in TreeView control, iterating through"
+  - "tree nodes in TreeView control [Windows Forms], iterating through"
 ms.assetid: 427f8928-ebcf-4beb-887f-695b905d5134
 caps.latest.revision: 14
 author: dotnet-bot

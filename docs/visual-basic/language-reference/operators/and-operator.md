@@ -13,11 +13,11 @@ helpviewer_keywords:
   - "operators [Visual Basic], bitwise"
   - "logical conjunction"
   - "bitwise AND operator [Visual Basic]"
-  - "conjunction operator"
+  - "conjunction operator [Visual Basic]"
   - "And operator [Visual Basic]"
-  - "bitwise operators, AND operator"
+  - "bitwise operators [Visual Basic], AND operator"
   - "operators [Visual Basic], conjunction"
-  - "bitwise comparison"
+  - "bitwise comparison [Visual Basic]"
 ms.assetid: 2ea711f3-439a-4c7c-9e3a-1ffe3b0d6046
 caps.latest.revision: 12
 author: dotnet-bot

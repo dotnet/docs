@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "inherited forms, creating at run-time"
-  - "inheritance, forms"
+  - "inherited forms [Windows Forms], creating at run-time"
+  - "inheritance [Windows Forms], forms"
   - "Windows Forms, inheritance"
 ms.assetid: cb3e1c0f-3d2a-4cdc-b0d1-c92eae567ffb
 caps.latest.revision: 15

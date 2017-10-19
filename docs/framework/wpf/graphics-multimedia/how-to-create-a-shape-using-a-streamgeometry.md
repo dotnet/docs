@@ -9,14 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "classes, StreamGeometry"
-  - "StreamGeometry class"
   - "graphics [WPF], shapes"
-  - "shapes, creating with StreamGeometry class"
+  - "shapes [WPF], creating with StreamGeometry class"
 ms.assetid: 08f7c8ce-074b-49cd-9aba-cc9592d4ee51
 caps.latest.revision: 9
 author: dotnet-bot

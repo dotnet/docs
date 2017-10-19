@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "ListView controls, grouping items with GridViews"
-  - "grouping items in ListViews implementing GridViews"
-  - "GridView controls, grouping items"
+  - "ListView controls [WPF], grouping items with GridViews"
+  - "grouping items in ListViews implementing GridViews [WPF]"
+  - "GridView controls [WPF], grouping items"
 ms.assetid: eebef25b-ddc6-424e-a66d-ea228d1bf33d
 caps.latest.revision: 11
 author: dotnet-bot

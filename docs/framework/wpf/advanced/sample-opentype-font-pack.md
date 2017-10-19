@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "OpenType font pack"
-  - "fonts, OpenType font pack"
-  - "typography, OpenType font pack"
+  - "OpenType font pack [WPF]"
+  - "fonts [WPF], OpenType font pack"
+  - "typography [WPF], OpenType font pack"
 ms.assetid: 56b46fa1-a44e-419b-8f14-25ad51c715c3
 caps.latest.revision: 23
 author: dotnet-bot

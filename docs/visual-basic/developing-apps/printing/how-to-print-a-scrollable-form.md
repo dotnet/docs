@@ -7,8 +7,8 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "entire form, printing"
-  - "scrollable form, printing"
+  - "entire form [Visual Basic], printing"
+  - "scrollable form [Visual Basic], printing"
 ms.assetid: 1196e1cf-b77f-4928-a3e4-85b51ba3787d
 caps.latest.revision: 15
 author: dotnet-bot

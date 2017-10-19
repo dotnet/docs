@@ -10,10 +10,10 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "ToolStripMenuItems, disabling in designer"
+  - "ToolStripMenuItems [Windows Forms], disabling in designer"
   - "MenuStrip control [Windows Forms], disabling menu items in designer"
-  - "menu items, disabling"
-  - "menus, disabling items"
+  - "menu items [Windows Forms], disabling"
+  - "menus [Windows Forms], disabling items"
 ms.assetid: 985e311e-7d67-4205-b5a3-d045b68a4a03
 caps.latest.revision: 7
 author: dotnet-bot

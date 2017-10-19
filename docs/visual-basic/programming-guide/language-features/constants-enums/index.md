@@ -11,11 +11,11 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "enumerations [Visual Basic]"
   - "Visual Basic code, constants"
-  - "constants"
+  - "constants [Visual Basic]"
   - "object libraries, Object Browser"
   - "Visual Basic code, enumerations"
-  - "declaring constants, enumerations"
-  - "naming conventions, constants"
+  - "declaring constants [Visual Basic], enumerations"
+  - "naming conventions [Visual Basic], constants"
   - "Visual Basic code, improving readability with constants"
 ms.assetid: c8aba36e-fa47-4a33-8b68-cb2009218270
 caps.latest.revision: 16

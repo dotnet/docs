@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "binding data, binding sources"
-  - "data binding, binding source"
-  - "binding sources"
+  - "binding data [WPF], binding sources"
+  - "data binding [WPF], binding source"
+  - "binding sources [WPF]"
 ms.assetid: 2df2cd11-6aac-4bdf-ab7b-ea5f464cd5ca
 caps.latest.revision: 25
 author: dotnet-bot

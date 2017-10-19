@@ -10,9 +10,9 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.Call"
 helpviewer_keywords: 
-  - "procedures, Call statement"
-  - "Call statement"
-  - "procedures, calling"
+  - "procedures [Visual Basic], Call statement"
+  - "Call statement [Visual Basic]"
+  - "procedures [Visual Basic], calling"
 ms.assetid: e5b31571-6867-406f-b8e7-a3f9aae4723a
 caps.latest.revision: 13
 author: dotnet-bot

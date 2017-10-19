@@ -12,9 +12,9 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "Unicode UTF-8 file format"
   - "UTF-8 file format"
-  - "characters, special"
-  - "typography, special characters"
-  - "special characters"
+  - "characters [WPF], special"
+  - "typography [WPF], special characters"
+  - "special characters [WPF]"
 ms.assetid: a57776d1-f353-4794-afa0-bfa3c712ed1c
 caps.latest.revision: 7
 author: dotnet-bot

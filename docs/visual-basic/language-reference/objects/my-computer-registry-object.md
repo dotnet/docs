@@ -7,7 +7,7 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "DeleteSetting function, increasing performance"
+  - "DeleteSetting function [Visual Basic], increasing performance"
   - "My.Computer.Registry object"
 ms.assetid: afd9edf9-ef9b-438b-a390-d71a02dc8203
 caps.latest.revision: 18

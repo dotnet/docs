@@ -9,7 +9,7 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.ModuleAttribute"
 helpviewer_keywords: 
-  - "Module keyword"
+  - "Module keyword [Visual Basic]"
   - "Module modifier"
   - "attribute blocks, Module keyword"
 ms.assetid: d971b940-05ab-4d56-8485-e3b8a661906b

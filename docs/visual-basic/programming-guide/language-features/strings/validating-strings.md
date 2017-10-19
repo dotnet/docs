@@ -13,7 +13,7 @@ helpviewer_keywords:
   - "Visual Basic, strings"
   - "Visual Basic code, strings"
   - "strings [Visual Basic], validating"
-  - "validation, strings"
+  - "validation [Visual Basic], strings"
 ms.assetid: 9a1acf9b-7e2c-40cb-bba4-656ee2bc2ed0
 caps.latest.revision: 15
 author: dotnet-bot

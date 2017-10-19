@@ -9,15 +9,15 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "rendering text"
-  - "hyperlinks"
+  - "rendering text [WPF]"
+  - "hyperlinks [WPF]"
   - "formatted text [WPF]"
-  - "text, performance"
-  - "glyphs"
+  - "text [WPF], performance"
+  - "glyphs [WPF]"
 ms.assetid: 66b1b9a7-8618-48db-b616-c57ea4327b98
 caps.latest.revision: 10
 author: dotnet-bot

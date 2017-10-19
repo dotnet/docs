@@ -11,7 +11,7 @@ f1_keywords:
   - "vb.IfOperator"
   - "IfOperator"
 helpviewer_keywords: 
-  - "ternary operators"
+  - "ternary operators [Visual Basic]"
   - "conditional execution"
   - "If expressions [Visual Basic]"
   - "conditional operator [Visual Basic]"

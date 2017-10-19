@@ -9,16 +9,16 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "Click event, CheckBox control"
+  - "Click event [Windows Forms], CheckBox control"
   - "CheckBox control [Windows Forms], Click events"
   - "events [Windows Forms], Click events"
   - "double-clicks"
-  - "check boxes, responding to events"
+  - "check boxes [Windows Forms], responding to events"
 ms.assetid: c39f901e-8899-43b6-aa31-939cbf7089fb
 caps.latest.revision: 11
 author: dotnet-bot

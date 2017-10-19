@@ -9,15 +9,15 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "ListView control [Windows Forms], displaying icons"
-  - "icons, displaying for ListView controls"
-  - "lists, displaying icons"
+  - "icons [Windows Forms], displaying for ListView controls"
+  - "lists [Windows Forms], displaying icons"
   - "ImageList component [Windows Forms], with ListView control"
-  - "list views, displaying icons"
+  - "list views [Windows Forms], displaying icons"
 ms.assetid: 9d577542-8595-429b-99e5-078770ec9d35
 caps.latest.revision: 15
 author: dotnet-bot

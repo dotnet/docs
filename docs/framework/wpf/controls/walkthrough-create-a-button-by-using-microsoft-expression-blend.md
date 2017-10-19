@@ -10,8 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "buttons"
-  - "converting, shape to button"
+  - "buttons [WPF]"
+  - "converting [WPF], shape to button"
   - "Expression Blend [WPF Designer]"
 ms.assetid: ff5037c2-bba7-4cae-8abb-6475b686c48e
 caps.latest.revision: 13

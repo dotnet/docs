@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "cells, displaying images"
-  - "data grids, displaying in grids"
+  - "cells [Windows Forms], displaying images"
+  - "data grids [Windows Forms], displaying in grids"
   - "DataGridView control [Windows Forms], displaying images"
-  - "data grids, displaying images in cells"
+  - "data grids [Windows Forms], displaying images in cells"
 ms.assetid: 53b13d31-1b56-476d-9ab4-18bfac138a22
 caps.latest.revision: 13
 author: dotnet-bot

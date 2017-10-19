@@ -10,7 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "drag and drop, Windows Forms"
+  - "drag and drop [Windows Forms], Windows Forms"
   - "Windows Forms, drag and drop"
 ms.assetid: 65cd2c03-8782-474e-b958-cbe43eeb902c
 caps.latest.revision: 12

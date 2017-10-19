@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "context menus, for background processes"
-  - "NotifyIcon component, associating shortcut menus"
-  - "shortcut menus, for background processes"
+  - "context menus [Windows Forms], for background processes"
+  - "NotifyIcon component [Windows Forms], associating shortcut menus"
+  - "shortcut menus [Windows Forms], for background processes"
 ms.assetid: d68f3926-08d3-4f7d-949f-1981b29cf188
 caps.latest.revision: 19
 author: dotnet-bot

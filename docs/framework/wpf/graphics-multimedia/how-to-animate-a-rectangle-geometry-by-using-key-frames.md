@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "key frames, animating RectangleGeometry objects with"
-  - "RectangleGeometry objects, animating with key frames"
-  - "animation, RectangleGeometry objects with key frames"
+  - "key frames [WPF], animating RectangleGeometry objects with"
+  - "RectangleGeometry objects [WPF], animating with key frames"
+  - "animation [WPF], RectangleGeometry objects with key frames"
 ms.assetid: a8b45ceb-0e32-4ba1-928f-df6d30db17c6
 caps.latest.revision: 11
 author: dotnet-bot

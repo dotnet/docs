@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "mouse pointer (cursor), cursor type"
+  - "mouse pointer [WPF], cursor type"
   - "cursor (mouse pointer)"
 ms.assetid: 08c945a7-8ab0-4320-acf3-0b4955a344c2
 caps.latest.revision: 14

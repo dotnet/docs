@@ -13,8 +13,8 @@ f1_keywords:
   - "vb.QueryFromLet"
 helpviewer_keywords: 
   - "queries [Visual Basic], From"
-  - "From clause"
-  - "From statement"
+  - "From clause [Visual Basic]"
+  - "From statement [Visual Basic]"
 ms.assetid: 83e3665e-68a0-4540-a3a3-3d777a0f95d5
 caps.latest.revision: 19
 author: dotnet-bot

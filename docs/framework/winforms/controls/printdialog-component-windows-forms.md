@@ -10,7 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "print options, PrintDialog component (using designer)"
+  - "print options [Windows Forms], PrintDialog component (using designer)"
   - "PrintDialog component [Windows Forms]"
   - "Print dialog box (using designer)"
   - "printing [Windows Forms], PrintDialog component (using designer)"

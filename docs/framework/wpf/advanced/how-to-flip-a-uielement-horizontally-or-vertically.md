@@ -10,8 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "flipping UIElements"
-  - "UIElements, flipping"
+  - "flipping UIElements [WPF]"
+  - "UIElements [WPF], flipping"
 ms.assetid: 02c6730f-65c0-40d5-a553-4cb663721882
 caps.latest.revision: 4
 author: dotnet-bot

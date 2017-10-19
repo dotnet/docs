@@ -13,8 +13,8 @@ f1_keywords:
   - "vb.QueryJoinOn"
 helpviewer_keywords: 
   - "queries [Visual Basic], Join"
-  - "Join statement"
-  - "Join clause"
+  - "Join statement [Visual Basic]"
+  - "Join clause [Visual Basic]"
 ms.assetid: 6dd37936-b27c-4e00-98ad-154b23f4de64
 caps.latest.revision: 19
 author: dotnet-bot

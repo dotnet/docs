@@ -9,12 +9,11 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "custom controls [Windows Forms], property methods"
-  - "Reset method"
   - "ShouldPersist method"
 ms.assetid: 7b6c5e00-3771-46b4-9142-5a80d5864a5e
 caps.latest.revision: 11

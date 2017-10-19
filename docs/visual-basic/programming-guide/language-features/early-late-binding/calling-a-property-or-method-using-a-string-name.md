@@ -9,13 +9,13 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "passing operators"
+  - "passing operators [Visual Basic]"
   - "strings [Visual Basic], passing new operators as"
   - "objects [Visual Basic], setting properties"
   - "setting properties, object properties at run time"
-  - "method calls, strings"
+  - "method calls [Visual Basic], strings"
   - "methods [Visual Basic], calling with string names"
-  - "calling methods, string names"
+  - "calling methods [Visual Basic], string names"
   - "properties [Visual Basic], setting at run time"
   - "CallByName function"
 ms.assetid: 79a7b8b4-b8c7-4ad8-aca8-12a9a2b32f03

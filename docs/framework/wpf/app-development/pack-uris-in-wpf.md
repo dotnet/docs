@@ -10,8 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "pack URI scheme"
-  - "loading embedded resources"
+  - "pack URI scheme [WPF]"
+  - "loading embedded resources [WPF]"
   - "URIs (Uniform Resource Identifiers)"
   - "Uniform Resource Identifiers (URIs)"
   - "loading non-resource files"

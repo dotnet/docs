@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "brushes, painting with drawings"
-  - "painting, with drawings"
-  - "drawings, painting with"
+  - "brushes [WPF], painting with drawings"
+  - "painting [WPF], with drawings"
+  - "drawings [WPF], painting with"
 ms.assetid: c10dc4b1-09b1-41e8-ad14-456b5fb377df
 caps.latest.revision: 12
 author: dotnet-bot

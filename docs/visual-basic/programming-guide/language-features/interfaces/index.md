@@ -7,7 +7,7 @@ ms.technology:
 ms.topic: "article"
 helpviewer_keywords: 
   - "Visual Basic code, interfaces"
-  - "interfaces, Visual Basic"
+  - "interfaces [Visual Basic], Visual Basic"
   - "interfaces"
   - "interfaces [Visual Basic]"
 ms.assetid: 61b06674-12c9-430b-be68-cc67ecee1f5b

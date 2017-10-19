@@ -12,13 +12,13 @@ f1_keywords:
 helpviewer_keywords: 
   - "structured exception handling, throw statements"
   - "try-catch exception handling, throw statements"
-  - "throw statement, about throw statements"
+  - "throw statement [Visual Basic], about throw statements"
   - "throwing exceptions, throw statement"
   - "exception handling, throw statement"
-  - "On Error statement, throwing exceptions"
+  - "On Error statement [Visual Basic], throwing exceptions"
   - "throwing exceptions"
   - "exception handling, unstructured"
-  - "throw statement"
+  - "throw statement [Visual Basic]"
 ms.assetid: a6e07406-5c8a-4498-87a2-8339f3651d62
 caps.latest.revision: 15
 author: dotnet-bot

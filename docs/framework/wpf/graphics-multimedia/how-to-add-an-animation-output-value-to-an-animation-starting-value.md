@@ -10,8 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "IsAdditive property"
-  - "animation"
+  - "animation [WPF]"
 ms.assetid: b89a82be-b03d-481e-a8d3-cc513d09ca00
 caps.latest.revision: 13
 author: dotnet-bot

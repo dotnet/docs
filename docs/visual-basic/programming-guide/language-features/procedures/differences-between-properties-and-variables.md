@@ -9,10 +9,10 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "property values"
+  - "property values [Visual Basic]"
   - "variables [Visual Basic]"
   - "Visual Basic code, procedures"
-  - "values, properties"
+  - "values [Visual Basic], properties"
   - "variables [Visual Basic], definition"
   - "Visual Basic code, variables"
   - "Visual Basic code, properties"

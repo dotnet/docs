@@ -12,7 +12,7 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "TypeOf operator [Visual Basic], determining object variable type"
   - "variables [Visual Basic], object"
-  - "object variables, determining type"
+  - "object variables [Visual Basic], determining type"
 ms.assetid: 6f6a138d-58a4-40d1-9f4e-0a3c598eaf81
 caps.latest.revision: 13
 author: dotnet-bot

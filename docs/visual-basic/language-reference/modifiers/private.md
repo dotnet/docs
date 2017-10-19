@@ -9,8 +9,8 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.Private"
 helpviewer_keywords: 
-  - "Private keyword"
-  - "Private keyword, syntax"
+  - "Private keyword [Visual Basic]"
+  - "Private keyword [Visual Basic], syntax"
 ms.assetid: aba74a2e-5824-4613-bf63-b9ec7787f4e6
 caps.latest.revision: 13
 author: dotnet-bot

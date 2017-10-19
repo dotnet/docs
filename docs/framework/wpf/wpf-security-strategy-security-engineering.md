@@ -10,18 +10,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "security, testing techniques"
-  - "Security Development Lifecycle (SDL), security analysis"
+  - "security [WPF], testing techniques"
+  - "Security Development Lifecycle (SDL), security analysis [WPF]"
   - "Security Development Lifecycle (SDL), threat modeling"
-  - "critical code management"
-  - "testing, security"
-  - "source editing tools"
   - "Security Development Lifecycle (SDL), testing techniques"
   - "Security Development Lifecycle (SDL), source analysis tools"
   - "Security Development Lifecycle (SDL), critical code management"
-  - "threat modeling"
-  - "source analysis tools"
-  - "Security Development Lifecycle (SDL), source editing tools"
+  - "threat modeling [WPF]"
 ms.assetid: 0fc04394-4e47-49ca-b0cf-8cd1161d95b9
 caps.latest.revision: 11
 author: dotnet-bot

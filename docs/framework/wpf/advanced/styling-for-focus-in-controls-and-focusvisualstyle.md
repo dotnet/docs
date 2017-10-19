@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "keyboard focus"
-  - "focus, visual styling"
-  - "styles, focus visual style"
+  - "keyboard focus [WPF]"
+  - "focus [WPF], visual styling"
+  - "styles [WPF], focus visual style"
 ms.assetid: 786ac576-011b-4d72-913b-558deccb9b35
 caps.latest.revision: 10
 author: dotnet-bot

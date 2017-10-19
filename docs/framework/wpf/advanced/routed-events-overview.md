@@ -9,19 +9,19 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "attached events"
-  - "grouped button set"
-  - "routed events"
-  - "events, routed"
-  - "tunneling"
-  - "events, attached"
-  - "routing strategies for events"
-  - "button set, grouped"
-  - "bubbling"
+  - "attached events [WPF]"
+  - "grouped button set [WPF]"
+  - "routed events [WPF]"
+  - "events [WPF], routed"
+  - "tunneling [WPF]"
+  - "events [WPF], attached"
+  - "routing strategies for events [WPF]"
+  - "button set [WPF], grouped"
+  - "bubbling [WPF]"
 ms.assetid: 1a2189ae-13b4-45b0-b12c-8de2e49c29d2
 caps.latest.revision: 29
 author: dotnet-bot

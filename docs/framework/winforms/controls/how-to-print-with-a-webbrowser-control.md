@@ -9,16 +9,16 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 f1_keywords: 
   - "WebBrowser.Print"
 helpviewer_keywords: 
   - "printing [Windows Forms], Web pages"
   - "WebBrowser control [Windows Forms], examples"
   - "WebBrowser control [Windows Forms], printing from"
-  - "Web pages, printing"
+  - "Web pages [Windows Forms], printing"
   - "examples [Windows Forms], WebBrowser control"
 ms.assetid: 3fb2a305-64ce-4b6c-9258-5330d3f21b6c
 caps.latest.revision: 14

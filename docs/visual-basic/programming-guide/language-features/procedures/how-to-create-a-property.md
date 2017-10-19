@@ -9,7 +9,7 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "procedures, defining"
+  - "procedures [Visual Basic], defining"
   - "Visual Basic code, procedures"
   - "Visual Basic code, properties"
   - "properties [Visual Basic]"

@@ -8,7 +8,7 @@ ms.technology:
 ms.topic: "article"
 helpviewer_keywords: 
   - "string functions"
-  - "manipulating strings"
+  - "manipulating strings [Visual Basic]"
   - "strings [Visual Basic], manipulating"
 ms.assetid: 5d3197eb-fe66-417e-9e2a-20450660c9c6
 caps.latest.revision: 11

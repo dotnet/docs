@@ -7,10 +7,10 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "RectangleShape control, topic list"
-  - "OvalShape control, topic list"
-  - "Shape control"
-  - "Line control, topic list"
+  - "RectangleShape control [Visual Basic], topic list"
+  - "OvalShape control [Visual Basic], topic list"
+  - "Shape control [Visual Basic]"
+  - "Line control [Visual Basic], topic list"
 ms.assetid: 29ee3a5f-920f-4677-85bc-bd7425ab57e8
 caps.latest.revision: 9
 author: dotnet-bot

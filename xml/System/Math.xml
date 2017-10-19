@@ -3184,7 +3184,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The following table indicates the return value when various values or ranges of values are specified for the `x` and `y` parameters. For more information, see <xref:System.Double?displayProperty=nameWithType>, <xref:System.Double?displayProperty=nameWithType>, and <xref:System.Double?displayProperty=nameWithType>.  
+ The following table indicates the return value when various values or ranges of values are specified for the `x` and `y` parameters. For more information, see <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>, <xref:System.Double.NegativeInfinity?displayProperty=nameWithType>, and <xref:System.Double.NaN?displayProperty=nameWithType>.  
   
 |Parameters|Return value|  
 |----------------|------------------|  
@@ -3288,7 +3288,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
 |`d`|<xref:System.Decimal>|A number to be rounded.|  
 |`a`<br /><br /> -or-<br /><br /> `value`|<xref:System.Double>|A double-precision floating-point number to be rounded.|  
 |`decimals`<br /><br /> -or-<br /><br /> `digits`|<xref:System.Int32>|The number of fractional digits in the return value. For <xref:System.Decimal> values, it can range from 0 to 28. For <xref:System.Double> values, it can range from 0 to 15. Note that 15 is the maximum number of integral and fractional digits supported by the <xref:System.Double> type.<br /><br /> Default value: 0, which rounds to an integer|  
-|`mode`|<xref:System.MidpointRounding>|A flag that specifies the convention to use for rounding midpoint values. See [Midpoint values and rounding conventions](#Midpoint).<br /><br /> Default value: <xref:System.MidpointRounding?displayProperty=nameWithType>|  
+|`mode`|<xref:System.MidpointRounding>|A flag that specifies the convention to use for rounding midpoint values. See [Midpoint values and rounding conventions](#Midpoint).<br /><br /> Default value: <xref:System.MidpointRounding.ToEven?displayProperty=nameWithType>|  
   
 <a name="Returns"></a>   
 ## Return value  
@@ -3332,12 +3332,12 @@ A numeric value of the same type as `d`, `a`, or `value`, but rounded either to 
  The <xref:System.Math.Round%2A> method supports two rounding conventions for handling midpoint values:  
   
  **Rounding away from zero**  
- Midpoint values are rounded to the next number away from zero. For example, 3.75 rounds to 3.8, 3.85 rounds to 3.9, -3.75 rounds to -3.8, and -3.85 rounds to -3.9. This form of rounding is represented by the <xref:System.MidpointRounding?displayProperty=nameWithType> enumeration member.  
+ Midpoint values are rounded to the next number away from zero. For example, 3.75 rounds to 3.8, 3.85 rounds to 3.9, -3.75 rounds to -3.8, and -3.85 rounds to -3.9. This form of rounding is represented by the <xref:System.MidpointRounding.AwayFromZero?displayProperty=nameWithType> enumeration member.  
   
  Rounding away from zero is the most widely known form of rounding.  
   
  **Rounding to nearest, or banker's rounding**  
- Midpoint values are rounded to the nearest even number. For example, both 3.75 and 3.85 round to 3.8, and both -3.75 and -3.85 round to -3.8. This form of rounding is represented by the <xref:System.MidpointRounding?displayProperty=nameWithType> enumeration member.  
+ Midpoint values are rounded to the nearest even number. For example, both 3.75 and 3.85 round to 3.8, and both -3.75 and -3.85 round to -3.8. This form of rounding is represented by the <xref:System.MidpointRounding.ToEven?displayProperty=nameWithType> enumeration member.  
   
  Rounding to nearest is the standard form of rounding used in financial and statistical operations. It conforms to IEEE Standard 754, section 4. When used in multiple rounding operations, it reduces the rounding error that is caused by consistently rounding midpoint values in a single direction. In some cases, this rounding error can be significant.  
   

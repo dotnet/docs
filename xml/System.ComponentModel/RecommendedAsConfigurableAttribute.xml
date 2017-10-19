@@ -100,7 +100,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example marks a property as usable as an application setting. This code creates a new <xref:System.ComponentModel.RecommendedAsConfigurableAttribute>, sets its value to <xref:System.ComponentModel.RecommendedAsConfigurableAttribute?displayProperty=nameWithType>, and binds it to the property.  
+ The following example marks a property as usable as an application setting. This code creates a new <xref:System.ComponentModel.RecommendedAsConfigurableAttribute>, sets its value to <xref:System.ComponentModel.RecommendedAsConfigurableAttribute.Yes?displayProperty=nameWithType>, and binds it to the property.  
   
  [!code-cpp[Classic RecommendedAsConfigurableAttribute.RecommendedAsConfigurableAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic RecommendedAsConfigurableAttribute.RecommendedAsConfigurableAttribute Example/CPP/source.cpp#1)]
  [!code-csharp[Classic RecommendedAsConfigurableAttribute.RecommendedAsConfigurableAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic RecommendedAsConfigurableAttribute.RecommendedAsConfigurableAttribute Example/CS/source.cs#1)]

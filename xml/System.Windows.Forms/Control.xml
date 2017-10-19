@@ -1998,7 +1998,7 @@
    
   
 ## Examples  
- The following code example resizes the specified control so the control will accommodate its formatted text. The formatted text is the <xref:System.Windows.Forms.Control.Text%2A> property with the control's assigned <xref:System.Windows.Forms.Control.Font%2A> applied to the text. The `AutoSizeControl` method in this example also has a `textPadding` parameter that represents the padding to apply to all edges of the control. To make the padding appear equal, align the text with the <xref:System.Drawing.ContentAlignment?displayProperty=nameWithType> value, if your control supports it.  
+ The following code example resizes the specified control so the control will accommodate its formatted text. The formatted text is the <xref:System.Windows.Forms.Control.Text%2A> property with the control's assigned <xref:System.Windows.Forms.Control.Font%2A> applied to the text. The `AutoSizeControl` method in this example also has a `textPadding` parameter that represents the padding to apply to all edges of the control. To make the padding appear equal, align the text with the <xref:System.Drawing.ContentAlignment.MiddleCenter?displayProperty=nameWithType> value, if your control supports it.  
   
  [!code-cpp[Windows.Forms.Control Member5#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Windows.Forms.Control Member5/CPP/controlmembers5.cpp#1)]
  [!code-csharp[Windows.Forms.Control Member5#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Windows.Forms.Control Member5/CS/controlmembers5.cs#1)]
@@ -2992,7 +2992,7 @@
 ## Remarks  
  An Input Method Editor (IME) is a program that enables users to enter complex characters and symbols, such as Japanese Kanji characters, by using a standard keyboard.  
   
- As implemented in the <xref:System.Windows.Forms.Control> class, this property always returns the <xref:System.Windows.Forms.ImeMode?displayProperty=nameWithType> value. The <xref:System.Windows.Forms.ImeMode.Inherit> value specifies that the IME mode is inherited from the parent control.  
+ As implemented in the <xref:System.Windows.Forms.Control> class, this property always returns the <xref:System.Windows.Forms.ImeMode.Inherit?displayProperty=nameWithType> value. The <xref:System.Windows.Forms.ImeMode.Inherit> value specifies that the IME mode is inherited from the parent control.  
   
    
   
@@ -3358,7 +3358,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Windows.Forms.Control.Dock%2A> property to define how a control is automatically resized as its parent control is resized. For example, setting <xref:System.Windows.Forms.Control.Dock%2A> to <xref:System.Windows.Forms.DockStyle?displayProperty=nameWithType> causes the control to align itself with the left edges of its parent control and to resize as the parent control is resized. Controls are docked in their Z-order, which is the visual layering of controls on a form along the form's Z-axis (depth).  
+ Use the <xref:System.Windows.Forms.Control.Dock%2A> property to define how a control is automatically resized as its parent control is resized. For example, setting <xref:System.Windows.Forms.Control.Dock%2A> to <xref:System.Windows.Forms.DockStyle.Left?displayProperty=nameWithType> causes the control to align itself with the left edges of its parent control and to resize as the parent control is resized. Controls are docked in their Z-order, which is the visual layering of controls on a form along the form's Z-axis (depth).  
   
  A control can be docked to one edge of its parent container or can be docked to all edges and fill the parent container.  
   
@@ -5498,12 +5498,12 @@ MyControl.Font = New Font(MyControl.Font, _
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An IME is a program that enables users to enter complex characters and symbols, such as Japanese Kanji characters, using a standard keyboard. The <xref:System.Windows.Forms.Control.ImeMode%2A> property is typically set to <xref:System.Windows.Forms.ImeMode?displayProperty=nameWithType> for a <xref:System.Windows.Forms.TextBox> control that is intended to only enter numeric values. The <xref:System.Windows.Forms.Control.ImeMode%2A> property value is set to <xref:System.Windows.Forms.ImeMode?displayProperty=nameWithType> for the <xref:System.Windows.Forms.Form> class.  
+ An IME is a program that enables users to enter complex characters and symbols, such as Japanese Kanji characters, using a standard keyboard. The <xref:System.Windows.Forms.Control.ImeMode%2A> property is typically set to <xref:System.Windows.Forms.ImeMode.Off?displayProperty=nameWithType> for a <xref:System.Windows.Forms.TextBox> control that is intended to only enter numeric values. The <xref:System.Windows.Forms.Control.ImeMode%2A> property value is set to <xref:System.Windows.Forms.ImeMode.NoControl?displayProperty=nameWithType> for the <xref:System.Windows.Forms.Form> class.  
   
  Most classes that do not directly support Input Method Editors, or allow direct input from an IME, will set the value of this property to <xref:System.Windows.Forms.ImeMode.NoControl>.  
   
 > [!IMPORTANT]
->  The user can interactively change the <xref:System.Windows.Forms.Control.ImeMode%2A> unless it has been programmatically set to <xref:System.Windows.Forms.ImeMode?displayProperty=nameWithType>. In this case, the user will not be able to use the IME.  
+>  The user can interactively change the <xref:System.Windows.Forms.Control.ImeMode%2A> unless it has been programmatically set to <xref:System.Windows.Forms.ImeMode.Disable?displayProperty=nameWithType>. In this case, the user will not be able to use the IME.  
 >   
 >  The <xref:System.Windows.Forms.Control.ImeMode%2A> property is ignored on Windows 8 when the global input mode is in effect. For more info, see[Switch Text Input Changed from Per-Thread to Per-User](http://go.microsoft.com/fwlink/?LinkID=256509).  
   
@@ -12909,7 +12909,7 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.Control.ResizeRedraw%2A> property value is equivalent to the return value of the <xref:System.Windows.Forms.Control.GetStyle%2A> method when passing in the <xref:System.Windows.Forms.ControlStyles?displayProperty=nameWithType> value as a parameter.  
+ The <xref:System.Windows.Forms.Control.ResizeRedraw%2A> property value is equivalent to the return value of the <xref:System.Windows.Forms.Control.GetStyle%2A> method when passing in the <xref:System.Windows.Forms.ControlStyles.ResizeRedraw?displayProperty=nameWithType> value as a parameter.  
   
  ]]></format>
         </remarks>
@@ -13069,12 +13069,12 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
 ## Remarks  
  The <xref:System.Windows.Forms.Control.RightToLeft%2A> property is an ambient property. An ambient property is a control property that, if not set, is retrieved from the parent control. For example, a <xref:System.Windows.Forms.Button> will have the same <xref:System.Windows.Forms.Control.BackColor%2A> as its parent <xref:System.Windows.Forms.Form> by default. For more information about ambient properties, see the <xref:System.Windows.Forms.AmbientProperties> class or the <xref:System.Windows.Forms.Control> class overview.  
   
- The <xref:System.Windows.Forms.Control.RightToLeft%2A> property is used for international applications where the language is written from right to left, such as Hebrew or Arabic. When this property is set to <xref:System.Windows.Forms.RightToLeft?displayProperty=nameWithType>, control elements that include text are displayed from right to left.  
+ The <xref:System.Windows.Forms.Control.RightToLeft%2A> property is used for international applications where the language is written from right to left, such as Hebrew or Arabic. When this property is set to <xref:System.Windows.Forms.RightToLeft.Yes?displayProperty=nameWithType>, control elements that include text are displayed from right to left.  
   
 > [!NOTE]
 >  If the value of the <xref:System.Windows.Forms.Control.RightToLeft%2A> property is changed at run time, only raw text without formatting is preserved.  
   
- The following are a few examples of how control elements are affected by the <xref:System.Windows.Forms.Control.RightToLeft%2A> property value of <xref:System.Windows.Forms.RightToLeft?displayProperty=nameWithType> :  
+ The following are a few examples of how control elements are affected by the <xref:System.Windows.Forms.Control.RightToLeft%2A> property value of <xref:System.Windows.Forms.RightToLeft.Yes?displayProperty=nameWithType> :  
   
 -   Vertical scroll bars are displayed on the left side rather than right side of scrollable controls (for example, <xref:System.Windows.Forms.Form>, <xref:System.Windows.Forms.Panel>, multiline <xref:System.Windows.Forms.TextBox>, and <xref:System.Windows.Forms.RichTextBox>).  
   

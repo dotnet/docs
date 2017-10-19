@@ -32,7 +32,7 @@
   
 |Validation control|Description|  
 |------------------------|-----------------|  
-|<xref:System.Web.UI.WebControls.CompareValidator>|Validates a value against the value entered into another input control, against a constant value, or against a proper data type by setting the <xref:System.Web.UI.WebControls.CompareValidator.Operator%2A?displayProperty=nameWithType> property to <xref:System.Web.UI.WebControls.ValidationCompareOperator?displayProperty=nameWithType>.|  
+|<xref:System.Web.UI.WebControls.CompareValidator>|Validates a value against the value entered into another input control, against a constant value, or against a proper data type by setting the <xref:System.Web.UI.WebControls.CompareValidator.Operator%2A?displayProperty=nameWithType> property to <xref:System.Web.UI.WebControls.ValidationCompareOperator.DataTypeCheck?displayProperty=nameWithType>.|  
 |<xref:System.Web.UI.WebControls.CustomValidator>|Validates a value using a user-provided custom validation routine.|  
 |<xref:System.Web.UI.WebControls.RangeValidator>|Validates whether a value is within a range of values.|  
 |<xref:System.Web.UI.WebControls.RegularExpressionValidator>|Validates a value using a regular expression.|  

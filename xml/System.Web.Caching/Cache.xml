@@ -613,7 +613,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When used, this field sets the `slidingExpiration` parameter to the <xref:System.TimeSpan?displayProperty=nameWithType> field, which has a constant value of zero. The cached item expires in accordance with the `absoluteExpiration` parameter associated with the `Insert` or `Add` method call.  
+ When used, this field sets the `slidingExpiration` parameter to the <xref:System.TimeSpan.Zero?displayProperty=nameWithType> field, which has a constant value of zero. The cached item expires in accordance with the `absoluteExpiration` parameter associated with the `Insert` or `Add` method call.  
   
    
   

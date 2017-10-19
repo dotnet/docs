@@ -408,7 +408,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `patternInterface` is <xref:System.Windows.Automation.Peers.PatternInterface?displayProperty=nameWithType> and the item is not in the visual tree, this method returns a `this` pointer. If `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface?displayProperty=nameWithType>, this method returns an object that implements the <xref:System.Windows.Automation.Provider.ISynchronizedInputProvider> interface.  
+ If `patternInterface` is <xref:System.Windows.Automation.Peers.PatternInterface.VirtualizedItem?displayProperty=nameWithType> and the item is not in the visual tree, this method returns a `this` pointer. If `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface.SynchronizedInput?displayProperty=nameWithType>, this method returns an object that implements the <xref:System.Windows.Automation.Provider.ISynchronizedInputProvider> interface.  
   
  ]]></format>
         </remarks>

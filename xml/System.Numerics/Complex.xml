@@ -2294,7 +2294,7 @@ This API is not CLS-compliant.</summary>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `value` is <xref:System.Numerics.Complex?displayProperty=nameWithType>, the method returns <xref:System.Numerics.Complex?displayProperty=nameWithType>. For other values, if `power` is 0, the method returns <xref:System.Numerics.Complex?displayProperty=nameWithType>, and if `power` is 1, it returns `value`.  
+ If `value` is <xref:System.Numerics.Complex.Zero?displayProperty=nameWithType>, the method returns <xref:System.Numerics.Complex.Zero?displayProperty=nameWithType>. For other values, if `power` is 0, the method returns <xref:System.Numerics.Complex.One?displayProperty=nameWithType>, and if `power` is 1, it returns `value`.  
   
  This method corresponds to the <xref:System.Math.Pow%2A?displayProperty=nameWithType> method for primitive numeric types.  
   
@@ -2420,14 +2420,14 @@ This API is not CLS-compliant.</summary>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The reciprocal, or multiplicative inverse, of a number *x* is a number *y* where *x* multiplied by *y* yields 1. The reciprocal of a complex number is the complex number that produces <xref:System.Numerics.Complex?displayProperty=nameWithType> when the two numbers are multiplied. If a complex number is represented by a +bi, its reciprocal is represented by the expression a/(a<sup>2</sup>+b<sup>2</sup>) + -b/(a<sup>2</sup> + b<sup>2</sup>).  
+ The reciprocal, or multiplicative inverse, of a number *x* is a number *y* where *x* multiplied by *y* yields 1. The reciprocal of a complex number is the complex number that produces <xref:System.Numerics.Complex.One?displayProperty=nameWithType> when the two numbers are multiplied. If a complex number is represented by a +bi, its reciprocal is represented by the expression a/(a<sup>2</sup>+b<sup>2</sup>) + -b/(a<sup>2</sup> + b<sup>2</sup>).  
   
- If value is <xref:System.Numerics.Complex?displayProperty=nameWithType>, the method returns <xref:System.Numerics.Complex?displayProperty=nameWithType>. Otherwise, it returns the result of the expression <xref:System.Numerics.Complex?displayProperty=nameWithType>/`value`.  
+ If value is <xref:System.Numerics.Complex.Zero?displayProperty=nameWithType>, the method returns <xref:System.Numerics.Complex.Zero?displayProperty=nameWithType>. Otherwise, it returns the result of the expression <xref:System.Numerics.Complex.One?displayProperty=nameWithType>/`value`.  
   
    
   
 ## Examples  
- The following example uses the <xref:System.Numerics.Complex.Reciprocal%2A> method to calculate the reciprocal values of several complex numbers. It also demonstrates that the result of multiplying a complex number by its reciprocal is <xref:System.Numerics.Complex?displayProperty=nameWithType>.  
+ The following example uses the <xref:System.Numerics.Complex.Reciprocal%2A> method to calculate the reciprocal values of several complex numbers. It also demonstrates that the result of multiplying a complex number by its reciprocal is <xref:System.Numerics.Complex.One?displayProperty=nameWithType>.  
   
  [!code-csharp[System.Numerics.Complex.Reciprocal#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.numerics.complex.reciprocal/cs/reciprocal1.cs#1)]
  [!code-vb[System.Numerics.Complex.Reciprocal#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.numerics.complex.reciprocal/vb/reciprocal1.vb#1)]  
@@ -2856,7 +2856,7 @@ This API is not CLS-compliant.</summary>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The string representation of the complex number returned by this method displays the number using its Cartesian coordinates in the form `(`*a*`,` *b*`)`, where *a* is the real part of the complex number, and *b* is its imaginary part. Both *a* and *b* are formatted using the format string specified by `format`. The `format` parameter can be any valid standard numeric format specifier, or any combination of custom numeric format specifiers. If `format` is equal to <xref:System.String?displayProperty=nameWithType> or is `null`, the real and imaginary parts of the complex number are formatted with the general format specifier ("G"). If `format` is any other value, the method throws a <xref:System.FormatException>.  
+ The string representation of the complex number returned by this method displays the number using its Cartesian coordinates in the form `(`*a*`,` *b*`)`, where *a* is the real part of the complex number, and *b* is its imaginary part. Both *a* and *b* are formatted using the format string specified by `format`. The `format` parameter can be any valid standard numeric format specifier, or any combination of custom numeric format specifiers. If `format` is equal to <xref:System.String.Empty?displayProperty=nameWithType> or is `null`, the real and imaginary parts of the complex number are formatted with the general format specifier ("G"). If `format` is any other value, the method throws a <xref:System.FormatException>.  
   
  The .NET Framework provides extensive formatting support, which is described in greater detail in the following topics:  
   
@@ -2915,7 +2915,7 @@ This API is not CLS-compliant.</summary>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The string representation of the complex number returned by this method displays the number using its Cartesian coordinates in the form `(`*a*`,` *b*`)`, where *a* is the real part of the complex number, and *b* is its imaginary part. Both *a* and *b* are formatted using the format string specified by `format`. The `format` parameter can be any valid standard numeric format specifier, or any combination of custom numeric format specifiers. If `format` is equal to <xref:System.String?displayProperty=nameWithType> or is `null`, the real and imaginary parts of the complex number are formatted with the general format specifier ("G"). If `format` is any other value, the method throws a <xref:System.FormatException>.  
+ The string representation of the complex number returned by this method displays the number using its Cartesian coordinates in the form `(`*a*`,` *b*`)`, where *a* is the real part of the complex number, and *b* is its imaginary part. Both *a* and *b* are formatted using the format string specified by `format`. The `format` parameter can be any valid standard numeric format specifier, or any combination of custom numeric format specifiers. If `format` is equal to <xref:System.String.Empty?displayProperty=nameWithType> or is `null`, the real and imaginary parts of the complex number are formatted with the general format specifier ("G"). If `format` is any other value, the method throws a <xref:System.FormatException>.  
   
  The .NET Framework provides extensive formatting support, which is described in greater detail in the following topics:  
   

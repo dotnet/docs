@@ -1255,7 +1255,7 @@
 ## Remarks  
  An input method editor (IME) is a program that allows users to enter complex characters and symbols, such as Japanese Kanji characters, by using a standard keyboard.  
   
- As implemented in the <xref:System.Windows.Forms.Form> class, this property always returns the <xref:System.Windows.Forms.ImeMode?displayProperty=nameWithType> value. The value of this property is assigned to the <xref:System.Windows.Forms.Control.ImeMode%2A?displayProperty=nameWithType> property.  
+ As implemented in the <xref:System.Windows.Forms.Form> class, this property always returns the <xref:System.Windows.Forms.ImeMode.NoControl?displayProperty=nameWithType> value. The value of this property is assigned to the <xref:System.Windows.Forms.Control.ImeMode%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>

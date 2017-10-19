@@ -100,7 +100,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A dead key, when pressed, produces no visible character but indicates that the key is to be combined with the character produced by the next letter key pressed.  If <xref:System.Windows.Input.KeyEventArgs.Key%2A> returns <xref:System.Windows.Input.Key?displayProperty=nameWithType>, you can use this property to get the actual key that was entered.  
+ A dead key, when pressed, produces no visible character but indicates that the key is to be combined with the character produced by the next letter key pressed.  If <xref:System.Windows.Input.KeyEventArgs.Key%2A> returns <xref:System.Windows.Input.Key.DeadCharProcessed?displayProperty=nameWithType>, you can use this property to get the actual key that was entered.  
   
  ]]></format>
         </remarks>

@@ -438,7 +438,9 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Docs />
+      <Docs>
+        <remarks />
+      </Docs>
     </MemberGroup>
     <Member MemberName="IsStartObject">
       <MemberSignature Language="C#" Value="public override bool IsStartObject (System.Xml.XmlDictionaryReader reader);" />
@@ -562,7 +564,9 @@
         <AssemblyName>System.Runtime.Serialization.Json</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Docs />
+      <Docs>
+        <remarks />
+      </Docs>
     </MemberGroup>
     <Member MemberName="ReadObject">
       <MemberSignature Language="C#" Value="public override object ReadObject (System.IO.Stream stream);" />
@@ -786,7 +790,9 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Docs />
+      <Docs>
+        <remarks />
+      </Docs>
     </MemberGroup>
     <Member MemberName="WriteEndObject">
       <MemberSignature Language="C#" Value="public override void WriteEndObject (System.Xml.XmlDictionaryWriter writer);" />
@@ -853,7 +859,9 @@
         <AssemblyName>System.Runtime.Serialization.Json</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Docs />
+      <Docs>
+        <remarks />
+      </Docs>
     </MemberGroup>
     <Member MemberName="WriteObject">
       <MemberSignature Language="C#" Value="public override void WriteObject (System.IO.Stream stream, object graph);" />
@@ -958,7 +966,9 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Docs />
+      <Docs>
+        <remarks />
+      </Docs>
     </MemberGroup>
     <Member MemberName="WriteObjectContent">
       <MemberSignature Language="C#" Value="public override void WriteObjectContent (System.Xml.XmlDictionaryWriter writer, object graph);" />
@@ -1030,7 +1040,9 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Docs />
+      <Docs>
+        <remarks />
+      </Docs>
     </MemberGroup>
     <Member MemberName="WriteStartObject">
       <MemberSignature Language="C#" Value="public override void WriteStartObject (System.Xml.XmlDictionaryWriter writer, object graph);" />

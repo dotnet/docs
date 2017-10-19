@@ -369,7 +369,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Some Internet protocols, such as HTTP, return otherwise valid responses indicating that an error has occurred at the protocol level. When the response to an Internet request indicates an error, <xref:System.Net.WebRequest.GetResponse%2A?displayProperty=nameWithType> sets the <xref:System.Net.WebException.Status%2A> property to <xref:System.Net.WebExceptionStatus?displayProperty=nameWithType> and provides the <xref:System.Net.WebResponse> that contains the error message in the <xref:System.Net.WebException.Response%2A> property of the <xref:System.Net.WebException> that was thrown. The application can examine the <xref:System.Net.WebResponse> to determine the actual error.  
+ Some Internet protocols, such as HTTP, return otherwise valid responses indicating that an error has occurred at the protocol level. When the response to an Internet request indicates an error, <xref:System.Net.WebRequest.GetResponse%2A?displayProperty=nameWithType> sets the <xref:System.Net.WebException.Status%2A> property to <xref:System.Net.WebExceptionStatus.ProtocolError?displayProperty=nameWithType> and provides the <xref:System.Net.WebResponse> that contains the error message in the <xref:System.Net.WebException.Response%2A> property of the <xref:System.Net.WebException> that was thrown. The application can examine the <xref:System.Net.WebResponse> to determine the actual error.  
   
    
   

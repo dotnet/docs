@@ -124,9 +124,9 @@
 ## Remarks  
  This constructor's behavior depends on the value of the <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> property of the `dateTime` parameter:  
   
--   If the value of <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> is <xref:System.DateTimeKind?displayProperty=nameWithType>, the <xref:System.DateTimeOffset.DateTime%2A> property of the new instance is set equal to `dateTime`, and the <xref:System.DateTimeOffset.Offset%2A> property is set equal to <xref:System.TimeSpan.Zero>.  
+-   If the value of <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> is <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>, the <xref:System.DateTimeOffset.DateTime%2A> property of the new instance is set equal to `dateTime`, and the <xref:System.DateTimeOffset.Offset%2A> property is set equal to <xref:System.TimeSpan.Zero>.  
   
--   If the value of <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> is <xref:System.DateTimeKind?displayProperty=nameWithType> or <xref:System.DateTimeKind?displayProperty=nameWithType>, the <xref:System.DateTimeOffset.DateTime%2A> property of the new instance is set equal to `dateTime`, and the <xref:System.DateTimeOffset.Offset%2A> property is set equal to the offset of the local system's current time zone.  
+-   If the value of <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> is <xref:System.DateTimeKind.Local?displayProperty=nameWithType> or <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>, the <xref:System.DateTimeOffset.DateTime%2A> property of the new instance is set equal to `dateTime`, and the <xref:System.DateTimeOffset.Offset%2A> property is set equal to the offset of the local system's current time zone.  
   
    
   
@@ -181,11 +181,11 @@
 ## Remarks  
  This constructor's behavior depends in part on the value of the <xref:System.DateTime.Kind%2A> property of the `dateTime` parameter:  
   
--   If the value of <xref:System.DateTime.Kind%2A> is <xref:System.DateTimeKind?displayProperty=nameWithType>, the value of the `offset` parameter must be 0 or an <xref:System.ArgumentException> is thrown.  
+-   If the value of <xref:System.DateTime.Kind%2A> is <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>, the value of the `offset` parameter must be 0 or an <xref:System.ArgumentException> is thrown.  
   
--   If the value of <xref:System.DateTime.Kind%2A> is <xref:System.DateTimeKind?displayProperty=nameWithType>, the value of the `offset` parameter must be equal to the local time zone's offset from Coordinated Universal Time (UTC) for that particular date or an <xref:System.ArgumentException> is thrown.  
+-   If the value of <xref:System.DateTime.Kind%2A> is <xref:System.DateTimeKind.Local?displayProperty=nameWithType>, the value of the `offset` parameter must be equal to the local time zone's offset from Coordinated Universal Time (UTC) for that particular date or an <xref:System.ArgumentException> is thrown.  
   
--   If the value of <xref:System.DateTime.Kind%2A> is <xref:System.DateTimeKind?displayProperty=nameWithType>, the `offset` parameter can have any valid value.  
+-   If the value of <xref:System.DateTime.Kind%2A> is <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>, the `offset` parameter can have any valid value.  
   
    
   
@@ -1275,7 +1275,7 @@
 ## Remarks  
  This property removes any significant part of the time component from a <xref:System.DateTimeOffset> object and returns only its significant date component. For example, if the <xref:System.DateTimeOffset> object has a date and time value of "1/12/07 4:01pm +7:30", the property returns a <xref:System.DateTime> value of "1/12/07 12:00:00 AM". The <xref:System.DateTime> value can then be displayed by using any of the standard or custom format specifiers that display dates only. (See the Example section for an illustration.)  
   
- The value of the <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> property of the returned <xref:System.DateTime> object is always <xref:System.DateTimeKind?displayProperty=nameWithType>. It is not affected by the value of the <xref:System.DateTimeOffset.Offset%2A> property.  
+ The value of the <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> property of the returned <xref:System.DateTime> object is always <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>. It is not affected by the value of the <xref:System.DateTimeOffset.Offset%2A> property.  
   
  To display a date without its time component, you can also use the "D" or "d" format specifiers; for an illustration, see the Example section.  
   
@@ -1327,7 +1327,7 @@
   
  This property returns both the date and the time component of a <xref:System.DateTimeOffset> object, which makes it useful for performing <xref:System.DateTimeOffset> to <xref:System.DateTime> conversion. For example, if the <xref:System.DateTimeOffset> object has a date and time value of "1/12/07 4:01pm + 7:30", the property returns a date of "1/12/07 4:01pm".  
   
- The value of the <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> property of the returned <xref:System.DateTime> object is <xref:System.DateTimeKind?displayProperty=nameWithType>.  
+ The value of the <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> property of the returned <xref:System.DateTime> object is <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>.  
   
    
   
@@ -1427,7 +1427,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the constants in the <xref:System.DayOfWeek> enumeration ranges from <xref:System.DayOfWeek?displayProperty=nameWithType> to <xref:System.DayOfWeek?displayProperty=nameWithType>. If cast to an integer, its value ranges from zero (which indicates <xref:System.DayOfWeek?displayProperty=nameWithType>) to six (which indicates <xref:System.DayOfWeek?displayProperty=nameWithType>).  
+ The value of the constants in the <xref:System.DayOfWeek> enumeration ranges from <xref:System.DayOfWeek.Sunday?displayProperty=nameWithType> to <xref:System.DayOfWeek.Saturday?displayProperty=nameWithType>. If cast to an integer, its value ranges from zero (which indicates <xref:System.DayOfWeek.Sunday?displayProperty=nameWithType>) to six (which indicates <xref:System.DayOfWeek.Saturday?displayProperty=nameWithType>).  
   
  You can also display the weekday name of a particular date by using the "D" format specifier or the "dddd" custom format specifier. For example:  
   
@@ -1989,7 +1989,7 @@
   
  There are no invalid times and ambiguous times are mapped to the local zone's standard time. (However, the conversion can create an anomaly: if a <xref:System.DateTimeOffset> value that is derived from the local computer reflects an ambiguous date and time, that value can be converted to UTC and then back to a local time that differs from the original time.)  The property applies any adjustment rules in the local time zone when it performs this conversion.  
   
- This property returns both the date and the time component of a <xref:System.DateTimeOffset> object, which makes it useful for <xref:System.DateTimeOffset> to <xref:System.DateTime> conversion. In addition to performing any necessary time conversion, this property differs from the <xref:System.DateTimeOffset.DateTime%2A> property by setting the value of the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object to <xref:System.DateTimeKind?displayProperty=nameWithType>.  
+ This property returns both the date and the time component of a <xref:System.DateTimeOffset> object, which makes it useful for <xref:System.DateTimeOffset> to <xref:System.DateTime> conversion. In addition to performing any necessary time conversion, this property differs from the <xref:System.DateTimeOffset.DateTime%2A> property by setting the value of the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object to <xref:System.DateTimeKind.Local?displayProperty=nameWithType>.  
   
    
   
@@ -3066,7 +3066,7 @@
 |\<Time>|"1:02:03 PM"|  
 |\<Offset>|"-7:30"|  
   
- Although each of these elements is optional, \<Offset> cannot appear by itself. It must be provided together with either \<Date> or \<Time>. If \<Date> is missing, its default value is the current day. If \<Date> is present but its year component consists of only two digits, it is converted to a year in the `provider` parameter's current calendar based on the value of the <xref:System.Globalization.Calendar.TwoDigitYearMax%2A?displayProperty=nameWithType> property. If \<Time> is missing, its default value is 12:00:00 AM. If \<Offset> is missing, its default value is the offset of the local time zone, or <xref:System.TimeSpan.Zero?displayProperty=nameWithType> if either the <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> or <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> value is specified in the `styles` parameter. If \<Offset> is present, it can represent either a negative or a positive offset from Coordinated Universal Time (UTC). In either case, \<Offset> must include a sign symbol.  
+ Although each of these elements is optional, \<Offset> cannot appear by itself. It must be provided together with either \<Date> or \<Time>. If \<Date> is missing, its default value is the current day. If \<Date> is present but its year component consists of only two digits, it is converted to a year in the `provider` parameter's current calendar based on the value of the <xref:System.Globalization.Calendar.TwoDigitYearMax%2A?displayProperty=nameWithType> property. If \<Time> is missing, its default value is 12:00:00 AM. If \<Offset> is missing, its default value is the offset of the local time zone, or <xref:System.TimeSpan.Zero?displayProperty=nameWithType> if either the <xref:System.Globalization.DateTimeStyles.AdjustToUniversal?displayProperty=nameWithType> or <xref:System.Globalization.DateTimeStyles.AssumeUniversal?displayProperty=nameWithType> value is specified in the `styles` parameter. If \<Offset> is present, it can represent either a negative or a positive offset from Coordinated Universal Time (UTC). In either case, \<Offset> must include a sign symbol.  
   
  The format of these three elements is defined by the `formatProvider` parameter, which can be either of the following:  
   
@@ -3088,18 +3088,18 @@
 |<xref:System.Globalization.DateTimeStyles.AllowInnerWhite>|Although valid, this value is ignored. Inner white space is permitted in the \<Date> and \<Time> elements.|  
 |<xref:System.Globalization.DateTimeStyles.AllowLeadingWhite>|Although valid, this value is ignored. Leading white space is permitted in front of each component in the parsed string.|  
 |<xref:System.Globalization.DateTimeStyles.AllowTrailingWhite>|Although valid, this value is ignored. Trailing white space is permitted in front of each component in the parsed string.|  
-|<xref:System.Globalization.DateTimeStyles.AllowWhiteSpaces>|This is the default behavior. It cannot be overridden by supplying a more restrictive <xref:System.Globalization.DateTimeStyles> enumeration value, such as <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType>.|  
+|<xref:System.Globalization.DateTimeStyles.AllowWhiteSpaces>|This is the default behavior. It cannot be overridden by supplying a more restrictive <xref:System.Globalization.DateTimeStyles> enumeration value, such as <xref:System.Globalization.DateTimeStyles.None?displayProperty=nameWithType>.|  
 |<xref:System.Globalization.DateTimeStyles.AssumeLocal>|Indicates that, if the `input` parameter lacks an \<Offset> element, the offset of the local time zone should be provided. This is the default behavior of the <xref:System.DateTimeOffset.Parse%2A> method.|  
 |<xref:System.Globalization.DateTimeStyles.AssumeUniversal>|Indicates that, if the `input` parameter lacks an \<Offset> element, the UTC offset (00:00) should be provided.|  
 |<xref:System.Globalization.DateTimeStyles.None>|Although valid, this value is ignored and has no effect.|  
 |<xref:System.Globalization.DateTimeStyles.RoundtripKind>|Because the <xref:System.DateTimeOffset> structure does not include a `Kind` property, this value has no effect.|  
   
- Only the <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> value is not supported. An <xref:System.ArgumentException> is thrown if this value is included in the `styles` parameter.  
+ Only the <xref:System.Globalization.DateTimeStyles.NoCurrentDateDefault?displayProperty=nameWithType> value is not supported. An <xref:System.ArgumentException> is thrown if this value is included in the `styles` parameter.  
   
    
   
 ## Examples  
- The following example illustrates the effect of passing the <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType>, <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType>, and <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> values to the `styles` parameter of the <xref:System.DateTimeOffset.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29> method.  
+ The following example illustrates the effect of passing the <xref:System.Globalization.DateTimeStyles.AssumeLocal?displayProperty=nameWithType>, <xref:System.Globalization.DateTimeStyles.AssumeUniversal?displayProperty=nameWithType>, and <xref:System.Globalization.DateTimeStyles.AdjustToUniversal?displayProperty=nameWithType> values to the `styles` parameter of the <xref:System.DateTimeOffset.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29> method.  
   
  [!code-csharp[System.DateTimeOffset.Parse#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTimeOffset.Parse/cs/ParseExamples.cs#3)]
  [!code-vb[System.DateTimeOffset.Parse#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTimeOffset.Parse/vb/ParseExamples.vb#3)]  
@@ -4527,7 +4527,7 @@ Me.ToUtcDateTime().ToFileTime()
 |\<Time>|"1:02:03 PM"|  
 |\<Offset>|"-7:30"|  
   
- Although each of these elements is optional, \<Offset> cannot appear by itself. It must be provided together with either \<Date> or \<Time>. If \<Date> is missing, its default value is the current day. If \<Date> is present but its year component consists of only two digits, it is converted to a year in the `provider` parameter's current calendar based on the value of the <xref:System.Globalization.Calendar.TwoDigitYearMax%2A?displayProperty=nameWithType> property. If \<Time> is missing, its default value is 12:00:00 AM. If \<Offset> is missing, its default value is the offset of the local time zone, or <xref:System.TimeSpan.Zero> if either the <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> or <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> value is specified in `styles`. If \<Offset> is present, it can represent either a negative or a positive offset from Coordinated Universal Time (UTC). In either case, \<Offset> must include a sign symbol or the method returns `false`.  
+ Although each of these elements is optional, \<Offset> cannot appear by itself. It must be provided together with either \<Date> or \<Time>. If \<Date> is missing, its default value is the current day. If \<Date> is present but its year component consists of only two digits, it is converted to a year in the `provider` parameter's current calendar based on the value of the <xref:System.Globalization.Calendar.TwoDigitYearMax%2A?displayProperty=nameWithType> property. If \<Time> is missing, its default value is 12:00:00 AM. If \<Offset> is missing, its default value is the offset of the local time zone, or <xref:System.TimeSpan.Zero> if either the <xref:System.Globalization.DateTimeStyles.AdjustToUniversal?displayProperty=nameWithType> or <xref:System.Globalization.DateTimeStyles.AssumeUniversal?displayProperty=nameWithType> value is specified in `styles`. If \<Offset> is present, it can represent either a negative or a positive offset from Coordinated Universal Time (UTC). In either case, \<Offset> must include a sign symbol or the method returns `false`.  
   
  The `input` string is parsed by using the culture-specific formatting information in a <xref:System.Globalization.DateTimeFormatInfo> object supplied by the `formatProvider` parameter. The `formatProvider` parameter can be either of the following:  
   
@@ -4549,13 +4549,13 @@ Me.ToUtcDateTime().ToFileTime()
 |<xref:System.Globalization.DateTimeStyles.AllowInnerWhite>|Although valid, this value is ignored. Inner white space is allowed in the \<Date> and \<Time> components.|  
 |<xref:System.Globalization.DateTimeStyles.AllowLeadingWhite>|Although valid, this value is ignored. Leading white space is allowed in front of each component in the parsed string.|  
 |<xref:System.Globalization.DateTimeStyles.AllowTrailingWhite>|Although valid, this value is ignored. Trailing white space is allowed in front of each component in the parsed string.|  
-|<xref:System.Globalization.DateTimeStyles.AllowWhiteSpaces>|This is the default behavior. It cannot be overridden by supplying a more restrictive <xref:System.Globalization.DateTimeStyles> enumeration value, such as <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType>.|  
+|<xref:System.Globalization.DateTimeStyles.AllowWhiteSpaces>|This is the default behavior. It cannot be overridden by supplying a more restrictive <xref:System.Globalization.DateTimeStyles> enumeration value, such as <xref:System.Globalization.DateTimeStyles.None?displayProperty=nameWithType>.|  
 |<xref:System.Globalization.DateTimeStyles.AssumeLocal>|Indicates that, if the `input` parameter lacks an \<Offset> element, the offset of the local time zone should be provided. This is the default behavior of the <xref:System.DateTimeOffset.TryParse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTimeOffset%40%29> method.|  
 |<xref:System.Globalization.DateTimeStyles.AssumeUniversal>|Indicates that, if the `input` parameter lacks an \<Offset> element, the UTC offset (00:00) should be provided.|  
 |<xref:System.Globalization.DateTimeStyles.None>|Although valid, this value is ignored and has no effect.|  
 |<xref:System.Globalization.DateTimeStyles.RoundtripKind>|Because the <xref:System.DateTimeOffset> structure does not include a `Kind` property, this value has no effect.|  
   
- Only the <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> value is not supported. An <xref:System.ArgumentException> is thrown if this value is included in the `styles` parameter.  
+ Only the <xref:System.Globalization.DateTimeStyles.NoCurrentDateDefault?displayProperty=nameWithType> value is not supported. An <xref:System.ArgumentException> is thrown if this value is included in the `styles` parameter.  
   
    
   
@@ -4816,9 +4816,9 @@ Me.ToUtcDateTime().ToFileTime()
   
 -   It converts the <xref:System.DateTimeOffset> value to a <xref:System.DateTime> value.  
   
- The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTimeOffset.DateTime%2A> value is set to <xref:System.DateTimeKind?displayProperty=nameWithType>.  
+ The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTimeOffset.DateTime%2A> value is set to <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>.  
   
- Retrieving the value of the <xref:System.DateTimeOffset.UtcDateTime%2A> property is equivalent to calling the current <xref:System.DateTimeOffset> object's `ToUniversalTime.DateTime` property, except that the <xref:System.DateTime.Kind%2A> property of the latter <xref:System.DateTime> value is <xref:System.DateTimeKind?displayProperty=nameWithType>.  
+ Retrieving the value of the <xref:System.DateTimeOffset.UtcDateTime%2A> property is equivalent to calling the current <xref:System.DateTimeOffset> object's `ToUniversalTime.DateTime` property, except that the <xref:System.DateTime.Kind%2A> property of the latter <xref:System.DateTime> value is <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>.  
   
    
   

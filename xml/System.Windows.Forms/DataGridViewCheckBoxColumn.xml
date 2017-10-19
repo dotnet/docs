@@ -91,9 +91,9 @@
 |--------------|-----------|  
 |<xref:System.Windows.Forms.DataGridViewCheckBoxColumn.CellTemplate%2A>|A new <xref:System.Windows.Forms.DataGridViewCheckBoxCell> with its <xref:System.Windows.Forms.DataGridViewCheckBoxCell.ThreeState%2A> property initialized to the `threeState` parameter value.|  
 |<xref:System.Windows.Forms.DataGridViewCheckBoxColumn.ThreeState%2A>|The value of the `threeState` parameter.|  
-|<xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A?displayProperty=nameWithType>|<xref:System.Windows.Forms.DataGridViewColumnSortMode?displayProperty=nameWithType>|  
-|The <xref:System.Windows.Forms.DataGridViewCellStyle.Alignment%2A> property of the <xref:System.Windows.Forms.DataGridViewCellStyle> object returned by the <xref:System.Windows.Forms.DataGridViewCheckBoxColumn.DefaultCellStyle%2A> property.|<xref:System.Windows.Forms.DataGridViewContentAlignment?displayProperty=nameWithType>|  
-|The <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A> property of the <xref:System.Windows.Forms.DataGridViewCellStyle> object returned by the <xref:System.Windows.Forms.DataGridViewColumn.DefaultCellStyle%2A> property.|<xref:System.Windows.Forms.CheckState?displayProperty=nameWithType> if `threeState` is `true`; otherwise, `false`.|  
+|<xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A?displayProperty=nameWithType>|<xref:System.Windows.Forms.DataGridViewColumnSortMode.NotSortable?displayProperty=nameWithType>|  
+|The <xref:System.Windows.Forms.DataGridViewCellStyle.Alignment%2A> property of the <xref:System.Windows.Forms.DataGridViewCellStyle> object returned by the <xref:System.Windows.Forms.DataGridViewCheckBoxColumn.DefaultCellStyle%2A> property.|<xref:System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter?displayProperty=nameWithType>|  
+|The <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A> property of the <xref:System.Windows.Forms.DataGridViewCellStyle> object returned by the <xref:System.Windows.Forms.DataGridViewColumn.DefaultCellStyle%2A> property.|<xref:System.Windows.Forms.CheckState.Indeterminate?displayProperty=nameWithType> if `threeState` is `true`; otherwise, `false`.|  
   
  ]]></format>
         </remarks>
@@ -173,8 +173,8 @@
   
 |`DataGridViewCellStyle` property|Default value|  
 |--------------------------------------|-------------------|  
-|<xref:System.Windows.Forms.DataGridViewCellStyle.Alignment%2A>|<xref:System.Windows.Forms.DataGridViewContentAlignment?displayProperty=nameWithType>|  
-|<xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A>|<xref:System.Windows.Forms.CheckState?displayProperty=nameWithType> if the initial <xref:System.Windows.Forms.DataGridViewCheckBoxColumn.ThreeState%2A> property value is `true`; otherwise, `false`.|  
+|<xref:System.Windows.Forms.DataGridViewCellStyle.Alignment%2A>|<xref:System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter?displayProperty=nameWithType>|  
+|<xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A>|<xref:System.Windows.Forms.CheckState.Indeterminate?displayProperty=nameWithType> if the initial <xref:System.Windows.Forms.DataGridViewCheckBoxColumn.ThreeState%2A> property value is `true`; otherwise, `false`.|  
   
  These values override the value specified in the <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A> property of the <xref:System.Windows.Forms.DataGridView> control, but may be overridden by other cell style properties. For more information, see [Cell Styles in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/cell-styles-in-the-windows-forms-datagridview-control.md).  
   

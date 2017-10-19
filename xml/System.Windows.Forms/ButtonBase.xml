@@ -31,7 +31,7 @@
   
  To have the derived button control display an image, set the <xref:System.Windows.Forms.ButtonBase.Image%2A> property or the <xref:System.Windows.Forms.ButtonBase.ImageList%2A> and <xref:System.Windows.Forms.ButtonBase.ImageIndex%2A> properties. The image can be aligned on the button control by setting the <xref:System.Windows.Forms.ButtonBase.ImageAlign%2A> property. Likewise, to align the <xref:System.Windows.Forms.Control.Text%2A> displayed on the button control, set the <xref:System.Windows.Forms.ButtonBase.TextAlign%2A> property.  
   
- The <xref:System.Windows.Forms.ButtonBase.FlatStyle%2A> property determines the style and appearance of the control. If the <xref:System.Windows.Forms.ButtonBase.FlatStyle%2A> property is set to <xref:System.Windows.Forms.FlatStyle?displayProperty=nameWithType>, the user's operating system determines the appearance of the control.  
+ The <xref:System.Windows.Forms.ButtonBase.FlatStyle%2A> property determines the style and appearance of the control. If the <xref:System.Windows.Forms.ButtonBase.FlatStyle%2A> property is set to <xref:System.Windows.Forms.FlatStyle.System?displayProperty=nameWithType>, the user's operating system determines the appearance of the control.  
   
  ]]></format>
     </remarks>

@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Handlers.ScriptResourceHandler> class processes all requests for embedded script files that are referenced through the <xref:System.Web.UI.ScriptManager> class. The <xref:System.Web.Handlers.ScriptResourceHandler> object retrieves the embedded script library and any localized resources for the script library. If the <xref:System.Web.UI.ScriptReference.NotifyScriptLoaded%2A> property is set to `true`, the <xref:System.Web.Handlers.ScriptResourceHandler> object adds a call at the end of the script file to the  method of the  object.  
+ The <xref:System.Web.Handlers.ScriptResourceHandler> class processes all requests for embedded script files that are referenced through the <xref:System.Web.UI.ScriptManager> class. The <xref:System.Web.Handlers.ScriptResourceHandler> object retrieves the embedded script library and any localized resources for the script library. If the <xref:System.Web.UI.ScriptReferenceBase.NotifyScriptLoaded%2A> property is set to `true`, the <xref:System.Web.Handlers.ScriptResourceHandler> object adds a call at the end of the script file to the  method of the  object.  
   
  By default, the <xref:System.Web.Handlers.ScriptResourceHandler> class compresses and caches embedded script files for Internet Explorer 7. You can turn compression and caching off through the <xref:System.Web.Configuration.ScriptingScriptResourceHandlerSection.EnableCompression%2A> and <xref:System.Web.Configuration.ScriptingScriptResourceHandlerSection.EnableCaching%2A> properties of the <xref:System.Web.Configuration.ScriptingScriptResourceHandlerSection> class. You set these properties in the Web.config file.  
   

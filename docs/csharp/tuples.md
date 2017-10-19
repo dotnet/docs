@@ -109,8 +109,8 @@ variables used to initialize the tuple. This is referred to as **[tuple projecti
 
 The compiler must communicate those names you created for tuples that
 are returned from public methods or properties. In those cases, the compiler
-adds a <xref:System.Runtime.CompilerServices.TupleElementNames> attribute on the method. This attribute contains
-a <xref:System.Runtime.CompilerServices.TupleElementNames.TransformNames> list property that contains the names given to each of
+adds a <xref:System.Runtime.CompilerServices.TupleElementNamesAttribute> attribute on the method. This attribute contains
+a <System.Runtime.CompilerServices.TupleElementNamesAttribute.TransformNames> list property that contains the names given to each of
 the elements in the Tuple.
 
 > [!NOTE]

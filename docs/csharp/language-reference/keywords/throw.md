@@ -42,7 +42,7 @@ Method callers then use a `try-catch` or `try-catch-finally` block to handle the
 [!code-cs[csrefKeyword#3](../../../../samples/snippets/csharp/language-reference/keywords/throw/throw-3.cs#3)]  
 
 > [!IMPORTANT]
-> You can also use the `throw e` syntax in a `catch` block to instantiate a new exception that you pass on to the caller. In this case, the stack trace of the original exception, which is available from the <xref:System.Exception.Stacktrace> property, is not preserved.
+> You can also use the `throw e` syntax in a `catch` block to instantiate a new exception that you pass on to the caller. In this case, the stack trace of the original exception, which is available from the <xref:System.Exception.StackTrace> property, is not preserved.
  
 ## The `throw` expression
 

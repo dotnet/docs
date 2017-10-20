@@ -62,6 +62,7 @@
         <param name="subBuilder">The <see cref="T:System.Web.UI.ControlBuilder" /> object assigned to the child control.</param>
         <summary>Adds builders to the <see cref="T:System.Web.UI.ControlBuilder" /> object for any child controls that belong to the container control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.LiteralTextContainerControlBuilder.AppendSubBuilder(System.Web.UI.ControlBuilder)" />
       </Docs>
     </Member>
   </Members>

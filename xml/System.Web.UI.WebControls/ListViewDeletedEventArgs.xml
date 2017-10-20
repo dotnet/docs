@@ -35,6 +35,15 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ListView" />
+    <altmember cref="M:System.Web.UI.WebControls.ListView.DeleteItem(System.Int32)" />
+    <altmember cref="E:System.Web.UI.WebControls.ListView.ItemDeleted" />
+    <altmember cref="M:System.Web.UI.WebControls.ListView.OnItemDeleted(System.Web.UI.WebControls.ListViewDeletedEventArgs)" />
+    <altmember cref="P:System.Web.UI.WebControls.ListViewDeletedEventArgs.AffectedRows" />
+    <altmember cref="P:System.Web.UI.WebControls.ListViewDeletedEventArgs.Exception" />
+    <altmember cref="P:System.Web.UI.WebControls.ListViewDeletedEventArgs.ExceptionHandled" />
+    <altmember cref="P:System.Web.UI.WebControls.ListViewDeletedEventArgs.Keys" />
+    <altmember cref="P:System.Web.UI.WebControls.ListViewDeletedEventArgs.Values" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -73,6 +82,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemDeleted" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.OnItemDeleted(System.Web.UI.WebControls.ListViewDeletedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="AffectedRows">
@@ -112,6 +124,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemDeleted" />
+        <altmember cref="M:System.Web.UI.WebControls.ListView.OnItemDeleted(System.Web.UI.WebControls.ListViewDeletedEventArgs)" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.ConflictDetection" />
+        <altmember cref="T:System.Web.UI.ConflictOptions" />
       </Docs>
     </Member>
     <Member MemberName="Exception">
@@ -148,6 +165,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemDeleted" />
       </Docs>
     </Member>
     <Member MemberName="ExceptionHandled">
@@ -182,6 +201,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemDeleted" />
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -220,6 +241,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.DataKeyNames" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemDeleted" />
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="T:System.Collections.DictionaryEntry" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewDeletedEventArgs.Values" />
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -261,6 +288,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.DataKeyNames" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.ItemDeleted" />
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="T:System.Collections.DictionaryEntry" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewDeletedEventArgs.Keys" />
       </Docs>
     </Member>
   </Members>

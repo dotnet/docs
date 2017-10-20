@@ -308,6 +308,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.FamilyTypefaceCollection.CopyTo(System.Windows.Media.FamilyTypeface[],System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -385,6 +386,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.FamilyTypefaceCollection.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Add">
@@ -414,6 +416,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.FamilyTypefaceCollection.Add(System.Windows.Media.FamilyTypeface)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Contains">
@@ -444,6 +447,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.FamilyTypefaceCollection.Contains(System.Windows.Media.FamilyTypeface)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IndexOf">
@@ -473,6 +477,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.FamilyTypefaceCollection.IndexOf(System.Windows.Media.FamilyTypeface)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Insert">
@@ -503,6 +508,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.FamilyTypefaceCollection.Insert(System.Int32,System.Windows.Media.FamilyTypeface)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsFixedSize">
@@ -558,6 +564,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.FamilyTypefaceCollection.Item(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Remove">
@@ -586,6 +593,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.FamilyTypefaceCollection.Remove(System.Windows.Media.FamilyTypeface)" />
       </Docs>
     </Member>
   </Members>

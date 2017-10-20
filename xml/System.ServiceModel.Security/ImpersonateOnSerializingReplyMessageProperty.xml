@@ -166,5 +166,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TryGet">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the <see cref="T:System.ServiceModel.Security.ImpersonateOnSerializingReplyMessageProperty" /> property from the specified message or message properties.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

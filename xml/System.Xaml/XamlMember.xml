@@ -46,6 +46,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Xaml.XamlType" />
+    <altmember cref="T:System.Xaml.XamlDirective" />
+    <altmember cref="T:System.Xaml.XamlObjectWriter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -408,6 +411,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Markup.DependsOnAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -560,6 +564,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Markup.AmbientAttribute" />
       </Docs>
     </Member>
     <Member MemberName="IsAttachable">
@@ -861,6 +866,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlMember.DeferringLoader" />
       </Docs>
     </Member>
     <Member MemberName="LookupDependsOn">
@@ -893,6 +899,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlMember.DependsOn" />
       </Docs>
     </Member>
     <Member MemberName="LookupInvoker">
@@ -923,6 +930,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlMember.Invoker" />
+        <altmember cref="T:System.Xaml.Schema.XamlMemberInvoker" />
       </Docs>
     </Member>
     <Member MemberName="LookupIsAmbient">
@@ -954,6 +963,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Markup.AmbientAttribute" />
       </Docs>
     </Member>
     <Member MemberName="LookupIsEvent">
@@ -983,6 +993,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlMember.IsEvent" />
       </Docs>
     </Member>
     <Member MemberName="LookupIsReadOnly">
@@ -1012,6 +1023,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlMember.IsReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="LookupIsReadPublic">
@@ -1046,6 +1058,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlMember.IsReadPublic" />
       </Docs>
     </Member>
     <Member MemberName="LookupIsUnknown">
@@ -1075,6 +1088,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlMember.IsUnknown" />
       </Docs>
     </Member>
     <Member MemberName="LookupIsWriteOnly">
@@ -1104,6 +1118,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlMember.IsWriteOnly" />
       </Docs>
     </Member>
     <Member MemberName="LookupIsWritePublic">
@@ -1136,6 +1151,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlMember.IsWritePublic" />
       </Docs>
     </Member>
     <Member MemberName="LookupMarkupExtensionBracketCharacters">
@@ -1183,6 +1199,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlMember.TargetType" />
       </Docs>
     </Member>
     <Member MemberName="LookupType">
@@ -1221,6 +1238,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlMember.Type" />
       </Docs>
     </Member>
     <Member MemberName="LookupTypeConverter">
@@ -1255,6 +1273,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlMember.TypeConverter" />
       </Docs>
     </Member>
     <Member MemberName="LookupUnderlyingGetter">
@@ -1313,6 +1332,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlMember.UnderlyingMember" />
       </Docs>
     </Member>
     <Member MemberName="LookupUnderlyingSetter">
@@ -1375,6 +1395,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlMember.ValueSerializer" />
       </Docs>
     </Member>
     <Member MemberName="MarkupExtensionBracketCharacters">
@@ -1697,5 +1718,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether the current object is equal to another object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlMember" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -620,6 +620,7 @@ MsgBox(CStr(WebBrowserArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.Move" />
       </Docs>
     </Member>
     <Member MemberName="Navigated">
@@ -905,6 +906,7 @@ MsgBox(CStr(WebBrowserArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.Resize" />
       </Docs>
     </Member>
     <Member MemberName="SetIndex">
@@ -1039,6 +1041,7 @@ MsgBox(CStr(WebBrowserArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.SystemColorsChanged" />
       </Docs>
     </Member>
     <Member MemberName="Validated">
@@ -1098,6 +1101,7 @@ MsgBox(CStr(WebBrowserArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.Validated" />
       </Docs>
     </Member>
     <Member MemberName="Validating">
@@ -1157,6 +1161,7 @@ MsgBox(CStr(WebBrowserArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.Validating" />
       </Docs>
     </Member>
     <Member MemberName="VisibleChanged">
@@ -1188,5 +1193,14 @@ MsgBox(CStr(WebBrowserArray(1).Text))
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.WebBrowserArray" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

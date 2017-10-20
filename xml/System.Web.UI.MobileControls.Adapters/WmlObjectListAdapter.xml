@@ -26,6 +26,7 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -80,6 +81,7 @@
         <param name="doDataBind">If <see langword="true" />, the instantiated templates bind to available data (which usually happens on the first request). If <see langword="false" />, the templates do not bind to data, and instead rely on view state to fill them in (which usually happens on subsequent postbacks).</param>
         <summary>Called by a control to create a templated user interface (UI). This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.ControlAdapter.CreateTemplatedUI(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="HandlePostBackEvent">
@@ -191,6 +193,7 @@
         <returns>
           <see langword="true" /> if an object list control contains a default command and no other commands; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -233,6 +236,7 @@
         <param name="writer">The text writer to receive output.</param>
         <summary>Generates the target-specific markup for the control to which the control adapter is attached, using the provided writer.  This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.Render(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="RenderItemDetails">
@@ -332,6 +336,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.WmlObjectListAdapter.ShouldRenderAsTable" />
+        <altmember cref="P:System.Web.Configuration.HttpCapabilitiesBase.Tables" />
+        <altmember cref="T:System.Web.UI.MobileControls.List" />
       </Docs>
     </Member>
   </Members>

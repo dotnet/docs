@@ -38,6 +38,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Documents.TextPointerContext" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -117,6 +118,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">Occurs when <paramref name="formattingProperty" /> does not specify a valid formatting property, or <paramref name="value" /> specifies an invalid value for <paramref name="formattingProperty" />.</exception>
         <exception cref="T:System.ArgumentNullException">Occurs when <paramref name="formattingProperty" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.TextRange.ClearAllProperties" />
+        <altmember cref="M:System.Windows.Documents.TextRange.GetPropertyValue(System.Windows.DependencyProperty)" />
       </Docs>
     </Member>
     <Member MemberName="CanLoad">
@@ -155,6 +158,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Documents.TextRange.CanSave(System.String)" />
+        <altmember cref="M:System.Windows.Documents.TextRange.Save(System.IO.Stream,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CanSave">
@@ -193,6 +198,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Documents.TextRange.CanLoad(System.String)" />
+        <altmember cref="M:System.Windows.Documents.TextRange.Load(System.IO.Stream,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Changed">
@@ -235,6 +242,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Documents.TextRange.ApplyPropertyValue(System.Windows.DependencyProperty,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -302,6 +310,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.TextRange.Start" />
       </Docs>
     </Member>
     <Member MemberName="GetPropertyValue">
@@ -333,6 +342,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">Occurs when <paramref name="formattingProperty" /> does not specify a valid formatting property, or <paramref name="value" /> specifies an invalid value for <paramref name="formattingProperty" />.</exception>
         <exception cref="T:System.ArgumentNullException">Occurs when <paramref name="formattingProperty" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Documents.TextRange.ClearAllProperties" />
+        <altmember cref="M:System.Windows.Documents.TextRange.ApplyPropertyValue(System.Windows.DependencyProperty,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="IsEmpty">
@@ -409,6 +420,9 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">Occurs when <paramref name="stream" /> or <paramref name="dataFormat" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">Occurs when the specified data format is unsupported.  May also be raised if content loaded from <paramref name="stream" /> does not match the specified data format.</exception>
+        <altmember cref="M:System.Windows.Documents.TextRange.CanLoad(System.String)" />
+        <altmember cref="M:System.Windows.Documents.TextRange.Save(System.IO.Stream,System.String)" />
+        <altmember cref="M:System.Windows.Documents.TextRange.CanSave(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -456,6 +470,9 @@
  -or  
   
  Content loaded from <paramref name="stream" /> does not match the specified data format.</exception>
+        <altmember cref="M:System.Windows.Documents.TextRange.CanSave(System.String)" />
+        <altmember cref="M:System.Windows.Documents.TextRange.Load(System.IO.Stream,System.String)" />
+        <altmember cref="M:System.Windows.Documents.TextRange.CanLoad(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -555,6 +572,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.TextRange.End" />
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -593,5 +611,14 @@
         <exception cref="T:System.ArgumentNullException">Occurs when an attempt is made to set this property to <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Save">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Saves the current selection to a specified stream in a specified data format.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

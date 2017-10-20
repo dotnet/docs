@@ -41,6 +41,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.TreeView" />
+    <altmember cref="P:System.Windows.Forms.TreeView.DrawMode" />
+    <altmember cref="E:System.Windows.Forms.TreeView.DrawNode" />
+    <altmember cref="T:System.Windows.Forms.TreeViewDrawMode" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -107,6 +111,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TreeNode" />
+        <altmember cref="T:System.Windows.Forms.TreeView" />
+        <altmember cref="P:System.Windows.Forms.TreeView.DrawMode" />
+        <altmember cref="T:System.Windows.Forms.TreeViewDrawMode" />
       </Docs>
     </Member>
     <Member MemberName="DrawDefault">
@@ -187,6 +195,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Graphics" />
+        <altmember cref="T:System.Windows.Forms.TreeNode" />
+        <altmember cref="T:System.Windows.Forms.TreeView" />
       </Docs>
     </Member>
     <Member MemberName="Node">
@@ -227,6 +238,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DrawTreeNodeEventArgs.State" />
+        <altmember cref="T:System.Windows.Forms.TreeNode" />
+        <altmember cref="P:System.Windows.Forms.TreeNode.Text" />
+        <altmember cref="T:System.Windows.Forms.TreeView" />
       </Docs>
     </Member>
     <Member MemberName="State">
@@ -267,6 +282,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DrawTreeNodeEventArgs.Node" />
+        <altmember cref="T:System.Windows.Forms.TreeNode" />
+        <altmember cref="P:System.Windows.Forms.TreeNode.IsExpanded" />
+        <altmember cref="T:System.Windows.Forms.TreeView" />
       </Docs>
     </Member>
   </Members>

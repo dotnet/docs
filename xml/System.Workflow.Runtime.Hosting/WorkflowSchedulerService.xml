@@ -144,5 +144,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Schedule">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Called by the runtime to request a new thread to run a workflow instance.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

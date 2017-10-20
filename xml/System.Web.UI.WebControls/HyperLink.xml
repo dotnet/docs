@@ -113,6 +113,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.WebControls.HyperLink.Text" />
+    <altmember cref="P:System.Web.UI.WebControls.HyperLink.ImageUrl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -220,6 +222,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.HasControls" />
       </Docs>
     </Member>
     <Member MemberName="ImageHeight">
@@ -293,6 +296,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.HyperLink.Text" />
       </Docs>
     </Member>
     <Member MemberName="ImageWidth">
@@ -337,6 +341,7 @@
         <param name="savedState">An object that contains the previously saved state.</param>
         <summary>Restores view-state information from a previous request that was saved with the <see cref="M:System.Web.UI.WebControls.WebControl.SaveViewState" /> method.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.LoadViewState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="NavigateUrl">
@@ -444,6 +449,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.RenderingCompatibility" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.DisabledCssClass" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Target">
@@ -509,6 +517,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.HyperLink.NavigateUrl" />
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -563,6 +572,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.HyperLink.ImageUrl" />
       </Docs>
     </Member>
   </Members>

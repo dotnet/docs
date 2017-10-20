@@ -57,6 +57,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Xml.Serialization.XmlSerializer.Serialize(System.IO.TextWriter,System.Object)" />
+    <altmember cref="M:System.Xml.Serialization.XmlSerializer.Deserialize(System.IO.Stream)" />
+    <altmember cref="T:System.Xml.Serialization.XmlSerializer" />
+    <altmember cref="P:System.Xml.Serialization.XmlAttributes.XmlEnum" />
+    <altmember cref="T:System.Xml.Serialization.XmlAttributeOverrides" />
+    <altmember cref="T:System.Xml.Serialization.XmlAttributes" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -104,6 +110,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Serialization.XmlSerializer.Serialize(System.IO.TextWriter,System.Object)" />
+        <altmember cref="M:System.Xml.Serialization.XmlSerializer.Deserialize(System.IO.Stream)" />
+        <altmember cref="T:System.Xml.Serialization.XmlSerializer" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -153,6 +162,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Serialization.XmlSerializer.Serialize(System.IO.TextWriter,System.Object)" />
+        <altmember cref="M:System.Xml.Serialization.XmlSerializer.Deserialize(System.IO.Stream)" />
+        <altmember cref="T:System.Xml.Serialization.XmlSerializer" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -203,7 +215,19 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Serialization.XmlSerializer.Serialize(System.IO.TextWriter,System.Object)" />
+        <altmember cref="M:System.Xml.Serialization.XmlSerializer.Deserialize(System.IO.Stream)" />
+        <altmember cref="T:System.Xml.Serialization.XmlSerializer" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.XmlEnumAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

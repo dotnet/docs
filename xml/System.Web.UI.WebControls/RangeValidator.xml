@@ -67,6 +67,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.WebControls.BaseValidator.ControlToValidate" />
+    <altmember cref="P:System.Web.UI.WebControls.RangeValidator.MaximumValue" />
+    <altmember cref="P:System.Web.UI.WebControls.RangeValidator.MinimumValue" />
+    <altmember cref="P:System.Web.UI.WebControls.BaseCompareValidator.Type" />
+    <altmember cref="T:System.Web.UI.WebControls.RequiredFieldValidator" />
+    <altmember cref="T:System.Web.UI.WebControls.BaseValidator" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -219,6 +225,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.RangeValidator.MinimumValue" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseCompareValidator.Type" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseValidator.IsValid" />
+        <altmember cref="F:System.String.Empty" />
       </Docs>
     </Member>
     <Member MemberName="MinimumValue">
@@ -268,6 +278,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.RangeValidator.MaximumValue" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseCompareValidator.Type" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseValidator.IsValid" />
+        <altmember cref="F:System.String.Empty" />
       </Docs>
     </Member>
   </Members>

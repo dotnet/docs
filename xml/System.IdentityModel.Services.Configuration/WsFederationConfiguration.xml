@@ -20,6 +20,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IdentityModel.Services.WSFederationAuthenticationModule" />
+    <altmember cref="P:System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -47,6 +49,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IdentityModel.Services.Configuration.WSFederationElement" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -98,6 +101,7 @@
         <summary>Gets or sets the value of the wauth parameter to use in WS-Federation sign-in requests ("wsignin1.0").</summary>
         <value>A URI that specifies the authentication type. The default is an empty string.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.AuthenticationType" />
       </Docs>
     </Member>
     <Member MemberName="CustomAttributes">
@@ -239,6 +243,7 @@
         <summary>Gets or sets the value of the wfresh parameter to use in WS-Federation sign-in requests ("wsignin1.0").</summary>
         <value>The desired maximum age of authentication requests, in minutes. The default is <see cref="F:System.IdentityModel.Services.Configuration.WsFederationConfiguration.DefaultFreshness" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.Freshness" />
       </Docs>
     </Member>
     <Member MemberName="HomeRealm">
@@ -257,6 +262,7 @@
         <summary>Gets or sets the value of the whr parameter to use in WS-Federation sign-in requests ("wsignin1.0").</summary>
         <value>The address of the home realm identity provider. The default is an empty string.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.HomeRealm" />
       </Docs>
     </Member>
     <Member MemberName="Issuer">
@@ -276,6 +282,7 @@
         <value>The URI that identifies the security token service (STS). Cannot be <see langword="null" />.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">An attempt to set the property to <see langword="null" /> occurs.</exception>
+        <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.Issuer" />
       </Docs>
     </Member>
     <Member MemberName="PassiveRedirectEnabled">
@@ -295,6 +302,7 @@
         <value>
           <see langword="true" /> to enable redirects; otherwise, <see langword="false" />. The default is <see cref="F:System.IdentityModel.Services.Configuration.WsFederationConfiguration.DefaultPassiveRedirectEnabled" />, redirects are enabled.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.PassiveRedirectEnabled" />
       </Docs>
     </Member>
     <Member MemberName="PersistentCookiesOnPassiveRedirects">
@@ -314,6 +322,7 @@
         <value>
           <see langword="true" /> to issue a persistent session cookie; otherwise, <see langword="false" />. The default is <see cref="F:System.IdentityModel.Services.Configuration.WsFederationConfiguration.DefaultPersistentCookiesOnPassiveRedirects" />, cookies are not enabled.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.PersistentCookiesOnPassiveRedirects" />
       </Docs>
     </Member>
     <Member MemberName="Policy">
@@ -332,6 +341,7 @@
         <summary>Gets or sets the value of the wp parameter to be used in WS-Federation sign-in requests ("wsignin1.0").</summary>
         <value>A URL that identifies the policy to use. The default is an empty string.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.Policy" />
       </Docs>
     </Member>
     <Member MemberName="Realm">
@@ -351,6 +361,7 @@
         <value>A URI that identifies the relying party (RP) to the security token service (STS). Cannot be <see langword="null" />.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">An attempt to set the property to <see langword="null" /> occurs.</exception>
+        <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.Realm" />
       </Docs>
     </Member>
     <Member MemberName="Reply">
@@ -369,6 +380,7 @@
         <summary>Gets or sets the value of the wreply parameter to use in WS-Federation sign-in requests ("wsignin1.0").</summary>
         <value>A URL that identifies the address at which the relying party (RP) application would like to receive replies from the Security Token Service (STS). The default is an empty string.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.Reply" />
       </Docs>
     </Member>
     <Member MemberName="Request">
@@ -387,6 +399,7 @@
         <summary>Gets or sets the value of the wreq parameter to use in WS-Federation sign-in requests ("wsignin1.0").</summary>
         <value>The token issuance request expressed as a <see langword="&lt;wst:RequestSecurityToken&gt;" /> element. The default is an empty string.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.Request" />
       </Docs>
     </Member>
     <Member MemberName="RequestPtr">
@@ -405,6 +418,7 @@
         <summary>Gets or sets the value of the wreqptr parameter to use in WS-Federation sign-in requests ("wsignin1.0").</summary>
         <value>A URL that specifies the location of the token issuance request expressed as a <see langword="&lt;wst:RequestSecurityToken&gt;" /> element</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.RequestPtr" />
       </Docs>
     </Member>
     <Member MemberName="RequireHttps">
@@ -424,6 +438,7 @@
         <value>
           <see langword="true" /> if communication with the STS must be secured using HTTPS; otherwise, <see langword="false" />. The default is <see cref="F:System.IdentityModel.Services.Configuration.WsFederationConfiguration.DefaultRequireHttps" />, HTTPS is required.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.RequireHttps" />
       </Docs>
     </Member>
     <Member MemberName="Resource">
@@ -449,6 +464,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.Resource" />
       </Docs>
     </Member>
     <Member MemberName="SignInQueryString">
@@ -467,6 +483,7 @@
         <summary>Gets or sets a query string that contains any additional parameters to be sent in WS-Federation sign-in requests ("wsignin1.0").</summary>
         <value>A URL fragment that contains the additional message parameters in the following format: <c>"?param1=value1&amp;param2=value2&amp;paramN=valueN"</c>. The default is an empty string.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.SignInQueryString" />
       </Docs>
     </Member>
     <Member MemberName="SignOutQueryString">
@@ -485,6 +502,7 @@
         <summary>Gets or sets a query string that contains any additional parameters to be sent in WS-Federation sign-out requests ("wsignout1.0") during passive sign-out.</summary>
         <value>A URL fragment that contains the additional message parameters in the following format: <c>"?param1=value1&amp;param2=value2&amp;paramN=valueN"</c>. The default is an empty string.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.SignOutQueryString" />
       </Docs>
     </Member>
     <Member MemberName="SignOutReply">
@@ -503,6 +521,7 @@
         <summary>Gets or sets the value of the wreply parameter to use during WS-Federation sign-out requests ("wsignout1.0").</summary>
         <value>The URL to which the client should be redirected by the security token service (STS) during passive sign-out through the WS-Federation protocol. The default is an empty string.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.SignOutReply" />
       </Docs>
     </Member>
     <Member MemberName="XmlDictionaryReaderQuotas">
@@ -522,7 +541,17 @@
         <value>The object that contains the configurable quota values. The default object has the <see cref="P:System.Xml.XmlDictionaryReaderQuotas.MaxArrayLength" /> property set to <see cref="F:System.IdentityModel.Services.Configuration.WsFederationConfiguration.DefaultMaxArrayLength" /> and the <see cref="P:System.Xml.XmlDictionaryReaderQuotas.MaxStringContentLength" /> property set to <see cref="F:System.IdentityModel.Services.Configuration.WsFederationConfiguration.DefaultMaxStringContentLength" />.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">An attempt to set the property to <see langword="null" /> occurs.</exception>
+        <altmember cref="T:System.IdentityModel.Services.WSFederationAuthenticationModule" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.Configuration.WsFederationConfiguration" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

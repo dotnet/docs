@@ -27,6 +27,8 @@
  ]]></format>
     </remarks>
     <forInternalUseOnly />
+    <altmember cref="T:System.Web.UI.IBindableTemplate" />
+    <altmember cref="T:System.Web.UI.ExtractTemplateValuesMethod" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -78,6 +80,8 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.UI.ExtractTemplateValuesMethod" />
+        <altmember cref="T:System.Web.UI.IBindableTemplate" />
       </Docs>
     </Member>
     <Member MemberName="InstantiateIn">
@@ -107,6 +111,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.UI.ITemplate" />
       </Docs>
     </Member>
   </Members>

@@ -57,6 +57,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Text.RegularExpressions.Group" />
   </Docs>
   <Members>
     <Member MemberName="CopyTo">
@@ -288,6 +289,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Text.RegularExpressions.GroupCollection.SyncRoot" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -448,6 +450,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Text.RegularExpressions.GroupCollection.IsSynchronized" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ICollection&lt;System.Text.RegularExpressions.Group&gt;.Add">
@@ -897,5 +900,18 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.RegularExpressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Enables access to a single member of the collection by integer or string index.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

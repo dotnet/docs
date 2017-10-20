@@ -13,6 +13,8 @@
   <Docs>
     <summary>Provides design-time support in a visual designer for the <see cref="T:System.Web.UI.WebControls.TreeView" /> control.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+    <altmember cref="T:System.Web.UI.Design.WebControls.HierarchicalDataBoundControlDesigner" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +30,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.TreeViewDesigner" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
       </Docs>
     </Member>
     <Member MemberName="ActionLists">
@@ -46,6 +49,8 @@
         <summary>Gets the designer action list collection for this designer.</summary>
         <value>The <see cref="T:System.ComponentModel.Design.DesignerActionListCollection" /> associated with this designer.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="P:System.Web.UI.Design.WebControls.HierarchicalDataBoundControlDesigner.ActionLists" />
       </Docs>
     </Member>
     <Member MemberName="AutoFormats">
@@ -64,6 +69,8 @@
         <summary>Gets the collection of predefined automatic formatting schemes to display in the **Auto Format** dialog box for the associated control at design time.</summary>
         <value>A <see cref="T:System.Web.UI.Design.DesignerAutoFormatCollection" /> object that contains the predefined schemes for the control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.AutoFormats" />
       </Docs>
     </Member>
     <Member MemberName="CreateLineImages">
@@ -82,6 +89,7 @@
       <Docs>
         <summary>Displays a dialog box to edit the line images for the <see cref="T:System.Web.UI.WebControls.TreeView" /> control.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
       </Docs>
     </Member>
     <Member MemberName="DataBind">
@@ -103,6 +111,7 @@
         <param name="dataBoundControl">The data bound control.</param>
         <summary>Binds the associated control to the design-time data source.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
       </Docs>
     </Member>
     <Member MemberName="EditBindings">
@@ -121,6 +130,7 @@
       <Docs>
         <summary>Displays a dialog box to edit the data bindings.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
       </Docs>
     </Member>
     <Member MemberName="EditNodes">
@@ -139,6 +149,7 @@
       <Docs>
         <summary>Displays a dialog box to edit the <see cref="T:System.Web.UI.WebControls.TreeNodeCollection" /> object.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeHtml">
@@ -158,6 +169,8 @@
         <summary>Retrieves the HTML markup that is used to represent the control at design time.</summary>
         <returns>The markup used to render the control at design time.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.GetDesignTimeHtml" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
       </Docs>
     </Member>
     <Member MemberName="GetEmptyDesignTimeHtml">
@@ -177,6 +190,8 @@
         <summary>Retrieves the HTML markup text that is used to render a placeholder for the associated control at design time.</summary>
         <returns>The markup used to render the control at design time with an empty data source.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.GetEmptyDesignTimeHtml" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
       </Docs>
     </Member>
     <Member MemberName="GetErrorDesignTimeHtml">
@@ -199,6 +214,8 @@
         <summary>Provides the markup that is used to render the control at design time when an error has occurred.</summary>
         <returns>The markup used to render the control at design time when an error has occurred.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.GetErrorDesignTimeHtml(System.Exception)" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
       </Docs>
     </Member>
     <Member MemberName="GetSampleDataSource">
@@ -218,6 +235,8 @@
         <summary>Constructs a sample data source that can be used at design time for the associated control.</summary>
         <returns>An object implementing the <see cref="T:System.Web.UI.IHierarchicalEnumerable" /> interface that can be used as a data source for controls derived from <see cref="T:System.Web.UI.WebControls.HierarchicalDataBoundControl" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.Design.WebControls.HierarchicalDataBoundControlDesigner.GetSampleDataSource" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -239,6 +258,7 @@
         <param name="component">An <see cref="T:System.ComponentModel.IComponent" /> that can be cast as a <see cref="T:System.Web.UI.WebControls.TreeView" />.</param>
         <summary>When overridden in a derived class, provides for custom initialization of the given <see cref="T:System.Web.UI.WebControls.TreeView" /> control.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
       </Docs>
     </Member>
     <Member MemberName="UsePreviewControl">
@@ -258,6 +278,7 @@
         <value>
           <see langword="true" />, if the control designer uses a temporary copy of the control for design-time preview; otherwise, <see langword="false" />, if the control designer uses the <see cref="P:System.ComponentModel.Design.ComponentDesigner.Component" /> property for the control contained in the control designer.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.UsePreviewControl" />
       </Docs>
     </Member>
   </Members>

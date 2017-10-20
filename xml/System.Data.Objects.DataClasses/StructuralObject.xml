@@ -2113,5 +2113,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetValidValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Makes sure the value being set for a property is valid.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

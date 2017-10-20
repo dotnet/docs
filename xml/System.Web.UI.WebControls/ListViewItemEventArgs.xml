@@ -34,6 +34,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ListView" />
+    <altmember cref="E:System.Web.UI.WebControls.ListView.ItemCreated" />
+    <altmember cref="E:System.Web.UI.WebControls.ListView.ItemDataBound" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -68,6 +71,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListViewItemEventArgs.Item" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -101,6 +105,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListViewItem" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewItem.ItemType" />
       </Docs>
     </Member>
   </Members>

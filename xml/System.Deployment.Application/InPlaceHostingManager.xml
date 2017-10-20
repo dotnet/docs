@@ -479,5 +479,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of <see cref="T:System.Deployment.Application.InPlaceHostingManager" /> to download and install the specified application.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AssertApplicationRequirements">
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the ClickOnce application has the appropriate permissions and platform dependencies to run on the local computer.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

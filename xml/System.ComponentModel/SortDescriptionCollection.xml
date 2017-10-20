@@ -20,6 +20,7 @@
   <Docs>
     <summary>Represents a collection of <see cref="T:System.ComponentModel.SortDescription" /> objects.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Collections.Specialized.INotifyCollectionChanged" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -79,6 +80,7 @@
       <Docs>
         <summary>Occurs when an item is added or removed.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Collections.Specialized.INotifyCollectionChanged" />
       </Docs>
     </Member>
     <Member MemberName="Empty">

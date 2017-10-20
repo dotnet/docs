@@ -48,6 +48,10 @@
  ]]></format>
     </remarks>
     <threadsafe>This type is safe for multithreaded read operations. You must synchronize any write operations.</threadsafe>
+    <altmember cref="T:System.Data.ConstraintCollection" />
+    <altmember cref="P:System.Data.DataTable.Constraints" />
+    <altmember cref="T:System.Data.ForeignKeyConstraint" />
+    <altmember cref="T:System.Data.UniqueConstraint" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

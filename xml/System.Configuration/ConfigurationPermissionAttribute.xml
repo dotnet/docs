@@ -18,6 +18,7 @@
   <Docs>
     <summary>Creates a <see cref="T:System.Configuration.ConfigurationPermission" /> object that either grants or denies the marked target permission to access sections of configuration files.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Configuration.ConfigurationPermission" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,6 +37,7 @@
         <param name="action">The security action represented by an enumeration member of <see cref="T:System.Security.Permissions.SecurityAction" />. Determines the permission state of the attribute.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationPermissionAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Security.Permissions.SecurityAction" />
       </Docs>
     </Member>
     <Member MemberName="CreatePermission">

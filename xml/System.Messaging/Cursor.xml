@@ -30,6 +30,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Messaging.MessageQueue.CreateCursor" />
   </Docs>
   <Members>
     <Member MemberName="Close">
@@ -48,6 +49,8 @@
       <Docs>
         <summary>Closes the cursor, allowing Message Queuing to release the associated resources.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Messaging.Cursor" />
+        <altmember cref="M:System.Messaging.MessageQueue.CreateCursor" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -66,6 +69,8 @@
       <Docs>
         <summary>Releases all resources used by the <see cref="T:System.Messaging.Cursor" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Messaging.Cursor" />
+        <altmember cref="M:System.Messaging.MessageQueue.CreateCursor" />
       </Docs>
     </Member>
   </Members>

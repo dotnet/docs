@@ -53,5 +53,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="E:System.Web.UI.WebControls.CreateUserWizard.SendMailError" />
+    <altmember cref="E:System.Web.UI.WebControls.ChangePassword.SendMailError" />
+    <altmember cref="E:System.Web.UI.WebControls.PasswordRecovery.SendMailError" />
+    <altmember cref="T:System.Net.Mail.MailMessage" />
+    <altmember cref="T:System.Web.Mail.SmtpMail" />
   </Docs>
 </Type>

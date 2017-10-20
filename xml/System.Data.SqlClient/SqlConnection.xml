@@ -1795,6 +1795,7 @@ class Program {
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="collectionName" /> is specified as null.</exception>
+        <altmember cref="M:System.Data.SqlClient.SqlConnection.GetSchema" />
       </Docs>
     </Member>
     <Member MemberName="InfoMessage">
@@ -2308,5 +2309,35 @@ class Program {
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.SqlClient.SqlConnection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ChangePassword">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Changes the SQL Server password.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginTransaction">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Starts a database transaction.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -68,6 +68,15 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+    <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+    <altmember cref="T:System.Web.UI.WebControls.TreeNodeBinding" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeView.DataBindings" />
+    <altmember cref="M:System.Web.UI.WebControls.TreeNodeBindingCollection.Add(System.Web.UI.WebControls.TreeNodeBinding)" />
+    <altmember cref="M:System.Web.UI.WebControls.TreeNodeBindingCollection.Insert(System.Int32,System.Web.UI.WebControls.TreeNodeBinding)" />
+    <altmember cref="M:System.Web.UI.WebControls.TreeNodeBindingCollection.Remove(System.Web.UI.WebControls.TreeNodeBinding)" />
+    <altmember cref="M:System.Web.UI.WebControls.TreeNodeBindingCollection.RemoveAt(System.Int32)" />
+    <altmember cref="M:System.Web.UI.StateManagedCollection.Clear" />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -127,6 +136,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.DataBindings" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeBindingCollection.Insert(System.Int32,System.Web.UI.WebControls.TreeNodeBinding)" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeBindingCollection.Remove(System.Web.UI.WebControls.TreeNodeBinding)" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeBindingCollection.RemoveAt(System.Int32)" />
+        <altmember cref="M:System.Web.UI.StateManagedCollection.Clear" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -157,6 +173,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNodeBinding" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeBindingCollection.IndexOf(System.Web.UI.WebControls.TreeNodeBinding)" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -197,6 +216,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNodeBinding" />
+        <altmember cref="T:System.Array" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBindingCollection.Item(System.Int32)" />
+        <altmember cref="M:System.Collections.ArrayList.CopyTo(System.Array)" />
+        <altmember cref="M:System.Web.UI.StateManagedCollection.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="CreateKnownType">
@@ -270,6 +295,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNodeBinding" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeBindingCollection.Contains(System.Web.UI.WebControls.TreeNodeBinding)" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -330,6 +358,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.DataBindings" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeBindingCollection.Add(System.Web.UI.WebControls.TreeNodeBinding)" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeBindingCollection.Remove(System.Web.UI.WebControls.TreeNodeBinding)" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeBindingCollection.RemoveAt(System.Int32)" />
+        <altmember cref="M:System.Web.UI.StateManagedCollection.Clear" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -387,6 +422,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+        <altmember cref="M:System.Web.UI.StateManagedCollection.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="OnClear">
@@ -507,6 +545,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.DataBindings" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeBindingCollection.Add(System.Web.UI.WebControls.TreeNodeBinding)" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeBindingCollection.Insert(System.Int32,System.Web.UI.WebControls.TreeNodeBinding)" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeBindingCollection.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -565,6 +609,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.DataBindings" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeBindingCollection.Add(System.Web.UI.WebControls.TreeNodeBinding)" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeBindingCollection.Insert(System.Int32,System.Web.UI.WebControls.TreeNodeBinding)" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeBindingCollection.Remove(System.Web.UI.WebControls.TreeNodeBinding)" />
       </Docs>
     </Member>
     <Member MemberName="SetDirtyObject">

@@ -57,6 +57,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ToolStripDropDownMenu" />
+    <altmember cref="P:System.Windows.Forms.ToolStripDropDownMenu.ShowCheckMargin" />
+    <altmember cref="P:System.Windows.Forms.ToolStripDropDownMenu.ShowImageMargin" />
+    <altmember cref="P:System.Windows.Forms.Control.ContextMenuStrip" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -156,6 +160,7 @@
           <see langword="true" /> to make the control visible; otherwise, <see langword="false" />.</param>
         <summary>Sets the control to the specified visible state.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.SetVisibleCore(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="SourceControl">
@@ -204,5 +209,14 @@
         <permission cref="T:System.Security.Permissions.UIPermission">for all windows to set this property value. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ContextMenuStrip" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

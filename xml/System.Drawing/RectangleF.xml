@@ -474,6 +474,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Drawing.RectangleF.Inflate(System.Drawing.RectangleF,System.Single,System.Single)" />
       </Docs>
     </Member>
     <Member MemberName="Inflate">
@@ -876,10 +877,19 @@
         <Parameter Name="r" Type="System.Drawing.Rectangle" />
       </Parameters>
       <Docs>
-        <param name="r">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="r">The <see cref="T:System.Drawing.Rectangle" /> structure to convert.</param>
+        <summary>Converts the specified <see cref="T:System.Drawing.Rectangle" /> structure to a <see cref="T:System.Drawing.RectangleF" /> structure.</summary>
+        <returns>The <see cref="T:System.Drawing.RectangleF" /> structure that is converted from the specified <see cref="T:System.Drawing.Rectangle" /> structure.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Drawing.RectangleF.op_Implicit%2A>, <xref:System.Drawing.RectangleF.%23ctor%2A>and <xref:System.Drawing.RectangleF.op_Equality%2A> members. This example is designed for use with a Windows Form. Paste this code into a form and call the `ConvertRectangleToRectangleF` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ System.Drawing.RectanglesAndPoints#6  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -1161,5 +1171,55 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Intersect">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines the <see cref="T:System.Drawing.RectangleF" /> structure that represents the intersection of two rectangles.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Inflate">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Enlarges this <see cref="T:System.Drawing.RectangleF" /> by the specified amount.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Offset">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adjusts the location of this rectangle by the specified amount.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Contains">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines if the specified point is contained within this <see cref="T:System.Drawing.RectangleF" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.RectangleF" /> class with the specified location and size.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

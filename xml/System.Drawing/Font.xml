@@ -433,6 +433,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="emSize" /> is less than or equal to 0, evaluates to infinity, or is not a valid number.</exception>
+        <altmember cref="P:System.Drawing.Font.GdiCharSet" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -511,6 +512,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="emSize" /> is less than or equal to 0, evaluates to infinity, or is not a valid number.</exception>
+        <altmember cref="P:System.Drawing.Font.GdiCharSet" />
       </Docs>
     </Member>
     <Member MemberName="Bold">
@@ -1156,6 +1158,7 @@
         <value>
           <see langword="true" /> to indicate this font has the italic style applied; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Drawing.Font.Style" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -1602,5 +1605,41 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetHeight">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the line spacing of this font.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToLogFont">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a GDI logical font (<c>LOGFONT</c>) structure from this <see cref="T:System.Drawing.Font" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new <see cref="T:System.Drawing.Font" /> that uses the specified existing <see cref="T:System.Drawing.Font" /> and <see cref="T:System.Drawing.FontStyle" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FromLogFont">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Drawing.Font" /> from the specified GDI logical font (<c>LOGFONT</c>) structure.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -38,6 +38,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.SqlDataSourceCommandEventHandler" />
+    <altmember cref="T:System.Web.UI.WebControls.SqlDataSourceView" />
+    <altmember cref="T:System.Web.UI.WebControls.SqlDataSource" />
+    <altmember cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnUpdating(System.Web.UI.WebControls.SqlDataSourceCommandEventArgs)" />
+    <altmember cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnInserting(System.Web.UI.WebControls.SqlDataSourceCommandEventArgs)" />
+    <altmember cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnDeleting(System.Web.UI.WebControls.SqlDataSourceCommandEventArgs)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -56,6 +62,9 @@
         <param name="command">An <see cref="T:System.Data.Common.DbCommand" /> object that represents the cancelable <see cref="M:System.Web.UI.WebControls.SqlDataSource.Update" />, <see cref="M:System.Web.UI.WebControls.SqlDataSource.Insert" />, or <see cref="M:System.Web.UI.WebControls.SqlDataSource.Delete" /> command.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.SqlDataSourceCommandEventArgs" /> class, using the specified database command object.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Update" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Insert" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Delete" />
       </Docs>
     </Member>
     <Member MemberName="Command">
@@ -95,6 +104,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.Common.DbCommand" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Update" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Insert" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Delete" />
       </Docs>
     </Member>
   </Members>

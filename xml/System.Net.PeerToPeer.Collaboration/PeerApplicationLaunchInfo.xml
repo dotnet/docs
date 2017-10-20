@@ -22,6 +22,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" />
+    <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" />
+    <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" />
   </Docs>
   <Members>
     <Member MemberName="Data">
@@ -49,6 +52,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerInvitationResponse" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" />
       </Docs>
     </Member>
     <Member MemberName="Message">
@@ -74,6 +80,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" />
       </Docs>
     </Member>
     <Member MemberName="PeerApplication">
@@ -99,6 +108,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerInvitationResponse" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" />
       </Docs>
     </Member>
     <Member MemberName="PeerContact">
@@ -124,6 +136,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerInvitationResponse" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" />
       </Docs>
     </Member>
     <Member MemberName="PeerEndPoint">
@@ -149,6 +164,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerInvitationResponse" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" />
       </Docs>
     </Member>
   </Members>

@@ -26,6 +26,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="N:System.DirectoryServices.AccountManagement" />
+    <altmember cref="T:System.DirectoryServices.AccountManagement.PrincipalSearcher" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -52,6 +54,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <altmember cref="T:System.DirectoryServices.AccountManagement.PrincipalSearcher" />
       </Docs>
     </Member>
     <Member MemberName="AccountExpirationDate">
@@ -111,6 +115,8 @@ foreach (UserPrincipal u in results)
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <altmember cref="T:System.DirectoryServices.AccountManagement.PrincipalSearcher" />
       </Docs>
     </Member>
     <Member MemberName="AccountLockoutTime">
@@ -170,6 +176,8 @@ foreach (UserPrincipal u in results)
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <altmember cref="T:System.DirectoryServices.AccountManagement.PrincipalSearcher" />
       </Docs>
     </Member>
     <Member MemberName="AdvancedFilterSet">
@@ -223,6 +231,8 @@ public class InetOrgPersonSearchFilter : AdvancedFilters
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <altmember cref="T:System.DirectoryServices.AccountManagement.PrincipalSearcher" />
       </Docs>
     </Member>
     <Member MemberName="BadLogonCount">
@@ -275,6 +285,8 @@ foreach (UserPrincipal u in results)
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <altmember cref="T:System.DirectoryServices.AccountManagement.PrincipalSearcher" />
       </Docs>
     </Member>
     <Member MemberName="LastBadPasswordAttempt">
@@ -334,6 +346,8 @@ foreach (UserPrincipal u in results)
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <altmember cref="T:System.DirectoryServices.AccountManagement.PrincipalSearcher" />
       </Docs>
     </Member>
     <Member MemberName="LastLogonTime">
@@ -391,6 +405,8 @@ foreach (UserPrincipal u in results)
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <altmember cref="T:System.DirectoryServices.AccountManagement.PrincipalSearcher" />
       </Docs>
     </Member>
     <Member MemberName="LastPasswordSetTime">
@@ -450,6 +466,8 @@ foreach (UserPrincipal u in results)
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <altmember cref="T:System.DirectoryServices.AccountManagement.PrincipalSearcher" />
       </Docs>
     </Member>
   </Members>

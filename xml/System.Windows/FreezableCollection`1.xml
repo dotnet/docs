@@ -204,6 +204,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Freezable.Clone" />
       </Docs>
     </Member>
     <Member MemberName="CloneCore">
@@ -235,6 +236,7 @@
         <block subset="none" type="overrides">
           <para>See the <see cref="M:System.Windows.Freezable.CloneCore(System.Windows.Freezable)" /> page for information about when you should override this method.</para>
         </block>
+        <altmember cref="M:System.Windows.Freezable.CloneCore(System.Windows.Freezable)" />
       </Docs>
     </Member>
     <Member MemberName="CloneCurrentValue">
@@ -261,6 +263,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Animation.Animatable.Clone" />
       </Docs>
     </Member>
     <Member MemberName="CloneCurrentValueCore">
@@ -292,6 +295,7 @@
         <block subset="none" type="overrides">
           <para>See the <see cref="M:System.Windows.Freezable.CloneCurrentValueCore(System.Windows.Freezable)" /> page for information about when you should override this method.</para>
         </block>
+        <altmember cref="M:System.Windows.Freezable.CloneCurrentValueCore(System.Windows.Freezable)" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -405,6 +409,7 @@
         <block subset="none" type="overrides">
           <para>Every <see cref="T:System.Windows.Freezable" /> subclass must implement this method. Typical implementation is to simply call the class default constructor and return the result.</para>
         </block>
+        <altmember cref="M:System.Windows.Freezable.CreateInstanceCore" />
       </Docs>
     </Member>
     <Member MemberName="FreezeCore">
@@ -440,6 +445,7 @@
         <block subset="none" type="overrides">
           <para>For information about when to override this method, see <see cref="M:System.Windows.Freezable.FreezeCore(System.Boolean)" />.</para>
         </block>
+        <altmember cref="M:System.Windows.Freezable.FreezeCore(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetAsFrozenCore">
@@ -471,6 +477,7 @@
         <block subset="none" type="overrides">
           <para>For information about when to override this method, see <see cref="M:System.Windows.Freezable.GetAsFrozenCore(System.Windows.Freezable)" />.</para>
         </block>
+        <altmember cref="M:System.Windows.Freezable.GetAsFrozenCore(System.Windows.Freezable)" />
       </Docs>
     </Member>
     <Member MemberName="GetCurrentValueAsFrozenCore">
@@ -502,6 +509,7 @@
         <block subset="none" type="overrides">
           <para>For information about when to override this method, see <see cref="M:System.Windows.Freezable.GetCurrentValueAsFrozenCore(System.Windows.Freezable)" />.</para>
         </block>
+        <altmember cref="M:System.Windows.Freezable.GetCurrentValueAsFrozenCore(System.Windows.Freezable)" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -709,6 +717,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.FreezableCollection`1.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -739,6 +748,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.FreezableCollection`1.CopyTo(`0[],System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -816,6 +826,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.FreezableCollection`1.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Add">
@@ -845,6 +856,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.FreezableCollection`1.Add(`0)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Contains">
@@ -875,6 +887,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.FreezableCollection`1.Contains(`0)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IndexOf">
@@ -904,6 +917,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.FreezableCollection`1.IndexOf(`0)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Insert">
@@ -934,6 +948,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.FreezableCollection`1.Insert(System.Int32,`0)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsFixedSize">
@@ -1015,6 +1030,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.FreezableCollection`1.Item(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Remove">
@@ -1043,7 +1059,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.FreezableCollection`1.Remove(`0)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of <see cref="T:System.Windows.FreezableCollection`1" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

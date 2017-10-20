@@ -37,6 +37,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Services.Protocols.SoapDocumentServiceAttribute" />
+    <altmember cref="T:System.Web.Services.Protocols.SoapRpcMethodAttribute" />
+    <altmember cref="T:System.Web.Services.Protocols.SoapRpcServiceAttribute" />
+    <altmember cref="T:System.Web.Services.Description.SoapBindingUse" />
+    <altmember cref="T:System.Web.Services.Protocols.SoapParameterStyle" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -137,6 +142,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Services.WebServiceBindingAttribute" />
       </Docs>
     </Member>
     <Member MemberName="OneWay">
@@ -175,6 +181,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Services.Protocols.SoapServerMessage" />
       </Docs>
     </Member>
     <Member MemberName="ParameterStyle">
@@ -203,6 +210,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Services.Protocols.SoapParameterStyle" />
       </Docs>
     </Member>
     <Member MemberName="RequestElementName">
@@ -370,7 +378,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Services.Description.SoapBindingUse" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.SoapDocumentMethodAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

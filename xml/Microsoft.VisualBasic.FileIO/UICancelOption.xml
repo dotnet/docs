@@ -19,6 +19,14 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:Microsoft.VisualBasic.FileIO.FileSystem.CopyDirectory(System.String,System.String)" />
+    <altmember cref="M:Microsoft.VisualBasic.FileIO.FileSystem.CopyFile(System.String,System.String)" />
+    <altmember cref="M:Microsoft.VisualBasic.FileIO.FileSystem.DeleteDirectory(System.String,Microsoft.VisualBasic.FileIO.DeleteDirectoryOption)" />
+    <altmember cref="M:Microsoft.VisualBasic.FileIO.FileSystem.DeleteFile(System.String)" />
+    <altmember cref="M:Microsoft.VisualBasic.FileIO.FileSystem.MoveDirectory(System.String,System.String)" />
+    <altmember cref="M:Microsoft.VisualBasic.FileIO.FileSystem.MoveFile(System.String,System.String)" />
+    <altmember cref="M:Microsoft.VisualBasic.Devices.Network.DownloadFile(System.String,System.String)" />
+    <altmember cref="M:Microsoft.VisualBasic.Devices.Network.UploadFile(System.String,System.String)" />
   </Docs>
   <Members>
     <Member MemberName="DoNothing">

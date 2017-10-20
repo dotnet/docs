@@ -65,6 +65,7 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
  ]]></format>
     </remarks>
     <threadsafe>All members of <see cref="T:System.Threading.Tasks.Task`1" />, except for <see cref="M:System.Threading.Tasks.Task.Dispose" />, are thread-safe and may be used from multiple threads concurrently.</threadsafe>
+    <altmember cref="T:System.Threading.Tasks.Task" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -1714,5 +1715,25 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
  An exception was thrown during the execution of the task. The <see cref="P:System.AggregateException.InnerExceptions" /> collection contains information about the exception or exceptions.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new <see cref="T:System.Threading.Tasks.Task`1" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ContinueWith">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a continuation task that executes when another task completes.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -28,6 +28,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Services.Discovery.ContractReference" />
+    <altmember cref="T:System.Web.Services.Discovery.SchemaReference" />
+    <altmember cref="T:System.Web.Services.Discovery.DiscoveryDocumentReference" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -302,5 +305,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Resolve">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Resolves whether the referenced document is valid.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

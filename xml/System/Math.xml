@@ -785,6 +785,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Math.Round" />
+        <altmember cref="M:System.Math.Floor(System.Decimal)" />
       </Docs>
     </Member>
     <Member MemberName="Ceiling">
@@ -839,6 +841,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Math.Round" />
+        <altmember cref="M:System.Math.Floor(System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="Clamp">
@@ -1309,6 +1313,7 @@
         </remarks>
         <exception cref="T:System.DivideByZeroException">
           <paramref name="b" /> is zero.</exception>
+        <altmember cref="M:System.Math.IEEERemainder(System.Double,System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="DivRem">
@@ -1361,6 +1366,7 @@
         </remarks>
         <exception cref="T:System.DivideByZeroException">
           <paramref name="b" /> is zero.</exception>
+        <altmember cref="M:System.Math.IEEERemainder(System.Double,System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="E">
@@ -1466,6 +1472,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Math.E" />
+        <altmember cref="M:System.Math.Pow(System.Double,System.Double)" />
+        <altmember cref="M:System.Math.Log(System.Double)" />
       </Docs>
     </Member>
     <MemberGroup MemberName="Floor">
@@ -1534,6 +1543,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Math.Round" />
+        <altmember cref="M:System.Math.Ceiling(System.Decimal)" />
+        <altmember cref="M:System.Decimal.Floor(System.Decimal)" />
       </Docs>
     </Member>
     <Member MemberName="Floor">
@@ -1588,6 +1600,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Math.Round" />
+        <altmember cref="M:System.Math.Ceiling(System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="IEEERemainder">
@@ -1723,6 +1737,8 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Math.E" />
+        <altmember cref="M:System.Math.Exp(System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="Log">
@@ -3215,6 +3231,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Math.Sqrt(System.Double)" />
       </Docs>
     </Member>
     <MemberGroup MemberName="Round">
@@ -3472,6 +3489,10 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Math.Ceiling(System.Decimal)" />
+        <altmember cref="M:System.Math.Floor(System.Decimal)" />
+        <altmember cref="M:System.Math.Truncate(System.Decimal)" />
+        <altmember cref="M:System.Decimal.Round(System.Decimal)" />
       </Docs>
     </MemberGroup>
     <Member MemberName="Round">
@@ -3516,6 +3537,9 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
  ]]></format>
         </remarks>
         <exception cref="T:System.OverflowException">The result is outside the range of a <see cref="T:System.Decimal" />.</exception>
+        <altmember cref="M:System.Math.Ceiling(System.Double)" />
+        <altmember cref="M:System.Math.Floor(System.Double)" />
+        <altmember cref="M:System.Decimal.Round(System.Decimal)" />
       </Docs>
     </Member>
     <Member MemberName="Round">
@@ -3570,6 +3594,9 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
  [!code-csharp[System.Math.Round#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round/cs/round2.cs#1)]
  [!code-vb[System.Math.Round#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round/vb/round2.vb#1)]</para>
         </block>
+        <altmember cref="M:System.Math.Ceiling(System.Double)" />
+        <altmember cref="M:System.Math.Floor(System.Double)" />
+        <altmember cref="M:System.Decimal.Round(System.Decimal)" />
       </Docs>
     </Member>
     <Member MemberName="Round">
@@ -3618,6 +3645,9 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="decimals" /> is less than 0 or greater than 28.</exception>
         <exception cref="T:System.OverflowException">The result is outside the range of a <see cref="T:System.Decimal" />.</exception>
+        <altmember cref="M:System.Math.Ceiling(System.Double)" />
+        <altmember cref="M:System.Math.Floor(System.Double)" />
+        <altmember cref="M:System.Decimal.Round(System.Decimal,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Round">
@@ -3666,6 +3696,9 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
         <exception cref="T:System.ArgumentException">
           <paramref name="mode" /> is not a valid value of <see cref="T:System.MidpointRounding" />.</exception>
         <exception cref="T:System.OverflowException">The result is outside the range of a <see cref="T:System.Decimal" />.</exception>
+        <altmember cref="M:System.Math.Ceiling(System.Double)" />
+        <altmember cref="M:System.Math.Floor(System.Double)" />
+        <altmember cref="M:System.Decimal.Round(System.Decimal,System.MidpointRounding)" />
       </Docs>
     </Member>
     <Member MemberName="Round">
@@ -3719,6 +3752,9 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
  [!code-csharp[System.Math.Round#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round/cs/round3.cs#2)]
  [!code-vb[System.Math.Round#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round/vb/round3.vb#2)]</para>
         </block>
+        <altmember cref="M:System.Math.Ceiling(System.Double)" />
+        <altmember cref="M:System.Math.Floor(System.Double)" />
+        <altmember cref="M:System.Decimal.Round(System.Decimal,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Round">
@@ -3772,6 +3808,9 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
  [!code-csharp[System.Math.Round#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round/cs/round5.cs#4)]
  [!code-vb[System.Math.Round#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round/vb/round5.vb#4)]</para>
         </block>
+        <altmember cref="M:System.Math.Ceiling(System.Double)" />
+        <altmember cref="M:System.Math.Floor(System.Double)" />
+        <altmember cref="M:System.Decimal.Round(System.Decimal,System.MidpointRounding)" />
       </Docs>
     </Member>
     <Member MemberName="Round">
@@ -3824,6 +3863,9 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
         <exception cref="T:System.ArgumentException">
           <paramref name="mode" /> is not a valid value of <see cref="T:System.MidpointRounding" />.</exception>
         <exception cref="T:System.OverflowException">The result is outside the range of a <see cref="T:System.Decimal" />.</exception>
+        <altmember cref="M:System.Math.Ceiling(System.Double)" />
+        <altmember cref="M:System.Math.Floor(System.Double)" />
+        <altmember cref="M:System.Decimal.Round(System.Decimal,System.Int32,System.MidpointRounding)" />
       </Docs>
     </Member>
     <Member MemberName="Round">
@@ -3881,6 +3923,9 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
  [!code-csharp[System.Math.Round#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round/cs/round4.cs#3)]
  [!code-vb[System.Math.Round#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round/vb/round4.vb#3)]</para>
         </block>
+        <altmember cref="M:System.Math.Ceiling(System.Double)" />
+        <altmember cref="M:System.Math.Floor(System.Double)" />
+        <altmember cref="M:System.Decimal.Round(System.Decimal,System.Int32,System.MidpointRounding)" />
       </Docs>
     </Member>
     <Member MemberName="Sign">
@@ -4507,6 +4552,7 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Math.Pow(System.Double,System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="Tan">
@@ -4685,6 +4731,9 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Math.Round" />
+        <altmember cref="M:System.Math.Ceiling(System.Decimal)" />
+        <altmember cref="M:System.Math.Floor(System.Decimal)" />
       </Docs>
     </Member>
     <Member MemberName="Truncate">
@@ -4738,7 +4787,80 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Math.Round" />
+        <altmember cref="M:System.Math.Ceiling(System.Double)" />
+        <altmember cref="M:System.Math.Floor(System.Double)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Min">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the smaller of two numbers.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Max">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the larger of two specified numbers.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DivRem">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Calculates the quotient of two numbers and also returns the remainder in an output parameter.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Sign">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an integer that indicates the sign of a number.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Log">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the logarithm of a specified number.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Abs">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the absolute value of a specified number.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -50,6 +50,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.ConfigurationSectionGroup" />
+    <altmember cref="T:System.Configuration.ConfigurationSectionCollection" />
+    <altmember cref="T:System.Configuration.ConfigurationSection" />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -121,6 +124,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.ConfigurationSectionGroup" />
+        <altmember cref="T:System.Configuration.ConfigurationSectionCollection" />
+        <altmember cref="T:System.Configuration.ConfigurationSection" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -266,6 +272,9 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="name" /> is null or an empty string ("").</exception>
+        <altmember cref="T:System.Configuration.ConfigurationSectionGroup" />
+        <altmember cref="T:System.Configuration.ConfigurationSectionCollection" />
+        <altmember cref="T:System.Configuration.ConfigurationSection" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -299,6 +308,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.ConfigurationSectionGroup" />
+        <altmember cref="T:System.Configuration.ConfigurationSectionCollection" />
+        <altmember cref="T:System.Configuration.ConfigurationSection" />
       </Docs>
     </Member>
     <Member MemberName="GetKey">
@@ -335,6 +347,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.ConfigurationSectionGroup" />
+        <altmember cref="T:System.Configuration.ConfigurationSectionCollection" />
+        <altmember cref="T:System.Configuration.ConfigurationSection" />
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -455,6 +470,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.ConfigurationSectionGroup" />
+        <altmember cref="T:System.Configuration.ConfigurationSectionCollection" />
+        <altmember cref="T:System.Configuration.ConfigurationSection" />
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -487,6 +505,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.ConfigurationSectionGroup" />
+        <altmember cref="T:System.Configuration.ConfigurationSectionCollection" />
+        <altmember cref="T:System.Configuration.ConfigurationSection" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -522,6 +543,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.ConfigurationSectionGroup" />
+        <altmember cref="T:System.Configuration.ConfigurationSectionCollection" />
+        <altmember cref="T:System.Configuration.ConfigurationSection" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">

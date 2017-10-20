@@ -13,6 +13,8 @@
   <Docs>
     <summary>Provides data for the <see cref="E:System.Windows.Controls.DataGrid.RowEditEnding" /> event.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Controls.DataGrid" />
+    <altmember cref="E:System.Windows.Controls.DataGrid.RowEditEnding" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,6 +35,8 @@
         <param name="editAction">A value that indicates whether the edit was canceled or committed.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.DataGridRowEditEndingEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.RowEditEnding" />
       </Docs>
     </Member>
     <Member MemberName="Cancel">
@@ -52,6 +56,8 @@
         <value>
           <see langword="true" /> if the event should be canceled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.RowEditEnding" />
       </Docs>
     </Member>
     <Member MemberName="EditAction">
@@ -70,6 +76,8 @@
         <summary>Gets a value that indicates whether the edit was canceled or committed.</summary>
         <value>A value that indicates whether the edit was canceled or committed.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.RowEditEnding" />
       </Docs>
     </Member>
     <Member MemberName="Row">
@@ -88,6 +96,8 @@
         <summary>Gets the row for which the event occurred.</summary>
         <value>The row for which the event occurred.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.RowEditEnding" />
       </Docs>
     </Member>
   </Members>

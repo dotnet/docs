@@ -87,6 +87,7 @@
         <returns>
           <see langword="true" /> if <paramref name="obj" /> equals the type and value of this instance; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Attribute.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -106,6 +107,7 @@
         <summary>Returns the hash code for this instance. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <returns>A 32-bit signed integer hash code.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Attribute.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="IsDefaultAttribute">
@@ -126,6 +128,7 @@
         <returns>
           <see langword="true" /> if this instance is the default attribute for the class; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Attribute.IsDefaultAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Name">

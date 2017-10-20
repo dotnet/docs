@@ -25,6 +25,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.Design.ParentControlDesigner" />
+    <altmember cref="T:System.Windows.Forms.Design.ControlDesigner" />
+    <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
+    <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+    <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
+    <altmember cref="T:System.ComponentModel.DesignerAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -101,6 +107,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Design.ControlDesigner.WndProc(System.Windows.Forms.Message@)" />
       </Docs>
     </Member>
   </Members>

@@ -506,6 +506,9 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="T:System.ConsoleCancelEventArgs" />
+        <altmember cref="T:System.ConsoleCancelEventHandler" />
+        <altmember cref="P:System.Console.TreatControlCAsInput" />
       </Docs>
     </Member>
     <Member MemberName="CapsLock">
@@ -831,6 +834,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Console.In" />
+        <altmember cref="P:System.Console.Out" />
+        <altmember cref="P:System.Console.IsErrorRedirected" />
+        <altmember cref="M:System.Console.SetError(System.IO.TextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="ForegroundColor">
@@ -929,6 +936,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Console.OpenStandardInput" />
+        <altmember cref="P:System.Console.IsInputRedirected" />
+        <altmember cref="P:System.Console.Error" />
+        <altmember cref="P:System.Console.Out" />
+        <altmember cref="M:System.Console.SetIn(System.IO.TextReader)" />
       </Docs>
     </Member>
     <Member MemberName="InputEncoding">
@@ -970,6 +982,7 @@
         <exception cref="T:System.IO.IOException">An error occurred during the execution of this operation.</exception>
         <exception cref="T:System.Security.SecurityException">Your application does not have permission to perform this operation.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for reading and writing to top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
     <Member MemberName="IsErrorRedirected">
@@ -999,6 +1012,9 @@
         <value>
           <see langword="true" /> if error output is redirected; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Console.Error" />
+        <altmember cref="M:System.Console.SetError(System.IO.TextWriter)" />
+        <altmember cref="M:System.Console.OpenStandardError" />
       </Docs>
     </Member>
     <Member MemberName="IsInputRedirected">
@@ -1028,6 +1044,9 @@
         <value>
           <see langword="true" /> if input is redirected; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Console.In" />
+        <altmember cref="M:System.Console.SetIn(System.IO.TextReader)" />
+        <altmember cref="M:System.Console.OpenStandardInput" />
       </Docs>
     </Member>
     <Member MemberName="IsOutputRedirected">
@@ -1057,6 +1076,9 @@
         <value>
           <see langword="true" /> if output is redirected; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Console.Out" />
+        <altmember cref="M:System.Console.SetOut(System.IO.TextWriter)" />
+        <altmember cref="M:System.Console.OpenStandardError" />
       </Docs>
     </Member>
     <Member MemberName="KeyAvailable">
@@ -1386,6 +1408,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Console.Error" />
+        <altmember cref="P:System.Console.IsErrorRedirected" />
+        <altmember cref="M:System.Console.SetError(System.IO.TextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="OpenStandardError">
@@ -1426,6 +1451,9 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="bufferSize" /> is less than or equal to zero.</exception>
+        <altmember cref="P:System.Console.Error" />
+        <altmember cref="P:System.Console.IsErrorRedirected" />
+        <altmember cref="M:System.Console.SetError(System.IO.TextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="OpenStandardInput">
@@ -1471,6 +1499,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Console.In" />
+        <altmember cref="P:System.Console.IsInputRedirected" />
+        <altmember cref="M:System.Console.SetIn(System.IO.TextReader)" />
       </Docs>
     </Member>
     <Member MemberName="OpenStandardInput">
@@ -1520,6 +1551,9 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="bufferSize" /> is less than or equal to zero.</exception>
+        <altmember cref="P:System.Console.In" />
+        <altmember cref="P:System.Console.IsInputRedirected" />
+        <altmember cref="M:System.Console.SetIn(System.IO.TextReader)" />
       </Docs>
     </Member>
     <Member MemberName="OpenStandardOutput">
@@ -1565,6 +1599,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Console.Out" />
+        <altmember cref="P:System.Console.IsOutputRedirected" />
+        <altmember cref="M:System.Console.SetOut(System.IO.TextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="OpenStandardOutput">
@@ -1614,6 +1651,9 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="bufferSize" /> is less than or equal to zero.</exception>
+        <altmember cref="P:System.Console.Out" />
+        <altmember cref="P:System.Console.IsOutputRedirected" />
+        <altmember cref="M:System.Console.SetOut(System.IO.TextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="Out">
@@ -1659,6 +1699,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Console.Error" />
+        <altmember cref="P:System.Console.In" />
+        <altmember cref="M:System.Console.SetOut(System.IO.TextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="OutputEncoding">
@@ -1768,6 +1811,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.Write(System.String,System.Object)" />
+        <altmember cref="M:System.Console.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="ReadKey">
@@ -1825,6 +1871,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Console.In" /> property is redirected from some stream other than the console.</exception>
+        <altmember cref="T:System.ConsoleKey" />
+        <altmember cref="P:System.Console.KeyAvailable" />
+        <altmember cref="P:System.Console.TreatControlCAsInput" />
+        <altmember cref="E:System.Console.CancelKeyPress" />
       </Docs>
     </Member>
     <Member MemberName="ReadKey">
@@ -1885,6 +1935,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Console.In" /> property is redirected from some stream other than the console.</exception>
+        <altmember cref="T:System.ConsoleKey" />
+        <altmember cref="P:System.Console.KeyAvailable" />
+        <altmember cref="P:System.Console.TreatControlCAsInput" />
+        <altmember cref="E:System.Console.CancelKeyPress" />
       </Docs>
     </Member>
     <Member MemberName="ReadLine">
@@ -1977,6 +2031,9 @@
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <exception cref="T:System.OutOfMemoryException">There is insufficient memory to allocate a buffer for the returned string.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The number of characters in the next line of characters is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.Write(System.String,System.Object)" />
+        <altmember cref="M:System.Console.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="ResetColor">
@@ -2201,6 +2258,8 @@
           <paramref name="newError" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="P:System.Console.IsErrorRedirected" />
+        <altmember cref="P:System.Console.Error" />
       </Docs>
     </Member>
     <Member MemberName="SetIn">
@@ -2254,6 +2313,8 @@
           <paramref name="newIn" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="T:System.IO.TextReader" />
+        <altmember cref="P:System.Console.In" />
       </Docs>
     </Member>
     <Member MemberName="SetOut">
@@ -2311,6 +2372,8 @@
           <paramref name="newOut" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="P:System.Console.Out" />
       </Docs>
     </Member>
     <Member MemberName="SetWindowPosition">
@@ -2528,6 +2591,9 @@
         </remarks>
         <exception cref="T:System.IO.IOException">Unable to get or set the input mode of the console input buffer.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="F:System.ConsoleModifiers.Control" />
+        <altmember cref="F:System.ConsoleKey.C" />
+        <altmember cref="E:System.Console.CancelKeyPress" />
       </Docs>
     </Member>
     <Member MemberName="WindowHeight">
@@ -2797,6 +2863,9 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -2841,6 +2910,9 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -2874,6 +2946,9 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -2923,6 +2998,9 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -2972,6 +3050,9 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -3021,6 +3102,9 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -3070,6 +3154,9 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -3119,6 +3206,9 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -3168,6 +3258,9 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -3217,6 +3310,9 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -3271,6 +3367,9 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -3325,6 +3424,9 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -3401,6 +3503,9 @@
           <paramref name="format" /> is <see langword="null" />.</exception>
         <exception cref="T:System.FormatException">The format specification in <paramref name="format" /> is invalid.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -3488,6 +3593,9 @@
         <block subset="none" type="usage">
           <para>This method is not called by C++ code. The C++ compiler resolves calls to [System.Console.Write](xref:System.Console.Write*) that include a string and a list of four or more object parameters as a call to <see cref="M:System.Console.Write(System.String,System.Object,System.Object,System.Object,System.Object)" />. It resolves calls to [System.Console.Write](xref:System.Console.Write*) that include a string and an object array as a call to <see cref="M:System.Console.Write(System.String,System.Object)" />.</para>
         </block>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -3538,6 +3646,9 @@
           <paramref name="index" /> plus <paramref name="count" /> specify a position that is not within <paramref name="buffer" />.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -3616,6 +3727,9 @@
           <paramref name="format" /> is <see langword="null" />.</exception>
         <exception cref="T:System.FormatException">The format specification in <paramref name="format" /> is invalid.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -3696,6 +3810,9 @@
           <paramref name="format" /> is <see langword="null" />.</exception>
         <exception cref="T:System.FormatException">The format specification in <paramref name="format" /> is invalid.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -3777,6 +3894,9 @@
         <block subset="none" type="usage">
           <para>This method is marked with the <see langword="vararg" /> keyword, which means that it supports a variable number of parameters. The method can be called from Visual C++, but it cannot be called from C# or Visual Basic code. The C# and Visual Basic compilers resolve calls to <see cref="M:System.Console.Write(System.String,System.Object,System.Object,System.Object,System.Object)" /> as calls to <see cref="M:System.Console.Write(System.String,System.Object[])" />.</para>
         </block>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.WriteLine" />
       </Docs>
     </Member>
     <MemberGroup MemberName="WriteLine">
@@ -3840,6 +3960,11 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.Write(System.String,System.Object)" />
+        <altmember cref="P:System.IO.TextWriter.NewLine" />
+        <altmember cref="P:System.Console.Out" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -3891,6 +4016,9 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.Write(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -3939,6 +4067,9 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.Write(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -3979,6 +4110,9 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.Write(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -4029,6 +4163,9 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.Write(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -4079,6 +4216,9 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.Write(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -4129,6 +4269,9 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.Write(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -4179,6 +4322,9 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.Write(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -4230,6 +4376,9 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.Write(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -4280,6 +4429,9 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.Write(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -4331,6 +4483,9 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.Write(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -4386,6 +4541,9 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.Write(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -4441,6 +4599,9 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.Write(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -4517,6 +4678,9 @@
           <paramref name="format" /> is <see langword="null" />.</exception>
         <exception cref="T:System.FormatException">The format specification in <paramref name="format" /> is invalid.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.Write(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -4603,6 +4767,9 @@
         <block subset="none" type="usage">
           <para>This method is not called by C++ code. The C++ compiler resolves calls to [System.Console.WriteLine](xref:System.Console.WriteLine*) that include a string and a list of four or more object parameters as a call to <see cref="M:System.Console.WriteLine(System.String,System.Object,System.Object,System.Object,System.Object)" />. It resolves calls to [System.Console.WriteLine](xref:System.Console.WriteLine*) that include a string and an object array as a call to <see cref="M:System.Console.WriteLine(System.String,System.Object)" />.</para>
         </block>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.Write(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -4655,6 +4822,9 @@
           <paramref name="index" /> plus <paramref name="count" /> specify a position that is not within <paramref name="buffer" />.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.Write(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -4734,6 +4904,9 @@
           <paramref name="format" /> is <see langword="null" />.</exception>
         <exception cref="T:System.FormatException">The format specification in <paramref name="format" /> is invalid.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.Write(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -4815,6 +4988,9 @@
           <paramref name="format" /> is <see langword="null" />.</exception>
         <exception cref="T:System.FormatException">The format specification in <paramref name="format" /> is invalid.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.Write(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -4898,7 +5074,80 @@
         <block subset="none" type="usage">
           <para>This method is marked with the <see langword="vararg" /> keyword, which means that it supports a variable number of parameters. The method can be called from Visual C++, but it cannot be called from C# or Visual Basic code. The C# and Visual Basic compilers resolve calls to <see cref="M:System.Console.WriteLine(System.String,System.Object,System.Object,System.Object,System.Object)" /> as calls to <see cref="M:System.Console.WriteLine(System.String,System.Object[])" />.</para>
         </block>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.Write(System.String,System.Object)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Write">
+      <AssemblyInfo>
+        <AssemblyName>System.Console</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the text representation of the specified value or values to the standard output stream.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Beep">
+      <AssemblyInfo>
+        <AssemblyName>System.Console</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Plays the sound of a beep through the console speaker.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OpenStandardOutput">
+      <AssemblyInfo>
+        <AssemblyName>System.Console</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Acquires the standard output stream.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OpenStandardError">
+      <AssemblyInfo>
+        <AssemblyName>System.Console</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Acquires the standard error stream.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OpenStandardInput">
+      <AssemblyInfo>
+        <AssemblyName>System.Console</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Acquires the standard input stream.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadKey">
+      <AssemblyInfo>
+        <AssemblyName>System.Console</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Obtains the next character or function key pressed by the user.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="MoveBufferArea">
+      <AssemblyInfo>
+        <AssemblyName>System.Console</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies a specified source area of the screen buffer to a specified destination area.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

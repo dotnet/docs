@@ -20,6 +20,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Automation.Provider.ITextProvider" />
   </Docs>
   <Members>
     <Member MemberName="AnimationStyleAttribute">
@@ -62,6 +63,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Text.TextPatternRange" />
+        <altmember cref="F:System.Windows.Documents.TextElement.TextEffectsProperty" />
       </Docs>
     </Member>
     <Member MemberName="BackgroundColorAttribute">
@@ -102,6 +105,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Text.TextPatternRange" />
       </Docs>
     </Member>
     <Member MemberName="BulletStyleAttribute">
@@ -142,6 +146,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Text.TextPatternRange" />
+        <altmember cref="T:System.Windows.TextMarkerStyle" />
       </Docs>
     </Member>
     <Member MemberName="CapStyleAttribute">
@@ -182,6 +188,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Text.TextPatternRange" />
+        <altmember cref="F:System.Windows.Documents.Typography.CapitalsProperty" />
       </Docs>
     </Member>
     <Member MemberName="CultureAttribute">
@@ -227,6 +235,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Text.TextPatternRange" />
       </Docs>
     </Member>
     <Member MemberName="DocumentRange">
@@ -260,6 +269,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Text.TextPatternRange" />
       </Docs>
     </Member>
     <Member MemberName="FontNameAttribute">
@@ -303,6 +313,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Text.TextPatternRange" />
+        <altmember cref="P:System.Windows.Documents.TextElement.FontFamily" />
       </Docs>
     </Member>
     <Member MemberName="FontSizeAttribute">
@@ -343,6 +355,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Text.TextPatternRange" />
+        <altmember cref="P:System.Windows.Documents.TextElement.FontSize" />
+        <altmember cref="T:System.Drawing.GraphicsUnit" />
       </Docs>
     </Member>
     <Member MemberName="FontWeightAttribute">
@@ -387,6 +402,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Text.TextPatternRange" />
+        <altmember cref="P:System.Windows.Documents.TextElement.FontWeight" />
       </Docs>
     </Member>
     <Member MemberName="ForegroundColorAttribute">
@@ -429,6 +446,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Text.TextPatternRange" />
       </Docs>
     </Member>
     <Member MemberName="GetSelection">
@@ -468,6 +486,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The text container does not support text selection.</exception>
+        <altmember cref="T:System.Windows.Automation.Text.TextPatternRange" />
       </Docs>
     </Member>
     <Member MemberName="GetVisibleRanges">
@@ -502,6 +521,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Text.TextPatternRange" />
       </Docs>
     </Member>
     <Member MemberName="HorizontalTextAlignmentAttribute">
@@ -544,6 +564,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Text.TextPatternRange" />
       </Docs>
     </Member>
     <Member MemberName="IndentationFirstLineAttribute">
@@ -586,6 +607,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Text.TextPatternRange" />
       </Docs>
     </Member>
     <Member MemberName="IndentationLeadingAttribute">
@@ -628,6 +650,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Text.TextPatternRange" />
       </Docs>
     </Member>
     <Member MemberName="IndentationTrailingAttribute">
@@ -670,6 +693,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Text.TextPatternRange" />
       </Docs>
     </Member>
     <Member MemberName="IsHiddenAttribute">
@@ -710,6 +734,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Text.TextPatternRange" />
       </Docs>
     </Member>
     <Member MemberName="IsItalicAttribute">
@@ -750,6 +775,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Text.TextPatternRange" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnlyAttribute">
@@ -795,6 +821,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Text.TextPatternRange" />
       </Docs>
     </Member>
     <Member MemberName="IsSubscriptAttribute">
@@ -835,6 +862,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Text.TextPatternRange" />
       </Docs>
     </Member>
     <Member MemberName="IsSuperscriptAttribute">
@@ -875,6 +903,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Text.TextPatternRange" />
       </Docs>
     </Member>
     <Member MemberName="MarginBottomAttribute">
@@ -917,6 +946,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Text.TextPatternRange" />
       </Docs>
     </Member>
     <Member MemberName="MarginLeadingAttribute">
@@ -959,6 +989,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Text.TextPatternRange" />
       </Docs>
     </Member>
     <Member MemberName="MarginTopAttribute">
@@ -1001,6 +1032,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Text.TextPatternRange" />
       </Docs>
     </Member>
     <Member MemberName="MarginTrailingAttribute">
@@ -1043,6 +1075,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Text.TextPatternRange" />
       </Docs>
     </Member>
     <Member MemberName="MixedAttributeValue">
@@ -1085,6 +1118,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Text.TextPatternRange" />
       </Docs>
     </Member>
     <Member MemberName="OutlineStylesAttribute">
@@ -1125,6 +1159,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Text.TextPatternRange" />
       </Docs>
     </Member>
     <Member MemberName="OverlineColorAttribute">
@@ -1165,6 +1200,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Text.TextPatternRange" />
+        <altmember cref="P:System.Windows.Documents.Inline.TextDecorations" />
+        <altmember cref="T:System.Windows.TextDecorationLocation" />
       </Docs>
     </Member>
     <Member MemberName="OverlineStyleAttribute">
@@ -1205,6 +1243,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Text.TextPatternRange" />
       </Docs>
     </Member>
     <Member MemberName="Pattern">
@@ -1278,6 +1317,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The child element is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The element is not a child of the text container.</exception>
+        <altmember cref="T:System.Windows.Automation.Text.TextPatternRange" />
       </Docs>
     </Member>
     <Member MemberName="RangeFromPoint">
@@ -1316,6 +1356,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">A given point is outside the <see cref="T:System.Windows.Automation.AutomationElement" /> associated with the text pattern.</exception>
+        <altmember cref="T:System.Windows.Automation.Text.TextPatternRange" />
       </Docs>
     </Member>
     <Member MemberName="StrikethroughColorAttribute">
@@ -1356,6 +1397,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Text.TextPatternRange" />
       </Docs>
     </Member>
     <Member MemberName="StrikethroughStyleAttribute">
@@ -1396,6 +1438,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Text.TextPatternRange" />
       </Docs>
     </Member>
     <Member MemberName="SupportedTextSelection">
@@ -1422,6 +1465,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.SupportedTextSelection" />
+        <altmember cref="M:System.Windows.Automation.TextPattern.GetSelection" />
+        <altmember cref="M:System.Windows.Automation.Text.TextPatternRange.Select" />
       </Docs>
     </Member>
     <Member MemberName="TabsAttribute">
@@ -1464,6 +1510,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Text.TextPatternRange" />
       </Docs>
     </Member>
     <Member MemberName="TextChangedEvent">
@@ -1494,6 +1541,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Text.TextPatternRange" />
+        <altmember cref="M:System.Windows.Automation.Automation.AddAutomationEventHandler(System.Windows.Automation.AutomationEvent,System.Windows.Automation.AutomationElement,System.Windows.Automation.TreeScope,System.Windows.Automation.AutomationEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="TextFlowDirectionsAttribute">
@@ -1534,6 +1583,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Text.TextPatternRange" />
       </Docs>
     </Member>
     <Member MemberName="TextSelectionChangedEvent">
@@ -1569,6 +1619,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Text.TextPatternRange" />
+        <altmember cref="M:System.Windows.Automation.Automation.AddAutomationEventHandler(System.Windows.Automation.AutomationEvent,System.Windows.Automation.AutomationElement,System.Windows.Automation.TreeScope,System.Windows.Automation.AutomationEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="UnderlineColorAttribute">
@@ -1609,6 +1661,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Text.TextPatternRange" />
       </Docs>
     </Member>
     <Member MemberName="UnderlineStyleAttribute">
@@ -1649,6 +1702,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Text.TextPatternRange" />
       </Docs>
     </Member>
   </Members>

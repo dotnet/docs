@@ -159,6 +159,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xml.XPath.XPathItem.Value" />
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -286,6 +287,7 @@
         <exception cref="T:System.FormatException">The item's value is not in the correct format for the target type.</exception>
         <exception cref="T:System.InvalidCastException">The attempted cast is not valid.</exception>
         <exception cref="T:System.OverflowException">The attempted cast resulted in an overflow.</exception>
+        <altmember cref="T:System.Xml.IXmlNamespaceResolver" />
       </Docs>
     </Member>
     <Member MemberName="ValueAsBoolean">
@@ -544,6 +546,7 @@
         <block subset="none" type="overrides">
           <para>All implementers must provide a <see cref="P:System.Xml.XPath.XPathItem.ValueType" /> property for every item, even if it is only <see cref="T:System.String" />.</para>
         </block>
+        <altmember cref="P:System.Xml.XPath.XPathItem.TypedValue" />
       </Docs>
     </Member>
     <Member MemberName="XmlType">
@@ -578,7 +581,19 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.Schema.XmlSchemaType" />
+        <altmember cref="T:System.Xml.Schema.XmlSchemaSimpleType" />
+        <altmember cref="T:System.Xml.Schema.XmlSchemaComplexType" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ValueAs">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XPath</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the item's value as the specified type.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

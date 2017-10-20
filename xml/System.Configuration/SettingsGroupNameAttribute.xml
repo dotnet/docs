@@ -31,6 +31,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.ApplicationSettingsBase" />
+    <altmember cref="T:System.Configuration.SettingsGroupDescriptionAttribute" />
+    <altmember cref="T:System.Configuration.SettingsContext" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -63,6 +66,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Configuration.SettingsGroupNameAttribute.GroupName" />
       </Docs>
     </Member>
     <Member MemberName="GroupName">
@@ -92,6 +96,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Configuration.SettingsGroupNameAttribute.#ctor(System.String)" />
       </Docs>
     </Member>
   </Members>

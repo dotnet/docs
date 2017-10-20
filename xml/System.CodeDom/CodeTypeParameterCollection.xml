@@ -32,6 +32,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.CodeDom.CodeTypeParameter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -121,6 +122,7 @@
         <summary>Adds the specified <see cref="T:System.CodeDom.CodeTypeParameter" /> object to the collection.</summary>
         <returns>The zero-based index at which the new element was inserted.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeTypeParameter" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -227,6 +229,7 @@
         <returns>
           <see langword="true" /> if the <see cref="T:System.CodeDom.CodeTypeParameter" /> object is contained in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.CodeDom.CodeTypeParameterCollection.IndexOf(System.CodeDom.CodeTypeParameter)" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -290,6 +293,7 @@
         <summary>Gets the index in the collection of the specified <see cref="T:System.CodeDom.CodeTypeParameter" /> object, if it exists in the collection.</summary>
         <returns>The zero-based index of the specified <see cref="T:System.CodeDom.CodeTypeParameter" /> object in the collection if found; otherwise, -1.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.CodeDom.CodeTypeParameterCollection.Contains(System.CodeDom.CodeTypeParameter)" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -380,5 +384,32 @@
         <exception cref="T:System.ArgumentException">The specified object is not found in the collection.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the specified <see cref="T:System.CodeDom.CodeTypeParameter" /> object to the collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeTypeParameterCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddRange">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies the specified <see cref="T:System.CodeDom.CodeTypeParameter" /> objects to the end of the collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

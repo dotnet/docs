@@ -391,5 +391,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="LoadFromConfiguration">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads a configuration from the current service configuration.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddServiceEndpoint">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a service endpoint to the service configuration.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

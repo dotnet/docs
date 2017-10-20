@@ -39,6 +39,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.DataErrorValidationRule" />
+    <altmember cref="T:System.Windows.Controls.ValidationRule" />
+    <altmember cref="M:System.Windows.Controls.Validation.MarkInvalid(System.Windows.Data.BindingExpressionBase,System.Windows.Controls.ValidationError)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -174,5 +177,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.ValidationError" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

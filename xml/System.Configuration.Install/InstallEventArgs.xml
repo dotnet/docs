@@ -31,6 +31,20 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="E:System.Configuration.Install.Installer.AfterInstall" />
+    <altmember cref="E:System.Configuration.Install.Installer.AfterRollback" />
+    <altmember cref="E:System.Configuration.Install.Installer.AfterUninstall" />
+    <altmember cref="E:System.Configuration.Install.Installer.BeforeInstall" />
+    <altmember cref="E:System.Configuration.Install.Installer.BeforeRollback" />
+    <altmember cref="E:System.Configuration.Install.Installer.BeforeUninstall" />
+    <altmember cref="M:System.Configuration.Install.Installer.Commit(System.Collections.IDictionary)" />
+    <altmember cref="E:System.Configuration.Install.Installer.Committed" />
+    <altmember cref="E:System.Configuration.Install.Installer.Committing" />
+    <altmember cref="M:System.Configuration.Install.Installer.Install(System.Collections.IDictionary)" />
+    <altmember cref="T:System.Configuration.Install.Installer" />
+    <altmember cref="T:System.Configuration.Install.InstallEventHandler" />
+    <altmember cref="M:System.Configuration.Install.Installer.Rollback(System.Collections.IDictionary)" />
+    <altmember cref="M:System.Configuration.Install.Installer.Uninstall(System.Collections.IDictionary)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -59,6 +73,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Configuration.Install.InstallEventArgs.SavedState" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -90,6 +105,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IDictionary" />
+        <altmember cref="P:System.Configuration.Install.InstallEventArgs.SavedState" />
       </Docs>
     </Member>
     <Member MemberName="SavedState">
@@ -121,7 +138,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IDictionary" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.Install</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.Install.InstallEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

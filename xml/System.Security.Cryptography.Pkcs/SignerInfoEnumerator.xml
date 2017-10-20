@@ -35,6 +35,8 @@
         <summary>The <see cref="P:System.Security.Cryptography.Pkcs.SignerInfoEnumerator.Current" /> property retrieves the current <see cref="T:System.Security.Cryptography.Pkcs.SignerInfo" /> object from the <see cref="T:System.Security.Cryptography.Pkcs.SignerInfoCollection" /> collection.</summary>
         <value>A <see cref="T:System.Security.Cryptography.Pkcs.SignerInfo" /> object that represents the current signer information structure in the <see cref="T:System.Security.Cryptography.Pkcs.SignerInfoCollection" /> collection.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Security.Cryptography.Pkcs.SignerInfo" />
+        <altmember cref="T:System.Security.Cryptography.Pkcs.SignerInfoCollection" />
       </Docs>
     </Member>
     <Member MemberName="MoveNext">
@@ -54,6 +56,7 @@
         <summary>The <see cref="M:System.Security.Cryptography.Pkcs.SignerInfoEnumerator.MoveNext" /> method advances the enumeration to the next   <see cref="T:System.Security.Cryptography.Pkcs.SignerInfo" /> object in the <see cref="T:System.Security.Cryptography.Pkcs.SignerInfoCollection" /> collection.</summary>
         <returns>This method returns a bool value that specifies whether the enumeration successfully advanced. If the enumeration successfully moved to the next <see cref="T:System.Security.Cryptography.Pkcs.SignerInfo" /> object, the method returns <see langword="true" />. If the enumeration moved past the last item in the enumeration, it returns <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Security.Cryptography.Pkcs.SignerInfoEnumerator.Reset" />
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -72,6 +75,7 @@
       <Docs>
         <summary>The <see cref="M:System.Security.Cryptography.Pkcs.SignerInfoEnumerator.Reset" /> method resets the enumeration to the first <see cref="T:System.Security.Cryptography.Pkcs.SignerInfo" /> object in the <see cref="T:System.Security.Cryptography.Pkcs.SignerInfoCollection" /> collection.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Security.Cryptography.Pkcs.SignerInfoEnumerator.MoveNext" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerator.Current">
@@ -90,6 +94,8 @@
         <summary>The <see cref="P:System.Security.Cryptography.Pkcs.SignerInfoEnumerator.System#Collections#IEnumerator#Current" /> property retrieves the current <see cref="T:System.Security.Cryptography.Pkcs.SignerInfo" /> object from the <see cref="T:System.Security.Cryptography.Pkcs.SignerInfoCollection" /> collection.</summary>
         <value>A <see cref="T:System.Security.Cryptography.Pkcs.SignerInfo" /> object that represents the current signer information structure in the <see cref="T:System.Security.Cryptography.Pkcs.SignerInfoCollection" /> collection.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Security.Cryptography.Pkcs.SignerInfo" />
+        <altmember cref="T:System.Security.Cryptography.Pkcs.SignerInfoCollection" />
       </Docs>
     </Member>
   </Members>

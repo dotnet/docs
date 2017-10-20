@@ -12,6 +12,9 @@
   <Docs>
     <summary>Specifies the types of navigation UI that can be displayed for a step in a <see cref="T:System.Web.UI.WebControls.Wizard" /> control.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="P:System.Web.UI.WebControls.WizardStepBase.StepType" />
+    <altmember cref="P:System.Web.UI.WebControls.CompleteWizardStep.StepType" />
+    <altmember cref="P:System.Web.UI.WebControls.CreateUserWizardStep.StepType" />
   </Docs>
   <Members>
     <Member MemberName="Auto">

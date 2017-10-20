@@ -24,6 +24,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Compilation.RouteUrlExpressionBuilder" />
+    <altmember cref="T:System.Web.UI.Design.RouteUrlExpressionEditor" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,6 +53,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Compilation.RouteUrlExpressionBuilder" />
+        <altmember cref="T:System.Web.UI.Design.RouteUrlExpressionEditor" />
       </Docs>
     </Member>
     <Member MemberName="GetExpression">
@@ -70,6 +74,8 @@
         <summary>Returns a <see langword="RouteUrl" /> expression that is formed by the expression editor sheet property values.</summary>
         <returns>The <see langword="RouteUrl" /> expression string for the current settings in the sheet.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.Compilation.RouteUrlExpressionBuilder" />
+        <altmember cref="T:System.Web.UI.Design.RouteUrlExpressionEditor" />
       </Docs>
     </Member>
     <Member MemberName="IsValid">
@@ -89,6 +95,8 @@
         <value>
           <see langword="true" /> if the <see langword="RouteUrl" /> expression string is valid; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.Compilation.RouteUrlExpressionBuilder" />
+        <altmember cref="T:System.Web.UI.Design.RouteUrlExpressionEditor" />
       </Docs>
     </Member>
     <Member MemberName="RouteName">
@@ -112,6 +120,8 @@
         <summary>Gets or sets the name of the route that a URL is to be generated for.</summary>
         <value>The name of the route that a URL is to be generated for.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.Compilation.RouteUrlExpressionBuilder" />
+        <altmember cref="T:System.Web.UI.Design.RouteUrlExpressionEditor" />
       </Docs>
     </Member>
     <Member MemberName="RouteValues">
@@ -135,6 +145,8 @@
         <summary>Gets or sets the URL parameter names and values that are to be used to generate a URL from a route.</summary>
         <value>The URL parameter names and values that are to be used to generate a URL from a route.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.Compilation.RouteUrlExpressionBuilder" />
+        <altmember cref="T:System.Web.UI.Design.RouteUrlExpressionEditor" />
       </Docs>
     </Member>
   </Members>

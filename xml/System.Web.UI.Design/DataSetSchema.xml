@@ -34,6 +34,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.Design.DataSetViewSchema" />
+    <altmember cref="T:System.Web.UI.Design.DataSetFieldSchema" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -52,6 +54,8 @@
         <param name="dataSet">The <see cref="T:System.Data.DataSet" /> that the <see cref="T:System.Web.UI.Design.DataSetSchema" /> instance will describe.</param>
         <summary>Creates an instance of the <see cref="T:System.Web.UI.Design.DataSetSchema" /> class using a specified <see cref="T:System.Data.DataSet" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.DataSetViewSchema" />
+        <altmember cref="T:System.Web.UI.Design.DataSetFieldSchema" />
       </Docs>
     </Member>
     <Member MemberName="GetViews">
@@ -78,6 +82,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.DataSetViewSchema" />
+        <altmember cref="T:System.Web.UI.Design.DataSetFieldSchema" />
+        <altmember cref="T:System.Data.DataSet" />
       </Docs>
     </Member>
   </Members>

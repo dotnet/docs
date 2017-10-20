@@ -41,6 +41,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Collections.Generic.ICollection`1" />
+    <altmember cref="N:System.Collections" />
   </Docs>
   <Members>
     <Member MemberName="IndexOf">
@@ -131,6 +133,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is not a valid index in the <see cref="T:System.Collections.Generic.IList`1" />.</exception>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.Generic.IList`1" /> is read-only.</exception>
+        <altmember cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -178,6 +181,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is not a valid index in the <see cref="T:System.Collections.Generic.IList`1" />.</exception>
         <exception cref="T:System.NotSupportedException">The property is set and the <see cref="T:System.Collections.Generic.IList`1" /> is read-only.</exception>
+        <altmember cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -222,6 +226,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is not a valid index in the <see cref="T:System.Collections.Generic.IList`1" />.</exception>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.Generic.IList`1" /> is read-only.</exception>
+        <altmember cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />
       </Docs>
     </Member>
   </Members>

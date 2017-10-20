@@ -62,6 +62,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+    <altmember cref="T:System.Web.UI.WebControls.DataBoundControl" />
+    <altmember cref="T:System.Web.UI.Design.WebControls.DataBoundControlDesigner" />
+    <altmember cref="T:System.Web.UI.WebControls.BaseDataBoundControl" />
+    <altmember cref="T:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner" />
+    <altmember cref="T:System.Web.UI.WebControls.WebControl" />
+    <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -84,6 +91,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.DataBoundControlDesigner" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner" />
+        <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
+        <altmember cref="T:System.Web.UI.Design.HtmlControlDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
       </Docs>
     </Member>
     <Member MemberName="ActionLists">
@@ -102,6 +115,11 @@
         <summary>Gets the designer action list collection for the designer.</summary>
         <value>The <see cref="T:System.ComponentModel.Design.DesignerActionListCollection" /> associated with the designer.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+        <altmember cref="T:System.ComponentModel.Design.DesignerActionListCollection" />
+        <altmember cref="P:System.Web.UI.Design.WebControls.DataBoundControlDesigner.ActionLists" />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.ActionLists" />
+        <altmember cref="P:System.ComponentModel.Design.ComponentDesigner.ActionLists" />
       </Docs>
     </Member>
     <Member MemberName="DataBind">
@@ -132,6 +150,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListItem" />
+        <altmember cref="P:System.Web.UI.WebControls.ListControl.Items" />
+        <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.DataBoundControlDesigner.DataBind(System.Web.UI.WebControls.BaseDataBoundControl)" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.DataBoundControlDesigner" />
+        <altmember cref="T:System.Web.UI.WebControls.BaseDataBoundControl" />
       </Docs>
     </Member>
     <Member MemberName="DataTextField">
@@ -157,6 +181,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListControl.DataTextField" />
+        <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+        <altmember cref="P:System.Web.UI.Design.WebControls.ListControlDesigner.DataValueField" />
       </Docs>
     </Member>
     <Member MemberName="DataValueField">
@@ -182,6 +209,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListControl.DataValueField" />
+        <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+        <altmember cref="P:System.Web.UI.Design.WebControls.ListControlDesigner.DataTextField" />
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeHtml">
@@ -218,6 +248,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListControl.Items" />
+        <altmember cref="T:System.Web.UI.WebControls.ListItem" />
+        <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.GetDesignTimeHtml" />
       </Docs>
     </Member>
     <Member MemberName="GetResolvedSelectedDataSource">
@@ -246,6 +280,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+        <altmember cref="P:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DataSource" />
+        <altmember cref="P:System.Web.UI.Design.WebControls.DataBoundControlDesigner.DataMember" />
+        <altmember cref="M:System.Web.UI.Design.IDataSourceProvider.GetResolvedSelectedDataSource" />
+        <altmember cref="T:System.Web.UI.Design.IDataSourceProvider" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.ListControlDesigner.GetSelectedDataSource" />
       </Docs>
     </Member>
     <Member MemberName="GetSelectedDataSource">
@@ -272,6 +312,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+        <altmember cref="P:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DataSource" />
+        <altmember cref="M:System.Web.UI.Design.IDataSourceProvider.GetSelectedDataSource" />
+        <altmember cref="T:System.Web.UI.Design.IDataSourceProvider" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.ListControlDesigner.GetResolvedSelectedDataSource" />
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -312,6 +357,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+        <altmember cref="T:System.ComponentModel.IComponent" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.Initialize(System.ComponentModel.IComponent)" />
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.Initialize(System.ComponentModel.IComponent)" />
+        <altmember cref="M:System.ComponentModel.Design.ComponentDesigner.Initialize(System.ComponentModel.IComponent)" />
       </Docs>
     </Member>
     <Member MemberName="OnDataSourceChanged">
@@ -347,6 +398,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.OnDataSourceChanged(System.Boolean)" />
+        <altmember cref="P:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DataSource" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.DataBoundControlDesigner.ConnectToDataSource" />
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.UpdateDesignTimeHtml" />
       </Docs>
     </Member>
     <Member MemberName="OnDataSourceChanged">
@@ -388,6 +444,11 @@
         <block subset="none" type="usage">
           <para>Callers should use the public <see cref="M:System.Web.UI.Design.WebControls.ListControlDesigner.OnDataSourceChanged" /> override.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.OnDataSourceChanged(System.Boolean)" />
+        <altmember cref="P:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DataSource" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.DataBoundControlDesigner.ConnectToDataSource" />
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.UpdateDesignTimeHtml" />
       </Docs>
     </Member>
     <Member MemberName="PreFilterProperties">
@@ -421,6 +482,16 @@
         <block subset="none" type="overrides">
           <para>Override the <see cref="M:System.Web.UI.Design.WebControls.DetailsViewDesigner.PreFilterProperties(System.Collections.IDictionary)" /> method to add properties to or change attributes of properties in the design-time property collection. Be sure to call the base method before performing other processing.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+        <altmember cref="T:System.Web.UI.Design.DataFieldConverter" />
+        <altmember cref="T:System.ComponentModel.TypeConverterAttribute" />
+        <altmember cref="P:System.Web.UI.WebControls.ListControl.DataTextField" />
+        <altmember cref="P:System.Web.UI.WebControls.ListControl.DataValueField" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.DataBoundControlDesigner.PreFilterProperties(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.PreFilterProperties(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.PreFilterProperties(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Web.UI.Design.HtmlControlDesigner.PreFilterProperties(System.Collections.IDictionary)" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
       </Docs>
     </Member>
     <Member MemberName="UseDataSourcePickerActionList">
@@ -449,7 +520,22 @@
         <block subset="none" type="overrides">
           <para>Override the <see cref="P:System.Web.UI.Design.WebControls.ListControlDesigner.UseDataSourcePickerActionList" /> property to return <see langword="true" /> if you want the control that is derived from the <see cref="T:System.Web.UI.WebControls.ListControl" /> class to display a data source dropdown with the **Choose Data Source** menu item in the **Common Tasks** context menu at design time.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+        <altmember cref="P:System.Web.UI.WebControls.DataBoundControl.DataSourceID" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataBoundControl.DataSource" />
+        <altmember cref="P:System.Web.UI.WebControls.ListControl.DataTextField" />
+        <altmember cref="P:System.Web.UI.WebControls.ListControl.DataValueField" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.DataBoundControlDesigner" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="OnDataSourceChanged">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Called when the data source for the associated control has changed.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

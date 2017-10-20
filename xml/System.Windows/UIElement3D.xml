@@ -426,6 +426,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.UIElement3D.IsMouseCaptured" />
       </Docs>
     </Member>
     <Member MemberName="CaptureStylus">
@@ -499,6 +500,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="touchDevice" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Input.TouchDevice.Capture(System.Windows.IInputElement)" />
       </Docs>
     </Member>
     <Member MemberName="CommandBindings">
@@ -548,6 +550,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.CommandBinding" />
       </Docs>
     </Member>
     <Member MemberName="DragEnter">
@@ -587,6 +590,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.DragLeave" />
+        <altmember cref="E:System.Windows.UIElement3D.DragOver" />
       </Docs>
     </Member>
     <Member MemberName="DragEnterEvent">
@@ -654,6 +659,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.DragEnter" />
+        <altmember cref="E:System.Windows.UIElement3D.DragOver" />
+        <altmember cref="E:System.Windows.UIElement3D.GiveFeedback" />
       </Docs>
     </Member>
     <Member MemberName="DragLeaveEvent">
@@ -723,6 +731,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.DragEnter" />
+        <altmember cref="E:System.Windows.UIElement3D.DragLeave" />
+        <altmember cref="E:System.Windows.UIElement3D.Drop" />
       </Docs>
     </Member>
     <Member MemberName="DragOverEvent">
@@ -790,6 +801,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.DragOver" />
+        <altmember cref="E:System.Windows.UIElement3D.MouseLeftButtonUp" />
       </Docs>
     </Member>
     <Member MemberName="DropEvent">
@@ -897,6 +910,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.FrameworkElement.MoveFocus(System.Windows.Input.TraversalRequest)" />
+        <altmember cref="E:System.Windows.UIElement3D.GotKeyboardFocus" />
+        <altmember cref="E:System.Windows.UIElement3D.LostKeyboardFocus" />
       </Docs>
     </Member>
     <Member MemberName="FocusableChanged">
@@ -923,6 +939,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.UIElement3D.Focusable" />
       </Docs>
     </Member>
     <Member MemberName="FocusableProperty">
@@ -1018,6 +1035,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.DragLeave" />
       </Docs>
     </Member>
     <Member MemberName="GiveFeedbackEvent">
@@ -1089,6 +1107,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.GotKeyboardFocus" />
+        <altmember cref="M:System.Windows.UIElement3D.Focus" />
       </Docs>
     </Member>
     <Member MemberName="GotFocusEvent">
@@ -1160,6 +1180,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.LostKeyboardFocus" />
       </Docs>
     </Member>
     <Member MemberName="GotKeyboardFocusEvent">
@@ -1231,6 +1252,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.UIElement3D.CaptureMouse" />
       </Docs>
     </Member>
     <Member MemberName="GotMouseCaptureEvent">
@@ -1432,6 +1454,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.CommandBinding" />
       </Docs>
     </Member>
     <Member MemberName="InvalidateModel">
@@ -1509,6 +1532,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.IsEnabledChanged" />
       </Docs>
     </Member>
     <Member MemberName="IsEnabledChanged">
@@ -1564,6 +1588,8 @@
         <block subset="none" type="overrides">
           <para>The default implementation of this property caches the value and also calculates whether the parent element of this element is enabled. (If the parent is not enabled, the child element cannot be effectively enabled in practical [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)].) If you choose to override this implementation, make certain that you call the base implementation to preserve this behavior.</para>
         </block>
+        <altmember cref="E:System.Windows.UIElement3D.IsEnabledChanged" />
+        <altmember cref="P:System.Windows.UIElement3D.IsEnabled" />
       </Docs>
     </Member>
     <Member MemberName="IsEnabledProperty">
@@ -1626,6 +1652,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.UIElement3D.Focusable" />
+        <altmember cref="M:System.Windows.UIElement3D.Focus" />
       </Docs>
     </Member>
     <Member MemberName="IsFocusedProperty">
@@ -1686,6 +1714,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.IsHitTestVisibleChanged" />
       </Docs>
     </Member>
     <Member MemberName="IsHitTestVisibleChanged">
@@ -1802,6 +1831,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.GotFocus" />
+        <altmember cref="E:System.Windows.UIElement3D.LostFocus" />
       </Docs>
     </Member>
     <Member MemberName="IsKeyboardFocusedChanged">
@@ -1918,6 +1949,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.IsKeyboardFocusedChanged" />
       </Docs>
     </Member>
     <Member MemberName="IsKeyboardFocusWithinProperty">
@@ -1978,6 +2010,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.UIElement3D.CaptureMouse" />
+        <altmember cref="E:System.Windows.UIElement3D.GotMouseCapture" />
+        <altmember cref="E:System.Windows.UIElement3D.LostMouseCapture" />
       </Docs>
     </Member>
     <Member MemberName="IsMouseCapturedChanged">
@@ -2062,6 +2097,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.UIElement3D.IsMouseCaptured" />
+        <altmember cref="M:System.Windows.UIElement3D.CaptureMouse" />
       </Docs>
     </Member>
     <Member MemberName="IsMouseCaptureWithinChanged">
@@ -2112,6 +2149,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.IsMouseCaptureWithinChanged" />
       </Docs>
     </Member>
     <Member MemberName="IsMouseDirectlyOver">
@@ -2150,6 +2188,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.MouseEnter" />
+        <altmember cref="E:System.Windows.UIElement3D.MouseLeave" />
       </Docs>
     </Member>
     <Member MemberName="IsMouseDirectlyOverChanged">
@@ -2200,6 +2240,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.IsMouseDirectlyOverChanged" />
       </Docs>
     </Member>
     <Member MemberName="IsMouseOver">
@@ -2302,6 +2343,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.UIElement3D.CaptureStylus" />
+        <altmember cref="E:System.Windows.UIElement3D.GotStylusCapture" />
+        <altmember cref="E:System.Windows.UIElement3D.LostStylusCapture" />
       </Docs>
     </Member>
     <Member MemberName="IsStylusCapturedChanged">
@@ -2388,6 +2432,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.UIElement3D.CaptureStylus" />
+        <altmember cref="P:System.Windows.UIElement3D.IsStylusCaptured" />
       </Docs>
     </Member>
     <Member MemberName="IsStylusCaptureWithinChanged">
@@ -2438,6 +2484,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.IsStylusCaptureWithinChanged" />
       </Docs>
     </Member>
     <Member MemberName="IsStylusDirectlyOver">
@@ -2480,6 +2527,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.UIElement3D.IsMouseDirectlyOver" />
       </Docs>
     </Member>
     <Member MemberName="IsStylusDirectlyOverChanged">
@@ -2723,6 +2771,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.KeyUp" />
       </Docs>
     </Member>
     <Member MemberName="KeyDownEvent">
@@ -2790,6 +2839,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.KeyDown" />
       </Docs>
     </Member>
     <Member MemberName="KeyUpEvent">
@@ -2861,6 +2911,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.LostKeyboardFocus" />
+        <altmember cref="M:System.Windows.UIElement3D.Focus" />
       </Docs>
     </Member>
     <Member MemberName="LostFocusEvent">
@@ -3419,6 +3471,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.PreviewMouseLeftButtonDown" />
       </Docs>
     </Member>
     <Member MemberName="MouseLeftButtonDownEvent">
@@ -3490,6 +3543,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.PreviewMouseLeftButtonUp" />
       </Docs>
     </Member>
     <Member MemberName="MouseLeftButtonUpEvent">
@@ -3557,6 +3611,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.MouseEnter" />
+        <altmember cref="E:System.Windows.UIElement3D.MouseLeave" />
       </Docs>
     </Member>
     <Member MemberName="MouseMoveEvent">
@@ -3630,6 +3686,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.PreviewMouseRightButtonDown" />
       </Docs>
     </Member>
     <Member MemberName="MouseRightButtonDownEvent">
@@ -3701,6 +3758,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.PreviewMouseRightButtonUp" />
       </Docs>
     </Member>
     <Member MemberName="MouseRightButtonUpEvent">
@@ -3899,6 +3957,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.UIElement3D.Focus" />
       </Docs>
     </Member>
     <Member MemberName="OnAccessKey">
@@ -3997,6 +4056,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.DragEnter" />
       </Docs>
     </Member>
     <Member MemberName="OnDragLeave">
@@ -4031,6 +4091,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.DragLeave" />
       </Docs>
     </Member>
     <Member MemberName="OnDragOver">
@@ -4065,6 +4126,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.DragOver" />
       </Docs>
     </Member>
     <Member MemberName="OnDrop">
@@ -4099,6 +4161,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.Drop" />
       </Docs>
     </Member>
     <Member MemberName="OnGiveFeedback">
@@ -4133,6 +4196,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.GiveFeedback" />
       </Docs>
     </Member>
     <Member MemberName="OnGotFocus">
@@ -4168,6 +4232,8 @@
         <block subset="none" type="overrides">
           <para>Unless you have a deliberate and unusual need to not raise the focus events, make sure that your implementation calls the base implementation. Otherwise, the <see cref="E:System.Windows.UIElement3D.GotFocus" /> event is not raised during typical user operations that ordinarily set focus to this element. If you do not intend your element to be focusable, you can prevent the element from being focusable by setting <see cref="P:System.Windows.UIElement3D.Focusable" /> to <see langword="false" />.</para>
         </block>
+        <altmember cref="P:System.Windows.UIElement3D.Focusable" />
+        <altmember cref="E:System.Windows.UIElement3D.GotFocus" />
       </Docs>
     </Member>
     <Member MemberName="OnGotKeyboardFocus">
@@ -4202,6 +4268,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.GotKeyboardFocus" />
       </Docs>
     </Member>
     <Member MemberName="OnGotMouseCapture">
@@ -4236,6 +4303,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.GotMouseCapture" />
       </Docs>
     </Member>
     <Member MemberName="OnGotStylusCapture">
@@ -4270,6 +4338,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.GotStylusCapture" />
       </Docs>
     </Member>
     <Member MemberName="OnGotTouchCapture">
@@ -4591,6 +4660,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.KeyDown" />
       </Docs>
     </Member>
     <Member MemberName="OnKeyUp">
@@ -4627,6 +4697,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.KeyUp" />
       </Docs>
     </Member>
     <Member MemberName="OnLostFocus">
@@ -4696,6 +4767,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.LostKeyboardFocus" />
       </Docs>
     </Member>
     <Member MemberName="OnLostMouseCapture">
@@ -4730,6 +4802,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.LostMouseCapture" />
       </Docs>
     </Member>
     <Member MemberName="OnLostStylusCapture">
@@ -4764,6 +4837,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.LostStylusCapture" />
       </Docs>
     </Member>
     <Member MemberName="OnLostTouchCapture">
@@ -4834,6 +4908,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.MouseDown" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseEnter">
@@ -4866,6 +4941,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.MouseEnter" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseLeave">
@@ -4898,6 +4974,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.MouseLeave" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseLeftButtonDown">
@@ -4998,6 +5075,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.MouseMove" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseRightButtonDown">
@@ -5140,6 +5218,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.MouseWheel" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewDragEnter">
@@ -5174,6 +5253,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.PreviewDragEnter" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewDragLeave">
@@ -5208,6 +5288,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.PreviewDragLeave" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewDragOver">
@@ -5242,6 +5323,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.PreviewDragOver" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewDrop">
@@ -5276,6 +5358,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.PreviewDrop" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewGiveFeedback">
@@ -5310,6 +5393,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.PreviewGiveFeedback" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewGotKeyboardFocus">
@@ -5344,6 +5428,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.PreviewGotKeyboardFocus" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewKeyDown">
@@ -5378,6 +5463,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.PreviewKeyDown" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewKeyUp">
@@ -5412,6 +5498,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.PreviewKeyUp" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewLostKeyboardFocus">
@@ -5446,6 +5533,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.PreviewLostKeyboardFocus" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewMouseDown">
@@ -5488,6 +5576,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.PreviewMouseDown" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewMouseLeftButtonDown">
@@ -5588,6 +5677,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.PreviewMouseMove" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewMouseRightButtonDown">
@@ -5696,6 +5786,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.PreviewMouseUp" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewMouseWheel">
@@ -5730,6 +5821,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.PreviewMouseWheel" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewQueryContinueDrag">
@@ -5764,6 +5856,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.PreviewQueryContinueDrag" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewStylusButtonDown">
@@ -5798,6 +5891,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.PreviewStylusButtonDown" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewStylusButtonUp">
@@ -5832,6 +5926,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.PreviewStylusButtonUp" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewStylusDown">
@@ -5866,6 +5961,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.PreviewStylusDown" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewStylusInAirMove">
@@ -5900,6 +5996,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.PreviewStylusInAirMove" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewStylusInRange">
@@ -5934,6 +6031,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.PreviewStylusInRange" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewStylusMove">
@@ -5968,6 +6066,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.PreviewStylusMove" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewStylusOutOfRange">
@@ -6002,6 +6101,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.PreviewStylusOutOfRange" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewStylusSystemGesture">
@@ -6036,6 +6136,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.PreviewStylusSystemGesture" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewStylusUp">
@@ -6070,6 +6171,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.PreviewStylusUp" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewTextInput">
@@ -6104,6 +6206,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.UIElement3D.OnPreviewKeyDown(System.Windows.Input.KeyEventArgs)" />
+        <altmember cref="E:System.Windows.UIElement3D.PreviewTextInput" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviewTouchDown">
@@ -6222,6 +6326,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.QueryContinueDrag" />
       </Docs>
     </Member>
     <Member MemberName="OnQueryCursor">
@@ -6256,6 +6361,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.QueryCursor" />
       </Docs>
     </Member>
     <Member MemberName="OnStylusButtonDown">
@@ -6290,6 +6396,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.StylusButtonDown" />
       </Docs>
     </Member>
     <Member MemberName="OnStylusButtonUp">
@@ -6324,6 +6431,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.StylusButtonUp" />
       </Docs>
     </Member>
     <Member MemberName="OnStylusDown">
@@ -6358,6 +6466,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.StylusDown" />
       </Docs>
     </Member>
     <Member MemberName="OnStylusEnter">
@@ -6390,6 +6499,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.StylusEnter" />
       </Docs>
     </Member>
     <Member MemberName="OnStylusInAirMove">
@@ -6424,6 +6534,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.StylusInAirMove" />
       </Docs>
     </Member>
     <Member MemberName="OnStylusInRange">
@@ -6458,6 +6569,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.StylusInRange" />
       </Docs>
     </Member>
     <Member MemberName="OnStylusLeave">
@@ -6490,6 +6602,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.StylusLeave" />
       </Docs>
     </Member>
     <Member MemberName="OnStylusMove">
@@ -6524,6 +6637,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.StylusMove" />
       </Docs>
     </Member>
     <Member MemberName="OnStylusOutOfRange">
@@ -6558,6 +6672,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.StylusOutOfRange" />
       </Docs>
     </Member>
     <Member MemberName="OnStylusSystemGesture">
@@ -6592,6 +6707,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.StylusSystemGesture" />
       </Docs>
     </Member>
     <Member MemberName="OnStylusUp">
@@ -6626,6 +6742,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.StylusUp" />
       </Docs>
     </Member>
     <Member MemberName="OnTextInput">
@@ -6660,6 +6777,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.TextInput" />
       </Docs>
     </Member>
     <Member MemberName="OnTouchDown">
@@ -6905,6 +7023,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.UIElement3D.MoveFocus(System.Windows.Input.TraversalRequest)" />
       </Docs>
     </Member>
     <Member MemberName="PreviewDragEnter">
@@ -7283,6 +7402,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.PreviewLostKeyboardFocus" />
       </Docs>
     </Member>
     <Member MemberName="PreviewGotKeyboardFocusEvent">
@@ -7350,6 +7470,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.PreviewKeyUp" />
       </Docs>
     </Member>
     <Member MemberName="PreviewKeyDownEvent">
@@ -7488,6 +7609,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.PreviewGotKeyboardFocus" />
       </Docs>
     </Member>
     <Member MemberName="PreviewLostKeyboardFocusEvent">
@@ -7628,6 +7750,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.MouseLeftButtonDown" />
       </Docs>
     </Member>
     <Member MemberName="PreviewMouseLeftButtonDownEvent">
@@ -7839,6 +7962,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.MouseRightButtonDown" />
       </Docs>
     </Member>
     <Member MemberName="PreviewMouseRightButtonDownEvent">
@@ -7910,6 +8034,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.MouseRightButtonUp" />
       </Docs>
     </Member>
     <Member MemberName="PreviewMouseRightButtonUpEvent">
@@ -8186,6 +8311,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.StylusButtonDown" />
       </Docs>
     </Member>
     <Member MemberName="PreviewStylusButtonDownEvent">
@@ -8811,6 +8937,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.PreviewKeyDown" />
       </Docs>
     </Member>
     <Member MemberName="PreviewTextInputEvent">
@@ -8878,6 +9005,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Input.Stylus.IsPressAndHoldEnabled" />
+        <altmember cref="M:System.Windows.Input.Stylus.GetIsPressAndHoldEnabled(System.Windows.DependencyObject)" />
+        <altmember cref="M:System.Windows.Input.Stylus.SetIsPressAndHoldEnabled(System.Windows.DependencyObject,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="PreviewTouchDownEvent">
@@ -9113,6 +9243,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.FrameworkElement.Cursor" />
       </Docs>
     </Member>
     <Member MemberName="QueryCursorEvent">
@@ -9218,6 +9349,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.UIElement3D.IsMouseCaptured" />
       </Docs>
     </Member>
     <Member MemberName="ReleaseStylusCapture">
@@ -9310,6 +9442,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.UIElement3D.AddHandler(System.Windows.RoutedEvent,System.Delegate)" />
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeCommandBindings">
@@ -9427,6 +9560,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.PreviewStylusButtonDown" />
       </Docs>
     </Member>
     <Member MemberName="StylusButtonDownEvent">
@@ -9496,6 +9630,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement3D.PreviewStylusButtonUp" />
       </Docs>
     </Member>
     <Member MemberName="StylusButtonUpEvent">
@@ -10261,6 +10396,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Input.Stylus.IsPressAndHoldEnabled" />
+        <altmember cref="M:System.Windows.Input.Stylus.GetIsPressAndHoldEnabled(System.Windows.DependencyObject)" />
+        <altmember cref="M:System.Windows.Input.Stylus.SetIsPressAndHoldEnabled(System.Windows.DependencyObject,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="TouchDownEvent">
@@ -10601,6 +10739,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.UIElement3D.IsVisible" />
+        <altmember cref="T:System.Windows.Visibility" />
       </Docs>
     </Member>
     <Member MemberName="VisibilityProperty">
@@ -10627,5 +10767,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddHandler">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a routed event handler for a specified routed event, adding the handler to the handler collection on the current element.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

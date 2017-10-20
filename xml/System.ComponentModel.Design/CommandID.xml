@@ -35,6 +35,8 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
+    <altmember cref="T:System.ComponentModel.Design.IMenuCommandService" />
+    <altmember cref="T:System.ComponentModel.Design.MenuCommand" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -72,6 +74,9 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
+        <altmember cref="T:System.ComponentModel.Design.IMenuCommandService" />
+        <altmember cref="T:System.ComponentModel.Design.MenuCommand" />
+        <altmember cref="T:System.ComponentModel.Design.StandardToolWindows" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -134,6 +139,7 @@
         <returns>A hash code for the current <see cref="T:System.Object" />.</returns>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
+        <altmember cref="M:System.Object.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="Guid">
@@ -162,6 +168,7 @@
         <value>The GUID of the command group for this command.</value>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
+        <altmember cref="T:System.ComponentModel.Design.StandardToolWindows" />
       </Docs>
     </Member>
     <Member MemberName="ID">

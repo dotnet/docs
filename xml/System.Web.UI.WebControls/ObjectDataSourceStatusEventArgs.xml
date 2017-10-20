@@ -59,6 +59,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ObjectDataSource" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -86,6 +87,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs.OutputParameters" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs.ReturnValue" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -115,6 +118,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs.OutputParameters" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs.ReturnValue" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs.Exception" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs.ExceptionHandled" />
       </Docs>
     </Member>
     <Member MemberName="AffectedRows">
@@ -140,6 +147,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.Selected" />
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.Inserted" />
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.Updated" />
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.Deleted" />
       </Docs>
     </Member>
     <Member MemberName="Exception">
@@ -179,6 +190,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs.ExceptionHandled" />
       </Docs>
     </Member>
     <Member MemberName="ExceptionHandled">
@@ -217,6 +229,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs.Exception" />
       </Docs>
     </Member>
     <Member MemberName="OutputParameters">
@@ -269,5 +282,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -562,5 +562,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Find">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Searches the <see cref="T:System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection" /> and returns the first member of the collection specified by the parameter passed in.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FindAll">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Searches the <see cref="T:System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection" /> for all members of the collection specified by the parameter passed in.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

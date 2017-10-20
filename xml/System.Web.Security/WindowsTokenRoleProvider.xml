@@ -521,5 +521,14 @@
         <exception cref="T:System.Configuration.Provider.ProviderException">An unsupported method was called.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsUserInRole">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a value indicating whether the specified user is in the specified built-in Windows role.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -302,10 +302,17 @@
       </Parameters>
       <Docs>
         <param name="">To be added.</param>
-        <param name="_Where">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="_Where">An iterator that points to the element to erase.</param>
+        <summary>Removes from the container the element that is specified by the given iterator.</summary>
+        <returns>An iterator.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::erase (STL/CLR)](../Topic/hash_map::erase%20\(STL-CLR\).md), [hash_multimap::erase (STL/CLR)](../Topic/hash_multimap::erase%20\(STL-CLR\).md), [hash_set::erase (STL/CLR)](../Topic/hash_set::erase%20\(STL-CLR\).md), and [hash_multiset::erase (STL/CLR)](../Topic/hash_multiset::erase%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="erase">
@@ -327,11 +334,18 @@
       </Parameters>
       <Docs>
         <param name="">To be added.</param>
-        <param name="_First_iter">To be added.</param>
-        <param name="_Last_iter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="_First_iter">An iterator that points to the beginning of the range to erase.</param>
+        <param name="_Last_iter">An iterator that points to the position that immediately follows the range to erase.</param>
+        <summary>Removes from the container the elements between the specified iterators.</summary>
+        <returns>An iterator.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::erase (STL/CLR)](../Topic/hash_map::erase%20\(STL-CLR\).md), [hash_multimap::erase (STL/CLR)](../Topic/hash_multimap::erase%20\(STL-CLR\).md), [hash_set::erase (STL/CLR)](../Topic/hash_set::erase%20\(STL-CLR\).md), and [hash_multiset::erase (STL/CLR)](../Topic/hash_multiset::erase%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="find">
@@ -516,11 +530,18 @@
       </Parameters>
       <Docs>
         <param name="">To be added.</param>
-        <param name="_Where">To be added.</param>
-        <param name="_Val">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="_Where">An iterator that specifies where in the container to insert the element. This is a hint only and is used to improve performance. The element might not be inserted at this location.</param>
+        <param name="_Val">The key value to insert into the container.</param>
+        <summary>Adds the given element to the container.</summary>
+        <returns>An iterator.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::insert (STL/CLR)](../Topic/hash_map::insert%20\(STL-CLR\).md), [hash_multimap::insert (STL/CLR)](../Topic/hash_multimap::insert%20\(STL-CLR\).md), [hash_set::insert (STL/CLR)](../Topic/hash_set::insert%20\(STL-CLR\).md), and [hash_multiset::insert (STL/CLR)](../Topic/hash_multiset::insert%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="key_comp">

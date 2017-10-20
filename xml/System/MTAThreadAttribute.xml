@@ -62,6 +62,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.STAThreadAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -90,6 +91,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.MTAThreadAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.STAThreadAttribute" />
       </Docs>
     </Member>
   </Members>

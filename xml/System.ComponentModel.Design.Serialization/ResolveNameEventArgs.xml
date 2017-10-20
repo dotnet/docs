@@ -38,6 +38,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.Design.Serialization.ResolveNameEventHandler" />
+    <altmember cref="E:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.ResolveName" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -65,6 +67,8 @@
         <param name="name">The name to resolve.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Serialization.ResolveNameEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.Design.Serialization.ResolveNameEventHandler" />
+        <altmember cref="E:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.ResolveName" />
       </Docs>
     </Member>
     <Member MemberName="Name">

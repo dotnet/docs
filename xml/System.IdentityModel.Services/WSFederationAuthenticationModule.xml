@@ -231,6 +231,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="request" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.IdentityModel.Services.WSFederationAuthenticationModule.OnAuthenticateRequest(System.Object,System.EventArgs)" />
+        <altmember cref="M:System.IdentityModel.Services.WSFederationAuthenticationModule.CanReadSignInResponse(System.Web.HttpRequestBase,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="CanReadSignInResponse">
@@ -274,6 +276,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="request" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.IdentityModel.Services.WSFederationAuthenticationModule.CanReadSignInResponse(System.Web.HttpRequestBase)" />
       </Docs>
     </Member>
     <Member MemberName="CreateSignInRequest">
@@ -328,6 +331,7 @@
  -or-  
   
  The <see cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.Realm" /> property is <see langword="null" /> or an empty string.</exception>
+        <altmember cref="M:System.IdentityModel.Services.WSFederationAuthenticationModule.RedirectToIdentityProvider(System.String,System.String,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="FederatedSignOut">
@@ -379,6 +383,8 @@
  <paramref name="replyUrl" /> is not <see langword="null" /> and is not an absolute URI.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="signOutUrl" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.IdentityModel.Services.WSFederationAuthenticationModule.SignOut" />
+        <altmember cref="M:System.IdentityModel.Services.WSFederationAuthenticationModule.GetSessionTokenContext" />
       </Docs>
     </Member>
     <Member MemberName="Freshness">
@@ -508,6 +514,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="request" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.IdentityModel.Services.WSFederationAuthenticationModule.CreateSignInRequest(System.String,System.String,System.Boolean)" />
+        <altmember cref="M:System.IdentityModel.Services.WSFederationAuthenticationModule.OnAuthenticateRequest(System.Object,System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="GetSecurityToken">
@@ -603,6 +611,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.Issuer" /> property is <see langword="null" />.</exception>
+        <altmember cref="P:System.IdentityModel.Tokens.SessionSecurityToken.Context" />
       </Docs>
     </Member>
     <Member MemberName="GetSignInResponseMessage">
@@ -807,6 +816,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="context" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.IdentityModel.Services.WSFederationAuthenticationModule.InitializePropertiesFromConfiguration" />
       </Docs>
     </Member>
     <Member MemberName="InitializePropertiesFromConfiguration">
@@ -1136,6 +1146,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IdentityModel.Services.WSFederationAuthenticationModule.SignOut(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="OnSignInError">
@@ -1185,6 +1196,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IdentityModel.Services.WSFederationAuthenticationModule.SignOut(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="OnSignOutError">
@@ -1213,6 +1225,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IdentityModel.Services.WSFederationAuthenticationModule.SignOut(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="PassiveRedirectEnabled">
@@ -1242,6 +1255,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.PersistentCookiesOnPassiveRedirects" />
       </Docs>
     </Member>
     <Member MemberName="PersistentCookiesOnPassiveRedirects">
@@ -1268,6 +1282,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.PassiveRedirectEnabled" />
       </Docs>
     </Member>
     <Member MemberName="Policy">
@@ -1590,6 +1605,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IdentityModel.Services.SecurityTokenReceivedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="SecurityTokenValidated">
@@ -1692,6 +1708,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="sessionToken" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.IdentityModel.Services.WSFederationAuthenticationModule.OnAuthenticateRequest(System.Object,System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="SignedIn">
@@ -1806,6 +1823,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IdentityModel.Services.WSFederationAuthenticationModule.CreateSignInRequest(System.String,System.String,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="SignInError">
@@ -2182,5 +2200,23 @@
         <exception cref="T:System.ArgumentNullException">An attempt to set the property to <see langword="null" /> occurs.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetXmlTokenFromMessage">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Extracts the issued token from the specified WS-Federation sign-in response message.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetSecurityToken">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads a security token from the specified request.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -19,6 +19,8 @@
     <summary>Defines methods that provide information about debugger objects. This interface is implemented by debugger objects that represent a type in the debugger target.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.IDebuggerObject" />
+    <altmember cref="T:Microsoft.JScript.DynamicFieldInfo" />
   </Docs>
   <Members>
     <Member MemberName="HasInstance">
@@ -43,6 +45,8 @@
           <see langword="true" /> if <paramref name="o" /> is an instance of the current type; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.IDebuggerObject" />
+        <altmember cref="T:Microsoft.JScript.DynamicFieldInfo" />
       </Docs>
     </Member>
   </Members>

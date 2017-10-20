@@ -39,6 +39,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Runtime.Remoting.RemotingConfiguration.RegisterWellKnownServiceType(System.Type,System.String,System.Runtime.Remoting.WellKnownObjectMode)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -115,6 +116,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.Remoting.Contexts.Context" />
+        <altmember cref="T:System.Runtime.Remoting.Contexts.ContextAttribute" />
+        <altmember cref="T:System.Runtime.Remoting.Contexts.ContextProperty" />
+        <altmember cref="T:System.Runtime.Remoting.Contexts.IContextAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Mode">
@@ -194,5 +199,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.WellKnownServiceTypeEntry" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -39,6 +39,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.Install.Installer" />
+    <altmember cref="T:System.Configuration.Install.TransactedInstaller" />
+    <altmember cref="T:System.Configuration.Install.AssemblyInstaller" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -115,6 +118,8 @@
         <block subset="none" type="usage">
           <para>Pass your default log-file path in the <paramref name="logFilePath" /> parameter when you call this constructor. This is the where the log file is created, unless the /logfile command-line parameter is used when the installation executable is run.</para>
         </block>
+        <altmember cref="P:System.Configuration.Install.InstallContext.Parameters" />
+        <altmember cref="M:System.Configuration.Install.InstallContext.LogMessage(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="IsParameterTrue">
@@ -156,6 +161,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Configuration.Install.InstallContext.Parameters" />
       </Docs>
     </Member>
     <Member MemberName="LogMessage">
@@ -195,6 +201,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Configuration.Install.InstallContext.Parameters" />
       </Docs>
     </Member>
     <Member MemberName="Parameters">
@@ -231,6 +238,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Specialized.StringDictionary" />
       </Docs>
     </Member>
     <Member MemberName="ParseCommandLine">
@@ -253,7 +261,18 @@
         <summary>Parses the command-line parameters into a string dictionary.</summary>
         <returns>A <see cref="T:System.Collections.Specialized.StringDictionary" /> containing the parsed command-line parameters.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Configuration.Install.InstallContext.Parameters" />
+        <altmember cref="M:System.Configuration.Install.InstallContext.IsParameterTrue(System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.Install</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.Install.InstallContext" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

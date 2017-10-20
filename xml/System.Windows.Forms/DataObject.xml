@@ -64,6 +64,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.Clipboard" />
+    <altmember cref="T:System.Windows.Forms.IDataObject" />
+    <altmember cref="T:System.Windows.Forms.DataFormats" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -90,6 +93,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataObject.GetData(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -124,6 +130,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.IDataObject" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetData(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -155,6 +165,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataObject.GetData(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
       </Docs>
     </Member>
     <Member MemberName="ContainsAudio">
@@ -182,6 +195,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Forms.DataFormats.WaveAudio" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetAudioStream" />
+        <altmember cref="Overload:System.Windows.Forms.DataObject.SetAudio" />
       </Docs>
     </Member>
     <Member MemberName="ContainsFileDropList">
@@ -211,6 +227,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Forms.DataFormats.FileDrop" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetFileDropList" />
+        <altmember cref="M:System.Windows.Forms.DataObject.SetFileDropList(System.Collections.Specialized.StringCollection)" />
       </Docs>
     </Member>
     <Member MemberName="ContainsImage">
@@ -238,6 +257,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Forms.DataFormats.Bitmap" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetImage" />
+        <altmember cref="M:System.Windows.Forms.DataObject.SetImage(System.Drawing.Image)" />
       </Docs>
     </Member>
     <Member MemberName="ContainsText">
@@ -265,6 +287,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Forms.TextDataFormat.UnicodeText" />
+        <altmember cref="Overload:System.Windows.Forms.DataObject.GetText" />
+        <altmember cref="Overload:System.Windows.Forms.DataObject.SetText" />
       </Docs>
     </Member>
     <Member MemberName="ContainsText">
@@ -297,6 +322,9 @@
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
           <paramref name="format" /> is not a valid <see cref="T:System.Windows.Forms.TextDataFormat" /> value.</exception>
+        <altmember cref="T:System.Windows.Forms.TextDataFormat" />
+        <altmember cref="Overload:System.Windows.Forms.DataObject.GetText" />
+        <altmember cref="Overload:System.Windows.Forms.DataObject.SetText" />
       </Docs>
     </Member>
     <Member MemberName="GetAudioStream">
@@ -325,6 +353,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.Stream" />
+        <altmember cref="F:System.Windows.Forms.DataFormats.WaveAudio" />
+        <altmember cref="M:System.Windows.Forms.DataObject.ContainsAudio" />
+        <altmember cref="Overload:System.Windows.Forms.DataObject.SetAudio" />
       </Docs>
     </Member>
     <Member MemberName="GetData">
@@ -372,6 +404,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
+        <altmember cref="T:System.Windows.Forms.DataFormats" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetFormats(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetData">
@@ -417,6 +453,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="T:System.Type" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
+        <altmember cref="T:System.Windows.Forms.DataFormats" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetFormats(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetData">
@@ -473,6 +514,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
+        <altmember cref="T:System.Windows.Forms.DataFormats" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetFormats(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetDataPresent">
@@ -518,6 +563,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetData(System.String,System.Boolean)" />
+        <altmember cref="T:System.Windows.Forms.DataFormats" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetFormats(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetDataPresent">
@@ -563,6 +612,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetData(System.String,System.Boolean)" />
+        <altmember cref="T:System.Type" />
+        <altmember cref="T:System.Windows.Forms.DataFormats" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetFormats(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetDataPresent">
@@ -627,6 +681,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetData(System.String,System.Boolean)" />
+        <altmember cref="T:System.Windows.Forms.DataFormats" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetFormats(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetFileDropList">
@@ -659,6 +717,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Specialized.StringCollection" />
+        <altmember cref="F:System.Windows.Forms.DataFormats.FileDrop" />
+        <altmember cref="M:System.Windows.Forms.DataObject.ContainsFileDropList" />
+        <altmember cref="M:System.Windows.Forms.DataObject.SetFileDropList(System.Collections.Specialized.StringCollection)" />
       </Docs>
     </Member>
     <Member MemberName="GetFormats">
@@ -697,6 +759,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataObject.GetData(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="T:System.Windows.Forms.DataFormats" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
       </Docs>
     </Member>
     <Member MemberName="GetFormats">
@@ -741,6 +807,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataObject.GetData(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="T:System.Windows.Forms.DataFormats" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
       </Docs>
     </Member>
     <Member MemberName="GetImage">
@@ -769,6 +839,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Image" />
+        <altmember cref="F:System.Windows.Forms.DataFormats.Bitmap" />
+        <altmember cref="M:System.Windows.Forms.DataObject.ContainsImage" />
+        <altmember cref="M:System.Windows.Forms.DataObject.SetImage(System.Drawing.Image)" />
       </Docs>
     </Member>
     <Member MemberName="GetText">
@@ -797,6 +871,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Forms.TextDataFormat.UnicodeText" />
+        <altmember cref="Overload:System.Windows.Forms.DataObject.ContainsText" />
+        <altmember cref="Overload:System.Windows.Forms.DataObject.SetText" />
       </Docs>
     </Member>
     <Member MemberName="GetText">
@@ -830,6 +907,9 @@
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
           <paramref name="format" /> is not a valid <see cref="T:System.Windows.Forms.TextDataFormat" /> value.</exception>
+        <altmember cref="T:System.Windows.Forms.TextDataFormat" />
+        <altmember cref="Overload:System.Windows.Forms.DataObject.ContainsText" />
+        <altmember cref="Overload:System.Windows.Forms.DataObject.SetText" />
       </Docs>
     </Member>
     <Member MemberName="SetAudio">
@@ -860,6 +940,9 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="audioBytes" /> is <see langword="null" />.</exception>
+        <altmember cref="F:System.Windows.Forms.DataFormats.WaveAudio" />
+        <altmember cref="M:System.Windows.Forms.DataObject.ContainsAudio" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetAudioStream" />
       </Docs>
     </Member>
     <Member MemberName="SetAudio">
@@ -890,6 +973,9 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="audioStream" /> is <see langword="null" />.</exception>
+        <altmember cref="F:System.Windows.Forms.DataFormats.WaveAudio" />
+        <altmember cref="M:System.Windows.Forms.DataObject.ContainsAudio" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetAudioStream" />
       </Docs>
     </Member>
     <Member MemberName="SetData">
@@ -931,6 +1017,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetData(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetFormats(System.Boolean)" />
+        <altmember cref="N:System.Runtime.Serialization" />
       </Docs>
     </Member>
     <Member MemberName="SetData">
@@ -976,6 +1066,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataObject.GetData(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetFormats(System.Boolean)" />
+        <altmember cref="T:System.Windows.Forms.DataFormats" />
       </Docs>
     </Member>
     <Member MemberName="SetData">
@@ -1019,6 +1113,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetData(System.String,System.Boolean)" />
+        <altmember cref="T:System.Windows.Forms.DataFormats" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetFormats(System.Boolean)" />
+        <altmember cref="T:System.Type" />
       </Docs>
     </Member>
     <Member MemberName="SetData">
@@ -1067,6 +1166,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataObject.GetData(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetFormats(System.Boolean)" />
+        <altmember cref="T:System.Windows.Forms.DataFormats" />
       </Docs>
     </Member>
     <Member MemberName="SetFileDropList">
@@ -1101,6 +1204,9 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="filePaths" /> is <see langword="null" />.</exception>
+        <altmember cref="F:System.Windows.Forms.DataFormats.FileDrop" />
+        <altmember cref="M:System.Windows.Forms.DataObject.ContainsFileDropList" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetFileDropList" />
       </Docs>
     </Member>
     <Member MemberName="SetImage">
@@ -1131,6 +1237,9 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="image" /> is <see langword="null" />.</exception>
+        <altmember cref="F:System.Windows.Forms.DataFormats.Bitmap" />
+        <altmember cref="M:System.Windows.Forms.DataObject.ContainsImage" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetImage" />
       </Docs>
     </Member>
     <Member MemberName="SetText">
@@ -1161,6 +1270,9 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="textData" /> is <see langword="null" /> or <see cref="F:System.String.Empty" />.</exception>
+        <altmember cref="T:System.Windows.Forms.TextDataFormat" />
+        <altmember cref="Overload:System.Windows.Forms.DataObject.ContainsText" />
+        <altmember cref="Overload:System.Windows.Forms.DataObject.GetText" />
       </Docs>
     </Member>
     <Member MemberName="SetText">
@@ -1195,6 +1307,9 @@
           <paramref name="textData" /> is <see langword="null" /> or <see cref="F:System.String.Empty" />.</exception>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
           <paramref name="format" /> is not a valid <see cref="T:System.Windows.Forms.TextDataFormat" /> value.</exception>
+        <altmember cref="T:System.Windows.Forms.TextDataFormat" />
+        <altmember cref="Overload:System.Windows.Forms.DataObject.ContainsText" />
+        <altmember cref="Overload:System.Windows.Forms.DataObject.GetText" />
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.InteropServices.ComTypes.IDataObject.DAdvise">
@@ -1596,5 +1711,107 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetData">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds an object to the <see cref="T:System.Windows.Forms.DataObject" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetFormats">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a list of all formats that data stored in this <see cref="T:System.Windows.Forms.DataObject" /> is associated with or can be converted to.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetText">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves text data from the data object.</summary>
+        <altmember cref="T:System.Windows.Forms.TextDataFormat" />
+        <altmember cref="Overload:System.Windows.Forms.DataObject.ContainsText" />
+        <altmember cref="Overload:System.Windows.Forms.DataObject.SetText" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetData">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the data associated with the specified data format.</summary>
+        <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="T:System.Type" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
+        <altmember cref="T:System.Windows.Forms.DataFormats" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetFormats(System.Boolean)" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetAudio">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds data to the data object in the <see cref="F:System.Windows.Forms.DataFormats.WaveAudio" /> format.</summary>
+        <altmember cref="F:System.Windows.Forms.DataFormats.WaveAudio" />
+        <altmember cref="M:System.Windows.Forms.DataObject.ContainsAudio" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetAudioStream" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetText">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds text data to the data object.</summary>
+        <altmember cref="T:System.Windows.Forms.TextDataFormat" />
+        <altmember cref="Overload:System.Windows.Forms.DataObject.ContainsText" />
+        <altmember cref="Overload:System.Windows.Forms.DataObject.GetText" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetDataPresent">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether data stored in this <see cref="T:System.Windows.Forms.DataObject" /> is associated with the specified format.</summary>
+        <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetData(System.String,System.Boolean)" />
+        <altmember cref="T:System.Windows.Forms.DataFormats" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetFormats(System.Boolean)" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ContainsText">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether the data object contains text data.</summary>
+        <altmember cref="T:System.Windows.Forms.TextDataFormat" />
+        <altmember cref="Overload:System.Windows.Forms.DataObject.GetText" />
+        <altmember cref="Overload:System.Windows.Forms.DataObject.SetText" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataObject" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

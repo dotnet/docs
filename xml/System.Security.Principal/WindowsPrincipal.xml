@@ -416,6 +416,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to manipulate the principal object. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlPrincipal" /></permission>
+        <altmember cref="T:System.Security.Principal.WindowsBuiltInRole" />
       </Docs>
     </Member>
     <Member MemberName="UserClaims">

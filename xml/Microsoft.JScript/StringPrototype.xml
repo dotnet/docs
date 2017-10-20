@@ -14,6 +14,7 @@
     <summary>Provides static methods and properties for <see cref="T:Microsoft.JScript.StringObject" /> objects. All methods of this class are called by passing in a reference to the object that is requesting access to the method. This class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.StringConstructor" />
   </Docs>
   <Members>
     <Member MemberName="anchor">
@@ -44,6 +45,8 @@
         <returns>A string in the form <c>"&lt;A NAME=\""+</c><paramref name="anchorName" /><c>+"\"&gt;"+</c><paramref name="thisob" /><c>+"&lt;/A&gt;"</c>.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.StringObject" />
+        <altmember cref="T:Microsoft.JScript.StringConstructor" />
       </Docs>
     </Member>
     <Member MemberName="big">
@@ -72,6 +75,8 @@
         <returns>A string in the form <c>"&lt;BIG&gt;"+</c><paramref name="thisob" /><c>+"&lt;/BIG&gt;"</c>.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.StringObject" />
+        <altmember cref="T:Microsoft.JScript.StringConstructor" />
       </Docs>
     </Member>
     <Member MemberName="blink">
@@ -100,6 +105,8 @@
         <returns>A string in the form <c>"&lt;BLINK&gt;"+</c><paramref name="thisob" /><c>+"&lt;/BLINK&gt;"</c>.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.StringObject" />
+        <altmember cref="T:Microsoft.JScript.StringConstructor" />
       </Docs>
     </Member>
     <Member MemberName="bold">
@@ -128,6 +135,8 @@
         <returns>A string in the form <c>"&lt;B&gt;"+</c><paramref name="thisob" /><c>+"&lt;/B&gt;"</c>.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.StringObject" />
+        <altmember cref="T:Microsoft.JScript.StringConstructor" />
       </Docs>
     </Member>
     <Member MemberName="charAt">
@@ -158,6 +167,8 @@
         <returns>The character at <paramref name="pos" />, if there is one.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.StringObject" />
+        <altmember cref="T:Microsoft.JScript.StringConstructor" />
       </Docs>
     </Member>
     <Member MemberName="charCodeAt">
@@ -188,6 +199,8 @@
         <returns>The code of the character at <paramref name="pos" />, if there is one.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.StringObject" />
+        <altmember cref="T:Microsoft.JScript.StringConstructor" />
       </Docs>
     </Member>
     <Member MemberName="concat">
@@ -224,6 +237,8 @@
         <returns>A string representation of <paramref name="thisob" />, with <paramref name="args" /> appended.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.StringObject" />
+        <altmember cref="T:Microsoft.JScript.StringConstructor" />
       </Docs>
     </Member>
     <Member MemberName="constructor">
@@ -243,6 +258,8 @@
         <value>A reference to a prototype-based object.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.StringObject" />
+        <altmember cref="T:Microsoft.JScript.StringConstructor" />
       </Docs>
     </Member>
     <Member MemberName="fixed">
@@ -271,6 +288,8 @@
         <returns>A string in the form <c>"&lt;TT&gt;"+</c><paramref name="thisob" /><c>+"&lt;/TT&gt;"</c>.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.StringObject" />
+        <altmember cref="T:Microsoft.JScript.StringConstructor" />
       </Docs>
     </Member>
     <Member MemberName="fontcolor">
@@ -301,6 +320,8 @@
         <returns>A string in the form <c>"&lt;FONT COLOR=\""+</c><paramref name="colorName" /><c>+"\"&gt;"+</c><paramref name="thisob" /><c>+"&lt;/FONT&gt;"</c>.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.StringObject" />
+        <altmember cref="T:Microsoft.JScript.StringConstructor" />
       </Docs>
     </Member>
     <Member MemberName="fontsize">
@@ -331,6 +352,8 @@
         <returns>A string in the form <c>"&lt;FONT SIZE=\""+</c><paramref name="fontSize" /><c>+"\"&gt;"+</c><paramref name="thisob" /><c>+"&lt;/FONT&gt;"</c>.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.StringObject" />
+        <altmember cref="T:Microsoft.JScript.StringConstructor" />
       </Docs>
     </Member>
     <Member MemberName="indexOf">
@@ -363,6 +386,8 @@
         <returns>The position of the first occurrence of <paramref name="searchString" />, if it is found.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.StringObject" />
+        <altmember cref="T:Microsoft.JScript.StringConstructor" />
       </Docs>
     </Member>
     <Member MemberName="italics">
@@ -391,6 +416,8 @@
         <returns>A string in the form <c>"&lt;I&gt;"+</c><paramref name="thisob" /><c>+"&lt;/I&gt;"</c>.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.StringObject" />
+        <altmember cref="T:Microsoft.JScript.StringConstructor" />
       </Docs>
     </Member>
     <Member MemberName="lastIndexOf">
@@ -423,6 +450,8 @@
         <returns>The position of the last occurrence of <paramref name="searchString" />, if it is found.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.StringObject" />
+        <altmember cref="T:Microsoft.JScript.StringConstructor" />
       </Docs>
     </Member>
     <Member MemberName="link">
@@ -453,6 +482,8 @@
         <returns>A string in the form <c>"&lt;A HREF=\""+</c><paramref name="linkRef" /><c>+"\"&gt;"+</c><paramref name="thisob" /><c>+"&lt;/A&gt;"</c>.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.StringObject" />
+        <altmember cref="T:Microsoft.JScript.StringConstructor" />
       </Docs>
     </Member>
     <Member MemberName="localeCompare">
@@ -483,6 +514,8 @@
         <returns>A negative value when <paramref name="thisob" /> is less than <paramref name="thatob" />; zero when <paramref name="thisob" /> equals <paramref name="thatob" />; a positive value when <paramref name="thisob" /> is greater than <paramref name="thatob" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.StringObject" />
+        <altmember cref="T:Microsoft.JScript.StringConstructor" />
       </Docs>
     </Member>
     <Member MemberName="match">
@@ -515,6 +548,8 @@
         <returns>The result of the search for the regular expression pattern.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.StringObject" />
+        <altmember cref="T:Microsoft.JScript.StringConstructor" />
       </Docs>
     </Member>
     <Member MemberName="replace">
@@ -547,6 +582,8 @@
         <returns>The new string, after the replacement is made.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.StringObject" />
+        <altmember cref="T:Microsoft.JScript.StringConstructor" />
       </Docs>
     </Member>
     <Member MemberName="search">
@@ -579,6 +616,8 @@
         <returns>If the search is successful, the index of the match; otherwise, -1.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.StringObject" />
+        <altmember cref="T:Microsoft.JScript.StringConstructor" />
       </Docs>
     </Member>
     <Member MemberName="slice">
@@ -611,6 +650,8 @@
         <returns>A new string that contains the consecutive characters between <paramref name="start" /> and <paramref name="end" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.StringObject" />
+        <altmember cref="T:Microsoft.JScript.StringConstructor" />
       </Docs>
     </Member>
     <Member MemberName="small">
@@ -639,6 +680,8 @@
         <returns>A string in the form <c>"&lt;SMALL&gt;"+</c><paramref name="thisob" /><c>+"&lt;/SMALL&gt;"</c>.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.StringObject" />
+        <altmember cref="T:Microsoft.JScript.StringConstructor" />
       </Docs>
     </Member>
     <Member MemberName="split">
@@ -673,6 +716,8 @@
         <returns>An array that contains the substrings in <paramref name="thisob" /> that are delimited by <paramref name="separator" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.StringObject" />
+        <altmember cref="T:Microsoft.JScript.StringConstructor" />
       </Docs>
     </Member>
     <Member MemberName="strike">
@@ -701,6 +746,8 @@
         <returns>A string in the form <c>"&lt;STRIKE&gt;"+</c><paramref name="thisob" /><c>+"&lt;/STRIKE&gt;"</c>.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.StringObject" />
+        <altmember cref="T:Microsoft.JScript.StringConstructor" />
       </Docs>
     </Member>
     <Member MemberName="sub">
@@ -729,6 +776,8 @@
         <returns>A string in the form <c>"&lt;SUB&gt;"+</c><paramref name="thisob" /><c>+"&lt;/SUB&gt;"</c>.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.StringObject" />
+        <altmember cref="T:Microsoft.JScript.StringConstructor" />
       </Docs>
     </Member>
     <Member MemberName="substr">
@@ -764,6 +813,8 @@
         <returns>A new string that contains <paramref name="count" /> consecutive characters, starting at <paramref name="start" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.StringObject" />
+        <altmember cref="T:Microsoft.JScript.StringConstructor" />
       </Docs>
     </Member>
     <Member MemberName="substring">
@@ -796,6 +847,8 @@
         <returns>A new string that contains the consecutive characters between <paramref name="start" /> and <paramref name="end" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.StringObject" />
+        <altmember cref="T:Microsoft.JScript.StringConstructor" />
       </Docs>
     </Member>
     <Member MemberName="sup">
@@ -824,6 +877,8 @@
         <returns>A string in the form <c>"&lt;SUP&gt;"+</c><paramref name="thisob" /><c>+"&lt;/SUP&gt;"</c>.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.StringObject" />
+        <altmember cref="T:Microsoft.JScript.StringConstructor" />
       </Docs>
     </Member>
     <Member MemberName="toLocaleLowerCase">
@@ -852,6 +907,8 @@
         <returns>A lowercase string.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.StringObject" />
+        <altmember cref="T:Microsoft.JScript.StringConstructor" />
       </Docs>
     </Member>
     <Member MemberName="toLocaleUpperCase">
@@ -880,6 +937,8 @@
         <returns>An uppercase string.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.StringObject" />
+        <altmember cref="T:Microsoft.JScript.StringConstructor" />
       </Docs>
     </Member>
     <Member MemberName="toLowerCase">
@@ -908,6 +967,8 @@
         <returns>A lowercase string.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.StringObject" />
+        <altmember cref="T:Microsoft.JScript.StringConstructor" />
       </Docs>
     </Member>
     <Member MemberName="toString">
@@ -936,6 +997,8 @@
         <returns>A string representation of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.StringObject" />
+        <altmember cref="T:Microsoft.JScript.StringConstructor" />
       </Docs>
     </Member>
     <Member MemberName="toUpperCase">
@@ -964,6 +1027,8 @@
         <returns>An uppercase string.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.StringObject" />
+        <altmember cref="T:Microsoft.JScript.StringConstructor" />
       </Docs>
     </Member>
     <Member MemberName="valueOf">
@@ -992,6 +1057,8 @@
         <returns>The value of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.StringObject" />
+        <altmember cref="T:Microsoft.JScript.StringConstructor" />
       </Docs>
     </Member>
   </Members>

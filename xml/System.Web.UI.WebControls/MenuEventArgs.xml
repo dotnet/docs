@@ -103,6 +103,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Menu" />
+    <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+    <altmember cref="T:System.Web.UI.WebControls.MenuEventHandler" />
+    <altmember cref="E:System.Web.UI.WebControls.Menu.MenuItemClick" />
+    <altmember cref="M:System.Web.UI.WebControls.Menu.OnMenuItemClick(System.Web.UI.WebControls.MenuEventArgs)" />
+    <altmember cref="E:System.Web.UI.WebControls.Menu.MenuItemDataBound" />
+    <altmember cref="M:System.Web.UI.WebControls.Menu.OnMenuItemDataBound(System.Web.UI.WebControls.MenuEventArgs)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -135,6 +142,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandEventArgs.CommandArgument" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandEventArgs.CommandName" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuEventArgs.CommandSource" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuEventArgs.Item" />
+        <altmember cref="E:System.Web.UI.WebControls.Menu.MenuItemClick" />
+        <altmember cref="E:System.Web.UI.WebControls.Menu.MenuItemDataBound" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -171,6 +185,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.CommandEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandEventArgs.CommandArgument" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandEventArgs.CommandName" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuEventArgs.CommandSource" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuEventArgs.Item" />
+        <altmember cref="E:System.Web.UI.WebControls.Menu.MenuItemClick" />
+        <altmember cref="E:System.Web.UI.WebControls.Menu.MenuItemDataBound" />
       </Docs>
     </Member>
     <Member MemberName="CommandSource">
@@ -196,6 +218,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.Menu.MenuItemClick" />
+        <altmember cref="E:System.Web.UI.WebControls.Menu.MenuItemDataBound" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -229,7 +253,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.MenuEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

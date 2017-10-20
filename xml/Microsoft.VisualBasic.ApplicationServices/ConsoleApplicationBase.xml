@@ -35,6 +35,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase" />
+    <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.ApplicationBase" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -110,6 +112,10 @@
         </remarks>
         <altCompliant cref="P:System.Environment.CommandLine" />
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls the ability to access the PATH environment variable. Associated enumeration: <see cref="F:System.Security.Permissions.EnvironmentPermissionAccess.Read" />.</permission>
+        <altmember cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" />
+        <altmember cref="E:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance" />
+        <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.StartupEventArgs" />
+        <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.StartupEventArgs.CommandLine" />
       </Docs>
     </Member>
     <Member MemberName="Deployment">
@@ -162,6 +168,7 @@
         </remarks>
         <exception cref="T:System.Deployment.Application.InvalidDeploymentException">The application is not deployed as a ClickOnce application.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.Deployment.Application.ApplicationDeployment" />
       </Docs>
     </Member>
     <Member MemberName="InternalCommandLine">

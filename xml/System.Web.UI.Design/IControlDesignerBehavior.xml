@@ -24,6 +24,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.Design.IControlDesignerTag" />
+    <altmember cref="T:System.Web.UI.Design.IControlDesignerView" />
   </Docs>
   <Members>
     <Member MemberName="DesignTimeElementView">
@@ -51,6 +53,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.IControlDesignerTag" />
+        <altmember cref="T:System.Web.UI.Design.IControlDesignerView" />
       </Docs>
     </Member>
     <Member MemberName="DesignTimeHtml">
@@ -78,6 +82,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.IControlDesignerTag" />
+        <altmember cref="T:System.Web.UI.Design.IControlDesignerView" />
       </Docs>
     </Member>
     <Member MemberName="OnTemplateModeChanged">
@@ -116,6 +122,8 @@
   
  When overriding <see cref="M:System.Web.UI.Design.IControlDesignerBehavior.OnTemplateModeChanged" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.Design.IControlDesignerBehavior.OnTemplateModeChanged" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Web.UI.Design.IControlDesignerTag" />
+        <altmember cref="T:System.Web.UI.Design.IControlDesignerView" />
       </Docs>
     </Member>
   </Members>

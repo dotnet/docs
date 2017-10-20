@@ -20,6 +20,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Compilation.BuildManager" />
   </Docs>
   <Members>
     <Member MemberName="HashCode">
@@ -38,6 +39,7 @@
         <summary>Gets a string representing the hash code of the dependent virtual paths.</summary>
         <value>A <see cref="T:System.String" /> representing the hash code of the dependent virtual paths.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.Compilation.BuildManager" />
       </Docs>
     </Member>
     <Member MemberName="VirtualPaths">
@@ -56,6 +58,7 @@
         <summary>Gets a list of virtual path dependencies.</summary>
         <value>An <see cref="T:System.Collections.IEnumerable" /> containing the virtual path dependencies.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.Compilation.BuildManager" />
       </Docs>
     </Member>
   </Members>

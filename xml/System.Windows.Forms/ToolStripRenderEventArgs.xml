@@ -28,6 +28,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ToolStripRenderer" />
+    <altmember cref="T:System.Windows.Forms.ToolStripProfessionalRenderer" />
+    <altmember cref="T:System.Windows.Forms.ToolStripSystemRenderer" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -100,6 +103,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ToolStripRenderer" />
+        <altmember cref="T:System.Windows.Forms.ToolStripProfessionalRenderer" />
+        <altmember cref="T:System.Windows.Forms.ToolStripSystemRenderer" />
       </Docs>
     </Member>
     <Member MemberName="BackColor">
@@ -193,6 +199,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ToolStripRenderer" />
+        <altmember cref="T:System.Windows.Forms.ToolStripProfessionalRenderer" />
+        <altmember cref="T:System.Windows.Forms.ToolStripSystemRenderer" />
       </Docs>
     </Member>
     <Member MemberName="ToolStrip">
@@ -221,7 +230,19 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ToolStripRenderer" />
+        <altmember cref="T:System.Windows.Forms.ToolStripProfessionalRenderer" />
+        <altmember cref="T:System.Windows.Forms.ToolStripSystemRenderer" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripRenderEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

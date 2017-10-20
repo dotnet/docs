@@ -31,6 +31,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.Design.Behavior.Behavior" />
+    <altmember cref="T:System.Windows.Forms.Design.Behavior.Adorner" />
+    <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -60,6 +63,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.Behavior" />
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.Adorner" />
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
       </Docs>
     </Member>
     <Member MemberName="Behavior">
@@ -78,6 +84,9 @@
         <summary>Gets the <see cref="T:System.Windows.Forms.Design.Behavior.Behavior" /> associated with the <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" />.</summary>
         <value>The <see cref="T:System.Windows.Forms.Design.Behavior.Behavior" /> associated with the <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" />, or <see langword="null" /> if there is no behavior.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.Behavior" />
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.Adorner" />
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
       </Docs>
     </Member>
     <Member MemberName="Bounds">
@@ -107,6 +116,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.Behavior" />
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.Adorner" />
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
       </Docs>
     </Member>
     <Member MemberName="GetHitTest">
@@ -145,6 +157,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.Behavior" />
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.Adorner" />
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
+        <altmember cref="T:System.Windows.Forms.Cursor" />
       </Docs>
     </Member>
     <Member MemberName="Paint">
@@ -182,6 +198,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.Behavior" />
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.Adorner" />
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
+        <altmember cref="T:System.Windows.Forms.Cursor" />
       </Docs>
     </Member>
     <Member MemberName="SetBehavior">
@@ -206,6 +226,10 @@
         <block subset="none" type="overrides">
           <para>The <see cref="M:System.Windows.Forms.Design.Behavior.Glyph.SetBehavior(System.Windows.Forms.Design.Behavior.Behavior)" /> method is called by inheriting classes to change the <see cref="T:System.Windows.Forms.Design.Behavior.Behavior" /> associated with the <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" />.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.Behavior" />
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.Adorner" />
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
+        <altmember cref="T:System.Windows.Forms.Cursor" />
       </Docs>
     </Member>
   </Members>

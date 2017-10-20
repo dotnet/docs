@@ -532,5 +532,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="System.ComponentModel.ICustomTypeDescriptor.GetEvents">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the collection of events for the contained <see cref="T:System.Workflow.ComponentModel.Activity" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="System.ComponentModel.ICustomTypeDescriptor.GetProperties">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the collection of properties for the contained <see cref="T:System.Workflow.ComponentModel.Activity" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

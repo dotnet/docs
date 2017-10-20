@@ -40,6 +40,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="Overload:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.ValidateUser" />
+    <altmember cref="M:System.Web.Security.Membership.ValidateUser(System.String,System.String)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -574,6 +576,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Net.WebException">The <see cref="P:System.Web.ClientServices.ConnectivityStatus.IsOffline" /> property value is <see langword="false" /> and the membership provider is unable to access the authentication service.</exception>
+        <altmember cref="Overload:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.ValidateUser" />
+        <altmember cref="M:System.Web.Security.Membership.ValidateUser(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="MaxInvalidPasswordAttempts">
@@ -935,6 +939,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.ClientServices.Providers.UserValidatedEventArgs" />
+        <altmember cref="P:System.Web.ClientServices.Providers.UserValidatedEventArgs.UserName" />
+        <altmember cref="M:System.Web.ClientServices.ClientFormsIdentity.RevalidateUser" />
       </Docs>
     </Member>
     <Member MemberName="ValidateUser">
@@ -978,6 +985,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Net.WebException">The <see cref="P:System.Web.ClientServices.ConnectivityStatus.IsOffline" /> property value is <see langword="false" /> and the membership provider is unable to access the authentication service.</exception>
+        <altmember cref="T:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider" />
+        <altmember cref="M:System.Web.Security.Membership.ValidateUser(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ValidateUser">
@@ -1022,6 +1031,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Net.WebException">The <see cref="P:System.Web.ClientServices.ConnectivityStatus.IsOffline" /> property value is <see langword="false" /> and the membership provider is unable to access the authentication service.</exception>
+        <altmember cref="M:System.Web.Security.Membership.ValidateUser(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ValidateUser">
@@ -1065,7 +1075,27 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Net.WebException">The <see cref="P:System.Web.ClientServices.ConnectivityStatus.IsOffline" /> property value is <see langword="false" /> and the membership provider is unable to access the authentication service.</exception>
+        <altmember cref="M:System.Web.Security.Membership.ValidateUser(System.String,System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ValidateUser">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Authenticates a user by using the specified credentials.</summary>
+        <altmember cref="M:System.Web.Security.Membership.ValidateUser(System.String,System.String)" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetUser">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>This method is not used by this class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -68,6 +68,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Markup.XamlWriter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -161,6 +162,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="stream" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Markup.XamlWriter" />
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -226,6 +228,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="reader" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Markup.XamlWriter" />
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -256,6 +259,7 @@
  -or-  
   
  <paramref name="parserContext" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Markup.XamlWriter" />
       </Docs>
     </Member>
     <Member MemberName="LoadAsync">
@@ -294,6 +298,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="stream" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">Multiple load operations are pending concurrently with the same <see cref="T:System.Windows.Markup.XamlReader" />.</exception>
+        <altmember cref="T:System.Windows.Markup.XamlWriter" />
       </Docs>
     </Member>
     <Member MemberName="LoadAsync">
@@ -332,6 +337,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="reader" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">Multiple load operations are performed concurrently with the same <see cref="T:System.Windows.Markup.XamlReader" />.</exception>
+        <altmember cref="T:System.Windows.Markup.XamlWriter" />
       </Docs>
     </Member>
     <Member MemberName="LoadAsync">
@@ -372,6 +378,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="stream" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">Multiple load operations are performed concurrently with the same <see cref="T:System.Windows.Markup.XamlReader" />.</exception>
+        <altmember cref="T:System.Windows.Markup.XamlWriter" />
       </Docs>
     </Member>
     <Member MemberName="LoadCompleted">
@@ -396,6 +403,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.AsyncCompletedEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -458,5 +466,32 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Parse">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads the markup in the specified text string and returns an object that corresponds to the root of the specified markup.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Load">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads XAML input and returns the root of the corresponding object tree.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LoadAsync">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads XAML markup and returns an object that corresponds to the root of the specified markup.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -30,6 +30,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IO.Packaging.PackageDigitalSignatureManager" />
+    <altmember cref="T:System.Windows.Xps.Packaging.XpsDigitalSignature" />
   </Docs>
   <Members>
     <Member MemberName="CertificateEmbeddingOption">
@@ -62,6 +64,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The digital <see cref="P:System.IO.Packaging.PackageDigitalSignature.Signature" /> has been deleted.</exception>
+        <altmember cref="P:System.IO.Packaging.PackageDigitalSignature.Signer" />
       </Docs>
     </Member>
     <Member MemberName="GetPartTransformList">
@@ -85,6 +88,7 @@
         <returns>An ordered list of URI strings, such as <see cref="F:System.Security.Cryptography.Xml.SignedXml.XmlDsigCanonicalizationUrl" /> or <see cref="F:System.Security.Cryptography.Xml.SignedXml.XmlDsigC14NTransformUrl" />, that represents the canonical XML transformations applied to the part with the given <paramref name="partName" /> URI.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The digital <see cref="P:System.IO.Packaging.PackageDigitalSignature.Signature" /> has been deleted.</exception>
+        <altmember cref="N:System.Security.Cryptography.Xml" />
       </Docs>
     </Member>
     <Member MemberName="Signature">
@@ -175,6 +179,7 @@
         <value>A byte array that contains the encrypted hash value of the <see cref="P:System.IO.Packaging.PackageDigitalSignature.Signature" />.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The digital <see cref="P:System.IO.Packaging.PackageDigitalSignature.Signature" /> has been deleted.</exception>
+        <altmember cref="M:System.Security.Policy.Hash.GenerateHash(System.Security.Cryptography.HashAlgorithm)" />
       </Docs>
     </Member>
     <Member MemberName="SignedParts">
@@ -194,6 +199,8 @@
         <value>A collection that contains all the package parts signed with the signature.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The digital <see cref="P:System.IO.Packaging.PackageDigitalSignature.Signature" /> has been deleted.</exception>
+        <altmember cref="T:System.IO.Packaging.PackagePart" />
+        <altmember cref="P:System.IO.Packaging.PackageDigitalSignature.SignedRelationshipSelectors" />
       </Docs>
     </Member>
     <Member MemberName="SignedRelationshipSelectors">
@@ -271,6 +278,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The digital <see cref="P:System.IO.Packaging.PackageDigitalSignature.Signature" /> has been deleted.</exception>
+        <altmember cref="P:System.IO.Packaging.PackageDigitalSignature.TimeFormat" />
       </Docs>
     </Member>
     <Member MemberName="TimeFormat">
@@ -319,6 +327,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The digital <see cref="P:System.IO.Packaging.PackageDigitalSignature.Signature" /> has been deleted.</exception>
+        <altmember cref="P:System.IO.Packaging.PackageDigitalSignatureManager.TimeFormat" />
       </Docs>
     </Member>
     <Member MemberName="Verify">
@@ -347,6 +356,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The digital <see cref="P:System.IO.Packaging.PackageDigitalSignature.Signature" /> has been deleted.</exception>
+        <altmember cref="M:System.IO.Packaging.PackageDigitalSignatureManager.VerifyCertificate(System.Security.Cryptography.X509Certificates.X509Certificate)" />
+        <altmember cref="M:System.IO.Packaging.PackageDigitalSignatureManager.VerifySignatures(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="Verify">
@@ -379,7 +390,18 @@
           <see cref="F:System.IO.Packaging.VerifyResult.Success" /> if the verification succeeded; otherwise, one of the <see cref="T:System.IO.Packaging.VerifyResult" /> values that identifies a problem.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The digital <see cref="P:System.IO.Packaging.PackageDigitalSignature.Signature" /> has been deleted.</exception>
+        <altmember cref="M:System.IO.Packaging.PackageDigitalSignatureManager.VerifyCertificate(System.Security.Cryptography.X509Certificates.X509Certificate)" />
+        <altmember cref="M:System.IO.Packaging.PackageDigitalSignatureManager.VerifySignatures(System.Boolean)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Verify">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Verifies the digital signature against an X.509 certificate.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

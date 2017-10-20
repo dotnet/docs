@@ -38,6 +38,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Configuration.CacheSection" />
+    <altmember cref="T:System.Web.Configuration.OutputCacheSection" />
+    <altmember cref="T:System.Web.Configuration.OutputCacheSettingsSection" />
+    <altmember cref="T:System.Web.Configuration.SqlCacheDependencySection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -98,6 +102,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.CacheSection" />
       </Docs>
     </Member>
     <Member MemberName="OutputCache">
@@ -136,6 +141,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.OutputCacheSection" />
       </Docs>
     </Member>
     <Member MemberName="OutputCacheSettings">
@@ -180,6 +186,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.OutputCacheSettingsSection" />
       </Docs>
     </Member>
     <Member MemberName="SqlCacheDependency">
@@ -220,6 +227,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.SqlCacheDependencySection" />
       </Docs>
     </Member>
   </Members>

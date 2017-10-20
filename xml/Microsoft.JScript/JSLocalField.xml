@@ -14,6 +14,9 @@
     <summary>Represents a local variable.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.JSField" />
+    <altmember cref="T:Microsoft.JScript.JSFieldInfo" />
+    <altmember cref="T:System.Reflection.FieldInfo" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,6 +40,10 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.JSLocalField" /> class, using the specified name, handle, and slot number.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.JSVariableField" />
+        <altmember cref="T:Microsoft.JScript.JSField" />
+        <altmember cref="T:Microsoft.JScript.JSFieldInfo" />
+        <altmember cref="T:System.Reflection.FieldInfo" />
       </Docs>
     </Member>
     <Member MemberName="FieldType">
@@ -56,6 +63,10 @@
         <value>The type of this field.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.JSVariableField" />
+        <altmember cref="T:Microsoft.JScript.JSField" />
+        <altmember cref="T:Microsoft.JScript.JSFieldInfo" />
+        <altmember cref="T:System.Reflection.FieldInfo" />
       </Docs>
     </Member>
     <Member MemberName="GetValue">
@@ -79,6 +90,10 @@
         <returns>The value of the field.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.JSVariableField" />
+        <altmember cref="T:Microsoft.JScript.JSField" />
+        <altmember cref="T:Microsoft.JScript.JSFieldInfo" />
+        <altmember cref="T:System.Reflection.FieldInfo" />
       </Docs>
     </Member>
     <Member MemberName="SetValue">
@@ -109,6 +124,10 @@
         <summary>Sets the value of the field, using the specified value, culture, and binding information.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.JSVariableField" />
+        <altmember cref="T:Microsoft.JScript.JSField" />
+        <altmember cref="T:Microsoft.JScript.JSFieldInfo" />
+        <altmember cref="T:System.Reflection.FieldInfo" />
       </Docs>
     </Member>
   </Members>

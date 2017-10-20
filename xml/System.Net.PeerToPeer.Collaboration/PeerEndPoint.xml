@@ -32,6 +32,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" />
+    <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" />
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -51,6 +53,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.Peer" />
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -84,6 +87,7 @@
         <param name="endPoint">The endpoint associated with the peer.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> class with the peer-associated endpoint contained in <see cref="T:System.Net.IPEndPoint" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.IPEndPoint" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -201,6 +205,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Net.PeerToPeer.PeerToPeerException">The specified <see cref="P:System.Net.PeerToPeer.Collaboration.PeerEndPoint.EndPoint" /> endpoint is not a valid IPv6 endpoint.</exception>
+        <altmember cref="T:System.Net.IPEndPoint" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -313,6 +320,7 @@
         <param name="context">The destination for the serialization.</param>
         <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> class instance with the data required to serialize the specified <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> instance. A derived type must call the base type <see cref="M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" /> method.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -339,6 +347,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" />
       </Docs>
     </Member>
     <Member MemberName="NameChanged">
@@ -386,6 +396,7 @@
         <param name="nameChangedArgs">Specifies the type of change that has occurred to the <c>PeerName</c>.</param>
         <summary>Called when a change occurs to the <paramref name="PeerName" /> specified by the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> associated with the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> instance.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" />
       </Docs>
     </Member>
     <Member MemberName="SynchronizingObject">
@@ -425,6 +436,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The calling object has been disposed.</exception>
+        <altmember cref="T:System.Windows.Forms.Form" />
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
@@ -453,6 +465,7 @@
         <param name="context">The destination for the serialization.</param>
         <summary>Populates the current <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> instance with the data obtained from the serialized source.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -476,5 +489,23 @@
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> object has been disposed.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Specifies if the content of the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> object is equivalent to the content of another object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases all resources utilized by the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> instance.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

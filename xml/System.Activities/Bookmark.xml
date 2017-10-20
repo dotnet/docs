@@ -252,5 +252,14 @@ syncEvent.WaitOne();
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether two <see cref="T:System.Activities.Bookmark" /> objects refer to the same continuation point in a workflow.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

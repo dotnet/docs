@@ -129,7 +129,18 @@
         <summary>Creates a <see cref="T:System.ServiceModel.Channels.SecurityBindingElement" /> using the settings provided by this instance.</summary>
         <returns>A <see cref="T:System.ServiceModel.Channels.SecurityBindingElement" /> using the settings provided by this instance.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ServiceModel.WSFederationHttpBinding" />
+        <altmember cref="T:System.ServiceModel.WS2007HttpBinding" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.WS2007FederationHttpBinding" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

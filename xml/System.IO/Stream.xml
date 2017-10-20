@@ -88,6 +88,9 @@
   
  Do not override the <see cref="M:System.IO.Stream.Close" /> method, instead, put all the <see cref="T:System.IO.Stream" /> cleanup logic in the <see cref="M:System.IO.Stream.Dispose(System.Boolean)" /> method. For more information, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).</para>
     </block>
+    <altmember cref="T:System.IO.FileStream" />
+    <altmember cref="T:System.IO.MemoryStream" />
+    <altmember cref="T:System.IO.BufferedStream" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -251,6 +254,8 @@
         <exception cref="T:System.ArgumentException">One or more of the arguments is invalid.</exception>
         <exception cref="T:System.ObjectDisposedException">Methods were called after the stream was closed.</exception>
         <exception cref="T:System.NotSupportedException">The current <see langword="Stream" /> implementation does not support the write operation.</exception>
+        <altmember cref="M:System.IO.Stream.EndWrite(System.IAsyncResult)" />
+        <altmember cref="P:System.IO.Stream.CanWrite" />
       </Docs>
     </Member>
     <Member MemberName="CanRead">
@@ -391,6 +396,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.IO.Stream.ReadTimeout" />
+        <altmember cref="P:System.IO.Stream.WriteTimeout" />
       </Docs>
     </Member>
     <Member MemberName="CanWrite">
@@ -2068,5 +2075,71 @@
         </block>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CopyTo">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads the bytes from the current stream and writes them to another stream.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases all resources used by the <see cref="T:System.IO.Stream" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Asynchronously writes a sequence of bytes to the current stream and advances the current position within this stream by the number of bytes written.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Asynchronously reads a sequence of bytes from the current stream and advances the position within the stream by the number of bytes read.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CopyToAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Asynchronously reads the bytes from the current stream and writes them to another stream.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FlushAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Asynchronously clears all buffers for this stream and causes any buffered data to be written to the underlying device.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

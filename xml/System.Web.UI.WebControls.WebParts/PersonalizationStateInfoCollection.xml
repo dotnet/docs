@@ -137,6 +137,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />
+        <altmember cref="M:System.Collections.ArrayList.CopyTo(System.Array,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -428,7 +430,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />
+        <altmember cref="M:System.Collections.ArrayList.CopyTo(System.Array,System.Int32)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets an element from the collection based on the specified parameters.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

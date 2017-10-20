@@ -567,5 +567,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="OnPropertyChanged">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Raises the <see cref="E:System.Activities.Presentation.PropertyEditing.PropertyValue.PropertyChanged" /> event when the property value has changed.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

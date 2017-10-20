@@ -32,6 +32,15 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Parameter" />
+    <altmember cref="T:System.Web.UI.WebControls.ParameterCollection" />
+    <altmember cref="T:System.Web.UI.WebControls.ObjectDataSource" />
+    <altmember cref="T:System.Web.UI.WebControls.SqlDataSource" />
+    <altmember cref="T:System.Web.UI.WebControls.ObjectDataSourceView" />
+    <altmember cref="T:System.Web.UI.WebControls.SqlDataSourceView" />
+    <altmember cref="T:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner" />
+    <altmember cref="T:System.Web.UI.Design.WebControls.SqlDataSourceDesigner" />
+    <altmember cref="T:System.Drawing.Design.UITypeEditor" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -54,6 +63,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Parameter" />
+        <altmember cref="T:System.Web.UI.WebControls.ParameterCollection" />
+        <altmember cref="T:System.Drawing.Design.UITypeEditor" />
+        <altmember cref="T:System.Web.UI.WebControls.ObjectDataSource" />
+        <altmember cref="T:System.Web.UI.WebControls.SqlDataSource" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.SqlDataSourceDesigner" />
       </Docs>
     </Member>
     <Member MemberName="EditValue">
@@ -91,6 +107,13 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="value" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.Parameter" />
+        <altmember cref="T:System.Web.UI.WebControls.ParameterCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.ObjectDataSource" />
+        <altmember cref="T:System.Web.UI.WebControls.SqlDataSource" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.SqlDataSourceDesigner" />
+        <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
       </Docs>
     </Member>
     <Member MemberName="GetEditStyle">
@@ -120,6 +143,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Parameter" />
+        <altmember cref="T:System.Web.UI.WebControls.ParameterCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.ObjectDataSource" />
+        <altmember cref="T:System.Web.UI.WebControls.SqlDataSource" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.SqlDataSourceDesigner" />
+        <altmember cref="T:System.Drawing.Design.UITypeEditorEditStyle" />
       </Docs>
     </Member>
   </Members>

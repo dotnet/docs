@@ -23,6 +23,8 @@
     <summary>Defines properties to obtain information about errors. This interface provides extra functionality that is needed by an IActiveScript host.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.JScriptException" />
+    <altmember cref="T:Microsoft.JScript.Context" />
   </Docs>
   <Members>
     <Member MemberName="EndLine">
@@ -42,6 +44,8 @@
         <value>The end line of the code in which an error occurred.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.JScriptException" />
+        <altmember cref="T:Microsoft.JScript.Context" />
       </Docs>
     </Member>
   </Members>

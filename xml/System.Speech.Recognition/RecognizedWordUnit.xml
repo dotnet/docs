@@ -100,6 +100,7 @@ internal static string stringFromWordArray(ReadOnlyCollection<RecognizedWordUnit
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Speech.Recognition.DisplayAttributes" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -205,6 +206,7 @@ private void _emulateAndVerify_Click(object sender, EventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.DisplayAttributes" />
       </Docs>
     </Member>
     <Member MemberName="Confidence">
@@ -331,6 +333,7 @@ internal static string stringFromWordArray(
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.DisplayAttributes" />
       </Docs>
     </Member>
     <Member MemberName="LexicalForm">
@@ -426,6 +429,7 @@ internal static string stringFromWordArray(
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.DisplayAttributes" />
       </Docs>
     </Member>
     <Member MemberName="Pronunciation">
@@ -520,6 +524,7 @@ internal static string stringFromWordArray(
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.DisplayAttributes" />
       </Docs>
     </Member>
     <Member MemberName="Text">

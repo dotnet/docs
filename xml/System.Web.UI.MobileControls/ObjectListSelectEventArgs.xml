@@ -19,6 +19,8 @@
     <summary>Provides data for the <see cref="E:System.Web.UI.MobileControls.ObjectList.ItemSelect" /> event of an <see cref="T:System.Web.UI.MobileControls.ObjectList" />. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
     <remarks>To be added.</remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
+    <altmember cref="E:System.Web.UI.MobileControls.ObjectList.ItemSelect" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,6 +41,8 @@
         <param name="selectMore">Initializes the <see cref="P:System.Web.UI.MobileControls.ObjectListSelectEventArgs.SelectMore" /> property.</param>
         <summary>Initializes a new <see cref="T:System.Web.UI.MobileControls.ObjectListSelectEventArgs" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
+        <altmember cref="E:System.Web.UI.MobileControls.ObjectList.ItemSelect" />
       </Docs>
     </Member>
     <Member MemberName="ListItem">
@@ -57,6 +61,8 @@
         <summary>Returns the list item that is being bound. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <value>The list item that is being bound.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
+        <altmember cref="E:System.Web.UI.MobileControls.ObjectList.ItemSelect" />
       </Docs>
     </Member>
     <Member MemberName="SelectMore">
@@ -83,6 +89,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
+        <altmember cref="E:System.Web.UI.MobileControls.ObjectList.ItemSelect" />
       </Docs>
     </Member>
     <Member MemberName="UseDefaultHandling">
@@ -102,6 +110,8 @@
         <value>
           <see langword="true" /> if default handling must be used; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
+        <altmember cref="E:System.Web.UI.MobileControls.ObjectList.ItemSelect" />
       </Docs>
     </Member>
   </Members>

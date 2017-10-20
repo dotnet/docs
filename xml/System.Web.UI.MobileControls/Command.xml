@@ -68,6 +68,7 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="T:System.Web.UI.MobileControls.TextControl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -83,6 +84,7 @@
       <Docs>
         <summary>Creates an instance of the <see cref="T:System.Web.UI.MobileControls.Command" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.TextControl" />
       </Docs>
     </Member>
     <Member MemberName="CausesValidation">
@@ -465,6 +467,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Command.OnItemCommand(System.Web.UI.WebControls.CommandEventArgs)" />
+        <altmember cref="M:System.Web.UI.MobileControls.Command.OnClick(System.EventArgs)" />
+        <altmember cref="P:System.Web.UI.MobileControls.Command.CommandName" />
+        <altmember cref="P:System.Web.UI.MobileControls.Command.CommandArgument" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -583,6 +589,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.Command.SoftkeyLabel" />
+        <altmember cref="T:System.Web.UI.MobileControls.TextControl" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">

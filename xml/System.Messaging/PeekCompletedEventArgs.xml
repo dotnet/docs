@@ -33,6 +33,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Messaging.MessageQueue" />
+    <altmember cref="T:System.Messaging.PeekCompletedEventHandler" />
+    <altmember cref="E:System.Messaging.MessageQueue.PeekCompleted" />
+    <altmember cref="M:System.Messaging.MessageQueue.BeginPeek" />
+    <altmember cref="M:System.Messaging.MessageQueue.EndPeek(System.IAsyncResult)" />
+    <altmember cref="T:System.Messaging.Message" />
   </Docs>
   <Members>
     <Member MemberName="AsyncResult">
@@ -60,6 +66,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Messaging.MessageQueue.BeginPeek" />
+        <altmember cref="M:System.Messaging.MessageQueue.EndPeek(System.IAsyncResult)" />
+        <altmember cref="T:System.IAsyncResult" />
       </Docs>
     </Member>
     <Member MemberName="Message">
@@ -88,6 +97,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Messaging.MessageQueueException">The <see cref="P:System.Messaging.PeekCompletedEventArgs.Message" /> could not be retrieved. The time-out on the asynchronous operation might have expired.</exception>
+        <altmember cref="T:System.Messaging.PeekCompletedEventHandler" />
+        <altmember cref="M:System.Messaging.MessageQueue.BeginPeek" />
+        <altmember cref="M:System.Messaging.MessageQueue.EndPeek(System.IAsyncResult)" />
+        <altmember cref="T:System.Messaging.Message" />
       </Docs>
     </Member>
   </Members>

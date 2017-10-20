@@ -577,6 +577,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.TextDecorationCollection.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -607,6 +608,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.TextDecorationCollection.CopyTo(System.Windows.TextDecoration[],System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -684,6 +686,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.TextDecorationCollection.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Add">
@@ -713,6 +716,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.TextDecorationCollection.Add(System.Windows.TextDecoration)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Contains">
@@ -743,6 +747,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.TextDecorationCollection.Contains(System.Windows.TextDecoration)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IndexOf">
@@ -772,6 +777,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.TextDecorationCollection.IndexOf(System.Windows.TextDecoration)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Insert">
@@ -802,6 +808,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.TextDecorationCollection.Insert(System.Int32,System.Windows.TextDecoration)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsFixedSize">
@@ -883,6 +890,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.TextDecorationCollection.Item(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Remove">
@@ -911,6 +919,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.TextDecorationCollection.Remove(System.Windows.TextDecoration)" />
       </Docs>
     </Member>
     <Member MemberName="TryRemove">
@@ -945,5 +954,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.TextDecorationCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Inserts the specified <see cref="T:System.Windows.TextDecoration" /> object into the collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

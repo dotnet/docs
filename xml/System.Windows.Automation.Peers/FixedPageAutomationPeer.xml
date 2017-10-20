@@ -50,6 +50,7 @@
         <summary>Gets the control type for the <see cref="T:System.Windows.Documents.FixedPage" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.FixedPageAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" />.</summary>
         <returns>The <see cref="F:System.Windows.Automation.Peers.AutomationControlType.Pane" /> enumeration value.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlTypeCore" />
       </Docs>
     </Member>
     <Member MemberName="GetClassNameCore">

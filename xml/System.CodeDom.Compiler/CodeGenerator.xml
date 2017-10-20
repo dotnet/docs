@@ -33,6 +33,8 @@
     </remarks>
     <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
     <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This class cannot be inherited by partially trusted code.</permission>
+    <altmember cref="T:System.CodeDom.Compiler.ICodeGenerator" />
+    <altmember cref="T:System.CodeDom.Compiler.CodeCompiler" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -117,6 +119,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.CodeDom.Compiler.CodeGenerator.CreateValidIdentifier(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CreateValidIdentifier">
@@ -153,6 +156,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.CodeDom.Compiler.CodeGenerator.CreateEscapedIdentifier(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CurrentClass">
@@ -197,6 +201,7 @@
         <summary>Gets the current member of the class.</summary>
         <value>The current member of the class.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeTypeMember" />
       </Docs>
     </Member>
     <Member MemberName="CurrentMemberName">
@@ -219,6 +224,7 @@
         <summary>Gets the current member name.</summary>
         <value>The name of the current member.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.CodeDom.Compiler.CodeGenerator.CurrentMemberName" />
       </Docs>
     </Member>
     <Member MemberName="CurrentTypeName">
@@ -266,6 +272,7 @@
         <param name="e">A <see cref="T:System.CodeDom.CodeArgumentReferenceExpression" /> that indicates the expression to generate code for.</param>
         <summary>Generates code for the specified argument reference expression.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeArgumentReferenceExpression" />
       </Docs>
     </Member>
     <Member MemberName="GenerateArrayCreateExpression">
@@ -291,6 +298,7 @@
         <param name="e">A <see cref="T:System.CodeDom.CodeArrayCreateExpression" /> that indicates the expression to generate code for.</param>
         <summary>Generates code for the specified array creation expression.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeArrayCreateExpression" />
       </Docs>
     </Member>
     <Member MemberName="GenerateArrayIndexerExpression">
@@ -316,6 +324,7 @@
         <param name="e">A <see cref="T:System.CodeDom.CodeArrayIndexerExpression" /> that indicates the expression to generate code for.</param>
         <summary>Generates code for the specified array indexer expression.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeArrayIndexerExpression" />
       </Docs>
     </Member>
     <Member MemberName="GenerateAssignStatement">
@@ -341,6 +350,7 @@
         <param name="e">A <see cref="T:System.CodeDom.CodeAssignStatement" /> that indicates the statement to generate code for.</param>
         <summary>Generates code for the specified assignment statement.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeAssignStatement" />
       </Docs>
     </Member>
     <Member MemberName="GenerateAttachEventStatement">
@@ -366,6 +376,7 @@
         <param name="e">A <see cref="T:System.CodeDom.CodeAttachEventStatement" /> that indicates the statement to generate code for.</param>
         <summary>Generates code for the specified attach event statement.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeAttachEventStatement" />
       </Docs>
     </Member>
     <Member MemberName="GenerateAttributeDeclarationsEnd">
@@ -391,6 +402,7 @@
         <param name="attributes">A <see cref="T:System.CodeDom.CodeAttributeDeclarationCollection" /> that indicates the end of the attribute block to generate code for.</param>
         <summary>Generates code for the specified attribute block end.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeAttributeDeclarationCollection" />
       </Docs>
     </Member>
     <Member MemberName="GenerateAttributeDeclarationsStart">
@@ -416,6 +428,7 @@
         <param name="attributes">A <see cref="T:System.CodeDom.CodeAttributeDeclarationCollection" /> that indicates the start of the attribute block to generate code for.</param>
         <summary>Generates code for the specified attribute block start.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeAttributeDeclarationCollection" />
       </Docs>
     </Member>
     <Member MemberName="GenerateBaseReferenceExpression">
@@ -441,6 +454,7 @@
         <param name="e">A <see cref="T:System.CodeDom.CodeBaseReferenceExpression" /> that indicates the expression to generate code for.</param>
         <summary>Generates code for the specified base reference expression.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeBaseReferenceExpression" />
       </Docs>
     </Member>
     <Member MemberName="GenerateBinaryOperatorExpression">
@@ -468,6 +482,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="e" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.CodeDom.CodeBinaryOperatorExpression" />
       </Docs>
     </Member>
     <Member MemberName="GenerateCastExpression">
@@ -493,6 +508,7 @@
         <param name="e">A <see cref="T:System.CodeDom.CodeCastExpression" /> that indicates the expression to generate code for.</param>
         <summary>Generates code for the specified cast expression.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeCastExpression" />
       </Docs>
     </Member>
     <Member MemberName="GenerateCodeFromMember">
@@ -530,6 +546,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.CodeDom.Compiler.CodeGenerator.Output" /> property is not <see langword="null" />.</exception>
+        <altmember cref="T:System.CodeDom.CodeTypeMember" />
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.CodeDom.Compiler.CodeGeneratorOptions" />
       </Docs>
     </Member>
     <Member MemberName="GenerateComment">
@@ -555,6 +574,7 @@
         <param name="e">A <see cref="T:System.CodeDom.CodeComment" /> to generate code for.</param>
         <summary>Generates code for the specified comment.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeComment" />
       </Docs>
     </Member>
     <Member MemberName="GenerateCommentStatement">
@@ -581,6 +601,7 @@
         <summary>Generates code for the specified comment statement.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.CodeDom.CodeCommentStatement.Comment" /> property of <paramref name="e" /> is not set.</exception>
+        <altmember cref="T:System.CodeDom.CodeCommentStatement" />
       </Docs>
     </Member>
     <Member MemberName="GenerateCommentStatements">
@@ -606,6 +627,7 @@
         <param name="e">The expression to generate code for.</param>
         <summary>Generates code for the specified comment statements.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeCommentStatementCollection" />
       </Docs>
     </Member>
     <Member MemberName="GenerateCompileUnit">
@@ -631,6 +653,7 @@
         <param name="e">The compile unit to generate code for.</param>
         <summary>Generates code for the specified compile unit.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeCompileUnit" />
       </Docs>
     </Member>
     <Member MemberName="GenerateCompileUnitEnd">
@@ -656,6 +679,7 @@
         <param name="e">The compile unit to generate code for.</param>
         <summary>Generates code for the end of a compile unit.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeCompileUnit" />
       </Docs>
     </Member>
     <Member MemberName="GenerateCompileUnitStart">
@@ -681,6 +705,7 @@
         <param name="e">The compile unit to generate code for.</param>
         <summary>Generates code for the start of a compile unit.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeCompileUnit" />
       </Docs>
     </Member>
     <Member MemberName="GenerateConditionStatement">
@@ -713,6 +738,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.CodeDom.CodeConditionStatement" />
       </Docs>
     </Member>
     <Member MemberName="GenerateConstructor">
@@ -740,6 +766,8 @@
         <param name="c">The type of the object that this constructor constructs.</param>
         <summary>Generates code for the specified constructor.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeConstructor" />
+        <altmember cref="T:System.CodeDom.CodeTypeDeclaration" />
       </Docs>
     </Member>
     <Member MemberName="GenerateDecimalValue">
@@ -815,6 +843,7 @@
         <param name="e">The expression to generate code for.</param>
         <summary>Generates code for the specified delegate creation expression.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeDelegateCreateExpression" />
       </Docs>
     </Member>
     <Member MemberName="GenerateDelegateInvokeExpression">
@@ -840,6 +869,7 @@
         <param name="e">The expression to generate code for.</param>
         <summary>Generates code for the specified delegate invoke expression.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeDelegateInvokeExpression" />
       </Docs>
     </Member>
     <Member MemberName="GenerateDirectionExpression">
@@ -865,6 +895,7 @@
         <param name="e">The expression to generate code for.</param>
         <summary>Generates code for the specified direction expression.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeDirectionExpression" />
       </Docs>
     </Member>
     <Member MemberName="GenerateDirectives">
@@ -942,6 +973,8 @@
         <param name="c">The code that declares the type.</param>
         <summary>Generates code for the specified entry point method.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeEntryPointMethod" />
+        <altmember cref="T:System.CodeDom.CodeTypeDeclaration" />
       </Docs>
     </Member>
     <Member MemberName="GenerateEvent">
@@ -969,6 +1002,8 @@
         <param name="c">The type of the object that this event occurs on.</param>
         <summary>Generates code for the specified event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeMemberEvent" />
+        <altmember cref="T:System.CodeDom.CodeTypeDeclaration" />
       </Docs>
     </Member>
     <Member MemberName="GenerateEventReferenceExpression">
@@ -994,6 +1029,7 @@
         <param name="e">The expression to generate code for.</param>
         <summary>Generates code for the specified event reference expression.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeEventReferenceExpression" />
       </Docs>
     </Member>
     <Member MemberName="GenerateExpression">
@@ -1023,6 +1059,7 @@
           <paramref name="e" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="e" /> is not a valid <see cref="T:System.CodeDom.CodeStatement" />.</exception>
+        <altmember cref="T:System.CodeDom.CodeExpression" />
       </Docs>
     </Member>
     <Member MemberName="GenerateExpressionStatement">
@@ -1048,6 +1085,7 @@
         <param name="e">The statement to generate code for.</param>
         <summary>Generates code for the specified expression statement.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeExpressionStatement" />
       </Docs>
     </Member>
     <Member MemberName="GenerateField">
@@ -1073,6 +1111,7 @@
         <param name="e">The field to generate code for.</param>
         <summary>Generates code for the specified member field.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeMemberField" />
       </Docs>
     </Member>
     <Member MemberName="GenerateFieldReferenceExpression">
@@ -1098,6 +1137,7 @@
         <param name="e">The expression to generate code for.</param>
         <summary>Generates code for the specified field reference expression.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeFieldReferenceExpression" />
       </Docs>
     </Member>
     <Member MemberName="GenerateGotoStatement">
@@ -1123,6 +1163,7 @@
         <param name="e">The expression to generate code for.</param>
         <summary>Generates code for the specified <see langword="goto" /> statement.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeGotoStatement" />
       </Docs>
     </Member>
     <Member MemberName="GenerateIndexerExpression">
@@ -1148,6 +1189,7 @@
         <param name="e">The expression to generate code for.</param>
         <summary>Generates code for the specified indexer expression.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeIndexerExpression" />
       </Docs>
     </Member>
     <Member MemberName="GenerateIterationStatement">
@@ -1180,6 +1222,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.CodeDom.CodeIterationStatement" />
       </Docs>
     </Member>
     <Member MemberName="GenerateLabeledStatement">
@@ -1205,6 +1248,7 @@
         <param name="e">The statement to generate code for.</param>
         <summary>Generates code for the specified labeled statement.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeLabeledStatement" />
       </Docs>
     </Member>
     <Member MemberName="GenerateLinePragmaEnd">
@@ -1230,6 +1274,7 @@
         <param name="e">The end of the line pragma to generate code for.</param>
         <summary>Generates code for the specified line pragma end.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeLinePragma" />
       </Docs>
     </Member>
     <Member MemberName="GenerateLinePragmaStart">
@@ -1255,6 +1300,7 @@
         <param name="e">The start of the line pragma to generate code for.</param>
         <summary>Generates code for the specified line pragma start.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeLinePragma" />
       </Docs>
     </Member>
     <Member MemberName="GenerateMethod">
@@ -1282,6 +1328,8 @@
         <param name="c">The type of the object that this method occurs on.</param>
         <summary>Generates code for the specified method.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeMemberMethod" />
+        <altmember cref="T:System.CodeDom.CodeTypeDeclaration" />
       </Docs>
     </Member>
     <Member MemberName="GenerateMethodInvokeExpression">
@@ -1307,6 +1355,7 @@
         <param name="e">The expression to generate code for.</param>
         <summary>Generates code for the specified method invoke expression.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeMethodInvokeExpression" />
       </Docs>
     </Member>
     <Member MemberName="GenerateMethodReferenceExpression">
@@ -1332,6 +1381,7 @@
         <param name="e">The expression to generate code for.</param>
         <summary>Generates code for the specified method reference expression.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeMethodReferenceExpression" />
       </Docs>
     </Member>
     <Member MemberName="GenerateMethodReturnStatement">
@@ -1357,6 +1407,7 @@
         <param name="e">The statement to generate code for.</param>
         <summary>Generates code for the specified method return statement.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeMethodReturnStatement" />
       </Docs>
     </Member>
     <Member MemberName="GenerateNamespace">
@@ -1382,6 +1433,7 @@
         <param name="e">The namespace to generate code for.</param>
         <summary>Generates code for the specified namespace.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeNamespace" />
       </Docs>
     </Member>
     <Member MemberName="GenerateNamespaceEnd">
@@ -1407,6 +1459,7 @@
         <param name="e">The namespace to generate code for.</param>
         <summary>Generates code for the end of a namespace.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeNamespace" />
       </Docs>
     </Member>
     <Member MemberName="GenerateNamespaceImport">
@@ -1432,6 +1485,7 @@
         <param name="e">The namespace import to generate code for.</param>
         <summary>Generates code for the specified namespace import.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeNamespaceImport" />
       </Docs>
     </Member>
     <Member MemberName="GenerateNamespaceImports">
@@ -1457,6 +1511,7 @@
         <param name="e">The namespace import to generate code for.</param>
         <summary>Generates code for the specified namespace import.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeNamespace" />
       </Docs>
     </Member>
     <Member MemberName="GenerateNamespaces">
@@ -1482,6 +1537,7 @@
         <param name="e">The compile unit to generate namespaces for.</param>
         <summary>Generates code for the namespaces in the specified compile unit.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeCompileUnit" />
       </Docs>
     </Member>
     <Member MemberName="GenerateNamespaceStart">
@@ -1507,6 +1563,7 @@
         <param name="e">The namespace to generate code for.</param>
         <summary>Generates code for the start of a namespace.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeNamespace" />
       </Docs>
     </Member>
     <Member MemberName="GenerateObjectCreateExpression">
@@ -1532,6 +1589,7 @@
         <param name="e">The expression to generate code for.</param>
         <summary>Generates code for the specified object creation expression.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeObjectCreateExpression" />
       </Docs>
     </Member>
     <Member MemberName="GenerateParameterDeclarationExpression">
@@ -1557,6 +1615,7 @@
         <param name="e">The expression to generate code for.</param>
         <summary>Generates code for the specified parameter declaration expression.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeParameterDeclarationExpression" />
       </Docs>
     </Member>
     <Member MemberName="GeneratePrimitiveExpression">
@@ -1602,6 +1661,7 @@
 -   Double  
   
 -   Decimal</exception>
+        <altmember cref="T:System.CodeDom.CodePrimitiveExpression" />
       </Docs>
     </Member>
     <Member MemberName="GenerateProperty">
@@ -1629,6 +1689,8 @@
         <param name="c">The type of the object that this property occurs on.</param>
         <summary>Generates code for the specified property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeMemberProperty" />
+        <altmember cref="T:System.CodeDom.CodeTypeDeclaration" />
       </Docs>
     </Member>
     <Member MemberName="GeneratePropertyReferenceExpression">
@@ -1654,6 +1716,7 @@
         <param name="e">The expression to generate code for.</param>
         <summary>Generates code for the specified property reference expression.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodePropertyReferenceExpression" />
       </Docs>
     </Member>
     <Member MemberName="GeneratePropertySetValueReferenceExpression">
@@ -1679,6 +1742,7 @@
         <param name="e">The expression to generate code for.</param>
         <summary>Generates code for the specified property set value reference expression.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodePropertySetValueReferenceExpression" />
       </Docs>
     </Member>
     <Member MemberName="GenerateRemoveEventStatement">
@@ -1704,6 +1768,7 @@
         <param name="e">The statement to generate code for.</param>
         <summary>Generates code for the specified remove event statement.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeRemoveEventStatement" />
       </Docs>
     </Member>
     <Member MemberName="GenerateSingleFloatValue">
@@ -1754,6 +1819,7 @@
         <param name="e">The literal code fragment compile unit to generate code for.</param>
         <summary>Outputs the code of the specified literal code fragment compile unit.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeSnippetCompileUnit" />
       </Docs>
     </Member>
     <Member MemberName="GenerateSnippetExpression">
@@ -1779,6 +1845,7 @@
         <param name="e">The expression to generate code for.</param>
         <summary>Outputs the code of the specified literal code fragment expression.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeSnippetExpression" />
       </Docs>
     </Member>
     <Member MemberName="GenerateSnippetMember">
@@ -1804,6 +1871,7 @@
         <param name="e">The member to generate code for.</param>
         <summary>Outputs the code of the specified literal code fragment class member.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeSnippetTypeMember" />
       </Docs>
     </Member>
     <Member MemberName="GenerateSnippetStatement">
@@ -1829,6 +1897,7 @@
         <param name="e">The statement to generate code for.</param>
         <summary>Outputs the code of the specified literal code fragment statement.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeSnippetStatement" />
       </Docs>
     </Member>
     <Member MemberName="GenerateStatement">
@@ -1856,6 +1925,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="e" /> is not a valid <see cref="T:System.CodeDom.CodeStatement" />.</exception>
+        <altmember cref="T:System.CodeDom.CodeStatement" />
       </Docs>
     </Member>
     <Member MemberName="GenerateStatements">
@@ -1881,6 +1951,7 @@
         <param name="stms">The statements to generate code for.</param>
         <summary>Generates code for the specified statement collection.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeStatementCollection" />
       </Docs>
     </Member>
     <Member MemberName="GenerateThisReferenceExpression">
@@ -1906,6 +1977,7 @@
         <param name="e">The expression to generate code for.</param>
         <summary>Generates code for the specified this reference expression.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeThisReferenceExpression" />
       </Docs>
     </Member>
     <Member MemberName="GenerateThrowExceptionStatement">
@@ -1931,6 +2003,7 @@
         <param name="e">The statement to generate code for.</param>
         <summary>Generates code for the specified throw exception statement.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeThrowExceptionStatement" />
       </Docs>
     </Member>
     <Member MemberName="GenerateTryCatchFinallyStatement">
@@ -1956,6 +2029,7 @@
         <param name="e">The statement to generate code for.</param>
         <summary>Generates code for the specified <see langword="try...catch...finally" /> statement.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeTryCatchFinallyStatement" />
       </Docs>
     </Member>
     <Member MemberName="GenerateTypeConstructor">
@@ -1981,6 +2055,7 @@
         <param name="e">The class constructor to generate code for.</param>
         <summary>Generates code for the specified class constructor.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeTypeConstructor" />
       </Docs>
     </Member>
     <Member MemberName="GenerateTypeEnd">
@@ -2006,6 +2081,7 @@
         <param name="e">The end of the class to generate code for.</param>
         <summary>Generates code for the specified end of the class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeTypeDeclaration" />
       </Docs>
     </Member>
     <Member MemberName="GenerateTypeOfExpression">
@@ -2031,6 +2107,7 @@
         <param name="e">The expression to generate code for.</param>
         <summary>Generates code for the specified type of expression.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeTypeOfExpression" />
       </Docs>
     </Member>
     <Member MemberName="GenerateTypeReferenceExpression">
@@ -2056,6 +2133,7 @@
         <param name="e">The expression to generate code for.</param>
         <summary>Generates code for the specified type reference expression.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeTypeReferenceExpression" />
       </Docs>
     </Member>
     <Member MemberName="GenerateTypes">
@@ -2081,6 +2159,7 @@
         <param name="e">The namespace to generate classes for.</param>
         <summary>Generates code for the specified namespace and the classes it contains.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeNamespace" />
       </Docs>
     </Member>
     <Member MemberName="GenerateTypeStart">
@@ -2106,6 +2185,7 @@
         <param name="e">The start of the class to generate code for.</param>
         <summary>Generates code for the specified start of the class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeTypeDeclaration" />
       </Docs>
     </Member>
     <Member MemberName="GenerateVariableDeclarationStatement">
@@ -2131,6 +2211,7 @@
         <param name="e">The statement to generate code for.</param>
         <summary>Generates code for the specified variable declaration statement.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeVariableDeclarationStatement" />
       </Docs>
     </Member>
     <Member MemberName="GenerateVariableReferenceExpression">
@@ -2156,6 +2237,7 @@
         <param name="e">The expression to generate code for.</param>
         <summary>Generates code for the specified variable reference expression.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeVariableReferenceExpression" />
       </Docs>
     </Member>
     <Member MemberName="GetTypeOutput">
@@ -2182,6 +2264,7 @@
         <summary>Gets the name of the specified data type.</summary>
         <returns>The name of the data type reference.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeTypeReference" />
       </Docs>
     </Member>
     <Member MemberName="Indent">
@@ -2388,6 +2471,7 @@
  ]]></format>
         </remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="M:System.CodeDom.Compiler.CodeGenerator.ValidateIdentifiers(System.CodeDom.CodeObject)" />
       </Docs>
     </Member>
     <Member MemberName="NullToken">
@@ -2454,6 +2538,7 @@
         <summary>Gets the text writer to use for output.</summary>
         <value>The text writer to use for output.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.IO.TextWriter" />
       </Docs>
     </Member>
     <Member MemberName="OutputAttributeArgument">
@@ -2479,6 +2564,7 @@
         <param name="arg">The attribute argument to generate code for.</param>
         <summary>Outputs an argument in an attribute block.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeAttributeArgument" />
       </Docs>
     </Member>
     <Member MemberName="OutputAttributeDeclarations">
@@ -2504,6 +2590,7 @@
         <param name="attributes">The attributes to generate code for.</param>
         <summary>Generates code for the specified attribute declaration collection.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeAttributeDeclarationCollection" />
       </Docs>
     </Member>
     <Member MemberName="OutputDirection">
@@ -2529,6 +2616,7 @@
         <param name="dir">One of the enumeration values that indicates the attribute of the field.</param>
         <summary>Generates code for the specified <see cref="T:System.CodeDom.FieldDirection" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.FieldDirection" />
       </Docs>
     </Member>
     <Member MemberName="OutputExpressionList">
@@ -2554,6 +2642,7 @@
         <param name="expressions">The expressions to generate code for.</param>
         <summary>Generates code for the specified expression list.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeExpressionCollection" />
       </Docs>
     </Member>
     <Member MemberName="OutputExpressionList">
@@ -2582,6 +2671,7 @@
           <see langword="true" /> to insert a new line after each item; otherwise, <see langword="false" />.</param>
         <summary>Generates code for the specified expression list.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeExpressionCollection" />
       </Docs>
     </Member>
     <Member MemberName="OutputFieldScopeModifier">
@@ -2607,6 +2697,7 @@
         <param name="attributes">One of the enumeration values that specifies the attributes.</param>
         <summary>Outputs a field scope modifier that corresponds to the specified attributes.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.MemberAttributes" />
       </Docs>
     </Member>
     <Member MemberName="OutputIdentifier">
@@ -2657,6 +2748,7 @@
         <param name="attributes">One of the enumeration values that indicates the member access modifier to generate code for.</param>
         <summary>Generates code for the specified member access modifier.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.MemberAttributes" />
       </Docs>
     </Member>
     <Member MemberName="OutputMemberScopeModifier">
@@ -2682,6 +2774,7 @@
         <param name="attributes">One of the enumeration values that indicates the member scope modifier to generate code for.</param>
         <summary>Generates code for the specified member scope modifier.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.MemberAttributes" />
       </Docs>
     </Member>
     <Member MemberName="OutputOperator">
@@ -2707,6 +2800,7 @@
         <param name="op">The operator to generate code for.</param>
         <summary>Generates code for the specified operator.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeBinaryOperatorType" />
       </Docs>
     </Member>
     <Member MemberName="OutputParameters">
@@ -2732,6 +2826,7 @@
         <param name="parameters">The parameter declaration expressions to generate code for.</param>
         <summary>Generates code for the specified parameters.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeParameterDeclarationExpressionCollection" />
       </Docs>
     </Member>
     <Member MemberName="OutputType">
@@ -2788,6 +2883,7 @@
           <see langword="true" /> if the type is an enum; otherwise, <see langword="false" />.</param>
         <summary>Generates code for the specified type attributes.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Reflection.TypeAttributes" />
       </Docs>
     </Member>
     <Member MemberName="OutputTypeNamePair">
@@ -2875,6 +2971,7 @@
         <returns>
           <see langword="true" /> if the specified code generation support is provided; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.Compiler.GeneratorSupport" />
       </Docs>
     </Member>
     <Member MemberName="System.CodeDom.Compiler.ICodeGenerator.CreateEscapedIdentifier">
@@ -3251,7 +3348,17 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The specified <see cref="T:System.CodeDom.CodeObject" /> contains an invalid identifier.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="M:System.CodeDom.Compiler.CodeGenerator.IsValidLanguageIndependentIdentifier(System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="OutputExpressionList">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Generates code for the specified expression list.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

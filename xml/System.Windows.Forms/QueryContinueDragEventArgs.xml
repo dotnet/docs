@@ -38,6 +38,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DragAction" />
+    <altmember cref="M:System.Windows.Forms.Control.DoDragDrop(System.Object,System.Windows.Forms.DragDropEffects)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -61,6 +63,8 @@
         <param name="action">A <see cref="T:System.Windows.Forms.DragAction" /> value.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.QueryContinueDragEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DragAction" />
+        <altmember cref="M:System.Windows.Forms.Control.DoDragDrop(System.Object,System.Windows.Forms.DragDropEffects)" />
       </Docs>
     </Member>
     <Member MemberName="Action">
@@ -95,6 +99,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DragAction" />
+        <altmember cref="M:System.Windows.Forms.Control.DoDragDrop(System.Object,System.Windows.Forms.DragDropEffects)" />
       </Docs>
     </Member>
     <Member MemberName="EscapePressed">
@@ -131,6 +137,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.DoDragDrop(System.Object,System.Windows.Forms.DragDropEffects)" />
       </Docs>
     </Member>
     <Member MemberName="KeyState">
@@ -179,6 +186,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.DoDragDrop(System.Object,System.Windows.Forms.DragDropEffects)" />
       </Docs>
     </Member>
   </Members>

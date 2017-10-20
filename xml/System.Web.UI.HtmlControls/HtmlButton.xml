@@ -53,6 +53,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlContainerControl" />
+    <altmember cref="E:System.Web.UI.HtmlControls.HtmlButton.ServerClick" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -132,6 +134,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Page.Validate" />
+        <altmember cref="E:System.Web.UI.HtmlControls.HtmlButton.ServerClick" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -219,6 +223,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.HtmlControls.HtmlButton.OnServerClick(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.HtmlControls.HtmlButton.OnServerClick(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.HtmlControls.HtmlButton.ServerClick" />
       </Docs>
     </Member>
     <Member MemberName="RaisePostBackEvent">
@@ -251,6 +256,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlButton.ValidationGroup" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlButton.CausesValidation" />
       </Docs>
     </Member>
     <Member MemberName="RenderAttributes">
@@ -292,6 +299,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlControl.RenderAttributes(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="ServerClick">
@@ -331,6 +339,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlButton.OnServerClick(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackEventHandler.RaisePostBackEvent">
@@ -392,6 +401,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlButton.CausesValidation" />
       </Docs>
     </Member>
   </Members>

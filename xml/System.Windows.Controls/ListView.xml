@@ -58,6 +58,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.ListViewItem" />
+    <altmember cref="T:System.Windows.Controls.GridView" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -260,6 +262,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.ViewBase" />
+        <altmember cref="T:System.Windows.Controls.GridView" />
       </Docs>
     </Member>
     <Member MemberName="ViewProperty">

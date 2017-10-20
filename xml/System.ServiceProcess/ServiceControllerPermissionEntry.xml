@@ -20,6 +20,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ServiceProcess.ServiceController" />
+    <altmember cref="T:System.ServiceProcess.ServiceControllerPermission" />
+    <altmember cref="T:System.ServiceProcess.ServiceControllerPermissionAccess" />
+    <altmember cref="T:System.ServiceProcess.ServiceControllerPermissionAttribute" />
+    <altmember cref="T:System.ServiceProcess.ServiceControllerPermissionEntryCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -121,5 +126,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceProcess.ServiceControllerPermissionEntry" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

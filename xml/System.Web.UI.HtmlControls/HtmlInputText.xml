@@ -50,6 +50,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlTextArea" />
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputPassword" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -84,6 +86,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputPassword" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -124,6 +127,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputPassword" />
       </Docs>
     </Member>
     <Member MemberName="LoadPostData">
@@ -199,6 +203,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlInputText.Size" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -284,6 +289,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.HtmlControls.HtmlInputText.OnServerChange(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.HtmlControls.HtmlInputText.OnServerChange(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.HtmlControls.HtmlInputText.ServerChange" />
       </Docs>
     </Member>
     <Member MemberName="RaisePostDataChangedEvent">
@@ -312,6 +318,8 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.HtmlControls.HtmlInputText.RaisePostDataChangedEvent" /> method in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.HtmlControls.HtmlInputText.RaisePostDataChangedEvent" /> method so that the <see cref="E:System.Web.UI.HtmlControls.HtmlInputText.ServerChange" /> event is correctly raised.</para>
         </block>
+        <altmember cref="M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent" />
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlInputText.OnServerChange(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="RenderAttributes">
@@ -370,6 +378,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlInputText.OnServerChange(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Size">
@@ -411,6 +420,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlInputText.MaxLength" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">
@@ -490,7 +500,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputPassword" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlInputText" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

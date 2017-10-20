@@ -22,6 +22,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Drawing.Printing.PreviewPrintController" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,6 +43,9 @@
         <param name="physicalSize">The size of the printed page, in hundredths of an inch.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Drawing.Printing.PreviewPageInfo" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Drawing.Image" />
+        <altmember cref="T:System.Drawing.Point" />
+        <altmember cref="T:System.Drawing.Size" />
       </Docs>
     </Member>
     <Member MemberName="Image">
@@ -67,6 +71,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Image" />
       </Docs>
     </Member>
     <Member MemberName="PhysicalSize">
@@ -85,6 +90,7 @@
         <summary>Gets the size of the printed page, in hundredths of an inch.</summary>
         <value>A <see cref="T:System.Drawing.Size" /> that specifies the size of the printed page, in hundredths of an inch.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Drawing.Size" />
       </Docs>
     </Member>
   </Members>

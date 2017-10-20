@@ -1,0 +1,1 @@
+\<Token xmlns:xlink="http://www.w3.org/1999/xlink"><alert class="note"><para>The .NET API Reference documentation has a new home. Visit the <externalLink><linkText>.NET API Browser</linkText><linkUri>https://docs.microsoft.com/dotnet/api/?view=netframework-4.7.1</linkUri></externalLink> on docs.microsoft.com to see the new experience.</para></alert></Token>

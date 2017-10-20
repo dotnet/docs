@@ -24,6 +24,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Routing.Route" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -50,6 +51,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="virtualPath" /> parameter is <see langword="null" /> or is an empty string or does not start with "~/".</exception>
+        <altmember cref="T:System.Web.Routing.Route" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -78,6 +80,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="virtualPath" /> parameter is <see langword="null" /> or is an empty string or does not start with "~/".</exception>
+        <altmember cref="P:System.Web.Routing.PageRouteHandler.CheckPhysicalUrlAccess" />
+        <altmember cref="T:System.Web.Routing.Route" />
       </Docs>
     </Member>
     <Member MemberName="CheckPhysicalUrlAccess">
@@ -136,6 +140,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Routing.Route" />
       </Docs>
     </Member>
     <Member MemberName="GetHttpHandler">
@@ -159,6 +164,7 @@
         <returns>The object that processes the request.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="requestContext" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.Routing.Route" />
       </Docs>
     </Member>
     <Member MemberName="GetSubstitutedVirtualPath">
@@ -189,6 +195,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="requestContext" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.Routing.Route" />
       </Docs>
     </Member>
     <Member MemberName="VirtualPath">
@@ -214,7 +221,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Routing.Route" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Routing.PageRouteHandler" /> class.</summary>
+        <altmember cref="T:System.Web.Routing.Route" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

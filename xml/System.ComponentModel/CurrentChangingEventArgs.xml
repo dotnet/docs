@@ -22,6 +22,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="E:System.Windows.Data.CollectionView.CurrentChanging" />
+    <altmember cref="E:System.ComponentModel.ICollectionView.CurrentChanged" />
+    <altmember cref="T:System.ComponentModel.CurrentChangedEventManager" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -110,5 +113,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.CurrentChangingEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

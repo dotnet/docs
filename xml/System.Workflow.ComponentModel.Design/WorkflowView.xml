@@ -2242,5 +2242,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes an instance of a <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SaveWorkflowImage">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Saves an image of the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" /> based on the specified image format.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

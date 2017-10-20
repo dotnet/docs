@@ -52,6 +52,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Collections.Hashtable" />
+    <altmember cref="T:System.Collections.IHashCodeProvider" />
+    <altmember cref="P:System.Threading.Thread.CurrentCulture" />
+    <altmember cref="T:System.Globalization.CultureInfo" />
+    <altmember cref="T:System.Collections.CaseInsensitiveComparer" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -92,6 +97,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Threading.Thread.CurrentCulture" />
+        <altmember cref="T:System.Globalization.CultureInfo" />
+        <altmember cref="T:System.Globalization.CompareInfo" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -137,6 +145,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="culture" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Globalization.CultureInfo" />
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -171,6 +180,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Threading.Thread.CurrentCulture" />
       </Docs>
     </Member>
     <Member MemberName="DefaultInvariant">
@@ -214,6 +224,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Globalization.CultureInfo.InvariantCulture" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -254,7 +265,18 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="obj" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Object.GetHashCode" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.CaseInsensitiveHashCodeProvider" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

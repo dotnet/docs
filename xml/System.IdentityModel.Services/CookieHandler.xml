@@ -39,6 +39,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IdentityModel.Services.ChunkedCookieHandler" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -779,5 +780,32 @@
         </block>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Write">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a cookie.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Read">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads a cookie.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Delete">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Deletes a cookie.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

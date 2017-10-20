@@ -26,6 +26,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ListView" />
+    <altmember cref="E:System.Web.UI.WebControls.ListView.PagePropertiesChanging" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -60,6 +62,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.PagePropertiesChanging" />
+        <altmember cref="P:System.Web.UI.WebControls.PagePropertiesChangingEventArgs.StartRowIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.PagePropertiesChangingEventArgs.MaximumRows" />
       </Docs>
     </Member>
     <Member MemberName="MaximumRows">
@@ -78,6 +84,9 @@
         <summary>Gets the maximum number of items to display on each page of data.</summary>
         <value>The maximum number of items to display in a page of data in the <see cref="T:System.Web.UI.WebControls.ListView" /> control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.PagePropertiesChanging" />
+        <altmember cref="P:System.Web.UI.WebControls.PagePropertiesChangingEventArgs.StartRowIndex" />
       </Docs>
     </Member>
     <Member MemberName="StartRowIndex">
@@ -96,6 +105,9 @@
         <summary>Gets the index of the first item of the page.</summary>
         <value>The index of the first item to display in a page of data in the <see cref="T:System.Web.UI.WebControls.ListView" /> control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.PagePropertiesChanging" />
+        <altmember cref="P:System.Web.UI.WebControls.PagePropertiesChangingEventArgs.MaximumRows" />
       </Docs>
     </Member>
   </Members>

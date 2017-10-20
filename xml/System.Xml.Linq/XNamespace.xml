@@ -826,10 +826,41 @@ True
         <Parameter Name="namespaceName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="namespaceName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="namespaceName">A <see cref="T:System.String" /> that contains the namespace URI.</param>
+        <summary>Converts a string containing a Uniform Resource Identifier (URI) to an <see cref="T:System.Xml.Linq.XNamespace" />.</summary>
+        <returns>An <see cref="T:System.Xml.Linq.XNamespace" /> constructed from the URI string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is ?qualifyHint=True&autoUpgrade=False  
+  
+## Examples  
+ The following example shows the initialization of an <xref:System.Xml.Linq.XNamespace> variable by assigning a string to it.  
+  
+```csharp  
+  
+                XNamespace aw = "http://www.adventure-works.com";  
+Console.WriteLine(aw);  
+```  
+  
+```vb  
+  
+                Imports <xmlns="http://www.adventure-works.com">  
+  
+Module Module1  
+    Sub Main()  
+        Dim aw As XNamespace = GetXmlNamespace()  
+        Console.WriteLine(aw)  
+    End Sub  
+End Module  
+```  
+  
+ This example produces the following output:  
+  
+```  
+http://www.adventure-works.com  
+```  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">

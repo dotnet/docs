@@ -35,6 +35,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Runtime.Remoting.Channels.BinaryServerFormatterSinkProvider" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -86,6 +87,8 @@
         <param name="stream">The stream that is heading back to the transport sink.</param>
         <summary>Requests processing of the response from a method call that is sent asynchronously.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Runtime.Remoting.Channels.ServerChannelSinkStack" />
+        <altmember cref="M:System.Runtime.Remoting.Channels.ServerChannelSinkStack.Push(System.Runtime.Remoting.Channels.IServerChannelSink,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetResponseStream">

@@ -225,6 +225,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.VerificationAttribute.Guideline" />
+        <altmember cref="P:System.Web.UI.VerificationAttribute.Priority" />
       </Docs>
     </Member>
     <Member MemberName="ConditionalProperty">
@@ -252,6 +254,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.VerificationAttribute.ConditionalValue" />
       </Docs>
     </Member>
     <Member MemberName="ConditionalValue">
@@ -279,6 +282,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.VerificationAttribute.ConditionalProperty" />
       </Docs>
     </Member>
     <Member MemberName="Guideline">
@@ -306,6 +310,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.VerificationAttribute.Checkpoint" />
+        <altmember cref="P:System.Web.UI.VerificationAttribute.GuidelineUrl" />
       </Docs>
     </Member>
     <Member MemberName="GuidelineUrl">
@@ -333,6 +339,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.VerificationAttribute.Guideline" />
       </Docs>
     </Member>
     <Member MemberName="Message">
@@ -358,6 +365,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.VerificationAttribute.VerificationRule" />
       </Docs>
     </Member>
     <Member MemberName="Priority">
@@ -383,6 +391,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.VerificationAttribute.Checkpoint" />
       </Docs>
     </Member>
     <Member MemberName="VerificationConditionalOperator">
@@ -408,6 +417,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.VerificationConditionalOperator" />
       </Docs>
     </Member>
     <Member MemberName="VerificationReportLevel">
@@ -433,6 +443,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.VerificationReportLevel" />
       </Docs>
     </Member>
     <Member MemberName="VerificationRule">
@@ -458,7 +469,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.VerificationRule" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.VerificationAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

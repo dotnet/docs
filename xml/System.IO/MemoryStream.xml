@@ -1695,5 +1695,16 @@
         <exception cref="T:System.ObjectDisposedException">The current or target stream is closed.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.MemoryStream" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

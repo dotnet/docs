@@ -35,6 +35,9 @@ On a right-to-left operating system, setting the containing form's <xref:System.
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.FileDialog" />
+    <altmember cref="T:System.Windows.Forms.CommonDialog" />
+    <altmember cref="T:System.Windows.Forms.SaveFileDialog" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -81,6 +84,8 @@ On a right-to-left operating system, setting the containing form's <xref:System.
         <value>
           <see langword="true" /> if the dialog box displays a warning when the user specifies a file name that does not exist; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.OpenFileDialog.OpenFile" />
+        <altmember cref="P:System.Windows.Forms.OpenFileDialog.ReadOnlyChecked" />
       </Docs>
     </Member>
     <Member MemberName="Multiselect">
@@ -120,6 +125,8 @@ On a right-to-left operating system, setting the containing form's <xref:System.
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.FileDialog.FileNames" />
+        <altmember cref="P:System.Windows.Forms.FileDialog.Filter" />
       </Docs>
     </Member>
     <Member MemberName="OpenFile">
@@ -157,6 +164,9 @@ On a right-to-left operating system, setting the containing form's <xref:System.
         </remarks>
         <exception cref="T:System.ArgumentNullException">The file name is <see langword="null" />.</exception>
         <permission cref="T:System.Security.Permissions.FileDialogPermission">to open a file. Associated enumeration: <see cref="F:System.Security.Permissions.FileDialogPermissionAccess.Open" />.</permission>
+        <altmember cref="T:System.IO.Stream" />
+        <altmember cref="P:System.Windows.Forms.OpenFileDialog.CheckFileExists" />
+        <altmember cref="P:System.Windows.Forms.OpenFileDialog.ReadOnlyChecked" />
       </Docs>
     </Member>
     <Member MemberName="ReadOnlyChecked">
@@ -199,6 +209,7 @@ On a right-to-left operating system, setting the containing form's <xref:System.
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.OpenFileDialog.ShowReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -318,6 +329,7 @@ On a right-to-left operating system, setting the containing form's <xref:System.
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.OpenFileDialog.ReadOnlyChecked" />
       </Docs>
     </Member>
   </Members>

@@ -39,6 +39,7 @@
   
  All other abstract methods are intended for use only in administrative applications and are not used by the Web Parts infrastructure at run time. For an example of an implementation of a personalization provider, see the <see cref="T:System.Web.UI.WebControls.WebParts.SqlPersonalizationProvider" /> class.</para>
     </block>
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.SqlPersonalizationProvider" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

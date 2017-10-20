@@ -49,6 +49,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ListView.ListViewItemCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -104,6 +105,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ListView.CheckedIndexCollection.IndexOf(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -182,6 +184,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ListView.CheckedIndexCollection.Contains(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">

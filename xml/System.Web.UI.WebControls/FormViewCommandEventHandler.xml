@@ -57,5 +57,18 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.FormView" />
+    <altmember cref="E:System.Web.UI.WebControls.FormView.ItemCommand" />
+    <altmember cref="M:System.Web.UI.WebControls.FormView.OnItemCommand(System.Web.UI.WebControls.FormViewCommandEventArgs)" />
+    <altmember cref="T:System.Web.UI.WebControls.FormViewCommandEventArgs" />
+    <altmember cref="T:System.Web.UI.WebControls.CommandEventArgs" />
+    <altmember cref="E:System.Web.UI.WebControls.FormView.ItemDeleted" />
+    <altmember cref="E:System.Web.UI.WebControls.FormView.ItemDeleting" />
+    <altmember cref="E:System.Web.UI.WebControls.FormView.ItemInserted" />
+    <altmember cref="E:System.Web.UI.WebControls.FormView.ItemInserting" />
+    <altmember cref="E:System.Web.UI.WebControls.FormView.ItemUpdated" />
+    <altmember cref="E:System.Web.UI.WebControls.FormView.ItemUpdating" />
+    <altmember cref="E:System.Web.UI.WebControls.FormView.PageIndexChanged" />
+    <altmember cref="E:System.Web.UI.WebControls.FormView.PageIndexChanging" />
   </Docs>
 </Type>

@@ -74,6 +74,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="T:System.Runtime.InteropServices.WindowsRuntime.NamespaceResolveEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="ResolveNamespace">
@@ -150,5 +151,15 @@
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ResolveNamespace">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Locates the Windows Metadata files for a specified namespace, given a list of locations to search.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -196,6 +196,7 @@
         <summary>Gets or sets the behavior of the deserializer with regards to finding and loading assemblies.</summary>
         <value>One of the <see cref="T:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle" /> values that specifies the deserializer behavior.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle" />
       </Docs>
     </Member>
     <Member MemberName="Binder">
@@ -232,6 +233,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.Serialization.SerializationBinder" />
       </Docs>
     </Member>
     <Member MemberName="Context">
@@ -266,6 +268,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
       </Docs>
     </Member>
     <MemberGroup MemberName="Deserialize">
@@ -598,6 +601,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.Serialization.SurrogateSelector" />
       </Docs>
     </Member>
     <Member MemberName="TypeFormat">
@@ -625,6 +629,7 @@
         <summary>Gets or sets the format in which type descriptions are laid out in the serialized stream.</summary>
         <value>The style of type layouts to use.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Runtime.Serialization.Formatters.FormatterTypeStyle" />
       </Docs>
     </Member>
     <Member MemberName="UnsafeDeserialize">
@@ -731,5 +736,25 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">To provide serialization services. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter" />.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Serialize">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Serializes an object, or graph of connected objects, to the given stream.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

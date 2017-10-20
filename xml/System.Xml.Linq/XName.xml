@@ -516,6 +516,7 @@ http://www.adventure-works.com
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xml.Linq.XName.Namespace" />
       </Docs>
     </Member>
     <Member MemberName="Namespace">
@@ -770,10 +771,58 @@ True
         <Parameter Name="expandedName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="expandedName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="expandedName">A string that contains an expanded XML name in the format <c>{namespace}localname</c>.</param>
+        <summary>Converts a string formatted as an expanded XML name (that is,<c>{namespace}localname</c>) to an <see cref="T:System.Xml.Linq.XName" /> object.</summary>
+        <returns>An <see cref="T:System.Xml.Linq.XName" /> object constructed from the expanded name.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You are using this implicit operator when you create an <xref:System.Xml.Linq.XElement> or <xref:System.Xml.Linq.XAttribute> by passing a string to the appropriate constructor.  
+  
+ The equivalent method for this operator is ?qualifyHint=True&autoUpgrade=False  
+  
+## Examples  
+ The following example creates an <xref:System.Xml.Linq.XName> by assigning a string to it, which invokes this implicit conversion operator.  
+  
+```csharp  
+  
+                XElement el = new XElement("{http://www.adventure-works.com}Root", "content");  
+Console.WriteLine(el);  
+  
+// The preferred approach is to initialize an XNamespace object  
+// and use the overload of the addition operator.  
+XNamespace aw = "http://www.adventure-works.com";  
+XElement root = new XElement(aw + "Root", "content");  
+Console.WriteLine(root);  
+```  
+  
+```vb  
+  
+                Imports <xmlns="http://www.adventure-works.com">  
+  
+Module Module1  
+    Sub Main()  
+        Dim el As XElement = New XElement("{http://www.adventure-works.com}Root", "content")  
+        Console.WriteLine(el)  
+  
+        ' The preferred approach is to import a global namespace and   
+        ' use an XML literal.  
+        Dim root As XElement = <Root>content</Root>  
+        Console.WriteLine(root)  
+    End Sub  
+End Module  
+```  
+  
+ This example produces the following output:  
+  
+```  
+<Root xmlns="http://www.adventure-works.com">content</Root>  
+<Root xmlns="http://www.adventure-works.com">content</Root>  
+```  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">

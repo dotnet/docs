@@ -72,6 +72,14 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Diagnostics.TraceListener" />
+    <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+    <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+    <altmember cref="T:System.Diagnostics.EventLogTraceListener" />
+    <altmember cref="T:System.IO.Stream" />
+    <altmember cref="T:System.IO.TextWriter" />
+    <altmember cref="T:System.Diagnostics.Debug" />
+    <altmember cref="T:System.Diagnostics.Trace" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -113,6 +121,15 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.EventLogTraceListener" />
+        <altmember cref="T:System.Diagnostics.TextWriterTraceListener" />
+        <altmember cref="T:System.IO.Stream" />
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -157,6 +174,15 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The stream is <see langword="null" />.</exception>
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.EventLogTraceListener" />
+        <altmember cref="T:System.Diagnostics.TextWriterTraceListener" />
+        <altmember cref="T:System.IO.Stream" />
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -202,6 +228,15 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The writer is <see langword="null" />.</exception>
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.EventLogTraceListener" />
+        <altmember cref="T:System.Diagnostics.TextWriterTraceListener" />
+        <altmember cref="T:System.IO.Stream" />
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -245,6 +280,15 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The file is <see langword="null" />.</exception>
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.EventLogTraceListener" />
+        <altmember cref="T:System.Diagnostics.TextWriterTraceListener" />
+        <altmember cref="T:System.IO.Stream" />
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -291,6 +335,15 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The stream is <see langword="null" />.</exception>
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.EventLogTraceListener" />
+        <altmember cref="T:System.Diagnostics.TextWriterTraceListener" />
+        <altmember cref="T:System.IO.Stream" />
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -332,6 +385,15 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The writer is <see langword="null" />.</exception>
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.EventLogTraceListener" />
+        <altmember cref="T:System.Diagnostics.TextWriterTraceListener" />
+        <altmember cref="T:System.IO.Stream" />
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -377,6 +439,15 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The stream is <see langword="null" />.</exception>
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.EventLogTraceListener" />
+        <altmember cref="T:System.Diagnostics.TextWriterTraceListener" />
+        <altmember cref="T:System.IO.Stream" />
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -420,6 +491,15 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.EventLogTraceListener" />
+        <altmember cref="T:System.Diagnostics.TextWriterTraceListener" />
+        <altmember cref="T:System.IO.Stream" />
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -498,6 +578,15 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.EventLogTraceListener" />
+        <altmember cref="T:System.Diagnostics.TextWriterTraceListener" />
+        <altmember cref="T:System.IO.Stream" />
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -540,6 +629,15 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.EventLogTraceListener" />
+        <altmember cref="T:System.Diagnostics.TextWriterTraceListener" />
+        <altmember cref="T:System.IO.Stream" />
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -582,6 +680,15 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.EventLogTraceListener" />
+        <altmember cref="T:System.Diagnostics.TextWriterTraceListener" />
+        <altmember cref="T:System.IO.Stream" />
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName="Writer">
@@ -621,7 +728,26 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.EventLogTraceListener" />
+        <altmember cref="T:System.Diagnostics.TextWriterTraceListener" />
+        <altmember cref="T:System.IO.Stream" />
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.TextWriterTraceListener</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.TextWriterTraceListener" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

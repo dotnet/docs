@@ -32,6 +32,7 @@
     <summary>Used internally at run time to support accessing configuration data remotely.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:System.Configuration.Configuration" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,6 +49,7 @@
         <summary>Used internally at run time to create a new instance of <see cref="T:System.Web.Configuration.RemoteWebConfigurationHostServer" />.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Configuration.Configuration" />
       </Docs>
     </Member>
     <Member MemberName="DoEncryptOrDecrypt">
@@ -84,6 +86,7 @@
         <exception cref="T:System.Exception">
           <paramref name="protectionProviderType" /> does not derive from <see cref="T:System.Configuration.ProtectedConfigurationProvider" />.</exception>
         <forInternalUseOnly />
+        <altmember cref="T:System.Configuration.Configuration" />
       </Docs>
     </Member>
     <Member MemberName="GetData">
@@ -113,6 +116,7 @@
         <exception cref="T:System.Exception">
           <paramref name="fileName" /> does not point to a file with the .config extension.</exception>
         <forInternalUseOnly />
+        <altmember cref="T:System.Configuration.Configuration" />
       </Docs>
     </Member>
     <Member MemberName="GetFileDetails">
@@ -146,6 +150,7 @@
         <exception cref="T:System.Exception">
           <paramref name="name" /> does not point to a file with the .config extension.</exception>
         <forInternalUseOnly />
+        <altmember cref="T:System.Configuration.Configuration" />
       </Docs>
     </Member>
     <Member MemberName="GetFilePaths">
@@ -175,6 +180,7 @@
         <returns>A concatenated string that represents the file path of the configuration file.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Configuration.Configuration" />
       </Docs>
     </Member>
     <Member MemberName="WriteData">

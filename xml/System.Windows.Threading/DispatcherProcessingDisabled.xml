@@ -44,6 +44,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Windows.Threading.Dispatcher.DisableProcessing" />
   </Docs>
   <Members>
     <Member MemberName="Dispose">
@@ -77,6 +78,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Threading.Dispatcher.DisableProcessing" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -144,6 +146,7 @@
         <returns>
           <see langword="true" /> if the <see cref="T:System.Windows.Threading.DispatcherProcessingDisabled" /> objects are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Threading.DispatcherProcessingDisabled.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -169,6 +172,8 @@
         <returns>
           <see langword="true" /> if the <see cref="T:System.Windows.Threading.DispatcherProcessingDisabled" /> objects are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Threading.DispatcherProcessingDisabled.op_Equality(System.Windows.Threading.DispatcherProcessingDisabled,System.Windows.Threading.DispatcherProcessingDisabled)" />
+        <altmember cref="M:System.Windows.Threading.DispatcherProcessingDisabled.Equals(System.Object)" />
       </Docs>
     </Member>
   </Members>

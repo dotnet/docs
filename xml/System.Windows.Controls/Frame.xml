@@ -159,6 +159,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="state" /> is <see langword="null" />, and a <see cref="T:System.Windows.Navigation.CustomContentState" /> object is not returned from <see cref="M:System.Windows.Navigation.IProvideCustomContentState.GetContentState" />.</exception>
+        <altmember cref="M:System.Windows.Controls.Frame.RemoveBackEntry" />
       </Docs>
     </Member>
     <Member MemberName="AddChild">
@@ -249,6 +250,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.Frame.FragmentNavigation" />
+        <altmember cref="T:System.Windows.Navigation.CustomContentState" />
       </Docs>
     </Member>
     <Member MemberName="BackStackProperty">
@@ -302,6 +305,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Markup.IUriContext.BaseUri" />
       </Docs>
     </Member>
     <Member MemberName="CanGoBack">
@@ -336,6 +340,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.Frame.GoBack" />
+        <altmember cref="P:System.Windows.Controls.Frame.CanGoForward" />
+        <altmember cref="M:System.Windows.Controls.Frame.GoForward" />
       </Docs>
     </Member>
     <Member MemberName="CanGoBackProperty">
@@ -394,6 +401,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.Frame.GoForward" />
+        <altmember cref="M:System.Windows.Controls.Frame.GoBack" />
+        <altmember cref="P:System.Windows.Controls.Frame.CanGoForward" />
       </Docs>
     </Member>
     <Member MemberName="CanGoForwardProperty">
@@ -442,6 +452,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.ContentControl.Content" />
+        <altmember cref="E:System.Windows.FrameworkElement.Loaded" />
       </Docs>
     </Member>
     <Member MemberName="CurrentSource">
@@ -548,6 +560,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.Frame.Navigating" />
+        <altmember cref="E:System.Windows.Controls.Frame.Navigated" />
+        <altmember cref="E:System.Windows.Controls.Frame.LoadCompleted" />
+        <altmember cref="E:System.Windows.Controls.Frame.NavigationProgress" />
+        <altmember cref="E:System.Windows.Controls.Frame.NavigationStopped" />
+        <altmember cref="E:System.Windows.Controls.Frame.NavigationFailed" />
       </Docs>
     </Member>
     <Member MemberName="GoBack">
@@ -581,6 +599,9 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">
           <see cref="M:System.Windows.Controls.Frame.GoBack" /> is called when there are no entries in back navigation history.</exception>
+        <altmember cref="P:System.Windows.Controls.Frame.CanGoBack" />
+        <altmember cref="P:System.Windows.Controls.Frame.CanGoForward" />
+        <altmember cref="M:System.Windows.Controls.Frame.GoForward" />
       </Docs>
     </Member>
     <Member MemberName="GoForward">
@@ -614,6 +635,9 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">
           <see cref="M:System.Windows.Controls.Frame.GoForward" /> is called when there are no entries in back navigation history.</exception>
+        <altmember cref="P:System.Windows.Controls.Frame.CanGoBack" />
+        <altmember cref="M:System.Windows.Controls.Frame.GoBack" />
+        <altmember cref="P:System.Windows.Controls.Frame.CanGoForward" />
       </Docs>
     </Member>
     <Member MemberName="JournalOwnership">
@@ -702,6 +726,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.Frame.Navigating" />
+        <altmember cref="E:System.Windows.Controls.Frame.Navigated" />
+        <altmember cref="E:System.Windows.Controls.Frame.NavigationProgress" />
+        <altmember cref="E:System.Windows.Controls.Frame.NavigationStopped" />
+        <altmember cref="E:System.Windows.Controls.Frame.NavigationFailed" />
+        <altmember cref="E:System.Windows.Controls.Frame.FragmentNavigation" />
       </Docs>
     </Member>
     <Member MemberName="Navigate">
@@ -869,6 +899,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.Frame.Navigating" />
+        <altmember cref="E:System.Windows.Controls.Frame.LoadCompleted" />
+        <altmember cref="E:System.Windows.Controls.Frame.NavigationProgress" />
+        <altmember cref="E:System.Windows.Controls.Frame.NavigationStopped" />
+        <altmember cref="E:System.Windows.Controls.Frame.NavigationFailed" />
+        <altmember cref="E:System.Windows.Controls.Frame.FragmentNavigation" />
       </Docs>
     </Member>
     <Member MemberName="Navigating">
@@ -893,6 +929,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.Frame.Navigated" />
+        <altmember cref="E:System.Windows.Controls.Frame.LoadCompleted" />
+        <altmember cref="E:System.Windows.Controls.Frame.NavigationProgress" />
+        <altmember cref="E:System.Windows.Controls.Frame.NavigationStopped" />
+        <altmember cref="E:System.Windows.Controls.Frame.NavigationFailed" />
+        <altmember cref="E:System.Windows.Controls.Frame.FragmentNavigation" />
       </Docs>
     </Member>
     <Member MemberName="NavigationFailed">
@@ -917,6 +959,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.Frame.Navigating" />
+        <altmember cref="E:System.Windows.Controls.Frame.Navigated" />
+        <altmember cref="E:System.Windows.Controls.Frame.LoadCompleted" />
+        <altmember cref="E:System.Windows.Controls.Frame.NavigationProgress" />
+        <altmember cref="E:System.Windows.Controls.Frame.NavigationStopped" />
+        <altmember cref="E:System.Windows.Controls.Frame.FragmentNavigation" />
       </Docs>
     </Member>
     <Member MemberName="NavigationProgress">
@@ -941,6 +989,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.Frame.Navigating" />
+        <altmember cref="E:System.Windows.Controls.Frame.Navigated" />
+        <altmember cref="E:System.Windows.Controls.Frame.LoadCompleted" />
+        <altmember cref="E:System.Windows.Controls.Frame.NavigationStopped" />
+        <altmember cref="E:System.Windows.Controls.Frame.NavigationFailed" />
+        <altmember cref="E:System.Windows.Controls.Frame.FragmentNavigation" />
       </Docs>
     </Member>
     <Member MemberName="NavigationService">
@@ -998,6 +1052,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.Frame.Navigating" />
+        <altmember cref="E:System.Windows.Controls.Frame.Navigated" />
+        <altmember cref="E:System.Windows.Controls.Frame.LoadCompleted" />
+        <altmember cref="E:System.Windows.Controls.Frame.NavigationProgress" />
+        <altmember cref="E:System.Windows.Controls.Frame.NavigationFailed" />
+        <altmember cref="E:System.Windows.Controls.Frame.FragmentNavigation" />
       </Docs>
     </Member>
     <Member MemberName="NavigationUIVisibility">
@@ -1197,6 +1257,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.Frame.AddBackEntry(System.Windows.Navigation.CustomContentState)" />
       </Docs>
     </Member>
     <Member MemberName="SandboxExternalContent">
@@ -1378,6 +1439,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Controls.Frame.Navigate" />
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Markup.IUriContext.BaseUri">
@@ -1403,7 +1465,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Frame.BaseUri" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Navigate">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Navigates asynchronously to the specified source content.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

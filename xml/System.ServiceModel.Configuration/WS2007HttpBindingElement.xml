@@ -13,6 +13,7 @@
   <Docs>
     <summary>Represents an interoperable binding that derives from <see cref="T:System.ServiceModel.WSHttpBinding" /> and provides support for the correct versions of the <see cref="P:System.ServiceModel.WSHttpBinding.Security" />, <see cref="T:System.ServiceModel.ReliableSession" />, and <see cref="P:System.ServiceModel.WSHttpBindingBase.TransactionFlow" /> binding elements.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.ServiceModel.WS2007HttpBinding" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -66,5 +67,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.WS2007HttpBindingElement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

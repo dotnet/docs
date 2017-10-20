@@ -48,6 +48,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.Design.IDesignerHost" />
+    <altmember cref="T:System.IServiceProvider" />
   </Docs>
   <Members>
     <Member MemberName="AddService">
@@ -291,5 +293,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RemoveService">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the specified service type from the service container.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddService">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the specified service to the service container.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

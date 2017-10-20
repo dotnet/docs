@@ -345,6 +345,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Any attempt is made to access the method, when the method is not overridden in a descendant class.</exception>
+        <altmember cref="M:System.Net.WebRequest.EndGetResponse(System.IAsyncResult)" />
+        <altmember cref="M:System.Net.WebRequest.GetResponse" />
       </Docs>
     </Member>
     <Member MemberName="CachePolicy">
@@ -391,6 +393,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.Cache.RequestCachePolicy" />
+        <altmember cref="T:System.Net.Cache.HttpRequestCacheLevel" />
+        <altmember cref="T:System.Net.Cache.RequestCacheLevel" />
+        <altmember cref="P:System.Net.HttpWebRequest.DefaultCachePolicy" />
+        <altmember cref="P:System.Net.WebRequest.DefaultCachePolicy" />
       </Docs>
     </Member>
     <Member MemberName="ConnectionGroupName">
@@ -432,6 +439,8 @@
         <block subset="none" type="overrides">
           <para>The <see cref="P:System.Net.WebRequest.ConnectionGroupName" /> property typically associates a group of requests that share a set of credentials with a connection to an Internet resource to avoid potential security failures.</para>
         </block>
+        <altmember cref="P:System.Net.Configuration.ConnectionManagementElement.MaxConnection" />
+        <altmember cref="P:System.Net.HttpWebRequest.ConnectionGroupName" />
       </Docs>
     </Member>
     <Member MemberName="ContentLength">
@@ -479,6 +488,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Any attempt is made to get or set the property, when the property is not overridden in a descendant class.</exception>
+        <altmember cref="P:System.Net.HttpWebRequest.ContentLength" />
       </Docs>
     </Member>
     <Member MemberName="ContentType">
@@ -930,6 +940,9 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Any attempt is made to get or set the property, when the property is not overridden in a descendant class.</exception>
+        <altmember cref="T:System.Net.NetworkCredential" />
+        <altmember cref="T:System.Net.CredentialCache" />
+        <altmember cref="P:System.Net.HttpWebRequest.Credentials" />
       </Docs>
     </Member>
     <Member MemberName="DefaultCachePolicy">
@@ -1081,6 +1094,7 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Any attempt is made to access the method, when the method is not overridden in a descendant class.</exception>
+        <altmember cref="M:System.Net.WebRequest.BeginGetRequestStream(System.AsyncCallback,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="EndGetResponse">
@@ -1315,6 +1329,8 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Any attempt is made to access the method, when the method is not overridden in a descendant class.</exception>
+        <altmember cref="M:System.Net.WebRequest.BeginGetResponse(System.AsyncCallback,System.Object)" />
+        <altmember cref="T:System.Net.WebResponse" />
       </Docs>
     </Member>
     <Member MemberName="GetResponseAsync">
@@ -1437,6 +1453,8 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Any attempt is made to get or set the property, when the property is not overridden in a descendant class.</exception>
+        <altmember cref="T:System.Net.WebHeaderCollection" />
+        <altmember cref="P:System.Net.HttpWebRequest.Headers" />
       </Docs>
     </Member>
     <Member MemberName="ImpersonationLevel">
@@ -1522,6 +1540,7 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
         <block subset="none" type="overrides">
           <para>The <see cref="P:System.Net.WebRequest.Method" /> property can contain any valid request method for the protocol implemented. The default value must provide a default request/response transaction that does not require protocol-specific properties to be set.</para>
         </block>
+        <altmember cref="P:System.Net.HttpWebRequest.Method" />
       </Docs>
     </Member>
     <Member MemberName="PreAuthenticate">
@@ -1619,6 +1638,9 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Any attempt is made to get or set the property, when the property is not overridden in a descendant class.</exception>
+        <altmember cref="T:System.Net.IWebProxy" />
+        <altmember cref="T:System.Net.WebProxy" />
+        <altmember cref="P:System.Net.HttpWebRequest.Proxy" />
       </Docs>
     </Member>
     <Member MemberName="RegisterPortableWebRequestCreator">
@@ -1851,6 +1873,7 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
         <block subset="none" type="overrides">
           <para>Descendant classes signal a timeout by throwing a <see cref="T:System.Net.WebException" /> with the <see cref="P:System.Net.WebException.Status" /> field set to <see cref="F:System.Net.WebExceptionStatus.Timeout" />. When <see cref="P:System.Net.WebRequest.Timeout" /> is set to <see cref="F:System.Threading.Timeout.Infinite" /> the descendant class does not time out.</para>
         </block>
+        <altmember cref="P:System.Net.HttpWebRequest.Timeout" />
       </Docs>
     </Member>
     <Member MemberName="UseDefaultCredentials">

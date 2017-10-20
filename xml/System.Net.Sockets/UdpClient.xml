@@ -55,6 +55,7 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Net.SocketPermission">To establish an outgoing connection or accept an incoming request.</permission>
+    <altmember cref="T:System.Net.Sockets.TcpClient" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -205,6 +206,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="localEP" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when accessing the socket.</exception>
+        <altmember cref="T:System.Net.IPEndPoint" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -361,6 +363,8 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="port" /> is not between <see cref="F:System.Net.IPEndPoint.MinPort" /> and <see cref="F:System.Net.IPEndPoint.MaxPort" />.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when accessing the socket.</exception>
+        <altmember cref="M:System.Net.Sockets.UdpClient.Send(System.Byte[],System.Int32,System.Net.IPEndPoint)" />
+        <altmember cref="M:System.Net.Sockets.UdpClient.Connect(System.String,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Active">
@@ -397,6 +401,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.Sockets.UdpClient" />
+        <altmember cref="M:System.Net.Sockets.UdpClient.Connect(System.String,System.Int32)" />
+        <altmember cref="M:System.Net.Sockets.UdpClient.Send(System.Byte[],System.Int32,System.Net.IPEndPoint)" />
       </Docs>
     </Member>
     <Member MemberName="AllowNatTraversal">
@@ -440,6 +447,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Net.IPAddress.IsIPv6Teredo" />
+        <altmember cref="T:System.Net.Sockets.IPProtectionLevel" />
+        <altmember cref="F:System.Net.Sockets.SocketOptionName.IPProtectionLevel" />
+        <altmember cref="M:System.Net.Sockets.Socket.SetIPProtectionLevel(System.Net.Sockets.IPProtectionLevel)" />
+        <altmember cref="M:System.Net.Sockets.TcpListener.AllowNatTraversal(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="Available">
@@ -769,6 +781,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.Sockets.Socket" />
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -816,6 +829,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when accessing the socket.</exception>
+        <altmember cref="M:System.Net.Sockets.Socket.Close" />
       </Docs>
     </Member>
     <Member MemberName="Connect">
@@ -875,6 +889,9 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="endPoint" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.UdpClient" /> is closed.</exception>
+        <altmember cref="T:System.Net.Sockets.Socket" />
+        <altmember cref="M:System.Net.Sockets.UdpClient.Send(System.Byte[],System.Int32,System.Net.IPEndPoint)" />
+        <altmember cref="M:System.Net.Sockets.UdpClient.Receive(System.Net.IPEndPoint@)" />
       </Docs>
     </Member>
     <Member MemberName="Connect">
@@ -939,6 +956,9 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="port" /> is not between <see cref="F:System.Net.IPEndPoint.MinPort" /> and <see cref="F:System.Net.IPEndPoint.MaxPort" />.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when accessing the socket.</exception>
+        <altmember cref="T:System.Net.Sockets.Socket" />
+        <altmember cref="M:System.Net.Sockets.UdpClient.Send(System.Byte[],System.Int32,System.Net.IPEndPoint)" />
+        <altmember cref="M:System.Net.Sockets.UdpClient.Receive(System.Net.IPEndPoint@)" />
       </Docs>
     </Member>
     <Member MemberName="Connect">
@@ -1002,6 +1022,9 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="port" /> is not between <see cref="F:System.Net.IPEndPoint.MinPort" /> and <see cref="F:System.Net.IPEndPoint.MaxPort" />.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when accessing the socket.</exception>
+        <altmember cref="T:System.Net.Sockets.Socket" />
+        <altmember cref="M:System.Net.Sockets.UdpClient.Send(System.Byte[],System.Int32,System.Net.IPEndPoint)" />
+        <altmember cref="M:System.Net.Sockets.UdpClient.Receive(System.Net.IPEndPoint@)" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -1177,6 +1200,7 @@
         <exception cref="T:System.ArgumentException">The IP address is not compatible with the <see cref="T:System.Net.Sockets.AddressFamily" /> value that defines the addressing scheme of the socket.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="multicastAddr" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Net.Sockets.UdpClient.JoinMulticastGroup(System.Net.IPAddress)" />
       </Docs>
     </Member>
     <Member MemberName="DropMulticastGroup">
@@ -1234,6 +1258,7 @@
         <exception cref="T:System.ArgumentException">The IP address is not compatible with the <see cref="T:System.Net.Sockets.AddressFamily" /> value that defines the addressing scheme of the socket.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="multicastAddr" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Net.Sockets.UdpClient.JoinMulticastGroup(System.Net.IPAddress)" />
       </Docs>
     </Member>
     <Member MemberName="EnableBroadcast">
@@ -1522,6 +1547,7 @@
         <exception cref="T:System.ObjectDisposedException">The underlying <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when accessing the socket.</exception>
         <exception cref="T:System.ArgumentException">The IP address is not compatible with the <see cref="T:System.Net.Sockets.AddressFamily" /> value that defines the addressing scheme of the socket.</exception>
+        <altmember cref="M:System.Net.Sockets.UdpClient.DropMulticastGroup(System.Net.IPAddress)" />
       </Docs>
     </Member>
     <Member MemberName="JoinMulticastGroup">
@@ -1644,6 +1670,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="multicastAddr" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The IP address is not compatible with the <see cref="T:System.Net.Sockets.AddressFamily" /> value that defines the addressing scheme of the socket.</exception>
+        <altmember cref="M:System.Net.Sockets.UdpClient.DropMulticastGroup(System.Net.IPAddress)" />
       </Docs>
     </Member>
     <Member MemberName="JoinMulticastGroup">
@@ -1800,6 +1827,10 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The underlying <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when accessing the socket.</exception>
+        <altmember cref="M:System.Net.Sockets.UdpClient.Send(System.Byte[],System.Int32,System.Net.IPEndPoint)" />
+        <altmember cref="T:System.Net.IPEndPoint" />
+        <altmember cref="M:System.Net.Sockets.UdpClient.Connect(System.String,System.Int32)" />
+        <altmember cref="T:System.Net.IPAddress" />
       </Docs>
     </Member>
     <Member MemberName="ReceiveAsync">
@@ -1903,6 +1934,7 @@
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Net.Sockets.UdpClient" /> has already established a default remote host.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.UdpClient" /> is closed.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when accessing the socket.</exception>
+        <altmember cref="M:System.Net.Sockets.UdpClient.Connect(System.String,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Send">
@@ -1966,6 +1998,10 @@
         <exception cref="T:System.ObjectDisposedException">
           <see cref="T:System.Net.Sockets.UdpClient" /> is closed.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when accessing the socket.</exception>
+        <altmember cref="F:System.Net.Sockets.SocketOptionName.Broadcast" />
+        <altmember cref="M:System.Net.Sockets.UdpClient.Connect(System.String,System.Int32)" />
+        <altmember cref="T:System.Net.Sockets.Socket" />
+        <altmember cref="T:System.Net.IPEndPoint" />
       </Docs>
     </Member>
     <Member MemberName="Send">
@@ -2029,6 +2065,9 @@
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Net.Sockets.UdpClient" /> has already established a default remote host.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.UdpClient" /> is closed.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when accessing the socket.</exception>
+        <altmember cref="F:System.Net.Sockets.SocketOptionName.Broadcast" />
+        <altmember cref="M:System.Net.Sockets.UdpClient.Connect(System.String,System.Int32)" />
+        <altmember cref="T:System.Net.Sockets.Socket" />
       </Docs>
     </Member>
     <Member MemberName="SendAsync">
@@ -2249,5 +2288,75 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SendAsync">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends a UDP datagram asynchronously to a remote host.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="JoinMulticastGroup">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a <see cref="T:System.Net.Sockets.UdpClient" /> to a multicast group.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Connect">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Establishes a default remote host.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Send">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends a UDP datagram to a remote host.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Sockets.UdpClient" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DropMulticastGroup">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Leaves a multicast group.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginSend">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends a datagram to a remote host asynchronously.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -50,6 +50,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Collections.IEqualityComparer" />
+    <altmember cref="T:System.Collections.IStructuralComparable" />
+    <altmember cref="P:System.Collections.StructuralComparisons.StructuralEqualityComparer" />
   </Docs>
   <Members>
     <Member MemberName="Equals">
@@ -108,6 +111,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.StructuralComparisons.StructuralEqualityComparer" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">

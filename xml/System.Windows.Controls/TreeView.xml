@@ -54,6 +54,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.TreeViewItem" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -364,6 +365,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.TreeView.SelectedValue" />
+        <altmember cref="P:System.Windows.Controls.TreeView.SelectedValuePath" />
       </Docs>
     </Member>
     <Member MemberName="SelectedItemChanged">
@@ -510,6 +513,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.TreeView.SelectedValuePath" />
+        <altmember cref="P:System.Windows.Controls.TreeView.SelectedItem" />
       </Docs>
     </Member>
     <Member MemberName="SelectedValuePath">
@@ -558,6 +563,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.TreeView.SelectedValue" />
+        <altmember cref="P:System.Windows.Controls.TreeView.SelectedItem" />
       </Docs>
     </Member>
     <Member MemberName="SelectedValuePathProperty">

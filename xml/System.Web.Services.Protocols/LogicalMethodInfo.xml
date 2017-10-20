@@ -23,6 +23,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Services.Protocols.SoapExtension" />
+    <altmember cref="M:System.Web.Services.Protocols.SoapExtension.GetInitializer(System.Web.Services.Protocols.LogicalMethodInfo,System.Web.Services.Protocols.SoapExtensionAttribute)" />
+    <altmember cref="T:System.Reflection.MethodInfo" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -91,6 +94,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Services.Protocols.LogicalMethodInfo.AsyncResultParameter" />
+        <altmember cref="P:System.Web.Services.Protocols.LogicalMethodInfo.AsyncStateParameter" />
+        <altmember cref="T:System.Reflection.ParameterInfo" />
       </Docs>
     </Member>
     <Member MemberName="AsyncResultParameter">
@@ -126,6 +132,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IAsyncResult" />
+        <altmember cref="P:System.Web.Services.Protocols.LogicalMethodInfo.AsyncStateParameter" />
+        <altmember cref="P:System.Web.Services.Protocols.LogicalMethodInfo.AsyncCallbackParameter" />
+        <altmember cref="T:System.Reflection.ParameterInfo" />
       </Docs>
     </Member>
     <Member MemberName="AsyncStateParameter">
@@ -161,6 +171,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Services.Protocols.LogicalMethodInfo.AsyncCallbackParameter" />
+        <altmember cref="P:System.Web.Services.Protocols.LogicalMethodInfo.AsyncResultParameter" />
+        <altmember cref="T:System.Reflection.ParameterInfo" />
       </Docs>
     </Member>
     <Member MemberName="BeginInvoke">
@@ -230,6 +243,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.MethodInfo" />
+        <altmember cref="P:System.Web.Services.Protocols.LogicalMethodInfo.EndMethodInfo" />
+        <altmember cref="P:System.Web.Services.Protocols.LogicalMethodInfo.MethodInfo" />
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -263,6 +279,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">A <see langword="Begin" /> asynchronous method is included in <paramref name="method_infos" /> without a corresponding <see langword="End" /> method.</exception>
+        <altmember cref="T:System.Reflection.MethodInfo" />
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -298,6 +315,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">A <see langword="Begin" /> asynchronous method is included in <paramref name="methodInfos" /> without a corresponding <see langword="End" /> method.</exception>
+        <altmember cref="T:System.Reflection.MethodInfo" />
       </Docs>
     </Member>
     <Member MemberName="CustomAttributeProvider">
@@ -424,6 +442,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.MethodInfo" />
+        <altmember cref="P:System.Web.Services.Protocols.LogicalMethodInfo.BeginMethodInfo" />
+        <altmember cref="P:System.Web.Services.Protocols.LogicalMethodInfo.MethodInfo" />
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttribute">
@@ -525,6 +546,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Services.Protocols.LogicalMethodInfo.Parameters" />
+        <altmember cref="P:System.Web.Services.Protocols.LogicalMethodInfo.OutParameters" />
       </Docs>
     </Member>
     <Member MemberName="Invoke">
@@ -715,6 +738,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.MethodInfo" />
+        <altmember cref="P:System.Web.Services.Protocols.LogicalMethodInfo.BeginMethodInfo" />
+        <altmember cref="P:System.Web.Services.Protocols.LogicalMethodInfo.EndMethodInfo" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -776,6 +802,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Services.Protocols.LogicalMethodInfo.InParameters" />
+        <altmember cref="P:System.Web.Services.Protocols.LogicalMethodInfo.Parameters" />
       </Docs>
     </Member>
     <Member MemberName="Parameters">
@@ -811,6 +839,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Services.Protocols.LogicalMethodInfo.InParameters" />
+        <altmember cref="P:System.Web.Services.Protocols.LogicalMethodInfo.OutParameters" />
       </Docs>
     </Member>
     <Member MemberName="ReturnType">
@@ -898,5 +928,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Create">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Given an array of <see cref="T:System.Reflection.MethodInfo" />, creates an array of <see cref="T:System.Web.Services.Protocols.LogicalMethodInfo" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

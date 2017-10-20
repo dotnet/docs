@@ -37,6 +37,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Net.Security.SslStream.TransportContext" />
+    <altmember cref="N:System.Security.Authentication.ExtendedProtection" />
+    <altmember cref="T:System.Security.Authentication.ExtendedProtection.ChannelBinding" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -105,6 +108,9 @@
         </remarks>
         <exception cref="T:System.NotSupportedException">
           <paramref name="kind" /> is must be <see cref="F:System.Security.Authentication.ExtendedProtection.ChannelBindingKind.Endpoint" /> for use with the <see cref="T:System.Net.TransportContext" /> retrieved from the <see cref="P:System.Net.HttpListenerRequest.TransportContext" /> property.</exception>
+        <altmember cref="P:System.Net.Security.SslStream.TransportContext" />
+        <altmember cref="N:System.Security.Authentication.ExtendedProtection" />
+        <altmember cref="T:System.Security.Authentication.ExtendedProtection.ChannelBinding" />
       </Docs>
     </Member>
     <Member MemberName="GetTlsTokenBindings">

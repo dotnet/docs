@@ -30,6 +30,18 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.SortCompare" />
+    <altmember cref="M:System.Windows.Forms.DataGridView.OnSortCompare(System.Windows.Forms.DataGridViewSortCompareEventArgs)" />
+    <altmember cref="P:System.Windows.Forms.DataGridView.Rows" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewSortCompareEventHandler" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewColumn.SortMode" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewColumnHeaderCell.SortGlyphDirection" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewSortCompareEventArgs.CellValue1" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewSortCompareEventArgs.CellValue2" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewSortCompareEventArgs.Column" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewSortCompareEventArgs.RowIndex1" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewSortCompareEventArgs.RowIndex2" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -56,6 +68,10 @@
         <param name="rowIndex2">The index of the row containing the second cell.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewSortCompareEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.SortCompare" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.OnSortCompare(System.Windows.Forms.DataGridViewSortCompareEventArgs)" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
       </Docs>
     </Member>
     <Member MemberName="CellValue1">
@@ -89,6 +105,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.SortCompare" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewSortCompareEventArgs.CellValue2" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewSortCompareEventArgs.Column" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewSortCompareEventArgs.RowIndex1" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewSortCompareEventArgs.RowIndex2" />
       </Docs>
     </Member>
     <Member MemberName="CellValue2">
@@ -122,6 +144,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.SortCompare" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewSortCompareEventArgs.CellValue1" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewSortCompareEventArgs.Column" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewSortCompareEventArgs.RowIndex1" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewSortCompareEventArgs.RowIndex2" />
       </Docs>
     </Member>
     <Member MemberName="Column">
@@ -155,6 +183,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.SortCompare" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
       </Docs>
     </Member>
     <Member MemberName="RowIndex1">
@@ -188,6 +219,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.SortCompare" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.Rows" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewSortCompareEventArgs.RowIndex2" />
       </Docs>
     </Member>
     <Member MemberName="RowIndex2">
@@ -221,6 +256,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.SortCompare" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.Rows" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewSortCompareEventArgs.RowIndex1" />
       </Docs>
     </Member>
     <Member MemberName="SortResult">
@@ -254,6 +293,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.SortCompare" />
+        <altmember cref="Overload:System.String.Compare" />
       </Docs>
     </Member>
   </Members>

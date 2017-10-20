@@ -73,6 +73,7 @@
         <summary>Gets the name of the <see cref="T:System.Windows.Documents.Hyperlink" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.HyperlinkAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" />.</summary>
         <returns>A string that contains "Hyperlink".</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassNameCore" />
       </Docs>
     </Member>
     <Member MemberName="GetNameCore">
@@ -99,6 +100,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.GetNameCore" />
       </Docs>
     </Member>
     <Member MemberName="GetPattern">

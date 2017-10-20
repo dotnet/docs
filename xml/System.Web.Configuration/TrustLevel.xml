@@ -28,6 +28,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.Configuration.SecurityPolicySection.TrustLevels" />
+    <altmember cref="T:System.Configuration.ConfigurationPropertyCollection" />
+    <altmember cref="T:System.Configuration.ConfigurationProperty" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -99,6 +102,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.ConfigurationPropertyCollection" />
+        <altmember cref="T:System.Configuration.ConfigurationProperty" />
       </Docs>
     </Member>
     <Member MemberName="PolicyFile">
@@ -132,6 +137,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.ConfigurationPropertyCollection" />
+        <altmember cref="T:System.Configuration.ConfigurationProperty" />
       </Docs>
     </Member>
     <Member MemberName="Properties">

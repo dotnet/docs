@@ -57,6 +57,7 @@
         <summary>Gets the control type for the <see cref="T:System.Windows.Controls.GridViewColumnHeader" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.GridViewColumnHeaderAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" />.</summary>
         <returns>The <see cref="F:System.Windows.Automation.Peers.AutomationControlType.HeaderItem" /> enumeration value.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlTypeCore" />
       </Docs>
     </Member>
     <Member MemberName="GetClassNameCore">
@@ -76,6 +77,7 @@
         <summary>Gets the name of the <see cref="T:System.Windows.Controls.GridViewColumnHeader" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.GridViewColumnHeaderAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" />.</summary>
         <returns>A string that contains "GridViewColumnHeader".</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassNameCore" />
       </Docs>
     </Member>
     <Member MemberName="GetPattern">

@@ -118,6 +118,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.IDataAdapter.FillSchema(System.Data.DataSet,System.Data.SchemaType)" />
       </Docs>
     </Member>
     <Member MemberName="FillSchema">
@@ -186,6 +187,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.IDataAdapter.Fill(System.Data.DataSet)" />
       </Docs>
     </Member>
     <Member MemberName="GetFillParameters">
@@ -274,6 +276,7 @@ private static void GetParameters(String connectiongString) {
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The value set is not one of the <see cref="T:System.Data.MissingMappingAction" /> values.</exception>
+        <altmember cref="P:System.Data.IDataAdapter.MissingSchemaAction" />
       </Docs>
     </Member>
     <Member MemberName="MissingSchemaAction">
@@ -302,6 +305,7 @@ private static void GetParameters(String connectiongString) {
         <value>One of the <see cref="T:System.Data.MissingSchemaAction" /> values. The default is <see langword="Add" />.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">The value set is not one of the <see cref="T:System.Data.MissingSchemaAction" /> values.</exception>
+        <altmember cref="P:System.Data.Common.DataAdapter.MissingMappingAction" />
       </Docs>
     </Member>
     <Member MemberName="TableMappings">

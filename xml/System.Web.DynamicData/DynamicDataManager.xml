@@ -202,6 +202,7 @@
         <summary>Gets the algorithm that is used to generate the value in the <see cref="P:System.Web.UI.Control.ClientID" /> property.</summary>
         <value>A value that indicates how the <see cref="P:System.Web.UI.Control.ClientID" /> property is generated. This property cannot be set.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.Control.ClientIDMode" />
       </Docs>
     </Member>
     <Member MemberName="DataControls">
@@ -407,5 +408,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RegisterControl">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Registers a <see cref="T:System.Web.DynamicData.DynamicDataManager" /> control.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

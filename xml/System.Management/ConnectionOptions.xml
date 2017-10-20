@@ -180,6 +180,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Management.AuthenticationLevel" />
       </Docs>
     </Member>
     <Member MemberName="Authority">
@@ -259,6 +260,7 @@ NTLMDOMAIN:<domain name>
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ICloneable.Clone" />
       </Docs>
     </Member>
     <Member MemberName="EnablePrivileges">
@@ -459,5 +461,14 @@ NTLMDOMAIN:<domain name>
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new ConnectionOption.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

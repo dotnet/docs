@@ -45,5 +45,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="T:System.Web.UI.WebControls.GridViewRowEventArgs" />
+    <altmember cref="E:System.Web.UI.WebControls.GridView.RowCreated" />
+    <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowCreated(System.Web.UI.WebControls.GridViewRowEventArgs)" />
+    <altmember cref="E:System.Web.UI.WebControls.GridView.RowDataBound" />
+    <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowDataBound(System.Web.UI.WebControls.GridViewRowEventArgs)" />
   </Docs>
 </Type>

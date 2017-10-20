@@ -13,6 +13,8 @@
   <Docs>
     <summary>Defines an editable region of content within the design-time markup of a wizard step for a <see cref="T:System.Web.UI.Design.WebControls.WizardDesigner" /> object.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Wizard" />
+    <altmember cref="T:System.Web.UI.Design.WebControls.WizardDesigner" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,6 +35,8 @@
         <param name="wizardStep">A <see cref="T:System.Web.UI.WebControls.WizardStepBase" /> that defines the step.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.WizardStepEditableRegion" /> class using the given designer and step.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Wizard" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.WizardDesigner" />
       </Docs>
     </Member>
     <Member MemberName="Step">
@@ -51,6 +55,9 @@
         <summary>Gets the associated design-time wizard step.</summary>
         <value>The associated design-time wizard step.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Wizard" />
+        <altmember cref="T:System.Web.UI.WebControls.WizardStepBase" />
+        <altmember cref="T:System.Web.UI.WebControls.WizardStep" />
       </Docs>
     </Member>
   </Members>

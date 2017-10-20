@@ -59,6 +59,7 @@
  ]]></format>
     </remarks>
     <threadsafe>The public <see langword="static" /> (<see langword="Shared" /> in Visual Basic) members of this type are thread safe. In addition, the <see cref="M:System.Windows.Application.FindResource(System.Object)" /> and <see cref="M:System.Windows.Application.TryFindResource(System.Object)" /> methods and the <see cref="P:System.Windows.Application.Properties" /> and <see cref="P:System.Windows.Application.Resources" /> properties are thread safe.</threadsafe>
+    <altmember cref="T:System.Windows.Window" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -137,6 +138,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Application.OnActivated(System.EventArgs)" />
+        <altmember cref="E:System.Windows.Application.Deactivated" />
       </Docs>
     </Member>
     <Member MemberName="Current">
@@ -208,6 +211,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Application.OnDeactivated(System.EventArgs)" />
+        <altmember cref="E:System.Windows.Application.Activated" />
       </Docs>
     </Member>
     <Member MemberName="DispatcherUnhandledException">
@@ -332,6 +337,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Application.OnExit(System.Windows.ExitEventArgs)" />
+        <altmember cref="E:System.Windows.Application.Startup" />
+        <altmember cref="T:System.IO.IsolatedStorage.IsolatedStorage" />
       </Docs>
     </Member>
     <Member MemberName="FindResource">
@@ -377,6 +385,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Windows.ResourceReferenceKeyNotFoundException">The resource cannot be found.</exception>
+        <altmember cref="M:System.Windows.Application.TryFindResource(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="FragmentNavigation">
@@ -403,6 +412,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Application.Navigated" />
+        <altmember cref="E:System.Windows.Application.Navigating" />
+        <altmember cref="E:System.Windows.Application.LoadCompleted" />
+        <altmember cref="E:System.Windows.Application.NavigationProgress" />
+        <altmember cref="E:System.Windows.Application.NavigationStopped" />
+        <altmember cref="E:System.Windows.Application.NavigationFailed" />
       </Docs>
     </Member>
     <Member MemberName="GetContentStream">
@@ -439,6 +454,9 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Uri" /> that is passed to <see cref="M:System.Windows.Application.GetContentStream(System.Uri)" /> is null.</exception>
         <exception cref="T:System.ArgumentException">The <see cref="T:System.Uri" /> that is passed to <see cref="M:System.Windows.Application.GetContentStream(System.Uri)" /> is an absolute <see cref="T:System.Uri" />.</exception>
+        <altmember cref="M:System.Windows.Application.GetResourceStream(System.Uri)" />
+        <altmember cref="M:System.Windows.Application.GetRemoteStream(System.Uri)" />
+        <altmember cref="Overload:System.Windows.Application.LoadComponent" />
       </Docs>
     </Member>
     <Member MemberName="GetCookie">
@@ -473,6 +491,7 @@
         <exception cref="T:System.ComponentModel.Win32Exception">A [!INCLUDE[TLA#tla_win32](~/includes/tlasharptla-win32-md.md)] error is raised by the <see langword="InternetGetCookie" /> function (called by <see cref="M:System.Windows.Application.GetCookie(System.Uri)" />) if a problem occurs when attempting to retrieve the specified cookie.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for getting the cookie for a file-based <see cref="T:System.Uri" />. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
         <permission cref="T:System.Net.WebPermission">for getting the cookie for a non-file-based <see cref="T:System.Uri" />. Associated enumeration: <see cref="P:System.Net.WebPermission.ConnectList" /></permission>
+        <altmember cref="M:System.Windows.Application.SetCookie(System.Uri,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetRemoteStream">
@@ -509,6 +528,9 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Uri" /> that is passed to <see cref="M:System.Windows.Application.GetRemoteStream(System.Uri)" /> is null.</exception>
         <exception cref="T:System.ArgumentException">The <see cref="T:System.Uri" /> that is passed to <see cref="M:System.Windows.Application.GetRemoteStream(System.Uri)" /> is either not relative, or is absolute but not in the <c>pack://siteoforigin:,,,/</c> form.</exception>
+        <altmember cref="M:System.Windows.Application.GetContentStream(System.Uri)" />
+        <altmember cref="M:System.Windows.Application.GetResourceStream(System.Uri)" />
+        <altmember cref="Overload:System.Windows.Application.LoadComponent" />
       </Docs>
     </Member>
     <Member MemberName="GetResourceStream">
@@ -546,6 +568,9 @@
         <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Uri" /> that is passed to <see cref="M:System.Windows.Application.GetResourceStream(System.Uri)" /> is null.</exception>
         <exception cref="T:System.ArgumentException">The <see cref="T:System.Uri" /> that is passed to <see cref="M:System.Windows.Application.GetResourceStream(System.Uri)" /> is either not relative, or is absolute but not in the <c>pack://application:,,,/</c> form.</exception>
         <exception cref="T:System.IO.IOException">The <see cref="T:System.Uri" /> that is passed to <see cref="M:System.Windows.Application.GetResourceStream(System.Uri)" /> cannot be found.</exception>
+        <altmember cref="M:System.Windows.Application.GetContentStream(System.Uri)" />
+        <altmember cref="M:System.Windows.Application.GetRemoteStream(System.Uri)" />
+        <altmember cref="Overload:System.Windows.Application.LoadComponent" />
       </Docs>
     </Member>
     <Member MemberName="LoadCompleted">
@@ -575,6 +600,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Application.Navigated" />
+        <altmember cref="E:System.Windows.Application.Navigating" />
+        <altmember cref="E:System.Windows.Application.NavigationProgress" />
+        <altmember cref="E:System.Windows.Application.NavigationStopped" />
+        <altmember cref="E:System.Windows.Application.NavigationFailed" />
+        <altmember cref="E:System.Windows.Application.FragmentNavigation" />
       </Docs>
     </Member>
     <MemberGroup MemberName="LoadComponent">
@@ -595,6 +626,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Application.GetResourceStream(System.Uri)" />
+        <altmember cref="M:System.Windows.Application.GetContentStream(System.Uri)" />
+        <altmember cref="M:System.Windows.Application.GetRemoteStream(System.Uri)" />
       </Docs>
     </MemberGroup>
     <Member MemberName="LoadComponent">
@@ -633,6 +667,9 @@
           <paramref name="resourceLocator" /> is null.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="resourceLocator" /> is an absolute [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)].</exception>
         <exception cref="T:System.Exception">The file is not a [!INCLUDE[TLA2#tla_titlexaml](~/includes/tla2sharptla-titlexaml-md.md)] file.</exception>
+        <altmember cref="M:System.Windows.Application.GetResourceStream(System.Uri)" />
+        <altmember cref="M:System.Windows.Application.GetContentStream(System.Uri)" />
+        <altmember cref="M:System.Windows.Application.GetRemoteStream(System.Uri)" />
       </Docs>
     </Member>
     <Member MemberName="LoadComponent">
@@ -676,6 +713,9 @@
         <exception cref="T:System.ArgumentException">The <paramref name="resourceLocator" /> is an absolute [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)].</exception>
         <exception cref="T:System.Exception">
           <paramref name="component" /> is of a type that does not match the root element of the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] file.</exception>
+        <altmember cref="M:System.Windows.Application.GetResourceStream(System.Uri)" />
+        <altmember cref="M:System.Windows.Application.GetContentStream(System.Uri)" />
+        <altmember cref="M:System.Windows.Application.GetRemoteStream(System.Uri)" />
       </Docs>
     </Member>
     <Member MemberName="MainWindow">
@@ -737,6 +777,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">
           <see cref="P:System.Windows.Application.MainWindow" /> is set from an application that's hosted in a browser, such as an [!INCLUDE[TLA#tla_xbap#plural](~/includes/tlasharptla-xbapsharpplural-md.md)].</exception>
+        <altmember cref="E:System.Windows.Application.Exit" />
       </Docs>
     </Member>
     <Member MemberName="Navigated">
@@ -763,6 +804,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Application.Navigating" />
+        <altmember cref="E:System.Windows.Application.LoadCompleted" />
+        <altmember cref="E:System.Windows.Application.NavigationProgress" />
+        <altmember cref="E:System.Windows.Application.NavigationStopped" />
+        <altmember cref="E:System.Windows.Application.NavigationFailed" />
+        <altmember cref="E:System.Windows.Application.FragmentNavigation" />
       </Docs>
     </Member>
     <Member MemberName="Navigating">
@@ -789,6 +836,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Application.Navigated" />
+        <altmember cref="E:System.Windows.Application.LoadCompleted" />
+        <altmember cref="E:System.Windows.Application.NavigationProgress" />
+        <altmember cref="E:System.Windows.Application.NavigationStopped" />
+        <altmember cref="E:System.Windows.Application.NavigationFailed" />
+        <altmember cref="E:System.Windows.Application.FragmentNavigation" />
       </Docs>
     </Member>
     <Member MemberName="NavigationFailed">
@@ -815,6 +868,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Application.Navigated" />
+        <altmember cref="E:System.Windows.Application.Navigating" />
+        <altmember cref="E:System.Windows.Application.LoadCompleted" />
+        <altmember cref="E:System.Windows.Application.NavigationProgress" />
+        <altmember cref="E:System.Windows.Application.NavigationStopped" />
+        <altmember cref="E:System.Windows.Application.FragmentNavigation" />
       </Docs>
     </Member>
     <Member MemberName="NavigationProgress">
@@ -841,6 +900,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Application.Navigating" />
+        <altmember cref="E:System.Windows.Application.Navigated" />
+        <altmember cref="E:System.Windows.Application.LoadCompleted" />
+        <altmember cref="E:System.Windows.Application.NavigationStopped" />
+        <altmember cref="E:System.Windows.Application.NavigationFailed" />
+        <altmember cref="E:System.Windows.Application.FragmentNavigation" />
       </Docs>
     </Member>
     <Member MemberName="NavigationStopped">
@@ -867,6 +932,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Application.Navigated" />
+        <altmember cref="E:System.Windows.Application.Navigating" />
+        <altmember cref="E:System.Windows.Application.LoadCompleted" />
+        <altmember cref="E:System.Windows.Application.NavigationProgress" />
+        <altmember cref="E:System.Windows.Application.NavigationFailed" />
+        <altmember cref="E:System.Windows.Application.FragmentNavigation" />
       </Docs>
     </Member>
     <Member MemberName="OnActivated">
@@ -897,6 +968,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Application.OnDeactivated(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnDeactivated">
@@ -927,6 +999,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Application.OnActivated(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnExit">
@@ -957,6 +1030,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Application.OnStartup(System.Windows.StartupEventArgs)" />
+        <altmember cref="M:System.Windows.Application.OnSessionEnding(System.Windows.SessionEndingCancelEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnFragmentNavigation">
@@ -987,6 +1062,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Application.OnNavigationFailed(System.Windows.Navigation.NavigationFailedEventArgs)" />
+        <altmember cref="M:System.Windows.Application.OnLoadCompleted(System.Windows.Navigation.NavigationEventArgs)" />
+        <altmember cref="M:System.Windows.Application.OnNavigated(System.Windows.Navigation.NavigationEventArgs)" />
+        <altmember cref="M:System.Windows.Application.OnNavigating(System.Windows.Navigation.NavigatingCancelEventArgs)" />
+        <altmember cref="M:System.Windows.Application.OnNavigationProgress(System.Windows.Navigation.NavigationProgressEventArgs)" />
+        <altmember cref="M:System.Windows.Application.OnNavigationStopped(System.Windows.Navigation.NavigationEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnLoadCompleted">
@@ -1017,6 +1098,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Application.OnNavigationFailed(System.Windows.Navigation.NavigationFailedEventArgs)" />
+        <altmember cref="M:System.Windows.Application.OnFragmentNavigation(System.Windows.Navigation.FragmentNavigationEventArgs)" />
+        <altmember cref="M:System.Windows.Application.OnNavigated(System.Windows.Navigation.NavigationEventArgs)" />
+        <altmember cref="M:System.Windows.Application.OnNavigating(System.Windows.Navigation.NavigatingCancelEventArgs)" />
+        <altmember cref="M:System.Windows.Application.OnNavigationProgress(System.Windows.Navigation.NavigationProgressEventArgs)" />
+        <altmember cref="M:System.Windows.Application.OnNavigationStopped(System.Windows.Navigation.NavigationEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnNavigated">
@@ -1047,6 +1134,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Application.OnNavigationFailed(System.Windows.Navigation.NavigationFailedEventArgs)" />
+        <altmember cref="M:System.Windows.Application.OnFragmentNavigation(System.Windows.Navigation.FragmentNavigationEventArgs)" />
+        <altmember cref="M:System.Windows.Application.OnLoadCompleted(System.Windows.Navigation.NavigationEventArgs)" />
+        <altmember cref="M:System.Windows.Application.OnNavigating(System.Windows.Navigation.NavigatingCancelEventArgs)" />
+        <altmember cref="M:System.Windows.Application.OnNavigationProgress(System.Windows.Navigation.NavigationProgressEventArgs)" />
+        <altmember cref="M:System.Windows.Application.OnNavigationStopped(System.Windows.Navigation.NavigationEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnNavigating">
@@ -1077,6 +1170,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Application.OnNavigationFailed(System.Windows.Navigation.NavigationFailedEventArgs)" />
+        <altmember cref="M:System.Windows.Application.OnFragmentNavigation(System.Windows.Navigation.FragmentNavigationEventArgs)" />
+        <altmember cref="M:System.Windows.Application.OnLoadCompleted(System.Windows.Navigation.NavigationEventArgs)" />
+        <altmember cref="M:System.Windows.Application.OnNavigated(System.Windows.Navigation.NavigationEventArgs)" />
+        <altmember cref="M:System.Windows.Application.OnNavigationProgress(System.Windows.Navigation.NavigationProgressEventArgs)" />
+        <altmember cref="M:System.Windows.Application.OnNavigationStopped(System.Windows.Navigation.NavigationEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnNavigationFailed">
@@ -1152,6 +1251,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Application.OnNavigationFailed(System.Windows.Navigation.NavigationFailedEventArgs)" />
+        <altmember cref="M:System.Windows.Application.OnFragmentNavigation(System.Windows.Navigation.FragmentNavigationEventArgs)" />
+        <altmember cref="M:System.Windows.Application.OnLoadCompleted(System.Windows.Navigation.NavigationEventArgs)" />
+        <altmember cref="M:System.Windows.Application.OnNavigated(System.Windows.Navigation.NavigationEventArgs)" />
+        <altmember cref="M:System.Windows.Application.OnNavigating(System.Windows.Navigation.NavigatingCancelEventArgs)" />
+        <altmember cref="M:System.Windows.Application.OnNavigationStopped(System.Windows.Navigation.NavigationEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnNavigationStopped">
@@ -1182,6 +1287,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Application.OnFragmentNavigation(System.Windows.Navigation.FragmentNavigationEventArgs)" />
+        <altmember cref="M:System.Windows.Application.OnLoadCompleted(System.Windows.Navigation.NavigationEventArgs)" />
+        <altmember cref="M:System.Windows.Application.OnNavigated(System.Windows.Navigation.NavigationEventArgs)" />
+        <altmember cref="M:System.Windows.Application.OnNavigating(System.Windows.Navigation.NavigatingCancelEventArgs)" />
+        <altmember cref="M:System.Windows.Application.OnNavigationProgress(System.Windows.Navigation.NavigationProgressEventArgs)" />
+        <altmember cref="M:System.Windows.Application.OnNavigationFailed(System.Windows.Navigation.NavigationFailedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnSessionEnding">
@@ -1212,6 +1323,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Application.OnStartup(System.Windows.StartupEventArgs)" />
+        <altmember cref="M:System.Windows.Application.OnExit(System.Windows.ExitEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnStartup">
@@ -1242,6 +1355,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Application.OnSessionEnding(System.Windows.SessionEndingCancelEventArgs)" />
+        <altmember cref="M:System.Windows.Application.OnExit(System.Windows.ExitEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -1287,6 +1402,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Application.Startup" />
       </Docs>
     </Member>
     <Member MemberName="ResourceAssembly">
@@ -1446,6 +1562,9 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">
           <see cref="M:System.Windows.Application.Run" /> is called from a browser-hosted application (for example, an [!INCLUDE[TLA#tla_xbap](~/includes/tlasharptla-xbap-md.md)]).</exception>
+        <altmember cref="M:System.Windows.Application.Run(System.Windows.Window)" />
+        <altmember cref="M:System.Windows.Application.Shutdown(System.Int32)" />
+        <altmember cref="E:System.Windows.Application.Exit" />
       </Docs>
     </Member>
     <Member MemberName="Run">
@@ -1498,6 +1617,8 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">
           <see cref="M:System.Windows.Application.Run" /> is called from a browser-hosted application (for example, an [!INCLUDE[TLA#tla_xbap](~/includes/tlasharptla-xbap-md.md)]).</exception>
+        <altmember cref="M:System.Windows.Application.Shutdown" />
+        <altmember cref="M:System.Windows.Application.Shutdown(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="SessionEnding">
@@ -1544,6 +1665,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Application.OnSessionEnding(System.Windows.SessionEndingCancelEventArgs)" />
+        <altmember cref="E:System.Windows.Application.Startup" />
       </Docs>
     </Member>
     <Member MemberName="SetCookie">
@@ -1591,6 +1714,7 @@
         <exception cref="T:System.ComponentModel.Win32Exception">A [!INCLUDE[TLA#tla_win32](~/includes/tlasharptla-win32-md.md)] error is raised by the <see langword="InternetSetCookie" /> function (called by <see cref="M:System.Windows.Application.SetCookie(System.Uri,System.String)" />) if a problem occurs when attempting to create the specified cookie.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for getting the cookie for a file-based <see cref="T:System.Uri" />. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
         <permission cref="T:System.Net.WebPermission">for getting the cookie for a non-file-based <see cref="T:System.Uri" />. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Connect" /></permission>
+        <altmember cref="M:System.Windows.Application.GetCookie(System.Uri)" />
       </Docs>
     </Member>
     <Member MemberName="Shutdown">
@@ -1632,6 +1756,11 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for permission to use all windows and user input events without restriction. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+        <altmember cref="M:System.Windows.Application.Shutdown(System.Int32)" />
+        <altmember cref="P:System.Windows.Application.ShutdownMode" />
+        <altmember cref="E:System.Windows.Application.SessionEnding" />
+        <altmember cref="M:System.Windows.Application.Run" />
+        <altmember cref="M:System.Windows.Application.Run(System.Windows.Window)" />
       </Docs>
     </Member>
     <Member MemberName="Shutdown">
@@ -1668,6 +1797,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for permission to use all windows and user input events without restriction. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+        <altmember cref="Overload:System.Windows.Application.Run" />
       </Docs>
     </Member>
     <Member MemberName="ShutdownMode">
@@ -1710,6 +1840,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.ShutdownMode" />
+        <altmember cref="E:System.Windows.Application.Exit" />
       </Docs>
     </Member>
     <Member MemberName="Startup">
@@ -1774,6 +1906,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Application.OnStartup(System.Windows.StartupEventArgs)" />
+        <altmember cref="E:System.Windows.Application.Exit" />
       </Docs>
     </Member>
     <Member MemberName="StartupUri">
@@ -1846,6 +1980,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Markup.IQueryAmbient" />
       </Docs>
     </Member>
     <Member MemberName="TryFindResource">
@@ -1891,6 +2026,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Application.FindResource(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Windows">
@@ -1935,7 +2071,26 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Window" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Run">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Starts a Windows Presentation Foundation (WPF) application.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Shutdown">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Shuts down an application.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -22,6 +22,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Automation.Provider.ITextRangeProvider" />
   </Docs>
   <Members>
     <Member MemberName="AddToSelection">
@@ -50,6 +51,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">If text provider does not support multiple, disjoint selections (for example, <see cref="P:System.Windows.Automation.TextPattern.SupportedTextSelection" /> must have a value of <see langword="Multiple" />).</exception>
+        <altmember cref="M:System.Windows.Automation.Text.TextPatternRange.Select" />
+        <altmember cref="M:System.Windows.Automation.Text.TextPatternRange.RemoveFromSelection" />
+        <altmember cref="T:System.Windows.Automation.Text.TextPatternRangeEndpoint" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -85,6 +89,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Text.TextPatternRangeEndpoint" />
+        <altmember cref="M:System.Windows.Automation.TextPattern.RangeFromChild(System.Windows.Automation.AutomationElement)" />
+        <altmember cref="M:System.Windows.Automation.TextPattern.RangeFromPoint(System.Windows.Point)" />
       </Docs>
     </Member>
     <Member MemberName="Compare">
@@ -118,6 +125,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">If the range being compared does not come from the same text provider.</exception>
+        <altmember cref="T:System.Windows.Automation.Text.TextPatternRangeEndpoint" />
       </Docs>
     </Member>
     <Member MemberName="CompareEndpoints">
@@ -164,6 +172,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">If range is a null reference (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]).</exception>
         <exception cref="T:System.ArgumentException">If range is from another container.</exception>
+        <altmember cref="T:System.Windows.Automation.Text.TextPatternRangeEndpoint" />
       </Docs>
     </Member>
     <Member MemberName="ExpandToEnclosingUnit">
@@ -235,6 +244,7 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Text.TextPatternRangeEndpoint" />
       </Docs>
     </Member>
     <Member MemberName="FindAttribute">
@@ -279,6 +289,7 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.TextPattern" />
       </Docs>
     </Member>
     <Member MemberName="FindText">
@@ -324,6 +335,7 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.TextPattern" />
       </Docs>
     </Member>
     <Member MemberName="GetAttributeValue">
@@ -504,6 +516,7 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">If <paramref name="maxLength" /> is less than -1.</exception>
+        <altmember cref="T:System.Windows.Automation.Text.TextPatternRangeEndpoint" />
       </Docs>
     </Member>
     <Member MemberName="Move">
@@ -584,6 +597,7 @@ Example of a text stream with embedded objects and their range spans
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Text.TextPatternRangeEndpoint" />
       </Docs>
     </Member>
     <Member MemberName="MoveEndpointByRange">
@@ -723,6 +737,9 @@ Example of a text stream with embedded objects and their range spans
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">If text provider does not support multiple, disjoint selections (for example, <see cref="P:System.Windows.Automation.TextPattern.SupportedTextSelection" /> must have a value of <see langword="Multiple" />).</exception>
+        <altmember cref="M:System.Windows.Automation.Text.TextPatternRange.Select" />
+        <altmember cref="M:System.Windows.Automation.Text.TextPatternRange.AddToSelection" />
+        <altmember cref="T:System.Windows.Automation.Text.TextPatternRangeEndpoint" />
       </Docs>
     </Member>
     <Member MemberName="ScrollIntoView">
@@ -793,6 +810,9 @@ Example of a text stream with embedded objects and their range spans
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Occurs when text selection is not supported by the text control.</exception>
+        <altmember cref="M:System.Windows.Automation.Text.TextPatternRange.AddToSelection" />
+        <altmember cref="M:System.Windows.Automation.SelectionItemPattern.RemoveFromSelection" />
+        <altmember cref="T:System.Windows.Automation.Text.TextPatternRangeEndpoint" />
       </Docs>
     </Member>
     <Member MemberName="TextPattern">

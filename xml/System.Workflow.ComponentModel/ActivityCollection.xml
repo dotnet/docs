@@ -1091,5 +1091,14 @@
  <see cref="T:System.Collections.IList" /> has a fixed size.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets an item <see cref="T:System.Workflow.ComponentModel.Activity" /> in the <see cref="T:System.Collections.ICollection" /> by name or index.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

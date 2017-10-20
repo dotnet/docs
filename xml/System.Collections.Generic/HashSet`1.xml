@@ -121,6 +121,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Collections.Generic.SortedSet`1" />
+    <altmember cref="T:System.Collections.Generic.ISet`1" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -1624,6 +1626,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Generic.IEnumerator`1" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -1677,6 +1680,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="TrimExcess">
@@ -1798,5 +1802,27 @@
           <paramref name="other" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CopyTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies the elements of a <see cref="T:System.Collections.Generic.HashSet`1" /> collection to an array.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.HashSet`1" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

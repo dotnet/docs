@@ -100,6 +100,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">No registered <see cref="T:System.Globalization.CultureInfo" /> for the provided <see cref="T:System.Windows.Markup.XmlLanguage" /> exists, as determined by a call to <see cref="M:System.Globalization.CultureInfo.GetCultureInfoByIetfLanguageTag(System.String)" />.</exception>
+        <altmember cref="M:System.Globalization.CultureInfo.GetCultureInfoByIetfLanguageTag(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetLanguage">

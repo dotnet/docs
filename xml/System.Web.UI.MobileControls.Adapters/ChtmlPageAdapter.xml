@@ -41,6 +41,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.ChtmlPageAdapter" />
       </Docs>
     </Member>
     <Member MemberName="CreateTextWriter">
@@ -63,6 +64,7 @@
         <summary>Creates and returns a text writer suitable for the given adapters. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <returns>A text writer suitable for the given adapters.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.HtmlPageAdapter.CreateTextWriter(System.IO.TextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="DeterminePostBackMode">
@@ -91,6 +93,7 @@
         <summary>Called to determine the postback data collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <returns>A modified version of the <paramref name="baseCollection" /> parameter.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.HtmlPageAdapter.DeterminePostBackMode(System.Web.HttpRequest,System.String,System.String,System.Collections.Specialized.NameValueCollection)" />
       </Docs>
     </Member>
     <Member MemberName="DeviceQualifies">
@@ -144,6 +147,7 @@
         <summary>Returns the key to use to submit the event argument. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <value>The key to use to submit the event argument.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.Adapters.HtmlPageAdapter.EventArgumentKey" />
       </Docs>
     </Member>
     <Member MemberName="EventSourceKey">
@@ -162,6 +166,7 @@
         <summary>Returns the key to use to submit the event source. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <value>The key to use to submit the event source.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.Adapters.HtmlPageAdapter.EventSourceKey" />
       </Docs>
     </Member>
     <Member MemberName="RenderPostBackEvent">
@@ -187,6 +192,7 @@
         <param name="argument">Optional event argument to pass.</param>
         <summary>Renders a reference to a postback event appropriately for the target device. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.HtmlPageAdapter.RenderPostBackEvent(System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter,System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="RenderPostBackHeader">
@@ -210,6 +216,7 @@
         <param name="form">The unique identifier for the form.</param>
         <summary>Renders the header associated with postbacks. For browsers that support script, this includes a script block to perform postback. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.HtmlPageAdapter.RenderPostBackHeader(System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter,System.Web.UI.MobileControls.Form)" />
       </Docs>
     </Member>
   </Members>

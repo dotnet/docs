@@ -74,6 +74,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Globalization.CultureInfo" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -123,6 +124,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="culture" /> specifies either an invariant, custom, or neutral culture.</exception>
+        <altmember cref="T:System.Globalization.CultureInfo" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -335,6 +337,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Globalization.RegionInfo.ISOCurrencySymbol" />
       </Docs>
     </Member>
     <Member MemberName="CurrentRegion">
@@ -424,6 +427,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Globalization.RegionInfo.Name" />
+        <altmember cref="P:System.Globalization.RegionInfo.EnglishName" />
+        <altmember cref="P:System.Globalization.RegionInfo.TwoLetterISORegionName" />
+        <altmember cref="P:System.Globalization.RegionInfo.ThreeLetterISORegionName" />
+        <altmember cref="P:System.Globalization.RegionInfo.ThreeLetterWindowsRegionName" />
       </Docs>
     </Member>
     <Member MemberName="EnglishName">
@@ -472,6 +480,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Globalization.RegionInfo.Name" />
+        <altmember cref="P:System.Globalization.RegionInfo.DisplayName" />
+        <altmember cref="P:System.Globalization.RegionInfo.TwoLetterISORegionName" />
+        <altmember cref="P:System.Globalization.RegionInfo.ThreeLetterISORegionName" />
+        <altmember cref="P:System.Globalization.RegionInfo.ThreeLetterWindowsRegionName" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -525,6 +538,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GeoId">
@@ -617,6 +631,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.GetHashCode" />
+        <altmember cref="T:System.Collections.Hashtable" />
+        <altmember cref="M:System.Globalization.RegionInfo.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="IsMetric">
@@ -823,6 +840,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Globalization.RegionInfo.CurrencySymbol" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -877,6 +895,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Globalization.RegionInfo.EnglishName" />
+        <altmember cref="P:System.Globalization.RegionInfo.DisplayName" />
+        <altmember cref="P:System.Globalization.RegionInfo.TwoLetterISORegionName" />
+        <altmember cref="P:System.Globalization.RegionInfo.ThreeLetterISORegionName" />
+        <altmember cref="P:System.Globalization.RegionInfo.ThreeLetterWindowsRegionName" />
       </Docs>
     </Member>
     <Member MemberName="NativeName">
@@ -979,6 +1002,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Globalization.RegionInfo.Name" />
+        <altmember cref="P:System.Globalization.RegionInfo.EnglishName" />
+        <altmember cref="P:System.Globalization.RegionInfo.DisplayName" />
+        <altmember cref="P:System.Globalization.RegionInfo.TwoLetterISORegionName" />
+        <altmember cref="P:System.Globalization.RegionInfo.ThreeLetterWindowsRegionName" />
       </Docs>
     </Member>
     <Member MemberName="ThreeLetterWindowsRegionName">
@@ -1022,6 +1050,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Globalization.RegionInfo.Name" />
+        <altmember cref="P:System.Globalization.RegionInfo.EnglishName" />
+        <altmember cref="P:System.Globalization.RegionInfo.DisplayName" />
+        <altmember cref="P:System.Globalization.RegionInfo.TwoLetterISORegionName" />
+        <altmember cref="P:System.Globalization.RegionInfo.ThreeLetterISORegionName" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1068,6 +1101,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.ToString" />
+        <altmember cref="P:System.Globalization.RegionInfo.Name" />
       </Docs>
     </Member>
     <Member MemberName="TwoLetterISORegionName">
@@ -1126,7 +1161,22 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Globalization.RegionInfo.Name" />
+        <altmember cref="P:System.Globalization.RegionInfo.EnglishName" />
+        <altmember cref="P:System.Globalization.RegionInfo.DisplayName" />
+        <altmember cref="P:System.Globalization.RegionInfo.ThreeLetterISORegionName" />
+        <altmember cref="P:System.Globalization.RegionInfo.ThreeLetterWindowsRegionName" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Globalization.RegionInfo" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

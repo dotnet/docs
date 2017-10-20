@@ -28,6 +28,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Data.OracleClient.OracleDataAdapter" />
+    <altmember cref="T:System.Data.OracleClient.OracleConnection" />
   </Docs>
   <Members>
     <Member MemberName="Commit">
@@ -62,6 +64,8 @@
  -or-  
   
  The connection is broken.</exception>
+        <altmember cref="M:System.Data.OracleClient.OracleConnection.BeginTransaction" />
+        <altmember cref="M:System.Data.OracleClient.OracleTransaction.Rollback" />
       </Docs>
     </Member>
     <Member MemberName="Connection">
@@ -192,6 +196,8 @@
  -or-  
   
  The connection is broken.</exception>
+        <altmember cref="M:System.Data.OracleClient.OracleTransaction.Commit" />
+        <altmember cref="M:System.Data.OracleClient.OracleConnection.BeginTransaction" />
       </Docs>
     </Member>
   </Members>

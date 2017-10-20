@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "GetScope2"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetScope2 method"
 ms.assetid: 49435665-6f5a-4acd-9034-8c9244a04a63

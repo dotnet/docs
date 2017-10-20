@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "Grid control, positioning child elements"
 ms.assetid: 27b3ba9b-ad32-44e2-bcab-a79d573a463c

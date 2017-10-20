@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IClrProfiling"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IClrProfiling interface [.NET Framework profiling]"
 ms.assetid: 8b53ccc6-1b5e-4b30-a100-c9683d553f5a

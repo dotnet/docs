@@ -597,7 +597,7 @@
 ## Remarks  
  When a <xref:System.Globalization.StringInfo> object is instantiated, its <xref:System.Globalization.StringInfo.String%2A> property is set to one of the following values:  
   
--   <xref:System.String?displayProperty=nameWithType> if the default  <xref:System.Globalization.StringInfo.%23ctor> is called. You should then use the <xref:System.Globalization.StringInfo.String%2A> property to assign the string that this <xref:System.Globalization.StringInfo> object rperesents.  
+-   <xref:System.String.Empty?displayProperty=nameWithType> if the default  <xref:System.Globalization.StringInfo.%23ctor> is called. You should then use the <xref:System.Globalization.StringInfo.String%2A> property to assign the string that this <xref:System.Globalization.StringInfo> object rperesents.  
   
 -   The string supplied as the `value` argument to the <xref:System.Globalization.StringInfo.%23ctor%28System.String%29> constructor.  
   

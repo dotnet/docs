@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataEmit2::SaveDeltaToStream"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataEmit2::SaveDeltaToStream method [.NET Framework metadata]"
   - "SaveDeltaToStream method [.NET Framework metadata]"

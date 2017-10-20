@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "COR_VERSION"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "COR_VERSION structure [.NET Framework debugging]"
 ms.assetid: 5efaee1c-a001-4c73-9525-4160f4c71567

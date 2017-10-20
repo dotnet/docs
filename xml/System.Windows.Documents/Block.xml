@@ -620,7 +620,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A value of <xref:System.Double?displayProperty=nameWithType> (equivalent to an attribute value of `Auto`) indicates that the line height is determined automatically from the current font characteristics.  
+ A value of <xref:System.Double.NaN?displayProperty=nameWithType> (equivalent to an attribute value of `Auto`) indicates that the line height is determined automatically from the current font characteristics.  
   
  Changing this value does not change the height of the associated text; rather, it changes the height of the line that contains the text. To change the size of the text, use the <xref:System.Windows.Documents.FlowDocument.FontSize%2A> property.  
   

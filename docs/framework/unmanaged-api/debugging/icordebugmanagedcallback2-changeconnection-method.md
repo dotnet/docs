@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugManagedCallback2::ChangeConnection"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugManagedCallback2::ChangeConnection method [.NET Framework debugging]"
   - "ChangeConnection method [.NET Framework debugging]"

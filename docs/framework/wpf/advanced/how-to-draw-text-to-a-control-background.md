@@ -22,15 +22,15 @@ ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Draw Text to a Control&#39;s Background
-You can draw text directly to the background of a control by converting a text string to a              <xref:System.Windows.Media.FormattedText> object, and then drawing the object to the control's              <xref:System.Windows.Media.DrawingContext>. You can also use this technique for drawing to the background of objects derived from              <xref:System.Windows.Controls.Panel>, such as              <xref:System.Windows.Controls.Canvas> and              <xref:System.Windows.Controls.StackPanel>.  
+You can draw text directly to the background of a control by converting a text string to a <xref:System.Windows.Media.FormattedText> object, and then drawing the object to the control's <xref:System.Windows.Media.DrawingContext>. You can also use this technique for drawing to the background of objects derived from <xref:System.Windows.Controls.Panel>, such as <xref:System.Windows.Controls.Canvas> and <xref:System.Windows.Controls.StackPanel>.  
   
  ![Controls displaying text as background](../../../../docs/framework/wpf/advanced/media/drawtext2background01.png "DrawText2Background01")  
 Example of controls with custom text backgrounds  
   
 ## Example  
- To draw to the background of a control, create a new                      <xref:System.Windows.Media.DrawingBrush> object and draw the converted text to the object's                      <xref:System.Windows.Media.DrawingContext>. Then, assign the new                      <xref:System.Windows.Media.DrawingBrush> to the control's background property.  
+ To draw to the background of a control, create a new <xref:System.Windows.Media.DrawingBrush> object and draw the converted text to the object's <xref:System.Windows.Media.DrawingContext>. Then, assign the new <xref:System.Windows.Media.DrawingBrush> to the control's background property.  
   
- The following code example shows how to create a                      <xref:System.Windows.Media.FormattedText> object and draw to the background of a                      <xref:System.Windows.Controls.Label> and                      <xref:System.Windows.Controls.Button> object.  
+ The following code example shows how to create a <xref:System.Windows.Media.FormattedText> object and draw to the background of a <xref:System.Windows.Controls.Label> and <xref:System.Windows.Controls.Button> object.  
   
  [!code-csharp[DrawTextToControlBackground#DrawTextToControlBackground1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DrawTextToControlBackground/CSHARP/Window1.xaml.cs#drawtexttocontrolbackground1)]  
   

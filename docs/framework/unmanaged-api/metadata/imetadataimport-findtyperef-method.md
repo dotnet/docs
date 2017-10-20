@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataImport::FindTypeRef"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataImport::FindTypeRef method [.NET Framework metadata]"
   - "FindTypeRef method [.NET Framework metadata]"

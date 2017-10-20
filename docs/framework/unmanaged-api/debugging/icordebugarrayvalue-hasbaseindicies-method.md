@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugArrayValue::HasBaseIndicies"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "HasBaseIndicies method [.NET Framework debugging]"
   - "ICorDebugArrayValue::HasBaseIndicies method [.NET Framework debugging]"

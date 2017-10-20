@@ -1,14 +1,12 @@
 ---
 title: "-refonly (C# Compiler Options)"
-ms.date: "2017-07-08"
+ms.date: 07/08/2017
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
 f1_keywords: 
   - "/refonly"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "/refonly compiler option [C#]"
   - "-refonly compiler option [C#]"

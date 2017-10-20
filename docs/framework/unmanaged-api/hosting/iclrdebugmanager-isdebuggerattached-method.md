@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRDebugManager::IsDebuggerAttached"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IsDebuggerAttached method, ICLRDebugManager interface [.NET Framework hosting]"
   - "ICLRDebugManager::IsDebuggerAttached method [.NET Framework hosting]"

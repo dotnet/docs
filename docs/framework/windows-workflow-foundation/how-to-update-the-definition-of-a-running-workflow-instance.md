@@ -7,6 +7,9 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 ms.assetid: 26dfac36-ae23-4909-9867-62495b55fb5e
 caps.latest.revision: 6
 author: "Erikre"
@@ -1483,7 +1486,7 @@ Dynamic update provides a mechanism for workflow application developers to updat
   
 3.  Add the following three items to the collection.  
   
-    ```vb-c#  
+    ```
     StateMachineNumberGuessWorkflow v1  
     FlowchartNumberGuessWorkflow v1  
     SequentialNumberGuessWorkflow v1  
@@ -1491,7 +1494,7 @@ Dynamic update provides a mechanism for workflow application developers to updat
   
      The completed `Items` collection will have six items.  
   
-    ```vb-c#  
+    ```
     StateMachineNumberGuessWorkflow  
     FlowchartNumberGuessWorkflow  
     SequentialNumberGuessWorkflow  

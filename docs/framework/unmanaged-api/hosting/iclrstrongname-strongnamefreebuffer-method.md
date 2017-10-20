@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRStrongName::StrongNameFreeBuffer"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "StrongNameFreeBuffer method, ICLRStrongName interface [.NET Framework hosting]"
   - "ICLRStrongName::StrongNameFreeBuffer method [.NET Framework hosting]"

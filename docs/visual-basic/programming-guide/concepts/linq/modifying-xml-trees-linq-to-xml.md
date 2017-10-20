@@ -1,7 +1,7 @@
 ---
 title: "Modifying XML Trees (LINQ to XML) (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 ms.assetid: 4ae511a5-4fc9-4178-9c8e-761357deae3f
 caps.latest.revision: 3
 author: dotnet-bot

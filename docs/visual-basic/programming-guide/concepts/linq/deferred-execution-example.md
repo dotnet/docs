@@ -1,7 +1,7 @@
 ---
 title: "Deferred Execution Example (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 ms.assetid: 9a22bea1-c755-4aac-800a-fcd9e5107ace
 caps.latest.revision: 3
 author: dotnet-bot

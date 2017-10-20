@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostSemaphore::ReleaseSemaphore"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ReleaseSemaphore method [.NET Framework hosting]"
   - "IHostSemaphore::ReleaseSemaphore method [.NET Framework hosting]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorDebugBlockingObject"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorDebugBlockingObject structure [.NET Framework debugging]"
 ms.assetid: 5944edd1-0914-4efa-aba0-d5a277c38b1a

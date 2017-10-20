@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostSemaphore"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostSemaphore interface [.NET Framework hosting]"
 ms.assetid: c0765321-656c-441e-bab5-58176292be1e

@@ -1,7 +1,7 @@
 ---
 title: "Ref Return Values (Visual Basic)"
 ms.custom: ""
-ms.date: "2017-04-28"
+ms.date: 04/28/2017
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "variables [Visual Basic]"
   - "ref return values [Visual Basic]"
@@ -18,20 +16,6 @@ helpviewer_keywords:
 ms.assetid: 5ef0cc69-eb3a-4a67-92a2-78585f223cb5
 author: rpetrusha
 ms.author: ronpet
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Support for reference return values (Visual Basic)
 

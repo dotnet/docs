@@ -2278,8 +2278,8 @@ Task t Status: RanToCompletion, Result: 42
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Threading.Tasks.TaskFactory.CancellationToken%2A?displayProperty=nameWithType>|<xref:System.Threading.CancellationToken.None%2A?displayProperty=nameWithType>|  
-|<xref:System.Threading.Tasks.TaskFactory.ContinuationOptions%2A?displayProperty=nameWithType>|<xref:System.Threading.Tasks.TaskContinuationOptions?displayProperty=nameWithType>|  
-|<xref:System.Threading.Tasks.TaskFactory.CreationOptions%2A?displayProperty=nameWithType>|<xref:System.Threading.Tasks.TaskCreationOptions?displayProperty=nameWithType>|  
+|<xref:System.Threading.Tasks.TaskFactory.ContinuationOptions%2A?displayProperty=nameWithType>|<xref:System.Threading.Tasks.TaskContinuationOptions.None?displayProperty=nameWithType>|  
+|<xref:System.Threading.Tasks.TaskFactory.CreationOptions%2A?displayProperty=nameWithType>|<xref:System.Threading.Tasks.TaskCreationOptions.None?displayProperty=nameWithType>|  
 |<xref:System.Threading.Tasks.TaskFactory.Scheduler%2A?displayProperty=nameWithType>|`null`, or <xref:System.Threading.Tasks.TaskScheduler.Current%2A?displayProperty=nameWithType>|  
   
  The most common use of this property is to create and start a new task in a single call to the <xref:System.Threading.Tasks.TaskFactory.StartNew%2A?displayProperty=nameWithType> method.  
@@ -2818,7 +2818,7 @@ Task t Status: RanToCompletion, Result: 42
   
 -   Its cancellation token is <xref:System.Threading.CancellationToken.None%2A?displayProperty=nameWithType>.  
   
--   Its <xref:System.Threading.Tasks.Task.CreationOptions%2A> property value is <xref:System.Threading.Tasks.TaskCreationOptions?displayProperty=nameWithType>.  
+-   Its <xref:System.Threading.Tasks.Task.CreationOptions%2A> property value is <xref:System.Threading.Tasks.TaskCreationOptions.DenyChildAttach?displayProperty=nameWithType>.  
   
 -   It uses the default task scheduler.  
   
@@ -2938,7 +2938,7 @@ Task t Status: RanToCompletion, Result: 42
   
  The <xref:System.Threading.Tasks.Task.Run%28System.Action%2CSystem.Threading.CancellationToken%29> method is a simpler alternative to the <xref:System.Threading.Tasks.TaskFactory.StartNew%28System.Action%2CSystem.Threading.CancellationToken%29?displayProperty=nameWithType> method. It creates a task with the following default values:  
   
--   Its <xref:System.Threading.Tasks.Task.CreationOptions%2A> property value is <xref:System.Threading.Tasks.TaskCreationOptions?displayProperty=nameWithType>.  
+-   Its <xref:System.Threading.Tasks.Task.CreationOptions%2A> property value is <xref:System.Threading.Tasks.TaskCreationOptions.DenyChildAttach?displayProperty=nameWithType>.  
   
 -   It uses the default task scheduler.  
   
@@ -3100,7 +3100,7 @@ Task t Status: RanToCompletion, Result: 42
   
 -   Its cancellation token is <xref:System.Threading.CancellationToken.None%2A?displayProperty=nameWithType>.  
   
--   Its <xref:System.Threading.Tasks.Task.CreationOptions%2A> property value is <xref:System.Threading.Tasks.TaskCreationOptions?displayProperty=nameWithType>.  
+-   Its <xref:System.Threading.Tasks.Task.CreationOptions%2A> property value is <xref:System.Threading.Tasks.TaskCreationOptions.DenyChildAttach?displayProperty=nameWithType>.  
   
 -   It uses the default task scheduler.  
   
@@ -3220,7 +3220,7 @@ Task t Status: RanToCompletion, Result: 42
   
  The <xref:System.Threading.Tasks.Task.Run%2A> method is a simpler alternative to the <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> method. It creates a task with the following default values:  
   
--   Its <xref:System.Threading.Tasks.Task.CreationOptions%2A> property value is <xref:System.Threading.Tasks.TaskCreationOptions?displayProperty=nameWithType>.  
+-   Its <xref:System.Threading.Tasks.Task.CreationOptions%2A> property value is <xref:System.Threading.Tasks.TaskCreationOptions.DenyChildAttach?displayProperty=nameWithType>.  
   
 -   It uses the default task scheduler.  
   

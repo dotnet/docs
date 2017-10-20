@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IDefinitionIdentity"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IDefinitionIdentity interface [.NET Framework fusion]"
 ms.assetid: ce5ba888-5fbe-4efd-91cf-f0ff94d8428b

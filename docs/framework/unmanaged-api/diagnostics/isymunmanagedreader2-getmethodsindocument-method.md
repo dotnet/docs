@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedReader2::GetMethodsInDocument"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedReader2::GetMethodsInDocument method [.NET Framework debugging]"
   - "GetMethodsInDocument method [.NET Framework debugging]"

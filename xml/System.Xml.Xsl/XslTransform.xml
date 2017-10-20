@@ -220,7 +220,7 @@
  If the style sheet contains embedded scripting, the script is compiled to an assembly. The URI of the style sheet is used to create evidence, which is applied to the assembly. For issues with the <xref:System.Xml.Xsl.XslTransform.Load%2A> method and style sheets with embedded scripts, see article Q316755 in the Microsoft Knowledge Base at http://support.microsoft.com.  
   
 > [!NOTE]
->  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=nameWithType> for more information.  
+>  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode?displayProperty=nameWithType> for more information.  
   
    
   
@@ -293,7 +293,7 @@
  If the style sheet contains embedded scripting, the script is compiled to an assembly. The assembly has full trust. The recommended practice is to provide evidence using the <xref:System.Xml.Xsl.XslTransform.Load%28System.Xml.XmlReader%2CSystem.Xml.XmlResolver%2CSystem.Security.Policy.Evidence%29> method. For issues with the <xref:System.Xml.Xsl.XslTransform.Load%2A> method and style sheets with embedded scripts, see article Q316755 in the Microsoft Knowledge Base at http://support.microsoft.com.  
   
 > [!NOTE]
->  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=nameWithType> for more information.  
+>  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode?displayProperty=nameWithType> for more information.  
   
    
   
@@ -362,7 +362,7 @@
  If the style sheet contains embedded scripting, the script is compiled to an assembly. The assembly has full trust. The recommended practice is to provide evidence using the <xref:System.Xml.Xsl.XslTransform.Load%28System.Xml.XPath.IXPathNavigable%2CSystem.Xml.XmlResolver%2CSystem.Security.Policy.Evidence%29> method. For issues with the <xref:System.Xml.Xsl.XslTransform.Load%2A> method and style sheets with embedded scripts, see article Q316755 in the Microsoft Knowledge Base at http://support.microsoft.com.  
   
 > [!NOTE]
->  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=nameWithType> for more information.  
+>  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode?displayProperty=nameWithType> for more information.  
   
  ]]></format>
         </remarks>
@@ -414,7 +414,7 @@
  If the style sheet contains embedded scripting, the script is compiled to an assembly. The assembly has full trust. The recommended practice is to provide evidence using the <xref:System.Xml.Xsl.XslTransform.Load%28System.Xml.XPath.XPathNavigator%2CSystem.Xml.XmlResolver%2CSystem.Security.Policy.Evidence%29> method. For issues with the <xref:System.Xml.Xsl.XslTransform.Load%2A> method and style sheets with embedded scripts, see article Q316755 in the Microsoft Knowledge Base at http://support.microsoft.com.  
   
 > [!NOTE]
->  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=nameWithType> for more information.  
+>  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode?displayProperty=nameWithType> for more information.  
   
  ]]></format>
         </remarks>
@@ -468,7 +468,7 @@
  If the style sheet contains embedded scripting, the script is compiled to an assembly. The URI of the style sheet is used to create evidence, which is applied to the assembly. For issues with the <xref:System.Xml.Xsl.XslTransform.Load%2A> method and style sheets with embedded scripts, see article Q316755 in the Microsoft Knowledge Base at http://support.microsoft.com.  
   
 > [!NOTE]
->  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=nameWithType> for more information.  
+>  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode?displayProperty=nameWithType> for more information.  
   
    
   
@@ -548,7 +548,7 @@
  If the style sheet contains embedded scripting, the script is compiled to an assembly. The assembly has full trust. The recommended practice is to provide evidence using the <xref:System.Xml.Xsl.XslTransform.Load%28System.Xml.XmlReader%2CSystem.Xml.XmlResolver%2CSystem.Security.Policy.Evidence%29> method. For issues with the <xref:System.Xml.Xsl.XslTransform.Load%2A> method and style sheets with embedded scripts see article Q316755 in the Microsoft Knowledge Base at http://support.microsoft.com.  
   
 > [!NOTE]
->  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=nameWithType> for more information.  
+>  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode?displayProperty=nameWithType> for more information.  
   
  ]]></format>
         </remarks>
@@ -600,7 +600,7 @@
  If the style sheet contains embedded scripting, the script is compiled to an assembly. The assembly has full trust. The recommended practice is to provide evidence using the <xref:System.Xml.Xsl.XslTransform.Load%28System.Xml.XPath.IXPathNavigable%2CSystem.Xml.XmlResolver%2CSystem.Security.Policy.Evidence%29> method. For issues with the <xref:System.Xml.Xsl.XslTransform.Load%2A> method and style sheets with embedded scripts, see article Q316755 in the Microsoft Knowledge Base at http://support.microsoft.com.  
   
 > [!NOTE]
->  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=nameWithType> for more information.  
+>  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode?displayProperty=nameWithType> for more information.  
   
  ]]></format>
         </remarks>
@@ -654,7 +654,7 @@
  If the style sheet contains embedded scripting, the script is compiled to an assembly. The assembly has full trust. The recommended practice is to provide evidence using the <xref:System.Xml.Xsl.XslTransform.Load%28System.Xml.XPath.XPathNavigator%2CSystem.Xml.XmlResolver%2CSystem.Security.Policy.Evidence%29>. For issues with the <xref:System.Xml.Xsl.XslTransform.Load%2A> method and style sheets with embedded scripts, see article Q316755 in the Microsoft Knowledge Base at http://support.microsoft.com.  
   
 > [!NOTE]
->  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=nameWithType> for more information.  
+>  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode?displayProperty=nameWithType> for more information.  
   
  ]]></format>
         </remarks>

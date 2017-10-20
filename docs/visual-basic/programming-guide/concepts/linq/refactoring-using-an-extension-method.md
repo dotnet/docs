@@ -1,7 +1,7 @@
 ---
 title: "Refactoring Using an Extension Method (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 ms.assetid: d87ae99a-cfa9-4a31-a5e4-9d6437be6810
 caps.latest.revision: 3
 author: dotnet-bot

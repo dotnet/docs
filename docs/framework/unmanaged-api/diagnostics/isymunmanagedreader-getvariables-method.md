@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedReader::GetVariables"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedReader::GetVariables method [.NET Framework debugging]"
   - "GetVariables method, ISymUnmanagedReader interface [.NET Framework debugging]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugChain::GetContext"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugChain::GetContext method [.NET Framework debugging]"
   - "GetContext method, ICorDebugChain interface [.NET Framework debugging]"

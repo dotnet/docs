@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "ToolTip"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "tooltips [Windows Forms], about tooltips"
   - "ToolTip component [Windows Forms], about ToolTip component"

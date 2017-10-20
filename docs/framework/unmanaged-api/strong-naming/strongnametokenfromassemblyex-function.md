@@ -17,8 +17,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "StrongNameTokenFromAssemblyEx"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "StrongNameTokenFromAssemblyEx function [.NET Framework strong naming]"
 ms.assetid: 67a8a9f2-dee3-44b2-a1c0-f307a3bdf90f

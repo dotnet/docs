@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedWriter::SetSymAttribute"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SetSymAttribute method [.NET Framework debugging]"
   - "ISymUnmanagedWriter::SetSymAttribute method [.NET Framework debugging]"

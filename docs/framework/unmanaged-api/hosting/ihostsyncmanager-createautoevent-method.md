@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostSyncManager::CreateAutoEvent"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostSyncManager::CreateAutoEvent method [.NET Framework hosting]"
   - "CreateAutoEvent method [.NET Framework hosting]"

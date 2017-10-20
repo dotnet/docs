@@ -1140,7 +1140,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
   
  This property does not support animation.  
   
- When used in data-binding scenarios, this property uses the default update behavior of <xref:System.Windows.Data.UpdateSourceTrigger?displayProperty=nameWithType>.  
+ When used in data-binding scenarios, this property uses the default update behavior of <xref:System.Windows.Data.UpdateSourceTrigger.LostFocus?displayProperty=nameWithType>.  
   
 <a name="xamlPropertyElementUsage_Text"></a>   
 ## XAML Property Element Usage  
@@ -1197,7 +1197,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
    
   
 ## Examples  
- The following example shows how to create a <xref:System.Windows.Controls.TextBox> with a <xref:System.Windows.Controls.TextBox.TextAlignment%2A> of <xref:System.Windows.TextAlignment?displayProperty=nameWithType>.  
+ The following example shows how to create a <xref:System.Windows.Controls.TextBox> with a <xref:System.Windows.Controls.TextBox.TextAlignment%2A> of <xref:System.Windows.TextAlignment.Center?displayProperty=nameWithType>.  
   
  [!code-xaml[TextBoxMiscSnippets_snip#TextBoxExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxMiscSnippets_snip/csharp/textboxexample.xaml#textboxexamplewholepage)]  
   

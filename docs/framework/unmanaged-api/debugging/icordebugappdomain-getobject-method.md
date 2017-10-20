@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugAppDomain::GetObject"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugAppDomain::GetObject method [.NET Framework debugging]"
   - "GetObject method, ICorDebugAppDomain interface [.NET Framework debugging]"

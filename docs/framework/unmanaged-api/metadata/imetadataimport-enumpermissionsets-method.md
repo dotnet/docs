@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataImport::EnumPermissionSets"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "EnumPermissionSets method [.NET Framework metadata]"
   - "IMetaDataImport::EnumPermissionSets method [.NET Framework metadata]"

@@ -1,7 +1,7 @@
 ---
 title: "Finding Text in Word Documents (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: 82f86677-560b-49dc-a089-610409939b2a
 caps.latest.revision: 3
 author: "BillWagner"

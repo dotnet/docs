@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo4::GetCodeInfo3"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetCodeInfo3 method, ICorProfilerInfo4 interface [.NET Framework profiling]"
   - "ICorProfilerInfo4::GetCodeInfo3 method [.NET Framework profiling]"

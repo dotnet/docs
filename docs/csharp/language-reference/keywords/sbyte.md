@@ -1,6 +1,6 @@
 ---
 title: "sbyte (C# Reference)"
-ms.date: "2017-03-14"
+ms.date: 03/14/2017
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -8,28 +8,12 @@ ms.topic: "article"
 f1_keywords: 
   - "sbyte_CSharpKeyword"
   - "sbyte"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "sbyte keyword [C#]"
 ms.assetid: 1a9c7b48-73d1-4d33-b485-c4faf0a816bc
 caps.latest.revision: 17
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # sbyte (C# Reference)
 

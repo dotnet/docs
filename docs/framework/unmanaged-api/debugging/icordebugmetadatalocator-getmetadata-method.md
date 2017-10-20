@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugMetaDataLocator::GetMetaData"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugMetaDataLocator::GetMetaData method [.NET Framework debugging]"
   - "GetMetaData method, ICorDebugMetaDataLocator interface [.NET Framework debugging]"

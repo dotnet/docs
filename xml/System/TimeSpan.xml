@@ -379,7 +379,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The return value must be between <xref:System.TimeSpan?displayProperty=nameWithType> and <xref:System.TimeSpan?displayProperty=nameWithType>; otherwise, an exception is thrown.  
+ The return value must be between <xref:System.TimeSpan.MinValue?displayProperty=nameWithType> and <xref:System.TimeSpan.MaxValue?displayProperty=nameWithType>; otherwise, an exception is thrown.  
   
  The return value is a new <xref:System.TimeSpan>; the original <xref:System.TimeSpan> is not modified.  
   
@@ -2282,7 +2282,7 @@
 |*.*|A culture-sensitive symbol that separates seconds from fractions of a second. The invariant format uses a period (".") character.|  
 |*ff*|Optional fractional seconds, consisting of one to seven decimal digits.|  
   
- The components of `s` must collectively specify a time interval that is greater than or equal to <xref:System.TimeSpan?displayProperty=nameWithType> and less than or equal to <xref:System.TimeSpan?displayProperty=nameWithType>.  
+ The components of `s` must collectively specify a time interval that is greater than or equal to <xref:System.TimeSpan.MinValue?displayProperty=nameWithType> and less than or equal to <xref:System.TimeSpan.MaxValue?displayProperty=nameWithType>.  
   
  The <xref:System.TimeSpan.Parse%28System.String%29> method tries to parse `s` by using each of the culture-specific formats for the current culture.  
   
@@ -2371,7 +2371,7 @@
 |.|A culture-sensitive symbol that separates seconds from fractions of a second. The default value is a period (".") character.|  
 |*ff*|Optional fractional seconds, consisting of one to seven decimal digits.|  
   
- The components of `input` must collectively specify a time interval that is greater than or equal to <xref:System.TimeSpan?displayProperty=nameWithType> and less than or equal to <xref:System.TimeSpan?displayProperty=nameWithType>.  
+ The components of `input` must collectively specify a time interval that is greater than or equal to <xref:System.TimeSpan.MinValue?displayProperty=nameWithType> and less than or equal to <xref:System.TimeSpan.MaxValue?displayProperty=nameWithType>.  
   
  The <xref:System.TimeSpan.Parse%28System.String%29> method tries to parse `input` by using each of the culture-specific formats for the culture specified by `formatProvider`.  
   
@@ -2632,12 +2632,12 @@
   
  If `formatProvider` is `null`, the <xref:System.Globalization.DateTimeFormatInfo> object that is associated with the current culture is used.  
   
- The `styles` parameter affects the interpretation of strings that are parsed using custom format strings. It determines whether `input` is interpreted as a negative time interval only if a negative sign is present (<xref:System.Globalization.TimeSpanStyles?displayProperty=nameWithType>), or whether it is always interpreted as a negative time interval (<xref:System.Globalization.TimeSpanStyles?displayProperty=nameWithType>). If <xref:System.Globalization.TimeSpanStyles?displayProperty=nameWithType> is not used, `format` must include a literal negative sign symbol (such as "\\-") to successfully parse a negative time interval.  
+ The `styles` parameter affects the interpretation of strings that are parsed using custom format strings. It determines whether `input` is interpreted as a negative time interval only if a negative sign is present (<xref:System.Globalization.TimeSpanStyles.None?displayProperty=nameWithType>), or whether it is always interpreted as a negative time interval (<xref:System.Globalization.TimeSpanStyles.AssumeNegative?displayProperty=nameWithType>). If <xref:System.Globalization.TimeSpanStyles.AssumeNegative?displayProperty=nameWithType> is not used, `format` must include a literal negative sign symbol (such as "\\-") to successfully parse a negative time interval.  
   
    
   
 ## Examples  
- The following example uses the <xref:System.TimeSpan.ParseExact%28System.String%2CSystem.String%2CSystem.IFormatProvider%29> method to parse several string representations of time intervals using various format strings and cultures. It also uses the <xref:System.Globalization.TimeSpanStyles?displayProperty=nameWithType> value to interpret each string as a negative time interval. The output from the example illustrates that the <xref:System.Globalization.TimeSpanStyles?displayProperty=nameWithType> style affects the return value only when it is used with custom format strings.  
+ The following example uses the <xref:System.TimeSpan.ParseExact%28System.String%2CSystem.String%2CSystem.IFormatProvider%29> method to parse several string representations of time intervals using various format strings and cultures. It also uses the <xref:System.Globalization.TimeSpanStyles.AssumeNegative?displayProperty=nameWithType> value to interpret each string as a negative time interval. The output from the example illustrates that the <xref:System.Globalization.TimeSpanStyles.AssumeNegative?displayProperty=nameWithType> style affects the return value only when it is used with custom format strings.  
   
  [!code-csharp[System.TimeSpan.ParseExact#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.timespan.parseexact/cs/parseexactexample2.cs#2)]
  [!code-vb[System.TimeSpan.ParseExact#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.timespan.parseexact/vb/parseexactexample2.vb#2)]  
@@ -2717,14 +2717,14 @@
   
  If `formatProvider` is `null`, the <xref:System.Globalization.DateTimeFormatInfo> object that is associated with the current culture is used.  
   
- The `styles` parameter affects the interpretation of strings that are parsed using custom format strings. It determines whether `input` is interpreted as a negative time interval only if a negative sign is present (<xref:System.Globalization.TimeSpanStyles?displayProperty=nameWithType>), or whether it is always interpreted as a negative time interval (<xref:System.Globalization.TimeSpanStyles?displayProperty=nameWithType>). If <xref:System.Globalization.TimeSpanStyles?displayProperty=nameWithType> is not used, `format` must include a literal negative sign symbol (such as "\\-") to successfully parse a negative time interval.  
+ The `styles` parameter affects the interpretation of strings that are parsed using custom format strings. It determines whether `input` is interpreted as a negative time interval only if a negative sign is present (<xref:System.Globalization.TimeSpanStyles.None?displayProperty=nameWithType>), or whether it is always interpreted as a negative time interval (<xref:System.Globalization.TimeSpanStyles.AssumeNegative?displayProperty=nameWithType>). If <xref:System.Globalization.TimeSpanStyles.AssumeNegative?displayProperty=nameWithType> is not used, `format` must include a literal negative sign symbol (such as "\\-") to successfully parse a negative time interval.  
   
    
   
 ## Examples  
  The following example calls the <xref:System.TimeSpan.ParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.TimeSpanStyles%29> method to convert each element of a string array to a <xref:System.TimeSpan> value. The strings can represent a time interval in either the general short format or the general long format.  
   
- In addition, the example changes the way in which the time interval parsing methods interpret a single digit. Ordinarily, a single digit is interpreted as the number of days in a time interval. Instead, the `%h` custom format string is used to interpret a single digit as the number of hours. For this change to be effective, note that the `%h` custom format string must precede the other format strings in the `formats` array. Also note from the output that the <xref:System.Globalization.TimeSpanStyles?displayProperty=nameWithType> flag specified in the method call is used only when parsing a string with this format specifier.  
+ In addition, the example changes the way in which the time interval parsing methods interpret a single digit. Ordinarily, a single digit is interpreted as the number of days in a time interval. Instead, the `%h` custom format string is used to interpret a single digit as the number of hours. For this change to be effective, note that the `%h` custom format string must precede the other format strings in the `formats` array. Also note from the output that the <xref:System.Globalization.TimeSpanStyles.AssumeNegative?displayProperty=nameWithType> flag specified in the method call is used only when parsing a string with this format specifier.  
   
  [!code-csharp[System.TimeSpan.ParseExact#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.timespan.parseexact/cs/parseexactexample4.cs#4)]
  [!code-vb[System.TimeSpan.ParseExact#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.timespan.parseexact/vb/parseexactexample4.vb#4)]  
@@ -2830,7 +2830,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The return value must be between <xref:System.TimeSpan?displayProperty=nameWithType> and <xref:System.TimeSpan?displayProperty=nameWithType>; otherwise, an exception is thrown.  
+ The return value must be between <xref:System.TimeSpan.MinValue?displayProperty=nameWithType> and <xref:System.TimeSpan.MaxValue?displayProperty=nameWithType>; otherwise, an exception is thrown.  
   
  The return value is a new <xref:System.TimeSpan>; the original <xref:System.TimeSpan> is not modified.  
   
@@ -3255,7 +3255,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `format` parameter can be any valid standard or custom format specifier for <xref:System.TimeSpan> values. If `format` is equal to <xref:System.String?displayProperty=nameWithType> or is `null`, the return value of the current <xref:System.TimeSpan> object is formatted with the common format specifier ("c"). If `format` is any other value, the method throws a <xref:System.FormatException>.  
+ The `format` parameter can be any valid standard or custom format specifier for <xref:System.TimeSpan> values. If `format` is equal to <xref:System.String.Empty?displayProperty=nameWithType> or is `null`, the return value of the current <xref:System.TimeSpan> object is formatted with the common format specifier ("c"). If `format` is any other value, the method throws a <xref:System.FormatException>.  
   
  If `format` is a standard format string, the format of the returned string is defined by the formatting conventions of the current culture.  
   
@@ -3319,7 +3319,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `format` parameter can be any valid standard or custom format specifier for <xref:System.TimeSpan> values. If `format` is equal to <xref:System.String?displayProperty=nameWithType> or is `null`, the return value of the current <xref:System.TimeSpan> object is formatted with the common format specifier ("c"). If format is any other value, the method throws a <xref:System.FormatException>.  
+ The `format` parameter can be any valid standard or custom format specifier for <xref:System.TimeSpan> values. If `format` is equal to <xref:System.String.Empty?displayProperty=nameWithType> or is `null`, the return value of the current <xref:System.TimeSpan> object is formatted with the common format specifier ("c"). If format is any other value, the method throws a <xref:System.FormatException>.  
   
 > [!IMPORTANT]
 >  The custom format strings for <xref:System.TimeSpan> values do not include a date or time separator. If you want to include these elements in your format string, you must treat them as character literals. See the example for an illustration, and see the [Custom TimeSpan Format Strings](~/docs/standard/base-types/custom-timespan-format-strings.md) topic for more information.  
@@ -3974,12 +3974,12 @@
   
  If `formatProvider` is `null`, the <xref:System.Globalization.DateTimeFormatInfo> object that is associated with the current culture is used.  
   
- The `styles` parameter affects the interpretation of strings parsed using custom format strings. It determines whether `input` is interpreted as a negative time interval only if a negative sign is present (<xref:System.Globalization.TimeSpanStyles?displayProperty=nameWithType>), or whether it is always interpreted as a negative time interval (<xref:System.Globalization.TimeSpanStyles?displayProperty=nameWithType>). If <xref:System.Globalization.TimeSpanStyles?displayProperty=nameWithType> is not used, `format` must include a literal negative sign symbol (such as "\\-") to successfully parse a negative time interval.  
+ The `styles` parameter affects the interpretation of strings parsed using custom format strings. It determines whether `input` is interpreted as a negative time interval only if a negative sign is present (<xref:System.Globalization.TimeSpanStyles.None?displayProperty=nameWithType>), or whether it is always interpreted as a negative time interval (<xref:System.Globalization.TimeSpanStyles.AssumeNegative?displayProperty=nameWithType>). If <xref:System.Globalization.TimeSpanStyles.AssumeNegative?displayProperty=nameWithType> is not used, `format` must include a literal negative sign symbol (such as "\\-") to successfully parse a negative time interval.  
   
    
   
 ## Examples  
- The following example uses the <xref:System.TimeSpan.ParseExact%28System.String%2CSystem.String%2CSystem.IFormatProvider%29> method to parse several string representations of time intervals using various format strings and cultures. It also uses the <xref:System.Globalization.TimeSpanStyles?displayProperty=nameWithType> value to interpret each string as a negative time interval. The output from the example illustrates that the <xref:System.Globalization.TimeSpanStyles?displayProperty=nameWithType> style affects the return value only when it is used with custom format strings.  
+ The following example uses the <xref:System.TimeSpan.ParseExact%28System.String%2CSystem.String%2CSystem.IFormatProvider%29> method to parse several string representations of time intervals using various format strings and cultures. It also uses the <xref:System.Globalization.TimeSpanStyles.AssumeNegative?displayProperty=nameWithType> value to interpret each string as a negative time interval. The output from the example illustrates that the <xref:System.Globalization.TimeSpanStyles.AssumeNegative?displayProperty=nameWithType> style affects the return value only when it is used with custom format strings.  
   
  [!code-csharp[System.TimeSpan.TryParseExact#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.timespan.tryparseexact/cs/tryparseexactexample2.cs#2)]
  [!code-vb[System.TimeSpan.TryParseExact#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.timespan.tryparseexact/vb/tryparseexactexample2.vb#2)]  
@@ -4050,14 +4050,14 @@
   
  If `formatProvider` is `null`, the <xref:System.Globalization.DateTimeFormatInfo> object that is associated with the current culture is used.  
   
- The `styles` parameter affects the interpretation of strings that are parsed using custom format strings. It determines whether `input` is interpreted as a negative time interval only if a negative sign is present (<xref:System.Globalization.TimeSpanStyles?displayProperty=nameWithType>), or whether it is always interpreted as a negative time interval (<xref:System.Globalization.TimeSpanStyles?displayProperty=nameWithType>). If <xref:System.Globalization.TimeSpanStyles?displayProperty=nameWithType> is not used, `format` must include a literal negative sign symbol (such as "\\-") to successfully parse a negative time interval.  
+ The `styles` parameter affects the interpretation of strings that are parsed using custom format strings. It determines whether `input` is interpreted as a negative time interval only if a negative sign is present (<xref:System.Globalization.TimeSpanStyles.None?displayProperty=nameWithType>), or whether it is always interpreted as a negative time interval (<xref:System.Globalization.TimeSpanStyles.AssumeNegative?displayProperty=nameWithType>). If <xref:System.Globalization.TimeSpanStyles.AssumeNegative?displayProperty=nameWithType> is not used, `format` must include a literal negative sign symbol (such as "\\-") to successfully parse a negative time interval.  
   
    
   
 ## Examples  
  The following example calls the <xref:System.TimeSpan.TryParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.TimeSpanStyles%2CSystem.TimeSpan%40%29> method to convert each element of a string array to a <xref:System.TimeSpan> value. The strings can represent a time interval in either the general short format or the general long format.  
   
- In addition, the example changes the way in which the time interval parsing methods interpret a single digit. Ordinarily, a single digit is interpreted as the number of days in a time interval. Instead, the `%h` custom format string is used to interpret a single digit as the number of hours. For this change to be effective, note that the `%h` custom format string must precede the other format strings in the `formats` array. Also note from the output that the <xref:System.Globalization.TimeSpanStyles?displayProperty=nameWithType> flag specified in the method call is used only when parsing a string with this format specifier.  
+ In addition, the example changes the way in which the time interval parsing methods interpret a single digit. Ordinarily, a single digit is interpreted as the number of days in a time interval. Instead, the `%h` custom format string is used to interpret a single digit as the number of hours. For this change to be effective, note that the `%h` custom format string must precede the other format strings in the `formats` array. Also note from the output that the <xref:System.Globalization.TimeSpanStyles.AssumeNegative?displayProperty=nameWithType> flag specified in the method call is used only when parsing a string with this format specifier.  
   
  [!code-csharp[System.TimeSpan.TryParseExact#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.timespan.tryparseexact/cs/tryparseexactexample4.cs#4)]
  [!code-vb[System.TimeSpan.TryParseExact#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.timespan.tryparseexact/vb/tryparseexactexample4.vb#4)]  

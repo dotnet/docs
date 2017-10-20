@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "data contracts [WCF], ordering members"
 ms.assetid: 0658a47d-b6e5-4ae0-ba72-ababc3c6ff33

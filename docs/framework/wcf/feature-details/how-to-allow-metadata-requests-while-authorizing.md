@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "allowing metadata requests while authorizing [WCF]"
 ms.assetid: 90cec34f-b619-452b-a056-8b1c0de49d05

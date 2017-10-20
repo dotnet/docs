@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataEmit::SetFieldProps"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataEmit::SetFieldProps method [.NET Framework metadata]"
   - "SetFieldProps method [.NET Framework metadata]"

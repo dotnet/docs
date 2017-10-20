@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo2::SetEnterLeaveFunctionHooks2"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerInfo2::SetEnterLeaveFunctionHooks2 method [.NET Framework profiling]"
   - "SetEnterLeaveFunctionHooks2 method [.NET Framework profiling]"

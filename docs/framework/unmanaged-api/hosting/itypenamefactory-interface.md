@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ITypeNameFactory"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ITypeNameFactory interface [.NET Framework hosting]"
 ms.assetid: fa4247c4-f4f1-4855-9241-e04d737f5f73

@@ -1,14 +1,12 @@
 ---
 title: "Value Types (C# Reference)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
 f1_keywords: 
   - "cs.valuetypes"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "value types [C#]"
   - "types [C#], value types"
@@ -17,20 +15,6 @@ ms.assetid: 471eb994-2958-49d5-a6be-19b4313f80a3
 caps.latest.revision: 18
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Value Types (C# Reference)
 The value types consist of two main categories:  

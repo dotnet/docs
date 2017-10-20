@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "functions, getting return values of"
   - "page functions, getting return values of"
@@ -24,7 +27,7 @@ manager: "wpickett"
 This example shows how to get the result that is returned by a page function.  
   
 ## Example  
- To get the result that is returned from a page function, you need to handle                      <xref:System.Windows.Navigation.PageFunction%601.Return> of the page function you are calling.  
+ To get the result that is returned from a page function, you need to handle <xref:System.Windows.Navigation.PageFunction%601.Return> of the page function you are calling.  
   
  [!code-xaml[HOWTOPageFunctionSnippets#CallAPageFunctionXAML](../../../../samples/snippets/csharp/VS_Snippets_Wpf/HOWTOPageFunctionSnippets/CSharp/CallingPage.xaml#callapagefunctionxaml)]  
   

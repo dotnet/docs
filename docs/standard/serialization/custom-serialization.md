@@ -3,9 +3,9 @@ title: "Custom serialization"
 ms.date: "03/30/2017"
 ms.prod: ".net"
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
+dev_langs:
+- "csharp"
+- "vb"
 helpviewer_keywords: 
   - "binary serialization, custom serialization"
   - "custom serialization"

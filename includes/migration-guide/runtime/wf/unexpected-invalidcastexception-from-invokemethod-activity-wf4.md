@@ -8,4 +8,5 @@
 |Version|4.5|
 |Type|Runtime|
 |Affected APIs|<ul><li><xref:System.Activities.Statements.InvokeMethod.Parameters?displayProperty=nameWithType></li></ul>|
+|Analyzers|<ul><li>CD0088</li></ul>|
 

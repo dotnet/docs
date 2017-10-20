@@ -343,9 +343,9 @@
 ## .NET Framework Security  
  The following permissions are required to access the decryption key:  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=nameWithType>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags.Open?displayProperty=nameWithType>  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=nameWithType>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags.Decrypt?displayProperty=nameWithType>  
   
  ]]></format>
         </remarks>
@@ -385,9 +385,9 @@
 ## .NET Framework Security  
  The following permissions are required to access the decryption key:  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=nameWithType>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags.Open?displayProperty=nameWithType>  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=nameWithType>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags.Decrypt?displayProperty=nameWithType>  
   
  ]]></format>
         </remarks>
@@ -428,9 +428,9 @@
 ## .NET Framework Security  
  The following permissions are required to access the decryption key:  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=nameWithType>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags.Open?displayProperty=nameWithType>  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=nameWithType>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags.Decrypt?displayProperty=nameWithType>  
   
  ]]></format>
         </remarks>
@@ -473,9 +473,9 @@
 ## .NET Framework Security  
  The following permissions are required to access the decryption key:  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=nameWithType>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags.Open?displayProperty=nameWithType>  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=nameWithType>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags.Decrypt?displayProperty=nameWithType>  
   
  ]]></format>
         </remarks>
@@ -550,7 +550,7 @@
 ## .NET Framework Security  
  The following permissions are required to display the user interface:  
   
--   <xref:System.Security.Permissions.UIPermissionWindow?displayProperty=nameWithType>  
+-   <xref:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows?displayProperty=nameWithType>  
   
  ]]></format>
         </remarks>

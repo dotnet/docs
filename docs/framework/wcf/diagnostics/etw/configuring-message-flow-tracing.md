@@ -39,16 +39,16 @@ When [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] activity tracing
 ## Message Flow Tracing and REST Services  
  Message flow tracing allows you to trace a request end to end.  With SOAP-based services an Activity ID is sent in a SOAP message header. REST requests do not contain this header so a special HTTP event header is used instead. The following code snippet shows how you can programmatically retrieve the Activity ID value:  
   
-```vb  
-Object output = null;                    
-if (OperationContext.Current.IncomingMessageProperties.TryGetValue(HttpRequestMessageProperty.Name, out output))  
-{  
-   HttpRequestMessageProperty httpHeaders = output as HttpRequestMessageProperty;       
-   // Retrieve the Activity Id from the HTTP header    string e2eId = httpHeaders.Headers["E2EActivity"];  
-   // ...  
-}  
-```  
-  
+```csharp
+Object output = null;
+if (OperationContext.Current.IncomingMessageProperties.TryGetValue(HttpRequestMessageProperty.Name, out output))
+{
+   HttpRequestMessageProperty httpHeaders = output as HttpRequestMessageProperty;
+   // Retrieve the Activity Id from the HTTP header    string e2eId = httpHeaders.Headers["E2EActivity"];
+   // ...
+}
+```
+
  You can programmatically add the header using the following code:  
   
 ```csharp  

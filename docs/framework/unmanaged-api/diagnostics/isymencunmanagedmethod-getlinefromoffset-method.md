@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymENCUnmanagedMethod::GetLineFromOffset"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetLineFromOffset method [.NET Framework debugging]"
   - "ISymENCUnmanagedMethod::GetLineFromOffset method [.NET Framework debugging]"

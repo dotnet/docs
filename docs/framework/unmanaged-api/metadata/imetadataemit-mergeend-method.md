@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataEmit::MergeEnd"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "MergeEnd method [.NET Framework metadata]"
   - "IMetaDataEmit::MergeEnd method [.NET Framework metadata]"

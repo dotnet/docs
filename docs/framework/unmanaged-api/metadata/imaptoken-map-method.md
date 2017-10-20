@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMapToken::Map"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMapToken::Map method [.NET Framework metadata]"
   - "Map method [.NET Framework metadata]"

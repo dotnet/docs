@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorRefToDefCheck"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorRefToDefCheck enumeration [.NET Framework metadata]"
 ms.assetid: f9a80f1a-55af-4459-b095-8441aae16119

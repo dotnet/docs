@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "DTELErrorList"
   - "WhyDTELPage"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "errors [Windows Forms Designer]"
   - "design-time errors [Windows Forms Designer]"

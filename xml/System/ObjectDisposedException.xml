@@ -331,7 +331,7 @@ Caught:
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the current property is not `null` or <xref:System.String?displayProperty=nameWithType>, the value of this property is included in the string returned by the <xref:System.ObjectDisposedException.Message%2A> property.  
+ If the current property is not `null` or <xref:System.String.Empty?displayProperty=nameWithType>, the value of this property is included in the string returned by the <xref:System.ObjectDisposedException.Message%2A> property.  
   
  ]]></format>
         </remarks>

@@ -1,6 +1,6 @@
 ---
 title: "when (C# Reference)"
-ms.date: "2017-03-07"
+ms.date: 03/07/2017
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -8,28 +8,12 @@ ms.topic: "article"
 f1_keywords: 
   - "when_CSharpKeyword"
   - "when"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "when keyword [C#]"
 ms.assetid: dd543335-ae37-48ac-9560-bd5f047b9aea
 caps.latest.revision: 30
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
  # when (C# Reference)
 
@@ -47,7 +31,7 @@ catch ExceptionType [e] when (expr)
 ```
 where *expr* is an expression that evaluates to a Boolean value. If it returns `true`, the exception handler executes; if `false`, it does not. 
 
-The following example uses the `when` keyword to conditionally execute handlers for an @System.Net.HttpRequestException depending on the text of the exception message.
+The following example uses the `when` keyword to conditionally execute handlers for an <xref:System.Net.Http.HttpRequestException> depending on the text of the exception message.
 
  [!code-cs[when-with-catch](../../../../samples/snippets/csharp/language-reference/keywords/when/catch.cs)]  
   

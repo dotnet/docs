@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugValue3::GetSize64"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetSize64 method, ICorDebugValue3 interface [.NET Framework debugging]"
   - "ICorDebugValue3::GetSize64 method [.NET Framework debugging]"

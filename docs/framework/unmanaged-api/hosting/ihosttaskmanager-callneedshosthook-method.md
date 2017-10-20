@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostTaskManager::CallNeedsHostHook"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CallNeedsHostHook method [.NET Framework hosting]"
   - "IHostTaskManager::CallNeedsHostHook method [.NET Framework hosting]"

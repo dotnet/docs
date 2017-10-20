@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "OpenGenericArguments"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "OpenGenericArguments method [.NET Framework hosting]"
   - "ITypeNameBuilder::OpenGenericArguments method [.NET Framework hosting]"

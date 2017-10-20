@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedConstant::GetSignature"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetSignature method, ISymUnmanagedConstant interface [.NET Framework debugging]"
   - "ISymUnmanagedConstant::GetSignature method [.NET Framework debugging]"

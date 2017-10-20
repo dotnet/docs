@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugThread4::GetCurrentCustomDebuggerNotification"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetCurrentCustomDebuggerNotification method [.NET Framework debugging]"
   - "ICorDebugThread4::GetCurrentCustomDebuggerNotification method [.NET Framework debugging]"

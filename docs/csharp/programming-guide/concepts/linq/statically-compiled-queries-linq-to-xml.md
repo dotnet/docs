@@ -1,7 +1,7 @@
 ---
 title: "Statically Compiled Queries (LINQ to XML) (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: 3bf558fe-0705-479d-86d4-00188f5fcf9c
 caps.latest.revision: 3
 author: "BillWagner"

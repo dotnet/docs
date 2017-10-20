@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRDebuggingLibraryProvider"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRDebuggingLibraryProvider interface [.NET Framework debugging]"
 ms.assetid: 67739617-6add-41a9-9de5-a3200c3109ce

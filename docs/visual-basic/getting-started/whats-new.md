@@ -1,18 +1,12 @@
 ---
 title: "What's new for Visual Basic"
-
-ms.date: "2017-04-27"
+ms.date: 04/27/2017
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "VB.StartPage.WhatsNew"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "new features, Visual Basic"
   - "what's new [Visual Basic]"
@@ -21,20 +15,6 @@ ms.assetid: d7e97396-7f42-4873-a81c-4ebcc4b6ca02
 caps.latest.revision: 145
 author: rpetrusha
 ms.author: ronpet
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # What's new for Visual Basic
 

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedScope2"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedScope2 interface [.NET Framework debugging]"
 ms.assetid: 2ed6a387-ba45-483e-9a1e-b0c69f67998b

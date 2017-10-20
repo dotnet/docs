@@ -430,7 +430,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Some members of the <xref:System.Reflection.TypeAttributes> enumeration are masks that represent a group of values. Each group includes one member whose underlying value is zero. For example, the underlying value of the <xref:System.Reflection.TypeAttributes?displayProperty=nameWithType> member in the <xref:System.Reflection.TypeAttributes?displayProperty=nameWithType> group is zero, as is the <xref:System.Reflection.TypeAttributes?displayProperty=nameWithType> member in the <xref:System.Reflection.TypeAttributes?displayProperty=nameWithType> group. Because of this, you must use the mask before testing for those values. The example provides an illustration.  
+ Some members of the <xref:System.Reflection.TypeAttributes> enumeration are masks that represent a group of values. Each group includes one member whose underlying value is zero. For example, the underlying value of the <xref:System.Reflection.TypeAttributes.NotPublic?displayProperty=nameWithType> member in the <xref:System.Reflection.TypeAttributes.VisibilityMask?displayProperty=nameWithType> group is zero, as is the <xref:System.Reflection.TypeAttributes.AutoLayout?displayProperty=nameWithType> member in the <xref:System.Reflection.TypeAttributes.SequentialLayout?displayProperty=nameWithType> group. Because of this, you must use the mask before testing for those values. The example provides an illustration.  
   
 > [!TIP]
 >  For most purposes, properties like <xref:System.Type.IsClass%2A>,<xref:System.Type.IsAutoLayout%2A>, and <xref:System.Type.IsSpecialName%2A> are easier to use than type attributes.  
@@ -1187,7 +1187,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  Valid values for <xref:System.Type.MemberType%2A> are defined in <xref:System.Reflection.MemberInfo>. If no such members are found, an empty array is returned.  
   
- To get the class initializer (.cctor) using this method, you must specify <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags?displayProperty=nameWithType> in Visual Basic). You can also get the class initializer using the <xref:System.Type.TypeInitializer%2A> property.  
+ To get the class initializer (.cctor) using this method, you must specify <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> in Visual Basic). You can also get the class initializer using the <xref:System.Type.TypeInitializer%2A> property.  
   
  If the current <xref:System.Type> represents a type parameter of a generic type or generic method, <xref:System.Type.FindMembers%2A> processes any members declared by the class constraint and the interface constraints of the type parameter.  
   
@@ -1318,7 +1318,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of this property contains flags that describe whether the current generic type parameter is covariant, and flags that describe any special constraints. Use the <xref:System.Reflection.GenericParameterAttributes?displayProperty=nameWithType> value to select the covariance flags, and use the <xref:System.Reflection.GenericParameterAttributes?displayProperty=nameWithType> value to select the constraint flags.  
+ The value of this property contains flags that describe whether the current generic type parameter is covariant, and flags that describe any special constraints. Use the <xref:System.Reflection.GenericParameterAttributes.VarianceMask?displayProperty=nameWithType> value to select the covariance flags, and use the <xref:System.Reflection.GenericParameterAttributes.SpecialConstraintMask?displayProperty=nameWithType> value to select the constraint flags.  
   
  For a list of the invariant conditions for terms used in generic reflection, see the <xref:System.Type.IsGenericType%2A> property remarks.  
   
@@ -1557,7 +1557,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overload looks for public instance constructors and cannot be used to obtain a class initializer (.cctor). To get a class initializer, use an overload that takes <xref:System.Reflection.BindingFlags>, and specify <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags?displayProperty=nameWithType> in Visual Basic). You can also get the class initializer using the <xref:System.Type.TypeInitializer%2A> property.  
+ This method overload looks for public instance constructors and cannot be used to obtain a class initializer (.cctor). To get a class initializer, use an overload that takes <xref:System.Reflection.BindingFlags>, and specify <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> in Visual Basic). You can also get the class initializer using the <xref:System.Type.TypeInitializer%2A> property.  
   
  If the requested constructor is non-public, this method returns `null`.  
   
@@ -1658,7 +1658,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  See <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> for more information.  
   
- To get the class initializer (.cctor) using this method overload, you must specify <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags?displayProperty=nameWithType> in Visual Basic). You can also get the class initializer using the <xref:System.Type.TypeInitializer%2A> property.  
+ To get the class initializer (.cctor) using this method overload, you must specify <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> in Visual Basic). You can also get the class initializer using the <xref:System.Type.TypeInitializer%2A> property.  
   
 > [!NOTE]
 >  You cannot omit parameters when looking up constructors and methods. You can only omit parameters when invoking.  
@@ -1765,7 +1765,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  See <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> for more information.  
   
- To get the class initializer (.cctor) using this method, you must specify <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags?displayProperty=nameWithType> in Visual Basic). You can also get the class initializer using the <xref:System.Type.TypeInitializer%2A> property.  
+ To get the class initializer (.cctor) using this method, you must specify <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> in Visual Basic). You can also get the class initializer using the <xref:System.Type.TypeInitializer%2A> property.  
   
  The following table shows what members of a base class are returned by the `Get` methods when reflecting on a type.  
   
@@ -1960,7 +1960,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
 3.  Custom attributes are not part of the common type system.  
   
- This method overload calls the <xref:System.Type.GetConstructors%28System.Reflection.BindingFlags%29> method overload, with <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags?displayProperty=nameWithType> in Visual Basic). It will not find class initializers (.cctor). To find class initializers, use an overload that takes <xref:System.Reflection.BindingFlags>, and specify <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags?displayProperty=nameWithType> in Visual Basic). You can also get the class initializer using the <xref:System.Type.TypeInitializer%2A> property.  
+ This method overload calls the <xref:System.Type.GetConstructors%28System.Reflection.BindingFlags%29> method overload, with <xref:System.Reflection.BindingFlags.Public?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.Instance?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags.Public?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags.Instance?displayProperty=nameWithType> in Visual Basic). It will not find class initializers (.cctor). To find class initializers, use an overload that takes <xref:System.Reflection.BindingFlags>, and specify <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> in Visual Basic). You can also get the class initializer using the <xref:System.Type.TypeInitializer%2A> property.  
   
  If the current <xref:System.Type> represents a constructed generic type, this method returns the <xref:System.Reflection.ConstructorInfo> objects with the type parameters replaced by the appropriate type arguments. For example, if class `C<T>` has a constructor `C(T t1)` (`Sub New(ByVal t1 As T)` in Visual Basic), calling <xref:System.Type.GetConstructors%2A> on `C<int>` returns a <xref:System.Reflection.ConstructorInfo> that represents `C(int t1)` in C# (`Sub New(ByVal t1 As Integer)` in Visual Basic).  
   
@@ -1983,9 +1983,9 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  False  
   
- Because the <xref:System.Type.GetConstructors> overload uses only <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> and <xref:System.Reflection.BindingFlags?displayProperty=nameWithType>, the static constructor is neither counted by the `for` expression nor evaluated by `IsStatic`.  
+ Because the <xref:System.Type.GetConstructors> overload uses only <xref:System.Reflection.BindingFlags.Public?displayProperty=nameWithType> and <xref:System.Reflection.BindingFlags.Instance?displayProperty=nameWithType>, the static constructor is neither counted by the `for` expression nor evaluated by `IsStatic`.  
   
- To find static constructors, use the <xref:System.Type.GetConstructors%28System.Reflection.BindingFlags%29> overload, and pass the combination (logical `OR`) of <xref:System.Reflection.BindingFlags?displayProperty=nameWithType>, <xref:System.Reflection.BindingFlags?displayProperty=nameWithType>, <xref:System.Reflection.BindingFlags?displayProperty=nameWithType>, <xref:System.Reflection.BindingFlags?displayProperty=nameWithType>, as shown in the following code example:  
+ To find static constructors, use the <xref:System.Type.GetConstructors%28System.Reflection.BindingFlags%29> overload, and pass the combination (logical `OR`) of <xref:System.Reflection.BindingFlags.Public?displayProperty=nameWithType>, <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType>, <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType>, <xref:System.Reflection.BindingFlags.Instance?displayProperty=nameWithType>, as shown in the following code example:  
   
  [!code-cpp[Classic Type.GetConstructors Example#2](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic Type.GetConstructors Example/CPP/source2.cpp#2)]
  [!code-csharp[Classic Type.GetConstructors Example#2](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic Type.GetConstructors Example/CS/source2.cs#2)]
@@ -2062,7 +2062,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  See <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> for more information.  
   
- To get the class initializer (.cctor) using this method overload, you must specify <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags?displayProperty=nameWithType> in Visual Basic). You can also get the class initializer using the <xref:System.Type.TypeInitializer%2A> property.  
+ To get the class initializer (.cctor) using this method overload, you must specify <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> in Visual Basic). You can also get the class initializer using the <xref:System.Type.TypeInitializer%2A> property.  
   
  If the current <xref:System.Type> represents a constructed generic type, this method returns the <xref:System.Reflection.ConstructorInfo> objects with the type parameters replaced by the appropriate type arguments. For example, if class `C<T>` has a constructor `C(T t1)` (`Sub New(ByVal t1 As T)` in Visual Basic), calling <xref:System.Type.GetConstructors%2A> on `C<int>` returns a <xref:System.Reflection.ConstructorInfo> that represents `C(int t1)` in C# (`Sub New(ByVal t1 As Integer)` in Visual Basic).  
   
@@ -2087,7 +2087,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  Because the <xref:System.Type.GetConstructors%2A> overload uses only <xref:System.Reflection.BindingFlags.Public> and <xref:System.Reflection.BindingFlags.Instance>, the static constructor is neither counted by the `for` expression nor evaluated by `IsStatic`.  
   
- To find static constructors, use the <xref:System.Type.GetConstructors%2A> overload, and pass it the combination (logical OR) of <xref:System.Reflection.BindingFlags?displayProperty=nameWithType>, <xref:System.Reflection.BindingFlags?displayProperty=nameWithType>, <xref:System.Reflection.BindingFlags?displayProperty=nameWithType>, <xref:System.Reflection.BindingFlags?displayProperty=nameWithType>, as shown in the following code example:  
+ To find static constructors, use the <xref:System.Type.GetConstructors%2A> overload, and pass it the combination (logical OR) of <xref:System.Reflection.BindingFlags.Public?displayProperty=nameWithType>, <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType>, <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType>, <xref:System.Reflection.BindingFlags.Instance?displayProperty=nameWithType>, as shown in the following code example:  
   
  [!code-cpp[Classic Type.GetConstructors Example#2](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic Type.GetConstructors Example/CPP/source2.cpp#2)]
  [!code-csharp[Classic Type.GetConstructors Example#2](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic Type.GetConstructors Example/CS/source2.cs#2)]
@@ -2403,7 +2403,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An event is considered public to reflection if it has at least one method or accessor that is public. Otherwise the event is considered private, and you must use <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> (in Visual Basic, combine the values using `Or`) to get it.  
+ An event is considered public to reflection if it has at least one method or accessor that is public. Otherwise the event is considered private, and you must use <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.Instance?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> (in Visual Basic, combine the values using `Or`) to get it.  
   
  The search for `name` is case-sensitive. The search includes public static and public instance events.  
   
@@ -2499,7 +2499,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  See <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> for more information.  
   
- An event is considered public to reflection if it has at least one method or accessor that is public. Otherwise the event is considered private, and you must use <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> (in Visual Basic, combine the values using `Or`) to get it.  
+ An event is considered public to reflection if it has at least one method or accessor that is public. Otherwise the event is considered private, and you must use <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.Instance?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> (in Visual Basic, combine the values using `Or`) to get it.  
   
  If the current <xref:System.Type> represents a constructed generic type, this method returns the <xref:System.Reflection.EventInfo> with the type parameters replaced by the appropriate type arguments.  
   
@@ -2553,7 +2553,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An event is considered public to reflection if it has at least one method or accessor that is public. Otherwise the event is considered private, and you must use <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> (in Visual Basic, combine the values using `Or`) to get it.  
+ An event is considered public to reflection if it has at least one method or accessor that is public. Otherwise the event is considered private, and you must use <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.Instance?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> (in Visual Basic, combine the values using `Or`) to get it.  
   
  The <xref:System.Type.GetEvents%2A> method does not return events in a particular order, such as alphabetical or declaration order. Your code must not depend on the order in which events are returned, because that order varies.  
   
@@ -2653,7 +2653,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  See <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> for more information.  
   
- An event is considered public to reflection if it has at least one method or accessor that is public. Otherwise the event is considered private, and you must use <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> (in Visual Basic, combine the values using `Or`) to get it.  
+ An event is considered public to reflection if it has at least one method or accessor that is public. Otherwise the event is considered private, and you must use <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.Instance?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> (in Visual Basic, combine the values using `Or`) to get it.  
   
  If the current <xref:System.Type> represents a constructed generic type, this method returns the <xref:System.Reflection.EventInfo> objects with the type parameters replaced by the appropriate type arguments.  
   
@@ -3458,7 +3458,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  The <xref:System.Type.GetMember%2A> method does not return members in a particular order, such as alphabetical or declaration order. Your code must not depend on the order in which members are returned, because that order varies.  
   
- This method overload will not find class initializers (.cctor). To find class initializers, use an overload that takes <xref:System.Reflection.BindingFlags>, and specify <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags?displayProperty=nameWithType> in Visual Basic). You can also get the class initializer using the <xref:System.Type.TypeInitializer%2A> property.  
+ This method overload will not find class initializers (.cctor). To find class initializers, use an overload that takes <xref:System.Reflection.BindingFlags>, and specify <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> in Visual Basic). You can also get the class initializer using the <xref:System.Type.TypeInitializer%2A> property.  
   
  The following table shows what members of a base class are returned by the `Get` methods when reflecting on a type.  
   
@@ -3561,7 +3561,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  See <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> for more information.  
   
- To get the class initializer (.cctor) using this method overload, you must specify ".cctor" for `name`, and <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags?displayProperty=nameWithType> in Visual Basic) for `bindingAttr`. You can also get the class initializer using the <xref:System.Type.TypeInitializer%2A> property.  
+ To get the class initializer (.cctor) using this method overload, you must specify ".cctor" for `name`, and <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> in Visual Basic) for `bindingAttr`. You can also get the class initializer using the <xref:System.Type.TypeInitializer%2A> property.  
   
  If the current <xref:System.Type> represents a constructed generic type, this method returns the <xref:System.Reflection.MemberInfo> with the type parameters replaced by the appropriate type arguments.  
   
@@ -3647,7 +3647,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  See <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> for more information.  
   
- To get the class initializer (.cctor) using this method overload, you must specify ".cctor" for `name`, <xref:System.Reflection.MemberTypes?displayProperty=nameWithType> for `type`, and  <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags?displayProperty=nameWithType> in Visual Basic) for `bindingAttr`. You can also get the class initializer using the <xref:System.Type.TypeInitializer%2A> property.  
+ To get the class initializer (.cctor) using this method overload, you must specify ".cctor" for `name`, <xref:System.Reflection.MemberTypes.Constructor?displayProperty=nameWithType> for `type`, and  <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> in Visual Basic) for `bindingAttr`. You can also get the class initializer using the <xref:System.Type.TypeInitializer%2A> property.  
   
  If the current <xref:System.Type> represents a constructed generic type, this method returns the <xref:System.Reflection.MemberInfo> with the type parameters replaced by the appropriate type arguments.  
   
@@ -3709,7 +3709,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  The <xref:System.Type.GetMembers%2A> method does not return members in a particular order, such as alphabetical or declaration order. Your code must not depend on the order in which members are returned, because that order varies.  
   
- This method overload calls the <xref:System.Type.GetMembers%28System.Reflection.BindingFlags%29> method overload, with <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags?displayProperty=nameWithType> in Visual Basic). It will not find class initializers (.cctor). To find class initializers, use an overload that takes <xref:System.Reflection.BindingFlags>, and specify <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags?displayProperty=nameWithType> in Visual Basic). You can also get the class initializer using the <xref:System.Type.TypeInitializer%2A> property.  
+ This method overload calls the <xref:System.Type.GetMembers%28System.Reflection.BindingFlags%29> method overload, with <xref:System.Reflection.BindingFlags.Public?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.Instance?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags.Public?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags.Instance?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> in Visual Basic). It will not find class initializers (.cctor). To find class initializers, use an overload that takes <xref:System.Reflection.BindingFlags>, and specify <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> in Visual Basic). You can also get the class initializer using the <xref:System.Type.TypeInitializer%2A> property.  
   
  The following table shows what members of a base class are returned by the `Get` methods when reflecting on a type.  
   
@@ -3807,7 +3807,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  See <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> for more information.  
   
- To get the class initializer (.cctor) using this method overload, you must specify <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags?displayProperty=nameWithType> in Visual Basic). You can also get the class initializer using the <xref:System.Type.TypeInitializer%2A> property.  
+ To get the class initializer (.cctor) using this method overload, you must specify <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> in Visual Basic). You can also get the class initializer using the <xref:System.Type.TypeInitializer%2A> property.  
   
  If the current T:System.Type represents a constructed generic type, this method returns the <xref:System.Reflection.MemberInfo> objects with the type parameters replaced by the appropriate type arguments.  
   
@@ -3867,7 +3867,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  You can do one of the following to retrieve a specific method:  
   
--   Call the <xref:System.Type.GetMethod%28System.String%2CSystem.Reflection.BindingFlags%29> method and specify a `bindingAttr` argument that uniquely identifies the method. For example, if the exception is thrown because a type has a static and an instance overload, you can specify a  `bindingAttr` argument  of <xref:System.Reflection.BindingFlags?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags?displayProperty=nameWithType>.  
+-   Call the <xref:System.Type.GetMethod%28System.String%2CSystem.Reflection.BindingFlags%29> method and specify a `bindingAttr` argument that uniquely identifies the method. For example, if the exception is thrown because a type has a static and an instance overload, you can specify a  `bindingAttr` argument  of <xref:System.Reflection.BindingFlags.Instance?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags.Instance?displayProperty=nameWithType>.  
   
 -   Call an overload of the <xref:System.Type.GetMethod%2A> method that includes a `types` parameter which defines the types of the method's parameters.  
   
@@ -3936,19 +3936,19 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
 ## Remarks  
  The following <xref:System.Reflection.BindingFlags> filter flags can be used to define which methods to include in the search:  
   
--   You must specify either <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> or <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> in order to get a return.  
+-   You must specify either <xref:System.Reflection.BindingFlags.Instance?displayProperty=nameWithType> or <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> in order to get a return.  
   
--   Specify <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> to include public methods in the search.  
+-   Specify <xref:System.Reflection.BindingFlags.Public?displayProperty=nameWithType> to include public methods in the search.  
   
--   Specify <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> to include non-public methods (that is, private, internal, and protected methods) in the search.  
+-   Specify <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> to include non-public methods (that is, private, internal, and protected methods) in the search.  
   
--   Specify <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> to include `public` and `protected` static members up the hierarchy; `private` static members in inherited classes are not included.  
+-   Specify <xref:System.Reflection.BindingFlags.FlattenHierarchy?displayProperty=nameWithType> to include `public` and `protected` static members up the hierarchy; `private` static members in inherited classes are not included.  
   
  The following <xref:System.Reflection.BindingFlags> modifier flags can be used to change how the search works:  
   
--   <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> to ignore the case of `name`.  
+-   <xref:System.Reflection.BindingFlags.IgnoreCase?displayProperty=nameWithType> to ignore the case of `name`.  
   
--   <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> to search only the methods declared on the <xref:System.Type>, not methods that were simply inherited.  
+-   <xref:System.Reflection.BindingFlags.DeclaredOnly?displayProperty=nameWithType> to search only the methods declared on the <xref:System.Type>, not methods that were simply inherited.  
   
  See <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> for more information.  
   
@@ -4753,17 +4753,17 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  The following <xref:System.Reflection.BindingFlags> filter flags can be used to define which nested types to include in the search:  
   
--   You must specify either <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> or <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> to get a return.  
+-   You must specify either <xref:System.Reflection.BindingFlags.Public?displayProperty=nameWithType> or <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> to get a return.  
   
--   Specify <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> to include public nested types in the search.  
+-   Specify <xref:System.Reflection.BindingFlags.Public?displayProperty=nameWithType> to include public nested types in the search.  
   
--   Specify <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> to include non-public nested types (that is, private, internal, and protected nested types) in the search.  
+-   Specify <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> to include non-public nested types (that is, private, internal, and protected nested types) in the search.  
   
  This method returns only the nested types of the current type. It does not search the base classes of the current type. To find types that are nested in base classes, you must walk the inheritance hierarchy, calling <xref:System.Type.GetNestedType%2A> at each level.  
   
- <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> and <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> are ignored.  
+ <xref:System.Reflection.BindingFlags.Instance?displayProperty=nameWithType> and <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> are ignored.  
   
- Calling this method with only the <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> flag or only the <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> flag will return the specified nested types and does not require any other flags.  
+ Calling this method with only the <xref:System.Reflection.BindingFlags.Public?displayProperty=nameWithType> flag or only the <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> flag will return the specified nested types and does not require any other flags.  
   
  See <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> for more information.  
   
@@ -4896,17 +4896,17 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  The following <xref:System.Reflection.BindingFlags> filter flags can be used to define which nested types to include in the search:  
   
--   You must specify either <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> or <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> to get a return.  
+-   You must specify either <xref:System.Reflection.BindingFlags.Public?displayProperty=nameWithType> or <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> to get a return.  
   
--   Specify <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> to include public nested types in the search.  
+-   Specify <xref:System.Reflection.BindingFlags.Public?displayProperty=nameWithType> to include public nested types in the search.  
   
--   Specify <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> to include non-public nested types (that is, private, internal, and protected nested types) in the search.  
+-   Specify <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> to include non-public nested types (that is, private, internal, and protected nested types) in the search.  
   
  This method returns only the nested types of the current type. It does not search the base classes of the current type. To find types that are nested in base classes, you must walk the inheritance hierarchy, calling <xref:System.Type.GetNestedTypes%2A> at each level.  
   
- <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> and <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> are ignored.  
+ <xref:System.Reflection.BindingFlags.Instance?displayProperty=nameWithType> and <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> are ignored.  
   
- Calling this method with only the <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> flag or only the <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> flag will return the specified nested types and does not require any other flags.  
+ Calling this method with only the <xref:System.Reflection.BindingFlags.Public?displayProperty=nameWithType> flag or only the <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> flag will return the specified nested types and does not require any other flags.  
   
  See <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> for more information.  
   
@@ -4967,7 +4967,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
 ## Remarks  
  Calling this overload is equivalent to calling the <xref:System.Type.GetProperties%28System.Reflection.BindingFlags%29> overload with a `bindingAttr` argument equal to `BindingFlags.Instance | BindingFlags.Static | BindingFlags.Public` in C# and  `BindingFlags.Instance Or BindingFlags.Static Or BindingFlags.Public` in Visual Basic. It returns all public instance and static properties, both those defined by the type represented by the current <xref:System.Type> object as well as those inherited from its base types.  
   
- A property is considered public to reflection if it has at least one accessor that is public. Otherwise the property is considered private, and you must use <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> (in Visual Basic, combine the values using `Or`) to get it.  
+ A property is considered public to reflection if it has at least one accessor that is public. Otherwise the property is considered private, and you must use <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.Instance?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> (in Visual Basic, combine the values using `Or`) to get it.  
   
  The <xref:System.Type.GetProperties%2A> method does not return properties in a particular order, such as alphabetical or declaration order. Your code must not depend on the order in which properties are returned, because that order varies.  
   
@@ -5045,7 +5045,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A property is considered public to reflection if it has at least one accessor that is public. Otherwise the property is considered private, and you must use <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> (in Visual Basic, combine the values using `Or`) to get it.  
+ A property is considered public to reflection if it has at least one accessor that is public. Otherwise the property is considered private, and you must use <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.Instance?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> (in Visual Basic, combine the values using `Or`) to get it.  
   
  The <xref:System.Type.GetProperties%2A> method does not return properties in a particular order, such as alphabetical or declaration order. Your code must not depend on the order in which properties are returned, because that order varies.  
   
@@ -5065,7 +5065,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  See <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> for more information.  
   
- A property is considered public to reflection if it has at least one accessor that is public. Otherwise the property is considered private, and you must use <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> (in Visual Basic, combine the values using `Or`) to get it.  
+ A property is considered public to reflection if it has at least one accessor that is public. Otherwise the property is considered private, and you must use <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.Instance?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> (in Visual Basic, combine the values using `Or`) to get it.  
   
  If the current T:System.Type represents a constructed generic type, this method returns the <xref:System.Reflection.PropertyInfo> objects with the type parameters replaced by the appropriate type arguments.  
   
@@ -5118,7 +5118,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
 ## Remarks  
  The search for `name` is case-sensitive. The search includes public static and public instance properties.  
   
- A property is considered public to reflection if it has at least one accessor that is public. Otherwise the property is considered private, and you must use <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> (in Visual Basic, combine the values using `Or`) to get it.  
+ A property is considered public to reflection if it has at least one accessor that is public. Otherwise the property is considered private, and you must use <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.Instance?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> (in Visual Basic, combine the values using `Or`) to get it.  
   
  If the current <xref:System.Type> represents a constructed generic type, this method returns the <xref:System.Reflection.PropertyInfo> with the type parameters replaced by the appropriate type arguments.  
   
@@ -5128,7 +5128,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
 -   A type contains two indexed properties that have the same name but different numbers of parameters. To resolve the ambiguity, use an overload of the <xref:System.Type.GetProperty%2A> method that specifies parameter types.  
   
--   A derived type declares a property that hides an inherited property with the same name, by using the `new` modifier (`Shadows` in Visual Basic). To resolve the ambiguity, use the <xref:System.Type.GetProperty%28System.String%2CSystem.Reflection.BindingFlags%29> method overload and add the <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> flag to restrict the search to members that are not inherited.  
+-   A derived type declares a property that hides an inherited property with the same name, by using the `new` modifier (`Shadows` in Visual Basic). To resolve the ambiguity, use the <xref:System.Type.GetProperty%28System.String%2CSystem.Reflection.BindingFlags%29> method overload and add the <xref:System.Reflection.BindingFlags.DeclaredOnly?displayProperty=nameWithType> flag to restrict the search to members that are not inherited.  
   
 ## Indexers and Default Properties  
  [!INCLUDE[vbprvblong](~/includes/vbprvblong-md.md)], [!INCLUDE[csprcslong](~/includes/csprcslong-md.md)], and [!INCLUDE[vcprvclong](~/includes/vcprvclong-md.md)] have simplified syntax for accessing indexed properties and allow one indexed property to be a default for its type. For example, if the variable `myList` refers to an <xref:System.Collections.ArrayList>, the syntax `myList[3]` (`myList(3)` in Visual Basic) retrieves the element with the index of 3. You can overload the property.  
@@ -5193,7 +5193,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A property is considered public to reflection if it has at least one accessor that is public. Otherwise the property is considered private, and you must use <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> (in Visual Basic, combine the values using `Or`) to get it.  
+ A property is considered public to reflection if it has at least one accessor that is public. Otherwise the property is considered private, and you must use <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.Instance?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> (in Visual Basic, combine the values using `Or`) to get it.  
   
  The following <xref:System.Reflection.BindingFlags> filter flags can be used to define which properties to include in the search:  
   
@@ -5221,7 +5221,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
 -   A type contains two indexed properties that have the same name but different numbers of parameters. To resolve the ambiguity, use an overload of the <xref:System.Type.GetProperty%2A> method that specifies parameter types.  
   
--   A derived type declares a property that hides an inherited property with the same name, using the `new` modifier (`Shadows` in Visual Basic). To resolve the ambiguity, include <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> to restrict the search to members that are not inherited.  
+-   A derived type declares a property that hides an inherited property with the same name, using the `new` modifier (`Shadows` in Visual Basic). To resolve the ambiguity, include <xref:System.Reflection.BindingFlags.DeclaredOnly?displayProperty=nameWithType> to restrict the search to members that are not inherited.  
   
 ## Indexers and Default Properties  
  [!INCLUDE[vbprvblong](~/includes/vbprvblong-md.md)], [!INCLUDE[csprcslong](~/includes/csprcslong-md.md)], and [!INCLUDE[vcprvclong](~/includes/vcprvclong-md.md)] have simplified syntax for accessing indexed properties and allow one indexed property to be a default for its type. For example, if the variable `myList` refers to an <xref:System.Collections.ArrayList>, the syntax `myList[3]` (`myList(3)` in Visual Basic) retrieves the element with the index of 3. You can overload the property.  
@@ -5280,7 +5280,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A property is considered public to reflection if it has at least one accessor that is public. Otherwise the property is considered private, and you must use <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> (in Visual Basic, combine the values using `Or`) to get it.  
+ A property is considered public to reflection if it has at least one accessor that is public. Otherwise the property is considered private, and you must use <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.Instance?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> (in Visual Basic, combine the values using `Or`) to get it.  
   
  The search for `name` is case-sensitive. The search includes public static and public instance properties.  
   
@@ -5349,7 +5349,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A property is considered public to reflection if it has at least one accessor that is public. Otherwise the property is considered private, and you must use <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> (in Visual Basic, combine the values using `Or`) to get it.  
+ A property is considered public to reflection if it has at least one accessor that is public. Otherwise the property is considered private, and you must use <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.Instance?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> (in Visual Basic, combine the values using `Or`) to get it.  
   
  The search for `name` is case-sensitive. The search includes public static and public instance properties.  
   
@@ -5427,7 +5427,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A property is considered public to reflection if it has at least one accessor that is public. Otherwise the property is considered private, and you must use <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> (in Visual Basic, combine the values using `Or`) to get it.  
+ A property is considered public to reflection if it has at least one accessor that is public. Otherwise the property is considered private, and you must use <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.Instance?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> (in Visual Basic, combine the values using `Or`) to get it.  
   
  The search for `name` is case-sensitive. The search includes public static and public instance properties.  
   
@@ -5498,7 +5498,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A property is considered public to reflection if it has at least one accessor that is public. Otherwise the property is considered private, and you must use <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> (in Visual Basic, combine the values using `Or`) to get it.  
+ A property is considered public to reflection if it has at least one accessor that is public. Otherwise the property is considered private, and you must use <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.Instance?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> (in Visual Basic, combine the values using `Or`) to get it.  
   
  Although the default binder does not process <xref:System.Reflection.ParameterModifier> (the `modifiers` parameter), you can use the abstract <xref:System.Reflection.Binder?displayProperty=nameWithType> class to write a custom binder that does process `modifiers`. `ParameterModifier` is only used when calling through COM interop, and only parameters that are passed by reference are handled.  
   
@@ -5600,7 +5600,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A property is considered public to reflection if it has at least one accessor that is public. Otherwise the property is considered private, and you must use <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> (in Visual Basic, combine the values using `Or`) to get it.  
+ A property is considered public to reflection if it has at least one accessor that is public. Otherwise the property is considered private, and you must use <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.Instance?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> (in Visual Basic, combine the values using `Or`) to get it.  
   
  Although the default binder does not process <xref:System.Reflection.ParameterModifier> (the `modifiers` parameter), you can use the abstract <xref:System.Reflection.Binder?displayProperty=nameWithType> class to write a custom binder that does process `modifiers`. `ParameterModifier` is only used when calling through COM interop, and only parameters that are passed by reference are handled.  
   
@@ -7823,7 +7823,7 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
   
  Access restrictions are ignored for fully trusted code; that is, private constructors, methods, fields, and properties can be accessed and invoked through <xref:System.Reflection> whenever the code is fully trusted.  
   
- You can use `Type.InvokeMember` to set a field to a particular value by specifying <xref:System.Reflection.BindingFlags?displayProperty=nameWithType>. For example, if you want to set a public instance field named F on class C, and F is a `String`, you can use code such as:  
+ You can use `Type.InvokeMember` to set a field to a particular value by specifying <xref:System.Reflection.BindingFlags.SetField?displayProperty=nameWithType>. For example, if you want to set a public instance field named F on class C, and F is a `String`, you can use code such as:  
   
  `typeof(C).InvokeMember("F", BindingFlags.SetField, null, c, new Object[] {"strings new value"});`  
   
@@ -7840,7 +7840,7 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
  When you invoke an `IDispatch` member, you can specify the DispID instead of the member name, using the string format "[DispID=##]". For example, if the DispID of MyComMethod is 3, you can specify the string "[DispID=3]" instead of "MyComMethod". Invoking a member by DispID is faster than looking up the member by name. In complex aggregation scenarios, the DispID is sometimes the only way to invoke the desired member.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=nameWithType> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
@@ -8016,7 +8016,7 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
   
  Access restrictions are ignored for fully trusted code; that is, private constructors, methods, fields, and properties can be accessed and invoked through Reflection whenever the code is fully trusted.  
   
- You can use `Type.InvokeMember` to set a field to a particular value by specifying <xref:System.Reflection.BindingFlags?displayProperty=nameWithType>. For example, if you want to set a public instance field named F on class C, and F is a `String` you can use code such as:  
+ You can use `Type.InvokeMember` to set a field to a particular value by specifying <xref:System.Reflection.BindingFlags.SetField?displayProperty=nameWithType>. For example, if you want to set a public instance field named F on class C, and F is a `String` you can use code such as:  
   
  `typeof(C).InvokeMember("F", BindingFlags.SetField, null, c, new Object[] {"strings new value"}, null);`  
   
@@ -8033,7 +8033,7 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
  When you invoke an `IDispatch` member you can specify the DispID instead of the member name, using the string format "[DispID=##]". For example, if the DispID of MyComMethod is 3, you can specify the string "[DispID=3]" instead of "MyComMethod". Invoking a member by DispID is faster than looking up the member by name. In complex aggregation scenarios, the DispID is sometimes the only way to invoke the desired member.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=nameWithType> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
@@ -8206,13 +8206,13 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
   
  After the method is selected, it is invoked. Accessibility is checked at that point. The search may control which set of methods are searched based upon the accessibility attribute associated with the method. The <xref:System.Reflection.Binder.BindToMethod%2A?displayProperty=nameWithType> method of the <xref:System.Reflection.Binder> class is responsible for selecting the method to be invoked. The default binder selects the most specific match.  
   
- `InvokeMember` can be used to invoke methods with parameters that have default values. To bind to these methods, Reflection requires <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> to be specified. For a parameter that has a default value, you can either supply a different value, or supply <xref:System.Reflection.Missing.Value?displayProperty=nameWithType> to use the default value.  
+ `InvokeMember` can be used to invoke methods with parameters that have default values. To bind to these methods, Reflection requires <xref:System.Reflection.BindingFlags.OptionalParamBinding?displayProperty=nameWithType> to be specified. For a parameter that has a default value, you can either supply a different value, or supply <xref:System.Reflection.Missing.Value?displayProperty=nameWithType> to use the default value.  
   
  For example, consider a method such as MyMethod(int x, float y = 2.0). To invoke this method with only the first argument as MyMethod(4), pass one of the above binding flags and pass two arguments, namely, 4 for the first argument and `Missing.Value` for the second argument. Unless you use `Missing.Value`, you may not omit optional parameters with the `Invoke` method. If you must do so, use `InvokeMember` instead.  
   
  Access restrictions are ignored for fully trusted code; that is, private constructors, methods, fields, and properties can be accessed and invoked through <xref:System.Reflection> whenever the code is fully trusted.  
   
- You can use `Type.InvokeMember` to set a field to a particular value by specifying <xref:System.Reflection.BindingFlags?displayProperty=nameWithType>. For example, if you want to set a public instance field named F on class C, and F is a `String`, you can use code such as:  
+ You can use `Type.InvokeMember` to set a field to a particular value by specifying <xref:System.Reflection.BindingFlags.SetField?displayProperty=nameWithType>. For example, if you want to set a public instance field named F on class C, and F is a `String`, you can use code such as:  
   
  `typeof(C).InvokeMember("F", BindingFlags.SetField, null, c, new Object[] {"strings new value"}, null, null, null);`  
   
@@ -8227,7 +8227,7 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
  This will change string "z" in the array that F holds to string "b".  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=nameWithType> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
@@ -8661,9 +8661,9 @@ GetType(Array).IsAssignableFrom(type)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is provided as a convenience. Alternatively, you can use the <xref:System.Reflection.TypeAttributes?displayProperty=nameWithType> enumeration value to select the type layout attributes, and then test whether <xref:System.Reflection.TypeAttributes?displayProperty=nameWithType> is set. The <xref:System.Reflection.TypeAttributes?displayProperty=nameWithType>,<xref:System.Reflection.TypeAttributes?displayProperty=nameWithType>, and <xref:System.Reflection.TypeAttributes?displayProperty=nameWithType> enumeration values indicate the way the fields of the type are laid out in memory.  
+ This property is provided as a convenience. Alternatively, you can use the <xref:System.Reflection.TypeAttributes.LayoutMask?displayProperty=nameWithType> enumeration value to select the type layout attributes, and then test whether <xref:System.Reflection.TypeAttributes.AutoLayout?displayProperty=nameWithType> is set. The <xref:System.Reflection.TypeAttributes.AutoLayout?displayProperty=nameWithType>,<xref:System.Reflection.TypeAttributes.ExplicitLayout?displayProperty=nameWithType>, and <xref:System.Reflection.TypeAttributes.SequentialLayout?displayProperty=nameWithType> enumeration values indicate the way the fields of the type are laid out in memory.  
   
- For dynamic types, you can specify <xref:System.Reflection.TypeAttributes?displayProperty=nameWithType> when you create the type. In code, apply the <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribute with the <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=nameWithType> enumeration value to the type, to let the runtime determine the appropriate way to lay out the class.  
+ For dynamic types, you can specify <xref:System.Reflection.TypeAttributes.AutoLayout?displayProperty=nameWithType> when you create the type. In code, apply the <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribute with the <xref:System.Runtime.InteropServices.LayoutKind.Auto?displayProperty=nameWithType> enumeration value to the type, to let the runtime determine the appropriate way to lay out the class.  
   
 > [!NOTE]
 >  You cannot use the <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A> method to determine whether the <xref:System.Runtime.InteropServices.StructLayoutAttribute> has been applied to a type.  
@@ -8798,7 +8798,7 @@ GetType(Array).IsAssignableFrom(type)
 > [!NOTE]
 >  This property returns `true` for `Type` instances that represent the <xref:System.Enum> and <xref:System.ValueType> classes. These two classes are the base types for enumerations and value types, respectively, but they are not enumerations or value types themselves. For more information, see the <xref:System.Type.IsValueType%2A> and <xref:System.Type.IsEnum%2A> properties.  
   
- The <xref:System.Reflection.TypeAttributes?displayProperty=nameWithType> enumeration value  distinguishes a type declaration as class or interface.However, both classes and value types are marked with the <xref:System.Reflection.TypeAttributes?displayProperty=nameWithType> attribute. If you retrieve the value of a type's Attributes property and use the <xref:System.Reflection.TypeAttributes?displayProperty=nameWithType> value to determine whether a type is a class instead of a value type, you must also call the <xref:System.Type.IsValueType%2A> property. The example for the <xref:System.Reflection.TypeAttributes> enumeration contains additional information as well as anexample.  
+ The <xref:System.Reflection.TypeAttributes.ClassSemanticsMask?displayProperty=nameWithType> enumeration value  distinguishes a type declaration as class or interface.However, both classes and value types are marked with the <xref:System.Reflection.TypeAttributes.Class?displayProperty=nameWithType> attribute. If you retrieve the value of a type's Attributes property and use the <xref:System.Reflection.TypeAttributes.ClassSemanticsMask?displayProperty=nameWithType> value to determine whether a type is a class instead of a value type, you must also call the <xref:System.Type.IsValueType%2A> property. The example for the <xref:System.Reflection.TypeAttributes> enumeration contains additional information as well as anexample.  
   
  This property is read-only.  
   
@@ -9185,9 +9185,9 @@ GetType(Array).IsAssignableFrom(type)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is provided as a convenience. Alternatively, you can use the <xref:System.Reflection.TypeAttributes?displayProperty=nameWithType> enumeration value to select the type layout attributes, and then test whether <xref:System.Reflection.TypeAttributes?displayProperty=nameWithType> is set. The <xref:System.Reflection.TypeAttributes?displayProperty=nameWithType>, <xref:System.Reflection.TypeAttributes?displayProperty=nameWithType>, and <xref:System.Reflection.TypeAttributes?displayProperty=nameWithType> enumeration values indicate the way the fields of the type are laid out in memory.  
+ This property is provided as a convenience. Alternatively, you can use the <xref:System.Reflection.TypeAttributes.LayoutMask?displayProperty=nameWithType> enumeration value to select the type layout attributes, and then test whether <xref:System.Reflection.TypeAttributes.ExplicitLayout?displayProperty=nameWithType> is set. The <xref:System.Reflection.TypeAttributes.AutoLayout?displayProperty=nameWithType>, <xref:System.Reflection.TypeAttributes.ExplicitLayout?displayProperty=nameWithType>, and <xref:System.Reflection.TypeAttributes.SequentialLayout?displayProperty=nameWithType> enumeration values indicate the way the fields of the type are laid out in memory.  
   
- For dynamic types, you can specify <xref:System.Reflection.TypeAttributes?displayProperty=nameWithType> when you create the type. In code, apply the <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribute with the <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=nameWithType> enumeration value to the type, to specify that the offsets at which the fields start are specified explicitly.  
+ For dynamic types, you can specify <xref:System.Reflection.TypeAttributes.ExplicitLayout?displayProperty=nameWithType> when you create the type. In code, apply the <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribute with the <xref:System.Runtime.InteropServices.LayoutKind.Explicit?displayProperty=nameWithType> enumeration value to the type, to specify that the offsets at which the fields start are specified explicitly.  
   
 > [!NOTE]
 >  You cannot use the <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A> method to determine whether the <xref:System.Runtime.InteropServices.StructLayoutAttribute> has been applied to a type.  
@@ -9557,9 +9557,9 @@ GetType(Array).IsAssignableFrom(type)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is provided as a convenience. Alternatively, you can use the <xref:System.Reflection.TypeAttributes?displayProperty=nameWithType> enumeration value to select the type layout attributes, and then test whether <xref:System.Reflection.TypeAttributes?displayProperty=nameWithType> is set. The <xref:System.Reflection.TypeAttributes?displayProperty=nameWithType>, <xref:System.Reflection.TypeAttributes?displayProperty=nameWithType>, and <xref:System.Reflection.TypeAttributes?displayProperty=nameWithType> enumeration values indicate the way the fields of the type are laid out in memory.  
+ This property is provided as a convenience. Alternatively, you can use the <xref:System.Reflection.TypeAttributes.LayoutMask?displayProperty=nameWithType> enumeration value to select the type layout attributes, and then test whether <xref:System.Reflection.TypeAttributes.SequentialLayout?displayProperty=nameWithType> is set. The <xref:System.Reflection.TypeAttributes.AutoLayout?displayProperty=nameWithType>, <xref:System.Reflection.TypeAttributes.ExplicitLayout?displayProperty=nameWithType>, and <xref:System.Reflection.TypeAttributes.SequentialLayout?displayProperty=nameWithType> enumeration values indicate the way the fields of the type are laid out in memory.  
   
- For dynamic types, you can specify <xref:System.Reflection.TypeAttributes?displayProperty=nameWithType> when you create the type. In code, apply the <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribute with the <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=nameWithType> enumeration value to the type, to specify that layout is sequential.  
+ For dynamic types, you can specify <xref:System.Reflection.TypeAttributes.SequentialLayout?displayProperty=nameWithType> when you create the type. In code, apply the <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribute with the <xref:System.Runtime.InteropServices.LayoutKind.Sequential?displayProperty=nameWithType> enumeration value to the type, to specify that layout is sequential.  
   
 > [!NOTE]
 >  You cannot use the <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A> method to determine whether the <xref:System.Runtime.InteropServices.StructLayoutAttribute> has been applied to a type.  
@@ -9573,7 +9573,7 @@ GetType(Array).IsAssignableFrom(type)
    
   
 ## Examples  
- The following example creates an instance of a class for which the <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=nameWithType> enumeration value in the <xref:System.Runtime.InteropServices.StructLayoutAttribute> class has been set, checks for the <xref:System.Type.IsLayoutSequential%2A> property, and displays the result.  
+ The following example creates an instance of a class for which the <xref:System.Runtime.InteropServices.LayoutKind.Sequential?displayProperty=nameWithType> enumeration value in the <xref:System.Runtime.InteropServices.StructLayoutAttribute> class has been set, checks for the <xref:System.Type.IsLayoutSequential%2A> property, and displays the result.  
   
  [!code-cpp[Type_IsLayoutSequential#1](~/samples/snippets/cpp/VS_Snippets_CLR/Type_IsLayoutSequential/CPP/type_islayoutsequential.cpp#1)]
  [!code-csharp[Type_IsLayoutSequential#1](~/samples/snippets/csharp/VS_Snippets_CLR/Type_IsLayoutSequential/CS/type_islayoutsequential.cs#1)]
@@ -9748,7 +9748,7 @@ GetType(Array).IsAssignableFrom(type)
 ## Remarks  
  If the current <xref:System.Type> represents a type parameter of a generic type, this property always returns `false`.  
   
- <xref:System.Reflection.TypeAttributes?displayProperty=nameWithType> selects the visibility attributes.  
+ <xref:System.Reflection.TypeAttributes.VisibilityMask?displayProperty=nameWithType> selects the visibility attributes.  
   
    
   
@@ -9793,7 +9793,7 @@ GetType(Array).IsAssignableFrom(type)
 ## Remarks  
  If the current <xref:System.Type> represents a type parameter of a generic type, this property always returns `false`.  
   
- <xref:System.Reflection.TypeAttributes?displayProperty=nameWithType> selects the visibility attributes.  
+ <xref:System.Reflection.TypeAttributes.VisibilityMask?displayProperty=nameWithType> selects the visibility attributes.  
   
 > [!NOTE]
 >  The C# and Visual Basic languages do not include semantics that allow you to define a nested type that is visible only to protected types in its own assembly. `protected internal` visibility in C# and `Protected Friend` visibility in Visual Basic define a nested type that is visible both to protected types and to types in the same assembly.  
@@ -9843,7 +9843,7 @@ GetType(Array).IsAssignableFrom(type)
 ## Remarks  
  If the current <xref:System.Type> represents a type parameter of a generic type, this property always returns `false`.  
   
- <xref:System.Reflection.TypeAttributes?displayProperty=nameWithType> selects the visibility attributes.  
+ <xref:System.Reflection.TypeAttributes.VisibilityMask?displayProperty=nameWithType> selects the visibility attributes.  
   
  A <xref:System.Type> object's family is defined as all objects of the exact same <xref:System.Type> and of its subtypes.  
   
@@ -9892,7 +9892,7 @@ GetType(Array).IsAssignableFrom(type)
   
  If the current <xref:System.Type> represents a type parameter of a generic type, this property always returns `false`.  
   
- <xref:System.Reflection.TypeAttributes?displayProperty=nameWithType> selects the visibility attributes.  
+ <xref:System.Reflection.TypeAttributes.VisibilityMask?displayProperty=nameWithType> selects the visibility attributes.  
   
  A <xref:System.Type> object's family is defined as all objects of the exact same <xref:System.Type> and of its subtypes.  
   
@@ -9939,7 +9939,7 @@ GetType(Array).IsAssignableFrom(type)
 ## Remarks  
  If the current <xref:System.Type> represents a type parameter of a generic type, this property always returns `false`.  
   
- <xref:System.Reflection.TypeAttributes?displayProperty=nameWithType> selects the visibility attributes.  
+ <xref:System.Reflection.TypeAttributes.VisibilityMask?displayProperty=nameWithType> selects the visibility attributes.  
   
    
   
@@ -9984,7 +9984,7 @@ GetType(Array).IsAssignableFrom(type)
 ## Remarks  
  If the current <xref:System.Type> represents a type parameter of a generic type, this property always returns `false`.  
   
- <xref:System.Reflection.TypeAttributes?displayProperty=nameWithType> selects the visibility attributes.  
+ <xref:System.Reflection.TypeAttributes.VisibilityMask?displayProperty=nameWithType> selects the visibility attributes.  
   
    
   
@@ -10261,7 +10261,7 @@ GetType(Array).IsAssignableFrom(type)
   
  If the current <xref:System.Type> represents a type parameter of a generic type, this property returns `true`.  
   
- <xref:System.Reflection.TypeAttributes?displayProperty=nameWithType> selects the visibility attributes.  
+ <xref:System.Reflection.TypeAttributes.VisibilityMask?displayProperty=nameWithType> selects the visibility attributes.  
   
    
   
@@ -11233,11 +11233,11 @@ GetType(Array).IsAssignableFrom(type)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property overrides <xref:System.Reflection.MemberInfo.MemberType%2A?displayProperty=nameWithType>. Therefore, when you examine a set of <xref:System.Reflection.MemberInfo> objects—for example, the array returned by <xref:System.Type.GetMembers%2A>—the <xref:System.Reflection.MemberInfo.MemberType%2A> property returns <xref:System.Reflection.MemberTypes?displayProperty=nameWithType> when a given member is a nested type.  
+ This property overrides <xref:System.Reflection.MemberInfo.MemberType%2A?displayProperty=nameWithType>. Therefore, when you examine a set of <xref:System.Reflection.MemberInfo> objects—for example, the array returned by <xref:System.Type.GetMembers%2A>—the <xref:System.Reflection.MemberInfo.MemberType%2A> property returns <xref:System.Reflection.MemberTypes.NestedType?displayProperty=nameWithType> when a given member is a nested type.  
   
  If the current <xref:System.Type> represents a constructed generic type, this property applies to the generic type definition from which the type was constructed. For example, if the current <xref:System.Type> represents `MyGenericType<int>` (`MyGenericType(Of Integer)` in Visual Basic), the value of this property is determined by `MyGenericType<T>`.  
   
- If the current <xref:System.Type> represents a type parameter in the definition of a generic type or generic method, this property always returns <xref:System.Reflection.MemberTypes?displayProperty=nameWithType>.  
+ If the current <xref:System.Type> represents a type parameter in the definition of a generic type or generic method, this property always returns <xref:System.Reflection.MemberTypes.TypeInfo?displayProperty=nameWithType>.  
   
    
   

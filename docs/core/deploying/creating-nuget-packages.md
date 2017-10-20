@@ -23,6 +23,9 @@ Imagine that you just wrote an awesome new library that you would like to distri
 
 If you have transitive dependencies; that is, a project which depends on another project, you'll need to make sure to restore packages for your entire solution with the `dotnet restore` command before creating a NuGet package.  Failing to do so will result in the `dotnet pack` command to not work properly.
 
+[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
+
+
 After ensuring packages are restored, you can navigate to the directory where a library lives:
 
 `$ cd src/SuperAwesomeLibrary`

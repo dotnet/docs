@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo::GetThreadInfo"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerInfo::GetThreadInfo method [.NET Framework profiling]"
   - "GetThreadInfo method [.NET Framework profiling]"

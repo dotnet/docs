@@ -1,7 +1,7 @@
 ---
 title: "How to: Enable XML IntelliSense in Visual Basic"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "XML IntelliSense [Visual Basic]"
   - "XML [Visual Basic], IntelliSense"
@@ -19,21 +17,6 @@ ms.assetid: af67d0ee-a4a6-4abf-9c07-5a8cfe80d111
 caps.latest.revision: 25
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Enable XML IntelliSense in Visual Basic
 XML IntelliSense in Visual Basic provides word completion for elements that are defined in an XML schema. To enable XML IntelliSense in Visual Basic, you must do the following:  

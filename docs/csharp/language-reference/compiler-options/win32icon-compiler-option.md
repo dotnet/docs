@@ -1,14 +1,12 @@
 ---
 title: "-win32icon (C# Compiler Options)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
 f1_keywords: 
   - "/win32icon"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "win32icon compiler option [C#]"
   - "/win32icon compiler option [C#]"
@@ -17,20 +15,6 @@ ms.assetid: 756d9b6d-ab07-41b7-ba58-5bd88f711138
 caps.latest.revision: 18
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /win32icon (C# Compiler Options)
 The **/win32icon** option inserts an .ico file in the output file, which gives the output file the desired appearance in the File Explorer.  

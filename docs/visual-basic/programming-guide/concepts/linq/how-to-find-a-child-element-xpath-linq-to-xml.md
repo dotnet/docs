@@ -1,7 +1,7 @@
 ---
 title: "How to: Find a Child Element (XPath-LINQ to XML) (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 ms.assetid: adb46c98-a650-42e2-b62d-835920fe8421
 caps.latest.revision: 3
 author: dotnet-bot

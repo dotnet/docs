@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "SetAssemblyProps"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SetAssemblyProps method"
 ms.assetid: a3d7cf29-1414-49e6-8aae-9b3283c4f5f0

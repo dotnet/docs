@@ -980,7 +980,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.ListView.CreateInsertItem%2A> method is a helper method that is called by the <xref:System.Web.UI.WebControls.ListView> control to create an insert item. An insert item is a <xref:System.Web.UI.WebControls.ListViewItem> object whose <xref:System.Web.UI.WebControls.ListViewItem.ItemType%2A> is equal to <xref:System.Web.UI.WebControls.ListViewItemType?displayProperty=nameWithType>.  
+ The <xref:System.Web.UI.WebControls.ListView.CreateInsertItem%2A> method is a helper method that is called by the <xref:System.Web.UI.WebControls.ListView> control to create an insert item. An insert item is a <xref:System.Web.UI.WebControls.ListViewItem> object whose <xref:System.Web.UI.WebControls.ListViewItem.ItemType%2A> is equal to <xref:System.Web.UI.WebControls.ListViewItemType.InsertItem?displayProperty=nameWithType>.  
   
 > [!NOTE]
 >  This method is primarily used by control developers to extend the <xref:System.Web.UI.WebControls.ListView> control.  
@@ -1561,7 +1561,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The empty template is displayed in a <xref:System.Web.UI.WebControls.ListView> control when the data source that is bound to the control does not contain any records and the <xref:System.Web.UI.WebControls.ListView.InsertItemPosition%2A> property is set to <xref:System.Web.UI.WebControls.InsertItemPosition?displayProperty=nameWithType>. The template is rendered instead of the <xref:System.Web.UI.WebControls.ListView.LayoutTemplate%2A> template. If the <xref:System.Web.UI.WebControls.ListView.InsertItemPosition%2A> property is set to a value other than <xref:System.Web.UI.WebControls.InsertItemPosition?displayProperty=nameWithType>, the <xref:System.Web.UI.WebControls.ListView.EmptyDataTemplate%2A> template is not rendered.  
+ The empty template is displayed in a <xref:System.Web.UI.WebControls.ListView> control when the data source that is bound to the control does not contain any records and the <xref:System.Web.UI.WebControls.ListView.InsertItemPosition%2A> property is set to <xref:System.Web.UI.WebControls.InsertItemPosition.None?displayProperty=nameWithType>. The template is rendered instead of the <xref:System.Web.UI.WebControls.ListView.LayoutTemplate%2A> template. If the <xref:System.Web.UI.WebControls.ListView.InsertItemPosition%2A> property is set to a value other than <xref:System.Web.UI.WebControls.InsertItemPosition.None?displayProperty=nameWithType>, the <xref:System.Web.UI.WebControls.ListView.EmptyDataTemplate%2A> template is not rendered.  
   
  You can define a custom user interface (UI) for the empty template by using the <xref:System.Web.UI.WebControls.ListView.EmptyDataTemplate%2A> property. To specify a custom template declaratively for the empty template, add and `EmptyDataTemplate` element inside the <xref:System.Web.UI.WebControls.ListView> control. You can then add the contents of the template to the `EmptyDataTemplate` element.  
   
@@ -2117,7 +2117,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.ListView.InsertItem%2A> property to access the insert item of a <xref:System.Web.UI.WebControls.ListView> control. An insert item is a <xref:System.Web.UI.WebControls.ListViewItem> object whose <xref:System.Web.UI.WebControls.ListViewItem.ItemType%2A> is equal to <xref:System.Web.UI.WebControls.ListViewItemType?displayProperty=nameWithType>. The content of an insert item is defined by the <xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A> property.  
+ Use the <xref:System.Web.UI.WebControls.ListView.InsertItem%2A> property to access the insert item of a <xref:System.Web.UI.WebControls.ListView> control. An insert item is a <xref:System.Web.UI.WebControls.ListViewItem> object whose <xref:System.Web.UI.WebControls.ListViewItem.ItemType%2A> is equal to <xref:System.Web.UI.WebControls.ListViewItemType.InsertItem?displayProperty=nameWithType>. The content of an insert item is defined by the <xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A> property.  
   
    
   
@@ -2165,9 +2165,9 @@
   
 |Row type|Description|  
 |--------------|-----------------|  
-|<xref:System.Web.UI.WebControls.InsertItemPosition?displayProperty=nameWithType>|Renders the <xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A> template as the first item in the <xref:System.Web.UI.WebControls.ListView> control.|  
-|<xref:System.Web.UI.WebControls.InsertItemPosition?displayProperty=nameWithType>|Renders the <xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A> template as the last item in the <xref:System.Web.UI.WebControls.ListView> control.|  
-|<xref:System.Web.UI.WebControls.InsertItemPosition?displayProperty=nameWithType>|Does not render the <xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A> template.|  
+|<xref:System.Web.UI.WebControls.InsertItemPosition.FirstItem?displayProperty=nameWithType>|Renders the <xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A> template as the first item in the <xref:System.Web.UI.WebControls.ListView> control.|  
+|<xref:System.Web.UI.WebControls.InsertItemPosition.LastItem?displayProperty=nameWithType>|Renders the <xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A> template as the last item in the <xref:System.Web.UI.WebControls.ListView> control.|  
+|<xref:System.Web.UI.WebControls.InsertItemPosition.None?displayProperty=nameWithType>|Does not render the <xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A> template.|  
   
    
   
@@ -2313,7 +2313,7 @@
 ## Remarks  
  Use the <xref:System.Web.UI.WebControls.ListView.InsertNewItem%2A> method to programmatically insert an item in the data source. This method is typically used to insert an item from outside the <xref:System.Web.UI.WebControls.ListView> control, such as from a different control on the page.  
   
- To use the <xref:System.Web.UI.WebControls.ListView.InsertNewItem%2A> method, you must define an <xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A> template in the <xref:System.Web.UI.WebControls.ListView> control. You must also set the <xref:System.Web.UI.WebControls.ListView.InsertItemPosition%2A> property to a value different from <xref:System.Web.UI.WebControls.InsertItemPosition?displayProperty=nameWithType>. To specify whether page validation is performed before the insert operation, use the `causesValidation` parameter.  
+ To use the <xref:System.Web.UI.WebControls.ListView.InsertNewItem%2A> method, you must define an <xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A> template in the <xref:System.Web.UI.WebControls.ListView> control. You must also set the <xref:System.Web.UI.WebControls.ListView.InsertItemPosition%2A> property to a value different from <xref:System.Web.UI.WebControls.InsertItemPosition.None?displayProperty=nameWithType>. To specify whether page validation is performed before the insert operation, use the `causesValidation` parameter.  
   
  This method raises the <xref:System.Web.UI.WebControls.ListView.ItemInserted> and <xref:System.Web.UI.WebControls.ListView.ItemInserting> events.  
   

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostMemoryManager::NeedsVirtualAddressSpace"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostMemoryManager::NeedsVirtualAddressSpace method [.NET Framework hosting]"
   - "NeedsVirtualAddressSpace method [.NET Framework hosting]"

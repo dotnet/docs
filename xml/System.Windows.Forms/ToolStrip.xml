@@ -3546,7 +3546,7 @@
 ## Remarks  
  The `directed` and `forward` parameters are used by container-style controls. When the `directed` parameter is set to `true`, the `forward` parameter is evaluated to determine which control to select. When `forward` is set to `true`, the next control in the tab order is selected; when `false`, the previous control in the tab order is selected.  
   
- The <xref:System.Windows.Forms.ToolStrip.Select%2A> method activates the control if the control's <xref:System.Windows.Forms.ControlStyles?displayProperty=nameWithType> style bit is set to `true`, it is contained in another control, and all its parent controls are both visible and enabled.  
+ The <xref:System.Windows.Forms.ToolStrip.Select%2A> method activates the control if the control's <xref:System.Windows.Forms.ControlStyles.Selectable?displayProperty=nameWithType> style bit is set to `true`, it is contained in another control, and all its parent controls are both visible and enabled.  
   
  ]]></format>
         </remarks>

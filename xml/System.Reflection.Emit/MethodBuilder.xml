@@ -47,7 +47,7 @@
   
  Global methods must be static. If a dynamic module contains global methods, the <xref:System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions%2A?displayProperty=nameWithType> method must be called before persisting the dynamic module or the containing dynamic assembly because the common language runtime postpones fixing up the dynamic module until all global functions have been defined.  
   
- A global native method is defined by using the <xref:System.Reflection.Emit.ModuleBuilder.DefinePInvokeMethod%2A?displayProperty=nameWithType> method. Platform invoke (PInvoke) methods must not be declared abstract or virtual. The runtime sets the <xref:System.Reflection.MethodAttributes?displayProperty=nameWithType> attribute for a platform invoke method.  
+ A global native method is defined by using the <xref:System.Reflection.Emit.ModuleBuilder.DefinePInvokeMethod%2A?displayProperty=nameWithType> method. Platform invoke (PInvoke) methods must not be declared abstract or virtual. The runtime sets the <xref:System.Reflection.MethodAttributes.PinvokeImpl?displayProperty=nameWithType> attribute for a platform invoke method.  
   
 ### Methods as members of types  
  A method is defined as a type member by using the <xref:System.Reflection.Emit.TypeBuilder.DefineMethod%2A?displayProperty=nameWithType> method, which returns a <xref:System.Reflection.Emit.MethodBuilder> object.  
@@ -57,19 +57,19 @@
 ## Attributes  
  Members of the <xref:System.Reflection.MethodAttributes> enumeration define the precise character of a dynamic method:  
   
--   Static methods are specified using the <xref:System.Reflection.MethodAttributes?displayProperty=nameWithType> attribute.  
+-   Static methods are specified using the <xref:System.Reflection.MethodAttributes.Static?displayProperty=nameWithType> attribute.  
   
--   Final methods (methods that cannot be overridden) are specified using the <xref:System.Reflection.MethodAttributes?displayProperty=nameWithType> attribute.  
+-   Final methods (methods that cannot be overridden) are specified using the <xref:System.Reflection.MethodAttributes.Final?displayProperty=nameWithType> attribute.  
   
--   Virtual methods are specified using the <xref:System.Reflection.MethodAttributes?displayProperty=nameWithType> attribute.  
+-   Virtual methods are specified using the <xref:System.Reflection.MethodAttributes.Virtual?displayProperty=nameWithType> attribute.  
   
--   Abstract methods are specified using the <xref:System.Reflection.MethodAttributes?displayProperty=nameWithType> attribute.  
+-   Abstract methods are specified using the <xref:System.Reflection.MethodAttributes.Abstract?displayProperty=nameWithType> attribute.  
   
 -   Several attributes determine method visibility. See the description of the <xref:System.Reflection.MethodAttributes> enumeration.  
   
--   Methods that implement overloaded operators must set the <xref:System.Reflection.MethodAttributes?displayProperty=nameWithType> attribute.  
+-   Methods that implement overloaded operators must set the <xref:System.Reflection.MethodAttributes.SpecialName?displayProperty=nameWithType> attribute.  
   
--   Finalizers must set the <xref:System.Reflection.MethodAttributes?displayProperty=nameWithType> attribute.  
+-   Finalizers must set the <xref:System.Reflection.MethodAttributes.SpecialName?displayProperty=nameWithType> attribute.  
   
 ## Known Issues  
   
@@ -1534,7 +1534,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you use the <xref:System.Reflection.Emit.MethodBuilder.SetImplementationFlags%2A> method in combination with the <xref:System.Reflection.Emit.MethodBuilder.SetCustomAttribute%2A> method, be aware of potential interactions. For example, using the <xref:System.Reflection.Emit.MethodBuilder.SetCustomAttribute%2A> method to add the <xref:System.Runtime.InteropServices.DllImportAttribute> attribute also sets the <xref:System.Reflection.MethodImplAttributes?displayProperty=nameWithType> flag. If you subsequently call the <xref:System.Reflection.Emit.MethodBuilder.SetImplementationFlags%2A> method, the <xref:System.Reflection.MethodImplAttributes.PreserveSig> flag is overwritten. There are two ways to avoid this:  
+ When you use the <xref:System.Reflection.Emit.MethodBuilder.SetImplementationFlags%2A> method in combination with the <xref:System.Reflection.Emit.MethodBuilder.SetCustomAttribute%2A> method, be aware of potential interactions. For example, using the <xref:System.Reflection.Emit.MethodBuilder.SetCustomAttribute%2A> method to add the <xref:System.Runtime.InteropServices.DllImportAttribute> attribute also sets the <xref:System.Reflection.MethodImplAttributes.PreserveSig?displayProperty=nameWithType> flag. If you subsequently call the <xref:System.Reflection.Emit.MethodBuilder.SetImplementationFlags%2A> method, the <xref:System.Reflection.MethodImplAttributes.PreserveSig> flag is overwritten. There are two ways to avoid this:  
   
 -   Call the <xref:System.Reflection.Emit.MethodBuilder.SetImplementationFlags%2A> method before you call the <xref:System.Reflection.Emit.MethodBuilder.SetCustomAttribute%2A> method. The <xref:System.Reflection.Emit.MethodBuilder.SetCustomAttribute%2A> method always respects existing method implementation flags.  
   

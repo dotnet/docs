@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataEmit::DefineMemberRef"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "DefineMemberRef method [.NET Framework metadata]"
   - "IMetaDataEmit::DefineMemberRef method [.NET Framework metadata]"

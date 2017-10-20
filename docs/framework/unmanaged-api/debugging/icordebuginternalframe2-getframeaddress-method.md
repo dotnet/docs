@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugInternalFrame2::GetFrameAddress"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetFrameAddress method [.NET Framework debugging]"
   - "ICorDebugInternalFrame2::GetFrameAddress method [.NET Framework debugging]"

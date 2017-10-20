@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo2::GetRVAStaticAddress"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetRVAStaticAddress method [.NET Framework profiling]"
   - "ICorProfilerInfo2::GetRVAStaticAddress method [.NET Framework profiling]"

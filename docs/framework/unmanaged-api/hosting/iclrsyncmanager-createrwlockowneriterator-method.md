@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRSyncManager::CreateRWLockOwnerIterator"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRSyncManager::CreateRWLockOwnerIterator method [.NET Framework hosting]"
   - "CreateRWLockOwnerIterator method [.NET Framework hosting]"

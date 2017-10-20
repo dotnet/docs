@@ -126,9 +126,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If a value is not specified in the configuration file for encryptionpolicy, the <xref:System.Net.Security.EncryptionPolicy> defaults to <xref:System.Net.Security.EncryptionPolicy?displayProperty=nameWithType> for the <xref:System.Net.Security.SslStream> instance that is constructed.  
+ If a value is not specified in the configuration file for encryptionpolicy, the <xref:System.Net.Security.EncryptionPolicy> defaults to <xref:System.Net.Security.EncryptionPolicy.RequireEncryption?displayProperty=nameWithType> for the <xref:System.Net.Security.SslStream> instance that is constructed.  
   
- The use of the Null cipher is required when the encryption policy is set to <xref:System.Net.Security.EncryptionPolicy?displayProperty=nameWithType>.  
+ The use of the Null cipher is required when the encryption policy is set to <xref:System.Net.Security.EncryptionPolicy.NoEncryption?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -179,9 +179,9 @@
 ## Remarks  
  When you specify `true` for the `leaveStreamOpen` parameter, closing the <xref:System.Net.Security.SslStream> has no effect on the `innerStream` stream; you must explicitly close `innerStream` when you no longer need it.  
   
- If a value is not specified in the configuration file for encryptionpolicy, the <xref:System.Net.Security.EncryptionPolicy> defaults to <xref:System.Net.Security.EncryptionPolicy?displayProperty=nameWithType> for the <xref:System.Net.Security.SslStream> instance that is constructed.  
+ If a value is not specified in the configuration file for encryptionpolicy, the <xref:System.Net.Security.EncryptionPolicy> defaults to <xref:System.Net.Security.EncryptionPolicy.RequireEncryption?displayProperty=nameWithType> for the <xref:System.Net.Security.SslStream> instance that is constructed.  
   
- The use of the Null cipher is required when the encryption policy is set to <xref:System.Net.Security.EncryptionPolicy?displayProperty=nameWithType>.  
+ The use of the Null cipher is required when the encryption policy is set to <xref:System.Net.Security.EncryptionPolicy.NoEncryption?displayProperty=nameWithType>.  
   
    
   
@@ -246,9 +246,9 @@
   
  The security protocol and cryptographic algorithms are already selected when the `userCertificateValidationCallback` delegate's method is invoked. You can use the method to determine whether the selected cryptographic algorithms and strengths are sufficient for your application. If not, the method should return `false` to prevent the <xref:System.Net.Security.SslStream> from being created.  
   
- If a value is not specified in the configuration file for encryptionpolicy, the <xref:System.Net.Security.EncryptionPolicy> defaults to <xref:System.Net.Security.EncryptionPolicy?displayProperty=nameWithType> for the <xref:System.Net.Security.SslStream> instance that is constructed.  
+ If a value is not specified in the configuration file for encryptionpolicy, the <xref:System.Net.Security.EncryptionPolicy> defaults to <xref:System.Net.Security.EncryptionPolicy.RequireEncryption?displayProperty=nameWithType> for the <xref:System.Net.Security.SslStream> instance that is constructed.  
   
- The use of the Null cipher is required when the encryption policy is set to <xref:System.Net.Security.EncryptionPolicy?displayProperty=nameWithType>.  
+ The use of the Null cipher is required when the encryption policy is set to <xref:System.Net.Security.EncryptionPolicy.NoEncryption?displayProperty=nameWithType>.  
   
 > [!NOTE]
 >  The Framework caches SSL sessions as they are created and attempts to reuse a cached session for a new request, if possible. When attempting to reuse an SSL session, the Framework uses the first element of <xref:System.Net.HttpWebRequest.ClientCertificates%2A> (if there is one), or tries to reuse an anonymous sessions if <xref:System.Net.HttpWebRequest.ClientCertificates%2A> is empty.  
@@ -323,9 +323,9 @@
   
  The `userCertificateSelectionCallback` delegate is useful when your application has multiple certificates and must dynamically choose a certificate. Certificates in the "MY" store are passed to the method invoked by the delegate.  
   
- If a value is not specified in the configuration file for encryptionpolicy, the <xref:System.Net.Security.EncryptionPolicy> defaults to <xref:System.Net.Security.EncryptionPolicy?displayProperty=nameWithType> for the <xref:System.Net.Security.SslStream> instance that is constructed.  
+ If a value is not specified in the configuration file for encryptionpolicy, the <xref:System.Net.Security.EncryptionPolicy> defaults to <xref:System.Net.Security.EncryptionPolicy.RequireEncryption?displayProperty=nameWithType> for the <xref:System.Net.Security.SslStream> instance that is constructed.  
   
- The use of the Null cipher is required when the encryption policy is set to <xref:System.Net.Security.EncryptionPolicy?displayProperty=nameWithType>.  
+ The use of the Null cipher is required when the encryption policy is set to <xref:System.Net.Security.EncryptionPolicy.NoEncryption?displayProperty=nameWithType>.  
   
 > [!NOTE]
 >  The Framework caches SSL sessions as they are created and attempts to reuse a cached session for a new request, if possible. When attempting to reuse an SSL session, the Framework uses the first element of P:System.Net.HttpWebRequest.ClientCertificates (if there is one), or tries to reuse an anonymous sessions if P:System.Net.HttpWebRequest.ClientCertificates is empty.  
@@ -396,7 +396,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The use of the Null cipher is required when the `encryptionPolicy` parameter is set to <xref:System.Net.Security.EncryptionPolicy?displayProperty=nameWithType>.  
+ The use of the Null cipher is required when the `encryptionPolicy` parameter is set to <xref:System.Net.Security.EncryptionPolicy.NoEncryption?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

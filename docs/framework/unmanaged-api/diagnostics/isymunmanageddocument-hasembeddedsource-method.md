@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedDocument::HasEmbeddedSource"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "HasEmbeddedSource method [.NET Framework debugging]"
   - "ISymUnmanagedDocument::HasEmbeddedSource method [.NET Framework debugging]"

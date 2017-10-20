@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugChain::GetCallee method"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugChain::GetCallee method [.NET Framework debugging]"
   - "GetCallee method, ICorDebugChain interface [.NET Framework debugging]"

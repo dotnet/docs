@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugProcess::WriteMemory"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugProcess::WriteMemory method [.NET Framework debugging]"
   - "WriteMemory method [.NET Framework debugging]"

@@ -101,7 +101,7 @@ On Linux, there are two installer package choices:
 
 ### Scripting Installs with the .NET Core installer script
 
-The `dotnet-install` scripts are used to perform a non-admin install of the CLI toolchain and the shared runtime. You can download the scripts from the [CLI GitHub repo](https://github.com/dotnet/cli/tree/rel/1.0.0/scripts/obtain).
+The `dotnet-install` scripts are used to perform a non-admin install of the CLI toolchain and the shared runtime. You can download the script from: https://dot.net/v1/dotnet-install.sh
 
 The installer bash script is used in automation scenarios and non-admin installations. This script also reads PowerShell switches, so they can be used with the script on Linux/OS X systems.
 

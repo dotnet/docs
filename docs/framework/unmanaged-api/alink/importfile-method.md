@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ImportFile"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ImportFile method"
 ms.assetid: bcbe321f-b83a-4e9a-9f10-8d913e244dc9

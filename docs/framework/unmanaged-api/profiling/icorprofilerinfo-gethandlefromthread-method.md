@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo::GetHandleFromThread"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetHandleFromThread method [.NET Framework profiling]"
   - "ICorProfilerInfo::GetHandleFromThread method [.NET Framework profiling]"

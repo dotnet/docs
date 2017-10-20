@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataEmit::DefineImportType"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "DefineImportType method [.NET Framework metadata]"
   - "IMetaDataEmit::DefineImportType method [.NET Framework metadata]"

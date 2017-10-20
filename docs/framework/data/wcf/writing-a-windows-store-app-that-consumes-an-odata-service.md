@@ -9,6 +9,8 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+- "csharp"
 ms.assetid: 9917a0e9-ec93-49e5-a366-fd39b892eb8b
 caps.latest.revision: 4
 author: "Erikre"
@@ -71,7 +73,7 @@ Windows 8 introduces a new type of application: the Windows Store app. Windows S
   
      The DefaultViewModel is then bound to the GridView. This is referenced in the GroupedItemsPage.xaml file when configuring the data binding.  
   
-    ```cpp  
+    ```xaml
     <CollectionViewSource  
                 x:Name="groupedItemsViewSource"  
                 Source="{Binding Groups}"  

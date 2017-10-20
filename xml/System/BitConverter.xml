@@ -1397,7 +1397,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `length` elements from array position `startIndex` are converted. If `length` equals zero, the method returns <xref:System.String?displayProperty=nameWithType>.  
+ The `length` elements from array position `startIndex` are converted. If `length` equals zero, the method returns <xref:System.String.Empty?displayProperty=nameWithType>.  
   
  The order of hexadecimal strings returned by the <xref:System.BitConverter.ToString%2A> method depends on whether the computer architecture is little-endian or big-endian.  
   

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRTask::Abort"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRTask::Abort method [.NET Framework hosting]"
   - "Abort method, ICLRTask interface [.NET Framework hosting]"

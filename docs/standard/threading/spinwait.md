@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+- "csharp"
+- "vb"
 helpviewer_keywords: 
   - "synchronization primitives, SpinWait"
 ms.assetid: 36012f42-34e5-4f86-adf4-973f433ed6c6

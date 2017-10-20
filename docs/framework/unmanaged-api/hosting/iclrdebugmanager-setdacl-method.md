@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRDebugManager::SetDacl"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SetDacl method [.NET Framework hosting]"
   - "ICLRDebugManager::SetDacl method [.NET Framework hosting]"

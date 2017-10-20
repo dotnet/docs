@@ -1,19 +1,15 @@
 ---
 title: "/baseaddress"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "/baseaddress"
   - "baseaddress"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "-baseaddress compiler option [Visual Basic]"
   - "/baseaddress compiler option [Visual Basic]"
@@ -22,21 +18,6 @@ ms.assetid: c982bcf2-46e5-47a2-bc8f-a5cc32b7dc47
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /baseaddress
 Specifies a default base address when creating a DLL.  

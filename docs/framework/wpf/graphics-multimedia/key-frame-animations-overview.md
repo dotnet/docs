@@ -221,7 +221,7 @@ A key spline with control points (0.25, 0.5) and (0.75, 1.0)
  [!code-xaml[keyframes_ovw_snippet#TimeSpanKeyTimeExample](../../../../samples/snippets/csharp/VS_Snippets_Wpf/keyframes_ovw_snippet/CS/KeyTimesExample.xaml#timespankeytimeexample)]  
   
 ### Percentage Values  
- A percentage value specifies that the key frame ends at some percentage of the animation's <xref:System.Windows.Media.Animation.Timeline.Duration%2A>.          In [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], you specify the percentage as a number followed by the `%` symbol. In code, you use the <xref:System.Windows.Media.Animation.KeyTime.FromPercent%2A> method and pass it a <xref:System.Double> indicating the percentage. The value must be greater than or equal to 0 and less than or equal to 100 percent. The following example shows an animation with a duration of 10 seconds and four key frames whose key times are specified as percentages.  
+ A percentage value specifies that the key frame ends at some percentage of the animation's <xref:System.Windows.Media.Animation.Timeline.Duration%2A>. In [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], you specify the percentage as a number followed by the `%` symbol. In code, you use the <xref:System.Windows.Media.Animation.KeyTime.FromPercent%2A> method and pass it a <xref:System.Double> indicating the percentage. The value must be greater than or equal to 0 and less than or equal to 100 percent. The following example shows an animation with a duration of 10 seconds and four key frames whose key times are specified as percentages.  
   
 -   The first key frame animates from the base value to 100 over the first 3 seconds, ending at time = 0:0:3.  
   

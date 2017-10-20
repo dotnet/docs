@@ -5,6 +5,9 @@ ms.prod: ".net-framework"
 ms.technology: 
   - "dotnet-ado"
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 ms.assetid: c119657a-9ce6-4940-91e4-ac1d5f0d9584
 caps.latest.revision: 7
 author: "JennieHubbard"

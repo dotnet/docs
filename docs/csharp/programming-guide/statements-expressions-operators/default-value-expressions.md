@@ -1,7 +1,7 @@
 ---
 title: "Default value expressions (C# Programming Guide)"
 description: "Default value expressions produce the default value for any reference type or value type"
-ms.date: "2017-08-23"
+ms.date: 08/23/2017
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"

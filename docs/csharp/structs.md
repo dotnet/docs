@@ -27,7 +27,7 @@ But you declare and assign values to them as if they were simple non-aggregate t
   
 [!code-csharp[Assign Values](../../samples/snippets/csharp/concepts/structs/assign-value.cs)] 
   
-Value types are *sealed*, which means, for example, that you cannot derive a type from @System.Int32, and you cannot define a struct to inherit from any user-defined class or struct because a struct can only inherit from @System.ValueType. However, a struct can implement one or more interfaces. You can cast a struct type to an interface type; this causes a *boxing* operation to wrap the struct inside a reference type object on the managed heap. Boxing operations occur when you pass a value type to a method that takes an @System.Object as an input parameter. For more information, see [Boxing and Unboxing](./programming-guide/types/boxing-and-unboxing.md ).  
+Value types are *sealed*, which means, for example, that you cannot derive a type from <xref:System.Int32>, and you cannot define a struct to inherit from any user-defined class or struct because a struct can only inherit from <xref:System.ValueType>. However, a struct can implement one or more interfaces. You can cast a struct type to an interface type; this causes a *boxing* operation to wrap the struct inside a reference type object on the managed heap. Boxing operations occur when you pass a value type to a method that takes an <xref:System.Object> as an input parameter. For more information, see [Boxing and Unboxing](./programming-guide/types/boxing-and-unboxing.md ).  
   
 You use the [struct](./language-reference/keywords/struct.md) keyword to create your own custom value types. Typically, a struct is used as a container for a small set of related variables, as shown in the following example:  
   
@@ -49,14 +49,14 @@ Structs share most of the same syntax as classes, although structs are more limi
   
 -   Structs can declare constructors that have parameters.  
   
--   A struct cannot inherit from another struct or class, and it cannot be the base of a class. All structs inherit directly from @System.ValueType, which inherits from @System.Object.  
+-   A struct cannot inherit from another struct or class, and it cannot be the base of a class. All structs inherit directly from <xref:System.ValueType>, which inherits from <xref:System.Object>.  
   
 -   A struct can implement interfaces.
 
 ## Literal values  
 In C#, literal values receive a type from the compiler. You can specify how a numeric literal should be typed by appending a letter to the end of the number. For example, to specify that the value 4.56 should be treated as a float, append an "f" or "F" after the number: `4.56f`. If no letter is appended, the compiler will infer the `double` type for the literal. For more information about which types can be specified with letter suffixes, see the reference pages for individual types in [Value Types](./language-reference/keywords/value-types.md).  
   
-Because literals are typed, and all types derive ultimately from @System.Object, you can write and compile code such as the following:  
+Because literals are typed, and all types derive ultimately from <xref:System.Object>, you can write and compile code such as the following:  
   
 [!code-csharp[Literal Values](../../samples/snippets/csharp/concepts/structs/literals.cs)]
 
@@ -65,7 +65,7 @@ The last two examples demonstrate language features introduced in C# 7.0. The fi
 The second demonstrates *binary literals*, which allow you to specify bit patterns directly instead of using hexadecimal notation.
 
 ## Nullable types  
-Ordinary value types cannot have a value of [null](./language-reference/keywords/null.md). However, you can create nullable value types by affixing a **?** after the type. For example, **int?** is an **int** type that can also have the value [null](./language-reference/keywords/null.md). In the CTS, nullable types are instances of the generic struct type @System.Nullable%601. Nullable types are especially useful when you are passing data to and from databases in which numeric values might be null. For more information, see [Nullable Types (C# Programming Guide)](./programming-guide/nullable-types/index.md).
+Ordinary value types cannot have a value of [null](./language-reference/keywords/null.md). However, you can create nullable value types by affixing a **?** after the type. For example, **int?** is an **int** type that can also have the value [null](./language-reference/keywords/null.md). In the CTS, nullable types are instances of the generic struct type <xref:System.Nullable%601>. Nullable types are especially useful when you are passing data to and from databases in which numeric values might be null. For more information, see [Nullable Types (C# Programming Guide)](./programming-guide/nullable-types/index.md).
 
 ## See also
 [Classes](classes.md)

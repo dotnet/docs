@@ -7,5 +7,3 @@
 ## [How to: Search Strings Using Regular Expressions](how-to-search-strings-using-regular-expressions.md)
 ## [How to: Determine Whether a String Represents a Numeric Value](how-to-determine-whether-a-string-represents-a-numeric-value.md)
 ## [How to: Convert a String to a DateTime](how-to-convert-a-string-to-a-datetime.md)
-## [How to: Convert Between Legacy Encodings and Unicode](how-to-convert-between-legacy-encodings-and-unicode.md)
-## [How to: Convert RTF to Plain Text](how-to-convert-rtf-to-plain-text.md)

@@ -46,8 +46,6 @@
  This class can be used to enable or disable scaffolding of data columns in a data model by applying this attribute to the appropriate data field object in the class that represents the table.  
   
    
-        
-        <!-- TODO: Update or Replace the example -->
 ## Examples  
  The following code example exposes the ProductID column of the Products table in the AdventureWorksLT data base by applying the scaffold property to the ProductID object in the Products partial class and setting it to `true.` It hides the ThumbnailPhotoFileName column by applying the scaffold property to the ThumbnailPhotoFileName object and setting it to `false`.  
 

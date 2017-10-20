@@ -1,5 +1,5 @@
 ---
-title: "Dynamic Language Runtime Overview"
+title: "Dynamic Language Runtime Overview | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -46,7 +46,11 @@ The *dynamic language runtime* (DLR) is a runtime environment that adds a set of
  By using the DLR, you could use the following code instead for the same operation.  
   
  `scriptobj.Count += 1;`  
- 
+  
+ Like the CLR, the DLR is a part of the .NET Framework and is provided with the .NET Framework and Visual Studio installation packages. The open-source version of the DLR is also available for download on the [CodePlex](http://go.microsoft.com/fwlink/?LinkId=141028) Web site.  
+  
+> [!NOTE]
+>  The open-source version of the DLR has all the features of the DLR that is included in Visual Studio and the .NET Framework. It also provides additional support for language implementers. For more information, see the documentation on the [CodePlex](http://go.microsoft.com/fwlink/?LinkId=141028) Web site.  
   
  Examples of languages developed by using the DLR include the following:  
   
@@ -87,6 +91,9 @@ DLR architecture
 -   Dynamic object interoperability. The DLR provides a set of classes and interfaces that represent dynamic objects and operations and can be used by language implementers and authors of dynamic libraries. These classes and interfaces include <xref:System.Dynamic.IDynamicMetaObjectProvider>, <xref:System.Dynamic.DynamicMetaObject>, <xref:System.Dynamic.DynamicObject>, and <xref:System.Dynamic.ExpandoObject>.  
   
  The DLR uses binders in call sites to communicate not only with the .NET Framework, but with other infrastructures and services, including Silverlight and COM. Binders encapsulate a language's semantics and specify how to perform operations in a call site by using expression trees. This enables dynamic and statically typed languages that use the DLR to share libraries and gain access to all the technologies that the DLR supports.  
+  
+## DLR Documentation  
+ For more information about how to use the open source version of the DLR to add dynamic behavior to a language, or about how to enable the use of a dynamic language with the .NET Framework, see the documentation on the [CodePlex](http://go.microsoft.com/fwlink/?LinkId=141028) Web site.  
   
 ## See Also  
  <xref:System.Dynamic.ExpandoObject>   

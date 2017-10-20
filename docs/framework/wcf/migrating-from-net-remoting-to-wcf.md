@@ -39,7 +39,7 @@ This article describes how to migrate an application that uses .NET Remoting to 
 #### Creating a Server in .NET Remoting  
  .NET Remoting server types must derive from MarshalByRefObject and define methods the client can call, like the following:  
   
-```  
+```csharp
 public class RemotingServer : MarshalByRefObject  
 {  
     public Customer GetCustomer(int customerId) { … }  
@@ -50,7 +50,7 @@ public class RemotingServer : MarshalByRefObject
   
  Once the server type has been defined, it can be made available to clients, like in the following example:  
   
-```  
+```csharp
 TcpChannel channel = new TcpChannel(8080);  
 ChannelServices.RegisterChannel(channel, ensureSecurity : true);  
 RemotingConfiguration.RegisterWellKnownServiceType(  
@@ -66,7 +66,7 @@ Console.ReadLine();
 #### Creating a Server in WCF  
  The equivalent step in WCF involves creating two types -- the public "service contract" and the concrete implementation. The first is declared as an interface marked with [ServiceContract]. Methods available to clients are marked with [OperationContract]:  
   
-```  
+```csharp
 [ServiceContract]  
 public interface IWCFServer  
 {  
@@ -77,7 +77,7 @@ public interface IWCFServer
   
  The server’s implementation is defined in a separate concrete class, like in the following example:  
   
-```  
+```csharp
 public class WCFServer : IWCFServer  
 {  
     public Customer GetCustomer(int customerId) { … }  
@@ -86,7 +86,7 @@ public class WCFServer : IWCFServer
   
  Once these types have been defined, the WCF server can be made available to clients, like in the following example:  
   
-```  
+```csharp
 NetTcpBinding binding = new NetTcpBinding();  
 Uri baseAddress = new Uri("net.tcp://localhost:8000/wcfserver");  
   
@@ -119,7 +119,7 @@ using (ServiceHost serviceHost = new ServiceHost(typeof(WCFServer), baseAddress)
 #### Creating a Client in .NET Remoting  
  Once a .NET Remoting server object has been made available, it can be consumed by clients, like in the following example:  
   
-```  
+```csharp
 TcpChannel channel = new TcpChannel();  
 ChannelServices.RegisterChannel(channel, ensureSecurity : true);  
 RemotingServer server = (RemotingServer)Activator.GetObject(  
@@ -136,7 +136,7 @@ Console.WriteLine(String.Format("Customer {0} {1} received.",
 #### Creating a Client in WCF  
  The equivalent step in WCF involves using a channel factory to create the proxy explicitly. Like Remoting, the proxy object can be used to invoke operations on the server, like in the following example:  
   
-```  
+```csharp
 NetTcpBinding binding = new NetTcpBinding();  
 String url = "net.tcp://localhost:8000/wcfserver";  
 EndpointAddress address = new EndpointAddress(url);  
@@ -173,7 +173,7 @@ Console.WriteLine(String.Format("  Customer {0} {1} received.",
   
  By-value types in Remoting are marked with the [Serializable] attribute or implement ISerializable, like in the following example:  
   
-```  
+```csharp
 [Serializable]  
 public class RemotingCustomer  
 {  
@@ -185,7 +185,7 @@ public class RemotingCustomer
   
  By-reference types derive from the MarshalByRefObject class, like in the following example:  
   
-```  
+```csharp
 public class RemotingCustomerReference : MarshalByRefObject  
 {  
     public string FirstName { get; set; }  
@@ -199,7 +199,7 @@ public class RemotingCustomerReference : MarshalByRefObject
 #### Serialization in WCF  
  WCF supports only by-value serialization. The most common way to define a type to exchange between client and server is like in the following example:  
   
-```  
+```csharp
 [DataContract]  
 public class WCFCustomer  
 {  
@@ -232,7 +232,7 @@ public class WCFCustomer
   
  To do this, first create a [DataContract] type to carry the fault information.  
   
-```  
+```csharp
 [DataContract]  
 public class CustomerServiceFault  
 {  
@@ -246,7 +246,7 @@ public class CustomerServiceFault
   
  Specify the fault contract to use for each service operation.  
   
-```  
+```csharp
 [ServiceContract]  
 public interface IWCFServer  
 {  
@@ -258,7 +258,7 @@ public interface IWCFServer
   
  The server reports error conditions by throwing a FaultException.  
   
-```  
+```csharp
 throw new FaultException<CustomerServiceFault>(  
     new CustomerServiceFault() {   
         CustomerId = customerId,   
@@ -268,7 +268,7 @@ throw new FaultException<CustomerServiceFault>(
   
  And whenever the client makes a request to the server, it can catch faults as normal exceptions.  
   
-```  
+```csharp
 try  
 {  
     Customer customer = server.GetCustomer(-1);  
@@ -335,7 +335,7 @@ catch (FaultException<CustomerServiceFault> fault)
   
  When reading through these scenarios, assume our baseline interfaces for .NET Remoting look like the following example. The .NET Remoting implementation is not important here because we want to illustrate only how to use WCF to implement equivalent functionality.  
   
-```  
+```csharp
 public class RemotingServer : MarshalByRefObject  
 {  
     // Demonstrates server returning object by-value  
@@ -354,59 +354,59 @@ public class RemotingServer : MarshalByRefObject
   
 1.  Start by defining a public interface for the WCF service and mark it with the [ServiceContract] attribute. We use [OperationContract] to identify the server-side methods our client will call.  
   
-    ```  
-    [ServiceContract]  
-    public interface ICustomerService  
-    {  
-        [OperationContract]  
-        Customer GetCustomer(int customerId);  
+   ```csharp
+   [ServiceContract]  
+   public interface ICustomerService  
+   {  
+       [OperationContract]  
+       Customer GetCustomer(int customerId);  
   
-        [OperationContract]  
-        bool UpdateCustomer(Customer customer);  
-    }  
-    ```  
+       [OperationContract]  
+       bool UpdateCustomer(Customer customer);  
+   }  
+   ```  
   
 2.  The next step is to create the data contract for this service. We do this by creating classes (not interfaces) marked with the [DataContract] attribute. The individual properties or fields we want visible to both client and server are marked with [DataMember]. If we want derived types to be allowed, we must use the [KnownType] attribute to identify them. The only types WCF will allow to be serialized or deserialized for this service are those in the service interface and these "known types". Attempting to exchange any other type not in this list will be rejected.  
   
-    ```  
-    [DataContract]  
-    [KnownType(typeof(PremiumCustomer))]  
-    public class Customer  
-    {  
-        [DataMember]  
-        public string FirstName { get; set; }  
+   ```csharp
+   [DataContract]  
+   [KnownType(typeof(PremiumCustomer))]  
+   public class Customer  
+   {  
+       [DataMember]  
+       public string FirstName { get; set; }  
   
-        [DataMember]  
-        public string LastName { get; set; }  
+       [DataMember]  
+       public string LastName { get; set; }  
   
-        [DataMember]  
-        public int CustomerId { get; set; }  
-    }  
+       [DataMember]  
+       public int CustomerId { get; set; }  
+   }  
   
-    [DataContract]  
-    public class PremiumCustomer : Customer   
-    {  
-        [DataMember]  
-        public int AccountId { get; set; }  
-    }  
-    ```  
+   [DataContract]  
+   public class PremiumCustomer : Customer   
+   {  
+       [DataMember]  
+       public int AccountId { get; set; }  
+   }  
+   ```  
   
 3.  Next, we provide the implementation for the service interface.  
   
-    ```  
-    public class CustomerService : ICustomerService  
-    {  
-        public Customer GetCustomer(int customerId)  
-        {  
-            // read from database  
-        }  
+   ```csharp  
+   public class CustomerService : ICustomerService  
+   {  
+       public Customer GetCustomer(int customerId)  
+       {  
+           // read from database  
+       }  
   
-        public bool UpdateCustomer(Customer customer)  
-        {  
-            // write to database  
-        }  
-    }  
-    ```  
+       public bool UpdateCustomer(Customer customer)  
+       {  
+           // write to database  
+       }  
+   }  
+   ```  
   
 4.  To run the WCF service, we need to declare an endpoint that exposes that service interface at a specific URL using a specific WCF binding. This is typically done by adding the following sections to the server project’s web.config file.  
   
@@ -426,10 +426,10 @@ public class RemotingServer : MarshalByRefObject
   
 5.  The WCF service can then be started with the following code:  
   
-    ```  
-    ServiceHost customerServiceHost = new ServiceHost(typeof(CustomerService));  
-        customerServiceHost.Open();  
-    ```  
+   ```csharp
+   ServiceHost customerServiceHost = new ServiceHost(typeof(CustomerService));  
+       customerServiceHost.Open();  
+   ```  
   
      When this ServiceHost is started, it uses the web.config file to establish the proper contract, binding and endpoint. For more information about configuration files, see [Configuring Services Using Configuration Files](./configuring-services-using-configuration-files.md). This style of starting the server is known as self-hosting. To learn more about other choices for hosting WCF services, see [Hosting Services](./hosting-services.md).  
   
@@ -452,14 +452,14 @@ public class RemotingServer : MarshalByRefObject
   
 7.  Now we can call the WCF service from the client. We do this by creating a channel factory for that service, asking it for a channel, and directly calling the method we want on that channel. We can do this because the channel implements the service’s interface and handles the underlying request/reply logic for us. The return value from that method call is the deserialized copy of the server’s response.  
   
-    ```  
-    ChannelFactory<ICustomerService> factory =  
-        new ChannelFactory<ICustomerService>("customerservice");  
-    ICustomerService service = factory.CreateChannel();  
-    Customer customer = service.GetCustomer(42);  
-    Console.WriteLine(String.Format("  Customer {0} {1} received.",  
-            customer.FirstName, customer.LastName));  
-    ```  
+   ```csharp
+   ChannelFactory<ICustomerService> factory =  
+       new ChannelFactory<ICustomerService>("customerservice");  
+   ICustomerService service = factory.CreateChannel();  
+   Customer customer = service.GetCustomer(42);  
+   Console.WriteLine(String.Format("  Customer {0} {1} received.",  
+           customer.FirstName, customer.LastName));  
+   ```  
   
  Objects returned by WCF from the server to the client are always by value. The objects are deserialized copies of the data sent by the server. The client can call methods on these local copies without any danger of invoking server code through callbacks.  
   
@@ -468,72 +468,72 @@ public class RemotingServer : MarshalByRefObject
   
 1.  First, we need to define a WCF service contract that corresponds to the sessionful object itself.  
   
-    ```  
-    [ServiceContract(SessionMode = SessionMode.Allowed)]  
-        public interface ISessionBoundObject  
-        {  
-            [OperationContract]  
-            string GetCurrentValue();  
+   ```csharp
+   [ServiceContract(SessionMode = SessionMode.Allowed)]  
+       public interface ISessionBoundObject  
+       {  
+           [OperationContract]  
+           string GetCurrentValue();  
   
-            [OperationContract]  
-            void SetCurrentValue(string value);  
-        }  
-    ```  
+           [OperationContract]  
+           void SetCurrentValue(string value);  
+       }  
+   ```  
   
     > [!TIP]
     >  Notice that the sessionful object is marked with [ServiceContract], making it a normal WCF service interface. Setting the SessionMode property indicates it will be a sessionful service. In WCF, a session is a way of correlating multiple messages sent between two endpoints. This means that once a client obtains a connection to this service, a session will be established between the client and the server. The client will use a single unique instance of the server-side object for all its interactions within this single session.  
   
 2.  Next, we need to provide the implementation of this service interface. By denoting it with [ServiceBehavior] and setting the InstanceContextMode, we tell WCF we want to use a unique instance of this type for an each session.  
   
-    ```  
-    [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerSession)]  
-        public class MySessionBoundObject : ISessionBoundObject  
-        {  
-            private string _value;  
+   ```csharp
+   [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerSession)]  
+       public class MySessionBoundObject : ISessionBoundObject  
+       {  
+           private string _value;  
   
-            public string GetCurrentValue()  
-            {  
-                return _value;  
-            }  
+           public string GetCurrentValue()  
+           {  
+               return _value;  
+           }  
   
-            public void SetCurrentValue(string val)  
-            {  
-                _value = val;  
-            }  
+           public void SetCurrentValue(string val)  
+           {  
+               _value = val;  
+           }  
   
-        }  
-    ```  
+       }  
+   ```  
   
 3.  Now we need a way to obtain an instance of this sessionful object. We do this by creating another WCF service interface that returns an EndpointAddress10 object. This is a serializable form of an endpoint that the client can use to create the sessionful object.  
   
-    ```  
-    [ServiceContract]  
-        public interface ISessionBoundFactory  
-        {  
-            [OperationContract]  
-            EndpointAddress10 GetInstanceAddress();  
-        }  
-    ```  
+   ```csharp
+   [ServiceContract]  
+       public interface ISessionBoundFactory  
+       {  
+           [OperationContract]  
+           EndpointAddress10 GetInstanceAddress();  
+       }  
+   ```  
   
      And we implement this WCF service:  
   
-    ```  
-    public class SessionBoundFactory : ISessionBoundFactory  
-        {  
-            public static ChannelFactory<ISessionBoundObject> _factory =   
-                new ChannelFactory<ISessionBoundObject>("sessionbound");  
+   ```csharp
+   public class SessionBoundFactory : ISessionBoundFactory  
+       {  
+           public static ChannelFactory<ISessionBoundObject> _factory =   
+               new ChannelFactory<ISessionBoundObject>("sessionbound");  
+ 
+           public SessionBoundFactory()  
+           {  
+           }  
   
-            public SessionBoundFactory()  
-            {  
-            }  
-  
-            public EndpointAddress10 GetInstanceAddress()  
-            {  
-                IClientChannel channel = (IClientChannel)_factory.CreateChannel();  
-                return EndpointAddress10.FromEndpointAddress(channel.RemoteAddress);  
-            }  
-        }  
-    ```  
+           public EndpointAddress10 GetInstanceAddress()  
+           {  
+               IClientChannel channel = (IClientChannel)_factory.CreateChannel();  
+               return EndpointAddress10.FromEndpointAddress(channel.RemoteAddress);  
+           }  
+       }  
+   ```  
   
      This implementation maintains a singleton channel factory to create sessionful objects. When GetInstanceAddress() is called, it creates a channel and creates an EndpointAddress10 object that effectively points to the remote address associated with this channel. EndpointAddress10 is simply a data type that can be returned to the client by-value.  
   
@@ -552,7 +552,6 @@ public class RemotingServer : MarshalByRefObject
                     binding="netTcpBinding"  
                     contract="Shared.ISessionBoundObject"/>  
         </client>  
-  
         <services>  
           <service name="Server.CustomerService">  
             <endpoint address="http://localhost:8083/CustomerService"  
@@ -576,13 +575,13 @@ public class RemotingServer : MarshalByRefObject
   
      And then we can start these services:  
   
-    ```  
-    ServiceHost factoryHost = new ServiceHost(typeof(SessionBoundFactory));  
-    factoryHost.Open();  
+   ```csharp
+   ServiceHost factoryHost = new ServiceHost(typeof(SessionBoundFactory));  
+   factoryHost.Open();  
   
-    ServiceHost sessionHost = new ServiceHost(typeof(MySessionBoundObject));  
-    sessionHost.Open();  
-    ```  
+   ServiceHost sessionHost = new ServiceHost(typeof(MySessionBoundObject));  
+   sessionHost.Open();  
+   ```  
   
 5.  We configure the client by declaring these same endpoints in its project’s app.config file.  
   
@@ -617,33 +616,33 @@ public class RemotingServer : MarshalByRefObject
   
     4.  Interact with the sessionful object to demonstrate it remains the same instance across multiple calls.  
   
-    ```  
-    ChannelFactory<ISessionBoundFactory> channelFactory =   
-        new ChannelFactory<ISessionBoundFactory>("factory");  
-    ISessionBoundFactory sessionFactory = channelFactory.CreateChannel();  
+   ```csharp
+   ChannelFactory<ISessionBoundFactory> channelFactory =   
+       new ChannelFactory<ISessionBoundFactory>("factory");  
+   ISessionBoundFactory sessionFactory = channelFactory.CreateChannel();  
   
-    EndpointAddress10 address1 = sessionFactory.GetInstanceAddress();  
-    EndpointAddress10 address2 = sessionFactory.GetInstanceAddress();  
+   EndpointAddress10 address1 = sessionFactory.GetInstanceAddress();  
+   EndpointAddress10 address2 = sessionFactory.GetInstanceAddress();  
   
-    ChannelFactory<ISessionBoundObject> sessionObjectFactory1 =   
-        new ChannelFactory<ISessionBoundObject>(new NetTcpBinding(),   
-                                                address1.ToEndpointAddress());  
-    ChannelFactory<ISessionBoundObject> sessionObjectFactory2 =   
-        new ChannelFactory<ISessionBoundObject>(new NetTcpBinding(),   
-                                                address2.ToEndpointAddress());  
+   ChannelFactory<ISessionBoundObject> sessionObjectFactory1 =   
+       new ChannelFactory<ISessionBoundObject>(new NetTcpBinding(),   
+                                               address1.ToEndpointAddress());  
+   ChannelFactory<ISessionBoundObject> sessionObjectFactory2 =   
+       new ChannelFactory<ISessionBoundObject>(new NetTcpBinding(),   
+                                               address2.ToEndpointAddress());  
   
-    ISessionBoundObject sessionInstance1 = sessionObjectFactory1.CreateChannel();  
-    ISessionBoundObject sessionInstance2 = sessionObjectFactory2.CreateChannel();  
+   ISessionBoundObject sessionInstance1 = sessionObjectFactory1.CreateChannel();  
+   ISessionBoundObject sessionInstance2 = sessionObjectFactory2.CreateChannel();  
   
-    sessionInstance1.SetCurrentValue("Hello");  
-    sessionInstance2.SetCurrentValue("World");  
+   sessionInstance1.SetCurrentValue("Hello");  
+   sessionInstance2.SetCurrentValue("World");  
   
-    if (sessionInstance1.GetCurrentValue() == "Hello" &&  
-        sessionInstance2.GetCurrentValue() == "World")  
-    {  
-        Console.WriteLine("sessionful server object works as expected");  
-    }  
-    ```  
+   if (sessionInstance1.GetCurrentValue() == "Hello" &&  
+       sessionInstance2.GetCurrentValue() == "World")  
+   {  
+       Console.WriteLine("sessionful server object works as expected");  
+   }  
+   ```  
   
  WCF always returns objects by value, but it is possible to support the equivalent of by-reference semantics through the use of EndpointAddress10. This permits the client to request a sessionful WCF service instance, after which it can interact with it like any other WCF service.  
   
@@ -654,18 +653,18 @@ public class RemotingServer : MarshalByRefObject
   
 2.  Use the client to create a new by-value object (Customer), create a channel to communicate with the ICustomerService service, and send the object to it.  
   
-    ```  
-    ChannelFactory<ICustomerService> factory =  
-        new ChannelFactory<ICustomerService>("customerservice");  
-    ICustomerService service = factory.CreateChannel();  
-    PremiumCustomer customer = new PremiumCustomer {   
-    FirstName = "Bob",   
-    LastName = "Jones",   
-    CustomerId = 43,   
-    AccountId = 99};  
-    bool success = service.UpdateCustomer(customer);  
-    Console.WriteLine(String.Format("  Server returned {0}.", success));  
-    ```  
+   ```csharp
+   ChannelFactory<ICustomerService> factory =  
+       new ChannelFactory<ICustomerService>("customerservice");  
+   ICustomerService service = factory.CreateChannel();  
+   PremiumCustomer customer = new PremiumCustomer {   
+   FirstName = "Bob",   
+   LastName = "Jones",   
+   CustomerId = 43,   
+   AccountId = 99};  
+   bool success = service.UpdateCustomer(customer);  
+   Console.WriteLine(String.Format("  Server returned {0}.", success));  
+   ```  
   
      The customer object will be serialized, and sent to the server, where it is deserialized into a new copy of that object.  
   

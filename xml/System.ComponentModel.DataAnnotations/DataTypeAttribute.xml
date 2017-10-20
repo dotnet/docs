@@ -46,7 +46,6 @@
  For more information, see [ASP.NET Dynamic Data Guidelines](http://msdn.microsoft.com/en-us/c563bbf3-feb9-484e-81d1-a585f1b0e192).  
 
 
-<!-- TODO: Update or Replace the the example  -->
 ## Examples  
  The following example uses the <xref:System.ComponentModel.DataAnnotations.DataTypeAttribute> attribute to customize the display of the EmailAddress data field. The e-mail addresses are shown as hyperlinks instead of as simple text, which is what Dynamic Data would infer from the intrinsic data type. The example code is in three parts, and it performs the following steps:  
   

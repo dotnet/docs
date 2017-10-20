@@ -43,17 +43,17 @@ There are several features of your application that affect your decision. You sh
     - Your .NET implementation choice is *.NET Framework* based on framework dependency.
     - Your container platform choice must be *Windows containers* because of the .NET Framework dependency.
 * Your application uses **SignalR services**.
-    - Your .NET implementation choice is *.NET Framework*, or *.NET Core (future release)*.
-    - Your container platform choice must be *Windows containers* because of the .NET Framework dependency.
-    - When **SignalR services** run on *.NET Core*, you can also choose *Linux containers*.
+    - Your .NET implementation choice is *.NET Framework*, or *.NET Core 2.1 or beyond*.
+    - Your container platform choice must be *Windows containers* if you chose the .NET Framework dependency.
+    - When **SignalR services** run on *.NET Core*, you can use *Linux containers or Windows Containers*.
 * Your application uses **WCF, WF, and other legacy frameworks**.
     - Your .NET implementation choice is *.NET Framework*, or *.NET Core (in the roadmap for a future release)*.
     - Your container platform choice must be *Windows containers* because of the .NET Framework dependency.
-    - When the dependency runs on *.NET Core*, you can also choose *Linux containers*.
+    - If WCF supports *.NET Core* in the future, you could choose between *Linux containers and Windows containers*.
 * Your application involves **Consumption of Azure services**.
     - Your .NET implementation choice is *.NET Framework*, or *.NET Core (eventually all Azure services will provide client SDKs for .NET Core)*.
-    - Your container platform choice must be *Windows containers* because of the .NET Framework dependency.
-    - When the dependency runs on *.NET Core*, you can also choose *Linux containers*.
+    - Your container platform choice must be *Windows containers* if you use .NET Framework client APIs.
+    - If you use client APIs available for *.NET Core*, you can also choose between *Linux containers and Windows containers*.
 
 >[!div class="step-by-step"]
 [Previous] (net-framework-container-scenarios.md)

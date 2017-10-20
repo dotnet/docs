@@ -9,6 +9,7 @@
 ### [Version Tolerant Serialization](version-tolerant-serialization.md)
 ### [Serialization Guidelines](serialization-guidelines.md)
 ### [How to: Chunk Serialized Data](how-to-chunk-serialized-data.md)
+### [How to: Determine if a .NET Standard object is serializable](how-to-determine-if-netstandard-object-is-serializable.md)
 ## [XML and SOAP Serialization](xml-and-soap-serialization.md)
 ### [How to: Control Serialization of Derived Classes](how-to-control-serialization-of-derived-classes.md)
 ### [Introducing XML Serialization](introducing-xml-serialization.md)

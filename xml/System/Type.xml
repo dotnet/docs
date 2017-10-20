@@ -10489,6 +10489,9 @@ GetType(Array).IsAssignableFrom(type)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+ 
+Types that are defined in the .NET Standard are not marked with <xref:System.SerializableAttribute>. Instead, each .NET implementation determines whether a type is serializable. At run time, you can use the <xref:System.Type.IsSerializable%2A> property to determine whether that implementation supports serialization of an instance of the type. For more information and an example, see [How to determine if a .NET Standard object is serializable](~/docs/standard/serialization/how-to-determine-if-netstandard-object-is-serializable.md).
+  
  If the current <xref:System.Type> represents a constructed generic type, this property applies to the generic type definition from which the type was constructed. For example, if the current <xref:System.Type> represents `MyGenericType<int>` (`MyGenericType(Of Integer)` in Visual Basic), the value of this property is determined by `MyGenericType<T>`.  
   
  If the current <xref:System.Type> represents a type parameter in the definition of a generic type or generic method, this property always returns `false`.  

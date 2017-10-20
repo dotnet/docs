@@ -23,7 +23,7 @@ If you've developed a library that targets the .NET Standard, your library can b
 You can determine whether an object is serializable at runtime by retrieving the value of the <xref:System.Type.IsSerializable> property of a <xref:System.Type> object that represents that object's type. The following example provides one implementation. It defines an `IsSerializable(Object)` extension method that indicates whether any <xref:System.Object> instance can be serialized.
 
 [!code-csharp[is-a-type-serializable](~/samples/snippets/standard/serialization/is-serializable/csharp/program.cs#2)]
-[!code-vb[is-a-type-serializable](~/samples/snippets/standard/serialization/is-serializable/vb/program.vb#2)]
+[!code-vb[is-a-type-serializable](~/samples/snippets/standard/serialization/is-serializable/vb/library.vb#2)]
 
 You can then pass any object to the method to determine whether it can be serialized and deserialized on the current .NET implementation, as the following example shows.
 

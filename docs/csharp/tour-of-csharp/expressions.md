@@ -39,7 +39,7 @@ The following summarizes C#’s operators, listing the operator categories in or
 	- `new T(...){...}`: Object creation with initializer
 	- `new {...}`:  Anonymous object initializer
 	- `new T[...]`: Array creation
-	- `typeof(T)`: Obtain @System.Type object for `T`
+	- `typeof(T)`: Obtain <xref:System.Type> object for `T`
 	- `checked(x)`: Evaluate expression in checked context
 	- `unchecked(x)`: Evaluate expression in unchecked context
 	- `default(T)`: Obtain default value of type `T`

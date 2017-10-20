@@ -49,7 +49,7 @@ You can add functionality to the application model by overriding the `Overridabl
   
 2.  <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnStartup%2A>. Provides an extensibility point for raising the `Startup` event. The application startup sequence stops if this function returns `False`.  
   
-     By default, this method raises the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Startup> event. If the event handler sets the @System.ComponentModel.CancelEventArgs.Cancel property of the event argument to `True`, the method returns `False` to cancel the application startup.  
+     By default, this method raises the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Startup> event. If the event handler sets the <xref:System.ComponentModel.CancelEventArgs.Cancel> property of the event argument to `True`, the method returns `False` to cancel the application startup.  
   
 3.  <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnRun%2A>. Provides the starting point for when the main application is ready to start running, after the initialization is done.  
   

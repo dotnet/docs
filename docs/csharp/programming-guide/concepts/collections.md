@@ -182,11 +182,11 @@ public class Galaxy
   
  Some of the common collection classes are described in this section:  
   
--   @System.Collections.Generic classes  
+-   <xref:System.Collections.Generic> classes  
   
--   @System.Collections.Concurrent classes  
+-   <xref:System.Collections.Concurrent> classes  
   
--   @System.Collections classes  
+-   <xref:System.Collections> classes  
   
 <a name="BKMK_Generic"></a>
 ### System.Collections.Generic Classes  
@@ -202,7 +202,7 @@ public class Galaxy
 |<xref:System.Collections.Generic.SortedList%602>|Represents a collection of key/value pairs that are sorted by key based on the associated <xref:System.Collections.Generic.IComparer%601> implementation.|  
 |<xref:System.Collections.Generic.Stack%601>|Represents a last in, first out (LIFO) collection of objects.|  
   
- For additional information, see [Commonly Used Collection Types](../../../standard/collections/commonly-used-collection-types.md), [Selecting a Collection Class](../../../standard/collections/selecting-a-collection-class.md), and @System.Collections.Generic.  
+ For additional information, see [Commonly Used Collection Types](../../../standard/collections/commonly-used-collection-types.md), [Selecting a Collection Class](../../../standard/collections/selecting-a-collection-class.md), and <xref:System.Collections.Generic>.  
   
 <a name="BKMK_Concurrent"></a>
 ### System.Collections.Concurrent Classes  

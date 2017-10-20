@@ -53,7 +53,7 @@ What should the application deployment architecture be? The specifications for t
 
 In this approach, each service (container) implements a set of cohesive and narrowly related functions. For example, an application might consist of services such as the catalog service, ordering service, basket service, user profile service, etc.
 
-Microservices communicate using protocols such as HTTP (REST), but also asynchronously (i.e. AMQP) whenever possible, especially when propagating updates with integration events.
+Microservices communicate using protocols such as HTTP (REST), but also asynchronously (that is AMQP) whenever possible, especially when propagating updates with integration events.
 
 Microservices are developed and deployed as containers independently of one another. This means that a development team can be developing and deploying a certain microservice without impacting other subsystems.
 
@@ -82,7 +82,7 @@ The application is deployed as a set of microservices in the form of containers.
 **Important note on API Gateway vs. Direct Communication in eShopOnContainers.** As explained in the architecture section of this guide, the direct client-to-microservice communication architecture can have drawbacks when you are building a large and complex microservice-based application. But it can be good enough for a small application, such as in the eShopOnContainers application, where the goal is to focus on a simpler getting started Docker container-based application and we didn’t want to create a single monolithic API Gateway that can impact the microservices’ development autonomy.
 
 But, if you are going to design a large microservice-based application with dozens of microservices, we strongly recommend that you consider the API Gateway pattern, as we explained in the architecture section.
-This architectural decission could be refactored once thinking about production-ready applications and specially-made facades for remote clients. Having multiple custom API Gateways depending on the client apps' form-factor can provide benefits in regard to different data aggregation per client app plus you can hide internal microservices or APIs to the client apps and authorize in that single tier. 
+This architectural decision could be refactored once thinking about production-ready applications and specially-made facades for remote clients. Having multiple custom API Gateways depending on the client apps' form-factor can provide benefits in regard to different data aggregation per client app plus you can hide internal microservices or APIs to the client apps and authorize in that single tier. 
 
 However, and as mentioned, beware against large and monolithic API Gateways that might kill your microservices' development autonomy.
 

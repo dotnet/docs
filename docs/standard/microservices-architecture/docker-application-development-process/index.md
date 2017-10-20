@@ -30,7 +30,7 @@ By installing [Docker Community Edition (CE)](https://www.docker.com/community-e
 ### Additional resources
 
 -   **Visual Studio Tools for Docker**
-    [*https://docs.microsoft.com/en-us/aspnet/core/publishing/visual-studio-tools-for-docker*](https://docs.microsoft.com/en-us/aspnet/core/publishing/visual-studio-tools-for-docker)
+    [*https://docs.microsoft.com/aspnet/core/publishing/visual-studio-tools-for-docker*](https://docs.microsoft.com/aspnet/core/publishing/visual-studio-tools-for-docker)
 
 -   **Visual Studio Code**. Official site.
     [*https://code.visualstudio.com/download*](https://code.visualstudio.com/download)

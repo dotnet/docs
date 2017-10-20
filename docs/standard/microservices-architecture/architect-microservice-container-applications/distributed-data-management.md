@@ -88,22 +88,21 @@ The use of asynchronous communication is explained with additional details later
     [*https://en.wikipedia.org/wiki/Eventual\_consistency*](https://en.wikipedia.org/wiki/Eventual_consistency)
 
 -   **Data Consistency Primer**
-    [*https://msdn.microsoft.com/en-us/library/dn589800.aspx*](https://msdn.microsoft.com/en-us/library/dn589800.aspx)
+    [*https://msdn.microsoft.com/library/dn589800.aspx*](https://msdn.microsoft.com/library/dn589800.aspx)
 
 -   **Martin Fowler. CQRS (Command and Query Responsibility Segregation)**
     [*http://martinfowler.com/bliki/CQRS.html*](http://martinfowler.com/bliki/CQRS.html)
 
 -   **Materialized View**
-    [*https://msdn.microsoft.com/en-us/library/dn589782.aspx*](https://msdn.microsoft.com/en-us/library/dn589782.aspx)
+    [*https://docs.microsoft.com/azure/architecture/patterns/materialized-view*](https://docs.microsoft.com/azure/architecture/patterns/materialized-view)
 
 -   **Charles Row. ACID vs. BASE: The Shifting pH of Database Transaction Processing**
     [*http://www.dataversity.net/acid-vs-base-the-shifting-ph-of-database-transaction-processing/*](http://www.dataversity.net/acid-vs-base-the-shifting-ph-of-database-transaction-processing/)
 
 -   **Compensating Transaction**
-    [*https://msdn.microsoft.com/en-us/library/dn589804.aspx*](https://msdn.microsoft.com/en-us/library/dn589804.aspx)
+    [*https://docs.microsoft.com/azure/architecture/patterns/compensating-transaction*](https://docs.microsoft.com/azure/architecture/patterns/compensating-transaction)
 
 -   **Udi Dahan. Service Oriented Composition**
-
     [*http://udidahan.com/2014/07/30/service-oriented-composition-with-video/*](http://udidahan.com/2014/07/30/service-oriented-composition-with-video/)
 
 

@@ -36,7 +36,7 @@ For up-to-date information about containers support in Azure Service Fabric, see
 Service Fabric is a good example of a platform where you can define a different logical architecture (business microservices or Bounded Contexts) than the physical implementation that were introduced in the [Logical architecture versus physical architecture](#logical-architecture-versus-physical-architecture) section. For example, if you implement [Stateful Reliable Services](https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-services-introduction) in [Azure Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-overview), which are introduced in the section [Stateless versus stateful microservices](#stateless-versus-stateful-microservices) later, you can have a business microservice concept with multiple physical services.
 
 As shown in Figure 4-27, and thinking from a logical/business microservice perspective, when implementing a Service Fabric Stateful Reliable Service, you usually will need to implement two tiers of services. The first is the back-end stateful reliable service, which handles multiple partitions (each partition is a stateful service). The second is the front-end service, or Gateway service, in charge of routing and data aggregation across multiple partitions or stateful service instances. That Gateway service also handles client-side communication with retry loops accessing the backend service.
-It is called Gateway service if you implement your custom service, or alternatevely you can also use the out-of-the-box Service Fabric [Reverse Proxy service](https://docs.microsoft.com/azure/service-fabric/service-fabric-reverseproxy).
+It is called a Gateway service if you implement your custom service, or alternatevely you can also use the out-of-the-box Service Fabric [Reverse Proxy service](https://docs.microsoft.com/azure/service-fabric/service-fabric-reverseproxy).
 
 ![](./media/image31.png)
 
@@ -62,7 +62,7 @@ As of mid-2017, in Service Fabric you cannot deploy SF Reliable Stateful Service
 
 **Figure 4-29**. Business microservice mapped to a Service Fabric application with containers and stateful services
 
-For up-to-date news about container support in Azure Service Fabric, see [Service Fabric and containers](https://docs.microsoft.com/azure/service-fabric/service-fabric-containers-overview).
+For more information about container support in Azure Service Fabric, see [Service Fabric and containers](https://docs.microsoft.com/azure/service-fabric/service-fabric-containers-overview).
 
 ## Stateless versus stateful microservices
 
@@ -78,7 +78,7 @@ A stateless approach is perfectly valid and is easier to implement than stateful
 
 In contrast, [stateful microservices](https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-services-introduction#when-to-use-reliable-services-apis) can excel in advanced scenarios, because there is no latency between the domain logic and data. Heavy data processing, gaming back ends, databases as a service, and other low-latency scenarios all benefit from stateful services, which enable local state for faster access.
 
-Stateless and stateful services are complementary. For instance, you can see in Figure 4-30, at the right diagram, that a stateful service could be split into multiple partitions. To access those partitions, you might need a stateless service acting as a gateway service that knows how to address each partition based on partition keys.
+Stateless and stateful services are complementary. For instance, you can see in Figure 4-30, in the right diagram, that a stateful service could be split into multiple partitions. To access those partitions, you might need a stateless service acting as a gateway service that knows how to address each partition based on partition keys.
 
 Stateful services do have drawbacks. They impose a level of complexity that allows to scale out. Functionality that would usually be implemented by external database systems must be addressed for tasks such as data replication across stateful microservices and data partitioning. However, this is one of the areas where an orchestrator like [Azure Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-services-platform-architecture) with its [stateful reliable services](https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-services-introduction#when-to-use-reliable-services-apis) can help the most—by simplifying the development and lifecycle of stateful microservices using the [Reliable Services API](https://docs.microsoft.com/azure/service-fabric/service-fabric-work-with-reliable-collections) and [Reliable Actors](https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-actors-introduction).
 

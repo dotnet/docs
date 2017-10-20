@@ -6,7 +6,7 @@ author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/18/2017
 ms.prod: .net-core
-ms.technology: dotnet-docker, service fabric, kubernetes, azure container service, docker swarm, dc/os
+ms.technology: dotnet-docker
 ms.topic: article
 ---
 # Orchestrating microservices and multi-container applications for high scalability and availability
@@ -74,7 +74,7 @@ Azure Service Fabric
 > Service Fabric provides additional and optional prescriptive [Service Fabric programming models ](https://docs.microsoft.com/azure/service-fabric/service-fabric-choose-framework) like [stateful services](https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-services-introduction) and [Reliable Actors](https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-actors-introduction).
 >
 > Service Fabric is mature in Windows (years evolving in Windows), less mature in Linux. 
-> Both, Linux Containers and Windows Containers are already released as GA since 2017.
+> Both Linux and Windows containers are supported in Service Fabric since 2017.
 
 ## Using container-based orchestrators in Microsoft Azure
 

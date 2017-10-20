@@ -13,7 +13,7 @@ ms.topic: article
 
 The modularity and lightweight nature of .NET Core makes it perfect for containers. When you deploy and start a container, its image is far smaller with .NET Core than with .NET Framework. In contrast, to use .NET Framework for a container, you must base your image on the Windows Server Core image, which is a lot heavier than the Windows Nano Server or Linux images that you use for .NET Core.
 
-Additionally, .NET Core is cross-platform, so you can deploy server apps with Linux or Windows container images. However, if you are using the full .NET Framework, you can only deploy images based on Windows Server Core.
+Additionally, .NET Core is cross-platform, so you can deploy server apps with Linux or Windows container images. However, if you are using the traditional .NET Framework, you can only deploy images based on Windows Server Core.
 
 The following is a more detailed explanation of why to choose .NET Core.
 
@@ -27,7 +27,7 @@ Clearly, if your goal is to have an application (web application or service) tha
 
 [Visual Studio for Mac](https://www.visualstudio.com/vs/visual-studio-mac/) is an IDE, evolution of Xamarin Studio, running in macOS and supports Docker since mid-2017.
 
-You can also use [Visual Studio Code](https://code.visualstudio.com/) (VS Code) on macOS, Linux, and Windows. VS Code fully supports .NET Core, including IntelliSense and debugging. Because VS Code is a lightweight editor, you can use it to develop containerized apps on the Mac in conjunction with the Docker CLI and the .NET Core CLI (dotnet cli). You can also target .NET Core with most third-party editors like Sublime Text, Emacs, vi, and the open-source OmniSharp project, which provides IntelliSense support for .NET languages. In addition to the IDEs and editors, you can use the [.NET Core command-line interface (CLI) tools](https://docs.microsoft.com/dotnet/core/tools/?tabs=netcore2x) for all supported platforms.
+You can also use [Visual Studio Code](https://code.visualstudio.com/) (VS Code) on macOS, Linux, and Windows. VS Code fully supports .NET Core, including IntelliSense and debugging. Because VS Code is a lightweight editor, you can use it to develop containerized apps on the Mac in conjunction with the Docker CLI and the [.NET Core command-line interface (CLI) tools](https://docs.microsoft.com/dotnet/core/tools/?tabs=netcore2x). You can also target .NET Core with most third-party editors like Sublime Text, Emacs, vi, and the open-source OmniSharp project, which provides IntelliSense support for .NET languages. In addition to the IDEs and editors, you can use the .NET Core CLI for all supported platforms.
 
 ## Using containers for new ("green-field") projects
 
@@ -45,7 +45,7 @@ A microservices architecture also allows you to mix technologies across a servic
 
 ## Deploying high density in scalable systems
 
-When your container-based system needs the best possible density, granularity, and performance, .NET Core and ASP.NET Core are your best options. ASP.NET Core is up to ten times faster than ASP.NET in the full .NET Framework, and it leads other popular industry technologies for microservices, such as Java servlets, Go, and Node.js.
+When your container-based system needs the best possible density, granularity, and performance, .NET Core and ASP.NET Core are your best options. ASP.NET Core is up to ten times faster than ASP.NET in the traditional .NET Framework, and it leads other popular industry technologies for microservices, such as Java servlets, Go, and Node.js.
 
 This is especially relevant for microservices architectures, where you could have hundreds of microservices (containers) running. With ASP.NET Core images (based on the .NET Core runtime) on Linux or Windows Nano, you can run your system with a much lower number of servers or VMs, ultimately saving costs in infrastructure and hosting.
 

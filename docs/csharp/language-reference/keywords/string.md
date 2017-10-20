@@ -31,6 +31,16 @@ b += "ello";
 Console.WriteLine(a == b);  
 Console.WriteLine((object)a == (object)b);  
 ```  
+
+```powershell  
+[string] $a = 'hello' 
+[string] $b = 'h'  
+# Append to contents of '$b'  
+$b += 'ello'  
+($a -eq $b)  
+[Console]::WriteLine([object] $a -eq [object] $b)
+```  
+
   
  This displays "True" and then "False" because the content of the strings are equivalent, but `a` and `b` do not refer to the same string instance.  
   
@@ -39,21 +49,35 @@ Console.WriteLine((object)a == (object)b);
 ```csharp  
 string a = "good " + "morning";  
 ```  
-  
+
+```powershell  
+[string] $a = 'good ' + 'morning' 
+```  
+
  This creates a string object that contains "good morning".  
   
  Strings are *immutable*--the contents of a string object cannot be changed after the object is created, although the syntax makes it appear as if you can do this. For example, when you write this code, the compiler actually creates a new string object to hold the new sequence of characters, and that new object is assigned to b. The string "h" is then eligible for garbage collection.  
   
-```csharp
+```csharp  
 string b = "h";  
 b += "ello";  
 ```  
-  
+
+```powershell  
+[string] $b = 'h'
+$b += 'ello;
+```  
+
  The [] operator can be used for readonly access to individual characters of a `string`:  
   
 ```csharp  
 string str = "test";  
 char x = str[2];  // x = 's';  
+```  
+
+```powershell  
+[string] $str = 'test'
+[char]   $x = $str[2]   #  $x = 's'
 ```  
   
  String literals are of type `string` and can be written in two forms, quoted and @-quoted. Quoted string literals are enclosed in double quotation marks ("):  
@@ -61,10 +85,16 @@ char x = str[2];  // x = 's';
 ```csharp  
 "good morning"  // a string literal  
 ```  
+
+```powershell  
+'good morning' # a string literal
+"good morning" # also a string literal
+```  
+
   
  String literals can contain any character literal. Escape sequences are included. The following example uses escape sequence `\\` for backslash, `\u0066` for the letter f, and `\n` for newline.  
   
-```  
+```csharp  
 string a = "\\\u0066\n";  
 Console.WriteLine(a);  
 ```  

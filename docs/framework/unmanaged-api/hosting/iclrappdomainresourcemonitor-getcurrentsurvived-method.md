@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRAppDomainResourceMonitor::GetCurrentSurvived"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRAppDomainResourceMonitor::GetCurrentSurvived method [.NET Framework hosting]"
   - "GetCurrentSurvived method [.NET Framework hosting]"

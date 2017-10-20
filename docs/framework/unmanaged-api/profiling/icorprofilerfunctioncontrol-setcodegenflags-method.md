@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerFunctionControl::SetCodegenFlags"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerFunctionControl::SetCodegenFlags method [.NET Framework profiling]"
   - "SetCodegenFlags method, ICorProfilerFunctionControl interface [.NET Framework profiling]"

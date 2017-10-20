@@ -1,16 +1,13 @@
 ---
 title: "How to: Query a Database by Using LINQ (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "query samples [LINQ]"
   - "database querying [LINQ]"
@@ -22,21 +19,6 @@ ms.assetid: bcf5e9c3-a236-4399-9a7f-3991eca7cf56
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Query a Database by Using LINQ (Visual Basic)
 Language-Integrated Query (LINQ) makes it easy to access database information and execute queries.  

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataEmit::DeleteClassLayout"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "DeleteClassLayout method [.NET Framework metadata]"
   - "IMetaDataEmit::DeleteClassLayout method [.NET Framework metadata]"

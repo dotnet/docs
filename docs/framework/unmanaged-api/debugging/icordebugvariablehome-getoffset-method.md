@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugVariableHome::GetOffset"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugVariableHome::GetOffset method [.NET Framework debugging]"
   - "GetOffset method, ICorDebugVariableHome interface [.NET Framework debugging]"

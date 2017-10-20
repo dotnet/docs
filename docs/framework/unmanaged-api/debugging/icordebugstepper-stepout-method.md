@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugStepper::StepOut"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugStepper::StepOut method [.NET Framework debugging]"
   - "StepOut method [.NET Framework debugging]"

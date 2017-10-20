@@ -112,7 +112,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the `state` parameter is either <xref:System.Security.Permissions.PermissionState?displayProperty=nameWithType> or <xref:System.Security.Permissions.PermissionState?displayProperty=nameWithType>, respectively yielding fully restricted or fully unrestricted access to all security variables. If you specify <xref:System.Security.Permissions.PermissionState?displayProperty=nameWithType>, then you can give access to individual URIs using <xref:System.Net.WebPermission.AddPermission%2A>.  
+ The value of the `state` parameter is either <xref:System.Security.Permissions.PermissionState.None?displayProperty=nameWithType> or <xref:System.Security.Permissions.PermissionState.Unrestricted?displayProperty=nameWithType>, respectively yielding fully restricted or fully unrestricted access to all security variables. If you specify <xref:System.Security.Permissions.PermissionState.None?displayProperty=nameWithType>, then you can give access to individual URIs using <xref:System.Net.WebPermission.AddPermission%2A>.  
   
    
   
@@ -199,7 +199,7 @@
  This constructor initializes a <xref:System.Net.WebPermission> and grants its target permission to either make a remote host connection or accept a remote host connection using the URI described by the `uriRegex` parameter.  
   
 > [!NOTE]
->  It is recommended that you create `uriRegex` using the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType>, <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType>, and <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType> flags.  
+>  It is recommended that you create `uriRegex` using the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType>, <xref:System.Text.RegularExpressions.RegexOptions.Compiled?displayProperty=nameWithType>, and <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=nameWithType> flags.  
   
 > [!NOTE]
 >  A candidate URI string is checked against the list of relevant regular expressions (<xref:System.Net.WebPermission.AcceptList%2A> or <xref:System.Net.WebPermission.ConnectList%2A>) in two ways. First, the candidate URI string is checked against the appropriate list; then, if there is no match, the candidate URI string is converted into a <xref:System.Uri> and checked against the appropriate list.  
@@ -349,7 +349,7 @@
 >  Calling <xref:System.Net.WebPermission.AddPermission%2A> on an <xref:System.Security.Permissions.PermissionState.Unrestricted><xref:System.Net.WebPermission> instance will have no effect as permission is granted to all URIs.  
   
 > [!NOTE]
->  It is recommended that you create `uriRegex` using the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType>, <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType>, and <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType> flags.  
+>  It is recommended that you create `uriRegex` using the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType>, <xref:System.Text.RegularExpressions.RegexOptions.Compiled?displayProperty=nameWithType>, and <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=nameWithType> flags.  
   
 > [!NOTE]
 >  A candidate URI string is checked against the list of relevant regular expressions (<xref:System.Net.WebPermission.AcceptList%2A> or <xref:System.Net.WebPermission.ConnectList%2A>) in two ways. First, the candidate URI string is checked against the appropriate list; then, if there is no match, the candidate URI string is converted into a <xref:System.Uri> and checked against the appropriate list.  

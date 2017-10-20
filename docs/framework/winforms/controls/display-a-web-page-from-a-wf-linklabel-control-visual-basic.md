@@ -9,10 +9,10 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "vb"
 f1_keywords: 
   - "LinkLabel1_LinkClicked"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "examples [Windows Forms], LinkLabel control"
   - "Web pages, displaying"

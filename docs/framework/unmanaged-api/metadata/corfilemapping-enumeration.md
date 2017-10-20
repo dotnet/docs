@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorFileMapping"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorFileMapping enumeration [.NET Framework metadata]"
 ms.assetid: 3ca41592-b8da-475a-8032-a15627730003

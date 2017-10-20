@@ -23,8 +23,13 @@ To build and run the sample, type the following three commands:
 `dotnet build`
 `.\bin\Debug\netcoreapp1.0\win10-x64\HelloNative.exe`
 
-`dotnet restore` installs all the dependencies for this sample into the current directory.
+`dotnet restore` 
+([see note](#dotnet-restore-note)) installs all the dependencies for this sample into the current directory.
 `dotnet build` creates the output assembly (or assemblies).
 `.\bin\Debug\netcoreapp1.0\win10-x64\HelloNative.exe` runs the output executable. The example
 shows the Windows path. Replace `win10-x64` with your platform's RID from the list of
 [supported RIDs](../../../../docs/core/rid-catalog.md).
+
+<a name="dotnet-restore-note"></a>
+[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
+

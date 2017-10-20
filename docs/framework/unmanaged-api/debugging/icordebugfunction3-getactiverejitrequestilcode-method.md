@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
+dev_langs:
+ - "cpp"
 api_name: 
   - "ICorDebugFunction3.GetActiveReJitRequestILCode"
 api_location: 
   - "mscordbi.dll"
 api_type: 
   - "COM"
-dev_langs: 
-  - "C++"
 ms.assetid: 88584574-ade5-45b2-9778-489ed5c4dd7f
 topic_type: 
   - "apiref"
@@ -32,7 +32,7 @@ manager: "wpickett"
   
 ## Syntax  
   
-```vb  
+```cpp
 HRESULT GetActiveReJitRequestILCode(  
    ICorDebugILCode **ppReJitedILCode  
 );  

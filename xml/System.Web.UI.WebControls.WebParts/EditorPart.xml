@@ -60,13 +60,13 @@
   
  The first part of this code example is the user control that enables users to change display modes on a Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_EditorPart_Overview#14](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_EditorPart_Overview/CS/displaymodecs.ascx#14)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_EditorPart_Overview#14](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_EditorPart_Overview/VB/displaymodevb.ascx#14)]  -->  
+ [!code-aspx-csharp[WebParts_EditorPart_Overview#14](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_EditorPart_Overview/CS/displaymodecs.ascx#14)]
+ [!code-aspx-vb[WebParts_EditorPart_Overview#14](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_EditorPart_Overview/VB/displaymodevb.ascx#14)]  
   
  The second part of the code example is the Web page. It contains a declarative reference to an <xref:System.Web.UI.WebControls.WebParts.EditorZone> control, with a child `<zonetemplate>` element that contains declarative references to two of the Web Parts control set <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls. The page also references a custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control, using a `Register` directive for the assembly, and the `<aspSample:TextDisplayWebPart>` element for the control.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_EditorPart_Overview#12](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_EditorPart_Overview/CS/editorpart_overview_cs.aspx#12)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_EditorPart_Overview#12](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_EditorPart_Overview/VB/editorpart_overview_vb.aspx#12)]  -->  
+ [!code-aspx-csharp[WebParts_EditorPart_Overview#12](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_EditorPart_Overview/CS/editorpart_overview_cs.aspx#12)]
+ [!code-aspx-vb[WebParts_EditorPart_Overview#12](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_EditorPart_Overview/VB/editorpart_overview_vb.aspx#12)]  
   
  The third part of the code example is a custom <xref:System.Web.UI.WebControls.WebParts.WebPart> class named `TextDisplayWebPart`. The class implements the <xref:System.Web.UI.WebControls.WebParts.IWebEditable> interface. Within this class is a nested, private class that contains the code for a private <xref:System.Web.UI.WebControls.WebParts.EditorPart> class associated with the `TextDisplayWebPart` class and named `TextDisplayEditorPart`. At run time, as the `TextDisplayWebPart` control enters edit mode, in its `TextDisplayWebPart.CreateEditorParts` method, it creates an instance of the `TextDisplayEditorPart` class, and displays it in the <xref:System.Web.UI.WebControls.WebParts.EditorZone> control, along with the other <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls.  
   

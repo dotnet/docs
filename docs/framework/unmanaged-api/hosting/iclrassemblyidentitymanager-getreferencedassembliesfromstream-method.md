@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRAssemblyIdentityManager::GetReferencedAssembliesFromStream"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRAssemblyIdentityManager::GetReferencedAssembliesFromStream method [.NET Framework hosting]"
   - "GetReferencedAssembliesFromStream method [.NET Framework hosting]"

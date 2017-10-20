@@ -503,8 +503,8 @@
 ## Examples  
  The following code example demonstrates a common display and update scenario with the <xref:System.Web.UI.WebControls.GridView> control. The <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommand%2A> property is set to an appropriate SQL query, and data from the Northwind database is displayed in the <xref:System.Web.UI.WebControls.GridView> control. Because a <xref:System.Web.UI.WebControls.SqlDataSource.UpdateCommand%2A> property is also specified and the <xref:System.Web.UI.WebControls.GridView.AutoGenerateEditButton%2A> property is set to `true`, you can edit and update the records with no additional code. The <xref:System.Web.UI.WebControls.GridView> control handles adding parameters to the <xref:System.Web.UI.WebControls.SqlDataSource.UpdateParameters%2A> collection; the <xref:System.Web.UI.WebControls.GridView> control passes the parameter values for the <xref:System.Web.UI.WebControls.BoundField> objects first, followed by the values of fields that are specified by the <xref:System.Web.UI.WebControls.GridView.DataKeyNames%2A> property. The <xref:System.Web.UI.WebControls.GridView> calls the <xref:System.Web.UI.WebControls.SqlDataSource.Update%2A> method automatically. If you want to order the parameters, explicitly, specify an <xref:System.Web.UI.WebControls.SqlDataSource.UpdateParameters%2A> collection on the <xref:System.Web.UI.WebControls.AccessDataSource>.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.AccessDataSource_5access#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.AccessDataSource_5access/CS/access5cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.AccessDataSource_5access#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.AccessDataSource_5access/VB/access5vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.AccessDataSource_5access#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.AccessDataSource_5access/CS/access5cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.AccessDataSource_5access#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.AccessDataSource_5access/VB/access5vb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -528,8 +528,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.AccessDataSource.%23ctor%2A> constructor to create a new <xref:System.Web.UI.WebControls.AccessDataSource> data source control and bind a <xref:System.Web.UI.WebControls.CheckBoxList> control to data in a Microsoft Access database.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.AccessDataSource_6access#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.AccessDataSource_6access/CS/access6cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.AccessDataSource_6access#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.AccessDataSource_6access/VB/access6vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.AccessDataSource_6access#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.AccessDataSource_6access/CS/access6cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.AccessDataSource_6access#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.AccessDataSource_6access/VB/access6vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -558,8 +558,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.AccessDataSource.%23ctor%2A> constructor to create a new <xref:System.Web.UI.WebControls.AccessDataSource> data source control and bind a <xref:System.Web.UI.WebControls.CheckBoxList> control to data in a Microsoft Access database.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.AccessDataSource_7access#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.AccessDataSource_7access/CS/access7cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.AccessDataSource_7access#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.AccessDataSource_7access/VB/access7vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.AccessDataSource_7access#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.AccessDataSource_7access/CS/access7cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.AccessDataSource_7access#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.AccessDataSource_7access/VB/access7vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -601,8 +601,8 @@
 ## Examples  
  The following code example demonstrates how to display the <xref:System.Web.UI.WebControls.AccessDataSource.ConnectionString%2A> property of the <xref:System.Web.UI.WebControls.AccessDataSource> control in an ASP.NET Web page.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.AccessDataSource_24access#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.AccessDataSource_24access/CS/access24cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.AccessDataSource_24access#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.AccessDataSource_24access/VB/access24vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.AccessDataSource_24access#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.AccessDataSource_24access/CS/access24cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.AccessDataSource_24access#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.AccessDataSource_24access/VB/access24vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -689,18 +689,18 @@
   
  The following code example demonstrates how to set the <xref:System.Web.UI.WebControls.AccessDataSource.DataFile%2A> property to a Northwind.mdb file that resides in the same directory as the Web Forms page.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.AccessDataSource_4access#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.AccessDataSource_4access/CS/access4cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.AccessDataSource_4access#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.AccessDataSource_4access/VB/access4vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.AccessDataSource_4access#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.AccessDataSource_4access/CS/access4cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.AccessDataSource_4access#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.AccessDataSource_4access/VB/access4vb.aspx#1)]  
   
  The following code example demonstrates how to set the <xref:System.Web.UI.WebControls.AccessDataSource.DataFile%2A> property to the virtual path of a Northwind.mdb file that resides in a directory named Database, which is beneath the directory that the Web Forms page is in.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.AccessDataSource_23access#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.AccessDataSource_23access/CS/access23cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.AccessDataSource_23access#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.AccessDataSource_23access/VB/access23vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.AccessDataSource_23access#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.AccessDataSource_23access/CS/access23cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.AccessDataSource_23access#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.AccessDataSource_23access/VB/access23vb.aspx#1)]  
   
  The following code example demonstrates how to set the <xref:System.Web.UI.WebControls.AccessDataSource.DataFile%2A> property to a UNC path of a Northwind.mdb file that is available on a UNC share.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.AccessDataSource_22access#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.AccessDataSource_22access/CS/access22cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.AccessDataSource_22access#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.AccessDataSource_22access/VB/access22vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.AccessDataSource_22access#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.AccessDataSource_22access/CS/access22cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.AccessDataSource_22access#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.AccessDataSource_22access/VB/access22vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -760,8 +760,8 @@
 ## Examples  
  The following code example demonstrates how to display the <xref:System.Web.UI.WebControls.AccessDataSource.ProviderName%2A> property of the <xref:System.Web.UI.WebControls.AccessDataSource> control in a Web Forms page.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.AccessDataSource_25access#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.AccessDataSource_25access/CS/access25cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.AccessDataSource_25access#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.AccessDataSource_25access/VB/access25vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.AccessDataSource_25access#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.AccessDataSource_25access/CS/access25cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.AccessDataSource_25access#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.AccessDataSource_25access/VB/access25vb.aspx#1)]  
   
  ]]></format>
         </remarks>

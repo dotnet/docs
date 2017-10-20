@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataAssemblyImport::EnumFiles"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataAssemblyImport::EnumFiles method [.NET Framework metadata]"
   - "EnumFiles method [.NET Framework metadata]"

@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+- "csharp"
+- "vb"
 helpviewer_keywords: 
   - "object pool, in .NET Framework"
 ms.assetid: 0480e7ff-b6f9-480e-a889-2ed4264d8372

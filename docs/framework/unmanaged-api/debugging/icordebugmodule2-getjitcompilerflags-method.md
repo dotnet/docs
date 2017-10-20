@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugModule2::GetJITCompilerFlags"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetJITCompilerFlags method [.NET Framework debugging]"
   - "ICorDebugModule2::GetJITCompilerFlags method [.NET Framework debugging]"

@@ -17,8 +17,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "StrongNameSignatureSize"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "StrongNameSignatureSize function [.NET Framework strong naming]"
 ms.assetid: 4fde4cd0-f53e-4411-a2fe-fc5c54472f95

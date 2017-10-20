@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedMethod::GetScopeFromOffset"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetScopeFromOffset method [.NET Framework debugging]"
   - "ISymUnmanagedMethod::GetScopeFromOffset method [.NET Framework debugging]"

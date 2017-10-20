@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataEmit::DefineModuleRef"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "DefineModuleRef method [.NET Framework metadata]"
   - "IMetaDataEmit::DefineModuleRef method [.NET Framework metadata]"

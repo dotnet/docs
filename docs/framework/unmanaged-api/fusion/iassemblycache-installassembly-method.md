@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IAssemblyCache::InstallAssembly"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "InstallAssembly method [.NET Framework fusion]"
   - "IAssemblyCache::InstallAssembly method [.NET Framework fusion]"

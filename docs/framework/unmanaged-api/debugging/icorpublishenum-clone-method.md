@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorPublishEnum::Clone"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "Clone method, ICorPublishEnum interface [.NET Framework debugging]"
   - "ICorPublishEnum::Clone method [.NET Framework debugging]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataAssemblyEmit::SetFileProps"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataAssemblyEmit::SetFileProps method [.NET Framework metadata]"
   - "SetFileProps method [.NET Framework metadata]"

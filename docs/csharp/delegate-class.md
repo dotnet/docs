@@ -25,8 +25,8 @@ keyword.
 Let's start with the 'delegate' keyword, because that's primarily what
 you will use as you work with delegates. The code that the
 compiler generates when you use the `delegate` keyword will
-map to method calls that invoke members of the @System.Delegate 
-and @System.MulticastDelegate classes. 
+map to method calls that invoke members of the <xref:System.Delegate> 
+and <xref:System.MulticastDelegate> classes. 
 
 You define a delegate type using syntax that is similar to defining
 a method signature. You just add the `delegate` keyword to the
@@ -169,7 +169,7 @@ have multiple target methods attached to a delegate object.
 The language support described above provides the features
 and support you'll typically need to work with delegates. These
 features are built on two classes in the .NET Core
-framework: @System.Delegate and @"System.MulticastDelegate".
+framework: <xref:System.Delegate> and <xref:System.MulticastDelegate>.
 
 The `System.Delegate` class, and its single direct sub-class,
 `System.MulticastDelegate`, provide the framework support for

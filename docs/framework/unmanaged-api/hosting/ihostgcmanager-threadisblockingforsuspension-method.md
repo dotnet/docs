@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostGCManager::ThreadIsBlockingForSuspension"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostGCManager::ThreadIsBlockingForSuspension method [.NET Framework hosting]"
   - "ThreadIsBlockingForSuspension method [.NET Framework hosting]"

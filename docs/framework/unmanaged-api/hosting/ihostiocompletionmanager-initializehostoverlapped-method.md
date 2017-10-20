@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostIoCompletionManager::InitializeHostOverlapped"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostIoCompletionManager::InitializeHostOverlapped method [.NET Framework hosting]"
   - "InitializeHostOverlapped method [.NET Framework hosting]"

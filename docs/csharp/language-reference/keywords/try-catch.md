@@ -1,6 +1,6 @@
 ---
 title: "try-catch (C# Reference)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -10,8 +10,6 @@ f1_keywords:
   - "try_CSharpKeyword"
   - "catch"
   - "catch_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "catch keyword [C#]"
   - "try-catch statement [C#]"
@@ -19,21 +17,6 @@ ms.assetid: cb5503c7-bfa1-4610-8fc2-ddcd2e84c438
 caps.latest.revision: 45
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # try-catch (C# Reference)
 The try-catch statement consists of a `try` block followed by one or more `catch` clauses, which specify handlers for different exceptions.  
@@ -140,7 +123,7 @@ static void Main()
   
  When control reaches an `await` in the async method, progress in the method is suspended until the awaited task completes. When the task  is complete, execution can resume in the method. For more information, see [Asynchronous Programming with async and await](../../../csharp/programming-guide/concepts/async/index.md) and [Control Flow in Async Programs](../../../csharp/programming-guide/concepts/async/control-flow-in-async-programs.md).  
   
- The completed task to which `await` is applied might be in a faulted state because of an unhandled exception in the method that returns the task. Awaiting the task throws an exception. A task can also end up in a canceled state if the asynchronous process that returns it is canceled. Awaiting a canceled task throws  an `OperationCanceledException`. For more information about how to cancel an asynchronous process, see [Fine-Tuning Your Async Application](http://msdn.microsoft.com/library/daaa32ea-c84c-4761-8230-c8292ffebd74).  
+ The completed task to which `await` is applied might be in a faulted state because of an unhandled exception in the method that returns the task. Awaiting the task throws an exception. A task can also end up in a canceled state if the asynchronous process that returns it is canceled. Awaiting a canceled task throws  an `OperationCanceledException`. For more information about how to cancel an asynchronous process, see [Fine-Tuning Your Async Application](../../programming-guide/concepts/async/fine-tuning-your-async-application.md).  
   
  To catch the exception, await the task in a `try` block, and catch the exception in the associated `catch` block. For an example, see the "Example" section.  
   
@@ -187,4 +170,4 @@ static void Main()
  [Exception Handling Statements](../../../csharp/language-reference/keywords/exception-handling-statements.md)   
  [throw](../../../csharp/language-reference/keywords/throw.md)   
  [try-finally](../../../csharp/language-reference/keywords/try-finally.md)   
- [How to: Explicitly Throw Exceptions](https://msdn.microsoft.com/library/xhcbs8fz)
+ [How to: Explicitly Throw Exceptions](../../../standard/exceptions/how-to-explicitly-throw-exceptions.md)

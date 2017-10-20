@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugChain::GetActiveFrame"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugChain::GetActiveFrame method [.NET Framework debugging]"
   - "GetActiveFrame method, ICorDebugChain interface [.NET Framework debugging]"

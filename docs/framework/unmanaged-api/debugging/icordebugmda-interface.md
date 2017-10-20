@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugMDA"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugMDA interface [.NET Framework debugging]"
 ms.assetid: 8ecbb854-295c-4dd4-b9fc-01ebeac46e06

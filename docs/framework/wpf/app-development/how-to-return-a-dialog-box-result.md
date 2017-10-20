@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "dialog boxes, returning results"
 ms.assetid: 4c5cf286-746b-4052-934d-d80cbf8acba3

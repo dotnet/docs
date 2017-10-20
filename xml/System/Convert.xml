@@ -758,13 +758,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Convert.IsDBNull%2A> method tests whether the `value` parameter is equal to <xref:System.DBNull?displayProperty=nameWithType>. It is equivalent to the following code:  
+ The <xref:System.Convert.IsDBNull%2A> method tests whether the `value` parameter is equal to <xref:System.DBNull.Value?displayProperty=nameWithType>. It is equivalent to the following code:  
   
  [!code-csharp[System.Convert.IsDBNull#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Convert.IsDBNull/cs/Form1.cs#1)]
  [!code-vb[System.Convert.IsDBNull#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Convert.IsDBNull/vb/Form1.vb#1)]  
   
 > [!NOTE]
->  <xref:System.DBNull?displayProperty=nameWithType> is used to indicate a value that is missing. It is not equivalent to `null` or to <xref:System.String.Empty?displayProperty=nameWithType>. Therefore, code such as `Convert.IsDBNull(null)` in C# or `Convert.IsDBNull(Nothing)` in Visual Basic returns`false`.  
+>  <xref:System.DBNull.Value?displayProperty=nameWithType> is used to indicate a value that is missing. It is not equivalent to `null` or to <xref:System.String.Empty?displayProperty=nameWithType>. Therefore, code such as `Convert.IsDBNull(null)` in C# or `Convert.IsDBNull(Nothing)` in Visual Basic returns`false`.  
   
    
   
@@ -1061,7 +1061,7 @@
    
   
 ## Examples  
- The following example calls the <xref:System.Convert.ToBase64String%28System.Byte%5B%5D%2CSystem.Base64FormattingOptions%29?displayProperty=nameWithType> with a <xref:System.Base64FormattingOptions?displayProperty=nameWithType> argument to insert line breaks in the string that is produced by encoding a 100-element byte array.  
+ The following example calls the <xref:System.Convert.ToBase64String%28System.Byte%5B%5D%2CSystem.Base64FormattingOptions%29?displayProperty=nameWithType> with a <xref:System.Base64FormattingOptions.InsertLineBreaks?displayProperty=nameWithType> argument to insert line breaks in the string that is produced by encoding a 100-element byte array.  
   
  [!code-csharp[System.Convert.ToBase64String#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Convert.ToBase64String/cs/ToBase64String3.cs#3)]
  [!code-vb[System.Convert.ToBase64String#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Convert.ToBase64String/vb/ToBase64String3.vb#3)]  
@@ -1792,7 +1792,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a successful conversion to occur, the `value` parameter must equal either <xref:System.Boolean.TrueString?displayProperty=nameWithType>, a constant whose value is `True`, <xref:System.Boolean.FalseString?displayProperty=nameWithType>, a constant whose value is `False`, or it must be `null`. In comparing `value` with <xref:System.Boolean?displayProperty=nameWithType> and <xref:System.Boolean?displayProperty=nameWithType>, the method ignores case as well as leading and trailing white space.  
+ For a successful conversion to occur, the `value` parameter must equal either <xref:System.Boolean.TrueString?displayProperty=nameWithType>, a constant whose value is `True`, <xref:System.Boolean.FalseString?displayProperty=nameWithType>, a constant whose value is `False`, or it must be `null`. In comparing `value` with <xref:System.Boolean.TrueString?displayProperty=nameWithType> and <xref:System.Boolean.FalseString?displayProperty=nameWithType>, the method ignores case as well as leading and trailing white space.  
   
  If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.Boolean.TryParse%2A?displayProperty=nameWithType> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
   
@@ -7186,7 +7186,7 @@
 ## Remarks  
  If `fromBase` is 16, you can prefix the number specified by the `value` parameter with "0x" or "0X".  
   
- Because the negative sign is not supported for non-base 10 numeric representations, the <xref:System.Convert.ToInt16%28System.String%2CSystem.Int32%29> method assumes that negative numbers use two’s complement representation. In other words, the method always interprets the highest-order binary bit of an integer (bit 15) as its sign bit. As a result, it is possible to write code in which a non-base 10 number that is out of the range of the <xref:System.Int16> data type is converted to an <xref:System.Int16> value without the method throwing an exception. The following example increments <xref:System.Int16?displayProperty=nameWithType> by one, converts the resulting number to its hexadecimal string representation, and then calls the <xref:System.Convert.ToInt16%28System.String%2CSystem.Int32%29> method. Instead of throwing an exception, the method displays the message, "0x8000 converts to -32768."  
+ Because the negative sign is not supported for non-base 10 numeric representations, the <xref:System.Convert.ToInt16%28System.String%2CSystem.Int32%29> method assumes that negative numbers use two’s complement representation. In other words, the method always interprets the highest-order binary bit of an integer (bit 15) as its sign bit. As a result, it is possible to write code in which a non-base 10 number that is out of the range of the <xref:System.Int16> data type is converted to an <xref:System.Int16> value without the method throwing an exception. The following example increments <xref:System.Int16.MaxValue?displayProperty=nameWithType> by one, converts the resulting number to its hexadecimal string representation, and then calls the <xref:System.Convert.ToInt16%28System.String%2CSystem.Int32%29> method. Instead of throwing an exception, the method displays the message, "0x8000 converts to -32768."  
   
  [!code-csharp[System.Convert.BaseConversion#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Convert.BaseConversion/cs/Conversion.cs#5)]
  [!code-vb[System.Convert.BaseConversion#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Convert.BaseConversion/vb/Conversion.vb#5)]  
@@ -8138,7 +8138,7 @@
 ## Remarks  
  If `fromBase` is 16, you can prefix the number specified by the `value` parameter with "0x" or "0X".  
   
- Because the negative sign is not supported for non-base 10 numeric representations, the <xref:System.Convert.ToInt32%28System.String%2CSystem.Int32%29> method assumes that negative numbers use two’s complement representation. In other words, the method always interprets the highest-order binary bit of an integer (bit 31) as its sign bit. As a result, it is possible to write code in which a non-base 10 number that is out of the range of the <xref:System.Int32> data type is converted to an <xref:System.Int32> value without the method throwing an exception. The following example increments <xref:System.Int32?displayProperty=nameWithType> by one, converts the resulting number to its hexadecimal string representation, and then calls the <xref:System.Convert.ToInt32%28System.String%2CSystem.Int32%29> method. Instead of throwing an exception, the method displays the message, "0x80000000 converts to -2147483648."  
+ Because the negative sign is not supported for non-base 10 numeric representations, the <xref:System.Convert.ToInt32%28System.String%2CSystem.Int32%29> method assumes that negative numbers use two’s complement representation. In other words, the method always interprets the highest-order binary bit of an integer (bit 31) as its sign bit. As a result, it is possible to write code in which a non-base 10 number that is out of the range of the <xref:System.Int32> data type is converted to an <xref:System.Int32> value without the method throwing an exception. The following example increments <xref:System.Int32.MaxValue?displayProperty=nameWithType> by one, converts the resulting number to its hexadecimal string representation, and then calls the <xref:System.Convert.ToInt32%28System.String%2CSystem.Int32%29> method. Instead of throwing an exception, the method displays the message, "0x80000000 converts to -2147483648."  
   
  [!code-cpp[System.Convert.BaseConversion#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Convert.BaseConversion/cpp/toint_str_int32.cpp#1)]
  [!code-csharp[System.Convert.BaseConversion#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Convert.BaseConversion/cs/Conversion.cs#1)]

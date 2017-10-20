@@ -710,13 +710,13 @@
    
   
 ## Examples  
- The following example shows how to test method parameters for the <xref:System.Reflection.ParameterAttributes?displayProperty=nameWithType>, <xref:System.Reflection.ParameterAttributes?displayProperty=nameWithType>, and <xref:System.Reflection.ParameterAttributes?displayProperty=nameWithType> attributes.  
+ The following example shows how to test method parameters for the <xref:System.Reflection.ParameterAttributes.In?displayProperty=nameWithType>, <xref:System.Reflection.ParameterAttributes.Out?displayProperty=nameWithType>, and <xref:System.Reflection.ParameterAttributes.Optional?displayProperty=nameWithType> attributes.  
   
  The example contains a `DefineMethod` method that does the following:  
   
 -   Creates a dynamic assembly containing a `MyType` type.  
   
--   Adds a `MyMethod` method to `MyType`. `MyMethod` has three parameters. The first parameter is defined with <xref:System.Reflection.ParameterAttributes?displayProperty=nameWithType>, the second with <xref:System.Reflection.ParameterAttributes?displayProperty=nameWithType>, and the third with <xref:System.Reflection.ParameterAttributes?displayProperty=nameWithType>.  
+-   Adds a `MyMethod` method to `MyType`. `MyMethod` has three parameters. The first parameter is defined with <xref:System.Reflection.ParameterAttributes.In?displayProperty=nameWithType>, the second with <xref:System.Reflection.ParameterAttributes.Out?displayProperty=nameWithType>, and the third with <xref:System.Reflection.ParameterAttributes.Optional?displayProperty=nameWithType>.  
   
 -   Calls <xref:System.Reflection.Emit.TypeBuilder.CreateType%2A?displayProperty=nameWithType> to complete the type.  
   
@@ -813,13 +813,13 @@
    
   
 ## Examples  
- The following example shows how to test method parameters for the <xref:System.Reflection.ParameterAttributes?displayProperty=nameWithType>, <xref:System.Reflection.ParameterAttributes?displayProperty=nameWithType>, and <xref:System.Reflection.ParameterAttributes?displayProperty=nameWithType> attributes.  
+ The following example shows how to test method parameters for the <xref:System.Reflection.ParameterAttributes.In?displayProperty=nameWithType>, <xref:System.Reflection.ParameterAttributes.Out?displayProperty=nameWithType>, and <xref:System.Reflection.ParameterAttributes.Optional?displayProperty=nameWithType> attributes.  
   
  The example contains a `DefineMethod` method that does the following:  
   
 -   Creates a dynamic assembly containing a `MyType` type.  
   
--   Adds a `MyMethod` method to `MyType`. `MyMethod` has three parameters. The first parameter is defined with <xref:System.Reflection.ParameterAttributes?displayProperty=nameWithType>, the second with <xref:System.Reflection.ParameterAttributes?displayProperty=nameWithType>, and the third with <xref:System.Reflection.ParameterAttributes?displayProperty=nameWithType>.  
+-   Adds a `MyMethod` method to `MyType`. `MyMethod` has three parameters. The first parameter is defined with <xref:System.Reflection.ParameterAttributes.In?displayProperty=nameWithType>, the second with <xref:System.Reflection.ParameterAttributes.Out?displayProperty=nameWithType>, and the third with <xref:System.Reflection.ParameterAttributes.Optional?displayProperty=nameWithType>.  
   
 -   Calls <xref:System.Reflection.Emit.TypeBuilder.CreateType%2A?displayProperty=nameWithType> to complete the type.  
   
@@ -877,13 +877,13 @@
    
   
 ## Examples  
- The following example shows how to test method parameters for the <xref:System.Reflection.ParameterAttributes?displayProperty=nameWithType>, <xref:System.Reflection.ParameterAttributes?displayProperty=nameWithType>, and <xref:System.Reflection.ParameterAttributes?displayProperty=nameWithType> attributes.  
+ The following example shows how to test method parameters for the <xref:System.Reflection.ParameterAttributes.In?displayProperty=nameWithType>, <xref:System.Reflection.ParameterAttributes.Out?displayProperty=nameWithType>, and <xref:System.Reflection.ParameterAttributes.Optional?displayProperty=nameWithType> attributes.  
   
  The example contains a `DefineMethod` method that does the following:  
   
 -   Creates a dynamic assembly containing a `MyType` type.  
   
--   Adds a `MyMethod` method to `MyType`. `MyMethod` has three parameters. The first parameter is defined with <xref:System.Reflection.ParameterAttributes?displayProperty=nameWithType>, the second with <xref:System.Reflection.ParameterAttributes?displayProperty=nameWithType>, and the third with <xref:System.Reflection.ParameterAttributes?displayProperty=nameWithType>.  
+-   Adds a `MyMethod` method to `MyType`. `MyMethod` has three parameters. The first parameter is defined with <xref:System.Reflection.ParameterAttributes.In?displayProperty=nameWithType>, the second with <xref:System.Reflection.ParameterAttributes.Out?displayProperty=nameWithType>, and the third with <xref:System.Reflection.ParameterAttributes.Optional?displayProperty=nameWithType>.  
   
 -   Calls <xref:System.Reflection.Emit.TypeBuilder.CreateType%2A?displayProperty=nameWithType> to complete the type.  
   

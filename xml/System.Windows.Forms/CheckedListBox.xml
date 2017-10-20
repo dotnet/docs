@@ -536,7 +536,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event is used by an owner-drawn <xref:System.Windows.Forms.CheckedListBox>. The event is raised only when the <xref:System.Windows.Forms.CheckedListBox.DrawMode%2A> property is set to <xref:System.Windows.Forms.DrawMode?displayProperty=nameWithType> or <xref:System.Windows.Forms.DrawMode?displayProperty=nameWithType>. You can use this event to perform the tasks needed to draw items in the <xref:System.Windows.Forms.CheckedListBox>. If you have a variable-sized item (that is, <xref:System.Windows.Forms.CheckedListBox.DrawMode%2A> is set to <xref:System.Windows.Forms.DrawMode?displayProperty=nameWithType>), the <xref:System.Windows.Forms.CheckedListBox.MeasureItem> event is raised before the item is drawn. You can create an event handler for the <xref:System.Windows.Forms.CheckedListBox.MeasureItem> event to specify the size for the item that you are going to draw in your event handler for the <xref:System.Windows.Forms.CheckedListBox.DrawItem> event.  
+ This event is used by an owner-drawn <xref:System.Windows.Forms.CheckedListBox>. The event is raised only when the <xref:System.Windows.Forms.CheckedListBox.DrawMode%2A> property is set to <xref:System.Windows.Forms.DrawMode.OwnerDrawFixed?displayProperty=nameWithType> or <xref:System.Windows.Forms.DrawMode.OwnerDrawVariable?displayProperty=nameWithType>. You can use this event to perform the tasks needed to draw items in the <xref:System.Windows.Forms.CheckedListBox>. If you have a variable-sized item (that is, <xref:System.Windows.Forms.CheckedListBox.DrawMode%2A> is set to <xref:System.Windows.Forms.DrawMode.OwnerDrawVariable?displayProperty=nameWithType>), the <xref:System.Windows.Forms.CheckedListBox.MeasureItem> event is raised before the item is drawn. You can create an event handler for the <xref:System.Windows.Forms.CheckedListBox.MeasureItem> event to specify the size for the item that you are going to draw in your event handler for the <xref:System.Windows.Forms.CheckedListBox.DrawItem> event.  
   
  This event is not relevant to this class.  
   
@@ -1067,7 +1067,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the spacebar is pressed and the <xref:System.Windows.Forms.CheckedListBox.SelectionMode%2A> property is not set to <xref:System.Windows.Forms.SelectionMode?displayProperty=nameWithType>, the <xref:System.Windows.Forms.CheckedListBox.OnKeyPress%2A> method switches the check state of the item currently selected.  
+ If the spacebar is pressed and the <xref:System.Windows.Forms.CheckedListBox.SelectionMode%2A> property is not set to <xref:System.Windows.Forms.SelectionMode.None?displayProperty=nameWithType>, the <xref:System.Windows.Forms.CheckedListBox.OnKeyPress%2A> method switches the check state of the item currently selected.  
   
  Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
   

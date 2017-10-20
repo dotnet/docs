@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "AssemblyAttributesGoHereS"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "AssemblyAttributesGoHereS type"
   - "Alink API, AssemblyAttributesGoHereS type"

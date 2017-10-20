@@ -128,8 +128,8 @@
 ## Examples  
  The following code example shows how to set templates for each of the three template types supported by the <xref:System.Web.UI.WebControls.LoginView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[LoginViewClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginViewClass/CS/loginviewclasscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[LoginViewClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginViewClass/VB/loginviewclassvb.aspx#1)]  -->  
+ [!code-aspx-csharp[LoginViewClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginViewClass/CS/loginviewclasscs.aspx#1)]
+ [!code-aspx-vb[LoginViewClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginViewClass/VB/loginviewclassvb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -192,8 +192,8 @@
 ## Examples  
  The following code example uses the template specified in the <xref:System.Web.UI.WebControls.LoginView.AnonymousTemplate%2A> template to display an invitation to sign up for personalized services.  
   
- <!-- TODO: review snippet reference [!code-csharp[LoginViewAnonymousTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginViewAnonymousTemplate/CS/loginviewanonymoustemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[LoginViewAnonymousTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginViewAnonymousTemplate/VB/loginviewanonymoustemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[LoginViewAnonymousTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginViewAnonymousTemplate/CS/loginviewanonymoustemplatecs.aspx#1)]
+ [!code-aspx-vb[LoginViewAnonymousTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginViewAnonymousTemplate/VB/loginviewanonymoustemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -398,8 +398,8 @@
 ## Examples  
  The following code example uses the <xref:System.Web.UI.WebControls.LoginView.LoggedInTemplate%2A> template to display links to personalized information for logged-in users.  
   
- <!-- TODO: review snippet reference [!code-csharp[LoginViewAnonymousTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginViewAnonymousTemplate/CS/loginviewanonymoustemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[LoginViewAnonymousTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginViewAnonymousTemplate/VB/loginviewanonymoustemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[LoginViewAnonymousTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginViewAnonymousTemplate/CS/loginviewanonymoustemplatecs.aspx#1)]
+ [!code-aspx-vb[LoginViewAnonymousTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginViewAnonymousTemplate/VB/loginviewanonymoustemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -625,8 +625,8 @@
 ## Examples  
  The following code example demonstrates using the <xref:System.Web.UI.WebControls.LoginView.RoleGroups%2A> collection. Because the <xref:System.Web.UI.WebControls.LoginView.AnonymousTemplate%2A> and <xref:System.Web.UI.WebControls.LoginView.LoggedInTemplate%2A> properties are not set, the content is displayed only to users who belong to roles with a defined content template.  
   
- <!-- TODO: review snippet reference [!code-csharp[LoginViewRoleGroups#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginViewRoleGroups/CS/loginviewrolegroupscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[LoginViewRoleGroups#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginViewRoleGroups/VB/loginviewrolegroupsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[LoginViewRoleGroups#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginViewRoleGroups/CS/loginviewrolegroupscs.aspx#1)]
+ [!code-aspx-vb[LoginViewRoleGroups#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginViewRoleGroups/VB/loginviewrolegroupsvb.aspx#1)]  
   
  ]]></format>
         </remarks>

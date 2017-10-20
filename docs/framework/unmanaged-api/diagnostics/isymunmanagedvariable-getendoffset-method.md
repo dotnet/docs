@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedVariable::GetEndOffset"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedVariable::GetEndOffset method [.NET Framework debugging]"
   - "GetEndOffset method, ISymUnmanagedVariable interface [.NET Framework debugging]"

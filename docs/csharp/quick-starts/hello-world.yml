@@ -17,22 +17,25 @@ items:
 - title: Run your first C# program
   durationInMinutes: 2
   content: |
-    Run the following code in the interactive window. To do that, type code block in the interactive window and click the **Run** button:
+    Run the following code in the interactive window. To do that, type the following code block in the interactive window and click the **Run** button:
 
     ```csharp
     Console.WriteLine("Hello World!");
     ```
 
-    Congratulations! You've run your first C# program. It's a simple program that prints the message "Hello World!".
-    Let's move on and explore more.
-    
+    Congratulations! You've run your first C# program. It's a simple program that prints the message "Hello World!". It used the <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> method to print that message. `Console` is a type that represents the console window. `WriteLine` is a method of the `Console` type that prints a line of text to that text console.
+
+    Let's move on and explore more. The rest of this lesson explores working with the `string` type, which represents text in C#. Like the `Console` type, the `string` type has methods. The `string` methods work with text. 
+
+    > [!NOTE]
+    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
+
 - title: Declare and use variables
   durationInMinutes: 3
   content: |
     Your first program printed the `string` "Hello World!" on
-    the screen. The rest of this lesson explores working with
-    the `string` type, which represents text in C#.
-
+    the screen. 
+    
     > [!TIP]
     > As you explore C# (or any programming language), you'll
     > make mistakes when you write code. The **compiler** will
@@ -74,6 +77,10 @@ items:
     ```
 
     Click **Run** again to see the results.
+
+    > [!NOTE]
+    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
+
 - title: Work with strings
   durationInMinutes: 5
   content: |
@@ -99,6 +106,10 @@ items:
     > writes text to the screen. You've learned how to declare variables and
     > concatenate strings together. Experiment in the interactive window. Write
     > some more messages yourself. Build strings using the `+` operator.
+
+    > [!NOTE]
+    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
+
 - title: Do more with strings
   durationInMinutes: 5
   content: |
@@ -139,6 +150,10 @@ items:
     Console.WriteLine(message.ToUpper());
     Console.WriteLine(message.ToLower());
     ```
+
+    > [!NOTE]
+    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
+
 - title: Search strings
   durationInMinutes: 10
   content: |
@@ -168,6 +183,9 @@ items:
     > Watch your punctuation when you test for the text at the end of the string. If the string
     > ends with a period, you must check for a string that ends with a period.
 
+    > [!NOTE]
+    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
+
 - title: Complete challenge
   durationInMinutes: 3
   content: |
@@ -181,6 +199,10 @@ items:
     Console.WriteLine(message.EndsWith("hello"));
     Console.WriteLine(message.EndsWith("goodbye"));
     ```
+
+    > [!NOTE]
+    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
+    
 - content: |
     You've completed the "Hello C#" tutorial.
 

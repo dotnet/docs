@@ -1,6 +1,6 @@
 ---
 title: "switch keyword (C# Reference)"
-ms.date: "2017-03-07"
+ms.date: 03/07/2017
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -10,8 +10,6 @@ f1_keywords:
   - "switch"
   - "case"
   - "case_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "switch statement [C#]"
   - "switch keyword [C#]"
@@ -21,21 +19,6 @@ ms.assetid: 44bae8b8-8841-4d85-826b-8a94277daecb
 caps.latest.revision: 47
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # switch (C# Reference)
 `switch` is a selection statement that chooses a single *switch section* to execute from a list of candidates based on a pattern match with the *match expression*. 
@@ -149,7 +132,7 @@ The constant expression is evaluated as follows:
 
 - Otherwise, the value of the expression is determined by a call to the static [Object.Equals(expr, constant)](xref:System.Object.Equals(System.Object,System.Object)) method.  
 
-The following example uses the constant pattern to determine whether a particular date is a weekend, the first day of the work week, the last day of the work week, or the middle of the work week. It evaluates the [DateTime.DayOfWeek](xref:System.DateTime.DayOfWeek) property of the current day against the members of the @System.DayOfWeek enumeration. 
+The following example uses the constant pattern to determine whether a particular date is a weekend, the first day of the work week, the last day of the work week, or the middle of the work week. It evaluates the <xref:System.DateTime.DayOfWeek?displayProperty=nameWithType> property of the current day against the members of the <xref:System.DayOfWeek> enumeration. 
 
 [!code-cs[switch#7](../../../../samples/snippets/csharp/language-reference/keywords/switch/const-pattern.cs#1)]
 

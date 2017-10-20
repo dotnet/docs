@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedWriter::CloseScope"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CloseScope method [.NET Framework debugging]"
   - "ISymUnmanagedWriter::CloseScope method [.NET Framework debugging]"

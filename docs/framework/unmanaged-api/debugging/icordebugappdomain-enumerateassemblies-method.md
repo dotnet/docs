@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugAppDomain::EnumerateAssemblies"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugAppDomain::EnumerateAssemblies method [.NET Framework debugging]"
   - "EnumerateAssemblies method [.NET Framework debugging]"

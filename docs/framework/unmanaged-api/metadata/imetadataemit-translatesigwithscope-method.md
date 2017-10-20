@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataEmit::TranslateSigWithScope"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "TranslateSigWithScope method [.NET Framework metadata]"
   - "IMetaDataEmit::TranslateSigWithScope method [.NET Framework metadata]"

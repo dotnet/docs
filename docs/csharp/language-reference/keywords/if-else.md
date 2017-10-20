@@ -1,6 +1,6 @@
 ---
 title: "if-else (C# Reference)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -10,8 +10,6 @@ f1_keywords:
   - "else"
   - "else_CSharpKeyword"
   - "if"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "else keyword [C#]"
   - "if keyword [C#]"
@@ -19,21 +17,6 @@ ms.assetid: d9a1d562-8cf5-4bd4-9ba7-8ad970cd25b2
 caps.latest.revision: 32
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # if-else (C# Reference)
 An `if` statement identifies which statement to run based on the value of a `Boolean` expression. In the following example, the `Boolean` variable `result` is set to `true` and then checked in the `if` statement. The output is `The condition is true`.  

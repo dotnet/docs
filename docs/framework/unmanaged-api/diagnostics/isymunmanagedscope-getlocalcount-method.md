@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedScope::GetLocalCount"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetLocalCount method [.NET Framework debugging]"
   - "ISymUnmanagedScope::GetLocalCount method [.NET Framework debugging]"

@@ -1,18 +1,12 @@
 ---
 title: "XML Documentation Comments (C# Programming Guide)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 f1_keywords: 
   - "cs.xml"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "XML [C#], code comments"
   - "comments [C#], XML"
@@ -24,21 +18,6 @@ ms.assetid: 803b7f7b-7428-4725-b5db-9a6cff273199
 caps.latest.revision: 26
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # XML Documentation Comments (C# Programming Guide)
 In Visual C# you can create documentation for your code by including XML elements in special comment fields (indicated by triple slashes) in the source code directly before the code block to which the comments refer, for example:  

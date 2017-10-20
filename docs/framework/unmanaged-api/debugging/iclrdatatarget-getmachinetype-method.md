@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRDataTarget::GetMachineType"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRDataTarget::GetMachineType method [.NET Framework debugging]"
   - "GetMachineType method [.NET Framework debugging]"

@@ -1,12 +1,10 @@
 ---
 title: "How to: Compare strings (C# Programming Guide)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "strings [C#], comparison"
   - "comparing strings [C#]"

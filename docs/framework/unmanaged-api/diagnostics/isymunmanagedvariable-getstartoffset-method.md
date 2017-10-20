@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedVariable::GetStartOffset"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetStartOffset method, ISymUnmanagedVariable interface [.NET Framework debugging]"
   - "ISymUnmanagedVariable::GetStartOffset method [.NET Framework debugging]"

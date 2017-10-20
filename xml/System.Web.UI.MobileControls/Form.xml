@@ -56,8 +56,8 @@
 > [!NOTE]
 >  The following code example uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Syntax Overview](http://msdn.microsoft.com/library/09074b20-ece9-46fa-bc8f-ab2595ed2c02).  
   
- <!-- TODO: review snippet reference [!code-csharp[MobileFormSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileFormSample/cs/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MobileFormSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileFormSample/vb/Default.aspx#1)]  -->  
+ [!code-aspx-csharp[MobileFormSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileFormSample/cs/Default.aspx#1)]
+ [!code-aspx-vb[MobileFormSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileFormSample/vb/Default.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -156,7 +156,7 @@
   
  [!code-csharp[MobileFormSample#3](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileFormSample/cs/Default.aspx#3)]
  [!code-vb[MobileFormSample#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileFormSample/vb/Default.aspx#3)]  
-<!-- TODO: review snippet reference [!code-vb[MobileFormSample#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileFormSample/vb/Default2.aspx#8)]  -->  
+[!code-aspx-vb[MobileFormSample#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileFormSample/vb/Default2.aspx#8)]  
   
  ]]></format>
         </remarks>
@@ -249,8 +249,8 @@
 > [!NOTE]
 >  The following code example uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Syntax Overview](http://msdn.microsoft.com/library/09074b20-ece9-46fa-bc8f-ab2595ed2c02).  
   
- <!-- TODO: review snippet reference [!code-csharp[MobileFormSample#4](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileFormSample/cs/Default2.aspx#4)]  -->
- <!-- TODO: review snippet reference [!code-vb[MobileFormSample#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileFormSample/vb/Default2.aspx#4)]  -->  
+ [!code-aspx-csharp[MobileFormSample#4](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileFormSample/cs/Default2.aspx#4)]
+ [!code-aspx-vb[MobileFormSample#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileFormSample/vb/Default2.aspx#4)]  
   
  ]]></format>
         </remarks>
@@ -390,7 +390,7 @@
   
  In this example, since no filter is specified for the `<Choice>` element, it will always be the <xref:System.Web.UI.MobileControls.DeviceSpecific.SelectedChoice%2A>. To specify a filter change the element to: `<Choice Filter="isPocketIE">` and include a Web.config file that defines the filters you want to use.  
   
- <!-- TODO: review snippet reference [!code-vb[MobileFormSample#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileFormSample/vb/Default2.aspx#8)]  -->  
+ [!code-aspx-vb[MobileFormSample#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileFormSample/vb/Default2.aspx#8)]  
   
  ]]></format>
         </remarks>

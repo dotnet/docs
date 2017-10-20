@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorManifestResourceFlags"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorManifestResourceFlags enumeration [.NET Framework metadata]"
 ms.assetid: 1b0306b7-622b-4b57-8edc-3c713bb147ae

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedReaderSymbolSearchInfo::GetSymbolSearchInfoCount"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetSymbolSearchInfoCount method [.NET Framework debugging]"
   - "ISymUnmanagedReaderSymbolSearchInfo::GetSymbolSearchInfoCount method [.NET Framework debugging]"

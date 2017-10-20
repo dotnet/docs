@@ -31,8 +31,8 @@
 ## Examples  
  The following example shows how to programmatically access the <xref:System.Web.UI.HtmlControls.HtmlHead> control to dynamically add `title` and `style` elements to the `head` element of the page.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.HtmlControls.HtmlHeadClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlHeadClass/CS/htmlheadclasscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.HtmlControls.HtmlHeadClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlHeadClass/VB/htmlheadclassvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.HtmlControls.HtmlHeadClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlHeadClass/CS/htmlheadclasscs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.HtmlControls.HtmlHeadClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlHeadClass/VB/htmlheadclassvb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -65,8 +65,8 @@
 ## Examples  
  The following example shows how to programmatically add an <xref:System.Web.UI.HtmlControls.HtmlHead> control to a page and add `title` and `link` elements to it.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.HtmlControls.HtmlHeadCstr#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlHeadCstr/CS/htmlheadcstrcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.HtmlControls.HtmlHeadCstr#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlHeadCstr/VB/htmlheadcstrvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.HtmlControls.HtmlHeadCstr#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlHeadCstr/CS/htmlheadcstrcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.HtmlControls.HtmlHeadCstr#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlHeadCstr/VB/htmlheadcstrvb.aspx#1)]  
   
  ]]></format>
         </remarks>

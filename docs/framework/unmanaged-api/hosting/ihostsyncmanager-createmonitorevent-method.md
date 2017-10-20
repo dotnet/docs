@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostSyncManager::CreateMonitorEvent"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CreateMonitorEvent method [.NET Framework hosting]"
   - "IHostSyncManager::CreateMonitorEvent method [.NET Framework hosting]"

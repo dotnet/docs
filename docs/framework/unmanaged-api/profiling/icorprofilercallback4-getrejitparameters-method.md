@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback4::GetReJITParameters"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerCallback4::GetReJITParameters method [.NET Framework profiling]"
   - "GetReJITParameters method, ICorProfilerCallback4 interface [.NET Framework profiling]"

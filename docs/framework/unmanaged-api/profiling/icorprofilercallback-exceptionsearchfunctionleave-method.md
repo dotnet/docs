@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::ExceptionSearchFunctionLeave"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ExceptionSearchFunctionLeave method [.NET Framework profiling]"
   - "ICorProfilerCallback::ExceptionSearchFunctionLeave method [.NET Framework profiling]"

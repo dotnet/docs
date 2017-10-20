@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "TransportWithMessageCredentials"
 ms.assetid: 6cc35346-c37a-4859-b82b-946c0ba6e68f

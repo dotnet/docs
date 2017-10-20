@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataTables::GetColumnInfo"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataTables::GetColumnInfo method [.NET Framework metadata]"
   - "GetColumnInfo method [.NET Framework metadata]"

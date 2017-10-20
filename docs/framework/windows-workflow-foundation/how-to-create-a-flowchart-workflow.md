@@ -7,6 +7,9 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 ms.assetid: 185d7aea-68a6-4bd8-adde-45050f33170a
 caps.latest.revision: 7
 author: "Erikre"
@@ -119,7 +122,7 @@ Workflows can be constructed from built-in activities as well as from custom act
   
 9. Click the second **FlowDecision** activity to select it. In the **Properties Window**, type the following expression into the **Condition** property value box.  
   
-    ```vb-c#  
+    ```
     Guess < Target  
     ```  
   
@@ -127,7 +130,7 @@ Workflows can be constructed from built-in activities as well as from custom act
   
 11. Click the leftmost **WriteLine** activity to select it, and type the following expression into the **Text** property value box in the **Properties Window**.  
   
-    ```vb-c#  
+    ```
     "Your guess is too low."  
     ```  
   
@@ -135,7 +138,7 @@ Workflows can be constructed from built-in activities as well as from custom act
   
 13. Click the rightmost **WriteLine** activity to select it, and type the following expression into the **Text** property value box in the **Properties Window**.  
   
-    ```vb-c#  
+    ```
     "Your guess is too high."  
     ```  
   

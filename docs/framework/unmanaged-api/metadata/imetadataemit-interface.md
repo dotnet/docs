@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataEmit"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataEmit interface [.NET Framework metadata]"
 ms.assetid: 3b48fd47-7397-4e2c-8bec-8157aa08978c

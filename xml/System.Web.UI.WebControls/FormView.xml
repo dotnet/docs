@@ -315,24 +315,24 @@
 ## Examples  
  The following example demonstrates how to use a <xref:System.Web.UI.WebControls.FormView> control to display the values from a <xref:System.Web.UI.WebControls.SqlDataSource> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewSimple#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewSimple/CS/formviewsimplecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewSimple#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewSimple/VB/formviewsimplevb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewSimple#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewSimple/CS/formviewsimplecs.aspx#1)]
+ [!code-aspx-vb[FormViewSimple#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewSimple/VB/formviewsimplevb.aspx#1)]  
   
  The following example demonstrates how to use a <xref:System.Web.UI.WebControls.FormView> control to edit existing records.  
   
 > [!IMPORTANT]
 >  The control in this example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[FormView#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormView/CS/formvieweditcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormView#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormView/VB/formvieweditvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormView#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormView/CS/formvieweditcs.aspx#1)]
+ [!code-aspx-vb[FormView#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormView/VB/formvieweditvb.aspx#1)]  
   
  The following example demonstrates how to use a <xref:System.Web.UI.WebControls.FormView> control to insert new records.  
   
 > [!IMPORTANT]
 >  The control in this example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewInsertItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertItemTemplate/CS/formviewinsertitemtemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewInsertItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertItemTemplate/VB/formviewinsertitemtemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewInsertItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertItemTemplate/CS/formviewinsertitemtemplatecs.aspx#1)]
+ [!code-aspx-vb[FormViewInsertItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertItemTemplate/VB/formviewinsertitemtemplatevb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -361,8 +361,8 @@
 ## Examples  
  The following example demonstrates how to dynamically add a <xref:System.Web.UI.WebControls.FormView> control to a page.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewCtor/CS/formviewctorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewCtor/VB/formviewctorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewCtor/CS/formviewctorcs.aspx#1)]
+ [!code-aspx-vb[FormViewCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewCtor/VB/formviewctorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -426,8 +426,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.AllowPaging%2A> property to enable the paging feature in a <xref:System.Web.UI.WebControls.FormView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewAllowPaging#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewAllowPaging/CS/formviewallowpagingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewAllowPaging#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewAllowPaging/VB/formviewallowpagingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewAllowPaging#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewAllowPaging/CS/formviewallowpagingcs.aspx#1)]
+ [!code-aspx-vb[FormViewAllowPaging#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewAllowPaging/VB/formviewallowpagingvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -473,8 +473,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.BackImageUrl%2A> property to display a custom image in the background of a <xref:System.Web.UI.WebControls.FormView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewBackImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewBackImageUrl/CS/formviewbackimageurlcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewBackImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewBackImageUrl/VB/formviewbackimageurlvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewBackImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewBackImageUrl/CS/formviewbackimageurlcs.aspx#1)]
+ [!code-aspx-vb[FormViewBackImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewBackImageUrl/VB/formviewbackimageurlvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -519,8 +519,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.BottomPagerRow%2A> property to access the pager row displayed at the bottom of a <xref:System.Web.UI.WebControls.FormView> control. The pager row is then updated with additional content.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewPagerTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewPagerTemplate/CS/formviewpagertemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewPagerTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewPagerTemplate/VB/formviewpagertemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewPagerTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewPagerTemplate/CS/formviewpagertemplatecs.aspx#1)]
+ [!code-aspx-vb[FormViewPagerTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewPagerTemplate/VB/formviewpagertemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -564,8 +564,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.Caption%2A> property to specify the text for the HTML caption element rendered in a <xref:System.Web.UI.WebControls.FormView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewCaption#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewCaption/CS/formviewcaptioncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewCaption#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewCaption/VB/formviewcaptionvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewCaption#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewCaption/CS/formviewcaptioncs.aspx#1)]
+ [!code-aspx-vb[FormViewCaption#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewCaption/VB/formviewcaptionvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -617,8 +617,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.CaptionAlign%2A> property to specify that the HTML caption element in a <xref:System.Web.UI.WebControls.FormView> control should be rendered on the left side of the control.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewCaption#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewCaption/CS/formviewcaptioncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewCaption#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewCaption/VB/formviewcaptionvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewCaption#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewCaption/CS/formviewcaptioncs.aspx#1)]
+ [!code-aspx-vb[FormViewCaption#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewCaption/VB/formviewcaptionvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -663,8 +663,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.CellPadding%2A> property to specify the amount of spacing between the contents of a cell and the cell's border.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewCellPadding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewCellPadding/CS/formviewcellpaddingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewCellPadding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewCellPadding/VB/formviewcellpaddingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewCellPadding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewCellPadding/CS/formviewcellpaddingcs.aspx#1)]
+ [!code-aspx-vb[FormViewCellPadding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewCellPadding/VB/formviewcellpaddingvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -706,8 +706,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.CellSpacing%2A> property to specify the amount of spacing between adjacent cells.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewCellPadding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewCellPadding/CS/formviewcellpaddingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewCellPadding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewCellPadding/VB/formviewcellpaddingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewCellPadding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewCellPadding/CS/formviewcellpaddingcs.aspx#1)]
+ [!code-aspx-vb[FormViewCellPadding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewCellPadding/VB/formviewcellpaddingvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -751,8 +751,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.ChangeMode%2A> method to return the <xref:System.Web.UI.WebControls.FormView> control to read-only mode whenever the user navigates to another record.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewChangeMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewChangeMode/CS/formviewchangemodecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewChangeMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewChangeMode/VB/formviewchangemodevb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewChangeMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewChangeMode/CS/formviewchangemodecs.aspx#1)]
+ [!code-aspx-vb[FormViewChangeMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewChangeMode/VB/formviewchangemodevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -963,8 +963,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.CurrentMode%2A> property to determine whether the <xref:System.Web.UI.WebControls.FormView> control is in edit, insert, or read-only mode. If the user attempts to navigate to another record while the <xref:System.Web.UI.WebControls.FormView> control is in edit more, the paging operation is canceled.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewCurrentMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewCurrentMode/CS/formviewcurrentmodecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewCurrentMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewCurrentMode/VB/formviewcurrentmodevb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewCurrentMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewCurrentMode/CS/formviewcurrentmodecs.aspx#1)]
+ [!code-aspx-vb[FormViewCurrentMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewCurrentMode/VB/formviewcurrentmodevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1032,8 +1032,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.DataItem%2A> property to determine the value of a field in the data item.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewCtor/CS/formviewctorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewCtor/VB/formviewctorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewCtor/CS/formviewctorcs.aspx#1)]
+ [!code-aspx-vb[FormViewCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewCtor/VB/formviewctorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1145,8 +1145,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.DataKey%2A> property to determine the value of the key field.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewDataKey#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewDataKey/CS/formviewdatakeycs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewDataKey#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewDataKey/VB/formviewdatakeyvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewDataKey#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewDataKey/CS/formviewdatakeycs.aspx#1)]
+ [!code-aspx-vb[FormViewDataKey#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewDataKey/VB/formviewdatakeyvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1192,8 +1192,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.DataKeyNames%2A> property to specify the key field for the data source bound to the <xref:System.Web.UI.WebControls.FormView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewEditItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewEditItemTemplate/CS/formviewedititemtemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewEditItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewEditItemTemplate/VB/formviewedititemtemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewEditItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewEditItemTemplate/CS/formviewedititemtemplatecs.aspx#1)]
+ [!code-aspx-vb[FormViewEditItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewEditItemTemplate/VB/formviewedititemtemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1238,8 +1238,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.DefaultMode%2A> property to keep a <xref:System.Web.UI.WebControls.FormView> control in edit mode after an update operation.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewDefaultMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewDefaultMode/CS/formviewdefaultmodecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewDefaultMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewDefaultMode/VB/formviewdefaultmodevb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewDefaultMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewDefaultMode/CS/formviewdefaultmodecs.aspx#1)]
+ [!code-aspx-vb[FormViewDefaultMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewDefaultMode/VB/formviewdefaultmodevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1272,8 +1272,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.DeleteItem%2A> method to programmatically delete the current record in a <xref:System.Web.UI.WebControls.FormView> control from the data source.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewDeleteItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewDeleteItem/CS/formviewdeleteitemcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewDeleteItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewDeleteItem/VB/formviewdeleteitemvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewDeleteItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewDeleteItem/CS/formviewdeleteitemcs.aspx#1)]
+ [!code-aspx-vb[FormViewDeleteItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewDeleteItem/VB/formviewdeleteitemvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1369,8 +1369,8 @@
 ## Examples  
  The following example demonstrates how to define a custom template for a data row in edit mode.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewEditItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewEditItemTemplate/CS/formviewedititemtemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewEditItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewEditItemTemplate/VB/formviewedititemtemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewEditItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewEditItemTemplate/CS/formviewedititemtemplatecs.aspx#1)]
+ [!code-aspx-vb[FormViewEditItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewEditItemTemplate/VB/formviewedititemtemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1422,8 +1422,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.EditRowStyle%2A> property to specify a custom style for a data row when a <xref:System.Web.UI.WebControls.FormView> control is in edit mode.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewEditItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewEditItemTemplate/CS/formviewedititemtemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewEditItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewEditItemTemplate/VB/formviewedititemtemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewEditItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewEditItemTemplate/CS/formviewedititemtemplatecs.aspx#1)]
+ [!code-aspx-vb[FormViewEditItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewEditItemTemplate/VB/formviewedititemtemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1475,8 +1475,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.EmptyDataRowStyle%2A> property to specify a custom style for the empty data row displayed when a <xref:System.Web.UI.WebControls.FormView> control is bound to a data source that does not contain any records.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewEmptyDataText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewEmptyDataText/CS/formviewemptydatatextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewEmptyDataText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewEmptyDataText/VB/formviewemptydatatextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewEmptyDataText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewEmptyDataText/CS/formviewemptydatatextcs.aspx#1)]
+ [!code-aspx-vb[FormViewEmptyDataText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewEmptyDataText/VB/formviewemptydatatextvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1525,8 +1525,8 @@
 ## Examples  
  The following example demonstrates how to define a custom template for the empty data row displayed when a <xref:System.Web.UI.WebControls.FormView> control is bound to a data source that does not contain any records.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewEmptyDataTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewEmptyDataTemplate/CS/formviewemptydatatemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewEmptyDataTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewEmptyDataTemplate/VB/formviewemptydatatemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewEmptyDataTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewEmptyDataTemplate/CS/formviewemptydatatemplatecs.aspx#1)]
+ [!code-aspx-vb[FormViewEmptyDataTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewEmptyDataTemplate/VB/formviewemptydatatemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1571,8 +1571,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.EmptyDataText%2A> property to specify the text to display in the empty data row.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewEmptyDataText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewEmptyDataText/CS/formviewemptydatatextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewEmptyDataText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewEmptyDataText/VB/formviewemptydatatextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewEmptyDataText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewEmptyDataText/CS/formviewemptydatatextcs.aspx#1)]
+ [!code-aspx-vb[FormViewEmptyDataText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewEmptyDataText/VB/formviewemptydatatextvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1710,8 +1710,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.FooterRow%2A> property to programmatically modify the properties of the footer row during the <xref:System.Web.UI.WebControls.FormView.ItemCreated> event.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewFooterTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewFooterTemplate/CS/formviewfootertemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewFooterTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewFooterTemplate/VB/formviewfootertemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewFooterTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewFooterTemplate/CS/formviewfootertemplatecs.aspx#1)]
+ [!code-aspx-vb[FormViewFooterTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewFooterTemplate/VB/formviewfootertemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1763,8 +1763,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.FooterStyle%2A> property to specify a custom style for the footer row.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewFooterText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewFooterText/CS/formviewfootertextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewFooterText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewFooterText/VB/formviewfootertextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewFooterText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewFooterText/CS/formviewfootertextcs.aspx#1)]
+ [!code-aspx-vb[FormViewFooterText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewFooterText/VB/formviewfootertextvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1813,8 +1813,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.FooterTemplate%2A> property to define a custom template to render for the footer row.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewFooterTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewFooterTemplate/CS/formviewfootertemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewFooterTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewFooterTemplate/VB/formviewfootertemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewFooterTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewFooterTemplate/CS/formviewfootertemplatecs.aspx#1)]
+ [!code-aspx-vb[FormViewFooterTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewFooterTemplate/VB/formviewfootertemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1859,8 +1859,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.FooterText%2A> property to specify the text to display in the footer row.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewFooterText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewFooterText/CS/formviewfootertextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewFooterText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewFooterText/VB/formviewfootertextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewFooterText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewFooterText/CS/formviewfootertextcs.aspx#1)]
+ [!code-aspx-vb[FormViewFooterText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewFooterText/VB/formviewfootertextvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1904,8 +1904,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.GridLines%2A> property to display both the vertical and horizontal gridlines.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewCellPadding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewCellPadding/CS/formviewcellpaddingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewCellPadding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewCellPadding/VB/formviewcellpaddingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewCellPadding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewCellPadding/CS/formviewcellpaddingcs.aspx#1)]
+ [!code-aspx-vb[FormViewCellPadding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewCellPadding/VB/formviewcellpaddingvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1950,8 +1950,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.HeaderRow%2A> property to programmatically modify the properties of the header row during the <xref:System.Web.UI.WebControls.FormView.ItemCreated> event.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewHeaderTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewHeaderTemplate/CS/formviewheadertemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewHeaderTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewHeaderTemplate/VB/formviewheadertemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewHeaderTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewHeaderTemplate/CS/formviewheadertemplatecs.aspx#1)]
+ [!code-aspx-vb[FormViewHeaderTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewHeaderTemplate/VB/formviewheadertemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2003,8 +2003,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.HeaderStyle%2A> property to specify a custom style for the header row.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewHeaderText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewHeaderText/CS/formviewheadertextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewHeaderText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewHeaderText/VB/formviewheadertextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewHeaderText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewHeaderText/CS/formviewheadertextcs.aspx#1)]
+ [!code-aspx-vb[FormViewHeaderText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewHeaderText/VB/formviewheadertextvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2053,8 +2053,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.HeaderTemplate%2A> property to define a custom template to render for the header row.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewHeaderTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewHeaderTemplate/CS/formviewheadertemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewHeaderTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewHeaderTemplate/VB/formviewheadertemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewHeaderTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewHeaderTemplate/CS/formviewheadertemplatecs.aspx#1)]
+ [!code-aspx-vb[FormViewHeaderTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewHeaderTemplate/VB/formviewheadertemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2099,8 +2099,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.HeaderText%2A> property to specify the text to display in the header row.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewHeaderText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewHeaderText/CS/formviewheadertextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewHeaderText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewHeaderText/VB/formviewheadertextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewHeaderText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewHeaderText/CS/formviewheadertextcs.aspx#1)]
+ [!code-aspx-vb[FormViewHeaderText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewHeaderText/VB/formviewheadertextvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2148,8 +2148,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.HorizontalAlign%2A> property to specify that a <xref:System.Web.UI.WebControls.FormView> control should be centered on the page.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewHorizontalAlign#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewHorizontalAlign/CS/formviewhorizontalaligncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewHorizontalAlign#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewHorizontalAlign/VB/formviewhorizontalalignvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewHorizontalAlign#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewHorizontalAlign/CS/formviewhorizontalaligncs.aspx#1)]
+ [!code-aspx-vb[FormViewHorizontalAlign#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewHorizontalAlign/VB/formviewhorizontalalignvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2264,8 +2264,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.InsertItem%2A> method to programmatically insert the current record in a <xref:System.Web.UI.WebControls.FormView> control in the data source.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewInsertItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertItem/CS/formviewinsertitemcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewInsertItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertItem/VB/formviewinsertitemvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewInsertItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertItem/CS/formviewinsertitemcs.aspx#1)]
+ [!code-aspx-vb[FormViewInsertItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertItem/VB/formviewinsertitemvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2333,8 +2333,8 @@
 ## Examples  
  The following example demonstrates how to define a custom template for a data row in insert mode.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewInsertItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertItemTemplate/CS/formviewinsertitemtemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewInsertItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertItemTemplate/VB/formviewinsertitemtemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewInsertItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertItemTemplate/CS/formviewinsertitemtemplatecs.aspx#1)]
+ [!code-aspx-vb[FormViewInsertItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertItemTemplate/VB/formviewinsertitemtemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2421,8 +2421,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.InsertRowStyle%2A> property to specify a custom style for a data row when a <xref:System.Web.UI.WebControls.FormView> control is in insert mode.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewInsertItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertItemTemplate/CS/formviewinsertitemtemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewInsertItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertItemTemplate/VB/formviewinsertitemtemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewInsertItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertItemTemplate/CS/formviewinsertitemtemplatecs.aspx#1)]
+ [!code-aspx-vb[FormViewInsertItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertItemTemplate/VB/formviewinsertitemtemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2514,8 +2514,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.ItemCommand> event to handle a button click in a <xref:System.Web.UI.WebControls.FormView> control. When the user clicks the Add button, the currently displayed item is added to a <xref:System.Web.UI.WebControls.ListBox> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewItemCommandEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewItemCommandEventArgs/CS/formviewcommandeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewItemCommandEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewItemCommandEventArgs/VB/formviewcommandeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewItemCommandEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewItemCommandEventArgs/CS/formviewcommandeventargscs.aspx#1)]
+ [!code-aspx-vb[FormViewItemCommandEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewItemCommandEventArgs/VB/formviewcommandeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2553,8 +2553,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.ItemCreated> event to update the text of a <xref:System.Web.UI.WebControls.Label> control contained in the pager row.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewItemCreated#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewItemCreated/CS/formviewitemcreatedcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewItemCreated#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewItemCreated/VB/formviewitemcreatedvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewItemCreated#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewItemCreated/CS/formviewitemcreatedcs.aspx#1)]
+ [!code-aspx-vb[FormViewItemCreated#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewItemCreated/VB/formviewitemcreatedvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2589,8 +2589,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.ItemDeleted> event to determine whether an exception occurred during a delete operation.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewDeletedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewDeletedEventArgs/CS/formviewdeletedeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewDeletedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewDeletedEventArgs/VB/formviewdeletedeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewDeletedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewDeletedEventArgs/CS/formviewdeletedeventargscs.aspx#1)]
+ [!code-aspx-vb[FormViewDeletedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewDeletedEventArgs/VB/formviewdeletedeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2625,8 +2625,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.ItemDeleting> event to cancel a delete operation.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewDeleteEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewDeleteEventArgs/CS/formviewdeleteeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewDeleteEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewDeleteEventArgs/VB/formviewdeleteeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewDeleteEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewDeleteEventArgs/CS/formviewdeleteeventargscs.aspx#1)]
+ [!code-aspx-vb[FormViewDeleteEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewDeleteEventArgs/VB/formviewdeleteeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2663,8 +2663,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.ItemInserted> event to determine whether an exception occurred during an insert operation.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewInsertedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertedEventArgs/CS/formviewinsertedeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewInsertedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertedEventArgs/VB/formviewinsertedeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewInsertedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertedEventArgs/CS/formviewinsertedeventargscs.aspx#1)]
+ [!code-aspx-vb[FormViewInsertedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertedEventArgs/VB/formviewinsertedeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2699,8 +2699,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.ItemInserting> event to cancel an insert operation.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewInsertEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertEventArgs/CS/formviewinserteventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewInsertEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertEventArgs/VB/formviewinserteventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewInsertEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertEventArgs/CS/formviewinserteventargscs.aspx#1)]
+ [!code-aspx-vb[FormViewInsertEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertEventArgs/VB/formviewinserteventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2764,8 +2764,8 @@
 ## Examples  
  The following example demonstrates how to define a custom template for a data row in read-only mode.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewEditItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewEditItemTemplate/CS/formviewedititemtemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewEditItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewEditItemTemplate/VB/formviewedititemtemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewEditItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewEditItemTemplate/CS/formviewedititemtemplatecs.aspx#1)]
+ [!code-aspx-vb[FormViewEditItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewEditItemTemplate/VB/formviewedititemtemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2802,8 +2802,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.ItemUpdated> event to determine whether an exception occurred during an update operation.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewUpdatedEventArgs/CS/formviewupdatedeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewUpdatedEventArgs/VB/formviewupdatedeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewUpdatedEventArgs/CS/formviewupdatedeventargscs.aspx#1)]
+ [!code-aspx-vb[FormViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewUpdatedEventArgs/VB/formviewupdatedeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2838,8 +2838,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.ItemUpdating> event to cancel an update operation.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewUpdateEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewUpdateEventArgs/CS/formviewupdateeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewUpdateEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewUpdateEventArgs/VB/formviewupdateeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewUpdateEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewUpdateEventArgs/CS/formviewupdateeventargscs.aspx#1)]
+ [!code-aspx-vb[FormViewUpdateEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewUpdateEventArgs/VB/formviewupdateeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2934,8 +2934,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.ModeChanged> event to display the current mode in the header row of a <xref:System.Web.UI.WebControls.FormView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewModeChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewModeChanged/CS/formviewmodechangedcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewModeChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewModeChanged/VB/formviewmodechangedvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewModeChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewModeChanged/CS/formviewmodechangedcs.aspx#1)]
+ [!code-aspx-vb[FormViewModeChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewModeChanged/VB/formviewmodechangedvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2970,8 +2970,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.ModeChanging> event to hide the pager row when the <xref:System.Web.UI.WebControls.FormView> control transitions to edit mode.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewModeEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewModeEventArgs/CS/formviewmodeeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewModeEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewModeEventArgs/VB/formviewmodeeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewModeEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewModeEventArgs/CS/formviewmodeeventargscs.aspx#1)]
+ [!code-aspx-vb[FormViewModeEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewModeEventArgs/VB/formviewmodeeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -3551,8 +3551,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.PageCount%2A> property to determine the total number of records displayed in the control.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewPagerTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewPagerTemplate/CS/formviewpagertemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewPagerTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewPagerTemplate/VB/formviewpagertemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewPagerTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewPagerTemplate/CS/formviewpagertemplatecs.aspx#1)]
+ [!code-aspx-vb[FormViewPagerTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewPagerTemplate/VB/formviewpagertemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -3597,8 +3597,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.PageIndex%2A> property to determine the page index of the displayed record.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewPagerTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewPagerTemplate/CS/formviewpagertemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewPagerTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewPagerTemplate/VB/formviewpagertemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewPagerTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewPagerTemplate/CS/formviewpagertemplatecs.aspx#1)]
+ [!code-aspx-vb[FormViewPagerTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewPagerTemplate/VB/formviewpagertemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -3637,8 +3637,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.PageIndexChanged> event to return the <xref:System.Web.UI.WebControls.FormView> to read-only mode when the user navigates to another record.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewPageIndexChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewPageIndexChanged/CS/formviewpageindexchangedcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewPageIndexChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewPageIndexChanged/VB/formviewpageindexchangedvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewPageIndexChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewPageIndexChanged/CS/formviewpageindexchangedcs.aspx#1)]
+ [!code-aspx-vb[FormViewPageIndexChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewPageIndexChanged/VB/formviewpageindexchangedvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -3681,8 +3681,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewPageEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewPageEventArgs/CS/formviewmodeeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewPageEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewPageEventArgs/VB/formviewmodeeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewPageEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewPageEventArgs/CS/formviewmodeeventargscs.aspx#1)]
+ [!code-aspx-vb[FormViewPageEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewPageEventArgs/VB/formviewmodeeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -3725,8 +3725,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.PagerSettings%2A> property to specify the properties of the pager row.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewAllowPaging#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewAllowPaging/CS/formviewallowpagingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewAllowPaging#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewAllowPaging/VB/formviewallowpagingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewAllowPaging#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewAllowPaging/CS/formviewallowpagingcs.aspx#1)]
+ [!code-aspx-vb[FormViewAllowPaging#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewAllowPaging/VB/formviewallowpagingvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -3775,8 +3775,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.PagerStyle%2A> property to specify the style settings for the pager row.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewAllowPaging#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewAllowPaging/CS/formviewallowpagingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewAllowPaging#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewAllowPaging/VB/formviewallowpagingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewAllowPaging#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewAllowPaging/CS/formviewallowpagingcs.aspx#1)]
+ [!code-aspx-vb[FormViewAllowPaging#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewAllowPaging/VB/formviewallowpagingvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -3837,8 +3837,8 @@
 ## Examples  
  The following example demonstrates how to define a custom pager template.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewPagerTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewPagerTemplate/CS/formviewpagertemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewPagerTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewPagerTemplate/VB/formviewpagertemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewPagerTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewPagerTemplate/CS/formviewpagertemplatecs.aspx#1)]
+ [!code-aspx-vb[FormViewPagerTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewPagerTemplate/VB/formviewpagertemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -4035,8 +4035,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.Row%2A> property to access the properties of the data row during the <xref:System.Web.UI.WebControls.FormView.ItemCreated> event.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewRow#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewRow/CS/formviewrowcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewRow#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewRow/VB/formviewrowvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewRow#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewRow/CS/formviewrowcs.aspx#1)]
+ [!code-aspx-vb[FormViewRow#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewRow/VB/formviewrowvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -4088,8 +4088,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.RowStyle%2A> property to specify a custom style for a data row when a <xref:System.Web.UI.WebControls.FormView> control is in read-only mode.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewEditItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewEditItemTemplate/CS/formviewedititemtemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewEditItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewEditItemTemplate/VB/formviewedititemtemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewEditItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewEditItemTemplate/CS/formviewedititemtemplatecs.aspx#1)]
+ [!code-aspx-vb[FormViewEditItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewEditItemTemplate/VB/formviewedititemtemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -4187,8 +4187,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.SelectedValue%2A> property to determine the value of the key field.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewSelectedValue#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewSelectedValue/CS/formviewselectedvaluecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewSelectedValue#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewSelectedValue/VB/formviewselectedvaluevb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewSelectedValue#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewSelectedValue/CS/formviewselectedvaluecs.aspx#1)]
+ [!code-aspx-vb[FormViewSelectedValue#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewSelectedValue/VB/formviewselectedvaluevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -4566,8 +4566,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.TopPagerRow%2A> property to access the pager row displayed at the top of a <xref:System.Web.UI.WebControls.FormView> control. The pager row is then updated with additional content.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewTopPagerRow#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewTopPagerRow/CS/formviewtoppagerrowcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewTopPagerRow#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewTopPagerRow/VB/formviewtoppagerrowvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewTopPagerRow#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewTopPagerRow/CS/formviewtoppagerrowcs.aspx#1)]
+ [!code-aspx-vb[FormViewTopPagerRow#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewTopPagerRow/VB/formviewtoppagerrowvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -4633,8 +4633,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.UpdateItem%2A> method to programmatically update the current record in a <xref:System.Web.UI.WebControls.FormView> control in the data source.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewUpdateItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewUpdateItem/CS/formviewupdateitemcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewUpdateItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewUpdateItem/VB/formviewupdateitemvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewUpdateItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewUpdateItem/CS/formviewupdateitemcs.aspx#1)]
+ [!code-aspx-vb[FormViewUpdateItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewUpdateItem/VB/formviewupdateitemvb.aspx#1)]  
   
  ]]></format>
         </remarks>

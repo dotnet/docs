@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "Size.Height"
   - "Size.Width"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "controls [Windows Forms], resizing"
   - "size, controls"

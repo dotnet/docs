@@ -9,12 +9,14 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+- "csharp"
+- "vb"
+- "cpp"
 f1_keywords: 
   - "Location"
   - "Location.Y"
   - "Location.X"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "controls [Windows Forms]"
   - "controls [Windows Forms], moving"

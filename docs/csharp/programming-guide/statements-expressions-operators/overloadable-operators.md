@@ -1,12 +1,10 @@
 ---
 title: "Overloadable Operators (C# Programming Guide)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "C# language, operator overloading"
   - "operator overloading [C#]"
@@ -14,20 +12,6 @@ ms.assetid: 390d9d01-79fc-40ab-9ed3-0bf448da1b6a
 caps.latest.revision: 18
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Overloadable Operators (C# Programming Guide)
 

@@ -1,12 +1,9 @@
 ---
 title: "Common Language Runtime (CLR)"
-ms.custom: ""
-ms.date: "03/30/2017"
+ms.custom: "updateeachrelease"
+ms.date: "10/17/2017"
 ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "compiling source code, runtime functionality"
@@ -20,8 +17,7 @@ helpviewer_keywords:
   - "managed code"
   - "source code execution"
   - "code, runtime functionality"
-ms.assetid: 059a624e-f7db-4134-ba9f-08b676050482
-caps.latest.revision: 24
+ms.assetid: 059a624e-f7db-4134-ba9f-08b676050482 
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
@@ -75,7 +71,7 @@ The .NET Framework provides a run-time environment called the common language ru
 |4|4|  
 |4.5 (including 4.5.1 and 4.5.2)|4|  
 |4.6 (including 4.6.1 and 4.6.2)|4|
-|4.7|4|  
+|4.7 (including 4.7.1)|4|  
   
 ## Related Topics  
   

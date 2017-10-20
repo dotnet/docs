@@ -81,9 +81,9 @@ The following *artifact.xml* file is produced after running the previous example
 
 ```xml
 <StoreArtifacts>
-  <Package Id="newtonsoft.json" Version="10.0.3" />
-  <Package Id="castle.core" Version="4.1.0" />
-  <Package Id="moq" Version="4.7.63" />
+  <Package Id="Newtonsoft.Json" Version="10.0.3" />
+  <Package Id="Castle.Core" Version="4.1.0" />
+  <Package Id="Moq" Version="4.7.63" />
 </StoreArtifacts>
 ```
 

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRRuntimeInfo::GetVersionString"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRRuntimeInfo::GetVersionString method [.NET Framework hosting]"
   - "GetVersionString method, ICLRRuntimeInfo interface [.NET Framework hosting]"

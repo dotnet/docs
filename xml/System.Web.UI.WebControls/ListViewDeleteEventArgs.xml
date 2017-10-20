@@ -27,8 +27,8 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.ListViewDeleteEventArgs> object to cancel the delete operation if the user tries to remove the last item from a <xref:System.Web.UI.WebControls.ListView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListViewItemDeleting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemDeleting/CS/ListViewItemItemDeletingCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListViewItemDeleting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemDeleting/VB/ListViewItemItemDeletingVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListViewItemDeleting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemDeleting/CS/ListViewItemItemDeletingCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListViewItemDeleting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemDeleting/VB/ListViewItemItemDeletingVB.aspx#1)]  
   
  ]]></format>
     </remarks>

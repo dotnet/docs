@@ -19,8 +19,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "CreateAssemblyEnum"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CreateAssemblyEnum function [.NET Framework fusion]"
 ms.assetid: 3506df38-6cea-42f6-946e-4287863bcfb3

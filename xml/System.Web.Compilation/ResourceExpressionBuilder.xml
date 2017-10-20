@@ -41,8 +41,8 @@
 ## Examples  
  The following code example retrieves the default currency from a resource file.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Compilation.ResourceExpressionBuilder#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Compilation.ResourceExpressionBuilder/CS/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Compilation.ResourceExpressionBuilder#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Compilation.ResourceExpressionBuilder/VB/Default.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.Compilation.ResourceExpressionBuilder#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Compilation.ResourceExpressionBuilder/CS/Default.aspx#1)]
+ [!code-aspx-vb[System.Web.Compilation.ResourceExpressionBuilder#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Compilation.ResourceExpressionBuilder/VB/Default.aspx#1)]
   
  This code reads the following value from a resource file named `Financial.resx` in the App_GlobalResources directory.  
   

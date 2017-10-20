@@ -1,12 +1,10 @@
 ---
 title: "LINQ to XML for XPath Users (Visual Basic)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-visual-basic"
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 ms.assetid: 0e64911c-a7cc-4c20-b927-ca99078b5656
 caps.latest.revision: 3
 author: dotnet-bot

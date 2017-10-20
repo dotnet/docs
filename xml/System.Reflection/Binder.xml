@@ -124,7 +124,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `bindingAttr` does not include <xref:System.Reflection.BindingFlags?displayProperty=nameWithType>, the default binder implementation provided by <xref:System.Type.DefaultBinder%2A?displayProperty=nameWithType> simply returns the first element of `match`. No selection is done.  
+ If `bindingAttr` does not include <xref:System.Reflection.BindingFlags.SetField?displayProperty=nameWithType>, the default binder implementation provided by <xref:System.Type.DefaultBinder%2A?displayProperty=nameWithType> simply returns the first element of `match`. No selection is done.  
   
  This method controls the binding provided by <xref:System.Type.InvokeMember%2A?displayProperty=nameWithType>.  
   

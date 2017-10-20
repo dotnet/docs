@@ -12,11 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#requestCaching"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/requestCaching"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "requestCaching element"
   - "<requestCaching> element"

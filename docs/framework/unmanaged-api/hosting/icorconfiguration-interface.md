@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorConfiguration"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorConfiguration interface [.NET Framework hosting]"
 ms.assetid: aaf96116-372b-4538-afb1-9e0fcdac1f98

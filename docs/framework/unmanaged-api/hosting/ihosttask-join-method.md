@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostTask::Join"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostTask::Join method [.NET Framework hosting]"
   - "Join method, IHostTask interface [.NET Framework hosting]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "EClrEvent"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "EClrEvent enumeration [.NET Framework hosting]"
 ms.assetid: 7c36a7c2-75a2-4971-bc23-abf54c812154

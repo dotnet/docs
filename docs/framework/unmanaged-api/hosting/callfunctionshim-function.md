@@ -17,8 +17,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "CallFunctionShim"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CallfunctionShim function [.NET Framework hosting]"
 ms.assetid: 37118465-ddf3-41f0-bf27-335b72777e63

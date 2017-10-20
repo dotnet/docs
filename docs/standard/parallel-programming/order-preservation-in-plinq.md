@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+- "csharp"
+- "vb"
 helpviewer_keywords: 
   - "PLINQ queries, order preservation"
 ms.assetid: 10d202bc-19e1-4b5c-bbf1-9a977322a9ca

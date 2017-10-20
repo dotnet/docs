@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRMetadataLocator"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRMetadataLocator interface [.NET Framework debugging]"
 ms.assetid: 43c944f4-406a-4df6-981e-0eabb33dd5d0

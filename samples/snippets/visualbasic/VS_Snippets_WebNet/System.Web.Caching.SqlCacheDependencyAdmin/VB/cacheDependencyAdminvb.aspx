@@ -1,4 +1,4 @@
-<!-- <snippetn> -->
+<!-- <snippet10> -->
 <%@ Page Language="VB" CodeFile="cacheDependencyAdminvb.aspx.vb"
   Inherits="cacheDependencyAdminvb"%>
 
@@ -52,4 +52,4 @@
   </form>
 </body>
 </html>
-<!-- </snippetn> -->
+<!-- </snippet10> -->

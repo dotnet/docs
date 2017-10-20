@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "GetReason"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetReason method [.NET Framework debugging]"
   - "ICorDebugChain::GetReason method [.NET Framework debugging]"

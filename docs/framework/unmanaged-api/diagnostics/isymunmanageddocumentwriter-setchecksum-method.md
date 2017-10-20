@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedDocumentWriter::SetCheckSum"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedDocumentWriter::SetCheckSum method [.NET Framework debugging]"
   - "SetCheckSum method [.NET Framework debugging]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataImport::ResetEnum"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ResetEnum method [.NET Framework metadata]"
   - "IMetaDataImport::ResetEnum method [.NET Framework metadata]"

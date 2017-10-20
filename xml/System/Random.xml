@@ -450,7 +450,7 @@ Random.NextDouble() * (maxValue – minValue) + minValue
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Random.Next%2A?displayProperty=nameWithType> generates a random number whose value ranges from 0 to less than <xref:System.Int32?displayProperty=nameWithType>. To generate a random number whose value ranges from 0 to some other positive number, use the <xref:System.Random.Next%28System.Int32%29?displayProperty=nameWithType> method overload. To generate a random number within a different range, use the <xref:System.Random.Next%28System.Int32%2CSystem.Int32%29?displayProperty=nameWithType> method overload.  
+ <xref:System.Random.Next%2A?displayProperty=nameWithType> generates a random number whose value ranges from 0 to less than <xref:System.Int32.MaxValue?displayProperty=nameWithType>. To generate a random number whose value ranges from 0 to some other positive number, use the <xref:System.Random.Next%28System.Int32%29?displayProperty=nameWithType> method overload. To generate a random number within a different range, use the <xref:System.Random.Next%28System.Int32%2CSystem.Int32%29?displayProperty=nameWithType> method overload.  
   
    
   

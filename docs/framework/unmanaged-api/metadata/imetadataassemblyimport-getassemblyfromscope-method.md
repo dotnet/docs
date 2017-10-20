@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataAssemblyImport::GetAssemblyFromScope"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataAssemblyImport::GetAssemblyFromScope method [.NET Framework metadata]"
   - "GetAssemblyFromScope method [.NET Framework metadata]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedENCUpdate::UpdateSymbolStore2"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedENCUpdate::UpdateSymbolStore2 method [.NET Framework debugging]"
   - "UpdateSymbolStore2 method [.NET Framework debugging]"

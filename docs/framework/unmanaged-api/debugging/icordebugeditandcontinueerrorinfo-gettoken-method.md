@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEditAndContinueErrorInfo::GetToken"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetToken method, ICorDebugEditAndContinueErrorInfo interface [.NET Framework debugging]"
   - "ICorDebugEditAndContinueErrorInfo::GetToken method [.NET Framework debugging]"

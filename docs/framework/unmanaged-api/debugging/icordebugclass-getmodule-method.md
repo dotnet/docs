@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugClass::GetModule"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetModule method, ICorDebugClass interface [.NET Framework debugging]"
   - "ICorDebugClass::GetModule method [.NET Framework debugging]"

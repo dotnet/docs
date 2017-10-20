@@ -257,7 +257,7 @@
     </Member>
     <Member MemberName="CheckReaderCount">
       <MemberSignature Language="C#" Value="protected void CheckReaderCount (ref int whileIterations, ref int readerCount);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void CheckReaderCount(int32 whileIterations, int32 readerCount) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void CheckReaderCount(int32&amp; whileIterations, int32&amp; readerCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationReader.CheckReaderCount(System.Int32@,System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1574,7 +1574,7 @@
     </Member>
     <Member MemberName="ReadReference">
       <MemberSignature Language="C#" Value="protected bool ReadReference (out string fixupReference);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool ReadReference(string fixupReference) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool ReadReference([out] string&amp; fixupReference) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationReader.ReadReference(System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1784,7 +1784,7 @@
     </MemberGroup>
     <Member MemberName="ReadReferencingElement">
       <MemberSignature Language="C#" Value="protected object ReadReferencingElement (out string fixupReference);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object ReadReferencingElement(string fixupReference) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object ReadReferencingElement([out] string&amp; fixupReference) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationReader.ReadReferencingElement(System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1827,7 +1827,7 @@
     </Member>
     <Member MemberName="ReadReferencingElement">
       <MemberSignature Language="C#" Value="protected object ReadReferencingElement (string name, string ns, out string fixupReference);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object ReadReferencingElement(string name, string ns, string fixupReference) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object ReadReferencingElement(string name, string ns, [out] string&amp; fixupReference) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationReader.ReadReferencingElement(System.String,System.String,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1874,7 +1874,7 @@
     </Member>
     <Member MemberName="ReadReferencingElement">
       <MemberSignature Language="C#" Value="protected object ReadReferencingElement (string name, string ns, bool elementCanBeType, out string fixupReference);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object ReadReferencingElement(string name, string ns, bool elementCanBeType, string fixupReference) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object ReadReferencingElement(string name, string ns, bool elementCanBeType, [out] string&amp; fixupReference) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationReader.ReadReferencingElement(System.String,System.String,System.Boolean,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedScope2::GetConstants"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedScope2::GetConstants method [.NET Framework debugging]"
   - "GetConstants method [.NET Framework debugging]"

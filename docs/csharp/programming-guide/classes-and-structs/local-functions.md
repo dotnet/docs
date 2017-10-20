@@ -1,12 +1,10 @@
 ---
 title: "Local functions (C# Programming Guide)"
-ms.date: "2017-06-14"
+ms.date: 06/14/2017
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "local functions [C#]"
 author: "rpetrusha"

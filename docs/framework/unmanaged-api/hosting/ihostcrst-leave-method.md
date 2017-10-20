@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostCrst::Leave"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostCrst::Leave method [.NET Framework hosting]"
   - "Leave method [.NET Framework hosting]"

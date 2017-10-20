@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+- "csharp"
+- "vb"
 helpviewer_keywords: 
   - "files, isolated storage"
   - "reading data"
@@ -36,9 +39,9 @@ To read from, or write to, a file in an isolated store, use an <xref:System.IO.I
 ## See Also  
  <xref:System.IO.IsolatedStorage.IsolatedStorageFile>   
  <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream>   
- <xref:System.IO.FileMode?displayProperty=fullName>   
- <xref:System.IO.FileAccess?displayProperty=fullName>   
- <xref:System.IO.StreamReader?displayProperty=fullName>   
- <xref:System.IO.StreamWriter?displayProperty=fullName>   
+ <xref:System.IO.FileMode?displayProperty=nameWithType>   
+ <xref:System.IO.FileAccess?displayProperty=nameWithType>   
+ <xref:System.IO.StreamReader?displayProperty=nameWithType>   
+ <xref:System.IO.StreamWriter?displayProperty=nameWithType>   
  [File and Stream I-O](../../../docs/standard/io/index.md)   
  [Isolated Storage](../../../docs/standard/io/isolated-storage.md)

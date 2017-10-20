@@ -109,6 +109,7 @@ To build and run, install the following items:
 
 * Install your favorite code editor, if you haven't already.
 
+
 #### Installing Docker Client
 
 Install [Docker 17.06](https://docs.docker.com/release-notes/docker-ce/) or later of the Docker client.
@@ -249,4 +250,5 @@ The following Docker images are used in this sample
 > [!Note]
 > If you do not have an Azure subscription, [sign up today](https://azure.microsoft.com/free/?b=16.48) for a free 30-day account and get $200 in Azure Credits to try out any combination of Azure services.
 
-
+<a name="dotnet-restore-note"></a>
+[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugModule::GetFunctionFromRVA"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetFunctionFromRVA method [.NET Framework debugging]"
   - "ICorDebugModule::GetFunctionFromRVA method [.NET Framework debugging]"

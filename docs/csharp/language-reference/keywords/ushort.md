@@ -1,6 +1,6 @@
 ---
 title: "ushort (C# Reference)"
-ms.date: "2017-03-14"
+ms.date: 03/14/2017
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -8,28 +8,12 @@ ms.topic: "article"
 f1_keywords: 
   - "ushort"
   - "ushort_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "ushort keyword [C#]"
 ms.assetid: 1a7dbaae-b7a0-4111-872a-c88a6d3981ac
 caps.latest.revision: 16
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # ushort (C# Reference)
 
@@ -37,11 +21,11 @@ The `ushort` keyword indicates an integral data type that stores values accordin
   
 |Type|Range|Size|.NET Framework type|  
 |----------|-----------|----------|-------------------------|  
-|`ushort`|0 to 65,535|Unsigned 16-bit integer|<xref:System.UInt16?displayProperty=fullName>|  
+|`ushort`|0 to 65,535|Unsigned 16-bit integer|<xref:System.UInt16?displayProperty=nameWithType>|  
   
 ## Literals  
 
-You can declare and initialize a `ushort` variable by assigning a decimal literal, a hexadecimal literal, or (starting with C# 7) a binary literal to it. If the integer literal is outside the range of `ushort` (that is, if it is less than <xref:System.UInt16.MinValue?displayProperty=fullName> or greater than <xref:System.UInt16.MaxValue?displayProperty=fullName>), a compilation error occurs.
+You can declare and initialize a `ushort` variable by assigning a decimal literal, a hexadecimal literal, or (starting with C# 7) a binary literal to it. If the integer literal is outside the range of `ushort` (that is, if it is less than <xref:System.UInt16.MinValue?displayProperty=nameWithType> or greater than <xref:System.UInt16.MaxValue?displayProperty=nameWithType>), a compilation error occurs.
 
 In the following example, integers equal to 65,034 that are represented as decimal, hexadecimal, and binary literals are implicitly converted from [int](../../../csharp/language-reference/keywords/int.md) to `ushort` values.    
   

@@ -39,8 +39,8 @@
   
  The following code example demonstrates how to use the `GeneologyTree` control, defined in the previous example, and bind it to an <xref:System.Web.UI.WebControls.XmlDataSource> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[Samples.AspNet.GeneologyTree#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Samples.AspNet.GeneologyTree/CS/rootviewcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Samples.AspNet.GeneologyTree#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Samples.AspNet.GeneologyTree/VB/rootviewvb.aspx#1)]  -->  
+ [!code-aspx-csharp[Samples.AspNet.GeneologyTree#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Samples.AspNet.GeneologyTree/CS/rootviewcs.aspx#1)]
+ [!code-aspx-vb[Samples.AspNet.GeneologyTree#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Samples.AspNet.GeneologyTree/VB/rootviewvb.aspx#1)]  
   
  The geneology.xml file accessed in the code example contains the following data.  
   
@@ -127,7 +127,7 @@
    
   
 ## Examples  
- The following code example demonstrates how the <xref:System.Web.UI.WebControls.HierarchicalDataBoundControl.GetData%2A> method is called to retrieve the <xref:System.Web.UI.HierarchicalDataSourceView> object from the associated data source control and how the <xref:System.Web.UI.HierarchicalDataSourceView.Select%2A?displayProperty=fullName> method is called to retrieve the data. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.HierarchicalDataBoundControl> class.  
+ The following code example demonstrates how the <xref:System.Web.UI.WebControls.HierarchicalDataBoundControl.GetData%2A> method is called to retrieve the <xref:System.Web.UI.HierarchicalDataSourceView> object from the associated data source control and how the <xref:System.Web.UI.HierarchicalDataSourceView.Select%2A?displayProperty=nameWithType> method is called to retrieve the data. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.HierarchicalDataBoundControl> class.  
   
  [!code-csharp[Samples.AspNet.GeneologyTree#4](~/samples/snippets/csharp/VS_Snippets_WebNet/Samples.AspNet.GeneologyTree/CS/geneologytree.cs#4)]
  [!code-vb[Samples.AspNet.GeneologyTree#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Samples.AspNet.GeneologyTree/VB/geneologytree.vb#4)]  

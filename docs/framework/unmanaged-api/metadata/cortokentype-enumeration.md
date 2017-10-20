@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorTokenType"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorTokenType enumeration [.NET Framework metadata]"
 ms.assetid: 93c9a369-225f-4eff-9b78-3fbee4902cf1

@@ -1966,7 +1966,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is a convenience method for calling <xref:System.Windows.Data.BindingOperations.SetBinding%2A?displayProperty=fullName>, which passes the current instance as the <xref:System.Windows.DependencyObject>, and creates a new <xref:System.Windows.Data.Binding> based on the provided `path` parameter. This signature is more convenient if you are establishing a simple default binding. If you need to specify any binding properties to non-default conditions, or want to use a <xref:System.Windows.Data.MultiBinding> or <xref:System.Windows.Data.PriorityBinding>,you should use the <xref:System.Windows.FrameworkContentElement.SetBinding%28System.Windows.DependencyProperty%2CSystem.Windows.Data.BindingBase%29> signature.  
+ This method is a convenience method for calling <xref:System.Windows.Data.BindingOperations.SetBinding%2A?displayProperty=nameWithType>, which passes the current instance as the <xref:System.Windows.DependencyObject>, and creates a new <xref:System.Windows.Data.Binding> based on the provided `path` parameter. This signature is more convenient if you are establishing a simple default binding. If you need to specify any binding properties to non-default conditions, or want to use a <xref:System.Windows.Data.MultiBinding> or <xref:System.Windows.Data.PriorityBinding>,you should use the <xref:System.Windows.FrameworkContentElement.SetBinding%28System.Windows.DependencyProperty%2CSystem.Windows.Data.BindingBase%29> signature.  
   
    
   
@@ -2005,7 +2005,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is a convenience method for calling <xref:System.Windows.Data.BindingOperations.SetBinding%2A?displayProperty=fullName>, which passes the current instance as the <xref:System.Windows.DependencyObject>.  
+ This method is a convenience method for calling <xref:System.Windows.Data.BindingOperations.SetBinding%2A?displayProperty=nameWithType>, which passes the current instance as the <xref:System.Windows.DependencyObject>.  
   
    
   
@@ -2426,7 +2426,7 @@
  A string that becomes the display text for the <xref:System.Windows.FrameworkContentElement.ToolTip%2A>.  
   
  *toolTipObjectContent*  
- Some object, provided in object element form, that should be used as the content for the <xref:System.Windows.FrameworkContentElement> . Typically this would be a <xref:System.Windows.FrameworkElement> or some other element that creates layout compositing for the <xref:System.Windows.FrameworkContentElement.ToolTip%2A>, eventually containing text content within the compositing. In this usage, the <xref:System.Windows.Controls.ToolTip> element is created implicitly from the parsed [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], and the *toolTipObjectContent* content is set as its <xref:System.Windows.Controls.ContentControl.Content%2A?displayProperty=fullName> property.  
+ Some object, provided in object element form, that should be used as the content for the <xref:System.Windows.FrameworkContentElement> . Typically this would be a <xref:System.Windows.FrameworkElement> or some other element that creates layout compositing for the <xref:System.Windows.FrameworkContentElement.ToolTip%2A>, eventually containing text content within the compositing. In this usage, the <xref:System.Windows.Controls.ToolTip> element is created implicitly from the parsed [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], and the *toolTipObjectContent* content is set as its <xref:System.Windows.Controls.ContentControl.Content%2A?displayProperty=nameWithType> property.  
   
  <`ToolTip` .../>  
  See <xref:System.Windows.Controls.ToolTip>.  

@@ -212,7 +212,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -261,7 +261,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -519,7 +519,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Unlike typical implementations of <xref:System.Collections.Generic.IList%601.Insert%2A?displayProperty=fullName>, this implementation throws an <xref:System.ArgumentException> if you attempt to insert a **null** (**Nothing**) reference.  
+ Unlike typical implementations of <xref:System.Collections.Generic.IList%601.Insert%2A?displayProperty=nameWithType>, this implementation throws an <xref:System.ArgumentException> if you attempt to insert a **null** (**Nothing**) reference.  
   
  ]]></format>
         </remarks>
@@ -557,7 +557,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Unlike typical implementations of <xref:System.Collections.Generic.IList%601.Item%2A?displayProperty=fullName>, this implementation throws an <xref:System.ArgumentException> if you attempt to insert a **null** (**Nothing**) reference.  
+ Unlike typical implementations of <xref:System.Collections.Generic.IList%601.Item%2A?displayProperty=nameWithType>, this implementation throws an <xref:System.ArgumentException> if you attempt to insert a **null** (**Nothing**) reference.  
   
  ]]></format>
         </remarks>

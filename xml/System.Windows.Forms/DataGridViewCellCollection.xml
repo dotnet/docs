@@ -25,7 +25,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Forms.DataGridViewCellCollection> objects are retrieved by the <xref:System.Windows.Forms.DataGridViewRow.Cells%2A?displayProperty=fullName> property.  
+ <xref:System.Windows.Forms.DataGridViewCellCollection> objects are retrieved by the <xref:System.Windows.Forms.DataGridViewRow.Cells%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
     </remarks>
@@ -84,7 +84,7 @@
       </Docs>
     </Member>
     <Member MemberName="AddRange">
-      <MemberSignature Language="C#" Value="public virtual void AddRange (System.Windows.Forms.DataGridViewCell[] dataGridViewCells);" />
+      <MemberSignature Language="C#" Value="public virtual void AddRange (params System.Windows.Forms.DataGridViewCell[] dataGridViewCells);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddRange(class System.Windows.Forms.DataGridViewCell[] dataGridViewCells) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewCellCollection.AddRange(System.Windows.Forms.DataGridViewCell[])" />
       <MemberType>Method</MemberType>
@@ -181,7 +181,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridViewCellCollection.CollectionChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridViewCellCollection.CollectionChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridViewCellCollection> named `DataGridViewCellCollection1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridViewCellCollection.CollectionChanged> event.  
   

@@ -17,8 +17,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "CoInitializeCor"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CoInitializeCor function [.NET Framework hosting]"
 ms.assetid: 9b9079fb-579e-4141-b3f0-791072dd40dc

@@ -7,5 +7,5 @@
 |Scope|Edge|
 |Version|4.7|
 |Type|Retargeting|
-|Affected APIs|<ul><li><xref:System.Runtime.Serialization.Json.DataContractJsonSerializer.WriteObject(System.IO.Stream%2CSystem.Object)?displayProperty=fullName></li><li><xref:System.Runtime.Serialization.Json.DataContractJsonSerializer.WriteObject(System.Xml.XmlDictionaryWriter%2CSystem.Object)?displayProperty=fullName></li><li><xref:System.Runtime.Serialization.Json.DataContractJsonSerializer.WriteObject(System.Xml.XmlWriter%2CSystem.Object)?displayProperty=fullName></li></ul>|
+|Affected APIs|<ul><li><xref:System.Runtime.Serialization.Json.DataContractJsonSerializer.WriteObject(System.IO.Stream%2CSystem.Object)?displayProperty=nameWithType></li><li><xref:System.Runtime.Serialization.Json.DataContractJsonSerializer.WriteObject(System.Xml.XmlDictionaryWriter%2CSystem.Object)?displayProperty=nameWithType></li><li><xref:System.Runtime.Serialization.Json.DataContractJsonSerializer.WriteObject(System.Xml.XmlWriter%2CSystem.Object)?displayProperty=nameWithType></li></ul>|
 

@@ -56,7 +56,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public DirectoryAttribute (string name, object[] values);" />
+      <MemberSignature Language="C#" Value="public DirectoryAttribute (string name, params object[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, object[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirectoryAttribute.#ctor(System.String,System.Object[])" />
       <MemberType>Constructor</MemberType>

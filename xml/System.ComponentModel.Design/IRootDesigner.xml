@@ -86,7 +86,7 @@
  This method returns a view object that can present a user interface to the user. The returned data type is an <xref:System.Object>, because there can be a variety of different user interface technologies. Development environments typically support more than one technology.  
   
 > [!NOTE]
->  The <xref:System.ComponentModel.Design.ViewTechnology?displayProperty=fullName> and <xref:System.ComponentModel.Design.ViewTechnology?displayProperty=fullName> fields are obsolete. Use <xref:System.ComponentModel.Design.ViewTechnology?displayProperty=fullName> for new designer implementations.  
+>  The <xref:System.ComponentModel.Design.ViewTechnology.Passthrough?displayProperty=nameWithType> and <xref:System.ComponentModel.Design.ViewTechnology.WindowsForms?displayProperty=nameWithType> fields are obsolete. Use <xref:System.ComponentModel.Design.ViewTechnology.Default?displayProperty=nameWithType> for new designer implementations.  
   
  ]]></format>
         </remarks>
@@ -124,7 +124,7 @@
  The <xref:System.ComponentModel.Design.ViewTechnology> enumeration indicates the supported view technologies.  
   
 > [!NOTE]
->  The <xref:System.ComponentModel.Design.ViewTechnology?displayProperty=fullName> and <xref:System.ComponentModel.Design.ViewTechnology?displayProperty=fullName> fields are obsolete. Use <xref:System.ComponentModel.Design.ViewTechnology?displayProperty=fullName> for new designer implementations.  
+>  The <xref:System.ComponentModel.Design.ViewTechnology.Passthrough?displayProperty=nameWithType> and <xref:System.ComponentModel.Design.ViewTechnology.WindowsForms?displayProperty=nameWithType> fields are obsolete. Use <xref:System.ComponentModel.Design.ViewTechnology.Default?displayProperty=nameWithType> for new designer implementations.  
   
  ]]></format>
         </remarks>

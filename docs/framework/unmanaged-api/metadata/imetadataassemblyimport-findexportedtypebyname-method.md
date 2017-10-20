@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataAssemblyImport::FindExportedTypeByName"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "FindExportedTypeByName method [.NET Framework metadata]"
   - "IMetaDataAssemblyImport::FindExportedTypeByName method [.NET Framework metadata]"

@@ -1,4 +1,4 @@
-<%-- <Snippet1> --%>
+<!-- <Snippet1> -->
 <%@ Page language="C#" %>
     
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
@@ -64,4 +64,4 @@
     </form>
   </body>
 </html>
-<%-- </Snippet1> --%>
+<!-- </Snippet1> -->

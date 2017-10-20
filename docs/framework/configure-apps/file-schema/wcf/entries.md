@@ -26,13 +26,10 @@ A routing entry that contain mappings between the routing filters and the target
   
 ## Syntax  
   
-```vb  
+```xml
    <routing>      <filterTables>        <filterTable name="String">          <entries>            <add backupList="String"                 endpointName="String"                  filterName="String"                  priority="Integer" />          </entries>        </table>      </routingTables></routing>  
-```  
-  
-```csharp  
-```  
-  
+```
+
 ## Attributes and Elements  
  The following sections describe attributes, child elements, and parent elements.  
   
@@ -52,5 +49,5 @@ A routing entry that contain mappings between the routing filters and the target
 |[\<routing>](../../../../../docs/framework/configure-apps/file-schema/wcf/routing.md)|A configuration section that contains a routing table.|  
   
 ## See Also  
- <xref:System.ServiceModel.Routing.Configuration.RoutingSection?displayProperty=fullName>       
- <xref:System.ServiceModel.Routing.Configuration.FilterTableEntryElement?displayProperty=fullName>    
+ <xref:System.ServiceModel.Routing.Configuration.RoutingSection?displayProperty=nameWithType>       
+ <xref:System.ServiceModel.Routing.Configuration.FilterTableEntryElement?displayProperty=nameWithType>    

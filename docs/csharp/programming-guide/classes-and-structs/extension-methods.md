@@ -1,16 +1,10 @@
 ---
 title: "Extension Methods (C# Programming Guide)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "methods [C#], adding to existing types"
   - "extension methods [C#]"
@@ -19,26 +13,11 @@ ms.assetid: 175ce3ff-9bbf-4e64-8421-faeb81a0bb51
 caps.latest.revision: 35
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Extension Methods (C# Programming Guide)
 Extension methods enable you to "add" methods to existing types without creating a new derived type, recompiling, or otherwise modifying the original type. Extension methods are a special kind of static method, but they are called as if they were instance methods on the extended type. For client code written in C#, F# and Visual Basic, there is no apparent difference between calling an extension method and the methods that are actually defined in a type.  
   
- The most common extension methods are the [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] standard query operators that add query functionality to the existing <xref:System.Collections.IEnumerable?displayProperty=fullName> and <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName> types. To use the standard query operators, first bring them into scope with a `using System.Linq` directive. Then any type that implements <xref:System.Collections.Generic.IEnumerable%601> appears to have instance methods such as <xref:System.Linq.Enumerable.GroupBy%2A>, <xref:System.Linq.Enumerable.OrderBy%2A>, <xref:System.Linq.Enumerable.Average%2A>, and so on. You can see these additional methods in IntelliSense statement completion when you type "dot" after an instance of an <xref:System.Collections.Generic.IEnumerable%601> type such as <xref:System.Collections.Generic.List%601> or <xref:System.Array>.  
+ The most common extension methods are the [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] standard query operators that add query functionality to the existing <xref:System.Collections.IEnumerable?displayProperty=nameWithType> and <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> types. To use the standard query operators, first bring them into scope with a `using System.Linq` directive. Then any type that implements <xref:System.Collections.Generic.IEnumerable%601> appears to have instance methods such as <xref:System.Linq.Enumerable.GroupBy%2A>, <xref:System.Linq.Enumerable.OrderBy%2A>, <xref:System.Linq.Enumerable.Average%2A>, and so on. You can see these additional methods in IntelliSense statement completion when you type "dot" after an instance of an <xref:System.Collections.Generic.IEnumerable%601> type such as <xref:System.Collections.Generic.List%601> or <xref:System.Array>.  
   
  The following example shows how to call the standard query operator `OrderBy` method on an array of integers. The expression in parentheses is a lambda expression. Many standard query operators take lambda expressions as parameters, but this is not a requirement for extension methods. For more information, see [Lambda Expressions](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md).  
   
@@ -46,7 +25,7 @@ Extension methods enable you to "add" methods to existing types without creating
   
  Extension methods are defined as static methods but are called by using instance method syntax. Their first parameter specifies which type the method operates on, and the parameter is preceded by the [this](../../../csharp/language-reference/keywords/this.md) modifier. Extension methods are only in scope when you explicitly import the namespace into your source code with a `using` directive.  
   
- The following example shows an extension method defined for the <xref:System.String?displayProperty=fullName> class. Note that it is defined inside a non-nested, non-generic static class:  
+ The following example shows an extension method defined for the <xref:System.String?displayProperty=nameWithType> class. Note that it is defined inside a non-nested, non-generic static class:  
   
  [!code-cs[csProgGuideExtensionMethods#4](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/extension-methods_2.cs)]  
   

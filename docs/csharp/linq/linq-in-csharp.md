@@ -7,9 +7,8 @@ manager: wpickett
 ms.author: wiwagn
 ms.date: 11/30/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
-ms.devlang: dotnet
+ms.prod: .net
+ms.technology: devlang-csharp
 ms.assetid: 8eb3284f-0ab9-4cad-9216-2da58d9761a5
 ---
 # LINQ in C#

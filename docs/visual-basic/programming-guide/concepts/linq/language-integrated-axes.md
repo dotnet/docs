@@ -1,7 +1,7 @@
 ---
 title: "Language-Integrated Axes in Visual Basic (LINQ to XML)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 ms.assetid: d450a556-a134-4261-b011-44e399660894
 caps.latest.revision: 3
 author: dotnet-bot

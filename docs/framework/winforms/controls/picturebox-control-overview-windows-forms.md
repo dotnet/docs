@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "PictureBox"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "PictureBox control [Windows Forms], about PictureBox controls"
   - "picture controls, about picture controls"

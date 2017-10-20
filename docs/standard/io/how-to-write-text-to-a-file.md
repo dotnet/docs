@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+- "csharp"
+- "vb"
 helpviewer_keywords: 
   - "writing text to files"
   - "I/O [.NET Framework], writing text to files"
@@ -84,7 +87,7 @@ This topic shows different ways you can write text to a file for .NET Framework 
   
 ## See Also  
  <xref:System.IO.StreamWriter>   
- <xref:System.IO.File.CreateText%2A?displayProperty=fullName>   
+ <xref:System.IO.File.CreateText%2A?displayProperty=nameWithType>   
  [How to: Enumerate Directories and Files](../../../docs/standard/io/how-to-enumerate-directories-and-files.md)   
  [How to: Read and Write to a Newly Created Data File](../../../docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)   
  [How to: Open and Append to a Log File](../../../docs/standard/io/how-to-open-and-append-to-a-log-file.md)   

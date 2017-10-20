@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "ProgressBar"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "ProgressBar control [Windows Forms], about ProgressBar control"
   - "progress controls, about progress controls"

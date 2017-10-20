@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "WCF Data Services, asynchronous operations"
 ms.assetid: 834614df-1427-4839-b0be-90f68e5afffd

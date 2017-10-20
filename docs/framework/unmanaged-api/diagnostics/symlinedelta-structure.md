@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "SYMLINEDELTA"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SYMLINEDELTA structure [.NET Framework debugging]"
 ms.assetid: 9634e995-d46d-4397-ab66-cc5781d11e4e

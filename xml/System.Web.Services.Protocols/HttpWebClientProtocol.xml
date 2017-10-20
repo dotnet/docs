@@ -35,8 +35,8 @@
 ## Examples  
  The following example is an ASP.NET Web Form, which calls an XML Web service named `Math`. Within the `EnterBtn_Click` function, the Web Form allows the server to automatically redirect the client to other sites. It also sets client authentication credentials, proxy settings, the request encoding and the time out for the request before calling the XML Web service method.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HttpWebClientProtocol Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic HttpWebClientProtocol Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HttpWebClientProtocol Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic HttpWebClientProtocol Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HttpWebClientProtocol Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic HttpWebClientProtocol Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HttpWebClientProtocol Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic HttpWebClientProtocol Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -190,8 +190,8 @@
 ## Examples  
  The following code example is a Web Forms client of an XML Web service that uses session state. The client stores the HTTP cookie that uniquely identifies the session by storing it in the client's session state.  
   
- <!-- TODO: review snippet reference [!code-csharp[HttpWebClientProtocol.CookieContainer#1](~/samples/snippets/csharp/VS_Snippets_Remoting/HttpWebClientProtocol.CookieContainer/CS/serverusageclientcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpWebClientProtocol.CookieContainer#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/HttpWebClientProtocol.CookieContainer/VB/serverusageclientvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HttpWebClientProtocol.CookieContainer#1](~/samples/snippets/csharp/VS_Snippets_Remoting/HttpWebClientProtocol.CookieContainer/CS/serverusageclientcs.aspx#1)]
+ [!code-aspx-vb[HttpWebClientProtocol.CookieContainer#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/HttpWebClientProtocol.CookieContainer/VB/serverusageclientvb.aspx#1)]  
   
  ]]></format>
         </remarks>

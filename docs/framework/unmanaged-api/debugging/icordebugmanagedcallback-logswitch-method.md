@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugManagedCallback::LogSwitch"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "LogSwitch method [.NET Framework debugging]"
   - "ICorDebugManagedCallback::LogSwitch method [.NET Framework debugging]"

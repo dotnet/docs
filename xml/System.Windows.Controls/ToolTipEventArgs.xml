@@ -20,8 +20,8 @@
   
 |Events that occur when a tooltip opens|Events that occur when a tooltip closes|  
 |--------------------------------------------|---------------------------------------------|  
-|<xref:System.Windows.FrameworkElement.ToolTipOpening?displayProperty=fullName>|<xref:System.Windows.FrameworkElement.ToolTipClosing?displayProperty=fullName>|  
-|<xref:System.Windows.FrameworkContentElement.ToolTipOpening?displayProperty=fullName>|<xref:System.Windows.FrameworkContentElement.ToolTipClosing?displayProperty=fullName>|  
+|<xref:System.Windows.FrameworkElement.ToolTipOpening?displayProperty=nameWithType>|<xref:System.Windows.FrameworkElement.ToolTipClosing?displayProperty=nameWithType>|  
+|<xref:System.Windows.FrameworkContentElement.ToolTipOpening?displayProperty=nameWithType>|<xref:System.Windows.FrameworkContentElement.ToolTipClosing?displayProperty=nameWithType>|  
   
  These events are registered by the <xref:System.Windows.Controls.ToolTipService> class as the <xref:System.Windows.Controls.ToolTipService.ToolTipOpeningEvent> and <xref:System.Windows.Controls.ToolTipService.ToolTipClosingEvent> fields. The <xref:System.Windows.FrameworkElement> and <xref:System.Windows.FrameworkContentElement> classes both implement the <xref:System.Windows.Controls.ToolTipService> and expose this event by defining the events in the previous table  
   

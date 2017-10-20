@@ -1,20 +1,15 @@
 ---
 title: "Short Data Type (Visual Basic)"
-
-ms.date: "2014-04-20"
+ms.date: 04/20/2017
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 author: "rpetrusha"
 ms.author: "ronpet"
 f1_keywords: 
   - "vb.Short"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "numbers, whole"
   - "whole numbers"
@@ -30,21 +25,6 @@ helpviewer_keywords:
 ms.assetid: 65fcbcf3-a841-400e-885e-301497729a8b
 author: "rpetrusha"
 ms.author: "ronpet"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Short data type (Visual Basic)
 Holds signed 16-bit (2-byte) integers that range in value from -32,768 through 32,767.  
@@ -56,7 +36,7 @@ Holds signed 16-bit (2-byte) integers that range in value from -32,768 through 3
   
 ## Literal assignments
 
-You can declare and initialize a `Short` variable by assigning it a decimal literal, a hexadecimal literal, an octal literal, or (starting with Visual Basic 2017) a binary literal. If the integer literal is outside the range of `Short` (that is, if it is less than <xref:System.Int16.MinValue?displayProperty=fullName> or greater than <xref:System.Int16.MaxValue?displayProperty=fullName>, a compilation error occurs.
+You can declare and initialize a `Short` variable by assigning it a decimal literal, a hexadecimal literal, an octal literal, or (starting with Visual Basic 2017) a binary literal. If the integer literal is outside the range of `Short` (that is, if it is less than <xref:System.Int16.MinValue?displayProperty=nameWithType> or greater than <xref:System.Int16.MaxValue?displayProperty=nameWithType>, a compilation error occurs.
 
 In the following example, integers equal to 1,034 that are represented as decimal, hexadecimal, and binary literals are implicitly converted from [Integer](integer-data-type.md) to `Short` values.
 
@@ -77,15 +57,15 @@ Dim number = &H0326S
 
 ## Programming tips
 
--   **Widening.** The `Short` data type widens to `Integer`, `Long`, `Decimal`, `Single`, or `Double`. This means you can convert `Short` to any one of these types without encountering a <xref:System.OverflowException?displayProperty=fullName> error.  
+-   **Widening.** The `Short` data type widens to `Integer`, `Long`, `Decimal`, `Single`, or `Double`. This means you can convert `Short` to any one of these types without encountering a <xref:System.OverflowException?displayProperty=nameWithType> error.  
   
 -   **Type Characters.** Appending the literal type character `S` to a literal forces it to the `Short` data type. `Short` has no identifier type character.  
   
--   **Framework Type.** The corresponding type in the .NET Framework is the <xref:System.Int16?displayProperty=fullName> structure.  
+-   **Framework Type.** The corresponding type in the .NET Framework is the <xref:System.Int16?displayProperty=nameWithType> structure.  
   
 ## See also
 
- <xref:System.Int16?displayProperty=fullName>   
+ <xref:System.Int16?displayProperty=nameWithType>   
  [Data Types](../../../visual-basic/language-reference/data-types/data-type-summary.md)   
  [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)   
  [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)   

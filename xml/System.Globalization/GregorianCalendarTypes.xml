@@ -33,11 +33,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The date and time patterns associated with the <xref:System.Globalization.GregorianCalendar> vary depending on the language. If the <xref:System.Globalization.GregorianCalendar> is selected in <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A?displayProperty=fullName>, <xref:System.Globalization.GregorianCalendarTypes> can be used to specify which date and time patterns to use in that <xref:System.Globalization.DateTimeFormatInfo>.  
+ The date and time patterns associated with the <xref:System.Globalization.GregorianCalendar> vary depending on the language. If the <xref:System.Globalization.GregorianCalendar> is selected in <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A?displayProperty=nameWithType>, <xref:System.Globalization.GregorianCalendarTypes> can be used to specify which date and time patterns to use in that <xref:System.Globalization.DateTimeFormatInfo>.  
   
  For Arabic cultures, more language versions of the Gregorian calendar are available. For example, you can use the French version of <xref:System.Globalization.GregorianCalendar> using the MiddleEastFrench value.  
   
- A culture that supports <xref:System.Globalization.GregorianCalendarTypes.MiddleEastFrench> might not support all language versions of <xref:System.Globalization.GregorianCalendar>. The <xref:System.Globalization.CultureInfo.Calendar%2A?displayProperty=fullName> and <xref:System.Globalization.CultureInfo.OptionalCalendars%2A?displayProperty=fullName> properties specify the calendars supported by that culture. If <xref:System.Globalization.GregorianCalendar> is supported, <xref:System.Globalization.GregorianCalendar.CalendarType%2A> can be used to determine which language versions of <xref:System.Globalization.GregorianCalendar.CalendarType%2A> are supported.  
+ A culture that supports <xref:System.Globalization.GregorianCalendarTypes.MiddleEastFrench> might not support all language versions of <xref:System.Globalization.GregorianCalendar>. The <xref:System.Globalization.CultureInfo.Calendar%2A?displayProperty=nameWithType> and <xref:System.Globalization.CultureInfo.OptionalCalendars%2A?displayProperty=nameWithType> properties specify the calendars supported by that culture. If <xref:System.Globalization.GregorianCalendar> is supported, <xref:System.Globalization.GregorianCalendar.CalendarType%2A> can be used to determine which language versions of <xref:System.Globalization.GregorianCalendar.CalendarType%2A> are supported.  
   
    
   

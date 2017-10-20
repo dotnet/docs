@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorAssemblyFlags"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorAssemblyFlags enumeration [.NET Framework metadata]"
 ms.assetid: bb8db3b6-d81d-49fc-b74c-dbc908a9eab9

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRDomainManager"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRDomainManager interface [.NET Framework hosting]"
 ms.assetid: f08b2390-d872-4521-a815-e9c237c4c45d
@@ -34,7 +32,7 @@ Enables the host to specify the application domain manager that will be used to 
   
 |Method|Description|  
 |------------|-----------------|  
-|[SetAppDomainManagerType Method](../../../../docs/framework/unmanaged-api/hosting/iclrdomainmanager-setappdomainmanagertype-method.md)|Specifies the type, derived from the <xref:System.AppDomainManager?displayProperty=fullName> class, of the application domain manager that will be used to initialize the default application domain.|  
+|[SetAppDomainManagerType Method](../../../../docs/framework/unmanaged-api/hosting/iclrdomainmanager-setappdomainmanagertype-method.md)|Specifies the type, derived from the <xref:System.AppDomainManager?displayProperty=nameWithType> class, of the application domain manager that will be used to initialize the default application domain.|  
 |[SetPropertiesForDefaultAppDomain Method](../../../../docs/framework/unmanaged-api/hosting/iclrdomainmanager-setpropertiesfordefaultappdomain-method.md)|Sets properties that will be used to initialize the default application domain.|  
   
 ## Remarks  

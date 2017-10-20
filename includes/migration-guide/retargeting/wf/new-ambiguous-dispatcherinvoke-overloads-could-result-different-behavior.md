@@ -7,6 +7,6 @@
 |Scope|Minor|
 |Version|4.5|
 |Type|Retargeting|
-|Affected APIs|<ul><li><xref:System.Windows.Threading.Dispatcher.Invoke(System.Delegate%2CSystem.Object%5B%5D)?displayProperty=fullName></li><li><xref:System.Windows.Threading.Dispatcher.Invoke(System.Delegate%2CSystem.TimeSpan%2CSystem.Object%5B%5D)?displayProperty=fullName></li><li><xref:System.Windows.Threading.Dispatcher.Invoke(System.Delegate%2CSystem.TimeSpan%2CSystem.Windows.Threading.DispatcherPriority%2CSystem.Object%5B%5D)?displayProperty=fullName></li><li><xref:System.Windows.Threading.Dispatcher.Invoke(System.Delegate%2CSystem.Windows.Threading.DispatcherPriority%2CSystem.Object%5B%5D)?displayProperty=fullName></li></ul>|
+|Affected APIs|<ul><li><xref:System.Windows.Threading.Dispatcher.Invoke(System.Delegate%2CSystem.Object%5B%5D)?displayProperty=nameWithType></li><li><xref:System.Windows.Threading.Dispatcher.Invoke(System.Delegate%2CSystem.TimeSpan%2CSystem.Object%5B%5D)?displayProperty=nameWithType></li><li><xref:System.Windows.Threading.Dispatcher.Invoke(System.Delegate%2CSystem.TimeSpan%2CSystem.Windows.Threading.DispatcherPriority%2CSystem.Object%5B%5D)?displayProperty=nameWithType></li><li><xref:System.Windows.Threading.Dispatcher.Invoke(System.Delegate%2CSystem.Windows.Threading.DispatcherPriority%2CSystem.Object%5B%5D)?displayProperty=nameWithType></li></ul>|
 |Analyzers|<ul><li>CD0023</li></ul>|
 

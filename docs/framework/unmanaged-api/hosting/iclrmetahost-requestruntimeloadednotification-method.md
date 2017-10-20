@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRMetaHost::RequestRuntimeLoadedNotification"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "RequestRuntimeLoadedNotification method [.NET Framework hosting]"
   - "ICLRMetaHost::RequestRuntimeLoadedNotification method [.NET Framework hosting]"

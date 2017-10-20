@@ -601,7 +601,7 @@ End Module
     </Member>
     <Member MemberName="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;.TryGetValue">
       <MemberSignature Language="C#" Value="bool IDictionary&lt;string,object&gt;.TryGetValue (string key, out object value);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.Generic.IDictionary&lt;string,object&gt;.TryGetValue(string key, object value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.Generic.IDictionary&lt;string,object&gt;.TryGetValue(string key, [out] object&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary&lt;string,object&gt;#TryGetValue(System.String,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

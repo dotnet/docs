@@ -18,8 +18,6 @@ api_type:
   - "HeaderDef"
 f1_keywords: 
   - "CorBindToCurrentRuntime"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorBindToCurrentRuntime function [.NET Framework hosting]"
 ms.assetid: 6105c13e-d9cd-44d2-a95a-924e042830c7

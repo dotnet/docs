@@ -39,12 +39,12 @@ public class Circle
       get { return 2 * Radius; }
    }
 
-   public double Area
+   public double Circumference
    {
       get { return 2 * Radius * PI; }      
    }
 
-   public double Circumference
+   public double Area
    {
       get { return PI * Pow(Radius, 2); }
    }
@@ -55,6 +55,5 @@ public class Circle
 //       Information about the circle:
 //          Radius: 12.45
 //          Diameter: 24.90
-//          Circumference: 486.95
-//          Area: 78.23
-   
+//          Circumference: 78.23
+//          Area: 486.95

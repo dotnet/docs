@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
+dev_langs:
+ - "csharp"
+ - "vb"
 ms.assetid: 5eb29db0-b6dc-4e77-8c68-0a62f79d743b
 caps.latest.revision: 42
 author: "Erikre"
@@ -21,7 +21,7 @@ manager: "erikre"
 # How to: Host a WCF Service in a Managed Application
 To host a service inside a managed application, embed the code for the service inside the managed application code, define an endpoint for the service either imperatively in code, declaratively through configuration, or using default endpoints, and then create an instance of <xref:System.ServiceModel.ServiceHost>.  
   
- To start receiving messages, call <xref:System.ServiceModel.ICommunicationObject.Open%2A> on <xref:System.ServiceModel.ServiceHost>. This creates and opens the listener for the service. Hosting a service in this way is often referred to as "self-hosting" because the managed application is doing the hosting work itself. To close the service, call <xref:System.ServiceModel.Channels.CommunicationObject.Close%2A?displayProperty=fullName> on <xref:System.ServiceModel.ServiceHost>.  
+ To start receiving messages, call <xref:System.ServiceModel.ICommunicationObject.Open%2A> on <xref:System.ServiceModel.ServiceHost>. This creates and opens the listener for the service. Hosting a service in this way is often referred to as "self-hosting" because the managed application is doing the hosting work itself. To close the service, call <xref:System.ServiceModel.Channels.CommunicationObject.Close%2A?displayProperty=nameWithType> on <xref:System.ServiceModel.ServiceHost>.  
   
  A service can also be hosted in a managed Windows service, in Internet Information Services (IIS), or in Windows Process Activation Service (WAS). [!INCLUDE[crabout](../../../includes/crabout-md.md)] hosting options for a service, see [Hosting Services](../../../docs/framework/wcf/hosting-services.md).  
   

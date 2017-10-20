@@ -9,8 +9,10 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
+dev_langs:
+- "csharp"
+- "vb"
+- "cpp"
 helpviewer_keywords: 
   - "pictures, setting display"
   - "examples [Windows Forms], PictureBox control"
@@ -103,7 +105,7 @@ You can programmatically set the image displayed by a Windows Forms <xref:System
   
 ## See Also  
  <xref:System.Windows.Forms.PictureBox>   
- <xref:System.Drawing.Image.FromFile%2A?displayProperty=fullName>   
+ <xref:System.Drawing.Image.FromFile%2A?displayProperty=nameWithType>   
  [PictureBox Control Overview](../../../../docs/framework/winforms/controls/picturebox-control-overview-windows-forms.md)   
  [How to: Load a Picture Using the Designer](../../../../docs/framework/winforms/controls/how-to-load-a-picture-using-the-designer-windows-forms.md)   
  [How to: Modify the Size or Placement of a Picture at Run Time](../../../../docs/framework/winforms/controls/how-to-modify-the-size-or-placement-of-a-picture-at-run-time-windows-forms.md)   

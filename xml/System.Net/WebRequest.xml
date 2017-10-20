@@ -31,11 +31,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Net.WebRequest> is the `abstract` base class for the .NET Framework's request/response model for accessing data from the Internet. An application that uses the request/response model can request data from the Internet in a protocol-agnostic manner, in which the application works with instances of the <xref:System.Net.WebRequest> class while protocol-specific descendant classes carry out the details of the request.  
+ <xref:System.Net.WebRequest> is the `abstract` base class for .NET's request/response model for accessing data from the Internet. An application that uses the request/response model can request data from the Internet in a protocol-agnostic manner, in which the application works with instances of the <xref:System.Net.WebRequest> class while protocol-specific descendant classes carry out the details of the request.  
   
  Requests are sent from an application to a particular URI, such as a Web page on a server. The URI determines the proper descendant class to create from a list of <xref:System.Net.WebRequest> descendants registered for the application. <xref:System.Net.WebRequest> descendants are typically registered to handle a specific protocol, such as HTTP or FTP, but can be registered to handle a request to a specific server or path on a server.  
   
- The <xref:System.Net.WebRequest> class throws a <xref:System.Net.WebException> when errors occur while accessing an Internet resource. The <xref:System.Net.WebException.Status%2A> property is one of the <xref:System.Net.WebExceptionStatus> values that indicates the source of the error. When <xref:System.Net.WebException.Status%2A> is <xref:System.Net.WebExceptionStatus.ProtocolError?displayProperty=fullName>, the <xref:System.Net.WebException.Response%2A> property contains the <xref:System.Net.WebResponse> received from the Internet resource.  
+ The <xref:System.Net.WebRequest> class throws a <xref:System.Net.WebException> when errors occur while accessing an Internet resource. The <xref:System.Net.WebException.Status%2A> property is one of the <xref:System.Net.WebExceptionStatus> values that indicates the source of the error. When <xref:System.Net.WebException.Status%2A> is <xref:System.Net.WebExceptionStatus.ProtocolError?displayProperty=nameWithType>, the <xref:System.Net.WebException.Response%2A> property contains the <xref:System.Net.WebResponse> received from the Internet resource.  
   
  Because the <xref:System.Net.WebRequest> class is an `abstract` class, the actual behavior of <xref:System.Net.WebRequest> instances at run time is determined by the descendant class returned by <xref:System.Net.WebRequest.Create%2A> method. For more information about default values and exceptions, see the documentation for the descendant classes, such as <xref:System.Net.HttpWebRequest> and <xref:System.Net.FileWebRequest>.  
   
@@ -63,6 +63,16 @@
     <altmember cref="T:System.Net.HttpWebRequest" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.WebRequest" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected WebRequest ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
@@ -175,7 +185,7 @@
  The <xref:System.Net.WebRequest.Abort%2A> method cancels asynchronous requests to Internet resources started with the <xref:System.Net.WebRequest.BeginGetResponse%2A> method.  
   
 > [!NOTE]
->  The <xref:System.Net.WebRequest> class is an `abstract` class. The actual behavior of <xref:System.Net.WebRequest> instances at run time is determined by the descendant class returned by the <xref:System.Net.WebRequest.Create%2A?displayProperty=fullName> method. For more information about default values and exceptions, see the documentation for the descendant classes, such as <xref:System.Net.HttpWebRequest> and <xref:System.Net.FileWebRequest>.  
+>  The <xref:System.Net.WebRequest> class is an `abstract` class. The actual behavior of <xref:System.Net.WebRequest> instances at run time is determined by the descendant class returned by the <xref:System.Net.WebRequest.Create%2A?displayProperty=nameWithType> method. For more information about default values and exceptions, see the documentation for the descendant classes, such as <xref:System.Net.HttpWebRequest> and <xref:System.Net.FileWebRequest>.  
   
  ]]></format>
         </remarks>
@@ -263,7 +273,7 @@
  The <xref:System.Net.WebRequest.BeginGetRequestStream%2A> method starts an asynchronous request for a stream used to send data to an Internet resource. The callback method that implements the <xref:System.AsyncCallback> delegate uses the <xref:System.Net.WebRequest.EndGetRequestStream%2A> method to return the request stream.  
   
 > [!NOTE]
->  The <xref:System.Net.WebRequest> class is an `abstract` class. The actual behavior of <xref:System.Net.WebRequest> instances at run time is determined by the descendant class returned by the <xref:System.Net.WebRequest.Create%2A?displayProperty=fullName> method. For more information about default values and exceptions, see the documentation for the descendant classes, such as <xref:System.Net.HttpWebRequest> and <xref:System.Net.FileWebRequest>.  
+>  The <xref:System.Net.WebRequest> class is an `abstract` class. The actual behavior of <xref:System.Net.WebRequest> instances at run time is determined by the descendant class returned by the <xref:System.Net.WebRequest.Create%2A?displayProperty=nameWithType> method. For more information about default values and exceptions, see the documentation for the descendant classes, such as <xref:System.Net.HttpWebRequest> and <xref:System.Net.FileWebRequest>.  
   
    
   
@@ -318,7 +328,7 @@
  The <xref:System.Net.WebRequest.BeginGetResponse%2A> method starts an asynchronous request for a response. The callback method that implements the <xref:System.AsyncCallback> delegate uses the <xref:System.Net.WebRequest.EndGetResponse%2A> method to return the <xref:System.Net.WebResponse> from the Internet resource.  
   
 > [!NOTE]
->  The <xref:System.Net.WebRequest> class is an `abstract` class. The actual behavior of <xref:System.Net.WebRequest> instances at run time is determined by the descendant class returned by the <xref:System.Net.WebRequest.Create%2A?displayProperty=fullName> method. For more information about default values and exceptions, see the documentation for the descendant classes, such as <xref:System.Net.HttpWebRequest> and <xref:System.Net.FileWebRequest>.  
+>  The <xref:System.Net.WebRequest> class is an `abstract` class. The actual behavior of <xref:System.Net.WebRequest> instances at run time is determined by the descendant class returned by the <xref:System.Net.WebRequest.Create%2A?displayProperty=nameWithType> method. For more information about default values and exceptions, see the documentation for the descendant classes, such as <xref:System.Net.HttpWebRequest> and <xref:System.Net.FileWebRequest>.  
   
 > [!NOTE]
 >  If a WebException is thrown, use the <xref:System.Net.WebException.Response%2A> and <xref:System.Net.WebException.Status%2A> properties of the exception to determine the response from the server.  
@@ -414,7 +424,7 @@
  The <xref:System.Net.WebRequest.ConnectionGroupName%2A> property associates specific requests within an application to one or more connection pools.  
   
 > [!NOTE]
->  The <xref:System.Net.WebRequest> class is an `abstract` class. The actual behavior of <xref:System.Net.WebRequest> instances at run time is determined by the descendant class returned by the <xref:System.Net.WebRequest.Create%2A?displayProperty=fullName> method. For more information about default values and exceptions, see the documentation for the descendant classes, such as <xref:System.Net.HttpWebRequest> and <xref:System.Net.FileWebRequest>.  
+>  The <xref:System.Net.WebRequest> class is an `abstract` class. The actual behavior of <xref:System.Net.WebRequest> instances at run time is determined by the descendant class returned by the <xref:System.Net.WebRequest.Create%2A?displayProperty=nameWithType> method. For more information about default values and exceptions, see the documentation for the descendant classes, such as <xref:System.Net.HttpWebRequest> and <xref:System.Net.FileWebRequest>.  
   
  ]]></format>
         </remarks>
@@ -455,7 +465,7 @@
  The <xref:System.Net.WebRequest.ContentLength%2A> property contains the number of bytes of data sent to the Internet resource by the <xref:System.Net.WebRequest> instance.  
   
 > [!NOTE]
->  The <xref:System.Net.WebRequest> class is an `abstract` class. The actual behavior of <xref:System.Net.WebRequest> instances at run time is determined by the descendant class returned by the <xref:System.Net.WebRequest.Create%2A?displayProperty=fullName> method. For more information about default values and exceptions, see the documentation for the descendant classes, such as <xref:System.Net.HttpWebRequest> and <xref:System.Net.FileWebRequest>.  
+>  The <xref:System.Net.WebRequest> class is an `abstract` class. The actual behavior of <xref:System.Net.WebRequest> instances at run time is determined by the descendant class returned by the <xref:System.Net.WebRequest.Create%2A?displayProperty=nameWithType> method. For more information about default values and exceptions, see the documentation for the descendant classes, such as <xref:System.Net.HttpWebRequest> and <xref:System.Net.FileWebRequest>.  
   
    
   
@@ -503,7 +513,7 @@
  The <xref:System.Net.WebRequest.ContentType%2A> property contains the media type of the request. This is typically the MIME encoding of the content.  
   
 > [!NOTE]
->  The <xref:System.Net.WebRequest> class is an `abstract` class. The actual behavior of <xref:System.Net.WebRequest> instances at run time is determined by the descendant class returned by the <xref:System.Net.WebRequest.Create%2A?displayProperty=fullName> method. For more information about default values and exceptions, see the documentation for the descendant classes, such as <xref:System.Net.HttpWebRequest> and <xref:System.Net.FileWebRequest>.  
+>  The <xref:System.Net.WebRequest> class is an `abstract` class. The actual behavior of <xref:System.Net.WebRequest> instances at run time is determined by the descendant class returned by the <xref:System.Net.WebRequest.Create%2A?displayProperty=nameWithType> method. For more information about default values and exceptions, see the documentation for the descendant classes, such as <xref:System.Net.HttpWebRequest> and <xref:System.Net.FileWebRequest>.  
   
    
   
@@ -520,6 +530,16 @@
         <altmember cref="P:System.Net.HttpWebRequest.ContentType" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Create">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new <see cref="T:System.Net.WebRequest" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Create">
       <MemberSignature Language="C#" Value="public static System.Net.WebRequest Create (string requestUriString);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.WebRequest Create(string requestUriString) cil managed" />
@@ -555,7 +575,7 @@
 ## Remarks  
  The <xref:System.Net.WebRequest.Create%2A> method returns a descendant of the <xref:System.Net.WebRequest> class determined at run time as the closest registered match for `requestUri`.  
   
- For example, when a URI beginning with `http://` or `https://` is passed in `requestUri`, an <xref:System.Net.HttpWebRequest> is returned by <xref:System.Net.WebRequest.Create%2A>. If a URI beginning with `ftp://` is passed instead, the <xref:System.Net.WebRequest.Create%2A> method will return a <xref:System.Net.FileWebRequest> instance. If a URI beginning with `file://` is passed instead, the <xref:System.Net.WebRequest.Create%2A> method will return a <xref:System.Net.FileWebRequest> instance.  
+ For example, when a URI beginning with `http://` or `https://` is passed in `requestUri`, an <xref:System.Net.HttpWebRequest> is returned by <xref:System.Net.WebRequest.Create%2A>. If a URI beginning with `ftp://` is passed instead, the <xref:System.Net.WebRequest.Create%2A> method will return a <xref:System.Net.FtpWebRequest> instance. If a URI beginning with `file://` is passed instead, the <xref:System.Net.WebRequest.Create%2A> method will return a <xref:System.Net.FileWebRequest> instance.  
   
  The pre-registered reserve types already registered include the following:  
   
@@ -567,7 +587,7 @@
   
 -   `file://`  
   
- The .NET Framework includes support for the `http://`, `https://`, `ftp://`, and `file://` URI schemes. Custom <xref:System.Net.WebRequest> descendants to handle other requests are registered with the <xref:System.Net.WebRequest.RegisterPrefix%2A> method.  
+ .NET includes support for the `http://`, `https://`, `ftp://`, and `file://` URI schemes. Custom <xref:System.Net.WebRequest> descendants to handle other requests are registered with the <xref:System.Net.WebRequest.RegisterPrefix%2A> method.  
   
  The <xref:System.Net.WebRequest.Create%2A> method uses the `requestUriString` parameter to create a <xref:System.Uri> instance that it passes to the new <xref:System.Net.WebRequest>.  
   
@@ -590,12 +610,12 @@
           <paramref name="requestUriString" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have permission to connect to the requested URI or a URI that the request is redirected to.</exception>
         <exception cref="T:System.UriFormatException">
-          <block subset="none" type="note">  
-<para>  
+          <block subset="none" type="note">
+            <para>  
  In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](http://msdn.microsoft.com/en-us/c31e1663-c164-4e65-b66d-d3aa8750a154), catch the base class exception, <see cref="T:System.FormatException" />, instead.  
   
-</para>  
-</block>  
+</para>
+          </block>  
   
  The URI specified in <paramref name="requestUriString" /> is not a valid URI.</exception>
       </Docs>
@@ -651,7 +671,7 @@
   
 -   `file://`  
   
- The .NET Framework includes support for the `http://`, `https://`, `ftp://`, and `file://` URI schemes. Custom <xref:System.Net.WebRequest> descendants to handle other requests are registered with the <xref:System.Net.WebRequest.RegisterPrefix%2A> method.  
+ .NET includes support for the `http://`, `https://`, `ftp://`, and `file://` URI schemes. Custom <xref:System.Net.WebRequest> descendants to handle other requests are registered with the <xref:System.Net.WebRequest.RegisterPrefix%2A> method.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [&#91;\<topic://conUsingNetworkTracing>&#93;](http://msdn.microsoft.com/en-us/e993b7c3-087f-45d8-9c02-9dded936d804).  
@@ -710,7 +730,7 @@
  For example, when a URI beginning with `http://` is passed in `requestUri`, an <xref:System.Net.HttpWebRequest> is returned by <xref:System.Net.WebRequest.CreateDefault%2A>. If a URI beginning with `file://` is passed instead, the <xref:System.Net.WebRequest.CreateDefault%2A> method will return a <xref:System.Net.FileWebRequest>.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in .NET](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -720,6 +740,16 @@
         <exception cref="T:System.Security.SecurityException">The caller does not have permission to connect to the requested URI or a URI that the request is redirected to.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateHttp">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new <see cref="T:System.Net.HttpWebRequest" /> instance for the specified URI.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateHttp">
       <MemberSignature Language="C#" Value="public static System.Net.HttpWebRequest CreateHttp (string requestUriString);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.HttpWebRequest CreateHttp(string requestUriString) cil managed" />
@@ -759,7 +789,7 @@
   
  The <xref:System.Net.WebRequest.CreateHttp%28System.String%29> method uses the `requestUriString` parameter to create a <xref:System.Uri> instance that it passes to the new <xref:System.Net.HttpWebRequest>. If the method is successful, the <xref:System.Net.HttpWebRequest.AllowReadStreamBuffering%2A> property on the returned <xref:System.Net.HttpWebRequest> instance is set to `false`.  
   
- The .NET Framework includes support for the `http://` and  `https://` URI schemes. Custom <xref:System.Net.WebRequest> descendants to handle other requests are registered with the <xref:System.Net.WebRequest.RegisterPrefix%2A> method. The <xref:System.Net.WebRequest.Create%28System.String%29> method can be used to create a descendant of the <xref:System.Net.WebRequest> class for other schemes.  
+ .NET includes support for the `http://` and  `https://` URI schemes. Custom <xref:System.Net.WebRequest> descendants to handle other requests are registered with the <xref:System.Net.WebRequest.RegisterPrefix%2A> method. The <xref:System.Net.WebRequest.Create%28System.String%29> method can be used to create a descendant of the <xref:System.Net.WebRequest> class for other schemes.  
   
  ]]></format>
         </remarks>
@@ -809,7 +839,7 @@
   
  The <xref:System.Net.WebRequest.CreateHttp%28System.Uri%29> method uses the `requestUri` parameter to create a new <xref:System.Net.HttpWebRequest> instance. If the method is successful, the <xref:System.Net.HttpWebRequest.AllowReadStreamBuffering%2A> property on the returned <xref:System.Net.HttpWebRequest> instance is set to `false`.  
   
- The .NET Framework includes support for the `http://` and  `https://` URI schemes. Custom <xref:System.Net.WebRequest> descendants to handle other requests are registered with the <xref:System.Net.WebRequest.RegisterPrefix%2A> method. The <xref:System.Net.WebRequest.Create%28System.Uri%29> method can be used to create a descendant of the <xref:System.Net.WebRequest> class for other schemes.  
+ .NET includes support for the `http://` and  `https://` URI schemes. Custom <xref:System.Net.WebRequest> descendants to handle other requests are registered with the <xref:System.Net.WebRequest.RegisterPrefix%2A> method. The <xref:System.Net.WebRequest.Create%28System.Uri%29> method can be used to create a descendant of the <xref:System.Net.WebRequest> class for other schemes.  
   
  ]]></format>
         </remarks>
@@ -848,7 +878,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property allows an application to determine which <xref:System.Net.IWebRequestCreate> derived factory object was used to create the request. This object may be [System.Net.Browser.WebRequestCreator.BrowserHttp](https://msdn.microsoft.com/subscriptions/index/system.net.browser.webrequestcreator.browserhttp\(v=vs.95\).aspx) or <xref:System.Net.Browser.WebRequestCreator.ClientHttp%2A?displayProperty=fullName>, but it may also be a custom instance derived from <xref:System.Net.IWebRequestCreate>. This allows an application to determine whether the browser hosting [!INCLUDE[silverlight](~/includes/silverlight-md.md)], the [!INCLUDE[silverlight](~/includes/silverlight-md.md)] client, or some custom object handles HTTP requests and responses for the <xref:System.Net.WebRequest> instance. The <xref:System.Net.WebRequest.RegisterPrefix%2A> method allows an application to configure which derived <xref:System.Net.WebRequest> type will be instantiated when making a request to a specific URI. <xref:System.Net.WebRequest> creators are typically registered to handle a specific protocol, such HTTP or HTTPS, but can be registered to handle a request to a specific server or path on a server. This is useful when more than one derived <xref:System.Net.WebRequest> type can process requests for the same protocol. The [!INCLUDE[sil3_first](~/includes/sil3-first-md.md)] and later runtime supports multiple HTTP handlers each having different capabilities. For example, a web service that uses Representational State Transfer (REST) might require the <xref:System.Net.Browser.WebRequestCreator.ClientHttp%2A?displayProperty=fullName> handler while a SOAP web service might be able to use the default [System.Net.Browser.WebRequestCreator.BrowserHttp](https://msdn.microsoft.com/subscriptions/index/system.net.browser.webrequestcreator.browserhttp\(v=vs.95\).aspx) handler.  
+This property allows an application to determine which <xref:System.Net.IWebRequestCreate> derived factory object was used to create the request. This object may be [System.Net.Browser.WebRequestCreator.BrowserHttp](https://msdn.microsoft.com/library/system.net.browser.webrequestcreator.browserhttp(v=vs.95)) or [System.Net.Browser.WebRequestCreator.ClientHttp](https://msdn.microsoft.com/library/system.net.browser.webrequestcreator.clienthttp(v=vs.95)), but it may also be a custom instance derived from <xref:System.Net.IWebRequestCreate>. This allows an application to determine whether the browser hosting [!INCLUDE[silverlight](~/includes/silverlight-md.md)], the [!INCLUDE[silverlight](~/includes/silverlight-md.md)] client, or some custom object handles HTTP requests and responses for the <xref:System.Net.WebRequest> instance. The <xref:System.Net.WebRequest.RegisterPrefix%2A> method allows an application to configure which derived <xref:System.Net.WebRequest> type will be instantiated when making a request to a specific URI. <xref:System.Net.WebRequest> creators are typically registered to handle a specific protocol, such HTTP or HTTPS, but can be registered to handle a request to a specific server or path on a server. This is useful when more than one derived <xref:System.Net.WebRequest> type can process requests for the same protocol. The [!INCLUDE[sil3_first](~/includes/sil3-first-md.md)] and later runtime supports multiple HTTP handlers each having different capabilities. For example, a web service that uses Representational State Transfer (REST) might require the [System.Net.Browser.WebRequestCreator.ClientHttp](https://msdn.microsoft.com/library/system.net.browser.webrequestcreator.clienthttp(v=vs.95)) handler while a SOAP web service might be able to use the default [System.Net.Browser.WebRequestCreator.BrowserHttp](https://msdn.microsoft.com/library/system.net.browser.webrequestcreator.browserhttp(v=vs.95)) handler.
   
  ]]></format>
         </remarks>
@@ -886,7 +916,7 @@
  The <xref:System.Net.WebRequest.Credentials%2A> property contains the authentication credentials required to access the Internet resource.  
   
 > [!NOTE]
->  The <xref:System.Net.WebRequest> class is an `abstract` class. The actual behavior of <xref:System.Net.WebRequest> instances at run time is determined by the descendant class returned by the <xref:System.Net.WebRequest.Create%2A?displayProperty=fullName> method. For more information about default values and exceptions, see the documentation for the descendant classes, such as <xref:System.Net.HttpWebRequest> and <xref:System.Net.FileWebRequest>.  
+>  The <xref:System.Net.WebRequest> class is an `abstract` class. The actual behavior of <xref:System.Net.WebRequest> instances at run time is determined by the descendant class returned by the <xref:System.Net.WebRequest.Create%2A?displayProperty=nameWithType> method. For more information about default values and exceptions, see the documentation for the descendant classes, such as <xref:System.Net.HttpWebRequest> and <xref:System.Net.FileWebRequest>.  
   
    
   
@@ -1037,7 +1067,7 @@
 >  To avoid timing issues with garbage collection, be sure to close the response stream by calling the <xref:System.IO.Stream.Close%2A> method on the stream returned by <xref:System.Net.WebResponse.GetResponseStream%2A> after calling <xref:System.Net.WebRequest.EndGetResponse%2A>.  
   
 > [!NOTE]
->  The <xref:System.Net.WebRequest> class is an `abstract` class. The actual behavior of <xref:System.Net.WebRequest> instances at run time is determined by the descendant class returned by the <xref:System.Net.WebRequest.Create%2A?displayProperty=fullName> method. For more information about default values and exceptions, see the documentation for the descendant classes, such as <xref:System.Net.HttpWebRequest> and <xref:System.Net.FileWebRequest>.  
+>  The <xref:System.Net.WebRequest> class is an `abstract` class. The actual behavior of <xref:System.Net.WebRequest> instances at run time is determined by the descendant class returned by the <xref:System.Net.WebRequest.Create%2A?displayProperty=nameWithType> method. For more information about default values and exceptions, see the documentation for the descendant classes, such as <xref:System.Net.HttpWebRequest> and <xref:System.Net.FileWebRequest>.  
   
    
   
@@ -1089,7 +1119,7 @@
  The <xref:System.Net.WebRequest.EndGetResponse%2A> method completes an asynchronous request for an Internet resource that was started with the <xref:System.Net.WebRequest.BeginGetResponse%2A> method.  
   
 > [!NOTE]
->  The <xref:System.Net.WebRequest> class is an `abstract` class. The actual behavior of <xref:System.Net.WebRequest> instances at run time is determined by the descendant class returned by the <xref:System.Net.WebRequest.Create%2A?displayProperty=fullName> method. For more information about default values and exceptions, see the documentation for the descendant classes, such as <xref:System.Net.HttpWebRequest> and <xref:System.Net.FileWebRequest>.  
+>  The <xref:System.Net.WebRequest> class is an `abstract` class. The actual behavior of <xref:System.Net.WebRequest> instances at run time is determined by the descendant class returned by the <xref:System.Net.WebRequest.Create%2A?displayProperty=nameWithType> method. For more information about default values and exceptions, see the documentation for the descendant classes, such as <xref:System.Net.HttpWebRequest> and <xref:System.Net.FileWebRequest>.  
   
    
   
@@ -1179,7 +1209,7 @@
  The <xref:System.Net.WebRequest.GetRequestStream%2A> method provides synchronous access to the <xref:System.IO.Stream>. For asynchronous access, use the <xref:System.Net.WebRequest.BeginGetRequestStream%2A> and <xref:System.Net.WebRequest.EndGetRequestStream%2A> methods.  
   
 > [!NOTE]
->  The <xref:System.Net.WebRequest> class is an `abstract` class. The actual behavior of <xref:System.Net.WebRequest> instances at run time is determined by the descendant class returned by the <xref:System.Net.WebRequest.Create%2A?displayProperty=fullName> method. For more information about default values and exceptions, see the documentation for the descendant classes, such as <xref:System.Net.HttpWebRequest> and <xref:System.Net.FileWebRequest>.  
+>  The <xref:System.Net.WebRequest> class is an `abstract` class. The actual behavior of <xref:System.Net.WebRequest> instances at run time is determined by the descendant class returned by the <xref:System.Net.WebRequest.Create%2A?displayProperty=nameWithType> method. For more information about default values and exceptions, see the documentation for the descendant classes, such as <xref:System.Net.HttpWebRequest> and <xref:System.Net.FileWebRequest>.  
   
    
   
@@ -1268,7 +1298,7 @@
  The <xref:System.Net.WebRequest.GetResponse%2A> method provides synchronous access to the <xref:System.Net.WebResponse>. For asynchronous access, use the <xref:System.Net.WebRequest.BeginGetResponse%2A> and <xref:System.Net.WebRequest.EndGetResponse%2A> methods.  
   
 > [!NOTE]
->  The <xref:System.Net.WebRequest> class is an `abstract` class. The actual behavior of <xref:System.Net.WebRequest> instances at run time is determined by the descendant class returned by the <xref:System.Net.WebRequest.Create%2A?displayProperty=fullName> method. For more information about default values and exceptions, see the documentation for the descendant classes, such as <xref:System.Net.HttpWebRequest> and <xref:System.Net.FileWebRequest>.  
+>  The <xref:System.Net.WebRequest> class is an `abstract` class. The actual behavior of <xref:System.Net.WebRequest> instances at run time is determined by the descendant class returned by the <xref:System.Net.WebRequest.Create%2A?displayProperty=nameWithType> method. For more information about default values and exceptions, see the documentation for the descendant classes, such as <xref:System.Net.HttpWebRequest> and <xref:System.Net.FileWebRequest>.  
   
 > [!NOTE]
 >  If a WebException is thrown, use the <xref:System.Net.WebException.Response%2A> and <xref:System.Net.WebException.Status%2A> properties of the exception to determine the response from the server.  
@@ -1393,7 +1423,7 @@
  The <xref:System.Net.WebRequest.Headers%2A> property contains a <xref:System.Net.WebHeaderCollection> instance containing the header information to send to the Internet resource.  
   
 > [!NOTE]
->  The <xref:System.Net.WebRequest> class is an `abstract` class. The actual behavior of <xref:System.Net.WebRequest> instances at run time is determined by the descendant class returned by the <xref:System.Net.WebRequest.Create%2A?displayProperty=fullName> method. For more information about default values and exceptions, see the documentation for the descendant classes, such as <xref:System.Net.HttpWebRequest> and <xref:System.Net.FileWebRequest>.  
+>  The <xref:System.Net.WebRequest> class is an `abstract` class. The actual behavior of <xref:System.Net.WebRequest> instances at run time is determined by the descendant class returned by the <xref:System.Net.WebRequest.Create%2A?displayProperty=nameWithType> method. For more information about default values and exceptions, see the documentation for the descendant classes, such as <xref:System.Net.HttpWebRequest> and <xref:System.Net.FileWebRequest>.  
   
    
   
@@ -1475,7 +1505,7 @@
  When overridden in a descendant class, the <xref:System.Net.WebRequest.Method%2A> property contains the request method to use in this request.  
   
 > [!NOTE]
->  The <xref:System.Net.WebRequest> class is an `abstract` class. The actual behavior of <xref:System.Net.WebRequest> instances at run time is determined by the descendant class returned by the <xref:System.Net.WebRequest.Create%2A?displayProperty=fullName> method. For more information about default values and exceptions, see the documentation for the descendant classes, such as <xref:System.Net.HttpWebRequest> and <xref:System.Net.FileWebRequest>.  
+>  The <xref:System.Net.WebRequest> class is an `abstract` class. The actual behavior of <xref:System.Net.WebRequest> instances at run time is determined by the descendant class returned by the <xref:System.Net.WebRequest.Create%2A?displayProperty=nameWithType> method. For more information about default values and exceptions, see the documentation for the descendant classes, such as <xref:System.Net.HttpWebRequest> and <xref:System.Net.FileWebRequest>.  
   
    
   
@@ -1526,7 +1556,7 @@
  With the exception of the first request, the <xref:System.Net.WebRequest.PreAuthenticate%2A> property indicates whether to send authentication information with subsequent requests without waiting to be challenged by the server. When <xref:System.Net.WebRequest.PreAuthenticate%2A> is `false`, the <xref:System.Net.WebRequest> waits for an authentication challenge before sending authentication information.  
   
 > [!NOTE]
->  The <xref:System.Net.WebRequest> class is an `abstract` class. The actual behavior of <xref:System.Net.WebRequest> instances at run time is determined by the descendant class returned by the <xref:System.Net.WebRequest.Create%2A?displayProperty=fullName> method. For more information about default values and exceptions, see the documentation for the descendant classes, such as <xref:System.Net.HttpWebRequest> and <xref:System.Net.FileWebRequest>.  
+>  The <xref:System.Net.WebRequest> class is an `abstract` class. The actual behavior of <xref:System.Net.WebRequest> instances at run time is determined by the descendant class returned by the <xref:System.Net.WebRequest.Create%2A?displayProperty=nameWithType> method. For more information about default values and exceptions, see the documentation for the descendant classes, such as <xref:System.Net.HttpWebRequest> and <xref:System.Net.FileWebRequest>.  
   
    
   
@@ -1575,7 +1605,7 @@
  The <xref:System.Net.WebRequest.Proxy%2A> property identifies the network proxy that the request uses to access the Internet resource. The request is made through the proxy server rather than directly to the Internet resource.  
   
 > [!NOTE]
->  The <xref:System.Net.WebRequest> class is an `abstract` class. The actual behavior of <xref:System.Net.WebRequest> instances at run time is determined by the descendant class returned by the <xref:System.Net.WebRequest.Create%2A?displayProperty=fullName> method. For more information about default values and exceptions, see the documentation for the descendant classes, such as <xref:System.Net.HttpWebRequest> and <xref:System.Net.FileWebRequest>.  
+>  The <xref:System.Net.WebRequest> class is an `abstract` class. The actual behavior of <xref:System.Net.WebRequest> instances at run time is determined by the descendant class returned by the <xref:System.Net.WebRequest.Create%2A?displayProperty=nameWithType> method. For more information about default values and exceptions, see the documentation for the descendant classes, such as <xref:System.Net.HttpWebRequest> and <xref:System.Net.FileWebRequest>.  
   
    
   
@@ -1718,7 +1748,7 @@
  When overridden in a descendant class, the <xref:System.Net.WebRequest.RequestUri%2A> property contains the <xref:System.Uri> instance that <xref:System.Net.WebRequest.Create%2A> method uses to create the request.  
   
 > [!NOTE]
->  The <xref:System.Net.WebRequest> class is an `abstract` class. The actual behavior of <xref:System.Net.WebRequest> instances at run time is determined by the descendant class returned by the <xref:System.Net.WebRequest.Create%2A?displayProperty=fullName> method. For more information about default values and exceptions, see the documentation for the descendant classes, such as <xref:System.Net.HttpWebRequest> and <xref:System.Net.FileWebRequest>.  
+>  The <xref:System.Net.WebRequest> class is an `abstract` class. The actual behavior of <xref:System.Net.WebRequest> instances at run time is determined by the descendant class returned by the <xref:System.Net.WebRequest.Create%2A?displayProperty=nameWithType> method. For more information about default values and exceptions, see the documentation for the descendant classes, such as <xref:System.Net.HttpWebRequest> and <xref:System.Net.FileWebRequest>.  
   
    
   
@@ -1804,7 +1834,7 @@
  The <xref:System.Net.WebRequest.Timeout%2A> property indicates the length of time, in milliseconds, until the request times out and throws a <xref:System.Net.WebException>. The <xref:System.Net.WebRequest.Timeout%2A> property affects only synchronous requests made with the <xref:System.Net.WebRequest.GetResponse%2A> method. To time out asynchronous requests, use the <xref:System.Net.WebRequest.Abort%2A> method.  
   
 > [!NOTE]
->  The <xref:System.Net.WebRequest> class is an `abstract` class. The actual behavior of <xref:System.Net.WebRequest> instances at run time is determined by the descendant class returned by the <xref:System.Net.WebRequest.Create%2A?displayProperty=fullName> method. For more information about default values and exceptions, see the documentation for the descendant classes, such as <xref:System.Net.HttpWebRequest> and <xref:System.Net.FileWebRequest>.  
+>  The <xref:System.Net.WebRequest> class is an `abstract` class. The actual behavior of <xref:System.Net.WebRequest> instances at run time is determined by the descendant class returned by the <xref:System.Net.WebRequest.Create%2A?displayProperty=nameWithType> method. For more information about default values and exceptions, see the documentation for the descendant classes, such as <xref:System.Net.HttpWebRequest> and <xref:System.Net.FileWebRequest>.  
   
    
   
@@ -1861,35 +1891,5 @@
         <exception cref="T:System.NotImplementedException">Any attempt is made to access the property, when the property is not overridden in a descendant class.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Net.Requests</AssemblyName>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Net.WebRequest" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Create">
-      <AssemblyInfo>
-        <AssemblyName>System.Net.Requests</AssemblyName>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new <see cref="T:System.Net.WebRequest" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CreateHttp">
-      <AssemblyInfo>
-        <AssemblyName>System.Net.Requests</AssemblyName>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new <see cref="T:System.Net.HttpWebRequest" /> instance for the specified URI.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

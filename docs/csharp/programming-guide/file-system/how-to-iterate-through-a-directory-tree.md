@@ -1,16 +1,10 @@
 ---
 title: "How to: Iterate Through a Directory Tree (C# Programming Guide)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "iterating through folders [C#]"
   - "file iteration [C#]"
@@ -18,24 +12,9 @@ ms.assetid: c4be4a75-6b1b-46a7-9d38-bab353091ed7
 caps.latest.revision: 10
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Iterate Through a Directory Tree (C# Programming Guide)
-The phrase "iterate a directory tree" means to access each file in each nested subdirectory under a specified root folder, to any depth. You do not necessarily have to open each file. You can just retrieve the name of the file or subdirectory as a `string`, or you can retrieve additional information in the form of a <xref:System.IO.FileInfo?displayProperty=fullName> or <xref:System.IO.DirectoryInfo?displayProperty=fullName> object.  
+The phrase "iterate a directory tree" means to access each file in each nested subdirectory under a specified root folder, to any depth. You do not necessarily have to open each file. You can just retrieve the name of the file or subdirectory as a `string`, or you can retrieve additional information in the form of a <xref:System.IO.FileInfo?displayProperty=nameWithType> or <xref:System.IO.DirectoryInfo?displayProperty=nameWithType> object.  
   
 > [!NOTE]
 >  In Windows, the terms "directory" and "folder" are used interchangeably. Most documentation and user interface text uses the term "folder," but the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] class library uses the term "directory."  

@@ -12,11 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#requestCaching"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/requestCaching"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "requestCaching element"
   - "<requestCaching> element"
@@ -98,5 +93,5 @@ Controls the caching mechanism for network requests.
 ```  
   
 ## See Also  
- <xref:System.Net.Cache?displayProperty=fullName>   
+ <xref:System.Net.Cache?displayProperty=nameWithType>   
  [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

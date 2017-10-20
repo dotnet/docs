@@ -1,6 +1,6 @@
 ---
 title: "virtual (C# Reference)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -8,28 +8,12 @@ ms.topic: "article"
 f1_keywords: 
   - "virtual_CSharpKeyword"
   - "virtual"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "virtual keyword [C#]"
 ms.assetid: 5da9abae-bc1e-434f-8bea-3601b8dcb3b2
 caps.latest.revision: 26
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # virtual (C# Reference)
 The `virtual` keyword is used to modify a method, property, indexer, or event declaration and allow for it to be overridden in a derived class. For example, this method can be overridden by any class that inherits it:  
@@ -48,7 +32,7 @@ public virtual double Area()
   
  By default, methods are non-virtual. You cannot override a non-virtual method.  
   
- You cannot use the `virtual` modifier with the `static`, `abstract, private`, or `override` modifiers. The following example shows a virtual property:  
+ You cannot use the `virtual` modifier with the `static`, `abstract`, `private`, or `override` modifiers. The following example shows a virtual property:  
   
  [!code-cs[csrefKeywordsModifiers#26](../../../csharp/language-reference/keywords/codesnippet/CSharp/virtual_1.cs)]  
   

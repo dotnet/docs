@@ -27,8 +27,8 @@
 ## Examples  
  The following code example demonstrates how to bind a <xref:System.Web.UI.WebControls.ListBox> control to data in a database with a <xref:System.Web.UI.WebControls.SqlDataSource> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_1sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_1sql/CS/sql1cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_1sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_1sql/VB/sql1vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_1sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_1sql/CS/sql1cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_1sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_1sql/VB/sql1vb.aspx#1)]  
   
  When the example page is viewed, any view state is stored by the <xref:System.Web.UI.HiddenFieldPageStatePersister> class in a `<hidden>` HTML element named "__VIEWSTATE".  
   

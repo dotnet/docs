@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+- "csharp"
+- "vb"
 helpviewer_keywords: 
   - "synchronization primitives, Barrier"
 ms.assetid: 613a8bc7-6a28-4795-bd6c-1abd9050478f
@@ -36,7 +39,7 @@ A *barrier* is a user-defined synchronization primitive that enables multiple th
  If the post-phase delegate throws an exception, it is wrapped in a <xref:System.Threading.BarrierPostPhaseException> object which is then propagated to all participants.  
   
 ## Barrier Versus ContinueWhenAll  
- Barriers are especially useful when the threads are performing multiple phases in loops. If your code requires only one or two phases of work, consider whether to use <xref:System.Threading.Tasks.Task?displayProperty=fullName> objects with any kind of implicit join, including:  
+ Barriers are especially useful when the threads are performing multiple phases in loops. If your code requires only one or two phases of work, consider whether to use <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> objects with any kind of implicit join, including:  
   
 -   <xref:System.Threading.Tasks.TaskFactory.ContinueWhenAll%2A>  
   

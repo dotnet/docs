@@ -1,4 +1,4 @@
-<%--<Snippet1>--%>
+<!-- <Snippet1> -->
 ' Create a page that accesses the view state of an ASP.NET custom 
 ' server control.
 <%@ Register TagPrefix="Custom" Namespace="ViewStateSamples1" %>
@@ -66,4 +66,4 @@ End Sub 'Button_Click
       </form>
   </body>
 </html>
-<%--</Snippet1>--%>
+<!-- </Snippet1> -->

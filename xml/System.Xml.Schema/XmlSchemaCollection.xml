@@ -199,7 +199,7 @@
  `Semi-trusted code:` External references are not resolved.  
   
 > [!NOTE]
->  If the `XmlSchemaCollection` is being accessed using the <xref:System.Xml.XmlValidatingReader.Schemas%2A?displayProperty=fullName> property, the `Add` method uses the `XmlResolver` specified by the <xref:System.Xml.XmlValidatingReader.XmlResolver%2A?displayProperty=fullName> property.  
+>  If the `XmlSchemaCollection` is being accessed using the <xref:System.Xml.XmlValidatingReader.Schemas%2A?displayProperty=nameWithType> property, the `Add` method uses the `XmlResolver` specified by the <xref:System.Xml.XmlValidatingReader.XmlResolver%2A?displayProperty=nameWithType> property.  
   
 > [!IMPORTANT]
 >  The <xref:System.Xml.Schema.XmlSchemaCollection> class is obsolete in the .NET Framework version 2.0 and has been replaced by the <xref:System.Xml.Schema.XmlSchemaSet> class.  
@@ -246,7 +246,7 @@
  `Semi-trusted code:` External references are not resolved.  
   
 > [!NOTE]
->  If the `XmlSchemaCollection` is being accessed using the <xref:System.Xml.XmlValidatingReader.Schemas%2A?displayProperty=fullName> property, the `Add` method uses the `XmlResolver` specified by the <xref:System.Xml.XmlValidatingReader.XmlResolver%2A?displayProperty=fullName> property.  
+>  If the `XmlSchemaCollection` is being accessed using the <xref:System.Xml.XmlValidatingReader.Schemas%2A?displayProperty=nameWithType> property, the `Add` method uses the `XmlResolver` specified by the <xref:System.Xml.XmlValidatingReader.XmlResolver%2A?displayProperty=nameWithType> property.  
   
 > [!IMPORTANT]
 >  The <xref:System.Xml.Schema.XmlSchemaCollection> class is obsolete in the .NET Framework version 2.0 and has been replaced by the <xref:System.Xml.Schema.XmlSchemaSet> class.  
@@ -303,7 +303,7 @@ schemaColl.Add("urn:author", "names.xsd");
  `Semi-trusted code:` External references are not resolved.  
   
 > [!NOTE]
->  If the `XmlSchemaCollection` is being accessed using the <xref:System.Xml.XmlValidatingReader.Schemas%2A?displayProperty=fullName> property, the `Add` method uses the `XmlResolver` specified by the <xref:System.Xml.XmlValidatingReader.XmlResolver%2A?displayProperty=fullName> property.  
+>  If the `XmlSchemaCollection` is being accessed using the <xref:System.Xml.XmlValidatingReader.Schemas%2A?displayProperty=nameWithType> property, the `Add` method uses the `XmlResolver` specified by the <xref:System.Xml.XmlValidatingReader.XmlResolver%2A?displayProperty=nameWithType> property.  
   
 > [!IMPORTANT]
 >  The <xref:System.Xml.Schema.XmlSchemaCollection> class is obsolete in the .NET Framework version 2.0 and has been replaced by the <xref:System.Xml.Schema.XmlSchemaSet> class.  
@@ -390,7 +390,7 @@ schemaColl.Add("urn:author", "names.xsd");
  `Semi-trusted code:` External references are not resolved.  
   
 > [!NOTE]
->  If the `XmlSchemaCollection` is being accessed using the <xref:System.Xml.XmlValidatingReader.Schemas%2A?displayProperty=fullName> property, the `Add` method uses the `XmlResolver` specified by the <xref:System.Xml.XmlValidatingReader.XmlResolver%2A?displayProperty=fullName> property.  
+>  If the `XmlSchemaCollection` is being accessed using the <xref:System.Xml.XmlValidatingReader.Schemas%2A?displayProperty=nameWithType> property, the `Add` method uses the `XmlResolver` specified by the <xref:System.Xml.XmlValidatingReader.XmlResolver%2A?displayProperty=nameWithType> property.  
   
 > [!IMPORTANT]
 >  The <xref:System.Xml.Schema.XmlSchemaCollection> class is obsolete in the .NET Framework version 2.0 and has been replaced by the <xref:System.Xml.Schema.XmlSchemaSet> class.  

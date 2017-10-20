@@ -44,7 +44,7 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public HttpMethodConstraint (string[] allowedMethods);" />
+      <MemberSignature Language="C#" Value="public HttpMethodConstraint (params string[] allowedMethods);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] allowedMethods) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.HttpMethodConstraint.#ctor(System.String[])" />
       <MemberType>Constructor</MemberType>

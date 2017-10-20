@@ -9,6 +9,8 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+- "cpp"
 helpviewer_keywords: 
   - "WPF, creating Direct3D9 content"
   - "Direct3D9 [WPF interoperability], creating Direct3D9 content"

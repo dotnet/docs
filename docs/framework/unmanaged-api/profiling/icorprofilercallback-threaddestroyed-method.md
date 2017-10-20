@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::ThreadDestroyed"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ThreadDestroyed method [.NET Framework profiling]"
   - "ICorProfilerCallback::ThreadDestroyed method [.NET Framework profiling]"

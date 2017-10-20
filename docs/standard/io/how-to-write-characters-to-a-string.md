@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+- "csharp"
+- "vb"
 helpviewer_keywords: 
   - "data streams, writing characters to string"
   - "writing characters to strings"
@@ -36,7 +39,7 @@ The following code examples write characters synchronously and asynchronously fr
   
 ## See Also  
  <xref:System.IO.StringWriter>   
- <xref:System.IO.StringWriter.Write%2A?displayProperty=fullName>   
+ <xref:System.IO.StringWriter.Write%2A?displayProperty=nameWithType>   
  <xref:System.Text.StringBuilder>   
  [File and Stream I-O](../../../docs/standard/io/index.md)   
  [Asynchronous File I/O](../../../docs/standard/io/asynchronous-file-i-o.md)   

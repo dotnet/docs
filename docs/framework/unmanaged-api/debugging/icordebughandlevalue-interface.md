@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugHandleValue"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugHandleValue interface [.NET Framework debugging]"
 ms.assetid: 66fcd2b8-ac66-414b-83a8-75a925e17772

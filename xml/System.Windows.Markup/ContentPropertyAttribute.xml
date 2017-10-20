@@ -90,7 +90,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Assuming CLR backing, the provided `name` should match the <xref:System.Reflection.MemberInfo.Name%2A?displayProperty=fullName> of the relevant property in the CLR type system.  
+ Assuming CLR backing, the provided `name` should match the <xref:System.Reflection.MemberInfo.Name%2A?displayProperty=nameWithType> of the relevant property in the CLR type system.  
   
  ]]></format>
         </remarks>

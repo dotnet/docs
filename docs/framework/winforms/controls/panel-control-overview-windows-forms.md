@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "Panel"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "grouping controls, Panel control"
   - "Panel control [Windows Forms], about Panel control"

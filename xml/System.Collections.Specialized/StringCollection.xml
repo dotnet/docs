@@ -269,7 +269,7 @@
 ## Remarks  
  The <xref:System.Collections.Specialized.StringCollection.Contains%2A> method can confirm the existence of a string before performing further operations.  
   
- This method determines equality by calling <xref:System.Object.Equals%2A?displayProperty=fullName>. String comparisons are case-sensitive.  
+ This method determines equality by calling <xref:System.Object.Equals%2A?displayProperty=nameWithType>. String comparisons are case-sensitive.  
   
  This method performs a linear search; therefore, this method is an O(`n`) operation, where `n` is <xref:System.Collections.Specialized.StringCollection.Count%2A>.  
   
@@ -481,7 +481,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method determines equality by calling <xref:System.Object.Equals%2A?displayProperty=fullName>. String comparisons are case-sensitive.  
+ This method determines equality by calling <xref:System.Object.Equals%2A?displayProperty=nameWithType>. String comparisons are case-sensitive.  
   
  This method performs a linear search; therefore, this method is an O(`n`) operation, where `n` is <xref:System.Collections.Specialized.StringCollection.Count%2A>.  
   
@@ -590,7 +590,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Collections.Specialized.StringCollection> implements the <xref:System.Collections.Specialized.StringCollection.IsReadOnly%2A> property because it is required by the <xref:System.Collections.IList?displayProperty=fullName> interface.  
+ <xref:System.Collections.Specialized.StringCollection> implements the <xref:System.Collections.Specialized.StringCollection.IsReadOnly%2A> property because it is required by the <xref:System.Collections.IList?displayProperty=nameWithType> interface.  
   
  A collection that is read-only does not allow the addition, removal, or modification of elements after the collection is created.  
   
@@ -738,7 +738,7 @@
   
  In collections of contiguous elements, such as lists, the elements that follow the removed element move up to occupy the vacated spot. If the collection is indexed, the indexes of the elements that are moved are also updated. This behavior does not apply to collections where elements are conceptually grouped into buckets, such as a hash table.  
   
- This method determines equality by calling <xref:System.Object.Equals%2A?displayProperty=fullName>. String comparisons are case-sensitive.  
+ This method determines equality by calling <xref:System.Object.Equals%2A?displayProperty=nameWithType>. String comparisons are case-sensitive.  
   
  This method performs a linear search; therefore, this method is an O(`n`) operation, where `n` is <xref:System.Collections.Specialized.StringCollection.Count%2A>.  
   
@@ -891,7 +891,7 @@
 ## Remarks  
  The specified array must be of a compatible type.  
   
- This method uses <xref:System.Array.Copy%2A?displayProperty=fullName> to copy the elements.  
+ This method uses <xref:System.Array.Copy%2A?displayProperty=nameWithType> to copy the elements.  
   
  This method is an O(`n`) operation, where `n` is <xref:System.Collections.Specialized.StringCollection.Count%2A>.  
   
@@ -1044,7 +1044,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method determines equality by calling <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ This method determines equality by calling <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  This method performs a linear search; therefore, this method is an O(`n`) operation, where `n` is <xref:System.Collections.Specialized.StringCollection.Count%2A>.  
   
@@ -1089,7 +1089,7 @@
 ## Remarks  
  The <xref:System.Collections.Specialized.StringCollection> is searched forward starting at the first element and ending at the last element.  
   
- This method determines equality by calling <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ This method determines equality by calling <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  This method performs a linear search; therefore, this method is an O(`n`) operation, where `n` is <xref:System.Collections.Specialized.StringCollection.Count%2A>.  
   
@@ -1323,7 +1323,7 @@
   
  In collections of contiguous elements, such as lists, the elements that follow the removed element move up to occupy the vacated spot. If the collection is indexed, the indexes of the elements that are moved are also updated. This behavior does not apply to collections where elements are conceptually grouped into buckets, such as a hash table.  
   
- This method determines equality by calling <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ This method determines equality by calling <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  This method performs a linear search; therefore, this method is an O(`n`) operation, where `n` is <xref:System.Collections.Specialized.StringCollection.Count%2A>.  
   

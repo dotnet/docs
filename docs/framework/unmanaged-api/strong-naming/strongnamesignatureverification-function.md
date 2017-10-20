@@ -17,8 +17,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "StrongNameSignatureVerification"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "StrongNameSignatureVerification function [.NET Framework strong naming]"
 ms.assetid: 933758dd-231e-4382-8819-242c0a13a4b7

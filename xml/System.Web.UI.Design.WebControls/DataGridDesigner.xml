@@ -277,7 +277,7 @@
     </Member>
     <Member MemberName="GetTemplateContent">
       <MemberSignature Language="C#" Value="public override string GetTemplateContent (System.Web.UI.Design.ITemplateEditingFrame editingFrame, string templateName, out bool allowEditing);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetTemplateContent(class System.Web.UI.Design.ITemplateEditingFrame editingFrame, string templateName, bool allowEditing) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetTemplateContent(class System.Web.UI.Design.ITemplateEditingFrame editingFrame, string templateName, [out] bool&amp; allowEditing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataGridDesigner.GetTemplateContent(System.Web.UI.Design.ITemplateEditingFrame,System.String,System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

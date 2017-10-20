@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::COMClassicVTableDestroyed"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerCallback::COMClassicVTableDestroyed method [.NET Framework profiling]"
   - "COMClassicVTableDestroyed method [.NET Framework profiling]"

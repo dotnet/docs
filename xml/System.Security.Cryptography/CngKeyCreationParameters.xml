@@ -127,7 +127,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The returned <xref:System.Security.Cryptography.CngKeyCreationOptions> object defines options that are used when you create a new <xref:System.Security.Cryptography.CngKey> object. These options determine whether the key is created in the user or machine key store, and whether a new key should overwrite an existing key. By default, if <xref:System.Security.Cryptography.CngKeyCreationOptions?displayProperty=fullName> is not specified, the key is created in the user store.  
+ The returned <xref:System.Security.Cryptography.CngKeyCreationOptions> object defines options that are used when you create a new <xref:System.Security.Cryptography.CngKey> object. These options determine whether the key is created in the user or machine key store, and whether a new key should overwrite an existing key. By default, if <xref:System.Security.Cryptography.CngKeyCreationOptions.MachineKey?displayProperty=nameWithType> is not specified, the key is created in the user store.  
   
  ]]></format>
         </remarks>

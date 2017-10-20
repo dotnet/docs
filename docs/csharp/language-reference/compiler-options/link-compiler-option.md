@@ -1,12 +1,10 @@
 ---
 title: "-link (C# Compiler Options)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "/l compiler option [C#]"
   - "/link compiler option [C#]"
@@ -20,20 +18,6 @@ ms.assetid: 00da70c6-9ea1-43c2-86f2-aa7f26c03475
 caps.latest.revision: 13
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /link (C# Compiler Options)
 Causes the compiler to make COM type information in the specified assemblies available to the project that you are currently compiling.  
@@ -51,7 +35,7 @@ Causes the compiler to make COM type information in the specified assemblies ava
  Required. Comma-delimited list of assembly file names. If the file name contains a space, enclose the name in quotation marks.  
   
 ## Remarks  
- The `/link` option enables you to deploy an application that has embedded type information. The application can then use types in a runtime assembly that implement the embedded type information without requiring a reference to the runtime assembly. If various versions of the runtime assembly are published, the application that contains the embedded type information can work with the various versions without having to be recompiled. For an example, see [Walkthrough: Embedding Types from Managed Assemblies](http://msdn.microsoft.com/library/b28ec92c-1867-4847-95c0-61adfe095e21).  
+ The `/link` option enables you to deploy an application that has embedded type information. The application can then use types in a runtime assembly that implement the embedded type information without requiring a reference to the runtime assembly. If various versions of the runtime assembly are published, the application that contains the embedded type information can work with the various versions without having to be recompiled. For an example, see [Walkthrough: Embedding Types from Managed Assemblies](../../programming-guide/concepts/assemblies-gac/walkthrough-embedding-types-from-managed-assemblies-in-visual-studio.md).  
   
  Using the `/link` option is especially useful when you are working with COM interop. You can embed COM types so that your application no longer requires a primary interop assembly (PIA) on the target computer. The `/link` option instructs the compiler to embed the COM type information from the referenced interop assembly into the resulting compiled code. The COM type is identified by the CLSID (GUID) value. As a result, your application can run on a target computer that has installed the same COM types with the same CLSID values. Applications that automate Microsoft Office are a good example. Because applications like Office usually keep the same CLSID value across different versions, your application can use the referenced COM types as long as .NET Framework 4 or later is installed on the target computer and your application uses methods, properties, or events that are included in the referenced COM types.  
   
@@ -100,7 +84,7 @@ csc /link:COMData1.dll,COMData2.dll /out:OfficeApp.exe OfficeApp.cs
   
 ## See Also  
  [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
- [Walkthrough: Embedding Types from Managed Assemblies](http://msdn.microsoft.com/library/b28ec92c-1867-4847-95c0-61adfe095e21)   
+ [Walkthrough: Embedding Types from Managed Assemblies](../../programming-guide/concepts/assemblies-gac/walkthrough-embedding-types-from-managed-assemblies-in-visual-studio.md)   
  [/reference (C# Compiler Options)](../../../csharp/language-reference/compiler-options/reference-compiler-option.md)   
  [/noconfig (C# Compiler Options)](../../../csharp/language-reference/compiler-options/noconfig-compiler-option.md)   
  [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)   

@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-ado"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 ms.assetid: fdd9c753-39df-48cd-9822-2781afe76200
 caps.latest.revision: 4
 author: "JennieHubbard"
@@ -61,7 +64,7 @@ DataView prodView = new DataView(prodDS.Tables["Products"],
   
 ## See Also  
  <xref:System.Data.DataViewRowState>   
- <xref:System.Data.DataColumn.Expression%2A?displayProperty=fullName>   
+ <xref:System.Data.DataColumn.Expression%2A?displayProperty=nameWithType>   
  <xref:System.Data.DataTable>   
  <xref:System.Data.DataView>   
  [DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/dataviews.md)   

@@ -25,13 +25,10 @@ Represents a configuration section for defining a backup list that enumerates a 
   
 ## Syntax  
   
-```vb  
+```xml 
    <routing>  <backupLists>    <backupList name="String">      <add endpointName="String" />    </backupList>    </backupLists></routing>  
-```  
-  
-```csharp  
-```  
-  
+```
+
 ## Attributes and Elements  
  The following sections describe attributes, child elements, and parent elements.  
   
@@ -75,4 +72,4 @@ Represents a configuration section for defining a backup list that enumerates a 
 ```  
   
 ## See Also  
- <xref:System.ServiceModel.Routing.Configuration.BackupEndpointCollection?displayProperty=fullName>    
+ <xref:System.ServiceModel.Routing.Configuration.BackupEndpointCollection?displayProperty=nameWithType>    

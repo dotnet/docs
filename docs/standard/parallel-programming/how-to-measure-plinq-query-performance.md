@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+- "csharp"
+- "vb"
 helpviewer_keywords: 
   - "PLINQ queries, how to measure performance"
 ms.assetid: 491ba43b-2c10-473d-9aab-e2cb96446711

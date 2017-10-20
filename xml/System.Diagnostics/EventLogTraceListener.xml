@@ -16,9 +16,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An instance of this <xref:System.Diagnostics.EventLogTraceListener> can be added to the <xref:System.Diagnostics.Debug.Listeners%2A?displayProperty=fullName>, <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=fullName>, or <xref:System.Diagnostics.TraceSource.Listeners%2A?displayProperty=fullName> collections to send output from tracing or debugging to an <xref:System.Diagnostics.EventLog>. You can add the instance in your code or specify it in the application configuration file. To add an <xref:System.Diagnostics.EventLogTraceListener> using an application configuration file, edit the file that corresponds to the name of your application or the app.config file in a [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)] project. In this file, insert an element for a <xref:System.Diagnostics.EventLogTraceListener?displayProperty=fullName> type.  
+ An instance of this <xref:System.Diagnostics.EventLogTraceListener> can be added to the <xref:System.Diagnostics.Debug.Listeners%2A?displayProperty=nameWithType>, <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=nameWithType>, or <xref:System.Diagnostics.TraceSource.Listeners%2A?displayProperty=nameWithType> collections to send output from tracing or debugging to an <xref:System.Diagnostics.EventLog>. You can add the instance in your code or specify it in the application configuration file. To add an <xref:System.Diagnostics.EventLogTraceListener> using an application configuration file, edit the file that corresponds to the name of your application or the app.config file in a [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)] project. In this file, insert an element for a <xref:System.Diagnostics.EventLogTraceListener?displayProperty=nameWithType> type.  
   
- The following example adds a <xref:System.Diagnostics.EventLogTraceListener> object named `myListener` to the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=fullName> collection. The `initializeData` parameter specifies the name of the event log source that is to be passed to the <xref:System.Diagnostics.EventLogTraceListener.%23ctor%28System.String%29> constructor.  
+ The following example adds a <xref:System.Diagnostics.EventLogTraceListener> object named `myListener` to the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=nameWithType> collection. The `initializeData` parameter specifies the name of the event log source that is to be passed to the <xref:System.Diagnostics.EventLogTraceListener.%23ctor%28System.String%29> constructor.  
   
 ```  
 <configuration>  
@@ -53,7 +53,7 @@
    
   
 ## Examples  
- The following example creates a trace listener that sends output to an event log. First, the code creates a new <xref:System.Diagnostics.EventLogTraceListener> that uses the source `myEventLogSource`. Next, `myTraceListener` is added to the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=fullName> collection. Finally, the example sends a line of output to the <xref:System.Diagnostics.Trace.Listeners%2A> object.  
+ The following example creates a trace listener that sends output to an event log. First, the code creates a new <xref:System.Diagnostics.EventLogTraceListener> that uses the source `myEventLogSource`. Next, `myTraceListener` is added to the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=nameWithType> collection. Finally, the example sends a line of output to the <xref:System.Diagnostics.Trace.Listeners%2A> object.  
   
  [!code-cpp[Classic EventLogTraceListener Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic EventLogTraceListener Example/CPP/source.cpp#1)]
  [!code-csharp[Classic EventLogTraceListener Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic EventLogTraceListener Example/CS/source.cs#1)]
@@ -254,7 +254,7 @@
       </Docs>
     </Member>
     <Member MemberName="TraceData">
-      <MemberSignature Language="C#" Value="public override void TraceData (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType eventType, int id, object[] data);" />
+      <MemberSignature Language="C#" Value="public override void TraceData (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType eventType, int id, params object[] data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceData(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType eventType, int32 id, object[] data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogTraceListener.TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -374,7 +374,7 @@
       </Docs>
     </Member>
     <Member MemberName="TraceEvent">
-      <MemberSignature Language="C#" Value="public override void TraceEvent (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType eventType, int id, string format, object[] args);" />
+      <MemberSignature Language="C#" Value="public override void TraceEvent (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType eventType, int id, string format, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceEvent(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType eventType, int32 id, string format, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogTraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String,System.Object[])" />
       <MemberType>Method</MemberType>

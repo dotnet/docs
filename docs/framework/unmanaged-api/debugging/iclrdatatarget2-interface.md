@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRDataTarget2"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRDataTarget2 interface [.NET Framework debugging]"
 ms.assetid: 94249397-861b-4294-a538-cf01466a66d3

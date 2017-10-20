@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IAssemblyEnum::GetNextAssembly"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetNextAssembly method [.NET Framework fusion]"
   - "IAssemblyEnum::GetNextAssembly method [.NET Framework fusion]"

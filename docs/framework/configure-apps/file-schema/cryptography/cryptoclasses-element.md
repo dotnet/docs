@@ -12,11 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/mscorlib/cryptographySettings/cryptoNameMapping/cryptoClasses"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#cryptoClasses"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "<cryptoClasses> element"
   - "cryptoClasses element"
@@ -64,7 +59,7 @@ Contains a list of cryptography classes that have a mapping to a friendly name i
 |`mscorlib`|Contains the `cryptographySettings` element.|  
   
 ## Example  
- The following example shows how use the **\<cryptoClass>** element to reference a cryptography class and to configure the runtime. You can then pass the string "RSA" to the <xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A?displayProperty=fullName> method and use the <xref:System.Security.Cryptography.AsymmetricAlgorithm.Create%2A> method to return a `MyCryptoRSAClass` object.  
+ The following example shows how use the **\<cryptoClass>** element to reference a cryptography class and to configure the runtime. You can then pass the string "RSA" to the <xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A?displayProperty=nameWithType> method and use the <xref:System.Security.Cryptography.AsymmetricAlgorithm.Create%2A> method to return a `MyCryptoRSAClass` object.  
   
 ```xml  
 <configuration>  

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugFrame::GetFunction"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetFunction method, ICorDebugFrame interface [.NET Framework debugging]"
   - "ICorDebugFrame::GetFunction method [.NET Framework debugging]"

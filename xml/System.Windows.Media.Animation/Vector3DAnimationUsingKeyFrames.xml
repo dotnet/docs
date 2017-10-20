@@ -141,7 +141,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames.Clone%2A> method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited <xref:System.Windows.Media.Animation.Vector3DAnimationBase.Clone%2A?displayProperty=fullName> method to provide a strongly typed implementation.  
+ The <xref:System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames.Clone%2A> method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited <xref:System.Windows.Media.Animation.Vector3DAnimationBase.Clone%2A?displayProperty=nameWithType> method to provide a strongly typed implementation.  
   
  ]]></format>
         </remarks>

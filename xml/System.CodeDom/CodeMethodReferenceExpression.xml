@@ -91,7 +91,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public CodeMethodReferenceExpression (System.CodeDom.CodeExpression targetObject, string methodName, System.CodeDom.CodeTypeReference[] typeParameters);" />
+      <MemberSignature Language="C#" Value="public CodeMethodReferenceExpression (System.CodeDom.CodeExpression targetObject, string methodName, params System.CodeDom.CodeTypeReference[] typeParameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeExpression targetObject, string methodName, class System.CodeDom.CodeTypeReference[] typeParameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeMethodReferenceExpression.#ctor(System.CodeDom.CodeExpression,System.String,System.CodeDom.CodeTypeReference[])" />
       <MemberType>Constructor</MemberType>

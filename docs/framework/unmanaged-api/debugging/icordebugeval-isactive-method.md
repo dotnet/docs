@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEval::IsActive"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IsActive method, ICorDebugEval interface [.NET Framework debugging]"
   - "ICorDebugEval::IsActive method [.NET Framework debugging]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugProcess3::SetEnableCustomNotification"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugProcess3::SetEnableCustomNotification method [.NET Framework debugging]"
   - "SetEnableCustomNotification method [.NET Framework debugging]"
@@ -48,7 +46,7 @@ HRESULT SetEnableCustomNotification(ICorDebugClass * pClass,
  [in] `true` to enable custom debugger notifications; `false` to disable notifications. The default value is `false`.  
   
 ## Remarks  
- When `fEnable` is set to `true`, calls to the <xref:System.Diagnostics.Debugger.NotifyOfCrossThreadDependency%2A?displayProperty=fullName> method trigger an [ICorDebugManagedCallback3::CustomNotification](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback3-customnotification-method.md) callback. Notifications are disabled by default; therefore, the debugger must specify any notification types it knows about and wants to handle. Because the [ICorDebugClass](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md) class is scoped by application domain, the debugger must call `SetEnableCustomNotification` for every application domain in the process if it wants to receive the notification across the entire process.  
+ When `fEnable` is set to `true`, calls to the <xref:System.Diagnostics.Debugger.NotifyOfCrossThreadDependency%2A?displayProperty=nameWithType> method trigger an [ICorDebugManagedCallback3::CustomNotification](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback3-customnotification-method.md) callback. Notifications are disabled by default; therefore, the debugger must specify any notification types it knows about and wants to handle. Because the [ICorDebugClass](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md) class is scoped by application domain, the debugger must call `SetEnableCustomNotification` for every application domain in the process if it wants to receive the notification across the entire process.  
   
  Starting with the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)], the only supported notification is a cross-thread dependency notification.  
   

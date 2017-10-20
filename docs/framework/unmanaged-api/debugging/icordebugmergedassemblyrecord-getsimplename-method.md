@@ -9,8 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
 ms.assetid: bc3410f6-ebca-4bca-9b45-fc38c74fa9cb
 caps.latest.revision: 4
 author: "rpetrusha"
@@ -41,7 +39,7 @@ HRESULT GetSimpleName(
  A pointer to a character array.  
   
 ## Remarks  
- This method retrieves the simple name of an assembly (such as "System.Collections"), without a file extension, version, culture, or public key token. It corresponds to the <xref:System.Reflection.AssemblyName.Name%2A?displayProperty=fullName> property in managed code.  
+ This method retrieves the simple name of an assembly (such as "System.Collections"), without a file extension, version, culture, or public key token. It corresponds to the <xref:System.Reflection.AssemblyName.Name%2A?displayProperty=nameWithType> property in managed code.  
   
 > [!NOTE]
 >  This method is available with .NET Native only.  

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugExceptionObjectValue"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugExceptionObjectValue interface [.NET Framework debugging]"
 ms.assetid: 43416dd5-8892-4106-9f59-f9143b19ddb4
@@ -39,7 +37,7 @@ Extends the "ICorDebugObjectValue" interface to provide stack trace information 
 |[EnumerateExceptionCallStack Method](../../../../docs/framework/unmanaged-api/debugging/icordebugexceptionobjectvalue-enumerateexceptioncallstack-method.md)|Gets an enumerator to the call stack embedded in an exception object.|  
   
 ## Remarks  
- The call to `QueryInterface` will succeed for managed objects that derive from <xref:System.Exception?displayProperty=fullName>.  
+ The call to `QueryInterface` will succeed for managed objects that derive from <xref:System.Exception?displayProperty=nameWithType>.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

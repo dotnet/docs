@@ -9,8 +9,6 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "Windows Forms controls, accessibility"
   - "controls [Windows Forms], accessibility"
@@ -98,9 +96,9 @@ pictureBox1->AccessibleRole = AccessibleRole::Chart;
   
 ## See Also  
  <xref:System.Windows.Forms.AccessibleObject>   
- <xref:System.Windows.Forms.Control.AccessibilityObject%2A?displayProperty=fullName>   
- <xref:System.Windows.Forms.Control.AccessibleDefaultActionDescription%2A?displayProperty=fullName>   
- <xref:System.Windows.Forms.Control.AccessibleDescription%2A?displayProperty=fullName>   
- <xref:System.Windows.Forms.Control.AccessibleName%2A?displayProperty=fullName>   
- <xref:System.Windows.Forms.Control.AccessibleRole%2A?displayProperty=fullName>   
+ <xref:System.Windows.Forms.Control.AccessibilityObject%2A?displayProperty=nameWithType>   
+ <xref:System.Windows.Forms.Control.AccessibleDefaultActionDescription%2A?displayProperty=nameWithType>   
+ <xref:System.Windows.Forms.Control.AccessibleDescription%2A?displayProperty=nameWithType>   
+ <xref:System.Windows.Forms.Control.AccessibleName%2A?displayProperty=nameWithType>   
+ <xref:System.Windows.Forms.Control.AccessibleRole%2A?displayProperty=nameWithType>   
  <xref:System.Windows.Forms.AccessibleRole>

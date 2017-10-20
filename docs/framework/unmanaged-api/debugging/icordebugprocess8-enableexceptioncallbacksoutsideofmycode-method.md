@@ -9,8 +9,8 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
+dev_langs:
+ - "cpp"
 ms.assetid: b3af44ec-7d41-425b-aed9-0c4379e5cbe9
 caps.latest.revision: 5
 author: "rpetrusha"
@@ -24,7 +24,7 @@ manager: "wpickett"
   
 ## Syntax  
   
-```vb  
+```cpp
 HRESULT EnableExceptionCallbacksOutsideOfMyCode(  
    [in] BOOL enableExceptionsOutsideOfJMC  
 );  

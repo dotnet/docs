@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostThreadPoolManager::SetMinThreads"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SetMinThreads method, IHostThreadPoolManager interface [.NET Framework hosting]"
   - "IHostThreadPoolManager::SetMinThreads method [.NET Framework hosting]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedWriter::GetDebugInfo"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedWriter::GetDebugInfo method [.NET Framework debugging]"
   - "GetDebugInfo method [.NET Framework debugging]"

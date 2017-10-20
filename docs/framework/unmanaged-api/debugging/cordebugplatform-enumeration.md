@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorDebugPlatformEnum"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorDebugPlatformEnum enumeration [.NET Framework debugging]"
 ms.assetid: c5444816-7378-4521-afd3-bf5e4b5303d5

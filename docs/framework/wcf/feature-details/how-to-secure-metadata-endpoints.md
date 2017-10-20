@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 ms.assetid: 9f71b6ae-737c-4382-8d89-0a7b1c7e182b
 caps.latest.revision: 13
 author: "BrucePerlerMS"
@@ -18,7 +21,7 @@ manager: "mbaldwin"
 # How to: Secure Metadata Endpoints
 Metadata for a service can contain sensitive information about your application that a malicious user can leverage. Consumers of your service may also require a secure mechanism for obtaining metadata about your service. Therefore, it is sometimes necessary to publish your metadata using a secure endpoint.  
   
- Metadata endpoints are generally secured using the standard security mechanisms defined in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] for securing application endpoints. ([!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md).)  
+ Metadata endpoints are generally secured using the standard security mechanisms defined in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] for securing application endpoints. ([!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md).)  
   
  This topic walks through the steps to create an endpoint secured by a Secure Sockets Layer (SSL) certificate or, in other words, an HTTPS endpoint.  
   
@@ -91,9 +94,9 @@ Metadata for a service can contain sensitive information about your application 
 ## Compiling the Code  
  The code example uses the following namespaces:  
   
--   <xref:System.ServiceModel?displayProperty=fullName>  
+-   <xref:System.ServiceModel?displayProperty=nameWithType>  
   
--   <xref:System.ServiceModel.Description?displayProperty=fullName>  
+-   <xref:System.ServiceModel.Description?displayProperty=nameWithType>  
   
 ## See Also  
  <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetEnabled%2A>   

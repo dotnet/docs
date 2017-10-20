@@ -7,6 +7,7 @@ ms.author: wiwagn
 ms.date: 05/26/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
+ms.topic: article
 ---
 # Deploying Single-Container-Based .NET Core Web Applications on Linux or Windows Nano Server Hosts
 
@@ -111,6 +112,8 @@ services:
     working_dir: /src
   command: /bin/bash -c "dotnet restore ./eShopWeb.sln && dotnet publish  ./eShopWeb.sln -c Release -o ./obj/Docker/publish"
 ```
+
+**Note**: Starting with .NET Core 2.0, the dotnet restore command executes automatically when dotnet publish is executed.
 
 Notice that the image is an ASP.NET Core build image. That image includes the SDK and build tools to build your application and create the required images. Running the **docker-compose** project using this file starts the build container from the image, then builds your application’s image in that container. You specify that docker-compose file as part of the command line to build your application in a Docker container, then launch it.
 

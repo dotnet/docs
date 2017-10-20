@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugRegisterSet::GetThreadContext"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetThreadContext method, ICorDebugRegisterSet interface [.NET Framework debugging]"
   - "ICorDebugRegisterSet::GetThreadContext method [.NET Framework debugging]"

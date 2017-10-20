@@ -1,18 +1,13 @@
 ---
 title: "String Data Type (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.String"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "strings [Visual Basic], character"
   - "strings [Visual Basic], fixed-length"
@@ -31,21 +26,6 @@ ms.assetid: 15ac03f5-cabd-42cc-a754-1df3893c25d9
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # String Data Type (Visual Basic)
 Holds sequences of unsigned 16-bit (2-byte) code points that range in value from 0 through 65535. Each *code point*, or character code, represents a single Unicode character. A string can contain from 0 to approximately two billion (2 ^ 31) Unicode characters.  
@@ -98,10 +78,10 @@ S = Microsoft.VisualBasic.Left(S, 4)
   
 -   **Type Characters.** Appending the identifier type character `$` to any identifier forces it to the `String` data type. `String` has no literal type character. However, the compiler treats literals enclosed in quotation marks (`" "`) as `String`.  
   
--   **Framework Type.** The corresponding type in the .NET Framework is the <xref:System.String?displayProperty=fullName> class.  
+-   **Framework Type.** The corresponding type in the .NET Framework is the <xref:System.String?displayProperty=nameWithType> class.  
   
 ## See Also  
- <xref:System.String?displayProperty=fullName>   
+ <xref:System.String?displayProperty=nameWithType>   
  [Data Types](../../../visual-basic/language-reference/data-types/data-type-summary.md)   
  [Char Data Type](../../../visual-basic/language-reference/data-types/char-data-type.md)   
  [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)   

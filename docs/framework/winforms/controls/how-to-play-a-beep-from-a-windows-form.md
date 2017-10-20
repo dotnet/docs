@@ -9,8 +9,9 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "sounds, beep"
   - "Windows Forms, sounds"
@@ -45,7 +46,7 @@ public void onePing()
 >  The sound played in the C# code sample is determined by the <xref:System.Media.SystemSounds.Beep%2A> system sound setting. For more information, see <xref:System.Media.SystemSounds>.  
   
 ## Compiling the Code  
- For C#, this example requires  a reference to the <xref:System.Media?displayProperty=fullName> namespace.  
+ For C#, this example requires  a reference to the <xref:System.Media?displayProperty=nameWithType> namespace.  
   
 ## See Also  
  <xref:Microsoft.VisualBasic.Interaction.Beep%2A>   

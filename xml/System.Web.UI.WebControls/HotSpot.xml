@@ -219,14 +219,14 @@
   
  If you specify `HotSpotMode.PostBack` for the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A> property of a <xref:System.Web.UI.WebControls.HotSpot> object, the <xref:System.Web.UI.WebControls.HotSpot> object generates a post back to the server when the <xref:System.Web.UI.WebControls.HotSpot> is clicked. Use the <xref:System.Web.UI.WebControls.HotSpot.PostBackValue%2A> property to specify a name for the <xref:System.Web.UI.WebControls.HotSpot>. This name will be passed in the <xref:System.Web.UI.WebControls.ImageMapEventArgs> event data on when a postback event occurs. When a postback <xref:System.Web.UI.WebControls.HotSpot> is clicked, the <xref:System.Web.UI.WebControls.ImageMap.Click> event is raised. To programmatically control the actions performed when a postback <xref:System.Web.UI.WebControls.HotSpot> is clicked, provide an event handler for the <xref:System.Web.UI.WebControls.ImageMap.Click> event.  
   
- To cause all <xref:System.Web.UI.WebControls.HotSpot> objects in an <xref:System.Web.UI.WebControls.ImageMap> control to have the same behavior, set the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=fullName> property on each individual <xref:System.Web.UI.WebControls.HotSpot> object to `HotSpotMode.NotSet` or do not specify a value for the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=fullName> property.  
+ To cause all <xref:System.Web.UI.WebControls.HotSpot> objects in an <xref:System.Web.UI.WebControls.ImageMap> control to have the same behavior, set the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=nameWithType> property on each individual <xref:System.Web.UI.WebControls.HotSpot> object to `HotSpotMode.NotSet` or do not specify a value for the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=nameWithType> property.  
   
- To specify different behaviors for <xref:System.Web.UI.WebControls.HotSpot> objects in an <xref:System.Web.UI.WebControls.ImageMap> control, set the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=fullName> property on each individual <xref:System.Web.UI.WebControls.HotSpot> object to either `HotSpotMode.Navigate`, `HotSpotMode.PostBack`, or `HotSpotMode.Inactive`.  
+ To specify different behaviors for <xref:System.Web.UI.WebControls.HotSpot> objects in an <xref:System.Web.UI.WebControls.ImageMap> control, set the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=nameWithType> property on each individual <xref:System.Web.UI.WebControls.HotSpot> object to either `HotSpotMode.Navigate`, `HotSpotMode.PostBack`, or `HotSpotMode.Inactive`.  
   
 > [!NOTE]
->  If an <xref:System.Web.UI.WebControls.ImageMap> control's <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=fullName> property or the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=fullName> property on the <xref:System.Web.UI.WebControls.HotSpot> objects it contains is either not set to a value or set to `HotSpotMode.NotSet`, by default the behavior is `HotSpotMode.Navigate`.  
+>  If an <xref:System.Web.UI.WebControls.ImageMap> control's <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=nameWithType> property or the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=nameWithType> property on the <xref:System.Web.UI.WebControls.HotSpot> objects it contains is either not set to a value or set to `HotSpotMode.NotSet`, by default the behavior is `HotSpotMode.Navigate`.  
   
- If you specify `HotSpotMode.Inactive` for the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=fullName> property, the <xref:System.Web.UI.WebControls.HotSpot> object does not have any behavior when it is clicked. You can use this value to create an inactive hot spot within a larger active hot spot. This option is provided to allow you to create more complex hot-spot zones within an <xref:System.Web.UI.WebControls.ImageMap> control.  
+ If you specify `HotSpotMode.Inactive` for the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=nameWithType> property, the <xref:System.Web.UI.WebControls.HotSpot> object does not have any behavior when it is clicked. You can use this value to create an inactive hot spot within a larger active hot spot. This option is provided to allow you to create more complex hot-spot zones within an <xref:System.Web.UI.WebControls.ImageMap> control.  
   
  To create an inactive area within an active hot spot, you must specify the inactive hot spot before the active hot spot in the <xref:System.Web.UI.WebControls.ImageMap> control. For example, the following <xref:System.Web.UI.WebControls.ImageMap> defines an active ring by specifying an inactive circular hot spot within a larger active circular hot spot:  
   
@@ -466,7 +466,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, you should use the <xref:System.Web.UI.WebControls.HotSpot.IsTrackingViewState%2A?displayProperty=fullName> member to determine whether a <xref:System.Web.UI.WebControls.HotSpot> object is tracking view-state changes.  
+ Typically, you should use the <xref:System.Web.UI.WebControls.HotSpot.IsTrackingViewState%2A?displayProperty=nameWithType> member to determine whether a <xref:System.Web.UI.WebControls.HotSpot> object is tracking view-state changes.  
   
  The <xref:System.Web.UI.WebControls.HotSpot.System%23Web%23UI%23IStateManager%23IsTrackingViewState%2A> member is an explicit interface member implementation. It can be used only when a <xref:System.Web.UI.WebControls.HotSpot> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
   
@@ -499,7 +499,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, you should use the <xref:System.Web.UI.WebControls.HotSpot.LoadViewState%2A?displayProperty=fullName> member to restore the view state for a <xref:System.Web.UI.WebControls.HotSpot> object.  
+ Typically, you should use the <xref:System.Web.UI.WebControls.HotSpot.LoadViewState%2A?displayProperty=nameWithType> member to restore the view state for a <xref:System.Web.UI.WebControls.HotSpot> object.  
   
  The <xref:System.Web.UI.WebControls.HotSpot.System%23Web%23UI%23IStateManager%23LoadViewState%2A> member is an explicit interface member implementation. It can be used only when a <xref:System.Web.UI.WebControls.HotSpot> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
   
@@ -530,7 +530,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, you should use the <xref:System.Web.UI.WebControls.HotSpot.SaveViewState%2A?displayProperty=fullName> method to save the view state for the <xref:System.Web.UI.WebControls.HotSpot> region.  
+ Typically, you should use the <xref:System.Web.UI.WebControls.HotSpot.SaveViewState%2A?displayProperty=nameWithType> method to save the view state for the <xref:System.Web.UI.WebControls.HotSpot> region.  
   
  The <xref:System.Web.UI.WebControls.HotSpot.System%23Web%23UI%23IStateManager%23SaveViewState%2A> method is an explicit interface member implementation. It can be used only when a <xref:System.Web.UI.WebControls.HotSpot> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
   
@@ -560,7 +560,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, you should use the <xref:System.Web.UI.WebControls.HotSpot.TrackViewState%2A?displayProperty=fullName> method to start tracking view-state changes for the <xref:System.Web.UI.WebControls.HotSpot> region.  
+ Typically, you should use the <xref:System.Web.UI.WebControls.HotSpot.TrackViewState%2A?displayProperty=nameWithType> method to start tracking view-state changes for the <xref:System.Web.UI.WebControls.HotSpot> region.  
   
  The <xref:System.Web.UI.WebControls.HotSpot.System%23Web%23UI%23IStateManager%23TrackViewState%2A> method is an explicit interface member implementation. It can be used only when a <xref:System.Web.UI.WebControls.HotSpot> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
   

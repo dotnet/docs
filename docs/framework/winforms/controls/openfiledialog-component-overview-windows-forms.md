@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "OpenFileDialog"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "OpenFileDialog component, about OpenFileDialog"
   - "Open File dialog box, displaying in Windows Forms"

@@ -9,10 +9,6 @@ ms.technology:
   - "dotnet-ado"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
 ms.assetid: 8c5db787-78e6-4a34-8dc1-188bca0aca5e
 caps.latest.revision: 3
 author: "JennieHubbard"
@@ -32,7 +28,7 @@ The EntityClient provider is a data provider used by Entity Framework applicatio
 ## Creating Queries  
  The [!INCLUDE[esql](../../../../../includes/esql-md.md)] language is a storage-independent dialect of SQL that works directly with conceptual entity schemas and supports Entity Data Model concepts such as inheritance and relationships. The <xref:System.Data.EntityClient.EntityCommand> class is used to execute an [!INCLUDE[esql](../../../../../includes/esql-md.md)] command against an entity model. When you construct <xref:System.Data.EntityClient.EntityCommand> objects, you can specify a stored procedure name or a query text. The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] works with storage-specific data providers to translate generic [!INCLUDE[esql](../../../../../includes/esql-md.md)] into storage-specific queries. For more information about writing [!INCLUDE[esql](../../../../../includes/esql-md.md)] queries, see [Entity SQL Language](../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-language.md).  
   
- The following example creates an <xref:System.Data.EntityClient.EntityCommand> object and assigns an [!INCLUDE[esql](../../../../../includes/esql-md.md)] query text to its <xref:System.Data.EntityClient.EntityCommand.CommandText%2A?displayProperty=fullName> property. This [!INCLUDE[esql](../../../../../includes/esql-md.md)] query requests products ordered by the list price from the conceptual model. The following code has no knowledge of the storage model at all.  
+ The following example creates an <xref:System.Data.EntityClient.EntityCommand> object and assigns an [!INCLUDE[esql](../../../../../includes/esql-md.md)] query text to its <xref:System.Data.EntityClient.EntityCommand.CommandText%2A?displayProperty=nameWithType> property. This [!INCLUDE[esql](../../../../../includes/esql-md.md)] query requests products ordered by the list price from the conceptual model. The following code has no knowledge of the storage model at all.  
   
  `EntityCommand cmd = conn.CreateCommand();`  
   

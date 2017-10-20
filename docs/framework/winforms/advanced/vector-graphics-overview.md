@@ -9,8 +9,9 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "inclusive-inclusive endpoints"
   - "coordinate systems"
@@ -62,7 +63,7 @@ manager: "wpickett"
  [!code-vb[LinesCurvesAndShapes#11](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/LinesCurvesAndShapes/VB/Class1.vb#11)]  
   
 ## See Also  
- <xref:System.Drawing.Graphics?displayProperty=fullName>   
- <xref:System.Drawing.Pen?displayProperty=fullName>   
+ <xref:System.Drawing.Graphics?displayProperty=nameWithType>   
+ <xref:System.Drawing.Pen?displayProperty=nameWithType>   
  [Lines, Curves, and Shapes](../../../../docs/framework/winforms/advanced/lines-curves-and-shapes.md)   
  [How to: Create Graphics Objects for Drawing](../../../../docs/framework/winforms/advanced/how-to-create-graphics-objects-for-drawing.md)

@@ -9,10 +9,11 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 f1_keywords: 
   - "Graphics.DrawLine"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "examples [Windows Forms], drawing lines on forms"
   - "drawing, lines"

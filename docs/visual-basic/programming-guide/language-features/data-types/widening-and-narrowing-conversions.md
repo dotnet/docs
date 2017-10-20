@@ -1,16 +1,13 @@
 ---
 title: "Widening and Narrowing Conversions (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "widening conversions"
   - "narrowing conversions"
@@ -32,21 +29,6 @@ ms.assetid: 058c3152-6c28-4268-af44-2209e774f0bd
 caps.latest.revision: 27
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Widening and Narrowing Conversions (Visual Basic)
 An important consideration with a type conversion is whether the result of the conversion is within the range of the destination data type.  

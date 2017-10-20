@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostSecurityContext"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostSecurityContext interface [.NET Framework hosting]"
 ms.assetid: 88e2eac0-8ccb-404f-abbc-287d55159842

@@ -1,26 +1,14 @@
 ---
 title: "Iterators (C#)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: c93f6dd4-e72a-4a06-be1c-a98b3255b734
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Iterators (C#)
 An *iterator* can be used to step through collections such as lists and arrays.  
@@ -365,7 +353,7 @@ public class Stack<T> : IEnumerable<T>
   
  On each successive iteration of the `foreach` loop (or the direct call to `IEnumerator.MoveNext`), the next iterator code body resumes after the previous `yield return` statement. It then continues to the next `yield return` statement until the end of the iterator body is reached, or until a `yield break` statement is encountered.  
   
- Iterators don't support the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName> method. To re-iterate from the start, you must obtain a new iterator.  
+ Iterators don't support the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=nameWithType> method. To re-iterate from the start, you must obtain a new iterator.  
   
  For additional information, see the [C# Language Specification](../../../csharp/language-reference/language-specification/index.md).  
   

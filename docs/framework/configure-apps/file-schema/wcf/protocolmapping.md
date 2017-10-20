@@ -23,13 +23,10 @@ Represents a configuration section for defining a set of default protocol mappin
   
 ## Syntax  
   
-```vb  
+```xml
    <protocolMapping>    <add binding="String"         bindingConfiguration="String"         scheme="http/net.msmq/net.pipe/net.tcp"/></protocolMapping>  
-```  
-  
-```csharp  
-```  
-  
+```
+
 ## Attributes and Elements  
  The following sections describe attributes, child elements, and parent elements.  
   
@@ -61,5 +58,5 @@ Represents a configuration section for defining a set of default protocol mappin
 ```  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.ProtocolMappingSection?displayProperty=fullName>       
- <xref:System.ServiceModel.Configuration.ProtocolMappingElement?displayProperty=fullName>    
+ <xref:System.ServiceModel.Configuration.ProtocolMappingSection?displayProperty=nameWithType>       
+ <xref:System.ServiceModel.Configuration.ProtocolMappingElement?displayProperty=nameWithType>    

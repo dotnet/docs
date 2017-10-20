@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorFieldAttr"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorFieldAttr enumeration [.NET Framework metadata]"
 ms.assetid: 6ae2c4be-212c-4e74-9288-40a11dc26522

@@ -87,7 +87,7 @@ This document summarizes a set of best practices to consider when designing a co
   
 -   **Use best practices for expressing control state and behavior in a style.** The following is an ordered list of best practices for expressing control state changes and behavior in a style. You should use the first item on the list that enables your scenario.  
   
-    1.  Property binding. Example: binding between <xref:System.Windows.Controls.ComboBox.IsDropDownOpen%2A?displayProperty=fullName> and <xref:System.Windows.Controls.Primitives.ToggleButton.IsChecked%2A?displayProperty=fullName>.  
+    1.  Property binding. Example: binding between <xref:System.Windows.Controls.ComboBox.IsDropDownOpen%2A?displayProperty=nameWithType> and <xref:System.Windows.Controls.Primitives.ToggleButton.IsChecked%2A?displayProperty=nameWithType>.  
   
     2.  Triggered property changes or property animations. Example: the hover state of a <xref:System.Windows.Controls.Button>.  
   

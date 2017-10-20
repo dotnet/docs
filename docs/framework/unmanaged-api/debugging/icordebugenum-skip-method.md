@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEnum::Skip"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugEnum::Skip method [.NET Framework debugging]"
   - "Skip method, ICorDebugEnum interface [.NET Framework debugging]"

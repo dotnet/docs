@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostSemaphore::Wait"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostSemaphore::Wait method [.NET Framework hosting]"
   - "Wait method, IHostSemaphore interface [.NET Framework hosting]"

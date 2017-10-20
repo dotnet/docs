@@ -1,16 +1,13 @@
 ---
 title: "Troubleshooting Data Types (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Char data type, converting"
   - "Decimal data type, conversions"
@@ -32,21 +29,6 @@ ms.assetid: 90040d67-b630-4125-a6ae-37195b079042
 caps.latest.revision: 29
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Troubleshooting Data Types (Visual Basic)
 This page lists some common problems that can occur when you perform operations on intrinsic data types.  
@@ -129,7 +111,7 @@ This page lists some common problems that can occur when you perform operations 
  If you must convert from `String` to another data type, the safest procedure is to enclose the attempted conversion in the [Try...Catch...Finally Statement](../../../../visual-basic/language-reference/statements/try-catch-finally-statement.md). This lets you deal with a run-time failure.  
   
 ### Character Arrays  
- A single `Char` and an array of `Char` elements both widen to `String`. However, `String` does not widen to `Char()`. To convert a `String` value to a `Char` array, you can use the <xref:System.String.ToCharArray%2A> method of the <xref:System.String?displayProperty=fullName> class.  
+ A single `Char` and an array of `Char` elements both widen to `String`. However, `String` does not widen to `Char()`. To convert a `String` value to a `Char` array, you can use the <xref:System.String.ToCharArray%2A> method of the <xref:System.String?displayProperty=nameWithType> class.  
   
 ### Meaningless Values  
  In general, `String` values are not meaningful in other data types, and conversion is highly artificial and dangerous. Whenever possible, you should restrict usage of `String` variables to the character sequences for which they are designed. You should never write code that relies on equivalent values in other types.  

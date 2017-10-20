@@ -27,7 +27,7 @@ File and stream I/O (input/output) refers to the transfer of data either to or f
  A file is an ordered and named collection of bytes that has persistent storage. When you work with files, you work with directory paths, disk storage, and file and directory names. In contrast, a stream is a sequence of bytes that you can use to read from and write to a backing store, which can be one of several storage mediums (for example, disks or memory). Just as there are several backing stores other than disks, there are several kinds of streams other than file streams, such as network, memory, and pipe streams.  
   
 ## Files and Directories  
- You can use the types in the <xref:System.IO?displayProperty=fullName> namespace to interact with files and directories. For example, you can get and set properties for files and directories, and retrieve collections of files and directories based on search criteria.  
+ You can use the types in the <xref:System.IO?displayProperty=nameWithType> namespace to interact with files and directories. For example, you can get and set properties for files and directories, and retrieve collections of files and directories based on search criteria.  
   
  Here are some commonly used file and directory classes:  
   
@@ -41,7 +41,7 @@ File and stream I/O (input/output) refers to the transfer of data either to or f
   
 -   <xref:System.IO.Path> - provides methods and properties for processing directory strings in a cross-platform manner.  
   
- In addition to using these classes, Visual Basic users can use the methods and properties provided by the <xref:Microsoft.VisualBasic.FileIO.FileSystem?displayProperty=fullName> class for file I/O.  
+ In addition to using these classes, Visual Basic users can use the methods and properties provided by the <xref:Microsoft.VisualBasic.FileIO.FileSystem?displayProperty=nameWithType> class for file I/O.  
   
  See [How to: Copy Directories](../../../docs/standard/io/how-to-copy-directories.md), [How to: Create a Directory Listing](http://msdn.microsoft.com/en-us/4d2772b1-b991-4532-a8a6-6ef733277e69), and [How to: Enumerate Directories and Files](../../../docs/standard/io/how-to-enumerate-directories-and-files.md).  
   
@@ -77,7 +77,7 @@ File and stream I/O (input/output) refers to the transfer of data either to or f
  For an example of working with streams asynchronously, see [Asynchronous File I/O](../../../docs/standard/io/asynchronous-file-i-o.md).  
   
 ## Readers and Writers  
- The <xref:System.IO?displayProperty=fullName> namespace also provides types for reading encoded characters from streams and writing them to streams. Typically, streams are designed for byte input and output. The reader and writer types handle the conversion of the encoded characters to and from bytes so the stream can complete the operation. Each reader and writer class is associated with a stream, which can be retrieved through the class's `BaseStream` property.  
+ The <xref:System.IO?displayProperty=nameWithType> namespace also provides types for reading encoded characters from streams and writing them to streams. Typically, streams are designed for byte input and output. The reader and writer types handle the conversion of the encoded characters to and from bytes so the stream can complete the operation. Each reader and writer class is associated with a stream, which can be retrieved through the class's `BaseStream` property.  
   
  Here are some commonly used reader and writer classes:  
   
@@ -99,7 +99,7 @@ File and stream I/O (input/output) refers to the transfer of data either to or f
  For more information, see [Asynchronous File I/O](../../../docs/standard/io/asynchronous-file-i-o.md).  
   
 ## Compression  
- Compression refers to the process of reducing the size of a file for storage. Decompression is the process of extracting the contents of a compressed file so they are in a usable format. The <xref:System.IO.Compression?displayProperty=fullName> namespace contains types for compressing and decompressing files and streams.  
+ Compression refers to the process of reducing the size of a file for storage. Decompression is the process of extracting the contents of a compressed file so they are in a usable format. The <xref:System.IO.Compression?displayProperty=nameWithType> namespace contains types for compressing and decompressing files and streams.  
   
  The following classes are frequently used when compressing and decompressing files and streams:  
   
@@ -150,7 +150,7 @@ File and stream I/O (input/output) refers to the transfer of data either to or f
  For more information about I/O operations in a [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] app, see [Quickstart: Reading and writing a file](http://go.microsoft.com/fwlink/p/?LinkId=243072) in the Windows Dev Center.  
   
 ## I/O and Security  
- When you use the classes in the <xref:System.IO?displayProperty=fullName> namespace, you must follow operating system security requirements such as access control lists (ACLs) to control access to files and directories. This requirement is in addition to any <xref:System.Security.Permissions.FileIOPermission> requirements. You can manage ACLs programmatically. For more information, see [How to: Add or Remove Access Control List Entries](../../../docs/standard/io/how-to-add-or-remove-access-control-list-entries.md).  
+ When you use the classes in the <xref:System.IO?displayProperty=nameWithType> namespace, you must follow operating system security requirements such as access control lists (ACLs) to control access to files and directories. This requirement is in addition to any <xref:System.Security.Permissions.FileIOPermission> requirements. You can manage ACLs programmatically. For more information, see [How to: Add or Remove Access Control List Entries](../../../docs/standard/io/how-to-add-or-remove-access-control-list-entries.md).  
   
  Default security policies prevent Internet or intranet applications from accessing files on the user’s computer. Therefore, do not use the I/O classes that require a path to a physical file when writing code that will be downloaded over the Internet or intranet. Instead, use [isolated storage](../../../docs/standard/io/isolated-storage.md) for traditional .NET Framework applications, or use [application data](http://go.microsoft.com/fwlink/?LinkId=229175) for [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps.  
   

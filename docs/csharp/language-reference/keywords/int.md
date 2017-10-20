@@ -1,6 +1,6 @@
 ---
 title: "int (C# Reference)"
-ms.date: "2017-03-14"
+ms.date: 03/14/2017
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -8,28 +8,12 @@ ms.topic: "article"
 f1_keywords: 
   - "int_CSharpKeyword"
   - "int"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "int keyword [C#]"
 ms.assetid: 212447b4-5d2a-41aa-88ab-84fe710bdb52
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # int (C# Reference)
 
@@ -37,11 +21,11 @@ translation.priority.ht:
   
 |Type|Range|Size|.NET Framework type|Default Value|  
 |----------|-----------|----------|-------------------------|-------------------|  
-|`int`|-2,147,483,648 to 2,147,483,647|Signed 32-bit integer|<xref:System.Int32?displayProperty=fullName>|0|  
+|`int`|-2,147,483,648 to 2,147,483,647|Signed 32-bit integer|<xref:System.Int32?displayProperty=nameWithType>|0|  
   
 ## Literals  
  
-You can declare and initialize an `int` variable by assigning a decimal literal, a hexadecimal literal, or (starting with C# 7) a binary literal to it.  If the integer literal is outside the range of `int` (that is, if it is less than <xref:System.Int32.MinValue?displayProperty=fullName> or greater than <xref:System.Int32.MaxValue?displayProperty=fullName>), a compilation error occurs. 
+You can declare and initialize an `int` variable by assigning a decimal literal, a hexadecimal literal, or (starting with C# 7) a binary literal to it.  If the integer literal is outside the range of `int` (that is, if it is less than <xref:System.Int32.MinValue?displayProperty=nameWithType> or greater than <xref:System.Int32.MaxValue?displayProperty=nameWithType>), a compilation error occurs. 
 
 In the following example, integers equal to 90,946 that are represented as decimal, hexadecimal, and binary literals are assigned to `int` values.  
   

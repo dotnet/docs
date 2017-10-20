@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugThread::EnumerateChains"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "EnumerateChains method [.NET Framework debugging]"
   - "ICorDebugThread::EnumerateChains method [.NET Framework debugging]"

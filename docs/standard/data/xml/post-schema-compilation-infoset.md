@@ -8,11 +8,10 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+dev_langs:
+- "csharp"
+- "vb"
+- "cpp"
 ms.assetid: 7f1bc7f4-401b-459f-9078-f099cc711fde
 caps.latest.revision: 3
 author: "mairaw"
@@ -24,7 +23,7 @@ The [World Wide Web Consortium (W3C) XML Schema Recommendation](http://go.micros
   
  The pre-schema validation infoset is built during the editing of the schema. The post-schema compilation infoset is generated after the <xref:System.Xml.Schema.XmlSchemaSet.Compile%2A> method of the <xref:System.Xml.Schema.XmlSchemaSet> is called, during compilation of the schema, and is exposed as properties.  
   
- The SOM is the object model that represents the pre-schema validation and post-schema compilation infosets; it consists of the classes in the <xref:System.Xml.Schema?displayProperty=fullName> namespace. All read and write properties of classes in the <xref:System.Xml.Schema> namespace belong to the pre-schema validation infoset, while all read-only properties of classes in the <xref:System.Xml.Schema> namespace belong to the post-schema compilation infoset. The exception to this rule are the following properties, which are both pre-schema validation infoset and post-schema compilation infoset properties.  
+ The SOM is the object model that represents the pre-schema validation and post-schema compilation infosets; it consists of the classes in the <xref:System.Xml.Schema?displayProperty=nameWithType> namespace. All read and write properties of classes in the <xref:System.Xml.Schema> namespace belong to the pre-schema validation infoset, while all read-only properties of classes in the <xref:System.Xml.Schema> namespace belong to the post-schema compilation infoset. The exception to this rule are the following properties, which are both pre-schema validation infoset and post-schema compilation infoset properties.  
   
 |Class|Property|  
 |-----------|--------------|  

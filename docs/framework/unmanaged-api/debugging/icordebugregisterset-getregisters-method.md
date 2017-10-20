@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugRegisterSet::GetRegisters"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetRegisters method, ICorDebugRegisterSet interface [.NET Framework debugging]"
   - "ICorDebugRegisterSet::GetRegisters method [.NET Framework debugging]"

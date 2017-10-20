@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugILFrame::GetLocalVariable"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugILFrame::GetLocalVariable method [.NET Framework debugging]"
   - "GetLocalVariable method [.NET Framework debugging]"

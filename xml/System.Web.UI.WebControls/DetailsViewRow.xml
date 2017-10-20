@@ -53,13 +53,13 @@
 ## Examples  
  The following code example demonstrates how to retrieve the value of a field from a <xref:System.Web.UI.WebControls.DetailsViewRow> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewRowText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewRowText/CS/detailsviewrowcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewRowText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewRowText/VB/detailsviewrowvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewRowText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewRowText/CS/detailsviewrowcs.aspx#1)]
+ [!code-aspx-vb[DetailsViewRowText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewRowText/VB/detailsviewrowvb.aspx#1)]  
   
  The following code example demonstrates how to retrieve an <xref:System.Web.UI.WebControls.Image> control from the <xref:System.Web.UI.WebControls.DetailsViewRow> object that represents the header row. The <xref:System.Web.UI.WebControls.Image> control is declared in the header template.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewRowFindControl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewRowFindControl/CS/detailsviewrow2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewRowFindControl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewRowFindControl/VB/detailsviewrow2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewRowFindControl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewRowFindControl/CS/detailsviewrow2cs.aspx#1)]
+ [!code-aspx-vb[DetailsViewRowFindControl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewRowFindControl/VB/detailsviewrow2vb.aspx#1)]  
   
  ]]></format>
     </remarks>

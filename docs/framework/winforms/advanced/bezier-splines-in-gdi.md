@@ -9,8 +9,9 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "Bezier splines"
   - "splines, Bezier"
@@ -43,8 +44,8 @@ A Bézier spline is a curve specified by four points: two end points (p1 and p2)
  ![Paths](../../../../docs/framework/winforms/advanced/media/aboutgdip02-art13.gif "Aboutgdip02_art13")  
   
 ## See Also  
- <xref:System.Drawing.Graphics?displayProperty=fullName>   
- <xref:System.Drawing.Pen?displayProperty=fullName>   
+ <xref:System.Drawing.Graphics?displayProperty=nameWithType>   
+ <xref:System.Drawing.Pen?displayProperty=nameWithType>   
  [Lines, Curves, and Shapes](../../../../docs/framework/winforms/advanced/lines-curves-and-shapes.md)   
  [Constructing and Drawing Curves](../../../../docs/framework/winforms/advanced/constructing-and-drawing-curves.md)   
  [How to: Create Graphics Objects for Drawing](../../../../docs/framework/winforms/advanced/how-to-create-graphics-objects-for-drawing.md)   

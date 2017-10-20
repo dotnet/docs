@@ -1,18 +1,15 @@
 ---
 title: "Extension Methods (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.ExtensionMethods"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "extending data types"
   - "extension methods [Visual Basic]"
@@ -20,28 +17,12 @@ ms.assetid: b8020aae-374d-46a9-bcb7-8cc2390b93b6
 caps.latest.revision: 41
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Extension Methods (Visual Basic)
 Extension methods enable developers to add custom functionality to data types that are already defined without creating a new derived type. Extension methods make it possible to write a method that can be called as if it were an instance method of the existing type.  
   
 ## Remarks  
- An extension method can be only a `Sub` procedure or a `Function` procedure. You cannot define an extension property, field, or event. All extension methods must be marked with the extension attribute `<Extension()>` from the <xref:System.Runtime.CompilerServices?displayProperty=fullName> namespace.  
+ An extension method can be only a `Sub` procedure or a `Function` procedure. You cannot define an extension property, field, or event. All extension methods must be marked with the extension attribute `<Extension()>` from the <xref:System.Runtime.CompilerServices?displayProperty=nameWithType> namespace.  
   
  The first parameter in an extension method definition specifies which data type the method extends. When the method is run, the first parameter is bound to the instance of the data type that invokes the method.  
   

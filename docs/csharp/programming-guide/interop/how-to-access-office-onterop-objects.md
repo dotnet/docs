@@ -1,16 +1,10 @@
 ---
 title: "How to: Access Office Interop Objects by Using Visual C# Features (C# Programming Guide)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "optional parameters [C#], Office programming"
   - "named and optional arguments [C#], Office programming"
@@ -22,21 +16,6 @@ ms.assetid: 041b25c2-3512-4e0f-a4ea-ceb2999e4d5e
 caps.latest.revision: 33
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Access Office Interop Objects by Using Visual C# Features (C# Programming Guide)
 Visual C# has features that simplify access to Office API objects. The new features include named and optional arguments, a new type called `dynamic`, and the ability to pass arguments to reference parameters in COM methods as if they were value parameters.  
@@ -195,7 +174,7 @@ Visual C# has features that simplify access to Office API objects. The new featu
  [!code-cs[csProgGuideOfficeHowTo#18](../../../csharp/programming-guide/interop/codesnippet/CSharp/how-to-access-office-onterop-objects_17.cs)]  
   
 ## See Also  
- <xref:System.Type.Missing?displayProperty=fullName>   
+ <xref:System.Type.Missing?displayProperty=nameWithType>   
  [dynamic](../../../csharp/language-reference/keywords/dynamic.md)   
  [Using Type dynamic](../../../csharp/programming-guide/types/using-type-dynamic.md)   
  [Named and Optional Arguments](../../../csharp/programming-guide/classes-and-structs/named-and-optional-arguments.md)   

@@ -1,31 +1,15 @@
 ---
 title: "using static Directive (C# Reference)"
-ms.date: "2017-03-10"
+ms.date: 03/10/2017
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "using static directive [C#]"
 ms.assetid: 8b8f9e34-c75e-469b-ba85-6f2eb4090314
 author: "rpetrusha"
 ms.author: "ronpet"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # using static Directive (C# Reference)
 

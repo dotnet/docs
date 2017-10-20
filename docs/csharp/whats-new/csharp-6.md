@@ -64,7 +64,7 @@ auto-properties. C# 6 improves the auto-properties capabilities so that you can 
 them in more scenarios. You won't need to fall back on the more verbose syntax of
 declaring and manipulating the backing field by hand so often.
 
-The new syntax addresses scenarios for read only properties, and for initializing
+The new syntax addresses scenarios for read-only properties, and for initializing
 the variable storage behind an auto-property.
 
 ### Read-only auto-properties
@@ -97,7 +97,7 @@ public class Student
 
     public void ChangeName(string newLastName)
     {
-        // Generates CS 0200: Property or indexer cannot be assigned to -- it is read only
+        // Generates CS0200: Property or indexer cannot be assigned to -- it is read only
         LastName = newLastName;
     }
 }
@@ -131,7 +131,7 @@ is part of the property declaration, making it easier to equate the
 storage allocation with public interface for `Student` objects.
 
 Property Initializers can be used with read/write properties as well
-as read only properties, as shown here.
+as read-only properties, as shown here.
 
 [!code-csharp[ReadWriteInitialization](../../../samples/snippets/csharp/new-in-6/newcode.cs#ReadWriteInitialization)]
 
@@ -140,12 +140,12 @@ as read only properties, as shown here.
 The body of a lot of members that we write consist of only one statement
 that can be represented as an expression. You can reduce that syntax by
 writing an expression-bodied member instead. It works for methods and
-read-only properties." For example, an override of `ToString()` is often
+read-only properties. For example, an override of `ToString()` is often
 a great candidate:
 
 [!code-csharp[ToStringExpressionMember](../../../samples/snippets/csharp/new-in-6/newcode.cs#ToStringExpressionMember)]
 
-You can also use expression-bodied members in read only properties as well:
+You can also use expression-bodied members in read-only properties as well:
 
 [!code-csharp[FullNameExpressionMember](../../../samples/snippets/csharp/new-in-6/newcode.cs#FullNameExpressionMember)]
 

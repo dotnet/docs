@@ -11,7 +11,7 @@
 <body>
     <form id="form1" runat="server">
     <div>
-<%--<Snippet7>--%>
+<!-- <Snippet7> -->
 <asp:Label ID="Label1" AssociatedControlID="txtFirstName" 
     AccessKey="f" runat="server">
     <u>F</u>irst Name
@@ -23,7 +23,7 @@
     <u>L</u>ast Name
 </asp:Label>
 <asp:TextBox ID="txtLastName" runat="server" />
-<%--</Snippet7>--%>
+<!-- </Snippet7> -->
     </div>
     </form>
 </body>

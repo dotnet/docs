@@ -127,7 +127,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.DirectoryServices.ActiveDirectory.ApplicationPartition.DirectoryServers%2A?displayProperty=fullName> property returns the same collection of <xref:System.DirectoryServices.ActiveDirectory.DirectoryServer> objects as the <xref:System.DirectoryServices.ActiveDirectory.ApplicationPartition.FindAllDirectoryServers?displayProperty=fullName> method if the <xref:System.DirectoryServices.ActiveDirectory.ApplicationPartition> object has been committed to the underlying directory services store.  
+ The <xref:System.DirectoryServices.ActiveDirectory.ApplicationPartition.DirectoryServers%2A?displayProperty=nameWithType> property returns the same collection of <xref:System.DirectoryServices.ActiveDirectory.DirectoryServer> objects as the <xref:System.DirectoryServices.ActiveDirectory.ApplicationPartition.FindAllDirectoryServers?displayProperty=nameWithType> method if the <xref:System.DirectoryServices.ActiveDirectory.ApplicationPartition> object has been committed to the underlying directory services store.  
   
  ]]></format>
         </remarks>

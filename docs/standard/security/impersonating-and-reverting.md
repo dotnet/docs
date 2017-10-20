@@ -8,11 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+dev_langs:
+- "csharp"
+- "vb"
 helpviewer_keywords: 
   - "WindowsIdentity objects, impersonating"
   - "security [.NET Framework], impersonating Windows accounts"
@@ -40,7 +38,7 @@ Sometimes you might need to obtain a Windows account token to impersonate a Wind
     Dim ImpersonatedIdentity As New WindowsIdentity(hToken)  
     ```  
   
-3.  Begin impersonation by creating a new instance of the <xref:System.Security.Principal.WindowsImpersonationContext> class and initializing it with the <xref:System.Security.Principal.WindowsIdentity.Impersonate%2A?displayProperty=fullName> method of the initialized class, as shown in the following code.  
+3.  Begin impersonation by creating a new instance of the <xref:System.Security.Principal.WindowsImpersonationContext> class and initializing it with the <xref:System.Security.Principal.WindowsIdentity.Impersonate%2A?displayProperty=nameWithType> method of the initialized class, as shown in the following code.  
   
     ```csharp  
     WindowsImpersonationContext MyImpersonation = ImpersonatedIdentity.Impersonate();  
@@ -50,7 +48,7 @@ Sometimes you might need to obtain a Windows account token to impersonate a Wind
     WindowsImpersonationContext MyImpersonation = ImpersonatedIdentity.Impersonate()  
     ```  
   
-4.  When you no longer need to impersonate, call the <xref:System.Security.Principal.WindowsImpersonationContext.Undo%2A?displayProperty=fullName> method to revert the impersonation, as shown in the following code.  
+4.  When you no longer need to impersonate, call the <xref:System.Security.Principal.WindowsImpersonationContext.Undo%2A?displayProperty=nameWithType> method to revert the impersonation, as shown in the following code.  
   
     ```csharp  
     MyImpersonation.Undo();  

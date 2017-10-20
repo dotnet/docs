@@ -25,7 +25,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Xml.XmlDocumentType> class can be used to return information about a document type declaration. Use the <xref:System.Xml.XmlDocument.CreateDocumentType%2A?displayProperty=fullName> method to create an <xref:System.Xml.XmlDocumentType> object.  
+ The <xref:System.Xml.XmlDocumentType> class can be used to return information about a document type declaration. Use the <xref:System.Xml.XmlDocument.CreateDocumentType%2A?displayProperty=nameWithType> method to create an <xref:System.Xml.XmlDocumentType> object.  
   
  ]]></format>
     </remarks>
@@ -108,7 +108,7 @@
 ## Remarks  
  This method serves as a copy constructor for nodes. The cloned node has no parent (<xref:System.Xml.XmlNode.ParentNode%2A> returns `null`).  
   
- To see how this method behaves with other node types, see <xref:System.Xml.XmlNode.CloneNode%2A?displayProperty=fullName>.  
+ To see how this method behaves with other node types, see <xref:System.Xml.XmlNode.CloneNode%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

@@ -1,7 +1,7 @@
 ---
 title: "How to: Filter on an Attribute (XPath-LINQ to XML) (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 ms.assetid: ffefb9d6-45ec-4677-a396-dd9c2b36298f
 caps.latest.revision: 3
 author: dotnet-bot

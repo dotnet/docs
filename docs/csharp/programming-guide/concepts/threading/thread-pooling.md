@@ -1,26 +1,17 @@
 ---
 title: "Thread Pooling (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: 98ae68c1-ace8-44b9-9317-8920ac9ef2b6
 caps.latest.revision: 5
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Thread Pooling (C#)
 A *thread pool* is a collection of threads that can be used to perform several tasks in the background. (See [Threading (C#)](../../../../csharp/programming-guide/concepts/threading/index.md) for background information.) This leaves the primary thread free to perform other tasks asynchronously.  
@@ -33,7 +24,7 @@ A *thread pool* is a collection of threads that can be used to perform several t
   
  You can implement your own thread pool, but it is easier to use the thread pool provided by the .NET Framework through the <xref:System.Threading.ThreadPool> class.  
   
- With thread pooling, you call the <xref:System.Threading.ThreadPool.QueueUserWorkItem%2A?displayProperty=fullName> method with a delegate for the procedure you want to run, and C# creates the thread and runs your procedure.  
+ With thread pooling, you call the <xref:System.Threading.ThreadPool.QueueUserWorkItem%2A?displayProperty=nameWithType> method with a delegate for the procedure you want to run, and C# creates the thread and runs your procedure.  
   
 ## Thread Pooling Example  
  The following example shows how you can use thread pooling to start several tasks.  

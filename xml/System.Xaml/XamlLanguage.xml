@@ -658,7 +658,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In the .NET Framework XAML Services implementation, the `Member` <xref:System.Xaml.XamlType> is backed by <xref:System.Windows.Markup.MemberDefinition?displayProperty=fullName>.  
+ In the .NET Framework XAML Services implementation, the `Member` <xref:System.Xaml.XamlType> is backed by <xref:System.Windows.Markup.MemberDefinition?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -837,7 +837,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `Reference` is a [!INCLUDE[xaml2009](~/includes/xaml2009-md.md)] feature for referencing another object node in the markup. The implementation for .NET Framework XAML Services is found in <xref:System.Windows.Markup.Reference?displayProperty=fullName>.  
+ `Reference` is a [!INCLUDE[xaml2009](~/includes/xaml2009-md.md)] feature for referencing another object node in the markup. The implementation for .NET Framework XAML Services is found in <xref:System.Windows.Markup.Reference?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

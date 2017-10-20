@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "security [WCF], creating custom bindings"
 ms.assetid: 203a9f9e-3a73-427c-87aa-721c56265b29
@@ -78,7 +81,7 @@ manager: "mbaldwin"
 |||SSL or Windows StreamSecurityBindingElement|SSL or Windows StreamSecurityBindingElement|SSL or Windows StreamSecurityBindingElement|  
 |||TcpTransportBindingElement|TcpTransportBindingElement|TcpTransportBindingElement|  
   
- Note that there are many configurable settings on the SecurityBindingElements. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][SecurityBindingElement Authentication Modes](../../../../docs/framework/wcf/feature-details/securitybindingelement-authentication-modes.md).  
+ Note that there are many configurable settings on the SecurityBindingElements. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [SecurityBindingElement Authentication Modes](../../../../docs/framework/wcf/feature-details/securitybindingelement-authentication-modes.md).  
   
  [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Secure Conversations and Secure Sessions](../../../../docs/framework/wcf/feature-details/secure-conversations-and-secure-sessions.md).  
   

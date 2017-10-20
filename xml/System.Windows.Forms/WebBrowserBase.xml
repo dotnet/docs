@@ -1800,7 +1800,7 @@
     </Member>
     <Member MemberName="PreProcessMessage">
       <MemberSignature Language="C#" Value="public override bool PreProcessMessage (ref System.Windows.Forms.Message msg);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool PreProcessMessage(valuetype System.Windows.Forms.Message msg) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool PreProcessMessage(valuetype System.Windows.Forms.Message&amp; msg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowserBase.PreProcessMessage(System.Windows.Forms.Message@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1846,7 +1846,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is called during message preprocessing to handle dialog characters, such as TAB, RETURN, ESCAPE, and arrow keys. This method is called only if the WebBrowser ActiveX control does not process the key. In this case, this method delegates the call to the base <xref:System.Windows.Forms.Control.ProcessDialogKey%2A?displayProperty=fullName> method.  
+ This method is called during message preprocessing to handle dialog characters, such as TAB, RETURN, ESCAPE, and arrow keys. This method is called only if the WebBrowser ActiveX control does not process the key. In this case, this method delegates the call to the base <xref:System.Windows.Forms.Control.ProcessDialogKey%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -2142,7 +2142,7 @@
     </Member>
     <Member MemberName="WndProc">
       <MemberSignature Language="C#" Value="protected override void WndProc (ref System.Windows.Forms.Message m);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowserBase.WndProc(System.Windows.Forms.Message@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

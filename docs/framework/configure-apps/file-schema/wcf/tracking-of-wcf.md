@@ -25,9 +25,9 @@ Represents a configuration section for defining tracking settings for a workflow
   
 ## Syntax  
   
-```vb  
+```xml
    <system.serviceModel>  <tracking>       <participants>       <add name="String"            profileName="String"           type="String" />      </participants>     <trackingProfile name="String">      <workflow activityDefinitionId="String">          <activityScheduledQueries>             <activityScheduledQuery activityName="String"                 childActivityName="String"/>          </activityScheduledQueries>             <activityStateQuery activityName="String" />                <arguments>                   <argument name="String"/>                </arguments>                <states>                   <state name="String"/>                </states>                <variables>                   <variable name="String"/>                </variables>          </activityStateQueries>          <bookmarkResumptionQueries>             <bookmarkResumptionQuery name="String" />          </bookmarkResumptionQueries>          <cancelRequestQueries>             <cancelRequestQuery activityName="String"                 childActivityName="String"/>          </cancelRequestQueries>          <customTrackingQueries>             <customTrackingQuery activityName="String"                 name="String"/>          </customTrackingQueries>          <faultPropagationQueries>             <faultPropagationQuery activityName="String"                 faultHandlerActivityName="String"/>          </faultPropagationQueries>         <workflowInstanceQueries>            <workflowInstanceQuery>              <states>                 <state name="String"/>              </states>          </workflowInstanceQuery>        </workflowInstanceQueries>      </workflow>    </trackingProfile>           </profiles>  </tracking></system.serviceModel>  
-```  
+```
   
 ## Attributes and Elements  
  The following sections describe attributes, child elements, and parent elements.  
@@ -52,5 +52,5 @@ Represents a configuration section for defining tracking settings for a workflow
  Tracking provides you with the ability to examine the execution of a workflow. The workflow tracking infrastructure instruments a workflow to emit records reflecting key events during the execution. For example, when a workflow instance starts or completes tracking records are emitted. Tracking can also extract business relevant data associated with the workflow variables. For example, if the workflow represents an order processing system the order id can be extracted along with the tracking record. In general, enabling WF tracking facilitates diagnostics or business analytics over a workflow execution.  
   
 ## See Also  
- <xref:System.ServiceModel.Activities.Tracking.Configuration.TrackingSection?displayProperty=fullName>       
+ <xref:System.ServiceModel.Activities.Tracking.Configuration.TrackingSection?displayProperty=nameWithType>       
  [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)

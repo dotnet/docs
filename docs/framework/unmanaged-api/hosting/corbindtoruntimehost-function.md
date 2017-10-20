@@ -17,8 +17,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "CorBindToRuntimeHost"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorBindToRuntimeHost function [.NET Framework hosting]"
 ms.assetid: 5c826ba3-8258-49bc-a417-78807915fcaf

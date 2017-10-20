@@ -208,7 +208,7 @@
 ## Remarks  
  The <xref:System.ComponentModel.Design.DesignerActionItem.Properties%2A> property allows the programmer to store arbitrary data within an item. The standard properties for this class, such as <xref:System.ComponentModel.Design.DesignerActionItem.Category%2A> and <xref:System.ComponentModel.Design.DesignerActionItem.DisplayName%2A>, are not stored in this collection.  
   
- The type of this property is actually <xref:System.Collections.Specialized.HybridDictionary?displayProperty=fullName>.  
+ The type of this property is actually <xref:System.Collections.Specialized.HybridDictionary?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

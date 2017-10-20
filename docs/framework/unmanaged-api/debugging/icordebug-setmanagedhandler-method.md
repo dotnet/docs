@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebug::SetManagedHandler"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebug::SetManagedHandler method [.NET Framework debugging]"
   - "SetManagedHandler method [.NET Framework debugging]"

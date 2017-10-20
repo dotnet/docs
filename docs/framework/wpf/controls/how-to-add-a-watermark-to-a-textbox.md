@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "displaying a background image inside a text box to aid user input [WPF]"
   - "aid usability of a TextBox using a background image [WPF]"

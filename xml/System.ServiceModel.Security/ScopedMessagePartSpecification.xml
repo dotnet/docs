@@ -203,7 +203,7 @@
     </Member>
     <Member MemberName="TryGetParts">
       <MemberSignature Language="C#" Value="public bool TryGetParts (string action, out System.ServiceModel.Security.MessagePartSpecification parts);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetParts(string action, class System.ServiceModel.Security.MessagePartSpecification parts) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetParts(string action, [out] class System.ServiceModel.Security.MessagePartSpecification&amp; parts) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.ScopedMessagePartSpecification.TryGetParts(System.String,System.ServiceModel.Security.MessagePartSpecification@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -236,7 +236,7 @@
     </Member>
     <Member MemberName="TryGetParts">
       <MemberSignature Language="C#" Value="public bool TryGetParts (string action, bool excludeChannelScope, out System.ServiceModel.Security.MessagePartSpecification parts);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetParts(string action, bool excludeChannelScope, class System.ServiceModel.Security.MessagePartSpecification parts) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetParts(string action, bool excludeChannelScope, [out] class System.ServiceModel.Security.MessagePartSpecification&amp; parts) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.ScopedMessagePartSpecification.TryGetParts(System.String,System.Boolean,System.ServiceModel.Security.MessagePartSpecification@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

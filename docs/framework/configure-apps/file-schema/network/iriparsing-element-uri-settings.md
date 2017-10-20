@@ -9,11 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 ms.assetid: 953d0b53-445e-41f9-b302-77c4030852ce
 caps.latest.revision: 9
 author: "mcleblanc"
@@ -91,6 +86,6 @@ Specifies if International Resource Identifier (IRI) parsing is applied to a <xr
 ```  
   
 ## See Also  
- <xref:System.Configuration.IriParsingElement?displayProperty=fullName>   
- <xref:System.Configuration.UriSection?displayProperty=fullName>   
+ <xref:System.Configuration.IriParsingElement?displayProperty=nameWithType>   
+ <xref:System.Configuration.UriSection?displayProperty=nameWithType>   
  [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

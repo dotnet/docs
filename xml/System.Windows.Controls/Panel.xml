@@ -361,7 +361,7 @@
   
  [!code-xaml[StylingIntroSnippet#ListBoxCT](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSnippet/CS/window1.xaml#listboxct)]   
   
- Alternatively, you can set the <xref:System.Windows.Controls.ItemsControl.ItemsPanel%2A?displayProperty=fullName> property. The following example sets the <xref:System.Windows.Controls.ItemsControl.ItemsPanel%2A> in a <xref:System.Windows.Style> of a <xref:System.Windows.Controls.ListBox>.  
+ Alternatively, you can set the <xref:System.Windows.Controls.ItemsControl.ItemsPanel%2A?displayProperty=nameWithType> property. The following example sets the <xref:System.Windows.Controls.ItemsControl.ItemsPanel%2A> in a <xref:System.Windows.Style> of a <xref:System.Windows.Controls.ListBox>.  
   
  [!code-xaml[listboxhorizontal#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxHorizontal/CS/window1.xaml#1)]   
   

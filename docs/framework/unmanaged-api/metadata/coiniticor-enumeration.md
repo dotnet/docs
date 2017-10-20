@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "COINITICOR"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "COINITICOR enumeration [.NET Framework metadata]"
 ms.assetid: 67fefd89-28d6-4588-84ea-dc7a5870e014

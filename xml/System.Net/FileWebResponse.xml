@@ -110,10 +110,10 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.FileWebResponse.Close%2A> method cleans up the resources used by a <xref:System.Net.FileWebResponse> and closes the response stream by calling the <xref:System.IO.Stream.Close%2A?displayProperty=fullName> method.  
+ The <xref:System.Net.FileWebResponse.Close%2A> method cleans up the resources used by a <xref:System.Net.FileWebResponse> and closes the response stream by calling the <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> method.  
   
 > [!NOTE]
->  The response stream must be closed to avoid running out of system resources. You can closes the response stream by calling either <xref:System.IO.Stream.Close%2A?displayProperty=fullName> or <xref:System.Net.FileWebResponse.Close%2A>  
+>  The response stream must be closed to avoid running out of system resources. You can closes the response stream by calling either <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> or <xref:System.Net.FileWebResponse.Close%2A>  
   
    
   
@@ -285,7 +285,7 @@
  The <xref:System.Net.FileWebResponse.GetResponseStream%2A> method returns the data stream from the file system resource.  
   
 > [!NOTE]
->  The response stream must be closed to avoid running out of system resources. The response stream can be closed by calling <xref:System.IO.Stream.Close%2A?displayProperty=fullName> or <xref:System.Net.FileWebResponse.Close%2A>  
+>  The response stream must be closed to avoid running out of system resources. The response stream can be closed by calling <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> or <xref:System.Net.FileWebResponse.Close%2A>  
   
    
   

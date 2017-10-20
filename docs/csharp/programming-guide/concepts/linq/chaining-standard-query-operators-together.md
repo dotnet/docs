@@ -1,7 +1,7 @@
 ---
 title: "Chaining Standard Query Operators Together (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: 66f2b0a9-2c23-4735-988e-bbc9dfb55c7b
 caps.latest.revision: 3
 author: "BillWagner"
@@ -20,7 +18,7 @@ ms.author: "wiwagn"
 # Chaining Standard Query Operators Together (C#)
 This is the final topic in the [Tutorial: Chaining Queries Together (C#)](../../../../csharp/programming-guide/concepts/linq/tutorial-chaining-queries-together.md) tutorial.  
   
- The standard query operators can also be chained together. For example, you can interject the <xref:System.Linq.Enumerable.Where%2A?displayProperty=fullName> operator, and it also operates in a lazy fashion. No intermediate results are materialized by it.  
+ The standard query operators can also be chained together. For example, you can interject the <xref:System.Linq.Enumerable.Where%2A?displayProperty=nameWithType> operator, and it also operates in a lazy fashion. No intermediate results are materialized by it.  
   
 ## Example  
  In this example, the <xref:System.Linq.Enumerable.Where%2A> method is called before calling `ConvertCollectionToUpperCase`. The <xref:System.Linq.Enumerable.Where%2A> method operates in almost exactly the same way as the lazy methods used in previous examples in this tutorial, `ConvertCollectionToUpperCase` and `AppendString`.  

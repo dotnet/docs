@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugILFrame::GetStackValue"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetStackValue method [.NET Framework debugging]"
   - "ICorDebugILFrame::GetStackValue method [.NET Framework debugging]"

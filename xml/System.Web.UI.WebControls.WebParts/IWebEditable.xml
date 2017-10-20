@@ -41,13 +41,13 @@
   
  The second part of the code example is a Web page that hosts the custom control. Notice that although an <xref:System.Web.UI.WebControls.WebParts.EditorZone> control is declared in the markup of the page, the custom <xref:System.Web.UI.WebControls.WebParts.EditorPart> control need not be referenced there, because it can be added programmatically at run time.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_IWebEditable_Overview#7](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebEditable_Overview/CS/editorpart_overview_cs.aspx#7)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_IWebEditable_Overview#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebEditable_Overview/VB/editorpart_overview_vb.aspx#7)]  -->  
+ [!code-aspx-csharp[WebParts_IWebEditable_Overview#7](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebEditable_Overview/CS/editorpart_overview_cs.aspx#7)]
+ [!code-aspx-vb[WebParts_IWebEditable_Overview#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebEditable_Overview/VB/editorpart_overview_vb.aspx#7)]  
   
  The third part of the code example is a user control that enables a user to switch the page into edit mode. Notice that the user control is referenced in the hosting Web page. For a full description of how to create this user control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_IWebEditable_Overview#8](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebEditable_Overview/CS/displaymodeuccs.ascx#8)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_IWebEditable_Overview#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebEditable_Overview/VB/displaymodeucvb.ascx#8)]  -->  
+ [!code-aspx-csharp[WebParts_IWebEditable_Overview#8](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebEditable_Overview/CS/displaymodeuccs.ascx#8)]
+ [!code-aspx-vb[WebParts_IWebEditable_Overview#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebEditable_Overview/VB/displaymodeucvb.ascx#8)]  
   
  To run the code example, load the hosting Web page in a browser, add some text to the text box, and click the **Set Label Content** button to update the label in the control. To switch the page into edit mode, select **Edit** from the drop-down list containing the display modes. To display the UI from the custom `TextDisplayEditorPart` control, click the verbs menu drop-down arrow on the `TextDisplayWebPart` control, and select **Edit**. In the editing UI, you can use the drop-down list containing the font styles to update the text style for the label in the `TextDisplayWebPart` control. You must click **Browse Mode** in the display modes drop-down list to return the page to normal view and confirm that the text in the label now has the font style you selected while in edit mode.  
   

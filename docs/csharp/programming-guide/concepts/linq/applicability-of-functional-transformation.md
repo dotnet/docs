@@ -1,7 +1,7 @@
 ---
 title: "Applicability of Functional Transformation (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: c78107bd-b006-4574-a3d4-bbf808388ff3
 caps.latest.revision: 4
 author: "BillWagner"

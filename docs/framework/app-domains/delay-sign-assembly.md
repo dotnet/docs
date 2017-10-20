@@ -5,6 +5,10 @@ ms.prod: ".net-framework"
 ms.technology: 
   - "dotnet-bcl"
 ms.topic: "article"
+dev_langs:
+- "csharp"
+- "vb"
+- "cpp"
 helpviewer_keywords: 
   - "deferring assembly signing"
   - "signing assemblies"

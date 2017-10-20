@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "COR_FIELD_OFFSET"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "COR_FIELD_OFFSET structure [.NET Framework metadata]"
 ms.assetid: cced5298-277f-4a5a-8ecf-a0050c1096ea

@@ -59,7 +59,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public AggregateExportProvider (System.ComponentModel.Composition.Hosting.ExportProvider[] providers);" />
+      <MemberSignature Language="C#" Value="public AggregateExportProvider (params System.ComponentModel.Composition.Hosting.ExportProvider[] providers);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.Composition.Hosting.ExportProvider[] providers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.AggregateExportProvider.#ctor(System.ComponentModel.Composition.Hosting.ExportProvider[])" />
       <MemberType>Constructor</MemberType>

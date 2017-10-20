@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "WCF Data Services, customizing requests"
 ms.assetid: 3d55168d-5901-4f48-8117-6c93da3ab5ae

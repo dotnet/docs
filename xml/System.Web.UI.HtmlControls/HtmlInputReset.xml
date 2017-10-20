@@ -33,8 +33,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputReset> control to reset the values of a form on a Web page.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.HtmlControls.HtmlInputReset#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlInputReset/CS/htmlinputresetcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.HtmlControls.HtmlInputReset#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlInputReset/VB/htmlinputresetvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.HtmlControls.HtmlInputReset#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlInputReset/CS/htmlinputresetcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.HtmlControls.HtmlInputReset#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlInputReset/VB/htmlinputresetvb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -60,15 +60,15 @@
   
 |Property|Value|  
 |--------------|-----------|  
-|<xref:System.Web.UI.HtmlControls.HtmlControl.TagName%2A?displayProperty=fullName>|The "reset" literal string.|  
+|<xref:System.Web.UI.HtmlControls.HtmlControl.TagName%2A?displayProperty=nameWithType>|The "reset" literal string.|  
   
    
   
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputReset> control to reset the values of a Web page form.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.HtmlControls.HtmlInputReset#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlInputReset/CS/htmlinputresetcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.HtmlControls.HtmlInputReset#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlInputReset/VB/htmlinputresetvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.HtmlControls.HtmlInputReset#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlInputReset/CS/htmlinputresetcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.HtmlControls.HtmlInputReset#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlInputReset/VB/htmlinputresetvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -97,7 +97,7 @@
   
 |Property|Value|  
 |--------------|-----------|  
-|<xref:System.Web.UI.HtmlControls.HtmlControl.TagName%2A?displayProperty=fullName>|The value of the `type` parameter.|  
+|<xref:System.Web.UI.HtmlControls.HtmlControl.TagName%2A?displayProperty=nameWithType>|The value of the `type` parameter.|  
   
  Setting the `type` parameter to a value not recognized as a valid HTML `<input>` element results in a default HTML `<input>` element as a single-line text input field.  
   
@@ -106,8 +106,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputReset> control to reset the values of a Web page form.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.HtmlControls.HtmlInputReset#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlInputReset/CS/htmlinputresetcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.HtmlControls.HtmlInputReset#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlInputReset/VB/htmlinputresetvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.HtmlControls.HtmlInputReset#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlInputReset/CS/htmlinputresetcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.HtmlControls.HtmlInputReset#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlInputReset/VB/htmlinputresetvb.aspx#1)]  
   
  ]]></format>
         </remarks>

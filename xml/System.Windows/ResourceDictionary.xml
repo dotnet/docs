@@ -354,6 +354,30 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="InvalidatesImplicitDataTemplateResources">
+      <MemberSignature Language="C#" Value="public bool InvalidatesImplicitDataTemplateResources { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool InvalidatesImplicitDataTemplateResources" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.ResourceDictionary.InvalidatesImplicitDataTemplateResources" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the invalidations fired by the <see cref="T:System.Windows.ResourceDictionary" /> object cause <see cref="T:System.Windows.Controls.ContentPresenter" /> objects to reevaluate their choice of template. 
+The invalidations happen when an implicit data template resource changes.</summary>
+        <returns><see langword="true" /> if the invalidations cause <see cref="T:System.Windows.Controls.ContentPresenter" /> objects to reevaluate their choice of template; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="IsFixedSize">
       <MemberSignature Language="C#" Value="public bool IsFixedSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsFixedSize" />
@@ -527,7 +551,7 @@
     </Member>
     <Member MemberName="OnGettingValue">
       <MemberSignature Language="C#" Value="protected virtual void OnGettingValue (object key, ref object value, out bool canCache);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnGettingValue(object key, object value, bool canCache) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnGettingValue(object key, object&amp; value, [out] bool&amp; canCache) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.ResourceDictionary.OnGettingValue(System.Object,System.Object@,System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

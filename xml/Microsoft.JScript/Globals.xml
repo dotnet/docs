@@ -17,7 +17,7 @@
   </Docs>
   <Members>
     <Member MemberName="ConstructArray">
-      <MemberSignature Language="C#" Value="public static Microsoft.JScript.ArrayObject ConstructArray (object[] args);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.JScript.ArrayObject ConstructArray (params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.JScript.ArrayObject ConstructArray(object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Globals.ConstructArray(System.Object[])" />
       <MemberType>Method</MemberType>

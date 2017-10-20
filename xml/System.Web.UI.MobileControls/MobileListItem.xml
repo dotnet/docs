@@ -391,8 +391,8 @@
 ## Examples  
  The following code example creates multiple <xref:System.Web.UI.MobileControls.MobileListItem> objects using implicit conversion from strings, and adds them to a <xref:System.Web.UI.MobileControls.List> control.  
   
- [!code-csharp[MobileControls.MobileListItem.ImplicitSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileControls.MobileListItem.ImplicitSample/CS/Default.aspx#1)]
- [!code-vb[MobileControls.MobileListItem.ImplicitSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileControls.MobileListItem.ImplicitSample/VB/Default.aspx#1)]  
+ [!code-aspx-csharp[MobileControls.MobileListItem.ImplicitSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileControls.MobileListItem.ImplicitSample/CS/Default.aspx#1)]
+ [!code-aspx-vb[MobileControls.MobileListItem.ImplicitSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileControls.MobileListItem.ImplicitSample/VB/Default.aspx#1)]  
   
  ]]></format>
         </remarks>

@@ -1,6 +1,6 @@
 ---
 title: "XML in Visual Basic"
-description: "Learn how to use LINQ to XML features in your Visual Basic code."
+description: "Learn how to use XML and LINQ to XML features in your Visual Basic code."
 ms.date: 10/20/2017
 ms.prod: .net
 ms.technology: 

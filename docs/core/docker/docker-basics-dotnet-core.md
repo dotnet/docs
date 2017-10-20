@@ -41,6 +41,9 @@ You can build both Windows and Linux containers with [multi-arch based tags](htt
 
 * Install your favorite code editor, if you haven't already.
 
+> [!TIP]
+> Need to install a code editor? Try [Visual Studio](https://visualstudio.com/downloads)!
+
 #### Installing Docker Client
 
 Install [Docker 17.06](https://docs.docker.com/release-notes/docker-ce/) or later of the Docker client.
@@ -119,7 +122,7 @@ The Hello .NET Core console app successfully runs locally. Now let's take it a s
 
 Open your text editor and let's get started! We're still working from the Hello directory we built the app in.
 
-Add the following Docker instructions for either Linux or [Windows Containers](https://docs.microsoft.com/en-us/virtualization/windowscontainers/about/) to a new file. When finished, save it in the root of your Hello directory as **Dockerfile**, with no extension (You may need to set your file type to `All types (*.*)` or something similar).
+Add the following Docker instructions for either Linux or [Windows Containers](https://docs.microsoft.com/virtualization/windowscontainers/about/) to a new file. When finished, save it in the root of your Hello directory as **Dockerfile**, with no extension (You may need to set your file type to `All types (*.*)` or something similar).
 
 ```Dockerfile
 FROM microsoft/dotnet:2.0-sdk
@@ -200,7 +203,7 @@ These Docker commands are essential:
 
 #### Build and run
 
-We wrote the dockerfile; now Docker builds our app and then runs the container.
+You wrote the dockerfile; now Docker builds your app and then runs the container.
 
 ```console
 docker build -t dotnetapp-dev .
@@ -261,7 +264,7 @@ Here are some next steps you can take:
 * [Deploy your app on Docker for Azure](https://docs.docker.com/docker-for-azure/deploy/)
 
 > [!Note]
-> If you do not have an Azure subscription, [sign up today](https://azure.microsoft.com/en-us/free/?b=16.48) for a free 30-day account and get $200 in Azure Credits to try out any combination of Azure services.
+> If you do not have an Azure subscription, [sign up today](https://azure.microsoft.com/free/?b=16.48) for a free 30-day account and get $200 in Azure Credits to try out any combination of Azure services.
 
 ## Docker Images used in this sample
 
@@ -272,9 +275,9 @@ The following Docker images are used in this sample
 ## Related Resources
 
 * [.NET Core Docker samples](https://github.com/dotnet/dotnet-docker-samples/README.md)
-* [Dockerfile on Windows Containers](https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-docker/manage-windows-dockerfile)
+* [Dockerfile on Windows Containers](https://docs.microsoft.com/virtualization/windowscontainers/manage-docker/manage-windows-dockerfile)
 * [.NET Framework Docker samples](https://github.com/Microsoft/dotnet-framework-docker-samples)
 * [ASP.NET Core on DockerHub](https://hub.docker.com/r/microsoft/aspnetcore/)
 * [Dockerize a .NET Core application - Docker Tutorial](https://docs.docker.com/engine/examples/dotnetcore/)
-* [Working with Visual Studio Docker Tools](https://docs.microsoft.com/en-us/aspnet/core/publishing/visual-studio-tools-for-docker)
+* [Working with Visual Studio Docker Tools](https://docs.microsoft.com/aspnet/core/publishing/visual-studio-tools-for-docker)
 * [Deploying Docker Images from the Azure Container Registry to Azure Container Instances](https://blogs.msdn.microsoft.com/stevelasker/2017/07/28/deploying-docker-images-from-the-azure-container-registry-to-azure-container-instances/)

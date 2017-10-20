@@ -2,7 +2,7 @@
 title: Building .NET Core Docker Images
 description: Understanding Docker images and .NET Core
 keywords: .NET, .NET Core, Docker
-author: johalex
+author: jralexander
 ms.author: johalex
 ms.date: 10/11/2017
 ms.topic: article
@@ -26,11 +26,11 @@ When building Docker images for developers, we focused on three main scenarios:
 Why three images?
 When developing, building, and running containerized applications, we have different priorities.
 
-* **Development:**  The priority focuses on quickly iterate changes, and the ability to debug the changes. The size of the image isn't as important, rather can you make changes to your code and see them quickly.
+* **Development:**  The priority focuses on quickly iterate changes, and the ability to debug the changes. The size of the image isn't as important, rather can you make changes to your code and see them quickly?
 
-* **Build:** This image contains everything needed to compile your app, which includes the compiler and any other dependencies to optimize the binaries.  You use the build image for the content you place into a production image, not for deployment. The build image would be used for continuous integration, or in a build environment. This approach allows a build agent to instance a build image to compile and build the application with all the required dependencies. Your build agent only needs to know how to run this Docker image.
+* **Build:** This image contains everything needed to compile your app, which includes the compiler and any other dependencies to optimize the binaries.  You use the build image to create the assets you place into a production image. The build image would be used for continuous integration, or in a build environment. This approach allows a build agent to compile and build the application (with all the required dependencies) in a build image instance. Your build agent only needs to know how to run this Docker image.
 
-* **Production:** How fast you can deploy and start your image. This image is small so network performance from your Docker Registry to your Docker hosts is optimized. The contents are ready to run enabling the fastest time from Docker run to processing results. Dynamic code compilation isn't needed in the Docker model. The content you place in this image would be limited to the binaries and content needed to run the application.
+* **Production:** How fast you can deploy and start your image? This image is small so network performance from your Docker Registry to your Docker hosts is optimized. The contents are ready to run enabling the fastest time from Docker run to processing results. Dynamic code compilation isn't needed in the Docker model. The content you place in this image would be limited to the binaries and content needed to run the application.
 
     For example, the `dotnet publish` output contains:
 
@@ -40,7 +40,9 @@ When developing, building, and running containerized applications, we have diffe
 
 The reason to include the `dotnet publish` command output in your production image is to keep its' size to a minimum.
 
-Though there are multiple versions of the .NET Core image, they all share one or more layers. This architecture decreases the needed disk space.
+Some .NET Core images share layers between different tags so downloading the latest tag is a lighter-weight process. If you already have an older version on your machine, this architecture decreases the needed disk space.
+
+When multiple applications use common images on the same machine, memory is shared between the common images. The images must be the same to be shared.
 
 ## Docker image variations
 
@@ -57,7 +59,7 @@ To achieve the goals above, we provide image variants under [`microsoft/dotnet`]
 
 In addition to the optimized scenarios of development, build and production, we provide additional images:
 
-* `microsoft/dotnet:<version>-runtime-deps`: The **runtime-deps** image contains the operating system with all of the native dependencies needed by .NET Core. This image is for [self-contained applications](https://docs.microsoft.com/en-us/dotnet/core/deploying/index).
+* `microsoft/dotnet:<version>-runtime-deps`: The **runtime-deps** image contains the operating system with all of the native dependencies needed by .NET Core. This image is for [self-contained applications](https://docs.microsoft.com/dotnet/core/deploying/index).
 
 Latest versions of each variant:
 
@@ -66,7 +68,7 @@ Latest versions of each variant:
 * `microsoft/dotnet:runtime`
 * `microsoft/dotnet:runtime-deps`
 
-Here is an images list after a `docker pull <imagename>` to show the various sizes. Notice, the development/build variant, `microsoft/dotnet:2.0.0-sdk` is larger as it contains the SDK to develop and build your application. The production optimized variant, `microsoft/dotnet:runtime` is smaller. The minimal image capable of being used on Linux, `runtime-deps`, is the smallest.
+Here is an images list to show the various image sizes. The actual sizes will vary with each release, but SDK (`microsoft/dotnet:2.0.0-sdk`) will be larger than runtime, and runtime (`microsoft/dotnet:runtime`) will be larger than runtime-deps (`runtime-deps`).
 
 ```console
 REPOSITORY          TAG                 IMAGE ID            SIZE
@@ -183,7 +185,7 @@ docker run -it --rm --name aspnetcore_sample aspnetapp
 
 * Open up another command prompt.
 * Run `docker ps` to see your running containers. The "aspnetcore_sample" container should be there.
-* Run `docker exec` aspnetcore_sample ipconfig.
+* Run `docker exec aspnetcore_sample ipconfig`.
 * Copy the container IP address and paste into your browser (for example, 172.29.245.43).
 
 > [!Note]
@@ -206,7 +208,7 @@ Ethernet adapter Ethernet:
 ```
 
 > [!Note]
-> Docker exec runs a new command in a running command. For more information, see the [docker exec reference](https://docs.docker.com/engine/reference/commandline/exec/) on command-line parameters.
+> Docker exec runs a new command in a running container. For more information, see the [docker exec reference](https://docs.docker.com/engine/reference/commandline/exec/) on command-line parameters.
 
 You can produce an application that is ready to deploy to production locally using the [dotnet publish](../tools/dotnet-publish.md) command.
 
@@ -217,13 +219,13 @@ dotnet publish -c release -o published
 > [!Note]
 > The -c release argument builds the application in release mode (the default is debug mode). For more information, see the [dotnet run reference](../tools/dotnet-run.md) on command-line parameters.
 
-You can run the application on **Windows** using the `dotnet published` command.
+You can run the application on **Windows** using the following command.
 
 ```console
 dotnet published\aspnetapp.dll
 ```
 
-You can run the application on **Linux** or **macOS** using the `dotnet published` command.
+You can run the application on **Linux** or **macOS** using the following command.
 
 ```bash
 dotnet published/aspnetapp.dll
@@ -238,13 +240,13 @@ The following Docker images are used in this sample
 
 **Next Steps**
 
-* [Working with Visual Studio Docker Tools](https://docs.microsoft.com/en-us/aspnet/core/publishing/visual-studio-tools-for-docker)
+* [Working with Visual Studio Docker Tools](https://docs.microsoft.com/aspnet/core/publishing/visual-studio-tools-for-docker)
 * [Deploying Docker Images from the Azure Container Registry to Azure Container Instances](https://blogs.msdn.microsoft.com/stevelasker/2017/07/28/deploying-docker-images-from-the-azure-container-registry-to-azure-container-instances/)
 * [Debugging with Visual Studio Code](https://code.visualstudio.com/docs/nodejs/debugging-recipes#_nodejs-typescript-docker-container) 
 * [Getting hands on with Visual Studio for Mac, containers, and serverless code in the cloud](https://blogs.msdn.microsoft.com/visualstudio/2017/08/31/hands-on-with-visual-studio-for-mac-containers-serverless-code-in-the-cloud/#comments)
 * [Getting Started with Docker and Visual Studio for Mac Lab](https://github.com/Microsoft/vs4mac-labs/tree/master/Docker/Getting-Started)
 
 > [!Note]
-> If you do not have an Azure subscription, [sign up today](https://azure.microsoft.com/en-us/free/?b=16.48) for a free 30-day account and get $200 in Azure Credits to try out any combination of Azure services.
+> If you do not have an Azure subscription, [sign up today](https://azure.microsoft.com/free/?b=16.48) for a free 30-day account and get $200 in Azure Credits to try out any combination of Azure services.
 
 

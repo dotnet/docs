@@ -18,19 +18,19 @@ ms.assetid: 03c28597-7e73-46d6-a9c3-f9cb55642739
 
 ## Docker: Packaging your apps to deploy and run anywhere
 
-[Docker](https://docs.microsoft.com/en-us/dotnet/standard/microservices-architecture/container-docker-introduction/docker-defined) is an open platform that enables developers and administrators to build [images](https://docs.docker.com/glossary/?term=image), ship, and run distributed applications in a loosely isolated environment called a [container](https://www.docker.com/what-container). This approach enables efficient application lifecycle management between development, QA, and production environments.
+[Docker](https://docs.microsoft.com/dotnet/standard/microservices-architecture/container-docker-introduction/docker-defined) is an open platform that enables developers and administrators to build [images](https://docs.docker.com/glossary/?term=image), ship, and run distributed applications in a loosely isolated environment called a [container](https://www.docker.com/what-container). This approach enables efficient application lifecycle management between development, QA, and production environments.
  
-The [Docker platform](https://docs.docker.com/engine/docker-overview/#the-docker-platform) uses the [Docker Engine](https://docs.docker.com/engine/docker-overview/#docker-engine) to quickly build and package apps as [Docker images](https://docs.docker.com/glossary/?term=image) written in the [Dockerfile](https://docs.docker.com/glossary/?term=Dockerfile) [format that then is deployed and run in a [layered container](https://docs.docker.com/engine/userguide/storagedriver/imagesandcontainers/#container-and-layers).
+The [Docker platform](https://docs.docker.com/engine/docker-overview/#the-docker-platform) uses the [Docker Engine](https://docs.docker.com/engine/docker-overview/#docker-engine) to quickly build and package apps as [Docker images](https://docs.docker.com/glossary/?term=image) created using files written in the [Dockerfile](https://docs.docker.com/glossary/?term=Dockerfile) format that then is deployed and run in a [layered container](https://docs.docker.com/engine/userguide/storagedriver/imagesandcontainers/#container-and-layers).
 
 You can either create your own [layered images](https://docs.docker.com/engine/userguide/storagedriver/imagesandcontainers/#images-and-layers) as dockerfiles or use existing ones from a [registry](https://docs.docker.com/glossary/?term=registry), like [Docker Hub](https://docs.docker.com/glossary/?term=Docker%20Hub).
 
-The [relationship between Docker containers, images, and registries](https://docs.microsoft.com/en-us/dotnet/standard/microservices-architecture/container-docker-introduction/docker-containers-images-registries) is an important concept when [architecting and building containerized applications or microservices](https://docs.microsoft.com/en-us/dotnet/standard/microservices-architecture/architect-microservice-container-applications/). This approach greatly shortens the time between development and deployment.
+The [relationship between Docker containers, images, and registries](https://docs.microsoft.com/dotnet/standard/microservices-architecture/container-docker-introduction/docker-containers-images-registries) is an important concept when [architecting and building containerized applications or microservices](https://docs.microsoft.com/dotnet/standard/microservices-architecture/architect-microservice-container-applications/). This approach greatly shortens the time between development and deployment.
 
 ### Further reading (and watching)
 
 * [Windows-based containers: Modern app development with enterprise-grade control.](https://www.youtube.com/watch?v=Ryx3o0rD5lY&feature=youtu.be)
 * [Docker overview](https://docs.docker.com/engine/docker-overview/)
-* [Dockerfile on Windows Containers](https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-docker/manage-windows-dockerfile)
+* [Dockerfile on Windows Containers](https://docs.microsoft.com/virtualization/windowscontainers/manage-docker/manage-windows-dockerfile)
 * [Best practices for writing Dockerfiles](https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/)
 * [Building Docker Images for .NET Core applications](..\building-net-docker-images.md)
 
@@ -59,7 +59,7 @@ The most obvious horizontal scenario for using Docker and .NET applications is f
 
 * **Deployment in all environments** — You can deploy an image through all of your environments. This approach reduces failures due to configuration differences, typically changing the image behavior via external configuration (for example, injected environment variables).
 
-[General guidance](https://docs.microsoft.com/en-us/dotnet/standard/microservices-architecture/net-core-net-framework-containers/general-guidance) for deciding between .NET Core and .NET Framework for Docker container development.
+[General guidance](https://docs.microsoft.com/dotnet/standard/microservices-architecture/net-core-net-framework-containers/general-guidance) for deciding between .NET Core and .NET Framework for Docker container development.
 
 ### Common Docker development scenarios
 
@@ -79,7 +79,7 @@ The samples use .NET Core 2.0. They use Docker [multi-stage build](https://githu
 
 * This .NET Core Docker sample demonstrates a best practice pattern for [building Docker images for .NET Core apps for production.](https://github.com/dotnet/dotnet-docker-samples/tree/master/dotnetapp-prod) The sample works with both Linux and Windows containers.
 
-* This [.NET Core Docker sample](https://github.com/dotnet/dotnet-docker-samples/tree/master/dotnetapp-selfcontained) demonstrates a best practice pattern for building Docker images for [self-contained .NET Core applications](https://docs.microsoft.com/en-us/dotnet/core/deploying/). Used for the smallest production container without a benefit from [sharing base images between containers](https://docs.docker.com/engine/userguide/storagedriver/imagesandcontainers/). However, lower Docker layers could be shared.
+* This [.NET Core Docker sample](https://github.com/dotnet/dotnet-docker-samples/tree/master/dotnetapp-selfcontained) demonstrates a best practice pattern for building Docker images for [self-contained .NET Core applications](https://docs.microsoft.com/dotnet/core/deploying/). Used for the smallest production container without a benefit from [sharing base images between containers](https://docs.docker.com/engine/userguide/storagedriver/imagesandcontainers/). However, lower Docker layers could be shared.
 
 #### ARM32 / Raspberry Pi
 
@@ -96,11 +96,11 @@ This repo contain samples that demonstrate various .NET Framework Docker configu
 
 **.NET Framework 4.7**
 
-[The [dotnet-framework:4.7 sample](https://github.com/Microsoft/dotnet-framework-docker-samples/tree/master/dotnetapp-4.7) demonstrates basic "hello world" usage of the [.NET Framework 4.7](https://docs.microsoft.com/en-us/dotnet/framework/whats-new/index#introducing-the-net-framework-47). It shows you how you can build and deploy the app relying on the [.NET Framework 4.7 docker image](https://github.com/Microsoft/dotnet-framework-docker/blob/master/4.7/Dockerfile).
+[The [dotnet-framework:4.7 sample](https://github.com/Microsoft/dotnet-framework-docker-samples/tree/master/dotnetapp-4.7) demonstrates basic "hello world" usage of the [.NET Framework 4.7](https://docs.microsoft.com/dotnet/framework/whats-new/index#introducing-the-net-framework-47). It shows you how you can build and deploy the app relying on the [.NET Framework 4.7 docker image](https://github.com/Microsoft/dotnet-framework-docker/blob/master/4.7/Dockerfile).
 
 **.NET Framework 4.6.2**
 
-The [dotnet-framework:4.6.2 sample](https://github.com/Microsoft/dotnet-framework-docker-samples/tree/master/dotnetapp-4.6.2) demonstrates basic "hello world" usage of the [.NET Framework 4.6.2](https://docs.microsoft.com/en-us/dotnet/framework/whats-new/index#whats-new-in-the-net-framework-462). It shows you how you can build and deploy the app relying on the [.NET Framework 4.6.2 docker image](https://github.com/Microsoft/dotnet-framework-docker/tree/master/4.6.2).
+The [dotnet-framework:4.6.2 sample](https://github.com/Microsoft/dotnet-framework-docker-samples/tree/master/dotnetapp-4.6.2) demonstrates basic "hello world" usage of the [.NET Framework 4.6.2](https://docs.microsoft.com/dotnet/framework/whats-new/index#whats-new-in-the-net-framework-462). It shows you how you can build and deploy the app relying on the [.NET Framework 4.6.2 docker image](https://github.com/Microsoft/dotnet-framework-docker/tree/master/4.6.2).
 
 **.NET Framework 3.5**
 
@@ -138,7 +138,7 @@ The [dotnet-framework:4.6.2 sample](https://github.com/Microsoft/dotnet-framewor
 
 #### Microsoft SQL Server
 
-* [Run the Microsoft SQL Server for Linux 2017 container image with Docker Quickstart](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker)
+* [Run the Microsoft SQL Server for Linux 2017 container image with Docker Quickstart](https://docs.microsoft.com/sql/linux/quickstart-install-connect-docker)
 
 * [Microsoft SQL Server for Linux images on DockerHub](https://hub.docker.com/r/microsoft/mssql-server-windows/)
 
@@ -169,14 +169,14 @@ The [dotnet-framework:4.6.2 sample](https://github.com/Microsoft/dotnet-framewor
 * [Microsoft Azure Command Line Interface (CLI) images on GitHub](https://github.com/Microsoft/OMS-docker)
 
 > [!Note]
-> If you do not have an Azure subscription, [sign up today](https://azure.microsoft.com/en-us/free/?b=16.48) for a free 30-day account and get $200 in Azure Credits to try out any combination of Azure services.
+> If you do not have an Azure subscription, [sign up today](https://azure.microsoft.com/free/?b=16.48) for a free 30-day account and get $200 in Azure Credits to try out any combination of Azure services.
 >
 
 #### Microsoft Azure Cosmos DB Emulator (Windows Containers only)
 
 * [Microsoft Azure Cosmos DB Emulator images on DockerHub](https://hub.docker.com/r/microsoft/azure-cosmosdb-emulator) 
 
-* [Use the Azure Cosmos DB Emulator for local development and testing](https://docs.microsoft.com/en-us/azure/cosmos-db/local-emulator#developing-with-the-emulator)
+* [Use the Azure Cosmos DB Emulator for local development and testing](https://docs.microsoft.com/azure/cosmos-db/local-emulator#developing-with-the-emulator)
 
 ## Exploring the rich Docker development ecosystem
 
@@ -185,10 +185,10 @@ Now that you have learned about the Docker platform and different Docker images,
 * [Using .NET and Docker together](https://blogs.msdn.microsoft.com/dotnet/2017/05/25/using-net-and-docker-together/) 
 * [Designing and Developing Multi-Container and Microservice-Based .NET Applications](../standard/microservices-architecture/multi-container-microservice-net-applications)
 * [Visual Studio Code Docker extension](https://code.visualstudio.com/docs/languages/dockerfile) 
-* [Learn how to use Azure Service Fabric](https://docs.microsoft.com/en-us/azure/service-fabric/) 
-* [Service Fabric Getting Started Sample](https://azure.microsoft.com/en-us/resources/samples/service-fabric-dotnet-getting-started/)
-* [Benefits of Windows Containers](https://docs.microsoft.com/en-us/virtualization/windowscontainers/about/index#video-overview)
-* [Working with Visual Studio Docker Tools](https://docs.microsoft.com/en-us/aspnet/core/publishing/visual-studio-tools-for-docker)
+* [Learn how to use Azure Service Fabric](https://docs.microsoft.com/azure/service-fabric/) 
+* [Service Fabric Getting Started Sample](https://azure.microsoft.com/resources/samples/service-fabric-dotnet-getting-started/)
+* [Benefits of Windows Containers](https://docs.microsoft.com/virtualization/windowscontainers/about/index#video-overview)
+* [Working with Visual Studio Docker Tools](https://docs.microsoft.com/aspnet/core/publishing/visual-studio-tools-for-docker)
 * [Deploying Docker Images from the Azure Container Registry to Azure Container Instances](https://blogs.msdn.microsoft.com/stevelasker/2017/07/28/deploying-docker-images-from-the-azure-container-registry-to-azure-container-instances/)
 * [Debugging with Visual Studio Code](https://code.visualstudio.com/docs/nodejs/debugging-recipes#_nodejs-typescript-docker-container) 
 * [Getting hands on with Visual Studio for Mac, containers, and serverless code in the cloud](https://blogs.msdn.microsoft.com/visualstudio/2017/08/31/hands-on-with-visual-studio-for-mac-containers-serverless-code-in-the-cloud/#comments)

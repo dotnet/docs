@@ -1,5 +1,6 @@
 ---
 title: "How to: Determine if a .NET Standard object is serializable"
+description: "Shows how to determine whether a .NET Standard type can be serialized at run time."
 ms.custom: ""
 ms.date: "10/20/2017"
 ms.prod: ".net"
@@ -25,7 +26,7 @@ You can determine whether an object is serializable at runtime by retrieving the
 [!code-csharp[is-a-type-serializable](~/samples/snippets/standard/serialization/is-serializable/csharp/program.cs#2)]
 [!code-vb[is-a-type-serializable](~/samples/snippets/standard/serialization/is-serializable/vb/library.vb#2)]
 
-You can then pass any object to the method to determine whether it can be serialized and deserialized on the current .NET implementation, as the following example shows.
+You can then pass any object to the method to determine whether it can be serialized and deserialized on the current .NET implementation, as the following example shows:
 
 [!code-csharp[test-is-a-type-serializable](~/samples/snippets/standard/serialization/is-serializable/csharp/program.cs#1)]
 [!code-vb[test-is-a-type-serializable](~/samples/snippets/standard/serialization/is-serializable/vb/program.vb#1)]

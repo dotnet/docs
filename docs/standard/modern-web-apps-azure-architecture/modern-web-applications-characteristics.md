@@ -1,10 +1,11 @@
 ---
-title: Characteristics of modern web applications | Microsoft Docs 
+title: Characteristics of modern web applications  
 description: Architect Modern Web Applications with ASP.NET Core and Azure | characteristics of modern web applications
-keywords: Docker, Microservices, ASP.NET, Container
 author: ardalis
 ms.author: wiwagn
 ms.date: 10/06/2017
+ms.prod: .net-core
+ms.technology: dotnet-docker
 ---
 # Characteristics of Modern Web Applications
 
@@ -65,11 +66,11 @@ In addition to ASP.NET Core, traditional ASP.NET 4.x continues to be a robust an
 
 > ### References – Modern Web Applications
 > - **Introduction to ASP.NET Core**  
-> <https://docs.microsoft.com/en-us/aspnet/core/>
+> <https://docs.microsoft.com/aspnet/core/>
 > - **Six Key Benefits of ASP.NET Core which make it Different and Better**  
 > <http://www.trigent.com/blog/six-key-benefits-of-asp-net-core-1-0-which-make-it-different-better/>
 > - **Testing in ASP.NET Core**  
-> <https://docs.microsoft.com/en-us/aspnet/core/testing/>
+> <https://docs.microsoft.com/aspnet/core/testing/>
 
 >[!div class="step-by-step"]
 [Previous] (index.md)

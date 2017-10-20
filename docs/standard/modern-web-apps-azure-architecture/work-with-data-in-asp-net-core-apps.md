@@ -1,10 +1,11 @@
 ---
-title: Work with data in ASP.NET Core Apps | Microsoft Docs 
+title: Work with data in ASP.NET Core Apps  
 description: Architect Modern Web Applications with ASP.NET Core and Azure | working with data in asp
-keywords: Docker, Microservices, ASP.NET, Container
 author: ardalis
 ms.author: wiwagn
 ms.date: 10/07/2017
+ms.prod: .net-core
+ms.technology: dotnet-docker
 ---
 # Working with Data in ASP.NET Core Apps
 
@@ -128,7 +129,7 @@ Another option for loading related data is to use *explicit loading*. Explicit l
 
 ### Resilient Connections
 
-External resources like SQL databases may occasionally be unavailable. In cases of temporary unavailability, applications can use retry logic to avoid raising an exception. This technique is commonly referred to as *connection resiliency*. You can implement your [own retry with exponential backoff](https://docs.microsoft.com/en-us/azure/architecture/patterns/retry) technique by attempting to rety with an exponentially increasing wait time, until a maximum retry count has been reached. This technique embraces the fact that cloud resources might intermittently be unavailable for short periods of time, resulting in failure of some requests.
+External resources like SQL databases may occasionally be unavailable. In cases of temporary unavailability, applications can use retry logic to avoid raising an exception. This technique is commonly referred to as *connection resiliency*. You can implement your [own retry with exponential backoff](https://docs.microsoft.com/azure/architecture/patterns/retry) technique by attempting to rety with an exponentially increasing wait time, until a maximum retry count has been reached. This technique embraces the fact that cloud resources might intermittently be unavailable for short periods of time, resulting in failure of some requests.
 
 For Azure SQL DB, Entity Framework Core already provides internal database connection resiliency and retry logic. But you need to enable the Entity Framework execution strategy for each DbContext connection if you want to have resilient EF Core connections.
 
@@ -170,7 +171,7 @@ The solution is to manually invoke the EF execution strategy with a delegate rep
 // Use of an EF Core resiliency strategy when using multiple DbContexts
 // within an explicit transaction
 // See:
-// https://docs.microsoft.com/en-us/ef/core/miscellaneous/connection-resiliency
+// https://docs.microsoft.com/ef/core/miscellaneous/connection-resiliency
 var strategy = _catalogContext.Database.CreateExecutionStrategy(); 
 await strategy.ExecuteAsync(async () =>
 {
@@ -193,9 +194,9 @@ The first DbContext is the \_catalogContext and the second DbContext is within t
 
 > ### References – Entity Framework Core
 > - **EF Core Docs**  
-> <https://docs.microsoft.com/en-us/ef/>
+> <https://docs.microsoft.com/ef/>
 > - **EF Core: Related Data**  
-> <https://docs.microsoft.com/en-us/ef/core/querying/related-data>
+> <https://docs.microsoft.com/ef/core/querying/related-data>
 > - **Avoid Lazy Loading Entities in ASPNET Applications**  
 > <http://ardalis.com/avoid-lazy-loading-entities-in-asp-net-applications>
 
@@ -203,7 +204,7 @@ The first DbContext is the \_catalogContext and the second DbContext is within t
 
 While EF Core is a great choice for managing persistence, and for the most part encapsulates database details from application developers, it is not the only choice. Another popular open source alternative is [Dapper](https://github.com/StackExchange/Dapper), a so-called micro-ORM. A micro-ORM is a lightweight, less full-featured tool for mapping objects to data structures. In the case of Dapper, its design goals focus on performance, rather than fully encapsulating the underlying queries it uses to retrieve and update data. Because it doesn't abstract SQL from the developer, Dapper is "closer to the metal" and lets developers write the exact queries they want to use for a given data access operation.
 
-EF Core has two significant features it provides which separate it from Dapper but also add to its performance overhead. The first is translation from LINQ expressions into SQL. These translations are cached, but even so there is overhead in performing them the first time. The second is change tracking on entities (so that efficient update statements can be generated). This behavior can be turned off for specific queries by using the AsNotTracking extension. EF Core also generates SQL queries that usually are very efficient and in any case perfectly acceptable from a performance standpoint, but if you need fine control over the precise query to be executed, you can pass in custom SQL (or execute a stored procedure) using EF Core, too. In this case, Dapper still outperforms EF Core, but only slightly. Julie Lerman presents some performance data in her May 2016 MSDN article [Dapper, Entity Framework, and Hybrid Apps](https://msdn.microsoft.com/en-us/magazine/mt703432.aspx). Additional performance benchmark data for a variety of data access methods can be found on [the Dapper site](https://github.com/StackExchange/Dapper).
+EF Core has two significant features it provides which separate it from Dapper but also add to its performance overhead. The first is translation from LINQ expressions into SQL. These translations are cached, but even so there is overhead in performing them the first time. The second is change tracking on entities (so that efficient update statements can be generated). This behavior can be turned off for specific queries by using the AsNotTracking extension. EF Core also generates SQL queries that usually are very efficient and in any case perfectly acceptable from a performance standpoint, but if you need fine control over the precise query to be executed, you can pass in custom SQL (or execute a stored procedure) using EF Core, too. In this case, Dapper still outperforms EF Core, but only slightly. Julie Lerman presents some performance data in her May 2016 MSDN article [Dapper, Entity Framework, and Hybrid Apps](https://msdn.microsoft.com/magazine/mt703432.aspx). Additional performance benchmark data for a variety of data access methods can be found on [the Dapper site](https://github.com/StackExchange/Dapper).
 
 To see how the syntax for Dapper varies from EF Core, consider these two versions of the same method for retrieving a list of items:
 
@@ -277,7 +278,7 @@ The DocumentDB query language is a simple yet powerful interface for querying JS
 **References – DocumentDB**
 
 -   DocumentDB Introduction\
-    <https://docs.microsoft.com/en-us/azure/documentdb/documentdb-introduction>
+    <https://docs.microsoft.com/azure/documentdb/documentdb-introduction>
 
 ## Other Persistence Options
 
@@ -294,7 +295,7 @@ In addition to relational and NoSQL storage options, ASP.NET Core applications c
 **References – Azure Storage**
 
 -   Azure Storage Introduction\
-    <https://docs.microsoft.com/en-us/azure/storage/storage-introduction>
+    <https://docs.microsoft.com/azure/storage/storage-introduction>
 
 ## Caching
 
@@ -333,11 +334,11 @@ public void Configure(IApplicationBuilder app)
 }
 ```
 
-The Response Caching Middleware will automatically cache responses based on a set of conditions, which you can customize. By default, only 200 (OK) responses requested via GET or HEAD methods are cached. In addition, requests must have a response with a Cache-Control: public header, and cannot include headers for Authorization or Set-Cookie. See a [complete list of the caching conditions used by the response caching middleware](https://docs.microsoft.com/en-us/aspnet/core/performance/caching/middleware#conditions-for-caching).
+The Response Caching Middleware will automatically cache responses based on a set of conditions, which you can customize. By default, only 200 (OK) responses requested via GET or HEAD methods are cached. In addition, requests must have a response with a Cache-Control: public header, and cannot include headers for Authorization or Set-Cookie. See a [complete list of the caching conditions used by the response caching middleware](https://docs.microsoft.com/aspnet/core/performance/caching/middleware#conditions-for-caching).
 
 ### Data Caching
 
-Rather than (or in addition to) caching full web responses, you can cache the results of individual data queries. For this, you can use in memory caching on the web server, or use [a distributed cache](https://docs.microsoft.com/en-us/aspnet/core/performance/caching/distributed). This section will demonstrate how to implement in memory caching.
+Rather than (or in addition to) caching full web responses, you can cache the results of individual data queries. For this, you can use in memory caching on the web server, or use [a distributed cache](https://docs.microsoft.com/aspnet/core/performance/caching/distributed). This section will demonstrate how to implement in memory caching.
 
 You add support for memory (or distributed) caching in ConfigureServices:
 

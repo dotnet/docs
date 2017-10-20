@@ -1,10 +1,11 @@
 ---
-title: Test ASP.NET Core MVC Apps | Microsoft Docs 
+title: Test ASP.NET Core MVC Apps  
 description: Architect Modern Web Applications with ASP.NET Core and Azure | Test ASP.NET Core MVC Apps
-keywords: Docker, Microservices, ASP.NET, Container
 author: ardalis
 ms.author: wiwagn
 ms.date: 10/08/2017
+ms.prod: .net-core
+ms.technology: dotnet-docker
 ---
 # Test ASP.NET Core MVC Apps
 

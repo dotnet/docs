@@ -1,10 +1,11 @@
 ---
-title: Azure hosting recommendations for ASP.NET Core web apps | Microsoft Docs 
+title: Azure hosting recommendations for ASP.NET Core web apps  
 description: Architect Modern Web Applications with ASP.NET Core and Azure | Azure hosting recommendations for ASP.NET web apps
-keywords: Docker, Microservices, ASP.NET, Container
 author: ardalis
 ms.author: wiwagn
 ms.date: 10/07/2017
+ms.prod: .net-core
+ms.technology: dotnet-docker
 ---
  
 # Azure Hosting Recommendations for ASP.NET Core Web Apps
@@ -110,16 +111,16 @@ Figure 11-2 shows an example reference architecture. This diagram describes a re
 **References – Azure Hosting Recommendations**
 
 -   Azure Solution Architectures\
-    <https://azure.microsoft.com/en-us/solutions/architecture/>
+    <https://azure.microsoft.com/solutions/architecture/>
 
 -   Azure Developer Guide\
-    <https://azure.microsoft.com/en-us/campaigns/developer-guide/>
+    <https://azure.microsoft.com/campaigns/developer-guide/>
 
 -   What is Azure App Service?\
-    <https://docs.microsoft.com/en-us/azure/app-service/app-service-value-prop-what-is>
+    <https://docs.microsoft.com/azure/app-service/app-service-value-prop-what-is>
 
 -   Azure App Service, Virtual Machines, Service Fabric and Cloud Services Comparison\
-    <https://docs.microsoft.com/en-us/azure/app-service-web/choose-web-site-cloud-service-vm>
+    <https://docs.microsoft.com/azure/app-service-web/choose-web-site-cloud-service-vm>
 
 >[!div class="step-by-step"]
 [Previous] (development-process-for-azure.md)

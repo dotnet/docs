@@ -1,10 +1,11 @@
 ---
-title: Developing ASP.NET Core MVC Apps | Microsoft Docs 
+title: Developing ASP.NET Core MVC Apps  
 description: Architect Modern Web Applications with ASP.NET Core and Azure | developing ASP.NET Core MVC Apps
-keywords: Docker, Microservices, ASP.NET, Container
 author: ardalis
 ms.author: wiwagn
 ms.date: 10/07/2017
+ms.prod: .net-core
+ms.technology: dotnet-docker
 ---
 
 # Develop ASP.NET Core MVC Apps
@@ -32,6 +33,7 @@ app.UseMvc(routes =>;
 In this example, a route named "default" has been added to the routing table. It defines a route template with placeholders for *controller*, *action*, and *id*. The controller and action placeholders have default specified ("Home" and "Index", respectively), and the id placeholder is optional (by virtue of a "?" applied to it). The convention defined here states that the first part of a request should correspond to the name of the controller, the second part to the action, and then if necessary a third part will represent an id parameter. Conventional routes are typically defined in one place for the application, such as in the Configure method in the Startup class.
 
 Attribute routes are applied to controllers and actions directly, rather than specified globally. This has the advantage of making them much more discoverable when you're looking at a particular method, but does mean that routing information is not kept in one place in the application. With attribute routes, you can easily specify multiple routes for a given action, as well as combine routes between controllers and actions. For example:
+
 ```cs
 [Route("Home")]
 public class HomeController : Controller
@@ -42,7 +44,7 @@ public class HomeController : Controller
     public IActionResult Index() {}
 ```
 
-    Routes can be specified on [HttpGet] and similar attributes, avoiding the need to add separate [Route\] attributes. Attribute routes can also use tokens to reduce the need to repeat controller or action names, as shown below:
+Routes can be specified on [HttpGet] and similar attributes, avoiding the need to add separate [Route\] attributes. Attribute routes can also use tokens to reduce the need to repeat controller or action names, as shown below:
 
 ```cs
 [Route("[controller\]")]
@@ -54,27 +56,27 @@ public class ProductsController : Controller
 }
 ```
 
-Once a given request has been matched to a route, but before the action method is called, ASP.NET Core MVC will perform [model binding](https://docs.microsoft.com/en-us/aspnet/core/mvc/models/model-binding) and [model validation](https://docs.microsoft.com/en-us/aspnet/core/mvc/models/validation) on the request. Model binding is responsible for converting incoming HTTP data into the .NET types specified as parameters of the action method to be called. For example, if the action method expects an int id parameter, model binding will attempt to provide this parameter from a value provided as part of the request. To do so, model binding looks for values in a posted form, values in the route itself, and query string values. Assuming an id value is found, it will be converted to an integer before being passed into the action method.
+Once a given request has been matched to a route, but before the action method is called, ASP.NET Core MVC will perform [model binding](https://docs.microsoft.com/aspnet/core/mvc/models/model-binding) and [model validation](https://docs.microsoft.com/aspnet/core/mvc/models/validation) on the request. Model binding is responsible for converting incoming HTTP data into the .NET types specified as parameters of the action method to be called. For example, if the action method expects an int id parameter, model binding will attempt to provide this parameter from a value provided as part of the request. To do so, model binding looks for values in a posted form, values in the route itself, and query string values. Assuming an id value is found, it will be converted to an integer before being passed into the action method.
 
 After binding the model but before calling the action method, model validation occurs. Model validation uses optional attributes on the model type, and can help ensure that the provided model object conforms to certain data requirements. Certain values may be specified as required, or limited to a certain length or numeric range, etc. If validation attributes are specified but the model does not conform to their requirements, the property ModelState.IsValid will be false, and the set of failing validation rules will be available to send to the client making the request.
 
-If you are using model validation, you should be sure to always check that the model is valid before performing any state-altering commands, to ensure your app is not corrupted by invalid data. You can use a [filter](https://docs.microsoft.com/en-us/aspnet/core/mvc/controllers/filters) to avoid the need to add code for this in every action. ASP.NET Core MVC filters offer a way of intercepting groups of requests, so that common policies and cross-cutting concerns can be applied on a targeted basis. Filters can be applied to individual actions, whole controllers, or globally for an application.
+If you are using model validation, you should be sure to always check that the model is valid before performing any state-altering commands, to ensure your app is not corrupted by invalid data. You can use a [filter](https://docs.microsoft.com/aspnet/core/mvc/controllers/filters) to avoid the need to add code for this in every action. ASP.NET Core MVC filters offer a way of intercepting groups of requests, so that common policies and cross-cutting concerns can be applied on a targeted basis. Filters can be applied to individual actions, whole controllers, or globally for an application.
 
-For web APIs, ASP.NET Core MVC supports [*content negotiation*](https://docs.microsoft.com/en-us/aspnet/core/mvc/models/formatting), allowing requests to specify how responses should be formatted. Based on headers provided in the request, actions returning data will format the response in XML, JSON, or another supported format. This feature enables the same API to be used by multiple clients with different data format requirements.
+For web APIs, ASP.NET Core MVC supports [*content negotiation*](https://docs.microsoft.com/aspnet/core/mvc/models/formatting), allowing requests to specify how responses should be formatted. Based on headers provided in the request, actions returning data will format the response in XML, JSON, or another supported format. This feature enables the same API to be used by multiple clients with different data format requirements.
 
 > ### References – Mapping Requests to Responses
 > - **Routing to Controller Actions**
-> <https://docs.microsoft.com/en-us/aspnet/core/mvc/controllers/routing>
+> <https://docs.microsoft.com/aspnet/core/mvc/controllers/routing>
 > - **Model Binding**
-> https://docs.microsoft.com/en-us/aspnet/core/mvc/models/model-binding
+> https://docs.microsoft.com/aspnet/core/mvc/models/model-binding
 > - **Model Validation**
-> <https://docs.microsoft.com/en-us/aspnet/core/mvc/models/validation>
+> <https://docs.microsoft.com/aspnet/core/mvc/models/validation>
 > - **Filters**
-> https://docs.microsoft.com/en-us/aspnet/core/mvc/controllers/filters
+> https://docs.microsoft.com/aspnet/core/mvc/controllers/filters
 
 ## Working with Dependencies
 
-ASP.NET Core has built-in support for and internally makes use of a technique known as [dependency injection](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection). Dependency injection is a technique that enabled loose coupling between different parts of an application. Looser coupling is desirable because it makes it easier to isolate parts of the application, allowing for testing or replacement. It also makes it less likely that a change in one part of the application will have an unexpected impact somewhere else in the application. Dependency injection is based on the dependency inversion principle, and is often key to achieving the open/closed principle. When evaluating how your application works with its dependencies, beware of the [static cling](http://deviq.com/static-cling/) code smell, and remember the aphorism "[new is glue](http://ardalis.com/new-is-glue)."
+ASP.NET Core has built-in support for and internally makes use of a technique known as [dependency injection](https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection). Dependency injection is a technique that enabled loose coupling between different parts of an application. Looser coupling is desirable because it makes it easier to isolate parts of the application, allowing for testing or replacement. It also makes it less likely that a change in one part of the application will have an unexpected impact somewhere else in the application. Dependency injection is based on the dependency inversion principle, and is often key to achieving the open/closed principle. When evaluating how your application works with its dependencies, beware of the [static cling](http://deviq.com/static-cling/) code smell, and remember the aphorism "[new is glue](http://ardalis.com/new-is-glue)."
 
 Static cling occurs when your classes make calls to static methods, or access static properties, which have side effects or dependencies on infrastructure. For example, if you have a method that calls a static method, which in turn writes to a database, your method is tightly coupled to the database. Anything that breaks that database call will break your method. Testing such methods is notoriously difficult, since such tests either require commercial mocking libraries to mock the static calls, or can only be tested with a test database in place. Static calls that don't have any dependence on infrastructure, especially those that are completely stateless, are fine to call and have no impact on coupling or testability (beyond coupling code to the static call itself).
 
@@ -133,7 +135,7 @@ Another approach to decoupling the application from implementation details is to
 
 ### Feature Organization
 
-By default, ASP.NET Core applications organize their folder structure to include Controllers and Views, and frequently ViewModels. Client-side code to support these server-side structures is typically stored separately in the wwwroot folder. However, large applications may encounter problems with this organization, since working on any given feature often requires jumping between these folders. This gets more and more difficult as the number of files and subfolders in each folder grows, resulting in a great deal of scrolling through Solution Explorer. One solution to this problem is to organize application code by *feature* instead of by file type. This organizational style is typically referred to as feature folders or feature slices (see also: [Vertical Slices](http://bit.ly/2abpJ7t)).
+By default, ASP.NET Core applications organize their folder structure to include Controllers and Views, and frequently ViewModels. Client-side code to support these server-side structures is typically stored separately in the wwwroot folder. However, large applications may encounter problems with this organization, since working on any given feature often requires jumping between these folders. This gets more and more difficult as the number of files and subfolders in each folder grows, resulting in a great deal of scrolling through Solution Explorer. One solution to this problem is to organize application code by *feature* instead of by file type. This organizational style is typically referred to as feature folders or feature slices (see also: [Vertical Slices](http://deviq.com/vertical-slices/)).
 
 ASP.NET Core MVC supports Areas for this purpose. Using areas, you can create separate sets of Controllers and Views folders (as well as any associated models) in each Area folder. Figure 7-1 shows an example folder structure, using Areas.
 
@@ -198,11 +200,11 @@ You then specify this convention as an option when you add support for MVC to yo
 services.AddMvc(o => o.Conventions.Add(new FeatureConvention()));
 ```
 
-ASP.NET Core MVC also uses a convention to locate views. You can override it with a custom convention so that views will be located in your feature folders (using the feature name provided by the FeatureConvention, above). You can learn more about this approach and download a working sample from the MSDN article, [Feature Slices for ASP.NET Core MVC](https://msdn.microsoft.com/en-us/magazine/mt763233.aspx).
+ASP.NET Core MVC also uses a convention to locate views. You can override it with a custom convention so that views will be located in your feature folders (using the feature name provided by the FeatureConvention, above). You can learn more about this approach and download a working sample from the MSDN article, [Feature Slices for ASP.NET Core MVC](https://msdn.microsoft.com/magazine/mt763233.aspx).
 
 ### Cross-Cutting Concerns
 
-As applications grow, it becomes increasingly important to factor out cross-cutting concerns to eliminate duplication and maintain consistency. Some examples of cross-cutting concerns in ASP.NET Core applications are authentication, model validation rules, output caching, and error handling, though there are many others. ASP.NET Core MVC [filters](https://docs.microsoft.com/en-us/aspnet/core/mvc/controllers/filters) allow you to run code before or after certain steps in the request processing pipeline. For instance, a filter can run before and after model binding, before and after an action, or before and after an action's result. You can also use an authorization filter to control access to the rest of the pipeline. Figures 7-2 shows how request execution flows through filters, if configured.
+As applications grow, it becomes increasingly important to factor out cross-cutting concerns to eliminate duplication and maintain consistency. Some examples of cross-cutting concerns in ASP.NET Core applications are authentication, model validation rules, output caching, and error handling, though there are many others. ASP.NET Core MVC [filters](https://docs.microsoft.com/aspnet/core/mvc/controllers/filters) allow you to run code before or after certain steps in the request processing pipeline. For instance, a filter can run before and after model binding, before and after an action, or before and after an action's result. You can also use an authorization filter to control access to the rest of the pipeline. Figures 7-2 shows how request execution flows through filters, if configured.
 
 ![The request is processed through Authorization Filters, Resource Filters, Model Binding, Action Filters, Action Execution and Action Result Conversion, Exception Filters, Result Filters, and Result Execution. On the way out, the request is only processed by Result Filters and Resource Filters before becoming a response sent to the client.](./media/image7-2.png)
 
@@ -271,21 +273,21 @@ public async Task&lt;IActionResult&gt; Put(int id, [FromBody]Author author)
 }
 ```
 
-You can read more about implementing filters and download a working sample from the MSDN article, [Real World ASP.NET Core MVC Filters](https://msdn.microsoft.com/en-us/magazine/mt767699.aspx).
+You can read more about implementing filters and download a working sample from the MSDN article, [Real World ASP.NET Core MVC Filters](https://msdn.microsoft.com/magazine/mt767699.aspx).
 
 > ### References – Structuring Applications
 > - **Areas**  
-> <https://docs.microsoft.com/en-us/aspnet/core/mvc/controllers/areas>
+> <https://docs.microsoft.com/aspnet/core/mvc/controllers/areas>
 > - **MSDN – Feature Slices for ASP.NET Core MVC**
->  <https://msdn.microsoft.com/en-us/magazine/mt763233.aspx>
+>  <https://msdn.microsoft.com/magazine/mt763233.aspx>
 > - **Filters**  
-> <https://docs.microsoft.com/en-us/aspnet/core/mvc/controllers/filters>
+> <https://docs.microsoft.com/aspnet/core/mvc/controllers/filters>
 > - **MSDN – Real World ASP.NET Core MVC Filters**  
-> <https://msdn.microsoft.com/en-us/magazine/mt767699.aspx>
+> <https://msdn.microsoft.com/magazine/mt767699.aspx>
 
 ## Security
 
-Securing web applications is a large topic, with many considerations. At its most basic level, security involves ensuring you know who a given request is coming from, and then ensuring that that request only has access to resources it should. Authentication is the process of comparing credentials provided with a request to those in a trusted data store, to see if the request should be treated as coming from a known entity. Authorization is the process of restricting access to certain resources based on user identity. A third security concern is protecting requests from eavesdropping by third parties, for which you should at least [ensure that SSL is used by your application](https://docs.microsoft.com/en-us/aspnet/core/security/enforcing-ssl).
+Securing web applications is a large topic, with many considerations. At its most basic level, security involves ensuring you know who a given request is coming from, and then ensuring that that request only has access to resources it should. Authentication is the process of comparing credentials provided with a request to those in a trusted data store, to see if the request should be treated as coming from a known entity. Authorization is the process of restricting access to certain resources based on user identity. A third security concern is protecting requests from eavesdropping by third parties, for which you should at least [ensure that SSL is used by your application](https://docs.microsoft.com/aspnet/core/security/enforcing-ssl).
 
 ### Authentication
 
@@ -326,7 +328,7 @@ public void Configure(IApplicationBuilder app)
 
 It's important that UseIdentity appear before UseMvc in the Configure method. When configuring Identity in ConfigureServices, you'll notice a call to AddDefaultTokenProviders. This has nothing to do with tokens that may be used to secure web communications, but instead refers to providers that create prompts that can be sent to users via SMS or email in order for them to confirm their identity.
 
-You can learn more about [configuring two-factor authentication](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/2fa) and [enabling external login providers](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/social/) from the official ASP.NET Core docs.
+You can learn more about [configuring two-factor authentication](https://docs.microsoft.com/aspnet/core/security/authentication/2fa) and [enabling external login providers](https://docs.microsoft.com/aspnet/core/security/authentication/social/) from the official ASP.NET Core docs.
 
 ### Authorization
 
@@ -381,15 +383,15 @@ Most web APIs should implement a token-based authentication system. Token authen
 
 > ### References – Security
 > - **Security Docs Overview**  
-> https://docs.microsoft.com/en-us/aspnet/core/security/
+> https://docs.microsoft.com/aspnet/core/security/
 > - **Enforcing SSL in an ASP.NET Core App**  
-> <https://docs.microsoft.com/en-us/aspnet/core/security/enforcing-ssl>
+> <https://docs.microsoft.com/aspnet/core/security/enforcing-ssl>
 > - **Introduction to Identity**  
-> <https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity>
+> <https://docs.microsoft.com/aspnet/core/security/authentication/identity>
 > - **Introduction to Authorization**  
-> <https://docs.microsoft.com/en-us/aspnet/core/security/authorization/introduction>
+> <https://docs.microsoft.com/aspnet/core/security/authorization/introduction>
 > - **Authentication and Authorization for API Apps in Azure App Service**  
-> <https://docs.microsoft.com/en-us/azure/app-service-api/app-service-api-authentication>
+> <https://docs.microsoft.com/azure/app-service-api/app-service-api-authentication>
 
 ## Client Communication
 
@@ -497,12 +499,8 @@ DDD involves investments in modeling, architecture, and communication that may n
 A hybrid approach would be to only use DDD for the transactional or more complex areas of the application, but not for simpler CRUD or read-only portions of the application. For instance, you needn't have the constraints of an Aggregate if you're querying data to display a report or to visualize data for a dashboard. It's perfectly acceptable to have a separate, simpler read model for such requirements.
 
 > ### References – Domain-Driven Design
-> - **Domain-Driven Design Fundamentals (course)**  
-> http://bit.ly/PS-DDD
-> - **Design Patterns Library (course)**  
-> <http://bit.ly/DesignPatternsLibrary>
 > - **DDD in Plain English (StackOverflow Answer)**  
-> <http://bit.ly/2pmVgK2>
+> <https://stackoverflow.com/questions/1222392/can-someone-explain-domain-driven-design-ddd-in-plain-english-please/1222488#1222488>
 
 ## Deployment
 
@@ -544,13 +542,13 @@ If you're hosting your application on Azure, you can use Microsoft Azure Applica
 
 > ### References – Deployment
 > - **Hosting and Deployment Overview**  
-> <https://docs.microsoft.com/en-us/aspnet/core/publishing/>
+> <https://docs.microsoft.com/aspnet/core/publishing/>
 > - **When to use Kestrel with a reverse proxy**  
-> <https://docs.microsoft.com/en-us/aspnet/core/fundamentals/servers/kestrel#when-to-use-kestrel-with-a-reverse-proxy>
+> <https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel#when-to-use-kestrel-with-a-reverse-proxy>
 > - **Host ASP.NET Core apps in Docker**  
-> <https://docs.microsoft.com/en-us/aspnet/core/publishing/docker>
+> <https://docs.microsoft.com/aspnet/core/publishing/docker>
 > - **Introducing Azure Application Gateway**  
-> <https://docs.microsoft.com/en-us/azure/application-gateway/application-gateway-introduction>
+> <https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction>
 
 >[!div class="step-by-step"]
 [Previous] (common-client-side-web-technologies.md)

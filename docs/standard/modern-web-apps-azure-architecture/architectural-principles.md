@@ -1,10 +1,11 @@
 ---
-title: Architectural principles | Microsoft Docs 
+title: Architectural principles  
 description: Architect Modern Web Applications with ASP.NET Core and Azure | Architectural principles
-keywords: Docker, Microservices, ASP.NET, Container
 author: ardalis
 ms.author: wiwagn
 ms.date: 10/06/2017
+ms.prod: .net-core
+ms.technology: dotnet-docker
 ---
 #Architectural Principles
 
@@ -110,10 +111,6 @@ At a minimum, individual web applications should strive to be their own bounded 
 > <http://deviq.com/persistence-ignorance/>
 > - **Bounded Context**  
 > <https://martinfowler.com/bliki/BoundedContext.html>
-> - **Domain-Driven Design Fundamentals**  
-> <http://bit.ly/PS-DDD>
-> - **SOLID Principles of Object Oriented Design**  
-> <http://bit.ly/solid-smith>
 
 > [!div class="step-by-step"]
 [Previous] (choose-between-traditional-web-and-single-page-apps.md)

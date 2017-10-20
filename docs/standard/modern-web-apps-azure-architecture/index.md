@@ -1,10 +1,11 @@
 ---
-title: Architect modern web applications with ASP.NET Core and Azure | Microsoft Docs 
+title: Architect modern web applications with ASP.NET Core and Azure  
 description: Architect Modern Web Applications with ASP.NET Core and Azure | introduction
-keywords: Docker, Microservices, ASP.NET, Container
 author: ardalis
 ms.author: wiwagn
 ms.date: 10/06/2017
+ms.prod: .net-core
+ms.technology: dotnet-docker
 ---
 # Architect Modern Web Applications with ASP.NET Core and Azure
 
@@ -62,7 +63,7 @@ Feel free to forward this guide to your team to help ensure a common understandi
 
 ## References
 - **Choosing between .NET Core and .NET Framework for server apps**  
-<https://docs.microsoft.com/en-us/dotnet/articles/standard/choosing-core-framework-server>
+<https://docs.microsoft.com/dotnet/articles/standard/choosing-core-framework-server>
 
 >[!div class="step-by-step"]
 [Next] (modern-web-applications-characteristics.md)

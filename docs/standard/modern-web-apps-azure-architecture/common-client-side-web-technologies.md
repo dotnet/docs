@@ -1,10 +1,11 @@
 ---
-title: Common client side web technologies | Microsoft Docs 
+title: Common client side web technologies  
 description: Architect Modern Web Applications with ASP.NET Core and Azure | Common client side web technologies
-keywords: Docker, Microservices, ASP.NET, Container
 author: ardalis
 ms.author: wiwagn
 ms.date: 10/07/2017
+ms.prod: .net-core
+ms.technology: dotnet-docker
 ---
 # Common Client Side Web Technologies
 
@@ -143,9 +144,9 @@ JavaScript frameworks continue to evolve with breakneck speed. Use the considera
 > - **Sass vs. LESS**  
 > <https://www.keycdn.com/blog/sass-vs-less/>
 > - **Styling ASP.NET Core Apps with LESS, Sass, and Font Awesome**  
-> <https://docs.microsoft.com/en-us/aspnet/core/client-side/less-sass-fa>
+> <https://docs.microsoft.com/aspnet/core/client-side/less-sass-fa>
 > - **Client-Side Development in ASP.NET Core**  
-> <https://docs.microsoft.com/en-us/aspnet/core/client-side/>
+> <https://docs.microsoft.com/aspnet/core/client-side/>
 > - **jQuery**  
 > <https://jquery.com/>
 > - **jQuery vs AngularJS**  

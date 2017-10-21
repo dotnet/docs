@@ -16,7 +16,7 @@ helpviewer_keywords:
   - "event handlers [Windows Forms], connecting events to"
   - "menus [Windows Forms], event-handling methods for multiple menu items"
   - "Windows Forms controls, events"
-  - "menu items [Windows Forms],multicasting event-handling methods"
+  - "menu items [Windows Forms], multicasting event-handling methods"
 ms.assetid: 5a20749a-41b5-4acc-8eb1-9e5040b0a2c4
 caps.latest.revision: 10
 author: dotnet-bot

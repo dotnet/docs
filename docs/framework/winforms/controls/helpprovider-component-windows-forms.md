@@ -11,7 +11,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "forms [Windows Forms], Help"
-  - "Help [Windows Forms],displaying on Windows Forms"
+  - "Help [Windows Forms], displaying on Windows Forms"
   - "HelpProvider component [Windows Forms]"
 ms.assetid: a09a6e0b-79d8-457f-bb36-86fad2beeada
 caps.latest.revision: 17

@@ -17,7 +17,7 @@ helpviewer_keywords:
   - "datasets [Windows Forms], user interface"
   - "Windows Forms, displaying data"
   - "data presentation"
-  - "tabular data [Windows Forms],displaying on Windows Forms"
+  - "tabular data [Windows Forms], displaying on Windows Forms"
   - "datasets [Windows Forms], displaying in DataGridView control"
   - "DataGridView control [Windows Forms]"
 ms.assetid: dbee73f2-bba6-4874-9389-cd21d44309be

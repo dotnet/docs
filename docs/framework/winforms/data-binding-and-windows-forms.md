@@ -13,7 +13,7 @@ helpviewer_keywords:
   - "master-details lists"
   - "data [Windows Forms], data binding"
   - "reports [Windows Forms], Windows Forms"
-  - "lookup tables [Windows Forms],data binding"
+  - "lookup tables [Windows Forms], data binding"
   - "data [Windows Forms], complex data binding"
   - "data binding [Windows Forms], Windows Forms"
   - "data [Windows Forms], simple data binding"

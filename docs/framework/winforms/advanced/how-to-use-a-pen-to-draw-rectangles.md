@@ -13,7 +13,7 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "rectangles [Windows Forms],drawing"
+  - "rectangles [Windows Forms], drawing"
   - "pens [Windows Forms], drawing rectangles"
 ms.assetid: 54a7fa14-3ad8-4d64-b424-2a12005b250c
 caps.latest.revision: 13

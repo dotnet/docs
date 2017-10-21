@@ -13,7 +13,7 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "Clipboard [Windows Forms],copying data to"
+  - "Clipboard [Windows Forms], copying data to"
   - "data [Windows Forms], copying to Clipboard"
 ms.assetid: 25152454-0e78-40a9-8a9e-a2a5a274e517
 caps.latest.revision: 14

@@ -13,7 +13,7 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "alpha blending [Windows Forms],compositing"
+  - "alpha blending [Windows Forms], compositing"
   - "colors [Windows Forms], blending"
   - "colors [Windows Forms], controlling transparency"
 ms.assetid: f331df2d-b395-4b0a-95be-24fec8c9bbb5

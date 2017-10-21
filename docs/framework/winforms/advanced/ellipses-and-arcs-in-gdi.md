@@ -15,10 +15,10 @@ dev_langs:
 helpviewer_keywords: 
   - "arcs"
   - "GDI+, arcs"
-  - "drawing [Windows Forms],ellipses"
+  - "drawing [Windows Forms], ellipses"
   - "GDI+, ellipses"
   - "ellipses"
-  - "drawing [Windows Forms],arcs"
+  - "drawing [Windows Forms], arcs"
 ms.assetid: 34f35133-a835-4ca4-81f6-0dfedee8b683
 caps.latest.revision: 17
 author: dotnet-bot

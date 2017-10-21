@@ -16,7 +16,7 @@ dev_langs:
 helpviewer_keywords: 
   - "DataGrid control [Windows Forms], dynamically changing at run time"
   - "DataGrid control [Windows Forms], data binding"
-  - "cells [Windows Forms],changing DataGrid cell values"
+  - "cells [Windows Forms], changing DataGrid cell values"
 ms.assetid: 0c7a6d00-30de-416e-8223-0a81ddb4c1f8
 caps.latest.revision: 16
 author: dotnet-bot

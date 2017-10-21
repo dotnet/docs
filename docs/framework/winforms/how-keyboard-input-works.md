@@ -11,7 +11,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "keyboard input [Windows Forms], about keyboard input"
-  - "keyboards [Windows Forms],keyboard input"
+  - "keyboards [Windows Forms], keyboard input"
   - "Windows Forms, keyboard input"
 ms.assetid: 9a29433c-a180-49bb-b74c-d187786584c8
 caps.latest.revision: 20

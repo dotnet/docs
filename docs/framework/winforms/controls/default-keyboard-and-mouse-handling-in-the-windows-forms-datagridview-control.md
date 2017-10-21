@@ -12,7 +12,7 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "data grids [Windows Forms], mouse handling"
   - "DataGridView control [Windows Forms], navigation keys"
-  - "keyboards [Windows Forms],default handling in DataGridView control"
+  - "keyboards [Windows Forms], default handling in DataGridView control"
   - "DataGridView control [Windows Forms], keyboard handling"
   - "mouse [Windows Forms], default handling in DataGridView control"
   - "DataGridView control [Windows Forms], mouse handling"

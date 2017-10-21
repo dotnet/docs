@@ -16,7 +16,7 @@ f1_keywords:
   - "Graphics.DrawLine"
 helpviewer_keywords: 
   - "examples [Windows Forms], drawing lines on forms"
-  - "drawing [Windows Forms],lines"
+  - "drawing [Windows Forms], lines"
   - "lines [Windows Forms], drawing"
   - "drawing lines"
 ms.assetid: 55c1dbeb-75d0-430c-9814-a24b8971ad8c

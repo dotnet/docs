@@ -11,10 +11,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "graphics [Windows Forms], flattening curves into lines"
-  - "curves [Windows Forms],flattening"
+  - "curves [Windows Forms], flattening"
   - "GraphicsPath object"
-  - "paths [Windows Forms],flattening"
-  - "drawing [Windows Forms],flattening curves"
+  - "paths [Windows Forms], flattening"
+  - "drawing [Windows Forms], flattening curves"
 ms.assetid: e654b8de-25f4-4735-9208-42e4514a589c
 caps.latest.revision: 14
 author: dotnet-bot

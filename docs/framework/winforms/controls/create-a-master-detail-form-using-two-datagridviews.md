@@ -14,7 +14,7 @@ dev_langs:
   - "vb"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], master/detail form"
-  - "parent-child tables [Windows Forms],displaying on Windows Forms"
+  - "parent-child tables [Windows Forms], displaying on Windows Forms"
   - "master-details lists [Windows Forms], creating"
 ms.assetid: 99f6e876-3f7f-4139-9063-e36587c95b02
 caps.latest.revision: 23

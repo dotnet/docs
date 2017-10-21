@@ -13,9 +13,9 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "color tables [Windows Forms],remapping colors with"
+  - "color tables [Windows Forms], remapping colors with"
   - "custom colors [Windows Forms], creating with color remap table"
-  - "color remap tables [Windows Forms],using"
+  - "color remap tables [Windows Forms], using"
 ms.assetid: 977df1ce-8665-42d4-9fb1-ef7f0ff63419
 caps.latest.revision: 14
 author: dotnet-bot

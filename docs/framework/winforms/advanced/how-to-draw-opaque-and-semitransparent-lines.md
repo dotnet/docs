@@ -13,10 +13,10 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "drawing [Windows Forms],lines"
-  - "transparency [Windows Forms],lines"
+  - "drawing [Windows Forms], lines"
+  - "transparency [Windows Forms], lines"
   - "lines [Windows Forms], drawing alpha blended"
-  - "alpha blending [Windows Forms],drawing lines"
+  - "alpha blending [Windows Forms], drawing lines"
 ms.assetid: 8f2508af-f495-4223-b5cc-646cbbb520eb
 caps.latest.revision: 18
 author: dotnet-bot

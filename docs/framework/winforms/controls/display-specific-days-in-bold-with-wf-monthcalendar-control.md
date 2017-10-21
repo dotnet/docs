@@ -14,7 +14,7 @@ dev_langs:
   - "vb"
   - "cpp"
 helpviewer_keywords: 
-  - "calendars [Windows Forms],displaying dates in bold"
+  - "calendars [Windows Forms], displaying dates in bold"
   - "examples [Windows Forms], calendar controls"
   - "GetDayBold event"
   - "MonthCalendar control [Windows Forms], dates displayed in bold"

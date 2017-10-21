@@ -11,7 +11,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], data entry"
-  - "data entry [Windows Forms],DataGridView control"
+  - "data entry [Windows Forms], dataGridView control"
   - "data grids [Windows Forms], data entry"
 ms.assetid: 4a6d4676-d4e7-4b0e-9c22-50ce65ffe0d6
 caps.latest.revision: 11

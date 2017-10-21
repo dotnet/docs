@@ -13,7 +13,7 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "matrices [Windows Forms],using transformations"
+  - "matrices [Windows Forms], using transformations"
   - "transformations [Windows Forms], global"
   - "transformations [Windows Forms], local"
 ms.assetid: b601d66d-d572-4f11-9d2e-92f0dc8893f3

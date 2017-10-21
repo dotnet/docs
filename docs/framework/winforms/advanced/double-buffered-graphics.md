@@ -12,7 +12,7 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "double buffering"
   - "graphics [Windows Forms], double-buffered"
-  - "flicker [Windows Forms],reducing with double buffering"
+  - "flicker [Windows Forms], reducing with double buffering"
   - "examples [Windows Forms], double-buffered graphics"
 ms.assetid: 4f6fef99-0972-436e-9d73-0167e4033f71
 caps.latest.revision: 11

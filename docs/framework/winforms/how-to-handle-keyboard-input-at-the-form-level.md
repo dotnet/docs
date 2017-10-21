@@ -16,7 +16,7 @@ dev_langs:
 helpviewer_keywords: 
   - "keyboard input [Windows Forms], at form level"
   - "Windows Forms, handling keyboard input"
-  - "keyboards [Windows Forms],form-level input"
+  - "keyboards [Windows Forms], form-level input"
 ms.assetid: d7f8b390-dc91-42d2-ae0f-2ffa388127ad
 caps.latest.revision: 10
 author: dotnet-bot

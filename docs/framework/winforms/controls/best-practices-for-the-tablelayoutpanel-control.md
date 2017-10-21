@@ -13,13 +13,13 @@ helpviewer_keywords:
   - "layout [Windows Forms]"
   - "TableLayoutPanel control [Windows Forms], best practices"
   - "forms [Windows Forms], best practices"
-  - "AutoSize property [Windows Forms],TableLayoutPanel control"
+  - "AutoSize property [Windows Forms], tableLayoutPanel control"
   - "controls [Windows Forms], sizing"
   - "TableLayoutPanel control [Windows Forms], AutoSize behavior"
   - "layout [Windows Forms], AutoSize"
   - "layout [Windows Forms], best practices"
-  - "best practices [Windows Forms],TableLayoutPanel control"
-  - "sizing [Windows Forms],automatic"
+  - "best practices [Windows Forms], tableLayoutPanel control"
+  - "sizing [Windows Forms], automatic"
   - "automatic sizing"
 ms.assetid: b6706efb-d7a4-45ec-8cf4-08fa993e3afb
 caps.latest.revision: 11

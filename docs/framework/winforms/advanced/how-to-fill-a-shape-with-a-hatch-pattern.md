@@ -13,7 +13,7 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "patterns [Windows Forms],adding to shapes"
+  - "patterns [Windows Forms], adding to shapes"
   - "shapes [Windows Forms], filling with patterns"
   - "brushes [Windows Forms], using hatch brushes"
 ms.assetid: 9c8300ff-187b-404f-af1f-ebd499f5b16f

@@ -18,13 +18,13 @@ f1_keywords:
 helpviewer_keywords: 
   - "ellipses [Windows Forms], drawing"
   - "circles [Windows Forms], drawing"
-  - "drawing [Windows Forms],shapes"
+  - "drawing [Windows Forms], shapes"
   - "circular shapes"
   - "forms [Windows Forms], drawing circular shapes"
   - "circles"
   - "outlined shapes [Windows Forms], examples"
   - "outlined shapes [Windows Forms], drawing"
-  - "drawing [Windows Forms],circular shapes"
+  - "drawing [Windows Forms], circular shapes"
   - "shapes [Windows Forms], drawing"
 ms.assetid: f4f9214c-607e-407d-8cdd-6549f0278451
 caps.latest.revision: 11

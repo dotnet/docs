@@ -15,8 +15,8 @@ dev_langs:
 helpviewer_keywords: 
   - "raster images [Windows Forms]"
   - "images [Windows Forms], positioning"
-  - "drawing [Windows Forms],images"
-  - "drawing [Windows Forms],raster images"
+  - "drawing [Windows Forms], images"
+  - "drawing [Windows Forms], raster images"
   - "images [Windows Forms], cloning"
   - "images [Windows Forms], drawing"
   - "GDI+, drawing images"

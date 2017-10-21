@@ -14,10 +14,10 @@ dev_langs:
   - "vb"
   - "cpp"
 helpviewer_keywords: 
-  - "keyboards [Windows Forms],event simulation"
+  - "keyboards [Windows Forms], event simulation"
   - "user input [Windows Forms], simulating"
-  - "SendKeys [Windows Forms],using"
-  - "mouse clicks [Windows Forms],simulating"
+  - "SendKeys [Windows Forms], using"
+  - "mouse clicks [Windows Forms], simulating"
   - "mouse [Windows Forms], event simulation"
 ms.assetid: 6abcb67e-3766-4af2-9590-bf5dabd17e41
 caps.latest.revision: 14

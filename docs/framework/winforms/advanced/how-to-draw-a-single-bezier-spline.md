@@ -14,7 +14,7 @@ dev_langs:
   - "vb"
 helpviewer_keywords: 
   - "Bezier splines [Windows Forms], drawing"
-  - "drawing [Windows Forms],Bezier splines"
+  - "drawing [Windows Forms], Bezier splines"
 ms.assetid: f4f3fe30-f0a6-4743-ac91-11310cebea9f
 caps.latest.revision: 15
 author: dotnet-bot

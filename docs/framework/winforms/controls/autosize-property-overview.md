@@ -10,7 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "sizing [Windows Forms],automatic"
+  - "sizing [Windows Forms], automatic"
   - "layout [Windows Forms], AutoSize"
   - "automatic sizing"
   - "AutoSizeMode property"

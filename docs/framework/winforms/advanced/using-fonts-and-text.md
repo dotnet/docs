@@ -10,7 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "GDI [Windows Forms],drawing text [Windows Forms]"
+  - "GDI [Windows Forms], drawing text [Windows Forms]"
   - "text [Windows Forms], drawing in Windows Forms"
   - "examples [Windows Forms], fonts and text"
   - "fonts [Windows Forms], using in Windows Forms"

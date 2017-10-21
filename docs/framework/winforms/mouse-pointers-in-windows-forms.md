@@ -15,7 +15,7 @@ helpviewer_keywords:
   - "mouse cursors"
   - "mouse pointers [Windows Forms], setting"
   - "cursors [Windows Forms], setting"
-  - "mouse [Windows Forms],cursors"
+  - "mouse [Windows Forms], cursors"
 ms.assetid: c3400d85-de5b-42e8-abc3-d6088d69ee53
 caps.latest.revision: 12
 author: dotnet-bot

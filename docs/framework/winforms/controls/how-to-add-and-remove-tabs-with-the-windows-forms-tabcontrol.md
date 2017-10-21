@@ -14,10 +14,10 @@ dev_langs:
   - "vb"
   - "cpp"
 helpviewer_keywords: 
-  - "tabs [Windows Forms],removing from pages"
+  - "tabs [Windows Forms], removing from pages"
   - "TabPage control"
   - "TabControl control [Windows Forms], adding and removing tabs"
-  - "tabs [Windows Forms],adding to pages"
+  - "tabs [Windows Forms], adding to pages"
   - "tab pages"
 ms.assetid: 66d4dfca-41e8-44e3-9c80-fb7ac4cb1619
 caps.latest.revision: 16

@@ -13,7 +13,7 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "drawing [Windows Forms],lines"
+  - "drawing [Windows Forms], lines"
   - "lines [Windows Forms], texture"
   - "drawing lines [Windows Forms], texture"
 ms.assetid: dc9118cc-f3c2-42e5-8173-f46d41d18fd5

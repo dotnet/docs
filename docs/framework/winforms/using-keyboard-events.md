@@ -11,7 +11,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "KeyPress event [Windows Forms]"
-  - "keyboards [Windows Forms],keyboard events"
+  - "keyboards [Windows Forms], keyboard events"
   - "KeyUp event"
   - "KeyDown event"
   - "keyboard events"

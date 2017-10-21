@@ -13,10 +13,10 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "cells [Windows Forms],copying to Clipboard"
+  - "cells [Windows Forms], copying to Clipboard"
   - "DataGridView control [Windows Forms], copying multiple cells"
   - "data grids [Windows Forms], copying multiple cells"
-  - "Clipboard [Windows Forms],copying multiple cells"
+  - "Clipboard [Windows Forms], copying multiple cells"
 ms.assetid: fd0403b2-d0e3-4ae0-839c-0f737e1eb4a9
 caps.latest.revision: 14
 author: dotnet-bot

@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords: 
   - "path gradients [Windows Forms], creating"
   - "gradients [Windows Forms], creating path"
-  - "graphics paths [Windows Forms],creating gradient"
+  - "graphics paths [Windows Forms], creating gradient"
 ms.assetid: 1948e834-e104-481c-b71d-d8aa9e4d106e
 caps.latest.revision: 19
 author: dotnet-bot

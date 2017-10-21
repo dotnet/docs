@@ -14,7 +14,7 @@ dev_langs:
   - "vb"
 helpviewer_keywords: 
   - "fonts [Windows Forms], obtaining metrics"
-  - "font metrics [Windows Forms],obtaining"
+  - "font metrics [Windows Forms], obtaining"
 ms.assetid: ff7c0616-67f7-4fa2-84ee-b8d642f2b09b
 caps.latest.revision: 13
 author: dotnet-bot

@@ -10,8 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "Help [Windows Forms],adding to Windows applications"
-  - "Windows applications [Windows Forms],providing Help systems"
+  - "Help [Windows Forms], adding to Windows applications"
+  - "Windows applications [Windows Forms], providing Help systems"
   - "What's This? Help"
   - "Help [Windows Forms], Windows Forms"
   - "HelpProvider component [Windows Forms], providing Help in Windows applications"

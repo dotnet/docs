@@ -15,7 +15,7 @@ helpviewer_keywords:
   - "datasets [Windows Forms], binding to DataGrid control"
   - "data binding [Windows Forms], DataGrid control"
   - "columns [Windows Forms], DataGrid control"
-  - "data sources [Windows Forms],binding to DataGrid control"
+  - "data sources [Windows Forms], binding to DataGrid control"
   - "tables [Windows Forms], binding to DataGrid control"
   - "DataGrid control [Windows Forms], data binding"
   - "DataGrid control [Windows Forms], about DataGrid control"
@@ -26,7 +26,7 @@ helpviewer_keywords:
   - "data [Windows Forms], resorting"
   - "data [Windows Forms], navigating"
   - "parent table navigation in DataGrid"
-  - "child tables [Windows Forms],DataGrid control"
+  - "child tables [Windows Forms], dataGrid control"
 ms.assetid: 85604bce-bc03-49d9-9030-dda8896c44b1
 caps.latest.revision: 22
 author: dotnet-bot

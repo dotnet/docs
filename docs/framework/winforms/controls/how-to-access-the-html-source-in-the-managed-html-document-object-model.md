@@ -14,7 +14,7 @@ dev_langs:
   - "vb"
 helpviewer_keywords: 
   - "managed HTML DOM"
-  - "HTML [Windows Forms],accessing in Windows Forms"
+  - "HTML [Windows Forms], accessing in Windows Forms"
 ms.assetid: 53db79fa-8a5e-448e-88c2-f54ace3860b6
 caps.latest.revision: 10
 author: dotnet-bot

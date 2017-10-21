@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "Help [Windows Forms],Windows applications"
+  - "Help [Windows Forms], Windows applications"
   - "HTML Help [Windows Forms], Windows Forms"
-  - "Windows applications [Windows Forms],providing Help"
+  - "Windows applications [Windows Forms], providing Help"
   - "HelpProvider component [Windows Forms]"
   - "forms [Windows Forms], providing Help"
 ms.assetid: 7c4e5cec-2bd2-4f0b-8d75-c2b88929bd61

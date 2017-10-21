@@ -15,9 +15,9 @@ dev_langs:
 helpviewer_keywords: 
   - "lines"
   - "GDI+, lines"
-  - "drawing [Windows Forms],rectangles"
+  - "drawing [Windows Forms], rectangles"
   - "rectangles"
-  - "drawing [Windows Forms],lines"
+  - "drawing [Windows Forms], lines"
   - "GDI+, pens"
   - "examples [Windows Forms], drawing lines and shapes"
   - "examples [Windows Forms], pens"

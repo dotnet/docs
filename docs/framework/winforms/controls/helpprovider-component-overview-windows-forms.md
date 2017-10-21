@@ -13,8 +13,8 @@ f1_keywords:
   - "HelpProvider"
 helpviewer_keywords: 
   - "HelpProvider component [Windows Forms], about HelpProvider component"
-  - "Help [Windows Forms],adding to Windows applications"
-  - "F1 Help [Windows Forms],adding to Windows Forms"
+  - "Help [Windows Forms], adding to Windows applications"
+  - "F1 Help [Windows Forms], adding to Windows Forms"
   - "dialog boxes [Windows Forms], context-sensitive Help"
   - "Windows Forms, context-sensitive Help"
 ms.assetid: 6b10c2cc-c577-4cb5-9669-e37b33416af9

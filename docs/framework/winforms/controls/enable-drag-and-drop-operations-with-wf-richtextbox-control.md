@@ -15,7 +15,7 @@ dev_langs:
   - "cpp"
 helpviewer_keywords: 
   - "examples [Windows Forms], text boxes"
-  - "drag and drop [Windows Forms],RichTextBox control"
+  - "drag and drop [Windows Forms], richTextBox control"
   - "text boxes [Windows Forms], drag-and-drop operations"
   - "RichTextBox control [Windows Forms], drag-and-drop operations"
 ms.assetid: ca167d1c-2014-4cf0-96a0-20598470be3b

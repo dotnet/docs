@@ -14,7 +14,7 @@ dev_langs:
   - "vb"
 helpviewer_keywords: 
   - "text [Windows Forms], drawing with tab stops"
-  - "tabs [Windows Forms],drawn text"
+  - "tabs [Windows Forms], drawn text"
 ms.assetid: 64878f98-39ba-4303-b63f-0859ab682eeb
 caps.latest.revision: 13
 author: dotnet-bot

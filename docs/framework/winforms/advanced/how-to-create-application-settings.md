@@ -14,7 +14,7 @@ dev_langs:
   - "vb"
 helpviewer_keywords: 
   - "application settings [Windows Forms], Windows Forms"
-  - "application settings [Windows Forms],creating"
+  - "application settings [Windows Forms], creating"
 ms.assetid: 1e7aa347-af75-41e5-89ca-f53cab704f72
 caps.latest.revision: 13
 author: dotnet-bot

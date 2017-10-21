@@ -28,7 +28,7 @@ helpviewer_keywords:
   - "alt keys"
   - "Keys.Shift enumeration member"
   - "events [Windows Forms], keyboard"
-  - "keyboards [Windows Forms],keyboard input"
+  - "keyboards [Windows Forms], keyboard input"
   - "Keys.Alt enumeration member"
   - "modifier keys"
 ms.assetid: 1e184048-0ae3-4067-a200-d4ba31dbc2cb

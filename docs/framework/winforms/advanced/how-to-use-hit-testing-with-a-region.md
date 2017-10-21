@@ -13,8 +13,8 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "hit tests [Windows Forms],using regions"
-  - "regions [Windows Forms],hit testing"
+  - "hit tests [Windows Forms], using regions"
+  - "regions [Windows Forms], hit testing"
 ms.assetid: 3a4c07cb-a40a-4d14-ad35-008f531910a8
 caps.latest.revision: 14
 author: dotnet-bot

@@ -14,7 +14,7 @@ dev_langs:
   - "vb"
 helpviewer_keywords: 
   - "strings [Windows Forms], smoothing drawn"
-  - "antialiasing [Windows Forms],using with text"
+  - "antialiasing [Windows Forms], using with text"
   - "text [Windows Forms], smoothing"
   - "text [Windows Forms], antialiasing"
   - "strings [Windows Forms], antialiasing when drawing"

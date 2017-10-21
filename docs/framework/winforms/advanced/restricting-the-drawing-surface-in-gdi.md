@@ -14,7 +14,7 @@ dev_langs:
   - "vb"
 helpviewer_keywords: 
   - "GDI+, clipping"
-  - "clipping [Windows Forms],using GDI+"
+  - "clipping [Windows Forms], using GDI+"
   - "GDI+, restricting drawing surface"
 ms.assetid: 8b5f71d9-d2f0-4540-9c41-740f90fd4c26
 caps.latest.revision: 14

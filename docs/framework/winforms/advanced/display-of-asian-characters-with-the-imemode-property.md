@@ -10,10 +10,10 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "Asian languages [Windows Forms],displaying with ImeMode"
-  - "Chinese characters [Windows Forms],displaying with ImeMode"
+  - "Asian languages [Windows Forms], displaying with ImeMode"
+  - "Chinese characters [Windows Forms], displaying with ImeMode"
   - "IME mode"
-  - "Japanese characters [Windows Forms],displaying with ImeMode"
+  - "Japanese characters [Windows Forms], displaying with ImeMode"
   - "international applications [Windows Forms], character display"
   - "international characters"
   - "Korean characters"

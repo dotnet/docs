@@ -13,8 +13,8 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "regions [Windows Forms],clipping"
-  - "regions [Windows Forms],restricting drawing surface"
+  - "regions [Windows Forms], clipping"
+  - "regions [Windows Forms], restricting drawing surface"
 ms.assetid: 43d121b4-e14c-4901-b25c-2d6c25ba4e29
 caps.latest.revision: 14
 author: dotnet-bot

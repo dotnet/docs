@@ -13,9 +13,9 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "curves [Windows Forms],filling"
+  - "curves [Windows Forms], filling"
   - "GDI+, curves"
-  - "curves [Windows Forms],drawing"
+  - "curves [Windows Forms], drawing"
   - "curves"
 ms.assetid: 08d2cc9a-dc9d-4eed-bcbb-2c8e2ca5d3ae
 caps.latest.revision: 15

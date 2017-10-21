@@ -13,7 +13,7 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "drawing [Windows Forms],lines"
+  - "drawing [Windows Forms], lines"
   - "lines [Windows Forms], drawing"
   - "pens [Windows Forms], drawing lines"
   - "drawing lines [Windows Forms], line caps"

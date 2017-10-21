@@ -11,10 +11,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "drop-down lists [Windows Forms], Windows Forms"
-  - "list controls [Windows Forms],Windows Forms"
+  - "list controls [Windows Forms], Windows Forms"
   - "combo boxes [Windows Forms], Windows Forms controls"
   - "combo boxes"
-  - "list items [Windows Forms],Windows Forms controls that display"
+  - "list items [Windows Forms], Windows Forms controls that display"
   - "drop-down lists [Windows Forms], ComboBox control"
   - "ComboBox control [Windows Forms]"
 ms.assetid: 86a1bbc3-0469-4290-91c5-99ff61b739ff

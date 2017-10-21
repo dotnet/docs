@@ -13,11 +13,11 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "Clipboard [Windows Forms],copying data to"
-  - "MDI [Windows Forms],child windows"
+  - "Clipboard [Windows Forms], copying data to"
+  - "MDI [Windows Forms], child windows"
   - "child forms"
-  - "MDI [Windows Forms],activating forms"
-  - "MDI [Windows Forms],locating focus"
+  - "MDI [Windows Forms], activating forms"
+  - "MDI [Windows Forms], locating focus"
 ms.assetid: 33880ec3-0207-4c2b-a616-ff140443cc0f
 caps.latest.revision: 12
 author: dotnet-bot

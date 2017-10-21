@@ -10,8 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "drawing [Windows Forms],owner"
-  - "drawing [Windows Forms],custom"
+  - "drawing [Windows Forms], owner"
+  - "drawing [Windows Forms], custom"
   - "controls [Windows Forms], changing appearance"
   - "custom drawing"
   - "owner drawing"

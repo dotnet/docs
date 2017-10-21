@@ -14,7 +14,7 @@ helpviewer_keywords:
   - "data grids [Windows Forms], best practices"
   - "DataGridView control [Windows Forms], shared rows"
   - "DataGridView control [Windows Forms], best practices"
-  - "best practices [Windows Forms],DataGridView control"
+  - "best practices [Windows Forms], dataGridView control"
   - "DataGridView control [Windows Forms], scaling"
 ms.assetid: 8321a8a6-6340-4fd1-b475-fa090b905aaf
 caps.latest.revision: 31

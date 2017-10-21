@@ -14,7 +14,7 @@ dev_langs:
   - "vb"
 helpviewer_keywords: 
   - "printing [Windows Forms], using print preview"
-  - "printing [Windows Forms],with print preview"
+  - "printing [Windows Forms], with print preview"
   - "print preview"
 ms.assetid: 4a16f7e2-ae10-4485-b0ae-3d558334d0fe
 caps.latest.revision: 10

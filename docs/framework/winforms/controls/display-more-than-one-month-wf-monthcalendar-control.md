@@ -14,9 +14,9 @@ dev_langs:
   - "vb"
   - "cpp"
 helpviewer_keywords: 
-  - "calendars [Windows Forms],formatting display"
+  - "calendars [Windows Forms], formatting display"
   - "examples [Windows Forms], calendar controls"
-  - "calendars [Windows Forms],multiple months"
+  - "calendars [Windows Forms], multiple months"
   - "MonthCalendar control [Windows Forms], formatting display"
 ms.assetid: d197caa2-38a5-4cb4-acc3-562130c2ace3
 caps.latest.revision: 12

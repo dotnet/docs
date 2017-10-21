@@ -15,9 +15,9 @@ dev_langs:
 helpviewer_keywords: 
   - "bitblt"
   - "graphics [Windows Forms], copying"
-  - "flicker [Windows Forms],reducing in Windows Forms"
+  - "flicker [Windows Forms], reducing in Windows Forms"
   - "graphics [Windows Forms], reducing flicker"
-  - "pixels [Windows Forms],copying"
+  - "pixels [Windows Forms], copying"
   - "flicker"
   - "bit-block transfer"
 ms.assetid: 33b76910-13a3-4521-be98-5c097341ae3b

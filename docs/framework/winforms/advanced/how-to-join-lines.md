@@ -16,7 +16,7 @@ helpviewer_keywords:
   - "miter line join style"
   - "bevel line join style"
   - "line join"
-  - "drawing [Windows Forms],joining lines"
+  - "drawing [Windows Forms], joining lines"
   - "GraphicsPath object"
   - "round line join style"
   - "lines [Windows Forms], joining"

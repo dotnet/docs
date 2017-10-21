@@ -14,7 +14,7 @@ dev_langs:
   - "vb"
 helpviewer_keywords: 
   - "pasting Clipboard data"
-  - "Clipboard [Windows Forms],retrieving data"
+  - "Clipboard [Windows Forms], retrieving data"
 ms.assetid: 99612537-2c8a-449f-aab5-2b3b28d656e7
 caps.latest.revision: 12
 author: dotnet-bot

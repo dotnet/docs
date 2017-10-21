@@ -10,7 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "code access security [Windows Forms],Windows Forms"
+  - "code access security [Windows Forms], Windows Forms"
   - "permissions [Windows Forms], Windows Forms"
   - "Windows Forms, security"
   - "security [Windows Forms], about security"

@@ -14,7 +14,7 @@ dev_langs:
   - "vb"
   - "cpp"
 helpviewer_keywords: 
-  - "MDI [Windows Forms],creating forms"
+  - "MDI [Windows Forms], creating forms"
   - "child forms"
 ms.assetid: 164b69bb-2eca-4339-ada3-0679eb2c6dda
 caps.latest.revision: 21

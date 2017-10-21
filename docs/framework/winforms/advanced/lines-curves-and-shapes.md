@@ -14,7 +14,7 @@ helpviewer_keywords:
   - "splines [Windows Forms], drawing"
   - "shapes. drawing"
   - "lines [Windows Forms], drawing"
-  - "curves [Windows Forms],drawing"
+  - "curves [Windows Forms], drawing"
 ms.assetid: ace6e8d4-4e94-486b-9681-758a6667dc7f
 caps.latest.revision: 15
 author: dotnet-bot

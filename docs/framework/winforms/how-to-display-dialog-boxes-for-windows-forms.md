@@ -15,7 +15,7 @@ dev_langs:
   - "cpp"
 helpviewer_keywords: 
   - "Windows Forms, displaying"
-  - "Windows Forms dialog boxes [Windows Forms],displaying"
+  - "Windows Forms dialog boxes [Windows Forms], displaying"
   - "Windows Forms, calling one form from another"
   - "dialog boxes [Windows Forms], displaying for Windows Forms"
 ms.assetid: aaac1b38-c651-495a-8d3d-5a9bfb32fee3

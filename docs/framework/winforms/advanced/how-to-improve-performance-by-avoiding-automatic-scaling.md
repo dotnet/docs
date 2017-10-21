@@ -16,7 +16,7 @@ helpviewer_keywords:
   - "automatic scaling"
   - "images [Windows Forms], improving performance"
   - "images [Windows Forms], using without automatic scaling"
-  - "performance [Windows Forms],improving image"
+  - "performance [Windows Forms], improving image"
 ms.assetid: 5fe2c95d-8653-4d55-bf0d-e5afa28f223b
 caps.latest.revision: 14
 author: dotnet-bot

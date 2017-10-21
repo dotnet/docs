@@ -14,8 +14,8 @@ dev_langs:
   - "vb"
 helpviewer_keywords: 
   - "semi-transparent shapes [Windows Forms], drawing"
-  - "transparency [Windows Forms],semi-transparent shapes"
-  - "alpha blending [Windows Forms],brush"
+  - "transparency [Windows Forms], semi-transparent shapes"
+  - "alpha blending [Windows Forms], brush"
   - "brushes [Windows Forms], using semi-transparent"
 ms.assetid: a4f6f6b8-3bc8-440a-84af-d62ef0f8ff40
 caps.latest.revision: 16

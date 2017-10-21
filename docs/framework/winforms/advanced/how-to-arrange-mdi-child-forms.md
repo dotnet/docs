@@ -14,7 +14,7 @@ dev_langs:
   - "vb"
 helpviewer_keywords: 
   - "child forms [Windows Forms], arranging"
-  - "MDI [Windows Forms],arranging child forms"
+  - "MDI [Windows Forms], arranging child forms"
 ms.assetid: a0786378-3206-4ccc-898e-7d3b38cc5089
 caps.latest.revision: 11
 author: dotnet-bot

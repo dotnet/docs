@@ -13,9 +13,9 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "GDI [Windows Forms],drawing text [Windows Forms]"
+  - "GDI [Windows Forms], drawing text [Windows Forms]"
   - "text [Windows Forms], drawing with TextRenderer"
-  - "drawing [Windows Forms],text"
+  - "drawing [Windows Forms], text"
   - "Windows Forms, drawing text with GDI"
 ms.assetid: 2a19fe5d-2ace-451c-94db-01cb1118ef7b
 caps.latest.revision: 10

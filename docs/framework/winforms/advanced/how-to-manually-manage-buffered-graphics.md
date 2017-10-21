@@ -13,7 +13,7 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "flicker [Windows Forms],reducing by manually managing graphics"
+  - "flicker [Windows Forms], reducing by manually managing graphics"
   - "graphics [Windows Forms], managing buffered"
 ms.assetid: 4c2a90ee-bbbe-4ff6-9170-1b06c195c918
 caps.latest.revision: 8

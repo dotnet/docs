@@ -29,7 +29,7 @@ In this walkthrough, you retrieve data from a SQL Server database and display th
   
 -   [!INCLUDE[vs_dev11_long](../../../../includes/vs-dev11-long-md.md)].  
   
--   Access to a running instance of SQL Server or SQL Server Express that has the AdventureWorksLT2008 sample database attached to it. You can download the AdventureWorksLT2008 database from the [CodePlex Web site](http://go.microsoft.com/fwlink/?LinkId=159848).  
+-   Access to a running instance of SQL Server or SQL Server Express that has the AdventureWorks sample database attached to it. You can download the AdventureWorks database from the [GitHub](https://github.com/Microsoft/sql-server-samples/releases).  
   
 ### To create entity classes  
   

@@ -80,7 +80,7 @@ class Account
  [Threading](../../programming-guide/concepts/threading/index.md)   
  [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
  [Statement Keywords](../../../csharp/language-reference/keywords/statement-keywords.md)   
- @System.Threading.Monitor   
+ <xref:System.Threading.Monitor>   
  [Interlocked Operations](../../../standard/threading/interlocked-operations.md)   
  [AutoResetEvent](../../../standard/threading/autoresetevent.md)   
  [Thread Synchronization](../../programming-guide/concepts/threading/thread-synchronization.md)

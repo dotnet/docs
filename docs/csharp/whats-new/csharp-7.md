@@ -85,7 +85,7 @@ return result;
 ## Tuples
 
 > [!NOTE]
-> The new tuples features require the @System.ValueTuple types.
+> The new tuples features require the <xref:System.ValueTuple> types.
 > You must add the NuGet package [`System.ValueTuple`](https://www.nuget.org/packages/System.ValueTuple/) in order to use it
 > on platforms that do not include the types.
 >
@@ -121,7 +121,7 @@ You can create a tuple by assigning each member to a value:
 [!code-csharp[UnnamedTuple](../../../samples/snippets/csharp/new-in-7/program.cs#04_UnnamedTuple "Unnamed tuple")]
 
 That assignment creates a tuple whose members are `Item1` and `Item2`,
-which you can use in the same way as @System.Tuple
+which you can use in the same way as <xref:System.Tuple>
 You can change the syntax to create a tuple that provides semantic
 names to each of the members of the tuple:
 
@@ -498,7 +498,7 @@ and *indexers*. The following code shows examples of each:
 > to demonstrate the syntax. You should not implement a
 > finalizer in your class unless it is necessary to  release
 > unmanaged resources. You should also consider using the
-> @System.Runtime.InteropServices.SafeHandle class instead
+> <xref:System.Runtime.InteropServices.SafeHandle> class instead
 > of managing unmanaged resources directly.
 
 These new locations for expression-bodied members represent

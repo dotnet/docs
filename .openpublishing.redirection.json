@@ -962,6 +962,18 @@
             "redirect_url": "/dotnet/visual-basic/getting-started/breaking-changes-in-visual-studio"
         },
         {
+            "source_path": "docs/visual-basic/programming-guide/language-features/xml/how-to-enable-xml-intellisense.md",
+            "redirect_url": "https://msdn.microsoft.com/library/bb531402(v=vs.120).aspx"
+        },
+        {
+            "source_path": "docs/visual-basic/programming-guide/language-features/xml/xml-intellisense.md",
+            "redirect_url": "https://msdn.microsoft.com/library/bb531325(v=vs.120).aspx"
+        },
+        {
+            "source_path": "docs/visual-basic/programming-guide/language-features/xml/xml-to-schema-wizard.md",
+            "redirect_url": "https://msdn.microsoft.com/library/cc443041(v=vs.120).aspx"
+        },        
+        {
             "source_path": "docs/visual-basic/reference/vb6-support.md",
             "redirect_url": "/visualstudio/vb6/vb6-support",
             "redirect_document_id": true
@@ -1014,6 +1026,22 @@
         {
             "source_path": "docs/csharp/getting-started/getting-started-with-csharp.md",
             "redirect_url": "/dotnet/csharp/getting-started"
-        }
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/strings/how-to-convert-between-legacy-encondings-and-unicode.md",
+            "redirect_url": "https://msdn.microsoft.com/en-us/library/cc165448(v=vs.140).aspx"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/strings/how-to-convert-rtf-to-plain-text.md",
+            "redirect_url": "https://msdn.microsoft.com/en-us/library/cc488002(v=vs.140).aspx"
+        },
+        {
+            "source_path": "docs/csharp/parallel.md",
+            "redirect_url": "/dotnet/standard/parallel-programming/index.md"
+        },
+        {
+            "source_path": "docs/csharp/methods-lambda-expressions.md",
+            "redirect_url": "/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions.md"
+        }    
     ]
 }

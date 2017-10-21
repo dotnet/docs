@@ -34,7 +34,7 @@ Dynamic objects expose members such as properties and methods at run time, inste
 -   Create a project that uses an `IronPython` library.  
   
 ## Prerequisites  
- You need IronPython 2.6.1 for .NET 4.0 to complete this walkthrough. You can download IronPython 2.6.1 for .NET 4.0 from [CodePlex](http://go.microsoft.com/fwlink/?LinkId=187223).  
+You need [IronPython](http://ironpython.net/) for .NET to complete this walkthrough. Go to their [Download page](http://ironpython.net/download/) to obtain the latest version.
   
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
@@ -133,7 +133,8 @@ Dynamic objects expose members such as properties and methods at run time, inste
 3.  Save the file and press CTRL+F5 to build and run the application.  
   
 ## Calling a Dynamic Language Library  
- The next project that you create in this walkthrough accesses a library that is written in the dynamic language IronPython. Before you create this project, you must have IronPython 2.6.1 for .NET 4.0 installed. You can download IronPython 2.6.1 for .NET 4.0 from [CodePlex](http://go.microsoft.com/fwlink/?LinkId=187223).  
+
+The next project that you create in this walkthrough accesses a library that is written in the dynamic language IronPython.
   
 #### To create a custom dynamic class  
   

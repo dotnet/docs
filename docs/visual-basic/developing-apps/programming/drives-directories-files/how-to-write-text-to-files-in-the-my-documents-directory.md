@@ -9,10 +9,10 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "files, writing to"
+  - "files [Visual Basic], writing to"
   - "text, writing to files"
   - "examples [Visual Basic], text files"
-  - "writing to files, in My Documents"
+  - "writing to files [Visual Basic], in My Documents"
 ms.assetid: 1c726124-781d-4976-9baa-ed46814ff3fe
 caps.latest.revision: 19
 author: dotnet-bot

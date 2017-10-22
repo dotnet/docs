@@ -10,8 +10,8 @@ ms.technology:
 ms.topic: "article"
 helpviewer_keywords: 
   - "My.Computer.Registry object, tasks"
-  - "registry, writing to"
-  - "registry, reading"
+  - "registry [Visual Basic], writing to"
+  - "registry [Visual Basic], reading"
 ms.assetid: a13da106-185b-41d7-b23c-416da65e21e4
 caps.latest.revision: 21
 author: dotnet-bot

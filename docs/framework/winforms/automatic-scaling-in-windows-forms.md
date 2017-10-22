@@ -6,7 +6,7 @@ ms.technology:
   - "dotnet-winforms"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "scalability, automatic in Windows Forms"
+  - "scalability [Windows Forms], automatic in Windows Forms"
   - "Windows Forms, automatic scaling"
 ms.assetid: 68fad25b-afbc-44bd-8e1b-966fc43507a4
 caps.latest.revision: 9

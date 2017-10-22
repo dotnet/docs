@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Forms, validating user input"
-  - "validation, Windows Forms user input"
-  - "user input, validating in Windows Forms"
-  - "validating user input, Windows Forms"
+  - "validation [Windows Forms], Windows Forms user input"
+  - "user input [Windows Forms], validating in Windows Forms"
+  - "validating user input [Windows Forms], Windows Forms"
 ms.assetid: 4ec07681-1dee-4bf9-be5e-718f635a33a1
 caps.latest.revision: 15
 author: dotnet-bot

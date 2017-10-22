@@ -13,7 +13,7 @@ f1_keywords:
   - "ErrorProvider"
 helpviewer_keywords: 
   - "errors [Windows Forms], displaying to users"
-  - "error messages, displaying"
+  - "error messages [Windows Forms], displaying"
   - "ErrorProvider component [Windows Forms], about ErrorProvider component"
 ms.assetid: ced189f2-b5c8-46a7-a6f1-37f5af95dc99
 caps.latest.revision: 12

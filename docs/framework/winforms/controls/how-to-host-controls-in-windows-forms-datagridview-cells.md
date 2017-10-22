@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "controls [Windows Forms], hosting in cells"
   - "DataGridView control [Windows Forms], hosting controls in cells"
-  - "cells, hosting controls"
+  - "cells [Windows Forms], hosting controls"
 ms.assetid: e79a9d4e-64ec-41f5-93ec-f5492633cbb2
 caps.latest.revision: 10
 author: dotnet-bot

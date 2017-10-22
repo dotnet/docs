@@ -12,7 +12,7 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], sizing rows and columns"
   - "columns [Windows Forms], resizing in grids"
-  - "data grids, resizing columns and rows"
+  - "data grids [Windows Forms], resizing columns and rows"
 ms.assetid: 7532764d-e5c1-4943-a08b-6377a722d3b6
 caps.latest.revision: 11
 author: dotnet-bot

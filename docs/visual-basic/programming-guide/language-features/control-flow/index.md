@@ -10,10 +10,10 @@ ms.technology:
 ms.topic: "article"
 helpviewer_keywords: 
   - "statements [Visual Basic], control flow"
-  - "control flow"
-  - "control structures"
-  - "structures, control"
-  - "conditional statements, control flow"
+  - "control flow [Visual Basic]"
+  - "control structures [Visual Basic]"
+  - "structures [Visual Basic], control"
+  - "conditional statements [Visual Basic], control flow"
 ms.assetid: 5623ef47-52b1-4202-befd-9af36422ec6f
 caps.latest.revision: 14
 author: dotnet-bot

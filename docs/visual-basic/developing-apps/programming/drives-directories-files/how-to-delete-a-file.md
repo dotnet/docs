@@ -9,9 +9,9 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "Delete method"
-  - "files, deleting"
-  - "files, manipulating"
+  - "Delete method [Visual Basic]"
+  - "files [Visual Basic], deleting"
+  - "files [Visual Basic], manipulating"
   - "File object"
 ms.assetid: 4b721769-3e45-4be7-b7fe-b08dc4141b44
 caps.latest.revision: 24

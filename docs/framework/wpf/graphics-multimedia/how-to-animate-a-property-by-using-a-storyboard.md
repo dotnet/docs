@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "animation, Storyboards"
-  - "Storyboards, animation"
+  - "animation [WPF], Storyboards"
+  - "Storyboards [WPF], animation"
 ms.assetid: f4a314e9-1da2-4367-85fc-1232487efa7a
 caps.latest.revision: 12
 author: dotnet-bot

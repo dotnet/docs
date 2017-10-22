@@ -12,10 +12,10 @@ ms.topic: "article"
 f1_keywords: 
   - "ComboBox"
 helpviewer_keywords: 
-  - "drop-down lists, Windows Forms"
+  - "drop-down lists [Windows Forms], Windows Forms"
   - "ComboBox control [Windows Forms], about ComboBox control"
-  - "drop-down lists, ComboBox control"
-  - "combo boxes, about combo boxes"
+  - "drop-down lists [Windows Forms], ComboBox control"
+  - "combo boxes [Windows Forms], about combo boxes"
 ms.assetid: a58b393f-a614-45d1-8961-857a024b5acd
 caps.latest.revision: 9
 author: dotnet-bot

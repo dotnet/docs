@@ -10,7 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "String data type, validation"
+  - "String data type [Visual Basic], validation"
 ms.assetid: 5d9a918f-6c1f-41a3-a019-b5c2b8ce0381
 caps.latest.revision: 17
 author: dotnet-bot

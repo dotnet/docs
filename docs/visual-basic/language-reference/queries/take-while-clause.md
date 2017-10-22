@@ -11,8 +11,8 @@ f1_keywords:
   - "vb.QueryTakeWhile"
 helpviewer_keywords: 
   - "queries [Visual Basic], Take While"
-  - "Take While clause"
-  - "Take While statement"
+  - "Take While clause [Visual Basic]"
+  - "Take While statement [Visual Basic]"
 ms.assetid: db8f9f2f-fc9f-4a6c-b0b8-1bf048147e11
 caps.latest.revision: 14
 author: dotnet-bot

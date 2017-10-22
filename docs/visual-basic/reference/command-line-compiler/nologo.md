@@ -9,7 +9,7 @@ ms.technology:
 ms.topic: "article"
 helpviewer_keywords: 
   - "-nologo compiler option [Visual Basic]"
-  - "banners, suppressing startup"
+  - "banners [Visual Basic], suppressing startup"
   - "nologo compiler option [Visual Basic]"
   - "/nologo compiler option [Visual Basic]"
 ms.assetid: 25ef54b6-d676-4639-a2d2-a747a158bc07

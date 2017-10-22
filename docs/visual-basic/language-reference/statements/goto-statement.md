@@ -10,14 +10,14 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.GoTo"
 helpviewer_keywords: 
-  - "GoTo statement"
-  - "control flow, branching"
-  - "unconditional branching"
-  - "branching"
-  - "branching, unconditional"
-  - "branching, conditional"
-  - "conditional statements, GoTo statement"
-  - "GoTo statement, syntax"
+  - "GoTo statement [Visual Basic]"
+  - "control flow [Visual Basic], branching"
+  - "unconditional branching [Visual Basic]"
+  - "branching [Visual Basic]"
+  - "branching [Visual Basic], unconditional"
+  - "branching [Visual Basic], conditional"
+  - "conditional statements [Visual Basic], GoTo statement"
+  - "GoTo statement [Visual Basic], syntax"
 ms.assetid: 313274c2-8ab3-4b9c-9ba3-0fd6798e4f6d
 caps.latest.revision: 19
 author: dotnet-bot

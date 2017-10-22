@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "curves, filling"
+  - "curves [Windows Forms], filling"
   - "GDI+, curves"
-  - "curves, drawing"
+  - "curves [Windows Forms], drawing"
   - "curves"
 ms.assetid: 08d2cc9a-dc9d-4eed-bcbb-2c8e2ca5d3ae
 caps.latest.revision: 15

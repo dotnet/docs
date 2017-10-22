@@ -7,8 +7,8 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "Line control, overview"
-  - "Shape control, overview"
+  - "Line control [Visual Basic], overview"
+  - "Shape control [Visual Basic], overview"
   - "lines, drawing"
   - "shapes, drawing"
 ms.assetid: 5c4e8b1a-0733-4020-af6c-f582f4026728

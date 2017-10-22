@@ -11,8 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], performance tuning"
-  - "performance, DataGridView control"
-  - "performance tuning, data grids"
+  - "performance [Windows Forms], DataGridView control"
+  - "performance tuning [Windows Forms], data grids"
 ms.assetid: 6ccbff28-a0ff-41e4-b601-61b31b61851d
 caps.latest.revision: 9
 author: dotnet-bot

@@ -11,13 +11,13 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "queries [LINQ in Visual Basic], about LINQ in Visual Basic queries"
   - "query execution [LINQ in Visual Basic]"
-  - "range variables"
+  - "range variables [Visual Basic]"
   - "LINQ [Visual Basic]"
   - "LINQ [Visual Basic], about LINQ in Visual Basic"
   - "query expressions [LINQ in Visual Basic]"
   - "LINQ"
   - "deferred execution"
-  - "iteration variables"
+  - "iteration variables [Visual Basic]"
 ms.assetid: 3047d86e-0d49-40e2-928b-dc02e46c7984
 caps.latest.revision: 28
 author: dotnet-bot

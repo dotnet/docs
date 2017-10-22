@@ -10,7 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "WPF applications, deployment"
+  - "WPF applications [WPF], deployment"
   - "deployment [WPF], applications"
 ms.assetid: 12cadca0-b32c-4064-9a56-e6a306dcc76d
 caps.latest.revision: 27

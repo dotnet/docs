@@ -11,10 +11,10 @@ f1_keywords:
   - "vb.Structure"
   - "Structure"
 helpviewer_keywords: 
-  - "user-defined types, Structure statement"
-  - "compound data types"
-  - "Structure keyword"
-  - "Structure statement"
+  - "user-defined types [Visual Basic], Structure statement"
+  - "compound data types [Visual Basic]"
+  - "Structure keyword [Visual Basic]"
+  - "Structure statement [Visual Basic]"
   - "UDT (user-defined types)"
   - "types [Visual Basic], user-defined"
 ms.assetid: 9bd1deea-2a89-4cdc-812c-6dcbb947c391

@@ -10,9 +10,9 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.QueryTake"
 helpviewer_keywords: 
-  - "Take statement"
+  - "Take statement [Visual Basic]"
   - "queries [Visual Basic], Take"
-  - "Take clause"
+  - "Take clause [Visual Basic]"
 ms.assetid: 77bf87b2-1476-4456-957f-fee922fbad8c
 caps.latest.revision: 15
 author: dotnet-bot

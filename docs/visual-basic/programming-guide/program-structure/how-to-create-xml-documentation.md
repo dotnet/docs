@@ -10,7 +10,7 @@ ms.technology:
 ms.topic: "article"
 helpviewer_keywords: 
   - "XML comments"
-  - "XML documentation, creating"
+  - "XML documentation [Visual Basic], creating"
 ms.assetid: 27b5b06c-09b9-496a-8245-f9542d846230
 caps.latest.revision: 17
 author: dotnet-bot

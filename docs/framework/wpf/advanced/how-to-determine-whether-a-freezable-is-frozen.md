@@ -9,12 +9,11 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "IsFrozen property"
-  - "Freezable objects, determining if frozen"
+  - "Freezable objects [WPF], determining if frozen"
 ms.assetid: 92e58baa-ee12-4a9e-ac3a-ca458807a8b2
 caps.latest.revision: 6
 author: dotnet-bot

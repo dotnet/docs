@@ -10,9 +10,9 @@ ms.technology:
 ms.topic: "article"
 helpviewer_keywords: 
   - "I/O [Visual Basic], writing to files"
-  - "files, writing to"
+  - "files [Visual Basic], writing to"
   - "examples [Visual Basic], writing to files"
-  - "writing to files"
+  - "writing to files [Visual Basic]"
   - "Visual Basic, writing to files"
 ms.assetid: ac6fb453-0d6c-4ce4-93b4-1bbcd06de83e
 caps.latest.revision: 13

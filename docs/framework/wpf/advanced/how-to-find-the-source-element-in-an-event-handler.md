@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "source element in event handlers"
-  - "event handlers, finding source element in"
+  - "source element in event handlers [WPF]"
+  - "event handlers [WPF], finding source element in"
 ms.assetid: 85f71c5a-b714-4c65-9711-7d905c2bbe98
 caps.latest.revision: 13
 author: dotnet-bot

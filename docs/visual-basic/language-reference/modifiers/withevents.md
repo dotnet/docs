@@ -10,7 +10,7 @@ f1_keywords:
   - "vb.WithEvents"
   - "WithEvents"
 helpviewer_keywords: 
-  - "WithEvents keyword"
+  - "WithEvents keyword [Visual Basic]"
 ms.assetid: 19d461f5-d72f-4de9-8c1d-0a6650316990
 caps.latest.revision: 17
 author: dotnet-bot

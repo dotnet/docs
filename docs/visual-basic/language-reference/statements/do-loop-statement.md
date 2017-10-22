@@ -12,19 +12,19 @@ f1_keywords:
   - "vb.Loop"
   - "vb.Until"
 helpviewer_keywords: 
-  - "conditional statements, Do…Loop"
-  - "while statement, Do...Loop"
-  - "execution, conditional"
+  - "conditional statements [Visual Basic], Do�Loop"
+  - "while statement [Visual Basic], Do...Loop"
+  - "execution [Visual Basic], conditional"
   - "Do loops"
-  - "Until keyword, Do...Loop statement"
+  - "Until keyword [Visual Basic], Do...Loop statement"
   - "Do...Loop statement"
   - "instructions, repeating"
-  - "Do statement"
-  - "Exit statement, in Do...Loop statements"
-  - "loop structures, Do…Loop statements"
-  - "do-while statements"
+  - "Do statement [Visual Basic]"
+  - "Exit statement [Visual Basic], in Do...Loop statements"
+  - "loop structures [Visual Basic], Do�Loop statements"
+  - "do-while statements [Visual Basic]"
   - "loops, exiting"
-  - "Loop keyword, Do...Loop statement"
+  - "Loop keyword [Visual Basic], Do...Loop statement"
 ms.assetid: 892f9096-b3e2-4aee-834d-83bc4e2c379d
 caps.latest.revision: 37
 author: dotnet-bot

@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "controls, authoring overview"
-  - "authoring overview for controls"
+  - "controls [WPF], authoring overview"
+  - "authoring overview for controls [WPF]"
 ms.assetid: 3d864748-cff0-4e63-9b23-d8e5a635b28f
 caps.latest.revision: 32
 author: dotnet-bot

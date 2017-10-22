@@ -10,7 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "controls, listed by category"
+  - "controls [WPF], listed by category"
 ms.assetid: f8a1f78e-d9fa-4367-9ec6-f084577e83bb
 caps.latest.revision: 18
 author: dotnet-bot

@@ -9,10 +9,10 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "file names, validating"
+  - "file names [Visual Basic], validating"
   - "strings [Visual Basic], validating"
-  - "Boolean values"
-  - "paths, validating"
+  - "Boolean values [Visual Basic]"
+  - "paths [Visual Basic], validating"
 ms.assetid: f673462d-57b7-4120-b13a-6a7592f7ab2c
 caps.latest.revision: 7
 author: dotnet-bot

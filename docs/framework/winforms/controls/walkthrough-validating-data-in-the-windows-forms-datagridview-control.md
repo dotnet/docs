@@ -9,15 +9,15 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "validating data, Windows Forms"
+  - "validating data [Windows Forms], Windows Forms"
   - "data [Windows Forms], validation"
   - "DataGridView control [Windows Forms], data validation"
-  - "data grids, validating data"
-  - "data validation, Windows Forms"
+  - "data grids [Windows Forms], validating data"
+  - "data validation [Windows Forms], Windows Forms"
   - "walkthroughs [Windows Forms], DataGridView control"
 ms.assetid: a4f1d015-2969-430c-8ea2-b612d179c290
 caps.latest.revision: 22

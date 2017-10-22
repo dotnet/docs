@@ -11,11 +11,11 @@ f1_keywords:
   - "vb.Strict"
   - "vb.OptionStrict"
 helpviewer_keywords: 
-  - "Strict keyword"
-  - "Option Strict statement"
-  - "conversions, implicit"
-  - "late binding"
-  - "implicit conversions"
+  - "Strict keyword [Visual Basic]"
+  - "Option Strict statement [Visual Basic]"
+  - "conversions [Visual Basic], implicit"
+  - "late binding [Visual Basic]"
+  - "implicit conversions [Visual Basic]"
 ms.assetid: 5883e0c1-a920-4274-8e46-b0ff047eaee5
 caps.latest.revision: 49
 author: dotnet-bot

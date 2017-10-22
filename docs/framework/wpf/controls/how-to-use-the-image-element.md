@@ -9,15 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "BitmapImage class"
-  - "classes, BitmapImage"
-  - "controls, Image"
-  - "Image control"
-  - "rendering images"
+  - "controls [WPF], Image"
+  - "Image control [WPF]"
+  - "rendering images [WPF]"
 ms.assetid: 5b92e74b-1b56-4756-ac64-d5e9e08d9854
 caps.latest.revision: 20
 author: dotnet-bot

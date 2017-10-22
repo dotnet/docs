@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "animation, objects along paths (matrix animation)"
-  - "matrix animation"
+  - "animation [WPF], objects along paths (matrix animation)"
+  - "matrix animation [WPF]"
 ms.assetid: 7000e697-1414-468c-b915-cf66062fc49e
 caps.latest.revision: 16
 author: dotnet-bot

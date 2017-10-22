@@ -13,7 +13,7 @@ helpviewer_keywords:
   - "aggregate operator [LINQ in Visual Basic]"
   - "aggregate queries"
   - "queries [LINQ in Visual Basic], sum results"
-  - "Aggregate clause"
+  - "Aggregate clause [Visual Basic]"
   - "sum operator [LINQ in Visual Basic]"
   - "queries [LINQ in Visual Basic], aggregate queries"
   - "queries [LINQ in Visual Basic], counting results"

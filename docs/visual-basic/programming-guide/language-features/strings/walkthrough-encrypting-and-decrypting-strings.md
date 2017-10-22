@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "encryption, strings"
+  - "encryption [Visual Basic], strings"
   - "strings [Visual Basic], encrypting"
-  - "decryption, strings"
+  - "decryption [Visual Basic], strings"
   - "strings [Visual Basic], decrypting"
 ms.assetid: 1f51e40a-2f88-43e2-a83e-28a0b5c0d6fd
 caps.latest.revision: 18

@@ -10,7 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "error messages, displaying"
+  - "error messages [Windows Forms], displaying"
   - "errors [Windows Forms]"
   - "ErrorProvider component [Windows Forms]"
 ms.assetid: c0f2e231-c5c9-413d-a507-75af2db499b6

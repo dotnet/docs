@@ -12,7 +12,7 @@ f1_keywords:
   - "Assembly"
 helpviewer_keywords: 
   - "Assembly modifier"
-  - "Assembly keyword"
+  - "Assembly keyword [Visual Basic]"
   - "attribute blocks, Assembly keyword"
 ms.assetid: 925e7471-3bdf-4b51-bb93-cbcfc6efc52f
 caps.latest.revision: 15

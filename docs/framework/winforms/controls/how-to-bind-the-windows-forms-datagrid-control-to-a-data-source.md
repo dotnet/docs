@@ -9,18 +9,18 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "datasets [Windows Forms], binding to DataGrid control"
-  - "data binding, DataGrid control"
+  - "data binding [Windows Forms], DataGrid control"
   - "DataGrid control [Windows Forms], data binding"
-  - "bound controls, DataGrid control"
+  - "bound controls [Windows Forms], DataGrid control"
   - "Windows Forms controls, data binding"
-  - "bound controls"
-  - "data-bound controls, DataGrid"
+  - "bound controls [Windows Forms]"
+  - "data-bound controls [Windows Forms], DataGrid"
 ms.assetid: 128cdb07-dfd3-4d60-9d6a-902847667c36
 caps.latest.revision: 17
 author: dotnet-bot

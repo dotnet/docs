@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "returning from page functions"
-  - "page functions, returning from"
-  - "functions, returning from"
+  - "returning from page functions [WPF]"
+  - "page functions [WPF], returning from"
+  - "functions [WPF], returning from"
 ms.assetid: 87804905-7e8f-417b-b0e3-5622da686396
 caps.latest.revision: 8
 author: dotnet-bot

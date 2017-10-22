@@ -10,8 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "text boxes, displaying scroll bars"
-  - "scroll bars, displaying in controls"
+  - "text boxes [Windows Forms], displaying scroll bars"
+  - "scroll bars [Windows Forms], displaying in controls"
   - "RichTextBox control [Windows Forms], displaying scroll bars"
 ms.assetid: cdeb42e1-86e8-410c-ba46-18aec264ef5f
 caps.latest.revision: 9

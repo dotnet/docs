@@ -7,9 +7,9 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "My namespace, customizing"
+  - "My namespace [Visual Basic], customizing"
   - "My namespace"
-  - "My namespace, extending"
+  - "My namespace [Visual Basic], extending"
 ms.assetid: fd89c54b-0290-4c50-95a3-ff17d4487a21
 caps.latest.revision: 10
 author: dotnet-bot

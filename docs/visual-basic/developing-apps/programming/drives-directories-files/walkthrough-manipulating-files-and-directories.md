@@ -9,17 +9,17 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "files, reading text"
-  - "reading files, text"
+  - "files [Visual Basic], reading text"
+  - "reading files [Visual Basic], text"
   - "I/O [Visual Basic], walkthroughs"
   - "text, writing to files"
   - "text, reading from files"
-  - "reading text from files, walkthroughs"
+  - "reading text from files [Visual Basic], walkthroughs"
   - "Visual Basic code, file access"
-  - "files, writing text"
+  - "files [Visual Basic], writing text"
   - "I/O [Visual Basic], writing text to files"
   - "file access, walkthroughs"
-  - "writing to files, walkthroughs"
+  - "writing to files [Visual Basic], walkthroughs"
   - "I/O [Visual Basic], reading text from files"
 ms.assetid: cae77565-9f78-4e46-8e42-eb2f9f8e1ffd
 caps.latest.revision: 49

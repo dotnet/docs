@@ -11,13 +11,13 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "pop-up Help"
-  - "Help, pop-up Help"
+  - "Help [Windows Forms], pop-up Help"
   - "Windows Forms, displaying Help"
-  - "forms, displaying Help"
-  - "modal dialog boxes, pop-up Help"
-  - "F1 Help, in dialog boxes"
+  - "forms [Windows Forms], displaying Help"
+  - "modal dialog boxes [Windows Forms], pop-up Help"
+  - "F1 Help [Windows Forms], in dialog boxes"
   - "HelpProvider component [Windows Forms]"
-  - "Help, adding to dialog boxes"
+  - "Help [Windows Forms], adding to dialog boxes"
 ms.assetid: 218aa81e-e87e-4d67-af05-11627bbdce3b
 caps.latest.revision: 16
 author: dotnet-bot

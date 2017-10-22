@@ -11,7 +11,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "imaging"
-  - "graphics, categories"
+  - "graphics [Windows Forms], categories"
   - "2-D vector graphics"
   - "vector graphics"
   - "typography"

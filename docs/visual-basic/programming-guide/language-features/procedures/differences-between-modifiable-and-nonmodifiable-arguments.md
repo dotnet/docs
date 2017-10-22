@@ -9,7 +9,7 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "procedures, arguments"
+  - "procedures [Visual Basic], arguments"
   - "procedure arguments"
   - "arguments [Visual Basic], nonmodifiable"
   - "Visual Basic code, procedures"

@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "applications, packaging fonts with"
-  - "fonts, packaging with applications"
-  - "typography, packaging fonts with applications"
-  - "packaging fonts with applications"
+  - "applications [WPF], packaging fonts with"
+  - "fonts [WPF], packaging with applications"
+  - "typography [WPF], packaging fonts with applications"
+  - "packaging fonts with applications [WPF]"
 ms.assetid: db15ee48-4d24-49f5-8b9d-a64460865286
 caps.latest.revision: 29
 author: dotnet-bot

@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "controls, RichTextBox"
+  - "controls [WPF], RichTextBox"
   - "RichTextBox control [WPF], about RichTextBox control"
 ms.assetid: c94548b2-c1e9-4b62-b10c-dd8740eb23d8
 caps.latest.revision: 11

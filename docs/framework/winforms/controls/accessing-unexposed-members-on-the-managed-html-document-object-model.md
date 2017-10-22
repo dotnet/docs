@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "unexposed members"
-  - "managed HTML DOM, accessing unexposed members"
+  - "managed HTML DOM [Windows Forms], accessing unexposed members"
 ms.assetid: 762295bd-2355-4aa7-b43c-5bff997a33e6
 caps.latest.revision: 10
 author: dotnet-bot

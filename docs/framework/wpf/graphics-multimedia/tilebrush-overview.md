@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "TileBrush"
-  - "brushes, TileBrush"
+  - "TileBrush [WPF]"
+  - "brushes [WPF], TileBrush"
 ms.assetid: aa4a7b7e-d09d-44c2-8d61-310c50e08d68
 caps.latest.revision: 16
 author: dotnet-bot

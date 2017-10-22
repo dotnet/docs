@@ -11,13 +11,13 @@ f1_keywords:
   - "vb.Class"
 helpviewer_keywords: 
   - "class modules"
-  - "Class statement"
+  - "Class statement [Visual Basic]"
   - "classes [Visual Basic], fields"
-  - "fields, of classes"
-  - "class types, class statements"
+  - "fields [Visual Basic], of classes"
+  - "class types [Visual Basic], class statements"
   - "classes [Visual Basic], creating"
   - "classes [Visual Basic], data members"
-  - "data members, of classes"
+  - "data members [Visual Basic], of classes"
 ms.assetid: f2664f38-eb5a-4d4b-a374-1d041521fb6c
 caps.latest.revision: 29
 author: dotnet-bot

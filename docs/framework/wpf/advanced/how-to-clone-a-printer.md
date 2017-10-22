@@ -9,15 +9,15 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "print queues"
-  - "cloning printers"
-  - "printers, cloning"
-  - "print queues, cloning"
-  - "cloning print queues"
+  - "print queues [WPF]"
+  - "cloning printers [WPF]"
+  - "printers [WPF], cloning"
+  - "print queues [WPF], cloning"
+  - "cloning print queues [WPF]"
 ms.assetid: dd6997c9-fe04-40f8-88a6-92e3ac0889eb
 caps.latest.revision: 8
 author: dotnet-bot

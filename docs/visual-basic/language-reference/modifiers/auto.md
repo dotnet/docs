@@ -9,10 +9,10 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.Auto"
 helpviewer_keywords: 
-  - "Auto keyword, external references"
-  - "Declare statement, marshaling strings"
-  - "Auto keyword"
-  - "Auto keyword, marshaling strings"
+  - "Auto keyword [Visual Basic], external references"
+  - "Declare statement [Visual Basic], marshaling strings"
+  - "Auto keyword [Visual Basic]"
+  - "Auto keyword [Visual Basic], marshaling strings"
 ms.assetid: bf79ba95-a62c-48a5-916f-0ac7a52c13ec
 caps.latest.revision: 19
 author: dotnet-bot

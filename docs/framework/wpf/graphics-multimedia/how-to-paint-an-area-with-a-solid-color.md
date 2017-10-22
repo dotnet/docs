@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "solid colors, painting with"
-  - "brushes, painting with solid colors"
-  - "painting, with solid colors"
+  - "solid colors [WPF], painting with"
+  - "brushes [WPF], painting with solid colors"
+  - "painting [WPF], with solid colors"
 ms.assetid: 5d27d8a7-4bd7-4063-bdf3-2c5c0f19f9d3
 caps.latest.revision: 11
 author: dotnet-bot

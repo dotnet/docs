@@ -10,7 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "hosting WPF content in Windows Forms"
+  - "hosting WPF content in Windows Forms [WPF]"
 ms.assetid: 0ac41286-4c1b-4b17-9196-d985cb844ce1
 caps.latest.revision: 34
 author: dotnet-bot

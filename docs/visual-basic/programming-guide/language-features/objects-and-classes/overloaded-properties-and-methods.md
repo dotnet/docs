@@ -12,12 +12,12 @@ helpviewer_keywords:
   - "properties [Visual Basic], overloading"
   - "methods [Visual Basic], overloading"
   - "shadowing"
-  - "names, multiple procedures with same"
-  - "procedures, mulltiples with same name"
+  - "names [Visual Basic], multiple procedures with same"
+  - "procedures [Visual Basic], mulltiples with same name"
   - "classes [Visual Basic], properties"
   - "classes [Visual Basic], methods"
   - "method overloading"
-  - "Overloads keyword, overloaded members"
+  - "Overloads keyword [Visual Basic], overloaded members"
 ms.assetid: b686fb97-e7d7-4001-afaa-6650cba08f0d
 caps.latest.revision: 12
 author: dotnet-bot

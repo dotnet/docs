@@ -10,13 +10,13 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.Exit"
 helpviewer_keywords: 
-  - "execution, ending"
-  - "files, closing"
-  - "programs, quitting"
+  - "execution [Visual Basic], ending"
+  - "files [Visual Basic], closing"
+  - "programs [Visual Basic], quitting"
   - "code, exiting"
-  - "Exit statement"
+  - "Exit statement [Visual Basic]"
   - "program termination"
-  - "execution, stopping"
+  - "execution [Visual Basic], stopping"
 ms.assetid: 760bfb32-5c3f-4bdb-a432-9a6001c92db7
 caps.latest.revision: 19
 author: dotnet-bot

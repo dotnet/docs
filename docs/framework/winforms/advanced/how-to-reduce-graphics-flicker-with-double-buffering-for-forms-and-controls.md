@@ -9,13 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "DoubleBuffered property"
-  - "flicker, reducing in Windows Forms"
-  - "graphics, reducing double-buffered flicker"
+  - "flicker [Windows Forms], reducing in Windows Forms"
+  - "graphics [Windows Forms], reducing double-buffered flicker"
 ms.assetid: 91083d3a-653f-4f15-a467-0f37b2aa39d6
 caps.latest.revision: 11
 author: dotnet-bot

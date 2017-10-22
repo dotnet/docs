@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "dependency properties, backing properties with"
-  - "properties, backing with dependency properties"
+  - "dependency properties [WPF], backing properties with"
+  - "properties [WPF], backing with dependency properties"
 ms.assetid: 855fd6d7-19ac-493c-bf5e-2f40b57cdc92
 caps.latest.revision: 19
 author: dotnet-bot

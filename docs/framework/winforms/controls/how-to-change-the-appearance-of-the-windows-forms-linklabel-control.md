@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "LinkLabel properties"
   - "LinkLabel control [Windows Forms], changing appearance of links"
-  - "links, changing appearance"
+  - "links [Windows Forms], changing appearance"
   - "examples [Windows Forms], LinkLabel control"
   - "LinkLabel control [Windows Forms], examples"
 ms.assetid: fdc5854f-5162-4457-8cbe-1042feb2d132

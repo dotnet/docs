@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "functions, getting return values of"
-  - "page functions, getting return values of"
-  - "return values of page functions"
-  - "getting, return values of page functions"
+  - "functions [WPF], getting return values of"
+  - "page functions [WPF], getting return values of"
+  - "return values of page functions [WPF]"
+  - "getting [WPF], return values of page functions"
 ms.assetid: 75470af6-256c-4c46-87e7-705080723a1c
 caps.latest.revision: 8
 author: dotnet-bot

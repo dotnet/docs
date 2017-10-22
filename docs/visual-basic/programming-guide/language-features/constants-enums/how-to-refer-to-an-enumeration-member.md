@@ -10,9 +10,9 @@ ms.technology:
 ms.topic: "article"
 helpviewer_keywords: 
   - "enumerations [Visual Basic], referring to"
-  - "values, associating constant values with names"
+  - "values [Visual Basic], associating constant values with names"
   - "enumeration members"
-  - "constants, enumerated"
+  - "constants [Visual Basic], enumerated"
 ms.assetid: bbb5c3cc-7cdb-4814-8d6a-a6d91546ed1e
 caps.latest.revision: 13
 author: dotnet-bot

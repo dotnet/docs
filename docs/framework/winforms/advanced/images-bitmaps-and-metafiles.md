@@ -10,7 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "metafiles, about metafiles"
+  - "metafiles [Windows Forms], about metafiles"
   - "bitmaps [Windows Forms], about bitmaps"
   - "images [Windows Forms], about images"
   - "Windows Forms, images"

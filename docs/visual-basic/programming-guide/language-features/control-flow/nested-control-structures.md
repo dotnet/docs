@@ -10,12 +10,12 @@ ms.technology:
 ms.topic: "article"
 helpviewer_keywords: 
   - "Visual Basic code, control flow"
-  - "control structures, nested"
-  - "conditional statements, nested"
+  - "control structures [Visual Basic], nested"
+  - "conditional statements [Visual Basic], nested"
   - "statements [Visual Basic], control flow"
-  - "control flow, nested control statements"
-  - "structures, nested control"
-  - "nested control statements"
+  - "control flow [Visual Basic], nested control statements"
+  - "structures [Visual Basic], nested control"
+  - "nested control statements [Visual Basic]"
 ms.assetid: cf60b061-65d9-44a8-81f2-b0bdccd23a05
 caps.latest.revision: 20
 author: dotnet-bot

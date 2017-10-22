@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "controls [WPF], DockPanel"
-  - "DockPanel control, StackPanel control compared to"
-  - "StackPanel control, DockPanel control compared to"
+  - "DockPanel control [WPF], StackPanel control compared to"
+  - "StackPanel control [WPF], DockPanel control compared to"
   - "controls [WPF], StackPanel"
 ms.assetid: f9239086-451f-42e6-81f7-ef89ef349742
 caps.latest.revision: 9

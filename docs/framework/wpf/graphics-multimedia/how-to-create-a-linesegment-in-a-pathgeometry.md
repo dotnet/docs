@@ -9,13 +9,11 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "PathGeometry class"
-  - "classes, PathGeometry"
-  - "line segments, creating"
+  - "line segments [WPF], creating"
   - "graphics [WPF], line segments"
 ms.assetid: 0155ed47-a20d-49a7-a306-186d8e07fbc4
 caps.latest.revision: 12

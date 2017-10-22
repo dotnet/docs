@@ -10,11 +10,11 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.*"
 helpviewer_keywords: 
-  - "arithmetic operators, multiplication"
+  - "arithmetic operators [Visual Basic], multiplication"
   - "operators [Visual Basic], multiplication"
   - "* operator [Visual Basic]"
-  - "multiplication operator, syntax"
-  - "math operators"
+  - "multiplication operator [Visual Basic], syntax"
+  - "math operators [Visual Basic]"
 ms.assetid: 2b210382-99da-4195-89ba-b1d06f5e89ad
 caps.latest.revision: 19
 author: dotnet-bot

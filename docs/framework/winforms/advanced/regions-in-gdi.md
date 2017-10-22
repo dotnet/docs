@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "GDI+, regions"
-  - "drawing, regions"
+  - "drawing [Windows Forms], regions"
   - "regions"
 ms.assetid: 52184f9b-16dd-4bbd-85be-029112644ceb
 caps.latest.revision: 15

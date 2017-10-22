@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "data grids, manipulating bands"
-  - "bands, manipulating in Windows Forms"
+  - "data grids [Windows Forms], manipulating bands"
+  - "bands [Windows Forms], manipulating in Windows Forms"
   - "DataGridView control [Windows Forms], manipulating bands"
 ms.assetid: 1ea3470e-480f-4edc-bcbd-51373eca3856
 caps.latest.revision: 9

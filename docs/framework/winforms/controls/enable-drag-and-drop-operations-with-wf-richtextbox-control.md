@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "examples [Windows Forms], text boxes"
-  - "drag and drop, RichTextBox control"
-  - "text boxes, drag-and-drop operations"
+  - "drag and drop [Windows Forms], richTextBox control"
+  - "text boxes [Windows Forms], drag-and-drop operations"
   - "RichTextBox control [Windows Forms], drag-and-drop operations"
 ms.assetid: ca167d1c-2014-4cf0-96a0-20598470be3b
 caps.latest.revision: 16

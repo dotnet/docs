@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "highlights"
-  - "documents, annotations"
-  - "sticky notes"
+  - "highlights [WPF]"
+  - "documents [WPF], annotations"
+  - "sticky notes [WPF]"
 ms.assetid: 716bf474-29bd-4c74-84a4-8e0744bdad62
 caps.latest.revision: 17
 author: dotnet-bot

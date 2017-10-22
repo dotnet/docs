@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "margins, setting in MenuStrip controls"
-  - "menus, setting margins"
+  - "margins [Windows Forms], setting in MenuStrip controls"
+  - "menus [Windows Forms], setting margins"
   - "MenuStrip control [Windows Forms], configuring check and image margins"
 ms.assetid: 45a9075d-4bea-4ce2-9b2c-7619aa39f8ce
 caps.latest.revision: 9

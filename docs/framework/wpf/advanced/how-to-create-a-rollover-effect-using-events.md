@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "colors of elements, changing"
-  - "rollover effect"
-  - "element colors, changing"
+  - "colors of elements [WPF], changing"
+  - "rollover effect [WPF]"
+  - "element colors [WPF], changing"
 ms.assetid: 3b20d028-6f1c-4b25-95d2-fa68cefbdb4c
 caps.latest.revision: 12
 author: dotnet-bot

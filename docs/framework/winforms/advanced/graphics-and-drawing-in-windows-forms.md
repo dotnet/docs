@@ -11,7 +11,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "graphics [Windows Forms]"
-  - "graphics, using in Windows Forms"
+  - "graphics [Windows Forms], using in Windows Forms"
   - "GDI+, using in managed code"
   - "drawing [Windows Forms]"
 ms.assetid: 362532c5-1a06-4257-bdc8-723461009ede

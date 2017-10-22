@@ -9,9 +9,9 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "procedures, defining"
+  - "procedures [Visual Basic], defining"
   - "Visual Basic code, procedures"
-  - "procedures, returning a value"
+  - "procedures [Visual Basic], returning a value"
 ms.assetid: 8ee19f95-a9ef-4033-963b-d224dca207c4
 caps.latest.revision: 16
 author: dotnet-bot

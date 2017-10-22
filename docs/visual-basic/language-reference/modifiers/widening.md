@@ -9,11 +9,11 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.widening"
 helpviewer_keywords: 
-  - "conversions, type"
-  - "type conversion"
-  - "conversions, data type"
-  - "Widening keyword"
-  - "data type conversion"
+  - "conversions [Visual Basic], type"
+  - "type conversion [Visual Basic]"
+  - "conversions [Visual Basic], data type"
+  - "Widening keyword [Visual Basic]"
+  - "data type conversion [Visual Basic]"
 ms.assetid: 646ae263-94d3-40a2-b0cc-64f619292f56
 caps.latest.revision: 15
 author: dotnet-bot

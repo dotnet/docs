@@ -10,7 +10,7 @@ ms.technology:
 ms.topic: "article"
 helpviewer_keywords: 
   - "folders, working with"
-  - "files, accessing"
+  - "files [Visual Basic], accessing"
 ms.assetid: 6c8ba7e8-dd37-4853-92bf-762b67c98160
 caps.latest.revision: 23
 author: dotnet-bot

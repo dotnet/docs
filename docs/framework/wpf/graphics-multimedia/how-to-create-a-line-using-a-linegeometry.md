@@ -9,13 +9,11 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "classes, LineGeometry"
   - "graphics [WPF], lines"
-  - "LineGeometry class"
 ms.assetid: 41231b22-1f74-4c26-a8e7-a55b29f8f6bd
 caps.latest.revision: 7
 author: dotnet-bot

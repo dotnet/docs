@@ -6,17 +6,17 @@ ms.prod: ".net-framework"
 ms.technology: 
   - "dotnet-wpf"
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "properties, attached"
-  - "properties, overview"
-  - "styles"
-  - "attached properties"
-  - "data binding"
-  - "dependency properties"
-  - "resources, references to"
+  - "properties [WPF], attached"
+  - "properties [WPF], overview"
+  - "styles [WPF]"
+  - "attached properties [WPF]"
+  - "data binding [WPF]"
+  - "dependency properties [WPF]"
+  - "resources [WPF], references to"
 ms.assetid: d119d00c-3afb-48d6-87a0-c4da4f83dee5
 caps.latest.revision: 30
 author: dotnet-bot

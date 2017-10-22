@@ -12,7 +12,7 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "IToolboxService interface"
   - "Toolbox [Windows Forms], populating"
-  - "custom components, adding to Toolbox"
+  - "custom components [Windows Forms], adding to Toolbox"
 ms.assetid: 2fa1e3e8-6b9f-42b2-97c0-2be57444dba4
 caps.latest.revision: 22
 author: dotnet-bot

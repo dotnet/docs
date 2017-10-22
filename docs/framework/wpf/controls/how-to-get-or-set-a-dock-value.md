@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "Dock values, setting"
-  - "Dock values, getting"
+  - "Dock values [WPF], setting"
+  - "Dock values [WPF], getting"
 ms.assetid: fcf4ab8a-c7cd-4835-8d04-de1c999ab4a8
 caps.latest.revision: 14
 author: dotnet-bot

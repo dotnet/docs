@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "Windows Forms controls, user input"
-  - "user input, Windows Forms controls"
+  - "user input [Windows Forms], Windows Forms controls"
 ms.assetid: 3de74dcf-fae3-42d0-92b5-bc04a61a6888
 caps.latest.revision: 9
 author: dotnet-bot

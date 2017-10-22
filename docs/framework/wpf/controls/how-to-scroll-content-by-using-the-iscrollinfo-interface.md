@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "ScrollViewer control, scrolling content"
-  - "scrolling content"
-  - "IScrollInfo interface"
+  - "ScrollViewer control [WPF], scrolling content"
+  - "scrolling content [WPF]"
+  - "IScrollInfo interface [WPF]"
 ms.assetid: d8700bef-a3f8-4c12-9de2-fc3b79f32cd3
 caps.latest.revision: 10
 author: dotnet-bot

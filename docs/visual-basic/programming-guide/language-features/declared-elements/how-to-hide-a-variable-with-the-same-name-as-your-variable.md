@@ -9,15 +9,15 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "qualification, of element names"
-  - "declarations, elements"
-  - "element names, qualification"
-  - "references, declared elements"
-  - "declaration statements, declared elements"
-  - "declaring elements"
-  - "referencing declared elements"
-  - "declared elements, referencing"
-  - "declared elements, about declared elements"
+  - "qualification [Visual Basic], of element names"
+  - "declarations [Visual Basic], elements"
+  - "element names [Visual Basic], qualification"
+  - "references [Visual Basic], declared elements"
+  - "declaration statements [Visual Basic], declared elements"
+  - "declaring elements [Visual Basic]"
+  - "referencing declared elements [Visual Basic]"
+  - "declared elements [Visual Basic], referencing"
+  - "declared elements [Visual Basic], about declared elements"
 ms.assetid: e39c0752-f19f-4d2e-a453-00df1b5fc7ee
 caps.latest.revision: 25
 author: dotnet-bot

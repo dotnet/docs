@@ -9,12 +9,11 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "SystemParameters class"
-  - "classes, SystemParameters"
+  - "classes [WPF], SystemParameters"
 ms.assetid: 02e7a5de-94eb-4953-b91c-52e6c872ad5b
 caps.latest.revision: 24
 author: dotnet-bot

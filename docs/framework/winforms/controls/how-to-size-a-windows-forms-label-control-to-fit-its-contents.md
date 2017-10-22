@@ -10,10 +10,10 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "captions, sizing"
+  - "captions [Windows Forms], sizing"
   - "sizing controls"
-  - "size, controls"
-  - "labels, sizing to fit contents"
+  - "size [Windows Forms], controls"
+  - "labels [Windows Forms], sizing to fit contents"
   - "Label control [Windows Forms], sizing to fit contents"
 ms.assetid: 99648964-63b2-438c-980e-d24103ad602b
 caps.latest.revision: 7

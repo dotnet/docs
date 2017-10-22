@@ -9,13 +9,13 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "access levels, properties"
-  - "procedures, defining"
+  - "access levels [Visual Basic], properties"
+  - "procedures [Visual Basic], defining"
   - "Visual Basic code, procedures"
   - "mixed access levels"
   - "Visual Basic code, properties"
   - "properties [Visual Basic], access levels"
-  - "Property statement, declaring mixed access levels"
+  - "Property statement [Visual Basic], declaring mixed access levels"
 ms.assetid: fdbb2d97-279a-4956-b26c-cbdfbc34915a
 caps.latest.revision: 16
 author: dotnet-bot

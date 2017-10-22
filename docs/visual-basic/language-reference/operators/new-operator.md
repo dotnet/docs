@@ -13,9 +13,9 @@ f1_keywords:
 helpviewer_keywords: 
   - "constraints, Visual Basic generic types"
   - "generics [Visual Basic], constraints"
-  - "constraints, New keyword"
+  - "constraints, New keyword [Visual Basic]"
   - "New constraint"
-  - "New keyword"
+  - "New keyword [Visual Basic]"
 ms.assetid: d7d566d7-fe0e-4336-91f7-641a542de4d0
 caps.latest.revision: 23
 author: dotnet-bot

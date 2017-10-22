@@ -11,7 +11,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "ControlTemplate [WPF], TabControl"
-  - "TabControl [WPF], styles and templates"
+  - "TabControl [WPF], styles and templates [WPF]"
   - "parts [WPF], TabControl"
   - "styles [WPF], TabControl"
   - "states [WPF], TabControl"

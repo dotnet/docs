@@ -12,10 +12,10 @@ f1_keywords:
   - "RegistryKey.CreateSubKey"
   - "RegistryKey.SetValue"
 helpviewer_keywords: 
-  - "registry keys, creating"
-  - "registry, adding values"
-  - "registry, adding keys"
-  - "registry keys, setting values"
+  - "registry keys [Visual Basic], creating"
+  - "registry [Visual Basic], adding values"
+  - "registry [Visual Basic], adding keys"
+  - "registry keys [Visual Basic], setting values"
   - "examples [Visual Basic], registry"
 ms.assetid: d3e40f74-c283-480c-ab18-e5e9052cd814
 caps.latest.revision: 30

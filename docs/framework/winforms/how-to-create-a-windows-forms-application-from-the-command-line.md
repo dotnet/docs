@@ -5,9 +5,9 @@ ms.prod: ".net-framework"
 ms.technology: 
   - "dotnet-winforms"
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "Windows Forms, application development from command line"
   - "Windows Forms, getting started"

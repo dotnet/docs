@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "custom controls [Windows Forms], property changes (using code)"
-  - "data binding, custom controls"
-  - "PropertyNameChanged pattern, applying"
+  - "data binding [Windows Forms], custom controls"
+  - "PropertyNameChanged pattern [Windows Forms], applying"
 ms.assetid: aa47ddf6-5223-40c4-833f-a78992194836
 caps.latest.revision: 5
 author: dotnet-bot

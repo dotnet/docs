@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Forms [WPF], interoperability with"
-  - "Windows Forms, WPF interoperation"
+  - "Windows Forms [WPF], WPF interoperation"
   - "interoperability [WPF], Windows Forms"
-  - "WindowsFormsHost element layout considerations"
+  - "WindowsFormsHost element layout considerations [WPF]"
   - "dynamic layout [WPF interoperability]"
   - "device-independent pixels"
 ms.assetid: 3c574597-bbde-440f-95cc-01371f1a5d9d

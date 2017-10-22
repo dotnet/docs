@@ -14,7 +14,7 @@ helpviewer_keywords:
   - "nullable types [Visual Basic]"
   - "? [Visual Basic]"
   - "types [Visual Basic], nullable"
-  - "nullable types"
+  - "nullable types [Visual Basic]"
   - "data types [Visual Basic], nullable"
 ms.assetid: 9ac3b602-6f96-4e6d-96f7-cd4e81c468a6
 caps.latest.revision: 23

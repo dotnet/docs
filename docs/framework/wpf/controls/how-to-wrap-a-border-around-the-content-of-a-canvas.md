@@ -10,10 +10,10 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "controls, Canvas"
-  - "controls, Border"
-  - "Canvas control, wrapping with Border"
-  - "Border control, wrapping Canvas"
+  - "controls [WPF], Canvas"
+  - "controls [WPF], Border"
+  - "Canvas control [WPF], wrapping with Border"
+  - "Border control [WPF], wrapping Canvas"
 ms.assetid: caf0404f-f4e7-484f-9928-5dae1238d8ef
 caps.latest.revision: 8
 author: dotnet-bot

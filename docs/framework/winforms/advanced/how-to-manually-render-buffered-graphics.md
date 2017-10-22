@@ -9,13 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "flicker, reducing by manually rendering graphics"
+  - "flicker [Windows Forms], reducing by manually rendering graphics"
   - "graphics [Windows Forms], rendering"
-  - "BufferedGraphics class"
 ms.assetid: 5192295e-bd8e-45f7-8bd6-5c4f6bd21e61
 caps.latest.revision: 10
 author: dotnet-bot

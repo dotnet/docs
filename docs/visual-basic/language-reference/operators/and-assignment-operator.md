@@ -11,10 +11,10 @@ f1_keywords:
   - "vb.&="
 helpviewer_keywords: 
   - "operator &="
-  - "assignment statements, compound"
+  - "assignment statements [Visual Basic], compound"
   - "statements [Visual Basic], compound assignment"
   - "&= operator [Visual Basic]"
-  - "compound assignment statements"
+  - "compound assignment statements [Visual Basic]"
 ms.assetid: 0cf262fc-1a05-419a-a503-60013f111c8a
 caps.latest.revision: 15
 author: dotnet-bot

@@ -10,7 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "container controls, Windows Forms"
+  - "container controls [Windows Forms], Windows Forms"
   - "layout [Windows Forms], resizing"
   - "layout [Windows Forms], child controls"
 ms.assetid: 5a5723ff-34e0-4b6f-a57b-be4ebe35cb34

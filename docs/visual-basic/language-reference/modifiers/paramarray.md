@@ -10,8 +10,8 @@ f1_keywords:
   - "vb.ParamArray"
   - "ParamArray"
 helpviewer_keywords: 
-  - "ParamArray keyword"
-  - "ParamArray keyword, syntax"
+  - "ParamArray keyword [Visual Basic]"
+  - "ParamArray keyword [Visual Basic], syntax"
 ms.assetid: a5f18789-92bd-488f-9c7e-cf3719963635
 caps.latest.revision: 15
 author: dotnet-bot

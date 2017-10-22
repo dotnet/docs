@@ -10,12 +10,12 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "solid colors, painting with"
-  - "painting with gradients"
-  - "gradients, painting with"
-  - "brushes, painting with solid colors"
-  - "brushes, painting with gradients"
-  - "painting with solid colors"
+  - "solid colors [WPF], painting with"
+  - "painting with gradients [WPF]"
+  - "gradients [WPF], painting with"
+  - "brushes [WPF], painting with solid colors"
+  - "brushes [WPF], painting with gradients"
+  - "painting with solid colors [WPF]"
 ms.assetid: f5b182f3-c5c7-4cbe-9f2f-65e690d08255
 caps.latest.revision: 21
 author: dotnet-bot

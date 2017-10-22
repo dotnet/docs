@@ -13,7 +13,7 @@ f1_keywords:
   - "RichTextBox"
 helpviewer_keywords: 
   - "RichTextBox control [Windows Forms], about RichTextBox control"
-  - "text boxes, about text boxes"
+  - "text boxes [Windows Forms], about text boxes"
 ms.assetid: 95081194-3dd4-4b84-9545-dd373e491eca
 caps.latest.revision: 9
 author: dotnet-bot

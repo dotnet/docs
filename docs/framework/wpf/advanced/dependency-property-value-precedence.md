@@ -10,10 +10,10 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "dependency properties, classes as owners"
-  - "dependency properties, metadata"
-  - "classes, owners of dependency properties"
-  - "metadata, dependency properties"
+  - "dependency properties [WPF], classes as owners"
+  - "dependency properties [WPF], metadata"
+  - "classes [WPF], owners of dependency properties"
+  - "metadata [WPF], dependency properties"
 ms.assetid: 1fbada8e-4867-4ed1-8d97-62c07dad7ebc
 caps.latest.revision: 27
 author: dotnet-bot

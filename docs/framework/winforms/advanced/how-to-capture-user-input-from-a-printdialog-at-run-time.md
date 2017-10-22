@@ -9,15 +9,15 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "print options, changing at run time"
+  - "print options [Windows Forms], changing at run time"
   - "printing [Windows Forms], options"
   - "print options"
-  - "run time, changing print options"
+  - "run time [Windows Forms], changing print options"
 ms.assetid: 438501d8-9a70-4fb3-aae6-e46579aba0c6
 caps.latest.revision: 19
 author: dotnet-bot

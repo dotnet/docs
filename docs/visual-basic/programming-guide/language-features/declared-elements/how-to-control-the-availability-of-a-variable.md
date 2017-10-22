@@ -10,13 +10,13 @@ ms.technology:
 ms.topic: "article"
 helpviewer_keywords: 
   - "access levels, declared elements"
-  - "Private keyword, accessing variables"
+  - "Private keyword [Visual Basic], accessing variables"
   - "access levels, variables"
-  - "Public keyword, accessing variables"
-  - "Friend keyword, accessing variables"
+  - "Public keyword [Visual Basic], accessing variables"
+  - "Friend keyword [Visual Basic], accessing variables"
   - "variables [Visual Basic], access level"
-  - "declared elements, access level"
-  - "Protected keyword, accessing variables"
+  - "declared elements [Visual Basic], access level"
+  - "Protected keyword [Visual Basic], accessing variables"
 ms.assetid: eaf4f073-7922-43ce-ae1e-90ff376ae947
 caps.latest.revision: 14
 author: dotnet-bot

@@ -13,7 +13,7 @@ f1_keywords:
   - "vb.AutoImplementedProperty"
 helpviewer_keywords: 
   - "properties [Visual Basic], auto-implemented"
-  - "properties, auto-implemented [Visual Basic]"
+  - "properties [Visual Basic], auto-implemented"
   - "auto-implemented properties [Visual Basic]"
 ms.assetid: 5c669f0b-cf95-4b4e-ae84-9cc55212ca87
 caps.latest.revision: 20

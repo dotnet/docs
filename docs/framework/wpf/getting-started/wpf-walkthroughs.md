@@ -11,7 +11,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "walkthroughs [WPF]"
-  - "WPF walkthroughs"
+  - "WPF walkthroughs [WPF]"
 ms.assetid: c29bde96-0389-4aff-a9fb-cd678f66b7f7
 caps.latest.revision: 8
 author: dotnet-bot

@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "Windows Forms controls, creating"
-  - "design-time functionality, Windows Forms"
+  - "design-time functionality [Windows Forms], Windows Forms"
   - "DocumentDesigner class [Windows Forms]"
   - "walkthroughs [Windows Forms], controls"
 ms.assetid: 6f487c59-cb38-4afa-ad2e-95edacb1d626

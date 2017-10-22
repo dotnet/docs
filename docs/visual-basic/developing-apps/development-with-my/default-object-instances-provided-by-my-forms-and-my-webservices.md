@@ -7,8 +7,8 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "My.WebServices object, developing applications"
-  - "My.Forms object, developing applications"
+  - "My.WebServices object [Visual Basic], developing applications"
+  - "My.Forms object [Visual Basic], developing applications"
   - "rapid application development (RAD), My.Forms"
   - "rapid application development (RAD), My.WebServices"
 ms.assetid: de930027-9108-4f0c-b97c-5e7db4d6ef79

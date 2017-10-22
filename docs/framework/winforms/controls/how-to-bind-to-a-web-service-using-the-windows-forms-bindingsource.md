@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "Web services, binding controls"
+  - "Web services [Windows Forms], binding controls"
   - "BindingSource component [Windows Forms], binding to a Web service"
   - "examples [Windows Forms], BindingSource component"
   - "controls [Windows Forms], binding to Web service"

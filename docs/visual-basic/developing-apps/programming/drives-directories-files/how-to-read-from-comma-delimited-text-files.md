@@ -9,10 +9,10 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "files, parsing"
-  - "text files, tasks"
-  - "reading text files, comma-delimited"
-  - "text files, reading"
+  - "files [Visual Basic], parsing"
+  - "text files [Visual Basic], tasks"
+  - "reading text files [Visual Basic], comma-delimited"
+  - "text files [Visual Basic], reading"
 ms.assetid: a8413fe4-0dba-49c8-8692-44fb67a9ec4f
 caps.latest.revision: 19
 author: dotnet-bot

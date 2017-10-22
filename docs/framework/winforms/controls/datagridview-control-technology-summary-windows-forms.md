@@ -11,7 +11,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], about DataGridView control"
-  - "data grids, about data grids"
+  - "data grids [Windows Forms], about data grids"
 ms.assetid: 094498c3-a126-4a3f-83fe-f69e96c7717b
 caps.latest.revision: 17
 author: dotnet-bot

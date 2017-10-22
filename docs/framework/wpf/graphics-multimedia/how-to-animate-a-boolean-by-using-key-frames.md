@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "Booleans, animating with key frames"
-  - "animation, Booleans with key frames"
-  - "key frames, animating Booleans with"
+  - "Booleans [WPF], animating with key frames"
+  - "animation [WPF], Booleans with key frames"
+  - "key frames [WPF], animating Booleans with"
 ms.assetid: 4b0fac96-6231-4fcf-9775-4dd673ddc785
 caps.latest.revision: 9
 author: dotnet-bot

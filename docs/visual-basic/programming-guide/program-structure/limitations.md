@@ -10,7 +10,7 @@ ms.technology:
 ms.topic: "article"
 helpviewer_keywords: 
   - "limits"
-  - "limitations, Visual Basic"
+  - "limitations [Visual Basic]"
   - "limitations"
   - "limits, Visual Basic code"
   - "Visual Basic code, limitations"

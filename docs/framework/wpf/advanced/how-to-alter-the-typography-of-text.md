@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "setting Typography attributes"
-  - "Typography attribute, setting"
+  - "setting Typography attributes [WPF]"
+  - "Typography attribute [WPF], setting"
 ms.assetid: 19a3b49b-60a2-4c11-a786-e26b4c965588
 caps.latest.revision: 3
 author: dotnet-bot

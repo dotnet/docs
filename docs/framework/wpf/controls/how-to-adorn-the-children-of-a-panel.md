@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "adorners, binding to children of Panels"
-  - "Panel control, binding adorners to children"
+  - "adorners [WPF], binding to children of Panels"
+  - "Panel control [WPF], binding adorners to children"
 ms.assetid: 4cc9b972-b472-4e5c-bdf3-3702d7fbb1f5
 caps.latest.revision: 9
 author: dotnet-bot

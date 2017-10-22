@@ -13,7 +13,7 @@ helpviewer_keywords:
   - "And (&) operator"
   - "ampersand operator (&)"
   - "& operator"
-  - "concatenation operators, syntax"
+  - "concatenation operators [Visual Basic], syntax"
   - "strings [Visual Basic], concatenating"
 ms.assetid: fefc3d00-cbf1-475c-8c5e-6fb213b3f85a
 caps.latest.revision: 12

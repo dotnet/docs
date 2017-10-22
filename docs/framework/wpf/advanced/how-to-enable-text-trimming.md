@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "text, trimming"
-  - "documents, trimmng text"
-  - "trimmng text"
+  - "text [WPF], trimming"
+  - "documents [WPF], trimmng text"
+  - "trimmng text [WPF]"
 ms.assetid: dd8c9191-d2be-45fd-9fb4-3c75b65578c5
 caps.latest.revision: 12
 author: dotnet-bot

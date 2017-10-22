@@ -12,10 +12,10 @@ f1_keywords:
   - "vb.Boolean"
 helpviewer_keywords: 
   - "Boolean data type"
-  - "Boolean values, False keyword"
+  - "Boolean values [Visual Basic], False keyword"
   - "False keyword [Visual Basic]"
   - "True keyword [Visual Basic]"
-  - "Boolean values, True keyword"
+  - "Boolean values [Visual Basic], True keyword"
 ms.assetid: 4858e630-4813-4216-a55e-f4d0feb884e4
 caps.latest.revision: 18
 author: dotnet-bot

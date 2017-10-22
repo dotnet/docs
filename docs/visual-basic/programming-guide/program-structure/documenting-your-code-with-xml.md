@@ -9,7 +9,7 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "XML, documenting code"
+  - "XML [Visual Basic], documenting code"
   - "XML comments, Visual Basic"
   - "Visual Basic code, documenting with XML"
 ms.assetid: a0d35dc7-c5f9-4d74-92ff-a1c6f28d5235

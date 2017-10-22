@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "Windows Presentation Foundation, performance"
-  - "performance"
-  - "WPF, performance"
+  - "Windows Presentation Foundation [WPF], performance"
+  - "performance [WPF]"
+  - "WPF [WPF], performance"
 ms.assetid: c649a20f-8b7e-4a38-9b80-74839298d406
 caps.latest.revision: 10
 author: dotnet-bot

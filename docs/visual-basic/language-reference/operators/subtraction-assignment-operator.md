@@ -11,10 +11,10 @@ f1_keywords:
   - "vb.-="
 helpviewer_keywords: 
   - "-= operator [Visual Basic]"
-  - "assignment statements, compound"
+  - "assignment statements [Visual Basic], compound"
   - "statements [Visual Basic], compound assignment"
   - "operator -="
-  - "compound assignment statements"
+  - "compound assignment statements [Visual Basic]"
 ms.assetid: 5ead0c37-ae50-48f7-8435-8e341d81cae1
 caps.latest.revision: 19
 author: dotnet-bot

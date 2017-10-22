@@ -10,10 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "scaling, elements"
-  - "graphics, scaling elements"
-  - "classes, ScaleTransform"
-  - "ScaleTransform class"
+  - "scaling [WPF], elements"
+  - "graphics [WPF], scaling elements"
 ms.assetid: 18158d94-bbe7-4f6a-814e-84d27fa748bf
 caps.latest.revision: 13
 author: dotnet-bot

@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "cardinal splines, drawing"
-  - "drawing, cardinal splines"
-  - "graphics, cardinal splines"
+  - "cardinal splines [Windows Forms], drawing"
+  - "drawing [Windows Forms], cardinal splines"
+  - "graphics [Windows Forms], cardinal splines"
 ms.assetid: a4a41e80-4461-4b47-b6bd-2c5e68881994
 caps.latest.revision: 13
 author: dotnet-bot

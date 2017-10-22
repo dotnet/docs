@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "key frames, animating Points with"
-  - "Points, animating with key frames"
-  - "animation, Points with key frames"
+  - "key frames [WPF], animating Points with"
+  - "Points [WPF], animating with key frames"
+  - "animation [WPF], Points with key frames"
 ms.assetid: d2e2ef10-0773-4133-856e-d41c09f60ded
 caps.latest.revision: 12
 author: dotnet-bot

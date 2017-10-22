@@ -10,7 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "GuidelineSet property, applying to drawings"
+  - "GuidelineSet property [WPF], applying to drawings"
   - "graphics [WPF], GuidelineSet property"
 ms.assetid: 45f3e0b4-8820-45a7-b865-b8ea5b17b0c8
 caps.latest.revision: 6

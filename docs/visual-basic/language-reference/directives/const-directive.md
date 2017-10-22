@@ -12,13 +12,13 @@ f1_keywords:
   - "#Const"
 helpviewer_keywords: 
   - "#Const directive"
-  - "conditional compilation, directives"
+  - "conditional compilation [Visual Basic], directives"
   - "Const directive (#Const)"
   - "Visual Basic compiler, compiler directives"
-  - "constants, Const directive"
-  - "constants, declaring"
+  - "constants [Visual Basic], Const directive"
+  - "constants [Visual Basic], declaring"
   - "Const statement [Visual Basic], directive (#Const)"
-  - "declaring constants, #const directive"
+  - "declaring constants [Visual Basic], #const directive"
 ms.assetid: 707669e5-23f9-4f17-8622-a0d534429386
 caps.latest.revision: 17
 author: dotnet-bot

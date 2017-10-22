@@ -9,14 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "properties, Blocks, manipulating FlowDocuments"
-  - "documents, manipulating FlowDocuments through Blocks property"
-  - "Blocks property, manipulating FlowDocuments"
-  - "FlowDocuments, manipulating through Blocks property"
+  - "documents [WPF], manipulating FlowDocuments through Blocks property [WPF], , "
+  - ", "
 ms.assetid: cbb7291e-3f1b-433e-9e16-f4d93ced14e8
 caps.latest.revision: 6
 author: dotnet-bot

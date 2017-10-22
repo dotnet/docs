@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "views, filtering data"
-  - "filtering data in views"
-  - "data binding, filtering data in views"
+  - "views [WPF], filtering data"
+  - "filtering data in views [WPF]"
+  - "data binding [WPF], filtering data in views"
 ms.assetid: c76e8606-4cc4-45a8-9110-e2ec66dc6afd
 caps.latest.revision: 16
 author: dotnet-bot

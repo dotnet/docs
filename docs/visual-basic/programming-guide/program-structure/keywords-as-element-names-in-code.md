@@ -11,8 +11,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "Visual Basic code, naming conventions"
   - "keywords [Visual Basic], in code"
-  - "name conflicts"
-  - "element names, in code"
+  - "name conflicts [Visual Basic]"
+  - "element names [Visual Basic], in code"
 ms.assetid: 2e4e8e02-23f7-49b9-a1c8-2b0402b6b525
 caps.latest.revision: 11
 author: dotnet-bot

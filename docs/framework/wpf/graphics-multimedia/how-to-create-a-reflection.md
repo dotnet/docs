@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "creating reflections"
-  - "brushes, creating reflections"
-  - "reflections, creating"
+  - "creating reflections [WPF]"
+  - "brushes [WPF], creating reflections"
+  - "reflections [WPF], creating"
 ms.assetid: 4f017e16-ab80-43c7-98df-03b6bddbb203
 caps.latest.revision: 6
 author: dotnet-bot

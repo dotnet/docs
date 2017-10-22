@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "object binding, accessing bound objects"
-  - "data grids, accessing bound objects"
+  - "object binding [Windows Forms], accessing bound objects"
+  - "data grids [Windows Forms], accessing bound objects"
   - "DataGridView control [Windows Forms], accessing objects bound to rows"
 ms.assetid: 0e05748f-4403-4eb8-8b2f-b098108181b5
 caps.latest.revision: 21

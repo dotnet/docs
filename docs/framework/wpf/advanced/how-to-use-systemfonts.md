@@ -9,14 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "SystemFonts class"
-  - "system fonts"
-  - "fonts, system fonts"
-  - "classes, SystemFonts"
+  - "system fonts [WPF]"
+  - "fonts [WPF], system fonts"
+  - "classes [WPF], SystemFonts"
 ms.assetid: 3f46a4ec-2225-408a-8123-8838a8f7057a
 caps.latest.revision: 27
 author: dotnet-bot

@@ -10,13 +10,13 @@ ms.technology:
 ms.topic: "article"
 helpviewer_keywords: 
   - "arguments [Visual Basic], passing to procedures"
-  - "procedures, arguments"
-  - "procedures, parameters"
+  - "procedures [Visual Basic], arguments"
+  - "procedures [Visual Basic], parameters"
   - "procedure arguments"
   - "Visual Basic code, procedures"
   - "procedure parameters"
-  - "procedures, calling"
-  - "argument passing, procedures"
+  - "procedures [Visual Basic], calling"
+  - "argument passing [Visual Basic], procedures"
 ms.assetid: 08723588-3890-4ddc-8249-79e049e0f241
 caps.latest.revision: 14
 author: dotnet-bot

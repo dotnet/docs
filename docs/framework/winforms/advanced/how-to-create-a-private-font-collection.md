@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "private font collections, creating"
-  - "fonts, creating private collections"
+  - "private font collections [Windows Forms], creating"
+  - "fonts [Windows Forms], creating private collections"
 ms.assetid: 6533d5e5-a8dc-4b76-9fc4-3bf75c8b9212
 caps.latest.revision: 16
 author: dotnet-bot

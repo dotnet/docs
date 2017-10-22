@@ -9,13 +9,13 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "procedures, parameters"
-  - "procedure overloading, indefinite number of parameters"
-  - "procedures, defining"
+  - "procedures [Visual Basic], parameters"
+  - "procedure overloading [Visual Basic], indefinite number of parameters"
+  - "procedures [Visual Basic], defining"
   - "Visual Basic code, procedures"
   - "procedure parameters"
-  - "procedures, overloading"
-  - "procedures, multiple versions"
+  - "procedures [Visual Basic], overloading"
+  - "procedures [Visual Basic], multiple versions"
 ms.assetid: c7042de2-2422-4039-94e8-ac298896af69
 caps.latest.revision: 18
 author: dotnet-bot

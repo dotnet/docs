@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "drawing, lines"
-  - "lines, drawing"
-  - "pens, drawing lines"
-  - "drawing lines, line caps"
+  - "drawing [Windows Forms], lines"
+  - "lines [Windows Forms], drawing"
+  - "pens [Windows Forms], drawing lines"
+  - "drawing lines [Windows Forms], line caps"
 ms.assetid: eb68c3e1-c400-4886-8a04-76978a429cb6
 caps.latest.revision: 16
 author: dotnet-bot

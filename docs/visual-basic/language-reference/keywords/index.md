@@ -9,7 +9,7 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "reserved keywords, Visual Basic"
   - "keywords [Visual Basic]"
-  - "Members, Visual Basic run-time"
+  - "Members [Visual Basic], Visual Basic run-time"
   - "Visual Basic code, keywords"
   - "Visual Basic, language reference"
   - "reserved words, Visual Basic keywords"

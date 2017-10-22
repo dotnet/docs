@@ -10,9 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "SystemFonts class"
-  - "classes, SystemFonts"
-  - "resource keys, SystemFonts class"
+  - "resource keys [WPF], SystemFonts class"
 ms.assetid: 036ebea7-5677-4f60-8ba4-56c9f9d9b8bd
 caps.latest.revision: 8
 author: dotnet-bot

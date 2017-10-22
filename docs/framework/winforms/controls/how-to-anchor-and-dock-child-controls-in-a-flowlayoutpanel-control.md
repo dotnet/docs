@@ -13,7 +13,7 @@ helpviewer_keywords:
   - "layout [Windows Forms], child controls"
   - "FlowLayoutPanel control [Windows Forms], child controls"
   - "controls [Windows Forms], child"
-  - "child controls, anchoring and docking"
+  - "child controls [Windows Forms], anchoring and docking"
 ms.assetid: a2bcdfca-9b63-45e6-9c0e-3411015cba98
 caps.latest.revision: 15
 author: dotnet-bot

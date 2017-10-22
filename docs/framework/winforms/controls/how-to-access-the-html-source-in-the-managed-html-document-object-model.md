@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "managed HTML DOM"
-  - "HTML, accessing in Windows Forms"
+  - "HTML [Windows Forms], accessing in Windows Forms"
 ms.assetid: 53db79fa-8a5e-448e-88c2-f54ace3860b6
 caps.latest.revision: 10
 author: dotnet-bot

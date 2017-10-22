@@ -9,25 +9,25 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "Windows Forms, captions"
   - "Button control [Windows Forms], button text"
   - "StdFont object and CommandButton caption"
-  - "captions, Windows Forms controls"
-  - "Text property, Windows Forms control"
+  - "captions [Windows Forms], Windows Forms controls"
+  - "Text property [Windows Forms], Windows Forms control"
   - "Button control [Windows Forms], text display"
-  - "labels, adding to CommandButton control"
-  - "buttons, text"
-  - "captions, setting"
+  - "labels [Windows Forms], adding to CommandButton control"
+  - "buttons [Windows Forms], text"
+  - "captions [Windows Forms], setting"
   - "text"
   - "examples [Windows Forms], controls"
-  - "text, Windows Forms controls"
+  - "text [Windows Forms], Windows Forms controls"
   - "controls [Windows Forms], captions"
-  - "forms, captions"
+  - "forms [Windows Forms], captions"
 ms.assetid: 36b95bff-8780-479d-b86a-f1a0673653aa
 caps.latest.revision: 18
 author: dotnet-bot

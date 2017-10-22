@@ -11,10 +11,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "WPF content [Windows Forms], assigning at design time"
-  - "ElementHost control, assigning WPF content at design time"
+  - "ElementHost control [Windows Forms], assigning WPF content at design time"
   - "interoperability [WPF]"
   - "Windows Forms, content assignments"
-  - "WPF user control, hosting in Windows Forms"
+  - "WPF user control [Windows Forms], hosting in Windows Forms"
 ms.assetid: b3e9ef93-7e0f-4a2f-8f1e-3437609a1eb7
 caps.latest.revision: 18
 author: dotnet-bot

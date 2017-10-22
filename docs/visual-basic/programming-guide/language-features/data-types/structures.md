@@ -9,11 +9,11 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "structures"
-  - "user-defined data types, structures"
-  - "user-defined types, about user-defined types"
+  - "structures [Visual Basic]"
+  - "user-defined data types [Visual Basic], structures"
+  - "user-defined types [Visual Basic], about user-defined types"
   - "data types [Visual Basic], user-defined"
-  - "user-defined data types, about user-defined data types"
+  - "user-defined data types [Visual Basic], about user-defined data types"
   - "types [Visual Basic], user-defined"
 ms.assetid: 55e86462-5e99-4d33-8018-6d097ca491b2
 caps.latest.revision: 13

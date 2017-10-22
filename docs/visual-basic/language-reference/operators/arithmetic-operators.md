@@ -9,8 +9,8 @@ ms.technology:
 ms.topic: "article"
 helpviewer_keywords: 
   - "operators [Visual Basic], arithmetic"
-  - "arithmetic operators"
-  - "math operators"
+  - "arithmetic operators [Visual Basic]"
+  - "math operators [Visual Basic]"
 ms.assetid: 330178e0-a375-4742-b662-b3080c89fa54
 caps.latest.revision: 11
 author: dotnet-bot

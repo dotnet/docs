@@ -10,19 +10,19 @@ ms.technology:
 ms.topic: "article"
 helpviewer_keywords: 
   - "signatures"
-  - "Overloads keyword"
+  - "Overloads keyword [Visual Basic]"
   - "hiding by signature"
   - "Visual Basic code, procedures"
-  - "procedures, signatures for"
-  - "procedures, overloading"
-  - "procedures, multiple versions"
-  - "parameters, lists"
-  - "signatures, procedure"
-  - "parameter lists"
+  - "procedures [Visual Basic], signatures for"
+  - "procedures [Visual Basic], overloading"
+  - "procedures [Visual Basic], multiple versions"
+  - "parameters [Visual Basic], lists"
+  - "signatures [Visual Basic], procedure"
+  - "parameter lists [Visual Basic]"
   - "Visual Basic code, parameter lists"
-  - "Shadows keyword"
+  - "Shadows keyword [Visual Basic]"
   - "procedure overloading"
-  - "procedures, parameter lists"
+  - "procedures [Visual Basic], parameter lists"
 ms.assetid: fbc7fb18-e3b2-48b6-b554-64c00ed09d2a
 caps.latest.revision: 24
 author: dotnet-bot

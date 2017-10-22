@@ -10,11 +10,11 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "code access security, Windows Forms"
-  - "permissions, Windows Forms"
+  - "code access security [Windows Forms], Windows Forms"
+  - "permissions [Windows Forms], Windows Forms"
   - "Windows Forms, security"
   - "security [Windows Forms], about security"
-  - "access control, Windows Forms"
+  - "access control [Windows Forms], Windows Forms"
 ms.assetid: 4810dc9f-ea23-4ce1-8ea1-657f0ff1d820
 caps.latest.revision: 16
 author: dotnet-bot

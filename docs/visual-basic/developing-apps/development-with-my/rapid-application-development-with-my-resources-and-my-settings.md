@@ -7,10 +7,10 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "My.Settings object, developing applications"
+  - "My.Settings object [Visual Basic], developing applications"
   - "rapid application development (RAD), My.Resources"
   - "rapid application development (RAD), My.Settings"
-  - "My.Resources object, developing applications"
+  - "My.Resources object [Visual Basic], developing applications"
 ms.assetid: 68284ab1-b685-4814-a2a4-01ae40445ff8
 caps.latest.revision: 6
 author: dotnet-bot

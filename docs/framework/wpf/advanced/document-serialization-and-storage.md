@@ -10,10 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "serialization of documents"
-  - "storage of documents"
-  - "documents, storage"
-  - "documents, serialization"
+  - "serialization of documents [WPF], , "
+  - "documents [WPF], storage"
+  - "documents [WPF], serialization"
 ms.assetid: 4839cd87-e206-4571-803f-0200098ad37b
 caps.latest.revision: 24
 author: dotnet-bot

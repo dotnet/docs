@@ -10,11 +10,11 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.+"
 helpviewer_keywords: 
-  - "arithmetic operators, addition"
+  - "arithmetic operators [Visual Basic], addition"
   - "+ operator"
-  - "concatenation operators, syntax"
+  - "concatenation operators [Visual Basic], syntax"
   - "strings [Visual Basic], concatenating"
-  - "sum operator"
+  - "sum operator [Visual Basic]"
 ms.assetid: 5694778f-0a2c-4539-8009-f66f318fb46d
 caps.latest.revision: 26
 author: dotnet-bot

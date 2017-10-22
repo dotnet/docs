@@ -10,8 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "Popup control, animating"
-  - "animation, Popup controls"
+  - "Popup control [WPF], animating"
+  - "animation [WPF], Popup controls"
 ms.assetid: acaa2a0a-6137-4efd-9cd1-75ece222e390
 caps.latest.revision: 9
 author: dotnet-bot

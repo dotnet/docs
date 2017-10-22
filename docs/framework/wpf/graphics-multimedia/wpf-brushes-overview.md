@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "brushes, about brushes"
+  - "brushes [WPF], about brushes"
 ms.assetid: ecea1955-420b-45c6-bf43-c1404c072c41
 caps.latest.revision: 12
 author: dotnet-bot

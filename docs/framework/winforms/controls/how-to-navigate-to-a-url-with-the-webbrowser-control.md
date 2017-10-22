@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 f1_keywords: 
   - "WebBrowser.Navigate"
 helpviewer_keywords: 
   - "WebBrowser control [Windows Forms], examples"
-  - "URLs, navigating to"
+  - "URLs [Windows Forms], navigating to"
   - "WebBrowser control [Windows Forms], navigating to URLs"
   - "examples [Windows Forms], WebBrowser control"
 ms.assetid: b3ec38cb-f509-4d0b-bd79-9f3611259c62

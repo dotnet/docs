@@ -10,7 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "drag and drop, between applications"
+  - "drag and drop [Windows Forms], between applications"
 ms.assetid: fa347436-2b12-4dd6-8507-59d7241f6a06
 caps.latest.revision: 11
 author: dotnet-bot

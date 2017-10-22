@@ -12,11 +12,10 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "ListBox control [Windows Forms], adding and removing items"
   - "ListBox control [Windows Forms], vs. ComboBox"
-  - "bound controls, combo boxes"
+  - "bound controls [Windows Forms], combo boxes"
   - "Windows Forms controls, data binding"
-  - "ListIndex property"
   - "ComboBox control [Windows Forms], compared to ListBox"
-  - "combo boxes, compared to list boxes"
+  - "combo boxes [Windows Forms], compared to list boxes"
   - "ListBox control [Windows Forms], accessing items"
   - "ListCount property"
 ms.assetid: 7bcaea58-1cfa-46db-9baf-b75a69d8f9ec

@@ -10,11 +10,11 @@ ms.technology:
 ms.topic: "article"
 helpviewer_keywords: 
   - "troubleshooting file I/O"
-  - "writing text to files, troubleshooting"
+  - "writing text to files [Visual Basic], troubleshooting"
   - "troubleshooting Visual Basic, text files"
   - "I/O [Visual Basic], troubleshooting text files"
-  - "writing to files, troubleshooting"
-  - "reading text files, troubleshooting"
+  - "writing to files [Visual Basic], troubleshooting"
+  - "reading text files [Visual Basic], troubleshooting"
 ms.assetid: a8e9b44d-facb-4718-8c0f-466537171182
 caps.latest.revision: 10
 author: dotnet-bot

@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "offset accumulation"
-  - "animation, objects along paths (matrix animation with offset accumulation)"
-  - "matrix animation with offset accumulation"
+  - "offset accumulation [WPF]"
+  - "animation [WPF], objects along paths (matrix animation with offset accumulation)"
+  - "matrix animation with offset accumulation [WPF]"
 ms.assetid: 1bca90ef-9832-4128-8ed6-62908e7ec146
 caps.latest.revision: 13
 author: dotnet-bot

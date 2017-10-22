@@ -11,8 +11,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "layout [Windows Forms]"
-  - "sizing, automatic [Windows Forms]"
-  - "LayoutEngine class"
+  - "sizing [Windows Forms], automatic [Windows Forms]"
   - "Margin property [Windows Forms]"
   - "Padding property [Windws Forms]"
 ms.assetid: 99400e3a-720e-4f56-b68f-89df911a251c

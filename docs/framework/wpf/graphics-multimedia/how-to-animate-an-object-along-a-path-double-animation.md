@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "animation, objects along paths (double animation)"
-  - "double animation"
+  - "animation [WPF], objects along paths (double animation)"
+  - "double animation [WPF]"
 ms.assetid: 5a3c4a99-f303-42ad-a52a-e4794bb1798e
 caps.latest.revision: 12
 author: dotnet-bot

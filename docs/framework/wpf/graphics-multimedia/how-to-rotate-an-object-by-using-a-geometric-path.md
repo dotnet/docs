@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "geometric paths, rotating objects by"
-  - "rotating objects by geometric paths"
+  - "geometric paths [WPF], rotating objects by"
+  - "rotating objects by geometric paths [WPF]"
 ms.assetid: cb31ca4d-f05a-4c6b-9a18-4b6faaf38d45
 caps.latest.revision: 16
 author: dotnet-bot

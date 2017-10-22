@@ -14,7 +14,7 @@ f1_keywords:
 helpviewer_keywords: 
   - "custom logic into code [Visual Basic]"
   - "partial methods [Visual Basic]"
-  - "partial, methods [Visual Basic]"
+  - "partial [Visual Basic], methods [Visual Basic]"
   - "methods [Visual Basic], partial methods"
   - "inserting custom logic into code"
 ms.assetid: 74b3368b-b348-44a0-a326-7d7dc646f4e9

@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "animation, rectangles"
-  - "rectangles, animating"
+  - "animation [WPF], rectangles"
+  - "rectangles [WPF], animating"
 ms.assetid: 572ffb95-790d-4ace-adbf-b2ea8a90e75b
 caps.latest.revision: 10
 author: dotnet-bot

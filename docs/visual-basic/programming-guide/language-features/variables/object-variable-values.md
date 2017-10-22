@@ -10,8 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "object variables, values"
-  - "values, of object variables"
+  - "object variables [Visual Basic], values"
+  - "values [Visual Basic], of object variables"
   - "data types [Visual Basic], object variable"
   - "variables [Visual Basic], object"
 ms.assetid: 31555704-58a3-49f1-9a0a-6421f605664f

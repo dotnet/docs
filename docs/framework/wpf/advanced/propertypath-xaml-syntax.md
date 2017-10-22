@@ -10,8 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "PropertyPath object"
-  - "XAML, PropertyPath object"
+  - "PropertyPath object [WPF]"
+  - "XAML [WPF], PropertyPath object"
 ms.assetid: 0e3cdf07-abe6-460a-a9af-3764b4fd707f
 caps.latest.revision: 24
 author: dotnet-bot

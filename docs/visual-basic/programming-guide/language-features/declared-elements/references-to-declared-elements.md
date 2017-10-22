@@ -9,9 +9,9 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "declared elements"
-  - "references, declared elements"
-  - "qualified names"
+  - "declared elements [Visual Basic]"
+  - "references [Visual Basic], declared elements"
+  - "qualified names [Visual Basic]"
 ms.assetid: d6301709-f4cc-4b7a-b8ba-80898f14ab46
 caps.latest.revision: 19
 author: dotnet-bot

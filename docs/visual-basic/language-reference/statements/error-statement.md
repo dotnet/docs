@@ -10,10 +10,10 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.error"
 helpviewer_keywords: 
-  - "Error statement, syntax"
-  - "Error statement"
-  - "Error keyword"
-  - "run-time errors, codes"
+  - "Error statement [Visual Basic], syntax"
+  - "Error statement [Visual Basic]"
+  - "Error keyword [Visual Basic]"
+  - "run-time errors [Visual Basic], codes"
   - "errors [Visual Basic], simulating"
 ms.assetid: 85cd5c59-5224-4f02-aaf5-fcfefab17a29
 caps.latest.revision: 10

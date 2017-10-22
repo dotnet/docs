@@ -17,7 +17,7 @@ helpviewer_keywords:
   - "? symbol, wildcard character"
   - "string comparison [Visual Basic], Like operator"
   - "strings [Visual Basic], comparing"
-  - "comparison operators"
+  - "comparison operators [Visual Basic]"
   - "symbols, wildcard"
   - "wildcards, Like operator"
   - "strings [Visual Basic], matching"

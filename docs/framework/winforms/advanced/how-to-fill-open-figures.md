@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "open figures, filling"
-  - "figures, filling"
+  - "open figures [Windows Forms], filling"
+  - "figures [Windows Forms], filling"
 ms.assetid: 5a36b0e4-f1f4-46c0-a85a-22ae98491950
 caps.latest.revision: 15
 author: dotnet-bot

@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "documents, changing TextWrapping property programmatically"
-  - "TextWrapping property, changing programmatically"
+  - "documents [WPF], changing TextWrapping property programmatically"
+  - "TextWrapping property [WPF], changing programmatically"
 ms.assetid: 30d25554-4c82-4df9-a8d6-35683a4a13bb
 caps.latest.revision: 10
 author: dotnet-bot

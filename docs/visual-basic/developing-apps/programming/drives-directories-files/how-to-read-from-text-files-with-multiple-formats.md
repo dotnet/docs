@@ -12,11 +12,11 @@ helpviewer_keywords:
   - "TextFieldParser object, reading from a file"
   - "TextFieldType enumeration"
   - "My.Computer.FileSystem.WriteAllText method, parsing structured text files"
-  - "WriteAllText method, parsing structured text files"
-  - "PeekChars method, determining format of text"
-  - "reading text files, multiple formats"
+  - "WriteAllText method [Visual Basic], parsing structured text files"
+  - "PeekChars method [Visual Basic], determining format of text"
+  - "reading text files [Visual Basic], multiple formats"
   - "I/O [Visual Basic], reading text files"
-  - "text files, reading"
+  - "text files [Visual Basic], reading"
 ms.assetid: 8d185eb2-79ca-42cd-95a7-d3ff44a5a0f8
 caps.latest.revision: 17
 author: dotnet-bot

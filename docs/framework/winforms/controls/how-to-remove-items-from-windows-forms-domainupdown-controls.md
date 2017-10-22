@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "DomainUpDown control [Windows Forms], removing items from"
-  - "spin button control, removing items"
+  - "spin button control [Windows Forms], removing items"
 ms.assetid: e70f5cbc-b497-41a9-975a-344c00e56ed2
 caps.latest.revision: 13
 author: dotnet-bot

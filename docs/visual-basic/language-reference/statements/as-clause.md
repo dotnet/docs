@@ -11,8 +11,8 @@ f1_keywords:
   - "vb.as"
 helpviewer_keywords: 
   - "constraints, Visual Basic generic types"
-  - "As keyword, statement syntax"
-  - "As keyword"
+  - "As keyword [Visual Basic], statement syntax"
+  - "As keyword [Visual Basic]"
 ms.assetid: b4281ec8-2be5-49f7-aae8-ae0a96265b0d
 caps.latest.revision: 19
 author: dotnet-bot

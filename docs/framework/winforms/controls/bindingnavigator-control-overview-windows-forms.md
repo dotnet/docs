@@ -13,7 +13,7 @@ f1_keywords:
   - "DataNavigator"
 helpviewer_keywords: 
   - "BindingNavigator control [Windows Forms], about BindingNavigator control"
-  - "records, navigating on a form"
+  - "records [Windows Forms], navigating on a form"
   - "data [Windows Forms], navigating"
   - "data navigation"
 ms.assetid: 4423eede-f8d1-4d02-822f-5bf8432680d0

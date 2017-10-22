@@ -9,13 +9,13 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "static variables, lifetime"
-  - "static variables, Visual Basic"
-  - "declared elements, lifetime"
-  - "Shared variable lifetime"
-  - "lifetime, declared elements"
-  - "lifetime, Visual Basic"
-  - "lifetime"
+  - "static variables [Visual Basic], lifetime"
+  - "static variables [Visual Basic], Visual Basic"
+  - "declared elements [Visual Basic], lifetime"
+  - "Shared variable lifetime [Visual Basic]"
+  - "lifetime [Visual Basic], declared elements"
+  - "lifetime [Visual Basic], Visual Basic"
+  - "lifetime [Visual Basic]"
 ms.assetid: bd91e390-690a-469a-9946-8dca70bc14e7
 caps.latest.revision: 14
 author: dotnet-bot

@@ -9,16 +9,16 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "custom controls [Visual Basic]"
   - "user controls [Visual Basic]"
-  - "UserControl class, walkthroughs"
+  - "UserControl class [Windows Forms], walkthroughs"
   - "user controls [Windows Forms], creating with Visual Basic"
   - "controls [Windows Forms], composite controls"
-  - "composite controls, creating"
+  - "composite controls [Windows Forms], creating"
   - "custom controls [Windows Forms], creating"
 ms.assetid: f50e270e-4db2-409a-8319-6db6ca5c7daf
 caps.latest.revision: 21

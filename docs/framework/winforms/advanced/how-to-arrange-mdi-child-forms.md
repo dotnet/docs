@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "child forms, arranging"
-  - "MDI, arranging child forms"
+  - "child forms [Windows Forms], arranging"
+  - "MDI [Windows Forms], arranging child forms"
 ms.assetid: a0786378-3206-4ccc-898e-7d3b38cc5089
 caps.latest.revision: 11
 author: dotnet-bot

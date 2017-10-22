@@ -10,8 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "metadata, framework properties"
-  - "framework property metadata"
+  - "metadata [WPF], framework properties"
+  - "framework property metadata [WPF]"
 ms.assetid: 9962f380-b885-4b61-a62e-457397083fea
 caps.latest.revision: 19
 author: dotnet-bot

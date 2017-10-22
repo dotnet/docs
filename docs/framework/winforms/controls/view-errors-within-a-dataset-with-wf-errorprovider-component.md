@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "errors [Windows Forms], dataset errors"
-  - "error messages, viewing in datasets"
+  - "error messages [Windows Forms], viewing in datasets"
   - "ErrorProvider component [Windows Forms], dataset errors"
 ms.assetid: cbae023f-d651-4210-bdea-bcc5f037e321
 caps.latest.revision: 11

@@ -10,11 +10,11 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "parent forms"
-  - "inherited forms, modifications to base form"
+  - "parent forms [Windows Forms]"
+  - "inherited forms [Windows Forms], modifications to base form"
   - "Windows Forms, base form appearance"
   - "base forms"
-  - "inheritance, forms"
+  - "inheritance [Windows Forms], forms"
 ms.assetid: 1c3f2b29-a05c-4c6f-aa1a-4e66b94f343a
 caps.latest.revision: 9
 author: dotnet-bot

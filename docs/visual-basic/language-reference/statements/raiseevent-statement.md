@@ -12,8 +12,8 @@ f1_keywords:
   - "vb.RaiseEvent"
   - "RaiseEvent"
 helpviewer_keywords: 
-  - "raising events, RaiseEvent statement"
-  - "RaiseEvent statement"
+  - "raising events [Visual Basic], RaiseEvent statement"
+  - "RaiseEvent statement [Visual Basic]"
   - "event handlers, connecting events to"
 ms.assetid: f82e380a-1e6b-4047-bea8-c853f4d2c742
 caps.latest.revision: 19

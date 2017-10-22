@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "animation, paths"
-  - "path animations"
+  - "animation [WPF], paths"
+  - "path animations [WPF]"
 ms.assetid: 979c732c-df74-47a6-be96-8e07b3707d53
 caps.latest.revision: 13
 author: dotnet-bot

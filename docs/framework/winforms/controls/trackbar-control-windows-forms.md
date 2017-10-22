@@ -11,7 +11,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "sliders"
-  - "slider controls"
+  - "slider controls [Windows Forms]"
   - "TrackBar control [Windows Forms]"
 ms.assetid: 37d6aee3-7e8a-4a10-a99c-3a6e09199553
 caps.latest.revision: 8

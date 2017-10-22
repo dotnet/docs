@@ -10,7 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "selection, modes in DataGridView control"
+  - "selection [Windows Forms], modes in DataGridView control"
   - "DataGridView control [Windows Forms], selection mode"
 ms.assetid: a3ebfd3d-0525-479d-9d96-d9e017289b36
 caps.latest.revision: 16

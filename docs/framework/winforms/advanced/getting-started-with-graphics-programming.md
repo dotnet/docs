@@ -10,8 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "graphics, getting started"
-  - "getting started, graphics programming"
+  - "graphics [Windows Forms], getting started"
+  - "getting started [Windows Forms], graphics programming"
   - "examples [Windows Forms], graphics"
   - "drawing"
 ms.assetid: eb0f6d6f-9e52-4167-9592-ff4b82fb5869

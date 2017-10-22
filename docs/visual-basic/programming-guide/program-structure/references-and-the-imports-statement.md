@@ -10,10 +10,10 @@ ms.technology:
 ms.topic: "article"
 helpviewer_keywords: 
   - "assemblies [Visual Basic], namespaces"
-  - "references, assembly"
-  - "namespaces, assemblies"
+  - "references [Visual Basic], assembly"
+  - "namespaces [Visual Basic], assemblies"
   - "referencing assemblies"
-  - "Imports statement, referencing assemblies"
+  - "Imports statement [Visual Basic], referencing assemblies"
   - "assemblies [Visual Basic], references"
 ms.assetid: 38149bd4-0a6f-4b31-b5f8-94a8c33f1600
 caps.latest.revision: 12

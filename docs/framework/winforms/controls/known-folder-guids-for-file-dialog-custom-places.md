@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "Known Folder GUIDs, Custom Places"
-  - "Custom Places, Known Folder GUIDs"
-  - "Windows Vista Known Folder GUIDs, Custom Places"
+  - "Known Folder GUIDs [Windows Forms], Custom Places"
+  - "Custom Places [Windows Forms], Known Folder GUIDs"
+  - "Windows Vista Known Folder GUIDs [Windows Forms], Custom Places"
 ms.assetid: d8d8b544-8b4d-4da5-ba3a-b05e93244778
 caps.latest.revision: 6
 author: dotnet-bot

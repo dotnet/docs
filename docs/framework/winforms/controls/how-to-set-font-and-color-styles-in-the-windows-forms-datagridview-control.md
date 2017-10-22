@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], cell customization"
-  - "data grids, customizing cells"
-  - "data grids, font styles"
-  - "data grids, color styles"
+  - "data grids [Windows Forms], customizing cells"
+  - "data grids [Windows Forms], font styles"
+  - "data grids [Windows Forms], color styles"
 ms.assetid: 588f2c57-d963-41b1-9c1d-d02d71818113
 caps.latest.revision: 14
 author: dotnet-bot

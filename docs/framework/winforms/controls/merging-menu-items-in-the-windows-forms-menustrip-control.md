@@ -10,8 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "MenuStrip, merging"
-  - "merging, general concepts"
+  - "MenuStrip [Windows Forms], merging"
+  - "merging [Windows Forms], general concepts"
 ms.assetid: 95e113ba-f362-4dda-8a76-6d95ddc45cee
 caps.latest.revision: 7
 author: dotnet-bot

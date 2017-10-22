@@ -12,7 +12,7 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "controls [Windows Forms], grouping"
   - "GroupBox control [Windows Forms]"
-  - "grouping controls"
+  - "grouping controls [Windows Forms]"
 ms.assetid: ee7fb3ed-2fae-4df3-bdeb-15d42e5d7d75
 caps.latest.revision: 13
 author: dotnet-bot

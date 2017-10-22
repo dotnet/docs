@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "TextBox control, detecting text change"
-  - "text change, detecting"
-  - "detecting text change"
+  - "TextBox control [WPF], detecting text change"
+  - "text change [WPF], detecting"
+  - "detecting text change [WPF]"
 ms.assetid: 1c39ee14-e37f-49fb-a0d1-a9824ca13584
 caps.latest.revision: 10
 author: dotnet-bot

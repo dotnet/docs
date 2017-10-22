@@ -19,7 +19,7 @@ helpviewer_keywords:
   - "= operator [Visual Basic]"
   - "< operator [Visual Basic]"
   - "less than operator [Visual Basic]"
-  - "relational operators, syntax"
+  - "relational operators [Visual Basic], syntax"
   - "Like operator [Visual Basic]"
   - "<> operator [Visual Basic]"
   - "> operator [Visual Basic]"
@@ -34,7 +34,7 @@ helpviewer_keywords:
   - "<= operator [Visual Basic]"
   - "operators [Visual Basic], comparison"
   - "Is operator [Visual Basic]"
-  - "comparison operators, Visual Basicl"
+  - "comparison operators [Visual Basic], Visual Basicl"
 ms.assetid: d6cb12a8-e52e-46a7-8aaf-f804d634a825
 caps.latest.revision: 20
 author: dotnet-bot

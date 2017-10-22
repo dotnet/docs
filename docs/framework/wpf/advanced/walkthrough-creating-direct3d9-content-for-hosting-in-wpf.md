@@ -9,10 +9,10 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "cpp"
+dev_langs: 
+  - "cpp"
 helpviewer_keywords: 
-  - "WPF, creating Direct3D9 content"
+  - "WPF [WPF], creating Direct3D9 content"
   - "Direct3D9 [WPF interoperability], creating Direct3D9 content"
 ms.assetid: 286e98bc-1eaa-4b5e-923d-3490a9cca5fc
 caps.latest.revision: 17

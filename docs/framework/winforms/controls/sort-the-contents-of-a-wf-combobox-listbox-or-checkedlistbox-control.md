@@ -12,8 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "CheckedListBox control [Windows Forms], sorting"
   - "ComboBox control [Windows Forms], sorting contents"
-  - "combo boxes, sorting contents"
-  - "list boxes, sorting contents"
+  - "combo boxes [Windows Forms], sorting contents"
+  - "list boxes [Windows Forms], sorting contents"
   - "ListBox control [Windows Forms], sorting contents"
 ms.assetid: c268e387-3d1d-4d86-a940-19f6673c8d06
 caps.latest.revision: 7

@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "texture brushes, tiling images with"
+  - "texture brushes [Windows Forms], tiling images with"
   - "images [Windows Forms], filling shapes with"
-  - "shapes, tiling with images"
+  - "shapes [Windows Forms], tiling with images"
   - "bitmaps [Windows Forms], filling shapes with"
 ms.assetid: 6d407891-6e5c-4495-a546-3da5604e9fb8
 caps.latest.revision: 14

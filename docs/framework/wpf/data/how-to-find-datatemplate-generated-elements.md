@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "finding DataTemplate elements"
-  - "DataTemplate"
+  - "finding DataTemplate elements [WPF]"
+  - "DataTemplate [WPF]"
 ms.assetid: bfcd564e-5e9e-451e-8641-a9b5c3cfac90
 caps.latest.revision: 6
 author: dotnet-bot

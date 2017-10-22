@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "pages, navigating to"
-  - "navigation, to page"
+  - "pages [WPF], navigating to"
+  - "navigation [WPF], to page"
 ms.assetid: 2a556fc0-748b-417f-a58a-0d05a7afb66f
 caps.latest.revision: 6
 author: dotnet-bot

@@ -9,7 +9,7 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "Object data type, data types"
+  - "Object data type [Visual Basic], data types"
   - "data types [Visual Basic], choosing"
 ms.assetid: 64c71a12-9057-4dbf-baca-7379c4aada69
 caps.latest.revision: 22

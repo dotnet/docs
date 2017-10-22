@@ -10,12 +10,12 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "application resources, performance"
-  - "resources, performance"
-  - "static resources"
-  - "sharing resources"
-  - "brushes, performance"
-  - "sharing brushes without copying"
+  - "application resources [WPF], performance"
+  - "resources [WPF], performance"
+  - "static resources [WPF]"
+  - "sharing resources [WPF]"
+  - "brushes [WPF], performance"
+  - "sharing brushes without copying [WPF]"
 ms.assetid: 62b88488-c08e-4804-b7de-a1c34fbe929c
 caps.latest.revision: 6
 author: dotnet-bot

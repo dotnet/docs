@@ -9,13 +9,13 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "qualification, of element names"
-  - "element names, qualification"
-  - "references, declared elements"
-  - "declaration statements, declared elements"
-  - "referencing declared elements"
-  - "declared elements, referencing"
-  - "declared elements, about declared elements"
+  - "qualification [Visual Basic], of element names"
+  - "element names [Visual Basic], qualification"
+  - "references [Visual Basic], declared elements"
+  - "declaration statements [Visual Basic], declared elements"
+  - "referencing declared elements [Visual Basic]"
+  - "declared elements [Visual Basic], referencing"
+  - "declared elements [Visual Basic], about declared elements"
   - "variables [Visual Basic], hiding inherited"
 ms.assetid: 765728d9-7351-4a30-999d-b5f34f024412
 caps.latest.revision: 17

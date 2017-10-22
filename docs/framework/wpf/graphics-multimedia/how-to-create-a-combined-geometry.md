@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "combining geometries"
-  - "graphics, combining geometries"
-  - "geometries, combining"
+  - "combining geometries [WPF]"
+  - "graphics [WPF], combining geometries"
+  - "geometries [WPF], combining"
 ms.assetid: 54c3277c-6b6e-4b25-91be-fda0bbc706b4
 caps.latest.revision: 8
 author: dotnet-bot

@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "image codecs, listing"
-  - "image decoders, listing"
+  - "image codecs [Windows Forms], listing"
+  - "image decoders [Windows Forms], listing"
 ms.assetid: 11417191-8c95-40ca-8024-779e61706fb6
 caps.latest.revision: 8
 author: dotnet-bot

@@ -9,7 +9,7 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.Ansi"
 helpviewer_keywords: 
-  - "Declare statement, marshaling strings"
+  - "Declare statement [Visual Basic], marshaling strings [Visual Basic]"
   - "ANSI, Visual Basic"
   - "ANSI"
 ms.assetid: 4f1fa6ff-5557-41ab-b6da-90baf4c15917

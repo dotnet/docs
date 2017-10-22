@@ -9,15 +9,15 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "procedures, arguments"
-  - "procedures, parameters"
+  - "procedures [Visual Basic], arguments"
+  - "procedures [Visual Basic], parameters"
   - "procedure arguments"
   - "arguments [Visual Basic], passing by reference"
   - "Visual Basic code, procedures"
   - "arguments [Visual Basic], ByVal"
   - "arguments [Visual Basic], passing by value"
   - "procedure parameters"
-  - "procedures, calling"
+  - "procedures [Visual Basic], calling"
   - "arguments [Visual Basic], ByRef"
   - "arguments [Visual Basic], changing value"
 ms.assetid: d2b7c766-ce16-4d2c-8d79-3fc0e7ba2227

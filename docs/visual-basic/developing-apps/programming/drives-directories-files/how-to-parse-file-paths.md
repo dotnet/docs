@@ -9,7 +9,7 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "file names, parsing [Visual Basic]"
+  - "file names [Visual Basic], parsing [Visual Basic]"
   - "parsing, file paths [Visual Basic]"
 ms.assetid: c1bd99c9-8160-456a-b5ab-60a49139b923
 caps.latest.revision: 18

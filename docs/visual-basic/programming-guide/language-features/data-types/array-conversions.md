@@ -10,13 +10,13 @@ ms.technology:
 ms.topic: "article"
 helpviewer_keywords: 
   - "arrays [Visual Basic], converting type"
-  - "type conversion, arrays"
-  - "conversions, type"
+  - "type conversion [Visual Basic], arrays"
+  - "conversions [Visual Basic], type"
   - "arrays [Visual Basic], data types"
-  - "conversions, data type"
-  - "object arrays, converting type"
-  - "data type conversion, array conversions"
-  - "conversions, array types"
+  - "conversions [Visual Basic], data type"
+  - "object arrays [Visual Basic], converting type"
+  - "data type conversion [Visual Basic], array conversions"
+  - "conversions [Visual Basic], array types"
   - "object arrays"
 ms.assetid: fceff7d2-a1b7-44c7-b9aa-8bd831d8a444
 caps.latest.revision: 14

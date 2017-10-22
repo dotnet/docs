@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "drawing, curves"
+  - "drawing [Windows Forms], curves"
   - "examples [Windows Forms], drawing curves"
-  - "curves, drawing"
+  - "curves [Windows Forms], drawing"
 ms.assetid: 76e92623-4130-4644-b867-faca58bdb3a2
 caps.latest.revision: 14
 author: dotnet-bot

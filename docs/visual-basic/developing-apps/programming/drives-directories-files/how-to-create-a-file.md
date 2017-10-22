@@ -9,8 +9,8 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "text files, creating"
-  - "files, creating"
+  - "text files [Visual Basic], creating"
+  - "files [Visual Basic], creating"
 ms.assetid: 0253bb6d-5519-4a50-b882-b93ef5cca0d9
 caps.latest.revision: 15
 author: dotnet-bot

@@ -9,7 +9,7 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "constants"
+  - "constants [Visual Basic]"
 ms.assetid: 29016fe8-78b3-4dc8-90b8-1cfec2fa8ac9
 caps.latest.revision: 14
 author: dotnet-bot

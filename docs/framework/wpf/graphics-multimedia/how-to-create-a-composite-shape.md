@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "shapes, composite"
-  - "composite shapes"
-  - "graphics, composite shapes"
+  - "shapes [WPF], composite"
+  - "composite shapes [WPF]"
+  - "graphics [WPF], composite shapes"
 ms.assetid: 8e5c7ef4-d7ed-4c43-afc9-ca01325c300b
 caps.latest.revision: 10
 author: dotnet-bot

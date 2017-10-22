@@ -13,7 +13,7 @@ f1_keywords:
   - "Button"
 helpviewer_keywords: 
   - "Button control [Windows Forms], about Button control"
-  - "buttons, about buttons"
+  - "buttons [Windows Forms], about buttons"
 ms.assetid: 255b291b-51a9-4a92-a1a4-2400cd82443f
 caps.latest.revision: 9
 author: dotnet-bot

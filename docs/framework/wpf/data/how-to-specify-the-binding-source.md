@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "binding data, binding sources"
-  - "data binding, binding source"
-  - "binding sources"
+  - "binding data [WPF], binding sources"
+  - "data binding [WPF], binding source"
+  - "binding sources [WPF]"
 ms.assetid: 55d47757-2648-4a52-987f-b767953f168c
 caps.latest.revision: 16
 author: dotnet-bot

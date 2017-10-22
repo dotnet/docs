@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "data binding, grids"
-  - "data binding, DataGridView control"
+  - "data binding [Windows Forms], grids"
+  - "data binding [Windows Forms], DataGridView control"
   - "DataGridView control [Windows Forms], data binding"
 ms.assetid: 1660f69c-5711-45d2-abc1-e25bc6779124
 caps.latest.revision: 30

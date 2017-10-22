@@ -17,7 +17,7 @@ helpviewer_keywords:
   - "HScrollBar control [Windows Forms], about HScrollBar"
   - "VScrollBar control [Windows Forms], about VScrollBar control"
   - "ScrollBar control [Windows Forms], about ScrollBar control"
-  - "scroll bars, about scroll bars"
+  - "scroll bars [Windows Forms], about scroll bars"
 ms.assetid: 8b307679-1cae-41d8-99aa-3d1efd207cd6
 caps.latest.revision: 13
 author: dotnet-bot

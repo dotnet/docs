@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "resizing windows to fit content"
-  - "windows, resizing to fit content"
-  - "sizing windows to fit content"
+  - "resizing windows to fit content [WPF]"
+  - "windows [WPF], resizing to fit content"
+  - "sizing windows to fit content [WPF]"
 ms.assetid: 333ca72a-c2f3-4414-9303-3fdabaaa1b32
 caps.latest.revision: 5
 author: dotnet-bot

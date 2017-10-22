@@ -9,12 +9,11 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "scenes, 3-D"
-  - "creating, 3-D scenes"
+  - "scenes [WPF], 3-D"
   - "3-D scenes"
 ms.assetid: adb4a598-71a2-4dd5-b677-ea3fc11b78b2
 caps.latest.revision: 10

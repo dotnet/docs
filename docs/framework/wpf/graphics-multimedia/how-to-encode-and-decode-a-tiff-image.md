@@ -9,17 +9,17 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "TIFF encoding"
-  - "encoding TIFF images"
-  - "encoding image formats"
-  - "decoding TIFF images"
-  - "decoding image formats"
-  - "TIFF decoding"
+  - "TIFF encoding [WPF]"
+  - "encoding TIFF images [WPF]"
+  - "encoding image formats [WPF]"
+  - "decoding TIFF images [WPF]"
+  - "decoding image formats [WPF]"
+  - "TIFF decoding [WPF]"
 ms.assetid: 1dfe3209-fc73-40e6-ad1c-71c1c58b3364
 caps.latest.revision: 5
 author: dotnet-bot

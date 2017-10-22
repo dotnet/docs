@@ -10,8 +10,8 @@ f1_keywords:
   - "vb.ByRef"
   - "ByRef"
 helpviewer_keywords: 
-  - "ByRef keyword"
-  - "ByRef keyword, contexts"
+  - "ByRef keyword [Visual Basic]"
+  - "ByRef keyword [Visual Basic], contexts"
 ms.assetid: 4692e032-46f3-4e41-b0fa-3004364d9138
 caps.latest.revision: 10
 author: dotnet-bot

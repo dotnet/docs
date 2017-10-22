@@ -9,11 +9,11 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "qualification, of element names"
-  - "base classes, accessing elements"
-  - "element names, qualification"
-  - "references, declared elements"
-  - "declared elements, referencing"
+  - "qualification [Visual Basic], of element names"
+  - "base classes [Visual Basic], accessing elements"
+  - "element names [Visual Basic], qualification"
+  - "references [Visual Basic], declared elements"
+  - "declared elements [Visual Basic], referencing"
   - "variables [Visual Basic], accessing hidden"
 ms.assetid: ae21a8ac-9cd4-4fba-a3ec-ecc4321ef93c
 caps.latest.revision: 20

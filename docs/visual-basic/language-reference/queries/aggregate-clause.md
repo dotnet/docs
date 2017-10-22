@@ -12,8 +12,8 @@ f1_keywords:
   - "vb.QueryAggregate"
   - "vb.QueryAggregateInto"
 helpviewer_keywords: 
-  - "Aggregate clause"
-  - "Aggregate statement"
+  - "Aggregate clause [Visual Basic]"
+  - "Aggregate statement [Visual Basic]"
   - "queries [Visual Basic], Aggregate"
 ms.assetid: 1315a814-5db6-4077-b34b-b141e11cc0eb
 caps.latest.revision: 25

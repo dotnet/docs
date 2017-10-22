@@ -11,13 +11,13 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "lists"
-  - "checked list items, Windows Forms controls"
-  - "user interface, creating"
-  - "lists, items with icons"
-  - "icons, listing with items"
+  - "checked list items [Windows Forms], Windows Forms controls"
+  - "user interface [Windows Forms], creating"
+  - "lists [Windows Forms], items with icons"
+  - "icons [Windows Forms], listing with items"
   - "list views"
   - "ListView control [Windows Forms]"
-  - "list controls, List view"
+  - "list controls [Windows Forms], List view"
 ms.assetid: 9f71cf5c-82da-488a-a04e-ef52c0817187
 caps.latest.revision: 15
 author: dotnet-bot

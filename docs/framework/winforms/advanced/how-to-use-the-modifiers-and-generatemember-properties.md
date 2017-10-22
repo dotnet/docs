@@ -9,18 +9,16 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 f1_keywords: 
   - "Designer_GenerateMember"
   - "Designer_Modifiers"
 helpviewer_keywords: 
-  - "GenerateMember property"
-  - "Modifiers property"
   - "base forms"
-  - "inheritance, forms"
-  - "inherited forms, Windows Forms"
+  - "inheritance [Windows Forms], forms"
+  - "inherited forms [Windows Forms], Windows Forms"
   - "inherited forms"
   - "form inheritance"
   - "Windows Forms, inheritance"

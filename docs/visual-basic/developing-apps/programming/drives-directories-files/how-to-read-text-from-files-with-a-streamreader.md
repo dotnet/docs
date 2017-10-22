@@ -9,10 +9,10 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "reading files, text"
+  - "reading files [Visual Basic], text"
   - "text, reading from files"
-  - "reading text from files"
-  - "files, reading"
+  - "reading text from files [Visual Basic]"
+  - "files [Visual Basic], reading"
 ms.assetid: 384033c6-18f9-4d59-9610-36371226558f
 caps.latest.revision: 18
 author: dotnet-bot

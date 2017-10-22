@@ -11,10 +11,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "DomainUpDown control [Windows Forms]"
-  - "spin button control, up-down controls"
+  - "spin button control [Windows Forms], up-down controls"
   - "up-down controls"
   - "spin button control"
-  - "up-down controls, spin button controls"
+  - "up-down controls [Windows Forms], spin button controls"
 ms.assetid: fb7cf017-e931-4a95-9d21-8caee4ee122a
 caps.latest.revision: 6
 author: dotnet-bot

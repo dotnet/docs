@@ -9,10 +9,10 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "declarations, structures"
-  - "structure statements"
+  - "declarations [Visual Basic], structures"
+  - "structure statements [Visual Basic]"
   - "statements [Visual Basic], structure"
-  - "structures, declaring"
+  - "structures [Visual Basic], declaring"
 ms.assetid: d5e98381-eb81-47d4-af83-48cc534a2572
 caps.latest.revision: 15
 author: dotnet-bot

@@ -11,8 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], cell styles"
-  - "cells, styles"
-  - "data grids, cell styles"
+  - "cells [Windows Forms], styles"
+  - "data grids [Windows Forms], cell styles"
 ms.assetid: dbb75ed6-8804-4232-8382-f9920c2e380c
 caps.latest.revision: 33
 author: dotnet-bot

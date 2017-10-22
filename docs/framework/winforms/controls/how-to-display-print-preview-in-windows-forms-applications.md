@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "print preview, displaying"
+  - "print preview [Windows Forms], displaying"
   - "printing [Windows Forms], print preview"
   - "examples [Windows Forms], print preview"
 ms.assetid: e394134c-0886-4517-bd8d-edc4a3749eb5

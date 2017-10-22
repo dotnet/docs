@@ -10,10 +10,10 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "corners, rounding"
-  - "RectangleGeometry class, rounding corners"
-  - "graphics, rounding corners of RectangleGeometry objects"
-  - "rounding corners of RectangleGeometry objects"
+  - "corners [WPF], rounding"
+  - "RectangleGeometry class [WPF], rounding corners"
+  - "graphics [WPF], rounding corners of RectangleGeometry objects [WPF]"
+  - "rounding corners of RectangleGeometry objects [WPF]"
 ms.assetid: 926644bc-1357-4c0b-ac81-694bd090ae87
 caps.latest.revision: 4
 author: dotnet-bot

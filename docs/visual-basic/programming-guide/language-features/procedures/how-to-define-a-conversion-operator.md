@@ -9,11 +9,11 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "procedures, defining"
+  - "procedures [Visual Basic], defining"
   - "operators [Visual Basic], defining"
-  - "procedures, operator"
+  - "procedures [Visual Basic], operator"
   - "operators [Visual Basic], overloading"
-  - "return values, Operator procedures"
+  - "return values [Visual Basic], Operator procedures"
   - "operator overloading"
 ms.assetid: 54203dfa-c24b-463f-9942-d5153e89e762
 caps.latest.revision: 14

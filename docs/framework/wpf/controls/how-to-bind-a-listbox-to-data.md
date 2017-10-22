@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "ListBox controls, binding data to"
-  - "data binding, ListBox control"
-  - "binding data, to ListBox control"
+  - "ListBox controls [WPF], binding data to"
+  - "data binding [WPF], ListBox control"
+  - "binding data [WPF], to ListBox control"
 ms.assetid: de93a907-709a-44a7-84bf-578b846a3d8b
 caps.latest.revision: 12
 author: dotnet-bot

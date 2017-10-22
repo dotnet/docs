@@ -10,10 +10,10 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "object variables, about object variables"
+  - "object variables [Visual Basic], about object variables"
   - "variables [Visual Basic], object"
   - "objects [Visual Basic], accessing"
-  - "object variables"
+  - "object variables [Visual Basic]"
 ms.assetid: 6169a196-2b13-4ba5-a205-154bc1b87844
 caps.latest.revision: 14
 author: dotnet-bot

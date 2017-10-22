@@ -10,8 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "forms, MDI"
-  - "windows, MDI"
+  - "forms [Windows Forms], MDI"
+  - "windows [Windows Forms], mDI"
   - "Windows Forms, MDI applications"
   - "MDI"
 ms.assetid: 599faf75-13cf-49cc-ad3c-255545e5cb97

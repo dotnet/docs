@@ -9,15 +9,15 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "DataGrid control [Windows Forms], examples"
-  - "user input, validating"
+  - "user input [Windows Forms], validating"
   - "examples [Windows Forms], DataGrid control"
   - "DataGrid control [Windows Forms], validating input"
-  - "validation, user input"
+  - "validation [Windows Forms], user input"
 ms.assetid: f1e9c3a0-d0a1-4893-a615-b4b0db046c63
 caps.latest.revision: 14
 author: dotnet-bot

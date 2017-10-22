@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "3-D graphics"
+  - "3-D graphics [WPF]"
   - "graphics [WPF], 3-D"
 ms.assetid: 67f31ed4-e36b-4b02-9889-dcce245d7afc
 caps.latest.revision: 21

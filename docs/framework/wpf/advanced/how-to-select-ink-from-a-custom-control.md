@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "controls, ink selection"
-  - "ink, selecting from custom control"
-  - "custom controls, ink selection"
+  - "controls [WPF], ink selection"
+  - "ink [WPF], selecting from custom control"
+  - "custom controls [WPF], ink selection"
 ms.assetid: 5f3a45c6-6d40-4017-9b47-933f134ceba3
 caps.latest.revision: 5
 author: dotnet-bot

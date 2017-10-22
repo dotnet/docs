@@ -12,7 +12,7 @@ f1_keywords:
   - "addhandler"
   - "vb.addhandler"
 helpviewer_keywords: 
-  - "AddHandler statement"
+  - "AddHandler statement [Visual Basic]"
 ms.assetid: cfe69799-2a0f-42c0-a99e-09fed954da01
 caps.latest.revision: 15
 author: dotnet-bot

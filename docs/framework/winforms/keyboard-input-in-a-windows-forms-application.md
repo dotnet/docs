@@ -10,8 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "keyboard input, using in Windows Forms"
-  - "keyboards, keyboard input"
+  - "keyboard input [Windows Forms], using in Windows Forms"
+  - "keyboards [Windows Forms], keyboard input"
   - "Windows Forms, keyboard input"
 ms.assetid: 68f5bc70-14d5-45c9-b288-7d7b1493ee79
 caps.latest.revision: 6

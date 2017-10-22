@@ -10,13 +10,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "data grids, mouse handling"
+  - "data grids [Windows Forms], mouse handling"
   - "DataGridView control [Windows Forms], navigation keys"
-  - "keyboards, default handling in DataGridView control"
+  - "keyboards [Windows Forms], default handling in DataGridView control"
   - "DataGridView control [Windows Forms], keyboard handling"
-  - "mouse, default handling in DataGridView control"
+  - "mouse [Windows Forms], default handling in DataGridView control"
   - "DataGridView control [Windows Forms], mouse handling"
-  - "navigation keys, DataGridView control"
+  - "navigation keys [Windows Forms], DataGridView control"
 ms.assetid: 4519b928-bfc8-4e8b-bb9c-b1e76a0ca552
 caps.latest.revision: 19
 author: dotnet-bot

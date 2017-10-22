@@ -14,18 +14,18 @@ f1_keywords:
   - "ForEachNext"
 helpviewer_keywords: 
   - "infinite loops"
-  - "Next statement, For Each...Next"
+  - "Next statement [Visual Basic], For Each...Next"
   - "endless loops"
-  - "loop structures, For Each...Next"
+  - "loop structures [Visual Basic], For Each...Next"
   - "loops, endless"
-  - "Each keyword"
+  - "Each keyword [Visual Basic]"
   - "instructions, repeating"
-  - "For Each statement"
+  - "For Each statement [Visual Basic]"
   - "collections, instruction repetition"
   - "loops, infinite"
   - "For Each...Next statements"
   - "For keyword [Visual Basic], For Each...Next statements"
-  - "Exit statement, For Each...Next statements"
+  - "Exit statement [Visual Basic], For Each...Next statements"
   - "iteration"
 ms.assetid: ebce3120-95c3-42b1-b70b-fa7da40c75e2
 caps.latest.revision: 56

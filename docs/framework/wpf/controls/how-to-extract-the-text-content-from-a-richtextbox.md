@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "text content, extracting"
-  - "RichTextBox control, extracting text content"
-  - "content, extracting"
-  - "extracting text content"
+  - "text content [WPF], extracting"
+  - "RichTextBox control [WPF], extracting text content"
+  - "content [WPF], extracting"
+  - "extracting text content [WPF]"
 ms.assetid: f13c093f-1a05-45b3-ac8f-c9ea5e4a11c5
 caps.latest.revision: 7
 author: dotnet-bot

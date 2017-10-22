@@ -12,7 +12,7 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "sending mail from pages with mailto:"
   - "mailto:, sending mail from pages"
-  - "mail, sending from pages"
+  - "mail [WPF], sending from pages"
 ms.assetid: b64b9518-df17-4232-94f2-455a4f77ee48
 caps.latest.revision: 6
 author: dotnet-bot

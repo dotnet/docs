@@ -10,14 +10,14 @@ f1_keywords:
   - "vb.Date"
 helpviewer_keywords: 
   - "Date data type"
-  - "dates, Visual Basic data types"
-  - "times, Date data type"
-  - "Date literals"
-  - "data values"
-  - "times, Visual Basic data types"
-  - "dates, Date data type"
+  - "dates [Visual Basic], Visual Basic data types"
+  - "times [Visual Basic], Date data type"
+  - "Date literals [Visual Basic]"
+  - "data values [Visual Basic]"
+  - "times [Visual Basic], Visual Basic data types"
+  - "dates [Visual Basic], Date data type"
   - "data types [Visual Basic], assigning"
-  - "literals, Date"
+  - "literals [Visual Basic], Date"
   - "# specifier for Date literals"
 ms.assetid: d9edf5b0-e85e-438b-a1cf-1f321e7c831b
 caps.latest.revision: 22

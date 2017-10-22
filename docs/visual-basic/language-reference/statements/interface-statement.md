@@ -9,7 +9,7 @@ f1_keywords:
   - "vb.Interface"
 helpviewer_keywords: 
   - "interface statement [Visual Basic]"
-  - "interfaces, interface definition"
+  - "interfaces [Visual Basic], interface definition"
 ms.assetid: 8997af73-bda3-4f79-bd41-ca396b610260
 caps.latest.revision: 26
 author: dotnet-bot

@@ -10,10 +10,10 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "media, repeating playback"
-  - "repeating media playback"
-  - "multimedia, repeating media playback"
-  - "playback of media, repeating"
+  - "media [WPF], repeating playback"
+  - "repeating media playback [WPF]"
+  - "multimedia [WPF], repeating media playback"
+  - "playback of media [WPF], repeating"
 ms.assetid: 02ab486d-c6b6-4918-9edd-45a12aca4683
 caps.latest.revision: 10
 author: dotnet-bot

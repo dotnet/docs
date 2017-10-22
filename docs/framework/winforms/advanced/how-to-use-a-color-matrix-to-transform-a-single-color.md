@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "image colors, transforming"
-  - "color matrices, using"
+  - "image colors [Windows Forms], transforming"
+  - "color matrices [Windows Forms], using"
 ms.assetid: 44df4556-a433-49c0-ac0f-9a12063a5860
 caps.latest.revision: 17
 author: dotnet-bot

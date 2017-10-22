@@ -10,16 +10,16 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.Or"
 helpviewer_keywords: 
-  - "Or operator"
+  - "Or operator [Visual Basic]"
   - "operators [Visual Basic], bitwise"
-  - "inclusive Or operator"
-  - "bitwise operators, OR operator"
-  - "Or keyword"
+  - "inclusive Or operator [Visual Basic]"
+  - "bitwise operators [Visual Basic], OR operator"
+  - "Or keyword [Visual Basic]"
   - "operators [Visual Basic], inclusive or"
   - "operators [Visual Basic], disjunction"
-  - "bitwise comparison"
+  - "bitwise comparison [Visual Basic]"
   - "logical disjunction"
-  - "disjunction operator"
+  - "disjunction operator [Visual Basic]"
 ms.assetid: 41ed6905-bf3d-468a-9e3b-03c10d461891
 caps.latest.revision: 12
 author: dotnet-bot

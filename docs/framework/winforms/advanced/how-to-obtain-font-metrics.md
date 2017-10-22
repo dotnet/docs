@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "fonts, obtaining metrics"
-  - "font metrics, obtaining"
+  - "fonts [Windows Forms], obtaining metrics"
+  - "font metrics [Windows Forms], obtaining"
 ms.assetid: ff7c0616-67f7-4fa2-84ee-b8d642f2b09b
 caps.latest.revision: 13
 author: dotnet-bot

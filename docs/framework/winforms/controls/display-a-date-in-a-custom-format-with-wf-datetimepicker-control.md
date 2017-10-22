@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "DateTimePicker control [Windows Forms], display styles"
   - "examples [Windows Forms], DateTimePicker control"
-  - "dates, displaying in DateTimePicker control"
+  - "dates [Windows Forms], displaying in DateTimePicker control"
 ms.assetid: 39767691-2d2b-46b6-a663-b7901e581a6e
 caps.latest.revision: 14
 author: dotnet-bot

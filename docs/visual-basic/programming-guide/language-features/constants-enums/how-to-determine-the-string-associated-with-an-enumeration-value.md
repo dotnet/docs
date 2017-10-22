@@ -11,7 +11,7 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "enumerations [Visual Basic]"
   - "strings [Visual Basic], enumeration values"
-  - "values, enumeration members"
+  - "values [Visual Basic], enumeration members"
 ms.assetid: 9253e7c8-579c-49a2-8f26-392b20ea99eb
 caps.latest.revision: 12
 author: dotnet-bot

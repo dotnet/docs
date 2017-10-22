@@ -9,13 +9,11 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "classes, PriorityBinding"
-  - "data binding, PriorityBinding class"
-  - "PriorityBinding class"
+  - "data binding [WPF], PriorityBinding class"
 ms.assetid: d63b65ab-b3e9-4322-9aa8-1450f8d89532
 caps.latest.revision: 13
 author: dotnet-bot

@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "graphics, managing state"
-  - "graphics, clipping"
+  - "graphics [Windows Forms], managing state"
+  - "graphics [Windows Forms], clipping"
 ms.assetid: 6207cad1-7a34-4bd6-bfc1-db823ca7a73e
 caps.latest.revision: 14
 author: dotnet-bot

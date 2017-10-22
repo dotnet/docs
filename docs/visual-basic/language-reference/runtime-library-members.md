@@ -11,7 +11,7 @@ helpviewer_keywords:
   - "run-time libraries, Visual Basic"
   - "libraries, Visual Basic run-time"
   - "Microsoft.VisualBasic namespace"
-  - "members, Visual Basic run-time library"
+  - "members [Visual Basic], Visual Basic run-time library"
 ms.assetid: f5e82c6e-3500-452b-bdb8-78f0d5477604
 caps.latest.revision: 16
 author: dotnet-bot

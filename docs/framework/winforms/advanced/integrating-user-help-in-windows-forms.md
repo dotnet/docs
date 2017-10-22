@@ -10,12 +10,12 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "Help, Windows Forms (using designer)"
+  - "Help [Windows Forms], Windows Forms (using designer)"
   - "Windows Forms, Help (using designer)"
-  - "HTML Help, Windows Forms (using designer)"
-  - "Help, Windows applications (using designer)"
+  - "HTML Help [Windows Forms], Windows Forms (using designer)"
+  - "Help [Windows Forms], Windows applications (using designer)"
   - "forms. Help (using designer)"
-  - "Windows applications, Help (using designer)"
+  - "Windows applications [Windows Forms], Help (using designer)"
 ms.assetid: a8563d25-8a75-4bc7-a024-f1870591b50f
 caps.latest.revision: 11
 author: dotnet-bot

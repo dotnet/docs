@@ -10,7 +10,7 @@ ms.technology:
 ms.topic: "article"
 helpviewer_keywords: 
   - "interoperability, COM and .NET framework objects"
-  - "COM interop"
+  - "COM interop [Visual Basic]"
   - "shared components"
 ms.assetid: f5a72143-c268-4dff-a019-974ad940e17d
 caps.latest.revision: 15

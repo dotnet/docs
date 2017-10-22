@@ -9,21 +9,21 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "lines"
   - "GDI+, lines"
-  - "drawing, rectangles"
+  - "drawing [Windows Forms], rectangles"
   - "rectangles"
-  - "drawing, lines"
+  - "drawing [Windows Forms], lines"
   - "GDI+, pens"
   - "examples [Windows Forms], drawing lines and shapes"
   - "examples [Windows Forms], pens"
   - "GDI+, rectangles"
   - "examples [Windows Forms], GDI+"
-  - "lines, dashed"
+  - "lines [Windows Forms], dashed"
 ms.assetid: 30b25aae-e3eb-4479-bdb8-187cf651fc84
 caps.latest.revision: 14
 author: dotnet-bot

@@ -11,7 +11,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Forms [WPF], interoperability with"
-  - "Windows Forms, WPF interoperation"
+  - "Windows Forms [WPF], WPF interoperation"
   - "interoperability [WPF], Windows Forms"
 ms.assetid: 8a157e6b-8054-46db-a5cf-a78966acc7a1
 caps.latest.revision: 27

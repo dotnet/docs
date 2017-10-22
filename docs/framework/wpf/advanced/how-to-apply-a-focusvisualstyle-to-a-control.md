@@ -10,8 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "properties, FocusVisualStyle"
-  - "FocusVisualStyle property"
+  - "properties [WPF], FocusVisualStyle"
+  - "FocusVisualStyle property [WPF]"
 ms.assetid: 363de99e-8ecc-438c-ac4a-f9147432ebd6
 caps.latest.revision: 11
 author: dotnet-bot

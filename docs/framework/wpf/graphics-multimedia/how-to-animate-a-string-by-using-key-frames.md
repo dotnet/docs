@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "animation, strings with key frames"
-  - "strings, animating with key frames"
-  - "key frames, animating strings with"
+  - "animation [WPF], strings with key frames"
+  - "strings [WPF], animating with key frames"
+  - "key frames [WPF], animating strings with"
 ms.assetid: c62bc9fd-c09a-4227-bce0-0a1ab82049dd
 caps.latest.revision: 9
 author: dotnet-bot

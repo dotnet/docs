@@ -10,14 +10,14 @@ f1_keywords:
   - "vb.MustOverride"
   - "MustOverride"
 helpviewer_keywords: 
-  - "virtual elements, pure"
-  - "elements, pure virtual"
+  - "virtual elements [Visual Basic], pure"
+  - "elements [Visual Basic], pure virtual"
   - "properties [Visual Basic], redefining"
-  - "procedures, overriding"
+  - "procedures [Visual Basic], overriding"
   - "overriding, MustOverride keyword"
-  - "procedures, redefining"
-  - "pure virtual elements"
-  - "MustOverride keyword"
+  - "procedures [Visual Basic], redefining"
+  - "pure virtual elements [Visual Basic]"
+  - "MustOverride keyword [Visual Basic]"
   - "properties [Visual Basic], overriding"
 ms.assetid: 6e9d9ad6-bb64-433f-b32b-3ef84293bf96
 caps.latest.revision: 17

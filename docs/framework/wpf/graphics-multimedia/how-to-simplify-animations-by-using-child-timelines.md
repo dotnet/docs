@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "simplifying animations by child timelines"
-  - "animation, simplifying by child timelines"
-  - "child timelines"
+  - "simplifying animations by child timelines [WPF]"
+  - "animation [WPF], simplifying by child timelines"
+  - "child timelines [WPF]"
 ms.assetid: 8335d770-d13d-42bd-8dfa-63f92c0327e2
 caps.latest.revision: 9
 author: dotnet-bot

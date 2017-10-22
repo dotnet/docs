@@ -10,8 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "object variables, declaring"
-  - "declaring object variables"
+  - "object variables [Visual Basic], declaring"
+  - "declaring object variables [Visual Basic]"
 ms.assetid: 2fa77dde-1fb2-439a-80d4-3e9787649fad
 caps.latest.revision: 11
 author: dotnet-bot

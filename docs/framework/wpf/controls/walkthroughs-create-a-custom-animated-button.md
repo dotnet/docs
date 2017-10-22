@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "custom animated buttons"
-  - "buttons"
-  - "animation, buttons"
+  - "custom animated buttons [WPF]"
+  - "buttons [WPF]"
+  - "animation [WPF], buttons [WPF]"
 ms.assetid: e9532c72-460f-4898-9332-613fa21d746a
 caps.latest.revision: 7
 author: dotnet-bot

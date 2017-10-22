@@ -10,9 +10,9 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.QueryWhere"
 helpviewer_keywords: 
-  - "Where statement"
+  - "Where statement [Visual Basic]"
   - "queries [Visual Basic], Where"
-  - "Where clause"
+  - "Where clause [Visual Basic]"
 ms.assetid: 48b5c2c5-3181-429c-8545-894296798c89
 caps.latest.revision: 18
 author: dotnet-bot

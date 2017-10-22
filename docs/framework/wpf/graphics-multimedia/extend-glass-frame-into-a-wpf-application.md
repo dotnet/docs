@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "applications, extending glass frames into"
-  - "graphics, extending glass frames into applications"
-  - "extending glass frames into applications"
-  - "glass frames, extending into applications"
+  - "applications [WPF], extending glass frames into"
+  - "graphics [WPF], extending glass frames into applications"
+  - "extending glass frames into applications [WPF]"
+  - "glass frames [WPF], extending into applications"
 ms.assetid: 74388a3a-4b69-4a9d-ba1f-e107636bd660
 caps.latest.revision: 12
 author: dotnet-bot

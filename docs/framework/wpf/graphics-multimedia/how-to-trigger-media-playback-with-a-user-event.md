@@ -10,10 +10,10 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "synchronizing media playback with events"
-  - "playback of media, synchronizing with events"
-  - "media, synchronizing playback with events"
-  - "multimedia, synchronizing media playback with events"
+  - "synchronizing media playback with events [WPF]"
+  - "playback of media [WPF], synchronizing with events"
+  - "media [WPF], synchronizing playback with events"
+  - "multimedia [WPF], synchronizing media playback with events"
 ms.assetid: c4dbe632-6e7f-4d7f-9df5-98737a758bc3
 caps.latest.revision: 10
 author: dotnet-bot

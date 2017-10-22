@@ -12,9 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "COM [Windows Forms]"
   - "Windows Forms, unmanaged"
-  - "COM interop, calling methods"
+  - "COM interop [Windows Forms], calling methods"
   - "ActiveX controls [Windows Forms], COM interop"
-  - "ShowDialog method"
   - "Windows Forms, interop"
 ms.assetid: 87aac8ad-3c04-43b3-9b0c-d0b00df9ee74
 caps.latest.revision: 6

@@ -12,7 +12,7 @@ ms.topic: "article"
 f1_keywords: 
   - "FlowLayoutPanel"
 helpviewer_keywords: 
-  - "forms, dynamic layout"
+  - "forms [Windows Forms], dynamic layout"
   - "layout [Windows Forms], dynamic"
   - "Windows Forms, dynamic layout"
   - "FlowLayoutPanel control [Windows Forms], about FlowLayoutPanel control"

@@ -9,8 +9,8 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "troubleshooting events"
-  - "inherited events"
+  - "troubleshooting events [Visual Basic]"
+  - "inherited events [Visual Basic]"
   - "troubleshooting Visual Basic, event handlers"
   - "event handling, troubleshooting"
   - "event handlers, troubleshooting"

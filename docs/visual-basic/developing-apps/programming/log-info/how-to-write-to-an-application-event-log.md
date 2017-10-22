@@ -10,7 +10,7 @@ ms.technology:
 ms.topic: "article"
 helpviewer_keywords: 
   - "Computer.EventLog element"
-  - "WriteEntry method"
+  - "WriteEntry method [Visual Basic]"
   - "My.Computer.EventLog element"
   - "event logs, writing to"
 ms.assetid: cadbc8c1-87af-4746-934e-55b79a4f6e2b

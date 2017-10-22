@@ -9,15 +9,15 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "Windows Forms, displaying"
-  - "Windows Forms dialog boxes, displaying"
+  - "Windows Forms dialog boxes [Windows Forms], displaying"
   - "Windows Forms, calling one form from another"
-  - "dialog boxes, displaying for Windows Forms"
+  - "dialog boxes [Windows Forms], displaying for Windows Forms"
 ms.assetid: aaac1b38-c651-495a-8d3d-5a9bfb32fee3
 caps.latest.revision: 10
 author: dotnet-bot

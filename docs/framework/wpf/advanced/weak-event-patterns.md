@@ -10,10 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "weak event pattern implementation"
-  - "WeakEventManager class"
-  - "event handlers, weak event pattern"
-  - "IWeakEventListener interface"
+  - "weak event pattern implementation [WPF]"
+  - "event handlers [WPF], weak event pattern"
+  - "IWeakEventListener interface [WPF]"
 ms.assetid: e7c62920-4812-4811-94d8-050a65c856f6
 caps.latest.revision: 18
 author: dotnet-bot

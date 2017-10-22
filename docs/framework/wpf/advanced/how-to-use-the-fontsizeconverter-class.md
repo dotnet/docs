@@ -10,8 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "FontSizeConverter objects"
-  - "typography, FontSizeConverter objects"
+  - "FontSizeConverter objects [WPF]"
+  - "typography [WPF], FontSizeConverter objects"
 ms.assetid: 3b0592bd-7223-4860-a108-a5d72f3a9178
 caps.latest.revision: 12
 author: dotnet-bot

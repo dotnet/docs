@@ -10,9 +10,9 @@ ms.technology:
 ms.topic: "article"
 helpviewer_keywords: 
   - "Visual Basic code, procedures"
-  - "procedures, that call themselves"
-  - "procedures, recursive"
-  - "procedures, calling"
+  - "procedures [Visual Basic], that call themselves"
+  - "procedures [Visual Basic], recursive"
+  - "procedures [Visual Basic], calling"
   - "recursive procedures"
   - "functions [Visual Basic], calling recursively"
   - "recursion"

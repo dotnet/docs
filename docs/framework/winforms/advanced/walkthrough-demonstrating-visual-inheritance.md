@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "form inheritance, walkthroughs"
+  - "form inheritance [Windows Forms], walkthroughs"
   - "visual inheritance"
-  - "inheritance, walkthroughs"
+  - "inheritance [Windows Forms], walkthroughs"
   - "walkthroughs [Windows Forms], visual inheritance"
   - "Windows Forms, inheritance"
 ms.assetid: 01966086-3142-450e-8210-3fd4cb33f591

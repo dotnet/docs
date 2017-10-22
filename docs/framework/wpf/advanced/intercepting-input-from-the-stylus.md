@@ -9,15 +9,14 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "architecture, System.Windows.Input.StylusPlugIns"
-  - "StylusPlugIns architecture"
-  - "InkCanvas, adding plug-ins to"
-  - "System.Windows.Input.StylusPlugIns architecture"
-  - "plug-ins, stylus"
+  - "architecture [WPF], "
+  - ", "
+  - ", "
+  - ", "
 ms.assetid: 791bb2f0-4e5c-4569-ac3c-211996808d44
 caps.latest.revision: 11
 author: dotnet-bot

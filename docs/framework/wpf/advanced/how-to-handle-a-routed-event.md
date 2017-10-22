@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "routed events, handling"
-  - "bubbling events"
+  - "routed events [WPF], handling"
+  - "bubbling events [WPF]"
 ms.assetid: 157787b4-f469-4047-8777-5b034145f32e
 caps.latest.revision: 23
 author: dotnet-bot

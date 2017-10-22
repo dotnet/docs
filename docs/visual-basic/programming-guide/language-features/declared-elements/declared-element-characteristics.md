@@ -9,16 +9,16 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "declared elements, lifetime"
+  - "declared elements [Visual Basic], lifetime"
   - "access levels, declared elements"
-  - "declared elements, scope"
-  - "visibility, declared elements"
-  - "elements, programming"
-  - "scope, declared elements"
-  - "lifetime, declared elements"
-  - "declared elements, access level"
+  - "declared elements [Visual Basic], scope"
+  - "visibility [Visual Basic], declared elements"
+  - "elements [Visual Basic], programming"
+  - "scope [Visual Basic], declared elements"
+  - "lifetime [Visual Basic], declared elements"
+  - "declared elements [Visual Basic], access level"
   - "data types [Visual Basic], declared elements"
-  - "declared elements, visibility"
+  - "declared elements [Visual Basic], visibility"
 ms.assetid: 1bc40fb8-b67c-4428-90a4-76b630ae2583
 caps.latest.revision: 16
 author: dotnet-bot

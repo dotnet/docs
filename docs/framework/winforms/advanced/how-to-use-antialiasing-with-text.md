@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "strings [Windows Forms], smoothing drawn"
-  - "antialiasing, using with text"
+  - "antialiasing [Windows Forms], using with text"
   - "text [Windows Forms], smoothing"
   - "text [Windows Forms], antialiasing"
   - "strings [Windows Forms], antialiasing when drawing"

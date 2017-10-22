@@ -10,11 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "PathGeometry class"
-  - "classes, PathGeometry"
-  - "multiple subpaths"
+  - "multiple subpaths [WPF]"
   - "graphics [WPF], subpaths"
-  - "subpaths"
+  - "subpaths [WPF]"
 ms.assetid: 104a862c-dde2-4e62-ac87-80660dd1681c
 caps.latest.revision: 9
 author: dotnet-bot

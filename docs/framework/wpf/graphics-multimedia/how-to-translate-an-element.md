@@ -10,9 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "classes, TranslateTransform"
-  - "graphics, translations"
-  - "TranslateTransform class"
+  - "graphics [WPF], translations"
 ms.assetid: 461c8273-15df-42f6-8672-89ba22887cc0
 caps.latest.revision: 12
 author: dotnet-bot

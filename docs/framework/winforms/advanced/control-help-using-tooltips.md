@@ -10,10 +10,10 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "Help, tooltips for controls"
+  - "Help [Windows Forms], tooltips for controls"
   - "controls [Windows Forms], tooltips"
   - "tooltips [Windows Forms], for controls"
-  - "Help, adding to dialog boxes"
+  - "Help [Windows Forms], adding to dialog boxes"
 ms.assetid: 03263f94-e539-440b-a67c-8b9110c96dcd
 caps.latest.revision: 8
 author: dotnet-bot

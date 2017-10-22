@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "ink, analyzing"
-  - "analyzing ink"
-  - "ink, AnalysisHintNode objects"
-  - "AnalysisHintNode objects"
+  - "ink [WPF], analyzing"
+  - "analyzing ink [WPF]"
+  - "ink [WPF], AnalysisHintNode objects [WPF]"
+  - "AnalysisHintNode objects [WPF]"
 ms.assetid: d4421ed4-77f5-4640-829e-9f1de50b2ff2
 caps.latest.revision: 4
 author: dotnet-bot

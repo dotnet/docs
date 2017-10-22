@@ -14,8 +14,8 @@ f1_keywords:
 helpviewer_keywords: 
   - "RadioButton control [Windows Forms], about RadioButton control"
   - "RadioButton control [Windows Forms], determining state"
-  - "radio buttons, determining state"
-  - "radio buttons, about radio buttons"
+  - "radio buttons [Windows Forms], determining state"
+  - "radio buttons [Windows Forms], about radio buttons"
 ms.assetid: cd11f0c2-d098-4022-adf9-1455bc166a13
 caps.latest.revision: 9
 author: dotnet-bot

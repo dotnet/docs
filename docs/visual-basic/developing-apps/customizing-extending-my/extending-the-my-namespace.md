@@ -8,9 +8,9 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.AddingMyExtensions"
 helpviewer_keywords: 
-  - "My namespace, customizing"
+  - "My namespace [Visual Basic], customizing"
   - "My namespace"
-  - "My namespace, extending"
+  - "My namespace [Visual Basic], extending"
 ms.assetid: 808e8617-b01c-4135-8b21-babe87389e8e
 caps.latest.revision: 13
 author: dotnet-bot

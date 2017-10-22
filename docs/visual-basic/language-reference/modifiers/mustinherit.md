@@ -11,9 +11,9 @@ f1_keywords:
   - "vb.MustInherit"
 helpviewer_keywords: 
   - "classes [Visual Basic], abstract"
-  - "MustInherit classes, MustInherit keyword"
-  - "abstract classes, MustInherit class"
-  - "MustInherit keyword"
+  - "MustInherit classes [Visual Basic], MustInherit keyword"
+  - "abstract classes [Visual Basic], MustInherit class"
+  - "MustInherit keyword [Visual Basic]"
 ms.assetid: b8f05185-90e3-4dd7-adc2-90d852fab5b4
 caps.latest.revision: 15
 author: dotnet-bot

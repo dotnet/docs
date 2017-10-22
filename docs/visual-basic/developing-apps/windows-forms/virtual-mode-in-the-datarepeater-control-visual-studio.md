@@ -10,7 +10,7 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "virtual data binding"
+  - "virtual data binding [Visual Basic]"
   - "DataRepeater"
   - "DataRepeater, virtual mode"
 ms.assetid: 5fb805dc-2d8b-4139-b1e3-86e4c2667221

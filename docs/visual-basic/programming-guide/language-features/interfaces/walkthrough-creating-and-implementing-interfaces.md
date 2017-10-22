@@ -9,10 +9,10 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "interfaces, walkthroughs"
-  - "interfaces, testing"
-  - "interface implementation, walkthrough"
-  - "interfaces, creating"
+  - "interfaces [Visual Basic], walkthroughs"
+  - "interfaces [Visual Basic], testing"
+  - "interface implementation [Visual Basic], walkthrough"
+  - "interfaces [Visual Basic], creating"
 ms.assetid: ded82af2-9f52-4232-98ef-fe458180f112
 caps.latest.revision: 22
 author: dotnet-bot

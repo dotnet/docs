@@ -10,11 +10,10 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "curves, cubic Bezier"
-  - "creating, cubic Bezier curves"
-  - "Bezier curves, cubic"
-  - "graphics, cubic Bezier curves"
-  - "cubic Bezier curves"
+  - "curves [WPF], cubic Bezier"
+  - "Bezier curves [WPF], cubic"
+  - "graphics [WPF], cubic Bezier curves"
+  - "cubic Bezier curves [WPF]"
 ms.assetid: 450a3a77-7c57-48b0-a008-0f6051add980
 caps.latest.revision: 8
 author: dotnet-bot

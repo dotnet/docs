@@ -9,13 +9,11 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "TextDecoration class"
-  - "classes, TextDecoration"
-  - "Hyperlink control type"
+  - "Hyperlink control type [WPF]"
 ms.assetid: 3996cfe6-1dac-4835-aeb3-c719ce9cfee5
 caps.latest.revision: 5
 author: dotnet-bot

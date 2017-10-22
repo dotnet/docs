@@ -10,8 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "TickBar"
-  - "Slider control, creating with TickBar"
+  - "TickBar [WPF]"
+  - "Slider control [WPF], creating with TickBar"
 ms.assetid: 4fa694f2-a620-4b15-be78-5f4286f89361
 caps.latest.revision: 17
 author: dotnet-bot

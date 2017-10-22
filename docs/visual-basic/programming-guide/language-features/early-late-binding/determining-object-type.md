@@ -11,7 +11,7 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "classes [Visual Basic], discovering which an object belongs to"
   - "types [Visual Basic], determining Visual Basic object types"
-  - "object variables, testing values"
+  - "object variables [Visual Basic], testing values"
   - "TypeOf...Is expression, object type at run time"
   - "TypeName function"
   - "objects [Visual Basic], type determining"

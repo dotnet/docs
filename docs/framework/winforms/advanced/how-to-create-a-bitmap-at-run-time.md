@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "bitmaps, creating"
-  - "bitmaps, examples [Visual Basic]"
+  - "bitmaps [Windows Forms], creating"
+  - "bitmaps [Windows Forms], examples [Visual Basic]"
 ms.assetid: 737bae30-e599-4e1d-bf30-bab8280b32be
 caps.latest.revision: 7
 author: dotnet-bot

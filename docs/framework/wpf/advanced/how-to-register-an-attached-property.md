@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "attached properties, registering"
-  - "registering attached properties"
+  - "attached properties [WPF], registering"
+  - "registering attached properties [WPF]"
 ms.assetid: eb47bd94-0451-4f8d-8fb6-95f7812ac05b
 caps.latest.revision: 12
 author: dotnet-bot

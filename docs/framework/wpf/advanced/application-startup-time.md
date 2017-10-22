@@ -11,7 +11,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "splash screen [WPF], startup time"
-  - "WPF, startup time"
+  - "WPF [WPF], startup time"
   - "startup time [WPF]"
   - "application startup [WPF]"
   - "performance [WPF], startup time"

@@ -11,7 +11,7 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.ExtensionMethods"
 helpviewer_keywords: 
-  - "extending data types"
+  - "extending data types [Visual Basic]"
   - "extension methods [Visual Basic]"
 ms.assetid: b8020aae-374d-46a9-bcb7-8cc2390b93b6
 caps.latest.revision: 41

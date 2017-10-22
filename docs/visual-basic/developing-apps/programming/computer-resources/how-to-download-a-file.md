@@ -9,11 +9,11 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "downloading Internet resources, files"
-  - "downloading files"
-  - "remote computers, downloading from"
-  - "files, downloading"
-  - "files, transferring"
+  - "downloading Internet resources [Visual Basic], files"
+  - "downloading files [Visual Basic]"
+  - "remote computers [Visual Basic], downloading from"
+  - "files [Visual Basic], downloading"
+  - "files [Visual Basic], transferring"
 ms.assetid: ac479f81-c0e2-4b99-af73-217f446b73da
 caps.latest.revision: 22
 author: dotnet-bot

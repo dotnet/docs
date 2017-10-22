@@ -10,8 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "grids, automatic layout"
-  - "automatic layout, grid use"
+  - "grids [WPF], automatic layout"
+  - "automatic layout [WPF], grid use"
 ms.assetid: ab9de407-e0c1-4047-bdf0-24951bf73879
 caps.latest.revision: 13
 author: dotnet-bot

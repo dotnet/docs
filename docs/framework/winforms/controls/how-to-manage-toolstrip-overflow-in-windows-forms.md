@@ -9,11 +9,10 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "Overflow property"
   - "ToolStrip control [Windows Forms], managing overflow"
   - "toolbars [Windows Forms], managing overflow"
   - "examples [Windows Forms], toolbars"

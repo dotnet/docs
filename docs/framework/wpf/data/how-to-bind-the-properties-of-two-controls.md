@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "data binding, binding properties of two controls"
-  - "binding properties of two controls"
-  - "controls, binding properties of"
+  - "data binding [WPF], binding properties of two controls"
+  - "binding properties of two controls [WPF]"
+  - "controls [WPF], binding properties of"
 ms.assetid: 06318fac-6afd-4c7d-a277-6d7ef50f47bc
 caps.latest.revision: 12
 author: dotnet-bot

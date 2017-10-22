@@ -12,16 +12,16 @@ helpviewer_keywords:
   - "strings [Visual Basic], character"
   - "strings [Visual Basic], fixed-length"
   - "string keyword [Visual Basic]"
-  - "fixed-length strings, string data type"
-  - "literals, string"
+  - "fixed-length strings [Visual Basic], string data type"
+  - "literals [Visual Basic], string"
   - "text [Visual Basic], String data type"
   - "$ identifier type character"
   - "String data type"
   - "fixed-length strings"
-  - "string literals"
+  - "string literals [Visual Basic]"
   - "data types [Visual Basic], assigning"
-  - "String literals"
-  - "identifier type characters, $"
+  - "String literals [Visual Basic]"
+  - "identifier type characters [Visual Basic], $"
 ms.assetid: 15ac03f5-cabd-42cc-a754-1df3893c25d9
 caps.latest.revision: 19
 author: dotnet-bot

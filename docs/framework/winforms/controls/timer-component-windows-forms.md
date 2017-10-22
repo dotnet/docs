@@ -12,7 +12,7 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "Timer component [Windows Forms]"
   - "timers"
-  - "timers, creating"
+  - "timers [Windows Forms], creating"
 ms.assetid: 6700e534-6382-43d5-98ed-14205435fff7
 caps.latest.revision: 13
 author: dotnet-bot

@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "sorting, data grids"
+  - "sorting [Windows Forms], data grids"
   - "DataGridView control [Windows Forms], sort mode"
-  - "data grids, sorting data"
+  - "data grids [Windows Forms], sorting data"
 ms.assetid: 57dfed60-a608-40d5-86f9-d65686ffb325
 caps.latest.revision: 14
 author: dotnet-bot

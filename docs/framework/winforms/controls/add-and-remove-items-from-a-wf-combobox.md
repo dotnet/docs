@@ -9,17 +9,17 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "combo boxes, adding items"
-  - "list boxes, removing items"
+  - "combo boxes [Windows Forms], adding items"
+  - "list boxes [Windows Forms], removing items"
   - "ComboBox control [Windows Forms], adding and removing items"
   - "ListBox control [Windows Forms], adding and removing items"
-  - "list boxes, adding items"
-  - "combo boxes, removing items"
+  - "list boxes [Windows Forms], adding items"
+  - "combo boxes [Windows Forms], removing items"
   - "CheckedListBox control [Windows Forms], adding and removing items"
 ms.assetid: 7224c8d2-4118-443e-ae1e-d7c17d1e69ee
 caps.latest.revision: 19

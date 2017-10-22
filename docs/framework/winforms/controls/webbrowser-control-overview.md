@@ -13,7 +13,7 @@ f1_keywords:
   - "WebBrowser"
 helpviewer_keywords: 
   - "WebBrowser control [Windows Forms], about"
-  - "Web pages, displaying in applications"
+  - "Web pages [Windows Forms], displaying in applications"
 ms.assetid: 6e3e1cc2-9c48-4136-9659-e99e4e60b7e9
 caps.latest.revision: 15
 author: dotnet-bot

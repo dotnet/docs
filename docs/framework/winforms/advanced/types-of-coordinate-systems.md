@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "transformations, page"
+  - "transformations [Windows Forms], page"
   - "unit of measure"
   - "world coordinate system"
   - "page coordinate system"
@@ -21,7 +21,7 @@ helpviewer_keywords:
   - "device coordinate system"
   - "world transformation"
   - "coordinate systems"
-  - "transformations, world"
+  - "transformations [Windows Forms], world"
 ms.assetid: c61ff50a-eb1d-4e6c-83cd-f7e9764cfa9f
 caps.latest.revision: 15
 author: dotnet-bot

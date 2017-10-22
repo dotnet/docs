@@ -10,7 +10,7 @@ ms.technology:
 ms.topic: "article"
 helpviewer_keywords: 
   - "event logs [Visual Studio], writing event information"
-  - "text files, writing event information to a text file"
+  - "text files [Visual Basic], writing event information to a text file"
   - "events [Visual Basic], writing event information to a text file"
 ms.assetid: 9ca7cc03-bf99-4933-9e5e-61ee28e9a6b4
 caps.latest.revision: 20

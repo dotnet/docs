@@ -9,17 +9,17 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "margins"
   - "controls [Windows Forms], Margin property"
-  - "padding, Windows Forms"
+  - "padding [Windows Forms], Windows Forms"
   - "controls [Windows Forms], Padding property"
   - "controls [Windows Forms], outlining"
   - "Padding property [Windows Forms]"
-  - "margins, Windows Forms"
+  - "margins [Windows Forms], Windows Forms"
   - "Margin property [Windows Forms]"
 ms.assetid: bac7ed4d-a163-4259-98bd-155a36345890
 caps.latest.revision: 5

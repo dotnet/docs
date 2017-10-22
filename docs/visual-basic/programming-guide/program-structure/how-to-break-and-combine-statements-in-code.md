@@ -21,10 +21,10 @@ helpviewer_keywords:
   - "long lines of code"
   - "line terminator"
   - "line-continuation sequence"
-  - "underscores, in code"
+  - "underscores [Visual Basic], in code"
   - "statements [Visual Basic], line continuation in"
-  - "line breaks, in code"
-  - "line-continuation character"
+  - "line breaks [Visual Basic], in code"
+  - "line-continuation character [Visual Basic]"
   - "Visual Basic code, line continuation in"
   - "statements [Visual Basic], line breaks in"
 ms.assetid: dea01dad-a8ac-484a-bb3a-8c45a1b1eccc

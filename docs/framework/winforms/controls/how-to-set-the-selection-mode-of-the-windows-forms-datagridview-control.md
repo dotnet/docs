@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "selection, modes in DataGridView control"
+  - "selection [Windows Forms], modes in DataGridView control"
   - "DataGridView control [Windows Forms], selection mode"
-  - "data grids, selection mode"
+  - "data grids [Windows Forms], selection mode"
 ms.assetid: 2f241643-7f82-4583-8757-03494f63b465
 caps.latest.revision: 12
 author: dotnet-bot

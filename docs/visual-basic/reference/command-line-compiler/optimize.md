@@ -10,7 +10,7 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "optimize compiler option [Visual Basic]"
   - "/optimize compiler option [Visual Basic]"
-  - "optimization, enabling"
+  - "optimization [Visual Basic], enabling"
   - "-optimize compiler option [Visual Basic]"
 ms.assetid: fcba4a97-3622-4b87-a891-0f77deab4998
 caps.latest.revision: 15

@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "Storyboards"
-  - "3-D translations, animating, with Storyboards"
-  - "animation, 3-D translations, with Storyboards"
+  - "Storyboards [WPF]"
+  - "3-D translations [WPF], animating [WPF], with Storyboards"
+  - "animation [WPF], 3-D translations [WPF], with Storyboards"
 ms.assetid: 1020e44e-e21e-49a8-be53-53cbc1910e83
 caps.latest.revision: 11
 author: dotnet-bot

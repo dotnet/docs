@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "time, displaying in DateTimePicker control"
+  - "time [Windows Forms], displaying in DateTimePicker control"
   - "examples [Windows Forms], DateTimePicker control"
   - "DateTimePicker control [Windows Forms], displaying time"
 ms.assetid: 0c1c8b40-1b50-4301-a90c-39516775ccb1

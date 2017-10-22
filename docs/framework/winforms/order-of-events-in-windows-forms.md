@@ -13,8 +13,8 @@ helpviewer_keywords:
   - "events [Windows Forms], order of"
   - "focus event order"
   - "application shutdown event order"
-  - "sequence, of events"
-  - "validation events, order of"
+  - "sequence [Windows Forms], of events"
+  - "validation events [Windows Forms], order of"
   - "application startup event order"
 ms.assetid: e81db09b-4453-437f-b78a-62d7cd5c9829
 caps.latest.revision: 15

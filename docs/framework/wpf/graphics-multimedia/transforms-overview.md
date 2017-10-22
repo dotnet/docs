@@ -10,15 +10,15 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "transformations, about transformations"
-  - "classes, 2-D transform"
-  - "transform classes, 2-D"
+  - "transformations [WPF], about transformations"
+  - "classes [WPF], 2-D transform"
+  - "transform classes [WPF], 2-D"
   - "2-D transform classes"
-  - "FrameworkElement objects, rotating"
-  - "FrameworkElement objects, skewing"
-  - "FrameworkElement objects, translating"
-  - "Transforms, about Transforms"
-  - "FrameworkElement objects, scaling"
+  - "FrameworkElement objects [WPF], rotating"
+  - "FrameworkElement objects [WPF], skewing"
+  - "FrameworkElement objects [WPF], translating"
+  - "Transforms [WPF], about Transforms"
+  - "FrameworkElement objects [WPF], scaling"
 ms.assetid: 8f153d5e-ed61-4aa5-a7cd-286f0c427a13
 caps.latest.revision: 21
 author: dotnet-bot

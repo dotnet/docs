@@ -53,11 +53,11 @@ What should the application deployment architecture be? The specifications for t
 
 In this approach, each service (container) implements a set of cohesive and narrowly related functions. For example, an application might consist of services such as the catalog service, ordering service, basket service, user profile service, etc.
 
-Microservices communicate using protocols such as HTTP (REST), asynchronously whenever possible, especially when propagating updates.
+Microservices communicate using protocols such as HTTP (REST), but also asynchronously (that is AMQP) whenever possible, especially when propagating updates with integration events.
 
 Microservices are developed and deployed as containers independently of one another. This means that a development team can be developing and deploying a certain microservice without impacting other subsystems.
 
-Each microservice has its own database, allowing it to be fully decoupled from other microservices. When necessary, consistency between databases from different microservices is achieved using application-level events (through a logical event bus), as handled in Command and Query Responsibility Segregation (CQRS). Because of that, the business constraints must embrace eventual consistency between the multiple microservices and related databases.
+Each microservice has its own database, allowing it to be fully decoupled from other microservices. When necessary, consistency between databases from different microservices is achieved using application-level integration events (through a logical event bus), as handled in Command and Query Responsibility Segregation (CQRS). Because of that, the business constraints must embrace eventual consistency between the multiple microservices and related databases.
 
 ### eShopOnContainers: A reference application for .NET Core and microservices deployed using containers
 
@@ -67,7 +67,7 @@ The application consists of multiple subsystems, including several store UI fron
 
 ![](./media/image1.png)
 
-**Figure 8-1**. The eShopOnContainers reference application, showing the direct client-to-microservice communication and the event bus
+**Figure 8-1**. The eShopOnContainers reference application, showing a direct client-to-microservice communication and the event bus
 
 **Hosting environment**. In Figure 8-1, you see several containers deployed within a single Docker host. That would be the case when deploying to a single Docker host with the docker-compose up command. However, if you are using an orchestrator or container cluster, each container could be running in a different host (node), and any node could be running any number of containers, as we explained earlier in the architecture section.
 
@@ -79,9 +79,12 @@ The application consists of multiple subsystems, including several store UI fron
 
 The application is deployed as a set of microservices in the form of containers. Client apps can communicate with those containers as well as communicate between microservices. As mentioned, this initial architecture is using a direct client-to-microservice communication architecture, which means that a client application can make requests to each of the microservices directly. Each microservice has a public endpoint like https://servicename.applicationname.companyname. If required, each microservice can use a different TCP port. In production, that URL would map to the microservices’ load balancer, which distributes requests across the available microservice instances.
 
-As explained in the architecture section of this guide, the direct client-to-microservice communication architecture can have drawbacks when you are building a large and complex microservice-based application. But it can be good enough for a small application, such as in the eShopOnContainers application, where the goal is to focus on the microservices deployed as Docker containers.
+**Important note on API Gateway vs. Direct Communication in eShopOnContainers.** As explained in the architecture section of this guide, the direct client-to-microservice communication architecture can have drawbacks when you are building a large and complex microservice-based application. But it can be good enough for a small application, such as in the eShopOnContainers application, where the goal is to focus on a simpler getting started Docker container-based application and we didn’t want to create a single monolithic API Gateway that can impact the microservices’ development autonomy.
 
-However, if you are going to design a large microservice-based application with dozens of microservices, we strongly recommend that you consider the API Gateway pattern, as we explained in the architecture section.
+But, if you are going to design a large microservice-based application with dozens of microservices, we strongly recommend that you consider the API Gateway pattern, as we explained in the architecture section.
+This architectural decision could be refactored once thinking about production-ready applications and specially-made facades for remote clients. Having multiple custom API Gateways depending on the client apps' form-factor can provide benefits in regard to different data aggregation per client app plus you can hide internal microservices or APIs to the client apps and authorize in that single tier. 
+
+However, and as mentioned, beware against large and monolithic API Gateways that might kill your microservices' development autonomy.
 
 ### Data sovereignty per microservice
 

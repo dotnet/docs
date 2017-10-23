@@ -1,4 +1,8 @@
 # [The .NET Compiler Platform SDK (Roslyn APIs)](index.md)
+## [Understand the compiler API model](compiler-api-model.md)
+## [Work with syntax](work-with-syntax.md)
+## [Work with semantics](work-with-semantics.md)
+## [Work with a workspace](work-with-workspace.md)
 
 <!--
 ## Quick starts
@@ -32,11 +36,6 @@
 ### Make const
 -->
 
-## [Concepts](concepts/index.md)
-### [Understand the compiler API model](concepts/compiler-api-model.md)
-### [Work with syntax](concepts/work-with-syntax.md)
-### [Work with semantics](concepts/work-with-semantics.md)
-### [Work with a workspace](oncepts/work-with-workspace.md)
 
 <!--
 ## How to guides

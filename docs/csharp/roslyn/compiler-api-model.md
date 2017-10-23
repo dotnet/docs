@@ -39,7 +39,7 @@ phase exposes a syntax tree, the declaration phase exposes a hierarchical
 symbol table, the binding phase exposes the result of the compiler’s semantic
 analysis and the emit phase is an API that produces IL byte codes.
 
-![compiler api lang service](images/compiler-pipeline-lang-svc.png)
+![compiler api lang service](media/compiler-pipeline-lang-svc.png)
 
 Each compiler combines these components together as a single end-to-end whole.
 

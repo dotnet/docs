@@ -86,9 +86,41 @@ journey. As these become more widely used, the community adopts these
 practices.
 
 
+## .NET Compiler SDK Concepts
+
+The .NET Compiler SDK provides access to the deep understanding that
+compilers build while processing code. Increasingly we rely on integrated
+development environment (IDE) features such as IntelliSense, refactoring,
+intelligent rename, "Find all references," and "Go to definition" to
+increase our productivity. We rely on code analysis tools to improve our
+code quality and code generators to aid in application construction. As
+these tools get smarter, they need access to more and more of the deep
+code knowledge that only compilers possess. This is the core mission of
+the Roslyn APIs: opening up the black boxes and allowing tools and end
+users to share in the wealth of information compilers have about our code.
+Instead of being opaque source-code-in and object-code-out translators,
+through Roslyn, compilers become platforms—APIs that you can use for code
+related tasks in your tools and applications.
+
+The .NET Compiler SDK dramatically lowers the barrier
+to entry for creating code focused tools and applications. It creates many
+opportunities for innovation in areas such as meta-programming, code
+generation and transformation, interactive use of the C# and VB languages,
+and embedding of C# and VB in domain specific languages.
+
+The .NET Compiler SDK Preview includes the latest language object models
+for code generation, analysis, and refactoring. This section provides a
+conceptual overview of the .NET Compiler SDK. Further details can be
+found in the quickstarts, samples and tutorials sections.
+
 ## Next Steps
 
-- Read the [SDK Concepts](concepts/index.md) to learn the model for code, and understand the design of the APIs to query and manipulate a code base.
+You can learn more about the concepts in the .NET Compiler SDK in these four topics:
+
+ - [Understand the compiler API model](compiler-api-model.md)
+ - [Work with syntax](work-with-syntax.md)
+ - [Work with semantics](work-with-semantics.md)
+ - [Work with a workspace](work-with-workspace.md)
 
 <!--
 

@@ -109,7 +109,6 @@ To build and run, install the following items:
 
 * Install your favorite code editor, if you haven't already.
 
-
 #### Installing Docker Client
 
 Install [Docker 17.06](https://docs.docker.com/release-notes/docker-ce/) or later of the Docker client.

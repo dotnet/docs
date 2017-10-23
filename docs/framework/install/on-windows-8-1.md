@@ -1,16 +1,17 @@
 ---
-title: Install the .NET Framework on Windows 7 SP1
+title: Install the .NET Framework on Windows 8.1
 ms.custom: "updateeachrelease"
-description: Learn how to install the .NET Framework on Windows 7 SP1.
+description: Learn how to install .NET Framework on Windows 8.1
 author: rlander
 ms.author: mairaw
 keywords: .NET Framework, Install
-ms.date: 10/17/2017
+ms.date: 10/22/2017
 ms.topic: article
 ms.prod: .net-framework
+ms.devlang: dotnet
 ---
 
-# Install the .NET Framework on Windows 7 SP1
+# Install the .NET Framework on Windows 8.1
 
 The .NET Framework is required to run many applications on Windows. You can use the following instructions to install it. You may have arrived on this page after trying to run an application and seeing the following dialog on your machine.
 
@@ -28,7 +29,7 @@ The [.NET Framework 4.7.1](https://www.microsoft.com/net/framework/versions/net4
 
 ## .NET Framework 3.5
 
-The [.NET Framework 3.5](https://www.microsoft.com/en-us/download/details.aspx?id=21) is included with Windows 7.
+Follow the instructions to install the [.NET Framework 3.5 on Windows 8.1 and 10](dotnet-35-windows-10.md).
 
 The .NET Framework 3.5 supports apps built for .NET Framework 1.0 through 3.5.
 

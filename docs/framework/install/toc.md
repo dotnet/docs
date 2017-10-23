@@ -1,5 +1,6 @@
 # [Installation guide](index.md)
 ## [Install the .NET Framework on Windows 10](on-windows-10.md)
+## [Install the .NET Framework on Windows 8.1](on-windows-8-1.md)
 ## [Install the .NET Framework on Windows 8](on-windows-8.md)
 ## [Install the .NET Framework on Windows 7 SP1](on-windows-7.md)
 ## [Install the .NET Framework on Windows Vista](on-windows-vista.md)

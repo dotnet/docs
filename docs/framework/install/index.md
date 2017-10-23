@@ -15,6 +15,7 @@ ms.devlang: dotnet
 ## Supported Windows versions
 
 - [Windows 10 or Windows Server 2016](on-windows-10.md)
+- [Windows 8.1 or Windows Server 2012](on-windows-8-1.md)
 - [Windows 8 or Windows Server 2012](on-windows-8.md)
 - [Windows 7 or Windows Server 2008](on-windows-7.md)
 - [Windows Vista or Windows Server 2003](on-windows-vista.md)
@@ -25,4 +26,5 @@ ms.devlang: dotnet
 
 ## See also
 
+[Troubleshoot blocked .NET Framework installations and uninstallations](troubleshoot-blocked-installations-and-uninstallations.md)
 [.NET Framework Development Guide](../development-guide.md)

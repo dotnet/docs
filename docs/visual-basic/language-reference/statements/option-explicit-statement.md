@@ -11,11 +11,11 @@ f1_keywords:
   - "vb.Explicit"
   - "vb.OptionExplicit"
 helpviewer_keywords: 
-  - "declaring variables, explicit"
-  - "forced variable declaration in Option Explicit statement"
+  - "declaring variables [Visual Basic], explicit"
+  - "forced variable declaration in Option Explicit statement [Visual Basic]"
   - "Explicit keyword"
   - "explicit variable declaration"
-  - "Option Explicit statement"
+  - "Option Explicit statement [Visual Basic]"
 ms.assetid: e82ac1ad-2cd3-49b2-b985-8bcf016f3fcc
 caps.latest.revision: 17
 author: dotnet-bot

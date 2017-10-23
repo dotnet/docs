@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "text, retrieving"
-  - "TextBox control, retrieving text"
-  - "retrieving text"
+  - "text [WPF], retrieving"
+  - "TextBox control [WPF], retrieving text"
+  - "retrieving text [WPF]"
 ms.assetid: d5793172-1e11-4a39-9be0-73f336ed858d
 caps.latest.revision: 10
 author: dotnet-bot

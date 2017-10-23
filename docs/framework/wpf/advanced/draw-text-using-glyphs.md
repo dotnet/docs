@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "text, drawing with Glyphs objects"
-  - "Glyphs objects, drawing text"
-  - "typography, Glyphs objects"
+  - "text [WPF], drawing with Glyphs objects"
+  - "Glyphs objects [WPF], drawing text"
+  - "typography [WPF], Glyphs objects"
 ms.assetid: 587ab17e-a419-4ad5-b6da-8933a8e83d97
 caps.latest.revision: 16
 author: dotnet-bot

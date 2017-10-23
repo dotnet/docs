@@ -9,15 +9,15 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "generic methods, type inference"
+  - "generic methods [Visual Basic], type inference"
   - "generics [Visual Basic], type inference"
-  - "procedures, generic"
+  - "procedures [Visual Basic], generic"
   - "generic procedures"
   - "type inference, generics"
-  - "generic methods"
+  - "generic methods [Visual Basic]"
   - "type inference"
   - "generics [Visual Basic], procedures"
-  - "generic procedures, type inference"
+  - "generic procedures [Visual Basic], type inference"
 ms.assetid: 95577b28-137f-4d5c-a149-919c828600e5
 caps.latest.revision: 11
 author: dotnet-bot

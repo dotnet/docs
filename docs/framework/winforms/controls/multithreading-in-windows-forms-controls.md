@@ -11,7 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "BackgroundWorker component"
-  - "BeginInvoke method"
   - "threading [Windows Forms], controls"
 ms.assetid: c311d652-0f26-45fa-bdcc-b1615d73ce4e
 caps.latest.revision: 6

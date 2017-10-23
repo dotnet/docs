@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "custom dependency properties"
-  - "dependency properties, XAML loading and"
-  - "loading XML data"
+  - "custom dependency properties [WPF]"
+  - "dependency properties [WPF], XAML loading and"
+  - "loading XML data [WPF]"
 ms.assetid: 6eea9f4e-45ce-413b-a266-f08238737bf2
 caps.latest.revision: 8
 author: dotnet-bot

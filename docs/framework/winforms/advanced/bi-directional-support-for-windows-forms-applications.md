@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "globalization [Windows Forms], bi-directional support in Windows"
   - "Windows Forms, international"
   - "localization [Windows Forms], bi-directional support in Windows"
-  - "bi-directional language support, Windows applications"
+  - "bi-directional language support [Windows Forms], Windows applications"
   - "Windows Forms, bi-directional support"
 author: rpetrusha
 ms.author: ronpet

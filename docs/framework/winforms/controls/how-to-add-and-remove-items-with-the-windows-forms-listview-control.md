@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "ListView control [Windows Forms], populating"
-  - "list views, adding list items"
+  - "list views [Windows Forms], adding list items"
   - "ListView control [Windows Forms], adding list items"
 ms.assetid: 1b35a80a-edd8-495f-a807-a28c4aae52c6
 caps.latest.revision: 13

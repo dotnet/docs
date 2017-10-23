@@ -12,11 +12,9 @@ ms.topic: "article"
 f1_keywords: 
   - "CheckBox"
 helpviewer_keywords: 
-  - "bound controls, check boxes"
   - "CheckBox control [Windows Forms], about CheckBox control"
-  - "data binding, checkbox controls"
-  - "data-bound controls, check boxes"
-  - "check boxes, about check boxes"
+  - "data binding [Windows Forms], checkbox controls"
+  - "check boxes [Windows Forms], about check boxes"
 ms.assetid: 085a4e0b-9046-473f-b141-d0edddfb2ebb
 caps.latest.revision: 8
 author: dotnet-bot

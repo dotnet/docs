@@ -180,11 +180,11 @@ End Class
   
  Some of the common collection classes are described in this section:  
   
--   @System.Collections.Generic classes  
+-   <xref:System.Collections.Generic> classes  
   
--   @System.Collections.Concurrent classes  
+-   <xref:System.Collections.Concurrent> classes  
   
--   @System.Collections classes  
+-   <xref:System.Collections> classes  
   
 -   Visual Basic `Collection` class  
   

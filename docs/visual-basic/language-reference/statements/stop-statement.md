@@ -11,12 +11,12 @@ f1_keywords:
   - "vb.Stop"
 helpviewer_keywords: 
   - "breakpoints, Stop statements"
-  - "Stop statements, syntax"
-  - "Stop statements"
-  - "execution, suspending"
+  - "Stop statements [Visual Basic], syntax"
+  - "Stop statements [Visual Basic]"
+  - "execution [Visual Basic], suspending"
   - "processing, interrupting"
   - "processes, interrupting"
-  - "execution, stopping"
+  - "execution [Visual Basic], stopping"
 ms.assetid: c9a9fde0-d649-4662-9bef-bd0146ebc2a7
 caps.latest.revision: 9
 author: dotnet-bot

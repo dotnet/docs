@@ -17,6 +17,3 @@
 ### [How to: Access XML Child Elements](how-to-access-xml-child-elements.md)
 ### [How to: Access XML Attributes](how-to-access-xml-attributes.md)
 ### [How to: Declare and Use XML Namespace Prefixes](how-to-declare-and-use-xml-namespace-prefixes.md)
-## [XML IntelliSense](xml-intellisense.md)
-### [How to: Enable XML IntelliSense](how-to-enable-xml-intellisense.md)
-### [XML to Schema Wizard](xml-to-schema-wizard.md)

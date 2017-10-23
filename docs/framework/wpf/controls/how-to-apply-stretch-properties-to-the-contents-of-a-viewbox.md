@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "StretchDirection properties"
-  - "Stretch properties"
-  - "controls, Viewbox"
-  - "Viewbox control"
+  - "StretchDirection properties [WPF]"
+  - "Stretch properties [WPF]"
+  - "controls [WPF], Viewbox"
+  - "Viewbox control [WPF]"
 ms.assetid: b9c22ef4-bce4-4300-9e0c-8260b7db83cc
 caps.latest.revision: 12
 author: dotnet-bot

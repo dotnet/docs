@@ -10,11 +10,11 @@ ms.technology:
 ms.topic: "article"
 helpviewer_keywords: 
   - "Function procedures"
-  - "return values, function procedures"
+  - "return values [Visual Basic], function procedures"
   - "Visual Basic code, procedures"
-  - "procedures, calling"
-  - "procedures, Function procedures"
-  - "syntax, function procedures"
+  - "procedures [Visual Basic], calling"
+  - "procedures [Visual Basic], Function procedures"
+  - "syntax [Visual Basic], function procedures"
 ms.assetid: 1b9f632c-553b-4cb6-920a-ded117ead8c0
 caps.latest.revision: 27
 author: dotnet-bot

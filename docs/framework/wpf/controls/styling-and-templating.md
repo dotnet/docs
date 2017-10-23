@@ -9,19 +9,19 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "triggers"
-  - "styles, referencing"
-  - "event triggers"
-  - "styles, prerequisites"
-  - "styles, declaring"
-  - "styles, overview"
-  - "styles, extending"
-  - "styles, triggers"
-  - "styles, event triggers"
+  - "triggers [WPF]"
+  - "styles [WPF], referencing"
+  - "event triggers [WPF]"
+  - "styles [WPF], prerequisites"
+  - "styles [WPF], declaring"
+  - "styles [WPF], overview"
+  - "styles [WPF], extending"
+  - "styles [WPF], triggers"
+  - "styles [WPF], event triggers"
 ms.assetid: 481765e5-5467-4a75-9f7b-e10e2ac410d9
 caps.latest.revision: 34
 author: dotnet-bot

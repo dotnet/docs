@@ -10,8 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "TileBrush, size of tiles"
-  - "Viewport property of TileBrush"
+  - "TileBrush [WPF], size of tilepropertys"
+  - "Viewport property of TileBrush [WPF]"
 ms.assetid: 04f41090-1b46-4e36-832f-d27d28708b8c
 caps.latest.revision: 15
 author: dotnet-bot

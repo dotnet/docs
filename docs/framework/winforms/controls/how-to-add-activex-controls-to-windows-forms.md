@@ -11,7 +11,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Forms controls, ActiveX controls"
-  - "forms, adding ActiveX controls"
+  - "forms [Windows Forms], adding ActiveX controls"
   - "ActiveX controls [Windows Forms], adding"
 ms.assetid: 54a61e5b-555e-4887-b41e-6244fed271eb
 caps.latest.revision: 10

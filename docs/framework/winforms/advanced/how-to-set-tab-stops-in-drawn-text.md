@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "text, drawing with tab stops"
-  - "tabs, drawn text"
+  - "text [Windows Forms], drawing with tab stops"
+  - "tabs [Windows Forms], drawn text"
 ms.assetid: 64878f98-39ba-4303-b63f-0859ab682eeb
 caps.latest.revision: 13
 author: dotnet-bot

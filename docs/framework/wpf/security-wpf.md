@@ -15,7 +15,7 @@ helpviewer_keywords:
   - "application security [WPF]"
   - "navigation security [WPF]"
   - "loose XAML files [WPF], sandbox behavior"
-  - "WPF security"
+  - "WPF security [WPF]"
   - "WebBrowser control [WPF], security"
   - "feature controls [WPF], security"
   - "XBAP security [WPF]"

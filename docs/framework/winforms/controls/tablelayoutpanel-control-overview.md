@@ -13,7 +13,7 @@ f1_keywords:
   - "TableLayoutPanel"
 helpviewer_keywords: 
   - "controls [Windows Forms], resizing"
-  - "resizable controls"
+  - "resizable controls [Windows Forms]"
   - "Windows Forms controls, proportional resizing"
   - "Windows Forms, proportional resizing of controls"
   - "layout [Windows Forms], TableLayoutPanel control"

@@ -9,15 +9,15 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "bitblt"
-  - "graphics, copying"
-  - "flicker, reducing in Windows Forms"
-  - "graphics, reducing flicker"
-  - "pixels, copying"
+  - "graphics [Windows Forms], copying"
+  - "flicker [Windows Forms], reducing in Windows Forms"
+  - "graphics [Windows Forms], reducing flicker"
+  - "pixels [Windows Forms], copying"
   - "flicker"
   - "bit-block transfer"
 ms.assetid: 33b76910-13a3-4521-be98-5c097341ae3b

@@ -7,7 +7,7 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "operators [Visual Basic], about operators"
+  - "operators [Visual Basic], about operators [Visual Basic]"
   - "symbols, operators"
   - "Visual Basic code, operators"
 ms.assetid: cb44c210-686f-4417-a13f-51c0d60161f8

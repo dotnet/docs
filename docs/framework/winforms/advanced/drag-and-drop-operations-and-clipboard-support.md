@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "drag and drop"
-  - "drag and drop, Windows Forms"
-  - "Clipboard, Windows Forms"
+  - "drag and drop [Windows Forms]"
+  - "drag and drop [Windows Forms], Windows Forms"
+  - "Clipboard [Windows Forms], Windows Forms"
 ms.assetid: 7cce79b6-5835-46fd-b690-73f12ad368b2
 caps.latest.revision: 14
 author: dotnet-bot

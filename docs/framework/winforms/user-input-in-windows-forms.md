@@ -10,10 +10,10 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "keyboard input, using in Windows Forms"
+  - "keyboard input [Windows Forms], using in Windows Forms"
   - "Windows Forms, user input"
-  - "mouse input, using in Windows Forms"
-  - "keyboards, keyboard input"
+  - "mouse input [Windows Forms], using in Windows Forms"
+  - "keyboards [Windows Forms], keyboard input"
 ms.assetid: 1486075f-1e06-4c9e-82c6-f948331db6d6
 caps.latest.revision: 16
 author: dotnet-bot

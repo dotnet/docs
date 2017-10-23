@@ -19,14 +19,14 @@ f1_keywords:
   - "vb.My"
 helpviewer_keywords: 
   - "My object"
-  - "self-reference, Me keyword"
-  - "MyClass keyword, relationship to similar programming elements"
-  - "Me keyword, relationship to similar programming elements"
-  - "Me keyword, referring to the current instance of an object"
-  - "Me keyword"
+  - "self-reference [Visual Basic], Me keyword"
+  - "MyClass keyword [Visual Basic], relationship to similar programming elements"
+  - "Me keyword [Visual Basic], relationship to similar programming elements"
+  - "Me keyword [Visual Basic], referring to the current instance of an object"
+  - "Me keyword [Visual Basic]"
   - "self-reference"
-  - "current instance, Me keyword"
-  - "MyBase keyword, relationship to similar programming elements"
+  - "current instance [Visual Basic], Me keyword"
+  - "MyBase keyword [Visual Basic], relationship to similar programming elements"
 ms.assetid: f8e241ae-b1ed-4886-9aa0-08c632154029
 caps.latest.revision: 15
 author: dotnet-bot

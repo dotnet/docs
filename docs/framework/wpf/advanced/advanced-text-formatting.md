@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "formatting [WPF]"
   - "text [WPF]"
-  - "typography, text formatting"
+  - "typography [WPF], text formatting"
 ms.assetid: f0a7986e-f5b2-485c-a27d-f8e922022212
 caps.latest.revision: 16
 author: dotnet-bot

@@ -13,11 +13,11 @@ f1_keywords:
 helpviewer_keywords: 
   - "modules, classes"
   - "modules"
-  - "Module statement"
+  - "Module statement [Visual Basic]"
   - "modules, declaring"
   - "standard modules"
   - "classes [Visual Basic], vs. modules"
-  - "declarations, modules"
+  - "declarations [Visual Basic], modules"
 ms.assetid: a1243afc-14a5-45df-95d5-51118aeac362
 caps.latest.revision: 24
 author: dotnet-bot

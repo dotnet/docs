@@ -9,9 +9,9 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "user settings, changing in Visual Basic"
+  - "user settings [Visual Basic], changing in Visual Basic"
   - "user settings"
-  - "My.Settings object, changing user settings"
+  - "My.Settings object [Visual Basic], changing user settings"
   - "examples [Visual Basic], changing user settings"
 ms.assetid: 41250181-c594-4854-9988-8183b9eb03cf
 caps.latest.revision: 18

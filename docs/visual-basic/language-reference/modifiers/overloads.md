@@ -10,9 +10,9 @@ f1_keywords:
   - "vb.Overloads"
   - "Overloads"
 helpviewer_keywords: 
-  - "Overloads keyword"
+  - "Overloads keyword [Visual Basic]"
   - "hiding by signature"
-  - "Shadows keyword"
+  - "Shadows keyword [Visual Basic]"
   - "signature, hiding by"
 ms.assetid: 0c6820b8-25b2-4664-bc59-5ca93c99c042
 caps.latest.revision: 15

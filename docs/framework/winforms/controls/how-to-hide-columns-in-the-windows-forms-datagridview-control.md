@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], hiding columns"
-  - "data grids, hiding columns"
+  - "data grids [Windows Forms], hiding columns"
   - "columns [Windows Forms], hiding"
 ms.assetid: 3f94143a-2ef0-49a5-a22a-b2e6f9289642
 caps.latest.revision: 19

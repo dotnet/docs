@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "controls [WPF], DockPanel"
-  - "DockPanel control, partitioning space"
-  - "partitioning space"
+  - "DockPanel control [WPF], partitioning space"
+  - "partitioning space [WPF]"
 ms.assetid: a219b9e5-b205-4438-89b5-0a137ac463ab
 caps.latest.revision: 12
 author: dotnet-bot

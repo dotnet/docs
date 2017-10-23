@@ -10,8 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "gradients, system colors in"
-  - "system colors in gradients"
+  - "gradients [WPF], system colors in"
+  - "system colors in gradients [WPF]"
 ms.assetid: 11942e7e-6300-4b50-8ed1-f50e8d20e7d2
 caps.latest.revision: 9
 author: dotnet-bot

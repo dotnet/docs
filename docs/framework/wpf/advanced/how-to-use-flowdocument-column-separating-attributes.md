@@ -12,7 +12,7 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "FlowDocument column-separating attributes"
   - "column-separating attributes"
-  - "documents, FlowDocument column-separating attributes"
+  - "documents [WPF], FlowDocument column-separating attributes"
 ms.assetid: c7a822f8-aeca-45bd-a258-2852ff28005c
 caps.latest.revision: 5
 author: dotnet-bot

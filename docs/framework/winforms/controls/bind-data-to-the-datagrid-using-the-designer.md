@@ -11,7 +11,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Forms controls, binding to a data source"
-  - "data sources, binding to Windows Forms controls"
+  - "data sources [Windows Forms], binding to Windows Forms controls"
   - "DataGridView control [Windows Forms], data binding"
 ms.assetid: f4f46009-cec2-441b-8668-6b5af057558b
 caps.latest.revision: 23

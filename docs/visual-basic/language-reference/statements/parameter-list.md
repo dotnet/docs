@@ -9,12 +9,12 @@ ms.technology:
 ms.topic: "article"
 helpviewer_keywords: 
   - "Visual Basic code, procedures"
-  - "parameters, Visual Basic"
-  - "parameters, lists"
-  - "parameter lists"
+  - "parameters [Visual Basic], Visual Basic"
+  - "parameters [Visual Basic], lists"
+  - "parameter lists [Visual Basic]"
   - "Visual Basic code, parameter lists"
   - "arguments [Visual Basic], Visual Basic"
-  - "procedures, parameter lists"
+  - "procedures [Visual Basic], parameter lists"
 ms.assetid: 5d737319-0c34-4df9-a23d-188fc840becd
 caps.latest.revision: 19
 author: dotnet-bot

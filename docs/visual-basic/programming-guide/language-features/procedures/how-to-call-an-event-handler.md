@@ -10,10 +10,10 @@ ms.technology:
 ms.topic: "article"
 helpviewer_keywords: 
   - "Visual Basic code, procedures"
-  - "event handlers, calling"
+  - "event handlers [Visual Basic], calling"
   - "event handlers"
-  - "procedures, event handlers"
-  - "procedures, calling"
+  - "procedures [Visual Basic], event handlers"
+  - "procedures [Visual Basic], calling"
 ms.assetid: 72e18ef8-144e-40df-a1f4-066a57271e28
 caps.latest.revision: 19
 author: dotnet-bot

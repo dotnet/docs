@@ -12,9 +12,9 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "variables [Visual Basic], accessing"
   - "variables [Visual Basic], object"
-  - "With statement"
+  - "With statement [Visual Basic]"
   - "With block"
-  - "object variables, accessing"
+  - "object variables [Visual Basic], accessing"
 ms.assetid: 3eb7657f-c9fe-4e05-8bc3-4bb14d5ae585
 caps.latest.revision: 13
 author: dotnet-bot

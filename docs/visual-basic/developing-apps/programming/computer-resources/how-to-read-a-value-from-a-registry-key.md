@@ -9,11 +9,11 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "registry keys, determining if a value exists in"
+  - "registry keys [Visual Basic], determining if a value exists in"
   - "My.Computer.Registry object, examples"
-  - "registry, determining if values exist"
-  - "registry keys, reading from"
-  - "registry, reading"
+  - "registry [Visual Basic], determining if values exist"
+  - "registry keys [Visual Basic], reading from"
+  - "registry [Visual Basic], reading"
 ms.assetid: 775d0a57-68c9-464e-8949-9a39bd29cc64
 caps.latest.revision: 31
 author: dotnet-bot

@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "XAML, defining tables"
-  - "documents, defining tables with XAML"
-  - "tables, defining with XAML"
+  - "XAML [WPF], defining tables"
+  - "documents [WPF], defining tables with XAML"
+  - "tables [WPF], defining with XAML"
 ms.assetid: 83f2dc58-437e-4cdc-b5dd-0019810c7a85
 caps.latest.revision: 7
 author: dotnet-bot

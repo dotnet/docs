@@ -9,16 +9,16 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.uinteger"
 helpviewer_keywords: 
-  - "numbers, whole"
+  - "numbers [Visual Basic], whole"
   - "UInteger data type"
-  - "literal type characters, UI"
+  - "literal type characters [Visual Basic], UI"
   - "whole numbers"
-  - "integral data types"
+  - "integral data types [Visual Basic]"
   - "integer numbers"
-  - "numbers, integer"
-  - "integers, data types"
-  - "integers, types"
-  - "UI literal type characters"
+  - "numbers [Visual Basic], integer"
+  - "integers [Visual Basic], data types"
+  - "integers [Visual Basic], types"
+  - "UI literal type characters [Visual Basic]"
   - "data types [Visual Basic], integral"
 ms.assetid: db7ddd34-4f23-46f5-84dd-8b0f83bb8729
 caps.latest.revision: 19

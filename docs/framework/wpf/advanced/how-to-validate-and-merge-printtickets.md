@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "merging PrintTickets"
-  - "PrintTicket, merging"
-  - "validation of PrintTickets"
-  - "PrintTicket, validation"
+  - "merging PrintTickets [WPF]"
+  - "PrintTicket [WPF], merging"
+  - "validation of PrintTickets [WPF]"
+  - "PrintTicket [WPF], validation"
 ms.assetid: 4fe2d501-d0b0-4fef-86af-6ffe6c162532
 caps.latest.revision: 16
 author: dotnet-bot

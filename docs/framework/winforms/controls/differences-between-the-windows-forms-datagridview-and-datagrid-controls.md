@@ -10,7 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "data grids"
+  - "data grids [Windows Forms"
   - "DataGrid control [Windows Forms], DataGridView control compared"
   - "DataGridView control [Windows Forms], DataGrid control compared"
 ms.assetid: d412c786-140e-4210-8a56-a68467530a55

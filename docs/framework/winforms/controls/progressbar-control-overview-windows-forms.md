@@ -13,7 +13,7 @@ f1_keywords:
   - "ProgressBar"
 helpviewer_keywords: 
   - "ProgressBar control [Windows Forms], about ProgressBar control"
-  - "progress controls, about progress controls"
+  - "progress controls [Windows Forms], about progress controls"
 ms.assetid: a05d9cba-3a6a-4f8f-94b8-8ec12799fb80
 caps.latest.revision: 13
 author: dotnet-bot

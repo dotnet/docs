@@ -10,8 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "classes, CompositeCollection"
-  - "data binding, CompositeCollection class"
+  - "data binding [WPF], CompositeCollection class"
 ms.assetid: 0d8fc84c-7920-427f-8ad7-d55ca656c170
 caps.latest.revision: 10
 author: dotnet-bot

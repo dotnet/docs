@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "polygons"
-  - "drawing, polygons"
+  - "drawing [Windows Forms], polygons"
   - "GDI+, polygons"
 ms.assetid: a72213d2-d69a-4c2b-a75c-be7b20390c13
 caps.latest.revision: 13

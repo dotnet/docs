@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "metadata, overriding for dependency properties"
-  - "dependency properties, overriding metadata for"
-  - "overriding metadata for dependency properties"
+  - "metadata [WPF], overriding for dependency properties"
+  - "dependency properties [WPF], overriding metadata for"
+  - "overriding metadata for dependency properties [WPF]"
 ms.assetid: f90f026e-60d8-428a-933d-edf0dba4441f
 caps.latest.revision: 15
 author: dotnet-bot

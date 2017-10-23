@@ -11,10 +11,10 @@ f1_keywords:
   - "shadows"
 helpviewer_keywords: 
   - "shadowing"
-  - "duplicate names"
-  - "scope, shadowing"
-  - "Shadows keyword"
-  - "names, shadowing"
+  - "duplicate names [Visual Basic]"
+  - "scope [Visual Basic], shadowing"
+  - "Shadows keyword [Visual Basic]"
+  - "names [Visual Basic], shadowing"
 ms.assetid: 6bf687cd-0544-4797-b51b-911125ec57c6
 caps.latest.revision: 16
 author: dotnet-bot

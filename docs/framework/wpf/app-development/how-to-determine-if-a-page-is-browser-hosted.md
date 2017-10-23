@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "hosted pages in browser"
-  - "pages, hosted in browser"
+  - "hosted pages in browser [WPF]"
+  - "pages [WPF], hosted in browser"
 ms.assetid: 737e0f26-8371-49b4-9579-70879e51e1aa
 caps.latest.revision: 7
 author: dotnet-bot

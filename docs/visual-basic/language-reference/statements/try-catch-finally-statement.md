@@ -15,13 +15,13 @@ f1_keywords:
   - "vb.Try"
 helpviewer_keywords: 
   - "Try...Catch...Finally statements"
-  - "Try statement"
+  - "Try statement [Visual Basic]"
   - "try-catch exception handling, Try...Catch...Finally statements"
   - "error handling, while running code"
-  - "Try statement, Try...Catch...Finally"
+  - "Try statement [Visual Basic], Try...Catch...Finally"
   - "Finally keyword [Visual Basic], Try...Catch...Finally"
-  - "Catch statement"
-  - "When keyword"
+  - "Catch statement [Visual Basic]"
+  - "When keyword [Visual Basic]"
   - "Visual Basic code, handling errors while running"
   - "structured exception handling, Try...Catch...Finally statements"
 ms.assetid: d6488026-ccb3-42b8-a810-0d97b9d6472b

@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "border thickness, animating changes to"
-  - "animation, changes to border thickness"
+  - "border thickness [WPF], animating changes to"
+  - "animation [WPF], changes to border thickness"
 ms.assetid: fd021978-f74b-4e7b-a7f7-3987dcad9e0f
 caps.latest.revision: 8
 author: dotnet-bot

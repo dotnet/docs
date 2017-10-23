@@ -10,8 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "Windows Presentation Foundation, what's new"
-  - "WPF, what's new"
+  - "Windows Presentation Foundation [WPF], what's new"
+  - "WPF [WPF], what's new"
 ms.assetid: db086ae4-70bb-4862-95db-2eaca5216bc3
 caps.latest.revision: 55
 author: dotnet-bot

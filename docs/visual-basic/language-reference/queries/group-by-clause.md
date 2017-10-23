@@ -15,8 +15,8 @@ f1_keywords:
   - "vb.QueryGroup"
 helpviewer_keywords: 
   - "queries [Visual Basic], Group By"
-  - "Group By statement"
-  - "Group By clause"
+  - "Group By statement [Visual Basic]"
+  - "Group By clause [Visual Basic]"
 ms.assetid: b1b5dcea-6654-473b-a2db-01f7e4c265d7
 caps.latest.revision: 20
 author: dotnet-bot

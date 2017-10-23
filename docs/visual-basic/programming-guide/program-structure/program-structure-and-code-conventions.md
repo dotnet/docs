@@ -11,14 +11,14 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "coding conventions"
   - "Visual Basic code, coding conventions"
-  - "coding conventions, Visual Basic"
-  - "programs, structure"
-  - "program structure"
-  - "naming conventions, Visual Basic"
-  - "best practices, coding conventions"
-  - "conventions, Visual Basic coding"
+  - "coding conventions [Visual Basic], Visual Basic"
+  - "programs [Visual Basic], structure"
+  - "program structure [Visual Basic]"
+  - "naming conventions [Visual Basic], Visual Basic"
+  - "best practices [Visual Basic], coding conventions"
+  - "conventions [Visual Basic], Visual Basic coding"
   - "Visual Basic code"
-  - "programming, Visual Basic coding conventions"
+  - "programming [Visual Basic], Visual Basic coding conventions"
 ms.assetid: dd9be76f-6944-4e78-ad72-0b6084a3fc13
 caps.latest.revision: 21
 author: dotnet-bot

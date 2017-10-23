@@ -10,7 +10,7 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.EndDefinition"
 helpviewer_keywords: 
-  - "End keyword"
+  - "End keyword [Visual Basic]"
 ms.assetid: 42d6e088-ab0f-4cda-88e8-fdce3e5fcf4f
 caps.latest.revision: 17
 author: dotnet-bot

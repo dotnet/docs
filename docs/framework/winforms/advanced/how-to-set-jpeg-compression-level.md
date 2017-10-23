@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "images [Windows Forms], changing encoder parameters"
-  - "JPEG images, setting quality level"
+  - "JPEG images [Windows Forms], setting quality level"
 ms.assetid: 4b9a74e3-9504-43c1-9f28-ace651d0772e
 caps.latest.revision: 11
 author: dotnet-bot

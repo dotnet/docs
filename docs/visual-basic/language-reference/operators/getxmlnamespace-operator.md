@@ -11,8 +11,8 @@ f1_keywords:
   - "vb.GetXmlNamespace"
   - "GetXmlNamespace"
 helpviewer_keywords: 
-  - "GetXmlNamespace operator"
-  - "GetXmlNamespace keyword"
+  - "GetXmlNamespace operator [Visual Basic]"
+  - "GetXmlNamespace keyword [Visual Basic]"
 ms.assetid: d0d28cfd-0755-4896-ae0b-4981aa35517c
 caps.latest.revision: 14
 author: dotnet-bot

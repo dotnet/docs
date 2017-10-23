@@ -12,7 +12,7 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "application settings [Windows Forms], attributes"
   - "attributes [Windows Forms], application settings"
-  - "wrapper classes, application settings"
+  - "wrapper classes [Windows Forms], application settings"
 ms.assetid: 53caa66c-a9fb-43a5-953c-ad092590098d
 caps.latest.revision: 7
 author: dotnet-bot

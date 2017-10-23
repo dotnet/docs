@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "linear topology"
-  - "fixed hierarchical topology"
-  - "fixed linear topology"
+  - "linear topology [WPF]"
+  - "fixed hierarchical topology [WPF]"
+  - "fixed linear topology [WPF]"
   - "topologies [WPF]"
   - "navigation topologies [WPF]"
   - "dynamically-generated topology"

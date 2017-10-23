@@ -9,11 +9,11 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.narrowing"
 helpviewer_keywords: 
-  - "conversions, type"
-  - "type conversion"
-  - "conversions, data type"
-  - "Narrowing keyword"
-  - "data type conversion"
+  - "conversions [Visual Basic], type"
+  - "type conversion [Visual Basic]"
+  - "conversions [Visual Basic], data type"
+  - "Narrowing keyword [Visual Basic]"
+  - "data type conversion [Visual Basic]"
 ms.assetid: a207ee91-aca4-4771-b4e2-713f029bf2bb
 caps.latest.revision: 10
 author: dotnet-bot

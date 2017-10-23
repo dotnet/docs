@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "ControlTemplates [WPF], finding elements"
-  - "finding ControlTemplate elements"
+  - "finding ControlTemplate elements [WPF]"
 ms.assetid: d7b25447-ceff-4bb4-9be5-fd7c40ef00af
 caps.latest.revision: 6
 author: dotnet-bot

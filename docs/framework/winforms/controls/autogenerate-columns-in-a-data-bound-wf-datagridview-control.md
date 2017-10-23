@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "data grids, autogenerating columns"
+  - "data grids [Windows Forms], autogenerating columns"
   - "columns [Windows Forms], autogenerating"
   - "DataGridView control [Windows Forms], data-bound columns"
 ms.assetid: 699f6f9e-6aa5-4811-902b-6a2c57dec7d6

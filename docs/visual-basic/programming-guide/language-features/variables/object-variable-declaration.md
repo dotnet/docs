@@ -10,15 +10,15 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "early binding"
-  - "declarations, class"
+  - "early binding [Visual Basic]"
+  - "declarations [Visual Basic], class"
   - "classes [Visual Basic], declaring"
-  - "binding, late and early"
-  - "object variables, declaring"
+  - "binding [Visual Basic], late and early"
+  - "object variables [Visual Basic], declaring"
   - "variables [Visual Basic], object"
-  - "declaring variables, object variables"
-  - "declaring classes"
-  - "late binding"
+  - "declaring variables [Visual Basic], object variables"
+  - "declaring classes [Visual Basic]"
+  - "late binding [Visual Basic]"
 ms.assetid: 2a5a41a3-1aa8-4236-b1f0-2382af7bf715
 caps.latest.revision: 33
 author: dotnet-bot

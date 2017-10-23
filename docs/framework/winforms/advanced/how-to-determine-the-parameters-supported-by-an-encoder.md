@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "encoder parameters, determining supported"
+  - "encoder parameters [Windows Forms], determining supported"
 ms.assetid: f47ae459-e3ce-4d41-a140-2f6c6aea3f44
 caps.latest.revision: 9
 author: dotnet-bot

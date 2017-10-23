@@ -7,11 +7,11 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "title bar, printing"
+  - "title bar [Visual Basic], printing"
   - "printing"
-  - "borders, printing"
+  - "borders [Visual Basic], printing"
   - "entire form"
-  - "non-client area, printing"
+  - "non-client area [Visual Basic], printing"
 ms.assetid: 856bb0e4-dbc3-47e2-81cd-4b376cf07757
 caps.latest.revision: 17
 author: dotnet-bot

@@ -9,12 +9,12 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "parameter arrays, about parameter arrays"
-  - "ParamArray keyword, parameter arrays"
+  - "parameter arrays [Visual Basic], about parameter arrays"
+  - "ParamArray keyword [Visual Basic], parameter arrays"
   - "Visual Basic code, procedures"
-  - "parameters, parameter arrays"
+  - "parameters [Visual Basic], parameter arrays"
   - "arguments [Visual Basic], parameter arrays"
-  - "procedures, indefinite number of argument values"
+  - "procedures [Visual Basic], indefinite number of argument values"
   - "arrays [Visual Basic], parameter arrays"
 ms.assetid: c43edfae-9114-4096-9ebc-8c5c957a1067
 caps.latest.revision: 26

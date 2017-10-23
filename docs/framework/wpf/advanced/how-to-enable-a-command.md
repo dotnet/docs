@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "CommandBindings"
-  - "commanding"
+  - "CommandBindings [WPF]"
+  - "commanding [WPF]"
 ms.assetid: d8016266-58d9-48f7-8298-a86b7ed49fbd
 caps.latest.revision: 14
 author: dotnet-bot

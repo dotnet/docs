@@ -10,10 +10,10 @@ f1_keywords:
   - "vb.Object"
   - "vb.Variant"
 helpviewer_keywords: 
-  - "object variables, Object type"
+  - "object variables [Visual Basic], Object type"
   - "data types [Visual Basic], assigning"
   - "Object data type"
-  - "Object data type, reference"
+  - "Object data type [Visual Basic], reference"
 ms.assetid: 61ea4a7c-3b3d-48d4-adc4-eacfa91779b2
 caps.latest.revision: 19
 author: dotnet-bot

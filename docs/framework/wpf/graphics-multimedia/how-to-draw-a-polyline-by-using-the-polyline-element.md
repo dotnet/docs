@@ -10,11 +10,11 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "connected lines"
-  - "polylines, drawing"
+  - "connected lines [WPF]"
+  - "polylines [WPF], drawing"
   - "graphics [WPF], polylines"
-  - "lines, connected (see polylines)"
-  - "drawing, polylines"
+  - "lines [WPF], connected (see polylines)"
+  - "drawing [WPF], polylines"
 ms.assetid: 65db8935-d047-4295-87c4-b427ff3ad293
 caps.latest.revision: 10
 author: dotnet-bot

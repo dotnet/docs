@@ -1,4 +1,4 @@
-<Type Name="ScaffoldColumnAttribute" FullName="System.ComponentModel.DataAnnotations.ScaffoldColumnAttribute">
+﻿<Type Name="ScaffoldColumnAttribute" FullName="System.ComponentModel.DataAnnotations.ScaffoldColumnAttribute">
   <TypeSignature Language="C#" Value="public class ScaffoldColumnAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScaffoldColumnAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataAnnotations.ScaffoldColumnAttribute" />
@@ -46,7 +46,6 @@
  This class can be used to enable or disable scaffolding of data columns in a data model by applying this attribute to the appropriate data field object in the class that represents the table.  
   
    
-  
 ## Examples  
  The following code example exposes the ProductID column of the Products table in the AdventureWorksLT data base by applying the scaffold property to the ProductID object in the Products partial class and setting it to `true.` It hides the ThumbnailPhotoFileName column by applying the scaffold property to the ThumbnailPhotoFileName object and setting it to `false`.  
 
@@ -87,12 +86,12 @@ End Class
   
  To compile the example code, you need the following:  
   
--   Visual Studio 2008 Service Pack 1 or Visual Developer 2008 Express Edition Service Pack 1.  
+-   Any edition of Visual Studio 2010 or later.
   
--   The AdventureWorksLT sample database. For information about how to download and install the SQL Server sample database, see [Microsoft SQL Server Product Samples: Database](http://go.microsoft.com/fwlink/?LinkId=117483) on the CodePlex site. Make sure that you install the correct version of the sample database for the version of SQL Server that you are running (SQL Server 2005 or SQL Server 2008).  
+-   The AdventureWorksLT sample database. For information about how to download and install the SQL Server sample database, see [Microsoft SQL Server Product Samples: Database](https://github.com/Microsoft/sql-server-samples/releases) on GitHub. Make sure that you install the correct version of the sample database for the version of SQL Server that you are running.  
   
 -   A Dynamic Data Web site. This enables you to create a data context for the database and the class that contains the data field to customize and the methods to override. In addition, it creates the environment in which to use the page described before. For more information, see [Walkthrough: Creating a New Dynamic Data Web Site Using Scaffolding](http://msdn.microsoft.com/library/1564aef2-9103-436a-9806-c8ad7abd616a).  
-  
+
  ]]></format>
     </remarks>
   </Docs>

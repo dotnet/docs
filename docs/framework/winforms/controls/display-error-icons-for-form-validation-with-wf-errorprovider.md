@@ -9,15 +9,15 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "errors [Windows Forms], displaying to users"
   - "error icons"
   - "ErrorProvider component [Windows Forms], displaying error icons"
-  - "error messages, displaying icons"
+  - "error messages [Windows Forms], displaying icons"
 ms.assetid: 3b681a32-9db4-497b-a34b-34980eabee46
 caps.latest.revision: 15
 author: dotnet-bot

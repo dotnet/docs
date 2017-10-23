@@ -13,21 +13,21 @@ ms.topic: article
 
 Microservices architecture often starts with the server side handling data and logic. However, a more advanced approach is to design your application UI based on microservices as well. That means having a composite UI produced by the microservices, instead of having microservices on the server and just a monolithic client app consuming the microservices. With this approach, the microservices you build can be complete with both logic and visual representation.
 
-Figure 4-19 shows the simpler approach of just consuming microservices from a monolithic client application. Of course, you could have an ASP.NET MVC service in between producing the HTML and JavaScript. The figure is a simplification that highlights that you have a single (monolithic) client UI consuming the microservices, which just focus on logic and data and not on the UI shape (HTML and JavaScript).
+Figure 4-20 shows the simpler approach of just consuming microservices from a monolithic client application. Of course, you could have an ASP.NET MVC service in between producing the HTML and JavaScript. The figure is a simplification that highlights that you have a single (monolithic) client UI consuming the microservices, which just focus on logic and data and not on the UI shape (HTML and JavaScript).
 
-![](./media/image19.png)
+![](./media/image20.png)
 
-**Figure 4-19**. A monolithic UI application consuming back-end microservices
+**Figure 4-20**. A monolithic UI application consuming back-end microservices
 
 In contrast, a composite UI is precisely generated and composed by the microservices themselves. Some of the microservices drive the visual shape of specific areas of the UI. The key difference is that you have client UI components (TS classes, for example) based on templates, and the data-shaping-UI ViewModel for those templates comes from each microservice.
 
 At client application start-up time, each of the client UI components (TypeScript classes, for example) registers itself with an infrastructure microservice capable of providing ViewModels for a given scenario. If the microservice changes the shape, the UI changes also.
 
-Figure 4-20 shows a version of this composite UI approach. This is simplified, because you might have other microservices that are aggregating granular parts based on different techniques—it depends on whether you are building a traditional web approach (ASP.NET MVC) or an SPA (Single Page Application).
+Figure 4-21 shows a version of this composite UI approach. This is simplified, because you might have other microservices that are aggregating granular parts based on different techniques—it depends on whether you are building a traditional web approach (ASP.NET MVC) or an SPA (Single Page Application).
 
-![](./media/image20.png)
+![](./media/image21.png)
 
-**Figure 4-20**. Example of a composite UI application shaped by back-end microservices
+**Figure 4-21**. Example of a composite UI application shaped by back-end microservices
 
 Each of those UI composition microservices would be similar to a small API Gateway. But in this case each is responsible for a small UI area.
 

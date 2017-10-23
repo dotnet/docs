@@ -10,10 +10,10 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "UIElements, transparency"
-  - "opacity, of UIElements"
-  - "transparency of UIElements"
-  - "UIElements, opacity"
+  - "UIElements [WPF], transparency"
+  - "opacity [WPF], of UIElements"
+  - "transparency of UIElements [WPF]"
+  - "UIElements [WPF], opacity"
 ms.assetid: a49fc8d6-7b32-4f28-9122-39b632a19b4b
 caps.latest.revision: 10
 author: dotnet-bot

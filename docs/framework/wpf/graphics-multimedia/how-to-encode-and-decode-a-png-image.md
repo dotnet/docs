@@ -9,17 +9,17 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "PNG encoding"
-  - "decoding PNG images"
-  - "PNG decoding"
-  - "encoding image formats"
-  - "decoding image formats"
-  - "encoding PNG images"
+  - "PNG encoding [WPF]"
+  - "decoding PNG images [WPF]"
+  - "PNG decoding [WPF]"
+  - "encoding image formats [WPF]"
+  - "decoding image formats [WPF]"
+  - "encoding PNG images [WPF]"
 ms.assetid: 3d31d186-af73-47f0-b5a7-c26ae46409a6
 caps.latest.revision: 9
 author: dotnet-bot

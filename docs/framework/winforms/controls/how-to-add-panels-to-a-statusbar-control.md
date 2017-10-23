@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "panels, status bars"
-  - "status bars, adding panels"
+  - "panels [Windows Forms], status bars"
+  - "status bars [Windows Forms], adding panels"
   - "StatusBar control [Windows Forms], adding panels"
 ms.assetid: 835e3902-288c-4c38-9d69-0696d8695009
 caps.latest.revision: 15

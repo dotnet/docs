@@ -10,8 +10,8 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "Line control, implementing tabbing"
-  - "Shape control, implementing tabbing"
+  - "Line control [Visual Basic], implementing tabbing"
+  - "Shape control [Visual Basic], implementing tabbing"
 ms.assetid: 09731b34-3900-4fcb-a9df-ce5280328433
 caps.latest.revision: 14
 author: dotnet-bot

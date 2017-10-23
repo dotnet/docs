@@ -11,11 +11,11 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "Visual Basic code, procedures"
   - "overload resolution"
-  - "procedures, overloading"
-  - "procedures, calling"
-  - "procedure overloading, overload resolution"
-  - "signatures, procedure"
-  - "overloads, resolution"
+  - "procedures [Visual Basic], overloading"
+  - "procedures [Visual Basic], calling"
+  - "procedure overloading [Visual Basic], overload resolution"
+  - "signatures [Visual Basic], procedure"
+  - "overloads [Visual Basic], resolution"
 ms.assetid: 766115d1-4352-45fb-859f-6063e0de0ec0
 caps.latest.revision: 21
 author: dotnet-bot

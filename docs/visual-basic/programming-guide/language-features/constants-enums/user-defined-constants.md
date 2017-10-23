@@ -9,12 +9,12 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "constants, circular references"
+  - "constants [Visual Basic], circular references"
   - "Const statement [Visual Basic], user-defined constants"
-  - "user-defined constants"
-  - "scope, constants"
-  - "constants, user-defined"
-  - "circular references between constants"
+  - "user-defined constants [Visual Basic]"
+  - "scope [Visual Basic], constants"
+  - "constants [Visual Basic], user-defined"
+  - "circular references between constants [Visual Basic]"
 ms.assetid: a1206d5c-c45e-4ac2-970a-4a0be6a05fdd
 caps.latest.revision: 19
 author: dotnet-bot

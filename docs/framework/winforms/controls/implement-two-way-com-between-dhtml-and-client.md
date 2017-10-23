@@ -9,18 +9,18 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 f1_keywords: 
   - "WebBrowser.ObjectForScripting"
   - "WebBrowser.Document"
 helpviewer_keywords: 
   - "WebBrowser control [Windows Forms], examples"
-  - "communications, DHTML and client applications"
+  - "communications [Windows Forms], DHTML and client applications"
   - "examples [Windows Forms], WebBrowser control"
   - "WebBrowser control [Windows Forms], communication between DHTML and client application"
-  - "DHTML, embedding in Windows Forms"
+  - "DHTML [Windows Forms], embedding in Windows Forms"
 ms.assetid: 55353a32-b09e-4479-a521-ff3a5ff9a708
 caps.latest.revision: 18
 author: dotnet-bot

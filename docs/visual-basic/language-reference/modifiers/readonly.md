@@ -9,7 +9,7 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.ReadOnly"
 helpviewer_keywords: 
-  - "ReadOnly keyword"
+  - "ReadOnly keyword [Visual Basic]"
   - "variables [Visual Basic], read-only"
   - "ReadOnly property"
   - "properties [Visual Basic], read-only"

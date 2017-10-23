@@ -10,15 +10,15 @@ f1_keywords:
   - "Overridable"
   - "vb.Overridable"
 helpviewer_keywords: 
-  - "elements, concrete"
+  - "elements [Visual Basic], concrete"
   - "properties [Visual Basic], redefining"
   - "overriding, Overridable keyword"
-  - "elements, virtual"
-  - "virtual elements"
-  - "procedures, overriding"
-  - "concrete elements"
-  - "procedures, redefining"
-  - "Overridable keyword"
+  - "elements [Visual Basic], virtual"
+  - "virtual [elements VB]"
+  - "procedures [Visual Basic], overriding"
+  - "concrete [elements VB]"
+  - "procedures [Visual Basic], redefining"
+  - "Overridable keyword [Visual Basic]"
   - "properties [Visual Basic], overriding"
 ms.assetid: 612581e7-8a4c-4a5d-beff-3402fffa6f35
 caps.latest.revision: 17

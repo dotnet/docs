@@ -11,7 +11,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "parent forms"
-  - "MDI, creating forms"
+  - "MDI [Windows Forms], creating forms"
 ms.assetid: 12c71221-2377-4bb6-b10b-7b4b300fd462
 caps.latest.revision: 12
 author: dotnet-bot

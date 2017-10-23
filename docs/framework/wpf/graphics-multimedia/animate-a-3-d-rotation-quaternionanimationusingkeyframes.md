@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "3-D translations, animating, with key frames (QuaternionAnimationUsingKeyFrames)"
-  - "key frames, QuaternionAnimationUsingKeyFrames"
-  - "animation, 3-D translations, with key frames (QuaternionAnimationUsingKeyFrames)"
+  - "3-D translations [WPF], animating [WPF], with key frames (QuaternionAnimationUsingKeyFrames)"
+  - "key frames [WPF], QuaternionAnimationUsingKeyFrames"
+  - "animation [WPF], 3-D translations [WPF], with key frames (QuaternionAnimationUsingKeyFrames)"
 ms.assetid: 09e5707b-7523-4a08-9aa7-bb13cbedccdf
 caps.latest.revision: 5
 author: dotnet-bot

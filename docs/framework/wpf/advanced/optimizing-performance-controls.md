@@ -11,8 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "controls [WPF], improving performance"
-  - "container recycling"
-  - "user interface virtualization"
+  - "container recycling [WPF]"
+  - "user interface virtualization [WPF]"
 ms.assetid: 45a31c43-ea8a-4546-96c8-0631b9934179
 caps.latest.revision: 22
 author: dotnet-bot

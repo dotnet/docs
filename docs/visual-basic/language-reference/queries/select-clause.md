@@ -10,8 +10,8 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.QuerySelect"
 helpviewer_keywords: 
-  - "Select statement"
-  - "Select clause"
+  - "Select statement [Visual Basic]"
+  - "Select clause [Visual Basic]"
   - "queries [Visual Basic], Select"
 ms.assetid: 27a3f61c-5960-4692-9b91-4d0c4b6178fe
 caps.latest.revision: 21

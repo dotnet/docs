@@ -11,8 +11,8 @@ f1_keywords:
   - "vb.QuerySkip"
 helpviewer_keywords: 
   - "queries [Visual Basic], Skip"
-  - "Skip statement"
-  - "Skip clause"
+  - "Skip statement [Visual Basic]"
+  - "Skip clause [Visual Basic]"
 ms.assetid: f00eb172-3907-4c43-9745-d8546ab86234
 caps.latest.revision: 17
 author: dotnet-bot

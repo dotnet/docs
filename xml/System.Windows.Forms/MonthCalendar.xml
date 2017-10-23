@@ -522,9 +522,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a new accessibility object for the current <see cref="T:System.Windows.Forms.MonthCalendar" /> instance. </summary>
+        <returns>A new accessibility object for the control.</returns>
+        <remarks>
+           <format type="text/markdown"><![CDATA[  
+## Remarks
+
+The <xref:System.Windows.Forms.AccessibleObject> instance returned by this method provides correct values for the <xref:System.Windows.Forms.AccessibleObject.Help>, <xref:System.Windows.Forms.AccessibleObject.Name>, and <System.Windows.Forms.AccessibleObject.Role> properties. The new value for the <xref:System.Windows.Forms.AccessibleObject.Role> property is <xref:System.Windows.Forms.AccessibleRole.Table?displayProperty=nameWithType>, the new value for the <xref:System.Windows.Forms.AccessibleObject.Name> property is the current selection, and the new default value for the <xref:System.Windows.Forms.AccessibleObject.Help> property is the type name. 
+
+The <xref:System.Windows.Forms.AccessibleObject> is only available in applications that are recompiled to target the .NET Framework 4.7.1 or that opt in to the .NET Framework accessibility features added in the .NET Framework 4.7.1 by using a compatibility switch. For more information, see the Windows Forms section in [Retargeting Changes for Migration from .NET Framework 4.7 to 4.7.1](~/docs/dotnet/framework/migration-guide/retargeting/4.7-4.7.1.md#windows-forms).
+           ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateHandle">

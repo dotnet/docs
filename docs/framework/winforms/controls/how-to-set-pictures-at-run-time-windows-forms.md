@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "pictures, setting display"
+  - "pictures [Windows Forms], setting display"
   - "examples [Windows Forms], PictureBox control"
   - "bitmaps [Windows Forms], displaying in PictureBox control [Windows Forms]"
   - "PictureBox control [Windows Forms], adding images"

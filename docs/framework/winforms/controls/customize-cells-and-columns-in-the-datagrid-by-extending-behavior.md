@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], cell customization"
   - "columns [Windows Forms], customizing in DataGridView control"
-  - "cells, customizing in DataGridView control"
+  - "cells [Windows Forms], customizing in DataGridView control"
 ms.assetid: 9b7dc7b6-5ce6-4566-9949-902f74f17a81
 caps.latest.revision: 21
 author: dotnet-bot

@@ -9,17 +9,17 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "comparison operators, comparing strings"
-  - "comparison operators, comparing objects"
+  - "comparison operators [Visual Basic], comparing strings"
+  - "comparison operators [Visual Basic], comparing objects"
   - "strings [Visual Basic], comparing"
-  - "comparison operators"
+  - "comparison operators [Visual Basic]"
   - "string comparison [Visual Basic], operators"
   - "objects [Visual Basic], comparing"
-  - "numbers, comparing"
+  - "numbers [Visual Basic], comparing"
   - "Visual Basic code, operators"
   - "string comparison [Visual Basic]"
-  - "numeric values, comparing"
-  - "comparison operators, comparing numeric values"
+  - "numeric values [Visual Basic], comparing"
+  - "comparison operators [Visual Basic], comparing numeric values"
   - "operators [Visual Basic], comparison"
 ms.assetid: 0b570339-5407-474f-8421-e183a8b303ee
 caps.latest.revision: 13

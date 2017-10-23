@@ -9,15 +9,15 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "user interface virtualization"
-  - "dependency properties, performance"
+  - "user interface virtualization [WPF]"
+  - "dependency properties [WPF], performance"
   - "event handlers [WPF]"
-  - "object performance considerations"
-  - "Freezable objects, performance"
+  - "object performance considerations [WPF]"
+  - "Freezable objects [WPF], performance"
 ms.assetid: 73aa2f47-1d73-439a-be1f-78dc4ba2b5bd
 caps.latest.revision: 12
 author: dotnet-bot

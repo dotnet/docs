@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "XBAP, XAML browser application"
+  - "XBAP [WPF], XAML browser application"
   - "WPF XAML browser applications (XBAP)"
   - "XAML browser applications (XBAP)"
   - "browser-hosted applications [WPF]"

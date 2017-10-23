@@ -10,10 +10,10 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "BindingSource component, architecture"
+  - "BindingSource component [Windows Forms], architecture"
   - "Windows Forms, data binding"
   - "BindingSource component [Windows Forms], about BindingSource component"
-  - "data binding, BindingSource component"
+  - "data binding [Windows Forms], BindingSource component"
 ms.assetid: 7bc69c90-8a11-48b1-9336-3adab5b41591
 caps.latest.revision: 23
 author: dotnet-bot

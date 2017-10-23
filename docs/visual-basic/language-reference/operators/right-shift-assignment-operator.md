@@ -10,10 +10,10 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.>>="
 helpviewer_keywords: 
-  - "assignment statements, compound"
+  - "assignment statements [Visual Basic], compound"
   - "statements [Visual Basic], compound assignment"
   - "operator >>= [Visual Basic]"
-  - "compound assignment statements"
+  - "compound assignment statements [Visual Basic]"
   - ">>= operator [Visual Basic]"
 ms.assetid: 2bcd9abb-7a8c-4229-b75d-8816ff1dc700
 caps.latest.revision: 17

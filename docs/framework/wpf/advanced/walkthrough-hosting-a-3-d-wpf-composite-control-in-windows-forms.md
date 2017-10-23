@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "hosting WPF content in Windows Forms"
-  - "composite controls, hosting WPF in"
+  - "hosting WPF content in Windows Forms [WPF]"
+  - "composite controls [WPF], hosting WPF in"
 ms.assetid: 486369a9-606a-4a3b-b086-a06f2119c7b0
 caps.latest.revision: 23
 author: dotnet-bot

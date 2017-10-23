@@ -15,7 +15,7 @@ ms.devlang: dotnet
 
 The .NET Framework is required to run many applications on Windows. You can use the following instructions to install it. You may have arrived on this page after trying to run an application and seeing the following dialog on your machine.
 
-![This application could not be started](media\this-application-could-not-be-started.png)
+![This application could not be started](./media/this-application-could-not-be-started.png)
 
 These instructions will help you install the .NET Framework versions you need. The latest version is often your best choice. The latest version is the .NET Framework 4.7.1.
 

@@ -10,11 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "VideoDrawing class"
-  - "MediaPlayer class"
-  - "playback of media"
-  - "classes, VideoDrawing"
-  - "classes, MediaPlayer"
+  - "playback of media [WPF]"
+  - "classes [WPF], MediaPlayer"
 ms.assetid: 165d47ed-22ce-4ded-aa6a-aa9b7467de87
 caps.latest.revision: 6
 author: dotnet-bot

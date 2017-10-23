@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "pens, setting color"
+  - "pens [Windows Forms], setting color"
   - "colored pens"
 ms.assetid: a9df06f9-a6d5-4d9b-a2d1-583943540775
 caps.latest.revision: 13

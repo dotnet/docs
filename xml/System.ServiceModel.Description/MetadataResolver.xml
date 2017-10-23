@@ -79,7 +79,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default settings on the <xref:System.ServiceModel.Description.MetadataExchangeClient?displayProperty=nameWithType> are used to retrieve the metadata and the default <xref:System.ServiceModel.Description.MetadataExchangeClientMode?displayProperty=nameWithType> is <xref:System.ServiceModel.Description.MetadataExchangeClientMode?displayProperty=nameWithType>.  
+ The default settings on the <xref:System.ServiceModel.Description.MetadataExchangeClient?displayProperty=nameWithType> are used to retrieve the metadata and the default <xref:System.ServiceModel.Description.MetadataExchangeClientMode?displayProperty=nameWithType> is <xref:System.ServiceModel.Description.MetadataExchangeClientMode.MetadataExchange?displayProperty=nameWithType>.  
   
  To download metadata but not resolve the information into <xref:System.ServiceModel.Description.ServiceEndpoint> objects, use the <xref:System.ServiceModel.Description.MetadataExchangeClient?displayProperty=nameWithType> directly.  
   
@@ -122,7 +122,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default settings on the <xref:System.ServiceModel.Description.MetadataExchangeClient?displayProperty=nameWithType> are used to retrieve the metadata and the default <xref:System.ServiceModel.Description.MetadataExchangeClientMode?displayProperty=nameWithType> is <xref:System.ServiceModel.Description.MetadataExchangeClientMode?displayProperty=nameWithType>.  
+ The default settings on the <xref:System.ServiceModel.Description.MetadataExchangeClient?displayProperty=nameWithType> are used to retrieve the metadata and the default <xref:System.ServiceModel.Description.MetadataExchangeClientMode?displayProperty=nameWithType> is <xref:System.ServiceModel.Description.MetadataExchangeClientMode.MetadataExchange?displayProperty=nameWithType>.  
   
  To download metadata but not resolve the information into <xref:System.ServiceModel.Description.ServiceEndpoint> objects, use the <xref:System.ServiceModel.Description.MetadataExchangeClient?displayProperty=nameWithType> directly.  
   
@@ -169,7 +169,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default <xref:System.ServiceModel.Description.MetadataExchangeClientMode?displayProperty=nameWithType> is <xref:System.ServiceModel.Description.MetadataExchangeClientMode?displayProperty=nameWithType>.  
+ The default <xref:System.ServiceModel.Description.MetadataExchangeClientMode?displayProperty=nameWithType> is <xref:System.ServiceModel.Description.MetadataExchangeClientMode.MetadataExchange?displayProperty=nameWithType>.  
   
  To download metadata but not resolve the information into <xref:System.ServiceModel.Description.ServiceEndpoint> objects, use the <xref:System.ServiceModel.Description.MetadataExchangeClient?displayProperty=nameWithType> directly.  
   
@@ -389,7 +389,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default settings on the <xref:System.ServiceModel.Description.MetadataExchangeClient?displayProperty=nameWithType> are used to retrieve the metadata and the default <xref:System.ServiceModel.Description.MetadataExchangeClientMode?displayProperty=nameWithType> is <xref:System.ServiceModel.Description.MetadataExchangeClientMode?displayProperty=nameWithType>.  
+ The default settings on the <xref:System.ServiceModel.Description.MetadataExchangeClient?displayProperty=nameWithType> are used to retrieve the metadata and the default <xref:System.ServiceModel.Description.MetadataExchangeClientMode?displayProperty=nameWithType> is <xref:System.ServiceModel.Description.MetadataExchangeClientMode.MetadataExchange?displayProperty=nameWithType>.  
   
  To download metadata but not resolve the information into <xref:System.ServiceModel.Description.ServiceEndpoint> objects, use the <xref:System.ServiceModel.Description.MetadataExchangeClient?displayProperty=nameWithType> directly.  
   
@@ -430,7 +430,7 @@
 ## Remarks  
  Use the <xref:System.ServiceModel.Description.MetadataResolver.Resolve%2A> method to specify the contract and the metadata address to use when downloading and resolving metadata.  
   
- The default settings on the <xref:System.ServiceModel.Description.MetadataExchangeClient?displayProperty=nameWithType> are used to retrieve the metadata and the default <xref:System.ServiceModel.Description.MetadataExchangeClientMode?displayProperty=nameWithType> is <xref:System.ServiceModel.Description.MetadataExchangeClientMode?displayProperty=nameWithType>.  
+ The default settings on the <xref:System.ServiceModel.Description.MetadataExchangeClient?displayProperty=nameWithType> are used to retrieve the metadata and the default <xref:System.ServiceModel.Description.MetadataExchangeClientMode?displayProperty=nameWithType> is <xref:System.ServiceModel.Description.MetadataExchangeClientMode.MetadataExchange?displayProperty=nameWithType>.  
   
  To download metadata but not resolve the information into <xref:System.ServiceModel.Description.ServiceEndpoint> objects, use the <xref:System.ServiceModel.Description.MetadataExchangeClient?displayProperty=nameWithType> directly.  
   
@@ -480,7 +480,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default <xref:System.ServiceModel.Description.MetadataExchangeClientMode?displayProperty=nameWithType> is <xref:System.ServiceModel.Description.MetadataExchangeClientMode?displayProperty=nameWithType>.  
+ The default <xref:System.ServiceModel.Description.MetadataExchangeClientMode?displayProperty=nameWithType> is <xref:System.ServiceModel.Description.MetadataExchangeClientMode.MetadataExchange?displayProperty=nameWithType>.  
   
  To download metadata but not resolve the information into <xref:System.ServiceModel.Description.ServiceEndpoint> objects, use the <xref:System.ServiceModel.Description.MetadataExchangeClient?displayProperty=nameWithType> directly.  
   

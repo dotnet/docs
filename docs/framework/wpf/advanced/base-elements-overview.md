@@ -10,7 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "base elements"
+  - "base elements [WPF]"
 ms.assetid: 2c997092-72c6-4767-bc84-74267f4eee72
 caps.latest.revision: 19
 author: dotnet-bot

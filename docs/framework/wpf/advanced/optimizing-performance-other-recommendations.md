@@ -9,15 +9,15 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "Terminal Services rendering"
-  - "opacity"
+  - "Terminal Services rendering [WPF]"
+  - "opacity [WPF]"
   - "hit-test objects [WPF]"
-  - "ScrollBarVisibility enumeration"
-  - "brushes, performance"
+  - "ScrollBarVisibility enumeration [WPF]"
+  - "brushes [WPF], performance"
 ms.assetid: d028cc65-7e97-4a4f-9859-929734eaf40d
 caps.latest.revision: 20
 author: dotnet-bot

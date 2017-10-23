@@ -9,16 +9,14 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "margins"
-  - "FrameworkElement class"
-  - "classes, FrameworkElement"
-  - "padding"
-  - "aligning"
+  - "margins [WPF]"
+  - "padding [WPF]"
+  - "aligning [WPF]"
 ms.assetid: 9c6a2009-9b86-4e40-8605-0a2664dc3973
 caps.latest.revision: 22
 author: dotnet-bot

@@ -10,10 +10,10 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "UserControl class, creating composite controls"
+  - "UserControl class [Windows Forms], creating composite controls"
   - "user controls [Windows Forms], creating"
   - "user controls [Windows Forms], inheriting from"
-  - "composite controls, creating"
+  - "composite controls [Windows Forms], creating"
 ms.assetid: 79c9cf05-5ab6-4a18-886d-88a64748b098
 caps.latest.revision: 11
 author: dotnet-bot

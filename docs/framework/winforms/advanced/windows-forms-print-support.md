@@ -12,8 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Forms, printing"
   - "printing [Windows Forms]"
-  - "forms, printing (using designer)"
-  - "printing, Windows Forms, support"
+  - "forms [Windows Forms], printing (using designer)"
+  - "printing [Windows Forms], Windows Forms, support"
   - "printing [Windows Forms], print support"
 ms.assetid: a4a2960c-eb70-48e2-b641-cfb222704e46
 caps.latest.revision: 12

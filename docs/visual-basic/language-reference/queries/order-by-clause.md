@@ -13,8 +13,8 @@ f1_keywords:
   - "vb.QueryDescending"
 helpviewer_keywords: 
   - "queries [Visual Basic], Order By"
-  - "Order By clause"
-  - "Order By statement"
+  - "Order By clause [Visual Basic]"
+  - "Order By statement [Visual Basic]"
 ms.assetid: fa911282-6b81-44c7-acfa-46b5bb93df75
 caps.latest.revision: 16
 author: dotnet-bot

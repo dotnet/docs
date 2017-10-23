@@ -10,12 +10,12 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "designer access security"
-  - "permissions, Windows Forms"
+  - "designer access security [Windows Forms]"
+  - "permissions [Windows Forms], Windows Forms"
   - "Windows Forms, security"
   - "security [Windows Forms]"
-  - "access control, Windows Forms"
-  - "security policy, Windows Forms"
+  - "access control [Windows Forms], Windows Forms"
+  - "security policy [Windows Forms], Windows Forms"
 ms.assetid: 932d438a-5285-46d8-a958-8c93d0ad6cae
 caps.latest.revision: 8
 author: dotnet-bot

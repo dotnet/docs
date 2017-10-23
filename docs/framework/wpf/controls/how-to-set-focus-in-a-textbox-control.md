@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "focus, setting"
-  - "TextBox control, setting focus"
+  - "focus [WPF], setting"
+  - "TextBox control [WPF], setting focus"
 ms.assetid: 24b61b45-dc2d-425e-9839-b017af7ab86f
 caps.latest.revision: 11
 author: dotnet-bot

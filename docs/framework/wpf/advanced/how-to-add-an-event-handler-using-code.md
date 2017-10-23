@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "event handlers, adding"
-  - "XAML, adding event handlers"
+  - "event handlers [WPF], adding"
+  - "XAML [WPF], adding event handlers"
 ms.assetid: 269c61e0-6bd9-4291-9bed-1c5ee66da486
 caps.latest.revision: 16
 author: dotnet-bot

@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "graphics, printing"
+  - "graphics [Windows Forms], printing"
   - "printing [Windows Forms], graphics"
 ms.assetid: 32b891e6-52ff-4fea-a9ff-2ce5db20a4c6
 caps.latest.revision: 20

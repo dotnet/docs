@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "printing [Windows Forms], choosing printers"
-  - "printers, choosing"
+  - "printers [Windows Forms], choosing"
 ms.assetid: 63c1172b-2931-4ac0-953f-37f629494bbf
 caps.latest.revision: 19
 author: dotnet-bot

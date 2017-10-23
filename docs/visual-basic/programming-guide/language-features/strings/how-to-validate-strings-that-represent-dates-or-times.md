@@ -10,7 +10,7 @@ ms.technology:
 ms.topic: "article"
 helpviewer_keywords: 
   - "strings [Visual Basic], validating"
-  - "String data type, validation"
+  - "String data type [Visual Basic], validation"
 ms.assetid: ae7d4b29-3436-4032-bdbf-4650eb1c8e19
 caps.latest.revision: 11
 author: dotnet-bot

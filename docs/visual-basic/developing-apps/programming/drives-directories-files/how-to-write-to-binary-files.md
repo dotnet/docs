@@ -9,9 +9,9 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "files, binary access"
-  - "WriteAllBytes method"
-  - "binary files, writing in Visual Basic"
+  - "files [Visual Basic], binary access"
+  - "WriteAllBytes method [Visual Basic]"
+  - "binary files [Visual Basic], writing in Visual Basic"
 ms.assetid: 59fae125-de5b-4c96-883c-209f4a55112c
 caps.latest.revision: 16
 author: dotnet-bot

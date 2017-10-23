@@ -104,7 +104,7 @@
   
 2.  If the collection is an <xref:System.Collections.IList>, the <xref:System.ComponentModel.Design.Serialization.CollectionCodeDomSerializer.Serialize%2A> method will cast the collection to an <xref:System.Collections.IList> and add through that interface.  
   
-    1.  If the collection has no *Add* method, but is marked with <xref:System.ComponentModel.DesignerSerializationVisibility?displayProperty=nameWithType>, <xref:System.ComponentModel.Design.Serialization.CollectionCodeDomSerializer.Serialize%2A> will enumerate the collection and serialize each element.  
+    1.  If the collection has no *Add* method, but is marked with <xref:System.ComponentModel.DesignerSerializationVisibility.Content?displayProperty=nameWithType>, <xref:System.ComponentModel.Design.Serialization.CollectionCodeDomSerializer.Serialize%2A> will enumerate the collection and serialize each element.  
   
  ]]></format>
         </remarks>

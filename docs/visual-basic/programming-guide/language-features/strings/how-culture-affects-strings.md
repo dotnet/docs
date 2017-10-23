@@ -9,7 +9,7 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "locale, effect on strings"
+  - "locale [Visual Basic], effect on strings"
   - "strings [Visual Basic], locale dependence"
 ms.assetid: c4664444-ee0d-47bf-bef1-eaa3c54bdd7f
 caps.latest.revision: 20

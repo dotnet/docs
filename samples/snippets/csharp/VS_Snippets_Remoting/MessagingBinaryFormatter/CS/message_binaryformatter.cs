@@ -45,7 +45,7 @@ namespace MyProject
 		public static void CreateQueue(string queuePath)
 		{
 			try	
-				{
+			{
 				if(!MessageQueue.Exists(queuePath))
 				{
 					MessageQueue.Create(queuePath);

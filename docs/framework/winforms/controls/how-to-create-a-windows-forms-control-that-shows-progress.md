@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "controls [Windows Forms], progress tracking"
   - "controls [Windows Forms], creating"
-  - "progress, reporting [Windows Forms]"
+  - "progress [Windows Forms], reporting [Windows Forms]"
   - "FlashTrackBar custom control"
 ms.assetid: 24c5a2e3-058c-4b8d-a217-c06e6a130c2f
 caps.latest.revision: 6

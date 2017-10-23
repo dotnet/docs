@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "context menus, custom"
-  - "menus, custom"
-  - "custom context menus"
-  - "TextBox control, custom content menus"
+  - "context menus [WPF], custom"
+  - "menus [WPF], custom"
+  - "custom context menus [WPF]"
+  - "TextBox control [WPF], custom content menus"
 ms.assetid: 842d3cd5-6fa0-4be4-8d90-6c7466213b1c
 caps.latest.revision: 9
 author: dotnet-bot

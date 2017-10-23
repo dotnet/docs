@@ -9,16 +9,16 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "examples [Windows Forms], just-in-time data loading"
   - "data [Windows Forms], managing large data sets"
   - "DataGridView control [Windows Forms], virtual mode"
   - "just-in-time data loading"
   - "DataGridView control [Windows Forms], large data sets"
-  - "virtual mode, just-in-time data loading"
+  - "virtual mode [Windows Forms], just-in-time data loading"
 ms.assetid: c2a052b9-423c-4ff7-91dc-d8c7c79345f6
 caps.latest.revision: 13
 author: dotnet-bot

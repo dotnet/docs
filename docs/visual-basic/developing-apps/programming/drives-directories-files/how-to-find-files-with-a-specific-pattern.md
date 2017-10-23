@@ -9,7 +9,7 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "files, finding"
+  - "files [Visual Basic], finding"
   - "pattern matching"
   - "patterns, matching"
 ms.assetid: 25e3b71d-b844-4293-9e4e-f06c5836b5cc

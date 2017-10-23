@@ -10,7 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "IWpfHostSupport interface"
+  - "IWpfHostSupport interface [WPF]"
 ms.assetid: cc5a0281-de81-4cc1-87e4-0e46b1a811e9
 caps.latest.revision: 8
 author: dotnet-bot

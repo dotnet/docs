@@ -13,8 +13,8 @@ f1_keywords:
   - "ContextMenu"
 helpviewer_keywords: 
   - "ContextMenu component [Windows Forms], about ContextMenu component"
-  - "context menus, ContextMenu component"
-  - "shortcut menus, ContextMenu component"
+  - "context menus [Windows Forms], ContextMenu component"
+  - "shortcut menus [Windows Forms], ContextMenu component"
 ms.assetid: 49d6398f-d3c4-4679-84fa-1de07b68b05e
 caps.latest.revision: 15
 author: dotnet-bot

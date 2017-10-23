@@ -10,8 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "inheritance, Windows Forms custom controls"
-  - "Control class, inheriting from"
+  - "inheritance [Windows Forms], Windows Forms custom controls"
+  - "Control class [Windows Forms], inheriting from"
   - "custom controls [Windows Forms], inheritance"
   - "OnPaint method [Windows Forms]"
   - "custom controls [Windows Forms], creating"

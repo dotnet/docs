@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "controls, ContextMenu"
+  - "controls [WPF], ContextMenu"
   - "ContextMenu controls [WPF], about ContextMenu controls"
 ms.assetid: 16909c42-799a-4561-91e0-7d69dcfeea91
 caps.latest.revision: 25

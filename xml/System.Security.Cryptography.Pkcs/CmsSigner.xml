@@ -62,7 +62,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For the default property values used with this constructor, see <xref:System.Security.Cryptography.Pkcs.CmsSigner.%23ctor>. An exception to those values when this constructor is used is that <xref:System.Security.Cryptography.Pkcs.CmsSigner.IncludeOption%2A> is set to <xref:System.Security.Cryptography.X509Certificates.X509IncludeOption?displayProperty=nameWithType>.  
+ For the default property values used with this constructor, see <xref:System.Security.Cryptography.Pkcs.CmsSigner.%23ctor>. An exception to those values when this constructor is used is that <xref:System.Security.Cryptography.Pkcs.CmsSigner.IncludeOption%2A> is set to <xref:System.Security.Cryptography.X509Certificates.X509IncludeOption.None?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

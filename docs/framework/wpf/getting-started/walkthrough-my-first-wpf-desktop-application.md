@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "getting started, WPF"
-  - "WPF, getting started"
+  - "getting started [WPF], WPF"
+  - "WPF [WPF], getting started"
 ms.assetid: b96bed40-8946-4285-8fe4-88045ab854ed
 caps.latest.revision: 71
 author: dotnet-bot

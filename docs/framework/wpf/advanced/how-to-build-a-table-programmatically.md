@@ -9,13 +9,11 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "tables, creating programmatically"
-  - "documents, programmatically creating tables"
-  - "creating, tables (programmatically)"
+  - "tables [WPF], creating programmatically"
 ms.assetid: e3ca88f3-6e94-4b61-82fc-42104c10b761
 caps.latest.revision: 12
 author: dotnet-bot

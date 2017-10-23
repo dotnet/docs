@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "controls [Windows Forms]"
   - "custom controls [Windows Forms], creating simple controls using code"
-  - "Control class, Windows Forms"
+  - "Control class [Windows Forms], Windows Forms"
 ms.assetid: 86cbe435-45b7-4cb4-9b5a-47418369758d
 caps.latest.revision: 17
 author: dotnet-bot

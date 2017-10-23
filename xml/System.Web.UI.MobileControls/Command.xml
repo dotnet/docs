@@ -248,14 +248,14 @@
 ## Remarks  
  Access the two available types through the <xref:System.Web.UI.MobileControls.CommandFormat> enumeration.  
   
- <xref:System.Web.UI.MobileControls.CommandFormat?displayProperty=nameWithType> (default)  
+ <xref:System.Web.UI.MobileControls.CommandFormat.Button?displayProperty=nameWithType> (default)  
  The command is rendered as a button.  
   
- <xref:System.Web.UI.MobileControls.CommandFormat?displayProperty=nameWithType>  
+ <xref:System.Web.UI.MobileControls.CommandFormat.Link?displayProperty=nameWithType>  
  The command is rendered as a link.  
   
 > [!NOTE]
->  The <xref:System.Web.UI.MobileControls.Command.Format%2A> property supports the <xref:System.Web.UI.MobileControls.CommandFormat?displayProperty=nameWithType> value only on devices that support JavaScript as indicated by the <xref:System.Web.Configuration.HttpCapabilitiesBase.JavaScript%2A?displayProperty=nameWithType> property.  
+>  The <xref:System.Web.UI.MobileControls.Command.Format%2A> property supports the <xref:System.Web.UI.MobileControls.CommandFormat.Link?displayProperty=nameWithType> value only on devices that support JavaScript as indicated by the <xref:System.Web.Configuration.HttpCapabilitiesBase.JavaScript%2A?displayProperty=nameWithType> property.  
   
    
   

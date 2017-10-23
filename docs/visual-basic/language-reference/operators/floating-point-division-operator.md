@@ -10,17 +10,17 @@ ms.topic: "article"
 f1_keywords: 
   - "vb./"
 helpviewer_keywords: 
-  - "division operator, floating point"
-  - "floating-point numbers, division operator"
+  - "division operator [Visual Basic], floating point"
+  - "floating-point numbers [Visual Basic], division operator"
   - "slash (/) operator"
   - "zero, division by zero"
   - "operators [Visual Basic], arithmetic"
-  - "arithmetic operators, division"
-  - "division, by zero"
+  - "arithmetic operators [Visual Basic], division"
+  - "division [Visual Basic], by zero"
   - "operators [Visual Basic], division"
-  - "division operator, syntax"
+  - "division operator [Visual Basic], syntax"
   - "/ operator [Visual Basic]"
-  - "math operators"
+  - "math operators [Visual Basic]"
 ms.assetid: 335e97f2-c434-439e-9064-76973a051101
 caps.latest.revision: 18
 author: dotnet-bot

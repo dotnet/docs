@@ -9,16 +9,16 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "markup extensions"
-  - "data binding, declarations"
-  - "object element syntax"
-  - "binding data, declarations"
-  - "syntax, object elements"
-  - "binding declarations"
+  - "markup extensions [WPF]"
+  - "data binding [WPF], declarations"
+  - "object element syntax [WPF]"
+  - "binding data [WPF], declarations"
+  - "syntax [WPF], object elements"
+  - "binding declarations [WPF]"
 ms.assetid: b97fd626-4c0d-4761-872a-2bca5820da2c
 caps.latest.revision: 34
 author: dotnet-bot

@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "Dock property, aligning controls (using code)"
-  - "forms, aligning controls"
+  - "Dock property [Windows Forms], aligning controls (using code)"
+  - "forms [Windows Forms], aligning controls"
   - "controls [Windows Forms], aligning on forms"
   - "custom controls [Windows Forms], docking using code"
 ms.assetid: 5994cb59-242b-4e75-bd0e-62879c34d702

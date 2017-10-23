@@ -10,9 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "Button controls, creating with automatic layout"
-  - "creating, buttons with automatic layout"
-  - "automatic layout, creating buttons"
+  - "Button controls [WPF], creating with automatic layout"
+  - "automatic layout [WPF], creating buttons"
 ms.assetid: 96c206d0-9e77-4784-9d2d-5045aed2021c
 caps.latest.revision: 15
 author: dotnet-bot

@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "styling controls on toolbar"
-  - "toolbars"
-  - "customizing controls on toolbar"
+  - "styling controls on toolbar [WPF]"
+  - "toolbars [WPF]"
+  - "customizing controls on toolbar [WPF]"
 ms.assetid: ba6ae056-d6a9-4c24-90f8-467ab0bc0b1a
 caps.latest.revision: 4
 author: dotnet-bot

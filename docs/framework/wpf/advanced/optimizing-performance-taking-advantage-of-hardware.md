@@ -10,12 +10,12 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "graphics, performance"
-  - "hardware rendering pipeline"
-  - "rendering tiers"
-  - "graphics rendering tiers"
-  - "graphics, rendering tiers"
-  - "software rendering pipeline"
+  - "graphics [WPF], performance"
+  - "hardware rendering pipeline [WPF]"
+  - "rendering tiers [WPF]"
+  - "graphics rendering tiers [WPF]"
+  - "graphics [WPF], rendering tiers"
+  - "software rendering pipeline [WPF]"
 ms.assetid: bfb89bae-7aab-4cac-a26c-a956eda8fce2
 caps.latest.revision: 6
 author: dotnet-bot

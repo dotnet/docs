@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "triggers, controlling Storyboards"
-  - "event triggers, controlling Storyboards"
-  - "Storyboards, controlling after start"
+  - "triggers [WPF], controlling Storyboards"
+  - "event triggers [WPF], controlling Storyboards"
+  - "Storyboards [WPF], controlling after start"
 ms.assetid: 3b115594-6a93-4972-b24d-61aa16f1c15f
 caps.latest.revision: 17
 author: dotnet-bot

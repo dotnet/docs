@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "Windows Explorer, creating with Windows Forms"
+  - "Windows Explorer [Windows Forms], creating with Windows Forms"
   - "SplitContainer control [Windows Forms], Explorer-style interface"
-  - "forms, Windows Explorer type"
+  - "forms [Windows Forms], Windows Explorer type"
 ms.assetid: 9a3d5f4f-5dda-4350-9ad5-57ce5976dc47
 caps.latest.revision: 15
 author: dotnet-bot

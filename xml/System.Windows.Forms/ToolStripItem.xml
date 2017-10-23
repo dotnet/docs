@@ -323,7 +323,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ToolStripItem.AccessibleRole%2A> property describes what kind of user interface element an object is. If the control's role cannot be determined, the <xref:System.Windows.Forms.ToolStripItem.AccessibleRole%2A> property is set to <xref:System.Windows.Forms.AccessibleRole?displayProperty=nameWithType>.  
+ The <xref:System.Windows.Forms.ToolStripItem.AccessibleRole%2A> property describes what kind of user interface element an object is. If the control's role cannot be determined, the <xref:System.Windows.Forms.ToolStripItem.AccessibleRole%2A> property is set to <xref:System.Windows.Forms.AccessibleRole.PushButton?displayProperty=nameWithType>.  
   
  For more information about properties of accessible objects, see "Content of Descriptive Properties" in the "Active Accessibility" section of the MSDN Library, at http://msdn.microsoft.com/library.  
   

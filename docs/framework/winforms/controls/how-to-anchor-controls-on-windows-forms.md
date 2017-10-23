@@ -10,13 +10,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "Anchor property, enabling resizable forms"
+  - "Anchor property [Windows Forms], enabling resizable forms"
   - "Windows Forms controls, screen resolutions"
-  - "resizing forms"
+  - "resizing forms [Windows Forms]"
   - "Windows Forms controls, size"
   - "screen resolution and control display"
   - "controls [Windows Forms], anchoring"
-  - "forms, resizing"
+  - "forms [Windows Forms], resizing"
   - "Windows Forms, resizing"
   - "controls [Windows Forms], positioning"
 ms.assetid: 59ea914f-fbd3-427a-80fe-decd02f7ae6d

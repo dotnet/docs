@@ -10,7 +10,7 @@ ms.technology:
 ms.topic: "article"
 helpviewer_keywords: 
   - "security [Visual Basic], registry"
-  - "registry, security issues"
+  - "registry [Visual Basic], security issues"
 ms.assetid: 9980aff7-2f69-492b-8f66-29a9a76d3df5
 caps.latest.revision: 17
 author: dotnet-bot

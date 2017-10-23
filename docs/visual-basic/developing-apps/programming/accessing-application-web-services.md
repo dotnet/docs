@@ -7,7 +7,7 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "Web services, My.WebServices object"
+  - "Web services [Visual Basic], My.WebServices object"
   - "My.WebServices object"
   - "applications [Visual Basic], Web services"
 ms.assetid: 8ad5405b-e771-42b1-82d3-ce97af2cea9e

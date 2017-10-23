@@ -9,8 +9,8 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "keyboards, accessing [Visual Basic]"
-  - "My.Computer.Keyboard object, tasks"
+  - "keyboards [Visual Basic], accessing [Visual Basic]"
+  - "My.Computer.Keyboard object [Visual Basic], tasks"
   - "keystrokes"
   - "CapsLock property"
 ms.assetid: aa37d54c-5c98-4b44-b98a-c26d2a03c038

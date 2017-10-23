@@ -1326,7 +1326,7 @@
 ## Remarks  
  This method is invoked by an internal private method (no public `CollectionKind` or `GetCollectionKind` API exists on <xref:System.Xaml.XamlType>).  
   
- The default implementation uses the internal CLR reflection. For cases where <xref:System.Xaml.XamlType.UnderlyingType%2A> is `null`, the default implementation can use <xref:System.Xaml.XamlType.BaseType%2A>, if it is available. This behavior indirectly calls <xref:System.Xaml.XamlType.LookupCollectionKind%2A> recursively to attempt to find a valid base type; it returns <xref:System.Xaml.Schema.XamlCollectionKind?displayProperty=nameWithType> if no valid base type exists. In general, the default implementation attempts to find the `Add` method of the underlying type by reflection. If found, the <xref:System.Reflection.MethodInfo> of the `Add` method is enough information to determine which <xref:System.Xaml.Schema.XamlCollectionKind> value should be returned. Otherwise, it returns <xref:System.Xaml.Schema.XamlCollectionKind?displayProperty=nameWithType>.  
+ The default implementation uses the internal CLR reflection. For cases where <xref:System.Xaml.XamlType.UnderlyingType%2A> is `null`, the default implementation can use <xref:System.Xaml.XamlType.BaseType%2A>, if it is available. This behavior indirectly calls <xref:System.Xaml.XamlType.LookupCollectionKind%2A> recursively to attempt to find a valid base type; it returns <xref:System.Xaml.Schema.XamlCollectionKind.None?displayProperty=nameWithType> if no valid base type exists. In general, the default implementation attempts to find the `Add` method of the underlying type by reflection. If found, the <xref:System.Reflection.MethodInfo> of the `Add` method is enough information to determine which <xref:System.Xaml.Schema.XamlCollectionKind> value should be returned. Otherwise, it returns <xref:System.Xaml.Schema.XamlCollectionKind.None?displayProperty=nameWithType>.  
   
  Override this method if you are not relying on default internal CLR reflection and are using metadata or other techniques for reporting the XAML type system information or schema information of a type.  
   
@@ -1822,7 +1822,7 @@
   
  The default implementation can use CLR reflection concepts, such as checking for an `Add` method by <xref:System.Reflection.MethodInfo> and using the <xref:System.Reflection.ParameterInfo>; checking <xref:System.Xaml.XamlType.IsArray%2A>; and checking <xref:System.Xaml.XamlType.BaseType%2A> and trying the same logic there.  
   
- Override this method if you want <xref:System.Xaml.XamlType.ItemType%2A> to use different logic. Cases where <xref:System.Xaml.XamlType.LookupCollectionKind%2A> returns <xref:System.Xaml.Schema.XamlCollectionKind?displayProperty=nameWithType> should return `null`.  
+ Override this method if you want <xref:System.Xaml.XamlType.ItemType%2A> to use different logic. Cases where <xref:System.Xaml.XamlType.LookupCollectionKind%2A> returns <xref:System.Xaml.Schema.XamlCollectionKind.None?displayProperty=nameWithType> should return `null`.  
   
  ]]></format>
         </remarks>
@@ -1852,7 +1852,7 @@
   
  The default implementation can use CLR reflection concepts, such as checking for an `Add` method by <xref:System.Reflection.MethodInfo> and using the <xref:System.Reflection.ParameterInfo>; and checking <xref:System.Xaml.XamlType.BaseType%2A> and trying the same logic there.  
   
- Override this method if you want <xref:System.Xaml.XamlType.KeyType%2A> to use different logic. Cases where <xref:System.Xaml.XamlType.LookupCollectionKind%2A> does not return <xref:System.Xaml.Schema.XamlCollectionKind?displayProperty=nameWithType> should return `null`.  
+ Override this method if you want <xref:System.Xaml.XamlType.KeyType%2A> to use different logic. Cases where <xref:System.Xaml.XamlType.LookupCollectionKind%2A> does not return <xref:System.Xaml.Schema.XamlCollectionKind.Dictionary?displayProperty=nameWithType> should return `null`.  
   
  ]]></format>
         </remarks>

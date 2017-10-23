@@ -9,7 +9,7 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "character arrays, converting strings"
+  - "character arrays [Visual Basic], converting strings"
   - "arrays [Visual Basic], converting strings to"
   - "examples [Visual Basic], string conversion"
   - "strings [Visual Basic], converting to arrays"

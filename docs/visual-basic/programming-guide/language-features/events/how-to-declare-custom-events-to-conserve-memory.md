@@ -9,9 +9,9 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "declaring events, custom"
+  - "declaring events [Visual Basic], custom"
   - "events [Visual Basic], custom"
-  - "custom events"
+  - "custom events [Visual Basic]"
 ms.assetid: 87ebee87-260c-462f-979c-407874debd19
 caps.latest.revision: 11
 author: dotnet-bot

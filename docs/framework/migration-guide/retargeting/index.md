@@ -13,7 +13,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ---
 
-# "Retargeting Changes in the .NET Framework"
+# Retargeting Changes in the .NET Framework
 
 [!include[introduction](../../../../includes/migration-guide/retargeting/introduction.md)]
 ## Usage

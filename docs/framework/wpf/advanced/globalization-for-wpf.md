@@ -6,10 +6,10 @@ ms.technology:
   - "dotnet-wpf"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "XAML, international user interface"
-  - "XAML, globalization"
-  - "international user interface, XAML"
-  - "globalization"
+  - "XAML [WPF], international user interface"
+  - "XAML [WPF], globalization"
+  - "international user interface [WPF], XAML"
+  - "globalization [WPF]"
 ms.assetid: 4571ccfe-8a60-4f06-9b37-7ac0b1c2d10f
 caps.latest.revision: 35
 author: dotnet-bot

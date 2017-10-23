@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "binding data, creating"
-  - "data binding, creating"
+  - "binding data [WPF], creating"
+  - "data binding [WPF], creating"
 ms.assetid: 1a606db9-cf5f-42ed-a1c5-9e4722ec77a0
 caps.latest.revision: 22
 author: dotnet-bot

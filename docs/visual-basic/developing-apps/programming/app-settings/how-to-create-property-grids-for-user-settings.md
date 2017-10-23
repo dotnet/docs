@@ -9,9 +9,9 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "My.Settings object, creating property grids for user settings"
-  - "user settings, creating property grids"
-  - "property grids, creating for user settings"
+  - "My.Settings object [Visual Basic], creating property grids for user settings"
+  - "user settings [Visual Basic], creating property grids"
+  - "property grids [Visual Basic], creating for user settings"
   - "property grids"
 ms.assetid: b0bc737e-50d1-43d1-a6df-268db6e6f91c
 caps.latest.revision: 13

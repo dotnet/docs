@@ -10,9 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "resource keys, SystemParameters class"
-  - "SystemParameters class"
-  - "classes, SystemParameters"
+  - "resource keys [WPF], SystemParameters class"
+  - "classes [WPF], SystemParameters"
 ms.assetid: 77571283-d16c-45bb-9f69-cafbbf72b21e
 caps.latest.revision: 7
 author: dotnet-bot

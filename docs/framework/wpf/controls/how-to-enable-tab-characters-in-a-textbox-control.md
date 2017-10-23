@@ -10,8 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "TextBox control, enabling tab characters"
-  - "tab characters, enabling"
+  - "TextBox control [WPF], enabling tab characters"
+  - "tab characters [WPF], enabling"
 ms.assetid: 14b1b064-61f7-4958-be63-88d85b868d03
 caps.latest.revision: 8
 author: dotnet-bot

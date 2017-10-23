@@ -1597,8 +1597,8 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Threading.Tasks.TaskFactory%601.CancellationToken%2A?displayProperty=nameWithType>|<xref:System.Threading.CancellationToken.None%2A?displayProperty=nameWithType>|  
-|<xref:System.Threading.Tasks.TaskFactory%601.ContinuationOptions%2A?displayProperty=nameWithType>|<xref:System.Threading.Tasks.TaskContinuationOptions?displayProperty=nameWithType>|  
-|<xref:System.Threading.Tasks.TaskFactory%601.CreationOptions%2A?displayProperty=nameWithType>|<xref:System.Threading.Tasks.TaskCreationOptions?displayProperty=nameWithType>|  
+|<xref:System.Threading.Tasks.TaskFactory%601.ContinuationOptions%2A?displayProperty=nameWithType>|<xref:System.Threading.Tasks.TaskContinuationOptions.None?displayProperty=nameWithType>|  
+|<xref:System.Threading.Tasks.TaskFactory%601.CreationOptions%2A?displayProperty=nameWithType>|<xref:System.Threading.Tasks.TaskCreationOptions.None?displayProperty=nameWithType>|  
 |<xref:System.Threading.Tasks.TaskFactory%601.Scheduler%2A?displayProperty=nameWithType>|`null`, or <xref:System.Threading.Tasks.TaskScheduler.Current%2A?displayProperty=nameWithType>|  
   
  The most common use of this property is to create and start a new task in a single call to the <xref:System.Threading.Tasks.TaskFactory%601.StartNew%2A?displayProperty=nameWithType> method.  

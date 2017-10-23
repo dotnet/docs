@@ -10,12 +10,12 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "animation, camera position in 3-D scenes"
-  - "camera direction, animating in 3-D scenes"
-  - "3-D scenes, animating camera position"
-  - "3-D scenes, animating camera direction"
-  - "camera position, animating in 3-D scenes"
-  - "animation, camera direction in 3-D scenes"
+  - "animation [WPF], camera position in 3-D scenes"
+  - "camera direction [WPF], animating in 3-D scenes"
+  - "3-D scenes [WPF], animating camera position"
+  - "3-D scenes [WPF], animating camera direction"
+  - "camera position [WPF], animating in 3-D scenes"
+  - "animation [WPF], camera direction in 3-D scenes"
 ms.assetid: 480224b7-a5e5-4165-ba7f-ef760ddff94a
 caps.latest.revision: 4
 author: dotnet-bot

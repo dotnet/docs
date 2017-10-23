@@ -60,7 +60,7 @@ public class TestThreading
   
 -   [lock Statement](../../../../csharp/language-reference/keywords/lock-statement.md)  
   
--   @System.Threading.Monitor  
+-   <xref:System.Threading.Monitor>  
   
 ## Monitors  
  Like the `lock` keyword, monitors prevent blocks of code from simultaneous execution by multiple threads. The <xref:System.Threading.Monitor.Enter%2A> method allows one and only one thread to proceed into the following statements; all other threads are blocked until the executing thread calls <xref:System.Threading.Monitor.Exit%2A>. This is just like using the `lock` keyword. For example:  
@@ -163,10 +163,10 @@ class ThreadingExample
  <xref:System.Threading.EventWaitHandle>   
  <xref:System.Threading>   
  <xref:System.Threading.EventWaitHandle.Set%2A>   
+ <xref:System.Threading.Monitor>   
  [Multithreaded Applications (C#)](../../../../csharp/programming-guide/concepts/threading/multithreaded-applications.md)   
  [lock Statement](../../../../csharp/language-reference/keywords/lock-statement.md)   
  [Mutexes](../../../../standard/threading/mutexes.md)   
- @System.Threading.Monitor   
  [Interlocked Operations](../../../../standard/threading/interlocked-operations.md)   
  [AutoResetEvent](../../../../standard/threading/autoresetevent.md)   
  [Synchronizing Data for Multithreading](../../../../standard/threading/synchronizing-data-for-multithreading.md)

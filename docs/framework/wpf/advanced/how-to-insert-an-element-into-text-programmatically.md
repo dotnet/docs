@@ -9,15 +9,15 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "Text Animation sample"
-  - "elements, inserting into text"
-  - "inserting elements into text"
-  - "TextPointer objects"
-  - "text, inserting elements"
+  - "Text Animation sample [WPF]"
+  - "elements [WPF], inserting into text"
+  - "inserting elements into text [WPF]"
+  - "TextPointer objects [WPF]"
+  - "text [WPF], inserting elements"
 ms.assetid: 97bd950a-25ac-4e42-a311-94b6420d4136
 caps.latest.revision: 8
 author: dotnet-bot

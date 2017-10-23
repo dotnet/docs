@@ -10,10 +10,10 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "APIs, metadata"
-  - "dependency properties, metadata"
-  - "metadata, for dependency properties"
-  - "overriding metadata"
+  - "APIs [WPF], metadata"
+  - "dependency properties [WPF], metadata"
+  - "metadata [WPF], for dependency properties"
+  - "overriding metadata [WPF]"
 ms.assetid: d01ed009-b722-41bf-b82f-fe1a8cdc50dd
 caps.latest.revision: 24
 author: dotnet-bot

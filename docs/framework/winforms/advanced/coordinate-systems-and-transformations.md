@@ -11,7 +11,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "transformations"
-  - "graphics, transformations"
+  - "graphics [Windows Forms], transformations"
   - "matrix transformations"
 ms.assetid: 9fef7451-bddf-4c68-9350-400d1f1f25a3
 caps.latest.revision: 13

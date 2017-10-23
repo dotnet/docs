@@ -10,8 +10,8 @@ ms.technology:
 ms.topic: "article"
 helpviewer_keywords: 
   - "Visual Basic code, procedures"
-  - "procedures, returning from"
-  - "procedures, returning a value"
+  - "procedures [Visual Basic], returning from"
+  - "procedures [Visual Basic], returning a value"
 ms.assetid: 4bcc4724-2b4e-4df8-9b4b-16054607f87d
 caps.latest.revision: 12
 author: dotnet-bot

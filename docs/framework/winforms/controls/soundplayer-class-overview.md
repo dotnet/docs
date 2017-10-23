@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "playing sounds, SoundPlayer class"
-  - "SoundPlayer class, about SoundPlayer class"
-  - "sounds, playing"
+  - "playing sounds [Windows Forms], SoundPlayer class"
+  - "SoundPlayer class [Windows Forms], about SoundPlayer class"
+  - "sounds [Windows Forms], playing"
 ms.assetid: fcebb938-62b9-4677-9cbe-6465bc863e22
 caps.latest.revision: 10
 author: dotnet-bot

@@ -9,16 +9,16 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "status bars, determining panel clicked"
-  - "panels, determining clicked"
+  - "status bars [Windows Forms], determining panel clicked"
+  - "panels [Windows Forms], determining clicked"
   - "StatusBar control [Windows Forms], coding panel click events"
   - "StatusBar control [Windows Forms], determining panel clicked"
-  - "PanelClick event, determining panel clicked"
+  - "PanelClick event [Windows Forms], determining panel clicked"
   - "Panel control [Windows Forms], determining click"
 ms.assetid: d14c6092-04b2-4a07-8ddf-0dd11277ff5f
 caps.latest.revision: 16

@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "non-Storyboard animation"
-  - "local animation"
-  - "animation, non-Storyboard (local)"
+  - "local animation [WPF]"
+  - "animation [WPF], non-Storyboard (local)"
 ms.assetid: d411db70-4df7-487d-82bc-95a7c1b2e7f8
 caps.latest.revision: 14
 author: dotnet-bot

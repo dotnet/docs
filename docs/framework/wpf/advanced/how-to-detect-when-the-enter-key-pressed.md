@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "Enter key, detecting"
-  - "keys, Enter"
+  - "Enter key [WPF], detecting"
+  - "keys [WPF], Enter"
 ms.assetid: a66f39d2-ef4a-43a5-b454-a4ea0fe88655
 caps.latest.revision: 11
 author: dotnet-bot

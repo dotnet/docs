@@ -10,12 +10,10 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "PathGeometry class"
-  - "attribute usage in XAML"
-  - "XAML, attribute usage"
-  - "classes, PathGeometry"
-  - "graphics, PathGeometry class"
-  - "XAML, object element usage"
+  - "attribute usage in XAML [WPF]"
+  - "XAML [WPF], attribute usage"
+  - "graphics [WPF], PathGeometry class"
+  - "XAML [WPF], object element usage"
 ms.assetid: b8586241-a02d-486e-9223-e1e98e047f41
 caps.latest.revision: 22
 author: dotnet-bot

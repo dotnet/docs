@@ -11,8 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "TabPage control"
-  - "tab controls, tab order"
-  - "tab pages, adding controls"
+  - "tab controls [Windows Forms], tab order"
+  - "tab pages [Windows Forms], adding controls"
 ms.assetid: 7ee734e1-e31e-4ed0-bbc0-a7e8a1f20fef
 caps.latest.revision: 7
 author: dotnet-bot

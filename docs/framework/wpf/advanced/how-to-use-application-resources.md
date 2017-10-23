@@ -10,8 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "application resources"
-  - "resources, application resources"
+  - "application resources [WPF]"
+  - "resources [WPF], application resources"
 ms.assetid: 507ea937-5191-406b-8797-0a3d9f94156d
 caps.latest.revision: 16
 author: dotnet-bot

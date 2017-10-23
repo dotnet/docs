@@ -9,17 +9,17 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "WDP encoding"
-  - "WDP decoding"
-  - "encoding image formats"
-  - "decoding WDP images"
-  - "decoding image formats"
-  - "encoding WDP images"
+  - "WDP encoding [WPF]"
+  - "WDP decoding [WPF]"
+  - "encoding image formats [WPF]"
+  - "decoding WDP images [WPF]"
+  - "decoding image formats [WPF]"
+  - "encoding WDP images [WPF]"
 ms.assetid: 911777d1-516b-49db-a87b-b54e31b18532
 caps.latest.revision: 8
 author: dotnet-bot

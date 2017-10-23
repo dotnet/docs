@@ -9,12 +9,12 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "declaring constants, literal data types"
+  - "declaring constants [Visual Basic], literal data types"
   - "data types [Visual Basic], declaring"
-  - "constants, declaring"
+  - "constants [Visual Basic], declaring"
   - "explicit declarations"
-  - "literals, coercing data type"
-  - "declarations, data types"
+  - "literals [Visual Basic], coercing data type"
+  - "declarations [Visual Basic], data types"
 ms.assetid: 057206d2-3a5b-40b9-b3af-57446f9b52fa
 caps.latest.revision: 19
 author: dotnet-bot

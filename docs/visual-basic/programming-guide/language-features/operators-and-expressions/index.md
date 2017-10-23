@@ -11,7 +11,7 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "operators [Visual Basic], operands"
   - "operators [Visual Basic]"
-  - "operands, definition"
+  - "operands [Visual Basic], definition"
   - "Visual Basic code, operators"
   - "Visual Basic code, expressions"
   - "operands"

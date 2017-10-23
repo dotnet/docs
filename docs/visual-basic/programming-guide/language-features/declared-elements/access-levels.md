@@ -9,7 +9,7 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "members, accessing in Visual Basic"
+  - "members [Visual Basic], accessing in Visual Basic"
   - "Friend access modifier"
   - "access levels, declared elements"
   - "access levels"
@@ -18,7 +18,7 @@ helpviewer_keywords:
   - "Protected access modifier"
   - "Protected Friend access modifier"
   - "Private access modifier"
-  - "declared elements, access level"
+  - "declared elements [Visual Basic], access level"
 ms.assetid: 6e06c1ab-fd78-47f0-83a8-1152780b5e1a
 caps.latest.revision: 16
 author: dotnet-bot

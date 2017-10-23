@@ -9,8 +9,8 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "extending data types"
-  - "writing extension methods"
+  - "extending data types [Visual Basic]"
+  - "writing extension methods [Visual Basic]"
   - "extension methods [Visual Basic]"
 ms.assetid: fb2739cc-958d-4ef4-a38b-214a74c93413
 caps.latest.revision: 11

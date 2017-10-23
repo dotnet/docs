@@ -10,10 +10,10 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "paths, drawing"
-  - "drawing paths"
-  - "graphics paths, creating"
-  - "graphics paths, drawing"
+  - "paths [Windows Forms], drawing"
+  - "drawing paths [Windows Forms]"
+  - "graphics paths [Windows Forms], creating"
+  - "graphics paths [Windows Forms], drawing"
   - "examples [Windows Forms], drawing paths"
 ms.assetid: f16ec921-56cf-46d1-9741-d7316ad06b23
 caps.latest.revision: 13

@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], getting current cell"
   - "DataGridView control [Windows Forms], setting current cell"
-  - "cells, getting and setting current"
+  - "cells [Windows Forms], getting and setting current"
 ms.assetid: b0e41e57-493a-4bd0-9376-a6f76723540c
 caps.latest.revision: 14
 author: dotnet-bot

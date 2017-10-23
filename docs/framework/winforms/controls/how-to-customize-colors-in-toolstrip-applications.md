@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "toolbars [Windows Forms], customizing colors"
-  - "colors, customizing in ToolStrip controls [Windows Forms]"
+  - "colors [Windows Forms], customizing in ToolStrip controls [Windows Forms]"
   - "ToolStrip control [Windows Forms], custom colors"
 ms.assetid: e2752fe2-1afb-489e-ab96-b7805acd96bc
 caps.latest.revision: 9

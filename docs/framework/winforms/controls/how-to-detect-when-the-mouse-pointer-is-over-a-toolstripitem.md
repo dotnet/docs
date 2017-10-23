@@ -12,8 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "toolbars [Windows Forms], detecting mouse movement"
   - "ToolStrip control [Windows Forms], detecting mouse movement"
-  - "ToolStripItem class, detecting mouse movement"
-  - "mouse, detecting movement on toolbars"
+  - "ToolStripItem class [Windows Forms], detecting mouse movement"
+  - "mouse [Windows Forms], detecting movement on toolbars"
 ms.assetid: d38b5082-aba7-4f6c-841b-bd9714e307fd
 caps.latest.revision: 7
 author: dotnet-bot

@@ -36,5 +36,4 @@ Errors occurred while compiling the XML schemas in the project. Because of this,
   
 ## See Also  
  [Error List Window](/visualstudio/ide/reference/error-list-window)   
- [XML IntelliSense in Visual Basic](../../../visual-basic/programming-guide/language-features/xml/xml-intellisense.md)   
  [XML](../../../visual-basic/programming-guide/language-features/xml/index.md)

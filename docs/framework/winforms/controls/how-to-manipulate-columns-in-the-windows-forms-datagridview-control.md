@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], manipulatiing columns"
   - "columns [Windows Forms], manipulating"
-  - "data grids, manipulating columns"
+  - "data grids [Windows Forms], manipulating columns"
 ms.assetid: d8cfe6b3-bbab-4182-bec2-0517d9f1eaf6
 caps.latest.revision: 9
 author: dotnet-bot

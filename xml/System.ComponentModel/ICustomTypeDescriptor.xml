@@ -311,7 +311,7 @@
 ## Remarks  
  The events for this instance can differ from the set of events that the class provides. For example, if the component is site-based, the site can add or remove additional events.  
   
- Implementors can return <xref:System.ComponentModel.EventDescriptorCollection?displayProperty=nameWithType> if no properties are specified. This method should never return `null`.  
+ Implementors can return <xref:System.ComponentModel.EventDescriptorCollection.Empty?displayProperty=nameWithType> if no properties are specified. This method should never return `null`.  
   
  ]]></format>
         </remarks>
@@ -390,7 +390,7 @@
 ## Remarks  
  The properties for this instance can differ from the set of properties that the class provides. For example, if the component is sited, the site can add or remove additional properties.  
   
- Implementers can return <xref:System.ComponentModel.PropertyDescriptorCollection?displayProperty=nameWithType> if no properties are specified. This method should never return `null`.  
+ Implementers can return <xref:System.ComponentModel.PropertyDescriptorCollection.Empty?displayProperty=nameWithType> if no properties are specified. This method should never return `null`.  
   
  ]]></format>
         </remarks>

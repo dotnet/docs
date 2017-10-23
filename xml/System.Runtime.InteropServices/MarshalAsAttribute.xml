@@ -183,7 +183,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can set this parameter to a value from the <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=nameWithType> enumeration to specify the type of the array's elements. If a type is not specified, the default unmanaged type corresponding to the managed array's element type is used. For example, the `ArraySubType` for a `LPWStr` array in COM is <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=nameWithType>. For additional information, see [Default Marshaling for Arrays](~/docs/framework/interop/default-marshaling-for-arrays.md).  
+ You can set this parameter to a value from the <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=nameWithType> enumeration to specify the type of the array's elements. If a type is not specified, the default unmanaged type corresponding to the managed array's element type is used. For example, the `ArraySubType` for a `LPWStr` array in COM is <xref:System.Runtime.InteropServices.UnmanagedType.LPWStr?displayProperty=nameWithType>. For additional information, see [Default Marshaling for Arrays](~/docs/framework/interop/default-marshaling-for-arrays.md).  
   
  ]]></format>
         </remarks>
@@ -426,7 +426,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Initialize this field with your custom type to enable the elements of the `SAFEARRAY` to be marshaled successfully. This field is only needed when the <xref:System.Runtime.InteropServices.MarshalAsAttribute.SafeArraySubType?displayProperty=nameWithType> is either <xref:System.Runtime.InteropServices.VarEnum?displayProperty=nameWithType>, <xref:System.Runtime.InteropServices.VarEnum?displayProperty=nameWithType>, or <xref:System.Runtime.InteropServices.VarEnum?displayProperty=nameWithType>. For additional information, see [Default Marshaling for Arrays](~/docs/framework/interop/default-marshaling-for-arrays.md).  
+ Initialize this field with your custom type to enable the elements of the `SAFEARRAY` to be marshaled successfully. This field is only needed when the <xref:System.Runtime.InteropServices.MarshalAsAttribute.SafeArraySubType?displayProperty=nameWithType> is either <xref:System.Runtime.InteropServices.VarEnum.VT_UNKNOWN?displayProperty=nameWithType>, <xref:System.Runtime.InteropServices.VarEnum.VT_DISPATCH?displayProperty=nameWithType>, or <xref:System.Runtime.InteropServices.VarEnum.VT_RECORD?displayProperty=nameWithType>. For additional information, see [Default Marshaling for Arrays](~/docs/framework/interop/default-marshaling-for-arrays.md).  
   
  ]]></format>
         </remarks>
@@ -516,7 +516,7 @@
   
  The zero-based index of the array size parameter is defined by using the <xref:System.Runtime.InteropServices.MarshalAsAttribute.SizeParamIndex> field.  
   
- If you specify both <xref:System.Runtime.InteropServices.MarshalAsAttribute.SizeParamIndex> and <xref:System.Runtime.InteropServices.MarshalAsAttribute.SizeConst?displayProperty=nameWithType> with a <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=nameWithType> field, the sum of the fields' values produces a size total.  
+ If you specify both <xref:System.Runtime.InteropServices.MarshalAsAttribute.SizeParamIndex> and <xref:System.Runtime.InteropServices.MarshalAsAttribute.SizeConst?displayProperty=nameWithType> with a <xref:System.Runtime.InteropServices.UnmanagedType.LPArray?displayProperty=nameWithType> field, the sum of the fields' values produces a size total.  
   
  For more information, see [Default Marshaling for Arrays](~/docs/framework/interop/default-marshaling-for-arrays.md).  
   

@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "animation, From/to/by"
+  - "animation [WPF], From/to/by"
   - "From/to/by animation"
 ms.assetid: 516fce0a-e7f8-49b8-b018-53b3d409a8a3
 caps.latest.revision: 17

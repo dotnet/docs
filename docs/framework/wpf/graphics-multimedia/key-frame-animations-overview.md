@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "animation, key-frame"
+  - "animation [WPF], key-frame"
   - "key frames [WPF], about key-frame animations"
-  - "multiple animation target values"
+  - "multiple animation target values [WPF]"
 ms.assetid: 10028f97-bb63-41fc-b8ad-663dac7ea203
 caps.latest.revision: 29
 author: dotnet-bot

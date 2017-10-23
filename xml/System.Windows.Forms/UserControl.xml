@@ -84,7 +84,7 @@
    
   
 ## Examples  
- The following code example creates an instance of the <xref:System.Windows.Forms.UserControl> derived class, `MyCustomerInfoUserControl`, which was created in the example section of the <xref:System.Windows.Forms.UserControl> class overview. The user control is added to a <xref:System.Windows.Forms.Panel> control and has its <xref:System.Windows.Forms.Control.Dock%2A> property set to <xref:System.Windows.Forms.DockStyle?displayProperty=nameWithType>. The <xref:System.Windows.Forms.Panel> is then added to a <xref:System.Windows.Forms.Form>.  
+ The following code example creates an instance of the <xref:System.Windows.Forms.UserControl> derived class, `MyCustomerInfoUserControl`, which was created in the example section of the <xref:System.Windows.Forms.UserControl> class overview. The user control is added to a <xref:System.Windows.Forms.Panel> control and has its <xref:System.Windows.Forms.Control.Dock%2A> property set to <xref:System.Windows.Forms.DockStyle.Fill?displayProperty=nameWithType>. The <xref:System.Windows.Forms.Panel> is then added to a <xref:System.Windows.Forms.Form>.  
   
  [!code-cpp[Classic UserControl.UserControl Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic UserControl.UserControl Example/CPP/source.cpp#1)]
  [!code-csharp[Classic UserControl.UserControl Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic UserControl.UserControl Example/CS/source.cs#1)]

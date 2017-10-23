@@ -35,7 +35,7 @@ See [.NET Core 1.x Supported OS Versions](https://github.com/dotnet/core/blob/ma
 
 .NET Core 1.1 and earlier requires the Visual C++ Redistributable when running on Windows versions earlier than Windows 10 and Windows Server 2016. This dependency is automatically installed by the .NET Core installer.
 
-[Microsoft Visual C++ 2015 Redistributable Update 3](https://www.microsoft.com/en-us/download/details.aspx?id=52685) must be manually installed when:
+[Microsoft Visual C++ 2015 Redistributable Update 3](https://www.microsoft.com/download/details.aspx?id=52685) must be manually installed when:
 
    * Installing .NET Core with the [installer script](./tools/dotnet-install-script.md).
    * Deploying a self-contained .NET Core application.

@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "sounds, beep"
+  - "sounds [Windows Forms], beep"
   - "Windows Forms, sounds"
-  - "sounds, playing"
-  - "forms, sounds"
+  - "sounds [Windows Forms], playing"
+  - "forms [Windows Forms], sounds"
   - "examples [Windows Forms], sounds"
 ms.assetid: 7ea5cded-4888-4f35-8f28-5cab1a55c973
 caps.latest.revision: 15

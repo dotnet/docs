@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "calling page functions"
-  - "page functions, calling"
-  - "functions, calling"
+  - "calling page functions [WPF]"
+  - "page functions [WPF], calling"
+  - "functions [WPF], calling"
 ms.assetid: a4808397-c6d5-406a-83e0-0091f0c15ae4
 caps.latest.revision: 11
 author: dotnet-bot

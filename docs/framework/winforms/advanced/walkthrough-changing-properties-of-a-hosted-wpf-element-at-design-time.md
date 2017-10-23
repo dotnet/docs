@@ -12,7 +12,7 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "WPF content [Windows Forms], changing properties at design time"
   - "Windows Forms, changing properties of WPF content at design time"
-  - "WPF content, hosting in Windows Forms"
+  - "WPF content [Windows Forms], hosting in Windows Forms"
   - "interoperability [WPF]"
 ms.assetid: a1f7a90c-0bbb-4781-8c3c-8cc8bef2488d
 caps.latest.revision: 10

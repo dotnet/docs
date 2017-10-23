@@ -10,10 +10,10 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "graphics, double buffering"
+  - "graphics [Windows Forms], double buffering"
   - "double buffering"
-  - "flicker, reducing in Windows Forms"
-  - "buffering, double buffering"
+  - "flicker [Windows Forms], reducing in Windows Forms"
+  - "buffering [Windows Forms], double buffering"
 ms.assetid: dc484e33-7101-4e4b-ada5-d3c96155fbcd
 caps.latest.revision: 6
 author: dotnet-bot

@@ -10,7 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "buttons"
+  - "buttons [WPF]"
 ms.assetid: 138c41c4-1759-4bbf-8d77-77031a06a8a0
 caps.latest.revision: 13
 author: dotnet-bot

@@ -12,7 +12,7 @@ ms.topic: "article"
 f1_keywords: 
   - "Panel"
 helpviewer_keywords: 
-  - "grouping controls, Panel control"
+  - "grouping controls [Windows Forms], Panel control"
   - "Panel control [Windows Forms], about Panel control"
 ms.assetid: b6b83636-2c39-4dad-89d6-f0fa41049a74
 caps.latest.revision: 13

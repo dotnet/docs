@@ -144,7 +144,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridView> control internally calls the <xref:System.Windows.Forms.DataGridViewCell.AdjustCellBorderStyle%2A> method to determine the appearance of the cell borders. The <xref:System.Windows.Forms.DataGridView> control typically uses the value of the <xref:System.Windows.Forms.DataGridView.AdvancedCellBorderStyle%2A> property for the `dataGridViewAdvancedBorderStyleInput` parameter.  
   
- The <xref:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle?displayProperty=nameWithType> value is not supported as an input style for cells.  
+ The <xref:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle.OutsetPartial?displayProperty=nameWithType> value is not supported as an input style for cells.  
   
    
   
@@ -1132,7 +1132,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The size of the cell's contents is computed dynamically when this method is called. The base class implementation always returns <xref:System.Drawing.Rectangle?displayProperty=nameWithType>.  
+ The size of the cell's contents is computed dynamically when this method is called. The base class implementation always returns <xref:System.Drawing.Rectangle.Empty?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1168,7 +1168,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The size of the cell's contents is computed dynamically when this method is called. The base class implementation always returns <xref:System.Drawing.Rectangle?displayProperty=nameWithType>.  
+ The size of the cell's contents is computed dynamically when this method is called. The base class implementation always returns <xref:System.Drawing.Rectangle.Empty?displayProperty=nameWithType>.  
   
  This method is called internally when the <xref:System.Windows.Forms.DataGridViewCell.ContentBounds%2A> property is read.  
   
@@ -1242,7 +1242,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The size of the cell's error icon area is computed dynamically when this method is called. The base class implementation always returns <xref:System.Drawing.Rectangle?displayProperty=nameWithType>.  
+ The size of the cell's error icon area is computed dynamically when this method is called. The base class implementation always returns <xref:System.Drawing.Rectangle.Empty?displayProperty=nameWithType>.  
   
  This method is called internally when the <xref:System.Windows.Forms.DataGridViewCell.ErrorIconBounds%2A> property is read.  
   
@@ -3032,7 +3032,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `errorText` parameter signals the existence of an error. If `errorText` is `null` or <xref:System.String?displayProperty=nameWithType>, the <xref:System.Windows.Forms.DataGridViewCell.PaintErrorIcon%2A> method does nothing.  
+ The `errorText` parameter signals the existence of an error. If `errorText` is `null` or <xref:System.String.Empty?displayProperty=nameWithType>, the <xref:System.Windows.Forms.DataGridViewCell.PaintErrorIcon%2A> method does nothing.  
   
  ]]></format>
         </remarks>

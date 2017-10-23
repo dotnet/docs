@@ -13,10 +13,10 @@ helpviewer_keywords:
   - "command line [Visual Basic], compilers"
   - "command line [Visual Basic], building from"
   - "command line [Visual Basic], builds"
-  - "compilers, invoking from command line"
+  - "compilers [Visual Basic], invoking from command line"
   - "command-line builds"
   - "compiling source code"
-  - "command-line compilers, Visual Basic"
+  - "command-line compilers [Visual Basic], Visual Basic"
   - "command line [Visual Basic], Visual Basic"
 ms.assetid: e61947e9-a42e-4717-a699-5f70a98cdd03
 caps.latest.revision: 13

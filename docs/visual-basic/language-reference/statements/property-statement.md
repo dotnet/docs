@@ -12,10 +12,10 @@ f1_keywords:
   - "vb.Property"
   - "vb.PropertyGet"
 helpviewer_keywords: 
-  - "Property statement"
+  - "Property statement [Visual Basic]"
   - "default modifier"
-  - "property procedures, Property statements"
-  - "Property keyword"
+  - "property procedures [Visual Basic], Property statements"
+  - "Property keyword [Visual Basic]"
 ms.assetid: 3155edaf-8ebd-45c6-9cef-11d5d2dc8d38
 caps.latest.revision: 41
 author: dotnet-bot

@@ -10,7 +10,7 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.option"
 helpviewer_keywords: 
-  - "Option keyword"
+  - "Option keyword [Visual Basic]"
 ms.assetid: 6b2f41c4-2403-43b6-8a14-94a3775e5b47
 caps.latest.revision: 12
 author: dotnet-bot

@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "SplitContainer control [Windows Forms], horizontal splitter"
-  - "splitter windows, changing splitter orientation"
-  - "splitter windows, horizontal"
-  - "windows, splitting horizontally"
+  - "splitter windows [Windows Forms], changing splitter orientation"
+  - "splitter windows [Windows Forms], horizontal"
+  - "windows [Windows Forms], splitting horizontally"
 ms.assetid: a1f74f29-048c-4723-85fa-b9d375ab8f4b
 caps.latest.revision: 15
 author: dotnet-bot

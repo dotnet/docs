@@ -10,8 +10,8 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.QueryDistinct"
 helpviewer_keywords: 
-  - "Distinct clause"
-  - "Distinct statement"
+  - "Distinct clause [Visual Basic]"
+  - "Distinct statement [Visual Basic]"
   - "queries [Visual Basic], Distinct"
 ms.assetid: 86f42614-0d8f-4ffc-b888-ce8a37a8d36a
 caps.latest.revision: 15

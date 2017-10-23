@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "TileBrush, creating tile patterns"
-  - "tile patterns, creating"
-  - "creating, tile patterns with TileBrush"
+  - "TileBrush [WPF], creating tile patterns"
+  - "tile patterns [WPF], creating"
+  - "creating [WPF], tile patterns with TileBrush"
 ms.assetid: 5aa46632-3527-4668-9d8d-0375c8af28aa
 caps.latest.revision: 11
 author: dotnet-bot

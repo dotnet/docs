@@ -9,13 +9,13 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "names, Visual Basic rules"
+  - "names [Visual Basic], Visual Basic rules"
   - "naming conventions"
-  - "naming conventions, Visual Basic"
+  - "naming conventions [Visual Basic], Visual Basic"
   - "Visual Basic code, naming conventions"
-  - "conventions, Visual Basic coding"
-  - "names, naming conventions"
-  - "naming conventions, classes"
+  - "conventions [Visual Basic], Visual Basic coding"
+  - "names [Visual Basic], naming conventions"
+  - "naming conventions [Visual Basic], classes"
 ms.assetid: 164949a4-2a7c-4736-9d82-9c3078e2e56c
 caps.latest.revision: 10
 author: dotnet-bot

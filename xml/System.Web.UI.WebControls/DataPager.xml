@@ -1193,7 +1193,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.DataPager.TagKey%2A> property returns an HTML element that is used by the <xref:System.Web.UI.WebControls.DataPager.RenderBeginTag%2A> method to write the appropriate markup for the <xref:System.Web.UI.WebControls.DataPager> control. This property overrides the base implementation to always return <xref:System.Web.UI.HtmlTextWriterTag?displayProperty=nameWithType>.  
+ The <xref:System.Web.UI.WebControls.DataPager.TagKey%2A> property returns an HTML element that is used by the <xref:System.Web.UI.WebControls.DataPager.RenderBeginTag%2A> method to write the appropriate markup for the <xref:System.Web.UI.WebControls.DataPager> control. This property overrides the base implementation to always return <xref:System.Web.UI.HtmlTextWriterTag.Span?displayProperty=nameWithType>.  
   
 > [!NOTE]
 >  This property is primarily used by control developers to extend the <xref:System.Web.UI.WebControls.DataPager> control.  

@@ -1520,7 +1520,7 @@
  The <xref:System.Web.UI.HtmlControls.HtmlSelect.Value%2A> property is commonly used to get the value of the item referenced by the <xref:System.Web.UI.HtmlControls.HtmlSelect.SelectedIndex%2A> property.  
   
 > [!NOTE]
->  If no item is selected in the control, <xref:System.String?displayProperty=nameWithType> is returned.  
+>  If no item is selected in the control, <xref:System.String.Empty?displayProperty=nameWithType> is returned.  
   
  If you set this property to a value, the <xref:System.Web.UI.HtmlControls.HtmlSelect.SelectedIndex%2A> property is updated with the index of the first item in the list that contains that value. If no matching value is found, the <xref:System.Web.UI.HtmlControls.HtmlSelect.SelectedIndex%2A> property is left unchanged.  
   

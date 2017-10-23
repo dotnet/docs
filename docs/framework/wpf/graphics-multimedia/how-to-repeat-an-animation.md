@@ -10,10 +10,10 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "RepeatBehavior property of Timelines"
-  - "repeating animating"
-  - "Timelines RepeatBehavior property"
-  - "animation, repeating"
+  - "RepeatBehavior property of timelines [WPF]"
+  - "repeating animating [WPF]"
+  - "Timelines RepeatBehavior property [WPF]"
+  - "animation [WPF], repeating"
 ms.assetid: e6f3b068-eeeb-47fd-8d40-8848c31f1e1e
 caps.latest.revision: 8
 author: dotnet-bot

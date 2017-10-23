@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "brushes, transformation properties"
-  - "properties, transformation"
-  - "transformation properties of brushes"
+  - "brushes [WPF], transformation properties"
+  - "properties [WPF], transformation"
+  - "transformation properties of brushes [WPF]"
 ms.assetid: 8b9bfc09-12fd-4cd5-b445-99949f27bc39
 caps.latest.revision: 12
 author: dotnet-bot

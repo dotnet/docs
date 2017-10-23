@@ -11,8 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "SplitContainer control [Windows Forms], horizontal splitting"
-  - "split windows, horizontal"
-  - "windows, splitting horizontally"
+  - "split windows [Windows Forms], horizontal"
+  - "windows [Windows Forms], splitting horizontally"
 ms.assetid: 3872a176-891f-4c70-9779-b2ce85b0b102
 caps.latest.revision: 6
 author: dotnet-bot

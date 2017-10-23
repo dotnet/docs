@@ -9,13 +9,13 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "operator procedures, calling"
-  - "procedures, operator"
-  - "procedures, calling"
+  - "operator procedures [Visual Basic], calling"
+  - "procedures [Visual Basic], operator"
+  - "procedures [Visual Basic], calling"
   - "examples [Visual Basic], CType"
-  - "syntax, Operator procedures"
+  - "syntax [Visual Basic], Operator procedures"
   - "operators [Visual Basic], overloading"
-  - "return values, Operator procedures"
+  - "return values [Visual Basic], Operator procedures"
   - "operator overloading"
 ms.assetid: 7ccce94a-6ca0-47d1-9f3f-13385d34f5d5
 caps.latest.revision: 21

@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "Freeze attribute"
-  - "Freezable elements"
-  - "PresentationOptions prefix"
+  - "Freeze attribute [WPF]"
+  - "Freezable elements [WPF]"
+  - "PresentationOptions prefix [WPF]"
 ms.assetid: 391032dd-2fba-4804-bb8a-3b071797a9f4
 caps.latest.revision: 9
 author: dotnet-bot

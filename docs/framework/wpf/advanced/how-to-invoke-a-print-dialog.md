@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "invoking print dialogs"
-  - "print dialogs, invoking"
+  - "invoking print dialogs [WPF]"
+  - "print dialogs [WPF], invoking"
 ms.assetid: e3a2c84c-74fe-45a4-8501-5813f9dbfed2
 caps.latest.revision: 10
 author: dotnet-bot

@@ -10,8 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "applications, optimizing"
-  - "WPF application, optimizing"
+  - "applications [WPF], optimizing"
+  - "WPF application [WPF], optimizing"
 ms.assetid: c91bd0c5-a193-46ff-9da1-eb7a3a76a3b3
 caps.latest.revision: 6
 author: dotnet-bot

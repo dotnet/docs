@@ -10,12 +10,12 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "typography, Glyphs element"
-  - "Glyphs elements"
-  - "GlyphRun object"
-  - "text, glyphs"
+  - "typography [WPF], Glyphs element"
+  - "Glyphs elements [WPF]"
+  - "GlyphRun object [WPF]"
+  - "text [WPF], glyphs"
   - "glyphs [WPF]"
-  - "typography, GlyphRun object"
+  - "typography [WPF], GlyphRun object"
 ms.assetid: 746ca769-a331-4435-9b95-f72a883b67c1
 caps.latest.revision: 21
 author: dotnet-bot

@@ -10,9 +10,9 @@ ms.technology:
 ms.topic: "article"
 helpviewer_keywords: 
   - "networks, uploading files"
-  - "files, uploading"
-  - "uploading files"
-  - "UploadFile method"
+  - "files [Visual Basic], uploading"
+  - "uploading files [Visual Basic]"
+  - "UploadFile method [Visual Basic]"
   - "My.Computer.Network.UploadFile method"
 ms.assetid: a8b37924-c523-4fd3-b5ca-cb0074df29cd
 caps.latest.revision: 22

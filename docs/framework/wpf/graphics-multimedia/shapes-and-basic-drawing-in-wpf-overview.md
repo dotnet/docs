@@ -9,16 +9,16 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "shapes, about shapes"
-  - "basic drawing"
-  - "vector drawing, overview"
-  - "vectors, drawing"
-  - "Shape objects"
+  - "shapes [WPF], about shapes"
+  - "basic drawing [WPF]"
+  - "vector drawing [WPF], overview"
+  - "vectors [WPF], drawing"
+  - "Shape objects [WPF]"
 ms.assetid: 66d7a6d6-e3b6-47bc-8dfe-8a1b26f7d901
 caps.latest.revision: 19
 author: dotnet-bot

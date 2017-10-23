@@ -7,13 +7,13 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "domain names, retrieving"
+  - "domain names [Visual Basic], retrieving"
   - "data [Visual Basic], accessing user data"
-  - "My.User object, tasks"
-  - "user data, domain"
-  - "user names, retrieving"
-  - "user data, accessing"
-  - "login names"
+  - "My.User object [Visual Basic], tasks"
+  - "user data [Visual Basic], domain"
+  - "user names [Visual Basic], retrieving"
+  - "user data [Visual Basic], accessing"
+  - "login names [Visual Basic]"
   - "examples [Visual Basic], accessing user data"
 ms.assetid: 32492a15-ee59-4a63-a1f1-9b24cc13140a
 caps.latest.revision: 17

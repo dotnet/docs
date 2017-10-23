@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "Grid control, sharing sizing data of columns"
-  - "sizing data in Grid controls"
-  - "Grid control, sharing sizing data of rows"
+  - "Grid control [WPF], sharing sizing data of columns"
+  - "sizing data in Grid controls [WPF]"
+  - "Grid control [WPF], sharing sizing data of rows"
 ms.assetid: a0535a6f-ff04-4b25-9912-7dd856e11044
 caps.latest.revision: 11
 author: dotnet-bot

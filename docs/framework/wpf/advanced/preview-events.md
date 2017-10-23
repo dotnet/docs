@@ -10,10 +10,10 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "Preview events"
-  - "suppressing events"
-  - "events, Preview"
-  - "events, suppressing"
+  - "Preview events [WPF]"
+  - "suppressing events [WPF]"
+  - "events [WPF], Preview"
+  - "events [WPF], suppressing"
 ms.assetid: b5032308-aa9c-4d02-af11-630ecec8df7e
 caps.latest.revision: 7
 author: dotnet-bot

@@ -12,13 +12,13 @@ helpviewer_keywords:
   - "type safety"
   - "operators [Visual Basic], bitwise"
   - "operators [Visual Basic], bit-shift"
-  - "bitwise operators"
-  - "bit-shift operators"
+  - "bitwise operators [Visual Basic]"
+  - "bit-shift operators [Visual Basic]"
   - "zero, division by zero"
   - "operators [Visual Basic], arithmetic"
-  - "division, by zero"
+  - "division [Visual Basic], by zero"
   - "Visual Basic code, operators"
-  - "arithmetic operators, about arithmetic operators"
+  - "arithmetic operators [Visual Basic], about arithmetic operators"
 ms.assetid: 325dac7a-ea4f-41d5-8b48-f6e904211569
 caps.latest.revision: 20
 author: dotnet-bot

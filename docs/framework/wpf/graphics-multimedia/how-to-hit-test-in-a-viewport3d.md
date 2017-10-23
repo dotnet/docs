@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "3-D visuals, hit-testing for"
-  - "hit tests, for 3-D visuals"
-  - "Viewport3D"
+  - "3-D visuals [WPF], hit-testing for"
+  - "hit tests [WPF], for 3-D visuals"
+  - "Viewport3D [WPF]"
 ms.assetid: 42bfbd99-c7c6-43f1-940b-90448faa412e
 caps.latest.revision: 11
 author: dotnet-bot

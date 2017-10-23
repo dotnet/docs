@@ -10,7 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "Dim statement"
+  - "Dim statement [Visual Basic]"
   - "variables [Visual Basic], creating"
 ms.assetid: 35300be3-77b0-4bef-a156-034d3cdedde0
 caps.latest.revision: 29

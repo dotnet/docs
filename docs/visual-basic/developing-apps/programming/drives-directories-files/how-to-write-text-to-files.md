@@ -9,9 +9,9 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "files, writing to"
+  - "files [Visual Basic], writing to"
   - "text, writing to files"
-  - "writing to files"
+  - "writing to files [Visual Basic]"
   - "examples [Visual Basic], text files"
 ms.assetid: 304956eb-530d-4df7-b48f-9b4d1f2581a0
 caps.latest.revision: 19

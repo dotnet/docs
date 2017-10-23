@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "validation of binding"
-  - "data binding, validation of binding"
-  - "binding, validation of"
+  - "validation of binding [WPF]"
+  - "data binding [WPF], validation of binding"
+  - "binding [WPF], validation of"
 ms.assetid: eb98b33d-9866-49ae-b981-bc5ff20d607a
 caps.latest.revision: 19
 author: dotnet-bot

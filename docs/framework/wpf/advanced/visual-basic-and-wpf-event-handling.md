@@ -10,8 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "Visual Basic, event handlers"
-  - "event handlers, Visual Basic"
+  - "Visual Basic [WPF], event handlers"
+  - "event handlers [WPF], Visual Basic"
 ms.assetid: ad4eb9aa-3afc-4a71-8cf6-add3fbea54a1
 caps.latest.revision: 12
 author: dotnet-bot

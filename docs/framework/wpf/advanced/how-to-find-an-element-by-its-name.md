@@ -9,12 +9,11 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "FindName method"
-  - "elements, finding by name"
+  - "elements [WPF], finding by name"
 ms.assetid: cfa7cf35-8aa2-4060-9454-872ed4af3f0e
 caps.latest.revision: 7
 author: dotnet-bot

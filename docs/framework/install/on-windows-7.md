@@ -34,7 +34,7 @@ The .NET Framework 3.5 supports apps built for .NET Framework 1.0 through 3.5.
 
 ## Help
 
-You can [contact Microsoft for help](mailto:dotnet-install-help@service.microsoft.com?subject=Help installing .NET Framework) if you cannot get the correct version of the .NET Framework installed.
+You can [contact Microsoft for help](mailto:dotnet-install-help@service.microsoft.com?subject=Install-Help) if you cannot get the correct version of the .NET Framework installed.
 
 ## See also
 

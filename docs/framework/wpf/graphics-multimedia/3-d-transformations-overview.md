@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "3-D transformations"
-  - "transformations, 3-D"
+  - "transformations [WPF], 3-D"
 ms.assetid: e45e555d-ac1e-4b36-aced-e433afe7f27f
 caps.latest.revision: 18
 author: dotnet-bot

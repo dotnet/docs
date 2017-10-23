@@ -10,11 +10,11 @@ ms.technology:
 ms.topic: "article"
 helpviewer_keywords: 
   - "classes [Visual Basic], composite data types"
-  - "composite types"
-  - "composite data types"
+  - "composite types [Visual Basic]"
+  - "composite data types [Visual Basic]"
   - "data types [Visual Basic], composite"
   - "arrays [Visual Basic], composite data types"
-  - "structures, composite data types"
+  - "structures [Visual Basic], composite data types"
   - "classes [Visual Basic], composite types"
   - "types [Visual Basic], composite"
 ms.assetid: 62970f2e-52c0-4369-8963-613820f1f434

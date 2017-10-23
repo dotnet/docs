@@ -10,8 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "Nothing keyword, variable assignment"
-  - "object variables, null reference"
+  - "Nothing keyword [Visual Basic], variable assignment"
+  - "object variables [Visual Basic], null reference"
 ms.assetid: e6d30578-bdae-4142-a3ac-a10697bf696a
 caps.latest.revision: 9
 author: dotnet-bot

@@ -11,8 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "CommonDialog control"
-  - "Windows Forms dialog boxes, predefined"
-  - "dialog boxes, Windows Forms"
+  - "Windows Forms dialog boxes [Windows Forms], predefined"
+  - "dialog boxes [Windows Forms], Windows Forms"
   - "Windows Forms, dialog boxes"
 ms.assetid: 6e5f5e9e-58d6-45f3-9df0-48b7bb6bfd5c
 caps.latest.revision: 11

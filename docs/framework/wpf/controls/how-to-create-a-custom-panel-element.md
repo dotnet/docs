@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "Panel control"
-  - "custom Panel elements"
+  - "Panel control [WPF]"
+  - "custom Panel elements [WPF]"
 ms.assetid: e0df4f1e-8c07-4e86-89a3-e22acfffdc2a
 caps.latest.revision: 9
 author: dotnet-bot

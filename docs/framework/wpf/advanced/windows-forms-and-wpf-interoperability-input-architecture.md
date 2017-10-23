@@ -13,12 +13,12 @@ helpviewer_keywords:
   - "input architecture [WPF interoperability]"
   - "messages [WPF]"
   - "Windows Forms [WPF], interoperability with"
-  - "Windows Forms, WPF interoperation"
+  - "Windows Forms [WPF], WPF interoperation"
   - "interoperability [WPF], Windows Forms"
-  - "modeless forms"
-  - "ElementHost keyboard and messages"
+  - "modeless forms [WPF]"
+  - "ElementHost keyboard and messages [WPF]"
   - "keyboard interoperation [WPF]"
-  - "WindowsFormsHost keyboard and messages"
+  - "WindowsFormsHost keyboard and messages [WPF]"
   - "modeless dialog boxes [WPF]"
 ms.assetid: 0eb6f137-f088-4c5e-9e37-f96afd28f235
 caps.latest.revision: 20

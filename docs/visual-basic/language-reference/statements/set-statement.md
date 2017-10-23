@@ -10,9 +10,9 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.Set"
 helpviewer_keywords: 
-  - "property procedures, Set statements"
-  - "Set statement"
-  - "Set statement, syntax"
+  - "property procedures [Visual Basic], Set statements"
+  - "Set statement [Visual Basic]"
+  - "Set statement [Visual Basic], syntax"
   - "write-only properties"
   - "properties [Visual Basic], write-only"
 ms.assetid: 9ecc27b4-df84-420d-9075-db25455fb3cd

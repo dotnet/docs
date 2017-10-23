@@ -9,8 +9,8 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.Public"
 helpviewer_keywords: 
-  - "Public keyword"
-  - "Public keyword, syntax"
+  - "Public keyword [Visual Basic]"
+  - "Public keyword [Visual Basic], syntax"
   - "Public access modifier"
 ms.assetid: 284c9e1b-ed23-499b-9bc9-ad87c11485a5
 caps.latest.revision: 13

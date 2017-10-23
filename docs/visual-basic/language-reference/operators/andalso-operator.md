@@ -12,7 +12,7 @@ f1_keywords:
   - "AndAlso"
 helpviewer_keywords: 
   - "short-circuiting"
-  - "AndAlso operator"
+  - "AndAlso operator [Visual Basic]"
   - "operators [Visual Basic], short-circuiting"
   - "operators [Visual Basic], conjunction"
   - "short-circuit evaluation"

@@ -10,8 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "controls, GroupBox"
-  - "GroupBox control, creating templates"
+  - "controls [WPF], GroupBox"
+  - "GroupBox control [WPF], creating templates"
 ms.assetid: 85a4d1a7-4753-4f4a-b26d-14fa10c1ddb5
 caps.latest.revision: 9
 author: dotnet-bot

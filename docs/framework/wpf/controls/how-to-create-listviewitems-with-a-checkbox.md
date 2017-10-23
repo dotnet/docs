@@ -10,10 +10,10 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "controls, ListView"
-  - "controls, CheckBox"
-  - "ListView controls, CheckBox controls"
-  - "CheckBox control, ListView control"
+  - "controls [WPF], ListView"
+  - "controls [WPF], CheckBox"
+  - "ListView controls [WPF], CheckBox controls"
+  - "CheckBox control [WPF], ListView control"
 ms.assetid: f6d66c7f-906c-4f65-a55a-0ede9d00e26a
 caps.latest.revision: 12
 author: dotnet-bot

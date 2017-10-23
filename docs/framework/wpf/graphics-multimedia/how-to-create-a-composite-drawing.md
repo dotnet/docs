@@ -10,11 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "drawings, composite"
-  - "composite drawings"
-  - "classes, DrawingGroup"
-  - "graphics, composite drawings"
-  - "DrawingGroup class"
+  - "drawings [WPF], composite"
+  - "composite drawings [WPF]"
+  - "graphics [WPF], composite drawings"
 ms.assetid: 066eb0ab-5f0e-439d-85c6-dca60af269fc
 caps.latest.revision: 9
 author: dotnet-bot

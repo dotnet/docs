@@ -10,7 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "graphics, using containers"
+  - "graphics [Windows Forms], using containers"
   - "graphics containers"
   - "examples [Windows Forms], graphics containers"
 ms.assetid: 74632f91-cefa-4f51-ab7c-f9ac91942caf

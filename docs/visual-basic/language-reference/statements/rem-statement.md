@@ -13,7 +13,7 @@ f1_keywords:
   - "Rem"
   - "'"
 helpviewer_keywords: 
-  - "REM statement"
+  - "REM statement [Visual Basic]"
   - "comments, Visual Basic code"
   - "code comments, Visual Basic"
   - "Visual Basic code, comments"

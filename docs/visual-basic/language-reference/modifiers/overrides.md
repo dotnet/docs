@@ -11,10 +11,10 @@ f1_keywords:
   - "vb.Overrides"
 helpviewer_keywords: 
   - "properties [Visual Basic], redefining"
-  - "procedures, overriding"
-  - "procedures, redefining"
+  - "procedures [Visual Basic], overriding"
+  - "procedures [Visual Basic], redefining"
   - "overriding"
-  - "Overrides keyword"
+  - "Overrides keyword [Visual Basic]"
   - "overriding, Overrides keyword"
   - "properties [Visual Basic], overriding"
 ms.assetid: 9f5e6144-ce10-465e-842b-1a8f8760af90

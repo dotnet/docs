@@ -10,8 +10,8 @@ f1_keywords:
   - "vb.ByVal"
   - "ByVal"
 helpviewer_keywords: 
-  - "ByVal keyword, contexts"
-  - "ByVal keyword"
+  - "ByVal keyword [Visual Basic], contexts"
+  - "ByVal keyword [Visual Basic]"
 ms.assetid: 1eaf4e58-b305-4785-9e3d-e416b9c75598
 caps.latest.revision: 14
 author: dotnet-bot

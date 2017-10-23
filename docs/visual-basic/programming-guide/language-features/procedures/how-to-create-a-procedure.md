@@ -9,11 +9,11 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "procedures, defining"
+  - "procedures [Visual Basic], defining"
   - "Visual Basic code, procedures"
   - "Visual Basic code, reusing"
   - "procedure declarations"
-  - "procedures, about procedures"
+  - "procedures [Visual Basic], about procedures"
 ms.assetid: 4f779247-0b50-47e8-9e5c-ab5cf39ac0d2
 caps.latest.revision: 27
 author: dotnet-bot

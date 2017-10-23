@@ -9,9 +9,9 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "property values"
+  - "property values [Visual Basic]"
   - "Visual Basic code, procedures"
-  - "values, properties"
+  - "values [Visual Basic], properties"
   - "Visual Basic code, properties"
   - "properties [Visual Basic], values"
 ms.assetid: c39401e5-b5fc-4439-8f31-ed640f7ce6ed

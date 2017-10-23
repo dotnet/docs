@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "data collections, selecting data for views"
-  - "data binding, creating views of data collections"
-  - "data binding, selecting data for views"
-  - "data binding, binding to collections"
+  - "data collections [WPF], selecting data for views"
+  - "data binding [WPF], creating views of data collections"
+  - "data binding [WPF], selecting data for views"
+  - "data binding [WPF], binding to collections"
 ms.assetid: 952a7d76-dd29-49e5-86f5-32c4530e70eb
 caps.latest.revision: 11
 author: dotnet-bot

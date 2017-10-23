@@ -10,7 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "WPF, splash screen"
+  - "WPF [WPF], splash screen"
   - "startup window [WPF]"
   - "SplashScreen class [WPF]"
   - "splash screen [WPF]"

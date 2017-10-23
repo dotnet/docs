@@ -9,15 +9,15 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "parameters, optional"
+  - "parameters [Visual Basic], optional"
   - "Visual Basic code, procedures"
-  - "procedures, optional arguments"
+  - "procedures [Visual Basic], optional arguments"
   - "optional arguments"
-  - "named arguments, and optional arguments"
+  - "named arguments [Visual Basic], and optional arguments"
   - "optional parameters"
-  - "Optional keyword, optional arguments"
+  - "Optional keyword [Visual Basic], optional arguments"
   - "arguments [Visual Basic], optional"
-  - "optional arguments, and named arguments"
+  - "optional arguments [Visual Basic], and named arguments"
 ms.assetid: 398d2845-1069-4e94-b934-a73b545c8b87
 caps.latest.revision: 18
 author: dotnet-bot

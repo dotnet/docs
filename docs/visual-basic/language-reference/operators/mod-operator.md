@@ -11,12 +11,12 @@ f1_keywords:
   - "vb.Mod"
 helpviewer_keywords: 
   - "remainder (Mod operator)"
-  - "division operator, Mod operator"
-  - "modulus operator, Visual Basic"
+  - "division operator [Visual Basic], Mod operator"
+  - "modulus operator [Visual Basic], Visual Basic"
   - "Mod operator [Visual Basic]"
   - "operators [Visual Basic], division"
-  - "arithmetic operators, Mod"
-  - "math operators"
+  - "arithmetic operators [Visual Basic], Mod"
+  - "math operators [Visual Basic]"
 ms.assetid: 6ff7e40e-cec8-4c77-bff6-8ddd2791c25b
 caps.latest.revision: 22
 author: dotnet-bot

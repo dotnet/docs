@@ -7,11 +7,11 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "forms, communicating between"
-  - "application forms, accessing"
-  - "forms, accessing one from another"
+  - "forms [Visual Basic], communicating between"
+  - "application forms [Visual Basic], accessing"
+  - "forms [Visual Basic], accessing one from another"
   - "My.Forms object"
-  - "forms, accessing all open"
+  - "forms [Visual Basic], accessing all open"
 ms.assetid: 9aaf5aaf-2012-4f97-89c7-6e62b9d17863
 caps.latest.revision: 16
 author: dotnet-bot

@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "modeless dialog boxes"
-  - "dialog boxes"
-  - "message boxes"
-  - "modal dialog boxes"
+  - "modeless dialog boxes [WPF]"
+  - "dialog boxes [WPF]"
+  - "message boxes [WPF]"
+  - "modal dialog boxes [WPF]"
 ms.assetid: 0d23d544-a393-4a02-a3aa-d8cd5d3d6511
 caps.latest.revision: 25
 author: dotnet-bot

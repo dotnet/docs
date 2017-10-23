@@ -9,16 +9,16 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "user interfaces [XAML]"
   - "classes [XAML]"
   - "root element [XAML]"
   - "XAML [WPF], about XAML"
   - "base classes [XAML]"
-  - "routed events"
+  - "routed events [WPF]"
   - "code-behind files [WPF], XAML"
   - "collection properties [XAML]"
   - "events [XAML]"

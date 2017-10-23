@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "drawing, lines"
+  - "drawing [WPF], lines"
   - "graphics [WPF], lines"
-  - "lines, drawing"
+  - "lines [WPF], drawing"
 ms.assetid: 0513ee01-6b27-4bb3-85f3-3a3e6710d80e
 caps.latest.revision: 7
 author: dotnet-bot

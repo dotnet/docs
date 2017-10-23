@@ -11,7 +11,7 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "variables [Visual Basic], reference"
   - "Is operator [Visual Basic], comparing objects"
-  - "reference variables"
+  - "reference variables [Visual Basic]"
   - "variables [Visual Basic], referring to same object"
   - "objects [Visual Basic], variables referring to same"
   - "Visual Basic code, operators"

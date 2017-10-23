@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "origins of Transforms"
-  - "Transforms, origins of"
-  - "graphics, origins of Transforms"
+  - "origins of Transforms [WPF]"
+  - "Transforms [WPF], origins of"
+  - "graphics [WPF], origins of Transforms"
 ms.assetid: f4dbc29d-93c7-41cd-96d8-5cfd8624b470
 caps.latest.revision: 8
 author: dotnet-bot

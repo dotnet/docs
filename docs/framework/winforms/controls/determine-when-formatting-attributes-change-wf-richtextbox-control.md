@@ -9,15 +9,14 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "examples [Windows Forms], text boxes"
   - "RichTextBox control [Windows Forms], determining font changes"
-  - "SelBold property"
-  - "text boxes, determining font changes"
+  - "text boxes [Windows Forms], determining font changes"
   - "SelChange event"
 ms.assetid: bdfed015-f77a-41e5-b38f-f8629b2fa166
 caps.latest.revision: 11

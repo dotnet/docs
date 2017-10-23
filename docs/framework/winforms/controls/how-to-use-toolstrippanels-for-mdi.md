@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "MDI, using ToolStripPanels [Windows Forms]"
+  - "MDI [Windows Forms], using ToolStripPanels [Windows Forms]"
   - "ToolStripPanel control [Windows Forms], using for MDI"
   - "toolbars [Windows Forms], using for MDI"
 ms.assetid: d6b884fc-0846-465f-83c3-5dc0fe93b00f

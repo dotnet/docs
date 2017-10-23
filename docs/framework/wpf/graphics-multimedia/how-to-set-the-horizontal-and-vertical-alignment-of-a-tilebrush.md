@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "TileBrush, alignment of"
-  - "vertical alignment of TileBrushes"
-  - "aligning, TileBrushes"
-  - "horizontal alignment of TileBrushes"
+  - "TileBrush [WPF], alignment of"
+  - "vertical alignment of TileBrushes [WPF]"
+  - "aligning [WPF], TileBrushes"
+  - "horizontal alignment of Tilebrushes [WPF]"
 ms.assetid: 65ae89bd-9246-4c9e-bde4-2fb991d4060d
 caps.latest.revision: 14
 author: dotnet-bot

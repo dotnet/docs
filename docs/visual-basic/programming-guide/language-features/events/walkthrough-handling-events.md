@@ -13,7 +13,7 @@ helpviewer_keywords:
   - "walkthroughs [Visual Basic], event handling"
   - "variables [Visual Basic], WithEvents"
   - "events [Visual Basic], walkthroughs"
-  - "WithEvents keyword, walkthroughs"
+  - "WithEvents keyword [Visual Basic], walkthroughs"
   - "event handlers [Visual Basic], walkthroughs"
 ms.assetid: f145b3fc-5ae0-4509-a2aa-1ff6934706bd
 caps.latest.revision: 18

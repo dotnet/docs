@@ -10,8 +10,8 @@ f1_keywords:
   - "vb.Unicode"
 helpviewer_keywords: 
   - "Unicode, external references"
-  - "Declare statement, marshaling strings"
-  - "Unicode keyword"
+  - "Declare statement [Visual Basic], marshaling strings"
+  - "Unicode keyword [Visual Basic]"
   - "Unicode, marshaling strings"
 ms.assetid: 0021d5ff-3209-444e-8497-420f3e6ee075
 caps.latest.revision: 14

@@ -9,16 +9,16 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "TextBox control [Windows Forms], entering passwords"
-  - "password boxes, creating"
+  - "password boxes [Windows Forms], creating"
   - "PasswordChar property in text boxes"
-  - "passwords, input mask"
-  - "passwords, password text box"
+  - "passwords [Windows Forms], input mask"
+  - "passwords [Windows Forms], password text box"
 ms.assetid: d105d6b9-3d50-44cd-80d8-2c0e2f486727
 caps.latest.revision: 13
 author: dotnet-bot

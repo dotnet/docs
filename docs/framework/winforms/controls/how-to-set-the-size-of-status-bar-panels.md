@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "StatusBar control [Windows Forms], panel size"
-  - "status bars, setting panel size"
-  - "panels, setting size in status bars"
+  - "status bars [Windows Forms], setting panel size"
+  - "panels [Windows Forms], setting size in status bars"
 ms.assetid: a01bee43-d9eb-4954-84e6-45a93532d08d
 caps.latest.revision: 14
 author: dotnet-bot

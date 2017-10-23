@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "animation, border thickness with key frames"
-  - "key frames, animating border thickness with"
-  - "border thickness, animating with key frames"
+  - "animation [WPF], border thickness with key frames"
+  - "key frames [WPF], animating border thickness with"
+  - "border thickness [WPF], animating with key frames"
 ms.assetid: 3a9cb463-0a63-407d-aae7-3fbb1a559947
 caps.latest.revision: 12
 author: dotnet-bot

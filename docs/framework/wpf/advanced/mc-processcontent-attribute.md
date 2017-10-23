@@ -11,7 +11,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "mc:ProcessContent attribute"
-  - "XAML, mc:ProcessContent attribute"
+  - "XAML [WPF], mc:ProcessContent attribute"
 ms.assetid: 2689b2c8-b4dc-4b71-b9bd-f95e619122d7
 caps.latest.revision: 6
 author: dotnet-bot

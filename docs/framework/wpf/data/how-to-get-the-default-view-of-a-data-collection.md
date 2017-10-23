@@ -9,13 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "data collections, creating views of"
-  - "creating, views of data collections"
-  - "data binding, creating views of data collections"
+  - "data collections [WPF], creating views of"
+  - "data binding [WPF], creating views of data collections"
 ms.assetid: b641e96c-c2f6-42ea-9c5d-bac81176ad65
 caps.latest.revision: 15
 author: dotnet-bot

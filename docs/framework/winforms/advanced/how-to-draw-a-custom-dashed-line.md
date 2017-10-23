@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "lines, custom"
-  - "lines, drawing"
-  - "lines, dashed"
+  - "lines [Windows Forms], custom"
+  - "lines [Windows Forms], drawing"
+  - "lines [Windows Forms], dashed"
 ms.assetid: cd0ed96a-cce4-47b9-b58a-3bae2e3d1bee
 caps.latest.revision: 16
 author: dotnet-bot

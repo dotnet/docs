@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "Transforms, using on MediaElements"
-  - "multimedia, using Transforms on MediaElements"
-  - "MediaElements, using Transforms on"
+  - "Transforms [WPF], using on MediaElements"
+  - "multimedia [WPF], using Transforms on MediaElements"
+  - "MediaElements [WPF], using Transforms on"
 ms.assetid: d89c95e3-27c5-4748-8a27-72e432674032
 caps.latest.revision: 11
 author: dotnet-bot

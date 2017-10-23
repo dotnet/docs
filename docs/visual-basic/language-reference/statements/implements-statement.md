@@ -11,9 +11,9 @@ f1_keywords:
   - "vb.Implements"
   - "Implements"
 helpviewer_keywords: 
-  - "Implements statement, syntax"
-  - "Implements statement"
-  - "interface implementation, Implements statement"
+  - "Implements statement [Visual Basic], syntax"
+  - "Implements statement [Visual Basic]"
+  - "interface implementation [Visual Basic], Implements statement"
 ms.assetid: 1fafb83f-f55a-4215-8ea9-681e8622613d
 caps.latest.revision: 17
 author: dotnet-bot

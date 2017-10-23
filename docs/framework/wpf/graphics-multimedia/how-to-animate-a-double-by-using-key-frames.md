@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "Doubles, animating with key frames"
-  - "animation, Doubles with key frames"
-  - "key frames, animating Doubles with"
+  - "Doubles [WPF], animating with key frames"
+  - "animation [WPF], Doubles with key frames"
+  - "key frames [WPF], animating Doubles with"
 ms.assetid: 3a1a7dba-7694-4907-8a2f-3408baebfa82
 caps.latest.revision: 16
 author: dotnet-bot

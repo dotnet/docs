@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "controls [Windows Forms], binding"
-  - "factory objects, binding to"
+  - "factory objects [Windows Forms], binding to"
   - "BindingSource component [Windows Forms], binding to a factory object"
   - "BindingSource component [Windows Forms], examples"
 ms.assetid: 7d59af89-ff82-41d8-a48a-f1fbae788b0d

@@ -10,10 +10,10 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "background colors, Windows Forms Panel controls"
-  - "background images, Windows Forms Panel controls"
+  - "background colors [Windows Forms], Windows Forms Panel controls"
+  - "background images [Windows Forms], Windows Forms Panel controls"
   - "Panel control [Windows Forms], background"
-  - "colors, Windows Forms Panel controls"
+  - "colors [Windows Forms], Windows Forms Panel controls"
 ms.assetid: db83cf54-3c69-4b08-ac6c-25b9b5abb1b0
 caps.latest.revision: 8
 author: dotnet-bot

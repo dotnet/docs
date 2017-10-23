@@ -12,8 +12,8 @@ helpviewer_keywords:
   - "data [Visual Basic], reading from files"
   - "I/O [Visual Basic], reading from files"
   - "examples [Visual Basic], reading from files"
-  - "files, reading"
-  - "reading files"
+  - "files [Visual Basic], reading"
+  - "reading files [Visual Basic]"
 ms.assetid: ad831a1b-7d01-4f07-a47b-799f3037df19
 caps.latest.revision: 16
 author: dotnet-bot

@@ -10,11 +10,11 @@ ms.technology:
 ms.topic: "article"
 helpviewer_keywords: 
   - "Visual Basic code, procedures"
-  - "procedures, operator"
+  - "procedures [Visual Basic], operator"
   - "Visual Basic code, operators"
-  - "syntax, Operator procedures"
+  - "syntax [Visual Basic], Operator procedures"
   - "operators [Visual Basic], overloading"
-  - "overloaded operators"
+  - "overloaded operators [Visual Basic]"
   - "operator overloading"
   - "operator procedures"
 ms.assetid: 8c513d38-246b-4fb7-8b75-29e1364e555b

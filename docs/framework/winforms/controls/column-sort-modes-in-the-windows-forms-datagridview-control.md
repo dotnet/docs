@@ -10,7 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "data grids, sort modes"
+  - "data grids [Windows Forms], sort modes"
   - "DataGridView control [Windows Forms], sort mode"
 ms.assetid: 43715887-2df9-4da7-bcf1-b9c7c842b2bf
 caps.latest.revision: 18

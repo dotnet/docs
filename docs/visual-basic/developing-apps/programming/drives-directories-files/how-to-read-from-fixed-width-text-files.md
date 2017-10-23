@@ -10,10 +10,10 @@ ms.technology:
 ms.topic: "article"
 helpviewer_keywords: 
   - "fixed-width text file"
-  - "reading text files, fixed-width"
-  - "files, parsing"
-  - "text files, tasks"
-  - "text files, reading"
+  - "reading text files [Visual Basic], fixed-width"
+  - "files [Visual Basic], parsing"
+  - "text files [Visual Basic], tasks"
+  - "text files [Visual Basic], reading"
 ms.assetid: 99be5692-967a-4e85-993e-cd18139a5a69
 caps.latest.revision: 24
 author: dotnet-bot

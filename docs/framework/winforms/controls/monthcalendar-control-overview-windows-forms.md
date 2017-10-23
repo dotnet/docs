@@ -12,8 +12,8 @@ ms.topic: "article"
 f1_keywords: 
   - "MonthCalendar"
 helpviewer_keywords: 
-  - "calendars, Windows Forms controls"
-  - "calendar controls, Windows Forms"
+  - "calendars [Windows Forms], Windows Forms controls"
+  - "calendar controls [Windows Forms], Windows Forms"
   - "MonthCalendar control [Windows Forms], setting the first day of the week"
 ms.assetid: 788c5325-b721-44ec-95bf-9b680ba0f6a2
 caps.latest.revision: 11

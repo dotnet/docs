@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "dialog boxes, creating"
-  - "Grid control, creating, dialog box"
+  - "dialog boxes [WPF], creating"
+  - "Grid control [WPF], creating [WPF], dialog box"
 ms.assetid: d6ac3d51-844b-4d29-96d8-81a696a7b960
 caps.latest.revision: 14
 author: dotnet-bot

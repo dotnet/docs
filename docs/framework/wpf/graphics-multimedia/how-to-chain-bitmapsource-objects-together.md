@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "BitmapSource objects, chaining"
-  - "graphics, chaining BitmapSource objects"
-  - "chaining BitmapSource objects"
+  - "BitmapSource objects [WPF], chaining"
+  - "graphics [WPF], chaining BitmapSource objects"
+  - "chaining BitmapSource objects [WPF]"
 ms.assetid: 32d88853-395b-4855-9685-51a482a3b421
 caps.latest.revision: 10
 author: dotnet-bot

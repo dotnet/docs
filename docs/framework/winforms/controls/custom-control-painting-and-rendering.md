@@ -11,7 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "custom controls [Windows Forms], rendering"
-  - "OnPaint method"
   - "custom controls [Windows Forms], painting"
   - "user controls [Windows Forms], painting"
 ms.assetid: a09dbf76-0966-4cbf-a66a-2083ba98e068

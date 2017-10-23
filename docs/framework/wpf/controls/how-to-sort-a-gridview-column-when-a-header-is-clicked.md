@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "controls, GridView"
-  - "controls, ListView"
-  - "ListView controls, sorting GridView columns"
-  - "GridView controls, ListView control"
+  - "controls [WPF], GridView"
+  - "controls [WPF], ListView"
+  - "ListView controls [WPF], sorting GridView columns"
+  - "GridView controls [WPF], ListView control"
 ms.assetid: 4865d720-d147-40ed-83a7-af7587f8aad8
 caps.latest.revision: 18
 author: dotnet-bot

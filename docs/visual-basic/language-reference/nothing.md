@@ -9,8 +9,8 @@ f1_keywords:
   - "Nothing"
   - "vb.Nothing"
 helpviewer_keywords: 
-  - "Nothing keyword"
-  - "Nothing keyword, syntax"
+  - "Nothing keyword [Visual Basic]"
+  - "Nothing keyword [Visual Basic], syntax"
 ms.assetid: 06176e2d-bbf7-4a37-afaa-a86ad21ee99f
 caps.latest.revision: 31
 author: dotnet-bot

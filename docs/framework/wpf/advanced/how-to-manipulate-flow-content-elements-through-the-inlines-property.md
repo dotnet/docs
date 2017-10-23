@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "flow content elements, manipulating through Inlines property"
-  - "documents, manipulating flow Content elements through Inlines property"
-  - "Inlines property, manipulating flow Content elements"
-  - "properties, Inlines, manipulating flow Content elements"
+  - "flow content elements [WPF], manipulating through Inlines property"
+  - "documents [WPF], manipulating flow Content elements through Inlines property"
+  - "Inlines property [WPF], manipulating flow Content elements"
+  - "properties [WPF], Inlines [WPF], manipulating flow Content elements"
 ms.assetid: 510780d2-3da1-4360-8763-7054bda22ea3
 caps.latest.revision: 13
 author: dotnet-bot

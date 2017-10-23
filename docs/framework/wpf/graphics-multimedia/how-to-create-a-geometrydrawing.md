@@ -10,11 +10,10 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "shapes, renderable"
-  - "renderable shapes"
-  - "GeometryDrawing class"
-  - "graphics, GeometryDrawing class"
-  - "classes, GeometryDrawing"
+  - "shapes [WPF], renderable"
+  - "renderable shapes [WPF]"
+  - "graphics [WPF], GeometryDrawing class"
+  - "classes [WPF], GeometryDrawing"
 ms.assetid: 11d3c096-91ba-4d41-9bba-aeac0db70f97
 caps.latest.revision: 8
 author: dotnet-bot

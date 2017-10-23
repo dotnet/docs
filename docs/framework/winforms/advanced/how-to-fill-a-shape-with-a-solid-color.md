@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "colors, adding to shapes"
-  - "shapes, filling"
+  - "colors [Windows Forms], adding to shapes"
+  - "shapes [Windows Forms], filling"
 ms.assetid: 06088b31-bac9-4ef3-9ebe-06c2c764d6df
 caps.latest.revision: 14
 author: dotnet-bot

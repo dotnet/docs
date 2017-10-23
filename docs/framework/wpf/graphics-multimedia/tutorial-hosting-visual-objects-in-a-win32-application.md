@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "visual objects in Win32 code"
-  - "Win32 code, visual objects in"
-  - "hosting, visual objects in Win32 code"
+  - "visual objects in Win32 code [WPF]"
+  - "Win32 code [WPF], visual objects in"
+  - "hosting [WPF], visual objects in Win32 code"
 ms.assetid: f0e1600c-3217-43d5-875d-1864fa7fe628
 caps.latest.revision: 17
 author: dotnet-bot

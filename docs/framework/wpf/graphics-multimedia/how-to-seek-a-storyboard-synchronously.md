@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "seeking Storyboards synchronously"
-  - "Storyboards, seeking synchronously"
+  - "seeking Storyboards synchronously [WPF]"
+  - "Storyboards [WPF], seeking synchronously"
 ms.assetid: 03e06271-a946-4810-88ea-3fb4cfa9e0f1
 caps.latest.revision: 8
 author: dotnet-bot

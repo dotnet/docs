@@ -10,10 +10,10 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "tabs, removing from pages"
+  - "tabs [Windows Forms], removing from pages"
   - "TabPage control"
   - "TabPage control [Windows Forms], adding and removing tabs"
-  - "tabs, adding to pages"
+  - "tabs [Windows Forms], adding to pages"
   - "tab pages"
 ms.assetid: 480633db-413a-45d2-9c8f-0427cc13adbe
 caps.latest.revision: 7

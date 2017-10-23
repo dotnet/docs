@@ -9,25 +9,20 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "toolbars [Windows Forms], custom drawing"
-  - "drawing, owner"
-  - "ToolStripRenderMode class"
-  - "RenderMode property"
-  - "ProfessionalColorTable class, overriding"
+  - "drawing [Windows Forms], owner"
+  - "ProfessionalColorTable class [Windows Forms], overriding"
   - "examples [Windows Forms], toolbars"
-  - "ToolStripRenderer class"
-  - "drawing, custom"
+  - "drawing [Windows Forms], custom"
   - "toolbars [Windows Forms], changing colors"
-  - "ToolStripProfessionalRenderer class"
   - "ToolStrip control [Windows Forms], drawing"
   - "ToolStrip control [Windows Forms], changing colors"
   - "custom drawing"
   - "owner drawing"
-  - "ToolStripSystemRenderer class"
 ms.assetid: 94e7d7bd-a752-441c-b5b3-7acf98881163
 caps.latest.revision: 11
 author: dotnet-bot

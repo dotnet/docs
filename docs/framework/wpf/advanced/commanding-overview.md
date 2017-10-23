@@ -9,18 +9,17 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "interfaces, ICommandSource"
-  - "classes, CommandBinding"
-  - "command library"
-  - "commands, definition of"
-  - "CommandBindings"
-  - "ICommandSource interfaces"
-  - "commanding"
-  - "CommandManager"
+  - "interfaces [WPF], ICommandSource"
+  - "command library [WPF]"
+  - "commands [WPF], definition of"
+  - "CommandBindings [WPF]"
+  - "ICommandSource interfaces [WPF]"
+  - "commanding [WPF]"
+  - "CommandManager [WPF]"
 ms.assetid: bc208dfe-367d-426a-99de-52b7e7511e81
 caps.latest.revision: 35
 author: dotnet-bot

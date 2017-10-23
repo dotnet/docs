@@ -16,7 +16,7 @@ helpviewer_keywords:
   - "merging cells"
   - "TableLayoutPanel control [Windows Forms], spanning rows and columns"
   - "rows [Windows Forms], spanning"
-  - "cells, merging"
+  - "cells [Windows Forms], merging"
 ms.assetid: a8a2fdd3-a848-48b0-a4cd-4e85ebded87e
 caps.latest.revision: 8
 author: dotnet-bot

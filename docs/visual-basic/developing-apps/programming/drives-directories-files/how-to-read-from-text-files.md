@@ -9,11 +9,11 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "extended characters, reading"
-  - "reading text files"
+  - "extended characters [Visual Basic], reading"
+  - "reading text files [Visual Basic]"
   - "reading data, text files"
   - "examples [Visual Basic], reading text files"
-  - "text files, reading"
+  - "text files [Visual Basic], reading"
 ms.assetid: 735fe9d7-0f7a-4185-ba02-f35e580ec4b8
 caps.latest.revision: 27
 author: dotnet-bot

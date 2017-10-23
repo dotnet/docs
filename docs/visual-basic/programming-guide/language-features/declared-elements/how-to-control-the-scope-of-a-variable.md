@@ -10,14 +10,14 @@ ms.technology:
 ms.topic: "article"
 helpviewer_keywords: 
   - "variables [Visual Basic], scope"
-  - "declared elements, scope"
-  - "visibility, declared elements"
+  - "declared elements [Visual Basic], scope"
+  - "visibility [Visual Basic], declared elements"
   - "variables [Visual Basic], visibility"
-  - "scope, declared elements"
-  - "scope, variables"
-  - "scope, Visual Basic"
-  - "declared elements, visibility"
-  - "visibility, variables"
+  - "scope [Visual Basic], declared elements"
+  - "scope [Visual Basic], variables"
+  - "scope [Visual Basic], Visual Basic"
+  - "declared elements [Visual Basic], visibility"
+  - "visibility [Visual Basic], variables"
 ms.assetid: 44b7f62a-cb5c-4d50-bce9-60ae68f87072
 caps.latest.revision: 12
 author: dotnet-bot

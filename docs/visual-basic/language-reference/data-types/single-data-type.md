@@ -10,20 +10,20 @@ f1_keywords:
   - "vb.Single"
 helpviewer_keywords: 
   - "Single data type"
-  - "F literal type character"
+  - "F literal type character [Visual Basic]"
   - "trailing zeros"
   - "real numbers"
-  - "literal type characters, F"
-  - "trailing 0 characters"
-  - "identifier type characters, !"
+  - "literal type characters [Visual Basic], F"
+  - "trailing 0 characters [Visual Basic]"
+  - "identifier type characters [Visual Basic], !"
   - "single-precision numbers"
   - "! identifier type character"
-  - "0 characters, trailing"
+  - "0 characters [Visual Basic], trailing"
   - "data types [Visual Basic], assigning"
-  - "floating-point numbers, Single data type"
-  - "numbers, real"
+  - "floating-point numbers [Visual Basic], Single data type"
+  - "numbers [Visual Basic], real"
   - "zeros, trailing"
-  - "numbers, floating point"
+  - "numbers [Visual Basic], floating point"
 ms.assetid: 224a2795-4cd5-496c-8f7a-a4f05a06d45d
 caps.latest.revision: 15
 author: dotnet-bot

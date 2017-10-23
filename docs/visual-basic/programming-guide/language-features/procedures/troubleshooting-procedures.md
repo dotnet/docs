@@ -10,10 +10,10 @@ ms.technology:
 ms.topic: "article"
 helpviewer_keywords: 
   - "troubleshooting Visual Basic, procedures"
-  - "procedures, troubleshooting"
+  - "procedures [Visual Basic], troubleshooting"
   - "Visual Basic code, procedures"
   - "troubleshooting procedures"
-  - "procedures, about procedures"
+  - "procedures [Visual Basic], about procedures"
 ms.assetid: 525721e8-2e02-4f75-b5d8-6b893462cf2b
 caps.latest.revision: 17
 author: dotnet-bot

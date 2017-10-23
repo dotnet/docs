@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "MenuStrip [Windows Forms], displaying option buttons"
-  - "displaying option buttons, MenuStrip [Windows Forms]"
+  - "displaying option buttons [Windows Forms], MenuStrip [Windows Forms]"
   - "option buttons [Windows Forms], displaying in MenuStrip"
 ms.assetid: 8b596af2-9ff8-4f7b-93d7-cba830e167f4
 caps.latest.revision: 9

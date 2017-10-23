@@ -15,12 +15,12 @@ helpviewer_keywords:
   - "name collisions"
   - "Global keyword [Visual Basic]"
   - "namespace pollution"
-  - "names, avoiding conflicts"
-  - "naming conflicts, namespaces"
-  - "namespaces, assemblies"
+  - "names [Visual Basic], avoiding conflicts"
+  - "naming conflicts [Visual Basic], namespaces"
+  - "namespaces [Visual Basic], assemblies"
   - "Visual Basic code, namespaces"
-  - "fully qualified names"
-  - "naming conventions, naming conflicts"
+  - "fully qualified names [Visual Basic]"
+  - "naming conventions [Visual Basic], naming conflicts"
   - "namespaces"
 ms.assetid: cffac744-ab8c-4f1f-ba50-732c22ab4b88
 caps.latest.revision: 27

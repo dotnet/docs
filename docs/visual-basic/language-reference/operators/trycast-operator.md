@@ -11,7 +11,7 @@ f1_keywords:
   - "vb.trycast"
   - "trycast"
 helpviewer_keywords: 
-  - "TryCast keyword"
+  - "TryCast keyword [Visual Basic]"
 ms.assetid: d1ef5d47-fef4-491e-b014-1d910628f65c
 caps.latest.revision: 17
 author: dotnet-bot

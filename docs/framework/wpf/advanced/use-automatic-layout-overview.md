@@ -10,8 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "layout, automatic"
-  - "automatic layout"
+  - "layout [WPF], automatic"
+  - "automatic layout [WPF]"
 ms.assetid: 6fed9264-18bb-4d05-8867-1fe356c6f687
 caps.latest.revision: 22
 author: dotnet-bot

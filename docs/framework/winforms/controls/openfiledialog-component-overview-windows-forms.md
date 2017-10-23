@@ -12,8 +12,8 @@ ms.topic: "article"
 f1_keywords: 
   - "OpenFileDialog"
 helpviewer_keywords: 
-  - "OpenFileDialog component, about OpenFileDialog"
-  - "Open File dialog box, displaying in Windows Forms"
+  - "OpenFileDialog component [Windows Forms], about OpenFileDialog"
+  - "Open File dialog box [Windows Forms], displaying in Windows Forms"
 ms.assetid: cd717300-46b6-4f82-8207-b218fa7fa407
 caps.latest.revision: 10
 author: dotnet-bot

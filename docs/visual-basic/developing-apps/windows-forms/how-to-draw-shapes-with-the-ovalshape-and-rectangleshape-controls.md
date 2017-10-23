@@ -13,9 +13,9 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "OvalShape control"
+  - "OvalShape control [Visual Basic]"
   - "shapes, drawing"
-  - "RectangleShape control"
+  - "RectangleShape control [Visual Basic]"
 ms.assetid: 0275b4c6-7a13-46c8-90f3-61db308c6b5d
 caps.latest.revision: 15
 author: dotnet-bot

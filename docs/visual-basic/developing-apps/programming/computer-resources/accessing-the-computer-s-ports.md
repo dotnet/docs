@@ -10,7 +10,7 @@ ms.technology:
 ms.topic: "article"
 helpviewer_keywords: 
   - "serial ports"
-  - "My.Computer.Ports object, tasks"
+  - "My.Computer.Ports object [Visual Basic], tasks"
 ms.assetid: b04a2f76-992a-4585-ab41-8bbbdbd554a1
 caps.latest.revision: 12
 author: dotnet-bot

@@ -10,16 +10,16 @@ ms.technology:
 ms.topic: "article"
 helpviewer_keywords: 
   - "I/O [Visual Basic], walkthroughs"
-  - "text files, writing to"
-  - "reading text files"
+  - "text files [Visual Basic], writing to"
+  - "reading text files [Visual Basic]"
   - "text, writing to files"
-  - "files, searching"
+  - "files [Visual Basic], searching"
   - "StreamReader class, walkthroughs"
-  - "files, accessing"
+  - "files [Visual Basic], accessing"
   - "I/O [Visual Basic], writing text to files"
-  - "writing to files, walkthroughs"
+  - "writing to files [Visual Basic], walkthroughs"
   - "StreamWriter class, walkthroughs"
-  - "text files, reading"
+  - "text files [Visual Basic], reading"
   - "I/O [Visual Basic], reading text from files"
 ms.assetid: 7d2109eb-f98a-4389-b43d-30f384aaa7d5
 caps.latest.revision: 18

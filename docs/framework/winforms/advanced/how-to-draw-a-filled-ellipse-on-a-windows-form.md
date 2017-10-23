@@ -9,19 +9,19 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 f1_keywords: 
   - "Graphics.FillEllipse"
 helpviewer_keywords: 
-  - "ellipses, drawing"
-  - "circles, drawing"
+  - "ellipses [Windows Forms], drawing"
+  - "circles [Windows Forms], drawing"
   - "circular shapes"
-  - "drawing, ellipses"
-  - "shapes, drawing"
-  - "forms, drawing ellipses"
+  - "drawing [Windows Forms], ellipses"
+  - "shapes [Windows Forms], drawing"
+  - "forms [Windows Forms], drawing ellipses"
 ms.assetid: 781db806-950d-4c5b-b022-493f7fd0c4a8
 caps.latest.revision: 10
 author: dotnet-bot

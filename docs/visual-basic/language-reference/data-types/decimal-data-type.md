@@ -9,21 +9,21 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.Decimal"
 helpviewer_keywords: 
-  - "literal type characters, D"
+  - "literal type characters [Visual Basic], D"
   - "trailing zeros"
   - "real numbers"
-  - "trailing 0 characters"
+  - "trailing 0 characters [Visual Basic]"
   - "Decimal data type"
-  - "D literal type character"
+  - "D literal type character [Visual Basic]"
   - "decimals, Decimal data type"
-  - "0 characters, trailing"
+  - "0 characters [Visual Basic], trailing"
   - "data types [Visual Basic], assigning"
-  - "decimal keyword"
-  - "numbers, real"
+  - "decimal keyword [Visual Basic]"
+  - "numbers [Visual Basic], real"
   - "variable-precision numbers"
   - "zeros, trailing"
   - "@ identifier type character"
-  - "identifier type characters, @"
+  - "identifier type characters [Visual Basic], @"
 ms.assetid: 1d855b45-afe2-45b0-a623-96b6f63a43d5
 caps.latest.revision: 20
 author: dotnet-bot

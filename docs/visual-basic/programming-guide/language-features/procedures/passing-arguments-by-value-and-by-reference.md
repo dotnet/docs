@@ -9,12 +9,12 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "ByRef keyword, passing arguments by reference"
+  - "ByRef keyword [Visual Basic], passing arguments by reference"
   - "Visual Basic code, procedures"
-  - "passing arguments, by value or by reference"
-  - "ByVal keyword, passing arguments by value"
+  - "passing arguments [Visual Basic], by value or by reference"
+  - "ByVal keyword [Visual Basic], passing arguments by value"
   - "arguments [Visual Basic], passing by value or by reference"
-  - "argument passing, by value or by reference"
+  - "argument passing [Visual Basic], by value or by reference"
 ms.assetid: fd8a9de6-7178-44d5-a9bf-458d4ad907c2
 caps.latest.revision: 23
 author: dotnet-bot

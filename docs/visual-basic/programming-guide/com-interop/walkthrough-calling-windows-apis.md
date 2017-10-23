@@ -12,11 +12,11 @@ helpviewer_keywords:
   - "DLLs, calling"
   - "Windows API, walkthroughs"
   - "platform invoke, walkthroughs"
-  - "API calls, walkthroughs [Visual Basic]"
+  - "API calls [Visual Basic], walkthroughs [Visual Basic]"
   - "Windows API, calling"
   - "walkthroughs [Visual Basic], API calls"
   - "DllImport attribute, calling Windows API"
-  - "Declare statement, declaring DLL functions"
+  - "Declare statement [Visual Basic], declaring DLL functions"
 ms.assetid: 9280ca96-7a93-47a3-8d01-6d01be0657cb
 caps.latest.revision: 20
 author: dotnet-bot

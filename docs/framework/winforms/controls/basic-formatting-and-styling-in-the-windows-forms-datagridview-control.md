@@ -11,7 +11,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], formatting and styling"
-  - "data grids, formatting"
+  - "data grids [Windows Forms], formatting"
 ms.assetid: b9b90836-1f56-4aa9-8db8-edc78fe830e8
 caps.latest.revision: 13
 author: dotnet-bot

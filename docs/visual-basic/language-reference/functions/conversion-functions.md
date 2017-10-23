@@ -7,15 +7,15 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "conversions, conversion functions"
+  - "conversions [Visual Basic], conversion functions"
   - "conversion functions"
-  - "string conversion, conversion functions"
+  - "string conversion [Visual Basic], conversion functions"
   - "data types [Visual Basic], converting"
   - "declaring functions, conversion functions"
   - "data types [Visual Basic], assigning"
-  - "numbers, converting"
+  - "numbers [Visual Basic], converting"
   - "functions [Visual Basic], conversion"
-  - "dates, converting"
+  - "dates [Visual Basic], converting"
 ms.assetid: 8a8fb553-a8ac-424e-8103-26eea25eaa71
 caps.latest.revision: 10
 author: dotnet-bot

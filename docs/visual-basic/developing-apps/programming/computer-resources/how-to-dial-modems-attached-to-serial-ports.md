@@ -9,8 +9,8 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "modems, dialing"
-  - "serial ports, dialing"
+  - "modems [Visual Basic], dialing"
+  - "serial ports [Visual Basic], dialing"
   - "My.Computer.Ports object"
 ms.assetid: 3834db40-f431-45f1-b671-dc91787164b6
 caps.latest.revision: 19

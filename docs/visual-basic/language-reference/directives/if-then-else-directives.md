@@ -17,7 +17,7 @@ f1_keywords:
 helpviewer_keywords: 
   - "Visual Basic code, compiling"
   - "#If directive [Visual Basic]"
-  - "conditional compilation, directives"
+  - "conditional compilation [Visual Basic], directives"
   - "#End if directive [Visual Basic]"
   - "selective compiling"
   - "else directive (#else)"

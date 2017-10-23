@@ -10,10 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "skewing elements"
-  - "SkewTransform class"
-  - "graphics, skewing elements"
-  - "classes, SkewTransform"
+  - "skewing elements [WPF]"
+  - "graphics [WPF], skewing elements"
+  - "classes [WPF], SkewTransform"
 ms.assetid: 56b65f2f-dc6e-4238-923f-ca44ec53c52f
 caps.latest.revision: 14
 author: dotnet-bot

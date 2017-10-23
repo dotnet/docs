@@ -9,16 +9,16 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "arcs"
   - "GDI+, arcs"
-  - "drawing, ellipses"
+  - "drawing [Windows Forms], ellipses"
   - "GDI+, ellipses"
   - "ellipses"
-  - "drawing, arcs"
+  - "drawing [Windows Forms], arcs"
 ms.assetid: 34f35133-a835-4ca4-81f6-0dfedee8b683
 caps.latest.revision: 17
 author: dotnet-bot

@@ -9,14 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "Clock class"
-  - "classes, Clock"
-  - "Timelines"
-  - "timing events"
+  - "timelines [WPF]"
+  - "timing events [WPF]"
 ms.assetid: 597e3280-0867-4359-a97b-5b2f4149e350
 caps.latest.revision: 14
 author: dotnet-bot

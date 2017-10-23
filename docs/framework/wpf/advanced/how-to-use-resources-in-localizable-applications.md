@@ -10,8 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "applications, localizable"
-  - "localizable applications"
+  - "applications [WPF], localizable"
+  - "localizable applications [WPF]"
 ms.assetid: 08539ad6-7fca-4f34-b82b-ff439e11dfa7
 caps.latest.revision: 14
 author: dotnet-bot

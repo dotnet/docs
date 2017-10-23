@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "controls, TextBlock"
-  - "TextBlock control"
+  - "controls [WPF], TextBlock"
+  - "TextBlock control [WPF]"
 ms.assetid: 24720bca-341a-4b03-8a6b-7a678023b10a
 caps.latest.revision: 6
 author: dotnet-bot

@@ -39,4 +39,4 @@ In .NET 4 the Workflow Team released an all new Workflow engine in the <xref:Sys
   
  Rules related types in the <xref:System.Workflow.Activities.Rules> namespace, which do not have a replacement in WF 4.5, have not been deprecated.  
   
- Customers who want to migrate their applications to WF 4 will find help in the [Workflow 4 Migration Guidance](http://aka.ms/WF4MigrationGuidance) articles on MSDN and the [WF 4 Migration Kit](http://aka.ms/WF4MigrationKit) on the [WF Codeplex](http://aka.ms/WFCodeplex) site.
+ Customers who want to migrate their applications to WF 4 will find help in the [Workflow 4 Migration Guidance](migration-guidance.md).

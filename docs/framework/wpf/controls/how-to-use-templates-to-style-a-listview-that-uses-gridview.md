@@ -10,7 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "ListView controls, styling"
+  - "ListView controls [WPF], styling"
 ms.assetid: 94bf964b-96c8-4bdf-a0c3-f5271b7cb565
 caps.latest.revision: 11
 author: dotnet-bot

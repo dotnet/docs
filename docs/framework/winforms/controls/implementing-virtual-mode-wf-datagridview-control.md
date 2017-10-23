@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "data [Windows Forms], managing large data sets"
   - "DataGridView control [Windows Forms], virtual mode"
-  - "virtual mode, walkthroughs"
+  - "virtual mode [Windows Forms], walkthroughs"
   - "DataGridView control [Windows Forms], large data sets"
   - "walkthroughs [Windows Forms], DataGridView control"
 ms.assetid: 74eb5276-5ab8-4ce0-8005-dae751d85f7c

@@ -27,7 +27,7 @@ manager: "wpickett"
 
 You can explicitly throw an exception using the `throw` statement. You can also throw a caught exception again using the `throw` statement. It is good coding practice to add information to an exception that is re-thrown to provide more information when debugging.
 
-The following code example uses a `try`/`catch` block to catch a possible @System.IO.FileNotFoundException. Following the `try` block is a `catch` block that catches the @System.IO.FileNotFoundException and writes a message to the console if the data file is not found. The next statement is the `throw` statement that throws a new @System.IO.FileNotFoundException and adds text information to the exception.
+The following code example uses a `try`/`catch` block to catch a possible <xref:System.IO.FileNotFoundException>. Following the `try` block is a `catch` block that catches the <xref:System.IO.FileNotFoundException> and writes a message to the console if the data file is not found. The next statement is the `throw` statement that throws a new <xref:System.IO.FileNotFoundException> and adds text information to the exception.
 
 [!code-csharp[Exception.Throwing#1](../../../samples/snippets/csharp/VS_Snippets_CLR/Exception.Throwing/CS/throw.cs#1)]
 [!code-vb[Exception.Throwing#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Exception.Throwing/VB/throw.vb#1)]  

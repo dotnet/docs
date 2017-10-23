@@ -10,13 +10,13 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.Namespace"
 helpviewer_keywords: 
-  - "namespaces, root"
-  - "Namespace statement"
-  - "namespaces, nested"
-  - "declaring namespaces, syntax"
-  - "namespaces, declaring"
+  - "namespaces [Visual Basic], root"
+  - "Namespace statement [Visual Basic]"
+  - "namespaces [Visual Basic], nested"
+  - "declaring namespaces [Visual Basic], syntax"
+  - "namespaces [Visual Basic], declaring"
   - "root namespaces"
-  - "declarations, namespaces"
+  - "declarations [Visual Basic], namespaces"
 ms.assetid: a31fbd95-9ace-4c3d-bbb1-51222a2272b2
 caps.latest.revision: 39
 author: dotnet-bot

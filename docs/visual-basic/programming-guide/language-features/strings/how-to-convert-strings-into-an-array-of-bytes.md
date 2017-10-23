@@ -9,7 +9,7 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "string conversion, arrays"
+  - "string conversion [Visual Basic], arrays"
   - "arrays [Visual Basic], converting strings to"
   - "byte arrays"
   - "examples [Visual Basic], string conversion"

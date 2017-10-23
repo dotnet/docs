@@ -9,11 +9,11 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.Friend"
 helpviewer_keywords: 
-  - "Friend keyword"
+  - "Friend keyword [Visual Basic]"
   - "Friend access modifier"
-  - "Friend keyword, syntax"
+  - "Friend keyword [Visual Basic], syntax"
   - "Protected Friend keyword combination"
-  - "Friend keyword, and Protected"
+  - "Friend keyword [Visual Basic], and Protected"
 ms.assetid: b664605e-1c79-4728-b996-aa59c50846bc
 caps.latest.revision: 25
 author: dotnet-bot

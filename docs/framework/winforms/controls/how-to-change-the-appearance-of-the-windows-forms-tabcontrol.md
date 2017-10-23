@@ -9,15 +9,15 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "icons, displaying on tabs"
+  - "icons [Windows Forms], displaying on tabs"
   - "TabControl control [Windows Forms], changing page appearance"
-  - "tabs, controlling appearance"
-  - "buttons, displaying tabs as"
+  - "tabs [Windows Forms], controlling appearance"
+  - "buttons [Windows Forms], displaying tabs as"
 ms.assetid: 7c6cc443-ed62-4d26-b94d-b8913b44f773
 caps.latest.revision: 16
 author: dotnet-bot

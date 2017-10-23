@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "Freezable objects, description"
-  - "unfreezing Freezable objects"
-  - "classes, Freezable"
+  - "Freezable objects [WPF], description"
+  - "unfreezing Freezable objects [WPF]"
+  - "classes [WPF], Freezable"
 ms.assetid: 89c71692-4f43-4057-b611-67c6a8a863a2
 caps.latest.revision: 30
 author: dotnet-bot

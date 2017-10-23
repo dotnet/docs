@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "speed of Clock, changing"
-  - "clocks, changing speed of"
+  - "speed of Clock [WPF], changing"
+  - "clocks [WPF], changing speed of"
 ms.assetid: 72f36dd0-f085-445d-8589-19a83fe74f5e
 caps.latest.revision: 4
 author: dotnet-bot

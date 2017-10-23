@@ -9,15 +9,15 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 f1_keywords: 
   - "Graphics.DrawLine"
 helpviewer_keywords: 
   - "examples [Windows Forms], drawing lines on forms"
-  - "drawing, lines"
-  - "lines, drawing"
+  - "drawing [Windows Forms], lines"
+  - "lines [Windows Forms], drawing"
   - "drawing lines"
 ms.assetid: 55c1dbeb-75d0-430c-9814-a24b8971ad8c
 caps.latest.revision: 13

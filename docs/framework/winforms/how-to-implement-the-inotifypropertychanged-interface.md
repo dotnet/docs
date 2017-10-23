@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "INotifyPropertyChanged interface, implementing"
+  - "INotifyPropertyChanged interface [Windows Forms], implementing"
 ms.assetid: eac428af-b43b-46ac-80d9-1a5f88658725
 caps.latest.revision: 8
 author: dotnet-bot

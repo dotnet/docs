@@ -11,11 +11,11 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.DeleteSetting"
 helpviewer_keywords: 
-  - "GetSetting function"
-  - "registry, deleting values"
+  - "GetSetting function [Visual Basic]"
+  - "registry [Visual Basic], deleting values"
   - "GetAllSettings function"
-  - "registry keys, deleting"
-  - "registry, deleting keys"
+  - "registry keys [Visual Basic], deleting"
+  - "registry [Visual Basic], deleting keys"
   - "examples [Visual Basic], registry"
 ms.assetid: ab9aca0e-42b0-4ff7-8ff9-845a4bfdf9f2
 caps.latest.revision: 28

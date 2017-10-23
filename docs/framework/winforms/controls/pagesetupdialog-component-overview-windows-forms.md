@@ -12,7 +12,7 @@ ms.topic: "article"
 f1_keywords: 
   - "PageSetupDialog"
 helpviewer_keywords: 
-  - "Page Setup dialog box, displaying"
+  - "Page Setup dialog box [Windows Forms], displaying"
   - "PageSetupDialog component"
 ms.assetid: 791caacb-a5ca-4fca-bad9-1a5721ad697c
 caps.latest.revision: 10

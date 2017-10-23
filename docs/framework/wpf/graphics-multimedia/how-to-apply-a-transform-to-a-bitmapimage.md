@@ -9,13 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "BitmapImage class"
-  - "bitmap images"
-  - "Transforms"
+  - "bitmap images [WPF]"
+  - "Transforms [WPF]"
 ms.assetid: 5c042f8d-d569-45e4-ab32-868b89759bf2
 caps.latest.revision: 5
 author: dotnet-bot

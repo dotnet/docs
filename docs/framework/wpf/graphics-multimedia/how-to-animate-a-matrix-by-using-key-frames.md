@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "animation, Matrix properties with key frames"
-  - "Matrix properties, animating with key frames"
-  - "key frames, animating Matrix properties with"
+  - "animation [WPF], Matrix properties with key frames"
+  - "Matrix properties [WPF], animating with key frames"
+  - "key frames [WPF], animating Matrix properties with"
 ms.assetid: b851a4c7-ecb1-420e-9203-83e7afd037fd
 caps.latest.revision: 10
 author: dotnet-bot

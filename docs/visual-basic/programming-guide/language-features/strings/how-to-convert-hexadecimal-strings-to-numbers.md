@@ -9,11 +9,11 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "numbers, hexadecimals"
-  - "hexadecimals, decimals"
+  - "numbers [Visual Basic], hexadecimals"
+  - "hexadecimals [Visual Basic], decimals"
   - "examples [Visual Basic], string conversion"
-  - "decimals, hexadecimals"
-  - "string conversion, hexadecimal to numbers"
+  - "decimals [Visual Basic], hexadecimals"
+  - "string conversion [Visual Basic], hexadecimal to numbers"
 ms.assetid: 76675807-eadb-4c08-bd50-e6c6ff4b8ced
 caps.latest.revision: 9
 author: dotnet-bot

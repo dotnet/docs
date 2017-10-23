@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "mapping properties"
-  - "ElementHost control, mapping properties"
+  - "mapping properties [WPF]"
+  - "ElementHost control [WPF], mapping properties"
 ms.assetid: bccd6e0d-2272-4924-9107-ff8ed58b88aa
 caps.latest.revision: 14
 author: dotnet-bot

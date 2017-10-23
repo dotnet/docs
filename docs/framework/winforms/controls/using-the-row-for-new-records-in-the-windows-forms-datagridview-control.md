@@ -11,7 +11,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], adding rows for new records"
-  - "rows, new records"
+  - "rows [Windows Forms], new records"
   - "DataGridView control [Windows Forms], data entry"
 ms.assetid: 6110f1ea-9794-442c-a98a-f104a1feeaf4
 caps.latest.revision: 14

@@ -9,15 +9,15 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "images [Windows Forms], controlling placement in PictureBox control [Windows Forms]"
   - "examples [Windows Forms], PictureBox control"
   - "PictureBox control [Windows Forms], picture size and alignment"
-  - "pictures, controlling placement in PictureBox control [Windows Forms]"
+  - "pictures [Windows Forms], controlling placement in PictureBox control [Windows Forms]"
 ms.assetid: d0b332a3-fae2-4891-957c-dc3e17743326
 caps.latest.revision: 12
 author: dotnet-bot

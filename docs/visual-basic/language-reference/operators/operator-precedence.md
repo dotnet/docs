@@ -8,16 +8,16 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "arithmetic operators, precedence"
+  - "arithmetic operators [Visual Basic], precedence"
   - "operator precedence"
-  - "logical operators, precedence"
+  - "logical operators [Visual Basic], precedence"
   - "operators [Visual Basic], associativity"
   - "operators [Visual Basic], resolution"
-  - "associativity of operators"
+  - "associativity of operators [Visual Basic]"
   - "operators [Visual Basic], precedence"
-  - "precedence, of operators"
-  - "comparison operators, precedence"
-  - "math operators"
+  - "precedence [Visual Basic], of operators"
+  - "comparison operators [Visual Basic], precedence"
+  - "math operators [Visual Basic]"
   - "order of precedence"
 ms.assetid: cbbdb282-f572-458e-a520-008a675f8063
 caps.latest.revision: 18

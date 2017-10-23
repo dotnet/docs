@@ -11,9 +11,9 @@ f1_keywords:
   - "vb.MidB"
   - "vb.Mid"
 helpviewer_keywords: 
-  - "substrings, Mid statement"
+  - "substrings [Visual Basic], Mid statement"
   - "strings [Visual Basic], substrings"
-  - "Mid statement"
+  - "Mid statement [Visual Basic]"
   - "strings [Visual Basic], replacing"
 ms.assetid: 2b82d7a8-9646-4cb0-bec5-80abc98297bf
 caps.latest.revision: 20

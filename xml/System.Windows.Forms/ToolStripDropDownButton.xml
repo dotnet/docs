@@ -239,7 +239,10 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.AccessibleObject> instance returned by this method supports the UIA expand/collapse pattern. However, it is only available in applications that are running on the .NET Framework 4.7.1 or later and are either recompiled to target the .NET Framework 4.7.1 or opt in to this .NET Framework accessibility enhancements by using an AppCompat switch. For more information, see the [migration guide](https://docs.microsoft.com/dotnet/framework/migration-guide/retargeting/4.7-4.7.1#windows-forms).  
+
+The <xref:System.Windows.Forms.AccessibleObject> instance returned by this method supports the UI Automation expand/collapse pattern. 
+However, it's only available in applications that are running on the .NET Framework 4.7.1 or later versions and are either recompiled to target the .NET Framework 4.7.1 or opt in to this .NET Framework accessibility enhancements by using an AppCompat switch. 
+For more information, see the [migration guide](~/docs/framework/migration-guide/retargeting/4.7-4.7.1.md#windows-forms). 
   
  ]]></format>
         </remarks>

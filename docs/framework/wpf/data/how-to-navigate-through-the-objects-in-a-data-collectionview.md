@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "CollectionView, navigating through objects"
-  - "data binding, navigating through objects in data CollectionView"
-  - "navigating through objects in data CollectionView"
+  - "CollectionView [WPF], navigating through objects"
+  - "data binding [WPF], navigating through objects in data CollectionView"
+  - "navigating through objects in data CollectionView [WPF]"
 ms.assetid: fcd37590-bce1-4ac9-8b74-3b96c7458b8a
 caps.latest.revision: 14
 author: dotnet-bot

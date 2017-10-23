@@ -9,15 +9,15 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "lists, enabling searching"
-  - "list views, enabling searching"
+  - "lists [Windows Forms], enabling searching"
+  - "list views [Windows Forms], enabling searching"
   - "ListView control [Windows Forms], adding search capabilities"
-  - "searching, adding search capabilities to ListView control"
+  - "searching [Windows Forms], adding search capabilities to ListView control"
 ms.assetid: 557782d9-b705-4bab-b496-9938afddac82
 caps.latest.revision: 8
 author: dotnet-bot

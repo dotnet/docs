@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "inheritance, property values"
-  - "value inheritance"
-  - "properties, value inheritance"
+  - "inheritance [WPF], property values"
+  - "value inheritance [WPF]"
+  - "properties [WPF], value inheritance"
 ms.assetid: d7c338f9-f2bf-48ed-832c-7be58ac390e4
 caps.latest.revision: 16
 author: dotnet-bot

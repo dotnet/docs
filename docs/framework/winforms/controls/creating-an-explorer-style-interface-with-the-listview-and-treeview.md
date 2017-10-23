@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "Explorer-style applications, walkthroughs"
+  - "Explorer-style applications [Windows Forms], walkthroughs"
   - "TreeView control [Windows Forms], ListView controls used with"
   - "ListView control [Windows Forms], TreeView controls used with"
   - "Explorer-style applications"

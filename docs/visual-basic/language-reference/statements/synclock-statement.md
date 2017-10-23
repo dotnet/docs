@@ -12,7 +12,7 @@ f1_keywords:
   - "SyncLock"
 helpviewer_keywords: 
   - "threading [Visual Basic], locks"
-  - "SyncLock statement"
+  - "SyncLock statement [Visual Basic]"
   - "locks, threads"
 ms.assetid: 14501703-298f-4d43-b139-c4b6366af176
 caps.latest.revision: 17

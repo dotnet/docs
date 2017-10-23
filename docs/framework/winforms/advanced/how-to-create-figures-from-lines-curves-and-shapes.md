@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "figures, creating from shapes"
-  - "figures, creating from lines"
+  - "figures [Windows Forms], creating from shapes"
+  - "figures [Windows Forms], creating from lines"
 ms.assetid: 82fd56c7-b443-4765-9b7c-62ce030656ec
 caps.latest.revision: 14
 author: dotnet-bot

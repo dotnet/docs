@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "keyed collections [Windows Forms]"
-  - "collections, accessing with keys"
+  - "collections [Windows Forms], accessing with keys"
 ms.assetid: b9b79b8b-d9bf-4f8c-b9d6-9578bc3219d3
 caps.latest.revision: 6
 author: dotnet-bot

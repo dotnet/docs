@@ -8,7 +8,7 @@ ms.technology:
 ms.topic: "article"
 helpviewer_keywords: 
   - "printing [Visual Studio], reports"
-  - "reports, printing in Visual Studio"
+  - "reports [Visual Basic], printing in Visual Studio"
 ms.assetid: 93928405-ef41-495e-bce2-9d43d5a7080a
 caps.latest.revision: 27
 author: dotnet-bot

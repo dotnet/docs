@@ -10,9 +10,9 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.Return"
 helpviewer_keywords: 
-  - "Return statement, syntax"
-  - "control flow, returning control to expressions"
-  - "Return statement"
+  - "Return statement [Visual Basic], syntax"
+  - "control flow [Visual Basic], returning control to expressions"
+  - "Return statement [Visual Basic]"
   - "expressions [Visual Basic], returning control to"
 ms.assetid: ac86e7f0-5a67-42c3-9834-0e0381efa3ec
 caps.latest.revision: 15

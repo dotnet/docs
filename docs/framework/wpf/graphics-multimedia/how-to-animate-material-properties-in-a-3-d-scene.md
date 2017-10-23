@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "Material properties, animating in 3-D scenes"
-  - "animation, Material properties in 3-D scenes"
-  - "3-D scenes, animating Material properties"
+  - "Material properties [WPF], animating in 3-D scenes"
+  - "animation [WPF], Material properties in 3-D scenes"
+  - "3-D scenes [WPF], animating Material properties"
 ms.assetid: 229fd6eb-7401-4992-b0c9-8b28de230c0f
 caps.latest.revision: 9
 author: dotnet-bot

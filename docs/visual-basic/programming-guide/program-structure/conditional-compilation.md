@@ -9,8 +9,8 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "conditional compilation, about conditional compilation"
-  - "compilation, conditional"
+  - "conditional compilation [Visual Basic], about conditional compilation"
+  - "compilation [Visual Basic], conditional"
 ms.assetid: 9c35e55e-7eee-44fb-a586-dad1f1884848
 caps.latest.revision: 15
 author: dotnet-bot

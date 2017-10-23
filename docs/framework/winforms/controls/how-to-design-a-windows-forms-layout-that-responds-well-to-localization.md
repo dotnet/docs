@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "TableLayoutPanel control [Windows Forms]"
-  - "application design, localization"
+  - "application design [Windows Forms], localization"
   - "Windows Forms, localization"
-  - "localization, Windows Forms layout"
+  - "localization [Windows Forms], Windows Forms layout"
 ms.assetid: d13eff2d-701c-4b6e-8838-3885cbfb7223
 caps.latest.revision: 11
 author: dotnet-bot

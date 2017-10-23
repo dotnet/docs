@@ -10,7 +10,7 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.is"
 helpviewer_keywords: 
-  - "comparison operators"
+  - "comparison operators [Visual Basic]"
   - "equivalent objects"
   - "TypeOf...Is expression"
   - "Is operator [Visual Basic]"

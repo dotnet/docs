@@ -9,18 +9,18 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 f1_keywords: 
   - "NonVisualSelection"
 helpviewer_keywords: 
-  - "invisible controls"
+  - "invisible controls [Windows Forms]"
   - "Windows Forms controls, adding to form"
   - "controls [Windows Forms], nonvisual"
   - "Windows Forms controls, nonvisual"
-  - "nonvisual controls"
+  - "nonvisual controls [Windows Forms]"
 ms.assetid: 52134d9c-cff6-4eed-8e2b-3d5eb3bd494e
 caps.latest.revision: 12
 author: dotnet-bot

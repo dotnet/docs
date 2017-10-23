@@ -9,17 +9,17 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "encoding BMP images"
-  - "BMP encoding"
-  - "decoding BMP images"
-  - "encoding image formats"
-  - "BMP decoding"
-  - "decoding image formats"
+  - "encoding BMP images [WPF]"
+  - "BMP encoding [WPF]"
+  - "decoding BMP images [WPF]"
+  - "encoding image formats [WPF]"
+  - "BMP decoding [WPF]"
+  - "decoding image formats [WPF]"
 ms.assetid: feb5ef27-28ac-40ab-bfc2-e0456990d32c
 caps.latest.revision: 9
 author: dotnet-bot

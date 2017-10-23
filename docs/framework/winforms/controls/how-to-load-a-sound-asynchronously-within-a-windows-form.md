@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "SoundPlayer class, loading sounds asynchronously"
-  - "sounds, loading on separate threads"
+  - "SoundPlayer class [Windows Forms], loading sounds asynchronously"
+  - "sounds [Windows Forms], loading on separate threads"
   - "threading [Windows Forms], sounds"
 ms.assetid: 3b6a9296-1d5e-4d52-a4ba-94366d6fe302
 caps.latest.revision: 18

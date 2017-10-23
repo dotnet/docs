@@ -12,7 +12,7 @@ helpviewer_keywords:
   - "variables [Visual Basic], comparing values"
   - "Visual Basic code, operators"
   - "Visual Basic code, expressions"
-  - "comparison operators, comparing expressions"
+  - "comparison operators [Visual Basic], comparing expressions"
   - "numeric expressions"
   - "operators [Visual Basic], comparison"
   - "expressions [Visual Basic], comparing"

@@ -12,9 +12,9 @@ f1_keywords:
 helpviewer_keywords: 
   - "operator>>"
   - ">> operator [Visual Basic]"
-  - "bit shift operators"
+  - "bit shift operators [Visual Basic]"
   - "operator >>"
-  - "right shift operators"
+  - "right shift operators [Visual Basic]"
 ms.assetid: 054dc6a6-47d9-47ef-82da-cfa2b59fbf8f
 caps.latest.revision: 14
 author: dotnet-bot

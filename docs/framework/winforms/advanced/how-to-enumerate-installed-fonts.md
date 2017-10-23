@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "fonts, enumerating installed"
+  - "fonts [Windows Forms], enumerating installed"
   - "examples [Windows Forms], fonts"
 ms.assetid: 26d74ef5-0f39-4eeb-8d20-00e66e014abe
 caps.latest.revision: 16

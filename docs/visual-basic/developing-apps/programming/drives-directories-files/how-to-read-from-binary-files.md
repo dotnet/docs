@@ -9,9 +9,9 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "binary files, reading from"
+  - "binary files [Visual Basic], reading from"
   - "I/O [Visual Basic], reading from binary files"
-  - "ReadAllBytes method, reading from binary files"
+  - "ReadAllBytes method [Visual Basic], reading from binary files"
   - "My.Computer.FileSystem object, reading from binary files"
 ms.assetid: d2b1269e-24b6-42e0-9414-ae708db282d8
 caps.latest.revision: 16

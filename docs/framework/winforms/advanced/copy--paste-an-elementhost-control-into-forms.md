@@ -12,8 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Forms, content copying and pasting"
   - "interoperability [WPF]"
-  - "ElementHost control, copying and pasting at design time"
-  - "WPF user control, hosting in Windows Forms"
+  - "ElementHost control [Windows Forms], copying and pasting at design time"
+  - "WPF user control [Windows Forms], hosting in Windows Forms"
 ms.assetid: 6e81bb13-577c-46c3-a1cf-8d15969fb83e
 caps.latest.revision: 19
 author: dotnet-bot

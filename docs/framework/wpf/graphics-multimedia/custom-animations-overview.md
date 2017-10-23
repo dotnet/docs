@@ -10,11 +10,11 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "custom classes, animation"
-  - "key frames, custom"
-  - "custom key frames"
-  - "animation, custom classes"
-  - "custom animation classes"
+  - "custom classes [WPF], animation"
+  - "key frames [WPF], custom"
+  - "custom key frames [WPF]"
+  - "animation [WPF], custom classes"
+  - "custom animation classes [WPF]"
 ms.assetid: 9be69d50-3384-4938-886f-08ce00e4a7a6
 caps.latest.revision: 14
 author: dotnet-bot

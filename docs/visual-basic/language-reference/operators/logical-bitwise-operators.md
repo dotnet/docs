@@ -9,7 +9,7 @@ ms.technology:
 ms.topic: "article"
 helpviewer_keywords: 
   - "operators [Visual Basic], logical"
-  - "logical operators, Visual Basic"
+  - "logical operators [Visual Basic], Visual Basic"
 ms.assetid: 55de4889-7679-4859-8063-bee15abca53f
 caps.latest.revision: 13
 author: dotnet-bot

@@ -9,17 +9,17 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "fonts, showing list"
+  - "fonts [Windows Forms], showing list"
   - "FontDialog component [Windows Forms]"
-  - "fonts, attributes"
-  - "Font property, setting with FontDialog component"
-  - "Font dialog box, displaying"
-  - "fonts, selecting"
+  - "fonts [Windows Forms], attributes"
+  - "Font property [Windows Forms], setting with FontDialog component"
+  - "Font dialog box [Windows Forms], displaying"
+  - "fonts [Windows Forms], selecting"
 ms.assetid: 35692c1b-0937-4b7a-9207-1ae6bdc244a0
 caps.latest.revision: 15
 author: dotnet-bot

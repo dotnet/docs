@@ -11,17 +11,17 @@ f1_keywords:
   - "vb.operator"
 helpviewer_keywords: 
   - "operators [Visual Basic]"
-  - "procedures, operator"
-  - "Narrowing keyword, conversion operators"
+  - "procedures [Visual Basic], operator"
+  - "Narrowing keyword [Visual Basic], conversion operators"
   - "Visual Basic code, operators"
-  - "Widening keyword, conversion operators"
-  - "syntax, Operator procedures"
+  - "Widening keyword [Visual Basic], conversion operators"
+  - "syntax [Visual Basic], Operator procedures"
   - "operators [Visual Basic], overloading"
-  - "overloaded operators"
+  - "overloaded operators [Visual Basic]"
   - "operator overloading"
   - "operator procedures"
-  - "Operator statement"
-  - "CType function, Operator statement"
+  - "Operator statement [Visual Basic]"
+  - "CType function [Visual Basic], Operator statement"
 ms.assetid: b12ec4af-1ad7-4a17-865b-c5ee96320ae5
 caps.latest.revision: 28
 author: dotnet-bot

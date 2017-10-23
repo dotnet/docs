@@ -10,7 +10,7 @@ ms.technology:
 ms.topic: "article"
 helpviewer_keywords: 
   - "I/O [Visual Basic], renaming files"
-  - "files, renaming"
+  - "files [Visual Basic], renaming"
 ms.assetid: 0ea7e0c8-2cb2-4bf5-a00d-7b6e3c08a3bc
 caps.latest.revision: 21
 author: dotnet-bot

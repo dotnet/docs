@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "notifications of change"
-  - "data binding, property change notifications"
-  - "change notifications"
-  - "properties, change notifications"
+  - "notifications of change [WPF]"
+  - "data binding [WPF], property change notifications"
+  - "change notifications [WPF]"
+  - "properties [WPF], change notifications"
 ms.assetid: 30b59d9e-8c3a-4349-aa82-4be837e841cf
 caps.latest.revision: 12
 author: dotnet-bot

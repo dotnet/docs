@@ -10,11 +10,11 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "controls, drawing text to backgrounds"
-  - "text, drawing to control backgrounds"
-  - "drawing, text to control backgrounds"
-  - "backgrounds, drawing text to"
-  - "typography, drawing text to control backgrounds"
+  - "controls [WPF], drawing text to backgrounds"
+  - "text [WPF], drawing to control backgrounds"
+  - "drawing [WPF], text to control backgrounds"
+  - "backgrounds [WPF], drawing text to"
+  - "typography [WPF], drawing text to control backgrounds"
 ms.assetid: 686d8fba-f61c-4974-a871-c635d67a7f69
 caps.latest.revision: 10
 author: dotnet-bot

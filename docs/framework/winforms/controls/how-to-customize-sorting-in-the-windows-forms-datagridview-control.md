@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "sorting, DataGridView control"
+  - "sorting [Windows Forms], DataGridView control"
   - "DataGridView control [Windows Forms], sorting"
-  - "data grids, customizing sorting"
+  - "data grids [Windows Forms], customizing sorting"
 ms.assetid: 92fb5c14-afab-4cf5-a97e-924fd9cb99f5
 caps.latest.revision: 12
 author: dotnet-bot

@@ -10,8 +10,8 @@ f1_keywords:
   - "vb.Optional"
   - "vb.optional"
 helpviewer_keywords: 
-  - "Optional keyword, contexts"
-  - "Optional keyword"
+  - "Optional keyword [Visual Basic], contexts"
+  - "Optional keyword [Visual Basic]"
 ms.assetid: 4571ce88-a539-4115-b230-54eb277c6aa7
 caps.latest.revision: 14
 author: dotnet-bot

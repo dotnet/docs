@@ -12,9 +12,9 @@ ms.topic: "article"
 f1_keywords: 
   - "NumericUpDown"
 helpviewer_keywords: 
-  - "numeric spin button control, Windows Forms"
+  - "numeric spin button control [Windows Forms], Windows Forms"
   - "NumericUpDown control [Windows Forms], about NumericUpDown control"
-  - "spin button control, Windows Forms"
+  - "spin button control [Windows Forms], Windows Forms"
 ms.assetid: cff3cf30-4d46-4381-87df-37bfe83c71c5
 caps.latest.revision: 10
 author: dotnet-bot

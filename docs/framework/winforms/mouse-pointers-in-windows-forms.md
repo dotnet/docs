@@ -10,12 +10,12 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "pointers, setting [Windows Forms]"
+  - "pointers [Windows Forms], setting"
   - "mouse pointers"
   - "mouse cursors"
-  - "mouse pointers, setting [Windows Forms]"
-  - "cursors, setting [Windows Forms]"
-  - "mouse, cursors"
+  - "mouse pointers [Windows Forms], setting"
+  - "cursors [Windows Forms], setting"
+  - "mouse [Windows Forms], cursors"
 ms.assetid: c3400d85-de5b-42e8-abc3-d6088d69ee53
 caps.latest.revision: 12
 author: dotnet-bot

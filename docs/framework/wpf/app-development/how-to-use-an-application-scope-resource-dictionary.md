@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "dictionaries, resource"
-  - "resource dictionaries, application-scope"
+  - "dictionaries [WPF], resource"
+  - "resource dictionaries [WPF], application-scope"
   - "application-scope resource dictionaries"
 ms.assetid: 53857682-bd2c-4f2c-8f25-1307d0b451a2
 caps.latest.revision: 11

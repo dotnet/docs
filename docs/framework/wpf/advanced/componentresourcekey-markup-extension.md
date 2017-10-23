@@ -13,8 +13,8 @@ f1_keywords:
   - "ComponentResourceKey"
   - "ComponentResourceKeyExtension"
 helpviewer_keywords: 
-  - "ComponentResourceKey markup extension"
-  - "XAML, ComponentResourceKey markup extension"
+  - "ComponentResourceKey markup extension [WPF]"
+  - "XAML [WPF], ComponentResourceKey markup extension"
 ms.assetid: d6bcdbe6-61b3-40a7-b381-4e02185b5a85
 caps.latest.revision: 14
 author: dotnet-bot

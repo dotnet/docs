@@ -9,18 +9,18 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 f1_keywords: 
   - "EHInvalidOperation.WinForms.IllegalCrossThreadCall"
 helpviewer_keywords: 
-  - "thread safety, calling controls [Windows Forms]"
-  - "calling controls, thread safety [Windows Forms]"
+  - "thread safety [Windows Forms], calling controls [Windows Forms]"
+  - "calling controls [Windows Forms], thread safety [Windows Forms]"
   - "CheckForIllegalCrossThreadCalls property [Windows Forms]"
-  - "Windows Forms controls, multithreading"
-  - "BackgroundWorker class, examples"
+  - "Windows Forms controls [Windows Forms], multithreading"
+  - "BackgroundWorker class [Windows Forms], examples"
   - "threading [Windows Forms], cross-thread calls"
   - "controls [Windows Forms], multithreading"
 ms.assetid: 138f38b6-1099-4fd5-910c-390b41cbad35

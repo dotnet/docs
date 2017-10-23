@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "controls, ListView"
+  - "controls [WPF], ListView"
   - "ListView controls [WPF], about ListView control"
 ms.assetid: 989e12b0-260e-4570-95c6-489284003ce2
 caps.latest.revision: 25

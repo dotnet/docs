@@ -10,8 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "printing"
-  - "print system management"
+  - "printing [WPF]"
+  - "print system management [WPF]"
 ms.assetid: 5f3d391a-4afd-49ee-ad99-ceb737c0c8a8
 caps.latest.revision: 10
 author: dotnet-bot

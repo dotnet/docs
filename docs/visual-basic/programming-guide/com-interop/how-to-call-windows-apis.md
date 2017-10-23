@@ -9,10 +9,10 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "API calls"
+  - "API calls [Visual Basic]"
   - "Windows API, calling"
-  - "API calls, platform invoke"
-  - "calls, stored procedures"
+  - "API calls [Visual Basic], platform invoke"
+  - "calls [Visual Basic], stored procedures"
 ms.assetid: 27d75f0a-54ab-4ee1-b91d-43513a19b12d
 caps.latest.revision: 14
 author: dotnet-bot

@@ -9,7 +9,7 @@ f1_keywords:
   - "Off"
   - "vb.Off"
 helpviewer_keywords: 
-  - "Off keyword"
+  - "Off keyword [Visual Basic]"
 ms.assetid: e0b5aa68-bde1-4cdd-b9e4-152798ae1b8b
 caps.latest.revision: 11
 author: dotnet-bot

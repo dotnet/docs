@@ -9,17 +9,17 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 f1_keywords: 
   - "TrayIcon"
 helpviewer_keywords: 
   - "status area icons"
-  - "icons, adding to taskbar"
+  - "icons [Windows Forms], adding to taskbar"
   - "NotifyIcon component"
-  - "taskbar, adding icons"
+  - "taskbar [Windows Forms], adding icons"
 ms.assetid: d28c0fe6-aaf2-4df7-ad74-928d861a8510
 caps.latest.revision: 11
 author: dotnet-bot

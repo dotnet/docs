@@ -12,7 +12,7 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "Firefox add-ons for .NET application deployment"
   - "WPF plug-in for Firefox"
-  - ".NET application deployment, deploying with Firefox add-ons"
+  - ".NET application deployment [WPF], deploying with Firefox add-ons"
   - ".NET Framework Assistant for Firefox"
 ms.assetid: 2403403b-9b14-48e9-b70d-fa288a3c9081
 caps.latest.revision: 22

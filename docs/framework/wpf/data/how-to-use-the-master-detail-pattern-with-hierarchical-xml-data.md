@@ -10,7 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "data binding, Master-Detail data paradigm"
+  - "data binding [WPF], Master-Detail data paradigm"
   - "Master-Detail data paradigm"
 ms.assetid: eb8dbdd8-5871-42bb-a16b-04e655fea677
 caps.latest.revision: 14

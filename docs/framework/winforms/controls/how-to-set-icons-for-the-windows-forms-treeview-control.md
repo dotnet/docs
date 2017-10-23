@@ -9,16 +9,16 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "examples [Windows Forms], TreeView control"
   - "TreeView control [Windows Forms], node icons"
   - "ImageList component [Windows Forms], adding images"
-  - "icons, setting for TreeView control"
-  - "tree nodes in TreeView control, icons"
+  - "icons [Windows Forms], setting for TreeView control"
+  - "tree nodes in TreeView control [Windows Forms], icons"
 ms.assetid: c14ddcc0-e5a6-4c21-a2d5-6799fd491781
 caps.latest.revision: 18
 author: dotnet-bot

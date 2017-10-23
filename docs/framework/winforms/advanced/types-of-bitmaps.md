@@ -23,7 +23,7 @@ helpviewer_keywords:
   - ".bmp files"
   - "EXIF file format"
   - "PNG files"
-  - "pictures, file formats"
+  - "pictures [Windows Forms], file formats"
   - "Tag Image File Format"
   - "bitmaps [Windows Forms], file format"
   - "Exchangeable Image File"

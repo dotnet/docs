@@ -9,20 +9,20 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], formatting data"
   - "DataGridView control [Windows Forms], cell styles"
-  - "cells, changing colors in DataGridView control [Windows Forms]"
-  - "colors, changing in DataGridView control [Windows Forms]"
+  - "cells [Windows Forms], changing colors in DataGridView control [Windows Forms]"
+  - "colors [Windows Forms], changing in DataGridView control [Windows Forms]"
   - "data [Windows Forms], formatting in DataGridView control"
   - "DataGridView control [Windows Forms], cell customization"
   - "DataGridView control [Windows Forms], changing cell colors"
   - "Windows Forms, changing colors of DataGridView cells"
   - "DataGridView control [Windows Forms], substituting cell values for display"
-  - "data grids, formatting data"
+  - "data grids [Windows Forms], formatting data"
 ms.assetid: a6e72c70-ce18-425f-828d-d57be6f96ab6
 caps.latest.revision: 21
 author: dotnet-bot

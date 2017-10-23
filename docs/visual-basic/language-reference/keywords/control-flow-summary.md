@@ -7,7 +7,7 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "decision structures"
+  - "decision structures [Visual Basic]"
 ms.assetid: 6885d426-fa87-4e1c-881f-f0e9ec8d98af
 caps.latest.revision: 13
 author: dotnet-bot

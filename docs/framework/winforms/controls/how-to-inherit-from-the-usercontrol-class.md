@@ -10,10 +10,10 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "inheritance, Windows Forms custom controls"
-  - "UserControl class, inheriting from"
+  - "inheritance [Windows Forms], Windows Forms custom controls"
+  - "UserControl class [Windows Forms], inheriting from"
   - "user controls [Windows Forms], creating"
-  - "composite controls, creating"
+  - "composite controls [Windows Forms], creating"
 ms.assetid: 67713625-e2e4-4f6a-bce7-0855ee5043d9
 caps.latest.revision: 15
 author: dotnet-bot

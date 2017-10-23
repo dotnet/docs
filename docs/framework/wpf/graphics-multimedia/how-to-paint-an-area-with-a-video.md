@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "painting with a video"
-  - "video, painting with"
-  - "brushes, painting with a video"
+  - "painting with a video [WPF]"
+  - "video [WPF], painting with"
+  - "brushes [WPF], painting with a video"
 ms.assetid: 04dd6600-4a6e-4b43-a93e-21cce7dfbcb8
 caps.latest.revision: 5
 author: dotnet-bot

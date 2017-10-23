@@ -9,12 +9,12 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "declarations, events"
+  - "declarations [Visual Basic], events"
   - "events [Visual Basic], walkthroughs"
-  - "declaring events, walkthroughs"
+  - "declaring events [Visual Basic], walkthroughs"
   - "events [Visual Basic], declaring"
   - "events [Visual Basic], raising"
-  - "raising events, walkthroughs"
+  - "raising events [Visual Basic], walkthroughs"
 ms.assetid: 8ffb3be8-097d-4d3c-b71e-04555ebda2a2
 caps.latest.revision: 16
 author: dotnet-bot

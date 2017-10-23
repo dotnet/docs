@@ -10,11 +10,11 @@ ms.technology:
 ms.topic: "article"
 helpviewer_keywords: 
   - "statements [Visual Basic], control flow"
-  - "If statement, decision structures"
-  - "If statement, If...Then...Else"
-  - "control flow, decision structures"
-  - "decision structures"
-  - "conditional statements, decision structures"
+  - "If statement [Visual Basic], decision structures"
+  - "If statement [Visual Basic], If...Then...Else"
+  - "control flow [Visual Basic], decision structures"
+  - "decision structures [Visual Basic]"
+  - "conditional statements [Visual Basic], decision structures"
 ms.assetid: 2e2e0895-4483-442a-b17c-26aead751ec2
 caps.latest.revision: 29
 author: dotnet-bot

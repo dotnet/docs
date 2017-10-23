@@ -13,9 +13,9 @@ f1_keywords:
   - "TabControl"
 helpviewer_keywords: 
   - "TabControl control [Windows Forms], about TabControl control"
-  - "tab pages, about tab pages"
-  - "property pages, Windows Forms"
-  - "Windows Forms dialog boxes, tabs"
+  - "tab pages [Windows Forms], about tab pages"
+  - "property pages [Windows Forms], Windows Forms"
+  - "Windows Forms dialog boxes [Windows Forms], tabs"
 ms.assetid: 2b4ea784-a39d-463c-81d8-af74ce068476
 caps.latest.revision: 11
 author: dotnet-bot

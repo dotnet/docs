@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "focus events, changing element color for"
-  - "colors of elements, changing"
-  - "elements, changing color of"
+  - "focus events [WPF], changing element color for"
+  - "colors of elements [WPF], changing"
+  - "elements [WPF], changing color of"
 ms.assetid: 7e246802-3625-47a7-ae9d-c8a2a40fd040
 caps.latest.revision: 10
 author: dotnet-bot

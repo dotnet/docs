@@ -11,8 +11,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "Visual Basic, strings"
   - "data types [Visual Basic], converting"
-  - "conversions, Visual Basic"
-  - "string conversion, Visual Basic"
+  - "conversions [Visual Basic], Visual Basic"
+  - "string conversion [Visual Basic], Visual Basic"
 ms.assetid: 06085ed5-191d-4930-8fbc-da63930da400
 caps.latest.revision: 9
 author: dotnet-bot

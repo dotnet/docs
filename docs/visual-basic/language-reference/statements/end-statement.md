@@ -11,14 +11,14 @@ f1_keywords:
   - "vb.End"
   - "End"
 helpviewer_keywords: 
-  - "execution, ending"
-  - "files, closing"
-  - "End keyword, End statements"
-  - "programs, quitting"
+  - "execution [Visual Basic], ending"
+  - "files [Visual Basic], closing"
+  - "End keyword [Visual Basic], End statements"
+  - "programs [Visual Basic], quitting"
   - "code, exiting"
   - "program termination"
-  - "End statement"
-  - "execution, stopping"
+  - "End statement [Visual Basic]"
+  - "execution [Visual Basic], stopping"
 ms.assetid: 0e64467c-0f34-4aab-9ddd-43f8b9d55d90
 caps.latest.revision: 19
 author: dotnet-bot

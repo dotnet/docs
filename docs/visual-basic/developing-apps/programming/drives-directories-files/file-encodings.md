@@ -10,7 +10,7 @@ ms.technology:
 ms.topic: "article"
 helpviewer_keywords: 
   - "character encodings"
-  - "files, encoding"
+  - "files [Visual Basic], encoding"
   - "Unicode, file encoding"
   - "file encoding"
 ms.assetid: ea2c5f5f-bbb1-4150-9928-b9951fa6bc57

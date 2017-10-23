@@ -11,8 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "GDI+, managed classes"
-  - "graphics, using in Windows Forms"
-  - "graphics, managed classes"
+  - "graphics [Windows Forms], using in Windows Forms"
+  - "graphics [Windows Forms], managed classes"
 ms.assetid: e6d1a42d-2100-46aa-97e6-a5ddc0baaae5
 caps.latest.revision: 21
 author: dotnet-bot

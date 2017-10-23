@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "animation, properties, with AnimationClocks"
-  - "AnimationClocks"
+  - "animation [WPF], properties [WPF], with AnimationClocks"
+  - "AnimationClocks [WPF]"
 ms.assetid: e6542021-714c-4675-9567-04f1c7380834
 caps.latest.revision: 13
 author: dotnet-bot

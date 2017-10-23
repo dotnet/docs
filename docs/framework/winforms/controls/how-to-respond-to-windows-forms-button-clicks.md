@@ -9,19 +9,19 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "buttons, responding to Click events"
+  - "buttons [Windows Forms], responding to Click events"
   - "events [Windows Forms], Click events"
-  - "Click event, Button control"
+  - "Click event [Windows Forms], Button control"
   - "MouseDown event"
   - "Button control [Windows Forms], click response"
   - "double-clicks"
   - "examples [Windows Forms], controls"
-  - "Click event, responding to"
+  - "Click event [Windows Forms], responding to"
 ms.assetid: 7a4951bd-369c-4662-b246-28ad83eda484
 caps.latest.revision: 14
 author: dotnet-bot

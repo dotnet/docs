@@ -9,19 +9,19 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 f1_keywords: 
   - "BackgroundWorker"
 helpviewer_keywords: 
   - "BackgroundWorker component"
   - "background tasks"
   - "Asynchronous Pattern"
-  - "forms, multithreading"
+  - "forms [Windows Forms], multithreading"
   - "components [Windows Forms], asynchronous"
-  - "forms, background operations"
+  - "forms [Windows Forms], background operations"
   - "threading [Windows Forms], background operations"
   - "background operations"
 ms.assetid: 64e9b3ab-7443-4a77-ab17-b8b8c0cb3f62

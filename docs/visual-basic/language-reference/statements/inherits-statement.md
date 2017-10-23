@@ -11,8 +11,8 @@ f1_keywords:
   - "vb.Inherits"
   - "Inherits"
 helpviewer_keywords: 
-  - "Inherits statement"
-  - "Inherits statement, syntax"
+  - "Inherits statement [Visual Basic]"
+  - "Inherits statement [Visual Basic], syntax"
 ms.assetid: 9e6fe042-9af3-4341-8093-fc3537770cf2
 caps.latest.revision: 16
 author: dotnet-bot

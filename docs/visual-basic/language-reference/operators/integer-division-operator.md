@@ -11,17 +11,17 @@ f1_keywords:
   - "vb.\\"
   - "\\"
 helpviewer_keywords: 
-  - "division operator, integer"
-  - "integer division operator"
+  - "division operator [Visual Basic], integer"
+  - "integer division operator [Visual Basic]"
   - "zero, division by zero"
-  - "arithmetic operators, division"
-  - "division, by zero"
+  - "arithmetic operators [Visual Basic], division"
+  - "division [Visual Basic], by zero"
   - "backslash (\\) [Visual Basic]"
   - "\\ operator [Visual Basic]"
   - "integer quotient"
-  - "math operators"
+  - "math operators [Visual Basic]"
   - "quotients, integer"
-  - "truncation, integer division"
+  - "truncation [Visual Basic], integer division"
 ms.assetid: 4b0ee347-950c-45c9-8e23-54bc85df208e
 caps.latest.revision: 17
 author: dotnet-bot

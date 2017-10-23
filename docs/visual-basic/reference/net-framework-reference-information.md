@@ -6,9 +6,9 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "language reference, .NET Framework"
-  - ".NET Framework, reference"
-  - ".NET Framework class library, reference information"
+  - "language reference [Visual Basic], .NET Framework"
+  - ".NET Framework [Visual Basic], reference"
+  - ".NET Framework class library [Visual Basic], reference information"
 ms.assetid: 8b202505-608b-4223-bbd9-2ace3d73e6cd
 caps.latest.revision: 15
 author: dotnet-bot

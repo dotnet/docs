@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "localization, applications"
-  - "LocBaml tool"
-  - "applications, localizing"
+  - "localization [WPF], applications"
+  - "LocBaml tool [WPF]"
+  - "applications [WPF], localizing"
 ms.assetid: 5001227e-9326-48a4-9dcd-ba1b89ee6653
 caps.latest.revision: 37
 author: dotnet-bot

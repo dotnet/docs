@@ -11,7 +11,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Forms, printing"
-  - "PrintingPermission class, Windows Forms security"
+  - "PrintingPermission class [Windows Forms], Windows Forms security"
   - "printing [Windows Forms], security"
   - "security [Windows Forms], printing"
 ms.assetid: 48fd36ac-872f-4de0-902a-e52969cd4367

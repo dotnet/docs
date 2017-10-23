@@ -12,7 +12,7 @@ ms.topic: "article"
 f1_keywords: 
   - "ListBox"
 helpviewer_keywords: 
-  - "list boxes, about list boxes"
+  - "list boxes [Windows Forms], about list boxes"
   - "ListBox control [Windows Forms], about ListBox control"
 ms.assetid: 37ea226b-6fc8-4c70-936a-c6af4e0cad4c
 caps.latest.revision: 12

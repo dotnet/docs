@@ -9,11 +9,11 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.Char"
 helpviewer_keywords: 
-  - "literal type characters, C"
+  - "literal type characters [Visual Basic], C"
   - "Char data type"
-  - "C literal type character"
+  - "C literal type character [Visual Basic]"
   - "data types [Visual Basic], assigning"
-  - "Char data type, character literals"
+  - "Char data type [Visual Basic], character literals"
 ms.assetid: cd7547a9-7855-4e8e-b216-35d74a362657
 caps.latest.revision: 17
 author: dotnet-bot

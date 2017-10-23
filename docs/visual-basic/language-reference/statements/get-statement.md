@@ -10,12 +10,12 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.Get"
 helpviewer_keywords: 
-  - "Get statement, syntax"
-  - "Get statement"
+  - "Get statement [Visual Basic], syntax"
+  - "Get statement [Visual Basic]"
   - "properties [Visual Basic], read-only"
   - "read-only properties"
-  - "Get keyword"
-  - "property procedures, Get statements"
+  - "Get keyword [Visual Basic]"
+  - "property procedures [Visual Basic], Get statements"
 ms.assetid: 56b05cdc-bd64-4dfd-bb12-824eacec6f94
 caps.latest.revision: 19
 author: dotnet-bot

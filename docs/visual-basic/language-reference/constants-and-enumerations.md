@@ -7,8 +7,8 @@ ms.technology:
 ms.topic: "article"
 helpviewer_keywords: 
   - "enumerations [Visual Basic]"
-  - "constants"
-  - "constants, list of"
+  - "constants [Visual Basic]"
+  - "constants [Visual Basic], list of"
 ms.assetid: 309c0ad5-83e4-4f96-99ea-83cd95107417
 caps.latest.revision: 18
 author: dotnet-bot

@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "splines, cardinal"
+  - "splines [Windows Forms], cardinal"
   - "GDI+, cardinal splines"
   - "cardinal splines"
 ms.assetid: 09b3797a-6294-422d-9adf-a5a0a7695c0c

@@ -10,7 +10,7 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.istrue"
 helpviewer_keywords: 
-  - "IsTrue operator"
+  - "IsTrue operator [Visual Basic]"
   - "OrElse operator [Visual Basic]"
 ms.assetid: b6cec0f2-61b1-4331-a7f0-4d07ee3179d6
 caps.latest.revision: 17

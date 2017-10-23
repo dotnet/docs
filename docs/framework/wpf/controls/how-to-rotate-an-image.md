@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "images, rotating"
-  - "rotating images"
+  - "images [WPF], rotating"
+  - "rotating images [WPF]"
 ms.assetid: 863fe998-9a6b-490d-bd86-6ef5c9ec6d75
 caps.latest.revision: 9
 author: dotnet-bot

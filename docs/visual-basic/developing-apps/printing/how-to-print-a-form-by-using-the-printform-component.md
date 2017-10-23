@@ -7,7 +7,7 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "Form, printing"
+  - "Form [Visual Basic], printing"
 ms.assetid: df963bf6-3ee1-49f4-8b2e-1d95d1beb0be
 caps.latest.revision: 19
 author: dotnet-bot

@@ -9,13 +9,13 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "conversions, type"
+  - "conversions [Visual Basic], type"
   - "data types [Visual Basic], changing"
   - "variables [Visual Basic], changing data type"
-  - "type conversion"
-  - "conversions, data type"
-  - "changing data types"
-  - "data type conversion"
+  - "type conversion [Visual Basic]"
+  - "conversions [Visual Basic], data type"
+  - "changing data types [Visual Basic]"
+  - "data type conversion [Visual Basic]"
 ms.assetid: 1cdacd21-ba31-4b62-b5be-395e41eeaa17
 caps.latest.revision: 13
 author: dotnet-bot

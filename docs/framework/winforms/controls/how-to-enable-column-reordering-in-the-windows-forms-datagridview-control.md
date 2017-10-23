@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], column order"
-  - "data grids, reordering columns"
+  - "data grids [Windows Forms], reordering columns"
   - "columns [Windows Forms], reordering"
 ms.assetid: cc20eae3-e4db-493f-95ce-a4215e29472a
 caps.latest.revision: 15

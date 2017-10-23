@@ -12,14 +12,13 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "master-details lists"
   - "data [Windows Forms], data binding"
-  - "reports, Windows Forms"
-  - "lookup tables, data binding"
+  - "reports [Windows Forms], Windows Forms"
+  - "lookup tables [Windows Forms], data binding"
   - "data [Windows Forms], complex data binding"
-  - "data binding, Windows Forms"
-  - "bound controls, Windows Forms"
+  - "data binding [Windows Forms], Windows Forms"
   - "data [Windows Forms], simple data binding"
   - "Windows Forms controls, data binding"
-  - "data-bound controls, Windows Forms"
+  - "data-bound controls [Windows Forms], Windows Forms"
 ms.assetid: 419aac5e-819b-4aad-88b0-73a2f8c0bd27
 caps.latest.revision: 20
 author: dotnet-bot

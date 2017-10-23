@@ -10,8 +10,8 @@ ms.technology:
 ms.topic: "article"
 helpviewer_keywords: 
   - "My.Computer.FileSystem.CopyFile method, copying files [Visual Basic]"
-  - "files, copying"
-  - "CopyFile method, copying files in Visual Basic"
+  - "files [Visual Basic], copying"
+  - "CopyFile method [Visual Basic], copying files in Visual Basic"
   - "I/O [Visual Basic], copying files"
 ms.assetid: f205d2ad-bbe5-4d55-8a40-acda21aa82dd
 caps.latest.revision: 15

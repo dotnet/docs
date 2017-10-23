@@ -10,7 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "TextBox control, multiple lines of text"
+  - "TextBox control [WPF], multiple lines of text"
 ms.assetid: 05914a93-d0ea-4a9a-b693-09df7d4e2ac2
 caps.latest.revision: 13
 author: dotnet-bot

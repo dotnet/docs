@@ -9,14 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "classes, RectangleGeometry"
   - "graphics [WPF], rectangles"
-  - "rectangles, creating with RectangleGeometry class"
-  - "RectangleGeometry class"
+  - "rectangles [WPF], creating with RectangleGeometry class"
 ms.assetid: e40b8a8e-54b8-416b-a9f2-be6dca9fdf0b
 caps.latest.revision: 8
 author: dotnet-bot

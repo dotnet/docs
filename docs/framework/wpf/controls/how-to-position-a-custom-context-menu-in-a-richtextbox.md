@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "custom context menus, positioning"
-  - "positioning custom context menus"
-  - "RichTextBox control, positioning custom context menus"
-  - "context menus, positioning"
+  - "custom context menus [WPF], positioning"
+  - "positioning custom context menus [WPF]"
+  - "RichTextBox control [WPF], positioning custom context menus"
+  - "context menus [WPF], positioning"
 ms.assetid: bf77c930-a546-4573-9a56-9af345ba189a
 caps.latest.revision: 7
 author: dotnet-bot

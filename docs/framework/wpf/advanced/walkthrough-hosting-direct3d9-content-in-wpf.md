@@ -11,7 +11,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "Direct3D9 [WPF interoperability], hosting Direct3D9 content"
-  - "WPF, hosting Direct3D9 content"
+  - "WPF [WPF], hosting Direct3D9 content"
 ms.assetid: 60983736-0ab5-42cc-8b16-e9fbde261a43
 caps.latest.revision: 16
 author: dotnet-bot

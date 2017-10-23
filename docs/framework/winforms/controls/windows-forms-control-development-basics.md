@@ -11,7 +11,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "custom controls [Windows Forms], derivation types"
-  - "programming concepts, Windows Forms controls"
+  - "programming concepts [Windows Forms], Windows Forms controls"
   - "controls [Windows Forms], creating"
 ms.assetid: 6277bb81-90f7-4c5b-9f4b-b02bb42dd316
 caps.latest.revision: 10

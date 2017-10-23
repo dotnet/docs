@@ -12,7 +12,7 @@ ms.topic: "article"
 f1_keywords: 
   - "FontDialog"
 helpviewer_keywords: 
-  - "Font dialog box, Windows Forms"
+  - "Font dialog box [Windows Forms], Windows Forms"
   - "Font dialog box"
   - "FontDialog component [Windows Forms], about FontDialog component"
 ms.assetid: daf46e57-1b4b-4b7a-bad0-b50ca7ba75dc

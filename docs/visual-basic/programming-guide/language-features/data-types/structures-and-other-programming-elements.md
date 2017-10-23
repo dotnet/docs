@@ -9,11 +9,11 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "structures, arrays"
-  - "procedures, structures as arguments to"
+  - "structures [Visual Basic], arrays"
+  - "procedures [Visual Basic], structures as arguments to"
   - "objects [Visual Basic], structure elements"
   - "arrays [Visual Basic], structure elements"
-  - "nested structures"
+  - "nested structures [Visual Basic]"
 ms.assetid: 0f849313-ccd2-4c9a-acb9-69de6751c088
 caps.latest.revision: 13
 author: dotnet-bot

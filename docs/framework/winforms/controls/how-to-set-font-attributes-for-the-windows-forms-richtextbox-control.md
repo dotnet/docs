@@ -9,17 +9,17 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - ".rtf files, formatting in RichTextBox control"
-  - "fonts, changing attributes in RichTextBox control"
-  - "RTF files, formatting in RichTextBox control"
+  - ".rtf files [Windows Forms], formatting in RichTextBox control"
+  - "fonts [Windows Forms], changing attributes in RichTextBox control"
+  - "RTF files [Windows Forms], formatting in RichTextBox control"
   - "RichTextBox control [Windows Forms], setting font attributes"
   - "text [Windows Forms]"
-  - "text boxes, formatting text"
+  - "text boxes [Windows Forms], formatting text"
   - "formatting [Windows Forms]"
 ms.assetid: 2bc23ddb-0529-4489-a1a2-ad253cb43f9a
 caps.latest.revision: 13

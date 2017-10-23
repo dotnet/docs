@@ -9,16 +9,15 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "RenderTransform property"
-  - "graphics, transformations as event responses"
-  - "properties, LayoutTransform"
-  - "transformations as event responses"
-  - "properties, RenderTransform"
-  - "LayoutTransform property"
+  - "graphics [WPF], transformations as event responses"
+  - "properties [WPF], LayoutTransform"
+  - "transformations as event responses [WPF]"
+  - "properties [WPF], RenderTransform"
+  - "LayoutTransform property [WPF]"
 ms.assetid: 71e4327e-ca57-444c-a3cf-09fb381491a0
 caps.latest.revision: 11
 author: dotnet-bot

@@ -9,17 +9,17 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "Windows functions, calling"
-  - "unsigned data types"
-  - "UShort data type, using"
+  - "Windows functions [Visual Basic], calling"
+  - "unsigned data types [Visual Basic]"
+  - "UShort data type [Visual Basic], using"
   - "functions [Visual Basic], calling Windows functions"
-  - "ULong data type, using"
-  - "UInteger data type, using"
+  - "ULong data type [Visual Basic], using"
+  - "UInteger data type [Visual Basic], using"
   - "data types [Visual Basic], using"
-  - "unsigned types"
+  - "unsigned types [Visual Basic]"
   - "data types [Visual Basic], unsigned"
   - "data types [Visual Basic], numeric"
-  - "unsigned types, using"
+  - "unsigned types [Visual Basic], using"
 ms.assetid: c2c0e712-8dc2-43b9-b4c6-345fbb02e7ce
 caps.latest.revision: 18
 author: dotnet-bot

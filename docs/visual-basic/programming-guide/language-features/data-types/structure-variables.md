@@ -9,10 +9,10 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "structures, variables"
-  - "structures, structure variables"
+  - "structures [Visual Basic], variables"
+  - "structures [Visual Basic], structure variables"
   - "variables [Visual Basic], structure variables"
-  - "structure variables"
+  - "structure variables [Visual Basic]"
 ms.assetid: 156872f8-aabc-4454-8e2d-f2253c3c13c9
 caps.latest.revision: 11
 author: dotnet-bot

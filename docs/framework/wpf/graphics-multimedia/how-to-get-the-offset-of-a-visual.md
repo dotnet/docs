@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "getting offset values from visual objects"
-  - "offset values, retrieving from visual objects"
-  - "visual objects, retrieving offset values from"
-  - "retrieving offset values from visual objects"
+  - "getting offset values from visual objects [WPF]"
+  - "offset values [WPF], retrieving from visual objects [WPF]"
+  - "visual objects [WPF], retrieving offset values from"
+  - "retrieving offset values from visual objects [WPF]"
 ms.assetid: 889a1dd6-1b11-445a-b351-fbb04c53ee34
 caps.latest.revision: 6
 author: dotnet-bot

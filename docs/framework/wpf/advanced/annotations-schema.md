@@ -11,8 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "XML schema definition (XSD)"
-  - "Microsoft Annotations Framework"
-  - "documents, annotations"
+  - "Microsoft Annotations Framework [WPF]"
+  - "documents [WPF], annotations"
 ms.assetid: a893442b-e220-4603-bf6a-b01fefcb4b37
 caps.latest.revision: 14
 author: dotnet-bot

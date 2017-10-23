@@ -40,7 +40,7 @@ When developing, building, and running containerized applications, we have diffe
 
 The reason to include the `dotnet publish` command output in your production image is to keep its' size to a minimum.
 
-Some .NET Core images share layers between different tags so downloading the latest tag is a lighter-weight process. If you already have an older version on your machine, this architecture decreases the needed disk space.
+Some .NET Core images share layers between different tags so downloading the latest tag is a relatively lightweight process. If you already have an older version on your machine, this architecture decreases the needed disk space.
 
 When multiple applications use common images on the same machine, memory is shared between the common images. The images must be the same to be shared.
 
@@ -108,6 +108,9 @@ To build and run, install the following items:
 * Install [.NET Core SDK 2.0](https://www.microsoft.com/net/core).
 
 * Install your favorite code editor, if you haven't already.
+
+> [!TIP]
+> Need to install a code editor? Try [Visual Studio](https://visualstudio.com/downloads)!
 
 #### Installing Docker Client
 

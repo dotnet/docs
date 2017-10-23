@@ -54,6 +54,8 @@ Starting with C# 7, a couple of features have been added to enhance readability.
  - C# 7.0 allows the usage of the underscore character, `_`, as a digit separator.
  - C# 7.2 allows `_` to be used as a digit separator for a binary or hexadecimal literal, after the prefix. A decimal literal isn't permitted to have a leading underscore.
 
+Some examples are shown below.
+
 [!code-cs[long](../../../../samples/snippets/csharp/language-reference/keywords/numeric-literals.cs#LongS)]  
  
  Integer literals can also include a suffix that denotes the type. The suffix `UL` or `ul` unambiguously identifies a numeric literal as a `ulong` value. The `L` suffix denotes a `ulong` if the literal value exceeds <xref:System.Int64.MaxValue?displayProperty=nameWithType>. And the `U` or `u` suffix denotes a `ulong` if the literal value exceeds <xref:System.UInt32.MaxValue?displayProperty=nameWithType>. The following example uses the `ul` suffix to denote a long integer:

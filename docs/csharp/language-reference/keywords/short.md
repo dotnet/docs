@@ -54,6 +54,8 @@ Starting with C# 7, a couple of features have been added to enhance readability.
  - C# 7.0 allows the usage of the underscore character, `_`, as a digit separator.
  - C# 7.2 allows `_` to be used as a digit separator for a binary or hexadecimal literal, after the prefix. A decimal literal isn't permitted to have a leading underscore.
 
+Some examples are shown below.
+
 [!code-cs[Short](../../../../samples/snippets/csharp/language-reference/keywords/numeric-literals.cs#ShortS)]  
  
 ## Compiler overload resolution

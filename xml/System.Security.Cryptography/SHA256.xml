@@ -37,7 +37,7 @@
   
  The hash size for the <xref:System.Security.Cryptography.SHA256> algorithm is 256 bits.  
   
- This is an abstract class. The only implementation of this class is <xref:System.Security.Cryptography.SHA256Managed>.  
+ This is an abstract class. The only implementation of this class is <xref:System.Security.Cryptography.SHA256Managed>.  <<-- This is not true.  There are 3 implementations in the .NET Framework.  Can you specify which one is returned in various cases?
   
    
   

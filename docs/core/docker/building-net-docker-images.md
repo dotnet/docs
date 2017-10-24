@@ -157,7 +157,7 @@ cd aspnetapp
 dotnet run
 ```
 
-After the application starts, visit **http://localhost:8000** in your web browser.
+After the application starts, visit **http://localhost:5000** in your web browser.
 
 ### Build and run the sample with Docker for Linux containers
 
@@ -166,12 +166,12 @@ You can build and run the sample in Docker using Linux containers using the foll
 ```console
 cd aspnetapp
 docker build -t aspnetapp .
-docker run -it --rm -p 8000:80 --name aspnetcore_sample aspnetapp
+docker run -it --rm -p 5000:80 --name aspnetcore_sample aspnetapp
 ```
 
-> [!Note] The `docker run` '-p' argument maps port 8000 on your local machine to port 80 in the container (the port mapping form is `host:container`). For more information, see the [docker run](https://docs.docker.com/engine/reference/commandline/exec/) reference on command-line parameters.
+> [!Note] The `docker run` '-p' argument maps port 5000 on your local machine to port 80 in the container (the port mapping form is `host:container`). For more information, see the [docker run](https://docs.docker.com/engine/reference/commandline/exec/) reference on command-line parameters.
 
-After the application starts, visit **http://localhost:8000** in your web browser.
+After the application starts, visit **http://localhost:5000** in your web browser.
 
 ### Build and run the sample with Docker for Windows containers
 

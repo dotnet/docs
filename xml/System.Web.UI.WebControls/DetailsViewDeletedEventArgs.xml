@@ -34,6 +34,15 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+    <altmember cref="T:System.Web.UI.WebControls.DetailsViewDeletedEventHandler" />
+    <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemDeleted" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsViewDeletedEventArgs.AffectedRows" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsViewDeletedEventArgs.Exception" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsViewDeletedEventArgs.ExceptionHandled" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsViewDeletedEventArgs.Keys" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsViewDeletedEventArgs.Values" />
+    <altmember cref="M:System.Web.UI.WebControls.DetailsView.OnItemDeleted(System.Web.UI.WebControls.DetailsViewDeletedEventArgs)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -72,6 +81,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewDeletedEventHandler" />
+        <altmember cref="T:System.Exception" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemDeleted" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewDeletedEventArgs.AffectedRows" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewDeletedEventArgs.Exception" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewDeletedEventArgs.ExceptionHandled" />
+        <altmember cref="M:System.Web.UI.WebControls.DetailsView.OnItemDeleted(System.Web.UI.WebControls.DetailsViewDeletedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="AffectedRows">
@@ -105,6 +122,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewDeletedEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemDeleted" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewDeletedEventArgs.Exception" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewDeletedEventArgs.ExceptionHandled" />
       </Docs>
     </Member>
     <Member MemberName="Exception">
@@ -141,6 +163,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewDeletedEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemDeleted" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewDeletedEventArgs.AffectedRows" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewDeletedEventArgs.ExceptionHandled" />
       </Docs>
     </Member>
     <Member MemberName="ExceptionHandled">
@@ -175,6 +202,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewDeletedEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemDeleted" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewDeletedEventArgs.AffectedRows" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewDeletedEventArgs.Exception" />
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -216,6 +248,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewDeletedEventHandler" />
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="T:System.Collections.DictionaryEntry" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewDeletedEventArgs.Values" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemDeleted" />
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -257,6 +295,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewDeletedEventHandler" />
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="T:System.Collections.DictionaryEntry" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewDeletedEventArgs.Keys" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemDeleted" />
       </Docs>
     </Member>
   </Members>

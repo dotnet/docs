@@ -113,5 +113,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DispatcherOperationWait">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Waits for the underlying <see cref="T:System.Windows.Threading.DispatcherOperation" /> to complete.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -215,6 +215,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="info" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
       </Docs>
     </Member>
     <Member MemberName="IsFlowSuppressed">
@@ -397,6 +398,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The context flow is already suppressed.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="T:System.Threading.AsyncFlowControl" />
       </Docs>
     </Member>
   </Members>

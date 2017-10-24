@@ -71,6 +71,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Runtime.InteropServices.UnmanagedType" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -110,6 +111,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.InteropServices.UnmanagedType" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -149,6 +151,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.InteropServices.UnmanagedType" />
       </Docs>
     </Member>
     <Member MemberName="ArraySubType">
@@ -187,6 +190,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.InteropServices.UnmanagedType" />
       </Docs>
     </Member>
     <Member MemberName="IidParameterIndex">
@@ -301,6 +305,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Runtime.InteropServices.MarshalAsAttribute.MarshalTypeRef" />
       </Docs>
     </Member>
     <Member MemberName="MarshalTypeRef">
@@ -354,6 +359,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Runtime.InteropServices.MarshalAsAttribute.MarshalType" />
       </Docs>
     </Member>
     <Member MemberName="SafeArraySubType">
@@ -392,6 +398,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Runtime.InteropServices.UnmanagedType.SafeArray" />
+        <altmember cref="T:System.Runtime.InteropServices.VarEnum" />
       </Docs>
     </Member>
     <Member MemberName="SafeArrayUserDefinedSubType">
@@ -430,6 +438,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Runtime.InteropServices.UnmanagedType.SafeArray" />
+        <altmember cref="F:System.Runtime.InteropServices.MarshalAsAttribute.SafeArraySubType" />
       </Docs>
     </Member>
     <Member MemberName="SizeConst">
@@ -470,6 +480,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.InteropServices.UnmanagedType" />
       </Docs>
     </Member>
     <Member MemberName="SizeParamIndex">
@@ -529,6 +540,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Runtime.InteropServices.MarshalAsAttribute.SizeConst" />
+        <altmember cref="F:System.Runtime.InteropServices.UnmanagedType.LPArray" />
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -570,5 +583,19 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.MarshalAsAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

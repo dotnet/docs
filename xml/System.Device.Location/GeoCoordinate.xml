@@ -614,5 +614,23 @@
           <see cref="P:System.Device.Location.GeoCoordinate.VerticalAccuracy" /> is set outside the valid range.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Device</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of <see cref="T:System.Device.Location.GeoCoordinate." /></summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Device</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether two <see cref="T:System.Device.Location.GeoCoordinate" /> objects are equivalent, based solely on latitude and longitude.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

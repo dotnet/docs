@@ -30,6 +30,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+    <altmember cref="P:System.Web.UI.WebControls.DataGrid.PagerStyle" />
+    <altmember cref="P:System.Web.UI.WebControls.DataGrid.AllowPaging" />
+    <altmember cref="P:System.Web.UI.WebControls.DataGrid.AllowCustomPaging" />
   </Docs>
   <Members>
     <Member MemberName="CopyFrom">
@@ -66,6 +70,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <altmember cref="M:System.Web.UI.WebControls.Style.CopyFrom(System.Web.UI.WebControls.Style)" />
       </Docs>
     </Member>
     <Member MemberName="MergeWith">
@@ -102,6 +108,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <altmember cref="M:System.Web.UI.WebControls.Style.MergeWith(System.Web.UI.WebControls.Style)" />
       </Docs>
     </Member>
     <Member MemberName="Mode">
@@ -144,6 +152,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified value is not one of the <see cref="T:System.Web.UI.WebControls.PagerMode" /> values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+        <altmember cref="T:System.Web.UI.WebControls.PagerMode" />
       </Docs>
     </Member>
     <Member MemberName="NextPageText">
@@ -196,6 +206,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified value is less than <see langword="1" />.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.DataGridPagerStyle.Mode" />
       </Docs>
     </Member>
     <Member MemberName="PageButtonCount">
@@ -240,6 +251,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The selected value is less than <see langword="1" />.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+        <altmember cref="P:System.Web.UI.WebControls.DataGridPagerStyle.Mode" />
       </Docs>
     </Member>
     <Member MemberName="Position">
@@ -282,6 +295,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified value is not one of the <see cref="T:System.Web.UI.WebControls.PagerPosition" /> values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+        <altmember cref="T:System.Web.UI.WebControls.PagerPosition" />
       </Docs>
     </Member>
     <Member MemberName="PrevPageText">
@@ -333,6 +348,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+        <altmember cref="P:System.Web.UI.WebControls.DataGridPagerStyle.Mode" />
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -366,6 +383,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <altmember cref="M:System.Web.UI.WebControls.Style.Reset" />
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -408,6 +427,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
       </Docs>
     </Member>
   </Members>

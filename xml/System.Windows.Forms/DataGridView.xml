@@ -166,6 +166,7 @@
         <block subset="none" type="overrides">
           <para>Override this method when customizing the <see cref="T:System.Windows.Forms.DataGridView" /> control and modifying how and when the current cell changes. For example, if you create a custom row type that merges multiple cells into single cells and you modify the navigation accordingly, you can override this method to provide accessibility support for your changes.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.AccessibleEvents" />
       </Docs>
     </Member>
     <Member MemberName="AdjustColumnHeaderBorderStyle">
@@ -782,6 +783,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
       </Docs>
     </Member>
     <Member MemberName="AlternatingRowsDefaultCellStyleChanged">
@@ -818,6 +820,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
       </Docs>
     </Member>
     <Member MemberName="AreAllCellsSelected">
@@ -857,6 +860,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridViewBand.Visible" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.SelectedCells" />
       </Docs>
     </Member>
     <Member MemberName="AutoGenerateColumns">
@@ -909,6 +914,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridView.DataSource" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.DataMember" />
+        <altmember cref="M:System.ComponentModel.ICustomTypeDescriptor.GetProperties" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewColumn.DataPropertyName" />
       </Docs>
     </Member>
     <Member MemberName="AutoGenerateColumnsChanged">
@@ -1892,6 +1901,7 @@
         <value>
           <see langword="true" /> if enabled; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.AutoSize" />
       </Docs>
     </Member>
     <Member MemberName="AutoSizeColumnModeChanged">
@@ -1925,6 +1935,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridViewColumn.AutoSizeMode" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewAutoSizeColumnModeEventHandler" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewAutoSizeColumnModeEventArgs" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.OnAutoSizeColumnModeChanged(System.Windows.Forms.DataGridViewAutoSizeColumnModeEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="AutoSizeColumnsMode">
@@ -1979,6 +1993,8 @@
  -or-  
   
  The specified value when setting this property is <see cref="F:System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill" /> and at least one visible column with an <see cref="P:System.Windows.Forms.DataGridViewColumn.AutoSizeMode" /> property value of <see cref="F:System.Windows.Forms.DataGridViewAutoSizeColumnMode.NotSet" /> is frozen.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridViewAutoSizeColumnsMode" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewColumn.FillWeight" />
       </Docs>
     </Member>
     <Member MemberName="AutoSizeColumnsModeChanged">
@@ -2013,6 +2029,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridViewAutoSizeColumnsModeEventHandler" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewAutoSizeColumnsModeEventArgs" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.OnAutoSizeColumnsModeChanged(System.Windows.Forms.DataGridViewAutoSizeColumnsModeEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="AutoSizeRowsMode">
@@ -2064,6 +2083,7 @@
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The specified value when setting this property is not a valid <see cref="T:System.Windows.Forms.DataGridViewAutoSizeRowsMode" /> value.</exception>
         <exception cref="T:System.InvalidOperationException">The specified value when setting this property is <see cref="F:System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders" /> or <see cref="F:System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedHeaders" /> and row headers are hidden.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridViewAutoSizeRowsMode" />
       </Docs>
     </Member>
     <Member MemberName="AutoSizeRowsModeChanged">
@@ -2133,6 +2153,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridView.BackgroundColor" />
       </Docs>
     </Member>
     <Member MemberName="BackColorChanged">
@@ -2427,6 +2448,13 @@
   
  The type indicated by the cell's <see cref="P:System.Windows.Forms.DataGridViewCell.EditType" /> property does not implement the <see cref="T:System.Windows.Forms.IDataGridViewEditingControl" /> interface.</exception>
         <exception cref="T:System.Exception">Initialization of the editing cell value failed and either there is no handler for the <see cref="E:System.Windows.Forms.DataGridView.DataError" /> event or the handler has set the <see cref="P:System.Windows.Forms.DataGridViewDataErrorEventArgs.ThrowException" /> property to <see langword="true" />. The exception object can typically be cast to type <see cref="T:System.FormatException" />.</exception>
+        <altmember cref="P:System.Windows.Forms.DataGridView.CurrentCell" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.EditType" />
+        <altmember cref="T:System.Windows.Forms.Control" />
+        <altmember cref="T:System.Windows.Forms.IDataGridViewEditingControl" />
+        <altmember cref="T:System.Windows.Forms.IDataGridViewEditingCell" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellBeginEdit" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.IsCurrentCellInEditMode" />
       </Docs>
     </Member>
     <Member MemberName="BorderStyle">
@@ -2902,6 +2930,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ContextMenuStrip" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.DataSource" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.VirtualMode" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellContextMenuStripNeededEventHandler" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellContextMenuStripNeededEventArgs" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellContextMenuStripNeededEventArgs.ContextMenuStrip" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.ContextMenuStrip" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.OnCellContextMenuStripNeeded(System.Windows.Forms.DataGridViewCellContextMenuStripNeededEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="CellDoubleClick">
@@ -3084,6 +3120,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridView.DataSource" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.VirtualMode" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.ShowCellErrors" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellErrorTextNeededEventHandler" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellErrorTextNeededEventArgs" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellErrorTextNeededEventArgs.ErrorText" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.ErrorText" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.OnCellErrorTextNeeded(System.Windows.Forms.DataGridViewCellErrorTextNeededEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="CellFormatting">
@@ -3135,6 +3179,24 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridView.DefaultCellStyle" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.Format" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.FormatProvider" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.NullValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.InheritedStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.Value" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.FormattedValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.FormattedValueType" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.GetFormattedValue(System.Object,System.Int32,System.Windows.Forms.DataGridViewCellStyle@,System.ComponentModel.TypeConverter,System.ComponentModel.TypeConverter,System.Windows.Forms.DataGridViewDataErrorContexts)" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellFormattingEventHandler" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellFormattingEventArgs" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellFormattingEventArgs.FormattingApplied" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellFormattingEventArgs.CellStyle" />
+        <altmember cref="P:System.Windows.Forms.ConvertEventArgs.Value" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.OnCellFormatting(System.Windows.Forms.DataGridViewCellFormattingEventArgs)" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellParsing" />
       </Docs>
     </Member>
     <Member MemberName="CellLeave">
@@ -3209,6 +3271,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.MouseEventHandler" />
+        <altmember cref="T:System.Windows.Forms.MouseEventArgs" />
+        <altmember cref="P:System.Windows.Forms.MouseEventArgs.Button" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellContentClick" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCheckBoxCell" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellValueChanged" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CurrentCellDirtyStateChanged" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.CommitEdit(System.Windows.Forms.DataGridViewDataErrorContexts)" />
       </Docs>
     </Member>
     <Member MemberName="CellMouseDoubleClick">
@@ -3459,6 +3529,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellPaintingEventHandler" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellPaintingEventArgs" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.OnCellPainting(System.Windows.Forms.DataGridViewCellPaintingEventArgs)" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
       </Docs>
     </Member>
     <Member MemberName="CellParsing">
@@ -3506,6 +3580,23 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellParsing" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.OnCellParsing(System.Windows.Forms.DataGridViewCellParsingEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.CommitEdit(System.Windows.Forms.DataGridViewDataErrorContexts)" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellFormatting" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.EditMode" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.ValueType" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.InheritedStyle" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.ParseFormattedValue(System.Object,System.Windows.Forms.DataGridViewCellStyle,System.ComponentModel.TypeConverter,System.ComponentModel.TypeConverter)" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellParsingEventHandler" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellParsingEventArgs" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellParsingEventArgs.InheritedCellStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellParsingEventArgs.ParsingApplied" />
+        <altmember cref="P:System.Windows.Forms.ConvertEventArgs.Value" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.NullValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.Format" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.FormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="CellStateChanged">
@@ -3538,6 +3629,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStateChangedEventHandler" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStateChangedEventArgs" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellStateChangedEventArgs.StateChanged" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewElementStates" />
       </Docs>
     </Member>
     <Member MemberName="CellStyleChanged">
@@ -3574,6 +3669,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
       </Docs>
     </Member>
     <Member MemberName="CellStyleContentChanged">
@@ -3630,6 +3726,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyleContentChangedEventHandler" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyleContentChangedEventArgs" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.OnCellStyleContentChanged(System.Windows.Forms.DataGridViewCellStyleContentChangedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="CellToolTipTextChanged">
@@ -3711,6 +3811,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridView.DataSource" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.VirtualMode" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.ShowCellToolTips" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellToolTipTextNeededEventHandler" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellToolTipTextNeededEventArgs" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellToolTipTextNeededEventArgs.ToolTipText" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.ToolTipText" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.OnCellToolTipTextNeeded(System.Windows.Forms.DataGridViewCellToolTipTextNeededEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="CellValidated">
@@ -3745,6 +3853,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellValidating" />
       </Docs>
     </Member>
     <Member MemberName="CellValidating">
@@ -3782,6 +3891,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellValidatingEventHandler" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellValidatingEventArgs" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellValidated" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.OnCellValidating(System.Windows.Forms.DataGridViewCellValidatingEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="CellValueChanged">
@@ -3862,6 +3976,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridView.VirtualMode" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellValueEventHandler" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellValueEventArgs" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellValuePushed" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.OnCellValueNeeded(System.Windows.Forms.DataGridViewCellValueEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="CellValuePushed">
@@ -3904,6 +4023,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridView.VirtualMode" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellValueEventHandler" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellValueEventArgs" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellValueNeeded" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.OnCellValuePushed(System.Windows.Forms.DataGridViewCellValueEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ClearSelection">
@@ -3990,6 +4114,9 @@
  -or-  
   
  <paramref name="rowIndexException" /> is less than -1 when <see cref="P:System.Windows.Forms.DataGridView.SelectionMode" /> is <see cref="F:System.Windows.Forms.DataGridViewSelectionMode.FullColumnSelect" />; otherwise, <paramref name="rowIndexException" /> is less than 0.</exception>
+        <altmember cref="P:System.Windows.Forms.DataGridView.SelectionMode" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.Selected" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewBand.Selected" />
       </Docs>
     </Member>
     <Member MemberName="ClipboardCopyMode">
@@ -4042,6 +4169,12 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The specified value when setting this property is not a valid <see cref="T:System.Windows.Forms.DataGridViewClipboardCopyMode" /> value.</exception>
+        <altmember cref="T:System.Windows.Forms.Clipboard" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewClipboardCopyMode" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.GetClipboardContent" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.SelectionMode" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.GetClipboardContent(System.Int32,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String)" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewImageCell.Description" />
       </Docs>
     </Member>
     <Member MemberName="ColumnAdded">
@@ -4231,6 +4364,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
       </Docs>
     </Member>
     <Member MemberName="ColumnDisplayIndexChanged">
@@ -4486,6 +4620,10 @@
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The specified value when setting this property is not a valid <see cref="T:System.Windows.Forms.DataGridViewHeaderBorderStyle" /> value.</exception>
         <exception cref="T:System.ArgumentException">The specified value when setting this property is <see cref="F:System.Windows.Forms.DataGridViewHeaderBorderStyle.Custom" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridViewHeaderBorderStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.RowHeadersBorderStyle" />
+        <altmember cref="M:System.Windows.Forms.Application.EnableVisualStyles" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.EnableHeadersVisualStyles" />
       </Docs>
     </Member>
     <Member MemberName="ColumnHeadersBorderStyleChanged">
@@ -4575,6 +4713,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
       </Docs>
     </Member>
     <Member MemberName="ColumnHeadersDefaultCellStyleChanged">
@@ -4609,6 +4748,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
       </Docs>
     </Member>
     <Member MemberName="ColumnHeadersHeight">
@@ -4942,6 +5082,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumnCollection" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
       </Docs>
     </Member>
     <Member MemberName="ColumnSortModeChanged">
@@ -5024,6 +5166,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumnStateChangedEventHandler" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumnStateChangedEventArgs" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.OnColumnStateChanged(System.Windows.Forms.DataGridViewColumnStateChangedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ColumnToolTipTextChanged">
@@ -5129,6 +5275,13 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">The cell value could not be committed and either there is no handler for the <see cref="E:System.Windows.Forms.DataGridView.DataError" /> event or the handler has set the <see cref="P:System.Windows.Forms.DataGridViewDataErrorEventArgs.ThrowException" /> property to <see langword="true" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridViewDataErrorContexts" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellParsing" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.DataError" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellValuePushed" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.VirtualMode" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellValueChanged" />
+        <altmember cref="Overload:System.Windows.Forms.DataGridView.EndEdit" />
       </Docs>
     </Member>
     <Member MemberName="CreateAccessibilityInstance">
@@ -5279,6 +5432,10 @@
   
  Re-entrant calling is only allowed when the <see cref="T:System.Windows.Forms.DataGridView" /> is bound to a <see cref="P:System.Windows.Forms.DataGridView.DataSource" />. Re-entrant calling results from a change to the underlying data.</exception>
         <exception cref="T:System.ArgumentException">The specified cell when setting this property is not in the <see cref="T:System.Windows.Forms.DataGridView" />.</exception>
+        <altmember cref="P:System.Windows.Forms.DataGridView.CurrentRow" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.SelectionChanged" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CurrentCellChanged" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.FirstDisplayedCell" />
       </Docs>
     </Member>
     <Member MemberName="CurrentCellAddress">
@@ -5422,6 +5579,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridView.CurrentCell" />
       </Docs>
     </Member>
     <Member MemberName="DataBindingComplete">
@@ -5458,6 +5616,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridViewBindingCompleteEventHandler" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewBindingCompleteEventArgs" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.DataSource" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.DataMember" />
+        <altmember cref="P:System.Windows.Forms.Control.BindingContext" />
+        <altmember cref="E:System.Windows.Forms.CurrencyManager.ListChanged" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.OnDataBindingComplete(System.Windows.Forms.DataGridViewBindingCompleteEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="DataError">
@@ -5496,6 +5661,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridViewDataErrorEventHandler" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewDataErrorEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="DataMember">
@@ -5538,6 +5705,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">An error occurred in the data source and either there is no handler for the <see cref="E:System.Windows.Forms.DataGridView.DataError" /> event or the handler has set the <see cref="P:System.Windows.Forms.DataGridViewDataErrorEventArgs.ThrowException" /> property to <see langword="true" />. The exception object can typically be cast to type <see cref="T:System.FormatException" />.</exception>
+        <altmember cref="P:System.Windows.Forms.DataGridView.DataSource" />
+        <altmember cref="T:System.Data.DataSet" />
       </Docs>
     </Member>
     <Member MemberName="DataMemberChanged">
@@ -5638,6 +5807,18 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">An error occurred in the data source and either there is no handler for the <see cref="E:System.Windows.Forms.DataGridView.DataError" /> event or the handler has set the <see cref="P:System.Windows.Forms.DataGridViewDataErrorEventArgs.ThrowException" /> property to <see langword="true" />. The exception object can typically be cast to type <see cref="T:System.FormatException" />.</exception>
+        <altmember cref="T:System.Collections.IList" />
+        <altmember cref="T:System.ComponentModel.IListSource" />
+        <altmember cref="T:System.Data.DataTable" />
+        <altmember cref="T:System.Data.DataSet" />
+        <altmember cref="T:System.ComponentModel.IBindingList" />
+        <altmember cref="T:System.ComponentModel.BindingList`1" />
+        <altmember cref="T:System.ComponentModel.IBindingListView" />
+        <altmember cref="T:System.Windows.Forms.BindingSource" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.DefaultCellStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.DataMember" />
       </Docs>
     </Member>
     <Member MemberName="DataSourceChanged">
@@ -5724,6 +5905,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
       </Docs>
     </Member>
     <Member MemberName="DefaultCellStyleChanged">
@@ -5760,6 +5942,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
       </Docs>
     </Member>
     <Member MemberName="DefaultSize">
@@ -5919,6 +6102,7 @@
           <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
         <summary>Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.Control" /> and its child controls and optionally releases the managed resources.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.Dispose(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="EditingControl">
@@ -5999,6 +6183,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridViewTextBoxEditingControl" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewComboBoxEditingControl" />
+        <altmember cref="T:System.Windows.Forms.IDataGridViewEditingControl" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewEditingControlShowingEventHandler" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs.CellStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs.Control" />
       </Docs>
     </Member>
     <Member MemberName="EditingPanel">
@@ -6154,6 +6345,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Application.EnableVisualStyles" />
+        <altmember cref="Overload:System.Windows.Forms.Application.Run" />
       </Docs>
     </Member>
     <Member MemberName="EndEdit">
@@ -6186,6 +6379,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">The cell value could not be committed and either there is no handler for the <see cref="E:System.Windows.Forms.DataGridView.DataError" /> event or the handler has set the <see cref="P:System.Windows.Forms.DataGridViewDataErrorEventArgs.ThrowException" /> property to <see langword="true" />.</exception>
+        <altmember cref="M:System.Windows.Forms.DataGridView.EndEdit(System.Windows.Forms.DataGridViewDataErrorContexts)" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.CommitEdit(System.Windows.Forms.DataGridViewDataErrorContexts)" />
       </Docs>
     </Member>
     <Member MemberName="EndEdit">
@@ -6219,6 +6414,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">The cell value could not be committed and either there is no handler for the <see cref="E:System.Windows.Forms.DataGridView.DataError" /> event or the handler has set the <see cref="P:System.Windows.Forms.DataGridViewDataErrorEventArgs.ThrowException" /> property to <see langword="true" />.</exception>
+        <altmember cref="M:System.Windows.Forms.DataGridView.CommitEdit(System.Windows.Forms.DataGridViewDataErrorContexts)" />
       </Docs>
     </Member>
     <Member MemberName="FirstDisplayedCell">
@@ -6268,6 +6464,7 @@
  -or-  
   
  The specified cell when setting this property has a <see cref="P:System.Windows.Forms.DataGridViewCell.Visible" /> property value of <see langword="false" />.</exception>
+        <altmember cref="P:System.Windows.Forms.DataGridView.CurrentCell" />
       </Docs>
     </Member>
     <Member MemberName="FirstDisplayedScrollingColumnHiddenWidth">
@@ -6368,6 +6565,7 @@
  -or-  
   
  The specified value when setting this property indicates a column with a <see cref="P:System.Windows.Forms.DataGridViewRow.Frozen" /> property value of <see langword="true" />.</exception>
+        <altmember cref="E:System.Windows.Forms.DataGridView.Scroll" />
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -6413,6 +6611,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridView.DefaultCellStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.ColumnHeadersDefaultCellStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.RowHeadersDefaultCellStyle" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.Font" />
+        <altmember cref="T:System.Drawing.Font" />
       </Docs>
     </Member>
     <Member MemberName="FontChanged">
@@ -6455,6 +6659,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridView.Font" />
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -6495,6 +6700,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridView.DefaultCellStyle" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.ForeColor" />
+        <altmember cref="T:System.Drawing.Color" />
       </Docs>
     </Member>
     <Member MemberName="ForeColorChanged">
@@ -6640,6 +6849,7 @@
  -or-  
   
  <paramref name="rowIndex" /> is less than -1 or greater than the number of rows in the control minus 1.</exception>
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.ContentBounds" />
       </Docs>
     </Member>
     <Member MemberName="GetClipboardContent">
@@ -6681,6 +6891,9 @@
         <block subset="none" type="overrides">
           <para>Override this method to provide customized clipboard values. This is useful, for example, to support copying values from custom cell types.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.DataGridView.ClipboardCopyMode" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewClipboardCopyMode" />
+        <altmember cref="T:System.Windows.Forms.DataFormats" />
       </Docs>
     </Member>
     <Member MemberName="GetColumnDisplayRectangle">
@@ -6847,6 +7060,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView.HitTestInfo" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewHitTestType" />
       </Docs>
     </Member>
     <Member MemberName="HorizontalScrollBar">
@@ -6946,6 +7161,7 @@
           <paramref name="dataGridViewCell" /> does not belong to the <see cref="T:System.Windows.Forms.DataGridView" />.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="dataGridViewCell" /> is <see langword="null" />.</exception>
+        <altmember cref="Overload:System.Windows.Forms.Control.Invalidate" />
       </Docs>
     </Member>
     <Member MemberName="InvalidateCell">
@@ -6992,6 +7208,7 @@
  -or-  
   
  <paramref name="rowIndex" /> is less than -1 or greater than the number of rows in the control minus 1.</exception>
+        <altmember cref="Overload:System.Windows.Forms.Control.Invalidate" />
       </Docs>
     </Member>
     <Member MemberName="InvalidateColumn">
@@ -7022,6 +7239,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="columnIndex" /> is not in the valid range of 0 to the number of columns minus 1.</exception>
+        <altmember cref="Overload:System.Windows.Forms.Control.Invalidate" />
       </Docs>
     </Member>
     <Member MemberName="InvalidateRow">
@@ -7064,6 +7282,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="rowIndex" /> is not in the valid range of 0 to the number of rows minus 1.</exception>
+        <altmember cref="Overload:System.Windows.Forms.Control.Invalidate" />
       </Docs>
     </Member>
     <Member MemberName="IsCurrentCellDirty">
@@ -7147,6 +7366,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridView.CurrentCell" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.EditingControl" />
       </Docs>
     </Member>
     <Member MemberName="IsCurrentRowDirty">
@@ -7233,6 +7454,7 @@
         <returns>
           <see langword="true" /> if the specified key is a regular input key; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.IsInputKey(System.Windows.Forms.Keys)" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -7286,6 +7508,10 @@
  -or-  
   
  <paramref name="rowIndex" /> is less than 0 or greater than the number of rows in the control minus 1.</exception>
+        <altmember cref="P:System.Windows.Forms.DataGridViewRow.Cells" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellCollection" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.Rows" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRowCollection" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -7333,6 +7559,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridViewRow.Cells" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellCollection" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.Rows" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRowCollection" />
       </Docs>
     </Member>
     <Member MemberName="MultiSelect">
@@ -7551,6 +7781,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.DataGridView.OnAllowUserToAddRowsChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.DataGridView.OnAllowUserToAddRowsChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.DataGridView.AllowUserToAddRowsChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnAllowUserToDeleteRowsChanged">
@@ -7584,6 +7815,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.DataGridView.OnAllowUserToDeleteRowsChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.DataGridView.OnAllowUserToDeleteRowsChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.DataGridView.AllowUserToDeleteRowsChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnAllowUserToOrderColumnsChanged">
@@ -7617,6 +7849,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.DataGridView.OnAllowUserToOrderColumnsChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.DataGridView.OnAllowUserToOrderColumnsChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.DataGridView.AllowUserToOrderColumnsChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnAllowUserToResizeColumnsChanged">
@@ -7716,6 +7949,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.DataGridView.OnAlternatingRowsDefaultCellStyleChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.DataGridView.OnAlternatingRowsDefaultCellStyleChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
       </Docs>
     </Member>
     <Member MemberName="OnAutoGenerateColumnsChanged">
@@ -8244,6 +8478,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.DataGridView.OnCellContextMenuStripNeeded(System.Windows.Forms.DataGridViewCellContextMenuStripNeededEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.DataGridView.OnCellContextMenuStripNeeded(System.Windows.Forms.DataGridViewCellContextMenuStripNeededEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellContextMenuStripNeeded" />
       </Docs>
     </Member>
     <Member MemberName="OnCellDoubleClick">
@@ -8926,6 +9161,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.DataGridView.OnCellStyleChanged(System.Windows.Forms.DataGridViewCellEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.DataGridView.OnCellStyleChanged(System.Windows.Forms.DataGridViewCellEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
       </Docs>
     </Member>
     <Member MemberName="OnCellStyleContentChanged">
@@ -8959,6 +9195,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.DataGridView.OnCellStyleContentChanged(System.Windows.Forms.DataGridViewCellStyleContentChangedEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.DataGridView.OnCellStyleContentChanged(System.Windows.Forms.DataGridViewCellStyleContentChangedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellStyleContentChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnCellToolTipTextChanged">
@@ -9111,6 +9349,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.DataGridView.OnCellValidating(System.Windows.Forms.DataGridViewCellValidatingEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.DataGridView.OnCellValidating(System.Windows.Forms.DataGridViewCellValidatingEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellValidating" />
       </Docs>
     </Member>
     <Member MemberName="OnCellValueChanged">
@@ -9187,6 +9426,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.DataGridView.OnCellValueNeeded(System.Windows.Forms.DataGridViewCellValueEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.DataGridView.OnCellValueNeeded(System.Windows.Forms.DataGridViewCellValueEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellValueNeeded" />
       </Docs>
     </Member>
     <Member MemberName="OnCellValuePushed">
@@ -9225,6 +9465,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.DataGridView.OnCellValuePushed(System.Windows.Forms.DataGridViewCellValueEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.DataGridView.OnCellValuePushed(System.Windows.Forms.DataGridViewCellValueEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellValuePushed" />
       </Docs>
     </Member>
     <Member MemberName="OnColumnAdded">
@@ -9361,6 +9602,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.DataGridView.OnColumnDefaultCellStyleChanged(System.Windows.Forms.DataGridViewColumnEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.DataGridView.OnColumnDefaultCellStyleChanged(System.Windows.Forms.DataGridViewColumnEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
       </Docs>
     </Member>
     <Member MemberName="OnColumnDisplayIndexChanged">
@@ -9629,6 +9871,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.DataGridView.OnColumnHeadersDefaultCellStyleChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.DataGridView.OnColumnHeadersDefaultCellStyleChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
       </Docs>
     </Member>
     <Member MemberName="OnColumnHeadersHeightChanged">
@@ -9864,6 +10107,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.DataGridView.OnColumnStateChanged(System.Windows.Forms.DataGridViewColumnStateChangedEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.DataGridView.OnColumnStateChanged(System.Windows.Forms.DataGridViewColumnStateChangedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.DataGridView.ColumnStateChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnColumnToolTipTextChanged">
@@ -10033,6 +10277,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.DataGridView.OnCursorChanged(System.EventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.DataGridView.OnCursorChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.DataGridView.UserSetCursor" />
+        <altmember cref="T:System.Windows.Forms.Cursor" />
+        <altmember cref="E:System.Windows.Forms.Control.CursorChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnDataBindingComplete">
@@ -10061,6 +10308,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.DataGridView.DataBindingComplete" />
       </Docs>
     </Member>
     <Member MemberName="OnDataError">
@@ -10196,6 +10444,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.DataGridView.OnDefaultCellStyleChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.DataGridView.OnDefaultCellStyleChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
       </Docs>
     </Member>
     <Member MemberName="OnDefaultValuesNeeded">
@@ -10352,6 +10601,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.EnabledChanged" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnEnabledChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnEnter">
@@ -10478,6 +10728,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.GotFocus" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnGotFocus(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnGridColorChanged">
@@ -10565,6 +10816,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.HandleDestroyed" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnHandleDestroyed(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnKeyDown">
@@ -10767,6 +11019,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.LostFocus" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnLostFocus(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseClick">
@@ -10830,6 +11083,7 @@
         <param name="e">An <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.MouseDoubleClick" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnMouseDoubleClick(System.Windows.Forms.MouseEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseDown">
@@ -10885,6 +11139,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="M:System.Windows.Forms.Control.OnMouseEnter(System.EventArgs)" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.ButtonBase.OnMouseEnter(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseLeave">
@@ -11013,6 +11268,7 @@
         <param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.MouseWheel" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnMouseWheel(System.Windows.Forms.MouseEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnMultiSelectChanged">
@@ -11216,6 +11472,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.RightToLeftChanged" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnRightToLeftChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnRowContextMenuStripChanged">
@@ -11317,6 +11574,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.DataGridView.OnRowDefaultCellStyleChanged(System.Windows.Forms.DataGridViewRowEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.DataGridView.OnRowDefaultCellStyleChanged(System.Windows.Forms.DataGridViewRowEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
       </Docs>
     </Member>
     <Member MemberName="OnRowDirtyStateNeeded">
@@ -11517,6 +11775,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.DataGridView.OnRowErrorTextNeeded(System.Windows.Forms.DataGridViewRowErrorTextNeededEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.DataGridView.OnRowErrorTextNeeded(System.Windows.Forms.DataGridViewRowErrorTextNeededEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.DataGridView.RowErrorTextNeeded" />
       </Docs>
     </Member>
     <Member MemberName="OnRowHeaderCellChanged">
@@ -11659,6 +11918,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.DataGridView.OnRowHeadersDefaultCellStyleChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.DataGridView.OnRowHeadersDefaultCellStyleChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
       </Docs>
     </Member>
     <Member MemberName="OnRowHeadersWidthChanged">
@@ -12024,6 +12284,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.DataGridView.OnRowsDefaultCellStyleChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.DataGridView.OnRowsDefaultCellStyleChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
       </Docs>
     </Member>
     <Member MemberName="OnRowsRemoved">
@@ -12292,6 +12553,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.DataGridView.OnSortCompare(System.Windows.Forms.DataGridViewSortCompareEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.DataGridView.OnSortCompare(System.Windows.Forms.DataGridViewSortCompareEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.DataGridView.SortCompare" />
       </Docs>
     </Member>
     <Member MemberName="OnSorted">
@@ -12482,6 +12744,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> object that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.VisibleChanged" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnVisibleChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Padding">
@@ -12555,6 +12818,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridView.Padding" />
       </Docs>
     </Member>
     <Member MemberName="PaintBackground">
@@ -13345,6 +13609,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridView.Text" />
       </Docs>
     </Member>
     <Member MemberName="RowContextMenuStripChanged">
@@ -13426,6 +13691,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ContextMenuStrip" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.DataSource" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.VirtualMode" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRowContextMenuStripNeededEventHandler" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRowContextMenuStripNeededEventArgs" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewRowContextMenuStripNeededEventArgs.ContextMenuStrip" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewRow.ContextMenuStrip" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.OnRowContextMenuStripNeeded(System.Windows.Forms.DataGridViewRowContextMenuStripNeededEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="RowCount">
@@ -13522,6 +13795,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
       </Docs>
     </Member>
     <Member MemberName="RowDirtyStateNeeded">
@@ -13755,6 +14029,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridView.DataSource" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.VirtualMode" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.ShowRowErrors" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRowErrorTextNeededEventHandler" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRowErrorTextNeededEventArgs" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewRowErrorTextNeededEventArgs.ErrorText" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewRow.ErrorText" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.OnRowErrorTextNeeded(System.Windows.Forms.DataGridViewRowErrorTextNeededEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="RowHeaderCellChanged">
@@ -13903,6 +14185,10 @@
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The specified value when setting this property is not a valid <see cref="T:System.Windows.Forms.DataGridViewHeaderBorderStyle" /> value.</exception>
         <exception cref="T:System.ArgumentException">The specified value when setting this property is <see cref="F:System.Windows.Forms.DataGridViewHeaderBorderStyle.Custom" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridViewHeaderBorderStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.ColumnHeadersBorderStyle" />
+        <altmember cref="M:System.Windows.Forms.Application.EnableVisualStyles" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.EnableHeadersVisualStyles" />
       </Docs>
     </Member>
     <Member MemberName="RowHeadersBorderStyleChanged">
@@ -13991,6 +14277,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
       </Docs>
     </Member>
     <Member MemberName="RowHeadersDefaultCellStyleChanged">
@@ -14027,6 +14314,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
       </Docs>
     </Member>
     <Member MemberName="RowHeadersVisible">
@@ -14109,6 +14397,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified value when setting this property is less than the minimum width of 4 pixels or is greater than the maximum width of 32768 pixels.</exception>
+        <altmember cref="Overload:System.Windows.Forms.DataGridView.AutoResizeRowHeadersWidth" />
       </Docs>
     </Member>
     <Member MemberName="RowHeadersWidthChanged">
@@ -14301,6 +14590,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.DataGridView.RowHeightInfoPushed" />
       </Docs>
     </Member>
     <Member MemberName="RowHeightInfoPushed">
@@ -14342,6 +14632,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.DataGridView.RowHeightInfoNeeded" />
       </Docs>
     </Member>
     <Member MemberName="RowLeave">
@@ -14636,6 +14927,11 @@ if (rowToDelete > -1)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridViewRowsAddedEventHandler" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRowsAddedEventArgs" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewRowsAddedEventArgs.RowIndex" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellValuePushed" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.OnRowsAdded(System.Windows.Forms.DataGridViewRowsAddedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="RowsDefaultCellStyle">
@@ -14673,6 +14969,7 @@ if (rowToDelete > -1)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
       </Docs>
     </Member>
     <Member MemberName="RowsDefaultCellStyleChanged">
@@ -14709,6 +15006,7 @@ if (rowToDelete > -1)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
       </Docs>
     </Member>
     <Member MemberName="RowsRemoved">
@@ -14743,6 +15041,9 @@ if (rowToDelete > -1)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridViewRowsRemovedEventHandler" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRowsRemovedEventArgs" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.OnRowsRemoved(System.Windows.Forms.DataGridViewRowsRemovedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="RowStateChanged">
@@ -15161,6 +15462,7 @@ if (rowToDelete > -1)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridViewRow.Selected" />
       </Docs>
     </Member>
     <Member MemberName="SelectionChanged">
@@ -15197,6 +15499,9 @@ if (rowToDelete > -1)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridView.CurrentCell" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.SelectionChanged" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CurrentCellChanged" />
       </Docs>
     </Member>
     <Member MemberName="SelectionMode">
@@ -15492,6 +15797,11 @@ if (rowToDelete > -1)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridView.DataSource" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.VirtualMode" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellToolTipTextNeeded" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellToolTipTextNeededEventArgs.ToolTipText" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.ToolTipText" />
       </Docs>
     </Member>
     <Member MemberName="ShowEditingIcon">
@@ -15725,6 +16035,11 @@ if (rowToDelete > -1)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridViewSortCompareEventHandler" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewSortCompareEventArgs" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.OnSortCompare(System.Windows.Forms.DataGridViewSortCompareEventArgs)" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewColumn.SortMode" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewColumnHeaderCell.SortGlyphDirection" />
       </Docs>
     </Member>
     <Member MemberName="Sorted">
@@ -15947,6 +16262,7 @@ if (rowToDelete > -1)
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">This method has already been called for this control.</exception>
+        <altmember cref="T:System.ComponentModel.ISupportInitialize" />
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ISupportInitialize.EndInit">
@@ -15972,6 +16288,7 @@ if (rowToDelete > -1)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.ISupportInitialize" />
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -16271,6 +16588,8 @@ if (rowToDelete > -1)
  -or-  
   
  <paramref name="rowIndex" /> is greater than the highest row index in the <see cref="P:System.Windows.Forms.DataGridView.Rows" /> collection.</exception>
+        <altmember cref="E:System.Windows.Forms.DataGridView.RowHeightInfoNeeded" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.RowHeightInfoPushed" />
       </Docs>
     </Member>
     <Member MemberName="UserAddedRow">
@@ -16404,6 +16723,8 @@ if (rowToDelete > -1)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.Cursor" />
+        <altmember cref="T:System.Windows.Forms.Cursor" />
       </Docs>
     </Member>
     <Member MemberName="VerticalScrollBar">
@@ -16523,5 +16844,114 @@ if (rowToDelete > -1)
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling unmanaged code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />. Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Sort">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sorts the contents of the <see cref="T:System.Windows.Forms.DataGridView" /> control.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AutoResizeColumns">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adjusts the width of all columns to fit the contents of their cells.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="EndEdit">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Commits and ends the edit operation on the current cell.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="UpdateRowErrorText">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Forces one or more rows to update their error text.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides an indexer to get or set the cell located at the intersection of the specified row and column.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="InvalidateCell">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invalidates a cell in the <see cref="T:System.Windows.Forms.DataGridView" />, forcing it to be repainted.</summary>
+        <altmember cref="Overload:System.Windows.Forms.Control.Invalidate" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AutoResizeColumn">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adjusts the width of the specified column to fit the contents of its cells.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AutoResizeColumnHeadersHeight">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adjusts the height of the column headers to fit the header contents.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ClearSelection">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Cancels the selection of currently selected cells.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AutoResizeRows">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adjusts the heights of some or all rows to fit their contents.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AutoResizeRow">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adjusts the height of the specified row to fit the contents of its cells.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AutoResizeRowHeadersWidth">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adjusts the width of the row headers to fit the header contents.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

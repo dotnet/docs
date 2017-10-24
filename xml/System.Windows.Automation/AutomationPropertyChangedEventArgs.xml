@@ -13,6 +13,8 @@
   <Docs>
     <summary>Provides information about a property-changed event.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Automation.AutomationPropertyChangedEventHandler" />
+    <altmember cref="M:System.Windows.Automation.Provider.AutomationInteropProvider.RaiseAutomationPropertyChangedEvent(System.Windows.Automation.Provider.IRawElementProviderSimple,System.Windows.Automation.AutomationPropertyChangedEventArgs)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

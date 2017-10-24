@@ -26,6 +26,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.ValidationRule" />
+    <altmember cref="T:System.Windows.Controls.ExceptionValidationRule" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -79,6 +81,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ValidationRule.Validate(System.Object,System.Globalization.CultureInfo)" />
       </Docs>
     </Member>
   </Members>

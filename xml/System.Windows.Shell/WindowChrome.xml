@@ -271,6 +271,7 @@
         <summary>Creates a new instance of the <see cref="T:System.Windows.Shell.WindowChrome" /> class.</summary>
         <returns>The new instance of this class.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Freezable.CreateInstanceCore" />
       </Docs>
     </Member>
     <Member MemberName="GetIsHitTestVisibleInChrome">
@@ -679,6 +680,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.SystemCommands.CloseWindow(System.Windows.Window)" />
+        <altmember cref="M:System.Windows.SystemCommands.MaximizeWindow(System.Windows.Window)" />
+        <altmember cref="M:System.Windows.SystemCommands.MinimizeWindow(System.Windows.Window)" />
+        <altmember cref="M:System.Windows.SystemCommands.RestoreWindow(System.Windows.Window)" />
       </Docs>
     </Member>
     <Member MemberName="UseAeroCaptionButtonsProperty">

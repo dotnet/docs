@@ -440,6 +440,7 @@
         <summary>When implemented in a derived class, gets a <see cref="T:System.IO.Stream" /> object that can be used to read the incoming HTTP entity body, optionally disabling the request length limit that is set in the <see cref="P:System.Web.Configuration.HttpRuntimeSection.MaxRequestLength" /> property.</summary>
         <returns>A <see cref="T:System.IO.Stream" /> object that can be used to read the incoming HTTP entity body.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.HttpRequest.GetBufferedInputStream" />
       </Docs>
     </Member>
     <Member MemberName="GetBufferlessInputStream">
@@ -463,6 +464,7 @@
         <summary>When implemented in a derived class, gets a <see cref="T:System.IO.Stream" /> object that can be used to read the incoming HTTP entity body, optionally disabling the request length limit that is set in the <see cref="P:System.Web.Configuration.HttpRuntimeSection.MaxRequestLength" /> property.</summary>
         <returns>A <see cref="T:System.IO.Stream" /> object that can be used to read the incoming HTTP entity body.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.HttpRequest.GetBufferedInputStream" />
       </Docs>
     </Member>
     <Member MemberName="Headers">
@@ -1116,6 +1118,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UnvalidatedRequestValues" />
       </Docs>
     </Member>
     <Member MemberName="Url">
@@ -1258,5 +1261,32 @@
         <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="InsertEntityBody">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When implemented in a derived class, provides a managed wrapper for the IIS method that inserts an HTTP request entity body into memory.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetBufferlessInputStream">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When implemented in a derived class, gets a <see cref="T:System.IO.Stream" /> object that can be used to read the incoming HTTP entity body.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="MapPath">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, maps the virtual path in the requested URL to a physical path on the server.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

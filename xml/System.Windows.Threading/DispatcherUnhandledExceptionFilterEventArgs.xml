@@ -22,6 +22,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Threading.DispatcherUnhandledExceptionEventHandler" />
+    <altmember cref="E:System.Windows.Threading.Dispatcher.UnhandledException" />
+    <altmember cref="T:System.Windows.Threading.DispatcherUnhandledExceptionEventArgs" />
+    <altmember cref="T:System.Windows.Threading.Dispatcher" />
   </Docs>
   <Members>
     <Member MemberName="Exception">
@@ -40,6 +44,7 @@
         <summary>Gets the exception that was raised when executing code by way of the dispatcher.</summary>
         <value>The exception.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Windows.Threading.Dispatcher.UnhandledException" />
       </Docs>
     </Member>
     <Member MemberName="RequestCatch">
@@ -68,6 +73,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Threading.Dispatcher.UnhandledException" />
       </Docs>
     </Member>
   </Members>

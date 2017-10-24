@@ -68,6 +68,7 @@
   
  <paramref name="value" /> is a name, but not one of the named constants defined for the enumeration.</exception>
         <forInternalUseOnly />
+        <altmember cref="M:System.Enum.Parse(System.Type,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="EnumToString">
@@ -113,6 +114,7 @@
   
  The type of <paramref name="enumValue" /> is not an underlying type of <paramref name="enumType" />.</exception>
         <forInternalUseOnly />
+        <altmember cref="M:System.Enum.Format(System.Type,System.Object,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ObjectFromString">

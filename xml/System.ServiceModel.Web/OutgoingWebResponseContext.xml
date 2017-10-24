@@ -357,5 +357,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetETag">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets an ETag.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetStatusAsNotFound">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the HTTP status code of the outgoing Web response to <see cref="F:System.Net.HttpStatusCode.NotFound" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

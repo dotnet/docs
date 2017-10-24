@@ -99,6 +99,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Automation.CacheRequest.Push" />
+        <altmember cref="M:System.Windows.Automation.CacheRequest.Pop" />
       </Docs>
     </Member>
     <MemberGroup MemberName="Add">
@@ -305,6 +307,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt was made to remove a cache request that was not the last one pushed onto the stack.</exception>
+        <altmember cref="M:System.Windows.Automation.CacheRequest.Push" />
       </Docs>
     </Member>
     <Member MemberName="Push">
@@ -340,6 +343,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Automation.CacheRequest.Pop" />
       </Docs>
     </Member>
     <Member MemberName="TreeFilter">
@@ -373,6 +377,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Automation.Automation.ContentViewCondition" />
       </Docs>
     </Member>
     <Member MemberName="TreeScope">

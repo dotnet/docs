@@ -44,6 +44,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.Imaging.BitmapImage" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -158,6 +159,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Freezable.CloneCore(System.Windows.Freezable)" />
       </Docs>
     </Member>
     <Member MemberName="CloneCurrentValue">
@@ -186,6 +188,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Freezable.CloneCurrentValue" />
       </Docs>
     </Member>
     <Member MemberName="CloneCurrentValueCore">
@@ -216,6 +219,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Freezable.CloneCurrentValueCore(System.Windows.Freezable)" />
       </Docs>
     </Member>
     <Member MemberName="CopyPixels">
@@ -370,6 +374,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.PixelFormats" />
+        <altmember cref="T:System.Windows.Media.Imaging.BitmapPalette" />
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -583,6 +589,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.PixelFormat" />
       </Docs>
     </Member>
     <Member MemberName="FreezeCore">
@@ -608,6 +615,7 @@
   
  If <paramref name="isChecking" /> is <see langword="false" />, this method returns <see langword="true" /> if the if this <see cref="T:System.Windows.Media.Animation.Animatable" /> is now unmodifiable, or <see langword="false" /> if it cannot be made unmodifiable, with the side effect of having begun to change the frozen status of this object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Freezable.FreezeCore(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetAsFrozenCore">
@@ -725,6 +733,7 @@
         <summary>Gets the metadata that is associated with this bitmap image.</summary>
         <value>The metadata that is associated with the bitmap image.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.ImageMetadata" />
       </Docs>
     </Member>
     <Member MemberName="Palette">
@@ -743,6 +752,7 @@
         <summary>Gets the color palette of the bitmap, if one is specified.</summary>
         <value>The color palette of the bitmap.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Imaging.BitmapPalette" />
       </Docs>
     </Member>
     <Member MemberName="PixelHeight">
@@ -799,5 +809,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CopyPixels">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies the bitmap pixel data.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Create">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Windows.Media.Imaging.BitmapSource" /> that has the specified properties and options.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

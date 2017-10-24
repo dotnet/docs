@@ -175,6 +175,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The callback instance is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">Either there is no default endpoint information in the configuration file, more than one endpoint in the file, or no configuration file.</exception>
+        <altmember cref="P:System.ServiceModel.ServiceContractAttribute.CallbackContract" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -360,6 +361,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The remote address is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The endpoint cannot be found or the endpoint contract is not valid.</exception>
+        <altmember cref="P:System.ServiceModel.ServiceContractAttribute.CallbackContract" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -416,6 +418,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The remote address is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The endpoint cannot be found or the endpoint contract is not valid.</exception>
+        <altmember cref="P:System.ServiceModel.ServiceContractAttribute.CallbackContract" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -448,6 +451,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The remote address is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The endpoint cannot be found or the endpoint contract is not valid.</exception>
+        <altmember cref="P:System.ServiceModel.ServiceContractAttribute.CallbackContract" />
       </Docs>
     </Member>
     <Member MemberName="Abort">
@@ -595,6 +599,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ServiceModel.Description.ClientCredentials" />
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -680,6 +685,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ServiceModel.Dispatcher.IInteractiveChannelInitializer" />
       </Docs>
     </Member>
     <Member MemberName="Endpoint">
@@ -712,6 +718,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ServiceModel.Description.ServiceEndpoint" />
       </Docs>
     </Member>
     <Member MemberName="GetDefaultValueForInitialization&lt;T&gt;">
@@ -1239,5 +1246,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="System.ServiceModel.ICommunicationObject.BeginOpen">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous operation to open the <see cref="T:System.ServiceModel.ClientBase`1" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="System.ServiceModel.ICommunicationObject.BeginClose">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous operation to close the <see cref="T:System.ServiceModel.ClientBase`1" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

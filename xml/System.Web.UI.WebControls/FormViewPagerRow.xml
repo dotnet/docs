@@ -22,6 +22,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Web.UI.WebControls.FormView.CreateRow(System.Int32,System.Web.UI.WebControls.DataControlRowType,System.Web.UI.WebControls.DataControlRowState)" />
+    <altmember cref="M:System.Web.UI.WebControls.FormView.InitializePager(System.Web.UI.WebControls.FormViewRow,System.Web.UI.WebControls.PagedDataSource)" />
+    <altmember cref="T:System.Web.UI.INamingContainer" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,6 +54,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.FormView.CreateRow(System.Int32,System.Web.UI.WebControls.DataControlRowType,System.Web.UI.WebControls.DataControlRowState)" />
+        <altmember cref="M:System.Web.UI.WebControls.FormView.InitializePager(System.Web.UI.WebControls.FormViewRow,System.Web.UI.WebControls.PagedDataSource)" />
       </Docs>
     </Member>
   </Members>

@@ -290,5 +290,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Caching</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the specified <see cref="T:System.Runtime.Caching.Configuration.MemoryCacheElement" /> item.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -20,6 +20,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Input.QueryCursorEventHandler" />
+    <altmember cref="E:System.Windows.UIElement.QueryCursor" />
+    <altmember cref="E:System.Windows.ContentElement.QueryCursor" />
+    <altmember cref="M:System.Windows.UIElement.OnQueryCursor(System.Windows.Input.QueryCursorEventArgs)" />
+    <altmember cref="M:System.Windows.ContentElement.OnQueryCursor(System.Windows.Input.QueryCursorEventArgs)" />
+    <altmember cref="T:System.Windows.Input.Cursor" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -80,6 +86,8 @@
         <summary>Gets or sets the cursor associated with this event.</summary>
         <value>The cursor.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Input.Cursor" />
+        <altmember cref="T:System.Windows.Input.Cursors" />
       </Docs>
     </Member>
     <Member MemberName="InvokeEventHandler">
@@ -112,5 +120,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.QueryCursorEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

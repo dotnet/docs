@@ -57,6 +57,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Text.EncoderFallback" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -334,5 +335,14 @@
         </block>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Fallback">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether a substitute string is available when the original input cannot be encoded, or whether the original input should be ignored.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

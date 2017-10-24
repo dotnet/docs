@@ -80,6 +80,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Content" />
+    <altmember cref="T:System.Web.UI.MasterPage" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -95,6 +97,8 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.ContentPlaceHolder" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Content" />
+        <altmember cref="T:System.Web.UI.MasterPage" />
       </Docs>
     </Member>
   </Members>

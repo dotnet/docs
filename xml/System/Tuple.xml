@@ -72,6 +72,14 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Tuple`1" />
+    <altmember cref="T:System.Tuple`2" />
+    <altmember cref="T:System.Tuple`3" />
+    <altmember cref="T:System.Tuple`4" />
+    <altmember cref="T:System.Tuple`5" />
+    <altmember cref="T:System.Tuple`6" />
+    <altmember cref="T:System.Tuple`7" />
+    <altmember cref="T:System.Tuple`8" />
   </Docs>
   <Members>
     <Member MemberName="Create&lt;T1&gt;">
@@ -126,6 +134,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Tuple`1" />
       </Docs>
     </Member>
     <Member MemberName="Create&lt;T1,T2&gt;">
@@ -184,6 +193,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Tuple`2" />
       </Docs>
     </Member>
     <Member MemberName="Create&lt;T1,T2,T3&gt;">
@@ -246,6 +256,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Tuple`3" />
       </Docs>
     </Member>
     <Member MemberName="Create&lt;T1,T2,T3,T4&gt;">
@@ -312,6 +323,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Tuple`4" />
       </Docs>
     </Member>
     <Member MemberName="Create&lt;T1,T2,T3,T4,T5&gt;">
@@ -382,6 +394,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Tuple`5" />
       </Docs>
     </Member>
     <Member MemberName="Create&lt;T1,T2,T3,T4,T5,T6&gt;">
@@ -456,6 +469,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Tuple`6" />
       </Docs>
     </Member>
     <Member MemberName="Create&lt;T1,T2,T3,T4,T5,T6,T7&gt;">
@@ -534,6 +548,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Tuple`7" />
       </Docs>
     </Member>
     <Member MemberName="Create&lt;T1,T2,T3,T4,T5,T6,T7,T8&gt;">
@@ -624,7 +639,21 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Tuple`8" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Create&lt;T1&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new tuple object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

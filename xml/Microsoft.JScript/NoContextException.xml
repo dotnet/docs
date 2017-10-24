@@ -30,6 +30,7 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.NoContextException" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.Context" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -49,6 +50,7 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.NoContextException" /> class, using the specified error message.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.Context" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -70,6 +72,7 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.NoContextException" /> class, using the specified serialized data.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.Context" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -91,7 +94,18 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.NoContextException" /> class, using the specified error message and a reference to the inner exception that is the cause of this exception.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.Context" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.NoContextException" /> class.</summary>
+        <altmember cref="T:Microsoft.JScript.Context" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

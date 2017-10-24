@@ -20,6 +20,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IdentityModel.Tokens.SamlSubjectStatement" />
+    <altmember cref="T:System.IdentityModel.Tokens.SamlAssertion" />
+    <altmember cref="T:System.IdentityModel.Tokens.SamlSecurityToken" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -167,6 +170,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.IdentityModel.Tokens.SamlConstants.HolderOfKey" />
+        <altmember cref="P:System.IdentityModel.Tokens.SamlConstants.SenderVouches" />
       </Docs>
     </Member>
     <Member MemberName="Crypto">
@@ -194,6 +199,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.IdentityModel.Tokens.SamlSubject.KeyIdentifier" />
+        <altmember cref="T:System.IdentityModel.Tokens.SecurityKey" />
       </Docs>
     </Member>
     <Member MemberName="ExtractClaims">
@@ -304,6 +311,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.IdentityModel.Tokens.SamlSubject.Crypto" />
+        <altmember cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifier" />
       </Docs>
     </Member>
     <Member MemberName="MakeReadOnly">
@@ -415,6 +424,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.IdentityModel.Tokens.SamlSubject.Name" />
+        <altmember cref="P:System.IdentityModel.Tokens.SamlConstants.EmailNamespace" />
+        <altmember cref="P:System.IdentityModel.Tokens.SamlConstants.UserNameNamespace" />
       </Docs>
     </Member>
     <Member MemberName="NameQualifier">
@@ -561,5 +573,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlSubject" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

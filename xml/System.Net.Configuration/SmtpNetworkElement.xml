@@ -20,6 +20,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.Configuration.SmtpSection" />
+    <altmember cref="T:System.Net.Mail.SmtpClient" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -73,6 +75,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.Configuration.SmtpSection" />
+        <altmember cref="T:System.Net.Mail.SmtpClient" />
       </Docs>
     </Member>
     <Member MemberName="DefaultCredentials">
@@ -97,6 +101,9 @@
         <value>
           <see langword="true" /> indicates that default user credentials will be used to access the SMTP server; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.Configuration.SmtpSection" />
+        <altmember cref="T:System.Net.Mail.SmtpClient" />
+        <altmember cref="P:System.Net.Mail.SmtpClient.Host" />
       </Docs>
     </Member>
     <Member MemberName="EnableSsl">
@@ -130,6 +137,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.Configuration.SmtpSection" />
+        <altmember cref="T:System.Net.Mail.SmtpClient" />
+        <altmember cref="P:System.Net.Mail.SmtpClient.EnableSsl" />
       </Docs>
     </Member>
     <Member MemberName="Host">
@@ -183,6 +193,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.Configuration.SmtpSection" />
+        <altmember cref="T:System.Net.Mail.SmtpClient" />
       </Docs>
     </Member>
     <Member MemberName="Port">
@@ -206,6 +218,9 @@
         <summary>Gets or sets the port that SMTP clients use to connect to an SMTP mail server. The default value is 25.</summary>
         <value>A string that represents the port to connect to an SMTP mail server.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.Configuration.SmtpSection" />
+        <altmember cref="T:System.Net.Mail.SmtpClient" />
+        <altmember cref="P:System.Net.Mail.SmtpClient.Port" />
       </Docs>
     </Member>
     <Member MemberName="PostDeserialize">
@@ -274,6 +289,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.Configuration.SmtpSection" />
+        <altmember cref="T:System.Net.Mail.SmtpClient" />
+        <altmember cref="P:System.Net.Mail.SmtpClient.TargetName" />
       </Docs>
     </Member>
     <Member MemberName="UserName">
@@ -304,6 +322,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.Configuration.SmtpSection" />
+        <altmember cref="T:System.Net.Mail.SmtpClient" />
       </Docs>
     </Member>
   </Members>

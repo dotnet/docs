@@ -89,6 +89,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="destinationType" /> is <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">The conversion cannot be performed.</exception>
+        <altmember cref="Overload:System.ComponentModel.TypeConverter.ConvertTo" />
       </Docs>
     </Member>
     <Member MemberName="GetProperties">
@@ -125,6 +126,7 @@
         <summary>Returns a collection of properties for the type of array specified by the <paramref name="value" /> parameter, using the specified context and attributes.</summary>
         <returns>A <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> with the properties that are exposed for this data type, or <see langword="null" /> if there are no properties.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="Overload:System.ComponentModel.TypeConverter.GetProperties" />
       </Docs>
     </Member>
     <Member MemberName="GetPropertiesSupported">
@@ -165,6 +167,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.TypeConverter.GetPropertiesSupported" />
       </Docs>
     </Member>
   </Members>

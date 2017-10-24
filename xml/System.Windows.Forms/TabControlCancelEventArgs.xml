@@ -36,6 +36,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.TabControl" />
+    <altmember cref="E:System.Windows.Forms.TabControl.Selecting" />
+    <altmember cref="E:System.Windows.Forms.TabControl.Deselecting" />
+    <altmember cref="P:System.Windows.Forms.TabControlCancelEventArgs.Action" />
+    <altmember cref="P:System.Windows.Forms.TabControlCancelEventArgs.TabPage" />
+    <altmember cref="P:System.Windows.Forms.TabControlCancelEventArgs.TabPageIndex" />
+    <altmember cref="P:System.ComponentModel.CancelEventArgs.Cancel" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -68,6 +75,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TabControlCancelEventArgs.TabPage" />
+        <altmember cref="T:System.Windows.Forms.TabPage" />
+        <altmember cref="P:System.Windows.Forms.TabControlCancelEventArgs.TabPageIndex" />
+        <altmember cref="P:System.Windows.Forms.TabControl.TabPages" />
+        <altmember cref="T:System.Windows.Forms.TabControl.TabPageCollection" />
+        <altmember cref="P:System.Windows.Forms.TabControlCancelEventArgs.Action" />
+        <altmember cref="T:System.Windows.Forms.TabControlAction" />
+        <altmember cref="P:System.ComponentModel.CancelEventArgs.Cancel" />
       </Docs>
     </Member>
     <Member MemberName="Action">
@@ -98,6 +113,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TabControlAction" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselecting" />
       </Docs>
     </Member>
     <Member MemberName="TabPage">
@@ -128,6 +146,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TabPage" />
       </Docs>
     </Member>
     <Member MemberName="TabPageIndex">
@@ -158,6 +177,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TabControlCancelEventArgs.TabPage" />
+        <altmember cref="T:System.Windows.Forms.TabPage" />
+        <altmember cref="P:System.Windows.Forms.TabControl.TabPages" />
+        <altmember cref="T:System.Windows.Forms.TabControl.TabPageCollection" />
       </Docs>
     </Member>
   </Members>

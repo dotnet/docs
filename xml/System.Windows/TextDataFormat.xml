@@ -12,6 +12,13 @@
   <Docs>
     <summary>Specifies the data format of the text data.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="M:System.Windows.Clipboard.ContainsText(System.Windows.TextDataFormat)" />
+    <altmember cref="M:System.Windows.DataObject.ContainsText(System.Windows.TextDataFormat)" />
+    <altmember cref="T:System.Windows.DataFormats" />
+    <altmember cref="M:System.Windows.DataObject.GetText(System.Windows.TextDataFormat)" />
+    <altmember cref="M:System.Windows.Clipboard.GetText(System.Windows.TextDataFormat)" />
+    <altmember cref="M:System.Windows.DataObject.SetText(System.String,System.Windows.TextDataFormat)" />
+    <altmember cref="M:System.Windows.Clipboard.SetText(System.String,System.Windows.TextDataFormat)" />
   </Docs>
   <Members>
     <Member MemberName="CommaSeparatedValue">

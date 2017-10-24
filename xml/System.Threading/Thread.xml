@@ -257,6 +257,9 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="start" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Threading.ParameterizedThreadStart" />
+        <altmember cref="Overload:System.Threading.Thread.Start" />
+        <altmember cref="T:System.AppDomain" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -316,6 +319,8 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="start" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="T:System.Threading.ThreadStart" />
+        <altmember cref="Overload:System.Threading.Thread.Start" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -507,6 +512,9 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <exception cref="T:System.Threading.ThreadStateException">The thread that is being aborted is currently suspended.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for advanced operations on threads. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlThread" />.</permission>
+        <altmember cref="T:System.Threading.ThreadAbortException" />
+        <altmember cref="F:System.Threading.ThreadState.Aborted" />
+        <altmember cref="F:System.Threading.ThreadState.AbortRequested" />
       </Docs>
     </Member>
     <Member MemberName="Abort">
@@ -574,6 +582,9 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <exception cref="T:System.Threading.ThreadStateException">The thread that is being aborted is currently suspended.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for advanced operations on threads. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlThread" />.</permission>
+        <altmember cref="T:System.Threading.ThreadAbortException" />
+        <altmember cref="F:System.Threading.ThreadState.Aborted" />
+        <altmember cref="F:System.Threading.ThreadState.AbortRequested" />
       </Docs>
     </Member>
     <Member MemberName="AllocateDataSlot">
@@ -768,6 +779,9 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">An attempt is made to set this property to a state that is not a valid apartment state (a state other than single-threaded apartment (<see langword="STA" />) or multithreaded apartment (<see langword="MTA" />)).</exception>
+        <altmember cref="T:System.Threading.ThreadState" />
+        <altmember cref="M:System.Threading.Thread.GetApartmentState" />
+        <altmember cref="M:System.Threading.Thread.SetApartmentState(System.Threading.ApartmentState)" />
       </Docs>
     </Member>
     <Member MemberName="BeginCriticalRegion">
@@ -822,6 +836,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Threading.Thread.EndCriticalRegion" />
       </Docs>
     </Member>
     <Member MemberName="BeginThreadAffinity">
@@ -876,6 +891,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         </remarks>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Threading.Thread.EndThreadAffinity" />
       </Docs>
     </Member>
     <Member MemberName="CurrentContext">
@@ -1193,6 +1209,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Threading.Thread.BeginCriticalRegion" />
       </Docs>
     </Member>
     <Member MemberName="EndThreadAffinity">
@@ -1247,6 +1264,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         </remarks>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Threading.Thread.BeginThreadAffinity" />
       </Docs>
     </Member>
     <Member MemberName="ExecutionContext">
@@ -1547,6 +1565,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Threading.Thread.SetData(System.LocalDataStoreSlot,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetDomain">
@@ -1782,6 +1801,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         </remarks>
         <exception cref="T:System.Security.SecurityException">The caller does not have the appropriate <see cref="T:System.Security.Permissions.SecurityPermission" />.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for advanced operations on threads. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlThread" />.</permission>
+        <altmember cref="T:System.Threading.ThreadState" />
       </Docs>
     </Member>
     <Member MemberName="IsAlive">
@@ -1916,6 +1936,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Threading.ThreadPool" />
       </Docs>
     </Member>
     <Member MemberName="Join">
@@ -2277,6 +2298,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         </remarks>
         <exception cref="T:System.Threading.ThreadStateException">The thread has reached a final state, such as <see cref="F:System.Threading.ThreadState.Aborted" />.</exception>
         <exception cref="T:System.ArgumentException">The value specified for a set operation is not a valid <see cref="T:System.Threading.ThreadPriority" /> value.</exception>
+        <altmember cref="T:System.Threading.ThreadPriority" />
       </Docs>
     </Member>
     <Member MemberName="ResetAbort">
@@ -2542,6 +2564,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Threading.Thread.GetData(System.LocalDataStoreSlot)" />
       </Docs>
     </Member>
     <Member MemberName="Sleep">
@@ -2815,6 +2838,8 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         <exception cref="T:System.Threading.ThreadStateException">The thread has already been started.</exception>
         <exception cref="T:System.OutOfMemoryException">There is not enough memory available to start this thread.</exception>
         <exception cref="T:System.InvalidOperationException">This thread was created using a <see cref="T:System.Threading.ThreadStart" /> delegate instead of a <see cref="T:System.Threading.ParameterizedThreadStart" /> delegate.</exception>
+        <altmember cref="T:System.Threading.ParameterizedThreadStart" />
+        <altmember cref="T:System.AppDomain" />
       </Docs>
     </Member>
     <Member MemberName="Suspend">
@@ -4445,5 +4470,75 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Sleep">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Suspends the current thread for the specified amount of time.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Join">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Blocks the calling thread until the thread represented by this instance terminates.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="VolatileWrite">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a value to a field immediately, so that the value is visible to all processors in the computer.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Start">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Causes a thread to be scheduled for execution.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Abort">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Raises a <see cref="T:System.Threading.ThreadAbortException" /> in the thread on which it is invoked, to begin the process of terminating the thread. Calling this method usually terminates the thread.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="VolatileRead">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads the value of a field. The value is the latest written by any processor in a computer, regardless of the number of processors or the state of processor cache.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Threading.Thread" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

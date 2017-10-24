@@ -57,6 +57,8 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="context" /> or <paramref name="siteLinkName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Security.Authentication.AuthenticationException">The credentials that were supplied are not valid.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -93,6 +95,8 @@
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
           <paramref name="transport" /> is not a valid <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" /> value.</exception>
         <exception cref="T:System.NotSupportedException">The <paramref name="transport" /> type is not supported.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -131,6 +135,9 @@
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
           <paramref name="transport" /> is not a valid <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" /> value.</exception>
         <exception cref="T:System.NotSupportedException">The <paramref name="transport" /> type is not supported.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" />
       </Docs>
     </Member>
     <Member MemberName="Cost">
@@ -199,6 +206,7 @@
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink" /> object has not yet been saved in the Active Directory Domain Services store.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -277,6 +285,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="context" /> or <paramref name="siteLinkName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Security.Authentication.AuthenticationException">The credentials that were supplied are not valid.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" />
       </Docs>
     </Member>
     <Member MemberName="FindByName">
@@ -317,6 +326,8 @@
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="transport" /> parameter is not a valid <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" /> value.</exception>
         <exception cref="T:System.NotSupportedException">The <paramref name="transport" /> type is not supported.</exception>
         <exception cref="T:System.Security.Authentication.AuthenticationException">The credentials that were supplied are not valid.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" />
       </Docs>
     </Member>
     <Member MemberName="GetDirectoryEntry">
@@ -339,6 +350,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink" /> object has not yet been saved in the Active Directory Domain Services store.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.DirectoryEntry" />
       </Docs>
     </Member>
     <Member MemberName="InterSiteReplicationSchedule">
@@ -360,6 +372,8 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">An Active Directory Domain Services operation failed. See the exception for details.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule" />
+        <altmember cref="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink.Save" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -497,6 +511,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">An Active Directory Domain Services operation failed. See the exception for details.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink.Save" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -538,7 +553,38 @@
         <value>An <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" /> value indicating the transport type of this site link.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FindByName">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a site link based on a site link name.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

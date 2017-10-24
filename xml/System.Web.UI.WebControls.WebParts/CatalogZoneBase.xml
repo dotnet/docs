@@ -88,6 +88,7 @@
     <block subset="none" type="overrides">
       <para>If you want to develop a custom zone for hosting <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> controls, you must determine whether you want to provide zone template support. A zone template is created by types that implement the <see cref="T:System.Web.UI.ITemplate" /> interface, and is necessary if you want to enable page developers using your custom zone to reference <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> controls within your zone in the declarative markup of a Web page. If you need zone template support, you should inherit from the <see cref="T:System.Web.UI.WebControls.WebParts.CatalogZone" /> class. In contrast, if your custom zone and its <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> controls are going to be self-contained, and they will be created programmatically without any options for page developers to specify controls declaratively in a zone template, then you can inherit directly from the <see cref="T:System.Web.UI.WebControls.WebParts.CatalogZoneBase" /> class. If you inherit from the <see cref="T:System.Web.UI.WebControls.WebParts.CatalogZoneBase" /> class, you must override the <see cref="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CreateCatalogParts" /> method, and add the <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> or other server controls you want in your catalog to a <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPartCollection" /> object.</para>
     </block>
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -168,6 +169,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" />
       </Docs>
     </Member>
     <Member MemberName="CatalogPartChrome">
@@ -203,6 +205,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CreateCatalogPartChrome" />
       </Docs>
     </Member>
     <Member MemberName="CatalogParts">
@@ -254,6 +257,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">A <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> being added to the collection did not have a value assigned to its ID property.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.CatalogPartCollection" />
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -279,6 +283,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.UI.WebControls.WebParts.WebPartManager.BrowseDisplayMode" />
+        <altmember cref="F:System.Web.UI.WebControls.WebParts.WebPartManager.CatalogDisplayMode" />
       </Docs>
     </Member>
     <Member MemberName="CloseVerb">
@@ -339,6 +345,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" />
       </Docs>
     </Member>
     <Member MemberName="CreateCatalogPartChrome">
@@ -365,6 +372,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartChrome" />
       </Docs>
     </Member>
     <Member MemberName="CreateCatalogParts">
@@ -399,6 +407,7 @@
         <block subset="none" type="overrides">
           <para>Developers who create custom <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> controls should inherit from the <see cref="T:System.Web.UI.WebControls.WebParts.CatalogZoneBase" /> or <see cref="T:System.Web.UI.WebControls.WebParts.CatalogZone" /> classes, and override this method if they want to create a custom <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPartChrome" /> object to render their custom <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> controls.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.CatalogZone.CreateCatalogParts" />
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
@@ -454,6 +463,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.EmptyZoneText" />
       </Docs>
     </Member>
     <Member MemberName="HeaderText">
@@ -496,6 +506,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.HeaderText" />
       </Docs>
     </Member>
     <Member MemberName="InstructionText">
@@ -540,6 +551,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ToolZone.InstructionText" />
       </Docs>
     </Member>
     <Member MemberName="InvalidateCatalogParts">
@@ -565,6 +577,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CreateCatalogParts" />
       </Docs>
     </Member>
     <Member MemberName="LoadControlState">
@@ -588,6 +601,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="savedState" /> is not a valid control state.</exception>
+        <altmember cref="M:System.Web.UI.Control.LoadControlState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="LoadPostData">
@@ -621,6 +635,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -652,6 +667,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The size of the <paramref name="savedState" /> object does not equal the size of the current view-state object.</exception>
+        <altmember cref="M:System.Web.UI.Control.LoadViewState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -752,6 +768,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="RaisePostBackEvent">
@@ -783,6 +800,7 @@
         <block subset="none" type="overrides">
           <para>If you want to add custom verbs to a <see cref="T:System.Web.UI.WebControls.WebParts.CatalogZoneBase" /> zone, you need to override the <see cref="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.RaisePostBackEvent(System.String)" /> method to handle the event if a user clicks a custom verb.</para>
         </block>
+        <altmember cref="M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -811,6 +829,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.Render(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="RenderBody">
@@ -843,6 +862,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.EditorZoneBase.RenderBody(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebZone.RenderBody(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="RenderCatalogPartLinks">
@@ -908,6 +929,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.RenderVerbs(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebZone.RenderFooter(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="RenderVerbs">
@@ -939,6 +962,8 @@
         <block subset="none" type="overrides">
           <para>The <see cref="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.RenderVerbs(System.Web.UI.HtmlTextWriter)" /> method does not handle the rendering for any custom <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" /> objects that a developer adds to a custom <see cref="T:System.Web.UI.WebControls.WebParts.CatalogZoneBase" /> zone. If you want to add custom verbs to a <see cref="T:System.Web.UI.WebControls.WebParts.CatalogZoneBase" /> class, you must inherit from the <see cref="T:System.Web.UI.WebControls.WebParts.CatalogZoneBase" /> class, and override the <see cref="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.RenderVerbs(System.Web.UI.HtmlTextWriter)" /> method, which you can use to render the custom verbs for your zone. You must also override the <see cref="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.RaisePostBackEvent(System.String)" /> method to handle the event when a custom verb is clicked by a user.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.ToolZone.RenderVerbs(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.RaisePostBackEvent(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="SaveControlState">
@@ -970,6 +995,7 @@
         <block subset="none" type="overrides">
           <para>You can optionally override the <see cref="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.SaveControlState" /> method in a derived class so that you can update the saved control state for other custom objects in the zone.</para>
         </block>
+        <altmember cref="M:System.Web.UI.Control.SaveControlState" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -996,6 +1022,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="SelectedCatalogPartID">
@@ -1106,6 +1133,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="SelectTargetZoneText">
@@ -1188,6 +1216,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.CatalogIconImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">
@@ -1220,6 +1249,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent">

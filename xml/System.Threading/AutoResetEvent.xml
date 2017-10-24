@@ -71,6 +71,7 @@
  ]]></format>
     </remarks>
     <threadsafe>This class is thread safe.</threadsafe>
+    <altmember cref="T:System.Threading.WaitHandle" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -118,6 +119,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Threading.WaitHandle" />
       </Docs>
     </Member>
   </Members>

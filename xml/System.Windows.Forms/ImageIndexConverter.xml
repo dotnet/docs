@@ -23,6 +23,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ImageList" />
+    <altmember cref="T:System.ComponentModel.TypeConverterAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -45,6 +47,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.TypeDescriptor.GetConverter(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ConvertFrom">
@@ -81,6 +84,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">The conversion could not be performed.</exception>
+        <altmember cref="T:System.ComponentModel.TypeConverter" />
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -154,6 +158,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Forms.ImageIndexConverter.GetStandardValuesSupported" />
+        <altmember cref="Overload:System.Windows.Forms.ImageIndexConverter.GetStandardValuesExclusive" />
+        <altmember cref="P:System.Windows.Forms.ImageIndexConverter.IncludeNoneAsStandardValue" />
       </Docs>
     </Member>
     <Member MemberName="GetStandardValuesExclusive">
@@ -188,6 +195,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Forms.ImageIndexConverter.GetStandardValuesSupported" />
+        <altmember cref="Overload:System.Windows.Forms.ImageIndexConverter.GetStandardValues" />
       </Docs>
     </Member>
     <Member MemberName="GetStandardValuesSupported">
@@ -218,6 +227,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Forms.ImageIndexConverter.GetStandardValues" />
+        <altmember cref="Overload:System.Windows.Forms.ImageIndexConverter.GetStandardValuesExclusive" />
       </Docs>
     </Member>
     <Member MemberName="IncludeNoneAsStandardValue">

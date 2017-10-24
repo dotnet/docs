@@ -43,6 +43,7 @@
         <summary>The <see cref="P:System.Security.Cryptography.Pkcs.SubjectIdentifierOrKey.Type" /> property retrieves the type of subject identifier or key. The subject can be identified by the certificate issuer and serial number, the hash of the subject key, or the subject key.</summary>
         <value>A member of the <see cref="T:System.Security.Cryptography.Pkcs.SubjectIdentifierOrKeyType" /> enumeration that specifies the type of subject identifier.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SubjectIdentifierOrKey.Value" />
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -79,6 +80,7 @@
   
  </term><description><see cref="T:System.Security.Cryptography.Pkcs.PublicKeyInfo" /></description></item></list></value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SubjectIdentifierOrKey.Type" />
       </Docs>
     </Member>
   </Members>

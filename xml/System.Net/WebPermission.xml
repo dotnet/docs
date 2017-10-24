@@ -59,6 +59,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Security.CodeAccessPermission" />
+    <altmember cref="T:System.Security.Permissions.PermissionState" />
+    <altmember cref="T:System.Net.NetworkAccess" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -86,6 +89,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Net.WebPermission.IsUnrestricted" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -125,6 +129,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Security.Permissions.PermissionState.Unrestricted" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -168,6 +173,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="uriString" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Text.RegularExpressions.Regex" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -215,6 +221,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Text.RegularExpressions.Regex" />
       </Docs>
     </Member>
     <Member MemberName="AcceptList">
@@ -260,6 +267,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Net.WebPermission.AddPermission(System.Net.NetworkAccess,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="AddPermission">
@@ -312,6 +320,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="uriString" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Net.NetworkAccess" />
       </Docs>
     </Member>
     <Member MemberName="AddPermission">
@@ -366,6 +375,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="uriRegex" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="T:System.Net.NetworkAccess" />
       </Docs>
     </Member>
     <Member MemberName="ConnectList">
@@ -411,6 +421,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Net.WebPermission.AddPermission(System.Net.NetworkAccess,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -498,6 +509,7 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="securityElement" /> parameter is <see langword="null." /></exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="securityElement" /> is not a permission element for this type.</exception>
+        <altmember cref="M:System.Net.WebPermission.ToXml" />
       </Docs>
     </Member>
     <Member MemberName="Intersect">
@@ -626,6 +638,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Net.WebPermission.AddPermission(System.Net.NetworkAccess,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ToXml">
@@ -666,6 +679,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Net.WebPermission.FromXml(System.Security.SecurityElement)" />
       </Docs>
     </Member>
     <Member MemberName="Union">
@@ -710,7 +724,28 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">target is not <see langword="null" /> or of type <see cref="T:System.Net.WebPermission" />.</exception>
+        <altmember cref="T:System.Security.Permissions.PermissionState" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddPermission">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the specified URI with the specified access rights to the current <see cref="T:System.Net.WebPermission" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Net.WebPermission" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

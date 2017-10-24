@@ -103,6 +103,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Xml.XmlDocument" />
+    <altmember cref="T:System.Xml.Xsl.XslTransform" />
+    <altmember cref="P:System.Web.UI.WebControls.Xml.Document" />
+    <altmember cref="P:System.Web.UI.WebControls.Xml.DocumentContent" />
+    <altmember cref="P:System.Web.UI.WebControls.Xml.DocumentSource" />
+    <altmember cref="P:System.Web.UI.WebControls.Xml.TransformArgumentList" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -154,6 +160,7 @@
         </remarks>
         <exception cref="T:System.Web.HttpException">
           <paramref name="obj" /> is not of type <see cref="T:System.Web.UI.LiteralControl" />.</exception>
+        <altmember cref="M:System.Web.UI.Control.AddParsedSubObject(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ClientID">
@@ -177,6 +184,7 @@
         <summary>Overrides the <see cref="P:System.Web.UI.Control.ClientID" /> property and returns the base server control identifier.</summary>
         <value>The base server control identifier.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.Control.ClientID" />
       </Docs>
     </Member>
     <Member MemberName="Controls">
@@ -272,6 +280,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlDocument" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.DocumentContent" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.DocumentSource" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.Transform" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.TransformSource" />
       </Docs>
     </Member>
     <Member MemberName="DocumentContent">
@@ -308,6 +321,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Xml.Document" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.DocumentSource" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.Transform" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.TransformSource" />
       </Docs>
     </Member>
     <Member MemberName="DocumentSource">
@@ -352,6 +369,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Xml.Document" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.DocumentContent" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.Transform" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.TransformSource" />
       </Docs>
     </Member>
     <Member MemberName="EnableTheming">
@@ -613,6 +634,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.Xsl.XslTransform" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.TransformSource" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.Document" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.DocumentContent" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.DocumentSource" />
       </Docs>
     </Member>
     <Member MemberName="TransformArgumentList">
@@ -648,6 +674,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.Xsl.XsltArgumentList" />
       </Docs>
     </Member>
     <Member MemberName="TransformSource">
@@ -689,6 +716,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Xml.Transform" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.Document" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.DocumentContent" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.DocumentSource" />
       </Docs>
     </Member>
     <Member MemberName="XPathNavigator">

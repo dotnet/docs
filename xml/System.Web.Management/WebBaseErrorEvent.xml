@@ -71,6 +71,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Management.WebManagementEvent" />
+    <altmember cref="T:System.Web.Management.WebErrorEvent" />
+    <altmember cref="T:System.Web.Management.WebRequestEvent" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -110,6 +113,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Management.WebEventCodes" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -151,6 +155,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Management.WebEventCodes" />
       </Docs>
     </Member>
     <Member MemberName="ErrorException">
@@ -211,5 +216,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Management.WebBaseErrorEvent" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

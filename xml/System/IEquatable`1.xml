@@ -58,6 +58,8 @@
   
  If you implement <see cref="T:System.IEquatable`1" />, you should also implement <see cref="T:System.IComparable`1" /> if instances of your type can be ordered or sorted. If your type implements <see cref="T:System.IComparable`1" />, you should also always implement <see cref="T:System.IEquatable`1" />.</para>
     </block>
+    <altmember cref="T:System.IComparable`1" />
+    <altmember cref="T:System.IComparable" />
   </Docs>
   <Members>
     <Member MemberName="Equals">

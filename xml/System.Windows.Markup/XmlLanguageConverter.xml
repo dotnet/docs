@@ -22,6 +22,7 @@
 ## XAML Text Usage  
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Markup.XmlLanguage" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,6 +38,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.XmlLanguageConverter" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Markup.XmlLanguage" />
       </Docs>
     </Member>
     <Member MemberName="CanConvertFrom">
@@ -69,6 +71,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Markup.XmlLanguage" />
       </Docs>
     </Member>
     <Member MemberName="CanConvertTo">
@@ -101,6 +104,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Markup.XmlLanguage" />
       </Docs>
     </Member>
     <Member MemberName="ConvertFrom">
@@ -137,6 +141,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Conversion could not be performed.</exception>
+        <altmember cref="T:System.Windows.Markup.XmlLanguage" />
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -180,6 +185,7 @@
         <exception cref="T:System.InvalidOperationException">Conversion could not be performed.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="destinationType" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Markup.XmlLanguage" />
       </Docs>
     </Member>
   </Members>

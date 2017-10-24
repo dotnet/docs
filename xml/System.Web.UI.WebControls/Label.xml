@@ -124,6 +124,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.WebControls.Label.Text" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -271,6 +272,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.AccessKey" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.TabIndex" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -360,6 +363,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.RenderingCompatibility" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.DisabledCssClass" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute" />
       </Docs>
     </Member>
     <Member MemberName="TagKey">

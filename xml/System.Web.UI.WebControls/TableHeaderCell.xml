@@ -31,6 +31,14 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Table" />
+    <altmember cref="T:System.Web.UI.WebControls.TableCell" />
+    <altmember cref="P:System.Web.UI.WebControls.TableCell.Text" />
+    <altmember cref="P:System.Web.UI.WebControls.TableCell.HorizontalAlign" />
+    <altmember cref="P:System.Web.UI.WebControls.TableCell.VerticalAlign" />
+    <altmember cref="P:System.Web.UI.WebControls.TableCell.Wrap" />
+    <altmember cref="P:System.Web.UI.WebControls.TableCell.RowSpan" />
+    <altmember cref="P:System.Web.UI.WebControls.TableCell.ColumnSpan" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -129,6 +137,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableHeaderScope" />
+        <altmember cref="P:System.Web.UI.WebControls.TableHeaderCell.Scope" />
+        <altmember cref="P:System.Web.UI.WebControls.TableHeaderCell.AbbreviatedText" />
       </Docs>
     </Member>
     <Member MemberName="CategoryText">
@@ -172,6 +183,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.TableHeaderCell.Scope" />
+        <altmember cref="P:System.Web.UI.WebControls.TableCell.AssociatedHeaderCellID" />
       </Docs>
     </Member>
     <Member MemberName="Scope">
@@ -214,6 +227,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableHeaderScope" />
+        <altmember cref="P:System.Web.UI.WebControls.TableHeaderCell.CategoryText" />
+        <altmember cref="P:System.Web.UI.WebControls.TableCell.AssociatedHeaderCellID" />
       </Docs>
     </Member>
   </Members>

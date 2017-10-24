@@ -371,5 +371,16 @@ Invariant($"{{ lat = {latitude}; lon = {longitude} }}")
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the string that results from formatting the composite format string along with its arguments.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

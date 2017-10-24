@@ -25,6 +25,10 @@
   <Docs>
     <summary>Specifies the return type of the XPath expression.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="P:System.Xml.XPath.XPathExpression.ReturnType" />
+    <altmember cref="P:System.Xml.Xsl.IXsltContextVariable.VariableType" />
+    <altmember cref="P:System.Xml.Xsl.IXsltContextFunction.ReturnType" />
+    <altmember cref="M:System.Xml.Xsl.XsltContext.ResolveFunction(System.String,System.String,System.Xml.XPath.XPathResultType[])" />
   </Docs>
   <Members>
     <Member MemberName="Any">

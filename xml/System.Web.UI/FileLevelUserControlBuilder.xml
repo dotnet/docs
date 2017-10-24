@@ -13,6 +13,8 @@
   <Docs>
     <summary>Supports the page parser in building a user control by specifying the <see cref="T:System.Web.UI.FileLevelUserControlBuilder" /> class that is used to parse the user control file.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Web.UI.FileLevelPageControlBuilder" />
+    <altmember cref="T:System.Web.UI.FileLevelControlBuilderAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

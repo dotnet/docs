@@ -1394,5 +1394,68 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Group">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Groups data points for one or more series, using one or more formulas.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Sort">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Performs a custom sort on the data points in one or more series.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FilterTopN">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Filters all data points in one or more series except for a specified number of points.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="InsertEmptyPoints">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Replaces the missing data points in a series or a collection of series with empty points.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Filter">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Filters one or more series, or filters the data point in a series or a collection of series, by applying a standard filtering rule or a custom filtering rule.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ExportSeriesValues">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Exports the data from the a series or collection of series to the <see cref="T:System.Data.DataSet" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GroupByAxisLabel">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Groups data points in one or more series by axis labels, using one or more formulas.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

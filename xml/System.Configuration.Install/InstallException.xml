@@ -33,6 +33,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Configuration.Install.Installer.Commit(System.Collections.IDictionary)" />
+    <altmember cref="T:System.Configuration.Install.Installer" />
+    <altmember cref="M:System.Configuration.Install.Installer.Rollback(System.Collections.IDictionary)" />
+    <altmember cref="M:System.Configuration.Install.Installer.Uninstall(System.Collections.IDictionary)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -140,5 +144,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.Install</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.Install.InstallException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

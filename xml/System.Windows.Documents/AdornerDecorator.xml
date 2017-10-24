@@ -32,6 +32,8 @@
  ]]></format>
     </remarks>
     <exception cref="T:System.ArgumentException">An attempt is made to add more than a single child to the <see cref="T:System.Windows.Documents.AdornerDecorator" />.</exception>
+    <altmember cref="T:System.Windows.Documents.AdornerDecorator" />
+    <altmember cref="T:System.Windows.Documents.AdornerLayer" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -94,6 +96,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.UIElement.Arrange(System.Windows.Rect)" />
       </Docs>
     </Member>
     <Member MemberName="Child">
@@ -170,6 +173,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.UIElement.Measure(System.Windows.Size)" />
       </Docs>
     </Member>
     <Member MemberName="VisualChildrenCount">

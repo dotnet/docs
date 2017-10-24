@@ -364,5 +364,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddAuthenticationClaims">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the specified authentication claims to the subject of the current instance.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

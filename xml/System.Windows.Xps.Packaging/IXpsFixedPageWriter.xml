@@ -25,6 +25,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Documents.FixedPage" />
+    <altmember cref="T:System.Windows.Xps.Packaging.IXpsFixedPageReader" />
+    <altmember cref="T:System.Windows.Xps.Packaging.IXpsFixedDocumentWriter" />
+    <altmember cref="T:System.Windows.Xps.Packaging.IXpsFixedDocumentSequenceWriter" />
   </Docs>
   <Members>
     <Member MemberName="AddColorContext">
@@ -53,6 +57,11 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">
           <see cref="M:System.IDisposable.Dispose" /> has been called.</exception>
+        <altmember cref="Overload:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddFont" />
+        <altmember cref="Overload:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddImage" />
+        <altmember cref="M:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddResource(System.Type,System.Uri)" />
+        <altmember cref="M:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddResourceDictionary" />
+        <altmember cref="M:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddThumbnail(System.Windows.Xps.Packaging.XpsImageType)" />
       </Docs>
     </Member>
     <MemberGroup MemberName="AddFont">
@@ -70,6 +79,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddColorContext" />
+        <altmember cref="Overload:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddImage" />
+        <altmember cref="M:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddResource(System.Type,System.Uri)" />
+        <altmember cref="M:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddResourceDictionary" />
+        <altmember cref="M:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddThumbnail(System.Windows.Xps.Packaging.XpsImageType)" />
       </Docs>
     </MemberGroup>
     <Member MemberName="AddFont">
@@ -107,6 +121,11 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">
           <see cref="M:System.IDisposable.Dispose" /> has been called.</exception>
+        <altmember cref="M:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddColorContext" />
+        <altmember cref="Overload:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddImage" />
+        <altmember cref="M:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddResource(System.Type,System.Uri)" />
+        <altmember cref="M:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddResourceDictionary" />
+        <altmember cref="M:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddThumbnail(System.Windows.Xps.Packaging.XpsImageType)" />
       </Docs>
     </Member>
     <Member MemberName="AddFont">
@@ -152,6 +171,7 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">
           <see cref="M:System.IDisposable.Dispose" /> has been called.</exception>
+        <altmember cref="M:System.Windows.Xps.Packaging.XpsFont.ObfuscateFontData(System.Byte[],System.Guid)" />
       </Docs>
     </Member>
     <Member MemberName="AddFont">
@@ -200,6 +220,8 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">
           <see cref="M:System.IDisposable.Dispose" /> has been called.</exception>
+        <altmember cref="M:System.Windows.Xps.Packaging.XpsFont.ObfuscateFontData(System.Byte[],System.Guid)" />
+        <altmember cref="P:System.Windows.Xps.Packaging.XpsFont.IsRestricted" />
       </Docs>
     </Member>
     <MemberGroup MemberName="AddImage">
@@ -217,6 +239,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddColorContext" />
+        <altmember cref="Overload:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddFont" />
+        <altmember cref="Overload:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddImage" />
+        <altmember cref="M:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddResource(System.Type,System.Uri)" />
+        <altmember cref="M:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddResourceDictionary" />
+        <altmember cref="M:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddThumbnail(System.Windows.Xps.Packaging.XpsImageType)" />
       </Docs>
     </MemberGroup>
     <Member MemberName="AddImage">
@@ -261,6 +289,7 @@
           <paramref name="mimeType" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="mimeType" /> is an empty string.</exception>
+        <altmember cref="M:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddThumbnail(System.Windows.Xps.Packaging.XpsImageType)" />
       </Docs>
     </Member>
     <Member MemberName="AddImage">
@@ -303,6 +332,7 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">
           <see cref="M:System.IDisposable.Dispose" /> has been called.</exception>
+        <altmember cref="M:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddThumbnail(System.Windows.Xps.Packaging.XpsImageType)" />
       </Docs>
     </Member>
     <Member MemberName="AddResource">
@@ -342,6 +372,7 @@
           <see cref="M:System.IDisposable.Dispose" /> has been called.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="resourceType" /> is an empty string.</exception>
+        <altmember cref="M:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddResourceDictionary" />
       </Docs>
     </Member>
     <Member MemberName="AddResourceDictionary">
@@ -370,6 +401,7 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">
           <see cref="M:System.IDisposable.Dispose" /> has been called.</exception>
+        <altmember cref="M:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddResource(System.Type,System.Uri)" />
       </Docs>
     </Member>
     <Member MemberName="AddThumbnail">

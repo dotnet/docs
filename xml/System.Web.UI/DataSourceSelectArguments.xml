@@ -39,6 +39,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.DataSourceCapabilities" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -61,6 +62,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.DataSourceCapabilities" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -163,6 +165,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.DataSourceCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="Empty">
@@ -188,6 +191,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.DataSourceSelectArguments.#ctor" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -267,6 +271,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.DataSourceSelectArguments.StartRowIndex" />
       </Docs>
     </Member>
     <Member MemberName="RaiseUnsupportedCapabilitiesError">
@@ -299,6 +304,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The data source view does not support the data source capability specified.</exception>
+        <altmember cref="T:System.Web.UI.DataSourceCapabilities" />
+        <altmember cref="T:System.Web.UI.DataSourceView" />
       </Docs>
     </Member>
     <Member MemberName="RetrieveTotalRowCount">
@@ -328,6 +335,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.DataSourceView.CanRetrieveTotalRowCount" />
+        <altmember cref="P:System.Web.UI.DataSourceSelectArguments.TotalRowCount" />
       </Docs>
     </Member>
     <Member MemberName="SortExpression">
@@ -353,6 +362,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.UI.DataSourceCapabilities.Sort" />
+        <altmember cref="P:System.Web.UI.DataSourceView.CanSort" />
       </Docs>
     </Member>
     <Member MemberName="StartRowIndex">
@@ -380,6 +391,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.DataSourceSelectArguments.MaximumRows" />
       </Docs>
     </Member>
     <Member MemberName="TotalRowCount">
@@ -405,7 +417,19 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.DataSourceView.CanRetrieveTotalRowCount" />
+        <altmember cref="P:System.Web.UI.DataSourceSelectArguments.RetrieveTotalRowCount" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataSourceSelectArguments" /> class.</summary>
+        <altmember cref="T:System.Web.UI.DataSourceCapabilities" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

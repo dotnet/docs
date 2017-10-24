@@ -46,6 +46,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ObjectDataSource" />
+    <altmember cref="T:System.Web.UI.DataSourceControl" />
+    <altmember cref="T:System.Web.UI.Design.DataSourceDesigner" />
+    <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
+    <altmember cref="T:System.Web.UI.Design.HtmlControlDesigner" />
+    <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -68,6 +74,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ObjectDataSource" />
+        <altmember cref="T:System.Web.UI.Design.DataSourceDesigner" />
+        <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
+        <altmember cref="T:System.Web.UI.Design.HtmlControlDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
       </Docs>
     </Member>
     <Member MemberName="CanConfigure">
@@ -96,6 +107,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.Configure" />
+        <altmember cref="T:System.Web.UI.WebControls.ObjectDataSource" />
+        <altmember cref="P:System.ComponentModel.Component.Site" />
+        <altmember cref="T:System.ComponentModel.Design.ITypeResolutionService" />
+        <altmember cref="T:System.ComponentModel.Design.ITypeDiscoveryService" />
       </Docs>
     </Member>
     <Member MemberName="CanRefreshSchema">
@@ -124,6 +140,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.RefreshSchema(System.Boolean)" />
+        <altmember cref="T:System.Web.UI.WebControls.ObjectDataSource" />
+        <altmember cref="P:System.ComponentModel.Component.Site" />
+        <altmember cref="T:System.ComponentModel.Design.ITypeResolutionService" />
+        <altmember cref="T:System.ComponentModel.Design.ITypeDiscoveryService" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.TypeName" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.SelectMethod" />
       </Docs>
     </Member>
     <Member MemberName="Configure">
@@ -151,6 +174,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.CanConfigure" />
+        <altmember cref="T:System.Web.UI.WebControls.ObjectDataSource" />
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.InvokeTransactedChange(System.IServiceProvider,System.ComponentModel.IComponent,System.Web.UI.Design.TransactedChangeCallback,System.Object,System.String,System.ComponentModel.MemberDescriptor)" />
+        <altmember cref="T:System.Web.UI.Design.TransactedChangeCallback" />
       </Docs>
     </Member>
     <Member MemberName="GetView">
@@ -180,6 +207,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ObjectDataSource" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView" />
+        <altmember cref="T:System.Web.UI.Design.DesignerDataSourceView" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.GetViewNames" />
       </Docs>
     </Member>
     <Member MemberName="GetViewNames">
@@ -206,6 +237,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ObjectDataSource" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView" />
       </Docs>
     </Member>
     <Member MemberName="PreFilterProperties">
@@ -247,6 +280,11 @@
         <block subset="none" type="overrides">
           <para>Override the <see cref="M:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.PreFilterProperties(System.Collections.IDictionary)" /> method to add properties to or change attributes of properties in the design-time property collection. Be sure to call the <see cref="M:System.Web.UI.Design.ControlDesigner.PreFilterProperties(System.Collections.IDictionary)" /> base method before performing other processing.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.ObjectDataSource" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.TypeName" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.SelectMethod" />
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.PreFilterProperties(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Web.UI.Design.HtmlControlDesigner.PreFilterProperties(System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="RefreshSchema">
@@ -275,6 +313,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.SelectMethod" />
+        <altmember cref="P:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.TypeName" />
+        <altmember cref="T:System.Web.UI.WebControls.ObjectDataSource" />
+        <altmember cref="M:System.ComponentModel.Design.ITypeResolutionService.GetType(System.String,System.Boolean,System.Boolean)" />
+        <altmember cref="M:System.Type.GetMethods(System.Reflection.BindingFlags)" />
+        <altmember cref="T:System.Data.DataTable" />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.DesignerState" />
       </Docs>
     </Member>
     <Member MemberName="SelectMethod">
@@ -302,6 +347,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.RefreshSchema(System.Boolean)" />
+        <altmember cref="P:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.CanRefreshSchema" />
+        <altmember cref="M:System.Web.UI.Design.DataSourceDesigner.GetDesignTimeHtml" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSource.Select" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.SelectMethod" />
+        <altmember cref="T:System.Web.UI.WebControls.ObjectDataSource" />
+        <altmember cref="E:System.Web.UI.Design.DataSourceDesigner.DataSourceChanged" />
       </Docs>
     </Member>
     <Member MemberName="TypeName">
@@ -329,6 +381,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.RefreshSchema(System.Boolean)" />
+        <altmember cref="P:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.CanRefreshSchema" />
+        <altmember cref="M:System.Web.UI.Design.DataSourceDesigner.GetDesignTimeHtml" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSource.Select" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.SelectMethod" />
+        <altmember cref="T:System.Web.UI.WebControls.ObjectDataSource" />
+        <altmember cref="E:System.Web.UI.Design.DataSourceDesigner.DataSourceChanged" />
       </Docs>
     </Member>
   </Members>

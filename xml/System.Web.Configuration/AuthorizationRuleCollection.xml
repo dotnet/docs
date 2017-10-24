@@ -46,6 +46,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Configuration.AuthorizationRule" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -98,6 +99,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationException">The <see cref="T:System.Web.Configuration.AuthorizationRule" /> object already exists in the collection, or the collection is read-only.</exception>
+        <altmember cref="T:System.Web.Configuration.AuthorizationRule" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -131,6 +133,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.AuthorizationRule" />
       </Docs>
     </Member>
     <Member MemberName="CollectionType">

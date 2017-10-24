@@ -55,6 +55,21 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Menu" />
+    <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+    <altmember cref="P:System.Web.UI.WebControls.Menu.Items" />
+    <altmember cref="P:System.Web.UI.WebControls.MenuItem.ChildItems" />
+    <altmember cref="P:System.Web.UI.WebControls.MenuItemCollection.Count" />
+    <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.Add(System.Web.UI.WebControls.MenuItem)" />
+    <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.AddAt(System.Int32,System.Web.UI.WebControls.MenuItem)" />
+    <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.Clear" />
+    <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.Contains(System.Web.UI.WebControls.MenuItem)" />
+    <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.CopyTo(System.Array,System.Int32)" />
+    <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.CopyTo(System.Web.UI.WebControls.MenuItem[],System.Int32)" />
+    <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.GetEnumerator" />
+    <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.IndexOf(System.Web.UI.WebControls.MenuItem)" />
+    <altmember cref="P:System.Web.UI.WebControls.MenuItemCollection.Item(System.Int32)" />
+    <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.RemoveAt(System.Int32)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -82,6 +97,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.Items" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ChildItems" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -112,6 +131,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.Items" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ChildItems" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -155,6 +178,14 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="child" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.Items" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ChildItems" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.AddAt(System.Int32,System.Web.UI.WebControls.MenuItem)" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.Clear" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.Remove(System.Web.UI.WebControls.MenuItem)" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="AddAt">
@@ -198,6 +229,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.Items" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ChildItems" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.Add(System.Web.UI.WebControls.MenuItem)" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.Clear" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.Remove(System.Web.UI.WebControls.MenuItem)" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -234,6 +273,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.Items" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ChildItems" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.Add(System.Web.UI.WebControls.MenuItem)" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.AddAt(System.Int32,System.Web.UI.WebControls.MenuItem)" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.Remove(System.Web.UI.WebControls.MenuItem)" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -272,6 +319,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.Items" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ChildItems" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemCollection.Count" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.IndexOf(System.Web.UI.WebControls.MenuItem)" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -306,6 +359,12 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="array" /> is not an array of <see cref="T:System.Web.UI.WebControls.MenuItem" /> objects.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.Items" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ChildItems" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.GetEnumerator" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemCollection.Item(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -346,6 +405,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.Items" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ChildItems" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.GetEnumerator" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemCollection.Item(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -379,6 +444,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.Items" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ChildItems" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.Contains(System.Web.UI.WebControls.MenuItem)" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.IndexOf(System.Web.UI.WebControls.MenuItem)" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -418,6 +489,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.Items" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ChildItems" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.CopyTo(System.Array,System.Int32)" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemCollection.Item(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -458,6 +535,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.Items" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ChildItems" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItemCollection.Count" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.Contains(System.Web.UI.WebControls.MenuItem)" />
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -485,6 +568,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="P:System.Collections.ICollection.IsSynchronized" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -522,6 +609,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.Items" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ChildItems" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.GetEnumerator" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.CopyTo(System.Array,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -565,6 +658,14 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="value" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.Items" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ChildItems" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.Add(System.Web.UI.WebControls.MenuItem)" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.AddAt(System.Int32,System.Web.UI.WebControls.MenuItem)" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.Clear" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -606,6 +707,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.Items" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ChildItems" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.Add(System.Web.UI.WebControls.MenuItem)" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.AddAt(System.Int32,System.Web.UI.WebControls.MenuItem)" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.Clear" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemCollection.Remove(System.Web.UI.WebControls.MenuItem)" />
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -643,6 +752,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="P:System.Collections.ArrayList.SyncRoot" />
+        <altmember cref="P:System.Collections.ICollection.SyncRoot" />
+        <altmember cref="T:System.Collections.ICollection" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.IsTrackingViewState">
@@ -662,6 +776,9 @@
         <value>
           <see langword="true" /> if the control is marked to save its state; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
+        <altmember cref="M:System.Web.UI.Control.LoadViewState(System.Object)" />
+        <altmember cref="M:System.Web.UI.Control.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.LoadViewState">
@@ -683,6 +800,8 @@
         <param name="state">An <see cref="T:System.Object" /> that contains the saved view state values.</param>
         <summary>Loads the <see cref="T:System.Web.UI.WebControls.MenuItemCollection" /> object's previously saved view state.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.StateBag" />
+        <altmember cref="T:System.Web.UI.StateItem" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.SaveViewState">
@@ -702,6 +821,8 @@
         <summary>Saves the changes to view state to an <see cref="T:System.Object" />.</summary>
         <returns>The <see cref="T:System.Object" /> that contains the view state changes.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.StateBag" />
+        <altmember cref="T:System.Web.UI.StateItem" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.TrackViewState">
@@ -727,7 +848,27 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.StateBag" />
+        <altmember cref="T:System.Web.UI.StateItem" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="CopyTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies the contents of the current <see cref="T:System.Web.UI.WebControls.MenuItemCollection" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.MenuItemCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

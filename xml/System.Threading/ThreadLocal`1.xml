@@ -51,6 +51,8 @@
  ]]></format>
     </remarks>
     <threadsafe>With the exception of <see cref="M:System.Threading.ThreadLocal`1.Dispose" />, all public and protected members of <see cref="T:System.Threading.ThreadLocal`1" /> are thread-safe and may be used concurrently from multiple threads. The value returned for the <see cref="P:System.Threading.ThreadLocal`1.Value" /> and <see cref="P:System.Threading.ThreadLocal`1.IsValueCreated" /> properties is specific for the thread on which the property is accessed.</threadsafe>
+    <altmember cref="T:System.Lazy`1" />
+    <altmember cref="T:System.Threading.AsyncLocal`1" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -86,6 +88,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Lazy`1" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -154,6 +157,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="valueFactory" /> is a null reference (Nothing in Visual Basic).</exception>
+        <altmember cref="T:System.Lazy`1" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -236,6 +240,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Lazy`1" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -275,6 +280,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Lazy`1" />
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -304,6 +310,7 @@
       <Docs>
         <summary>Releases the resources used by this <see cref="T:System.Threading.ThreadLocal`1" /> instance.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Lazy`1" />
       </Docs>
     </Member>
     <Member MemberName="IsValueCreated">
@@ -334,6 +341,7 @@
         <value>true if <see cref="P:System.Threading.ThreadLocal`1.Value" /> is initialized on the current thread; otherwise false.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.ThreadLocal`1" /> instance has been disposed.</exception>
+        <altmember cref="T:System.Lazy`1" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -375,6 +383,7 @@
         <exception cref="T:System.NullReferenceException">The <see cref="P:System.Threading.ThreadLocal`1.Value" /> for the current thread is a null reference (Nothing in Visual Basic).</exception>
         <exception cref="T:System.InvalidOperationException">The initialization function attempted to reference <see cref="P:System.Threading.ThreadLocal`1.Value" /> recursively.</exception>
         <exception cref="T:System.MissingMemberException">No default constructor is provided and no value factory is supplied.</exception>
+        <altmember cref="T:System.Lazy`1" />
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -419,6 +428,7 @@
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.ThreadLocal`1" /> instance has been disposed.</exception>
         <exception cref="T:System.InvalidOperationException">The initialization function attempted to reference <see cref="P:System.Threading.ThreadLocal`1.Value" /> recursively.</exception>
         <exception cref="T:System.MissingMemberException">No default constructor is provided and no value factory is supplied.</exception>
+        <altmember cref="T:System.Lazy`1" />
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -452,5 +462,27 @@
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.ThreadLocal`1" /> instance has been disposed.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a <see cref="T:System.Threading.ThreadLocal`1" /> instance.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by this <see cref="T:System.Threading.ThreadLocal`1" /> instance.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

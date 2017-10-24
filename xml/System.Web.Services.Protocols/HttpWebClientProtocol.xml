@@ -41,6 +41,11 @@
  ]]></format>
     </remarks>
     <threadsafe>The properties on this class are copied into a new instance of a <see cref="T:System.Net.WebRequest" /> object for each XML Web service method call. While you can call XML Web service methods on the same <see cref="T:System.Web.Services.Protocols.WebClientProtocol" /> instance from different threads at the same time, there is no synchronization done to ensure that a consistent snapshot of the properties gets transferred to the <see cref="T:System.Net.WebRequest" /> object. Therefore, if you need to modify the properties and make concurrent method calls from different threads you should use a different instance of the XML Web service proxy or provide your own synchronization.</threadsafe>
+    <altmember cref="T:System.Web.Services.Protocols.WebClientProtocol" />
+    <altmember cref="T:System.Net.WebRequest" />
+    <altmember cref="T:System.Web.Services.Protocols.SoapHttpClientProtocol" />
+    <altmember cref="T:System.Web.Services.Protocols.HttpGetClientProtocol" />
+    <altmember cref="T:System.Web.Services.Protocols.HttpPostClientProtocol" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -92,6 +97,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Net.WebException">The <see cref="P:System.Web.Services.Protocols.HttpWebClientProtocol.AllowAutoRedirect" /> property is <see langword="false" /> and the Web server attempts to redirect the request.</exception>
+        <altmember cref="P:System.Net.HttpWebRequest.AllowAutoRedirect" />
       </Docs>
     </Member>
     <Member MemberName="CancelAsync">
@@ -156,6 +162,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Security.Cryptography.X509Certificates.X509CertificateCollection" />
       </Docs>
     </Member>
     <Member MemberName="CookieContainer">
@@ -195,6 +202,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.CookieContainer" />
+        <altmember cref="P:System.Web.Services.WebMethodAttribute.EnableSession" />
       </Docs>
     </Member>
     <Member MemberName="EnableDecompression">
@@ -388,6 +397,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.IWebProxy" />
+        <altmember cref="T:System.Net.WebProxy" />
       </Docs>
     </Member>
     <Member MemberName="UnsafeAuthenticatedConnectionSharing">
@@ -423,6 +434,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Net.HttpWebRequest.UnsafeAuthenticatedConnectionSharing" />
+        <altmember cref="P:System.Web.Services.Protocols.WebClientProtocol.ConnectionGroupName" />
       </Docs>
     </Member>
     <Member MemberName="UserAgent">
@@ -464,7 +477,28 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Net.HttpWebRequest.UserAgent" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetWebResponse">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a response from a request to an XML Web service method.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GenerateXmlMappings">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Xml.Serialization.XmlMembersMapping" /> for each XML Web service method exposed by the specified type(s).</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

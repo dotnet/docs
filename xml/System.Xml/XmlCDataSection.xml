@@ -33,6 +33,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Xml.XmlDocument.CreateCDataSection(System.String)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -206,6 +207,7 @@
         <summary>Gets the type of the current node.</summary>
         <value>The node type. For CDATA nodes, the value is XmlNodeType.CDATA.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Xml.XmlNodeType" />
       </Docs>
     </Member>
     <Member MemberName="ParentNode">

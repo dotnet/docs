@@ -113,6 +113,10 @@
  ]]></format>
     </remarks>
     <threadsafe>All members of this type are thread safe. Members that appear to modify instance state actually return a new instance initialized with the new value. As with any other type, reading and writing to a shared variable that contains an instance of this type must be protected by a lock to guarantee thread safety.</threadsafe>
+    <altmember cref="T:System.SByte" />
+    <altmember cref="T:System.IComparable" />
+    <altmember cref="T:System.IFormattable" />
+    <altmember cref="T:System.IConvertible" />
   </Docs>
   <Members>
     <Member MemberName="CompareTo">
@@ -188,6 +192,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IComparable" />
+        <altmember cref="M:System.Byte.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="CompareTo">
@@ -263,6 +269,9 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="value" /> is not a <see cref="T:System.Byte" />.</exception>
+        <altmember cref="T:System.ArgumentException" />
+        <altmember cref="T:System.IComparable" />
+        <altmember cref="M:System.Byte.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -315,6 +324,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Byte.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -362,6 +372,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Byte.CompareTo(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -394,6 +405,7 @@
         <summary>Returns the hash code for this instance.</summary>
         <returns>A hash code for the current <see cref="T:System.Byte" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Object.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="GetTypeCode">
@@ -469,6 +481,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Byte.MinValue" />
       </Docs>
     </Member>
     <Member MemberName="MinValue">
@@ -516,6 +529,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Byte.MaxValue" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -587,6 +601,11 @@
           <paramref name="s" /> is not of the correct format.</exception>
         <exception cref="T:System.OverflowException">
           <paramref name="s" /> represents a number less than <see cref="F:System.Byte.MinValue" /> or greater than <see cref="F:System.Byte.MaxValue" />.</exception>
+        <altmember cref="M:System.Byte.ToString" />
+        <altmember cref="F:System.Byte.MaxValue" />
+        <altmember cref="F:System.Byte.MinValue" />
+        <altmember cref="T:System.Globalization.NumberStyles" />
+        <altmember cref="T:System.Globalization.NumberFormatInfo" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -694,6 +713,13 @@
  -or-  
   
  <paramref name="style" /> is not a combination of <see cref="F:System.Globalization.NumberStyles.AllowHexSpecifier" /> and <see cref="F:System.Globalization.NumberStyles.HexNumber" /> values.</exception>
+        <altmember cref="M:System.Byte.ToString" />
+        <altmember cref="Overload:System.Byte.TryParse" />
+        <altmember cref="F:System.Byte.MaxValue" />
+        <altmember cref="F:System.Byte.MinValue" />
+        <altmember cref="T:System.Globalization.NumberStyles" />
+        <altmember cref="T:System.Globalization.NumberFormatInfo" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -767,6 +793,13 @@
           <paramref name="s" /> is not of the correct format.</exception>
         <exception cref="T:System.OverflowException">
           <paramref name="s" /> represents a number less than <see cref="F:System.Byte.MinValue" /> or greater than <see cref="F:System.Byte.MaxValue" />.</exception>
+        <altmember cref="M:System.Byte.ToString" />
+        <altmember cref="Overload:System.Byte.TryParse" />
+        <altmember cref="F:System.Byte.MaxValue" />
+        <altmember cref="F:System.Byte.MinValue" />
+        <altmember cref="T:System.Globalization.NumberStyles" />
+        <altmember cref="T:System.Globalization.NumberFormatInfo" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -876,6 +909,12 @@
  -or-  
   
  <paramref name="style" /> is not a combination of <see cref="F:System.Globalization.NumberStyles.AllowHexSpecifier" /> and <see cref="F:System.Globalization.NumberStyles.HexNumber" /> values.</exception>
+        <altmember cref="M:System.Byte.ToString" />
+        <altmember cref="F:System.Byte.MaxValue" />
+        <altmember cref="F:System.Byte.MinValue" />
+        <altmember cref="T:System.Globalization.NumberStyles" />
+        <altmember cref="T:System.Globalization.NumberFormatInfo" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="System.IComparable.CompareTo">
@@ -1654,6 +1693,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Byte.Parse(System.String)" />
+        <altmember cref="T:System.String" />
+        <altmember cref="T:System.Globalization.NumberFormatInfo" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1798,6 +1840,11 @@
         </remarks>
         <exception cref="T:System.FormatException">
           <paramref name="format" /> includes an unsupported specifier. Supported format specifiers are listed in the Remarks section.</exception>
+        <altmember cref="M:System.Byte.Parse(System.String)" />
+        <altmember cref="T:System.String" />
+        <altmember cref="T:System.Globalization.NumberFormatInfo" />
+        <altmember cref="T:System.IFormattable" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="TryParse">
@@ -1980,7 +2027,80 @@
  -or-  
   
  <paramref name="style" /> is not a combination of <see cref="F:System.Globalization.NumberStyles.AllowHexSpecifier" /> and <see cref="F:System.Globalization.NumberStyles.HexNumber" /> values.</exception>
+        <altmember cref="M:System.Byte.ToString" />
+        <altmember cref="F:System.Byte.MaxValue" />
+        <altmember cref="F:System.Byte.MinValue" />
+        <altmember cref="T:System.Globalization.NumberStyles" />
+        <altmember cref="T:System.Globalization.NumberFormatInfo" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Parse">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the string representation of a number to its <see cref="T:System.Byte" /> equivalent.</summary>
+        <altmember cref="Overload:System.Byte.TryParse" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CompareTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares this instance to a specified object or <see cref="T:System.Byte" /> and returns an indication of their relative values.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryParse">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Tries to convert the string representation of a number to its <see cref="T:System.Byte" /> equivalent, and returns a value that indicates whether the conversion succeeded.</summary>
+        <altmember cref="Overload:System.Byte.Parse" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value indicating whether two instances of <see cref="T:System.Byte" /> represent the same value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the value of the current <see cref="T:System.Byte" /> object to its equivalent string representation.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -14,6 +14,9 @@
     <summary>Represents a reference to a class member, callable expression, or variable name. This class attempts to resolve the reference to the correct value at run time.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.Binding" />
+    <altmember cref="T:System.Reflection.IReflect" />
+    <altmember cref="T:System.Reflection.MemberInfo" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -345,5 +348,14 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.LateBinding" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

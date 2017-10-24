@@ -216,5 +216,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetCustomAttributes">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides a modified collection of custom attributes for the specified object, as represented in this reflection context.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

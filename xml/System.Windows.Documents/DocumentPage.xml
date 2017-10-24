@@ -66,6 +66,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.DocumentPage.BleedBox" />
       </Docs>
     </Member>
     <Member MemberName="BleedBox">
@@ -93,6 +94,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.DocumentPage.BleedBox" />
       </Docs>
     </Member>
     <Member MemberName="ContentBox">
@@ -355,5 +357,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.DocumentPage" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

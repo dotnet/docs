@@ -1065,5 +1065,32 @@ Combining Diacritical Marks](http://www.unicode.org/charts/PDF/U0300.pdf)|0x0300
  <paramref name="input" /> contained a low surrogate code point that was not preceded by a high surrogate code point.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="HtmlFormUrlEncode">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Encodes the specified string for use in form submissions whose MIME type is "application/x-www-form-urlencoded".</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="HtmlEncode">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Encodes the specified string for use as text in HTML markup.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="UrlEncode">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Encodes strings and byte arrays for use in a URL.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

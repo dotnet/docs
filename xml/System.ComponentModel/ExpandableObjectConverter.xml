@@ -48,6 +48,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.NotifyParentPropertyAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -72,6 +73,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ExpandableObjectConverter" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.NotifyParentPropertyAttribute" />
       </Docs>
     </Member>
     <Member MemberName="GetProperties">
@@ -124,6 +126,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.NotifyParentPropertyAttribute" />
       </Docs>
     </Member>
     <Member MemberName="GetPropertiesSupported">
@@ -163,6 +166,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.NotifyParentPropertyAttribute" />
+        <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
       </Docs>
     </Member>
   </Members>

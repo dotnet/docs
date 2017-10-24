@@ -72,6 +72,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Text.Encoding" />
+    <altmember cref="T:System.IO.Stream" />
+    <altmember cref="T:System.IO.StreamWriter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -192,6 +195,7 @@
         <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid, such as being on an unmapped drive.</exception>
         <exception cref="T:System.IO.IOException">
           <paramref name="path" /> includes an incorrect or invalid syntax for file name, directory name, or volume label.</exception>
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -315,6 +319,7 @@
           <paramref name="stream" /> does not support reading.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="stream" /> or <paramref name="encoding" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -438,6 +443,7 @@
         <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid, such as being on an unmapped drive.</exception>
         <exception cref="T:System.NotSupportedException">
           <paramref name="path" /> includes an incorrect or invalid syntax for file name, directory name, or volume label.</exception>
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -504,6 +510,7 @@
           <paramref name="stream" /> does not support reading.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="stream" /> or <paramref name="encoding" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -570,6 +577,7 @@
         <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid, such as being on an unmapped drive.</exception>
         <exception cref="T:System.NotSupportedException">
           <paramref name="path" /> includes an incorrect or invalid syntax for file name, directory name, or volume label.</exception>
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -642,6 +650,7 @@
           <paramref name="stream" /> or <paramref name="encoding" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="bufferSize" /> is less than or equal to zero.</exception>
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -719,6 +728,7 @@
           <paramref name="path" /> includes an incorrect or invalid syntax for file name, directory name, or volume label.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="buffersize" /> is less than or equal to zero.</exception>
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -1687,5 +1697,27 @@
         <exception cref="T:System.InvalidOperationException">The reader is currently in use by a previous read operation.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.StreamReader" /> class for the specified stream.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Read">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads the next character or next set of characters from the input stream.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

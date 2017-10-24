@@ -23,6 +23,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="Overload:System.Text.RegularExpressions.Regex.CompileToAssembly" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -172,6 +173,7 @@
  <paramref name="fullnamespace" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="matchTimeout" /> is negative, zero, or greater than approximately 24 days.</exception>
+        <altmember cref="P:System.Text.RegularExpressions.RegexCompilationInfo.MatchTimeout" />
       </Docs>
     </Member>
     <Member MemberName="IsPublic">
@@ -262,6 +264,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Text.RegularExpressions.RegexCompilationInfo.#ctor(System.String,System.Text.RegularExpressions.RegexOptions,System.String,System.String,System.Boolean,System.TimeSpan)" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -372,5 +375,15 @@
         <exception cref="T:System.ArgumentNullException">The value for this property is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Text.RegularExpressions.RegexCompilationInfo" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -65,6 +65,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Security.RightsManagement.SecureEnvironment.Create" />
       </Docs>
     </Member>
     <MemberGroup MemberName="Create">
@@ -124,6 +125,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Security.RightsManagement.UserActivationMode" />
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -344,7 +346,19 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Security.RightsManagement.SecureEnvironment.IsUserActivated(System.Security.RightsManagement.ContentUser)" />
+        <altmember cref="M:System.Security.RightsManagement.SecureEnvironment.RemoveActivatedUser(System.Security.RightsManagement.ContentUser)" />
+        <altmember cref="M:System.Security.RightsManagement.SecureEnvironment.GetActivatedUsers" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.Security.RightsManagement.SecureEnvironment" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -75,6 +75,12 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Net.WebPermission">for accessing the resource referenced by this request. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Connect" />.</permission>
+    <altmember cref="T:System.Net.FtpWebResponse" />
+    <altmember cref="T:System.Net.FtpStatusCode" />
+    <altmember cref="T:System.Net.WebRequestMethods.Ftp" />
+    <altmember cref="T:System.Net.WebRequest" />
+    <altmember cref="T:System.Net.WebResponse" />
+    <altmember cref="T:System.Net.WebClient" />
   </Docs>
   <Members>
     <Member MemberName="Abort">
@@ -120,6 +126,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.FtpWebResponse" />
+        <altmember cref="T:System.Net.FtpStatusCode" />
+        <altmember cref="T:System.Net.WebRequestMethods.Ftp" />
+        <altmember cref="T:System.Net.WebRequest" />
+        <altmember cref="T:System.Net.WebResponse" />
+        <altmember cref="T:System.Net.WebClient" />
       </Docs>
     </Member>
     <Member MemberName="BeginGetRequestStream">
@@ -181,6 +193,12 @@
         <block subset="none" type="usage">
           <para>This method generates network traffic.</para>
         </block>
+        <altmember cref="T:System.Net.FtpWebResponse" />
+        <altmember cref="T:System.Net.FtpStatusCode" />
+        <altmember cref="T:System.Net.WebRequestMethods.Ftp" />
+        <altmember cref="T:System.Net.WebRequest" />
+        <altmember cref="T:System.Net.WebResponse" />
+        <altmember cref="T:System.Net.WebClient" />
       </Docs>
     </Member>
     <Member MemberName="BeginGetResponse">
@@ -245,6 +263,12 @@
         <block subset="none" type="usage">
           <para>This method generates network traffic.</para>
         </block>
+        <altmember cref="T:System.Net.FtpWebResponse" />
+        <altmember cref="T:System.Net.FtpStatusCode" />
+        <altmember cref="T:System.Net.WebRequestMethods.Ftp" />
+        <altmember cref="T:System.Net.WebRequest" />
+        <altmember cref="T:System.Net.WebResponse" />
+        <altmember cref="T:System.Net.WebClient" />
       </Docs>
     </Member>
     <Member MemberName="ClientCertificates">
@@ -288,6 +312,12 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The value specified for a set operation is <see langword="null" />.</exception>
+        <altmember cref="T:System.Net.FtpWebResponse" />
+        <altmember cref="T:System.Net.FtpStatusCode" />
+        <altmember cref="T:System.Net.WebRequestMethods.Ftp" />
+        <altmember cref="T:System.Net.WebRequest" />
+        <altmember cref="T:System.Net.WebResponse" />
+        <altmember cref="T:System.Net.WebClient" />
       </Docs>
     </Member>
     <Member MemberName="ConnectionGroupName">
@@ -340,6 +370,12 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">A new value was specified for this property for a request that is already in progress.</exception>
+        <altmember cref="T:System.Net.FtpWebResponse" />
+        <altmember cref="T:System.Net.FtpStatusCode" />
+        <altmember cref="T:System.Net.WebRequestMethods.Ftp" />
+        <altmember cref="T:System.Net.WebRequest" />
+        <altmember cref="T:System.Net.WebResponse" />
+        <altmember cref="T:System.Net.WebClient" />
       </Docs>
     </Member>
     <Member MemberName="ContentLength">
@@ -422,6 +458,12 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">A new value was specified for this property for a request that is already in progress.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The value specified for this property is less than zero.</exception>
+        <altmember cref="T:System.Net.FtpWebResponse" />
+        <altmember cref="T:System.Net.FtpStatusCode" />
+        <altmember cref="T:System.Net.WebRequestMethods.Ftp" />
+        <altmember cref="T:System.Net.WebRequest" />
+        <altmember cref="T:System.Net.WebResponse" />
+        <altmember cref="T:System.Net.WebClient" />
       </Docs>
     </Member>
     <Member MemberName="ContentType">
@@ -507,6 +549,12 @@
         <exception cref="T:System.ArgumentNullException">The value specified for a set operation is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">An <see cref="T:System.Net.ICredentials" /> of a type other than <see cref="T:System.Net.NetworkCredential" /> was specified for a set operation.</exception>
         <exception cref="T:System.InvalidOperationException">A new value was specified for this property for a request that is already in progress.</exception>
+        <altmember cref="T:System.Net.FtpWebResponse" />
+        <altmember cref="T:System.Net.FtpStatusCode" />
+        <altmember cref="T:System.Net.WebRequestMethods.Ftp" />
+        <altmember cref="T:System.Net.WebRequest" />
+        <altmember cref="T:System.Net.WebResponse" />
+        <altmember cref="T:System.Net.WebClient" />
       </Docs>
     </Member>
     <Member MemberName="DefaultCachePolicy">
@@ -609,6 +657,12 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The connection to the FTP server has already been established.</exception>
+        <altmember cref="T:System.Net.FtpWebResponse" />
+        <altmember cref="T:System.Net.FtpStatusCode" />
+        <altmember cref="T:System.Net.WebRequestMethods.Ftp" />
+        <altmember cref="T:System.Net.WebRequest" />
+        <altmember cref="T:System.Net.WebResponse" />
+        <altmember cref="T:System.Net.WebClient" />
       </Docs>
     </Member>
     <Member MemberName="EndGetRequestStream">
@@ -665,6 +719,12 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="asyncResult" /> was not obtained by calling <see cref="M:System.Net.FtpWebRequest.BeginGetRequestStream(System.AsyncCallback,System.Object)" />.</exception>
         <exception cref="T:System.InvalidOperationException">This method was already called for the operation identified by <paramref name="asyncResult" />.</exception>
+        <altmember cref="T:System.Net.FtpWebResponse" />
+        <altmember cref="T:System.Net.FtpStatusCode" />
+        <altmember cref="T:System.Net.WebRequestMethods.Ftp" />
+        <altmember cref="T:System.Net.WebRequest" />
+        <altmember cref="T:System.Net.WebResponse" />
+        <altmember cref="T:System.Net.WebClient" />
       </Docs>
     </Member>
     <Member MemberName="EndGetResponse">
@@ -725,6 +785,13 @@
         <block subset="none" type="usage">
           <para>This method generates network traffic.</para>
         </block>
+        <altmember cref="T:System.Net.FtpWebResponse" />
+        <altmember cref="T:System.Net.FtpStatusCode" />
+        <altmember cref="T:System.Net.WebRequestMethods.Ftp" />
+        <altmember cref="T:System.Net.WebRequest" />
+        <altmember cref="T:System.Net.WebResponse" />
+        <altmember cref="T:System.Net.WebClient" />
+        <altmember cref="M:System.Net.FtpWebRequest.GetResponse" />
       </Docs>
     </Member>
     <Member MemberName="GetRequestStream">
@@ -786,6 +853,12 @@
         <block subset="none" type="usage">
           <para>This method generates network traffic.</para>
         </block>
+        <altmember cref="T:System.Net.FtpWebResponse" />
+        <altmember cref="T:System.Net.FtpStatusCode" />
+        <altmember cref="T:System.Net.WebRequestMethods.Ftp" />
+        <altmember cref="T:System.Net.WebRequest" />
+        <altmember cref="T:System.Net.WebResponse" />
+        <altmember cref="T:System.Net.WebClient" />
       </Docs>
     </Member>
     <Member MemberName="GetResponse">
@@ -855,6 +928,12 @@
         <block subset="none" type="usage">
           <para>This method generates network traffic.</para>
         </block>
+        <altmember cref="T:System.Net.FtpWebResponse" />
+        <altmember cref="T:System.Net.FtpStatusCode" />
+        <altmember cref="T:System.Net.WebRequestMethods.Ftp" />
+        <altmember cref="T:System.Net.WebRequest" />
+        <altmember cref="T:System.Net.WebResponse" />
+        <altmember cref="T:System.Net.WebClient" />
       </Docs>
     </Member>
     <Member MemberName="Headers">
@@ -945,6 +1024,12 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">A new value was specified for this property for a request that is already in progress.</exception>
+        <altmember cref="T:System.Net.FtpWebResponse" />
+        <altmember cref="T:System.Net.FtpStatusCode" />
+        <altmember cref="T:System.Net.WebRequestMethods.Ftp" />
+        <altmember cref="T:System.Net.WebRequest" />
+        <altmember cref="T:System.Net.WebResponse" />
+        <altmember cref="T:System.Net.WebClient" />
       </Docs>
     </Member>
     <Member MemberName="Method">
@@ -1003,6 +1088,12 @@
  \- or -  
   
  Multiple methods were specified.</exception>
+        <altmember cref="T:System.Net.FtpWebResponse" />
+        <altmember cref="T:System.Net.FtpStatusCode" />
+        <altmember cref="T:System.Net.WebRequestMethods.Ftp" />
+        <altmember cref="T:System.Net.WebRequest" />
+        <altmember cref="T:System.Net.WebResponse" />
+        <altmember cref="T:System.Net.WebClient" />
       </Docs>
     </Member>
     <Member MemberName="PreAuthenticate">
@@ -1088,6 +1179,14 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">This property cannot be set to <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">A new value was specified for this property for a request that is already in progress.</exception>
+        <altmember cref="T:System.Net.FtpWebResponse" />
+        <altmember cref="T:System.Net.FtpStatusCode" />
+        <altmember cref="T:System.Net.WebRequestMethods.Ftp" />
+        <altmember cref="T:System.Net.WebRequest" />
+        <altmember cref="T:System.Net.WebResponse" />
+        <altmember cref="T:System.Net.WebClient" />
+        <altmember cref="T:System.Net.WebProxy" />
+        <altmember cref="T:System.Net.GlobalProxySelection" />
       </Docs>
     </Member>
     <Member MemberName="ReadWriteTimeout">
@@ -1199,6 +1298,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.FtpWebResponse" />
+        <altmember cref="T:System.Net.FtpStatusCode" />
+        <altmember cref="T:System.Net.WebRequestMethods.Ftp" />
+        <altmember cref="T:System.Net.WebRequest" />
+        <altmember cref="T:System.Net.WebResponse" />
+        <altmember cref="T:System.Net.WebClient" />
       </Docs>
     </Member>
     <Member MemberName="ServicePoint">
@@ -1241,6 +1346,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.FtpWebResponse" />
+        <altmember cref="T:System.Net.FtpStatusCode" />
+        <altmember cref="T:System.Net.WebRequestMethods.Ftp" />
+        <altmember cref="T:System.Net.WebRequest" />
+        <altmember cref="T:System.Net.WebResponse" />
+        <altmember cref="T:System.Net.WebClient" />
       </Docs>
     </Member>
     <Member MemberName="Timeout">
@@ -1291,6 +1402,12 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value specified is less than zero and is not <see cref="F:System.Threading.Timeout.Infinite" />.</exception>
         <exception cref="T:System.InvalidOperationException">A new value was specified for this property for a request that is already in progress.</exception>
+        <altmember cref="T:System.Net.FtpWebResponse" />
+        <altmember cref="T:System.Net.FtpStatusCode" />
+        <altmember cref="T:System.Net.WebRequestMethods.Ftp" />
+        <altmember cref="T:System.Net.WebRequest" />
+        <altmember cref="T:System.Net.WebResponse" />
+        <altmember cref="T:System.Net.WebClient" />
       </Docs>
     </Member>
     <Member MemberName="UseBinary">
@@ -1337,6 +1454,12 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">A new value was specified for this property for a request that is already in progress.</exception>
+        <altmember cref="T:System.Net.FtpWebResponse" />
+        <altmember cref="T:System.Net.FtpStatusCode" />
+        <altmember cref="T:System.Net.WebRequestMethods.Ftp" />
+        <altmember cref="T:System.Net.WebRequest" />
+        <altmember cref="T:System.Net.WebResponse" />
+        <altmember cref="T:System.Net.WebClient" />
       </Docs>
     </Member>
     <Member MemberName="UseDefaultCredentials">
@@ -1427,6 +1550,12 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">A new value was specified for this property for a request that is already in progress.</exception>
+        <altmember cref="T:System.Net.FtpWebResponse" />
+        <altmember cref="T:System.Net.FtpStatusCode" />
+        <altmember cref="T:System.Net.WebRequestMethods.Ftp" />
+        <altmember cref="T:System.Net.WebRequest" />
+        <altmember cref="T:System.Net.WebResponse" />
+        <altmember cref="T:System.Net.WebClient" />
       </Docs>
     </Member>
   </Members>

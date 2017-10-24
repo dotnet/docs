@@ -39,6 +39,8 @@
         <returns>The recommended method to call on the operands.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="F:Microsoft.JScript.BinaryOp.operatorMeth" />
+        <altmember cref="F:Microsoft.JScript.BinaryOp.operatorTok" />
       </Docs>
     </Member>
     <Member MemberName="operand1">
@@ -93,6 +95,7 @@
         <summary>Represents the operation that is actually performed.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="F:Microsoft.JScript.BinaryOp.operatorTok" />
       </Docs>
     </Member>
     <Member MemberName="operatorTok">
@@ -111,6 +114,7 @@
         <summary>Represents the operation that is requested. One of the <see cref="T:Microsoft.JScript.JSToken" /> enumeration values.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="F:Microsoft.JScript.BinaryOp.operatorMeth" />
       </Docs>
     </Member>
     <Member MemberName="type1">

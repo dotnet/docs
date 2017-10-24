@@ -263,6 +263,8 @@
  ]]></format>
     </remarks>
     <threadsafe>All members of this type are thread safe. Members that appear to modify instance state actually return a new instance initialized with the new value. As with any other type, reading and writing to a shared variable that contains an instance of this type must be protected by a lock to guarantee thread safety.</threadsafe>
+    <altmember cref="T:System.Decimal" />
+    <altmember cref="T:System.Single" />
   </Docs>
   <Members>
     <Member MemberName="CompareTo">
@@ -361,6 +363,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Double.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="CompareTo">
@@ -452,6 +455,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="value" /> is not a <see cref="T:System.Double" />.</exception>
+        <altmember cref="M:System.Double.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Epsilon">
@@ -589,6 +593,8 @@
  [!code-csharp[System.Double.Equals#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.double.equals/cs/equalsoverl.cs#2)]
  [!code-vb[System.Double.Equals#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.double.equals/vb/equalsoverl.vb#2)]</para>
         </block>
+        <altmember cref="M:System.Double.Equals(System.Object)" />
+        <altmember cref="Overload:System.Double.CompareTo" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -650,6 +656,7 @@
  [!code-csharp[System.Double.Equals#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.double.equals/cs/equalsoverl.cs#2)]
  [!code-vb[System.Double.Equals#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.double.equals/vb/equalsoverl.vb#2)]</para>
         </block>
+        <altmember cref="M:System.Double.CompareTo(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -715,6 +722,7 @@
         <summary>Returns the <see cref="T:System.TypeCode" /> for value type <see cref="T:System.Double" />.</summary>
         <returns>The enumerated constant, <see cref="F:System.TypeCode.Double" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.TypeCode" />
       </Docs>
     </Member>
     <Member MemberName="IsInfinity">
@@ -772,6 +780,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Double.IsPositiveInfinity(System.Double)" />
+        <altmember cref="M:System.Double.IsNegativeInfinity(System.Double)" />
+        <altmember cref="F:System.Double.PositiveInfinity" />
+        <altmember cref="F:System.Double.NegativeInfinity" />
       </Docs>
     </Member>
     <Member MemberName="IsNaN">
@@ -835,6 +847,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Double.NaN" />
       </Docs>
     </Member>
     <Member MemberName="IsNegativeInfinity">
@@ -893,6 +906,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Double.IsInfinity(System.Double)" />
+        <altmember cref="M:System.Double.IsPositiveInfinity(System.Double)" />
+        <altmember cref="F:System.Double.PositiveInfinity" />
+        <altmember cref="F:System.Double.NegativeInfinity" />
       </Docs>
     </Member>
     <Member MemberName="IsPositiveInfinity">
@@ -945,6 +962,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Double.IsInfinity(System.Double)" />
+        <altmember cref="M:System.Double.IsNegativeInfinity(System.Double)" />
+        <altmember cref="F:System.Double.PositiveInfinity" />
+        <altmember cref="F:System.Double.NegativeInfinity" />
       </Docs>
     </Member>
     <Member MemberName="MaxValue">
@@ -1109,6 +1130,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Double.IsNaN(System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="NegativeInfinity">
@@ -1160,6 +1182,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Double.IsNegativeInfinity(System.Double)" />
+        <altmember cref="M:System.Double.IsInfinity(System.Double)" />
+        <altmember cref="F:System.Double.PositiveInfinity" />
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -1515,6 +1540,8 @@
           <paramref name="s" /> does not represent a number in a valid format.</exception>
         <exception cref="T:System.OverflowException">
           <paramref name="s" /> represents a number that is less than <see cref="F:System.Double.MinValue" /> or greater than <see cref="F:System.Double.MaxValue" />.</exception>
+        <altmember cref="M:System.Double.ToString" />
+        <altmember cref="M:System.Double.TryParse(System.String,System.Double@)" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -1629,6 +1656,8 @@
  -or-  
   
  <paramref name="style" /> includes the <see cref="F:System.Globalization.NumberStyles.AllowHexSpecifier" /> value.</exception>
+        <altmember cref="M:System.Double.ToString" />
+        <altmember cref="Overload:System.Double.TryParse" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -1714,6 +1743,8 @@
           <paramref name="s" /> does not represent a number in a valid format.</exception>
         <exception cref="T:System.OverflowException">
           <paramref name="s" /> represents a number that is less than <see cref="F:System.Double.MinValue" /> or greater than <see cref="F:System.Double.MaxValue" />.</exception>
+        <altmember cref="M:System.Double.ToString" />
+        <altmember cref="Overload:System.Double.TryParse" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -1830,6 +1861,7 @@
  <paramref name="style" /> is the <see cref="F:System.Globalization.NumberStyles.AllowHexSpecifier" /> value.</exception>
         <exception cref="T:System.OverflowException">
           <paramref name="s" /> represents a number that is less than <see cref="F:System.Double.MinValue" /> or greater than <see cref="F:System.Double.MaxValue" />.</exception>
+        <altmember cref="M:System.Double.ToString" />
       </Docs>
     </Member>
     <Member MemberName="PositiveInfinity">
@@ -1881,6 +1913,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Double.IsPositiveInfinity(System.Double)" />
+        <altmember cref="M:System.Double.IsInfinity(System.Double)" />
+        <altmember cref="F:System.Double.NegativeInfinity" />
       </Docs>
     </Member>
     <Member MemberName="System.IComparable.CompareTo">
@@ -2604,6 +2639,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Double.Parse(System.String)" />
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -2698,6 +2735,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Double.Parse(System.String)" />
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -2785,6 +2824,7 @@
  [!code-csharp[System.Double.ToString#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Double.ToString/cs/roundtripex2.cs#6)]
  [!code-vb[System.Double.ToString#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Double.ToString/vb/roundtripex2.vb#6)]</para>
         </block>
+        <altmember cref="M:System.Double.Parse(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -2875,6 +2915,7 @@
  [!code-csharp[System.Double.ToString#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Double.ToString/cs/roundtripex1.cs#5)]
  [!code-vb[System.Double.ToString#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Double.ToString/vb/roundtripex1.vb#5)]</para>
         </block>
+        <altmember cref="M:System.Double.Parse(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="TryParse">
@@ -2958,6 +2999,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Double.Parse(System.String)" />
+        <altmember cref="M:System.Double.ToString" />
       </Docs>
     </Member>
     <Member MemberName="TryParse">
@@ -3075,7 +3118,75 @@
  -or-  
   
  <paramref name="style" /> includes the <see cref="F:System.Globalization.NumberStyles.AllowHexSpecifier" /> value.</exception>
+        <altmember cref="M:System.Double.ToString" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="CompareTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares this instance to a specified object or <see cref="T:System.Double" /> object and returns an integer that indicates whether the value of this instance is less than, equal to, or greater than the value of the specified object or <see cref="T:System.Double" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value indicating whether two instances of <see cref="T:System.Double" /> represent the same value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the numeric value of this instance to its equivalent string representation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Parse">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the string representation of a number to its double-precision floating-point number equivalent.</summary>
+        <altmember cref="Overload:System.Double.TryParse" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryParse">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the string representation of a number to its double-precision floating-point number equivalent. A return value indicates whether the conversion succeeded or failed.</summary>
+        <altmember cref="Overload:System.Double.Parse" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

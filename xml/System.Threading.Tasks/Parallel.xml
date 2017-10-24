@@ -108,6 +108,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="body" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
+        <altmember cref="T:System.Threading.Tasks.ParallelLoopState" />
       </Docs>
     </Member>
     <Member MemberName="For">
@@ -2233,5 +2234,35 @@
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.CancellationTokenSource" /> associated with the <see cref="T:System.Threading.CancellationToken" /> in the <paramref name="parallelOptions" /> has been disposed.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ForEach&lt;TSource&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Executes a <see langword="foreach" /> (<see langword="For Each " /> in Visual Basic) operation in which iterations may run in parallel.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="For">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Executes a <see langword="for" /> (<see langword="For" /> in Visual Basic) loop in which iterations may run in parallel.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Invoke">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Executes each of the provided actions, possibly in parallel.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

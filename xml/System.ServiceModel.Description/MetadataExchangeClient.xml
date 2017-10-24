@@ -743,5 +743,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetMetadata">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.ServiceModel.Description.MetadataSet" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetMetadataAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an asynchronous metadata set.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

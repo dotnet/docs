@@ -58,6 +58,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="T:System.Web.UI.Design.WebControls.DataBoundControlDesigner" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -80,6 +82,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.DataBoundControlDesigner" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner" />
+        <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
+        <altmember cref="T:System.Web.UI.Design.HtmlControlDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
       </Docs>
     </Member>
     <Member MemberName="ActionLists">
@@ -98,6 +106,11 @@
         <summary>Gets or sets the designer action list collection for this designer.</summary>
         <value>The <see cref="T:System.ComponentModel.Design.DesignerActionListCollection" /> associated with this designer.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="T:System.ComponentModel.Design.DesignerActionListCollection" />
+        <altmember cref="P:System.Web.UI.Design.WebControls.DataBoundControlDesigner.ActionLists" />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.ActionLists" />
+        <altmember cref="P:System.ComponentModel.Design.ComponentDesigner.ActionLists" />
       </Docs>
     </Member>
     <Member MemberName="AutoFormats">
@@ -123,6 +136,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="T:System.Web.UI.Design.DesignerAutoFormatCollection" />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.AutoFormats" />
       </Docs>
     </Member>
     <Member MemberName="DataBind">
@@ -153,6 +169,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.DataBoundControlDesigner.DataBind(System.Web.UI.WebControls.BaseDataBoundControl)" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DataBind(System.Web.UI.WebControls.BaseDataBoundControl)" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.DataBoundControlDesigner.GetDesignTimeDataSource" />
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeHtml">
@@ -198,6 +218,10 @@
         <block subset="none" type="overrides">
           <para>If you override the <see cref="M:System.Web.UI.Design.WebControls.GridViewDesigner.GetDesignTimeHtml" /> method, be sure to call the base method, because it eventually, through several override levels, calls on the <see cref="T:System.Web.UI.WebControls.GridView" /> control or a copy of the control to generate the markup.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="M:System.ComponentModel.TypeDescriptor.Refresh(System.Object)" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.GetDesignTimeHtml" />
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.GetDesignTimeHtml" />
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeHtml">
@@ -240,6 +264,9 @@
         <block subset="none" type="overrides">
           <para>If you override the <see cref="M:System.Web.UI.Design.WebControls.GridViewDesigner.GetDesignTimeHtml(System.Web.UI.Design.DesignerRegionCollection)" /> method, be sure to call the base method or the <see cref="M:System.Web.UI.Design.WebControls.GridViewDesigner.GetDesignTimeHtml" /> overload, because they eventually, through several override levels, call on the <see cref="T:System.Web.UI.WebControls.GridView" /> control or a copy of the control to generate the markup.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="T:System.Web.UI.Design.DesignerRegion" />
+        <altmember cref="T:System.Web.UI.Design.DesignerRegionCollection" />
       </Docs>
     </Member>
     <Member MemberName="GetEditableDesignerRegionContent">
@@ -270,6 +297,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.GetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion)" />
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -300,6 +328,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="T:System.ComponentModel.IComponent" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.Initialize(System.ComponentModel.IComponent)" />
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.Initialize(System.ComponentModel.IComponent)" />
+        <altmember cref="M:System.ComponentModel.Design.ComponentDesigner.Initialize(System.ComponentModel.IComponent)" />
       </Docs>
     </Member>
     <Member MemberName="OnClick">
@@ -328,6 +361,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="T:System.Web.UI.Design.DesignerRegion" />
+        <altmember cref="T:System.Web.UI.Design.DesignerRegionMouseEventArgs" />
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.UpdateDesignTimeHtml" />
       </Docs>
     </Member>
     <Member MemberName="OnSchemaRefreshed">
@@ -353,6 +390,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.InvokeTransactedChange(System.ComponentModel.IComponent,System.Web.UI.Design.TransactedChangeCallback,System.Object,System.String)" />
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.OnComponentChanged(System.Object,System.ComponentModel.Design.ComponentChangedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="PreFilterProperties">
@@ -394,6 +434,13 @@
         <block subset="none" type="overrides">
           <para>Override the <see cref="M:System.Web.UI.Design.WebControls.GridViewDesigner.PreFilterProperties(System.Collections.IDictionary)" /> method to add properties to or change attributes of properties in the design-time property collection. Be sure to call the base method before performing other processing.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="T:System.ComponentModel.BrowsableAttribute" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.Columns" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.DataBoundControlDesigner.PreFilterProperties(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.PreFilterProperties(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.PreFilterProperties(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Web.UI.Design.HtmlControlDesigner.PreFilterProperties(System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="SampleRowCount">
@@ -419,6 +466,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="P:System.Web.UI.Design.WebControls.DataBoundControlDesigner.SampleRowCount" />
       </Docs>
     </Member>
     <Member MemberName="SetEditableDesignerRegionContent">
@@ -449,6 +498,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.SetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="TemplateGroups">
@@ -474,6 +524,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="T:System.Web.UI.Design.TemplateGroupCollection" />
+        <altmember cref="T:System.Web.UI.Design.TemplateGroup" />
+        <altmember cref="T:System.Web.UI.Design.TemplateDefinition" />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.TemplateGroups" />
       </Docs>
     </Member>
     <Member MemberName="UsePreviewControl">
@@ -505,7 +560,21 @@
         <block subset="none" type="overrides">
           <para>You can override the <see cref="P:System.Web.UI.Design.WebControls.GridViewDesigner.UsePreviewControl" /> property to return <see langword="false" /> or to determine its value based on whether the control is marked with a class-level <see cref="T:System.Web.UI.Design.SupportsPreviewControlAttribute" /> object. If the <see cref="P:System.Web.UI.Design.WebControls.GridViewDesigner.UsePreviewControl" /> is not overridden, the <see cref="T:System.Web.UI.WebControls.GridView" /> ignores the <see cref="T:System.Web.UI.Design.SupportsPreviewControlAttribute" />.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="T:System.Web.UI.WebControls.View" />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.ViewControl" />
+        <altmember cref="T:System.Web.UI.Design.SupportsPreviewControlAttribute" />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.UsePreviewControl" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetDesignTimeHtml">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the markup that is used to render the associated <see cref="T:System.Web.UI.WebControls.GridView" /> control at design time.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

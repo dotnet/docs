@@ -57,6 +57,7 @@
         <returns>
           <see langword="true" /> if any extra head elements were written; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.HtmlFormAdapter.RenderExtraHeadElements(System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="RenderPagerTag">
@@ -82,6 +83,7 @@
         <param name="text">Specifies the text used for the link.</param>
         <summary>Renders a pager tag on paginated forms. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.HtmlFormAdapter.RenderPagerTag(System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter,System.Int32,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ShouldRenderFormTag">
@@ -102,6 +104,7 @@
         <returns>
           <see langword="true" /> if a form tag should be rendered; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.HtmlFormAdapter.ShouldRenderFormTag" />
       </Docs>
     </Member>
   </Members>

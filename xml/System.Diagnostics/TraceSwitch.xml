@@ -85,6 +85,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Diagnostics.Switch" />
+    <altmember cref="T:System.Diagnostics.BooleanSwitch" />
+    <altmember cref="T:System.Diagnostics.TraceLevel" />
+    <altmember cref="T:System.Diagnostics.Debug" />
+    <altmember cref="T:System.Diagnostics.Trace" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -157,6 +162,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.TraceSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceLevel" />
+        <altmember cref="T:System.Diagnostics.Switch" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -263,6 +273,11 @@
         <exception cref="T:System.ArgumentException">
           <see cref="P:System.Diagnostics.TraceSwitch.Level" /> is set to a value that is not one of the <see cref="T:System.Diagnostics.TraceLevel" /> values.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with unmanaged code. Associated enumeration:  <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /> Security action: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />.</permission>
+        <altmember cref="T:System.Diagnostics.TraceSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceLevel" />
+        <altmember cref="T:System.Diagnostics.Switch" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName="OnSwitchSettingChanged">
@@ -300,6 +315,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.TraceSwitch" />
+        <altmember cref="T:System.Diagnostics.Switch" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName="OnValueChanged">
@@ -383,6 +402,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.TraceSwitch" />
+        <altmember cref="T:System.Diagnostics.Switch" />
+        <altmember cref="T:System.Diagnostics.TraceLevel" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName="TraceInfo">
@@ -428,6 +452,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.TraceSwitch" />
+        <altmember cref="T:System.Diagnostics.Switch" />
+        <altmember cref="T:System.Diagnostics.TraceLevel" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName="TraceVerbose">
@@ -473,6 +502,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.TraceSwitch" />
+        <altmember cref="T:System.Diagnostics.Switch" />
+        <altmember cref="T:System.Diagnostics.TraceLevel" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName="TraceWarning">
@@ -518,7 +552,22 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.TraceSwitch" />
+        <altmember cref="T:System.Diagnostics.Switch" />
+        <altmember cref="T:System.Diagnostics.TraceLevel" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.TraceSwitch" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

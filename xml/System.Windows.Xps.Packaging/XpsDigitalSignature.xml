@@ -24,6 +24,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="N:System.IO.Packaging" />
+    <altmember cref="T:System.IO.Packaging.PackageDigitalSignature" />
+    <altmember cref="T:System.Windows.Xps.Packaging.XpsSignatureDefinition" />
+    <altmember cref="T:System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -119,6 +123,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Xps.Packaging.XpsDocument.SignDigitally" />
+        <altmember cref="M:System.Windows.Xps.Packaging.XpsDigitalSignature.Verify" />
+        <altmember cref="M:System.Windows.Xps.Packaging.XpsDigitalSignature.VerifyCertificate" />
       </Docs>
     </Member>
     <Member MemberName="SignatureOriginRestricted">
@@ -203,6 +210,7 @@
         <summary>Gets the document sequence reader for the signed document sequence.</summary>
         <value>An <see cref="T:System.Windows.Xps.Packaging.IXpsFixedDocumentSequenceReader" />; or <see langword="null" /> if not all valid [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] parts have been signed in the document.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Documents.FixedDocumentSequence" />
       </Docs>
     </Member>
     <Member MemberName="SignerCertificate">
@@ -230,6 +238,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Xps.Packaging.XpsDocument.SignDigitally" />
+        <altmember cref="Overload:System.Windows.Xps.Packaging.XpsDigitalSignature.Verify" />
+        <altmember cref="Overload:System.Windows.Xps.Packaging.XpsDigitalSignature.VerifyCertificate" />
       </Docs>
     </Member>
     <Member MemberName="SigningTime">
@@ -283,6 +294,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Xps.Packaging.XpsDigitalSignature.VerifyCertificate" />
+        <altmember cref="Overload:System.Windows.Xps.Packaging.XpsDocument.SignDigitally" />
       </Docs>
     </Member>
     <Member MemberName="Verify">
@@ -305,6 +318,8 @@
         <summary>Verifies the document digital signature against a specified X.509 certificate.</summary>
         <returns>One of the <see cref="T:System.IO.Packaging.VerifyResult" /> enumeration values that specify the result of the verification attempt.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="Overload:System.Windows.Xps.Packaging.XpsDigitalSignature.VerifyCertificate" />
+        <altmember cref="Overload:System.Windows.Xps.Packaging.XpsDocument.SignDigitally" />
       </Docs>
     </Member>
     <Member MemberName="VerifyCertificate">
@@ -340,6 +355,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Xps.Packaging.XpsDocument.SignDigitally" />
+        <altmember cref="P:System.Windows.Xps.Packaging.XpsDigitalSignature.IsCertificateAvailable" />
+        <altmember cref="Overload:System.Windows.Xps.Packaging.XpsDigitalSignature.Verify" />
       </Docs>
     </Member>
     <Member MemberName="VerifyCertificate">
@@ -376,7 +394,31 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Xps.Packaging.XpsDocument.SignDigitally" />
+        <altmember cref="Overload:System.Windows.Xps.Packaging.XpsDigitalSignature.Verify" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="VerifyCertificate">
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Verifies an X.509 certificate.</summary>
+        <altmember cref="Overload:System.Windows.Xps.Packaging.XpsDocument.SignDigitally" />
+        <altmember cref="Overload:System.Windows.Xps.Packaging.XpsDigitalSignature.Verify" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Verify">
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Verifies the document digital signature against an X.509 certificate.</summary>
+        <altmember cref="Overload:System.Windows.Xps.Packaging.XpsDigitalSignature.VerifyCertificate" />
+        <altmember cref="Overload:System.Windows.Xps.Packaging.XpsDocument.SignDigitally" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

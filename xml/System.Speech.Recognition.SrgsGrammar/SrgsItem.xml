@@ -446,5 +446,14 @@
         <exception cref="T:System.ArgumentOutOfRangeException">An attempt is made to set <see cref="P:System.Speech.Recognition.SrgsGrammar.SrgsItem.Weight" /> to a negative value.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetRepeat">
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the repetition count for an item.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

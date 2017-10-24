@@ -13,6 +13,8 @@
   <Docs>
     <summary>Provides data for UI Automation events that are passed to an <see cref="T:System.Windows.Automation.AutomationEventHandler" /> delegate.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="M:System.Windows.Automation.Automation.AddAutomationEventHandler(System.Windows.Automation.AutomationEvent,System.Windows.Automation.AutomationElement,System.Windows.Automation.TreeScope,System.Windows.Automation.AutomationEventHandler)" />
+    <altmember cref="M:System.Windows.Automation.Automation.RemoveAutomationEventHandler(System.Windows.Automation.AutomationEvent,System.Windows.Automation.AutomationElement,System.Windows.Automation.AutomationEventHandler)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

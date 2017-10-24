@@ -498,5 +498,23 @@
         </block>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ReceiveRequest">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the context of the request received, if one is available</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginReceiveRequest">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous operation to receive an available request.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

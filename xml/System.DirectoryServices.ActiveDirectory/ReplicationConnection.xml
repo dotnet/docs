@@ -65,6 +65,8 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="context" /> or <paramref name="sourceServer" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Security.Authentication.AuthenticationException">The credentials that were supplied are not valid.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -106,6 +108,9 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="context" />, <paramref name="sourceServer" /> or <paramref name="schedule" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Security.Authentication.AuthenticationException">The credentials that were supplied are not valid.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -151,6 +156,8 @@
           <paramref name="transport" /> is not a valid <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" /> value.</exception>
         <exception cref="T:System.NotSupportedException">
           <paramref name="context" /> is an AD LDS instance and <paramref name="transport" /> is <see cref="F:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType.Smtp" />, which is not supported.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -198,6 +205,10 @@
           <paramref name="transport" /> is not valid.</exception>
         <exception cref="T:System.NotSupportedException">
           <paramref name="context" /> is an AD LDS instance and <paramref name="transport" /> is <see cref="F:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType.Smtp" />, which is not supported.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" />
       </Docs>
     </Member>
     <Member MemberName="ChangeNotificationStatus">
@@ -219,6 +230,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">When setting the property, the new value is not valid.</exception>
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.NotificationStatus" />
       </Docs>
     </Member>
     <Member MemberName="DataCompressionEnabled">
@@ -264,6 +276,7 @@
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationConnection" /> object has not yet been saved to the underlying directory store.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+        <altmember cref="M:System.DirectoryServices.ActiveDirectory.ReplicationConnection.Save" />
       </Docs>
     </Member>
     <Member MemberName="DestinationServer">
@@ -366,6 +379,7 @@
       <Docs>
         <summary>Overrides the <see cref="M:System.Object.Finalize" /> method.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Object.Finalize" />
       </Docs>
     </Member>
     <Member MemberName="FindByName">
@@ -399,6 +413,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="context" /> or <paramref name="name" /> is <see langword="null" />.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" />
       </Docs>
     </Member>
     <Member MemberName="GeneratedByKcc">
@@ -442,6 +457,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
         <exception cref="T:System.InvalidOperationException">The current object has not been committed to the server. <see cref="M:System.DirectoryServices.ActiveDirectory.ReplicationConnection.Save" /> must be called first.</exception>
+        <altmember cref="T:System.DirectoryServices.DirectoryEntry" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -503,6 +519,7 @@
         <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule" /> object that represents the schedule on which the source server is available for replication. If this property is <see langword="null" />, then the default schedule is used.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule" />
       </Docs>
     </Member>
     <Member MemberName="ReplicationScheduleOwnedByUser">
@@ -607,6 +624,7 @@
         <returns>A string that contains the name of the replication connection.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+        <altmember cref="P:System.DirectoryServices.ActiveDirectory.ReplicationConnection.Name" />
       </Docs>
     </Member>
     <Member MemberName="TransportType">
@@ -627,7 +645,28 @@
         <value>One of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" /> members that specifies the type of transport that is used by this replication connection.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationConnection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources held by the object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -26,6 +26,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.SettingsProvider" />
+    <altmember cref="T:System.Configuration.SettingsProviderAttribute" />
+    <altmember cref="P:System.Configuration.ApplicationSettingsBase.Providers" />
+    <altmember cref="T:System.Collections.Hashtable" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -52,6 +56,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Configuration.Provider.ProviderCollection.Count" />
+        <altmember cref="M:System.Configuration.Provider.ProviderCollection.Clear" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -98,6 +104,9 @@
  A settings provider with the same <see cref="P:System.Configuration.Provider.ProviderBase.Name" /> already exists in the collection.</exception>
         <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="provider" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="P:System.Configuration.SettingsProviderCollection.Item(System.String)" />
+        <altmember cref="P:System.Configuration.Provider.ProviderCollection.Count" />
+        <altmember cref="M:System.Configuration.Provider.ProviderCollection.Clear" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -133,6 +142,11 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">The collection is read-only when setting this value.</exception>
+        <altmember cref="T:System.Configuration.SettingsProvider" />
+        <altmember cref="M:System.Configuration.SettingsProviderCollection.Add(System.Configuration.Provider.ProviderBase)" />
+        <altmember cref="P:System.Configuration.Provider.ProviderCollection.Count" />
+        <altmember cref="M:System.Configuration.Provider.ProviderCollection.GetEnumerator" />
+        <altmember cref="M:System.Configuration.Provider.ProviderCollection.SetReadOnly" />
       </Docs>
     </Member>
   </Members>

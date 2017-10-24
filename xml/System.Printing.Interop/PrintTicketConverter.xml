@@ -288,5 +288,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ConvertPrintTicketToDevMode">
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the specified <see cref="T:System.Printing.PrintTicket" /> to an unmanaged [DEVMODE](http://go.microsoft.com/fwlink/?LinkId=89844) structure.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ConvertDevModeToPrintTicket">
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the specified [DEVMODE](http://go.microsoft.com/fwlink/?LinkId=89844) structure to a managed code <see cref="T:System.Printing.PrintTicket" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -53,6 +53,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ButtonBase" />
+    <altmember cref="T:System.Windows.Forms.RadioButton" />
+    <altmember cref="T:System.Windows.Forms.CheckBox" />
+    <altmember cref="T:System.Windows.Forms.IButtonControl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -84,6 +88,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Button" />
       </Docs>
     </Member>
     <Member MemberName="AutoSizeMode">
@@ -302,6 +307,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Button.NotifyDefault(System.Boolean)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Button.NotifyDefault(System.Boolean)" /> method.</para>
         </block>
+        <altmember cref="M:System.Windows.Forms.IButtonControl.NotifyDefault(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="OnClick">
@@ -323,6 +329,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.Click" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnClick(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnFontChanged">
@@ -377,6 +384,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="M:System.Windows.Forms.Control.OnMouseEnter(System.EventArgs)" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.ButtonBase.OnMouseEnter(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseLeave">
@@ -398,6 +406,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="M:System.Windows.Forms.Control.OnMouseLeave(System.EventArgs)" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.ButtonBase.OnMouseLeave(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseUp">
@@ -431,6 +440,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Button.OnMouseUp(System.Windows.Forms.MouseEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Button.OnMouseUp(System.Windows.Forms.MouseEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="M:System.Windows.Forms.ButtonBase.OnMouseDown(System.Windows.Forms.MouseEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnTextChanged">
@@ -498,6 +508,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.Click" />
       </Docs>
     </Member>
     <Member MemberName="ProcessMnemonic">
@@ -568,6 +579,7 @@
         <param name="m">The Windows <see cref="T:System.Windows.Forms.Message" /> to process.</param>
         <summary>Processes Windows messages.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.WndProc(System.Windows.Forms.Message@)" />
       </Docs>
     </Member>
   </Members>

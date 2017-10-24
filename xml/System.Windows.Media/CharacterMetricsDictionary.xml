@@ -477,6 +477,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.CharacterMetricsDictionary.Contains(System.Collections.Generic.KeyValuePair{System.Int32,System.Windows.Media.CharacterMetrics})" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.GetEnumerator">
@@ -503,6 +504,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.CharacterMetricsDictionary.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.IsFixedSize">
@@ -558,6 +560,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.CharacterMetricsDictionary.Item(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.Keys">
@@ -583,6 +586,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.CharacterMetricsDictionary.Keys" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.Remove">
@@ -611,6 +615,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.CharacterMetricsDictionary.Remove(System.Collections.Generic.KeyValuePair{System.Int32,System.Windows.Media.CharacterMetrics})" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.Values">
@@ -636,6 +641,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.CharacterMetricsDictionary.Values" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -662,6 +668,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.CharacterMetricsDictionary.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="TryGetValue">
@@ -719,5 +726,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the element from <see cref="T:System.Windows.Media.CharacterMetricsDictionary" /> based on the specified character code.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a character code and associated <see cref="T:System.Windows.Media.CharacterMetrics" /> value to the collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

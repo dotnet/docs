@@ -26,6 +26,7 @@
  ]]></format>
     </remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.JSBuiltin" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -45,6 +46,7 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.JSFunctionAttribute" /> class, using the specified calling conventions.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.JSBuiltin" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -86,7 +88,17 @@
         <returns>The calling conventions of the method or constructor.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.JSBuiltin" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.JSFunctionAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

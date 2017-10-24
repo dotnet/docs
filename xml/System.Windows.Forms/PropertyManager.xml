@@ -53,6 +53,7 @@
       <Docs>
         <summary>When overridden in a derived class, adds a new item to the underlying list.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.BindingManagerBase.AddNew" />
       </Docs>
     </Member>
     <Member MemberName="CancelCurrentEdit">
@@ -71,6 +72,7 @@
       <Docs>
         <summary>When overridden in a derived class, cancels the current edit.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.BindingManagerBase.CancelCurrentEdit" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -89,6 +91,7 @@
         <summary>When overridden in a derived class, gets the number of rows managed by the <see cref="T:System.Windows.Forms.BindingManagerBase" />.</summary>
         <value>The number of rows managed by the <see cref="T:System.Windows.Forms.BindingManagerBase" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.BindingManagerBase.Count" />
       </Docs>
     </Member>
     <Member MemberName="Current">
@@ -132,6 +135,7 @@
       <Docs>
         <summary>When overridden in a derived class, ends the current edit.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.BindingManagerBase.EndCurrentEdit" />
       </Docs>
     </Member>
     <Member MemberName="GetListName">
@@ -154,6 +158,7 @@
         <summary>When overridden in a derived class, gets the name of the list supplying the data for the binding.</summary>
         <returns>The name of the list supplying the data for the binding.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.BindingManagerBase.GetListName(System.Collections.ArrayList)" />
       </Docs>
     </Member>
     <Member MemberName="OnCurrentChanged">
@@ -242,6 +247,7 @@
         <param name="index">The index of the row to delete.</param>
         <summary>When overridden in a derived class, deletes the row at the specified index from the underlying list.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.BindingManagerBase.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ResumeBinding">
@@ -260,6 +266,7 @@
       <Docs>
         <summary>When overridden in a derived class, resumes data binding.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.BindingManagerBase.ResumeBinding" />
       </Docs>
     </Member>
     <Member MemberName="SuspendBinding">

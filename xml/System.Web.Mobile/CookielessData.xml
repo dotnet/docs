@@ -26,6 +26,9 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="T:System.Collections.Specialized.HybridDictionary" />
+    <altmember cref="T:System.Web.UI.MobileControls.IPageAdapter" />
+    <altmember cref="T:System.Web.Security.FormsAuthenticationTicket" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,6 +44,9 @@
       <Docs>
         <summary>Creates an instance of the <see cref="T:System.Web.Mobile.CookielessData" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Collections.Specialized.HybridDictionary" />
+        <altmember cref="T:System.Web.UI.MobileControls.IPageAdapter" />
+        <altmember cref="T:System.Web.Security.FormsAuthenticationTicket" />
       </Docs>
     </Member>
   </Members>

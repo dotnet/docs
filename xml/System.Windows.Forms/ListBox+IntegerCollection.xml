@@ -148,6 +148,7 @@
       <Docs>
         <summary>Removes all integers from the <see cref="T:System.Windows.Forms.ListBox.IntegerCollection" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.ListBox.IntegerCollection.Remove(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -428,6 +429,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.IEnumerator.Current" />
+        <altmember cref="T:System.Collections.IEnumerator" />
+        <altmember cref="M:System.Collections.IEnumerator.MoveNext" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Add">
@@ -719,5 +723,14 @@
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddRange">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a group of integers to the collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

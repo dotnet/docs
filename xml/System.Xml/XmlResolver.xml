@@ -165,6 +165,8 @@ resolver.Credentials = myCache;
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.CredentialCache" />
+        <altmember cref="T:System.Net.NetworkCredential" />
       </Docs>
     </Member>
     <Member MemberName="GetEntity">

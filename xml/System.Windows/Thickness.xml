@@ -80,6 +80,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.ThicknessConverter" />
+    <altmember cref="T:System.Windows.Media.Animation.ThicknessAnimation" />
+    <altmember cref="T:System.Windows.Media.Animation.ThicknessAnimationUsingKeyFrames" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -413,5 +416,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares instances of <see cref="T:System.Windows.Thickness" /> for equality.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Thickness" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

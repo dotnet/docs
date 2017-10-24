@@ -37,6 +37,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Xml.XmlAttribute" />
+    <altmember cref="T:System.Xml.XmlElement" />
   </Docs>
   <Members>
     <Member MemberName="Append">
@@ -308,6 +310,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">The index being passed in is out of range.</exception>
+        <altmember cref="M:System.Xml.XmlNamedNodeMap.Item(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ItemOf">
@@ -816,5 +819,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ItemOf">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the attribute with the specified name or index.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

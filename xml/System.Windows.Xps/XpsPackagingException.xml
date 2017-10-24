@@ -13,6 +13,7 @@
   <Docs>
     <summary>The exception that is thrown when reading, writing to, registering, or accessing in some other way an <see cref="T:System.Windows.Xps.Packaging.XpsDocument" />.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Xps.Packaging.XpsDocument" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -95,5 +96,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Xps.XpsPackagingException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

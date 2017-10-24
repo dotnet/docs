@@ -29,6 +29,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Windows.Forms.DomainUpDown.Items" />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -69,6 +70,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.Insert(System.Int32,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.Remove(System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -101,6 +105,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.Add(System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.Remove(System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -138,6 +145,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DomainUpDown.Items" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -168,6 +176,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Object" />
+        <altmember cref="M:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.Add(System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -198,6 +209,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Object" />
+        <altmember cref="M:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.Add(System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.Remove(System.Object)" />
       </Docs>
     </Member>
   </Members>

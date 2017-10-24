@@ -253,6 +253,7 @@ public class TaskEventArgs : ExternalDataEventArgs
         <summary>Gets or sets the <see cref="T:System.Workflow.Runtime.IPendingWork" /> to allow the external code, raising the event, to participate in the batch.</summary>
         <value>The <see cref="T:System.Workflow.Runtime.IPendingWork" /> to allow the external code, raising the event, to participate in the batch.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Workflow.Runtime.IPendingWork" />
       </Docs>
     </Member>
     <Member MemberName="WorkItem">
@@ -271,6 +272,7 @@ public class TaskEventArgs : ExternalDataEventArgs
         <summary>Gets or sets the object that contains the external code that raises the event.</summary>
         <value>The object that contains the external code that raises the event.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Workflow.Runtime.IPendingWork" />
       </Docs>
     </Member>
   </Members>

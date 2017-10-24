@@ -30,6 +30,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Data.DataRow" />
+    <altmember cref="T:System.Data.DataView" />
+    <altmember cref="T:System.Data.EnumerableRowCollection" />
   </Docs>
   <Members>
     <Member MemberName="GetEnumerator">
@@ -58,6 +61,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Linq.Enumerable" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -86,6 +90,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.EnumerableRowCollection`1.GetEnumerator" />
       </Docs>
     </Member>
   </Members>

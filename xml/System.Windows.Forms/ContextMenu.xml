@@ -41,6 +41,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.Menu" />
+    <altmember cref="T:System.Windows.Forms.MenuItem" />
+    <altmember cref="T:System.Windows.Forms.MainMenu" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -63,6 +66,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Menu.MenuItemCollection" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -97,6 +101,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.MenuItem" />
       </Docs>
     </Member>
     <Member MemberName="Collapse">
@@ -395,5 +400,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ContextMenu" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Show">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Displays the shortcut menu at the specified position.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

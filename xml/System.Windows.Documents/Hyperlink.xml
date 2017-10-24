@@ -215,6 +215,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Documents.Hyperlink.DoClick" />
+        <altmember cref="M:System.Windows.Documents.Hyperlink.OnClick" />
       </Docs>
     </Member>
     <Member MemberName="ClickEvent">
@@ -818,5 +820,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.Hyperlink" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

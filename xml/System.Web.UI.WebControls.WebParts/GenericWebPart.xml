@@ -231,6 +231,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.CreateControlCollection" />
       </Docs>
     </Member>
     <Member MemberName="CreateEditorParts">
@@ -328,6 +329,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.Height" />
       </Docs>
     </Member>
     <Member MemberName="ID">
@@ -346,6 +348,7 @@
         <summary>Gets or sets the ID of a control. This value is not inheritable.</summary>
         <value>A string that contains the ID of the control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.Control.ID" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -396,6 +399,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.IWebPart.Subtitle" />
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -442,6 +446,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.Part.Title" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.IWebPart.Title" />
       </Docs>
     </Member>
     <Member MemberName="TitleIconImageUrl">
@@ -561,6 +567,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.IWebActionable.Verbs" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.Verbs" />
       </Docs>
     </Member>
     <Member MemberName="WebBrowsableObject">
@@ -586,6 +594,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.IWebEditable.WebBrowsableObject" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.WebBrowsableObject" />
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -611,6 +621,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.Width" />
       </Docs>
     </Member>
   </Members>

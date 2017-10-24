@@ -63,6 +63,18 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+    <altmember cref="T:System.Web.UI.WebControls.DetailsViewRowCollection" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsView.Rows" />
+    <altmember cref="T:System.Web.UI.DataBoundLiteralControl" />
+    <altmember cref="T:System.Web.UI.WebControls.TableCell" />
+    <altmember cref="P:System.Web.UI.Control.Controls" />
+    <altmember cref="M:System.Web.UI.Control.FindControl(System.String)" />
+    <altmember cref="T:System.Web.UI.WebControls.TableRow" />
+    <altmember cref="P:System.Web.UI.WebControls.TableRow.Cells" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsViewRow.RowIndex" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsViewRow.RowState" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsViewRow.RowType" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -100,6 +112,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewRowCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.DataControlRowState" />
+        <altmember cref="T:System.Web.UI.WebControls.DataControlRowType" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.Rows" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewRow.RowIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewRow.RowType" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewRow.RowState" />
       </Docs>
     </Member>
     <Member MemberName="OnBubbleEvent">
@@ -125,6 +145,7 @@
         <returns>
           <see langword="true" /> if the event has been canceled; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="RowIndex">
@@ -153,6 +174,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewRowCollection" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.Rows" />
       </Docs>
     </Member>
     <Member MemberName="RowState">
@@ -187,6 +211,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DataControlRowState" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewRow.RowType" />
       </Docs>
     </Member>
     <Member MemberName="RowType">
@@ -222,6 +249,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DataControlRowType" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewRow.RowState" />
       </Docs>
     </Member>
   </Members>

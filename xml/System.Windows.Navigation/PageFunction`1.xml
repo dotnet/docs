@@ -42,6 +42,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Windows.Navigation.PageFunctionBase.Start" />
+    <altmember cref="P:System.Windows.Navigation.PageFunctionBase.RemoveFromJournal" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -64,6 +66,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Navigation.PageFunctionBase" />
       </Docs>
     </Member>
     <Member MemberName="OnReturn">
@@ -106,6 +109,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Navigation.PageFunctionBase.Start" />
+        <altmember cref="P:System.Windows.Navigation.PageFunctionBase.RemoveFromJournal" />
       </Docs>
     </Member>
     <Member MemberName="Return">
@@ -145,6 +150,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Navigation.PageFunctionBase.Start" />
+        <altmember cref="P:System.Windows.Navigation.PageFunctionBase.RemoveFromJournal" />
       </Docs>
     </Member>
   </Members>

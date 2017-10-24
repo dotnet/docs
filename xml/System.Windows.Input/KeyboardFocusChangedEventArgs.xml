@@ -48,6 +48,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Input.KeyboardFocusChangedEventHandler" />
+    <altmember cref="M:System.Windows.UIElement.Focus" />
+    <altmember cref="M:System.Windows.UIElement.MoveFocus(System.Windows.Input.TraversalRequest)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -72,6 +75,9 @@
         <param name="newFocus">The element that now has focus.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.KeyboardFocusChangedEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Input.KeyboardFocusChangedEventHandler" />
+        <altmember cref="M:System.Windows.UIElement.Focus" />
+        <altmember cref="M:System.Windows.UIElement.MoveFocus(System.Windows.Input.TraversalRequest)" />
       </Docs>
     </Member>
     <Member MemberName="InvokeEventHandler">
@@ -120,6 +126,9 @@
         <summary>Gets the element that focus has moved to.</summary>
         <value>The element with focus.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Input.KeyboardFocusChangedEventHandler" />
+        <altmember cref="M:System.Windows.UIElement.Focus" />
+        <altmember cref="M:System.Windows.UIElement.MoveFocus(System.Windows.Input.TraversalRequest)" />
       </Docs>
     </Member>
     <Member MemberName="OldFocus">
@@ -138,6 +147,9 @@
         <summary>Gets the element that previously had focus.</summary>
         <value>The previously focused element.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Input.KeyboardFocusChangedEventHandler" />
+        <altmember cref="M:System.Windows.UIElement.Focus" />
+        <altmember cref="M:System.Windows.UIElement.MoveFocus(System.Windows.Input.TraversalRequest)" />
       </Docs>
     </Member>
   </Members>

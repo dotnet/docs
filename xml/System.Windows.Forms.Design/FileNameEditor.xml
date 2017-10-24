@@ -109,6 +109,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Design.UITypeEditorEditStyle" />
       </Docs>
     </Member>
     <Member MemberName="InitializeDialog">
@@ -140,6 +141,7 @@
         <block subset="none" type="overrides">
           <para>You can override this method to customize the initialization of the dialog.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.OpenFileDialog" />
       </Docs>
     </Member>
   </Members>

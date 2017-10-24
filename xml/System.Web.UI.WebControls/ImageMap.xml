@@ -163,6 +163,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.WebControls.ImageMap.HotSpotMode" />
+    <altmember cref="E:System.Web.UI.WebControls.ImageMap.Click" />
+    <altmember cref="T:System.Web.UI.WebControls.CircleHotSpot" />
+    <altmember cref="T:System.Web.UI.WebControls.RectangleHotSpot" />
+    <altmember cref="T:System.Web.UI.WebControls.PolygonHotSpot" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -221,6 +226,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="Click">
@@ -262,6 +269,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.ImageMap.OnClick(System.Web.UI.WebControls.ImageMapEventArgs)" />
+        <altmember cref="P:System.Web.UI.WebControls.ImageMap.HotSpotMode" />
+        <altmember cref="P:System.Web.UI.WebControls.HotSpot.HotSpotMode" />
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -296,6 +306,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.Enabled" />
       </Docs>
     </Member>
     <Member MemberName="HotSpotMode">
@@ -375,6 +386,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified type is not one of the <see cref="T:System.Web.UI.WebControls.HotSpotMode" /> enumeration values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.HotSpotMode" />
+        <altmember cref="P:System.Web.UI.WebControls.HotSpot.HotSpotMode" />
+        <altmember cref="P:System.Web.UI.WebControls.HotSpot.PostBackValue" />
+        <altmember cref="P:System.Web.UI.WebControls.HotSpot.NavigateUrl" />
+        <altmember cref="E:System.Web.UI.WebControls.ImageMap.Click" />
       </Docs>
     </Member>
     <Member MemberName="HotSpots">
@@ -419,6 +435,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.HotSpotCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.HotSpot" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -449,6 +467,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="savedState" /> is not a valid <see cref="P:System.Web.UI.Control.ViewState" />.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.ImageMap.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="OnClick">
@@ -484,6 +503,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.ImageMap.OnClick(System.Web.UI.WebControls.ImageMapEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.ImageMap.OnClick(System.Web.UI.WebControls.ImageMapEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.ImageMap.Click" />
+        <altmember cref="P:System.Web.UI.WebControls.ImageMap.HotSpotMode" />
       </Docs>
     </Member>
     <Member MemberName="RaisePostBackEvent">
@@ -515,6 +536,7 @@
         <block subset="none" type="overrides">
           <para>To handle a click event in a derived class, override the <see cref="M:System.Web.UI.WebControls.ImageMap.OnClick(System.Web.UI.WebControls.ImageMapEventArgs)" /> method.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.HotSpot" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -543,6 +565,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -573,6 +596,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
+        <altmember cref="T:System.Web.UI.StateBag" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackEventHandler.RaisePostBackEvent">
@@ -662,6 +687,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Image.ImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -687,6 +713,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.StateBag" />
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
       </Docs>
     </Member>
   </Members>

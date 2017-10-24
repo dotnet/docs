@@ -46,6 +46,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.CodeDom.CodeNamespaceImportCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -109,6 +110,7 @@
         <summary>Gets or sets the line and file the statement occurs on.</summary>
         <value>A <see cref="T:System.CodeDom.CodeLinePragma" /> that indicates the context of the statement.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeLinePragma" />
       </Docs>
     </Member>
     <Member MemberName="Namespace">
@@ -133,5 +135,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeNamespaceImport" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

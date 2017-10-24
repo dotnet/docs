@@ -1896,5 +1896,60 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateSspiNegotiationOverTransportBindingElement">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a security binding element that is configured for client authentication based on SOAP SSPI negotiation using the Negotiate authentication package. The binding element requires the transport to provide server authentication and message protection (for example, HTTPS).</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateSecureConversationBindingElement">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a symmetric security binding element that is configured to establish a secure conversation between the client and service. The security context token issued at the end of the secure conversation handshake is used to secure the messages.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateSslNegotiationBindingElement">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a symmetric security binding element that is configured to do SOAP-level SSL negotiation between the client and server.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateUserNameForSslBindingElement">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a symmetric security binding element that is configured to require user name- and password-based client authentication and certificate-based server authentication. The client authenticates the server using the SOAP-level SSL protocol.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateSspiNegotiationBindingElement">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a symmetric security binding element that does SOAP SSPI negotiation based on the Negotiate authentication package.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateMutualCertificateDuplexBindingElement">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an asymmetric security binding element that is configured to require certificate-based client authentication as well as certificate-based server authentication. This authentication mode can be used to secure duplex message-exchange patterns and requires the service to be configured with the client certificate out of band.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

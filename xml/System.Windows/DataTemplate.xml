@@ -46,6 +46,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Data.Binding" />
+    <altmember cref="T:System.Windows.Controls.DataTemplateSelector" />
+    <altmember cref="T:System.Windows.HierarchicalDataTemplate" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -236,6 +239,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.DataTrigger" />
+        <altmember cref="T:System.Windows.MultiDataTrigger" />
       </Docs>
     </Member>
     <Member MemberName="ValidateTemplatedParent">
@@ -270,5 +275,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.DataTemplate" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

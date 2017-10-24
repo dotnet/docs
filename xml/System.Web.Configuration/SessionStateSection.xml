@@ -61,6 +61,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.HttpContext" />
+    <altmember cref="T:System.Web.SessionState.HttpSessionState" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -198,6 +200,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.HttpCookieMode" />
       </Docs>
     </Member>
     <Member MemberName="CookieName">
@@ -274,6 +277,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.SessionState.SessionStateMode" />
       </Docs>
     </Member>
     <Member MemberName="ElementProperty">

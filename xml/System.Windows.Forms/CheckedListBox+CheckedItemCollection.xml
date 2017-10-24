@@ -191,6 +191,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.CheckedListBox.CheckedItemCollection.Item(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -247,6 +248,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The object cannot be set.</exception>
+        <altmember cref="M:System.Windows.Forms.CheckedListBox.CheckedItemCollection.IndexOf(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">

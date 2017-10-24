@@ -24,6 +24,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IdentityModel.Tokens.Saml2SecurityToken" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -2795,5 +2796,14 @@
           <paramref name="token" /> is not a <see cref="T:System.IdentityModel.Tokens.Saml2SecurityToken" /> object.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2SecurityTokenHandler" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

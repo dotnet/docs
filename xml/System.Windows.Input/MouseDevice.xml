@@ -22,6 +22,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Input.Mouse" />
   </Docs>
   <Members>
     <Member MemberName="ActiveSource">
@@ -350,6 +351,7 @@
         <summary>Gets the state of the left mouse button of this mouse device.</summary>
         <value>The state of the button.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Input.MouseButtonEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="MiddleButton">
@@ -368,6 +370,7 @@
         <summary>The state of the middle button of this mouse device.</summary>
         <value>The state of the button.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Input.MouseButtonEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OverrideCursor">
@@ -561,5 +564,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetClientPosition">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Calculates the position of the mouse pointer, in client coordinates.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

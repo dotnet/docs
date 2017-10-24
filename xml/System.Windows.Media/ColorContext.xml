@@ -28,6 +28,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.Imaging.ColorConvertedBitmap" />
+    <altmember cref="T:System.Windows.Media.PixelFormat" />
+    <altmember cref="T:System.Windows.Media.PixelFormats" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -91,6 +94,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.PixelFormat" />
+        <altmember cref="T:System.Windows.Media.PixelFormats" />
+        <altmember cref="T:System.Windows.Media.Color" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -242,5 +248,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of <see cref="T:System.Windows.Media.ColorContext" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

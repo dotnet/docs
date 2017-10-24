@@ -35,6 +35,7 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.BooleanPrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.BooleanObject" />
       </Docs>
     </Member>
     <Member MemberName="constructor">
@@ -54,6 +55,7 @@
         <value>A reference to a prototype-based object.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.BooleanObject" />
       </Docs>
     </Member>
     <Member MemberName="toString">
@@ -82,6 +84,7 @@
         <returns>A string representation of <paramref name="thisob" /> that is created by the <see cref="T:Microsoft.JScript.Convert" /> class.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.BooleanObject" />
       </Docs>
     </Member>
     <Member MemberName="valueOf">
@@ -111,6 +114,7 @@
           <paramref name="thisob" /> as a <see cref="T:Microsoft.JScript.BooleanObject" /> or a <see cref="T:System.Boolean" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.BooleanObject" />
       </Docs>
     </Member>
   </Members>

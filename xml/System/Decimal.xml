@@ -99,6 +99,17 @@
  ]]></format>
     </remarks>
     <threadsafe>All members of this type are thread safe. Members that appear to modify instance state actually return a new instance initialized with the new value. As with any other type, reading and writing to a shared variable that contains an instance of this type must be protected by a lock to guarantee thread safety.</threadsafe>
+    <altmember cref="T:System.SByte" />
+    <altmember cref="T:System.Int16" />
+    <altmember cref="T:System.Int32" />
+    <altmember cref="T:System.Int64" />
+    <altmember cref="T:System.Byte" />
+    <altmember cref="T:System.UInt16" />
+    <altmember cref="T:System.UInt32" />
+    <altmember cref="T:System.UInt64" />
+    <altmember cref="T:System.Single" />
+    <altmember cref="T:System.Double" />
+    <altmember cref="T:System.Char" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -269,6 +280,7 @@
  -or-  
   
  The representation of the decimal value in <paramref name="bits" /> is not valid.</exception>
+        <altmember cref="M:System.Decimal.GetBits(System.Decimal)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -580,6 +592,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.OverflowException">The sum of <paramref name="d1" /> and <paramref name="d2" /> is less than <see cref="F:System.Decimal.MinValue" /> or greater than <see cref="F:System.Decimal.MaxValue" />.</exception>
+        <altmember cref="M:System.Decimal.Subtract(System.Decimal,System.Decimal)" />
+        <altmember cref="M:System.Decimal.Multiply(System.Decimal,System.Decimal)" />
+        <altmember cref="M:System.Decimal.Divide(System.Decimal,System.Decimal)" />
       </Docs>
     </Member>
     <Member MemberName="Ceiling">
@@ -630,6 +645,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Math.Ceiling(System.Decimal)" />
+        <altmember cref="M:System.Decimal.Floor(System.Decimal)" />
       </Docs>
     </Member>
     <Member MemberName="Compare">
@@ -703,6 +720,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Decimal.CompareTo(System.Object)" />
+        <altmember cref="M:System.Decimal.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="CompareTo">
@@ -783,6 +802,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Decimal.Compare(System.Decimal,System.Decimal)" />
+        <altmember cref="M:System.Decimal.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="CompareTo">
@@ -861,6 +882,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="value" /> is not a <see cref="T:System.Decimal" />.</exception>
+        <altmember cref="M:System.Decimal.Compare(System.Decimal,System.Decimal)" />
+        <altmember cref="M:System.Decimal.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Divide">
@@ -916,6 +939,9 @@
         <exception cref="T:System.DivideByZeroException">
           <paramref name="d2" /> is zero.</exception>
         <exception cref="T:System.OverflowException">The return value (that is, the quotient) is less than <see cref="F:System.Decimal.MinValue" /> or greater than <see cref="F:System.Decimal.MaxValue" />.</exception>
+        <altmember cref="M:System.Decimal.Add(System.Decimal,System.Decimal)" />
+        <altmember cref="M:System.Decimal.Subtract(System.Decimal,System.Decimal)" />
+        <altmember cref="M:System.Decimal.Multiply(System.Decimal,System.Decimal)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -976,6 +1002,9 @@
  [!code-csharp[System.Decimal.Equals#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.decimal.equals/cs/equalsoverl.cs#2)]
  [!code-vb[System.Decimal.Equals#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.decimal.equals/vb/equalsoverl.vb#2)]</para>
         </block>
+        <altmember cref="M:System.Decimal.Equals(System.Object)" />
+        <altmember cref="Overload:System.Decimal.CompareTo" />
+        <altmember cref="M:System.Decimal.Compare(System.Decimal,System.Decimal)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -1034,6 +1063,8 @@
  [!code-csharp[System.Decimal.Equals#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.decimal.equals/cs/equalsoverl.cs#2)]
  [!code-vb[System.Decimal.Equals#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.decimal.equals/vb/equalsoverl.vb#2)]</para>
         </block>
+        <altmember cref="M:System.Decimal.Compare(System.Decimal,System.Decimal)" />
+        <altmember cref="M:System.Decimal.CompareTo(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -1088,6 +1119,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Decimal.Compare(System.Decimal,System.Decimal)" />
+        <altmember cref="M:System.Decimal.CompareTo(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Floor">
@@ -1147,6 +1180,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Decimal.Round(System.Decimal,System.Int32)" />
+        <altmember cref="M:System.Decimal.Truncate(System.Decimal)" />
+        <altmember cref="M:System.Decimal.Ceiling(System.Decimal)" />
+        <altmember cref="M:System.Math.Floor(System.Decimal)" />
       </Docs>
     </Member>
     <Member MemberName="FromOACurrency">
@@ -1189,6 +1226,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Decimal.ToOACurrency(System.Decimal)" />
       </Docs>
     </Member>
     <Member MemberName="GetBits">
@@ -1261,6 +1299,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Decimal.#ctor" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -1383,6 +1422,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Decimal.Zero" />
+        <altmember cref="F:System.Decimal.One" />
+        <altmember cref="F:System.Decimal.MinusOne" />
+        <altmember cref="F:System.Decimal.MinValue" />
       </Docs>
     </Member>
     <Member MemberName="MinusOne">
@@ -1424,6 +1467,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Decimal.Zero" />
+        <altmember cref="F:System.Decimal.One" />
+        <altmember cref="F:System.Decimal.MaxValue" />
+        <altmember cref="F:System.Decimal.MinValue" />
       </Docs>
     </Member>
     <Member MemberName="MinValue">
@@ -1470,6 +1517,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Decimal.Zero" />
+        <altmember cref="F:System.Decimal.One" />
+        <altmember cref="F:System.Decimal.MinusOne" />
+        <altmember cref="F:System.Decimal.MaxValue" />
       </Docs>
     </Member>
     <Member MemberName="Multiply">
@@ -1524,6 +1575,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.OverflowException">The return value is less than <see cref="F:System.Decimal.MinValue" /> or greater than <see cref="F:System.Decimal.MaxValue" />.</exception>
+        <altmember cref="M:System.Decimal.Add(System.Decimal,System.Decimal)" />
+        <altmember cref="M:System.Decimal.Subtract(System.Decimal,System.Decimal)" />
+        <altmember cref="M:System.Decimal.Divide(System.Decimal,System.Decimal)" />
       </Docs>
     </Member>
     <Member MemberName="Negate">
@@ -1615,6 +1669,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Decimal.Zero" />
+        <altmember cref="F:System.Decimal.MinusOne" />
+        <altmember cref="F:System.Decimal.MaxValue" />
+        <altmember cref="F:System.Decimal.MinValue" />
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
@@ -1670,6 +1728,7 @@
  The equivalent method for this operator is <xref:System.Decimal.Add%28System.Decimal%2CSystem.Decimal%29?displayProperty=nameWithType>]]></format>
         </remarks>
         <exception cref="T:System.OverflowException">The return value is less than <see cref="F:System.Decimal.MinValue" /> or greater than <see cref="F:System.Decimal.MaxValue" />.</exception>
+        <altmember cref="M:System.Decimal.Add(System.Decimal,System.Decimal)" />
       </Docs>
     </Member>
     <Member MemberName="op_Decrement">
@@ -1724,6 +1783,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.OverflowException">The return value is less than <see cref="F:System.Decimal.MinValue" /> or greater than <see cref="F:System.Decimal.MaxValue" />.</exception>
+        <altmember cref="M:System.Decimal.Subtract(System.Decimal,System.Decimal)" />
       </Docs>
     </Member>
     <Member MemberName="op_Division">
@@ -1781,6 +1841,7 @@
         <exception cref="T:System.DivideByZeroException">
           <paramref name="d2" /> is zero.</exception>
         <exception cref="T:System.OverflowException">The return value is less than <see cref="F:System.Decimal.MinValue" /> or greater than <see cref="F:System.Decimal.MaxValue" />.</exception>
+        <altmember cref="M:System.Decimal.Divide(System.Decimal,System.Decimal)" />
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -1836,6 +1897,8 @@
   
  The equivalent method for this operator is <xref:System.Decimal.Equals%28System.Object%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <altmember cref="M:System.Decimal.Equals(System.Object)" />
+        <altmember cref="M:System.Decimal.op_Inequality(System.Decimal,System.Decimal)" />
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1888,6 +1951,7 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is less than <see cref="F:System.Byte.MinValue" /> or greater than <see cref="F:System.Byte.MaxValue" />.</exception>
+        <altmember cref="T:System.Byte" />
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1939,6 +2003,7 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is less than <see cref="F:System.Char.MinValue" /> or greater than <see cref="F:System.Char.MaxValue" />.</exception>
+        <altmember cref="T:System.Char" />
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1991,6 +2056,7 @@
 
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Double" />
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2044,6 +2110,7 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is less than <see cref="F:System.Int16.MinValue" /> or greater than <see cref="F:System.Int16.MaxValue" />.</exception>
+        <altmember cref="T:System.Int16" />
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2096,6 +2163,7 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is less than <see cref="F:System.Int32.MinValue" /> or greater than <see cref="F:System.Int32.MaxValue" />.</exception>
+        <altmember cref="T:System.Int32" />
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2147,6 +2215,7 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is less than <see cref="F:System.Int64.MinValue" /> or greater than <see cref="F:System.Int64.MaxValue" />.</exception>
+        <altmember cref="T:System.Int64" />
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2206,6 +2275,8 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is less than <see cref="F:System.SByte.MinValue" /> or greater than <see cref="F:System.SByte.MaxValue" />.</exception>
+        <altCompliant cref="M:System.Decimal.ToInt16(System.Decimal)" />
+        <altmember cref="T:System.SByte" />
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2258,6 +2329,7 @@
 
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Single" />
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2317,6 +2389,7 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is less than <see cref="F:System.UInt16.MinValue" /> or greater than <see cref="F:System.UInt16.MaxValue" />.</exception>
+        <altmember cref="T:System.UInt16" />
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2376,6 +2449,8 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is less than <see cref="F:System.UInt32.MinValue" /> or greater than <see cref="F:System.UInt32.MaxValue" />.</exception>
+        <altCompliant cref="M:System.Decimal.ToInt64(System.Decimal)" />
+        <altmember cref="T:System.UInt32" />
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2435,6 +2510,7 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is negative or greater than <see cref="F:System.UInt64.MaxValue" />.</exception>
+        <altmember cref="T:System.UInt64" />
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2488,6 +2564,7 @@
  -or-  
   
  <paramref name="value" /> is <see cref="F:System.Double.NaN" />, <see cref="F:System.Double.PositiveInfinity" />, or <see cref="F:System.Double.NegativeInfinity" />.</exception>
+        <altmember cref="T:System.Double" />
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2540,6 +2617,7 @@
  -or-  
   
  <paramref name="value" /> is <see cref="F:System.Single.NaN" />, <see cref="F:System.Single.PositiveInfinity" />, or <see cref="F:System.Single.NegativeInfinity" />.</exception>
+        <altmember cref="T:System.Single" />
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
@@ -2597,6 +2675,7 @@
   
  The equivalent method for this operator is <xref:System.Decimal.Compare%28System.Decimal%2CSystem.Decimal%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <altmember cref="M:System.Decimal.Compare(System.Decimal,System.Decimal)" />
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
@@ -2654,6 +2733,7 @@
   
  The equivalent method for this operator is <xref:System.Decimal.Compare%28System.Decimal%2CSystem.Decimal%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <altmember cref="M:System.Decimal.Compare(System.Decimal,System.Decimal)" />
       </Docs>
     </Member>
     <MemberGroup MemberName="op_Implicit">
@@ -2724,6 +2804,7 @@
 
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Byte" />
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -2774,6 +2855,7 @@
 
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Char" />
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -2824,6 +2906,7 @@
 
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Int16" />
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -2874,6 +2957,7 @@
 
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Int32" />
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -2924,6 +3008,7 @@
 
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Int64" />
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -2981,6 +3066,7 @@
 
  ]]></format>
         </remarks>
+        <altmember cref="T:System.SByte" />
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -3038,6 +3124,7 @@
 
  ]]></format>
         </remarks>
+        <altmember cref="T:System.UInt16" />
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -3095,6 +3182,7 @@
 
  ]]></format>
         </remarks>
+        <altmember cref="T:System.UInt32" />
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -3152,6 +3240,7 @@
 
  ]]></format>
         </remarks>
+        <altmember cref="T:System.UInt64" />
       </Docs>
     </Member>
     <Member MemberName="op_Increment">
@@ -3206,6 +3295,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.OverflowException">The return value is less than <see cref="F:System.Decimal.MinValue" /> or greater than <see cref="F:System.Decimal.MaxValue" />.</exception>
+        <altmember cref="M:System.Decimal.Add(System.Decimal,System.Decimal)" />
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -3265,6 +3355,8 @@
   
  The equivalent method for this operator is <xref:System.Decimal.Compare%28System.Decimal%2CSystem.Decimal%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <altmember cref="M:System.Decimal.Equals(System.Object)" />
+        <altmember cref="M:System.Decimal.op_Equality(System.Decimal,System.Decimal)" />
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
@@ -3322,6 +3414,7 @@
   
  The equivalent method for this operator is <xref:System.Decimal.Compare%28System.Decimal%2CSystem.Decimal%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <altmember cref="M:System.Decimal.Compare(System.Decimal,System.Decimal)" />
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
@@ -3379,6 +3472,7 @@
   
  The equivalent method for this operator is <xref:System.Decimal.Compare%28System.Decimal%2CSystem.Decimal%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <altmember cref="M:System.Decimal.Compare(System.Decimal,System.Decimal)" />
       </Docs>
     </Member>
     <Member MemberName="op_Modulus">
@@ -3433,6 +3527,7 @@
         <exception cref="T:System.DivideByZeroException">
           <paramref name="d2" /> is <see langword="zero" />.</exception>
         <exception cref="T:System.OverflowException">The return value is less than <see cref="F:System.Decimal.MinValue" /> or greater than <see cref="F:System.Decimal.MaxValue" />.</exception>
+        <altmember cref="M:System.Decimal.Remainder(System.Decimal,System.Decimal)" />
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
@@ -3488,6 +3583,7 @@
  The equivalent method for this operator is <xref:System.Decimal.Multiply%28System.Decimal%2CSystem.Decimal%29?displayProperty=nameWithType>]]></format>
         </remarks>
         <exception cref="T:System.OverflowException">The return value is less than <see cref="F:System.Decimal.MinValue" /> or greater than <see cref="F:System.Decimal.MaxValue" />.</exception>
+        <altmember cref="M:System.Decimal.Multiply(System.Decimal,System.Decimal)" />
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
@@ -3543,6 +3639,7 @@
  The equivalent method for this operator is <xref:System.Decimal.Subtract%28System.Decimal%2CSystem.Decimal%29?displayProperty=nameWithType>]]></format>
         </remarks>
         <exception cref="T:System.OverflowException">The return value is less than <see cref="F:System.Decimal.MinValue" /> or greater than <see cref="F:System.Decimal.MaxValue" />.</exception>
+        <altmember cref="M:System.Decimal.Subtract(System.Decimal,System.Decimal)" />
       </Docs>
     </Member>
     <Member MemberName="op_UnaryNegation">
@@ -3585,6 +3682,7 @@
   
  The equivalent method for this operator is <xref:System.Decimal.Negate%28System.Decimal%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <altmember cref="M:System.Decimal.Negate(System.Decimal)" />
       </Docs>
     </Member>
     <Member MemberName="op_UnaryPlus">
@@ -3706,6 +3804,8 @@
           <paramref name="s" /> is not in the correct format.</exception>
         <exception cref="T:System.OverflowException">
           <paramref name="s" /> represents a number less than <see cref="F:System.Decimal.MinValue" /> or greater than <see cref="F:System.Decimal.MaxValue" />.</exception>
+        <altmember cref="Overload:System.Decimal.TryParse" />
+        <altmember cref="M:System.Decimal.ToString" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -3816,6 +3916,8 @@
           <paramref name="s" /> is not in the correct format.</exception>
         <exception cref="T:System.OverflowException">
           <paramref name="s" /> represents a number less than <see cref="F:System.Decimal.MinValue" /> or greater than <see cref="F:System.Decimal.MaxValue" /></exception>
+        <altmember cref="Overload:System.Decimal.TryParse" />
+        <altmember cref="M:System.Decimal.ToString" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -3897,6 +3999,8 @@
           <paramref name="s" /> is not of the correct format</exception>
         <exception cref="T:System.OverflowException">
           <paramref name="s" /> represents a number less than <see cref="F:System.Decimal.MinValue" /> or greater than <see cref="F:System.Decimal.MaxValue" /></exception>
+        <altmember cref="Overload:System.Decimal.TryParse" />
+        <altmember cref="M:System.Decimal.ToString" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -4009,6 +4113,8 @@
  -or-  
   
  <paramref name="style" /> is the <see cref="F:System.Globalization.NumberStyles.AllowHexSpecifier" /> value.</exception>
+        <altmember cref="Overload:System.Decimal.TryParse" />
+        <altmember cref="M:System.Decimal.ToString" />
       </Docs>
     </Member>
     <Member MemberName="Remainder">
@@ -4106,6 +4212,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.OverflowException">The result is outside the range of a <see cref="T:System.Decimal" /> value.</exception>
+        <altmember cref="M:System.Math.Round(System.Decimal)" />
       </Docs>
     </Member>
     <Member MemberName="Round">
@@ -4161,6 +4268,9 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="decimals" /> is not a value from 0 to 28.</exception>
+        <altmember cref="M:System.Decimal.Floor(System.Decimal)" />
+        <altmember cref="M:System.Decimal.Truncate(System.Decimal)" />
+        <altmember cref="M:System.Math.Round(System.Decimal,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Round">
@@ -4222,6 +4332,7 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="mode" /> is not a <see cref="T:System.MidpointRounding" /> value.</exception>
         <exception cref="T:System.OverflowException">The result is outside the range of a <see cref="T:System.Decimal" /> object.</exception>
+        <altmember cref="M:System.Math.Round(System.Decimal,System.MidpointRounding)" />
       </Docs>
     </Member>
     <Member MemberName="Round">
@@ -4295,6 +4406,7 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="mode" /> is not a <see cref="T:System.MidpointRounding" /> value.</exception>
         <exception cref="T:System.OverflowException">The result is outside the range of a <see cref="T:System.Decimal" /> object.</exception>
+        <altmember cref="M:System.Math.Round(System.Decimal,System.Int32,System.MidpointRounding)" />
       </Docs>
     </Member>
     <Member MemberName="Subtract">
@@ -4349,6 +4461,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.OverflowException">The return value is less than <see cref="F:System.Decimal.MinValue" /> or greater than <see cref="F:System.Decimal.MaxValue" />.</exception>
+        <altmember cref="M:System.Decimal.Add(System.Decimal,System.Decimal)" />
+        <altmember cref="M:System.Decimal.Multiply(System.Decimal,System.Decimal)" />
+        <altmember cref="M:System.Decimal.Divide(System.Decimal,System.Decimal)" />
       </Docs>
     </Member>
     <Member MemberName="System.IComparable.CompareTo">
@@ -5091,6 +5206,7 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is less than <see cref="F:System.Byte.MinValue" /> or greater than <see cref="F:System.Byte.MaxValue" />.</exception>
+        <altmember cref="T:System.Byte" />
       </Docs>
     </Member>
     <Member MemberName="ToDouble">
@@ -5149,6 +5265,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Double" />
       </Docs>
     </Member>
     <Member MemberName="ToInt16">
@@ -5201,6 +5318,7 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is less than <see cref="F:System.Int16.MinValue" /> or greater than <see cref="F:System.Int16.MaxValue" />.</exception>
+        <altmember cref="T:System.Int16" />
       </Docs>
     </Member>
     <Member MemberName="ToInt32">
@@ -5260,6 +5378,7 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="d" /> is less than <see cref="F:System.Int32.MinValue" /> or greater than <see cref="F:System.Int32.MaxValue" />.</exception>
+        <altmember cref="T:System.Int32" />
       </Docs>
     </Member>
     <Member MemberName="ToInt64">
@@ -5319,6 +5438,7 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="d" /> is less than <see cref="F:System.Int64.MinValue" /> or greater than <see cref="F:System.Int64.MaxValue" />.</exception>
+        <altmember cref="T:System.Int64" />
       </Docs>
     </Member>
     <Member MemberName="ToOACurrency">
@@ -5361,6 +5481,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Decimal.FromOACurrency(System.Int64)" />
       </Docs>
     </Member>
     <Member MemberName="ToSByte">
@@ -5419,6 +5540,7 @@
         <altCompliant cref="M:System.Decimal.ToInt16(System.Decimal)" />
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is less than <see cref="F:System.SByte.MinValue" /> or greater than <see cref="F:System.SByte.MaxValue" />.</exception>
+        <altmember cref="T:System.SByte" />
       </Docs>
     </Member>
     <Member MemberName="ToSingle">
@@ -5477,6 +5599,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Single" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -5547,6 +5670,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Decimal.Parse(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -5618,6 +5742,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Decimal.Parse(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -5691,6 +5816,7 @@
         </remarks>
         <exception cref="T:System.FormatException">
           <paramref name="format" /> is invalid.</exception>
+        <altmember cref="M:System.Decimal.Parse(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -5766,6 +5892,7 @@
         </remarks>
         <exception cref="T:System.FormatException">
           <paramref name="format" /> is invalid.</exception>
+        <altmember cref="M:System.Decimal.Parse(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ToUInt16">
@@ -5826,6 +5953,7 @@
         <altCompliant cref="M:System.Decimal.ToInt32(System.Decimal)" />
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is greater than <see cref="F:System.UInt16.MaxValue" /> or less than <see cref="F:System.UInt16.MinValue" />.</exception>
+        <altmember cref="T:System.UInt16" />
       </Docs>
     </Member>
     <Member MemberName="ToUInt32">
@@ -5889,6 +6017,7 @@
         <altCompliant cref="M:System.Decimal.ToInt64(System.Decimal)" />
         <exception cref="T:System.OverflowException">
           <paramref name="d" /> is negative or greater than <see cref="F:System.UInt32.MaxValue" />.</exception>
+        <altmember cref="T:System.UInt32" />
       </Docs>
     </Member>
     <Member MemberName="ToUInt64">
@@ -5951,6 +6080,7 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="d" /> is negative or greater than <see cref="F:System.UInt64.MaxValue" />.</exception>
+        <altmember cref="T:System.UInt64" />
       </Docs>
     </Member>
     <Member MemberName="Truncate">
@@ -6007,6 +6137,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Decimal.Round(System.Decimal,System.Int32)" />
+        <altmember cref="M:System.Decimal.Floor(System.Decimal)" />
       </Docs>
     </Member>
     <Member MemberName="TryParse">
@@ -6085,6 +6217,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Decimal.Parse" />
+        <altmember cref="M:System.Decimal.ToString" />
       </Docs>
     </Member>
     <Member MemberName="TryParse">
@@ -6177,6 +6311,8 @@
  -or-  
   
  <paramref name="style" /> is the <see cref="F:System.Globalization.NumberStyles.AllowHexSpecifier" /> value.</exception>
+        <altmember cref="Overload:System.Decimal.Parse" />
+        <altmember cref="M:System.Decimal.ToString" />
       </Docs>
     </Member>
     <Member MemberName="Zero">
@@ -6218,7 +6354,114 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Decimal.One" />
+        <altmember cref="F:System.Decimal.MinusOne" />
+        <altmember cref="F:System.Decimal.MaxValue" />
+        <altmember cref="F:System.Decimal.MinValue" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the numeric value of this instance to its equivalent <see cref="T:System.String" /> representation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of <see cref="T:System.Decimal" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryParse">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the string representation of a number to its <see cref="T:System.Decimal" /> equivalent. A return value indicates whether the conversion succeeded or failed.</summary>
+        <altmember cref="Overload:System.Decimal.Parse" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value indicating whether two instances of <see cref="T:System.Decimal" /> represent the same value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CompareTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares this instance to a specified object or <see cref="T:System.Decimal" /> and returns an indication of their relative values.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="op_Explicit">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Defines an explicit conversion between a <see cref="T:System.Decimal" /> object and another type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Parse">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the string representation of a number to its <see cref="T:System.Decimal" /> equivalent.</summary>
+        <altmember cref="Overload:System.Decimal.TryParse" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Round">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Rounds a value to the nearest integer or specified number of decimal places.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

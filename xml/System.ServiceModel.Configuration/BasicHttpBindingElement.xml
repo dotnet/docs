@@ -13,6 +13,7 @@
   <Docs>
     <summary>Represents an XML element that specifies a binding used to communicate with WS-I Basic Profile 1.1-conformant Web Services like ASMX-based services or to accept messages from ASMX-based clients.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.ServiceModel.BasicHttpBinding" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -172,5 +173,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.BasicHttpBindingElement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

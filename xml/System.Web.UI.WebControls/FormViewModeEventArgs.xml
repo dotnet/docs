@@ -37,6 +37,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.FormView" />
+    <altmember cref="T:System.Web.UI.WebControls.FormViewModeEventHandler" />
+    <altmember cref="T:System.ComponentModel.CancelEventArgs" />
+    <altmember cref="E:System.Web.UI.WebControls.FormView.ModeChanging" />
+    <altmember cref="P:System.ComponentModel.CancelEventArgs.Cancel" />
+    <altmember cref="P:System.Web.UI.WebControls.FormViewModeEventArgs.CancelingEdit" />
+    <altmember cref="P:System.Web.UI.WebControls.FormViewModeEventArgs.NewMode" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -75,6 +82,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewModeEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ModeChanging" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewModeEventArgs.CancelingEdit" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewModeEventArgs.NewMode" />
       </Docs>
     </Member>
     <Member MemberName="CancelingEdit">
@@ -112,6 +124,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewModeEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ModeChanging" />
       </Docs>
     </Member>
     <Member MemberName="NewMode">
@@ -148,6 +163,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewModeEventHandler" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewMode" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ModeChanging" />
       </Docs>
     </Member>
   </Members>

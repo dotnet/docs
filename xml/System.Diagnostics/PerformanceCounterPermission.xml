@@ -17,6 +17,11 @@
   <Docs>
     <summary>Allows control of code access permissions for <see cref="T:System.Diagnostics.PerformanceCounter" />.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Diagnostics.PerformanceCounter" />
+    <altmember cref="T:System.Diagnostics.PerformanceCounterPermissionAccess" />
+    <altmember cref="T:System.Diagnostics.PerformanceCounterPermissionAttribute" />
+    <altmember cref="T:System.Diagnostics.PerformanceCounterPermissionEntry" />
+    <altmember cref="T:System.Diagnostics.PerformanceCounterPermissionEntryCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -133,5 +138,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.PerformanceCounterPermission" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -37,6 +37,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Threading.Mutex.OpenExisting(System.String)" />
+    <altmember cref="M:System.Threading.Semaphore.OpenExisting(System.String)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -196,5 +198,16 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Threading.WaitHandleCannotBeOpenedException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -29,6 +29,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Deployment.Application.ApplicationDeployment" />
   </Docs>
   <Members>
     <Member MemberName="AvailableVersion">
@@ -54,6 +55,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Deployment.Application.CheckForUpdateCompletedEventArgs.MinimumRequiredVersion" />
       </Docs>
     </Member>
     <Member MemberName="IsUpdateRequired">
@@ -89,6 +91,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Deployment.Application.CheckForUpdateCompletedEventArgs.MinimumRequiredVersion" />
       </Docs>
     </Member>
     <Member MemberName="MinimumRequiredVersion">
@@ -154,6 +157,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Deployment.Application.CheckForUpdateCompletedEventArgs.IsUpdateRequired" />
       </Docs>
     </Member>
     <Member MemberName="UpdateSizeBytes">

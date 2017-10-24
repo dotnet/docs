@@ -59,6 +59,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.TableLayoutPanel" />
+    <altmember cref="P:System.Windows.Forms.FlowLayoutPanel.FlowDirection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -81,6 +83,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.FlowLayoutPanel.FlowDirection" />
+        <altmember cref="P:System.Windows.Forms.FlowLayoutPanel.WrapContents" />
       </Docs>
     </Member>
     <Member MemberName="FlowDirection">
@@ -123,6 +127,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.FlowLayoutPanel.WrapContents" />
       </Docs>
     </Member>
     <Member MemberName="GetFlowBreak">
@@ -275,6 +280,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.FlowLayoutPanel.FlowDirection" />
       </Docs>
     </Member>
   </Members>

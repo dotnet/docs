@@ -21,6 +21,9 @@
  ]]></format>
     </remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.DocumentContext" />
+    <altmember cref="T:Microsoft.JScript.AST" />
+    <altmember cref="T:Microsoft.JScript.JSToken" />
   </Docs>
   <Members>
     <Member MemberName="EndColumn">
@@ -40,6 +43,11 @@
         <value>The column number where this code ends.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DocumentContext" />
+        <altmember cref="T:Microsoft.JScript.AST" />
+        <altmember cref="T:Microsoft.JScript.JSToken" />
+        <altmember cref="T:Microsoft.JScript.JSScanner" />
+        <altmember cref="T:Microsoft.JScript.JSParser" />
       </Docs>
     </Member>
     <Member MemberName="EndLine">
@@ -59,6 +67,11 @@
         <value>The ending line number of this code.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DocumentContext" />
+        <altmember cref="T:Microsoft.JScript.AST" />
+        <altmember cref="T:Microsoft.JScript.JSToken" />
+        <altmember cref="T:Microsoft.JScript.JSScanner" />
+        <altmember cref="T:Microsoft.JScript.JSParser" />
       </Docs>
     </Member>
     <Member MemberName="EndPosition">
@@ -78,6 +91,11 @@
         <value>The position in the code string where this code ends.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DocumentContext" />
+        <altmember cref="T:Microsoft.JScript.AST" />
+        <altmember cref="T:Microsoft.JScript.JSToken" />
+        <altmember cref="T:Microsoft.JScript.JSScanner" />
+        <altmember cref="T:Microsoft.JScript.JSParser" />
       </Docs>
     </Member>
     <Member MemberName="GetCode">
@@ -98,6 +116,11 @@
         <returns>The code that the context contains.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DocumentContext" />
+        <altmember cref="T:Microsoft.JScript.AST" />
+        <altmember cref="T:Microsoft.JScript.JSToken" />
+        <altmember cref="T:Microsoft.JScript.JSScanner" />
+        <altmember cref="T:Microsoft.JScript.JSParser" />
       </Docs>
     </Member>
     <Member MemberName="GetToken">
@@ -118,6 +141,10 @@
         <returns>An individual unit of code, or a *token*, that the context contains.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DocumentContext" />
+        <altmember cref="T:Microsoft.JScript.AST" />
+        <altmember cref="T:Microsoft.JScript.JSScanner" />
+        <altmember cref="T:Microsoft.JScript.JSParser" />
       </Docs>
     </Member>
     <Member MemberName="StartColumn">
@@ -137,6 +164,11 @@
         <value>The column number where this code starts.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DocumentContext" />
+        <altmember cref="T:Microsoft.JScript.AST" />
+        <altmember cref="T:Microsoft.JScript.JSToken" />
+        <altmember cref="T:Microsoft.JScript.JSScanner" />
+        <altmember cref="T:Microsoft.JScript.JSParser" />
       </Docs>
     </Member>
     <Member MemberName="StartLine">
@@ -156,6 +188,11 @@
         <value>The line number where this code starts.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DocumentContext" />
+        <altmember cref="T:Microsoft.JScript.AST" />
+        <altmember cref="T:Microsoft.JScript.JSToken" />
+        <altmember cref="T:Microsoft.JScript.JSScanner" />
+        <altmember cref="T:Microsoft.JScript.JSParser" />
       </Docs>
     </Member>
     <Member MemberName="StartPosition">
@@ -175,6 +212,11 @@
         <value>The position in the code string where this code starts.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DocumentContext" />
+        <altmember cref="T:Microsoft.JScript.AST" />
+        <altmember cref="T:Microsoft.JScript.JSToken" />
+        <altmember cref="T:Microsoft.JScript.JSScanner" />
+        <altmember cref="T:Microsoft.JScript.JSParser" />
       </Docs>
     </Member>
   </Members>

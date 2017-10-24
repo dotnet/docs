@@ -186,6 +186,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.ComponentModel.Design.ISelectionService.SelectionChanging" />
+        <altmember cref="T:System.EventHandler" />
       </Docs>
     </Member>
     <Member MemberName="SelectionChanging">
@@ -231,6 +233,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.ComponentModel.Design.ISelectionService.SelectionChanged" />
+        <altmember cref="T:System.EventHandler" />
       </Docs>
     </Member>
     <Member MemberName="SelectionCount">
@@ -334,7 +338,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.SelectionTypes" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetSelectedComponents">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Selects the specified components.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

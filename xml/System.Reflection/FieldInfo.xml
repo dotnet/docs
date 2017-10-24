@@ -66,6 +66,7 @@
     <block subset="none" type="overrides">
       <para>When you inherit from <see cref="T:System.Reflection.FieldInfo" />, you must override the following members: <see cref="M:System.Reflection.FieldInfo.GetValue(System.Object)" /> and <see cref="M:System.Reflection.FieldInfo.SetValue(System.Object,System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Globalization.CultureInfo)" />.</para>
     </block>
+    <altmember cref="T:System.Type" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -142,6 +143,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.FieldAttributes" />
+        <altmember cref="T:System.Type" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -274,6 +277,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.FieldAttributes" />
+        <altmember cref="T:System.Type" />
       </Docs>
     </Member>
     <Member MemberName="GetFieldFromHandle">
@@ -659,6 +664,7 @@
  The caller does not have permission to access this field.</exception>
         <exception cref="T:System.ArgumentException">The method is neither declared nor inherited by the class of <paramref name="obj" />.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
+        <altmember cref="T:System.Object" />
       </Docs>
     </Member>
     <Member MemberName="GetValueDirect">
@@ -753,6 +759,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.FieldAttributes" />
+        <altmember cref="P:System.Reflection.FieldInfo.IsFamily" />
+        <altmember cref="P:System.Reflection.FieldInfo.IsFamilyOrAssembly" />
+        <altmember cref="P:System.Reflection.FieldInfo.IsFamilyAndAssembly" />
       </Docs>
     </Member>
     <Member MemberName="IsFamily">
@@ -806,6 +816,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.FieldAttributes" />
+        <altmember cref="T:System.Type" />
+        <altmember cref="P:System.Reflection.FieldInfo.IsAssembly" />
+        <altmember cref="P:System.Reflection.FieldInfo.IsFamilyOrAssembly" />
+        <altmember cref="P:System.Reflection.FieldInfo.IsFamilyAndAssembly" />
       </Docs>
     </Member>
     <Member MemberName="IsFamilyAndAssembly">
@@ -861,6 +876,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Reflection.FieldInfo.IsFamilyOrAssembly" />
+        <altmember cref="T:System.Reflection.FieldAttributes" />
+        <altmember cref="P:System.Reflection.FieldInfo.IsAssembly" />
+        <altmember cref="P:System.Reflection.FieldInfo.IsFamily" />
       </Docs>
     </Member>
     <Member MemberName="IsFamilyOrAssembly">
@@ -918,6 +937,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.FieldAttributes" />
+        <altmember cref="P:System.Reflection.FieldInfo.IsAssembly" />
+        <altmember cref="P:System.Reflection.FieldInfo.IsFamily" />
       </Docs>
     </Member>
     <Member MemberName="IsInitOnly">
@@ -980,6 +1002,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.FieldAttributes" />
+        <altmember cref="M:System.Type.GetField(System.String,System.Reflection.BindingFlags)" />
+        <altmember cref="T:System.Type" />
       </Docs>
     </Member>
     <Member MemberName="IsLiteral">
@@ -1021,6 +1046,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.FieldAttributes" />
       </Docs>
     </Member>
     <Member MemberName="IsNotSerialized">
@@ -1065,6 +1091,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.FieldAttributes" />
       </Docs>
     </Member>
     <Member MemberName="IsPinvokeImpl">
@@ -1104,6 +1131,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.FieldAttributes" />
       </Docs>
     </Member>
     <Member MemberName="IsPrivate">
@@ -1158,6 +1186,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.BindingFlags" />
+        <altmember cref="T:System.Type" />
       </Docs>
     </Member>
     <Member MemberName="IsPublic">
@@ -1212,6 +1242,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.FieldAttributes" />
+        <altmember cref="T:System.Reflection.BindingFlags" />
       </Docs>
     </Member>
     <Member MemberName="IsSecurityCritical">
@@ -1260,6 +1292,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Reflection.FieldInfo.IsSecuritySafeCritical" />
+        <altmember cref="P:System.Reflection.FieldInfo.IsSecurityTransparent" />
       </Docs>
     </Member>
     <Member MemberName="IsSecuritySafeCritical">
@@ -1308,6 +1342,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Reflection.FieldInfo.IsSecurityCritical" />
+        <altmember cref="P:System.Reflection.FieldInfo.IsSecurityTransparent" />
       </Docs>
     </Member>
     <Member MemberName="IsSecurityTransparent">
@@ -1356,6 +1392,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Reflection.FieldInfo.IsSecurityCritical" />
+        <altmember cref="P:System.Reflection.FieldInfo.IsSecuritySafeCritical" />
       </Docs>
     </Member>
     <Member MemberName="IsSpecialName">
@@ -1406,6 +1444,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.FieldAttributes" />
       </Docs>
     </Member>
     <Member MemberName="IsStatic">
@@ -1468,6 +1507,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.FieldAttributes" />
+        <altmember cref="M:System.Type.GetField(System.String,System.Reflection.BindingFlags)" />
+        <altmember cref="T:System.Type" />
       </Docs>
     </Member>
     <Member MemberName="MemberType">
@@ -1521,6 +1563,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.FieldInfo" />
+        <altmember cref="T:System.Type" />
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -1957,5 +2001,27 @@
         <exception cref="T:System.NotImplementedException">Late-bound access using the COM <c>IDispatch</c> interface is not supported.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the value of the field for the given object to the given value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetFieldFromHandle">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Reflection.FieldInfo" /> for the field represented by a handle.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

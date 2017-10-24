@@ -33,6 +33,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
+    <altmember cref="T:System.Web.Configuration.EventMappingSettings" />
+    <altmember cref="T:System.Configuration.ProviderSettings" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -55,6 +58,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
+        <altmember cref="T:System.Web.Configuration.EventMappingSettings" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -92,6 +97,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationException">The <see cref="T:System.Web.Configuration.EventMappingSettings" /> object to add already exists in the collection, or the collection is read-only.</exception>
+        <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
+        <altmember cref="T:System.Web.Configuration.EventMappingSettings" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -125,6 +132,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
+        <altmember cref="T:System.Web.Configuration.EventMappingSettings" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -163,6 +172,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
+        <altmember cref="T:System.Web.Configuration.EventMappingSettings" />
       </Docs>
     </Member>
     <Member MemberName="CreateNewElement">
@@ -236,6 +247,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
+        <altmember cref="T:System.Web.Configuration.EventMappingSettings" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -275,6 +288,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationException">The <see cref="T:System.Web.Configuration.EventMappingSettings" /> object to add already exists in the collection, the index is invalid, or the collection is read-only.</exception>
+        <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
+        <altmember cref="T:System.Web.Configuration.EventMappingSettings" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -307,6 +322,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
+        <altmember cref="T:System.Web.Configuration.EventMappingSettings" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -384,6 +401,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationException">There is no <see cref="T:System.Web.Configuration.EventMappingSettings" /> object with the specified key in the collection, the element has already been removed, or the collection is read-only.</exception>
+        <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
+        <altmember cref="T:System.Web.Configuration.EventMappingSettings" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -421,7 +440,20 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationException">There is no <see cref="T:System.Web.Configuration.EventMappingSettings" /> object with the specified index in the collection, the element has already been removed, or the collection is read-only.</exception>
+        <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
+        <altmember cref="T:System.Web.Configuration.EventMappingSettings" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets the specified <see cref="T:System.Web.Configuration.EventMappingSettings" /> object.</summary>
+        <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
+        <altmember cref="T:System.Web.Configuration.EventMappingSettings" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

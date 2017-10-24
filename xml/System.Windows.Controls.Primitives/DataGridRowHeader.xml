@@ -21,6 +21,8 @@
   <Docs>
     <summary>Represents an individual <see cref="T:System.Windows.Controls.DataGrid" /> row header.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Controls.DataGrid" />
+    <altmember cref="T:System.Windows.Controls.DataGridRow" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,6 +38,8 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Primitives.DataGridRowHeader" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="T:System.Windows.Controls.DataGridRow" />
       </Docs>
     </Member>
     <Member MemberName="IsRowSelected">
@@ -63,6 +67,8 @@
         <value>
           <see langword="true" /> if the row is selected; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="T:System.Windows.Controls.DataGridRow" />
       </Docs>
     </Member>
     <Member MemberName="IsRowSelectedProperty">
@@ -80,6 +86,8 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.Primitives.DataGridRowHeader.IsRowSelected" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="T:System.Windows.Controls.DataGridRow" />
       </Docs>
     </Member>
     <Member MemberName="MeasureOverride">
@@ -102,6 +110,9 @@
         <summary>Measures the children of a <see cref="T:System.Windows.Controls.Primitives.DataGridRowHeader" /> to prepare for arranging them during the <see cref="M:System.Windows.Controls.Control.ArrangeOverride(System.Windows.Size)" /> pass.</summary>
         <returns>The size that the <see cref="T:System.Windows.Controls.Primitives.DataGridRowHeader" /> determines it needs during layout, based on its calculations of child object allocated sizes.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="T:System.Windows.Controls.DataGridRow" />
+        <altmember cref="M:System.Windows.Controls.Control.ArrangeOverride(System.Windows.Size)" />
       </Docs>
     </Member>
     <Member MemberName="OnApplyTemplate">
@@ -127,6 +138,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="T:System.Windows.Controls.DataGridRow" />
+        <altmember cref="M:System.Windows.FrameworkElement.ApplyTemplate" />
       </Docs>
     </Member>
     <Member MemberName="OnClick">
@@ -152,6 +166,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="T:System.Windows.Controls.DataGridRow" />
       </Docs>
     </Member>
     <Member MemberName="OnCreateAutomationPeer">
@@ -171,6 +187,9 @@
         <summary>Returns a new <see cref="T:System.Windows.Automation.Peers.DataGridRowHeaderAutomationPeer" /> for this row header.</summary>
         <returns>A new automation peer for this row header.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="T:System.Windows.Controls.DataGridRow" />
+        <altmember cref="T:System.Windows.Automation.Peers.DataGridRowHeaderAutomationPeer" />
       </Docs>
     </Member>
     <Member MemberName="SeparatorBrush">
@@ -189,6 +208,8 @@
         <summary>Gets or sets the <see cref="T:System.Windows.Media.Brush" /> used to paint the row header separator lines.</summary>
         <value>The brush used to paint row header separator lines.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="T:System.Windows.Controls.DataGridRow" />
       </Docs>
     </Member>
     <Member MemberName="SeparatorBrushProperty">
@@ -206,6 +227,8 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.Primitives.DataGridRowHeader.SeparatorBrush" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="T:System.Windows.Controls.DataGridRow" />
       </Docs>
     </Member>
     <Member MemberName="SeparatorVisibility">
@@ -224,6 +247,8 @@
         <summary>Gets or sets the user interface (UI) visibility of the row header separator lines.</summary>
         <value>The UI visibility of the row header separator lines. The default is <see cref="F:System.Windows.Visibility.Visible" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="T:System.Windows.Controls.DataGridRow" />
       </Docs>
     </Member>
     <Member MemberName="SeparatorVisibilityProperty">
@@ -241,6 +266,8 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.Primitives.DataGridRowHeader.SeparatorVisibility" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="T:System.Windows.Controls.DataGridRow" />
       </Docs>
     </Member>
   </Members>

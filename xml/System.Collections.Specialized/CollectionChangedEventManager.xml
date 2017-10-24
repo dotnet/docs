@@ -20,6 +20,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.WeakEventManager" />
   </Docs>
   <Members>
     <Member MemberName="AddHandler">
@@ -152,6 +153,7 @@
         <param name="source">The object with the event.</param>
         <summary>Begins listening for the <see cref="E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged" /> event on the specified source.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.WeakEventManager.StartListening(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="StopListening">
@@ -173,6 +175,7 @@
         <param name="source">The object with the event.</param>
         <summary>Stops listening for the <see cref="E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged" /> event on the specified source.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.WeakEventManager.StopListening(System.Object)" />
       </Docs>
     </Member>
   </Members>

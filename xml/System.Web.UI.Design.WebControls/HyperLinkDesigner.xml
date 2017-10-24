@@ -44,6 +44,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.HyperLink" />
+    <altmember cref="T:System.Web.UI.Design.TextControlDesigner" />
+    <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
+    <altmember cref="T:System.Web.UI.Design.HtmlControlDesigner" />
+    <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -66,6 +71,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.HyperLink" />
+        <altmember cref="T:System.Web.UI.Design.TextControlDesigner" />
+        <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeHtml">
@@ -102,6 +110,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.HyperLink" />
+        <altmember cref="M:System.Web.UI.Design.TextControlDesigner.GetDesignTimeHtml" />
+        <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
       </Docs>
     </Member>
     <Member MemberName="OnComponentChanged">
@@ -134,6 +145,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.HyperLink" />
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.OnComponentChanged(System.Object,System.ComponentModel.Design.ComponentChangedEventArgs)" />
+        <altmember cref="E:System.ComponentModel.Design.IComponentChangeService.ComponentChanged" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentChangedEventArgs" />
       </Docs>
     </Member>
   </Members>

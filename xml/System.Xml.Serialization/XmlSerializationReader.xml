@@ -32,6 +32,8 @@
  ]]></format>
     </remarks>
     <forInternalUseOnly />
+    <altmember cref="T:System.Xml.Serialization.XmlSerializer" />
+    <altmember cref="T:System.Xml.Serialization.XmlSerializationWriter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -3204,5 +3206,65 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ReadSerializable">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Populates an object from its XML representation at the current location of the <see cref="T:System.Xml.XmlReader" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="UnknownAttribute">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Raises a <see cref="E:System.Xml.Serialization.XmlSerializer.UnknownAttribute" /> event for the current position of the <see cref="T:System.Xml.XmlReader" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="UnknownNode">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Raises an <see cref="E:System.Xml.Serialization.XmlSerializer.UnknownNode" /> event for the current position of the <see cref="T:System.Xml.XmlReader" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadString">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads and returns the current string appended to the input value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="UnknownElement">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Raises an <see cref="E:System.Xml.Serialization.XmlSerializer.UnknownElement" /> event.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToByteArrayHex">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the current value as a hexadecimal byte array.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

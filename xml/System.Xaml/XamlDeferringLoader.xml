@@ -59,6 +59,7 @@
         <summary>Loads XAML content in a deferred mode, which is based on a <see cref="T:System.Xaml.XamlReader" /> and certain required services from a service provider.</summary>
         <returns>The root object that is produced by the input <see cref="T:System.Xaml.XamlReader" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Xaml.Schema.XamlValueConverter`1.ConverterInstance" />
       </Docs>
     </Member>
     <Member MemberName="Save">

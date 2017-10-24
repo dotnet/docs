@@ -36,6 +36,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="T:System.Web.UI.WebControls.GridViewRowEventHandler" />
+    <altmember cref="E:System.Web.UI.WebControls.GridView.RowCreated" />
+    <altmember cref="E:System.Web.UI.WebControls.GridView.RowDataBound" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -70,6 +74,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.GridViewRowEventArgs.Row" />
       </Docs>
     </Member>
     <Member MemberName="Row">
@@ -103,6 +108,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridViewRow" />
+        <altmember cref="P:System.Web.UI.WebControls.TableRow.Cells" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewRow.RowType" />
       </Docs>
     </Member>
   </Members>

@@ -112,6 +112,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Design.ToolboxItemCreatorCallback" />
       </Docs>
     </Member>
     <Member MemberName="AddCreator">
@@ -146,6 +147,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Design.ToolboxItemCreatorCallback" />
       </Docs>
     </Member>
     <Member MemberName="AddLinkedToolboxItem">
@@ -270,6 +272,7 @@
         <summary>Gets the names of all the tool categories currently on the toolbox.</summary>
         <value>A <see cref="T:System.Drawing.Design.CategoryNameCollection" /> containing the tool categories.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Drawing.Design.CategoryNameCollection" />
       </Docs>
     </Member>
     <Member MemberName="DeserializeToolboxItem">
@@ -777,5 +780,95 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsSupported">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a value indicating whether the specified object which represents a serialized toolbox item can be used by the specified designer host.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddCreator">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a new toolbox item creator for a specified data format.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RemoveCreator">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes a previously added toolbox item creator.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RemoveToolboxItem">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the specified toolbox item from the toolbox.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DeserializeToolboxItem">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a toolbox item from the specified object that represents a toolbox item in serialized form.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddLinkedToolboxItem">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a project-linked toolbox item to the toolbox.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IsToolboxItem">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a value indicating whether the specified object is a serialized toolbox item.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetSelectedToolboxItem">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the currently selected toolbox item.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddToolboxItem">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the specified toolbox item to the toolbox.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetToolboxItems">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a collection of toolbox items from the toolbox.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

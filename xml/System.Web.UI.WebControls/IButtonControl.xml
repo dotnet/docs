@@ -74,6 +74,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.EventHandler" />
       </Docs>
     </Member>
     <Member MemberName="Command">
@@ -100,6 +101,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.CommandEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="CommandArgument">
@@ -125,6 +127,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.IButtonControl.CommandName" />
       </Docs>
     </Member>
     <Member MemberName="CommandName">
@@ -150,6 +153,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.IButtonControl.CommandArgument" />
       </Docs>
     </Member>
     <Member MemberName="PostBackUrl">

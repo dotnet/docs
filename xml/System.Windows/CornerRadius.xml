@@ -69,6 +69,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.Border" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -136,6 +137,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.CornerRadius.TopRight" />
+        <altmember cref="P:System.Windows.CornerRadius.BottomRight" />
+        <altmember cref="P:System.Windows.CornerRadius.TopLeft" />
       </Docs>
     </Member>
     <Member MemberName="BottomRight">
@@ -310,6 +314,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.CornerRadius.TopRight" />
+        <altmember cref="P:System.Windows.CornerRadius.BottomLeft" />
+        <altmember cref="P:System.Windows.CornerRadius.BottomRight" />
       </Docs>
     </Member>
     <Member MemberName="TopRight">
@@ -335,6 +342,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.CornerRadius.TopLeft" />
+        <altmember cref="P:System.Windows.CornerRadius.BottomLeft" />
+        <altmember cref="P:System.Windows.CornerRadius.BottomRight" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -356,5 +366,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.CornerRadius" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares two <see cref="T:System.Windows.CornerRadius" /> structures for equality.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

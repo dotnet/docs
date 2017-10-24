@@ -49,6 +49,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.ConnectionStringsSection" />
+    <altmember cref="T:System.Configuration.ConnectionStringSettings" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -103,6 +105,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.ConnectionStringsSection" />
       </Docs>
     </Member>
     <Member MemberName="BaseAdd">
@@ -167,6 +170,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.ConnectionStringsSection" />
       </Docs>
     </Member>
     <Member MemberName="CreateNewElement">
@@ -252,6 +256,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.ConnectionStringsSection" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -293,6 +298,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.ConnectionStringsSection" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -334,6 +340,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.ConnectionStringsSection" />
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -391,6 +398,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.ConnectionStringsSection" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -426,6 +434,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.ConnectionStringsSection" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -461,7 +470,28 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.ConnectionStringsSection" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes a <see cref="T:System.Configuration.ConnectionStringSettings" /> object from the collection.</summary>
+        <altmember cref="T:System.Configuration.ConnectionStringsSection" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.Configuration.ConnectionStringSettings" /> object in the collection.</summary>
+        <altmember cref="T:System.Configuration.ConnectionStringsSection" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

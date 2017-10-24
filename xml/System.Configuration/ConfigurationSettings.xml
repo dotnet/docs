@@ -27,6 +27,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.ConfigurationSection" />
   </Docs>
   <Members>
     <Member MemberName="AppSettings">
@@ -66,6 +67,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Specialized.NameValueCollection" />
+        <altmember cref="T:System.Configuration.AppSettingsSection" />
       </Docs>
     </Member>
     <Member MemberName="GetConfig">
@@ -110,6 +113,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationException">Unable to retrieve the requested section.</exception>
+        <altmember cref="T:System.Configuration.ConfigurationSection" />
       </Docs>
     </Member>
   </Members>

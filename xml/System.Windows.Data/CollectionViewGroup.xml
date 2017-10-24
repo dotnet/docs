@@ -154,6 +154,7 @@
         <param name="e">Arguments of the event being raised.</param>
         <summary>Raises the <see cref="E:System.Windows.Data.CollectionViewGroup.PropertyChanged" /> event using the provided arguments.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.INotifyPropertyChanged" />
       </Docs>
     </Member>
     <Member MemberName="PropertyChanged">
@@ -171,6 +172,7 @@
       <Docs>
         <summary>Occurs when a property value changes.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged" />
       </Docs>
     </Member>
     <Member MemberName="ProtectedItemCount">

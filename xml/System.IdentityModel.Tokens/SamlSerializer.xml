@@ -22,6 +22,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IdentityModel.Tokens.SamlSecurityToken" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -72,6 +73,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="reader" /> is <see langword="null" /></exception>
+        <altmember cref="T:System.IdentityModel.Tokens.SamlAdvice" />
       </Docs>
     </Member>
     <Member MemberName="LoadAssertion">
@@ -109,6 +111,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="reader" /> is <see langword="null" /></exception>
+        <altmember cref="T:System.IdentityModel.Tokens.SamlAssertion" />
       </Docs>
     </Member>
     <Member MemberName="LoadAttribute">
@@ -142,6 +145,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IdentityModel.Tokens.SamlAttribute" />
       </Docs>
     </Member>
     <Member MemberName="LoadCondition">
@@ -177,6 +181,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="reader" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.IdentityModel.Tokens.SamlCondition" />
       </Docs>
     </Member>
     <Member MemberName="LoadConditions">
@@ -212,6 +217,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="reader" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.IdentityModel.Tokens.SamlConditions" />
       </Docs>
     </Member>
     <Member MemberName="LoadStatement">

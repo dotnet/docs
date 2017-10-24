@@ -42,7 +42,7 @@ The .NET Framework 4.7.1 includes new accessibility features in the following ar
 - [Windows Presentation Foundation (WPF)](windows-presentation-foundation-wpf)
 
 - [Windows Forms](windows-forms-accessibility-improvements)
- 
+
 ### Windows Presentation Foundation (WPF)
 
 **Screen reader improvements**
@@ -182,53 +182,74 @@ Starting with the .NET Framework 4.7.1, improvements in high conrast have been m
   
     ![DataGrid default link style after accessibility improvements](media/default-link-style-after.png)  
 
+For more information on WPF accessibility improvements in the .NET Framework 4.7.1, see [Accessibility improvements in WPF](../framework/migration-guide/retargeting/4.7-4.7.1.md#accessibility-improvements-in-wpf).
+
 ## Windows Forms accessibility improvements
 
-In the .NET Framework 4.7.1, Windows Forms includes accessibility changes in the following areas.
+In the .NET Framework 4.7.1, Windows Forms (WinForms) includes accessibility changes in the following areas.
 
-Improved display during High Contrast mode
-Improved property browser experience
-Enhanced UI accessibility patterns
-WPF – Changing implicit data templates
-This feature enables the automatic update of elements that use implicit DataTemplates after changing a resource. When an application adds, removes, or replaces a value declared in a ResourceDictionary, WPF automatically updates all elements that use the value in most cases, including the implicit style case: <Style TargetType=”Button”. Here the value should apply to all buttons in the scope of the resource. This feature supports a similar update in the implicit data template case where the value should apply to all in-scope ContentPresenters whose content is a Book: <DataTemplate DataType=”{x:Type local:Book}”> 
-This feature’s principal client is Visual Studio’s “Edit-and-Continue” facility, -when a user changes a DataTemplate resource in a running application and expects to see the effect of that change when the application continues. However it could also prove useful to any application with changing DataTemplate resources.
-The feature is controlled by a new property ResourceDictionary.InvalidatesImplicitDataTemplateResources. After setting this to True, any changes  to DataTemplate resources in the dictionary will cause all ContentPresenters in the scope of the dictionary to re-evaluate their choice of DataTemplate. This is a moderately expensive process – our recommendation is to not to enable it unless you really need it.
-WPF – Distinguishing dynamic values in a template
-This feature enables a caller to determine whether a value obtained from a template is “dynamic”. Diagnostic assistants, such as Visual Studio’s “Edit-and-Continue” facility, need to know whether a templated value is dynamic, in order to propagate a user’s changes correctly.
-The feature is implemented by a new method on the class DependencyPropertyHelper:
+**Improved display in High Contrast mode**
 
-  public static bool IsTemplatedValueDynamic(DependencyObject elementInTemplate, DependencyProperty dependencyProperty);
-view raw
-Net471_WPF_DynamicValuesInTemplate.cs hosted with ❤ by GitHub 
-This returns true if the template’s value for the given property is “dynamic”, that is if it declared via DynamicResourceReference or TemplateBinding, or via Binding or one of its derived classes.
-WPF – SourceInfo for elements in templates
-Diagnostic assistants such as Visual Studio’s “Edit-and-Continue” facility can use SourceInfo to locate the file and line number where a given element was declared.  The SourceInfo is now available for elements declared in a template loaded from XAML (as opposed to compiled BAML). This enables diagnostic assistants to do a better job. This feature is enabled automatically whenever SourceInfo itself is enabled.
-WPF – Enable Visual Diagnostics
-This feature provides a number of ways to control the VisualDiagnostic features. Diagnostic assistants can request WPF to share internal information. This feature gives both the assistant and the application developer more control over when this sharing is enabled.
-The VisualDiagnostic features in WPF, with their introduction in .NET Framework 4.6, were initially only enabled when a managed debugger was attached. However, scenarios have arisen involving other components (besides a debugger) that can reasonably be considered as a diagnostic assistant, e.g. Visual Studio’s design surface. Thus, the need for a public way to control the features.  The feature is controlled by two new methods on the class VisualDiagnostics, and by a number of registry keys, app-context switches, and environment variables.
+Starting with the .NET Framework 4.7.1, various WinForms controls offer improved rendering in the HighContrast modes available in the operating system. Windows 10 has changed the values for some high contrast system colors, and Windows Forms is based on the Windows 10 Win32 framework. For the best experience, run on the latest version of Windows and opt in to the latest OS changes by adding an app.manifest file in a test application and un-comment the Windows 10 supported OS  line so that it looks the following:
 
-public static void EnableVisualTreeChanged();
+```xml
+<!– Windows 10 –>
+<supportedOS Id=”{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}” />
+```
+Some examples of high contrast changes include:
 
-public static void DisableVisualTreeChanged(); 
-view raw
-Net471_WPF_VisualDiagnostics.cs hosted with ❤ by GitHub 
-The methods enable and disable the VisualTreeChanged event. You can only enable this event in a “diagnostic scenario”, defined as one of the following:
-A debugger is attached
-Windows 10 Developer Mode is set. More precisely, registry key HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUnlock\AllowDevelopmentWithoutDevLicense has value 1
-Environment variable ENABLE_XAML_DIAGNOSTICS_VISUAL_TREE_NOTIFICATIONS is set to a value different from “0” or “false” (case-insensitive).
-Changes to the visual tree are disallowed while a VisualTreeChanged event is in progress. Specifically, an InvalidOperationException is thrown by any of the following actions:
-Changing a visual or logical parent
-Changing a resource dictionary
-Changing a DependencyProperty value on a FrameworkElement or FrameworkContentElement.
-This guards against unexpected and unsupported re-entrancy.
-It is possible to override this InvalidOperationException, should you encounter a situation where debugging is impeded by it. To do so, add the following AppContext Switch to the <runtime> section of the app config file and set it to true, 
-Switch.System.Windows.Diagnostics.AllowChangesDuringVisualTreeChanged
-None of the features mentioned here are supported in production applications. They are intended only for diagnostic assistance.
-Finally, you may want to run your application under the debugger, but in “production mode” without any potential interference from the VisualDiagnostic features. To do so, add the following AppContext Switch to the <runtime> section of the app config file and set it to true,
+- Checkmarks in <xref:System.Windows.Forms.MenuStrip> items are easier to view.
 
+- When selected, disabled <xref:System.Windows.Forms.MenuStrip> items are easier to view.
 
+- Text in a selected <xref:System.Windows.Forms.Button> control contrasts with the selection color.
 
+- Disabled text is easier to read. For example:
 
+    Before:
+
+    ![Disabled text before accessibility improvements](media/wf-disabled-before.png) 
+
+    After:
+
+    ![Disabled text after accessibility improvements](media/wf-disabled-after.png) 
+- High contrast improvements in the Thread Exception Dialog.
+
+- Better multi-monitor DPI awareness in control anchoring and scaling.
+
+**Improved Narrator support**
+
+Windows Forms in the .NET Framework 4.7.1 includes the following accessibility improvements for the Narrator:
+
+- The <xref:System.Windows.Forms.MonthCalendar> control can be accessed by the Narrator, as well as by other UI automation tools.
+
+- The <xref:System.Windows.Forms.CheckedListBox> control notifies Narrator when the <xref:System.Windows.Forms.CheckedListBox.CheckedState> property has changed so the user is notified that they’ve changed the value of a list item.
+ 
+- The <xref:System.Windows.Forms.DataGridViewCell> control reports the correct read-only status to Narrator.
+ 
+- Narrator can now read disabled <xref:System.Windows.Forms.ToolStripMenuItem> text, whereas previously it would skip over disabled menu items.
+
+**Enhanced UI accessibility patterns**
+
+Starting with the .NET Framework 4.7.1, developers of accessibility technology tools can leverage common api accessibility patterns and properties for several WinForms controls. These accessibility improvements include:
+
+- The <xref:System.Windows.Forms.ComboBox> and <xref:System.Windows.Forms.ToolStripSplitButton> now support the [expand/collapse pattern](../ui-automation/implementing-the-ui-automation-expandcollapse-control-patttern.md).
+ 
+- The <xref:System.Windows.Forms.DatagridviewcheckBoxCell> now supports the [toggle pattern](../ui-automation/implementing-the-ui-automation-toggle-control-patttern.md).
+ 
+- The <xref:System.Windows.Forms.ToolStripItem> control supports the <xref:System.Windows.Automation.automationElement.Name> property and the [expand/collapse pattern](../ui-automation/implementing-the-ui-automation-expandcollapse-control-patttern.md).
+
+- The <xref:System.Windows.Forms.NumericUpDown> and <xref:System.Windodws.Forms.DomainUpDown> controls support the <xref:System.Windows.Automation.automationElement.Name> property.
+
+**Improved property browser experience**
+
+Starting with the .NET Framework 4.7.1, Windows Forms includes:
+
+- Better keyboard navigation through the various drop-down selection windows.
+- A reduction of unnecessary tab stops.
+- Better reporting of control types.
+- Improved narrator behavior.
+ 
 ## See Also
 [What's new in the .NET Framework](whats-new.md)   
  

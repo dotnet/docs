@@ -60,9 +60,7 @@ The .NET Framework 4.7.1 includes new features in the following areas:
 - [Networking](#net471)
 - [ASP.NET](#asp-net471) 
 
-In addition, a major focus in the .NET Framework 4.7.1 is improved accessibility, so that apps are able to work well with a variety of devices and form factors. For information on accessibility improvements in the .NET Framework 4.7.1, see 
-<!-- [What's new in accessibility in the .NET Framework](whats-new-in-accessibility.md). -->
-the [.NET Framework 4.7.1 Accessibility and WPF Improvements](https://blogs.msdn.microsoft.com/dotnet/2017/09/21/net-framework-4-7-1-accessibility-and-wpf-improvements/) blog post.
+In addition, a major focus in the .NET Framework 4.7.1 is improved accessibility, so that apps are able to work well with a variety of devices and form factors. For information on accessibility improvements in the .NET Framework 4.7.1, see [What's new in accessibility in the .NET Framework](whats-new-in-accessibility.md). 
 
 <a name="core471" />
 #### Core

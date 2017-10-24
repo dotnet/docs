@@ -32,6 +32,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.SettingsProvider" />
+    <altmember cref="T:System.Configuration.ApplicationSettingsBase" />
   </Docs>
   <Members>
     <Member MemberName="GetPreviousVersion">
@@ -68,6 +70,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityException">For <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" /> permission.</permission>
+        <altmember cref="M:System.Configuration.IApplicationSettingsProvider.Upgrade(System.Configuration.SettingsContext,System.Configuration.SettingsPropertyCollection)" />
+        <altmember cref="M:System.Configuration.ApplicationSettingsBase.GetPreviousVersion(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -103,6 +107,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityException">For <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" /> permission.</permission>
+        <altmember cref="T:System.Configuration.DefaultSettingValueAttribute" />
+        <altmember cref="M:System.Configuration.ApplicationSettingsBase.Reset" />
       </Docs>
     </Member>
     <Member MemberName="Upgrade">
@@ -142,6 +148,9 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityException">For <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" /> permission.</permission>
+        <altmember cref="M:System.Configuration.IApplicationSettingsProvider.GetPreviousVersion(System.Configuration.SettingsContext,System.Configuration.SettingsProperty)" />
+        <altmember cref="M:System.Configuration.ApplicationSettingsBase.Upgrade" />
+        <altmember cref="T:System.Configuration.NoSettingsVersionUpgradeAttribute" />
       </Docs>
     </Member>
   </Members>

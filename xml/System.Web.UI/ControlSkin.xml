@@ -37,6 +37,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.PageTheme" />
+    <altmember cref="T:System.Web.UI.ControlSkinDelegate" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -85,6 +87,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ControlSkinDelegate" />
       </Docs>
     </Member>
     <Member MemberName="ControlType">

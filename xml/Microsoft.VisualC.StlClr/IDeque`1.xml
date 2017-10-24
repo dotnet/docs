@@ -403,10 +403,17 @@
       </Parameters>
       <Docs>
         <param name="">To be added.</param>
-        <param name="_Where">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="_Where">The element to erase.</param>
+        <summary>Removes the element at the specified position.</summary>
+        <returns>An iterator.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [deque::erase (STL/CLR)](http://msdn.microsoft.com/library/831fbc2b-604f-446b-88bc-b37531304c33).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="erase">
@@ -428,11 +435,18 @@
       </Parameters>
       <Docs>
         <param name="">To be added.</param>
-        <param name="_First_iter">To be added.</param>
-        <param name="_Last_iter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="_First_iter">The beginning position of the range to erase.</param>
+        <param name="_Last_iter">The position one beyond the last element of the range to erase.</param>
+        <summary>Removes the elements between the specified iterators.</summary>
+        <returns>An iterator.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [deque::erase (STL/CLR)](http://msdn.microsoft.com/library/831fbc2b-604f-446b-88bc-b37531304c33).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="front">
@@ -520,10 +534,17 @@
         <Parameter Name="_Right" Type="System.Collections.IEnumerable" />
       </Parameters>
       <Docs>
-        <param name="_Where_iter">To be added.</param>
-        <param name="_Right">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="_Where_iter">The location in the container in front of which to insert.</param>
+        <param name="_Right">The enumeration of elements to insert into the container.</param>
+        <summary>Adds elements at a specified position in the container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [deque::insert (STL/CLR)](http://msdn.microsoft.com/library/a3b86c46-e6a8-42d0-b642-5a8f05ddd68c).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="insert">
@@ -544,11 +565,18 @@
         <Parameter Name="_Last" Type="Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Where">To be added.</param>
-        <param name="_First">To be added.</param>
-        <param name="_Last">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="_Where">The location in the container in front of which to insert.</param>
+        <param name="_First">The beginning of the range to insert into the container.</param>
+        <param name="_Last">The first position beyond the end of the range to insert into the container.</param>
+        <summary>Adds elements at a specified position in the container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [deque::insert (STL/CLR)](http://msdn.microsoft.com/library/a3b86c46-e6a8-42d0-b642-5a8f05ddd68c).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="insert">
@@ -569,11 +597,18 @@
         <Parameter Name="_Val" Type="TValue" />
       </Parameters>
       <Docs>
-        <param name="_Where">To be added.</param>
-        <param name="_Count">To be added.</param>
-        <param name="_Val">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="_Where">The location in the container in front of which to insert.</param>
+        <param name="_Count">The number of elements to insert into the container.</param>
+        <param name="_Val">The value of the elements to be inserted into the container.</param>
+        <summary>Adds the given number of elements at a specified position in the container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [deque::insert (STL/CLR)](http://msdn.microsoft.com/library/a3b86c46-e6a8-42d0-b642-5a8f05ddd68c).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="insert">
@@ -595,11 +630,18 @@
       </Parameters>
       <Docs>
         <param name="">To be added.</param>
-        <param name="_Where">To be added.</param>
-        <param name="_Val">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="_Where">The location in the container in front of which to insert.</param>
+        <param name="_Val">The element to be inserted into the container.</param>
+        <summary>Adds an element at a specified position in the container.</summary>
+        <returns>An iterator.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [deque::insert (STL/CLR)](http://msdn.microsoft.com/library/a3b86c46-e6a8-42d0-b642-5a8f05ddd68c).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">

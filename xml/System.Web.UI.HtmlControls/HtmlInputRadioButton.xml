@@ -61,6 +61,11 @@ Caption Text<br>
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.HtmlControls.HtmlInputControl.Name" />
+    <altmember cref="P:System.Web.UI.HtmlControls.HtmlInputRadioButton.Value" />
+    <altmember cref="P:System.Web.UI.HtmlControls.HtmlInputRadioButton.Checked" />
+    <altmember cref="E:System.Web.UI.HtmlControls.HtmlInputRadioButton.ServerChange" />
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputCheckBox" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -142,6 +147,7 @@ Caption Text<br>
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlInputRadioButton.Name" />
       </Docs>
     </Member>
     <Member MemberName="LoadPostData">
@@ -209,6 +215,7 @@ Caption Text<br>
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlInputRadioButton.Checked" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -250,6 +257,8 @@ Caption Text<br>
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Page.RegisterRequiresPostBack(System.Web.UI.Control)" />
+        <altmember cref="E:System.Web.UI.Control.PreRender" />
       </Docs>
     </Member>
     <Member MemberName="OnServerChange">
@@ -299,6 +308,9 @@ Caption Text<br>
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.HtmlControls.HtmlInputRadioButton.OnServerChange(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.HtmlControls.HtmlInputRadioButton.OnServerChange(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.HtmlControls.HtmlInputRadioButton.ServerChange" />
+        <altmember cref="T:System.EventArgs" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlInputRadioButton.Checked" />
       </Docs>
     </Member>
     <Member MemberName="RaisePostDataChangedEvent">
@@ -327,6 +339,8 @@ Caption Text<br>
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.HtmlControls.HtmlInputRadioButton.RaisePostDataChangedEvent" /> method in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.HtmlControls.HtmlInputRadioButton.RaisePostDataChangedEvent" /> method so that the <see cref="E:System.Web.UI.HtmlControls.HtmlInputRadioButton.ServerChange" /> event is correctly raised.</para>
         </block>
+        <altmember cref="M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent" />
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlInputRadioButton.OnServerChange(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="RenderAttributes">
@@ -408,6 +422,9 @@ Caption Text<br>
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlInputRadioButton.OnServerChange(System.EventArgs)" />
+        <altmember cref="T:System.EventHandler" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlInputRadioButton.Checked" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">
@@ -440,6 +457,8 @@ Caption Text<br>
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlInputRadioButton.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
+        <altmember cref="M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent">
@@ -465,6 +484,8 @@ Caption Text<br>
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlInputRadioButton.RaisePostDataChangedEvent" />
+        <altmember cref="M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent" />
       </Docs>
     </Member>
     <Member MemberName="Value">

@@ -298,6 +298,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Generic.Queue`1.TrimExcess" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -519,6 +520,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Collections.Generic.Queue`1" /> is empty.</exception>
+        <altmember cref="M:System.Collections.Generic.Queue`1.Enqueue(`0)" />
+        <altmember cref="M:System.Collections.Generic.Queue`1.Peek" />
       </Docs>
     </Member>
     <Member MemberName="Enqueue">
@@ -576,6 +579,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Generic.Queue`1.Dequeue" />
+        <altmember cref="M:System.Collections.Generic.Queue`1.Peek" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -645,6 +650,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Generic.Queue`1.Enumerator" />
+        <altmember cref="T:System.Collections.Generic.IEnumerator`1" />
       </Docs>
     </Member>
     <Member MemberName="Peek">
@@ -703,6 +710,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Collections.Generic.Queue`1" /> is empty.</exception>
+        <altmember cref="M:System.Collections.Generic.Queue`1.Enqueue(`0)" />
+        <altmember cref="M:System.Collections.Generic.Queue`1.Dequeue" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IEnumerable&lt;T&gt;.GetEnumerator">
@@ -756,6 +765,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Generic.Queue`1.GetEnumerator" />
+        <altmember cref="M:System.Collections.IEnumerable.GetEnumerator" />
+        <altmember cref="T:System.Collections.Generic.IEnumerator`1" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -862,6 +874,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.ICollection.SyncRoot" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.SyncRoot">
@@ -929,6 +942,7 @@ finally {
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.ICollection.IsSynchronized" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -982,6 +996,9 @@ finally {
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Generic.Queue`1.GetEnumerator" />
+        <altmember cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator" />
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="ToArray">
@@ -1077,6 +1094,8 @@ finally {
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Generic.Queue`1.Clear" />
+        <altmember cref="P:System.Collections.Generic.Queue`1.Count" />
       </Docs>
     </Member>
     <Member MemberName="TryDequeue">
@@ -1123,5 +1142,16 @@ finally {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.Queue`1" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

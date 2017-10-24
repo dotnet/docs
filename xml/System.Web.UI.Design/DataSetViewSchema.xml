@@ -34,6 +34,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.Design.DataSetSchema" />
+    <altmember cref="T:System.Web.UI.Design.DataSetFieldSchema" />
+    <altmember cref="T:System.Data.DataTable" />
+    <altmember cref="T:System.Data.DataColumn" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -52,6 +56,9 @@
         <param name="dataTable">The <see cref="T:System.Data.DataTable" /> that the <see cref="T:System.Web.UI.Design.DataSetViewSchema" /> instance will describe.</param>
         <summary>Creates an instance of the <see cref="T:System.Web.UI.Design.DataSetViewSchema" /> class using a specified <see cref="T:System.Data.DataTable" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.DataSetFieldSchema" />
+        <altmember cref="T:System.Data.DataTable" />
+        <altmember cref="T:System.Data.DataColumn" />
       </Docs>
     </Member>
     <Member MemberName="GetChildren">
@@ -79,6 +86,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.IDataSourceViewSchema" />
+        <altmember cref="T:System.Data.DataTable" />
+        <altmember cref="T:System.Data.DataColumn" />
       </Docs>
     </Member>
     <Member MemberName="GetFields">
@@ -105,6 +115,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.DataSetFieldSchema" />
+        <altmember cref="T:System.Data.DataTable" />
+        <altmember cref="T:System.Data.DataColumn" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -123,6 +136,9 @@
         <summary>Gets the name of the view using its <see cref="P:System.Data.DataTable.TableName" /> property.</summary>
         <value>The name of the view.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.DataSetFieldSchema" />
+        <altmember cref="T:System.Data.DataTable" />
+        <altmember cref="T:System.Data.DataColumn" />
       </Docs>
     </Member>
   </Members>

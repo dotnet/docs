@@ -38,6 +38,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Net.Sockets.Socket.Poll(System.Int32,System.Net.Sockets.SelectMode)" />
+    <altmember cref="M:System.Net.Sockets.Socket.Select(System.Collections.IList,System.Collections.IList,System.Collections.IList,System.Int32)" />
   </Docs>
   <Members>
     <Member MemberName="SelectError">

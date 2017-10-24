@@ -34,6 +34,8 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="Overload:System.Web.Mobile.MobileFormsAuthentication.RedirectFromLoginPage" />
+    <altmember cref="T:System.Web.Security.FormsAuthentication" />
   </Docs>
   <Members>
     <Member MemberName="RedirectFromLoginPage">
@@ -130,7 +132,18 @@
       <Docs>
         <summary>Calls the <see cref="M:System.Web.Security.FormsAuthentication.SignOut" /> method and sets the <see cref="P:System.Web.UI.MobileControls.IPageAdapter.PersistCookielessData" /> property to <see langword="false" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.IPageAdapter.PersistCookielessData" />
+        <altmember cref="M:System.Web.Security.FormsAuthentication.SignOut" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="RedirectFromLoginPage">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Redirects an authenticated user back to the originally requested URL. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

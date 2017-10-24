@@ -39,6 +39,17 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:Microsoft.VisualBasic.Devices.Audio" />
+    <altmember cref="T:Microsoft.VisualBasic.MyServices.ClipboardProxy" />
+    <altmember cref="T:Microsoft.VisualBasic.Devices.Clock" />
+    <altmember cref="T:Microsoft.VisualBasic.MyServices.FileSystemProxy" />
+    <altmember cref="T:Microsoft.VisualBasic.Devices.ComputerInfo" />
+    <altmember cref="T:Microsoft.VisualBasic.Devices.Keyboard" />
+    <altmember cref="T:Microsoft.VisualBasic.Devices.Mouse" />
+    <altmember cref="T:Microsoft.VisualBasic.Devices.Network" />
+    <altmember cref="T:Microsoft.VisualBasic.Devices.Ports" />
+    <altmember cref="T:Microsoft.VisualBasic.MyServices.RegistryProxy" />
+    <altmember cref="T:Microsoft.VisualBasic.Devices.ServerComputer" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -111,6 +122,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.Devices.Audio" />
       </Docs>
     </Member>
     <Member MemberName="Clipboard">
@@ -159,6 +171,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.MyServices.ClipboardProxy" />
       </Docs>
     </Member>
     <Member MemberName="Keyboard">
@@ -203,6 +216,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.Devices.Keyboard" />
       </Docs>
     </Member>
     <Member MemberName="Mouse">
@@ -249,6 +263,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.Devices.Mouse" />
       </Docs>
     </Member>
     <Member MemberName="Ports">
@@ -299,6 +314,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.Devices.Ports" />
       </Docs>
     </Member>
     <Member MemberName="Screen">
@@ -346,6 +362,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.Windows.Forms.Screen" />
+        <altmember cref="P:System.Windows.Forms.Screen.PrimaryScreen" />
       </Docs>
     </Member>
   </Members>

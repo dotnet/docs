@@ -45,6 +45,17 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+    <altmember cref="T:System.Web.UI.WebControls.DetailsViewRow" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsView.Rows" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsView.HeaderRow" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsView.FooterRow" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsView.TopPagerRow" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsView.BottomPagerRow" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsViewRowCollection.Count" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsViewRowCollection.Item(System.Int32)" />
+    <altmember cref="M:System.Web.UI.WebControls.DetailsViewRowCollection.CopyTo(System.Web.UI.WebControls.DetailsViewRow[],System.Int32)" />
+    <altmember cref="M:System.Web.UI.WebControls.DetailsViewRowCollection.GetEnumerator" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -70,6 +81,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewRow" />
+        <altmember cref="T:System.Collections.ArrayList" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.Rows" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -111,6 +126,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewRow" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.Rows" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewRowCollection.Item(System.Int32)" />
+        <altmember cref="M:System.Web.UI.WebControls.DetailsViewRowCollection.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -144,6 +164,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewRow" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.Rows" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewRowCollection.Item(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -181,6 +205,15 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewRow" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.Rows" />
+        <altmember cref="T:System.Collections.IEnumerator" />
+        <altmember cref="P:System.Collections.IEnumerator.Current" />
+        <altmember cref="M:System.Collections.IEnumerator.MoveNext" />
+        <altmember cref="M:System.Collections.IEnumerator.Reset" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewRowCollection.Item(System.Int32)" />
+        <altmember cref="M:System.Web.UI.WebControls.DetailsViewRowCollection.CopyTo(System.Web.UI.WebControls.DetailsViewRow[],System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -209,6 +242,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewRow" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.Rows" />
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -239,6 +275,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewRow" />
+        <altmember cref="P:System.Collections.ICollection.IsSynchronized" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.Rows" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -276,6 +316,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewRow" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.Rows" />
+        <altmember cref="M:System.Web.UI.WebControls.DetailsViewRowCollection.CopyTo(System.Web.UI.WebControls.DetailsViewRow[],System.Int32)" />
+        <altmember cref="M:System.Web.UI.WebControls.DetailsViewRowCollection.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -303,6 +348,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewRow" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.Rows" />
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="P:System.Collections.ICollection.SyncRoot" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -336,6 +386,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewRow" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.Rows" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewRowCollection.Item(System.Int32)" />
+        <altmember cref="M:System.Web.UI.WebControls.DetailsViewRowCollection.GetEnumerator" />
       </Docs>
     </Member>
   </Members>

@@ -31,6 +31,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ListBox" />
+    <altmember cref="T:System.Windows.Forms.ComboBox" />
+    <altmember cref="T:System.Windows.Forms.CheckedListBox" />
+    <altmember cref="T:System.Windows.Forms.MenuItem" />
+    <altmember cref="T:System.Windows.Forms.MeasureItemEventHandler" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -134,6 +139,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.MeasureItemEventArgs.ItemWidth" />
+        <altmember cref="P:System.Windows.Forms.MeasureItemEventArgs.ItemHeight" />
       </Docs>
     </Member>
     <Member MemberName="ItemHeight">
@@ -163,6 +170,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.MeasureItemEventArgs.Index" />
+        <altmember cref="P:System.Windows.Forms.MeasureItemEventArgs.ItemWidth" />
       </Docs>
     </Member>
     <Member MemberName="ItemWidth">
@@ -197,7 +206,19 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.MeasureItemEventArgs.ItemHeight" />
+        <altmember cref="P:System.Windows.Forms.MeasureItemEventArgs.Index" />
+        <altmember cref="T:System.Windows.Forms.MenuItem" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.MeasureItemEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

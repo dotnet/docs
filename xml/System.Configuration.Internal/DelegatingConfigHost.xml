@@ -22,6 +22,7 @@
     <summary>Delegates all members of the <see cref="T:System.Configuration.Internal.IInternalConfigHost" /> interface to another instance of a host.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:System.Configuration.Internal.IInternalConfigHost" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -1003,7 +1004,8 @@
       </Parameters>
       <Docs>
         <param name="configSection">The <see cref="T:System.Configuration.ConfigurationSection" /> to process.</param>
-        <param name="builder"><see cref="T:System.Configuration.ConfigurationBuilder" /> to use to process the <paramref name="configSection" />.</param>
+        <param name="builder">
+          <see cref="T:System.Configuration.ConfigurationBuilder" /> to use to process the <paramref name="configSection" />.</param>
         <summary>Processes a <see cref="T:System.Configuration.ConfigurationSection" /> object using the provided <see cref="T:System.Configuration.ConfigurationBuilder" />.</summary>
         <returns>The processed <see cref="T:System.Configuration.ConfigurationSection" />.</returns>
         <remarks>To be added.</remarks>
@@ -1027,7 +1029,8 @@
       </Parameters>
       <Docs>
         <param name="rawXml">The <see cref="T:System.Xml.XmlNode" /> to process.</param>
-        <param name="builder"><see cref="T:System.Configuration.ConfigurationBuilder" /> to use to process the <paramref name="rawXml" />.</param>
+        <param name="builder">
+          <see cref="T:System.Configuration.ConfigurationBuilder" /> to use to process the <paramref name="rawXml" />.</param>
         <summary>Processes the markup of a configuration section using the provided <see cref="T:System.Configuration.ConfigurationBuilder" />.</summary>
         <returns>The processed <see cref="T:System.Xml.XmlNode" />.</returns>
         <remarks>To be added.</remarks>
@@ -1309,5 +1312,32 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteCompleted">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates that all writing to the configuration file has completed and specifies whether permissions should be asserted.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OpenStreamForWrite">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens and returns a <see cref="T:System.IO.Stream" /> object for writing to a configuration file. Allows a <see cref="T:System.IO.Stream" /> object to be designated as a template for copying file attributes.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OpenStreamForRead">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens and returns a <see cref="T:System.IO.Stream" /> object to read a configuration file.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -33,6 +33,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="E:Microsoft.VisualBasic.Devices.Network.NetworkAvailabilityChanged" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -107,6 +108,8 @@
         <exception cref="T:System.Net.WebException">The request is denied by the target web server.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Net.WebPermission">Controls rights to access HTTP Internet resources. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.Uri" />
+        <altmember cref="T:System.Net.ICredentials" />
       </Docs>
     </Member>
     <Member MemberName="DownloadFile">
@@ -164,6 +167,8 @@
         <exception cref="T:System.Net.WebException">The request is denied by the target web server.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Net.WebPermission">Controls rights to access HTTP Internet resources. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.Uri" />
+        <altmember cref="T:System.Net.ICredentials" />
       </Docs>
     </Member>
     <Member MemberName="DownloadFile">
@@ -230,6 +235,8 @@
         <exception cref="T:System.Net.WebException">The request is denied by the target web server.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Net.WebPermission">Controls rights to access HTTP Internet resources. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.Uri" />
+        <altmember cref="T:System.Net.ICredentials" />
       </Docs>
     </Member>
     <Member MemberName="DownloadFile">
@@ -296,6 +303,8 @@
         <exception cref="T:System.Net.WebException">The request is denied by the target web server.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Net.WebPermission">Controls rights to access HTTP Internet resources. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.Uri" />
+        <altmember cref="T:System.Net.ICredentials" />
       </Docs>
     </Member>
     <Member MemberName="DownloadFile">
@@ -376,6 +385,8 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions related to user interfaces and the clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" />.</permission>
         <permission cref="T:System.Net.WebPermission">Controls rights to access HTTP Internet resources. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.Uri" />
+        <altmember cref="T:System.Net.ICredentials" />
       </Docs>
     </Member>
     <Member MemberName="DownloadFile">
@@ -456,6 +467,8 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions related to user interfaces and the clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" />.</permission>
         <permission cref="T:System.Net.WebPermission">Controls rights to access HTTP Internet resources. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.Uri" />
+        <altmember cref="T:System.Net.ICredentials" />
       </Docs>
     </Member>
     <Member MemberName="DownloadFile">
@@ -540,6 +553,8 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions related to user interfaces and the clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" />.</permission>
         <permission cref="T:System.Net.WebPermission">Controls rights to access HTTP Internet resources. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.Uri" />
+        <altmember cref="T:System.Net.ICredentials" />
       </Docs>
     </Member>
     <Member MemberName="DownloadFile">
@@ -619,6 +634,8 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions related to user interfaces and the clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" />.</permission>
         <permission cref="T:System.Net.WebPermission">Controls rights to access HTTP Internet resources. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.Uri" />
+        <altmember cref="T:System.Net.ICredentials" />
       </Docs>
     </Member>
     <Member MemberName="DownloadFile">
@@ -700,6 +717,8 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions related to user interfaces and the clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" />.</permission>
         <permission cref="T:System.Net.WebPermission">Controls rights to access HTTP Internet resources. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.Uri" />
+        <altmember cref="T:System.Net.ICredentials" />
       </Docs>
     </Member>
     <Member MemberName="DownloadFile">
@@ -781,6 +800,8 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions related to user interfaces and the clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" />.</permission>
         <permission cref="T:System.Net.WebPermission">Controls rights to access HTTP Internet resources. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.Uri" />
+        <altmember cref="T:System.Net.ICredentials" />
       </Docs>
     </Member>
     <Member MemberName="IsAvailable">
@@ -867,6 +888,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.Devices.Network" />
+        <altmember cref="N:Microsoft.VisualBasic.Devices" />
+        <altmember cref="T:Microsoft.VisualBasic.Devices.NetworkAvailableEventHandler" />
+        <altmember cref="T:Microsoft.VisualBasic.Devices.NetworkAvailableEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="Ping">
@@ -922,6 +947,7 @@
         <permission cref="T:System.Net.SocketPermission">Controls rights to make or accept connections on a transport address. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Diagnostics.PerformanceCounterPermission">Controls access to a Windows NT performance counter component. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Net.NetworkInformation.NetworkInformationPermission">Controls access to network information and traffic statistics for the local computer. Associated enumeration: <see cref="F:System.Net.NetworkInformation.NetworkInformationAccess.Ping" />.</permission>
+        <altmember cref="T:System.Uri" />
       </Docs>
     </Member>
     <Member MemberName="Ping">
@@ -977,6 +1003,7 @@
         <permission cref="T:System.Net.SocketPermission">Controls rights to make or accept connections on a transport address. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Diagnostics.PerformanceCounterPermission">Controls access to a Windows NT performance counter component. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Net.NetworkInformation.NetworkInformationPermission">Controls access to network information and traffic statistics for the local computer. Associated enumeration: <see cref="F:System.Net.NetworkInformation.NetworkInformationAccess.Ping" />.</permission>
+        <altmember cref="T:System.Uri" />
       </Docs>
     </Member>
     <Member MemberName="Ping">
@@ -1034,6 +1061,7 @@
         <permission cref="T:System.Net.SocketPermission">Controls rights to make or accept connections on a transport address. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Diagnostics.PerformanceCounterPermission">Controls access to a Windows NT performance counter component. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Net.NetworkInformation.NetworkInformationPermission">Controls access to network information and traffic statistics for the local computer. Associated enumeration: <see cref="F:System.Net.NetworkInformation.NetworkInformationAccess.Ping" />.</permission>
+        <altmember cref="T:System.Uri" />
       </Docs>
     </Member>
     <Member MemberName="Ping">
@@ -1091,6 +1119,7 @@
         <permission cref="T:System.Net.SocketPermission">Controls rights to make or accept connections on a transport address. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Diagnostics.PerformanceCounterPermission">Controls access to a Windows NT performance counter component. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Net.NetworkInformation.NetworkInformationPermission">Controls access to network information and traffic statistics for the local computer. Associated enumeration: <see cref="F:System.Net.NetworkInformation.NetworkInformationAccess.Ping" />.</permission>
+        <altmember cref="T:System.Uri" />
       </Docs>
     </Member>
     <Member MemberName="UploadFile">
@@ -1148,6 +1177,9 @@
         <exception cref="T:System.Net.WebException">The request is denied by the target web server.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Net.WebPermission">Controls rights to access HTTP Internet resources. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.Uri" />
+        <altmember cref="T:System.Net.ICredentials" />
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.UICancelOption" />
       </Docs>
     </Member>
     <Member MemberName="UploadFile">
@@ -1205,6 +1237,9 @@
         <exception cref="T:System.Net.WebException">The request is denied by the target web server.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Net.WebPermission">Controls rights to access HTTP Internet resources. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.Uri" />
+        <altmember cref="T:System.Net.ICredentials" />
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.UICancelOption" />
       </Docs>
     </Member>
     <Member MemberName="UploadFile">
@@ -1270,6 +1305,9 @@
         <exception cref="T:System.Net.WebException">The request is denied by the target web server.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Net.WebPermission">Controls rights to access HTTP Internet resources. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.Uri" />
+        <altmember cref="T:System.Net.ICredentials" />
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.UICancelOption" />
       </Docs>
     </Member>
     <Member MemberName="UploadFile">
@@ -1335,6 +1373,9 @@
         <exception cref="T:System.Net.WebException">The request is denied by the target web server.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Net.WebPermission">Controls rights to access HTTP Internet resources. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.Uri" />
+        <altmember cref="T:System.Net.ICredentials" />
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.UICancelOption" />
       </Docs>
     </Member>
     <Member MemberName="UploadFile">
@@ -1406,6 +1447,9 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions related to user interfaces and the clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" />.</permission>
         <permission cref="T:System.Net.WebPermission">Controls rights to access HTTP Internet resources. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.Uri" />
+        <altmember cref="T:System.Net.ICredentials" />
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.UICancelOption" />
       </Docs>
     </Member>
     <Member MemberName="UploadFile">
@@ -1479,6 +1523,9 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions related to user interfaces and the clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" />.</permission>
         <permission cref="T:System.Net.WebPermission">Controls rights to access HTTP Internet resources. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.Uri" />
+        <altmember cref="T:System.Net.ICredentials" />
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.UICancelOption" />
       </Docs>
     </Member>
     <Member MemberName="UploadFile">
@@ -1552,6 +1599,9 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions related to user interfaces and the clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" />.</permission>
         <permission cref="T:System.Net.WebPermission">Controls rights to access HTTP Internet resources. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.Uri" />
+        <altmember cref="T:System.Net.ICredentials" />
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.UICancelOption" />
       </Docs>
     </Member>
     <Member MemberName="UploadFile">
@@ -1625,6 +1675,9 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions related to user interfaces and the clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" />.</permission>
         <permission cref="T:System.Net.WebPermission">Controls rights to access HTTP Internet resources. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.Uri" />
+        <altmember cref="T:System.Net.ICredentials" />
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.UICancelOption" />
       </Docs>
     </Member>
     <Member MemberName="UploadFile">
@@ -1699,6 +1752,9 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions related to user interfaces and the clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" />.</permission>
         <permission cref="T:System.Net.WebPermission">Controls rights to access HTTP Internet resources. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.Uri" />
+        <altmember cref="T:System.Net.ICredentials" />
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.UICancelOption" />
       </Docs>
     </Member>
     <Member MemberName="UploadFile">
@@ -1773,7 +1829,37 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions related to user interfaces and the clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" />.</permission>
         <permission cref="T:System.Net.WebPermission">Controls rights to access HTTP Internet resources. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.Uri" />
+        <altmember cref="T:System.Net.ICredentials" />
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.UICancelOption" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="UploadFile">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends the specified file to the specified host address.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DownloadFile">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Downloads the specified remote file and saves it in the specified location.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Ping">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Pings the specified server.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -71,6 +71,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="Overload:System.Reflection.Assembly.ReflectionOnlyLoad" />
+    <altmember cref="M:System.Type.ReflectionOnlyGetType(System.String,System.Boolean,System.Boolean)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -194,6 +196,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Type.ReflectionOnlyGetType(System.String,System.Boolean,System.Boolean)" />
+        <altmember cref="Overload:System.Reflection.Assembly.ReflectionOnlyLoad" />
       </Docs>
     </Member>
     <Member MemberName="ConstructorArguments">
@@ -256,6 +260,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Reflection.CustomAttributeData.NamedArguments" />
+        <altmember cref="M:System.Type.ReflectionOnlyGetType(System.String,System.Boolean,System.Boolean)" />
+        <altmember cref="Overload:System.Reflection.Assembly.ReflectionOnlyLoad" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -347,6 +354,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="target" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Type.ReflectionOnlyGetType(System.String,System.Boolean,System.Boolean)" />
+        <altmember cref="Overload:System.Reflection.Assembly.ReflectionOnlyLoad" />
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttributes">
@@ -407,6 +416,8 @@
         <altCompliant cref="Overload:System.Reflection.MemberInfo.GetCustomAttributes" />
         <exception cref="T:System.ArgumentNullException">
           <paramref name="target" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Type.ReflectionOnlyGetType(System.String,System.Boolean,System.Boolean)" />
+        <altmember cref="Overload:System.Reflection.Assembly.ReflectionOnlyLoad" />
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttributes">
@@ -503,6 +514,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="target" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Type.ReflectionOnlyGetType(System.String,System.Boolean,System.Boolean)" />
+        <altmember cref="Overload:System.Reflection.Assembly.ReflectionOnlyLoad" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -531,6 +544,7 @@
         <summary>Serves as a hash function for a particular type.</summary>
         <returns>A hash code for the current <see cref="T:System.Object" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Object.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="NamedArguments">
@@ -590,6 +604,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Reflection.CustomAttributeData.ConstructorArguments" />
+        <altmember cref="M:System.Type.ReflectionOnlyGetType(System.String,System.Boolean,System.Boolean)" />
+        <altmember cref="Overload:System.Reflection.Assembly.ReflectionOnlyLoad" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -642,5 +659,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetCustomAttributes">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a list of <see cref="T:System.Reflection.CustomAttributeData" /> objects representing data about the attributes that have been applied to the target.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

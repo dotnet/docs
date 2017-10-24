@@ -1130,5 +1130,32 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="MatchesXmlType">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns <see langword="true" /> if the type of the specified item matches the specified XML type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ParseTagName">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Parses the specified tag name.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IsQNameEqual">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares the <see cref="P:System.Xml.XPath.XPathNavigator.LocalName" /> and <see cref="P:System.Xml.XPath.XPathNavigator.NamespaceURI" /> properties of two <see cref="T:System.Xml.XPath.XPathNavigator" /> instances to check if they are equal.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -146,6 +146,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.ExceptionHandlingClause" />
+        <altmember cref="T:System.Reflection.ExceptionHandlingClauseOptions" />
       </Docs>
     </Member>
     <Member MemberName="GetILAsByteArray">
@@ -184,6 +186,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Reflection.Module.ResolveType(System.Int32,System.Type[],System.Type[])" />
+        <altmember cref="M:System.Reflection.Module.ResolveMethod(System.Int32,System.Type[],System.Type[])" />
       </Docs>
     </Member>
     <Member MemberName="InitLocals">
@@ -326,6 +330,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.LocalVariableInfo" />
       </Docs>
     </Member>
     <Member MemberName="MaxStackSize">

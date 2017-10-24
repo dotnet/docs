@@ -81,6 +81,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.Primitives.Track" />
+    <altmember cref="T:System.Windows.Controls.Primitives.Thumb" />
+    <altmember cref="T:System.Windows.Controls.Primitives.TickBar" />
+    <altmember cref="T:System.Windows.Controls.Primitives.TickPlacement" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -734,6 +738,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Slider.SelectionStart" />
+        <altmember cref="P:System.Windows.Controls.Slider.SelectionEnd" />
       </Docs>
     </Member>
     <Member MemberName="IsSelectionRangeEnabledProperty">
@@ -1402,6 +1408,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Slider.SelectionStart" />
+        <altmember cref="P:System.Windows.Controls.Slider.IsSelectionRangeEnabled" />
       </Docs>
     </Member>
     <Member MemberName="SelectionEndProperty">
@@ -1476,6 +1484,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Slider.SelectionEnd" />
+        <altmember cref="P:System.Windows.Controls.Slider.IsSelectionRangeEnabled" />
       </Docs>
     </Member>
     <Member MemberName="SelectionStartProperty">
@@ -1554,6 +1564,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Slider.TickPlacement" />
       </Docs>
     </Member>
     <Member MemberName="TickFrequencyProperty">
@@ -1620,6 +1631,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Slider.TickFrequency" />
       </Docs>
     </Member>
     <Member MemberName="TickPlacementProperty">

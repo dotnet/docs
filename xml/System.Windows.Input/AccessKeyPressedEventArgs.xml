@@ -13,6 +13,8 @@
   <Docs>
     <summary>Provides data for the <see cref="T:System.Windows.Input.AccessKeyManager" /> routed event.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Input.AccessKeyManager" />
+    <altmember cref="T:System.Windows.Input.AccessKeyPressedEventHandler" />
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -47,6 +49,8 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.AccessKeyEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Input.AccessKeyManager" />
+        <altmember cref="T:System.Windows.Input.AccessKeyPressedEventHandler" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -65,6 +69,8 @@
         <param name="key">The access key.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.AccessKeyPressedEventArgs" /> class with the specified access key.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Input.AccessKeyManager" />
+        <altmember cref="T:System.Windows.Input.AccessKeyPressedEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="InvokeEventHandler">
@@ -95,6 +101,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.AccessKeyManager" />
+        <altmember cref="T:System.Windows.Input.AccessKeyPressedEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="Key">
@@ -113,6 +121,8 @@
         <summary>Gets a string representation of the access key that was pressed</summary>
         <value>The access key.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Input.AccessKeyManager" />
+        <altmember cref="T:System.Windows.Input.AccessKeyPressedEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="Scope">
@@ -138,6 +148,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.AccessKeyManager" />
+        <altmember cref="T:System.Windows.Input.AccessKeyPressedEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="Target">
@@ -156,6 +168,8 @@
         <summary>Gets or sets the target for the event.</summary>
         <value>The element that raised this event.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Input.AccessKeyManager" />
+        <altmember cref="T:System.Windows.Input.AccessKeyPressedEventHandler" />
       </Docs>
     </Member>
   </Members>

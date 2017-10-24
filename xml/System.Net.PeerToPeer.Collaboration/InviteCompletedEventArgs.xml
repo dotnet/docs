@@ -20,6 +20,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="Overload:System.Net.PeerToPeer.Collaboration.Peer.Invite" />
+    <altmember cref="M:System.Net.PeerToPeer.Collaboration.Peer.InviteAsyncCancel(System.Object)" />
+    <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerInvitationResponse" />
   </Docs>
   <Members>
     <Member MemberName="InviteResponse">
@@ -45,6 +48,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerContact.Invite" />
+        <altmember cref="E:System.Net.PeerToPeer.Collaboration.Peer.InviteCompleted" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.Peer.OnInviteCompleted(System.Net.PeerToPeer.Collaboration.InviteCompletedEventArgs)" />
       </Docs>
     </Member>
   </Members>

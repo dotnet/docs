@@ -191,5 +191,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FromServiceEndpoint">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.ServiceModel.Discovery.EndpointDiscoveryMetadata" /> from a <see cref="T:System.ServiceModel.Description.ServiceEndpoint" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

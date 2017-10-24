@@ -55,6 +55,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.Mail.SmtpClient" />
+    <altmember cref="T:System.Net.Mail.MailMessage" />
+    <altmember cref="T:System.Web.UI.WebControls.EmbeddedMailObject" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -123,6 +126,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.Mail.SmtpClient" />
+        <altmember cref="T:System.Net.Mail.MailMessage" />
+        <altmember cref="T:System.Web.UI.WebControls.EmbeddedMailObject" />
       </Docs>
     </Member>
     <Member MemberName="CC">
@@ -168,6 +174,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.Mail.SmtpClient" />
+        <altmember cref="T:System.Net.Mail.MailMessage" />
+        <altmember cref="T:System.Web.UI.WebControls.EmbeddedMailObject" />
       </Docs>
     </Member>
     <Member MemberName="CreateMailMessage">
@@ -235,6 +244,9 @@
  <paramref name="recipients" /> contains an incorrect e-mail address.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="owner" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Net.Mail.SmtpClient" />
+        <altmember cref="T:System.Net.Mail.MailMessage" />
+        <altmember cref="T:System.Web.UI.WebControls.EmbeddedMailObject" />
       </Docs>
     </Member>
     <Member MemberName="CreateMailMessage">
@@ -304,6 +316,9 @@
  <paramref name="recipients" /> contains an incorrect e-mail address.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="owner" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Net.Mail.SmtpClient" />
+        <altmember cref="T:System.Net.Mail.MailMessage" />
+        <altmember cref="T:System.Web.UI.WebControls.EmbeddedMailObject" />
       </Docs>
     </Member>
     <Member MemberName="EmbeddedObjects">
@@ -340,6 +355,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.ChangePassword.SendingMail" />
+        <altmember cref="E:System.Web.UI.WebControls.PasswordRecovery.SendingMail" />
       </Docs>
     </Member>
     <Member MemberName="From">
@@ -383,6 +400,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.Mail.SmtpClient" />
+        <altmember cref="T:System.Net.Mail.MailMessage" />
+        <altmember cref="T:System.Web.UI.WebControls.EmbeddedMailObject" />
       </Docs>
     </Member>
     <Member MemberName="IsBodyHtml">
@@ -417,6 +437,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.Mail.SmtpClient" />
+        <altmember cref="T:System.Net.Mail.MailMessage" />
+        <altmember cref="T:System.Web.UI.WebControls.EmbeddedMailObject" />
       </Docs>
     </Member>
     <Member MemberName="Priority">
@@ -461,6 +484,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The selected value is not one of the <see cref="T:System.Net.Mail.MailPriority" /> values.</exception>
+        <altmember cref="T:System.Net.Mail.SmtpClient" />
+        <altmember cref="T:System.Net.Mail.MailMessage" />
+        <altmember cref="T:System.Web.UI.WebControls.EmbeddedMailObject" />
       </Docs>
     </Member>
     <Member MemberName="Subject">
@@ -504,6 +530,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.Mail.SmtpClient" />
+        <altmember cref="T:System.Net.Mail.MailMessage" />
+        <altmember cref="T:System.Web.UI.WebControls.EmbeddedMailObject" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.IsTrackingViewState">
@@ -614,5 +643,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateMailMessage">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an e-mail message to send by means of SMTP (Simple Mail Transfer Protocol).</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

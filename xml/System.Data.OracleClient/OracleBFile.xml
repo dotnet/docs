@@ -758,5 +758,14 @@ using (dataReader) {
         <exception cref="T:System.NotSupportedException">The exception that is thrown when an invoked method is not supported, or when there is an attempt to read, seek, or write to a stream that does not support the invoked functionality.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CopyTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies data from this <see cref="T:System.Data.OracleClient.OracleBFile" /> to a destination <see cref="T:System.Data.OracleClient.OracleLob" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

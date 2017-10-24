@@ -192,5 +192,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddMatch">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a match for <see cref="T:System.Activities.DynamicUpdate.UpdateMapMetadata" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetMatch">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a match for <see cref="T:System.Activities.DynamicUpdate.UpdateMapMetadata" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

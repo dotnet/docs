@@ -19,6 +19,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.Control" />
+    <altmember cref="T:System.Web.UI.ControlCollection" />
+    <altmember cref="P:System.Web.UI.Control.Controls" />
   </Docs>
   <Members>
     <Member MemberName="AddParsedSubObject">
@@ -40,6 +43,7 @@
         <param name="obj">The <see cref="T:System.Object" /> that was parsed.</param>
         <summary>When implemented by an ASP.NET server control, notifies the server control that an element, either XML or HTML, was parsed.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.Control.AddParsedSubObject(System.Object)" />
       </Docs>
     </Member>
   </Members>

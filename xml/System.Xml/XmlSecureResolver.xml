@@ -178,6 +178,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.XmlSecureResolver.CreateEvidenceForUrl(System.String)" />
+        <altmember cref="T:System.Security.Policy.Evidence" />
+        <altmember cref="T:System.Net.WebPermission" />
+        <altmember cref="T:System.Security.SecurityManager" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -340,6 +344,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.NetworkCredential" />
+        <altmember cref="T:System.Net.CredentialCache" />
+        <altmember cref="P:System.Net.CredentialCache.DefaultCredentials" />
       </Docs>
     </Member>
     <Member MemberName="GetEntity">

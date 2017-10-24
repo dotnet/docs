@@ -338,6 +338,7 @@
         <returns>
           <see langword="true" /> if the sink or one of its contained components has focus; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Interop.IKeyboardInputSink.HasFocusWithin" />
       </Docs>
     </Member>
     <Member MemberName="MeasureOverride">
@@ -444,6 +445,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Peers.AutomationPeer" />
       </Docs>
     </Member>
     <Member MemberName="OnDpiChanged">
@@ -576,6 +578,7 @@
         <summary>Called when one of the mnemonics (access keys) for this sink is invoked.</summary>
         <returns>Always returns <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Interop.IKeyboardInputSink.OnMnemonic(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)" />
       </Docs>
     </Member>
     <Member MemberName="OnWindowPositionChanged">
@@ -641,6 +644,7 @@
         <summary>Registers the <see cref="T:System.Windows.Interop.IKeyboardInputSink" /> interface of a contained component.</summary>
         <returns>The <see cref="T:System.Windows.Interop.IKeyboardInputSite" /> site of the contained component.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Interop.IKeyboardInputSink.RegisterKeyboardInputSink(System.Windows.Interop.IKeyboardInputSink)" />
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Interop.IKeyboardInputSink.HasFocusWithin">
@@ -899,6 +903,7 @@
         <summary>Sets focus on either the first tab stop or the last tab stop of the sink.</summary>
         <returns>Always returns <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Interop.IKeyboardInputSink.TabInto(System.Windows.Input.TraversalRequest)" />
       </Docs>
     </Member>
     <Member MemberName="TranslateAcceleratorCore">
@@ -928,6 +933,7 @@
         <summary>Processes keyboard input at the keydown message level.</summary>
         <returns>Always returns <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Interop.IKeyboardInputSink.TranslateAccelerator(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)" />
       </Docs>
     </Member>
     <Member MemberName="TranslateCharCore">
@@ -957,6 +963,7 @@
         <summary>Processes WM_CHAR, WM_SYSCHAR, WM_DEADCHAR, and WM_SYSDEADCHAR input messages before the <see cref="M:System.Windows.Interop.IKeyboardInputSink.OnMnemonic(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)" /> method is called.</summary>
         <returns>Always returns <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Interop.IKeyboardInputSink.TranslateChar(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)" />
       </Docs>
     </Member>
     <Member MemberName="UpdateWindowPos">

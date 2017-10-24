@@ -66,6 +66,9 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.Permissions.SecurityPermission">for full access to the resource protected by the permission. <see cref="F:System.Security.Permissions.SecurityAction.Demand" />.</permission>
+    <altmember cref="T:System.Configuration.ProtectedConfigurationProvider" />
+    <altmember cref="T:System.Configuration.DpapiProtectedConfigurationProvider" />
+    <altmember cref="T:System.Security.Cryptography.RSA" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -92,6 +95,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.ProtectedConfigurationProvider" />
       </Docs>
     </Member>
     <Member MemberName="AddKey">
@@ -142,6 +146,7 @@
         <summary>Gets the name of the Windows cryptography API (crypto API) cryptographic service provider (CSP).</summary>
         <value>The name of the CryptoAPI cryptographic service provider.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Security.Cryptography.RSA" />
       </Docs>
     </Member>
     <Member MemberName="Decrypt">
@@ -394,6 +399,7 @@
         <summary>Gets the public key used by the provider.</summary>
         <value>An <see cref="T:System.Security.Cryptography.RSAParameters" /> object that contains the public key used by the provider.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Security.Cryptography.RSA" />
       </Docs>
     </Member>
     <Member MemberName="UseFIPS">
@@ -463,6 +469,7 @@
         <value>
           <see langword="true" /> if the <see cref="T:System.Configuration.RsaProtectedConfigurationProvider" /> object is using Optimal Asymmetric Encryption Padding (OAEP) key exchange data; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Security.Cryptography.RSAOAEPKeyExchangeFormatter" />
       </Docs>
     </Member>
   </Members>

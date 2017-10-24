@@ -141,6 +141,10 @@ namespace SampleRecognition
   
  ]]></format>
     </remarks>
+    <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerUpdateReached" />
+    <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.RecognizerUpdateReached" />
+    <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.RequestRecognizerUpdate" />
+    <altmember cref="M:System.Speech.Recognition.SpeechRecognizer.RequestRecognizerUpdate" />
   </Docs>
   <Members>
     <Member MemberName="AudioPosition">
@@ -166,6 +170,11 @@ namespace SampleRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.RecognizerUpdateReachedEventArgs" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerUpdateReached" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.RecognizerUpdateReached" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.RequestRecognizerUpdate" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognizer.RequestRecognizerUpdate" />
       </Docs>
     </Member>
     <Member MemberName="UserToken">
@@ -291,6 +300,11 @@ namespace SampleRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.RecognizerUpdateReachedEventArgs" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerUpdateReached" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.RecognizerUpdateReached" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.RequestRecognizerUpdate" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognizer.RequestRecognizerUpdate" />
       </Docs>
     </Member>
   </Members>

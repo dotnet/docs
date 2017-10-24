@@ -29,6 +29,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.NameScope" />
+    <altmember cref="T:System.Windows.Markup.INameScopeDictionary" />
   </Docs>
   <Members>
     <Member MemberName="FindName">
@@ -58,6 +60,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.NameScope" />
       </Docs>
     </Member>
     <Member MemberName="RegisterName">
@@ -93,6 +96,7 @@
   
  Also consider throwing an exception if the provided name does not conform to [XamlName Grammar](~/docs/framework/xaml-services/xamlname-grammar.md).</para>
         </block>
+        <altmember cref="T:System.Windows.NameScope" />
       </Docs>
     </Member>
     <Member MemberName="UnregisterName">
@@ -119,6 +123,7 @@
   
  You should remove the name and the previously registered element it refers to from the collection representation of the XAML namescope, so that the same name could potentially be registered again in the future.</para>
         </block>
+        <altmember cref="T:System.Windows.NameScope" />
       </Docs>
     </Member>
   </Members>

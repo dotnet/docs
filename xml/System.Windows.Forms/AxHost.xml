@@ -64,6 +64,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.Control" />
+    <altmember cref="T:System.Windows.Forms.UserControl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -141,6 +143,7 @@
         <block subset="none" type="overrides">
           <para>Classes that extend <see cref="T:System.Windows.Forms.AxHost" /> should override this method. Within an overridden version of this method, the extending class should call <see cref="M:System.Windows.Forms.AxHost.GetOcx" /> to retrieve its own interface. In most cases, the <see cref="M:System.Windows.Forms.AxHost.GetOcx" /> method should not be called before this method is called.</para>
         </block>
+        <altmember cref="M:System.Windows.Forms.AxHost.GetOcx" />
       </Docs>
     </Member>
     <Member MemberName="BackColor">
@@ -344,6 +347,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.AxHost.EndInit" />
       </Docs>
     </Member>
     <Member MemberName="BindingContextChanged">
@@ -477,6 +481,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for all windows to get this property value. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+        <altmember cref="T:System.Windows.Forms.Form" />
       </Docs>
     </Member>
     <Member MemberName="ContextMenu">
@@ -553,6 +558,7 @@
       <Docs>
         <summary>Creates a handle for the control.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.CreateHandle" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceCore">
@@ -593,6 +599,7 @@
         <summary>Gets the required creation parameters when the control handle is created.</summary>
         <value>A <see cref="T:System.Windows.Forms.CreateParams" /> that contains the required creation parameters when the handle to the control is created.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.CreateParams" />
       </Docs>
     </Member>
     <Member MemberName="CreateSink">
@@ -699,6 +706,7 @@
         <summary>Gets the default size of the control.</summary>
         <value>The default <see cref="T:System.Drawing.Size" /> of the control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.DefaultSize" />
       </Docs>
     </Member>
     <Member MemberName="DestroyHandle">
@@ -717,6 +725,7 @@
       <Docs>
         <summary>Destroys the handle associated with the control.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.DestroyHandle" />
       </Docs>
     </Member>
     <Member MemberName="DetachSink">
@@ -769,6 +778,7 @@
           <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
         <summary>Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.Control" /> and its child controls and optionally releases the managed resources.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.Dispose(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="DoubleClick">
@@ -985,6 +995,7 @@
         <param name="targetBounds">A <see cref="T:System.Drawing.Rectangle" />.</param>
         <summary>This method is not supported by this control.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.DrawToBitmap(System.Drawing.Bitmap,System.Drawing.Rectangle)" />
       </Docs>
     </Member>
     <Member MemberName="EditMode">
@@ -1103,6 +1114,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.AxHost.BeginInit" />
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -1249,6 +1261,7 @@
         <summary>Returns a <see cref="T:System.Drawing.Color" /> structure that corresponds to the specified OLE color value.</summary>
         <returns>The <see cref="T:System.Drawing.Color" /> structure that represents the translated OLE color value.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Drawing.Color" />
       </Docs>
     </Member>
     <Member MemberName="GetFontFromIFont">
@@ -1276,6 +1289,8 @@
         <summary>Returns a <see cref="T:System.Drawing.Font" /> created from the specified OLE [IFont](http://go.microsoft.com/fwlink/?LinkId=166075) object.</summary>
         <returns>The <see cref="T:System.Drawing.Font" /> created from the specified [IFont](http://go.microsoft.com/fwlink/?LinkId=166075), <see cref="P:System.Windows.Forms.Control.DefaultFont" /> if the font could not be created, or <see langword="null" /> if <paramref name="font" /> is <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Drawing.Font" />
+        <altmember cref="P:System.Windows.Forms.Control.DefaultFont" />
       </Docs>
     </Member>
     <Member MemberName="GetFontFromIFontDisp">
@@ -1303,6 +1318,8 @@
         <summary>Returns a <see cref="T:System.Drawing.Font" /> created from the specified OLE [IFontDisp](http://go.microsoft.com/fwlink/?LinkId=166073) object.</summary>
         <returns>The <see cref="T:System.Drawing.Font" /> created from the specified [IFontDisp](http://go.microsoft.com/fwlink/?LinkId=166073), <see cref="P:System.Windows.Forms.Control.DefaultFont" /> if the font could not be created, or <see langword="null" /> if <paramref name="font" /> is <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Drawing.Font" />
+        <altmember cref="P:System.Windows.Forms.Control.DefaultFont" />
       </Docs>
     </Member>
     <Member MemberName="GetIFontDispFromFont">
@@ -1331,6 +1348,7 @@
         <returns>The [IFontDisp](http://go.microsoft.com/fwlink/?LinkId=166073) object created from the specified font or <see langword="null" /> if <paramref name="font" /> is <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Drawing.Font.Unit" /> property value is not <see cref="F:System.Drawing.GraphicsUnit.Point" />.</exception>
+        <altmember cref="T:System.Drawing.Font" />
       </Docs>
     </Member>
     <Member MemberName="GetIFontFromFont">
@@ -1359,6 +1377,7 @@
         <returns>The [IFont](http://go.microsoft.com/fwlink/?LinkId=166075) object created from the specified font, or <see langword="null" /> if <paramref name="font" /> is <see langword="null" /> or the [IFont](http://go.microsoft.com/fwlink/?LinkId=166075) could not be created.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Drawing.Font.Unit" /> property value is not <see cref="F:System.Drawing.GraphicsUnit.Point" />.</exception>
+        <altmember cref="T:System.Drawing.Font" />
       </Docs>
     </Member>
     <Member MemberName="GetIPictureDispFromPicture">
@@ -1512,6 +1531,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.AxHost.OcxState" />
       </Docs>
     </Member>
     <Member MemberName="GetOleColorFromColor">
@@ -1542,6 +1562,7 @@
         <summary>Returns an OLE color value that corresponds to the specified <see cref="T:System.Drawing.Color" /> structure.</summary>
         <returns>The OLE color value that represents the translated <see cref="T:System.Drawing.Color" /> structure.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Drawing.Color" />
       </Docs>
     </Member>
     <Member MemberName="GetPictureFromIPicture">
@@ -1610,6 +1631,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.AxHost.GetPictureFromIPicture(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetScaledBounds">
@@ -1763,6 +1785,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.AxHost.ShowAboutBox" />
+        <altmember cref="M:System.Windows.Forms.AxHost.SetAboutBoxDelegate(System.Windows.Forms.AxHost.AboutBoxDelegate)" />
+        <altmember cref="T:System.Windows.Forms.AxHost.AboutBoxDelegate" />
       </Docs>
     </Member>
     <Member MemberName="HasPropertyPages">
@@ -1790,6 +1815,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.AxHost.ShowPropertyPages" />
       </Docs>
     </Member>
     <Member MemberName="HelpRequested">
@@ -1939,6 +1965,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for all windows for inheriting classes to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+        <altmember cref="M:System.Windows.Forms.Control.IsInputKey(System.Windows.Forms.Keys)" />
       </Docs>
     </Member>
     <Member MemberName="KeyDown">
@@ -2404,6 +2431,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">The ActiveX control is already loaded.</exception>
+        <altmember cref="T:System.Windows.Forms.AxHost.State" />
+        <altmember cref="M:System.Windows.Forms.AxHost.GetOcx" />
       </Docs>
     </Member>
     <Member MemberName="OnBackColorChanged">
@@ -2425,6 +2454,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.BackColorChanged" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnBackColorChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnFontChanged">
@@ -2446,6 +2476,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.FontChanged" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnFontChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnForeColorChanged">
@@ -2467,6 +2498,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.ForeColorChanged" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnForeColorChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnHandleCreated">
@@ -2488,6 +2520,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.HandleCreated" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnHandleCreated(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnInPlaceActive">
@@ -2539,6 +2572,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.LostFocus" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnLostFocus(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Paint">
@@ -2617,6 +2651,7 @@
         <returns>
           <see langword="true" /> if the key was processed by the control; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.ProcessDialogKey(System.Windows.Forms.Keys)" />
       </Docs>
     </Member>
     <Member MemberName="ProcessMnemonic">
@@ -2640,6 +2675,7 @@
         <returns>
           <see langword="true" /> if the character was processed as a mnemonic by the control; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.ProcessMnemonic(System.Char)" />
       </Docs>
     </Member>
     <Member MemberName="PropsValid">
@@ -3116,6 +3152,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.AxHost.SetAboutBoxDelegate(System.Windows.Forms.AxHost.AboutBoxDelegate)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.AxHost.SetAboutBoxDelegate(System.Windows.Forms.AxHost.AboutBoxDelegate)" /> method so that registered delegates receive the <see cref="M:System.Windows.Forms.AxHost.ShowAboutBox" /> method.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.AxHost.HasAboutBox" />
+        <altmember cref="M:System.Windows.Forms.AxHost.ShowAboutBox" />
+        <altmember cref="T:System.Windows.Forms.AxHost.AboutBoxDelegate" />
       </Docs>
     </Member>
     <Member MemberName="SetBoundsCore">
@@ -3145,6 +3184,7 @@
         <param name="specified">A bitwise combination of the <see cref="T:System.Windows.Forms.BoundsSpecified" /> values.</param>
         <summary>Performs the work of setting the specified bounds of this control.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.SetBoundsCore(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)" />
       </Docs>
     </Member>
     <Member MemberName="SetVisibleCore">
@@ -3167,6 +3207,7 @@
           <see langword="true" /> to make the control visible; otherwise, <see langword="false" />.</param>
         <summary>Sets the control to the specified visible state.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.SetVisibleCore(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="ShowAboutBox">
@@ -3192,6 +3233,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.AxHost.HasAboutBox" />
+        <altmember cref="M:System.Windows.Forms.AxHost.SetAboutBoxDelegate(System.Windows.Forms.AxHost.AboutBoxDelegate)" />
+        <altmember cref="T:System.Windows.Forms.AxHost.AboutBoxDelegate" />
       </Docs>
     </Member>
     <Member MemberName="ShowPropertyPages">
@@ -3219,6 +3263,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.AxHost.HasPropertyPages" />
       </Docs>
     </Member>
     <Member MemberName="ShowPropertyPages">
@@ -3249,6 +3294,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Control" />
+        <altmember cref="M:System.Windows.Forms.AxHost.HasPropertyPages" />
       </Docs>
     </Member>
     <Member MemberName="Site">
@@ -3267,6 +3314,7 @@
         <summary>Gets or sets the site of the control.</summary>
         <value>The <see cref="T:System.ComponentModel.ISite" /> associated with the Control, if any.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.Site" />
       </Docs>
     </Member>
     <Member MemberName="StyleChanged">
@@ -3699,7 +3747,71 @@
         <param name="m">The Windows <see cref="T:System.Windows.Forms.Message" /> to process.</param>
         <summary>Processes Windows messages.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.WndProc(System.Windows.Forms.Message@)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="System.ComponentModel.ICustomTypeDescriptor.GetProperties">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns properties for the current object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RaiseOnMouseDown">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Raises the <see cref="E:System.Windows.Forms.AxHost.MouseDown" /> event.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ShowPropertyPages">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Displays the property pages associated with the ActiveX control.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RaiseOnMouseUp">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Raises the <see cref="E:System.Windows.Forms.AxHost.MouseUp" /> event.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RaiseOnMouseMove">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Raises the <see cref="E:System.Windows.Forms.AxHost.MouseMove" /> event.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="System.ComponentModel.ICustomTypeDescriptor.GetEvents">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns events for the current object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

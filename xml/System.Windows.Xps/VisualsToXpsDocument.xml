@@ -337,5 +337,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a <see cref="T:System.Windows.Media.Visual" />asynchronously to an <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> or a <see cref="T:System.Printing.PrintQueue" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Write">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a <see cref="T:System.Windows.Media.Visual" />synchronously to an <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> or a <see cref="T:System.Printing.PrintQueue" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

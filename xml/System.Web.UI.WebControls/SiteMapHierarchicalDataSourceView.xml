@@ -102,7 +102,19 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.SiteMapDataSourceView" />
+        <altmember cref="T:System.Web.SiteMapNode" />
+        <altmember cref="T:System.Web.SiteMapNodeCollection" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.SiteMapHierarchicalDataSourceView" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

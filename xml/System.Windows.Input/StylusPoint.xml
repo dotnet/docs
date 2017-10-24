@@ -302,6 +302,7 @@
         <summary>Returns the hash code for this instance.</summary>
         <returns>A 32-bit signed integer that is the hash code for this instance.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.ValueType.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="GetPropertyValue">
@@ -488,7 +489,7 @@
         <Parameter Name="stylusPoint" Type="System.Windows.Input.StylusPoint" />
       </Parameters>
       <Docs>
-        <param name="stylusPoint">To be added.</param>
+        <param name="stylusPoint">The <see cref="T:System.Windows.Input.StylusPoint" /> to cast to a <see cref="T:System.Windows.Point" />.</param>
         <summary>Casts the specified <see cref="T:System.Windows.Input.StylusPoint" /> to a <see cref="T:System.Windows.Point" />.</summary>
         <returns>A <see cref="T:System.Windows.Point" /> that contains the same (x,y) coordinates as <paramref name="stylusPoint" />. </returns>
         <remarks>
@@ -693,5 +694,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.StylusPoint" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares two <see cref="T:System.Windows.Input.StylusPoint" /> objects for equality.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

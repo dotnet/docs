@@ -53,6 +53,9 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="T:System.Web.UI.MobileControls.TextControl" />
+    <altmember cref="P:System.Web.UI.MobileControls.MobileControl.Form" />
+    <altmember cref="T:System.Web.UI.MobileControls.MobilePage" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -89,6 +92,7 @@
         <param name="linkedForms">The set of forms that contain links to the specified control.</param>
         <summary>Adds the set of forms that contains links to the specified control to the provided list. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.MobileControl.AddLinkedForms(System.Collections.IList)" />
       </Docs>
     </Member>
     <Member MemberName="NavigateUrl">
@@ -130,6 +134,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.TextControl" />
+        <altmember cref="P:System.Web.UI.MobileControls.MobileControl.Form" />
+        <altmember cref="T:System.Web.UI.MobileControls.MobilePage" />
       </Docs>
     </Member>
     <Member MemberName="RaisePostBackEvent">
@@ -186,6 +193,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.TextControl" />
+        <altmember cref="P:System.Web.UI.MobileControls.MobileControl.Form" />
+        <altmember cref="T:System.Web.UI.MobileControls.MobilePage" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackEventHandler.RaisePostBackEvent">
@@ -214,6 +224,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.TextControl" />
+        <altmember cref="P:System.Web.UI.MobileControls.MobileControl.Form" />
+        <altmember cref="T:System.Web.UI.MobileControls.MobilePage" />
       </Docs>
     </Member>
   </Members>

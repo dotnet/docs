@@ -207,6 +207,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.AutomationIdentifier" />
       </Docs>
     </Member>
     <Member MemberName="GetAutomationIdCore">
@@ -647,7 +648,6 @@
 This method calls the derived implementation of <xref:System.Windows.Automation.Peers.AutomationPeer.GetLiveSettingCore>.
 
 ]]></format>
-        
         </remarks>
       </Docs>
     </Member>
@@ -1252,6 +1252,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <returns>
           <see langword="true" /> if the element must be completed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Automation.AutomationProperties.IsRequiredForForm" />
       </Docs>
     </Member>
     <Member MemberName="IsRequiredForFormCore">

@@ -56,6 +56,10 @@
   
 -   When ASP.NET is sending HTTP headers to IIS, ASP.NET has no provision for unhandled exceptions. Therefore, the standard ASP.NET error page will be rendered (if configuration settings allows this page to be displayed).</para>
     </block>
+    <altmember cref="T:System.Web.HttpUtility" />
+    <altmember cref="T:System.Web.HttpServerUtility" />
+    <altmember cref="T:System.Web.Configuration.HttpRuntimeSection" />
+    <altmember cref="T:System.Web.Security.AntiXss.AntiXssEncoder" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

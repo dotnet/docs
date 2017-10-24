@@ -537,6 +537,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Net.Mail.MailMessage.HeadersEncoding" />
+        <altmember cref="P:System.Net.Mail.MailMessage.SubjectEncoding" />
+        <altmember cref="T:System.Net.Mime.TransferEncoding" />
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
     <Member MemberName="BodyTransferEncoding">
@@ -896,6 +900,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Net.Mail.MailMessage.BodyEncoding" />
+        <altmember cref="P:System.Net.Mail.MailMessage.SubjectEncoding" />
+        <altmember cref="T:System.Net.Mime.TransferEncoding" />
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
     <Member MemberName="IsBodyHtml">
@@ -1145,6 +1153,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Net.Mail.MailMessage.BodyEncoding" />
+        <altmember cref="P:System.Net.Mail.MailMessage.HeadersEncoding" />
+        <altmember cref="T:System.Net.Mime.TransferEncoding" />
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
     <Member MemberName="To">
@@ -1190,5 +1202,25 @@
         <altCompliant cref="None" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.MailMessage" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.Net.Mail.MailMessage" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

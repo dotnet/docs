@@ -40,6 +40,8 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="T:System.Web.UI.MobileControls.ObjectListField" />
+    <altmember cref="T:System.Web.UI.MobileControls.ObjectListFieldCollection" />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -68,6 +70,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListField" />
+        <altmember cref="M:System.Web.UI.MobileControls.ObjectListFieldCollection.AddAt(System.Int32,System.Web.UI.MobileControls.ObjectListField)" />
+        <altmember cref="M:System.Web.UI.MobileControls.ObjectListFieldCollection.Clear" />
+        <altmember cref="M:System.Web.UI.MobileControls.ObjectListFieldCollection.Remove(System.Web.UI.MobileControls.ObjectListField)" />
+        <altmember cref="M:System.Web.UI.MobileControls.ObjectListFieldCollection.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="AddAt">
@@ -100,6 +107,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListField" />
+        <altmember cref="M:System.Web.UI.MobileControls.ObjectListFieldCollection.Add(System.Web.UI.MobileControls.ObjectListField)" />
+        <altmember cref="M:System.Web.UI.MobileControls.ObjectListFieldCollection.Clear" />
+        <altmember cref="M:System.Web.UI.MobileControls.ObjectListFieldCollection.Remove(System.Web.UI.MobileControls.ObjectListField)" />
+        <altmember cref="M:System.Web.UI.MobileControls.ObjectListFieldCollection.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -129,6 +141,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListField" />
       </Docs>
     </Member>
     <Member MemberName="GetAll">
@@ -148,6 +161,7 @@
         <summary>Returns the items in the specified collection as a single array of <see cref="T:System.Web.UI.MobileControls.ObjectListItem" /> objects. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <returns>The items in the specified collection as a single array of <see cref="T:System.Web.UI.MobileControls.ObjectListItem" /> objects.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListField" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -177,6 +191,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListField" />
+        <altmember cref="M:System.Web.UI.MobileControls.MobileListItemCollection.IndexOf(System.Web.UI.MobileControls.MobileListItem)" />
+        <altmember cref="M:System.Web.UI.MobileControls.ObjectListCommandCollection.IndexOf(System.String)" />
+        <altmember cref="M:System.Web.UI.MobileControls.ObjectListFieldCollection.IndexOf(System.Web.UI.MobileControls.ObjectListField)" />
+        <altmember cref="M:System.Web.UI.MobileControls.ObjectListItemCollection.IndexOf(System.Web.UI.MobileControls.ObjectListItem)" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -206,6 +225,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListField" />
+        <altmember cref="M:System.Web.UI.MobileControls.MobileListItemCollection.IndexOf(System.Web.UI.MobileControls.MobileListItem)" />
+        <altmember cref="M:System.Web.UI.MobileControls.ObjectListCommandCollection.IndexOf(System.String)" />
+        <altmember cref="M:System.Web.UI.MobileControls.ObjectListFieldCollection.IndexOf(System.Web.UI.MobileControls.ObjectListField)" />
+        <altmember cref="M:System.Web.UI.MobileControls.ObjectListItemCollection.IndexOf(System.Web.UI.MobileControls.ObjectListItem)" />
       </Docs>
     </Member>
     <Member MemberName="IsTrackingViewState">
@@ -247,6 +271,7 @@
         <summary>The default indexer for the <see cref="T:System.Web.UI.MobileControls.ObjectListFieldCollection" /> class, allows the lookup of arbitrary capability values by index. Any of the properties can be accessed by name. However, the returned value will always be a string (or <see langword="null" /> if not defined), rather than a type-safe value. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <value>A string representing the value of the field at the specified index.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListField" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -298,6 +323,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListField" />
+        <altmember cref="M:System.Web.UI.MobileControls.DeviceSpecificChoiceCollection.Remove(System.Web.UI.MobileControls.DeviceSpecificChoice)" />
+        <altmember cref="M:System.Web.UI.MobileControls.MobileListItemCollection.Remove(System.String)" />
+        <altmember cref="M:System.Web.UI.MobileControls.ObjectListCommandCollection.Remove(System.String)" />
+        <altmember cref="M:System.Web.UI.MobileControls.StyleSheet.Remove(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -319,6 +349,8 @@
         <param name="index">The index number of the item to remove.</param>
         <summary>Removes the item at the specified index. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListField" />
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListCommandCollection" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -359,6 +391,8 @@
         <param name="value">The <see cref="T:System.Web.UI.MobileControls.ObjectListItem" /> array.</param>
         <summary>Sets the array of <see cref="T:System.Web.UI.MobileControls.ObjectListItem" /> objects as the <see cref="T:System.Web.UI.MobileControls.ObjectListFieldCollection" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListField" />
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListFieldCollection" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.IsTrackingViewState">
@@ -384,6 +418,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListField" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.LoadViewState">
@@ -412,6 +447,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListField" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.SaveViewState">
@@ -438,6 +474,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListField" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.TrackViewState">
@@ -463,6 +500,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListField" />
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -490,5 +528,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="IndexOf">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the index of a field. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

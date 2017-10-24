@@ -59,6 +59,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.IBindingList" />
+    <altmember cref="T:System.Windows.Forms.ListBox" />
+    <altmember cref="T:System.Windows.Forms.ComboBox" />
+    <altmember cref="T:System.ComponentModel.BindableAttribute" />
+    <altmember cref="T:System.ComponentModel.ComplexBindingPropertiesAttribute" />
+    <altmember cref="T:System.ComponentModel.DefaultBindingPropertyAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -90,6 +96,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.LookupBindingPropertiesAttribute.DataSource" />
+        <altmember cref="P:System.ComponentModel.LookupBindingPropertiesAttribute.DisplayMember" />
+        <altmember cref="P:System.ComponentModel.LookupBindingPropertiesAttribute.ValueMember" />
+        <altmember cref="P:System.ComponentModel.LookupBindingPropertiesAttribute.LookupMember" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -130,6 +140,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.LookupBindingPropertiesAttribute.DataSource" />
+        <altmember cref="P:System.ComponentModel.LookupBindingPropertiesAttribute.DisplayMember" />
+        <altmember cref="P:System.ComponentModel.LookupBindingPropertiesAttribute.ValueMember" />
+        <altmember cref="P:System.ComponentModel.LookupBindingPropertiesAttribute.LookupMember" />
       </Docs>
     </Member>
     <Member MemberName="DataSource">
@@ -164,6 +178,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.ComponentModel.LookupBindingPropertiesAttribute.#ctor" />
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -231,6 +246,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.ComponentModel.LookupBindingPropertiesAttribute.#ctor" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -270,6 +286,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.LookupBindingPropertiesAttribute.GetHashCode" />
+        <altmember cref="P:System.ComponentModel.LookupBindingPropertiesAttribute.DataSource" />
+        <altmember cref="P:System.ComponentModel.LookupBindingPropertiesAttribute.DisplayMember" />
+        <altmember cref="P:System.ComponentModel.LookupBindingPropertiesAttribute.ValueMember" />
+        <altmember cref="P:System.ComponentModel.LookupBindingPropertiesAttribute.LookupMember" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -332,6 +353,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.ComponentModel.LookupBindingPropertiesAttribute.#ctor" />
       </Docs>
     </Member>
     <Member MemberName="ValueMember">
@@ -366,7 +388,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.ComponentModel.LookupBindingPropertiesAttribute.#ctor" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.LookupBindingPropertiesAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -15,7 +15,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>A class whose static <see cref="M:System.Runtime.CompilerServices.RuntimeFeature.IsSupported(System.String)" /> method checks whether a specified feature is supported by the common language runtime.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -39,9 +39,10 @@
         <Parameter Name="feature" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="feature">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="feature">The name of the feature.</param>
+        <summary>Determines whether a specified feature is supported by the common language runtime.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="feature" /> is supported; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,7 +59,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the name of the portable PDB feature.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

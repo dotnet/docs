@@ -27,6 +27,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+    <altmember cref="T:System.Web.UI.Design.WebControls.DataGridDesigner" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -82,7 +84,18 @@
         <block subset="none" type="overrides">
           <para>This method can be overridden to change the set of pages shown by the editor.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.ComponentEditor" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.DataGridComponentEditor" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

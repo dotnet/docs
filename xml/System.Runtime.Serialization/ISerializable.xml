@@ -62,6 +62,7 @@
     <block subset="none" type="overrides">
       <para>Implement this interface to allow an object to take part in its own serialization and deserialization.</para>
     </block>
+    <altmember cref="T:System.Runtime.Remoting.Messaging.RemotingSurrogateSelector" />
   </Docs>
   <Members>
     <Member MemberName="GetObjectData">
@@ -125,6 +126,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
       </Docs>
     </Member>
   </Members>

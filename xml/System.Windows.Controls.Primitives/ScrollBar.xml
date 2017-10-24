@@ -61,6 +61,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.Primitives.RangeBase" />
+    <altmember cref="T:System.Windows.Controls.Primitives.Track" />
+    <altmember cref="T:System.Windows.Controls.Primitives.Thumb" />
+    <altmember cref="T:System.Windows.Controls.ScrollViewer" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -193,6 +197,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Controls.Primitives.ScrollBar.LineLeftCommand" />
+        <altmember cref="F:System.Windows.Controls.Primitives.ScrollBar.LineRightCommand" />
+        <altmember cref="F:System.Windows.Controls.Primitives.ScrollBar.LineUpCommand" />
       </Docs>
     </Member>
     <Member MemberName="LineLeftCommand">
@@ -232,6 +239,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Controls.Primitives.ScrollBar.LineDownCommand" />
+        <altmember cref="F:System.Windows.Controls.Primitives.ScrollBar.LineRightCommand" />
+        <altmember cref="F:System.Windows.Controls.Primitives.ScrollBar.LineUpCommand" />
       </Docs>
     </Member>
     <Member MemberName="LineRightCommand">
@@ -271,6 +281,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Controls.Primitives.ScrollBar.LineDownCommand" />
+        <altmember cref="F:System.Windows.Controls.Primitives.ScrollBar.LineLeftCommand" />
+        <altmember cref="F:System.Windows.Controls.Primitives.ScrollBar.LineUpCommand" />
       </Docs>
     </Member>
     <Member MemberName="LineUpCommand">
@@ -310,6 +323,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Controls.Primitives.ScrollBar.LineDownCommand" />
+        <altmember cref="F:System.Windows.Controls.Primitives.ScrollBar.LineLeftCommand" />
+        <altmember cref="F:System.Windows.Controls.Primitives.ScrollBar.LineRightCommand" />
       </Docs>
     </Member>
     <Member MemberName="OnApplyTemplate">
@@ -512,6 +528,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.Orientation" />
       </Docs>
     </Member>
     <Member MemberName="OrientationProperty">
@@ -568,6 +585,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Controls.Primitives.ScrollBar.PageUpCommand" />
+        <altmember cref="F:System.Windows.Controls.Primitives.ScrollBar.PageLeftCommand" />
+        <altmember cref="F:System.Windows.Controls.Primitives.ScrollBar.PageRightCommand" />
       </Docs>
     </Member>
     <Member MemberName="PageLeftCommand">
@@ -609,6 +629,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Controls.Primitives.ScrollBar.PageUpCommand" />
+        <altmember cref="F:System.Windows.Controls.Primitives.ScrollBar.PageDownCommand" />
+        <altmember cref="F:System.Windows.Controls.Primitives.ScrollBar.PageRightCommand" />
       </Docs>
     </Member>
     <Member MemberName="PageRightCommand">
@@ -650,6 +673,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Controls.Primitives.ScrollBar.PageUpCommand" />
+        <altmember cref="F:System.Windows.Controls.Primitives.ScrollBar.PageDownCommand" />
+        <altmember cref="F:System.Windows.Controls.Primitives.ScrollBar.PageLeftCommand" />
       </Docs>
     </Member>
     <Member MemberName="PageUpCommand">
@@ -689,6 +715,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Controls.Primitives.ScrollBar.PageDownCommand" />
+        <altmember cref="F:System.Windows.Controls.Primitives.ScrollBar.PageLeftCommand" />
+        <altmember cref="F:System.Windows.Controls.Primitives.ScrollBar.PageRightCommand" />
       </Docs>
     </Member>
     <Member MemberName="Scroll">
@@ -739,6 +768,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.Primitives.ScrollEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="ScrollEvent">

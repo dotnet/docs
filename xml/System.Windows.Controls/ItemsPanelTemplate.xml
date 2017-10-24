@@ -110,5 +110,14 @@ Alternatively, you can do the following to achieve the same results. In this cas
           <paramref name="templatedParent" /> is not an <see cref="T:System.Windows.Controls.ItemsPresenter" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes an instance of the <see cref="T:System.Windows.Controls.ItemsPanelTemplate" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

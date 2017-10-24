@@ -53,6 +53,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IdentityModel.Tokens.SessionSecurityTokenCache" />
+    <altmember cref="T:System.IdentityModel.Tokens.SessionSecurityToken" />
+    <altmember cref="T:System.IdentityModel.Services.Tokens.MachineKeySessionSecurityTokenHandler" />
+    <altmember cref="T:System.IdentityModel.CookieTransform" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -249,6 +253,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.IdentityModel.Tokens.SessionSecurityTokenHandler.CookieNamespace" />
+        <altmember cref="M:System.IdentityModel.Tokens.SessionSecurityTokenHandler.WriteToken(System.IdentityModel.Tokens.SessionSecurityToken)" />
+        <altmember cref="M:System.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken(System.Byte[],System.IdentityModel.Selectors.SecurityTokenResolver)" />
       </Docs>
     </Member>
     <Member MemberName="CookieNamespace">
@@ -274,6 +281,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.IdentityModel.Tokens.SessionSecurityTokenHandler.CookieElementName" />
+        <altmember cref="M:System.IdentityModel.Tokens.SessionSecurityTokenHandler.WriteToken(System.IdentityModel.Tokens.SessionSecurityToken)" />
+        <altmember cref="M:System.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken(System.Byte[],System.IdentityModel.Selectors.SecurityTokenResolver)" />
       </Docs>
     </Member>
     <Member MemberName="CreateSessionSecurityToken">
@@ -741,6 +751,7 @@
           <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="token" /> is not assignable from <see cref="T:System.IdentityModel.Tokens.SessionSecurityToken" />.</exception>
+        <altmember cref="P:System.IdentityModel.Tokens.SessionSecurityTokenHandler.CanValidateToken" />
       </Docs>
     </Member>
     <Member MemberName="ValidateToken">
@@ -784,6 +795,7 @@
         <exception cref="T:System.InvalidOperationException">
           <paramref name="token" /> is not assignable from <see cref="T:System.IdentityModel.Tokens.SessionSecurityToken" />.</exception>
         <exception cref="T:System.IdentityModel.Tokens.SecurityTokenException">The <see cref="P:System.IdentityModel.Tokens.SessionSecurityToken.EndpointId" /> property of the specified token is not <see langword="null" /> or empty and its value is different than that specified by the <paramref name="endpointId" /> parameter.</exception>
+        <altmember cref="P:System.IdentityModel.Tokens.SessionSecurityTokenHandler.CanValidateToken" />
       </Docs>
     </Member>
     <MemberGroup MemberName="WriteToken">
@@ -801,6 +813,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.IdentityModel.Tokens.SessionSecurityTokenHandler.CanWriteToken" />
       </Docs>
     </MemberGroup>
     <Member MemberName="WriteToken">
@@ -832,6 +845,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="sessiontoken" /> is <see langword="null" />.</exception>
+        <altmember cref="P:System.IdentityModel.Tokens.SessionSecurityTokenHandler.CanWriteToken" />
       </Docs>
     </Member>
     <Member MemberName="WriteToken">
@@ -874,7 +888,27 @@
  -or-  
   
  The <see cref="P:System.IdentityModel.Tokens.SessionSecurityToken.SecureConversationVersion" /> of the token specifies a version of WS-Secure Conversation that is not supported by the handler.</exception>
+        <altmember cref="P:System.IdentityModel.Tokens.SessionSecurityTokenHandler.CanWriteToken" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ValidateToken">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Validates a token and returns its claims.</summary>
+        <altmember cref="P:System.IdentityModel.Tokens.SessionSecurityTokenHandler.CanValidateToken" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SessionSecurityTokenHandler" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

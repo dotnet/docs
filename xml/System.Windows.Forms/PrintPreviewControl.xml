@@ -42,6 +42,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.PrintPreviewDialog" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -107,6 +108,7 @@
         <value>
           <see langword="true" /> if the changing the control size or number of pages adjusts the <see cref="P:System.Windows.Forms.PrintPreviewControl.Zoom" /> property; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.PrintPreviewControl.Zoom" />
       </Docs>
     </Member>
     <Member MemberName="Columns">
@@ -131,6 +133,7 @@
         <value>The number of pages displayed horizontally across the screen. The default is 1.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The set value is less than 1.</exception>
+        <altmember cref="P:System.Windows.Forms.PrintPreviewControl.Rows" />
       </Docs>
     </Member>
     <Member MemberName="CreateParams">
@@ -149,6 +152,7 @@
         <summary>Gets the required creation parameters when the control handle is created.</summary>
         <value>A <see cref="T:System.Windows.Forms.CreateParams" /> that contains the required creation parameters when the handle to the control is created.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.CreateParams" />
       </Docs>
     </Member>
     <Member MemberName="Document">
@@ -183,6 +187,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Printing.PrintDocument" />
       </Docs>
     </Member>
     <Member MemberName="InvalidatePreview">
@@ -376,6 +381,7 @@
         <summary>Gets or sets a value indicating whether control's elements are aligned to support locales using right-to-left fonts.</summary>
         <value>One of the <see cref="T:System.Windows.Forms.RightToLeft" /> values. The default is <see cref="F:System.Windows.Forms.RightToLeft.Inherit" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.RightToLeft" />
       </Docs>
     </Member>
     <Member MemberName="Rows">
@@ -490,6 +496,7 @@
         <summary>Gets or sets the text associated with this control.</summary>
         <value>The text associated with this control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.Text" />
       </Docs>
     </Member>
     <Member MemberName="TextChanged">
@@ -611,6 +618,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The value is less than or equal to 0.</exception>
+        <altmember cref="P:System.Windows.Forms.PrintPreviewControl.AutoZoom" />
       </Docs>
     </Member>
   </Members>

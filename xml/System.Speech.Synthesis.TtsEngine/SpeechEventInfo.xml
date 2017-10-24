@@ -716,5 +716,14 @@ override public void Speak (TextFragment [] frags, IntPtr wfx, ITtsEngineSite si
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether a <c>SpeechEventInfo</c> instance is equal to another object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

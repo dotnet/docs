@@ -37,6 +37,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Security.Principal.IPrincipal" />
+    <altmember cref="P:System.Threading.Thread.CurrentPrincipal" />
+    <altmember cref="P:System.Web.HttpContext.User" />
+    <altmember cref="P:System.Web.HttpContext.Current" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -114,6 +118,7 @@
         </remarks>
         <exception cref="T:System.Security.SecurityException">The caller does not have the permission required to set the principal.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">Describes a set of security permissions applied to code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlPrincipal" />.</permission>
+        <altmember cref="T:System.Security.Principal.IPrincipal" />
       </Docs>
     </Member>
     <Member MemberName="InitializeWithWindowsUser">
@@ -352,6 +357,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">Describes a set of security permissions applied to code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlPrincipal" />.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.BuiltInRole" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -408,5 +414,14 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">Describes a set of security permissions applied to code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlPrincipal" />.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsInRole">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the current user belongs to the specified role.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -137,6 +137,7 @@ public enum ItemsChoiceType {
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Xml.Serialization.XmlAttributes" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -247,5 +248,15 @@ public enum ItemsChoiceType {
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.XmlChoiceIdentifierAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -23,6 +23,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Services.Discovery.DiscoveryClientResult" />
+    <altmember cref="T:System.Collections.CollectionBase" />
+    <altmember cref="T:System.Collections.IList" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -71,6 +74,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.IList.Add(System.Object)" />
+        <altmember cref="T:System.Web.Services.Discovery.DiscoveryClientResult" />
+        <altmember cref="T:System.Collections.IList" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -104,6 +110,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.IList.Contains(System.Object)" />
+        <altmember cref="T:System.Collections.IList" />
+        <altmember cref="T:System.Web.Services.Discovery.DiscoveryClientResult" />
       </Docs>
     </Member>
     <Member MemberName="Item">

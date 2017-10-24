@@ -66,6 +66,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.IDataSource" />
+    <altmember cref="T:System.Web.UI.DataSourceView" />
+    <altmember cref="T:System.Web.UI.WebControls.DataBoundControl" />
+    <altmember cref="T:System.Web.UI.HierarchicalDataSourceControl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -170,6 +174,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to set this property.</exception>
+        <altmember cref="P:System.Web.UI.Control.ClientIDMode" />
       </Docs>
     </Member>
     <Member MemberName="Controls">
@@ -221,6 +226,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.EmptyControlCollection" />
       </Docs>
     </Member>
     <Member MemberName="EnableTheming">
@@ -259,6 +265,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to set the value of the <see cref="P:System.Web.UI.DataSourceControl.EnableTheming" /> property.</exception>
+        <altmember cref="P:System.Web.UI.DataSourceControl.SkinID" />
+        <altmember cref="P:System.Web.UI.DataSourceControl.Visible" />
       </Docs>
     </Member>
     <Member MemberName="FindControl">
@@ -317,6 +325,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to call the <see cref="M:System.Web.UI.DataSourceControl.Focus" /> method.</exception>
+        <altmember cref="P:System.Web.UI.DataSourceControl.Visible" />
       </Docs>
     </Member>
     <Member MemberName="GetView">
@@ -359,6 +368,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.DataSourceControl.GetViewNames" />
       </Docs>
     </Member>
     <Member MemberName="GetViewNames">
@@ -398,6 +408,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.DataSourceControl.GetView(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="HasControls">
@@ -464,6 +475,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.DataSourceControl.RaiseDataSourceChangedEvent(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.DataSourceControl.RaiseDataSourceChangedEvent(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.IDataSource.DataSourceChanged" />
       </Docs>
     </Member>
     <Member MemberName="RenderControl">
@@ -556,6 +568,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.DataSourceControl.System#ComponentModel#IListSource#GetList" />
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IListSource.GetList">
@@ -584,6 +597,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.DataSourceControl.System#ComponentModel#IListSource#ContainsListCollection" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IDataSource.GetView">
@@ -618,6 +632,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="viewName" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Web.UI.DataSourceControl.GetViewNames" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IDataSource.GetViewNames">
@@ -646,6 +661,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.DataSourceControl.GetView(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Visible">

@@ -20,6 +20,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.Design.DataBindingHandler" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,6 +36,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.TextDataBindingHandler" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.DataBindingHandler" />
       </Docs>
     </Member>
     <Member MemberName="DataBindControl">
@@ -70,6 +72,7 @@
         <block subset="none" type="overrides">
           <para>Most data binding handlers need to examine the data-bindings collection on the control using the <see cref="T:System.Web.UI.IDataBindingsAccessor" /> interface to determine if any specific properties it can handle are data-bound.</para>
         </block>
+        <altmember cref="T:System.Web.UI.Design.DataBindingHandler" />
       </Docs>
     </Member>
   </Members>

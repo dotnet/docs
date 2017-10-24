@@ -34,6 +34,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.HierarchicalDataSourceControl" />
+    <altmember cref="T:System.Web.UI.Design.HierarchicalDataSourceDesigner" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -79,6 +81,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.Design.DataSourceConverter.GetStandardValues" />
       </Docs>
     </Member>
   </Members>

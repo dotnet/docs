@@ -32,6 +32,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -67,6 +68,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.Design.DesignerActionItem.DisplayName" />
+        <altmember cref="P:System.ComponentModel.Design.DesignerActionItem.Category" />
+        <altmember cref="P:System.ComponentModel.Design.DesignerActionItem.Description" />
+        <altmember cref="M:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -94,7 +99,19 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.Design.DesignerActionItem.Category" />
+        <altmember cref="P:System.ComponentModel.Design.DesignerActionItem.Description" />
+        <altmember cref="M:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerActionHeaderItem" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

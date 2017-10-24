@@ -30,6 +30,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.Imaging.BitmapSource" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -126,6 +127,7 @@
  -or-  
   
  The <see cref="T:System.Windows.Media.Imaging.CroppedBitmap" /> has already been initialized.</exception>
+        <altmember cref="M:System.Windows.Media.Imaging.CroppedBitmap.EndInit" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -286,6 +288,8 @@
  -or-  
   
  The <see cref="M:System.Windows.Media.Imaging.CroppedBitmap.EndInit" /> method is called without first calling <see cref="M:System.Windows.Media.Imaging.CroppedBitmap.BeginInit" />.</exception>
+        <altmember cref="M:System.Windows.Media.Imaging.CroppedBitmap.BeginInit" />
+        <altmember cref="T:System.ComponentModel.ISupportInitialize" />
       </Docs>
     </Member>
     <Member MemberName="GetAsFrozenCore">
@@ -432,5 +436,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Imaging.CroppedBitmap" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

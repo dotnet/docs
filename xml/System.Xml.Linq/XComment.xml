@@ -31,6 +31,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Xml.Linq.XElement" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -191,6 +192,7 @@ Comment
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlNodeType" />
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -253,6 +255,7 @@ This is a comment
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Xml.Linq.XComment.WriteTo(System.Xml.XmlWriter)" />
       </Docs>
     </Member>
     <Member MemberName="WriteTo">
@@ -292,6 +295,7 @@ This is a comment
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xml.Linq.XComment.Value" />
       </Docs>
     </Member>
     <Member MemberName="WriteToAsync">
@@ -318,5 +322,16 @@ This is a comment
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Linq.XComment" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

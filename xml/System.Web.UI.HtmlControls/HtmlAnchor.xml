@@ -45,6 +45,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlContainerControl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -114,6 +115,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlAnchor.ValidationGroup" />
       </Docs>
     </Member>
     <Member MemberName="HRef">
@@ -201,6 +203,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlAnchor.HRef" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -283,6 +286,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.HtmlControls.HtmlAnchor.OnServerClick(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.HtmlControls.HtmlAnchor.OnServerClick(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlForm" />
+        <altmember cref="E:System.Web.UI.HtmlControls.HtmlAnchor.ServerClick" />
       </Docs>
     </Member>
     <Member MemberName="RaisePostBackEvent">
@@ -353,6 +358,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The <see cref="P:System.Web.UI.HtmlControls.HtmlAnchor.HRef" /> contains a malformed URL.</exception>
+        <altmember cref="M:System.Web.UI.Control.ResolveClientUrl(System.String)" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlAnchor.HRef" />
       </Docs>
     </Member>
     <Member MemberName="ServerClick">
@@ -392,6 +399,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlAnchor.OnServerClick(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackEventHandler.RaisePostBackEvent">
@@ -422,6 +430,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)" />
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlAnchor.RaisePostBackEvent(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Target">
@@ -557,6 +567,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlAnchor.CausesValidation" />
       </Docs>
     </Member>
   </Members>

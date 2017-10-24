@@ -82,6 +82,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.Management.WebEventCodes.ApplicationStart" />
+        <altmember cref="F:System.Web.Management.WebEventCodes.ApplicationShutdown" />
+        <altmember cref="F:System.Web.Management.WebEventCodes.ApplicationCompilationStart" />
+        <altmember cref="F:System.Web.Management.WebEventCodes.ApplicationCompilationEnd" />
+        <altmember cref="F:System.Web.Management.WebEventCodes.ApplicationHeartbeat" />
+        <altmember cref="T:System.Web.Management.WebApplicationLifetimeEvent" />
       </Docs>
     </Member>
     <Member MemberName="ApplicationCompilationEnd">
@@ -107,6 +113,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Management.WebApplicationLifetimeEvent" />
+        <altmember cref="F:System.Web.Management.WebEventCodes.ApplicationCompilationStart" />
       </Docs>
     </Member>
     <Member MemberName="ApplicationCompilationStart">
@@ -132,6 +140,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Management.WebApplicationLifetimeEvent" />
+        <altmember cref="F:System.Web.Management.WebEventCodes.ApplicationCompilationEnd" />
       </Docs>
     </Member>
     <Member MemberName="ApplicationDetailCodeBase">
@@ -157,6 +167,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.Management.WebEventCodes.ApplicationCodeBase" />
+        <altmember cref="T:System.Web.Management.WebApplicationLifetimeEvent" />
       </Docs>
     </Member>
     <Member MemberName="ApplicationHeartbeat">
@@ -182,6 +194,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Management.WebHeartbeatEvent" />
       </Docs>
     </Member>
     <Member MemberName="ApplicationShutdown">
@@ -207,6 +220,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Management.WebApplicationLifetimeEvent" />
+        <altmember cref="F:System.Web.Management.WebEventCodes.ApplicationStart" />
       </Docs>
     </Member>
     <Member MemberName="ApplicationShutdownBinDirChangeOrDirectoryRename">
@@ -234,6 +249,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.Management.WebEventCodes.ApplicationShutdown" />
+        <altmember cref="T:System.Web.Management.WebApplicationLifetimeEvent" />
       </Docs>
     </Member>
     <Member MemberName="ApplicationShutdownBrowsersDirChangeOrDirectoryRename">
@@ -261,6 +278,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.Management.WebEventCodes.ApplicationShutdown" />
+        <altmember cref="T:System.Web.Management.WebApplicationLifetimeEvent" />
       </Docs>
     </Member>
     <Member MemberName="ApplicationShutdownBuildManagerChange">
@@ -288,6 +307,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.Management.WebEventCodes.ApplicationShutdown" />
+        <altmember cref="T:System.Web.Management.WebApplicationLifetimeEvent" />
       </Docs>
     </Member>
     <Member MemberName="ApplicationShutdownChangeInGlobalAsax">
@@ -315,6 +336,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.Management.WebEventCodes.ApplicationShutdown" />
+        <altmember cref="T:System.Web.Management.WebApplicationLifetimeEvent" />
       </Docs>
     </Member>
     <Member MemberName="ApplicationShutdownChangeInSecurityPolicyFile">
@@ -342,6 +365,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.Management.WebEventCodes.ApplicationShutdown" />
+        <altmember cref="T:System.Web.Management.WebApplicationLifetimeEvent" />
       </Docs>
     </Member>
     <Member MemberName="ApplicationShutdownCodeDirChangeOrDirectoryRename">
@@ -369,6 +394,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.Management.WebEventCodes.ApplicationShutdown" />
+        <altmember cref="T:System.Web.Management.WebApplicationLifetimeEvent" />
       </Docs>
     </Member>
     <Member MemberName="ApplicationShutdownConfigurationChange">
@@ -396,6 +423,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.Management.WebEventCodes.ApplicationShutdown" />
+        <altmember cref="T:System.Web.Management.WebApplicationLifetimeEvent" />
       </Docs>
     </Member>
     <Member MemberName="ApplicationShutdownHostingEnvironment">
@@ -423,6 +452,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.Management.WebEventCodes.ApplicationShutdown" />
+        <altmember cref="T:System.Web.Management.WebApplicationLifetimeEvent" />
       </Docs>
     </Member>
     <Member MemberName="ApplicationShutdownHttpRuntimeClose">
@@ -450,6 +481,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.Management.WebEventCodes.ApplicationShutdown" />
+        <altmember cref="T:System.Web.Management.WebApplicationLifetimeEvent" />
+        <altmember cref="T:System.Web.HttpRuntime" />
       </Docs>
     </Member>
     <Member MemberName="ApplicationShutdownIdleTimeout">
@@ -477,6 +511,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.Management.WebEventCodes.ApplicationShutdown" />
+        <altmember cref="T:System.Web.Management.WebApplicationLifetimeEvent" />
+        <altmember cref="P:System.Web.Configuration.HostingEnvironmentSection.IdleTimeout" />
       </Docs>
     </Member>
     <Member MemberName="ApplicationShutdownInitializationError">
@@ -504,6 +541,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.Management.WebEventCodes.ApplicationShutdown" />
+        <altmember cref="T:System.Web.Management.WebApplicationLifetimeEvent" />
+        <altmember cref="P:System.Web.Configuration.HostingEnvironmentSection.IdleTimeout" />
       </Docs>
     </Member>
     <Member MemberName="ApplicationShutdownMaxRecompilationsReached">
@@ -531,6 +571,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.Management.WebEventCodes.ApplicationShutdown" />
+        <altmember cref="T:System.Web.Management.WebApplicationLifetimeEvent" />
       </Docs>
     </Member>
     <Member MemberName="ApplicationShutdownPhysicalApplicationPathChanged">
@@ -558,6 +600,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.Management.WebEventCodes.ApplicationShutdown" />
+        <altmember cref="T:System.Web.Management.WebApplicationLifetimeEvent" />
       </Docs>
     </Member>
     <Member MemberName="ApplicationShutdownResourcesDirChangeOrDirectoryRename">
@@ -585,6 +629,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.Management.WebEventCodes.ApplicationShutdown" />
+        <altmember cref="T:System.Web.Management.WebApplicationLifetimeEvent" />
       </Docs>
     </Member>
     <Member MemberName="ApplicationShutdownUnknown">
@@ -612,6 +658,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.Management.WebEventCodes.ApplicationShutdown" />
+        <altmember cref="T:System.Web.Management.WebApplicationLifetimeEvent" />
       </Docs>
     </Member>
     <Member MemberName="ApplicationShutdownUnloadAppDomainCalled">
@@ -639,6 +687,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.Management.WebEventCodes.ApplicationShutdown" />
+        <altmember cref="T:System.Web.Management.WebApplicationLifetimeEvent" />
       </Docs>
     </Member>
     <Member MemberName="ApplicationStart">
@@ -664,6 +714,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Management.WebApplicationLifetimeEvent" />
       </Docs>
     </Member>
     <Member MemberName="AuditCodeBase">
@@ -691,6 +742,15 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.Management.WebEventCodes.AuditFormsAuthenticationSuccess" />
+        <altmember cref="F:System.Web.Management.WebEventCodes.AuditMembershipAuthenticationSuccess" />
+        <altmember cref="F:System.Web.Management.WebEventCodes.AuditFormsAuthenticationFailure" />
+        <altmember cref="F:System.Web.Management.WebEventCodes.AuditMembershipAuthenticationFailure" />
+        <altmember cref="F:System.Web.Management.WebEventCodes.AuditUrlAuthorizationFailure" />
+        <altmember cref="F:System.Web.Management.WebEventCodes.AuditFileAuthorizationFailure" />
+        <altmember cref="F:System.Web.Management.WebEventCodes.AuditUnhandledSecurityException" />
+        <altmember cref="F:System.Web.Management.WebEventCodes.AuditUnhandledAccessException" />
+        <altmember cref="F:System.Web.Management.WebEventCodes.AuditInvalidViewStateFailure" />
       </Docs>
     </Member>
     <Member MemberName="AuditDetailCodeBase">
@@ -716,6 +776,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.Management.WebEventCodes.AuditCodeBase" />
       </Docs>
     </Member>
     <Member MemberName="AuditFileAuthorizationFailure">
@@ -741,6 +802,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Management.WebFailureAuditEvent" />
       </Docs>
     </Member>
     <Member MemberName="AuditFileAuthorizationSuccess">
@@ -766,6 +828,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Management.WebSuccessAuditEvent" />
       </Docs>
     </Member>
     <Member MemberName="AuditFormsAuthenticationFailure">
@@ -791,6 +854,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Management.WebAuthenticationFailureAuditEvent" />
       </Docs>
     </Member>
     <Member MemberName="AuditFormsAuthenticationSuccess">
@@ -816,6 +880,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Management.WebAuthenticationSuccessAuditEvent" />
       </Docs>
     </Member>
     <Member MemberName="AuditInvalidViewStateFailure">
@@ -841,6 +906,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Management.WebViewStateFailureAuditEvent" />
       </Docs>
     </Member>
     <Member MemberName="AuditMembershipAuthenticationFailure">
@@ -866,6 +932,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Management.WebAuthenticationFailureAuditEvent" />
       </Docs>
     </Member>
     <Member MemberName="AuditMembershipAuthenticationSuccess">
@@ -891,6 +958,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Management.WebAuthenticationSuccessAuditEvent" />
       </Docs>
     </Member>
     <Member MemberName="AuditUnhandledAccessException">
@@ -916,6 +984,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Management.WebFailureAuditEvent" />
       </Docs>
     </Member>
     <Member MemberName="AuditUnhandledSecurityException">
@@ -941,6 +1010,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Management.WebFailureAuditEvent" />
       </Docs>
     </Member>
     <Member MemberName="AuditUrlAuthorizationFailure">
@@ -966,6 +1036,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Management.WebFailureAuditEvent" />
       </Docs>
     </Member>
     <Member MemberName="AuditUrlAuthorizationSuccess">
@@ -991,6 +1062,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Management.WebSuccessAuditEvent" />
       </Docs>
     </Member>
     <Member MemberName="ErrorCodeBase">
@@ -1016,6 +1088,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Management.WebRequestErrorEvent" />
+        <altmember cref="F:System.Web.Management.WebEventCodes.RuntimeErrorRequestAbort" />
+        <altmember cref="F:System.Web.Management.WebEventCodes.RuntimeErrorViewStateFailure" />
+        <altmember cref="F:System.Web.Management.WebEventCodes.RuntimeErrorValidationFailure" />
+        <altmember cref="F:System.Web.Management.WebEventCodes.RuntimeErrorPostTooLarge" />
+        <altmember cref="F:System.Web.Management.WebEventCodes.RuntimeErrorUnhandledException" />
+        <altmember cref="T:System.Web.Management.WebErrorEvent" />
+        <altmember cref="F:System.Web.Management.WebEventCodes.WebErrorParserError" />
+        <altmember cref="F:System.Web.Management.WebEventCodes.WebErrorCompilationError" />
+        <altmember cref="F:System.Web.Management.WebEventCodes.WebErrorConfigurationError" />
+        <altmember cref="F:System.Web.Management.WebEventCodes.WebErrorOtherError" />
       </Docs>
     </Member>
     <Member MemberName="ExpiredTicketFailure">
@@ -1043,6 +1126,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.Management.WebEventCodes.AuditFormsAuthenticationFailure" />
+        <altmember cref="T:System.Web.Management.WebAuthenticationFailureAuditEvent" />
       </Docs>
     </Member>
     <Member MemberName="InvalidEventCode">
@@ -1095,6 +1180,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.Management.WebEventCodes.AuditFormsAuthenticationFailure" />
+        <altmember cref="T:System.Web.Management.WebAuthenticationFailureAuditEvent" />
       </Docs>
     </Member>
     <Member MemberName="InvalidViewState">
@@ -1122,6 +1209,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.Management.WebEventCodes.AuditInvalidViewStateFailure" />
+        <altmember cref="T:System.Web.Management.WebViewStateFailureAuditEvent" />
       </Docs>
     </Member>
     <Member MemberName="InvalidViewStateMac">
@@ -1149,6 +1238,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.Management.WebEventCodes.AuditInvalidViewStateFailure" />
+        <altmember cref="T:System.Web.Management.WebViewStateFailureAuditEvent" />
       </Docs>
     </Member>
     <Member MemberName="MiscCodeBase">
@@ -1199,6 +1290,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.Management.WebEventCodes.RequestTransactionComplete" />
+        <altmember cref="F:System.Web.Management.WebEventCodes.RequestTransactionAbort" />
+        <altmember cref="T:System.Web.Management.WebRequestEvent" />
       </Docs>
     </Member>
     <Member MemberName="RequestTransactionAbort">
@@ -1224,6 +1318,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Management.WebRequestEvent" />
       </Docs>
     </Member>
     <Member MemberName="RequestTransactionComplete">
@@ -1249,6 +1344,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Management.WebRequestEvent" />
       </Docs>
     </Member>
     <Member MemberName="RuntimeErrorPostTooLarge">
@@ -1274,6 +1370,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Management.WebRequestErrorEvent" />
       </Docs>
     </Member>
     <Member MemberName="RuntimeErrorRequestAbort">
@@ -1299,6 +1396,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Management.WebRequestErrorEvent" />
       </Docs>
     </Member>
     <Member MemberName="RuntimeErrorUnhandledException">
@@ -1324,6 +1422,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Management.WebRequestErrorEvent" />
       </Docs>
     </Member>
     <Member MemberName="RuntimeErrorValidationFailure">
@@ -1349,6 +1448,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Management.WebRequestErrorEvent" />
       </Docs>
     </Member>
     <Member MemberName="RuntimeErrorViewStateFailure">
@@ -1374,6 +1474,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Management.WebRequestErrorEvent" />
       </Docs>
     </Member>
     <Member MemberName="RuntimeErrorWebResourceFailure">
@@ -1417,6 +1518,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Management.SqlWebEventProvider" />
       </Docs>
     </Member>
     <Member MemberName="StateServerConnectionError">
@@ -1444,6 +1546,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Management.WebErrorEvent" />
       </Docs>
     </Member>
     <Member MemberName="UndefinedEventCode">
@@ -1519,6 +1622,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Management.WebErrorEvent" />
       </Docs>
     </Member>
     <Member MemberName="WebErrorConfigurationError">
@@ -1544,6 +1648,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Management.WebErrorEvent" />
       </Docs>
     </Member>
     <Member MemberName="WebErrorObjectStateFormatterDeserializationError">
@@ -1562,6 +1667,7 @@
       <Docs>
         <summary>Represents the event code indicating that there was an error during the deserialization of the type or value of an object. This field is constant.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.ObjectStateFormatter" />
       </Docs>
     </Member>
     <Member MemberName="WebErrorOtherError">
@@ -1587,6 +1693,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Management.WebErrorEvent" />
       </Docs>
     </Member>
     <Member MemberName="WebErrorParserError">
@@ -1612,6 +1719,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Management.WebErrorEvent" />
       </Docs>
     </Member>
     <Member MemberName="WebErrorPropertyDeserializationError">
@@ -1630,6 +1738,7 @@
       <Docs>
         <summary>Represents the event code indicating that there was an error during the deserialization of a property. This field is constant.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.Management.WebBaseEvent" />
       </Docs>
     </Member>
     <Member MemberName="WebEventDetailCodeBase">
@@ -1655,6 +1764,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.Management.WebEventCodes.ApplicationCodeBase" />
+        <altmember cref="T:System.Web.Management.WebApplicationLifetimeEvent" />
       </Docs>
     </Member>
     <Member MemberName="WebEventProviderInformation">
@@ -1685,6 +1796,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Management.SqlWebEventProvider" />
       </Docs>
     </Member>
     <Member MemberName="WebExtendedBase">
@@ -1710,6 +1822,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Management.WebErrorEvent" />
       </Docs>
     </Member>
   </Members>

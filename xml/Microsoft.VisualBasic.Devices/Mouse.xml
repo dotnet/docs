@@ -159,6 +159,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The computer has no mouse installed.</exception>
+        <altmember cref="P:Microsoft.VisualBasic.Devices.Mouse.WheelScrollLines" />
       </Docs>
     </Member>
     <Member MemberName="WheelScrollLines">
@@ -210,6 +211,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The mouse has no scroll wheel.</exception>
+        <altmember cref="P:Microsoft.VisualBasic.Devices.Mouse.WheelExists" />
       </Docs>
     </Member>
   </Members>

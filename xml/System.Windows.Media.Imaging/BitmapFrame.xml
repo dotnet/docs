@@ -42,6 +42,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.Imaging.BitmapEncoder" />
+    <altmember cref="T:System.Windows.Media.Imaging.BitmapDecoder" />
+    <altmember cref="T:System.Windows.Media.Imaging.BitmapSource" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -93,6 +96,7 @@
         <summary>When overridden in a derived class, gets a collection of <see cref="T:System.Windows.Media.ColorContext" /> objects that are associated with this <see cref="T:System.Windows.Media.Imaging.BitmapFrame" />.</summary>
         <value>A read-only collection of <see cref="T:System.Windows.Media.ColorContext" /> objects that are associated with this <see cref="T:System.Windows.Media.Imaging.BitmapFrame" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.ColorContext" />
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -388,6 +392,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Imaging.BitmapSource.Metadata" />
       </Docs>
     </Member>
     <Member MemberName="Decoder">
@@ -406,6 +411,7 @@
         <summary>When overridden in a derived class, gets the decoder associated with this instance of <see cref="T:System.Windows.Media.Imaging.BitmapFrame" />.</summary>
         <value>The <see cref="T:System.Windows.Media.Imaging.BitmapDecoder" /> that is associated with this <see cref="T:System.Windows.Media.Imaging.BitmapFrame" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Imaging.BitmapDecoder" />
       </Docs>
     </Member>
     <Member MemberName="Thumbnail">
@@ -424,7 +430,18 @@
         <summary>When overridden in a derived class, gets the thumbnail image associated with this <see cref="T:System.Windows.Media.Imaging.BitmapFrame" />.</summary>
         <value>The <see cref="T:System.Windows.Media.Imaging.BitmapSource" /> that represents a thumbnail of the current <see cref="T:System.Windows.Media.Imaging.BitmapFrame" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Media.Imaging.BitmapEncoder.Thumbnail" />
+        <altmember cref="P:System.Windows.Media.Imaging.BitmapDecoder.Thumbnail" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Create">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Windows.Media.Imaging.BitmapFrame" /> based on the supplied arguments.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

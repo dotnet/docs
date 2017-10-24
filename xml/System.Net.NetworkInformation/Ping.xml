@@ -1872,5 +1872,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SendPingAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Ping</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends an Internet Control Message Protocol (ICMP) echo message to a computer, and receives a corresponding ICMP echo reply message from that computer as an asynchronous operation.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

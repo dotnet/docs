@@ -53,6 +53,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Windows.Forms.Control.OnKeyPress(System.Windows.Forms.KeyPressEventArgs)" />
+    <altmember cref="E:System.Windows.Forms.Control.KeyPress" />
+    <altmember cref="T:System.Windows.Forms.KeyEventArgs" />
+    <altmember cref="E:System.Windows.Forms.Control.KeyDown" />
+    <altmember cref="E:System.Windows.Forms.Control.KeyUp" />
+    <altmember cref="P:System.Windows.Forms.Control.ModifierKeys" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -118,6 +124,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.KeyPress" />
       </Docs>
     </Member>
     <Member MemberName="KeyChar">
@@ -187,6 +194,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.KeyPress" />
+        <altmember cref="M:System.Windows.Forms.Control.IsInputChar(System.Char)" />
       </Docs>
     </Member>
   </Members>

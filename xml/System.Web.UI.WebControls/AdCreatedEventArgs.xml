@@ -58,6 +58,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.AdCreatedEventHandler" />
+    <altmember cref="T:System.Web.UI.WebControls.AdRotator" />
+    <altmember cref="P:System.Web.UI.WebControls.AdRotator.AdvertisementFile" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -92,6 +95,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IDictionary" />
+        <altmember cref="F:System.String.Empty" />
       </Docs>
     </Member>
     <Member MemberName="AdProperties">
@@ -153,6 +158,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.AdRotator.AdvertisementFile" />
+        <altmember cref="M:System.Web.UI.WebControls.AdRotator.OnAdCreated(System.Web.UI.WebControls.AdCreatedEventArgs)" />
+        <altmember cref="T:System.Collections.IDictionary" />
+        <altmember cref="F:System.String.Empty" />
       </Docs>
     </Member>
     <Member MemberName="AlternateText">
@@ -211,6 +220,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.AdRotator" />
+        <altmember cref="P:System.Web.UI.WebControls.AdCreatedEventArgs.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.AdRotator.AdvertisementFile" />
+        <altmember cref="F:System.String.Empty" />
       </Docs>
     </Member>
     <Member MemberName="ImageUrl">
@@ -272,6 +285,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.AdRotator" />
+        <altmember cref="P:System.Web.UI.WebControls.AdRotator.AdvertisementFile" />
+        <altmember cref="F:System.String.Empty" />
       </Docs>
     </Member>
     <Member MemberName="NavigateUrl">
@@ -333,6 +349,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.AdRotator" />
+        <altmember cref="P:System.Web.UI.WebControls.AdRotator.AdvertisementFile" />
+        <altmember cref="F:System.String.Empty" />
       </Docs>
     </Member>
   </Members>

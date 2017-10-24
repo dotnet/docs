@@ -20,6 +20,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.ControlBuilder" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,6 +36,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.LiteralControlBuilder" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.ControlBuilder" />
       </Docs>
     </Member>
     <Member MemberName="AllowWhitespaceLiterals">
@@ -62,6 +64,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.ControlBuilder.AllowWhitespaceLiterals" />
+        <altmember cref="T:System.Web.UI.ControlBuilder" />
+        <altmember cref="T:System.Web.UI.LiteralControl" />
       </Docs>
     </Member>
     <Member MemberName="AppendLiteralString">
@@ -91,6 +96,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The string literal is not well formed.</exception>
+        <altmember cref="M:System.Web.UI.ControlBuilder.AppendLiteralString(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="AppendSubBuilder">
@@ -120,6 +126,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">An attempt is made to use this method.</exception>
+        <altmember cref="M:System.Web.UI.ControlBuilder.AppendSubBuilder(System.Web.UI.ControlBuilder)" />
+        <altmember cref="T:System.Web.UI.ControlBuilder" />
       </Docs>
     </Member>
   </Members>

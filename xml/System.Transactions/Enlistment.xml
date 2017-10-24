@@ -42,6 +42,8 @@
  ]]></format>
     </remarks>
     <threadsafe>This type is thread safe.</threadsafe>
+    <altmember cref="T:System.Transactions.PreparingEnlistment" />
+    <altmember cref="T:System.Transactions.IEnlistmentNotification" />
   </Docs>
   <Members>
     <Member MemberName="Done">
@@ -80,6 +82,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Transactions.PreparingEnlistment" />
+        <altmember cref="T:System.Transactions.IEnlistmentNotification" />
       </Docs>
     </Member>
   </Members>

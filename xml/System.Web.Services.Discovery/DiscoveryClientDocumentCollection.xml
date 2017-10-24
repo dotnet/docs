@@ -30,6 +30,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Collections.IDictionary" />
+    <altmember cref="T:System.Collections.DictionaryBase" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -84,6 +86,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="url" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">An entry with a key of <paramref name="url" /> already exists in the <see cref="T:System.Web.Services.Discovery.DiscoveryClientDocumentCollection" />.</exception>
+        <altmember cref="M:System.Collections.IDictionary.Add(System.Object,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -121,6 +124,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="url" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Collections.IDictionary.Contains(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -187,6 +191,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.IDictionary.Keys" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -222,6 +227,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="url" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Collections.IDictionary.Remove(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -252,6 +258,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.IDictionary.Values" />
       </Docs>
     </Member>
   </Members>

@@ -36,6 +36,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.FileDialog" />
+    <altmember cref="T:System.Windows.Forms.CommonDialog" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -134,6 +136,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.FileDialogPermission">to save a file. Associated enumeration: <see cref="F:System.Security.Permissions.FileDialogPermissionAccess.Save" />.</permission>
+        <altmember cref="T:System.IO.Stream" />
       </Docs>
     </Member>
     <Member MemberName="OverwritePrompt">
@@ -190,6 +193,7 @@
       <Docs>
         <summary>Resets all dialog box options to their default values.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.CommonDialog" />
       </Docs>
     </Member>
   </Members>

@@ -141,5 +141,14 @@
           <paramref name="view" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ContractToViewAdapter&lt;TView&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Obtains a host view of an add-in if a suitable host-side adapter is found at a specified location.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

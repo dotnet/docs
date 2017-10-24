@@ -370,9 +370,9 @@
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The absolute pixel value (96 pixels-per-inch) to initialize the length to.</param>
+        <summary>Converts a <see cref="T:System.Double" /> to an instance of the <see cref="T:System.Windows.Controls.DataGridLength" /> class.</summary>
+        <returns>An object that represents the specified length.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -506,5 +506,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.DataGridLength" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether an object is equal to the current <see cref="T:System.Windows.Controls.DataGridLength" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

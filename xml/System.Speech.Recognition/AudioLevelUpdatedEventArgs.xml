@@ -54,6 +54,10 @@ void sre_AudioLevelUpdated(object sender, AudioLevelUpdatedEventArgs e)
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Speech.Recognition.SpeechRecognitionEngine.AudioLevel" />
+    <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.AudioLevelUpdated" />
+    <altmember cref="P:System.Speech.Recognition.SpeechRecognizer.AudioLevel" />
+    <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.AudioLevelUpdated" />
   </Docs>
   <Members>
     <Member MemberName="AudioLevel">
@@ -72,6 +76,8 @@ void sre_AudioLevelUpdated(object sender, AudioLevelUpdatedEventArgs e)
         <summary>Gets the new level of audio input after the <see cref="E:System.Speech.Recognition.SpeechRecognitionEngine.AudioLevelUpdated" /> or the <see cref="E:System.Speech.Recognition.SpeechRecognizer.AudioLevelUpdated" /> event is raised.</summary>
         <value>The new level of audio input.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognitionEngine.AudioLevel" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognizer.AudioLevel" />
       </Docs>
     </Member>
   </Members>

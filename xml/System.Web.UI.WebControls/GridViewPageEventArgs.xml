@@ -37,6 +37,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="T:System.Web.UI.WebControls.GridViewPageEventHandler" />
+    <altmember cref="E:System.Web.UI.WebControls.GridView.PageIndexChanging" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -71,6 +74,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.GridViewPageEventArgs.NewPageIndex" />
       </Docs>
     </Member>
     <Member MemberName="NewPageIndex">
@@ -110,6 +114,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="P:System.Web.UI.WebControls.GridViewPageEventArgs.NewPageIndex" /> property is less than zero.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.GridView.PageIndex" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.PageIndexChanging" />
       </Docs>
     </Member>
   </Members>

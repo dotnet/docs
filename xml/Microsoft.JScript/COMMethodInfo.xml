@@ -26,6 +26,9 @@
     <summary>Enables JScript to communicate with an external COM method. This class is used by an external COM implementation to expose its objects to JScript because JScript needs a managed <see cref="T:System.Reflection.MemberInfo" /> in order to bind to an external object.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.COMMemberInfo" />
+    <altmember cref="T:Microsoft.JScript.COMFieldInfo" />
+    <altmember cref="T:Microsoft.JScript.COMPropertyInfo" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,6 +45,10 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.COMMethodInfo" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.MemberInfoInitializer" />
+        <altmember cref="T:Microsoft.JScript.COMMemberInfo" />
+        <altmember cref="T:Microsoft.JScript.COMFieldInfo" />
+        <altmember cref="T:Microsoft.JScript.COMPropertyInfo" />
       </Docs>
     </Member>
     <Member MemberName="_comObject">
@@ -60,6 +67,9 @@
         <summary>Stores a managed object that enables JScript to communicate with this external COM method.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.MemberInfoInitializer" />
+        <altmember cref="T:Microsoft.JScript.COMFieldInfo" />
+        <altmember cref="T:Microsoft.JScript.COMPropertyInfo" />
       </Docs>
     </Member>
     <Member MemberName="_name">
@@ -78,6 +88,10 @@
         <summary>Stores the name of the external COM method that this object represents.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.MemberInfoInitializer" />
+        <altmember cref="T:Microsoft.JScript.COMMemberInfo" />
+        <altmember cref="T:Microsoft.JScript.COMFieldInfo" />
+        <altmember cref="T:Microsoft.JScript.COMPropertyInfo" />
       </Docs>
     </Member>
     <Member MemberName="Attributes">
@@ -99,6 +113,10 @@
         </value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.MemberInfoInitializer" />
+        <altmember cref="T:Microsoft.JScript.COMMemberInfo" />
+        <altmember cref="T:Microsoft.JScript.COMFieldInfo" />
+        <altmember cref="T:Microsoft.JScript.COMPropertyInfo" />
       </Docs>
     </Member>
     <Member MemberName="DeclaringType">
@@ -118,6 +136,10 @@
         <value>null, because the type that declares this method is an external COM object.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.MemberInfoInitializer" />
+        <altmember cref="T:Microsoft.JScript.COMMemberInfo" />
+        <altmember cref="T:Microsoft.JScript.COMFieldInfo" />
+        <altmember cref="T:Microsoft.JScript.COMPropertyInfo" />
       </Docs>
     </Member>
     <Member MemberName="EmptyParams">
@@ -136,6 +158,10 @@
         <summary>Stores an array of <see cref="T:System.Reflection.ParameterInfo" /> objects that has zero elements.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.MemberInfoInitializer" />
+        <altmember cref="T:Microsoft.JScript.COMMemberInfo" />
+        <altmember cref="T:Microsoft.JScript.COMFieldInfo" />
+        <altmember cref="T:Microsoft.JScript.COMPropertyInfo" />
       </Docs>
     </Member>
     <Member MemberName="GetBaseDefinition">
@@ -157,6 +183,10 @@
           <see langword="this" /> in all cases.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.MemberInfoInitializer" />
+        <altmember cref="T:Microsoft.JScript.COMMemberInfo" />
+        <altmember cref="T:Microsoft.JScript.COMFieldInfo" />
+        <altmember cref="T:Microsoft.JScript.COMPropertyInfo" />
       </Docs>
     </Member>
     <Member MemberName="GetCOMMemberInfo">
@@ -177,6 +207,9 @@
         <returns>A managed object that enables JScript to communicate with this external COM method.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.MemberInfoInitializer" />
+        <altmember cref="T:Microsoft.JScript.COMFieldInfo" />
+        <altmember cref="T:Microsoft.JScript.COMPropertyInfo" />
       </Docs>
     </Member>
     <Member MemberName="GetMethodImplementationFlags">
@@ -198,6 +231,10 @@
           <see cref="F:System.Reflection.MethodImplAttributes.Managed" /> and <see cref="F:System.Reflection.MethodImplAttributes.IL" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.MemberInfoInitializer" />
+        <altmember cref="T:Microsoft.JScript.COMMemberInfo" />
+        <altmember cref="T:Microsoft.JScript.COMFieldInfo" />
+        <altmember cref="T:Microsoft.JScript.COMPropertyInfo" />
       </Docs>
     </Member>
     <Member MemberName="GetParameters">
@@ -218,6 +255,10 @@
         <returns>An array of <see cref="T:System.Reflection.ParameterInfo" /> objects that has zero elements.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.MemberInfoInitializer" />
+        <altmember cref="T:Microsoft.JScript.COMMemberInfo" />
+        <altmember cref="T:Microsoft.JScript.COMFieldInfo" />
+        <altmember cref="T:Microsoft.JScript.COMPropertyInfo" />
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -242,6 +283,9 @@
         <summary>Initializes the information that enables JScript to communicate with this external COM method.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.MemberInfoInitializer" />
+        <altmember cref="T:Microsoft.JScript.COMFieldInfo" />
+        <altmember cref="T:Microsoft.JScript.COMPropertyInfo" />
       </Docs>
     </Member>
     <Member MemberName="Invoke">
@@ -273,6 +317,9 @@
         <returns>The return value of the call to the external COM method.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.MemberInfoInitializer" />
+        <altmember cref="T:Microsoft.JScript.COMFieldInfo" />
+        <altmember cref="T:Microsoft.JScript.COMPropertyInfo" />
       </Docs>
     </Member>
     <Member MemberName="MemberType">
@@ -293,6 +340,10 @@
           <see cref="F:System.Reflection.MemberTypes.Method" />, because this class derives from <see cref="T:System.Reflection.MethodInfo" />.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.MemberInfoInitializer" />
+        <altmember cref="T:Microsoft.JScript.COMMemberInfo" />
+        <altmember cref="T:Microsoft.JScript.COMFieldInfo" />
+        <altmember cref="T:Microsoft.JScript.COMPropertyInfo" />
       </Docs>
     </Member>
     <Member MemberName="MethodHandle">
@@ -312,6 +363,10 @@
         <value>Throws an <see cref="F:Microsoft.JScript.JSError.InternalError" /> exception in all cases.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.MemberInfoInitializer" />
+        <altmember cref="T:Microsoft.JScript.COMMemberInfo" />
+        <altmember cref="T:Microsoft.JScript.COMFieldInfo" />
+        <altmember cref="T:Microsoft.JScript.COMPropertyInfo" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -331,6 +386,10 @@
         <value>The name of the external COM method that this object represents.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.MemberInfoInitializer" />
+        <altmember cref="T:Microsoft.JScript.COMMemberInfo" />
+        <altmember cref="T:Microsoft.JScript.COMFieldInfo" />
+        <altmember cref="T:Microsoft.JScript.COMPropertyInfo" />
       </Docs>
     </Member>
     <Member MemberName="ReflectedType">
@@ -350,6 +409,10 @@
         <value>null, because this instance was not obtained through reflection.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.MemberInfoInitializer" />
+        <altmember cref="T:Microsoft.JScript.COMMemberInfo" />
+        <altmember cref="T:Microsoft.JScript.COMFieldInfo" />
+        <altmember cref="T:Microsoft.JScript.COMPropertyInfo" />
       </Docs>
     </Member>
     <Member MemberName="ReturnType">
@@ -369,6 +432,10 @@
         <value>null in all cases.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.MemberInfoInitializer" />
+        <altmember cref="T:Microsoft.JScript.COMMemberInfo" />
+        <altmember cref="T:Microsoft.JScript.COMFieldInfo" />
+        <altmember cref="T:Microsoft.JScript.COMPropertyInfo" />
       </Docs>
     </Member>
     <Member MemberName="ReturnTypeCustomAttributes">
@@ -388,6 +455,10 @@
         <value>null in all cases.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.MemberInfoInitializer" />
+        <altmember cref="T:Microsoft.JScript.COMMemberInfo" />
+        <altmember cref="T:Microsoft.JScript.COMFieldInfo" />
+        <altmember cref="T:Microsoft.JScript.COMPropertyInfo" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -408,6 +479,10 @@
         <returns>An empty string.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.MemberInfoInitializer" />
+        <altmember cref="T:Microsoft.JScript.COMMemberInfo" />
+        <altmember cref="T:Microsoft.JScript.COMFieldInfo" />
+        <altmember cref="T:Microsoft.JScript.COMPropertyInfo" />
       </Docs>
     </Member>
   </Members>

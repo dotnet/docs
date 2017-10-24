@@ -39,6 +39,9 @@
  ]]></format>
     </remarks>
     <threadsafe>This type is thread safe.</threadsafe>
+    <altmember cref="T:System.Web.HttpContext" />
+    <altmember cref="T:System.Web.Caching.CacheDependency" />
+    <altmember cref="T:System.Web.Caching.CacheItemRemovedCallback" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -113,6 +116,9 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="key" /> or <paramref name="value" /> parameter is set to <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="slidingExpiration" /> parameter is set to less than <see langword="TimeSpan.Zero" /> or more than one year.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="absoluteExpiration" /> and <paramref name="slidingExpiration" /> parameters are both set for the item you are trying to add to the <see langword="Cache" />.</exception>
+        <altmember cref="T:System.Web.Caching.CacheDependency" />
+        <altmember cref="T:System.Web.Caching.CacheItemPriority" />
+        <altmember cref="T:System.Web.Caching.CacheItemRemovedCallback" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -175,6 +181,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Caching.Cache.EffectivePrivateBytesLimit" />
       </Docs>
     </Member>
     <Member MemberName="EffectivePrivateBytesLimit">
@@ -353,6 +360,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="key" /> or <paramref name="value" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.Caching.CacheDependency" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -410,6 +418,8 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="key" /> or <paramref name="value" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">You set the <paramref name="slidingExpiration" /> parameter to less than <see langword="TimeSpan.Zero" /> or the equivalent of more than one year.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="absoluteExpiration" /> and <paramref name="slidingExpiration" /> parameters are both set for the item you are trying to add to the <see langword="Cache" />.</exception>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="T:System.TimeSpan" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -461,6 +471,7 @@
  -or-  
   
  The <paramref name="dependencies" /> parameter is <see langword="null" />, and the <paramref name="absoluteExpiration" /> parameter is set to <see cref="F:System.Web.Caching.Cache.NoAbsoluteExpiration" />, and the <paramref name="slidingExpiration" /> parameter is set to <see cref="F:System.Web.Caching.Cache.NoSlidingExpiration" />.</exception>
+        <altmember cref="T:System.Web.Caching.CacheItemUpdateCallback" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -519,6 +530,10 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="key" /> or <paramref name="value" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">You set the <paramref name="slidingExpiration" /> parameter to less than <see langword="TimeSpan.Zero" /> or the equivalent of more than one year.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="absoluteExpiration" /> and <paramref name="slidingExpiration" /> parameters are both set for the item you are trying to add to the <see langword="Cache" />.</exception>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="T:System.TimeSpan" />
+        <altmember cref="T:System.Web.Caching.CacheItemPriority" />
+        <altmember cref="T:System.Web.Caching.CacheItemRemovedCallback" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -593,6 +608,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="M:System.Web.Caching.Cache.Insert(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="NoSlidingExpiration">
@@ -625,6 +642,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.TimeSpan.Zero" />
+        <altmember cref="M:System.Web.Caching.Cache.Insert(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -678,5 +697,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Insert">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Inserts an item into the <see cref="T:System.Web.Caching.Cache" /> object. Use one of the versions of this method to overwrite an existing <see langword="Cache" /> item with the same <paramref name="key" /> parameter.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

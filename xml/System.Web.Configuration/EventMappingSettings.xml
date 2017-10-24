@@ -68,6 +68,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -108,6 +109,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -142,6 +144,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
       </Docs>
     </Member>
     <Member MemberName="EndEventCode">
@@ -183,6 +186,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
+        <altmember cref="P:System.Web.Configuration.EventMappingSettings.StartEventCode" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -221,6 +226,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -280,6 +286,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
+        <altmember cref="P:System.Web.Configuration.EventMappingSettings.EndEventCode" />
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -320,7 +328,19 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.EventMappingSettings" /> class.</summary>
+        <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
+        <altmember cref="T:System.Web.Configuration.EventMappingSettings" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

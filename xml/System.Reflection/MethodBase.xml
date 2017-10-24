@@ -152,6 +152,7 @@
         <block subset="none" type="overrides">
           <para>Use the <see cref="P:System.Reflection.MethodBase.Attributes" /> property to determine whether a method is <see langword="public" />, <see langword="private" />, <see langword="final" />, <see langword="virtual" />, and so on.</para>
         </block>
+        <altmember cref="T:System.Reflection.MethodAttributes" />
       </Docs>
     </Member>
     <Member MemberName="CallingConvention">
@@ -185,6 +186,7 @@
         <summary>Gets a value indicating the calling conventions for this method.</summary>
         <value>The <see cref="T:System.Reflection.CallingConventions" /> for this method.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Reflection.CallingConventions" />
       </Docs>
     </Member>
     <Member MemberName="ContainsGenericParameters">
@@ -232,6 +234,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Reflection.MethodBase.IsGenericMethod" />
+        <altmember cref="P:System.Reflection.MethodBase.IsGenericMethodDefinition" />
+        <altmember cref="P:System.Reflection.MethodInfo.ContainsGenericParameters" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -377,6 +382,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The current object is a <see cref="T:System.Reflection.ConstructorInfo" />. Generic constructors are not supported in the .NET Framework version 2.0. This exception is the default behavior if this method is not overridden in a derived class.</exception>
+        <altmember cref="P:System.Reflection.MethodBase.IsGenericMethod" />
+        <altmember cref="P:System.Reflection.MethodBase.IsGenericMethodDefinition" />
+        <altmember cref="M:System.Reflection.MethodInfo.GetGenericArguments" />
+        <altmember cref="P:System.Reflection.MethodInfo.IsGenericMethod" />
+        <altmember cref="P:System.Type.IsGenericType" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -614,6 +624,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
+        <altmember cref="T:System.Reflection.MethodImplAttributes" />
       </Docs>
     </Member>
     <Member MemberName="GetParameters">
@@ -662,6 +673,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
+        <altmember cref="T:System.Reflection.ParameterInfo" />
       </Docs>
     </Member>
     <Member MemberName="Invoke">
@@ -774,6 +786,9 @@
         <exception cref="T:System.InvalidOperationException">The type that declares the method is an open generic type. That is, the <see cref="P:System.Type.ContainsGenericParameters" /> property returns <see langword="true" /> for the declaring type.</exception>
         <exception cref="T:System.NotSupportedException">The current instance is a <see cref="T:System.Reflection.Emit.MethodBuilder" />.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
+        <altmember cref="T:System.Reflection.BindingFlags" />
+        <altmember cref="T:System.Reflection.Missing" />
+        <altmember cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />
       </Docs>
     </Member>
     <Member MemberName="Invoke">
@@ -870,6 +885,7 @@
         <exception cref="T:System.MethodAccessException">The caller does not have permission to execute the method or constructor that is represented by the current instance.</exception>
         <exception cref="T:System.InvalidOperationException">The type that declares the method is an open generic type. That is, the <see cref="P:System.Type.ContainsGenericParameters" /> property returns <see langword="true" /> for the declaring type.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
+        <altmember cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />
       </Docs>
     </Member>
     <Member MemberName="IsAbstract">
@@ -922,6 +938,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Boolean" />
+        <altmember cref="T:System.Reflection.BindingFlags" />
       </Docs>
     </Member>
     <Member MemberName="IsAssembly">
@@ -977,6 +995,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.MethodAttributes" />
+        <altmember cref="P:System.Reflection.MethodBase.IsFamily" />
+        <altmember cref="P:System.Reflection.MethodBase.IsFamilyOrAssembly" />
+        <altmember cref="P:System.Reflection.MethodBase.IsFamilyAndAssembly" />
       </Docs>
     </Member>
     <Member MemberName="IsConstructor">
@@ -1025,6 +1047,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Boolean" />
       </Docs>
     </Member>
     <Member MemberName="IsFamily">
@@ -1078,6 +1101,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.MethodAttributes" />
+        <altmember cref="P:System.Reflection.MethodBase.IsAssembly" />
+        <altmember cref="P:System.Reflection.MethodBase.IsFamilyOrAssembly" />
+        <altmember cref="P:System.Reflection.MethodBase.IsFamilyAndAssembly" />
       </Docs>
     </Member>
     <Member MemberName="IsFamilyAndAssembly">
@@ -1131,6 +1158,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.MethodAttributes" />
+        <altmember cref="P:System.Reflection.MethodBase.IsAssembly" />
+        <altmember cref="P:System.Reflection.MethodBase.IsFamilyOrAssembly" />
+        <altmember cref="P:System.Reflection.MethodBase.IsFamily" />
       </Docs>
     </Member>
     <Member MemberName="IsFamilyOrAssembly">
@@ -1188,6 +1219,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.MethodAttributes" />
+        <altmember cref="P:System.Reflection.MethodBase.IsAssembly" />
+        <altmember cref="P:System.Reflection.MethodBase.IsFamily" />
+        <altmember cref="P:System.Reflection.MethodBase.IsFamilyAndAssembly" />
       </Docs>
     </Member>
     <Member MemberName="IsFinal">
@@ -1244,6 +1279,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Boolean" />
       </Docs>
     </Member>
     <Member MemberName="IsGenericMethod">
@@ -1290,6 +1326,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Reflection.MethodBase.ContainsGenericParameters" />
+        <altmember cref="P:System.Reflection.MethodBase.IsGenericMethodDefinition" />
+        <altmember cref="P:System.Reflection.MethodInfo.IsGenericMethod" />
+        <altmember cref="P:System.Type.IsGenericType" />
       </Docs>
     </Member>
     <Member MemberName="IsGenericMethodDefinition">
@@ -1346,6 +1386,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Reflection.MethodInfo.IsGenericMethodDefinition" />
       </Docs>
     </Member>
     <Member MemberName="IsHideBySig">
@@ -1440,6 +1481,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Boolean" />
       </Docs>
     </Member>
     <Member MemberName="IsPublic">
@@ -1490,6 +1532,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Boolean" />
+        <altmember cref="T:System.Reflection.BindingFlags" />
       </Docs>
     </Member>
     <Member MemberName="IsSecurityCritical">
@@ -1538,6 +1582,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Reflection.MethodBase.IsSecuritySafeCritical" />
+        <altmember cref="P:System.Reflection.MethodBase.IsSecurityTransparent" />
       </Docs>
     </Member>
     <Member MemberName="IsSecuritySafeCritical">
@@ -1586,6 +1632,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Reflection.MethodBase.IsSecurityCritical" />
+        <altmember cref="P:System.Reflection.MethodBase.IsSecurityTransparent" />
       </Docs>
     </Member>
     <Member MemberName="IsSecurityTransparent">
@@ -1628,6 +1676,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Reflection.MethodBase.IsSecurityCritical" />
+        <altmember cref="P:System.Reflection.MethodBase.IsSecuritySafeCritical" />
       </Docs>
     </Member>
     <Member MemberName="IsSpecialName">
@@ -1678,6 +1728,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Boolean" />
+        <altmember cref="T:System.Reflection.MethodAttributes" />
       </Docs>
     </Member>
     <Member MemberName="IsStatic">
@@ -1719,6 +1771,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Boolean" />
+        <altmember cref="T:System.Reflection.MethodAttributes" />
       </Docs>
     </Member>
     <Member MemberName="IsVirtual">
@@ -2443,5 +2497,27 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Invoke">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invokes the method or constructor reflected by this <see langword="MethodInfo" /> instance.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetMethodFromHandle">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets method information using the specified handle.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

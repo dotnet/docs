@@ -42,6 +42,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.Mail.SmtpClient" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -215,6 +216,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.Mail.SmtpClient" />
+        <altmember cref="T:System.Net.Mail.MailMessage" />
+        <altmember cref="T:System.Net.Mail.MailAddress" />
       </Docs>
     </Member>
   </Members>

@@ -45,6 +45,7 @@
   
  Device filtering is required to use a specific adapter for a server control. For more information about device filtering, see [Architectural Overview of Adaptive Control Behavior](http://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff) and [Device Filtering Overview](http://msdn.microsoft.com/library/bdfeaa58-dedd-4c0d-8610-988aac0eff19).</para>
     </block>
+    <altmember cref="T:System.Web.UI.MobileControls.Adapters.ControlAdapter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -90,6 +91,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SetPendingBreak" />
       </Docs>
     </Member>
     <Member MemberName="ConditionalClearCachedEndTag">
@@ -188,6 +190,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.CssLocation" />
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.EnterFormat(System.Web.UI.MobileControls.Style)" />
+        <altmember cref="Overload:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.ExitFormat" />
       </Docs>
     </Member>
     <Member MemberName="ConditionalEnterLayout">
@@ -224,6 +229,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.ConditionalExitLayout(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter,System.Web.UI.MobileControls.Style)" />
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="ConditionalEnterStyle">
@@ -260,6 +267,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.ExitStyle" />
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" />
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.EnterLayout(System.Web.UI.MobileControls.Style)" />
+        <altmember cref="P:System.Web.UI.MobileControls.Adapters.ControlAdapter.Device" />
       </Docs>
     </Member>
     <Member MemberName="ConditionalEnterStyle">
@@ -298,6 +309,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.ConditionalExitStyle(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter,System.Web.UI.MobileControls.Style)" />
+        <altmember cref="Overload:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.ExitStyle" />
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" />
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.EnterStyle(System.Web.UI.MobileControls.Style)" />
       </Docs>
     </Member>
     <Member MemberName="ConditionalExitFormat">
@@ -336,6 +351,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.ConditionalEnterFormat(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter,System.Web.UI.MobileControls.Style)" />
+        <altmember cref="Overload:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.ExitFormat" />
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" />
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.EnterFormat(System.Web.UI.MobileControls.Style)" />
       </Docs>
     </Member>
     <Member MemberName="ConditionalExitLayout">
@@ -374,6 +393,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.ConditionalEnterLayout(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter,System.Web.UI.MobileControls.Style)" />
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" />
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.EnterFormat(System.Web.UI.MobileControls.Style)" />
       </Docs>
     </Member>
     <Member MemberName="ConditionalExitStyle">
@@ -412,6 +434,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.CssLocation" />
+        <altmember cref="P:System.Web.UI.MobileControls.Adapters.ControlAdapter.Device" />
       </Docs>
     </Member>
     <Member MemberName="ConditionalPopPhysicalCssClass">
@@ -442,6 +466,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="ConditionalRenderClassAttribute">
@@ -478,6 +503,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.WriteAttribute(System.String,System.String,System.Boolean)" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.CssClass" />
+        <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.CssLocation" />
       </Docs>
     </Member>
     <Member MemberName="ConditionalRenderClosingDivElement">
@@ -512,6 +540,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.Adapters.ControlAdapter.Device" />
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.ConditionalRenderOpeningDivElement(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="ConditionalRenderClosingSpanElement">
@@ -546,6 +576,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.ConditionalRenderOpeningSpanElement(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter)" />
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.ConditionalPopPhysicalCssClass(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="ConditionalRenderCustomAttribute">
@@ -648,6 +680,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.Adapters.ControlAdapter.Device" />
+        <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.CssLocation" />
       </Docs>
     </Member>
     <Member MemberName="ConditionalRenderOpeningSpanElement">
@@ -684,6 +718,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.Adapters.ControlAdapter.Device" />
+        <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.CssLocation" />
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="ConditionalSetPendingBreak">
@@ -714,6 +751,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" />
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SetPendingBreak" />
       </Docs>
     </Member>
     <Member MemberName="ConditionalSetPendingBreakAfterInline">
@@ -748,6 +787,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.Adapters.ControlAdapter.Device" />
+        <altmember cref="P:System.Web.UI.Adapters.ControlAdapter.Control" />
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SetPendingBreak" />
       </Docs>
     </Member>
     <Member MemberName="CssLocation">
@@ -773,6 +815,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.StyleSheetLocation" />
       </Docs>
     </Member>
     <Member MemberName="DocumentType">
@@ -798,6 +841,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.Doctype" />
       </Docs>
     </Member>
     <Member MemberName="ExitSecondaryUIMode">
@@ -825,6 +869,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.SecondaryUIMode" />
+        <altmember cref="F:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.NotSecondaryUI" />
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttributeValue">
@@ -913,6 +959,7 @@
         <block subset="none" type="overrides">
           <para>The base implementation of <see cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.LoadAdapterState(System.Object)" /> loads the current secondary UI mode from view state. You can override it to load other specific data from view state, but be sure to also invoke the base method in order to preserve the secondary UI mode across requests. For more information on managing view state, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).</para>
         </block>
+        <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.SecondaryUIMode" />
       </Docs>
     </Member>
     <Member MemberName="NotSecondaryUI">
@@ -937,6 +984,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.SecondaryUIMode" />
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.ExitSecondaryUIMode" />
       </Docs>
     </Member>
     <Member MemberName="PageAdapter">
@@ -962,6 +1011,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter" />
       </Docs>
     </Member>
     <Member MemberName="PreprocessQueryString">
@@ -1001,6 +1051,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Specialized.NameValueCollection" />
+        <altmember cref="P:System.Web.HttpRequest.QueryString" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -1034,6 +1086,8 @@
         <block subset="none" type="overrides">
           <para>This method is typically overridden in custom adapters, and is called by the .NET Framework.</para>
         </block>
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -1065,6 +1119,7 @@
         <block subset="none" type="overrides">
           <para>This method is typically overridden in custom adapters, and is called by the .NET Framework.</para>
         </block>
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="RenderAsHiddenInputField">
@@ -1093,6 +1148,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.HtmlControlAdapter.RenderAsHiddenInputField(System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="RenderBeginLink">
@@ -1125,6 +1181,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="RenderBeginLink">
@@ -1163,6 +1220,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="RenderBeginLink">
@@ -1201,6 +1259,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="RenderClosingListTag">
@@ -1231,6 +1290,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="RenderEndLink">
@@ -1259,6 +1319,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="RenderOffPageVariables">
@@ -1293,6 +1354,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IPostBackDataHandler" />
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.RenderAsHiddenInputField(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="RenderOpeningListTag">
@@ -1325,6 +1388,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.CssLocation" />
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="RenderPostBackEventAsAnchor">
@@ -1357,6 +1422,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.RenderPostBackEventAsAnchor" />
+        <altmember cref="Overload:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.Render" />
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="RenderPostBackEventAsAnchor">
@@ -1391,6 +1459,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.RenderPostBackEventAsAnchor" />
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="RenderPostBackEventAsAnchor">
@@ -1429,6 +1499,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.RenderPostBackEventAsAnchor" />
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="SaveAdapterState">
@@ -1459,6 +1531,7 @@
         <block subset="none" type="overrides">
           <para>The base implementation of <see cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.SaveAdapterState" /> saves the current secondary UI mode in view state. You can override it to save other specific data from view state, but be sure to obtain the current state from the base class, and then combine it with your control-specific state in order to preserve the secondary UI mode across requests. For more information on managing view state, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).</para>
         </block>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.LoadAdapterState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="SecondaryUIMode">
@@ -1492,6 +1565,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.ExitSecondaryUIMode" />
       </Docs>
     </Member>
     <Member MemberName="StyleSheetLocationAttributeValue">
@@ -1517,6 +1591,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.CssLocation" />
       </Docs>
     </Member>
     <Member MemberName="StyleSheetStorageApplicationSetting">
@@ -1542,7 +1617,65 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.CssLocation" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="RenderPostBackEventAsAnchor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Renders a postback event as a link on the page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RenderBeginLink">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Renders the opening tag of a link. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Render">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Displays the associated control and all of its child controls on the client. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetCustomAttributeValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the value of the specified custom attribute. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ConditionalRenderCustomAttribute">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the value of the specified custom attribute from the associated control and renders it on the next element if certain conditions are met. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ConditionalEnterStyle">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins a new element that applies the given styles if certain conditions are met. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

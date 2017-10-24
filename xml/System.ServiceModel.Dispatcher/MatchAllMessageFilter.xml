@@ -111,5 +111,14 @@
           <paramref name="buffer" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Match">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>These methods returns <see langword="true" /> for every message that is not <see langword="null" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

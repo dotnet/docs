@@ -13,6 +13,7 @@
   <Docs>
     <summary>A class that manages multiple, named security token handler collections.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.IdentityModel.Tokens.SecurityTokenHandlerCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -54,6 +55,7 @@
         <returns>
           <see langword="true" /> if this instance contains a token handler collection for the specified usage; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.IdentityModel.Tokens.SecurityTokenHandlerCollection" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -72,6 +74,7 @@
         <summary>Gets the number of security token handler collections managed by this instance.</summary>
         <value>The number of token handler collections managed by this instance.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.IdentityModel.Tokens.SecurityTokenHandlerCollection" />
       </Docs>
     </Member>
     <Member MemberName="CreateDefaultSecurityTokenHandlerCollectionManager">
@@ -98,6 +101,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IdentityModel.Tokens.SecurityTokenHandlerCollection" />
+        <altmember cref="M:System.IdentityModel.Tokens.SecurityTokenHandlerCollection.CreateDefaultSecurityTokenHandlerCollection" />
       </Docs>
     </Member>
     <Member MemberName="CreateEmptySecurityTokenHandlerCollectionManager">
@@ -117,6 +122,7 @@
         <summary>Creates an empty token handler collection manager.</summary>
         <returns>A collection manager that contains no handlers.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.IdentityModel.Tokens.SecurityTokenHandlerCollection" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -146,6 +152,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IdentityModel.Tokens.SecurityTokenHandlerCollection" />
       </Docs>
     </Member>
     <Member MemberName="SecurityTokenHandlerCollections">
@@ -164,6 +171,7 @@
         <summary>Gets the security token handler collections managed by this instance.</summary>
         <value>The token handler collections managed by this instance.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager" />
       </Docs>
     </Member>
     <Member MemberName="ServiceName">
@@ -182,6 +190,7 @@
         <summary>Gets the service name.</summary>
         <value>The name of the service associated with this instance.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.IdentityModel.Tokens.SecurityTokenHandlerCollection" />
       </Docs>
     </Member>
   </Members>

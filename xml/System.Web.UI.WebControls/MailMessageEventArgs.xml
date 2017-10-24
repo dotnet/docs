@@ -28,6 +28,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Login" />
+    <altmember cref="T:System.Web.UI.WebControls.CreateUserWizard" />
+    <altmember cref="T:System.Web.UI.WebControls.PasswordRecovery" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -53,6 +56,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Login" />
+        <altmember cref="T:System.Web.UI.WebControls.CreateUserWizard" />
+        <altmember cref="T:System.Web.UI.WebControls.PasswordRecovery" />
       </Docs>
     </Member>
     <Member MemberName="Message">
@@ -86,6 +92,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.MailMessageEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.PasswordRecovery.SendingMail" />
+        <altmember cref="T:System.Web.UI.WebControls.Login" />
+        <altmember cref="T:System.Web.UI.WebControls.CreateUserWizard" />
+        <altmember cref="T:System.Web.UI.WebControls.PasswordRecovery" />
       </Docs>
     </Member>
   </Members>

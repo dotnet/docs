@@ -17,6 +17,7 @@
   <Docs>
     <summary>Contains values that specify behavior when matching class names in a <see cref="T:System.Windows.Automation.ClientSideProviderDescription" />.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="M:System.Windows.Automation.ClientSideProviderDescription.#ctor(System.Windows.Automation.ClientSideProviderFactoryCallback,System.String,System.String,System.Windows.Automation.ClientSideProviderMatchIndicator)" />
   </Docs>
   <Members>
     <Member MemberName="AllowSubstringMatch">

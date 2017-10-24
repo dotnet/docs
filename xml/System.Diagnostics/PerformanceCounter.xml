@@ -71,6 +71,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Diagnostics.PerformanceCounterType" />
+    <altmember cref="T:System.Diagnostics.CounterCreationData" />
+    <altmember cref="T:System.Diagnostics.CounterCreationDataCollection" />
+    <altmember cref="T:System.Diagnostics.CounterSample" />
+    <altmember cref="T:System.Diagnostics.CounterSampleCalculator" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -609,6 +614,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="P:System.Diagnostics.PerformanceCounter.CategoryName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.PlatformNotSupportedException">The platform is Windows 98 or Windows Millennium Edition (Me), which does not support performance counters.</exception>
+        <altmember cref="P:System.Diagnostics.Process.ProcessName" />
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -843,6 +849,7 @@
         <exception cref="T:System.PlatformNotSupportedException">The platform is Windows 98 or Windows Millennium Edition (Me), which does not support performance counters.</exception>
         <exception cref="T:System.UnauthorizedAccessException">Code that is executing without administrative privileges attempted to read a performance counter.</exception>
         <permission cref="T:System.Diagnostics.PerformanceCounterPermission">for reading the performance counter category. Associated enumeration: <see cref="F:System.Diagnostics.PerformanceCounterPermissionAccess.Read" />.</permission>
+        <altmember cref="T:System.Diagnostics.PerformanceCounterType" />
       </Docs>
     </Member>
     <Member MemberName="Decrement">
@@ -1537,5 +1544,15 @@
         <permission cref="T:System.Diagnostics.PerformanceCounterPermission">for writing the performance counter category. Associated enumeration: <see cref="F:System.Diagnostics.PerformanceCounterPermissionAccess.Write" />.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.PerformanceCounter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -170,6 +170,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IdentityModel.Services.SessionAuthenticationModule.DeleteSessionTokenCookie" />
+        <altmember cref="M:System.IdentityModel.Services.SessionAuthenticationModule.TryReadSessionTokenFromCookie(System.IdentityModel.Tokens.SessionSecurityToken@)" />
+        <altmember cref="M:System.IdentityModel.Services.SessionAuthenticationModule.WriteSessionTokenToCookie(System.IdentityModel.Tokens.SessionSecurityToken)" />
       </Docs>
     </Member>
     <Member MemberName="CreateSessionSecurityToken">

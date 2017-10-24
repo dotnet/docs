@@ -34,6 +34,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.Design.IDataSourceFieldSchema" />
+    <altmember cref="T:System.Web.UI.Design.DataSetSchema" />
+    <altmember cref="T:System.Web.UI.Design.DataSetViewSchema" />
+    <altmember cref="T:System.Data.DataSet" />
+    <altmember cref="T:System.Data.DataColumn" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -59,6 +64,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.DataSetFieldSchema" />
+        <altmember cref="T:System.Data.DataColumn" />
       </Docs>
     </Member>
     <Member MemberName="DataType">
@@ -77,6 +84,8 @@
         <summary>Gets the type of data stored in the data field.</summary>
         <value>A <see cref="T:System.Type" /> object that represents the type of data the data field contains.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.DataSetFieldSchema" />
+        <altmember cref="T:System.Data.DataColumn" />
       </Docs>
     </Member>
     <Member MemberName="Identity">
@@ -103,6 +112,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.DataColumn.AutoIncrement" />
+        <altmember cref="T:System.Web.UI.Design.DataSetFieldSchema" />
+        <altmember cref="T:System.Data.DataColumn" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -122,6 +134,8 @@
         <value>
           <see langword="true" /> if the data field is read-only; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.DataSetFieldSchema" />
+        <altmember cref="T:System.Data.DataColumn" />
       </Docs>
     </Member>
     <Member MemberName="IsUnique">
@@ -148,6 +162,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.DataColumn.Unique" />
+        <altmember cref="T:System.Web.UI.Design.DataSetFieldSchema" />
+        <altmember cref="T:System.Data.DataColumn" />
       </Docs>
     </Member>
     <Member MemberName="Length">
@@ -173,6 +190,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.DataColumn.MaxLength" />
+        <altmember cref="T:System.Web.UI.Design.DataSetFieldSchema" />
+        <altmember cref="T:System.Data.DataColumn" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -198,6 +218,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.DataColumn.ColumnName" />
+        <altmember cref="T:System.Data.DataColumn" />
+        <altmember cref="T:System.Web.UI.Design.DataSetFieldSchema" />
       </Docs>
     </Member>
     <Member MemberName="Nullable">
@@ -224,6 +247,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Design.DataSetFieldSchema.Nullable" />
+        <altmember cref="T:System.Data.DataColumn" />
+        <altmember cref="T:System.Web.UI.Design.DataSetFieldSchema" />
       </Docs>
     </Member>
     <Member MemberName="Precision">
@@ -249,6 +275,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Design.IDataSourceFieldSchema.Precision" />
+        <altmember cref="T:System.Web.UI.Design.DataSetFieldSchema" />
+        <altmember cref="T:System.Data.DataColumn" />
       </Docs>
     </Member>
     <Member MemberName="PrimaryKey">
@@ -268,6 +297,9 @@
         <value>
           <see langword="true" /> if the data field is in the primary key; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Data.DataColumn" />
+        <altmember cref="P:System.Web.UI.Design.IDataSourceFieldSchema.PrimaryKey" />
+        <altmember cref="T:System.Web.UI.Design.DataSetFieldSchema" />
       </Docs>
     </Member>
     <Member MemberName="Scale">
@@ -293,6 +325,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Design.IDataSourceFieldSchema.Scale" />
+        <altmember cref="T:System.Web.UI.Design.DataSetFieldSchema" />
+        <altmember cref="T:System.Data.DataColumn" />
       </Docs>
     </Member>
   </Members>

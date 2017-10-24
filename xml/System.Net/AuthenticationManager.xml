@@ -440,5 +440,15 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">for executing unmanaged code. Associated enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" />.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Unregister">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes authentication modules from the list of registered modules.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -21,6 +21,10 @@
   <Docs>
     <summary>Defines access levels used by <see cref="T:System.Diagnostics.EventLog" /> permission classes.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Diagnostics.EventLogPermission" />
+    <altmember cref="T:System.Diagnostics.EventLogPermissionAttribute" />
+    <altmember cref="T:System.Diagnostics.EventLogPermissionEntry" />
+    <altmember cref="T:System.Diagnostics.EventLogPermissionEntryCollection" />
   </Docs>
   <Members>
     <Member MemberName="Administer">

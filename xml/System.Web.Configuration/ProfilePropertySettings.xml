@@ -30,6 +30,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Configuration.ProfileSection" />
+    <altmember cref="P:System.Web.Configuration.ProfileSection.PropertySettings" />
+    <altmember cref="T:System.Web.Configuration.ProfilePropertySettingsCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -63,6 +66,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.ProfileSection" />
+        <altmember cref="P:System.Web.Configuration.ProfileSection.PropertySettings" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -108,6 +113,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.ProfileSection" />
+        <altmember cref="P:System.Web.Configuration.ProfileSection.PropertySettings" />
+        <altmember cref="T:System.Web.Configuration.SerializationMode" />
       </Docs>
     </Member>
     <Member MemberName="AllowAnonymous">
@@ -151,6 +159,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.ProfileSection" />
       </Docs>
     </Member>
     <Member MemberName="CustomProviderData">
@@ -216,6 +225,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.ProfileSection" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -256,6 +266,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.ProfileSection" />
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -314,6 +325,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.ProfileSection" />
       </Docs>
     </Member>
     <Member MemberName="ReadOnly">
@@ -355,6 +367,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.ProfileSection" />
       </Docs>
     </Member>
     <Member MemberName="SerializeAs">
@@ -393,6 +406,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.ProfileSection" />
+        <altmember cref="T:System.Web.Configuration.SerializationMode" />
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -437,7 +452,19 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.ProfileSection" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.ProfilePropertySettings" /> class.</summary>
+        <altmember cref="T:System.Web.Configuration.ProfileSection" />
+        <altmember cref="P:System.Web.Configuration.ProfileSection.PropertySettings" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

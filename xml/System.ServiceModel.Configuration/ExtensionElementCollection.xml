@@ -156,6 +156,7 @@
         <value>
           <see langword="true" /> if an attempt to add a duplicate <see cref="T:System.Configuration.ConfigurationElement" /> to the <see cref="T:System.ServiceModel.Configuration.ExtensionElementCollection" /> will cause an exception to be thrown; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="Overload:System.ServiceModel.Configuration.ExtensionElementCollection.BaseAdd" />
       </Docs>
     </Member>
   </Members>

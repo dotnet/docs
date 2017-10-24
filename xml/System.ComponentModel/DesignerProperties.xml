@@ -49,6 +49,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="P:System.ComponentModel.DesignerProperties.IsInDesignMode" />
       </Docs>
     </Member>
     <Member MemberName="IsInDesignModeProperty">
@@ -98,6 +99,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="P:System.ComponentModel.DesignerProperties.IsInDesignMode" />
       </Docs>
     </Member>
   </Members>

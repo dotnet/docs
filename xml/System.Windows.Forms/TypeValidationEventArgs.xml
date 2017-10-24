@@ -32,6 +32,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Windows.Forms.MaskedTextBox.ValidatingType" />
+    <altmember cref="M:System.Windows.Forms.MaskedTextBox.ValidateText" />
+    <altmember cref="E:System.Windows.Forms.MaskedTextBox.TypeValidationCompleted" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -63,6 +66,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TypeValidationEventArgs.ValidatingType" />
+        <altmember cref="P:System.Windows.Forms.TypeValidationEventArgs.IsValidInput" />
+        <altmember cref="P:System.Windows.Forms.TypeValidationEventArgs.ReturnValue" />
+        <altmember cref="P:System.Windows.Forms.TypeValidationEventArgs.Message" />
       </Docs>
     </Member>
     <Member MemberName="Cancel">
@@ -101,6 +108,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.MaskedTextBox.TypeValidationCompleted" />
+        <altmember cref="E:System.Windows.Forms.Control.Validating" />
       </Docs>
     </Member>
     <Member MemberName="IsValidInput">
@@ -145,6 +154,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TypeValidationEventArgs.ValidatingType" />
+        <altmember cref="P:System.Windows.Forms.MaskedTextBox.ValidatingType" />
+        <altmember cref="P:System.Windows.Forms.MaskedTextBox.Text" />
+        <altmember cref="E:System.Windows.Forms.MaskedTextBox.TypeValidationCompleted" />
       </Docs>
     </Member>
     <Member MemberName="Message">
@@ -180,6 +193,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.MaskedTextBox.ValidatingType" />
+        <altmember cref="P:System.Windows.Forms.TypeValidationEventArgs.IsValidInput" />
       </Docs>
     </Member>
     <Member MemberName="ReturnValue">
@@ -215,6 +230,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TypeValidationEventArgs.ValidatingType" />
+        <altmember cref="E:System.Windows.Forms.MaskedTextBox.TypeValidationCompleted" />
+        <altmember cref="M:System.Windows.Forms.MaskedTextBox.ValidateText" />
       </Docs>
     </Member>
     <Member MemberName="ValidatingType">
@@ -250,6 +268,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TypeValidationEventArgs.ReturnValue" />
+        <altmember cref="P:System.Windows.Forms.MaskedTextBox.ValidatingType" />
       </Docs>
     </Member>
   </Members>

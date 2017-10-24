@@ -240,6 +240,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ActivationContext" />
+        <altmember cref="T:System.ApplicationIdentity" />
+        <altmember cref="T:System.Security.Policy.ApplicationSecurityManager" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstance">
@@ -380,6 +383,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ActivationContext" />
+        <altmember cref="T:System.ApplicationIdentity" />
+        <altmember cref="T:System.Security.Policy.ApplicationSecurityManager" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstance">
@@ -2072,6 +2078,8 @@
           <paramref name="type" /> is not marshaled by reference and is not an interface.</exception>
         <exception cref="T:System.MemberAccessException">This member was invoked with a late-binding mechanism.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="T:System.Runtime.Remoting.WellKnownObjectMode" />
+        <altmember cref="T:System.Runtime.Remoting.RemotingConfiguration" />
       </Docs>
     </Member>
     <Member MemberName="GetObject">
@@ -2119,6 +2127,8 @@
           <paramref name="type" /> is not marshaled by reference and is not an interface.</exception>
         <exception cref="T:System.MemberAccessException">This member was invoked with a late-binding mechanism.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="T:System.Runtime.Remoting.WellKnownObjectMode" />
+        <altmember cref="T:System.Runtime.Remoting.RemotingConfiguration" />
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.InteropServices._Activator.GetIDsOfNames">
@@ -2267,5 +2277,45 @@
         <exception cref="T:System.NotImplementedException">Late-bound access using the COM <c>IDispatch</c> interface is not supported.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateComInstanceFrom">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an instance of the COM object whose name is specified.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateInstance">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an instance of the specified type using the constructor that best matches the specified parameters.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateInstanceFrom">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an instance of the type whose name is specified, using the named assembly file and the constructor that best matches the specified parameters.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetObject">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a proxy for a well-known object or XML Web service.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

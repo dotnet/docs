@@ -34,6 +34,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.DataSourceControl" />
+    <altmember cref="T:System.Web.UI.HierarchicalDataSourceView" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -94,6 +96,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.DataSourceView.ExecuteDelete(System.Collections.IDictionary,System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="CanExecute">
@@ -151,6 +154,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.DataSourceView.ExecuteInsert(System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="CanPage">
@@ -177,6 +181,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.DataSourceSelectArguments.StartRowIndex" />
+        <altmember cref="P:System.Web.UI.DataSourceSelectArguments.MaximumRows" />
+        <altmember cref="T:System.Web.UI.DataSourceCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="CanRetrieveTotalRowCount">
@@ -203,6 +210,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.DataSourceSelectArguments.TotalRowCount" />
+        <altmember cref="P:System.Web.UI.DataSourceSelectArguments.RetrieveTotalRowCount" />
+        <altmember cref="T:System.Web.UI.DataSourceCapabilities" />
+        <altmember cref="F:System.Web.UI.DataSourceOperation.SelectCount" />
       </Docs>
     </Member>
     <Member MemberName="CanSort">
@@ -237,6 +248,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.DataSourceSelectArguments.SortExpression" />
+        <altmember cref="T:System.Web.UI.DataSourceCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="CanUpdate">
@@ -271,6 +284,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.DataSourceView.ExecuteUpdate(System.Collections.IDictionary,System.Collections.IDictionary,System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="DataSourceViewChanged">
@@ -330,6 +344,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Web.UI.DataSourceViewOperationCallback" /> supplied is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.UI.DataSourceViewOperationCallback" />
+        <altmember cref="M:System.Web.UI.DataSourceView.ExecuteDelete(System.Collections.IDictionary,System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="Events">
@@ -460,6 +476,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="M:System.Web.UI.DataSourceView.ExecuteDelete(System.Collections.IDictionary,System.Collections.IDictionary)" /> operation is not supported by the <see cref="T:System.Web.UI.DataSourceView" />.</exception>
+        <altmember cref="P:System.Web.UI.DataSourceView.CanDelete" />
       </Docs>
     </Member>
     <Member MemberName="ExecuteInsert">
@@ -503,6 +520,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="M:System.Web.UI.DataSourceView.ExecuteInsert(System.Collections.IDictionary)" /> operation is not supported by the <see cref="T:System.Web.UI.DataSourceView" />.</exception>
+        <altmember cref="P:System.Web.UI.DataSourceView.CanInsert" />
       </Docs>
     </Member>
     <Member MemberName="ExecuteSelect">
@@ -540,6 +558,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.DataSourceView.CanSort" />
       </Docs>
     </Member>
     <Member MemberName="ExecuteUpdate">
@@ -587,6 +606,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="M:System.Web.UI.DataSourceView.ExecuteUpdate(System.Collections.IDictionary,System.Collections.IDictionary,System.Collections.IDictionary)" /> operation is not supported by the <see cref="T:System.Web.UI.DataSourceView" />.</exception>
+        <altmember cref="P:System.Web.UI.DataSourceView.CanUpdate" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -618,6 +638,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Web.UI.DataSourceViewOperationCallback" /> supplied is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.UI.DataSourceViewOperationCallback" />
+        <altmember cref="M:System.Web.UI.DataSourceView.ExecuteInsert(System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -636,6 +658,8 @@
         <summary>Gets the name of the data source view.</summary>
         <value>The name of the <see cref="T:System.Web.UI.DataSourceView" />, if it has one. The default value is <see cref="F:System.String.Empty" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.DataSourceControl.GetView(System.String)" />
+        <altmember cref="M:System.Web.UI.DataSourceControl.GetViewNames" />
       </Docs>
     </Member>
     <Member MemberName="OnDataSourceViewChanged">
@@ -731,6 +755,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Web.UI.DataSourceViewSelectCallback" /> supplied is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.UI.DataSourceViewSelectCallback" />
+        <altmember cref="M:System.Web.UI.DataSourceView.ExecuteSelect(System.Web.UI.DataSourceSelectArguments)" />
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -766,7 +792,18 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Web.UI.DataSourceViewOperationCallback" /> supplied is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.UI.DataSourceViewOperationCallback" />
+        <altmember cref="M:System.Web.UI.DataSourceView.ExecuteUpdate(System.Collections.IDictionary,System.Collections.IDictionary,System.Collections.IDictionary)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ExecuteCommand">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Executes the specified command.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

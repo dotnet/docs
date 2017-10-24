@@ -13,6 +13,7 @@
   <Docs>
     <summary>Provides data for the <see cref="E:System.Windows.Documents.DocumentPaginator.GetPageCompleted" /> event.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Documents.GetPageCompletedEventHandler" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -47,6 +48,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Documents.DocumentPaginator.GetPageCompleted" />
+        <altmember cref="T:System.Windows.Documents.GetPageCompletedEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="DocumentPage">
@@ -72,6 +75,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Documents.DocumentPaginator.GetPageAsync(System.Int32,System.Object)" />
+        <altmember cref="E:System.Windows.Documents.DocumentPaginator.GetPageCompleted" />
       </Docs>
     </Member>
     <Member MemberName="PageNumber">
@@ -97,6 +102,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Documents.DocumentPaginator.GetPageAsync(System.Int32,System.Object)" />
+        <altmember cref="E:System.Windows.Documents.DocumentPaginator.GetPageCompleted" />
       </Docs>
     </Member>
   </Members>

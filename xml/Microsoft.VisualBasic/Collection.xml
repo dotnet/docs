@@ -579,6 +579,10 @@ MsgBox(CStr(customers(1)))
   
  The number of elements in the source <see cref="T:Microsoft.VisualBasic.Collection" /> object is greater than the available space from <paramref name="index" /> to the end of the destination <paramref name="array" />.</exception>
         <exception cref="T:System.InvalidCastException">The type of the source <see cref="T:Microsoft.VisualBasic.Collection" /> object cannot be cast automatically to the type of the destination <paramref name="array" />.</exception>
+        <altmember cref="T:Microsoft.VisualBasic.Collection" />
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />
+        <altmember cref="T:System.Array" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.ICollectionCount">
@@ -673,6 +677,10 @@ MsgBox(CStr(customers(1)))
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.Collection" />
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="T:System.Collections.IEnumerable" />
+        <altmember cref="M:System.Collections.IEnumerable.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Add">
@@ -707,6 +715,10 @@ MsgBox(CStr(customers(1)))
  -or-  
   
  The <see cref="T:Microsoft.VisualBasic.Collection" /> object has a fixed size.</exception>
+        <altmember cref="T:Microsoft.VisualBasic.Collection" />
+        <altmember cref="T:System.Collections.IList" />
+        <altmember cref="M:System.Collections.IList.Add(System.Object)" />
+        <altmember cref="P:Microsoft.VisualBasic.Collection.Item(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Clear">
@@ -733,6 +745,9 @@ MsgBox(CStr(customers(1)))
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.IList" /> is read-only.</exception>
+        <altmember cref="T:Microsoft.VisualBasic.Collection" />
+        <altmember cref="T:System.Collections.IList" />
+        <altmember cref="M:System.Collections.Hashtable.Clear" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Contains">
@@ -762,6 +777,9 @@ MsgBox(CStr(customers(1)))
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.Collection" />
+        <altmember cref="T:System.Collections.IList" />
+        <altmember cref="M:System.Collections.IList.Contains(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IListIsFixedSize">
@@ -849,6 +867,9 @@ MsgBox(CStr(customers(1)))
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.Collection" />
+        <altmember cref="T:System.Collections.IList" />
+        <altmember cref="M:System.Collections.IList.IndexOf(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Insert">
@@ -890,6 +911,9 @@ MsgBox(CStr(customers(1)))
  The <see cref="T:Microsoft.VisualBasic.Collection" /> object has a fixed size.</exception>
         <exception cref="T:System.NullReferenceException">
           <paramref name="value" /> is null reference in the <see cref="T:Microsoft.VisualBasic.Collection" /> object.</exception>
+        <altmember cref="T:Microsoft.VisualBasic.Collection" />
+        <altmember cref="T:System.Collections.IList" />
+        <altmember cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Remove">
@@ -923,6 +947,9 @@ MsgBox(CStr(customers(1)))
  -or-  
   
  The <see cref="T:Microsoft.VisualBasic.Collection" /> object has a fixed size.</exception>
+        <altmember cref="T:Microsoft.VisualBasic.Collection" />
+        <altmember cref="T:System.Collections.IList" />
+        <altmember cref="M:System.Collections.IList.Remove(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.RemoveAt">
@@ -958,6 +985,9 @@ MsgBox(CStr(customers(1)))
  -or-  
   
  The <see cref="T:Microsoft.VisualBasic.Collection" /> object has a fixed size.</exception>
+        <altmember cref="T:Microsoft.VisualBasic.Collection" />
+        <altmember cref="T:System.Collections.IList" />
+        <altmember cref="M:System.Collections.IList.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.Serialization.IDeserializationCallback.OnDeserialization">
@@ -986,6 +1016,9 @@ MsgBox(CStr(customers(1)))
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.Collection" />
+        <altmember cref="T:System.Runtime.Serialization.IDeserializationCallback" />
+        <altmember cref="M:System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
@@ -1021,7 +1054,30 @@ MsgBox(CStr(customers(1)))
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.Collection" />
+        <altmember cref="T:System.Runtime.Serialization.ISerializable" />
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
+        <altmember cref="M:System.Collections.Hashtable.OnDeserialization(System.Object)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a specific element of a <see langword="Collection" /> object either by position or by key. Read-only.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes an element from a <see langword="Collection" /> object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

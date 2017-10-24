@@ -22,6 +22,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Input.InputManager" />
+    <altmember cref="T:System.Windows.Input.NotifyInputEventArgs" />
+    <altmember cref="T:System.Windows.Input.PreProcessInputEventArgs" />
+    <altmember cref="T:System.Windows.Input.ProcessInputEventArgs" />
   </Docs>
   <Members>
     <Member MemberName="GetData">
@@ -45,6 +49,7 @@
         <returns>The data for this key, or <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for calling this method.  Associated enumerations:  <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="M:System.Windows.Input.StagingAreaInputItem.SetData(System.Object,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Input">
@@ -104,6 +109,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for calling this method.  Associated enumerations:  <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="M:System.Windows.Input.StagingAreaInputItem.GetData(System.Object)" />
       </Docs>
     </Member>
   </Members>

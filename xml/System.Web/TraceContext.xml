@@ -24,6 +24,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.TraceContextEventArgs" />
+    <altmember cref="T:System.Web.TraceContextEventHandler" />
+    <altmember cref="T:System.Web.TraceContextRecord" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,6 +45,7 @@
         <param name="context">An <see cref="T:System.Web.HttpContext" /> that contains information about the current Web request.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.TraceContext" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.HttpContext" />
       </Docs>
     </Member>
     <Member MemberName="IsEnabled">
@@ -113,6 +117,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.TraceContextEventHandler" />
+        <altmember cref="T:System.Web.TraceContextEventArgs" />
+        <altmember cref="T:System.Web.TraceContextRecord" />
       </Docs>
     </Member>
     <Member MemberName="TraceMode">
@@ -147,6 +154,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The selected value is not one of the <see cref="T:System.Web.TraceMode" /> enumeration values.</exception>
+        <altmember cref="T:System.Web.UI.Page" />
       </Docs>
     </Member>
     <Member MemberName="Warn">
@@ -245,6 +253,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Exception" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -351,7 +360,26 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Exception" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Warn">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes trace information to the trace log. Unlike <see cref="M:System.Web.TraceContext.Write(System.String)" />, all warnings appear in the log as red text.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Write">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes trace information to the trace log.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

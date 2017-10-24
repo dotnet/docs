@@ -368,6 +368,7 @@
         <param name="e">The event data.</param>
         <summary>Enables the <see cref="T:System.Printing.PrintQueueStream" /> to respond to the packaging progress by handling the <see cref="E:System.Windows.Xps.Serialization.XpsPackagingPolicy.PackagingProgressEvent" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="N:System.Windows.Xps.Packaging" />
       </Docs>
     </Member>
     <Member MemberName="JobIdentifier">
@@ -571,5 +572,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.PrintQueueStream" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

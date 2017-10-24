@@ -14,6 +14,9 @@
     <summary>Supports variable fields in JScript. This is the base class for parameters, local variables, global variables, and class members.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.JSLocalField" />
+    <altmember cref="T:Microsoft.JScript.JSFieldInfo" />
+    <altmember cref="T:System.Reflection.FieldInfo" />
   </Docs>
   <Members>
     <Member MemberName="Attributes">
@@ -33,6 +36,10 @@
         <value>A bitwise combination of the enumeration values.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.JSLocalField" />
+        <altmember cref="T:Microsoft.JScript.JSField" />
+        <altmember cref="T:Microsoft.JScript.JSFieldInfo" />
+        <altmember cref="T:System.Reflection.FieldInfo" />
       </Docs>
     </Member>
     <Member MemberName="DeclaringType">
@@ -52,6 +59,10 @@
         <value>The <see langword="Type" /> object for the class that declares this member.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.JSLocalField" />
+        <altmember cref="T:Microsoft.JScript.JSField" />
+        <altmember cref="T:Microsoft.JScript.JSFieldInfo" />
+        <altmember cref="T:System.Reflection.FieldInfo" />
       </Docs>
     </Member>
     <Member MemberName="FieldType">
@@ -71,6 +82,10 @@
         <value>The type of this field.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.JSLocalField" />
+        <altmember cref="T:Microsoft.JScript.JSField" />
+        <altmember cref="T:Microsoft.JScript.JSFieldInfo" />
+        <altmember cref="T:System.Reflection.FieldInfo" />
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttributes">
@@ -95,6 +110,10 @@
         <returns>An array that contains the custom attributes that are attached to this field, or, if there are none, an array that has zero elements.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.JSLocalField" />
+        <altmember cref="T:Microsoft.JScript.JSField" />
+        <altmember cref="T:Microsoft.JScript.JSFieldInfo" />
+        <altmember cref="T:System.Reflection.FieldInfo" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -114,6 +133,10 @@
         <value>The name of this field.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.JSLocalField" />
+        <altmember cref="T:Microsoft.JScript.JSField" />
+        <altmember cref="T:Microsoft.JScript.JSFieldInfo" />
+        <altmember cref="T:System.Reflection.FieldInfo" />
       </Docs>
     </Member>
   </Members>

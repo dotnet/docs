@@ -231,6 +231,9 @@
   
 -   <see cref="P:System.Reflection.MemberInfo.Name" /></para>
     </block>
+    <altmember cref="T:System.Object" />
+    <altmember cref="N:System.Reflection" />
+    <altmember cref="T:System.Security.Permissions.ReflectionPermission" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -400,6 +403,11 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.String" />
+        <altmember cref="M:System.Type.GetType" />
+        <altmember cref="P:System.Type.FullName" />
+        <altmember cref="P:System.Type.Namespace" />
+        <altmember cref="T:System.Reflection.AssemblyName" />
       </Docs>
     </Member>
     <Member MemberName="Attributes">
@@ -449,6 +457,8 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Type.GetAttributeFlagsImpl" />
+        <altmember cref="T:System.Reflection.TypeAttributes" />
       </Docs>
     </Member>
     <Member MemberName="BaseType">
@@ -511,6 +521,11 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Object" />
+        <altmember cref="M:System.Type.GetInterfaces" />
+        <altmember cref="M:System.Type.FindInterfaces(System.Reflection.TypeFilter,System.Object)" />
+        <altmember cref="P:System.Type.UnderlyingSystemType" />
+        <altmember cref="M:System.Type.IsSubclassOf(System.Type)" />
       </Docs>
     </Member>
     <Member MemberName="ContainsGenericParameters">
@@ -561,6 +576,9 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Type.ContainsGenericParameters" />
+        <altmember cref="P:System.Type.IsGenericTypeDefinition" />
+        <altmember cref="M:System.Type.MakeGenericType(System.Type[])" />
       </Docs>
     </Member>
     <Member MemberName="DeclaringMethod">
@@ -619,6 +637,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Type.IsGenericParameter" />
       </Docs>
     </Member>
     <Member MemberName="DeclaringType">
@@ -680,6 +699,8 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.MemberInfo" />
+        <altmember cref="P:System.Type.ReflectedType" />
       </Docs>
     </Member>
     <Member MemberName="DefaultBinder">
@@ -745,6 +766,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.Binder" />
       </Docs>
     </Member>
     <Member MemberName="Delimiter">
@@ -872,6 +894,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Type.UnderlyingSystemType" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -918,6 +941,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Type.UnderlyingSystemType" />
       </Docs>
     </Member>
     <Member MemberName="FilterAttribute">
@@ -962,6 +986,8 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Type.FindMembers(System.Reflection.MemberTypes,System.Reflection.BindingFlags,System.Reflection.MemberFilter,System.Object)" />
+        <altmember cref="T:System.Reflection.MemberFilter" />
       </Docs>
     </Member>
     <Member MemberName="FilterName">
@@ -1006,6 +1032,8 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Type.FindMembers(System.Reflection.MemberTypes,System.Reflection.BindingFlags,System.Reflection.MemberFilter,System.Object)" />
+        <altmember cref="T:System.Reflection.MemberFilter" />
       </Docs>
     </Member>
     <Member MemberName="FilterNameIgnoreCase">
@@ -1050,6 +1078,8 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Type.FindMembers(System.Reflection.MemberTypes,System.Reflection.BindingFlags,System.Reflection.MemberFilter,System.Object)" />
+        <altmember cref="T:System.Reflection.MemberFilter" />
       </Docs>
     </Member>
     <Member MemberName="FindInterfaces">
@@ -1113,6 +1143,10 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
         <exception cref="T:System.ArgumentNullException">
           <paramref name="filter" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Reflection.TargetInvocationException">A static initializer is invoked and throws an exception.</exception>
+        <altmember cref="T:System.Reflection.Module" />
+        <altmember cref="T:System.Reflection.TypeFilter" />
+        <altmember cref="M:System.Type.GetInterface(System.String)" />
+        <altmember cref="M:System.Type.GetInterfaces" />
       </Docs>
     </Member>
     <Member MemberName="FindMembers">
@@ -1204,6 +1238,12 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="filter" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Reflection.MemberInfo" />
+        <altmember cref="T:System.Reflection.BindingFlags" />
+        <altmember cref="P:System.Type.DefaultBinder" />
+        <altmember cref="M:System.Type.GetMember(System.String)" />
+        <altmember cref="M:System.Type.GetMembers" />
+        <altmember cref="M:System.Type.GetDefaultMembers" />
       </Docs>
     </Member>
     <Member MemberName="FullName">
@@ -1288,6 +1328,10 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.String" />
+        <altmember cref="P:System.Type.Namespace" />
+        <altmember cref="P:System.Type.AssemblyQualifiedName" />
+        <altmember cref="T:System.Reflection.AssemblyName" />
       </Docs>
     </Member>
     <Member MemberName="GenericParameterAttributes">
@@ -1335,6 +1379,8 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
         </remarks>
         <exception cref="T:System.InvalidOperationException">The current <see cref="T:System.Type" /> object is not a generic type parameter. That is, the <see cref="P:System.Type.IsGenericParameter" /> property returns <see langword="false" />.</exception>
         <exception cref="T:System.NotSupportedException">The invoked method is not supported in the base class.</exception>
+        <altmember cref="M:System.Type.GetGenericParameterConstraints" />
+        <altmember cref="P:System.Type.IsGenericParameter" />
       </Docs>
     </Member>
     <Member MemberName="GenericParameterPosition">
@@ -1398,6 +1444,9 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The current type does not represent a type parameter. That is, <see cref="P:System.Type.IsGenericParameter" /> returns <see langword="false" />.</exception>
+        <altmember cref="M:System.Type.MakeGenericType(System.Type[])" />
+        <altmember cref="P:System.Type.ContainsGenericParameters" />
+        <altmember cref="P:System.Type.IsGenericParameter" />
       </Docs>
     </Member>
     <Member MemberName="GenericTypeArguments">
@@ -1486,6 +1535,8 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
         </remarks>
         <exception cref="T:System.NotSupportedException">The functionality of this method is unsupported in the base class and must be implemented in a derived class instead.</exception>
         <exception cref="T:System.ArgumentException">The current type is not an array.</exception>
+        <altmember cref="T:System.Array" />
+        <altmember cref="P:System.Array.Rank" />
       </Docs>
     </Member>
     <Member MemberName="GetAttributeFlagsImpl">
@@ -1514,6 +1565,8 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
         <summary>When overridden in a derived class, implements the <see cref="P:System.Type.Attributes" /> property and gets a bitmask indicating the attributes associated with the <see cref="T:System.Type" />.</summary>
         <returns>A <see cref="T:System.Reflection.TypeAttributes" /> object representing the attribute set of the <see cref="T:System.Type" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Type.Attributes" />
+        <altmember cref="T:System.Reflection.TypeAttributes" />
       </Docs>
     </Member>
     <Member MemberName="GetConstructor">
@@ -1585,6 +1638,10 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
  One of the elements in <paramref name="types" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="types" /> is multidimensional.</exception>
+        <altmember cref="T:System.Reflection.ConstructorInfo" />
+        <altmember cref="P:System.Type.DefaultBinder" />
+        <altmember cref="M:System.Type.GetConstructorImpl(System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])" />
+        <altmember cref="M:System.Type.GetConstructors" />
       </Docs>
     </Member>
     <Member MemberName="GetConstructor">
@@ -1692,6 +1749,13 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
  -or-  
   
  <paramref name="types" /> and <paramref name="modifiers" /> do not have the same length.</exception>
+        <altmember cref="T:System.Reflection.ConstructorInfo" />
+        <altmember cref="T:System.Reflection.BindingFlags" />
+        <altmember cref="T:System.Reflection.Binder" />
+        <altmember cref="P:System.Type.DefaultBinder" />
+        <altmember cref="T:System.Reflection.ParameterModifier" />
+        <altmember cref="M:System.Type.GetConstructorImpl(System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])" />
+        <altmember cref="M:System.Type.GetConstructors" />
       </Docs>
     </Member>
     <Member MemberName="GetConstructor">
@@ -1816,6 +1880,14 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
  -or-  
   
  <paramref name="types" /> and <paramref name="modifiers" /> do not have the same length.</exception>
+        <altmember cref="T:System.Reflection.ConstructorInfo" />
+        <altmember cref="T:System.Reflection.BindingFlags" />
+        <altmember cref="T:System.Reflection.Binder" />
+        <altmember cref="P:System.Type.DefaultBinder" />
+        <altmember cref="T:System.Reflection.CallingConventions" />
+        <altmember cref="T:System.Reflection.ParameterModifier" />
+        <altmember cref="M:System.Type.GetConstructorImpl(System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])" />
+        <altmember cref="M:System.Type.GetConstructors" />
       </Docs>
     </Member>
     <Member MemberName="GetConstructorImpl">
@@ -1905,6 +1977,14 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  <paramref name="types" /> and <paramref name="modifiers" /> do not have the same length.</exception>
         <exception cref="T:System.NotSupportedException">The current type is a <see cref="T:System.Reflection.Emit.TypeBuilder" /> or <see cref="T:System.Reflection.Emit.GenericTypeParameterBuilder" />.</exception>
+        <altmember cref="T:System.Reflection.ConstructorInfo" />
+        <altmember cref="T:System.Reflection.BindingFlags" />
+        <altmember cref="T:System.Reflection.Binder" />
+        <altmember cref="P:System.Type.DefaultBinder" />
+        <altmember cref="T:System.Reflection.CallingConventions" />
+        <altmember cref="T:System.Reflection.ParameterModifier" />
+        <altmember cref="M:System.Type.GetConstructor(System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])" />
+        <altmember cref="M:System.Type.GetConstructors" />
       </Docs>
     </Member>
     <Member MemberName="GetConstructors">
@@ -2003,6 +2083,8 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.ConstructorInfo" />
+        <altmember cref="M:System.Type.GetConstructor(System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])" />
       </Docs>
     </Member>
     <Member MemberName="GetConstructors">
@@ -2105,6 +2187,10 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.ConstructorInfo" />
+        <altmember cref="T:System.Reflection.BindingFlags" />
+        <altmember cref="P:System.Type.DefaultBinder" />
+        <altmember cref="M:System.Type.GetConstructor(System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])" />
       </Docs>
     </Member>
     <Member MemberName="GetDefaultMembers">
@@ -2178,6 +2264,11 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.MemberInfo" />
+        <altmember cref="T:System.Reflection.DefaultMemberAttribute" />
+        <altmember cref="M:System.Type.GetMember(System.String)" />
+        <altmember cref="M:System.Type.GetMembers" />
+        <altmember cref="M:System.Type.FindMembers(System.Reflection.MemberTypes,System.Reflection.BindingFlags,System.Reflection.MemberFilter,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetElementType">
@@ -2226,6 +2317,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Type.HasElementType" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumName">
@@ -2441,6 +2533,10 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="name" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Reflection.EventInfo" />
+        <altmember cref="T:System.String" />
+        <altmember cref="P:System.Type.DefaultBinder" />
+        <altmember cref="M:System.Type.GetEvents" />
       </Docs>
     </Member>
     <Member MemberName="GetEvent">
@@ -2518,6 +2614,11 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="name" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Reflection.EventInfo" />
+        <altmember cref="T:System.String" />
+        <altmember cref="T:System.Reflection.BindingFlags" />
+        <altmember cref="P:System.Type.DefaultBinder" />
+        <altmember cref="M:System.Type.GetEvents" />
       </Docs>
     </Member>
     <Member MemberName="GetEvents">
@@ -2593,6 +2694,8 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.EventInfo" />
+        <altmember cref="M:System.Type.GetEvent(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetEvents">
@@ -2672,6 +2775,10 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.EventInfo" />
+        <altmember cref="T:System.Reflection.BindingFlags" />
+        <altmember cref="P:System.Type.DefaultBinder" />
+        <altmember cref="M:System.Type.GetEvent(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetField">
@@ -2726,6 +2833,10 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
         <exception cref="T:System.ArgumentNullException">
           <paramref name="name" /> is <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">This <see cref="T:System.Type" /> object is a <see cref="T:System.Reflection.Emit.TypeBuilder" /> whose <see cref="M:System.Reflection.Emit.TypeBuilder.CreateType" /> method has not yet been called.</exception>
+        <altmember cref="T:System.Reflection.FieldInfo" />
+        <altmember cref="T:System.String" />
+        <altmember cref="P:System.Type.DefaultBinder" />
+        <altmember cref="M:System.Type.GetFields" />
       </Docs>
     </Member>
     <Member MemberName="GetField">
@@ -2818,6 +2929,11 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="name" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Reflection.FieldInfo" />
+        <altmember cref="T:System.String" />
+        <altmember cref="T:System.Reflection.BindingFlags" />
+        <altmember cref="P:System.Type.DefaultBinder" />
+        <altmember cref="M:System.Type.GetFields" />
       </Docs>
     </Member>
     <Member MemberName="GetFields">
@@ -2887,6 +3003,8 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.FieldInfo" />
+        <altmember cref="M:System.Type.GetField(System.String,System.Reflection.BindingFlags)" />
       </Docs>
     </Member>
     <Member MemberName="GetFields">
@@ -2962,6 +3080,10 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.FieldInfo" />
+        <altmember cref="T:System.Reflection.BindingFlags" />
+        <altmember cref="P:System.Type.DefaultBinder" />
+        <altmember cref="M:System.Type.GetField(System.String,System.Reflection.BindingFlags)" />
       </Docs>
     </Member>
     <Member MemberName="GetGenericArguments">
@@ -3017,6 +3139,8 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The invoked method is not supported in the base class. Derived classes must provide an implementation.</exception>
+        <altmember cref="P:System.Type.ContainsGenericParameters" />
+        <altmember cref="P:System.Type.IsGenericTypeDefinition" />
       </Docs>
     </Member>
     <Member MemberName="GetGenericParameterConstraints">
@@ -3064,6 +3188,8 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The current <see cref="T:System.Type" /> object is not a generic type parameter. That is, the <see cref="P:System.Type.IsGenericParameter" /> property returns <see langword="false" />.</exception>
+        <altmember cref="P:System.Type.GenericParameterAttributes" />
+        <altmember cref="P:System.Type.IsGenericParameter" />
       </Docs>
     </Member>
     <Member MemberName="GetGenericTypeDefinition">
@@ -3123,6 +3249,9 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
         </remarks>
         <exception cref="T:System.InvalidOperationException">The current type is not a generic type.  That is, <see cref="P:System.Type.IsGenericType" /> returns <see langword="false" />.</exception>
         <exception cref="T:System.NotSupportedException">The invoked method is not supported in the base class. Derived classes must provide an implementation.</exception>
+        <altmember cref="M:System.Type.MakeGenericType(System.Type[])" />
+        <altmember cref="P:System.Type.ContainsGenericParameters" />
+        <altmember cref="P:System.Type.IsGenericTypeDefinition" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -3230,6 +3359,9 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
         <exception cref="T:System.ArgumentNullException">
           <paramref name="name" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Reflection.AmbiguousMatchException">The current <see cref="T:System.Type" /> represents a type that implements the same generic interface with different type arguments.</exception>
+        <altmember cref="T:System.String" />
+        <altmember cref="M:System.Type.GetInterfaces" />
+        <altmember cref="M:System.Type.FindInterfaces(System.Reflection.TypeFilter,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetInterface">
@@ -3296,6 +3428,9 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
         <exception cref="T:System.ArgumentNullException">
           <paramref name="name" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Reflection.AmbiguousMatchException">The current <see cref="T:System.Type" /> represents a type that implements the same generic interface with different type arguments.</exception>
+        <altmember cref="T:System.String" />
+        <altmember cref="M:System.Type.GetInterfaces" />
+        <altmember cref="M:System.Type.FindInterfaces(System.Reflection.TypeFilter,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetInterfaceMap">
@@ -3363,6 +3498,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
           <paramref name="interfaceType" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The current <see cref="T:System.Type" /> represents a generic type parameter; that is, <see cref="P:System.Type.IsGenericParameter" /> is <see langword="true" />.</exception>
         <exception cref="T:System.NotSupportedException">The invoked method is not supported in the base class. Derived classes must provide an implementation.</exception>
+        <altmember cref="T:System.Reflection.InterfaceMapping" />
       </Docs>
     </Member>
     <Member MemberName="GetInterfaces">
@@ -3418,6 +3554,8 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
  ]]></format>
         </remarks>
         <exception cref="T:System.Reflection.TargetInvocationException">A static initializer is invoked and throws an exception.</exception>
+        <altmember cref="M:System.Type.GetInterface(System.String)" />
+        <altmember cref="M:System.Type.FindInterfaces(System.Reflection.TypeFilter,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetMember">
@@ -3497,6 +3635,12 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="name" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Reflection.MemberInfo" />
+        <altmember cref="T:System.String" />
+        <altmember cref="P:System.Type.DefaultBinder" />
+        <altmember cref="M:System.Type.GetMembers" />
+        <altmember cref="M:System.Type.GetDefaultMembers" />
+        <altmember cref="M:System.Type.FindMembers(System.Reflection.MemberTypes,System.Reflection.BindingFlags,System.Reflection.MemberFilter,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetMember">
@@ -3583,6 +3727,13 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="name" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Reflection.MemberInfo" />
+        <altmember cref="T:System.String" />
+        <altmember cref="T:System.Reflection.BindingFlags" />
+        <altmember cref="P:System.Type.DefaultBinder" />
+        <altmember cref="M:System.Type.GetMembers" />
+        <altmember cref="M:System.Type.GetDefaultMembers" />
+        <altmember cref="M:System.Type.FindMembers(System.Reflection.MemberTypes,System.Reflection.BindingFlags,System.Reflection.MemberFilter,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetMember">
@@ -3670,6 +3821,13 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
         <exception cref="T:System.ArgumentNullException">
           <paramref name="name" /> is <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">A derived class must provide an implementation.</exception>
+        <altmember cref="T:System.Reflection.MemberInfo" />
+        <altmember cref="T:System.String" />
+        <altmember cref="T:System.Reflection.BindingFlags" />
+        <altmember cref="P:System.Type.DefaultBinder" />
+        <altmember cref="M:System.Type.GetMembers" />
+        <altmember cref="M:System.Type.GetDefaultMembers" />
+        <altmember cref="M:System.Type.FindMembers(System.Reflection.MemberTypes,System.Reflection.BindingFlags,System.Reflection.MemberFilter,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetMembers">
@@ -3743,6 +3901,10 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.MemberInfo" />
+        <altmember cref="M:System.Type.GetMember(System.String)" />
+        <altmember cref="M:System.Type.GetDefaultMembers" />
+        <altmember cref="M:System.Type.FindMembers(System.Reflection.MemberTypes,System.Reflection.BindingFlags,System.Reflection.MemberFilter,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetMembers">
@@ -3824,6 +3986,12 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.MemberInfo" />
+        <altmember cref="T:System.Reflection.BindingFlags" />
+        <altmember cref="P:System.Type.DefaultBinder" />
+        <altmember cref="M:System.Type.GetMember(System.String)" />
+        <altmember cref="M:System.Type.GetDefaultMembers" />
+        <altmember cref="M:System.Type.FindMembers(System.Reflection.MemberTypes,System.Reflection.BindingFlags,System.Reflection.MemberFilter,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetMethod">
@@ -3894,6 +4062,11 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
         <exception cref="T:System.Reflection.AmbiguousMatchException">More than one method is found with the specified name.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="name" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Reflection.MethodInfo" />
+        <altmember cref="T:System.String" />
+        <altmember cref="P:System.Type.DefaultBinder" />
+        <altmember cref="M:System.Type.GetMethodImpl(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])" />
+        <altmember cref="M:System.Type.GetMethods" />
       </Docs>
     </Member>
     <Member MemberName="GetMethod">
@@ -3990,6 +4163,12 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
         <exception cref="T:System.Reflection.AmbiguousMatchException">More than one method is found with the specified name and matching the specified binding constraints.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="name" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Reflection.MethodInfo" />
+        <altmember cref="T:System.String" />
+        <altmember cref="T:System.Reflection.BindingFlags" />
+        <altmember cref="P:System.Type.DefaultBinder" />
+        <altmember cref="M:System.Type.GetMethodImpl(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])" />
+        <altmember cref="M:System.Type.GetMethods" />
       </Docs>
     </Member>
     <Member MemberName="GetMethod">
@@ -4076,6 +4255,10 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
  One of the elements in <paramref name="types" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="types" /> is multidimensional.</exception>
+        <altmember cref="T:System.Reflection.MethodInfo" />
+        <altmember cref="P:System.Type.DefaultBinder" />
+        <altmember cref="M:System.Type.GetMethodImpl(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])" />
+        <altmember cref="M:System.Type.GetMethods" />
       </Docs>
     </Member>
     <Member MemberName="GetMethod">
@@ -4151,6 +4334,12 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
  -or-  
   
  <paramref name="modifiers" /> is multidimensional.</exception>
+        <altmember cref="T:System.Reflection.MethodInfo" />
+        <altmember cref="T:System.String" />
+        <altmember cref="P:System.Type.DefaultBinder" />
+        <altmember cref="T:System.Reflection.ParameterModifier" />
+        <altmember cref="M:System.Type.GetMethodImpl(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])" />
+        <altmember cref="M:System.Type.GetMethods" />
       </Docs>
     </Member>
     <Member MemberName="GetMethod">
@@ -4266,6 +4455,14 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
  -or-  
   
  <paramref name="modifiers" /> is multidimensional.</exception>
+        <altmember cref="T:System.Reflection.MethodInfo" />
+        <altmember cref="T:System.String" />
+        <altmember cref="T:System.Reflection.BindingFlags" />
+        <altmember cref="T:System.Reflection.Binder" />
+        <altmember cref="P:System.Type.DefaultBinder" />
+        <altmember cref="T:System.Reflection.ParameterModifier" />
+        <altmember cref="M:System.Type.GetMethodImpl(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])" />
+        <altmember cref="M:System.Type.GetMethods" />
       </Docs>
     </Member>
     <Member MemberName="GetMethod">
@@ -4400,6 +4597,15 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
  -or-  
   
  <paramref name="modifiers" /> is multidimensional.</exception>
+        <altmember cref="T:System.Reflection.MethodInfo" />
+        <altmember cref="T:System.String" />
+        <altmember cref="T:System.Reflection.BindingFlags" />
+        <altmember cref="T:System.Reflection.Binder" />
+        <altmember cref="P:System.Type.DefaultBinder" />
+        <altmember cref="T:System.Reflection.CallingConventions" />
+        <altmember cref="T:System.Reflection.ParameterModifier" />
+        <altmember cref="M:System.Type.GetMethodImpl(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])" />
+        <altmember cref="M:System.Type.GetMethods" />
       </Docs>
     </Member>
     <Member MemberName="GetMethodImpl">
@@ -4498,6 +4704,15 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  <paramref name="types" /> and <paramref name="modifiers" /> do not have the same length.</exception>
         <exception cref="T:System.NotSupportedException">The current type is a <see cref="T:System.Reflection.Emit.TypeBuilder" /> or <see cref="T:System.Reflection.Emit.GenericTypeParameterBuilder" />.</exception>
+        <altmember cref="T:System.Reflection.MethodInfo" />
+        <altmember cref="T:System.String" />
+        <altmember cref="T:System.Reflection.BindingFlags" />
+        <altmember cref="T:System.Reflection.Binder" />
+        <altmember cref="P:System.Type.DefaultBinder" />
+        <altmember cref="T:System.Reflection.CallingConventions" />
+        <altmember cref="T:System.Reflection.ParameterModifier" />
+        <altmember cref="M:System.Type.GetMethod(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])" />
+        <altmember cref="M:System.Type.GetMethods" />
       </Docs>
     </Member>
     <Member MemberName="GetMethods">
@@ -4563,6 +4778,8 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.MethodInfo" />
+        <altmember cref="M:System.Type.GetMethod(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])" />
       </Docs>
     </Member>
     <Member MemberName="GetMethods">
@@ -4641,6 +4858,10 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.MethodInfo" />
+        <altmember cref="T:System.Reflection.BindingFlags" />
+        <altmember cref="P:System.Type.DefaultBinder" />
+        <altmember cref="M:System.Type.GetMethod(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])" />
       </Docs>
     </Member>
     <Member MemberName="GetNestedType">
@@ -4709,6 +4930,9 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="name" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.String" />
+        <altmember cref="P:System.Type.DefaultBinder" />
+        <altmember cref="M:System.Type.GetNestedTypes" />
       </Docs>
     </Member>
     <Member MemberName="GetNestedType">
@@ -4780,6 +5004,10 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="name" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.String" />
+        <altmember cref="T:System.Reflection.BindingFlags" />
+        <altmember cref="P:System.Type.DefaultBinder" />
+        <altmember cref="M:System.Type.GetNestedTypes" />
       </Docs>
     </Member>
     <Member MemberName="GetNestedTypes">
@@ -4852,6 +5080,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Type.GetNestedType(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetNestedTypes">
@@ -4930,6 +5159,9 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.BindingFlags" />
+        <altmember cref="P:System.Type.DefaultBinder" />
+        <altmember cref="M:System.Type.GetNestedType(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetProperties">
@@ -5003,6 +5235,8 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.PropertyInfo" />
+        <altmember cref="M:System.Type.GetProperty(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Type,System.Type[],System.Reflection.ParameterModifier[])" />
       </Docs>
     </Member>
     <Member MemberName="GetProperties">
@@ -5082,6 +5316,10 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.PropertyInfo" />
+        <altmember cref="T:System.Reflection.BindingFlags" />
+        <altmember cref="P:System.Type.DefaultBinder" />
+        <altmember cref="M:System.Type.GetProperty(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Type,System.Type[],System.Reflection.ParameterModifier[])" />
       </Docs>
     </Member>
     <Member MemberName="GetProperty">
@@ -5153,6 +5391,11 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
         <exception cref="T:System.Reflection.AmbiguousMatchException">More than one property is found with the specified name.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="name" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Reflection.PropertyInfo" />
+        <altmember cref="T:System.String" />
+        <altmember cref="P:System.Type.DefaultBinder" />
+        <altmember cref="M:System.Type.GetPropertyImpl(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Type,System.Type[],System.Reflection.ParameterModifier[])" />
+        <altmember cref="M:System.Type.GetProperties(System.Reflection.BindingFlags)" />
       </Docs>
     </Member>
     <Member MemberName="GetProperty">
@@ -5244,6 +5487,12 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
         <exception cref="T:System.Reflection.AmbiguousMatchException">More than one property is found with the specified name and matching the specified binding constraints.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="name" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Reflection.PropertyInfo" />
+        <altmember cref="T:System.String" />
+        <altmember cref="T:System.Reflection.BindingFlags" />
+        <altmember cref="P:System.Type.DefaultBinder" />
+        <altmember cref="M:System.Type.GetPropertyImpl(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Type,System.Type[],System.Reflection.ParameterModifier[])" />
+        <altmember cref="M:System.Type.GetProperties(System.Reflection.BindingFlags)" />
       </Docs>
     </Member>
     <Member MemberName="GetProperty">
@@ -5309,6 +5558,11 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
         <exception cref="T:System.Reflection.AmbiguousMatchException">More than one property is found with the specified name.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="name" /> is <see langword="null" />, or <paramref name="returnType" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Reflection.PropertyInfo" />
+        <altmember cref="T:System.String" />
+        <altmember cref="P:System.Type.DefaultBinder" />
+        <altmember cref="M:System.Type.GetPropertyImpl(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Type,System.Type[],System.Reflection.ParameterModifier[])" />
+        <altmember cref="M:System.Type.GetProperties(System.Reflection.BindingFlags)" />
       </Docs>
     </Member>
     <Member MemberName="GetProperty">
@@ -5385,6 +5639,11 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
         <exception cref="T:System.ArgumentException">
           <paramref name="types" /> is multidimensional.</exception>
         <exception cref="T:System.NullReferenceException">An element of <paramref name="types" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Reflection.PropertyInfo" />
+        <altmember cref="T:System.String" />
+        <altmember cref="P:System.Type.DefaultBinder" />
+        <altmember cref="M:System.Type.GetPropertyImpl(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Type,System.Type[],System.Reflection.ParameterModifier[])" />
+        <altmember cref="M:System.Type.GetProperties(System.Reflection.BindingFlags)" />
       </Docs>
     </Member>
     <Member MemberName="GetProperty">
@@ -5454,6 +5713,11 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
         <exception cref="T:System.ArgumentException">
           <paramref name="types" /> is multidimensional.</exception>
         <exception cref="T:System.NullReferenceException">An element of <paramref name="types" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Reflection.PropertyInfo" />
+        <altmember cref="T:System.String" />
+        <altmember cref="P:System.Type.DefaultBinder" />
+        <altmember cref="M:System.Type.GetPropertyImpl(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Type,System.Type[],System.Reflection.ParameterModifier[])" />
+        <altmember cref="M:System.Type.GetProperties(System.Reflection.BindingFlags)" />
       </Docs>
     </Member>
     <Member MemberName="GetProperty">
@@ -5544,6 +5808,12 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  <paramref name="types" /> and <paramref name="modifiers" /> do not have the same length.</exception>
         <exception cref="T:System.NullReferenceException">An element of <paramref name="types" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Reflection.PropertyInfo" />
+        <altmember cref="T:System.String" />
+        <altmember cref="P:System.Type.DefaultBinder" />
+        <altmember cref="T:System.Reflection.ParameterModifier" />
+        <altmember cref="M:System.Type.GetPropertyImpl(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Type,System.Type[],System.Reflection.ParameterModifier[])" />
+        <altmember cref="M:System.Type.GetProperties(System.Reflection.BindingFlags)" />
       </Docs>
     </Member>
     <Member MemberName="GetProperty">
@@ -5670,6 +5940,14 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  <paramref name="types" /> and <paramref name="modifiers" /> do not have the same length.</exception>
         <exception cref="T:System.NullReferenceException">An element of <paramref name="types" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Reflection.PropertyInfo" />
+        <altmember cref="T:System.String" />
+        <altmember cref="T:System.Reflection.BindingFlags" />
+        <altmember cref="T:System.Reflection.Binder" />
+        <altmember cref="P:System.Type.DefaultBinder" />
+        <altmember cref="T:System.Reflection.ParameterModifier" />
+        <altmember cref="M:System.Type.GetPropertyImpl(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Type,System.Type[],System.Reflection.ParameterModifier[])" />
+        <altmember cref="M:System.Type.GetProperties(System.Reflection.BindingFlags)" />
       </Docs>
     </Member>
     <Member MemberName="GetPropertyImpl">
@@ -5770,6 +6048,14 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  <paramref name="types" /> and <paramref name="modifiers" /> do not have the same length.</exception>
         <exception cref="T:System.NotSupportedException">The current type is a <see cref="T:System.Reflection.Emit.TypeBuilder" />, <see cref="T:System.Reflection.Emit.EnumBuilder" />, or <see cref="T:System.Reflection.Emit.GenericTypeParameterBuilder" />.</exception>
+        <altmember cref="T:System.Reflection.PropertyInfo" />
+        <altmember cref="T:System.String" />
+        <altmember cref="T:System.Reflection.BindingFlags" />
+        <altmember cref="T:System.Reflection.Binder" />
+        <altmember cref="P:System.Type.DefaultBinder" />
+        <altmember cref="T:System.Reflection.ParameterModifier" />
+        <altmember cref="M:System.Type.GetProperty(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Type,System.Type[],System.Reflection.ParameterModifier[])" />
+        <altmember cref="M:System.Type.GetProperties(System.Reflection.BindingFlags)" />
       </Docs>
     </Member>
     <Member MemberName="GetType">
@@ -5799,6 +6085,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
         <returns>The current <see cref="T:System.Type" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Reflection.TargetInvocationException">A class initializer is invoked and throws an exception.</exception>
+        <altmember cref="T:System.TypeLoadException" />
       </Docs>
     </Member>
     <Member MemberName="GetType">
@@ -5985,6 +6272,12 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
  -or-  
   
  Version 2.0 or later of the common language runtime is currently loaded, and the assembly was compiled with a later version.</exception>
+        <altmember cref="T:System.String" />
+        <altmember cref="T:System.TypeLoadException" />
+        <altmember cref="P:System.Type.AssemblyQualifiedName" />
+        <altmember cref="M:System.Reflection.Assembly.GetAssembly(System.Type)" />
+        <altmember cref="M:System.Reflection.Assembly.GetType(System.String)" />
+        <altmember cref="T:System.Reflection.AssemblyName" />
       </Docs>
     </Member>
     <Member MemberName="GetType">
@@ -6195,6 +6488,12 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
  -or-  
   
  Version 2.0 or later of the common language runtime is currently loaded, and the assembly was compiled with a later version.</exception>
+        <altmember cref="T:System.String" />
+        <altmember cref="T:System.TypeLoadException" />
+        <altmember cref="P:System.Type.AssemblyQualifiedName" />
+        <altmember cref="M:System.Reflection.Assembly.GetAssembly(System.Type)" />
+        <altmember cref="M:System.Reflection.Assembly.GetType(System.String)" />
+        <altmember cref="T:System.Reflection.AssemblyName" />
       </Docs>
     </Member>
     <Member MemberName="GetType">
@@ -6389,6 +6688,12 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
  -or-  
   
  Version 2.0 or later of the common language runtime is currently loaded, and the assembly was compiled with a later version.</exception>
+        <altmember cref="T:System.String" />
+        <altmember cref="T:System.TypeLoadException" />
+        <altmember cref="P:System.Type.AssemblyQualifiedName" />
+        <altmember cref="M:System.Reflection.Assembly.GetAssembly(System.Type)" />
+        <altmember cref="M:System.Reflection.Assembly.GetType(System.String)" />
+        <altmember cref="T:System.Reflection.AssemblyName" />
       </Docs>
     </Member>
     <Member MemberName="GetType">
@@ -6909,6 +7214,8 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.TypeCode" />
+        <altmember cref="M:System.Type.GetTypeCodeImpl" />
       </Docs>
     </Member>
     <Member MemberName="GetTypeCodeImpl">
@@ -6944,6 +7251,8 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.TypeCode" />
+        <altmember cref="M:System.Type.GetTypeCode(System.Type)" />
       </Docs>
     </Member>
     <Member MemberName="GetTypeFromCLSID">
@@ -7300,6 +7609,9 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
  ]]></format>
         </remarks>
         <exception cref="T:System.Reflection.TargetInvocationException">A class initializer is invoked and throws an exception.</exception>
+        <altmember cref="T:System.RuntimeTypeHandle" />
+        <altmember cref="P:System.Type.TypeHandle" />
+        <altmember cref="M:System.Type.GetTypeHandle(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetTypeFromProgID">
@@ -7346,6 +7658,7 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
         <exception cref="T:System.ArgumentException">
           <paramref name="progID" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.RegistrationServices.GetProgIdForType(System.Type)" />
       </Docs>
     </Member>
     <Member MemberName="GetTypeFromProgID">
@@ -7409,6 +7722,7 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
           <paramref name="progID" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Runtime.InteropServices.COMException">The specified ProgID is not registered.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.RegistrationServices.GetProgIdForType(System.Type)" />
       </Docs>
     </Member>
     <Member MemberName="GetTypeFromProgID">
@@ -7466,6 +7780,7 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
         <exception cref="T:System.ArgumentException">
           <paramref name="prodID" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.RegistrationServices.GetProgIdForType(System.Type)" />
       </Docs>
     </Member>
     <Member MemberName="GetTypeFromProgID">
@@ -7531,6 +7846,8 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
           <paramref name="progID" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Runtime.InteropServices.COMException">The specified progID is not registered.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.RegistrationServices.GetProgIdForType(System.Type)" />
+        <altmember cref="T:System.TypeLoadException" />
       </Docs>
     </Member>
     <Member MemberName="GetTypeHandle">
@@ -7580,6 +7897,9 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="o" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.RuntimeTypeHandle" />
+        <altmember cref="P:System.Type.TypeHandle" />
+        <altmember cref="M:System.Type.GetTypeFromHandle(System.RuntimeTypeHandle)" />
       </Docs>
     </Member>
     <Member MemberName="GUID">
@@ -7623,6 +7943,7 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Guid" />
       </Docs>
     </Member>
     <Member MemberName="HasElementType">
@@ -7673,6 +7994,12 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Type.HasElementTypeImpl" />
+        <altmember cref="P:System.Type.IsArray" />
+        <altmember cref="P:System.Type.IsPointer" />
+        <altmember cref="P:System.Type.IsByRef" />
+        <altmember cref="M:System.Type.GetElementType" />
+        <altmember cref="M:System.Type.GetType" />
       </Docs>
     </Member>
     <Member MemberName="HasElementTypeImpl">
@@ -7718,6 +8045,12 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Type.HasElementType" />
+        <altmember cref="P:System.Type.IsArray" />
+        <altmember cref="P:System.Type.IsPointer" />
+        <altmember cref="P:System.Type.IsByRef" />
+        <altmember cref="M:System.Type.GetElementType" />
+        <altmember cref="M:System.Type.GetType" />
       </Docs>
     </Member>
     <Member MemberName="InvokeMember">
@@ -7904,6 +8237,14 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
         <exception cref="T:System.InvalidOperationException">The method represented by <paramref name="name" /> has one or more unspecified generic type parameters. That is, the method's <see cref="P:System.Reflection.MethodInfo.ContainsGenericParameters" /> property returns <see langword="true" />.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">for accessing non-public members regardless of their grant set. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to call unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="T:System.String" />
+        <altmember cref="T:System.Reflection.Binder" />
+        <altmember cref="P:System.Type.DefaultBinder" />
+        <altmember cref="T:System.Reflection.BindingFlags" />
+        <altmember cref="T:System.Reflection.ParameterModifier" />
+        <altmember cref="T:System.Reflection.ParameterAttributes" />
+        <altmember cref="T:System.Globalization.CultureInfo" />
+        <altmember cref="T:System.Security.Permissions.ReflectionPermission" />
       </Docs>
     </Member>
     <Member MemberName="InvokeMember">
@@ -8087,6 +8428,14 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
         <exception cref="T:System.InvalidOperationException">The method represented by <paramref name="name" /> has one or more unspecified generic type parameters. That is, the method's <see cref="P:System.Reflection.MethodInfo.ContainsGenericParameters" /> property returns <see langword="true" />.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">for accessing non-public members regardless of their grant set. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to call unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="T:System.String" />
+        <altmember cref="T:System.Reflection.Binder" />
+        <altmember cref="P:System.Type.DefaultBinder" />
+        <altmember cref="T:System.Reflection.BindingFlags" />
+        <altmember cref="T:System.Reflection.ParameterModifier" />
+        <altmember cref="T:System.Reflection.ParameterAttributes" />
+        <altmember cref="T:System.Globalization.CultureInfo" />
+        <altmember cref="T:System.Security.Permissions.ReflectionPermission" />
       </Docs>
     </Member>
     <Member MemberName="InvokeMember">
@@ -8293,6 +8642,14 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
         <exception cref="T:System.InvalidOperationException">The method represented by <paramref name="name" /> has one or more unspecified generic type parameters. That is, the method's <see cref="P:System.Reflection.MethodInfo.ContainsGenericParameters" /> property returns <see langword="true" />.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">for accessing non-public members regardless of their grant set. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to call unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="T:System.String" />
+        <altmember cref="T:System.Reflection.Binder" />
+        <altmember cref="P:System.Type.DefaultBinder" />
+        <altmember cref="T:System.Reflection.BindingFlags" />
+        <altmember cref="T:System.Reflection.ParameterModifier" />
+        <altmember cref="T:System.Reflection.ParameterAttributes" />
+        <altmember cref="T:System.Globalization.CultureInfo" />
+        <altmember cref="T:System.Security.Permissions.ReflectionPermission" />
       </Docs>
     </Member>
     <Member MemberName="IsAbstract">
@@ -8354,6 +8711,7 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.TypeAttributes" />
       </Docs>
     </Member>
     <Member MemberName="IsAnsiClass">
@@ -8402,6 +8760,9 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.TypeAttributes" />
+        <altmember cref="P:System.Type.IsUnicodeClass" />
+        <altmember cref="P:System.Type.IsAutoClass" />
       </Docs>
     </Member>
     <Member MemberName="IsArray">
@@ -8463,6 +8824,7 @@ GetType(Array).IsAssignableFrom(type)
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Type.IsArrayImpl" />
       </Docs>
     </Member>
     <Member MemberName="IsArrayImpl">
@@ -8508,6 +8870,7 @@ GetType(Array).IsAssignableFrom(type)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Type.IsArray" />
       </Docs>
     </Member>
     <Member MemberName="IsAssignableFrom">
@@ -8630,6 +8993,9 @@ GetType(Array).IsAssignableFrom(type)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.TypeAttributes" />
+        <altmember cref="P:System.Type.IsAnsiClass" />
+        <altmember cref="P:System.Type.IsUnicodeClass" />
       </Docs>
     </Member>
     <Member MemberName="IsAutoLayout">
@@ -8683,6 +9049,9 @@ GetType(Array).IsAssignableFrom(type)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.TypeAttributes" />
+        <altmember cref="P:System.Type.IsLayoutSequential" />
+        <altmember cref="P:System.Type.IsExplicitLayout" />
       </Docs>
     </Member>
     <Member MemberName="IsByRef">
@@ -8731,6 +9100,7 @@ GetType(Array).IsAssignableFrom(type)
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Type.IsByRefImpl" />
       </Docs>
     </Member>
     <Member MemberName="IsByRefImpl">
@@ -8760,6 +9130,7 @@ GetType(Array).IsAssignableFrom(type)
         <returns>
           <see langword="true" /> if the <see cref="T:System.Type" /> is passed by reference; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Type.IsByRef" />
       </Docs>
     </Member>
     <Member MemberName="IsClass">
@@ -8813,6 +9184,10 @@ GetType(Array).IsAssignableFrom(type)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.TypeAttributes" />
+        <altmember cref="P:System.Type.IsInterface" />
+        <altmember cref="P:System.Type.IsValueType" />
+        <altmember cref="F:System.Reflection.TypeAttributes.ClassSemanticsMask" />
       </Docs>
     </Member>
     <Member MemberName="IsCOMObject">
@@ -8854,6 +9229,7 @@ GetType(Array).IsAssignableFrom(type)
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Type.IsCOMObjectImpl" />
       </Docs>
     </Member>
     <Member MemberName="IsCOMObjectImpl">
@@ -8890,6 +9266,7 @@ GetType(Array).IsAssignableFrom(type)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Type.IsCOMObject" />
       </Docs>
     </Member>
     <Member MemberName="IsConstructedGenericType">
@@ -8977,6 +9354,7 @@ GetType(Array).IsAssignableFrom(type)
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Type.IsContextfulImpl" />
       </Docs>
     </Member>
     <Member MemberName="IsContextfulImpl">
@@ -9024,6 +9402,7 @@ GetType(Array).IsAssignableFrom(type)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Type.IsContextful" />
       </Docs>
     </Member>
     <Member MemberName="IsEnum">
@@ -9074,6 +9453,7 @@ GetType(Array).IsAssignableFrom(type)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.TypeAttributes" />
       </Docs>
     </Member>
     <Member MemberName="IsEnumDefined">
@@ -9206,6 +9586,10 @@ GetType(Array).IsAssignableFrom(type)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.TypeAttributes" />
+        <altmember cref="T:System.Runtime.InteropServices.StructLayoutAttribute" />
+        <altmember cref="P:System.Type.IsAutoLayout" />
+        <altmember cref="P:System.Type.IsLayoutSequential" />
       </Docs>
     </Member>
     <Member MemberName="IsGenericParameter">
@@ -9262,6 +9646,10 @@ GetType(Array).IsAssignableFrom(type)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Type.GenericParameterPosition" />
+        <altmember cref="M:System.Type.GetGenericArguments" />
+        <altmember cref="M:System.Type.GetGenericParameterConstraints" />
+        <altmember cref="P:System.Type.GenericParameterAttributes" />
       </Docs>
     </Member>
     <Member MemberName="IsGenericType">
@@ -9337,6 +9725,8 @@ GetType(Array).IsAssignableFrom(type)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Type.ContainsGenericParameters" />
+        <altmember cref="P:System.Type.IsGenericTypeDefinition" />
       </Docs>
     </Member>
     <Member MemberName="IsGenericTypeDefinition">
@@ -9385,6 +9775,8 @@ GetType(Array).IsAssignableFrom(type)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Type.ContainsGenericParameters" />
+        <altmember cref="M:System.Type.GetGenericTypeDefinition" />
       </Docs>
     </Member>
     <Member MemberName="IsImport">
@@ -9422,6 +9814,7 @@ GetType(Array).IsAssignableFrom(type)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.TypeAttributes" />
       </Docs>
     </Member>
     <Member MemberName="IsInstanceOfType">
@@ -9526,6 +9919,9 @@ GetType(Array).IsAssignableFrom(type)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.TypeAttributes" />
+        <altmember cref="P:System.Type.IsClass" />
+        <altmember cref="P:System.Type.IsValueType" />
       </Docs>
     </Member>
     <Member MemberName="IsLayoutSequential">
@@ -9581,6 +9977,9 @@ GetType(Array).IsAssignableFrom(type)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.TypeAttributes" />
+        <altmember cref="P:System.Type.IsAutoLayout" />
+        <altmember cref="P:System.Type.IsExplicitLayout" />
       </Docs>
     </Member>
     <Member MemberName="IsMarshalByRef">
@@ -9620,6 +10019,7 @@ GetType(Array).IsAssignableFrom(type)
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Type.IsMarshalByRefImpl" />
       </Docs>
     </Member>
     <Member MemberName="IsMarshalByRefImpl">
@@ -9665,6 +10065,7 @@ GetType(Array).IsAssignableFrom(type)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Type.IsMarshalByRef" />
       </Docs>
     </Member>
     <Member MemberName="IsNested">
@@ -9715,6 +10116,12 @@ GetType(Array).IsAssignableFrom(type)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Type.IsNestedAssembly" />
+        <altmember cref="P:System.Type.IsNestedFamily" />
+        <altmember cref="P:System.Type.IsNestedFamANDAssem" />
+        <altmember cref="P:System.Type.IsNestedFamORAssem" />
+        <altmember cref="P:System.Type.IsNestedPrivate" />
+        <altmember cref="P:System.Type.IsNestedPublic" />
       </Docs>
     </Member>
     <Member MemberName="IsNestedAssembly">
@@ -9760,6 +10167,7 @@ GetType(Array).IsAssignableFrom(type)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.TypeAttributes" />
       </Docs>
     </Member>
     <Member MemberName="IsNestedFamANDAssem">
@@ -9810,6 +10218,7 @@ GetType(Array).IsAssignableFrom(type)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.TypeAttributes" />
       </Docs>
     </Member>
     <Member MemberName="IsNestedFamily">
@@ -9857,6 +10266,7 @@ GetType(Array).IsAssignableFrom(type)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.TypeAttributes" />
       </Docs>
     </Member>
     <Member MemberName="IsNestedFamORAssem">
@@ -9906,6 +10316,7 @@ GetType(Array).IsAssignableFrom(type)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.TypeAttributes" />
       </Docs>
     </Member>
     <Member MemberName="IsNestedPrivate">
@@ -9951,6 +10362,7 @@ GetType(Array).IsAssignableFrom(type)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.TypeAttributes" />
       </Docs>
     </Member>
     <Member MemberName="IsNestedPublic">
@@ -9996,6 +10408,7 @@ GetType(Array).IsAssignableFrom(type)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.TypeAttributes" />
       </Docs>
     </Member>
     <Member MemberName="IsNotPublic">
@@ -10056,6 +10469,7 @@ GetType(Array).IsAssignableFrom(type)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.TypeAttributes" />
       </Docs>
     </Member>
     <Member MemberName="IsPointer">
@@ -10106,6 +10520,7 @@ GetType(Array).IsAssignableFrom(type)
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Type.IsPointerImpl" />
       </Docs>
     </Member>
     <Member MemberName="IsPointerImpl">
@@ -10135,6 +10550,7 @@ GetType(Array).IsAssignableFrom(type)
         <returns>
           <see langword="true" /> if the <see cref="T:System.Type" /> is a pointer; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Type.IsPointer" />
       </Docs>
     </Member>
     <Member MemberName="IsPrimitive">
@@ -10181,6 +10597,19 @@ GetType(Array).IsAssignableFrom(type)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Boolean" />
+        <altmember cref="T:System.Byte" />
+        <altmember cref="T:System.SByte" />
+        <altmember cref="T:System.Int16" />
+        <altmember cref="T:System.UInt16" />
+        <altmember cref="T:System.Int32" />
+        <altmember cref="T:System.UInt32" />
+        <altmember cref="T:System.Int64" />
+        <altmember cref="T:System.UInt64" />
+        <altmember cref="T:System.Char" />
+        <altmember cref="T:System.Double" />
+        <altmember cref="T:System.Single" />
+        <altmember cref="M:System.Type.IsPrimitiveImpl" />
       </Docs>
     </Member>
     <Member MemberName="IsPrimitiveImpl">
@@ -10226,6 +10655,19 @@ GetType(Array).IsAssignableFrom(type)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Boolean" />
+        <altmember cref="T:System.Byte" />
+        <altmember cref="T:System.SByte" />
+        <altmember cref="T:System.Int16" />
+        <altmember cref="T:System.UInt16" />
+        <altmember cref="T:System.Int32" />
+        <altmember cref="T:System.UInt32" />
+        <altmember cref="T:System.Int64" />
+        <altmember cref="T:System.UInt64" />
+        <altmember cref="T:System.Char" />
+        <altmember cref="T:System.Double" />
+        <altmember cref="T:System.Single" />
+        <altmember cref="P:System.Type.IsPrimitive" />
       </Docs>
     </Member>
     <Member MemberName="IsPublic">
@@ -10276,6 +10718,7 @@ GetType(Array).IsAssignableFrom(type)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.TypeAttributes" />
       </Docs>
     </Member>
     <Member MemberName="IsSealed">
@@ -10320,6 +10763,7 @@ GetType(Array).IsAssignableFrom(type)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.TypeAttributes" />
       </Docs>
     </Member>
     <Member MemberName="IsSecurityCritical">
@@ -10368,6 +10812,8 @@ GetType(Array).IsAssignableFrom(type)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Type.IsSecuritySafeCritical" />
+        <altmember cref="P:System.Type.IsSecurityTransparent" />
       </Docs>
     </Member>
     <Member MemberName="IsSecuritySafeCritical">
@@ -10416,6 +10862,8 @@ GetType(Array).IsAssignableFrom(type)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Type.IsSecurityCritical" />
+        <altmember cref="P:System.Type.IsSecurityTransparent" />
       </Docs>
     </Member>
     <Member MemberName="IsSecurityTransparent">
@@ -10458,6 +10906,8 @@ GetType(Array).IsAssignableFrom(type)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Type.IsSecurityCritical" />
+        <altmember cref="P:System.Type.IsSecuritySafeCritical" />
       </Docs>
     </Member>
     <Member MemberName="IsSerializable">
@@ -10507,6 +10957,8 @@ Types that are defined in the .NET Standard are not marked with <xref:System.Ser
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.TypeAttributes" />
+        <altmember cref="T:System.Runtime.Serialization.ISerializable" />
       </Docs>
     </Member>
     <Member MemberName="IsSpecialName">
@@ -10546,6 +10998,7 @@ Types that are defined in the .NET Standard are not marked with <xref:System.Ser
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.TypeAttributes" />
       </Docs>
     </Member>
     <Member MemberName="IsSubclassOf">
@@ -10620,6 +11073,7 @@ Types that are defined in the .NET Standard are not marked with <xref:System.Ser
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="c" /> is <see langword="null" />.</exception>
+        <altmember cref="P:System.Type.BaseType" />
       </Docs>
     </Member>
     <Member MemberName="IsSZArray">
@@ -10695,6 +11149,9 @@ Types that are defined in the .NET Standard are not marked with <xref:System.Ser
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.TypeAttributes" />
+        <altmember cref="P:System.Type.IsAnsiClass" />
+        <altmember cref="P:System.Type.IsAutoClass" />
       </Docs>
     </Member>
     <Member MemberName="IsValueType">
@@ -10745,6 +11202,11 @@ Types that are defined in the .NET Standard are not marked with <xref:System.Ser
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.TypeAttributes" />
+        <altmember cref="P:System.Type.IsClass" />
+        <altmember cref="P:System.Type.IsInterface" />
+        <altmember cref="T:System.ValueType" />
+        <altmember cref="M:System.Type.IsValueTypeImpl" />
       </Docs>
     </Member>
     <Member MemberName="IsValueTypeImpl">
@@ -10781,6 +11243,11 @@ Types that are defined in the .NET Standard are not marked with <xref:System.Ser
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.TypeAttributes" />
+        <altmember cref="P:System.Type.IsClass" />
+        <altmember cref="P:System.Type.IsInterface" />
+        <altmember cref="T:System.ValueType" />
+        <altmember cref="P:System.Type.IsValueType" />
       </Docs>
     </Member>
     <Member MemberName="IsVariableBoundArray">
@@ -10899,6 +11366,8 @@ Types that are defined in the .NET Standard are not marked with <xref:System.Ser
  -or-  
   
  The current type is a <see langword="ByRef" /> type. That is, <see cref="P:System.Type.IsByRef" /> returns <see langword="true" />.</exception>
+        <altmember cref="M:System.Type.MakeByRefType" />
+        <altmember cref="M:System.Type.MakePointerType" />
       </Docs>
     </Member>
     <Member MemberName="MakeArrayType">
@@ -10965,6 +11434,8 @@ Types that are defined in the .NET Standard are not marked with <xref:System.Ser
  -or-  
   
  <paramref name="rank" /> is greater than 32.</exception>
+        <altmember cref="M:System.Type.MakeByRefType" />
+        <altmember cref="M:System.Type.MakePointerType" />
       </Docs>
     </Member>
     <Member MemberName="MakeByRefType">
@@ -11021,6 +11492,8 @@ Types that are defined in the .NET Standard are not marked with <xref:System.Ser
  -or-  
   
  The current type is a <see langword="ByRef" /> type. That is, <see cref="P:System.Type.IsByRef" /> returns <see langword="true" />.</exception>
+        <altmember cref="M:System.Type.MakeArrayType" />
+        <altmember cref="M:System.Type.MakePointerType" />
       </Docs>
     </Member>
     <Member MemberName="MakeGenericType">
@@ -11150,6 +11623,8 @@ Types that are defined in the .NET Standard are not marked with <xref:System.Ser
   
  <paramref name="typeArguments" /> contains an element that is a pointer type (<see cref="P:System.Type.IsPointer" /> returns <see langword="true" />), a by-ref type (<see cref="P:System.Type.IsByRef" /> returns <see langword="true" />), or <see cref="T:System.Void" />.</exception>
         <exception cref="T:System.NotSupportedException">The invoked method is not supported in the base class. Derived classes must provide an implementation.</exception>
+        <altmember cref="P:System.Type.IsGenericTypeDefinition" />
+        <altmember cref="M:System.Type.GetGenericTypeDefinition" />
       </Docs>
     </Member>
     <Member MemberName="MakePointerType">
@@ -11206,6 +11681,8 @@ Types that are defined in the .NET Standard are not marked with <xref:System.Ser
  -or-  
   
  The current type is a <see langword="ByRef" /> type. That is, <see cref="P:System.Type.IsByRef" /> returns <see langword="true" />.</exception>
+        <altmember cref="M:System.Type.MakeByRefType" />
+        <altmember cref="M:System.Type.MakeArrayType" />
       </Docs>
     </Member>
     <Member MemberName="MemberType">
@@ -11253,6 +11730,7 @@ Types that are defined in the .NET Standard are not marked with <xref:System.Ser
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.MemberTypes" />
       </Docs>
     </Member>
     <Member MemberName="Missing">
@@ -11307,6 +11785,7 @@ Types that are defined in the .NET Standard are not marked with <xref:System.Ser
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.Missing" />
       </Docs>
     </Member>
     <Member MemberName="Module">
@@ -11352,6 +11831,7 @@ Types that are defined in the .NET Standard are not marked with <xref:System.Ser
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.Module" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -11424,6 +11904,9 @@ Types that are defined in the .NET Standard are not marked with <xref:System.Ser
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.String" />
+        <altmember cref="P:System.Type.FullName" />
+        <altmember cref="P:System.Type.AssemblyQualifiedName" />
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -11535,6 +12018,8 @@ Types that are defined in the .NET Standard are not marked with <xref:System.Ser
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.MemberInfo" />
+        <altmember cref="P:System.Type.DeclaringType" />
       </Docs>
     </Member>
     <Member MemberName="ReflectionOnlyGetType">
@@ -11632,6 +12117,12 @@ Types that are defined in the .NET Standard are not marked with <xref:System.Ser
  -or-  
   
  The assembly was compiled with a later version of the common language runtime than the version that is currently loaded.</exception>
+        <altmember cref="T:System.String" />
+        <altmember cref="T:System.TypeLoadException" />
+        <altmember cref="P:System.Type.AssemblyQualifiedName" />
+        <altmember cref="M:System.Reflection.Assembly.GetAssembly(System.Type)" />
+        <altmember cref="M:System.Reflection.Assembly.GetType(System.String)" />
+        <altmember cref="T:System.Reflection.AssemblyName" />
       </Docs>
     </Member>
     <Member MemberName="StructLayoutAttribute">
@@ -11676,6 +12167,7 @@ Types that are defined in the .NET Standard are not marked with <xref:System.Ser
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The invoked method is not supported in the base class.</exception>
+        <altmember cref="T:System.Runtime.InteropServices.StructLayoutAttribute" />
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.InteropServices._Type.GetIDsOfNames">
@@ -11877,6 +12369,7 @@ Types that are defined in the .NET Standard are not marked with <xref:System.Ser
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="TypeHandle">
@@ -11925,6 +12418,9 @@ Types that are defined in the .NET Standard are not marked with <xref:System.Ser
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The .NET Compact Framework does not currently support this property.</exception>
+        <altmember cref="T:System.RuntimeTypeHandle" />
+        <altmember cref="M:System.Type.GetTypeHandle(System.Object)" />
+        <altmember cref="M:System.Type.GetTypeFromHandle(System.RuntimeTypeHandle)" />
       </Docs>
     </Member>
     <Member MemberName="TypeInitializer">
@@ -11966,6 +12462,7 @@ Types that are defined in the .NET Standard are not marked with <xref:System.Ser
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.ConstructorInfo" />
       </Docs>
     </Member>
     <Member MemberName="UnderlyingSystemType">
@@ -11993,7 +12490,224 @@ Types that are defined in the .NET Standard are not marked with <xref:System.Ser
         <summary>Indicates the type provided by the common language runtime that represents this type.</summary>
         <value>The underlying system type for the <see cref="T:System.Type" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Type.BaseType" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetMember">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the specified members of the current <see cref="T:System.Type" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetNestedType">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a specific type nested within the current <see cref="T:System.Type" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetConstructor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a specific constructor of the current <see cref="T:System.Type" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetInterface">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a specific interface implemented or inherited by the current <see cref="T:System.Type" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetNestedTypes">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the types nested within the current <see cref="T:System.Type" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetMethods">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the methods of the current <see cref="T:System.Type" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetTypeFromCLSID">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the type associated with the specified class identifier (CLSID).</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetProperties">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the properties of the current <see cref="T:System.Type" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="MakeArrayType">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.Type" /> object that represents an array of the current type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetProperty">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a specific property of the current <see cref="T:System.Type" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetType">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Type" /> object that represents the specified type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines if the underlying system type of the current <see cref="T:System.Type" /> is the same as the underlying system type of the specified <see cref="T:System.Object" /> or <see cref="T:System.Type" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetConstructors">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the constructors of the current <see cref="T:System.Type" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetField">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a specific field of the current <see cref="T:System.Type" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="InvokeMember">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invokes a specific member of the current <see cref="T:System.Type" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetMethod">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a specific method of the current <see cref="T:System.Type" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetMembers">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the members (properties, methods, fields, events, and so on) of the current <see cref="T:System.Type" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetTypeFromProgID">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the type associated with the specified program identifier (ProgID).</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetFields">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the fields of the current <see cref="T:System.Type" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetEvents">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the events that are declared or inherited by the current <see cref="T:System.Type" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetEvent">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a specific event declared or inherited by the current <see cref="T:System.Type" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

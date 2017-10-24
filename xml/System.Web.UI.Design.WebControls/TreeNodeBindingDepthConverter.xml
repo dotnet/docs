@@ -13,6 +13,8 @@
   <Docs>
     <summary>Provides a type converter to convert the <see cref="P:System.Web.UI.WebControls.TreeNodeBinding.Depth" /> property to and from other representations.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Web.UI.WebControls.TreeNodeBinding" />
+    <altmember cref="T:System.ComponentModel.Int32Converter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +30,7 @@
       <Docs>
         <summary>Creates a new instance of the <see cref="T:System.Web.UI.Design.WebControls.TreeNodeBindingDepthConverter" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeNodeBinding" />
       </Docs>
     </Member>
     <Member MemberName="ConvertFrom">
@@ -54,6 +57,7 @@
         <summary>Converts the given value to the type of this converter using the provided context and culture information.</summary>
         <returns>An object that represents the converted value.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeNodeBinding" />
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -82,6 +86,7 @@
         <summary>Converts the object to the specified type using the provided context and culture information.</summary>
         <returns>An object that represents the converted value.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeNodeBinding" />
       </Docs>
     </Member>
   </Members>

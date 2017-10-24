@@ -109,6 +109,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.LinqDataSource.EnableDelete" />
       </Docs>
     </Member>
     <Member MemberName="CanInsert">
@@ -135,6 +136,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.LinqDataSource.EnableInsert" />
       </Docs>
     </Member>
     <Member MemberName="CanPage">
@@ -161,6 +163,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.LinqDataSource.AutoPage" />
       </Docs>
     </Member>
     <Member MemberName="CanRetrieveTotalRowCount">
@@ -213,6 +216,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.DataSourceSelectArguments.SortExpression" />
+        <altmember cref="P:System.Web.UI.WebControls.LinqDataSource.AutoSort" />
       </Docs>
     </Member>
     <Member MemberName="CanUpdate">
@@ -239,6 +244,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.LinqDataSource.EnableUpdate" />
       </Docs>
     </Member>
     <Member MemberName="ContextCreated">
@@ -361,6 +367,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.LinqDataSource.ContextTypeName" />
       </Docs>
     </Member>
     <Member MemberName="CreateContext">
@@ -429,6 +436,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.LinqDataSource.Deleted" />
+        <altmember cref="E:System.Web.UI.WebControls.LinqDataSourceView.Deleting" />
       </Docs>
     </Member>
     <Member MemberName="DeleteDataObject">
@@ -502,6 +511,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.LinqDataSourceView.Deleted" />
       </Docs>
     </Member>
     <Member MemberName="DisposeContext">
@@ -709,6 +719,7 @@
         <summary>Performs a data retrieval operation.</summary>
         <returns>A list of data objects or rows.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.WebControls.LinqDataSourceView.Select(System.Web.UI.DataSourceSelectArguments)" />
       </Docs>
     </Member>
     <Member MemberName="ExecuteUpdate">
@@ -742,6 +753,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.LinqDataSourceView.Update(System.Collections.IDictionary,System.Collections.IDictionary,System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="GetSource">
@@ -858,6 +870,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.LinqDataSourceView.Insert(System.Collections.IDictionary)" />
+        <altmember cref="E:System.Web.UI.WebControls.LinqDataSourceView.Inserting" />
       </Docs>
     </Member>
     <Member MemberName="Inserting">
@@ -882,6 +896,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.LinqDataSourceView.Insert(System.Collections.IDictionary)" />
+        <altmember cref="E:System.Web.UI.WebControls.LinqDataSourceView.Inserted" />
       </Docs>
     </Member>
     <Member MemberName="InsertObject">
@@ -925,6 +941,7 @@
         <param name="e">The event data.</param>
         <summary>Raises the <see cref="E:System.Web.UI.WebControls.LinqDataSourceView.ContextCreated" /> event</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Web.UI.WebControls.LinqDataSource.ContextCreated" />
       </Docs>
     </Member>
     <Member MemberName="OnContextCreating">
@@ -946,6 +963,7 @@
         <param name="e">The event data.</param>
         <summary>Raises the <see cref="E:System.Web.UI.WebControls.LinqDataSourceView.ContextCreating" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Web.UI.WebControls.LinqDataSource.ContextCreating" />
       </Docs>
     </Member>
     <Member MemberName="OnContextDisposing">
@@ -967,6 +985,7 @@
         <param name="e">The event data.</param>
         <summary>Raises the <see cref="E:System.Web.UI.WebControls.LinqDataSourceView.ContextDisposing" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Web.UI.WebControls.LinqDataSource.ContextDisposing" />
       </Docs>
     </Member>
     <Member MemberName="OnDeleted">
@@ -1000,6 +1019,7 @@
         <block subset="none" type="overrides">
           <para>When you override the <see cref="M:System.Web.UI.WebControls.LinqDataSourceView.OnDeleted(System.Web.UI.WebControls.LinqDataSourceStatusEventArgs)" /> method in a derived class, make sure that you call the <see cref="M:System.Web.UI.WebControls.LinqDataSourceView.OnDeleted(System.Web.UI.WebControls.LinqDataSourceStatusEventArgs)" /> method for the base class so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.LinqDataSource.Deleted" />
       </Docs>
     </Member>
     <Member MemberName="OnDeleting">
@@ -1033,6 +1053,7 @@
         <block subset="none" type="overrides">
           <para>When you override the <see cref="M:System.Web.UI.WebControls.LinqDataSourceView.OnDeleting(System.Web.UI.WebControls.LinqDataSourceDeleteEventArgs)" /> method in a derived class, make sure that you call the <see cref="M:System.Web.UI.WebControls.LinqDataSourceView.OnDeleting(System.Web.UI.WebControls.LinqDataSourceDeleteEventArgs)" /> method for the base class so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.LinqDataSource.Deleting" />
       </Docs>
     </Member>
     <Member MemberName="OnException">
@@ -1335,6 +1356,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.LinqDataSource.Selected" />
+        <altmember cref="E:System.Web.UI.WebControls.LinqDataSourceView.Selecting" />
       </Docs>
     </Member>
     <Member MemberName="Selecting">
@@ -1359,6 +1382,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.LinqDataSourceView.Selected" />
       </Docs>
     </Member>
     <Member MemberName="StoreOriginalValues">
@@ -1455,6 +1479,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.LinqDataSource.Updated" />
+        <altmember cref="E:System.Web.UI.WebControls.LinqDataSourceView.Updating" />
       </Docs>
     </Member>
     <Member MemberName="UpdateDataObject">
@@ -1530,6 +1556,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.LinqDataSourceView.Updated" />
       </Docs>
     </Member>
     <Member MemberName="ValidateContextType">
@@ -1703,5 +1730,14 @@
         <exception cref="T:System.NotSupportedException">The update operation is not supported.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateContext">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an instance of the data context type.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -39,6 +39,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.PageSetupDialog" />
+    <altmember cref="T:System.Windows.Forms.PrintPreviewDialog" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -74,6 +76,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Printing.PrintDocument" />
+        <altmember cref="T:System.Drawing.Printing.PrinterSettings" />
+        <altmember cref="T:System.Windows.Forms.CommonDialog" />
       </Docs>
     </Member>
     <Member MemberName="AllowCurrentPage">
@@ -129,6 +134,9 @@
         <value>
           <see langword="true" /> if the **Print to file** check box is enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.PrintDialog.AllowSomePages" />
+        <altmember cref="P:System.Windows.Forms.PrintDialog.AllowSelection" />
+        <altmember cref="P:System.Windows.Forms.PrintDialog.PrintToFile" />
       </Docs>
     </Member>
     <Member MemberName="AllowSelection">
@@ -153,6 +161,8 @@
         <value>
           <see langword="true" /> if the **Selection** option button is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.PrintDialog.AllowSomePages" />
+        <altmember cref="P:System.Windows.Forms.PrintDialog.AllowPrintToFile" />
       </Docs>
     </Member>
     <Member MemberName="AllowSomePages">
@@ -188,6 +198,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.PrintDialog.AllowPrintToFile" />
+        <altmember cref="P:System.Windows.Forms.PrintDialog.AllowSelection" />
       </Docs>
     </Member>
     <Member MemberName="Document">
@@ -222,6 +234,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Printing.PrintDocument" />
       </Docs>
     </Member>
     <Member MemberName="PrinterSettings">
@@ -258,6 +271,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Printing.PrinterSettings" />
       </Docs>
     </Member>
     <Member MemberName="PrintToFile">
@@ -362,6 +376,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.PrintDialog.ShowNetwork" />
       </Docs>
     </Member>
     <Member MemberName="ShowNetwork">
@@ -393,6 +408,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.PrintDialog.ShowHelp" />
       </Docs>
     </Member>
     <Member MemberName="UseEXDialog">

@@ -75,6 +75,7 @@
         <param name="attribute">A <see cref="T:System.Security.Cryptography.CryptographicAttributeObject" /> object that is added to the collection.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.CryptographicAttributeObjectCollection" /> class, adding a specified <see cref="T:System.Security.Cryptography.CryptographicAttributeObject" /> to the collection.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Security.Cryptography.CryptographicAttributeObject" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -107,6 +108,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="asnEncodedData" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Security.Cryptography.CryptographicException">A cryptographic operation could not be completed.</exception>
+        <altmember cref="T:System.Security.Cryptography.AsnEncodedData" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -147,6 +149,7 @@
           <paramref name="asnEncodedData" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Security.Cryptography.CryptographicException">A cryptographic operation could not be completed.</exception>
         <exception cref="T:System.InvalidOperationException">The specified item already exists in the collection.</exception>
+        <altmember cref="T:System.Security.Cryptography.CryptographicAttributeObject" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -180,6 +183,7 @@
         <exception cref="T:System.ArgumentNullException">
           <see langword="null" /> was passed to a method that does not accept it as a valid argument.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The value of an argument was outside the allowable range of values as defined by the called method.</exception>
+        <altmember cref="T:System.Security.Cryptography.CryptographicAttributeObject" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -285,6 +289,7 @@
         <summary>Gets the <see cref="T:System.Security.Cryptography.CryptographicAttributeObject" /> object at the specified index in the collection.</summary>
         <value>The <see cref="T:System.Security.Cryptography.CryptographicAttributeObject" /> object at the specified index.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Security.Cryptography.CryptographicAttributeObject" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -314,6 +319,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="attribute" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Security.Cryptography.CryptographicAttributeObject" />
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -333,6 +339,7 @@
         <summary>Gets an <see cref="T:System.Object" /> object used to synchronize access to the collection.</summary>
         <value>An <see cref="T:System.Object" /> object used to synchronize access to the <see cref="T:System.Security.Cryptography.CryptographicAttributeObjectCollection" /> collection.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Security.Cryptography.CryptographicAttributeObjectCollection" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -427,5 +434,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds an object to the collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.CryptographicAttributeObjectCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

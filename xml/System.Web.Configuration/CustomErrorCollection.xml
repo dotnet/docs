@@ -46,6 +46,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Configuration.CustomError" />
+    <altmember cref="T:System.Web.Configuration.CustomErrorsSection" />
+    <altmember cref="T:System.Web.Configuration.CustomErrorsMode" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -519,5 +522,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Get">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the specified <see cref="T:System.Web.Configuration.CustomError" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the specified <see cref="T:System.Web.Configuration.CustomError" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

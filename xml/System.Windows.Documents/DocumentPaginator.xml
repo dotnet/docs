@@ -288,6 +288,7 @@
       <Docs>
         <summary>Occurs when <see cref="Overload:System.Windows.Documents.DocumentPaginator.GetPageAsync" /> has completed.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Documents.GetPageCompletedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="IsPageCountValid">
@@ -309,6 +310,7 @@
   
  This value may revert to <see langword="false" />, after being <see langword="true" />, if <see cref="P:System.Windows.Documents.DocumentPaginator.PageSize" /> or content changes; because those events would force a repagination.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Documents.DocumentPaginator.PageCount" />
       </Docs>
     </Member>
     <Member MemberName="OnComputePageCountCompleted">
@@ -401,6 +403,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Documents.DynamicDocumentPaginator.PaginationCompleted" />
       </Docs>
     </Member>
     <Member MemberName="PagesChanged">
@@ -418,6 +421,7 @@
       <Docs>
         <summary>Occurs when the document content is changed.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Documents.PagesChangedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="PageSize">
@@ -478,5 +482,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ComputePageCountAsync">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Asynchronously, forces a pagination of the content, updates <see cref="P:System.Windows.Documents.DocumentPaginator.PageCount" /> with the new total, and sets <see cref="P:System.Windows.Documents.DocumentPaginator.IsPageCountValid" /> to <see langword="true" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetPageAsync">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Asynchronously returns the <see cref="T:System.Windows.Documents.DocumentPage" /> for the specified page number.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

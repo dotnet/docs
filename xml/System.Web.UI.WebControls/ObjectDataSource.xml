@@ -595,6 +595,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.IDataSource" />
+    <altmember cref="T:System.Web.UI.DataSourceControl" />
+    <altmember cref="T:System.Web.UI.WebControls.ObjectDataSourceView" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -637,6 +640,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.TypeName" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.SelectMethod" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.SelectParameters" />
       </Docs>
     </Member>
     <Member MemberName="CacheDuration">
@@ -691,6 +697,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.CacheExpirationPolicy" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.EnableCaching" />
       </Docs>
     </Member>
     <Member MemberName="CacheExpirationPolicy">
@@ -740,6 +748,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.CacheDuration" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.EnableCaching" />
       </Docs>
     </Member>
     <Member MemberName="CacheKeyDependency">
@@ -802,6 +812,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Caching.SqlCacheDependency" />
       </Docs>
     </Member>
     <Member MemberName="ConflictDetection">
@@ -836,6 +847,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ConflictOptions" />
       </Docs>
     </Member>
     <Member MemberName="ConvertNullToDBNull">
@@ -867,6 +879,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.DBNull.Value" />
+        <altmember cref="T:System.Web.UI.WebControls.ObjectDataSource" />
       </Docs>
     </Member>
     <Member MemberName="DataObjectTypeName">
@@ -953,6 +967,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.DeleteMethod" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.DeleteParameters" />
       </Docs>
     </Member>
     <Member MemberName="Deleted">
@@ -998,6 +1014,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.Deleting" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnDeleted(System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSource.Delete" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.DeleteParameters" />
       </Docs>
     </Member>
     <Member MemberName="DeleteMethod">
@@ -1068,6 +1088,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSource.Delete" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.DeleteParameters" />
       </Docs>
     </Member>
     <Member MemberName="DeleteParameters">
@@ -1130,6 +1152,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.DeleteMethod" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSource.Delete" />
       </Docs>
     </Member>
     <Member MemberName="Deleting">
@@ -1175,6 +1199,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.Deleted" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnDeleting(System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSource.Delete" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.DeleteParameters" />
       </Docs>
     </Member>
     <Member MemberName="EnableCaching">
@@ -1231,6 +1259,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="P:System.Web.UI.WebControls.ObjectDataSource.EnableCaching" /> property is set to <see langword="true" /> when the method specified by the <see cref="P:System.Web.UI.WebControls.ObjectDataSource.SelectMethod" /> property returns a <see cref="T:System.Data.Common.DbDataReader" />.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.CacheDuration" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.CacheExpirationPolicy" />
       </Docs>
     </Member>
     <Member MemberName="EnablePaging">
@@ -1286,6 +1316,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.StartRowIndexParameterName" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.MaximumRowsParameterName" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.CanPage" />
       </Docs>
     </Member>
     <Member MemberName="FilterExpression">
@@ -1354,6 +1387,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="P:System.Web.UI.WebControls.ObjectDataSource.FilterExpression" /> property was set and the <see cref="M:System.Web.UI.WebControls.ObjectDataSource.Select" /> method does not return a <see cref="T:System.Data.DataSet" /> or <see cref="T:System.Data.DataTable" />.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.FilterParameters" />
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.Filtering" />
       </Docs>
     </Member>
     <Member MemberName="Filtering">
@@ -1385,6 +1420,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.FilterExpression" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.FilterParameters" />
       </Docs>
     </Member>
     <Member MemberName="FilterParameters">
@@ -1459,6 +1496,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">You set the <see cref="P:System.Web.UI.WebControls.ObjectDataSource.FilterExpression" /> property and the <see cref="M:System.Web.UI.WebControls.ObjectDataSource.Select" /> method does not return a <see cref="T:System.Data.DataSet" /> or <see cref="T:System.Data.DataTable" />.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.FilterExpression" />
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.Filtering" />
       </Docs>
     </Member>
     <Member MemberName="GetView">
@@ -1491,6 +1530,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The specified <paramref name="viewName" /> is <see langword="null" /> or something other than <see langword="DefaultView" />.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.ObjectDataSourceView" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSource.GetViewNames" />
       </Docs>
     </Member>
     <Member MemberName="GetViewNames">
@@ -1519,6 +1560,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSource.GetView(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -1552,6 +1594,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.InsertMethod" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.InsertParameters" />
       </Docs>
     </Member>
     <Member MemberName="Inserted">
@@ -1578,6 +1622,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.Inserting" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnInserted(System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSource.Insert" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.InsertParameters" />
       </Docs>
     </Member>
     <Member MemberName="Inserting">
@@ -1629,6 +1677,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.Inserted" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnInserting(System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSource.Insert" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.InsertParameters" />
       </Docs>
     </Member>
     <Member MemberName="InsertMethod">
@@ -1708,6 +1760,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.InsertParameters" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSource.Insert" />
       </Docs>
     </Member>
     <Member MemberName="InsertParameters">
@@ -1775,6 +1829,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.InsertMethod" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSource.Insert" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -1860,6 +1916,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.StartRowIndexParameterName" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.EnablePaging" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.CanPage" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSource.Select" />
       </Docs>
     </Member>
     <Member MemberName="ObjectCreated">
@@ -1888,6 +1948,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.ObjectCreating" />
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.ObjectDisposing" />
       </Docs>
     </Member>
     <Member MemberName="ObjectCreating">
@@ -1936,6 +1998,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnObjectCreating(System.Web.UI.WebControls.ObjectDataSourceEventArgs)" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.TypeName" />
       </Docs>
     </Member>
     <Member MemberName="ObjectDisposing">
@@ -1998,6 +2062,7 @@ public void ExampleObjectDisposing(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.ObjectCreated" />
       </Docs>
     </Member>
     <Member MemberName="OldValuesParameterFormatString">
@@ -2036,6 +2101,7 @@ public void ExampleObjectDisposing(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.ConflictDetection" />
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -2069,6 +2135,8 @@ public void ExampleObjectDisposing(object sender,
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.ObjectDataSource.OnInit(System.EventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.Control.OnInit(System.EventArgs)" /> method for the base class so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.ObjectDataSource" />
+        <altmember cref="M:System.Web.UI.Control.OnInit(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ParsingCulture">
@@ -2092,6 +2160,7 @@ public void ExampleObjectDisposing(object sender,
         <summary>Gets a or sets a value that indicates what culture information is used when converting string values to actual property types in order to construct an object of the type indicated by <see cref="P:System.Web.UI.WebControls.ObjectDataSource.DataObjectTypeName" />.</summary>
         <value>The culture information. The default value is <see cref="F:System.Web.UI.WebControls.ParsingCulture.Invariant" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Globalization.CultureInfo" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -2111,6 +2180,8 @@ public void ExampleObjectDisposing(object sender,
         <summary>Saves the state of the <see cref="T:System.Web.UI.WebControls.ObjectDataSource" /> control.</summary>
         <returns>Returns the server control's current view state; otherwise, returns <see langword="null" />, if there is no view state associated with the control.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.IStateManager.SaveViewState" />
+        <altmember cref="T:System.Web.UI.WebControls.ObjectDataSource" />
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -2165,6 +2236,8 @@ public void ExampleObjectDisposing(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.SelectMethod" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.SelectParameters" />
       </Docs>
     </Member>
     <Member MemberName="SelectCountMethod">
@@ -2217,6 +2290,10 @@ public void ExampleObjectDisposing(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSource.Select" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.SelectMethod" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.EnablePaging" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.CanRetrieveTotalRowCount" />
       </Docs>
     </Member>
     <Member MemberName="Selected">
@@ -2263,6 +2340,10 @@ public void ExampleObjectDisposing(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.Selecting" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnSelected(System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSource.Select" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.SelectParameters" />
       </Docs>
     </Member>
     <Member MemberName="Selecting">
@@ -2291,6 +2372,10 @@ public void ExampleObjectDisposing(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.Selected" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnSelecting(System.Web.UI.WebControls.SqlDataSourceSelectingEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSource.Select" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.SelectParameters" />
       </Docs>
     </Member>
     <Member MemberName="SelectMethod">
@@ -2361,6 +2446,8 @@ public void ExampleObjectDisposing(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.SelectParameters" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSource.Select" />
       </Docs>
     </Member>
     <Member MemberName="SelectParameters">
@@ -2427,6 +2514,8 @@ public void ExampleObjectDisposing(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.SelectMethod" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSource.Select" />
       </Docs>
     </Member>
     <Member MemberName="SortParameterName">
@@ -2476,6 +2565,8 @@ public void ExampleObjectDisposing(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSource.Select" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.CanSort" />
       </Docs>
     </Member>
     <Member MemberName="SqlCacheDependency">
@@ -2527,6 +2618,7 @@ public void ExampleObjectDisposing(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Caching.SqlCacheDependency" />
       </Docs>
     </Member>
     <Member MemberName="StartRowIndexParameterName">
@@ -2579,6 +2671,10 @@ public void ExampleObjectDisposing(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.MaximumRowsParameterName" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.EnablePaging" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.CanPage" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSource.Select" />
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -2604,6 +2700,8 @@ public void ExampleObjectDisposing(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IStateManager.TrackViewState" />
+        <altmember cref="T:System.Web.UI.WebControls.ObjectDataSource" />
       </Docs>
     </Member>
     <Member MemberName="TypeName">
@@ -2705,6 +2803,8 @@ public void ExampleObjectDisposing(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.UpdateMethod" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.UpdateParameters" />
       </Docs>
     </Member>
     <Member MemberName="Updated">
@@ -2731,6 +2831,10 @@ public void ExampleObjectDisposing(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.Updating" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnUpdated(System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSource.Update" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.UpdateParameters" />
       </Docs>
     </Member>
     <Member MemberName="UpdateMethod">
@@ -2807,6 +2911,8 @@ public void ExampleObjectDisposing(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.UpdateParameters" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSource.Update" />
       </Docs>
     </Member>
     <Member MemberName="UpdateParameters">
@@ -2871,6 +2977,8 @@ public void ExampleObjectDisposing(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.UpdateMethod" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSource.Update" />
       </Docs>
     </Member>
     <Member MemberName="Updating">
@@ -2917,7 +3025,20 @@ public void ExampleObjectDisposing(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.Updated" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnUpdating(System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.ObjectDataSource.Update" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.UpdateParameters" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.ObjectDataSource" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

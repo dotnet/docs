@@ -804,6 +804,7 @@ public void ReadOracleTypesExample(string connectionString)
         <summary>Gets the name of the specified column.</summary>
         <returns>A string that is the name of the specified column.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Data.OracleClient.OracleDataReader.GetOrdinal(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetOracleBFile">
@@ -1648,5 +1649,14 @@ public void ReadOracleData(string connectionString)
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the value of a column in its native format.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

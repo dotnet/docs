@@ -1804,5 +1804,17 @@ public class GoodController : ApiController
         <exception cref="T:System.ObjectDisposedException">The current instance has been disposed.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DeleteAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Send a DELETE request to the specified Uri as an asynchronous operation.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -34,6 +34,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Xaml.XamlXmlWriter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -460,5 +461,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetSerializerFor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Markup.ValueSerializer" /> for an object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

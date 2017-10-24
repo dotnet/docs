@@ -571,5 +571,56 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <exception cref="T:System.DirectoryServices.Protocols.LdapException">Thrown if it fails to create a connection block or fails to open a connection to server.</exception>
+        <summary>Creates an instance of the <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SendRequest">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends a single <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> as an LDAP v3 operation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginSendRequest">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends data asynchronously to the server.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Closes and optionally releases the LDAP handle.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Bind">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends an LDAP bind.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

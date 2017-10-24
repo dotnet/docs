@@ -45,6 +45,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Compilation.CompilerType" />
+    <altmember cref="T:System.Web.Compilation.ClientBuildManager" />
+    <altmember cref="T:System.Web.Compilation.AssemblyBuilder" />
+    <altmember cref="T:System.Web.Configuration.BuildProvider" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -106,6 +110,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Compilation.CompilerType" />
       </Docs>
     </Member>
     <Member MemberName="GenerateCode">
@@ -146,6 +151,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.Compilation.BuildProvider.OpenReader" />
+        <altmember cref="Overload:System.Web.Compilation.BuildProvider.OpenStream" />
+        <altmember cref="T:System.Web.Compilation.AssemblyBuilder" />
       </Docs>
     </Member>
     <Member MemberName="GetCodeCompileUnit">
@@ -208,6 +216,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.CodeDom.Compiler.CompilerResults" />
+        <altmember cref="M:System.Web.Compilation.BuildManager.GetCompiledCustomString(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetDefaultCompilerType">
@@ -238,6 +248,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Compilation.CompilerType" />
+        <altmember cref="M:System.Web.Compilation.BuildProvider.GetDefaultCompilerTypeForLanguage(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetDefaultCompilerTypeForLanguage">
@@ -275,6 +287,10 @@
           <paramref name="language" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Web.HttpException">
           <paramref name="language" /> does not match a configured compiler for the build provider.</exception>
+        <altmember cref="T:System.Web.Compilation.CompilerType" />
+        <altmember cref="M:System.Web.Compilation.BuildProvider.GetDefaultCompilerType" />
+        <altmember cref="P:System.Web.Configuration.CompilationSection.Compilers" />
+        <altmember cref="T:System.Web.Configuration.Compiler" />
       </Docs>
     </Member>
     <Member MemberName="GetGeneratedType">
@@ -306,6 +322,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.CodeDom.Compiler.CompilerResults" />
       </Docs>
     </Member>
     <Member MemberName="GetResultFlags">
@@ -339,6 +356,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.CodeDom.Compiler.CompilerResults" />
+        <altmember cref="T:System.Web.Compilation.BuildProviderResultFlags" />
       </Docs>
     </Member>
     <Member MemberName="OpenReader">
@@ -367,6 +386,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextReader" />
+        <altmember cref="P:System.Web.Compilation.BuildProvider.VirtualPath" />
       </Docs>
     </Member>
     <Member MemberName="OpenReader">
@@ -398,6 +419,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextReader" />
       </Docs>
     </Member>
     <Member MemberName="OpenStream">
@@ -426,6 +448,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.Stream" />
+        <altmember cref="P:System.Web.Compilation.BuildProvider.VirtualPath" />
       </Docs>
     </Member>
     <Member MemberName="OpenStream">
@@ -457,6 +481,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.Stream" />
       </Docs>
     </Member>
     <Member MemberName="ProcessCompileErrors">
@@ -516,6 +541,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.Compilation.AssemblyBuilder.AddAssemblyReference(System.Reflection.Assembly)" />
+        <altmember cref="P:System.Web.Compilation.BuildProvider.VirtualPathDependencies" />
       </Docs>
     </Member>
     <Member MemberName="RegisterBuildProvider">
@@ -575,6 +602,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Hosting.VirtualFile" />
+        <altmember cref="P:System.Web.Hosting.VirtualFileBase.VirtualPath" />
       </Docs>
     </Member>
     <Member MemberName="VirtualPathDependencies">
@@ -600,7 +629,27 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Hosting.VirtualFile" />
+        <altmember cref="P:System.Web.Hosting.VirtualFileBase.VirtualPath" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="OpenStream">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens a stream for reading from a virtual path.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OpenReader">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens a text reader for reading from a virtual path.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

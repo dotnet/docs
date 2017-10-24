@@ -35,6 +35,8 @@
     <block subset="none" type="overrides">
       <para>When you inherit from <see cref="T:System.Web.UI.HierarchicalDataSourceView" />, you must override the following member: <see cref="M:System.Web.UI.HierarchicalDataSourceView.Select" />.</para>
     </block>
+    <altmember cref="T:System.Web.UI.DataSourceView" />
+    <altmember cref="T:System.Web.UI.HierarchicalDataSourceControl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -84,6 +86,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEnumerable" />
+        <altmember cref="T:System.Web.UI.IHierarchicalEnumerable" />
       </Docs>
     </Member>
   </Members>

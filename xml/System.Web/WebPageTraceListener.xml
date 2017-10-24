@@ -83,6 +83,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.WebPageTraceListener.Write" />
+        <altmember cref="Overload:System.Web.WebPageTraceListener.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="TraceEvent">
@@ -127,6 +129,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.WebPageTraceListener.Write" />
+        <altmember cref="Overload:System.Web.WebPageTraceListener.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -155,6 +159,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.TraceContext" />
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.EventLogTraceListener" />
+        <altmember cref="T:System.Diagnostics.TextWriterTraceListener" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -185,6 +195,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.TraceContext" />
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.EventLogTraceListener" />
+        <altmember cref="T:System.Diagnostics.TextWriterTraceListener" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -245,5 +261,32 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TraceEvent">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes an event message to a Web page or to the ASP.NET trace viewer.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Write">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a message to a Web page or to the ASP.NET trace viewer.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteLine">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a message to a Web page or to the ASP.NET trace viewer.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

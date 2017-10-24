@@ -34,6 +34,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Configuration.MachineKeySection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,6 +50,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ViewStateException" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.Configuration.MachineKeySection" />
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -106,6 +108,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.HttpResponse" />
       </Docs>
     </Member>
     <Member MemberName="Message">

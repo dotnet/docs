@@ -30,6 +30,8 @@
     </remarks>
     <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="T:System.ComponentModel.TypeConverter" />
+    <altmember cref="T:System.ComponentModel.TypeConverterAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -54,6 +56,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.TypeConverter" />
+        <altmember cref="T:System.ComponentModel.TypeConverterAttribute" />
       </Docs>
     </Member>
     <Member MemberName="CanConvertFrom">
@@ -88,6 +92,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.TypeConverter" />
+        <altmember cref="T:System.ComponentModel.TypeConverterAttribute" />
       </Docs>
     </Member>
     <Member MemberName="ConvertFrom">
@@ -125,6 +131,8 @@
         </remarks>
         <exception cref="M:System.ComponentModel.TypeConverter.GetConvertFromException(System.Object)">
           <paramref name="object" /> is not <see langword="null" /> and is not a string.</exception>
+        <altmember cref="T:System.ComponentModel.TypeConverter" />
+        <altmember cref="T:System.ComponentModel.TypeConverterAttribute" />
       </Docs>
     </Member>
     <Member MemberName="GetStandardValues">
@@ -156,6 +164,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.TypeConverter" />
+        <altmember cref="T:System.ComponentModel.TypeConverterAttribute" />
       </Docs>
     </Member>
     <Member MemberName="GetStandardValuesExclusive">
@@ -189,6 +199,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.TypeConverter" />
+        <altmember cref="T:System.ComponentModel.TypeConverterAttribute" />
       </Docs>
     </Member>
     <Member MemberName="GetStandardValuesSupported">
@@ -221,6 +233,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.TypeConverter" />
+        <altmember cref="T:System.ComponentModel.TypeConverterAttribute" />
       </Docs>
     </Member>
   </Members>

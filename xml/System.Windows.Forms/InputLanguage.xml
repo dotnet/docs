@@ -68,6 +68,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Globalization.CultureInfo" />
+        <altmember cref="P:System.Windows.Forms.InputLanguage.InstalledInputLanguages" />
       </Docs>
     </Member>
     <Member MemberName="CurrentInputLanguage">
@@ -99,6 +101,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The input language is not recognized by the system.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="P:System.Windows.Forms.InputLanguage.DefaultInputLanguage" />
       </Docs>
     </Member>
     <Member MemberName="DefaultInputLanguage">
@@ -128,6 +131,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.InputLanguage.CurrentInputLanguage" />
+        <altmember cref="M:System.Windows.Forms.InputLanguage.Equals(System.Object)" />
+        <altmember cref="P:System.Windows.Forms.InputLanguage.LayoutName" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -206,6 +212,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.InputLanguage.DefaultInputLanguage" />
+        <altmember cref="P:System.Windows.Forms.InputLanguage.CurrentInputLanguage" />
+        <altmember cref="M:System.Windows.Forms.InputLanguage.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -254,6 +263,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.InputLanguage.CurrentInputLanguage" />
       </Docs>
     </Member>
     <Member MemberName="InstalledInputLanguages">
@@ -285,6 +295,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.InputLanguage.LayoutName" />
       </Docs>
     </Member>
     <Member MemberName="LayoutName">
@@ -316,6 +327,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.InputLanguage.CurrentInputLanguage" />
       </Docs>
     </Member>
   </Members>

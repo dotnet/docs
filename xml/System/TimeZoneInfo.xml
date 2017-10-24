@@ -135,6 +135,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.TimeZoneInfo.GetUtcOffset" />
       </Docs>
     </Member>
     <Member MemberName="ClearCachedData">
@@ -412,6 +413,7 @@
         <block subset="none" type="usage">
           <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method applies only the current adjustment rule when performing the conversion if <paramref name="dateTime" /> is treated as a local time, if <paramref name="sourceTimeZone" /> is <see cref="P:System.TimeZoneInfo.Local" />, or if <paramref name="destinationTimeZone" /> is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately convert times for periods before the current adjustment rule came into effect. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
         </block>
+        <altmember cref="Overload:System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId" />
       </Docs>
     </Member>
     <Member MemberName="ConvertTimeBySystemTimeZoneId">
@@ -1402,6 +1404,7 @@
         <exception cref="T:System.TimeZoneNotFoundException">The time zone identifier specified by <paramref name="id" /> was not found. This means that a registry key whose name matches <paramref name="id" /> does not exist, or that the key exists but does not contain any time zone data.</exception>
         <exception cref="T:System.Security.SecurityException">The process does not have the permissions required to read from the registry key that contains the time zone information.</exception>
         <exception cref="T:System.InvalidTimeZoneException">The time zone identifier was found, but the registry data is corrupted.</exception>
+        <altmember cref="P:System.TimeZoneInfo.Id" />
       </Docs>
     </Member>
     <Member MemberName="FromSerializedString">
@@ -1451,6 +1454,7 @@
         <exception cref="T:System.ArgumentException">The <paramref name="source" /> parameter is <see cref="F:System.String.Empty" />.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="source" /> parameter is a null string.</exception>
         <exception cref="T:System.Runtime.Serialization.SerializationException">The source parameter cannot be deserialized back into a <see cref="T:System.TimeZoneInfo" /> object.</exception>
+        <altmember cref="M:System.TimeZoneInfo.ToSerializedString" />
       </Docs>
     </Member>
     <Member MemberName="GetAdjustmentRules">
@@ -1501,6 +1505,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.OutOfMemoryException">The system does not have enough memory to make an in-memory copy of the adjustment rules.</exception>
+        <altmember cref="T:System.TimeZoneInfo.AdjustmentRule" />
       </Docs>
     </Member>
     <Member MemberName="GetAmbiguousTimeOffsets">
@@ -1571,6 +1576,7 @@
         <block subset="none" type="usage">
           <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method applies only the current adjustment rule when determining whether <paramref name="dateTime" /> is ambiguous if the current instance is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately report ambiguous time offsets for periods before the current adjustment rule came into effect. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
         </block>
+        <altmember cref="Overload:System.TimeZoneInfo.IsAmbiguousTime" />
       </Docs>
     </Member>
     <Member MemberName="GetAmbiguousTimeOffsets">
@@ -1620,6 +1626,7 @@
         <block subset="none" type="usage">
           <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method applies only the current adjustment rule when determining whether <paramref name="dateTimeOffset" /> is ambiguous if the current instance is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately report ambiguous time offsets for periods before the current adjustment rule came into effect. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
         </block>
+        <altmember cref="M:System.TimeZoneInfo.IsAmbiguousTime(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -1774,6 +1781,7 @@
         <block subset="none" type="usage">
           <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method applies only the current adjustment rule when calculating the offset from UTC if the current instance is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately calculate the difference between the local time and UTC on <paramref name="dateTime" />. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
         </block>
+        <altmember cref="P:System.TimeZoneInfo.BaseUtcOffset" />
       </Docs>
     </Member>
     <Member MemberName="GetUtcOffset">
@@ -1984,6 +1992,7 @@
         <block subset="none" type="usage">
           <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method applies only the current adjustment rule if the current instance is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately report whether <paramref name="dateTime" /> is an ambiguous time for periods before the current adjustment rule came into effect. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
         </block>
+        <altmember cref="M:System.TimeZoneInfo.IsInvalidTime(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="IsAmbiguousTime">
@@ -2110,6 +2119,7 @@
         <block subset="none" type="usage">
           <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method applies only the current adjustment rule if the current instance is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately report whether <paramref name="dateTime" /> is a daylight saving time for periods before the current adjustment rule came into effect. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
         </block>
+        <altmember cref="P:System.TimeZoneInfo.SupportsDaylightSavingTime" />
       </Docs>
     </Member>
     <Member MemberName="IsDaylightSavingTime">
@@ -2158,6 +2168,7 @@
         <block subset="none" type="usage">
           <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method applies only the current adjustment rule if the current instance is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately report whether <paramref name="dateTimeOffset" /> is a daylight saving time for periods before the current adjustment rule came into effect. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
         </block>
+        <altmember cref="P:System.TimeZoneInfo.SupportsDaylightSavingTime" />
       </Docs>
     </Member>
     <Member MemberName="IsInvalidTime">
@@ -2221,6 +2232,7 @@
         <block subset="none" type="usage">
           <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method applies only the adjustment rule if the current instance is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately report whether <paramref name="dateTime" /> is an invalid time for periods before the current adjustment rule came into effect. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
         </block>
+        <altmember cref="Overload:System.TimeZoneInfo.IsAmbiguousTime" />
       </Docs>
     </Member>
     <Member MemberName="Local">
@@ -2505,6 +2517,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.TimeZoneInfo.FromSerializedString(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -2597,5 +2610,110 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether two <see cref="T:System.TimeZoneInfo" /> objects are equal.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetAmbiguousTimeOffsets">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns information about the possible dates and times that an ambiguous date and time can be mapped to.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateCustomTimeZone">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Defines a time zone that is not found on the local computer.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ConvertTimeBySystemTimeZoneId">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a time to the time in another time zone based on a time zone identifier.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IsAmbiguousTime">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether a particular date and time in a particular time zone is ambiguous and can be mapped to two or more Coordinated Universal Time (UTC) times.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IsDaylightSavingTime">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether a specified date and time falls in the range of daylight saving time for the current <see cref="T:System.TimeZoneInfo" /> object's time zone.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ConvertTime">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a time to the time in a particular time zone.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetUtcOffset">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Calculates the offset or difference between the time in this time zone and Coordinated Universal Time (UTC) for a particular date and time.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ConvertTimeToUtc">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a date and time to Coordinated Universal Time (UTC).</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -228,5 +228,15 @@
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Diagnostics.CorrelationManager.LogicalOperationStack" /> property is an empty stack.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="StartLogicalOperation">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Starts a logical operation on a thread.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

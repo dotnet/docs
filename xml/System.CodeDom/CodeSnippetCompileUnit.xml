@@ -126,6 +126,7 @@
         <summary>Gets or sets the line and file information about where the code is located in a source code document.</summary>
         <value>A <see cref="T:System.CodeDom.CodeLinePragma" /> that indicates the position of the code fragment.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeLinePragma" />
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -150,5 +151,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeSnippetCompileUnit" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

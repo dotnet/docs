@@ -179,6 +179,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.LoginStatus.OnLoggedOut(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="LoggingOut">
@@ -261,6 +262,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.LoginStatus.LoginText" />
       </Docs>
     </Member>
     <Member MemberName="LoginText">
@@ -303,6 +305,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.LoginStatus.LoginImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="LogoutAction">
@@ -355,6 +358,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The property is set to an invalid <see cref="T:System.Web.UI.WebControls.LogoutAction" /> value.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.LogoutAction" />
       </Docs>
     </Member>
     <Member MemberName="LogoutImageUrl">
@@ -452,6 +456,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.LoginStatus.LogoutAction" />
       </Docs>
     </Member>
     <Member MemberName="LogoutText">
@@ -494,6 +499,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.LoginStatus.LogoutImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="OnLoggedOut">

@@ -63,6 +63,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DateTimePicker" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -131,6 +132,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.MonthCalendar.UpdateBoldedDates" />
+        <altmember cref="P:System.Windows.Forms.MonthCalendar.AnnuallyBoldedDates" />
       </Docs>
     </Member>
     <Member MemberName="AddBoldedDate">
@@ -170,6 +173,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.MonthCalendar.UpdateBoldedDates" />
+        <altmember cref="P:System.Windows.Forms.MonthCalendar.BoldedDates" />
       </Docs>
     </Member>
     <Member MemberName="AddMonthlyBoldedDate">
@@ -200,6 +205,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.MonthCalendar.UpdateBoldedDates" />
+        <altmember cref="P:System.Windows.Forms.MonthCalendar.MonthlyBoldedDates" />
       </Docs>
     </Member>
     <Member MemberName="AnnuallyBoldedDates">
@@ -239,6 +246,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.MonthCalendar.UpdateBoldedDates" />
+        <altmember cref="M:System.Windows.Forms.MonthCalendar.AddAnnuallyBoldedDate(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="BackColor">
@@ -280,6 +289,8 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="P:System.Windows.Forms.Control.BackColor" /> property in a derived class, use the base class's <see cref="P:System.Windows.Forms.Control.BackColor" /> property to extend the base implementation. Otherwise, you must provide all the implementation. You are not required to override both the <see langword="get" /> and <see langword="set" /> accessors of the <see cref="P:System.Windows.Forms.Control.BackColor" /> property; you can override only one if needed.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.AmbientProperties" />
+        <altmember cref="E:System.Windows.Forms.Control.BackColorChanged" />
       </Docs>
     </Member>
     <Member MemberName="BackgroundImage">
@@ -474,6 +485,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.MonthCalendar.SetCalendarDimensions(System.Int32,System.Int32)" />
+        <altmember cref="T:System.Drawing.Point" />
       </Docs>
     </Member>
     <Member MemberName="Click">
@@ -576,6 +589,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.CreateParams" />
       </Docs>
     </Member>
     <Member MemberName="DateChanged">
@@ -617,6 +631,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.MonthCalendar.DateSelected" />
       </Docs>
     </Member>
     <Member MemberName="DateSelected">
@@ -652,6 +667,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.MonthCalendar.DateChanged" />
       </Docs>
     </Member>
     <Member MemberName="DefaultImeMode">
@@ -713,6 +729,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.MonthCalendar.SingleMonthSize" />
       </Docs>
     </Member>
     <Member MemberName="DefWndProc">
@@ -878,6 +895,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The assigned value is not one of the <see cref="T:System.Windows.Forms.Day" /> enumeration members.</exception>
+        <altmember cref="T:System.Windows.Forms.Day" />
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -917,6 +935,9 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="P:System.Windows.Forms.Control.ForeColor" /> property in a derived class, use the base class's <see cref="P:System.Windows.Forms.Control.ForeColor" /> property to extend the base implementation. Otherwise, you must provide all the implementation. You are not required to override both the <see langword="get" /> and <see langword="set" /> accessors of the <see cref="P:System.Windows.Forms.Control.ForeColor" /> property; you can override only one if needed.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.ForeColorChanged" />
+        <altmember cref="M:System.Windows.Forms.Control.OnForeColorChanged(System.EventArgs)" />
+        <altmember cref="T:System.Drawing.Color" />
       </Docs>
     </Member>
     <Member MemberName="GetDisplayRange">
@@ -947,6 +968,8 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="T:System.Windows.Forms.SelectionRange" />
       </Docs>
     </Member>
     <Member MemberName="HitTest">
@@ -969,6 +992,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
         <summary>Returns an object with information on which portion of a month calendar control is at a location specified by a <see cref="T:System.Drawing.Point" />.</summary>
         <returns>A <see cref="T:System.Windows.Forms.MonthCalendar.HitTestInfo" /> that contains information about the specified point on the <see cref="T:System.Windows.Forms.MonthCalendar" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.MonthCalendar.HitTestInfo" />
       </Docs>
     </Member>
     <Member MemberName="HitTest">
@@ -993,6 +1017,8 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
         <summary>Returns a <see cref="T:System.Windows.Forms.MonthCalendar.HitTestInfo" /> with information on which portion of a month calendar control is at a specified x- and y-coordinate.</summary>
         <returns>A <see cref="T:System.Windows.Forms.MonthCalendar.HitTestInfo" /> that contains information about the specified point on the <see cref="T:System.Windows.Forms.MonthCalendar" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.MonthCalendar.HitTestInfo" />
+        <altmember cref="T:System.Windows.Forms.MonthCalendar.HitArea" />
       </Docs>
     </Member>
     <Member MemberName="ImeMode">
@@ -1074,6 +1100,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
         <returns>
           <see langword="true" /> if the specified key is a regular input key; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.IsInputKey(System.Windows.Forms.Keys)" />
       </Docs>
     </Member>
     <Member MemberName="MaxDate">
@@ -1104,6 +1131,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The value is less than the <see cref="P:System.Windows.Forms.MonthCalendar.MinDate" />.</exception>
+        <altmember cref="P:System.Windows.Forms.MonthCalendar.MinDate" />
       </Docs>
     </Member>
     <Member MemberName="MaxSelectionCount">
@@ -1294,6 +1322,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.BackColorChanged" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnBackColorChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnDateChanged">
@@ -1327,6 +1356,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.MonthCalendar.OnDateChanged(System.Windows.Forms.DateRangeEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.MonthCalendar.OnDateChanged(System.Windows.Forms.DateRangeEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnDateSelected">
@@ -1360,6 +1390,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.MonthCalendar.OnDateSelected(System.Windows.Forms.DateRangeEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.MonthCalendar.OnDateSelected(System.Windows.Forms.DateRangeEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnFontChanged">
@@ -1416,6 +1447,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.ForeColorChanged" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnForeColorChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnHandleCreated">
@@ -1437,6 +1469,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.HandleCreated" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnHandleCreated(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnHandleDestroyed">
@@ -1729,6 +1762,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.MonthCalendar.UpdateBoldedDates" />
       </Docs>
     </Member>
     <Member MemberName="RemoveBoldedDate">
@@ -1766,6 +1800,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.MonthCalendar.UpdateBoldedDates" />
       </Docs>
     </Member>
     <Member MemberName="RemoveMonthlyBoldedDate">
@@ -1794,6 +1829,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.MonthCalendar.UpdateBoldedDates" />
       </Docs>
     </Member>
     <Member MemberName="RescaleConstantsForDpi">
@@ -1986,6 +2022,9 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
  -or-  
   
  The date value is greater than the <see cref="P:System.Windows.Forms.MonthCalendar.MaxDate" /> value.</exception>
+        <altmember cref="P:System.Windows.Forms.MonthCalendar.SelectionRange" />
+        <altmember cref="P:System.Windows.Forms.MonthCalendar.SelectionStart" />
+        <altmember cref="M:System.Windows.Forms.MonthCalendar.SetSelectionRange(System.DateTime,System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="SelectionRange">
@@ -2037,6 +2076,10 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
  -or-  
   
  The <see cref="P:System.Windows.Forms.SelectionRange.End" /> value of the assigned <see cref="T:System.Windows.Forms.SelectionRange" /> is greater than the maximum allowable date for a month calendar control.</exception>
+        <altmember cref="P:System.Windows.Forms.MonthCalendar.SelectionRange" />
+        <altmember cref="P:System.Windows.Forms.MonthCalendar.SelectionStart" />
+        <altmember cref="P:System.Windows.Forms.MonthCalendar.SelectionEnd" />
+        <altmember cref="M:System.Windows.Forms.MonthCalendar.SetSelectionRange(System.DateTime,System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="SelectionStart">
@@ -2092,6 +2135,9 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
  -or-  
   
  The date value is greater than <see cref="P:System.Windows.Forms.MonthCalendar.MaxDate" />.</exception>
+        <altmember cref="P:System.Windows.Forms.MonthCalendar.SelectionRange" />
+        <altmember cref="P:System.Windows.Forms.MonthCalendar.SelectionEnd" />
+        <altmember cref="M:System.Windows.Forms.MonthCalendar.SetSelectionRange(System.DateTime,System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="SetBoundsCore">
@@ -2153,6 +2199,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="x" /> or <paramref name="y" /> is less than 1.</exception>
+        <altmember cref="P:System.Windows.Forms.MonthCalendar.CalendarDimensions" />
       </Docs>
     </Member>
     <Member MemberName="SetDate">
@@ -2242,6 +2289,9 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
  <paramref name="date2" /> is greater than the maximum allowable date for a month calendar control.  
   
  This exception will only be thrown if <see cref="P:System.Windows.Forms.MonthCalendar.MinDate" /> or <see cref="P:System.Windows.Forms.MonthCalendar.MaxDate" /> have been set explicitly.</exception>
+        <altmember cref="P:System.Windows.Forms.MonthCalendar.SelectionStart" />
+        <altmember cref="P:System.Windows.Forms.MonthCalendar.SelectionEnd" />
+        <altmember cref="P:System.Windows.Forms.MonthCalendar.SelectionRange" />
       </Docs>
     </Member>
     <Member MemberName="ShowToday">
@@ -2282,6 +2332,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.MonthCalendar.ShowTodayCircle" />
       </Docs>
     </Member>
     <Member MemberName="ShowTodayCircle">
@@ -2322,6 +2373,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.MonthCalendar.TodayDate" />
       </Docs>
     </Member>
     <Member MemberName="ShowWeekNumbers">
@@ -2394,6 +2446,8 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The dimensions cannot be retrieved.</exception>
+        <altmember cref="M:System.Windows.Forms.MonthCalendar.SetCalendarDimensions(System.Int32,System.Int32)" />
+        <altmember cref="P:System.Windows.Forms.MonthCalendar.DefaultSize" />
       </Docs>
     </Member>
     <Member MemberName="Size">
@@ -2596,6 +2650,8 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
  -or-  
   
  The value is greater than the maximum allowable date.</exception>
+        <altmember cref="P:System.Windows.Forms.MonthCalendar.TodayDateSet" />
+        <altmember cref="P:System.Windows.Forms.MonthCalendar.ShowToday" />
       </Docs>
     </Member>
     <Member MemberName="TodayDateSet">
@@ -2623,6 +2679,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
         <value>
           <see langword="true" /> if the value for the <see cref="P:System.Windows.Forms.MonthCalendar.TodayDate" /> property has been explicitly set; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.MonthCalendar.TodayDate" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -2735,5 +2792,14 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling unmanaged code. Associated enumeration: F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="HitTest">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines which element of the calendar is at a specified location.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -46,6 +46,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ServiceProcess.ServiceProcessInstaller" />
+    <altmember cref="T:System.ServiceProcess.ServiceInstaller" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -79,6 +81,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnStart(System.String[])" />
+        <altmember cref="P:System.ServiceProcess.ServiceBase.AutoLog" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.Run(System.ServiceProcess.ServiceBase[])" />
       </Docs>
     </Member>
     <Member MemberName="AutoLog">
@@ -118,6 +123,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ServiceProcess.ServiceBase.EventLog" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnStart(System.String[])" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnStop" />
       </Docs>
     </Member>
     <Member MemberName="CanHandlePowerEvent">
@@ -152,6 +160,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">This property is modified after the service was started.</exception>
+        <altmember cref="T:System.ServiceProcess.PowerBroadcastStatus" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnPowerEvent(System.ServiceProcess.PowerBroadcastStatus)" />
+        <altmember cref="P:System.ServiceProcess.ServiceBase.CanPauseAndContinue" />
+        <altmember cref="P:System.ServiceProcess.ServiceBase.CanShutdown" />
+        <altmember cref="P:System.ServiceProcess.ServiceBase.CanStop" />
       </Docs>
     </Member>
     <Member MemberName="CanHandleSessionChangeEvent">
@@ -180,6 +193,10 @@
           <see langword="true" /> if the service can handle Terminal Server session change events; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">This property is modified after the service was started.</exception>
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnSessionChange(System.ServiceProcess.SessionChangeDescription)" />
+        <altmember cref="P:System.ServiceProcess.ServiceBase.CanShutdown" />
+        <altmember cref="P:System.ServiceProcess.ServiceBase.CanStop" />
+        <altmember cref="P:System.ServiceProcess.ServiceBase.CanHandlePowerEvent" />
       </Docs>
     </Member>
     <Member MemberName="CanPauseAndContinue">
@@ -220,6 +237,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The service has already been started. The <see cref="P:System.ServiceProcess.ServiceBase.CanPauseAndContinue" /> property cannot be changed once the service has started.</exception>
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnPause" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnContinue" />
+        <altmember cref="P:System.ServiceProcess.ServiceBase.CanShutdown" />
+        <altmember cref="P:System.ServiceProcess.ServiceBase.CanStop" />
+        <altmember cref="P:System.ServiceProcess.ServiceBase.CanHandlePowerEvent" />
       </Docs>
     </Member>
     <Member MemberName="CanShutdown">
@@ -255,6 +277,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The service has already been started. The <see cref="P:System.ServiceProcess.ServiceBase.CanShutdown" /> property cannot be changed once the service has started.</exception>
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnShutdown" />
+        <altmember cref="P:System.ServiceProcess.ServiceBase.CanPauseAndContinue" />
+        <altmember cref="P:System.ServiceProcess.ServiceBase.CanStop" />
+        <altmember cref="P:System.ServiceProcess.ServiceBase.CanHandlePowerEvent" />
       </Docs>
     </Member>
     <Member MemberName="CanStop">
@@ -289,6 +315,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The service has already been started. The <see cref="P:System.ServiceProcess.ServiceBase.CanStop" /> property cannot be changed once the service has started.</exception>
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnStop" />
+        <altmember cref="P:System.ServiceProcess.ServiceBase.CanPauseAndContinue" />
+        <altmember cref="P:System.ServiceProcess.ServiceBase.CanShutdown" />
+        <altmember cref="P:System.ServiceProcess.ServiceBase.CanHandlePowerEvent" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -323,6 +353,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ServiceProcess.ServiceBase.#ctor" />
       </Docs>
     </Member>
     <Member MemberName="EventLog">
@@ -360,6 +391,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ServiceProcess.ServiceBase.AutoLog" />
+        <altmember cref="P:System.Diagnostics.EventLog.Source" />
+        <altmember cref="T:System.Diagnostics.EventLog" />
       </Docs>
     </Member>
     <Member MemberName="ExitCode">
@@ -415,6 +449,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ServiceProcess.ServiceBase.ServiceName" />
       </Docs>
     </Member>
     <Member MemberName="OnContinue">
@@ -444,6 +479,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ServiceProcess.ServiceBase.CanPauseAndContinue" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnPause" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnPowerEvent(System.ServiceProcess.PowerBroadcastStatus)" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnShutdown" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnStart(System.String[])" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnStop" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnCustomCommand(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="OnCustomCommand">
@@ -480,6 +522,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnContinue" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnPause" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnPowerEvent(System.ServiceProcess.PowerBroadcastStatus)" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnShutdown" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnStart(System.String[])" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnStop" />
       </Docs>
     </Member>
     <Member MemberName="OnPause">
@@ -515,6 +563,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ServiceProcess.ServiceBase.CanPauseAndContinue" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnContinue" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnPowerEvent(System.ServiceProcess.PowerBroadcastStatus)" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnShutdown" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnStart(System.String[])" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnStop" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnCustomCommand(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="OnPowerEvent">
@@ -546,6 +601,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ServiceProcess.ServiceBase.CanHandlePowerEvent" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnContinue" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnPause" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnShutdown" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnStart(System.String[])" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnStop" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnCustomCommand(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="OnSessionChange">
@@ -574,6 +636,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ServiceProcess.ServiceBase.CanHandleSessionChangeEvent" />
+        <altmember cref="T:System.ServiceProcess.SessionChangeDescription" />
       </Docs>
     </Member>
     <Member MemberName="OnShutdown">
@@ -603,6 +667,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ServiceProcess.ServiceBase.CanShutdown" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnContinue" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnPause" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnPowerEvent(System.ServiceProcess.PowerBroadcastStatus)" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnStart(System.String[])" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnStop" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnCustomCommand(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="OnStart">
@@ -640,6 +711,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnContinue" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnPause" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnPowerEvent(System.ServiceProcess.PowerBroadcastStatus)" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnShutdown" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnStop" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnCustomCommand(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="OnStop">
@@ -671,6 +748,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ServiceProcess.ServiceBase.CanStop" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnContinue" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnPowerEvent(System.ServiceProcess.PowerBroadcastStatus)" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnPause" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnShutdown" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnStart(System.String[])" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnCustomCommand(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="RequestAdditionalTime">
@@ -705,6 +789,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The service is not in a pending state.</exception>
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnContinue" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnPause" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnStart(System.String[])" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnStop" />
       </Docs>
     </Member>
     <Member MemberName="Run">
@@ -739,6 +827,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="service" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.ServiceProcess.ServiceBase.#ctor" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnStart(System.String[])" />
       </Docs>
     </Member>
     <Member MemberName="Run">
@@ -772,6 +862,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">You did not supply a service to start. The array might be <see langword="null" /> or empty.</exception>
+        <altmember cref="M:System.ServiceProcess.ServiceBase.#ctor" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnStart(System.String[])" />
       </Docs>
     </Member>
     <Member MemberName="ServiceHandle">
@@ -873,6 +965,8 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The service has already been started. The <see cref="P:System.ServiceProcess.ServiceBase.ServiceName" /> property cannot be changed once the service has started.</exception>
         <exception cref="T:System.ArgumentException">The specified name is a zero-length string or is longer than <see cref="F:System.ServiceProcess.ServiceBase.MaxNameLength" />, or the specified name contains forward slash or backslash characters.</exception>
+        <altmember cref="P:System.ServiceProcess.ServiceInstaller.ServiceName" />
+        <altmember cref="P:System.Diagnostics.EventLog.Source" />
       </Docs>
     </Member>
     <Member MemberName="Stop">
@@ -898,7 +992,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ServiceProcess.ServiceBase.CanStop" />
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnStop" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Run">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides the main entry point for a service executable.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

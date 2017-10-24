@@ -86,6 +86,8 @@
         <param name="listener">A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the event handler to remove.</param>
         <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeRemoveEventStatement" /> class with the specified event and event handler.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeEventReferenceExpression" />
+        <altmember cref="T:System.CodeDom.CodeExpression" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -112,6 +114,8 @@
         <param name="listener">A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the event handler to remove.</param>
         <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeRemoveEventStatement" /> class using the specified target object, event name, and event handler.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeEventReferenceExpression" />
+        <altmember cref="T:System.CodeDom.CodeExpression" />
       </Docs>
     </Member>
     <Member MemberName="Event">
@@ -134,6 +138,7 @@
         <summary>Gets or sets the event to remove a listener from.</summary>
         <value>A <see cref="T:System.CodeDom.CodeEventReferenceExpression" /> that indicates the event to remove a listener from.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeEventReferenceExpression" />
       </Docs>
     </Member>
     <Member MemberName="Listener">
@@ -156,7 +161,17 @@
         <summary>Gets or sets the event handler to remove.</summary>
         <value>A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the event handler to remove.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeExpression" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeRemoveEventStatement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

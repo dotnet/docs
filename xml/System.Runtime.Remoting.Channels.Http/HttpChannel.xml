@@ -172,6 +172,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.Remoting.Channels.Http.HttpChannel" />
+        <altmember cref="N:System.Runtime.Remoting.Channels.Http" />
       </Docs>
     </Member>
     <Member MemberName="ChannelData">
@@ -197,6 +199,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.Remoting.Channels.Http.HttpChannel" />
+        <altmember cref="N:System.Runtime.Remoting.Channels.Http" />
       </Docs>
     </Member>
     <Member MemberName="ChannelName">
@@ -272,6 +276,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.Remoting.Channels.Http.HttpChannel" />
+        <altmember cref="N:System.Runtime.Remoting.Channels.Http" />
       </Docs>
     </Member>
     <Member MemberName="ChannelSinkChain">
@@ -297,6 +303,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.Remoting.Channels.Http.HttpChannel" />
+        <altmember cref="N:System.Runtime.Remoting.Channels.Http" />
       </Docs>
     </Member>
     <Member MemberName="CreateMessageSink">
@@ -367,6 +375,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.Remoting.Channels.Http.HttpChannel" />
+        <altmember cref="N:System.Runtime.Remoting.Channels.Http" />
       </Docs>
     </Member>
     <Member MemberName="IsSecured">
@@ -491,6 +501,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Uri" />
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -516,6 +527,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.Remoting.Channels.Http.HttpChannel" />
+        <altmember cref="N:System.Runtime.Remoting.Channels.Http" />
       </Docs>
     </Member>
     <Member MemberName="StartListening">
@@ -544,6 +557,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.Remoting.Channels.Http.HttpChannel" />
+        <altmember cref="N:System.Runtime.Remoting.Channels.Http" />
       </Docs>
     </Member>
     <Member MemberName="StopListening">
@@ -565,6 +580,8 @@
         <param name="data">The channel URI on which the channel hook is listening.</param>
         <summary>Instructs the current channel to stop listening for requests.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Runtime.Remoting.Channels.Http.HttpChannel" />
+        <altmember cref="N:System.Runtime.Remoting.Channels.Http" />
       </Docs>
     </Member>
     <Member MemberName="WantsToListen">
@@ -583,7 +600,18 @@
         <summary>Gets a Boolean value that indicates whether the current instance wants to be hooked into the outside listener service.</summary>
         <value>A Boolean value that indicates whether <see cref="T:System.Runtime.Remoting.Channels.IChannelReceiverHook" /> wants to be hooked into the outside listener service.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Runtime.Remoting.Channels.Http.HttpChannel" />
+        <altmember cref="N:System.Runtime.Remoting.Channels.Http" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Channels.Http.HttpChannel" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

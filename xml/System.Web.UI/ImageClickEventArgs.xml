@@ -33,6 +33,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.ImageClickEventHandler" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -53,6 +54,7 @@
         <param name="y">The y-coordinate where the user clicked an image-based ASP.NET server control.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ImageClickEventArgs" /> class using the <paramref name="x" /> and <paramref name="y" /> parameters.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.ImageClickEventHandler" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -94,6 +96,7 @@
       <Docs>
         <summary>An integer that represents the x-coordinate where a user clicked an image-based ASP.NET server control.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.ImageClickEventArgs.#ctor(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="XRaw">
@@ -128,6 +131,7 @@
       <Docs>
         <summary>An integer that represents the y-coordinate where a user clicked an image-based ASP.NET server control.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.ImageClickEventArgs.#ctor(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="YRaw">
@@ -147,5 +151,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ImageClickEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

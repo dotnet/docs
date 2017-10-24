@@ -86,6 +86,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="N:System.Net.Mime" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -390,6 +391,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.Configuration.SmtpSection" />
+        <altmember cref="P:System.Net.Configuration.SmtpSection.DeliveryMethod" />
       </Docs>
     </Member>
     <MemberGroup MemberName="Dispose">
@@ -578,6 +581,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.Configuration.SmtpSection" />
+        <altmember cref="T:System.Net.Configuration.SmtpNetworkElement" />
+        <altmember cref="P:System.Net.Configuration.SmtpNetworkElement.EnableSsl" />
       </Docs>
     </Member>
     <Member MemberName="Host">
@@ -625,6 +631,10 @@
         <exception cref="T:System.ArgumentNullException">The value specified for a set operation is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The value specified for a set operation is equal to <see cref="F:System.String.Empty" /> ("").</exception>
         <exception cref="T:System.InvalidOperationException">You cannot change the value of this property when an email is being sent.</exception>
+        <altmember cref="T:System.Net.Configuration.SmtpSection" />
+        <altmember cref="T:System.Net.Configuration.SmtpNetworkElement" />
+        <altmember cref="P:System.Net.Configuration.SmtpNetworkElement.Host" />
+        <altmember cref="P:System.Net.Mail.SmtpClient.Port" />
       </Docs>
     </Member>
     <Member MemberName="OnSendCompleted">
@@ -703,6 +713,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.Configuration.SmtpSection" />
+        <altmember cref="P:System.Net.Configuration.SmtpSection.DeliveryMethod" />
       </Docs>
     </Member>
     <Member MemberName="Port">
@@ -748,6 +760,10 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The value specified for a set operation is less than or equal to zero.</exception>
         <exception cref="T:System.InvalidOperationException">You cannot change the value of this property when an email is being sent.</exception>
         <permission cref="T:System.Net.Mail.SmtpPermission">to set the <see cref="P:System.Net.Mail.SmtpClient.Port" /> property. Associated enumeration: <see cref="F:System.Net.Mail.SmtpAccess.ConnectToUnrestrictedPort" />.</permission>
+        <altmember cref="T:System.Net.Configuration.SmtpSection" />
+        <altmember cref="T:System.Net.Configuration.SmtpNetworkElement" />
+        <altmember cref="P:System.Net.Configuration.SmtpNetworkElement.Port" />
+        <altmember cref="P:System.Net.Mail.SmtpClient.Host" />
       </Docs>
     </Member>
     <Member MemberName="Send">
@@ -1452,6 +1468,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.Configuration.SmtpSection" />
+        <altmember cref="T:System.Net.Configuration.SmtpNetworkElement" />
+        <altmember cref="P:System.Net.Configuration.SmtpNetworkElement.TargetName" />
       </Docs>
     </Member>
     <Member MemberName="Timeout">
@@ -1556,5 +1575,45 @@
         <exception cref="T:System.InvalidOperationException">You cannot change the value of this property when an e-mail is being sent.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SendAsync">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends an e-mail message. These methods do not block the calling thread.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SendMailAsync">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends the specified message to an SMTP server for delivery as an asynchronous operation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Send">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends an e-mail message to an SMTP server for delivery. These methods block while the message is being transmitted.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.SmtpClient" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

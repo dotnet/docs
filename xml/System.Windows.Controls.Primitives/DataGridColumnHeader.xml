@@ -21,6 +21,8 @@
   <Docs>
     <summary>Represents an individual <see cref="T:System.Windows.Controls.DataGrid" /> column header.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Controls.DataGrid" />
+    <altmember cref="T:System.Windows.Controls.DataGridColumn" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,6 +38,8 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Primitives.DataGridColumnHeader" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="T:System.Windows.Controls.DataGridColumn" />
       </Docs>
     </Member>
     <Member MemberName="CanUserSort">
@@ -55,6 +59,8 @@
         <value>
           <see langword="true" /> if the user can click this column header to sort the <see cref="T:System.Windows.Controls.DataGrid" /> by the associated column; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="T:System.Windows.Controls.DataGridColumn" />
       </Docs>
     </Member>
     <Member MemberName="CanUserSortProperty">
@@ -72,6 +78,8 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.Primitives.DataGridColumnHeader.CanUserSort" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="T:System.Windows.Controls.DataGridColumn" />
       </Docs>
     </Member>
     <Member MemberName="Column">
@@ -90,6 +98,8 @@
         <summary>Gets the <see cref="T:System.Windows.Controls.DataGridColumn" /> associated with this column header.</summary>
         <value>The column associated with this column header.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="T:System.Windows.Controls.DataGridColumn" />
       </Docs>
     </Member>
     <Member MemberName="ColumnFloatingHeaderStyleKey">
@@ -108,6 +118,8 @@
         <summary>Gets the key that references the style for displaying column headers during a header drag operation.</summary>
         <value>The style key for floating column headers.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="T:System.Windows.Controls.DataGridColumn" />
       </Docs>
     </Member>
     <Member MemberName="ColumnHeaderDropSeparatorStyleKey">
@@ -126,6 +138,8 @@
         <summary>Gets the key that references the style for the drop location indicator during a header drag operation.</summary>
         <value>The style key for the drop location indicator.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="T:System.Windows.Controls.DataGridColumn" />
       </Docs>
     </Member>
     <Member MemberName="DisplayIndex">
@@ -144,6 +158,8 @@
         <summary>Gets the display position of the column associated with this column header relative to the other columns in the <see cref="T:System.Windows.Controls.DataGrid" />.</summary>
         <value>The display position of associated column relative to the other columns in the <see cref="T:System.Windows.Controls.DataGrid" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="T:System.Windows.Controls.DataGridColumn" />
       </Docs>
     </Member>
     <Member MemberName="DisplayIndexProperty">
@@ -161,6 +177,8 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.Primitives.DataGridColumnHeader.DisplayIndex" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="T:System.Windows.Controls.DataGridColumn" />
       </Docs>
     </Member>
     <Member MemberName="IsFrozen">
@@ -180,6 +198,8 @@
         <value>
           <see langword="true" /> if the associated column is prevented from scrolling horizontally; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="T:System.Windows.Controls.DataGridColumn" />
       </Docs>
     </Member>
     <Member MemberName="IsFrozenProperty">
@@ -197,6 +217,8 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.Primitives.DataGridColumnHeader.IsFrozen" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="T:System.Windows.Controls.DataGridColumn" />
       </Docs>
     </Member>
     <Member MemberName="OnApplyTemplate">
@@ -222,6 +244,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="T:System.Windows.Controls.DataGridColumn" />
       </Docs>
     </Member>
     <Member MemberName="OnClick">
@@ -247,6 +271,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="T:System.Windows.Controls.DataGridColumn" />
       </Docs>
     </Member>
     <Member MemberName="OnCreateAutomationPeer">
@@ -266,6 +292,8 @@
         <summary>Returns a new <see cref="T:System.Windows.Automation.Peers.DataGridColumnHeaderAutomationPeer" /> for this column header.</summary>
         <returns>A new automation peer for this column header.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="T:System.Windows.Controls.DataGridColumn" />
       </Docs>
     </Member>
     <Member MemberName="OnLostMouseCapture">
@@ -287,6 +315,9 @@
         <param name="e">The event data for the <see cref="E:System.Windows.Input.Mouse.LostMouseCapture" /> event.</param>
         <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.LostMouseCapture" /> routed event that occurs when this control is no longer receiving mouse event messages.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.Primitives.ButtonBase.OnLostMouseCapture(System.Windows.Input.MouseEventArgs)" />
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="T:System.Windows.Controls.DataGridColumn" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseLeftButtonDown">
@@ -308,6 +339,9 @@
         <param name="e">The event data.</param>
         <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.MouseLeftButtonDown" /> routed event that occurs when the left mouse button is pressed while the mouse pointer is over this control.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.Primitives.ButtonBase.OnMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)" />
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="T:System.Windows.Controls.DataGridColumn" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseLeftButtonUp">
@@ -329,6 +363,9 @@
         <param name="e">The event data.</param>
         <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.MouseLeftButtonUp" /> routed event that occurs when the left mouse button is released while the mouse pointer is over this control.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.Primitives.ButtonBase.OnMouseLeftButtonUp(System.Windows.Input.MouseButtonEventArgs)" />
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="T:System.Windows.Controls.DataGridColumn" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseMove">
@@ -350,6 +387,9 @@
         <param name="e">The event data.</param>
         <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.MouseMove" /> routed event that occurs when the mouse pointer moves while over this element.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.Primitives.ButtonBase.OnMouseMove(System.Windows.Input.MouseEventArgs)" />
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="T:System.Windows.Controls.DataGridColumn" />
       </Docs>
     </Member>
     <Member MemberName="SeparatorBrush">
@@ -368,6 +408,8 @@
         <summary>Gets or sets the <see cref="T:System.Windows.Media.Brush" /> used to paint the column header separator lines.</summary>
         <value>The brush used to paint column header separator lines.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="T:System.Windows.Controls.DataGridColumn" />
       </Docs>
     </Member>
     <Member MemberName="SeparatorBrushProperty">
@@ -385,6 +427,8 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.Primitives.DataGridColumnHeader.SeparatorBrush" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="T:System.Windows.Controls.DataGridColumn" />
       </Docs>
     </Member>
     <Member MemberName="SeparatorVisibility">
@@ -403,6 +447,8 @@
         <summary>Gets or sets the user interface (UI) visibility of the column header separator lines.</summary>
         <value>The UI visibility of the column header separator lines. The default is <see cref="F:System.Windows.Visibility.Visible" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="T:System.Windows.Controls.DataGridColumn" />
       </Docs>
     </Member>
     <Member MemberName="SeparatorVisibilityProperty">
@@ -420,6 +466,8 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.Primitives.DataGridColumnHeader.SeparatorVisibility" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="T:System.Windows.Controls.DataGridColumn" />
       </Docs>
     </Member>
     <Member MemberName="SortDirection">
@@ -438,6 +486,8 @@
         <summary>Gets a value that indicates whether the <see cref="T:System.Windows.Controls.DataGrid" /> is sorted by the associated column and whether the column values are in ascending or descending order.</summary>
         <value>The sort direction of the column or <see langword="null" /> if unsorted.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="T:System.Windows.Controls.DataGridColumn" />
       </Docs>
     </Member>
     <Member MemberName="SortDirectionProperty">
@@ -455,6 +505,8 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.Primitives.DataGridColumnHeader.SortDirection" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="T:System.Windows.Controls.DataGridColumn" />
       </Docs>
     </Member>
   </Members>

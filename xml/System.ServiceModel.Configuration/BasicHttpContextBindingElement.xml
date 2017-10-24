@@ -18,6 +18,7 @@
   <Docs>
     <summary>Represents an XML element that specifies a binding that provides context for the <see cref="T:System.ServiceModel.BasicHttpBinding" /> to be exchanged by enabling HTTP cookies as the exchange mechanism.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.ServiceModel.BasicHttpContextBinding" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -155,5 +156,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.BasicHttpContextBindingElement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

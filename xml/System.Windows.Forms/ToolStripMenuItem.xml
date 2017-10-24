@@ -322,6 +322,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ToolStripMenuItem.CheckState" />
+        <altmember cref="E:System.Windows.Forms.ToolStripMenuItem.CheckStateChanged" />
+        <altmember cref="E:System.Windows.Forms.ToolStripMenuItem.CheckedChanged" />
       </Docs>
     </Member>
     <Member MemberName="CheckedChanged">
@@ -356,6 +359,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ToolStripMenuItem.CheckState" />
+        <altmember cref="E:System.Windows.Forms.ToolStripMenuItem.CheckStateChanged" />
+        <altmember cref="P:System.Windows.Forms.ToolStripMenuItem.Checked" />
       </Docs>
     </Member>
     <Member MemberName="CheckOnClick">
@@ -425,6 +431,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <see cref="P:System.Windows.Forms.ToolStripMenuItem.CheckState" /> property is not set to one of the <see cref="T:System.Windows.Forms.CheckState" /> values.</exception>
+        <altmember cref="E:System.Windows.Forms.ToolStripMenuItem.CheckStateChanged" />
+        <altmember cref="P:System.Windows.Forms.ToolStripMenuItem.Checked" />
+        <altmember cref="E:System.Windows.Forms.ToolStripMenuItem.CheckedChanged" />
       </Docs>
     </Member>
     <Member MemberName="CheckStateChanged">
@@ -459,6 +468,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ToolStripMenuItem.CheckState" />
+        <altmember cref="P:System.Windows.Forms.ToolStripMenuItem.Checked" />
+        <altmember cref="E:System.Windows.Forms.ToolStripMenuItem.CheckedChanged" />
       </Docs>
     </Member>
     <Member MemberName="CreateAccessibilityInstance">
@@ -496,6 +508,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Control.ControlAccessibleObject" />
+        <altmember cref="T:System.Windows.Forms.AccessibleObject" />
       </Docs>
     </Member>
     <Member MemberName="CreateDefaultDropDown">
@@ -1259,5 +1273,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripMenuItem" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

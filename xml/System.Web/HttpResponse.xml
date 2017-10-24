@@ -130,6 +130,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="dependencies" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">This method was called too late in the cache processing pipeline, after the cached response was already created.</exception>
+        <altmember cref="T:System.Web.Caching.CacheDependency" />
       </Docs>
     </Member>
     <Member MemberName="AddCacheItemDependencies">
@@ -166,6 +167,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Caching.CacheDependency" />
       </Docs>
     </Member>
     <Member MemberName="AddCacheItemDependencies">
@@ -194,6 +196,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Caching.CacheDependency" />
       </Docs>
     </Member>
     <Member MemberName="AddCacheItemDependency">
@@ -232,6 +235,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.HttpResponse.AddCacheItemDependency(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="AddFileDependencies">
@@ -263,6 +267,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Caching.CacheDependency" />
       </Docs>
     </Member>
     <Member MemberName="AddFileDependencies">
@@ -808,6 +813,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.HttpResponse.ClearHeaders" />
       </Docs>
     </Member>
     <Member MemberName="ClearContent">
@@ -841,6 +847,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.HttpResponse.ClearHeaders" />
       </Docs>
     </Member>
     <Member MemberName="ClearHeaders">
@@ -870,6 +877,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">Headers are cleared after the HTTP headers have been sent.</exception>
+        <altmember cref="M:System.Web.HttpResponse.ClearContent" />
       </Docs>
     </Member>
     <Member MemberName="ClientDisconnectedToken">
@@ -2382,6 +2390,9 @@ Response.RedirectToRoutePermanent("Product",
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">Attempted to set the cookie after the HTTP headers were sent.</exception>
+        <altmember cref="F:System.Net.HttpRequestHeader.Cookie" />
+        <altmember cref="T:System.Web.HttpCookie" />
+        <altmember cref="T:System.Web.HttpCookieMode" />
       </Docs>
     </Member>
     <Member MemberName="Status">
@@ -2438,6 +2449,7 @@ Response.RedirectToRoutePermanent("Product",
         </remarks>
         <exception cref="T:System.Web.HttpException">
           <see cref="P:System.Web.HttpResponse.StatusCode" /> is set after the HTTP headers have been sent.</exception>
+        <altmember cref="P:System.Web.HttpResponse.SubStatusCode" />
       </Docs>
     </Member>
     <Member MemberName="StatusDescription">
@@ -2504,6 +2516,7 @@ Response.RedirectToRoutePermanent("Product",
         </remarks>
         <exception cref="T:System.PlatformNotSupportedException">The operation requires the integrated pipeline mode in [!INCLUDE[iisver](~/includes/iisver-md.md)] and at least the .NET Framework version 3.0.</exception>
         <exception cref="T:System.Web.HttpException">The status code is set after all HTTP headers have been sent.</exception>
+        <altmember cref="P:System.Web.HttpResponse.StatusCode" />
       </Docs>
     </Member>
     <Member MemberName="SupportsAsyncFlush">
@@ -3052,7 +3065,108 @@ Response.RedirectToRoutePermanent("Product",
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The target of the <paramref name="callback" /> parameter is of type <see cref="T:System.Web.UI.Control" />.</exception>
+        <altmember cref="T:System.Web.HttpResponseSubstitutionCallback" />
+        <altmember cref="T:System.Web.UI.WebControls.Substitution" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="PushPromise">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Promotes a promised object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddFileDependencies">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a group of file names to the collection of file names on which the current response is dependent.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Redirect">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Redirects a client to a new URL.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddCacheItemDependencies">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Makes the validity of a cached response dependent on other items in the cache.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RemoveOutputCacheItem">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes cached items from the output cache by using the default output-cache provider.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Write">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes information to an HTTP response output stream.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RedirectToRoutePermanent">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Performs a permanent redirection from a requested URL to a new URL by using route parameter values, a route name, or both.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RedirectToRoute">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Redirects a request to a new URL by using route parameter values, a route name, or both.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteFile">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the specified file directly to an HTTP response output stream.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RedirectPermanent">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Performs a permanent redirection from a requested URL to a specified URL.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TransmitFile">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the specified file directly to an HTTP response output stream without buffering it in memory.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

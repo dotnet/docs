@@ -39,6 +39,7 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
+    <altmember cref="T:System.Windows.Forms.Design.IUIService" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -63,6 +64,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.StandardToolWindows" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Design.IUIService" />
       </Docs>
     </Member>
     <Member MemberName="ObjectBrowser">
@@ -89,6 +91,7 @@
       <Docs>
         <summary>Gets the GUID for the object browser. This field is read-only.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Design.IUIService" />
       </Docs>
     </Member>
     <Member MemberName="OutputWindow">
@@ -115,6 +118,7 @@
       <Docs>
         <summary>Gets the GUID for the output window. This field is read-only.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Design.IUIService" />
       </Docs>
     </Member>
     <Member MemberName="ProjectExplorer">
@@ -141,6 +145,7 @@
       <Docs>
         <summary>Gets the GUID for the solution explorer. This field is read-only.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Design.IUIService" />
       </Docs>
     </Member>
     <Member MemberName="PropertyBrowser">
@@ -167,6 +172,7 @@
       <Docs>
         <summary>Gets the GUID for the Properties window. This field is read-only.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Design.IUIService" />
       </Docs>
     </Member>
     <Member MemberName="RelatedLinks">
@@ -193,6 +199,7 @@
       <Docs>
         <summary>Gets the GUID for the related links frame. This field is read-only.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Design.IUIService" />
       </Docs>
     </Member>
     <Member MemberName="ServerExplorer">
@@ -219,6 +226,7 @@
       <Docs>
         <summary>Gets the GUID for the server explorer. This field is read-only.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Design.IUIService" />
       </Docs>
     </Member>
     <Member MemberName="TaskList">
@@ -256,6 +264,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Design.IUIService" />
       </Docs>
     </Member>
     <Member MemberName="Toolbox">
@@ -282,6 +291,7 @@
       <Docs>
         <summary>Gets the GUID for the Toolbox. This field is read-only.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Design.IUIService" />
       </Docs>
     </Member>
   </Members>

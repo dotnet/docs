@@ -79,6 +79,10 @@ ListBox
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.SpellCheck" />
+        <altmember cref="T:System.Windows.Controls.TextBox" />
+        <altmember cref="T:System.Windows.Controls.RichTextBox" />
+        <altmember cref="M:System.Windows.Controls.SpellCheck.GetCustomDictionaries(System.Windows.Controls.Primitives.TextBoxBase)" />
       </Docs>
     </Member>
     <Member MemberName="CustomDictionariesProperty">
@@ -137,6 +141,10 @@ ListBox
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="textBoxBase" /> is <see langword="null" />.</exception>
+        <altmember cref="P:System.Windows.Controls.SpellCheck.CustomDictionaries" />
+        <altmember cref="T:System.Windows.Controls.SpellCheck" />
+        <altmember cref="T:System.Windows.Controls.TextBox" />
+        <altmember cref="T:System.Windows.Controls.RichTextBox" />
       </Docs>
     </Member>
     <Member MemberName="GetIsEnabled">

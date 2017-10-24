@@ -18,6 +18,9 @@
     <summary>Represents a stack frame for executing code. This class contains methods for resolving scope. It belongs to the compilation and run-time state category.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.Closure" />
+    <altmember cref="T:Microsoft.JScript.Globals" />
+    <altmember cref="T:Microsoft.JScript.GlobalScope" />
   </Docs>
   <Members>
     <Member MemberName="closureInstance">
@@ -43,6 +46,11 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ScriptObject" />
+        <altmember cref="T:Microsoft.JScript.IActivationObject" />
+        <altmember cref="T:Microsoft.JScript.Closure" />
+        <altmember cref="T:Microsoft.JScript.Globals" />
+        <altmember cref="T:Microsoft.JScript.GlobalScope" />
       </Docs>
     </Member>
     <Member MemberName="GetDefaultThisObject">
@@ -63,6 +71,11 @@
         <returns>The current default scope.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ScriptObject" />
+        <altmember cref="T:Microsoft.JScript.IActivationObject" />
+        <altmember cref="T:Microsoft.JScript.Closure" />
+        <altmember cref="T:Microsoft.JScript.Globals" />
+        <altmember cref="T:Microsoft.JScript.GlobalScope" />
       </Docs>
     </Member>
     <Member MemberName="GetField">
@@ -88,6 +101,11 @@
         <returns>null in all cases.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ScriptObject" />
+        <altmember cref="T:Microsoft.JScript.IActivationObject" />
+        <altmember cref="T:Microsoft.JScript.Closure" />
+        <altmember cref="T:Microsoft.JScript.Globals" />
+        <altmember cref="T:Microsoft.JScript.GlobalScope" />
       </Docs>
     </Member>
     <Member MemberName="GetGlobalScope">
@@ -108,6 +126,10 @@
         <returns>The global scope.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ScriptObject" />
+        <altmember cref="T:Microsoft.JScript.IActivationObject" />
+        <altmember cref="T:Microsoft.JScript.Closure" />
+        <altmember cref="T:Microsoft.JScript.Globals" />
       </Docs>
     </Member>
     <Member MemberName="GetMember">
@@ -133,6 +155,11 @@
         <returns>An array of objects that match the <paramref name="name" /> argument.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ScriptObject" />
+        <altmember cref="T:Microsoft.JScript.IActivationObject" />
+        <altmember cref="T:Microsoft.JScript.Closure" />
+        <altmember cref="T:Microsoft.JScript.Globals" />
+        <altmember cref="T:Microsoft.JScript.GlobalScope" />
       </Docs>
     </Member>
     <Member MemberName="GetMembers">
@@ -156,6 +183,11 @@
         <returns>An array of objects that contains all members of the current object.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ScriptObject" />
+        <altmember cref="T:Microsoft.JScript.IActivationObject" />
+        <altmember cref="T:Microsoft.JScript.Closure" />
+        <altmember cref="T:Microsoft.JScript.Globals" />
+        <altmember cref="T:Microsoft.JScript.GlobalScope" />
       </Docs>
     </Member>
     <Member MemberName="GetMemberValue">
@@ -186,6 +218,11 @@
         <returns>The value of the member <paramref name="name" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ScriptObject" />
+        <altmember cref="T:Microsoft.JScript.IActivationObject" />
+        <altmember cref="T:Microsoft.JScript.Closure" />
+        <altmember cref="T:Microsoft.JScript.Globals" />
+        <altmember cref="T:Microsoft.JScript.GlobalScope" />
       </Docs>
     </Member>
     <Member MemberName="localVars">
@@ -204,6 +241,11 @@
         <summary>Stores the local variables for this stack frame.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ScriptObject" />
+        <altmember cref="T:Microsoft.JScript.IActivationObject" />
+        <altmember cref="T:Microsoft.JScript.Closure" />
+        <altmember cref="T:Microsoft.JScript.Globals" />
+        <altmember cref="T:Microsoft.JScript.GlobalScope" />
       </Docs>
     </Member>
     <Member MemberName="Microsoft.JScript.IActivationObject.GetLocalField">
@@ -227,6 +269,11 @@
         <returns>The local declaration of the field.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ScriptObject" />
+        <altmember cref="T:Microsoft.JScript.IActivationObject" />
+        <altmember cref="T:Microsoft.JScript.Closure" />
+        <altmember cref="T:Microsoft.JScript.Globals" />
+        <altmember cref="T:Microsoft.JScript.GlobalScope" />
       </Docs>
     </Member>
     <Member MemberName="PushStackFrameForMethod">
@@ -253,6 +300,11 @@
         <summary>Creates a new <see cref="T:Microsoft.JScript.StackFrame" /> object for a method and pushes it onto the global scope stack.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ScriptObject" />
+        <altmember cref="T:Microsoft.JScript.IActivationObject" />
+        <altmember cref="T:Microsoft.JScript.Closure" />
+        <altmember cref="T:Microsoft.JScript.Globals" />
+        <altmember cref="T:Microsoft.JScript.GlobalScope" />
       </Docs>
     </Member>
     <Member MemberName="PushStackFrameForStaticMethod">
@@ -279,6 +331,11 @@
         <summary>Creates a new <see cref="T:Microsoft.JScript.StackFrame" /> object for a static method and pushes it onto the global scope stack.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ScriptObject" />
+        <altmember cref="T:Microsoft.JScript.IActivationObject" />
+        <altmember cref="T:Microsoft.JScript.Closure" />
+        <altmember cref="T:Microsoft.JScript.Globals" />
+        <altmember cref="T:Microsoft.JScript.GlobalScope" />
       </Docs>
     </Member>
   </Members>

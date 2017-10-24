@@ -211,6 +211,8 @@
         <returns>
           <see langword="true" /> if <see cref="P:System.ComponentModel.ListBindableAttribute.ListBindable" /> is set to the default value; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="F:System.ComponentModel.ListBindableAttribute.Yes" />
+        <altmember cref="F:System.ComponentModel.ListBindableAttribute.No" />
       </Docs>
     </Member>
     <Member MemberName="ListBindable">
@@ -239,6 +241,8 @@
         <value>
           <see langword="true" /> if the list is bindable; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="F:System.ComponentModel.ListBindableAttribute.Yes" />
+        <altmember cref="F:System.ComponentModel.ListBindableAttribute.No" />
       </Docs>
     </Member>
     <Member MemberName="No">
@@ -300,5 +304,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ListBindableAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

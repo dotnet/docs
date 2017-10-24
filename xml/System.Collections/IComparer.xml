@@ -46,6 +46,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Collections.Comparer" />
+    <altmember cref="T:System.Collections.Generic.IComparer`1" />
+    <altmember cref="P:System.Threading.Thread.CurrentCulture" />
+    <altmember cref="T:System.Globalization.CompareInfo" />
+    <altmember cref="T:System.Globalization.CultureInfo" />
   </Docs>
   <Members>
     <Member MemberName="Compare">
@@ -124,6 +129,10 @@
  -or-  
   
  <paramref name="x" /> and <paramref name="y" /> are of different types and neither one can handle comparisons with the other.</exception>
+        <altmember cref="T:System.IComparable" />
+        <altmember cref="P:System.Threading.Thread.CurrentCulture" />
+        <altmember cref="T:System.Globalization.CompareInfo" />
+        <altmember cref="T:System.Globalization.CultureInfo" />
       </Docs>
     </Member>
   </Members>

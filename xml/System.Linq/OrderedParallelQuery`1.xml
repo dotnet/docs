@@ -30,6 +30,7 @@
     <typeparam name="TSource">The type of elements in the source collection.</typeparam>
     <summary>Represents a sorted, parallel sequence.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Linq.ParallelEnumerable" />
   </Docs>
   <Members>
     <Member MemberName="GetEnumerator">
@@ -59,6 +60,7 @@
         <summary>Returns an enumerator that iterates through the sequence.</summary>
         <returns>An enumerator that iterates through the sequence.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Linq.ParallelEnumerable" />
       </Docs>
     </Member>
   </Members>

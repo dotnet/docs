@@ -31,6 +31,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Attribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -54,6 +55,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Attribute" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -144,5 +146,14 @@ csc /t:library /out:myWebAppPath/Bin/cs_myConstructorNeedsTagAtt.dll constructor
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ConstructorNeedsTagAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

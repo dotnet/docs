@@ -942,6 +942,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">A derived type fails to implement this method.</exception>
+        <altmember cref="M:System.Web.HttpContext.SetSessionStateBehavior(System.Web.SessionState.SessionStateBehavior)" />
       </Docs>
     </Member>
     <Member MemberName="SkipAuthorization">
@@ -1083,5 +1084,41 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RewritePath">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, assigns an internal rewrite path, which lets the request URL differ from the internal path of the resource.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetGlobalResourceObject">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, gets an application-level resource.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetLocalResourceObject">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, gets a page-level resource.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AcceptWebSocketRequest">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When implemented in a derived class, accepts an <see cref="T:System.Web.WebSockets.AspNetWebSocket" /> request.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

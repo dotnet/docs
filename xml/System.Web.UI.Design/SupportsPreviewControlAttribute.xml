@@ -48,6 +48,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.Design.ControlDesigner.UsePreviewControl" />
+    <altmember cref="P:System.Web.UI.Design.ControlDesigner.ViewControl" />
+    <altmember cref="T:System.Web.UI.Design.WebControls.PreviewControlDesigner" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -99,6 +102,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.SupportsPreviewControlAttribute.IsDefaultAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -131,6 +135,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -159,6 +164,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.GetHashCode" />
+        <altmember cref="T:System.Collections.Hashtable" />
+        <altmember cref="M:System.Web.UI.Design.SupportsPreviewControlAttribute.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="IsDefaultAttribute">
@@ -186,6 +194,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.UI.Design.SupportsPreviewControlAttribute.Default" />
       </Docs>
     </Member>
     <Member MemberName="SupportsPreviewControl">
@@ -216,6 +225,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.UsePreviewControl" />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.ViewControl" />
       </Docs>
     </Member>
   </Members>

@@ -137,6 +137,9 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
  ]]></format>
     </remarks>
     <threadsafe>All members of this type are thread safe. Members that appear to modify instance state actually return a new instance initialized with the new value. As with any other type, reading and writing to a shared variable that contains an instance of this type must be protected by a lock to guarantee thread safety.</threadsafe>
+    <altmember cref="T:System.IComparable" />
+    <altmember cref="T:System.IConvertible" />
+    <altmember cref="T:System.String" />
   </Docs>
   <Members>
     <Member MemberName="CompareTo">
@@ -214,6 +217,8 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IComparable" />
+        <altmember cref="M:System.Char.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="CompareTo">
@@ -289,6 +294,8 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="value" /> is not a <see cref="T:System.Char" /> object.</exception>
+        <altmember cref="T:System.IComparable" />
+        <altmember cref="M:System.Char.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ConvertFromUtf32">
@@ -344,6 +351,8 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="utf32" /> is not a valid 21-bit Unicode code point ranging from U+0 through U+10FFFF, excluding the surrogate pair range from U+D800 through U+DFFF.</exception>
+        <altmember cref="M:System.Char.ConvertToUtf32(System.Char,System.Char)" />
+        <altmember cref="T:System.Text.UTF32Encoding" />
       </Docs>
     </Member>
     <Member MemberName="ConvertToUtf32">
@@ -401,6 +410,8 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="highSurrogate" /> is not in the range U+D800 through U+DBFF, or <paramref name="lowSurrogate" /> is not in the range U+DC00 through U+DFFF.</exception>
+        <altmember cref="M:System.Char.ConvertFromUtf32(System.Int32)" />
+        <altmember cref="T:System.Text.UTF32Encoding" />
       </Docs>
     </Member>
     <Member MemberName="ConvertToUtf32">
@@ -459,6 +470,8 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is not a position within <paramref name="s" />.</exception>
         <exception cref="T:System.ArgumentException">The specified index position contains a surrogate pair, and either the first character in the pair is not a valid high surrogate or the second character in the pair is not a valid low surrogate.</exception>
+        <altmember cref="M:System.Char.ConvertFromUtf32(System.Int32)" />
+        <altmember cref="T:System.Text.UTF32Encoding" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -502,6 +515,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Char.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -554,6 +568,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Char.CompareTo(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -787,6 +802,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Globalization.CharUnicodeInfo.GetUnicodeCategory(System.Char)" />
       </Docs>
     </Member>
     <Member MemberName="GetUnicodeCategory">
@@ -844,6 +860,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
           <paramref name="s" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than zero or greater than the last position in <paramref name="s" />.</exception>
+        <altmember cref="M:System.Globalization.CharUnicodeInfo.GetUnicodeCategory(System.Char)" />
       </Docs>
     </Member>
     <MemberGroup MemberName="IsControl">
@@ -1050,6 +1067,8 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Boolean" />
+        <altmember cref="M:System.Char.IsNumber(System.Char)" />
       </Docs>
     </Member>
     <Member MemberName="IsDigit">
@@ -1112,6 +1131,8 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
           <paramref name="s" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than zero or greater than the last position in <paramref name="s" />.</exception>
+        <altmember cref="T:System.Boolean" />
+        <altmember cref="M:System.Char.IsNumber(System.Char)" />
       </Docs>
     </Member>
     <Member MemberName="IsHighSurrogate">
@@ -1316,6 +1337,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Boolean" />
       </Docs>
     </Member>
     <Member MemberName="IsLetter">
@@ -1386,6 +1408,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
           <paramref name="s" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than zero or greater than the last position in <paramref name="s" />.</exception>
+        <altmember cref="T:System.Boolean" />
       </Docs>
     </Member>
     <MemberGroup MemberName="IsLetterOrDigit">
@@ -1458,6 +1481,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Boolean" />
       </Docs>
     </Member>
     <Member MemberName="IsLetterOrDigit">
@@ -1518,6 +1542,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
           <paramref name="s" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than zero or greater than the last position in <paramref name="s" />.</exception>
+        <altmember cref="T:System.Boolean" />
       </Docs>
     </Member>
     <Member MemberName="IsLower">
@@ -1570,6 +1595,8 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Boolean" />
+        <altmember cref="M:System.Char.IsUpper(System.Char)" />
       </Docs>
     </Member>
     <Member MemberName="IsLower">
@@ -1630,6 +1657,9 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
           <paramref name="s" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than zero or greater than the last position in <paramref name="s" />.</exception>
+        <altmember cref="T:System.Boolean" />
+        <altmember cref="T:System.String" />
+        <altmember cref="M:System.Char.IsUpper(System.Char)" />
       </Docs>
     </Member>
     <Member MemberName="IsLowSurrogate">
@@ -1804,6 +1834,8 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Boolean" />
+        <altmember cref="M:System.Char.IsDigit(System.Char)" />
       </Docs>
     </Member>
     <Member MemberName="IsNumber">
@@ -1874,6 +1906,9 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
           <paramref name="s" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than zero or greater than the last position in <paramref name="s" />.</exception>
+        <altmember cref="T:System.Boolean" />
+        <altmember cref="T:System.String" />
+        <altmember cref="M:System.Char.IsDigit(System.Char)" />
       </Docs>
     </Member>
     <MemberGroup MemberName="IsPunctuation">
@@ -2000,6 +2035,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Boolean" />
       </Docs>
     </Member>
     <Member MemberName="IsPunctuation">
@@ -2087,6 +2123,8 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
           <paramref name="s" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than zero or greater than the last position in <paramref name="s" />.</exception>
+        <altmember cref="T:System.Boolean" />
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <MemberGroup MemberName="IsSeparator">
@@ -2177,6 +2215,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Globalization.UnicodeCategory" />
       </Docs>
     </Member>
     <Member MemberName="IsSeparator">
@@ -2246,6 +2285,8 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
           <paramref name="s" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than zero or greater than the last position in <paramref name="s" />.</exception>
+        <altmember cref="T:System.Boolean" />
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="IsSurrogate">
@@ -2298,6 +2339,9 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Char.IsHighSurrogate" />
+        <altmember cref="Overload:System.Char.IsLowSurrogate" />
+        <altmember cref="Overload:System.Char.IsSurrogatePair" />
       </Docs>
     </Member>
     <Member MemberName="IsSurrogate">
@@ -2358,6 +2402,9 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
           <paramref name="s" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than zero or greater than the last position in <paramref name="s" />.</exception>
+        <altmember cref="Overload:System.Char.IsHighSurrogate" />
+        <altmember cref="Overload:System.Char.IsLowSurrogate" />
+        <altmember cref="Overload:System.Char.IsSurrogatePair" />
       </Docs>
     </Member>
     <Member MemberName="IsSurrogatePair">
@@ -2412,6 +2459,8 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Char.IsHighSurrogate(System.Char)" />
+        <altmember cref="M:System.Char.IsLowSurrogate(System.Char)" />
       </Docs>
     </Member>
     <Member MemberName="IsSurrogatePair">
@@ -2470,6 +2519,8 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
           <paramref name="s" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is not a position within <paramref name="s" />.</exception>
+        <altmember cref="M:System.Char.IsHighSurrogate(System.Char)" />
+        <altmember cref="M:System.Char.IsLowSurrogate(System.Char)" />
       </Docs>
     </Member>
     <MemberGroup MemberName="IsSymbol">
@@ -2578,6 +2629,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Boolean" />
       </Docs>
     </Member>
     <Member MemberName="IsSymbol">
@@ -2656,6 +2708,8 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
           <paramref name="s" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than zero or greater than the last position in <paramref name="s" />.</exception>
+        <altmember cref="T:System.Boolean" />
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="IsUpper">
@@ -2699,6 +2753,8 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Boolean" />
+        <altmember cref="M:System.Char.IsLower(System.Char)" />
       </Docs>
     </Member>
     <Member MemberName="IsUpper">
@@ -2750,6 +2806,8 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
           <paramref name="s" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than zero or greater than the last position in <paramref name="s" />.</exception>
+        <altmember cref="T:System.Boolean" />
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <MemberGroup MemberName="IsWhiteSpace">
@@ -2838,6 +2896,8 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Boolean" />
+        <altmember cref="T:System.Globalization.UnicodeCategory" />
       </Docs>
     </Member>
     <Member MemberName="IsWhiteSpace">
@@ -2906,6 +2966,9 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
           <paramref name="s" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than zero or greater than the last position in <paramref name="s" />.</exception>
+        <altmember cref="T:System.Boolean" />
+        <altmember cref="T:System.String" />
+        <altmember cref="T:System.Globalization.UnicodeCategory" />
       </Docs>
     </Member>
     <Member MemberName="MaxValue">
@@ -2943,6 +3006,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Char.MinValue" />
       </Docs>
     </Member>
     <Member MemberName="MinValue">
@@ -2980,6 +3044,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Char.MaxValue" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -3027,6 +3092,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
         <exception cref="T:System.ArgumentNullException">
           <paramref name="s" /> is <see langword="null" />.</exception>
         <exception cref="T:System.FormatException">The length of <paramref name="s" /> is not 1.</exception>
+        <altmember cref="M:System.Char.ToString" />
       </Docs>
     </Member>
     <Member MemberName="System.IComparable.CompareTo">
@@ -3726,6 +3792,8 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
         <block subset="none" type="usage">
           <para>As explained in [Best Practices for Using Strings](~/docs/standard/base-types/best-practices-strings.md), we recommend that you avoid calling character-casing and string-casing methods that substitute default values. Instead, you should call methods that require parameters to be explicitly specified. To convert a character to lowercase by using the casing conventions of the current culture, call the <see cref="M:System.Char.ToLower(System.Char,System.Globalization.CultureInfo)" /> method overload with a value of <see cref="P:System.Globalization.CultureInfo.CurrentCulture" /> for its <paramref name="culture" /> parameter.</para>
         </block>
+        <altmember cref="M:System.String.ToLower" />
+        <altmember cref="M:System.Char.ToUpper(System.Char,System.Globalization.CultureInfo)" />
       </Docs>
     </Member>
     <Member MemberName="ToLower">
@@ -3777,6 +3845,9 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="culture" /> is <see langword="null" />.</exception>
+        <altmember cref="P:System.Globalization.CultureInfo.CurrentCulture" />
+        <altmember cref="M:System.String.ToLower" />
+        <altmember cref="M:System.Char.ToUpper(System.Char,System.Globalization.CultureInfo)" />
       </Docs>
     </Member>
     <Member MemberName="ToLowerInvariant">
@@ -3821,6 +3892,9 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.String.ToLower" />
+        <altmember cref="M:System.Char.ToUpper(System.Char,System.Globalization.CultureInfo)" />
+        <altmember cref="P:System.Globalization.CultureInfo.InvariantCulture" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -3864,6 +3938,8 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Char.Parse(System.String)" />
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -3910,6 +3986,8 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Char.Parse(System.String)" />
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -3957,6 +4035,8 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Char.Parse(System.String)" />
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="ToUpper">
@@ -4012,6 +4092,8 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
         <block subset="none" type="usage">
           <para>As explained in [Best Practices for Using Strings](~/docs/standard/base-types/best-practices-strings.md), we recommend that you avoid calling character-casing and string-casing methods that substitute default values. Instead, you should call methods that require parameters to be explicitly specified. To convert a character to uppercase by using the casing conventions of the current culture, call the <see cref="M:System.Char.ToUpper(System.Char,System.Globalization.CultureInfo)" /> method overload with a value of <see cref="P:System.Globalization.CultureInfo.CurrentCulture" /> for its <paramref name="culture" /> parameter.</para>
         </block>
+        <altmember cref="M:System.String.ToUpper" />
+        <altmember cref="M:System.Char.ToLower(System.Char,System.Globalization.CultureInfo)" />
       </Docs>
     </Member>
     <Member MemberName="ToUpper">
@@ -4062,6 +4144,9 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="culture" /> is <see langword="null" />.</exception>
+        <altmember cref="P:System.Globalization.CultureInfo.CurrentCulture" />
+        <altmember cref="M:System.String.ToUpper" />
+        <altmember cref="M:System.Char.ToLower(System.Char,System.Globalization.CultureInfo)" />
       </Docs>
     </Member>
     <Member MemberName="ToUpperInvariant">
@@ -4106,6 +4191,9 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.String.ToUpper" />
+        <altmember cref="M:System.Char.ToUpper(System.Char,System.Globalization.CultureInfo)" />
+        <altmember cref="P:System.Globalization.CultureInfo.InvariantCulture" />
       </Docs>
     </Member>
     <Member MemberName="TryParse">
@@ -4160,7 +4248,202 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Char.Parse(System.String)" />
+        <altmember cref="M:System.Char.ToString" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsLower">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether a Unicode character is categorized as a lowercase letter.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the value of this instance to its equivalent string representation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IsSurrogate">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether a character has a surrogate code unit.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetNumericValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a specified numeric Unicode character to a double-precision floating-point number.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IsNumber">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether a Unicode character is categorized as a number.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToLower">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the value of a Unicode character to its lowercase equivalent.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IsHighSurrogate">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether the specified <see cref="T:System.Char" /> object is a high surrogate.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToUpper">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the value of a Unicode character to its uppercase equivalent.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether this instance is equal to a specified object or <see cref="T:System.Char" /> value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CompareTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares this instance to a specified object or value type, and indicates whether this instance precedes, follows, or appears in the same position in the sort order as the specified object or value type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetUnicodeCategory">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Categorizes a Unicode character into a group identified by one of the <see cref="T:System.Globalization.UnicodeCategory" /> values.</summary>
+        <altmember cref="M:System.Globalization.CharUnicodeInfo.GetUnicodeCategory(System.Char)" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ConvertToUtf32">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the value of a UTF-16 encoded surrogate pair into a Unicode code point.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IsUpper">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether a Unicode character is categorized as an uppercase letter.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IsLowSurrogate">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether the specified <see cref="T:System.Char" /> object is a low surrogate.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IsSurrogatePair">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether two specified <see cref="T:System.Char" /> objects form a surrogate pair.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

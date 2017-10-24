@@ -1046,5 +1046,50 @@
         <exception cref="T:System.Web.HttpException">An attempt was made to get the <see cref="P:System.Web.Profile.ProfileManager.Providers" /> property value without at least <see cref="F:System.Web.AspNetHostingPermissionLevel.Medium" /> permission.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetAllInactiveProfiles">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves user profile data for profiles in which the last activity date occurred on or before a specified date and time.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FindProfilesByUserName">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves profile information for profiles in which the user name matches a specified name.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FindInactiveProfilesByUserName">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves profile information for profiles in which the last activity date occurred on or before a specified date and time and the user name for the profile matches a specified name.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DeleteProfiles">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Deletes profile properties and information from the data source for a supplied list of profiles.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetAllProfiles">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves user profile data for profiles in the data source.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

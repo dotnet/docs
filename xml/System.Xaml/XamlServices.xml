@@ -490,5 +490,32 @@
         <exception cref="T:System.Xaml.XamlException">The XAML schema context does not match between the provided <paramref name="xamlReader" /> and <paramref name="xamlWriter" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Transform">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Connects a <see cref="T:System.Xaml.XamlReader" /> and a <see cref="T:System.Xaml.XamlWriter" /> in order to use a common XAML node set intermediary. Potentially transforms the content, depending on the types of readers and writers that are provided.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Save">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Processes a provided object graph into a XAML node representation and then into an output format for serialization.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Load">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads source for a XAML reader and writes its output as an object graph.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

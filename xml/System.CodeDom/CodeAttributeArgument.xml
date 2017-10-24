@@ -47,6 +47,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.CodeDom.CodeAttributeDeclaration" />
+    <altmember cref="T:System.CodeDom.CodeAttributeArgumentCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -88,6 +90,7 @@
         <param name="value">A <see cref="T:System.CodeDom.CodeExpression" /> that represents the value of the argument.</param>
         <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeAttributeArgument" /> class using the specified value.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeExpression" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -112,6 +115,7 @@
         <param name="value">A <see cref="T:System.CodeDom.CodeExpression" /> that represents the value of the argument.</param>
         <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeAttributeArgument" /> class using the specified name and value.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeExpression" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -156,7 +160,17 @@
         <summary>Gets or sets the value for the attribute argument.</summary>
         <value>A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the value for the attribute argument.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeExpression" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeAttributeArgument" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

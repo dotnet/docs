@@ -22,6 +22,7 @@
   <Docs>
     <summary>Represents an entity reference node.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="M:System.Xml.XmlDocument.CreateEntityReference(System.String)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -292,6 +293,7 @@
         <summary>Gets the type of the node.</summary>
         <value>The node type. For <see langword="XmlEntityReference" /> nodes, the value is XmlNodeType.EntityReference.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Xml.XmlNodeType" />
       </Docs>
     </Member>
     <Member MemberName="Value">

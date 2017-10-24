@@ -185,6 +185,7 @@
  ]]></format>
     </remarks>
     <threadsafe>The <see cref="T:System.Text.RegularExpressions.Regex" /> class is immutable (read-only) and thread safe. <see cref="T:System.Text.RegularExpressions.Regex" /> objects can be created on any thread and shared between threads. For more information, see [Thread Safety](~/docs/standard/base-types/thread-safety-in-regular-expressions.md).</threadsafe>
+    <altmember cref="T:System.Configuration.RegexStringValidator" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -563,9 +564,19 @@
         <ReturnType>System.Collections.IDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a dictionary that maps named capturing groups to their index values.</summary>
+        <value>A dictionary that maps named capturing groups to their index values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Note that this property is protected; it can only be accessed from a class derived from the <xref:System.Text.RegularExpressions.Regex> class.  
+  
+ A set operation attempts to convert the value assigned to the property to a <xref:System.Collections.Hashtable> object; if this conversion fails, it calls the <xref:System.Collections.Hashtable.%23ctor%28System.Collections.IDictionary%29?displayProperty=fullName> constructor.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The value assigned to the <see cref="P:System.Text.RegularExpressions.Regex.CapNames" /> property in a set operation is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="caps">
@@ -623,9 +634,19 @@
         <ReturnType>System.Collections.IDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a dictionary that maps numbered capturing groups to their index values.</summary>
+        <value>A dictionary that maps numbered capturing groups to their index values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Note that this property is protected; it can only be accessed from a class derived from the <xref:System.Text.RegularExpressions.Regex> class.  
+  
+ A set operation attempts to convert the value assigned to the property to a <xref:System.Collections.Hashtable> object; if this conversion fails, it calls the <xref:System.Collections.Hashtable.%23ctor%28System.Collections.IDictionary%29?displayProperty=fullName> constructor.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The value assigned to the <see cref="P:System.Text.RegularExpressions.Regex.Caps" /> property in a set operation is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="capsize">
@@ -976,6 +997,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="str" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Text.RegularExpressions.Regex.Unescape(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="factory">
@@ -1066,6 +1088,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Text.RegularExpressions.GroupCollection" />
       </Docs>
     </Member>
     <Member MemberName="GetGroupNumbers">
@@ -1126,6 +1149,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Text.RegularExpressions.GroupCollection" />
       </Docs>
     </Member>
     <Member MemberName="GroupNameFromNumber">
@@ -1193,6 +1217,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Text.RegularExpressions.GroupCollection" />
+        <altmember cref="M:System.Text.RegularExpressions.Regex.GetGroupNumbers" />
       </Docs>
     </Member>
     <Member MemberName="GroupNumberFromName">
@@ -1239,6 +1265,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="name" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Text.RegularExpressions.GroupCollection" />
+        <altmember cref="M:System.Text.RegularExpressions.Regex.GetGroupNames" />
       </Docs>
     </Member>
     <Member MemberName="InfiniteMatchTimeout">
@@ -1299,6 +1327,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Text.RegularExpressions.Regex.MatchTimeout" />
       </Docs>
     </Member>
     <Member MemberName="InitializeReferences">
@@ -1879,6 +1908,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="input" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Text.RegularExpressions.RegexMatchTimeoutException">A time-out occurred. For more information about time-outs, see the Remarks section.</exception>
+        <altmember cref="M:System.Text.RegularExpressions.Match.NextMatch" />
       </Docs>
     </Member>
     <Member MemberName="Match">
@@ -1940,6 +1970,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="startat" /> is less than zero or greater than the length of <paramref name="input" />.</exception>
         <exception cref="T:System.Text.RegularExpressions.RegexMatchTimeoutException">A time-out occurred. For more information about time-outs, see the Remarks section.</exception>
+        <altmember cref="M:System.Text.RegularExpressions.Match.NextMatch" />
       </Docs>
     </Member>
     <Member MemberName="Match">
@@ -2019,6 +2050,7 @@
         <block subset="none" type="usage">
           <para>This method times out after an interval that is equal to the default time-out value of the application domain in which it is called. If a time-out value has not been defined for the application domain, the value <see cref="F:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout" />, which prevents the method from timing out, is used. The recommended static method for retrieving a pattern match is <see cref="M:System.Text.RegularExpressions.Regex.Match(System.String,System.String)" />, which lets you set the time-out interval.</para>
         </block>
+        <altmember cref="M:System.Text.RegularExpressions.Match.NextMatch" />
       </Docs>
     </Member>
     <Member MemberName="Match">
@@ -2086,6 +2118,7 @@
   
  <paramref name="beginning" /><see langword="+" /><paramref name="length" /><see langword="–1" /> identifies a position that is outside the range of <paramref name="input" />.</exception>
         <exception cref="T:System.Text.RegularExpressions.RegexMatchTimeoutException">A time-out occurred. For more information about time-outs, see the Remarks section.</exception>
+        <altmember cref="M:System.Text.RegularExpressions.Match.NextMatch" />
       </Docs>
     </Member>
     <Member MemberName="Match">
@@ -2168,6 +2201,7 @@
         <block subset="none" type="usage">
           <para>This method times out after an interval that is equal to the default time-out value of the application domain in which it is called. If a time-out value has not been defined for the application domain, the value <see cref="F:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout" />, which prevents the method from timing out, is used. The recommended static method for retrieving a pattern match is <see cref="M:System.Text.RegularExpressions.Regex.Match(System.String,System.String)" />, which lets you set the time-out interval.</para>
         </block>
+        <altmember cref="M:System.Text.RegularExpressions.Match.NextMatch" />
       </Docs>
     </Member>
     <Member MemberName="Match">
@@ -2734,6 +2768,7 @@
           <para>
             <see cref="T:System.Text.RegularExpressions.Regex" /> is the base class of regular expressions created by the <see cref="Overload:System.Text.RegularExpressions.Regex.CompileToAssembly" /> method. These compiled regular expressions use the base class implementation of the <see cref="P:System.Text.RegularExpressions.Regex.Options" /> property. If called from a derived class, the <see cref="P:System.Text.RegularExpressions.Regex.Options" /> property returns the options that were passed to the <paramref name="options" /> parameter of the <see cref="T:System.Text.RegularExpressions.RegexCompilationInfo" /> class constructor that was used to define the regular expression.</para>
         </block>
+        <altmember cref="T:System.Text.RegularExpressions.RegexOptions" />
       </Docs>
     </Member>
     <Member MemberName="pattern">
@@ -2920,6 +2955,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="input" /> or <paramref name="evaluator" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Text.RegularExpressions.RegexMatchTimeoutException">A time-out occurred. For more information about time-outs, see the Remarks section.</exception>
+        <altmember cref="T:System.Text.RegularExpressions.MatchEvaluator" />
       </Docs>
     </Member>
     <Member MemberName="Replace">
@@ -3162,6 +3198,7 @@
         <block subset="none" type="usage">
           <para>This method times out after an interval that is equal to the default time-out value of the application domain in which it is called. If a time-out value has not been defined for the application domain, the value <see cref="F:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout" />, which prevents the method from timing out, is used. The recommended static method for evaluating and replacing a pattern match is <see cref="M:System.Text.RegularExpressions.Regex.Replace(System.String,System.String,System.Text.RegularExpressions.MatchEvaluator,System.Text.RegularExpressions.RegexOptions,System.TimeSpan)" />, which lets you set the time-out interval.</para>
         </block>
+        <altmember cref="T:System.Text.RegularExpressions.MatchEvaluator" />
       </Docs>
     </Member>
     <Member MemberName="Replace">
@@ -3250,6 +3287,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="input" /> or <paramref name="evaluator" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Text.RegularExpressions.RegexMatchTimeoutException">A time-out occurred. For more information about time-outs, see the Remarks section.</exception>
+        <altmember cref="T:System.Text.RegularExpressions.MatchEvaluator" />
       </Docs>
     </Member>
     <Member MemberName="Replace">
@@ -3423,6 +3461,7 @@
         <block subset="none" type="usage">
           <para>This method times out after an interval that is equal to the default time-out value of the application domain in which it is called. If a time-out value has not been defined for the application domain, the value <see cref="F:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout" />, which prevents the method from timing out, is used. The recommended static method for replacing a pattern match is <see cref="M:System.Text.RegularExpressions.Regex.Replace(System.String,System.String,System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan)" />, which lets you set the time-out interval.</para>
         </block>
+        <altmember cref="T:System.Text.RegularExpressions.RegexOptions" />
       </Docs>
     </Member>
     <Member MemberName="Replace">
@@ -3508,6 +3547,8 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="options" /> is not a valid bitwise combination of <see cref="T:System.Text.RegularExpressions.RegexOptions" /> values.</exception>
         <exception cref="T:System.Text.RegularExpressions.RegexMatchTimeoutException">A time-out occurred. For more information about time-outs, see the Remarks section.</exception>
+        <altmember cref="T:System.Text.RegularExpressions.MatchEvaluator" />
+        <altmember cref="T:System.Text.RegularExpressions.RegexOptions" />
       </Docs>
     </Member>
     <Member MemberName="Replace">
@@ -3582,6 +3623,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="startat" /> is less than zero or greater than the length of <paramref name="input" />.</exception>
         <exception cref="T:System.Text.RegularExpressions.RegexMatchTimeoutException">A time-out occurred. For more information about time-outs, see the Remarks section.</exception>
+        <altmember cref="T:System.Text.RegularExpressions.MatchEvaluator" />
       </Docs>
     </Member>
     <Member MemberName="Replace">
@@ -3687,6 +3729,7 @@
   
 -   When the regular expression pattern contains no language elements that are known to cause excessive backtracking when processing a near match.</para>
         </block>
+        <altmember cref="T:System.Text.RegularExpressions.RegexOptions" />
       </Docs>
     </Member>
     <Member MemberName="Replace">
@@ -3787,6 +3830,7 @@
   
 -   When the regular expression pattern contains no language elements that are known to cause excessive backtracking when processing a near match.</para>
         </block>
+        <altmember cref="T:System.Text.RegularExpressions.RegexOptions" />
       </Docs>
     </Member>
     <Member MemberName="RightToLeft">
@@ -4459,6 +4503,7 @@
           <paramref name="str" /> includes an unrecognized escape sequence.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="str" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Text.RegularExpressions.Regex.Escape(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="UseOptionC">
@@ -4551,5 +4596,101 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Matches">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.RegularExpressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Searches an input string for all occurrences of a regular expression and returns all the matches.</summary>
+        <block subset="none" type="usage">
+          <para>When a match attempt is repeated by calling the <see cref="Overload:System.Text.RegularExpressions.Regex.Matches" /> method, the regular expression engine gives empty matches special treatment. Usually, the regular expression engine begins the search for the next match exactly where the previous match left off. However, after an empty match, the regular expression engine advances by one character before trying the next match. This behavior guarantees that the regular expression engine will progress through the string. Otherwise, because an empty match does not result in any forward movement, the next match would start in exactly the same place as the previous match, and it would match the same empty string repeatedly.  
+  
+ In the following example, the regular expression pattern <c>a*</c> searches for zero or more occurrences of the letter "a" in the string "abaabb". As the output from the example shows, the resulting <see cref="T:System.Text.RegularExpressions.MatchCollection" /> object contains six <see cref="T:System.Text.RegularExpressions.Match" /> objects. The first match attempt finds the first "a". The second match starts exactly where the first match ends, before the first b; it finds zero occurrences of "a" and returns an empty string. The third match does not begin exactly where the second match ended, because the second match returned an empty string. Instead, it begins one character later, after the first "b". The third match finds two occurrences of "a" and returns "aa". The fourth match attempt begins where the third match ended, before the second "b", and returns an empty string. The fifth match attempt again advances one character so that it begins before the third "b" and returns an empty string. The sixth match begins after the last "b" and returns an empty string again.  
+  
+ [!code-csharp[System.Text.RegularExpressions.Regex.Matches#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.regularexpressions.regex.matches/cs/emptymatches1.cs#9)]
+ [!code-vb[System.Text.RegularExpressions.Regex.Matches#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.regularexpressions.regex.matches/vb/emptymatches1.vb#9)]</para>
+        </block>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Replace">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.RegularExpressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>In a specified input string, replaces strings that match a regular expression pattern with a specified replacement string.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Match">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.RegularExpressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Searches an input string for a substring that matches a regular expression pattern and returns the first occurrence as a single <see cref="T:System.Text.RegularExpressions.Match" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CompileToAssembly">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compiles regular expressions and saves them to disk in a single assembly.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IsMatch">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.RegularExpressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether the regular expression finds a match in the input string.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.RegularExpressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Text.RegularExpressions.Regex" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Split">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.RegularExpressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Splits an input string into an array of substrings at the positions defined by a regular expression match.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

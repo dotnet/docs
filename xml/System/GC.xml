@@ -84,6 +84,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Runtime.GCSettings" />
   </Docs>
   <Members>
     <Member MemberName="AddMemoryPressure">
@@ -617,6 +618,8 @@
  -or-  
   
  A memory allocation exceeded the amount specified in the call to the <see cref="M:System.GC.TryStartNoGCRegion(System.Int64)" /> method.</exception>
+        <altmember cref="M:System.GC.TryStartNoGCRegion(System.Int64)" />
+        <altmember cref="P:System.Runtime.GCSettings.LatencyMode" />
       </Docs>
     </Member>
     <Member MemberName="GetAllocatedBytesForCurrentThread">
@@ -690,6 +693,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.GC.MaxGeneration" />
       </Docs>
     </Member>
     <Member MemberName="GetGeneration">
@@ -738,6 +742,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">Garbage collection has already been performed on <paramref name="wo" />.</exception>
+        <altmember cref="P:System.GC.MaxGeneration" />
       </Docs>
     </Member>
     <Member MemberName="GetTotalMemory">
@@ -910,6 +915,7 @@
   
  Use the <see cref="P:System.GC.MaxGeneration" /> property to determine the maximum value you can specify when calling the <see cref="M:System.GC.Collect(System.Int32)" /> method that takes a generation parameter.</para>
         </block>
+        <altmember cref="M:System.GC.GetGeneration(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="RegisterForFullGCNotification">
@@ -1113,6 +1119,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="obj" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.GC.SuppressFinalize(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="SuppressFinalize">
@@ -1174,6 +1181,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="obj" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.GC.ReRegisterForFinalize(System.Object)" />
+        <altmember cref="M:System.Object.Finalize" />
       </Docs>
     </Member>
     <MemberGroup MemberName="TryStartNoGCRegion">
@@ -1194,6 +1203,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.GC.EndNoGCRegion" />
       </Docs>
     </MemberGroup>
     <Member MemberName="TryStartNoGCRegion">
@@ -1248,6 +1258,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="totalSize" /> exceeds the ephemeral segment size.</exception>
         <exception cref="T:System.InvalidOperationException">The process is already in no GC region latency mode.</exception>
+        <altmember cref="M:System.GC.EndNoGCRegion" />
       </Docs>
     </Member>
     <Member MemberName="TryStartNoGCRegion">
@@ -1307,6 +1318,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="totalSize" /> exceeds the ephemeral segment size.</exception>
         <exception cref="T:System.InvalidOperationException">The process is already in no GC region latency mode.</exception>
+        <altmember cref="M:System.GC.EndNoGCRegion" />
       </Docs>
     </Member>
     <Member MemberName="TryStartNoGCRegion">
@@ -1363,6 +1375,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="totalSize" /> – <paramref name="lohSize" /> exceeds the ephemeral segment size.</exception>
         <exception cref="T:System.InvalidOperationException">The process is already in no GC region latency mode.</exception>
+        <altmember cref="M:System.GC.EndNoGCRegion" />
       </Docs>
     </Member>
     <Member MemberName="TryStartNoGCRegion">
@@ -1424,6 +1437,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="totalSize" /> – <paramref name="lohSize" /> exceeds the ephemeral segment size.</exception>
         <exception cref="T:System.InvalidOperationException">The process is already in no GC region latency mode.</exception>
+        <altmember cref="M:System.GC.EndNoGCRegion" />
       </Docs>
     </Member>
     <Member MemberName="WaitForFullGCApproach">
@@ -1699,5 +1713,49 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WaitForFullGCComplete">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the status of a registered notification for determining whether a full, blocking garbage collection by the common language runtime has completed.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Collect">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Forces garbage collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetGeneration">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the current generation number of an object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WaitForFullGCApproach">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the status of a registered notification for determining whether a full, blocking garbage collection by the common language runtime is imminent.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

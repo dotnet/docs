@@ -48,6 +48,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Configuration.ScriptingRoleServiceSection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -105,6 +106,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ScriptManager" />
+        <altmember cref="T:System.Web.UI.ScriptManagerProxy" />
+        <altmember cref="M:System.Web.Security.Roles.GetRolesForUser" />
       </Docs>
     </Member>
     <Member MemberName="Path">

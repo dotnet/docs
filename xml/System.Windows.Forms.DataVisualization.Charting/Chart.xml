@@ -3118,5 +3118,59 @@ These data point properties are:
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SaveImage">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Saves the image to the specifed target.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Invalidate">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invalidates the entire surface of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Chart" /> and causes the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Chart" /> control to be redrawn.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AlignDataPointsByAxisLabel">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Aligns data points using their axis labels.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DataBindTable">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Automatically creates and binds series data to the specified data table.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LoadTemplate">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads a template into the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Chart" /> control from a specified source.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DataBindCrossTable">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Data binds a chart to the table, with one series created per unique value in a given column.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

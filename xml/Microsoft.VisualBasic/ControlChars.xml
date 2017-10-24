@@ -52,6 +52,10 @@
       <Docs>
         <summary>Represents a backspace character (<see langword="vbBack" />).</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Print(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="Cr">
@@ -69,6 +73,10 @@
       <Docs>
         <summary>Represents a carriage return character (<see langword="vbCr" />).</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Print(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="CrLf">
@@ -86,6 +94,10 @@
       <Docs>
         <summary>Represents a carriage return/linefeed character combination (<see langword="vbCrLf" />).</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Print(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="FormFeed">
@@ -103,6 +115,10 @@
       <Docs>
         <summary>Represents a form feed character for print functions (<see langword="vbFormFeed" />).</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Print(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="Lf">
@@ -120,6 +136,10 @@
       <Docs>
         <summary>Represents a line feed character (<see langword="vbLf" />).</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Print(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="NewLine">
@@ -144,6 +164,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Print(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="NullChar">
@@ -161,6 +185,10 @@
       <Docs>
         <summary>Represents a null character (<see langword="vbNullChar" />).</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Print(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="Quote">
@@ -178,6 +206,10 @@
       <Docs>
         <summary>Represents a double-quote character.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Print(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="Tab">
@@ -195,6 +227,10 @@
       <Docs>
         <summary>Represents a tab character (<see langword="vbTab" />).</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Print(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="VerticalTab">
@@ -212,6 +248,10 @@
       <Docs>
         <summary>Represents a vertical tab character (<see langword="vbVerticalTab" />).</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Print(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
       </Docs>
     </Member>
   </Members>

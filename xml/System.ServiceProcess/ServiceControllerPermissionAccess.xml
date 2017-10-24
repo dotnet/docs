@@ -17,6 +17,10 @@
   <Docs>
     <summary>Defines access levels used by <see cref="T:System.ServiceProcess.ServiceController" /> permission classes.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.ServiceProcess.ServiceControllerPermission" />
+    <altmember cref="T:System.ServiceProcess.ServiceControllerPermissionAttribute" />
+    <altmember cref="T:System.ServiceProcess.ServiceControllerPermissionEntry" />
+    <altmember cref="T:System.ServiceProcess.ServiceControllerPermissionEntryCollection" />
   </Docs>
   <Members>
     <Member MemberName="Browse">

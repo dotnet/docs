@@ -73,6 +73,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_MyControlBuilderAtt.dll ControlBuilderAt
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Attribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -128,6 +129,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_MyControlBuilderAtt.dll ControlBuilderAt
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ControlBuilder" />
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -145,6 +147,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_MyControlBuilderAtt.dll ControlBuilderAt
       <Docs>
         <summary>Specifies the new <see cref="T:System.Web.UI.ControlBuilderAttribute" /> object. By default, the new object is set to null. This field is read-only.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.ControlBuilder" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -187,6 +190,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_MyControlBuilderAtt.dll ControlBuilderAt
         <summary>Returns the hash code of the <see cref="T:System.Web.UI.ControlBuilderAttribute" /> object.</summary>
         <returns>A 32-bit signed integer representing the hash code; otherwise, 0, if the <see cref="P:System.Web.UI.ControlBuilderAttribute.BuilderType" /> is <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Object.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="IsDefaultAttribute">

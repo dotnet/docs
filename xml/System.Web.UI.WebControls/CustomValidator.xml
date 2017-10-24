@@ -99,6 +99,14 @@ void ServerValidation (object source, ServerValidateEventArgs args)
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.BaseValidator" />
+    <altmember cref="T:System.Web.UI.WebControls.RequiredFieldValidator" />
+    <altmember cref="P:System.Web.UI.WebControls.CustomValidator.ClientValidationFunction" />
+    <altmember cref="E:System.Web.UI.WebControls.CustomValidator.ServerValidate" />
+    <altmember cref="M:System.Web.UI.WebControls.CustomValidator.OnServerValidate(System.String)" />
+    <altmember cref="T:System.Web.UI.WebControls.ServerValidateEventArgs" />
+    <altmember cref="P:System.Web.UI.WebControls.ServerValidateEventArgs.Value" />
+    <altmember cref="P:System.Web.UI.WebControls.ServerValidateEventArgs.IsValid" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -114,6 +122,14 @@ void ServerValidation (object source, ServerValidateEventArgs args)
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.CustomValidator" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.BaseValidator" />
+        <altmember cref="T:System.Web.UI.WebControls.RequiredFieldValidator" />
+        <altmember cref="P:System.Web.UI.WebControls.CustomValidator.ClientValidationFunction" />
+        <altmember cref="E:System.Web.UI.WebControls.CustomValidator.ServerValidate" />
+        <altmember cref="M:System.Web.UI.WebControls.CustomValidator.OnServerValidate(System.String)" />
+        <altmember cref="T:System.Web.UI.WebControls.ServerValidateEventArgs" />
+        <altmember cref="P:System.Web.UI.WebControls.ServerValidateEventArgs.Value" />
+        <altmember cref="P:System.Web.UI.WebControls.ServerValidateEventArgs.IsValid" />
       </Docs>
     </Member>
     <Member MemberName="AddAttributesToRender">
@@ -203,6 +219,7 @@ void ServerValidation (object source, ServerValidateEventArgs args)
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.String.Empty" />
       </Docs>
     </Member>
     <Member MemberName="ControlPropertiesValid">
@@ -318,6 +335,7 @@ void ServerValidation (object source, ServerValidateEventArgs args)
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.CustomValidator.OnServerValidate(System.String)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.CustomValidator.OnServerValidate(System.String)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.CustomValidator.ServerValidate" />
       </Docs>
     </Member>
     <Member MemberName="ServerValidate">
@@ -355,6 +373,8 @@ void ServerValidation (object source, ServerValidateEventArgs args)
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.CustomValidator.OnServerValidate(System.String)" />
+        <altmember cref="T:System.Web.UI.WebControls.ServerValidateEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="ValidateEmptyText">
@@ -393,6 +413,8 @@ void ServerValidation (object source, ServerValidateEventArgs args)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.BaseValidator" />
+        <altmember cref="T:System.Web.UI.WebControls.RequiredFieldValidator" />
       </Docs>
     </Member>
   </Members>

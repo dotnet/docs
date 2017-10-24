@@ -85,6 +85,17 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.CreateUserWizard" />
+    <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.MailDefinition" />
+    <altmember cref="E:System.Web.UI.WebControls.CreateUserWizard.SendingMail" />
+    <altmember cref="T:System.Web.UI.WebControls.ChangePassword" />
+    <altmember cref="P:System.Web.UI.WebControls.ChangePassword.MailDefinition" />
+    <altmember cref="E:System.Web.UI.WebControls.ChangePassword.SendingMail" />
+    <altmember cref="T:System.Web.UI.WebControls.PasswordRecovery" />
+    <altmember cref="P:System.Web.UI.WebControls.PasswordRecovery.MailDefinition" />
+    <altmember cref="E:System.Web.UI.WebControls.PasswordRecovery.SendingMail" />
+    <altmember cref="T:System.Web.UI.WebControls.EmbeddedMailObject" />
+    <altmember cref="T:System.Net.Mail.MailMessage" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -123,6 +134,12 @@
         <returns>Returns the index of the <see cref="T:System.Web.UI.WebControls.EmbeddedMailObject" /> in the <see cref="T:System.Web.UI.WebControls.EmbeddedMailObjectsCollection" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The specified <paramref name="value" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.Contains(System.Web.UI.WebControls.EmbeddedMailObject)" />
+        <altmember cref="M:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.CopyTo(System.Web.UI.WebControls.EmbeddedMailObject[],System.Int32)" />
+        <altmember cref="M:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.IndexOf(System.Web.UI.WebControls.EmbeddedMailObject)" />
+        <altmember cref="M:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.Insert(System.Int32,System.Web.UI.WebControls.EmbeddedMailObject)" />
+        <altmember cref="P:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.Item(System.Int32)" />
+        <altmember cref="M:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.Remove(System.Web.UI.WebControls.EmbeddedMailObject)" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -153,6 +170,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.Add(System.Web.UI.WebControls.EmbeddedMailObject)" />
+        <altmember cref="M:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.CopyTo(System.Web.UI.WebControls.EmbeddedMailObject[],System.Int32)" />
+        <altmember cref="M:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.IndexOf(System.Web.UI.WebControls.EmbeddedMailObject)" />
+        <altmember cref="M:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.Insert(System.Int32,System.Web.UI.WebControls.EmbeddedMailObject)" />
+        <altmember cref="P:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.Item(System.Int32)" />
+        <altmember cref="M:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.Remove(System.Web.UI.WebControls.EmbeddedMailObject)" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -178,6 +201,12 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The specified <paramref name="array" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified <paramref name="index" /> is out of range of the collection.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.Add(System.Web.UI.WebControls.EmbeddedMailObject)" />
+        <altmember cref="M:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.Contains(System.Web.UI.WebControls.EmbeddedMailObject)" />
+        <altmember cref="M:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.IndexOf(System.Web.UI.WebControls.EmbeddedMailObject)" />
+        <altmember cref="M:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.Insert(System.Int32,System.Web.UI.WebControls.EmbeddedMailObject)" />
+        <altmember cref="P:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.Item(System.Int32)" />
+        <altmember cref="M:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.Remove(System.Web.UI.WebControls.EmbeddedMailObject)" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -200,6 +229,12 @@
         <summary>Determines the index of a specific <see cref="T:System.Web.UI.WebControls.EmbeddedMailObject" /> in the <see cref="T:System.Web.UI.WebControls.EmbeddedMailObjectsCollection" />.</summary>
         <returns>The index of the <see cref="T:System.Web.UI.WebControls.EmbeddedMailObject" /> if it exists in the <see cref="T:System.Web.UI.WebControls.EmbeddedMailObjectsCollection" />; otherwise, -1.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.Add(System.Web.UI.WebControls.EmbeddedMailObject)" />
+        <altmember cref="M:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.Contains(System.Web.UI.WebControls.EmbeddedMailObject)" />
+        <altmember cref="M:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.CopyTo(System.Web.UI.WebControls.EmbeddedMailObject[],System.Int32)" />
+        <altmember cref="M:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.Insert(System.Int32,System.Web.UI.WebControls.EmbeddedMailObject)" />
+        <altmember cref="P:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.Item(System.Int32)" />
+        <altmember cref="M:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.Remove(System.Web.UI.WebControls.EmbeddedMailObject)" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -232,6 +267,12 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified <paramref name="index" /> is out of range of the collection.</exception>
         <exception cref="T:System.ArgumentNullException">The specified <paramref name="value" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.Add(System.Web.UI.WebControls.EmbeddedMailObject)" />
+        <altmember cref="M:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.Contains(System.Web.UI.WebControls.EmbeddedMailObject)" />
+        <altmember cref="M:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.CopyTo(System.Web.UI.WebControls.EmbeddedMailObject[],System.Int32)" />
+        <altmember cref="M:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.IndexOf(System.Web.UI.WebControls.EmbeddedMailObject)" />
+        <altmember cref="P:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.Item(System.Int32)" />
+        <altmember cref="M:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.Remove(System.Web.UI.WebControls.EmbeddedMailObject)" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -279,6 +320,12 @@ myObject = myCollection.Item[index];
  -or-  
   
  <paramref name="index" /> is equal to or greater than the number of items in the collection.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.Add(System.Web.UI.WebControls.EmbeddedMailObject)" />
+        <altmember cref="M:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.Contains(System.Web.UI.WebControls.EmbeddedMailObject)" />
+        <altmember cref="M:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.CopyTo(System.Web.UI.WebControls.EmbeddedMailObject[],System.Int32)" />
+        <altmember cref="M:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.IndexOf(System.Web.UI.WebControls.EmbeddedMailObject)" />
+        <altmember cref="M:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.Insert(System.Int32,System.Web.UI.WebControls.EmbeddedMailObject)" />
+        <altmember cref="M:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.Remove(System.Web.UI.WebControls.EmbeddedMailObject)" />
       </Docs>
     </Member>
     <Member MemberName="OnValidate">
@@ -328,6 +375,12 @@ myObject = myCollection.Item[index];
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.Add(System.Web.UI.WebControls.EmbeddedMailObject)" />
+        <altmember cref="M:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.Contains(System.Web.UI.WebControls.EmbeddedMailObject)" />
+        <altmember cref="M:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.CopyTo(System.Web.UI.WebControls.EmbeddedMailObject[],System.Int32)" />
+        <altmember cref="M:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.IndexOf(System.Web.UI.WebControls.EmbeddedMailObject)" />
+        <altmember cref="M:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.Insert(System.Int32,System.Web.UI.WebControls.EmbeddedMailObject)" />
+        <altmember cref="P:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.Item(System.Int32)" />
       </Docs>
     </Member>
   </Members>

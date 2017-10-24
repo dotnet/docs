@@ -32,6 +32,15 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IO.FileSystemEventArgs" />
+    <altmember cref="T:System.IO.FileSystemEventHandler" />
+    <altmember cref="T:System.IO.FileSystemWatcher" />
+    <altmember cref="T:System.IO.InternalBufferOverflowException" />
+    <altmember cref="T:System.IO.NotifyFilters" />
+    <altmember cref="T:System.IO.RenamedEventArgs" />
+    <altmember cref="T:System.IO.RenamedEventHandler" />
+    <altmember cref="M:System.IO.FileSystemWatcher.WaitForChanged(System.IO.WatcherChangeTypes)" />
+    <altmember cref="T:System.IO.WatcherChangeTypes" />
   </Docs>
   <Members>
     <Member MemberName="ChangeType">
@@ -60,6 +69,7 @@
         <summary>Gets or sets the type of change that occurred.</summary>
         <value>One of the <see cref="T:System.IO.WatcherChangeTypes" /> values.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.IO.WatcherChangeTypes" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -154,6 +164,7 @@
         <value>
           <see langword="true" /> if the <see cref="M:System.IO.FileSystemWatcher.WaitForChanged(System.IO.WatcherChangeTypes)" /> method timed out; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.IO.FileSystemWatcher.WaitForChanged(System.IO.WatcherChangeTypes)" />
       </Docs>
     </Member>
   </Members>

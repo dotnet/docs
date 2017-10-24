@@ -40,6 +40,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.HttpListener" />
+    <altmember cref="T:System.Net.HttpListenerContext" />
+    <altmember cref="T:System.Net.HttpListenerResponse" />
   </Docs>
   <Members>
     <Member MemberName="AcceptTypes">
@@ -83,6 +86,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerContext" />
+        <altmember cref="T:System.Net.HttpListenerResponse" />
       </Docs>
     </Member>
     <Member MemberName="BeginGetClientCertificate">
@@ -163,6 +169,9 @@
  -or -  
   
  The operation is still in progress.</exception>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerContext" />
+        <altmember cref="T:System.Net.HttpListenerResponse" />
       </Docs>
     </Member>
     <Member MemberName="ContentEncoding">
@@ -204,6 +213,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerContext" />
+        <altmember cref="T:System.Net.HttpListenerResponse" />
       </Docs>
     </Member>
     <Member MemberName="ContentLength64">
@@ -247,6 +259,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerContext" />
+        <altmember cref="T:System.Net.HttpListenerResponse" />
       </Docs>
     </Member>
     <Member MemberName="ContentType">
@@ -292,6 +307,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerContext" />
+        <altmember cref="T:System.Net.HttpListenerResponse" />
       </Docs>
     </Member>
     <Member MemberName="Cookies">
@@ -333,6 +351,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerContext" />
+        <altmember cref="T:System.Net.HttpListenerResponse" />
       </Docs>
     </Member>
     <Member MemberName="EndGetClientCertificate">
@@ -405,6 +426,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">A call to this method to retrieve the client's X.509 v.3 certificate is in progress and therefore another call to this method cannot be made.</exception>
+        <altmember cref="N:System.Security.Cryptography.X509Certificates" />
       </Docs>
     </Member>
     <Member MemberName="GetClientCertificateAsync">
@@ -444,6 +466,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.Security.Cryptography.X509Certificates" />
       </Docs>
     </Member>
     <Member MemberName="HasEntityBody">
@@ -486,6 +509,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerContext" />
+        <altmember cref="T:System.Net.HttpListenerResponse" />
       </Docs>
     </Member>
     <Member MemberName="Headers">
@@ -529,6 +555,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerContext" />
+        <altmember cref="T:System.Net.HttpListenerResponse" />
       </Docs>
     </Member>
     <Member MemberName="HttpMethod">
@@ -570,6 +599,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerContext" />
+        <altmember cref="T:System.Net.HttpListenerResponse" />
       </Docs>
     </Member>
     <Member MemberName="InputStream">
@@ -617,6 +649,9 @@
         <block subset="none" type="usage">
           <para>This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).</para>
         </block>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerContext" />
+        <altmember cref="T:System.Net.HttpListenerResponse" />
       </Docs>
     </Member>
     <Member MemberName="IsAuthenticated">
@@ -666,6 +701,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerContext" />
+        <altmember cref="T:System.Net.HttpListenerResponse" />
       </Docs>
     </Member>
     <Member MemberName="IsLocal">
@@ -708,6 +746,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerContext" />
+        <altmember cref="T:System.Net.HttpListenerResponse" />
       </Docs>
     </Member>
     <Member MemberName="IsSecureConnection">
@@ -750,6 +791,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerContext" />
+        <altmember cref="T:System.Net.HttpListenerResponse" />
       </Docs>
     </Member>
     <Member MemberName="IsWebSocketRequest">
@@ -826,6 +870,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerContext" />
+        <altmember cref="T:System.Net.HttpListenerResponse" />
       </Docs>
     </Member>
     <Member MemberName="LocalEndPoint">
@@ -867,6 +914,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerContext" />
+        <altmember cref="T:System.Net.HttpListenerResponse" />
       </Docs>
     </Member>
     <Member MemberName="ProtocolVersion">
@@ -908,6 +958,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerContext" />
+        <altmember cref="T:System.Net.HttpListenerResponse" />
       </Docs>
     </Member>
     <Member MemberName="QueryString">
@@ -952,6 +1005,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerContext" />
+        <altmember cref="T:System.Net.HttpListenerResponse" />
       </Docs>
     </Member>
     <Member MemberName="RawUrl">
@@ -995,6 +1051,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerContext" />
+        <altmember cref="T:System.Net.HttpListenerResponse" />
       </Docs>
     </Member>
     <Member MemberName="RemoteEndPoint">
@@ -1031,6 +1090,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerContext" />
+        <altmember cref="T:System.Net.HttpListenerResponse" />
       </Docs>
     </Member>
     <Member MemberName="RequestTraceIdentifier">
@@ -1102,6 +1164,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Net.HttpListener.DefaultServiceNames" />
+        <altmember cref="P:System.Net.HttpListener.ExtendedProtectionPolicy" />
+        <altmember cref="P:System.Net.HttpListener.ExtendedProtectionSelectorDelegate" />
+        <altmember cref="T:System.Net.HttpListener.ExtendedProtectionSelector" />
+        <altmember cref="P:System.Net.HttpListenerRequest.TransportContext" />
+        <altmember cref="N:System.Security.Authentication.ExtendedProtection" />
+        <altmember cref="T:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy" />
       </Docs>
     </Member>
     <Member MemberName="TransportContext">
@@ -1140,6 +1209,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Net.HttpListener.DefaultServiceNames" />
+        <altmember cref="P:System.Net.HttpListener.ExtendedProtectionPolicy" />
+        <altmember cref="P:System.Net.HttpListener.ExtendedProtectionSelectorDelegate" />
+        <altmember cref="T:System.Net.HttpListener.ExtendedProtectionSelector" />
+        <altmember cref="P:System.Net.HttpListenerRequest.ServiceName" />
+        <altmember cref="N:System.Security.Authentication.ExtendedProtection" />
+        <altmember cref="T:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy" />
       </Docs>
     </Member>
     <Member MemberName="Url">
@@ -1244,6 +1320,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.Configuration.HttpListenerElement" />
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerContext" />
+        <altmember cref="T:System.Net.HttpListenerResponse" />
       </Docs>
     </Member>
     <Member MemberName="UrlReferrer">
@@ -1291,6 +1371,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerContext" />
+        <altmember cref="T:System.Net.HttpListenerResponse" />
       </Docs>
     </Member>
     <Member MemberName="UserAgent">
@@ -1336,6 +1419,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerContext" />
+        <altmember cref="T:System.Net.HttpListenerResponse" />
       </Docs>
     </Member>
     <Member MemberName="UserHostAddress">
@@ -1377,6 +1463,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerContext" />
+        <altmember cref="T:System.Net.HttpListenerResponse" />
       </Docs>
     </Member>
     <Member MemberName="UserHostName">
@@ -1422,6 +1511,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerContext" />
+        <altmember cref="T:System.Net.HttpListenerResponse" />
       </Docs>
     </Member>
     <Member MemberName="UserLanguages">
@@ -1465,6 +1557,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerContext" />
+        <altmember cref="T:System.Net.HttpListenerResponse" />
       </Docs>
     </Member>
   </Members>

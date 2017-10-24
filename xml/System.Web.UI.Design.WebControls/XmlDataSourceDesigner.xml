@@ -24,6 +24,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,6 +40,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.XmlDataSourceDesigner" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
       </Docs>
     </Member>
     <Member MemberName="CanConfigure">
@@ -58,6 +60,7 @@
         <value>
           <see langword="true" />, if the <see cref="M:System.Web.UI.Design.WebControls.XmlDataSourceDesigner.Configure" /> method can be called; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
       </Docs>
     </Member>
     <Member MemberName="CanRefreshSchema">
@@ -77,6 +80,7 @@
         <value>
           <see langword="true" />, if the <see cref="M:System.Web.UI.Design.WebControls.XmlDataSourceDesigner.RefreshSchema(System.Boolean)" /> method can be called, otherwise <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
       </Docs>
     </Member>
     <Member MemberName="Configure">
@@ -102,6 +106,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
       </Docs>
     </Member>
     <Member MemberName="Data">
@@ -127,6 +132,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
       </Docs>
     </Member>
     <Member MemberName="DataFile">
@@ -152,6 +158,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
       </Docs>
     </Member>
     <Member MemberName="GetView">
@@ -174,6 +181,8 @@
         <summary>Retrieves the design-time data source view object for the associated <see cref="T:System.Web.UI.WebControls.XmlDataSource" /> control.</summary>
         <returns>The design-time data source view object for the associated <see cref="T:System.Web.UI.WebControls.XmlDataSource" /> control.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.DesignerHierarchicalDataSourceView" />
+        <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -195,6 +204,7 @@
         <param name="component">The component.</param>
         <summary>Initializes the designer and loads the specified component.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
       </Docs>
     </Member>
     <Member MemberName="PreFilterProperties">
@@ -216,6 +226,7 @@
         <param name="properties">An <see langword="IDictionary" /> of properties.</param>
         <summary>Used by a designer component to add properties to or remove properties from, the Properties grid in a design host at design time or to provide new design-time properties that might correspond to properties on the associated control.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
       </Docs>
     </Member>
     <Member MemberName="RefreshSchema">
@@ -238,6 +249,7 @@
           <see langword="true" /> to suppress schema UI events; otherwise, <see langword="false" />.</param>
         <summary>Refreshes the schema from the data source, while optionally suppressing events.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.Design.IDataSourceDesigner.CanConfigure">
@@ -264,6 +276,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.Design.IDataSourceDesigner.CanRefreshSchema">
@@ -290,6 +303,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.Design.IDataSourceDesigner.Configure">
@@ -315,6 +329,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.Design.IDataSourceDesigner.GetView">
@@ -344,6 +359,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.Design.IDataSourceDesigner.GetViewNames">
@@ -370,6 +386,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.Design.IDataSourceDesigner.RefreshSchema">
@@ -398,6 +415,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.Design.IDataSourceDesigner.ResumeDataSourceEvents">
@@ -423,6 +441,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.Design.IDataSourceDesigner.SuppressDataSourceEvents">
@@ -448,6 +467,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
       </Docs>
     </Member>
     <Member MemberName="Transform">
@@ -473,6 +493,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
       </Docs>
     </Member>
     <Member MemberName="TransformFile">
@@ -498,6 +519,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
       </Docs>
     </Member>
     <Member MemberName="XPath">
@@ -523,6 +545,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
       </Docs>
     </Member>
   </Members>

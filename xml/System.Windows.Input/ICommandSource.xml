@@ -25,6 +25,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Input.ICommand" />
+    <altmember cref="T:System.Windows.Input.RoutedCommand" />
   </Docs>
   <Members>
     <Member MemberName="Command">
@@ -43,6 +45,8 @@
         <summary>Gets the command that will be executed when the command source is invoked.</summary>
         <value>The command that will be executed when the command source is invoked.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Input.ICommand" />
+        <altmember cref="T:System.Windows.Input.RoutedCommand" />
       </Docs>
     </Member>
     <Member MemberName="CommandParameter">
@@ -68,6 +72,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.ICommand" />
+        <altmember cref="T:System.Windows.Input.RoutedCommand" />
       </Docs>
     </Member>
     <Member MemberName="CommandTarget">
@@ -95,6 +101,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.ICommand" />
+        <altmember cref="T:System.Windows.Input.RoutedCommand" />
       </Docs>
     </Member>
   </Members>

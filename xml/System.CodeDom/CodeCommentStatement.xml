@@ -41,6 +41,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.CodeDom.CodeComment" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -171,7 +172,17 @@
         <summary>Gets or sets the contents of the comment.</summary>
         <value>A <see cref="T:System.CodeDom.CodeComment" /> that indicates the comment.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeComment" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeCommentStatement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

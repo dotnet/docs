@@ -379,6 +379,7 @@
         <exception cref="T:System.Data.DeletedRowInaccessibleException">An attempt was made to retrieve data from a deleted row.</exception>
         <exception cref="T:System.InvalidOperationException">An attempt was made to read or access a column in a closed <see langword="DataTableReader" />.</exception>
         <exception cref="T:System.InvalidCastException">The specified column does not contain a byte array.</exception>
+        <altmember cref="M:System.Data.DataTableReader.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetChar">
@@ -1211,6 +1212,7 @@ Russ
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The index passed was outside the range of 0 to <see cref="P:System.Data.DataTableReader.FieldCount" /> - 1.</exception>
         <exception cref="T:System.InvalidOperationException">An attempt was made to read or access a column in a closed <see cref="T:System.Data.DataTableReader" />.</exception>
+        <altmember cref="M:System.Data.DataTableReader.GetFieldType(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetProviderSpecificValue">
@@ -1252,6 +1254,7 @@ Russ
         <exception cref="T:System.ArgumentOutOfRangeException">The index passed was outside the range of 0 to <see cref="P:System.Data.DataTableReader.FieldCount" /> - 1.</exception>
         <exception cref="T:System.Data.DeletedRowInaccessibleException">An attempt was made to retrieve data from a deleted row.</exception>
         <exception cref="T:System.InvalidOperationException">An attempt was made to read or access a column in a closed <see cref="T:System.Data.DataTableReader" /></exception>
+        <altmember cref="M:System.Data.DataTableReader.GetValue(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetProviderSpecificValues">
@@ -1292,6 +1295,7 @@ Russ
         </remarks>
         <exception cref="T:System.Data.DeletedRowInaccessibleException">An attempt was made to retrieve data from a deleted row.</exception>
         <exception cref="T:System.InvalidOperationException">An attempt was made to read or access a column in a closed <see cref="T:System.Data.DataTableReader" />.</exception>
+        <altmember cref="M:System.Data.DataTableReader.GetValues(System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="GetSchemaTable">
@@ -1562,6 +1566,8 @@ Russ
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt was made to retrieve information about a closed <see cref="T:System.Data.DataTableReader" />.</exception>
+        <altmember cref="M:System.Data.DataTableReader.NextResult" />
+        <altmember cref="M:System.Data.DataTableReader.Read" />
       </Docs>
     </Member>
     <Member MemberName="IsClosed">
@@ -1693,6 +1699,7 @@ Russ
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">The index passed was outside the range of 0 to <see cref="P:System.Data.DataTableReader.FieldCount" /> - 1.</exception>
+        <altmember cref="M:System.Data.DataTableReader.GetValue(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -1880,5 +1887,25 @@ Russ
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.DataTableReader" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the value of the specified column in its native format.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

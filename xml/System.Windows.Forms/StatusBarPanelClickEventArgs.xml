@@ -30,6 +30,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.MouseEventArgs" />
+    <altmember cref="E:System.Windows.Forms.StatusBar.PanelClick" />
+    <altmember cref="T:System.Windows.Forms.StatusBar" />
+    <altmember cref="T:System.Windows.Forms.StatusBarPanel" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -56,6 +60,8 @@
         <param name="y">The y-coordinate of the mouse click.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.StatusBarPanelClickEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.MouseButtons" />
+        <altmember cref="T:System.Windows.Forms.StatusBarPanel" />
       </Docs>
     </Member>
     <Member MemberName="StatusBarPanel">
@@ -91,6 +97,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.StatusBarPanel" />
+        <altmember cref="E:System.Windows.Forms.StatusBar.PanelClick" />
       </Docs>
     </Member>
   </Members>

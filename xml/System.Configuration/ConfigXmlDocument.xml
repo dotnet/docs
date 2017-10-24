@@ -29,6 +29,7 @@
  ]]></format>
     </remarks>
     <forInternalUseOnly />
+    <altmember cref="T:System.Xml.XmlDocument" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,6 +50,7 @@
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigXmlDocument" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Xml.XmlDocument" />
       </Docs>
     </Member>
     <Member MemberName="CreateAttribute">
@@ -80,6 +82,7 @@
         <returns>The <see cref="P:System.Xml.Serialization.XmlAttributes.XmlAttribute" /> attribute.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Xml.XmlDocument" />
       </Docs>
     </Member>
     <Member MemberName="CreateCDataSection">
@@ -107,6 +110,7 @@
         <returns>The <see cref="T:System.Xml.XmlCDataSection" /> value.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Xml.XmlDocument" />
       </Docs>
     </Member>
     <Member MemberName="CreateComment">
@@ -134,6 +138,7 @@
         <returns>The <see cref="T:System.Xml.XmlComment" /> value.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Xml.XmlDocument" />
       </Docs>
     </Member>
     <Member MemberName="CreateElement">
@@ -165,6 +170,7 @@
         <returns>The <see cref="T:System.Xml.XmlElement" /> value.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Xml.XmlDocument" />
       </Docs>
     </Member>
     <Member MemberName="CreateSignificantWhitespace">
@@ -192,6 +198,7 @@
         <returns>The <see cref="T:System.Xml.XmlSignificantWhitespace" /> value.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Xml.XmlDocument" />
       </Docs>
     </Member>
     <Member MemberName="CreateTextNode">
@@ -219,6 +226,7 @@
         <returns>The <see cref="T:System.Xml.XmlText" /> value.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Xml.XmlDocument" />
       </Docs>
     </Member>
     <Member MemberName="CreateWhitespace">
@@ -246,6 +254,7 @@
         <returns>The <see cref="T:System.Xml.XmlWhitespace" /> value.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Xml.XmlDocument" />
       </Docs>
     </Member>
     <Member MemberName="Filename">
@@ -269,6 +278,7 @@
         <value>The configuration file name.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Xml.XmlDocument" />
       </Docs>
     </Member>
     <Member MemberName="LineNumber">
@@ -292,6 +302,7 @@
         <value>The line number for the current node.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Xml.XmlDocument" />
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -318,6 +329,7 @@
         <summary>Loads the configuration file.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Xml.XmlDocument" />
       </Docs>
     </Member>
     <Member MemberName="LoadSingleElement">
@@ -346,6 +358,7 @@
         <summary>Loads a single configuration element.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Xml.XmlDocument" />
       </Docs>
     </Member>
     <Member MemberName="System.Configuration.Internal.IConfigErrorInfo.Filename">
@@ -368,6 +381,7 @@
         <summary>Gets the configuration file name.</summary>
         <value>The file name.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Xml.XmlDocument" />
       </Docs>
     </Member>
     <Member MemberName="System.Configuration.Internal.IConfigErrorInfo.LineNumber">
@@ -390,6 +404,7 @@
         <summary>Gets the configuration line number.</summary>
         <value>The line number.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Xml.XmlDocument" />
       </Docs>
     </Member>
   </Members>

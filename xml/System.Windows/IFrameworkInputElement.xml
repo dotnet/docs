@@ -39,6 +39,8 @@
         <summary>Gets or sets the name of an element.</summary>
         <value>The element name, which is unique in the namescope and can be used as an identifier for certain operations.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.FrameworkElement.Name" />
+        <altmember cref="P:System.Windows.FrameworkContentElement.Name" />
       </Docs>
     </Member>
   </Members>

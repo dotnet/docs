@@ -39,6 +39,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+    <altmember cref="T:System.Web.UI.WebControls.DataGridItemCollection" />
+    <altmember cref="P:System.Web.UI.WebControls.DataGrid.Items" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -76,6 +79,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+        <altmember cref="T:System.Web.UI.WebControls.ListItemType" />
       </Docs>
     </Member>
     <Member MemberName="DataItem">
@@ -115,6 +120,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+        <altmember cref="T:System.Object" />
       </Docs>
     </Member>
     <Member MemberName="DataSetIndex">
@@ -154,6 +161,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.DataSource" />
+        <altmember cref="P:System.Web.UI.WebControls.DataGridItem.ItemType" />
       </Docs>
     </Member>
     <Member MemberName="ItemIndex">
@@ -193,6 +203,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+        <altmember cref="P:System.Web.UI.WebControls.DataGrid.Items" />
+        <altmember cref="P:System.Web.UI.WebControls.DataGridItem.ItemType" />
       </Docs>
     </Member>
     <Member MemberName="ItemType">
@@ -240,6 +253,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+        <altmember cref="T:System.Web.UI.WebControls.ListItemType" />
       </Docs>
     </Member>
     <Member MemberName="OnBubbleEvent">

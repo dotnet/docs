@@ -20,6 +20,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewBand" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,6 +45,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewBand" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewElement.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="DataGridView">
@@ -68,6 +75,10 @@
         <summary>Gets the <see cref="T:System.Windows.Forms.DataGridView" /> control associated with this element.</summary>
         <value>A <see cref="T:System.Windows.Forms.DataGridView" /> control that contains this element. The default is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewBand" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewElement.OnDataGridViewChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnDataGridViewChanged">
@@ -86,6 +97,10 @@
       <Docs>
         <summary>Called when the element is associated with a different <see cref="T:System.Windows.Forms.DataGridView" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewBand" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewElement.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="RaiseCellClick">
@@ -107,6 +122,11 @@
         <param name="e">A <see cref="T:System.Windows.Forms.DataGridViewCellEventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.DataGridView.CellClick" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellClick" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellEventArgs" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewBand" />
       </Docs>
     </Member>
     <Member MemberName="RaiseCellContentClick">
@@ -128,6 +148,11 @@
         <param name="e">A <see cref="T:System.Windows.Forms.DataGridViewCellEventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.DataGridView.CellContentClick" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellContentClick" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellEventArgs" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewBand" />
       </Docs>
     </Member>
     <Member MemberName="RaiseCellContentDoubleClick">
@@ -149,6 +174,11 @@
         <param name="e">A <see cref="T:System.Windows.Forms.DataGridViewCellEventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.DataGridView.CellContentDoubleClick" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellContentDoubleClick" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellEventArgs" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewBand" />
       </Docs>
     </Member>
     <Member MemberName="RaiseCellValueChanged">
@@ -170,6 +200,11 @@
         <param name="e">A <see cref="T:System.Windows.Forms.DataGridViewCellEventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.DataGridView.CellValueChanged" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellValueChanged" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellEventArgs" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewBand" />
       </Docs>
     </Member>
     <Member MemberName="RaiseDataError">
@@ -191,6 +226,11 @@
         <param name="e">A <see cref="T:System.Windows.Forms.DataGridViewDataErrorEventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.DataGridView.DataError" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.DataError" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewDataErrorEventArgs" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewBand" />
       </Docs>
     </Member>
     <Member MemberName="RaiseMouseWheel">
@@ -212,6 +252,11 @@
         <param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.MouseWheel" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.Control.MouseWheel" />
+        <altmember cref="T:System.Windows.Forms.MouseEventArgs" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewBand" />
       </Docs>
     </Member>
     <Member MemberName="State">
@@ -245,6 +290,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridViewElementStates" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewBand" />
       </Docs>
     </Member>
   </Members>

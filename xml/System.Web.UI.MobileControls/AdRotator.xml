@@ -69,6 +69,9 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="T:System.Web.UI.WebControls.AdRotator" />
+    <altmember cref="P:System.Web.UI.MobileControls.AdRotator.AdvertisementFile" />
+    <altmember cref="P:System.Web.UI.MobileControls.Image.AlternateText" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -91,6 +94,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.AdRotator" />
       </Docs>
     </Member>
     <Member MemberName="AdCreated">
@@ -132,6 +136,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.AdRotator" />
       </Docs>
     </Member>
     <Member MemberName="AdvertisementFile">
@@ -173,6 +178,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.AdRotator" />
       </Docs>
     </Member>
     <Member MemberName="CreateWebAdRotator">
@@ -199,6 +205,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.AdRotator" />
       </Docs>
     </Member>
     <Member MemberName="ImageKey">
@@ -248,6 +255,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.AdRotator" />
+        <altmember cref="P:System.Web.UI.MobileControls.AdRotator.ImageKey" />
       </Docs>
     </Member>
     <Member MemberName="KeywordFilter">
@@ -291,6 +300,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.AdRotator" />
       </Docs>
     </Member>
     <Member MemberName="NavigateUrlKey">
@@ -332,6 +342,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.AdRotator" />
       </Docs>
     </Member>
     <Member MemberName="OnAdCreated">
@@ -360,6 +371,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.AdRotator" />
       </Docs>
     </Member>
     <Member MemberName="Render">

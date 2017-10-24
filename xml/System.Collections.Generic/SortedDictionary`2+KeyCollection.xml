@@ -149,6 +149,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than 0.</exception>
         <exception cref="T:System.ArgumentException">The number of elements in the source <see cref="T:System.Collections.Generic.SortedDictionary`2.KeyCollection" /> is greater than the available space from <paramref name="index" /> to the end of the destination <paramref name="array" />.</exception>
+        <altmember cref="T:System.Array" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -238,6 +239,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Generic.SortedDictionary`2.KeyCollection.Enumerator" />
+        <altmember cref="T:System.Collections.Generic.IEnumerator`1" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ICollection&lt;TKey&gt;.Add">
@@ -271,6 +274,7 @@
         <summary>Adds an item to the <see cref="T:System.Collections.Generic.ICollection`1" />.  This implementation always throws a <see cref="T:System.NotSupportedException" />.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">Always thrown; the collection is read-only.</exception>
+        <altmember cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ICollection&lt;TKey&gt;.Clear">
@@ -308,6 +312,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown; the collection is read-only.</exception>
+        <altmember cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ICollection&lt;TKey&gt;.Contains">
@@ -432,6 +437,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown; the collection is read-only.</exception>
+        <altmember cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IEnumerable&lt;TKey&gt;.GetEnumerator">
@@ -485,6 +491,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Generic.IEnumerator`1" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -548,6 +555,8 @@
  -or-  
   
  The type of the source <see cref="T:System.Collections.ICollection" /> cannot be cast automatically to the type of the destination <paramref name="array" />.</exception>
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="T:System.Array" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -591,6 +600,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.ICollection.SyncRoot" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.SyncRoot">
@@ -661,6 +671,7 @@ finally
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.ICollection.IsSynchronized" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -714,6 +725,7 @@ finally
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
   </Members>

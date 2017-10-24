@@ -26,6 +26,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.SqlPersonalizationProvider" />
+    <altmember cref="T:System.Collections.IDictionary" />
+    <altmember cref="T:System.Collections.ICollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -281,6 +284,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="IsFixedSize">
@@ -512,6 +516,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="array" /> is not an array of <see cref="T:System.Collections.DictionaryEntry" /> items.</exception>
+        <altmember cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.PersonalizationDictionary.CopyTo(System.Collections.DictionaryEntry[],System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.Add">
@@ -550,6 +556,8 @@
  \- or -  
   
  <paramref name="value" /> is not a <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationEntry" /> object.</exception>
+        <altmember cref="M:System.Collections.IDictionary.Add(System.Object,System.Object)" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.PersonalizationDictionary.Add(System.String,System.Web.UI.WebControls.WebParts.PersonalizationEntry)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.Contains">
@@ -582,6 +590,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="key" /> is not a <see cref="T:System.String" />.</exception>
+        <altmember cref="M:System.Collections.IDictionary.Contains(System.Object)" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.PersonalizationDictionary.Contains(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.Item">
@@ -613,6 +623,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="key" /> is not a <see cref="T:System.String" /> object.</exception>
+        <altmember cref="P:System.Collections.IDictionary.Item(System.Object)" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.PersonalizationDictionary.Item(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.Remove">
@@ -643,6 +655,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="key" /> is not a <see cref="T:System.String" />.</exception>
+        <altmember cref="M:System.Collections.IDictionary.Remove(System.Object)" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.PersonalizationDictionary.Remove(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -669,6 +683,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.IEnumerable.GetEnumerator" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.PersonalizationDictionary.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -696,5 +712,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationDictionary" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -19,6 +19,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Automation.AutomationEventHandler" />
+    <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.RaiseAutomationEvent(System.Windows.Automation.Peers.AutomationEvents)" />
   </Docs>
   <Members>
     <Member MemberName="AsyncContentLoaded">
@@ -142,7 +144,8 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><see cref="F:System.Windows.Automation.AutomationElementIdentifiers.LiveRegionChangedEvent" />. Available starting with .NET Framework 4.7.1.</summary>
+        <summary>
+          <see cref="F:System.Windows.Automation.AutomationElementIdentifiers.LiveRegionChangedEvent" />. Available starting with .NET Framework 4.7.1.</summary>
       </Docs>
     </Member>
     <Member MemberName="MenuClosed">

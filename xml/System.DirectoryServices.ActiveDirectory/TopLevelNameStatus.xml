@@ -13,6 +13,8 @@
   <Docs>
     <summary>Indicates the forest trust account status of a top-level domain in a forest.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.DirectoryServices.ActiveDirectory.TopLevelName" />
+    <altmember cref="P:System.DirectoryServices.ActiveDirectory.TopLevelName.Status" />
   </Docs>
   <Members>
     <Member MemberName="AdminDisabled">

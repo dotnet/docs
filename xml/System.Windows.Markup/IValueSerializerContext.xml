@@ -33,6 +33,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Markup.ValueSerializer" />
   </Docs>
   <Members>
     <Member MemberName="GetValueSerializerFor">
@@ -55,6 +56,7 @@
         <summary>Gets a <see cref="T:System.Windows.Markup.ValueSerializer" /> for the given property descriptor.</summary>
         <returns>A <see cref="T:System.Windows.Markup.ValueSerializer" /> capable of serializing the specified property.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Markup.ValueSerializer" />
       </Docs>
     </Member>
     <Member MemberName="GetValueSerializerFor">
@@ -77,7 +79,17 @@
         <summary>Gets the <see cref="T:System.Windows.Markup.ValueSerializer" /> associated with the specified type.</summary>
         <returns>A <see cref="T:System.Windows.Markup.ValueSerializer" /> capable of serializing the specified type.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Markup.ValueSerializer" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetValueSerializerFor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Markup.ValueSerializer" /> associated with an object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

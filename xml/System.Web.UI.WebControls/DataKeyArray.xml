@@ -50,6 +50,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DataKey" />
+    <altmember cref="T:System.Collections.ICollection" />
+    <altmember cref="T:System.Web.UI.IStateManager" />
+    <altmember cref="M:System.Web.UI.WebControls.DataKeyArray.CopyTo(System.Web.UI.WebControls.DataKey[],System.Int32)" />
+    <altmember cref="M:System.Web.UI.WebControls.DataKeyArray.GetEnumerator" />
+    <altmember cref="P:System.Web.UI.WebControls.DataKeyArray.Item(System.Int32)" />
+    <altmember cref="P:System.Web.UI.WebControls.DataKeyArray.Count" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -75,6 +82,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataKey" />
+        <altmember cref="T:System.Collections.ArrayList" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.DataKeys" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -116,6 +126,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataKey" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.DataKeys" />
+        <altmember cref="P:System.Web.UI.WebControls.DataKeyArray.Item(System.Int32)" />
+        <altmember cref="M:System.Web.UI.WebControls.DataKeyArray.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -149,6 +163,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataKey" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.DataKeys" />
+        <altmember cref="P:System.Web.UI.WebControls.DataKeyArray.Item(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -186,6 +203,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataKey" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.DataKeys" />
+        <altmember cref="T:System.Collections.IEnumerator" />
+        <altmember cref="P:System.Collections.IEnumerator.Current" />
+        <altmember cref="M:System.Collections.IEnumerator.MoveNext" />
+        <altmember cref="M:System.Collections.IEnumerator.Reset" />
+        <altmember cref="P:System.Web.UI.WebControls.DataKeyArray.Item(System.Int32)" />
+        <altmember cref="M:System.Web.UI.WebControls.DataKeyArray.CopyTo(System.Web.UI.WebControls.DataKey[],System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -215,6 +240,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataKey" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.DataKeys" />
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -246,6 +273,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataKeyArray.SyncRoot" />
+        <altmember cref="T:System.Web.UI.WebControls.DataKey" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.DataKeys" />
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="P:System.Collections.ICollection.IsSynchronized" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -283,6 +315,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataKey" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.DataKeys" />
+        <altmember cref="M:System.Web.UI.WebControls.DataKeyArray.CopyTo(System.Web.UI.WebControls.DataKey[],System.Int32)" />
+        <altmember cref="M:System.Web.UI.WebControls.DataKeyArray.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -310,6 +346,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataKeyArray.IsSynchronized" />
+        <altmember cref="T:System.Web.UI.WebControls.DataKey" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.DataKeys" />
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="P:System.Collections.ICollection.SyncRoot" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -343,6 +384,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataKey" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.DataKeys" />
+        <altmember cref="P:System.Web.UI.WebControls.DataKeyArray.Item(System.Int32)" />
+        <altmember cref="M:System.Web.UI.WebControls.DataKeyArray.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.IsTrackingViewState">
@@ -372,6 +417,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.IStateManager.IsTrackingViewState" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.LoadViewState">
@@ -400,6 +446,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Object" />
+        <altmember cref="M:System.Web.UI.IStateManager.LoadViewState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.SaveViewState">
@@ -426,6 +474,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Object" />
+        <altmember cref="M:System.Web.UI.IStateManager.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.TrackViewState">
@@ -451,6 +501,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.StateBag" />
+        <altmember cref="M:System.Web.UI.IStateManager.TrackViewState" />
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
       </Docs>
     </Member>
   </Members>

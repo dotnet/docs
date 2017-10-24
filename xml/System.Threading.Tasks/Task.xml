@@ -146,6 +146,7 @@
  ]]></format>
     </remarks>
     <threadsafe>All members of <see cref="T:System.Threading.Tasks.Task" />, except for <see cref="M:System.Threading.Tasks.Task.Dispose" />, are thread-safe and may be used from multiple threads concurrently.</threadsafe>
+    <altmember cref="T:System.Threading.Tasks.Task`1" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -199,6 +200,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="action" /> argument is <see langword="null" />.</exception>
+        <altmember cref="M:System.Threading.Tasks.Task.Run(System.Action)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -345,6 +347,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="action" /> argument is null.</exception>
+        <altmember cref="M:System.Threading.Tasks.TaskFactory.StartNew(System.Action{System.Object},System.Object)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -610,6 +613,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Threading.Tasks.Task.FromResult``1(``0)" />
       </Docs>
     </Member>
     <Member MemberName="ConfigureAwait">
@@ -1867,6 +1871,7 @@ End Sub
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Threading.Tasks.Task.Id" />
       </Docs>
     </Member>
     <Member MemberName="Delay">
@@ -2294,6 +2299,7 @@ Task t Status: RanToCompletion, Result: 42
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Threading.Tasks.TaskFactory" />
       </Docs>
     </Member>
     <Member MemberName="FromCanceled">
@@ -2523,6 +2529,7 @@ Task t Status: RanToCompletion, Result: 42
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Threading.Tasks.Task.CompletedTask" />
       </Docs>
     </Member>
     <Member MemberName="GetAwaiter">
@@ -2604,6 +2611,7 @@ Task t Status: RanToCompletion, Result: 42
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Threading.Tasks.Task.CurrentId" />
       </Docs>
     </Member>
     <Member MemberName="IsCanceled">
@@ -3346,6 +3354,7 @@ Task t Status: RanToCompletion, Result: 42
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.Tasks.Task" /> instance has been disposed.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="scheduler" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Threading.Tasks.Task" /> is not in a valid state to be started. It may have already been started, executed, or canceled, or it may have been created in a manner that doesn't support direct scheduling.</exception>
+        <altmember cref="T:System.Threading.Tasks.TaskScheduler" />
       </Docs>
     </Member>
     <Member MemberName="Start">
@@ -4940,5 +4949,115 @@ Task t Status: RanToCompletion, Result: 42
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WaitAny">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Waits for any of the provided <see cref="T:System.Threading.Tasks.Task" /> objects to complete execution.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Wait">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Waits for the <see cref="T:System.Threading.Tasks.Task" /> to complete execution.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RunSynchronously">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Runs the <see cref="T:System.Threading.Tasks.Task" /> synchronously on the current <see cref="T:System.Threading.Tasks.TaskScheduler" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WaitAll">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Waits for all of the provided <see cref="T:System.Threading.Tasks.Task" /> objects to complete execution.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WhenAny">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a task that will complete when any of the supplied tasks have completed.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Delay">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a task that will complete after a time delay.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases all resources used by the current instance of the <see cref="T:System.Threading.Tasks.Task" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WhenAll">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a task that will complete when all of the supplied tasks have completed.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new <see cref="T:System.Threading.Tasks.Task" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Start">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Starts the <see cref="T:System.Threading.Tasks.Task" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ContinueWith">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a continuation that executes asynchronously when the target <see cref="T:System.Threading.Tasks.Task" /> completes.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

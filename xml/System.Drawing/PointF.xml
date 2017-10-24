@@ -99,6 +99,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Drawing.PointF.op_Addition(System.Drawing.PointF,System.Drawing.Size)" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -147,6 +148,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Drawing.PointF.op_Addition(System.Drawing.PointF,System.Drawing.Size)" />
       </Docs>
     </Member>
     <Member MemberName="Empty">
@@ -584,6 +586,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Drawing.PointF.op_Subtraction(System.Drawing.PointF,System.Drawing.Size)" />
       </Docs>
     </Member>
     <Member MemberName="Subtract">
@@ -632,6 +635,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Drawing.PointF.op_Subtraction(System.Drawing.PointF,System.Drawing.Size)" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -716,5 +720,45 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Subtract">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Translates a <see cref="T:System.Drawing.PointF" /> by the negative of a specified size.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Translates a given <see cref="T:System.Drawing.PointF" /> by the specified size.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="op_Addition">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Translates the given <see cref="T:System.Drawing.PointF" /> by a specified size.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="op_Subtraction">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Translates a <see cref="T:System.Drawing.PointF" /> by the negative of a specified size.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

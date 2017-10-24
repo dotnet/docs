@@ -102,6 +102,17 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.WebControls.MailDefinition.EmbeddedObjects" />
+    <altmember cref="T:System.Web.UI.WebControls.CreateUserWizard" />
+    <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.MailDefinition" />
+    <altmember cref="E:System.Web.UI.WebControls.CreateUserWizard.SendingMail" />
+    <altmember cref="T:System.Web.UI.WebControls.ChangePassword" />
+    <altmember cref="P:System.Web.UI.WebControls.ChangePassword.MailDefinition" />
+    <altmember cref="E:System.Web.UI.WebControls.ChangePassword.SendingMail" />
+    <altmember cref="T:System.Web.UI.WebControls.PasswordRecovery" />
+    <altmember cref="P:System.Web.UI.WebControls.PasswordRecovery.MailDefinition" />
+    <altmember cref="E:System.Web.UI.WebControls.PasswordRecovery.SendingMail" />
+    <altmember cref="T:System.Net.Mail.MailMessage" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -124,6 +135,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.MailDefinition.EmbeddedObjects" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -202,6 +214,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.MailDefinition.EmbeddedObjects" />
+        <altmember cref="T:System.Web.Mail.SmtpMail" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -292,6 +306,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.MailDefinition.EmbeddedObjects" />
       </Docs>
     </Member>
     <Member MemberName="Path">
@@ -382,7 +397,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.MailDefinition.EmbeddedObjects" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.EmbeddedMailObject" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

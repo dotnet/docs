@@ -118,6 +118,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
       </Docs>
     </Member>
     <Member MemberName="AssemblyFormat">
@@ -136,6 +137,7 @@
         <summary>Gets or sets the behavior of the deserializer with regards to finding and loading assemblies.</summary>
         <value>One of the <see cref="T:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle" /> values that specifies the deserializer behavior.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle" />
       </Docs>
     </Member>
     <Member MemberName="Binder">
@@ -154,6 +156,7 @@
         <summary>Gets or sets the <see cref="T:System.Runtime.Serialization.SerializationBinder" /> that controls the binding of a serialized object to a type.</summary>
         <value>The <see cref="T:System.Runtime.Serialization.SerializationBinder" /> used with this <see cref="T:System.Runtime.Serialization.Formatters.Soap.SoapFormatter" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Runtime.Serialization.SerializationBinder" />
       </Docs>
     </Member>
     <Member MemberName="Context">
@@ -179,6 +182,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
       </Docs>
     </Member>
     <MemberGroup MemberName="Deserialize">
@@ -450,7 +454,26 @@
         <summary>Gets or sets the format in which type descriptions are laid out in the serialized stream.</summary>
         <value>The format in which type descriptions are laid out in the serialized stream.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Runtime.Serialization.Formatters.FormatterTypeStyle" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Formatters.Soap</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.Formatters.Soap.SoapFormatter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Serialize">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Formatters.Soap</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Serializes an object or graph of connected objects.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

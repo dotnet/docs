@@ -48,6 +48,14 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Windows.Forms.GridColumnStylesCollection.Add(System.Windows.Forms.DataGridColumnStyle)" />
+    <altmember cref="T:System.Data.DataColumn" />
+    <altmember cref="T:System.Windows.Forms.DataGrid" />
+    <altmember cref="T:System.Windows.Forms.DataGridBoolColumn" />
+    <altmember cref="T:System.Windows.Forms.DataGridColumnStyle" />
+    <altmember cref="T:System.Windows.Forms.GridColumnStylesCollection" />
+    <altmember cref="T:System.Windows.Forms.DataGridTextBoxColumn" />
+    <altmember cref="M:System.Windows.Forms.GridColumnStylesCollection.Remove(System.Windows.Forms.DataGridColumnStyle)" />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -142,6 +150,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.GridColumnStylesCollection.Add(System.Windows.Forms.DataGridColumnStyle)" />
       </Docs>
     </Member>
     <Member MemberName="CollectionChanged">
@@ -213,6 +222,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.DataColumn" />
+        <altmember cref="M:System.Windows.Forms.GridColumnStylesCollection.IndexOf(System.Windows.Forms.DataGridColumnStyle)" />
+        <altmember cref="P:System.Windows.Forms.GridColumnStylesCollection.Item(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.GridColumnStylesCollection.Remove(System.Windows.Forms.DataGridColumnStyle)" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -252,6 +265,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.DataColumn" />
+        <altmember cref="M:System.Windows.Forms.GridColumnStylesCollection.IndexOf(System.Windows.Forms.DataGridColumnStyle)" />
+        <altmember cref="P:System.Windows.Forms.GridColumnStylesCollection.Item(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.GridColumnStylesCollection.Remove(System.Windows.Forms.DataGridColumnStyle)" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -289,6 +306,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.DataColumn" />
+        <altmember cref="M:System.Windows.Forms.GridColumnStylesCollection.IndexOf(System.Windows.Forms.DataGridColumnStyle)" />
+        <altmember cref="P:System.Windows.Forms.GridColumnStylesCollection.Item(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.GridColumnStylesCollection.Remove(System.Windows.Forms.DataGridColumnStyle)" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -325,6 +346,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.GridColumnStylesCollection.Contains(System.ComponentModel.PropertyDescriptor)" />
+        <altmember cref="T:System.Windows.Forms.DataGridColumnStyle" />
+        <altmember cref="M:System.Windows.Forms.GridColumnStylesCollection.Remove(System.Windows.Forms.DataGridColumnStyle)" />
+        <altmember cref="P:System.Windows.Forms.GridColumnStylesCollection.Item(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -363,6 +388,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.DataColumn" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -523,6 +549,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.GridColumnStylesCollection.Add(System.Windows.Forms.DataGridColumnStyle)" />
+        <altmember cref="T:System.Windows.Forms.DataGridColumnStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.GridColumnStyles" />
+        <altmember cref="M:System.Windows.Forms.GridColumnStylesCollection.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -560,6 +590,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.GridColumnStylesCollection.Add(System.Windows.Forms.DataGridColumnStyle)" />
+        <altmember cref="M:System.Windows.Forms.GridColumnStylesCollection.IndexOf(System.Windows.Forms.DataGridColumnStyle)" />
       </Docs>
     </Member>
     <Member MemberName="ResetPropertyDescriptors">
@@ -915,5 +947,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a specified <see cref="T:System.Windows.Forms.DataGridColumnStyle" /> in the <see cref="T:System.Windows.Forms.GridColumnStylesCollection" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Contains">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a value indicating whether the <see cref="T:System.Windows.Forms.GridColumnStylesCollection" /> contains a specific <see cref="T:System.Windows.Forms.DataGridColumnStyle" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

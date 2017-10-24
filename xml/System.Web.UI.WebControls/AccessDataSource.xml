@@ -508,6 +508,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.SqlDataSource" />
+    <altmember cref="T:System.Web.UI.WebControls.Parameter" />
+    <altmember cref="N:System.Data.OleDb" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -565,6 +568,9 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="dataFile" /> is <see langword="null" /> or an empty string.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.AccessDataSource.DataFile" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.SelectCommand" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.SelectParameters" />
       </Docs>
     </Member>
     <Member MemberName="ConnectionString">
@@ -607,6 +613,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt was made to set the <see cref="P:System.Web.UI.WebControls.AccessDataSource.ConnectionString" /> property.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.AccessDataSource.DataFile" />
       </Docs>
     </Member>
     <Member MemberName="CreateDataSourceView">
@@ -636,6 +643,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.AccessDataSourceView" />
+        <altmember cref="M:System.Web.UI.IDataSource.GetView(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="DataFile">
@@ -705,6 +714,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">An invalid path was given.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.AccessDataSource.ConnectionString" />
       </Docs>
     </Member>
     <Member MemberName="GetDbProviderFactory">
@@ -724,6 +734,7 @@
         <summary>Retrieves a <see cref="T:System.Data.Common.DbProviderFactory" /> object that is associated with the .NET data provider that is identified by the <see cref="P:System.Web.UI.WebControls.SqlDataSource.ProviderName" /> property.</summary>
         <returns>An <see cref="T:System.Data.OleDb.OleDbFactory" /> object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.AccessDataSource.ProviderName" />
       </Docs>
     </Member>
     <Member MemberName="ProviderName">
@@ -766,6 +777,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt was made to set the <see cref="P:System.Web.UI.WebControls.AccessDataSource.ProviderName" /> property.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.AccessDataSource.ConnectionString" />
+        <altmember cref="P:System.Web.UI.WebControls.AccessDataSource.DataFile" />
       </Docs>
     </Member>
     <Member MemberName="SqlCacheDependency">
@@ -802,5 +815,14 @@
         <exception cref="T:System.NotSupportedException">An attempt was made to get or set the <see cref="P:System.Web.UI.WebControls.AccessDataSource.SqlCacheDependency" /> property.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.AccessDataSource" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

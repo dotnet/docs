@@ -90,6 +90,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The current <see cref="T:System.Web.Services.Protocols.SoapMessageStage" /> is <see cref="F:System.Web.Services.Protocols.SoapMessageStage.AfterSerialize" /> or <see cref="F:System.Web.Services.Protocols.SoapMessageStage.AfterDeserialize" /> stages.</exception>
+        <altmember cref="T:System.Web.Services.Protocols.SoapExtension" />
+        <altmember cref="P:System.Web.Services.Protocols.SoapMessage.ContentType" />
       </Docs>
     </Member>
     <Member MemberName="ContentType">
@@ -127,6 +129,8 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">
           <see cref="P:System.Web.Services.Protocols.SoapMessage.ContentType" /> is accessed <see cref="F:System.Web.Services.Protocols.SoapMessageStage.AfterSerialize" /> or <see cref="F:System.Web.Services.Protocols.SoapMessageStage.AfterDeserialize" /> stages.</exception>
+        <altmember cref="T:System.Web.Services.Protocols.SoapMessageStage" />
+        <altmember cref="P:System.Web.Services.Protocols.SoapMessage.ContentEncoding" />
       </Docs>
     </Member>
     <Member MemberName="EnsureInStage">
@@ -252,6 +256,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Services.Protocols.SoapException" />
+        <altmember cref="T:System.Web.Services.Protocols.SoapHeaderException" />
       </Docs>
     </Member>
     <Member MemberName="GetInParameterValue">
@@ -293,6 +299,9 @@
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">The <paramref name="index" /> parameter is less than 0 or greater than the length of the parameters array.</exception>
         <exception cref="T:System.InvalidOperationException">Accessing this property when in parameters are not available.</exception>
+        <altmember cref="M:System.Web.Services.Protocols.SoapMessage.GetOutParameterValue(System.Int32)" />
+        <altmember cref="M:System.Web.Services.Protocols.SoapMessage.GetReturnValue" />
+        <altmember cref="T:System.Object" />
       </Docs>
     </Member>
     <Member MemberName="GetOutParameterValue">
@@ -436,6 +445,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Services.Protocols.LogicalMethodInfo" />
       </Docs>
     </Member>
     <Member MemberName="OneWay">
@@ -472,6 +482,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Services.Protocols.SoapDocumentMethodAttribute.OneWay" />
+        <altmember cref="T:System.Web.Services.Protocols.SoapDocumentMethodAttribute" />
+        <altmember cref="T:System.Web.Services.Protocols.SoapRpcMethodAttribute" />
       </Docs>
     </Member>
     <Member MemberName="SoapVersion">

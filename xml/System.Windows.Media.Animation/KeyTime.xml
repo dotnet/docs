@@ -278,9 +278,9 @@
         <Parameter Name="timeSpan" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="timeSpan">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="timeSpan">The <see cref="P:System.Windows.Media.Animation.KeyTime.TimeSpan" /> value to convert.</param>
+        <summary>Overloaded operator that implicitly converts a <see cref="P:System.Windows.Media.Animation.KeyTime.TimeSpan" /> to a <see cref="T:System.Windows.Media.Animation.KeyTime" />.</summary>
+        <returns>The new <see cref="T:System.Windows.Media.Animation.KeyTime" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -448,5 +448,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether two <see cref="T:System.Windows.Media.Animation.KeyTime" /> structures are equal.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

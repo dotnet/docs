@@ -80,6 +80,7 @@
         <param name="value">The <see cref="T:System.Windows.TriggerAction" /> object to add.</param>
         <summary>Adds an item to the collection.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Collections.IList" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -98,6 +99,7 @@
       <Docs>
         <summary>Removes all items from the collection.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Collections.IList" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -121,6 +123,7 @@
         <returns>
           <see langword="true" /> if the <see cref="T:System.Windows.TriggerAction" /> object is found in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Collections.IList" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -144,6 +147,7 @@
         <param name="index">The zero-based index in the <c>array</c> where copying starts.</param>
         <summary>Begins at the specified index and copies the collection items to the specified array.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Collections.ICollection" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -162,6 +166,7 @@
         <summary>Gets the number of items in the collection.</summary>
         <value>The number of items that the collection contains.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Collections.ICollection" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -186,6 +191,7 @@
         <summary>Returns an enumerator that iterates through the collection.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Collections.IEnumerable" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -208,6 +214,7 @@
         <summary>Returns the index of the specified item in the collection.</summary>
         <returns>The index of <paramref name="value" /> if the <see cref="T:System.Windows.TriggerAction" /> object is found in the collection; otherwise, -1.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Collections.IList" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -231,6 +238,7 @@
         <param name="value">The <see cref="T:System.Windows.TriggerAction" /> object to insert into the collection.</param>
         <summary>Inserts the specified item into the collection at the specified index.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Collections.IList" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -250,6 +258,7 @@
         <value>
           <see langword="true" /> if the collection is read-only; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Collections.IList" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -272,6 +281,7 @@
         <summary>Gets or sets the item that is at the specified index.</summary>
         <value>The <see cref="T:System.Windows.TriggerAction" /> object that is at the specified index.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Collections.IList" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -295,6 +305,7 @@
         <returns>
           <see langword="true" /> if item is successfully removed; otherwise, <see langword="false" />. This method also returns false if item was not found in the <see cref="T:System.Windows.TriggerActionCollection" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Collections.IList" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -316,6 +327,7 @@
         <param name="index">The zero-based index of the item to remove.</param>
         <summary>Removes from the collection the item that is located at the specified index.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Collections.IList" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -548,5 +560,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes an instance of the <see cref="T:System.Windows.TriggerActionCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

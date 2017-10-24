@@ -106,6 +106,8 @@
   
  Each version of the Unicode standard includes information on changes to the Unicode character database since the previous version. The Unicode character database is used by the <see cref="T:System.Globalization.CharUnicodeInfo" /> class for categorizing characters.</para>
     </block>
+    <altmember cref="T:System.Globalization.UnicodeCategory" />
+    <altmember cref="N:System.Text" />
   </Docs>
   <Members>
     <Member MemberName="GetDecimalDigitValue">
@@ -517,6 +519,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Globalization.UnicodeCategory" />
       </Docs>
     </Member>
     <Member MemberName="GetUnicodeCategory">
@@ -582,7 +585,48 @@
           <paramref name="s" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is outside the range of valid indexes in <paramref name="s" />.</exception>
+        <altmember cref="T:System.Globalization.UnicodeCategory" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetNumericValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the numeric value associated with a Unicode character.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetDecimalDigitValue">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the decimal digit value of a numeric Unicode character.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetDigitValue">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the digit value of a numeric Unicode character.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetUnicodeCategory">
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the Unicode category of a Unicode character.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

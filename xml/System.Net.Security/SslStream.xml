@@ -78,6 +78,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.Security.NegotiateStream" />
+    <altmember cref="T:System.Net.Security.AuthenticatedStream" />
+    <altmember cref="T:System.IO.IOException" />
+    <altmember cref="T:System.IO.Stream" />
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -1693,6 +1697,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.IO.Stream.CanSeek" />
+        <altmember cref="P:System.Net.Security.SslStream.Position" />
       </Docs>
     </Member>
     <Member MemberName="CanTimeout">
@@ -2471,6 +2477,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Net.Security.SslStream.AuthenticateAsServer" />
+        <altmember cref="Overload:System.Net.Security.SslStream.BeginAuthenticateAsServer" />
       </Docs>
     </Member>
     <Member MemberName="IsServer">
@@ -3107,6 +3115,7 @@
         <summary>Gets the <see cref="T:System.Net.TransportContext" /> used for authentication using extended protection.</summary>
         <value>The <see cref="T:System.Net.TransportContext" /> object that contains the channel binding token (CBT) used for extended protection.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Security.Authentication.ExtendedProtection.ChannelBinding" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -3272,5 +3281,55 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AuthenticateAsClient">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Authenticate the client side of a client-server connection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Write">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes data to this stream.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AuthenticateAsServer">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Called by servers to authenticate the server and optionally the client in a client-server connection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AuthenticateAsClientAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Authenticate the client side of a client-server connection as an asynchronous operation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AuthenticateAsServerAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Called by servers to authenticate the server and optionally the client in a client-server connection as an asynchronous operation.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

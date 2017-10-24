@@ -17,6 +17,7 @@
   <Docs>
     <summary>Represents the class that is invoked when an instance of a pack URI <see cref="T:System.IO.Packaging.PackWebRequest" /> is created.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.IO.Packaging.PackUriHelper" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -69,6 +70,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.Packaging.PackUriHelper" />
       </Docs>
     </Member>
   </Members>

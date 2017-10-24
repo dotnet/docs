@@ -62,6 +62,8 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="T:System.Web.UI.MobileControls.StyleSheet" />
+    <altmember cref="P:System.Web.UI.MobileControls.Form.PagerStyle" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -116,6 +118,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.Command" />
       </Docs>
     </Member>
     <Member MemberName="Activate">
@@ -160,6 +163,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.MobilePage.ActiveForm" />
       </Docs>
     </Member>
     <Member MemberName="BreakAfter">
@@ -254,6 +258,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.Panel.Paginate" />
       </Docs>
     </Member>
     <Member MemberName="CreateDefaultTemplatedUI">
@@ -394,6 +399,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.DeviceSpecific.SelectedChoice" />
       </Docs>
     </Member>
     <Member MemberName="GetLinkedForms">
@@ -561,6 +567,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.FormMethod" />
       </Docs>
     </Member>
     <Member MemberName="OnActivate">
@@ -594,6 +601,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.MobileControls.Form.Activate" />
       </Docs>
     </Member>
     <Member MemberName="OnDataBinding">
@@ -648,6 +656,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.MobileControls.Form.Activate" />
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -677,6 +686,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">The form is contained by another form.</exception>
+        <altmember cref="T:System.Web.UI.Page" />
       </Docs>
     </Member>
     <Member MemberName="OnPaginated">
@@ -773,6 +783,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.Form.CurrentPage" />
+        <altmember cref="E:System.Web.UI.MobileControls.Form.Paginated" />
       </Docs>
     </Member>
     <Member MemberName="PagerStyle">
@@ -865,6 +877,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.Form.CurrentPage" />
       </Docs>
     </Member>
     <Member MemberName="PaginateRecursive">
@@ -947,6 +960,7 @@
         <summary>Saves any private view-state changes that have occurred since the page was loaded from persistence. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <returns>An object containing the altered private view state.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.MobileControl.SavePrivateViewState" />
       </Docs>
     </Member>
     <Member MemberName="Script">

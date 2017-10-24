@@ -80,6 +80,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.WebControls.Substitution.MethodName" />
+    <altmember cref="T:System.Web.HttpResponseSubstitutionCallback" />
+    <altmember cref="T:System.Web.HttpContext" />
+    <altmember cref="T:System.Web.HttpCachePolicy" />
+    <altmember cref="P:System.Web.HttpResponse.Cache" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -139,6 +144,8 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.Substitution" /> control, you can override the <see cref="M:System.Web.UI.WebControls.Substitution.CreateControlCollection" /> method in a derived class to support child controls.</para>
         </block>
+        <altmember cref="T:System.Web.UI.EmptyControlCollection" />
+        <altmember cref="T:System.Web.UI.ControlCollection" />
       </Docs>
     </Member>
     <Member MemberName="MethodName">
@@ -179,6 +186,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.HttpResponseSubstitutionCallback" />
+        <altmember cref="T:System.Web.HttpContext" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -201,6 +210,7 @@
         <summary>Raises the <see cref="E:System.Web.UI.Control.PreRender" /> event.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Web.HttpException">The parent control or master page is cached.</exception>
+        <altmember cref="M:System.Web.UI.Control.OnPreRender(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -222,6 +232,7 @@
         <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> object that receives the server control content.</param>
         <summary>Sends server control content to a provided <see cref="T:System.Web.UI.HtmlTextWriter" /> object, which writes the content to be rendered on the clien</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.Control.Render(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
   </Members>

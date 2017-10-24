@@ -16,6 +16,7 @@
     <block subset="none" type="overrides">
       <para>When you inherit from the <see cref="T:System.Web.UI.Design.DesignTimeResourceProviderFactory" /> class, you must override the following members: the <see cref="M:System.Web.UI.Design.DesignTimeResourceProviderFactory.CreateDesignTimeLocalResourceProvider(System.IServiceProvider)" />, <see cref="M:System.Web.UI.Design.DesignTimeResourceProviderFactory.CreateDesignTimeLocalResourceProvider(System.IServiceProvider)" />, and <see cref="M:System.Web.UI.Design.DesignTimeResourceProviderFactory.CreateDesignTimeLocalResourceWriter(System.IServiceProvider)" /> methods.</para>
     </block>
+    <altmember cref="T:System.Web.Compilation.IResourceProvider" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -77,6 +78,7 @@
         <summary>When overridden in a derived class, creates a local resource provider using the provided reference to the design host.</summary>
         <returns>An <see cref="T:System.Web.Compilation.IResourceProvider" /> or a class derived from <see cref="T:System.Web.Compilation.IResourceProvider" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.Compilation.IResourceProvider" />
       </Docs>
     </Member>
     <Member MemberName="CreateDesignTimeLocalResourceWriter">
@@ -99,6 +101,7 @@
         <summary>When overridden in a derived class, creates a local resource writer for using the provided reference to the design host.</summary>
         <returns>A local resource writer for using the provided reference to the design host.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Resources.ResourceWriter" />
       </Docs>
     </Member>
   </Members>

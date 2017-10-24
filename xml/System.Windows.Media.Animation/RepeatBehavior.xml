@@ -111,6 +111,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="count" /> evaluates to infinity, a value that is not a number, or is negative.</exception>
+        <altmember cref="P:System.Windows.Media.Animation.RepeatBehavior.Count" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -131,6 +132,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="duration" /> evaluates to a negative number.</exception>
+        <altmember cref="P:System.Windows.Media.Animation.RepeatBehavior.Duration" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -458,5 +460,32 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a string representation of this <see cref="T:System.Windows.Media.Animation.RepeatBehavior" /> instance.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.RepeatBehavior" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether two <see cref="T:System.Windows.Media.Animation.RepeatBehavior" /> objects are equal.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

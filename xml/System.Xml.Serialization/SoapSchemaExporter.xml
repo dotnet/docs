@@ -25,6 +25,9 @@
  ]]></format>
     </remarks>
     <forInternalUseOnly />
+    <altmember cref="T:System.Xml.Serialization.XmlSchemas" />
+    <altmember cref="T:System.Xml.Schema.XmlSchema" />
+    <altmember cref="T:System.Xml.Serialization.XmlSchemaExporter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -143,5 +146,14 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ExportMembersMapping">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds to the applicable <see cref="T:System.Xml.Schema.XmlSchema" /> object a data type definition for each of the element parts of a SOAP-encoded message definition.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

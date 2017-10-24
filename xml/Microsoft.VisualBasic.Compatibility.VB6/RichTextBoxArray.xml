@@ -791,6 +791,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.HelpRequested" />
       </Docs>
     </Member>
     <Member MemberName="HideSelectionChanged">
@@ -1008,6 +1009,7 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.KeyDown" />
       </Docs>
     </Member>
     <Member MemberName="KeyPress">
@@ -1049,6 +1051,7 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.KeyPress" />
       </Docs>
     </Member>
     <Member MemberName="KeyUp">
@@ -1086,6 +1089,7 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.KeyUp" />
       </Docs>
     </Member>
     <Member MemberName="Layout">
@@ -1115,6 +1119,7 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.Layout" />
       </Docs>
     </Member>
     <Member MemberName="Leave">
@@ -1162,6 +1167,7 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.Leave" />
       </Docs>
     </Member>
     <Member MemberName="LinkClicked">
@@ -1362,6 +1368,7 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.MouseClick" />
       </Docs>
     </Member>
     <Member MemberName="MouseDoubleClick">
@@ -1404,6 +1411,7 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.MouseClick" />
       </Docs>
     </Member>
     <Member MemberName="MouseDown">
@@ -1443,6 +1451,7 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.MouseUp" />
       </Docs>
     </Member>
     <Member MemberName="MouseEnter">
@@ -1482,6 +1491,7 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.MouseEnter" />
       </Docs>
     </Member>
     <Member MemberName="MouseHover">
@@ -1525,6 +1535,7 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.MouseHover" />
       </Docs>
     </Member>
     <Member MemberName="MouseLeave">
@@ -1564,6 +1575,7 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.MouseLeave" />
       </Docs>
     </Member>
     <Member MemberName="MouseMove">
@@ -1603,6 +1615,7 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.MouseMove" />
       </Docs>
     </Member>
     <Member MemberName="MouseUp">
@@ -1642,6 +1655,7 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.MouseUp" />
       </Docs>
     </Member>
     <Member MemberName="Move">
@@ -1669,6 +1683,7 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.Move" />
       </Docs>
     </Member>
     <Member MemberName="MultilineChanged">
@@ -1785,6 +1800,7 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.QueryAccessibilityHelp" />
       </Docs>
     </Member>
     <Member MemberName="ReadOnlyChanged">
@@ -1910,6 +1926,7 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.Resize" />
       </Docs>
     </Member>
     <Member MemberName="RightToLeftChanged">
@@ -2133,6 +2150,7 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.SystemColorsChanged" />
       </Docs>
     </Member>
     <Member MemberName="TabIndexChanged">
@@ -2279,6 +2297,7 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.Validated" />
       </Docs>
     </Member>
     <Member MemberName="Validating">
@@ -2338,6 +2357,7 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.Validating" />
       </Docs>
     </Member>
     <Member MemberName="VisibleChanged">
@@ -2396,5 +2416,14 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

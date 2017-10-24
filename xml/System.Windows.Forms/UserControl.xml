@@ -61,6 +61,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ContainerControl" />
+    <altmember cref="T:System.Windows.Forms.Form" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -122,6 +124,7 @@
         <value>
           <see langword="true" /> if enabled; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.AutoSize" />
       </Docs>
     </Member>
     <Member MemberName="AutoSizeChanged">
@@ -251,6 +254,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.UserControl.AutoValidate" />
+        <altmember cref="M:System.Windows.Forms.ContainerControl.ValidateChildren" />
       </Docs>
     </Member>
     <Member MemberName="BorderStyle">
@@ -288,6 +293,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The assigned value is not one of the <see cref="T:System.Windows.Forms.BorderStyle" /> values.</exception>
+        <altmember cref="T:System.Windows.Forms.BorderStyle" />
       </Docs>
     </Member>
     <Member MemberName="CreateParams">
@@ -306,6 +312,7 @@
         <summary>Gets the required creation parameters when the control handle is created.</summary>
         <value>A <see cref="T:System.Windows.Forms.CreateParams" /> that contains the required creation parameters when the handle to the control is created.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.CreateParams" />
       </Docs>
     </Member>
     <Member MemberName="DefaultSize">
@@ -324,6 +331,7 @@
         <summary>Gets the default size of the control.</summary>
         <value>The default <see cref="T:System.Drawing.Size" /> of the control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.DefaultSize" />
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -366,6 +374,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.UserControl.OnLoad(System.EventArgs)" />
+        <altmember cref="E:System.Windows.Forms.Form.Load" />
       </Docs>
     </Member>
     <Member MemberName="OnCreateControl">
@@ -441,6 +451,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.UserControl.OnLoad(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.UserControl.OnLoad(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.UserControl.Load" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseDown">
@@ -467,6 +479,7 @@
         <param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.MouseDown" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnMouseDown(System.Windows.Forms.MouseEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnResize">
@@ -488,6 +501,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.Resize" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnResize(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -520,6 +534,7 @@
         <summary>Gets or sets the text associated with this control.</summary>
         <value>The text associated with this control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.Text" />
       </Docs>
     </Member>
     <Member MemberName="TextChanged">
@@ -573,6 +588,7 @@
         <returns>
           <see langword="true" /> if all of the children validated successfully; otherwise, <see langword="false" />. If called from the <see cref="E:System.Windows.Forms.Control.Validating" /> or <see cref="E:System.Windows.Forms.Control.Validated" /> event handlers, this method will always return <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.ContainerControl.ValidateChildren" />
       </Docs>
     </Member>
     <Member MemberName="ValidateChildren">
@@ -604,6 +620,7 @@
         <returns>
           <see langword="true" /> if all of the children validated successfully; otherwise, <see langword="false" />. If called from the <see cref="E:System.Windows.Forms.Control.Validating" /> or <see cref="E:System.Windows.Forms.Control.Validated" /> event handlers, this method will always return <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.ContainerControl.ValidateChildren(System.Windows.Forms.ValidationConstraints)" />
       </Docs>
     </Member>
     <Member MemberName="WndProc">
@@ -630,6 +647,7 @@
         <param name="m">The Windows <see cref="T:System.Windows.Forms.Message" /> to process.</param>
         <summary>Processes Windows messages.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.ContainerControl.WndProc(System.Windows.Forms.Message@)" />
       </Docs>
     </Member>
   </Members>

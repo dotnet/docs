@@ -46,6 +46,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Configuration.ClientTarget" />
+    <altmember cref="T:System.Web.Configuration.ClientTargetSection" />
+    <altmember cref="P:System.Web.UI.Page.ClientTarget" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -106,6 +109,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.ClientTarget" />
+        <altmember cref="T:System.Web.Configuration.ClientTargetSection" />
       </Docs>
     </Member>
     <Member MemberName="AllKeys">
@@ -177,6 +182,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.ClientTarget" />
+        <altmember cref="T:System.Web.Configuration.ClientTargetSection" />
       </Docs>
     </Member>
     <Member MemberName="CreateNewElement">
@@ -340,6 +347,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.ClientTarget" />
+        <altmember cref="T:System.Web.Configuration.ClientTargetSection" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -378,6 +387,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.ClientTarget" />
+        <altmember cref="T:System.Web.Configuration.ClientTargetSection" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -416,7 +427,27 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.ClientTarget" />
+        <altmember cref="T:System.Web.Configuration.ClientTargetSection" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Web.Configuration.ClientTarget" /> from the collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes a <see cref="T:System.Web.Configuration.ClientTarget" /> object from the collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

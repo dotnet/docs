@@ -1212,5 +1212,32 @@ public static void WriteLobExample(OracleCommand command)
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Erase">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Erases data from this <see cref="T:System.Data.OracleClient.OracleLob" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CopyTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies from this <see cref="T:System.Data.OracleClient.OracleLob" /> to a destination <see cref="T:System.Data.OracleClient.OracleLob" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginBatch">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Prevents server-side triggers from firing while performing multiple write operations.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

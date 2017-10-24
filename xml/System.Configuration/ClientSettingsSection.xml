@@ -28,6 +28,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.LocalFileSettingsProvider" />
+    <altmember cref="T:System.Configuration.AppSettingsSection" />
+    <altmember cref="T:System.Configuration.IConfigurationSectionHandler" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -54,6 +57,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Configuration.ClientSettingsSection.Settings" />
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -110,6 +114,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.ConfigurationPropertyAttribute" />
+        <altmember cref="T:System.Configuration.SettingElement" />
       </Docs>
     </Member>
   </Members>

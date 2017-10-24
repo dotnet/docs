@@ -13,6 +13,7 @@
   <Docs>
     <summary>Represents a control that has an intrinsic value that does not span a range and can be represented as a string. This string may or may not be editable depending on the control and its settings.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Automation.Provider.IValueProvider" />
   </Docs>
   <Members>
     <Member MemberName="Cached">

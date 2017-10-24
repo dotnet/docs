@@ -120,6 +120,7 @@
         <param name="genericTarget">The target on which the provided handler should be invoked.</param>
         <summary>When overridden in a derived class, provides a way to invoke event handlers in a type-specific way, which can increase efficiency over the base implementation.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.RoutedEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Strokes">

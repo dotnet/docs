@@ -55,6 +55,10 @@
  ]]></format>
     </remarks>
     <threadsafe>This type is safe for multithreaded read operations. You must synchronize any write operations.</threadsafe>
+    <altmember cref="T:System.Data.DataColumn" />
+    <altmember cref="T:System.Data.DataRow" />
+    <altmember cref="T:System.Data.DataTable" />
+    <altmember cref="T:System.Data.DataSet" />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -100,6 +104,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.DataTable" />
+        <altmember cref="M:System.Data.DataTableCollection.Remove(System.Data.DataTable)" />
+        <altmember cref="M:System.Data.DataTableCollection.Clear" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -147,6 +154,9 @@
         <exception cref="T:System.ArgumentNullException">The value specified for the table is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The table already belongs to this collection, or belongs to another collection.</exception>
         <exception cref="T:System.Data.DuplicateNameException">A table in the collection has the same name. The comparison is not case sensitive.</exception>
+        <altmember cref="T:System.Data.DataTable" />
+        <altmember cref="M:System.Data.DataTableCollection.Remove(System.Data.DataTable)" />
+        <altmember cref="M:System.Data.DataTableCollection.Clear" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -196,6 +206,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Data.DuplicateNameException">A table in the collection has the same name. (The comparison is not case sensitive.)</exception>
+        <altmember cref="T:System.Data.DataTable" />
+        <altmember cref="M:System.Data.DataTableCollection.Remove(System.Data.DataTable)" />
+        <altmember cref="M:System.Data.DataTableCollection.Clear" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -247,6 +260,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Data.DuplicateNameException">A table in the collection has the same name. (The comparison is not case sensitive.)</exception>
+        <altmember cref="T:System.Data.DataTable" />
+        <altmember cref="M:System.Data.DataTableCollection.Remove(System.Data.DataTable)" />
+        <altmember cref="M:System.Data.DataTableCollection.Clear" />
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -329,6 +345,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.DataTableCollection.Item(System.Int32)" />
+        <altmember cref="M:System.Data.DataTableCollection.IndexOf(System.Data.DataTable)" />
+        <altmember cref="M:System.Data.DataTableCollection.Remove(System.Data.DataTable)" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -505,6 +524,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.DataTableCollection.Item(System.Int32)" />
+        <altmember cref="M:System.Data.DataTableCollection.IndexOf(System.Data.DataTable)" />
+        <altmember cref="M:System.Data.DataTableCollection.Remove(System.Data.DataTable)" />
+        <altmember cref="M:System.Data.DataTableCollection.CanRemove(System.Data.DataTable)" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -559,6 +582,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.DataTableCollection.Item(System.Int32)" />
+        <altmember cref="M:System.Data.DataTableCollection.IndexOf(System.Data.DataTable)" />
+        <altmember cref="M:System.Data.DataTableCollection.Remove(System.Data.DataTable)" />
+        <altmember cref="M:System.Data.DataTableCollection.CanRemove(System.Data.DataTable)" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -646,6 +673,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.DataTableCollection.IndexOf(System.Data.DataTable)" />
+        <altmember cref="P:System.Data.DataTable.TableName" />
+        <altmember cref="M:System.Data.DataTableCollection.Remove(System.Data.DataTable)" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -697,6 +727,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.DataTableCollection.IndexOf(System.Data.DataTable)" />
+        <altmember cref="P:System.Data.DataTable.TableName" />
+        <altmember cref="M:System.Data.DataTableCollection.Remove(System.Data.DataTable)" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -745,6 +778,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.DataTableCollection.IndexOf(System.Data.DataTable)" />
+        <altmember cref="P:System.Data.DataTable.TableName" />
+        <altmember cref="M:System.Data.DataTableCollection.Remove(System.Data.DataTable)" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -794,6 +830,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">The index value is greater than the number of items in the collection.</exception>
+        <altmember cref="M:System.Data.DataTableCollection.Contains(System.String)" />
+        <altmember cref="M:System.Data.DataTableCollection.IndexOf(System.Data.DataTable)" />
+        <altmember cref="T:System.Data.DataTable" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -955,6 +994,8 @@
  -or-  
   
  The table is part of a relationship.</exception>
+        <altmember cref="M:System.Data.DataTableCollection.IndexOf(System.Data.DataTable)" />
+        <altmember cref="M:System.Data.DataTableCollection.Contains(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -1003,6 +1044,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The collection does not have a table with the specified name.</exception>
+        <altmember cref="M:System.Data.DataTableCollection.IndexOf(System.Data.DataTable)" />
+        <altmember cref="M:System.Data.DataTableCollection.Contains(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -1053,6 +1096,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The collection does not have a table with the specified name.</exception>
+        <altmember cref="M:System.Data.DataTableCollection.IndexOf(System.Data.DataTable)" />
+        <altmember cref="M:System.Data.DataTableCollection.Contains(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -1099,7 +1144,59 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The collection does not have a table at the specified index.</exception>
+        <altmember cref="M:System.Data.DataTableCollection.IndexOf(System.Data.DataTable)" />
+        <altmember cref="M:System.Data.DataTableCollection.Contains(System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="IndexOf">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the index in the collection of the specified <see cref="T:System.Data.DataTable" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the specified <see cref="T:System.Data.DataTable" /> object from the collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a <see cref="T:System.Data.DataTable" /> object to the collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes a specified <see cref="T:System.Data.DataTable" /> object from the collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Contains">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a value indicating whether a <see cref="T:System.Data.DataTable" /> object with the specified name exists in the collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

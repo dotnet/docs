@@ -1855,5 +1855,23 @@
  This property is set while the <see cref="P:System.AddIn.Contract.RemoteArgument.IsByRef" /> property is <see langword="false" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateRemoteArgument">
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.AddIn.Contract.RemoteArgument" /> for an argument.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

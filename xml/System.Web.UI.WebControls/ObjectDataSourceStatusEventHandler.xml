@@ -42,5 +42,15 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs" />
+    <altmember cref="T:System.Web.UI.WebControls.ObjectDataSource" />
+    <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnSelected(System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs)" />
+    <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnUpdated(System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs)" />
+    <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnInserted(System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs)" />
+    <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnDeleted(System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs)" />
+    <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.Selected" />
+    <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.Updated" />
+    <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.Inserted" />
+    <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.Deleted" />
   </Docs>
 </Type>

@@ -136,6 +136,10 @@ namespace SampleRecognition
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Speech.Recognition.SpeechRecognitionEngine" />
+    <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted" />
+    <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync" />
+    <altmember cref="T:System.Speech.Recognition.EmulateRecognizeCompletedEventArgs" />
   </Docs>
   <Members>
     <Member MemberName="AudioPosition">
@@ -278,6 +282,9 @@ namespace SampleRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.SpeechRecognitionEngine" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognitionEngine.AudioPosition" />
       </Docs>
     </Member>
     <Member MemberName="BabbleTimeout">
@@ -416,6 +423,9 @@ namespace SampleRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.SpeechRecognitionEngine" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognitionEngine.BabbleTimeout" />
       </Docs>
     </Member>
     <Member MemberName="InitialSilenceTimeout">
@@ -554,6 +564,9 @@ namespace SampleRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.SpeechRecognitionEngine" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognitionEngine.InitialSilenceTimeout" />
       </Docs>
     </Member>
     <Member MemberName="InputStreamEnded">
@@ -697,6 +710,8 @@ namespace SampleRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.SpeechRecognitionEngine" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted" />
       </Docs>
     </Member>
     <Member MemberName="Result">
@@ -839,6 +854,8 @@ namespace SampleRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.SpeechRecognitionEngine" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted" />
       </Docs>
     </Member>
   </Members>

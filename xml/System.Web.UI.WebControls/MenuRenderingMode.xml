@@ -21,6 +21,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.WebControls.Menu.RenderingMode" />
   </Docs>
   <Members>
     <Member MemberName="Default">
@@ -37,6 +38,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <see cref="T:System.Web.UI.WebControls.Menu" /> control renders markup in the way it does by default for the version of ASP.NET indicated by the <see cref="P:System.Web.UI.Control.RenderingCompatibility" /> property of the control. If the value of the <see cref="P:System.Web.UI.Control.RenderingCompatibility" /> property is <c>3.5</c>, this setting is equivalent to <see cref="F:System.Web.UI.WebControls.MenuRenderingMode.Table" />. If the value of the <see cref="P:System.Web.UI.Control.RenderingCompatibility" /> property is <c>4.0</c> or greater, this setting is equivalent to <see cref="F:System.Web.UI.WebControls.MenuRenderingMode.List" />.</summary>
+        <altmember cref="P:System.Web.UI.Control.RenderingCompatibility" />
       </Docs>
     </Member>
     <Member MemberName="List">

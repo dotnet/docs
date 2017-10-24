@@ -68,6 +68,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.TabControl" />
+    <altmember cref="T:System.Windows.Forms.TabPage" />
+    <altmember cref="P:System.Windows.Forms.TabControl.TabPages" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -278,6 +281,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Color" />
+        <altmember cref="P:System.Drawing.Color.Transparent" />
+        <altmember cref="P:System.Windows.Forms.Control.DefaultBackColor" />
+        <altmember cref="P:System.Windows.Forms.TabPage.UseVisualStyleBackColor" />
+        <altmember cref="P:System.Windows.Forms.Application.RenderWithVisualStyles" />
+        <altmember cref="T:System.Windows.Forms.TabControl" />
+        <altmember cref="P:System.Windows.Forms.TabControl.Appearance" />
       </Docs>
     </Member>
     <Member MemberName="CreateControlsInstance">
@@ -297,6 +307,7 @@
         <summary>Creates a new instance of the control collection for the control.</summary>
         <returns>A new instance of <see cref="T:System.Windows.Forms.Control.ControlCollection" /> assigned to the control.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.CreateControlsInstance" />
       </Docs>
     </Member>
     <Member MemberName="Dock">
@@ -502,6 +513,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Windows.Forms.TabPage.ImageIndex" /> value is less than -1.</exception>
+        <altmember cref="P:System.Windows.Forms.TabControl.ImageList" />
       </Docs>
     </Member>
     <Member MemberName="ImageKey">
@@ -692,6 +704,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.TabPage.OnEnter(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TabPage.OnEnter(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.Enter" />
       </Docs>
     </Member>
     <Member MemberName="OnLeave">
@@ -727,6 +740,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.TabPage.OnLeave(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TabPage.OnLeave(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.Leave" />
       </Docs>
     </Member>
     <Member MemberName="OnPaintBackground">
@@ -843,6 +857,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TabControl" />
       </Docs>
     </Member>
     <Member MemberName="TabIndexChanged">
@@ -1056,6 +1071,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TabControl" />
+        <altmember cref="T:System.Windows.Forms.ToolTip" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1123,6 +1140,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TabControl" />
+        <altmember cref="P:System.Windows.Forms.TabControl.Appearance" />
+        <altmember cref="P:System.Windows.Forms.Application.RenderWithVisualStyles" />
+        <altmember cref="P:System.Windows.Forms.TabPage.BackColor" />
+        <altmember cref="P:System.Drawing.Color.Transparent" />
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -1194,5 +1216,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TabPage" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -33,6 +33,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Xml.XmlDocument.CreateElement(System.String)" />
+    <altmember cref="T:System.Xml.XmlAttribute" />
+    <altmember cref="T:System.Xml.XmlDocument" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -815,6 +818,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xml.XmlElement.LocalName" />
       </Docs>
     </Member>
     <Member MemberName="NamespaceURI">
@@ -924,6 +928,7 @@
         <summary>Gets the type of the current node.</summary>
         <value>The node type. For <see langword="XmlElement" /> nodes, this value is XmlNodeType.Element.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Xml.XmlNodeType" />
       </Docs>
     </Member>
     <Member MemberName="OwnerDocument">
@@ -1651,6 +1656,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.XmlElement.WriteTo(System.Xml.XmlWriter)" />
       </Docs>
     </Member>
     <Member MemberName="WriteTo">
@@ -1703,5 +1709,77 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="HasAttribute">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the current node has the specified attribute.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetAttributeNode">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Return the specified <see cref="T:System.Xml.XmlAttribute" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RemoveAttribute">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the specified attribute. (If the removed attribute has a default value, it is immediately replaced).</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetAttributeNode">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a new <see cref="T:System.Xml.XmlAttribute" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetAttribute">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the attribute value for the specified attribute.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetAttribute">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the value of the specified attribute.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RemoveAttributeNode">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes an <see cref="T:System.Xml.XmlAttribute" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetElementsByTagName">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an <see cref="T:System.Xml.XmlNodeList" /> containing a list of all descendant elements that match the specified name.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

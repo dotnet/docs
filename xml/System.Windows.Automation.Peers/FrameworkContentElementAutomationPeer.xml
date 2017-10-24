@@ -50,6 +50,7 @@
         <summary>Gets the string that uniquely identifies the <see cref="T:System.Windows.FrameworkContentElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationId" />.</summary>
         <returns>The string that uniquely identifies the <see cref="T:System.Windows.FrameworkContentElement" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationIdCore" />
       </Docs>
     </Member>
     <Member MemberName="GetHelpTextCore">
@@ -76,6 +77,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.GetHelpTextCore" />
       </Docs>
     </Member>
     <Member MemberName="GetLabeledByCore">
@@ -102,6 +104,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.GetLabeledByCore" />
+        <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.GetLabeledBy" />
       </Docs>
     </Member>
   </Members>

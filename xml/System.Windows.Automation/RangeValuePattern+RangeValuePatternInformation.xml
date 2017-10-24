@@ -13,6 +13,7 @@
   <Docs>
     <summary>Provides access to the property values of a <see cref="T:System.Windows.Automation.RangeValuePattern" /> object using its <see cref="P:System.Windows.Automation.TransformPattern.Current" /> or <see cref="P:System.Windows.Automation.TransformPattern.Cached" /> accessors.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Automation.Provider.IRangeValueProvider" />
   </Docs>
   <Members>
     <Member MemberName="IsReadOnly">
@@ -83,6 +84,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Automation.RangeValuePattern.RangeValuePatternInformation.SmallChange" />
       </Docs>
     </Member>
     <Member MemberName="Maximum">
@@ -115,6 +117,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Automation.RangeValuePattern.RangeValuePatternInformation.Minimum" />
       </Docs>
     </Member>
     <Member MemberName="Minimum">
@@ -147,6 +150,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Automation.RangeValuePattern.RangeValuePatternInformation.Maximum" />
       </Docs>
     </Member>
     <Member MemberName="SmallChange">
@@ -179,6 +183,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Automation.RangeValuePattern.RangeValuePatternInformation.LargeChange" />
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -207,6 +212,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Automation.RangeValuePattern.SetValue(System.Double)" />
       </Docs>
     </Member>
   </Members>

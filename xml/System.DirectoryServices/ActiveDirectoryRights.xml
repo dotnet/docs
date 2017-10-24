@@ -18,6 +18,10 @@
   <Docs>
     <summary>The <see cref="T:System.DirectoryServices.ActiveDirectoryRights" /> enumeration specifies the access rights that are assigned to an Active Directory Domain Services object.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="P:System.DirectoryServices.ActiveDirectoryAccessRule.ActiveDirectoryRights" />
+    <altmember cref="P:System.DirectoryServices.ActiveDirectoryAuditRule.ActiveDirectoryRights" />
+    <altmember cref="T:System.DirectoryServices.CreateChildAccessRule" />
+    <altmember cref="T:System.DirectoryServices.DeleteChildAccessRule" />
   </Docs>
   <Members>
     <Member MemberName="AccessSystemSecurity">

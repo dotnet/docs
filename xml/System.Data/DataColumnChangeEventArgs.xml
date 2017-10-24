@@ -29,6 +29,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="E:System.Data.DataTable.ColumnChanging" />
+    <altmember cref="T:System.Data.DataColumn" />
+    <altmember cref="T:System.Data.DataColumnChangeEventHandler" />
+    <altmember cref="T:System.Data.DataTable" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -60,6 +64,10 @@
         <param name="value">The new value.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.DataColumnChangeEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Data.DataTable.ColumnChanging" />
+        <altmember cref="T:System.Data.DataColumn" />
+        <altmember cref="T:System.Data.DataColumnChangeEventHandler" />
+        <altmember cref="T:System.Data.DataTable" />
       </Docs>
     </Member>
     <Member MemberName="Column">
@@ -87,6 +95,10 @@
         <summary>Gets the <see cref="T:System.Data.DataColumn" /> with a changing value.</summary>
         <value>The <see cref="T:System.Data.DataColumn" /> with a changing value.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Data.DataTable.ColumnChanging" />
+        <altmember cref="T:System.Data.DataColumn" />
+        <altmember cref="T:System.Data.DataColumnChangeEventHandler" />
+        <altmember cref="T:System.Data.DataTable" />
       </Docs>
     </Member>
     <Member MemberName="ProposedValue">
@@ -114,6 +126,10 @@
         <summary>Gets or sets the proposed new value for the column.</summary>
         <value>The proposed value, of type <see cref="T:System.Object" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Data.DataTable.ColumnChanging" />
+        <altmember cref="T:System.Data.DataColumn" />
+        <altmember cref="T:System.Data.DataColumnChangeEventHandler" />
+        <altmember cref="T:System.Data.DataTable" />
       </Docs>
     </Member>
     <Member MemberName="Row">
@@ -141,6 +157,10 @@
         <summary>Gets the <see cref="T:System.Data.DataRow" /> of the column with a changing value.</summary>
         <value>The <see cref="T:System.Data.DataRow" /> of the column with a changing value.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Data.DataTable.RowChanging" />
+        <altmember cref="T:System.Data.DataRow" />
+        <altmember cref="T:System.Data.DataRowChangeEventHandler" />
+        <altmember cref="T:System.Data.DataTable" />
       </Docs>
     </Member>
   </Members>

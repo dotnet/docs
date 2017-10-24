@@ -336,6 +336,44 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="T:System.Web.UI.WebControls.FormViewRow" />
+    <altmember cref="T:System.Web.UI.WebControls.FormViewMode" />
+    <altmember cref="T:System.Web.UI.WebControls.AccessDataSource" />
+    <altmember cref="T:System.Web.UI.WebControls.SqlDataSource" />
+    <altmember cref="T:System.Web.UI.WebControls.ObjectDataSource" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.AllowPaging" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.CurrentMode" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.DataKeyNames" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.DefaultMode" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.PagerStyle" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.PagerSettings" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.EditRowStyle" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.EmptyDataRowStyle" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.FooterStyle" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderStyle" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.InsertRowStyle" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.RowStyle" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.EditItemTemplate" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.EmptyDataTemplate" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.FooterTemplate" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderTemplate" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.InsertItemTemplate" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.ItemTemplate" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.PagerTemplate" />
+    <altmember cref="E:System.Web.UI.WebControls.FormView.ItemCreated" />
+    <altmember cref="E:System.Web.UI.WebControls.FormView.ItemCommand" />
+    <altmember cref="E:System.Web.UI.WebControls.FormView.ItemDeleted" />
+    <altmember cref="E:System.Web.UI.WebControls.FormView.ItemDeleting" />
+    <altmember cref="E:System.Web.UI.WebControls.FormView.ItemInserted" />
+    <altmember cref="E:System.Web.UI.WebControls.FormView.ItemInserting" />
+    <altmember cref="E:System.Web.UI.WebControls.FormView.ItemUpdated" />
+    <altmember cref="E:System.Web.UI.WebControls.FormView.ItemUpdating" />
+    <altmember cref="E:System.Web.UI.WebControls.FormView.ModeChanged" />
+    <altmember cref="E:System.Web.UI.WebControls.FormView.ModeChanging" />
+    <altmember cref="E:System.Web.UI.WebControls.FormView.PageIndexChanged" />
+    <altmember cref="E:System.Web.UI.WebControls.FormView.PageIndexChanging" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -366,6 +404,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.Controls" />
+        <altmember cref="T:System.Web.UI.WebControls.PlaceHolder" />
       </Docs>
     </Member>
     <Member MemberName="AllowPaging">
@@ -431,6 +471,15 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.FormView.BottomPagerRow" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PageCount" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PageIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerSettings" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.TopPagerRow" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.PageIndexChanged" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.PageIndexChanging" />
       </Docs>
     </Member>
     <Member MemberName="BackImageUrl">
@@ -478,6 +527,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.FormView.CellPadding" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.CellSpacing" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.GridLines" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HorizontalAlign" />
       </Docs>
     </Member>
     <Member MemberName="BottomPagerRow">
@@ -524,6 +577,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormViewRow" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.AllowPaging" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PageCount" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PageIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerSettings" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.TopPagerRow" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemCreated" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.PageIndexChanged" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.PageIndexChanging" />
       </Docs>
     </Member>
     <Member MemberName="Caption">
@@ -569,6 +633,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.FormView.CaptionAlign" />
       </Docs>
     </Member>
     <Member MemberName="CaptionAlign">
@@ -623,6 +688,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified value is not one of the <see cref="T:System.Web.UI.WebControls.TableCaptionAlign" /> enumeration values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.TableCaptionAlign" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.Caption" />
       </Docs>
     </Member>
     <Member MemberName="CellPadding">
@@ -668,6 +735,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.FormView.BackImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.CellSpacing" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.GridLines" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HorizontalAlign" />
       </Docs>
     </Member>
     <Member MemberName="CellSpacing">
@@ -711,6 +782,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.FormView.BackImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.CellPadding" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.GridLines" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HorizontalAlign" />
       </Docs>
     </Member>
     <Member MemberName="ChangeMode">
@@ -756,6 +831,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormViewMode" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.CurrentMode" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ModeChanged" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ModeChanging" />
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
@@ -792,6 +871,8 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.FormView" /> class, you can override this method to create your own control hierarchy.</para>
         </block>
+        <altmember cref="T:System.Collections.IEnumerable" />
+        <altmember cref="M:System.Web.UI.Control.CreateChildControls" />
       </Docs>
     </Member>
     <Member MemberName="CreateControlStyle">
@@ -821,6 +902,8 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.FormView" /> class, you can override this method to create your own default style.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <altmember cref="T:System.Web.UI.WebControls.TableStyle" />
       </Docs>
     </Member>
     <Member MemberName="CreateDataSourceSelectArguments">
@@ -850,6 +933,8 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.FormView" /> class, you can override this method to specify your own values that are passed to the data source.</para>
         </block>
+        <altmember cref="T:System.Web.UI.DataSourceSelectArguments" />
+        <altmember cref="M:System.Web.UI.WebControls.DataBoundControl.CreateDataSourceSelectArguments" />
       </Docs>
     </Member>
     <Member MemberName="CreateRow">
@@ -886,6 +971,9 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.FormView" /> class, you can override this method to return a <see cref="T:System.Web.UI.WebControls.FormViewRow" /> object with custom settings.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.FormViewRow" />
+        <altmember cref="T:System.Web.UI.WebControls.DataControlRowType" />
+        <altmember cref="T:System.Web.UI.WebControls.DataControlRowState" />
       </Docs>
     </Member>
     <Member MemberName="CreateTable">
@@ -912,6 +1000,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Table" />
       </Docs>
     </Member>
     <Member MemberName="CurrentMode">
@@ -968,6 +1057,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormViewMode" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.DefaultMode" />
+        <altmember cref="M:System.Web.UI.WebControls.FormView.ChangeMode(System.Web.UI.WebControls.FormViewMode)" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ModeChanged" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ModeChanging" />
       </Docs>
     </Member>
     <Member MemberName="DataBind">
@@ -993,6 +1087,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.BaseDataBoundControl.DataBind" />
       </Docs>
     </Member>
     <Member MemberName="DataItem">
@@ -1037,6 +1132,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Object" />
+        <altmember cref="Overload:System.Web.UI.DataBinder.Eval" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.DataItemCount" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.DataItemIndex" />
       </Docs>
     </Member>
     <Member MemberName="DataItemCount">
@@ -1070,6 +1169,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.FormView.DataItem" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.DataItemIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PageCount" />
       </Docs>
     </Member>
     <Member MemberName="DataItemIndex">
@@ -1106,6 +1208,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.FormView.DataItem" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.DataItemCount" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PageIndex" />
       </Docs>
     </Member>
     <Member MemberName="DataKey">
@@ -1150,6 +1255,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataKey" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.DataKeyNames" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.SelectedValue" />
       </Docs>
     </Member>
     <Member MemberName="DataKeyNames">
@@ -1197,6 +1305,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataKey" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.DataKey" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.SelectedValue" />
       </Docs>
     </Member>
     <Member MemberName="DefaultMode">
@@ -1244,6 +1355,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified value is not one of the <see cref="T:System.Web.UI.WebControls.FormViewMode" /> enumeration values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.FormViewMode" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.CurrentMode" />
+        <altmember cref="M:System.Web.UI.WebControls.FormView.ChangeMode(System.Web.UI.WebControls.FormViewMode)" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ModeChanged" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ModeChanging" />
       </Docs>
     </Member>
     <Member MemberName="DeleteItem">
@@ -1277,6 +1393,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.FormView.ItemTemplate" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemDeleted" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemDeleting" />
+        <altmember cref="M:System.Web.UI.WebControls.FormView.InsertItem(System.Boolean)" />
+        <altmember cref="M:System.Web.UI.WebControls.FormView.UpdateItem(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="DeleteMethod">
@@ -1374,6 +1495,16 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ITemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EditRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EmptyDataTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.FooterTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.InsertItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.ItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerTemplate" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemUpdated" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemUpdating" />
       </Docs>
     </Member>
     <Member MemberName="EditRowStyle">
@@ -1427,6 +1558,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EditItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EmptyDataRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.FooterStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.InsertRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.RowStyle" />
       </Docs>
     </Member>
     <Member MemberName="EmptyDataRowStyle">
@@ -1480,6 +1618,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EmptyDataTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EditRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.FooterStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.InsertRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.RowStyle" />
       </Docs>
     </Member>
     <Member MemberName="EmptyDataTemplate">
@@ -1530,6 +1675,15 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ITemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EmptyDataRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EmptyDataText" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EditItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EmptyDataTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.InsertItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.ItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerTemplate" />
       </Docs>
     </Member>
     <Member MemberName="EmptyDataText">
@@ -1576,6 +1730,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EmptyDataRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EmptyDataTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.FooterText" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderText" />
       </Docs>
     </Member>
     <Member MemberName="EnableModelValidation">
@@ -1625,6 +1783,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.BaseDataBoundControl.EnsureDataBound" />
       </Docs>
     </Member>
     <Member MemberName="ExtractRowValues">
@@ -1667,6 +1826,11 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.FormView" /> class, you can override this method to create your own routine to retrieve the field values.</para>
         </block>
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EditItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.InsertItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.ItemTemplate" />
+        <altmember cref="M:System.Web.UI.IBindableTemplate.ExtractValues(System.Web.UI.Control)" />
       </Docs>
     </Member>
     <Member MemberName="FooterRow">
@@ -1715,6 +1879,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.FormView.FooterStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.FooterTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.FooterText" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderRow" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.BottomPagerRow" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.TopPagerRow" />
       </Docs>
     </Member>
     <Member MemberName="FooterStyle">
@@ -1768,6 +1938,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.FooterTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.FooterText" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EditRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EmptyDataRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.InsertRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.RowStyle" />
       </Docs>
     </Member>
     <Member MemberName="FooterTemplate">
@@ -1818,6 +1996,15 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ITemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.FooterStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.FooterText" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EditItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EmptyDataTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.InsertItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.ItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerTemplate" />
       </Docs>
     </Member>
     <Member MemberName="FooterText">
@@ -1864,6 +2051,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.FormView.FooterStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.FooterTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EmptyDataText" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderText" />
       </Docs>
     </Member>
     <Member MemberName="GridLines">
@@ -1909,6 +2100,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridLines" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.BackImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.CellPadding" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.CellSpacing" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HorizontalAlign" />
       </Docs>
     </Member>
     <Member MemberName="HeaderRow">
@@ -1955,6 +2151,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderText" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.FooterRow" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.BottomPagerRow" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.TopPagerRow" />
       </Docs>
     </Member>
     <Member MemberName="HeaderStyle">
@@ -2008,6 +2210,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EditRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EmptyDataRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.FooterStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.InsertRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.RowStyle" />
       </Docs>
     </Member>
     <Member MemberName="HeaderTemplate">
@@ -2058,6 +2267,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ITemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EditItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EmptyDataTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.FooterTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.InsertItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.ItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerTemplate" />
       </Docs>
     </Member>
     <Member MemberName="HeaderText">
@@ -2104,6 +2321,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EmptyDataText" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.FooterText" />
       </Docs>
     </Member>
     <Member MemberName="HorizontalAlign">
@@ -2153,6 +2374,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.HorizontalAlign" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.BackImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.CellPadding" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.CellSpacing" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.GridLines" />
       </Docs>
     </Member>
     <Member MemberName="InitializePager">
@@ -2186,6 +2412,11 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.FormView" /> class, you can override this method to create your own pager row.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.FormViewRow" />
+        <altmember cref="T:System.Web.UI.WebControls.PagedDataSource" />
+        <altmember cref="T:System.Web.UI.WebControls.TableCell" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.AllowPaging" />
+        <altmember cref="M:System.Web.UI.WebControls.FormView.InitializeRow(System.Web.UI.WebControls.FormViewRow)" />
       </Docs>
     </Member>
     <Member MemberName="InitializeRow">
@@ -2227,6 +2458,10 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.FormView" /> class, you can override this method to create your own custom row.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.FormViewRow" />
+        <altmember cref="T:System.Web.UI.WebControls.DataControlRowState" />
+        <altmember cref="T:System.Web.UI.WebControls.DataControlRowType" />
+        <altmember cref="M:System.Web.UI.WebControls.FormView.InitializePager(System.Web.UI.WebControls.FormViewRow,System.Web.UI.WebControls.PagedDataSource)" />
       </Docs>
     </Member>
     <Member MemberName="InsertItem">
@@ -2274,6 +2509,11 @@
  -or-  
   
  The <see cref="T:System.Web.UI.DataSourceView" /> object associated with the <see cref="T:System.Web.UI.WebControls.FormView" /> control is null.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.FormView.InsertItemTemplate" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemInserted" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemInserting" />
+        <altmember cref="M:System.Web.UI.WebControls.FormView.DeleteItem" />
+        <altmember cref="M:System.Web.UI.WebControls.FormView.UpdateItem(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="InsertItemTemplate">
@@ -2338,6 +2578,16 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ITemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.InsertRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EditItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EmptyDataTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.FooterTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.ItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerTemplate" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemInserted" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemInserting" />
       </Docs>
     </Member>
     <Member MemberName="InsertMethod">
@@ -2426,6 +2676,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.InsertItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EditRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EmptyDataRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.FooterStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.RowStyle" />
       </Docs>
     </Member>
     <Member MemberName="IsBindableType">
@@ -2469,6 +2726,11 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.FormView" /> class, you can override this method to add or restrict the data types that can be used in a <see cref="T:System.Web.UI.WebControls.FormView" /> control.</para>
         </block>
+        <altmember cref="P:System.Type.IsPrimitive" />
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="T:System.Decimal" />
+        <altmember cref="T:System.Guid" />
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="ItemCommand">
@@ -2519,6 +2781,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormViewCommandEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewCommandEventHandler" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PageIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandEventArgs.CommandName" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandEventArgs.CommandArgument" />
+        <altmember cref="M:System.Web.UI.WebControls.FormView.OnItemCommand(System.Web.UI.WebControls.FormViewCommandEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ItemCreated">
@@ -2558,6 +2826,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.EventArgs" />
+        <altmember cref="T:System.EventHandler" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.BottomPagerRow" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.FooterRow" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderRow" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.Row" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.TopPagerRow" />
+        <altmember cref="M:System.Web.UI.WebControls.FormView.OnItemCreated(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ItemDeleted">
@@ -2594,6 +2870,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormViewDeletedEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewDeletedEventHandler" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewDeletedEventArgs.AffectedRows" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewDeletedEventArgs.Exception" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewDeletedEventArgs.ExceptionHandled" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewDeletedEventArgs.Keys" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewDeletedEventArgs.Values" />
+        <altmember cref="M:System.Web.UI.WebControls.FormView.OnItemDeleted(System.Web.UI.WebControls.FormViewDeletedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ItemDeleting">
@@ -2630,6 +2914,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormViewDeleteEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewDeleteEventHandler" />
+        <altmember cref="P:System.ComponentModel.CancelEventArgs.Cancel" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewDeleteEventArgs.RowIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewDeleteEventArgs.Keys" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewDeleteEventArgs.Values" />
+        <altmember cref="M:System.Web.UI.WebControls.FormView.OnItemDeleting(System.Web.UI.WebControls.FormViewDeleteEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ItemInserted">
@@ -2668,6 +2959,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormViewInsertedEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewInsertedEventHandler" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.AffectedRows" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.Exception" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.ExceptionHandled" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.KeepInInsertMode" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.Values" />
+        <altmember cref="M:System.Web.UI.WebControls.FormView.OnItemInserted(System.Web.UI.WebControls.FormViewInsertedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ItemInserting">
@@ -2704,6 +3003,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormViewInsertEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewInsertEventHandler" />
+        <altmember cref="P:System.ComponentModel.CancelEventArgs.Cancel" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewInsertEventArgs.CommandArgument" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewInsertEventArgs.Values" />
+        <altmember cref="M:System.Web.UI.WebControls.FormView.OnItemInserting(System.Web.UI.WebControls.FormViewInsertEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ItemTemplate">
@@ -2769,6 +3074,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ITemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.RowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EditItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EmptyDataTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.FooterTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.InsertItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerTemplate" />
       </Docs>
     </Member>
     <Member MemberName="ItemUpdated">
@@ -2807,6 +3120,16 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormViewUpdatedEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewUpdatedEventHandler" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewUpdatedEventArgs.AffectedRows" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewUpdatedEventArgs.Exception" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewUpdatedEventArgs.ExceptionHandled" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewUpdatedEventArgs.KeepInEditMode" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewUpdatedEventArgs.Keys" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewUpdatedEventArgs.OldValues" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewUpdatedEventArgs.NewValues" />
+        <altmember cref="M:System.Web.UI.WebControls.FormView.OnItemUpdated(System.Web.UI.WebControls.FormViewUpdatedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ItemUpdating">
@@ -2843,6 +3166,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormViewUpdateEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewUpdateEventHandler" />
+        <altmember cref="P:System.ComponentModel.CancelEventArgs.Cancel" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewUpdateEventArgs.CommandArgument" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewUpdatedEventArgs.Keys" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewUpdateEventArgs.NewValues" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewUpdatedEventArgs.OldValues" />
+        <altmember cref="M:System.Web.UI.WebControls.FormView.OnItemUpdating(System.Web.UI.WebControls.FormViewUpdateEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="LoadControlState">
@@ -2874,6 +3205,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Object" />
+        <altmember cref="P:System.Web.UI.Control.EnableViewState" />
+        <altmember cref="M:System.Web.UI.Control.LoadControlState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -2905,6 +3239,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Object" />
+        <altmember cref="M:System.Web.UI.Control.LoadViewState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ModeChanged">
@@ -2939,6 +3275,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.EventArgs" />
+        <altmember cref="T:System.EventHandler" />
+        <altmember cref="M:System.Web.UI.WebControls.FormView.OnModeChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ModeChanging">
@@ -2975,6 +3314,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormViewModeEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewModeEventHandler" />
+        <altmember cref="P:System.ComponentModel.CancelEventArgs.Cancel" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewModeEventArgs.CancelingEdit" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewModeEventArgs.NewMode" />
+        <altmember cref="M:System.Web.UI.WebControls.FormView.OnModeChanging(System.Web.UI.WebControls.FormViewModeEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ModifiedOuterTableStylePropertyName">
@@ -3050,6 +3395,8 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.FormView" /> class, you can override this method to handle your own events. Make sure to use the return value to indicate whether the event should be passed further up the control hierarchy.</para>
         </block>
+        <altmember cref="M:System.Web.UI.Control.OnBubbleEvent(System.Object,System.EventArgs)" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -3085,6 +3432,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.FormView.OnInit(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.FormView.OnInit(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.Control.Init" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnItemCommand">
@@ -3120,6 +3469,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.FormView.OnItemCommand(System.Web.UI.WebControls.FormViewCommandEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.FormView.OnItemCommand(System.Web.UI.WebControls.FormViewCommandEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemCommand" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewCommandEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnItemCreated">
@@ -3155,6 +3506,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.FormView.OnItemCreated(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.FormView.OnItemCreated(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemCreated" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnItemDeleted">
@@ -3190,6 +3543,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.FormView.OnItemDeleted(System.Web.UI.WebControls.FormViewDeletedEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.FormView.OnItemDeleted(System.Web.UI.WebControls.FormViewDeletedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemDeleted" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewDeletedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnItemDeleting">
@@ -3226,6 +3581,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.FormView.OnItemDeleting(System.Web.UI.WebControls.FormViewDeleteEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.FormView.OnItemDeleting(System.Web.UI.WebControls.FormViewDeleteEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemDeleting" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewDeleteEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnItemInserted">
@@ -3261,6 +3618,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.FormView.OnItemInserted(System.Web.UI.WebControls.FormViewInsertedEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.FormView.OnItemInserted(System.Web.UI.WebControls.FormViewInsertedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemInserted" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewInsertedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnItemInserting">
@@ -3297,6 +3656,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.FormView.OnItemInserting(System.Web.UI.WebControls.FormViewInsertEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.FormView.OnItemInserting(System.Web.UI.WebControls.FormViewInsertEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemInserting" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewInsertEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnItemUpdated">
@@ -3332,6 +3693,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.FormView.OnItemUpdated(System.Web.UI.WebControls.FormViewUpdatedEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.FormView.OnItemUpdated(System.Web.UI.WebControls.FormViewUpdatedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemUpdated" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewUpdatedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnItemUpdating">
@@ -3368,6 +3731,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.FormView.OnItemUpdating(System.Web.UI.WebControls.FormViewUpdateEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.FormView.OnItemUpdating(System.Web.UI.WebControls.FormViewUpdateEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemUpdating" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewUpdateEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnModeChanged">
@@ -3403,6 +3768,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.FormView.OnModeChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.FormView.OnModeChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ModeChanged" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnModeChanging">
@@ -3439,6 +3806,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.FormView.OnModeChanging(System.Web.UI.WebControls.FormViewModeEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.FormView.OnModeChanging(System.Web.UI.WebControls.FormViewModeEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ModeChanging" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewModeEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnPageIndexChanged">
@@ -3474,6 +3843,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.FormView.OnPageIndexChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.FormView.OnPageIndexChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.FormView.PageIndexChanged" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnPageIndexChanging">
@@ -3510,6 +3881,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.FormView.OnPageIndexChanging(System.Web.UI.WebControls.FormViewPageEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.FormView.OnPageIndexChanging(System.Web.UI.WebControls.FormViewPageEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.FormView.PageIndexChanging" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewPageEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="PageCount">
@@ -3556,6 +3929,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.FormView.BottomPagerRow" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PageIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerSettings" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.TopPagerRow" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.PageIndexChanged" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.PageIndexChanging" />
       </Docs>
     </Member>
     <Member MemberName="PageIndex">
@@ -3603,6 +3984,14 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The selected value is less than -1.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.FormView.BottomPagerRow" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PageCount" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerSettings" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.TopPagerRow" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.PageIndexChanged" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.PageIndexChanging" />
       </Docs>
     </Member>
     <Member MemberName="PageIndexChanged">
@@ -3642,6 +4031,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.EventArgs" />
+        <altmember cref="T:System.EventHandler" />
+        <altmember cref="M:System.Web.UI.WebControls.FormView.OnPageIndexChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="PageIndexChanging">
@@ -3686,6 +4078,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormViewPageEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewPageEventHandler" />
+        <altmember cref="P:System.ComponentModel.CancelEventArgs.Cancel" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewPageEventArgs.NewPageIndex" />
+        <altmember cref="M:System.Web.UI.WebControls.FormView.OnPageIndexChanging(System.Web.UI.WebControls.FormViewPageEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="PagerSettings">
@@ -3730,6 +4127,15 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.PagerSettings" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.BottomPagerRow" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PageCount" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PageIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.TopPagerRow" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.PageIndexChanged" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.PageIndexChanging" />
       </Docs>
     </Member>
     <Member MemberName="PagerStyle">
@@ -3780,6 +4186,21 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.BottomPagerRow" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PageCount" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PageIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerSettings" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.TopPagerRow" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.RowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EditRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EmptyDataRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.FooterStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.InsertRowStyle" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.PageIndexChanged" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.PageIndexChanging" />
       </Docs>
     </Member>
     <Member MemberName="PagerTemplate">
@@ -3842,6 +4263,21 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ITemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerSettings" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PageCount" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PageIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.BottomPagerRow" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.TopPagerRow" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EditItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EmptyDataTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.FooterTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.InsertItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.ItemTemplate" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.PageIndexChanged" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.PageIndexChanging" />
       </Docs>
     </Member>
     <Member MemberName="PerformDataBinding">
@@ -3873,6 +4309,7 @@
         <block subset="none" type="overrides">
           <para>Because the <see cref="M:System.Web.UI.WebControls.BaseDataBoundControl.DataBind" /> method is sealed, you should override this method if you need to perform any additional tasks when binding data.</para>
         </block>
+        <altmember cref="T:System.Collections.IEnumerable" />
       </Docs>
     </Member>
     <Member MemberName="PrepareControlHierarchy">
@@ -3929,6 +4366,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.CommandEventArgs" />
+        <altmember cref="T:System.Web.UI.IPostBackEventHandler" />
+        <altmember cref="M:System.Web.UI.Page.RaisePostBackEvent(System.Web.UI.IPostBackEventHandler,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -3957,6 +4397,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.Render(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="RenderOuterTable">
@@ -4040,6 +4481,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormViewRow" />
       </Docs>
     </Member>
     <Member MemberName="RowStyle">
@@ -4093,6 +4535,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.ItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EditRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EmptyDataRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.FooterStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.InsertRowStyle" />
       </Docs>
     </Member>
     <Member MemberName="SaveControlState">
@@ -4122,6 +4571,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.EnableViewState" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -4192,6 +4642,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataKey" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.DataKey" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.DataKeyNames" />
       </Docs>
     </Member>
     <Member MemberName="SetPageIndex">
@@ -4238,6 +4691,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IDataItemContainer" />
+        <altmember cref="P:System.Web.UI.IDataItemContainer.DataItemIndex" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IDataItemContainer.DisplayIndex">
@@ -4263,6 +4718,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IDataItemContainer" />
+        <altmember cref="P:System.Web.UI.IDataItemContainer.DisplayIndex" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackEventHandler.RaisePostBackEvent">
@@ -4497,6 +4954,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The object contained in the <paramref name="buttonControl" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.UI.WebControls.IButtonControl.CausesValidation" /> property of <paramref name="buttonControl" /> is <see langword="true" />.</exception>
+        <altmember cref="T:System.Web.UI.PostBackOptions" />
       </Docs>
     </Member>
     <Member MemberName="TagKey">
@@ -4525,6 +4983,8 @@
         <block subset="none" type="overrides">
           <para>You can override this property to specify which <see cref="T:System.Web.UI.HtmlTextWriterTag" /> value to use for your derived control.</para>
         </block>
+        <altmember cref="T:System.Web.UI.HtmlTextWriterTag" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.TagKey" />
       </Docs>
     </Member>
     <Member MemberName="TopPagerRow">
@@ -4571,6 +5031,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormViewRow" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.AllowPaging" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PageCount" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PageIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerSettings" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.BottomPagerRow" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemCreated" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.PageIndexChanged" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.PageIndexChanging" />
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -4596,6 +5067,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.StateBag" />
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
       </Docs>
     </Member>
     <Member MemberName="UpdateItem">
@@ -4643,6 +5116,11 @@
  -or-  
   
  The <see cref="T:System.Web.UI.DataSourceView" /> object associated with the <see cref="T:System.Web.UI.WebControls.FormView" /> control is null.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EditItemTemplate" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemUpdated" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemUpdating" />
+        <altmember cref="M:System.Web.UI.WebControls.FormView.DeleteItem" />
+        <altmember cref="M:System.Web.UI.WebControls.FormView.InsertItem(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="UpdateMethod">

@@ -48,6 +48,8 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.Permissions.SecurityPermission">for calling any member of <see cref="T:System.Diagnostics.EventSourceCreationData" /> with full trust. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+    <altmember cref="T:System.Diagnostics.EventLog" />
+    <altmember cref="T:System.Diagnostics.EventLogInstaller" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -214,6 +216,8 @@ SVC_UPDATE.EXE
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling any member of <see cref="T:System.Diagnostics.EventSourceCreationData" /> with full trust. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="P:System.Diagnostics.EventSourceCreationData.Source" />
+        <altmember cref="P:System.Diagnostics.EventSourceCreationData.LogName" />
       </Docs>
     </Member>
     <Member MemberName="CategoryCount">
@@ -367,6 +371,9 @@ SVC_UPDATE.EXE
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The property is set to a negative value or to a value larger than <see cref="F:System.UInt16.MaxValue" />.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling any member of <see cref="T:System.Diagnostics.EventSourceCreationData" /> with full trust. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="P:System.Diagnostics.EventSourceCreationData.CategoryResourceFile" />
+        <altmember cref="P:System.Diagnostics.EventLogInstaller.CategoryCount" />
+        <altmember cref="Overload:System.Diagnostics.EventLog.WriteEvent" />
       </Docs>
     </Member>
     <Member MemberName="CategoryResourceFile">
@@ -519,6 +526,8 @@ SVC_UPDATE.EXE
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling any member of <see cref="T:System.Diagnostics.EventSourceCreationData" /> with full trust. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="P:System.Diagnostics.EventSourceCreationData.CategoryCount" />
+        <altmember cref="P:System.Diagnostics.EventLogInstaller.CategoryResourceFile" />
       </Docs>
     </Member>
     <Member MemberName="LogName">
@@ -561,6 +570,8 @@ SVC_UPDATE.EXE
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling any member of <see cref="T:System.Diagnostics.EventSourceCreationData" /> with full trust. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="P:System.Diagnostics.EventLogInstaller.Log" />
+        <altmember cref="M:System.Diagnostics.EventLog.Exists(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="MachineName">
@@ -599,6 +610,9 @@ SVC_UPDATE.EXE
         </remarks>
         <exception cref="T:System.ArgumentException">The computer name is invalid.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling any member of <see cref="T:System.Diagnostics.EventSourceCreationData" /> with full trust. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="P:System.Diagnostics.EventLog.MachineName" />
+        <altmember cref="P:System.Diagnostics.EventSourceCreationData.Source" />
+        <altmember cref="M:System.Diagnostics.EventLog.Exists(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="MessageResourceFile">
@@ -755,6 +769,7 @@ SVC_UPDATE.EXE
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling any member of <see cref="T:System.Diagnostics.EventSourceCreationData" /> with full trust. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="P:System.Diagnostics.EventLogInstaller.MessageResourceFile" />
       </Docs>
     </Member>
     <Member MemberName="ParameterResourceFile">
@@ -934,6 +949,7 @@ SVC_UPDATE.EXE
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling any member of <see cref="T:System.Diagnostics.EventSourceCreationData" /> with full trust. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="P:System.Diagnostics.EventLogInstaller.ParameterResourceFile" />
       </Docs>
     </Member>
     <Member MemberName="Source">
@@ -973,6 +989,8 @@ SVC_UPDATE.EXE
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling any member of <see cref="T:System.Diagnostics.EventSourceCreationData" /> with full trust. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="P:System.Diagnostics.EventLogInstaller.Source" />
+        <altmember cref="M:System.Diagnostics.EventLog.SourceExists(System.String)" />
       </Docs>
     </Member>
   </Members>

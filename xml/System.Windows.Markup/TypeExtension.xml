@@ -221,5 +221,14 @@
         <exception cref="T:System.ArgumentNullException">Attempted to set to <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.TypeExtension" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

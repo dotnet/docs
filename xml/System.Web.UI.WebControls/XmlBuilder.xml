@@ -13,6 +13,8 @@
   <Docs>
     <summary>Interacts with the parser to build the <see cref="T:System.Web.UI.WebControls.Xml" /> control.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Xml" />
+    <altmember cref="T:System.Web.UI.ControlBuilderAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -56,6 +58,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.ControlBuilder.AppendLiteralString(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetChildControlType">
@@ -87,6 +90,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.ControlBuilder.GetChildControlType(System.String,System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="NeedsTagInnerText">
@@ -115,6 +119,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.ControlBuilder.NeedsTagInnerText" />
       </Docs>
     </Member>
     <Member MemberName="SetTagInnerText">
@@ -144,6 +149,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XmlException">The <see cref="T:System.String" /> object passed in is not well-formed XML.</exception>
+        <altmember cref="M:System.Web.UI.ControlBuilder.SetTagInnerText(System.String)" />
       </Docs>
     </Member>
   </Members>

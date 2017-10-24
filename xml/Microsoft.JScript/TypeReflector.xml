@@ -14,6 +14,8 @@
     <summary>Provides an implementation of <see cref="M:Microsoft.JScript.TypeReflector.GetMember(System.String,System.Reflection.BindingFlags)" /> that is faster than <see cref="M:System.Type.GetMember(System.String,System.Reflection.BindingFlags)" />.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.ScriptObject" />
+    <altmember cref="T:System.Type" />
   </Docs>
   <Members>
     <Member MemberName="GetMember">
@@ -39,6 +41,8 @@
         <returns>An array of <see cref="T:System.Reflection.MemberInfo" /> objects that represents the public members that have the specified name, if found; otherwise, an empty array.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ScriptObject" />
+        <altmember cref="T:System.Type" />
       </Docs>
     </Member>
     <Member MemberName="GetMembers">
@@ -62,6 +66,9 @@
         <returns>Throws a <see cref="T:Microsoft.JScript.JScriptException" /> exception in all cases.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ScriptObject" />
+        <altmember cref="T:System.Type" />
+        <altmember cref="F:Microsoft.JScript.JSError.InternalError" />
       </Docs>
     </Member>
   </Members>

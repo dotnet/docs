@@ -30,6 +30,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ServiceModel.Description.DataContractSerializerOperationBehavior" />
+    <altmember cref="T:System.Runtime.Serialization.XsdDataContractExporter" />
+    <altmember cref="T:System.Runtime.Serialization.XsdDataContractImporter" />
   </Docs>
   <Members>
     <Member MemberName="GetCustomDataToExport">
@@ -297,5 +300,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetCustomDataToExport">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>During schema export operations, inserts annotations into the schema for non-null return values.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

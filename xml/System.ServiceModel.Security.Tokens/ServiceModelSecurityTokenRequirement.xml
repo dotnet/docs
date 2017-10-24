@@ -75,6 +75,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ServiceModel.Security.Tokens.RecipientServiceModelSecurityTokenRequirement.AuditLogLocation" />
       </Docs>
     </Member>
     <Member MemberName="ChannelParametersCollectionProperty">
@@ -237,6 +238,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.IsInitiator" />
       </Docs>
     </Member>
     <Member MemberName="IsOutOfBandTokenProperty">
@@ -323,6 +325,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.IssuerAddress" />
       </Docs>
     </Member>
     <Member MemberName="IssuerBinding">
@@ -398,6 +401,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.IssuerBinding" />
       </Docs>
     </Member>
     <Member MemberName="ListenUriProperty">
@@ -416,6 +420,7 @@
         <summary>Gets the key for the token requirement property whose value is the URI that the service endpoint making the request is listening at (service only).</summary>
         <value>The key for the token requirement property whose value is the URI that the service endpoint making the request is listening at.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.ServiceModel.Security.Tokens.RecipientServiceModelSecurityTokenRequirement.ListenUri" />
       </Docs>
     </Member>
     <Member MemberName="MessageAuthenticationAuditLevelProperty">
@@ -449,6 +454,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ServiceModel.Security.Tokens.RecipientServiceModelSecurityTokenRequirement.MessageAuthenticationAuditLevel" />
       </Docs>
     </Member>
     <Member MemberName="MessageDirectionProperty">
@@ -524,6 +530,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.MessageSecurityVersion" />
       </Docs>
     </Member>
     <Member MemberName="Namespace">
@@ -659,6 +666,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.SecureConversationSecurityBindingElement" />
       </Docs>
     </Member>
     <Member MemberName="SecurityAlgorithmSuite">
@@ -702,6 +710,7 @@
         <summary>Gets the key for the token requirement property whose value is the algorithm suite that the channel uses to perform message security.</summary>
         <value>The key for the token requirement property whose value is <see cref="T:System.ServiceModel.Security.SecurityAlgorithmSuite" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.SecurityAlgorithmSuite" />
       </Docs>
     </Member>
     <Member MemberName="SecurityBindingElement">
@@ -745,6 +754,7 @@
         <summary>Gets the key for the token requirement property whose value is the security binding element used to create the channel.</summary>
         <value>The key for the token requirement property whose value is the <see cref="T:System.ServiceModel.Channels.SecurityBindingElement" /> used to create the channel.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.SecurityBindingElement" />
       </Docs>
     </Member>
     <Member MemberName="SupportingTokenAttachmentModeProperty">
@@ -813,6 +823,7 @@
         <summary>Gets the key for the token requirement property whose value indicates whether to ignore errors that occur when recording the results of the authentication (service only).</summary>
         <value>The key for the token requirement property whose value indicates whether to ignore errors that occur when recording the results of the authentication.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.ServiceModel.Security.Tokens.RecipientServiceModelSecurityTokenRequirement.SuppressAuditFailure" />
       </Docs>
     </Member>
     <Member MemberName="TargetAddressProperty">
@@ -831,6 +842,7 @@
         <summary>Gets the key for the token requirement property whose value is the endpoint address that the channel is talking to (client only).</summary>
         <value>The key for the token requirement property whose value is the <see cref="T:System.ServiceModel.EndpointAddress" /> that the channel is talking to.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.ServiceModel.Security.Tokens.InitiatorServiceModelSecurityTokenRequirement.TargetAddress" />
       </Docs>
     </Member>
     <Member MemberName="TransportScheme">
@@ -874,6 +886,7 @@
         <summary>If the request is made for a token provider/authenticator to be used with transport security, this string is the key for the token requirement property whose value is the transport scheme.</summary>
         <value>The key for the token requirement property whose value is the transport scheme.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.TransportScheme" />
       </Docs>
     </Member>
     <Member MemberName="ViaProperty">
@@ -899,6 +912,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ServiceModel.Security.Tokens.InitiatorServiceModelSecurityTokenRequirement.Via" />
       </Docs>
     </Member>
   </Members>

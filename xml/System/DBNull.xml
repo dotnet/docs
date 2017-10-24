@@ -57,6 +57,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="F:System.Convert.DBNull" />
+    <altmember cref="M:System.Convert.IsDBNull(System.Object)" />
+    <altmember cref="T:System.Runtime.InteropServices.VarEnum" />
   </Docs>
   <Members>
     <Member MemberName="GetObjectData">
@@ -97,6 +100,9 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="info" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="T:System.Runtime.Serialization.ISerializable" />
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
       </Docs>
     </Member>
     <Member MemberName="GetTypeCode">
@@ -125,6 +131,7 @@
         <summary>Gets the <see cref="T:System.TypeCode" /> value for <see cref="T:System.DBNull" />.</summary>
         <returns>The <see cref="T:System.TypeCode" /> value for <see cref="T:System.DBNull" />, which is <see cref="F:System.TypeCode.DBNull" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.TypeCode" />
       </Docs>
     </Member>
     <Member MemberName="System.IConvertible.ToBoolean">
@@ -157,6 +164,7 @@
         <returns>None. The return value for this member is not used.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidCastException">This conversion is not supported for the <see cref="T:System.DBNull" /> type.</exception>
+        <altmember cref="T:System.IConvertible" />
       </Docs>
     </Member>
     <Member MemberName="System.IConvertible.ToByte">
@@ -189,6 +197,7 @@
         <returns>None. The return value for this member is not used.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidCastException">This conversion is not supported for the <see cref="T:System.DBNull" /> type.</exception>
+        <altmember cref="T:System.IConvertible" />
       </Docs>
     </Member>
     <Member MemberName="System.IConvertible.ToChar">
@@ -221,6 +230,7 @@
         <returns>None. The return value for this member is not used.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidCastException">This conversion is not supported for the <see cref="T:System.DBNull" /> type.</exception>
+        <altmember cref="T:System.IConvertible" />
       </Docs>
     </Member>
     <Member MemberName="System.IConvertible.ToDateTime">
@@ -253,6 +263,7 @@
         <returns>None. The return value for this member is not used.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidCastException">This conversion is not supported for the <see cref="T:System.DBNull" /> type.</exception>
+        <altmember cref="T:System.IConvertible" />
       </Docs>
     </Member>
     <Member MemberName="System.IConvertible.ToDecimal">
@@ -285,6 +296,7 @@
         <returns>None. The return value for this member is not used.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidCastException">This conversion is not supported for the <see cref="T:System.DBNull" /> type.</exception>
+        <altmember cref="T:System.IConvertible" />
       </Docs>
     </Member>
     <Member MemberName="System.IConvertible.ToDouble">
@@ -317,6 +329,7 @@
         <returns>None. The return value for this member is not used.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidCastException">This conversion is not supported for the <see cref="T:System.DBNull" /> type.</exception>
+        <altmember cref="T:System.IConvertible" />
       </Docs>
     </Member>
     <Member MemberName="System.IConvertible.ToInt16">
@@ -349,6 +362,7 @@
         <returns>None. The return value for this member is not used.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidCastException">This conversion is not supported for the <see cref="T:System.DBNull" /> type.</exception>
+        <altmember cref="T:System.IConvertible" />
       </Docs>
     </Member>
     <Member MemberName="System.IConvertible.ToInt32">
@@ -381,6 +395,7 @@
         <returns>None. The return value for this member is not used.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidCastException">This conversion is not supported for the <see cref="T:System.DBNull" /> type.</exception>
+        <altmember cref="T:System.IConvertible" />
       </Docs>
     </Member>
     <Member MemberName="System.IConvertible.ToInt64">
@@ -413,6 +428,7 @@
         <returns>None. The return value for this member is not used.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidCastException">This conversion is not supported for the <see cref="T:System.DBNull" /> type.</exception>
+        <altmember cref="T:System.IConvertible" />
       </Docs>
     </Member>
     <Member MemberName="System.IConvertible.ToSByte">
@@ -445,6 +461,7 @@
         <returns>None. The return value for this member is not used.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidCastException">This conversion is not supported for the <see cref="T:System.DBNull" /> type.</exception>
+        <altmember cref="T:System.IConvertible" />
       </Docs>
     </Member>
     <Member MemberName="System.IConvertible.ToSingle">
@@ -477,6 +494,7 @@
         <returns>None. The return value for this member is not used.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidCastException">This conversion is not supported for the <see cref="T:System.DBNull" /> type.</exception>
+        <altmember cref="T:System.IConvertible" />
       </Docs>
     </Member>
     <Member MemberName="System.IConvertible.ToType">
@@ -520,6 +538,8 @@
         <exception cref="T:System.InvalidCastException">This conversion is not supported for the <see cref="T:System.DBNull" /> type.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="type" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Type" />
+        <altmember cref="T:System.IConvertible" />
       </Docs>
     </Member>
     <Member MemberName="System.IConvertible.ToUInt16">
@@ -552,6 +572,7 @@
         <returns>None. The return value for this member is not used.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidCastException">This conversion is not supported for the <see cref="T:System.DBNull" /> type.</exception>
+        <altmember cref="T:System.IConvertible" />
       </Docs>
     </Member>
     <Member MemberName="System.IConvertible.ToUInt32">
@@ -584,6 +605,7 @@
         <returns>None. The return value for this member is not used.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidCastException">This conversion is not supported for the <see cref="T:System.DBNull" /> type.</exception>
+        <altmember cref="T:System.IConvertible" />
       </Docs>
     </Member>
     <Member MemberName="System.IConvertible.ToUInt64">
@@ -616,6 +638,7 @@
         <returns>None. The return value for this member is not used.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidCastException">This conversion is not supported for the <see cref="T:System.DBNull" /> type.</exception>
+        <altmember cref="T:System.IConvertible" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -648,6 +671,7 @@
         <summary>Returns an empty string (<see cref="F:System.String.Empty" />).</summary>
         <returns>An empty string (<see cref="F:System.String.Empty" />).</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="F:System.String.Empty" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -687,6 +711,7 @@
         <summary>Returns an empty string using the specified <see cref="T:System.IFormatProvider" />.</summary>
         <returns>An empty string (<see cref="F:System.String.Empty" />).</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="F:System.String.Empty" />
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -738,5 +763,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an empty string.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

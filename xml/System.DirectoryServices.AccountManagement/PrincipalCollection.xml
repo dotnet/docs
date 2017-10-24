@@ -24,6 +24,7 @@
   <Docs>
     <summary>A mutable collection of objects derived from the <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> class.  This class is designed to be used for multi-valued properties that contain Principals.  Manipulating the contents of this collection changes the contents of the corresponding store property, which is made permanent when <see cref="M:System.DirectoryServices.AccountManagement.Principal.Save" /> is called on the corresponding principal object.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="N:System.DirectoryServices.AccountManagement" />
   </Docs>
   <Members>
     <MemberGroup MemberName="Add">
@@ -41,6 +42,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </MemberGroup>
     <Member MemberName="Add">
@@ -79,6 +81,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -117,6 +120,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -155,6 +159,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -193,6 +198,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -238,6 +244,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -273,6 +280,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <MemberGroup MemberName="Contains">
@@ -290,6 +298,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </MemberGroup>
     <Member MemberName="Contains">
@@ -318,6 +327,7 @@
         <summary>Returns true if the collection contains the specified <see cref="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" /> object.</summary>
         <returns>Returns a <see langword="bool" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -346,6 +356,7 @@
         <summary>Returns true if the collection contains the specified <see cref="T:System.DirectoryServices.AccountManagement.GroupPrincipal" /> object.</summary>
         <returns>Returns a <see langword="bool" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -374,6 +385,7 @@
         <summary>Returns true if the collection contains the specified <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> object.</summary>
         <returns>Returns a <see langword="bool" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -402,6 +414,7 @@
         <summary>Returns true if the collection contains the specified <see cref="T:System.DirectoryServices.AccountManagement.UserPrincipal" /> object.</summary>
         <returns>Returns a <see langword="bool" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -446,6 +459,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -477,6 +491,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -501,6 +516,7 @@
         <summary>Returns the count of Principal objects in this collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -533,6 +549,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -552,6 +569,7 @@
         <summary>Returns false.  This is not a read-only collection.</summary>
         <value>Returns a <see langword="bool" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -571,6 +589,7 @@
         <summary>Returns false.  It is up to the application to serialize access to this collection.</summary>
         <value>Returns a <see langword="bool" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <MemberGroup MemberName="Remove">
@@ -588,6 +607,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </MemberGroup>
     <Member MemberName="Remove">
@@ -627,6 +647,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -666,6 +687,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -705,6 +727,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -744,6 +767,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -790,6 +814,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -809,6 +834,7 @@
         <summary>Returns a synchronization object that can be used to synchronize access to this collection.</summary>
         <value>Returns the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalCollection" /> object itself.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -845,6 +871,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.Count">
@@ -869,6 +896,7 @@
         <summary>Returns the count of Principal objects in this collection.</summary>
         <value>Returns an <see langword="integer" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -900,6 +928,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.SyncRoot">
@@ -924,6 +953,7 @@
         <summary>Returns a synchronization object that can be used to synchronize access to this collection.  Returns the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalCollection" /> object itself.</summary>
         <value>The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalCollection" /> object.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -956,6 +986,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
   </Members>

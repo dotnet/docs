@@ -86,6 +86,7 @@
         <param name="fieldName">The name of the field.</param>
         <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeFieldReferenceExpression" /> class using the specified target object and field name.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeExpression" />
       </Docs>
     </Member>
     <Member MemberName="FieldName">
@@ -130,7 +131,17 @@
         <summary>Gets or sets the object that contains the field to reference.</summary>
         <value>A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the object that contains the field to reference.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeExpression" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeFieldReferenceExpression" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

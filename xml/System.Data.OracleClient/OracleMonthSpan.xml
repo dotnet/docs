@@ -453,9 +453,9 @@
         <Parameter Name="x" Type="System.Data.OracleClient.OracleMonthSpan" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">An <see cref="T:System.Data.OracleClient.OracleMonthSpan" /> structure to convert to an <see langword="Int32" />.</param>
+        <summary>Converts an <see cref="T:System.Data.OracleClient.OracleMonthSpan" /> structure to an <see langword="Int32" />.</summary>
+        <returns>An <see langword="Int32" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -475,9 +475,9 @@
         <Parameter Name="x" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">A string to convert to an <see cref="T:System.Data.OracleClient.OracleMonthSpan" /> structure.</param>
+        <summary>Converts a string to an <see cref="T:System.Data.OracleClient.OracleMonthSpan" /> structure.</summary>
+        <returns>An <see cref="T:System.Data.OracleClient.OracleMonthSpan" /> structure.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -670,5 +670,32 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="op_Explicit">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Used for explicit <see cref="T:System.Data.OracleClient.OracleMonthSpan" /> conversion.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new <see cref="T:System.Data.OracleClient.OracleMonthSpan" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares the supplied object parameter to the <see cref="P:System.Data.OracleClient.OracleMonthSpan.Value" /> property of the <see cref="T:System.Data.OracleClient.OracleMonthSpan" /> object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

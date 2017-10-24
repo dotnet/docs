@@ -140,6 +140,14 @@ ExampleAssembly, Version=1.0.0.0, Culture=en, PublicKeyToken=a5d015c7d5a0b012
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Version" />
+    <altmember cref="M:System.Reflection.AssemblyName.GetPublicKey" />
+    <altmember cref="M:System.Reflection.AssemblyName.GetPublicKeyToken" />
+    <altmember cref="M:System.Reflection.AssemblyName.SetPublicKey(System.Byte[])" />
+    <altmember cref="M:System.Reflection.AssemblyName.SetPublicKeyToken(System.Byte[])" />
+    <altmember cref="P:System.Type.FullName" />
+    <altmember cref="M:System.Type.GetType" />
+    <altmember cref="P:System.Type.AssemblyQualifiedName" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -916,6 +924,8 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
         <param name="sender">The source of the deserialization event.</param>
         <summary>Implements the <see cref="T:System.Runtime.Serialization.ISerializable" /> interface and is called back by the deserialization event when deserialization is complete.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Runtime.Serialization.ISerializable" />
+        <altmember cref="M:System.Reflection.AssemblyName.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       </Docs>
     </Member>
     <Member MemberName="ProcessorArchitecture">
@@ -955,6 +965,7 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Reflection.Module.GetPEKind(System.Reflection.PortableExecutableKinds@,System.Reflection.ImageFileMachine@)" />
       </Docs>
     </Member>
     <Member MemberName="ReferenceMatchesDefinition">
@@ -1391,5 +1402,16 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Reflection.AssemblyName" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

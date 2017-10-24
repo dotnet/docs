@@ -99,5 +99,14 @@
           <paramref name="publicKey" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.RsaEndpointIdentity" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

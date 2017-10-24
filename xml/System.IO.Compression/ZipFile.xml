@@ -799,5 +799,35 @@
           <paramref name="archiveFileName" /> could not be interpreted as a zip archive.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Open">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens a zip archive at the specified path and in the specified mode.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ExtractToDirectory">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Extracts all the files in the specified zip archive to a directory on the file system.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateFromDirectory">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a zip archive that contains the files and directories from the specified directory.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

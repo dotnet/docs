@@ -158,6 +158,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Reflection.MemberInfo.CustomAttributes" />
+        <altmember cref="M:System.Reflection.MemberInfo.GetCustomAttributes(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="CanRead">
@@ -1164,6 +1166,9 @@ Console.WriteLine("CurrCult: " +
         <exception cref="T:System.MethodAccessException">There was an illegal attempt to access a private or protected method inside a class.</exception>
         <exception cref="T:System.Reflection.TargetInvocationException">An error occurred while retrieving the property value. For example, an index value specified for an indexed property is out of range. The <see cref="P:System.Exception.InnerException" /> property indicates the reason for the error.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
+        <altmember cref="T:System.Reflection.Binder" />
+        <altmember cref="T:System.Reflection.BindingFlags" />
+        <altmember cref="T:System.Globalization.CultureInfo" />
       </Docs>
     </Member>
     <Member MemberName="IsSpecialName">
@@ -1420,6 +1425,8 @@ Console.WriteLine("CurrCult: " +
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Reflection.PropertyInfo.GetMethod" />
+        <altmember cref="P:System.Reflection.PropertyInfo.CanWrite" />
       </Docs>
     </Member>
     <Member MemberName="SetValue">
@@ -1868,5 +1875,54 @@ Console.WriteLine("CurrCult: " +
         <exception cref="T:System.NotImplementedException">Late-bound access using the COM <c>IDispatch</c> interface is not supported.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetGetMethod">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see langword="MethodInfo" /> representing the <see langword="get" /> accessor for this property.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetSetMethod">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.Reflection.MethodInfo" /> representing the <see langword="set" /> accessor for this property.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetAccessors">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an array of the <see langword="get" /> and <see langword="set" /> accessors on this property.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the property value for a specified object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the property value of a specified object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

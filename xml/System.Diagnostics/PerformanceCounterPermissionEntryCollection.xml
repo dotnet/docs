@@ -17,6 +17,10 @@
   <Docs>
     <summary>Contains a strongly typed collection of <see cref="T:System.Diagnostics.PerformanceCounterPermissionEntry" /> objects.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Diagnostics.PerformanceCounter" />
+    <altmember cref="T:System.Diagnostics.PerformanceCounterPermissionEntry" />
+    <altmember cref="T:System.Diagnostics.PerformanceCounterPermissionAccess" />
+    <altmember cref="T:System.Diagnostics.PerformanceCounterPermissionAttribute" />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -362,5 +366,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddRange">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Appends a set of specified permission entries to this collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

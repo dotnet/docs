@@ -14,6 +14,9 @@
     <summary>Represents a namespace.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.Import" />
+    <altmember cref="T:Microsoft.JScript.Package" />
+    <altmember cref="T:Microsoft.JScript.LateBinding" />
   </Docs>
   <Members>
     <Member MemberName="GetNamespace">
@@ -39,6 +42,9 @@
         <returns>A new instance of the <see cref="T:Microsoft.JScript.Namespace" /> class.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.Import" />
+        <altmember cref="T:Microsoft.JScript.Package" />
+        <altmember cref="T:Microsoft.JScript.LateBinding" />
       </Docs>
     </Member>
   </Members>

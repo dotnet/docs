@@ -68,6 +68,10 @@
   
  In contrast, if your custom zone and its <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> controls are going to be self-contained, and they will be created programmatically without any options for page developers to specify controls declaratively in a zone template, then you can inherit directly from the <see cref="T:System.Web.UI.WebControls.WebParts.EditorZoneBase" /> class. If you do this, it is critical that you implement the <see cref="M:System.Web.UI.WebControls.WebParts.EditorZoneBase.CreateEditorParts" /> method so that your custom zone will work.</para>
     </block>
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.WebZone" />
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartZoneBase" />
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.CatalogZoneBase" />
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.IWebEditable" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -148,6 +152,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" />
       </Docs>
     </Member>
     <Member MemberName="CancelVerb">
@@ -208,6 +213,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" />
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -235,6 +241,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.EndWebPartEditing" />
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
@@ -284,6 +291,7 @@
         <block subset="none" type="overrides">
           <para>The <see cref="M:System.Web.UI.WebControls.WebParts.EditorZoneBase.CreateEditorPartChrome" /> method can be overridden in a derived class to provide a different implementation. For example, you might create a customized <see cref="T:System.Web.UI.WebControls.WebParts.EditorPartChrome" /> class to give you more control over the rendering and appearance of the editing UI. If you override the <see cref="M:System.Web.UI.WebControls.WebParts.EditorZoneBase.CreateEditorPartChrome" /> method in a derived zone, you could create your custom <see cref="T:System.Web.UI.WebControls.WebParts.EditorPartChrome" /> object in the overridden method.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartChrome" />
       </Docs>
     </Member>
     <Member MemberName="CreateEditorParts">
@@ -310,6 +318,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.IWebEditable.CreateEditorParts" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.EditorZoneBase.InvalidateEditorParts" />
       </Docs>
     </Member>
     <Member MemberName="Display">
@@ -329,6 +339,7 @@
         <value>
           <see langword="true" /> if the <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> is currently displayed; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ToolZone.Display" />
       </Docs>
     </Member>
     <Member MemberName="EditorPartChrome">
@@ -364,6 +375,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.EditorZoneBase.CreateEditorPartChrome" />
       </Docs>
     </Member>
     <Member MemberName="EditorParts">
@@ -420,6 +432,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> being added to the collection does not have a value assigned to its ID property.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.IWebEditable" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.IWebEditable.CreateEditorParts" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.GenericWebPart.CreateEditorParts" />
       </Docs>
     </Member>
     <Member MemberName="EmptyZoneText">
@@ -438,6 +453,7 @@
         <summary>Gets or sets a message that appears when a zone contains no controls.</summary>
         <value>A string containing the message that appears in an empty zone. A default culture-specific string is supplied by the .NET Framework.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.EmptyZoneText" />
       </Docs>
     </Member>
     <Member MemberName="ErrorText">
@@ -488,6 +504,7 @@
         <summary>Gets or sets the text for the header area of a zone.</summary>
         <value>A string that contains the header text for the zone. The default is an empty string ("").</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.HeaderText" />
       </Docs>
     </Member>
     <Member MemberName="InstructionText">
@@ -506,6 +523,7 @@
         <summary>Gets or sets the text in a <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> control that provides directions for end users.</summary>
         <value>A string that contains the directions for end users. A default value appropriate to specific tool zones is provided by derived <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> classes.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ToolZone.InstructionText" />
       </Docs>
     </Member>
     <Member MemberName="InvalidateEditorParts">
@@ -531,6 +549,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.EditorZoneBase.CreateEditorParts" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -562,6 +581,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The size of the <paramref name="savedState" /> object does not equal the size of the current view-state object.</exception>
+        <altmember cref="M:System.Web.UI.Control.LoadViewState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="OKVerb">
@@ -622,6 +642,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" />
       </Docs>
     </Member>
     <Member MemberName="OnDisplayModeChanged">
@@ -690,6 +711,7 @@
         <param name="e">A <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Web.UI.Control.PreRender" /> event, and calls the <see cref="M:System.Web.UI.WebControls.WebParts.EditorPartChrome.PerformPreRender" /> method for the chrome elements of the <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> controls.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Web.UI.Control.PreRender" />
       </Docs>
     </Member>
     <Member MemberName="OnSelectedWebPartChanged">
@@ -791,6 +813,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.Render(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="RenderBody">
@@ -833,6 +856,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.RenderBody(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="RenderVerbs">
@@ -952,6 +976,7 @@
         <block subset="none" type="overrides">
           <para>The protected <see cref="P:System.Web.UI.WebControls.WebParts.EditorZoneBase.WebPartToEdit" /> property is accessible only in derived classes, which can call this property on the base <see cref="T:System.Web.UI.WebControls.WebParts.EditorZoneBase" /> class to get an object reference to the current control being edited.</para>
         </block>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.EditorPart.WebPartToEdit" />
       </Docs>
     </Member>
   </Members>

@@ -25,6 +25,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.Control" />
   </Docs>
   <Members>
     <Member MemberName="InstantiateIn">
@@ -59,6 +60,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Control" />
+        <altmember cref="T:System.Web.UI.ControlCollection" />
       </Docs>
     </Member>
   </Members>

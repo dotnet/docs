@@ -28,6 +28,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Security.Permissions.StorePermissionAttribute" />
+    <altmember cref="T:System.Security.Permissions.StorePermissionFlags" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -359,5 +361,14 @@
           <paramref name="target" /> is not <see langword="null" /> and is not of the same type as the current permission.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.StorePermission" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

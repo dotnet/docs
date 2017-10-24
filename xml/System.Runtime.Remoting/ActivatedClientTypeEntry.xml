@@ -53,6 +53,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedClientType(System.Type,System.String)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -171,6 +172,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.Remoting.Contexts.Context" />
+        <altmember cref="T:System.Runtime.Remoting.Contexts.ContextAttribute" />
+        <altmember cref="T:System.Runtime.Remoting.Contexts.ContextProperty" />
+        <altmember cref="T:System.Runtime.Remoting.Contexts.IContextAttribute" />
       </Docs>
     </Member>
     <Member MemberName="ObjectType">
@@ -234,5 +239,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.ActivatedClientTypeEntry" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

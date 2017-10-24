@@ -27,6 +27,7 @@
   <Docs>
     <summary>Specifies when a component property can be bound to an application setting.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="N:System.Configuration" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -55,6 +56,7 @@
           <see langword="true" /> to specify that a property is appropriate to bind settings to; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.SettingsBindableAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="N:System.Configuration" />
       </Docs>
     </Member>
     <Member MemberName="Bindable">
@@ -83,6 +85,7 @@
         <value>
           <see langword="true" /> if the property is appropriate to bind settings to; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="N:System.Configuration" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -115,6 +118,8 @@
         <returns>
           <see langword="true" /> if <paramref name="obj" /> equals the type and value of this instance; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="N:System.Configuration" />
+        <altmember cref="M:System.Attribute.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -143,6 +148,8 @@
         <summary>Returns the hash code for this instance.</summary>
         <returns>A 32-bit signed integer hash code.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Attribute.GetHashCode" />
+        <altmember cref="N:System.Configuration" />
       </Docs>
     </Member>
     <Member MemberName="No">
@@ -169,6 +176,7 @@
       <Docs>
         <summary>Specifies that a property is not appropriate to bind settings to.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="N:System.Configuration" />
       </Docs>
     </Member>
     <Member MemberName="Yes">
@@ -195,6 +203,7 @@
       <Docs>
         <summary>Specifies that a property is appropriate to bind settings to.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="N:System.Configuration" />
       </Docs>
     </Member>
   </Members>

@@ -51,6 +51,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IComparable" />
+    <altmember cref="T:System.Collections.IStructuralEquatable" />
+    <altmember cref="P:System.Collections.StructuralComparisons.StructuralComparer" />
   </Docs>
   <Members>
     <Member MemberName="CompareTo">
@@ -132,6 +135,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">This instance and <paramref name="other" /> are not the same type.</exception>
+        <altmember cref="T:System.Collections.IComparer" />
       </Docs>
     </Member>
   </Members>

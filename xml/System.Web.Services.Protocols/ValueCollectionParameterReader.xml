@@ -22,6 +22,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Services.Protocols.MimeFormatter" />
+    <altmember cref="T:System.Web.Services.Protocols.MimeParameterReader" />
+    <altmember cref="T:System.Web.Services.Protocols.HtmlFormParameterReader" />
+    <altmember cref="T:System.Web.Services.Protocols.UrlParameterReader" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -175,5 +179,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsSupported">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether a method definition's parameter definitions are supported by the <see cref="T:System.Web.Services.Protocols.ValueCollectionParameterReader" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

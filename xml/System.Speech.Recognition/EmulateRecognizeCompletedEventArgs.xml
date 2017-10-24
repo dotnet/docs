@@ -58,6 +58,9 @@ void sre_EmulateRecognizeCompleted(object sender, EmulateRecognizeCompletedEvent
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Speech.Recognition.EmulateRecognizeCompletedEventArgs.Result" />
+    <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.EmulateRecognizeCompleted" />
+    <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeCompleted" />
   </Docs>
   <Members>
     <Member MemberName="Result">
@@ -85,6 +88,8 @@ void sre_EmulateRecognizeCompleted(object sender, EmulateRecognizeCompletedEvent
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.EmulateRecognizeCompleted" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeCompleted" />
       </Docs>
     </Member>
   </Members>

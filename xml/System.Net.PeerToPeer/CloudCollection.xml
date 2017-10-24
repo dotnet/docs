@@ -25,6 +25,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.PeerToPeer.CloudCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,6 +41,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Net.PeerToPeer.CloudCollection" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.PeerToPeer.CloudCollection" />
       </Docs>
     </Member>
     <Member MemberName="InsertItem">
@@ -71,6 +73,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Net.PeerToPeer.Cloud" /> provided cannot be <see langword="null." /></exception>
+        <altmember cref="T:System.Net.PeerToPeer.CloudCollection" />
       </Docs>
     </Member>
     <Member MemberName="SetItem">
@@ -102,6 +105,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Net.PeerToPeer.Cloud" /> provided cannot be <see langword="null" />.</exception>
+        <altmember cref="M:System.Net.PeerToPeer.CloudCollection.InsertItem(System.Int32,System.Net.PeerToPeer.Cloud)" />
+        <altmember cref="T:System.Net.PeerToPeer.CloudCollection" />
       </Docs>
     </Member>
   </Members>

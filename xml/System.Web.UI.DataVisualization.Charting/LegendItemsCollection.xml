@@ -193,5 +193,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Insert">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Inserts a custom <see cref="T:System.Web.UI.DataVisualization.Charting.LegendItem" /> object into the collection at the given location.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a custom <see cref="T:System.Web.UI.DataVisualization.Charting.LegendItem" /> object to the end of the collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

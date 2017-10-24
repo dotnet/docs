@@ -23,6 +23,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.SettingsProvider" />
+    <altmember cref="T:System.Configuration.SettingsProviderAttribute" />
+    <altmember cref="T:System.Configuration.IPersistComponentSettings" />
+    <altmember cref="T:System.Configuration.ApplicationSettingsBase" />
+    <altmember cref="M:System.IServiceProvider.GetService(System.Type)" />
   </Docs>
   <Members>
     <Member MemberName="GetSettingsProvider">
@@ -56,6 +61,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.SettingsProvider" />
       </Docs>
     </Member>
   </Members>

@@ -62,6 +62,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Reflection.MethodBody" />
+    <altmember cref="P:System.Reflection.MethodBody.ExceptionHandlingClauses" />
+    <altmember cref="T:System.Reflection.ExceptionHandlingClauseOptions" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -250,6 +253,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.ExceptionHandlingClauseOptions" />
       </Docs>
     </Member>
     <Member MemberName="HandlerLength">

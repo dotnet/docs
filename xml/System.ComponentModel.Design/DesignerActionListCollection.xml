@@ -53,6 +53,11 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
+    <altmember cref="T:System.ComponentModel.Design.DesignerActionItem" />
+    <altmember cref="T:System.ComponentModel.Design.DesignerActionList" />
+    <altmember cref="P:System.ComponentModel.Design.ComponentDesigner.ActionLists" />
+    <altmember cref="Overload:System.ComponentModel.Design.DesignerActionService.Add" />
+    <altmember cref="T:System.Collections.ArrayList" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -76,6 +81,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
+        <altmember cref="M:System.ComponentModel.Design.DesignerActionListCollection.AddRange(System.ComponentModel.Design.DesignerActionList[])" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -104,6 +110,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="value" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
+        <altmember cref="M:System.ComponentModel.Design.DesignerActionListCollection.AddRange(System.ComponentModel.Design.DesignerActionList[])" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -134,6 +141,11 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
+        <altmember cref="M:System.ComponentModel.Design.DesignerActionListCollection.#ctor(System.ComponentModel.Design.DesignerActionList[])" />
+        <altmember cref="M:System.Collections.IList.Add(System.Object)" />
+        <altmember cref="M:System.ComponentModel.Design.DesignerActionListCollection.IndexOf(System.ComponentModel.Design.DesignerActionList)" />
+        <altmember cref="M:System.ComponentModel.Design.DesignerActionListCollection.Insert(System.Int32,System.ComponentModel.Design.DesignerActionList)" />
+        <altmember cref="M:System.ComponentModel.Design.DesignerActionListCollection.Remove(System.ComponentModel.Design.DesignerActionList)" />
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -167,6 +179,8 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="value" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
+        <altmember cref="M:System.ComponentModel.Design.DesignerActionListCollection.Add(System.ComponentModel.Design.DesignerActionList)" />
+        <altmember cref="M:System.ComponentModel.Design.DesignerActionListCollection.#ctor(System.ComponentModel.Design.DesignerActionList[])" />
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -200,6 +214,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="value" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
+        <altmember cref="M:System.ComponentModel.Design.DesignerActionListCollection.Add(System.ComponentModel.Design.DesignerActionList)" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -231,6 +246,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
+        <altmember cref="M:System.Collections.IList.Contains(System.Object)" />
+        <altmember cref="M:System.ComponentModel.Design.DesignerActionListCollection.IndexOf(System.ComponentModel.Design.DesignerActionList)" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -273,6 +290,7 @@
  The number of elements in the current collection is greater than the available space from <paramref name="index" /> to the end of the destination array.</exception>
         <exception cref="T:System.InvalidCastException">A problem occurred casting the elements of the current collection to the type of the destination array, perhaps as the result of a failed downcast.</exception>
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
+        <altmember cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -303,6 +321,9 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
+        <altmember cref="M:System.Collections.IList.IndexOf(System.Object)" />
+        <altmember cref="M:System.ComponentModel.Design.DesignerActionListCollection.Contains(System.ComponentModel.Design.DesignerActionList)" />
+        <altmember cref="P:System.ComponentModel.Design.DesignerActionListCollection.Item(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -338,6 +359,12 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than 0 or greater than the count of elements in the current collection.</exception>
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
+        <altmember cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />
+        <altmember cref="P:System.Collections.CollectionBase.Count" />
+        <altmember cref="M:System.ComponentModel.Design.DesignerActionListCollection.IndexOf(System.ComponentModel.Design.DesignerActionList)" />
+        <altmember cref="M:System.ComponentModel.Design.DesignerActionListCollection.Add(System.ComponentModel.Design.DesignerActionList)" />
+        <altmember cref="M:System.ComponentModel.Design.DesignerActionListCollection.Remove(System.ComponentModel.Design.DesignerActionList)" />
+        <altmember cref="M:System.ComponentModel.Design.DesignerActionListCollection.OnInsert(System.Int32,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -368,6 +395,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
+        <altmember cref="M:System.ComponentModel.Design.DesignerActionListCollection.IndexOf(System.ComponentModel.Design.DesignerActionList)" />
+        <altmember cref="M:System.ComponentModel.Design.DesignerActionListCollection.Contains(System.ComponentModel.Design.DesignerActionList)" />
       </Docs>
     </Member>
     <Member MemberName="OnClear">
@@ -386,6 +415,7 @@
       <Docs>
         <summary>Performs additional custom processes when clearing the contents of the <see cref="T:System.Collections.CollectionBase" /> instance.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Collections.CollectionBase.OnClear" />
       </Docs>
     </Member>
     <Member MemberName="OnInsert">
@@ -511,7 +541,27 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
+        <altmember cref="M:System.ComponentModel.Design.DesignerActionListCollection.Insert(System.Int32,System.ComponentModel.Design.DesignerActionList)" />
+        <altmember cref="M:System.ComponentModel.Design.DesignerActionListCollection.Add(System.ComponentModel.Design.DesignerActionList)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerActionListCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddRange">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the supplied series of <see cref="T:System.ComponentModel.Design.DesignerActionList" /> objects to the current collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

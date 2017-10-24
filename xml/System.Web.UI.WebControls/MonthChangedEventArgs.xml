@@ -35,6 +35,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Calendar" />
+    <altmember cref="E:System.Web.UI.WebControls.Calendar.VisibleMonthChanged" />
+    <altmember cref="T:System.Web.UI.WebControls.MonthChangedEventHandler" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -67,6 +70,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Calendar" />
       </Docs>
     </Member>
     <Member MemberName="NewDate">
@@ -104,6 +108,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="T:System.Web.UI.WebControls.Calendar" />
+        <altmember cref="P:System.Web.UI.WebControls.Calendar.VisibleDate" />
+        <altmember cref="E:System.Web.UI.WebControls.Calendar.VisibleMonthChanged" />
       </Docs>
     </Member>
     <Member MemberName="PreviousDate">
@@ -141,6 +149,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="T:System.Web.UI.WebControls.Calendar" />
+        <altmember cref="P:System.Web.UI.WebControls.Calendar.VisibleDate" />
+        <altmember cref="E:System.Web.UI.WebControls.Calendar.VisibleMonthChanged" />
       </Docs>
     </Member>
   </Members>

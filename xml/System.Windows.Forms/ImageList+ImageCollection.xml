@@ -295,6 +295,7 @@
       <Docs>
         <summary>Removes all the images and masks from the <see cref="T:System.Windows.Forms.ImageList" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.ImageList.ImageCollection.Remove(System.Drawing.Image)" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -331,6 +332,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This method is not supported.</exception>
+        <altmember cref="M:System.Windows.Forms.ImageList.ImageCollection.IndexOf(System.Drawing.Image)" />
       </Docs>
     </Member>
     <Member MemberName="ContainsKey">
@@ -391,6 +393,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ImageList.HandleCreated" />
       </Docs>
     </Member>
     <Member MemberName="Empty">
@@ -520,6 +523,7 @@
         <summary>Gets a value indicating whether the list is read-only.</summary>
         <value>Always <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Collections.IList" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -654,6 +658,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This method is not supported.</exception>
+        <altmember cref="M:System.Windows.Forms.ImageList.ImageCollection.Clear" />
+        <altmember cref="M:System.Windows.Forms.ImageList.ImageCollection.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -681,6 +687,8 @@
  -or-  
   
  The index value is greater than or equal to the <see cref="P:System.Windows.Forms.ImageList.ImageCollection.Count" /> of images.</exception>
+        <altmember cref="M:System.Windows.Forms.ImageList.ImageCollection.Clear" />
+        <altmember cref="M:System.Windows.Forms.ImageList.ImageCollection.Remove(System.Drawing.Image)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveByKey">
@@ -989,5 +997,23 @@
         <exception cref="T:System.NotSupportedException">In all cases.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets an <see cref="T:System.Drawing.Image" /> in an existing <see cref="T:System.Windows.Forms.ImageList" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the specified object to the <see cref="T:System.Windows.Forms.ImageList" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

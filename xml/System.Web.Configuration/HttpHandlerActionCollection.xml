@@ -43,6 +43,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Configuration.HttpHandlerActionCollection" />
+    <altmember cref="T:System.Web.Configuration.HttpHandlerAction" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -416,5 +418,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes an <see cref="T:System.Web.Configuration.HttpHandlerAction" /> object from the collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

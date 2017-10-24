@@ -122,6 +122,7 @@
         <summary>Gets the access key for the <see cref="T:System.Windows.UIElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.UIElementAutomationPeer" />.This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAccessKey" />.</summary>
         <returns>The access key for the <see cref="T:System.Windows.UIElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.UIElementAutomationPeer" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Input.AccessKeyManager" />
       </Docs>
     </Member>
     <Member MemberName="GetAutomationControlTypeCore">

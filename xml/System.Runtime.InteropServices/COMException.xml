@@ -61,6 +61,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Exception" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -186,6 +187,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="info" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Runtime.InteropServices.ExternalException" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -234,6 +236,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Exception" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -310,7 +313,25 @@
         <summary>Converts the contents of the exception to a string.</summary>
         <returns>A string containing the <see cref="P:System.Exception.HResult" />, <see cref="P:System.Exception.Message" />, <see cref="P:System.Exception.InnerException" />, and <see cref="P:System.Exception.StackTrace" /> properties of the exception.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Exception.HResult" />
+        <altmember cref="P:System.Exception.Message" />
+        <altmember cref="P:System.Exception.InnerException" />
+        <altmember cref="P:System.Exception.StackTrace" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.COMException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

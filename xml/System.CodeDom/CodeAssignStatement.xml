@@ -84,6 +84,7 @@
         <param name="right">The value to assign.</param>
         <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeAssignStatement" /> class using the specified expressions.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeExpression" />
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -106,6 +107,7 @@
         <summary>Gets or sets the expression representing the object or reference to assign to.</summary>
         <value>A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the object or reference to assign to.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeExpression" />
       </Docs>
     </Member>
     <Member MemberName="Right">
@@ -128,7 +130,17 @@
         <summary>Gets or sets the expression representing the object or reference to assign.</summary>
         <value>A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the object or reference to assign.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeExpression" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeAssignStatement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -168,6 +168,13 @@ http://myUrl/
     <block subset="none" type="usage">
       <para>Because of security concerns, your application should use caution when accepting <see cref="T:System.Uri" /> instances from untrusted sources and with <paramref name="dontEscape" /> set to <see langword="true" />.You can check a URI string for validity by calling the <see cref="M:System.Uri.IsWellFormedOriginalString" /> method.</para>
     </block>
+    <altmember cref="T:System.Configuration.IdnElement" />
+    <altmember cref="T:System.Configuration.IriParsingElement" />
+    <altmember cref="T:System.Configuration.UriSection" />
+    <altmember cref="P:System.Uri.DnsSafeHost" />
+    <altmember cref="M:System.Uri.MakeRelative(System.Uri)" />
+    <altmember cref="M:System.Uri.IsWellFormedOriginalString" />
+    <altmember cref="T:System.UriBuilder" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -3830,6 +3837,8 @@ If you used an escaped string to construct this instance (for example, "http://[
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="stringToUnescape" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Uri.EscapeDataString(System.String)" />
+        <altmember cref="M:System.Uri.EscapeUriString(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="UriSchemeFile">
@@ -4285,5 +4294,31 @@ If you used an escaped string to construct this instance (for example, "http://[
         <exception cref="T:System.InvalidOperationException">This instance represents a relative URI, and this property is valid only for absolute URIs.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Uri" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryCreate">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Uri" />. Does not throw an exception if the <see cref="T:System.Uri" /> cannot be created.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -105,6 +105,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.FlowLayoutPanel" />
+    <altmember cref="T:System.Windows.Forms.TableLayoutSettings" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -197,6 +199,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TableLayoutPanel.BorderStyle" />
+        <altmember cref="P:System.Windows.Forms.TableLayoutPanel.ColumnStyles" />
+        <altmember cref="P:System.Windows.Forms.TableLayoutPanel.RowStyles" />
       </Docs>
     </Member>
     <Member MemberName="CellPaint">
@@ -266,6 +271,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TableLayoutPanel.GrowStyle" />
+        <altmember cref="P:System.Windows.Forms.TableLayoutPanel.RowCount" />
+        <altmember cref="M:System.Windows.Forms.TableLayoutPanel.GetColumn(System.Windows.Forms.Control)" />
+        <altmember cref="P:System.Windows.Forms.TableLayoutPanel.Controls" />
       </Docs>
     </Member>
     <Member MemberName="ColumnStyles">
@@ -321,6 +330,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ColumnStyle" />
+        <altmember cref="P:System.Windows.Forms.TableLayoutPanel.RowStyles" />
       </Docs>
     </Member>
     <Member MemberName="Controls">
@@ -362,6 +373,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.Controls" />
+        <altmember cref="T:System.Windows.Forms.TableLayoutControlCollection" />
       </Docs>
     </Member>
     <Member MemberName="CreateControlsInstance">
@@ -477,6 +490,9 @@
           <paramref name="control" /> is <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">
           <paramref name="control" /> is not a type that can be arranged by this <see cref="T:System.Windows.Forms.Layout.LayoutEngine" />.</exception>
+        <altmember cref="M:System.Windows.Forms.TableLayoutPanel.GetColumnWidths" />
+        <altmember cref="M:System.Windows.Forms.TableLayoutPanel.GetRow(System.Windows.Forms.Control)" />
+        <altmember cref="M:System.Windows.Forms.TableLayoutPanel.GetControlFromPosition(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetColumnSpan">
@@ -524,6 +540,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TableLayoutPanel.SetColumnSpan(System.Windows.Forms.Control,System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.TableLayoutPanel.GetRowSpan(System.Windows.Forms.Control)" />
+        <altmember cref="P:System.Windows.Forms.TableLayoutPanel.ColumnCount" />
+        <altmember cref="M:System.Windows.Forms.TableLayoutPanel.GetColumn(System.Windows.Forms.Control)" />
       </Docs>
     </Member>
     <Member MemberName="GetColumnWidths">
@@ -591,6 +611,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">Either <paramref name="column" /> or <paramref name="row" /> (or both) is less than 0.</exception>
+        <altmember cref="M:System.Windows.Forms.TableLayoutPanel.GetRow(System.Windows.Forms.Control)" />
+        <altmember cref="M:System.Windows.Forms.TableLayoutPanel.GetColumn(System.Windows.Forms.Control)" />
       </Docs>
     </Member>
     <Member MemberName="GetPositionFromControl">
@@ -678,6 +700,9 @@
           <paramref name="control" /> is <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">
           <paramref name="control" /> is not a type that can be arranged by this <see cref="T:System.Windows.Forms.Layout.LayoutEngine" />.</exception>
+        <altmember cref="M:System.Windows.Forms.TableLayoutPanel.GetRowHeights" />
+        <altmember cref="M:System.Windows.Forms.TableLayoutPanel.GetColumn(System.Windows.Forms.Control)" />
+        <altmember cref="M:System.Windows.Forms.TableLayoutPanel.GetControlFromPosition(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetRowHeights">
@@ -752,6 +777,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TableLayoutPanel.SetRowSpan(System.Windows.Forms.Control,System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.TableLayoutPanel.GetColumnSpan(System.Windows.Forms.Control)" />
+        <altmember cref="P:System.Windows.Forms.TableLayoutPanel.ColumnCount" />
+        <altmember cref="M:System.Windows.Forms.TableLayoutPanel.GetRow(System.Windows.Forms.Control)" />
       </Docs>
     </Member>
     <Member MemberName="GrowStyle">
@@ -794,6 +823,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The property value is invalid for the <see cref="T:System.Windows.Forms.TableLayoutPanelGrowStyle" /> enumeration.</exception>
+        <altmember cref="P:System.Windows.Forms.TableLayoutPanel.ColumnCount" />
+        <altmember cref="P:System.Windows.Forms.TableLayoutPanel.RowCount" />
       </Docs>
     </Member>
     <Member MemberName="LayoutEngine">
@@ -962,6 +993,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TableLayoutPanel.GrowStyle" />
+        <altmember cref="P:System.Windows.Forms.TableLayoutPanel.ColumnCount" />
+        <altmember cref="M:System.Windows.Forms.TableLayoutPanel.GetRow(System.Windows.Forms.Control)" />
+        <altmember cref="P:System.Windows.Forms.TableLayoutPanel.Controls" />
       </Docs>
     </Member>
     <Member MemberName="RowStyles">
@@ -1017,6 +1052,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.RowStyle" />
+        <altmember cref="P:System.Windows.Forms.TableLayoutPanel.ColumnStyles" />
       </Docs>
     </Member>
     <Member MemberName="ScaleControl">
@@ -1140,6 +1177,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TableLayoutPanel.SetRow(System.Windows.Forms.Control,System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.TableLayoutPanel.GetColumn(System.Windows.Forms.Control)" />
+        <altmember cref="Overload:System.Windows.Forms.Control.Invalidate" />
       </Docs>
     </Member>
     <Member MemberName="SetColumnSpan">
@@ -1182,6 +1222,10 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="value" /> is less than 1.</exception>
+        <altmember cref="M:System.Windows.Forms.TableLayoutPanel.GetColumnSpan(System.Windows.Forms.Control)" />
+        <altmember cref="M:System.Windows.Forms.TableLayoutPanel.SetRowSpan(System.Windows.Forms.Control,System.Int32)" />
+        <altmember cref="P:System.Windows.Forms.TableLayoutPanel.ColumnCount" />
+        <altmember cref="M:System.Windows.Forms.TableLayoutPanel.GetColumn(System.Windows.Forms.Control)" />
       </Docs>
     </Member>
     <Member MemberName="SetRow">
@@ -1224,6 +1268,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TableLayoutPanel.SetRow(System.Windows.Forms.Control,System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.TableLayoutPanel.GetRow(System.Windows.Forms.Control)" />
+        <altmember cref="Overload:System.Windows.Forms.Control.Invalidate" />
       </Docs>
     </Member>
     <Member MemberName="SetRowSpan">
@@ -1266,6 +1313,10 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="value" /> is less than 1.</exception>
+        <altmember cref="M:System.Windows.Forms.TableLayoutPanel.GetRowSpan(System.Windows.Forms.Control)" />
+        <altmember cref="M:System.Windows.Forms.TableLayoutPanel.SetColumnSpan(System.Windows.Forms.Control,System.Int32)" />
+        <altmember cref="P:System.Windows.Forms.TableLayoutPanel.ColumnCount" />
+        <altmember cref="M:System.Windows.Forms.TableLayoutPanel.GetRow(System.Windows.Forms.Control)" />
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IExtenderProvider.CanExtend">

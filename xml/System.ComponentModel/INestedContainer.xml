@@ -37,6 +37,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.NestedContainer" />
+    <altmember cref="T:System.ComponentModel.ContainerFilterService" />
+    <altmember cref="M:System.ComponentModel.NestedContainer.GetService(System.Type)" />
   </Docs>
   <Members>
     <Member MemberName="Owner">
@@ -71,6 +74,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.IComponent" />
+        <altmember cref="T:System.ComponentModel.IContainer" />
+        <altmember cref="P:System.ComponentModel.NestedContainer.Owner" />
       </Docs>
     </Member>
   </Members>

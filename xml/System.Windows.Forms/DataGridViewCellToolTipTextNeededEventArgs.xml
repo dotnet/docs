@@ -38,6 +38,15 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.CellToolTipTextNeeded" />
+    <altmember cref="P:System.Windows.Forms.DataGridView.DataSource" />
+    <altmember cref="P:System.Windows.Forms.DataGridView.VirtualMode" />
+    <altmember cref="P:System.Windows.Forms.DataGridView.ShowCellToolTips" />
+    <altmember cref="M:System.Windows.Forms.DataGridView.OnCellToolTipTextNeeded(System.Windows.Forms.DataGridViewCellToolTipTextNeededEventArgs)" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewCellToolTipTextNeededEventHandler" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewCellToolTipTextNeededEventArgs.ToolTipText" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewCell.ToolTipText" />
   </Docs>
   <Members>
     <Member MemberName="ToolTipText">
@@ -71,6 +80,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellToolTipTextNeeded" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.ShowCellToolTips" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.ToolTipText" />
       </Docs>
     </Member>
   </Members>

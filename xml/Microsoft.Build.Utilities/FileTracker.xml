@@ -874,5 +874,86 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TrackerArguments">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>This method constructs the correct Tracker.exe arguments from its parameters.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetTrackerPath">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Figures out and returns the path to the correct Tracker.exe.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateRootingMarkerResponseFile">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a temporary response file containing the rooting marker.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FormatRootingMarker">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Construct a rooting marker string from the ITaskItem array of primary sources.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ForceOutOfProcTracking">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether we must track out of process, or whether in process tracking will work.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetFileTrackerPath">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Figures out and returns the path to the correct FileTracker.dll.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TrackerResponseFileArguments">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>This method constructs the correct Tracker.exe response file arguments from its parameters.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="StartProcess">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Start the process; tracking the command.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="EnsureFileTrackerOnPath">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Prepends the path to the appropriate FileTracker assembly to the PATH environment variable.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

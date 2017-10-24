@@ -37,6 +37,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="T:System.Web.UI.WebControls.GridViewSortEventHandler" />
+    <altmember cref="P:System.Web.UI.WebControls.GridView.AllowSorting" />
+    <altmember cref="E:System.Web.UI.WebControls.GridView.Sorted" />
+    <altmember cref="E:System.Web.UI.WebControls.GridView.Sorting" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -74,6 +79,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.GridViewSortEventArgs.SortDirection" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewSortEventArgs.SortExpression" />
       </Docs>
     </Member>
     <Member MemberName="SortDirection">
@@ -107,6 +114,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AllowSorting" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.SortDirection" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewSortEventArgs.SortExpression" />
       </Docs>
     </Member>
     <Member MemberName="SortExpression">
@@ -140,6 +150,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AllowSorting" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.SortExpression" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewSortEventArgs.SortDirection" />
       </Docs>
     </Member>
   </Members>

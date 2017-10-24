@@ -40,6 +40,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Attribute" />
+    <altmember cref="T:System.Web.UI.ParseChildrenAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -71,6 +73,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Control" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -117,6 +120,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.UI.PersistChildrenAttribute.Yes" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -191,6 +195,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.UI.PersistChildrenAttribute.Default" />
       </Docs>
     </Member>
     <Member MemberName="No">
@@ -215,6 +220,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.UI.PersistChildrenAttribute.Yes" />
       </Docs>
     </Member>
     <Member MemberName="Persist">
@@ -246,6 +252,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.PersistChildrenAttribute.UsesCustomPersistence" />
+        <altmember cref="M:System.Web.UI.PersistChildrenAttribute.IsDefaultAttribute" />
       </Docs>
     </Member>
     <Member MemberName="UsesCustomPersistence">
@@ -282,6 +290,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.PersistChildrenAttribute.#ctor(System.Boolean,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="Yes">
@@ -306,7 +315,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.UI.PersistChildrenAttribute.No" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.PersistChildrenAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

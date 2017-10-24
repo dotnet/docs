@@ -110,9 +110,9 @@
         <Parameter Name="assembly" Type="System.Reflection.Assembly" />
       </Parameters>
       <Docs>
-        <param name="assembly">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="assembly">The assembly.</param>
+        <summary>Converts the specified assembly reference.</summary>
+        <returns>The instance <see cref="T:System.Activities.Expressions.AssemblyReference" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -132,11 +132,20 @@
         <Parameter Name="assemblyName" Type="System.Reflection.AssemblyName" />
       </Parameters>
       <Docs>
-        <param name="assemblyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="assemblyName">The assembly name.</param>
+        <summary>Converts the specified assembly reference with a specific assembly name.</summary>
+        <returns>An instance <see cref="T:System.Activities.Expressions.AssemblyReference" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="op_Implicit">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the specified assembly reference.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -20,6 +20,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.IWeakEventListener" />
   </Docs>
   <Members>
     <Member MemberName="AddHandler">
@@ -80,6 +81,7 @@
         <param name="propertyName">The name of the property that exists on <c>source</c> upon which to listen for changes. Set to <see cref="F:System.String.Empty" /> to indicate "any property".</param>
         <summary>Adds the specified listener to the list of listeners on the specified source.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.IWeakEventListener" />
       </Docs>
     </Member>
     <Member MemberName="NewListenerList">
@@ -126,6 +128,7 @@
         <returns>
           <see langword="true" /> if some entries were removed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.IWeakEventListener" />
       </Docs>
     </Member>
     <Member MemberName="RemoveHandler">
@@ -179,6 +182,7 @@
         <param name="propertyName">The name of the property that exists on <c>source</c> upon which to stop listening for changes. Set to <see cref="F:System.String.Empty" /> to indicate "any property".</param>
         <summary>Removes the specified listener from the list of listeners on the provided source.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.IWeakEventListener" />
       </Docs>
     </Member>
     <Member MemberName="StartListening">
@@ -207,6 +211,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.IWeakEventListener" />
       </Docs>
     </Member>
     <Member MemberName="StopListening">
@@ -228,6 +233,7 @@
         <param name="source">The source object on which to stop listening for <see cref="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged" />.</param>
         <summary>Stops listening for the <see cref="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged" /> event on the provided source.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.IWeakEventListener" />
       </Docs>
     </Member>
   </Members>

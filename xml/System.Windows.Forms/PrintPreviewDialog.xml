@@ -54,6 +54,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.PageSetupDialog" />
+    <altmember cref="T:System.Windows.Forms.PrintDialog" />
+    <altmember cref="T:System.Windows.Forms.PrintPreviewControl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -85,6 +88,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Printing.PrintDocument" />
+        <altmember cref="T:System.Windows.Forms.PrintPreviewControl" />
       </Docs>
     </Member>
     <Member MemberName="AcceptButton">
@@ -124,6 +129,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Form.AcceptButton" />
       </Docs>
     </Member>
     <Member MemberName="AccessibleDescription">
@@ -1079,6 +1085,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Drawing.Printing.InvalidPrinterException">The printer settings in <see cref="P:System.Windows.Forms.PrintPreviewDialog.Document" /> are not valid.</exception>
+        <altmember cref="M:System.Windows.Forms.Control.CreateHandle" />
       </Docs>
     </Member>
     <Member MemberName="Cursor">
@@ -1332,6 +1339,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Printing.PrintDocument" />
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -2340,6 +2348,7 @@
         <summary>Gets a value indicating the <see cref="T:System.Windows.Forms.PrintPreviewControl" /> contained in this form.</summary>
         <value>The <see cref="T:System.Windows.Forms.PrintPreviewControl" /> contained in this form.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.PrintPreviewControl" />
       </Docs>
     </Member>
     <Member MemberName="ProcessDialogKey">

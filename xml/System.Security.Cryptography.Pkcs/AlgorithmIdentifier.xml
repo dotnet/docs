@@ -19,6 +19,8 @@
   <Docs>
     <summary>The <see cref="T:System.Security.Cryptography.Pkcs.AlgorithmIdentifier" /> class defines the algorithm used for a cryptographic operation.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="P:System.Security.Cryptography.Pkcs.EnvelopedCms.ContentEncryptionAlgorithm" />
+    <altmember cref="P:System.Security.Cryptography.Pkcs.KeyTransRecipientInfo.KeyEncryptionAlgorithm" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -152,6 +154,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.AlgorithmIdentifier.Oid" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.AlgorithmIdentifier.Parameters" />
       </Docs>
     </Member>
     <Member MemberName="Oid">
@@ -176,6 +180,8 @@
         <summary>The <see cref="P:System.Security.Cryptography.Pkcs.AlgorithmIdentifier.Oid" /> property sets or retrieves the <see cref="T:System.Security.Cryptography.Oid" /> object that specifies the object identifier for the algorithm.</summary>
         <value>An <see cref="T:System.Security.Cryptography.Oid" /> object that represents the algorithm.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.AlgorithmIdentifier.KeyLength" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.AlgorithmIdentifier.Parameters" />
       </Docs>
     </Member>
     <Member MemberName="Parameters">
@@ -195,6 +201,8 @@
         <summary>The <see cref="P:System.Security.Cryptography.Pkcs.AlgorithmIdentifier.Parameters" /> property sets or retrieves any parameters required by the algorithm.</summary>
         <value>An array of byte values that specifies any parameters required by the algorithm.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.AlgorithmIdentifier.KeyLength" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.AlgorithmIdentifier.Oid" />
       </Docs>
     </Member>
   </Members>

@@ -70,6 +70,13 @@
     <block subset="none" type="overrides">
       <para>When you inherit from <see cref="T:System.Windows.Forms.DataGridColumnStyle" />, you must override the following members: <see cref="M:System.Windows.Forms.DataGridColumnStyle.Abort(System.Int32)" />, <see cref="M:System.Windows.Forms.DataGridColumnStyle.Commit(System.Windows.Forms.CurrencyManager,System.Int32)" />, <see cref="M:System.Windows.Forms.DataGridColumnStyle.Edit(System.Windows.Forms.CurrencyManager,System.Int32,System.Drawing.Rectangle,System.Boolean)" />, and <see cref="M:System.Windows.Forms.DataGridColumnStyle.Paint(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.CurrencyManager,System.Int32)" /> (twice).</para>
     </block>
+    <altmember cref="T:System.Data.DataColumn" />
+    <altmember cref="T:System.Windows.Forms.DataGrid" />
+    <altmember cref="T:System.Windows.Forms.DataGridBoolColumn" />
+    <altmember cref="T:System.Windows.Forms.DataGridTextBox" />
+    <altmember cref="P:System.Windows.Forms.DataGridColumnStyle.DataGridTableStyle" />
+    <altmember cref="T:System.Data.DataView" />
+    <altmember cref="T:System.Windows.Forms.GridColumnStylesCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -101,6 +108,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.DataColumn" />
+        <altmember cref="T:System.Windows.Forms.DataGrid" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -148,6 +157,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.DataColumn" />
       </Docs>
     </Member>
     <Member MemberName="Abort">
@@ -180,6 +190,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGrid.EndEdit(System.Windows.Forms.DataGridColumnStyle,System.Int32,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataGridColumnStyle.Invalidate" />
+        <altmember cref="M:System.Windows.Forms.DataGridColumnStyle.Commit(System.Windows.Forms.CurrencyManager,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Alignment">
@@ -268,6 +281,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridColumnStyle.EndUpdate" />
       </Docs>
     </Member>
     <Member MemberName="CheckValidDataSource">
@@ -371,6 +385,8 @@
   
  The <see cref="M:System.Windows.Forms.DataGridColumnStyle.Commit(System.Windows.Forms.CurrencyManager,System.Int32)" /> method is called by the public method <see cref="M:System.Windows.Forms.DataGrid.OnMouseDown(System.Windows.Forms.MouseEventArgs)" /> of the <see cref="T:System.Windows.Forms.DataGrid" /> control. The method is also called by other private methods, for example, when the current row is changed.</para>
         </block>
+        <altmember cref="M:System.Windows.Forms.DataGridColumnStyle.Edit(System.Windows.Forms.CurrencyManager,System.Int32,System.Drawing.Rectangle,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataGridColumnStyle.SetColumnValueAtRow(System.Windows.Forms.CurrencyManager,System.Int32,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ConcedeFocus">
@@ -439,6 +455,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGrid" />
+        <altmember cref="T:System.Windows.Forms.DataGridTableStyle" />
       </Docs>
     </Member>
     <Member MemberName="DataGridTableStyle">
@@ -471,6 +489,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridTableStyle" />
       </Docs>
     </Member>
     <Member MemberName="Edit">
@@ -613,6 +632,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridColumnStyle.BeginUpdate" />
       </Docs>
     </Member>
     <Member MemberName="EnterNullValue">
@@ -647,6 +667,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridColumnStyle.NullText" />
+        <altmember cref="E:System.Windows.Forms.DataGridColumnStyle.NullTextChanged" />
       </Docs>
     </Member>
     <Member MemberName="FontChanged">
@@ -714,6 +736,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ApplicationException">The <see cref="T:System.Data.DataColumn" /> for this <see cref="T:System.Windows.Forms.DataGridColumnStyle" /> hasn't been set yet.</exception>
+        <altmember cref="M:System.Windows.Forms.DataGridColumnStyle.SetColumnValueAtRow(System.Windows.Forms.CurrencyManager,System.Int32,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetMinimumHeight">
@@ -744,6 +767,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridColumnStyle.GetPreferredHeight(System.Drawing.Graphics,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DataGridColumnStyle.GetPreferredSize(System.Drawing.Graphics,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetPreferredHeight">
@@ -784,6 +809,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridColumnStyle.GetPreferredSize(System.Drawing.Graphics,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DataGridColumnStyle.GetMinimumHeight" />
       </Docs>
     </Member>
     <Member MemberName="GetPreferredSize">
@@ -824,6 +851,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridColumnStyle.GetPreferredHeight(System.Drawing.Graphics,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DataGridColumnStyle.GetMinimumHeight" />
       </Docs>
     </Member>
     <Member MemberName="HeaderAccessibleObject">
@@ -886,6 +915,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.DataColumn.ColumnName" />
+        <altmember cref="P:System.Data.DataColumn.Caption" />
       </Docs>
     </Member>
     <Member MemberName="HeaderTextChanged">
@@ -939,6 +970,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridColumnStyle.Abort(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="MappingName">
@@ -1055,6 +1087,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.DataColumn.AllowDBNull" />
       </Docs>
     </Member>
     <Member MemberName="NullTextChanged">
@@ -1083,6 +1116,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridColumnStyle.EnterNullValue" />
       </Docs>
     </Member>
     <Member MemberName="Paint">
@@ -1217,6 +1251,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.DataColumn.Caption" />
+        <altmember cref="P:System.Data.DataColumn.ColumnName" />
+        <altmember cref="P:System.Data.DataColumn.DataType" />
+        <altmember cref="T:System.Data.DataColumn" />
       </Docs>
     </Member>
     <Member MemberName="PropertyDescriptorChanged">
@@ -1295,6 +1333,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.DataColumn.AutoIncrement" />
+        <altmember cref="T:System.Data.DataColumn" />
       </Docs>
     </Member>
     <Member MemberName="ReadOnlyChanged">
@@ -1408,6 +1448,7 @@
         <summary>Sets the value in a specified row with the value from a specified <see cref="T:System.Windows.Forms.CurrencyManager" />.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">The <see cref="T:System.Windows.Forms.CurrencyManager" /> object's <see cref="P:System.Windows.Forms.BindingManagerBase.Position" /> does not match <paramref name="rowNum" />.</exception>
+        <altmember cref="M:System.Windows.Forms.DataGridColumnStyle.GetColumnValueAtRow(System.Windows.Forms.CurrencyManager,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="SetDataGrid">
@@ -1436,6 +1477,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGrid" />
       </Docs>
     </Member>
     <Member MemberName="SetDataGridInColumn">
@@ -1563,6 +1605,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.DataGridColumnStyle.WidthChanged" />
       </Docs>
     </Member>
     <Member MemberName="WidthChanged">
@@ -1593,5 +1636,32 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Edit">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Prepares the cell for editing a value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridColumnStyle" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Paint">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, paints the column in a <see cref="T:System.Windows.Forms.DataGrid" /> control.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

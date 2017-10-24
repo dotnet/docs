@@ -29,6 +29,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.MultiView" />
+    <altmember cref="P:System.Web.UI.WebControls.MultiView.Views" />
+    <altmember cref="T:System.Web.UI.WebControls.View" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -56,6 +59,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.MultiView" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -94,6 +98,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="v" /> parameter does not specify a <see cref="T:System.Web.UI.WebControls.View" /> control.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.View" />
+        <altmember cref="M:System.Web.UI.WebControls.ViewCollection.AddAt(System.Int32,System.Web.UI.Control)" />
+        <altmember cref="T:System.Web.UI.WebControls.MultiView" />
       </Docs>
     </Member>
     <Member MemberName="AddAt">
@@ -134,6 +141,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="v" /> parameter does not specify a <see cref="T:System.Web.UI.WebControls.View" /> control.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.ViewCollection.Add(System.Web.UI.Control)" />
+        <altmember cref="T:System.Web.UI.WebControls.View" />
+        <altmember cref="T:System.Web.UI.WebControls.MultiView" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -170,6 +180,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.View" />
+        <altmember cref="T:System.Web.UI.WebControls.MultiView" />
       </Docs>
     </Member>
   </Members>

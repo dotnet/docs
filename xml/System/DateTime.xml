@@ -394,6 +394,11 @@
  ]]></format>
     </remarks>
     <threadsafe>All members of this type are thread safe. Members that appear to modify instance state actually return a new instance initialized with the new value. As with any other type, reading and writing to a shared variable that contains an instance of this type must be protected by a lock to guarantee thread safety.</threadsafe>
+    <altmember cref="T:System.DateTimeOffset" />
+    <altmember cref="T:System.TimeSpan" />
+    <altmember cref="T:System.Globalization.Calendar" />
+    <altmember cref="M:System.TimeZone.GetUtcOffset(System.DateTime)" />
+    <altmember cref="T:System.TimeZoneInfo" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -615,6 +620,8 @@
  -or-  
   
  <paramref name="day" /> is less than 1 or greater than the number of days in <paramref name="month" />.</exception>
+        <altmember cref="T:System.Int32" />
+        <altmember cref="T:System.Globalization.Calendar" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -863,6 +870,8 @@
  -or-  
   
  <paramref name="second" /> is less than 0 or greater than 59.</exception>
+        <altmember cref="T:System.Int32" />
+        <altmember cref="T:System.Globalization.Calendar" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -951,6 +960,7 @@
  -or-  
   
  <paramref name="millisecond" /> is less than 0 or greater than 999.</exception>
+        <altmember cref="T:System.Int32" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -1131,6 +1141,8 @@
  -or-  
   
  <paramref name="millisecond" /> is less than 0 or greater than 999.</exception>
+        <altmember cref="T:System.Int32" />
+        <altmember cref="T:System.Globalization.Calendar" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -1279,6 +1291,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The resulting <see cref="T:System.DateTime" /> is less than <see cref="F:System.DateTime.MinValue" /> or greater than <see cref="F:System.DateTime.MaxValue" />.</exception>
+        <altmember cref="T:System.TimeSpan" />
+        <altmember cref="M:System.TimeSpan.Add(System.TimeSpan)" />
       </Docs>
     </Member>
     <Member MemberName="AddDays">
@@ -1337,6 +1351,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The resulting <see cref="T:System.DateTime" /> is less than <see cref="F:System.DateTime.MinValue" /> or greater than <see cref="F:System.DateTime.MaxValue" />.</exception>
+        <altmember cref="T:System.Double" />
       </Docs>
     </Member>
     <Member MemberName="AddHours">
@@ -1394,6 +1409,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The resulting <see cref="T:System.DateTime" /> is less than <see cref="F:System.DateTime.MinValue" /> or greater than <see cref="F:System.DateTime.MaxValue" />.</exception>
+        <altmember cref="M:System.DateTime.Add(System.TimeSpan)" />
       </Docs>
     </Member>
     <Member MemberName="AddMilliseconds">
@@ -1449,6 +1465,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The resulting <see cref="T:System.DateTime" /> is less than <see cref="F:System.DateTime.MinValue" /> or greater than <see cref="F:System.DateTime.MaxValue" />.</exception>
+        <altmember cref="T:System.Double" />
       </Docs>
     </Member>
     <Member MemberName="AddMinutes">
@@ -1505,6 +1522,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The resulting <see cref="T:System.DateTime" /> is less than <see cref="F:System.DateTime.MinValue" /> or greater than <see cref="F:System.DateTime.MaxValue" />.</exception>
+        <altmember cref="T:System.Double" />
       </Docs>
     </Member>
     <Member MemberName="AddMonths">
@@ -1619,6 +1637,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The resulting <see cref="T:System.DateTime" /> is less than <see cref="F:System.DateTime.MinValue" /> or greater than <see cref="F:System.DateTime.MaxValue" />.</exception>
+        <altmember cref="T:System.Double" />
       </Docs>
     </Member>
     <Member MemberName="AddTicks">
@@ -1662,6 +1681,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The resulting <see cref="T:System.DateTime" /> is less than <see cref="F:System.DateTime.MinValue" /> or greater than <see cref="F:System.DateTime.MaxValue" />.</exception>
+        <altmember cref="T:System.Int64" />
+        <altmember cref="P:System.DateTime.Ticks" />
       </Docs>
     </Member>
     <Member MemberName="AddYears">
@@ -1789,6 +1810,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.DateTime.CompareTo(System.Object)" />
+        <altmember cref="M:System.DateTime.Equals(System.Object)" />
       </Docs>
     </Member>
     <MemberGroup MemberName="CompareTo">
@@ -1885,6 +1908,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.DateTime.Compare(System.DateTime,System.DateTime)" />
+        <altmember cref="M:System.DateTime.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="CompareTo">
@@ -1954,6 +1979,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="value" /> is not a <see cref="T:System.DateTime" />.</exception>
+        <altmember cref="M:System.DateTime.Compare(System.DateTime,System.DateTime)" />
+        <altmember cref="M:System.DateTime.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Date">
@@ -2107,6 +2134,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.DateTime.Ticks" />
+        <altmember cref="T:System.Int32" />
       </Docs>
     </Member>
     <Member MemberName="DayOfYear">
@@ -2153,6 +2182,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Globalization.Calendar.GetDayOfYear(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="DaysInMonth">
@@ -2272,6 +2302,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.DateTime.Equals(System.Object)" />
+        <altmember cref="M:System.DateTime.Compare(System.DateTime,System.DateTime)" />
+        <altmember cref="M:System.DateTime.CompareTo(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -2323,6 +2356,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.DateTime.Compare(System.DateTime,System.DateTime)" />
+        <altmember cref="M:System.DateTime.CompareTo(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -2377,6 +2412,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Boolean" />
+        <altmember cref="M:System.DateTime.Compare(System.DateTime,System.DateTime)" />
+        <altmember cref="M:System.DateTime.CompareTo(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="FromBinary">
@@ -2443,6 +2481,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="dateData" /> is less than <see cref="F:System.DateTime.MinValue" /> or greater than <see cref="F:System.DateTime.MaxValue" />.</exception>
+        <altmember cref="M:System.DateTime.ToBinary" />
       </Docs>
     </Member>
     <Member MemberName="FromFileTime">
@@ -2512,6 +2551,8 @@
      [!code-csharp[System.DateTime.FromFileTime#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.datetime.fromfiletime/cs/fromfiletime1.cs#1)]
      [!code-vb[System.DateTime.FromFileTime#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.datetime.fromfiletime/vb/fromfiletime1.vb#1)]</para>
         </block>
+        <altmember cref="M:System.DateTime.ToUniversalTime" />
+        <altmember cref="M:System.TimeZone.GetUtcOffset(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="FromFileTimeUtc">
@@ -2560,6 +2601,9 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="fileTime" /> is less than 0 or represents a time greater than <see cref="F:System.DateTime.MaxValue" />.</exception>
+        <altmember cref="M:System.DateTime.ToUniversalTime" />
+        <altmember cref="M:System.TimeZone.GetUtcOffset(System.DateTime)" />
+        <altmember cref="M:System.DateTime.FromFileTime(System.Int64)" />
       </Docs>
     </Member>
     <Member MemberName="FromOADate">
@@ -2603,6 +2647,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The date is not a valid OLE Automation Date value.</exception>
+        <altmember cref="M:System.DateTime.ToOADate" />
       </Docs>
     </Member>
     <MemberGroup MemberName="GetDateTimeFormats">
@@ -3249,6 +3294,7 @@ juillet 2009
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.TimeZoneInfo.IsDaylightSavingTime(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="IsLeapYear">
@@ -3352,6 +3398,7 @@ juillet 2009
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.DateTime.SpecifyKind(System.DateTime,System.DateTimeKind)" />
       </Docs>
     </Member>
     <Member MemberName="MaxValue">
@@ -3399,6 +3446,7 @@ juillet 2009
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.DateTime.MinValue" />
       </Docs>
     </Member>
     <Member MemberName="Millisecond">
@@ -3655,6 +3703,8 @@ juillet 2009
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.DateTimeOffset.Now" />
+        <altmember cref="P:System.DateTime.UtcNow" />
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
@@ -3704,6 +3754,9 @@ juillet 2009
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The resulting <see cref="T:System.DateTime" /> is less than <see cref="F:System.DateTime.MinValue" /> or greater than <see cref="F:System.DateTime.MaxValue" />.</exception>
+        <altmember cref="M:System.DateTime.Add(System.TimeSpan)" />
+        <altmember cref="T:System.TimeSpan" />
+        <altmember cref="P:System.DateTime.Ticks" />
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -3758,6 +3811,7 @@ juillet 2009
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.DateTime.Equals(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
@@ -3803,6 +3857,7 @@ juillet 2009
   
  The equivalent method for this operator is <xref:System.DateTime.Compare%28System.DateTime%2CSystem.DateTime%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <altmember cref="M:System.DateTime.CompareTo(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
@@ -3848,6 +3903,7 @@ juillet 2009
   
  The equivalent method for this operator is <xref:System.DateTime.Compare%28System.DateTime%2CSystem.DateTime%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <altmember cref="M:System.DateTime.CompareTo(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -3893,6 +3949,7 @@ juillet 2009
   
  The equivalent method for this operator is <xref:System.DateTime.Equals%28System.Object%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <altmember cref="M:System.DateTime.CompareTo(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
@@ -3938,6 +3995,7 @@ juillet 2009
   
  The equivalent method for this operator is <xref:System.DateTime.Compare%28System.DateTime%2CSystem.DateTime%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <altmember cref="M:System.DateTime.CompareTo(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
@@ -3983,6 +4041,7 @@ juillet 2009
   
  The equivalent method for this operator is <xref:System.DateTime.Compare%28System.DateTime%2CSystem.DateTime%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <altmember cref="M:System.DateTime.CompareTo(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
@@ -4039,6 +4098,8 @@ juillet 2009
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.DateTime.Subtract(System.DateTime)" />
+        <altmember cref="P:System.DateTime.Ticks" />
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
@@ -4093,6 +4154,9 @@ juillet 2009
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The resulting <see cref="T:System.DateTime" /> is less than <see cref="F:System.DateTime.MinValue" /> or greater than <see cref="F:System.DateTime.MaxValue" />.</exception>
+        <altmember cref="M:System.DateTime.Subtract(System.TimeSpan)" />
+        <altmember cref="P:System.DateTime.Ticks" />
+        <altmember cref="T:System.TimeSpan" />
       </Docs>
     </Member>
     <MemberGroup MemberName="Parse">
@@ -4307,6 +4371,8 @@ An object that is equivalent to the date and time contained in `s`.
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.DateTime.ParseExact(System.String,System.String,System.IFormatProvider)" />
+        <altmember cref="Overload:System.DateTime.TryParse" />
       </Docs>
     </MemberGroup>
     <Member MemberName="Parse">
@@ -4355,6 +4421,9 @@ An object that is equivalent to the date and time contained in `s`.
           <paramref name="s" /> is <see langword="null" />.</exception>
         <exception cref="T:System.FormatException">
           <paramref name="s" /> does not contain a valid string representation of a date and time.</exception>
+        <altmember cref="Overload:System.DateTime.TryParse" />
+        <altmember cref="T:System.Globalization.CultureInfo" />
+        <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -4405,6 +4474,9 @@ An object that is equivalent to the date and time contained in `s`.
           <paramref name="s" /> is <see langword="null" />.</exception>
         <exception cref="T:System.FormatException">
           <paramref name="s" /> does not contain a valid string representation of a date and time.</exception>
+        <altmember cref="Overload:System.DateTime.TryParse" />
+        <altmember cref="T:System.Globalization.CultureInfo" />
+        <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -4459,6 +4531,9 @@ An object that is equivalent to the date and time contained in `s`.
           <paramref name="s" /> does not contain a valid string representation of a date and time.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="styles" /> contains an invalid combination of <see cref="T:System.Globalization.DateTimeStyles" /> values. For example, both <see cref="F:System.Globalization.DateTimeStyles.AssumeLocal" /> and <see cref="F:System.Globalization.DateTimeStyles.AssumeUniversal" />.</exception>
+        <altmember cref="Overload:System.DateTime.TryParse" />
+        <altmember cref="T:System.Globalization.CultureInfo" />
+        <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
       </Docs>
     </Member>
     <Member MemberName="ParseExact">
@@ -4545,6 +4620,9 @@ An object that is equivalent to the date and time contained in `s`.
         <block subset="none" type="usage">
           <para>In the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)], the <see cref="Overload:System.DateTime.ParseExact" /> method throws a <see cref="T:System.FormatException" /> if the string to be parsed contains an hour component and an AM/PM designator that are not in agreement. In the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] and earlier versions, the AM/PM designator is ignored.</para>
         </block>
+        <altmember cref="Overload:System.DateTime.TryParseExact" />
+        <altmember cref="T:System.Globalization.CultureInfo" />
+        <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
       </Docs>
     </Member>
     <Member MemberName="ParseExact">
@@ -4654,6 +4732,9 @@ An object that is equivalent to the date and time contained in `s`.
         <block subset="none" type="usage">
           <para>In the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)], the <see cref="Overload:System.DateTime.ParseExact" /> method throws a <see cref="T:System.FormatException" /> if the string to be parsed contains an hour component and an AM/PM designator that are not in agreement. In the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] and earlier versions, the AM/PM designator is ignored.</para>
         </block>
+        <altmember cref="Overload:System.DateTime.TryParseExact" />
+        <altmember cref="T:System.Globalization.CultureInfo" />
+        <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
       </Docs>
     </Member>
     <Member MemberName="ParseExact">
@@ -4764,6 +4845,9 @@ An object that is equivalent to the date and time contained in `s`.
         <block subset="none" type="usage">
           <para>In the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)], the <see cref="Overload:System.DateTime.ParseExact" /> method throws a <see cref="T:System.FormatException" /> if the string to be parsed contains an hour component and an AM/PM designator that are not in agreement. In the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] and earlier versions, the AM/PM designator is ignored.</para>
         </block>
+        <altmember cref="Overload:System.DateTime.TryParseExact" />
+        <altmember cref="T:System.Globalization.CultureInfo" />
+        <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
       </Docs>
     </Member>
     <Member MemberName="Second">
@@ -4996,6 +5080,7 @@ An object that is equivalent to the date and time contained in `s`.
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The result is less than <see cref="F:System.DateTime.MinValue" /> or greater than <see cref="F:System.DateTime.MaxValue" />.</exception>
+        <altmember cref="T:System.TimeSpan" />
       </Docs>
     </Member>
     <Member MemberName="System.IComparable.CompareTo">
@@ -5454,6 +5539,7 @@ An object that is equivalent to the date and time contained in `s`.
         <exception cref="T:System.ArgumentNullException">
           <paramref name="type" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidCastException">This conversion is not supported for the <see cref="T:System.DateTime" /> type.</exception>
+        <altmember cref="T:System.Convert" />
       </Docs>
     </Member>
     <Member MemberName="System.IConvertible.ToUInt16">
@@ -5699,6 +5785,7 @@ An object that is equivalent to the date and time contained in `s`.
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.TimeSpan" />
       </Docs>
     </Member>
     <Member MemberName="ToBinary">
@@ -5760,6 +5847,7 @@ An object that is equivalent to the date and time contained in `s`.
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.DateTime.FromBinary(System.Int64)" />
       </Docs>
     </Member>
     <Member MemberName="Today">
@@ -5808,6 +5896,8 @@ An object that is equivalent to the date and time contained in `s`.
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.DateTime.Now" />
+        <altmember cref="P:System.DateTime.TimeOfDay" />
       </Docs>
     </Member>
     <Member MemberName="ToFileTime">
@@ -5871,6 +5961,10 @@ An object that is equivalent to the date and time contained in `s`.
      [!code-csharp[System.DateTime.FromFileTime#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.datetime.fromfiletime/cs/fromfiletime1.cs#1)]
      [!code-vb[System.DateTime.FromFileTime#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.datetime.fromfiletime/vb/fromfiletime1.vb#1)]</para>
         </block>
+        <altmember cref="M:System.DateTime.ToFileTimeUtc" />
+        <altmember cref="T:System.Int64" />
+        <altmember cref="M:System.DateTime.ToUniversalTime" />
+        <altmember cref="M:System.TimeZone.GetUtcOffset(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="ToFileTimeUtc">
@@ -5916,6 +6010,10 @@ An object that is equivalent to the date and time contained in `s`.
         <block subset="none" type="usage">
           <para>The <see cref="M:System.DateTime.ToFileTimeUtc" /> method is sometimes used to convert a local time to UTC, and subsequently to restore it by calling the <see cref="M:System.DateTime.FromFileTimeUtc(System.Int64)" /> method followed by the <see cref="M:System.DateTime.ToLocalTime" /> method. However, if the original time represents an invalid time in the local time zone, the two local time values will not be equal. For additional information, see the <see cref="M:System.DateTime.ToLocalTime" /> method.</para>
         </block>
+        <altmember cref="M:System.DateTime.ToFileTime" />
+        <altmember cref="T:System.Int64" />
+        <altmember cref="M:System.DateTime.ToUniversalTime" />
+        <altmember cref="M:System.TimeZone.GetUtcOffset(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="ToLocalTime">
@@ -5993,6 +6091,10 @@ An object that is equivalent to the date and time contained in `s`.
  [!code-csharp[System.DateTime.ToLocalTime#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.datetime.tolocaltime/cs/tolocaltime1.cs#1)]
  [!code-vb[System.DateTime.ToLocalTime#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.datetime.tolocaltime/vb/tolocaltime1.vb#1)]</para>
         </block>
+        <altmember cref="T:System.TimeZone" />
+        <altmember cref="M:System.TimeZone.GetUtcOffset(System.DateTime)" />
+        <altmember cref="M:System.TimeZone.GetDaylightChanges(System.Int32)" />
+        <altmember cref="M:System.DateTime.ToUniversalTime" />
       </Docs>
     </Member>
     <Member MemberName="ToLongDateString">
@@ -6041,6 +6143,10 @@ An object that is equivalent to the date and time contained in `s`.
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Globalization.CultureInfo" />
+        <altmember cref="P:System.Globalization.CultureInfo.DateTimeFormat" />
+        <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
+        <altmember cref="M:System.DateTime.ToString" />
       </Docs>
     </Member>
     <Member MemberName="ToLongTimeString">
@@ -6089,6 +6195,10 @@ An object that is equivalent to the date and time contained in `s`.
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Globalization.CultureInfo" />
+        <altmember cref="P:System.Globalization.CultureInfo.DateTimeFormat" />
+        <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
+        <altmember cref="M:System.DateTime.ToString" />
       </Docs>
     </Member>
     <Member MemberName="ToOADate">
@@ -6131,6 +6241,8 @@ An object that is equivalent to the date and time contained in `s`.
  ]]></format>
         </remarks>
         <exception cref="T:System.OverflowException">The value of this instance cannot be represented as an OLE Automation Date.</exception>
+        <altmember cref="T:System.Double" />
+        <altmember cref="M:System.DateTime.FromOADate(System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="ToShortDateString">
@@ -6179,6 +6291,10 @@ An object that is equivalent to the date and time contained in `s`.
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Globalization.CultureInfo" />
+        <altmember cref="P:System.Globalization.CultureInfo.DateTimeFormat" />
+        <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
+        <altmember cref="M:System.DateTime.ToString" />
       </Docs>
     </Member>
     <Member MemberName="ToShortTimeString">
@@ -6227,6 +6343,10 @@ An object that is equivalent to the date and time contained in `s`.
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Globalization.CultureInfo" />
+        <altmember cref="P:System.Globalization.CultureInfo.DateTimeFormat" />
+        <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
+        <altmember cref="M:System.DateTime.ToString" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -6283,6 +6403,8 @@ An object that is equivalent to the date and time contained in `s`.
  [!code-csharp[System.DateTime.ToString.ArgumentOutOfRangeException#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.datetime.tostring.argumentoutofrangeexception/cs/datetime.tostring.argumentoutofrangeexception2.cs#2)]
  [!code-vb[System.DateTime.ToString.ArgumentOutOfRangeException#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.datetime.tostring.argumentoutofrangeexception/vb/datetime.tostring.argumentoutofrangeexception2.vb#2)]</para>
         </block>
+        <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
+        <altmember cref="T:System.Globalization.CultureInfo" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -6350,6 +6472,8 @@ An object that is equivalent to the date and time contained in `s`.
  [!code-csharp[System.DateTime.ToString.ArgumentOutOfRangeException#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.datetime.tostring.argumentoutofrangeexception/cs/datetime.tostring.argumentoutofrangeexception1.cs#1)]
  [!code-vb[System.DateTime.ToString.ArgumentOutOfRangeException#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.datetime.tostring.argumentoutofrangeexception/vb/datetime.tostring.argumentoutofrangeexception1.vb#1)]</para>
         </block>
+        <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
+        <altmember cref="T:System.Globalization.CultureInfo" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -6429,6 +6553,8 @@ An object that is equivalent to the date and time contained in `s`.
  [!code-csharp[System.DateTime.ToString.ArgumentOutOfRangeException#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.datetime.tostring.argumentoutofrangeexception/cs/datetime.tostring.argumentoutofrangeexception3.cs#3)]
  [!code-vb[System.DateTime.ToString.ArgumentOutOfRangeException#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.datetime.tostring.argumentoutofrangeexception/vb/datetime.tostring.argumentoutofrangeexception3.vb#3)]</para>
         </block>
+        <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
+        <altmember cref="T:System.Globalization.CultureInfo" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -6509,6 +6635,8 @@ An object that is equivalent to the date and time contained in `s`.
  [!code-csharp[System.DateTime.ToString.ArgumentOutOfRangeException#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.datetime.tostring.argumentoutofrangeexception/cs/datetime.tostring.argumentoutofrangeexception4.cs#4)]
  [!code-vb[System.DateTime.ToString.ArgumentOutOfRangeException#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.datetime.tostring.argumentoutofrangeexception/vb/datetime.tostring.argumentoutofrangeexception4.vb#4)]</para>
         </block>
+        <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
+        <altmember cref="T:System.Globalization.CultureInfo" />
       </Docs>
     </Member>
     <Member MemberName="ToUniversalTime">
@@ -6588,6 +6716,7 @@ An object that is equivalent to the date and time contained in `s`.
  [!code-csharp[System.DateTime.ToUniversalTime#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.datetime.touniversaltime/cs/touniversaltime.cs#1)]
  [!code-vb[System.DateTime.ToUniversalTime#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.datetime.touniversaltime/vb/touniversaltime.vb#1)]</para>
         </block>
+        <altmember cref="M:System.DateTime.ToLocalTime" />
       </Docs>
     </Member>
     <Member MemberName="TryParse">
@@ -6655,6 +6784,9 @@ An object that is equivalent to the date and time contained in `s`.
         <block subset="none" type="usage">
           <para>Formatting is influenced by properties of the current <see cref="T:System.Globalization.DateTimeFormatInfo" /> object, which by default are derived from the **Regional and Language Options** item in Control Panel. The <see cref="Overload:System.DateTime.TryParse" /> method can unexpectedly fail and return <see langword="False" /> if the current <see cref="P:System.Globalization.DateTimeFormatInfo.DateSeparator" /> and <see cref="P:System.Globalization.DateTimeFormatInfo.TimeSeparator" /> properties are set to the same value.</para>
         </block>
+        <altmember cref="Overload:System.DateTime.Parse" />
+        <altmember cref="T:System.Globalization.CultureInfo" />
+        <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
       </Docs>
     </Member>
     <Member MemberName="TryParse">
@@ -6764,6 +6896,9 @@ An object that is equivalent to the date and time contained in `s`.
         <block subset="none" type="usage">
           <para>Formatting is influenced by properties of the current <see cref="T:System.Globalization.DateTimeFormatInfo" /> object, which is supplied by the <paramref name="provider" /> parameter. The <see cref="Overload:System.DateTime.TryParse" /> method can unexpectedly fail and return <see langword="False" /> if the current <see cref="P:System.Globalization.DateTimeFormatInfo.DateSeparator" /> and <see cref="P:System.Globalization.DateTimeFormatInfo.TimeSeparator" /> properties are set to the same value.</para>
         </block>
+        <altmember cref="Overload:System.DateTime.Parse" />
+        <altmember cref="T:System.Globalization.CultureInfo" />
+        <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
       </Docs>
     </Member>
     <Member MemberName="TryParseExact">
@@ -6868,6 +7003,9 @@ An object that is equivalent to the date and time contained in `s`.
         <block subset="none" type="usage">
           <para>In the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)], the <see cref="Overload:System.DateTime.TryParseExact" /> method returns <see langword="false" /> if the string to be parsed contains an hour component and an AM/PM designator that are not in agreement. In the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] and earlier versions, the AM/PM designator is ignored.</para>
         </block>
+        <altmember cref="Overload:System.DateTime.ParseExact" />
+        <altmember cref="T:System.Globalization.CultureInfo" />
+        <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
       </Docs>
     </Member>
     <Member MemberName="TryParseExact">
@@ -6969,6 +7107,9 @@ An object that is equivalent to the date and time contained in `s`.
         <block subset="none" type="usage">
           <para>In the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)], the <see cref="Overload:System.DateTime.TryParseExact" /> method returns <see langword="false" /> if the string to be parsed contains an hour component and an AM/PM designator that are not in agreement. In the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] and earlier versions, the AM/PM designator is ignored.</para>
         </block>
+        <altmember cref="Overload:System.DateTime.ParseExact" />
+        <altmember cref="T:System.Globalization.CultureInfo" />
+        <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
       </Docs>
     </Member>
     <Member MemberName="UtcNow">
@@ -7022,6 +7163,8 @@ An object that is equivalent to the date and time contained in `s`.
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.DateTimeOffset.UtcNow" />
+        <altmember cref="M:System.TimeZone.GetUtcOffset(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="Year">
@@ -7072,7 +7215,117 @@ An object that is equivalent to the date and time contained in `s`.
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Int32" />
+        <altmember cref="T:System.Globalization.Calendar" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="op_Subtraction">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Subtracts a specified <see cref="T:System.DateTime" /> or<see cref="T:System.TimeSpan" /> from a specified <see cref="T:System.DateTime" />.</summary>
+        <altmember cref="M:System.DateTime.Subtract(System.DateTime)" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.DateTime" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryParse">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the specified string representation of a date and time to its <see cref="T:System.DateTime" /> equivalent and returns a value that indicates whether the conversion succeeded.</summary>
+        <altmember cref="Overload:System.DateTime.Parse" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryParseExact">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the specified string representation of a date and time to its <see cref="T:System.DateTime" /> equivalent. The format of the string representation must match a specified format exactly. The method returns a value that indicates whether the conversion succeeded.</summary>
+        <altmember cref="Overload:System.DateTime.ParseExact" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value indicating whether two <see cref="T:System.DateTime" /> objects, or a <see cref="T:System.DateTime" /> instance and another object or <see cref="T:System.DateTime" />, have the same value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Subtract">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Subtracts the specified time or duration from this instance.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ParseExact">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the specified string representation of a date and time to its <see cref="T:System.DateTime" /> equivalent. The format of the string representation must match a specified format exactly or an exception is thrown.</summary>
+        <altmember cref="Overload:System.DateTime.TryParseExact" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the value of the current <see cref="T:System.DateTime" /> object to its equivalent string representation.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

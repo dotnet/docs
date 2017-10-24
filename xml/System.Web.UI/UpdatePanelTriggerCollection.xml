@@ -27,6 +27,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.UpdatePanel.Triggers" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -100,6 +101,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.AsyncPostBackTrigger" />
+        <altmember cref="T:System.Web.UI.PostBackTrigger" />
+        <altmember cref="T:System.Web.UI.UpdatePanelTrigger" />
       </Docs>
     </Member>
     <Member MemberName="Owner">
@@ -169,6 +173,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.AsyncPostBackTrigger" />
+        <altmember cref="T:System.Web.UI.PostBackTrigger" />
+        <altmember cref="T:System.Web.UI.UpdatePanelTrigger" />
       </Docs>
     </Member>
   </Members>

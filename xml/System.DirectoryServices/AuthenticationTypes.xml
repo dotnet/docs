@@ -36,6 +36,10 @@ LDAP://CN=jsmith,DC=fabrikam,DC=Com
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.DirectoryServices.DirectoryEntry" />
+    <altmember cref="T:System.DirectoryServices.DirectorySearcher" />
+    <altmember cref="T:System.DirectoryServices.SearchResult" />
+    <altmember cref="N:System.DirectoryServices" />
   </Docs>
   <Members>
     <Member MemberName="Anonymous">

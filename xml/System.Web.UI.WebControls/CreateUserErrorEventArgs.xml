@@ -33,6 +33,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.CreateUserWizard" />
+    <altmember cref="T:System.Web.Security.MembershipCreateStatus" />
+    <altmember cref="E:System.Web.UI.WebControls.CreateUserWizard.CreateUserError" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,6 +54,7 @@
         <param name="s">A <see cref="T:System.Web.Security.MembershipCreateStatus" /> object that describes the result of a <see cref="Overload:System.Web.Security.Membership.CreateUser" /> attempt.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.CreateUserErrorEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.Security.MembershipCreateStatus" />
       </Docs>
     </Member>
     <Member MemberName="CreateUserError">
@@ -84,6 +88,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.CreateUserWizard" />
+        <altmember cref="T:System.Web.Security.MembershipCreateStatus" />
+        <altmember cref="E:System.Web.UI.WebControls.CreateUserWizard.CreateUserError" />
       </Docs>
     </Member>
   </Members>

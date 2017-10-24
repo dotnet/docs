@@ -399,5 +399,15 @@
         <exception cref="T:System.InvalidOperationException">The current channel factory is not in the <see cref="F:System.ServiceModel.CommunicationState.Opened" /> state.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateChannel">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a particular type of channel with a specified address.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

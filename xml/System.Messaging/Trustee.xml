@@ -22,6 +22,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Messaging.TrusteeType" />
+    <altmember cref="T:System.Messaging.MessageQueueAccessControlEntry" />
+    <altmember cref="M:System.Messaging.MessageQueue.SetPermissions(System.String,System.Messaging.MessageQueueAccessRights)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -70,6 +73,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="P:System.Messaging.Trustee.Name" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -98,6 +102,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="P:System.Messaging.Trustee.Name" />
+        <altmember cref="P:System.Messaging.Trustee.SystemName" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -130,6 +136,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="P:System.Messaging.Trustee.Name" />
+        <altmember cref="P:System.Messaging.Trustee.SystemName" />
+        <altmember cref="P:System.Messaging.Trustee.TrusteeType" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -160,6 +169,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="P:System.Messaging.Trustee.Name" /> property is <see langword="null" />.</exception>
+        <altmember cref="P:System.Messaging.Trustee.SystemName" />
       </Docs>
     </Member>
     <Member MemberName="SystemName">
@@ -185,6 +195,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.Trustee.Name" />
       </Docs>
     </Member>
     <Member MemberName="TrusteeType">
@@ -213,7 +224,17 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The trustee type specified is not one of the <see cref="T:System.Messaging.TrusteeType" /> enumeration members.</exception>
+        <altmember cref="T:System.Messaging.TrusteeType" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Messaging.Trustee" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -37,6 +37,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Security.RightsManagement.UnsignedPublishLicense.Sign(System.Security.RightsManagement.SecureEnvironment,System.Security.RightsManagement.UseLicense@)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -58,6 +59,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="signedPublishLicense" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Security.RightsManagement.RightsManagementException">The license is invalid.</exception>
+        <altmember cref="M:System.Security.RightsManagement.UnsignedPublishLicense.Sign(System.Security.RightsManagement.SecureEnvironment,System.Security.RightsManagement.UseLicense@)" />
       </Docs>
     </Member>
     <Member MemberName="AcquireUseLicense">
@@ -83,6 +85,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="secureEnvironment" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Security.RightsManagement.RightsManagementException">The authentication failed.</exception>
+        <altmember cref="P:System.Security.RightsManagement.PublishLicense.UseLicenseAcquisitionUrl" />
       </Docs>
     </Member>
     <Member MemberName="AcquireUseLicenseNoUI">
@@ -115,6 +118,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="secureEnvironment" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Security.RightsManagement.RightsManagementException">The authentication failed.</exception>
+        <altmember cref="P:System.Security.RightsManagement.PublishLicense.UseLicenseAcquisitionUrl" />
       </Docs>
     </Member>
     <Member MemberName="ContentId">
@@ -171,6 +175,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="cryptoProvider" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Security.RightsManagement.UnsignedPublishLicense.Sign(System.Security.RightsManagement.SecureEnvironment,System.Security.RightsManagement.UseLicense@)" />
       </Docs>
     </Member>
     <Member MemberName="ReferralInfoName">
@@ -196,6 +201,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Security.RightsManagement.PublishLicense.ReferralInfoUri" />
       </Docs>
     </Member>
     <Member MemberName="ReferralInfoUri">
@@ -221,6 +227,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Security.RightsManagement.PublishLicense.ReferralInfoName" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -265,6 +272,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Security.RightsManagement.PublishLicense.AcquireUseLicense(System.Security.RightsManagement.SecureEnvironment)" />
       </Docs>
     </Member>
   </Members>

@@ -343,5 +343,25 @@
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Security.Policy.ZoneMembershipCondition.SecurityZone" /> property is not a valid <see cref="T:System.Security.SecurityZone" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FromXml">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reconstructs a security object with a specified state from an XML encoding.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToXml">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an XML encoding of the security object and its current state.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

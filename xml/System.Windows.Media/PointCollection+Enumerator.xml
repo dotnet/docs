@@ -17,6 +17,8 @@
   <Docs>
     <summary>Enumerates <see cref="T:System.Windows.Point" /> items in a <see cref="T:System.Windows.Media.PointCollection" />.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Media.PointCollection" />
+    <altmember cref="T:System.Windows.Point" />
   </Docs>
   <Members>
     <Member MemberName="Current">
@@ -36,6 +38,7 @@
         <value>The current element in the collection.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Media.PointCollection" /> was modified after the enumerator was created.</exception>
+        <altmember cref="P:System.Collections.IEnumerator.Current" />
       </Docs>
     </Member>
     <Member MemberName="MoveNext">
@@ -64,6 +67,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Media.PointCollection" /> was modified after the enumerator was created.</exception>
+        <altmember cref="M:System.Collections.IEnumerator.MoveNext" />
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -83,6 +87,7 @@
         <summary>Resets the enumerator to its initial position, which is before the first element in the collection.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Media.PointCollection" /> was modified after the enumerator was created.</exception>
+        <altmember cref="M:System.Collections.IEnumerator.Reset" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerator.Current">

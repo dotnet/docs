@@ -26,6 +26,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.DataBindingHandlerAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -74,6 +75,7 @@
         <block subset="none" type="overrides">
           <para>Most data binding handlers will need to examine the data bindings collection on the control, using the <see cref="T:System.Web.UI.IDataBindingsAccessor" /> interface, to determine if any specific properties it can handle are data-bound.</para>
         </block>
+        <altmember cref="T:System.Web.UI.IDataBindingsAccessor" />
       </Docs>
     </Member>
   </Members>

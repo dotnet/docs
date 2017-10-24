@@ -81,6 +81,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IO.File" />
+    <altmember cref="T:System.IO.FileAccess" />
+    <altmember cref="T:System.IO.FileMode" />
+    <altmember cref="T:System.IO.FileShare" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -293,6 +297,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="mode" /> contains an invalid value.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading, writing, and appending to files. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" />, and <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Append" />.</permission>
+        <altmember cref="F:System.IO.Path.InvalidPathChars" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -987,6 +992,7 @@
         <exception cref="T:System.UnauthorizedAccessException">The <paramref name="access" /> requested is not permitted by the operating system for the specified <paramref name="path" />, such as when <paramref name="access" /> is <see langword="Write" /> or <see langword="ReadWrite" /> and the file or directory is set for read-only access.</exception>
         <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading, writing, and appending to files. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" />, and <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Append" />.</permission>
+        <altmember cref="T:System.IO.File" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -1840,6 +1846,7 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
+        <altmember cref="M:System.IO.FileStream.Flush(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="Flush">
@@ -1884,6 +1891,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IO.FileStream.Flush" />
       </Docs>
     </Member>
     <Member MemberName="FlushAsync">
@@ -2937,5 +2945,23 @@
         </block>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Flush">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Clears buffers for this stream and causes any buffered data to be written to the file.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.FileStream" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

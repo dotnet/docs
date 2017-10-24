@@ -182,5 +182,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether an object represents the same parameter as the current <see cref="T:System.Reflection.Emit.ParameterToken" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

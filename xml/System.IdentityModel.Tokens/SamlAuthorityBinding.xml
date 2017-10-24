@@ -27,6 +27,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IdentityModel.Tokens.SamlAuthenticationStatement" />
+    <altmember cref="T:System.IdentityModel.Tokens.SamlSecurityToken" />
+    <altmember cref="T:System.IdentityModel.Tokens.SamlAssertion" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -278,5 +281,14 @@
  <paramref name="samlSerializer" /> is <see langword="null" /></exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlAuthorityBinding" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

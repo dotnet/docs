@@ -384,5 +384,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteLine">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a message and a category name to the <see cref="T:System.Web.IisTraceListener" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

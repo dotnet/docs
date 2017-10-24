@@ -20,7 +20,7 @@ class.
 > [!NOTE]
 > If you're starting from the code you wrote in [dot.net](https://dot.net/), you already have the code written in this section. Jump to [Modify list contents](#modify-list-contents).
 
-This lesson assumes you've finished the online quick starts, and you've installed the [.NET Core SDK](http://dot.net/core) and that you have a code editor. If you don't have one, we recommend [Visual Studio](https://www.visualstudio.com/) for Mac or Windows. 
+This lesson assumes you've finished the online quick starts and you've installed the [.NET Core SDK](http://dot.net/core). You also need a code editor. If you don't have one, we recommend [Visual Studio](https://www.visualstudio.com/) for Mac or Windows. 
 
 Create a directory named **list-quickstart**. Make that the current directory and run `dotnet new console`.
 

@@ -182,7 +182,7 @@ public async Task<User> GetUser(int userId)
     // to the entry in the database with {userId} as its Id.
 }
 
-public static Task<IEnumerable<User>> GetUsers(IEnumerable<int> userIds)
+public static async Task<IEnumerable<User>> GetUsers(IEnumerable<int> userIds)
 {
     var getUserTasks = new List<Task<User>>();
     

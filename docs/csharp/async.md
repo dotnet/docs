@@ -188,7 +188,7 @@ public static Task<IEnumerable<User>> GetUsers(IEnumerable<int> userIds)
     
     foreach (int userId in userIds)
     {
-        getUserTasks.Add(GetUser(id));
+        getUserTasks.Add(GetUser(userId));
     }
     
     return await Task.WhenAll(getUserTasks);

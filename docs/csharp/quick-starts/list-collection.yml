@@ -17,6 +17,9 @@ items:
   content: |
     Run the following code in the interactive window. To do that, type the following code block in the interactive window (replace "<name>" with your name) and click the **Run** button:
 
+    > [!NOTE]
+    > If you're coming from the [.NET In-Browser Tutorial](https://microsoft.com/net), you've already completed this step. Copy and paste the following code into the interactive window, then move on to [the next step](list-collection#step-2).
+
     ```csharp
     var names = new List<string> { "<name>", "Ana", "Felipe" };
     foreach (var name in names)

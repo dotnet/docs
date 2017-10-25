@@ -78,7 +78,10 @@ items:
 
     Click **Run** again to see the results.
 
-    As we progress, creating strings to print using `+` becomes cumbersome. There's an easier way: Put a `$` before the opening " and you can place variables inside `{` and `}`. Try it:
+    As we progress, creating strings to print using `+` becomes cumbersome. String interpolation lets you piece together strings in a more concise and readable way.
+
+    If you add a `$` before the opening quotes of the string, you can then include string expressions, like the `aFriend` variable, inside the string in curly brackets.
+
 
     ```csharp
     Console.WriteLine($"Hello {aFriend}");
@@ -99,7 +102,7 @@ items:
     ```csharp
     string firstFriend = "Maria";
     string secondFriend = "Sage";
-    Console.WriteLine($"My friends are {firstFriend} and {secondFriend}"");
+    Console.WriteLine($"My friends are {firstFriend} and {secondFriend}");
     ```
 
     As you explore more with strings, you can find the length of a string using `Length`. `Length` is a **property** of a string and it returns the number of characters in that string. Add the following code at the bottom of the interactive window:

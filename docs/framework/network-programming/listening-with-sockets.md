@@ -48,11 +48,15 @@ IPEndPoint localEndPoint = new IPEndPoint(ipAddress, 11000);
  After the local endpoint is determined, the <xref:System.Net.Sockets.Socket> must be associated with that endpoint using the <xref:System.Net.Sockets.Socket.Bind%2A> method and set to listen on the endpoint using the <xref:System.Net.Sockets.Socket.Listen%2A> method. **Bind** throws an exception if the specific address and port combination is already in use. The following example demonstrates associating a **Socket** with an **IPEndPoint**.  
   
 ```vb  
+Dim listener As New Socket(ipAddress.AddressFamily, _  
+    SocketType.Stream, ProtocolType.Tcp) 
 listener.Bind(localEndPoint)  
 listener.Listen(100)  
 ```  
   
 ```csharp  
+Socket listener = new Socket(ipAddress.AddressFamily,
+    SocketType.Stream, ProtocolType.Tcp);
 listener.Bind(localEndPoint);  
 listener.Listen(100);  
 ```  

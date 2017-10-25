@@ -240,7 +240,7 @@
 |<xref:System.DirectoryServices.AccountManagement.PrincipalExistsException>|The principal matching these parameters already exists in the collection.|  
 |<xref:System.DirectoryServices.AccountManagement.NoMatchingPrincipalException>|No principal matching the specified parameters was found.|  
 |<xref:System.DirectoryServices.AccountManagement.MultipleMatchesException>|More than one principal matches the specified parameters.|  
-|<xref:System.DirectoryServices.AccountManagement.ArgumentException>|Thrown when `identityType` is an empty string|  
+|<xref:System.ArgumentException>|Thrown when `identityType` is an empty string|  
   
  ]]></format>
         </remarks>
@@ -276,7 +276,7 @@
   
 |Exception|Description|  
 |---------------|-----------------|  
-|<xref:System.InvalidOperation>|If this method is called on the <xref:System.DirectoryServices.AccountManagement.GroupPrincipal.Members> PrincipalCollection, the  <xref:System.DirectoryServices.AccountManagement.GroupPrincipal.Members> property cannot be cleared because one or more of the group's members have this group as their primary group|  
+|<xref:System.InvalidOperationException>|If this method is called on the <xref:System.DirectoryServices.AccountManagement.GroupPrincipal.Members> PrincipalCollection, the  <xref:System.DirectoryServices.AccountManagement.GroupPrincipal.Members> property cannot be cleared because one or more of the group's members have this group as their primary group|  
   
  ]]></format>
         </remarks>
@@ -455,7 +455,7 @@
 |Exception|Description|  
 |---------------|-----------------|  
 |<xref:System.DirectoryServices.AccountManagement.MultipleMatchesException>|There are multiple principals matching these parameters.|  
-|<xref:System.DirectoryServices.AccountManagement.ArgumentException>|The `identityType` parameter cannot be empty.|  
+|<xref:System.ArgumentException>|The `identityType` parameter cannot be empty.|  
   
  ]]></format>
         </remarks>
@@ -545,7 +545,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Conceptually, each instance of <xref:System.DirectoryServices.AccountManagement.PrincipalCollection> has a single enumerator associated with it.  Although multiple calls to <xref:System.DirectoryServices.AccountManagement.PrincipalCollection.System.Collections.IEnumerable.GetEnumerator%2A> return distinct <xref:System.Collections.IEnumerator> objects, they share the same internal state.  
+ Conceptually, each instance of <xref:System.DirectoryServices.AccountManagement.PrincipalCollection> has a single enumerator associated with it.  Although multiple calls to <xref:System.DirectoryServices.AccountManagement.PrincipalCollection.System%23Collections%23IEnumerable%23GetEnumerator%2A> return distinct <xref:System.Collections.IEnumerator> objects, they share the same internal state.  
   
  ]]></format>
         </remarks>
@@ -643,7 +643,7 @@
   
 |Exception|Description|  
 |---------------|-----------------|  
-|<xref:System.InvalidOperation>|This method was called on the <xref:System.DirectoryServices.AccountManagement.GroupPrincipal.Members> collection for a domain group, and the domain principal to be removed is a member of the group by virtue of its `primaryGroupId` attribute.|  
+|<xref:System.InvalidOperationException>|This method was called on the <xref:System.DirectoryServices.AccountManagement.GroupPrincipal.Members> collection for a domain group, and the domain principal to be removed is a member of the group by virtue of its `primaryGroupId` attribute.|  
   
  ]]></format>
         </remarks>
@@ -683,7 +683,7 @@
   
 |Exception|Description|  
 |---------------|-----------------|  
-|<xref:System.InvalidOperation>|This method was called on the <xref:System.DirectoryServices.AccountManagement.GroupPrincipal.Members> collection for a domain group, and the domain principal to be removed is a member of the group by virtue of its `primaryGroupId` attribute.|  
+|<xref:System.InvalidOperationException>|This method was called on the <xref:System.DirectoryServices.AccountManagement.GroupPrincipal.Members> collection for a domain group, and the domain principal to be removed is a member of the group by virtue of its `primaryGroupId` attribute.|  
   
  ]]></format>
         </remarks>
@@ -723,7 +723,7 @@
   
 |Exception|Description|  
 |---------------|-----------------|  
-|<xref:System.InvalidOperation>|This method was called on the <xref:System.DirectoryServices.AccountManagement.GroupPrincipal.Members> collection for a domain group, and the domain principal to be removed is a member of the group by virtue of its `primaryGroupId` attribute.|  
+|<xref:System.InvalidOperationException>|This method was called on the <xref:System.DirectoryServices.AccountManagement.GroupPrincipal.Members> collection for a domain group, and the domain principal to be removed is a member of the group by virtue of its `primaryGroupId` attribute.|  
   
  ]]></format>
         </remarks>
@@ -763,7 +763,7 @@
   
 |Exception|Description|  
 |---------------|-----------------|  
-|<xref:System.InvalidOperation>|This method was called on the <xref:System.DirectoryServices.AccountManagement.GroupPrincipal.Members> collection for a domain group, and the domain principal to be removed is a member of the group by virtue of its `primaryGroupId` attribute.|  
+|<xref:System.InvalidOperationException>|This method was called on the <xref:System.DirectoryServices.AccountManagement.GroupPrincipal.Members> collection for a domain group, and the domain principal to be removed is a member of the group by virtue of its `primaryGroupId` attribute.|  
   
  ]]></format>
         </remarks>
@@ -807,10 +807,10 @@
   
 |Exception|Description|  
 |---------------|-----------------|  
-|<xref:System.InvalidOperation>|This method was called on the <xref:System.DirectoryServices.AccountManagement.GroupPrincipal.Members> collection for a domain group, and the domain principal to be removed is a member of the group by virtue of its `primaryGroupId` attribute.|  
+|<xref:System.InvalidOperationException>|This method was called on the <xref:System.DirectoryServices.AccountManagement.GroupPrincipal.Members> collection for a domain group, and the domain principal to be removed is a member of the group by virtue of its `primaryGroupId` attribute.|  
 |<xref:System.DirectoryServices.AccountManagement.NoMatchingPrincipalException>|No principal matching the specified parameters was found.|  
 |<xref:System.DirectoryServices.AccountManagement.MultipleMatchesException>|More than one principal matches the specified parameters.  In theory, this should never happen, because <xref:System.DirectoryServices.AccountManagement.PrincipalCollection.Add%2A> throws an exception when there is an attempt to add duplicate principals to the collection.  However, it is possible that another API created the duplicate.|  
-|<xref:System.DirectoryServices.AccountManagement.ArgumentException>|Thrown when `identityType` is an empty string.|  
+|<xref:System.ArgumentException>|Thrown when `identityType` is an empty string.|  
   
  ]]></format>
         </remarks>
@@ -982,7 +982,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Conceptually, each instance of <xref:System.DirectoryServices.AccountManagement.PrincipalCollection> has a single enumerator associated with it.  Although multiple calls to <xref:System.DirectoryServices.AccountManagement.PrincipalCollection.System.Collections.IEnumerable.GetEnumerator%2A> return distinct <xref:System.Collections.IEnumerator> objects, they share the same internal state.  
+ Conceptually, each instance of <xref:System.DirectoryServices.AccountManagement.PrincipalCollection> has a single enumerator associated with it.  Although multiple calls to <xref:System.DirectoryServices.AccountManagement.PrincipalCollection.System%23Collections%23IEnumerable%23GetEnumerator%2A> return distinct <xref:System.Collections.IEnumerator> objects, they share the same internal state.  
   
  ]]></format>
         </remarks>

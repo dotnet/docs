@@ -379,7 +379,7 @@ In return, WPF provides the following behavior:
 
 - The <xref:System.Windows.Data.CollectionView> maintains a "shadow copy" of the collection for use on the UI thread.
 
-- <xref:System.Windows.Data.CollectionView.CollectionChanged%2A> events are queued up as they arrive (on any thread).
+- <xref:System.Windows.Data.CollectionView.CollectionChanged> events are queued up as they arrive (on any thread).
 
 - Pending events are applied to the shadow copy asynchronously on the UI thread when it has the opportunity to do so.
 

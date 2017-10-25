@@ -1022,7 +1022,7 @@
         <ReturnType>System.Net.Mail.MailAddressCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the list of addresses to reply to for the mail message.</summary>
+        <summary>Gets the list of addresses to reply to for the mail message.</summary>
         <value>The list of the addresses to reply to for the mail message.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

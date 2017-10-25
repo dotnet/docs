@@ -82,7 +82,9 @@ The .NET Framework requires administrator privileges for installation. If you do
 
 - [!INCLUDE[winserver8](../../../includes/winserver8-md.md)] includes the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], so you don't have to install it separately. Similarly, [!INCLUDE[winblue_server_2](../../../includes/winblue-server-2-md.md)] includes the [!INCLUDE[net_v451](../../../includes/net-v451-md.md)].
 
-- The .NET Framework is supported in the Server Core Role with Windows Server 2008 R2 SP1 or later but isn't supported on Windows Server 2008 R2 for Itanium-Based Systems.
+- The .NET Framework has limited support for the Server Core Role with Windows Server 2008 R2 SP1 or later. See [Server Core .NET Functionality](https://msdn.microsoft.com/library/ee391632.aspx) for a list of unsupported APIs.
+
+- The .NET Framework isn't supported on Windows Server 2008 R2 for Itanium-Based Systems.
 
 - On Windows Server 2008 SP2, the .NET Framework is not supported in the Server Core Role.
 

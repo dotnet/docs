@@ -1,5 +1,5 @@
 ---
-title: "Application Compatibility in the .NET Framework"
+title: Application Compatibility in the .NET Framework
 ms.custom: ""
 ms.date: "05/19/2017"
 ms.prod: ".net-framework"

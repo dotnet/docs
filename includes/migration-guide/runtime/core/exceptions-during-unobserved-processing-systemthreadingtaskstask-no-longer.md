@@ -3,7 +3,7 @@
 |   |   |
 |---|---|
 |Details|Because the <xref:System.Threading.Tasks.Task?displayProperty=name> class represents an asynchronous operation, it catches all non-severe exceptions that occur during asynchronous processing. In the .NET Framework 4.5, if an exception is not observed and your code never waits on the task, the exception will no longer propagate on the finalizer thread and crash the process during garbage collection. This change enhances the reliability of applications that use the Task class to perform unobserved asynchronous processing.|
-|Suggestion|If an app depends on unobserved asynchronous exceptions propagating to the finalizer thread, the previous behavior can be restored by providing an appropriate handler for the <xref:System.Threading.Tasks.TaskScheduler.UnobservedTaskException> event, or by setting a <a href="../../../../docs/framework/configure-apps/file-schema/runtime/throwunobservedtaskexceptions-element.md">runtime configuration element</a>.|
+|Suggestion|If an app depends on unobserved asynchronous exceptions propagating to the finalizer thread, the previous behavior can be restored by providing an appropriate handler for the <xref:System.Threading.Tasks.TaskScheduler.UnobservedTaskException> event, or by setting a [runtime configuration element](~/docs/framework/configure-apps/file-schema/runtime/throwunobservedtaskexceptions-element.md).|
 |Scope|Edge|
 |Version|4.5|
 |Type|Runtime|

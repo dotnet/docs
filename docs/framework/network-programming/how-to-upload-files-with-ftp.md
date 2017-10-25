@@ -52,7 +52,6 @@ namespace Examples.System.Net
             Console.WriteLine("Upload File Complete, status {0}", response.StatusDescription);  
   
             response.Close();  
-            }  
         }  
     }  
 }  

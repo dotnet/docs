@@ -53,7 +53,7 @@ What should the application deployment architecture be? The specifications for t
 
 In this approach, each service (container) implements a set of cohesive and narrowly related functions. For example, an application might consist of services such as the catalog service, ordering service, basket service, user profile service, etc.
 
-Microservices communicate using protocols such as HTTP (REST), but also asynchronously (that is AMQP) whenever possible, especially when propagating updates with integration events.
+Microservices communicate using protocols such as HTTP (REST), but also asynchronously (for example, using AMQP) whenever possible, especially when propagating updates with integration events.
 
 Microservices are developed and deployed as containers independently of one another. This means that a development team can be developing and deploying a certain microservice without impacting other subsystems.
 
@@ -145,7 +145,7 @@ As mentioned in the architecture section, when designing and building a complex 
 
 ## External versus internal architecture and design patterns
 
-The external architecture is the microservice architecture composed by multiple service, following the principles described in the architecture section of this guide. However, depending on the nature of each microservice, and independently of high-level microservice architecture you choose, it is common and sometimes advisable to have different internal architectures, each based on different patterns, for different microservices. The microservices can even use different technologies and programming languages. Figure 8-2 illustrates this diversity.
+The external architecture is the microservice architecture composed by multiple services, following the principles described in the architecture section of this guide. However, depending on the nature of each microservice, and independently of high-level microservice architecture you choose, it is common and sometimes advisable to have different internal architectures, each based on different patterns, for different microservices. The microservices can even use different technologies and programming languages. Figure 8-2 illustrates this diversity.
 
 ![](./media/image2.png)
 
@@ -183,7 +183,7 @@ The important point is that no particular architecture pattern or style, nor any
 
 **Figure 8-3**. Multi-architectural patterns and the polyglot microservices world
 
-As shown in Figure 8-3, in applications composed of many microservices (Bounded Contexts in domain-driven design terminology, or simply “subsystems” as autonomous microservices), you might implement each microservice in a different way. Each might have a different architecture pattern and use different languages and databases depending on the application’s nature, business requirements, and priorities. In some cases the microservices might be similar. But that is not usually the case, because each subsystem’s context boundary and requirements are usually different.
+As shown in Figure 8-3, in applications composed of many microservices (Bounded Contexts in domain-driven design terminology, or simply “subsystems” as autonomous microservices), you might implement each microservice in a different way. Each might have a different architecture pattern and use different languages and databases depending on the application’s nature, business requirements, and priorities. In some cases, the microservices might be similar. But that is not usually the case, because each subsystem’s context boundary and requirements are usually different.
 
 For instance, for a simple CRUD maintenance application, it might not make sense to design and implement DDD patterns. But for your core domain or core business, you might need to apply more advanced patterns to tackle business complexity with ever-changing business rules.
 

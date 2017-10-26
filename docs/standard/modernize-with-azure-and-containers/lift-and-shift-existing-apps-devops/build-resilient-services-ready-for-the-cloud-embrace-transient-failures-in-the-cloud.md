@@ -1,10 +1,9 @@
 ---
-title: Build resilient services ready for the cloud: Embrace transient failures in the cloud  | Microsoft Docs 
+title: Build resilient services ready for the cloud: Embrace transient failures in the cloud 
 description: .NET Microservices Architecture for Containerized .NET Applications | Build resilient services ready for the cloud: Embrace transient failures in the cloud 
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/28/2017
+ms.date: 10/26/2017
 ---
 # Build resilient services ready for the cloud: Embrace transient failures in the cloud 
 
@@ -24,13 +23,13 @@ A similar scenario might occur in an app that consumes HTTP services. The networ
 
 A resilient application like the one shown in Figure 4-9 should implement techniques like "retries with exponential backoff" to give the application an opportunity to handle transient failures in resources. You also should use "circuit breakers" in your applications. A circuit breaker stops an application from trying to access a resource when it's actually a long-term failure. By using a circuit breaker, the application avoids provoking a denial of service to itself.
 
-![](./media/image9.png)
+![Partial failures handled by retries with exponential backoff](./media/image9.png)
 
 > **Figure 4-9.** Partial failures handled by retries with exponential backoff
 
 You can use these techniques both in HTTP resources and in database resources. In Figure 4-9, the application is based on a 3-tier architecture, so you need these techniques at the services level (HTTP) and at the data tier level (TCP). In a monolithic application that uses only a single app tier in addition to the database (no additional services or microservices), handling transient failures at the database connection level might be enough. In that scenario, usually just a particular configuration of the database connection is required.
 
-When implementing resilient communications that access the database, depending on the version of .NET you are using, it can be very straightforward (for example, [with Entity Framework 6 or later](https://msdn.microsoft.com/en-us/library/dn456835(v=vs.113).aspx), it's just a matter of configuring the database connection). Or, you might need to use additional libraries like the [Transient Fault Handling Application Block](https://msdn.microsoft.com/en-us/library/hh680934(v=pandp.50).aspx) (for earlier versions of .NET), or even implement your own library.
+When implementing resilient communications that access the database, depending on the version of .NET you are using, it can be very straightforward (for example, [with Entity Framework 6 or later](https://msdn.microsoft.com/library/dn456835(v=vs.113).aspx), it's just a matter of configuring the database connection). Or, you might need to use additional libraries like the [Transient Fault Handling Application Block](https://msdn.microsoft.com/library/hh680934(v=pandp.50).aspx) (for earlier versions of .NET), or even implement your own library.
 
 When implementing HTTP retries and circuit breakers, the recommendation for .NET is to use the [Polly](https://github.com/App-vNext/Polly) library, which targets .NET 4.0, .NET 4.5, and .NET Standard 1.1, which includes .NET Core support.
 
@@ -40,17 +39,17 @@ To learn how to implement strategies for handling partial failures in the cloud,
 
 -   **Implementing resilient communication to handle partial failure**
 
-    <https://docs.microsoft.com/en-us/dotnet/standard/microservices-architecture/implement-resilient-applications/partial-failure-strategies>
+    [https://docs.microsoft.com/dotnet/standard/microservices-architecture/implement-resilient-applications/partial-failure-strategies](https://docs.microsoft.com/dotnet/standard/microservices-architecture/implement-resilient-applications/partial-failure-strategies)
 
 -   **Entity Framework connection resiliency and retry logic (version 6 and later)**
 
-    <https://msdn.microsoft.com/en-us/library/dn456835(v=vs.113).aspx>
+    [https://msdn.microsoft.com/en-us/library/dn456835(v=vs.113).aspx](https://msdn.microsoft.com/en-us/library/dn456835(v=vs.113).aspx)
 
 -   **The Transient Fault Handling Application Block**
 
 <!-- -->
 
--   <https://msdn.microsoft.com/en-us/library/hh680934(v=pandp.50).aspx>
+-   [https://msdn.microsoft.com/en-us/library/hh680934(v=pandp.50).aspx](https://msdn.microsoft.com/en-us/library/hh680934(v=pandp.50).aspx)
 
 -   **Polly library for resilient HTTP communication**
 

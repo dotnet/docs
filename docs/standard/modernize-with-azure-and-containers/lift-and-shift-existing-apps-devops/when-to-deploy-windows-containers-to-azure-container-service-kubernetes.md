@@ -1,10 +1,9 @@
 ---
-title: When to deploy Windows Containers to Azure Container Service (i.e., Kubernetes) | Microsoft Docs 
+title: When to deploy Windows Containers to Azure Container Service (i.e., Kubernetes) 
 description: .NET Microservices Architecture for Containerized .NET Applications | When to deploy Windows Containers to Azure Container Service (i.e., Kubernetes)
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/28/2017
+ms.date: 10/26/2017
 ---
 # When to deploy Windows Containers to Azure Container Service (i.e., Kubernetes)
 

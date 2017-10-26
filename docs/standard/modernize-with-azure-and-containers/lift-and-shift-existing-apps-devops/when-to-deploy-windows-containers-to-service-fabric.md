@@ -1,10 +1,9 @@
 ---
-title: When to deploy Windows Containers to Service Fabric | Microsoft Docs 
+title: When to deploy Windows Containers to Service Fabric
 description: .NET Microservices Architecture for Containerized .NET Applications | When to deploy Windows Containers to Service Fabric
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/28/2017
+ms.date: 10/26/2017
 ---
 # When to deploy Windows Containers to Service Fabric
 
@@ -20,7 +19,7 @@ Pursuing cost reductions is understandable, and it's likely that all organizatio
 
 Some organizations will continue modernizing by adding microservices (Cloud-Optimized and cloud-native applications). Many organizations will stop here (Cloud DevOps-Ready). As shown in Figure 4-8, these organizations won't move to microservices architectures because they might not need to. In any case, they already get the benefits that using containers plus Service Fabric provides-a complete management experience that includes deployment, upgrades, versioning, rollbacks, and health monitoring.
 
-> ![](./media/image8.png)
+> ![Lift and shift an application to Service Fabric](./media/image8.png)
 >
 > **Figure 4-8.** Lift and shift an application to Service Fabric
 
@@ -29,7 +28,6 @@ A key approach to Service Fabric is to reuse existing code and simply lift and s
 When comparing Service Fabric to other orchestrators, it's important to highlight that Service Fabric is very mature at running Windows-based applications and services. Service Fabric has been running Windows-based services and applications, including Tier-1, mission-critical products from Microsoft, for years. It was the first orchestrator to have general availability for Windows Containers (May 2017). Other containers, like Kubernetes, DC/OS, and Docker Swarm, are more mature in Linux, but less mature than Service Fabric for Windows-based applications and Windows Containers.
 
 The ultimate goal of Service Fabric is to reduce the complexities of building applications by using a microservices approach. This is where you eventually want to be for certain types of applications, to avoid costly redesigns. You can start small, scale when needed, deprecate services, add new services, and evolve your application with customer use. We know that there are many other problems that are yet to be solved to make microservices more approachable for most developers. If you currently are just lifting and shifting an application with Windows Containers, but you are thinking about adding microservices based on containers in the future, that is the Service Fabric sweet spot.
-
 
 > [Previous](when-to-deploy-windows-containers-to-azure-vms-iaas-cloud.md)  
 [Next](when-to-deploy-windows-containers-to-azure-container-service-kubernetes.md)

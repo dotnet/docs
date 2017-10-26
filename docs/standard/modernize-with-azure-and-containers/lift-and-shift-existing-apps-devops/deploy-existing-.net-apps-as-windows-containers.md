@@ -1,10 +1,9 @@
 ---
-title: Deploy existing .NET apps as Windows containers | Microsoft Docs 
+title: Deploy existing .NET apps as Windows containers
 description: .NET Microservices Architecture for Containerized .NET Applications | Deploy existing .NET apps as Windows containers
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/28/2017
+ms.date: 10/26/2017
 ---
 # Deploy existing .NET apps as Windows containers
 
@@ -120,16 +119,16 @@ Running a container on Windows with or without Hyper-V isolation is a run-time d
 
 -   **Windows Containers documentation**
 
-    <https://docs.microsoft.com/en-us/virtualization/windowscontainers/>
+    [https://docs.microsoft.com/virtualization/windowscontainers/](https://docs.microsoft.com/virtualization/windowscontainers/)
 
 -   **Windows Containers fundamentals**
 
-    <https://docs.microsoft.com/en-us/virtualization/windowscontainers/about/>
+    [https://docs.microsoft.com/virtualization/windowscontainers/about/](https://docs.microsoft.com/virtualization/windowscontainers/about/)
 
 -   **Infographic: Microsoft and containers**
 
-    <https://info.microsoft.com/rs/157-GQE-382/images/Container%20infographic%201.4.17.pdf>
+    [https://info.microsoft.com/rs/157-GQE-382/images/Container%20infographic%201.4.17.pdf](https://info.microsoft.com/rs/157-GQE-382/images/Container%20infographic%201.4.17.pdf)
 
 
-> [Previous](how-to-deploy-existing-.net-apps-to-azure-app-service.md)  
+> [Previous](how-to-deploy-existing-net-apps-to-azure-app-service.md)  
 [Next](when-not-to-deploy-to-windows-containers.md)

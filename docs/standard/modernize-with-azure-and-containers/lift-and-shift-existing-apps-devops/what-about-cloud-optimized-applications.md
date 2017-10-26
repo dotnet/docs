@@ -1,18 +1,17 @@
 ---
-title: What about Cloud-Optimized applications? | Microsoft Docs 
+title: What about cloud-optimized applications? | Microsoft Docs 
 description: .NET Microservices Architecture for Containerized .NET Applications | What about Cloud-Optimized applications?
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/28/2017
+ms.date: 10/26/2017
 ---
-# What about Cloud-Optimized applications?
+# What about cloud-optimized applications?
 
 Although Cloud-Optimized and [cloud-native](https://www.gartner.com/doc/3738117/comparing-leading-cloudnative-application-platforms) applications are not the main focus of this guide, it's helpful to have an understanding of this modernization maturity level, and to distinguish it from Cloud DevOps-Ready.
 
 Figure 4-3 positions Cloud-Optimized apps in the application modernization maturity levels:
 
-![](./media/image3.png)
+![Positioning Cloud-Optimized applications](./media/image3.png)
 
 > **Figure 4-3.** Positioning Cloud-Optimized applications
 
@@ -24,7 +23,7 @@ In some more advanced cases, you might create [cloud-native](https://www.gartner
 
 Figure 4-4 shows the type of applications that you can deploy when you use the Cloud-Optimized model. You have two basic choices-modern web applications and cloud-native applications.
 
-> ![](./media/image4.png)
+> ![App types at the Cloud-Optimized level](./media/image4.png)
 >
 > **Figure 4-4.** App types at the Cloud-Optimized level
 
@@ -34,7 +33,7 @@ The fundamental difference in applications at the Cloud-Optimized level is in th
 
 Creating new applications that don't use microservices also makes sense. There are many new and still modern scenarios in which a microservices-based approach might exceed your needs. In some cases, you might just want to create a simpler monolithic web application, or add coarse-grained services to an N-Tier app. In these cases, you can still make full use of cloud PaaS capabilities like the ones offered by Azure App Service. You still reduce your maintenance work to the limit.
 
-Also, because you develop new code in Cloud-Optimized scenarios (for a full application or for partial subsystems), when you create new code, you should use the newer versions of .NET ([.NET Core](https://docs.microsoft.com/en-us/dotnet/core/) and [ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/), in particular). This is especially true if you create microservices and containers because .NET Core is a lean and fast framework. You'll get a small memory footprint and fast start in containers, and your applications will be high-performing. This approach fits perfectly with the requirements of microservices and containers, and you get the benefits of a cross-platform framework-being able to run the same application on Linux, Windows Server, and Mac (Mac for development environments).
+Also, because you develop new code in Cloud-Optimized scenarios (for a full application or for partial subsystems), when you create new code, you should use the newer versions of .NET ([.NET Core](https://docs.microsoft.com/dotnet/core/) and [ASP.NET Core](https://docs.microsoft.com/aspnet/core/), in particular). This is especially true if you create microservices and containers because .NET Core is a lean and fast framework. You'll get a small memory footprint and fast start in containers, and your applications will be high-performing. This approach fits perfectly with the requirements of microservices and containers, and you get the benefits of a cross-platform framework-being able to run the same application on Linux, Windows Server, and Mac (Mac for development environments).
 
 ## Cloud-native applications with Cloud-Optimized applications
 
@@ -42,7 +41,7 @@ Also, because you develop new code in Cloud-Optimized scenarios (for a full appl
 
 The [Twelve-Factor App](https://12factor.net/) (a collection of patterns that are closely related to microservices approaches) also is considered a requirement for [cloud-native](https://www.gartner.com/doc/3738117/comparing-leading-cloudnative-application-platforms) application architectures.
 
-The [Cloud Native Computing Foundation (CNCF)](https://www.cncf.io/) is a primary promoter of cloud-native principles. Microsoft is a [member of the CNCF](https://azure.microsoft.com/en-us/blog/announcing-cncf/).
+The [Cloud Native Computing Foundation (CNCF)](https://www.cncf.io/) is a primary promoter of cloud-native principles. Microsoft is a [member of the CNCF](https://azure.microsoft.com/blog/announcing-cncf/).
 
 For a sample definition and for more information about the characteristics of cloud-native applications, see the Gartner article [How to architect and design cloud-native applications](https://www.gartner.com/doc/3181919/architect-design-cloudnative-applications). For specific guidance from Microsoft about how to implement a cloud-native application, see [.NET microservices: Architecture for containerized .NET applications](https://aka.ms/microservicesebook).
 
@@ -58,7 +57,7 @@ However, microservices are not mandatory for any new or modern application. Micr
 
 The microservices architecture is becoming the preferred approach for distributed and large or complex mission-critical applications that are based on multiple, independent subsystems in the form of autonomous services. In a microservices-based architecture, an application is built as a collection of services that can be independently developed, tested, versioned, deployed, and scaled. This can include any related, autonomous database per microservice.
 
-For a detailed look at a microservices architecture that you can implement by using .NET Core, see the downloadable PDF eBook [.NET microservices: Architecture for containerized .NET applications](https://aka.ms/microservicesebook). The guide also is available [online](https://docs.microsoft.com/en-us/dotnet/standard/microservices-architecture/).
+For a detailed look at a microservices architecture that you can implement by using .NET Core, see the downloadable PDF eBook [.NET microservices: Architecture for containerized .NET applications](https://aka.ms/microservicesebook). The guide also is available [online](https://docs.microsoft.com/dotnet/standard/microservices-architecture/).
 
 But even in scenarios in which microservices offer powerful capabilities-independent deployment, strong subsystem boundaries, and technology diversity-they also raise many new challenges. The challenges are related to distributed application development, such as fragmented and independent data models; achieving resilient communication between microservices; the need for eventual consistency; and operational complexity. Microservices introduce a higher level of complexity compared to traditional monolithic applications.
 
@@ -68,7 +67,7 @@ As a final note, even at the risk of being repetitive about this concept, you sh
 
 ## When to use Azure App Service for modernizing existing .NET apps
 
-When you modernize existing ASP.NET web applications to the Cloud-Optimized maturity level, because your web applications were developed by using the .NET Framework, your main dependencies are on Windows and, most likely, Internet Information Server (IIS). You can use and deploy Windows-based and IIS-based applications either by directly deploying to [Azure App Service](https://docs.microsoft.com/en-us/azure/app-service/app-service-value-prop-what-is) or by first containerizing your application by using Windows Containers. If containerizing, deploy the applications either to Windows Containers hosts (VM-based) or to an Azure Service Fabric cluster that supports Windows Containers.
+When you modernize existing ASP.NET web applications to the Cloud-Optimized maturity level, because your web applications were developed by using the .NET Framework, your main dependencies are on Windows and, most likely, Internet Information Server (IIS). You can use and deploy Windows-based and IIS-based applications either by directly deploying to [Azure App Service](https://docs.microsoft.com/azure/app-service/app-service-value-prop-what-is) or by first containerizing your application by using Windows Containers. If containerizing, deploy the applications either to Windows Containers hosts (VM-based) or to an Azure Service Fabric cluster that supports Windows Containers.
 
 When you use Windows Containers, you get all the benefits of containerization. You increase agility in shipping and deploying your app, and reduce friction for environment issues (staging, dev/test, production). In the next few sections, we go into more detail about the benefits you get from using containers.
 
@@ -111,7 +110,7 @@ Although App Service might be the best choice for new web apps, however, for exi
 ### Additional resources
 
 -   **Compatibility analysis for Azure App Service**  
-<https://www.migratetoazure.net/Resources>
+[https://www.migratetoazure.net/Resources](https://www.migratetoazure.net/Resources)
 
 
 ### Benefits of moving to Windows Containers
@@ -124,4 +123,4 @@ You also can deploy Windows Containers to other orchestrators, like Kubernetes, 
 
 
 > [Previous](microsoft-technologies-in-cloud-devops-ready-applications.md)  
-[Next](how-to-deploy-existing-.net-apps-to-azure-app-service.md)
+[Next](how-to-deploy-existing-net-apps-to-azure-app-service.md)

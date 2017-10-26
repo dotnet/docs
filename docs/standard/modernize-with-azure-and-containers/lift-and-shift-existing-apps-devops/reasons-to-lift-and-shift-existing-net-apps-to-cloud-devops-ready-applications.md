@@ -1,10 +1,9 @@
 ---
-title: Reasons to lift and shift existing .NET apps to Cloud DevOps-Ready applications | Microsoft Docs 
+title: Reasons to lift and shift existing .NET apps to Cloud DevOps-Ready applications
 description: .NET Microservices Architecture for Containerized .NET Applications | Reasons to lift and shift existing .NET apps to Cloud DevOps-Ready applications
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/28/2017
+ms.date: 10/26/2017
 ---
 # Reasons to lift and shift existing .NET apps to Cloud DevOps-Ready applications
 
@@ -38,7 +37,7 @@ The following list describes the main tenets or practices for Cloud DevOps-Ready
 
 Figure 4-2 shows the main optional pillars of a Cloud DevOps-Ready application. The more pillars you implement, the readier your application will be to succeed in meeting your customers' expectations.
 
-> ![](./media/image2.png)
+> ![Main pillars of a Cloud DevOps-ready application](./media/image2.png)
 >
 > **Figure 4-2.** Main pillars of a Cloud DevOps-ready application
 

@@ -15,9 +15,9 @@ manager: "wpickett"
 
 # What's new in accessibility in the .NET Framework
 
-The .NET Framework aims at making applications more accessibile for your users. Accessibility features allow an application to handle a range of devices and form factors seamlessly. Starting with the .NET Framework 4.7.1, the .NET Framework includes a large number of accessibility improvements that allow developers to create accessible applications. 
+The .NET Framework aims at making applications more accessibile for your users. Accessibility features allow an application to provide an appropriate experience for users of Assistive Technology. Starting with the .NET Framework 4.7.1, the .NET Framework includes a large number of accessibility improvements that allow developers to create accessible applications. 
 
-The new accessibility features are enabled by default for applications that target the .NET Framework 4.7.1 or later. In addition, applications that target an earlier version of the .NET Framework but are running on the .NET Framework 4.7.1 or later can opt out of legacy accessibility behaviors by adding the following switch to the [`<AppContextSwitchOverrides>`](~/docs/configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) element in the [`<runtime>`](~/docs/configure-apps/file-schema/runtime/index.md) section of the application's configuration file. 
+The new accessibility features are enabled by default for applications that target the .NET Framework 4.7.1 or later. In addition, applications that target an earlier version of the .NET Framework but are running on the .NET Framework 4.7.1 or later can opt out of legacy accessibility behaviors (and thereby opt in to the accessibility improvement in the .NET Framework 4.7.1) by adding the following switch to the [`<AppContextSwitchOverrides>`](~/docs/framework/configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) element in the [`<runtime>`](~/docs/framework/configure-apps/file-schema/runtime/index.md) section of the application's configuration file. 
 
 ```xml
 <runtime>
@@ -26,7 +26,7 @@ The new accessibility features are enabled by default for applications that targ
 </runtime>
 ```
 
-Similarly, applications that target versions of the .NET Framework starting with 4.7.1 can disable accessibility features adding the following switch to the [`<AppContextSwitchOverrides>`](~/docs/configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) element in the [`<runtime>`](~/docs/configure-apps/file-schema/runtime/index.md) section of the application's configuration file. 
+Similarly, applications that target versions of the .NET Framework starting with 4.7.1 can disable accessibility features by adding the following switch to the [`<AppContextSwitchOverrides>`](~/docs/framework/configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) element in the [`<runtime>`](~/docs/framework/configure-apps/file-schema/runtime/index.md) section of the application's configuration file. 
 
 ```xml
 <runtime>
@@ -39,15 +39,15 @@ Similarly, applications that target versions of the .NET Framework starting with
 
 The .NET Framework 4.7.1 includes new accessibility features in the following areas:
 
-- [Windows Presentation Foundation (WPF)](windows-presentation-foundation-wpf)
+- [Windows Presentation Foundation (WPF)](#windows-presentation-foundation-wpf)
 
-- [Windows Forms](windows-forms-accessibility-improvements)
+- [Windows Forms](#windows-forms-accessibility-improvements)
 
 ### Windows Presentation Foundation (WPF)
 
 **Screen reader improvements**
 
-If accessibility improvcements are enabled, the .NET Framework 4.7.1 includes the following enhancements that affect screen readers:
+If accessibility improvements are enabled, the .NET Framework 4.7.1 includes the following enhancements that affect screen readers:
 
 - In the .NET Framework 4.7 and earlier versions, <xref:System.Windows.Controls.Expander> controls were announced by screen readers as buttons. Starting with the .NET Framework 4.7.1, they are correctly announced as expandable/collapsible groups.
 
@@ -55,7 +55,7 @@ If accessibility improvcements are enabled, the .NET Framework 4.7.1 includes th
  
 - Starting with the .NET Framework 4.7.1, screen readers announce the name of an editable <xref:System.Windows.Controls.ComboBox>.
 
-- In the .NET Framework 4.7 and earlier versions, <xref:System.Windows.Controls.PasswordBoxe> controls were announced as “no item in view” or had otherwise incorrect behavior. This issue is fixed starting with the .NET Framework 4.7.1.     
+- In the .NET Framework 4.7 and earlier versions, <xref:System.Windows.Controls.PasswordBox> controls were announced as “no item in view” or had otherwise incorrect behavior. This issue is fixed starting with the .NET Framework 4.7.1.     
 
 **UIAutomation LiveRegion support**
 
@@ -67,11 +67,11 @@ To support live regions, the following APIs have been added to WPF:
 
 - The **AutomationProperties.LiveSetting** attached property, which informs the screen reader of the importance of the UI change to the user.
 
-- The <xref:System.Windows.Automation.AutomationProperties.LiveSettingProperty%2A?displayProperty=nameWithType> property, which identifies the **AutomationProperties.LiveSetting** attached property.
+- The <xref:System.Windows.Automation.AutomationProperties.LiveSettingProperty?displayProperty=nameWithType> property, which identifies the **AutomationProperties.LiveSetting** attached property.
  
-- The <xref:System.Windows.Automation.Peers.AutomationPeer.GetLiveSetting%2A?displayProperty=nameWithType> method, which can be overridden to provide a **LiveSetting** value.
+- The <xref:System.Windows.Automation.Peers.AutomationPeer.GetLiveSettingCore%2A?displayProperty=nameWithType> method, which can be overridden to provide a **LiveSetting** value.
 
-- The <xref:System.Windows.Automation.Peers.AutomationPeer.GetLiveSetting%2A?displayProperty=nameWithType> and  <xref:System.Windows.Automation.Peers.AutomationPeer.SetLiveSetting%2A?displayProperty=nameWithType> methods, which get and set a **LiveSetting** value.
+- The <xref:System.Windows.Automation.AutomationProperties.GetLiveSetting%2A?displayProperty=nameWithType> and <xref:System.Windows.Automation.AutomationProperties.SetLiveSetting%2A?displayProperty=nameWithType> methods, which get and set a **LiveSetting** value.
  
 - The <xref:System.Windows.Automation.AutomationLiveSetting?displayProperty=nameWithType> enumeration, which defines the following possible **LiveSetting** values:
 
@@ -150,7 +150,7 @@ Starting with the .NET Framework 4.7.1, improvements in high conrast have been m
 
     ![Button theme colors after accessibility improvements](media/button-themes-after.png) 
 
-    Finally, in the .NET Framework 4.7 and earlier versions, setting a <xref:System.Windows.Controls.ComboBox> control’s style to <xref:System.Windows.Controls.Toolbar.ComboBoxStyleKey?displayProperty=nameWithType> caused the dropdown arrow to be invisible. This issue is fixed starting with the .NET Framework 4.7.1. For example:
+    Finally, in the .NET Framework 4.7 and earlier versions, setting a <xref:System.Windows.Controls.ComboBox> control’s style to `Toolbar.ComboBoxStyleKey` caused the drop-down arrow to be invisible. This issue is fixed starting with the .NET Framework 4.7.1. For example:
 
     Before: 
 
@@ -182,7 +182,7 @@ Starting with the .NET Framework 4.7.1, improvements in high conrast have been m
   
     ![DataGrid default link style after accessibility improvements](media/default-link-style-after.png)  
 
-For more information on WPF accessibility improvements in the .NET Framework 4.7.1, see [Accessibility improvements in WPF](../framework/migration-guide/retargeting/4.7-4.7.1.md#accessibility-improvements-in-wpf).
+For more information on WPF accessibility improvements in the .NET Framework 4.7.1, see [Accessibility improvements in WPF](../migration-guide/retargeting/4.7-4.7.1.md#accessibility-improvements-in-wpf).
 
 ## Windows Forms accessibility improvements
 
@@ -213,9 +213,8 @@ Some examples of high contrast changes include:
     After:
 
     ![Disabled text after accessibility improvements](media/wf-disabled-after.png) 
-- High contrast improvements in the Thread Exception Dialog.
 
-- Better multi-monitor DPI awareness in control anchoring and scaling.
+- High contrast improvements in the Thread Exception Dialog.
 
 **Improved Narrator support**
 
@@ -223,23 +222,23 @@ Windows Forms in the .NET Framework 4.7.1 includes the following accessibility i
 
 - The <xref:System.Windows.Forms.MonthCalendar> control can be accessed by the Narrator, as well as by other UI automation tools.
 
-- The <xref:System.Windows.Forms.CheckedListBox> control notifies Narrator when the <xref:System.Windows.Forms.CheckedListBox.CheckedState> property has changed so the user is notified that they’ve changed the value of a list item.
+- The <xref:System.Windows.Forms.CheckedListBox> control notifies Narrator when an item's check state has changed so the user is notified that they’ve changed the value of a list item.
  
 - The <xref:System.Windows.Forms.DataGridViewCell> control reports the correct read-only status to Narrator.
  
 - Narrator can now read disabled <xref:System.Windows.Forms.ToolStripMenuItem> text, whereas previously it would skip over disabled menu items.
 
-**Enhanced UI accessibility patterns**
+**Enhanced support for UIAutomation accessibility patterns**
 
-Starting with the .NET Framework 4.7.1, developers of accessibility technology tools can leverage common api accessibility patterns and properties for several WinForms controls. These accessibility improvements include:
+Starting with the .NET Framework 4.7.1, developers of accessibility technology tools can leverage common API accessibility patterns and properties for several WinForms controls. These accessibility improvements include:
 
-- The <xref:System.Windows.Forms.ComboBox> and <xref:System.Windows.Forms.ToolStripSplitButton> now support the [expand/collapse pattern](../ui-automation/implementing-the-ui-automation-expandcollapse-control-patttern.md).
+- The <xref:System.Windows.Forms.ComboBox> and <xref:System.Windows.Forms.ToolStripSplitButton> now support the [expand/collapse pattern](../ui-automation/implementing-the-ui-automation-expandcollapse-control-pattern.md).
  
-- The <xref:System.Windows.Forms.DatagridviewcheckBoxCell> now supports the [toggle pattern](../ui-automation/implementing-the-ui-automation-toggle-control-patttern.md).
+- The <xref:System.Windows.Forms.DataGridViewCheckBoxCell> now supports the [toggle pattern](../ui-automation/implementing-the-ui-automation-toggle-control-pattern.md).
  
-- The <xref:System.Windows.Forms.ToolStripItem> control supports the <xref:System.Windows.Automation.automationElement.Name> property and the [expand/collapse pattern](../ui-automation/implementing-the-ui-automation-expandcollapse-control-patttern.md).
+- The <xref:System.Windows.Forms.ToolStripItem> control supports the <xref:System.Windows.Automation.AutomationElement.Name> property and the [expand/collapse pattern](../ui-automation/implementing-the-ui-automation-expandcollapse-control-pattern.md).
 
-- The <xref:System.Windows.Forms.NumericUpDown> and <xref:System.Windodws.Forms.DomainUpDown> controls support the <xref:System.Windows.Automation.automationElement.Name> property.
+- The <xref:System.Windows.Forms.NumericUpDown> and <xref:System.Windows.Forms.DomainUpDown> controls support the <xref:System.Windows.Automation.automationElement.Name> property.
 
 **Improved property browser experience**
 

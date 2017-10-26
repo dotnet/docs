@@ -11,19 +11,17 @@ ms.prod: .net-framework
 ms.devlang: dotnet
 ---
 
-# Install the .NET Framework on Windows 8.1
+# Install the .NET Framework on Windows 8.1 and Windows Server 2012 R2
 
 The .NET Framework is required to run many applications on Windows. You can use the following instructions to install it. You may have arrived on this page after trying to run an application and seeing the following dialog on your machine.
 
 ![This application could not be started](./media/this-application-could-not-be-started.png)
 
-These instructions will help you install the .NET Framework versions you need. The latest version is often your best choice. The latest version is the .NET Framework 4.7.1.
+These instructions will help you install the .NET Framework versions you need. The [.NET Framework 4.7.1](https://www.microsoft.com/net/framework/versions/net471?utm_source=ms-docs&utm_medium=referral) is the latest version. It is supported on Windows 8.1 and Windows Server 2012 R2 and is included with the [Windows 10 Fall Creators Update](https://www.microsoft.com/software-download/windows10) and [Windows Server 2016 Version 1709](https://docs.microsoft.com/windows-server/get-started/get-started-with-1709).
 
 ## .NET Framework 4.7.1
 
 * [Download the .NET Framework 4.7.1](https://www.microsoft.com/net/framework/versions/net471?utm_source=ms-docs&utm_medium=referral)
-
-The [.NET Framework 4.7.1](https://www.microsoft.com/net/framework/versions/net471?utm_source=ms-docs&utm_medium=referral) is included with the [Windows 10 Fall Creators Update](https://www.microsoft.com/software-download/windows10) and [Windows Server 2016 Version 1709](https://docs.microsoft.com/windows-server/get-started/get-started-with-1709).
 
 The [.NET Framework 4.7.1](https://www.microsoft.com/net/framework/versions/net471?utm_source=ms-docs&utm_medium=referral) can be used to run applications built for [.NET Framework 4.0 or later](https://www.microsoft.com/net/download/framework).
 
@@ -39,5 +37,5 @@ You can [contact Microsoft for help](mailto:dotnet-install-help@service.microsof
 
 ## See also
 
-[Troubleshoot blocked .NET Framework installations and uninstallations](troubleshoot-blocked-installations-and-uninstallations.md)
+[Troubleshoot blocked .NET Framework installations and uninstallations](troubleshoot-blocked-installations-and-uninstallations.md)   
 [Install the .NET Framework for developers](guide-for-developers.md).

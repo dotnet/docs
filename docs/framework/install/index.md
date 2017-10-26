@@ -12,17 +12,19 @@ ms.devlang: dotnet
 
 # Installation guide
 
+You can install .NET Framework on the various Windows versions.
+
 ## Supported Windows versions
 
-- [Windows 10 or Windows Server 2016](on-windows-10.md)
-- [Windows 8.1 or Windows Server 2012](on-windows-8-1.md)
-- [Windows 8 or Windows Server 2012](on-windows-8.md)
-- [Windows 7 or Windows Server 2008](on-windows-7.md)
-- [Windows Vista or Windows Server 2003](on-windows-vista.md)
+- [Windows 10 and Windows Server 2016](on-windows-10.md)
+- [Windows 8.1 and Windows Server 2012 R2](on-windows-8-1.md)
+- [Windows 8 and Windows Server 2012](on-windows-8.md)
+- [Windows 7 and Windows Server 2008 R2](on-windows-7.md)
 
 ## Unsupported Windows versions
 
-- [Windows XP](on-windows-xp.md)
+- [Windows Vista and Windows Server 2008](on-windows-vista.md)
+- [Windows XP and Windows Server 2003](on-windows-xp.md)
 
 ## See also
 

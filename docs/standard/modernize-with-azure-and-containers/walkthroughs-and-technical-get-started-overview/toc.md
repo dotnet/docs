@@ -1,7 +1,0 @@
-# [walkthroughs and technical get started overview](index.md)
-## [Technical walkthrough list](technical-walkthrough-list.md)
-## [Walkthrough 1: Tour of eShop legacy apps](walkthrough-1-tour-of-eshop-legacy-apps.md)
-## [Walkthrough 2: Containerize your existing .NET applications with Windows Containers](walkthrough-2-containerize-your-existing-.net-applications-with-windows-containers.md)
-## [Walkthrough 3: Deploy your Windows Containers-based app to Azure VMs](walkthrough-3-deploy-your-windows-containers-based-app-to-azure-vms.md)
-## [Walkthrough 4: Deploy your Windows Containers-based apps to Kubernetes in Azure Container Service](walkthrough-4-deploy-your-windows-containers-based-apps-to-kubernetes-in-azure-container-service.md)
-## [Walkthrough 5: Deploy your Windows Containers-based apps to Azure Service Fabric](walkthrough-5-deploy-your-windows-containers-based-apps-to-azure-service-fabric.md)

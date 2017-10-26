@@ -5,11 +5,13 @@ keywords: .NET, .NET Core, Docker, Tutorial
 author: jralexander
 ms.author: johalex
 ms.date: 10/11/2017
-ms.topic: article
+ms.topic: quickstart
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.devlang: dotnet
 ms.assetid: 03c28597-7e73-46d6-a9c3-f9cb55642739
+ms.custom: mvc
+manager: wpickett
 ---
 
 # Learn Docker Basics with .NET Core
@@ -34,6 +36,8 @@ You can build both Windows and Linux containers with [multi-arch based tags](htt
 ## Your first .NET Core Docker app
 
 ### Prerequisites
+
+To complete this tutorial:
 
 #### .NET Core 2.0 SDK
 

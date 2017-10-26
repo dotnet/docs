@@ -172,7 +172,7 @@ macOS RIDs use the older "OSX" branding.
 - `osx.10.12-x64` (.NET Core 1.1 or later versions)
 - `osx.10.13-x64`
 
-See [Prerequisites for .NET Core on MacOS](macos-prerequisites.md) for more information.
+See [Prerequisites for .NET Core on macOS](macos-prerequisites.md) for more information.
 
 ## Android RIDs (.NET Core 2.0 or later versions)
 

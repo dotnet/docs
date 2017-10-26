@@ -25,7 +25,7 @@ These instructions will help you install the .NET Framework versions you need. T
 
 The .NET Framework 4.7.1 is supported on Windows Server 2012. It is not supported on Windows 8.
 
-The [.NET Framework 4.7.1](https://www.microsoft.com/net/framework/versions/net471?utm_source=ms-docs&utm_medium=referral) can be used to run applications built for [.NET Framework 4.0 or later](https://www.microsoft.com/net/download/framework).
+The [.NET Framework 4.7.1](https://www.microsoft.com/net/framework/versions/net471?utm_source=ms-docs&utm_medium=referral) can be used to run applications built for .NET Framework 4.0 or later.
 
 ## .NET Framework 4.6
 
@@ -45,5 +45,6 @@ You can [contact Microsoft for help](mailto:dotnet-install-help@service.microsof
 
 ## See also
 
+[Download the .NET Framework](https://www.microsoft.com/net/download/framework?utm_source=ms-docs&utm_medium=referral)   
 [Troubleshoot blocked .NET Framework installations and uninstallations](troubleshoot-blocked-installations-and-uninstallations.md)   
-[Install the .NET Framework for developers](guide-for-developers.md).
+[Install the .NET Framework for developers](guide-for-developers.md)

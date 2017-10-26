@@ -15,7 +15,7 @@ The .NET Framework is required to run many applications on Windows. You can use 
 
 ![This application could not be started](./media/this-application-could-not-be-started.png)
 
-These instructions will help you install the .NET Framework versions you need. The [.NET Framework 4.7.1](https://www.microsoft.com/net/framework/versions/net471?utm_source=ms-docs&utm_medium=referral) is the latest version.
+These instructions will help you install the .NET Framework versions you need. The [.NET Framework 4.7.1](https://www.microsoft.com/en-us/download/details.aspx?id=56115&desc=dotnet47) is the latest version.
 
 ## .NET Framework 4.7.1
 
@@ -24,9 +24,9 @@ These instructions will help you install the .NET Framework versions you need. T
 The .NET Framework 4.7.1 is included with:
 
 * [Windows 10 Fall Creators Update](https://www.microsoft.com/software-download/windows10)
-* [Windows Server 2016 Version 1709](https://docs.microsoft.com/windows-server/get-started/get-started-with-1709).
+* [Windows Server 2016 Version 1709](https://docs.microsoft.com/windows-server/get-started/get-started-with-1709)
 
-You can install the [.NET Framework 4.7.1](https://www.microsoft.com/net/framework/versions/net471?utm_source=ms-docs&utm_medium=referral) on:
+You can install the [.NET Framework 4.7.1](https://www.microsoft.com/en-us/download/details.aspx?id=56115&desc=dotnet47) on:
 
 * Windows 10 Creators Update (Version 1703)
 * Windows 10 Anniversary Update (Version 1607)
@@ -39,7 +39,7 @@ The .NET Framework 4.7.1 is not supported on:
 
 You need to upgrade to a later Windows 10 version if you are using Windows 10 1507 or 1511 if you want to install the .NET Framework 4.7.1.
 
-The [.NET Framework 4.7.1](https://www.microsoft.com/net/framework/versions/net471?utm_source=ms-docs&utm_medium=referral) can be used to run applications built for .NET Framework 4.0 or later.
+The [.NET Framework 4.7.1](https://www.microsoft.com/en-us/download/details.aspx?id=56115&desc=dotnet47) can be used to run applications built for .NET Framework 4.0 or later.
 
 ## .NET Framework 4.6.1
 

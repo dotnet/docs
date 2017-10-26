@@ -12,7 +12,7 @@ ms.devlang: dotnet
 
 # Installation guide
 
-You can install .NET Framework on the various Windows versions.
+You can install .NET Framework on various Windows versions.
 
 ## Supported Windows versions
 

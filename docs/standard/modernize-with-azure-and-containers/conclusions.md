@@ -1,13 +1,11 @@
 ---
-title: Key takeaways | Microsoft Docs 
-description: .NET Microservices Architecture for Containerized .NET Applications | Key takeaways
-keywords: Docker, Microservices, ASP.NET, Container
+title: Conclusions
+description: Modernize Existing .NET Applications With Azure Cloud and Windows Containers | conclusions
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/28/2017
+ms.date: 10/26/2017
 ---
-
-# Key takeaways
+# Conclusions
 
 -   Container-based solutions ultimately provide cost savings benefits. Containers are a solution to deployment problems because they remove the friction caused by lack of dependencies in production environments. Removing those issues, it improves Dev/Test, DevOps and production operations significantly.
 
@@ -25,4 +23,4 @@ ms.date: 09/28/2017
 
 -   Microsoft Azure provides the most comprehensive and complete environment to modernize your existing .NET Framework applications with Windows Containers, cloud infrastructure and PaaS services.
 
-> [Previous] (index.md)
+> [Previous](walkthroughs-technical-get-started-overview.md)  

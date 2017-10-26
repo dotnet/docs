@@ -3,4 +3,4 @@
 ## [Migrate your relational databases to azure](migrate-your-relational-databases-to-azure.md)
 ## [lift and shift existing apps devops](lift-and-shift-existing-apps-devops/)
 ## [walkthroughs and technical get started overview](walkthroughs-technical-get-started-overview.md)
-## [conclusions](conclusions/)
+## [conclusions](conclusions.md)

@@ -1,0 +1,7 @@
+# [Front matter](front-matter/)
+# [introduction](introduction/)
+# [lift and shift existing apps azure iaas](lift-and-shift-existing-apps-azure-iaas/)
+# [migrate your relational databases to azure](migrate-your-relational-databases-to-azure/)
+# [lift and shift existing apps devops](lift-and-shift-existing-apps-devops/)
+# [walkthroughs and technical get started overview](walkthroughs-and-technical-get-started-overview/)
+# [conclusions](conclusions/)

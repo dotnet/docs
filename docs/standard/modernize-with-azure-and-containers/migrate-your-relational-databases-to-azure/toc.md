@@ -1,0 +1,6 @@
+# [migrate your relational databases to azure](index.md)
+## [When to migrate to Azure SQL Database Managed Instance](when-to-migrate-to-azure-sql-database-managed-instance.md)
+## [When to migrate to Azure SQL Database ](when-to-migrate-to-azure-sql-database.md)
+## [When to move your original RDBMS to a VM (IaaS)](when-to-move-your-original-rdbms-to-a-vm-iaas.md)
+## [When to migrate to SQL Server as a VM (IaaS)](when-to-migrate-to-sql-server-as-a-vm-iaas.md)
+## [Use Azure Database Migration Service to migrate your relational databases to Azure ](use-azure-database-migration-service-to-migrate-your-relational-databases-to-azure.md)

@@ -1,0 +1,5 @@
+# [lift and shift existing apps azure iaas](index.md)
+## [Why migrate existing .NET web applications to Azure IaaS ](why-migrate-existing-.net-web-applications-to-azure-iaas.md)
+## [When to migrate to IaaS instead of to PaaS](when-to-migrate-to-iaas-instead-of-to-paas.md)
+## [Use Azure Migrate to analyze and migrate your existing applications to Azure](use-azure-migrate-to-analyze-and-migrate-your-existing-applications-to-azure.md)
+## [Use Azure Site Recovery to migrate your existing VMs to Azure VMs](use-azure-site-recovery-to-migrate-your-existing-vms-to-azure-vms.md)

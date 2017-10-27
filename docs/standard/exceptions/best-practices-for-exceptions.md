@@ -130,7 +130,7 @@ It is common for a class to throw the same exception from different places in it
 [!code-csharp[Conceptual.Exception.Handling#6](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.exception.handling/cs/source.cs#6)]
 [!code-vb[Conceptual.Exception.Handling#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.exception.handling/vb/source.vb#6)]  
   
-In some cases, it's more appropriate to use the exception's constructor to build the exception. An example is a global exception class such as <xref:System.ArgumentException>, 
+In some cases, it's more appropriate to use the exception's constructor to build the exception. An example is a global exception class such as <xref:System.ArgumentException>.
 
 ## Clean up intermediate results when throwing an exception
 
@@ -158,7 +158,7 @@ private static void TransferFunds(Account from, Account to, decimal amount)
     catch
     {
         from.RollbackTransaction(withdrawalTrxID);
-        throw
+        throw;
     }
 }
 ```

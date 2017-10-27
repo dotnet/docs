@@ -14,11 +14,10 @@ Identifies a string literal as an [interpolated string](../interpolated-strings.
 
 The following example uses the `$` character to define an interpolated string.
 
-[!CODE-vb[interpolated-string-symbol](../../../../samples/snippets/visualbasic/language-reference/keywords/dollar-sign1.vb)]
+[!CODE-vb[interpolated-string-symbol](../../../../samples/snippets/visualbasic/language-reference/special-characters/dollar-sign1.vb)]
 
-For more information on interpolated strings, see the [Interpolated Strings](../interpolated-strings.md) topic.
+For more information on interpolated strings, see the [Interpolated Strings](../../programming-guide/language-features/strings/interpolated-strings.md) topic.
 
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [C# Special Characters](../../../csharp/language-reference/tokens/index.md)
+ [Visual Basic Reference](../index.md)   
+ [Visual Basic Special Characters](index.md)

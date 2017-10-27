@@ -5,14 +5,14 @@ ms.prod: .net
 ms.technology: 
   - "devlang-visual-basic"
 ms.topic: "article"
-author: rpetrushar"
+author: rpetrusha"
 ms.author: "ronpet"
 ---
 # Interpolated Strings (Visual Basic Reference)
 
 Used to construct strings.  An interpolated string looks like a template string that contains *interpolated expressions*.  An interpolated string returns a string that replaces the interpolated expressions that it contains with their string representations. This feature is available in Visual Basic 14 and later versions.
 
-The arguments of an interpolated string are easier to understand than a [composite format string](../../../standard/base-types/composite-formatting.md#composite-format-string).  For example, the interpolated string  
+The arguments of an interpolated string are easier to understand than a [composite format string](../../../../standard/base-types/composite-formatting.md#composite-format-string).  For example, the interpolated string  
   
 ```vb  
 Console.WriteLine($"Name = {name}, hours = {hours:hh}")
@@ -36,7 +36,7 @@ where:
 - *format-string* is a format string appropriate for the type of object being formatted. For example, for a <xref:System.DateTime> value, it could be a [standard date and time format string](~/docs/standard/base-types/standard-date-and-time-format-strings.md) such as "D" or "d".
 
 > [!IMPORTANT]
-> You cannot have any whitespace between the `$` and the `"` that starts the string. Doing so causes a compile time error.
+> You cannot have any whitespace between the `$` and the `"` that starts the string. Doing so causes a compiler error.
 
  You can use an interpolated string anywhere you can use a string literal.  The interpolated string is evaluated each time the code with the interpolated string executes. This allows you to separate the definition and evaluation of an interpolated string.  
   
@@ -44,7 +44,7 @@ where:
 
 If the interpolated string contains other characters with special meaning in an interpolated string, such as the quotation mark ("), colon (:), or comma (,), they should be escaped if they occur in literal text, or they should be included in an expression delimited by parentheses if they are language elements included in an interpolated expression. The following example escapes quotation marks to include them in the result string, and it uses parentheses to delimit the expression `(age == 1 ? "" : "s")` so that the colon is not interpreted as beginning a format string.
 
-[!code-vb[interpolated-strings](../../../samples/snippets/visualbasic/language-reference/keywords/interpolated-strings4.vb)]  
+[!code-vb[interpolated-strings](../../../../../samples/snippets/visualbasic/programming-guide/language-features/strings/interpolated-strings4.vb)]  
 
 ## Implicit Conversions  
 
@@ -52,7 +52,7 @@ There are three implicit type conversions from an interpolated string:
 
 1. Conversion of an interpolated string to a <xref:System.String>. The following example returns a string whose interpolated string expressions have been replaced with their string representations. For example:
 
-   [!code-vb[interpolated-strings1](../../../samples/snippets/visualbasic/language-reference/keywords/interpolated-strings1.vb)]  
+   [!code-vb[interpolated-strings1](../../../../../samples/snippets/visualbasic/programming-guide/language-features/strings/interpolated-strings1.vb)]  
 
    This is the final result of a string interpretation. All occurrences of double curly braces ("{{" and "}}") are converted to a single curly brace. 
 
@@ -60,7 +60,7 @@ There are three implicit type conversions from an interpolated string:
 
    The following example uses reflection to display the members as well as the field and property values of an <xref:System.IFormattable> variable that is created from an interpolated string. It also passes the <xref:System.IFormattable> variable to the <xref:System.Console.WriteLine(System.String)?displayProperty=nameWithType> method.
 
-   [!code-vb[interpolated-strings2](../../../samples/snippets/visualbasic/language-reference/keywords/interpolated-strings2.vb)]  
+   [!code-vb[interpolated-strings2](../../../../../samples/snippets/visualbasic/programming-guide/language-features/strings/interpolated-strings2.vb)]  
 
    Note that the interpolated string can be inspected only by using reflection. If it is passed to a string formatting method, such as <xref:System.Console.WriteLine(System.String)>, its format items are resolved and the result string returned. 
 
@@ -74,7 +74,7 @@ There are three implicit type conversions from an interpolated string:
   
     All occurrences of double curly braces ("{{" and "}}") remain as double curly braces until you format.  All contained interpolation expressions are converted to {0}, {1}, and so on.  
 
-   [!code-vb[interpolated-strings3](../../../samples/snippets/visualbasic/language-reference/keywords/interpolated-strings3.vb)]  
+   [!code-vb[interpolated-strings3](../../../../../samples/snippets/visualbasic/programming-guide/language-features/strings/interpolated-strings3.vb)]  
 
 ## See Also  
 f <xref:System.IFormattable?displayProperty=nameWithType>   

@@ -13,9 +13,10 @@ ms.assetid: 368d1752-3659-489a-97b4-f15d87e49ae3
 ---
 # Local functions compared to lambda expressions
 
-At first glance, [local functions](programming-guide/classes-and-structs/local-functions.md) and [lambda expressions](lambda-expressions.md) are very similar.
-Depending on your needs, local functions may be a much better and simpler
-solution.
+At first glance, [local functions](programming-guide/classes-and-structs/local-functions.md) and [lambda expressions](lambda-expressions.md) are very similar. In many cases, the choice between using
+lambda expressions and local functions is a matter of style and personal
+preference. However, there are real differences in where you can use one or
+the other that you should be aware of.
 
 Let's examine the differences between the local function and lambda expression
 implementations of the factorial algorithm. First the version using a local function:
@@ -26,8 +27,12 @@ Contrast that implementation with a version that uses lambda expressions:
 
 [!code-csharp[26_LambdaFactorial](../../samples/snippets/csharp/new-in-7/MathUtilities.cs#38_LambdaFactorial "Recursive factorial using lambda expressions")]
 
-First, lambda expressions are implemented by instantiating a delegate
-and invoking that delegate. Local functions are implemented as method calls.
+The local functions have names. The lambda expressions are anonymous methods
+that are assigned to variables that are `Func` or `Action` types. This may
+result in more readable code. Note that the argument types and return type
+are part of the function declaration, not part of the variable declaration.
+Those two difference may result in more clear code.
+
 The instantiation necessary for lambda expressions means extra memory
 allocations, which may be a performance factor in time critical code paths.
 Local functions do not incur this overhead. In the example above, the local

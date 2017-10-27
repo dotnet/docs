@@ -24,109 +24,102 @@ Endpoints are defined by specifying an address, a binding, and a contract. Other
 ## Application Endpoints  
  Application developers can define their own standard endpoints which specify default values for the address, binding, or contract. You define a standard endpoint by deriving a class from <xref:System.ServiceModel.Description.ServiceEndpoint> and setting the appropriate endpoint properties. You can provide default values for properties that can be changed. Some other properties will have static values that cannot change. The following example shows how to implement a standard endpoint.  
   
-```  
-public class CustomEndpoint : ServiceEndpoint  
-    {  
-        public CustomEndpoint()  
-            : this(string.Empty)  
-        {  
-        }  
-  
-        public CustomEndpoint(string address)  
-            : this(address, ContractDescription.GetContract(typeof(ICalculator)))  
-        {  
-        }  
-  
-        // Create the custom endpoint with a fixed binding  
-        public CustomEndpoint(string address, ContractDescription contract)  
-            : base(contract)  
-        {  
-            this.Binding = new BasicHttpBinding();  
-            this.IsSystemEndpoint = false;  
-        }  
-  
-        // Definition of the additional property of this endpoint  
-        public bool Property  
-        {  
-            get;  
-            set;  
-        }  
-    }  
-```  
+```csharp
+public class CustomEndpoint : ServiceEndpoint
+{
+    public CustomEndpoint()
+        : this(string.Empty)
+    { }  
+    
+    public CustomEndpoint(string address)
+        : this(address, ContractDescription.GetContract(typeof(ICalculator)))
+    { }  
+    
+    // Create the custom endpoint with a fixed binding
+    public CustomEndpoint(string address, ContractDescription contract)
+        : base(contract)
+    {
+        this.Binding = new BasicHttpBinding();
+        this.IsSystemEndpoint = false;
+    }
+    
+    // Definition of the additional property of this endpoint
+    public bool Property { get; set; }
+}
+```
   
  To use a user-defined custom endpoint in a configuration file you must derive a class from <xref:System.ServiceModel.Configuration.StandardEndpointElement>, derive a class from <xref:System.ServiceModel.Configuration.StandardEndpointCollectionElement%602>, and register the new standard endpoint in the extensions section in app.config or machine.config.  The <xref:System.ServiceModel.Configuration.StandardEndpointElement> provides configuration support for the standard endpoint, as shown in the following example.  
   
-```  
-public class CustomEndpointElement : StandardEndpointElement  
-    {  
-        // Definition of the additional property for the standard endpoint element  
-        public bool Property  
-        {  
-            get { return (bool)base["property"]; }  
-            set { base["property"] = value; }  
-        }  
-  
-        // The additional property needs to be added to the properties of the standard endpoint element  
-        protected override ConfigurationPropertyCollection Properties  
-        {  
-            get  
-            {  
-                ConfigurationPropertyCollection properties = base.Properties;  
-                properties.Add(new ConfigurationProperty("property", typeof(bool), false, ConfigurationPropertyOptions.None));  
-                return properties;  
-            }  
-        }  
-  
-        // Return the type of this standard endpoint  
-        protected override Type EndpointType  
-        {  
-            get { return typeof(CustomEndpoint); }  
-        }  
-  
-        // Create the custom service endpoint  
-        protected override ServiceEndpoint CreateServiceEndpoint(ContractDescription contract)  
-        {  
-            return new CustomEndpoint();  
-        }  
-  
-        // Read the value given to the property in config and save it  
-        protected override void OnApplyConfiguration(ServiceEndpoint endpoint, ServiceEndpointElement serviceEndpointElement)  
-        {  
-            CustomEndpoint customEndpoint = (CustomEndpoint)endpoint;  
-            customEndpoint.Property = this.Property;  
-        }  
-  
-        // Read the value given to the property in config and save it  
-        protected override void OnApplyConfiguration(ServiceEndpoint endpoint, ChannelEndpointElement channelEndpointElement)  
-        {  
-            CustomEndpoint customEndpoint = (CustomEndpoint)endpoint;  
-            customEndpoint.Property = this.Property;  
-        }  
-  
-        // No validation in this sample  
-        protected override void OnInitializeAndValidate(ServiceEndpointElement serviceEndpointElement)  
-        {  
-        }  
-  
-        // No validation in this sample  
-        protected override void OnInitializeAndValidate(ChannelEndpointElement channelEndpointElement)  
-        {  
-        }  
-    }  
+```csharp
+public class CustomEndpointElement : StandardEndpointElement
+{
+    // Definition of the additional property for the standard endpoint element
+    public bool Property
+    {
+        get { return (bool)base["property"]; }
+        set { base["property"] = value; }
+    }
+
+    // The additional property needs to be added to the properties of the standard endpoint element
+    protected override ConfigurationPropertyCollection Properties
+    {
+        get
+        {
+            ConfigurationPropertyCollection properties = base.Properties;
+            properties.Add(new ConfigurationProperty("property", typeof(bool), false, ConfigurationPropertyOptions.None));
+            return properties;
+        }
+    }
+
+    // Return the type of this standard endpoint
+    protected override Type EndpointType
+    {
+        get { return typeof(CustomEndpoint); }
+    }
+
+    // Create the custom service endpoint
+    protected override ServiceEndpoint CreateServiceEndpoint(ContractDescription contract)
+    {
+        return new CustomEndpoint();
+    }
+
+    // Read the value given to the property in config and save it
+    protected override void OnApplyConfiguration(ServiceEndpoint endpoint, ServiceEndpointElement serviceEndpointElement)
+    {
+        CustomEndpoint customEndpoint = (CustomEndpoint)endpoint;
+        customEndpoint.Property = this.Property;
+    }
+
+    // Read the value given to the property in config and save it
+    protected override void OnApplyConfiguration(ServiceEndpoint endpoint, ChannelEndpointElement channelEndpointElement)
+    {
+        CustomEndpoint customEndpoint = (CustomEndpoint)endpoint;
+        customEndpoint.Property = this.Property;
+    }
+
+    // No validation in this sample
+    protected override void OnInitializeAndValidate(ServiceEndpointElement serviceEndpointElement)
+    {
+    }
+
+    // No validation in this sample
+    protected override void OnInitializeAndValidate(ChannelEndpointElement channelEndpointElement)
+    {
+    }
+}
 ```  
   
  The <xref:System.ServiceModel.Configuration.StandardEndpointCollectionElement%602> provides the backing type for the collection that appears under the <`standardEndpoints`> section in the configuration for the standard endpoint.  The following example shows how to implement this class.  
   
-```  
-public class CustomEndpointCollectionElement : StandardEndpointCollectionElement<CustomEndpoint, CustomEndpointElement>  
-    {  
-         // ...  
-  
-    }  
-```  
-  
- The following example shows how to register a standard endpoint in the extensions section.  
-  
+```csharp
+public class CustomEndpointCollectionElement : StandardEndpointCollectionElement<CustomEndpoint, CustomEndpointElement>
+{
+    // ...
+}
+```
+
+The following example shows how to register a standard endpoint in the extensions section.
+
 ```xml  
 <extensions>  
       <standardEndpointExtensions>  
@@ -153,9 +146,9 @@ serviceHost.AddServiceEndpoint(new CustomEndpoint());
 </services>  
 <standardEndpoints>    
   <udpDiscoveryEndpoint>  
-     <standardEndpoint multicastAddress="soap.udp://239.255.255.250:3702" />   
-  </udpDiscoveryEndpoint>  
-</ standardEndpoints >  
+     <standardEndpoint multicastAddress="soap.udp://239.255.255.250:3702" />
+  </udpDiscoveryEndpoint>
+</standardEndpoints>
 ```  
   
  The type of standard endpoint is specified using the kind attribute in the <`endpoint`> element. The endpoint is configured within the <`standardEndpoints`> element. In the example above, a <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint> endpoint is added and configured. The <`udpDiscoveryEndpoint`> element contains a <`standardEndpoint`> that sets the <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint.MulticastAddress%2A> property of the <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint>.  

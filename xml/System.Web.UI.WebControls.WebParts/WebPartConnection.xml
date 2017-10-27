@@ -92,6 +92,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.ConnectionPoint" />
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.ProviderConnectionPoint" />
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint" />
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" />
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.ConnectionsZone" />
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" />
+    <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectWebParts(System.Web.UI.WebControls.WebParts.WebPart,System.Web.UI.WebControls.WebParts.ProviderConnectionPoint,System.Web.UI.WebControls.WebParts.WebPart,System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -121,6 +128,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectWebParts(System.Web.UI.WebControls.WebParts.WebPart,System.Web.UI.WebControls.WebParts.ProviderConnectionPoint,System.Web.UI.WebControls.WebParts.WebPart,System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint)" />
       </Docs>
     </Member>
     <Member MemberName="Consumer">
@@ -187,6 +195,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The length of the <see cref="P:System.Web.UI.WebControls.WebParts.WebPartConnection.ConsumerID" /> property is zero.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartConnection.Provider" />
       </Docs>
     </Member>
     <Member MemberName="ConsumerConnectionPoint">
@@ -254,6 +264,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute" />
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint" />
       </Docs>
     </Member>
     <Member MemberName="ConsumerConnectionPointID">
@@ -321,6 +333,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionPoint.ID" />
       </Docs>
     </Member>
     <Member MemberName="ConsumerID">
@@ -383,6 +397,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartConnection.Consumer" />
       </Docs>
     </Member>
     <Member MemberName="ID">
@@ -512,6 +527,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.IsStatic" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.ActivateConnections" />
+        <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectionsActivated" />
+        <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectionsActivating" />
       </Docs>
     </Member>
     <Member MemberName="IsShared">
@@ -600,6 +619,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.IsShared" />
       </Docs>
     </Member>
     <Member MemberName="IsStatic">
@@ -664,6 +684,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.StaticConnections" />
       </Docs>
     </Member>
     <Member MemberName="Provider">
@@ -725,6 +746,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The length of the <see cref="P:System.Web.UI.WebControls.WebParts.WebPartConnection.ProviderID" /> property value is zero.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartConnection.Consumer" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartConnection.ProviderID" />
       </Docs>
     </Member>
     <Member MemberName="ProviderConnectionPoint">
@@ -792,6 +815,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.ConnectionProviderAttribute" />
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.ProviderConnectionPoint" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.GetProviderConnectionPoints(System.Web.UI.WebControls.WebParts.WebPart)" />
       </Docs>
     </Member>
     <Member MemberName="ProviderConnectionPointID">
@@ -859,6 +885,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.ProviderConnectionPoint" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionPoint.ID" />
       </Docs>
     </Member>
     <Member MemberName="ProviderID">
@@ -921,6 +949,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartConnection.Provider" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -972,6 +1001,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.ToString" />
       </Docs>
     </Member>
     <Member MemberName="Transformer">
@@ -1007,6 +1037,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" />
       </Docs>
     </Member>
     <Member MemberName="Transformers">
@@ -1045,6 +1076,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformerCollection" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartConnection.Transformer" />
       </Docs>
     </Member>
   </Members>

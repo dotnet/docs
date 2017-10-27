@@ -11,7 +11,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "ToolStrip control [Windows Forms], technology summary"
-  - "status bars, technology summary"
+  - "status bars [Windows Forms], technology summary"
   - "toolbars [Windows Forms], technology summary"
   - "menus [Windows Forms], technology summary"
 ms.assetid: e8d61973-7af9-429f-9df5-05a899c15a7b

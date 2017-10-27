@@ -172,6 +172,8 @@ resolver.Credentials = myCache;
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.CredentialCache" />
+        <altmember cref="T:System.Net.NetworkCredential" />
       </Docs>
     </Member>
     <Member MemberName="GetEntity">
@@ -234,6 +236,7 @@ resolver.Credentials = myCache;
         <exception cref="T:System.ArgumentNullException">
           <paramref name="absoluteUri" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Exception">There is a runtime error (for example, an interrupted server connection).</exception>
+        <altmember cref="T:System.Uri" />
       </Docs>
     </Member>
     <Member MemberName="GetEntityAsync">

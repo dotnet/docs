@@ -104,6 +104,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ListView.CheckedListViewItemCollection.IndexOf(System.Windows.Forms.ListViewItem)" />
       </Docs>
     </Member>
     <Member MemberName="ContainsKey">
@@ -243,6 +244,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ListView.CheckedListViewItemCollection.Contains(System.Windows.Forms.ListViewItem)" />
       </Docs>
     </Member>
     <Member MemberName="IndexOfKey">
@@ -637,5 +639,14 @@
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets an item within the collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

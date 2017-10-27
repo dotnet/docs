@@ -61,6 +61,9 @@
  ]]></format>
     </remarks>
     <threadsafe>This type is thread safe.</threadsafe>
+    <altmember cref="T:System.Threading.WaitHandle" />
+    <altmember cref="T:System.Threading.AutoResetEvent" />
+    <altmember cref="T:System.Threading.ManualResetEvent" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -331,9 +334,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Threading.EventWaitHandle.GetAccessControl%2A> method uses the following combination of flags (combined using the bitwise OR operation) to search for permissions: <xref:System.Security.AccessControl.AccessControlSections?displayProperty=nameWithType>, <xref:System.Security.AccessControl.AccessControlSections?displayProperty=nameWithType>, and <xref:System.Security.AccessControl.AccessControlSections?displayProperty=nameWithType>.  
+ The <xref:System.Threading.EventWaitHandle.GetAccessControl%2A> method uses the following combination of flags (combined using the bitwise OR operation) to search for permissions: <xref:System.Security.AccessControl.AccessControlSections.Access?displayProperty=nameWithType>, <xref:System.Security.AccessControl.AccessControlSections.Owner?displayProperty=nameWithType>, and <xref:System.Security.AccessControl.AccessControlSections.Group?displayProperty=nameWithType>.  
   
- The user must have <xref:System.Security.AccessControl.EventWaitHandleRights?displayProperty=nameWithType> rights to call this method, and the event must have been opened with the <xref:System.Security.AccessControl.EventWaitHandleRights?displayProperty=nameWithType> flag.  
+ The user must have <xref:System.Security.AccessControl.EventWaitHandleRights.ReadPermissions?displayProperty=nameWithType> rights to call this method, and the event must have been opened with the <xref:System.Security.AccessControl.EventWaitHandleRights.ReadPermissions?displayProperty=nameWithType> flag.  
   
    
   
@@ -404,9 +407,9 @@
   
  Multiple calls to this method that use the same value for `name` do not necessarily return the same <xref:System.Threading.EventWaitHandle> object, even though the objects that are returned represent the same named system event.  
   
- This method overload is equivalent to calling the <xref:System.Threading.EventWaitHandle.OpenExisting%28System.String%2CSystem.Security.AccessControl.EventWaitHandleRights%29> method overload and specifying <xref:System.Security.AccessControl.EventWaitHandleRights?displayProperty=nameWithType> and <xref:System.Security.AccessControl.EventWaitHandleRights?displayProperty=nameWithType> rights, combined by using the bitwise OR operation.  
+ This method overload is equivalent to calling the <xref:System.Threading.EventWaitHandle.OpenExisting%28System.String%2CSystem.Security.AccessControl.EventWaitHandleRights%29> method overload and specifying <xref:System.Security.AccessControl.EventWaitHandleRights.Synchronize?displayProperty=nameWithType> and <xref:System.Security.AccessControl.EventWaitHandleRights.Modify?displayProperty=nameWithType> rights, combined by using the bitwise OR operation.  
   
- Specifying the <xref:System.Security.AccessControl.EventWaitHandleRights?displayProperty=nameWithType> flag allows a thread to wait on the named system event, and specifying the <xref:System.Security.AccessControl.EventWaitHandleRights?displayProperty=nameWithType> flag allows a thread to call the <xref:System.Threading.EventWaitHandle.Set%2A> and <xref:System.Threading.EventWaitHandle.Reset%2A> methods.  
+ Specifying the <xref:System.Security.AccessControl.EventWaitHandleRights.Synchronize?displayProperty=nameWithType> flag allows a thread to wait on the named system event, and specifying the <xref:System.Security.AccessControl.EventWaitHandleRights.Modify?displayProperty=nameWithType> flag allows a thread to call the <xref:System.Threading.EventWaitHandle.Set%2A> and <xref:System.Threading.EventWaitHandle.Reset%2A> methods.  
   
    
   
@@ -470,7 +473,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `rights` parameter must include the <xref:System.Security.AccessControl.EventWaitHandleRights?displayProperty=nameWithType> flag to allow threads to wait on the event, and the <xref:System.Security.AccessControl.EventWaitHandleRights?displayProperty=nameWithType> flag to allow threads to call the <xref:System.Threading.EventWaitHandle.Set%2A> and <xref:System.Threading.EventWaitHandle.Reset%2A> methods.  
+ The `rights` parameter must include the <xref:System.Security.AccessControl.EventWaitHandleRights.Synchronize?displayProperty=nameWithType> flag to allow threads to wait on the event, and the <xref:System.Security.AccessControl.EventWaitHandleRights.Modify?displayProperty=nameWithType> flag to allow threads to call the <xref:System.Threading.EventWaitHandle.Set%2A> and <xref:System.Threading.EventWaitHandle.Reset%2A> methods.  
   
  The <xref:System.Threading.EventWaitHandle.OpenExisting%2A> method tries to open an existing named system event. If the system event does not exist, this method throws an exception instead of creating the system event. To create the system event when it does not already exist, use one of the <xref:System.Threading.EventWaitHandle.%23ctor%2A> constructors that has a `name` parameter.  
   
@@ -631,7 +634,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The user must have <xref:System.Security.AccessControl.EventWaitHandleRights?displayProperty=nameWithType> rights to call this method, and the event must have been opened with the <xref:System.Security.AccessControl.EventWaitHandleRights?displayProperty=nameWithType> flag.  
+ The user must have <xref:System.Security.AccessControl.EventWaitHandleRights.ChangePermissions?displayProperty=nameWithType> rights to call this method, and the event must have been opened with the <xref:System.Security.AccessControl.EventWaitHandleRights.ChangePermissions?displayProperty=nameWithType> flag.  
   
    
   
@@ -707,7 +710,7 @@
   
  If you are uncertain whether a named synchronization event exists, use this method overload instead of the <xref:System.Threading.EventWaitHandle.OpenExisting%28System.String%29> method overload, which throws an exception if the synchronization event does not exist.  
   
- This method overload is equivalent to calling the <xref:System.Threading.EventWaitHandle.TryOpenExisting%28System.String%2CSystem.Security.AccessControl.EventWaitHandleRights%2CSystem.Threading.EventWaitHandle%40%29> method overload and specifying <xref:System.Security.AccessControl.EventWaitHandleRights?displayProperty=nameWithType> and <xref:System.Security.AccessControl.EventWaitHandleRights?displayProperty=nameWithType> rights, combined by using the bitwise OR operation. Specifying the <xref:System.Security.AccessControl.EventWaitHandleRights?displayProperty=nameWithType> flag allows a thread to wait on the named system event, and specifying the <xref:System.Security.AccessControl.EventWaitHandleRights?displayProperty=nameWithType> flag allows a thread to call the <xref:System.Threading.EventWaitHandle.Set%2A> and <xref:System.Threading.EventWaitHandle.Reset%2A> methods.  
+ This method overload is equivalent to calling the <xref:System.Threading.EventWaitHandle.TryOpenExisting%28System.String%2CSystem.Security.AccessControl.EventWaitHandleRights%2CSystem.Threading.EventWaitHandle%40%29> method overload and specifying <xref:System.Security.AccessControl.EventWaitHandleRights.Synchronize?displayProperty=nameWithType> and <xref:System.Security.AccessControl.EventWaitHandleRights.Modify?displayProperty=nameWithType> rights, combined by using the bitwise OR operation. Specifying the <xref:System.Security.AccessControl.EventWaitHandleRights.Synchronize?displayProperty=nameWithType> flag allows a thread to wait on the named system event, and specifying the <xref:System.Security.AccessControl.EventWaitHandleRights.Modify?displayProperty=nameWithType> flag allows a thread to call the <xref:System.Threading.EventWaitHandle.Set%2A> and <xref:System.Threading.EventWaitHandle.Reset%2A> methods.  
   
  Multiple calls to this method that use the same value for `name` do not necessarily return the same <xref:System.Threading.EventWaitHandle> object, even though the objects that are returned represent the same named system event.  
   
@@ -764,7 +767,7 @@
   
  If you are uncertain whether a named synchronization event exists, use this method overload instead of the <xref:System.Threading.EventWaitHandle.OpenExisting%28System.String%2CSystem.Security.AccessControl.EventWaitHandleRights%29> method overload, which throws an exception if the synchronization event does not exist.  
   
- The `rights` parameter must include the <xref:System.Security.AccessControl.EventWaitHandleRights?displayProperty=nameWithType> flag to allow threads to wait on the event, and the <xref:System.Security.AccessControl.EventWaitHandleRights?displayProperty=nameWithType> flag to allow threads to call the <xref:System.Threading.EventWaitHandle.Set%2A> and <xref:System.Threading.EventWaitHandle.Reset%2A> methods.  
+ The `rights` parameter must include the <xref:System.Security.AccessControl.EventWaitHandleRights.Synchronize?displayProperty=nameWithType> flag to allow threads to wait on the event, and the <xref:System.Security.AccessControl.EventWaitHandleRights.Modify?displayProperty=nameWithType> flag to allow threads to call the <xref:System.Threading.EventWaitHandle.Set%2A> and <xref:System.Threading.EventWaitHandle.Reset%2A> methods.  
   
  Multiple calls to this method that use the same value for `name` do not necessarily return the same <xref:System.Threading.EventWaitHandle> object, even though the objects that are returned represent the same named system event.  
   
@@ -783,5 +786,38 @@
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TryOpenExisting">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens a specified named synchronization event, if it already exists, and returns a value that indicates whether the operation succeeded.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Threading.EventWaitHandle" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OpenExisting">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens a specified named synchronization event, if it already exists.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

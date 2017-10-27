@@ -10,7 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "Windows Forms controls"
+  - "Windows Forms controls [Windows Forms]"
   - "Windows Forms controls, creating"
   - "controls [Windows Forms]"
   - "controls [Windows Forms], creating"

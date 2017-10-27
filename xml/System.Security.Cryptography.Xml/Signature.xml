@@ -41,6 +41,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Security.Cryptography.Xml.SignedXml" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -77,6 +78,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Security.Cryptography.Xml.SignedXml" />
       </Docs>
     </Member>
     <Member MemberName="AddObject">
@@ -109,6 +111,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Security.Cryptography.Xml.SignedXml" />
       </Docs>
     </Member>
     <Member MemberName="GetXml">
@@ -137,6 +140,7 @@
  -or-  
   
  The <see cref="P:System.Security.Cryptography.Xml.Signature.SignatureValue" /> property is <see langword="null" />.</exception>
+        <altmember cref="T:System.Security.Cryptography.Xml.SignedXml" />
       </Docs>
     </Member>
     <Member MemberName="Id">
@@ -166,6 +170,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Security.Cryptography.Xml.SignedXml" />
       </Docs>
     </Member>
     <Member MemberName="KeyInfo">
@@ -212,6 +217,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Security.Cryptography.Xml.SignedXml" />
       </Docs>
     </Member>
     <Member MemberName="LoadXml">
@@ -243,6 +249,7 @@
  -or-  
   
  The <paramref name="value" /> parameter does not contain a valid <see cref="P:System.Security.Cryptography.Xml.Signature.SignedInfo" />.</exception>
+        <altmember cref="T:System.Security.Cryptography.Xml.SignedXml" />
       </Docs>
     </Member>
     <Member MemberName="ObjectList">
@@ -276,6 +283,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Security.Cryptography.Xml.SignedXml" />
       </Docs>
     </Member>
     <Member MemberName="SignatureValue">
@@ -307,6 +315,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Security.Cryptography.Xml.SignedXml" />
       </Docs>
     </Member>
     <Member MemberName="SignedInfo">
@@ -353,6 +362,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Security.Cryptography.Xml.SignedXml" />
       </Docs>
     </Member>
   </Members>

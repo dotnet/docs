@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "ToolStripMenuItems, hiding menu items in designer"
+  - "ToolStripMenuItems [Windows Forms], hiding menu items in designer"
   - "MenuStrip control [Windows Forms], hiding menu items in designer"
-  - "menu items, hiding"
+  - "menu items [Windows Forms], hiding"
 ms.assetid: 8f1b057e-3d8a-4f11-88df-935f7b29a836
 caps.latest.revision: 8
 author: dotnet-bot

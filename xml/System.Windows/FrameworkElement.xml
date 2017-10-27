@@ -62,6 +62,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.DependencyObject" />
+    <altmember cref="T:System.Windows.FrameworkContentElement" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -241,6 +243,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.FrameworkElement.RemoveLogicalChild(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ApplyTemplate">
@@ -272,6 +275,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.ControlTemplate" />
       </Docs>
     </Member>
     <Member MemberName="ArrangeCore">
@@ -300,6 +304,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.UIElement.Arrange(System.Windows.Rect)" />
       </Docs>
     </Member>
     <Member MemberName="ArrangeOverride">
@@ -327,6 +332,7 @@
   
  Many derived classes offer implementations of this method. Prominent ones include: <see cref="M:System.Windows.Window.ArrangeOverride(System.Windows.Size)" />, <see cref="M:System.Windows.Controls.Page.ArrangeOverride(System.Windows.Size)" /> and <see cref="M:System.Windows.Controls.Control.ArrangeOverride(System.Windows.Size)" />.</para>
         </block>
+        <altmember cref="M:System.Windows.UIElement.Arrange(System.Windows.Rect)" />
       </Docs>
     </Member>
     <Member MemberName="BeginInit">
@@ -359,6 +365,7 @@
   
  The base implementation will throw an exception if <see cref="M:System.Windows.FrameworkElement.BeginInit" /> is called more than one time on the same element prior to <see cref="M:System.Windows.FrameworkElement.EndInit" /> being called.</para>
         </block>
+        <altmember cref="M:System.Windows.FrameworkElement.EndInit" />
       </Docs>
     </Member>
     <Member MemberName="BeginStoryboard">
@@ -615,6 +622,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.ScrollViewer" />
       </Docs>
     </Member>
     <Member MemberName="BringIntoView">
@@ -657,6 +665,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.FlowDocumentScrollViewer" />
       </Docs>
     </Member>
     <Member MemberName="ContextMenu">
@@ -690,6 +699,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.ContextMenu" />
       </Docs>
     </Member>
     <Member MemberName="ContextMenuClosing">
@@ -735,6 +745,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.ContextMenu" />
       </Docs>
     </Member>
     <Member MemberName="ContextMenuClosingEvent">
@@ -806,6 +817,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.ContextMenu" />
       </Docs>
     </Member>
     <Member MemberName="ContextMenuOpeningEvent">
@@ -904,6 +916,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.QueryCursor" />
+        <altmember cref="P:System.Windows.FrameworkElement.ForceCursor" />
+        <altmember cref="P:System.Windows.Input.Mouse.OverrideCursor" />
       </Docs>
     </Member>
     <Member MemberName="CursorProperty">
@@ -1042,6 +1057,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.FrameworkElement.DataContext" />
       </Docs>
     </Member>
     <Member MemberName="DataContextProperty">
@@ -1106,6 +1122,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.FrameworkElement.OverridesDefaultStyle" />
       </Docs>
     </Member>
     <Member MemberName="DefaultStyleKeyProperty">
@@ -1186,6 +1203,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.FrameworkElement.FindResource(System.Object)" />
+        <altmember cref="P:System.Windows.FrameworkElement.Name" />
       </Docs>
     </Member>
     <Member MemberName="FindResource">
@@ -1239,6 +1258,7 @@
  <paramref name="resourceKey" /> was not found and the <see cref="P:System.Windows.Threading.DispatcherUnhandledExceptionEventArgs.Handled" /> property is <see langword="false" /> in the <see cref="E:System.Windows.Threading.Dispatcher.UnhandledException" /> event.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="resourceKey" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.FrameworkElement.TryFindResource(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="FlowDirection">
@@ -1366,6 +1386,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.FrameworkElement.MoveFocus(System.Windows.Input.TraversalRequest)" />
       </Docs>
     </Member>
     <Member MemberName="FocusVisualStyleProperty">
@@ -1424,6 +1445,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.Cursor" />
       </Docs>
     </Member>
     <Member MemberName="ForceCursorProperty">
@@ -1472,6 +1494,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Data.BindingOperations" />
       </Docs>
     </Member>
     <Member MemberName="GetFlowDirection">
@@ -1501,6 +1524,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.FrameworkElement.FlowDirection" />
       </Docs>
     </Member>
     <Member MemberName="GetLayoutClip">
@@ -1535,6 +1559,8 @@
         <block subset="none" type="overrides">
           <para>The default implementation always returns <see langword="null" /> when <see cref="P:System.Windows.UIElement.ClipToBounds" /> is <see langword="false" />. Overrides are generally expected to preserve this behavior, although there are exceptions, depending on the relationship and purpose of the derived class and its layout logic as opposed to the base class.</para>
         </block>
+        <altmember cref="P:System.Windows.UIElement.Clip" />
+        <altmember cref="P:System.Windows.UIElement.ClipToBounds" />
       </Docs>
     </Member>
     <Member MemberName="GetTemplateChild">
@@ -1566,6 +1592,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.FrameworkTemplate.FindName(System.String,System.Windows.FrameworkElement)" />
       </Docs>
     </Member>
     <Member MemberName="GetUIParentCore">
@@ -1592,6 +1619,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.FrameworkElement.Parent" />
       </Docs>
     </Member>
     <Member MemberName="GetVisualChild">
@@ -1719,6 +1747,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.FrameworkElement.ActualHeight" />
       </Docs>
     </Member>
     <Member MemberName="HeightProperty">
@@ -1813,12 +1842,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Certain boundaries in the element tree set <xref:System.Windows.FrameworkElement.InheritanceBehavior%2A> to deliberately limit the scope of inheritance behavior, to a force resource lookup to check the application resources, or to prevent a RelativeSource FindAncestor lookup from querying the current element or any further. RelativeSource FindAncestor lookup occurs when a binding uses a <xref:System.Windows.Data.RelativeSource> that has its <xref:System.Windows.Data.RelativeSource.Mode%2A> property set to the <xref:System.Windows.Data.RelativeSourceMode?displayProperty=nameWithType> value.  
+ Certain boundaries in the element tree set <xref:System.Windows.FrameworkElement.InheritanceBehavior%2A> to deliberately limit the scope of inheritance behavior, to a force resource lookup to check the application resources, or to prevent a RelativeSource FindAncestor lookup from querying the current element or any further. RelativeSource FindAncestor lookup occurs when a binding uses a <xref:System.Windows.Data.RelativeSource> that has its <xref:System.Windows.Data.RelativeSource.Mode%2A> property set to the <xref:System.Windows.Data.RelativeSourceMode.FindAncestor?displayProperty=nameWithType> value.  
   
  If you want your derived class to set this property, you should do so within the static constructor or in other initialization routines.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.Frame" />
       </Docs>
     </Member>
     <Member MemberName="Initialized">
@@ -1852,6 +1882,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.FrameworkElement.OnInitialized(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="InputScope">
@@ -1887,6 +1918,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.InputScope" />
+        <altmember cref="T:System.Windows.IInputElement" />
       </Docs>
     </Member>
     <Member MemberName="InputScopeProperty">
@@ -1972,6 +2005,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.FrameworkElement.Loaded" />
       </Docs>
     </Member>
     <Member MemberName="Language">
@@ -2131,6 +2165,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.UIElement.OnRender(System.Windows.Media.DrawingContext)" />
       </Docs>
     </Member>
     <Member MemberName="LoadedEvent">
@@ -2261,6 +2296,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Thickness" />
       </Docs>
     </Member>
     <Member MemberName="MarginProperty">
@@ -2748,6 +2784,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.UIElement.MoveFocus(System.Windows.Input.TraversalRequest)" />
+        <altmember cref="M:System.Windows.UIElement.Focus" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -2970,6 +3008,7 @@
         <block subset="none" type="overrides">
           <para>If you intend to mark the event handled in the arguments, you should be aware of consequences on event handling in other parent elements in the element tree. Because this handler acts on an event with a bubbling routing, setting the focus to the current <paramref name="sender" /> per the event arguments may not be appropriate. Focus might need to go to either a composite child element or to a parent element, depending on the compositing of certain controls. Therefore marking a focus event as handled is only recommended if the entirety of the visual tree that the event is routing through is part of compositing of a control that you authored.</para>
         </block>
+        <altmember cref="P:System.Windows.UIElement.Focusable" />
       </Docs>
     </Member>
     <Member MemberName="OnInitialized">
@@ -3003,6 +3042,8 @@
         <block subset="none" type="overrides">
           <para>The default implementation of this virtual method raises the event as described above. Overrides should call the base implementation to preserve this behavior. If you fail to call the base implementation, not only will you not raise the <see cref="E:System.Windows.FrameworkElement.Initialized" /> event as is generally expected of a <see cref="T:System.Windows.FrameworkElement" /> derived class, but you will also suppress two important style and theme style initialization operations that are implemented by this base implementation.</para>
         </block>
+        <altmember cref="M:System.Windows.FrameworkElement.OnApplyTemplate" />
+        <altmember cref="E:System.Windows.FrameworkElement.Initialized" />
       </Docs>
     </Member>
     <Member MemberName="OnPropertyChanged">
@@ -3038,6 +3079,8 @@
         <block subset="none" type="overrides">
           <para>Always call the base implementation, as the first operation in your implementation. Failure to do this will significantly disable the entire [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] property system, which causes incorrect values to be reported. The specific <see cref="T:System.Windows.FrameworkElement" /> implementation is also responsible for maintaining proper state for a variety of properties that affect the visible user interface. These include invalidating the visual tree based on changes to style at appropriate times.</para>
         </block>
+        <altmember cref="M:System.Windows.DependencyObject.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)" />
+        <altmember cref="T:System.Windows.PropertyChangedCallback" />
       </Docs>
     </Member>
     <Member MemberName="OnRenderSizeChanged">
@@ -3071,6 +3114,9 @@
   
  You may still override this method in derived classes (it is protected but not sealed). Always call the base implementation to preserve the behavior mentioned above, unless you have very specific reasons for disabling default WPF framework-level rendering behavior. Failing to raise the <see cref="E:System.Windows.FrameworkElement.SizeChanged" /> event will cause non-standard layout behavior if using the standard WPF framework-level layout system implementation.</para>
         </block>
+        <altmember cref="M:System.Windows.FrameworkElement.MeasureOverride(System.Windows.Size)" />
+        <altmember cref="M:System.Windows.FrameworkElement.ArrangeOverride(System.Windows.Size)" />
+        <altmember cref="M:System.Windows.UIElement.OnRender(System.Windows.Media.DrawingContext)" />
       </Docs>
     </Member>
     <Member MemberName="OnStyleChanged">
@@ -3199,6 +3245,8 @@
   
  This method is also overridden in certain elements that are typically the root element, such as  <see cref="T:System.Windows.Window" />. Another case is elements that are the apparent root element in markup but which autogenerate a greater infrastructure in a compiled logical tree (such as <see cref="T:System.Windows.Controls.Page" />). The <see cref="T:System.Windows.Window" /> and <see cref="T:System.Windows.Controls.Page" /> implementations deliberately seal the method.</para>
         </block>
+        <altmember cref="M:System.Windows.Media.Visual.OnVisualParentChanged(System.Windows.DependencyObject)" />
+        <altmember cref="M:System.Windows.Window.OnVisualParentChanged(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="OverridesDefaultStyle">
@@ -3298,6 +3346,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.FrameworkElement.TemplatedParent" />
+        <altmember cref="T:System.Windows.LogicalTreeHelper" />
       </Docs>
     </Member>
     <Member MemberName="ParentLayoutInvalidated">
@@ -3368,6 +3418,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">Specified one of the following directions in the <see cref="T:System.Windows.Input.TraversalRequest" />: <see cref="F:System.Windows.Input.FocusNavigationDirection.Next" />, <see cref="F:System.Windows.Input.FocusNavigationDirection.Previous" />, <see cref="F:System.Windows.Input.FocusNavigationDirection.First" />, <see cref="F:System.Windows.Input.FocusNavigationDirection.Last" />. These directions are not legal for <see cref="M:System.Windows.FrameworkElement.PredictFocus(System.Windows.Input.FocusNavigationDirection)" /> (but they are legal for <see cref="M:System.Windows.FrameworkElement.MoveFocus(System.Windows.Input.TraversalRequest)" />).</exception>
+        <altmember cref="M:System.Windows.FrameworkElement.MoveFocus(System.Windows.Input.TraversalRequest)" />
+        <altmember cref="M:System.Windows.UIElement.PredictFocus(System.Windows.Input.FocusNavigationDirection)" />
       </Docs>
     </Member>
     <Member MemberName="RegisterName">
@@ -3406,6 +3458,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.NameScope.RegisterName(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveLogicalChild">
@@ -3444,6 +3497,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.FrameworkElement.AddLogicalChild(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="RequestBringIntoView">
@@ -3477,6 +3531,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.FrameworkElement.BringIntoView(System.Windows.Rect)" />
+        <altmember cref="T:System.Windows.Controls.ScrollViewer" />
       </Docs>
     </Member>
     <Member MemberName="RequestBringIntoViewEvent">
@@ -3548,6 +3604,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Application.Resources" />
       </Docs>
     </Member>
     <Member MemberName="SetBinding">
@@ -3648,6 +3705,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.FrameworkElement.FlowDirection" />
       </Docs>
     </Member>
     <Member MemberName="SetResourceReference">
@@ -3678,6 +3736,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.FrameworkElement.FindResource(System.Object)" />
+        <altmember cref="P:System.Windows.Application.Resources" />
+        <altmember cref="P:System.Windows.FrameworkElement.Resources" />
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeResources">
@@ -3809,6 +3870,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.FrameworkElement.Height" />
+        <altmember cref="P:System.Windows.FrameworkElement.Width" />
       </Docs>
     </Member>
     <Member MemberName="SizeChangedEvent">
@@ -3866,6 +3929,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Data.Binding.SourceUpdated" />
       </Docs>
     </Member>
     <Member MemberName="Style">
@@ -4021,6 +4085,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.FrameworkElement.Name" />
       </Docs>
     </Member>
     <Member MemberName="TagProperty">
@@ -4071,6 +4136,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Data.Binding.TargetUpdated" />
       </Docs>
     </Member>
     <Member MemberName="TemplatedParent">
@@ -4224,6 +4290,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.ToolTip" />
       </Docs>
     </Member>
     <Member MemberName="ToolTipClosingEvent">
@@ -4289,6 +4356,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.ToolTip" />
       </Docs>
     </Member>
     <Member MemberName="ToolTipOpeningEvent">
@@ -4386,6 +4454,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.EventTrigger" />
       </Docs>
     </Member>
     <Member MemberName="TryFindResource">
@@ -4427,6 +4496,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.FrameworkElement.FindResource(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Unloaded">
@@ -4464,6 +4534,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.FrameworkElement.Loaded" />
       </Docs>
     </Member>
     <Member MemberName="UnloadedEvent">
@@ -4518,6 +4589,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.FrameworkElement.RegisterName(System.String,System.Object)" />
+        <altmember cref="T:System.Windows.NameScope" />
       </Docs>
     </Member>
     <Member MemberName="UpdateDefaultStyle">
@@ -4826,5 +4899,32 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BringIntoView">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Attempts to bring this element into view, within any scrollable regions it is contained within.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginStoryboard">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins the sequence of actions contained in the provided storyboard.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetBinding">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Attaches a binding to this element for the specified dependency property.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -11,8 +11,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "custom controls [Windows Forms], developing using code"
-  - "Component class"
-  - "Control class, Windows Forms"
+  - "Control class [Windows Forms], Windows Forms"
 ms.assetid: 236cebc0-bd71-4f18-9fd6-5d0e592375df
 caps.latest.revision: 22
 author: dotnet-bot

@@ -24,6 +24,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Security.Permissions.DataProtectionPermissionAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -55,6 +56,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="flags" /> is not a valid combination of the <see cref="T:System.Security.Permissions.DataProtectionPermissionFlags" /> values.</exception>
+        <altmember cref="T:System.Security.Permissions.DataProtectionPermissionAttribute" />
+        <altmember cref="T:System.Security.Permissions.DataProtectionPermissionFlags" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -91,6 +94,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="state" /> is not a valid <see cref="T:System.Security.Permissions.PermissionState" /> value.</exception>
+        <altmember cref="T:System.Security.Permissions.DataProtectionPermissionAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -415,5 +419,14 @@
           <paramref name="target" /> is not <see langword="null" /> and does not specify a permission of the same type as the current permission.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.DataProtectionPermission" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

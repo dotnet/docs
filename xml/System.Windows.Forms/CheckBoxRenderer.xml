@@ -33,6 +33,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Windows.Forms.Application.EnableVisualStyles" />
+    <altmember cref="P:System.Windows.Forms.Application.RenderWithVisualStyles" />
+    <altmember cref="T:System.Windows.Forms.VisualStyles.VisualStyleRenderer" />
+    <altmember cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" />
   </Docs>
   <Members>
     <Member MemberName="DrawCheckBox">
@@ -366,5 +370,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DrawCheckBox">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws a check box control.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

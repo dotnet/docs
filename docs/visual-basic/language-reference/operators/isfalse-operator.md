@@ -10,8 +10,8 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.isfalse"
 helpviewer_keywords: 
-  - "AndAlso operator"
-  - "IsFalse operator"
+  - "AndAlso operator [Visual Basic]"
+  - "IsFalse operator [Visual Basic]"
 ms.assetid: 37fc9dbf-e5cc-4570-b93f-7213447974df
 caps.latest.revision: 14
 author: dotnet-bot

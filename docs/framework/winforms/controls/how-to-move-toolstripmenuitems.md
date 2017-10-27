@@ -10,14 +10,14 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "ToolStripMenuItems, moving"
-  - "menus, arranging items"
-  - "ToolStripMenuItems, dragging and dropping"
-  - "menu items, moving"
-  - "menu items, cutting and pasting"
-  - "menu items, dragging and dropping"
+  - "ToolStripMenuItems [Windows Forms], moving"
+  - "menus [Windows Forms], arranging items"
+  - "ToolStripMenuItems [Windows Forms], dragging and dropping"
+  - "menu items [Windows Forms], moving"
+  - "menu items [Windows Forms], cutting and pasting"
+  - "menu items [Windows Forms], dragging and dropping"
   - "MenuStrip control [Windows Forms], arranging items"
-  - "ToolStripMenuItems, cutting and pasting"
+  - "ToolStripMenuItems [Windows Forms], cutting and pasting"
 ms.assetid: cab9e03e-4edd-4c25-b3e3-bd1edc602bd9
 caps.latest.revision: 12
 author: dotnet-bot

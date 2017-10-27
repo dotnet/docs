@@ -9,13 +9,13 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "control flow, loops"
+  - "control flow [Visual Basic], loops"
   - "For keyword [Visual Basic], loop structures"
   - "loops"
-  - "loop structures"
+  - "loop structures [Visual Basic]"
   - "statements [Visual Basic], loop"
-  - "Do statement, Do loops"
-  - "conditional statements, loop structures"
+  - "Do statement [Visual Basic], Do loops"
+  - "conditional statements [Visual Basic], loop structures"
 ms.assetid: ecacb09b-a4c9-42be-98b2-a15d368b5db8
 caps.latest.revision: 18
 author: dotnet-bot

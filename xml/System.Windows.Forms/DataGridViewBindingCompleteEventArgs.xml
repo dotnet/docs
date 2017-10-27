@@ -32,6 +32,15 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.DataBindingComplete" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewBindingCompleteEventHandler" />
+    <altmember cref="P:System.Windows.Forms.DataGridView.DataSource" />
+    <altmember cref="P:System.Windows.Forms.DataGridView.DataMember" />
+    <altmember cref="P:System.Windows.Forms.Control.BindingContext" />
+    <altmember cref="T:System.Windows.Forms.CurrencyManager" />
+    <altmember cref="E:System.Windows.Forms.CurrencyManager.ListChanged" />
+    <altmember cref="M:System.Windows.Forms.DataGridView.OnDataBindingComplete(System.Windows.Forms.DataGridViewBindingCompleteEventArgs)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -50,6 +59,11 @@
         <param name="listChangedType">One of the <see cref="T:System.ComponentModel.ListChangedType" /> values.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewBindingCompleteEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.ListChangedType" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.DataBindingComplete" />
+        <altmember cref="E:System.Windows.Forms.CurrencyManager.ListChanged" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.OnDataBindingComplete(System.Windows.Forms.DataGridViewBindingCompleteEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ListChangedType">
@@ -80,6 +94,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.ListChangedType" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.DataBindingComplete" />
+        <altmember cref="E:System.Windows.Forms.CurrencyManager.ListChanged" />
       </Docs>
     </Member>
   </Members>

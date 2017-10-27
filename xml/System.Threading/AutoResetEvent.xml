@@ -52,7 +52,7 @@
   
  For more information about thread synchronization mechanisms, see [AutoResetEvent](~/docs/standard/threading/autoresetevent.md) in the conceptual documentation.  
   
- Beginning with the .NET Framework version 2.0, <xref:System.Threading.AutoResetEvent> derives from the new <xref:System.Threading.EventWaitHandle> class. An <xref:System.Threading.AutoResetEvent> is functionally equivalent to an <xref:System.Threading.EventWaitHandle> created with <xref:System.Threading.EventResetMode?displayProperty=nameWithType>.  
+ Beginning with the .NET Framework version 2.0, <xref:System.Threading.AutoResetEvent> derives from the new <xref:System.Threading.EventWaitHandle> class. An <xref:System.Threading.AutoResetEvent> is functionally equivalent to an <xref:System.Threading.EventWaitHandle> created with <xref:System.Threading.EventResetMode.AutoReset?displayProperty=nameWithType>.  
   
 > [!NOTE]
 >  Unlike the <xref:System.Threading.AutoResetEvent> class, the <xref:System.Threading.EventWaitHandle> class provides access to named system synchronization events.  
@@ -71,6 +71,7 @@
  ]]></format>
     </remarks>
     <threadsafe>This class is thread safe.</threadsafe>
+    <altmember cref="T:System.Threading.WaitHandle" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -118,6 +119,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Threading.WaitHandle" />
       </Docs>
     </Member>
   </Members>

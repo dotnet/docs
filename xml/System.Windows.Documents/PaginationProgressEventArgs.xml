@@ -13,6 +13,7 @@
   <Docs>
     <summary>Provides data for the <see cref="E:System.Windows.Documents.DynamicDocumentPaginator.PaginationProgress" /> event.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Documents.PaginationProgressEventHandler" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,6 +34,8 @@
         <param name="count">The number of continuous pages paginated.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.PaginationProgressEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Windows.Documents.DynamicDocumentPaginator.PaginationProgress" />
+        <altmember cref="T:System.Windows.Documents.PaginationProgressEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -58,6 +61,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Documents.DynamicDocumentPaginator.PaginationProgress" />
       </Docs>
     </Member>
     <Member MemberName="Start">
@@ -83,6 +87,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Documents.DynamicDocumentPaginator.PaginationProgress" />
       </Docs>
     </Member>
   </Members>

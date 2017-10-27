@@ -30,6 +30,7 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.MethodInvoker" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.JSMethodInfo" />
       </Docs>
     </Member>
     <Member MemberName="Invoke">
@@ -60,6 +61,7 @@
         <returns>The result of invoking the method.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.JSMethodInfo" />
       </Docs>
     </Member>
   </Members>

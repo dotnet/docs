@@ -9,7 +9,7 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "COM interop, referencing COM objects"
+  - "COM interop [Visual Basic], referencing COM objects"
   - "referencing objects, COM objects from Visual Basic"
   - "objects [Visual Basic], referencing"
   - "COM objects, referencing"

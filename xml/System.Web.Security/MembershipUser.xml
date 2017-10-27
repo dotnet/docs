@@ -194,6 +194,7 @@
   
  <paramref name="newPassword" /> is <see langword="null" />.</exception>
         <exception cref="T:System.PlatformNotSupportedException">This method is not available. This can occur if the application targets the [!INCLUDE[net_client_v40_long](~/includes/net-client-v40-long-md.md)]. To prevent this exception, override the method, or change the application to target the full version of the .NET Framework.</exception>
+        <altmember cref="T:System.Web.Security.SqlMembershipProvider" />
       </Docs>
     </Member>
     <Member MemberName="ChangePasswordQuestionAndAnswer">
@@ -254,6 +255,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="password" /> is <see langword="null" />.</exception>
         <exception cref="T:System.PlatformNotSupportedException">This method is not available. This can occur if the application targets the [!INCLUDE[net_client_v40_long](~/includes/net-client-v40-long-md.md)]. To prevent this exception, override the method, or change the application to target the full version of the .NET Framework.</exception>
+        <altmember cref="T:System.Web.Security.SqlMembershipProvider" />
       </Docs>
     </Member>
     <Member MemberName="Comment">
@@ -279,6 +281,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Security.SqlMembershipProvider" />
       </Docs>
     </Member>
     <Member MemberName="CreationDate">
@@ -465,6 +468,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Security.MembershipUser.IsLockedOut" />
       </Docs>
     </Member>
     <Member MemberName="IsLockedOut">
@@ -495,6 +499,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Security.MembershipUser.IsApproved" />
       </Docs>
     </Member>
     <Member MemberName="IsOnline">
@@ -944,5 +949,32 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetPassword">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the password for the membership user from the membership data store.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new membership user object with the specified property values.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ResetPassword">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Resets a user's password to a new, automatically generated password.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

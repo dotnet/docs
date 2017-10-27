@@ -23,6 +23,7 @@
     <summary>Represents the global scope.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.IActivationObject" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,6 +45,10 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.GlobalScope" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.IActivationObject" />
+        <altmember cref="T:Microsoft.JScript.ActivationObject" />
+        <altmember cref="T:System.Runtime.InteropServices.Expando.IExpando" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="AddField">
@@ -67,6 +72,7 @@
         <returns>The new field, if it is successfully added.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Runtime.InteropServices.Expando.IExpando" />
       </Docs>
     </Member>
     <Member MemberName="GetDefaultThisObject">
@@ -87,6 +93,10 @@
         <returns>This object.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.IActivationObject" />
+        <altmember cref="T:Microsoft.JScript.ActivationObject" />
+        <altmember cref="T:System.Runtime.InteropServices.Expando.IExpando" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="GetField">
@@ -112,6 +122,9 @@
         <returns>A field that has the specified name.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.IActivationObject" />
+        <altmember cref="T:Microsoft.JScript.ActivationObject" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="GetFields">
@@ -135,6 +148,9 @@
         <returns>An array of objects that contains all fields of the global scope.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.IActivationObject" />
+        <altmember cref="T:Microsoft.JScript.ActivationObject" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="GetGlobalScope">
@@ -155,6 +171,10 @@
         <returns>This object.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.IActivationObject" />
+        <altmember cref="T:Microsoft.JScript.ActivationObject" />
+        <altmember cref="T:System.Runtime.InteropServices.Expando.IExpando" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="GetLocalField">
@@ -178,6 +198,9 @@
         <returns>The local declaration of the field.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.IActivationObject" />
+        <altmember cref="T:Microsoft.JScript.ActivationObject" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="GetMember">
@@ -203,6 +226,9 @@
         <returns>An array of objects that match the <paramref name="name" /> argument.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.IActivationObject" />
+        <altmember cref="T:Microsoft.JScript.ActivationObject" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="GetMembers">
@@ -226,6 +252,9 @@
         <returns>An array of objects that contains all members of the global scope.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.IActivationObject" />
+        <altmember cref="T:Microsoft.JScript.ActivationObject" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="GetMethods">
@@ -249,6 +278,9 @@
         <returns>An array of objects that contains all methods of the global scope.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.IActivationObject" />
+        <altmember cref="T:Microsoft.JScript.ActivationObject" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="GetProperties">
@@ -272,6 +304,9 @@
         <returns>An array of objects that contains all properties of the global scope.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.IActivationObject" />
+        <altmember cref="T:Microsoft.JScript.ActivationObject" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.InteropServices.Expando.IExpando.AddMethod">
@@ -297,6 +332,7 @@
         <returns>null in all cases.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Runtime.InteropServices.Expando.IExpando" />
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.InteropServices.Expando.IExpando.AddProperty">
@@ -320,6 +356,7 @@
         <returns>null in all cases.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Runtime.InteropServices.Expando.IExpando" />
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.InteropServices.Expando.IExpando.RemoveMember">
@@ -342,6 +379,7 @@
         <summary>Removes the specified member from the global scope.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Runtime.InteropServices.Expando.IExpando" />
       </Docs>
     </Member>
   </Members>

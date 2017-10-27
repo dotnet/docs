@@ -10,11 +10,11 @@ ms.technology:
 ms.topic: "article"
 helpviewer_keywords: 
   - "classes [Visual Basic], vs. structures"
-  - "structures"
+  - "structures [Visual Basic]"
   - "classes [Visual Basic]"
-  - "structures, compared to classes"
-  - "structures, structure variables"
-  - "structure variables"
+  - "structures [Visual Basic], compared to classes"
+  - "structures [Visual Basic], structure variables"
+  - "structure variables [Visual Basic]"
 ms.assetid: a221e74a-ffcf-4bdc-a0f6-a088a9bf26cc
 caps.latest.revision: 21
 author: dotnet-bot

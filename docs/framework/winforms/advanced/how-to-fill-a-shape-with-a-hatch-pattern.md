@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "patterns, adding to shapes"
-  - "shapes, filling with patterns"
-  - "brushes, using hatch brushes"
+  - "patterns [Windows Forms], adding to shapes"
+  - "shapes [Windows Forms], filling with patterns"
+  - "brushes [Windows Forms], using hatch brushes"
 ms.assetid: 9c8300ff-187b-404f-af1f-ebd499f5b16f
 caps.latest.revision: 16
 author: dotnet-bot

@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "keyboard input, modifying"
+  - "keyboard input [Windows Forms], modifying"
   - "modifying keyboard input"
   - "Windows Forms, modifying keyboard input"
-  - "keyboards, keyboard input"
+  - "keyboards [Windows Forms], keyboard input"
 ms.assetid: 626d3712-d866-4988-bcda-a2d5b36ec0ba
 caps.latest.revision: 14
 author: dotnet-bot

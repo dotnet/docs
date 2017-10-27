@@ -9,10 +9,10 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "COM interop, creating COM objects"
+  - "COM interop [Visual Basic], creating COM objects"
   - "COM objects, creating"
-  - "COM interop, walkthroughs"
-  - "object creation, COM objects"
+  - "COM interop [Visual Basic], walkthroughs"
+  - "object creation [Visual Basic], COM objects"
   - "COM objects, walkthroughs"
 ms.assetid: 7b07a463-bc72-4392-9ba0-9dfcb697a44f
 caps.latest.revision: 30

@@ -11,9 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "custom controls [Windows Forms], composite controls"
-  - "composite controls"
-  - "UserControl class"
-  - "composite controls, Windows Forms"
+  - "composite controls [Windows Forms]"
+  - "composite controls [Windows Forms], Windows Forms"
   - "controls [Windows Forms], composite"
 ms.assetid: d086f2a3-baa3-4e09-b40c-a5bb3cfc51a6
 caps.latest.revision: 18

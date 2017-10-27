@@ -36,6 +36,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.Help" />
+    <altmember cref="T:System.Windows.Forms.HelpProvider" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -54,6 +56,7 @@
         <param name="mousePos">The coordinates of the mouse pointer.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.HelpEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.HelpEventArgs.MousePos" />
       </Docs>
     </Member>
     <Member MemberName="Handled">

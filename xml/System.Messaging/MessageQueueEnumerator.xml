@@ -40,6 +40,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Messaging.MessageQueue" />
+    <altmember cref="M:System.Messaging.MessageQueue.GetMessageQueueEnumerator" />
   </Docs>
   <Members>
     <Member MemberName="Close">
@@ -65,6 +67,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Messaging.MessageQueueEnumerator.MoveNext" />
       </Docs>
     </Member>
     <Member MemberName="Current">
@@ -97,6 +100,8 @@
  -or-  
   
  You called <see cref="P:System.Messaging.MessageQueueEnumerator.Current" /> after a call to <see cref="M:System.Messaging.MessageQueueEnumerator.MoveNext" /> had returned false (indicating the cursor is located after the last queue in the enumeration).</exception>
+        <altmember cref="M:System.Messaging.MessageQueueEnumerator.MoveNext" />
+        <altmember cref="M:System.Messaging.MessageQueueEnumerator.Reset" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -204,6 +209,7 @@
         </remarks>
         <exception cref="T:System.Messaging.MessageQueueException">The handle does not exist.</exception>
         <exception cref="T:System.Security.SecurityException">The calling code does not have browse permissions.</exception>
+        <altmember cref="P:System.Messaging.MessageQueueEnumerator.Current" />
       </Docs>
     </Member>
     <Member MemberName="MoveNext">
@@ -236,6 +242,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The calling code does not have browse permissions.</exception>
+        <altmember cref="P:System.Messaging.MessageQueueEnumerator.Current" />
+        <altmember cref="M:System.Messaging.MessageQueueEnumerator.Reset" />
+        <altmember cref="T:System.Messaging.MessageQueue" />
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -263,6 +272,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Messaging.MessageQueueEnumerator.MoveNext" />
+        <altmember cref="P:System.Messaging.MessageQueueEnumerator.Current" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerator.Current">
@@ -283,5 +294,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.Messaging.MessageQueueEnumerator" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

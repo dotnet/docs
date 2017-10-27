@@ -154,6 +154,8 @@ SVC_UPDATE.EXE
   
  ]]></format>
     </remarks>
+    <altmember cref="Overload:System.Diagnostics.EventLog.WriteEvent" />
+    <altmember cref="T:System.Diagnostics.EventLogEntry" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -310,6 +312,10 @@ SVC_UPDATE.EXE
  -or-  
   
  The <paramref name="categoryId" /> parameter is a negative value or a value larger than <see cref="F:System.UInt16.MaxValue" />.</exception>
+        <altmember cref="P:System.Diagnostics.EventInstance.CategoryId" />
+        <altmember cref="P:System.Diagnostics.EventInstance.InstanceId" />
+        <altmember cref="Overload:System.Diagnostics.EventLog.WriteEvent" />
+        <altmember cref="T:System.Diagnostics.EventSourceCreationData" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -473,6 +479,11 @@ SVC_UPDATE.EXE
  -or-  
   
  <paramref name="categoryId" /> is a negative value or a value larger than <see cref="F:System.UInt16.MaxValue" />.</exception>
+        <altmember cref="P:System.Diagnostics.EventInstance.CategoryId" />
+        <altmember cref="P:System.Diagnostics.EventInstance.InstanceId" />
+        <altmember cref="T:System.Diagnostics.EventLogEntry" />
+        <altmember cref="Overload:System.Diagnostics.EventLog.WriteEvent" />
+        <altmember cref="T:System.Diagnostics.EventSourceCreationData" />
       </Docs>
     </Member>
     <Member MemberName="CategoryId">
@@ -631,6 +642,10 @@ SVC_UPDATE.EXE
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The property is set to a negative value or to a value larger than <see cref="F:System.UInt16.MaxValue" />.</exception>
+        <altmember cref="Overload:System.Diagnostics.EventLog.WriteEvent" />
+        <altmember cref="P:System.Diagnostics.EventLogEntry.CategoryNumber" />
+        <altmember cref="P:System.Diagnostics.EventSourceCreationData.CategoryResourceFile" />
+        <altmember cref="P:System.Diagnostics.EventLogInstaller.CategoryResourceFile" />
       </Docs>
     </Member>
     <Member MemberName="EntryType">
@@ -779,6 +794,9 @@ SVC_UPDATE.EXE
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The property is not set to a valid <see cref="T:System.Diagnostics.EventLogEntryType" /> value.</exception>
+        <altmember cref="T:System.Diagnostics.EventLogEntryType" />
+        <altmember cref="P:System.Diagnostics.EventLogEntry.EntryType" />
+        <altmember cref="Overload:System.Diagnostics.EventLog.WriteEvent" />
       </Docs>
     </Member>
     <Member MemberName="InstanceId">
@@ -929,7 +947,20 @@ SVC_UPDATE.EXE
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The property is set to a negative value or to a value larger than <see cref="F:System.UInt32.MaxValue" />.</exception>
+        <altmember cref="Overload:System.Diagnostics.EventLog.WriteEvent" />
+        <altmember cref="P:System.Diagnostics.EventLogEntry.InstanceId" />
+        <altmember cref="P:System.Diagnostics.EventSourceCreationData.MessageResourceFile" />
+        <altmember cref="P:System.Diagnostics.EventLogInstaller.MessageResourceFile" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.EventInstance" /> class using language-neutral information to define an event log entry.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

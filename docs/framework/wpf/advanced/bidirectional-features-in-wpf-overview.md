@@ -10,10 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "FlowDocument property"
-  - "Span elements"
-  - "FlowDirection property"
-  - "bidirectional features"
+  - "Span elements [WPF]"
+  - "bidirectional features [WPF]"
 ms.assetid: fd850e25-7dba-408c-b521-8873e51dc968
 caps.latest.revision: 22
 author: dotnet-bot

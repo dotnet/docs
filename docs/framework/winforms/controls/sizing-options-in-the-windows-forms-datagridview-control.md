@@ -11,11 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], row sizing"
-  - "data grids, column sizing"
+  - "data grids [Windows Forms], column sizing"
   - "DataGridView control [Windows Forms], column sizing"
   - "DataGridView control [Windows Forms], sizing options"
-  - "data grids, row sizing"
-  - "data grids, sizing options"
+  - "data grids [Windows Forms], row sizing"
+  - "data grids [Windows Forms], sizing options"
 ms.assetid: a5620a9c-0d06-41e3-8934-c25ddb16c9e6
 caps.latest.revision: 29
 author: dotnet-bot

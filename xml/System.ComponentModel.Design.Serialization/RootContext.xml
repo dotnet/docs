@@ -20,6 +20,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.Design.Serialization.IDesignerSerializationManager" />
+    <altmember cref="T:System.ComponentModel.Design.Serialization.DesignerSerializationManager" />
+    <altmember cref="T:System.ComponentModel.Design.Serialization.CodeDomSerializer" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,6 +45,8 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="expression" /> or <paramref name="value" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.ComponentModel.Design.Serialization.CodeDomSerializer" />
+        <altmember cref="T:System.CodeDom.CodeExpression" />
       </Docs>
     </Member>
     <Member MemberName="Expression">
@@ -78,6 +83,8 @@
         <summary>Gets the root object of the object graph.</summary>
         <value>The root object of the object graph.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.Design.Serialization.CodeDomSerializer" />
+        <altmember cref="T:System.CodeDom.CodeExpression" />
       </Docs>
     </Member>
   </Members>

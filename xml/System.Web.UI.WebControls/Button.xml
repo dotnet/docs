@@ -190,6 +190,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.WebControls.Button.CommandName" />
+    <altmember cref="P:System.Web.UI.WebControls.Button.CommandArgument" />
+    <altmember cref="E:System.Web.UI.WebControls.Button.Click" />
+    <altmember cref="E:System.Web.UI.WebControls.Button.Command" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -309,6 +313,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Page.Validate" />
+        <altmember cref="P:System.Web.UI.WebControls.Button.ValidationGroup" />
       </Docs>
     </Member>
     <Member MemberName="Click">
@@ -343,6 +349,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.Button.OnClick(System.EventArgs)" />
+        <altmember cref="T:System.Web.UI.WebControls.CommandEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="Command">
@@ -385,6 +393,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.Button.OnCommand(System.Web.UI.WebControls.CommandEventArgs)" />
+        <altmember cref="T:System.Web.UI.WebControls.CommandEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="CommandArgument">
@@ -436,6 +446,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.Button.Command" />
+        <altmember cref="M:System.Web.UI.WebControls.Button.OnCommand(System.Web.UI.WebControls.CommandEventArgs)" />
+        <altmember cref="P:System.Web.UI.WebControls.Button.CommandName" />
       </Docs>
     </Member>
     <Member MemberName="CommandName">
@@ -481,6 +494,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.Button.Command" />
+        <altmember cref="M:System.Web.UI.WebControls.Button.OnCommand(System.Web.UI.WebControls.CommandEventArgs)" />
+        <altmember cref="P:System.Web.UI.WebControls.Button.CommandArgument" />
       </Docs>
     </Member>
     <Member MemberName="GetPostBackOptions">
@@ -512,6 +528,7 @@
         <block subset="none" type="overrides">
           <para>You can override the <see cref="M:System.Web.UI.WebControls.Button.GetPostBackOptions" /> method in your derived class to modify the postback options for the button control, or to call client-side script when the button is clicked. Be sure to call the base class's <see cref="M:System.Web.UI.WebControls.Button.GetPostBackOptions" /> method so that the standard postback options are set.</para>
         </block>
+        <altmember cref="T:System.Web.UI.PostBackOptions" />
       </Docs>
     </Member>
     <Member MemberName="OnClick">
@@ -555,6 +572,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.Button.OnClick(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.Button.OnClick(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.Button.Click" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnClientClick">
@@ -600,6 +619,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.Button.Click" />
       </Docs>
     </Member>
     <Member MemberName="OnCommand">
@@ -651,6 +671,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.Button.OnCommand(System.Web.UI.WebControls.CommandEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.Button.OnCommand(System.Web.UI.WebControls.CommandEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.Button.Command" />
+        <altmember cref="T:System.Web.UI.WebControls.CommandEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -756,6 +778,7 @@ End Sub
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Page.PreviousPage" />
       </Docs>
     </Member>
     <Member MemberName="RaisePostBackEvent">
@@ -784,6 +807,8 @@ End Sub
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.Button.Click" />
+        <altmember cref="E:System.Web.UI.WebControls.Button.Command" />
       </Docs>
     </Member>
     <Member MemberName="RenderContents">
@@ -817,6 +842,7 @@ End Sub
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackEventHandler.RaisePostBackEvent">
@@ -853,6 +879,8 @@ End Sub
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.Button.Click" />
+        <altmember cref="E:System.Web.UI.WebControls.Button.Command" />
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -899,6 +927,7 @@ End Sub
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.String.Empty" />
       </Docs>
     </Member>
     <Member MemberName="UseSubmitBehavior">
@@ -945,6 +974,7 @@ End Sub
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.ClientScriptManager.GetPostBackEventReference" />
       </Docs>
     </Member>
     <Member MemberName="ValidationGroup">
@@ -993,6 +1023,8 @@ End Sub
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Button.CausesValidation" />
+        <altmember cref="T:System.Web.UI.WebControls.RequiredFieldValidator" />
       </Docs>
     </Member>
   </Members>

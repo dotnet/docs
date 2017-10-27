@@ -9,15 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "FormatConvertedBitmap class"
-  - "images, converting to grayscale"
-  - "converting, images to grayscale"
-  - "classes, FormatConvertedBitmap"
-  - "grayscale, converting images to"
+  - "images [WPF], converting to grayscale"
+  - "converting [WPF], images to grayscale"
+  - "grayscale [WPF], converting images to"
 ms.assetid: 77935ff0-4500-4307-9710-96999dcf579f
 caps.latest.revision: 8
 author: dotnet-bot

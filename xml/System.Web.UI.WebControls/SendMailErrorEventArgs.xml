@@ -52,6 +52,10 @@
     <block subset="none" type="overrides">
       <para>When overriding <see cref="M:System.Web.UI.WebControls.ChangePassword.OnSendMailError(System.Web.UI.WebControls.SendMailErrorEventArgs)" /> in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.ChangePassword.OnSendMailError(System.Web.UI.WebControls.SendMailErrorEventArgs)" /> method of the base class to enable registered delegates to receive the event.</para>
     </block>
+    <altmember cref="E:System.Web.UI.WebControls.CreateUserWizard.SendMailError" />
+    <altmember cref="E:System.Web.UI.WebControls.ChangePassword.SendMailError" />
+    <altmember cref="E:System.Web.UI.WebControls.PasswordRecovery.SendMailError" />
+    <altmember cref="T:System.Net.Mail.MailMessage" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -70,6 +74,10 @@
         <param name="e">An <see cref="T:System.Exception" /> object containing the exception.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.SendMailErrorEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Web.UI.WebControls.CreateUserWizard.SendMailError" />
+        <altmember cref="E:System.Web.UI.WebControls.ChangePassword.SendMailError" />
+        <altmember cref="E:System.Web.UI.WebControls.PasswordRecovery.SendMailError" />
+        <altmember cref="T:System.Net.Mail.MailMessage" />
       </Docs>
     </Member>
     <Member MemberName="Exception">
@@ -116,6 +124,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.CreateUserWizard.SendMailError" />
+        <altmember cref="E:System.Web.UI.WebControls.ChangePassword.SendMailError" />
+        <altmember cref="E:System.Web.UI.WebControls.PasswordRecovery.SendMailError" />
+        <altmember cref="T:System.Net.Mail.MailMessage" />
       </Docs>
     </Member>
     <Member MemberName="Handled">
@@ -162,6 +174,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.CreateUserWizard.SendMailError" />
+        <altmember cref="E:System.Web.UI.WebControls.ChangePassword.SendMailError" />
+        <altmember cref="E:System.Web.UI.WebControls.PasswordRecovery.SendMailError" />
+        <altmember cref="T:System.Net.Mail.MailMessage" />
       </Docs>
     </Member>
   </Members>

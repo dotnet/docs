@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "alpha blending, compositing"
-  - "colors, blending"
-  - "colors, controlling transparency"
+  - "alpha blending [Windows Forms], compositing"
+  - "colors [Windows Forms], blending"
+  - "colors [Windows Forms], controlling transparency"
 ms.assetid: f331df2d-b395-4b0a-95be-24fec8c9bbb5
 caps.latest.revision: 14
 author: dotnet-bot

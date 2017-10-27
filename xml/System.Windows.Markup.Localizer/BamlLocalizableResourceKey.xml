@@ -34,6 +34,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Markup.Localizer.BamlLocalizer" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -202,5 +203,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares <see cref="T:System.Windows.Markup.Localizer.BamlLocalizableResourceKey" /> for equality.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

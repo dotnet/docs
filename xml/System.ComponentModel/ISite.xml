@@ -50,6 +50,10 @@
     <block subset="none" type="overrides">
       <para>To be a site, a class must implement the <see cref="T:System.ComponentModel.ISite" /> interface.</para>
     </block>
+    <altmember cref="T:System.ComponentModel.Component" />
+    <altmember cref="T:System.ComponentModel.IComponent" />
+    <altmember cref="T:System.ComponentModel.Container" />
+    <altmember cref="T:System.ComponentModel.IContainer" />
   </Docs>
   <Members>
     <Member MemberName="Component">

@@ -31,6 +31,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlSelect" />
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlSelectBuilder" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -185,6 +187,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
       </Docs>
     </Member>
     <Member MemberName="Line">
@@ -241,5 +244,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.HttpParseException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

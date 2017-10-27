@@ -44,6 +44,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.CancelEventHandler" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -69,6 +70,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.CancelEventArgs" /> class with the <see cref="P:System.ComponentModel.CancelEventArgs.Cancel" /> property set to <see langword="false" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.CancelEventHandler" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -98,6 +100,7 @@
           <see langword="true" /> to cancel the event; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.CancelEventArgs" /> class with the <see cref="P:System.ComponentModel.CancelEventArgs.Cancel" /> property set to the given value.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.CancelEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="Cancel">
@@ -140,5 +143,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.CancelEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -8,8 +8,8 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.Delegate"
 helpviewer_keywords: 
-  - "delegate keyword"
-  - "Delegate statement"
+  - "delegate keyword [Visual Basic]"
+  - "Delegate statement [Visual Basic]"
 ms.assetid: f799c518-0817-40cc-ad0b-4da846fdba57
 caps.latest.revision: 27
 author: dotnet-bot

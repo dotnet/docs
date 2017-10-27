@@ -1287,5 +1287,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RedirectFromLoginPage">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Redirects an authenticated user back to the originally requested URL or the default URL.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetAuthCookie">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an authentication cookie for a given user name.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

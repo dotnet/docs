@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "geometric paths, rotating objects by"
-  - "rotating objects by geometric paths"
-  - "matrix animation"
+  - "geometric paths [WPF], rotating objects by"
+  - "rotating objects by geometric paths [WPF]"
+  - "matrix animation [WPF]"
 ms.assetid: 877dc9aa-6bdc-4beb-8772-3efaec32c0f0
 caps.latest.revision: 14
 author: dotnet-bot

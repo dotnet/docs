@@ -23,6 +23,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Services.Protocols.SoapHeader" />
+    <altmember cref="T:System.Collections.CollectionBase" />
+    <altmember cref="T:System.Collections.IList" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -71,6 +74,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.IList.Add(System.Object)" />
+        <altmember cref="T:System.Web.Services.Protocols.SoapHeader" />
+        <altmember cref="T:System.Collections.IList" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -104,6 +110,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.IList.Contains(System.Object)" />
+        <altmember cref="T:System.Collections.IList" />
+        <altmember cref="T:System.Web.Services.Protocols.SoapHeader" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -144,6 +153,9 @@
  -or-  
   
  The number of elements in the source SoapHeaderCollection is greater than the available space from the <paramref name="index" /> parameter to the end of the destination array.</exception>
+        <altmember cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="T:System.Web.Services.Protocols.SoapHeader" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -176,6 +188,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.IList.IndexOf(System.Object)" />
+        <altmember cref="T:System.Collections.IList" />
+        <altmember cref="T:System.Web.Services.Protocols.SoapHeader" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -217,6 +232,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameteris not a valid index in the <see cref="T:System.Web.Services.Protocols.SoapHeaderCollection" />.</exception>
+        <altmember cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />
+        <altmember cref="T:System.Collections.IList" />
+        <altmember cref="T:System.Web.Services.Protocols.SoapHeader" />
+        <altmember cref="T:System.Collections.CollectionBase" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -291,6 +310,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.IList.Remove(System.Object)" />
+        <altmember cref="T:System.Collections.IList" />
+        <altmember cref="T:System.Web.Services.Protocols.SoapHeader" />
       </Docs>
     </Member>
   </Members>

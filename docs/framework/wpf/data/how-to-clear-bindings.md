@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "bindings, clearing"
-  - "clearing bindings"
-  - "data binding, clearing bindings"
+  - "bindings [WPF], clearing"
+  - "clearing bindings [WPF]"
+  - "data binding [WPF], clearing bindings"
 ms.assetid: 73962a93-32a9-4bcd-9240-bcfbb239093a
 caps.latest.revision: 12
 author: dotnet-bot

@@ -67,7 +67,7 @@
 |<xref:System.Windows.Ink.DrawingAttributes.Height%2A>|2 device independent pixels (DIP)|  
 |<xref:System.Windows.Ink.DrawingAttributes.IgnorePressure%2A>|`false`|  
 |<xref:System.Windows.Ink.DrawingAttributes.IsHighlighter%2A>|`false`|  
-|<xref:System.Windows.Ink.DrawingAttributes.StylusTip%2A>|<xref:System.Windows.Ink.StylusTip?displayProperty=nameWithType>|  
+|<xref:System.Windows.Ink.DrawingAttributes.StylusTip%2A>|<xref:System.Windows.Ink.StylusTip.Ellipse?displayProperty=nameWithType>|  
 |<xref:System.Windows.Ink.DrawingAttributes.StylusTipTransform%2A>|<xref:System.Windows.Media.Matrix.Identity%2A?displayProperty=nameWithType>|  
 |<xref:System.Windows.Ink.DrawingAttributes.Width%2A>|2 DIP|  
   
@@ -180,6 +180,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Ink.DrawingAttributes.AddPropertyData(System.Guid,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Color">
@@ -308,6 +309,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Ink.DrawingAttributes.AddPropertyData(System.Guid,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="FitToCurve">
@@ -364,6 +366,7 @@
         <summary>Serves as a hash function for a particular type.</summary>
         <returns>A hash code for the current <see cref="T:System.Object" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Object.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="GetPropertyData">
@@ -403,6 +406,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="propertyDataId" /> is not associated with a custom property of the <see cref="T:System.Windows.Ink.DrawingAttributes" /> object.</exception>
+        <altmember cref="M:System.Windows.Ink.DrawingAttributes.AddPropertyData(System.Guid,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetPropertyDataIds">
@@ -437,6 +441,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Ink.DrawingAttributes.AddPropertyData(System.Guid,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -957,6 +962,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="propertyDataId" /> is not associated with a custom property of the <see cref="T:System.Windows.Ink.DrawingAttributes" /> object.</exception>
+        <altmember cref="M:System.Windows.Ink.DrawingAttributes.AddPropertyData(System.Guid,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="StylusTip">

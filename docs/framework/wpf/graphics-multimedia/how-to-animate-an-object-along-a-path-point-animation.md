@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "animation, objects along paths (point animation)"
-  - "point animation"
+  - "animation [WPF], objects along paths (point animation)"
+  - "point animation [WPF]"
 ms.assetid: 1fa3f817-35bc-41a1-b366-f5a20b70da0c
 caps.latest.revision: 16
 author: dotnet-bot

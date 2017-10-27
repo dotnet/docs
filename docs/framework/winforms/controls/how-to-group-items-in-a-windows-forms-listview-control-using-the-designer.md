@@ -12,7 +12,7 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "ListView control [Windows Forms], grouping items"
   - "grouping"
-  - "groups, in Windows Forms controls"
+  - "groups [Windows Forms], in Windows Forms controls"
 ms.assetid: 8b615000-69d9-4c64-acaf-b54fa09b69e3
 caps.latest.revision: 8
 author: dotnet-bot

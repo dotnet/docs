@@ -9,9 +9,9 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "computer resources"
-  - "My.Computer object, tasks"
-  - "computer resources, accessing"
+  - "computer resources [Visual Basic]"
+  - "My.Computer object [Visual Basic], tasks"
+  - "computer resources [Visual Basic], accessing"
 ms.assetid: 75b81c88-f7c0-46e0-95c8-0c006d2120f9
 caps.latest.revision: 16
 author: dotnet-bot

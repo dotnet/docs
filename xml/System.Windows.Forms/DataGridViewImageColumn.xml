@@ -41,6 +41,14 @@
     <block subset="none" type="overrides">
       <para>When you derive from <see cref="T:System.Windows.Forms.DataGridViewImageColumn" /> and add new properties to the derived class, be sure to override the <see cref="M:System.Windows.Forms.DataGridViewImageColumn.Clone" /> method to copy the new properties during cloning operations. You should also call the base class's <see cref="M:System.Windows.Forms.DataGridViewImageColumn.Clone" /> method so that the properties of the base class are copied to the new cell.</para>
     </block>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewImageCell" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewImageCell.ValueIsIcon" />
+    <altmember cref="T:System.Drawing.Image" />
+    <altmember cref="T:System.Drawing.Icon" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewColumn.SortMode" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -63,6 +71,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewImageCell" />
+        <altmember cref="T:System.Drawing.Image" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -91,13 +102,26 @@
 |--------------|-----------|  
 |<xref:System.Windows.Forms.DataGridViewImageColumn.CellTemplate%2A>|A new <xref:System.Windows.Forms.DataGridViewImageCell> with its <xref:System.Windows.Forms.DataGridViewImageCell.ValueIsIcon%2A> property initialized to the `valuesAreIcons` parameter value.|  
 |<xref:System.Windows.Forms.DataGridViewImageColumn.ValuesAreIcons%2A>|The value of the `valuesAreIcons` parameter.|  
-|The <xref:System.Windows.Forms.DataGridViewCellStyle.Alignment%2A> property of the <xref:System.Windows.Forms.DataGridViewCellStyle> object returned by the <xref:System.Windows.Forms.DataGridViewImageColumn.DefaultCellStyle%2A> property.|<xref:System.Windows.Forms.DataGridViewContentAlignment?displayProperty=nameWithType>|  
+|The <xref:System.Windows.Forms.DataGridViewCellStyle.Alignment%2A> property of the <xref:System.Windows.Forms.DataGridViewCellStyle> object returned by the <xref:System.Windows.Forms.DataGridViewImageColumn.DefaultCellStyle%2A> property.|<xref:System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter?displayProperty=nameWithType>|  
 |The <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A> property of the <xref:System.Windows.Forms.DataGridViewCellStyle> object returned by the <xref:System.Windows.Forms.DataGridViewImageColumn.DefaultCellStyle%2A> property.|A standard error graphic of type <xref:System.Drawing.Icon> if `valuesAreIcons` is `true` and type <xref:System.Drawing.Bitmap> if `valuesAreIcons` is `false`.|  
   
  To ensure that the alpha channel of <xref:System.Drawing.Icon> cell values is painted correctly, use this constructor with a `valuesAreIcons` parameter value of `true`.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.Value" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewImageColumn.ValuesAreIcons" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewImageColumn.CellTemplate" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewImageCell" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewImageCell.ValueIsIcon" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewImageColumn.DefaultCellStyle" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.Alignment" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.NullValue" />
+        <altmember cref="T:System.Drawing.Icon" />
+        <altmember cref="T:System.Drawing.Bitmap" />
+        <altmember cref="T:System.Drawing.Image" />
       </Docs>
     </Member>
     <Member MemberName="CellTemplate">
@@ -144,6 +168,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The set type is not compatible with type <see cref="T:System.Windows.Forms.DataGridViewImageCell" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="Overload:System.Windows.Forms.DataGridViewImageColumn.#ctor" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewImageCell" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.InvalidateColumn(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -200,7 +229,7 @@
   
 |`DataGridViewCellStyle` property|Default value|  
 |--------------------------------------|-------------------|  
-|<xref:System.Windows.Forms.DataGridViewCellStyle.Alignment%2A>|<xref:System.Windows.Forms.DataGridViewContentAlignment?displayProperty=nameWithType>|  
+|<xref:System.Windows.Forms.DataGridViewCellStyle.Alignment%2A>|<xref:System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter?displayProperty=nameWithType>|  
 |<xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A>|A standard error graphic of type <xref:System.Drawing.Icon> if the initial <xref:System.Windows.Forms.DataGridViewImageColumn.ValuesAreIcons%2A> property value is `true`; otherwise, a standard error graphic of type <xref:System.Drawing.Bitmap>.|  
   
  These values override the value specified in the <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A> property of the <xref:System.Windows.Forms.DataGridView> control, but may be overridden by other cell style properties. For more information, see [Cell Styles in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/cell-styles-in-the-windows-forms-datagridview-control.md).  
@@ -219,6 +248,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.DefaultCellStyle" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -264,6 +296,12 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The value of the <see cref="P:System.Windows.Forms.DataGridViewImageColumn.CellTemplate" /> property is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewImageColumn.Image" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewImageColumn.Icon" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewImageColumn.CellTemplate" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewImageCell" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewImageCell.Description" />
       </Docs>
     </Member>
     <Member MemberName="Icon">
@@ -299,6 +337,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewImageColumn.ValuesAreIcons" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewImageCell.ValueIsIcon" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.Value" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewImageColumn.Image" />
+        <altmember cref="T:System.Drawing.Image" />
+        <altmember cref="T:System.Drawing.Icon" />
       </Docs>
     </Member>
     <Member MemberName="Image">
@@ -340,6 +385,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Drawing.Image" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewImageColumn.Icon" />
+        <altmember cref="T:System.Drawing.Icon" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewImageColumn.ValuesAreIcons" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewImageCell.ValueIsIcon" />
       </Docs>
     </Member>
     <Member MemberName="ImageLayout">
@@ -380,6 +431,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The value of the <see cref="P:System.Windows.Forms.DataGridViewImageColumn.CellTemplate" /> property is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewImageCellLayout" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewImageColumn.CellTemplate" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewImageCell" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewImageCell.ImageLayout" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -399,6 +455,7 @@
         <summary>Gets a string that describes the column.</summary>
         <returns>A <see cref="T:System.String" /> that describes the column.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.ToString" />
       </Docs>
     </Member>
     <Member MemberName="ValuesAreIcons">
@@ -438,7 +495,25 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The value of the <see cref="P:System.Windows.Forms.DataGridViewImageColumn.CellTemplate" /> property is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.Value" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewImageColumn.Icon" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewImageColumn.Image" />
+        <altmember cref="T:System.Drawing.Icon" />
+        <altmember cref="T:System.Drawing.Image" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewImageColumn.CellTemplate" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewImageCell" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewImageCell.ValueIsIcon" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewImageColumn" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

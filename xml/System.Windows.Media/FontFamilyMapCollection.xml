@@ -315,6 +315,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.FontFamilyMapCollection.CopyTo(System.Windows.Media.FontFamilyMap[],System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -392,6 +393,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.FontFamilyMapCollection.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Add">
@@ -421,6 +423,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.FontFamilyMapCollection.Add(System.Windows.Media.FontFamilyMap)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Contains">
@@ -451,6 +454,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.FontFamilyMapCollection.Contains(System.Windows.Media.FontFamilyMap)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IndexOf">
@@ -480,6 +484,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.FontFamilyMapCollection.IndexOf(System.Windows.Media.FontFamilyMap)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Insert">
@@ -510,6 +515,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.FontFamilyMapCollection.Insert(System.Int32,System.Windows.Media.FontFamilyMap)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsFixedSize">
@@ -565,6 +571,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.FontFamilyMapCollection.Item(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Remove">
@@ -593,6 +600,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.FontFamilyMapCollection.Remove(System.Windows.Media.FontFamilyMap)" />
       </Docs>
     </Member>
   </Members>

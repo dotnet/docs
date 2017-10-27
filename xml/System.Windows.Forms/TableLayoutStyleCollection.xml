@@ -35,6 +35,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.TableLayoutPanel" />
+    <altmember cref="T:System.Windows.Forms.TableLayoutStyle" />
+    <altmember cref="T:System.Windows.Forms.TableLayoutColumnStyleCollection" />
+    <altmember cref="T:System.Windows.Forms.TableLayoutRowStyleCollection" />
+    <altmember cref="T:System.Windows.Forms.ColumnStyle" />
+    <altmember cref="T:System.Windows.Forms.RowStyle" />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -124,6 +130,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TableLayoutStyleCollection.Item(System.Int32)" />
+        <altmember cref="P:System.Collections.ArrayList.Count" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -156,6 +164,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The property value is already assigned to another owner. You must first remove it from its current location or clone it.</exception>
+        <altmember cref="P:System.Collections.ArrayList.Item(System.Int32)" />
+        <altmember cref="T:System.Windows.Forms.ColumnStyle" />
+        <altmember cref="T:System.Windows.Forms.RowStyle" />
+        <altmember cref="T:System.Windows.Forms.TableLayoutStyle" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">

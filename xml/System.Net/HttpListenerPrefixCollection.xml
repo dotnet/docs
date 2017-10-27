@@ -104,6 +104,7 @@
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.HttpListener" /> associated with this collection is closed.</exception>
         <exception cref="T:System.Net.HttpListenerException">A Windows function call failed. Check the exception's <see cref="P:System.Net.HttpListenerException.ErrorCode" /> property to determine the cause of the exception. This exception is thrown if another <see cref="T:System.Net.HttpListener" /> has already added the prefix <paramref name="uriPrefix" />.</exception>
         <permission cref="T:System.Net.WebPermission">To accept network connections. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Accept" /></permission>
+        <altmember cref="T:System.Net.HttpListener" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -150,6 +151,7 @@
         <block subset="none" type="usage">
           <para>This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).</para>
         </block>
+        <altmember cref="T:System.Net.HttpListener" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -198,6 +200,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="uriPrefix" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Net.HttpListener" />
       </Docs>
     </Member>
     <MemberGroup MemberName="CopyTo">
@@ -268,6 +271,7 @@
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.HttpListener" /> associated with this collection is closed.</exception>
         <exception cref="T:System.InvalidCastException">
           <paramref name="array" /> cannot store string values.</exception>
+        <altmember cref="T:System.Net.HttpListener" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -318,6 +322,7 @@
           <paramref name="array" /> has more than one dimension.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">This collection contains more elements than can be stored in <paramref name="array" /> starting at <paramref name="offset" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.HttpListener" /> associated with this collection is closed.</exception>
+        <altmember cref="T:System.Net.HttpListener" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -354,6 +359,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.HttpListener" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -400,6 +406,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.HttpListener" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -461,6 +468,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.HttpListener" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -507,6 +515,7 @@
         <block subset="none" type="usage">
           <para>This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).</para>
         </block>
+        <altmember cref="T:System.Net.HttpListener" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -546,6 +555,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.HttpListener" />
       </Docs>
     </Member>
   </Members>

@@ -4,22 +4,48 @@ description: Learn how to install the .NET Framework on Windows 10.
 author: rlander
 ms.author: mairaw
 keywords: .NET Framework, Install
-ms.date: 08/03/2017
+ms.date: 10/16/2017
 ms.topic: article
+ms.custom: "updateeachrelease"
 ms.prod: .net-framework
 ---
+# Install the .NET Framework on Windows 10 and Windows Server 2016
 
-# Install the .NET Framework on Windows 10
+The .NET Framework is required to run many applications on Windows. You can use the following instructions to install it. You may have arrived on this page after trying to run an application and seeing the following dialog on your machine.
 
-You may need the .NET Framework to run an app on Windows 10. You can use the following instructions to help you. The instructions depend on which version of the .NET Framework you need.
+![This application could not be started](./media/this-application-could-not-be-started.png)
 
-## .NET Framework 4.7
+These instructions will help you install the .NET Framework versions you need. The [.NET Framework 4.7.1](https://www.microsoft.com/en-us/download/details.aspx?id=56115&desc=dotnet47) is the latest version.
 
-The .NET Framework 4.7 is included with the [Windows 10 Creators Update](https://www.microsoft.com/software-download/windows10).
+## .NET Framework 4.7.1
 
-If you're on an earlier version of Windows 10, you need to upgrade to [Windows 10 Creators Update](https://www.microsoft.com/software-download/windows10) to get the .NET Framework 4.7.
+* [Download the .NET Framework 4.7.1](https://www.microsoft.com/net/framework/versions/net471?utm_source=ms-docs&utm_medium=referral)
 
-The .NET Framework 4.7 supports apps built for .NET Framework 4.0 or later. Other versions of the .NET Framework are available from the [Download .NET Framework](https://www.microsoft.com/net/download/framework) webpage.
+The .NET Framework 4.7.1 is included with:
+
+* [Windows 10 Fall Creators Update](https://www.microsoft.com/software-download/windows10)
+* [Windows Server 2016 Version 1709](https://docs.microsoft.com/windows-server/get-started/get-started-with-1709)
+
+You can install the [.NET Framework 4.7.1](https://www.microsoft.com/en-us/download/details.aspx?id=56115&desc=dotnet47) on:
+
+* Windows 10 Creators Update (Version 1703)
+* Windows 10 Anniversary Update (Version 1607)
+* Windows Server 2016
+
+The .NET Framework 4.7.1 is not supported on:
+
+* Windows 10 1507
+* Windows 10 1511
+
+You need to upgrade to a later Windows 10 version if you are using Windows 10 1507 or 1511 if you want to install the .NET Framework 4.7.1.
+
+The [.NET Framework 4.7.1](https://www.microsoft.com/en-us/download/details.aspx?id=56115&desc=dotnet47) can be used to run applications built for .NET Framework 4.0 or later.
+
+## .NET Framework 4.6.1
+
+The [.NET Framework 4.6.1](https://www.microsoft.com/en-us/download/details.aspx?id=49981) is the latest supported .NET Framework version on Windows 10 1507 and 1511.
+
+The .NET Framework 4.6.1 supports apps built for .NET Framework 4.0 through 4.6.1.
 
 ## .NET Framework 3.5
 
@@ -29,4 +55,10 @@ The .NET Framework 3.5 supports apps built for .NET Framework 1.0 through 3.5.
 
 ## Help
 
-You can [contact Microsoft for help](mailto:dotnet-install-help@microsoft.com?subject=Help installing .NET Framework) if you cannot get the correct version of the .NET Framework installed.
+You can [contact Microsoft for help](mailto:dotnet-install-help@service.microsoft.com?subject=Install-Help) if you cannot get the correct version of the .NET Framework installed.
+
+## See also
+
+[Download the .NET Framework](https://www.microsoft.com/net/download/framework?utm_source=ms-docs&utm_medium=referral)   
+[Troubleshoot blocked .NET Framework installations and uninstallations](troubleshoot-blocked-installations-and-uninstallations.md)   
+[Install the .NET Framework for developers](guide-for-developers.md)

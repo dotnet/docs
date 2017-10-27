@@ -1142,5 +1142,59 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a string representation of the <see cref="T:System.Windows.Media.Media3D.Rect3D" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Media3D.Rect3D" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Union">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Updates a specified <see cref="T:System.Windows.Media.Media3D.Rect3D" /> to reflect the union of that <see cref="T:System.Windows.Media.Media3D.Rect3D" /> and a second specified <see cref="T:System.Windows.Media.Media3D.Rect3D" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Offset">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets an offset value by which the location of a <see cref="T:System.Windows.Media.Media3D.Rect3D" /> is translated.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Intersect">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Updates a specified <see cref="T:System.Windows.Media.Media3D.Rect3D" /> to reflect the intersection of that <see cref="T:System.Windows.Media.Media3D.Rect3D" /> and a second specified <see cref="T:System.Windows.Media.Media3D.Rect3D" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Contains">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a value that indicates whether a specified <see cref="T:System.Windows.Media.Media3D.Point3D" /> is within the <see cref="T:System.Windows.Media.Media3D.Rect3D" />, including its edges.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

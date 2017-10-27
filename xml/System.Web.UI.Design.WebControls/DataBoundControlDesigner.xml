@@ -27,6 +27,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DataBoundControl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,6 +43,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.DataBoundControlDesigner" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataBoundControl" />
       </Docs>
     </Member>
     <Member MemberName="ActionLists">
@@ -60,6 +62,8 @@
         <summary>Gets the <see cref="T:System.ComponentModel.Design.DesignerActionListCollection" /> object for this designer.</summary>
         <value>The <see cref="T:System.ComponentModel.Design.DesignerActionListCollection" /> object associated with this designer.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.ActionLists" />
+        <altmember cref="T:System.Web.UI.WebControls.DataBoundControl" />
       </Docs>
     </Member>
     <Member MemberName="ConnectToDataSource">
@@ -98,6 +102,7 @@
       <Docs>
         <summary>Invokes the standard dialog box to create a new data source control, and sets the new data source control's ID to the <see cref="P:System.Web.UI.WebControls.BaseDataBoundControl.DataSourceID" /> property of the data-bound control.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataBoundControl" />
       </Docs>
     </Member>
     <Member MemberName="DataBind">
@@ -119,6 +124,7 @@
         <param name="dataBoundControl">The <see cref="T:System.Web.UI.WebControls.DataBoundControl" /> object to bind to the data source.</param>
         <summary>Binds the <see cref="T:System.Web.UI.WebControls.DataBoundControl" /> object to the data source.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataBoundControl" />
       </Docs>
     </Member>
     <Member MemberName="DataMember">
@@ -137,6 +143,7 @@
         <summary>Gets the shadowed <see cref="P:System.Web.UI.WebControls.DataBoundControl.DataMember" /> property of the underlying data-bound control.</summary>
         <value>The shadowed <see cref="P:System.Web.UI.WebControls.DataBoundControl.DataMember" /> of the underlying data-bound control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataBoundControl" />
       </Docs>
     </Member>
     <Member MemberName="DataSourceDesigner">
@@ -155,6 +162,7 @@
         <summary>Gets the designer of the data source of the underlying data-bound control.</summary>
         <value>The designer of the data source of the underlying data-bound control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataBoundControl" />
       </Docs>
     </Member>
     <Member MemberName="DesignerView">
@@ -173,6 +181,7 @@
         <summary>Gets the <see cref="T:System.Web.UI.Design.DesignerDataSourceView" /> object associated with the data source of this designer.</summary>
         <value>The <see cref="T:System.Web.UI.Design.DesignerDataSourceView" /> object associated with the data source of this designer.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataBoundControl" />
       </Docs>
     </Member>
     <Member MemberName="DisconnectFromDataSource">
@@ -191,6 +200,7 @@
       <Docs>
         <summary>Disconnects the data-bound control from data source events.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataBoundControl" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -220,6 +230,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataBoundControl" />
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeDataSource">
@@ -239,6 +250,8 @@
         <summary>Gets the design-time data source from either the associated <see langword="DataSourceDesigner" /> or the <see langword="DataSource" /> property.</summary>
         <returns>An object that implements an <see cref="T:System.Collections.IEnumerable" /> interface referencing the design-time data source.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Collections.IEnumerable" />
+        <altmember cref="T:System.Web.UI.WebControls.DataBoundControl" />
       </Docs>
     </Member>
     <Member MemberName="GetSampleDataSource">
@@ -258,6 +271,7 @@
         <summary>Gets dummy sample data to render the data-bound control on the design surface if sample data cannot be created from the <see langword="DataSourceDesigner" /> or <see langword="DataSource" /> properties.</summary>
         <returns>An object that implements the <see cref="T:System.Collections.IEnumerable" /> interface containing dummy sample data used to render the data-bound control on the design surface.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataBoundControl" />
       </Docs>
     </Member>
     <Member MemberName="PreFilterProperties">
@@ -289,6 +303,7 @@
         <block subset="none" type="overrides">
           <para>If you override the <see cref="M:System.Web.UI.Design.WebControls.DataBoundControlDesigner.PreFilterProperties(System.Collections.IDictionary)" /> method, call the base implementation before performing other processing.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.DataBoundControl" />
       </Docs>
     </Member>
     <Member MemberName="SampleRowCount">
@@ -310,6 +325,7 @@
         <block subset="none" type="overrides">
           <para>To change the number of rows that the data-bound control displays on the design surface, override the <see cref="P:System.Web.UI.Design.WebControls.DataBoundControlDesigner.SampleRowCount" /> property to return the number of rows that you want displayed.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.DataBoundControl" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.Design.IDataBindingSchemaProvider.CanRefreshSchema">
@@ -415,6 +431,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.WebControls.BaseDataListDesigner" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.Design.IDataSourceProvider.GetSelectedDataSource">
@@ -441,6 +458,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.IDataSourceProvider" />
       </Docs>
     </Member>
     <Member MemberName="UseDataSourcePickerActionList">
@@ -463,6 +481,7 @@
         <block subset="none" type="overrides">
           <para>You may want to override this property to provide a dialog box to select a data source control or to disable the user from changing the data source control associated with the data-bound control.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.DataBoundControl" />
       </Docs>
     </Member>
   </Members>

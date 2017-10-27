@@ -12,7 +12,7 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "custom controls [C#]"
   - "user controls [Windows Forms], creating with Visual C#"
-  - "UserControl class, walkthroughs"
+  - "UserControl class [Windows Forms], walkthroughs"
   - "user controls [C#]"
   - "custom controls [Windows Forms], creating"
 ms.assetid: f88481a8-c746-4a36-9479-374ce5f2e91f

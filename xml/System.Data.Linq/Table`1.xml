@@ -1294,5 +1294,23 @@ db.SubmitChanges()
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="System.Data.Linq.ITable.Attach">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Allows deserialized entities to be associated with a new instance of a <see cref="T:System.Data.Linq.DataContext" /> so that they can be updated or deleted from the database.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="System.Data.Linq.ITable.AttachAll">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Attaches all entities of a collection to the <see cref="T:System.Data.Linq.DataContext" /> in either a modified or unmodified state.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

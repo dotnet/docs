@@ -145,6 +145,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.InkCanvas.OnActiveEditingModeChanged(System.Windows.RoutedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ActiveEditingModeChangedEvent">
@@ -319,6 +320,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">Permission to paste content from the Clipboard to the <see cref="T:System.Windows.Controls.InkCanvas" />. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" />.</permission>
+        <altmember cref="M:System.Windows.Controls.InkCanvas.CopySelection" />
+        <altmember cref="Overload:System.Windows.Controls.InkCanvas.Paste" />
       </Docs>
     </Member>
     <Member MemberName="Children">
@@ -403,6 +406,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.InkCanvas.CanPaste" />
+        <altmember cref="Overload:System.Windows.Controls.InkCanvas.Paste" />
       </Docs>
     </Member>
     <Member MemberName="CutSelection">
@@ -482,6 +487,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.InkCanvas.Strokes" />
       </Docs>
     </Member>
     <Member MemberName="DefaultDrawingAttributesProperty">
@@ -571,6 +577,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.StylusPointProperties" />
+        <altmember cref="T:System.Windows.Input.StylusPointProperty" />
+        <altmember cref="T:System.Windows.Input.StylusPointPropertyInfo" />
       </Docs>
     </Member>
     <Member MemberName="DynamicRenderer">
@@ -642,6 +651,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.InkCanvas.EditingModeInverted" />
       </Docs>
     </Member>
     <Member MemberName="EditingModeChanged">
@@ -891,6 +901,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Ink.StylusShape" />
       </Docs>
     </Member>
     <Member MemberName="Gesture">
@@ -1143,6 +1154,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.InkCanvas.GetSelectedStrokes" />
+        <altmember cref="Overload:System.Windows.Controls.InkCanvas.Select" />
       </Docs>
     </Member>
     <Member MemberName="GetSelectedStrokes">
@@ -1179,6 +1192,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Controls.InkCanvas.Select" />
+        <altmember cref="M:System.Windows.Controls.InkCanvas.GetSelectedElements" />
       </Docs>
     </Member>
     <Member MemberName="GetSelectionBounds">
@@ -1270,6 +1285,7 @@
         <summary>Overrides <see cref="M:System.Windows.Media.Visual.GetVisualChild(System.Int32)" />, and returns a child at the specified index from a collection of child elements.</summary>
         <returns>The requested child element. This should not return <see langword="null" />; if the provided index is out of range, an exception is thrown.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.FrameworkElement.GetVisualChild(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="HitTestCore">
@@ -1440,6 +1456,7 @@
         <summary>Measures the size in layout required for child elements and determines a size for the <see cref="System.Windows.Controls.InkCanvas" /> object.</summary>
         <returns>The size that this element determines it needs during layout, based on its calculations of child element sizes.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.FrameworkElement.MeasureOverride(System.Windows.Size)" />
       </Docs>
     </Member>
     <Member MemberName="MoveEnabled">
@@ -1635,6 +1652,7 @@
         <param name="e">The event data that describes the property that changed, as well as old and new values.</param>
         <summary>Invoked whenever the effective value of any dependency property on this <see cref="T:System.Windows.FrameworkElement" /> has been updated. The specific dependency property that changed is reported in the arguments parameter. Overrides <see cref="M:System.Windows.DependencyObject.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.FrameworkElement.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnSelectionChanged">
@@ -1663,6 +1681,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.InkCanvas.OnSelectionChanging(System.Windows.Controls.InkCanvasSelectionChangingEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnSelectionChanging">
@@ -1691,6 +1710,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.InkCanvas.OnSelectionChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnSelectionMoved">
@@ -1719,6 +1739,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.InkCanvas.OnSelectionMoving(System.Windows.Controls.InkCanvasSelectionEditingEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnSelectionMoving">
@@ -1747,6 +1768,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.InkCanvas.OnSelectionMoved(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnSelectionResized">
@@ -1775,6 +1797,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.InkCanvas.OnSelectionResizing(System.Windows.Controls.InkCanvasSelectionEditingEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnSelectionResizing">
@@ -1803,6 +1826,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.InkCanvas.OnSelectionResized(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnStrokeCollected">
@@ -1947,6 +1971,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for pasting content from the Clipboard to the <see cref="T:System.Windows.Controls.InkCanvas" />. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" />.</permission>
+        <altmember cref="M:System.Windows.Controls.InkCanvas.CopySelection" />
+        <altmember cref="M:System.Windows.Controls.InkCanvas.CanPaste" />
       </Docs>
     </Member>
     <Member MemberName="Paste">
@@ -1984,6 +2010,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">Permission to paste content from the Clipboard to the <see cref="T:System.Windows.Controls.InkCanvas" />. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" />.</permission>
+        <altmember cref="M:System.Windows.Controls.InkCanvas.CopySelection" />
+        <altmember cref="M:System.Windows.Controls.InkCanvas.CanPaste" />
       </Docs>
     </Member>
     <Member MemberName="PreferredPasteFormats">
@@ -2265,6 +2293,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.InkCanvas.SelectionChanging" />
+        <altmember cref="M:System.Windows.Controls.InkCanvas.GetSelectedStrokes" />
+        <altmember cref="M:System.Windows.Controls.InkCanvas.GetSelectedElements" />
       </Docs>
     </Member>
     <Member MemberName="SelectionChanging">
@@ -2304,6 +2335,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.InkCanvasSelectionChangingEventArgs.GetSelectedElements" />
+        <altmember cref="M:System.Windows.Controls.InkCanvasSelectionChangingEventArgs.GetSelectedStrokes" />
+        <altmember cref="M:System.Windows.Controls.InkCanvasSelectionChangingEventArgs.SetSelectedElements(System.Collections.Generic.IEnumerable{System.Windows.UIElement})" />
+        <altmember cref="M:System.Windows.Controls.InkCanvasSelectionChangingEventArgs.SetSelectedStrokes(System.Windows.Ink.StrokeCollection)" />
       </Docs>
     </Member>
     <Member MemberName="SelectionMoved">
@@ -2336,6 +2371,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.InkCanvas.SelectionMoving" />
+        <altmember cref="M:System.Windows.Controls.InkCanvas.GetSelectedStrokes" />
+        <altmember cref="M:System.Windows.Controls.InkCanvas.GetSelectedElements" />
       </Docs>
     </Member>
     <Member MemberName="SelectionMoving">
@@ -2372,6 +2410,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.InkCanvas.SelectionMoved" />
+        <altmember cref="M:System.Windows.Controls.InkCanvas.GetSelectedStrokes" />
+        <altmember cref="M:System.Windows.Controls.InkCanvas.GetSelectedElements" />
       </Docs>
     </Member>
     <Member MemberName="SelectionResized">
@@ -2406,6 +2447,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.InkCanvas.SelectionResizing" />
+        <altmember cref="M:System.Windows.Controls.InkCanvas.GetSelectedStrokes" />
+        <altmember cref="M:System.Windows.Controls.InkCanvas.GetSelectedElements" />
       </Docs>
     </Member>
     <Member MemberName="SelectionResizing">
@@ -2442,6 +2486,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.InkCanvas.SelectionResized" />
+        <altmember cref="M:System.Windows.Controls.InkCanvas.GetSelectedStrokes" />
+        <altmember cref="M:System.Windows.Controls.InkCanvas.GetSelectedElements" />
       </Docs>
     </Member>
     <Member MemberName="SetBottom">
@@ -2658,6 +2705,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Ink.Stroke.AddPropertyData(System.Guid,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="StrokeCollectedEvent">
@@ -2814,6 +2862,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Ink.StrokeCollection" />
       </Docs>
     </Member>
     <Member MemberName="StrokesProperty">
@@ -2974,6 +3023,7 @@
         <summary>Gets the number of visual child elements within this element.</summary>
         <value>The number of visual child elements for this element.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.FrameworkElement.VisualChildrenCount" />
       </Docs>
     </Member>
   </Members>

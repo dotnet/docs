@@ -39,6 +39,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.LinqDataSource" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -94,6 +95,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.DataSourceSelectArguments" />
       </Docs>
     </Member>
     <Member MemberName="GroupByParameters">
@@ -119,6 +121,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.LinqDataSource.GroupByParameters" />
       </Docs>
     </Member>
     <Member MemberName="OrderByParameters">
@@ -146,6 +149,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.LinqDataSource.OrderByParameters" />
       </Docs>
     </Member>
     <Member MemberName="OrderGroupsByParameters">
@@ -220,6 +224,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.LinqDataSource.TableName" />
       </Docs>
     </Member>
     <Member MemberName="SelectParameters">
@@ -258,6 +263,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.LinqDataSource.SelectParameters" />
       </Docs>
     </Member>
     <Member MemberName="WhereParameters">
@@ -293,6 +299,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.LinqDataSource.WhereParameters" />
       </Docs>
     </Member>
   </Members>

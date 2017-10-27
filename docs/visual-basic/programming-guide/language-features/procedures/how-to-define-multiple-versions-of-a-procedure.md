@@ -9,11 +9,11 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "procedures, defining"
+  - "procedures [Visual Basic], defining"
   - "Visual Basic code, procedures"
-  - "procedures, overloading"
-  - "procedures, multiple versions"
-  - "procedure overloading, multiple versions"
+  - "procedures [Visual Basic], overloading"
+  - "procedures [Visual Basic], multiple versions"
+  - "procedure overloading [Visual Basic], multiple versions"
 ms.assetid: 71ccdd66-1b00-4b66-bee4-6926c0d696f4
 caps.latest.revision: 14
 author: dotnet-bot

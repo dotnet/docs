@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "data binding, making data available for binding"
-  - "binding data, making data available for"
+  - "data binding [WPF], making data available for binding"
+  - "binding data [WPF], making data available for"
 ms.assetid: 7103c2e8-0e31-4a13-bf12-ca382221a8d5
 caps.latest.revision: 14
 author: dotnet-bot

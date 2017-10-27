@@ -50,6 +50,7 @@
         <summary>Gets the control type for the <see cref="T:System.Windows.Controls.GroupBox" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.GroupBoxAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" />.</summary>
         <returns>The <see cref="F:System.Windows.Automation.Peers.AutomationControlType.Group" /> enumeration value.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlTypeCore" />
       </Docs>
     </Member>
     <Member MemberName="GetClassNameCore">
@@ -95,6 +96,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.GetNameCore" />
       </Docs>
     </Member>
   </Members>

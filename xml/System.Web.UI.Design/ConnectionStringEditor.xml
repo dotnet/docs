@@ -30,6 +30,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Drawing.Design.UITypeEditor" />
+    <altmember cref="T:System.Web.UI.Design.ConnectionStringsExpressionEditor" />
+    <altmember cref="T:System.Web.UI.WebControls.SqlDataSource" />
+    <altmember cref="T:System.Web.UI.Design.WebControls.SqlDataSourceDesigner" />
+    <altmember cref="T:System.ComponentModel.EditorAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -82,6 +87,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.Design.ConnectionStringEditor.GetEditStyle" />
       </Docs>
     </Member>
     <Member MemberName="GetEditStyle">
@@ -113,6 +119,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.Design.ConnectionStringEditor.EditValue" />
+        <altmember cref="T:System.Drawing.Design.UITypeEditorEditStyle" />
       </Docs>
     </Member>
     <Member MemberName="GetProviderName">
@@ -142,6 +150,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.WebControls.SqlDataSourceConnectionStringEditor" />
       </Docs>
     </Member>
     <Member MemberName="SetProviderName">

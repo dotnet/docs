@@ -41,6 +41,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.CodeDom.CodeAttributeArgument" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -144,6 +145,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.CodeDom.CodeAttributeArgumentCollection.AddRange(System.CodeDom.CodeAttributeArgument[])" />
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -182,6 +184,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="value" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.CodeDom.CodeAttributeArgumentCollection.Add(System.CodeDom.CodeAttributeArgument)" />
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -220,6 +223,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="value" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.CodeDom.CodeAttributeArgumentCollection.Add(System.CodeDom.CodeAttributeArgument)" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -340,6 +344,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.CodeDom.CodeAttributeArgumentCollection.Contains(System.CodeDom.CodeAttributeArgument)" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -451,5 +456,23 @@
         <exception cref="T:System.ArgumentException">The specified object is not found in the collection.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddRange">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies the elements of the specified <see cref="T:System.CodeDom.CodeAttributeArgument" /> array to the end of the collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeAttributeArgumentCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

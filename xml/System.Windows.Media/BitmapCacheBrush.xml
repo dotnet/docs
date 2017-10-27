@@ -60,6 +60,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.BitmapCache" />
+    <altmember cref="T:System.Windows.Media.Visual" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -161,6 +163,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.BitmapCache" />
+        <altmember cref="P:System.Windows.Media.BitmapCacheBrush.Target" />
       </Docs>
     </Member>
     <Member MemberName="BitmapCacheProperty">
@@ -281,6 +285,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Visual" />
+        <altmember cref="P:System.Windows.Media.BitmapCacheBrush.BitmapCache" />
       </Docs>
     </Member>
     <Member MemberName="TargetProperty">
@@ -300,5 +306,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.BitmapCacheBrush" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

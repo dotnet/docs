@@ -25,6 +25,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.User" />
+    <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.BuiltInRole" />
+    <altmember cref="T:System.Security.Principal.WindowsBuiltInRole" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -47,6 +50,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.User" />
+        <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.BuiltInRole" />
+        <altmember cref="T:System.Security.Principal.WindowsBuiltInRole" />
       </Docs>
     </Member>
     <Member MemberName="CanConvertTo">
@@ -80,6 +86,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.User" />
+        <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.BuiltInRole" />
+        <altmember cref="T:System.Security.Principal.WindowsBuiltInRole" />
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -122,6 +131,9 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="destinationType" /> is <see langword="Nothing" />.</exception>
         <exception cref="T:System.NotSupportedException">The conversion cannot be performed.</exception>
+        <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.User" />
+        <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.BuiltInRole" />
+        <altmember cref="T:System.Security.Principal.WindowsBuiltInRole" />
       </Docs>
     </Member>
   </Members>

@@ -42,7 +42,7 @@
   
 -   If the contract permits or allows sessions then all operations for which <xref:System.ServiceModel.Description.DurableOperationAttribute.CanCreateInstance%2A> is set to `true` must be request/response operations, that is <xref:System.Workflow.Activities.OperationInfo.IsOneWay%2A> cannot be set to `true`.  
   
--   If <xref:System.ServiceModel.Description.DurableServiceAttribute.SaveStateInOperationTransaction%2A> is set to `true`, then all operations on the service must either be marked with <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A?displayProperty=nameWithType> set to `true` or marked with <xref:System.ServiceModel.TransactionFlowOption?displayProperty=nameWithType>. Additionally, <xref:System.ServiceModel.ConcurrencyMode> must be set to Single.  
+-   If <xref:System.ServiceModel.Description.DurableServiceAttribute.SaveStateInOperationTransaction%2A> is set to `true`, then all operations on the service must either be marked with <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A?displayProperty=nameWithType> set to `true` or marked with <xref:System.ServiceModel.TransactionFlowOption.Mandatory?displayProperty=nameWithType>. Additionally, <xref:System.ServiceModel.ConcurrencyMode> must be set to Single.  
   
  ]]></format>
     </remarks>
@@ -133,7 +133,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If <xref:System.ServiceModel.Description.DurableServiceAttribute.SaveStateInOperationTransaction%2A> is set to `true`, then all operations on the service must either be marked with <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A?displayProperty=nameWithType> set to `true` or marked with <xref:System.ServiceModel.TransactionFlowOption?displayProperty=nameWithType>. Additionally, <xref:System.ServiceModel.ConcurrencyMode> must be set to Single.  
+ If <xref:System.ServiceModel.Description.DurableServiceAttribute.SaveStateInOperationTransaction%2A> is set to `true`, then all operations on the service must either be marked with <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A?displayProperty=nameWithType> set to `true` or marked with <xref:System.ServiceModel.TransactionFlowOption.Mandatory?displayProperty=nameWithType>. Additionally, <xref:System.ServiceModel.ConcurrencyMode> must be set to Single.  
   
  Setting <xref:System.ServiceModel.Description.DurableServiceAttribute.SaveStateInOperationTransaction%2A> to `true` makes the service state transactional with the operation transaction. This means that if the operation's transaction rolls back, the service state also rolls back.  
   

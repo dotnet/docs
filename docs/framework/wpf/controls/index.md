@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "controls [WPF], about WPF controls"
 ms.assetid: 3f255a8a-35a8-4712-9065-472ff7d75599

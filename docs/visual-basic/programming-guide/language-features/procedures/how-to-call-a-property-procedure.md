@@ -11,9 +11,9 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "Visual Basic code, procedures"
   - "Visual Basic code, properties"
-  - "procedures, calling"
+  - "procedures [Visual Basic], calling"
   - "properties [Visual Basic], property procedures"
-  - "procedure calls, property procedures"
+  - "procedure calls [Visual Basic], property procedures"
 ms.assetid: 96bc4d74-d9c3-4b7a-954d-58ac8553cd94
 caps.latest.revision: 16
 author: dotnet-bot

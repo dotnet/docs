@@ -35,6 +35,12 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
+    <altmember cref="T:System.ComponentModel.Design.DesignSurface" />
+    <altmember cref="T:System.ComponentModel.Design.IDesignerEventService" />
+    <altmember cref="T:System.ComponentModel.Design.IDesignerHost" />
+    <altmember cref="T:System.IServiceProvider" />
+    <altmember cref="T:System.ComponentModel.Design.Serialization.DesignerLoader" />
+    <altmember cref="T:System.ComponentModel.Design.Serialization.IDesignerLoaderService" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -68,6 +74,8 @@
         <param name="parentProvider">A parent service provider. Service requests are forwarded to this provider if they cannot be resolved by the design surface manager.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignSurfaceManager" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.Design.DesignSurface" />
+        <altmember cref="T:System.IServiceProvider" />
       </Docs>
     </Member>
     <Member MemberName="ActiveDesignSurface">
@@ -129,6 +137,8 @@
         <summary>Creates an instance of a design surface.</summary>
         <returns>A new design surface instance.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.Design.DesignSurface" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerEventService" />
       </Docs>
     </Member>
     <Member MemberName="CreateDesignSurface">
@@ -165,6 +175,8 @@
         <block subset="none" type="overrides">
           <para>If an external implementation of the service was provided, it is the responsibility of the class that derives from the <see cref="T:System.ComponentModel.Design.DesignSurfaceManager" /> class to raise the <see cref="E:System.ComponentModel.Design.IDesignerEventService.DesignerCreated" /> event.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.Design.DesignSurface" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerEventService" />
       </Docs>
     </Member>
     <Member MemberName="CreateDesignSurfaceCore">
@@ -194,6 +206,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.DesignSurface" />
+        <altmember cref="T:System.IServiceProvider" />
       </Docs>
     </Member>
     <Member MemberName="DesignSurfaceCreated">
@@ -253,6 +267,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.DesignSurface" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerEventService" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -399,5 +415,32 @@
         </block>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignSurfaceManager" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.ComponentModel.Design.DesignSurfaceManager" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateDesignSurface">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an instance of a design surface.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides programmatic access to the <see langword="&lt;configBuilders&gt;" /> section. This class can't be inherited.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationBuildersSection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +48,8 @@
         <ReturnType>System.Configuration.ProviderSettingsCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.Configuration.ConfigurationBuilderCollection" /> of all <see cref="T:System.Configuration.ConfigurationBuilder" /> objects in all participating configuration files.</summary>
+        <value>The <see cref="T:System.Configuration.ConfigurationBuilder" /> objects in all participating configuration files.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,10 +69,13 @@
         <Parameter Name="builderName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="builderName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="builderName">A configuration builder name or a comma-separated list of names. If <c>builderName</c> is a comma-separated list of <see cref="T:System.Configuration.ConfigurationBuilder" /> names, a special aggregate <see cref="T:System.Configuration.ConfigurationBuilder" /> object that references and applies all named configuration builders is returned.</param>
+        <summary>Returns a <see cref="T:System.Configuration.ConfigurationBuilder" /> object that has the provided configuration builder name.</summary>
+        <returns>A <see cref="T:System.Configuration.ConfigurationBuilder" /> object that has the provided configuration <paramref name="builderName" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Exception">A configuration provider type can't be instantiated under a partially trusted security policy (<see cref="T:System.Security.AllowPartiallyTrustedCallersAttribute" /> is not present on the target assembly).</exception>
+        <exception cref="T:System.IO.FileNotFoundException">ConfigurationBuilders.IgnoreLoadFailure is disabled by default. If a bin-deployed configuration builder can't be found or instantiated for one of the sections read from the configuration file, a <see cref="T:System.IO.FileNotFoundException" /> is trapped and reported. If you wish to ignore load failures, enable ConfigurationBuilders.IgnoreLoadFailure.</exception>
+        <exception cref="T:System.TypeLoadException">ConfigurationBuilders.IgnoreLoadFailure is disabled by default. While loading a configuration builder if a <see cref="T:System.TypeLoadException" /> occurs for one of the sections read from the configuration file, a <see cref="T:System.TypeLoadException" /> is trapped and reported. If you wish to ignore load failures, enable ConfigurationBuilders.IgnoreLoadFailure.</exception>
       </Docs>
     </Member>
     <Member MemberName="Properties">

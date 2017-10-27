@@ -697,5 +697,50 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateXmlResponse">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a XML formatted message.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateAtom10Response">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a message formatted according to the Atom 1.0 specification.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateJsonResponse&lt;T&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a message in JSON format.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateStreamResponse">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a stream formatted message.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateTextResponse">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a text formatted message.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

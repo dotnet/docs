@@ -97,6 +97,7 @@
  -or-  
   
  the values of the two controls are not comparable.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.BaseValidator" />
       </Docs>
     </Member>
     <Member MemberName="ControlToCompare">
@@ -133,6 +134,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CompareValidator.ControlToCompare" />
       </Docs>
     </Member>
     <Member MemberName="CreateWebValidator">

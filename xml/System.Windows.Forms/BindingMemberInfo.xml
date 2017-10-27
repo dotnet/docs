@@ -31,6 +31,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.Binding" />
+    <altmember cref="M:System.Windows.Forms.BindingMemberInfo.#ctor(System.String)" />
+    <altmember cref="P:System.Windows.Forms.Binding.DataSource" />
+    <altmember cref="P:System.Windows.Forms.Binding.PropertyName" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -56,6 +60,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.BindingMemberInfo.#ctor(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="BindingField">
@@ -90,6 +95,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Binding" />
+        <altmember cref="P:System.Windows.Forms.BindingMemberInfo.BindingPath" />
+        <altmember cref="P:System.Windows.Forms.BindingMemberInfo.BindingMember" />
       </Docs>
     </Member>
     <Member MemberName="BindingMember">
@@ -126,6 +134,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Binding" />
+        <altmember cref="P:System.Windows.Forms.BindingMemberInfo.BindingField" />
+        <altmember cref="P:System.Windows.Forms.BindingMemberInfo.BindingPath" />
       </Docs>
     </Member>
     <Member MemberName="BindingPath">
@@ -160,6 +171,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Binding" />
+        <altmember cref="P:System.Windows.Forms.BindingMemberInfo.BindingField" />
+        <altmember cref="P:System.Windows.Forms.BindingMemberInfo.BindingMember" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -190,6 +204,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.BindingMemberInfo.op_Equality(System.Windows.Forms.BindingMemberInfo,System.Windows.Forms.BindingMemberInfo)" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">

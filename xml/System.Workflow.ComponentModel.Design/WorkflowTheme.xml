@@ -755,5 +755,14 @@
         <exception cref="T:System.InvalidOperationException">The property value cannot be set because the workflow theme is read-only.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Load">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads a <see cref="T:System.Workflow.ComponentModel.Design.WorkflowTheme" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

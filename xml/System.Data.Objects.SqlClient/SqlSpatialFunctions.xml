@@ -510,5 +510,50 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Filter">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Offers a fast, index-only intersection method to determine if a geography instance intersects another SqlGeography instance, assuming an index is available.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="InstanceOf">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Tests if the SqlGeography instance is the same as the specified type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BufferWithTolerance">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a geometric object representing the union of all point values whose distance from an instance is less than or equal to a specified value, allowing for a specified tolerance.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Reduce">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an approximation of the given geography instance produced by running the Douglas-Peucker algorithm on the instance with the given tolerance.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AsTextZM">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the Open Geospatial Consortium (OGC) Well-Known Text (WKT) representation of a geography instance augmented with any Z (elevation) and M (measure) values carried by the instance.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

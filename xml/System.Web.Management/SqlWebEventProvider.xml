@@ -76,6 +76,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Management.WebEventProvider" />
+    <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -126,6 +128,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Management.WebBaseEventCollection" />
       </Docs>
     </Member>
     <Member MemberName="Initialize">

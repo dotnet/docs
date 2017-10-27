@@ -10,7 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "radio buttons, grouping"
+  - "radio buttons [Windows Forms], grouping"
   - "controls [Windows Forms], grouping"
   - "Windows Forms controls, grouping"
   - "RadioButton control [Windows Forms], grouping"

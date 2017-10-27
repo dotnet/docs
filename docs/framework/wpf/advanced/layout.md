@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "WPF layout system"
+  - "WPF layout system [WPF]"
   - "controls [WPF], layout system"
   - "layout system [WPF]"
 ms.assetid: 3eecdced-3623-403a-a077-7595453a9221

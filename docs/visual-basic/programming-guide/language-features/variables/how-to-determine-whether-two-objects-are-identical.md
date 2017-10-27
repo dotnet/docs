@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "testing, objects"
+  - "testing [Visual Basic], objects"
   - "objects [Visual Basic], comparing"
-  - "object variables, determining identity"
+  - "object variables [Visual Basic], determining identity"
 ms.assetid: 7829f817-0d1f-4749-a707-de0b95e0cf5c
 caps.latest.revision: 19
 author: dotnet-bot

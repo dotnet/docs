@@ -32,7 +32,6 @@ Table-valued parameters provide an easy way to marshal multiple rows of data fro
 |--------------|-----------------|  
 |[Table-Valued Parameters (Database Engine)](http://go.microsoft.com/fwlink/?LinkId=98363) in [!INCLUDE[ssNoVersion](../../../../../includes/ssnoversion-md.md)] Books Online|Describes how to create and use table-valued parameters.|  
 |[User-Defined Table Types](http://go.microsoft.com/fwlink/?LinkId=98364) in [!INCLUDE[ssNoVersion](../../../../../includes/ssnoversion-md.md)] Books Online|Describes user-defined table types that are used to declare table-valued parameters.|  
-|The [Microsoft SQL Server Database Engine](http://go.microsoft.com/fwlink/?LinkId=120507) section of [CodePlex](http://go.microsoft.com/fwlink/?LinkID=67739)|Contains samples that demonstrate how to use [!INCLUDE[ssNoVersion](../../../../../includes/ssnoversion-md.md)] features and functionality.|  
   
 ## Passing Multiple Rows in Previous Versions of SQL Server  
  Before table-valued parameters were introduced to [!INCLUDE[ssNoVersion](../../../../../includes/ssnoversion-md.md)] 2008, the options for passing multiple rows of data to a stored procedure or a parameterized SQL command were limited. A developer could choose from the following options for passing multiple rows to the server:  

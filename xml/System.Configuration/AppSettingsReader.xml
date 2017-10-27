@@ -67,6 +67,7 @@ class Program
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.AppSettingsSection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -136,6 +137,7 @@ class Program
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.AppSettingsSection" />
       </Docs>
     </Member>
     <Member MemberName="GetValue">
@@ -186,6 +188,7 @@ class Program
  \- or -  
   
  The value in the <see langword="&lt;appSettings&gt;" /> configuration section for <paramref name="key" /> is not of type <paramref name="type" />.</exception>
+        <altmember cref="T:System.Configuration.AppSettingsSection" />
       </Docs>
     </Member>
   </Members>

@@ -10,7 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "Clone method"
+  - "Clone method [WPF]"
 ms.assetid: 2a6a1900-aa55-45fa-9382-241d569a2dc4
 caps.latest.revision: 5
 author: dotnet-bot

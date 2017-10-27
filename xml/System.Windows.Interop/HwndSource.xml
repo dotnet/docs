@@ -76,6 +76,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Interop.HwndHost" />
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -349,6 +350,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">to add handling. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+        <altmember cref="T:System.Windows.Interop.HwndSourceHook" />
+        <altmember cref="M:System.Windows.Interop.HwndSource.RemoveHook(System.Windows.Interop.HwndSourceHook)" />
       </Docs>
     </Member>
     <Member MemberName="AutoResized">
@@ -454,6 +457,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Interop.HwndSource.Handle" />
       </Docs>
     </Member>
     <Member MemberName="DefaultAcquireHwndFocusInMenuMode">
@@ -481,6 +485,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">to get this property. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="P:System.Windows.Interop.HwndSourceParameters.AcquireHwndFocusInMenuMode" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -512,6 +517,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Interop.HwndSource.IsDisposed" />
       </Docs>
     </Member>
     <Member MemberName="Disposed">
@@ -538,6 +544,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Interop.HwndSource.Dispose" />
       </Docs>
     </Member>
     <Member MemberName="DpiChanged">
@@ -602,6 +609,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+        <altmember cref="T:System.Windows.Interop.WindowInteropHelper" />
       </Docs>
     </Member>
     <Member MemberName="GetCompositionTargetCore">
@@ -636,6 +644,8 @@
         <block subset="none" type="overrides">
           <para>Implement this method to return a type-specific visual target. <see cref="T:System.Windows.Interop.HwndSource" /> implements this method to return <see cref="T:System.Windows.Interop.HwndTarget" />.</para>
         </block>
+        <altmember cref="T:System.Windows.Media.CompositionTarget" />
+        <altmember cref="P:System.Windows.Interop.HwndSource.CompositionTarget" />
       </Docs>
     </Member>
     <Member MemberName="Handle">
@@ -689,6 +699,7 @@
         <returns>
           <see langword="true" /> if the sink or one of its contained components has focus; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Interop.IKeyboardInputSink.HasFocusWithin" />
       </Docs>
     </Member>
     <Member MemberName="IsDisposed">
@@ -715,6 +726,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Interop.HwndSource.Dispose" />
       </Docs>
     </Member>
     <Member MemberName="KeyboardInputSiteCore">
@@ -742,6 +754,7 @@
         <value>A reference to the container's <see cref="T:System.Windows.Interop.IKeyboardInputSite" /> interface; or <see langword="null" /> if no site is assigned. The default is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">to set this property. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+        <altmember cref="P:System.Windows.Interop.IKeyboardInputSink.KeyboardInputSite" />
       </Docs>
     </Member>
     <Member MemberName="OnDpiChanged">
@@ -811,6 +824,7 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="msg" /> is not WM_KEYDOWN, WM_SYSKEYDOWN, WM_CHAR, or WM_DEADCHAR.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+        <altmember cref="M:System.Windows.Interop.IKeyboardInputSink.OnMnemonic(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)" />
       </Docs>
     </Member>
     <Member MemberName="RegisterKeyboardInputSinkCore">
@@ -839,6 +853,7 @@
         <returns>The <see cref="T:System.Windows.Interop.IKeyboardInputSite" /> site of the contained component.</returns>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+        <altmember cref="M:System.Windows.Interop.IKeyboardInputSink.RegisterKeyboardInputSink(System.Windows.Interop.IKeyboardInputSink)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveHook">
@@ -875,6 +890,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">to remove handlers. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+        <altmember cref="M:System.Windows.Interop.HwndSource.AddHook(System.Windows.Interop.HwndSourceHook)" />
+        <altmember cref="T:System.Windows.Interop.HwndSourceHook" />
       </Docs>
     </Member>
     <Member MemberName="RestoreFocusMode">
@@ -938,6 +955,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">to set this property. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+        <altmember cref="P:System.Windows.Interop.HwndTarget.RootVisual" />
       </Docs>
     </Member>
     <Member MemberName="SizeToContent">
@@ -965,6 +983,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Window.SizeToContent" />
       </Docs>
     </Member>
     <Member MemberName="SizeToContentChanged">
@@ -989,6 +1008,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Interop.HwndSource.AutoResized" />
+        <altmember cref="P:System.Windows.Interop.HwndSource.SizeToContent" />
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Interop.IKeyboardInputSink.HasFocusWithin">
@@ -1250,6 +1271,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="request" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Interop.IKeyboardInputSink.TabInto(System.Windows.Input.TraversalRequest)" />
       </Docs>
     </Member>
     <Member MemberName="TranslateAcceleratorCore">
@@ -1281,6 +1303,7 @@
           <see langword="true" /> if the message was handled by the method implementation; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+        <altmember cref="M:System.Windows.Interop.IKeyboardInputSink.TranslateAccelerator(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)" />
       </Docs>
     </Member>
     <Member MemberName="TranslateCharCore">

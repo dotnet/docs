@@ -9,7 +9,7 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "files, moving"
+  - "files [Visual Basic], moving"
 ms.assetid: 53a7457b-5815-41ad-b37d-28537c1fb77a
 caps.latest.revision: 20
 author: dotnet-bot

@@ -14,6 +14,8 @@
     <summary>Represents errors that occur when you run the command-line compiler jsc.exe.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.CmdLineError" />
+    <altmember cref="T:Microsoft.JScript.CmdLineOptionParser" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,6 +32,8 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.CmdLineException" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.CmdLineError" />
+        <altmember cref="T:Microsoft.JScript.CmdLineOptionParser" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -49,6 +53,8 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.CmdLineException" /> class, using the specified error message.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.CmdLineError" />
+        <altmember cref="T:Microsoft.JScript.CmdLineOptionParser" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -70,6 +76,7 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.CmdLineException" /> class, using the specified error code and culture information.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.CmdLineOptionParser" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -91,6 +98,8 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.CmdLineException" /> class, using serialized data.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.CmdLineError" />
+        <altmember cref="T:Microsoft.JScript.CmdLineOptionParser" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -112,6 +121,8 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.CmdLineException" /> class, using the specified error message and a reference to the inner exception that is the cause of this exception.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.CmdLineError" />
+        <altmember cref="T:Microsoft.JScript.CmdLineOptionParser" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -135,6 +146,7 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.CmdLineException" /> class, using the specified error code, context, and culture information.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.CmdLineOptionParser" />
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -164,6 +176,8 @@
         <summary>Stores serialized object data about the exception that is being thrown.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.CmdLineError" />
+        <altmember cref="T:Microsoft.JScript.CmdLineOptionParser" />
       </Docs>
     </Member>
     <Member MemberName="Message">
@@ -183,6 +197,8 @@
         <value>The error message that explains the reason for the exception.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.CmdLineError" />
+        <altmember cref="T:Microsoft.JScript.CmdLineOptionParser" />
       </Docs>
     </Member>
     <Member MemberName="ResourceKey">
@@ -206,7 +222,19 @@
         <returns>The key for <paramref name="errorCode" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.CmdLineOptionParser" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.CmdLineException" /> class.</summary>
+        <altmember cref="T:Microsoft.JScript.CmdLineError" />
+        <altmember cref="T:Microsoft.JScript.CmdLineOptionParser" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -59,6 +59,8 @@
     <block subset="none" type="overrides">
       <para>A derived class must minimally implement the <see cref="M:System.IO.TextReader.Peek" /> and <see cref="M:System.IO.TextReader.Read" /> methods to make a useful instance of <see cref="T:System.IO.TextReader" />.</para>
     </block>
+    <altmember cref="T:System.IO.StringReader" />
+    <altmember cref="T:System.IO.StreamReader" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -96,6 +98,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.StringReader" />
+        <altmember cref="T:System.IO.StreamReader" />
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -135,6 +139,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.StringReader" />
+        <altmember cref="T:System.IO.StreamReader" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -279,6 +285,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.StringReader" />
+        <altmember cref="T:System.IO.StreamReader" />
       </Docs>
     </Member>
     <Member MemberName="Peek">
@@ -326,6 +334,8 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextReader" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="M:System.IO.StreamReader.Peek" />
+        <altmember cref="M:System.IO.StringReader.Peek" />
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -369,6 +379,8 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextReader" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="M:System.IO.StreamReader.Read" />
+        <altmember cref="M:System.IO.StringReader.Read" />
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -426,6 +438,8 @@
           <paramref name="index" /> or <paramref name="count" /> is negative.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextReader" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="M:System.IO.StreamReader.Read(System.Char[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.IO.StringReader.Read(System.Char[],System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ReadAsync">
@@ -488,6 +502,8 @@
         <exception cref="T:System.ArgumentException">The sum of <paramref name="index" /> and <paramref name="count" /> is larger than the buffer length.</exception>
         <exception cref="T:System.ObjectDisposedException">The text reader has been disposed.</exception>
         <exception cref="T:System.InvalidOperationException">The reader is currently in use by a previous read operation.</exception>
+        <altmember cref="M:System.IO.StreamReader.ReadAsync(System.Char[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.IO.StringReader.ReadAsync(System.Char[],System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ReadBlock">
@@ -545,6 +561,7 @@
           <paramref name="index" /> or <paramref name="count" /> is negative.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextReader" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="M:System.IO.StreamReader.ReadBlock(System.Char[],System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ReadBlockAsync">
@@ -605,6 +622,8 @@
         <exception cref="T:System.ArgumentException">The sum of <paramref name="index" /> and <paramref name="count" /> is larger than the buffer length.</exception>
         <exception cref="T:System.ObjectDisposedException">The text reader has been disposed.</exception>
         <exception cref="T:System.InvalidOperationException">The reader is currently in use by a previous read operation.</exception>
+        <altmember cref="M:System.IO.StreamReader.ReadBlockAsync(System.Char[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.IO.StringReader.ReadBlockAsync(System.Char[],System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ReadLine">
@@ -656,6 +675,8 @@
         <exception cref="T:System.OutOfMemoryException">There is insufficient memory to allocate a buffer for the returned string.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextReader" /> is closed.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The number of characters in the next line is larger than <see cref="F:System.Int32.MaxValue" /></exception>
+        <altmember cref="M:System.IO.StreamReader.ReadLine" />
+        <altmember cref="M:System.IO.StringReader.ReadLine" />
       </Docs>
     </Member>
     <Member MemberName="ReadLineAsync">
@@ -707,6 +728,8 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The number of characters in the next line is larger than <see cref="F:System.Int32.MaxValue" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The text reader has been disposed.</exception>
         <exception cref="T:System.InvalidOperationException">The reader is currently in use by a previous read operation.</exception>
+        <altmember cref="M:System.IO.StreamReader.ReadLineAsync" />
+        <altmember cref="M:System.IO.StringReader.ReadLineAsync" />
       </Docs>
     </Member>
     <Member MemberName="ReadToEnd">
@@ -756,6 +779,8 @@
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextReader" /> is closed.</exception>
         <exception cref="T:System.OutOfMemoryException">There is insufficient memory to allocate a buffer for the returned string.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The number of characters in the next line is larger than <see cref="F:System.Int32.MaxValue" /></exception>
+        <altmember cref="M:System.IO.StreamReader.ReadToEnd" />
+        <altmember cref="M:System.IO.StringReader.ReadToEnd" />
       </Docs>
     </Member>
     <Member MemberName="ReadToEndAsync">
@@ -811,6 +836,8 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The number of characters is larger than <see cref="F:System.Int32.MaxValue" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The text reader has been disposed.</exception>
         <exception cref="T:System.InvalidOperationException">The reader is currently in use by a previous read operation.</exception>
+        <altmember cref="M:System.IO.StreamReader.ReadToEndAsync" />
+        <altmember cref="M:System.IO.StringReader.ReadToEndAsync" />
       </Docs>
     </Member>
     <Member MemberName="Synchronized">
@@ -853,5 +880,27 @@
           <paramref name="reader" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Read">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads data from the text reader.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases all resources used by the <see cref="T:System.IO.TextReader" /> object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

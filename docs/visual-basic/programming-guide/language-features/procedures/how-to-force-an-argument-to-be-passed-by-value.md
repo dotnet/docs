@@ -9,16 +9,16 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "procedures, arguments"
-  - "procedures, parameters"
+  - "procedures [Visual Basic], arguments"
+  - "procedures [Visual Basic], parameters"
   - "procedure arguments"
   - "Visual Basic code, procedures"
   - "arguments [Visual Basic], ByVal"
   - "arguments [Visual Basic], passing by value"
   - "procedure parameters"
-  - "procedures, calling"
+  - "procedures [Visual Basic], calling"
   - "arguments [Visual Basic], in parentheses"
-  - "procedure arguments, in parentheses"
+  - "procedure arguments [Visual Basic], in parentheses"
   - "arguments [Visual Basic], changing value"
 ms.assetid: 77b4f2d2-1055-4c2f-a521-874d1db86946
 caps.latest.revision: 16

@@ -55,6 +55,7 @@
         <param name="writer">The text writer to receive output.</param>
         <summary>Generates the target-specific markup for the control to which the control adapter is attached. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.HtmlSelectionListAdapter.Render(System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="RequiresFormTag">
@@ -74,6 +75,7 @@
         <value>
           <see langword="true" /> if the adapter generates markup that requires **&lt;Form&gt;** tags for form submission; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.Adapters.HtmlControlAdapter.RequiresFormTag" />
       </Docs>
     </Member>
   </Members>

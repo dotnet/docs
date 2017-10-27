@@ -111,8 +111,8 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Security.Principal.SecurityIdentifier&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of allowed <see cref="T:System.Security.Principal.SecurityIdentifier" /> instances.</summary>
+        <value>A collection of allowed <see cref="T:System.Security.Principal.SecurityIdentifier" /> instances.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -362,5 +362,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.NamedPipeTransportBindingElement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

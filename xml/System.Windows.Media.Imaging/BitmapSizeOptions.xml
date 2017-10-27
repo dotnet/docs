@@ -13,6 +13,7 @@
   <Docs>
     <summary>Defines size-related attributes of a cached bitmap image. A bitmap is scaled based on values that are defined by this class.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Media.Imaging.BitmapSource" />
   </Docs>
   <Members>
     <Member MemberName="FromEmptyOptions">
@@ -102,6 +103,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Imaging.Rotation" />
       </Docs>
     </Member>
     <Member MemberName="FromWidth">

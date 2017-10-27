@@ -2862,5 +2862,59 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateBookmark">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a point at which a NativeActivity can passively wait to be resumed.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ScheduleActivity">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Schedules the specified NativeActivity.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetSavedOriginalValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates the object to save the original value for the current activity.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RemoveBookmark">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the specified bookmark.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Assigns a value to the specified object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the value of the specified object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

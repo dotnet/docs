@@ -12,7 +12,7 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "GDI+, about GDI+"
   - "GDI+"
-  - "graphics, GDI+"
+  - "graphics [Windows Forms], GDI+"
 ms.assetid: a98a76ab-e455-49c9-891c-0491ac932f2c
 caps.latest.revision: 21
 author: dotnet-bot

@@ -401,6 +401,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Wizard" />
+    <altmember cref="T:System.Web.UI.WebControls.CreateUserWizardStep" />
+    <altmember cref="T:System.Web.UI.WebControls.WizardStep" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -501,6 +504,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.Question" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.AnswerLabelText" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.AnswerRequiredErrorMessage" />
+        <altmember cref="E:System.Web.UI.WebControls.CreateUserWizard.SendingMail" />
       </Docs>
     </Member>
     <Member MemberName="AnswerLabelText">
@@ -531,6 +538,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.Answer" />
       </Docs>
     </Member>
     <Member MemberName="AnswerRequiredErrorMessage">
@@ -561,6 +569,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.Answer" />
       </Docs>
     </Member>
     <Member MemberName="AutoGeneratePassword">
@@ -633,6 +642,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.CompleteWizardStep" />
       </Docs>
     </Member>
     <Member MemberName="CompleteSuccessText">
@@ -769,6 +779,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.Password" />
       </Docs>
     </Member>
     <Member MemberName="ConfirmPasswordCompareErrorMessage">
@@ -799,6 +810,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.Password" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.ConfirmPassword" />
       </Docs>
     </Member>
     <Member MemberName="ConfirmPasswordLabelText">
@@ -829,6 +842,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.ConfirmPassword" />
       </Docs>
     </Member>
     <Member MemberName="ConfirmPasswordRequiredErrorMessage">
@@ -859,6 +873,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.ConfirmPassword" />
       </Docs>
     </Member>
     <Member MemberName="ContinueButtonClick">
@@ -885,6 +900,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.CreateUserWizard.OnContinueButtonClick(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ContinueButtonCommandName">
@@ -949,6 +965,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonText" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonStyle" />
       </Docs>
     </Member>
     <Member MemberName="ContinueButtonStyle">
@@ -1012,6 +1031,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonText" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="ContinueButtonText">
@@ -1053,6 +1075,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="ContinueButtonType">
@@ -1077,6 +1102,9 @@
         <value>One of the <see cref="T:System.Web.UI.WebControls.ButtonType" /> enumeration values. The default value is <see cref="F:System.Web.UI.WebControls.ButtonType.Button" />.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified button type is not one of the <see cref="T:System.Web.UI.WebControls.ButtonType" /> values.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonText" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="ContinueDestinationPageUrl">
@@ -1207,6 +1235,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.CreateUserWizard.OnCreatedUser(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="CreateUserButtonImageUrl">
@@ -1243,6 +1272,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.CreateUserButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.CreateUserButtonText" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.CreateUserButtonType" />
       </Docs>
     </Member>
     <Member MemberName="CreateUserButtonStyle">
@@ -1306,6 +1338,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.CreateUserButtonText" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.CreateUserButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.CreateUserButtonImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="CreateUserButtonText">
@@ -1348,6 +1383,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified button type is not one of the <see cref="T:System.Web.UI.WebControls.ButtonType" /> values.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.CreateUserButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.CreateUserButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.CreateUserButtonImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="CreateUserButtonType">
@@ -1372,6 +1410,9 @@
         <value>One of the <see cref="T:System.Web.UI.WebControls.ButtonType" /> enumeration values. The default value is <see cref="F:System.Web.UI.WebControls.ButtonType.Button" />.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified button type is not one of the <see cref="T:System.Web.UI.WebControls.ButtonType" /> values.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.CreateUserButtonText" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.CreateUserButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.CreateUserButtonImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="CreateUserError">
@@ -1400,6 +1441,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.CreateUserWizard.OnCreateUserError(System.Web.UI.WebControls.CreateUserErrorEventArgs)" />
+        <altmember cref="T:System.Web.Security.MembershipCreateStatus" />
+        <altmember cref="T:System.Web.UI.WebControls.CreateUserErrorEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="CreateUserStep">
@@ -1451,6 +1495,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.CreateUserWizardStep" />
       </Docs>
     </Member>
     <Member MemberName="CreatingUser">
@@ -1487,6 +1532,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.CreateUserWizard.OnCreatingUser(System.Web.UI.WebControls.LoginCancelEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="DisableCreatedUser">
@@ -1525,6 +1571,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Security.MembershipUser.IsApproved" />
       </Docs>
     </Member>
     <Member MemberName="DisplaySideBar">
@@ -1579,6 +1626,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.DuplicateUserNameErrorMessage" />
       </Docs>
     </Member>
     <Member MemberName="DuplicateUserNameErrorMessage">
@@ -1609,6 +1657,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.DuplicateEmailErrorMessage" />
       </Docs>
     </Member>
     <Member MemberName="EditProfileIconUrl">
@@ -1638,6 +1687,8 @@
         <summary>Gets or sets the URL of an image to display next to the link to the user profile editing page.</summary>
         <value>The URL of an image to display next to the link to the user profile editing page. The default value is an empty string ("").</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.EditProfileText" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.EditProfileUrl" />
       </Docs>
     </Member>
     <Member MemberName="EditProfileText">
@@ -1671,6 +1722,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.EditProfileIconUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.EditProfileUrl" />
       </Docs>
     </Member>
     <Member MemberName="EditProfileUrl">
@@ -1700,6 +1753,8 @@
         <summary>Gets or sets the URL of the user profile editing page.</summary>
         <value>The URL of the user profile editing page. The default value is an empty string ("").</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.EditProfileIconUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.EditProfileText" />
       </Docs>
     </Member>
     <Member MemberName="Email">
@@ -1730,6 +1785,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.EmailLabelText" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.EmailRegularExpression" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.MembershipProvider" />
       </Docs>
     </Member>
     <Member MemberName="EmailLabelText">
@@ -1760,6 +1818,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.Email" />
       </Docs>
     </Member>
     <Member MemberName="EmailRegularExpression">
@@ -1797,6 +1856,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.EmailRegularExpressionErrorMessage" />
       </Docs>
     </Member>
     <Member MemberName="EmailRegularExpressionErrorMessage">
@@ -1830,6 +1890,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.EmailRegularExpression" />
       </Docs>
     </Member>
     <Member MemberName="EmailRequiredErrorMessage">
@@ -1860,6 +1921,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.Email" />
       </Docs>
     </Member>
     <Member MemberName="ErrorMessageStyle">
@@ -1937,6 +1999,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.Security.MembershipProvider.CreateUser(System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Object,System.Web.Security.MembershipCreateStatus@)" />
+        <altmember cref="M:System.Web.UI.WebControls.CreateUserWizard.OnCreateUserError(System.Web.UI.WebControls.CreateUserErrorEventArgs)" />
+        <altmember cref="T:System.Web.Security.MembershipCreateStatus" />
       </Docs>
     </Member>
     <Member MemberName="GetDesignModeState">
@@ -1985,6 +2050,8 @@
         <summary>Gets or sets the URL of an image to display next to the link to the Help page.</summary>
         <value>The URL of an image to display next to the link to the Help page. The default value is an empty string ("").</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.HelpPageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.HelpPageText" />
       </Docs>
     </Member>
     <Member MemberName="HelpPageText">
@@ -2018,6 +2085,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.HelpPageIconUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.HelpPageUrl" />
       </Docs>
     </Member>
     <Member MemberName="HelpPageUrl">
@@ -2047,6 +2116,8 @@
         <summary>Gets or sets the URL of the Help page.</summary>
         <value>The URL of the Help page. The default value is an empty string ("").</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.HelpPageIconUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.HelpPageText" />
       </Docs>
     </Member>
     <Member MemberName="HyperLinkStyle">
@@ -2147,6 +2218,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.InstructionTextStyle" />
       </Docs>
     </Member>
     <Member MemberName="InstructionTextStyle">
@@ -2210,6 +2282,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.InstructionText" />
       </Docs>
     </Member>
     <Member MemberName="InvalidAnswerErrorMessage">
@@ -2499,6 +2572,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.DisableCreatedUser" />
       </Docs>
     </Member>
     <Member MemberName="MailDefinition">
@@ -2582,6 +2656,9 @@ Thank you for creating an account with our Web site.
         </remarks>
         <exception cref="T:System.Web.HttpException">
           <see cref="P:System.Web.UI.WebControls.MailDefinition.From" /> is not set to an e-mail address.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.MailDefinition" />
+        <altmember cref="T:System.Web.Mail.MailMessage" />
+        <altmember cref="M:System.Web.UI.WebControls.CreateUserWizard.OnSendingMail(System.Web.UI.WebControls.MailMessageEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="MembershipProvider">
@@ -2809,6 +2886,7 @@ Thank you for creating an account with our Web site.
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.CreateUserWizard.OnContinueButtonClick(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.CreateUserWizard.OnContinueButtonClick(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonClick" />
       </Docs>
     </Member>
     <Member MemberName="OnCreatedUser">
@@ -2846,6 +2924,7 @@ Thank you for creating an account with our Web site.
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.CreateUserWizard.OnCreatedUser(System.EventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Web.UI.WebControls.CreateUserWizard.OnCreatedUser(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.CreateUserWizard.CreatedUser" />
       </Docs>
     </Member>
     <Member MemberName="OnCreateUserError">
@@ -2881,6 +2960,8 @@ Thank you for creating an account with our Web site.
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.CreateUserWizard.OnCreateUserError(System.Web.UI.WebControls.CreateUserErrorEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Web.UI.WebControls.CreateUserWizard.OnCreateUserError(System.Web.UI.WebControls.CreateUserErrorEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.CreateUserWizard.CreateUserError" />
+        <altmember cref="T:System.Web.Security.MembershipCreateStatus" />
       </Docs>
     </Member>
     <Member MemberName="OnCreatingUser">
@@ -2931,6 +3012,7 @@ Thank you for creating an account with our Web site.
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.CreateUserWizard.OnCreatingUser(System.Web.UI.WebControls.LoginCancelEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Web.UI.WebControls.CreateUserWizard.OnCreatingUser(System.Web.UI.WebControls.LoginCancelEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.CreateUserWizard.CreatingUser" />
       </Docs>
     </Member>
     <Member MemberName="OnNextButtonClick">
@@ -2952,6 +3034,7 @@ Thank you for creating an account with our Web site.
         <param name="e">A <see cref="T:System.Web.UI.WebControls.WizardNavigationEventArgs" /> containing the event data.</param>
         <summary>Raises the <see cref="E:System.Web.UI.WebControls.Wizard.NextButtonClick" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.WebControls.Wizard.OnNextButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -2974,6 +3057,7 @@ Thank you for creating an account with our Web site.
         <summary>Raises the <see cref="E:System.Web.UI.Control.PreRender" /> event.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Web.HttpException">The membership provider for the page cannot be found. For more information, see <see cref="P:System.Web.Security.Membership.Providers" />.</exception>
+        <altmember cref="M:System.Web.UI.Control.OnPreRender(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnSendingMail">
@@ -3032,6 +3116,9 @@ Thank you for creating an account with our Web site.
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.CreateUserWizard.OnSendingMail(System.Web.UI.WebControls.MailMessageEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Web.UI.WebControls.CreateUserWizard.OnSendingMail(System.Web.UI.WebControls.MailMessageEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.CreateUserWizard.SendingMail" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.MailDefinition" />
+        <altmember cref="T:System.Web.Mail.MailMessage" />
       </Docs>
     </Member>
     <Member MemberName="OnSendMailError">
@@ -3084,6 +3171,7 @@ Thank you for creating an account with our Web site.
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.CreateUserWizard.OnSendMailError(System.Web.UI.WebControls.SendMailErrorEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Web.UI.WebControls.CreateUserWizard.OnSendMailError(System.Web.UI.WebControls.SendMailErrorEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.CreateUserWizard.SendMailError" />
       </Docs>
     </Member>
     <Member MemberName="Password">
@@ -3117,6 +3205,7 @@ Thank you for creating an account with our Web site.
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.ConfirmPassword" />
       </Docs>
     </Member>
     <Member MemberName="PasswordHintStyle">
@@ -3212,6 +3301,8 @@ Thank you for creating an account with our Web site.
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.PasswordRegularExpression" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.Password" />
       </Docs>
     </Member>
     <Member MemberName="PasswordLabelText">
@@ -3242,6 +3333,7 @@ Thank you for creating an account with our Web site.
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.Password" />
       </Docs>
     </Member>
     <Member MemberName="PasswordRegularExpression">
@@ -3285,6 +3377,7 @@ Thank you for creating an account with our Web site.
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.PasswordRegularExpressionErrorMessage" />
       </Docs>
     </Member>
     <Member MemberName="PasswordRegularExpressionErrorMessage">
@@ -3324,6 +3417,7 @@ Thank you for creating an account with our Web site.
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.PasswordRegularExpression" />
       </Docs>
     </Member>
     <Member MemberName="PasswordRequiredErrorMessage">
@@ -3354,6 +3448,7 @@ Thank you for creating an account with our Web site.
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.Password" />
       </Docs>
     </Member>
     <Member MemberName="Question">
@@ -3404,6 +3499,8 @@ Thank you for creating an account with our Web site.
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.MembershipProvider" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.Answer" />
       </Docs>
     </Member>
     <Member MemberName="QuestionAndAnswerRequired">
@@ -3437,6 +3534,8 @@ Thank you for creating an account with our Web site.
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.Question" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.Answer" />
       </Docs>
     </Member>
     <Member MemberName="QuestionLabelText">
@@ -3467,6 +3566,7 @@ Thank you for creating an account with our Web site.
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.Question" />
       </Docs>
     </Member>
     <Member MemberName="QuestionRequiredErrorMessage">
@@ -3557,6 +3657,7 @@ Thank you for creating an account with our Web site.
         <summary>Saves any state that was modified after the <see cref="M:System.Web.UI.WebControls.Style.TrackViewState" /> method was invoked.</summary>
         <returns>An object that contains the current view state of the control; otherwise, if there is no view state associated with the control, <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.WebControls.Wizard.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="SendingMail">
@@ -3606,6 +3707,9 @@ Thank you for creating an account with our Web site.
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.CreateUserWizard.OnSendingMail(System.Web.UI.WebControls.MailMessageEventArgs)" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.MailDefinition" />
+        <altmember cref="E:System.Web.UI.WebControls.CreateUserWizard.SendMailError" />
       </Docs>
     </Member>
     <Member MemberName="SendMailError">
@@ -3642,6 +3746,9 @@ Thank you for creating an account with our Web site.
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.CreateUserWizard.OnSendMailError(System.Web.UI.WebControls.SendMailErrorEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.CreateUserWizard.SendingMail" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.MailDefinition" />
       </Docs>
     </Member>
     <Member MemberName="SetDesignModeState">
@@ -3663,6 +3770,7 @@ Thank you for creating an account with our Web site.
         <param name="data">An <see cref="T:System.Collections.IDictionary" /> containing the design-time data for the control.</param>
         <summary>Sets design-time data for a control.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.Control.SetDesignModeState(System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="SkipLinkText">
@@ -3880,6 +3988,8 @@ Thank you for creating an account with our Web site.
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.CreateUserWizard.OnCreateUserError(System.Web.UI.WebControls.CreateUserErrorEventArgs)" />
+        <altmember cref="T:System.Web.Security.MembershipCreateStatus" />
       </Docs>
     </Member>
     <Member MemberName="UserName">
@@ -3948,6 +4058,7 @@ Thank you for creating an account with our Web site.
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.UserName" />
       </Docs>
     </Member>
     <Member MemberName="UserNameRequiredErrorMessage">
@@ -4087,6 +4198,8 @@ Thank you for creating an account with our Web site.
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WizardStepCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.WizardStepBase" />
       </Docs>
     </Member>
   </Members>

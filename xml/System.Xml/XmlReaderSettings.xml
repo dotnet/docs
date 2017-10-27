@@ -126,6 +126,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
+        <altmember cref="M:System.Xml.XmlReader.Create(System.String)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -153,6 +155,8 @@
         <param name="resolver">The XML resolver.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Xml.XmlReaderSettings" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
+        <altmember cref="M:System.Xml.XmlReader.Create(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Async">
@@ -280,6 +284,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
+        <altmember cref="M:System.Xml.XmlReader.Create(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CloseInput">
@@ -363,7 +369,7 @@
   
 -   The notation names in a single `NotationType` attribute declaration and `NmTokens` in a single `Enumeration` attribute declaration are distinct.  
   
- You can use the <xref:System.Xml.XmlReaderSettings.ConformanceLevel%2A> property to check and guarantee that the stream being read complies with the rules for a well-formed XML 1.0 document or document fragment. If the data doesn't comply, an <xref:System.Xml.XmlException> exception is thrown. The default is <xref:System.Xml.ConformanceLevel?displayProperty=nameWithType> (document-level conformance).  
+ You can use the <xref:System.Xml.XmlReaderSettings.ConformanceLevel%2A> property to check and guarantee that the stream being read complies with the rules for a well-formed XML 1.0 document or document fragment. If the data doesn't comply, an <xref:System.Xml.XmlException> exception is thrown. The default is <xref:System.Xml.ConformanceLevel.Document?displayProperty=nameWithType> (document-level conformance).  
   
  The three conformance levels are:  
   
@@ -371,10 +377,10 @@
 |-------------|-----------------|  
 |<xref:System.Xml.ConformanceLevel.Document>|Ensures that the XML data conforms to the rules for a well-formed XML 1.0 document. This level of checking ensures that any processor can consume the stream being read as an [well-formed XML 1.0 document](http://www.w3.org/TR/2006/REC-xml-20060816/#sec-well-formed).<br /><br /> The reader checks for the following:<br /><br /> -   The top-level item must not have any nodes other than XML Declaration, document type definition (DTD), element, comment, white space, or processing instruction.<br />-   The XML data must have exactly one top-level element node.|  
 |<xref:System.Xml.ConformanceLevel.Fragment>|Ensures that the XML data conforms to the rules for a well-formed XML 1.0 document fragment.<br /><br /> This setting accepts XML data with multiple root elements, or text nodes at the top-level. This level of checking ensures that any processor can consume the stream being read as an [external parsed entity](http://www.w3.org/TR/2006/REC-xml-20060816/#wf-entities).|  
-|<xref:System.Xml.ConformanceLevel.Auto>|Specifies that the reader should determine the level of conformance checking based on the incoming data.<br /><br /> Document conformance checking is applied if the XML data contains DTD information.<br /><br /> Fragment conformance checking is applied if the XML data contains one of following:<br /><br /> -   Text, CDATA, or entity reference node at the root level.<br />-   More than one element at the root level.<br />-   No element at the root level.<br /><br /> An <xref:System.Xml.XmlException> is thrown if there is a conflict, such as when there is a text node and a DTD at the root level.<br /><br /> This setting can be used in wrapping scenarios when the <xref:System.Xml.XmlReader.Create%2A> method is used to add additional features to an existing <xref:System.Xml.XmlReader>. In this case, <xref:System.Xml.ConformanceLevel?displayProperty=nameWithType> does not add any new conformance checking. Conformance checking is left to the <xref:System.Xml.XmlReader> that is being wrapped.|  
+|<xref:System.Xml.ConformanceLevel.Auto>|Specifies that the reader should determine the level of conformance checking based on the incoming data.<br /><br /> Document conformance checking is applied if the XML data contains DTD information.<br /><br /> Fragment conformance checking is applied if the XML data contains one of following:<br /><br /> -   Text, CDATA, or entity reference node at the root level.<br />-   More than one element at the root level.<br />-   No element at the root level.<br /><br /> An <xref:System.Xml.XmlException> is thrown if there is a conflict, such as when there is a text node and a DTD at the root level.<br /><br /> This setting can be used in wrapping scenarios when the <xref:System.Xml.XmlReader.Create%2A> method is used to add additional features to an existing <xref:System.Xml.XmlReader>. In this case, <xref:System.Xml.ConformanceLevel.Document?displayProperty=nameWithType> does not add any new conformance checking. Conformance checking is left to the <xref:System.Xml.XmlReader> that is being wrapped.|  
   
 > [!NOTE]
->  The XML 1.0 recommendation requires document-level conformance when a DTD is present. Therefore, if the reader is configured to support <xref:System.Xml.ConformanceLevel?displayProperty=nameWithType>, but the XML data contains a document type definition (DTD), an <xref:System.Xml.XmlException> is thrown.  
+>  The XML 1.0 recommendation requires document-level conformance when a DTD is present. Therefore, if the reader is configured to support <xref:System.Xml.ConformanceLevel.Fragment?displayProperty=nameWithType>, but the XML data contains a document type definition (DTD), an <xref:System.Xml.XmlException> is thrown.  
   
  Here's how the reader handles specific conformance violations depending on the setting of the <xref:System.Xml.XmlReaderSettings.ConformanceLevel%2A> property:  
   
@@ -402,6 +408,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.XmlReader.Create(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="DtdProcessing">
@@ -439,11 +446,11 @@
   
  This property can have one of the following values:  
   
--   <xref:System.Xml.DtdProcessing?displayProperty=nameWithType> to enable DTD processing.  
+-   <xref:System.Xml.DtdProcessing.Parse?displayProperty=nameWithType> to enable DTD processing.  
   
--   <xref:System.Xml.DtdProcessing?displayProperty=nameWithType> to throw an <xref:System.Xml.XmlException> exception when a DTD is encountered.  
+-   <xref:System.Xml.DtdProcessing.Prohibit?displayProperty=nameWithType> to throw an <xref:System.Xml.XmlException> exception when a DTD is encountered.  
   
--   <xref:System.Xml.DtdProcessing?displayProperty=nameWithType> to disable DTD processing without warnings or exceptions.  
+-   <xref:System.Xml.DtdProcessing.Ignore?displayProperty=nameWithType> to disable DTD processing without warnings or exceptions.  
   
  To perform validation against a DTD, the <xref:System.Xml.XmlReader> uses the DTD defined in the DOCTYPE declaration of an XML document. The DOCTYPE declaration can either point to an inline DTD or can be a reference to an external DTD file. To validate an XML file against a DTD:  
   
@@ -454,7 +461,7 @@
 -   If the DTD is an external file stored on a network resource that requires authentication, pass an <xref:System.Xml.XmlResolver> object with the necessary credentials to the <xref:System.Xml.XmlReader.Create%2A> method.  
   
 > [!IMPORTANT]
->  If the <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> property is set to <xref:System.Xml.DtdProcessing?displayProperty=nameWithType>, the <xref:System.Xml.XmlReader> will not report the DTDs. This means that the DTD/DOCTYPE will be lost on output.  
+>  If the <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> property is set to <xref:System.Xml.DtdProcessing.Ignore?displayProperty=nameWithType>, the <xref:System.Xml.XmlReader> will not report the DTDs. This means that the DTD/DOCTYPE will be lost on output.  
   
    
   
@@ -519,6 +526,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.XmlReader.Create(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="IgnoreProcessingInstructions">
@@ -566,6 +574,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.XmlReader.Create(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="IgnoreWhitespace">
@@ -615,6 +624,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.XmlReader.Create(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="LineNumberOffset">
@@ -652,6 +662,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.XmlReader.Create(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="LinePositionOffset">
@@ -689,6 +700,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.XmlReader.Create(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="MaxCharactersFromEntities">
@@ -1029,6 +1041,8 @@ There is an error in XML document (MaxCharactersInDocument, ).
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
+        <altmember cref="M:System.Xml.XmlReader.Create(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Schemas">
@@ -1093,6 +1107,8 @@ There is an error in XML document (MaxCharactersInDocument, ).
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
+        <altmember cref="M:System.Xml.XmlReader.Create(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ValidationEventHandler">
@@ -1141,6 +1157,8 @@ There is an error in XML document (MaxCharactersInDocument, ).
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
+        <altmember cref="M:System.Xml.XmlReader.Create(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ValidationFlags">
@@ -1199,6 +1217,8 @@ There is an error in XML document (MaxCharactersInDocument, ).
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
+        <altmember cref="M:System.Xml.XmlReader.Create(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ValidationType">
@@ -1261,6 +1281,9 @@ There is an error in XML document (MaxCharactersInDocument, ).
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
+        <altmember cref="M:System.Xml.XmlReader.Create(System.String)" />
+        <altmember cref="T:System.Xml.Schema.XmlSchemaValidationFlags" />
       </Docs>
     </Member>
     <Member MemberName="XmlResolver">
@@ -1312,7 +1335,21 @@ There is an error in XML document (MaxCharactersInDocument, ).
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
+        <altmember cref="M:System.Xml.XmlReader.Create(System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.XmlReaderSettings" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

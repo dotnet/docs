@@ -10,7 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "data grids, examples"
+  - "data grids [Windows Forms], examples"
   - "examples [Windows Forms], DataGridView control"
   - "DataGridView control [Windows Forms], examples"
   - "DataGridView control [Windows Forms], code directory"

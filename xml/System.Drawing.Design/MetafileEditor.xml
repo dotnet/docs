@@ -55,6 +55,7 @@
         <returns>A set of file extensions used to filter the file list.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="M:System.Drawing.Design.ImageEditor.GetExtensions" />
       </Docs>
     </Member>
     <Member MemberName="GetFileDialogDescription">
@@ -75,6 +76,7 @@
         <returns>The description for the default file-list filter.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="M:System.Drawing.Design.ImageEditor.GetFileDialogDescription" />
       </Docs>
     </Member>
     <Member MemberName="LoadFromStream">
@@ -98,6 +100,7 @@
         <returns>The <see cref="T:System.Drawing.Image" /> that has been loaded.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="M:System.Drawing.Design.ImageEditor.LoadFromStream(System.IO.Stream)" />
       </Docs>
     </Member>
   </Members>

@@ -351,6 +351,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.ComponentModel.BackgroundWorker.RunWorkerCompleted" />
+        <altmember cref="T:System.EventArgs" />
+        <altmember cref="Overload:System.ComponentModel.BackgroundWorker.RunWorkerAsync" />
       </Docs>
     </Member>
     <Member MemberName="OnDoWork">
@@ -433,6 +436,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.ComponentModel.BackgroundWorker.OnProgressChanged(System.ComponentModel.ProgressChangedEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.ComponentModel.BackgroundWorker.OnProgressChanged(System.ComponentModel.ProgressChangedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.ComponentModel.BackgroundWorker.ProgressChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnRunWorkerCompleted">
@@ -476,6 +480,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.ComponentModel.BackgroundWorker.OnRunWorkerCompleted(System.ComponentModel.RunWorkerCompletedEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.ComponentModel.BackgroundWorker.OnRunWorkerCompleted(System.ComponentModel.RunWorkerCompletedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.ComponentModel.BackgroundWorker.RunWorkerCompleted" />
       </Docs>
     </Member>
     <Member MemberName="ProgressChanged">
@@ -671,6 +676,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">
           <see cref="P:System.ComponentModel.BackgroundWorker.IsBusy" /> is <see langword="true" />.</exception>
+        <altmember cref="E:System.ComponentModel.BackgroundWorker.DoWork" />
       </Docs>
     </Member>
     <Member MemberName="RunWorkerAsync">
@@ -724,6 +730,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">
           <see cref="P:System.ComponentModel.BackgroundWorker.IsBusy" /> is <see langword="true" />.</exception>
+        <altmember cref="E:System.ComponentModel.BackgroundWorker.DoWork" />
       </Docs>
     </Member>
     <Member MemberName="RunWorkerCompleted">
@@ -819,6 +826,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.BackgroundWorker.ReportProgress(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="WorkerSupportsCancellation">
@@ -860,7 +868,28 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.BackgroundWorker.CancelAsync" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ReportProgress">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Raises the <see cref="E:System.ComponentModel.BackgroundWorker.ProgressChanged" /> event.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RunWorkerAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Starts execution of a background operation.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

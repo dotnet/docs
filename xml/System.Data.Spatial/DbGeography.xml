@@ -1248,5 +1248,32 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FromGml">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new.<see cref="T:System.Data.Spatial.DbGeography" /> value based on the specified Geography Markup Language (GML) value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FromBinary">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeography" /> value based on the specified well known binary value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FromText">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeography" /> value based on the specified well known text value.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

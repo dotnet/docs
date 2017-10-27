@@ -39,12 +39,12 @@ Public Class SynchronousSocketClient
   
         ' Establish the remote endpoint for the socket.  
         ' This example uses port 11000 on the local computer.  
-        Dim ipHostInfo As IPHostEntry = Dns.Resolve(Dns.GetHostName())  
+        Dim ipHostInfo As IPHostEntry = Dns.GetHostEntry(Dns.GetHostName())  
         Dim ipAddress As IPAddress = ipHostInfo.AddressList(0)  
         Dim remoteEP As New IPEndPoint(ipAddress, 11000)  
   
         ' Create a TCP/IP socket.  
-        Dim sender As New Socket(AddressFamily.InterNetwork, _  
+        Dim sender As New Socket(ipAddress.AddressFamily, _  
             SocketType.Stream, ProtocolType.Tcp)  
   
         ' Connect the socket to the remote endpoint.  
@@ -89,12 +89,12 @@ public class SynchronousSocketClient {
         try {  
             // Establish the remote endpoint for the socket.  
             // This example uses port 11000 on the local computer.  
-            IPHostEntry ipHostInfo = Dns.Resolve(Dns.GetHostName());  
+            IPHostEntry ipHostInfo = Dns.GetHostEntry(Dns.GetHostName());  
             IPAddress ipAddress = ipHostInfo.AddressList[0];  
             IPEndPoint remoteEP = new IPEndPoint(ipAddress,11000);  
   
             // Create a TCP/IP  socket.  
-            Socket sender = new Socket(AddressFamily.InterNetwork,   
+            Socket sender = new Socket(ipAddress.AddressFamily,   
                 SocketType.Stream, ProtocolType.Tcp );  
   
             // Connect the socket to the remote endpoint. Catch any errors.  

@@ -395,5 +395,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ReadContent&lt;TContent&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads content into the <see cref="T:System.ServiceModel.Syndication.XmlSyndicationContent" /> instance.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Syndication.XmlSyndicationContent" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "animation, EllipseGeometry objects"
-  - "EllipseGeometry objects, animating"
+  - "animation [WPF], EllipseGeometry objects [WPF]"
+  - "EllipseGeometry objects [WPF], animating"
   - "graphics [WPF], animation"
 ms.assetid: 767b9b6e-9cb7-482e-b6c2-fee7750c3995
 caps.latest.revision: 12

@@ -31,6 +31,14 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+    <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+    <altmember cref="T:System.Web.UI.WebControls.FormView" />
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="T:System.Collections.ICollection" />
+    <altmember cref="T:System.Array" />
+    <altmember cref="T:System.Collections.IList" />
+    <altmember cref="T:System.Collections.IEnumerable" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -92,6 +100,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.AllowPaging" />
       </Docs>
     </Member>
     <Member MemberName="AllowPaging">
@@ -120,6 +129,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataGrid.AllowCustomPaging" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.AllowCustomPaging" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.AllowServerPaging" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AllowPaging" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.AllowPaging" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.AllowPaging" />
+        <altmember cref="P:System.Web.UI.WebControls.DataGrid.AllowPaging" />
       </Docs>
     </Member>
     <Member MemberName="AllowServerPaging">
@@ -149,6 +165,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.AllowCustomPaging" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.AllowServerPaging" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -179,6 +197,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Array" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -215,6 +234,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.IsPagingEnabled" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.DataSourceCount" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.IsCustomPagingEnabled" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.IsLastPage" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.PageSize" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.FirstIndexInPage" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.DataSource" />
       </Docs>
     </Member>
     <Member MemberName="CurrentPageIndex">
@@ -240,6 +266,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.Count" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.PageCount" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.PageSize" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.VirtualCount" />
       </Docs>
     </Member>
     <Member MemberName="DataSource">
@@ -265,6 +295,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEnumerable" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.DataSourceCount" />
       </Docs>
     </Member>
     <Member MemberName="DataSourceCount">
@@ -294,6 +326,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The data source is not an <see cref="T:System.Collections.ICollection" /> implemented object.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.IsCustomPagingEnabled" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.AllowServerPaging" />
       </Docs>
     </Member>
     <Member MemberName="FirstIndexInPage">
@@ -322,6 +356,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.IsPagingEnabled" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.IsCustomPagingEnabled" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.DataSource" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -351,6 +388,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEnumerable" />
+        <altmember cref="M:System.Collections.IEnumerator.Reset" />
+        <altmember cref="M:System.Collections.IEnumerator.MoveNext" />
+        <altmember cref="P:System.Collections.IEnumerator.Current" />
       </Docs>
     </Member>
     <Member MemberName="GetItemProperties">
@@ -380,6 +421,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.ITypedList" />
+        <altmember cref="T:System.ComponentModel.PropertyDescriptorCollection" />
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+        <altmember cref="M:System.ComponentModel.ITypedList.GetItemProperties(System.ComponentModel.PropertyDescriptor[])" />
       </Docs>
     </Member>
     <Member MemberName="GetListName">
@@ -410,6 +455,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.ITypedList" />
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+        <altmember cref="M:System.ComponentModel.ITypedList.GetListName(System.ComponentModel.PropertyDescriptor[])" />
       </Docs>
     </Member>
     <Member MemberName="IsCustomPagingEnabled">
@@ -439,6 +487,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.IsPagingEnabled" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.AllowCustomPaging" />
       </Docs>
     </Member>
     <Member MemberName="IsFirstPage">
@@ -465,6 +515,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.IsLastPage" />
       </Docs>
     </Member>
     <Member MemberName="IsLastPage">
@@ -491,6 +542,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.IsFirstPage" />
       </Docs>
     </Member>
     <Member MemberName="IsPagingEnabled">
@@ -520,6 +572,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.AllowPaging" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.PageSize" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -572,6 +626,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.AllowPaging" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.AllowServerPaging" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.PageCount" />
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -600,6 +657,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="P:System.Collections.ICollection.IsSynchronized" />
       </Docs>
     </Member>
     <Member MemberName="PageCount">
@@ -628,6 +687,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.Count" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.CurrentPageIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.DataSourceCount" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.PageSize" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.VirtualCount" />
       </Docs>
     </Member>
     <Member MemberName="PageSize">
@@ -653,6 +717,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.Count" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.CurrentPageIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.DataSourceCount" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.PageCount" />
+        <altmember cref="P:System.Web.UI.WebControls.PagedDataSource.VirtualCount" />
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -680,6 +749,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Object" />
+        <altmember cref="P:System.Collections.ICollection.SyncRoot" />
+        <altmember cref="T:System.Collections.ICollection" />
       </Docs>
     </Member>
     <Member MemberName="VirtualCount">
@@ -705,6 +777,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataGrid.VirtualItemCount" />
       </Docs>
     </Member>
   </Members>

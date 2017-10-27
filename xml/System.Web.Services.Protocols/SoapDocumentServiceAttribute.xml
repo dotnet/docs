@@ -34,6 +34,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Services.Protocols.SoapDocumentMethodAttribute" />
+    <altmember cref="T:System.Web.Services.Protocols.SoapRpcServiceAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -109,6 +111,7 @@
         <summary>Gets or sets the default setting that controls whether parameters are encapsulated within a single element following the <see langword="&lt;Body&gt;" /> element in the XML portion of a SOAP message for XML Web service methods of the XML Web service.</summary>
         <value>The default <see cref="T:System.Web.Services.Protocols.SoapParameterStyle" /> for SOAP requests and SOAP responses to and from XML Web service methods within the XML Web service. If not set, the default is <see cref="F:System.Web.Services.Protocols.SoapParameterStyle.Wrapped" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.Services.Protocols.SoapParameterStyle" />
       </Docs>
     </Member>
     <Member MemberName="RoutingStyle">
@@ -156,7 +159,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Services.Description.SoapBindingUse" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.SoapDocumentServiceAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

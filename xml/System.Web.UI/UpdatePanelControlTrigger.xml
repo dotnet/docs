@@ -64,6 +64,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.INamingContainer" />
+        <altmember cref="T:System.Web.UI.IPostBackDataHandler" />
+        <altmember cref="T:System.Web.UI.IPostBackEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="FindTargetControl">

@@ -31,6 +31,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
+    <altmember cref="T:System.Windows.Forms.Design.Behavior.GlyphCollection" />
+    <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
+    <altmember cref="T:System.Windows.Forms.Design.Behavior.Behavior" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -62,6 +66,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.GlyphCollection" />
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
       </Docs>
     </Member>
     <Member MemberName="BehaviorService">
@@ -87,6 +94,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.GlyphCollection" />
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -121,6 +131,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.GlyphCollection" />
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
       </Docs>
     </Member>
     <Member MemberName="Glyphs">
@@ -150,6 +163,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.GlyphCollection" />
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
       </Docs>
     </Member>
     <MemberGroup MemberName="Invalidate">
@@ -170,6 +186,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.GlyphCollection" />
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
       </Docs>
     </MemberGroup>
     <Member MemberName="Invalidate">
@@ -198,6 +217,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.GlyphCollection" />
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
       </Docs>
     </Member>
     <Member MemberName="Invalidate">
@@ -219,6 +241,9 @@
         <param name="rectangle">The area to invalidate.</param>
         <summary>Forces the <see cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" /> to refresh its adorner window within the given <see cref="T:System.Drawing.Rectangle" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.GlyphCollection" />
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
       </Docs>
     </Member>
     <Member MemberName="Invalidate">
@@ -240,6 +265,9 @@
         <param name="region">The <see cref="T:System.Drawing.Region" /> to invalidate.</param>
         <summary>Forces the <see cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" /> to refresh its adorner window within the given <see cref="T:System.Drawing.Region" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.GlyphCollection" />
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
       </Docs>
     </Member>
   </Members>

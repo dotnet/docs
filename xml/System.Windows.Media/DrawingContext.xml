@@ -41,6 +41,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.DrawingGroup" />
+    <altmember cref="T:System.Windows.Media.Drawing" />
   </Docs>
   <Members>
     <Member MemberName="Close">
@@ -93,6 +95,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The object has already been closed or disposed.</exception>
+        <altmember cref="M:System.Windows.Media.DrawingContext.System#IDisposable#Dispose" />
       </Docs>
     </Member>
     <Member MemberName="DrawDrawing">
@@ -712,6 +715,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.GuidelineSet" />
       </Docs>
     </Member>
     <Member MemberName="PushOpacity">
@@ -874,5 +878,68 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DrawEllipse">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws an ellipse.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DrawRectangle">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws a rectangle.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DrawVideo">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draw a video into the specified region.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DrawLine">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws a line with the specified <see cref="T:System.Windows.Media.Pen" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DrawRoundedRectangle">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws a rounded rectangle.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="PushOpacity">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Pushes the specified opacity setting onto the drawing context.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DrawImage">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws an image into the region defined by the specified <see cref="T:System.Windows.Rect" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

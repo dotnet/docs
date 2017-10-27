@@ -27,7 +27,7 @@
 ## Examples  
  The following code example displays a form that contains three buttons that can be used to interact with the Mspaint.chm Help file. The **Show Help Index** button displays the **Index** tab for the Help file. The **Show Help** button displays content in the Help file based on the value that is selected in the **Help Navigator** list. The **Show Keyword** button displays content in the Help file based on the keyword that is specified in the **Keyword** text box.  
   
- For example, to show the Ovals Help page by the index value, select the <xref:System.Windows.Forms.HelpNavigator?displayProperty=nameWithType> value in the **Help Navigator** drop-down list, type **ovals** in the **Parameter** text box, and then click the **Show Help** button. To show the "To paint with a brush" Help topic by the keyword, type **mspaint.chm::/paint_brush.htm** in the **Keyword** text box, and then click the **Show Keyword** button.  
+ For example, to show the Ovals Help page by the index value, select the <xref:System.Windows.Forms.HelpNavigator.KeywordIndex?displayProperty=nameWithType> value in the **Help Navigator** drop-down list, type **ovals** in the **Parameter** text box, and then click the **Show Help** button. To show the "To paint with a brush" Help topic by the keyword, type **mspaint.chm::/paint_brush.htm** in the **Keyword** text box, and then click the **Show Keyword** button.  
   
  The example uses the <xref:System.Windows.Forms.Help.ShowHelp%2A> method to display the different Help tabs and Help topics, and the <xref:System.Windows.Forms.Help.ShowHelpIndex%2A> method to display the Help index.  
   
@@ -37,6 +37,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.HelpNavigator" />
+    <altmember cref="T:System.Windows.Forms.HelpProvider" />
   </Docs>
   <Members>
     <Member MemberName="ShowHelp">
@@ -78,6 +80,7 @@
         </remarks>
         <permission cref="T:System.Net.WebPermission">for accessing an HTML Help file through an HTTP request. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Connect" /></permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for accessing an HTML Help file not served from an HTTP server. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="M:System.Windows.Forms.Help.ShowHelpIndex(System.Windows.Forms.Control,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ShowHelp">
@@ -115,7 +118,7 @@
 ## Examples  
  The following code example displays a form with three buttons that can be used to interact with the mspaint.chm Help file. The **Show Help Index** button displays the **Index** tab for the Help file. The **Show Help** button displays content in the Help file based on the value that is selected in the **Help Navigator** list. The **Show Keyword** button displays content in the Help file based on the keyword that is specified in the **Keyword** text box.  
   
- For example, to show the Ovals Help page by the index value, select the <xref:System.Windows.Forms.HelpNavigator?displayProperty=nameWithType> value in the **Help Navigator** drop-down list, type **ovals** in the **Parameter** text box, and then click the **Show Help** button. To show the "To paint with a brush" Help topic by the keyword, type **mspaint.chm::/paint_brush.htm** in the **Keyword** text box, and then click the **Show Keyword** button.  
+ For example, to show the Ovals Help page by the index value, select the <xref:System.Windows.Forms.HelpNavigator.KeywordIndex?displayProperty=nameWithType> value in the **Help Navigator** drop-down list, type **ovals** in the **Parameter** text box, and then click the **Show Help** button. To show the "To paint with a brush" Help topic by the keyword, type **mspaint.chm::/paint_brush.htm** in the **Keyword** text box, and then click the **Show Keyword** button.  
   
  This example shows only the call to the <xref:System.Windows.Forms.Help.ShowHelp%2A> method. See the <xref:System.Windows.Forms.Help> class overview for the complete code example.  
   
@@ -127,6 +130,7 @@
         </remarks>
         <permission cref="T:System.Net.WebPermission">for accessing an HTML Help file through an HTTP request. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Connect" /></permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for accessing an HTML Help file not served from an HTTP server. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="M:System.Windows.Forms.Help.ShowHelpIndex(System.Windows.Forms.Control,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ShowHelp">
@@ -172,6 +176,7 @@
         </remarks>
         <permission cref="T:System.Net.WebPermission">for accessing an HTML Help file through an HTTP request. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Connect" /></permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for accessing an HTML Help file not served from an HTTP server. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="M:System.Windows.Forms.Help.ShowHelpIndex(System.Windows.Forms.Control,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ShowHelp">
@@ -211,7 +216,7 @@
 ## Examples  
  The following code example displays a form with three buttons that can be used to interact with the mspaint.chm Help file. The **Show Help Index** button displays the **Index** tab for the Help file. The **Show Help** button displays content in the Help file based on the value that is selected in the **Help Navigator** list. The **Show Keyword** button displays content in the Help file based on the keyword that is specified in the **Keyword** text box.  
   
- For example, to show the Ovals Help page by the index value, select the <xref:System.Windows.Forms.HelpNavigator?displayProperty=nameWithType> value in the **Help Navigator** drop-down list, type **ovals** in the **Parameter** text box, and then click the **Show Help** button. To show the "To paint with a brush" Help topic by the keyword, type **mspaint.chm::/paint_brush.htm** in the **Keyword** text box, and then click the **Show Keyword** button.  
+ For example, to show the Ovals Help page by the index value, select the <xref:System.Windows.Forms.HelpNavigator.KeywordIndex?displayProperty=nameWithType> value in the **Help Navigator** drop-down list, type **ovals** in the **Parameter** text box, and then click the **Show Help** button. To show the "To paint with a brush" Help topic by the keyword, type **mspaint.chm::/paint_brush.htm** in the **Keyword** text box, and then click the **Show Keyword** button.  
   
  This example shows only the call to the <xref:System.Windows.Forms.Help.ShowHelp%2A> method. See the <xref:System.Windows.Forms.Help> class overview for the complete code example.  
   
@@ -225,6 +230,7 @@
           <paramref name="parameter" /> is an integer.</exception>
         <permission cref="T:System.Net.WebPermission">for accessing an HTML Help file through an HTTP request. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Connect" /></permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for accessing an HTML Help file not served from an HTTP server. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="M:System.Windows.Forms.Help.ShowHelpIndex(System.Windows.Forms.Control,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ShowHelpIndex">
@@ -258,7 +264,7 @@
 ## Examples  
  The following code example displays a form with three buttons that can be used to interact with the mspaint.chm Help file. The **Show Help Index** button displays the **Index** tab for the Help file. The **Show Help** button displays content in the Help file based on the value that is selected in the **Help Navigator** list. The **Show Keyword** button displays content in the Help file based on the keyword that is specified in the **Keyword** text box.  
   
- For example, to show the Ovals Help page by the index value, select the <xref:System.Windows.Forms.HelpNavigator?displayProperty=nameWithType> value in the **Help Navigator** drop-down list, type **ovals** in the **Parameter** text box, and then click the **Show Help** button. To show the "To paint with a brush" Help topic by the keyword, type **mspaint.chm::/paint_brush.htm** in the **Keyword** text box, and then click the **Show Keyword** button.  
+ For example, to show the Ovals Help page by the index value, select the <xref:System.Windows.Forms.HelpNavigator.KeywordIndex?displayProperty=nameWithType> value in the **Help Navigator** drop-down list, type **ovals** in the **Parameter** text box, and then click the **Show Help** button. To show the "To paint with a brush" Help topic by the keyword, type **mspaint.chm::/paint_brush.htm** in the **Keyword** text box, and then click the **Show Keyword** button.  
   
  This example shows only the call to the <xref:System.Windows.Forms.Help.ShowHelpIndex%2A> method. See the <xref:System.Windows.Forms.Help> class overview for the complete code example.  
   
@@ -270,6 +276,7 @@
         </remarks>
         <permission cref="T:System.Net.WebPermission">for accessing an HTML Help file through an HTTP request. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Connect" /></permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for accessing an HTML Help file not served from an HTTP server. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="M:System.Windows.Forms.Help.ShowHelp(System.Windows.Forms.Control,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ShowPopup">
@@ -306,7 +313,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Help.ShowHelp(System.Windows.Forms.Control,System.String)" />
+        <altmember cref="M:System.Windows.Forms.Help.ShowHelpIndex(System.Windows.Forms.Control,System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ShowHelp">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Displays the contents of a Help file.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

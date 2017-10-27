@@ -9,19 +9,19 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "partial trust security"
-  - "detecting permissions"
-  - "security settings for Internet Explorer"
-  - "partial trust applications, debugging"
-  - "permissions, managing"
-  - "debugging partial trust applications"
-  - "permissions, detecting"
-  - "feature security requirements"
-  - "managing permissions"
+  - "partial trust security [WPF]"
+  - "detecting permissions [WPF]"
+  - "security settings for Internet Explorer [WPF]"
+  - "partial trust applications [WPF], debugging"
+  - "permissions [WPF], managing"
+  - "debugging partial trust applications [WPF]"
+  - "permissions [WPF], detecting"
+  - "feature security requirements [WPF]"
+  - "managing permissions [WPF]"
 ms.assetid: ef2c0810-1dbf-4511-babd-1fab95b523b5
 caps.latest.revision: 40
 author: dotnet-bot

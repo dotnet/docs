@@ -21,6 +21,9 @@
  ]]></format>
     </remarks>
     <forInternalUseOnly />
+    <altmember cref="F:Microsoft.JScript.JSError.NotCollection" />
+    <altmember cref="T:System.Collections.IEnumerator" />
+    <altmember cref="M:System.Collections.CollectionBase.GetEnumerator" />
   </Docs>
   <Members>
     <Member MemberName="JScriptGetEnumerator">
@@ -51,6 +54,9 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <altmember cref="F:Microsoft.JScript.JSError.NotCollection" />
+        <altmember cref="T:System.Collections.IEnumerator" />
+        <altmember cref="M:System.Collections.CollectionBase.GetEnumerator" />
       </Docs>
     </Member>
   </Members>

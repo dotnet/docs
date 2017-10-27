@@ -9,23 +9,23 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 f1_keywords: 
   - "Graphics.DrawEllipse"
 helpviewer_keywords: 
-  - "ellipses, drawing"
-  - "circles, drawing"
-  - "drawing, shapes"
+  - "ellipses [Windows Forms], drawing"
+  - "circles [Windows Forms], drawing"
+  - "drawing [Windows Forms], shapes"
   - "circular shapes"
-  - "forms, drawing circular shapes"
+  - "forms [Windows Forms], drawing circular shapes"
   - "circles"
-  - "outlined shapes, examples"
-  - "outlined shapes, drawing"
-  - "drawing, circular shapes"
-  - "shapes, drawing"
+  - "outlined shapes [Windows Forms], examples"
+  - "outlined shapes [Windows Forms], drawing"
+  - "drawing [Windows Forms], circular shapes"
+  - "shapes [Windows Forms], drawing"
 ms.assetid: f4f9214c-607e-407d-8cdd-6549f0278451
 caps.latest.revision: 11
 author: dotnet-bot

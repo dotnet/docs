@@ -45,6 +45,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.ConfigurationSection" />
+    <altmember cref="T:System.Web.Configuration.WebPartsSection" />
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -80,6 +83,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.WebPartsSection" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -103,6 +107,7 @@
         <returns>
           <see langword="true" /> if the passed object is equal to the current object; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.Configuration.WebPartsSection" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -122,6 +127,7 @@
         <summary>Generates a hash code for the collection.</summary>
         <returns>Unique integer hash code for the current object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.Configuration.WebPartsSection" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -157,6 +163,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.WebPartsSection" />
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -215,6 +222,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.WebPartsSection" />
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" />
       </Docs>
     </Member>
   </Members>

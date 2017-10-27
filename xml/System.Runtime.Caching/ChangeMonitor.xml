@@ -87,6 +87,8 @@
   
 -   The <see cref="P:System.Runtime.Caching.ChangeMonitor.HasChanged" /> property is set to <see langword="true" /> after the <see cref="M:System.Runtime.Caching.ChangeMonitor.OnChanged(System.Object)" /> method is called by the derived change-monitor instance, regardless of whether a <see cref="T:System.Runtime.Caching.OnChangedCallback" /> object has been set by a call to the <see cref="M:System.Runtime.Caching.ChangeMonitor.NotifyOnChanged(System.Runtime.Caching.OnChangedCallback)" /> method or not.</para>
     </block>
+    <altmember cref="N:System.Web.Caching" />
+    <altmember cref="T:System.Runtime.Caching.ObjectCache" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -183,6 +185,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Initialization is not complete in the derived change-monitor class that called the base <see cref="M:System.Runtime.Caching.ChangeMonitor.Dispose" /> method.</exception>
+        <altmember cref="M:System.Runtime.Caching.ChangeMonitor.OnChanged(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -248,6 +251,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Runtime.Caching.ChangeMonitor.NotifyOnChanged(System.Runtime.Caching.OnChangedCallback)" />
+        <altmember cref="M:System.Runtime.Caching.ChangeMonitor.OnChanged(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="InitializationComplete">
@@ -349,6 +354,7 @@
   
 2.  The object cache implementation must remove the cache entry that is associated with a dependency change.</para>
         </block>
+        <altmember cref="M:System.Runtime.Caching.ChangeMonitor.OnChanged(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="OnChanged">
@@ -379,6 +385,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Runtime.Caching.ChangeMonitor.Dispose" />
+        <altmember cref="M:System.Runtime.Caching.ChangeMonitor.NotifyOnChanged(System.Runtime.Caching.OnChangedCallback)" />
+        <altmember cref="P:System.Runtime.Caching.ChangeMonitor.HasChanged" />
       </Docs>
     </Member>
     <Member MemberName="UniqueId">

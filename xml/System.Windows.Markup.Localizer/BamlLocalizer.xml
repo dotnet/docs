@@ -70,6 +70,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Markup.Localizer.BamlLocalizabilityResolver" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -94,6 +95,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Markup.Localizer.BamlLocalizabilityResolver" />
       </Docs>
     </Member>
     <Member MemberName="ErrorNotify">
@@ -149,6 +151,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Markup.Localizer.BamlLocalizationDictionary" />
+        <altmember cref="M:System.Windows.Markup.Localizer.BamlLocalizer.UpdateBaml(System.IO.Stream,System.Windows.Markup.Localizer.BamlLocalizationDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="OnErrorNotify">
@@ -177,6 +181,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Markup.Localizer.BamlLocalizerErrorNotifyEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="UpdateBaml">
@@ -202,7 +207,17 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="target" /> or <paramref name="updates" /> are <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Markup.Localizer.BamlLocalizationDictionary" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.Localizer.BamlLocalizer" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

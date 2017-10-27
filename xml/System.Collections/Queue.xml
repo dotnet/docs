@@ -80,6 +80,7 @@
  To guarantee the thread safety of the <see cref="T:System.Collections.Queue" />, all operations must be done through the wrapper returned by the <see cref="M:System.Collections.Queue.Synchronized(System.Collections.Queue)" /> method.  
   
  Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.</threadsafe>
+    <altmember cref="T:System.Collections.Generic.Queue`1" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -159,6 +160,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="col" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Collections.ICollection" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -299,6 +301,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Queue.TrimToSize" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -536,6 +539,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Collections.Queue" /> is empty.</exception>
+        <altmember cref="M:System.Collections.Queue.Enqueue(System.Object)" />
+        <altmember cref="M:System.Collections.Queue.Peek" />
       </Docs>
     </Member>
     <Member MemberName="Enqueue">
@@ -587,6 +592,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Queue.Dequeue" />
+        <altmember cref="M:System.Collections.Queue.Peek" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -637,6 +644,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -690,6 +698,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.Queue.SyncRoot" />
+        <altmember cref="M:System.Collections.Queue.Synchronized(System.Collections.Queue)" />
       </Docs>
     </Member>
     <Member MemberName="Peek">
@@ -740,6 +750,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Collections.Queue" /> is empty.</exception>
+        <altmember cref="M:System.Collections.Queue.Enqueue(System.Object)" />
+        <altmember cref="M:System.Collections.Queue.Dequeue" />
       </Docs>
     </Member>
     <Member MemberName="Synchronized">
@@ -800,6 +812,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="queue" /> is <see langword="null" />.</exception>
+        <altmember cref="P:System.Collections.Queue.IsSynchronized" />
+        <altmember cref="P:System.Collections.Queue.SyncRoot" />
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -846,6 +860,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.Queue.IsSynchronized" />
+        <altmember cref="M:System.Collections.Queue.Synchronized(System.Collections.Queue)" />
       </Docs>
     </Member>
     <Member MemberName="ToArray">
@@ -933,7 +949,19 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.Queue" /> is read-only.</exception>
+        <altmember cref="M:System.Collections.Queue.Clear" />
+        <altmember cref="P:System.Collections.Queue.Count" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Queue" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

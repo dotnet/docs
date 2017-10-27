@@ -29,6 +29,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ControlEventHandler" />
+    <altmember cref="E:System.Windows.Forms.Control.ControlAdded" />
+    <altmember cref="E:System.Windows.Forms.Control.ControlRemoved" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -58,6 +61,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ControlEventArgs.Control" />
       </Docs>
     </Member>
     <Member MemberName="Control">
@@ -87,6 +91,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Control" />
       </Docs>
     </Member>
   </Members>

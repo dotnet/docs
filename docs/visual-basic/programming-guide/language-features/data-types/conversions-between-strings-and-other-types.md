@@ -9,11 +9,11 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "data type conversion, string"
-  - "conversions, type"
-  - "string conversion"
-  - "conversions, data type"
-  - "type conversion, string"
+  - "data type conversion [Visual Basic], string"
+  - "conversions [Visual Basic], type"
+  - "string conversion [Visual Basic]"
+  - "conversions [Visual Basic], data type"
+  - "type conversion [Visual Basic], string"
   - "regional options"
 ms.assetid: c3a99596-f09a-44a5-81dd-1b89a094f1df
 caps.latest.revision: 16

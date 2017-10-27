@@ -13,6 +13,8 @@
   <Docs>
     <summary>Configures a full trust assembly. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Web.Configuration.FullTrustAssembliesSection" />
+    <altmember cref="T:System.Web.Configuration.FullTrustAssemblyCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

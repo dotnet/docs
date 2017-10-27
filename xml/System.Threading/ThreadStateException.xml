@@ -57,6 +57,9 @@ In main. Attempting to restart myThread.
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Threading.Thread" />
+    <altmember cref="T:System.Threading.ThreadState" />
+    <altmember cref="T:System.Exception" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -218,7 +221,18 @@ In main. Attempting to restart myThread.
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Exception" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Threading.ThreadStateException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

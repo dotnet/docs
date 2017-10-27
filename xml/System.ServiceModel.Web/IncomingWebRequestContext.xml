@@ -421,5 +421,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CheckConditionalUpdate">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Called when a conditional update request is made for a resource.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CheckConditionalRetrieve">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Called when a conditional receive request is made for a resource.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

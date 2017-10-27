@@ -1285,5 +1285,149 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Cancel">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends a WS-Trust Cancel message to an endpoint.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginRenew">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous operation to send a WS-Trust Renew message to an endpoint.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginClose">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous operation to close a communication object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="EndRenew">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Completes an asynchronous operation to send a WS-Trust Renew message to an endpoint.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginValidate">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous operation to send a WS-Trust Validate message to an endpoint.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="EndCancel">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Completes an asynchronous operation to send a WS-Trust Cancel message to an endpoint.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Renew">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends a WS-Trust Renew message to an endpoint.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Open">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Causes a communication object to transition from the created state into the opened state.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginIssue">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous operation to send a WS-Trust Issue message to an endpoint.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Close">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Causes a communication object to transition from its current state into the closed state.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="EndIssue">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Completes an asynchronous operation to send a WS-Trust Issue message to an endpoint.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Issue">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends a WS-Trust Issue message to an endpoint STS.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="EndValidate">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Completes an asynchronous operation to send a WS-Trust Validate message to an endpoint.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginCancel">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous operation to send a WS-Trust Cancel message to an endpoint.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginOpen">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous operation to open a communication object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Validate">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends a WS-Trust Validate message to an endpoint.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -34,6 +34,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Diagnostics.SymbolStore.ISymbolReader" />
+    <altmember cref="T:System.Diagnostics.SymbolStore.ISymbolScope" />
   </Docs>
   <Members>
     <Member MemberName="GetNamespace">
@@ -392,6 +394,7 @@
         <summary>Gets the <see cref="T:System.Diagnostics.SymbolStore.SymbolToken" /> containing the metadata for the current method.</summary>
         <value>The metadata token for the current method.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Diagnostics.SymbolStore.SymbolToken" />
       </Docs>
     </Member>
   </Members>

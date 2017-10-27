@@ -29,6 +29,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Diagnostics.PerformanceCounter" />
+    <altmember cref="T:System.Diagnostics.PerformanceCounterPermission" />
+    <altmember cref="T:System.Diagnostics.PerformanceCounterPermissionAccess" />
+    <altmember cref="T:System.Diagnostics.PerformanceCounterPermissionEntry" />
+    <altmember cref="T:System.Diagnostics.PerformanceCounterPermissionEntryCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,6 +56,7 @@
         <param name="action">One of the <see cref="T:System.Security.Permissions.SecurityAction" /> values.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.PerformanceCounterPermissionAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Security.Permissions.SecurityAction" />
       </Docs>
     </Member>
     <Member MemberName="CategoryName">

@@ -27,6 +27,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.AxHost.ActiveXInvokeKind" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -71,6 +72,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.AxHost.ActiveXInvokeKind" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -99,5 +101,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.AxHost.InvalidActiveXStateException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

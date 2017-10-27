@@ -9,10 +9,10 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "inheritance, COM reusability"
-  - "base classes, COM reusability"
-  - "inheritance, walkthroughs"
-  - "derived classes, COM reusability"
+  - "inheritance [Visual Basic], COM reusability"
+  - "base classes [Visual Basic], COM reusability"
+  - "inheritance [Visual Basic], walkthroughs"
+  - "derived classes [Visual Basic], COM reusability"
 ms.assetid: f8e7263a-de13-48d1-b67c-ca1adf3544d9
 caps.latest.revision: 16
 author: dotnet-bot

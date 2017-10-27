@@ -184,6 +184,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IdentityModel.Tokens.SamlAssertion.WriteSourceData(System.Xml.XmlWriter)" />
       </Docs>
     </Member>
     <Member MemberName="Conditions">
@@ -562,6 +563,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">No source data is available</exception>
+        <altmember cref="P:System.IdentityModel.Tokens.SamlAssertion.CanWriteSourceData" />
       </Docs>
     </Member>
     <Member MemberName="WriteXml">
@@ -596,5 +598,14 @@
         <exception cref="T:System.IdentityModel.Tokens.SecurityTokenException">the <see cref="T:System.IdentityModel.Tokens.SamlAssertion" /> is configured such that serializing it into XML would result non-compliance with the SAML v1.1 specification.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlAssertion" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

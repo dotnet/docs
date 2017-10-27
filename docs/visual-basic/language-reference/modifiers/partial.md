@@ -10,7 +10,7 @@ f1_keywords:
   - "vb.Partial"
   - "partial"
 helpviewer_keywords: 
-  - "structures, partial"
+  - "structures [Visual Basic], partial"
   - "classes [Visual Basic]"
   - "partial, types [Visual Basic]"
   - "partial, structures"

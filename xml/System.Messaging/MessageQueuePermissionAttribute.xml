@@ -33,6 +33,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Messaging.MessageQueue" />
+    <altmember cref="T:System.Messaging.MessageQueuePermission" />
+    <altmember cref="T:System.Messaging.MessageQueuePermissionAccess" />
+    <altmember cref="T:System.Messaging.MessageQueuePermissionEntry" />
+    <altmember cref="T:System.Messaging.MessageQueuePermissionEntryCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -61,6 +66,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Security.Permissions.SecurityAction" />
       </Docs>
     </Member>
     <Member MemberName="Category">

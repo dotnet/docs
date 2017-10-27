@@ -668,5 +668,15 @@
  The signature is badly formatted. (In the [!INCLUDE[net_v46](~/includes/net-v46-md.md)] and 4.6.1 only; starting with the [!INCLUDE[net_v462](~/includes/net-v462-md.md)], the method returns <see langword="false" /> if a signature is badly formatted.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.RSACng" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

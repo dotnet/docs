@@ -26,6 +26,7 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for verifying at load time that the class derived from <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter" /> has this permission. Associated enumerations: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />, <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -59,6 +60,8 @@
         <summary>Gets a reference to the <see cref="T:System.Web.UI.MobileControls.Link" /> object with which the adapter is associated. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <value>An <see cref="T:System.Web.UI.MobileControls.Link" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.Link" />
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.ControlAdapter" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -80,6 +83,7 @@
         <param name="writer">The <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" /> object used to render the server control content on the client's browser.</param>
         <summary>Displays the associated control and all of its child controls on the client. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.Render(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter)" />
       </Docs>
     </Member>
   </Members>

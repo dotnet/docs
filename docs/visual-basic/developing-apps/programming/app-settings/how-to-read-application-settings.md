@@ -10,8 +10,8 @@ ms.technology:
 ms.topic: "article"
 helpviewer_keywords: 
   - "reading application settings"
-  - "My.Settings object, reading application settings"
-  - "application settings, reading"
+  - "My.Settings object [Visual Basic], reading application settings"
+  - "application settings [Visual Basic], reading"
 ms.assetid: eb3428ef-115e-49a8-a878-e0613183fee0
 caps.latest.revision: 12
 author: dotnet-bot

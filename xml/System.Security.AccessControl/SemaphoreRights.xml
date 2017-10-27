@@ -39,7 +39,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of <xref:System.Security.AccessControl.SemaphoreRights> values when creating and using <xref:System.Security.AccessControl.SemaphoreAccessRule> objects. The example creates a <xref:System.Security.AccessControl.SemaphoreSecurity> object, adds rules that allow and deny various rights for the current user, and displays the resulting pair of rules. The example then allows new rights for the current user and displays the result, showing that the new rights are merged with the existing <xref:System.Security.AccessControl.AccessControlType?displayProperty=nameWithType> rule.  
+ The following code example demonstrates the use of <xref:System.Security.AccessControl.SemaphoreRights> values when creating and using <xref:System.Security.AccessControl.SemaphoreAccessRule> objects. The example creates a <xref:System.Security.AccessControl.SemaphoreSecurity> object, adds rules that allow and deny various rights for the current user, and displays the resulting pair of rules. The example then allows new rights for the current user and displays the result, showing that the new rights are merged with the existing <xref:System.Security.AccessControl.AccessControlType.Allow?displayProperty=nameWithType> rule.  
   
 > [!NOTE]
 >  This example does not attach the security object to an <xref:System.Threading.Semaphore> object; see <xref:System.Security.AccessControl.SemaphoreSecurity>, <xref:System.Threading.Semaphore.GetAccessControl%2A?displayProperty=nameWithType> method, and <xref:System.Threading.Semaphore.SetAccessControl%2A?displayProperty=nameWithType>.  
@@ -49,6 +49,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Security.AccessControl.SemaphoreAccessRule" />
+    <altmember cref="T:System.Security.AccessControl.SemaphoreSecurity" />
   </Docs>
   <Members>
     <Member MemberName="ChangePermissions">

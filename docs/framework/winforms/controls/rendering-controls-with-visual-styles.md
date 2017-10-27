@@ -10,13 +10,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "professional appearance, rendering Windows Forms controls"
-  - "themes, XP visual styles in Window Forms"
+  - "professional appearance [Windows Forms], rendering Windows Forms controls"
+  - "themes [Windows Forms], XP visual styles in Window Forms"
   - "custom controls [Windows Forms], rendering"
   - "custom controls [Windows Forms], painting"
-  - "visual themes, rendering Windows Forms controls"
+  - "visual themes [Windows Forms], rendering Windows Forms controls"
   - "user controls [Windows Forms], painting"
-  - "visual styles, rendering Windows Forms controls"
+  - "visual styles [Windows Forms], rendering Windows Forms controls"
 ms.assetid: a5b178ba-610e-46c4-a6c0-509c0886a744
 caps.latest.revision: 19
 author: dotnet-bot

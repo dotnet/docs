@@ -44,7 +44,8 @@ When the C# compiler encounters an `#if` directive, followed eventually by an [#
   
 ```csharp
 // preprocessor_if.cs  
-#define DEBUG#define MYTEST  
+#define DEBUG
+#define MYTEST  
 using System;  
 public class MyClass   
 {  

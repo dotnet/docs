@@ -10,7 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "forms, aligning controls"
+  - "forms [Windows Forms], aligning controls"
   - "Windows Forms, aligning controls"
   - "controls [Windows Forms], positioning"
   - "controls [Windows Forms], aligning"

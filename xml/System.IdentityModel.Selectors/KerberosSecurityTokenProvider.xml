@@ -20,6 +20,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IdentityModel.Selectors.SecurityTokenManager" />
+    <altmember cref="T:System.IdentityModel.Selectors.SecurityTokenAuthenticator" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -205,5 +207,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Selectors.KerberosSecurityTokenProvider" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

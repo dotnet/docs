@@ -37,6 +37,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DataPager" />
+    <altmember cref="T:System.Web.UI.WebControls.ListView" />
+    <altmember cref="T:System.Web.UI.WebControls.TemplatePagerField" />
+    <altmember cref="E:System.Web.UI.WebControls.TemplatePagerField.PagerCommand" />
+    <altmember cref="M:System.Web.UI.WebControls.TemplatePagerField.OnPagerCommand(System.Web.UI.WebControls.DataPagerCommandEventArgs)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -79,6 +84,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.CommandEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.DataPager" />
+        <altmember cref="T:System.Web.UI.WebControls.DataPagerField" />
+        <altmember cref="T:System.Web.UI.WebControls.DataPagerFieldItem" />
+        <altmember cref="T:System.Web.UI.WebControls.TemplatePagerField" />
+        <altmember cref="E:System.Web.UI.WebControls.TemplatePagerField.PagerCommand" />
+        <altmember cref="M:System.Web.UI.WebControls.TemplatePagerField.OnPagerCommand(System.Web.UI.WebControls.DataPagerCommandEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -112,6 +124,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataPager" />
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
+        <altmember cref="T:System.Web.UI.WebControls.TemplatePagerField" />
+        <altmember cref="E:System.Web.UI.WebControls.TemplatePagerField.PagerCommand" />
+        <altmember cref="M:System.Web.UI.WebControls.TemplatePagerField.OnPagerCommand(System.Web.UI.WebControls.DataPagerCommandEventArgs)" />
+        <altmember cref="P:System.Web.UI.WebControls.DataPagerCommandEventArgs.PagerField" />
       </Docs>
     </Member>
     <Member MemberName="NewMaximumRows">
@@ -145,6 +163,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataPager" />
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
+        <altmember cref="T:System.Web.UI.WebControls.TemplatePagerField" />
+        <altmember cref="E:System.Web.UI.WebControls.TemplatePagerField.PagerCommand" />
+        <altmember cref="M:System.Web.UI.WebControls.TemplatePagerField.OnPagerCommand(System.Web.UI.WebControls.DataPagerCommandEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="NewStartRowIndex">
@@ -180,6 +203,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataPager" />
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
+        <altmember cref="T:System.Web.UI.WebControls.TemplatePagerField" />
+        <altmember cref="E:System.Web.UI.WebControls.TemplatePagerField.PagerCommand" />
+        <altmember cref="M:System.Web.UI.WebControls.TemplatePagerField.OnPagerCommand(System.Web.UI.WebControls.DataPagerCommandEventArgs)" />
+        <altmember cref="P:System.Web.UI.WebControls.DataPagerCommandEventArgs.NewMaximumRows" />
       </Docs>
     </Member>
     <Member MemberName="PagerField">
@@ -205,6 +234,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataPager" />
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
+        <altmember cref="T:System.Web.UI.WebControls.TemplatePagerField" />
+        <altmember cref="E:System.Web.UI.WebControls.TemplatePagerField.PagerCommand" />
+        <altmember cref="M:System.Web.UI.WebControls.TemplatePagerField.OnPagerCommand(System.Web.UI.WebControls.DataPagerCommandEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="TotalRowCount">
@@ -238,6 +272,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataPager" />
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
+        <altmember cref="T:System.Web.UI.WebControls.TemplatePagerField" />
+        <altmember cref="E:System.Web.UI.WebControls.TemplatePagerField.PagerCommand" />
+        <altmember cref="M:System.Web.UI.WebControls.TemplatePagerField.OnPagerCommand(System.Web.UI.WebControls.DataPagerCommandEventArgs)" />
       </Docs>
     </Member>
   </Members>

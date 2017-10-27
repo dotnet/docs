@@ -52,6 +52,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxResult" />
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxStyle" />
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.MsgBox(System.Object,Microsoft.VisualBasic.MsgBoxStyle,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="vbAbortRetryIgnore">
@@ -77,6 +80,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxResult" />
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxStyle" />
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.MsgBox(System.Object,Microsoft.VisualBasic.MsgBoxStyle,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="vbApplicationModal">
@@ -102,6 +108,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxResult" />
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxStyle" />
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.MsgBox(System.Object,Microsoft.VisualBasic.MsgBoxStyle,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="vbArchive">
@@ -131,6 +140,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.FileAttribute" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Dir" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.GetAttr(System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.SetAttr(System.String,Microsoft.VisualBasic.FileAttribute)" />
       </Docs>
     </Member>
     <Member MemberName="vbArray">
@@ -158,6 +171,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.VariantType" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.VarType(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="vbBack">
@@ -175,6 +190,10 @@
       <Docs>
         <summary>Represents a backspace character for print and display functions.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Print(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="vbBinaryCompare">
@@ -202,6 +221,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.CompareMethod" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Filter(System.String[],System.String,System.Boolean,Microsoft.VisualBasic.CompareMethod)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.InStr(System.String,System.String,Microsoft.VisualBasic.CompareMethod)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.InStrRev(System.String,System.String,System.Int32,Microsoft.VisualBasic.CompareMethod)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Replace(System.String,System.String,System.String,System.Int32,System.Int32,Microsoft.VisualBasic.CompareMethod)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Split(System.String,System.String,System.Int32,Microsoft.VisualBasic.CompareMethod)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.StrComp(System.String,System.String,Microsoft.VisualBasic.CompareMethod)" />
       </Docs>
     </Member>
     <Member MemberName="vbBoolean">
@@ -229,6 +255,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.VariantType" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.VarType(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="vbByte">
@@ -256,6 +284,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.VariantType" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.VarType(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="vbCancel">
@@ -283,6 +313,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxResult" />
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxStyle" />
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.MsgBox(System.Object,Microsoft.VisualBasic.MsgBoxStyle,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="vbCr">
@@ -300,6 +333,10 @@
       <Docs>
         <summary>Represents a carriage-return character for print and display functions.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Print(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="vbCritical">
@@ -325,6 +362,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxResult" />
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxStyle" />
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.MsgBox(System.Object,Microsoft.VisualBasic.MsgBoxStyle,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="vbCrLf">
@@ -342,6 +382,10 @@
       <Docs>
         <summary>Represents a carriage-return character combined with a linefeed character for print and display functions.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Print(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="vbCurrency">
@@ -369,6 +413,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.VariantType" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.VarType(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="vbDate">
@@ -396,6 +442,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.VariantType" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.VarType(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="vbDecimal">
@@ -423,6 +471,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.VariantType" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.VarType(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="vbDefaultButton1">
@@ -453,6 +503,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxResult" />
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxStyle" />
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.MsgBox(System.Object,Microsoft.VisualBasic.MsgBoxStyle,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="vbDefaultButton2">
@@ -483,6 +536,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxResult" />
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxStyle" />
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.MsgBox(System.Object,Microsoft.VisualBasic.MsgBoxStyle,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="vbDefaultButton3">
@@ -513,6 +569,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxResult" />
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxStyle" />
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.MsgBox(System.Object,Microsoft.VisualBasic.MsgBoxStyle,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="vbDirectory">
@@ -542,6 +601,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.FileAttribute" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Dir" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.GetAttr(System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.SetAttr(System.String,Microsoft.VisualBasic.FileAttribute)" />
       </Docs>
     </Member>
     <Member MemberName="vbDouble">
@@ -569,6 +632,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.VariantType" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.VarType(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="vbEmpty">
@@ -596,6 +661,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.VariantType" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.VarType(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="vbExclamation">
@@ -621,6 +688,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxResult" />
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxStyle" />
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.MsgBox(System.Object,Microsoft.VisualBasic.MsgBoxStyle,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="vbFalse">
@@ -646,6 +716,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.TriState" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.FormatNumber(System.Object,System.Int32,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.FormatCurrency(System.Object,System.Int32,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.FormatPercent(System.Object,System.Int32,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState)" />
       </Docs>
     </Member>
     <Member MemberName="vbFirstFourDays">
@@ -675,6 +749,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.FirstDayOfWeek" />
+        <altmember cref="T:Microsoft.VisualBasic.FirstWeekOfYear" />
+        <altmember cref="T:Microsoft.VisualBasic.DateFormat" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.DateDiff(System.String,System.Object,System.Object,Microsoft.VisualBasic.FirstDayOfWeek,Microsoft.VisualBasic.FirstWeekOfYear)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.DatePart(System.String,System.Object,Microsoft.VisualBasic.FirstDayOfWeek,Microsoft.VisualBasic.FirstWeekOfYear)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Format(System.Object,System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Weekday(System.DateTime,Microsoft.VisualBasic.FirstDayOfWeek)" />
       </Docs>
     </Member>
     <Member MemberName="vbFirstFullWeek">
@@ -704,6 +785,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.FirstDayOfWeek" />
+        <altmember cref="T:Microsoft.VisualBasic.FirstWeekOfYear" />
+        <altmember cref="T:Microsoft.VisualBasic.DateFormat" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.DateDiff(System.String,System.Object,System.Object,Microsoft.VisualBasic.FirstDayOfWeek,Microsoft.VisualBasic.FirstWeekOfYear)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.DatePart(System.String,System.Object,Microsoft.VisualBasic.FirstDayOfWeek,Microsoft.VisualBasic.FirstWeekOfYear)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Format(System.Object,System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Weekday(System.DateTime,Microsoft.VisualBasic.FirstDayOfWeek)" />
       </Docs>
     </Member>
     <Member MemberName="vbFirstJan1">
@@ -733,6 +821,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.FirstDayOfWeek" />
+        <altmember cref="T:Microsoft.VisualBasic.FirstWeekOfYear" />
+        <altmember cref="T:Microsoft.VisualBasic.DateFormat" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.DateDiff(System.String,System.Object,System.Object,Microsoft.VisualBasic.FirstDayOfWeek,Microsoft.VisualBasic.FirstWeekOfYear)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.DatePart(System.String,System.Object,Microsoft.VisualBasic.FirstDayOfWeek,Microsoft.VisualBasic.FirstWeekOfYear)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Format(System.Object,System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Weekday(System.DateTime,Microsoft.VisualBasic.FirstDayOfWeek)" />
       </Docs>
     </Member>
     <Member MemberName="vbFormFeed">
@@ -750,6 +845,10 @@
       <Docs>
         <summary>Represents a form-feed character for print functions.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Print(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="vbFriday">
@@ -781,6 +880,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.FirstDayOfWeek" />
+        <altmember cref="T:Microsoft.VisualBasic.FirstWeekOfYear" />
+        <altmember cref="T:Microsoft.VisualBasic.DateFormat" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.DateDiff(System.String,System.Object,System.Object,Microsoft.VisualBasic.FirstDayOfWeek,Microsoft.VisualBasic.FirstWeekOfYear)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.DatePart(System.String,System.Object,Microsoft.VisualBasic.FirstDayOfWeek,Microsoft.VisualBasic.FirstWeekOfYear)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Format(System.Object,System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Weekday(System.DateTime,Microsoft.VisualBasic.FirstDayOfWeek)" />
       </Docs>
     </Member>
     <Member MemberName="vbGeneralDate">
@@ -809,6 +915,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.DateFormat" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.FormatDateTime(System.DateTime,Microsoft.VisualBasic.DateFormat)" />
       </Docs>
     </Member>
     <Member MemberName="vbGet">
@@ -834,6 +942,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.CallType" />
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.CallByName(System.Object,System.String,Microsoft.VisualBasic.CallType,System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="vbHidden">
@@ -863,6 +973,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.FileAttribute" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Dir" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.GetAttr(System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.SetAttr(System.String,Microsoft.VisualBasic.FileAttribute)" />
       </Docs>
     </Member>
     <Member MemberName="vbHide">
@@ -890,6 +1004,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.AppWinStyle" />
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.Shell(System.String,Microsoft.VisualBasic.AppWinStyle,System.Boolean,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="vbHiragana">
@@ -915,6 +1031,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.VbStrConv" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.StrConv(System.String,Microsoft.VisualBasic.VbStrConv,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="vbIgnore">
@@ -942,6 +1060,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxResult" />
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxStyle" />
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.MsgBox(System.Object,Microsoft.VisualBasic.MsgBoxStyle,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="vbInformation">
@@ -967,6 +1088,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxResult" />
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxStyle" />
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.MsgBox(System.Object,Microsoft.VisualBasic.MsgBoxStyle,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="vbInteger">
@@ -994,6 +1118,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.VariantType" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.VarType(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="vbKatakana">
@@ -1019,6 +1145,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.VbStrConv" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.StrConv(System.String,Microsoft.VisualBasic.VbStrConv,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="vbLet">
@@ -1044,6 +1172,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.CallType" />
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.CallByName(System.Object,System.String,Microsoft.VisualBasic.CallType,System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="vbLf">
@@ -1061,6 +1191,10 @@
       <Docs>
         <summary>Represents a linefeed character for print and display functions.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Print(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="vbLinguisticCasing">
@@ -1086,6 +1220,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.VbStrConv" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.StrConv(System.String,Microsoft.VisualBasic.VbStrConv,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="vbLong">
@@ -1113,6 +1249,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.VariantType" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.VarType(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="vbLongDate">
@@ -1141,6 +1279,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.DateFormat" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.FormatDateTime(System.DateTime,Microsoft.VisualBasic.DateFormat)" />
       </Docs>
     </Member>
     <Member MemberName="vbLongTime">
@@ -1169,6 +1309,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.DateFormat" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.FormatDateTime(System.DateTime,Microsoft.VisualBasic.DateFormat)" />
       </Docs>
     </Member>
     <Member MemberName="vbLowerCase">
@@ -1194,6 +1336,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.VbStrConv" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.StrConv(System.String,Microsoft.VisualBasic.VbStrConv,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="vbMaximizedFocus">
@@ -1221,6 +1365,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.AppWinStyle" />
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.Shell(System.String,Microsoft.VisualBasic.AppWinStyle,System.Boolean,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="vbMethod">
@@ -1246,6 +1392,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.CallType" />
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.CallByName(System.Object,System.String,Microsoft.VisualBasic.CallType,System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="vbMinimizedFocus">
@@ -1273,6 +1421,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.AppWinStyle" />
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.Shell(System.String,Microsoft.VisualBasic.AppWinStyle,System.Boolean,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="vbMinimizedNoFocus">
@@ -1300,6 +1450,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.AppWinStyle" />
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.Shell(System.String,Microsoft.VisualBasic.AppWinStyle,System.Boolean,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="vbMonday">
@@ -1331,6 +1483,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.FirstDayOfWeek" />
+        <altmember cref="T:Microsoft.VisualBasic.FirstWeekOfYear" />
+        <altmember cref="T:Microsoft.VisualBasic.DateFormat" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.DateDiff(System.String,System.Object,System.Object,Microsoft.VisualBasic.FirstDayOfWeek,Microsoft.VisualBasic.FirstWeekOfYear)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.DatePart(System.String,System.Object,Microsoft.VisualBasic.FirstDayOfWeek,Microsoft.VisualBasic.FirstWeekOfYear)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Format(System.Object,System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Weekday(System.DateTime,Microsoft.VisualBasic.FirstDayOfWeek)" />
       </Docs>
     </Member>
     <Member MemberName="vbMsgBoxHelp">
@@ -1356,6 +1515,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxResult" />
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxStyle" />
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.MsgBox(System.Object,Microsoft.VisualBasic.MsgBoxStyle,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="vbMsgBoxRight">
@@ -1381,6 +1543,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxResult" />
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxStyle" />
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.MsgBox(System.Object,Microsoft.VisualBasic.MsgBoxStyle,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="vbMsgBoxRtlReading">
@@ -1406,6 +1571,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxResult" />
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxStyle" />
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.MsgBox(System.Object,Microsoft.VisualBasic.MsgBoxStyle,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="vbMsgBoxSetForeground">
@@ -1431,6 +1599,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxResult" />
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxStyle" />
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.MsgBox(System.Object,Microsoft.VisualBasic.MsgBoxStyle,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="vbNarrow">
@@ -1456,6 +1627,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.VbStrConv" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.StrConv(System.String,Microsoft.VisualBasic.VbStrConv,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="vbNewLine">
@@ -1473,6 +1646,10 @@
       <Docs>
         <summary>Represents a newline character for print and display functions.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Print(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="vbNo">
@@ -1500,6 +1677,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxResult" />
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxStyle" />
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.MsgBox(System.Object,Microsoft.VisualBasic.MsgBoxStyle,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="vbNormal">
@@ -1529,6 +1709,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.FileAttribute" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Dir" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.GetAttr(System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.SetAttr(System.String,Microsoft.VisualBasic.FileAttribute)" />
       </Docs>
     </Member>
     <Member MemberName="vbNormalFocus">
@@ -1556,6 +1740,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.AppWinStyle" />
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.Shell(System.String,Microsoft.VisualBasic.AppWinStyle,System.Boolean,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="vbNormalNoFocus">
@@ -1583,6 +1769,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.AppWinStyle" />
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.Shell(System.String,Microsoft.VisualBasic.AppWinStyle,System.Boolean,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="vbNull">
@@ -1610,6 +1798,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.VariantType" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.VarType(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="vbNullChar">
@@ -1627,6 +1817,10 @@
       <Docs>
         <summary>Represents a null character for print and display functions.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Print(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="vbNullString">
@@ -1645,6 +1839,10 @@
       <Docs>
         <summary>Represents a zero-length string for print and display functions, and for calling external procedures.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Print(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="vbObject">
@@ -1672,6 +1870,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.VariantType" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.VarType(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="vbObjectError">
@@ -1690,6 +1890,10 @@
       <Docs>
         <summary>Represents the object error number. User-defined error numbers should be greater than this value.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Print(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="vbOK">
@@ -1717,6 +1921,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxResult" />
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxStyle" />
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.MsgBox(System.Object,Microsoft.VisualBasic.MsgBoxStyle,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="vbOKCancel">
@@ -1742,6 +1949,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxResult" />
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxStyle" />
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.MsgBox(System.Object,Microsoft.VisualBasic.MsgBoxStyle,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="vbOKOnly">
@@ -1767,6 +1977,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxResult" />
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxStyle" />
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.MsgBox(System.Object,Microsoft.VisualBasic.MsgBoxStyle,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="vbProperCase">
@@ -1792,6 +2005,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.VbStrConv" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.StrConv(System.String,Microsoft.VisualBasic.VbStrConv,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="vbQuestion">
@@ -1817,6 +2032,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxResult" />
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxStyle" />
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.MsgBox(System.Object,Microsoft.VisualBasic.MsgBoxStyle,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="vbReadOnly">
@@ -1846,6 +2064,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.FileAttribute" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Dir" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.GetAttr(System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.SetAttr(System.String,Microsoft.VisualBasic.FileAttribute)" />
       </Docs>
     </Member>
     <Member MemberName="vbRetry">
@@ -1873,6 +2095,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxResult" />
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxStyle" />
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.MsgBox(System.Object,Microsoft.VisualBasic.MsgBoxStyle,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="vbRetryCancel">
@@ -1898,6 +2123,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxResult" />
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxStyle" />
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.MsgBox(System.Object,Microsoft.VisualBasic.MsgBoxStyle,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="vbSaturday">
@@ -1929,6 +2157,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.FirstDayOfWeek" />
+        <altmember cref="T:Microsoft.VisualBasic.FirstWeekOfYear" />
+        <altmember cref="T:Microsoft.VisualBasic.DateFormat" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.DateDiff(System.String,System.Object,System.Object,Microsoft.VisualBasic.FirstDayOfWeek,Microsoft.VisualBasic.FirstWeekOfYear)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.DatePart(System.String,System.Object,Microsoft.VisualBasic.FirstDayOfWeek,Microsoft.VisualBasic.FirstWeekOfYear)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Format(System.Object,System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Weekday(System.DateTime,Microsoft.VisualBasic.FirstDayOfWeek)" />
       </Docs>
     </Member>
     <Member MemberName="vbSet">
@@ -1954,6 +2189,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.CallType" />
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.CallByName(System.Object,System.String,Microsoft.VisualBasic.CallType,System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="vbShortDate">
@@ -1982,6 +2219,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.DateFormat" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.FormatDateTime(System.DateTime,Microsoft.VisualBasic.DateFormat)" />
       </Docs>
     </Member>
     <Member MemberName="vbShortTime">
@@ -2010,6 +2249,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.DateFormat" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.FormatDateTime(System.DateTime,Microsoft.VisualBasic.DateFormat)" />
       </Docs>
     </Member>
     <Member MemberName="vbSimplifiedChinese">
@@ -2035,6 +2276,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.VbStrConv" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.StrConv(System.String,Microsoft.VisualBasic.VbStrConv,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="vbSingle">
@@ -2062,6 +2305,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.VariantType" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.VarType(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="vbString">
@@ -2089,6 +2334,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.VariantType" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.VarType(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="vbSunday">
@@ -2120,6 +2367,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.FirstDayOfWeek" />
+        <altmember cref="T:Microsoft.VisualBasic.FirstWeekOfYear" />
+        <altmember cref="T:Microsoft.VisualBasic.DateFormat" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.DateDiff(System.String,System.Object,System.Object,Microsoft.VisualBasic.FirstDayOfWeek,Microsoft.VisualBasic.FirstWeekOfYear)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.DatePart(System.String,System.Object,Microsoft.VisualBasic.FirstDayOfWeek,Microsoft.VisualBasic.FirstWeekOfYear)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Format(System.Object,System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Weekday(System.DateTime,Microsoft.VisualBasic.FirstDayOfWeek)" />
       </Docs>
     </Member>
     <Member MemberName="vbSystem">
@@ -2149,6 +2403,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.FileAttribute" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Dir" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.GetAttr(System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.SetAttr(System.String,Microsoft.VisualBasic.FileAttribute)" />
       </Docs>
     </Member>
     <Member MemberName="vbSystemModal">
@@ -2174,6 +2432,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxResult" />
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxStyle" />
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.MsgBox(System.Object,Microsoft.VisualBasic.MsgBoxStyle,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="vbTab">
@@ -2191,6 +2452,10 @@
       <Docs>
         <summary>Represents a tab character for print and display functions.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Print(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="vbTextCompare">
@@ -2218,6 +2483,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.CompareMethod" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Filter(System.String[],System.String,System.Boolean,Microsoft.VisualBasic.CompareMethod)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.InStr(System.String,System.String,Microsoft.VisualBasic.CompareMethod)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.InStrRev(System.String,System.String,System.Int32,Microsoft.VisualBasic.CompareMethod)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Replace(System.String,System.String,System.String,System.Int32,System.Int32,Microsoft.VisualBasic.CompareMethod)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Split(System.String,System.String,System.Int32,Microsoft.VisualBasic.CompareMethod)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.StrComp(System.String,System.String,Microsoft.VisualBasic.CompareMethod)" />
       </Docs>
     </Member>
     <Member MemberName="vbThursday">
@@ -2249,6 +2521,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.FirstDayOfWeek" />
+        <altmember cref="T:Microsoft.VisualBasic.FirstWeekOfYear" />
+        <altmember cref="T:Microsoft.VisualBasic.DateFormat" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.DateDiff(System.String,System.Object,System.Object,Microsoft.VisualBasic.FirstDayOfWeek,Microsoft.VisualBasic.FirstWeekOfYear)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.DatePart(System.String,System.Object,Microsoft.VisualBasic.FirstDayOfWeek,Microsoft.VisualBasic.FirstWeekOfYear)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Format(System.Object,System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Weekday(System.DateTime,Microsoft.VisualBasic.FirstDayOfWeek)" />
       </Docs>
     </Member>
     <Member MemberName="vbTraditionalChinese">
@@ -2274,6 +2553,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.VbStrConv" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.StrConv(System.String,Microsoft.VisualBasic.VbStrConv,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="vbTrue">
@@ -2299,6 +2580,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.TriState" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.FormatNumber(System.Object,System.Int32,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.FormatCurrency(System.Object,System.Int32,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.FormatPercent(System.Object,System.Int32,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState)" />
       </Docs>
     </Member>
     <Member MemberName="vbTuesday">
@@ -2330,6 +2615,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.FirstDayOfWeek" />
+        <altmember cref="T:Microsoft.VisualBasic.FirstWeekOfYear" />
+        <altmember cref="T:Microsoft.VisualBasic.DateFormat" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.DateDiff(System.String,System.Object,System.Object,Microsoft.VisualBasic.FirstDayOfWeek,Microsoft.VisualBasic.FirstWeekOfYear)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.DatePart(System.String,System.Object,Microsoft.VisualBasic.FirstDayOfWeek,Microsoft.VisualBasic.FirstWeekOfYear)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Format(System.Object,System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Weekday(System.DateTime,Microsoft.VisualBasic.FirstDayOfWeek)" />
       </Docs>
     </Member>
     <Member MemberName="vbUpperCase">
@@ -2355,6 +2647,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.VbStrConv" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.StrConv(System.String,Microsoft.VisualBasic.VbStrConv,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="vbUseDefault">
@@ -2380,6 +2674,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.TriState" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.FormatNumber(System.Object,System.Int32,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.FormatCurrency(System.Object,System.Int32,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.FormatPercent(System.Object,System.Int32,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState)" />
       </Docs>
     </Member>
     <Member MemberName="vbUserDefinedType">
@@ -2407,6 +2705,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.VariantType" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.VarType(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="vbUseSystem">
@@ -2436,6 +2736,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.FirstDayOfWeek" />
+        <altmember cref="T:Microsoft.VisualBasic.FirstWeekOfYear" />
+        <altmember cref="T:Microsoft.VisualBasic.DateFormat" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.DateDiff(System.String,System.Object,System.Object,Microsoft.VisualBasic.FirstDayOfWeek,Microsoft.VisualBasic.FirstWeekOfYear)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.DatePart(System.String,System.Object,Microsoft.VisualBasic.FirstDayOfWeek,Microsoft.VisualBasic.FirstWeekOfYear)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Format(System.Object,System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Weekday(System.DateTime,Microsoft.VisualBasic.FirstDayOfWeek)" />
       </Docs>
     </Member>
     <Member MemberName="vbUseSystemDayOfWeek">
@@ -2467,6 +2774,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.FirstDayOfWeek" />
+        <altmember cref="T:Microsoft.VisualBasic.FirstWeekOfYear" />
+        <altmember cref="T:Microsoft.VisualBasic.DateFormat" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.DateDiff(System.String,System.Object,System.Object,Microsoft.VisualBasic.FirstDayOfWeek,Microsoft.VisualBasic.FirstWeekOfYear)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.DatePart(System.String,System.Object,Microsoft.VisualBasic.FirstDayOfWeek,Microsoft.VisualBasic.FirstWeekOfYear)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Format(System.Object,System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Weekday(System.DateTime,Microsoft.VisualBasic.FirstDayOfWeek)" />
       </Docs>
     </Member>
     <Member MemberName="vbVariant">
@@ -2494,6 +2808,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.VariantType" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.VarType(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="vbVerticalTab">
@@ -2511,6 +2827,10 @@
       <Docs>
         <summary>Represents a carriage-return character for print functions.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Print(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="vbVolume">
@@ -2542,6 +2862,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.FileAttribute" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Dir" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.GetAttr(System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.SetAttr(System.String,Microsoft.VisualBasic.FileAttribute)" />
       </Docs>
     </Member>
     <Member MemberName="vbWednesday">
@@ -2573,6 +2897,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.FirstDayOfWeek" />
+        <altmember cref="T:Microsoft.VisualBasic.FirstWeekOfYear" />
+        <altmember cref="T:Microsoft.VisualBasic.DateFormat" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.DateDiff(System.String,System.Object,System.Object,Microsoft.VisualBasic.FirstDayOfWeek,Microsoft.VisualBasic.FirstWeekOfYear)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.DatePart(System.String,System.Object,Microsoft.VisualBasic.FirstDayOfWeek,Microsoft.VisualBasic.FirstWeekOfYear)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Format(System.Object,System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Weekday(System.DateTime,Microsoft.VisualBasic.FirstDayOfWeek)" />
       </Docs>
     </Member>
     <Member MemberName="vbWide">
@@ -2598,6 +2929,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.VbStrConv" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.StrConv(System.String,Microsoft.VisualBasic.VbStrConv,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="vbYes">
@@ -2625,6 +2958,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxResult" />
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxStyle" />
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.MsgBox(System.Object,Microsoft.VisualBasic.MsgBoxStyle,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="vbYesNo">
@@ -2650,6 +2986,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxResult" />
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxStyle" />
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.MsgBox(System.Object,Microsoft.VisualBasic.MsgBoxStyle,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="vbYesNoCancel">
@@ -2675,6 +3014,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxResult" />
+        <altmember cref="T:Microsoft.VisualBasic.MsgBoxStyle" />
+        <altmember cref="M:Microsoft.VisualBasic.Interaction.MsgBox(System.Object,Microsoft.VisualBasic.MsgBoxStyle,System.Object)" />
       </Docs>
     </Member>
   </Members>

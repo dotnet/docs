@@ -13,7 +13,7 @@ helpviewer_keywords:
   - "ledger-like formats"
   - "DataGridView control [Windows Forms], row style alternation"
   - "Windows Forms, rows"
-  - "rows, alternating"
+  - "rows [Windows Forms], alternating"
   - "data [Windows Forms], displaying"
 ms.assetid: 02373442-bf94-4470-9f8a-e44c4a9d5b88
 caps.latest.revision: 12

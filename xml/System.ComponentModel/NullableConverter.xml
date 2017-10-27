@@ -235,6 +235,7 @@
         <summary>Creates an instance of the type that this <see cref="T:System.ComponentModel.TypeConverter" /> is associated with, using the specified context, given a set of property values for the object.</summary>
         <returns>An <see cref="T:System.Object" /> representing the given <see cref="T:System.Collections.IDictionary" />, or <see langword="null" /> if the object cannot be created. This method always returns <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.ComponentModel.TypeConverter.CreateInstance(System.ComponentModel.ITypeDescriptorContext,System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="GetCreateInstanceSupported">
@@ -268,6 +269,7 @@
         <returns>
           <see langword="true" /> if changing a property on this object requires a call to <see cref="M:System.ComponentModel.TypeConverter.CreateInstance(System.Collections.IDictionary)" /> to create a new value; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.ComponentModel.TypeConverter.GetCreateInstanceSupported(System.ComponentModel.ITypeDescriptorContext)" />
       </Docs>
     </Member>
     <Member MemberName="GetProperties">
@@ -304,6 +306,7 @@
         <summary>Returns a collection of properties for the type of array specified by the value parameter, using the specified context and attributes.</summary>
         <returns>A <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> with the properties that are exposed for this data type, or <see langword="null" /> if there are no properties.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.ComponentModel.TypeConverter.GetProperties(System.ComponentModel.ITypeDescriptorContext,System.Object,System.Attribute[])" />
       </Docs>
     </Member>
     <Member MemberName="GetPropertiesSupported">
@@ -337,6 +340,7 @@
         <returns>
           <see langword="true" /> if <see cref="M:System.ComponentModel.TypeConverter.GetProperties(System.Object)" /> should be called to find the properties of this object; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.ComponentModel.TypeConverter.GetPropertiesSupported(System.ComponentModel.ITypeDescriptorContext)" />
       </Docs>
     </Member>
     <Member MemberName="GetStandardValues">
@@ -369,6 +373,7 @@
         <summary>Returns a collection of standard values for the data type this type converter is designed for when provided with a format context.</summary>
         <returns>A <see cref="T:System.ComponentModel.TypeConverter.StandardValuesCollection" /> that holds a standard set of valid values, or <see langword="null" /> if the data type does not support a standard set of values.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.ComponentModel.TypeConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)" />
       </Docs>
     </Member>
     <Member MemberName="GetStandardValuesExclusive">
@@ -402,6 +407,7 @@
         <returns>
           <see langword="true" /> if the <see cref="T:System.ComponentModel.TypeConverter.StandardValuesCollection" /> returned from <see cref="M:System.ComponentModel.TypeConverter.GetStandardValues" /> is an exhaustive list of possible values; <see langword="false" /> if other values are possible.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.ComponentModel.TypeConverter.GetStandardValuesExclusive(System.ComponentModel.ITypeDescriptorContext)" />
       </Docs>
     </Member>
     <Member MemberName="GetStandardValuesSupported">
@@ -435,6 +441,7 @@
         <returns>
           <see langword="true" /> if <see cref="M:System.ComponentModel.TypeConverter.GetStandardValues" /> should be called to find a common set of values the object supports; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.ComponentModel.TypeConverter.GetStandardValuesSupported(System.ComponentModel.ITypeDescriptorContext)" />
       </Docs>
     </Member>
     <Member MemberName="IsValid">
@@ -470,6 +477,7 @@
         <returns>
           <see langword="true" /> if the specified value is valid for this object; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.ComponentModel.TypeConverter.IsValid(System.ComponentModel.ITypeDescriptorContext,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="NullableType">

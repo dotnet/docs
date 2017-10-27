@@ -305,6 +305,7 @@
           <paramref name="switchName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="switchName" /> is <see cref="F:System.String.Empty" />.</exception>
+        <altmember cref="M:System.AppContext.TryGetSwitch(System.String,System.Boolean@)" />
       </Docs>
     </Member>
     <Member MemberName="TargetFrameworkName">
@@ -343,6 +344,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.Versioning.TargetFrameworkAttribute" />
+        <altmember cref="P:System.Runtime.Versioning.TargetFrameworkAttribute.FrameworkName" />
       </Docs>
     </Member>
     <Member MemberName="TryGetSwitch">
@@ -405,6 +408,7 @@
           <paramref name="switchName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="switchName" /> is <see cref="F:System.String.Empty" />.</exception>
+        <altmember cref="M:System.AppContext.SetSwitch(System.String,System.Boolean)" />
       </Docs>
     </Member>
   </Members>

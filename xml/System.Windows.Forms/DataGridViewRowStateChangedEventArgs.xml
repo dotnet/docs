@@ -32,6 +32,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.RowStateChanged" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewRowStateChangedEventArgs.Row" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewRowStateChangedEventArgs.StateChanged" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewElementStates" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewRowStateChangedEventHandler" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -59,6 +66,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.RowStateChanged" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewElementStates" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewRowStateChangedEventArgs.Row" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewRowStateChangedEventArgs.StateChanged" />
       </Docs>
     </Member>
     <Member MemberName="Row">
@@ -89,6 +102,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.RowStateChanged" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
       </Docs>
     </Member>
     <Member MemberName="StateChanged">
@@ -119,6 +135,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.RowStateChanged" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewElementStates" />
       </Docs>
     </Member>
   </Members>

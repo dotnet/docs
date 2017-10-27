@@ -9,15 +9,15 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 f1_keywords: 
   - "Graphics.FillRectangle"
 helpviewer_keywords: 
-  - "drawing, rectangles"
-  - "rectangles, drawing"
+  - "drawing [Windows Forms], rectangles"
+  - "rectangles [Windows Forms], drawing"
   - "drawing rectangles"
 ms.assetid: d656a93c-987d-4809-aafd-493fe17450f0
 caps.latest.revision: 11

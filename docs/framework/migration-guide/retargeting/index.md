@@ -1,5 +1,5 @@
 ---
-title: "Retargeting Changes in the .NET Framework"
+title: Retargeting Changes in the .NET Framework
 ms.date: "05/19/2017"
 ms.prod: ".net-framework"
 ms.technology:
@@ -13,7 +13,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ---
 
-# "Retargeting Changes in the .NET Framework"
+# Retargeting Changes in the .NET Framework
 
 [!include[introduction](../../../../includes/migration-guide/retargeting/introduction.md)]
 ## Usage

@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "managed HTML DOM, changing styles on elements"
+  - "managed HTML DOM [Windows Forms], changing styles on elements"
 ms.assetid: 154e8d9f-3e2d-4e8b-a6f3-c85a070e9cc1
 caps.latest.revision: 7
 author: dotnet-bot

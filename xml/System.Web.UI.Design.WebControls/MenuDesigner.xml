@@ -58,6 +58,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Menu" />
+    <altmember cref="T:System.Web.UI.WebControls.HierarchicalDataBoundControl" />
+    <altmember cref="T:System.Web.UI.Design.WebControls.HierarchicalDataBoundControlDesigner" />
+    <altmember cref="T:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner" />
+    <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
+    <altmember cref="T:System.Web.UI.Design.HtmlControlDesigner" />
+    <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -80,6 +87,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.HierarchicalDataBoundControlDesigner" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner" />
+        <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
+        <altmember cref="T:System.Web.UI.Design.HtmlControlDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
       </Docs>
     </Member>
     <Member MemberName="ActionLists">
@@ -105,6 +118,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.ComponentModel.Design.DesignerActionList" />
+        <altmember cref="T:System.ComponentModel.Design.DesignerActionListCollection" />
+        <altmember cref="P:System.Web.UI.Design.WebControls.HierarchicalDataBoundControlDesigner.ActionLists" />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.ActionLists" />
+        <altmember cref="P:System.ComponentModel.Design.ComponentDesigner.ActionLists" />
       </Docs>
     </Member>
     <Member MemberName="AutoFormats">
@@ -130,6 +149,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.Design.DesignerAutoFormatCollection" />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.AutoFormats" />
       </Docs>
     </Member>
     <Member MemberName="CanRefreshSchema">
@@ -185,6 +207,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataBoundControl.DataSource" />
+        <altmember cref="P:System.Web.UI.WebControls.HierarchicalDataBoundControl.DataSourceID" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.HierarchicalDataBoundControlDesigner.DataBind(System.Web.UI.WebControls.BaseDataBoundControl)" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DataBind(System.Web.UI.WebControls.BaseDataBoundControl)" />
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeHtml">
@@ -219,6 +246,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.MenuDesigner.DataBind(System.Web.UI.WebControls.BaseDataBoundControl)" />
+        <altmember cref="M:System.Web.UI.WebControls.Menu.GetDesignModeState" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.GetDesignTimeHtml" />
       </Docs>
     </Member>
     <Member MemberName="GetEmptyDesignTimeHtml">
@@ -253,6 +284,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.WebControls.MenuDesigner.GetDesignTimeHtml" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.MenuDesigner.GetErrorDesignTimeHtml(System.Exception)" />
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
       </Docs>
     </Member>
     <Member MemberName="GetErrorDesignTimeHtml">
@@ -290,6 +324,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.WebControls.MenuDesigner.GetDesignTimeHtml" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.MenuDesigner.GetEmptyDesignTimeHtml" />
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
       </Docs>
     </Member>
     <Member MemberName="GetSampleDataSource">
@@ -316,6 +353,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.IHierarchicalEnumerable" />
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -355,6 +394,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">*component* is not a <see cref="T:System.Web.UI.WebControls.Menu" /> or of a class derived from <see cref="T:System.Web.UI.WebControls.Menu" />.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.ComponentModel.IComponent" />
+        <altmember cref="E:System.Web.UI.Design.IControlDesignerView.ViewEvent" />
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.Initialize(System.ComponentModel.IComponent)" />
+        <altmember cref="M:System.ComponentModel.Design.ComponentDesigner.Initialize(System.ComponentModel.IComponent)" />
       </Docs>
     </Member>
     <Member MemberName="RefreshSchema">
@@ -383,6 +427,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Design.WebControls.MenuDesigner.CanRefreshSchema" />
       </Docs>
     </Member>
     <Member MemberName="Schema">
@@ -401,6 +446,7 @@
         <summary>Gets a schema that describes the data source view for the associated <see cref="T:System.Web.UI.WebControls.Menu" /> control.</summary>
         <value>An <see cref="T:System.Web.UI.Design.IDataSourceViewSchema" /> object that describes the structure of the data source.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.IDataSourceViewSchema" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.Design.IDataBindingSchemaProvider.CanRefreshSchema">
@@ -427,6 +473,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.IDataBindingSchemaProvider" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.Design.IDataBindingSchemaProvider.RefreshSchema">
@@ -506,6 +553,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.Design.TemplateGroupCollection" />
+        <altmember cref="T:System.Web.UI.Design.TemplateGroup" />
+        <altmember cref="T:System.Web.UI.Design.TemplateDefinition" />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.TemplateGroups" />
       </Docs>
     </Member>
     <Member MemberName="UsePreviewControl">
@@ -536,6 +588,11 @@
         <block subset="none" type="overrides">
           <para>You can override the <see cref="P:System.Web.UI.Design.WebControls.MenuDesigner.UsePreviewControl" /> property to return <see langword="false" /> or to determine its value based on whether the control is marked with a class level <see cref="T:System.Web.UI.Design.SupportsPreviewControlAttribute" /> attribute. If the <see cref="P:System.Web.UI.Design.WebControls.MenuDesigner.UsePreviewControl" /> is not overridden, the <see cref="T:System.Web.UI.WebControls.Menu" /> ignores the <see cref="T:System.Web.UI.Design.SupportsPreviewControlAttribute" />.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.View" />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.ViewControl" />
+        <altmember cref="T:System.Web.UI.Design.SupportsPreviewControlAttribute" />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.UsePreviewControl" />
       </Docs>
     </Member>
   </Members>

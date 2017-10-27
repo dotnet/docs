@@ -60,6 +60,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Net.PeerToPeer.PnrpPermissionAttribute.CreatePermission" />
+        <altmember cref="T:System.Net.PeerToPeer.PeerName" />
+        <altmember cref="T:System.Net.PeerToPeer.PeerNameRecord" />
+        <altmember cref="T:System.Net.PeerToPeer.PnrpPermission" />
       </Docs>
     </Member>
     <Member MemberName="CreatePermission">
@@ -88,6 +92,7 @@
   
  When this class inherits from <see cref="T:System.Security.Permissions.SecurityAttribute" />, it overrides <see cref="M:System.Security.Permissions.SecurityAttribute.CreatePermission" /> automatically at compile time or at run-time.</para>
         </block>
+        <altmember cref="T:System.Net.PeerToPeer.PnrpPermission" />
       </Docs>
     </Member>
   </Members>

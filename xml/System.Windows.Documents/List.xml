@@ -53,6 +53,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Documents.ListItem" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -207,6 +208,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.List.MarkerStyle" />
       </Docs>
     </Member>
     <Member MemberName="MarkerOffsetProperty">
@@ -258,6 +260,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.List.MarkerOffset" />
       </Docs>
     </Member>
     <Member MemberName="MarkerStyleProperty">
@@ -329,5 +332,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.List" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

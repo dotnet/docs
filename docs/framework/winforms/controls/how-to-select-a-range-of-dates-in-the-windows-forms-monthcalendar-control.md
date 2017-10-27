@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "dates, selecting range in calendar controls"
+  - "dates [Windows Forms], selecting range in calendar controls"
   - "examples [Windows Forms], calendar controls"
-  - "calendars, selecting date range"
+  - "calendars [Windows Forms], selecting date range"
   - "MonthCalendar control [Windows Forms], selecting date range"
 ms.assetid: 95d9ab95-b0f8-4c19-9f63-b5cd4593a5d0
 caps.latest.revision: 17

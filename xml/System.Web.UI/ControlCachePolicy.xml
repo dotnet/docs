@@ -44,6 +44,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.BasePartialCachingControl.CachePolicy" />
+    <altmember cref="P:System.Web.UI.UserControl.CachePolicy" />
   </Docs>
   <Members>
     <Member MemberName="Cached">
@@ -98,6 +100,8 @@
  \- or -  
   
  The <see cref="P:System.Web.UI.ControlCachePolicy.Dependency" /> property is set outside of the initialization and rendering stages of the control.</exception>
+        <altmember cref="T:System.Web.Caching.CacheDependency" />
+        <altmember cref="P:System.Web.UI.BasePartialCachingControl.Dependency" />
       </Docs>
     </Member>
     <Member MemberName="Duration">
@@ -136,6 +140,8 @@
  \- or -  
   
  The <see cref="P:System.Web.UI.ControlCachePolicy.Duration" /> property is set outside of the initialization and rendering stages of the control.</exception>
+        <altmember cref="M:System.Web.UI.ControlCachePolicy.SetExpires(System.DateTime)" />
+        <altmember cref="M:System.Web.UI.ControlCachePolicy.SetSlidingExpiration(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="ProviderName">
@@ -200,6 +206,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The user control is not associated with a <see cref="T:System.Web.UI.BasePartialCachingControl" /> and is not cacheable.</exception>
+        <altmember cref="P:System.Web.UI.ControlCachePolicy.Duration" />
+        <altmember cref="M:System.Web.UI.ControlCachePolicy.SetSlidingExpiration(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="SetSlidingExpiration">
@@ -238,6 +246,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The user control is not associated with a <see cref="T:System.Web.UI.BasePartialCachingControl" /> and is not cacheable.</exception>
+        <altmember cref="P:System.Web.UI.ControlCachePolicy.Duration" />
+        <altmember cref="M:System.Web.UI.ControlCachePolicy.SetExpires(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="SetVaryByCustom">
@@ -267,6 +277,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The user control is not associated with a <see cref="T:System.Web.UI.BasePartialCachingControl" /> and is not cacheable.</exception>
+        <altmember cref="P:System.Web.UI.PartialCachingAttribute.VaryByCustom" />
       </Docs>
     </Member>
     <Member MemberName="SupportsCaching">
@@ -293,6 +304,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.PartialCachingAttribute" />
+        <altmember cref="T:System.Web.UI.BasePartialCachingControl" />
       </Docs>
     </Member>
     <Member MemberName="VaryByControl">
@@ -316,6 +329,7 @@
  \- or -  
   
  The <see cref="P:System.Web.UI.ControlCachePolicy.VaryByControl" /> property is set outside of the initialization and rendering stages of the control.</exception>
+        <altmember cref="P:System.Web.UI.PartialCachingAttribute.VaryByControls" />
       </Docs>
     </Member>
     <Member MemberName="VaryByParams">
@@ -342,6 +356,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The user control is not associated with a <see cref="T:System.Web.UI.BasePartialCachingControl" /> and is not cacheable.</exception>
+        <altmember cref="P:System.Web.UI.PartialCachingAttribute.VaryByParams" />
       </Docs>
     </Member>
   </Members>

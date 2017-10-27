@@ -12,7 +12,7 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "master-details lists"
   - "DataGrid control [Windows Forms], master-details lists"
-  - "related tables, displaying in DataGrid control"
+  - "related tables [Windows Forms], displaying in DataGrid control"
 ms.assetid: 19438ba2-f687-4417-a2fb-ab1cd69d4ded
 caps.latest.revision: 8
 author: dotnet-bot

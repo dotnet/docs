@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "cloning Freezable objects"
-  - "Freezable objects, modifiable clones"
+  - "cloning Freezable objects [WPF]"
+  - "Freezable objects [WPF], modifiable clones"
 ms.assetid: d028de61-bbe9-4d62-b656-8fe3b1b2ca24
 caps.latest.revision: 5
 author: dotnet-bot

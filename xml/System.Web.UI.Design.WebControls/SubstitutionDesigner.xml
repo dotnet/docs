@@ -18,6 +18,7 @@
   <Docs>
     <summary>Provides design-time support in a visual designer for the <see cref="T:System.Web.UI.WebControls.Substitution" /> control.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Substitution" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,6 +34,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.SubstitutionDesigner" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Substitution" />
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeHtml">
@@ -52,6 +54,8 @@
         <summary>Gets the HTML markup that is used to represent the control at design time.</summary>
         <returns>The HTML markup used to represent the control at design time.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.GetDesignTimeHtml" />
+        <altmember cref="T:System.Web.UI.WebControls.Substitution" />
       </Docs>
     </Member>
   </Members>

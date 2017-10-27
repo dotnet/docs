@@ -31,6 +31,7 @@
 ## XAML Text Usage  
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.ResourceDictionary" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -777,6 +778,7 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IDictionary.GetEnumerator" />.</summary>
         <returns>An <see cref="T:System.Collections.IDictionaryEnumerator" /> object that can be used to iterate through the collection.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Markup.XmlnsDictionary.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -816,5 +818,50 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a prefix-URI pair to this <see cref="T:System.Windows.Markup.XmlnsDictionary" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CopyTo">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies the entries in the <see cref="T:System.Windows.Markup.XmlnsDictionary" /> to a specified array.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the item with the specified prefix key from the <see cref="T:System.Windows.Markup.XmlnsDictionary" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets the XML namespace URI associated with the specified prefix.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.XmlnsDictionary" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

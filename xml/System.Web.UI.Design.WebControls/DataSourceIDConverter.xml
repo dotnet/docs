@@ -28,6 +28,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.TypeConverter" />
+    <altmember cref="T:System.ComponentModel.TypeConverterAttribute" />
+    <altmember cref="T:System.ComponentModel.TypeConverter.StandardValuesCollection" />
+    <altmember cref="T:System.Web.UI.IDataSource" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -50,6 +54,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
+        <altmember cref="T:System.ComponentModel.TypeConverter" />
+        <altmember cref="T:System.ComponentModel.TypeConverterAttribute" />
       </Docs>
     </Member>
     <Member MemberName="CanConvertFrom">
@@ -84,6 +91,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.WebControls.DataSourceIDConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
+        <altmember cref="M:System.ComponentModel.TypeConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+        <altmember cref="T:System.ComponentModel.TypeConverter" />
       </Docs>
     </Member>
     <Member MemberName="ConvertFrom">
@@ -121,6 +131,9 @@
         </remarks>
         <exception cref="T:System.NotSupportedException">
           <paramref name="value" /> is other than a string or <see langword="null" />.</exception>
+        <altmember cref="M:System.Web.UI.Design.WebControls.DataSourceIDConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+        <altmember cref="M:System.ComponentModel.TypeConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
+        <altmember cref="T:System.ComponentModel.TypeConverter" />
       </Docs>
     </Member>
     <Member MemberName="GetStandardValues">
@@ -150,6 +163,15 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.TypeConverter" />
+        <altmember cref="P:System.ComponentModel.Design.IDesignerHost.RootComponent" />
+        <altmember cref="M:System.ComponentModel.Design.IDesignerHost.GetDesigner(System.ComponentModel.IComponent)" />
+        <altmember cref="T:System.Web.UI.Design.WebFormsRootDesigner" />
+        <altmember cref="P:System.ComponentModel.ITypeDescriptorContext.Container" />
+        <altmember cref="P:System.ComponentModel.Container.Components" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.DataSourceIDConverter.IsValidDataSource(System.ComponentModel.IComponent)" />
+        <altmember cref="P:System.ComponentModel.IComponent.Site" />
+        <altmember cref="T:System.ComponentModel.TypeConverter.StandardValuesCollection" />
       </Docs>
     </Member>
     <Member MemberName="GetStandardValuesExclusive">
@@ -181,6 +203,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.WebControls.DataSourceIDConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)" />
+        <altmember cref="T:System.ComponentModel.TypeConverter" />
+        <altmember cref="M:System.ComponentModel.TypeConverter.GetStandardValuesExclusive" />
       </Docs>
     </Member>
     <Member MemberName="GetStandardValuesSupported">
@@ -210,6 +235,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.WebControls.DataSourceIDConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)" />
+        <altmember cref="T:System.ComponentModel.TypeConverter" />
+        <altmember cref="M:System.ComponentModel.TypeConverter.GetStandardValuesSupported" />
       </Docs>
     </Member>
     <Member MemberName="IsValidDataSource">
@@ -243,6 +271,9 @@
         <block subset="none" type="overrides">
           <para>The <see cref="M:System.Web.UI.Design.WebControls.DataSourceIDConverter.IsValidDataSource(System.ComponentModel.IComponent)" /> method should be overridden by controls that need to further investigate a given component to decide whether it should be returned in the list of standard values. For example, if a control works with only <see cref="T:System.Web.UI.WebControls.XmlDataSource" /> data sources, <see cref="M:System.Web.UI.Design.WebControls.DataSourceIDConverter.IsValidDataSource(System.ComponentModel.IComponent)" /> should return <see langword="true" /> only for those components that are <see cref="T:System.Web.UI.WebControls.XmlDataSource" /> objects.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.TypeConverter" />
+        <altmember cref="T:System.ComponentModel.IComponent" />
+        <altmember cref="T:System.Web.UI.IDataSource" />
       </Docs>
     </Member>
   </Members>

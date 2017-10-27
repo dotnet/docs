@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "inheritance, forms"
+  - "inheritance [Windows Forms], forms"
   - "Inheritance Picker dialog box"
-  - "inherited forms, creating"
+  - "inherited forms [Windows Forms], creating"
 ms.assetid: 969b4c04-12aa-4297-93a2-0ae747447823
 caps.latest.revision: 11
 author: dotnet-bot

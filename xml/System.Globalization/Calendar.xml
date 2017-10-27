@@ -95,6 +95,23 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.DateTime" />
+    <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
+    <altmember cref="T:System.Globalization.ChineseLunisolarCalendar" />
+    <altmember cref="T:System.Globalization.EastAsianLunisolarCalendar" />
+    <altmember cref="T:System.Globalization.GregorianCalendar" />
+    <altmember cref="T:System.Globalization.HebrewCalendar" />
+    <altmember cref="T:System.Globalization.HijriCalendar" />
+    <altmember cref="T:System.Globalization.JapaneseCalendar" />
+    <altmember cref="T:System.Globalization.JapaneseLunisolarCalendar" />
+    <altmember cref="T:System.Globalization.JulianCalendar" />
+    <altmember cref="T:System.Globalization.KoreanCalendar" />
+    <altmember cref="T:System.Globalization.KoreanLunisolarCalendar" />
+    <altmember cref="T:System.Globalization.PersianCalendar" />
+    <altmember cref="T:System.Globalization.TaiwanCalendar" />
+    <altmember cref="T:System.Globalization.TaiwanLunisolarCalendar" />
+    <altmember cref="T:System.Globalization.ThaiBuddhistCalendar" />
+    <altmember cref="T:System.Globalization.UmAlQuraCalendar" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -183,7 +200,7 @@
   
  The month part of the resulting <xref:System.DateTime> is affected if the resulting day is outside the month of the specified <xref:System.DateTime>. The year part of the resulting <xref:System.DateTime> is affected if the resulting month is outside the year of the specified <xref:System.DateTime>. The era part of the resulting <xref:System.DateTime> is affected if the resulting year is outside the era of the specified <xref:System.DateTime>. The time-of-day part of the resulting <xref:System.DateTime> remains the same as the specified <xref:System.DateTime>.  
   
- The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=nameWithType>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=nameWithType> method, as the following example shows.  
+ The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=nameWithType> method, as the following example shows.  
   
  [!code-csharp[System.Globalization.Calendar.AddMethods#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/cs/add1.cs#1)]
  [!code-vb[System.Globalization.Calendar.AddMethods#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/vb/add1.vb#1)]  
@@ -202,6 +219,14 @@
         <exception cref="T:System.ArgumentException">The resulting <see cref="T:System.DateTime" /> is outside the supported range of this calendar.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="days" /> is outside the supported range of the <see cref="T:System.DateTime" /> return value.</exception>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="M:System.Globalization.Calendar.AddYears(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddMonths(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddWeeks(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddHours(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddMinutes(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddSeconds(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddMilliseconds(System.DateTime,System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="AddHours">
@@ -247,7 +272,7 @@
   
  The day part of the resulting <xref:System.DateTime> is affected if the resulting time is outside the day of the specified <xref:System.DateTime>. The month part of the resulting <xref:System.DateTime> is affected if the resulting day is outside the month of the specified <xref:System.DateTime>. The year part of the resulting <xref:System.DateTime> is affected if the resulting month is outside the year of the specified <xref:System.DateTime>. The era part of the resulting <xref:System.DateTime> is affected if the resulting year is outside the era of the specified <xref:System.DateTime>.  
   
- The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=nameWithType>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=nameWithType> method, as the following example shows.  
+ The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=nameWithType> method, as the following example shows.  
   
  [!code-csharp[System.Globalization.Calendar.AddMethods#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/cs/add1.cs#2)]
  [!code-vb[System.Globalization.Calendar.AddMethods#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/vb/add1.vb#2)]  
@@ -266,6 +291,14 @@
         <exception cref="T:System.ArgumentException">The resulting <see cref="T:System.DateTime" /> is outside the supported range of this calendar.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="hours" /> is outside the supported range of the <see cref="T:System.DateTime" /> return value.</exception>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="M:System.Globalization.Calendar.AddYears(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddMonths(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddWeeks(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddDays(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddMinutes(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddSeconds(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddMilliseconds(System.DateTime,System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="AddMilliseconds">
@@ -311,7 +344,7 @@
   
  The day part of the resulting <xref:System.DateTime> is affected if the resulting time is outside the day of the specified <xref:System.DateTime>. The month part of the resulting <xref:System.DateTime> is affected if the resulting day is outside the month of the specified <xref:System.DateTime>. The year part of the resulting <xref:System.DateTime> is affected if the resulting month is outside the year of the specified <xref:System.DateTime>. The era part of the resulting <xref:System.DateTime> is affected if the resulting year is outside the era of the specified <xref:System.DateTime>.  
   
- The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=nameWithType>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=nameWithType> method, as the following example shows.  
+ The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=nameWithType> method, as the following example shows.  
   
  [!code-csharp[System.Globalization.Calendar.AddMethods#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/cs/add1.cs#3)]
  [!code-vb[System.Globalization.Calendar.AddMethods#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/vb/add1.vb#3)]  
@@ -330,6 +363,14 @@
         <exception cref="T:System.ArgumentException">The resulting <see cref="T:System.DateTime" /> is outside the supported range of this calendar.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="milliseconds" /> is outside the supported range of the <see cref="T:System.DateTime" /> return value.</exception>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="M:System.Globalization.Calendar.AddYears(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddMonths(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddWeeks(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddDays(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddHours(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddMinutes(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddSeconds(System.DateTime,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="AddMinutes">
@@ -375,7 +416,7 @@
   
  The day part of the resulting <xref:System.DateTime> is affected if the resulting time is outside the day of the specified <xref:System.DateTime>. The month part of the resulting <xref:System.DateTime> is affected if the resulting day is outside the month of the specified <xref:System.DateTime>. The year part of the resulting <xref:System.DateTime> is affected if the resulting month is outside the year of the specified <xref:System.DateTime>. The era part of the resulting <xref:System.DateTime> is affected if the resulting year is outside the era of the specified <xref:System.DateTime>.  
   
- The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=nameWithType>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=nameWithType> method, as the following example shows.  
+ The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=nameWithType> method, as the following example shows.  
   
  [!code-csharp[System.Globalization.Calendar.AddMethods#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/cs/add1.cs#4)]
  [!code-vb[System.Globalization.Calendar.AddMethods#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/vb/add1.vb#4)]  
@@ -394,6 +435,14 @@
         <exception cref="T:System.ArgumentException">The resulting <see cref="T:System.DateTime" /> is outside the supported range of this calendar.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="minutes" /> is outside the supported range of the <see cref="T:System.DateTime" /> return value.</exception>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="M:System.Globalization.Calendar.AddYears(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddMonths(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddWeeks(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddDays(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddHours(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddSeconds(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddMilliseconds(System.DateTime,System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="AddMonths">
@@ -443,7 +492,7 @@
   
  If the value of the `months` parameter is negative, the resulting <xref:System.DateTime> is earlier than the specified <xref:System.DateTime>.  
   
- The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=nameWithType>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=nameWithType> method, as the following example shows.  
+ The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=nameWithType> method, as the following example shows.  
   
  [!code-csharp[System.Globalization.Calendar.AddMethods#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/cs/add1.cs#5)]
  [!code-vb[System.Globalization.Calendar.AddMethods#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/vb/add1.vb#5)]  
@@ -462,6 +511,14 @@
         <exception cref="T:System.ArgumentException">The resulting <see cref="T:System.DateTime" /> is outside the supported range of this calendar.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="months" /> is outside the supported range of the <see cref="T:System.DateTime" /> return value.</exception>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="M:System.Globalization.Calendar.AddYears(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddWeeks(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddDays(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddHours(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddMinutes(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddSeconds(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddMilliseconds(System.DateTime,System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="AddSeconds">
@@ -507,7 +564,7 @@
   
  The day part of the resulting <xref:System.DateTime> is affected if the resulting time is outside the day of the specified <xref:System.DateTime>. The month part of the resulting <xref:System.DateTime> is affected if the resulting day is outside the month of the specified <xref:System.DateTime>. The year part of the resulting <xref:System.DateTime> is affected if the resulting month is outside the year of the specified <xref:System.DateTime>. The era part of the resulting <xref:System.DateTime> is affected if the resulting year is outside the era of the specified <xref:System.DateTime>.  
   
- The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=nameWithType>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=nameWithType> method, as the following example shows.  
+ The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=nameWithType> method, as the following example shows.  
   
  [!code-csharp[System.Globalization.Calendar.AddMethods#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/cs/add1.cs#6)]
  [!code-vb[System.Globalization.Calendar.AddMethods#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/vb/add1.vb#6)]  
@@ -526,6 +583,14 @@
         <exception cref="T:System.ArgumentException">The resulting <see cref="T:System.DateTime" /> is outside the supported range of this calendar.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="seconds" /> is outside the supported range of the <see cref="T:System.DateTime" /> return value.</exception>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="M:System.Globalization.Calendar.AddYears(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddMonths(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddWeeks(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddDays(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddHours(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddMinutes(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddMilliseconds(System.DateTime,System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="AddWeeks">
@@ -573,7 +638,7 @@
   
  In all .NET Framework classes derived from the <xref:System.Globalization.Calendar> class, a week is defined as seven days.  
   
- The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=nameWithType>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=nameWithType> method, as the following example shows.  
+ The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=nameWithType> method, as the following example shows.  
   
  [!code-csharp[System.Globalization.Calendar.AddMethods#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/cs/add1.cs#7)]
  [!code-vb[System.Globalization.Calendar.AddMethods#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/vb/add1.vb#7)]  
@@ -592,6 +657,14 @@
         <exception cref="T:System.ArgumentException">The resulting <see cref="T:System.DateTime" /> is outside the supported range of this calendar.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="weeks" /> is outside the supported range of the <see cref="T:System.DateTime" /> return value.</exception>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="M:System.Globalization.Calendar.AddYears(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddMonths(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddDays(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddHours(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddMinutes(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddSeconds(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddMilliseconds(System.DateTime,System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="AddYears">
@@ -641,7 +714,7 @@
   
  If `years` is negative, the resulting <xref:System.DateTime> is earlier than the specified <xref:System.DateTime>.  
   
- The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=nameWithType>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=nameWithType> method, as the following example shows.  
+ The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=nameWithType> method, as the following example shows.  
   
  [!code-csharp[System.Globalization.Calendar.AddMethods#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/cs/add1.cs#8)]
  [!code-vb[System.Globalization.Calendar.AddMethods#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/vb/add1.vb#8)]  
@@ -660,6 +733,14 @@
         <exception cref="T:System.ArgumentException">The resulting <see cref="T:System.DateTime" /> is outside the supported range of this calendar.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="years" /> is outside the supported range of the <see cref="T:System.DateTime" /> return value.</exception>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="M:System.Globalization.Calendar.AddMonths(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddWeeks(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddDays(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddHours(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddMinutes(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddSeconds(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddMilliseconds(System.DateTime,System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="AlgorithmType">
@@ -742,6 +823,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.MemberwiseClone" />
       </Docs>
     </Member>
     <Member MemberName="CurrentEra">
@@ -781,6 +863,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Globalization.Calendar.Eras" />
       </Docs>
     </Member>
     <Member MemberName="DaysInYearBeforeMinSupportedYear">
@@ -863,6 +946,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Globalization.Calendar.CurrentEra" />
       </Docs>
     </Member>
     <Member MemberName="GetDayOfMonth">
@@ -910,6 +994,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.DateTime.Day" />
+        <altmember cref="M:System.Globalization.Calendar.GetEra(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetYear(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetMonth(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetWeekOfYear(System.DateTime,System.Globalization.CalendarWeekRule,System.DayOfWeek)" />
+        <altmember cref="M:System.Globalization.Calendar.GetDayOfYear(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetDayOfWeek(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetHour(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetMinute(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetSecond(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetMilliseconds(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="GetDayOfWeek">
@@ -962,6 +1057,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.DateTime.DayOfWeek" />
+        <altmember cref="T:System.DayOfWeek" />
+        <altmember cref="M:System.Globalization.Calendar.GetEra(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetYear(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetMonth(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetWeekOfYear(System.DateTime,System.Globalization.CalendarWeekRule,System.DayOfWeek)" />
+        <altmember cref="M:System.Globalization.Calendar.GetDayOfYear(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetDayOfMonth(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetHour(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetMinute(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetSecond(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetMilliseconds(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="GetDayOfYear">
@@ -1014,6 +1121,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.DateTime.DayOfYear" />
+        <altmember cref="M:System.Globalization.Calendar.GetEra(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetYear(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetMonth(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetWeekOfYear(System.DateTime,System.Globalization.CalendarWeekRule,System.DayOfWeek)" />
+        <altmember cref="M:System.Globalization.Calendar.GetDayOfMonth(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetDayOfWeek(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetHour(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetMinute(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetSecond(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetMilliseconds(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="GetDaysInMonth">
@@ -1074,6 +1192,9 @@
  -or-  
   
  <paramref name="month" /> is outside the range supported by the calendar.</exception>
+        <altmember cref="T:System.Globalization.GregorianCalendar" />
+        <altmember cref="M:System.Globalization.Calendar.GetMonthsInYear(System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.GetDaysInYear(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetDaysInMonth">
@@ -1134,6 +1255,11 @@
         <block subset="none" type="overrides">
           <para>The derived class must support <see cref="F:System.Globalization.Calendar.CurrentEra" /> when it is passed as the <paramref name="era" /> parameter. One way to support <see cref="F:System.Globalization.Calendar.CurrentEra" /> is by replacing it with the value stored in <c>Eras[0]</c>, which is the value for the current era of the calendar.</para>
         </block>
+        <altmember cref="T:System.Globalization.GregorianCalendar" />
+        <altmember cref="F:System.Globalization.Calendar.CurrentEra" />
+        <altmember cref="P:System.Globalization.Calendar.Eras" />
+        <altmember cref="M:System.Globalization.Calendar.GetMonthsInYear(System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.GetDaysInYear(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetDaysInYear">
@@ -1188,6 +1314,9 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="year" /> is outside the range supported by the calendar.</exception>
+        <altmember cref="T:System.Globalization.GregorianCalendar" />
+        <altmember cref="M:System.Globalization.Calendar.GetMonthsInYear(System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.GetDaysInMonth(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetDaysInYear">
@@ -1242,6 +1371,11 @@
         <block subset="none" type="overrides">
           <para>The derived class must support <see cref="F:System.Globalization.Calendar.CurrentEra" /> when it is passed as the <paramref name="era" /> parameter. One way to support <see cref="F:System.Globalization.Calendar.CurrentEra" /> is by replacing it with the value stored in <c>Eras[0]</c>, which is the value for the current era of the calendar.</para>
         </block>
+        <altmember cref="T:System.Globalization.GregorianCalendar" />
+        <altmember cref="F:System.Globalization.Calendar.CurrentEra" />
+        <altmember cref="P:System.Globalization.Calendar.Eras" />
+        <altmember cref="M:System.Globalization.Calendar.GetMonthsInYear(System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.GetDaysInMonth(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetEra">
@@ -1289,6 +1423,19 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="F:System.Globalization.Calendar.CurrentEra" />
+        <altmember cref="P:System.Globalization.Calendar.Eras" />
+        <altmember cref="M:System.Globalization.Calendar.GetYear(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetMonth(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetWeekOfYear(System.DateTime,System.Globalization.CalendarWeekRule,System.DayOfWeek)" />
+        <altmember cref="M:System.Globalization.Calendar.GetDayOfYear(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetDayOfMonth(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetDayOfWeek(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetHour(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetMinute(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetSecond(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetMilliseconds(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="GetHour">
@@ -1336,6 +1483,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.DateTime.Hour" />
+        <altmember cref="M:System.Globalization.Calendar.GetEra(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetYear(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetMonth(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetWeekOfYear(System.DateTime,System.Globalization.CalendarWeekRule,System.DayOfWeek)" />
+        <altmember cref="M:System.Globalization.Calendar.GetDayOfYear(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetDayOfMonth(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetDayOfWeek(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetMinute(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetSecond(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetMilliseconds(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="GetLeapMonth">
@@ -1484,6 +1642,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.DateTime.Millisecond" />
+        <altmember cref="M:System.Globalization.Calendar.GetEra(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetYear(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetMonth(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetWeekOfYear(System.DateTime,System.Globalization.CalendarWeekRule,System.DayOfWeek)" />
+        <altmember cref="M:System.Globalization.Calendar.GetDayOfYear(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetDayOfMonth(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetDayOfWeek(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetHour(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetMinute(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetSecond(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="GetMinute">
@@ -1531,6 +1700,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.DateTime.Minute" />
+        <altmember cref="M:System.Globalization.Calendar.GetEra(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetYear(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetMonth(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetWeekOfYear(System.DateTime,System.Globalization.CalendarWeekRule,System.DayOfWeek)" />
+        <altmember cref="M:System.Globalization.Calendar.GetDayOfYear(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetDayOfMonth(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetDayOfWeek(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetHour(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetSecond(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetMilliseconds(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="GetMonth">
@@ -1583,6 +1763,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.DateTime.Month" />
+        <altmember cref="M:System.Globalization.Calendar.GetEra(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetYear(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetWeekOfYear(System.DateTime,System.Globalization.CalendarWeekRule,System.DayOfWeek)" />
+        <altmember cref="M:System.Globalization.Calendar.GetDayOfYear(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetDayOfMonth(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetDayOfWeek(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetHour(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetMinute(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetSecond(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetMilliseconds(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="GetMonthsInYear">
@@ -1637,6 +1828,8 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="year" /> is outside the range supported by the calendar.</exception>
+        <altmember cref="M:System.Globalization.Calendar.GetDaysInYear(System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.GetDaysInMonth(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetMonthsInYear">
@@ -1691,6 +1884,10 @@
         <block subset="none" type="overrides">
           <para>The derived class must support <see cref="F:System.Globalization.Calendar.CurrentEra" /> when it is passed as the <paramref name="era" /> parameter. One way to support <see cref="F:System.Globalization.Calendar.CurrentEra" /> is by replacing it with the value stored in <c>Eras[0]</c>, which is the value for the current era of the calendar.</para>
         </block>
+        <altmember cref="F:System.Globalization.Calendar.CurrentEra" />
+        <altmember cref="P:System.Globalization.Calendar.Eras" />
+        <altmember cref="M:System.Globalization.Calendar.GetDaysInYear(System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.GetDaysInMonth(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetSecond">
@@ -1738,6 +1935,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.DateTime.Second" />
+        <altmember cref="M:System.Globalization.Calendar.GetEra(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetYear(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetMonth(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetWeekOfYear(System.DateTime,System.Globalization.CalendarWeekRule,System.DayOfWeek)" />
+        <altmember cref="M:System.Globalization.Calendar.GetDayOfYear(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetDayOfMonth(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetDayOfWeek(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetHour(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetMinute(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetMilliseconds(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="GetWeekOfYear">
@@ -1839,6 +2047,19 @@
  -or-  
   
  <paramref name="rule" /> is not a valid <see cref="T:System.Globalization.CalendarWeekRule" /> value.</exception>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="T:System.Globalization.CalendarWeekRule" />
+        <altmember cref="T:System.DayOfWeek" />
+        <altmember cref="M:System.Globalization.Calendar.GetEra(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetYear(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetMonth(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetDayOfYear(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetDayOfMonth(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetDayOfWeek(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetHour(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetMinute(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetSecond(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetMilliseconds(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="GetYear">
@@ -1886,6 +2107,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.DateTime.Year" />
+        <altmember cref="M:System.Globalization.Calendar.GetEra(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetMonth(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetWeekOfYear(System.DateTime,System.Globalization.CalendarWeekRule,System.DayOfWeek)" />
+        <altmember cref="M:System.Globalization.Calendar.GetDayOfYear(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetDayOfMonth(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetDayOfWeek(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetHour(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetMinute(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetSecond(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetMilliseconds(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="IsLeapDay">
@@ -1955,6 +2187,10 @@
  -or-  
   
  <paramref name="day" /> is outside the range supported by the calendar.</exception>
+        <altmember cref="M:System.Globalization.Calendar.GetMonthsInYear(System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.GetDaysInMonth(System.Int32,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.IsLeapYear(System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.IsLeapMonth(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="IsLeapDay">
@@ -2024,6 +2260,12 @@
         <block subset="none" type="overrides">
           <para>The derived class must support <see cref="F:System.Globalization.Calendar.CurrentEra" /> when it is passed as the <paramref name="era" /> parameter. One way to support <see cref="F:System.Globalization.Calendar.CurrentEra" /> is by replacing it with the value stored in <c>Eras[0]</c>, which is the value for the current era of the calendar.</para>
         </block>
+        <altmember cref="F:System.Globalization.Calendar.CurrentEra" />
+        <altmember cref="P:System.Globalization.Calendar.Eras" />
+        <altmember cref="M:System.Globalization.Calendar.GetMonthsInYear(System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.GetDaysInMonth(System.Int32,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.IsLeapYear(System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.IsLeapMonth(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="IsLeapMonth">
@@ -2087,6 +2329,9 @@
  -or-  
   
  <paramref name="month" /> is outside the range supported by the calendar.</exception>
+        <altmember cref="M:System.Globalization.Calendar.GetMonthsInYear(System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.IsLeapYear(System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.IsLeapDay(System.Int32,System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="IsLeapMonth">
@@ -2150,6 +2395,11 @@
         <block subset="none" type="overrides">
           <para>The derived class must support <see cref="F:System.Globalization.Calendar.CurrentEra" /> when it is passed as the <paramref name="era" /> parameter. One way to support <see cref="F:System.Globalization.Calendar.CurrentEra" /> is by replacing it with the value stored in <c>Eras[0]</c>, which is the value for the current era of the calendar.</para>
         </block>
+        <altmember cref="F:System.Globalization.Calendar.CurrentEra" />
+        <altmember cref="P:System.Globalization.Calendar.Eras" />
+        <altmember cref="M:System.Globalization.Calendar.GetMonthsInYear(System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.IsLeapYear(System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.IsLeapDay(System.Int32,System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="IsLeapYear">
@@ -2205,6 +2455,8 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="year" /> is outside the range supported by the calendar.</exception>
+        <altmember cref="M:System.Globalization.Calendar.IsLeapMonth(System.Int32,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.IsLeapDay(System.Int32,System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="IsLeapYear">
@@ -2260,6 +2512,10 @@
         <block subset="none" type="overrides">
           <para>The derived class must support <see cref="F:System.Globalization.Calendar.CurrentEra" /> when it is passed as the <paramref name="era" /> parameter. One way to support <see cref="F:System.Globalization.Calendar.CurrentEra" /> is by replacing it with the value stored in <c>Eras[0]</c>, which is the value for the current era of the calendar.</para>
         </block>
+        <altmember cref="F:System.Globalization.Calendar.CurrentEra" />
+        <altmember cref="P:System.Globalization.Calendar.Eras" />
+        <altmember cref="M:System.Globalization.Calendar.IsLeapMonth(System.Int32,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.IsLeapDay(System.Int32,System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -2335,6 +2591,7 @@
         <summary>Gets the latest date and time supported by this <see cref="T:System.Globalization.Calendar" /> object.</summary>
         <value>The latest date and time supported by this calendar. The default is <see cref="F:System.DateTime.MaxValue" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Globalization.Calendar.MinSupportedDateTime" />
       </Docs>
     </Member>
     <Member MemberName="MinSupportedDateTime">
@@ -2372,6 +2629,7 @@
         <summary>Gets the earliest date and time supported by this <see cref="T:System.Globalization.Calendar" /> object.</summary>
         <value>The earliest date and time supported by this calendar. The default is <see cref="F:System.DateTime.MinValue" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Globalization.Calendar.MaxSupportedDateTime" />
       </Docs>
     </Member>
     <Member MemberName="ReadOnly">
@@ -2414,6 +2672,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="calendar" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Object.MemberwiseClone" />
       </Docs>
     </Member>
     <Member MemberName="ToDateTime">
@@ -2488,6 +2747,9 @@
  -or-  
   
  <paramref name="millisecond" /> is less than zero or greater than 999.</exception>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="M:System.Globalization.Calendar.GetMonthsInYear(System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.GetDaysInMonth(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ToDateTime">
@@ -2578,6 +2840,11 @@
         <block subset="none" type="overrides">
           <para>The derived class must support <see cref="F:System.Globalization.Calendar.CurrentEra" /> when it is passed as the <paramref name="era" /> parameter. One way to support <see cref="F:System.Globalization.Calendar.CurrentEra" /> is by replacing it with the value stored in the first element of the <see cref="P:System.Globalization.Calendar.Eras" /> property array, which is the value for the current era of the calendar.</para>
         </block>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="F:System.Globalization.Calendar.CurrentEra" />
+        <altmember cref="P:System.Globalization.Calendar.Eras" />
+        <altmember cref="M:System.Globalization.Calendar.GetMonthsInYear(System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.GetDaysInMonth(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ToFourDigitYear">
@@ -2627,6 +2894,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="year" /> is outside the range supported by the calendar.</exception>
+        <altmember cref="P:System.Globalization.Calendar.TwoDigitYearMax" />
       </Docs>
     </Member>
     <Member MemberName="TwoDigitYearMax">
@@ -2671,7 +2939,88 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The current <see cref="T:System.Globalization.Calendar" /> object is read-only.</exception>
+        <altmember cref="M:System.Globalization.Calendar.ToFourDigitYear(System.Int32)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsLeapYear">
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, determines whether a year is a leap year.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetLeapMonth">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Calculates the leap month for a specified year, or year and era.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetMonthsInYear">
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, returns the number of months in the specified year.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IsLeapMonth">
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, determines whether a month is a leap month.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetDaysInMonth">
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, returns the number of days in the specified month.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IsLeapDay">
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, determines whether a date is a leap day.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetDaysInYear">
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, returns the number of days in the specified year.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToDateTime">
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, returns a <see cref="T:System.DateTime" /> that is set to the specified date and time.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

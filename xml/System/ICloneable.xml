@@ -34,6 +34,7 @@
     <block subset="none" type="overrides">
       <para>The <see cref="T:System.ICloneable" /> interface simply requires that your implementation of the <see cref="M:System.ICloneable.Clone" /> method return a copy of the current object instance. It does not specify whether the cloning operation performs a deep copy, a shallow copy, or something in between. Nor does it require all property values of the original instance to be copied to the new instance. For example, the <see cref="M:System.Globalization.NumberFormatInfo.Clone" /> method performs a shallow copy of all properties except the <see cref="P:System.Globalization.NumberFormatInfo.IsReadOnly" /> property; it always sets this property value to <see langword="false" /> in the cloned object. Because callers of <see cref="M:System.ICloneable.Clone" /> cannot depend on the method performing a predictable cloning operation, we recommend that <see cref="T:System.ICloneable" /> not be implemented in public APIs.</para>
     </block>
+    <altmember cref="M:System.Object.MemberwiseClone" />
   </Docs>
   <Members>
     <Member MemberName="Clone">
@@ -73,6 +74,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.MemberwiseClone" />
       </Docs>
     </Member>
   </Members>

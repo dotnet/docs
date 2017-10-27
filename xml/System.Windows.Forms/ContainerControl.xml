@@ -39,6 +39,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.Form" />
+    <altmember cref="T:System.Windows.Forms.UserControl" />
+    <altmember cref="T:System.Windows.Forms.UpDownBase" />
+    <altmember cref="T:System.Windows.Forms.IContainerControl" />
+    <altmember cref="T:System.Windows.Forms.ScrollableControl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -110,6 +115,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="T:System.Windows.Forms.Control" /> assigned could not be activated.</exception>
+        <altmember cref="T:System.Windows.Forms.ScrollableControl" />
+        <altmember cref="T:System.Windows.Forms.Control" />
       </Docs>
     </Member>
     <Member MemberName="AdjustFormScrollbars">
@@ -137,6 +144,7 @@
           <see langword="true" /> to show the scroll bars; otherwise, <see langword="false" />.</param>
         <summary>Adjusts the scroll bars on the container based on the current control positions and the control currently selected.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.ScrollableControl.AdjustFormScrollbars(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="AutoScaleDimensions">
@@ -179,6 +187,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The width or height of the <see cref="T:System.Drawing.SizeF" /> value is less than 0 when setting this value.</exception>
+        <altmember cref="P:System.Windows.Forms.ContainerControl.AutoScaleMode" />
+        <altmember cref="P:System.Windows.Forms.ContainerControl.AutoScaleFactor" />
+        <altmember cref="P:System.Windows.Forms.ContainerControl.CurrentAutoScaleDimensions" />
+        <altmember cref="M:System.Windows.Forms.ContainerControl.PerformAutoScale" />
       </Docs>
     </Member>
     <Member MemberName="AutoScaleFactor">
@@ -206,6 +218,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ContainerControl.AutoScaleMode" />
+        <altmember cref="P:System.Windows.Forms.ContainerControl.AutoScaleDimensions" />
+        <altmember cref="P:System.Windows.Forms.ContainerControl.CurrentAutoScaleDimensions" />
+        <altmember cref="M:System.Windows.Forms.ContainerControl.PerformAutoScale" />
       </Docs>
     </Member>
     <Member MemberName="AutoScaleMode">
@@ -245,6 +261,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">An <see cref="T:System.Windows.Forms.AutoScaleMode" /> value that is not valid was used to set this property.</exception>
+        <altmember cref="P:System.Windows.Forms.ContainerControl.AutoScaleFactor" />
+        <altmember cref="P:System.Windows.Forms.ContainerControl.AutoScaleDimensions" />
+        <altmember cref="P:System.Windows.Forms.ContainerControl.CurrentAutoScaleDimensions" />
+        <altmember cref="M:System.Windows.Forms.ContainerControl.PerformAutoScale" />
       </Docs>
     </Member>
     <Member MemberName="AutoValidate">
@@ -292,6 +312,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">A <see cref="T:System.Windows.Forms.AutoValidate" /> value that is not valid was used to set this property.</exception>
+        <altmember cref="T:System.Windows.Forms.AutoValidate" />
+        <altmember cref="Overload:System.Windows.Forms.ContainerControl.Validate" />
+        <altmember cref="E:System.Windows.Forms.ContainerControl.AutoValidateChanged" />
       </Docs>
     </Member>
     <Member MemberName="AutoValidateChanged">
@@ -354,6 +377,7 @@
         <summary>Gets or sets the <see cref="T:System.Windows.Forms.BindingContext" /> for the control.</summary>
         <value>A <see cref="T:System.Windows.Forms.BindingContext" /> for the control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.BindingContext" />
       </Docs>
     </Member>
     <Member MemberName="CanEnableIme">
@@ -444,6 +468,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.Win32Exception">A Win32 device context could not be created for the current screen.</exception>
+        <altmember cref="P:System.Windows.Forms.ContainerControl.AutoScaleMode" />
+        <altmember cref="P:System.Windows.Forms.ContainerControl.AutoScaleFactor" />
+        <altmember cref="P:System.Windows.Forms.ContainerControl.AutoScaleDimensions" />
+        <altmember cref="M:System.Windows.Forms.ContainerControl.PerformAutoScale" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -466,6 +494,7 @@
           <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
         <summary>Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.Control" /> and its child controls and optionally releases the managed resources.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.Dispose(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="OnAutoValidateChanged">
@@ -499,6 +528,10 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.ContainerControl.OnAutoValidateChanged(System.EventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.ContainerControl.OnAutoValidateChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.ContainerControl.AutoValidateChanged" />
+        <altmember cref="P:System.Windows.Forms.ContainerControl.AutoValidate" />
+        <altmember cref="M:System.Windows.Forms.Control.OnValidated(System.EventArgs)" />
+        <altmember cref="M:System.Windows.Forms.Control.OnValidating(System.ComponentModel.CancelEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnCreateControl">
@@ -517,6 +550,7 @@
       <Docs>
         <summary>Raises the <see cref="M:System.Windows.Forms.Control.CreateControl" /> method.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnCreateControl" />
       </Docs>
     </Member>
     <Member MemberName="OnFontChanged">
@@ -557,6 +591,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.ContainerControl.OnFontChanged(System.EventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.ContainerControl.OnFontChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.FontChanged" />
+        <altmember cref="P:System.Windows.Forms.Control.Font" />
+        <altmember cref="P:System.Windows.Forms.ContainerControl.AutoScaleMode" />
       </Docs>
     </Member>
     <Member MemberName="OnLayout">
@@ -599,6 +636,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.ParentChanged" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnParentChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ParentForm">
@@ -641,6 +679,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for all windows to get this property value. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+        <altmember cref="T:System.Windows.Forms.Form" />
       </Docs>
     </Member>
     <Member MemberName="PerformAutoScale">
@@ -670,6 +709,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Form.AutoScale" />
+        <altmember cref="P:System.Windows.Forms.ContainerControl.AutoScaleMode" />
+        <altmember cref="P:System.Windows.Forms.ContainerControl.AutoScaleFactor" />
+        <altmember cref="M:System.Windows.Forms.ContainerControl.OnLayout(System.Windows.Forms.LayoutEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ProcessCmdKey">
@@ -695,6 +738,7 @@
         <returns>
           <see langword="true" /> if the character was processed by the control; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)" />
       </Docs>
     </Member>
     <Member MemberName="ProcessDialogChar">
@@ -723,6 +767,7 @@
         <returns>
           <see langword="true" /> if the character was processed by the control; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.ProcessDialogChar(System.Char)" />
       </Docs>
     </Member>
     <Member MemberName="ProcessDialogKey">
@@ -746,6 +791,7 @@
         <returns>
           <see langword="true" /> if the key was processed by the control; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.ProcessDialogKey(System.Windows.Forms.Keys)" />
       </Docs>
     </Member>
     <Member MemberName="ProcessMnemonic">
@@ -769,6 +815,7 @@
         <returns>
           <see langword="true" /> if the character was processed as a mnemonic by the control; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.ProcessMnemonic(System.Char)" />
       </Docs>
     </Member>
     <Member MemberName="ProcessTabKey">
@@ -800,6 +847,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.TabStop" />
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -825,6 +873,7 @@
           <see langword="true" /> to move forward in the tab order; <see langword="false" /> to move backward in the tab order.</param>
         <summary>Activates a child control. Optionally specifies the direction in the tab order to select the control from.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.Select(System.Boolean,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Forms.IContainerControl.ActivateControl">
@@ -864,6 +913,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ContainerControl.ActiveControl" />
       </Docs>
     </Member>
     <Member MemberName="UpdateDefaultButton">
@@ -916,6 +966,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ContainerControl.ValidateChildren" />
+        <altmember cref="P:System.Windows.Forms.ContainerControl.AutoValidate" />
+        <altmember cref="E:System.Windows.Forms.ContainerControl.AutoValidateChanged" />
       </Docs>
     </Member>
     <Member MemberName="Validate">
@@ -950,6 +1003,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ContainerControl.AutoValidate" />
+        <altmember cref="M:System.Windows.Forms.ContainerControl.ValidateChildren(System.Windows.Forms.ValidationConstraints)" />
+        <altmember cref="P:System.Windows.Forms.Control.CausesValidation" />
+        <altmember cref="E:System.Windows.Forms.ContainerControl.AutoValidateChanged" />
       </Docs>
     </Member>
     <Member MemberName="ValidateChildren">
@@ -1079,5 +1136,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ValidateChildren">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Causes all of the child controls within a control that support validation to validate their data.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Validate">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Verifies the value of the control losing focus by causing the <see cref="E:System.Windows.Forms.Control.Validating" /> and <see cref="E:System.Windows.Forms.Control.Validated" /> events to occur, in that order.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

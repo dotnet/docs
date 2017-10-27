@@ -10,17 +10,16 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "Asian languages, displaying with ImeMode"
-  - "Chinese characters, displaying with ImeMode"
+  - "Asian languages [Windows Forms], displaying with ImeMode"
+  - "Chinese characters [Windows Forms], displaying with ImeMode"
   - "IME mode"
-  - "Japanese characters, displaying with ImeMode"
+  - "Japanese characters [Windows Forms], displaying with ImeMode"
   - "international applications [Windows Forms], character display"
   - "international characters"
   - "Korean characters"
   - "Asian languages"
   - "Input Method Editor (IME), mode"
   - "localization [Windows Forms], character sets"
-  - "IMEMode property"
   - "globalization [Windows Forms], character sets"
 ms.assetid: c60ae399-0dab-4f07-9dea-6dbfb15ec0ae
 caps.latest.revision: 6

@@ -237,6 +237,7 @@
         <summary>Returns the hash code for this instance.</summary>
         <returns>A 32-bit signed integer that is the hash code for this instance.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.ValueType.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="LangId">
@@ -399,5 +400,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines if the current instance of <see cref="T:System.Speech.Synthesis.TtsEngine.FragmentState" /> describes the same <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> state as another <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> instance, or an [Object](http://msdn.microsoft.com/library/vstudio/system.object\(v=vs.110\).aspx) which can be cast to <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

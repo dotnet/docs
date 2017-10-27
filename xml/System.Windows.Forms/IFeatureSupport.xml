@@ -28,6 +28,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.FeatureSupport" />
+    <altmember cref="T:System.Windows.Forms.OSFeature" />
   </Docs>
   <Members>
     <Member MemberName="GetVersionPresent">
@@ -66,6 +68,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.OSFeature.GetVersionPresent(System.Object)" />
+        <altmember cref="T:System.Windows.Forms.OSFeature" />
+        <altmember cref="T:System.Windows.Forms.FeatureSupport" />
       </Docs>
     </Member>
     <Member MemberName="IsPresent">
@@ -100,6 +105,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.FeatureSupport" />
+        <altmember cref="T:System.Windows.Forms.OSFeature" />
       </Docs>
     </Member>
     <Member MemberName="IsPresent">
@@ -136,7 +143,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.FeatureSupport" />
+        <altmember cref="T:System.Windows.Forms.OSFeature" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsPresent">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the specified feature is currently available on the system.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

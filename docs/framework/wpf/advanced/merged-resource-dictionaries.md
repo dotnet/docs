@@ -10,8 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "merged resource dictionaries"
-  - "dictionaries, merged resources"
+  - "merged resource dictionaries [WPF]"
+  - "dictionaries [WPF], merged resources"
 ms.assetid: d159531f-05d4-49fd-b951-c332de51e5bc
 caps.latest.revision: 13
 author: dotnet-bot

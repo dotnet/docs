@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "hit tests, on visual objects comprising Geometry objects"
-  - "visual objects, hit tests on"
-  - "Geometry objects, visual objects comprising"
+  - "hit tests [WPF], on visual objects comprising Geometry objects [WPF]"
+  - "visual objects [WPF], hit tests on"
+  - "Geometry objects [WPF], visual objects comprising"
 ms.assetid: 8bf2643f-d7f9-4cb4-9ea6-5b893c23200d
 caps.latest.revision: 12
 author: dotnet-bot

@@ -9,15 +9,15 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "data binding, updating"
+  - "data binding [Windows Forms], updating"
   - "BindingSource component [Windows Forms], updating data binding"
   - "examples [Windows Forms], BindingSource component"
-  - "data sources, updating"
+  - "data sources [Windows Forms], updating"
   - "BindingSource component [Windows Forms], examples"
 ms.assetid: bd8bd9b2-af8a-4f11-a3d5-54eecbe2400b
 caps.latest.revision: 14

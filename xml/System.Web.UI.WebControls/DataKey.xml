@@ -45,6 +45,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DataKeyArray" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsView.DataKey" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.DataKey" />
+    <altmember cref="P:System.Web.UI.WebControls.GridView.DataKeys" />
+    <altmember cref="P:System.Web.UI.WebControls.DataKey.Values" />
+    <altmember cref="P:System.Web.UI.WebControls.DataKey.Item(System.Int32)" />
+    <altmember cref="P:System.Web.UI.WebControls.DataKey.Value" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -73,6 +80,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -100,6 +108,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -154,6 +163,7 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.DataKey" /> class, you can override this property to indicate whether view-state changes are tracked.</para>
         </block>
+        <altmember cref="P:System.Web.UI.IStateManager.IsTrackingViewState" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -194,6 +204,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataKey.Values" />
+        <altmember cref="P:System.Web.UI.WebControls.DataKey.Value" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -234,6 +246,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataKey.Values" />
+        <altmember cref="P:System.Web.UI.WebControls.DataKey.Value" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -269,6 +283,8 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.DataKey" /> class, you can override this method to implement your own routine to load the view state for the object.</para>
         </block>
+        <altmember cref="T:System.Object" />
+        <altmember cref="M:System.Web.UI.IStateManager.LoadViewState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -301,6 +317,8 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.DataKey" /> class, you can override this method to implement your own routine to save the view state for the object.</para>
         </block>
+        <altmember cref="T:System.Object" />
+        <altmember cref="M:System.Web.UI.IStateManager.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.IsTrackingViewState">
@@ -327,6 +345,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.IStateManager.IsTrackingViewState" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.LoadViewState">
@@ -355,6 +374,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Object" />
+        <altmember cref="M:System.Web.UI.IStateManager.LoadViewState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.SaveViewState">
@@ -381,6 +402,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Object" />
+        <altmember cref="M:System.Web.UI.IStateManager.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.TrackViewState">
@@ -406,6 +429,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.StateBag" />
+        <altmember cref="M:System.Web.UI.IStateManager.TrackViewState" />
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -434,6 +460,9 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.DataKey" /> class, you can override this method to implement your own routine to track the view state of the object.</para>
         </block>
+        <altmember cref="T:System.Web.UI.StateBag" />
+        <altmember cref="M:System.Web.UI.IStateManager.TrackViewState" />
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -470,6 +499,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataKey.Values" />
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -503,7 +533,27 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="P:System.Web.UI.WebControls.DataKey.Value" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.DataKey" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the value of a key field from a <see cref="T:System.Web.UI.WebControls.DataKey" /> object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

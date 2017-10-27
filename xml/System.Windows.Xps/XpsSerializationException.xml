@@ -13,6 +13,8 @@
   <Docs>
     <summary>The exception that is thrown for XML Paper Specification (XPS) document serialization errors.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Xps.Serialization.PackageSerializationManager" />
+    <altmember cref="T:System.Windows.Xps.Serialization.XpsSerializationManager" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -95,5 +97,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Xps.XpsSerializationException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

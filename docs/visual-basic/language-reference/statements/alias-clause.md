@@ -10,7 +10,7 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.Alias"
 helpviewer_keywords: 
-  - "Alias keyword"
+  - "Alias keyword [Visual Basic]"
 ms.assetid: 58c06b11-465d-4d87-906a-73200a3d7f19
 caps.latest.revision: 11
 author: dotnet-bot

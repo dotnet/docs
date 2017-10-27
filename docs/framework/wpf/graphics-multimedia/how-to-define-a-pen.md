@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "pens, defining"
-  - "creating, pens"
+  - "pens [WPF], defining"
+  - "creating [WPF], pens"
 ms.assetid: 7a4f2900-cdf9-49de-84e0-ba5d0ded4d33
 caps.latest.revision: 5
 author: dotnet-bot

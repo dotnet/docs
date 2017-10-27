@@ -60,6 +60,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Reflection.CustomAttributeData" />
+    <altmember cref="T:System.Reflection.CustomAttributeTypedArgument" />
+    <altmember cref="Overload:System.Reflection.Assembly.ReflectionOnlyLoad" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -474,7 +477,20 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.CustomAttributeData" />
+        <altmember cref="T:System.Reflection.CustomAttributeTypedArgument" />
+        <altmember cref="Overload:System.Reflection.Assembly.ReflectionOnlyLoad" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Reflection.CustomAttributeNamedArgument" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

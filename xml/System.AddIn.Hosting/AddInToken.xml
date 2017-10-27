@@ -524,7 +524,7 @@
  Use the enumerator returned by this method to iterate through the qualification data items of the pipeline segments associated with the current token. Each item of qualification data is a <xref:System.AddIn.Hosting.QualificationDataItem> structure that identifies the pipeline segment and contains a name/value pair from a <xref:System.AddIn.Pipeline.QualificationDataAttribute> attribute applied to that segment.  
   
 > [!NOTE]
->  The add-in model does not use qualification data that is applied to the host view of the add-in. As a result, when you enumerate qualification data you will not find any items whose <xref:System.AddIn.Hosting.QualificationDataItem.Segment%2A> property is <xref:System.AddIn.Hosting.AddInSegmentType?displayProperty=nameWithType>.  
+>  The add-in model does not use qualification data that is applied to the host view of the add-in. As a result, when you enumerate qualification data you will not find any items whose <xref:System.AddIn.Hosting.QualificationDataItem.Segment%2A> property is <xref:System.AddIn.Hosting.AddInSegmentType.HostViewOfAddIn?displayProperty=nameWithType>.  
   
  Alternatively, you can use the <xref:System.AddIn.Hosting.AddInToken.QualificationData%2A> property to get a nested set of dictionaries that contain the qualification data of the pipeline segments.  
   
@@ -651,7 +651,7 @@
  The keys and values of these inner dictionaries are the names and values specified in the <xref:System.AddIn.Pipeline.QualificationDataAttribute> attributes for the segments. If no qualification data has been applied to a segment, its dictionary is empty.  
   
 > [!NOTE]
->  The add-in model does not use qualification data that is applied to the host view of the add-in. As a result, the dictionary for <xref:System.AddIn.Hosting.AddInSegmentType?displayProperty=nameWithType> is always empty.  
+>  The add-in model does not use qualification data that is applied to the host view of the add-in. As a result, the dictionary for <xref:System.AddIn.Hosting.AddInSegmentType.HostViewOfAddIn?displayProperty=nameWithType> is always empty.  
   
  Alternatively, you can obtain qualification data by enumerating an <xref:System.AddIn.Hosting.AddInToken> as if it were a collection of <xref:System.AddIn.Hosting.QualificationDataItem> structures, using a `foreach` statement (`For Each` in Visual Basic, `for each` in Visual C++). See the example provided for the <xref:System.AddIn.Hosting.QualificationDataItem> structure.  
   
@@ -692,7 +692,7 @@
  Use the enumerator returned by this method to iterate through the qualification data items of the pipeline segments associated with the current token. Each item of qualification data is a <xref:System.AddIn.Hosting.QualificationDataItem> structure that identifies the pipeline segment and contains the name/value pair from a <xref:System.AddIn.Pipeline.QualificationDataAttribute> attribute applied to that segment.  
   
 > [!NOTE]
->  The add-in model does not use qualification data that is applied to the host view of the add-in. As a result, when you enumerate qualification data you will not find any items whose <xref:System.AddIn.Hosting.QualificationDataItem.Segment%2A> property is <xref:System.AddIn.Hosting.AddInSegmentType?displayProperty=nameWithType>.  
+>  The add-in model does not use qualification data that is applied to the host view of the add-in. As a result, when you enumerate qualification data you will not find any items whose <xref:System.AddIn.Hosting.QualificationDataItem.Segment%2A> property is <xref:System.AddIn.Hosting.AddInSegmentType.HostViewOfAddIn?displayProperty=nameWithType>.  
   
  Alternatively, you can use the <xref:System.AddIn.Hosting.AddInToken.QualificationData%2A> property to get a nested set of dictionaries containing the qualification data of the pipeline segments.  
   
@@ -752,5 +752,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Activate&lt;T&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Activates an add-in.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -10,16 +10,16 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.With"
 helpviewer_keywords: 
-  - "With keyword"
-  - "loop structures, and With...End With statements"
-  - "execution, on object"
+  - "With keyword [Visual Basic]"
+  - "loop structures [Visual Basic], and With...End With statements"
+  - "execution [Visual Basic], on object"
   - "instructions, repeating"
-  - "With...End With statements"
-  - "With statement"
-  - "With statement, nesting"
+  - "With...End With statements [Visual Basic]"
+  - "With statement [Visual Basic]"
+  - "With statement [Visual Basic], nesting"
   - "objects [Visual Basic], accessing"
   - "With block"
-  - "End keyword, With...End With statements"
+  - "End keyword [Visual Basic], With...End With statements"
 ms.assetid: 340d5fbb-4f43-48ec-a024-80843c137817
 caps.latest.revision: 34
 author: dotnet-bot

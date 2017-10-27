@@ -116,6 +116,7 @@ W. Central Africa Standard Time has no adjustment rules
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.TimeZoneInfo" />
   </Docs>
   <Members>
     <Member MemberName="CreateAdjustmentRule">
@@ -172,7 +173,7 @@ DateTime.Now.Date
 dateVariable.Date  
 ```  
   
- The <xref:System.DateTime.Kind%2A> property of the `dateStart` and `dateEnd` parameters must also be <xref:System.DateTimeKind?displayProperty=nameWithType>.  
+ The <xref:System.DateTime.Kind%2A> property of the `dateStart` and `dateEnd` parameters must also be <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>.  
   
  The value of the `daylightDelta` parameter can range from -14 to 14. The sum of the `daylightDelta` parameter and the `baseUtcOffset` parameter used in the call to the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A?displayProperty=nameWithType> method must also range from -14 to 14 or an <xref:System.InvalidTimeZoneException> is thrown.  
   

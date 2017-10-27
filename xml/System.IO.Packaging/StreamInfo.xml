@@ -13,6 +13,11 @@
   <Docs>
     <summary>Provides access and information for manipulating I/O streams within a <see cref="T:System.IO.Packaging.Package" />.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="M:System.IO.Packaging.StorageInfo.CreateStream(System.String,System.IO.Packaging.CompressionOption,System.IO.Packaging.EncryptionOption)" />
+    <altmember cref="M:System.IO.Packaging.StorageInfo.DeleteStream(System.String)" />
+    <altmember cref="M:System.IO.Packaging.StorageInfo.GetStreamInfo(System.String)" />
+    <altmember cref="M:System.IO.Packaging.StorageInfo.GetStreams" />
+    <altmember cref="M:System.IO.Packaging.StorageInfo.StreamExists(System.String)" />
   </Docs>
   <Members>
     <Member MemberName="CompressionOption">
@@ -38,6 +43,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.IO.Packaging.StorageInfo.CreateStream" />
+        <altmember cref="Overload:System.IO.Packaging.StreamInfo.GetStream" />
       </Docs>
     </Member>
     <Member MemberName="EncryptionOption">
@@ -63,6 +70,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.IO.Packaging.StorageInfo.CreateStream" />
+        <altmember cref="Overload:System.IO.Packaging.StreamInfo.GetStream" />
       </Docs>
     </Member>
     <Member MemberName="GetStream">
@@ -89,6 +98,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.IO.Packaging.StorageInfo.CreateStream" />
       </Docs>
     </Member>
     <Member MemberName="GetStream">
@@ -118,6 +128,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.IO.Packaging.StorageInfo.CreateStream" />
       </Docs>
     </Member>
     <Member MemberName="GetStream">
@@ -142,6 +153,7 @@
         <summary>Returns an I/O stream opened in a specified <see cref="T:System.IO.FileMode" /> and with a given <see cref="T:System.IO.FileAccess" />.</summary>
         <returns>The I/O stream opened in the specified <see cref="T:System.IO.FileMode" /> and with a given <see cref="T:System.IO.FileAccess" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="Overload:System.IO.Packaging.StorageInfo.CreateStream" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -167,7 +179,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.IO.Packaging.StorageInfo.CreateStream" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetStream">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens and returns the I/O stream for the <see cref="T:System.IO.Packaging.Package" /> root.</summary>
+        <altmember cref="Overload:System.IO.Packaging.StorageInfo.CreateStream" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

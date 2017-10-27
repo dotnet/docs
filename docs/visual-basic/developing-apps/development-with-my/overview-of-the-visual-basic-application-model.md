@@ -7,7 +7,7 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "My.Application object, Visual Basic application model"
+  - "My.Application object [Visual Basic], Visual Basic application model"
   - "Visual Basic application model"
 ms.assetid: 17538984-84fe-43c9-82c8-724c9529fe8b
 caps.latest.revision: 30

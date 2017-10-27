@@ -30,7 +30,7 @@
   
 |Parameter|Value|  
 |---------------|-----------|  
-|socketOptionLevel|<xref:System.Net.Sockets.SocketOptionLevel?displayProperty=nameWithType>|  
+|socketOptionLevel|<xref:System.Net.Sockets.SocketOptionLevel.Udp?displayProperty=nameWithType>|  
 |socketOptionName|<xref:System.Net.Sockets.SocketOptionName.AddMembership>|  
 |object|<xref:System.Net.Sockets.MulticastOption>|  
   
@@ -288,5 +288,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Sockets.MulticastOption" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

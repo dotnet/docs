@@ -34,6 +34,16 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.FormView" />
+    <altmember cref="T:System.Web.UI.WebControls.FormViewUpdateEventHandler" />
+    <altmember cref="T:System.ComponentModel.CancelEventArgs" />
+    <altmember cref="E:System.Web.UI.WebControls.FormView.ItemUpdating" />
+    <altmember cref="P:System.ComponentModel.CancelEventArgs.Cancel" />
+    <altmember cref="P:System.Web.UI.WebControls.FormViewUpdateEventArgs.CommandArgument" />
+    <altmember cref="P:System.Web.UI.WebControls.FormViewUpdateEventArgs.Keys" />
+    <altmember cref="P:System.Web.UI.WebControls.FormViewUpdateEventArgs.NewValues" />
+    <altmember cref="P:System.Web.UI.WebControls.FormViewUpdateEventArgs.OldValues" />
+    <altmember cref="M:System.Web.UI.WebControls.FormView.OnItemUpdating(System.Web.UI.WebControls.FormViewUpdateEventArgs)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -68,6 +78,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewUpdateEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemUpdating" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewUpdateEventArgs.CommandArgument" />
       </Docs>
     </Member>
     <Member MemberName="CommandArgument">
@@ -93,6 +107,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewInsertEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemInserting" />
+        <altmember cref="P:System.Web.UI.WebControls.IButtonControl.CommandArgument" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewInsertEventArgs.Values" />
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -134,6 +153,16 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewUpdateEventHandler" />
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="T:System.Collections.Specialized.OrderedDictionary" />
+        <altmember cref="T:System.Collections.DictionaryEntry" />
+        <altmember cref="P:System.Collections.Specialized.OrderedDictionary.Keys" />
+        <altmember cref="P:System.Collections.Specialized.OrderedDictionary.Values" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewUpdateEventArgs.NewValues" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewUpdateEventArgs.OldValues" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemUpdating" />
       </Docs>
     </Member>
     <Member MemberName="NewValues">
@@ -175,6 +204,16 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewInsertEventHandler" />
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="T:System.Collections.Specialized.OrderedDictionary" />
+        <altmember cref="T:System.Collections.DictionaryEntry" />
+        <altmember cref="P:System.Collections.Specialized.OrderedDictionary.Keys" />
+        <altmember cref="P:System.Collections.Specialized.OrderedDictionary.Values" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewUpdateEventArgs.Keys" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewUpdateEventArgs.NewValues" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemUpdating" />
       </Docs>
     </Member>
     <Member MemberName="OldValues">
@@ -216,6 +255,16 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewUpdateEventHandler" />
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="T:System.Collections.Specialized.OrderedDictionary" />
+        <altmember cref="T:System.Collections.DictionaryEntry" />
+        <altmember cref="P:System.Collections.Specialized.OrderedDictionary.Keys" />
+        <altmember cref="P:System.Collections.Specialized.OrderedDictionary.Values" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewUpdateEventArgs.Keys" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewUpdateEventArgs.OldValues" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemUpdating" />
       </Docs>
     </Member>
   </Members>

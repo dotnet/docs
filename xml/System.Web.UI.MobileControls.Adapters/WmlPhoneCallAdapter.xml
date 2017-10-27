@@ -26,6 +26,7 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="T:System.Web.UI.MobileControls.PhoneCall" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,6 +42,7 @@
       <Docs>
         <summary>Creates an instance of the <see cref="T:System.Web.UI.MobileControls.Adapters.WmlPhoneCallAdapter" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.PhoneCall" />
       </Docs>
     </Member>
     <Member MemberName="Control">
@@ -59,6 +61,7 @@
         <summary>Returns a strongly typed reference to the associated control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <value>A strongly typed reference to the associated control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.PhoneCall" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -80,6 +83,7 @@
         <param name="writer">The text writer to receive output.</param>
         <summary>Generates the target-specific markup for the control to which the control adapter is attached, using the provided writer.  This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.Render(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter)" />
       </Docs>
     </Member>
   </Members>

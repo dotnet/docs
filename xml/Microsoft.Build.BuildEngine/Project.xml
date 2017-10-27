@@ -1823,5 +1823,59 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Save">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Saves the project to a file.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LoadXml">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads the contents of the specified string into the <see cref="T:Microsoft.Build.BuildEngine.Project" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Build">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Builds the project.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddNewItem">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the specified  element to the project.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetImportedProperty">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the value of a property in an imported project.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetProperty">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the value of the specified property.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

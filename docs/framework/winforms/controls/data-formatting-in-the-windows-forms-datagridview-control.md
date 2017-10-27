@@ -12,7 +12,7 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], formatting data"
   - "data [Windows Forms], formatting in grids"
-  - "data grids, formatting data"
+  - "data grids [Windows Forms], formatting data"
 ms.assetid: 07bf558d-3748-42ba-8ba0-37fdef924081
 caps.latest.revision: 12
 author: dotnet-bot

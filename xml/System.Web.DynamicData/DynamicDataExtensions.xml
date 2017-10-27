@@ -620,5 +620,41 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetMetaTable">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the <see cref="T:System.Web.DynamicData.MetaTable" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetDefaultValues">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the default values.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetMetaTable">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets metadata for a table.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryGetMetaTable">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether table metadata is available.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

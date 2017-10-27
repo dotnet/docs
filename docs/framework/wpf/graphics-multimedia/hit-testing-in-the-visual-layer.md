@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "hit testing functionality"
-  - "visual layer, hit testing functionality"
+  - "hit testing functionality [WPF]"
+  - "visual layer [WPF], hit testing functionality"
 ms.assetid: b1a64b61-14be-4d75-b89a-5c67bebb2c7b
 caps.latest.revision: 42
 author: dotnet-bot

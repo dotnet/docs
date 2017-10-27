@@ -13,6 +13,8 @@
   <Docs>
     <summary>Abstract class that describes an input devices.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Input.KeyboardDevice" />
+    <altmember cref="T:System.Windows.Input.MouseDevice" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,6 +48,8 @@
         <summary>When overridden in a derived class, gets the <see cref="T:System.Windows.PresentationSource" /> that is reporting input for this device.</summary>
         <value>The source that is reporting input for this device.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Input.KeyboardDevice.ActiveSource" />
+        <altmember cref="P:System.Windows.Input.MouseDevice.ActiveSource" />
       </Docs>
     </Member>
     <Member MemberName="Target">
@@ -64,6 +68,8 @@
         <summary>When overridden in a derived class, gets the element that receives input from this device.</summary>
         <value>The element that receives input.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Input.KeyboardDevice.Target" />
+        <altmember cref="P:System.Windows.Input.MouseDevice.Target" />
       </Docs>
     </Member>
   </Members>

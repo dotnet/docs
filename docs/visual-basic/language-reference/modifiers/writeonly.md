@@ -11,7 +11,7 @@ f1_keywords:
   - "vb.WriteOnly"
 helpviewer_keywords: 
   - "write-only properties"
-  - "WriteOnly keyword"
+  - "WriteOnly keyword [Visual Basic]"
   - "sensitive data, protecting"
   - "properties [Visual Basic], write-only"
   - "sensitive data"

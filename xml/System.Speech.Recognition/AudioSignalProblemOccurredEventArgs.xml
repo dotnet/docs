@@ -71,6 +71,9 @@ void sre_AudioSignalProblemOccurred(object sender, AudioSignalProblemOccurredEve
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Speech.Recognition.AudioSignalProblem" />
+    <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.AudioSignalProblemOccurred" />
+    <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.AudioSignalProblemOccurred" />
   </Docs>
   <Members>
     <Member MemberName="AudioLevel">

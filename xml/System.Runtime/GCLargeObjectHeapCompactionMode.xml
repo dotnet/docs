@@ -33,6 +33,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Runtime.GCSettings" />
+    <altmember cref="P:System.Runtime.GCSettings.LargeObjectHeapCompactionMode" />
+    <altmember cref="M:System.GC.Collect" />
   </Docs>
   <Members>
     <Member MemberName="CompactOnce">

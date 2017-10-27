@@ -10,8 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "lines, getting collection of"
-  - "TextBox control, getting collection of lines"
+  - "lines [WPF], getting collection of"
+  - "TextBox control [WPF], getting collection of lines"
 ms.assetid: a12f529d-b926-47f6-92bf-cad5f17b532a
 caps.latest.revision: 6
 author: dotnet-bot

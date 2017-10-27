@@ -10,7 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "GetRawInputDevices method"
   - "raw input [WPF]"
 ms.assetid: c4d37ecd-065a-4d1c-9e6c-26804ae968ca
 caps.latest.revision: 6

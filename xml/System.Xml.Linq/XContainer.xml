@@ -114,6 +114,9 @@ Console.WriteLine(xmlTree)
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XContainer.AddFirst" />
+        <altmember cref="M:System.Xml.Linq.XContainer.RemoveNodes" />
+        <altmember cref="Overload:System.Xml.Linq.XContainer.ReplaceNodes" />
       </Docs>
     </MemberGroup>
     <Member MemberName="Add">
@@ -239,6 +242,9 @@ Console.WriteLine(xmlTree)
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XContainer.AddFirst" />
+        <altmember cref="M:System.Xml.Linq.XContainer.RemoveNodes" />
+        <altmember cref="Overload:System.Xml.Linq.XContainer.ReplaceNodes" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -369,6 +375,9 @@ Console.WriteLine(xmlTree)
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XContainer.AddFirst" />
+        <altmember cref="M:System.Xml.Linq.XContainer.RemoveNodes" />
+        <altmember cref="Overload:System.Xml.Linq.XContainer.ReplaceNodes" />
       </Docs>
     </Member>
     <MemberGroup MemberName="AddFirst">
@@ -449,6 +458,9 @@ Console.WriteLine(xmlTree)
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XContainer.Add" />
+        <altmember cref="M:System.Xml.Linq.XContainer.RemoveNodes" />
+        <altmember cref="Overload:System.Xml.Linq.XContainer.ReplaceNodes" />
       </Docs>
     </MemberGroup>
     <Member MemberName="AddFirst">
@@ -573,6 +585,9 @@ Console.WriteLine(xmlTree)
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XContainer.Add" />
+        <altmember cref="M:System.Xml.Linq.XContainer.RemoveNodes" />
+        <altmember cref="Overload:System.Xml.Linq.XContainer.ReplaceNodes" />
       </Docs>
     </Member>
     <Member MemberName="AddFirst">
@@ -704,6 +719,9 @@ Console.WriteLine(xmlTree)
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The parent is <see langword="null" />.</exception>
+        <altmember cref="Overload:System.Xml.Linq.XContainer.Add" />
+        <altmember cref="M:System.Xml.Linq.XContainer.RemoveNodes" />
+        <altmember cref="Overload:System.Xml.Linq.XContainer.ReplaceNodes" />
       </Docs>
     </Member>
     <Member MemberName="CreateWriter">
@@ -919,6 +937,8 @@ element content
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XContainer.Descendants" />
+        <altmember cref="Overload:System.Xml.Linq.XContainer.Elements" />
       </Docs>
     </Member>
     <MemberGroup MemberName="Descendants">
@@ -937,6 +957,8 @@ element content
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XContainer.DescendantNodes" />
+        <altmember cref="Overload:System.Xml.Linq.XContainer.Elements" />
       </Docs>
     </MemberGroup>
     <Member MemberName="Descendants">
@@ -1020,6 +1042,9 @@ GrandChild
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XElement.DescendantsAndSelf" />
+        <altmember cref="M:System.Xml.Linq.XContainer.DescendantNodes" />
+        <altmember cref="Overload:System.Xml.Linq.XContainer.Elements" />
       </Docs>
     </Member>
     <Member MemberName="Descendants">
@@ -1155,6 +1180,8 @@ End Module
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XContainer.DescendantNodes" />
+        <altmember cref="Overload:System.Xml.Linq.XContainer.Elements" />
       </Docs>
     </Member>
     <Member MemberName="Element">
@@ -1349,6 +1376,7 @@ End Module
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XContainer.Elements" />
       </Docs>
     </Member>
     <MemberGroup MemberName="Elements">
@@ -1367,6 +1395,9 @@ End Module
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XContainer.Element(System.Xml.Linq.XName)" />
+        <altmember cref="Overload:System.Xml.Linq.XContainer.Descendants" />
+        <altmember cref="M:System.Xml.Linq.XContainer.DescendantNodes" />
       </Docs>
     </MemberGroup>
     <Member MemberName="Elements">
@@ -1509,6 +1540,9 @@ End Module
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XContainer.Element(System.Xml.Linq.XName)" />
+        <altmember cref="Overload:System.Xml.Linq.XContainer.Descendants" />
+        <altmember cref="M:System.Xml.Linq.XContainer.DescendantNodes" />
       </Docs>
     </Member>
     <Member MemberName="Elements">
@@ -1650,6 +1684,9 @@ End Module
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XContainer.Element(System.Xml.Linq.XName)" />
+        <altmember cref="Overload:System.Xml.Linq.XContainer.Descendants" />
+        <altmember cref="M:System.Xml.Linq.XContainer.DescendantNodes" />
       </Docs>
     </Member>
     <Member MemberName="FirstNode">
@@ -1721,6 +1758,8 @@ Console.WriteLine(firstNode)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xml.Linq.XContainer.LastNode" />
+        <altmember cref="M:System.Xml.Linq.XContainer.Nodes" />
       </Docs>
     </Member>
     <Member MemberName="LastNode">
@@ -1792,6 +1831,8 @@ Console.WriteLine(lastNode)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xml.Linq.XContainer.FirstNode" />
+        <altmember cref="M:System.Xml.Linq.XContainer.Nodes" />
       </Docs>
     </Member>
     <Member MemberName="Nodes">
@@ -1964,6 +2005,9 @@ Text
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XElement.Attributes" />
+        <altmember cref="Overload:System.Xml.Linq.XContainer.Descendants" />
+        <altmember cref="M:System.Xml.Linq.XContainer.DescendantNodes" />
       </Docs>
     </Member>
     <Member MemberName="RemoveNodes">
@@ -2046,6 +2090,8 @@ Console.WriteLine(xmltree)
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XContainer.Add" />
+        <altmember cref="Overload:System.Xml.Linq.XContainer.ReplaceNodes" />
       </Docs>
     </Member>
     <MemberGroup MemberName="ReplaceNodes">
@@ -2119,6 +2165,8 @@ Console.WriteLine(root)
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XContainer.Add" />
+        <altmember cref="M:System.Xml.Linq.XContainer.RemoveNodes" />
       </Docs>
     </MemberGroup>
     <Member MemberName="ReplaceNodes">
@@ -2215,6 +2263,8 @@ Console.WriteLine(root)
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XContainer.Add" />
+        <altmember cref="M:System.Xml.Linq.XContainer.RemoveNodes" />
       </Docs>
     </Member>
     <Member MemberName="ReplaceNodes">
@@ -2315,6 +2365,8 @@ Console.WriteLine(root)
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XContainer.Add" />
+        <altmember cref="M:System.Xml.Linq.XContainer.RemoveNodes" />
       </Docs>
     </Member>
   </Members>

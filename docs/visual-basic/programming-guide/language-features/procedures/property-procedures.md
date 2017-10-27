@@ -9,16 +9,16 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "Set statement, Property procedures"
+  - "Set statement [Visual Basic], Property procedures"
   - "Visual Basic code, procedures"
-  - "return values, Property procedures"
-  - "syntax, Property procedures"
-  - "procedures, property"
+  - "return values [Visual Basic], Property procedures"
+  - "syntax [Visual Basic], Property procedures"
+  - "procedures [Visual Basic], property"
   - "Visual Basic code, properties"
-  - "procedures, calling"
+  - "procedures [Visual Basic], calling"
   - "properties [Visual Basic], custom"
   - "property procedures"
-  - "Get statement, property procedures"
+  - "Get statement [Visual Basic], property procedures"
 ms.assetid: 46a98379-e1a2-45dd-a48c-b51213f5ab07
 caps.latest.revision: 22
 author: dotnet-bot

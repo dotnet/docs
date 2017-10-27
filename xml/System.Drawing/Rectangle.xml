@@ -1379,5 +1379,55 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Rectangle" /> class with the specified location and size.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Contains">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines if the specified point is contained within the rectangular region defined by this <see cref="T:System.Drawing.Rectangle" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Inflate">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Enlarges a <see cref="T:System.Drawing.Rectangle" /> structure by the specified amount.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Intersect">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines the <see cref="T:System.Drawing.Rectangle" /> structure that represents the intersection of two rectangles.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Offset">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adjusts the location of this rectangle by the specified amount.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

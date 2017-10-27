@@ -10,8 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "members, accessing"
-  - "object variables, accessing members"
+  - "members [Visual Basic], accessing"
+  - "object variables [Visual Basic], accessing members"
 ms.assetid: a0072514-6a79-4dd6-8d03-ca8c13e61ddc
 caps.latest.revision: 20
 author: dotnet-bot

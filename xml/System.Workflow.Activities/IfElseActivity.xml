@@ -215,5 +215,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.IfElseActivity" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddBranch">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a new branch to the <see cref="T:System.Workflow.Activities.IfElseActivity" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

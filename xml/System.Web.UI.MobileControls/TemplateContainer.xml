@@ -52,6 +52,7 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="T:System.Web.UI.MobileControls.MobileListItem" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -91,6 +92,7 @@
         <value>
           <see langword="true" /> if an additional trailing break is rendered after the control; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.Panel.BreakAfter" />
       </Docs>
     </Member>
   </Members>

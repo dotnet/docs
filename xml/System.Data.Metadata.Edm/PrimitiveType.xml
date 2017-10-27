@@ -170,5 +170,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetEdmPrimitiveType">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the equivalent <see cref="T:System.Data.Metadata.Edm.EdmType" /> of this <see cref="T:System.Data.Metadata.Edm.PrimitiveType" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

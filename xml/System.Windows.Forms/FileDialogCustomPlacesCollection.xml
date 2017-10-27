@@ -31,6 +31,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.FileDialogCustomPlace" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,6 +47,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.FileDialogCustomPlacesCollection" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.FileDialogCustomPlace" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -84,6 +86,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.FileDialogCustomPlace" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -122,7 +125,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.FileDialogCustomPlace" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a custom place to the <see cref="T:System.Windows.Forms.FileDialogCustomPlacesCollection" /> collection.</summary>
+        <altmember cref="T:System.Windows.Forms.FileDialogCustomPlace" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

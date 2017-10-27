@@ -32,6 +32,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="P:System.Windows.Forms.DataGridView.CellBorderStyle" />
+    <altmember cref="P:System.Windows.Forms.DataGridView.ColumnHeadersBorderStyle" />
+    <altmember cref="P:System.Windows.Forms.DataGridView.RowHeadersBorderStyle" />
+    <altmember cref="P:System.Windows.Forms.DataGridView.AdvancedCellBorderStyle" />
+    <altmember cref="P:System.Windows.Forms.DataGridView.AdvancedColumnHeadersBorderStyle" />
+    <altmember cref="P:System.Windows.Forms.DataGridView.AdvancedRowHeadersBorderStyle" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -57,6 +64,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="All">
@@ -160,6 +168,7 @@
         <summary>Serves as a hash function for a particular type.</summary>
         <returns>A hash code for the current <see cref="T:System.Object" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Object.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="Left">

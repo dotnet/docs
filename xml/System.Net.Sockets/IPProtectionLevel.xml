@@ -29,6 +29,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Net.Configuration.SocketElement.IPProtectionLevel" />
+    <altmember cref="P:System.Net.IPAddress.IsIPv6Teredo" />
+    <altmember cref="M:System.Net.Sockets.Socket.SetIPProtectionLevel(System.Net.Sockets.IPProtectionLevel)" />
+    <altmember cref="M:System.Net.Sockets.TcpListener.AllowNatTraversal(System.Boolean)" />
+    <altmember cref="M:System.Net.Sockets.UdpClient.AllowNatTraversal(System.Boolean)" />
   </Docs>
   <Members>
     <Member MemberName="EdgeRestricted">

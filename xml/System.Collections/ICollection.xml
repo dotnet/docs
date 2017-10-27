@@ -47,6 +47,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Collections.IDictionary" />
+    <altmember cref="T:System.Collections.IList" />
+    <altmember cref="T:System.Collections.Generic.ICollection`1" />
   </Docs>
   <Members>
     <Member MemberName="CopyTo">
@@ -177,6 +180,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.ICollection.SyncRoot" />
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -231,6 +235,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.ICollection.IsSynchronized" />
       </Docs>
     </Member>
   </Members>

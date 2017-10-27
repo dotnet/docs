@@ -88,6 +88,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.AnonymousIdentificationSection" />
       </Docs>
     </Member>
     <Member MemberName="Authentication">
@@ -126,6 +127,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.AuthenticationSection" />
       </Docs>
     </Member>
     <Member MemberName="Authorization">
@@ -164,6 +166,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.AuthorizationSection" />
       </Docs>
     </Member>
     <Member MemberName="BrowserCaps">
@@ -202,6 +205,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.DefaultSection" />
       </Docs>
     </Member>
     <Member MemberName="ClientTarget">
@@ -240,6 +244,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.ClientTargetSection" />
       </Docs>
     </Member>
     <Member MemberName="Compilation">
@@ -278,6 +283,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.CompilationSection" />
       </Docs>
     </Member>
     <Member MemberName="CustomErrors">
@@ -316,6 +322,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.CustomErrorsSection" />
       </Docs>
     </Member>
     <Member MemberName="Deployment">
@@ -354,6 +361,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.DeploymentSection" />
       </Docs>
     </Member>
     <Member MemberName="DeviceFilters">
@@ -392,6 +400,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.DefaultSection" />
       </Docs>
     </Member>
     <Member MemberName="FullTrustAssemblies">
@@ -415,6 +424,8 @@
         <summary>Gets the <see langword="FullTrustAssemblies" /> section of the configuration file.</summary>
         <value>The <see langword="FullTrustAssemblies" /> section of the configuration file.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.Configuration.FullTrustAssembliesSection" />
+        <altmember cref="T:System.Web.Configuration.FullTrustAssembly" />
       </Docs>
     </Member>
     <Member MemberName="Globalization">
@@ -453,6 +464,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.GlobalizationSection" />
       </Docs>
     </Member>
     <Member MemberName="HealthMonitoring">
@@ -491,6 +503,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
       </Docs>
     </Member>
     <Member MemberName="HostingEnvironment">
@@ -524,6 +537,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.HostingEnvironmentSection" />
       </Docs>
     </Member>
     <Member MemberName="HttpCookies">
@@ -562,6 +576,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.HttpCookiesSection" />
       </Docs>
     </Member>
     <Member MemberName="HttpHandlers">
@@ -600,6 +615,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.HttpHandlersSection" />
       </Docs>
     </Member>
     <Member MemberName="HttpModules">
@@ -638,6 +654,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.HttpModulesSection" />
       </Docs>
     </Member>
     <Member MemberName="HttpRuntime">
@@ -676,6 +693,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.HttpRuntimeSection" />
       </Docs>
     </Member>
     <Member MemberName="Identity">
@@ -714,6 +732,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.IdentitySection" />
       </Docs>
     </Member>
     <Member MemberName="MachineKey">
@@ -752,6 +771,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.MachineKeySection" />
       </Docs>
     </Member>
     <Member MemberName="Membership">
@@ -790,6 +810,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.MembershipSection" />
       </Docs>
     </Member>
     <Member MemberName="MobileControls">
@@ -826,6 +847,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.ConfigurationSection" />
       </Docs>
     </Member>
     <Member MemberName="Pages">
@@ -864,6 +886,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.PagesSection" />
       </Docs>
     </Member>
     <Member MemberName="PartialTrustVisibleAssemblies">
@@ -887,6 +910,8 @@
         <summary>Gets the <see langword="PartialTrustVisibleAssemblies" /> section of the configuration file.</summary>
         <value>The <see langword="PartialTrustVisibleAssemblies" /> section of the configuration file.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.Configuration.PartialTrustVisibleAssembliesSection" />
+        <altmember cref="T:System.Web.Configuration.PartialTrustVisibleAssembly" />
       </Docs>
     </Member>
     <Member MemberName="ProcessModel">
@@ -925,6 +950,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.ProcessModelSection" />
       </Docs>
     </Member>
     <Member MemberName="Profile">
@@ -963,6 +989,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.ProfileSection" />
       </Docs>
     </Member>
     <Member MemberName="Protocols">
@@ -996,6 +1023,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.DefaultSection" />
       </Docs>
     </Member>
     <Member MemberName="RoleManager">
@@ -1034,6 +1062,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.RoleManagerSection" />
       </Docs>
     </Member>
     <Member MemberName="SecurityPolicy">
@@ -1072,6 +1101,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.SecurityPolicySection" />
       </Docs>
     </Member>
     <Member MemberName="SessionState">
@@ -1110,6 +1140,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.SessionStateSection" />
       </Docs>
     </Member>
     <Member MemberName="SiteMap">
@@ -1148,6 +1179,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.SiteMapSection" />
       </Docs>
     </Member>
     <Member MemberName="Trace">
@@ -1186,6 +1218,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.TraceSection" />
       </Docs>
     </Member>
     <Member MemberName="Trust">
@@ -1224,6 +1257,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.TrustSection" />
       </Docs>
     </Member>
     <Member MemberName="UrlMappings">
@@ -1257,6 +1291,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.UrlMappingsSection" />
       </Docs>
     </Member>
     <Member MemberName="WebControls">
@@ -1290,6 +1325,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.WebControlsSection" />
       </Docs>
     </Member>
     <Member MemberName="WebParts">
@@ -1323,6 +1359,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.WebPartsSection" />
       </Docs>
     </Member>
     <Member MemberName="WebServices">
@@ -1389,6 +1426,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.XhtmlConformanceSection" />
       </Docs>
     </Member>
   </Members>

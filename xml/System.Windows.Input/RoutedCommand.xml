@@ -60,6 +60,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Input.RoutedUICommand" />
+    <altmember cref="T:System.Windows.Input.CommandBinding" />
+    <altmember cref="T:System.Windows.Input.InputBinding" />
+    <altmember cref="T:System.Windows.Input.KeyGesture" />
+    <altmember cref="T:System.Windows.Input.MouseGesture" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -75,6 +80,10 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.RoutedCommand" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Input.CommandBinding" />
+        <altmember cref="T:System.Windows.Input.InputBinding" />
+        <altmember cref="T:System.Windows.Input.ExecutedRoutedEventArgs" />
+        <altmember cref="T:System.Windows.Input.CanExecuteRoutedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -99,6 +108,10 @@
           <paramref name="name" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="ownerType" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Input.CommandBinding" />
+        <altmember cref="T:System.Windows.Input.InputBinding" />
+        <altmember cref="T:System.Windows.Input.ExecutedRoutedEventArgs" />
+        <altmember cref="T:System.Windows.Input.CanExecuteRoutedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -128,6 +141,10 @@
  \- or -  
   
  <paramref name="ownerType" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Input.CommandBinding" />
+        <altmember cref="T:System.Windows.Input.InputBinding" />
+        <altmember cref="T:System.Windows.Input.ExecutedRoutedEventArgs" />
+        <altmember cref="T:System.Windows.Input.CanExecuteRoutedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="CanExecute">
@@ -296,6 +313,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.InputGesture" />
+        <altmember cref="T:System.Windows.Input.KeyGesture" />
+        <altmember cref="T:System.Windows.Input.MouseGesture" />
+        <altmember cref="T:System.Windows.Input.InputBinding" />
+        <altmember cref="T:System.Windows.Input.KeyBinding" />
+        <altmember cref="T:System.Windows.Input.MouseBinding" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -374,6 +397,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Input.RoutedCommand.CanExecute(System.Object,System.Windows.IInputElement)" />
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Input.ICommand.Execute">
@@ -411,5 +435,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.RoutedCommand" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

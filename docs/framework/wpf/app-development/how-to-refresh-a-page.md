@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "pages, refreshing"
-  - "refreshing pages"
+  - "pages [WPF], refreshing"
+  - "refreshing pages [WPF]"
 ms.assetid: 06dd1bbd-81c4-40ad-ac0d-7a5b326b1465
 caps.latest.revision: 6
 author: dotnet-bot

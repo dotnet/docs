@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "columns [Windows Forms], changing order"
   - "DataGridView control [Windows Forms], column order"
-  - "data grids, changing column order"
+  - "data grids [Windows Forms], changing column order"
 ms.assetid: 5e9ac3bc-b0f0-48cb-a3d5-b005af905395
 caps.latest.revision: 17
 author: dotnet-bot

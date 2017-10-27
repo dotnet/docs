@@ -9,9 +9,9 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "procedure calls, returning values"
+  - "procedure calls [Visual Basic], returning values"
   - "Visual Basic code, procedures"
-  - "procedures, calling"
+  - "procedures [Visual Basic], calling"
 ms.assetid: 259b49a3-a3c1-4254-ba8c-73cdc4127703
 caps.latest.revision: 17
 author: dotnet-bot

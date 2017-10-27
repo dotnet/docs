@@ -12,8 +12,8 @@ f1_keywords:
   - "vb.RemoveHandler"
   - "RemoveHandler"
 helpviewer_keywords: 
-  - "RemoveHandler keyword"
-  - "RemoveHandler statement"
+  - "RemoveHandler keyword [Visual Basic]"
+  - "RemoveHandler statement [Visual Basic]"
 ms.assetid: 647cd825-e877-4910-b4f1-8d168beebe6a
 caps.latest.revision: 14
 author: dotnet-bot

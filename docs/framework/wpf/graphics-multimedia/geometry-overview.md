@@ -9,18 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "PathGeometry class"
-  - "classes, geometry"
-  - "geometry classes"
-  - "graphics, geometry classes"
-  - "CombinedGeometry class"
-  - "EllipseGeometry class"
-  - "RectangleGeometry class"
-  - "LineGeometry class"
+  - "geometry classes [WPF]"
+  - "graphics [WPF], geometry classes"
 ms.assetid: 9fba8934-98b7-4af6-82f6-f4ef887f963a
 caps.latest.revision: 23
 author: dotnet-bot

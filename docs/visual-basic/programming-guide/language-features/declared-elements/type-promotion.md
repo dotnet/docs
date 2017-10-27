@@ -9,13 +9,13 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "declared elements, scope"
-  - "visibility, declared elements"
-  - "Partial keyword, unexpected results with type promotion"
-  - "scope, declared elements"
-  - "scope, Visual Basic"
+  - "declared elements [Visual Basic], scope"
+  - "visibility [Visual Basic], declared elements"
+  - "Partial keyword [Visual Basic], unexpected results with type promotion"
+  - "scope [Visual Basic], declared elements"
+  - "scope [Visual Basic], Visual Basic"
   - "type promotion"
-  - "declared elements, visibility"
+  - "declared elements [Visual Basic], visibility"
 ms.assetid: 035eeb15-e4c5-4288-ab3c-6bd5d22f7051
 caps.latest.revision: 17
 author: dotnet-bot

@@ -333,5 +333,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetState">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides a transition to a <see cref="T:System.Workflow.Activities.StateActivity" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="EnqueueItem">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Posts a message to the <see cref="T:System.Workflow.Activities.StateMachineWorkflowInstance" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

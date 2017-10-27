@@ -19,7 +19,7 @@
  The <xref:System.Resources.ResXResourceSet> class enumerates over an <xref:System.Resources.IResourceReader>, loads every name and value, and stores them in a hash table. You can then enumerate the resources in the <xref:System.Resources.ResXResourceSet> object or retrieve individual resources by name.  
   
 > [!NOTE]
->  This class contains a <xref:System.Security.Permissions.SecurityAction?displayProperty=nameWithType> and an <xref:System.Security.Permissions.SecurityAction?displayProperty=nameWithType> at the class level that applies to all members. A <xref:System.Security.SecurityException> exception is thrown when the immediate caller or a derived class does not have full-trust permission.  
+>  This class contains a <xref:System.Security.Permissions.SecurityAction.LinkDemand?displayProperty=nameWithType> and an <xref:System.Security.Permissions.SecurityAction.InheritanceDemand?displayProperty=nameWithType> at the class level that applies to all members. A <xref:System.Security.SecurityException> exception is thrown when the immediate caller or a derived class does not have full-trust permission.  
   
  A <xref:System.Resources.ResXResourceSet> object provides a convenient way to read all the resources in a .resx file into memory. You can use the <xref:System.Resources.ResourceSet.GetObject%2A> method to retrieve a particular resource when the .resx file has been read into a <xref:System.Resources.ResXResourceSet> instance.  
   
@@ -130,5 +130,14 @@
         </block>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Resources.ResXResourceSet" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

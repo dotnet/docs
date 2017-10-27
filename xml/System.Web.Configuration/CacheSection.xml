@@ -38,6 +38,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Configuration.OutputCacheSection" />
+    <altmember cref="T:System.Web.Configuration.OutputCacheSettingsSection" />
+    <altmember cref="T:System.Web.Configuration.SqlCacheDependencySection" />
+    <altmember cref="T:System.Web.Caching.Cache" />
+    <altmember cref="P:System.Web.HttpContext.Cache" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

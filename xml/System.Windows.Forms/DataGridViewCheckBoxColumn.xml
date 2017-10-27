@@ -41,6 +41,16 @@
     <block subset="none" type="overrides">
       <para>When you derive from <see cref="T:System.Windows.Forms.DataGridViewCheckBoxColumn" /> and add new properties to the derived class, be sure to override the <see cref="M:System.Windows.Forms.DataGridViewColumn.Clone" /> method to copy the new properties during cloning operations. You should also call the base class's <see cref="M:System.Windows.Forms.DataGridViewColumn.Clone" /> method so that the properties of the base class are copied to the new cell.</para>
     </block>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewCheckBoxCell" />
+    <altmember cref="T:System.Windows.Forms.CheckBox" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewColumn.SortMode" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.CellClick" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.CellValueChanged" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.CurrentCellDirtyStateChanged" />
+    <altmember cref="M:System.Windows.Forms.DataGridView.CommitEdit(System.Windows.Forms.DataGridViewDataErrorContexts)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -63,6 +73,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -91,12 +102,21 @@
 |--------------|-----------|  
 |<xref:System.Windows.Forms.DataGridViewCheckBoxColumn.CellTemplate%2A>|A new <xref:System.Windows.Forms.DataGridViewCheckBoxCell> with its <xref:System.Windows.Forms.DataGridViewCheckBoxCell.ThreeState%2A> property initialized to the `threeState` parameter value.|  
 |<xref:System.Windows.Forms.DataGridViewCheckBoxColumn.ThreeState%2A>|The value of the `threeState` parameter.|  
-|<xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A?displayProperty=nameWithType>|<xref:System.Windows.Forms.DataGridViewColumnSortMode?displayProperty=nameWithType>|  
-|The <xref:System.Windows.Forms.DataGridViewCellStyle.Alignment%2A> property of the <xref:System.Windows.Forms.DataGridViewCellStyle> object returned by the <xref:System.Windows.Forms.DataGridViewCheckBoxColumn.DefaultCellStyle%2A> property.|<xref:System.Windows.Forms.DataGridViewContentAlignment?displayProperty=nameWithType>|  
-|The <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A> property of the <xref:System.Windows.Forms.DataGridViewCellStyle> object returned by the <xref:System.Windows.Forms.DataGridViewColumn.DefaultCellStyle%2A> property.|<xref:System.Windows.Forms.CheckState?displayProperty=nameWithType> if `threeState` is `true`; otherwise, `false`.|  
+|<xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A?displayProperty=nameWithType>|<xref:System.Windows.Forms.DataGridViewColumnSortMode.NotSortable?displayProperty=nameWithType>|  
+|The <xref:System.Windows.Forms.DataGridViewCellStyle.Alignment%2A> property of the <xref:System.Windows.Forms.DataGridViewCellStyle> object returned by the <xref:System.Windows.Forms.DataGridViewCheckBoxColumn.DefaultCellStyle%2A> property.|<xref:System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter?displayProperty=nameWithType>|  
+|The <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A> property of the <xref:System.Windows.Forms.DataGridViewCellStyle> object returned by the <xref:System.Windows.Forms.DataGridViewColumn.DefaultCellStyle%2A> property.|<xref:System.Windows.Forms.CheckState.Indeterminate?displayProperty=nameWithType> if `threeState` is `true`; otherwise, `false`.|  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCheckBoxCell" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.CellTemplate" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.ThreeState" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewColumn.SortMode" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.DefaultCellStyle" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.Alignment" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.NullValue" />
       </Docs>
     </Member>
     <Member MemberName="CellTemplate">
@@ -143,6 +163,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The property is set to a value that is not of type <see cref="T:System.Windows.Forms.DataGridViewCheckBoxCell" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="Overload:System.Windows.Forms.DataGridViewCheckBoxColumn.#ctor" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCheckBoxCell" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.InvalidateColumn(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="DefaultCellStyle">
@@ -173,8 +198,8 @@
   
 |`DataGridViewCellStyle` property|Default value|  
 |--------------------------------------|-------------------|  
-|<xref:System.Windows.Forms.DataGridViewCellStyle.Alignment%2A>|<xref:System.Windows.Forms.DataGridViewContentAlignment?displayProperty=nameWithType>|  
-|<xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A>|<xref:System.Windows.Forms.CheckState?displayProperty=nameWithType> if the initial <xref:System.Windows.Forms.DataGridViewCheckBoxColumn.ThreeState%2A> property value is `true`; otherwise, `false`.|  
+|<xref:System.Windows.Forms.DataGridViewCellStyle.Alignment%2A>|<xref:System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter?displayProperty=nameWithType>|  
+|<xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A>|<xref:System.Windows.Forms.CheckState.Indeterminate?displayProperty=nameWithType> if the initial <xref:System.Windows.Forms.DataGridViewCheckBoxColumn.ThreeState%2A> property value is `true`; otherwise, `false`.|  
   
  These values override the value specified in the <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A> property of the <xref:System.Windows.Forms.DataGridView> control, but may be overridden by other cell style properties. For more information, see [Cell Styles in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/cell-styles-in-the-windows-forms-datagridview-control.md).  
   
@@ -190,6 +215,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.DefaultCellStyle" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
       </Docs>
     </Member>
     <Member MemberName="FalseValue">
@@ -235,6 +263,13 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The value of the <see cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.CellTemplate" /> property is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.CellTemplate" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCheckBoxCell" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxCell.FalseValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.TrueValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.IndeterminateValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.ThreeState" />
       </Docs>
     </Member>
     <Member MemberName="FlatStyle">
@@ -277,6 +312,12 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The value of the <see cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.CellTemplate" /> property is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.FlatStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.CellTemplate" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCheckBoxCell" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxCell.FlatStyle" />
+        <altmember cref="M:System.Windows.Forms.Application.EnableVisualStyles" />
       </Docs>
     </Member>
     <Member MemberName="IndeterminateValue">
@@ -322,6 +363,13 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The value of the <see cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.CellTemplate" /> property is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.CellTemplate" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCheckBoxCell" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxCell.IndeterminateValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.TrueValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.FalseValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.ThreeState" />
       </Docs>
     </Member>
     <Member MemberName="ThreeState">
@@ -367,6 +415,13 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The value of the <see cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.CellTemplate" /> property is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.CellTemplate" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCheckBoxCell" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxCell.ThreeState" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.FalseValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.TrueValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.IndeterminateValue" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -386,6 +441,7 @@
         <summary>Gets a string that describes the column.</summary>
         <returns>A <see cref="T:System.String" /> that describes the column.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridViewColumn.ToString" />
       </Docs>
     </Member>
     <Member MemberName="TrueValue">
@@ -431,7 +487,23 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The value of the <see cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.CellTemplate" /> property is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.CellTemplate" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCheckBoxCell" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxCell.TrueValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.FalseValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.IndeterminateValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.ThreeState" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewCheckBoxColumn" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

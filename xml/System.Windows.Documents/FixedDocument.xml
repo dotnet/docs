@@ -41,6 +41,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Documents.FlowDocument" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -167,6 +168,7 @@
         <summary>Gets a collection of the document's <see cref="T:System.Windows.Documents.PageContent" /> elements.</summary>
         <value>A collection of the document's <see cref="T:System.Windows.Documents.PageContent" /> elements.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Documents.FixedDocument.LogicalChildren" />
       </Docs>
     </Member>
     <Member MemberName="PrintTicket">

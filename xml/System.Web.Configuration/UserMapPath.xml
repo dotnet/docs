@@ -35,6 +35,7 @@
         <param name="fileMap">The configuration file mapping for the machine configuration file.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.UserMapPath" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Configuration.ConfigurationFileMap" />
       </Docs>
     </Member>
     <Member MemberName="GetAppPathForPath">

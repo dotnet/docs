@@ -1,7 +1,7 @@
 ---
 title: "Get started with the .NET Framework"
 ms.custom: "updateeachrelease"
-ms.date: "03/30/2017"
+ms.date: "10/17/2017"
 ms.prod: ".net-framework"
 ms.technology: 
   - "dotnet-clr"
@@ -36,7 +36,7 @@ The .NET Framework is a managed execution environment that provides a variety of
 
 - Version compatibility. With rare exceptions, apps that are developed by using a particular version of the .NET Framework run without modification on a later version.
 
-- Side-by-side execution. The .NET Framework helps resolve version conflicts by allowing multiple versions of the common language runtime to exist on the same computer. This means that multiple versions of apps can coexist and that an app can run on the version of the .NET Framework with which it was built. Side-by-side execution applies to the .NET Framework version groups 1.0/1.1, 2.0/3.0/3.5, and 4/4.5.x/4.6.x/4.7.
+- Side-by-side execution. The .NET Framework helps resolve version conflicts by allowing multiple versions of the common language runtime to exist on the same computer. This means that multiple versions of apps can coexist and that an app can run on the version of the .NET Framework with which it was built. Side-by-side execution applies to the .NET Framework version groups 1.0/1.1, 2.0/3.0/3.5, and 4/4.5.x/4.6.x/4.7.x.
 
 - Multitargeting. By targeting [.NET Standard](~/docs/standard/net-standard.md), developers create assemblies that work on multiple .NET Framework platforms, such as Windows 7, Windows 8, Windows 8.1, Windows 10, Windows Phone, and Xbox 360.
 
@@ -45,13 +45,13 @@ The .NET Framework is a managed execution environment that provides a variety of
 
 If you don't develop .NET Framework apps, but you use them, you aren't required to have specific knowledge about the .NET Framework or its operation. For the most part, the .NET Framework is completely transparent to users.
 
-If you're using the Windows operating system, the .NET Framework may already be installed on your computer. In addition if you install an app that requires the .NET Framework, the app's setup program might install a specific version of the .NET Framework on your computer. In some cases, you may see a dialog box that asks you to install the .NET Framework. If you've just tried to run an app when this dialog box appears and if your computer has Internet access, you can go to a webpage that lets you install the missing version of the .NET Framework.
+If you're using the Windows operating system, the .NET Framework may already be installed on your computer. In addition, if you install an app that requires the .NET Framework, the app's setup program might install a specific version of the .NET Framework on your computer. In some cases, you may see a dialog box that asks you to install the .NET Framework. If you've just tried to run an app when this dialog box appears and if your computer has Internet access, you can go to a webpage that lets you install the missing version of the .NET Framework.
 
 In general, you shouldn't uninstall versions of the .NET Framework that are installed on your computer. There are two reasons for this:
 
 - If an app that you use depends on a specific version of the .NET Framework, that app may break if that version is removed.
 
-- Some versions of the .NET Framework are in-place updates to earlier versions. For example, the [!INCLUDE[net_v35_short](../../../includes/net-v35-short-md.md)] is an in-place update to version 2.0, and the .NET Framework 4.7 is an in-place update to versions 4, 4.5, 4.5.1, 4.5.2, 4.6, 4.6.1, and 4.6.2. For more information, see [.NET Framework Versions and Dependencies](../../../docs/framework/migration-guide/versions-and-dependencies.md).
+- Some versions of the .NET Framework are in-place updates to earlier versions. For example, the [!INCLUDE[net_v35_short](../../../includes/net-v35-short-md.md)] is an in-place update to version 2.0, and the .NET Framework 4.7.1 is an in-place update to versions 4, 4.5, 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, and 4.7. For more information, see [.NET Framework Versions and Dependencies](../../../docs/framework/migration-guide/versions-and-dependencies.md).
 
 If you do choose to remove the .NET Framework, always use **Programs and Features** from Control Panel to uninstall it. Never remove a version of the .NET Framework manually.
 
@@ -64,7 +64,7 @@ If you're a developer, choose any programming language that supports the .NET Fr
 
 To develop .NET Framework apps or components, do the following:
 
-1. If it's not preinstalled on your operating system, install the version of the .NET Framework that your app will target. The most recent production version is the .NET Framework 4.7, which is preinstalled on Windows 10 Creators Update and is available for download on earlier versions of the Windows operating system. For .NET Framework system requirements, see [System Requirements](../../../docs/framework/get-started/system-requirements.md). For information on installing other versions of the .NET Framework, see [Installation Guide](../../../docs/framework/install/guide-for-developers.md). Additional .NET Framework packages are released out of band, which means that they're released on a rolling basis outside of any regular or scheduled release cycle. For information about these packages, see [The .NET Framework and Out-of-Band Releases](../../../docs/framework/get-started/the-net-framework-and-out-of-band-releases.md).
+1. If it's not preinstalled on your operating system, install the version of the .NET Framework that your app will target. The most recent production version is the .NET Framework 4.7.1, which is preinstalled on Windows 10 Fall Creators Update and is available for download on earlier versions of the Windows operating system. For .NET Framework system requirements, see [System Requirements](../../../docs/framework/get-started/system-requirements.md). For information on installing other versions of the .NET Framework, see [Installation Guide](../../../docs/framework/install/guide-for-developers.md). Additional .NET Framework packages are released out of band, which means that they're released on a rolling basis outside of any regular or scheduled release cycle. For information about these packages, see [The .NET Framework and Out-of-Band Releases](../../../docs/framework/get-started/the-net-framework-and-out-of-band-releases.md).
 
 2. Select the language or languages supported by the .NET Framework that you intend to use to develop your apps. A number of languages are available, including Visual Basic, C#, Visual F#, and C++/CLI from Microsoft. (A programming language that allows you to develop apps for the .NET Framework adheres to the [Common Language Infrastructure (CLI) specification](http://go.microsoft.com/fwlink/?LinkId=199862).)
 

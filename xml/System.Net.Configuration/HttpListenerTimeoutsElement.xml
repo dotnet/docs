@@ -20,6 +20,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.HttpListener" />
+    <altmember cref="T:System.Net.HttpListenerTimeoutManager" />
+    <altmember cref="T:System.Net.Configuration.HttpListenerElement" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -67,6 +70,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerTimeoutManager" />
+        <altmember cref="P:System.Net.HttpListenerTimeoutManager.DrainEntityBody" />
+        <altmember cref="T:System.Net.Configuration.HttpListenerElement" />
       </Docs>
     </Member>
     <Member MemberName="EntityBody">
@@ -99,6 +106,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerTimeoutManager" />
+        <altmember cref="P:System.Net.HttpListenerTimeoutManager.EntityBody" />
+        <altmember cref="T:System.Net.Configuration.HttpListenerElement" />
       </Docs>
     </Member>
     <Member MemberName="HeaderWait">
@@ -133,6 +144,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerTimeoutManager" />
+        <altmember cref="P:System.Net.HttpListenerTimeoutManager.HeaderWait" />
+        <altmember cref="T:System.Net.Configuration.HttpListenerElement" />
       </Docs>
     </Member>
     <Member MemberName="IdleConnection">
@@ -167,6 +182,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerTimeoutManager" />
+        <altmember cref="P:System.Net.HttpListenerTimeoutManager.IdleConnection" />
+        <altmember cref="T:System.Net.Configuration.HttpListenerElement" />
       </Docs>
     </Member>
     <Member MemberName="MinSendBytesPerSecond">
@@ -192,6 +211,10 @@
   
  The minimum send rate, in bytes-per-second, for the response.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerTimeoutManager" />
+        <altmember cref="P:System.Net.HttpListenerTimeoutManager.MinSendBytesPerSecond" />
+        <altmember cref="T:System.Net.Configuration.HttpListenerElement" />
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -235,6 +258,10 @@
   
  The time, in seconds, allowed for the request to remain in the request queue before the <see cref="T:System.Net.HttpListener" /> picks it up.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerTimeoutManager" />
+        <altmember cref="P:System.Net.HttpListenerTimeoutManager.RequestQueue" />
+        <altmember cref="T:System.Net.Configuration.HttpListenerElement" />
       </Docs>
     </Member>
   </Members>

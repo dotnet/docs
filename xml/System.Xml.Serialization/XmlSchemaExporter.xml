@@ -38,6 +38,9 @@
  ]]></format>
     </remarks>
     <forInternalUseOnly />
+    <altmember cref="T:System.Xml.Serialization.XmlSchemas" />
+    <altmember cref="T:System.Xml.Schema.XmlSchema" />
+    <altmember cref="T:System.Xml.Serialization.SoapSchemaExporter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -296,5 +299,35 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ExportAnyType">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds an element declaration for an object or type to a SOAP message or to an <see cref="T:System.Xml.Schema.XmlSchema" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ExportTypeMapping">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds an element declaration for an object or type to a SOAP message or an <see cref="T:System.Xml.Schema.XmlSchema" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ExportMembersMapping">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds an element declaration to the applicable <see cref="T:System.Xml.Schema.XmlSchema" /> for each of the element parts of a literal SOAP message definition.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

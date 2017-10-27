@@ -22,6 +22,7 @@
     <summary>Defines methods that are used by the <see cref="T:Microsoft.JScript.Vsa.VsaEngine" /> for name resolution. Provides extra functionality that is needed by an IActiveScript host.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.IActivationObject" />
   </Docs>
   <Members>
     <Member MemberName="GetParentChain">
@@ -45,6 +46,8 @@
         <returns>An array that contains the parent objects of <paramref name="obj" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.Vsa.VsaEngine" />
+        <altmember cref="T:Microsoft.JScript.IActivationObject" />
       </Docs>
     </Member>
   </Members>

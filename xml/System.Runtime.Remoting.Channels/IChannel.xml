@@ -98,6 +98,12 @@
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+        <altmember cref="T:System.Runtime.Remoting.Channels.Http.HttpChannel" />
+        <altmember cref="T:System.Runtime.Remoting.Channels.Http.HttpServerChannel" />
+        <altmember cref="T:System.Runtime.Remoting.Channels.Http.HttpClientChannel" />
+        <altmember cref="T:System.Runtime.Remoting.Channels.Tcp.TcpChannel" />
+        <altmember cref="T:System.Runtime.Remoting.Channels.Tcp.TcpServerChannel" />
+        <altmember cref="T:System.Runtime.Remoting.Channels.Tcp.TcpClientChannel" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -134,6 +140,7 @@
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+        <altmember cref="T:System.Uri" />
       </Docs>
     </Member>
   </Members>

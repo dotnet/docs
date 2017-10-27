@@ -64,6 +64,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Security.AccessControl.SemaphoreSecurity" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -95,7 +96,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To enter a <xref:System.Threading.Semaphore>, for example by calling the <xref:System.Threading.WaitHandle.WaitOne%2A> method, a user must have <xref:System.Security.AccessControl.SemaphoreRights?displayProperty=nameWithType> access. To exit the semaphore, by calling the <xref:System.Threading.Semaphore.Release%2A> method, the user must have <xref:System.Security.AccessControl.SemaphoreRights?displayProperty=nameWithType> access.  
+ To enter a <xref:System.Threading.Semaphore>, for example by calling the <xref:System.Threading.WaitHandle.WaitOne%2A> method, a user must have <xref:System.Security.AccessControl.SemaphoreRights.Synchronize?displayProperty=nameWithType> access. To exit the semaphore, by calling the <xref:System.Threading.Semaphore.Release%2A> method, the user must have <xref:System.Security.AccessControl.SemaphoreRights.Modify?displayProperty=nameWithType> access.  
   
  ]]></format>
         </remarks>
@@ -144,7 +145,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To enter a <xref:System.Threading.Semaphore>, for example by calling the <xref:System.Threading.WaitHandle.WaitOne%2A> method, a user must have <xref:System.Security.AccessControl.SemaphoreRights?displayProperty=nameWithType> access. To exit the semaphore, by calling the <xref:System.Threading.Semaphore.Release%2A> method, the user must have <xref:System.Security.AccessControl.SemaphoreRights?displayProperty=nameWithType> access.  
+ To enter a <xref:System.Threading.Semaphore>, for example by calling the <xref:System.Threading.WaitHandle.WaitOne%2A> method, a user must have <xref:System.Security.AccessControl.SemaphoreRights.Synchronize?displayProperty=nameWithType> access. To exit the semaphore, by calling the <xref:System.Threading.Semaphore.Release%2A> method, the user must have <xref:System.Security.AccessControl.SemaphoreRights.Modify?displayProperty=nameWithType> access.  
   
  This constructor is equivalent to creating an <xref:System.Security.Principal.NTAccount> object, by passing `identity` to the <xref:System.Security.Principal.NTAccount.%23ctor%28System.String%29?displayProperty=nameWithType> constructor, and passing the newly created <xref:System.Security.Principal.NTAccount> object to the <xref:System.Security.AccessControl.SemaphoreAccessRule.%23ctor%28System.Security.Principal.IdentityReference%2CSystem.Security.AccessControl.SemaphoreRights%2CSystem.Security.AccessControl.AccessControlType%29> constructor.  
   
@@ -223,5 +224,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.SemaphoreAccessRule" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

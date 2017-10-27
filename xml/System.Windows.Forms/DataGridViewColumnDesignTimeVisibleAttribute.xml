@@ -29,6 +29,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,6 +46,8 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewColumnDesignTimeVisibleAttribute" /> class using the default <see cref="P:System.Windows.Forms.DataGridViewColumnDesignTimeVisibleAttribute.Visible" /> property value of <see langword="true" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -62,6 +66,8 @@
         <param name="visible">The value of the <see cref="P:System.Windows.Forms.DataGridViewColumnDesignTimeVisibleAttribute.Visible" /> property.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewColumnDesignTimeVisibleAttribute" /> class using the specified value to initialize the <see cref="P:System.Windows.Forms.DataGridViewColumnDesignTimeVisibleAttribute.Visible" /> property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -86,6 +92,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -109,6 +117,8 @@
         <returns>
           <see langword="true" /> to indicate that the specified object is a <see cref="T:System.Windows.Forms.DataGridViewColumnDesignTimeVisibleAttribute" /> instance with the same <see cref="P:System.Windows.Forms.DataGridViewColumnDesignTimeVisibleAttribute.Visible" /> property value as this instance; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -128,6 +138,7 @@
         <summary>Returns the hash code for this instance.</summary>
         <returns>A 32-bit signed integer hash code.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Attribute.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="IsDefaultAttribute">
@@ -148,6 +159,8 @@
         <returns>
           <see langword="true" /> to indicate that this instance is equal to the <see cref="F:System.Windows.Forms.DataGridViewColumnDesignTimeVisibleAttribute.Default" /> instance; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
       </Docs>
     </Member>
     <Member MemberName="No">
@@ -172,6 +185,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -191,6 +206,8 @@
         <value>
           <see langword="true" /> to indicate that the column type is visible in the <see cref="T:System.Windows.Forms.DataGridView" /> designer; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
       </Docs>
     </Member>
     <Member MemberName="Yes">
@@ -215,7 +232,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewColumnDesignTimeVisibleAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

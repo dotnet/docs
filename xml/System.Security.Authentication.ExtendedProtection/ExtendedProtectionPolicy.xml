@@ -120,6 +120,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -498,5 +499,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

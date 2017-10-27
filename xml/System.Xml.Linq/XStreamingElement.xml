@@ -1950,5 +1950,27 @@ Console.WriteLine(sb.ToString())
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the specified content as children to this <see cref="T:System.Xml.Linq.XStreamingElement" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Save">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Serialize this streaming element. The output can be saved to a file, an <see cref="T:System.Xml.XmlTextWriter" />, a <see cref="T:System.IO.TextWriter" />, or an <see cref="T:System.Xml.XmlWriter" />. Optionally, formatting (indenting) can be disabled.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

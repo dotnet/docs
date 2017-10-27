@@ -9,12 +9,12 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.Shared"
 helpviewer_keywords: 
-  - "Shared keyword"
-  - "members, shared"
+  - "Shared keyword [Visual Basic]"
+  - "members [Visual Basic], shared"
   - "shared members"
   - "nonshared"
-  - "shared elements"
-  - "elements, shared"
+  - "shared [elements VB]"
+  - "elements [Visual Basic], shared"
 ms.assetid: 2bf7cf2c-b0dd-485e-8749-b5d674dab4cd
 caps.latest.revision: 16
 author: dotnet-bot

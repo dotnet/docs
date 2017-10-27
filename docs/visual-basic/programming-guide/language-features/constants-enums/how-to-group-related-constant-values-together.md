@@ -10,7 +10,7 @@ ms.technology:
 ms.topic: "article"
 helpviewer_keywords: 
   - "enumerations [Visual Basic], constants"
-  - "constants, grouping together"
+  - "constants [Visual Basic], grouping together"
 ms.assetid: 09d61da5-c940-4126-a79f-ba93c36653dc
 caps.latest.revision: 17
 author: dotnet-bot

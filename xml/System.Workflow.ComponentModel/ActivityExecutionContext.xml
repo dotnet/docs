@@ -321,5 +321,14 @@
         <exception cref="T:System.ObjectDisposedException">If the <see cref="T:System.Workflow.ComponentModel.Activity" /> associated with this instance is a null reference (<see langword="Nothing" />).</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TrackData">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invokes the track method for the associated <see cref="P:System.Workflow.ComponentModel.ActivityExecutionContext.Activity" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

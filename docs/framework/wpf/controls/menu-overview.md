@@ -10,8 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "Menu control"
-  - "controls, Menu"
+  - "Menu control [WPF]"
+  - "controls [WPF], Menu"
 ms.assetid: 67df6de5-db96-4c71-b752-af90729a6537
 caps.latest.revision: 19
 author: dotnet-bot

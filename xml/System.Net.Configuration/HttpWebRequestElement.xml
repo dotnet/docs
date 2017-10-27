@@ -24,6 +24,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Net.HttpWebRequest.MaximumResponseHeadersLength" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,6 +47,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Net.HttpWebRequest.MaximumResponseHeadersLength" />
       </Docs>
     </Member>
     <Member MemberName="MaximumErrorResponseLength">
@@ -101,6 +103,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Net.HttpWebRequest.MaximumResponseHeadersLength" />
       </Docs>
     </Member>
     <Member MemberName="MaximumUnauthorizedUploadLength">
@@ -126,6 +129,9 @@
   
  The default value for this property is -1.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.HttpWebRequest" />
+        <altmember cref="P:System.Net.HttpWebRequest.Expect" />
+        <altmember cref="P:System.Net.HttpWebRequest.Headers" />
       </Docs>
     </Member>
     <Member MemberName="PostDeserialize">

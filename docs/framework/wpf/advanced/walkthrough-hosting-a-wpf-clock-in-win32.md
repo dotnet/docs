@@ -11,7 +11,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "interoperability [WPF], tutorials"
-  - "Win32 code, WPF interoperation"
+  - "Win32 code [WPF], WPF interoperation"
   - "interoperability [WPF], Win32"
 ms.assetid: 555e55a7-0851-4ec8-b1c6-0acba7e9b648
 caps.latest.revision: 15

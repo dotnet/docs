@@ -39,6 +39,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Drawing.Graphics" />
+    <altmember cref="T:System.Drawing.Rectangle" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -75,6 +77,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Rectangle" />
+        <altmember cref="T:System.Drawing.Graphics" />
       </Docs>
     </Member>
     <Member MemberName="ClipRectangle">
@@ -105,6 +109,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Rectangle" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -221,7 +226,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Graphics" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.Windows.Forms.PaintEventArgs" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

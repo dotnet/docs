@@ -20,6 +20,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Automation.Provider.IWindowProvider" />
   </Docs>
   <Members>
     <Member MemberName="Cached">
@@ -383,6 +384,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.WindowClosedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="WindowInteractionStateProperty">

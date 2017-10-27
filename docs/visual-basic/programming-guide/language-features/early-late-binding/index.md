@@ -9,16 +9,16 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "early binding"
+  - "early binding [Visual Basic]"
   - "objects [Visual Basic], late-bound"
   - "objects [Visual Basic], early-bound"
   - "objects [Visual Basic], late bound"
-  - "early binding, Visual Basic compiler"
-  - "binding, late and early"
+  - "early binding [Visual Basic], Visual Basic compiler"
+  - "binding [Visual Basic], late and early"
   - "objects [Visual Basic], early bound"
   - "Visual Basic compiler, early and late binding"
-  - "late binding"
-  - "late binding, Visual Basic compiler"
+  - "late binding [Visual Basic]"
+  - "late binding [Visual Basic], Visual Basic compiler"
 ms.assetid: d6ff7f1e-b94f-4205-ab8d-5cfa91758724
 caps.latest.revision: 10
 author: dotnet-bot

@@ -9,9 +9,9 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "files, writing to"
+  - "files [Visual Basic], writing to"
   - "text, writing to files"
-  - "writing to files, StreamWriter"
+  - "writing to files [Visual Basic], StreamWriter"
 ms.assetid: 99762e57-ef46-4dcc-8959-a8f79c22f067
 caps.latest.revision: 14
 author: dotnet-bot

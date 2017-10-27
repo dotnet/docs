@@ -10,8 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "Bezier curves, creating"
-  - "quadratic Bezier curves, creating"
+  - "Bezier curves [WPF], creating"
+  - "quadratic Bezier curves [WPF], creating"
   - "graphics [WPF], quadratic Bezier curves"
 ms.assetid: cd8fca4a-504e-4fd8-92ea-2969065a6e02
 caps.latest.revision: 8

@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "data grids, read-only columns"
+  - "data grids [Windows Forms], read-only columns"
   - "DataGridView control [Windows Forms], read-only columns"
 ms.assetid: 2bb73ebb-1a55-4362-9fda-e50574c087d5
 caps.latest.revision: 18

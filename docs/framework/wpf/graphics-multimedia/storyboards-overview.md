@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "Storyboard syntax"
-  - "syntax, Storyboard"
-  - "Timelines"
+  - "Storyboard syntax [WPF]"
+  - "syntax [WPF], Storyboard"
+  - "timelines [WPF]"
 ms.assetid: 1a698c3c-30f1-4b30-ae56-57e8a39811bd
 caps.latest.revision: 31
 author: dotnet-bot

@@ -105,6 +105,13 @@
       <see cref="T:System.Collections.Hashtable" /> is thread safe for use by multiple reader threads and a single writing thread. It is thread safe for multi-thread use when only one of the threads perform write (update) operations, which allows for lock-free reads provided that the writers are serialized to the <see cref="T:System.Collections.Hashtable" />. To support multiple writers all operations on the <see cref="T:System.Collections.Hashtable" /> must be done through the wrapper returned by the <see cref="M:System.Collections.Hashtable.Synchronized(System.Collections.Hashtable)" /> method, provided that there are no threads reading the <see cref="T:System.Collections.Hashtable" /> object.  
   
  Enumerating through a collection is intrinsically not a thread safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.</threadsafe>
+    <altmember cref="T:System.Collections.IDictionary" />
+    <altmember cref="T:System.Collections.IHashCodeProvider" />
+    <altmember cref="M:System.Object.GetHashCode" />
+    <altmember cref="M:System.Object.Equals(System.Object)" />
+    <altmember cref="T:System.Collections.DictionaryEntry" />
+    <altmember cref="T:System.Collections.Generic.Dictionary`2" />
+    <altmember cref="T:System.Collections.IEqualityComparer" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -159,6 +166,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.GetHashCode" />
+        <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -220,6 +229,9 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="d" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Collections.IDictionary" />
+        <altmember cref="M:System.Object.GetHashCode" />
+        <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -285,6 +297,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEqualityComparer" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -344,6 +357,8 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="capacity" /> is less than zero.</exception>
+        <altmember cref="M:System.Object.GetHashCode" />
+        <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -415,6 +430,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="d" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Collections.IDictionary" />
+        <altmember cref="T:System.Collections.IEqualityComparer" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -484,6 +501,9 @@
  -or-  
   
  <paramref name="loadFactor" /> is greater than 1.0.</exception>
+        <altmember cref="T:System.Collections.IDictionary" />
+        <altmember cref="M:System.Object.GetHashCode" />
+        <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -554,6 +574,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IHashCodeProvider" />
+        <altmember cref="T:System.Collections.IComparer" />
+        <altmember cref="M:System.Object.GetHashCode" />
+        <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -623,6 +647,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="capacity" /> is less than zero.</exception>
+        <altmember cref="T:System.Collections.IEqualityComparer" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -694,6 +719,8 @@
  <paramref name="loadFactor" /> is greater than 1.0.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="capacity" /> is causing an overflow.</exception>
+        <altmember cref="M:System.Object.GetHashCode" />
+        <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -744,6 +771,12 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="info" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Runtime.Serialization.ISerializable" />
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
+        <altmember cref="M:System.Collections.Hashtable.OnDeserialization(System.Object)" />
+        <altmember cref="M:System.Object.GetHashCode" />
+        <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -820,6 +853,11 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="d" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Collections.IDictionary" />
+        <altmember cref="T:System.Collections.IHashCodeProvider" />
+        <altmember cref="T:System.Collections.IComparer" />
+        <altmember cref="M:System.Object.GetHashCode" />
+        <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -899,6 +937,7 @@
  -or-  
   
  <paramref name="loadFactor" /> is greater than 1.0.</exception>
+        <altmember cref="T:System.Collections.IEqualityComparer" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -973,6 +1012,10 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="capacity" /> is less than zero.</exception>
+        <altmember cref="T:System.Collections.IHashCodeProvider" />
+        <altmember cref="T:System.Collections.IComparer" />
+        <altmember cref="M:System.Object.GetHashCode" />
+        <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -1052,6 +1095,7 @@
  -or-  
   
  <paramref name="loadFactor" /> is greater than 1.0.</exception>
+        <altmember cref="T:System.Collections.IEqualityComparer" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -1220,6 +1264,10 @@
  -or-  
   
  <paramref name="loadFactor" /> is greater than 1.0.</exception>
+        <altmember cref="T:System.Collections.IHashCodeProvider" />
+        <altmember cref="T:System.Collections.IComparer" />
+        <altmember cref="M:System.Object.GetHashCode" />
+        <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -1286,6 +1334,9 @@
  -or-  
   
  The <see cref="T:System.Collections.Hashtable" /> has a fixed size.</exception>
+        <altmember cref="M:System.Collections.Hashtable.Remove(System.Object)" />
+        <altmember cref="P:System.Collections.Hashtable.Item(System.Object)" />
+        <altmember cref="M:System.Collections.IDictionary.Add(System.Object,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -1341,6 +1392,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.Hashtable" /> is read-only.</exception>
+        <altmember cref="M:System.Collections.IDictionary.Clear" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -1386,6 +1438,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Hashtable.CopyTo(System.Array,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="comparer">
@@ -1426,6 +1479,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The property is set to a value, but the hash table was created using an <see cref="T:System.Collections.IEqualityComparer" />.</exception>
+        <altmember cref="T:System.Collections.IComparer" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -1484,6 +1538,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Collections.Hashtable.ContainsKey(System.Object)" />
+        <altmember cref="T:System.Collections.IDictionary" />
       </Docs>
     </Member>
     <Member MemberName="ContainsKey">
@@ -1542,6 +1598,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Collections.Hashtable.Contains(System.Object)" />
+        <altmember cref="M:System.Collections.Hashtable.ContainsValue(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ContainsValue">
@@ -1598,6 +1656,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Hashtable.ContainsKey(System.Object)" />
+        <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -1667,6 +1727,9 @@
   
  The number of elements in the source <see cref="T:System.Collections.Hashtable" /> is greater than the available space from <paramref name="arrayIndex" /> to the end of the destination <paramref name="array" />.</exception>
         <exception cref="T:System.InvalidCastException">The type of the source <see cref="T:System.Collections.Hashtable" /> cannot be cast automatically to the type of the destination <paramref name="array" />.</exception>
+        <altmember cref="T:System.Array" />
+        <altmember cref="T:System.Collections.DictionaryEntry" />
+        <altmember cref="M:System.Collections.Hashtable.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -1746,6 +1809,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The property is set to a value, but the hash table was created using an <see cref="T:System.Collections.IHashCodeProvider" /> and an <see cref="T:System.Collections.IComparer" />.</exception>
+        <altmember cref="T:System.Collections.Comparer" />
+        <altmember cref="T:System.Collections.IEqualityComparer" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -1812,6 +1877,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IDictionaryEnumerator" />
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="GetHash">
@@ -1858,6 +1925,9 @@
         </remarks>
         <exception cref="T:System.NullReferenceException">
           <paramref name="key" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Object.GetHashCode" />
+        <altmember cref="T:System.Object" />
+        <altmember cref="T:System.Collections.IHashCodeProvider" />
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -1906,6 +1976,10 @@
           <paramref name="info" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The collection was modified.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="T:System.Runtime.Serialization.ISerializable" />
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
+        <altmember cref="M:System.Collections.Hashtable.OnDeserialization(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="hcp">
@@ -1946,6 +2020,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The property is set to a value, but the hash table was created using an <see cref="T:System.Collections.IEqualityComparer" />.</exception>
+        <altmember cref="T:System.Collections.IHashCodeProvider" />
       </Docs>
     </Member>
     <Member MemberName="IsFixedSize">
@@ -2088,6 +2163,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Hashtable.Synchronized(System.Collections.Hashtable)" />
+        <altmember cref="P:System.Collections.Hashtable.SyncRoot" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -2145,6 +2222,7 @@
  -or-  
   
  The property is set, <paramref name="key" /> does not exist in the collection, and the <see cref="T:System.Collections.Hashtable" /> has a fixed size.</exception>
+        <altmember cref="M:System.Collections.Hashtable.Add(System.Object,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="KeyEquals">
@@ -2198,6 +2276,9 @@
  -or-  
   
  <paramref name="key" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Object" />
+        <altmember cref="M:System.Collections.IComparer.Compare(System.Object,System.Object)" />
+        <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -2240,6 +2321,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="P:System.Collections.Hashtable.Values" />
       </Docs>
     </Member>
     <Member MemberName="OnDeserialization">
@@ -2280,6 +2363,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.Serialization.SerializationException">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object associated with the current <see cref="T:System.Collections.Hashtable" /> is invalid.</exception>
+        <altmember cref="T:System.Runtime.Serialization.ISerializable" />
+        <altmember cref="M:System.Collections.Hashtable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -2344,6 +2429,8 @@
  -or-  
   
  The <see cref="T:System.Collections.Hashtable" /> has a fixed size.</exception>
+        <altmember cref="M:System.Collections.Hashtable.Add(System.Object,System.Object)" />
+        <altmember cref="M:System.Collections.IDictionary.Remove(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Synchronized">
@@ -2407,6 +2494,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="table" /> is <see langword="null" />.</exception>
+        <altmember cref="P:System.Collections.Hashtable.IsSynchronized" />
+        <altmember cref="P:System.Collections.Hashtable.SyncRoot" />
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -2453,6 +2542,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.Hashtable.IsSynchronized" />
+        <altmember cref="M:System.Collections.Hashtable.Synchronized(System.Collections.Hashtable)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -2508,6 +2599,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -2550,7 +2642,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="P:System.Collections.Hashtable.Keys" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Hashtable" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

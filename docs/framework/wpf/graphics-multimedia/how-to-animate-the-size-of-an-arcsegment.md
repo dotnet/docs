@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "graphics [WPF], animation"
-  - "animation, ArcSegment size"
-  - "ArcSegment, animating size"
+  - "animation [WPF], ArcSegment size"
+  - "ArcSegment [WPF], animating size"
 ms.assetid: f93a1065-b00a-4d7e-9d4b-37023f98186a
 caps.latest.revision: 11
 author: dotnet-bot

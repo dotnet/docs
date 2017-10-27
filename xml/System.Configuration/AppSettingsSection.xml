@@ -36,6 +36,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.ConfigurationManager" />
+    <altmember cref="T:System.Web.Configuration.WebConfigurationManager" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -120,6 +122,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Configuration.SectionInformation.ConfigSource" />
       </Docs>
     </Member>
     <Member MemberName="GetRuntimeObject">

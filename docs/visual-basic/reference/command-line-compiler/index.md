@@ -8,9 +8,9 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "compilers, Visual Basic options"
+  - "compilers [Visual Basic], Visual Basic options"
   - "Visual Basic compiler"
-  - "compilers"
+  - "compilers [Visual Basic]"
   - "compiler options, Visual Basic"
   - "Visual Basic compiler, options"
 ms.assetid: 6b57c444-50c7-4b88-8f59-ed65cff5e05c

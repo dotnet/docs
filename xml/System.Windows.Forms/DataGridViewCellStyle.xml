@@ -40,6 +40,21 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="P:System.Windows.Forms.DataGridView.DefaultCellStyle" />
+    <altmember cref="P:System.Windows.Forms.DataGridView.RowsDefaultCellStyle" />
+    <altmember cref="P:System.Windows.Forms.DataGridView.AlternatingRowsDefaultCellStyle" />
+    <altmember cref="P:System.Windows.Forms.DataGridView.ColumnHeadersDefaultCellStyle" />
+    <altmember cref="P:System.Windows.Forms.DataGridView.RowHeadersDefaultCellStyle" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.CellFormatting" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.CellStyleContentChanged" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewBand.InheritedStyle" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewBand.DefaultCellStyle" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewRow.DefaultCellStyle" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewColumn.DefaultCellStyle" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewCell.InheritedStyle" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewCell.Style" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewCellFormattingEventArgs" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -55,6 +70,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewCellStyle" /> class using default property values.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -75,6 +91,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="dataGridViewCellStyle" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="Alignment">
@@ -109,6 +126,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The property value is not a valid <see cref="T:System.Windows.Forms.DataGridViewContentAlignment" /> value.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="ApplyStyle">
@@ -139,6 +157,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="dataGridViewCellStyle" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="BackColor">
@@ -167,6 +186,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -186,6 +206,7 @@
         <summary>Creates an exact copy of this <see cref="T:System.Windows.Forms.DataGridViewCellStyle" />.</summary>
         <returns>A <see cref="T:System.Windows.Forms.DataGridViewCellStyle" /> that represents an exact copy of this cell style.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="DataSourceNullValue">
@@ -233,6 +254,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellFormatting" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.Value" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.IsDataSourceNullValueDefault" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.NullValue" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -256,6 +282,7 @@
         <returns>
           <see langword="true" /> if <paramref name="o" /> is a <see cref="T:System.Windows.Forms.DataGridViewCellStyle" /> and has the same property values as this instance; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -290,6 +317,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -323,6 +351,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="Format">
@@ -367,6 +396,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="FormatProvider">
@@ -393,6 +423,7 @@
         <summary>Gets or sets the object used to provide culture-specific formatting of <see cref="T:System.Windows.Forms.DataGridView" /> cell values.</summary>
         <value>An <see cref="T:System.IFormatProvider" /> used for cell formatting. The default is <see cref="P:System.Globalization.CultureInfo.CurrentUICulture" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -412,6 +443,7 @@
         <summary>Serves as a hash function for a particular type.</summary>
         <returns>A hash code for the current <see cref="T:System.Object" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Object.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="IsDataSourceNullValueDefault">
@@ -446,6 +478,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue" />
       </Docs>
     </Member>
     <Member MemberName="IsFormatProviderDefault">
@@ -480,6 +514,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="IsNullValueDefault">
@@ -514,6 +549,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="NullValue">
@@ -560,6 +596,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellFormatting" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.Value" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.IsDataSourceNullValueDefault" />
       </Docs>
     </Member>
     <Member MemberName="Padding">
@@ -595,6 +636,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="SelectionBackColor">
@@ -623,6 +665,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="SelectionForeColor">
@@ -656,6 +699,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="System.ICloneable.Clone">
@@ -682,6 +726,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="Tag">
@@ -708,6 +753,7 @@
         <summary>Gets or sets an object that contains additional data related to the <see cref="T:System.Windows.Forms.DataGridViewCellStyle" />.</summary>
         <value>An object that contains additional data. The default is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -727,6 +773,7 @@
         <summary>Returns a string indicating the current property settings of the <see cref="T:System.Windows.Forms.DataGridViewCellStyle" />.</summary>
         <returns>A string indicating the current property settings of the <see cref="T:System.Windows.Forms.DataGridViewCellStyle" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="WrapMode">
@@ -766,7 +813,18 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The property value is not a valid <see cref="T:System.Windows.Forms.DataGridViewTriState" /> value.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewCellStyle" /> class.</summary>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

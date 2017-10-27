@@ -80,6 +80,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.ConfigurationSection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -138,6 +139,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.TimeSpan" />
       </Docs>
     </Member>
     <Member MemberName="AutoEventWireup">
@@ -300,6 +302,7 @@ public partial class AutoEventWireupExample : System.Web.UI.Page
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.ClientIDMode" />
       </Docs>
     </Member>
     <Member MemberName="CompilationMode">
@@ -338,6 +341,7 @@ public partial class AutoEventWireupExample : System.Web.UI.Page
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.CompilationMode" />
       </Docs>
     </Member>
     <Member MemberName="ControlRenderingCompatibilityVersion">
@@ -375,6 +379,7 @@ public partial class AutoEventWireupExample : System.Web.UI.Page
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">An attempt was made to set this property to <see langword="null" />.</exception>
+        <altmember cref="P:System.Web.UI.Control.RenderingCompatibility" />
       </Docs>
     </Member>
     <Member MemberName="Controls">
@@ -413,6 +418,8 @@ public partial class AutoEventWireupExample : System.Web.UI.Page
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.TagPrefixCollection" />
+        <altmember cref="T:System.Web.Configuration.TagPrefixInfo" />
       </Docs>
     </Member>
     <Member MemberName="DeserializeSection">
@@ -610,6 +617,7 @@ public partial class AutoEventWireupExample : System.Web.UI.Page
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.IgnoreDeviceFilterElement" />
       </Docs>
     </Member>
     <Member MemberName="MaintainScrollPositionOnPostBack">
@@ -634,6 +642,7 @@ public partial class AutoEventWireupExample : System.Web.UI.Page
         <value>
           <see langword="true" /> if the page-scroll position should be maintained after postback; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.Page.IsPostBack" />
       </Docs>
     </Member>
     <Member MemberName="MasterPageFile">
@@ -748,6 +757,8 @@ public partial class AutoEventWireupExample : System.Web.UI.Page
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.NamespaceCollection" />
+        <altmember cref="T:System.Web.Configuration.NamespaceInfo" />
       </Docs>
     </Member>
     <Member MemberName="PageBaseType">
@@ -819,6 +830,7 @@ public partial class AutoEventWireupExample : System.Web.UI.Page
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.PageParserFilter" />
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -965,6 +977,7 @@ public partial class AutoEventWireupExample : System.Web.UI.Page
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Page.StyleSheetTheme" />
       </Docs>
     </Member>
     <Member MemberName="TagMapping">
@@ -1036,6 +1049,7 @@ public partial class AutoEventWireupExample : System.Web.UI.Page
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Page.Theme" />
       </Docs>
     </Member>
     <Member MemberName="UserControlBaseType">
@@ -1138,6 +1152,7 @@ public partial class AutoEventWireupExample : System.Web.UI.Page
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ViewStateEncryptionMode" />
       </Docs>
     </Member>
   </Members>

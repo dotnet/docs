@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "print queues, timing"
-  - "printers, availability"
-  - "print jobs, timing"
+  - "print queues [WPF], timing"
+  - "printers [WPF], availability"
+  - "print jobs [WPF], timing"
 ms.assetid: 7e9c8ec1-abf6-4b3d-b1c6-33b35d3c4063
 caps.latest.revision: 9
 author: dotnet-bot

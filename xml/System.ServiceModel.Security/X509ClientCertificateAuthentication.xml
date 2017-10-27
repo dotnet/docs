@@ -38,6 +38,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IdentityModel.Selectors.X509CertificateValidator" />
   </Docs>
   <Members>
     <Member MemberName="CertificateValidationMode">
@@ -138,6 +139,8 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">
           <see langword="set" /> when credential is read-only.</exception>
+        <altmember cref="P:System.ServiceModel.Security.X509ClientCertificateAuthentication.CertificateValidationMode" />
+        <altmember cref="T:System.IdentityModel.Selectors.X509CertificateValidator" />
       </Docs>
     </Member>
     <Member MemberName="IncludeWindowsGroups">

@@ -66,6 +66,8 @@
   
 -   Read permissions on all the configuration files.</para>
     </block>
+    <altmember cref="T:System.Configuration.Configuration" />
+    <altmember cref="T:System.Configuration.ConfigurationManager" />
   </Docs>
   <Members>
     <Member MemberName="AppSettings">
@@ -100,6 +102,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A valid <see cref="T:System.Collections.Specialized.NameValueCollection" /> object could not be retrieved with the application settings data.</exception>
+        <altmember cref="T:System.Configuration.AppSettingsSection" />
+        <altmember cref="T:System.Collections.Specialized.NameValueCollection" />
       </Docs>
     </Member>
     <Member MemberName="ConnectionStrings">
@@ -129,6 +133,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A valid <see cref="T:System.Configuration.ConnectionStringSettingsCollection" /> object could not be retrieved.</exception>
+        <altmember cref="T:System.Configuration.ConnectionStringsSection" />
+        <altmember cref="T:System.Configuration.ConnectionStringSettingsCollection" />
       </Docs>
     </Member>
     <Member MemberName="GetSection">
@@ -183,6 +189,7 @@
         <block subset="none" type="overrides">
           <para>The return value must be cast to the expected configuration type before use. To avoid possible casting exceptions, you should use a conditional casting operation like the <see langword="as" /> operator in C# or the  function in Visual Basic.</para>
         </block>
+        <altmember cref="T:System.Configuration.ConfigurationSection" />
       </Docs>
     </Member>
     <Member MemberName="GetSection">
@@ -240,6 +247,7 @@
         <block subset="none" type="overrides">
           <para>The return value must be cast to the expected configuration type before use. To avoid possible casting exceptions, you should use a conditional casting operation like the <see langword="as" /> operator in C# or the  function in Visual Basic.</para>
         </block>
+        <altmember cref="T:System.Configuration.ConfigurationSection" />
       </Docs>
     </Member>
     <Member MemberName="GetWebApplicationSection">
@@ -289,6 +297,7 @@
         <block subset="none" type="overrides">
           <para>The return value must be cast to the expected configuration type before use. To avoid possible casting exceptions, you should use a conditional casting operation like the <see langword="as" /> operator in C# or the  function in Visual Basic.</para>
         </block>
+        <altmember cref="T:System.Configuration.ConfigurationSection" />
       </Docs>
     </Member>
     <Member MemberName="OpenMachineConfiguration">
@@ -324,6 +333,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A valid configuration file could not be loaded.</exception>
+        <altmember cref="T:System.Configuration.Configuration" />
       </Docs>
     </Member>
     <Member MemberName="OpenMachineConfiguration">
@@ -362,6 +372,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A valid configuration file could not be loaded.</exception>
+        <altmember cref="T:System.Configuration.Configuration" />
       </Docs>
     </Member>
     <Member MemberName="OpenMachineConfiguration">
@@ -402,6 +413,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A valid configuration file could not be loaded.</exception>
+        <altmember cref="T:System.Configuration.Configuration" />
       </Docs>
     </Member>
     <Member MemberName="OpenMachineConfiguration">
@@ -448,6 +460,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">Valid values were not supplied for the <paramref name="server" /> or <paramref name="userToken" /> parameters.</exception>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A valid configuration file could not be loaded.</exception>
+        <altmember cref="T:System.Configuration.Configuration" />
+        <altmember cref="T:System.Security.Principal.WindowsIdentity" />
       </Docs>
     </Member>
     <Member MemberName="OpenMachineConfiguration">
@@ -493,6 +507,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="server" /> or <paramref name="userName" /> and <paramref name="password" /> parameters were invalid.</exception>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A valid configuration file could not be loaded.</exception>
+        <altmember cref="T:System.Configuration.Configuration" />
       </Docs>
     </Member>
     <Member MemberName="OpenMappedMachineConfiguration">
@@ -516,6 +531,8 @@
         <returns>A <see cref="T:System.Configuration.Configuration" /> object.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A valid configuration file could not be loaded.</exception>
+        <altmember cref="T:System.Web.Configuration.VirtualDirectoryMapping" />
+        <altmember cref="T:System.Web.Configuration.VirtualDirectoryMappingCollection" />
       </Docs>
     </Member>
     <Member MemberName="OpenMappedMachineConfiguration">
@@ -541,6 +558,8 @@
         <returns>A <see cref="T:System.Configuration.Configuration" /> object.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A valid configuration file could not be loaded.</exception>
+        <altmember cref="T:System.Web.Configuration.VirtualDirectoryMapping" />
+        <altmember cref="T:System.Web.Configuration.VirtualDirectoryMappingCollection" />
       </Docs>
     </Member>
     <MemberGroup MemberName="OpenMappedWebConfiguration">
@@ -566,6 +585,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.VirtualDirectoryMapping" />
+        <altmember cref="T:System.Web.Configuration.VirtualDirectoryMappingCollection" />
       </Docs>
     </MemberGroup>
     <Member MemberName="OpenMappedWebConfiguration">
@@ -613,6 +634,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A valid configuration file could not be loaded.</exception>
+        <altmember cref="T:System.Web.Configuration.VirtualDirectoryMapping" />
+        <altmember cref="T:System.Web.Configuration.VirtualDirectoryMappingCollection" />
       </Docs>
     </Member>
     <Member MemberName="OpenMappedWebConfiguration">
@@ -657,6 +680,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A valid configuration file could not be loaded.</exception>
+        <altmember cref="T:System.Web.Configuration.VirtualDirectoryMapping" />
+        <altmember cref="T:System.Web.Configuration.VirtualDirectoryMappingCollection" />
       </Docs>
     </Member>
     <Member MemberName="OpenMappedWebConfiguration">
@@ -703,6 +728,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A valid configuration file could not be loaded.</exception>
+        <altmember cref="T:System.Web.Configuration.VirtualDirectoryMapping" />
+        <altmember cref="T:System.Web.Configuration.VirtualDirectoryMappingCollection" />
       </Docs>
     </Member>
     <Member MemberName="OpenWebConfiguration">
@@ -741,6 +768,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A valid configuration file could not be loaded.</exception>
+        <altmember cref="T:System.Configuration.Configuration" />
       </Docs>
     </Member>
     <Member MemberName="OpenWebConfiguration">
@@ -781,6 +809,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A valid configuration file could not be loaded.</exception>
+        <altmember cref="T:System.Configuration.Configuration" />
       </Docs>
     </Member>
     <Member MemberName="OpenWebConfiguration">
@@ -823,6 +852,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A valid configuration file could not be loaded.</exception>
+        <altmember cref="T:System.Configuration.Configuration" />
       </Docs>
     </Member>
     <Member MemberName="OpenWebConfiguration">
@@ -868,6 +898,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The server parameter was invalid.</exception>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A valid configuration file could not be loaded.</exception>
+        <altmember cref="T:System.Configuration.Configuration" />
       </Docs>
     </Member>
     <Member MemberName="OpenWebConfiguration">
@@ -920,6 +951,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="server" /> or <paramref name="userToken" /> parameters were invalid.</exception>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A valid configuration file could not be loaded.</exception>
+        <altmember cref="T:System.Configuration.Configuration" />
+        <altmember cref="T:System.Security.Principal.WindowsIdentity" />
       </Docs>
     </Member>
     <Member MemberName="OpenWebConfiguration">
@@ -973,7 +1006,50 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="server" /> or <paramref name="userName" /> and <paramref name="password" /> parameters were invalid.</exception>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">Could not load a valid configuration file.</exception>
+        <altmember cref="T:System.Configuration.Configuration" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="OpenWebConfiguration">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens the Web-application configuration file as a <see cref="T:System.Configuration.Configuration" /> object.</summary>
+        <altmember cref="T:System.Web.Configuration.VirtualDirectoryMapping" />
+        <altmember cref="T:System.Web.Configuration.VirtualDirectoryMappingCollection" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetSection">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the specified configuration section from the current Web application's default configuration file.</summary>
+        <altmember cref="T:System.Configuration.Configuration" />
+        <altmember cref="T:System.Configuration.ConfigurationManager" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OpenMappedMachineConfiguration">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens the machine-configuration file as a <see cref="T:System.Configuration.Configuration" /> object to allow read or write operations.</summary>
+        <altmember cref="T:System.Configuration.Configuration" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OpenMachineConfiguration">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens the machine-configuration file as a <see cref="T:System.Configuration.Configuration" /> object to allow read or write operations.</summary>
+        <altmember cref="T:System.Configuration.ConfigurationSection" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

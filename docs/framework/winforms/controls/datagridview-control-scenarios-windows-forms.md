@@ -11,7 +11,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "data [Windows Forms], displaying in tabular format"
-  - "data grids, about data grids"
+  - "data grids [Windows Forms], about data grids"
   - "DataGridView control [Windows Forms], scenarios"
 ms.assetid: 09a5fd05-3447-47ec-a4ec-6082a2b7f0dd
 caps.latest.revision: 9

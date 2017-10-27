@@ -11,7 +11,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "examples [Windows Forms], brushes"
-  - "shapes, filling"
+  - "shapes [Windows Forms], filling"
   - "brushes"
 ms.assetid: bf8f7fff-5a90-41e8-9051-494449fb2844
 caps.latest.revision: 14

@@ -21,6 +21,8 @@
     <summary>Specifies the state of source code text. This class is used together with other classes that provide information to color JScript code in an editor.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.IColorizeText" />
+    <altmember cref="T:Microsoft.JScript.JSAuthor" />
   </Docs>
   <Members>
     <Member MemberName="STATE_COLOR_COMMENT">

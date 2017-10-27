@@ -23,6 +23,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Security.RightsManagement.RightsManagementFailureCode" />
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -144,6 +145,7 @@
         <param name="context">The contextual information about the source or destination.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.RightsManagement.RightsManagementException" /> class and sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> store with information about the exception.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Security.RightsManagement.RightsManagementException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -323,6 +325,7 @@
         <summary>Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> store with the parameter name and information about the exception.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="M:System.Security.RightsManagement.RightsManagementException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       </Docs>
     </Member>
   </Members>

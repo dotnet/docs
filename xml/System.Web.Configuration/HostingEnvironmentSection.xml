@@ -41,6 +41,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.ConfigurationSection" />
+    <altmember cref="T:System.Web.Hosting.HostingEnvironment" />
+    <altmember cref="P:System.Web.Configuration.HostingEnvironmentSection.IdleTimeout" />
+    <altmember cref="P:System.Web.Configuration.HostingEnvironmentSection.ShutdownTimeout" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

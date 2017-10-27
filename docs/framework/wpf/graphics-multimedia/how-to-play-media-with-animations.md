@@ -10,10 +10,10 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "multimedia, playback with animations"
-  - "playback of media, with animations"
-  - "animation, media playback with"
-  - "media, playback with animations"
+  - "multimedia [WPF], playback with animations"
+  - "playback of media [WPF], with animations"
+  - "animation [WPF], media playback with"
+  - "media [WPF], playback with animations"
 ms.assetid: 8982b7b7-1c6c-4b24-8801-b328862975f5
 caps.latest.revision: 10
 author: dotnet-bot

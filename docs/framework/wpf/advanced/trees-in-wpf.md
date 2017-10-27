@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "logical tree"
-  - "element tree"
-  - "visual tree"
+  - "logical tree [WPF]"
+  - "element tree [WPF]"
+  - "visual tree [WPF]"
 ms.assetid: e83f25e5-d66b-4fc7-92d2-50130c9a6649
 caps.latest.revision: 20
 author: dotnet-bot

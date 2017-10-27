@@ -7,14 +7,14 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "times, CStr Function return values"
-  - "type conversion"
+  - "times [Visual Basic], CStr Function return values"
+  - "type conversion [Visual Basic]"
   - "dates [Visual Basic], CStr Function return values"
   - "CStr function"
   - "strings [Visual Basic], return value"
-  - "Date data type, converting"
+  - "Date data type [Visual Basic], converting"
   - "dates [Visual Basic]"
-  - "String data type, converting"
+  - "String data type [Visual Basic], converting"
 ms.assetid: 3aa744e7-1419-45d5-85e3-e5abc2953673
 caps.latest.revision: 14
 author: dotnet-bot

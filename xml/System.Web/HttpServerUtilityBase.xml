@@ -823,5 +823,77 @@
         <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="HtmlEncode">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, HTML-encodes a string.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="HtmlDecode">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, decodes an HTML-encoded string.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Execute">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, executes the handler for a specified resource in the context of the current request and returns execution to the process that invoked it.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="UrlDecode">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, decodes a string that was encoded to include only characters that are valid in a URL.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Transfer">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, terminates execution of the current process and starts execution of a different process for the current request.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TransferRequest">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, asynchronously executes the end point at the specified URL.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateObject">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, creates a server instance of a COM object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="UrlEncode">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, encodes a string to include only characters that are valid in a URL.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

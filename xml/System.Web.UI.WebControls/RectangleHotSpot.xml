@@ -30,6 +30,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ImageMap" />
+    <altmember cref="P:System.Web.UI.WebControls.HotSpot.HotSpotMode" />
+    <altmember cref="P:System.Web.UI.WebControls.RectangleHotSpot.Left" />
+    <altmember cref="P:System.Web.UI.WebControls.RectangleHotSpot.Top" />
+    <altmember cref="P:System.Web.UI.WebControls.RectangleHotSpot.Right" />
+    <altmember cref="P:System.Web.UI.WebControls.RectangleHotSpot.Bottom" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -98,6 +104,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.RectangleHotSpot.Left" />
+        <altmember cref="P:System.Web.UI.WebControls.RectangleHotSpot.Top" />
+        <altmember cref="P:System.Web.UI.WebControls.RectangleHotSpot.Right" />
       </Docs>
     </Member>
     <Member MemberName="GetCoordinates">
@@ -134,6 +143,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.RectangleHotSpot.Left" />
+        <altmember cref="P:System.Web.UI.WebControls.RectangleHotSpot.Top" />
+        <altmember cref="P:System.Web.UI.WebControls.RectangleHotSpot.Right" />
+        <altmember cref="P:System.Web.UI.WebControls.RectangleHotSpot.Bottom" />
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -172,6 +185,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.RectangleHotSpot.Top" />
+        <altmember cref="P:System.Web.UI.WebControls.RectangleHotSpot.Right" />
+        <altmember cref="P:System.Web.UI.WebControls.RectangleHotSpot.Bottom" />
       </Docs>
     </Member>
     <Member MemberName="MarkupName">
@@ -228,6 +244,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.RectangleHotSpot.Left" />
+        <altmember cref="P:System.Web.UI.WebControls.RectangleHotSpot.Top" />
+        <altmember cref="P:System.Web.UI.WebControls.RectangleHotSpot.Bottom" />
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -266,6 +285,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.RectangleHotSpot.Left" />
+        <altmember cref="P:System.Web.UI.WebControls.RectangleHotSpot.Right" />
+        <altmember cref="P:System.Web.UI.WebControls.RectangleHotSpot.Bottom" />
       </Docs>
     </Member>
   </Members>

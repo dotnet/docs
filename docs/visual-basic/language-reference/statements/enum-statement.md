@@ -10,12 +10,12 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.Enum"
 helpviewer_keywords: 
-  - "enumerated constants"
-  - "Enum statement"
-  - "Private keyword, Enum statements"
-  - "Public keyword, in Enum statement"
+  - "enumerated constants [Visual Basic]"
+  - "Enum statement [Visual Basic]"
+  - "Private keyword [Visual Basic], Enum statements"
+  - "Public keyword [Visual Basic], in Enum statement"
   - "variables [Visual Basic], enumeration"
-  - "constants, enumerated"
+  - "constants [Visual Basic], enumerated"
 ms.assetid: a45e51f1-65ff-48e1-bf32-79130f137377
 caps.latest.revision: 44
 author: dotnet-bot

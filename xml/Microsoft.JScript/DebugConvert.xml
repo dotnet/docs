@@ -29,6 +29,8 @@
     <summary>Converts data from one type to another. Includes methods that convert values to <see cref="T:System.String" /> objects so that they can be displayed by the debugger.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.Convert" />
+    <altmember cref="T:System.Convert" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -45,6 +47,8 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.DebugConvert" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.Convert" />
+        <altmember cref="T:System.Convert" />
       </Docs>
     </Member>
     <Member MemberName="BooleanToString">
@@ -68,6 +72,8 @@
         <returns>The literal string "true" or the literal string "false".</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.Convert" />
+        <altmember cref="T:System.Convert" />
       </Docs>
     </Member>
     <Member MemberName="ByteToString">
@@ -93,6 +99,8 @@
         <returns>The string representation of <paramref name="value" /> in base <paramref name="radix" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.Convert" />
+        <altmember cref="T:System.Convert" />
       </Docs>
     </Member>
     <Member MemberName="DecimalToString">
@@ -116,6 +124,8 @@
         <returns>The string representation of <paramref name="value" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.Convert" />
+        <altmember cref="T:System.Convert" />
       </Docs>
     </Member>
     <Member MemberName="DoubleToDateString">
@@ -139,6 +149,9 @@
         <returns>The string representation of <paramref name="value" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.Convert" />
+        <altmember cref="T:System.Convert" />
+        <altmember cref="T:Microsoft.JScript.DatePrototype" />
       </Docs>
     </Member>
     <Member MemberName="DoubleToString">
@@ -162,6 +175,8 @@
         <returns>The string representation of <paramref name="value" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.Convert" />
+        <altmember cref="T:System.Convert" />
       </Docs>
     </Member>
     <Member MemberName="GetErrorMessageForHR">
@@ -187,6 +202,8 @@
         <returns>A localized string that contains information about the error.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.Convert" />
+        <altmember cref="T:System.Convert" />
       </Docs>
     </Member>
     <Member MemberName="GetManagedCharObject">
@@ -211,6 +228,8 @@
           <paramref name="i" /> converted to a <see cref="T:System.Char" /> and then an <see cref="T:System.Object" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.Convert" />
+        <altmember cref="T:System.Convert" />
       </Docs>
     </Member>
     <Member MemberName="GetManagedInt64Object">
@@ -235,6 +254,8 @@
           <paramref name="i" /> converted to an <see cref="T:System.Object" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.Convert" />
+        <altmember cref="T:System.Convert" />
       </Docs>
     </Member>
     <Member MemberName="GetManagedObject">
@@ -259,6 +280,8 @@
           <paramref name="value" /> converted to a managed <see cref="T:System.Object" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.Convert" />
+        <altmember cref="T:System.Convert" />
       </Docs>
     </Member>
     <Member MemberName="GetManagedUInt64Object">
@@ -283,6 +306,8 @@
           <paramref name="i" /> converted to an <see cref="T:System.Object" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.Convert" />
+        <altmember cref="T:System.Convert" />
       </Docs>
     </Member>
     <Member MemberName="Int16ToString">
@@ -308,6 +333,8 @@
         <returns>The string representation of <paramref name="value" /> in base <paramref name="radix" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.Convert" />
+        <altmember cref="T:System.Convert" />
       </Docs>
     </Member>
     <Member MemberName="Int32ToString">
@@ -333,6 +360,8 @@
         <returns>The string representation of <paramref name="value" /> in base <paramref name="radix" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.Convert" />
+        <altmember cref="T:System.Convert" />
       </Docs>
     </Member>
     <Member MemberName="Int64ToString">
@@ -358,6 +387,8 @@
         <returns>The string representation of <paramref name="value" /> in base <paramref name="radix" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.Convert" />
+        <altmember cref="T:System.Convert" />
       </Docs>
     </Member>
     <Member MemberName="RegexpToString">
@@ -390,6 +421,9 @@
         <returns>The string representation of the regular expression information.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.Convert" />
+        <altmember cref="T:System.Convert" />
+        <altmember cref="T:Microsoft.JScript.RegExpConstructor" />
       </Docs>
     </Member>
     <Member MemberName="SByteToString">
@@ -415,6 +449,8 @@
         <returns>The string representation of <paramref name="value" /> in base <paramref name="radix" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.Convert" />
+        <altmember cref="T:System.Convert" />
       </Docs>
     </Member>
     <Member MemberName="SingleToString">
@@ -438,6 +474,8 @@
         <returns>The string representation of <paramref name="value" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.Convert" />
+        <altmember cref="T:System.Convert" />
       </Docs>
     </Member>
     <Member MemberName="StringToPrintable">
@@ -461,6 +499,8 @@
         <returns>The string representation of <paramref name="source" /> that contains escape characters.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.Convert" />
+        <altmember cref="T:System.Convert" />
       </Docs>
     </Member>
     <Member MemberName="ToPrimitive">
@@ -490,6 +530,8 @@
           <paramref name="value" /> converted to the <paramref name="typeCode" /> type.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.Convert" />
+        <altmember cref="T:System.Convert" />
       </Docs>
     </Member>
     <Member MemberName="UInt16ToString">
@@ -515,6 +557,8 @@
         <returns>The string representation of <paramref name="value" /> in base <paramref name="radix" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.Convert" />
+        <altmember cref="T:System.Convert" />
       </Docs>
     </Member>
     <Member MemberName="UInt32ToString">
@@ -540,6 +584,8 @@
         <returns>The string representation of <paramref name="value" /> in base <paramref name="radix" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.Convert" />
+        <altmember cref="T:System.Convert" />
       </Docs>
     </Member>
     <Member MemberName="UInt64ToString">
@@ -565,6 +611,8 @@
         <returns>The string representation of <paramref name="value" /> in base <paramref name="radix" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.Convert" />
+        <altmember cref="T:System.Convert" />
       </Docs>
     </Member>
   </Members>

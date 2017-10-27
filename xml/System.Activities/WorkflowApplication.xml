@@ -3520,5 +3520,131 @@ Workflow 2897d2ef-377e-4224-ae93-5c19b38f487c unloaded.
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Terminate">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Terminates a workflow instance.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateDefaultInstanceOwner">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a default instance owner for the workflow.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetRunnableInstance">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the runnable instance of the workflow.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetBookmarks">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the collection of bookmarks for the workflow instance.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.WorkflowApplication" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ResumeBookmark">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initiates an operation to resume a bookmark.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginResumeBookmark">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initiates an asynchronous operation to resume a bookmark.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginGetInstance">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves an instance owner asynchronously using the <see cref="T:System.IAsyncResult" /> asynchronous design pattern.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Load">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads a workflow instance from an instance store.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DeleteDefaultInstanceOwner">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Deletes a default instance owner for the workflow.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginDeleteDefaultInstanceOwner">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Deletes a default instance owner asynchronously using the <see cref="T:System.IAsyncResult" /> asynchronous design pattern.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetInstance">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the workflow instance.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginCreateDefaultInstanceOwner">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a default instance owner asynchronously using the <see cref="T:System.IAsyncResult" /> asynchronous design pattern.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginGetRunnableInstance">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves a runnable instance owner asynchronously using the <see cref="T:System.IAsyncResult" /> asynchronous design pattern.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

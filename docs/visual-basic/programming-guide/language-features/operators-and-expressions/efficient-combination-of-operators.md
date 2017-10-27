@@ -17,7 +17,7 @@ helpviewer_keywords:
   - "Visual Basic code, expressions"
   - "operators [Visual Basic], complex expressions"
   - "expressions [Visual Basic], complex"
-  - "parentheses, complex expressions"
+  - "parentheses [Visual Basic], complex expressions"
   - "numeric expressions"
 ms.assetid: bd22340e-b5be-458b-8772-3916c02309a4
 caps.latest.revision: 12

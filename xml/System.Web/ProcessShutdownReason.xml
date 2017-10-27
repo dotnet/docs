@@ -12,6 +12,8 @@
   <Docs>
     <summary>Provides enumerated values that indicate why a process has shut down.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="P:System.Web.ProcessInfo.ShutdownReason" />
+    <altmember cref="T:System.Web.ProcessInfo" />
   </Docs>
   <Members>
     <Member MemberName="DeadlockSuspected">

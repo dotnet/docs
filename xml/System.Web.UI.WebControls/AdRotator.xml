@@ -182,6 +182,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.AdCreatedEventArgs" />
+    <altmember cref="T:System.Web.UI.WebControls.AdCreatedEventHandler" />
+    <altmember cref="P:System.Web.UI.WebControls.AdRotator.AdvertisementFile" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -215,6 +218,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.Controls" />
+        <altmember cref="T:System.Web.UI.WebControls.Literal" />
       </Docs>
     </Member>
     <Member MemberName="AdCreated">
@@ -290,6 +295,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.AdRotator.OnAdCreated(System.Web.UI.WebControls.AdCreatedEventArgs)" />
+        <altmember cref="T:System.Web.UI.WebControls.AdCreatedEventHandler" />
+        <altmember cref="T:System.Web.UI.WebControls.AdCreatedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="AdvertisementFile">
@@ -393,6 +401,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.AdRotator.AdCreated" />
+        <altmember cref="T:System.Web.UI.WebControls.AdCreatedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="AlternateTextField">
@@ -462,6 +472,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.AdCreatedEventArgs.AlternateText" />
+        <altmember cref="P:System.Web.UI.WebControls.AdRotator.AdvertisementFile" />
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -561,6 +573,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.AdCreatedEventArgs.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.AdRotator.AdvertisementFile" />
       </Docs>
     </Member>
     <Member MemberName="KeywordFilter">
@@ -637,6 +651,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.AdRotator.AdvertisementFile" />
       </Docs>
     </Member>
     <Member MemberName="NavigateUrlField">
@@ -706,6 +721,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.AdCreatedEventArgs.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.AdRotator.AdvertisementFile" />
       </Docs>
     </Member>
     <Member MemberName="OnAdCreated">
@@ -777,6 +794,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.AdRotator.OnAdCreated(System.Web.UI.WebControls.AdCreatedEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.AdRotator.OnAdCreated(System.Web.UI.WebControls.AdCreatedEventArgs)" /> method.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.AdRotator.AdCreated" />
+        <altmember cref="T:System.Web.UI.WebControls.AdCreatedEventHandler" />
+        <altmember cref="T:System.Web.UI.WebControls.AdCreatedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -831,6 +851,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.AdRotator.AdvertisementFile" />
       </Docs>
     </Member>
     <Member MemberName="PerformDataBinding">
@@ -861,6 +882,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.AdRotator.PerformSelect" />
+        <altmember cref="M:System.Web.UI.Control.OnDataBinding(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="PerformSelect">
@@ -928,6 +951,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
+        <altmember cref="M:System.Web.UI.WebControls.AdRotator.OnPreRender(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="TagKey">
@@ -951,7 +976,7 @@
 ## Remarks  
  This property is used primarily by control developers.  
   
- Use the <xref:System.Web.UI.WebControls.AdRotator.TagKey%2A> property to determine the <xref:System.Web.UI.HtmlTextWriterTag> value associated with an <xref:System.Web.UI.WebControls.AdRotator> control. This property overrides the base implementation to always return <xref:System.Web.UI.HtmlTextWriterTag?displayProperty=nameWithType>.  
+ Use the <xref:System.Web.UI.WebControls.AdRotator.TagKey%2A> property to determine the <xref:System.Web.UI.HtmlTextWriterTag> value associated with an <xref:System.Web.UI.WebControls.AdRotator> control. This property overrides the base implementation to always return <xref:System.Web.UI.HtmlTextWriterTag.A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1042,6 +1067,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.AdRotator.AdvertisementFile" />
       </Docs>
     </Member>
     <Member MemberName="UniqueID">
@@ -1067,6 +1093,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.UniqueID" />
+        <altmember cref="P:System.Web.UI.Control.NamingContainer" />
       </Docs>
     </Member>
   </Members>

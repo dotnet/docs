@@ -100,7 +100,7 @@
  When concatenating large strings or performing a large number of concatenation operations, you should use the <xref:System.Text.StringBuilder> class instead of the <xref:System.String> class. When you have finished manipulating the string, convert the <xref:System.Text.StringBuilder> instance to a string by calling the <xref:System.Text.StringBuilder.ToString%2A?displayProperty=nameWithType> method.  
   
  You pin a large number of objects in memory.  
- Pinning a large number of objects in memory for long periods can make it difficult for the garbage collector to allocate contiguous blocks of memory. If you've pinned a large number of objects in memory, for example by using the `fixed` statement in C# or by calling the <xref:System.Runtime.InteropServices.GCHandle.Alloc%28System.Object%2CSystem.Runtime.InteropServices.GCHandleType%29?displayProperty=nameWithType> method with a handle type of <xref:System.Runtime.InteropServices.GCHandleType?displayProperty=nameWithType>, you can do the following to address the <xref:System.OutOfMemoryException> exception.  
+ Pinning a large number of objects in memory for long periods can make it difficult for the garbage collector to allocate contiguous blocks of memory. If you've pinned a large number of objects in memory, for example by using the `fixed` statement in C# or by calling the <xref:System.Runtime.InteropServices.GCHandle.Alloc%28System.Object%2CSystem.Runtime.InteropServices.GCHandleType%29?displayProperty=nameWithType> method with a handle type of <xref:System.Runtime.InteropServices.GCHandleType.Pinned?displayProperty=nameWithType>, you can do the following to address the <xref:System.OutOfMemoryException> exception.  
   
 -   Evaluate whether each object really needs to be pinned,  
   
@@ -125,6 +125,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Exception" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -295,7 +296,21 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Exception" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.OutOfMemoryException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

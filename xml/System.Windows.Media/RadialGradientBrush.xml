@@ -31,6 +31,9 @@ Radial gradient with a highlighted focal point
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.GradientStop" />
+    <altmember cref="T:System.Windows.Media.GradientBrush" />
+    <altmember cref="T:System.Windows.Media.LinearGradientBrush" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -109,6 +112,9 @@ Radial gradient with a highlighted focal point
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.GradientStop" />
+        <altmember cref="T:System.Windows.Media.GradientBrush" />
+        <altmember cref="T:System.Windows.Media.LinearGradientBrush" />
       </Docs>
     </Member>
     <Member MemberName="CenterProperty">
@@ -219,6 +225,9 @@ Radial gradient with a highlighted focal point
         <summary>Gets or sets the location of the two-dimensional focal point that defines the beginning of the gradient.</summary>
         <value>The location of the two-dimensional focal point of the gradient. The default is (0.5, 0.5).</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.GradientStop" />
+        <altmember cref="T:System.Windows.Media.GradientBrush" />
+        <altmember cref="T:System.Windows.Media.LinearGradientBrush" />
       </Docs>
     </Member>
     <Member MemberName="GradientOriginProperty">
@@ -254,6 +263,9 @@ Radial gradient with a highlighted focal point
         <summary>Gets or sets the horizontal radius of the outermost circle of the radial gradient.</summary>
         <value>The horizontal radius of the outermost circle of the radial gradient. The default is 0.5.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.GradientStop" />
+        <altmember cref="T:System.Windows.Media.GradientBrush" />
+        <altmember cref="T:System.Windows.Media.LinearGradientBrush" />
       </Docs>
     </Member>
     <Member MemberName="RadiusXProperty">
@@ -289,6 +301,9 @@ Radial gradient with a highlighted focal point
         <summary>Gets or sets the vertical radius of the outermost circle of a radial gradient.</summary>
         <value>The vertical radius of the outermost circle of a radial gradient. The default is 0.5.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.GradientStop" />
+        <altmember cref="T:System.Windows.Media.GradientBrush" />
+        <altmember cref="T:System.Windows.Media.LinearGradientBrush" />
       </Docs>
     </Member>
     <Member MemberName="RadiusYProperty">
@@ -308,5 +323,14 @@ Radial gradient with a highlighted focal point
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.RadialGradientBrush" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

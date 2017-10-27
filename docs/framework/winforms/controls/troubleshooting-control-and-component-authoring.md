@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "troubleshooting components"
-  - "troubleshooting controls"
+  - "troubleshooting controls [Windows Forms]"
   - "controls [Windows Forms], troubleshooting"
   - "components [Windows Forms], troubleshooting"
   - "Windows Forms controls, debugging"

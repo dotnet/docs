@@ -10,8 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "multimedia"
-  - "media"
+  - "multimedia [WPF]"
+  - "media [WPF]"
 ms.assetid: feb25b15-d741-4ac3-818f-1b19f63a3562
 caps.latest.revision: 19
 author: dotnet-bot

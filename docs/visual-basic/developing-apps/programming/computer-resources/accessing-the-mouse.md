@@ -9,8 +9,8 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "My.Computer.Mouse object, tasks"
-  - "mouse, accessing [Visual Basic]"
+  - "My.Computer.Mouse object [Visual Basic], tasks"
+  - "mouse [Visual Basic], accessing [Visual Basic]"
 ms.assetid: 6d31a3d2-d860-459d-9d13-3aa192d62ba2
 caps.latest.revision: 9
 author: dotnet-bot

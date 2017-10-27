@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "resources [WPF], packaging string resources"
-  - "packaging string resources"
+  - "packaging string resources [WPF]"
   - "ResourceDictionary [WPF]"
   - "localization [WPF], packaging string resources"
 ms.assetid: 19e7d9a5-20df-4ad3-b157-fe6515902e5e

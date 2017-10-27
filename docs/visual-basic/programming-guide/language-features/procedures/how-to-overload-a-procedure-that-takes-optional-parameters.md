@@ -9,13 +9,13 @@ ms.technology:
   - "devlang-visual-basic"
 ms.topic: "article"
 helpviewer_keywords: 
-  - "procedures, parameters"
-  - "procedure overloading, optional parameters"
-  - "procedures, defining"
+  - "procedures [Visual Basic], parameters"
+  - "procedure overloading [Visual Basic], optional parameters"
+  - "procedures [Visual Basic], defining"
   - "Visual Basic code, procedures"
   - "procedure parameters"
-  - "procedures, overloading"
-  - "procedures, multiple versions"
+  - "procedures [Visual Basic], overloading"
+  - "procedures [Visual Basic], multiple versions"
 ms.assetid: 825f9d56-4cde-43fd-993a-b9171717e2eb
 caps.latest.revision: 17
 author: dotnet-bot

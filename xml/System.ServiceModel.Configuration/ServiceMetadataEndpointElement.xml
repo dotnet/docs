@@ -158,5 +158,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="OnApplyConfiguration">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Not implemented.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OnInitializeAndValidate">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes and verifies the format of a specified service or channel endpoint element and configures it to include metadata exchange content.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -47,6 +47,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.Animation.BooleanKeyFrame" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -160,6 +161,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Freezable.CloneCurrentValue" />
       </Docs>
     </Member>
     <Member MemberName="CloneCurrentValueCore">
@@ -190,6 +192,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Freezable.CloneCurrentValue" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -222,6 +225,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Freezable" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -282,6 +286,7 @@
         <summary>Creates a new, frozen instance of <see cref="T:System.Windows.Media.Animation.BooleanKeyFrameCollection" />.</summary>
         <returns>A frozen instance of <see cref="T:System.Windows.Media.Animation.BooleanKeyFrameCollection" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Freezable.CreateInstanceCore" />
       </Docs>
     </Member>
     <Member MemberName="Empty">
@@ -355,6 +360,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Freezable.CloneCurrentValue" />
       </Docs>
     </Member>
     <Member MemberName="GetCurrentValueAsFrozenCore">
@@ -385,6 +391,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Freezable.CloneCurrentValue" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -454,6 +461,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Freezable" />
       </Docs>
     </Member>
     <Member MemberName="Insert">

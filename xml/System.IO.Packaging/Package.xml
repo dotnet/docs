@@ -71,6 +71,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IO.Packaging.PackagePart" />
+    <altmember cref="T:System.Windows.Xps.Packaging.XpsDocument" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -102,6 +104,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value for <paramref name="openFileAccess" /> is not valid.</exception>
+        <altmember cref="P:System.IO.Packaging.Package.FileOpenAccess" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -131,6 +134,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value for <paramref name="openFileAccess" /> is not valid.</exception>
+        <altmember cref="P:System.IO.Packaging.Package.FileOpenAccess" />
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -166,6 +170,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.Packaging.PackagePart" />
+        <altmember cref="T:System.IO.Packaging.PackageRelationship" />
       </Docs>
     </Member>
     <MemberGroup MemberName="CreatePart">
@@ -231,7 +237,7 @@
 ## Remarks  
  <xref:System.IO.Packaging.Package.CreatePart%2A> initializes an empty <xref:System.IO.Stream> for the new part.  The <xref:System.IO.Packaging.PackagePart.GetStream%2A?displayProperty=nameWithType> method can be used to obtain a reference to the stream instance associated with the part.  
   
- The part <xref:System.IO.Packaging.PackagePart.CompressionOption%2A> is <xref:System.IO.Packaging.CompressionOption?displayProperty=nameWithType>.  
+ The part <xref:System.IO.Packaging.PackagePart.CompressionOption%2A> is <xref:System.IO.Packaging.CompressionOption.NotCompressed?displayProperty=nameWithType>.  
   
  For additional information about package parts, see section 1.1 in the Open Packaging Conventions (OPC) specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](http://go.microsoft.com/fwlink/?LinkID=71255).  
   
@@ -256,6 +262,11 @@
           <para>
             <see cref="M:System.IO.Packaging.Package.CreatePart(System.Uri,System.String)" /> internally calls the derived class's <see cref="M:System.IO.Packaging.Package.CreatePartCore(System.Uri,System.String,System.IO.Packaging.CompressionOption)" /> method to actually create the part based on the physical format implemented in the derived class.</para>
         </block>
+        <altmember cref="M:System.IO.Packaging.Package.DeletePart(System.Uri)" />
+        <altmember cref="M:System.IO.Packaging.PackUriHelper.CreatePartUri(System.Uri)" />
+        <altmember cref="M:System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)" />
+        <altmember cref="M:System.IO.Packaging.PackUriHelper.ResolvePartUri(System.Uri,System.Uri)" />
+        <altmember cref="T:System.IO.Packaging.ZipPackagePart" />
       </Docs>
     </Member>
     <Member MemberName="CreatePart">
@@ -318,6 +329,11 @@
           <para>
             <see cref="M:System.IO.Packaging.Package.CreatePart(System.Uri,System.String,System.IO.Packaging.CompressionOption)" /> internally calls the derived class's <see cref="M:System.IO.Packaging.Package.CreatePartCore(System.Uri,System.String,System.IO.Packaging.CompressionOption)" /> method to actually create the part based on the physical format implemented in the derived class.</para>
         </block>
+        <altmember cref="M:System.IO.Packaging.Package.DeletePart(System.Uri)" />
+        <altmember cref="M:System.IO.Packaging.PackUriHelper.CreatePartUri(System.Uri)" />
+        <altmember cref="M:System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)" />
+        <altmember cref="M:System.IO.Packaging.PackUriHelper.ResolvePartUri(System.Uri,System.Uri)" />
+        <altmember cref="T:System.IO.Packaging.ZipPackagePart" />
       </Docs>
     </Member>
     <Member MemberName="CreatePartCore">
@@ -365,6 +381,7 @@
         <block subset="none" type="overrides">
           <para>The derived <see cref="M:System.IO.Packaging.Package.CreatePartCore(System.Uri,System.String,System.IO.Packaging.CompressionOption)" /> implementation should make no assumptions about the order or operations performed by the <see cref="Overload:System.IO.Packaging.Package.CreatePart" /> method that calls it.</para>
         </block>
+        <altmember cref="M:System.IO.Packaging.Package.DeletePartCore(System.Uri)" />
       </Docs>
     </Member>
     <MemberGroup MemberName="CreateRelationship">
@@ -476,6 +493,11 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The value for <paramref name="targetMode" /> is not valid.</exception>
         <exception cref="T:System.ObjectDisposedException">The package is not open (<see cref="M:System.IO.Packaging.Package.Dispose(System.Boolean)" /> or <see cref="M:System.IO.Packaging.Package.Close" /> has been called).</exception>
         <exception cref="T:System.IO.IOException">The package is read-only.</exception>
+        <altmember cref="M:System.IO.Packaging.Package.DeleteRelationship(System.String)" />
+        <altmember cref="M:System.IO.Packaging.Package.GetRelationship(System.String)" />
+        <altmember cref="M:System.IO.Packaging.Package.GetRelationships" />
+        <altmember cref="M:System.IO.Packaging.Package.GetRelationshipsByType(System.String)" />
+        <altmember cref="M:System.IO.Packaging.Package.RelationshipExists(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CreateRelationship">
@@ -562,6 +584,12 @@
         <exception cref="T:System.IO.IOException">The package is read-only.</exception>
         <exception cref="T:System.Xml.XmlException">
           <paramref name="id" /> is not a valid XML identifier; or a part with the specified <paramref name="id" /> already occurs in the package.</exception>
+        <altmember cref="M:System.IO.Packaging.Package.CreateRelationship(System.Uri,System.IO.Packaging.TargetMode,System.String)" />
+        <altmember cref="M:System.IO.Packaging.Package.DeleteRelationship(System.String)" />
+        <altmember cref="M:System.IO.Packaging.Package.GetRelationship(System.String)" />
+        <altmember cref="M:System.IO.Packaging.Package.GetRelationships" />
+        <altmember cref="M:System.IO.Packaging.Package.GetRelationshipsByType(System.String)" />
+        <altmember cref="M:System.IO.Packaging.Package.RelationshipExists(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="DeletePart">
@@ -609,6 +637,10 @@
           <para>
             <see cref="M:System.IO.Packaging.Package.DeletePart(System.Uri)" /> internally calls the derived class's <see cref="M:System.IO.Packaging.Package.DeletePartCore(System.Uri)" /> method to actually delete the part based on the physical format implemented in the derived class.</para>
         </block>
+        <altmember cref="Overload:System.IO.Packaging.Package.CreatePart" />
+        <altmember cref="M:System.IO.Packaging.PackUriHelper.CreatePartUri(System.Uri)" />
+        <altmember cref="M:System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)" />
+        <altmember cref="M:System.IO.Packaging.PackUriHelper.ResolvePartUri(System.Uri,System.Uri)" />
       </Docs>
     </Member>
     <Member MemberName="DeletePartCore">
@@ -649,6 +681,7 @@
   
  The derived <see cref="M:System.IO.Packaging.Package.DeletePartCore(System.Uri)" /> implementation should make no assumptions about the order or operations performed by the <see cref="M:System.IO.Packaging.Package.DeletePart(System.Uri)" /> method that calls it.</para>
         </block>
+        <altmember cref="M:System.IO.Packaging.Package.CreatePartCore(System.Uri,System.String,System.IO.Packaging.CompressionOption)" />
       </Docs>
     </Member>
     <Member MemberName="DeleteRelationship">
@@ -743,6 +776,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IO.Packaging.Package.Flush" />
+        <altmember cref="T:System.IO.Packaging.PackagePart" />
+        <altmember cref="T:System.IO.Packaging.PackageRelationship" />
       </Docs>
     </Member>
     <Member MemberName="FileOpenAccess">
@@ -906,6 +942,11 @@
           <para>
             <see cref="M:System.IO.Packaging.Package.GetPart(System.Uri)" /> internally calls the derived class <see cref="M:System.IO.Packaging.Package.GetPartCore(System.Uri)" /> method to actually flush the part based on the physical format implemented in the derived class.</para>
         </block>
+        <altmember cref="M:System.IO.Packaging.Package.GetParts" />
+        <altmember cref="M:System.IO.Packaging.Package.PartExists(System.Uri)" />
+        <altmember cref="M:System.IO.Packaging.PackUriHelper.CreatePartUri(System.Uri)" />
+        <altmember cref="M:System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)" />
+        <altmember cref="M:System.IO.Packaging.PackUriHelper.ResolvePartUri(System.Uri,System.Uri)" />
       </Docs>
     </Member>
     <Member MemberName="GetPartCore">
@@ -947,6 +988,7 @@
   
  The derived <see cref="M:System.IO.Packaging.Package.GetPartCore(System.Uri)" /> implementation should make no assumptions about the order or operations performed by the <see cref="M:System.IO.Packaging.Package.GetPart(System.Uri)" /> method that calls it.</para>
         </block>
+        <altmember cref="M:System.IO.Packaging.Package.GetPartsCore" />
       </Docs>
     </Member>
     <Member MemberName="GetParts">
@@ -997,6 +1039,7 @@
           <para>
             <see cref="M:System.IO.Packaging.Package.GetParts" /> internally calls the derived class <see cref="M:System.IO.Packaging.Package.GetPartsCore" /> method to actually flush the part based on the physical format implemented in the derived class.</para>
         </block>
+        <altmember cref="M:System.IO.Packaging.Package.GetPart(System.Uri)" />
       </Docs>
     </Member>
     <Member MemberName="GetPartsCore">
@@ -1035,6 +1078,7 @@
         <block subset="none" type="overrides">
           <para>The derived <see cref="M:System.IO.Packaging.Package.GetPartsCore" /> implementation should make no assumptions about the order or operations performed by the <see cref="M:System.IO.Packaging.Package.GetParts" /> method that calls it.</para>
         </block>
+        <altmember cref="M:System.IO.Packaging.Package.GetPartCore(System.Uri)" />
       </Docs>
     </Member>
     <Member MemberName="GetRelationship">
@@ -1078,6 +1122,10 @@
         <exception cref="T:System.InvalidOperationException">A relationship with the specified <paramref name="id" /> is not in the package.</exception>
         <exception cref="T:System.ObjectDisposedException">The package is not open (<see cref="M:System.IO.Packaging.Package.Dispose(System.Boolean)" /> or <see cref="M:System.IO.Packaging.Package.Close" /> has been called).</exception>
         <exception cref="T:System.IO.IOException">The package is write-only.</exception>
+        <altmember cref="M:System.IO.Packaging.Package.GetRelationships" />
+        <altmember cref="M:System.IO.Packaging.Package.GetRelationshipsByType(System.String)" />
+        <altmember cref="M:System.IO.Packaging.Package.CreateRelationship(System.Uri,System.IO.Packaging.TargetMode,System.String)" />
+        <altmember cref="M:System.IO.Packaging.Package.DeleteRelationship(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetRelationships">
@@ -1121,6 +1169,10 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The package is not open (<see cref="M:System.IO.Packaging.Package.Dispose(System.Boolean)" /> or <see cref="M:System.IO.Packaging.Package.Close" /> has been called).</exception>
         <exception cref="T:System.IO.IOException">The package is write-only.</exception>
+        <altmember cref="M:System.IO.Packaging.Package.GetRelationship(System.String)" />
+        <altmember cref="M:System.IO.Packaging.Package.GetRelationshipsByType(System.String)" />
+        <altmember cref="M:System.IO.Packaging.Package.CreateRelationship(System.Uri,System.IO.Packaging.TargetMode,System.String)" />
+        <altmember cref="M:System.IO.Packaging.Package.DeleteRelationship(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetRelationshipsByType">
@@ -1181,6 +1233,10 @@
           <paramref name="relationshipType" /> is an empty string.</exception>
         <exception cref="T:System.ObjectDisposedException">The package is not open (<see cref="M:System.IO.Packaging.Package.Dispose(System.Boolean)" /> or <see cref="M:System.IO.Packaging.Package.Close" /> has been called).</exception>
         <exception cref="T:System.IO.IOException">The package is write-only.</exception>
+        <altmember cref="M:System.IO.Packaging.Package.GetRelationship(System.String)" />
+        <altmember cref="M:System.IO.Packaging.Package.GetRelationships" />
+        <altmember cref="M:System.IO.Packaging.Package.CreateRelationship(System.Uri,System.IO.Packaging.TargetMode,System.String)" />
+        <altmember cref="M:System.IO.Packaging.Package.DeleteRelationship(System.String)" />
       </Docs>
     </Member>
     <MemberGroup MemberName="Open">
@@ -1613,6 +1669,10 @@
           <paramref name="partUri" /> is not a valid <see cref="T:System.IO.Packaging.PackagePart" /> [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)].</exception>
         <exception cref="T:System.ObjectDisposedException">The package is not open (<see cref="M:System.IO.Packaging.Package.Dispose(System.Boolean)" /> or <see cref="M:System.IO.Packaging.Package.Close" /> has been called).</exception>
         <exception cref="T:System.IO.IOException">The package is write-only (information cannot be read).</exception>
+        <altmember cref="M:System.IO.Packaging.PackUriHelper.CreatePartUri(System.Uri)" />
+        <altmember cref="M:System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)" />
+        <altmember cref="M:System.IO.Packaging.PackUriHelper.ResolvePartUri(System.Uri,System.Uri)" />
+        <altmember cref="T:System.IO.Packaging.PackagePart" />
       </Docs>
     </Member>
     <Member MemberName="RelationshipExists">
@@ -1654,6 +1714,7 @@
           <paramref name="id" /> is not a valid XML identifier.</exception>
         <exception cref="T:System.ObjectDisposedException">The package is not open (<see cref="M:System.IO.Packaging.Package.Dispose(System.Boolean)" /> or <see cref="M:System.IO.Packaging.Package.Close" /> has been called).</exception>
         <exception cref="T:System.IO.IOException">The package is write-only.</exception>
+        <altmember cref="T:System.IO.Packaging.PackageRelationship" />
       </Docs>
     </Member>
     <Member MemberName="System.IDisposable.Dispose">
@@ -1679,5 +1740,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Packaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.Packaging.Package" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

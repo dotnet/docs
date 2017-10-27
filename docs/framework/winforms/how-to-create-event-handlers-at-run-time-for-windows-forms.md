@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "Windows Forms, event handling"
-  - "event handlers, creating"
-  - "run time, creating event handlers at"
+  - "event handlers [Windows Forms], creating"
+  - "run time [Windows Forms], creating event handlers at"
   - "examples [Windows Forms], event handling"
   - "Button control [Windows Forms], event handlers"
 ms.assetid: 2e7c9e1a-61fe-444d-8113-3c5bacf1c8cb

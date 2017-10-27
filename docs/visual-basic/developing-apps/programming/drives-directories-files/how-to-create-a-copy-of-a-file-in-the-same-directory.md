@@ -12,8 +12,8 @@ f1_keywords:
   - "File.Copy"
 helpviewer_keywords: 
   - "My.Computer.FileSystem.CopyFile method, copying files [Visual Basic]"
-  - "files, copying"
-  - "CopyFile method, copying files in Visual Basic"
+  - "files [Visual Basic], copying"
+  - "CopyFile method [Visual Basic], copying files in Visual Basic"
   - "I/O [Visual Basic], copying files"
 ms.assetid: b2fdda86-e666-42c2-9706-9527e9fa68ff
 caps.latest.revision: 21

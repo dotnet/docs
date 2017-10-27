@@ -10,10 +10,10 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "Help, adding to Windows applications"
-  - "Windows applications, providing Help systems"
+  - "Help [Windows Forms], adding to Windows applications"
+  - "Windows applications [Windows Forms], providing Help systems"
   - "What's This? Help"
-  - "Help, Windows Forms"
+  - "Help [Windows Forms], Windows Forms"
   - "HelpProvider component [Windows Forms], providing Help in Windows applications"
 ms.assetid: 2a96a278-432c-41fc-9e3c-5bfedf5e1267
 caps.latest.revision: 9

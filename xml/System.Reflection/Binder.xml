@@ -124,7 +124,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `bindingAttr` does not include <xref:System.Reflection.BindingFlags?displayProperty=nameWithType>, the default binder implementation provided by <xref:System.Type.DefaultBinder%2A?displayProperty=nameWithType> simply returns the first element of `match`. No selection is done.  
+ If `bindingAttr` does not include <xref:System.Reflection.BindingFlags.SetField?displayProperty=nameWithType>, the default binder implementation provided by <xref:System.Type.DefaultBinder%2A?displayProperty=nameWithType> simply returns the first element of `match`. No selection is done.  
   
  This method controls the binding provided by <xref:System.Type.InvokeMember%2A?displayProperty=nameWithType>.  
   
@@ -137,6 +137,7 @@
  -or-  
   
  <paramref name="bindingAttr" /> includes <see cref="F:System.Reflection.BindingFlags.SetField" />, and <paramref name="value" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Reflection.FieldInfo" />
       </Docs>
     </Member>
     <Member MemberName="BindToMethod">
@@ -196,6 +197,7 @@
         <exception cref="T:System.Reflection.AmbiguousMatchException">For the default binder, <paramref name="match" /> contains multiple methods that are equally good matches for <paramref name="args" />. For example, <paramref name="args" /> contains a <c>MyClass</c> object that implements the <c>IMyClass</c> interface, and <paramref name="match" /> contains a method that takes <c>MyClass</c> and a method that takes <c>IMyClass</c>.</exception>
         <exception cref="T:System.MissingMethodException">For the default binder, <paramref name="match" /> contains no methods that can accept the arguments supplied in <paramref name="args" />.</exception>
         <exception cref="T:System.ArgumentException">For the default binder, <paramref name="match" /> is <see langword="null" /> or an empty array.</exception>
+        <altmember cref="T:System.Reflection.MethodBase" />
       </Docs>
     </Member>
     <Member MemberName="CanChangeType">
@@ -423,6 +425,7 @@
         </remarks>
         <exception cref="T:System.Reflection.AmbiguousMatchException">For the default binder, <paramref name="match" /> contains multiple properties that are equally good matches for <paramref name="returnType" /> and <paramref name="indexes" />.</exception>
         <exception cref="T:System.ArgumentException">For the default binder, <paramref name="match" /> is <see langword="null" /> or an empty array.</exception>
+        <altmember cref="T:System.Reflection.PropertyInfo" />
       </Docs>
     </Member>
   </Members>

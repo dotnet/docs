@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "text boxes, stretching in ToolStrip control [Windows Forms]"
+  - "text boxes [Windows Forms], stretching in ToolStrip control [Windows Forms]"
   - "ToolStrip control [Windows Forms], stretching a text box"
 ms.assetid: 0e610fbf-85fe-414c-900c-9704a5dd5cc6
 caps.latest.revision: 6

@@ -30,6 +30,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.RowHeightInfoNeeded" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewRowHeightInfoNeededEventHandler" />
   </Docs>
   <Members>
     <Member MemberName="Height">
@@ -61,6 +64,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified value when setting this property is greater than 65,536.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.RowHeightInfoNeeded" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewRow.Height" />
       </Docs>
     </Member>
     <Member MemberName="MinimumHeight">
@@ -92,6 +99,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified value when setting this property is less than 2.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.RowHeightInfoNeeded" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewRow.MinimumHeight" />
       </Docs>
     </Member>
     <Member MemberName="RowIndex">
@@ -122,6 +133,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.RowHeightInfoNeeded" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.Rows" />
       </Docs>
     </Member>
   </Members>

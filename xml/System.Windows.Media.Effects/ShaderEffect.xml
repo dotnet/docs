@@ -65,6 +65,8 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.Permissions.UIPermission">for full access to UI resources. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+    <altmember cref="T:System.Windows.Media.Effects.Effect" />
+    <altmember cref="T:System.Windows.Media.Effects.PixelShader" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -106,6 +108,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Freezable.Clone" />
       </Docs>
     </Member>
     <Member MemberName="CloneCore">
@@ -127,6 +130,7 @@
         <param name="sourceFreezable">The object to clone.</param>
         <summary>Makes the instance a clone (deep copy) of the specified <see cref="T:System.Windows.Freezable" /> using base (non-animated) property values.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Freezable.CloneCore(System.Windows.Freezable)" />
       </Docs>
     </Member>
     <Member MemberName="CloneCurrentValue">
@@ -176,6 +180,7 @@
         <param name="sourceFreezable">The <see cref="T:System.Windows.Freezable" /> to be cloned.</param>
         <summary>Makes the instance a modifiable clone (deep copy) of the specified <see cref="T:System.Windows.Freezable" /> using current property values.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Freezable.CloneCurrentValueCore(System.Windows.Freezable)" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceCore">
@@ -248,6 +253,8 @@ tex2D(sampler, nextPixelUV);
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt was made to set the <see cref="P:System.Windows.Media.Effects.ShaderEffect.DdxUvDdyUvRegisterIndex" /> property more than one time or after initial processing of the effect.</exception>
+        <altmember cref="T:System.Windows.Media.Effects.Effect" />
+        <altmember cref="T:System.Windows.Media.Effects.PixelShader" />
       </Docs>
     </Member>
     <Member MemberName="GetAsFrozenCore">
@@ -269,6 +276,7 @@ tex2D(sampler, nextPixelUV);
         <param name="sourceFreezable">The instance to copy.</param>
         <summary>Makes the instance a frozen clone of the specified <see cref="T:System.Windows.Freezable" /> using base (non-animated) property values.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Freezable.GetAsFrozenCore(System.Windows.Freezable)" />
       </Docs>
     </Member>
     <Member MemberName="GetCurrentValueAsFrozenCore">
@@ -290,6 +298,7 @@ tex2D(sampler, nextPixelUV);
         <param name="sourceFreezable">The <see cref="T:System.Windows.Freezable" /> to copy and freeze.</param>
         <summary>Makes the current instance a frozen clone of the specified <see cref="T:System.Windows.Freezable" />. If the object has animated dependency properties, their current animated values are copied.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Freezable.GetCurrentValueAsFrozenCore(System.Windows.Freezable)" />
       </Docs>
     </Member>
     <Member MemberName="PaddingBottom">
@@ -398,6 +407,8 @@ tex2D(sampler, nextPixelUV);
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Effects.Effect" />
+        <altmember cref="T:System.Windows.Media.Effects.PixelShader" />
       </Docs>
     </Member>
     <Member MemberName="PixelShaderConstantCallback">
@@ -430,6 +441,8 @@ tex2D(sampler, nextPixelUV);
         <exception cref="T:System.InvalidOperationException">The dependency property is an unknown type.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="floatRegisterIndex" /> is greater than or equal to 32, or <paramref name="floatRegisterIndex" /> is less than 0.</exception>
+        <altmember cref="T:System.Windows.Media.Effects.Effect" />
+        <altmember cref="T:System.Windows.Media.Effects.PixelShader" />
       </Docs>
     </Member>
     <Member MemberName="PixelShaderProperty">
@@ -447,6 +460,8 @@ tex2D(sampler, nextPixelUV);
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Media.Effects.ShaderEffect.PixelShader" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Effects.Effect" />
+        <altmember cref="T:System.Windows.Media.Effects.PixelShader" />
       </Docs>
     </Member>
     <Member MemberName="PixelShaderSamplerCallback">
@@ -476,6 +491,8 @@ tex2D(sampler, nextPixelUV);
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Effects.Effect" />
+        <altmember cref="T:System.Windows.Media.Effects.PixelShader" />
       </Docs>
     </Member>
     <Member MemberName="PixelShaderSamplerCallback">
@@ -507,6 +524,8 @@ tex2D(sampler, nextPixelUV);
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Effects.Effect" />
+        <altmember cref="T:System.Windows.Media.Effects.PixelShader" />
       </Docs>
     </Member>
     <Member MemberName="RegisterPixelShaderSamplerProperty">
@@ -533,6 +552,8 @@ tex2D(sampler, nextPixelUV);
         <summary>Associates a dependency property with a shader sampler register.</summary>
         <returns>A dependency property associated with the shader sampler specified by <paramref name="samplerRegisterIndex" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Effects.Effect" />
+        <altmember cref="T:System.Windows.Media.Effects.PixelShader" />
       </Docs>
     </Member>
     <Member MemberName="RegisterPixelShaderSamplerProperty">
@@ -561,6 +582,8 @@ tex2D(sampler, nextPixelUV);
         <summary>Associates a dependency property with a shader sampler register and a <see cref="T:System.Windows.Media.Effects.SamplingMode" />.</summary>
         <returns>A dependency property associated with the shader sampler specified by <paramref name="samplerRegisterIndex" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Effects.Effect" />
+        <altmember cref="T:System.Windows.Media.Effects.PixelShader" />
       </Docs>
     </Member>
     <Member MemberName="UpdateShaderValue">
@@ -582,7 +605,27 @@ tex2D(sampler, nextPixelUV);
         <param name="dp">The dependency property to be updated.</param>
         <summary>Notifies the effect that the shader constant or sampler corresponding to the specified dependency property should be updated.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Effects.Effect" />
+        <altmember cref="T:System.Windows.Media.Effects.PixelShader" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="RegisterPixelShaderSamplerProperty">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Associates a dependency property with a shader sampler register.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="PixelShaderSamplerCallback">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Associates a dependency property value with a pixel shader's sampler register.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

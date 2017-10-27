@@ -1811,5 +1811,14 @@
         <exception cref="T:System.ArgumentException">**dateValue**</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Round">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'Round' function.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

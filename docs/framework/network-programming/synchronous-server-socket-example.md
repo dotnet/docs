@@ -42,12 +42,12 @@ Public Class SynchronousSocketListener
         ' Establish the local endpoint for the socket.  
         ' Dns.GetHostName returns the name of the   
         ' host running the application.  
-        Dim ipHostInfo As IPHostEntry = Dns.Resolve(Dns.GetHostName())  
+        Dim ipHostInfo As IPHostEntry = Dns.GetHostEntry(Dns.GetHostName())  
         Dim ipAddress As IPAddress = ipHostInfo.AddressList(0)  
         Dim localEndPoint As New IPEndPoint(ipAddress, 11000)  
   
         ' Create a TCP/IP socket.  
-        Dim listener As New Socket(AddressFamily.InterNetwork, _  
+        Dim listener As New Socket(ipAddress.AddressFamily, _  
             SocketType.Stream, ProtocolType.Tcp)  
   
         ' Bind the socket to the local endpoint and   
@@ -103,12 +103,12 @@ public class SynchronousSocketListener {
         // Establish the local endpoint for the socket.  
         // Dns.GetHostName returns the name of the   
         // host running the application.  
-        IPHostEntry ipHostInfo = Dns.Resolve(Dns.GetHostName());  
+        IPHostEntry ipHostInfo = Dns.GetHostEntry(Dns.GetHostName());  
         IPAddress ipAddress = ipHostInfo.AddressList[0];  
         IPEndPoint localEndPoint = new IPEndPoint(ipAddress, 11000);  
   
         // Create a TCP/IP socket.  
-        Socket listener = new Socket(AddressFamily.InterNetwork,  
+        Socket listener = new Socket(ipAddress.AddressFamily,  
             SocketType.Stream, ProtocolType.Tcp );  
   
         // Bind the socket to the local endpoint and   

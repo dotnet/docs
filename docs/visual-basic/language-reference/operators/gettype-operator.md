@@ -10,8 +10,8 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.GetType"
 helpviewer_keywords: 
-  - "GetType operator"
-  - "GetType keyword"
+  - "GetType operator [Visual Basic]"
+  - "GetType keyword [Visual Basic]"
 ms.assetid: 4f733297-2503-4607-850c-15eba65fff90
 caps.latest.revision: 17
 author: dotnet-bot

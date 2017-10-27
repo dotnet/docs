@@ -12,9 +12,9 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "variables [Visual Basic], object"
   - "objects [Visual Basic], referring to current instance"
-  - "instances, referring to current"
+  - "instances [Visual Basic], referring to current"
   - "current instance"
-  - "object variables"
+  - "object variables [Visual Basic]"
 ms.assetid: 7f9b2c77-03cd-428f-adc2-b18070226e7c
 caps.latest.revision: 14
 author: dotnet-bot

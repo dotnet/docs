@@ -10,9 +10,9 @@ ms.technology:
 ms.topic: "article"
 helpviewer_keywords: 
   - "data types [Visual Basic], character"
-  - "String data type, character data types"
+  - "String data type [Visual Basic], character data types"
   - "character data types [Visual Basic]"
-  - "Char data type, character data types"
+  - "Char data type [Visual Basic], character data types"
   - "data types [Visual Basic], choosing"
 ms.assetid: 902479ef-1679-47fc-9911-0c1c5008226c
 caps.latest.revision: 23

@@ -20,6 +20,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="N:System.Net.Mail" />
+    <altmember cref="T:System.Net.Mail.SmtpClient" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -60,6 +62,8 @@
   
  The delivery format to use for sending outgoing e-mail using SMTP.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.Mail.SmtpClient" />
+        <altmember cref="T:System.Net.Mail.SmtpDeliveryFormat" />
       </Docs>
     </Member>
     <Member MemberName="DeliveryMethod">
@@ -90,6 +94,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.Mail.SmtpClient" />
+        <altmember cref="F:System.Net.Mail.SmtpDeliveryMethod.Network" />
       </Docs>
     </Member>
     <Member MemberName="From">
@@ -113,6 +119,7 @@
         <summary>Gets or sets the default value that indicates who the email message is from.</summary>
         <value>A string that represents the default value indicating who a mail message is from.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.Mail.SmtpClient" />
       </Docs>
     </Member>
     <Member MemberName="Network">
@@ -138,6 +145,8 @@
   
  The configuration element that controls the network settings used by SMTP.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.Configuration.SmtpNetworkElement" />
+        <altmember cref="T:System.Net.Mail.SmtpClient" />
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -186,6 +195,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.Configuration.SmtpSpecifiedPickupDirectoryElement" />
+        <altmember cref="T:System.Net.Mail.SmtpClient" />
+        <altmember cref="P:System.Net.Mail.SmtpClient.PickupDirectoryLocation" />
       </Docs>
     </Member>
   </Members>

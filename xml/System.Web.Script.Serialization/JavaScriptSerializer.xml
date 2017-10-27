@@ -327,12 +327,16 @@
    
   
 ## Examples  
- The following example provides a simple illustration of how to serialize and deserialize data objects. It requires a class names Person which is shown below.  
+The following example provides a simple illustration of how to serialize and deserialize data objects.  
   
-<!-- TODO: review snippet reference  [!CODE [System.Web.Script.JavaScriptSerializer#1](System.Web.Script.JavaScriptSerializer#1)]  
-  
-<!-- TODO: review snippet reference  [!CODE [System.Web.Script.JavaScriptSerializer#2](System.Web.Script.JavaScriptSerializer#2)]  
-  
+[!CODE [System.Web.Script.JavaScriptSerializer#1](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.script.javascriptserializer/cs/default.aspx.cs#1)]  
+[!CODE [System.Web.Script.JavaScriptSerializer#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.script.javascriptserializer/vb/default.aspx.vb#1)]  
+
+It requires a class named `Person`, which is shown in the following example. 
+
+[!CODE [System.Web.Script.JavaScriptSerializer#1](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.script.javascriptserializer/cs/default.aspx.cs#2)]  
+[!CODE [System.Web.Script.JavaScriptSerializer#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.script.javascriptserializer/vb/default.aspx.vb#2)]  
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="input" /> length exceeds the value of <see cref="P:System.Web.Script.Serialization.JavaScriptSerializer.MaxJsonLength" />.  
@@ -572,11 +576,15 @@
    
   
 ## Examples  
- The following example provides a simple illustration of how to serialize and deserialize data objects. It requires a class names Person which is shown below.  
+The following example provides a simple illustration of how to serialize and deserialize data objects.  
   
-<!-- TODO: review snippet reference  [!CODE [System.Web.Script.JavaScriptSerializer#1](System.Web.Script.JavaScriptSerializer#1)]  
-  
-<!-- TODO: review snippet reference  [!CODE [System.Web.Script.JavaScriptSerializer#2](System.Web.Script.JavaScriptSerializer#2)]  
+[!CODE [System.Web.Script.JavaScriptSerializer#1](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.script.javascriptserializer/cs/default.aspx.cs#1)]  
+[!CODE [System.Web.Script.JavaScriptSerializer#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.script.javascriptserializer/vb/default.aspx.vb#1)]  
+
+It requires a class named `Person`, which is shown in the following example. 
+
+[!CODE [System.Web.Script.JavaScriptSerializer#1](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.script.javascriptserializer/cs/default.aspx.cs#2)]  
+[!CODE [System.Web.Script.JavaScriptSerializer#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.script.javascriptserializer/vb/default.aspx.vb#2)]  
   
  ]]></format>
         </remarks>

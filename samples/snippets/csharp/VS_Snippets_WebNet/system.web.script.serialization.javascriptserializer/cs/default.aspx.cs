@@ -31,4 +31,17 @@ namespace ExampleApplication
         }
     }
 }
-// </snippet1>    
+// </snippet1> 
+
+// <snippet2>
+namespace ExampleApplication
+{
+    public class Person
+    {
+        public int PersonID { get; set; }
+        public string Name { get; set; }
+        public bool Registered { get; set; }
+    }
+}
+// </snippet2> 
+  

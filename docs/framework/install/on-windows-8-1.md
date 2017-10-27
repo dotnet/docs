@@ -1,22 +1,23 @@
 ---
-title: Install the .NET Framework on Windows 7 SP1
+title: Install the .NET Framework on Windows 8.1
 ms.custom: "updateeachrelease"
-description: Learn how to install the .NET Framework on Windows 7 SP1.
+description: Learn how to install .NET Framework on Windows 8.1
 author: rlander
 ms.author: mairaw
 keywords: .NET Framework, Install
-ms.date: 10/17/2017
+ms.date: 10/22/2017
 ms.topic: article
 ms.prod: .net-framework
+ms.devlang: dotnet
 ---
 
-# Install the .NET Framework on Windows 7 SP1 and Windows Server 2008 R2
+# Install the .NET Framework on Windows 8.1 and Windows Server 2012 R2
 
 The .NET Framework is required to run many applications on Windows. You can use the following instructions to install it. You may have arrived on this page after trying to run an application and seeing the following dialog on your machine.
 
 ![This application could not be started](./media/this-application-could-not-be-started.png)
 
-These instructions will help you install the .NET Framework versions you need. The [.NET Framework 4.7.1](https://www.microsoft.com/en-us/download/details.aspx?id=56115&desc=dotnet47) is the latest version. It is supported on Windows 7 and Windows Server 2008 R2 and is included with the [Windows 10 Fall Creators Update](https://www.microsoft.com/software-download/windows10) and [Windows Server 2016 Version 1709](https://docs.microsoft.com/windows-server/get-started/get-started-with-1709).
+These instructions will help you install the .NET Framework versions you need. The [.NET Framework 4.7.1](https://www.microsoft.com/en-us/download/details.aspx?id=56115&desc=dotnet47) is the latest version. It is supported on Windows 8.1 and Windows Server 2012 R2 and is included with the [Windows 10 Fall Creators Update](https://www.microsoft.com/software-download/windows10) and [Windows Server 2016 Version 1709](https://docs.microsoft.com/windows-server/get-started/get-started-with-1709).
 
 ## .NET Framework 4.7.1
 
@@ -26,7 +27,7 @@ The [.NET Framework 4.7.1](https://www.microsoft.com/en-us/download/details.aspx
 
 ## .NET Framework 3.5
 
-The [.NET Framework 3.5](https://www.microsoft.com/en-us/download/details.aspx?id=21) is included with Windows 7.
+Follow the instructions to install the [.NET Framework 3.5 on Windows 8.1 and 10](dotnet-35-windows-10.md).
 
 The .NET Framework 3.5 supports apps built for .NET Framework 1.0 through 3.5.
 

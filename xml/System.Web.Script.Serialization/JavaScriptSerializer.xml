@@ -51,8 +51,8 @@
  [!code-csharp[System.Web.Script.Serialization.JavaScriptSerializer#1](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.script.serialization.javascriptserializer/cs/default.aspx.cs#1)]
  [!code-vb[System.Web.Script.Serialization.JavaScriptSerializer#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.script.serialization.javascriptserializer/vb/default.aspx.vb#1)]  
   
- [!code-csharp[System.Web.Script.Serialization.JavaScriptSerializer#2](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.script.serialization.javascriptserializer/cs/person.cs#2)]
- [!code-vb[System.Web.Script.Serialization.JavaScriptSerializer#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.script.serialization.javascriptserializer/vb/person.vb#2)]  
+ [!code-csharp[System.Web.Script.Serialization.JavaScriptSerializer#2](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.script.serialization.javascriptserializer/cs/default.aspx.cs#2)]
+ [!code-vb[System.Web.Script.Serialization.JavaScriptSerializer#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.script.serialization.javascriptserializer/vb/default.aspx.vb#2)]  
   
  The next example shows a more complicated and complete project that uses the <xref:System.Web.Script.Serialization.JavaScriptSerializer> class to save and restore the state of an object by using JSON serialization. This code uses a custom converter that is provided for the <xref:System.Web.Script.Serialization.JavaScriptConverter> class.  
   
@@ -329,13 +329,13 @@
 ## Examples  
 The following example provides a simple illustration of how to serialize and deserialize data objects.  
   
-[!CODE [System.Web.Script.JavaScriptSerializer#1](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.script.javascriptserializer/cs/default.aspx.cs#1)]  
-[!CODE [System.Web.Script.JavaScriptSerializer#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.script.javascriptserializer/vb/default.aspx.vb#1)]  
+[!code-csharp[System.Web.Script.JavaScriptSerializer](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.script.serialization.javascriptserializer/cs/default.aspx.cs#1)]  
+[!code-vb[System.Web.Script.JavaScriptSerializer](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.script.serialization.javascriptserializer/vb/default.aspx.vb#1)]  
 
 It requires a class named `Person`, which is shown in the following example. 
 
-[!CODE [System.Web.Script.JavaScriptSerializer#1](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.script.javascriptserializer/cs/default.aspx.cs#2)]  
-[!CODE [System.Web.Script.JavaScriptSerializer#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.script.javascriptserializer/vb/default.aspx.vb#2)]  
+[!code-csharp[System.Web.Script.JavaScriptSerializer](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.script.serialization.javascriptserializer/cs/default.aspx.cs#2)]  
+[!code-vb[System.Web.Script.JavaScriptSerializer](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.script.serialization.javascriptserializer/vb/default.aspx.vb#2)]  
 
  ]]></format>
         </remarks>
@@ -578,13 +578,13 @@ It requires a class named `Person`, which is shown in the following example.
 ## Examples  
 The following example provides a simple illustration of how to serialize and deserialize data objects.  
   
-[!CODE [System.Web.Script.JavaScriptSerializer#1](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.script.javascriptserializer/cs/default.aspx.cs#1)]  
-[!CODE [System.Web.Script.JavaScriptSerializer#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.script.javascriptserializer/vb/default.aspx.vb#1)]  
+[!code-csharp[System.Web.Script.JavaScriptSerializer](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.script.serialization.javascriptserializer/cs/default.aspx.cs#1)]  
+[!code-vb[System.Web.Script.JavaScriptSerializer](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.script.serialization.javascriptserializer/vb/default.aspx.vb#1)]  
 
 It requires a class named `Person`, which is shown in the following example. 
 
-[!CODE [System.Web.Script.JavaScriptSerializer#1](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.script.javascriptserializer/cs/default.aspx.cs#2)]  
-[!CODE [System.Web.Script.JavaScriptSerializer#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.script.javascriptserializer/vb/default.aspx.vb#2)]  
+[!code-csharp[System.Web.Script.JavaScriptSerializer](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.script.serialization.javascriptserializer/cs/default.aspx.cs#2)]  
+[!code-vb[System.Web.Script.JavaScriptSerializer](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.script.serialization.javascriptserializer/vb/default.aspx.vb#2)]  
   
  ]]></format>
         </remarks>

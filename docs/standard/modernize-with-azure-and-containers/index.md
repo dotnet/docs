@@ -42,7 +42,7 @@ Participants and reviewers:
 
 ## Introduction
 
-When you decide to modernize your web applications and move them to the cloud, you don't necessarily have to fully re-architect your apps. Re-architecting an application by using an advanced approach like microservices isn't always an option, because of cost and time restraints. Depending on the type of application, re-architecting an app also might not be necessary. To optimize the cost-effectiveness of your organization's cloud migration strategy, it's important to consider the needs of your business and requirements of your apps. You'll need to determine:
+When you decide to modernize your web applications and move them to the cloud, you don't necessarily have to fully re-architect your apps. Re-architecting an application by using an advanced approach like microservices isn't always an option because of cost and time restraints. Depending on the type of application, re-architecting an app also might not be necessary. To optimize the cost-effectiveness of your organization's cloud migration strategy, it's important to consider the needs of your business and requirements of your apps. You'll need to determine:
 
 -   Which apps require a transformation or re-architecting.
 
@@ -52,9 +52,9 @@ When you decide to modernize your web applications and move them to the cloud, y
 
 ## About this guide
 
-This guide focuses primarily on "lift and shift" scenarios, and initial modernization of existing Microsoft .NET Framework web or service-oriented applications. Lift and shift is the action of moving a workload to a newer or more modern environment without altering the application's code and basic architecture.
+This guide focuses primarily on "lift and shift" scenarios and initial modernization of existing Microsoft .NET Framework web or service-oriented applications. Lift and shift is the action of moving a workload to a newer or more modern environment without altering the application's code and basic architecture.
 
-This guide describes how to move your existing .NET Framework server-applications directly to the cloud by modernizing specific areas, without re-architecting or recoding entire applications.
+This guide describes how to move your existing .NET Framework server-applications directly to the cloud by modernizing specific areas without re-architecting or recoding entire applications.
 
 This guide also highlights the benefits of moving your apps to the cloud and partially modernizing apps by using a specific set of new technologies and approaches, like Windows Containers and orchestrators in Azure.
 
@@ -78,11 +78,11 @@ At the first two migration levels, you can just lift and shift your applications
 
 **Level 1: Cloud Infrastructure-Ready**: In this migration approach, you simply rehost or move your current on-premises applications to an infrastructure as a service ([IaaS](https://azure.microsoft.com/overview/what-is-iaas/)) platform. Your apps have almost the same composition as before, but now you deploy them to VMs in the cloud.
 
-**Level 2: Cloud DevOps-Ready**: At this level, after an initial lift and shift, and still without re-architecting or altering code, you can gain even more benefits from running your app in the cloud. You improve the agility of your applications to ship faster by refining your enterprise development operations (DevOps) processes. You achieve this by using technologies like Windows Containers, which is based on Docker Engine. Containers remove the friction that's caused by application dependencies when you deploy in multiple stages. Containers also use additional cloud managed services related to data, monitoring, and continuous integration/continuous deployment (CI/CD) pipelines.
+**Level 2: Cloud DevOps-Ready**: At this level, after an initial lift and shift, and still without re-architecting or altering code, you can gain even more benefits from running your app in the cloud. You improve the agility of your applications to ship faster by refining your enterprise development operations (DevOps) processes. You achieve this by using a technology like Windows Containers, which is based on Docker Engine. Containers remove the friction that's caused by application dependencies when you deploy in multiple stages. Containers also use additional cloud managed services related to data, monitoring, and continuous integration/continuous deployment (CI/CD) pipelines.
 
 The third level of maturity is the ultimate goal in the cloud, but it's optional for many apps and not the main focus of this guide:
 
-**Level 3: Cloud-Optimized**: This migration approach typically is driven by business need, and targets modernizing your mission-critical applications. At this level, you use PaaS services to move your apps to PaaS computing platforms. You implement [cloud-native](https://www.gartner.com/doc/3181919/architect-design-cloudnative-applications) applications and microservices architecture to evolve applications with long-term agility, and to scale to new limits. This type of modernization usually requires architecting specifically for the cloud. New code often must be written, especially when you move to cloud-native application and microservice-based models. This approach can help you gain benefits that are difficult to achieve in your monolithic and on-premises application environment.
+**Level 3: Cloud-Optimized**: This migration approach typically is driven by business need and targets modernizing your mission-critical applications. At this level, you use PaaS services to move your apps to PaaS computing platforms. You implement [cloud-native](https://www.gartner.com/doc/3181919/architect-design-cloudnative-applications) applications and microservices architecture to evolve applications with long-term agility, and to scale to new limits. This type of modernization usually requires architecting specifically for the cloud. New code often must be written, especially when you move to cloud-native application and microservice-based models. This approach can help you gain benefits that are difficult to achieve in your monolithic and on-premises application environment.
 
 Table 1-1 describes the main benefits of and reasons for choosing each migration or modernization approach.
 
@@ -100,9 +100,9 @@ Table 1-1 describes the main benefits of and reasons for choosing each migration
 
 ### Key technologies and architectures by maturity level
 
-.NET Framework applications initially started with the .NET Framework version 1.0, which was released in late 2001. Then, companies moved towards newer versions (such as 2.0, 3.5 and .NET 4.x). Most of those applications run on Windows Server and Internet Information Server (IIS), and used a relational database, like SQL Server, Oracle, MySQL or any other RDBMS.
+.NET Framework applications initially started with the .NET Framework version 1.0, which was released in late 2001. Then, companies moved towards newer versions (such as 2.0, 3.5 and .NET 4.x). Most of those applications ran on Windows Server and Internet Information Server (IIS), and used a relational database, like SQL Server, Oracle, MySQL or any other RDBMS.
 
-Most existing .NET applications might nowadays be based on .NET Framework 4.x, or even on .NET Framework 3.5, and use web frameworks like ASP.NET MVC, ASP.NET Web Forms, ASP.NET Web API, Windows Communication Foundation (WCF), ASP.NET SignalR, and ASP.NET Web Pages. These established .NET Framework technologies depend on Windows. That dependency is important to consider if you are simply migrating legacy apps, and you want to make minimal changes to your application infrastructure.
+Most existing .NET applications might nowadays be based on .NET Framework 4.x, or even on .NET Framework 3.5, and use web frameworks like ASP.NET MVC, ASP.NET Web Forms, ASP.NET Web API, Windows Communication Foundation (WCF), ASP.NET SignalR, and ASP.NET Web Pages. These established .NET Framework technologies depend on Windows. That dependency is important to consider if you are simply migrating legacy apps and you want to make minimal changes to your application infrastructure.
 
 Figure 1-2 shows the primary technologies and architecture styles used at each of the three cloud maturity levels:
 

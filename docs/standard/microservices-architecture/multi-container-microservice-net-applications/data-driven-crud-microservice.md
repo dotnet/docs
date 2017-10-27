@@ -343,9 +343,7 @@ This means you can complement your API with a nice discovery UI to help develope
 
 The API explorer is not the most important thing here. Once you have a Web API that can describe itself in Swagger metadata, your API can be used seamlessly from Swagger-based tools, including client proxy-class code generators that can target many platforms. For example, as mentioned, [AutoRest](https://github.com/Azure/AutoRest) automatically generates .NET client classes. But additional tools like [swagger-codegen](https://github.com/swagger-api/swagger-codegen) are also available, which allow code generation of API client libraries, server stubs, and documentation automatically.
 
-Currently, Swashbuckle consists of two NuGet packages: Swashbuckle.SwaggerGen and Swashbuckle.SwaggerUi. The former provides functionality to generate one or more Swagger documents directly from your API implementation and expose them as JSON endpoints. The latter provides an embedded version of the swagger-ui tool that can be served by your application and powered by the generated Swagger documents to describe your API. However, the latest versions of Swashbuckle wrap these with the Swashbuckle.AspNetCore metapackage.
-
-Note that for .NET Core Web API projects, you need to use [Swashbuckle.AspNetCore](https://www.nuget.org/packages/Swashbuckle.AspNetCore/1.0.0) version 1.0.0 or later.
+Currently, Swashbuckle consists of two several internal NuGet packages under the high-level meta- package [Swashbuckle.Swashbuckle.AspNetCoreSwaggerGen](https://www.nuget.org/packages/Swashbuckle.AspNetCore/) version 1.0.0 or later for ASP.NET Core applications.
 
 After you have installed these NuGet packages in your Web API project, you need to configure Swagger in the Startup class, as in the following code:
 
@@ -358,18 +356,20 @@ public class Startup
     public void ConfigureServices(IServiceCollection services)
     {
         // Other ConfigureServices() code...
-        services.AddSwaggerGen();
-        services.ConfigureSwaggerGen(options =>
+
+        // Add framework services.
+        services.AddSwaggerGen(options =>
         {
             options.DescribeAllEnumsAsStrings();
-            options.SingleApiVersion(new Swashbuckle.Swagger.Model.Info()
+            options.SwaggerDoc("v1", new Swashbuckle.AspNetCore.Swagger.Info
             {
                 Title = "eShopOnContainers - Catalog HTTP API",
                 Version = "v1",
-                Description = "The Catalog Microservice HTTP API",
-                TermsOfService = "eShopOnContainers terms of service"
+                Description = "The Catalog Microservice HTTP API. This is a Data-Driven/CRUD microservice sample",
+                TermsOfService = "Terms Of Service"
             });
         });
+
         // Other ConfigureServices() code...
     }
 
@@ -380,7 +380,10 @@ public class Startup
         // Other Configure() code...
         // ...
         app.UseSwagger()
-            .UseSwaggerUi();
+            .UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+            });
     }
 }
 ```
@@ -390,7 +393,7 @@ Once this is done, you can start your application and browse the following Swagg
 ```json
   http://<your-root-url>/swagger/v1/swagger.json
   
-  http://<your-root-url>/swagger/ui
+  http://<your-root-url>/swagger/
 ```
 
 You previously saw the generated UI created by Swashbuckle for a URL like http://&lt;your-root-url&gt;/swagger/ui. In Figure 8-9 you can also see how you can test any API method.

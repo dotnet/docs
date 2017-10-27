@@ -5,7 +5,6 @@ Public Module Example
       Console.WriteLine(greeting)
    End Sub
 End Module
-// The example displays the following output:
-//       Hello, John!
-// </Snippet1>
+' The example displays the following output:
+'       Hello, John!
                    

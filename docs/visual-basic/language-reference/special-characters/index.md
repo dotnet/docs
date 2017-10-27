@@ -3,7 +3,7 @@ title: "Special Characters (Visual Basic Reference)"
 ms.date: 10/31/2017
 ms.prod: .net
 ms.technology: 
-  - "devlang-csharp"
+  - "devlang-visual-basic"
 ms.topic: "article"
 author: "rpetrusha"
 ms.author: "ronpet"

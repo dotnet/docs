@@ -5,7 +5,7 @@ ms.prod: .net
 ms.technology: 
   - "devlang-visual-basic"
 ms.topic: "article"
-author: rpetrusha"
+author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # Interpolated Strings (Visual Basic Reference)

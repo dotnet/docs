@@ -101,7 +101,7 @@ This walkthrough focuses on the Visual Studio 2017 Tools for Docker approach, bu
 
 Figure 5-3 shows the scenario for containerized eShop legacy applications.
 
-> ![Simplified architecture diagram of containerized applications in a development environment](./media/image3.png)
+> ![Simplified architecture diagram of containerized applications in a development environment](./media/image5-3.png)
 >
 > **Figure 5-3.** Simplified architecture diagram of containerized applications in a development environment
 

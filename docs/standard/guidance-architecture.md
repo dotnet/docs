@@ -14,7 +14,7 @@ ms.technology: dotnet
 
 This guide is an introduction to the recommended end to end lifecycle processes you'll use to develop, validate, and deploy containerized Docker applications using Visual Studio and Microsoft Azure.
 
-## [Modernize Existing .NET Applications with Azure cloud and Windows Containers](standard/modernize-with-azure-and-containers/index.md)
+## [Modernize Existing .NET Applications with Azure cloud and Windows Containers](./modernize-with-azure-and-containers/index.md)
 
 This guide is an introduction to the strategies you'll need to migrate existing web applications to the Azure cloud and Windows containers. You'll learn about code strategies, data migration, orchestrators, and CI/CD processes.
 

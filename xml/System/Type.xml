@@ -7034,12 +7034,12 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
   
 |Character|Meaning|  
 |---------------|-------------|  
-|, (comma)|Delimiter for assembly-qualified names.|  
-|[] (square brackets)|As a suffix pair, indicates an array type; as a delimiter pair, encloses generic argument lists and assembly-qualified names.|  
-|& (ampersand)|As a suffix, indicates that a type is a reference type.|  
-|* (asterisk)|As a suffix, indicates that a type is a pointer type.|  
-|+ (plus)|Delimiter for nested types.|  
-|\ (backslash)|Escape character.|  
+|`,` (comma)|Delimiter for assembly-qualified names.|  
+|`[]` (square brackets)|As a suffix pair, indicates an array type; as a delimiter pair, encloses generic argument lists and assembly-qualified names.|  
+|`&` (ampersand)|As a suffix, indicates that a type is a reference type.|  
+|`*` (asterisk)|As a suffix, indicates that a type is a pointer type.|  
+|`+` (plus)|Delimiter for nested types.|  
+|`\` (backslash)|Escape character.|  
   
  Properties such as <xref:System.Type.AssemblyQualifiedName%2A> return correctly escaped strings. You must pass correctly escaped strings to the <xref:System.Type.GetType%2A> method. In turn, the <xref:System.Type.GetType%2A> method passes correctly escaped names to `typeResolver` and to the default type resolution methods. If you need to compare a name to an unescaped name in `typeResolver`, you must remove the escape characters.  
   

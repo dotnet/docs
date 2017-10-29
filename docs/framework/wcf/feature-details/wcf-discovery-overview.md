@@ -120,7 +120,7 @@ class Client
             new DiscoveryClient(new UdpDiscoveryEndpoint());  
   
         Collection<EndpointDiscoveryMetadata> calculatorServices =   
-            discoveryClient.Find(new FindCriteria(typeof(ICalculator)));  
+            (Collection<EndpointDiscoveryMetadata>)discoveryClient.Find(new FindCriteria(typeof(ICalculator)));  
   
         discoveryClient.Close();  
   
@@ -131,7 +131,7 @@ class Client
         }  
         else  
         {  
-            serviceAddress = calculatorServices[0].EndpointAddress;  
+            serviceAddress = calculatorServices[0].Address;  
             return true;  
         }  
     }  

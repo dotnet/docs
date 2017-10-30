@@ -2,7 +2,7 @@
 The `protected internal` keyword combination is a member access modifier. A protected internal member is accessible from the current assembly or from types that are derived from the containing class. For a comparison of `protected internal` with the other access modifiers, see [Accessibility Levels](../../../csharp/language-reference/keywords/accessibility-levels.md). 
    
 ## Example  
- A protected internal member of a base class is accessible from any types within its containing assembly. It is also accessible in a derived class located in another assembly only if the access occurs through the derived class type. For example, consider the following code segment:  
+ A protected internal member of a base class is accessible from any type within its containing assembly. It is also accessible in a derived class located in another assembly only if the access occurs through the derived class type. For example, consider the following code segment:  
 
 ```
 // Assembly1.cs  

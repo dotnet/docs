@@ -42,6 +42,7 @@ This recursive method is simple enough that the local function is implemented
 as a private method with a compiler generated name. Its only difference from
 other private methods is that it is semantically scoped inside the outer function.
 
+<< Phillip commented that this is unrelated to hte first item (at least as written-)>>
 Second, local functions can be called before they are defined. Lambda
 expressions must be declared before they are defined. This
 means local functions are easier to use in recursive algorithms, as shown

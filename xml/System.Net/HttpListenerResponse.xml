@@ -32,13 +32,7 @@
  When a client makes a request for a resource handled by an <xref:System.Net.HttpListener> object, the request and response are made available to your application in an <xref:System.Net.HttpListenerContext> object. The request is represented by an <xref:System.Net.HttpListenerRequest> object and is available in the <xref:System.Net.HttpListenerContext.Request%2A?displayProperty=nameWithType> property. The response is represented by an <xref:System.Net.HttpListenerResponse> object and is available in the <xref:System.Net.HttpListenerContext.Response%2A?displayProperty=nameWithType> property.  
   
  You can customize the response by setting various properties, such as <xref:System.Net.HttpListenerResponse.StatusCode%2A>, <xref:System.Net.HttpListenerResponse.StatusDescription%2A>, and <xref:System.Net.HttpListenerResponse.Cookies%2A>. Use the <xref:System.Net.HttpListenerResponse.OutputStream%2A?displayProperty=nameWithType> property to obtain a <xref:System.IO.Stream> instance to which response data can be written. Finally, send the response data to the client by calling the <xref:System.Net.HttpListenerResponse.Close%2A> method.  
-  
-   
-  
-## Examples  
- The following code example demonstrates responding to a client request.  
-  
- [!code-csharp[Net_Listener_Basic#2](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#2)]  
+ 
   
  ]]></format>
     </remarks>

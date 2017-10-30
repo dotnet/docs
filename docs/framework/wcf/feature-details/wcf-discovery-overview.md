@@ -123,7 +123,7 @@ class Client
             new DiscoveryClient(new UdpDiscoveryEndpoint());  
   
         Collection<EndpointDiscoveryMetadata> calculatorServices =   
-            (Collection<EndpointDiscoveryMetadata>)discoveryClient.Find(new FindCriteria(typeof(ICalculator)));  
+            (Collection<EndpointDiscoveryMetadata>)discoveryClient.Find(new FindCriteria(typeof(ICalculator))).Endpoints;  
   
         discoveryClient.Close();  
   

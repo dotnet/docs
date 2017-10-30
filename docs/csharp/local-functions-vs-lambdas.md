@@ -28,29 +28,21 @@ Contrast that implementation with a version that uses lambda expressions:
 [!code-csharp[26_LambdaFactorial](../../samples/snippets/csharp/new-in-7/MathUtilities.cs#38_LambdaFactorial "Recursive factorial using lambda expressions")]
 
 The local functions have names. The lambda expressions are anonymous methods
-that are assigned to variables that are `Func` or `Action` types. This may
-result in more readable code. Note that the argument types and return type
-are part of the function declaration, not part of the variable declaration.
-Those two difference may result in more clear code.
+that are assigned to variables that are `Func` or `Action` types. When you
+declare a local function the argument types and return type are part of the 
+function declaration. The argument types and return type are part of the
+variable type declaration when you declare a lambda expression instead of
+being part of the body of the lambda expression. Those two difference may
+result in more clear code.
 
-The instantiation necessary for lambda expressions means extra memory
-allocations, which may be a performance factor in time critical code paths.
-Local functions do not incur this overhead. In the example above, the local
-functions version has 2 fewer allocations than the lambda expression version.
-
-This recursive method is simple enough that the local function is implemented
-as a private method with a compiler generated name. Its only difference from
-other private methods is that it is semantically scoped inside the outer function.
-
-<< Phillip commented that this is unrelated to hte first item (at least as written-)>>
-Second, local functions can be called before they are defined. Lambda
-expressions must be declared before they are defined. This
-means local functions are easier to use in recursive algorithms, as shown
-above.
-
-Notice that the version using the lambda expression must declare and initialize
-the lambda expression, `nthFactorial` before defining it. Not doing so results
-in a compile time error for referencing `nthFactorial` before assigning it.
+Second, local functions have different rules for definite assignment
+than lambda expressions. A local function declaration can be referenced
+from any code location where it is in scope. A lambda expression must be
+assigned before it can be accessed (or called through a delgate
+referencing the lambda expression.) Notice that the version using the
+lambda expression must declare and initialize the lambda expression,
+`nthFactorial` before defining it. Not doing so results in a compile
+time error for referencing `nthFactorial` before assigning it.
 Recursive algorithms are easier to create using local functions.
 
 Third, for lambda expressions, the compiler must always create an anonymous class
@@ -64,6 +56,11 @@ The closure for this lambda expression contains the `address`,
 that implements the closure may be a `struct` type. That would save on
 an allocation.
 
+The instantiation necessary for lambda expressions means extra memory
+allocations, which may be a performance factor in time critical code paths.
+Local functions do not incur this overhead. In the example above, the local
+functions version has 2 fewer allocations than the lambda expression version.
+
 > [!NOTE]
 > The local function equivalent of this method also uses a class for the closure. Whether the closure for a local function is implemented as a `class` or a `struct` is an implementation detail. A local function may use a `struct` whereas a lambda will always use a `class`.
 
@@ -71,7 +68,8 @@ an allocation.
 
 One final advantage not demonstrated in this sample is that local
 functions can be implemented as iterators, using the `yield return`
-syntax to produce a sequence of values.
+syntax to produce a sequence of values. The `yield return` statement
+is not allowed in lambda expressions.
 
 While local functions may seem redundant to lambda expressions,
 they actually serve different purposes and have different uses.

@@ -42,7 +42,7 @@ The only time `dotnet` is used as a command on its own is to run [framework-depe
 
 `--additionaldeps <PATH>`
 
-Path to additonal *deps.json* file.
+Path to additional *deps.json* file.
 
 `--additionalprobingpath <PATH>`
 

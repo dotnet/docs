@@ -1,7 +1,6 @@
 ---
 title: Quick Start - Numbers in C# - C# Guide
 description: Learn C# by exploring numeric types, their properties and methods.
-keywords: C#, Get Started, tutorial, collections, numbers
 author: billwagner
 ms.author: wiwagn
 ms.date: 10/31/2017
@@ -11,13 +10,16 @@ ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.custom: mvc
 ---
+
 # Numbers in C# quick start #
 
 This quick start teaches you about the number types in C# interactively. You'll write small amountes of code, then you'll compile and run that code. It contains a series of lessons that explore numbers and math operations in C#. These lessons teach you the fundamentals of the C# language.
 
+This quick start expects you to have a machine you can use for development. The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting up your local development environment on Mac, PC or Linux.
+
 ## Explore integer math
 
-Create a directory named **numbers-quickstart**. Make that the current directory and run `dotnet new console -n NumbersInCSharp`.
+Create a directory named **numbers-quickstart**. Make that the current directory and run `dotnet new console -n NumbersInCSharp -o .`.
 
 Open **Program.cs** in your favorite editor, and replace the line `Console.Writeline("Hello World!");` with the following:
 
@@ -59,7 +61,7 @@ You can also experiment by performing multiple mathematics operations in the sam
 > and the code in the interactive window to see what to fix.
 > That exercise will help you learn the structure of C# code.     
 
-You've finished the first step. Before you start the next section, let's move the current code into a separate method. That makes it easier to start working with a new example. Rename your `Main` method to `WorkingWithIntegers` and write a new `Main` method that calls `WorkingWithIntegers`. When you have finished, your code should look like this:
+You've finished the first step. Before you start the next section, let's move the current code into a separate method. That makes it easier to start working with a new example. Rename your `Main` method to `WorkWithIntegers` and write a new `Main` method that calls `WorkWithIntegers`. When you have finished, your code should look like this:
 
 ```csharp
 using System;
@@ -368,8 +370,6 @@ Try some other formulas if you'd like. You can see an example solution by [looki
 You've completed the "Numbers in C#" quick start. You can continue with
 the [Branches and loops](branches-and-loops-local.md) quick start in
 your own development environment.
-
-
 
 You can learn more about numbers in C# in the following topics:
 

@@ -1,277 +1,320 @@
-### YamlMime:YamlDocument
-documentType: Tutorial
-title: Branches and loops
-metadata:
-  title:  Branches and loops
-  description: In this tutorial about branches and loops, you'll use your browser to learn C# interactively. You're going to write C# code and see the results of compiling and running your code directly in the browser.
-  audience: Developer
-  level: Beginner
-  ms.custom: mvc
-  displayType: two-column
-  interactive: csharp
-  nextTutorialHref: arrays-and-collections
-  nextTutorialTitle: Arrays and collections in C#
-items:
-- durationInMinutes: 1
-  content: |
-    This tutorial teaches you about how to write code that examines variables and changes execution path based on those variables. You'll write C# interactively, using your browser to write C# and see the results of compiling and running your code. It contains a series of lessons that explore branching and looping constructs in C#. These lessons teach you the fundamentals of the C# language.
-- title: Make decisions using the if statement
-  durationInMinutes: 4
-  content: |
-    Run the following code in the interactive window. To do that, type the following code block in the interactive window and click the **Run** button:
+---
+title: Quick Start - Branches and lops - C# Guide
+description: In this quick start about branches and loops, you'll write C# code to explore the language syntax that supports conditional branches and loops to repeat statements.
+author: billwagner
+ms.author: wiwagn
+ms.date: 10/31/2017
+ms.topic: article
+ms.prod: .net
+ms.technology: devlang-csharp
+ms.devlang: csharp
+ms.custom: mvc
+---
 
-    ```csharp
-    int a = 5;
-    int b = 6;
-    if (a + b > 10)
-        Console.WriteLine("The answer is greater than 10.");
-    ```
+# Branches and loops
 
-    Modify the declaration of `b` so that the sum is less than 10: 
+This quick start teaches you about how to write code that examines variables and changes execution path based on those variables. You'll write C# and see the results of compiling and running your code. It contains a series of lessons that explore branching and looping constructs in C#. These lessons teach you the fundamentals of the C# language.
 
-    ```csharp
-    int b = 3;
-    ```
+This quick start expects you to have a machine you can use for development. The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting up your local development environment on Mac, PC or Linux.
 
-    Click the **Run** button again. Because the answer is less than 10, nothing is printed. The **condition** you're testing is false. You don't have any code to execute because you've only
-    written one of the possible branches for an `if` statement: the true branch.
+## Make decisions using the `if` statement
 
-    > [!TIP]
-    > As you explore C# (or any programming language), you'll
-    > make mistakes when you write code. The **compiler** will
-    > find those errors and report them to you. When the output
-    > contains error messages, look closely at the example code,
-    > and the code in the interactive window to see what to fix.
-    > That exercise will help you learn the structure of C# code.     
+Create a directory named **branches-quickstart**. Make that the current directory and run `dotnet new console -n BranchesAndLoops -o .`.
 
-    This first sample shows the power of `if` and boolean types. A *boolean* is a variable that can have one of two values: `true` or `false`. C# defines a special type, `bool` for boolean variables. The `if` statement checks the value of a `bool`. When the value is `true`, the statement following the `if` executes. Otherwise, it is skipped. 
+Open **Program.cs** in your favorite editor, and replace the line `Console.Writeline("Hello World!");` with the following:
 
-    This process of checking conditions and executing statements based on those conditions is very powerful. Let's explore more.
+```csharp
+int a = 5;
+int b = 6;
+if (a + b > 10)
+    Console.WriteLine("The answer is greater than 10.");
+```
 
-    > [!NOTE]
-    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
+Try this code by typing `dotnet run` in the your console window.
 
-- title: Make if and else work together
-  durationInMinutes: 10
-  content: |
-    
-    To execute different code in both the true and false branches, you 
-    create an `else` branch that executes when the condition is false. Try this:
+Modify the declaration of `b` so that the sum is less than 10: 
 
-    ```csharp
-    int a = 5;
-    int b = 3;
-    if (a + b > 10)
-        Console.WriteLine("The answer is greater than 10");
-    else
-        Console.WriteLine("The answer is not greater than 10");
-    ```
+```csharp
+int b = 3;
+```
 
-    The statement following the `else` keyword executes only when the condition being tested is `false`. Combining `if` and `else` with boolean conditions provides all the power you need.
-    
-    > [!IMPORTANT]
-    > The indentation under the `if` and `else` statements is for human readers.
-    > The C# language doesn't treat indentation or whitespace as significant. 
-    > The statement following the `if` or `else` keyword will be executed based
-    > on the condition. All the samples in this tutorial follow a common
-    > practice to indent lines based on execution.
+Type `dotnet run` again. Because the answer is less than 10, nothing is printed. The **condition** you're testing is false. You don't have any code to execute because you've only
+written one of the possible branches for an `if` statement: the true branch.
 
-    Because indentation is not significant, you need to use `{` and `}` to
-    indicate when you want more than one statement to be part of the block
-    that executes conditionally. C# programmers typically use those braces
-    on all `if` and `else` clauses. The following example is the same as what you
-    just created. Try it.
+> [!TIP]
+> As you explore C# (or any programming language), you'll
+> make mistakes when you write code. The **compiler** will
+> find those errors and report them to you. When the output
+> contains error messages, look closely at the example code,
+> and the code in the interactive window to see what to fix.
+> That exercise will help you learn the structure of C# code.     
 
-    ```csharp
-    int a = 5;
-    int b = 3;
-    if (a + b > 10)
+This first sample shows the power of `if` and boolean types. A *boolean* is a variable that can have one of two values: `true` or `false`. C# defines a special type, `bool` for boolean variables. The `if` statement checks the value of a `bool`. When the value is `true`, the statement following the `if` executes. Otherwise, it is skipped. 
+
+This process of checking conditions and executing statements based on those conditions is very powerful. Let's explore more
+
+
+## Make if and else work together
+
+To execute different code in both the true and false branches, you 
+create an `else` branch that executes when the condition is false. Try this. Add the last two lines in the code below to your `Main` method (you should already have the first four):
+
+```csharp
+int a = 5;
+int b = 3;
+if (a + b > 10)
+    Console.WriteLine("The answer is greater than 10");
+else
+    Console.WriteLine("The answer is not greater than 10");
+```
+
+The statement following the `else` keyword executes only when the condition being tested is `false`. Combining `if` and `else` with boolean conditions provides all the power you need.
+
+> [!IMPORTANT]
+> The indentation under the `if` and `else` statements is for human readers.
+> The C# language doesn't treat indentation or whitespace as significant. 
+> The statement following the `if` or `else` keyword will be executed based
+> on the condition. All the samples in this quick start follow a common
+> practice to indent lines based on execution.
+
+Because indentation is not significant, you need to use `{` and `}` to
+indicate when you want more than one statement to be part of the block
+that executes conditionally. C# programmers typically use those braces
+on all `if` and `else` clauses. The following example is the same as what you
+just created. Modify your code above to match the following code:
+
+```csharp
+int a = 5;
+int b = 3;
+if (a + b > 10)
+{
+    Console.WriteLine("The answer is greater than 10");
+}
+else
+{
+    Console.WriteLine("The answer is not greater than 10");
+}
+```
+
+> [!TIP]
+> Through the rest of this quick start, the code samples all include the braces,
+> following accepted practices.
+
+You can test more complicated conditions. Add the following code in your `Main` method after the code you've written so far:
+
+```csharp
+ int c = 4;
+ if ((a + b + c > 10) && (a > b))
+{
+    Console.WriteLine("The answer is greater than 10");
+    Console.WriteLine("And the first number is greater than the second");
+}
+else
+{
+    Console.WriteLine("The answer is not greater than 10");
+    Console.WriteLine("Or the first number is not greater than the second");
+}
+```
+
+The `&&` represents "and". It means both conditions must be true to execute
+the statement in the true branch.  These examples also show that you can have multiple
+statements in each conditional branch, provided you enclose them in `{` and `}`.
+
+You can also use  `||` to represent "or". Add the following code after what you've written so far:
+
+```csharp
+if ((a + b + c > 10) || (a > b))
+{
+    Console.WriteLine("The answer is greater than 10");
+    Console.WriteLine("Or the first number is greater than the second");
+}
+else
+{
+    Console.WriteLine("The answer is not greater than 10");
+    Console.WriteLine("And the first number is not greater than the second");
+}
+```
+
+You've finished the first step. Before you start the next section, let's move the current code into a separate method. That makes it easier to start working with a new example. Rename your `Main` method to `ExploreIf` and write a new `Main` method that calls `ExploreIf`. When you have finished, your code should look like this:
+
+```csharp
+using System;
+
+namespace BranchesAndLoops
+{
+    class Program
     {
-        Console.WriteLine("The answer is greater than 10");
+        static void ExploreIf()
+        {
+            int a = 5;
+            int b = 3;
+            if (a + b > 10)
+            {
+                Console.WriteLine("The answer is greater than 10");
+            }
+            else
+            {
+                Console.WriteLine("The answer is not greater than 10");
+            }
+
+            if ((a + b + c > 10) && (a > b))
+            {
+                Console.WriteLine("The answer is greater than 10");
+                Console.WriteLine("And the first number is greater than the second");
+            }
+            else
+            {
+                Console.WriteLine("The answer is not greater than 10");
+                Console.WriteLine("Or the first number is not greater than the second");
+            }
+
+            if ((a + b + c > 10) || (a > b))
+            {
+                Console.WriteLine("The answer is greater than 10");
+                Console.WriteLine("Or the first number is greater than the second");
+            }
+            else
+            {
+                Console.WriteLine("The answer is not greater than 10");
+                Console.WriteLine("And the first number is not greater than the second");
+            }            
+        }
+
+        static void Main(string[] args)
+        {
+            ExploreIf();
+        }
     }
-    else
-    {
-        Console.WriteLine("The answer is not greater than 10");
-    }
-    ```
+}
+```
 
-    > [!TIP]
-    > Through the rest of this tutorial, the code samples all include the braces,
-    > following accepted practices.
+## Use loops to repeat operations
 
-    You can test more complicated conditions:
+Comment out the call to `ExploreIf()`. It will make the output less cluttered as you work in this section:
 
-    ```csharp
-    int a = 5;
-    int b = 3;
-    int c = 4;
-    if ((a + b + c > 10) && (a > b))
-    {
-        Console.WriteLine("The answer is greater than 10");
-        Console.WriteLine("And the first number is greater than the second");
-    }
-    else
-    {
-        Console.WriteLine("The answer is not greater than 10");
-        Console.WriteLine("Or the first number is not greater than the second");
-    }
-    ```
-    
-    The `&&` represents "and". It means both conditions must be true to execute
-    the statement in the true branch.  These examples also show that you can have multiple
-    statements in each conditional branch, provided you enclose them in `{` and `}`.
-    
-    You can also use  `||` to represent "or":
+```csharp
+//ExploreIf();
+```
 
-    ```csharp
-    int a = 5;
-    int b = 3;
-    int c = 4;
-    if ((a + b + c > 10) || (a > b))
-    {
-        Console.WriteLine("The answer is greater than 10");
-        Console.WriteLine("Or the first number is greater than the second");
-    }
-    else
-    {
-        Console.WriteLine("The answer is not greater than 10");
-        Console.WriteLine("And the first number is not greater than the second");
-    }
-    ```
+The `//` starts a **comment** in C#. Comments are any text you want to keep in your source code, but not execute as code. The compiler does not generate any executable code from comments.
 
-    > [!NOTE]
-    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
+Another important concept to create larger programs is **loops**. You'll
+use loops to repeat statements that you want executed more than once. Try
+this code in your `Main` method:
 
-- title: Use loops to repeat operations
-  durationInMinutes: 6
-  content: |
-    Another important concept to create larger programs is **loops**. You'll
-    use loops to repeat statements that you want executed more than once. Try
-    this code in the interactive window:
+```csharp
+int counter = 0;
+while (counter < 10)
+{
+  Console.WriteLine($"Hello World! The counter is {counter}");
+  counter++;
+}
+```
 
-    ```csharp
-    int counter = 0;
-    while (counter < 10)
-    {
-      Console.WriteLine($"Hello World! The counter is {counter}");
-      counter++;
-    }
-    ```
+The `while` statement checks a condition and executes the statement
+following the `while`. It will repeat checking the condition and
+executing those statements until the condition is false.
 
-    The `while` statement checks a condition and executes the statement
-    following the `while`. It will repeat checking the condition and
-    executing those statements until the condition is false.
+There's one other new operator in this example. The `++` after
+the `counter` variable is the **increment** operator. It adds 1
+to the value of counter, and stores that value in the counter variable.
 
-    There's one other new operator in this example. The `++` after
-    the `counter` variable is the **increment** operator. It adds 1
-    to the value of counter, and stores that value in the counter variable.
+> [!IMPORTANT]
+> Make sure that the `while` loop condition does switch to
+> false as you execute the code. Otherwise, you create an
+> **infinite loop** where your program never ends. Let's
+> not demonstrate that, because you have to force your program to
+> quit using **CTRL-C** or other means.
 
-    > [!IMPORTANT]
-    > Make sure that the `while` loop condition does switch to
-    > false as you execute the code. Otherwise, you create an
-    > **infinite loop** where your program never ends. Let's
-    > not demonstrate that, because the engine that runs your
-    > code will time out and you'll see no output from your program.
+The `while` loop tests the condition before executing the code
+following the `while`. The `do` ... `while` loop executes the 
+code first, and then checks the condition. It looks like this:
 
-    The `while` loop tests the condition before executing the code
-    following the `while`. The `do` ... `while` loop executes the 
-    code first, and then checks the condition. It looks like this:
+```csharp
+counter = 0;
+do
+{
+  Console.WriteLine($"Hello World! The counter is {counter}");
+  counter++;
+} while (counter < 10);
+```
 
-    ```csharp
-    int counter = 0;
-    do
-    {
-      Console.WriteLine($"Hello World! The counter is {counter}");
-      counter++;
-    } while (counter < 10);
-    ```
-    
-    This `do` loop and the earlier `while` loop work the same. 
-    
-    Let's move on to one last loop statement.
+This `do` loop and the earlier `while` loop work the same. 
 
-    > [!NOTE]
-    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
+Let's move on to one last loop statement.
 
-- title: Work with the for loop
-  durationInMinutes: 5
-  content: |
-    Another common loop statement that you'll see in C# code is the
-    `for` loop. Try this code in the interactive window:
+## Work with the for loop
 
-    ```csharp
-    for(int counter = 0; counter < 10; counter++)
-    {
-      Console.WriteLine($"Hello World! The counter is {counter}");
-    } 
-    ```
+Another common loop statement that you'll see in C# code is the
+`for` loop. Try this code in the interactive window:
 
-    This does the same work as the `while` loop and the `do` loop you've
-    already used. The `for` statement has three parts that control
-    how it works. 
+```csharp
+for(int index = 0; index < 10; index++)
+{
+  Console.WriteLine($"Hello World! The index is {index}");
+} 
+```
 
-    The first part is the **for initializer**: `for counter = 0;` declares
-    that `counter` is the loop variable, and sets its initial value to `0`.
+This does the same work as the `while` loop and the `do` loop you've
+already used. The `for` statement has three parts that control
+how it works. 
 
-    The middle part is the **for condition**: `counter < 10` declares that this
-    `for` loop continues to execute as long as the value of counter is less than 10.
+The first part is the **for initializer**: `for index = 0;` declares
+that `index` is the loop variable, and sets its initial value to `0`.
 
-    The final part is the **for iterator**: `counter++` specifies how to modify the loop
-    variable after executing the block following the `for` statement. Here, it specifies
-    that `counter` should be incremented by 1 each time the block executes.
+The middle part is the **for condition**: `index < 10` declares that this
+`for` loop continues to execute as long as the value of counter is less than 10.
 
-    Experiment with these yourself. Try each of the following:
+The final part is the **for iterator**: `index++` specifies how to modify the loop
+variable after executing the block following the `for` statement. Here, it specifies
+that `index` should be incremented by 1 each time the block executes.
 
-    - Change the initializer to start at a different value.
-    - Change the condition to stop at a different value.
+Experiment with these yourself. Try each of the following:
 
-    When you're done, let's move on to write some code yourself to
-    use what you've learned.
+- Change the initializer to start at a different value.
+- Change the condition to stop at a different value.
 
-    > [!NOTE]
-    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
+When you're done, let's move on to write some code yourself to
+use what you've learned.
 
-- title: Combining branches and loops
-  durationInMinutes: 12
-  content: |
-    Now that you've seen the `if` statement and the looping
-    constructs in the C# language, see if you can write C# code to
-    find the sum of all integers 1 through 20 that are divisible
-    by 3.  Here are a few hints:
-    
-    - The `%` operator gives you the remainder of a division operation.
-    - The `if` statement givesx you the condition to see if a number should be part of the sum.
-    - The `for` loop can help you repeat a series of steps for all the numbers 1 through 20.
+## Combine branches and loops
 
-    Try it yourself. Then check how you did.
+Now that you've seen the `if` statement and the looping
+constructs in the C# language, see if you can write C# code to
+find the sum of all integers 1 through 20 that are divisible
+by 3.  Here are a few hints:
 
-    > [!NOTE]
-    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
+- The `%` operator gives you the remainder of a division operation.
+- The `if` statement givesx you the condition to see if a number should be part of the sum.
+- The `for` loop can help you repeat a series of steps for all the numbers 1 through 20.
 
-- title: Complete challenge
-  durationInMinutes: 1
-  content: |
-    Did you come up with something like this?
+Try it yourself. Then check how you did.
 
-    ```csharp
-    int sum = 0;
-    for (int number = 1; number < 21; number++)
-    {
-      if (number % 3 == 0)
-      {
-        sum = sum + number;
-      }
-    }
-    Console.WriteLine($"The sum is {sum}");
-    ```
+## Complete challenge
 
-    > [!NOTE]
-    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
+Did you come up with something like this?
 
-  content: |
-    You've completed the "branches and loops" tutorial. You can learn more about these concepts in these topics:
+```csharp
+int sum = 0;
+for (int number = 1; number < 21; number++)
+{
+  if (number % 3 == 0)
+  {
+    sum = sum + number;
+  }
+}
+Console.WriteLine($"The sum is {sum}");
+```
 
-    [If and else statement](../language-reference/keywords/if-else.md)   
-    [While statement](../language-reference/keywords/while.md)   
-    [Do statement](../language-reference/keywords/do.md)   
-    [For statement](../language-reference/keywords/for.md)   
+You've completed the "branches and loops" quick start. You can compare the code you wrote by [looking at the finished sample code on GitHub](https://github.com/dotnet/docs/tree/master/samples/csharp/branches-quickstart/Program.cs).
+
+You can continue with
+the [Arrays and collections](arrays-and-collections.md) quick start in
+your own development environment.
+
+You can learn more about these concepts in these topics:
+
+[If and else statement](../language-reference/keywords/if-else.md)   
+[While statement](../language-reference/keywords/while.md)   
+[Do statement](../language-reference/keywords/do.md)   
+[For statement](../language-reference/keywords/for.md)   

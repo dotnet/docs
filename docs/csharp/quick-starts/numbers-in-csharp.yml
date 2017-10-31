@@ -3,8 +3,9 @@ documentType: Tutorial
 title: Numbers in C#
 metadata:
   title:  Numbers in C#
-  description: In this tutorial about numeric types, you'll use your browser to learn C# interactively. You're going to write C# code and see the results of compiling and running your code directly in the browser.
+  description: In this quick start about numeric types, you'll use your browser to learn C# interactively. You're going to write C# code and see the results of compiling and running your code directly in the browser.
   audience: Developer
+  ms.custom: mvc
   level: Beginner
   nextTutorialHref: branches-and-loops
   nextTutorialTitle: Branches and loops in C#
@@ -13,7 +14,7 @@ metadata:
 items:
 - durationInMinutes: 1
   content: |
-    This tutorial teaches you about the number types in C# interactively, using your browser to write C# and see the results of compiling and running your code. It contains a series of lessons that explore numbers and math operations in C#. These lessons teach you the fundamentals of the C# language.
+    This quick start teaches you about the number types in C# interactively, using your browser to write C# and see the results of compiling and running your code. It contains a series of lessons that explore numbers and math operations in C#. These lessons teach you the fundamentals of the C# language.
 - title: Explore integer math
   durationInMinutes: 4
   content: |
@@ -33,7 +34,7 @@ items:
     - `/` for division
 
     > [!TIP]
-    > Throughout this tutorial, you can explore on your own by modifying the code you've written in the interactive window. This tutorial provides examples that you can try at each step.
+    > Throughout this quick start, you can explore on your own by modifying the code you've written in the interactive window. This quick start provides examples that you can try at each step.
 
     Start by exploring those different operations. Modify the third line to try each of these operations. After each edit, click the **Run** button.
 
@@ -293,7 +294,11 @@ items:
     > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
 
   content: |
-    You've completed the "Numbers in C#" tutorial. You can learn more about numbers in C# in the following topics:
+    You've completed the "Numbers in C#" quick start. 
+    
+    You can continue these quick starts on your own development environment. The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting up your local development environment. Once you've done that, continue with [Branches and loops](branches-and-loops-local.md) in your local environment.
+
+    You can learn more about numbers in C# in the following topics:
 
     [Integral Types Table](../language-reference/keywords/integral-types-table.md)   
     [Floating-Point Types Table](../language-reference/keywords/floating-point-types-table.md)   

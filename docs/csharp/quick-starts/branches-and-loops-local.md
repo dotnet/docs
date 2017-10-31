@@ -3,7 +3,7 @@ documentType: Tutorial
 title: Branches and loops
 metadata:
   title:  Branches and loops
-  description: In this quick start about branches and loops, you'll use your browser to learn C# interactively. You're going to write C# code and see the results of compiling and running your code directly in the browser.
+  description: In this tutorial about branches and loops, you'll use your browser to learn C# interactively. You're going to write C# code and see the results of compiling and running your code directly in the browser.
   audience: Developer
   level: Beginner
   ms.custom: mvc
@@ -14,7 +14,7 @@ metadata:
 items:
 - durationInMinutes: 1
   content: |
-    This quick start teaches you about how to write code that examines variables and changes execution path based on those variables. You'll write C# interactively, using your browser to write C# and see the results of compiling and running your code. It contains a series of lessons that explore branching and looping constructs in C#. These lessons teach you the fundamentals of the C# language.
+    This tutorial teaches you about how to write code that examines variables and changes execution path based on those variables. You'll write C# interactively, using your browser to write C# and see the results of compiling and running your code. It contains a series of lessons that explore branching and looping constructs in C#. These lessons teach you the fundamentals of the C# language.
 - title: Make decisions using the if statement
   durationInMinutes: 4
   content: |
@@ -73,7 +73,7 @@ items:
     > The indentation under the `if` and `else` statements is for human readers.
     > The C# language doesn't treat indentation or whitespace as significant. 
     > The statement following the `if` or `else` keyword will be executed based
-    > on the condition. All the samples in this quick start follow a common
+    > on the condition. All the samples in this tutorial follow a common
     > practice to indent lines based on execution.
 
     Because indentation is not significant, you need to use `{` and `}` to
@@ -96,7 +96,7 @@ items:
     ```
 
     > [!TIP]
-    > Through the rest of this quick start, the code samples all include the braces,
+    > Through the rest of this tutorial, the code samples all include the braces,
     > following accepted practices.
 
     You can test more complicated conditions:
@@ -269,9 +269,7 @@ items:
     > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
 
   content: |
-    You've completed the "branches and loops" quick start. You can learn more about these concepts in these topics:
-
-    You can continue these quick starts on your own development environment. The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting up your local development environment. Once you've done that, continue with [List collection quickstart](arrays-and-collections.md) in your local environment.
+    You've completed the "branches and loops" tutorial. You can learn more about these concepts in these topics:
 
     [If and else statement](../language-reference/keywords/if-else.md)   
     [While statement](../language-reference/keywords/while.md)   

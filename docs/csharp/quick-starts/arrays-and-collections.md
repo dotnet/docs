@@ -9,10 +9,11 @@ ms.topic: article
 ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
+ms.custom: mvc
 ---
 # C# Quick start: Collections #
 
-This tutorial provides an introduction to the C# language and the basics of the <xref:System.Collections.Generic.List%601>
+This quick start provides an introduction to the C# language and the basics of the <xref:System.Collections.Generic.List%601>
 class.
 
 ## A simple list example.
@@ -213,7 +214,7 @@ You can see an example solution by [looking at the finished sample code on GitHu
 
 With each iteration of the loop, you're taking the last two integers in the list, summing them, and adding that value to the list. The loop repeats until you've added 20 items to the list.
 
-Congratulations, you've completed the list tutorial.
+Congratulations, you've completed the list quick start.
 
 You can learn more about working with the `List` type in the
 [.NET Guide](../../standard/index.md) topic on [collections](../../standard/collections/index.md). You'll also learn about many other collection types.

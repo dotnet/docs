@@ -134,7 +134,7 @@ and `explicitFieldTwo`, not `localVariableOne` and `localVariableTwo`:
 
 For any field where an explicit name is not provided, an applicable implicit
 name will be projected. Note that there is no requirement to provide semantic names,
-either explicitly or implicitly. The folowing initializer will have field
+either explicitly or implicitly. The following initializer will have field
 names `Item1`, whose value is `42` and `StringContent`, whose value is "The answer to everything":
 
 [!code-csharp[MixedTuple](../../samples/snippets/csharp/tuples/tuples/program.cs#MixedTuple "mixed tuple")]

@@ -147,6 +147,7 @@ class Client
         CalculatorClient client = new CalculatorClient();  
         client.Endpoint.Address = serviceAddress;  
         client.Add(10,3);  
+    }
 }  
 ```  
   

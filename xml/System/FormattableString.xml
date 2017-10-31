@@ -33,7 +33,7 @@
 ## Remarks  
  A composite format string consists of fixed text intermixed with indexed placeholders, called format items, that correspond to the objects in the list. The formatting operation yields a result string that consists of the original fixed text intermixed with the string representation of the objects in the list. Composite formatting is supported by methods such as <xref:System.String.Format%2A?displayProperty=nameWithType>, <xref:System.Console.WriteLine%2A?displayProperty=nameWithType>, and <xref:System.Text.StringBuilder.AppendFormat%2A?displayProperty=nameWithType>.  For more information on composite formatting, see [Composite Formatting](~/docs/standard/base-types/composite-formatting.md).  
   
- A <xref:System.FormattableString> instance may result from the an interpolated string in C# or Visual Basic.  
+ A <xref:System.FormattableString> instance may result from an interpolated string in C# or Visual Basic.  
   
  ]]></format>
     </remarks>

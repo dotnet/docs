@@ -31,5 +31,5 @@ manager: "erikre"
  Other common scenarios that self-hosting enables are rich client applications, such as those based on [!INCLUDE[avalon1](../../../../includes/avalon1-md.md)] or Windows Forms (WinForms). This hosting option also makes it easy for rich client applications, such as [!INCLUDE[avalon2](../../../../includes/avalon2-md.md)] and WinForms applications, to communicate with the outside world. For example, a peer-to-peer collaboration client that uses [!INCLUDE[avalon2](../../../../includes/avalon2-md.md)] for its user interface and also hosts a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service that allows other clients to connect to it and share information.  
   
 ## See Also  
- [Hosting Services](../../../../docs/framework/wcf/hosting-services.md)   
+ [Hosting Services](../../../../docs/framework/wcf/hosting-services.md)  
  [Getting Started Tutorial](../../../../docs/framework/wcf/getting-started-tutorial.md)

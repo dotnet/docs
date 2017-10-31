@@ -39,8 +39,8 @@ The `checked` keyword is used to explicitly enable overflow checking for integra
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
- [Checked and Unchecked](../../../csharp/language-reference/keywords/checked-and-unchecked.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+ [Checked and Unchecked](../../../csharp/language-reference/keywords/checked-and-unchecked.md)  
  [unchecked](../../../csharp/language-reference/keywords/unchecked.md)

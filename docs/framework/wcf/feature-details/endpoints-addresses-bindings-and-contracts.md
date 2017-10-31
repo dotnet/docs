@@ -94,5 +94,5 @@ All communication with a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)]
  Describes how to detect errors in service implementations and configurations without hosting the service using the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md).  
   
 ## See Also  
- [Configuring Services](../../../../docs/framework/wcf/configuring-services.md)   
+ [Configuring Services](../../../../docs/framework/wcf/configuring-services.md)  
  [Extending Bindings](../../../../docs/framework/wcf/extending/extending-bindings.md)

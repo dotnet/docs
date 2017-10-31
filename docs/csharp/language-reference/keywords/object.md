@@ -27,8 +27,8 @@ The `object` type is an alias for <xref:System.Object> in the .NET Framework. In
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
- [Reference Types](../../../csharp/language-reference/keywords/reference-types.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+ [Reference Types](../../../csharp/language-reference/keywords/reference-types.md)  
  [Value Types](../../../csharp/language-reference/keywords/value-types.md)

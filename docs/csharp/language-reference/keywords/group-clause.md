@@ -77,12 +77,12 @@ group person by new {name = person.surname, city = person.city};
  At compile time, `group` clauses are translated into calls to the <xref:System.Linq.Enumerable.GroupBy%2A> method.  
   
 ## See Also  
- <xref:System.Linq.IGrouping%602>   
- <xref:System.Linq.Enumerable.GroupBy%2A>   
- <xref:System.Linq.Enumerable.ThenBy%2A>   
- <xref:System.Linq.Enumerable.ThenByDescending%2A>   
- [Query Keywords (LINQ)](../../../csharp/language-reference/keywords/query-keywords.md)   
- [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)   
- [How to: Create a Nested Group](../../../csharp/programming-guide/linq-query-expressions/how-to-create-a-nested-group.md)   
- [How to: Group Query Results](../../../csharp/programming-guide/linq-query-expressions/how-to-group-query-results.md)   
+ <xref:System.Linq.IGrouping%602>  
+ <xref:System.Linq.Enumerable.GroupBy%2A>  
+ <xref:System.Linq.Enumerable.ThenBy%2A>  
+ <xref:System.Linq.Enumerable.ThenByDescending%2A>  
+ [Query Keywords (LINQ)](../../../csharp/language-reference/keywords/query-keywords.md)  
+ [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)  
+ [How to: Create a Nested Group](../../../csharp/programming-guide/linq-query-expressions/how-to-create-a-nested-group.md)  
+ [How to: Group Query Results](../../../csharp/programming-guide/linq-query-expressions/how-to-group-query-results.md)  
  [How to: Perform a Subquery on a Grouping Operation](../../../csharp/programming-guide/linq-query-expressions/how-to-perform-a-subquery-on-a-grouping-operation.md)

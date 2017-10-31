@@ -185,10 +185,10 @@ End Try
  [!code-vb[csAsyncExceptions#3](../../../csharp/language-reference/keywords/codesnippet/VisualBasic/try-catch-finally-statement_8.vb)]  
   
 ## See Also  
- <xref:Microsoft.VisualBasic.Information.Err%2A>   
- <xref:System.Exception>   
- [Exit Statement](../../../visual-basic/language-reference/statements/exit-statement.md)   
- [On Error Statement](../../../visual-basic/language-reference/statements/on-error-statement.md)   
- [Best Practices for Using Code Snippets](/visualstudio/ide/best-practices-for-using-code-snippets)   
- [Exception Handling](https://msdn.microsoft.com/library/dd997415)   
+ <xref:Microsoft.VisualBasic.Information.Err%2A>  
+ <xref:System.Exception>  
+ [Exit Statement](../../../visual-basic/language-reference/statements/exit-statement.md)  
+ [On Error Statement](../../../visual-basic/language-reference/statements/on-error-statement.md)  
+ [Best Practices for Using Code Snippets](/visualstudio/ide/best-practices-for-using-code-snippets)  
+ [Exception Handling](https://msdn.microsoft.com/library/dd997415)  
  [Throw Statement](../../../visual-basic/language-reference/statements/throw-statement.md)

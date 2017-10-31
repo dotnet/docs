@@ -70,8 +70,8 @@ You use the `Const` statement to declare a constant and set its value. By declar
     ```  
   
 ## See Also  
- [Const Statement](../../../../visual-basic/language-reference/statements/const-statement.md)   
- [Constant and Literal Data Types](constant-and-literal-data-types.md)   
+ [Const Statement](../../../../visual-basic/language-reference/statements/const-statement.md)  
+ [Constant and Literal Data Types](constant-and-literal-data-types.md)  
  [Constants Overview](constants-overview.md)
  [How to: Declare A Constant](how-to-declare-a-constant.md)
  [User-Defined Constants](user-defined-constants.md)
@@ -85,9 +85,9 @@ You use the `Const` statement to declare a constant and set its value. By declar
  [How to: Determine the String Associated with an Enumeration Value](how-to-determine-the-string-associated-with-an-enumeration-value.md)
  [When to Use an Enumeration](when-to-use-an-enumeration.md)
 
- [Enumerations Overview](enumerations-overview.md)   
- [Constants Overview](constants-overview.md)   
- [How to: Declare an Enumeration](how-to-declare-enumerations.md)   
- [Enumerations and Name Qualification](enumerations-and-name-qualification.md)   
- [Option Strict Statement](../../../../visual-basic/language-reference/statements/option-strict-statement.md)   
+ [Enumerations Overview](enumerations-overview.md)  
+ [Constants Overview](constants-overview.md)  
+ [How to: Declare an Enumeration](how-to-declare-enumerations.md)  
+ [Enumerations and Name Qualification](enumerations-and-name-qualification.md)  
+ [Option Strict Statement](../../../../visual-basic/language-reference/statements/option-strict-statement.md)  
  [Constants and Enumerations](../../../../visual-basic/language-reference/constants-and-enumerations.md)

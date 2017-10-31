@@ -29,6 +29,6 @@ The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] compiler calls the Assembly Link
 2.  If the error persists, gather information about the circumstances and notify Microsoft Product Support Services.  
   
 ## See Also  
- [Al.exe (Assembly Linker)](https://msdn.microsoft.com/library/c405shex)   
- [Al.exe Tool Errors and Warnings](http://msdn.microsoft.com/en-us/7f125d49-0a03-47a6-9ba9-d61a679a7d4b)   
+ [Al.exe (Assembly Linker)](https://msdn.microsoft.com/library/c405shex)  
+ [Al.exe Tool Errors and Warnings](http://msdn.microsoft.com/en-us/7f125d49-0a03-47a6-9ba9-d61a679a7d4b)  
  [Talk to Us](/visualstudio/ide/talk-to-us)

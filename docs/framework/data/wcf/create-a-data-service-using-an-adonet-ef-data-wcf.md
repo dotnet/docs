@@ -73,7 +73,7 @@ manager: "erikre"
 8.  To test the Northwind.svc data service by using a Web browser, follow the instructions in the topic [Accessing the Service from a Web Browser](../../../../docs/framework/data/wcf/accessing-the-service-from-a-web-browser-wcf-data-services-quickstart.md).  
   
 ## See Also  
- [Defining WCF Data Services](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)   
- [Data Services Providers](../../../../docs/framework/data/wcf/data-services-providers-wcf-data-services.md)   
- [How to: Create a Data Service Using the Reflection Provider](../../../../docs/framework/data/wcf/create-a-data-service-using-rp-wcf-data-services.md)   
+ [Defining WCF Data Services](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)  
+ [Data Services Providers](../../../../docs/framework/data/wcf/data-services-providers-wcf-data-services.md)  
+ [How to: Create a Data Service Using the Reflection Provider](../../../../docs/framework/data/wcf/create-a-data-service-using-rp-wcf-data-services.md)  
  [How to: Create a Data Service Using a LINQ to SQL Data Source](../../../../docs/framework/data/wcf/create-a-data-service-using-linq-to-sql-wcf.md)

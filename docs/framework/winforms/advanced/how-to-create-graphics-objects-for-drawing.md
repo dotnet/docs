@@ -179,7 +179,7 @@ Before you can draw lines and shapes, render text, or display and manipulate ima
     |Images|[How to: Render Images with GDI+](../../../../docs/framework/winforms/advanced/how-to-render-images-with-gdi.md)|  
   
 ## See Also  
- [Getting Started with Graphics Programming](../../../../docs/framework/winforms/advanced/getting-started-with-graphics-programming.md)   
- [Graphics and Drawing in Windows Forms](../../../../docs/framework/winforms/advanced/graphics-and-drawing-in-windows-forms.md)   
- [Lines, Curves, and Shapes](../../../../docs/framework/winforms/advanced/lines-curves-and-shapes.md)   
+ [Getting Started with Graphics Programming](../../../../docs/framework/winforms/advanced/getting-started-with-graphics-programming.md)  
+ [Graphics and Drawing in Windows Forms](../../../../docs/framework/winforms/advanced/graphics-and-drawing-in-windows-forms.md)  
+ [Lines, Curves, and Shapes](../../../../docs/framework/winforms/advanced/lines-curves-and-shapes.md)  
  [How to: Render Images with GDI+](../../../../docs/framework/winforms/advanced/how-to-render-images-with-gdi.md)

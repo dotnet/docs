@@ -85,5 +85,5 @@ Removes an IP address or DNS name from the proxy bypass list.
 ```  
   
 ## See Also  
- <xref:System.Net.WebProxy?displayProperty=nameWithType>   
+ <xref:System.Net.WebProxy?displayProperty=nameWithType>  
  [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

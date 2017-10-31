@@ -58,13 +58,13 @@ Defines the SOAP message security settings on this `netMsmqBinding` binding.
 |[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-netmsmqbinding.md)|Defines the security settings for a binding.|  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.MessageSecurityOverMsmqElement>   
- <xref:System.ServiceModel.Configuration.NetMsmqSecurityElement.Message%2A>   
- <xref:System.ServiceModel.NetMsmqSecurity.Message%2A>   
- <xref:System.ServiceModel.MessageSecurityOverMsmq>   
- [Queues in WCF](../../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)   
- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)   
- [Bindings](../../../../../docs/framework/wcf/bindings.md)   
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)   
- [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/en-us/bd8b277b-932f-472f-a42a-b02bb5257dfb)   
+ <xref:System.ServiceModel.Configuration.MessageSecurityOverMsmqElement>  
+ <xref:System.ServiceModel.Configuration.NetMsmqSecurityElement.Message%2A>  
+ <xref:System.ServiceModel.NetMsmqSecurity.Message%2A>  
+ <xref:System.ServiceModel.MessageSecurityOverMsmq>  
+ [Queues in WCF](../../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)  
+ [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
+ [Bindings](../../../../../docs/framework/wcf/bindings.md)  
+ [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
+ [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/en-us/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
  [\<binding>](../../../../../docs/framework/misc/binding.md)

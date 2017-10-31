@@ -27,5 +27,5 @@ ms.author: dotnetcontent
 -   Perform file operations with functions defined in the `System.IO` namespace.  
   
 ## See Also  
- <xref:System.IO>   
+ <xref:System.IO>  
  [File Access with Visual Basic](../../../visual-basic/developing-apps/programming/drives-directories-files/file-access.md)

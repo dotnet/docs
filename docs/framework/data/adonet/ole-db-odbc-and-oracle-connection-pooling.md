@@ -77,6 +77,6 @@ Provider=SQLOLEDB;OLE DB Services=-4;Data Source=localhost;Integrated Security=S
 |`Pooling`|'true'|When `true`, the connection is drawn from the appropriate pool, or if necessary, created and added to the appropriate pool.|  
   
 ## See Also  
- [Connection Pooling](../../../../docs/framework/data/adonet/connection-pooling.md)   
- [Performance Counters](../../../../docs/framework/data/adonet/performance-counters.md)   
+ [Connection Pooling](../../../../docs/framework/data/adonet/connection-pooling.md)  
+ [Performance Counters](../../../../docs/framework/data/adonet/performance-counters.md)  
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

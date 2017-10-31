@@ -106,6 +106,6 @@ class MyHashtable : Hashtable
  [!code-vb[System.Diagnostics.DebuggerBrowsableAttribute#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.DebuggerBrowsableAttribute/VB/module1.vb#1)]  
   
 ## See Also  
- <xref:System.Diagnostics.DebuggerDisplayAttribute>   
- <xref:System.Diagnostics.DebuggerBrowsableAttribute>   
+ <xref:System.Diagnostics.DebuggerDisplayAttribute>  
+ <xref:System.Diagnostics.DebuggerBrowsableAttribute>  
  <xref:System.Diagnostics.DebuggerTypeProxyAttribute>

@@ -47,9 +47,9 @@ Constants are immutable values which are known at compile time and do not change
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)   
- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)   
- [Types](../../../csharp/programming-guide/types/index.md)   
- [readonly](../../../csharp/language-reference/keywords/readonly.md)   
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)  
+ [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)  
+ [Types](../../../csharp/programming-guide/types/index.md)  
+ [readonly](../../../csharp/language-reference/keywords/readonly.md)  
  [Immutability in C# Part One: Kinds of Immutability](http://go.microsoft.com/fwlink/?LinkId=112379)

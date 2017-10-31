@@ -21,5 +21,5 @@ Client applications using [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] m
  For information on configuring ClickOnce applications and trusted publishers, see [Configuring ClickOnce Trusted Publishers](http://go.microsoft.com/fwlink/?LinkId=94774).  
   
 ## See Also  
- [Trusted Application Deployment Overview](http://go.microsoft.com/fwlink/?LinkId=94775)   
+ [Trusted Application Deployment Overview](http://go.microsoft.com/fwlink/?LinkId=94775)  
  [ClickOnce Deployment for Windows Forms Applications](http://go.microsoft.com/fwlink/?LinkId=94776)

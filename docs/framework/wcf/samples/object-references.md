@@ -120,5 +120,5 @@ public List<Person> GetCommonFriends(List<Person> people)
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Contract\Data\ObjectReferences`  
   
 ## See Also  
- <xref:System.Runtime.Serialization.DataContractAttribute.IsReference%2A>   
+ <xref:System.Runtime.Serialization.DataContractAttribute.IsReference%2A>  
  [Interoperable Object References](../../../../docs/framework/wcf/feature-details/interoperable-object-references.md)

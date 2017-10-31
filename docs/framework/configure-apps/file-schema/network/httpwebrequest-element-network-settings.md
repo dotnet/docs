@@ -83,5 +83,5 @@ Customizes Web request parameters.
 ```  
   
 ## See Also  
- <xref:System.Net.HttpWebRequest.MaximumResponseHeadersLength%2A>   
+ <xref:System.Net.HttpWebRequest.MaximumResponseHeadersLength%2A>  
  [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

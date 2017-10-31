@@ -37,7 +37,7 @@ The <xref:System.Data.DataTable> and <xref:System.Data.DataSet> classes have a <
 ```  
   
 ## See Also  
- <xref:System.Data.DataTable.CreateDataReader%2A>   
- <xref:System.Data.DataSet.CreateDataReader%2A>   
- [DataTableReaders](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/datatablereaders.md)   
+ <xref:System.Data.DataTable.CreateDataReader%2A>  
+ <xref:System.Data.DataSet.CreateDataReader%2A>  
+ [DataTableReaders](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/datatablereaders.md)  
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

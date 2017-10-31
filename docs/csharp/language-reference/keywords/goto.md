@@ -36,8 +36,8 @@ The `goto` statement transfers the program control directly to a labeled stateme
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
- [goto Statement](/cpp/cpp/goto-statement-cpp)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+ [goto Statement](/cpp/cpp/goto-statement-cpp)  
  [Jump Statements](../../../csharp/language-reference/keywords/jump-statements.md)

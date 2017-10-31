@@ -59,5 +59,5 @@ When using HTTP as the transport, security is provided by a Secure Sockets Layer
  [!INCLUDE[crabout](../../../../includes/crabout-md.md)] using the HttpCfg.exe tool to set up a port with an X.509 certificate, see [How to: Configure a Port with an SSL Certificate](../../../../docs/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate.md).  
   
 ## See Also  
- [Transport Security](../../../../docs/framework/wcf/feature-details/transport-security.md)   
+ [Transport Security](../../../../docs/framework/wcf/feature-details/transport-security.md)  
  [Message Security](../../../../docs/framework/wcf/feature-details/message-security-in-wcf.md)

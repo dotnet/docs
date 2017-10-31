@@ -111,7 +111,7 @@ Because a Web page can be displayed anywhere in the world, operations that parse
  To prevent a user from injecting script into the HTML stream, user input should never be directly echoed back in the server response. Instead, it should be encoded by using the <xref:System.Web.HttpServerUtility.HtmlEncode%2A?displayProperty=nameWithType> method.  
   
 ## See Also  
- [Performing Formatting Operations](../../../docs/standard/base-types/performing-formatting-operations.md)   
- [Standard Date and Time Format Strings](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)   
- [Custom Date and Time Format Strings](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)   
+ [Performing Formatting Operations](../../../docs/standard/base-types/performing-formatting-operations.md)  
+ [Standard Date and Time Format Strings](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)  
+ [Custom Date and Time Format Strings](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)  
  [Parsing Date and Time Strings](../../../docs/standard/base-types/parsing-datetime.md)

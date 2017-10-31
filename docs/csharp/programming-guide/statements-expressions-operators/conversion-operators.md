@@ -45,6 +45,6 @@ C# enables programmers to declare conversions on classes or structs so that clas
 -   [static](../../../csharp/language-reference/keywords/static.md)  
   
 ## See Also  
- <xref:System.Convert>   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
+ <xref:System.Convert>  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
  [Chained user-defined explicit conversions in C#](http://go.microsoft.com/fwlink/?LinkId=112384)

@@ -35,8 +35,8 @@ The `while` statement executes a statement or a block of statements until a spec
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
- [while Statement (C++)](/cpp/cpp/while-statement-cpp)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+ [while Statement (C++)](/cpp/cpp/while-statement-cpp)  
  [Iteration Statements](../../../csharp/language-reference/keywords/iteration-statements.md)

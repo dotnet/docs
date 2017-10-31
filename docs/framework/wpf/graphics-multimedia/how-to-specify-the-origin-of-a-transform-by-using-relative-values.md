@@ -46,6 +46,6 @@ A 45 degree rotation by using the RenderTransform property with a RenderTransfor
  For more information about transforming <xref:System.Windows.FrameworkElement> objects, see the [Transforms Overview](../../../../docs/framework/wpf/graphics-multimedia/transforms-overview.md).  
   
 ## See Also  
- <xref:System.Windows.Media.Transform>   
- [Transforms Overview](../../../../docs/framework/wpf/graphics-multimedia/transforms-overview.md)   
+ <xref:System.Windows.Media.Transform>  
+ [Transforms Overview](../../../../docs/framework/wpf/graphics-multimedia/transforms-overview.md)  
  [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/transformations-how-to-topics.md)

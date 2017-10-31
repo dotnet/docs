@@ -66,5 +66,5 @@ System.Console.WriteLine(info);
 -   [Retrieving Information Stored in Attributes](../../../standard/attributes/retrieving-information-stored-in-attributes.md)  
   
 ## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
  [Assemblies in the Common Language Runtime](https://msdn.microsoft.com/library/k3677y81)

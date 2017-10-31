@@ -50,5 +50,5 @@ The following example shows how to group elements into chunks that represent sub
  To use the extension method in your project, copy the `MyExtensions` static class to a new or existing source code file and if it is required, add a `using` directive for the namespace where it is located.  
   
 ## See also  
- [LINQ Query Expressions](index.md)   
+ [LINQ Query Expressions](index.md)  
  

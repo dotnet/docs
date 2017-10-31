@@ -74,8 +74,8 @@ When you define a generic class, you can apply restrictions to the kinds of type
  The usefulness of type parameters as constraints with generic classes is very limited because the compiler can assume nothing about the type parameter except that it derives from `System.Object`. Use type parameters as constraints on generic classes in scenarios in which you want to enforce an inheritance relationship between two type parameters.  
   
 ## See Also  
- <xref:System.Collections.Generic>   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Introduction to Generics](../../../csharp/programming-guide/generics/introduction-to-generics.md)   
- [Generic Classes](../../../csharp/programming-guide/generics/generic-classes.md)   
+ <xref:System.Collections.Generic>  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Introduction to Generics](../../../csharp/programming-guide/generics/introduction-to-generics.md)  
+ [Generic Classes](../../../csharp/programming-guide/generics/generic-classes.md)  
  [new Constraint](../../../csharp/language-reference/keywords/new-constraint.md)

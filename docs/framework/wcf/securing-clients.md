@@ -159,15 +159,15 @@ In [!INCLUDE[indigo1](../../../includes/indigo1-md.md)], the service dictates th
 ```  
   
 ## See Also  
- <xref:System.ServiceModel.ClientBase%601.ClientCredentials%2A>   
- <xref:System.ServiceModel.ClientBase%601>   
- <xref:System.ServiceModel.Description.ClientCredentials>   
- <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetEnabled%2A>   
- <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetUrl%2A>   
- [\<bindings>](../../../docs/framework/configure-apps/file-schema/wcf/bindings.md)   
- [Configuration Editor Tool (SvcConfigEditor.exe)](../../../docs/framework/wcf/configuration-editor-tool-svcconfigeditor-exe.md)   
- [Securing Services](../../../docs/framework/wcf/securing-services.md)   
- [Accessing Services Using a WCF Client](../../../docs/framework/wcf/accessing-services-using-a-wcf-client.md)   
- [How to: Specify Client Credential Values](../../../docs/framework/wcf/how-to-specify-client-credential-values.md)   
- [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)   
+ <xref:System.ServiceModel.ClientBase%601.ClientCredentials%2A>  
+ <xref:System.ServiceModel.ClientBase%601>  
+ <xref:System.ServiceModel.Description.ClientCredentials>  
+ <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetEnabled%2A>  
+ <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetUrl%2A>  
+ [\<bindings>](../../../docs/framework/configure-apps/file-schema/wcf/bindings.md)  
+ [Configuration Editor Tool (SvcConfigEditor.exe)](../../../docs/framework/wcf/configuration-editor-tool-svcconfigeditor-exe.md)  
+ [Securing Services](../../../docs/framework/wcf/securing-services.md)  
+ [Accessing Services Using a WCF Client](../../../docs/framework/wcf/accessing-services-using-a-wcf-client.md)  
+ [How to: Specify Client Credential Values](../../../docs/framework/wcf/how-to-specify-client-credential-values.md)  
+ [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)  
  [How to: Specify the Client Credential Type](../../../docs/framework/wcf/how-to-specify-the-client-credential-type.md)

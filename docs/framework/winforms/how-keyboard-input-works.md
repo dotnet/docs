@@ -75,9 +75,9 @@ Windows Forms processes keyboard input by raising keyboard events in response to
 |Perform custom mnemonic handling; for example, you want to handle mnemonics on owner-drawn buttons contained in a toolbar.|Override <xref:System.Windows.Forms.Control.ProcessMnemonic%2A>.|  
   
 ## See Also  
- <xref:System.Windows.Forms.Keys>   
- <xref:System.Windows.Forms.Control.WndProc%2A>   
- <xref:System.Windows.Forms.Control.PreProcessMessage%2A>   
- [My.Computer.Keyboard Object](~/docs/visual-basic/language-reference/objects/my-computer-keyboard-object.md)   
- [Accessing the Keyboard](~/docs/visual-basic/developing-apps/programming/computer-resources/accessing-the-keyboard.md)   
+ <xref:System.Windows.Forms.Keys>  
+ <xref:System.Windows.Forms.Control.WndProc%2A>  
+ <xref:System.Windows.Forms.Control.PreProcessMessage%2A>  
+ [My.Computer.Keyboard Object](~/docs/visual-basic/language-reference/objects/my-computer-keyboard-object.md)  
+ [Accessing the Keyboard](~/docs/visual-basic/developing-apps/programming/computer-resources/accessing-the-keyboard.md)  
  [Using Keyboard Events](../../../docs/framework/winforms/using-keyboard-events.md)

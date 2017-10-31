@@ -34,5 +34,5 @@ The <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> a
  [!code-vb[TPL_Exceptions#08](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_exceptions/vb/exceptionsinloops.vb#08)]  
   
 ## See Also  
- [Data Parallelism](../../../docs/standard/parallel-programming/data-parallelism-task-parallel-library.md)   
+ [Data Parallelism](../../../docs/standard/parallel-programming/data-parallelism-task-parallel-library.md)  
  [Lambda Expressions in PLINQ and TPL](../../../docs/standard/parallel-programming/lambda-expressions-in-plinq-and-tpl.md)

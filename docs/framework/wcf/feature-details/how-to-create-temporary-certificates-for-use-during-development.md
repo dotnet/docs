@@ -118,6 +118,6 @@ When developing a secure service or client using [!INCLUDE[indigo1](../../../../
  Be sure to delete any temporary root authority certificates from the **Trusted Root Certification Authorities** and **Personal** folders by right-clicking the certificate, then clicking **Delete**.  
   
 ## See Also  
- [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)   
- [How to: View Certificates with the MMC Snap-in](../../../../docs/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in.md)   
+ [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)  
+ [How to: View Certificates with the MMC Snap-in](../../../../docs/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in.md)  
  [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)

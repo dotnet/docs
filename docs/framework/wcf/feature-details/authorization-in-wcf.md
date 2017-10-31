@@ -53,5 +53,5 @@ Authorization is the process of controlling access and rights to resources, such
  [Authentication](../../../../docs/framework/wcf/feature-details/authentication-in-wcf.md)  
   
 ## See Also  
- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)   
+ [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
  [Security Model for Windows Server App Fabric](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

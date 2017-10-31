@@ -69,5 +69,5 @@ manager: "erikre"
   
   
 ## See Also  
- <xref:System.ServiceModel.Channels.Binding>   
+ <xref:System.ServiceModel.Channels.Binding>  
  [Interoperating with WSE](http://msdn.microsoft.com/en-us/f6816861-96a0-45f9-8736-8e4e82cd3a41)

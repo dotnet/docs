@@ -232,6 +232,6 @@ HWND clock = ManagedCode::GetHwnd(hDlg, point.x, point.y, width, height);
  To compare your end result to the code that produced this screenshot, see [Win32 Clock Interoperation Sample](http://go.microsoft.com/fwlink/?LinkID=160051).  
   
 ## See Also  
- <xref:System.Windows.Interop.HwndSource>   
- [WPF and Win32 Interoperation](../../../../docs/framework/wpf/advanced/wpf-and-win32-interoperation.md)   
+ <xref:System.Windows.Interop.HwndSource>  
+ [WPF and Win32 Interoperation](../../../../docs/framework/wpf/advanced/wpf-and-win32-interoperation.md)  
  [Win32 Clock Interoperation Sample](http://go.microsoft.com/fwlink/?LinkID=160051)

@@ -68,5 +68,5 @@ Starting with C# 7, both the get and set accessor can be an implemented as expre
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
  [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)

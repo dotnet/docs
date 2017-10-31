@@ -52,5 +52,5 @@ Specifies service debugging for a [!INCLUDE[indigo1](../../../../../includes/ind
 |[\<behavior>](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)|Specifies an endpoint behavior.|  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.CallbackDebugElement>   
+ <xref:System.ServiceModel.Configuration.CallbackDebugElement>  
  <xref:System.ServiceModel.Description.CallbackDebugBehavior>

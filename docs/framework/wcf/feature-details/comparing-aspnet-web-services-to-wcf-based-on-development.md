@@ -606,7 +606,7 @@ try
 }  
 catch (FaultException<MathFault> e)  
 {  
- Console.WriteLine("FaultException<MathFault>: Math fault while doing "   
+ Console.WriteLine("FaultException<MathFault>: Math fault while doing "  
   + e.Detail.operation   
   + ". Problem: "   
   + e.Detail.problemType);  

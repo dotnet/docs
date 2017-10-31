@@ -47,7 +47,7 @@ This example shows how to specify the base-class constructor called when creatin
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
 
 ## See also
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
  [this](../../../csharp/language-reference/keywords/this.md)

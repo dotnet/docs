@@ -43,10 +43,10 @@ For more information on disposing of `IDisposable` objects, see [Using objects t
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
- [using Directive](../../../csharp/language-reference/keywords/using-directive.md)   
- [Garbage Collection](../../../standard/garbage-collection/index.md)   
- [Using objects that implement IDisposable](../../../standard/garbage-collection/using-objects.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+ [using Directive](../../../csharp/language-reference/keywords/using-directive.md)  
+ [Garbage Collection](../../../standard/garbage-collection/index.md)  
+ [Using objects that implement IDisposable](../../../standard/garbage-collection/using-objects.md)  
  [IDisposable interface](xref:System.IDisposable)

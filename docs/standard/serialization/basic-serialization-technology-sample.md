@@ -83,20 +83,20 @@ manager: "erikre"
     -   <xref:System.IO.FileStream> Used to serialize and deserialize linked lists.  
   
 ## See Also  
- <xref:System.IO>   
- <xref:System.IO.File>   
- <xref:System.IO.FileStream>   
- <xref:System.IO.Stream>   
- <xref:System.Random>   
- <xref:System.Runtime.Serialization>   
- <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>   
- <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter>   
- <xref:System.Runtime.Serialization.IFormatter>   
- <xref:System.SerializableAttribute>   
- <xref:System.Xml.Serialization>   
- [Basic Serialization](../../../docs/standard/serialization/basic-serialization.md)   
- [Binary Serialization](../../../docs/standard/serialization/binary-serialization.md)   
- [Controlling XML Serialization Using Attributes](../../../docs/standard/serialization/controlling-xml-serialization-using-attributes.md)   
- [Introducing XML Serialization](../../../docs/standard/serialization/introducing-xml-serialization.md)   
- [Serialization](../../../docs/standard/serialization/index.md)   
+ <xref:System.IO>  
+ <xref:System.IO.File>  
+ <xref:System.IO.FileStream>  
+ <xref:System.IO.Stream>  
+ <xref:System.Random>  
+ <xref:System.Runtime.Serialization>  
+ <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>  
+ <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter>  
+ <xref:System.Runtime.Serialization.IFormatter>  
+ <xref:System.SerializableAttribute>  
+ <xref:System.Xml.Serialization>  
+ [Basic Serialization](../../../docs/standard/serialization/basic-serialization.md)  
+ [Binary Serialization](../../../docs/standard/serialization/binary-serialization.md)  
+ [Controlling XML Serialization Using Attributes](../../../docs/standard/serialization/controlling-xml-serialization-using-attributes.md)  
+ [Introducing XML Serialization](../../../docs/standard/serialization/introducing-xml-serialization.md)  
+ [Serialization](../../../docs/standard/serialization/index.md)  
  [XML and SOAP Serialization](../../../docs/standard/serialization/xml-and-soap-serialization.md)

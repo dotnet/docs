@@ -36,6 +36,6 @@ Specifies that Visual Basic should marshal strings according to .NET Framework r
  This keyword is not supported.  
   
 ## See Also  
- [Ansi](../../../visual-basic/language-reference/modifiers/ansi.md)   
- [Unicode](../../../visual-basic/language-reference/modifiers/unicode.md)   
+ [Ansi](../../../visual-basic/language-reference/modifiers/ansi.md)  
+ [Unicode](../../../visual-basic/language-reference/modifiers/unicode.md)  
  [Keywords](../../../visual-basic/language-reference/keywords/index.md)

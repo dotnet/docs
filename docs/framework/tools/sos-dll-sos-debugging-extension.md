@@ -209,5 +209,5 @@ The SOS Debugging Extension (SOS.dll) helps you debug managed programs in Visual
 ```  
   
 ## See Also  
- [Tools](../../../docs/framework/tools/index.md)   
+ [Tools](../../../docs/framework/tools/index.md)  
  [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

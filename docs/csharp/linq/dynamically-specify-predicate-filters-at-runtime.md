@@ -71,5 +71,5 @@ In some cases you do not know until run time how many predicates you have to app
   
  
 ## See Also  
- [LINQ Query Expressions](index.md)   
+ [LINQ Query Expressions](index.md)  
  [where clause](../language-reference/keywords/where-clause.md)

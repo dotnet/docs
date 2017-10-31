@@ -48,6 +48,6 @@ Determines whether an expression is `True`.
  [!code-vb[VbVbalrOperators#28](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/istrue-operator_1.vb)]  
   
 ## See Also  
- [IsFalse Operator](../../../visual-basic/language-reference/operators/isfalse-operator.md)   
- [How to: Define an Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-an-operator.md)   
+ [IsFalse Operator](../../../visual-basic/language-reference/operators/isfalse-operator.md)  
+ [How to: Define an Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-an-operator.md)  
  [OrElse Operator](../../../visual-basic/language-reference/operators/orelse-operator.md)

@@ -29,5 +29,5 @@ ms.author: dotnetcontent
 -   Conclude the `Class` block with a matching `End Class`.  
   
 ## See Also  
- [End \<keyword> Statement](../../../visual-basic/language-reference/statements/end-keyword-statement.md)   
+ [End \<keyword> Statement](../../../visual-basic/language-reference/statements/end-keyword-statement.md)  
  [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)

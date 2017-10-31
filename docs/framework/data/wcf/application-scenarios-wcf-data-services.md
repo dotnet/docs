@@ -93,5 +93,5 @@ manager: "erikre"
 -   [Service Operations](../../../../docs/framework/data/wcf/service-operations-wcf-data-services.md)  
   
 ## See Also  
- [Quickstart](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md)   
+ [Quickstart](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md)  
  [Resources](../../../../docs/framework/data/wcf/wcf-data-services-resources.md)

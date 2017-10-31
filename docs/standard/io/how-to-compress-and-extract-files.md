@@ -61,9 +61,9 @@ The <xref:System.IO.Compression> namespace contains the following types for comp
  [!code-vb[IO.Compression.GZip1#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/IO.Compression.GZip1/VB/gziptest.vb#1)]  
   
 ## See Also  
- <xref:System.IO.Compression.ZipArchive>   
- <xref:System.IO.Compression.ZipFile>   
- <xref:System.IO.Compression.ZipArchiveEntry>   
- <xref:System.IO.Compression.DeflateStream>   
- <xref:System.IO.Compression.GZipStream>   
+ <xref:System.IO.Compression.ZipArchive>  
+ <xref:System.IO.Compression.ZipFile>  
+ <xref:System.IO.Compression.ZipArchiveEntry>  
+ <xref:System.IO.Compression.DeflateStream>  
+ <xref:System.IO.Compression.GZipStream>  
  [File and Stream I-O](../../../docs/standard/io/index.md)

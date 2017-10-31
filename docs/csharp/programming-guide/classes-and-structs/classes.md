@@ -65,11 +65,11 @@ A *class* is a construct that enables you to create your own custom types by gro
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Object-Oriented Programming](../concepts/object-oriented-programming.md)   
- [Polymorphism](../../../csharp/programming-guide/classes-and-structs/polymorphism.md)   
- [Members](../../../csharp/programming-guide/classes-and-structs/members.md)   
- [Methods](../../../csharp/programming-guide/classes-and-structs/methods.md)   
- [Constructors](../../../csharp/programming-guide/classes-and-structs/constructors.md)   
- [Finalizers](../../../csharp/programming-guide/classes-and-structs/destructors.md)   
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Object-Oriented Programming](../concepts/object-oriented-programming.md)  
+ [Polymorphism](../../../csharp/programming-guide/classes-and-structs/polymorphism.md)  
+ [Members](../../../csharp/programming-guide/classes-and-structs/members.md)  
+ [Methods](../../../csharp/programming-guide/classes-and-structs/methods.md)  
+ [Constructors](../../../csharp/programming-guide/classes-and-structs/constructors.md)  
+ [Finalizers](../../../csharp/programming-guide/classes-and-structs/destructors.md)  
  [Objects](../../../csharp/programming-guide/classes-and-structs/objects.md)

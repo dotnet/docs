@@ -19,7 +19,7 @@ manager: "erikre"
 This configuration section represents all the behaviors defined for a specific endpoint. For more information on configuration client behaviors, see [Specifying Client Run-Time Behavior](../../../../../docs/framework/wcf/specifying-client-run-time-behavior.md) and [Configuring Client Behaviors](../../../../../docs/framework/wcf/configuring-client-behaviors.md).  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.EndpointBehaviorElementCollection>   
- <xref:System.ServiceModel.Configuration.EndpointBehaviorElement>   
- [Specifying Client Run-Time Behavior](../../../../../docs/framework/wcf/specifying-client-run-time-behavior.md)   
+ <xref:System.ServiceModel.Configuration.EndpointBehaviorElementCollection>  
+ <xref:System.ServiceModel.Configuration.EndpointBehaviorElement>  
+ [Specifying Client Run-Time Behavior](../../../../../docs/framework/wcf/specifying-client-run-time-behavior.md)  
  [Configuring Client Behaviors](../../../../../docs/framework/wcf/configuring-client-behaviors.md)

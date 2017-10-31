@@ -179,6 +179,6 @@ class Program
 ```  
   
 ## See Also  
- <xref:System.Net.Sockets.UdpClient>   
- <xref:System.Net.IPAddress>   
+ <xref:System.Net.Sockets.UdpClient>  
+ <xref:System.Net.IPAddress>  
  

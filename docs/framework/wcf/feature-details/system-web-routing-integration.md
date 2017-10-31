@@ -76,5 +76,5 @@ When hosting a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service i
 ```  
   
 ## See Also  
- [WCF Web HTTP Programming Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)   
+ [WCF Web HTTP Programming Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)  
  [ASP.NET Routing](http://go.microsoft.com/fwlink/?LinkId=184660)

@@ -25,7 +25,7 @@ The following example defines both a `get` and a `set` accessor for a property n
   
 Often, the `get` accessor consists of a single statement that returns a value, as it did in the previous example. Starting with C# 7, you can implement the `get` accessor as an expression-bodied member. The following example implements both the `get` and the `set` accessor as expression-bodied members.
 
- [!code-cs[get#3](../../../../samples/snippets/csharp/language-reference/keywords/get/get-3.cs)]   
+ [!code-cs[get#3](../../../../samples/snippets/csharp/language-reference/keywords/get/get-3.cs)]  
  
 For simple cases in which a property's `get` and `set` accessors perform no other operation than setting or retrieving a value in a private backing field, you can take advantage of the C# compiler's support for auto-implemented properties. The following example implements `Hours` as an auto-implemented property. 
   
@@ -36,7 +36,7 @@ For simple cases in which a property's `get` and `set` accessors perform no othe
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
  [C# Keywords](../../../csharp/language-reference/keywords/index.md)
  [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)

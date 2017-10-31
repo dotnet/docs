@@ -74,7 +74,7 @@ sw.Close();
   
  When this workflow is invoked, the following output is displayed to the console.  
   
- **25 + 15**   
+ **25 + 15**  
 **40**    
 > [!NOTE]
 >  [!INCLUDE[crabout](../../../includes/crabout-md.md)] invoking workflows with input and output arguments, see [Using WorkflowInvoker and WorkflowApplication](../../../docs/framework/windows-workflow-foundation/using-workflowinvoker-and-workflowapplication.md) and <xref:System.Activities.WorkflowInvoker.Invoke%2A>.  

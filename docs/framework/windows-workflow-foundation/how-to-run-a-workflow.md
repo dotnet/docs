@@ -164,11 +164,11 @@ This topic is a continuation of the Windows Workflow Foundation Getting Started 
  [!code-vb[CFX_WF_GettingStarted#12](../../../samples/snippets/visualbasic/VS_Snippets_CFX/cfx_wf_gettingstarted/vb/module1.vb#12)]  
   
 ## See Also  
- <xref:System.Activities.WorkflowApplication>   
- <xref:System.Activities.Bookmark>   
- [Windows Workflow Foundation Programming](../../../docs/framework/windows-workflow-foundation/programming.md)   
- [Getting Started Tutorial](../../../docs/framework/windows-workflow-foundation/getting-started-tutorial.md)   
- [How to: Create a Workflow](../../../docs/framework/windows-workflow-foundation/how-to-create-a-workflow.md)   
- [How to: Create and Run a Long Running Workflow](../../../docs/framework/windows-workflow-foundation/how-to-create-and-run-a-long-running-workflow.md)   
- [Waiting for Input in a Workflow](../../../docs/framework/windows-workflow-foundation/waiting-for-input-in-a-workflow.md)   
+ <xref:System.Activities.WorkflowApplication>  
+ <xref:System.Activities.Bookmark>  
+ [Windows Workflow Foundation Programming](../../../docs/framework/windows-workflow-foundation/programming.md)  
+ [Getting Started Tutorial](../../../docs/framework/windows-workflow-foundation/getting-started-tutorial.md)  
+ [How to: Create a Workflow](../../../docs/framework/windows-workflow-foundation/how-to-create-a-workflow.md)  
+ [How to: Create and Run a Long Running Workflow](../../../docs/framework/windows-workflow-foundation/how-to-create-and-run-a-long-running-workflow.md)  
+ [Waiting for Input in a Workflow](../../../docs/framework/windows-workflow-foundation/waiting-for-input-in-a-workflow.md)  
  [Hosting Workflows](../../../docs/framework/windows-workflow-foundation/hosting-workflows.md)

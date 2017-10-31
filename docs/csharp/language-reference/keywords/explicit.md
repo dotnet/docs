@@ -44,10 +44,10 @@ The `explicit` keyword declares a user-defined type conversion operator that mus
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
- [implicit](../../../csharp/language-reference/keywords/implicit.md)   
- [operator (C# Reference)](../../../csharp/language-reference/keywords/operator.md)   
- [How to: Implement User-Defined Conversions Between Structs](../../../csharp/programming-guide/statements-expressions-operators/how-to-implement-user-defined-conversions-between-structs.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+ [implicit](../../../csharp/language-reference/keywords/implicit.md)  
+ [operator (C# Reference)](../../../csharp/language-reference/keywords/operator.md)  
+ [How to: Implement User-Defined Conversions Between Structs](../../../csharp/programming-guide/statements-expressions-operators/how-to-implement-user-defined-conversions-between-structs.md)  
  [Chained user-defined explicit conversions in C#](http://go.microsoft.com/fwlink/?LinkId=112384)

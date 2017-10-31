@@ -404,8 +404,8 @@ When developing a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] syndic
  `</content>`  
   
 ## See Also  
- [WCF Syndication Overview](../../../../docs/framework/wcf/feature-details/wcf-syndication-overview.md)   
- [Architecture of Syndication](../../../../docs/framework/wcf/feature-details/architecture-of-syndication.md)   
- [How to: Create a Basic RSS Feed](../../../../docs/framework/wcf/feature-details/how-to-create-a-basic-rss-feed.md)   
- [How to: Create a Basic Atom Feed](../../../../docs/framework/wcf/feature-details/how-to-create-a-basic-atom-feed.md)   
+ [WCF Syndication Overview](../../../../docs/framework/wcf/feature-details/wcf-syndication-overview.md)  
+ [Architecture of Syndication](../../../../docs/framework/wcf/feature-details/architecture-of-syndication.md)  
+ [How to: Create a Basic RSS Feed](../../../../docs/framework/wcf/feature-details/how-to-create-a-basic-rss-feed.md)  
+ [How to: Create a Basic Atom Feed](../../../../docs/framework/wcf/feature-details/how-to-create-a-basic-atom-feed.md)  
  [How to: Expose a Feed as Both Atom and RSS](../../../../docs/framework/wcf/feature-details/how-to-expose-a-feed-as-both-atom-and-rss.md)

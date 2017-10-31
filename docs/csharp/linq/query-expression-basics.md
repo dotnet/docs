@@ -171,7 +171,7 @@ ms.assetid: 027db1f8-346f-44d2-a16e-043fcea3a4e0
  For more information, see [How to: perform a subquery on a grouping operation](perform-a-subquery-on-a-grouping-operation.md).  
   
 ## See Also  
- [C# programming guide](../programming-guide/index.md)   
- [LINQ query expressions](index.md)   
- [Query keywords (LINQ)](../language-reference/keywords/query-keywords.md)   
+ [C# programming guide](../programming-guide/index.md)  
+ [LINQ query expressions](index.md)  
+ [Query keywords (LINQ)](../language-reference/keywords/query-keywords.md)  
  [Standard query operators overview](../programming-guide/concepts/linq/standard-query-operators-overview.md)

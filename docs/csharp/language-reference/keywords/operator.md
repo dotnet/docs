@@ -27,9 +27,9 @@ Use the `operator` keyword to overload a built-in operator or to provide a user-
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
- [implicit](../../../csharp/language-reference/keywords/implicit.md)   
- [explicit](../../../csharp/language-reference/keywords/explicit.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+ [implicit](../../../csharp/language-reference/keywords/implicit.md)  
+ [explicit](../../../csharp/language-reference/keywords/explicit.md)  
  [How to: Implement User-Defined Conversions Between Structs](../../../csharp/programming-guide/statements-expressions-operators/how-to-implement-user-defined-conversions-between-structs.md)

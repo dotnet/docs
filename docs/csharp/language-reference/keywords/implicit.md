@@ -27,9 +27,9 @@ The `implicit` keyword is used to declare an implicit user-defined type conversi
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
- [explicit](../../../csharp/language-reference/keywords/explicit.md)   
- [operator (C# Reference)](../../../csharp/language-reference/keywords/operator.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+ [explicit](../../../csharp/language-reference/keywords/explicit.md)  
+ [operator (C# Reference)](../../../csharp/language-reference/keywords/operator.md)  
  [How to: Implement User-Defined Conversions Between Structs](../../../csharp/programming-guide/statements-expressions-operators/how-to-implement-user-defined-conversions-between-structs.md)

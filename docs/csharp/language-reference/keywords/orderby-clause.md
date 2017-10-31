@@ -33,8 +33,8 @@ In a query expression, the `orderby` clause causes the returned sequence or subs
  At compile time, the `orderby` clause is translated to a call to the <xref:System.Linq.Enumerable.OrderBy%2A> method. Multiple keys in the `orderby` clause translate to <xref:System.Linq.Enumerable.ThenBy%2A> method calls.  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [Query Keywords (LINQ)](../../../csharp/language-reference/keywords/query-keywords.md)   
- [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)   
- [group clause](../../../csharp/language-reference/keywords/group-clause.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [Query Keywords (LINQ)](../../../csharp/language-reference/keywords/query-keywords.md)  
+ [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)  
+ [group clause](../../../csharp/language-reference/keywords/group-clause.md)  
  [Getting Started with LINQ in C#](../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md)

@@ -49,13 +49,13 @@ An interface contains only the signatures of [methods](../../../csharp/programmi
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
- [Reference Types](../../../csharp/language-reference/keywords/reference-types.md)   
- [Interfaces](../../../csharp/programming-guide/interfaces/index.md)   
- [Using Properties](../../../csharp/programming-guide/classes-and-structs/using-properties.md)   
- [Using Indexers](../../../csharp/programming-guide/indexers/using-indexers.md)   
- [class](../../../csharp/language-reference/keywords/class.md)   
- [struct](../../../csharp/language-reference/keywords/struct.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+ [Reference Types](../../../csharp/language-reference/keywords/reference-types.md)  
+ [Interfaces](../../../csharp/programming-guide/interfaces/index.md)  
+ [Using Properties](../../../csharp/programming-guide/classes-and-structs/using-properties.md)  
+ [Using Indexers](../../../csharp/programming-guide/indexers/using-indexers.md)  
+ [class](../../../csharp/language-reference/keywords/class.md)  
+ [struct](../../../csharp/language-reference/keywords/struct.md)  
  [Interfaces](../../../csharp/programming-guide/interfaces/index.md)

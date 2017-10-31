@@ -130,5 +130,5 @@ After [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)] applic
  For more information, see [Deploying the .NET Framework and Applications](../../../../docs/framework/deployment/index.md).  
   
 ## See Also  
- [Building a WPF Application](../../../../docs/framework/wpf/app-development/building-a-wpf-application-wpf.md)   
+ [Building a WPF Application](../../../../docs/framework/wpf/app-development/building-a-wpf-application-wpf.md)  
  [Security](../../../../docs/framework/wpf/security-wpf.md)

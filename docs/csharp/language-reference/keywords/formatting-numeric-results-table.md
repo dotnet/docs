@@ -31,8 +31,8 @@ You can format numeric results by using the <xref:System.String.Format%2A?displa
 |X or x|Hexadecimal|Console.Write("{0:X}", 250);<br /><br /> Console.Write("{0:X}", 0xffff);|FA<br /><br /> FFFF|  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Standard Numeric Format Strings](../../../standard/base-types/standard-numeric-format-strings.md)   
- [Reference Tables for Types](../../../csharp/language-reference/keywords/reference-tables-for-types.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Standard Numeric Format Strings](../../../standard/base-types/standard-numeric-format-strings.md)  
+ [Reference Tables for Types](../../../csharp/language-reference/keywords/reference-tables-for-types.md)  
  [string](../../../csharp/language-reference/keywords/string.md)

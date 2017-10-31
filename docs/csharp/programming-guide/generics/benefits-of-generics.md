@@ -36,8 +36,8 @@ Generics provide the solution to a limitation in earlier versions of the common 
  For client code, the only added syntax with <xref:System.Collections.Generic.List%601> compared to <xref:System.Collections.ArrayList> is the type argument in the declaration and instantiation. In return for this slightly more coding complexity, you can create a list that is not only safer than <xref:System.Collections.ArrayList>, but also significantly faster, especially when the list items are value types.  
   
 ## See Also  
- <xref:System.Collections.Generic>   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Introduction to Generics](../../../csharp/programming-guide/generics/introduction-to-generics.md)   
- [Boxing and Unboxing](../../../csharp/programming-guide/types/boxing-and-unboxing.md)   
+ <xref:System.Collections.Generic>  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Introduction to Generics](../../../csharp/programming-guide/generics/introduction-to-generics.md)  
+ [Boxing and Unboxing](../../../csharp/programming-guide/types/boxing-and-unboxing.md)  
  [Collections Best Practices](http://go.microsoft.com/fwlink/?LinkId=112403)

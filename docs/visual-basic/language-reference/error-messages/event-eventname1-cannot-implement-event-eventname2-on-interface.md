@@ -31,6 +31,6 @@ ms.author: dotnetcontent
 -   Define the events in the interface using the `As` syntax and specify the same delegate type.  
   
 ## See Also  
- [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)   
- [Delegate Statement](../../../visual-basic/language-reference/statements/delegate-statement.md)   
+ [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)  
+ [Delegate Statement](../../../visual-basic/language-reference/statements/delegate-statement.md)  
  [Events](../../../visual-basic/programming-guide/language-features/events/index.md)

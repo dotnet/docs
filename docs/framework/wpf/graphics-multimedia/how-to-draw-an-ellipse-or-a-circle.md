@@ -37,6 +37,6 @@ This example shows how to draw ellipses and circles by using the <xref:System.Wi
  This example is part of a larger sample; for the complete sample, see [Shape Elements Sample](http://go.microsoft.com/fwlink/?LinkID=160037).  
   
 ## See Also  
- <xref:System.Windows.Shapes.Ellipse>   
- <xref:System.Windows.Shapes.Shape>   
+ <xref:System.Windows.Shapes.Ellipse>  
+ <xref:System.Windows.Shapes.Shape>  
  [Shape Elements Sample](http://go.microsoft.com/fwlink/?LinkID=160037)

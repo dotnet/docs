@@ -78,5 +78,5 @@ Obtaining schema information from a database is accomplished with the process of
  Describes the **GetSchemaTable** method of the <xref:System.Data.SqlClient.SqlDataReader> class.  
   
 ## See Also  
- [Retrieving and Modifying Data in ADO.NET](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)   
+ [Retrieving and Modifying Data in ADO.NET](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)  
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

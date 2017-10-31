@@ -87,5 +87,5 @@ int numCount = numbers.Where(n => n < 3 || n > 7).Count();
   
 ## See Also  
   [Walkthrough: Writing Queries in C#](../programming-guide/concepts/linq/walkthrough-writing-queries-linq.md)   
- [LINQ Query Expressions](index.md)   
+ [LINQ Query Expressions](index.md)  
  [where clause](../language-reference/keywords/where-clause.md)

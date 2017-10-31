@@ -32,5 +32,5 @@ manager: "wpickett"
  [!code-vb[gridlengthConverterGrid#1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/gridlengthConverterGrid/VisualBasic/Window1.xaml.vb#1)]  
   
 ## See Also  
- <xref:System.Windows.GridLengthConverter>   
+ <xref:System.Windows.GridLengthConverter>  
  <xref:System.Windows.GridLength>

@@ -46,6 +46,6 @@ Represents a single assembly in the global assembly cache.
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See Also  
- [Fusion Interfaces](../../../../docs/framework/unmanaged-api/fusion/fusion-interfaces.md)   
- [Global Assembly Cache](../../../../docs/framework/app-domains/gac.md)   
+ [Fusion Interfaces](../../../../docs/framework/unmanaged-api/fusion/fusion-interfaces.md)  
+ [Global Assembly Cache](../../../../docs/framework/app-domains/gac.md)  
  [IAssemblyCache Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblycache-interface.md)

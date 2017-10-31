@@ -170,5 +170,5 @@ a = (b = c);
  For more information, see [Operator Keywords](../../../csharp/language-reference/keywords/operator-keywords.md) and [C# Operators](../../../csharp/language-reference/operators/index.md).  
   
 ## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
  [Statements, Expressions, and Operators](../../../csharp/programming-guide/statements-expressions-operators/index.md)

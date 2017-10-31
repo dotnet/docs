@@ -443,8 +443,8 @@ interface IValueTypes : IDispatch {
 ```  
   
 ## See Also  
- [Blittable and Non-Blittable Types](../../../docs/framework/interop/blittable-and-non-blittable-types.md)   
- [Copying and Pinning](../../../docs/framework/interop/copying-and-pinning.md)   
- [Default Marshaling for Arrays](../../../docs/framework/interop/default-marshaling-for-arrays.md)   
- [Default Marshaling for Objects](../../../docs/framework/interop/default-marshaling-for-objects.md)   
+ [Blittable and Non-Blittable Types](../../../docs/framework/interop/blittable-and-non-blittable-types.md)  
+ [Copying and Pinning](../../../docs/framework/interop/copying-and-pinning.md)  
+ [Default Marshaling for Arrays](../../../docs/framework/interop/default-marshaling-for-arrays.md)  
+ [Default Marshaling for Objects](../../../docs/framework/interop/default-marshaling-for-objects.md)  
  [Default Marshaling for Strings](../../../docs/framework/interop/default-marshaling-for-strings.md)

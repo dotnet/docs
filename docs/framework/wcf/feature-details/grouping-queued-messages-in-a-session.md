@@ -92,5 +92,5 @@ manager: "erikre"
   
   
 ## See Also  
- [Sessions and Queues](../../../../docs/framework/wcf/samples/sessions-and-queues.md)   
+ [Sessions and Queues](../../../../docs/framework/wcf/samples/sessions-and-queues.md)  
  [Queues Overview](../../../../docs/framework/wcf/feature-details/queues-overview.md)

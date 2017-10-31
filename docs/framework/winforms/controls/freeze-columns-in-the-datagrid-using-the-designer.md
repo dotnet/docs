@@ -42,10 +42,10 @@ When users view data displayed in a Windows Forms <xref:System.Windows.Forms.Dat
     >  You can also freeze a column when adding it by selecting the **Frozen** box in the **Add Column** dialog box.  
   
 ## See Also  
- <xref:System.Windows.Forms.DataGridView>   
- <xref:System.Windows.Forms.DataGridViewColumn.Frozen%2A?displayProperty=nameWithType>   
- [How to: Add and Remove Columns in the Windows Forms DataGridView Control Using the Designer](../../../../docs/framework/winforms/controls/add-and-remove-columns-in-the-datagrid-using-the-designer.md)   
- [How to: Enable Column Reordering in the Windows Forms DataGridView Control Using the Designer](../../../../docs/framework/winforms/controls/enable-column-reordering-in-the-datagrid-using-the-designer.md)   
- [How to: Display Right-to-Left Text in Windows Forms for Globalization](http://msdn.microsoft.com/en-us/f0663385-2354-4c65-8676-706422283b14)   
- [How to: Create a Windows Application Project](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa)   
+ <xref:System.Windows.Forms.DataGridView>  
+ <xref:System.Windows.Forms.DataGridViewColumn.Frozen%2A?displayProperty=nameWithType>  
+ [How to: Add and Remove Columns in the Windows Forms DataGridView Control Using the Designer](../../../../docs/framework/winforms/controls/add-and-remove-columns-in-the-datagrid-using-the-designer.md)  
+ [How to: Enable Column Reordering in the Windows Forms DataGridView Control Using the Designer](../../../../docs/framework/winforms/controls/enable-column-reordering-in-the-datagrid-using-the-designer.md)  
+ [How to: Display Right-to-Left Text in Windows Forms for Globalization](http://msdn.microsoft.com/en-us/f0663385-2354-4c65-8676-706422283b14)  
+ [How to: Create a Windows Application Project](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa)  
  [How to: Add Controls to Windows Forms](../../../../docs/framework/winforms/controls/how-to-add-controls-to-windows-forms.md)

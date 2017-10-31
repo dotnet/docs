@@ -51,5 +51,5 @@ A query expression must begin with a `from` clause. Additionally, a query expres
  For more information about join operations that use multiple `from` clauses, see [How to: Perform Custom Join Operations](../../../csharp/programming-guide/linq-query-expressions/how-to-perform-custom-join-operations.md).  
   
 ## See Also  
- [Query Keywords (LINQ)](../../../csharp/language-reference/keywords/query-keywords.md)   
+ [Query Keywords (LINQ)](../../../csharp/language-reference/keywords/query-keywords.md)  
  [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)

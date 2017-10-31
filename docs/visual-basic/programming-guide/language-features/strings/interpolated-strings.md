@@ -78,6 +78,6 @@ There are three implicit type conversions from an interpolated string:
 
 ## See Also  
 f <xref:System.IFormattable?displayProperty=nameWithType>   
- <xref:System.FormattableString?displayProperty=nameWithType>   
- [Visual Basic Language Reference](index.md)   
+ <xref:System.FormattableString?displayProperty=nameWithType>  
+ [Visual Basic Language Reference](index.md)  
  

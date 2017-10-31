@@ -103,6 +103,6 @@ Enumerations can be expressed in the data contract model. This topic walks throu
  [!code-vb[c_DataContractEnumerations#5](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_datacontractenumerations/vb/source.vb#5)]  
   
 ## See Also  
- <xref:System.Runtime.Serialization.DataContractSerializer>   
- [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)   
+ <xref:System.Runtime.Serialization.DataContractSerializer>  
+ [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)  
  [Specifying Data Transfer in Service Contracts](../../../../docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md)

@@ -31,6 +31,6 @@ This section provides examples that demonstrate how to accomplish common tasks u
  [How to: Replace the Default Content Host for a RichTextBox](http://msdn.microsoft.com/en-us/dec1b2ce-9ca5-4bb2-bf54-f8a80a3c8beb)  
   
 ## See Also  
- <xref:System.Windows.Controls.TextBox>   
- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)   
+ <xref:System.Windows.Controls.TextBox>  
+ [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
  [Flow Document Overview](../../../../docs/framework/wpf/advanced/flow-document-overview.md)

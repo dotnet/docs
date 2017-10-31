@@ -158,14 +158,14 @@
 
 The <xref:System.Attribute.Equals%2A> method uses reflection to retrieve field information for the current instance and the `obj` argument. It then compares field values. 
 
-When implementing your own class derived from <xref:System.Attribute>, you can override the <xref:System.Attribute.Equals%2A> method. Because it uses reflection, we recommend that you do so. However, your override should perform a standard test for reference equality (the two arguments represent the same object instance) or value equality (the two arguments are of the same type and have identical field values). If you want to perform a custom comparison to determine whether two attributes objects are equal, you can override the <xref:System.Attribute.Math%2A> method.   
+When implementing your own class derived from <xref:System.Attribute>, you can override the <xref:System.Attribute.Equals%2A> method. Because it uses reflection, we recommend that you do so. However, your override should perform a standard test for reference equality (the two arguments represent the same object instance) or value equality (the two arguments are of the same type and have identical field values). If you want to perform a custom comparison to determine whether two attributes objects are equal, you can override the <xref:System.Attribute.Match%2A> method.   
 
 ## Examples  
  The following example defines two custom parameter <xref:System.Attribute> classes, then creates several objects of each class and uses the <xref:System.Attribute.Equals%2A> method to compare them.  
   
- [!code-cpp[System.Attribute.Equals#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Attribute.Equals/CPP/equals.cpp#1)]
- [!code-csharp[System.Attribute.Equals#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Attribute.Equals/CS/equals.cs#1)]
- [!code-vb[System.Attribute.Equals#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Attribute.Equals/VB/equals.vb)]  
+ [!code-cpp[System.Attribute.Equals](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Attribute.Equals/CPP/equals.cpp)]
+ [!code-csharp[System.Attribute.Equals](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Attribute.Equals/CS/equals.cs)]
+ [!code-vb[System.Attribute.Equals](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Attribute.Equals/VB/equals.vb)]  
   
  ]]></format>
         </remarks>
@@ -2057,7 +2057,7 @@ When implementing your own class derived from <xref:System.Attribute>, you can o
 ## Remarks  
  This method determines if one <xref:System.Attribute> equals another. Its default implementation is the same as <xref:System.Attribute.Equals%2A>, which determines whether two attributes are of the same type and have the same field values.
 
- In general, the <xref:System.Attribute.Equals%2A> method is intended to perform a standard test for reference or value equality. You can override the <xref:System.Attribute.Match%2A> method when you want to perform a custom comparison for equality that is based on some criteria other than that two attribute instances are of the same type and have identifical values. For example, you can override the <xref:system.Attribute.Match%2A> method to compare attributes in the following scenarios:
+ In general, the <xref:System.Attribute.Equals%2A> method is intended to perform a standard test for reference or value equality. You can override the <xref:System.Attribute.Match%2A> method when you want to perform a custom comparison for equality that is based on some criteria other than that two attribute instances are of the same type and have identifical values. For example, you can override the <xref:System.Attribute.Match%2A> method to compare attributes in the following scenarios:
 
  - An attribute includes a bit field, and you consider two attribute instances equal if a particular bit is set. For example, a `NumericDisplay` attribute might include a bit field that indicates what numeric formats (such as binary, octal, decimal, and hexadecimal) a client supports. The overridden <xref:System.Attribute.Match%2A> method might consider two instances equal if they support the same numeric format.
 

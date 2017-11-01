@@ -59,7 +59,7 @@ This section includes information on unmanaged APIs that can be used by managed-
  [Strong Naming](../../../docs/framework/unmanaged-api/strong-naming/index.md)  
  Describes the strong naming API, which enables a client to administer strong name signing for assemblies.  
 
-[WMI and Performance Counters](wmi/index.md)  
+[WMI and Performance Counters](wmi/wmi-and-performance-counters.md)  
 Describes the APIs that wrap calls to Windows management Instrumentation libraries.
   
  [Tlbexp Helper Functions](../../../docs/framework/unmanaged-api/tlbexp/index.md)  

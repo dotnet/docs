@@ -45,15 +45,53 @@ lambda expression must declare and initialize the lambda expression,
 time error for referencing `nthFactorial` before assigning it.
 Recursive algorithms are easier to create using local functions.
 
-Third, for lambda expressions, the compiler must always create an anonymous class
-and an instance of that class to store any variables captured by the
-closure. Consider this async example:
+Definite assignment rules also affect any variables that are captured
+by the local function or lamdba epression. Both local functions and
+lambda expression rules demand that any captured variables are definitely
+assigned at the point when the local function or lambda expression is
+converted to a delegate. The difference is that lambda expressions are converted
+to delegates when they are declared. Local functions are converted to delegates
+only when used as a delegate. If you declare a local function, and only
+reference it by calling it like a method, it will not be converted to
+a delegate. That rule enables you to declare
+a local function at any convenient location in its enclosing scope. It's common
+to declare local functions at the end of the parent method, after any return
+statements.
+
+Third, the compiler can perform static analysis that enables local functions to
+definitely assign captured variables in the enclosing scope.
+
+Consider this example:
+
+```csharp
+bool M()
+{
+    int y;
+    Local();
+    return y;
+
+    void Local() => y = 0;
+}
+```
+
+The compiler can determine that `Local` definitely assigns `y` when called. Because `Local` is called before the `return` statement, `y` is definitiely
+assigned at the `return` statement.
+
+The analysis that enables that analysis enables the fourth difference.
+Depending on their use, local functions can avoid heap allocations that
+are always necessary for lambda expressions. If a local function is never
+converted to a delegate and none of the variables captured by a locatl function
+are converted to delegates, the compiler can avoid heap allocations. 
+
+Consider this async example:
 
 [!code-csharp[TaskLambdaExample](../../samples/snippets/csharp/new-in-7/AsyncWork.cs#36_TaskLambdaExample "Task returning method with lambda expression")]
 
 The closure for this lambda expression contains the `address`,
 `index` and `name` variables. In the case of local functions, the object
-that implements the closure may be a `struct` type. That would save on
+that implements the closure may be a `struct` type. That struct type would
+be passed by reference to the local functionn. This difference in
+implementation would save on
 an allocation.
 
 The instantiation necessary for lambda expressions means extra memory

@@ -26,10 +26,10 @@ Configures mail sending options.
   
 ## Syntax  
   
-```xml
+```xml  
 <mailSettings>
   <smtp> … </smtp>  
-</mailsettings>
+</mailSettings>
 ```  
   
 ## Attributes and Elements  

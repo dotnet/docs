@@ -42,7 +42,7 @@ type Request =
 
 // Define some logic for what defines a valid name.
 //
-// Generates a Result which is an Ok if the name valides;
+// Generates a Result which is an Ok if the name validates;
 // otherwise, it generates a Result which is an Error.
 let validateName req =
     match req.Name with

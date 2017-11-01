@@ -31,9 +31,9 @@ Configures mail sending options.
 ## Syntax  
   
 ```xml  
-      <mailSettings  
+<mailSettings>
   <smtp> … </smtp>  
-/mailsettings>  
+</mailSettings>
 ```  
   
 ## Attributes and Elements  

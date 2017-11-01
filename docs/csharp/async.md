@@ -169,7 +169,7 @@ private async void SeeTheDotNets_Click(object sender, RoutedEventArgs e)
 
 ### Waiting for Multiple Tasks to Complete
 
-You may find yourself in a situation where you need to retrieve multiple pieces of data concurrently.  The `Task` API contains two methods, `Task.WhenAll` and `Task.WhenAny` which allow you to write asynchronous code which performs a non-blocking wait on mulitple background jobs.
+You may find yourself in a situation where you need to retrieve multiple pieces of data concurrently.  The `Task` API contains two methods, `Task.WhenAll` and `Task.WhenAny` which allow you to write asynchronous code which performs a non-blocking wait on multiple background jobs.
 
 This example shows how you might grab `User` data for a set of `userId`s.
 

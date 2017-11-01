@@ -35,7 +35,7 @@ The Discovery APIs provide a unified programming model for the dynamic publicati
 ## Service Publication  
  To make a service discoverable, a <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior> must be added to the service host and a discovery endpoint must be added to specify where to listen for discovery messages. The following code example shows how a self-hosted service can be modified to make it discoverable.  
   
-```  
+```csharp  
 Uri baseAddress = new Uri(string.Format("http://{0}:8000/discovery/scenarios/calculatorservice/{1}/",  
         System.Net.Dns.GetHostName(), Guid.NewGuid().ToString()));
 
@@ -67,7 +67,7 @@ using (ServiceHost serviceHost = new ServiceHost(typeof(CalculatorService), base
 ## Announcement  
  By default, service publication does not send out announcement messages. The service must be configured to send out announcement messages. This provides additional flexibility for service writers because they can announce the service separately from listening for discovery messages. Service announcement can also be used as a mechanism for registering services with a discovery proxy or other service registries. The following code shows how to configure a service to send announcement messages over a UDP binding.  
   
-```  
+```csharp  
 Uri baseAddress = new Uri(string.Format("http://{0}:8000/discovery/scenarios/calculatorservice/{1}/",
         System.Net.Dns.GetHostName(), Guid.NewGuid().ToString()));
 
@@ -102,7 +102,7 @@ using (ServiceHost serviceHost = new ServiceHost(typeof(CalculatorService), base
 ## Service Discovery  
  A client application can use the <xref:System.ServiceModel.Discovery.DiscoveryClient> class to find services. The developer creates an instance of the <xref:System.ServiceModel.Discovery.DiscoveryClient> class that passes in a discovery endpoint that specifies where to send `Probe` or `Resolve` messages. The client then calls <xref:System.ServiceModel.Discovery.DiscoveryClient.Find%2A> that specifies search criteria within a <xref:System.ServiceModel.Discovery.FindCriteria> instance. If matching services are found, <xref:System.ServiceModel.Discovery.DiscoveryClient.Find%2A> returns a collection of <xref:System.ServiceModel.Discovery.EndpointDiscoveryMetadata>. The following code shows how to call the `Find` method and then connect to a discovered service.  
   
-```  
+```csharp  
 class Client
 {
     static EndpointAddress serviceAddress;
@@ -115,39 +115,40 @@ class Client
         }
     }  
   
-    // ** DISCOVERY ** //
-    static bool FindService()
-    {
-        Console.WriteLine("\nFinding Calculator Service ..");
-        DiscoveryClient discoveryClient = 
-            new DiscoveryClient(new UdpDiscoveryEndpoint());
-
-        Collection<EndpointDiscoveryMetadata> calculatorServices = 
-            discoveryClient.Find(new FindCriteria(typeof(ICalculator)));
-
-        discoveryClient.Close();
-
-        if (calculatorServices.Count == 0)
-        {
-            Console.WriteLine("\nNo services are found.");
-            return false;
-        }
-        else
-        {
-            serviceAddress = calculatorServices[0].EndpointAddress;
-            return true;
-        }
+    // ** DISCOVERY ** //  
+    static bool FindService()  
+    {  
+        Console.WriteLine("\nFinding Calculator Service ..");  
+        DiscoveryClient discoveryClient =   
+            new DiscoveryClient(new UdpDiscoveryEndpoint());  
+  
+        Collection<EndpointDiscoveryMetadata> calculatorServices =   
+            (Collection<EndpointDiscoveryMetadata>)discoveryClient.Find(new FindCriteria(typeof(ICalculator))).Endpoints;  
+  
+        discoveryClient.Close();  
+  
+        if (calculatorServices.Count == 0)  
+        {  
+            Console.WriteLine("\nNo services are found.");  
+            return false;  
+        }  
+        else  
+        {  
+            serviceAddress = calculatorServices[0].Address;  
+            return true;  
+        }  
+    }  
+  
+    static void InvokeService()  
+    {  
+        Console.WriteLine("\nInvoking Calculator Service at {0}\n", serviceAddress);  
+  
+        // Create a client  
+        CalculatorClient client = new CalculatorClient();  
+        client.Endpoint.Address = serviceAddress;  
+        client.Add(10,3);  
     }
-
-    static void InvokeService()
-    {
-        Console.WriteLine("\nInvoking Calculator Service at {0}\n", serviceAddress);
-
-        // Create a client
-        CalculatorClient client = new CalculatorClient();
-        client.Endpoint.Address = serviceAddress;
-        client.Add(10,3);
-}
+}  
 ```  
   
 ## Discovery and Message Level Security  

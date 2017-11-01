@@ -355,17 +355,9 @@ the area of a circle whose radius is 2.50 inches. Remember that the area of a ci
 is the radius squared multiplied by PI. One hint: C# contains a constant
 for PI: `Math.PI` that you can use for that value. 
 
-## Complete challenge
+You can check your answer by [looking at the finished sample code on GitHub](https://github.com/dotnet/docs/tree/master/samples/csharp/numbers-quickstart/Program.cs#L104-L106)
 
-Did you come up with something like this?
-
-```csharp
-double radius = 2.50;
-double area = Math.PI * radius * radius;
-Console.WriteLine(area);
-```
-
-Try some other formulas if you'd like. You can see an example solution by [looking at the finished sample code on GitHub](https://github.com/dotnet/docs/tree/master/samples/csharp/numbers-quickstart/Program.cs)
+Try some other formulas if you'd like. 
 
 You've completed the "Numbers in C#" quick start. You can continue with
 the [Branches and loops](branches-and-loops-local.md) quick start in

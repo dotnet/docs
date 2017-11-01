@@ -288,25 +288,10 @@ by 3.  Here are a few hints:
 - The `if` statement givesx you the condition to see if a number should be part of the sum.
 - The `for` loop can help you repeat a series of steps for all the numbers 1 through 20.
 
-Try it yourself. Then check how you did.
+Try it yourself. Then check how you did. You can see one possible answer by
+[looking at the finished sample code on GitHub](https://github.com/dotnet/docs/tree/master/samples/csharp/branches-quickstart/Program.cs#L46-L54).
 
-## Complete challenge
-
-Did you come up with something like this?
-
-```csharp
-int sum = 0;
-for (int number = 1; number < 21; number++)
-{
-  if (number % 3 == 0)
-  {
-    sum = sum + number;
-  }
-}
-Console.WriteLine($"The sum is {sum}");
-```
-
-You've completed the "branches and loops" quick start. You can compare the code you wrote by [looking at the finished sample code on GitHub](https://github.com/dotnet/docs/tree/master/samples/csharp/branches-quickstart/Program.cs).
+You've completed the "branches and loops" quick start.
 
 You can continue with
 the [Arrays and collections](arrays-and-collections.md) quick start in

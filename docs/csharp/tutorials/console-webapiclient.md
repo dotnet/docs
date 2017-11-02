@@ -297,7 +297,7 @@ to the name of the JSON nodes that map to this type:
 public class Repository
 ```
 
-The <xref:System.Runtime.Serialization.DataContractAttribute> is a member of the <xref:System.Runtime.Serialization namespace, so you'll
+The <xref:System.Runtime.Serialization.DataContractAttribute> is a member of the <xref:System.Runtime.Serialization> namespace, so you'll
 need to add the appropriate `using` statement at the top of the file:
 
 ```csharp

@@ -19,9 +19,9 @@ The API includes the following functions:
 
 |Function  | Description  |
 |---------|---------|
-|[BeginEnumerator](beginernumerator.md) | Begins an enumeration of WMI object properties. |
-|Row2     |         |
-|Row3     |         |
+|[BeginEnumeration](beginernumeration.md) | Resets the enumerator to the beginnining of an enumeration of WMI object properties. |
+|[BeginMethodEnumeration](beginmethopdenumeration.md) |  Begins an enumeration of the methods available for an object. |
+|[Clone](clone.md) | Returns a new object that is a complete clone of the current object. |
 
 
  ## See also

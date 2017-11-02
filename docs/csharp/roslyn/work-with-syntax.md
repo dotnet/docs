@@ -35,7 +35,7 @@ Syntax nodes are one of the primary elements of syntax trees. These nodes repres
 
 All syntax nodes are non-terminal nodes in the syntax tree, which means they always have other nodes and tokens as children. As a child of another node, each node has a parent node that can be accessed through the <xref:Microsoft.CodeAnalysis.SyntaxNode.Parent> property. Because nodes and trees are immutable, the parent of a node never changes. The root of the tree has a null parent.  
 
-Each node has a <xref:Microsoft.CodeAnalysis.SyntaxNode.ChildNodes> method, which returns a list of child nodes in sequential order based on its position in the source text. This list does not contain tokens. Each node also has methods to examine Descendants - such as <xref:Microsoft.CodeAnalysis.SyntaxNode.DescendantNodes>, <xref:Microsoft.CodeAnalysis.SyntaxNode.DescendantTokens>, or <xref:Microsoft.CodeAnalysis.SyntaxNode.DescendantTrivia> - that represent a list of all the nodes, tokens, or trivia that exist in the sub-tree rooted by that node.  
+Each node has a <xref:Microsoft.CodeAnalysis.SyntaxNode.ChildNodes> method, which returns a list of child nodes in sequential order based on their position in the source text. This list does not contain tokens. Each node also has methods to examine Descendants - such as <xref:Microsoft.CodeAnalysis.SyntaxNode.DescendantNodes>, <xref:Microsoft.CodeAnalysis.SyntaxNode.DescendantTokens>, or <xref:Microsoft.CodeAnalysis.SyntaxNode.DescendantTrivia> - that represent a list of all the nodes, tokens, or trivia that exist in the sub-tree rooted by that node.  
 
 In addition, each syntax node subclass exposes all the same children through strongly typed properties. For example, a <xref:Microsoft.CodeAnalysis.CSharp.Syntax.BinaryExpressionSyntax> node class has three additional properties specific to binary operators: <xref:Microsoft.CodeAnalysis.CSharp.Syntax.BinaryExpressionSyntax.Left>, <xref:Microsoft.CodeAnalysis.CSharp.Syntax.BinaryExpressionSyntax.OperatorToken>, and <xref:Microsoft.CodeAnalysis.CSharp.Syntax.BinaryExpressionSyntax.Right>. The type of <xref:Microsoft.CodeAnalysis.CSharp.Syntax.BinaryExpressionSyntax.Left> and <xref:Microsoft.CodeAnalysis.CSharp.Syntax.BinaryExpressionSyntax.Right> is <xref:Microsoft.CodeAnalysis.CSharp.Syntax.ExpressionSyntax>, and the type of <xref:Microsoft.CodeAnalysis.CSharp.Syntax.BinaryExpressionSyntax.OperatorToken> is <xref:Microsoft.CodeAnalysis.CSharp.Syntax.BinaryExpressionSyntax.SyntaxToken>.
 
@@ -51,6 +51,10 @@ For example, an integer literal token represents a numeric value. In addition to
 
 The <xref:Microsoft.CodeAnalysis.SyntaxToken.ValueText> property tells you the same information as the <xref:Microsoft.CodeAnalysis.SyntaxToken.Value> property; however this property is always typed as <xref:System.String>. An identifier in C# source text may include Unicode escape characters, yet the syntax of the escape sequence itself is not considered part of the identifier name. So although the raw text spanned by the token does include the escape sequence, the <xref:Microsoft.CodeAnalysis.SyntaxToken.ValueText> property does not. Instead, it includes the Unicode characters identified by the escape.
 
+For example, if the source text contains identifier written as `\u03C0`, then
+the <xref:Microsoft.CodeAnalysis.SyntaxToken.ValueText> property for this
+token will return `π`.
+
 ## Syntax Trivia
 
 Syntax trivia represent the parts of the source text that are largely insignificant for normal understanding of the code, such as whitespace, comments, and preprocessor directives. 
@@ -65,7 +69,7 @@ Like syntax tokens, trivia are value types. The single <xref:Microsoft.CodeAnaly
 
 ## Spans
 
-Each node, token, or trivia knows its position within the source text and the number of characters it consists of. A text position is represented as a 32-bit integer, which is a zero-based Unicode character index. A <xref:Microsoft.CodeAnalysis.Text.TextSpan> object is the beginning position and a count of characters, both represented as integers. If <xref:Microsoft.CodeAnalysis.Text.TextSpan> has a zero length, it refers to a location between two characters.
+Each node, token, or trivia knows its position within the source text and the number of characters it consists of. A text position is represented as a 32-bit integer, which is a zero-based `char` index. A <xref:Microsoft.CodeAnalysis.Text.TextSpan> object is the beginning position and a count of characters, both represented as integers. If <xref:Microsoft.CodeAnalysis.Text.TextSpan> has a zero length, it refers to a location between two characters.
 
 Each node has two <xref:Microsoft.CodeAnalysis.Text.TextSpan> properties: <xref:Microsoft.CodeAnalysis.Text.TextSpan.Span> and <xref:Microsoft.CodeAnalysis.Text.TextSpan.FullSpan>. 
 
@@ -87,7 +91,7 @@ The statement node inside the block has a span indicated by the single vertical 
 
 ## Kinds
 
-Each node, token, or trivia has a <xref:Microsoft.CodeAnalysis.SyntaxNode.RawKind> property, of type <xref:System.Int32?displayProperty=fullName>, that identifies the exact syntax element represented. This value can be cast to a language-specific enumeration; each language, C# or VB, has a single <xref:Microsoft.CodeAnalysis.CSharp.SyntaxKind> enumeration that lists all the possible nodes, tokens, and trivia elements in the grammar. This conversion can be done automatically by accessing the <xref:Microsoft.CodeAnalysis.CSharp.CSharpExtensions.Kind?displayProperty=nameWithType> or <xref:Microsoft.CodeAnalysis.VisualBasic.VisualBasicExtensions.Kind?displayProperty=nameWithType> extension methods.
+Each node, token, or trivia has a <xref:Microsoft.CodeAnalysis.SyntaxNode.RawKind> property, of type <xref:System.Int32?displayProperty=fullName>, that identifies the exact syntax element represented. This value can be cast to a language-specific enumeration; each language, C# or VB, has a single `SyntaxKind` enumeration  (<xref:Microsoft.CodeAnalysis.CSharp.SyntaxKind?displayProperty=fullName> and <xref:Microsoft.CodeAnalysis.VisualBasic.SyntaxKind?displayProperty=fullName>, respectively) that lists all the possible nodes, tokens, and trivia elements in the grammar. This conversion can be done automatically by accessing the <xref:Microsoft.CodeAnalysis.CSharp.CSharpExtensions.Kind?displayProperty=nameWithType> or <xref:Microsoft.CodeAnalysis.VisualBasic.VisualBasicExtensions.Kind?displayProperty=nameWithType> extension methods.
 
 The <xref:Microsoft.CodeAnalysis.SyntaxToken.RawKind> property allows for easy disambiguation of syntax node types that share the same node class. For tokens and trivia, this property is the only way to distinguish one type of element from another. 
 

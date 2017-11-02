@@ -1,5 +1,4 @@
 ---
-# Mandatory fields. See more on aka.ms/skyeye/meta.
 title: Building documentation with mdoc 
 description: Learn to use mdoc to build documentation for your class library.
 author: github-alias
@@ -7,7 +6,6 @@ ms.author: ronpet
 ms.date: 11/03/2017
 ms.topic: overview
 ms.prod: .Network
-# manager: wpickett
 ---
 # Building documentation with mdoc
 

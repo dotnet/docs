@@ -240,7 +240,7 @@ var streamTask = client.GetStreamAsync("https://api.github.com/orgs/dotnet/repos
 var repositories = serializer.ReadObject(await streamTask) as List<repo>;
 ```
 
-Notice that you're now using <xref:System.Net.Http.HttpClient.GetStreamAsync(System.String) instead of <xref:System.Net.Http.HttpClient.GetStringAsync(System.String)>. The serializer
+Notice that you're now using <xref:System.Net.Http.HttpClient.GetStreamAsync(System.String)> instead of <xref:System.Net.Http.HttpClient.GetStringAsync(System.String)>. The serializer
 uses a stream instead of a string as its source. Let's explain a couple features of the C#
 language that are being used in the second line above. The argument to <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer.ReadObject(System.IO.Stream)> is an
 `await` expression. Await expressions can appear almost anywhere in your code, even though
@@ -297,7 +297,7 @@ to the name of the JSON nodes that map to this type:
 public class Repository
 ```
 
-The <xref:System.Runtime.Serialization.DataContractAttribute> is a member of the <xref:System.Runtime.Serialization namespace, so you'll
+The <xref:System.Runtime.Serialization.DataContractAttribute> is a member of the <xref:System.Runtime.Serialization> namespace, so you'll
 need to add the appropriate `using` statement at the top of the file:
 
 ```csharp

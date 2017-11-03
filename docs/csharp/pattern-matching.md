@@ -216,6 +216,29 @@ checked the type, you don't need an additional null check. You can see that from
 the fact that there are no null checks in any of the case blocks of the samples above:
 they are not necessary, since matching the type pattern guarantees a non-null value.
 
+## `var` declarations in `case` expressions
+
+The introduction of `var` as one of the match expressions introduces new
+rules to the pattern match.
+
+The first rule is that the `var` declaration
+follows the normal type inference rules: The type is inferred to be the
+static type of the switch expression. From that rule, the type always
+matches.
+
+The second rule is that a `var` declaration does not have the null check
+that other type pattern expressions include. That means the variable
+may be null, and a null check is necessary in that case.
+
+Those two rules mean that in many instances, a `var` declaration
+in a `case` expression is the same as a `default` expression. 
+
+. The type is the static type of the switch variable.
+. It matches all values, including the null value
+. If and only if there is a when clause does it differ from the default case.
+
+
+
 ## Conclusions
 
 *Pattern Matching constructs* enable you to easily manage control flow

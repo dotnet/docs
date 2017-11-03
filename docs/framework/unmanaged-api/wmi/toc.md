@@ -12,4 +12,4 @@
 ## [GetMethodOrigin function](getmethodorigin.md)
 ## [GetMethodQualifierSet function](getmethodqualifierset.md)
 ## [GetNames function](getnames.md)
-
+## [GetObjectText function](getobjecttext.md)

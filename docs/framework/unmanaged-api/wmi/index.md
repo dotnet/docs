@@ -17,7 +17,7 @@ The .NET Framework WMI and Performance Counters unmanaged API consists of a set 
   
 The API includes the following functions:
 
-|Function  | Description  |
+| Function | Description |
 |---------|---------|
 | [BeginEnumeration function](beginenumeration.md) | Resets the enumerator to the beginning of an enumeration of WMI object properties. |
 | [BeginMethodEnumeration function](beginmethopenumeration.md) |  Begins an enumeration of the methods available for an object. |
@@ -33,7 +33,7 @@ The API includes the following functions:
 | [GetMethodOrigin function](getmethodorigin.md) | Determines the class in which a method was declared. |
 | [GetMethodQualifierSet function](getmethodqualifierset.md) | Retrieves the qualifier set for a particular method. |
 | [GetNames function](getnames.md) | Retrieves either a subset or all of the names of the properties of an object. |
-
+| [GetObjectText function](getobjecttext.md) | Returns a textual rendering of an object in the MOF syntax. | 
 
  ## See also
 [Unmanaged API reference](../index.md) 

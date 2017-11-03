@@ -26,23 +26,24 @@ Begins an enumeration of the methods available for the object.
   
 ## Syntax  
   
-```cpp  
+``` 
 HRESULT BeginMethodEnumeration (
-   int               vFunc, 
-   IWbemClassObject* ptr, 
-   LONG              lEnumFlags); 
+   [in] int               vFunc, 
+   [in] IWbemClassObject* ptr, 
+   [in] LONG              lEnumFlags
+); 
 ```  
 
 ## Parameters
 
 `vFunc`
-This parameter is unused.
+[in] This parameter is unused.
 
 `ptr`
-A pointer to an [IWbemClassObject](https://msdn.microsoft.com/library/aa391433%28v=vs.85%29.aspx) instance.
+[in] A pointer to an [IWbemClassObject](https://msdn.microsoft.com/library/aa391433%28v=vs.85%29.aspx) instance.
 
 `lEnumFlags`
-Zero (0) for all methods, or a flag that specifies the scope of the enumeration. The following flags are defined in the **WbemCli.h** header file, or you can define them as constants in your code:
+[in] Zero (0) for all methods, or a flag that specifies the scope of the enumeration. The following flags are defined in the **WbemCli.h** header file, or you can define them as constants in your code:
 
 Constant  |Value  |Description  |
 |---------|---------|---------|

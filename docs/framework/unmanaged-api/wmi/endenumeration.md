@@ -1,36 +1,36 @@
 ---
-title: Clone function
+title: EndEnumeration function
 ms.date: "11/06/2017"
 ms.prod: ".net-framework"
 ms.technology: 
   - "dotnet-clr"
 ms.topic: "reference"
 api_name: 
-  - "Clone"
+  - "EndEnumeration"
 api_location: 
   - "WMINet_Utils.dll"
 api_type: 
   - "DLLExport"
 f1_keywords: 
-  - "Clone"
+  - "EndEnumeration"
 helpviewer_keywords: 
-  - "Clone function [.NET WMI and performance counters]"
+  - "EndEnumeration function [.NET WMI and performance counters]"
 topic_type: 
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
 ---
-# Clone function
-Returns a new object that is a complete clone of the current object.   
+# EndEnumeration function
+Terminates an enumeration sequence started with a call to the [BeginEnumeration function](beginenumeration.md).  
   
 ## Syntax  
   
 ```  
-HRESULT Clone (
-   [in] int                  vFunc, 
-   [in] IWbemClassObject*    ptr, 
-   [out] IWbemClassObject**  ppCopy); 
+HRESULT EndEnumeration (
+   [in] int               vFunc, 
+   [in] IWbemClassObject* ptr 
+); 
 ```  
 
 ## Parameters
@@ -41,8 +41,6 @@ HRESULT Clone (
 `ptr`
 [in] A pointer to an [IWbemClassObject](https://msdn.microsoft.com/library/aa391433%28v=vs.85%29.aspx) instance.
 
-`ppCopy`
-[out] A new object that is a complete lone of `ptr`. This argument cannot be `null` if it receives the copy of the current object.
 
 ## Return value
 
@@ -50,16 +48,14 @@ The following values returned by this function are defined in the **WbemCli.h** 
 
 |Constant  |Value  |Description  |
 |---------|---------|---------|
-| `WBEM_E_FAILED` | 0x80041001 | There has been a general failure. |
-| `WBEM_E_INVALID_PARAMETER` | 0x80041008 | `lEnnumFlags` is non-zero and is not one of the specified flags. |
-| `WBEM_E_OUT_OF_MEMORY` | 0x80041006 | Not enough memory is available to clone the object. |
-| `WBEM_S_NO_ERROR` | 0 | The function call was successful.  |
+|`WBEM_E_FAILED` | 0x80041001 | There has been a general failure. |
+|`WBEM_S_NO_ERROR` | 0 | The function call was successful.  |
   
 ## Remarks
 
-This function wraps a call to the [IWbemClassObject::Clone](https://msdn.microsoft.com/library/aa391436(v=vs.85).aspx) method.
+This function wraps a call to the [IWbemClassObject::EndEnumeration](https://msdn.microsoft.com/library/aa391433%28v=vs.85%29.aspx) method.
 
-The cloned object is a COM object that has a reference count of 1.
+A call to the `EndEnumeration` function is not required, but it is recommended because it releases resources associated with the enumeration. However, the resoruces are deallocated automatically when the next enumeration is started or the object is released.
 
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

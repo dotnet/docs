@@ -2,5 +2,12 @@
 ## BeginEnumeration function]beginenumeration.md)
 ## [BeginMethodEnumeration function](beginmethodenumeration.md)
 ## [Clone function](clone.md)
-
-
+## [CompareTo function](compareto.md)
+## [Delete function](delete.md)
+## [DeleteMethod function](deletemethod.md)
+## [EndEnumeration function](endenumeration.md)
+## [EndMethodEnumeration function](endmethodenumeration.md)
+## [Get function](get.md)
+## [GetMethod function](getmethod.md)
+## [GetMethodOrigin function](getmethodorigin.md)
+## [GetMethodQualifierSet function](getmethodqualifierset.md)

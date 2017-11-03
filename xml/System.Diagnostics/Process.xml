@@ -862,7 +862,7 @@ The following code example creates a process that prints a file. It sets the <xr
  The event only occurs during asynchronous read operations on <xref:System.Diagnostics.Process.StandardError%2A>. To start asynchronous read operations, you must redirect the <xref:System.Diagnostics.Process.StandardError%2A> stream of a <xref:System.Diagnostics.Process>, add your event handler to the <xref:System.Diagnostics.Process.ErrorDataReceived> event, and call <xref:System.Diagnostics.Process.BeginErrorReadLine%2A>. Thereafter, the <xref:System.Diagnostics.Process.ErrorDataReceived> event signals each time the process writes a line to the redirected <xref:System.Diagnostics.Process.StandardError%2A> stream, until the process exits or calls <xref:System.Diagnostics.Process.CancelErrorRead%2A>.  
   
 > [!NOTE]
->  The application that is processing the asynchronous output should call the <xref:System.Diagnostics.Process.WaitForExit%2A> method to ensure that the output buffer has been flushed.  
+>  The application that is processing the asynchronous output should call the <xref:System.Diagnostics.Process.WaitForExit> method to ensure that the output buffer has been flushed. Note that specifying a timeout by using the <xref:System.Diagnostics.Process.WaitForExit(Int32)> overload does *not* ensure the output buffer has been flushed.
   
    
   

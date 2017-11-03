@@ -5052,6 +5052,7 @@ p.WaitForExit();
  -or-  
   
  You are attempting to call <see cref="M:System.Diagnostics.Process.WaitForExit(System.Int32)" /> for a process that is running on a remote computer. This method is available only for processes that are running on the local computer.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="milliseconds" /> is a negative number other than -1, which represents an infinite time-out.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
         <altmember cref="M:System.Diagnostics.Process.CloseMainWindow" />
         <altmember cref="M:System.Diagnostics.Process.Kill" />

@@ -231,13 +231,27 @@ that other type pattern expressions include. That means the variable
 may be null, and a null check is necessary in that case.
 
 Those two rules mean that in many instances, a `var` declaration
-in a `case` expression is the same as a `default` expression. 
+in a `case` expression matches the same conditions as a `default` expression.
+Because any non-default case is preferred to the `default` case, the `default`
+case will never execute.
 
-. The type is the static type of the switch variable.
-. It matches all values, including the null value
-. If and only if there is a when clause does it differ from the default case.
+> [!NOTE]
+> The compiler does not emit a warning in those cases where a `default` case
+> has been written but will never execute. This is consistent with current
+> `switch` statement behavior where all possible cases have been listed.
 
+The third rule introduces uses where a `var` case may be useful. Imagine
+that you are doing a pattern match where the input is a string and you are
+searching for known command values. You might write something like:
 
+[!code-csharp[VarCaseExpression](../../samples/csharp/PatternMatching/Program.cs#VarCaseExpression "use a var case expression to filter white space")]]
+
+The `var` case matches `null`, the empty string, or any sring that contains
+only whitespace. Notice that the preceding code using the `?.` operator to
+ensure that it does not accidentally throw a <xref:System.NullReferenceException>. The `default` case handles any other string values that are not understood by this command parser.
+
+This simple example shows one example where you may want to consider
+a `var` case expression that is distinct from a `default` expression.
 
 ## Conclusions
 

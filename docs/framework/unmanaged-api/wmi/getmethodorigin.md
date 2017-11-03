@@ -23,7 +23,9 @@ manager: "wpickett"
 ---
 # GetMethodOrigin function
 Determines the class in which a method was declared.
-  
+
+[!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
+    
 ## Syntax  
   
 ```  

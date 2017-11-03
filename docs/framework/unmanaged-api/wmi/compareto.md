@@ -23,7 +23,9 @@ manager: "wpickett"
 ---
 # CompareTo function
 Compares an object to another Windows management object.  
-  
+
+[!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
+    
 ## Syntax  
   
 ```

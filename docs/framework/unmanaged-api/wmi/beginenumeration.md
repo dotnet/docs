@@ -22,7 +22,9 @@ ms.author: "ronpet"
 manager: "wpickett"
 ---
 # BeginEnumeration function
-Resets an enumeration back to the beginning of the enumeration.  
+Resets an enumerator back to the beginning of the enumeration.  
+
+[!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
   
 ## Syntax  
   

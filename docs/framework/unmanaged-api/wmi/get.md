@@ -23,7 +23,9 @@ manager: "wpickett"
 ---
 # Get function
 Retrieves the specified property value if it exists.
-  
+
+[!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
+    
 ## Syntax  
   
 ```  

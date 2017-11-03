@@ -11,3 +11,5 @@
 ## [GetMethod function](getmethod.md)
 ## [GetMethodOrigin function](getmethodorigin.md)
 ## [GetMethodQualifierSet function](getmethodqualifierset.md)
+## [GetNames function](getnames.md)
+

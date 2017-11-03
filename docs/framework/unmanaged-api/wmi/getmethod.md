@@ -23,7 +23,9 @@ manager: "wpickett"
 ---
 # GetMethod function
 Retrieves information about the specified method.
-  
+
+[!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
+    
 ## Syntax  
   
 ```  

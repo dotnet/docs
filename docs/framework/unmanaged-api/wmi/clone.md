@@ -24,6 +24,8 @@ manager: "wpickett"
 # Clone function
 Returns a new object that is a complete clone of the current object.   
   
+[!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
+  
 ## Syntax  
   
 ```  

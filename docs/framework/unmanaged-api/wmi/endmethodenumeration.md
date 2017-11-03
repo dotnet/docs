@@ -23,7 +23,9 @@ manager: "wpickett"
 ---
 # EndMethodEnumeration function
 Terminates an enumeration sequence started with a call to the [BeginMethodEnumeration function](beginmethodenumeration.md).  
-  
+
+[!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
+    
 ## Syntax  
   
 ```  

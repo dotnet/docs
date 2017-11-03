@@ -23,7 +23,9 @@ manager: "wpickett"
 ---
 # DeleteMethod function
 Deletes the specified method from a CIM class definition.
-  
+
+[!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
+    
 ## Syntax  
   
 ```  

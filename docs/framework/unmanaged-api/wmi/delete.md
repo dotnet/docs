@@ -22,8 +22,10 @@ ms.author: "ronpet"
 manager: "wpickett"
 ---
 # Delete function
-Deletes the specififed property from a CIM class definition and all of its qualifiers.
-  
+Deletes the specified property from a CIM class definition and all of its qualifiers.
+
+[!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
+    
 ## Syntax  
   
 ```  

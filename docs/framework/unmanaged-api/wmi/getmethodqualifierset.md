@@ -23,7 +23,9 @@ manager: "wpickett"
 ---
 # GetMethodQualifierSet function
 Retrieves the qualifier set for a particular method.
-  
+
+[!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
+    
 ## Syntax  
   
 ```  
@@ -47,7 +49,7 @@ HRESULT GetMethodQualifierSet (
 [in] The method  name. `wszMethod` must point to a valid `LPCWSTR`. 
 
 `ppQualSet`
-[out] Receives the interface pointer that allows access to the qualifiers of the method. `ppQualSet` cannot be `null`. On error, a new object is not returned, and the pointer is set to point to `null`. 
+[out] Receives the interface pointer that allows access to the qualifiers of the method. `ppQualSet` cannot be `null`. If an error occurs, a new object is not returned, and the pointer is set to point to `null`. 
 
 ## Return value
 
@@ -61,7 +63,9 @@ The following values returned by this function are defined in the **WbemCli.h** 
   
 ## Remarks
 
-This function wraps a call to the [IWbemClassObject::GetMethodQualifierSet](https://msdn.microsoft.com/library/aa391446(v=vs.85).aspx) method.
+This function wraps a call to the [IWbemClassObject::GetMethodQualifierSet](https://msdn.microsoft.com/library/aa391446(v=vs.85).aspx) method. 
+
+A call to this function is supported only if the current object is a CIM class definition. Method manipulation is not available for [IWbemClassObject](https://msdn.microsoft.com/library/aa391433%28v=vs.85%29.aspx) ponters that point to CIM instances.
 
 Because each method may have its own qualifiers, the [IWbemQualifierSet pointer](https://msdn.microsoft.com/library/aa391860(v=vs.85).aspx) lets the caller add, edit, or delete these qualifiers.
 

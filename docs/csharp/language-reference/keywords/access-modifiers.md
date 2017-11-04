@@ -23,17 +23,19 @@ Access modifiers are keywords used to specify the declared accessibility of a me
   
 -   [private](../../../csharp/language-reference/keywords/private.md)  
   
- The following five accessibility levels can be specified using the access modifiers:  
+ The following six accessibility levels can be specified using the access modifiers:  
   
  `public`: Access is not restricted.  
   
  `protected`: Access is limited to the containing class or types derived from the containing class.  
   
- `Internal`: Access is limited to the current assembly.  
+ `internal`: Access is limited to the current assembly.  
   
- [protected internal](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md): Access is limited to the current assembly or types derived from the containing class.  
+ [`protected internal`](../../../csharp/language-reference/keywords/protected-internal.md): Access is limited to the current assembly or types derived from the containing class.  
   
  `private`: Access is limited to the containing type.  
+
+ [`private protected`](../../../csharp/language-reference/keywords/private-protected.md): Access is limited to the containing class or types derived from the containing class within the current assembly.  
   
  This section also introduces the following:  
   

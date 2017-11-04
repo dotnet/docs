@@ -185,7 +185,7 @@ You can add any restrictive access modifier to either the set or get accessors. 
 you place on the individual accessor must be more limited than the access modifier on the property
 definition. The above is legal because the `FirstName` property is `public`, but the set accessor is
 `private`. You could not declare a `private` property with a `public` accessor. Property declarations
-can also be declared `protected`, `internal`, `protected internal` or even `private`.   
+can also be declared `protected`, `internal`, `protected internal`, `private protected` or even `private`.   
 
 It is also legal to place the more restrictive modifier on the `get` accessor. For example, you could
 have a `public` property, but restrict the `get` accessor to `private`. That scenario is rarely done

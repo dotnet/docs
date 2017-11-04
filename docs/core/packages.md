@@ -126,10 +126,8 @@ However, the framework and metapackage references in the project file do not nee
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netstandard1.3</TargetFramework>
+    <NetStandardImplicitPackageVersion>1.6.0</NetStandardImplicitPackageVersion>
   </PropertyGroup>
-  <ItemGroup>
-    <NetStandardImplicitPackageVersion Include="NetStandardLibrary" Version="1.6.0" />
-  </ItemGroup>
 </Project>
 ```
 

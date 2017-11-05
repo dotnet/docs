@@ -1,39 +1,38 @@
 ---
-title: GetMethodOrigin function
+title: GetQualifierSet function
 ms.date: "11/06/2017"
 ms.prod: ".net-framework"
 ms.technology: 
   - "dotnet-clr"
 ms.topic: "reference"
 api_name: 
-  - "GetMethodOrigin"
+  - "GetQualifierSet"
 api_location: 
   - "WMINet_Utils.dll"
 api_type: 
   - "DLLExport"
 f1_keywords: 
-  - "GetMethodOrigin"
+  - "GetQualifierSet"
 helpviewer_keywords: 
-  - "GetMethodOrigin function [.NET WMI and performance counters]"
+  - "GetQualifierSet function [.NET WMI and performance counters]"
 topic_type: 
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
 ---
-# GetMethodOrigin function
-Determines the class in which a method is declared.
+# GetQualifierSet function
+Retrieves the qualifier set for a class instance or a class definition.
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
     
 ## Syntax  
   
 ```  
-HRESULT GetMethodOrigin (
+HRESULT GetQualifierSet (
    [in] int                 vFunc, 
    [in] IWbemClassObject*   ptr, 
-   [in] LPCWSTR             wszMethodName,
-   [out] BSTR*              pstrClassName
+   [out] IWbemQualifierSet  **ppQualSet
 ); 
 ```  
 
@@ -45,11 +44,8 @@ HRESULT GetMethodOrigin (
 `ptr`
 [in] A pointer to an [IWbemClassObject](https://msdn.microsoft.com/library/aa391433%28v=vs.85%29.aspx) instance.
 
-`wszMethodName`
-[in] The name of the method for the object whose owning class is being requested. 
-
-`pstrClassName`
-[out] Receives the name of the class that owns the method.
+`ppQualSet`
+[out] Receives the interface pointer that allows access to the qualifiers of the class object. `ppQualSet` cannot be `null`. If an error occurs, a new object is not returned, and the pointer is left unmodified. 
 
 ## Return value
 
@@ -57,17 +53,17 @@ The following values returned by this function are defined in the **WbemCli.h** 
 
 |Constant  |Value  |Description  |
 |---------|---------|---------|
-|`WBEM_E_NOT_FOUND` | 0x80041002 | The specified method was not found. |
-|`WBEM_E_INVALID_PARAMETER` | 0x80041008 | One or more parameters are not valid. |
+|`WBEM_E_FAILED` | 0x80041001 | There has been a general failure. |
+|`WBEM_E_NOT_FOUND` | 0x80041002 | The specified method does not exist. |
+|`WBEM_E_OUT_OF_MEMORY` | 0x80041006 | Not enough memory is available to complete the operation. |
+|`WBEM_E_INVALID_PARAMETER` | 0x80041008 | A parameter is `null`. |
 |`WBEM_S_NO_ERROR` | 0 | The function call was successful.  |
   
 ## Remarks
 
-This function wraps a call to the [IWbemClassObject::GetMethodOrigin](https://msdn.microsoft.com/library/aa391443(v=vs.85).aspx) method.
+This function wraps a call to the [IWbemClassObject::GetQualifierSet](https://msdn.microsoft.com/library/aa391451(v=vs.85).aspx) method. 
 
-Because a class can inherit methods from one or more base classes, developers often want to determine the class in which a given method is defined.
-
-The `pstrClassName` parameter must not point to a valid `BSTR` before the function is called because this is an `out` parameter; this pointer is not deallocated after the function returns.
+The [IWbemQualifierSet pointer](https://msdn.microsoft.com/library/aa391860(v=vs.85).aspx) lets the caller add, edit, or delete these qualifiers. Such added, edited, or deleted qualifiers apply to the entire instance or class definition.
 
 ## Requirements  
 **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

@@ -13,3 +13,12 @@
 ## [GetMethodQualifierSet function](getmethodqualifierset.md)
 ## [GetNames function](getnames.md)
 ## [GetObjectText function](getobjecttext.md)
+## [GetPropertyOrigin function](getpropertyorigin.md)
+## [GetPropertyQualifierSet](getpropertyqualifierset.md)
+## [GetQualifierSet](getqualfierset.md)
+## [InheritsFrom](inheritsfrom.md)
+## [Next](next.md)
+## [NextMethod](nextmethod.md)
+## [Put](put.md)
+
+

@@ -1,39 +1,39 @@
 ---
-title: GetMethodOrigin function
+title: GetPropertyOrigin function
 ms.date: "11/06/2017"
 ms.prod: ".net-framework"
 ms.technology: 
   - "dotnet-clr"
 ms.topic: "reference"
 api_name: 
-  - "GetMethodOrigin"
+  - "GetPropertyOrigin"
 api_location: 
   - "WMINet_Utils.dll"
 api_type: 
   - "DLLExport"
 f1_keywords: 
-  - "GetMethodOrigin"
+  - "GetPropertyOrigin"
 helpviewer_keywords: 
-  - "GetMethodOrigin function [.NET WMI and performance counters]"
+  - "GetPropertyOrigin function [.NET WMI and performance counters]"
 topic_type: 
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
 ---
-# GetMethodOrigin function
-Determines the class in which a method was declared.
+# GetPropertyOrigin function
+Determines the class in which a property is declared.
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
     
 ## Syntax  
   
 ```  
-HRESULT GetMethodOrigin (
+HRESULT GetPropertyOrigin (
    [in] int                 vFunc, 
    [in] IWbemClassObject*   ptr, 
    [in] LPCWSTR             wszMethodName,
-   [out] BSTR               pstrClassName
+   [out] BSTR*              pstrClassName
 ); 
 ```  
 
@@ -46,10 +46,10 @@ HRESULT GetMethodOrigin (
 [in] A pointer to an [IWbemClassObject](https://msdn.microsoft.com/library/aa391433%28v=vs.85%29.aspx) instance.
 
 `wszMethodName`
-[in] The name of the method for the object whose owning class is being requested. 
+[in] The name of the property for the object whose owning class is being requested. 
 
 `pstrClassName`
-[out] Receives the name of the class that owns the method.
+[out] Receives the name of the class that owns the property.
 
 ## Return value
 
@@ -57,15 +57,19 @@ The following values returned by this function are defined in the **WbemCli.h** 
 
 |Constant  |Value  |Description  |
 |---------|---------|---------|
+|`WBEM_E_FAILED` | 0x80041001 | There has been a general failure. |
 |`WBEM_E_NOT_FOUND` | 0x80041002 | The specified property was not found. |
-|`WBEM_E_INVALID_PARAMETER` | 0x80041008 | One or more parameters are not valid. |
+|`WBEM_E_INVALID_PARAMETER` | 0x80041008 | A parameter is not valid. |
+|`WBEM_E_OUT_OF_MEMORY` | 0x80041006 | Not enough memory is available to complete the operation. |
 |`WBEM_S_NO_ERROR` | 0 | The function call was successful.  |
   
 ## Remarks
 
-This function wraps a call to the [IWbemClassObject::GetMethodOrigin](https://msdn.microsoft.com/library/aa391443(v=vs.85).aspx) method.
+This function wraps a call to the [IWbemClassObject::GetPropertyOrigin](https://msdn.microsoft.com/library/aa391449(v=vs.85).aspx) method.
 
-Because a class can inherit methods from one or more base classes, developers often want to determine the class in which a given method is defined.
+Because a class can inherit properties from one or more base classes, developers often want to determine the property in which a given method is defined.
+
+The `pstrClassName` parameter must not point to a valid `BSTR` before the function is called because this is an `out` parameter; this pointer is not deallocated after the function returns.
 
 ## Requirements  
 **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

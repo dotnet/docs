@@ -65,7 +65,7 @@ The following values returned by this function are defined in the **WbemCli.h** 
 
 ## Remarks
 
-This function wraps a call to the [IWbemClassObject::Delete](https://msdn.microsoft.com/en-us/library/aa391438(v=vs.85).aspx) method.
+This function wraps a call to the [IWbemClassObject::Delete](https://msdn.microsoft.com/library/aa391438(v=vs.85).aspx) method.
 
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

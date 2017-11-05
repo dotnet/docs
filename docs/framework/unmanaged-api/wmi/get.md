@@ -54,7 +54,7 @@ HRESULT Get (
 `lFlags`
 [in] Reserved. This parameter must be 0.
 
-`pval` 
+`pVal` 
 [out] If the function returns successfully, contains the value of the `wszName` property. The `pval` argument is assigned the correct type and value for the qualifier.
 
 `pvtType`

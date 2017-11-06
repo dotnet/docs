@@ -252,7 +252,7 @@
  [!code-csharp[System.DateTime.Calendar#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.DateTime.Calendar/cs/UmAlQuraParse1.cs#2)]
  [!code-vb[System.DateTime.Calendar#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.DateTime.Calendar/vb/UmAlQuraParse1.vb#2)]  
   
- You can also instantiate a <xref:System.DateTime> value by using the date and time elements (such as the number of the year, month, and day) of a specific calendar by calling a [DateTime constructor](../Topic/DateTime%20Constructor.md) that includes a `calendar` parameter and passing it a <xref:System.Globalization.CultureInfo.Calendar%2A> object that represents that calendar. The following example does this by using the date and time elements from the <xref:System.Globalization.UmAlQuraCalendar> calendar.  
+ You can also instantiate a <xref:System.DateTime> value by using the date and time elements (such as the number of the year, month, and day) of a specific calendar by calling a [DateTime constructor](xref:System.DateTime.%23ctor%2A) that includes a `calendar` parameter and passing it a <xref:System.Globalization.CultureInfo.Calendar%2A> object that represents that calendar. The following example does this by using the date and time elements from the <xref:System.Globalization.UmAlQuraCalendar> calendar.  
   
  [!code-csharp[System.DateTime.Calendar#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.DateTime.Calendar/cs/Ctor1.cs#3)]
  [!code-vb[System.DateTime.Calendar#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.DateTime.Calendar/vb/Ctor1.vb#3)]  

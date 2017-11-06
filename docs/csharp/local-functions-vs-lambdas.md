@@ -29,13 +29,12 @@ Contrast that implementation with a version that uses lambda expressions:
 
 The local functions have names. The lambda expressions are anonymous methods
 that are assigned to variables that are `Func` or `Action` types. When you
-declare a local function the argument types and return type are part of the 
-function declaration. The argument types and return type are part of the
-variable type declaration when you declare a lambda expression instead of
-being part of the body of the lambda expression. Those two difference may
-result in more clear code.
+declare a local function, the argument types and return type are part of the 
+function declaration. Instead of being part of the body of the lambda expression, the argument types and return type are part of the lambda
+expression's variable type declaration. Those two differences may
+result in clearer code.
 
-Second, local functions have different rules for definite assignment
+Local functions have different rules for definite assignment
 than lambda expressions. A local function declaration can be referenced
 from any code location where it is in scope. A lambda expression must be
 assigned before it can be accessed (or called through a delgate
@@ -43,7 +42,11 @@ referencing the lambda expression.) Notice that the version using the
 lambda expression must declare and initialize the lambda expression,
 `nthFactorial` before defining it. Not doing so results in a compile
 time error for referencing `nthFactorial` before assigning it.
-Recursive algorithms are easier to create using local functions.
+These differences mean that recursive algorithms are easier to create
+using local functions. You can declare and define a local function that
+calls itself. Lambda expressions must be declared, and assigned a default
+value before they can be re-assigned to a body that references the same
+lambda expression.
 
 Definite assignment rules also affect any variables that are captured
 by the local function or lamdba epression. Both local functions and
@@ -51,7 +54,7 @@ lambda expression rules demand that any captured variables are definitely
 assigned at the point when the local function or lambda expression is
 converted to a delegate. The difference is that lambda expressions are converted
 to delegates when they are declared. Local functions are converted to delegates
-only when used as a delegate. If you declare a local function, and only
+only when used as a delegate. If you declare a local function and only
 reference it by calling it like a method, it will not be converted to
 a delegate. That rule enables you to declare
 a local function at any convenient location in its enclosing scope. It's common
@@ -59,9 +62,7 @@ to declare local functions at the end of the parent method, after any return
 statements.
 
 Third, the compiler can perform static analysis that enables local functions to
-definitely assign captured variables in the enclosing scope.
-
-Consider this example:
+definitely assign captured variables in the enclosing scope. Consider this example:
 
 ```csharp
 bool M()

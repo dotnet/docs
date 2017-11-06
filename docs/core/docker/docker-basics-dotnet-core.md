@@ -4,8 +4,8 @@ description: A Docker and .NET Core Basic Tutorial
 keywords: .NET, .NET Core, Docker, Tutorial
 author: jralexander
 ms.author: johalex
-ms.date: 10/11/2017
-ms.topic: quickstart
+ms.date: 11/06/2017
+ms.topic: tutorial
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.devlang: dotnet
@@ -42,6 +42,8 @@ To complete this tutorial:
 #### .NET Core 2.0 SDK
 
 * Install [.NET Core SDK 2.0](https://www.microsoft.com/net/core).
+
+See [.NET Core 2.x Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.0/2.0-supported-os.md) for the complete list of .NET Core 2.x supported operating systems, out of support OS versions, and lifecycle policy links.
 
 * Install your favorite code editor, if you haven't already.
 
@@ -98,11 +100,14 @@ Let's do a quick walkthrough:
 
 2. `$ dotnet restore`
 
-   In .NET Core 2.x, **dotnet new** runs the [`dotnet restore`](../tools/dotnet-restore.md) command. **Dotnet restore** restores the tree of dependencies with a [NuGet](https://www.nuget.org/)(.NET package manager) call. 
+   In .NET Core 2.x, **dotnet new** runs the [`dotnet restore`](../tools/dotnet-restore.md) command. **Dotnet restore** restores the tree of dependencies with a [NuGet](https://www.nuget.org/)(.NET package manager) call.
    NuGet performs the following tasks:
    * analyzes the *Hello.csproj* file 
    * downloads the file dependencies (or grabs from your machine cache)
    * writes the *obj/project.assets.json* file
+
+<a name="dotnet-restore-note"></a>
+[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
    
    The *project.assets.json* file is a complete set of the NuGet dependencies graph, binding resolutions, and other app metadata. This required file is used by other tools, such as [`dotnet build`](../tools/dotnet-build.md) and [`dotnet run`](../tools/dotnet-run.md), to correctly process the source code.
    
@@ -188,8 +193,8 @@ ENTRYPOINT ["dotnet", "out/Hello.dll"]
 
 Now you have a Dockerfile that:
 
-* copies your app to the container
-* your app's dependencies to the container
+* copies your app to the image
+* your app's dependencies to the image
 * builds the app to run as an executable
 
 ### Build and run the Hello .NET Core 2.0 app
@@ -204,6 +209,7 @@ These Docker commands are essential:
 * [docker stop](https://docs.docker.com/engine/reference/commandline/stop/)
 * [docker rm](https://docs.docker.com/engine/reference/commandline/rm/)
 * [docker rmi](https://docs.docker.com/engine/reference/commandline/rmi/)
+* [docker image](https://docs.docker.com/engine/reference/commandline/image/)
 
 #### Build and run
 

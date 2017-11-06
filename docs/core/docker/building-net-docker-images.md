@@ -4,16 +4,26 @@ description: Understanding Docker images and .NET Core
 keywords: .NET, .NET Core, Docker
 author: jralexander
 ms.author: johalex
-ms.date: 10/11/2017
-ms.topic: article
+ms.date: 11/06/2017
+ms.topic: tutorial
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.devlang: dotnet
 ms.assetid: 03c28597-7e73-46d6-a9c3-f9cb55642739
+ms.custom: mvc
+manager: wpickett
 ---
 # Building Docker Images for .NET Core Applications
 
  In this tutorial, We focus on how to use .NET Core on Docker. First, we explore the different Docker images offered and maintained by Microsoft, and use cases. We then learn how to build and dockerize an ASP.NET Core app.
+
+During the course of this tutorial, you learn:
+> [!div class="checklist"]
+> * Learn about Microsoft .NET Core Docker images 
+> * Get an ASP.NET Core sample app to Dockerize
+> * Run the ASP.NET sample app locally
+> * Build and run the sample with Docker for Linux containers
+> * Build and run the sample with Docker for Windows containers
 
 ## Docker Image Optimizations
 
@@ -63,21 +73,10 @@ In addition to the optimized scenarios of development, build and production, we 
 
 Latest versions of each variant:
 
-* `microsoft/dotnet` or `microsoft/dotnet:latest` (includes SDK)
+* `microsoft/dotnet` or `microsoft/dotnet:latest` (alias for the SDK image)
 * `microsoft/dotnet:sdk`
 * `microsoft/dotnet:runtime`
 * `microsoft/dotnet:runtime-deps`
-
-Here is an images list to show the various image sizes. The actual sizes will vary with each release, but SDK (`microsoft/dotnet:2.0.0-sdk`) will be larger than runtime, and runtime (`microsoft/dotnet:runtime`) will be larger than runtime-deps (`runtime-deps`).
-
-```console
-REPOSITORY          TAG                 IMAGE ID            SIZE
-microsoft/dotnet    latest              cc72b1545c62        1.64GB
-microsoft/dotnet    runtime             a1d5aead943d        219MB
-microsoft/dotnet    runtime-deps        6cffceb6f230        153MB
-microsoft/dotnet    2.0-sdk             d84f64b126a6        1.64GB
-microsoft/dotnet    2.0.0-sdk           5af1ed26d8e9        1.64GB
-```
 
 ## Samples to explore
 
@@ -241,7 +240,18 @@ The following Docker images are used in this sample
 * `microsoft/aspnetcore-build:2.0`
 * `microsoft/aspnetcore:2.0`
 
+Congratulations! you have just:
+> [!div class="checklist"]
+> * Learned about Microsoft .NET Core Docker images
+> * Got an ASP.NET Core sample app to Dockerize
+> * Ran the ASP.NET sample app locally
+> * Built and ran the sample with Docker for Linux containers
+> * Built and ran the sample with Docker for Windows containers
+
+
 **Next Steps**
+
+Here are some next steps you can take:
 
 * [Working with Visual Studio Docker Tools](https://docs.microsoft.com/aspnet/core/publishing/visual-studio-tools-for-docker)
 * [Deploying Docker Images from the Azure Container Registry to Azure Container Instances](https://blogs.msdn.microsoft.com/stevelasker/2017/07/28/deploying-docker-images-from-the-azure-container-registry-to-azure-container-instances/)
@@ -251,6 +261,3 @@ The following Docker images are used in this sample
 
 > [!Note]
 > If you do not have an Azure subscription, [sign up today](https://azure.microsoft.com/free/?b=16.48) for a free 30-day account and get $200 in Azure Credits to try out any combination of Azure services.
-
-<a name="dotnet-restore-note"></a>
-[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]

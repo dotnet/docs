@@ -65,6 +65,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.GenericWebPart" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -167,6 +168,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.Hidden" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.AllowHide" />
       </Docs>
     </Member>
     <Member MemberName="AllowConnect">
@@ -207,6 +210,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.WebControls.WebParts.WebPartManager.CanConnectWebParts" />
       </Docs>
     </Member>
     <Member MemberName="AllowEdit">
@@ -328,6 +332,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.Hidden" />
       </Docs>
     </Member>
     <Member MemberName="AllowMinimize">
@@ -511,6 +516,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         <block subset="none" type="overrides">
           <para>To use this property, you must create a custom <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control, and override either its <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnAuthorizeWebPart(System.Web.UI.WebControls.WebParts.WebPartAuthorizationEventArgs)" /> method or its <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.IsAuthorized(System.Web.UI.WebControls.WebParts.WebPart)" /> method to handle the check for the <see cref="P:System.Web.UI.WebControls.WebParts.WebPart.AuthorizationFilter" /> property.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.AuthorizeWebPart" />
       </Docs>
     </Member>
     <Member MemberName="CatalogIconImageUrl">
@@ -599,6 +605,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value specified is not one of the <see cref="T:System.Web.UI.WebControls.WebParts.PartChromeState" /> values.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.Part.ChromeState" />
       </Docs>
     </Member>
     <Member MemberName="ChromeType">
@@ -634,6 +641,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value is not one of the <see cref="T:System.Web.UI.WebControls.WebParts.PartChromeType" /> values.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.Part.ChromeType" />
       </Docs>
     </Member>
     <Member MemberName="ConnectErrorMessage">
@@ -698,6 +706,8 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.WebBrowsableObject" />
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.IWebEditable" />
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -732,6 +742,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.Part.Description" />
       </Docs>
     </Member>
     <Member MemberName="Direction">
@@ -762,6 +773,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Panel.Direction" />
       </Docs>
     </Member>
     <Member MemberName="DisplayTitle">
@@ -799,6 +811,9 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.Part.Title" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.Part.Description" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.Subtitle" />
       </Docs>
     </Member>
     <Member MemberName="ExportMode">
@@ -867,6 +882,8 @@ protected void mgr1_AuthorizeWebPart(object sender,
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value specified is not one of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartExportMode" /> values.</exception>
         <exception cref="T:System.InvalidOperationException">The control is already loaded and the personalization scope of the control is set to the <see cref="F:System.Web.UI.WebControls.WebParts.PersonalizationScope.User" /> scope.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.PersonalizableAttribute" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.ImportErrorMessage" />
       </Docs>
     </Member>
     <Member MemberName="HasSharedData">
@@ -989,6 +1006,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.LayoutOrientation" />
       </Docs>
     </Member>
     <Member MemberName="HelpMode">
@@ -1062,6 +1080,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value specified is not one of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartHelpMode" /> values.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.HelpUrl" />
       </Docs>
     </Member>
     <Member MemberName="HelpUrl">
@@ -1135,6 +1154,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The internal validation system has determined that the URL might contain script attacks.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.HelpMode" />
       </Docs>
     </Member>
     <Member MemberName="Hidden">
@@ -1188,6 +1208,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.AllowHide" />
       </Docs>
     </Member>
     <Member MemberName="ImportErrorMessage">
@@ -1227,6 +1248,8 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.ExportMode" />
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.ImportCatalogPart" />
       </Docs>
     </Member>
     <Member MemberName="IsClosed">
@@ -1260,6 +1283,8 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.AllowClose" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.CloseWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
       </Docs>
     </Member>
     <Member MemberName="IsShared">
@@ -1308,6 +1333,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.IsStandalone" />
       </Docs>
     </Member>
     <Member MemberName="IsStandalone">
@@ -1335,6 +1361,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         <value>
           <see langword="true" /> if the <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control is not contained in a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartZoneBase" /> zone; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.IsShared" />
       </Docs>
     </Member>
     <Member MemberName="IsStatic">
@@ -1396,6 +1423,8 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.AllowClose" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.IsClosed" />
       </Docs>
     </Member>
     <Member MemberName="OnConnectModeChanged">
@@ -1609,6 +1638,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         <block subset="none" type="overrides">
           <para>To supply a subtitle for instances of a custom <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control, you must override the <see cref="P:System.Web.UI.WebControls.WebParts.WebPart.Subtitle" /> property.</para>
         </block>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.DisplayTitle" />
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -1645,6 +1675,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.Part.Title" />
       </Docs>
     </Member>
     <Member MemberName="TitleIconImageUrl">
@@ -1770,6 +1801,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <Docs>
         <summary>Causes the control to track changes to its view state so they can be stored in the object's <see cref="P:System.Web.UI.Control.ViewState" /> property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.TrackViewState" />
       </Docs>
     </Member>
     <Member MemberName="Verbs">
@@ -1826,6 +1858,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         <block subset="none" type="overrides">
           <para>Derived classes can override the <see cref="P:System.Web.UI.WebControls.WebParts.WebPart.Verbs" /> property to allow users to add custom <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" /> objects to the verb collection for a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" />
       </Docs>
     </Member>
     <Member MemberName="WebBrowsableObject">
@@ -1861,6 +1894,8 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.IWebEditable.WebBrowsableObject" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.GenericWebPart.WebBrowsableObject" />
       </Docs>
     </Member>
     <Member MemberName="WebPartManager">
@@ -1888,6 +1923,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" />
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -1911,6 +1947,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         <summary>Gets or sets the width of the Web server control.</summary>
         <value>A <see cref="T:System.Web.UI.WebControls.Unit" /> that represents the width of the control. The default is <see cref="F:System.Web.UI.WebControls.Unit.Empty" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.Width" />
       </Docs>
     </Member>
     <Member MemberName="Zone">
@@ -1959,6 +1996,9 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebZone" />
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartZone" />
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartZoneBase" />
       </Docs>
     </Member>
     <Member MemberName="ZoneIndex">
@@ -2010,7 +2050,19 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebZone" />
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartZone" />
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartZoneBase" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetPersonalizationDirty">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets a flag indicating that personalization data has changed for a Web Parts control or a server control placed in a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartZoneBase" /> zone.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

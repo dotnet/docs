@@ -48,6 +48,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Configuration.PagesSection" />
+    <altmember cref="T:System.Web.Configuration.NamespaceCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -81,6 +83,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.PagesSection" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -104,6 +107,7 @@
         <returns>
           <see langword="true" /> if the two objects are identical.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.Configuration.PagesSection" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -123,6 +127,7 @@
         <summary>Returns a hash value for the current instance.</summary>
         <returns>A hash value for the current instance.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.Configuration.PagesSection" />
       </Docs>
     </Member>
     <Member MemberName="Namespace">
@@ -164,6 +169,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.PagesSection" />
       </Docs>
     </Member>
     <Member MemberName="Properties">

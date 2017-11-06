@@ -33,6 +33,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.AppDomain" />
+    <altmember cref="T:System.Windows.Forms.Application" />
+    <altmember cref="T:System.Environment" />
+    <altmember cref="T:System.Windows.Forms.SystemInformation" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -55,6 +59,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.OSFeature" />
       </Docs>
     </Member>
     <Member MemberName="Feature">
@@ -91,6 +96,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.OSFeature.#ctor" />
+        <altmember cref="T:System.Version" />
+        <altmember cref="T:System.Windows.Forms.FeatureSupport" />
+        <altmember cref="F:System.Windows.Forms.OSFeature.LayeredWindows" />
       </Docs>
     </Member>
     <Member MemberName="GetVersionPresent">
@@ -129,6 +138,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Version" />
+        <altmember cref="P:System.Windows.Forms.OSFeature.Feature" />
+        <altmember cref="T:System.Windows.Forms.FeatureSupport" />
+        <altmember cref="F:System.Windows.Forms.OSFeature.LayeredWindows" />
       </Docs>
     </Member>
     <Member MemberName="IsPresent">
@@ -173,6 +186,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.SystemParameter" />
+        <altmember cref="M:System.Windows.Forms.OSFeature.GetVersionPresent(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="LayeredWindows">
@@ -210,6 +225,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Forms.OSFeature.IsPresent" />
+        <altmember cref="M:System.Windows.Forms.OSFeature.GetVersionPresent(System.Object)" />
+        <altmember cref="P:System.Windows.Forms.OSFeature.Feature" />
       </Docs>
     </Member>
     <Member MemberName="Themes">
@@ -238,6 +256,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Forms.OSFeature.IsPresent" />
+        <altmember cref="M:System.Windows.Forms.OSFeature.GetVersionPresent(System.Object)" />
+        <altmember cref="P:System.Windows.Forms.OSFeature.Feature" />
       </Docs>
     </Member>
   </Members>

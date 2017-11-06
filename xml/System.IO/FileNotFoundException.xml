@@ -42,6 +42,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Exception" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -199,6 +200,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Exception" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -294,6 +296,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Exception" />
       </Docs>
     </Member>
     <Member MemberName="FileName">
@@ -494,5 +497,16 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.FileNotFoundException" /> class with optional message string and inner <see langword="Exception" /> reference.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

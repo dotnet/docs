@@ -47,6 +47,11 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+    <altmember cref="P:System.Web.UI.WebControls.DataGrid.EditItemIndex" />
+    <altmember cref="E:System.Web.UI.WebControls.DataGrid.EditCommand" />
+    <altmember cref="E:System.Web.UI.WebControls.DataGrid.UpdateCommand" />
+    <altmember cref="E:System.Web.UI.WebControls.DataGrid.CancelCommand" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -166,6 +171,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.EditCommandColumn.EditText" />
+        <altmember cref="P:System.Web.UI.WebControls.EditCommandColumn.UpdateText" />
       </Docs>
     </Member>
     <Member MemberName="CausesValidation">
@@ -203,6 +210,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Page.Validate" />
+        <altmember cref="P:System.Web.UI.WebControls.EditCommandColumn.ValidationGroup" />
       </Docs>
     </Member>
     <Member MemberName="EditText">
@@ -251,6 +260,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.EditCommandColumn.CancelText" />
+        <altmember cref="P:System.Web.UI.WebControls.EditCommandColumn.UpdateText" />
       </Docs>
     </Member>
     <Member MemberName="InitializeCell">
@@ -324,6 +335,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.EditCommandColumn.CancelText" />
+        <altmember cref="P:System.Web.UI.WebControls.EditCommandColumn.EditText" />
       </Docs>
     </Member>
     <Member MemberName="ValidationGroup">
@@ -358,6 +371,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.EditCommandColumn.CausesValidation" />
+        <altmember cref="T:System.Web.UI.WebControls.RequiredFieldValidator" />
       </Docs>
     </Member>
   </Members>

@@ -14,6 +14,8 @@
     <summary>Represents a VBArray object. This class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.VBArrayPrototype" />
+    <altmember cref="T:Microsoft.JScript.VBArrayConstructor" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,6 +37,8 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.VBArrayObject" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.VBArrayPrototype" />
+        <altmember cref="T:Microsoft.JScript.VBArrayConstructor" />
       </Docs>
     </Member>
   </Members>

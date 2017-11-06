@@ -14,6 +14,10 @@
     <summary>Parses JScript code. This class belongs to the scanning and parsing category. For more information about scanning and parsing, see [Create a Language Compiler for the .NET Framework](http://go.microsoft.com/fwlink/?LinkId=110392).</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.AST" />
+    <altmember cref="T:Microsoft.JScript.JSToken" />
+    <altmember cref="T:Microsoft.JScript.JSScanner" />
+    <altmember cref="T:Microsoft.JScript.Context" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,6 +37,9 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.JSParser" /> class, specifying the source code to parse.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.AST" />
+        <altmember cref="T:Microsoft.JScript.JSToken" />
+        <altmember cref="T:Microsoft.JScript.JSScanner" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -60,6 +67,10 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.AST" />
+        <altmember cref="T:Microsoft.JScript.JSToken" />
+        <altmember cref="T:Microsoft.JScript.JSScanner" />
+        <altmember cref="T:Microsoft.JScript.Context" />
       </Docs>
     </Member>
     <Member MemberName="ParseEvalBody">
@@ -87,6 +98,10 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.AST" />
+        <altmember cref="T:Microsoft.JScript.JSToken" />
+        <altmember cref="T:Microsoft.JScript.JSScanner" />
+        <altmember cref="T:Microsoft.JScript.Context" />
       </Docs>
     </Member>
   </Members>

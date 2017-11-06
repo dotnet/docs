@@ -14,6 +14,7 @@
   <Docs>
     <summary>Uses the object security layer of the managed ACL library to wrap access control functionality for directory objects.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Security.AccessControl.DirectoryObjectSecurity" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -89,6 +90,7 @@
         <summary>Creates an <see cref="T:System.Security.AccessControl.AccessRule" /> object with the specified values.</summary>
         <returns>The <see cref="T:System.Security.AccessControl.AccessRule" /> that corresponds to the <see cref="T:System.DirectoryServices.ActiveDirectorySecurity" /> object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Security.AccessControl.AccessRule" />
       </Docs>
     </Member>
     <Member MemberName="AccessRuleFactory">
@@ -126,6 +128,7 @@
         <summary>Creates an <see cref="T:System.Security.AccessControl.AccessRule" /> object with the specified values.</summary>
         <returns>The <see cref="T:System.Security.AccessControl.AccessRule" /> that corresponds to the <see cref="T:System.DirectoryServices.ActiveDirectorySecurity" /> object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Security.AccessControl.AccessRule" />
       </Docs>
     </Member>
     <Member MemberName="AccessRuleType">
@@ -174,6 +177,7 @@
         <param name="rule">The <see cref="M:System.Security.AccessControl.DirectoryObjectSecurity.AddAccessRule(System.Security.AccessControl.ObjectAccessRule)" /> object to which this operation applies.</param>
         <summary>Adds an access rule to the DACL of an object.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectoryAccessRule" />
       </Docs>
     </Member>
     <Member MemberName="AddAuditRule">
@@ -196,6 +200,7 @@
         <param name="rule">The <see cref="T:System.DirectoryServices.ActiveDirectoryAuditRule" /> object to which this operation applies.</param>
         <summary>Adds an audit rule to the SACL of an object.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectoryAuditRule" />
       </Docs>
     </Member>
     <Member MemberName="AuditRuleFactory">
@@ -229,6 +234,7 @@
         <summary>Creates an <see cref="T:System.Security.AccessControl.AuditRule" /> object with the specified values.</summary>
         <returns>The <see cref="T:System.Security.AccessControl.AuditRule" /> that corresponds to the <see cref="T:System.DirectoryServices.ActiveDirectorySecurity" /> object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Security.AccessControl.AuditRule" />
       </Docs>
     </Member>
     <Member MemberName="AuditRuleFactory">
@@ -266,6 +272,7 @@
         <summary>Creates an <see cref="T:System.Security.AccessControl.AuditRule" /> object with the specified values.</summary>
         <returns>The <see cref="T:System.Security.AccessControl.AuditRule" /> that corresponds to the <see cref="T:System.DirectoryServices.ActiveDirectorySecurity" /> object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Security.AccessControl.AuditRule" />
       </Docs>
     </Member>
     <Member MemberName="AuditRuleType">
@@ -616,5 +623,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AuditRuleFactory">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an <see cref="T:System.Security.AccessControl.AuditRule" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AccessRuleFactory">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an <see cref="T:System.Security.AccessControl.AccessRule" /> object.</summary>
+        <altmember cref="T:System.Security.AccessControl.AccessRule" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -20,6 +20,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.Image" />
+    <altmember cref="T:System.Windows.Media.Imaging.BitmapSource" />
+    <altmember cref="T:System.Windows.Media.ImageSource" />
   </Docs>
   <Members>
     <Member MemberName="CreateBitmapSourceFromHBitmap">
@@ -54,6 +57,9 @@
         <returns>The created <see cref="T:System.Windows.Media.Imaging.BitmapSource" />.</returns>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to return an object from this method. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="T:System.Windows.Controls.Image" />
+        <altmember cref="T:System.Windows.Media.Imaging.BitmapSource" />
+        <altmember cref="T:System.Windows.Media.ImageSource" />
       </Docs>
     </Member>
     <Member MemberName="CreateBitmapSourceFromHIcon">
@@ -86,6 +92,9 @@
         <returns>The created <see cref="T:System.Windows.Media.Imaging.BitmapSource" />.</returns>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to return an object from this method. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="T:System.Windows.Controls.Image" />
+        <altmember cref="T:System.Windows.Media.Imaging.BitmapSource" />
+        <altmember cref="T:System.Windows.Media.ImageSource" />
       </Docs>
     </Member>
     <Member MemberName="CreateBitmapSourceFromMemorySection">
@@ -124,6 +133,9 @@
         <returns>The created <see cref="T:System.Windows.Media.Imaging.BitmapSource" />.</returns>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to return an object from this method. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="T:System.Windows.Controls.Image" />
+        <altmember cref="T:System.Windows.Media.Imaging.BitmapSource" />
+        <altmember cref="T:System.Windows.Media.ImageSource" />
       </Docs>
     </Member>
   </Members>

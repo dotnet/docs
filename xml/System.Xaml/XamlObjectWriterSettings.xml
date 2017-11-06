@@ -20,6 +20,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Xaml.XamlObjectWriter" />
+    <altmember cref="M:System.Xaml.IXamlObjectWriterFactory.GetXamlObjectWriter(System.Xaml.XamlObjectWriterSettings)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -98,6 +100,8 @@
         <summary>Gets or sets a reference to a callback that is invoked by the XAML writer at the <see cref="M:System.ComponentModel.ISupportInitialize.BeginInit" /> phase of the object lifetime for each created object.</summary>
         <value>A callback that is invoked by the XAML writer at the <see cref="M:System.ComponentModel.ISupportInitialize.BeginInit" /> phase of object lifetime.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Xaml.XamlObjectWriter.OnAfterBeginInit(System.Object)" />
+        <altmember cref="T:System.Xaml.XamlObjectEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="AfterEndInitHandler">
@@ -116,6 +120,8 @@
         <summary>Gets or sets a reference to a callback that is invoked by the XAML writer at the <see cref="M:System.ComponentModel.ISupportInitialize.EndInit" /> phase of the object lifetime for each created object.</summary>
         <value>A callback that is invoked by the XAML writer at the <see cref="M:System.ComponentModel.ISupportInitialize.EndInit" /> phase of object lifetime.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Xaml.XamlObjectWriter.OnAfterEndInit(System.Object)" />
+        <altmember cref="T:System.Xaml.XamlObjectEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="AfterPropertiesHandler">
@@ -134,6 +140,8 @@
         <summary>Gets or sets a reference to a callback that is invoked by the XAML writer at the post-member-write phase of the object lifetime for each created object.</summary>
         <value>A callback that is invoked by the XAML writer at the post-member-write phase of object lifetime.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Xaml.XamlObjectWriter.OnAfterProperties(System.Object)" />
+        <altmember cref="T:System.Xaml.XamlObjectEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="BeforePropertiesHandler">
@@ -152,6 +160,8 @@
         <summary>Gets or sets a reference to a callback that is invoked by the XAML writer at the pre-member-write phase of the object lifetime for each created object.</summary>
         <value>A callback that is invoked by the XAML writer at the pre-member-write phase of object lifetime.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Xaml.XamlObjectWriter.OnBeforeProperties(System.Object)" />
+        <altmember cref="T:System.Xaml.XamlObjectEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="ExternalNameScope">
@@ -382,5 +392,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlObjectWriterSettings" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

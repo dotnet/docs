@@ -79,6 +79,15 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.BaseValidator" />
+    <altmember cref="T:System.Web.UI.WebControls.BaseCompareValidator" />
+    <altmember cref="T:System.Web.UI.WebControls.TextBox" />
+    <altmember cref="P:System.Web.UI.WebControls.BaseValidator.ControlToValidate" />
+    <altmember cref="P:System.Web.UI.WebControls.CompareValidator.ControlToCompare" />
+    <altmember cref="P:System.Web.UI.WebControls.CompareValidator.ValueToCompare" />
+    <altmember cref="P:System.Web.UI.WebControls.CompareValidator.Operator" />
+    <altmember cref="P:System.Web.UI.WebControls.BaseCompareValidator.Type" />
+    <altmember cref="T:System.Web.UI.WebControls.RequiredFieldValidator" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -101,6 +110,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.BaseCompareValidator" />
       </Docs>
     </Member>
     <Member MemberName="AddAttributesToRender">
@@ -230,6 +240,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BaseValidator.ControlToValidate" />
+        <altmember cref="P:System.Web.UI.WebControls.CompareValidator.ValueToCompare" />
+        <altmember cref="T:System.Web.UI.WebControls.TextBox" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseValidator.IsValid" />
+        <altmember cref="F:System.String.Empty" />
       </Docs>
     </Member>
     <Member MemberName="EvaluateIsValid">
@@ -322,6 +337,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified comparison operator is not one of the <see cref="T:System.Web.UI.WebControls.ValidationCompareOperator" /> values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.ValidationCompareOperator" />
       </Docs>
     </Member>
     <Member MemberName="ValueToCompare">
@@ -371,6 +387,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CompareValidator.ControlToCompare" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseCompareValidator.Type" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseValidator.IsValid" />
+        <altmember cref="F:System.String.Empty" />
       </Docs>
     </Member>
   </Members>

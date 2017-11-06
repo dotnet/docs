@@ -40,7 +40,7 @@ However, we encourage you to use the following references to learn more about co
 ## Additional resources
 
 -   **Composite UI using ASP.NET (Particular’s Workshop)**
-    [*https://github.com/Particular/Workshop.Microservices/tree/master/demos/ASP.NET MVC*](https://github.com/Particular/Workshop.Microservices/tree/master/demos/ASP.NET%20MVC)
+    [*http://go.particular.net/workshop-composite-ui-demo*](http://go.particular.net/workshop-composite-ui-demo)
 
 -   **Ruben Oostinga. The Monolithic Frontend in the Microservices Architecture**
     [*http://blog.xebia.com/the-monolithic-frontend-in-the-microservices-architecture/*](http://blog.xebia.com/the-monolithic-frontend-in-the-microservices-architecture/)

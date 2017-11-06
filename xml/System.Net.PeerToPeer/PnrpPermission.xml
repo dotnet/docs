@@ -30,6 +30,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Net.PeerToPeer.PnrpPermission.Copy" />
+    <altmember cref="M:System.Net.PeerToPeer.PnrpPermission.FromXml(System.Security.SecurityElement)" />
+    <altmember cref="T:System.Net.PeerToPeer.PnrpPermissionAttribute" />
+    <altmember cref="N:System.Security.Permissions" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -61,6 +65,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Net.PeerToPeer.PnrpPermission.Copy" />
+        <altmember cref="M:System.Net.PeerToPeer.PnrpPermission.IsUnrestricted" />
+        <altmember cref="M:System.Net.PeerToPeer.PnrpPermission.ToXml" />
+        <altmember cref="T:System.Net.PeerToPeer.PnrpPermissionAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -97,6 +105,9 @@
   
 -   The parameter's version number is not supported.</exception>
         <exception cref="T:System.ArgumentNullException">The parameter is a <see langword="null" /> reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <altmember cref="M:System.Net.PeerToPeer.PnrpPermission.FromXml(System.Security.SecurityElement)" />
+        <altmember cref="M:System.Net.PeerToPeer.PnrpPermission.ToXml" />
+        <altmember cref="M:System.Net.PeerToPeer.PnrpPermission.Union(System.Security.IPermission)" />
       </Docs>
     </Member>
     <Member MemberName="FromXml">
@@ -135,6 +146,9 @@
   
 -   The parameter's version number is not supported.</exception>
         <exception cref="T:System.ArgumentNullException">The parameter is a <see langword="null" /> reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <altmember cref="M:System.Net.PeerToPeer.PnrpPermission.Copy" />
+        <altmember cref="M:System.Net.PeerToPeer.PnrpPermission.ToXml" />
+        <altmember cref="T:System.Security.SecurityElement" />
       </Docs>
     </Member>
     <Member MemberName="Intersect">
@@ -177,6 +191,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The target parameter is not a <see langword="null" /> reference (<see langword="Nothing" /> in Visual Basic) and is not an instance of the same class as the current permission.</exception>
+        <altmember cref="M:System.Net.PeerToPeer.PnrpPermission.IsSubsetOf(System.Security.IPermission)" />
+        <altmember cref="T:System.Net.PeerToPeer.PnrpPermissionAttribute" />
+        <altmember cref="M:System.Net.PeerToPeer.PnrpPermission.Union(System.Security.IPermission)" />
       </Docs>
     </Member>
     <Member MemberName="IsSubsetOf">
@@ -224,6 +241,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The target parameter is not a <see langword="null" /> reference (<see langword="Nothing" /> in Visual Basic) and is not an instance of the same class as the current permission.</exception>
+        <altmember cref="M:System.Net.PeerToPeer.PnrpPermission.FromXml(System.Security.SecurityElement)" />
+        <altmember cref="M:System.Net.PeerToPeer.PnrpPermission.Intersect(System.Security.IPermission)" />
+        <altmember cref="M:System.Net.PeerToPeer.PnrpPermission.ToXml" />
       </Docs>
     </Member>
     <Member MemberName="IsUnrestricted">
@@ -255,6 +275,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Net.PeerToPeer.PnrpPermission.Copy" />
+        <altmember cref="T:System.Net.PeerToPeer.PnrpPermissionAttribute" />
+        <altmember cref="M:System.Net.PeerToPeer.PnrpPermission.ToXml" />
+        <altmember cref="M:System.Net.PeerToPeer.PnrpPermission.Union(System.Security.IPermission)" />
       </Docs>
     </Member>
     <Member MemberName="ToXml">
@@ -278,6 +302,8 @@
         <summary>Creates an XML encoding of the <see cref="T:System.Net.PeerToPeer.PnrpPermission" /> and its current state.</summary>
         <returns>A <see cref="T:System.Security.SecurityElement" /> object that contains an XML encoding of the permission, including any state information.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Net.PeerToPeer.PnrpPermission.Copy" />
+        <altmember cref="M:System.Net.PeerToPeer.PnrpPermission.FromXml(System.Security.SecurityElement)" />
       </Docs>
     </Member>
     <Member MemberName="Union">
@@ -321,6 +347,9 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="target" /> parameter is invalid.</exception>
+        <altmember cref="M:System.Net.PeerToPeer.PnrpPermission.Intersect(System.Security.IPermission)" />
+        <altmember cref="M:System.Net.PeerToPeer.PnrpPermission.IsSubsetOf(System.Security.IPermission)" />
+        <altmember cref="M:System.Net.PeerToPeer.PnrpPermission.IsUnrestricted" />
       </Docs>
     </Member>
   </Members>

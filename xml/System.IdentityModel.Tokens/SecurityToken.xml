@@ -69,6 +69,10 @@
     <block subset="none" type="overrides">
       <para>You must override the <see cref="P:System.IdentityModel.Tokens.SecurityToken.Id" />, <see cref="P:System.IdentityModel.Tokens.SecurityToken.SecurityKeys" />, <see cref="P:System.IdentityModel.Tokens.SecurityToken.ValidFrom" />, and <see cref="P:System.IdentityModel.Tokens.SecurityToken.ValidTo" /> properties. The <see cref="M:System.IdentityModel.Tokens.SecurityToken.CanCreateKeyIdentifierClause``1" />, <see cref="M:System.IdentityModel.Tokens.SecurityToken.CreateKeyIdentifierClause``1" />, <see cref="M:System.IdentityModel.Tokens.SecurityToken.MatchesKeyIdentifierClause(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" />, and <see cref="M:System.IdentityModel.Tokens.SecurityToken.ResolveKeyIdentifierClause(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" /> methods all support key identifiers of type <see cref="T:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause" />. You must override these methods to support other key identifier types in your derived class.</para>
     </block>
+    <altmember cref="T:System.IdentityModel.Tokens.SecurityTokenHandler" />
+    <altmember cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
+    <altmember cref="T:System.IdentityModel.Tokens.IssuerTokenResolver" />
+    <altmember cref="T:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -121,6 +125,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IdentityModel.Tokens.SecurityToken.CreateKeyIdentifierClause``1" />
+        <altmember cref="T:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause" />
       </Docs>
     </Member>
     <Member MemberName="CreateKeyIdentifierClause&lt;T&gt;">
@@ -157,6 +163,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IdentityModel.Tokens.SecurityToken.CanCreateKeyIdentifierClause``1" />
+        <altmember cref="T:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause" />
       </Docs>
     </Member>
     <Member MemberName="Id">
@@ -224,6 +232,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause" />
       </Docs>
     </Member>
     <Member MemberName="ResolveKeyIdentifierClause">
@@ -258,6 +267,8 @@
         <block subset="none" type="overrides">
           <para>When you inherit from <see cref="T:System.IdentityModel.Tokens.SecurityToken" />, and implement the <see cref="M:System.IdentityModel.Tokens.SecurityToken.ResolveKeyIdentifierClause(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" /> method and <paramref name="skiClause" /> cannot be resolved, return <see langword="null" />. An exception should not be thrown from the <see cref="M:System.IdentityModel.Tokens.SecurityToken.ResolveKeyIdentifierClause(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" /> method.</para>
         </block>
+        <altmember cref="M:System.IdentityModel.Tokens.SecurityToken.MatchesKeyIdentifierClause(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" />
+        <altmember cref="T:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause" />
       </Docs>
     </Member>
     <Member MemberName="SecurityKeys">

@@ -67,6 +67,7 @@
         <summary>Arranges the content of a <see cref="T:System.Windows.Controls.StackPanel" /> element.</summary>
         <returns>The <see cref="T:System.Windows.Size" /> that represents the arranged size of this <see cref="T:System.Windows.Controls.StackPanel" /> element and its child elements.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.StackPanel.MeasureOverride(System.Windows.Size)" />
       </Docs>
     </Member>
     <Member MemberName="CanHorizontallyScroll">
@@ -100,6 +101,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.Primitives.IScrollInfo" />
       </Docs>
     </Member>
     <Member MemberName="CanVerticallyScroll">
@@ -133,6 +135,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.Primitives.IScrollInfo" />
       </Docs>
     </Member>
     <Member MemberName="ExtentHeight">
@@ -357,6 +360,7 @@
         <summary>Gets a value that represents the <see cref="T:System.Windows.Controls.Orientation" /> of the <see cref="T:System.Windows.Controls.StackPanel" />.</summary>
         <value>An <see cref="T:System.Windows.Controls.Orientation" /> value.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.Orientation" />
       </Docs>
     </Member>
     <Member MemberName="MakeVisible">
@@ -403,6 +407,7 @@
         <summary>Measures the child elements of a <see cref="T:System.Windows.Controls.StackPanel" /> in anticipation of arranging them during the <see cref="M:System.Windows.Controls.StackPanel.ArrangeOverride(System.Windows.Size)" /> pass.</summary>
         <returns>The <see cref="T:System.Windows.Size" /> that represents the desired size of the element.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.StackPanel.ArrangeOverride(System.Windows.Size)" />
       </Docs>
     </Member>
     <Member MemberName="MouseWheelDown">
@@ -563,6 +568,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.StackPanel.Orientation" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.StackPanel.Orientation" />
       </Docs>
     </Member>
     <Member MemberName="PageDown">

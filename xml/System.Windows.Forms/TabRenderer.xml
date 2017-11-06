@@ -33,6 +33,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.VisualStyles.VisualStyleRenderer" />
+    <altmember cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" />
   </Docs>
   <Members>
     <Member MemberName="DrawTabItem">
@@ -507,7 +509,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Application.VisualStyleState" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="DrawTabItem">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws a tab that is used to select a page in the tab control.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

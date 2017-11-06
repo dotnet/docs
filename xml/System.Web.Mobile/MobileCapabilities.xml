@@ -63,6 +63,7 @@ public void Page_Load(Object sender, EventArgs e)
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="T:System.Web.Mobile.MobileCapabilities" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -113,6 +114,7 @@ public void Page_Load(Object sender, EventArgs e)
         <exception cref="T:System.ArgumentOutOfRangeException">A <paramref name="capabilityName" /> parameter is not found as a device-filter name specified in the configuration file, as a <see cref="T:System.Web.Mobile.MobileCapabilities" /> property, or as an item in the <see cref="T:System.Web.Mobile.MobileCapabilities" /> Item collection.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="delegateName" /> is <see langword="null" /> or empty.</exception>
+        <altmember cref="M:System.Web.Mobile.MobileCapabilities.HasCapability(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="PreferredRenderingTypeChtml10">

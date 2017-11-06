@@ -34,6 +34,14 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Web.Security.Membership.ValidateUser(System.String,System.String)" />
+    <altmember cref="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.ValidateUser(System.String,System.String)" />
+    <altmember cref="P:System.Threading.Thread.CurrentPrincipal" />
+    <altmember cref="T:System.Web.ClientServices.ClientRolePrincipal" />
+    <altmember cref="T:System.Security.Principal.WindowsIdentity" />
+    <altmember cref="T:System.Web.ClientServices.Providers.ClientRoleProvider" />
+    <altmember cref="P:System.Web.Security.Membership.Provider" />
+    <altmember cref="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.Logout" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -478,6 +486,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.ValidateUser(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="MaxInvalidPasswordAttempts">
@@ -793,7 +802,22 @@
  -or-  
   
  <paramref name="password" /> is not <see cref="F:System.String.Empty" /> or <see langword="null" />.</exception>
+        <altmember cref="M:System.Web.Security.Membership.ValidateUser(System.String,System.String)" />
+        <altmember cref="P:System.Threading.Thread.CurrentPrincipal" />
+        <altmember cref="T:System.Web.ClientServices.ClientRolePrincipal" />
+        <altmember cref="T:System.Security.Principal.WindowsIdentity" />
+        <altmember cref="T:System.Web.ClientServices.Providers.ClientRoleProvider" />
+        <altmember cref="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.Logout" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetUser">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>This method is not used by this class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

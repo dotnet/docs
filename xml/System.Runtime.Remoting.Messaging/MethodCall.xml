@@ -39,6 +39,9 @@
  ]]></format>
     </remarks>
     <forInternalUseOnly />
+    <altmember cref="T:System.Runtime.Remoting.Messaging.IMethodCallMessage" />
+    <altmember cref="T:System.Runtime.Remoting.Messaging.IMethodMessage" />
+    <altmember cref="T:System.Runtime.Remoting.Messaging.IMessage" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -717,5 +720,15 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Messaging.MethodCall" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

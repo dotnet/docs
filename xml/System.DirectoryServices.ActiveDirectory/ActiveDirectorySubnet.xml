@@ -19,6 +19,7 @@
     <summary>The <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet" /> class represents a subnet in a <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" />.</summary>
     <remarks>To be added.</remarks>
     <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" /></permission>
+    <altmember cref="T:System.DirectoryServices.ActiveDirectory.Forest" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -111,6 +112,7 @@
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet" /> object has not yet been saved in the Active Directory Domain Services store.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+        <altmember cref="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet.Save" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -188,6 +190,7 @@
 -   <paramref name="subnetName" /> is an empty string.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="context" /> or <paramref name="subnetName" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" />
       </Docs>
     </Member>
     <Member MemberName="GetDirectoryEntry">
@@ -210,6 +213,8 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet" /> object has not yet been saved in the Active Directory Domain Services store.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.DirectoryEntry" />
+        <altmember cref="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet.Save" />
       </Docs>
     </Member>
     <Member MemberName="Location">
@@ -275,6 +280,7 @@
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+        <altmember cref="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet.Delete" />
       </Docs>
     </Member>
     <Member MemberName="Site">
@@ -296,6 +302,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">Applies to set only. The specified <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySite" /> object does not exist. If it was newly created, it must be committed to the directory store before assigning it to the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet" /> object.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySite" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -317,7 +324,28 @@
         <returns>A <see cref="T:System.String" /> that represents the name of the subnet.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="P:System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet.Name" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases all resources that are used by the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet" /> object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

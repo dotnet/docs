@@ -26,6 +26,7 @@
   <Docs>
     <summary>Represents the content of an XML comment.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="M:System.Xml.XmlDocument.CreateComment(System.String)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -204,6 +205,7 @@
         <summary>Gets the type of the current node.</summary>
         <value>For comment nodes, the value is XmlNodeType.Comment.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Xml.XmlNodeType" />
       </Docs>
     </Member>
     <Member MemberName="WriteContentTo">

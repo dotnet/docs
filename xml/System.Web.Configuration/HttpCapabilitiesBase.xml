@@ -1378,6 +1378,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">The major version value is not an integer.</exception>
+        <altmember cref="P:System.Web.Configuration.HttpCapabilitiesBase.Version" />
+        <altmember cref="P:System.Web.Configuration.HttpCapabilitiesBase.MinorVersion" />
       </Docs>
     </Member>
     <Member MemberName="MaximumHrefLength">
@@ -1485,6 +1487,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpUnhandledException">The minor version number in the header is not valid.</exception>
+        <altmember cref="P:System.Web.Configuration.HttpCapabilitiesBase.Version" />
+        <altmember cref="P:System.Web.Configuration.HttpCapabilitiesBase.MajorVersion" />
       </Docs>
     </Member>
     <Member MemberName="MinorVersionString">
@@ -3593,6 +3597,8 @@ CACHE-CONTROL: NO-CACHE
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Configuration.HttpCapabilitiesBase.MajorVersion" />
+        <altmember cref="P:System.Web.Configuration.HttpCapabilitiesBase.MinorVersion" />
       </Docs>
     </Member>
     <Member MemberName="W3CDomVersion">

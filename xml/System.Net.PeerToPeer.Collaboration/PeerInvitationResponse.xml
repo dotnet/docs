@@ -20,6 +20,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.PeerToPeer.Collaboration.Peer" />
+    <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerInvitationResponseType" />
+    <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" />
   </Docs>
   <Members>
     <Member MemberName="PeerInvitationResponseType">
@@ -39,6 +42,7 @@
         <value>
           <see cref="T:System.Net.PeerToPeer.Collaboration.PeerInvitationResponseType" /> object containing the response from an invitation to a remote peer.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerInvitationResponseType" />
       </Docs>
     </Member>
   </Members>

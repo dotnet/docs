@@ -62,6 +62,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IO.FileStream" />
+    <altmember cref="T:System.IO.MemoryStream" />
+    <altmember cref="T:System.IO.Stream" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -338,6 +341,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IO.BufferedStream.Read(System.Byte[],System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="CanSeek">
@@ -388,6 +392,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IO.BufferedStream.SetLength(System.Int64)" />
+        <altmember cref="M:System.IO.BufferedStream.Seek(System.Int64,System.IO.SeekOrigin)" />
       </Docs>
     </Member>
     <Member MemberName="CanWrite">
@@ -438,6 +444,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IO.BufferedStream.Write(System.Byte[],System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -610,6 +617,7 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The stream has been disposed.</exception>
         <exception cref="T:System.IO.IOException">The data source or repository is not open.</exception>
+        <altmember cref="M:System.IO.Stream.Close" />
       </Docs>
     </Member>
     <Member MemberName="FlushAsync">
@@ -726,6 +734,8 @@
         <exception cref="T:System.IO.IOException">An I/O error occurs, such as the stream being closed.</exception>
         <exception cref="T:System.NotSupportedException">The stream does not support seeking.</exception>
         <exception cref="T:System.ObjectDisposedException">Methods were called after the stream was closed.</exception>
+        <altmember cref="P:System.IO.BufferedStream.CanSeek" />
+        <altmember cref="M:System.IO.BufferedStream.Seek(System.Int64,System.IO.SeekOrigin)" />
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -791,6 +801,9 @@
         <exception cref="T:System.IO.IOException">The stream is not open or is <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">The stream does not support reading.</exception>
         <exception cref="T:System.ObjectDisposedException">Methods were called after the stream was closed.</exception>
+        <altmember cref="M:System.Buffer.BlockCopy(System.Array,System.Int32,System.Array,System.Int32,System.Int32)" />
+        <altmember cref="P:System.IO.BufferedStream.CanRead" />
+        <altmember cref="M:System.IO.BufferedStream.Write(System.Byte[],System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ReadAsync">
@@ -936,6 +949,7 @@
         <exception cref="T:System.IO.IOException">The stream is not open or is <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">The stream does not support seeking.</exception>
         <exception cref="T:System.ObjectDisposedException">Methods were called after the stream was closed.</exception>
+        <altmember cref="T:System.IO.SeekOrigin" />
       </Docs>
     </Member>
     <Member MemberName="SetLength">
@@ -986,6 +1000,7 @@
         <exception cref="T:System.IO.IOException">The stream is not open or is <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">The stream does not support both writing and seeking.</exception>
         <exception cref="T:System.ObjectDisposedException">Methods were called after the stream was closed.</exception>
+        <altmember cref="M:System.IO.BufferedStream.Seek(System.Int64,System.IO.SeekOrigin)" />
       </Docs>
     </Member>
     <Member MemberName="UnderlyingStream">
@@ -1061,6 +1076,8 @@
         <exception cref="T:System.IO.IOException">The stream is closed or <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">The stream does not support writing.</exception>
         <exception cref="T:System.ObjectDisposedException">Methods were called after the stream was closed.</exception>
+        <altmember cref="P:System.IO.BufferedStream.CanWrite" />
+        <altmember cref="M:System.IO.BufferedStream.Read(System.Byte[],System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="WriteAsync">
@@ -1157,5 +1174,14 @@
         <exception cref="T:System.ObjectDisposedException">Methods were called after the stream was closed.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.BufferedStream" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

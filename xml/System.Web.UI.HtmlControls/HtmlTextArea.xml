@@ -55,6 +55,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.HtmlControls.HtmlTextArea.Rows" />
+    <altmember cref="P:System.Web.UI.HtmlControls.HtmlTextArea.Cols" />
+    <altmember cref="P:System.Web.UI.HtmlControls.HtmlTextArea.Value" />
+    <altmember cref="P:System.Web.UI.HtmlControls.HtmlTextArea.Name" />
+    <altmember cref="E:System.Web.UI.HtmlControls.HtmlTextArea.ServerChange" />
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputText" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -133,6 +139,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The object specified by the <paramref name="obj" /> parameter can only be of the type <see cref="T:System.Web.UI.LiteralControl" /> or <see cref="T:System.Web.UI.DataBoundLiteralControl" />.</exception>
+        <altmember cref="M:System.Web.UI.Control.AddParsedSubObject(System.Object)" />
+        <altmember cref="T:System.Web.UI.LiteralControl" />
+        <altmember cref="T:System.Web.UI.DataBoundLiteralControl" />
       </Docs>
     </Member>
     <Member MemberName="Cols">
@@ -176,6 +185,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTextArea.Rows" />
       </Docs>
     </Member>
     <Member MemberName="LoadPostData">
@@ -210,6 +220,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlTextArea.System#Web#UI#IPostBackDataHandler#RaisePostDataChangedEvent" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -256,6 +268,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.UniqueID" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -300,6 +313,8 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.HtmlControls.HtmlTextArea.OnPreRender(System.EventArgs)" /> method in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.HtmlControls.HtmlTextArea.OnPreRender(System.EventArgs)" /> method so that the <see cref="T:System.Web.UI.HtmlControls.HtmlTextArea" /> control is properly registered with the page.</para>
         </block>
+        <altmember cref="E:System.Web.UI.Control.PreRender" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnServerChange">
@@ -354,6 +369,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.HtmlControls.HtmlTextArea.OnServerChange(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.HtmlControls.HtmlTextArea.OnServerChange(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.HtmlControls.HtmlTextArea.ServerChange" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="RaisePostDataChangedEvent">
@@ -379,6 +396,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlTextArea.OnServerChange(System.EventArgs)" />
+        <altmember cref="M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent" />
       </Docs>
     </Member>
     <Member MemberName="RenderAttributes">
@@ -420,6 +439,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTextArea.Name" />
+        <altmember cref="P:System.Web.UI.Control.UniqueID" />
+        <altmember cref="T:System.Web.UI.AttributeCollection" />
       </Docs>
     </Member>
     <Member MemberName="Rows">
@@ -463,6 +485,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTextArea.Rows" />
       </Docs>
     </Member>
     <Member MemberName="ServerChange">
@@ -506,6 +529,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlTextArea.OnServerChange(System.EventArgs)" />
+        <altmember cref="T:System.EventHandler" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">
@@ -607,6 +632,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTextArea.Value" />
+        <altmember cref="F:System.String.Empty" />
       </Docs>
     </Member>
   </Members>

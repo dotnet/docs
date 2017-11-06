@@ -37,6 +37,7 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.Permissions.SecurityPermission">for deriving from the <see cref="T:System.CodeDom.Compiler.CompilerError" /> class. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; <see cref="T:System.Security.PermissionSet" />: <see langword="FullTrust" />.</permission>
+    <altmember cref="T:System.CodeDom.Compiler.CompilerErrorCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -272,5 +273,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.Compiler.CompilerError" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

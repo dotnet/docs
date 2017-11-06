@@ -46,6 +46,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.TypeDescriptionProvider" />
+    <altmember cref="Overload:System.ComponentModel.TypeDescriptor.AddProvider" />
+    <altmember cref="T:System.ComponentModel.ICustomTypeDescriptor" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -83,6 +86,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="typeName" /> is <see langword="null" />.</exception>
+        <altmember cref="P:System.ComponentModel.TypeDescriptionProviderAttribute.TypeName" />
+        <altmember cref="T:System.ComponentModel.TypeDescriptionProvider" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -120,6 +125,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="type" /> is <see langword="null" />.</exception>
+        <altmember cref="P:System.ComponentModel.TypeDescriptionProviderAttribute.TypeName" />
+        <altmember cref="T:System.ComponentModel.TypeDescriptionProvider" />
       </Docs>
     </Member>
     <Member MemberName="TypeName">
@@ -155,7 +162,19 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptionProviderAttribute.#ctor" />
+        <altmember cref="T:System.ComponentModel.TypeDescriptionProvider" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.TypeDescriptionProviderAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

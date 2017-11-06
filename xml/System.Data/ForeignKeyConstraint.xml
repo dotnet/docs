@@ -59,6 +59,10 @@
  ]]></format>
     </remarks>
     <threadsafe>This type is safe for multithreaded read operations. You must synchronize any write operations.</threadsafe>
+    <altmember cref="T:System.Data.AcceptRejectRule" />
+    <altmember cref="T:System.Data.DataTable" />
+    <altmember cref="T:System.Data.ConstraintCollection" />
+    <altmember cref="T:System.Data.Rule" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -387,6 +391,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.AcceptRejectRule" />
       </Docs>
     </Member>
     <Member MemberName="Columns">
@@ -428,6 +433,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.ForeignKeyConstraint.Table" />
+        <altmember cref="T:System.Data.DataTable" />
+        <altmember cref="P:System.Data.ForeignKeyConstraint.RelatedTable" />
+        <altmember cref="P:System.Data.ForeignKeyConstraint.RelatedColumns" />
       </Docs>
     </Member>
     <Member MemberName="DeleteRule">
@@ -580,6 +589,11 @@
         <summary>The parent columns of this constraint.</summary>
         <value>An array of <see cref="T:System.Data.DataColumn" /> objects that are the parent columns of the constraint.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Data.ForeignKeyConstraint.Columns" />
+        <altmember cref="T:System.Data.DataColumn" />
+        <altmember cref="T:System.Data.DataTable" />
+        <altmember cref="P:System.Data.ForeignKeyConstraint.Table" />
+        <altmember cref="P:System.Data.ForeignKeyConstraint.RelatedTable" />
       </Docs>
     </Member>
     <Member MemberName="RelatedTable">
@@ -612,6 +626,10 @@
         <summary>Gets the parent table of this constraint.</summary>
         <value>The parent <see cref="T:System.Data.DataTable" /> of this constraint.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Data.ForeignKeyConstraint.Columns" />
+        <altmember cref="T:System.Data.DataTable" />
+        <altmember cref="P:System.Data.ForeignKeyConstraint.Table" />
+        <altmember cref="P:System.Data.ForeignKeyConstraint.RelatedColumns" />
       </Docs>
     </Member>
     <Member MemberName="Table">
@@ -651,6 +669,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.ForeignKeyConstraint.Columns" />
+        <altmember cref="T:System.Data.DataTable" />
+        <altmember cref="P:System.Data.ForeignKeyConstraint.RelatedTable" />
+        <altmember cref="P:System.Data.ForeignKeyConstraint.RelatedColumns" />
       </Docs>
     </Member>
     <Member MemberName="UpdateRule">
@@ -692,7 +714,19 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.ForeignKeyConstraint.AcceptRejectRule" />
+        <altmember cref="T:System.Data.Rule" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.ForeignKeyConstraint" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

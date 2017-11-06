@@ -197,6 +197,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Condition.Property" />
       </Docs>
     </Member>
     <Member MemberName="Property">
@@ -243,6 +244,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Condition.Binding" />
       </Docs>
     </Member>
     <Member MemberName="ReceiveMarkupExtension">
@@ -273,6 +275,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Markup.XamlSetMarkupExtensionAttribute" />
+        <altmember cref="T:System.Windows.Markup.XamlSetMarkupExtensionEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="ReceiveTypeConverter">
@@ -303,6 +307,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Markup.XamlSetTypeConverterAttribute" />
+        <altmember cref="T:System.Windows.Markup.XamlSetTypeConverterEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="SourceName">
@@ -430,5 +436,14 @@
         <exception cref="T:System.ArgumentException">Expressions are not supported.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Condition" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -89,6 +89,7 @@ Calendar controls
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.DatePicker" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -510,6 +511,7 @@ Calendar with dates that cannot be selected
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.DatePicker.DisplayDateEnd" />
       </Docs>
     </Member>
     <Member MemberName="DisplayDateEndProperty">
@@ -598,6 +600,7 @@ Calendar with dates that cannot be selected
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.DatePicker.DisplayDateStart" />
       </Docs>
     </Member>
     <Member MemberName="DisplayDateStartProperty">

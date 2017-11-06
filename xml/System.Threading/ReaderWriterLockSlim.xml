@@ -219,6 +219,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Threading.LockRecursionPolicy" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -283,6 +284,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Threading.LockRecursionPolicy" />
+        <altmember cref="P:System.Threading.ReaderWriterLockSlim.RecursionPolicy" />
       </Docs>
     </Member>
     <Member MemberName="CurrentReadCount">
@@ -932,6 +935,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Threading.LockRecursionException" />
       </Docs>
     </Member>
     <Member MemberName="RecursiveReadCount">
@@ -1556,5 +1560,49 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TryEnterWriteLock">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Tries to enter the lock in write mode, with an optional time-out.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryEnterUpgradeableReadLock">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Tries to enter the lock in upgradeable mode, with an optional time-out.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryEnterReadLock">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Tries to enter the lock in read mode, with an optional time-out.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Threading.ReaderWriterLockSlim" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

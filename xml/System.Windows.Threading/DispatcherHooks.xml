@@ -46,6 +46,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for adding or removing a handler for this event.  Associated enumerations:  <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="T:System.Windows.Threading.DispatcherHookEventArgs" />
+        <altmember cref="T:System.Windows.Threading.DispatcherHookEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="OperationAborted">
@@ -79,6 +81,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for adding or removing a handler for this event. Associated enumerations:  <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="T:System.Windows.Threading.DispatcherHookEventArgs" />
+        <altmember cref="T:System.Windows.Threading.DispatcherHookEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="OperationCompleted">
@@ -112,6 +116,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for adding or removing a handler for this event. Associated enumerations:  <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="T:System.Windows.Threading.DispatcherHookEventArgs" />
+        <altmember cref="T:System.Windows.Threading.DispatcherHookEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="OperationPosted">
@@ -149,6 +155,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for adding or removing a handler for this event. Associated enumerations:  <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="T:System.Windows.Threading.DispatcherHookEventArgs" />
+        <altmember cref="T:System.Windows.Threading.DispatcherHookEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="OperationPriorityChanged">
@@ -182,6 +190,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for adding or removing a handler for this event. Associated enumerations:  <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="T:System.Windows.Threading.DispatcherHookEventArgs" />
+        <altmember cref="T:System.Windows.Threading.DispatcherHookEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="OperationStarted">

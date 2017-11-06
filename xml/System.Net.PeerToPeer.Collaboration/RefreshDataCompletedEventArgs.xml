@@ -13,6 +13,8 @@
   <Docs>
     <summary>Provides qualifying information to the <see cref="M:System.Net.PeerToPeer.Collaboration.PeerNearMe.OnRefreshDataCompleted(System.Net.PeerToPeer.Collaboration.RefreshDataCompletedEventArgs)" /> method when <see cref="E:System.Net.PeerToPeer.Collaboration.PeerNearMe.RefreshDataCompleted" /> events occur.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerNearMe.OnRefreshDataCompleted(System.Net.PeerToPeer.Collaboration.RefreshDataCompletedEventArgs)" />
+    <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" />
   </Docs>
   <Members>
     <Member MemberName="PeerEndPoint">
@@ -31,6 +33,7 @@
         <summary>Specifies the updated <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" />.</summary>
         <value>The updated <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> object containing the endpoint data of a peer.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" />
       </Docs>
     </Member>
   </Members>

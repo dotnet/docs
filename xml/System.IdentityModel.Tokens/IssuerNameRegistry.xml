@@ -50,6 +50,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry" />
+    <altmember cref="T:System.IdentityModel.Tokens.SecurityTokenHandler" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -123,6 +125,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IdentityModel.Tokens.SecurityTokenHandler" />
       </Docs>
     </Member>
     <Member MemberName="GetIssuerName">
@@ -156,6 +159,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IdentityModel.Tokens.SecurityTokenHandler" />
       </Docs>
     </Member>
     <Member MemberName="GetWindowsIssuerName">
@@ -184,6 +188,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IdentityModel.Tokens.SecurityTokenHandler" />
       </Docs>
     </Member>
     <Member MemberName="LoadCustomConfiguration">

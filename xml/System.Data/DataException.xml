@@ -73,6 +73,7 @@
         <param name="s">The string to display when the exception is thrown.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.DataException" /> class with the specified string.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Exception" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -140,5 +141,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.DataException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -894,5 +894,23 @@ OleDbDataAdapter custDA = new OleDbDataAdapter();
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Fill">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds or refreshes rows in the <see cref="T:System.Data.DataSet" /> to match those in an ADO <see langword="Recordset" /> or <see langword="Record" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.OleDb.OleDbDataAdapter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

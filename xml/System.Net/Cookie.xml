@@ -43,6 +43,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.CookieCollection" />
+    <altmember cref="T:System.Net.CookieContainer" />
+    <altmember cref="T:System.Net.CookieException" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -151,6 +154,9 @@
  -or -  
   
  The <paramref name="value" /> parameter contains a string not enclosed in quotes that contains an invalid character.</exception>
+        <altmember cref="T:System.Net.CookieCollection" />
+        <altmember cref="T:System.Net.CookieContainer" />
+        <altmember cref="T:System.Net.CookieException" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -227,6 +233,9 @@
  -or -  
   
  The <paramref name="value" /> parameter contains a string not enclosed in quotes that contains an invalid character.</exception>
+        <altmember cref="T:System.Net.CookieCollection" />
+        <altmember cref="T:System.Net.CookieContainer" />
+        <altmember cref="T:System.Net.CookieException" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -303,6 +312,9 @@
  -or -  
   
  The <paramref name="value" /> parameter contains a string not enclosed in quotes that contains an invalid character.</exception>
+        <altmember cref="T:System.Net.CookieCollection" />
+        <altmember cref="T:System.Net.CookieContainer" />
+        <altmember cref="T:System.Net.CookieException" />
       </Docs>
     </Member>
     <Member MemberName="Comment">
@@ -349,6 +361,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.CookieCollection" />
+        <altmember cref="T:System.Net.CookieContainer" />
+        <altmember cref="T:System.Net.CookieException" />
       </Docs>
     </Member>
     <Member MemberName="CommentUri">
@@ -395,6 +410,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.CookieCollection" />
+        <altmember cref="T:System.Net.CookieContainer" />
+        <altmember cref="T:System.Net.CookieException" />
       </Docs>
     </Member>
     <Member MemberName="Discard">
@@ -442,6 +460,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.CookieCollection" />
+        <altmember cref="T:System.Net.CookieContainer" />
+        <altmember cref="T:System.Net.CookieException" />
       </Docs>
     </Member>
     <Member MemberName="Domain">
@@ -488,6 +509,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.CookieCollection" />
+        <altmember cref="T:System.Net.CookieContainer" />
+        <altmember cref="T:System.Net.CookieException" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -522,6 +546,9 @@
         <summary>Overrides the <see cref="M:System.Object.Equals(System.Object)" /> method.</summary>
         <returns>Returns <see langword="true" /> if the <see cref="T:System.Net.Cookie" /> is equal to <paramref name="comparand" />. Two <see cref="T:System.Net.Cookie" /> instances are equal if their <see cref="P:System.Net.Cookie.Name" />, <see cref="P:System.Net.Cookie.Value" />, <see cref="P:System.Net.Cookie.Path" />, <see cref="P:System.Net.Cookie.Domain" />, and <see cref="P:System.Net.Cookie.Version" /> properties are equal. <see cref="P:System.Net.Cookie.Name" /> and <see cref="P:System.Net.Cookie.Domain" /> string comparisons are case-insensitive.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.CookieCollection" />
+        <altmember cref="T:System.Net.CookieContainer" />
+        <altmember cref="T:System.Net.CookieException" />
       </Docs>
     </Member>
     <Member MemberName="Expired">
@@ -569,6 +596,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.CookieCollection" />
+        <altmember cref="T:System.Net.CookieContainer" />
+        <altmember cref="T:System.Net.CookieException" />
       </Docs>
     </Member>
     <Member MemberName="Expires">
@@ -617,6 +647,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.CookieCollection" />
+        <altmember cref="T:System.Net.CookieContainer" />
+        <altmember cref="T:System.Net.CookieException" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -745,6 +778,9 @@
  \- or -  
   
  The value specified for a set operation contained an illegal character. The following characters must not be used inside the <see cref="P:System.Net.Cookie.Name" /> property: equal sign, semicolon, comma, newline (\n), return (\r), tab (\t), and space character. The dollar sign character ("$") cannot be the first character.</exception>
+        <altmember cref="T:System.Net.CookieCollection" />
+        <altmember cref="T:System.Net.CookieContainer" />
+        <altmember cref="T:System.Net.CookieException" />
       </Docs>
     </Member>
     <Member MemberName="Path">
@@ -791,6 +827,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.CookieCollection" />
+        <altmember cref="T:System.Net.CookieContainer" />
+        <altmember cref="T:System.Net.CookieException" />
       </Docs>
     </Member>
     <Member MemberName="Port">
@@ -838,6 +877,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Net.CookieException">The value specified for a set operation could not be parsed or is not enclosed in double quotes.</exception>
+        <altmember cref="T:System.Net.CookieCollection" />
+        <altmember cref="T:System.Net.CookieContainer" />
+        <altmember cref="T:System.Net.CookieException" />
       </Docs>
     </Member>
     <Member MemberName="Secure">
@@ -885,6 +927,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.CookieCollection" />
+        <altmember cref="T:System.Net.CookieContainer" />
+        <altmember cref="T:System.Net.CookieException" />
       </Docs>
     </Member>
     <Member MemberName="TimeStamp">
@@ -931,6 +976,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.CookieCollection" />
+        <altmember cref="T:System.Net.CookieContainer" />
+        <altmember cref="T:System.Net.CookieException" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1026,6 +1074,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.CookieCollection" />
+        <altmember cref="T:System.Net.CookieContainer" />
+        <altmember cref="T:System.Net.CookieException" />
       </Docs>
     </Member>
     <Member MemberName="Version">
@@ -1075,7 +1126,22 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value specified for a version is not allowed.</exception>
+        <altmember cref="T:System.Net.CookieCollection" />
+        <altmember cref="T:System.Net.CookieContainer" />
+        <altmember cref="T:System.Net.CookieException" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>3.9.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Cookie" /> class. In general, an application does not need to construct a <see cref="T:System.Net.Cookie" /> class because it is created automatically based on the Set-Cookie header received with the HTTP response.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

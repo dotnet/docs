@@ -57,6 +57,8 @@ switchName="SourceSwitch" >
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Diagnostics.TraceSource" />
+    <altmember cref="N:System.Diagnostics" />
   </Docs>
   <Members>
     <Member MemberName="AnimationSource">
@@ -176,6 +178,7 @@ switchName="SourceSwitch" >
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Diagnostics.PresentationTraceSources.SetTraceLevel(System.Object,System.Diagnostics.PresentationTraceLevel)" />
       </Docs>
     </Member>
     <Member MemberName="HwndHostSource">
@@ -321,6 +324,7 @@ switchName="SourceSwitch" >
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Diagnostics.PresentationTraceSources.GetTraceLevel(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ShellSource">

@@ -13,6 +13,11 @@
   <Docs>
     <summary>Allows control of code access security permissions for service controllers.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.ServiceProcess.ServiceController" />
+    <altmember cref="T:System.ServiceProcess.ServiceControllerPermissionAccess" />
+    <altmember cref="T:System.ServiceProcess.ServiceControllerPermissionAttribute" />
+    <altmember cref="T:System.ServiceProcess.ServiceControllerPermissionEntry" />
+    <altmember cref="T:System.ServiceProcess.ServiceControllerPermissionEntryCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -47,6 +52,7 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceProcess.ServiceControllerPermission" /> class with the specified access to resources.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="state" /> parameter is not a valid value of <see cref="T:System.Security.Permissions.PermissionState" />.</exception>
+        <altmember cref="T:System.Security.Permissions.PermissionState" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -109,5 +115,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceProcess.ServiceControllerPermission" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

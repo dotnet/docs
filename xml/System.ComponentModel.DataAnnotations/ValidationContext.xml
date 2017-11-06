@@ -192,6 +192,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IServiceProvider.GetService(System.Type)" />
       </Docs>
     </Member>
     <Member MemberName="InitializeServiceProvider">
@@ -364,7 +365,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.DataAnnotations.ValidationContext.GetService(System.Type)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.ValidationContext" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

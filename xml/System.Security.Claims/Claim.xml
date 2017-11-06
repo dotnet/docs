@@ -64,6 +64,9 @@ if (null != principal)
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Security.Claims.ClaimsIdentity" />
+    <altmember cref="T:System.Security.Claims.ClaimsPrincipal" />
+    <altmember cref="T:System.IdentityModel.Tokens.IssuerNameRegistry" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -231,6 +234,8 @@ if (null != principal)
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="type" /> or <paramref name="value" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Security.Claims.ClaimTypes" />
+        <altmember cref="T:System.Security.Claims.ClaimValueTypes" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -272,6 +277,8 @@ if (null != principal)
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="type" /> or <paramref name="value" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Security.Claims.ClaimTypes" />
+        <altmember cref="T:System.Security.Claims.ClaimValueTypes" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -315,6 +322,8 @@ if (null != principal)
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="type" /> or <paramref name="value" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Security.Claims.ClaimTypes" />
+        <altmember cref="T:System.Security.Claims.ClaimValueTypes" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -360,6 +369,8 @@ if (null != principal)
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="type" /> or <paramref name="value" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Security.Claims.ClaimTypes" />
+        <altmember cref="T:System.Security.Claims.ClaimValueTypes" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -401,6 +412,8 @@ if (null != principal)
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="type" /> or <paramref name="value" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Security.Claims.ClaimTypes" />
+        <altmember cref="T:System.Security.Claims.ClaimValueTypes" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -546,6 +559,8 @@ if (null != principal)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Security.Claims.Claim.OriginalIssuer" />
+        <altmember cref="T:System.IdentityModel.Tokens.IssuerNameRegistry" />
       </Docs>
     </Member>
     <Member MemberName="OriginalIssuer">
@@ -585,6 +600,8 @@ if (null != principal)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Security.Claims.Claim.Issuer" />
+        <altmember cref="T:System.IdentityModel.Tokens.IssuerNameRegistry" />
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -620,6 +637,7 @@ if (null != principal)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Security.Claims.ClaimProperties" />
       </Docs>
     </Member>
     <Member MemberName="Subject">
@@ -763,6 +781,8 @@ if (null != principal)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Security.Claims.Claim.ValueType" />
+        <altmember cref="P:System.Security.Claims.Claim.Type" />
       </Docs>
     </Member>
     <Member MemberName="ValueType">
@@ -798,6 +818,7 @@ if (null != principal)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Security.Claims.Claim.Value" />
       </Docs>
     </Member>
     <Member MemberName="WriteTo">
@@ -868,5 +889,25 @@ if (null != principal)
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Claims.Claim" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Clone">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a new <see cref="T:System.Security.Claims.Claim" /> object copied from this object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

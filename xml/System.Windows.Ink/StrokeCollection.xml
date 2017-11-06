@@ -1432,5 +1432,59 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Erase">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the ink that is within the bounds of the specified area.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Save">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Saves the <see cref="T:System.Windows.Ink.StrokeCollection" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Ink.StrokeCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="HitTest">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a collection of strokes contained within the specified area.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Replace">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Replaces the strokes in the collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Clip">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes all strokes in the <see cref="T:System.Windows.Ink.StrokeCollection" /> that are outside the specified bounds.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

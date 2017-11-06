@@ -40,6 +40,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Button" />
+    <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -62,6 +64,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Button" />
+        <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeHtml">
@@ -102,6 +106,9 @@
         <block subset="none" type="overrides">
           <para>If you are overriding the <see cref="M:System.Web.UI.Design.WebControls.ButtonDesigner.GetDesignTimeHtml" /> method, typically you will modify selected property values, then call the base method to generate the markup, and then restore the properties to their original values.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.Button" />
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.GetDesignTimeHtml" />
+        <altmember cref="M:System.Web.UI.Control.RenderControl(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
   </Members>

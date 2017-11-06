@@ -82,6 +82,7 @@
         <param name="expression">A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the return value.</param>
         <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeMethodReturnStatement" /> class using the specified expression.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeExpression" />
       </Docs>
     </Member>
     <Member MemberName="Expression">
@@ -111,7 +112,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.CodeDom.CodeExpression" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeMethodReturnStatement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

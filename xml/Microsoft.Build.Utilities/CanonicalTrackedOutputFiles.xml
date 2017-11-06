@@ -549,5 +549,68 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RemoveDependencyFromEntry">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Remove the output graph entries for the given source and corresponding outputs.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RemoveDependenciesFromEntryIfMissing">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Remove the output graph entries for the given sources and corresponding outputs.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Default constructor.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OutputsForSource">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>This method determines the outputs for a source root (as in the contents of a rooting marker).</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddComputedOutputsForSourceRoot">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>This method adds computed outputs for the given source key to the output graph.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RemoveEntriesForSource">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Remove the output graph entries for the given source and corresponding outputs.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SaveTlog">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Re-writes the tlogs from the current output table. New entries are tracked.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

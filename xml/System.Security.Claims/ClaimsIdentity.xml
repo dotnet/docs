@@ -51,6 +51,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Security.Claims.Claim" />
+    <altmember cref="T:System.Security.Claims.ClaimsPrincipal" />
+    <altmember cref="T:System.Security.Principal.GenericIdentity" />
+    <altmember cref="T:System.Security.Principal.WindowsIdentity" />
+    <altmember cref="T:System.Web.Security.FormsIdentity" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -862,6 +867,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Set operation requires full trust for the immediate caller. This member cannot be set by partially trusted or transparent code.</permission>
+        <altmember cref="P:System.Security.Claims.ClaimsIdentity.Actor" />
       </Docs>
     </Member>
     <Member MemberName="Claims">
@@ -902,6 +908,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Security.Claims.ClaimsPrincipal.Claims" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -1451,6 +1458,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Security.Claims.ClaimsIdentity.NameClaimType" />
       </Docs>
     </Member>
     <Member MemberName="NameClaimType">
@@ -1488,6 +1496,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Security.Claims.ClaimsIdentity.Name" />
       </Docs>
     </Member>
     <Member MemberName="RemoveClaim">
@@ -1572,6 +1581,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Security.Claims.ClaimsPrincipal.IsInRole(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="TryRemoveClaim">
@@ -1694,5 +1704,45 @@
           <paramref name="writer" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="HasClaim">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the claims identity possesses a claim that matches specified conditions.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FindAll">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves all of the claims that match a specified condition.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Claims.ClaimsIdentity" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FindFirst">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the first claim that matches a specified condition.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

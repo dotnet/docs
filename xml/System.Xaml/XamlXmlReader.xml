@@ -26,6 +26,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Xaml.XamlXmlReaderSettings" />
+    <altmember cref="T:System.Xaml.XamlObjectWriter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -647,6 +649,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlXmlReader.NodeType" />
       </Docs>
     </Member>
     <Member MemberName="SchemaContext">
@@ -717,5 +720,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlXmlReader" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

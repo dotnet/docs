@@ -47,6 +47,8 @@ Metric values of glyph characters
 ## XAML Text Usage  
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Documents.Glyphs" />
+    <altmember cref="T:System.Windows.Media.GlyphRun" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -155,6 +157,7 @@ Metric values of glyph characters
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.GlyphTypeface.AdvanceWidths" />
       </Docs>
     </Member>
     <Member MemberName="AdvanceWidths">
@@ -180,6 +183,7 @@ Metric values of glyph characters
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.GlyphTypeface.AdvanceHeights" />
       </Docs>
     </Member>
     <Member MemberName="Baseline">
@@ -240,6 +244,7 @@ Metric values of glyph characters
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.GlyphTypeface.TopSideBearings" />
       </Docs>
     </Member>
     <Member MemberName="CapsHeight">
@@ -358,6 +363,7 @@ Metric values of glyph characters
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.GlyphTypeface.Descriptions" />
       </Docs>
     </Member>
     <Member MemberName="Descriptions">
@@ -388,6 +394,7 @@ Metric values of glyph characters
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.GlyphTypeface.Copyrights" />
       </Docs>
     </Member>
     <Member MemberName="DesignerNames">
@@ -776,6 +783,7 @@ Metric values of glyph characters
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.GlyphTypeface.RightSideBearings" />
       </Docs>
     </Member>
     <Member MemberName="LicenseDescriptions">
@@ -849,6 +857,7 @@ Metric values of glyph characters
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.GlyphTypeface.LeftSideBearings" />
       </Docs>
     </Member>
     <Member MemberName="SampleTexts">
@@ -1121,6 +1130,7 @@ Metric values of glyph characters
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.GlyphTypeface.BottomSideBearings" />
       </Docs>
     </Member>
     <Member MemberName="Trademarks">
@@ -1344,6 +1354,7 @@ Metric values of glyph characters
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.GlyphTypeface.Win32FamilyNames" />
       </Docs>
     </Member>
     <Member MemberName="Win32FamilyNames">
@@ -1369,6 +1380,7 @@ Metric values of glyph characters
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.GlyphTypeface.Win32FaceNames" />
       </Docs>
     </Member>
     <Member MemberName="XHeight">
@@ -1397,5 +1409,14 @@ Metric values of glyph characters
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.GlyphTypeface" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

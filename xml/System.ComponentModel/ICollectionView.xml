@@ -24,6 +24,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Data.CollectionView" />
   </Docs>
   <Members>
     <Member MemberName="CanFilter">
@@ -43,6 +44,7 @@
         <value>
           <see langword="true" /> if this view support filtering; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Data.CollectionView.CanFilter" />
       </Docs>
     </Member>
     <Member MemberName="CanGroup">
@@ -81,6 +83,7 @@
         <value>
           <see langword="true" /> if this view supports sorting; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Data.CollectionView.CanSort" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -111,6 +114,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Data.CollectionView.Contains(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Culture">
@@ -129,6 +133,7 @@
         <summary>Gets or sets the cultural info for any operations of the view that may differ by culture, such as sorting.</summary>
         <value>The culture to use during sorting.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Data.CollectionView.Culture" />
       </Docs>
     </Member>
     <Member MemberName="CurrentChanged">
@@ -153,6 +158,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.ICollectionView.CurrentItem" />
+        <altmember cref="E:System.Windows.Data.CollectionView.CurrentChanged" />
       </Docs>
     </Member>
     <Member MemberName="CurrentChanging">
@@ -177,6 +184,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.ICollectionView.CurrentItem" />
+        <altmember cref="E:System.Windows.Data.CollectionView.CurrentChanging" />
       </Docs>
     </Member>
     <Member MemberName="CurrentItem">
@@ -195,6 +204,7 @@
         <summary>Gets the current item in the view.</summary>
         <value>The current item of the view or <see langword="null" /> if there is no current item.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Data.CollectionView.CurrentItem" />
       </Docs>
     </Member>
     <Member MemberName="CurrentPosition">
@@ -213,6 +223,7 @@
         <summary>Gets the ordinal position of the <see cref="P:System.ComponentModel.ICollectionView.CurrentItem" /> within the view.</summary>
         <value>The ordinal position of the <see cref="P:System.ComponentModel.ICollectionView.CurrentItem" /> within the view.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Data.CollectionView.CurrentPosition" />
       </Docs>
     </Member>
     <Member MemberName="DeferRefresh">
@@ -232,6 +243,7 @@
         <summary>Enters a defer cycle that you can use to merge changes to the view and delay automatic refresh.</summary>
         <returns>An <see cref="T:System.IDisposable" /> object that you can use to dispose of the calling object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Data.CollectionView.DeferRefresh" />
       </Docs>
     </Member>
     <Member MemberName="Filter">
@@ -250,6 +262,7 @@
         <summary>Gets or sets a callback used to determine if an item is suitable for inclusion in the view.</summary>
         <value>A method used to determine if an item is suitable for inclusion in the view.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Data.CollectionView.Filter" />
       </Docs>
     </Member>
     <Member MemberName="GroupDescriptions">
@@ -268,6 +281,7 @@
         <summary>Gets a collection of <see cref="T:System.ComponentModel.GroupDescription" /> objects that describe how the items in the collection are grouped in the view.</summary>
         <value>A collection of <see cref="T:System.ComponentModel.GroupDescription" /> objects that describe how the items in the collection are grouped in the view.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Data.CollectionView.GroupDescriptions" />
       </Docs>
     </Member>
     <Member MemberName="Groups">
@@ -286,6 +300,7 @@
         <summary>Gets the top-level groups.</summary>
         <value>A read-only collection of the top-level groups or <see langword="null" /> if there are no groups.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Data.CollectionView.Groups" />
       </Docs>
     </Member>
     <Member MemberName="IsCurrentAfterLast">
@@ -304,6 +319,7 @@
         <summary>Gets a value that indicates whether the <see cref="P:System.ComponentModel.ICollectionView.CurrentItem" /> of the view is beyond the end of the collection.</summary>
         <value>Returns <see langword="true" /> if the <see cref="P:System.ComponentModel.ICollectionView.CurrentItem" /> of the view is beyond the end of the collection; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Data.CollectionView.IsCurrentAfterLast" />
       </Docs>
     </Member>
     <Member MemberName="IsCurrentBeforeFirst">
@@ -322,6 +338,7 @@
         <summary>Gets a value that indicates whether the <see cref="P:System.ComponentModel.ICollectionView.CurrentItem" /> of the view is beyond the beginning of the collection.</summary>
         <value>Returns <see langword="true" /> if the <see cref="P:System.ComponentModel.ICollectionView.CurrentItem" /> of the view is beyond the beginning of the collection; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Data.CollectionView.IsCurrentBeforeFirst" />
       </Docs>
     </Member>
     <Member MemberName="IsEmpty">
@@ -364,6 +381,7 @@
         <returns>
           <see langword="true" /> if the resulting <see cref="P:System.ComponentModel.ICollectionView.CurrentItem" /> is within the view; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Data.CollectionView.MoveCurrentTo(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="MoveCurrentToFirst">
@@ -384,6 +402,7 @@
         <returns>
           <see langword="true" /> if the resulting <see cref="P:System.ComponentModel.ICollectionView.CurrentItem" /> is an item within the view; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Data.CollectionView.MoveCurrentToFirst" />
       </Docs>
     </Member>
     <Member MemberName="MoveCurrentToLast">
@@ -404,6 +423,7 @@
         <returns>
           <see langword="true" /> if the resulting <see cref="P:System.ComponentModel.ICollectionView.CurrentItem" /> is an item within the view; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Data.CollectionView.MoveCurrentToLast" />
       </Docs>
     </Member>
     <Member MemberName="MoveCurrentToNext">
@@ -424,6 +444,7 @@
         <returns>
           <see langword="true" /> if the resulting <see cref="P:System.ComponentModel.ICollectionView.CurrentItem" /> is an item within the view; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Data.CollectionView.MoveCurrentToNext" />
       </Docs>
     </Member>
     <Member MemberName="MoveCurrentToPosition">
@@ -447,6 +468,7 @@
         <returns>
           <see langword="true" /> if the resulting <see cref="P:System.ComponentModel.ICollectionView.CurrentItem" /> is an item within the view; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Data.CollectionView.MoveCurrentToPosition(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="MoveCurrentToPrevious">
@@ -467,6 +489,7 @@
         <returns>
           <see langword="true" /> if the resulting <see cref="P:System.ComponentModel.ICollectionView.CurrentItem" /> is an item within the view; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Data.CollectionView.MoveCurrentToPrevious" />
       </Docs>
     </Member>
     <Member MemberName="Refresh">
@@ -485,6 +508,7 @@
       <Docs>
         <summary>Recreates the view.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Data.CollectionView.Refresh" />
       </Docs>
     </Member>
     <Member MemberName="SortDescriptions">
@@ -503,6 +527,7 @@
         <summary>Gets a collection of <see cref="T:System.ComponentModel.SortDescription" /> objects that describe how the items in the collection are sorted in the view.</summary>
         <value>A collection of <see cref="T:System.ComponentModel.SortDescription" /> objects that describe how the items in the collection are sorted in the view.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Data.CollectionView.SortDescriptions" />
       </Docs>
     </Member>
     <Member MemberName="SourceCollection">

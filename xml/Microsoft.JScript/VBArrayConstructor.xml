@@ -14,6 +14,8 @@
     <summary>Represents a prototype-based object that is defined by a constructor function. This class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.VBArrayPrototype" />
+    <altmember cref="T:Microsoft.JScript.VBArrayObject" />
   </Docs>
   <Members>
     <Member MemberName="CreateInstance">
@@ -48,6 +50,8 @@
         <returns>An instance of the object.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.VBArrayPrototype" />
+        <altmember cref="T:Microsoft.JScript.VBArrayObject" />
       </Docs>
     </Member>
   </Members>

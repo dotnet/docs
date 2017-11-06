@@ -56,6 +56,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Xml.Serialization.XmlAttributeOverrides" />
+    <altmember cref="T:System.Xml.Serialization.XmlAttributes" />
+    <altmember cref="P:System.Xml.Serialization.XmlAttributes.XmlIgnore" />
+    <altmember cref="T:System.Xml.Serialization.XmlSerializer" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -95,6 +99,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xml.Serialization.XmlAttributes.XmlIgnore" />
+        <altmember cref="T:System.Xml.Serialization.XmlAttributeOverrides" />
+        <altmember cref="T:System.Xml.Serialization.XmlSerializer" />
       </Docs>
     </Member>
   </Members>

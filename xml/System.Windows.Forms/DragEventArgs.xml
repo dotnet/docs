@@ -54,6 +54,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DragDropEffects" />
+    <altmember cref="M:System.Windows.Forms.Control.OnDragDrop(System.Windows.Forms.DragEventArgs)" />
+    <altmember cref="E:System.Windows.Forms.Control.DragDrop" />
+    <altmember cref="M:System.Windows.Forms.Control.OnDragEnter(System.Windows.Forms.DragEventArgs)" />
+    <altmember cref="E:System.Windows.Forms.Control.DragEnter" />
+    <altmember cref="M:System.Windows.Forms.Control.OnDragOver(System.Windows.Forms.DragEventArgs)" />
+    <altmember cref="E:System.Windows.Forms.Control.DragOver" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -82,6 +89,8 @@
         <param name="effect">One of the <see cref="T:System.Windows.Forms.DragDropEffects" /> values.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DragEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DragDropEffects" />
+        <altmember cref="T:System.Windows.Forms.IDataObject" />
       </Docs>
     </Member>
     <Member MemberName="AllowedEffect">
@@ -126,6 +135,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DragDropEffects" />
       </Docs>
     </Member>
     <Member MemberName="Data">
@@ -168,6 +178,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.IDataObject" />
       </Docs>
     </Member>
     <Member MemberName="Effect">
@@ -212,6 +223,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DragDropEffects" />
       </Docs>
     </Member>
     <Member MemberName="KeyState">
@@ -304,6 +316,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DragEventArgs.Y" />
       </Docs>
     </Member>
     <Member MemberName="Y">
@@ -341,6 +354,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DragEventArgs.X" />
       </Docs>
     </Member>
   </Members>

@@ -45,6 +45,7 @@
         <returns>
           <see langword="true" /> if the <see cref="T:System.Windows.Forms.InputLanguage" /> is contained in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.InputLanguageCollection.IndexOf(System.Windows.Forms.InputLanguage)" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -78,6 +79,7 @@
           <paramref name="array" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than the lower bound of <paramref name="array" />.</exception>
+        <altmember cref="T:System.Array" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -100,6 +102,7 @@
         <summary>Returns the index of an <see cref="T:System.Windows.Forms.InputLanguage" /> in the <see cref="T:System.Windows.Forms.InputLanguageCollection" />.</summary>
         <returns>The index of the <see cref="T:System.Windows.Forms.InputLanguage" /> in the <see cref="T:System.Windows.Forms.InputLanguageCollection" />, if found; otherwise, -1.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.InputLanguageCollection.Contains(System.Windows.Forms.InputLanguage)" />
       </Docs>
     </Member>
     <Member MemberName="Item">

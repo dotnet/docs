@@ -93,6 +93,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.ApplicationServices.AuthenticatingEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="CreatingCookie">
@@ -130,6 +131,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.ApplicationServices.CreatingCookieEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="IsLoggedIn">
@@ -251,6 +253,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.Security.FormsAuthentication.SignOut" />
       </Docs>
     </Member>
     <Member MemberName="ValidateUser">

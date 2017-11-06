@@ -43,6 +43,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Security.Permissions.SiteIdentityPermissionAttribute" />
+    <altmember cref="T:System.Security.Policy.Site" />
+    <altmember cref="T:System.Security.Policy.SiteMembershipCondition" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -362,5 +365,15 @@
  The permissions are not equal and one is not a subset of the other.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.SiteIdentityPermission" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

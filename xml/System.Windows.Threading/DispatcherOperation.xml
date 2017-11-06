@@ -55,6 +55,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Threading.DispatcherOperation.Aborted" />
       </Docs>
     </Member>
     <Member MemberName="Aborted">
@@ -299,5 +300,14 @@
           <see cref="P:System.Windows.Threading.DispatcherOperation.Status" /> is equal to <see cref="F:System.Windows.Threading.DispatcherOperationStatus.Executing" />.  This can occur when waiting for an operation that is already executing on the same thread.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Wait">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Waits for the operation to finish.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

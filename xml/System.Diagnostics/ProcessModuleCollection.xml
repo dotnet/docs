@@ -32,6 +32,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Diagnostics.ProcessModule.ModuleName" />
+    <altmember cref="P:System.Diagnostics.ProcessModule.FileName" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -1498,5 +1500,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Process</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.ProcessModuleCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -57,6 +57,7 @@
           <paramref name="contextType" /> is not valid.</exception>
         <exception cref="T:System.PlatformNotSupportedException">This class does not work on the current platform.</exception>
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" /></permission>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContextType" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -86,6 +87,7 @@
           <paramref name="contextType" /> is not valid.</exception>
         <exception cref="T:System.PlatformNotSupportedException">This class does not work on the current platform.</exception>
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" /></permission>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContextType" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -113,6 +115,7 @@
           <paramref name="contextType" /> is not valid.</exception>
         <exception cref="T:System.PlatformNotSupportedException">This class does not work on the current platform.</exception>
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" /></permission>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContextType" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -146,6 +149,7 @@
           <paramref name="contextType" /> is not valid.</exception>
         <exception cref="T:System.PlatformNotSupportedException">This class does not work on the current platform.</exception>
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" /></permission>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContextType" />
       </Docs>
     </Member>
     <Member MemberName="ContextType">
@@ -165,6 +169,7 @@
         <summary>Gets the type of the context object.</summary>
         <value>One of the <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContextType" /> members that specifies the type of context.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContextType" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -205,5 +210,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

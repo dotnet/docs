@@ -74,6 +74,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.DataAnnotations.ValidationAttribute" />
+    <altmember cref="T:System.ComponentModel.DataAnnotations.UIHintAttribute" />
+    <altmember cref="T:System.ComponentModel.DataAnnotations.DataType" />
+    <altmember cref="T:System.AttributeUsageAttribute" />
+    <altmember cref="T:System.AttributeTargets" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -218,6 +223,7 @@
         <summary>Gets a data-field display format.</summary>
         <value>The data-field display format.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.DataAnnotations.DisplayFormatAttribute" />
       </Docs>
     </Member>
     <Member MemberName="GetDataTypeName">
@@ -286,7 +292,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.DataAnnotations.ValidationAttribute" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.DataTypeAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

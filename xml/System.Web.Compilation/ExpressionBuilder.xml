@@ -63,6 +63,11 @@ Text="<%$ MyCustomExpression:Hello, world! %>" />
     <block subset="none" type="overrides">
       <para>When you inherit from the <see cref="T:System.Web.Compilation.ExpressionBuilder" /> class, you must override the <see cref="M:System.Web.Compilation.ExpressionBuilder.GetCodeExpression(System.Web.UI.BoundPropertyEntry,System.Object,System.Web.Compilation.ExpressionBuilderContext)" /> method.</para>
     </block>
+    <altmember cref="T:System.Web.Compilation.ExpressionBuilderContext" />
+    <altmember cref="T:System.Web.Configuration.ExpressionBuilder" />
+    <altmember cref="T:System.Web.Configuration.ExpressionBuilderCollection" />
+    <altmember cref="T:System.Web.Compilation.AppSettingsExpressionBuilder" />
+    <altmember cref="T:System.Web.Compilation.ConnectionStringsExpressionBuilder" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -88,6 +93,11 @@ Text="<%$ MyCustomExpression:Hello, world! %>" />
         <block subset="none" type="overrides">
           <para>When deriving from the <see cref="T:System.Web.Compilation.ExpressionBuilder" /> class, override the <see cref="M:System.Web.Compilation.ExpressionBuilder.#ctor" /> constructor to implement custom initialization actions for your expression builder implementation.</para>
         </block>
+        <altmember cref="T:System.Web.Compilation.ExpressionBuilderContext" />
+        <altmember cref="T:System.Web.Configuration.ExpressionBuilder" />
+        <altmember cref="T:System.Web.Configuration.ExpressionBuilderCollection" />
+        <altmember cref="T:System.Web.Compilation.AppSettingsExpressionBuilder" />
+        <altmember cref="T:System.Web.Compilation.ConnectionStringsExpressionBuilder" />
       </Docs>
     </Member>
     <Member MemberName="EvaluateExpression">

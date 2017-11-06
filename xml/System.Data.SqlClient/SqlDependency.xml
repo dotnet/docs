@@ -407,6 +407,7 @@
         <exception cref="T:System.Data.SqlClient.SqlException">A subsequent call to the method has been made with an equivalent <paramref name="connectionString" /> parameter with a different user, or a user that does not default to the same schema.  
   
  Also, any underlying **SqlClient** exceptions.</exception>
+        <altmember cref="P:System.Data.SqlClient.SqlConnection.ConnectionString" />
       </Docs>
     </Member>
     <Member MemberName="Start">
@@ -451,6 +452,7 @@
         <exception cref="T:System.Data.SqlClient.SqlException">A subsequent call to the method has been made with an equivalent <paramref name="connectionString" /> parameter but a different user, or a user that does not default to the same schema.  
   
  Also, any underlying **SqlClient** exceptions.</exception>
+        <altmember cref="P:System.Data.SqlClient.SqlConnection.ConnectionString" />
       </Docs>
     </Member>
     <MemberGroup MemberName="Stop">
@@ -541,5 +543,15 @@
         <exception cref="T:System.Data.SqlClient.SqlException">And underlying **SqlClient** exception occurred.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Data.SqlClient.SqlDependency" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

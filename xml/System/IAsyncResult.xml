@@ -118,6 +118,7 @@
         <block subset="none" type="usage">
           <para>This object can be used to pass state information for the asynchronous operation to an <see cref="T:System.AsyncCallback" /> that you provide.</para>
         </block>
+        <altmember cref="T:System.AsyncCallback" />
       </Docs>
     </Member>
     <Member MemberName="AsyncWaitHandle">

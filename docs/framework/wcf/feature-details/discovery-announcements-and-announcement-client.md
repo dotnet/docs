@@ -33,31 +33,31 @@ The [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] discovery feature en
  To configure the service to send announcements, add a <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior> with an announcement endpoint. The following example shows how to programmatically add this behavior to the service host. This example uses the `UdpAnnouncementEndpoint`, which implies that the announcements are multicast to a location specified by that standard endpoint.  
   
 ```  
-ServiceDiscoveryBehavior serviceDiscoveryBehavior = new ServiceDiscoveryBehavior();  
-serviceDiscoveryBehavior.AnnouncementEndpoints.Add(new UdpAnnouncementEndpoint());  
-serviceHost.Description.Behaviors.Add(serviceDiscoveryBehavior);  
+ServiceDiscoveryBehavior serviceDiscoveryBehavior = new ServiceDiscoveryBehavior();
+serviceDiscoveryBehavior.AnnouncementEndpoints.Add(new UdpAnnouncementEndpoint());
+serviceHost.Description.Behaviors.Add(serviceDiscoveryBehavior);
 ```  
   
  The behavior can be configured in the configuration file as well, as shown in the following example.  
   
 ```xml  
-<services>  
-  <service behaviorConfiguration="CalculatorBehavior" name="Microsoft.Samples.Discovery.CalculatorService">  
-    <!--Add Discovery Endpoint-->  
-    <endpoint name="udpDiscoveryEpt" kind="udpDiscoveryEndpoint" />  
-  </service>  
-</services>  
-<behaviors>  
-  <serviceBehaviors>  
-    <behavior name="CalculatorBehavior">  
-      <!--Add Discovery behavior-->  
-      <serviceDiscovery>  
-        <announcementEndpoints>  
-          <endpoint kind="udpAnnouncementEndpoint" />  
-        </announcementEndpoints>  
-      </serviceDiscovery>  
-    </behavior>  
-  </serviceBehaviors>  
+<services>
+  <service behaviorConfiguration="CalculatorBehavior" name="Microsoft.Samples.Discovery.CalculatorService">
+    <!--Add Discovery Endpoint-->
+    <endpoint name="udpDiscoveryEpt" kind="udpDiscoveryEndpoint" />
+  </service>
+</services>
+<behaviors>
+  <serviceBehaviors>
+    <behavior name="CalculatorBehavior">
+      <!--Add Discovery behavior-->
+      <serviceDiscovery>
+        <announcementEndpoints>
+          <endpoint kind="udpAnnouncementEndpoint" />
+        </announcementEndpoints>
+      </serviceDiscovery>
+    </behavior>
+  </serviceBehaviors>
 </behaviors>  
 ```  
   
@@ -67,37 +67,37 @@ serviceHost.Description.Behaviors.Add(serviceDiscoveryBehavior);
  A client application must host an announcement service to respond to the Hello and Bye messages and subscribe to the <xref:System.ServiceModel.Discovery.AnnouncementService.OnlineAnnouncementReceived> and <xref:System.ServiceModel.Discovery.AnnouncementService.OfflineAnnouncementReceived> events. The following example shows how to do this.  
   
 ```  
-// Create an AnnouncementService instance  
-AnnouncementService announcementService = new AnnouncementService();  
+// Create an AnnouncementService instance
+AnnouncementService announcementService = new AnnouncementService();
   
-// Subscribe the announcement events  
-announcementService.OnlineAnnouncementReceived += OnOnlineEvent;  
-announcementService.OfflineAnnouncementReceived += OnOfflineEvent;  
+// Subscribe the announcement events
+announcementService.OnlineAnnouncementReceived += OnOnlineEvent;
+announcementService.OfflineAnnouncementReceived += OnOfflineEvent;
   
-// Create ServiceHost for the AnnouncementService  
-using (ServiceHost announcementServiceHost = new ServiceHost(announcementService))  
+// Create ServiceHost for the AnnouncementService
+using (ServiceHost announcementServiceHost = new ServiceHost(announcementService))
 {  
-    // Listen for the announcements sent over UDP multicast  
-    announcementServiceHost.AddServiceEndpoint(new UdpAnnouncementEndpoint());  
-    announcementServiceHost.Open();  
+    // Listen for the announcements sent over UDP multicast
+    announcementServiceHost.AddServiceEndpoint(new UdpAnnouncementEndpoint());
+    announcementServiceHost.Open();
   
-    Console.WriteLine("Press <ENTER> to terminate.");  
-    Console.ReadLine();  
+    Console.WriteLine("Press <ENTER> to terminate.");
+    Console.ReadLine();
 }  
 ```  
   
  When a Hello or Bye message is received, you can access the endpoint discovery metadata through <xref:System.ServiceModel.Discovery.AnnouncementEventArgs> as shown in the following example.  
   
 ```  
-static void OnOnlineEvent(object sender, AnnouncementEventArgs e)  
-{  
-    Console.WriteLine("Received an online announcement from {0}",   
-e.EndpointDiscoveryMetadata.Address);  
-}  
-  
-static void OnOfflineEvent(object sender, AnnouncementEventArgs e)  
-{  
-    Console.WriteLine("Received an offline announcement from {0}",   
-e.EndpointDiscoveryMetadata.Address);  
-}  
+static void OnOnlineEvent(object sender, AnnouncementEventArgs e)
+{
+    Console.WriteLine("Received an online announcement from {0}", 
+e.EndpointDiscoveryMetadata.Address);
+}
+
+static void OnOfflineEvent(object sender, AnnouncementEventArgs e)
+{
+    Console.WriteLine("Received an offline announcement from {0}", 
+e.EndpointDiscoveryMetadata.Address);
+}
 ```

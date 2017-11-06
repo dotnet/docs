@@ -239,6 +239,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="traits" /> is not specified in key-value pairs.</exception>
+        <altmember cref="M:System.Diagnostics.Tracing.EventSource.GetTrait(System.String)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -331,6 +332,7 @@
           <paramref name="eventSourceName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="traits" /> is not specified in key-value pairs.</exception>
+        <altmember cref="M:System.Diagnostics.Tracing.EventSource.GetTrait(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ConstructionException">
@@ -402,6 +404,7 @@
  Gets the activity ID of the current thread.</summary>
         <value>The activity ID of the current thread.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Diagnostics.Tracing.EventSource.SetCurrentThreadActivityId(System.Guid)" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -2732,5 +2735,82 @@ class AnotherEventSource : EventSource {
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetCurrentThreadActivityId">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
+  
+ Sets the activity ID on the current thread.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GenerateManifest">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a string of the XML manifest that is associated with the current event source.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Diagnostics.Tracing.EventSource" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases all resources used by the current instance of the <see cref="T:System.Diagnostics.Tracing.EventSource" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Write">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes an event.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IsEnabled">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the current event source is enabled.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

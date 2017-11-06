@@ -38,6 +38,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.FilterLevel" />
+    <altmember cref="P:System.Runtime.Remoting.Channels.BinaryServerFormatterSink.TypeFilterLevel" />
+    <altmember cref="P:System.Runtime.Remoting.Channels.BinaryServerFormatterSinkProvider.TypeFilterLevel" />
+    <altmember cref="P:System.Runtime.Remoting.Channels.SoapServerFormatterSink.TypeFilterLevel" />
+    <altmember cref="P:System.Runtime.Remoting.Channels.SoapServerFormatterSinkProvider.TypeFilterLevel" />
   </Docs>
   <Members>
     <Member MemberName="Full">

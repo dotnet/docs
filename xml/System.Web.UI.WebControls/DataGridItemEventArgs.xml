@@ -40,6 +40,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DataGridItemEventHandler" />
+    <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+    <altmember cref="E:System.Web.UI.WebControls.DataGrid.ItemCreated" />
+    <altmember cref="E:System.Web.UI.WebControls.DataGrid.ItemDataBound" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -115,6 +119,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+        <altmember cref="E:System.Web.UI.WebControls.DataGrid.ItemCreated" />
+        <altmember cref="E:System.Web.UI.WebControls.DataGrid.ItemDataBound" />
       </Docs>
     </Member>
   </Members>

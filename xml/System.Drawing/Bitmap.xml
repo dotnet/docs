@@ -46,6 +46,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.PictureBox" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -1068,5 +1069,50 @@
         <exception cref="T:System.Exception">The operation failed.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetHbitmap">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a GDI bitmap object from a GDI+ <see cref="T:System.Drawing.Bitmap" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LockBits">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Locks a <see cref="T:System.Drawing.Bitmap" /> into system memory.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Clone">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a copy of the section of this <see cref="T:System.Drawing.Bitmap" /> defined with a specified <see cref="T:System.Drawing.Imaging.PixelFormat" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="MakeTransparent">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Makes the default transparent color transparent for this <see cref="T:System.Drawing.Bitmap" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Bitmap" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

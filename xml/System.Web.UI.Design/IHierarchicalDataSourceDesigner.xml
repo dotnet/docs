@@ -17,6 +17,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.HierarchicalDataSourceControl" />
   </Docs>
   <Members>
     <Member MemberName="CanConfigure">
@@ -46,6 +47,7 @@
         <block subset="none" type="overrides">
           <para>If you implement the <see cref="T:System.Web.UI.Design.IHierarchicalDataSourceDesigner" /> interface to create your own data source and you do not provide configuration functionality, the <see cref="P:System.Web.UI.Design.IHierarchicalDataSourceDesigner.CanConfigure" /> property should always return <see langword="false" /> and the <see cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.Configure" /> method should raise a <see cref="T:System.NotSupportedException" />.</para>
         </block>
+        <altmember cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.Configure" />
       </Docs>
     </Member>
     <Member MemberName="CanRefreshSchema">
@@ -75,6 +77,7 @@
         <block subset="none" type="overrides">
           <para>If you implement the <see cref="T:System.Web.UI.Design.IHierarchicalDataSourceDesigner" /> interface to create your own data source and the schema will never change, the <see cref="P:System.Web.UI.Design.IHierarchicalDataSourceDesigner.CanRefreshSchema" /> property should always return <see langword="false" /> and the <see cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.RefreshSchema(System.Boolean)" /> method should raise a <see cref="T:System.NotSupportedException" />.</para>
         </block>
+        <altmember cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.RefreshSchema(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="Configure">
@@ -183,6 +186,7 @@
       <Docs>
         <summary>Restores events after calling the <see cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.SuppressDataSourceEvents" /> method.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.SuppressDataSourceEvents" />
       </Docs>
     </Member>
     <Member MemberName="SchemaRefreshed">
@@ -228,6 +232,7 @@
         <block subset="none" type="overrides">
           <para>Typically, you would call the <see cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.SuppressDataSourceEvents" /> method when opening a dialog box, such as with the <see cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.Configure" /> method, or during a call to the <see cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.RefreshSchema(System.Boolean)" /> method, if building the schema requires multiple processes, any of which might create an exception. After processing is finished, call the <see cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.ResumeDataSourceEvents" /> method.</para>
         </block>
+        <altmember cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.ResumeDataSourceEvents" />
       </Docs>
     </Member>
   </Members>

@@ -243,6 +243,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">to execute this method without raising of an exception. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+        <altmember cref="P:System.Windows.Window.Owner" />
       </Docs>
     </Member>
     <Member MemberName="Tag">

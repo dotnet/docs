@@ -69,6 +69,7 @@
         <summary>Gets the collection of child elements of the <see cref="T:System.Windows.Controls.GroupItem" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.GroupItemAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetChildren" />.</summary>
         <returns>The collection of child elements.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.GetChildrenCore" />
       </Docs>
     </Member>
     <Member MemberName="GetClassNameCore">

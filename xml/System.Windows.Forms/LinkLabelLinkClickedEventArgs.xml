@@ -29,6 +29,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="E:System.Windows.Forms.LinkLabel.LinkClicked" />
+    <altmember cref="T:System.Windows.Forms.LinkLabel" />
+    <altmember cref="T:System.Windows.Forms.LinkLabel.Link" />
+    <altmember cref="T:System.Windows.Forms.LinkLabelLinkClickedEventHandler" />
+    <altmember cref="M:System.Windows.Forms.LinkLabel.OnLinkClicked(System.Windows.Forms.LinkLabelLinkClickedEventArgs)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -47,6 +52,7 @@
         <param name="link">The <see cref="T:System.Windows.Forms.LinkLabel.Link" /> that was clicked.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.LinkLabelLinkClickedEventArgs" /> class with the specified link.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.LinkLabel.Link" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -126,7 +132,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.LinkLabel.Link" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.LinkLabelLinkClickedEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

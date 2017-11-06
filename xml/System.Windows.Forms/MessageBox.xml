@@ -35,6 +35,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Windows.Forms.MessageBox.Show(System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton,System.Windows.Forms.MessageBoxOptions,System.Boolean)" />
   </Docs>
   <Members>
     <Member MemberName="Show">
@@ -184,6 +185,7 @@
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="buttons" /> parameter specified is not a member of <see cref="T:System.Windows.Forms.MessageBoxButtons" />.</exception>
         <exception cref="T:System.InvalidOperationException">An attempt was made to display the <see cref="T:System.Windows.Forms.MessageBox" /> in a process that is not running in User Interactive mode. This is specified by the <see cref="P:System.Windows.Forms.SystemInformation.UserInteractive" /> property.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for safe subwindows to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" /></permission>
+        <altmember cref="T:System.Windows.Forms.MessageBoxButtons" />
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -271,6 +273,8 @@
  The <paramref name="icon" /> parameter specified is not a member of <see cref="T:System.Windows.Forms.MessageBoxIcon" />.</exception>
         <exception cref="T:System.InvalidOperationException">An attempt was made to display the <see cref="T:System.Windows.Forms.MessageBox" /> in a process that is not running in User Interactive mode. This is specified by the <see cref="P:System.Windows.Forms.SystemInformation.UserInteractive" /> property.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for safe subwindows to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" /></permission>
+        <altmember cref="T:System.Windows.Forms.MessageBoxButtons" />
+        <altmember cref="T:System.Windows.Forms.MessageBoxIcon" />
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -321,6 +325,7 @@
           <paramref name="buttons" /> is not a member of <see cref="T:System.Windows.Forms.MessageBoxButtons" />.</exception>
         <exception cref="T:System.InvalidOperationException">An attempt was made to display the <see cref="T:System.Windows.Forms.MessageBox" /> in a process that is not running in User Interactive mode. This is specified by the <see cref="P:System.Windows.Forms.SystemInformation.UserInteractive" /> property.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for safe subwindows to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" /></permission>
+        <altmember cref="T:System.Windows.Forms.MessageBoxButtons" />
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -379,6 +384,9 @@
  <paramref name="defaultButton" /> is not a member of <see cref="T:System.Windows.Forms.MessageBoxDefaultButton" />.</exception>
         <exception cref="T:System.InvalidOperationException">An attempt was made to display the <see cref="T:System.Windows.Forms.MessageBox" /> in a process that is not running in User Interactive mode. This is specified by the <see cref="P:System.Windows.Forms.SystemInformation.UserInteractive" /> property.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for safe subwindows to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" /></permission>
+        <altmember cref="T:System.Windows.Forms.MessageBoxButtons" />
+        <altmember cref="T:System.Windows.Forms.MessageBoxIcon" />
+        <altmember cref="T:System.Windows.Forms.MessageBoxDefaultButton" />
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -435,6 +443,8 @@
  <paramref name="icon" /> is not a member of <see cref="T:System.Windows.Forms.MessageBoxIcon" />.</exception>
         <exception cref="T:System.InvalidOperationException">An attempt was made to display the <see cref="T:System.Windows.Forms.MessageBox" /> in a process that is not running in User Interactive mode. This is specified by the <see cref="P:System.Windows.Forms.SystemInformation.UserInteractive" /> property.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for safe subwindows to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" /></permission>
+        <altmember cref="T:System.Windows.Forms.MessageBoxButtons" />
+        <altmember cref="T:System.Windows.Forms.MessageBoxIcon" />
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -501,6 +511,10 @@
   
  <paramref name="buttons" /> specified an invalid combination of <see cref="T:System.Windows.Forms.MessageBoxButtons" />.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for safe subwindows to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" /></permission>
+        <altmember cref="T:System.Windows.Forms.MessageBoxButtons" />
+        <altmember cref="T:System.Windows.Forms.MessageBoxIcon" />
+        <altmember cref="T:System.Windows.Forms.MessageBoxDefaultButton" />
+        <altmember cref="T:System.Windows.Forms.MessageBoxOptions" />
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -563,6 +577,9 @@
  <paramref name="defaultButton" /> is not a member of <see cref="T:System.Windows.Forms.MessageBoxDefaultButton" />.</exception>
         <exception cref="T:System.InvalidOperationException">An attempt was made to display the <see cref="T:System.Windows.Forms.MessageBox" /> in a process that is not running in User Interactive mode. This is specified by the <see cref="P:System.Windows.Forms.SystemInformation.UserInteractive" /> property.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for safe subwindows to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" /></permission>
+        <altmember cref="T:System.Windows.Forms.MessageBoxButtons" />
+        <altmember cref="T:System.Windows.Forms.MessageBoxIcon" />
+        <altmember cref="T:System.Windows.Forms.MessageBoxDefaultButton" />
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -637,6 +654,10 @@
   
  <paramref name="buttons" /> specified an invalid combination of <see cref="T:System.Windows.Forms.MessageBoxButtons" />.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for safe subwindows to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" /></permission>
+        <altmember cref="T:System.Windows.Forms.MessageBoxButtons" />
+        <altmember cref="T:System.Windows.Forms.MessageBoxIcon" />
+        <altmember cref="T:System.Windows.Forms.MessageBoxDefaultButton" />
+        <altmember cref="T:System.Windows.Forms.MessageBoxOptions" />
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -714,6 +735,10 @@
         <permission cref="T:System.Security.Permissions.UIPermission">for safe subwindows to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" /></permission>
         <permission cref="T:System.Net.WebPermission">to access a HTML help file through a HTTP request. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Connect" /></permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to access a HTML help file not served from a HTTP server. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="T:System.Windows.Forms.MessageBoxButtons" />
+        <altmember cref="T:System.Windows.Forms.MessageBoxIcon" />
+        <altmember cref="T:System.Windows.Forms.MessageBoxDefaultButton" />
+        <altmember cref="T:System.Windows.Forms.MessageBoxOptions" />
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -788,6 +813,10 @@
   
  <paramref name="buttons" /> specified an invalid combination of <see cref="T:System.Windows.Forms.MessageBoxButtons" />.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for safe subwindows to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" /></permission>
+        <altmember cref="T:System.Windows.Forms.MessageBoxButtons" />
+        <altmember cref="T:System.Windows.Forms.MessageBoxIcon" />
+        <altmember cref="T:System.Windows.Forms.MessageBoxDefaultButton" />
+        <altmember cref="T:System.Windows.Forms.MessageBoxOptions" />
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -865,6 +894,10 @@
         <permission cref="T:System.Security.Permissions.UIPermission">for safe subwindows to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" /></permission>
         <permission cref="T:System.Net.WebPermission">to access a HTML help file through a HTTP request. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Connect" /></permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to access a HTML help file not served from a HTTP server. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="T:System.Windows.Forms.MessageBoxButtons" />
+        <altmember cref="T:System.Windows.Forms.MessageBoxIcon" />
+        <altmember cref="T:System.Windows.Forms.MessageBoxDefaultButton" />
+        <altmember cref="T:System.Windows.Forms.MessageBoxOptions" />
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -946,6 +979,10 @@
         <permission cref="T:System.Security.Permissions.UIPermission">for safe subwindows to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" /></permission>
         <permission cref="T:System.Net.WebPermission">to access a HTML help file through a HTTP request. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Connect" /></permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to access a HTML help file not served from a HTTP server. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="T:System.Windows.Forms.MessageBoxButtons" />
+        <altmember cref="T:System.Windows.Forms.MessageBoxIcon" />
+        <altmember cref="T:System.Windows.Forms.MessageBoxDefaultButton" />
+        <altmember cref="T:System.Windows.Forms.MessageBoxOptions" />
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -1025,6 +1062,10 @@
         <permission cref="T:System.Security.Permissions.UIPermission">for safe subwindows to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" /></permission>
         <permission cref="T:System.Net.WebPermission">to access a HTML help file through a HTTP request. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Connect" /></permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to access a HTML help file not served from a HTTP server. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="T:System.Windows.Forms.MessageBoxButtons" />
+        <altmember cref="T:System.Windows.Forms.MessageBoxIcon" />
+        <altmember cref="T:System.Windows.Forms.MessageBoxDefaultButton" />
+        <altmember cref="T:System.Windows.Forms.MessageBoxOptions" />
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -1110,6 +1151,10 @@
         <permission cref="T:System.Security.Permissions.UIPermission">for safe subwindows to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" /></permission>
         <permission cref="T:System.Net.WebPermission">to access a HTML help file through a HTTP request. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Connect" /></permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to access a HTML help file not served from a HTTP server. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="T:System.Windows.Forms.MessageBoxButtons" />
+        <altmember cref="T:System.Windows.Forms.MessageBoxIcon" />
+        <altmember cref="T:System.Windows.Forms.MessageBoxDefaultButton" />
+        <altmember cref="T:System.Windows.Forms.MessageBoxOptions" />
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -1189,6 +1234,10 @@
         <permission cref="T:System.Security.Permissions.UIPermission">for safe subwindows to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" /></permission>
         <permission cref="T:System.Net.WebPermission">to access a HTML help file through a HTTP request. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Connect" /></permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to access a HTML help file not served from a HTTP server. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="T:System.Windows.Forms.MessageBoxButtons" />
+        <altmember cref="T:System.Windows.Forms.MessageBoxIcon" />
+        <altmember cref="T:System.Windows.Forms.MessageBoxDefaultButton" />
+        <altmember cref="T:System.Windows.Forms.MessageBoxOptions" />
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -1272,6 +1321,10 @@
         <permission cref="T:System.Security.Permissions.UIPermission">for safe subwindows to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" /></permission>
         <permission cref="T:System.Net.WebPermission">to access a HTML help file through a HTTP request. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Connect" /></permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to access a HTML help file not served from a HTTP server. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="T:System.Windows.Forms.MessageBoxButtons" />
+        <altmember cref="T:System.Windows.Forms.MessageBoxIcon" />
+        <altmember cref="T:System.Windows.Forms.MessageBoxDefaultButton" />
+        <altmember cref="T:System.Windows.Forms.MessageBoxOptions" />
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -1359,7 +1412,20 @@
         <permission cref="T:System.Security.Permissions.UIPermission">for safe subwindows to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" /></permission>
         <permission cref="T:System.Net.WebPermission">to access a HTML help file through a HTTP request. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Connect" /></permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to access a HTML help file not served from a HTTP server. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="T:System.Windows.Forms.MessageBoxButtons" />
+        <altmember cref="T:System.Windows.Forms.MessageBoxIcon" />
+        <altmember cref="T:System.Windows.Forms.MessageBoxDefaultButton" />
+        <altmember cref="T:System.Windows.Forms.MessageBoxOptions" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Show">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Displays a message box.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

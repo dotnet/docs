@@ -126,6 +126,9 @@ this->BindingContext->get_Item(dataSet1->Customers)->Position = 1;
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.BindingManagerBase" />
+    <altmember cref="T:System.Windows.Forms.Binding" />
+    <altmember cref="T:System.Windows.Forms.BindingsCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -157,6 +160,7 @@ this->BindingContext->get_Item(dataSet1->Customers)->Position = 1;
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.BindingManagerBase" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -319,6 +323,7 @@ this->BindingContext->get_Item(dataSet1->Customers)->Position = 1;
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.BindingContext.Item(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -362,6 +367,7 @@ this->BindingContext->get_Item(dataSet1->Customers)->Position = 1;
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.BindingContext.Item(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -431,6 +437,8 @@ this->BindingContext->get_Item(dataSet1->Customers)->Position = 1;
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.BindingsCollection" />
+        <altmember cref="T:System.Windows.Forms.Binding" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -491,6 +499,8 @@ BindingManagerBase bmOrders = this.BindingContext
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">The specified <paramref name="dataMember" /> does not exist within the data source.</exception>
+        <altmember cref="T:System.Windows.Forms.BindingsCollection" />
+        <altmember cref="T:System.Windows.Forms.Binding" />
       </Docs>
     </Member>
     <Member MemberName="OnCollectionChanged">
@@ -738,5 +748,23 @@ BindingManagerBase bmOrders = this.BindingContext
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Contains">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a value indicating whether the <see cref="T:System.Windows.Forms.BindingContext" /> contains the specified <see cref="T:System.Windows.Forms.BindingManagerBase" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Windows.Forms.BindingManagerBase" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

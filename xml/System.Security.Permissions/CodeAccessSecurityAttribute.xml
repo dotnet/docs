@@ -53,6 +53,7 @@
     <block subset="none" type="overrides">
       <para>All permission attributes derived from this class must have only a single constructor that takes a <see cref="T:System.Security.Permissions.SecurityAction" /> as its only parameter.</para>
     </block>
+    <altmember cref="T:System.Security.CodeAccessPermission" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

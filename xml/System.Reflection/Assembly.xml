@@ -98,6 +98,8 @@
     </remarks>
     <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This class cannot be inherited by partially trusted code.</permission>
     <threadsafe>This type is thread safe.</threadsafe>
+    <altmember cref="T:System.AppDomain" />
+    <altmember cref="T:System.Reflection.AssemblyName" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -535,6 +537,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Reflection.Assembly.GetTypes" />
       </Docs>
     </Member>
     <Member MemberName="EntryPoint">
@@ -666,6 +669,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to load an assembly with evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" /></permission>
+        <altmember cref="T:System.Security.Policy.Evidence" />
       </Docs>
     </Member>
     <Member MemberName="ExportedTypes">
@@ -1427,6 +1431,7 @@
           <paramref name="resourceName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="resourceName" /> parameter is an empty string ("").</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <altmember cref="M:System.Reflection.Assembly.GetManifestResourceNames" />
       </Docs>
     </Member>
     <Member MemberName="GetManifestResourceNames">
@@ -1479,6 +1484,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <altmember cref="M:System.Reflection.Assembly.GetManifestResourceStream(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetManifestResourceStream">
@@ -1547,6 +1553,7 @@
           <paramref name="name" /> is not a valid assembly.</exception>
         <exception cref="T:System.NotImplementedException">Resource length is greater than <see cref="F:System.Int64.MaxValue" />.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <altmember cref="M:System.Reflection.Assembly.GetManifestResourceNames" />
       </Docs>
     </Member>
     <Member MemberName="GetManifestResourceStream">
@@ -1605,6 +1612,7 @@
           <paramref name="name" /> is not a valid assembly.</exception>
         <exception cref="T:System.NotImplementedException">Resource length is greater than <see cref="F:System.Int64.MaxValue" />.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <altmember cref="M:System.Reflection.Assembly.GetManifestResourceNames" />
       </Docs>
     </Member>
     <Member MemberName="GetModule">
@@ -2645,6 +2653,7 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to read from a file or directory, and for access to the information in the path itself. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /></permission>
         <permission cref="T:System.Net.WebPermission">for reading a URI that does not begin with "file://".</permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to load an assembly with evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" /></permission>
+        <altmember cref="T:System.Reflection.AssemblyName" />
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -2728,6 +2737,8 @@
   
  Version 2.0 or later of the common language runtime is currently loaded and <paramref name="assemblyString" /> was compiled with a later version.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to load an assembly with evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" /></permission>
+        <altmember cref="T:System.Reflection.AssemblyName" />
+        <altmember cref="M:System.Reflection.Assembly.LoadFrom(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -2854,6 +2865,7 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to read from a file or directory, and for access to the information in the path itself. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /></permission>
         <permission cref="T:System.Net.WebPermission">for reading a URI that does not begin with "file://".</permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to load an assembly with evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" /></permission>
+        <altmember cref="T:System.Security.Policy.Evidence" />
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -2926,6 +2938,7 @@
   
  An assembly or module was loaded twice with two different evidences.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to load an assembly with evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" /></permission>
+        <altmember cref="T:System.Security.Policy.Evidence" />
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -3335,6 +3348,7 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">to load an assembly with evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" /></permission>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading a URI that begins with "file://". Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
         <permission cref="T:System.Net.WebPermission">for reading a URI that does not begin with "file://".</permission>
+        <altmember cref="T:System.Security.Policy.Evidence" />
       </Docs>
     </Member>
     <Member MemberName="LoadFrom">
@@ -3690,6 +3704,8 @@
  -or-  
   
  Version 2.0 or later of the common language runtime is currently loaded and <paramref name="partialName" /> was compiled with a later version.</exception>
+        <altmember cref="M:System.Reflection.Assembly.Load(System.String)" />
+        <altmember cref="M:System.Reflection.Assembly.LoadFrom(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="LoadWithPartialName">
@@ -3744,6 +3760,8 @@
   
  Version 2.0 or later of the common language runtime is currently loaded and <paramref name="partialName" /> was compiled with a later version.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling unmanaged code and to load an assembly with evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" /></permission>
+        <altmember cref="M:System.Reflection.Assembly.Load(System.String)" />
+        <altmember cref="M:System.Reflection.Assembly.LoadFrom(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Location">
@@ -4423,5 +4441,147 @@
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetManifestResourceStream">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads the specified manifest resource from this assembly.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReflectionOnlyLoad">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads an assembly into the reflection-only context, where it can be examined but not executed.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetSatelliteAssembly">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the satellite assembly.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetCustomAttributes">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the custom attributes for this assembly.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Load">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads an assembly.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LoadModule">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads the module internal to this assembly.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LoadFrom">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads an assembly.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateInstance">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Locates a type from this assembly and creates an instance of it using the system activator.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetLoadedModules">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets all the loaded modules that are part of this assembly.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetModules">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets all the modules that are part of this assembly.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetType">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Type" /> object that represents the specified type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LoadFile">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads the contents of an assembly file.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetFiles">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the files in the file table of an assembly manifest.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetName">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets an <see cref="T:System.Reflection.AssemblyName" /> for this assembly.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

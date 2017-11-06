@@ -70,6 +70,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Input.KeyBinding" />
+    <altmember cref="T:System.Windows.Input.MouseBinding" />
+    <altmember cref="T:System.Windows.Input.RoutedCommand" />
+    <altmember cref="T:System.Windows.Input.CommandBinding" />
+    <altmember cref="T:System.Windows.Input.MouseGesture" />
+    <altmember cref="T:System.Windows.Input.InputBinding" />
+    <altmember cref="T:System.Windows.Input.InputGesture" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -107,6 +114,7 @@
           <paramref name="key" /> is not a valid <see cref="T:System.Windows.Input.Key" />.</exception>
         <exception cref="T:System.NotSupportedException">
           <paramref name="key" /> is not a valid <see cref="T:System.Windows.Input.KeyGesture" />.</exception>
+        <altmember cref="T:System.Windows.Input.KeyBinding" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -150,6 +158,13 @@
  <paramref name="key" /> is not a valid <see cref="T:System.Windows.Input.Key" />.</exception>
         <exception cref="T:System.NotSupportedException">
           <paramref name="key" /> and <paramref name="modifiers" /> do not form a valid <see cref="T:System.Windows.Input.KeyGesture" />.</exception>
+        <altmember cref="T:System.Windows.Input.KeyBinding" />
+        <altmember cref="T:System.Windows.Input.MouseBinding" />
+        <altmember cref="T:System.Windows.Input.RoutedCommand" />
+        <altmember cref="T:System.Windows.Input.CommandBinding" />
+        <altmember cref="T:System.Windows.Input.MouseGesture" />
+        <altmember cref="T:System.Windows.Input.InputBinding" />
+        <altmember cref="T:System.Windows.Input.InputGesture" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -189,6 +204,7 @@
           <paramref name="displayString" /> is <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">
           <paramref name="key" /> and <paramref name="modifiers" /> do not form a valid <see cref="T:System.Windows.Input.KeyGesture" />.</exception>
+        <altmember cref="T:System.Windows.Input.KeyBinding" />
       </Docs>
     </Member>
     <Member MemberName="DisplayString">
@@ -216,6 +232,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.KeyBinding" />
       </Docs>
     </Member>
     <Member MemberName="GetDisplayStringForCulture">
@@ -245,6 +262,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.KeyBinding" />
       </Docs>
     </Member>
     <Member MemberName="Key">
@@ -270,6 +288,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.KeyBinding" />
+        <altmember cref="T:System.Windows.Input.MouseBinding" />
+        <altmember cref="T:System.Windows.Input.RoutedCommand" />
+        <altmember cref="T:System.Windows.Input.CommandBinding" />
+        <altmember cref="T:System.Windows.Input.MouseGesture" />
       </Docs>
     </Member>
     <Member MemberName="Matches">
@@ -335,7 +358,21 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.KeyBinding" />
+        <altmember cref="T:System.Windows.Input.MouseBinding" />
+        <altmember cref="T:System.Windows.Input.RoutedCommand" />
+        <altmember cref="T:System.Windows.Input.CommandBinding" />
+        <altmember cref="T:System.Windows.Input.MouseGesture" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.KeyGesture" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

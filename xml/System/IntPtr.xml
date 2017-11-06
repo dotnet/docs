@@ -78,6 +78,7 @@
  ]]></format>
     </remarks>
     <threadsafe>This type is thread safe.</threadsafe>
+    <altmember cref="T:System.UIntPtr" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -198,6 +199,7 @@
         <summary>Initializes a new instance of <see cref="T:System.IntPtr" /> using the specified pointer to an unspecified type.</summary>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="T:System.Void" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -257,6 +259,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IntPtr.op_Addition(System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -381,6 +384,7 @@
   
  The equivalent method for this operator is <xref:System.IntPtr.Add%28System.IntPtr%2CSystem.Int32%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <altmember cref="M:System.IntPtr.Add(System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -467,6 +471,7 @@
         <returns>A new instance of <see cref="T:System.IntPtr" /> initialized to <paramref name="value" />.</returns>
         <remarks>
         </remarks>
+        <altmember cref="Overload:System.IntPtr.#ctor" />
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -509,6 +514,7 @@
         <remarks>
         </remarks>
         <exception cref="T:System.OverflowException">On a 32-bit platform, <paramref name="value" /> is too large to represent as an <see cref="T:System.IntPtr" />.</exception>
+        <altmember cref="Overload:System.IntPtr.#ctor" />
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -551,6 +557,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.OverflowException">On a 64-bit platform, the value of <paramref name="value" /> is too large to represent as a 32-bit signed integer.</exception>
+        <altmember cref="M:System.IntPtr.ToInt32" />
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -587,6 +594,7 @@
         <returns>The contents of <paramref name="value" />.</returns>
         <remarks>
         </remarks>
+        <altmember cref="M:System.IntPtr.ToInt64" />
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -630,6 +638,7 @@
         <returns>The contents of <paramref name="value" />.</returns>
         <remarks>
         </remarks>
+        <altmember cref="M:System.IntPtr.ToPointer" />
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -677,6 +686,7 @@
         <remarks>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="Overload:System.IntPtr.#ctor" />
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -778,6 +788,7 @@
   
  The equivalent method for this operator is <xref:System.IntPtr.Subtract%28System.IntPtr%2CSystem.Int32%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <altmember cref="M:System.IntPtr.Subtract(System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Size">
@@ -873,6 +884,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IntPtr.op_Subtraction(System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="System.IEquatable&lt;System.IntPtr&gt;.Equals">
@@ -1157,6 +1169,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Globalization.CultureInfo.InvariantCulture" />
       </Docs>
     </Member>
     <Member MemberName="Zero">
@@ -1211,5 +1224,44 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="op_Explicit">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a specified data type to an <see cref="T:System.IntPtr" /> value, or an <see cref="T:System.IntPtr" /> value to a specified data type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the numeric value of the current <see cref="T:System.IntPtr" /> object to its equivalent string representation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of <see cref="T:System.IntPtr" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -199,6 +199,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.DataGridCell.Selected" />
+        <altmember cref="E:System.Windows.Controls.DataGridCell.Unselected" />
       </Docs>
     </Member>
     <Member MemberName="IsSelectedProperty">
@@ -524,6 +526,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.DataGridCell.Unselected" />
+        <altmember cref="P:System.Windows.Controls.DataGridCell.IsSelected" />
       </Docs>
     </Member>
     <Member MemberName="SelectedEvent">
@@ -565,6 +569,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.DataGridCell.Selected" />
+        <altmember cref="P:System.Windows.Controls.DataGridCell.IsSelected" />
       </Docs>
     </Member>
     <Member MemberName="UnselectedEvent">

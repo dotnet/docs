@@ -25,6 +25,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.Viewport3D" />
+    <altmember cref="T:System.Windows.Media.DrawingVisual" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -437,5 +439,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="HitTest">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Return the topmost visual object of a hit test.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

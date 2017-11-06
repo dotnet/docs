@@ -23,6 +23,7 @@
   <Docs>
     <summary>Provides enumeration functionality for the <see cref="T:System.Security.Cryptography.CryptographicAttributeObjectCollection" /> collection. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Security.Cryptography.CryptographicAttributeObjectCollection" />
   </Docs>
   <Members>
     <Member MemberName="Current">
@@ -47,6 +48,8 @@
         <summary>Gets the current <see cref="T:System.Security.Cryptography.CryptographicAttributeObject" /> object from the <see cref="T:System.Security.Cryptography.CryptographicAttributeObjectCollection" /> collection.</summary>
         <value>A <see cref="T:System.Security.Cryptography.CryptographicAttributeObject" /> object that represents the current cryptographic attribute in the <see cref="T:System.Security.Cryptography.CryptographicAttributeObjectCollection" /> collection.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Security.Cryptography.CryptographicAttributeObject" />
+        <altmember cref="T:System.Security.Cryptography.CryptographicAttributeObjectCollection" />
       </Docs>
     </Member>
     <Member MemberName="MoveNext">
@@ -73,6 +76,8 @@
         <returns>
           <see langword="true" /> if the enumeration successfully moved to the next <see cref="T:System.Security.Cryptography.CryptographicAttributeObject" /> object; <see langword="false" /> if the enumerator is at the end of the enumeration.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Security.Cryptography.CryptographicAttributeObject" />
+        <altmember cref="T:System.Security.Cryptography.CryptographicAttributeObjectCollection" />
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -97,6 +102,8 @@
       <Docs>
         <summary>Resets the enumeration to the first <see cref="T:System.Security.Cryptography.CryptographicAttributeObject" /> object in the <see cref="T:System.Security.Cryptography.CryptographicAttributeObjectCollection" /> collection.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Security.Cryptography.CryptographicAttributeObject" />
+        <altmember cref="T:System.Security.Cryptography.CryptographicAttributeObjectCollection" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerator.Current">

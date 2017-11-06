@@ -427,5 +427,23 @@
         <exception cref="T:System.Runtime.InteropServices.COMException">An entry point was not found.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>ISymWrapper</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the current instance of the <see cref="T:System.Diagnostics.SymbolStore.SymReader" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetMethod">
+      <AssemblyInfo>
+        <AssemblyName>ISymWrapper</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a symbol reader method object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -96,6 +96,7 @@ Sub TimerCallback(state As Object)
  ]]></format>
     </remarks>
     <threadsafe>This type is thread safe.</threadsafe>
+    <altmember cref="T:System.Threading.TimerCallback" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -675,5 +676,35 @@ Sub TimerCallback(state As Object)
         <exception cref="T:System.ArgumentNullException">The <paramref name="notifyObject" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Change">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Timer</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Changes the start time and the interval between method invocations for a timer.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see langword="Timer" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Timer</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases all resources used by the current instance of <see cref="T:System.Threading.Timer" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

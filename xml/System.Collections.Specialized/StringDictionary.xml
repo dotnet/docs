@@ -57,6 +57,7 @@
  This implementation does not provide a synchronized (thread safe) wrapper for a <see cref="T:System.Collections.Specialized.StringDictionary" />, but derived classes can create their own synchronized versions of the <see cref="T:System.Collections.Specialized.StringDictionary" /> using the <see cref="P:System.Collections.Specialized.StringDictionary.SyncRoot" /> property.  
   
  Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.</threadsafe>
+    <altmember cref="T:System.Collections.Hashtable" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -153,6 +154,7 @@
           <paramref name="key" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">An entry with the same key already exists in the <see cref="T:System.Collections.Specialized.StringDictionary" />.</exception>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.Specialized.StringDictionary" /> is read-only.</exception>
+        <altmember cref="M:System.Collections.Specialized.StringDictionary.Remove(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -674,6 +676,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The key is <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.Specialized.StringDictionary" /> is read-only.</exception>
+        <altmember cref="M:System.Collections.Specialized.StringDictionary.Add(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">

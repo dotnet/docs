@@ -20,6 +20,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Input.KeyboardEventHandler" />
+    <altmember cref="T:System.Windows.Input.KeyEventArgs" />
+    <altmember cref="T:System.Windows.Input.KeyEventHandler" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,6 +43,9 @@
         <param name="timestamp">The time when the input occurred.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.KeyboardEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Input.KeyboardEventHandler" />
+        <altmember cref="T:System.Windows.Input.KeyEventArgs" />
+        <altmember cref="T:System.Windows.Input.KeyEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="InvokeEventHandler">
@@ -88,6 +94,9 @@
         <summary>Gets the keyboard device associated with the input event.</summary>
         <value>The logical keyboard device associated with the event.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Input.KeyboardEventHandler" />
+        <altmember cref="T:System.Windows.Input.KeyEventArgs" />
+        <altmember cref="T:System.Windows.Input.KeyEventHandler" />
       </Docs>
     </Member>
   </Members>

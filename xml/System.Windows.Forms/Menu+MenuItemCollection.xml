@@ -56,6 +56,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.MainMenu" />
+        <altmember cref="T:System.Windows.Forms.ContextMenu" />
+        <altmember cref="T:System.Windows.Forms.MenuItem" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -94,6 +97,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Menu.MenuItemCollection.Remove(System.Windows.Forms.MenuItem)" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -134,6 +138,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Menu.MenuItemCollection.Remove(System.Windows.Forms.MenuItem)" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -178,6 +183,7 @@
         </remarks>
         <exception cref="T:System.Exception">The <see cref="T:System.Windows.Forms.MenuItem" /> being added is already in use.</exception>
         <exception cref="T:System.ArgumentException">The index supplied in the <paramref name="index" /> parameter is larger than the size of the collection.</exception>
+        <altmember cref="M:System.Windows.Forms.Menu.MenuItemCollection.Remove(System.Windows.Forms.MenuItem)" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -223,6 +229,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Menu.MenuItemCollection.Remove(System.Windows.Forms.MenuItem)" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -259,6 +266,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Menu.MenuItemCollection.Remove(System.Windows.Forms.MenuItem)" />
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -296,6 +304,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Menu.MenuItemCollection.Add(System.String)" />
+        <altmember cref="M:System.Windows.Forms.Menu.MenuItemCollection.CopyTo(System.Array,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -330,6 +340,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Menu.MenuItems" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -474,6 +485,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Menu.MenuItems" />
       </Docs>
     </Member>
     <Member MemberName="Find">
@@ -652,6 +664,7 @@
  or  
   
  The <paramref name="index" /> parameter is greater than the number of menu items in the collection, and the collection of menu items is not <see langword="null" />.</exception>
+        <altmember cref="P:System.Windows.Forms.Menu.MenuItemCollection.Count" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -1041,5 +1054,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets an item from the collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a new <see cref="T:System.Windows.Forms.MenuItem" /> to the collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

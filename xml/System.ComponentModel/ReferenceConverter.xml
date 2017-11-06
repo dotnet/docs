@@ -109,6 +109,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.TypeConverter" />
       </Docs>
     </Member>
     <Member MemberName="ConvertFrom">
@@ -152,6 +153,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The conversion cannot be performed.</exception>
+        <altmember cref="T:System.ComponentModel.TypeConverter" />
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -361,6 +363,7 @@
         <block subset="none" type="overrides">
           <para>Override this method when you do not want to add a value to the standard values collection.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.TypeConverter.StandardValuesCollection" />
       </Docs>
     </Member>
   </Members>

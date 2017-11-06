@@ -28,6 +28,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.Design.ControlDesigner.TemplateGroups" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -142,6 +143,7 @@
         <value>
           <see langword="true" /> if there are no templates in the group; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.TemplateDefinition" />
       </Docs>
     </Member>
     <Member MemberName="Templates">
@@ -160,7 +162,18 @@
         <summary>Gets an array of all template definitions in the group.</summary>
         <value>An array of <see cref="T:System.Web.UI.Design.TemplateDefinition" /> objects.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.TemplateDefinition" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.TemplateGroup" /> class.</summary>
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.TemplateGroups" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

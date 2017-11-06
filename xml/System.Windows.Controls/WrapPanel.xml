@@ -30,6 +30,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.Panel" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -45,6 +46,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.WrapPanel" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.WrapPanel" />
       </Docs>
     </Member>
     <Member MemberName="ArrangeOverride">
@@ -67,6 +69,7 @@
         <summary>Arranges the content of a <see cref="T:System.Windows.Controls.WrapPanel" /> element.</summary>
         <returns>The <see cref="T:System.Windows.Size" /> that represents the arranged size of this <see cref="T:System.Windows.Controls.WrapPanel" /> element and its children.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.WrapPanel.MeasureOverride(System.Windows.Size)" />
       </Docs>
     </Member>
     <Member MemberName="ItemHeight">
@@ -153,6 +156,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.WrapPanel.ItemWidth" />
+        <altmember cref="F:System.Windows.Controls.WrapPanel.ItemHeightProperty" />
       </Docs>
     </Member>
     <Member MemberName="ItemHeightProperty">
@@ -256,6 +261,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.WrapPanel.ItemHeight" />
+        <altmember cref="F:System.Windows.Controls.WrapPanel.ItemWidthProperty" />
       </Docs>
     </Member>
     <Member MemberName="ItemWidthProperty">
@@ -295,6 +302,7 @@
         <summary>Measures the child elements of a <see cref="T:System.Windows.Controls.WrapPanel" /> in anticipation of arranging them during the <see cref="M:System.Windows.Controls.WrapPanel.ArrangeOverride(System.Windows.Size)" /> pass.</summary>
         <returns>The <see cref="T:System.Windows.Size" /> that represents the desired size of the element.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.WrapPanel.ArrangeOverride(System.Windows.Size)" />
       </Docs>
     </Member>
     <Member MemberName="Orientation">
@@ -342,6 +350,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Controls.WrapPanel.OrientationProperty" />
       </Docs>
     </Member>
     <Member MemberName="OrientationProperty">

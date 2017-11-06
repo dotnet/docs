@@ -34,6 +34,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Xml.XPath.XPathNavigator" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -225,6 +226,7 @@
         </remarks>
         <exception cref="T:System.Xml.XmlException">An error was encountered in the XML data. The <see cref="T:System.Xml.XPath.XPathDocument" /> remains empty.</exception>
         <exception cref="T:System.ArgumentNullException">The file path parameter or <see cref="T:System.Xml.XmlSpace" /> object parameter is <see langword="null" />.</exception>
+        <altmember cref="T:System.Xml.XmlSpace" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -267,6 +269,7 @@
         </remarks>
         <exception cref="T:System.Xml.XmlException">An error was encountered in the XML data. The <see cref="T:System.Xml.XPath.XPathDocument" /> remains empty.</exception>
         <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Xml.XmlReader" /> object parameter or <see cref="T:System.Xml.XmlSpace" /> object parameter is <see langword="null" />.</exception>
+        <altmember cref="T:System.Xml.XmlSpace" />
       </Docs>
     </Member>
     <Member MemberName="CreateNavigator">
@@ -305,5 +308,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XPath</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.XPath.XPathDocument" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

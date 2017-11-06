@@ -64,6 +64,9 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="T:System.Web.UI.WebControls.Calendar" />
+    <altmember cref="P:System.Web.UI.MobileControls.Calendar.SelectionMode" />
+    <altmember cref="P:System.Web.UI.MobileControls.Calendar.WebCalendar" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -309,6 +312,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.Calendar.SelectionMode" />
       </Docs>
     </Member>
     <Member MemberName="SelectedDates">
@@ -367,6 +371,7 @@
       <Docs>
         <summary>Occurs each time the user selects a day, a week, or a month in the <see cref="T:System.Web.UI.MobileControls.Calendar" /> control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Calendar.OnSelectionChanged" />
       </Docs>
     </Member>
     <Member MemberName="SelectionMode">
@@ -408,6 +413,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The specified value is not one of the <see cref="T:System.Web.UI.WebControls.CalendarSelectionMode" /> values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.CalendarSelectionMode" />
       </Docs>
     </Member>
     <Member MemberName="ShowDayHeader">

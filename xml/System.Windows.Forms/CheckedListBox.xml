@@ -85,6 +85,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ListBox" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -151,6 +152,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.CheckedListBox.CheckedIndexCollection" />
       </Docs>
     </Member>
     <Member MemberName="CheckedItems">
@@ -211,6 +213,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.CheckedListBox.CheckedItemCollection" />
       </Docs>
     </Member>
     <Member MemberName="CheckOnClick">
@@ -348,6 +351,7 @@
         <summary>Creates a new instance of the item collection.</summary>
         <returns>A <see cref="T:System.Windows.Forms.ListBox.ObjectCollection" /> that represents the new item collection.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.ListBox.CreateItemCollection" />
       </Docs>
     </Member>
     <Member MemberName="CreateParams">
@@ -613,6 +617,8 @@
  -or-  
   
  The <paramref name="index" /> specified is greater than or equal to the count of items in the list.</exception>
+        <altmember cref="M:System.Windows.Forms.CheckedListBox.GetItemCheckState(System.Int32)" />
+        <altmember cref="T:System.Windows.Forms.CheckState" />
       </Docs>
     </Member>
     <Member MemberName="GetItemCheckState">
@@ -658,6 +664,8 @@
  -or-  
   
  The <paramref name="index" /> specified is greater than or equal to the count of items in the list.</exception>
+        <altmember cref="M:System.Windows.Forms.CheckedListBox.GetItemChecked(System.Int32)" />
+        <altmember cref="T:System.Windows.Forms.CheckState" />
       </Docs>
     </Member>
     <Member MemberName="ItemCheck">
@@ -777,6 +785,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.CheckedListBox.CheckedItems" />
+        <altmember cref="P:System.Windows.Forms.CheckedListBox.CheckedIndices" />
       </Docs>
     </Member>
     <Member MemberName="MeasureItem">
@@ -876,6 +886,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.BackColorChanged" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnBackColorChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnClick">
@@ -1238,6 +1249,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">An attempt was made to assign a value that is not a <see cref="T:System.Windows.Forms.SelectionMode" /> value of <see langword="One" /> or <see langword="None" />.</exception>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">An attempt was made to assign the <see langword="MultiExtended" /> value of <see cref="T:System.Windows.Forms.SelectionMode" /> to the control.</exception>
+        <altmember cref="T:System.Windows.Forms.SelectionMode" />
       </Docs>
     </Member>
     <Member MemberName="SetItemChecked">
@@ -1334,6 +1346,7 @@
   
  The <paramref name="index" /> is greater than or equal to the count of items in the list.</exception>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="value" /> is not one of the <see cref="T:System.Windows.Forms.CheckState" /> values.</exception>
+        <altmember cref="T:System.Windows.Forms.CheckState" />
       </Docs>
     </Member>
     <Member MemberName="ThreeDCheckBoxes">
@@ -1371,6 +1384,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ButtonState" />
       </Docs>
     </Member>
     <Member MemberName="UseCompatibleTextRendering">
@@ -1404,6 +1418,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Application.SetCompatibleTextRenderingDefault(System.Boolean)" />
+        <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UseCompatibleTextRendering" />
       </Docs>
     </Member>
     <Member MemberName="ValueMember">

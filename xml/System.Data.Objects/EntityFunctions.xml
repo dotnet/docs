@@ -3832,5 +3832,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddDays">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invokes the canonical <see langword="AddDays" /> function. For information about the canonical <see langword="AddDays" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

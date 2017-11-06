@@ -13,6 +13,7 @@
   <Docs>
     <summary>Represents a single filter entry. The filter is used to allow or exclude particular database objects during generation.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="M:System.Data.Entity.Design.EntityStoreSchemaGenerator.GenerateStoreMetadata(System.Collections.Generic.IEnumerable{System.Data.Entity.Design.EntityStoreSchemaFilterEntry})" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -178,5 +179,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Entity.Design.EntityStoreSchemaFilterEntry" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

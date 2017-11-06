@@ -51,6 +51,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.FormView" />
+    <altmember cref="T:System.Web.UI.WebControls.FormViewCommandEventHandler" />
+    <altmember cref="T:System.Web.UI.WebControls.CommandEventArgs" />
+    <altmember cref="E:System.Web.UI.WebControls.FormView.ItemCommand" />
+    <altmember cref="M:System.Web.UI.WebControls.FormView.OnItemCommand(System.Web.UI.WebControls.FormViewCommandEventArgs)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -89,6 +94,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.CommandEventArgs" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandEventArgs.CommandArgument" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandEventArgs.CommandName" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewCommandEventArgs.CommandSource" />
+        <altmember cref="M:System.Web.UI.WebControls.FormView.OnItemCommand(System.Web.UI.WebControls.FormViewCommandEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="CommandSource">
@@ -125,6 +135,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemCommand" />
+        <altmember cref="M:System.Web.UI.WebControls.FormView.OnItemCommand(System.Web.UI.WebControls.FormViewCommandEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Handled">

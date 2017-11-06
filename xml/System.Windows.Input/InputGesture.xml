@@ -22,6 +22,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Input.KeyGesture" />
+    <altmember cref="T:System.Windows.Input.MouseGesture" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -62,6 +64,8 @@
         <returns>
           <see langword="true" /> if the gesture matches the input; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Input.KeyGesture.Matches(System.Object,System.Windows.Input.InputEventArgs)" />
+        <altmember cref="M:System.Windows.Input.MouseGesture.Matches(System.Object,System.Windows.Input.InputEventArgs)" />
       </Docs>
     </Member>
   </Members>

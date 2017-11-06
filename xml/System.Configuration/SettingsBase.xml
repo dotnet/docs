@@ -28,6 +28,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.SettingsContext" />
+    <altmember cref="T:System.Configuration.SettingElement" />
+    <altmember cref="T:System.Configuration.SettingAttribute" />
+    <altmember cref="T:System.Configuration.SettingsProperty" />
+    <altmember cref="T:System.Configuration.SettingsProvider" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -175,6 +180,7 @@
         <exception cref="T:System.Configuration.SettingsPropertyNotFoundException">There are no properties associated with the current object, or the specified property could not be found.</exception>
         <exception cref="T:System.Configuration.SettingsPropertyIsReadOnlyException">An attempt was made to set a read-only property.</exception>
         <exception cref="T:System.Configuration.SettingsPropertyWrongTypeException">The value supplied is of a type incompatible with the settings property, during a set operation.</exception>
+        <altmember cref="P:System.Configuration.SettingsProperty.IsReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -206,6 +212,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Configuration.SettingsBase.PropertyValues" />
+        <altmember cref="T:System.Configuration.SettingsProperty" />
       </Docs>
     </Member>
     <Member MemberName="PropertyValues">

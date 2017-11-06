@@ -58,6 +58,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.Integration.ElementHost" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -74,6 +75,7 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Integration.WindowsFormsHost" /> class.</summary>
         <remarks>To be added.</remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.Demand">for full trust for all callers higher in the call stack. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="T:System.Windows.Forms.Integration.ElementHost" />
       </Docs>
     </Member>
     <Member MemberName="ArrangeOverride">
@@ -96,6 +98,7 @@
         <summary>When implemented in a derived class, positions child elements and determines a size for a <see cref="T:System.Windows.FrameworkElement" />-derived class.</summary>
         <returns>The actual size used.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.FrameworkElement.ArrangeOverride(System.Windows.Size)" />
       </Docs>
     </Member>
     <Member MemberName="Background">
@@ -143,6 +146,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.ElementHost" />
       </Docs>
     </Member>
     <Member MemberName="BackgroundProperty">
@@ -160,6 +164,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Forms.Integration.WindowsFormsHost.Background" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.ElementHost" />
       </Docs>
     </Member>
     <Member MemberName="BuildWindowCore">
@@ -182,6 +187,8 @@
         <summary>Overrides the base class implementation of <see cref="M:System.Windows.Interop.HwndHost.BuildWindowCore(System.Runtime.InteropServices.HandleRef)" /> to build the hosted [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] control.</summary>
         <returns>The window handle for this object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Integration.WindowsFormsHost.DestroyWindowCore(System.Runtime.InteropServices.HandleRef)" />
+        <altmember cref="T:System.Windows.Forms.Integration.ElementHost" />
       </Docs>
     </Member>
     <Member MemberName="Child">
@@ -236,6 +243,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">An attempt was made to assign a top-level form as the hosted control.</exception>
+        <altmember cref="T:System.Windows.Forms.Integration.ElementHost" />
       </Docs>
     </Member>
     <Member MemberName="ChildChanged">
@@ -266,6 +274,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Integration.WindowsFormsHost.Child" />
       </Docs>
     </Member>
     <Member MemberName="DestroyWindowCore">
@@ -287,6 +296,8 @@
         <param name="hwnd">A window handle. This parameter is not used.</param>
         <summary>Overrides <see cref="M:System.Windows.Interop.HwndHost.DestroyWindowCore(System.Runtime.InteropServices.HandleRef)" /> to delete the window containing this object.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Integration.WindowsFormsHost.BuildWindowCore(System.Runtime.InteropServices.HandleRef)" />
+        <altmember cref="T:System.Windows.Forms.Integration.ElementHost" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -342,6 +353,7 @@
  ]]></format>
         </remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.Demand">for full trust for all callers higher in the call stack. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="M:System.Windows.Forms.Integration.ElementHost.EnableModelessKeyboardInterop(System.Windows.Window)" />
       </Docs>
     </Member>
     <Member MemberName="FontFamily">
@@ -389,6 +401,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.FontFamily" />
+        <altmember cref="T:System.Windows.Forms.Integration.ElementHost" />
       </Docs>
     </Member>
     <Member MemberName="FontFamilyProperty">
@@ -406,6 +420,8 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Forms.Integration.WindowsFormsHost.FontFamily" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.FontFamily" />
+        <altmember cref="T:System.Windows.Forms.Integration.ElementHost" />
       </Docs>
     </Member>
     <Member MemberName="FontSize">
@@ -451,6 +467,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.ElementHost" />
       </Docs>
     </Member>
     <Member MemberName="FontSizeProperty">
@@ -468,6 +485,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Forms.Integration.WindowsFormsHost.FontSize" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.ElementHost" />
       </Docs>
     </Member>
     <Member MemberName="FontStyle">
@@ -513,6 +531,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.FontStyle" />
+        <altmember cref="T:System.Windows.Forms.Integration.ElementHost" />
       </Docs>
     </Member>
     <Member MemberName="FontStyleProperty">
@@ -530,6 +550,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Forms.Integration.WindowsFormsHost.FontStyle" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.ElementHost" />
       </Docs>
     </Member>
     <Member MemberName="FontWeight">
@@ -575,6 +596,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.FontWeight" />
+        <altmember cref="T:System.Windows.Forms.Integration.ElementHost" />
       </Docs>
     </Member>
     <Member MemberName="FontWeightProperty">
@@ -592,6 +615,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Forms.Integration.WindowsFormsHost.FontWeight" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.ElementHost" />
       </Docs>
     </Member>
     <Member MemberName="Foreground">
@@ -637,6 +661,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Brush" />
+        <altmember cref="T:System.Windows.Forms.Integration.ElementHost" />
       </Docs>
     </Member>
     <Member MemberName="ForegroundProperty">
@@ -654,6 +680,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Forms.Integration.WindowsFormsHost.Foreground" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.ElementHost" />
       </Docs>
     </Member>
     <Member MemberName="LayoutError">
@@ -684,6 +711,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.LayoutExceptionEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="MeasureOverride">
@@ -713,6 +741,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.ElementHost" />
       </Docs>
     </Member>
     <Member MemberName="OnCreateAutomationPeer">
@@ -760,6 +789,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.ElementHost" />
       </Docs>
     </Member>
     <Member MemberName="Padding">
@@ -812,6 +842,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Thickness" />
       </Docs>
     </Member>
     <Member MemberName="PaddingProperty">
@@ -862,6 +893,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.PropertyMap" />
       </Docs>
     </Member>
     <Member MemberName="ScaleChild">
@@ -943,6 +975,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.ElementHost" />
       </Docs>
     </Member>
     <Member MemberName="TabIndexProperty">
@@ -960,6 +993,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Forms.Integration.WindowsFormsHost.TabIndex" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.ElementHost" />
       </Docs>
     </Member>
     <Member MemberName="TabInto">
@@ -992,6 +1026,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.ElementHost" />
       </Docs>
     </Member>
     <Member MemberName="WndProc">

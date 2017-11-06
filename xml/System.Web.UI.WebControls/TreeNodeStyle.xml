@@ -55,6 +55,15 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+    <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+    <altmember cref="T:System.Web.UI.WebControls.Style" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeView.HoverNodeStyle" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeView.LeafNodeStyle" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeView.NodeStyle" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeView.ParentNodeStyle" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeView.RootNodeStyle" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeView.SelectedNodeStyle" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -70,6 +79,8 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.TreeNodeStyle" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeNodeStyleCollection" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.LevelStyles" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -95,6 +106,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeNodeStyle" />
+        <altmember cref="T:System.Web.UI.StateBag" />
       </Docs>
     </Member>
     <Member MemberName="ChildNodesPadding">
@@ -144,6 +157,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The selected value is of type <see cref="F:System.Web.UI.WebControls.UnitType.Percentage" /> or is less than <see langword="0" />.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeStyle.HorizontalPadding" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeStyle.NodeSpacing" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeStyle.VerticalPadding" />
       </Docs>
     </Member>
     <Member MemberName="CopyFrom">
@@ -185,6 +201,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeStyle.MergeWith(System.Web.UI.WebControls.Style)" />
       </Docs>
     </Member>
     <Member MemberName="FillStyleAttributes">
@@ -252,6 +270,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The selected value is of type <see cref="F:System.Web.UI.WebControls.UnitType.Percentage" /> or is less than <see langword="0" />.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeStyle.ChildNodesPadding" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeStyle.NodeSpacing" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeStyle.VerticalPadding" />
       </Docs>
     </Member>
     <Member MemberName="ImageUrl">
@@ -296,6 +317,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The selected value is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.TreeNodeStyle" />
       </Docs>
     </Member>
     <Member MemberName="MergeWith">
@@ -335,6 +357,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeStyle.CopyFrom(System.Web.UI.WebControls.Style)" />
       </Docs>
     </Member>
     <Member MemberName="NodeSpacing">
@@ -381,6 +405,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The selected value is of type <see cref="F:System.Web.UI.WebControls.UnitType.Percentage" /> or is less than <see langword="0" />.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeStyle.ChildNodesPadding" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeStyle.HorizontalPadding" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeStyle.VerticalPadding" />
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -414,6 +441,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeStyle.CopyFrom(System.Web.UI.WebControls.Style)" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeStyle.MergeWith(System.Web.UI.WebControls.Style)" />
       </Docs>
     </Member>
     <Member MemberName="VerticalPadding">
@@ -458,7 +487,21 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The selected value is of type <see cref="F:System.Web.UI.WebControls.UnitType.Percentage" /> or is less than <see langword="0" />.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeStyle.ChildNodesPadding" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeStyle.HorizontalPadding" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeStyle.NodeSpacing" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.TreeNodeStyle" /> class.</summary>
+        <altmember cref="T:System.Web.UI.WebControls.TreeNodeStyleCollection" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.LevelStyles" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

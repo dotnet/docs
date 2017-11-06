@@ -18,6 +18,10 @@
     <summary>Represents items added to the .NET script engine. This includes code items, reference items, and global items.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.VsaItems" />
+    <altmember cref="T:Microsoft.Vsa.IVsaItems" />
+    <altmember cref="T:Microsoft.Vsa.VsaItemType" />
+    <altmember cref="T:Microsoft.Vsa.VsaItemFlag" />
   </Docs>
   <Members>
     <Member MemberName="flag">
@@ -36,6 +40,10 @@
         <summary>Specifies the type of the item as <see cref="F:Microsoft.Vsa.VsaItemFlag.Class" />, <see cref="F:Microsoft.Vsa.VsaItemFlag.Module" />, or <see cref="F:Microsoft.Vsa.VsaItemFlag.None" />.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.VsaItems" />
+        <altmember cref="T:Microsoft.Vsa.IVsaItem" />
+        <altmember cref="T:Microsoft.Vsa.IVsaItems" />
+        <altmember cref="T:Microsoft.Vsa.VsaItemType" />
       </Docs>
     </Member>
     <Member MemberName="GetOption">
@@ -59,6 +67,11 @@
         <returns>The value of the **codebase** option.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.VsaItems" />
+        <altmember cref="T:Microsoft.Vsa.IVsaItem" />
+        <altmember cref="T:Microsoft.Vsa.IVsaItems" />
+        <altmember cref="T:Microsoft.Vsa.VsaItemType" />
+        <altmember cref="T:Microsoft.Vsa.VsaItemFlag" />
       </Docs>
     </Member>
     <Member MemberName="isDirty">
@@ -77,6 +90,11 @@
         <summary>Specifies whether the current in-memory representation of the item differs from the persisted representation.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.VsaItems" />
+        <altmember cref="T:Microsoft.Vsa.IVsaItem" />
+        <altmember cref="T:Microsoft.Vsa.IVsaItems" />
+        <altmember cref="T:Microsoft.Vsa.VsaItemType" />
+        <altmember cref="T:Microsoft.Vsa.VsaItemFlag" />
       </Docs>
     </Member>
     <Member MemberName="IsDirty">
@@ -97,6 +115,11 @@
           <see langword="true" /> if the in-memory representation differs from the persisted representation; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.VsaItems" />
+        <altmember cref="T:Microsoft.Vsa.IVsaItem" />
+        <altmember cref="T:Microsoft.Vsa.IVsaItems" />
+        <altmember cref="T:Microsoft.Vsa.VsaItemType" />
+        <altmember cref="T:Microsoft.Vsa.VsaItemFlag" />
       </Docs>
     </Member>
     <Member MemberName="ItemType">
@@ -116,6 +139,10 @@
         <value>One of the enumeration values. The value indicates the type of the item.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.VsaItems" />
+        <altmember cref="T:Microsoft.Vsa.IVsaItem" />
+        <altmember cref="T:Microsoft.Vsa.IVsaItems" />
+        <altmember cref="T:Microsoft.Vsa.VsaItemFlag" />
       </Docs>
     </Member>
     <Member MemberName="name">
@@ -134,6 +161,11 @@
         <summary>Specifies the name of the item.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.VsaItems" />
+        <altmember cref="T:Microsoft.Vsa.IVsaItem" />
+        <altmember cref="T:Microsoft.Vsa.IVsaItems" />
+        <altmember cref="T:Microsoft.Vsa.VsaItemType" />
+        <altmember cref="T:Microsoft.Vsa.VsaItemFlag" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -153,6 +185,11 @@
         <value>The string literal name of the item.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.VsaItems" />
+        <altmember cref="T:Microsoft.Vsa.IVsaItem" />
+        <altmember cref="T:Microsoft.Vsa.IVsaItems" />
+        <altmember cref="T:Microsoft.Vsa.VsaItemType" />
+        <altmember cref="T:Microsoft.Vsa.VsaItemFlag" />
       </Docs>
     </Member>
     <Member MemberName="SetOption">
@@ -177,6 +214,11 @@
         <summary>Sets the **codebase** option.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.VsaItems" />
+        <altmember cref="T:Microsoft.Vsa.IVsaItem" />
+        <altmember cref="T:Microsoft.Vsa.IVsaItems" />
+        <altmember cref="T:Microsoft.Vsa.VsaItemType" />
+        <altmember cref="T:Microsoft.Vsa.VsaItemFlag" />
       </Docs>
     </Member>
     <Member MemberName="type">
@@ -195,6 +237,10 @@
         <summary>Specifies the type of the item as <see cref="F:Microsoft.Vsa.VsaItemType.Code" />, <see cref="F:Microsoft.Vsa.VsaItemType.Reference" />, or <see cref="F:Microsoft.Vsa.VsaItemType.AppGlobal" />.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.VsaItems" />
+        <altmember cref="T:Microsoft.Vsa.IVsaItem" />
+        <altmember cref="T:Microsoft.Vsa.IVsaItems" />
+        <altmember cref="T:Microsoft.Vsa.VsaItemFlag" />
       </Docs>
     </Member>
   </Members>

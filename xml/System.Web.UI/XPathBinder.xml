@@ -152,6 +152,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="container" /> or <paramref name="xpath" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The object specified by <paramref name="container" /> is not an <see cref="T:System.Xml.XPath.IXPathNavigable" /> object.</exception>
+        <altmember cref="M:System.Web.UI.Control.DataBind" />
+        <altmember cref="T:System.Web.UI.DataBinding" />
       </Docs>
     </Member>
     <Member MemberName="Eval">
@@ -394,5 +396,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Eval">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Parses and evaluates an XPath data-binding expression against an <see cref="T:System.Xml.XPath.IXPathNavigable" /> object at run time.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

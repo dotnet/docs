@@ -81,7 +81,7 @@ This requirement is usually met by explicitly exiting the switch section by usin
 
 ## Case labels
 
- Each case label specifies a pattern to compare to the match expression (the `caseSwitch` variable in the previous examples). If they match, control is transferred to the switch section that contains the **first** matching case label. If no case label pattern matches the match expression, control is transfered to the section with the `default` case label, if there is one. If there is no `default` case, no statements in any switch section are executed, and control is transferred outside the `switch` statement.
+ Each case label specifies a pattern to compare to the match expression (the `caseSwitch` variable in the previous examples). If they match, control is transferred to the switch section that contains the **first** matching case label. If no case label pattern matches the match expression, control is transferred to the section with the `default` case label, if there is one. If there is no `default` case, no statements in any switch section are executed, and control is transferred outside the `switch` statement.
 
  For information on the `switch` statement and pattern matching, see the [Pattern matching with the `switch` statement](#pattern) section.
 
@@ -186,7 +186,7 @@ Starting with C# 7, because case statements need not be mutually exclusive, you 
 Note that the `when` clause in the example that attempts to test whether a `Shape` object is `null` does not execute. The correct type pattern to test for a `null` is `case null:`.
 
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
+ [!INCLUDE[CSharplangspec](../../../../includes/csharplangspec-md.md)]  
   
 ## See Also  
 

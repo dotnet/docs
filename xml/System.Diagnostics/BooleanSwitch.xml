@@ -80,6 +80,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Diagnostics.Switch" />
+    <altmember cref="T:System.Diagnostics.TraceSwitch" />
+    <altmember cref="T:System.Diagnostics.Debug" />
+    <altmember cref="T:System.Diagnostics.Trace" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -144,6 +148,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.BooleanSwitch" />
+        <altmember cref="T:System.Diagnostics.Switch" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -233,6 +241,10 @@
         </remarks>
         <exception cref="T:System.Security.SecurityException">The caller does not have the correct permission.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with unmanaged code. Demand value <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.</permission>
+        <altmember cref="T:System.Diagnostics.BooleanSwitch" />
+        <altmember cref="T:System.Diagnostics.Switch" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName="OnValueChanged">
@@ -270,5 +282,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.BooleanSwitch" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

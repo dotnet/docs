@@ -103,6 +103,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="dc" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Drawing.IDeviceContext" />
       </Docs>
     </Member>
     <Member MemberName="DrawText">
@@ -153,6 +154,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="dc" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Drawing.IDeviceContext" />
       </Docs>
     </Member>
     <Member MemberName="DrawText">
@@ -751,5 +753,14 @@
           <paramref name="dc" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="MeasureText">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Measures the specified text when drawn with the specified font.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

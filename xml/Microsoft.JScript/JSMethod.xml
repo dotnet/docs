@@ -22,6 +22,7 @@
     <summary>Represents a JScript method. This class belongs to the name binding category.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.JSMethodInfo" />
   </Docs>
   <Members>
     <Member MemberName="GetBaseDefinition">
@@ -43,6 +44,7 @@
           <see langword="this" /> in all cases.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.JSMethodInfo" />
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttributes">
@@ -67,6 +69,8 @@
         <returns>An array of <see cref="T:System.Object" /> objects that has zero elements.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.JSMethodInfo" />
+        <altmember cref="T:System.Reflection.MethodInfo" />
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttributes">
@@ -93,6 +97,8 @@
         <returns>An array of <see cref="T:System.Object" /> objects that has zero elements.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.JSMethodInfo" />
+        <altmember cref="T:System.Reflection.MethodInfo" />
       </Docs>
     </Member>
     <Member MemberName="GetMethodImplementationFlags">
@@ -114,6 +120,8 @@
           <see cref="F:System.Reflection.MethodImplAttributes.Managed" /> and <see cref="F:System.Reflection.MethodImplAttributes.IL" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.JSMethodInfo" />
+        <altmember cref="T:System.Reflection.MethodInfo" />
       </Docs>
     </Member>
     <Member MemberName="Invoke">
@@ -150,6 +158,8 @@
         <returns>The return value of the call to the method.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.JSMethodInfo" />
+        <altmember cref="T:System.Reflection.MethodInfo" />
       </Docs>
     </Member>
     <Member MemberName="IsDefined">
@@ -177,6 +187,8 @@
           <see langword="false" /> in all cases.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.JSMethodInfo" />
+        <altmember cref="T:System.Reflection.MethodInfo" />
       </Docs>
     </Member>
     <Member MemberName="MemberType">
@@ -197,6 +209,7 @@
           <see cref="F:System.Reflection.MemberTypes.Method" />, because this class derives from <see cref="T:System.Reflection.MethodInfo" />.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.JSMethodInfo" />
       </Docs>
     </Member>
     <Member MemberName="MethodHandle">
@@ -216,6 +229,8 @@
         <value>A handle to the internal metadata representation of this method.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.JSMethodInfo" />
+        <altmember cref="T:System.Reflection.MethodInfo" />
       </Docs>
     </Member>
     <Member MemberName="ReflectedType">
@@ -235,6 +250,8 @@
         <value>The type that declares this method.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.JSMethodInfo" />
+        <altmember cref="T:System.Reflection.MethodInfo" />
       </Docs>
     </Member>
     <Member MemberName="ReturnTypeCustomAttributes">
@@ -254,7 +271,20 @@
         <value>null in all cases.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.JSMethodInfo" />
+        <altmember cref="T:System.Reflection.MethodInfo" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetCustomAttributes">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an array that contains the custom attributes that are attached to this method.</summary>
+        <altmember cref="T:Microsoft.JScript.JSMethodInfo" />
+        <altmember cref="T:System.Reflection.MethodInfo" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

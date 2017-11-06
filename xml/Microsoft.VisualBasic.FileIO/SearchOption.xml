@@ -19,6 +19,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:Microsoft.VisualBasic.MyServices.FileSystemProxy.GetFiles(System.String,Microsoft.VisualBasic.FileIO.SearchOption,System.String[])" />
+    <altmember cref="M:Microsoft.VisualBasic.MyServices.FileSystemProxy.GetDirectories(System.String,Microsoft.VisualBasic.FileIO.SearchOption,System.String[])" />
+    <altmember cref="M:Microsoft.VisualBasic.MyServices.FileSystemProxy.FindInFiles(System.String,System.String,System.Boolean,Microsoft.VisualBasic.FileIO.SearchOption,System.String[])" />
   </Docs>
   <Members>
     <Member MemberName="SearchAllSubDirectories">

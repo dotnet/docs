@@ -740,5 +740,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetType">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Type" /> from the qualified type name passed by searching through the assembly references and code compile units that are added.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -78,6 +78,17 @@ items:
 
     Click **Run** again to see the results.
 
+    As we progress, creating strings to print using `+` becomes cumbersome. String interpolation lets you piece together strings in a more concise and readable way.
+
+    If you add a `$` before the opening quotes of the string, you can then include string expressions, like the `aFriend` variable, inside the string in curly brackets.
+
+
+    ```csharp
+    Console.WriteLine($"Hello {aFriend}");
+    ```
+
+    Click **Run** again to see the results.
+
     > [!NOTE]
     > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
 
@@ -91,14 +102,14 @@ items:
     ```csharp
     string firstFriend = "Maria";
     string secondFriend = "Sage";
-    Console.WriteLine("My friends are " + firstFriend + " and " + secondFriend);
+    Console.WriteLine($"My friends are {firstFriend} and {secondFriend}");
     ```
 
     As you explore more with strings, you can find the length of a string using `Length`. `Length` is a **property** of a string and it returns the number of characters in that string. Add the following code at the bottom of the interactive window:
 
     ```csharp
-    Console.WriteLine("The name " + firstFriend + " has " + firstFriend.Length + " letters.");
-    Console.WriteLine("The name " + secondFriend + " has " + secondFriend.Length + " letters.");
+    Console.WriteLine($"The name {firstFriend} has {firstFriend.Length} letters.");
+    Console.WriteLine($"The name {secondFriend} has {secondFriend.Length} letters.");
     ```
 
     > [!TIP]
@@ -119,16 +130,16 @@ items:
 
     ```csharp
     string message = "      Hello World!       ";
-    Console.WriteLine("[" + message + "]");
+    Console.WriteLine($"[{message}]");
 
     string trimmedMessage = message.TrimStart();
-    Console.WriteLine("[" + trimmedMessage + "]");
+    Console.WriteLine($"[{trimmedMessage}]");
 
     trimmedMessage = message.TrimEnd();
-    Console.WriteLine("[" + trimmedMessage + "]");
+    Console.WriteLine($"[{trimmedMessage}]");
 
     trimmedMessage = message.Trim();
-    Console.WriteLine("[" + trimmedMessage + "]");
+    Console.WriteLine("[{trimmedMessage}]");
     ```
 
     This sample reinforces a couple of important concepts for working with strings. The methods that manipulate strings return new string objects rather than making modifications in place. You can see that each call to any of the `Trim` methods returns a new string, but does not change the original message.

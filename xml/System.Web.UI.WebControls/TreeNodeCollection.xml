@@ -52,6 +52,22 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+    <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeView.Nodes" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeView.CheckedNodes" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeNode.ChildNodes" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeNodeCollection.Item(System.Int32)" />
+    <altmember cref="M:System.Web.UI.WebControls.TreeNodeCollection.GetEnumerator" />
+    <altmember cref="M:System.Web.UI.WebControls.TreeNodeCollection.CopyTo(System.Web.UI.WebControls.TreeNode[],System.Int32)" />
+    <altmember cref="M:System.Web.UI.WebControls.TreeNodeCollection.Add(System.Web.UI.WebControls.TreeNode)" />
+    <altmember cref="M:System.Web.UI.WebControls.TreeNodeCollection.AddAt(System.Int32,System.Web.UI.WebControls.TreeNode)" />
+    <altmember cref="M:System.Web.UI.WebControls.TreeNodeCollection.Remove(System.Web.UI.WebControls.TreeNode)" />
+    <altmember cref="M:System.Web.UI.WebControls.TreeNodeCollection.RemoveAt(System.Int32)" />
+    <altmember cref="M:System.Web.UI.WebControls.TreeNodeCollection.Clear" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeNodeCollection.Count" />
+    <altmember cref="M:System.Web.UI.WebControls.TreeNodeCollection.Contains(System.Web.UI.WebControls.TreeNode)" />
+    <altmember cref="M:System.Web.UI.WebControls.TreeNodeCollection.IndexOf(System.Web.UI.WebControls.TreeNode)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -79,6 +95,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.Nodes" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.CheckedNodes" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.ChildNodes" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -109,6 +130,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.Nodes" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.CheckedNodes" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.ChildNodes" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -150,6 +176,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+        <altmember cref="M:System.Collections.ArrayList.Add(System.Object)" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeCollection.AddAt(System.Int32,System.Web.UI.WebControls.TreeNode)" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeCollection.Clear" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeCollection.Contains(System.Web.UI.WebControls.TreeNode)" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeCollection.Remove(System.Web.UI.WebControls.TreeNode)" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeCollection.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="AddAt">
@@ -195,6 +229,13 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="child" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeCollection.Add(System.Web.UI.WebControls.TreeNode)" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeCollection.Clear" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeCollection.Contains(System.Web.UI.WebControls.TreeNode)" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeCollection.Remove(System.Web.UI.WebControls.TreeNode)" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeCollection.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -231,6 +272,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeCollection.Add(System.Web.UI.WebControls.TreeNode)" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeCollection.AddAt(System.Int32,System.Web.UI.WebControls.TreeNode)" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeCollection.Contains(System.Web.UI.WebControls.TreeNode)" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeCollection.Remove(System.Web.UI.WebControls.TreeNode)" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeCollection.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -269,6 +317,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeCollection.Add(System.Web.UI.WebControls.TreeNode)" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeCollection.AddAt(System.Int32,System.Web.UI.WebControls.TreeNode)" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeCollection.Clear" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeCollection.IndexOf(System.Web.UI.WebControls.TreeNode)" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeCollection.Remove(System.Web.UI.WebControls.TreeNode)" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeCollection.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -309,6 +365,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+        <altmember cref="T:System.Array" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeCollection.Item(System.Int32)" />
+        <altmember cref="M:System.Collections.ArrayList.CopyTo(System.Array)" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeCollection.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -342,6 +404,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="P:System.Collections.ArrayList.Count" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.Nodes" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.CheckedNodes" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.ChildNodes" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -381,6 +449,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeCollection.Item(System.Int32)" />
+        <altmember cref="M:System.Collections.ArrayList.GetEnumerator" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeCollection.CopyTo(System.Web.UI.WebControls.TreeNode[],System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -421,6 +494,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+        <altmember cref="M:System.Collections.ArrayList.IndexOf(System.Object)" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeCollection.Contains(System.Web.UI.WebControls.TreeNode)" />
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -449,6 +526,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="P:System.Collections.ICollection.IsSynchronized" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -486,6 +567,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeCollection.GetEnumerator" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeCollection.CopyTo(System.Web.UI.WebControls.TreeNode[],System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -529,6 +614,14 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="value" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeCollection.Add(System.Web.UI.WebControls.TreeNode)" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeCollection.AddAt(System.Int32,System.Web.UI.WebControls.TreeNode)" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeCollection.Clear" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeCollection.Contains(System.Web.UI.WebControls.TreeNode)" />
+        <altmember cref="M:System.Collections.ArrayList.Remove(System.Object)" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeCollection.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -570,6 +663,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeCollection.Add(System.Web.UI.WebControls.TreeNode)" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeCollection.AddAt(System.Int32,System.Web.UI.WebControls.TreeNode)" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeCollection.Clear" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeCollection.Contains(System.Web.UI.WebControls.TreeNode)" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeCollection.Remove(System.Web.UI.WebControls.TreeNode)" />
+        <altmember cref="M:System.Collections.ArrayList.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -607,6 +708,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+        <altmember cref="P:System.Collections.ArrayList.SyncRoot" />
+        <altmember cref="P:System.Collections.ICollection.SyncRoot" />
+        <altmember cref="T:System.Collections.ICollection" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -649,6 +755,12 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="array" /> is not an array of <see cref="T:System.Web.UI.WebControls.TreeNode" /> objects.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+        <altmember cref="T:System.Array" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeCollection.Item(System.Int32)" />
+        <altmember cref="M:System.Collections.ArrayList.CopyTo(System.Array)" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeNodeCollection.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.IsTrackingViewState">
@@ -668,6 +780,9 @@
         <value>
           <see langword="true" /> if the control is marked to save its state; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
+        <altmember cref="M:System.Web.UI.Control.LoadViewState(System.Object)" />
+        <altmember cref="M:System.Web.UI.Control.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.LoadViewState">
@@ -689,6 +804,8 @@
         <param name="state">A <see cref="T:System.Object" /> that contains the saved view state values.</param>
         <summary>Loads the <see cref="T:System.Web.UI.WebControls.TreeNodeCollection" /> object's previously saved view state.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.StateBag" />
+        <altmember cref="T:System.Web.UI.StateItem" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.SaveViewState">
@@ -708,6 +825,8 @@
         <summary>Saves the changes to view state to a <see cref="T:System.Object" />.</summary>
         <returns>The <see cref="T:System.Object" /> that contains the view state changes.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.StateBag" />
+        <altmember cref="T:System.Web.UI.StateItem" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.TrackViewState">
@@ -733,7 +852,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.StateBag" />
+        <altmember cref="T:System.Web.UI.StateItem" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.TreeNodeCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

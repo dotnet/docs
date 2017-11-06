@@ -52,6 +52,8 @@
     </remarks>
     <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This member cannot be inherited by partially trusted code.</permission>
     <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This class cannot be used by partially trusted or transparent code.</permission>
+    <altmember cref="T:System.Runtime.InteropServices.SafeHandle" />
+    <altmember cref="N:Microsoft.Win32.SafeHandles" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -96,6 +98,7 @@
         <exception cref="T:System.TypeLoadException">The derived class resides in an assembly without unmanaged code access permission.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This member cannot be inherited by partially trusted code.</permission>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This class cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.SafeHandle.#ctor(System.IntPtr,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -303,6 +306,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Runtime.InteropServices.CriticalHandle.Dispose" />
       </Docs>
     </Member>
     <Member MemberName="handle">
@@ -398,6 +402,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Runtime.InteropServices.SafeHandle.IsInvalid" />
       </Docs>
     </Member>
     <Member MemberName="IsInvalid">
@@ -449,6 +454,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Runtime.InteropServices.SafeHandle.IsInvalid" />
       </Docs>
     </Member>
     <Member MemberName="ReleaseHandle">
@@ -608,5 +614,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Handles</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Marks the handle for releasing and freeing resources.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

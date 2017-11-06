@@ -13,6 +13,7 @@
   <Docs>
     <summary>Serves as the base class for columns that can bind to a property in the data source of a <see cref="T:System.Windows.Controls.DataGrid" />.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Controls.DataGrid" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -53,6 +54,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
       </Docs>
     </Member>
     <Member MemberName="ClipboardContentBinding">

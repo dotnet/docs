@@ -38,6 +38,8 @@
  ]]></format>
     </remarks>
     <threadsafe>This type is thread safe.</threadsafe>
+    <altmember cref="P:System.Messaging.MessageQueue.Transactional" />
+    <altmember cref="M:System.Messaging.MessageQueue.Send(System.Object)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -91,6 +93,9 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The internal transaction you are attempting to roll back has not started.</exception>
         <exception cref="T:System.Messaging.MessageQueueException">An internal Message Queuing error occurs.</exception>
+        <altmember cref="M:System.Messaging.MessageQueueTransaction.Begin" />
+        <altmember cref="M:System.Messaging.MessageQueueTransaction.Commit" />
+        <altmember cref="P:System.Messaging.MessageQueue.Transactional" />
       </Docs>
     </Member>
     <Member MemberName="Begin">
@@ -120,6 +125,9 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The transaction has already been started.</exception>
         <exception cref="T:System.Messaging.MessageQueueException">An internal Message Queuing error occurs.</exception>
+        <altmember cref="M:System.Messaging.MessageQueueTransaction.Abort" />
+        <altmember cref="M:System.Messaging.MessageQueueTransaction.Commit" />
+        <altmember cref="P:System.Messaging.MessageQueue.Transactional" />
       </Docs>
     </Member>
     <Member MemberName="Commit">
@@ -149,6 +157,9 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The transaction you are trying to commit has not started.</exception>
         <exception cref="T:System.Messaging.MessageQueueException">An internal Message Queuing error occurs.</exception>
+        <altmember cref="M:System.Messaging.MessageQueueTransaction.Abort" />
+        <altmember cref="M:System.Messaging.MessageQueueTransaction.Begin" />
+        <altmember cref="P:System.Messaging.MessageQueue.Transactional" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -265,7 +276,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Messaging.MessageQueueTransactionStatus" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.Messaging.MessageQueueTransaction" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

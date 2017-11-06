@@ -63,6 +63,8 @@ Main ending.
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Threading.Thread" />
+    <altmember cref="M:System.Threading.Thread.Abort(System.Object)" />
   </Docs>
   <Members>
     <Member MemberName="ExceptionState">
@@ -111,6 +113,8 @@ Main ending.
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Threading.Thread.CurrentThread" />
+        <altmember cref="M:System.Threading.Thread.Abort(System.Object)" />
       </Docs>
     </Member>
   </Members>

@@ -53,6 +53,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Threading.Mutex" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -95,6 +96,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Threading.Mutex" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -140,6 +142,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Threading.Mutex" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -187,6 +190,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Threading.Mutex" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -223,6 +227,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Threading.Mutex" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -272,6 +277,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Threading.Mutex" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -321,6 +327,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Threading.Mutex" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -374,6 +381,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Threading.Mutex" />
       </Docs>
     </Member>
     <Member MemberName="Mutex">
@@ -410,6 +418,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Threading.Mutex" />
       </Docs>
     </Member>
     <Member MemberName="MutexIndex">
@@ -458,7 +467,19 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Threading.Mutex" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Threading.AbandonedMutexException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

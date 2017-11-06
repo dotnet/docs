@@ -104,6 +104,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IdentityModel.Tokens.SecurityToken" />
+    <altmember cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifier" />
+    <altmember cref="T:System.IdentityModel.SecurityTokenService" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -948,5 +951,32 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CanReadToken">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether the specified token can be deserialized as a token of the type processed by this instance.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadToken">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, deserializes the specified XML to a token of the type processed by the derived class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteToken">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, serializes the specified security token. The token must be of the type processed by the derived class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

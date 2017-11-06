@@ -14,6 +14,9 @@
   <Docs>
     <summary>The <see cref="T:System.DirectoryServices.ActiveDirectory.TrustRelationshipInformation" /> class contains information for a trust relationship between a pair of <see cref="T:System.DirectoryServices.ActiveDirectory.Domain" /> or <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" /> objects.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="M:System.DirectoryServices.ActiveDirectory.Domain.GetTrustRelationship(System.String)" />
+    <altmember cref="M:System.DirectoryServices.ActiveDirectory.Forest.GetTrustRelationship(System.String)" />
+    <altmember cref="T:System.DirectoryServices.ActiveDirectory.TrustRelationshipInformationCollection" />
   </Docs>
   <Members>
     <Member MemberName="SourceName">
@@ -33,6 +36,8 @@
         <summary>Obtains the name of the source <see cref="T:System.DirectoryServices.ActiveDirectory.Domain" /> or <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" /> objects for this trust relationship.</summary>
         <value>A string that contains the name of the source <see cref="T:System.DirectoryServices.ActiveDirectory.Domain" /> or <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" /> objects for this trust relationship.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.Domain" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.Forest" />
       </Docs>
     </Member>
     <Member MemberName="TargetName">
@@ -52,6 +57,8 @@
         <summary>Obtains the name of the target <see cref="T:System.DirectoryServices.ActiveDirectory.Domain" /> or <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" /> objects for this trust relationship.</summary>
         <value>A string that contains the name of the target <see cref="T:System.DirectoryServices.ActiveDirectory.Domain" /> or <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" /> objects for this trust relationship.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.Domain" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.Forest" />
       </Docs>
     </Member>
     <Member MemberName="TrustDirection">
@@ -71,6 +78,11 @@
         <summary>Obtains the <see cref="T:System.DirectoryServices.ActiveDirectory.TrustDirection" /> objects for this trust relationship relative to the <see cref="T:System.DirectoryServices.ActiveDirectory.Domain" /> or <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" /> objects that created the trust.</summary>
         <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.TrustDirection" /> value for this trust relationship relative to the <see cref="T:System.DirectoryServices.ActiveDirectory.Domain" /> or <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" /> objects that created the trust.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.TrustDirection" />
+        <altmember cref="M:System.DirectoryServices.ActiveDirectory.Domain.CreateLocalSideOfTrustRelationship(System.String,System.DirectoryServices.ActiveDirectory.TrustDirection,System.String)" />
+        <altmember cref="M:System.DirectoryServices.ActiveDirectory.Domain.CreateTrustRelationship(System.DirectoryServices.ActiveDirectory.Domain,System.DirectoryServices.ActiveDirectory.TrustDirection)" />
+        <altmember cref="M:System.DirectoryServices.ActiveDirectory.Forest.CreateLocalSideOfTrustRelationship(System.String,System.DirectoryServices.ActiveDirectory.TrustDirection,System.String)" />
+        <altmember cref="M:System.DirectoryServices.ActiveDirectory.Forest.CreateTrustRelationship(System.DirectoryServices.ActiveDirectory.Forest,System.DirectoryServices.ActiveDirectory.TrustDirection)" />
       </Docs>
     </Member>
     <Member MemberName="TrustType">
@@ -90,6 +102,7 @@
         <summary>Obtains the <see cref="T:System.DirectoryServices.ActiveDirectory.TrustType" /> object of the trust relationship.</summary>
         <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.TrustType" /> value that represents the type of the trust relationship.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.TrustType" />
       </Docs>
     </Member>
   </Members>

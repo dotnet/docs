@@ -333,6 +333,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Workflow.Activities.StateMachineWorkflowInstance.StateHistory" />
       </Docs>
     </Member>
     <Member MemberName="SetStateQueueName">
@@ -352,5 +353,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.StateMachineWorkflowActivity" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

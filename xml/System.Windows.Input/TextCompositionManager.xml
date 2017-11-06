@@ -13,6 +13,12 @@
   <Docs>
     <summary>Provides facilities for managing events related to input and text compositions.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Input.TextComposition" />
+    <altmember cref="T:System.Windows.Input.TextCompositionAutoComplete" />
+    <altmember cref="T:System.Windows.Input.TextCompositionEventArgs" />
+    <altmember cref="T:System.Windows.Input.TextCompositionEventHandler" />
+    <altmember cref="T:System.Windows.Input.InputMethod" />
+    <altmember cref="T:System.Windows.Input.InputLanguageManager" />
   </Docs>
   <Members>
     <Member MemberName="AddPreviewTextInputHandler">
@@ -43,6 +49,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Input.TextCompositionManager.RemovePreviewTextInputHandler(System.Windows.DependencyObject,System.Windows.Input.TextCompositionEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="AddPreviewTextInputStartHandler">
@@ -73,6 +80,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Input.TextCompositionManager.RemoveTextInputStartHandler(System.Windows.DependencyObject,System.Windows.Input.TextCompositionEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="AddPreviewTextInputUpdateHandler">
@@ -103,6 +111,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Input.TextCompositionManager.RemovePreviewTextInputUpdateHandler(System.Windows.DependencyObject,System.Windows.Input.TextCompositionEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="AddTextInputHandler">
@@ -133,6 +142,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Input.TextCompositionManager.RemoveTextInputHandler(System.Windows.DependencyObject,System.Windows.Input.TextCompositionEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="AddTextInputStartHandler">
@@ -163,6 +173,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Input.TextCompositionManager.RemoveTextInputStartHandler(System.Windows.DependencyObject,System.Windows.Input.TextCompositionEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="AddTextInputUpdateHandler">
@@ -193,6 +204,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Input.TextCompositionManager.RemoveTextInputUpdateHandler(System.Windows.DependencyObject,System.Windows.Input.TextCompositionEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="CompleteComposition">
@@ -222,6 +234,8 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when *composition* is **null**.</exception>
         <exception cref="T:System.ArgumentException">Raised when there is no input manager associated with *composition*, or when the text composition is already marked as completed.</exception>
+        <altmember cref="M:System.Windows.Input.TextCompositionManager.StartComposition(System.Windows.Input.TextComposition)" />
+        <altmember cref="M:System.Windows.Input.TextCompositionManager.UpdateComposition(System.Windows.Input.TextComposition)" />
       </Docs>
     </Member>
     <Member MemberName="PreviewTextInputEvent">
@@ -303,6 +317,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Input.TextCompositionManager.AddPreviewTextInputHandler(System.Windows.DependencyObject,System.Windows.Input.TextCompositionEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="RemovePreviewTextInputStartHandler">
@@ -333,6 +348,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Input.TextCompositionManager.AddPreviewTextInputStartHandler(System.Windows.DependencyObject,System.Windows.Input.TextCompositionEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="RemovePreviewTextInputUpdateHandler">
@@ -363,6 +379,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Input.TextCompositionManager.AddPreviewTextInputUpdateHandler(System.Windows.DependencyObject,System.Windows.Input.TextCompositionEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveTextInputHandler">
@@ -393,6 +410,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Input.TextCompositionManager.AddTextInputHandler(System.Windows.DependencyObject,System.Windows.Input.TextCompositionEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveTextInputStartHandler">
@@ -423,6 +441,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Input.TextCompositionManager.AddTextInputStartHandler(System.Windows.DependencyObject,System.Windows.Input.TextCompositionEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveTextInputUpdateHandler">
@@ -453,6 +472,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Input.TextCompositionManager.AddTextInputUpdateHandler(System.Windows.DependencyObject,System.Windows.Input.TextCompositionEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="StartComposition">
@@ -480,6 +500,8 @@
         <summary>Starts a specified text composition.</summary>
         <returns>**true** if the text composition was successfully started; otherwise, **false**.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Input.TextCompositionManager.CompleteComposition(System.Windows.Input.TextComposition)" />
+        <altmember cref="M:System.Windows.Input.TextCompositionManager.UpdateComposition(System.Windows.Input.TextComposition)" />
       </Docs>
     </Member>
     <Member MemberName="TextInputEvent">
@@ -558,6 +580,8 @@
         <summary>Updates a specified text composition.</summary>
         <returns>**true** if the text composition was successfully updated; otherwise, **false**.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Input.TextCompositionManager.CompleteComposition(System.Windows.Input.TextComposition)" />
+        <altmember cref="M:System.Windows.Input.TextCompositionManager.StartComposition(System.Windows.Input.TextComposition)" />
       </Docs>
     </Member>
   </Members>

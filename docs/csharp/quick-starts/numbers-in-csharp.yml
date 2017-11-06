@@ -134,8 +134,8 @@ items:
     int c = 3;
     int d = (a  + b) / c;
     int e = (a + b) % c;
-    Console.WriteLine("quotient: " + d);
-    Console.WriteLine("remainder: " + e);
+    Console.WriteLine($"quotient: {d}");
+    Console.WriteLine($"remainder: {e}");
     ```
 
     The C# integer type differs from mathematical integers in one other
@@ -145,7 +145,7 @@ items:
     ```csharp
     int max = int.MaxValue;
     int min = int.MinValue;
-    Console.WriteLine("The range of integers is " + min + " to " + max);
+    Console.WriteLine($"The range of integers is {min} to {max}");
     ```
 
     If a calculation produces a value that exceeds those limits, you
@@ -155,7 +155,7 @@ items:
 
     ```csharp
     int what = max + 3;
-    Console.WriteLine("An example of overflow: " + what);
+    Console.WriteLine($"An example of overflow: {what}");
     ```
     
     Notice that the answer is very close to the minimum (negative) integer. It's
@@ -206,7 +206,7 @@ items:
     ```csharp
     double max = double.MaxValue;
     double min = double.MinValue;
-    Console.WriteLine("The range of double is " + min + " to " + max);
+    Console.WriteLine($"The range of double is {min} to {max}");
     ```
 
     These values are printed out to represent scientific notation. The number to
@@ -244,7 +244,7 @@ items:
     ```csharp
     decimal min = decimal.MinValue;
     decimal max = decimal.MaxValue;
-    Console.WriteLine("The range of the decimal type is " + min + " to " + max);
+    Console.WriteLine($"The range of the decimal type is {min} to {max}");
     ```
 
     Notice that the range is smaller than the `double` type. You can see the greater

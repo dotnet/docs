@@ -243,6 +243,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
       </Docs>
     </Member>
     <Member MemberName="StatusCode">
@@ -278,5 +280,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Security.MembershipCreateUserException" /> class.</summary>
+        <altmember cref="T:System.Web.Security.MembershipCreateUserException" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

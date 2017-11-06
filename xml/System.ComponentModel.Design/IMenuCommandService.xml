@@ -64,6 +64,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.Design.MenuCommand" />
+    <altmember cref="T:System.ComponentModel.Design.DesignerVerb" />
+    <altmember cref="T:System.ComponentModel.Design.CommandID" />
+    <altmember cref="T:System.Windows.Forms.Design.MenuCommands" />
+    <altmember cref="T:System.ComponentModel.Design.StandardCommands" />
   </Docs>
   <Members>
     <Member MemberName="AddCommand">
@@ -117,6 +122,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.ComponentModel.Design.CommandID" /> of the specified <see cref="T:System.ComponentModel.Design.MenuCommand" /> is already present on a menu.</exception>
+        <altmember cref="T:System.ComponentModel.Design.MenuCommand" />
+        <altmember cref="T:System.ComponentModel.Design.CommandID" />
       </Docs>
     </Member>
     <Member MemberName="AddVerb">
@@ -154,6 +161,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.DesignerVerb" />
       </Docs>
     </Member>
     <Member MemberName="FindCommand">
@@ -185,6 +193,7 @@
         <summary>Searches for the specified command ID and returns the menu command associated with it.</summary>
         <returns>The <see cref="T:System.ComponentModel.Design.MenuCommand" /> associated with the command ID, or <see langword="null" /> if no command is found.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.Design.CommandID" />
       </Docs>
     </Member>
     <Member MemberName="GlobalInvoke">
@@ -224,6 +233,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.CommandID" />
       </Docs>
     </Member>
     <Member MemberName="RemoveCommand">
@@ -261,6 +271,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.MenuCommand" />
       </Docs>
     </Member>
     <Member MemberName="RemoveVerb">
@@ -298,6 +309,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.DesignerVerb" />
       </Docs>
     </Member>
     <Member MemberName="ShowContextMenu">
@@ -348,6 +360,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.CommandID" />
       </Docs>
     </Member>
     <Member MemberName="Verbs">
@@ -382,6 +395,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.DesignerVerbCollection" />
+        <altmember cref="P:System.ComponentModel.Design.IDesigner.Verbs" />
       </Docs>
     </Member>
   </Members>

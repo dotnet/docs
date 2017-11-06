@@ -62,6 +62,8 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="T:System.Web.UI.MobileControls.Form" />
+    <altmember cref="T:System.Web.UI.MobileControls.Panel" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -190,6 +192,7 @@
         <summary>Gets the number of items in the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <value>The number of items in the control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.PagedControl.InternalItemCount" />
       </Docs>
     </Member>
     <Member MemberName="ItemCount">
@@ -267,6 +270,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.PagedControl" />
       </Docs>
     </Member>
     <Member MemberName="ItemWeight">
@@ -285,6 +289,7 @@
         <summary>Gets the approximate weight of a single item in the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <value>The approximate weight of a single item in the control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.PagedControl.ItemWeight" />
       </Docs>
     </Member>
     <Member MemberName="LastVisibleElementIndex">
@@ -412,6 +417,7 @@
         <param name="writer">An <see cref="T:System.Web.UI.HtmlTextWriter" /> that will render the content.</param>
         <summary>Raises the <see cref="M:System.Web.UI.MobileControls.MobileControl.Render(System.Web.UI.HtmlTextWriter)" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.MobileControl.OnRender(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="PaginateRecursive">
@@ -433,6 +439,7 @@
         <param name="pager">The pager.</param>
         <summary>Paginates the control and its children. Called internally by ASP.NET. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.PagedControl.PaginateRecursive(System.Web.UI.MobileControls.ControlPager)" />
       </Docs>
     </Member>
     <Member MemberName="Text">

@@ -63,6 +63,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Attribute" />
+    <altmember cref="T:System.ComponentModel.DesignerAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -379,5 +381,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DesignerCategoryAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

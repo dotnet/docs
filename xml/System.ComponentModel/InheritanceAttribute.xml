@@ -36,6 +36,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.Design.IInheritanceService" />
+    <altmember cref="T:System.ComponentModel.InheritanceLevel" />
+    <altmember cref="T:System.Attribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -87,6 +90,7 @@
         <param name="inheritanceLevel">An <see cref="T:System.ComponentModel.InheritanceLevel" /> that indicates the level of inheritance to set this attribute to.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.InheritanceAttribute" /> class with the specified inheritance level.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.InheritanceLevel" />
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -207,6 +211,7 @@
         <summary>Gets or sets the current inheritance level stored in this attribute.</summary>
         <value>The <see cref="T:System.ComponentModel.InheritanceLevel" /> stored in this attribute.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.InheritanceLevel" />
       </Docs>
     </Member>
     <Member MemberName="Inherited">
@@ -302,6 +307,7 @@
         <returns>
           <see langword="true" /> if the current value of the attribute is the default; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Attribute" />
       </Docs>
     </Member>
     <Member MemberName="NotInherited">
@@ -365,5 +371,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.InheritanceAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

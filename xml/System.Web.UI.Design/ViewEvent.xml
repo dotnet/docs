@@ -38,6 +38,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Web.UI.Design.ControlDesigner.OnClick(System.Web.UI.Design.DesignerRegionMouseEventArgs)" />
+    <altmember cref="M:System.Web.UI.Design.ControlDesigner.OnPaint(System.Windows.Forms.PaintEventArgs)" />
+    <altmember cref="M:System.Web.UI.Design.TemplatedControlDesigner.OnTemplateModeChanged" />
+    <altmember cref="T:System.Web.UI.Design.ViewEventHandler" />
+    <altmember cref="T:System.Web.UI.Design.ViewEventArgs" />
   </Docs>
   <Members>
     <Member MemberName="Click">
@@ -64,6 +69,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.OnClick(System.Web.UI.Design.DesignerRegionMouseEventArgs)" />
+        <altmember cref="T:System.Web.UI.Design.ViewEventHandler" />
+        <altmember cref="T:System.Web.UI.Design.ViewEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="Paint">
@@ -90,6 +98,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.OnPaint(System.Windows.Forms.PaintEventArgs)" />
+        <altmember cref="T:System.Web.UI.Design.ViewEventHandler" />
+        <altmember cref="T:System.Web.UI.Design.ViewEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="TemplateModeChanged">
@@ -118,6 +129,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.InTemplateMode" />
+        <altmember cref="T:System.Web.UI.Design.TemplatedControlDesigner" />
+        <altmember cref="T:System.Web.UI.Design.ViewEventHandler" />
+        <altmember cref="T:System.Web.UI.Design.ViewEventArgs" />
       </Docs>
     </Member>
   </Members>

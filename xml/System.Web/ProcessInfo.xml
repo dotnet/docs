@@ -213,6 +213,7 @@
         <summary>Gets a value that indicates why the process shut down.</summary>
         <value>On of the <see cref="T:System.Web.ProcessShutdownReason" /> values.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.ProcessShutdownReason" />
       </Docs>
     </Member>
     <Member MemberName="StartTime">
@@ -249,7 +250,17 @@
         <summary>Gets the current status of the process.</summary>
         <value>One of the <see cref="T:System.Web.ProcessStatus" /> values that indicates the current status of the process.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.ProcessStatus" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ProcessInfo" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

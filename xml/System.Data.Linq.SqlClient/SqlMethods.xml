@@ -1350,5 +1350,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DateDiffNanosecond">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Counts the number of nanosecond boundaries between two specified dates.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

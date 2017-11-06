@@ -147,6 +147,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ListBox.SelectedIndexCollection.IndexOf(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -264,6 +265,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ListBox.SelectedIndexCollection.Contains(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -480,6 +482,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.IList.Contains(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IndexOf">
@@ -511,6 +514,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.IList.IndexOf(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Insert">
@@ -544,6 +548,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <altmember cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsFixedSize">
@@ -661,6 +666,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <altmember cref="M:System.Collections.IList.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
   </Members>

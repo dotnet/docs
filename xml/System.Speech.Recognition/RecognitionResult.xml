@@ -113,6 +113,15 @@ void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Speech.Recognition.RecognitionEventArgs" />
+    <altmember cref="T:System.Speech.Recognition.RecognizedPhrase" />
+    <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechHypothesized" />
+    <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized" />
+    <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechRecognitionRejected" />
+    <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized" />
+    <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized" />
+    <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected" />
+    <altmember cref="E:System.Speech.Recognition.Grammar.SpeechRecognized" />
   </Docs>
   <Members>
     <Member MemberName="Alternates">
@@ -188,6 +197,8 @@ void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.RecognitionEventArgs" />
+        <altmember cref="T:System.Speech.Recognition.RecognizedPhrase" />
       </Docs>
     </Member>
     <Member MemberName="Audio">
@@ -260,6 +271,9 @@ void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.RecognitionEventArgs" />
+        <altmember cref="T:System.Speech.Recognition.RecognizedPhrase" />
+        <altmember cref="M:System.Speech.Recognition.RecognitionResult.GetAudioForWordRange(System.Speech.Recognition.RecognizedWordUnit,System.Speech.Recognition.RecognizedWordUnit)" />
       </Docs>
     </Member>
     <Member MemberName="GetAudioForWordRange">
@@ -354,6 +368,11 @@ private void NameInputHandler(object sender, SpeechRecognizedEventArgs e)
  ]]></format>
         </remarks>
         <exception cref="T:System.NullReferenceException">The recognizer generated the result from a call to <see langword="EmulateRecognize" /> or <see langword="EmulateRecognizeAsync" /> methods of the <see cref="T:System.Speech.Recognition.SpeechRecognizer" /> or <see cref="T:System.Speech.Recognition.SpeechRecognitionEngine" /> objects.</exception>
+        <altmember cref="T:System.Speech.Recognition.RecognitionEventArgs" />
+        <altmember cref="T:System.Speech.Recognition.RecognizedPhrase" />
+        <altmember cref="T:System.Speech.Recognition.RecognizedWordUnit" />
+        <altmember cref="P:System.Speech.Recognition.RecognitionResult.Audio" />
+        <altmember cref="P:System.Speech.Recognition.RecognizedPhrase.Words" />
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
@@ -384,6 +403,9 @@ private void NameInputHandler(object sender, SpeechRecognizedEventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.Serialization.ISerializable" />
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
       </Docs>
     </Member>
   </Members>

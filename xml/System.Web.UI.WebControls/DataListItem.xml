@@ -44,6 +44,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DataList" />
+    <altmember cref="T:System.Web.UI.WebControls.DataListItemCollection" />
+    <altmember cref="P:System.Web.UI.WebControls.DataList.Items" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -79,6 +82,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataList" />
+        <altmember cref="T:System.Web.UI.WebControls.ListItemType" />
       </Docs>
     </Member>
     <Member MemberName="CreateControlStyle">
@@ -144,6 +149,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataList" />
+        <altmember cref="T:System.Object" />
       </Docs>
     </Member>
     <Member MemberName="ItemIndex">
@@ -183,6 +190,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataList" />
+        <altmember cref="P:System.Web.UI.WebControls.DataList.Items" />
+        <altmember cref="P:System.Web.UI.WebControls.DataListItem.ItemType" />
       </Docs>
     </Member>
     <Member MemberName="ItemType">
@@ -230,6 +240,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataList" />
+        <altmember cref="T:System.Web.UI.WebControls.ListItemType" />
+        <altmember cref="M:System.Web.UI.WebControls.DataListItem.SetItemType(System.Web.UI.WebControls.ListItemType)" />
       </Docs>
     </Member>
     <Member MemberName="OnBubbleEvent">
@@ -262,6 +275,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.OnBubbleEvent(System.Object,System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="RenderItem">
@@ -296,6 +310,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="SetItemType">
@@ -324,6 +339,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataListItem.ItemType" />
       </Docs>
     </Member>
     <Member MemberName="SupportsDisabledAttribute">
@@ -350,6 +366,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.RenderingCompatibility" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.DisabledCssClass" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IDataItemContainer.DataItem">
@@ -380,6 +399,7 @@
         <block subset="none" type="overrides">
           <para>To define a custom implementation for retrieving the data object for a <see cref="T:System.Web.UI.WebControls.DataListItem" />, override the <see cref="P:System.Web.UI.WebControls.DataListItem.DataItem" /> member. The explicit interface implementation uses the <see cref="P:System.Web.UI.WebControls.DataListItem.DataItem" /> property to retrieve the associated data object.</para>
         </block>
+        <altmember cref="P:System.Web.UI.WebControls.DataListItem.DataItem" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IDataItemContainer.DataItemIndex">
@@ -410,6 +430,7 @@
         <block subset="none" type="overrides">
           <para>To define a custom implementation for retrieving the data-item index for a <see cref="T:System.Web.UI.WebControls.DataListItem" />, override the <see cref="P:System.Web.UI.WebControls.DataListItem.ItemIndex" /> member. The explicit interface implementation uses the <see cref="P:System.Web.UI.WebControls.DataListItem.ItemIndex" /> property to retrieve the data-item index.</para>
         </block>
+        <altmember cref="P:System.Web.UI.WebControls.DataListItem.ItemIndex" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IDataItemContainer.DisplayIndex">
@@ -437,6 +458,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataListItem.ItemIndex" />
       </Docs>
     </Member>
   </Members>

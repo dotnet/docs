@@ -45,6 +45,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.PageRange.PageFrom" />
+        <altmember cref="P:System.Windows.Controls.PageRange.PageTo" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -74,6 +76,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.PageRange.PageFrom" />
+        <altmember cref="P:System.Windows.Controls.PageRange.PageTo" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -120,6 +124,7 @@
         <returns>
           <see langword="true" /> if the two <see cref="T:System.Windows.Controls.PageRange" /> objects are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.PageRange.op_Equality(System.Windows.Controls.PageRange,System.Windows.Controls.PageRange)" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -166,6 +171,8 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Controls.PageRange.Equals*?displayProperty=nameWithType>]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.PageRange.op_Inequality(System.Windows.Controls.PageRange,System.Windows.Controls.PageRange)" />
+        <altmember cref="Overload:System.Windows.Controls.PageRange.Equals" />
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -193,6 +200,8 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is the negation of <xref:System.Windows.Controls.PageRange.Equals%2A?displayProperty=nameWithType>]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.PageRange.op_Equality(System.Windows.Controls.PageRange,System.Windows.Controls.PageRange)" />
+        <altmember cref="Overload:System.Windows.Controls.PageRange.Equals" />
       </Docs>
     </Member>
     <Member MemberName="PageFrom">
@@ -218,6 +227,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.PageRange.PageTo" />
       </Docs>
     </Member>
     <Member MemberName="PageTo">
@@ -243,6 +253,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.PageRange.PageFrom" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -264,5 +275,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Tests for equality with a <see cref="T:System.Windows.Controls.PageRange" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.PageRange" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

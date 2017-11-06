@@ -17,6 +17,7 @@
   <Docs>
     <summary>Provides an exception that is thrown when an invalid type is used with a <see cref="T:System.Configuration.SettingsProperty" /> object.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Exception" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -108,5 +109,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.SettingsPropertyWrongTypeException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

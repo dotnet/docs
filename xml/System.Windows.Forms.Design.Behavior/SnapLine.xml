@@ -46,6 +46,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.Design.Behavior.SnapLineType" />
+    <altmember cref="T:System.Windows.Forms.Design.Behavior.SnapLinePriority" />
+    <altmember cref="P:System.Windows.Forms.Design.ControlDesigner.SnapLines" />
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -90,6 +93,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Design.Behavior.SnapLine.SnapLineType" />
+        <altmember cref="P:System.Windows.Forms.Design.Behavior.SnapLine.Offset" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -119,6 +124,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Design.Behavior.SnapLine.SnapLineType" />
+        <altmember cref="P:System.Windows.Forms.Design.Behavior.SnapLine.Offset" />
+        <altmember cref="P:System.Windows.Forms.Design.Behavior.SnapLine.Filter" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -148,6 +156,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Design.Behavior.SnapLine.SnapLineType" />
+        <altmember cref="P:System.Windows.Forms.Design.Behavior.SnapLine.Offset" />
+        <altmember cref="P:System.Windows.Forms.Design.Behavior.SnapLine.Priority" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -179,6 +190,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Design.Behavior.SnapLine.SnapLineType" />
+        <altmember cref="P:System.Windows.Forms.Design.Behavior.SnapLine.Offset" />
+        <altmember cref="P:System.Windows.Forms.Design.Behavior.SnapLine.Filter" />
+        <altmember cref="P:System.Windows.Forms.Design.Behavior.SnapLine.Priority" />
       </Docs>
     </Member>
     <Member MemberName="AdjustOffset">
@@ -207,6 +222,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Design.Behavior.SnapLine.Offset" />
+        <altmember cref="P:System.Windows.Forms.Design.Behavior.SnapLine.SnapLineType" />
       </Docs>
     </Member>
     <Member MemberName="Filter">
@@ -234,6 +251,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Forms.Design.Behavior.SnapLine.#ctor" />
+        <altmember cref="P:System.Windows.Forms.Design.Behavior.SnapLine.Priority" />
       </Docs>
     </Member>
     <Member MemberName="IsHorizontal">
@@ -260,6 +279,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Design.Behavior.SnapLine.SnapLineType" />
       </Docs>
     </Member>
     <Member MemberName="IsVertical">
@@ -286,6 +306,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Design.Behavior.SnapLine.SnapLineType" />
       </Docs>
     </Member>
     <Member MemberName="Offset">
@@ -313,6 +334,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Design.Behavior.SnapLine.AdjustOffset(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Priority">
@@ -342,6 +364,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.SnapLinePriority" />
+        <altmember cref="Overload:System.Windows.Forms.Design.Behavior.SnapLine.#ctor" />
+        <altmember cref="P:System.Windows.Forms.Design.Behavior.SnapLine.SnapLineType" />
       </Docs>
     </Member>
     <Member MemberName="ShouldSnap">
@@ -394,6 +419,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.SnapLineType" />
+        <altmember cref="P:System.Windows.Forms.Design.Behavior.SnapLine.Priority" />
+        <altmember cref="M:System.Windows.Forms.Design.Behavior.SnapLine.AdjustOffset(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -420,6 +448,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Design.Behavior.SnapLine.SnapLineType" />
+        <altmember cref="P:System.Windows.Forms.Design.Behavior.SnapLine.Offset" />
+        <altmember cref="P:System.Windows.Forms.Design.Behavior.SnapLine.Priority" />
+        <altmember cref="P:System.Windows.Forms.Design.Behavior.SnapLine.Filter" />
       </Docs>
     </Member>
   </Members>

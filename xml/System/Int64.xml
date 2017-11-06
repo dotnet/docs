@@ -110,6 +110,7 @@
  ]]></format>
     </remarks>
     <threadsafe>All members of this type are thread safe. Members that appear to modify instance state actually return a new instance initialized with the new value. As with any other type, reading and writing to a shared variable that contains an instance of this type must be protected by a lock to guarantee thread safety.</threadsafe>
+    <altmember cref="T:System.UInt64" />
   </Docs>
   <Members>
     <Member MemberName="CompareTo">
@@ -185,6 +186,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.UInt64" />
+        <altmember cref="M:System.Int64.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="CompareTo">
@@ -249,6 +252,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="value" /> is not an <see cref="T:System.Int64" />.</exception>
+        <altmember cref="T:System.UInt64" />
+        <altmember cref="M:System.Int64.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -351,6 +356,7 @@
  [!code-csharp[System.Int64.Equals#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.int64.equals/cs/equalsoverl.cs#1)]
  [!code-vb[System.Int64.Equals#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.int64.equals/vb/equalsoverl.vb#1)]</para>
         </block>
+        <altmember cref="M:System.Int64.CompareTo(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -411,6 +417,7 @@
         <summary>Returns the <see cref="T:System.TypeCode" /> for value type <see cref="T:System.Int64" />.</summary>
         <returns>The enumerated constant, <see cref="F:System.TypeCode.Int64" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.TypeCode" />
       </Docs>
     </Member>
     <Member MemberName="MaxValue">
@@ -449,6 +456,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Int64.MinValue" />
       </Docs>
     </Member>
     <Member MemberName="MinValue">
@@ -487,6 +495,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Int64.MaxValue" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -557,6 +566,7 @@
           <paramref name="s" /> is not in the correct format.</exception>
         <exception cref="T:System.OverflowException">
           <paramref name="s" /> represents a number less than <see cref="F:System.Int64.MinValue" /> or greater than <see cref="F:System.Int64.MaxValue" />.</exception>
+        <altmember cref="M:System.Int64.ToString" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -667,6 +677,8 @@
  -or-  
   
  <paramref name="style" /> supports fractional digits but <paramref name="s" /> includes non-zero fractional digits.</exception>
+        <altmember cref="M:System.Int64.ToString" />
+        <altmember cref="Overload:System.Int64.TryParse" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -744,6 +756,8 @@
           <paramref name="s" /> is not in the correct format.</exception>
         <exception cref="T:System.OverflowException">
           <paramref name="s" /> represents a number less than <see cref="F:System.Int64.MinValue" /> or greater than <see cref="F:System.Int64.MaxValue" />.</exception>
+        <altmember cref="M:System.Int64.ToString" />
+        <altmember cref="Overload:System.Int64.TryParse" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -852,6 +866,7 @@
  -or-  
   
  <paramref name="style" /> supports fractional digits, but <paramref name="s" /> includes non-zero fractional digits.</exception>
+        <altmember cref="M:System.Int64.ToString" />
       </Docs>
     </Member>
     <Member MemberName="System.IComparable.CompareTo">
@@ -1558,6 +1573,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Int64.Parse(System.String)" />
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1635,6 +1652,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Int64.Parse(System.String)" />
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1708,6 +1727,8 @@
         </remarks>
         <exception cref="T:System.FormatException">
           <paramref name="format" /> is invalid or not supported.</exception>
+        <altmember cref="M:System.Int64.Parse(System.String)" />
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1791,6 +1812,7 @@
         </remarks>
         <exception cref="T:System.FormatException">
           <paramref name="format" /> is invalid or not supported.</exception>
+        <altmember cref="M:System.Int64.Parse(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="TryParse">
@@ -1872,6 +1894,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Int64.Parse(System.String)" />
+        <altmember cref="M:System.Int64.ToString" />
       </Docs>
     </Member>
     <Member MemberName="TryParse">
@@ -1979,7 +2003,76 @@
  -or-  
   
  <paramref name="style" /> is not a combination of <see cref="F:System.Globalization.NumberStyles.AllowHexSpecifier" /> and <see cref="F:System.Globalization.NumberStyles.HexNumber" /> values.</exception>
+        <altmember cref="M:System.Int64.Parse(System.String)" />
+        <altmember cref="M:System.Int64.ToString" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value indicating whether this instance is equal to a specified object or <see cref="T:System.Int64" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CompareTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares this instance to a specified object or <see cref="T:System.Int64" /> and returns an indication of their relative values.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryParse">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the string representation of a number to its 64-bit signed integer equivalent. A return value indicates whether the conversion succeeded or failed.</summary>
+        <altmember cref="Overload:System.Int64.Parse" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Parse">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the string representation of a number to its 64-bit signed integer equivalent.</summary>
+        <altmember cref="Overload:System.Int64.TryParse" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the numeric value of this instance to its equivalent string representation.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

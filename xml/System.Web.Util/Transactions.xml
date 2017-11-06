@@ -89,5 +89,14 @@
         <exception cref="T:System.Web.HttpException">The transacted code cannot be executed.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="InvokeTransacted">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Wraps a specified transaction support around a callback method.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

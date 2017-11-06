@@ -20,6 +20,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Compilation.ExpressionBuilder" />
+    <altmember cref="T:System.Web.Compilation.ResourceExpressionBuilder" />
+    <altmember cref="T:System.Web.Compilation.ExpressionEditorAttribute" />
+    <altmember cref="T:System.Web.Compilation.ExpressionPrefixAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -83,6 +87,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.TemplateControl" />
       </Docs>
     </Member>
     <Member MemberName="VirtualPath">
@@ -103,5 +108,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Compilation.ExpressionBuilderContext" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

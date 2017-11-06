@@ -13,6 +13,9 @@
   <Docs>
     <summary>Provides data for the <see cref="E:System.Windows.Documents.PageContent.GetPageRootCompleted" /> event.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="M:System.Windows.Documents.PageContent.GetPageRootAsync(System.Boolean)" />
+    <altmember cref="E:System.Windows.Documents.PageContent.GetPageRootCompleted" />
+    <altmember cref="T:System.Windows.Documents.GetPageRootCompletedEventHandler" />
   </Docs>
   <Members>
     <Member MemberName="Result">
@@ -31,6 +34,8 @@
         <summary>Gets the <see cref="T:System.Windows.Documents.FixedPage" /> content asynchronously requested by <see cref="M:System.Windows.Documents.PageContent.GetPageRootAsync(System.Boolean)" />.</summary>
         <value>The root element of the visual tree for the <see cref="T:System.Windows.Documents.PageContent" /> requested by <see cref="M:System.Windows.Documents.PageContent.GetPageRootAsync(System.Boolean)" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Windows.Documents.PageContent.GetPageRootCompleted" />
+        <altmember cref="T:System.Windows.Documents.GetPageRootCompletedEventHandler" />
       </Docs>
     </Member>
   </Members>

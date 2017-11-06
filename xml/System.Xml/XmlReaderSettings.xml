@@ -126,6 +126,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
+        <altmember cref="M:System.Xml.XmlReader.Create(System.String)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -153,6 +155,8 @@
         <param name="resolver">The XML resolver.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Xml.XmlReaderSettings" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
+        <altmember cref="M:System.Xml.XmlReader.Create(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Async">
@@ -280,6 +284,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
+        <altmember cref="M:System.Xml.XmlReader.Create(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CloseInput">
@@ -402,6 +408,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.XmlReader.Create(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="DtdProcessing">
@@ -519,6 +526,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.XmlReader.Create(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="IgnoreProcessingInstructions">
@@ -566,6 +574,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.XmlReader.Create(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="IgnoreWhitespace">
@@ -615,6 +624,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.XmlReader.Create(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="LineNumberOffset">
@@ -652,6 +662,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.XmlReader.Create(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="LinePositionOffset">
@@ -689,6 +700,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.XmlReader.Create(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="MaxCharactersFromEntities">
@@ -1029,6 +1041,8 @@ There is an error in XML document (MaxCharactersInDocument, ).
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
+        <altmember cref="M:System.Xml.XmlReader.Create(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Schemas">
@@ -1093,6 +1107,8 @@ There is an error in XML document (MaxCharactersInDocument, ).
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
+        <altmember cref="M:System.Xml.XmlReader.Create(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ValidationEventHandler">
@@ -1141,6 +1157,8 @@ There is an error in XML document (MaxCharactersInDocument, ).
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
+        <altmember cref="M:System.Xml.XmlReader.Create(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ValidationFlags">
@@ -1199,6 +1217,8 @@ There is an error in XML document (MaxCharactersInDocument, ).
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
+        <altmember cref="M:System.Xml.XmlReader.Create(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ValidationType">
@@ -1261,6 +1281,9 @@ There is an error in XML document (MaxCharactersInDocument, ).
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
+        <altmember cref="M:System.Xml.XmlReader.Create(System.String)" />
+        <altmember cref="T:System.Xml.Schema.XmlSchemaValidationFlags" />
       </Docs>
     </Member>
     <Member MemberName="XmlResolver">
@@ -1312,7 +1335,21 @@ There is an error in XML document (MaxCharactersInDocument, ).
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
+        <altmember cref="M:System.Xml.XmlReader.Create(System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.XmlReaderSettings" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

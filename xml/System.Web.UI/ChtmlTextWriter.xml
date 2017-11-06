@@ -44,6 +44,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.XhtmlTextWriter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -150,6 +151,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.ChtmlTextWriter.RemoveRecognizedAttribute(System.String,System.String)" />
+        <altmember cref="P:System.Web.UI.ChtmlTextWriter.RecognizedAttributes" />
       </Docs>
     </Member>
     <Member MemberName="GlobalSuppressedAttributes">
@@ -183,6 +186,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.ChtmlTextWriter.RecognizedAttributes" />
+        <altmember cref="P:System.Web.UI.ChtmlTextWriter.SuppressedAttributes" />
       </Docs>
     </Member>
     <Member MemberName="OnAttributeRender">
@@ -227,6 +232,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.ChtmlTextWriter.OnStyleAttributeRender(System.String,System.String,System.Web.UI.HtmlTextWriterStyle)" />
       </Docs>
     </Member>
     <Member MemberName="OnStyleAttributeRender">
@@ -261,6 +267,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlTextWriterStyle" />
+        <altmember cref="M:System.Web.UI.ChtmlTextWriter.OnAttributeRender(System.String,System.String,System.Web.UI.HtmlTextWriterAttribute)" />
       </Docs>
     </Member>
     <Member MemberName="OnTagRender">
@@ -293,6 +301,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.HtmlTextWriter.OnTagRender(System.String,System.Web.UI.HtmlTextWriterTag)" />
       </Docs>
     </Member>
     <Member MemberName="RecognizedAttributes">
@@ -318,6 +327,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.ChtmlTextWriter.GlobalSuppressedAttributes" />
+        <altmember cref="P:System.Web.UI.ChtmlTextWriter.SuppressedAttributes" />
+        <altmember cref="M:System.Web.UI.ChtmlTextWriter.AddRecognizedAttribute(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveRecognizedAttribute">
@@ -348,6 +360,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.ChtmlTextWriter.AddRecognizedAttribute(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="SuppressedAttributes">
@@ -388,6 +401,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.ChtmlTextWriter.GlobalSuppressedAttributes" />
+        <altmember cref="P:System.Web.UI.ChtmlTextWriter.RecognizedAttributes" />
+        <altmember cref="M:System.Web.UI.ChtmlTextWriter.RemoveRecognizedAttribute(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="WriteBreak">
@@ -447,6 +463,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.ChtmlTextWriter.WriteEncodedText(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="WriteEncodedText">
@@ -479,7 +496,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.ChtmlTextWriter.WriteBreak" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ChtmlTextWriter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

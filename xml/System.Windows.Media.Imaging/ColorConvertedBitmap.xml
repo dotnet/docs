@@ -42,6 +42,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.Imaging.BitmapSource" />
+    <altmember cref="T:System.Windows.Media.ColorContext" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -103,6 +105,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.ColorContext" />
+        <altmember cref="T:System.Windows.Media.PixelFormat" />
+        <altmember cref="T:System.Windows.Media.PixelFormats" />
+        <altmember cref="T:System.Windows.Media.Imaging.BitmapSource" />
       </Docs>
     </Member>
     <Member MemberName="BeginInit">
@@ -141,6 +147,8 @@
  -or-  
   
  The <see cref="T:System.Windows.Media.Imaging.ColorConvertedBitmap" /> has already been initialized.</exception>
+        <altmember cref="M:System.Windows.Media.Imaging.ColorConvertedBitmap.EndInit" />
+        <altmember cref="T:System.ComponentModel.ISupportInitialize" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -302,6 +310,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.ColorContext" />
       </Docs>
     </Member>
     <Member MemberName="DestinationColorContextProperty">
@@ -363,6 +372,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.PixelFormat" />
+        <altmember cref="T:System.Windows.Media.PixelFormats" />
       </Docs>
     </Member>
     <Member MemberName="DestinationFormatProperty">
@@ -423,6 +434,8 @@
  -or-  
   
  The <see cref="M:System.Windows.Media.Imaging.ColorConvertedBitmap.EndInit" /> method is called without first calling <see cref="M:System.Windows.Media.Imaging.ColorConvertedBitmap.BeginInit" />.</exception>
+        <altmember cref="M:System.Windows.Media.Imaging.ColorConvertedBitmap.BeginInit" />
+        <altmember cref="T:System.ComponentModel.ISupportInitialize" />
       </Docs>
     </Member>
     <Member MemberName="GetAsFrozenCore">
@@ -509,6 +522,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Imaging.BitmapSource" />
       </Docs>
     </Member>
     <Member MemberName="SourceColorContext">
@@ -553,6 +567,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.ColorContext" />
       </Docs>
     </Member>
     <Member MemberName="SourceColorContextProperty">
@@ -596,5 +611,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Imaging.ColorConvertedBitmap" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

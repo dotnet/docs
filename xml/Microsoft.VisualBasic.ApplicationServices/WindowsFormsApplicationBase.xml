@@ -37,6 +37,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase" />
+    <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.ApplicationBase" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -127,6 +129,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ApplicationContext" />
       </Docs>
     </Member>
     <Member MemberName="DoEvents">
@@ -193,6 +196,7 @@
         </remarks>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions related to user interfaces and the Clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" />.</permission>
+        <altmember cref="M:System.Windows.Forms.Application.DoEvents" />
       </Docs>
     </Member>
     <Member MemberName="EnableVisualStyles">
@@ -218,6 +222,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnInitialize(System.Collections.ObjectModel.ReadOnlyCollection{System.String})" />
+        <altmember cref="M:System.Windows.Forms.Application.EnableVisualStyles" />
       </Docs>
     </Member>
     <Member MemberName="HideSplashScreen">
@@ -253,6 +259,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.MinimumSplashScreenDisplayTime" />
+        <altmember cref="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.ShowSplashScreen" />
+        <altmember cref="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateSplashScreen" />
       </Docs>
     </Member>
     <Member MemberName="IsSingleInstance">
@@ -283,6 +292,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Run(System.String[])" />
       </Docs>
     </Member>
     <Member MemberName="MainForm">
@@ -312,6 +322,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Form" />
       </Docs>
     </Member>
     <Member MemberName="MinimumSplashScreenDisplayTime">
@@ -372,6 +383,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.SplashScreen" />
+        <altmember cref="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnInitialize(System.Collections.ObjectModel.ReadOnlyCollection{System.String})" />
+        <altmember cref="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateSplashScreen" />
+        <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase" />
       </Docs>
     </Member>
     <Member MemberName="NetworkAvailabilityChanged">
@@ -436,6 +451,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase" />
+        <altmember cref="N:Microsoft.VisualBasic.ApplicationServices" />
+        <altmember cref="T:Microsoft.VisualBasic.Devices.NetworkAvailableEventHandler" />
+        <altmember cref="E:Microsoft.VisualBasic.Devices.Network.NetworkAvailabilityChanged" />
+        <altmember cref="T:Microsoft.VisualBasic.Devices.NetworkAvailableEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnCreateMainForm">
@@ -544,6 +564,9 @@
  ]]></format>
         </remarks>
         <altCompliant cref="None." />
+        <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.EnableVisualStyles" />
+        <altmember cref="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.ShowSplashScreen" />
+        <altmember cref="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateSplashScreen" />
       </Docs>
     </Member>
     <Member MemberName="OnRun">
@@ -652,6 +675,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.StartupEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnStartupNextInstance">
@@ -689,6 +713,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.IsSingleInstance" />
+        <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs" />
+        <altmember cref="E:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance" />
       </Docs>
     </Member>
     <Member MemberName="OnUnhandledException">
@@ -724,6 +751,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs" />
+        <altmember cref="E:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UnhandledException" />
       </Docs>
     </Member>
     <Member MemberName="OpenForms">
@@ -776,6 +805,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions that are related to user interfaces and the Clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" />.</permission>
+        <altmember cref="T:System.Windows.Forms.FormCollection" />
+        <altmember cref="P:System.Windows.Forms.Application.OpenForms" />
       </Docs>
     </Member>
     <Member MemberName="Run">
@@ -886,6 +917,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Configuration.ApplicationSettingsBase.Save" />
       </Docs>
     </Member>
     <Member MemberName="ShowSplashScreen">
@@ -920,6 +952,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnInitialize(System.Collections.ObjectModel.ReadOnlyCollection{System.String})" />
       </Docs>
     </Member>
     <Member MemberName="Shutdown">
@@ -972,6 +1005,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="ShutdownStyle">
@@ -997,6 +1031,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.ShutdownMode" />
       </Docs>
     </Member>
     <Member MemberName="SplashScreen">
@@ -1050,6 +1085,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The same value is assigned to this property and the <see cref="P:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.MainForm" /> property.</exception>
+        <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.MinimumSplashScreenDisplayTime" />
+        <altmember cref="T:System.Windows.Forms.Form" />
       </Docs>
     </Member>
     <Member MemberName="Startup">
@@ -1111,6 +1148,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">Controls the ability to add an event handler for this event. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlAppDomain" />.</permission>
+        <altmember cref="E:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance" />
+        <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.CommandLineArgs" />
       </Docs>
     </Member>
     <Member MemberName="StartupNextInstance">
@@ -1183,6 +1222,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Startup" />
+        <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.CommandLineArgs" />
+        <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.StartupEventArgs" />
+        <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.StartupEventArgs.CommandLine" />
       </Docs>
     </Member>
     <Member MemberName="UnhandledException">
@@ -1254,6 +1297,10 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">Controls the ability to add an event handler for this event. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlAppDomain" />.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase" />
+        <altmember cref="N:Microsoft.VisualBasic.ApplicationServices" />
+        <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventHandler" />
+        <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="UseCompatibleTextRendering">
@@ -1312,5 +1359,14 @@ End Property
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

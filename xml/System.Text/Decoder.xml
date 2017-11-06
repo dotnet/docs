@@ -59,6 +59,9 @@
     <block subset="none" type="overrides">
       <para>When your application inherits from this class, it must override all the members.</para>
     </block>
+    <altmember cref="T:System.Text.Encoder" />
+    <altmember cref="T:System.Text.Encoding" />
+    <altmember cref="M:System.Text.Encoding.GetChars(System.Byte[],System.Int32,System.Int32)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -104,6 +107,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
     <Member MemberName="Convert">
@@ -328,6 +332,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The value in a set operation is <see langword="null" /> (<see langword="Nothing" />).</exception>
         <exception cref="T:System.ArgumentException">A new value cannot be assigned in a set operation because the current <see cref="T:System.Text.DecoderFallbackBuffer" /> object contains data that has not been decoded yet.</exception>
+        <altmember cref="T:System.Text.EncoderFallback" />
+        <altmember cref="P:System.Text.Encoder.FallbackBuffer" />
       </Docs>
     </Member>
     <Member MemberName="FallbackBuffer">
@@ -371,6 +377,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Text.EncoderFallback" />
+        <altmember cref="P:System.Text.Encoder.Fallback" />
       </Docs>
     </Member>
     <Member MemberName="GetCharCount">
@@ -439,6 +447,8 @@
   
  <see cref="P:System.Text.Decoder.Fallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Text.Decoder.GetChars(System.Byte*,System.Int32,System.Char*,System.Int32,System.Boolean)" />
+        <altmember cref="M:System.Text.Decoder.Reset" />
       </Docs>
     </Member>
     <Member MemberName="GetCharCount">
@@ -512,6 +522,8 @@
  -and-  
   
  <see cref="P:System.Text.Decoder.Fallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.Decoder.GetChars(System.Byte[],System.Int32,System.Int32,System.Char[],System.Int32)" />
+        <altmember cref="M:System.Text.Decoder.Reset" />
       </Docs>
     </Member>
     <Member MemberName="GetCharCount">
@@ -584,6 +596,8 @@
  -and-  
   
  <see cref="P:System.Text.Decoder.Fallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.Decoder.GetChars(System.Byte[],System.Int32,System.Int32,System.Char[],System.Int32,System.Boolean)" />
+        <altmember cref="M:System.Text.Decoder.Reset" />
       </Docs>
     </Member>
     <Member MemberName="GetChars">
@@ -664,6 +678,8 @@
   
  <see cref="P:System.Text.Decoder.Fallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Text.Decoder.GetCharCount(System.Byte*,System.Int32,System.Boolean)" />
+        <altmember cref="M:System.Text.Decoder.Reset" />
       </Docs>
     </Member>
     <Member MemberName="GetChars">
@@ -753,6 +769,8 @@
  -and-  
   
  <see cref="P:System.Text.Decoder.Fallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.Decoder.GetCharCount(System.Byte[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Text.Decoder.Reset" />
       </Docs>
     </Member>
     <Member MemberName="GetChars">
@@ -836,6 +854,8 @@
  -and-  
   
  <see cref="P:System.Text.Decoder.Fallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.Decoder.GetCharCount(System.Byte[],System.Int32,System.Int32,System.Boolean)" />
+        <altmember cref="M:System.Text.Decoder.Reset" />
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -884,5 +904,35 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Convert">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts an encoded byte sequence to a string or array of characters.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetChars">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, decodes a sequence of bytes into a set of characters.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetCharCount">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, calculates the number of characters produced by decoding a sequence of bytes.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

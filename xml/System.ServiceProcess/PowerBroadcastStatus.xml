@@ -19,6 +19,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.ServiceProcess.ServiceBase.OnPowerEvent(System.ServiceProcess.PowerBroadcastStatus)" />
+    <altmember cref="P:System.ServiceProcess.ServiceBase.CanHandlePowerEvent" />
   </Docs>
   <Members>
     <Member MemberName="BatteryLow">

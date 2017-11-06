@@ -396,5 +396,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AttachAll">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Attaches all entities of a collection to the <see cref="T:System.Data.Linq.DataContext" /> in either a modified or unmodified state.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

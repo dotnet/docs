@@ -72,6 +72,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlSchemaContext.FullyQualifyAssemblyNamesInClrNamespaces" />
       </Docs>
     </Member>
     <Member MemberName="SupportMarkupExtensionsWithDuplicateArity">
@@ -100,5 +101,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlSchemaContextSettings" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

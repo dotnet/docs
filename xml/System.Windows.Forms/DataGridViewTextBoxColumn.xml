@@ -38,6 +38,12 @@
     <block subset="none" type="overrides">
       <para>When you derive from <see cref="T:System.Windows.Forms.DataGridViewTextBoxColumn" /> and add new properties to the derived class, be sure to override the <see cref="M:System.Windows.Forms.DataGridViewColumn.Clone" /> method to copy the new properties during cloning operations. You should also call the base class's <see cref="M:System.Windows.Forms.DataGridViewColumn.Clone" /> method so that the properties of the base class are copied to the new cell.</para>
     </block>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewTextBoxCell" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewTextBoxEditingControl" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewTextBoxColumn.SortMode" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -65,6 +71,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewTextBoxColumn.CellTemplate" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewTextBoxCell" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewTextBoxColumn.SortMode" />
       </Docs>
     </Member>
     <Member MemberName="CellTemplate">
@@ -111,6 +121,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The set type is not compatible with type <see cref="T:System.Windows.Forms.DataGridViewTextBoxCell" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewTextBoxColumn.#ctor" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewTextBoxCell" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.InvalidateColumn(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="MaxInputLength">
@@ -144,6 +159,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The value of the <see cref="P:System.Windows.Forms.DataGridViewTextBoxColumn.CellTemplate" /> property is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewTextBoxColumn.CellTemplate" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewTextBoxCell" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewTextBoxCell.MaxInputLength" />
       </Docs>
     </Member>
     <Member MemberName="SortMode">
@@ -190,6 +209,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumnSortMode" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewColumnHeaderCell.SortGlyphDirection" />
+        <altmember cref="Overload:System.Windows.Forms.DataGridView.Sort" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.ColumnHeaderMouseClick" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -209,6 +233,7 @@
         <summary>Gets a string that describes the column.</summary>
         <returns>A <see cref="T:System.String" /> that describes the column.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridViewColumn.ToString" />
       </Docs>
     </Member>
   </Members>

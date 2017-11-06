@@ -27,6 +27,9 @@
   <Docs>
     <summary>The <see cref="T:System.Diagnostics.SymbolStore.SymbolToken" /> structure is an object representation of a token that represents symbolic information.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Diagnostics.SymbolStore.ISymbolMethod" />
+    <altmember cref="T:System.Diagnostics.SymbolStore.ISymbolReader" />
+    <altmember cref="T:System.Diagnostics.SymbolStore.ISymbolWriter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -248,5 +251,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the specified <see cref="T:System.Diagnostics.SymbolStore.SymbolToken" /> is equal to this instance.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

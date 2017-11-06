@@ -40,6 +40,8 @@
  ]]></format>
     </remarks>
     <threadsafe>The properties on this class are copied into a new instance of a <see cref="T:System.Net.WebRequest" /> object for each XML Web service method call. While you can call XML Web service methods on the same <see cref="T:System.Web.Services.Protocols.WebClientProtocol" /> instance from different threads at the same time, there is no synchronization done to ensure that a consistent snapshot of the properties will get transferred to the <see cref="T:System.Net.WebRequest" /> object. Therefore if you need to modify the properties and make concurrent method calls from different threads you should use a different instance of the XML Web service proxy or provide your own synchronization.</threadsafe>
+    <altmember cref="T:System.Web.Services.Protocols.SoapHttpClientProtocol" />
+    <altmember cref="T:System.Net.HttpWebRequest" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -65,6 +67,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Services.Protocols.SoapHttpClientProtocol" />
+        <altmember cref="T:System.Net.HttpWebRequest" />
       </Docs>
     </Member>
     <Member MemberName="Abort">
@@ -84,6 +88,11 @@
       <Docs>
         <summary>Cancels a request to an XML Web service method.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.Services.Protocols.WebClientProtocol.GetWebRequest(System.Uri)" />
+        <altmember cref="M:System.Web.Services.Protocols.WebClientProtocol.GetWebResponse(System.Net.WebRequest)" />
+        <altmember cref="T:System.Net.WebRequest" />
+        <altmember cref="M:System.Net.WebRequest.Abort" />
+        <altmember cref="T:System.Web.Services.Protocols.WebClientAsyncResult" />
       </Docs>
     </Member>
     <Member MemberName="AddToCache">
@@ -139,6 +148,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Net.WebRequest.ConnectionGroupName" />
+        <altmember cref="P:System.Net.HttpWebRequest.ConnectionGroupName" />
       </Docs>
     </Member>
     <Member MemberName="Credentials">
@@ -178,6 +189,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.ICredentials" />
+        <altmember cref="T:System.Net.NetworkCredential" />
       </Docs>
     </Member>
     <Member MemberName="GetFromCache">
@@ -201,6 +214,8 @@
         <summary>Gets an instance of a client protocol handler from the cache.</summary>
         <returns>An instance of a client protocol handler from the cache.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.ICredentials" />
+        <altmember cref="T:System.Net.NetworkCredential" />
       </Docs>
     </Member>
     <Member MemberName="GetWebRequest">
@@ -232,6 +247,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <paramref name="uri" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="T:System.Net.WebRequest" />
+        <altmember cref="M:System.Web.Services.Protocols.WebClientProtocol.GetWebResponse(System.Net.WebRequest)" />
+        <altmember cref="T:System.Net.HttpWebRequest" />
+        <altmember cref="T:System.Web.Services.Protocols.SoapHttpClientProtocol" />
+        <altmember cref="M:System.Web.Services.Protocols.WebClientProtocol.Abort" />
       </Docs>
     </Member>
     <Member MemberName="GetWebResponse">
@@ -256,6 +276,9 @@
         <returns>A response from a synchronous request to an XML Web service method.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Net.WebException">If <see cref="M:System.Web.Services.Protocols.WebClientProtocol.Abort" /> is invoked prior to calling <see cref="M:System.Web.Services.Protocols.WebClientProtocol.GetWebResponse(System.Net.WebRequest)" />.</exception>
+        <altmember cref="M:System.Web.Services.Protocols.WebClientProtocol.GetWebRequest(System.Uri)" />
+        <altmember cref="T:System.Net.WebRequest" />
+        <altmember cref="M:System.Web.Services.Protocols.WebClientProtocol.Abort" />
       </Docs>
     </Member>
     <Member MemberName="GetWebResponse">
@@ -282,6 +305,9 @@
         <returns>A response from an asynchronous request to an XML Web service method.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Net.WebException">If <see cref="M:System.Web.Services.Protocols.WebClientProtocol.Abort" /> is invoked prior to calling <see cref="M:System.Web.Services.Protocols.WebClientProtocol.GetWebResponse(System.Net.WebRequest)" />.</exception>
+        <altmember cref="M:System.Web.Services.Protocols.WebClientProtocol.GetWebRequest(System.Uri)" />
+        <altmember cref="T:System.Net.WebRequest" />
+        <altmember cref="M:System.Web.Services.Protocols.WebClientProtocol.Abort" />
       </Docs>
     </Member>
     <Member MemberName="PreAuthenticate">
@@ -316,6 +342,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Net.HttpWebRequest.PreAuthenticate" />
       </Docs>
     </Member>
     <Member MemberName="RequestEncoding">
@@ -363,6 +390,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Text.Encoding" />
+        <altmember cref="P:System.Net.WebRequest.ContentType" />
+        <altmember cref="T:System.Net.WebRequest" />
       </Docs>
     </Member>
     <Member MemberName="Timeout">
@@ -406,6 +436,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Text.Encoding" />
+        <altmember cref="P:System.Net.WebRequest.ContentType" />
+        <altmember cref="T:System.Net.WebRequest" />
       </Docs>
     </Member>
     <Member MemberName="Url">
@@ -453,6 +486,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Text.Encoding" />
+        <altmember cref="P:System.Net.WebRequest.ContentType" />
+        <altmember cref="T:System.Net.WebRequest" />
       </Docs>
     </Member>
     <Member MemberName="UseDefaultCredentials">
@@ -473,7 +509,23 @@
         <value>
           <see langword="true" /> if the Credentials property is set to the value of the <see cref="P:System.Net.CredentialCache.DefaultCredentials" /> property; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Text.Encoding" />
+        <altmember cref="P:System.Net.WebRequest.ContentType" />
+        <altmember cref="T:System.Net.WebRequest" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetWebResponse">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a response from a request to an XML Web service method. This protected method is called by the XML Web service client infrastructure to get the response from a synchronous XML Web service request.</summary>
+        <altmember cref="M:System.Web.Services.Protocols.WebClientProtocol.GetWebRequest(System.Uri)" />
+        <altmember cref="T:System.Net.WebRequest" />
+        <altmember cref="M:System.Web.Services.Protocols.WebClientProtocol.Abort" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

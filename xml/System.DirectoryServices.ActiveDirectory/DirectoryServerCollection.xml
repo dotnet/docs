@@ -42,6 +42,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="server" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" /> object has not yet been saved in the Active Directory Domain Services store.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" />
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -69,6 +70,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="servers" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" /> object has not yet been saved in the Active Directory Domain Services store.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -97,6 +99,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="server" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" /> object has not yet been saved in the Active Directory Domain Services store.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -125,6 +128,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="array" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> specified is out of range of the destination array.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -152,6 +156,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="server" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" /> object has not yet been saved in the Active Directory Domain Services store.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -182,6 +187,7 @@
           <paramref name="server" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> specified is out of range of the collection.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" /> object has not yet been saved in the Active Directory Domain Services store.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -209,6 +215,7 @@
         <exception cref="T:System.ArgumentNullException">The item specified is <see langword="null" /> (applies to set only).</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> specified is out of range of this collection.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" /> specified has not yet been saved to the Active Directory Domain Services store (applies to set only).</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" />
       </Docs>
     </Member>
     <Member MemberName="OnClear">
@@ -228,6 +235,7 @@
       <Docs>
         <summary>Overrides the <see cref="M:System.Collections.CollectionBase.OnClearComplete" /> method.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Collections.CollectionBase.OnClearComplete" />
       </Docs>
     </Member>
     <Member MemberName="OnClearComplete">
@@ -247,6 +255,7 @@
       <Docs>
         <summary>Overrides the <see cref="M:System.Collections.CollectionBase.OnClearComplete" /> method.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Collections.CollectionBase.OnClearComplete" />
       </Docs>
     </Member>
     <Member MemberName="OnInsertComplete">
@@ -271,6 +280,7 @@
         <param name="value">The new value of the element at <c>index</c>.</param>
         <summary>Overrides the <see cref="M:System.Collections.CollectionBase.OnClearComplete" /> method.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Collections.CollectionBase.OnClearComplete" />
       </Docs>
     </Member>
     <Member MemberName="OnRemoveComplete">
@@ -295,6 +305,7 @@
         <param name="value">The element that was removed from the collection.</param>
         <summary>Overrides the <see cref="M:System.Collections.CollectionBase.OnRemoveComplete(System.Int32,System.Object)" /> method.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Collections.CollectionBase.OnRemoveComplete(System.Int32,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="OnSetComplete">
@@ -321,6 +332,7 @@
         <param name="newValue">The element that replaced <c>oldValue</c>.</param>
         <summary>Overrides the <see cref="M:System.Collections.CollectionBase.OnSetComplete(System.Int32,System.Object,System.Object)" /> method.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Collections.CollectionBase.OnSetComplete(System.Int32,System.Object,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="OnValidate">
@@ -343,6 +355,7 @@
         <param name="value">The element in this collection to validate.</param>
         <summary>Overrides the <see cref="M:System.Collections.CollectionBase.OnValidate(System.Object)" /> method.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Collections.CollectionBase.OnValidate(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -370,6 +383,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="server" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" /> object has not yet been saved in the Active Directory Domain Services store.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" />
       </Docs>
     </Member>
   </Members>

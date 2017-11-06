@@ -67,6 +67,9 @@ public event ChangedEventHandler Changed;
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.SerializableAttribute" />
+    <altmember cref="T:System.Attribute" />
+    <altmember cref="T:System.Runtime.Serialization.ISerializable" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

@@ -867,6 +867,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.Linq.DataContext.ObjectTrackingEnabled" />
       </Docs>
     </Member>
     <Member MemberName="EnableUpdate">
@@ -1303,6 +1304,7 @@ End Sub
         <param name="e">An <see cref="T:System.EventArgs" /> object that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Web.UI.Control.Unload" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.Control.OnUnload(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OrderBy">

@@ -45,6 +45,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Runtime.Serialization.DataContractSerializer" />
+    <altmember cref="T:System.Runtime.Serialization.NetDataContractSerializer" />
+    <altmember cref="T:System.Runtime.Serialization.XmlObjectSerializer" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -731,6 +734,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.Serialization.ISurrogateSelector" />
+        <altmember cref="T:System.Runtime.Serialization.IFormatter" />
       </Docs>
     </Member>
     <MemberGroup MemberName="WriteEndObject">
@@ -980,5 +985,25 @@
         <exception cref="T:System.ServiceModel.QuotaExceededException">the maximum number of object to serialize has been exceeded. Check the <see cref="P:System.Runtime.Serialization.DataContractSerializer.MaxItemsInObjectGraph" /> property.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteStartObject">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the opening XML element using the specified writer.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.NetDataContractSerializer" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

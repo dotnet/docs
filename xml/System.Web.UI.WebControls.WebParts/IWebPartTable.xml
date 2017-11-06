@@ -46,6 +46,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartConnection" />
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.IWebPartField" />
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.IWebPartRow" />
   </Docs>
   <Members>
     <Member MemberName="GetTableData">
@@ -115,6 +118,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.PropertyDescriptorCollection" />
       </Docs>
     </Member>
   </Members>

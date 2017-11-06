@@ -131,6 +131,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.WebControls.DropDownList.BorderColor" />
+    <altmember cref="P:System.Web.UI.WebControls.DropDownList.BorderStyle" />
+    <altmember cref="P:System.Web.UI.WebControls.DropDownList.BorderWidth" />
+    <altmember cref="T:System.Web.UI.WebControls.ListItem" />
+    <altmember cref="T:System.Collections.ArrayList" />
+    <altmember cref="M:System.Web.UI.Control.DataBind" />
+    <altmember cref="P:System.Web.UI.WebControls.DropDownList.SelectedIndex" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -427,6 +434,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListControl.Items" />
       </Docs>
     </Member>
     <Member MemberName="SupportsDisabledAttribute">
@@ -453,6 +461,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.RenderingCompatibility" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.DisabledCssClass" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">

@@ -71,7 +71,7 @@ batchOp.Insert(customer2)
 table.ExecuteBatch(batchOp)
 
 //
-// Retreive all entities in a partition.
+// Retrieve all entities in a partition.
 //
 
 let query =

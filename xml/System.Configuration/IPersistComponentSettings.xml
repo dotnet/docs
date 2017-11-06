@@ -21,6 +21,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.ApplicationSettingsBase" />
   </Docs>
   <Members>
     <Member MemberName="LoadComponentSettings">
@@ -54,6 +55,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Configuration.IPersistComponentSettings.SaveComponentSettings" />
+        <altmember cref="M:System.Configuration.IPersistComponentSettings.ResetComponentSettings" />
+        <altmember cref="M:System.Configuration.ApplicationSettingsBase.Reload" />
       </Docs>
     </Member>
     <Member MemberName="ResetComponentSettings">
@@ -83,6 +87,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Configuration.IPersistComponentSettings.LoadComponentSettings" />
+        <altmember cref="M:System.Configuration.ApplicationSettingsBase.Reset" />
       </Docs>
     </Member>
     <Member MemberName="SaveComponentSettings">
@@ -115,6 +121,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Configuration.IPersistComponentSettings.SaveSettings" />
+        <altmember cref="M:System.Configuration.IPersistComponentSettings.LoadComponentSettings" />
+        <altmember cref="M:System.Configuration.IPersistComponentSettings.ResetComponentSettings" />
+        <altmember cref="T:System.Configuration.SettingsProvider" />
+        <altmember cref="T:System.Configuration.LocalFileSettingsProvider" />
+        <altmember cref="T:System.Configuration.SettingsProviderAttribute" />
+        <altmember cref="T:System.Configuration.ISettingsProviderService" />
       </Docs>
     </Member>
     <Member MemberName="SaveSettings">
@@ -174,6 +187,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Configuration.IPersistComponentSettings.SaveComponentSettings" />
+        <altmember cref="M:System.Configuration.SettingsBase.Save" />
       </Docs>
     </Member>
     <Member MemberName="SettingsKey">
@@ -213,6 +228,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Configuration.IPersistComponentSettings.SaveComponentSettings" />
+        <altmember cref="P:System.Configuration.ApplicationSettingsBase.SettingsKey" />
       </Docs>
     </Member>
   </Members>

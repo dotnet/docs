@@ -639,5 +639,75 @@
           <paramref name="reflectionContext" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SatisfyImportsOnce">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Composes a specified part.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreatePart">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a composable part.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Imports">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether a specified part contains an inport that matches a specified contract.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetTypeIdentity">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the unique identifier for a method or type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ComposeExportedValue&lt;T&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a part from a specified object and composes it with a specified composition container.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreatePartDefinition">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a part definition with the specified type and origin.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddExportedValue&lt;T&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a part from a specified value and adds it to a composition batch.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

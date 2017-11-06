@@ -63,6 +63,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Attribute" />
+    <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+    <altmember cref="T:System.ComponentModel.AttributeCollection" />
+    <altmember cref="T:System.ComponentModel.PropertyDescriptorCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -111,6 +115,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.ReadOnlyAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -145,6 +150,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.ReadOnlyAttribute" />
+        <altmember cref="F:System.ComponentModel.ReadOnlyAttribute.Yes" />
+        <altmember cref="F:System.ComponentModel.ReadOnlyAttribute.No" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -284,6 +292,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.ReadOnlyAttribute" />
+        <altmember cref="T:System.Attribute" />
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+        <altmember cref="T:System.ComponentModel.AttributeCollection" />
+        <altmember cref="T:System.ComponentModel.PropertyDescriptorCollection" />
       </Docs>
     </Member>
     <Member MemberName="No">
@@ -320,6 +333,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.ReadOnlyAttribute" />
+        <altmember cref="F:System.ComponentModel.ReadOnlyAttribute.Yes" />
       </Docs>
     </Member>
     <Member MemberName="Yes">
@@ -354,6 +369,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.ReadOnlyAttribute" />
+        <altmember cref="F:System.ComponentModel.ReadOnlyAttribute.No" />
       </Docs>
     </Member>
   </Members>

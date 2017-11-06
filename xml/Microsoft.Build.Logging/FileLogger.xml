@@ -106,5 +106,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Initialize">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a file logger for a given build event or in a multiprocessor environment.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

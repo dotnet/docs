@@ -86,6 +86,13 @@ public class Things{
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Xml.Serialization.XmlArrayAttribute" />
+    <altmember cref="T:System.Xml.Serialization.XmlAttributeOverrides" />
+    <altmember cref="T:System.Xml.Serialization.XmlAttributes" />
+    <altmember cref="T:System.Xml.Serialization.XmlElementAttributes" />
+    <altmember cref="P:System.Xml.Serialization.XmlAttributes.XmlElements" />
+    <altmember cref="T:System.Xml.Serialization.XmlRootAttribute" />
+    <altmember cref="T:System.Xml.Serialization.XmlSerializer" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -426,6 +433,7 @@ public class Things{
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xml.Serialization.XmlAttributeAttribute.AttributeName" />
       </Docs>
     </Member>
     <Member MemberName="Form">
@@ -676,5 +684,14 @@ attributeFormDefault="unqualified"... >
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.XmlElementAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

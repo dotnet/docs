@@ -35,7 +35,7 @@ The following table summarizes the properties of the primitive F# types.
 |`char`|`System.Char`|Unicode character values.|
 |`string`|`System.String`|Unicode text.|
 |`decimal`|`System.Decimal`|A floating point data type that has at least 28 significant digits.|
-|`unit`|not applicable|Indicates the absence of an actual value. The type has only one formal value, which is denoted (). The unit value, (), is often used as a placeholder where a value is needed but no real value is available or makes sense.|
+|`unit`|not applicable|Indicates the absence of an actual value. The type has only one formal value, which is denoted `()`. The unit value, `()`, is often used as a placeholder where a value is needed but no real value is available or makes sense.|
 |`void`|`System.Void`|Indicates no type or value.|
 |`float32, single`|`System.Single`|A 32-bit floating point type.|
 |`float, double`|`System.Double`|A 64-bit floating point type.|

@@ -17,7 +17,7 @@ public class ArgumentUsageAttribute : Attribute
     // Override ToString() to append the message to what the base generates.
     public override string ToString( )
     {
-        return base.ToString( ) + ":" + usageMsg;
+        return $"{base.ToString()}: {usageMsg}";
     }
 }
 
@@ -37,7 +37,7 @@ public class ArgumentIDAttribute : Attribute
     // Override ToString() to append the GUID to what the base generates.
     public override string ToString( )
     {
-        return base.ToString( ) + "." + instanceGUID.ToString( );
+        return $"{base.ToString()}.{instanceGUID.ToString()}";
     }
 }
 
@@ -101,28 +101,24 @@ class AttributeEqualsDemo
                     typeof(ArgumentIDAttribute) );
 
             // Compare various pairs of attributes for equality.
-            Console.WriteLine( "\nCompare a usage attribute instance to " +
+            Console.WriteLine("\nCompare a usage attribute instance to " +
                 "another instance of the same attribute:" );
-            Console.WriteLine( "   \"{0}\" == \n   \"{1}\" ? {2}",
-                arrayUsageAttr1.ToString(), arrayUsageAttr2.ToString(), 
-                arrayUsageAttr1.Equals( arrayUsageAttr2 ) );
+            Console.WriteLine($"   \"{arrayUsageAttr1}\" == \n" + 
+                    $"   \"{arrayUsageAttr2}\"? {arrayUsageAttr1.Equals( arrayUsageAttr2)}");
 
-            Console.WriteLine( "\nCompare a usage attribute to " +
+            Console.WriteLine("\nCompare a usage attribute to " +
                 "another usage attribute:" );
-            Console.WriteLine( "   \"{0}\" == \n   \"{1}\" ? {2}",
-                arrayUsageAttr1.ToString(), listUsageAttr.ToString(), 
-                arrayUsageAttr1.Equals( listUsageAttr ) );
+            Console.WriteLine($"   \"{arrayUsageAttr1}\" == \n" + 
+                    $"   \"{listUsageAttr}\"? {arrayUsageAttr1.Equals(listUsageAttr)}");
 
-            Console.WriteLine( "\nCompare an ID attribute instance to " +
+            Console.WriteLine("\nCompare an ID attribute instance to " +
                 "another instance of the same attribute:" );
-            Console.WriteLine( "   \"{0}\" == \n   \"{1}\" ? {2}",
-                arrayIDAttr1.ToString(), arrayIDAttr2.ToString(), 
-                arrayIDAttr1.Equals( arrayIDAttr2 ) );
+            Console.WriteLine($"   \"{ arrayIDAttr1}\" == \n" + 
+                    $"   \"{arrayIDAttr2}\"? {arrayIDAttr1.Equals(arrayIDAttr2)}");
 
-            Console.WriteLine( "\nCompare an ID attribute to another ID attribute:" );
-            Console.WriteLine( "   \"{0}\" == \n   \"{1}\" ? {2}",
-                arrayIDAttr1.ToString(), listIDAttr.ToString(), 
-                arrayIDAttr1.Equals( listIDAttr ) );
+            Console.WriteLine("\nCompare an ID attribute to another ID attribute:" );
+            Console.WriteLine($"   \"{arrayIDAttr1}\" == \n" + 
+                    $"   \"{listIDAttr}\"? {arrayIDAttr1.Equals(listIDAttr)}");
         }
         else
             Console.WriteLine( "The parameters information could " +
@@ -132,18 +128,18 @@ class AttributeEqualsDemo
 /*
 The example displays the following output.
 //         Compare a usage attribute instance to another instance of the same attribute:
-//            "ArgumentUsageAttribute:Must pass an array here." ==
-//            "ArgumentUsageAttribute:Must pass an array here." ? True
+//            "ArgumentUsageAttribute: Must pass an array here." ==
+//            "ArgumentUsageAttribute: Must pass an array here."? True
 //         
 //         Compare a usage attribute to another usage attribute:
-//            "ArgumentUsageAttribute:Must pass an array here." ==
-//            "ArgumentUsageAttribute:Can pass param list or array here." ? False
+//            "ArgumentUsageAttribute: Must pass an array here." ==
+//            "ArgumentUsageAttribute: Can pass param list or array here."? False
 //         
 //         Compare an ID attribute instance to another instance of the same attribute:
 //            "ArgumentIDAttribute.22d1a176-4aca-427b-8230-0c1563e13187" ==
-//            "ArgumentIDAttribute.7fa94bba-c290-48e1-a0de-e22f6c1e64f1" ? False
+//            "ArgumentIDAttribute.7fa94bba-c290-48e1-a0de-e22f6c1e64f1"? False
 //         
 //         Compare an ID attribute to another ID attribute:
 //            "ArgumentIDAttribute.22d1a176-4aca-427b-8230-0c1563e13187" ==
-//            "ArgumentIDAttribute.b9eea70d-9c0f-459e-a984-19c46b6c8789" ? False
+//            "ArgumentIDAttribute.b9eea70d-9c0f-459e-a984-19c46b6c8789"? False
 */

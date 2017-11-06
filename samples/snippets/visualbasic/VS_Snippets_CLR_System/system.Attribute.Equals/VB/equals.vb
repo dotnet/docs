@@ -14,7 +14,7 @@ Public Class ArgumentUsageAttribute : Inherits Attribute
            
     ' Append the message to what the base generates.
     Public Overrides Function ToString() As String
-        Return MyBase.ToString() + ":" + usageMsg
+        Return $"{MyBase.ToString()}: {usageMsg}"
     End Function 
 End Class 
 
@@ -32,7 +32,7 @@ Public Class ArgumentIDAttribute : Inherits Attribute
           
     ' Append the GUID to what the base generates.
     Public Overrides Function ToString() As String
-        Return MyBase.ToString() + "." + GUIDinstance.ToString()
+        Return $"{MyBase.ToString()}.{ GUIDinstance}"
     End Function 
 End Class
 
@@ -89,27 +89,23 @@ Module AttributeEqualsDemo
             ' Compare various pairs of attributes for equality.
             Console.WriteLine(vbCrLf & "Compare a usage attribute instance " & _
                 "to another instance of the same attribute:")
-            Console.WriteLine("   ""{0}"" = " & vbCrLf & "   ""{1}"" ? {2}", _
-               arrayUsageAttr1.ToString(), arrayUsageAttr2.ToString(), _
-                arrayUsageAttr1.Equals(arrayUsageAttr2))
+            Console.WriteLine($"   ""{arrayUsageAttr1}"" = {vbCrLf}" + 
+                    $"   ""{arrayUsageAttr2}""? {arrayUsageAttr1.Equals(arrayUsageAttr2)}")  
                  
             Console.WriteLine(vbCrLf & _
                 "Compare a usage attribute to another usage attribute:")
-            Console.WriteLine("   ""{0}"" = " & vbCrLf & "   ""{1}"" ? {2}", _
-                arrayUsageAttr1.ToString(), listUsageAttr.ToString(), _
-                arrayUsageAttr1.Equals(listUsageAttr))
+            Console.WriteLine($"   ""{arrayUsageAttr1}"" = {vbCrLf}" + 
+                    $"   ""{listUsageAttr}""? {arrayUsageAttr1.Equals(listUsageAttr)}") 
                  
             Console.WriteLine(vbCrLf & "Compare an ID attribute instance " & _
                 "to another instance of the same attribute:")
-            Console.WriteLine("   ""{0}"" = " & vbCrLf & "   ""{1}"" ? {2}", _
-                arrayIDAttr1.ToString(), arrayIDAttr2.ToString(), _
-                arrayIDAttr1.Equals(arrayIDAttr2))
+            Console.WriteLine($"   ""{arrayIDAttr1}"" = {vbCrLf}" +
+                    $"   ""{arrayIDAttr2}""? {arrayIDAttr1.Equals(arrayIDAttr2)}")
                  
             Console.WriteLine(vbCrLf & _
                 "Compare an ID attribute to another ID attribute:")
-            Console.WriteLine("   ""{0}"" = " & vbCrLf & "   ""{1}"" ? {2}", _
-                arrayIDAttr1.ToString(), listIDAttr.ToString(), _
-                arrayIDAttr1.Equals(listIDAttr))
+            Console.WriteLine($"   ""{arrayIDAttr1}"" ={vbCrLf}" + 
+                    $"   ""{listIDAttr}"" ? {arrayIDAttr1.Equals(listIDAttr)}")
         Else
             Console.WriteLine("The parameters information could " & _
                 "not be retrieved for method {0}.", mInfo.Name)
@@ -118,18 +114,18 @@ Module AttributeEqualsDemo
 End Module 
 ' The example displays the following output.
 '     Compare a usage attribute instance to another instance of the same attribute:
-'        "ArgumentUsageAttribute:Must pass an array here." =
-'        "ArgumentUsageAttribute:Must pass an array here." ? True
+'        "ArgumentUsageAttribute: Must pass an array here." =
+'        "ArgumentUsageAttribute: Must pass an array here."? True
 '     
 '     Compare a usage attribute to another usage attribute:
-'        "ArgumentUsageAttribute:Must pass an array here." =
-'        "ArgumentUsageAttribute:Can pass param list or array here." ? False
+'        "ArgumentUsageAttribute: Must pass an array here." =
+'        "ArgumentUsageAttribute: Can pass param list or array here."? False
 '     
 '     Compare an ID attribute instance to another instance of the same attribute:
 '        "ArgumentIDAttribute.d4f78468-f1d0-4a08-b6da-58cad249f8ea" =
-'        "ArgumentIDAttribute.9b1151bd-9c87-4e9f-beb0-92375f8c24f7" ? False
+'        "ArgumentIDAttribute.9b1151bd-9c87-4e9f-beb0-92375f8c24f7"? False
 '     
 '     Compare an ID attribute to another ID attribute:
 '        "ArgumentIDAttribute.d4f78468-f1d0-4a08-b6da-58cad249f8ea" =
-'        "ArgumentIDAttribute.7eba47d0-ff29-4e46-9740-e0ba05b39947" ? False
+'        "ArgumentIDAttribute.7eba47d0-ff29-4e46-9740-e0ba05b39947"? False
 

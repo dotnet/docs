@@ -498,7 +498,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In each version of this function, the `userName` string can be in one of a variety of different formats.  For a complete list of the acceptable types of formats, see the ADS_NAME_TYPE_ENUM documentation [here](http://go.microsoft.com/fwlink/?LinkID=99942).  
+The `userName` argument in both overloads of this method must take the form *username* (for example, *mcampbell*) rather than *domain\username* or *username@domain*.   
   
  ]]></format>
         </remarks>
@@ -523,7 +523,7 @@
         <Parameter Name="password" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="userName">The username that is validated on the server.</param>
+        <param name="userName">The username that is validated on the server. See the Remarks section for more information on the format of <paramref name="userName"/>. </param>
         <param name="password">The password that is validated on the server.</param>
         <summary>Creates the connections to the server and returns a Boolean value that specifies whether the specified username and password are valid.</summary>
         <returns>
@@ -532,8 +532,10 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.DirectoryServices.AccountManagement.PrincipalContext.ValidateCredentials%2A> method binds to the server specified in the constructor. If the `username` and `password` parameters are null, the credentials specified in the constructor are validated. If no credential were specified in the constructor, and the `username` and `password` parameters are null, this method validates the default credentials for the current principal.  
-  
+ The <xref:System.DirectoryServices.AccountManagement.PrincipalContext.ValidateCredentials%2A> method binds to the server specified in the constructor. If the `username` and `password` arguments are `null`, the credentials specified in the constructor are validated. If no credential were specified in the constructor, and the `username` and `password` parameters are `null`, this method validates the default credentials for the current principal.  
+
+The `userName` argument must take the form *userName* (for example, *mcampbell*) rather than *domain\username* or *username@domain*.
+
  ]]></format>
         </remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
@@ -558,7 +560,7 @@
         <Parameter Name="options" Type="System.DirectoryServices.AccountManagement.ContextOptions" />
       </Parameters>
       <Docs>
-        <param name="userName">The username that is validated on the server.</param>
+        <param name="userName">The username that is validated on the server. See the Remarks section for information on the format of <paramref name="userName"/>. </param>
         <param name="password">The password that is validated on the server.</param>
         <param name="options">A combination of one or more <see cref="T:System.DirectoryServices.AccountManagement.ContextOptions" /> enumeration values the options used to bind to the server. This parameter can only specify Simple bind with or without SSL, or Negotiate bind.</param>
         <summary>Creates the connections to the server and returns a Boolean value that specifies whether the specified user name and password are valid. This method performs fast credential validation of the username and password.</summary>
@@ -569,10 +571,12 @@
   
 ## Remarks  
  The <xref:System.DirectoryServices.AccountManagement.PrincipalContext.ValidateCredentials%2A> method binds to the server specified in the constructor. If the `username` and `password` parameters are null, the credentials specified in the constructor are validated. If no credential were specified in the constructor, and the `username` and `password` parameters are null, this method validates the default credentials for the current principal.  
-  
+
+The `userName` argument must take the form *username* (for example, *mcampbell*) rather than *domain\username* or *username@domain*. 
+ 
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentException">The <paramref name="options" /> parameter must specify Negotiate when the context type is <see cref="T:System.DirectoryServices.AccountManagement.ContextType.Machine." /></exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="options" /> parameter must specify <see cref="F:System.DirectoryServices.AccountManagement.ContextOptions.Negotiate" /> when the context type is <see cref="F:System.DirectoryServices.AccountManagement.ContextType.Machine." /></exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>

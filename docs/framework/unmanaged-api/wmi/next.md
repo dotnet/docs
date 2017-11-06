@@ -22,7 +22,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ---
 # Next function
-Retrieves the next property in an enumeration that begins with a call to [GetEnumeration](getenumeration.md).  
+Retrieves the next property in an enumeration that begins with a call to [BeginEnumeration](beginenumeration.md).  
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
   

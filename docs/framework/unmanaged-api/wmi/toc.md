@@ -15,7 +15,7 @@
 ## [GetObjectText function](getobjecttext.md)
 ## [GetPropertyOrigin function](getpropertyorigin.md)
 ## [GetPropertyQualifierSet](getpropertyqualifierset.md)
-## [GetQualifierSet](getqualfierset.md)
+## [GetQualifierSet](getqualifierset.md)
 ## [InheritsFrom](inheritsfrom.md)
 ## [Next](next.md)
 ## [NextMethod](nextmethod.md)

@@ -99,7 +99,7 @@ Specifies properties of a <xref:System.Windows.Data.RelativeSource> binding sour
                     </TextBlock.Text>  
                 </TextBlock>  
             </StackPanel>  
-            </DataTemplate>  
+        </DataTemplate>  
     </ListBox.ItemTemplate>  
 ```  
   

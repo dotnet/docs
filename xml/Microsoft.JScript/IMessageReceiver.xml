@@ -19,6 +19,9 @@
     <summary>Defines methods that receive output from a scripting engine. This interface acts as a callback object to capture output that would otherwise go to the console.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.IRedirectOutput" />
+    <altmember cref="T:Microsoft.JScript.Vsa.VsaEngine" />
+    <altmember cref="T:Microsoft.JScript.COMCharStream" />
   </Docs>
   <Members>
     <Member MemberName="Message">
@@ -48,6 +51,9 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.IRedirectOutput" />
+        <altmember cref="T:Microsoft.JScript.Vsa.VsaEngine" />
+        <altmember cref="T:Microsoft.JScript.COMCharStream" />
       </Docs>
     </Member>
   </Members>

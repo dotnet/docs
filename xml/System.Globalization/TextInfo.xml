@@ -51,6 +51,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Globalization.StringInfo" />
   </Docs>
   <Members>
     <Member MemberName="ANSICodePage">
@@ -78,6 +79,9 @@
         <summary>Gets the American National Standards Institute (ANSI) code page used by the writing system represented by the current <see cref="T:System.Globalization.TextInfo" />.</summary>
         <value>The ANSI code page used by the writing system represented by the current <see cref="T:System.Globalization.TextInfo" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Globalization.TextInfo.OEMCodePage" />
+        <altmember cref="P:System.Globalization.TextInfo.MacCodePage" />
+        <altmember cref="P:System.Globalization.TextInfo.EBCDICCodePage" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -126,6 +130,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.MemberwiseClone" />
       </Docs>
     </Member>
     <Member MemberName="CultureName">
@@ -201,6 +206,9 @@
         <summary>Gets the Extended Binary Coded Decimal Interchange Code (EBCDIC) code page used by the writing system represented by the current <see cref="T:System.Globalization.TextInfo" />.</summary>
         <value>The EBCDIC code page used by the writing system represented by the current <see cref="T:System.Globalization.TextInfo" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Globalization.TextInfo.ANSICodePage" />
+        <altmember cref="P:System.Globalization.TextInfo.OEMCodePage" />
+        <altmember cref="P:System.Globalization.TextInfo.MacCodePage" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -245,6 +253,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -287,6 +296,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.GetHashCode" />
+        <altmember cref="T:System.Collections.Hashtable" />
+        <altmember cref="M:System.Globalization.TextInfo.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -488,6 +500,9 @@
         <summary>Gets the Macintosh code page used by the writing system represented by the current <see cref="T:System.Globalization.TextInfo" />.</summary>
         <value>The Macintosh code page used by the writing system represented by the current <see cref="T:System.Globalization.TextInfo" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Globalization.TextInfo.ANSICodePage" />
+        <altmember cref="P:System.Globalization.TextInfo.OEMCodePage" />
+        <altmember cref="P:System.Globalization.TextInfo.EBCDICCodePage" />
       </Docs>
     </Member>
     <Member MemberName="OEMCodePage">
@@ -515,6 +530,9 @@
         <summary>Gets the original equipment manufacturer (OEM) code page used by the writing system represented by the current <see cref="T:System.Globalization.TextInfo" />.</summary>
         <value>The OEM code page used by the writing system represented by the current <see cref="T:System.Globalization.TextInfo" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Globalization.TextInfo.ANSICodePage" />
+        <altmember cref="P:System.Globalization.TextInfo.MacCodePage" />
+        <altmember cref="P:System.Globalization.TextInfo.EBCDICCodePage" />
       </Docs>
     </Member>
     <Member MemberName="ReadOnly">
@@ -567,6 +585,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="textInfo" /> is null.</exception>
+        <altmember cref="M:System.Object.MemberwiseClone" />
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.Serialization.IDeserializationCallback.OnDeserialization">
@@ -597,6 +616,7 @@
         <param name="sender">The source of the deserialization event.</param>
         <summary>Raises the deserialization event when deserialization is complete.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Runtime.Serialization.IDeserializationCallback" />
       </Docs>
     </Member>
     <Member MemberName="ToLower">
@@ -658,6 +678,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Globalization.TextInfo.ToUpper(System.Char)" />
+        <altmember cref="M:System.Globalization.TextInfo.ToTitleCase(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ToLower">
@@ -723,6 +745,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="str" /> is null.</exception>
+        <altmember cref="M:System.Globalization.TextInfo.ToUpper(System.Char)" />
+        <altmember cref="M:System.Globalization.TextInfo.ToTitleCase(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -763,6 +787,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.ToString" />
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="ToTitleCase">
@@ -827,6 +853,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="str" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Globalization.TextInfo.ToLower(System.Char)" />
+        <altmember cref="M:System.Globalization.TextInfo.ToUpper(System.Char)" />
       </Docs>
     </Member>
     <Member MemberName="ToUpper">
@@ -888,6 +916,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Globalization.TextInfo.ToLower(System.Char)" />
+        <altmember cref="M:System.Globalization.TextInfo.ToTitleCase(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ToUpper">
@@ -953,7 +983,29 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="str" /> is null.</exception>
+        <altmember cref="M:System.Globalization.TextInfo.ToLower(System.Char)" />
+        <altmember cref="M:System.Globalization.TextInfo.ToTitleCase(System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToUpper">
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the specified character or string to uppercase.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToLower">
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the specified character or string to lowercase.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

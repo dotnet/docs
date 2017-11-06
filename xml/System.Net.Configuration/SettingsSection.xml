@@ -62,6 +62,8 @@
   
  The configuration element that controls the settings used by an <see cref="T:System.Net.HttpListener" /> object.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.Configuration.HttpListenerElement" />
+        <altmember cref="T:System.Net.HttpListener" />
       </Docs>
     </Member>
     <Member MemberName="HttpWebRequest">
@@ -87,6 +89,8 @@
   
  The configuration element that controls the maximum response header length and other settings used by an <see cref="T:System.Net.HttpWebRequest" /> object.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.Configuration.HttpWebRequestElement" />
+        <altmember cref="T:System.Net.HttpWebRequest" />
       </Docs>
     </Member>
     <Member MemberName="Ipv6">
@@ -112,6 +116,7 @@
   
  The configuration element that controls setting used by IPv6.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.Configuration.Ipv6Element" />
       </Docs>
     </Member>
     <Member MemberName="PerformanceCounters">
@@ -137,6 +142,7 @@
   
  The configuration element that controls setting used network performance counters.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.Configuration.PerformanceCountersElement" />
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -187,6 +193,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.Configuration.ServicePointManagerElement" />
+        <altmember cref="T:System.Net.ServicePointManager" />
       </Docs>
     </Member>
     <Member MemberName="Socket">
@@ -212,6 +220,9 @@
   
  The configuration element that controls settings for sockets.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.Configuration.SocketElement" />
+        <altmember cref="N:System.Net.Sockets" />
+        <altmember cref="T:System.Net.Sockets.Socket" />
       </Docs>
     </Member>
     <Member MemberName="WebProxyScript">
@@ -237,6 +248,7 @@
   
  The configuration element that controls settings for the execution timeout and download timeout used by the Web proxy scripts.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.Configuration.WebProxyScriptElement" />
       </Docs>
     </Member>
     <Member MemberName="WebUtility">
@@ -262,6 +274,8 @@
   
  The configuration element that controls the settings used by an <see cref="T:System.Net.WebUtility" /> object.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.Configuration.WebUtilityElement" />
+        <altmember cref="T:System.Net.WebUtility" />
       </Docs>
     </Member>
   </Members>

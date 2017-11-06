@@ -215,6 +215,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.BaseDataList" />
+    <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+    <altmember cref="T:System.Web.UI.WebControls.Repeater" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -307,6 +310,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="AlternatingItemTemplate">
@@ -362,6 +367,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataList.AlternatingItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DataList.ItemTemplate" />
+        <altmember cref="T:System.Web.UI.ITemplate" />
       </Docs>
     </Member>
     <Member MemberName="CancelCommand">
@@ -410,6 +418,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataListCommandEventHandler" />
+        <altmember cref="M:System.Web.UI.WebControls.DataList.OnCancelCommand(System.Web.UI.WebControls.DataListCommandEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.DataList.DeleteCommand" />
+        <altmember cref="E:System.Web.UI.WebControls.DataList.EditCommand" />
+        <altmember cref="E:System.Web.UI.WebControls.DataList.UpdateCommand" />
       </Docs>
     </Member>
     <Member MemberName="CancelCommandName">
@@ -434,6 +447,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.UI.WebControls.DataList.SelectCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataList.EditCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataList.DeleteCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataList.UpdateCommandName" />
       </Docs>
     </Member>
     <Member MemberName="CreateControlHierarchy">
@@ -539,6 +556,8 @@
         <block subset="none" type="overrides">
           <para>Override this method to create your own derived <see cref="T:System.Web.UI.WebControls.DataListItem" /> type, or to set additional member properties when a <see cref="T:System.Web.UI.WebControls.DataListItem" /> is created.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.DataList.CreateControlHierarchy(System.Boolean)" />
+        <altmember cref="M:System.Web.UI.WebControls.DataList.InitializeItem(System.Web.UI.WebControls.DataListItem)" />
       </Docs>
     </Member>
     <Member MemberName="DeleteCommand">
@@ -581,6 +600,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataListCommandEventHandler" />
+        <altmember cref="M:System.Web.UI.WebControls.DataList.OnDeleteCommand(System.Web.UI.WebControls.DataListCommandEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.DataList.CancelCommand" />
+        <altmember cref="E:System.Web.UI.WebControls.DataList.EditCommand" />
+        <altmember cref="E:System.Web.UI.WebControls.DataList.UpdateCommand" />
       </Docs>
     </Member>
     <Member MemberName="DeleteCommandName">
@@ -605,6 +629,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.UI.WebControls.DataList.SelectCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataList.EditCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataList.UpdateCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataList.CancelCommandName" />
       </Docs>
     </Member>
     <Member MemberName="EditCommand">
@@ -653,6 +681,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataListCommandEventHandler" />
+        <altmember cref="M:System.Web.UI.WebControls.DataList.OnEditCommand(System.Web.UI.WebControls.DataListCommandEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.DataList.CancelCommand" />
+        <altmember cref="E:System.Web.UI.WebControls.DataList.DeleteCommand" />
+        <altmember cref="E:System.Web.UI.WebControls.DataList.UpdateCommand" />
       </Docs>
     </Member>
     <Member MemberName="EditCommandName">
@@ -677,6 +710,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.UI.WebControls.DataList.SelectCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataList.DeleteCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataList.UpdateCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataList.CancelCommandName" />
       </Docs>
     </Member>
     <Member MemberName="EditItemIndex">
@@ -729,6 +766,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The selected value is less than <see langword="0" />.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.DataList.EditItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DataList.EditItemTemplate" />
+        <altmember cref="E:System.Web.UI.WebControls.DataList.EditCommand" />
+        <altmember cref="M:System.Web.UI.WebControls.DataList.OnEditCommand(System.Web.UI.WebControls.DataListCommandEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="EditItemStyle">
@@ -791,6 +832,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <altmember cref="P:System.Web.UI.WebControls.DataList.EditItemIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.DataList.EditItemTemplate" />
+        <altmember cref="E:System.Web.UI.WebControls.DataList.EditCommand" />
+        <altmember cref="M:System.Web.UI.WebControls.DataList.OnEditCommand(System.Web.UI.WebControls.DataListCommandEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="EditItemTemplate">
@@ -846,6 +893,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataList.EditItemIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.DataList.EditItemStyle" />
+        <altmember cref="E:System.Web.UI.WebControls.DataList.EditCommand" />
+        <altmember cref="M:System.Web.UI.WebControls.DataList.OnEditCommand(System.Web.UI.WebControls.DataListCommandEventArgs)" />
+        <altmember cref="T:System.Web.UI.ITemplate" />
       </Docs>
     </Member>
     <Member MemberName="ExtractTemplateRows">
@@ -898,6 +950,16 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Table" />
+        <altmember cref="T:System.Web.UI.WebControls.TableRow" />
+        <altmember cref="T:System.Web.UI.WebControls.TableCell" />
+        <altmember cref="P:System.Web.UI.WebControls.DataList.AlternatingItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.DataList.EditItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.DataList.FooterTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.DataList.HeaderTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.DataList.ItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.DataList.SelectedItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.DataList.SeparatorTemplate" />
       </Docs>
     </Member>
     <Member MemberName="FooterStyle">
@@ -955,6 +1017,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataList.FooterTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.DataGrid.ShowFooter" />
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="FooterTemplate">
@@ -1015,6 +1081,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataList.FooterStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DataList.ShowFooter" />
+        <altmember cref="T:System.Web.UI.ITemplate" />
       </Docs>
     </Member>
     <Member MemberName="GridLines">
@@ -1066,6 +1135,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridLines" />
       </Docs>
     </Member>
     <Member MemberName="HeaderStyle">
@@ -1121,6 +1191,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <altmember cref="P:System.Web.UI.WebControls.DataList.FooterTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.DataList.ShowHeader" />
       </Docs>
     </Member>
     <Member MemberName="HeaderTemplate">
@@ -1179,6 +1253,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataList.HeaderStyle" />
+        <altmember cref="T:System.Web.UI.ITemplate" />
       </Docs>
     </Member>
     <Member MemberName="InitializeItem">
@@ -1211,6 +1287,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataList.CreateItem(System.Int32,System.Web.UI.WebControls.ListItemType)" />
+        <altmember cref="T:System.Web.UI.WebControls.ListItemType" />
       </Docs>
     </Member>
     <Member MemberName="ItemCommand">
@@ -1251,6 +1329,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataListCommandEventHandler" />
+        <altmember cref="M:System.Web.UI.WebControls.DataList.OnItemCommand(System.Web.UI.WebControls.DataListCommandEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ItemCreated">
@@ -1293,6 +1373,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataListItemEventHandler" />
+        <altmember cref="M:System.Web.UI.WebControls.DataList.OnItemCreated(System.Web.UI.WebControls.DataListItemEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ItemDataBound">
@@ -1333,6 +1415,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataListItemEventHandler" />
+        <altmember cref="M:System.Web.UI.WebControls.DataList.OnItemDataBound(System.Web.UI.WebControls.DataListItemEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Items">
@@ -1380,6 +1464,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataListItem" />
+        <altmember cref="E:System.Web.UI.WebControls.DataList.ItemCreated" />
+        <altmember cref="M:System.Web.UI.WebControls.DataList.OnItemCreated(System.Web.UI.WebControls.DataListItemEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ItemStyle">
@@ -1444,6 +1531,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataList.ItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.DataList.AlternatingItemStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="ItemTemplate">
@@ -1501,6 +1592,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataList.AlternatingItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.DataList.ItemStyle" />
+        <altmember cref="T:System.Web.UI.ITemplate" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -1531,6 +1625,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataList.SaveViewState" />
+        <altmember cref="M:System.Web.UI.WebControls.DataList.TrackViewState" />
       </Docs>
     </Member>
     <Member MemberName="OnBubbleEvent">
@@ -1556,6 +1652,7 @@
         <returns>
           <see langword="true" /> if the event has been canceled; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.Control.OnBubbleEvent(System.Object,System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnCancelCommand">
@@ -1612,6 +1709,11 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.DataList.OnCancelCommand(System.Web.UI.WebControls.DataListCommandEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.DataList.OnCancelCommand(System.Web.UI.WebControls.DataListCommandEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.DataList.CancelCommand" />
+        <altmember cref="M:System.Web.UI.WebControls.DataList.OnDeleteCommand(System.Web.UI.WebControls.DataListCommandEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.DataList.OnEditCommand(System.Web.UI.WebControls.DataListCommandEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.DataList.OnUpdateCommand(System.Web.UI.WebControls.DataListCommandEventArgs)" />
+        <altmember cref="T:System.Web.UI.WebControls.DataListCommandEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnDeleteCommand">
@@ -1665,6 +1767,11 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.DataList.OnDeleteCommand(System.Web.UI.WebControls.DataListCommandEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.DataList.OnDeleteCommand(System.Web.UI.WebControls.DataListCommandEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.DataList.DeleteCommand" />
+        <altmember cref="M:System.Web.UI.WebControls.DataList.OnCancelCommand(System.Web.UI.WebControls.DataListCommandEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.DataList.OnEditCommand(System.Web.UI.WebControls.DataListCommandEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.DataList.OnUpdateCommand(System.Web.UI.WebControls.DataListCommandEventArgs)" />
+        <altmember cref="T:System.Web.UI.WebControls.DataListCommandEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnEditCommand">
@@ -1721,6 +1828,11 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.DataList.OnEditCommand(System.Web.UI.WebControls.DataListCommandEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.DataList.OnEditCommand(System.Web.UI.WebControls.DataListCommandEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.DataList.EditCommand" />
+        <altmember cref="M:System.Web.UI.WebControls.DataList.OnCancelCommand(System.Web.UI.WebControls.DataListCommandEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.DataList.OnDeleteCommand(System.Web.UI.WebControls.DataListCommandEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.DataList.OnUpdateCommand(System.Web.UI.WebControls.DataListCommandEventArgs)" />
+        <altmember cref="T:System.Web.UI.WebControls.DataListCommandEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -1749,6 +1861,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.OnInit(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnItemCommand">
@@ -1800,6 +1913,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.DataList.OnItemCommand(System.Web.UI.WebControls.DataListCommandEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.DataList.OnItemCommand(System.Web.UI.WebControls.DataListCommandEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.DataList.ItemCommand" />
+        <altmember cref="T:System.Web.UI.WebControls.DataListCommandEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnItemCreated">
@@ -1853,6 +1968,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.DataList.OnItemCreated(System.Web.UI.WebControls.DataListItemEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.DataList.OnItemCreated(System.Web.UI.WebControls.DataListItemEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.DataList.ItemCreated" />
+        <altmember cref="T:System.Web.UI.WebControls.DataListItemEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnItemDataBound">
@@ -1904,6 +2021,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.DataList.OnItemDataBound(System.Web.UI.WebControls.DataListItemEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.DataList.OnItemDataBound(System.Web.UI.WebControls.DataListItemEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.DataList.ItemDataBound" />
+        <altmember cref="T:System.Web.UI.WebControls.DataListItemEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnUpdateCommand">
@@ -1960,6 +2079,11 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.DataList.OnUpdateCommand(System.Web.UI.WebControls.DataListCommandEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.DataList.OnUpdateCommand(System.Web.UI.WebControls.DataListCommandEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.DataList.UpdateCommand" />
+        <altmember cref="M:System.Web.UI.WebControls.DataList.OnCancelCommand(System.Web.UI.WebControls.DataListCommandEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.DataList.OnDeleteCommand(System.Web.UI.WebControls.DataListCommandEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.DataList.OnEditCommand(System.Web.UI.WebControls.DataListCommandEventArgs)" />
+        <altmember cref="T:System.Web.UI.WebControls.DataListCommandEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="PrepareControlHierarchy">
@@ -1990,6 +2114,7 @@
         <block subset="none" type="overrides">
           <para>Override the <see cref="M:System.Web.UI.WebControls.DataList.PrepareControlHierarchy" /> method to customize styles for controls contained in the <see cref="T:System.Web.UI.WebControls.DataList" /> before they are rendered.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.DataList.RenderContents(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="RenderContents">
@@ -2075,6 +2200,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified number of columns is a negative value.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.DataList.RepeatDirection" />
+        <altmember cref="P:System.Web.UI.WebControls.DataList.RepeatLayout" />
       </Docs>
     </Member>
     <Member MemberName="RepeatDirection">
@@ -2136,6 +2263,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified value is not one of the <see cref="T:System.Web.UI.WebControls.RepeatDirection" /> values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.RepeatDirection" />
+        <altmember cref="P:System.Web.UI.WebControls.DataList.RepeatColumns" />
+        <altmember cref="P:System.Web.UI.WebControls.DataList.RepeatLayout" />
       </Docs>
     </Member>
     <Member MemberName="RepeatLayout">
@@ -2182,6 +2312,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified value is not one of the supported <see cref="T:System.Web.UI.WebControls.RepeatLayout" /> values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.RepeatLayout" />
+        <altmember cref="P:System.Web.UI.WebControls.DataList.RepeatColumns" />
+        <altmember cref="P:System.Web.UI.WebControls.DataList.RepeatDirection" />
+        <altmember cref="P:System.Web.UI.WebControls.DataList.GridLines" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -2212,6 +2346,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataList.TrackViewState" />
+        <altmember cref="M:System.Web.UI.WebControls.DataList.LoadViewState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="SelectCommandName">
@@ -2236,6 +2372,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.UI.WebControls.DataList.EditCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataList.DeleteCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataList.UpdateCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataList.CancelCommandName" />
       </Docs>
     </Member>
     <Member MemberName="SelectedIndex">
@@ -2288,6 +2428,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified value is less than <see langword="-1" />.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.DataList.SelectedItem" />
+        <altmember cref="P:System.Web.UI.WebControls.DataList.SelectedItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DataList.SelectedItemTemplate" />
       </Docs>
     </Member>
     <Member MemberName="SelectedItem">
@@ -2332,6 +2475,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataListItem" />
+        <altmember cref="P:System.Web.UI.WebControls.DataList.SelectedIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.DataList.SelectedItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DataList.SelectedItemTemplate" />
       </Docs>
     </Member>
     <Member MemberName="SelectedItemStyle">
@@ -2394,6 +2541,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataList.SelectedIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.DataList.SelectedItem" />
+        <altmember cref="P:System.Web.UI.WebControls.DataList.SelectedItemTemplate" />
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="SelectedItemTemplate">
@@ -2449,6 +2601,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ITemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.DataList.SelectedIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.DataList.SelectedItem" />
+        <altmember cref="P:System.Web.UI.WebControls.DataList.SelectedItemStyle" />
       </Docs>
     </Member>
     <Member MemberName="SelectedValue">
@@ -2473,6 +2629,9 @@
         <value>The key field value for the selected data list item. The default is <see langword="null" />, which indicates that no data list item is currently selected.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.UI.WebControls.BaseDataList.DataKeyField" /> property has not been set.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.DataKeyField" />
+        <altmember cref="P:System.Web.UI.WebControls.DataList.SelectedIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.DataList.SelectedItem" />
       </Docs>
     </Member>
     <Member MemberName="SeparatorStyle">
@@ -2525,6 +2684,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataList.SeparatorTemplate" />
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="SeparatorTemplate">
@@ -2580,6 +2742,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ITemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.DataList.SeparatorStyle" />
       </Docs>
     </Member>
     <Member MemberName="ShowFooter">
@@ -2624,6 +2788,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataList.FooterStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DataList.FooterTemplate" />
       </Docs>
     </Member>
     <Member MemberName="ShowHeader">
@@ -2668,6 +2834,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataList.HeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DataList.HeaderTemplate" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.IRepeatInfoUser.GetItemStyle">
@@ -2928,6 +3096,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataListCommandEventHandler" />
+        <altmember cref="M:System.Web.UI.WebControls.DataList.OnUpdateCommand(System.Web.UI.WebControls.DataListCommandEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.DataList.CancelCommand" />
+        <altmember cref="E:System.Web.UI.WebControls.DataList.DeleteCommand" />
+        <altmember cref="E:System.Web.UI.WebControls.DataList.EditCommand" />
       </Docs>
     </Member>
     <Member MemberName="UpdateCommandName">
@@ -2952,6 +3125,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.UI.WebControls.DataList.SelectCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataList.EditCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataList.DeleteCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.DataList.CancelCommandName" />
       </Docs>
     </Member>
   </Members>

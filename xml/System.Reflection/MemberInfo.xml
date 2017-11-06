@@ -281,6 +281,8 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">This member belongs to a type that is loaded into the reflection-only context. See [How to: Load Assemblies into the Reflection-Only Context](~/docs/framework/reflection-and-codedom/how-to-load-assemblies-into-the-reflection-only-context.md).</exception>
         <exception cref="T:System.TypeLoadException">A custom attribute type could not be loaded.</exception>
+        <altmember cref="T:System.Object" />
+        <altmember cref="T:System.Reflection.Emit.CustomAttributeBuilder" />
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttributes">
@@ -510,6 +512,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.MemberTypes" />
       </Docs>
     </Member>
     <Member MemberName="MetadataToken">
@@ -602,6 +605,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">This method is not implemented.</exception>
+        <altmember cref="T:System.Reflection.Module" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -1004,5 +1008,15 @@
         <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetCustomAttributes">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, returns custom attributes applied to this member.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

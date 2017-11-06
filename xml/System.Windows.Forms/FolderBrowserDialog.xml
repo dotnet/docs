@@ -46,6 +46,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Windows.Forms.FolderBrowserDialog.RootFolder" />
+    <altmember cref="P:System.Windows.Forms.FolderBrowserDialog.SelectedPath" />
+    <altmember cref="M:System.Windows.Forms.CommonDialog.ShowDialog" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -300,6 +303,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for getting the path. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /></permission>
+        <altmember cref="P:System.Windows.Forms.FolderBrowserDialog.RootFolder" />
       </Docs>
     </Member>
     <Member MemberName="ShowNewFolderButton">

@@ -103,6 +103,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Animation.ClockController.Begin" />
+        <altmember cref="M:System.Windows.Media.Animation.ClockController.Pause" />
+        <altmember cref="M:System.Windows.Media.Animation.ClockController.Resume" />
+        <altmember cref="M:System.Windows.Media.Animation.ClockController.Seek(System.TimeSpan,System.Windows.Media.Animation.TimeSeekOrigin)" />
+        <altmember cref="M:System.Windows.Media.Animation.ClockController.SeekAlignedToLastTick(System.TimeSpan,System.Windows.Media.Animation.TimeSeekOrigin)" />
+        <altmember cref="M:System.Windows.Media.Animation.ClockController.SkipToFill" />
+        <altmember cref="M:System.Windows.Media.Animation.ClockController.Stop" />
+        <altmember cref="M:System.Windows.Media.Animation.ClockController.Remove" />
       </Docs>
     </Member>
     <Member MemberName="CurrentGlobalSpeed">
@@ -147,6 +155,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.Clock.CurrentGlobalSpeed" />
+        <altmember cref="P:System.Windows.Media.Animation.ClockController.SpeedRatio" />
+        <altmember cref="P:System.Windows.Media.Animation.Timeline.SpeedRatio" />
+        <altmember cref="P:System.Windows.Media.Animation.Timeline.AccelerationRatio" />
+        <altmember cref="P:System.Windows.Media.Animation.Timeline.DecelerationRatio" />
       </Docs>
     </Member>
     <Member MemberName="CurrentGlobalTime">
@@ -194,6 +207,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.Timeline.RepeatBehavior" />
       </Docs>
     </Member>
     <Member MemberName="CurrentProgress">
@@ -252,6 +266,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Media.Animation.Clock.CurrentStateInvalidated" />
+        <altmember cref="P:System.Windows.Media.Animation.Clock.CurrentGlobalSpeed" />
+        <altmember cref="P:System.Windows.Media.Animation.Clock.CurrentGlobalTime" />
+        <altmember cref="P:System.Windows.Media.Animation.Clock.CurrentIteration" />
+        <altmember cref="P:System.Windows.Media.Animation.Clock.CurrentProgress" />
+        <altmember cref="P:System.Windows.Media.Animation.Clock.CurrentTime" />
+        <altmember cref="P:System.Windows.Media.Animation.Clock.IsPaused" />
       </Docs>
     </Member>
     <Member MemberName="CurrentStateInvalidated">
@@ -280,6 +301,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.Clock.CurrentState" />
+        <altmember cref="T:System.Windows.Media.Animation.ClockState" />
+        <altmember cref="E:System.Windows.Media.Animation.Clock.CurrentTimeInvalidated" />
       </Docs>
     </Member>
     <Member MemberName="CurrentTime">
@@ -308,6 +332,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.Clock.CurrentProgress" />
       </Docs>
     </Member>
     <Member MemberName="CurrentTimeInvalidated">
@@ -405,6 +430,7 @@
         <block subset="none" type="overrides">
           <para>Derived classes should override this method if they want to modify how they determine the current time.</para>
         </block>
+        <altmember cref="P:System.Windows.Media.Animation.Clock.CurrentTime" />
       </Docs>
     </Member>
     <Member MemberName="HasControllableRoot">
@@ -443,6 +469,7 @@
         <value>
           <see langword="true" /> if this <see cref="T:System.Windows.Media.Animation.Clock" /> or any of its parents is paused; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Media.Animation.ClockController.Pause" />
       </Docs>
     </Member>
     <Member MemberName="NaturalDuration">
@@ -468,6 +495,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Animation.Timeline.GetNaturalDuration(System.Windows.Media.Animation.Clock)" />
       </Docs>
     </Member>
     <Member MemberName="Parent">

@@ -86,6 +86,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="sn" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The <see cref="T:System.Security.Policy.StrongName" /> specified by the <paramref name="sn" /> parameter already has full trust.</exception>
+        <altmember cref="P:System.Security.Policy.PolicyLevel.FullTrustAssemblies" />
       </Docs>
     </Member>
     <Member MemberName="AddFullTrustAssembly">
@@ -126,6 +127,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="snMC" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The <see cref="T:System.Security.Policy.StrongNameMembershipCondition" /> specified by the <paramref name="snMC" /> parameter already has full trust.</exception>
+        <altmember cref="P:System.Security.Policy.PolicyLevel.FullTrustAssemblies" />
       </Docs>
     </Member>
     <Member MemberName="AddNamedPermissionSet">
@@ -231,6 +233,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.AppDomain.SetAppDomainPolicy(System.Security.Policy.PolicyLevel)" />
       </Docs>
     </Member>
     <Member MemberName="FromXml">
@@ -324,6 +327,7 @@
         <returns>The <see cref="T:System.Security.NamedPermissionSet" /> in the current policy level with the specified name, if found; otherwise, <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="T:System.Security.NamedPermissionSet" />
       </Docs>
     </Member>
     <Member MemberName="Label">
@@ -552,6 +556,7 @@
   
  A <see cref="T:System.Security.NamedPermissionSet" /> with the specified name cannot be found.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="T:System.Security.NamedPermissionSet" />
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -802,7 +807,38 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Security.PolicyLevelType" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="RemoveNamedPermissionSet">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes a <see cref="T:System.Security.NamedPermissionSet" /> from the current policy level.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RemoveFullTrustAssembly">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes an assembly from the list of assemblies the policy level uses to evaluate policy.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddFullTrustAssembly">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a <see cref="T:System.Security.Policy.StrongNameMembershipCondition" /> to the list of <see cref="T:System.Security.Policy.StrongNameMembershipCondition" /> objects used to determine whether an assembly is a member of the group of assemblies that should not be evaluated.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -125,6 +125,8 @@
   
  The implementation may also throw exceptions if one of the arguments that the custom markup extension needs in order to provide a value is null, is invalid for its data type, or does not contain a value that the markup extension is capable of processing. The recommended exception to throw is <see cref="T:System.InvalidOperationException" />.</para>
         </block>
+        <altmember cref="T:System.Windows.Markup.IProvideValueTarget" />
+        <altmember cref="T:System.Windows.Markup.IXamlTypeResolver" />
       </Docs>
     </Member>
   </Members>

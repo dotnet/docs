@@ -42,6 +42,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Type" />
+    <altmember cref="T:System.Runtime.InteropServices.UnmanagedType" />
+    <altmember cref="T:System.Guid" />
   </Docs>
   <Members>
     <Member MemberName="BaseType">
@@ -62,6 +65,7 @@
         <value>An <see langword="UnmanagedType" /> object.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">The unmanaged type is not an <see langword="LPArray" /> or a <see langword="SafeArray" />.</exception>
+        <altmember cref="T:System.Runtime.InteropServices.UnmanagedType" />
       </Docs>
     </Member>
     <Member MemberName="DefineByValArray">
@@ -97,6 +101,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The argument is not a simple native type.</exception>
+        <altmember cref="T:System.Runtime.InteropServices.UnmanagedType" />
       </Docs>
     </Member>
     <Member MemberName="DefineByValTStr">
@@ -132,6 +137,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The argument is not a simple native type.</exception>
+        <altmember cref="T:System.Int32" />
+        <altmember cref="T:System.Array" />
+        <altmember cref="T:System.String" />
+        <altmember cref="T:System.Runtime.InteropServices.UnmanagedType" />
       </Docs>
     </Member>
     <Member MemberName="DefineLPArray">
@@ -167,6 +176,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The argument is not a simple native type.</exception>
+        <altmember cref="T:System.Runtime.InteropServices.UnmanagedType" />
       </Docs>
     </Member>
     <Member MemberName="DefineSafeArray">
@@ -202,6 +212,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The argument is not a simple native type.</exception>
+        <altmember cref="T:System.Runtime.InteropServices.UnmanagedType" />
       </Docs>
     </Member>
     <Member MemberName="DefineUnmanagedMarshal">
@@ -235,6 +246,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The argument is not a simple native type.</exception>
+        <altmember cref="T:System.Runtime.InteropServices.UnmanagedType" />
       </Docs>
     </Member>
     <Member MemberName="ElementCount">
@@ -288,6 +300,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.InteropServices.UnmanagedType" />
       </Docs>
     </Member>
     <Member MemberName="IIDGuid">
@@ -315,6 +328,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The argument is not a custom marshaler.</exception>
+        <altmember cref="T:System.Int32" />
+        <altmember cref="T:System.Guid" />
       </Docs>
     </Member>
   </Members>

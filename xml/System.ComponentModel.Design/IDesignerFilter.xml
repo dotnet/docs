@@ -39,6 +39,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.Design.ITypeDescriptorFilterService" />
+    <altmember cref="T:System.ComponentModel.TypeDescriptor" />
   </Docs>
   <Members>
     <Member MemberName="PostFilterAttributes">
@@ -85,6 +87,7 @@
         <block subset="none" type="overrides">
           <para>You can directly filter the dictionary that is accessible through the <paramref name="attributes" /> parameter, or you can leave it unchanged. If you are overriding this method, call the base implementation after you perform your own filtering.</para>
         </block>
+        <altmember cref="M:System.ComponentModel.Design.ITypeDescriptorFilterService.FilterAttributes(System.ComponentModel.IComponent,System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="PostFilterEvents">
@@ -127,6 +130,7 @@
         <block subset="none" type="overrides">
           <para>You can directly filter the dictionary that is accessible through the <paramref name="events" /> parameter, or you can leave it unchanged. If you are overriding this method, call the base implementation after you perform your own filtering.</para>
         </block>
+        <altmember cref="M:System.ComponentModel.Design.ITypeDescriptorFilterService.FilterEvents(System.ComponentModel.IComponent,System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="PostFilterProperties">
@@ -169,6 +173,7 @@
         <block subset="none" type="overrides">
           <para>You can directly filter the dictionary that is accessible through the <paramref name="properties" /> parameter, or you can leave it unchanged. If you are overriding this method, call the base implementation after you perform your own filtering.</para>
         </block>
+        <altmember cref="M:System.ComponentModel.Design.ITypeDescriptorFilterService.FilterProperties(System.ComponentModel.IComponent,System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="PreFilterAttributes">
@@ -215,6 +220,7 @@
         <block subset="none" type="overrides">
           <para>You can directly filter the dictionary that is accessible through the <paramref name="attributes" /> parameter, or you can leave it unchanged. If you are overriding this method, call the base implementation after you perform your own filtering.</para>
         </block>
+        <altmember cref="M:System.ComponentModel.Design.ITypeDescriptorFilterService.FilterAttributes(System.ComponentModel.IComponent,System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="PreFilterEvents">
@@ -257,6 +263,7 @@
         <block subset="none" type="overrides">
           <para>You can directly modify the dictionary that is accessible through the <paramref name="events" /> parameter, or you can leave it unchanged. If you are overriding this method, call the base implementation before you perform your own filtering.</para>
         </block>
+        <altmember cref="M:System.ComponentModel.Design.ITypeDescriptorFilterService.FilterEvents(System.ComponentModel.IComponent,System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="PreFilterProperties">
@@ -299,6 +306,7 @@
         <block subset="none" type="overrides">
           <para>You can directly modify the dictionary that is accessible through the <paramref name="properties" /> parameter, or you can leave it unchanged. If you are overriding this method, call the base implementation before you perform your own filtering.</para>
         </block>
+        <altmember cref="M:System.ComponentModel.Design.ITypeDescriptorFilterService.FilterProperties(System.ComponentModel.IComponent,System.Collections.IDictionary)" />
       </Docs>
     </Member>
   </Members>

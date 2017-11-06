@@ -20,6 +20,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Xaml.XamlNodeQueue" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -161,7 +162,17 @@
         <summary>Gets the associated XAML writer.</summary>
         <value>The associated XAML writer.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Xaml.XamlObjectWriter" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlNodeList" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -3570,5 +3570,329 @@
         </exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AsTextIncludingElevationAndMeasure">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a text representation of <see cref="T:System.Data.Spatial.DbSpatialServices" /> with elevation and measure.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetArea">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a nullable double value that indicates the area of the given value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Distance">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Computes the distance between the closest points in two values.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Intersects">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the two given values spatially intersect.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetCoordinateSystemId">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the coordinate system identifier of the given value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetPointCount">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the number of points in the given value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateWellKnownValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an instance of the well-known value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateProviderValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a provider-specific value compatible with this spatial services implementation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AsGml">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Generates the Geography Markup Language (GML) representation of this value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AsText">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the well-known text representation of the given value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetEndPoint">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the end point of the given value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetMeasure">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the M (Measure) coordinate of the given value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GeometryFromText">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeometry" /> value based on the specified well-known text value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SpatialEquals">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the two given values are spatially equal.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetStartPoint">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.Data.Spatial.DbGeography" /> value that represents the start point of the given DbGeography value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Intersection">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Computes the intersection of two values.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetLength">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a nullable double value that indicates the length of the given value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SymmetricDifference">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Computes the symmetric difference of two values.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetIsClosed">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a nullable Boolean value that whether the given <see cref="T:System.Data.Spatial.DbGeography" /> value is closed.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="PointAt">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a point element of the given value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GeometryFromGml">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeometry" /> value based on the specified Geography Markup Language (GML) value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetElementCount">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the number of elements in the given value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Difference">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Computes the difference of two values.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Disjoint">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the two given values are spatially disjoint.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AsBinary">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the well-known binary representation of the given value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Union">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Computes the union of two values.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GeographyFromGml">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeography" /> value based on the specified Geography Markup Language (GML) value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GeographyFromBinary">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeography" /> value based on the specified well-known binary value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GeographyFromText">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeography" /> value based on the specified well-known text value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Buffer">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a geography value representing all points less than or equal to <paramref name="distance" /> from the given value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GeometryFromBinary">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeometry" /> value based on the specified well-known binary value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetElevation">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the elevation (Z coordinate) of the given value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetIsEmpty">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a nullable Boolean value that whether the given value is closed.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetDimension">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the dimension of the given <see cref="T:System.Data.Spatial.DbGeography" /> value or, if the value is a collections, the largest element dimension.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ElementAt">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an element of the given value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetSpatialTypeName">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates the spatial type name of the given value.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

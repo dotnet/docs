@@ -34,6 +34,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Runtime.InteropServices.CustomMarshalers.ExpandoToDispatchExMarshaler" />
   </Docs>
   <Members>
     <Member MemberName="GetField">
@@ -68,6 +69,7 @@
         <returns>A <see cref="T:System.Reflection.FieldInfo" /> object containing the field information for the named object that meets the search constraints specified in <paramref name="bindingAttr" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Reflection.AmbiguousMatchException">The object implements multiple fields with the same name.</exception>
+        <altmember cref="T:System.Reflection.BindingFlags" />
       </Docs>
     </Member>
     <Member MemberName="GetFields">
@@ -106,6 +108,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.BindingFlags" />
       </Docs>
     </Member>
     <Member MemberName="GetMember">
@@ -146,6 +149,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.BindingFlags" />
       </Docs>
     </Member>
     <Member MemberName="GetMembers">
@@ -184,6 +188,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.BindingFlags" />
       </Docs>
     </Member>
     <Member MemberName="GetMethod">
@@ -218,6 +223,7 @@
         <returns>A <see cref="T:System.Reflection.MethodInfo" /> object containing the method information, with the match being based on the method name and search constraints specified in <paramref name="bindingAttr" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Reflection.AmbiguousMatchException">The object implements multiple methods with the same name.</exception>
+        <altmember cref="T:System.Reflection.BindingFlags" />
       </Docs>
     </Member>
     <Member MemberName="GetMethod">
@@ -265,6 +271,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Reflection.AmbiguousMatchException">The object implements multiple methods with the same name.</exception>
+        <altmember cref="T:System.Reflection.BindingFlags" />
+        <altmember cref="T:System.Reflection.Binder" />
+        <altmember cref="T:System.Type" />
+        <altmember cref="T:System.Reflection.ParameterModifier" />
       </Docs>
     </Member>
     <Member MemberName="GetMethods">
@@ -303,6 +313,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.BindingFlags" />
       </Docs>
     </Member>
     <Member MemberName="GetProperties">
@@ -334,6 +345,7 @@
         <summary>Retrieves an array of <see cref="T:System.Reflection.PropertyInfo" /> objects corresponding to all public properties or to all properties of the current class.</summary>
         <returns>An array of <see cref="T:System.Reflection.PropertyInfo" /> objects for all the properties defined on the reflection object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Reflection.BindingFlags" />
       </Docs>
     </Member>
     <Member MemberName="GetProperty">
@@ -368,6 +380,7 @@
         <returns>A <see cref="T:System.Reflection.PropertyInfo" /> object for the located property that meets the search constraints specified in <paramref name="bindingAttr" />, or <see langword="null" /> if the property was not located.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Reflection.AmbiguousMatchException">The object implements multiple fields with the same name.</exception>
+        <altmember cref="T:System.Reflection.BindingFlags" />
       </Docs>
     </Member>
     <Member MemberName="GetProperty">
@@ -416,6 +429,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.ParameterModifier" />
+        <altmember cref="T:System.Type" />
+        <altmember cref="T:System.Reflection.Binder" />
+        <altmember cref="T:System.Reflection.BindingFlags" />
       </Docs>
     </Member>
     <Member MemberName="InvokeMember">
@@ -490,6 +507,9 @@
         <exception cref="T:System.MissingFieldException">The field or property cannot be found.</exception>
         <exception cref="T:System.MissingMethodException">The method cannot be found.</exception>
         <exception cref="T:System.Security.SecurityException">A private member is invoked without the necessary <see cref="T:System.Security.Permissions.ReflectionPermission" />.</exception>
+        <altmember cref="T:System.Object" />
+        <altmember cref="T:System.Reflection.Binder" />
+        <altmember cref="T:System.Reflection.BindingFlags" />
       </Docs>
     </Member>
     <Member MemberName="UnderlyingSystemType">
@@ -517,7 +537,28 @@
         <summary>Gets the underlying type that represents the <see cref="T:System.Reflection.IReflect" /> object.</summary>
         <value>The underlying type that represents the <see cref="T:System.Reflection.IReflect" /> object.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Object" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetMethod">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves a <see cref="T:System.Reflection.MethodInfo" /> object that corresponds to a specified method.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetProperty">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves a <see cref="T:System.Reflection.PropertyInfo" /> object corresponding to a specified property.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -90,6 +90,8 @@ HelloWorld2
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Resources.ResourceManager" />
+    <altmember cref="T:System.Resources.MissingManifestResourceException" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -321,5 +323,15 @@ HelloWorld2
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Resources.MissingSatelliteAssemblyException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

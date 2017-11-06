@@ -218,6 +218,7 @@
         <summary>Throws a <see cref="T:Microsoft.JScript.JScriptException" /> exception in all cases.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="F:Microsoft.JScript.JSError.TypeMismatch" />
       </Docs>
     </Member>
     <Member MemberName="ToBoolean">
@@ -561,5 +562,32 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToNumber">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts values to <see cref="T:System.Double" /> structures.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToBoolean">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts values to <see cref="T:System.Boolean" /> structures.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts values to <see cref="T:System.String" /> objects.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -50,6 +50,8 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged resources. Security action: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+    <altmember cref="M:System.Windows.SplashScreen.Show(System.Boolean)" />
+    <altmember cref="M:System.Windows.SplashScreen.Close(System.TimeSpan)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -81,6 +83,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged resources. Security action: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+        <altmember cref="M:System.Windows.SplashScreen.#ctor(System.Reflection.Assembly,System.String)" />
+        <altmember cref="T:System.Resources.ResourceManager" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -113,6 +117,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.SplashScreen.#ctor(System.String)" />
+        <altmember cref="T:System.Resources.ResourceManager" />
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -146,6 +152,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.SplashScreen.Show(System.Boolean)" />
+        <altmember cref="T:System.TimeSpan" />
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -183,6 +191,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">The resource specified in the constructor could not be found.</exception>
+        <altmember cref="M:System.Windows.SplashScreen.Close(System.TimeSpan)" />
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -215,5 +224,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Show">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Displays the splash screen.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.SplashScreen" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

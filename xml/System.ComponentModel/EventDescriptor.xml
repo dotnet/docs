@@ -58,6 +58,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.MemberDescriptor" />
+    <altmember cref="T:System.Attribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -198,6 +200,7 @@
         <block subset="none" type="overrides">
           <para>When you override this method, it should add the delegate to the component's event list by invoking the appropriate <c>add_myHandler</c> method.</para>
         </block>
+        <altmember cref="M:System.ComponentModel.EventDescriptor.AddEventHandler(System.Object,System.Delegate)" />
       </Docs>
     </Member>
     <Member MemberName="ComponentType">
@@ -233,6 +236,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.EventDescriptor.EventType" />
+        <altmember cref="P:System.ComponentModel.EventDescriptor.IsMulticast" />
       </Docs>
     </Member>
     <Member MemberName="EventType">
@@ -268,6 +273,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.EventDescriptor.ComponentType" />
+        <altmember cref="P:System.ComponentModel.EventDescriptor.IsMulticast" />
       </Docs>
     </Member>
     <Member MemberName="IsMulticast">
@@ -306,6 +313,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.EventDescriptor.EventType" />
+        <altmember cref="P:System.ComponentModel.EventDescriptor.ComponentType" />
       </Docs>
     </Member>
     <Member MemberName="RemoveEventHandler">
@@ -351,7 +360,18 @@
         <block subset="none" type="overrides">
           <para>When you override this method, it should remove the delegate from the component's event list by invoking the appropriate <c>remove_myHandler</c> method.</para>
         </block>
+        <altmember cref="M:System.ComponentModel.EventDescriptor.AddEventHandler(System.Object,System.Delegate)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.EventDescriptor" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

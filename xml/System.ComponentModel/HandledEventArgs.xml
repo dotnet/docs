@@ -32,6 +32,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.HandledEventHandler" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewCellPaintingEventArgs" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewRowPrePaintEventArgs" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewRowHeightInfoPushedEventArgs" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewSortCompareEventArgs" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -116,5 +121,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.HandledEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

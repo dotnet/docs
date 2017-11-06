@@ -14,6 +14,10 @@
     <summary>Represents a function object.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.FunctionExpression" />
+    <altmember cref="T:Microsoft.JScript.FunctionDeclaration" />
+    <altmember cref="T:Microsoft.JScript.FunctionConstructor" />
+    <altmember cref="T:Microsoft.JScript.FunctionPrototype" />
   </Docs>
   <Members>
     <Member MemberName="ToString">
@@ -34,6 +38,10 @@
         <returns>A string representation of this function object that contains the text of the function.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.FunctionExpression" />
+        <altmember cref="T:Microsoft.JScript.FunctionDeclaration" />
+        <altmember cref="T:Microsoft.JScript.FunctionConstructor" />
+        <altmember cref="T:Microsoft.JScript.FunctionPrototype" />
       </Docs>
     </Member>
   </Members>

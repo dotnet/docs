@@ -32,6 +32,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DataBoundControl" />
+    <altmember cref="T:System.Web.UI.WebControls.HierarchicalDataBoundControl" />
+    <altmember cref="T:System.Web.UI.WebControls.CompositeDataBoundControl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -54,6 +57,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.CompositeDataBoundControl" />
+        <altmember cref="T:System.Web.UI.WebControls.DataBoundControl" />
+        <altmember cref="T:System.Web.UI.WebControls.HierarchicalDataBoundControl" />
+        <altmember cref="T:System.Web.UI.WebControls.ListControl" />
       </Docs>
     </Member>
     <Member MemberName="ConfirmInitState">
@@ -79,6 +86,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataBoundControl.Initialized" />
       </Docs>
     </Member>
     <Member MemberName="DataBind">
@@ -106,6 +114,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataBoundControl.PerformDataBinding(System.Collections.IEnumerable)" />
+        <altmember cref="M:System.Web.UI.WebControls.HierarchicalDataBoundControl.PerformDataBinding" />
       </Docs>
     </Member>
     <Member MemberName="DataBound">
@@ -132,6 +142,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.Control.DataBinding" />
+        <altmember cref="M:System.Web.UI.WebControls.BaseDataBoundControl.OnDataBound(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="DataSource">
@@ -181,6 +193,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataBoundControl.DataSourceID" />
       </Docs>
     </Member>
     <Member MemberName="DataSourceID">
@@ -224,6 +237,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataBoundControl.DataSource" />
       </Docs>
     </Member>
     <Member MemberName="EnsureDataBound">
@@ -251,6 +265,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlSelect.EnsureDataBound" />
       </Docs>
     </Member>
     <Member MemberName="Initialized">
@@ -285,6 +300,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.BaseDataBoundControl.ConfirmInitState" />
+        <altmember cref="M:System.Web.UI.WebControls.BaseDataBoundControl.OnPagePreLoad(System.Object,System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="IsBoundUsingDataSourceID">
@@ -318,6 +335,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ObjectDataSource" />
+        <altmember cref="T:System.Web.UI.WebControls.SqlDataSource" />
       </Docs>
     </Member>
     <Member MemberName="IsDataBindingAutomatic">
@@ -409,6 +428,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.BaseDataBoundControl.OnDataBound(System.EventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Web.UI.WebControls.BaseDataBoundControl.OnDataBound(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="M:System.Web.UI.Control.OnDataBinding(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnDataPropertyChanged">
@@ -443,6 +463,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">An attempt was made to change the property value during the data-binding phase of the control.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataBoundControl.Initialized" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataBoundControl.DataSource" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataBoundControl.DataSourceID" />
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -471,6 +494,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.BaseDataBoundControl.OnPagePreLoad(System.Object,System.EventArgs)" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataBoundControl.RequiresDataBinding" />
       </Docs>
     </Member>
     <Member MemberName="OnPagePreLoad">
@@ -501,6 +526,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataBoundControl.Initialized" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -529,6 +555,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.OnPreRender(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="PerformSelect">
@@ -554,6 +581,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataBoundControl.PerformSelect" />
+        <altmember cref="M:System.Web.UI.WebControls.HierarchicalDataBoundControl.PerformSelect" />
       </Docs>
     </Member>
     <Member MemberName="RequiresDataBinding">
@@ -587,6 +616,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.BaseDataBoundControl.DataBind" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataBoundControl.DataSourceID" />
       </Docs>
     </Member>
     <Member MemberName="SupportsDisabledAttribute">
@@ -613,6 +644,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.RenderingCompatibility" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.DisabledCssClass" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute" />
       </Docs>
     </Member>
     <Member MemberName="ValidateDataSource">

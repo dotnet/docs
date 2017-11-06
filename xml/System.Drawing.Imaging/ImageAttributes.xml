@@ -1671,5 +1671,167 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetGamma">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the gamma value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ClearGamma">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Disables gamma correction.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetWrapMode">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the wrap mode.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetColorKey">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the color key (transparency range).</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ClearColorMatrix">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Clears the color-adjustment matrix.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ClearOutputChannel">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Clears the CMYK (cyan-magenta-yellow-black) output channel setting.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetColorMatrix">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the color-adjustment matrix.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetRemapTable">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the color-remap table.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetOutputChannel">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the CMYK (cyan-magenta-yellow-black) output channel.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetColorMatrices">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the color-adjustment matrix and the grayscale-adjustment matrix.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetOutputChannelColorProfile">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the output channel color-profile file.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetNoOp">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Turns off color adjustment.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ClearColorKey">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Clears the color key (transparency range).</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ClearNoOp">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Clears the <see langword="NoOp" /> setting.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ClearRemapTable">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Clears the color-remap table.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetThreshold">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the threshold (transparency range).</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ClearThreshold">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Clears the threshold value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ClearOutputChannelColorProfile">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Clears the output channel color profile setting.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

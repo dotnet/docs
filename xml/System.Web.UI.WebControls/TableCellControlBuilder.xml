@@ -20,6 +20,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.ControlBuilderAttribute" />
+    <altmember cref="T:System.Web.UI.ControlBuilder" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,6 +37,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.TableCellControlBuilder" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.ControlBuilder" />
       </Docs>
     </Member>
     <Member MemberName="AllowWhitespaceLiterals">
@@ -62,6 +65,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.ControlBuilder.AllowWhitespaceLiterals" />
       </Docs>
     </Member>
   </Members>

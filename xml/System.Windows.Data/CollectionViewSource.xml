@@ -930,6 +930,7 @@
         <returns>
           <see langword="true" /> if the listener handled the event; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.IWeakEventListener.ReceiveWeakEvent(System.Type,System.Object,System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="SortDescriptions">

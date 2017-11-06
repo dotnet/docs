@@ -36,6 +36,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ListView" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -58,6 +59,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
       </Docs>
     </Member>
     <Member MemberName="ActionLists">
@@ -76,6 +78,7 @@
         <summary>Gets the list of items that are is used to create a smart tag panel for the <see cref="T:System.Web.UI.WebControls.ListView" /> control.</summary>
         <value>The <see cref="T:System.ComponentModel.Design.DesignerActionListCollection" /> object that is associated with this designer.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeHtml">
@@ -102,6 +105,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.LayoutTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.ItemTemplate" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.ListViewDesigner.GetEmptyDesignTimeHtml" />
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeHtml">
@@ -124,6 +131,7 @@
         <summary>Generates the HTML markup that is used to render the associated <see cref="T:System.Web.UI.WebControls.ListView" /> control at design time, and populates the specified collection with the currently selected designer region.</summary>
         <returns>The HTML markup that is used to render the associated <see cref="T:System.Web.UI.WebControls.ListView" /> control at design time.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
       </Docs>
     </Member>
     <Member MemberName="GetEditableDesignerRegionContent">
@@ -153,6 +161,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
       </Docs>
     </Member>
     <Member MemberName="GetEmptyDesignTimeHtml">
@@ -179,6 +188,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.ItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.LayoutTemplate" />
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -209,6 +221,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
       </Docs>
     </Member>
     <Member MemberName="OnComponentChanged">
@@ -292,6 +305,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataPager" />
+        <altmember cref="P:System.Web.UI.WebControls.DataPager.PageSize" />
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.LayoutTemplate" />
       </Docs>
     </Member>
     <Member MemberName="SetEditableDesignerRegionContent">
@@ -315,6 +332,7 @@
         <param name="content">The content to assign for the editable design region.</param>
         <summary>Specifies the content for an editable region of the <see cref="T:System.Web.UI.WebControls.ListView" /> control at design time.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
       </Docs>
     </Member>
     <Member MemberName="UsePreviewControl">
@@ -334,7 +352,18 @@
         <value>
           <see langword="true" /> in all cases.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetDesignTimeHtml">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Generates the HTML markup that is used to render the associated <see cref="T:System.Web.UI.WebControls.ListView" /> control at design time.</summary>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

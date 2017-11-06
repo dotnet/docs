@@ -255,5 +255,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CopyTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies the elements of the <see cref="T:System.Data.Odbc.OdbcErrorCollection" /> into an array, starting at the specified index within the array.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

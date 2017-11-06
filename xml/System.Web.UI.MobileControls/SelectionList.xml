@@ -321,6 +321,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.ListDataBindEventArgs" />
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListDataBindEventArgs" />
+        <altmember cref="M:System.Web.UI.MobileControls.SelectionList.OnItemDataBind(System.Web.UI.MobileControls.ListDataBindEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Items">
@@ -679,6 +683,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.SelectionList.OnSelectedIndexChanged(System.EventArgs)" />
+        <altmember cref="P:System.Web.UI.MobileControls.SelectionList.SelectedIndex" />
       </Docs>
     </Member>
     <Member MemberName="Selection">

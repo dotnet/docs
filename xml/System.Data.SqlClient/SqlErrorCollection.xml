@@ -47,6 +47,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Data.SqlClient.SqlError" />
+    <altmember cref="T:System.Data.SqlClient.SqlException" />
   </Docs>
   <Members>
     <Member MemberName="CopyTo">
@@ -236,6 +238,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">Index parameter is outside array bounds.</exception>
+        <altmember cref="P:System.Data.SqlClient.SqlErrorCollection.Count" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -309,5 +312,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CopyTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies the elements of the <see cref="T:System.Data.SqlClient.SqlErrorCollection" /> collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

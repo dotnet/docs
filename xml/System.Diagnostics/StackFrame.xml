@@ -52,6 +52,7 @@
  ]]></format>
     </remarks>
     <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for the ability of inheritors to access unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />. This class cannot be inherited by partially trusted code.</permission>
+    <altmember cref="T:System.Diagnostics.StackTrace" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -447,6 +448,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.DebuggableAttribute" />
       </Docs>
     </Member>
     <Member MemberName="GetMethod">
@@ -531,6 +533,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.DebuggableAttribute" />
       </Docs>
     </Member>
     <Member MemberName="OFFSET_UNKNOWN">
@@ -609,5 +612,15 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to the path information. Associated enumeration: <see cref="T:System.Security.Permissions.FileIOPermissionAccess" /></permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.StackFrame" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

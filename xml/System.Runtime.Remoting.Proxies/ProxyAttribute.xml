@@ -44,6 +44,7 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.Permissions.SecurityPermission">For operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission Value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+    <altmember cref="T:System.Runtime.Remoting.Proxies.RealProxy" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

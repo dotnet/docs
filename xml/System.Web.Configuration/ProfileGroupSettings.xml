@@ -30,6 +30,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Configuration.ProfileSection" />
+    <altmember cref="T:System.Web.Configuration.RootProfilePropertySettingsCollection" />
+    <altmember cref="T:System.Web.Configuration.ProfileGroupSettingsCollection" />
+    <altmember cref="T:System.Web.Configuration.ProfilePropertySettingsCollection" />
+    <altmember cref="T:System.Web.Configuration.ProfilePropertySettings" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -78,6 +83,7 @@
         <returns>
           <see langword="true" /> if the specified <see langword="Object" /> is equal to the current <see langword="Object" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -97,6 +103,7 @@
         <summary>Gets a unique value representing the current <see cref="T:System.Configuration.ConfigurationElement" /> instance.</summary>
         <returns>A unique value representing the current <see cref="T:System.Configuration.ConfigurationElement" /> instance.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Configuration.ConfigurationElement.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -135,6 +142,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.ProfileGroupSettings" />
+        <altmember cref="T:System.Web.Configuration.ProfileGroupSettingsCollection" />
+        <altmember cref="T:System.Web.Configuration.ProfilePropertySettingsCollection" />
+        <altmember cref="T:System.Web.Configuration.ProfilePropertySettings" />
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -186,6 +197,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.ProfilePropertySettingsCollection" />
+        <altmember cref="T:System.Web.Configuration.ProfilePropertySettings" />
       </Docs>
     </Member>
   </Members>

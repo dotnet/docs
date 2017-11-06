@@ -51,6 +51,10 @@
     <block subset="none" type="overrides">
       <para>When you inherit from the <see cref="T:System.Web.UI.Design.DesignerAutoFormat" /> class, you must override the <see cref="M:System.Web.UI.Design.DesignerAutoFormat.Apply(System.Web.UI.Control)" /> method to preview a formatted control and to apply the selected format to your control.</para>
     </block>
+    <altmember cref="T:System.Web.UI.Design.DesignerAutoFormatCollection" />
+    <altmember cref="T:System.Web.UI.Design.DesignerAutoFormatStyle" />
+    <altmember cref="P:System.Web.UI.Design.ControlDesigner.AutoFormats" />
+    <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -78,6 +82,9 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="name" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.UI.Design.DesignerAutoFormat" />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.AutoFormats" />
+        <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
       </Docs>
     </Member>
     <Member MemberName="Apply">
@@ -117,6 +124,9 @@
         <block subset="none" type="overrides">
           <para>When you inherit from the <see cref="T:System.Web.UI.Design.DesignerAutoFormat" /> class, you must override the <see cref="M:System.Web.UI.Design.DesignerAutoFormat.Apply(System.Web.UI.Control)" /> method.</para>
         </block>
+        <altmember cref="T:System.Web.UI.Design.DesignerAutoFormat" />
+        <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
+        <altmember cref="T:System.Web.UI.Design.DesignerAutoFormatCollection" />
       </Docs>
     </Member>
     <Member MemberName="GetPreviewControl">
@@ -155,6 +165,8 @@
   
 -   The control must be populated with sample data in order to present a sufficient preview.</para>
         </block>
+        <altmember cref="T:System.Web.UI.Design.DesignerAutoFormat" />
+        <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -188,6 +200,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.DesignerAutoFormat" />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.AutoFormats" />
+        <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
       </Docs>
     </Member>
     <Member MemberName="Style">
@@ -221,6 +236,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.DesignerAutoFormat" />
+        <altmember cref="T:System.Web.UI.Design.DesignerAutoFormatStyle" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -247,6 +264,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.DesignerAutoFormat" />
+        <altmember cref="P:System.Web.UI.Design.DesignerAutoFormat.Name" />
+        <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
       </Docs>
     </Member>
   </Members>

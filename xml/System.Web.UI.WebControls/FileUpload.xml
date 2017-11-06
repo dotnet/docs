@@ -161,6 +161,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Web.UI.WebControls.FileUpload.SaveAs(System.String)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -220,6 +221,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="AllowMultiple">
@@ -294,6 +297,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The entire file was not read.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.FileUpload.HasFile" />
       </Docs>
     </Member>
     <Member MemberName="FileContent">
@@ -335,6 +339,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.Stream" />
+        <altmember cref="M:System.Web.UI.WebControls.FileUpload.SaveAs(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="FileName">
@@ -376,6 +382,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.FileUpload.SaveAs(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="HasFile">
@@ -418,6 +425,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.FileUpload.SaveAs(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="HasFiles">
@@ -523,6 +531,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.HttpPostedFile" />
       </Docs>
     </Member>
     <Member MemberName="PostedFiles">
@@ -577,6 +586,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="SaveAs">
@@ -623,6 +633,7 @@
         </remarks>
         <exception cref="T:System.Web.HttpException">
           <paramref name="filename" /> is not a full path.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.FileUpload.HasFile" />
       </Docs>
     </Member>
   </Members>

@@ -1812,5 +1812,59 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FindUsersByName">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a collection of membership users where the user name contains the specified user name to match.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetUser">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the information for a membership user from the data source.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DeleteUser">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Deletes a user from the database.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FindUsersByEmail">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a collection of membership users where the e-mail address contains the specified e-mail address to match.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateUser">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a new user to the data store.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetAllUsers">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a collection of the users in the database.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

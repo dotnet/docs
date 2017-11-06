@@ -25,6 +25,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.ProviderConnectionPoint" />
+    <altmember cref="T:System.Collections.ReadOnlyCollectionBase" />
+    <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.GetProviderConnectionPoints(System.Web.UI.WebControls.WebParts.WebPart)" />
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -102,6 +105,7 @@
  \- or -  
   
  There are duplicate IDs in the collection of connection points.</exception>
+        <altmember cref="T:System.Collections.ICollection" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -125,6 +129,7 @@
         <returns>
           <see langword="true" /> if the provider connection point is contained in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Collections.IList.Contains(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -157,6 +162,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -182,6 +188,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.UI.WebControls.WebParts.ConnectionPoint.DefaultID" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -213,6 +220,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.IList.IndexOf(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -235,6 +243,7 @@
         <summary>Gets a member of the collection based on its position in the collection.</summary>
         <value>A <see cref="T:System.Web.UI.WebControls.WebParts.ProviderConnectionPoint" /> at the index specified.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Collections.IList.Item(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -259,5 +268,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a specific member of the collection according to its position or a unique identifier.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

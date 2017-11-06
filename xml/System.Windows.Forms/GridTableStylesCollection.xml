@@ -45,6 +45,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGrid" />
+    <altmember cref="P:System.Windows.Forms.DataGridTableStyle.GridColumnStyles" />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -375,6 +377,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.GridTableStylesCollection.Contains(System.Windows.Forms.DataGridTableStyle)" />
+        <altmember cref="M:System.Windows.Forms.GridTableStylesCollection.Add(System.Windows.Forms.DataGridTableStyle)" />
+        <altmember cref="M:System.Windows.Forms.GridTableStylesCollection.RemoveAt(System.Int32)" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.TableStyles" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -403,6 +409,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.GridTableStylesCollection.Contains(System.Windows.Forms.DataGridTableStyle)" />
+        <altmember cref="M:System.Windows.Forms.GridTableStylesCollection.Add(System.Windows.Forms.DataGridTableStyle)" />
+        <altmember cref="M:System.Windows.Forms.GridTableStylesCollection.Remove(System.Windows.Forms.DataGridTableStyle)" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.TableStyles" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -742,5 +752,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Contains">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a value indicating whether the <see cref="T:System.Windows.Forms.GridTableStylesCollection" /> contains the specified <see cref="T:System.Windows.Forms.DataGridTableStyle" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the specified <see cref="T:System.Windows.Forms.DataGridTableStyle" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -34,6 +34,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Messaging.MessageQueueErrorCode" />
+    <altmember cref="T:System.Messaging.MessageQueue" />
+    <altmember cref="T:System.Messaging.Message" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -78,6 +81,8 @@
         <summary>Populates a serialization information object with the data needed to serialize the <see cref="T:System.Messaging.MessageQueueException" />.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
       </Docs>
     </Member>
     <Member MemberName="Message">
@@ -103,6 +108,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.MessageQueueException.MessageQueueErrorCode" />
       </Docs>
     </Member>
     <Member MemberName="MessageQueueErrorCode">
@@ -128,6 +134,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Messaging.MessageQueueErrorCode" />
+        <altmember cref="P:System.Messaging.MessageQueueException.Message" />
       </Docs>
     </Member>
   </Members>

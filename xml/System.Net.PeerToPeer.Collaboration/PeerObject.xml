@@ -36,6 +36,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" />
+    <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerCollaboration" />
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -53,6 +55,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerCollaboration" />
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -75,6 +78,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerCollaboration" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -95,6 +99,7 @@
         <param name="streamingContext">The serialization destination associated with the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" />.</param>
         <summary>Initializes a new <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> instance with the associated parameters required for serialization.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -125,6 +130,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">One of the arguments provided to this method is not valid.</exception>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerCollaboration" />
       </Docs>
     </Member>
     <Member MemberName="Data">
@@ -316,6 +322,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
       </Docs>
     </Member>
     <Member MemberName="Id">
@@ -392,6 +399,7 @@
         <summary>Signaled when a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> instance with the specified ID is added, updated or removed by a remote peer.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> instance associated with this change has been disposed.</exception>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.ObjectChangedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="PeerScope">
@@ -411,6 +419,7 @@
         <value>PeerScope that specifies the scope in which the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> is registered.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> instance has been disposed.</exception>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerScope" />
       </Docs>
     </Member>
     <Member MemberName="SynchronizingObject">
@@ -469,6 +478,7 @@
         <param name="context">The destination for the serialization.</param>
         <summary>Populates the current <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> instance with the data obtained from the serialized source.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -491,5 +501,24 @@
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> instance has been disposed.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> to the specified object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases all resources utilized by the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" />.</summary>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

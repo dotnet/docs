@@ -40,6 +40,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="metadata" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.AttributeMetadata" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -69,6 +70,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="metadata" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> specified is out of range of the destination array.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.AttributeMetadata" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -95,6 +97,7 @@
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="metadata" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.AttributeMetadata" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -118,6 +121,7 @@
         <summary>Gets an <see cref="T:System.DirectoryServices.ActiveDirectory.AttributeMetadata" /> object in this collection.</summary>
         <value>The <see cref="T:System.DirectoryServices.ActiveDirectory.AttributeMetadata" /> object that exists at the specified index.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.AttributeMetadata" />
       </Docs>
     </Member>
   </Members>

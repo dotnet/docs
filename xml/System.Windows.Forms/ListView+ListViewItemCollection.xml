@@ -42,6 +42,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ListView.SelectedListViewItemCollection" />
+    <altmember cref="T:System.Windows.Forms.ListView.SelectedIndexCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -98,6 +100,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.AddRange(System.Windows.Forms.ListViewItem[])" />
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.Insert(System.Int32,System.Windows.Forms.ListViewItem)" />
+        <altmember cref="P:System.Windows.Forms.ListView.Sorting" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -131,6 +136,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.AddRange(System.Windows.Forms.ListViewItem[])" />
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.Insert(System.Int32,System.Windows.Forms.ListViewItem)" />
+        <altmember cref="P:System.Windows.Forms.ListView.Sorting" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -164,6 +172,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.AddRange(System.Windows.Forms.ListViewItem[])" />
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.Insert(System.Int32,System.Windows.Forms.ListViewItem)" />
+        <altmember cref="P:System.Windows.Forms.ListView.Sorting" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -356,6 +367,9 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="items" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.Add(System.String)" />
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.Insert(System.Int32,System.Windows.Forms.ListViewItem)" />
+        <altmember cref="T:System.Windows.Forms.ListViewItem" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -381,6 +395,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.Remove(System.Windows.Forms.ListViewItem)" />
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -411,6 +427,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.IndexOf(System.Windows.Forms.ListViewItem)" />
       </Docs>
     </Member>
     <Member MemberName="ContainsKey">
@@ -589,6 +606,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.Contains(System.Windows.Forms.ListViewItem)" />
       </Docs>
     </Member>
     <Member MemberName="IndexOfKey">
@@ -659,6 +677,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than 0 or greater than the value of the <see cref="P:System.Windows.Forms.ListView.ListViewItemCollection.Count" /> property of the <see cref="T:System.Windows.Forms.ListView.ListViewItemCollection" />.</exception>
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.Add(System.String)" />
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.AddRange(System.Windows.Forms.ListViewItem[])" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -696,6 +716,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than 0 or greater than the value of the <see cref="P:System.Windows.Forms.ListView.ListViewItemCollection.Count" /> property of the <see cref="T:System.Windows.Forms.ListView.ListViewItemCollection" />.</exception>
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.Add(System.String)" />
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.AddRange(System.Windows.Forms.ListViewItem[])" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -737,6 +759,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than 0 or greater than the value of the <see cref="P:System.Windows.Forms.ListView.ListViewItemCollection.Count" /> property of the <see cref="T:System.Windows.Forms.ListView.ListViewItemCollection" />.</exception>
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.Add(System.String)" />
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.AddRange(System.Windows.Forms.ListViewItem[])" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -892,6 +916,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than 0 or greater than or equal to the value of the <see cref="P:System.Windows.Forms.ListView.ListViewItemCollection.Count" /> property of the <see cref="T:System.Windows.Forms.ListView.ListViewItemCollection" />.</exception>
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.IndexOf(System.Windows.Forms.ListViewItem)" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -950,6 +975,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="T:System.Windows.Forms.ListViewItem" /> assigned to the <paramref name="item" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.RemoveAt(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.Clear" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -979,6 +1006,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than 0 or greater than or equal to the value of the <see cref="P:System.Windows.Forms.ListView.ListViewItemCollection.Count" /> property of the <see cref="T:System.Windows.Forms.ListView.ListViewItemCollection" />.</exception>
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.Remove(System.Windows.Forms.ListViewItem)" />
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.Clear" />
       </Docs>
     </Member>
     <Member MemberName="RemoveByKey">
@@ -1221,5 +1250,41 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddRange">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds an array of items to the collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets an item in the collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Insert">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Inserts an item into the collection at the specified index.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds an item to the collection of items.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

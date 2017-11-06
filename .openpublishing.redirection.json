@@ -1033,12 +1033,32 @@
             "redirect_url": "/dotnet/csharp/getting-started"
         },
         {
+            "source_path": "docs/core/porting/nuget-packages.md",
+            "redirect_url": "/dotnet/core/packages"
+        },
+        {
+            "source_path": "docs/core/tutorials/cli-console-app-tutorial-advanced.md",
+            "redirect_url": "/dotnet/core/tutorials"
+        },
+        {
+            "source_path": "docs/core/versions/servicing.md",
+            "redirect_url": "/dotnet/core/versions"
+        },
+        {
+            "source_path": "docs/csharp/reflection.md",
+            "redirect_url": "/dotnet/framework/reflection-and-codedom"
+        },
+        {
+            "source_path": "docs/csharp/roslyn/index.md",
+            "redirect_url": "/dotnet/csharp/" /* temporary: roslyn conceptual is coming soon */
+        },
+        {
             "source_path": "docs/csharp/programming-guide/strings/how-to-convert-between-legacy-encondings-and-unicode.md",
-            "redirect_url": "https://msdn.microsoft.com/en-us/library/cc165448(v=vs.140).aspx"
+            "redirect_url": "https://msdn.microsoft.com/en-us/library/cc165448(v=vs.120).aspx"
         },
         {
             "source_path": "docs/csharp/programming-guide/strings/how-to-convert-rtf-to-plain-text.md",
-            "redirect_url": "https://msdn.microsoft.com/en-us/library/cc488002(v=vs.140).aspx"
+            "redirect_url": "https://msdn.microsoft.com/en-us/library/cc488002(v=vs.120).aspx"
         },
         {
             "source_path": "docs/csharp/parallel.md",

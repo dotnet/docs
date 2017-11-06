@@ -13,6 +13,9 @@
   <Docs>
     <summary>Provides qualifying information to a callback method when a <see cref="E:System.Net.PeerToPeer.Collaboration.ContactManager.PresenceChanged" /> or <see cref="E:System.Net.PeerToPeer.Collaboration.PeerCollaboration.LocalPresenceChanged" /> event occurs.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerCollaboration" />
+    <altmember cref="T:System.Net.PeerToPeer.Collaboration.ContactManager" />
+    <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerPresenceStatus" />
   </Docs>
   <Members>
     <Member MemberName="PeerChangeType">
@@ -32,6 +35,10 @@
         <value>
           <see cref="T:System.Net.PeerToPeer.Collaboration.PeerChangeType" /> object containing data that specifies the type of change that has occurred to the presence status of a peer.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerChangeType" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.ContactManager" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerPresenceInfo" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerCollaboration" />
       </Docs>
     </Member>
     <Member MemberName="PeerContact">
@@ -58,6 +65,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerPresenceInfo" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerCollaboration" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.ContactManager" />
       </Docs>
     </Member>
     <Member MemberName="PeerEndPoint">
@@ -77,6 +87,9 @@
         <value>
           <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> on which the presence information has changed.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerPresenceInfo" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerCollaboration" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.ContactManager" />
       </Docs>
     </Member>
     <Member MemberName="PeerPresenceInfo">
@@ -95,6 +108,9 @@
         <summary>Specifies the changed presence information of a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> as well as a string provided by <see cref="T:System.Net.PeerToPeer.Collaboration.PeerPresenceInfo" /> describing the updated presence status.</summary>
         <value>Changed presence information for <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> and a string describing the updated presence status.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerPresenceInfo" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerCollaboration" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.ContactManager" />
       </Docs>
     </Member>
   </Members>

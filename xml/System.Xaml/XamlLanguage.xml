@@ -1228,6 +1228,7 @@
         <summary>Gets a <see cref="T:System.Xaml.XamlType" /> for the XAML type that backs an <see langword="XData" /> block in XAML.</summary>
         <value>The <see cref="T:System.Xaml.XamlType" /> for the XAML type that backs an <see langword="XData" /> block. See [[MS-XAML] Section 5.2.23](http://go.microsoft.com/fwlink/?LinkId=114525).</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Markup.XData" />
       </Docs>
     </Member>
     <Member MemberName="Xml1998Namespace">

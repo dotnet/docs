@@ -87,6 +87,7 @@
           <paramref name="keyName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.PlatformNotSupportedException">Cryptography Next Generation (CNG) is not supported on this system.</exception>
         <exception cref="T:System.Security.Cryptography.CryptographicException">All other errors.</exception>
+        <altmember cref="M:System.Security.Cryptography.CngKey.Open(System.String)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -132,6 +133,7 @@
  <paramref name="provider" /> is <see langword="null" />.</exception>
         <exception cref="T:System.PlatformNotSupportedException">Cryptography Next Generation (CNG) is not supported on this system.</exception>
         <exception cref="T:System.Security.Cryptography.CryptographicException">All other errors.</exception>
+        <altmember cref="M:System.Security.Cryptography.CngKey.Open(System.String,System.Security.Cryptography.CngProvider)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -172,6 +174,7 @@
  <paramref name="provider" /> is <see langword="null" />.</exception>
         <exception cref="T:System.PlatformNotSupportedException">Cryptography Next Generation (CNG) is not supported on this system.</exception>
         <exception cref="T:System.Security.Cryptography.CryptographicException">All other errors.</exception>
+        <altmember cref="M:System.Security.Cryptography.CngKey.Open(System.String,System.Security.Cryptography.CngProvider,System.Security.Cryptography.CngKeyOpenOptions)" />
       </Docs>
     </Member>
     <Member MemberName="CreateDecryptor">
@@ -447,6 +450,7 @@
       <Docs>
         <summary>Generates a random key to use for the 3DES algorithm.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Security.Cryptography.TripleDESCng.Key" />
       </Docs>
     </Member>
     <Member MemberName="Key">
@@ -544,5 +548,35 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateDecryptor">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a symmetric decryptor object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.TripleDESCng" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateEncryptor">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a 3DES symmetric encryptor object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

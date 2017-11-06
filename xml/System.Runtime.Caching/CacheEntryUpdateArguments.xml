@@ -25,6 +25,8 @@
     <block subset="none" type="overrides">
       <para>A callback handler must notify the cache implementation whether to insert a replacement entry into the cache in place of the cache entry that is about to be removed. If you want to exchange cache entries, you must assign a value other than <see langword="null" /> to the <see cref="P:System.Runtime.Caching.CacheEntryUpdateArguments.UpdatedCacheItem" /> property. Cache implementations will interpret a <see langword="null" /> value for the <see cref="P:System.Runtime.Caching.CacheEntryUpdateArguments.UpdatedCacheItem" /> property as a notice that the current cache entry should be removed but not replaced.</para>
     </block>
+    <altmember cref="T:System.Runtime.Caching.CacheEntryChangeMonitor" />
+    <altmember cref="T:System.Runtime.Caching.CacheEntryUpdateCallback" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -175,6 +177,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Runtime.Caching.CacheEntryUpdateArguments.UpdatedCacheItem" />
       </Docs>
     </Member>
   </Members>

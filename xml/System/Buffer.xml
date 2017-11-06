@@ -422,5 +422,16 @@
           <paramref name="array" /> is larger than 2 gigabytes (GB).</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="MemoryCopy">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies a block of memory.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

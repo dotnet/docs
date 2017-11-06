@@ -35,6 +35,7 @@
     <block subset="none" type="overrides">
       <para>The <see cref="T:System.Runtime.Caching.ObjectCache" /> class has methods that support adding, fetching, and updating cache data, and all these methods have overloads that support the <see cref="T:System.Runtime.Caching.CacheItem" /> class. Therefore, a custom cache implementation can create an extended <see cref="T:System.Runtime.Caching.CacheItem" /> class and use that extended class together with the existing <see cref="T:System.Runtime.Caching.ObjectCache" /> API for cache entries.</para>
     </block>
+    <altmember cref="T:System.Runtime.Caching.ObjectCache" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -165,5 +166,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Caching</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Caching.CacheItem" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

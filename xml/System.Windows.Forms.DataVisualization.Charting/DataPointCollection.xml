@@ -831,5 +831,77 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FindAllByValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Finds all the data points that are equal to the specified value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DataBindY">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Data binds the Y-value(s) of the data points to the specified column(s) of the specified data source.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddY">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a <see cref="T:System.Windows.Forms.DataVisualization.Charting.DataPoint" /> object to the end of the collection, with the specified Y-value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FindMaxByValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Finds  the data point with the maximum value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FindByValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Finds the first data point that is equal to the specified value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddXY">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a <see cref="T:System.Windows.Forms.DataVisualization.Charting.DataPoint" /> object to the end of the collection, with the specified X-value and Y-value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DataBindXY">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Data binds the X-value and Y-values of the data points in the collection to the specified columns of the specified data sources.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FindMinByValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Finds the data point with the minimum value.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

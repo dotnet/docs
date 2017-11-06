@@ -593,9 +593,9 @@
         <Parameter Name="x" Type="System.Data.OracleClient.OracleTimeSpan" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">An <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure to convert to a <see cref="T:System.TimeSpan" /> structure.</param>
+        <summary>Converts an <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure to a <see cref="T:System.TimeSpan" /> structure.</summary>
+        <returns>A <see cref="T:System.TimeSpan" /> structure.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -615,9 +615,9 @@
         <Parameter Name="x" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">A string to convert to an <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure.</param>
+        <summary>Converts a string to an <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure.</summary>
+        <returns>An <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -828,5 +828,32 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares the supplied object parameter to the <see cref="P:System.Data.OracleClient.OracleTimeSpan.Value" /> property of the <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="op_Explicit">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Used for explicit <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> conversion.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

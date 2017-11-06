@@ -41,6 +41,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.MenuItem" />
+    <altmember cref="M:System.Windows.Forms.Menu.MenuItemCollection.Add(System.String)" />
+    <altmember cref="P:System.Windows.Forms.Form.Menu" />
+    <altmember cref="P:System.Windows.Forms.Menu.MenuItems" />
+    <altmember cref="T:System.Windows.Forms.MenuStrip" />
+    <altmember cref="T:System.Windows.Forms.ContextMenuStrip" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -72,6 +78,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.MenuItem" />
+        <altmember cref="M:System.Windows.Forms.Menu.MenuItemCollection.Add(System.String)" />
+        <altmember cref="P:System.Windows.Forms.Form.Menu" />
+        <altmember cref="P:System.Windows.Forms.Menu.MenuItems" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -124,6 +134,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.MenuItem" />
       </Docs>
     </Member>
     <Member MemberName="CloneMenu">
@@ -212,6 +223,7 @@
         <summary>Creates a new handle to the Menu.</summary>
         <returns>A handle to the menu if the method succeeds; otherwise, <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Menu.CreateMenuHandle" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -279,6 +291,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Form" />
       </Docs>
     </Member>
     <Member MemberName="OnCollapse">
@@ -358,6 +371,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value assigned to the property is not a valid member of the <see cref="T:System.Windows.Forms.RightToLeft" /> enumeration.</exception>
+        <altmember cref="T:System.Windows.Forms.RightToLeft" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -386,5 +400,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.MainMenu" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

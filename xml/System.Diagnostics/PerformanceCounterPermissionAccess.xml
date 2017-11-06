@@ -21,6 +21,10 @@
   <Docs>
     <summary>Defines access levels used by <see cref="T:System.Diagnostics.PerformanceCounter" /> permission classes.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Diagnostics.PerformanceCounterPermission" />
+    <altmember cref="T:System.Diagnostics.PerformanceCounterPermissionAttribute" />
+    <altmember cref="T:System.Diagnostics.PerformanceCounterPermissionEntry" />
+    <altmember cref="T:System.Diagnostics.PerformanceCounterPermissionEntryCollection" />
   </Docs>
   <Members>
     <Member MemberName="Administer">

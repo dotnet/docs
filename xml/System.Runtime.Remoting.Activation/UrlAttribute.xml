@@ -48,6 +48,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Runtime.Remoting.Contexts.ContextAttribute" />
+    <altmember cref="T:System.Runtime.Remoting.Contexts.IContextProperty" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -204,6 +206,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">For operating with infrastructure code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+        <altmember cref="T:System.Runtime.Remoting.Contexts.Context" />
       </Docs>
     </Member>
     <Member MemberName="UrlValue">

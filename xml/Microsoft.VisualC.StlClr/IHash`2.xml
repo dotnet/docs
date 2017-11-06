@@ -302,10 +302,17 @@
       </Parameters>
       <Docs>
         <param name="">To be added.</param>
-        <param name="_Where">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="_Where">An iterator that points to the element to erase.</param>
+        <summary>Removes from the container the element that is specified by the given iterator.</summary>
+        <returns>An iterator.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::erase (STL/CLR)](http://msdn.microsoft.com/library/1d2a79aa-62f7-461c-8f7c-7b660eb189be), [hash_multimap::erase (STL/CLR)](http://msdn.microsoft.com/library/663c67f6-8070-47db-abdc-58f7ace69736), [hash_set::erase (STL/CLR)](http://msdn.microsoft.com/library/620998a0-00c9-4be6-899b-2d71661375b6), and [hash_multiset::erase (STL/CLR)](http://msdn.microsoft.com/library/bddd329d-aece-4b93-8355-005351c3aa45).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="erase">
@@ -327,11 +334,18 @@
       </Parameters>
       <Docs>
         <param name="">To be added.</param>
-        <param name="_First_iter">To be added.</param>
-        <param name="_Last_iter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="_First_iter">An iterator that points to the beginning of the range to erase.</param>
+        <param name="_Last_iter">An iterator that points to the position that immediately follows the range to erase.</param>
+        <summary>Removes from the container the elements between the specified iterators.</summary>
+        <returns>An iterator.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::erase (STL/CLR)](http://msdn.microsoft.com/library/1d2a79aa-62f7-461c-8f7c-7b660eb189be), [hash_multimap::erase (STL/CLR)](http://msdn.microsoft.com/library/663c67f6-8070-47db-abdc-58f7ace69736), [hash_set::erase (STL/CLR)](http://msdn.microsoft.com/library/620998a0-00c9-4be6-899b-2d71661375b6), and [hash_multiset::erase (STL/CLR)](http://msdn.microsoft.com/library/bddd329d-aece-4b93-8355-005351c3aa45).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="find">
@@ -516,11 +530,18 @@
       </Parameters>
       <Docs>
         <param name="">To be added.</param>
-        <param name="_Where">To be added.</param>
-        <param name="_Val">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="_Where">An iterator that specifies where in the container to insert the element. This is a hint only and is used to improve performance. The element might not be inserted at this location.</param>
+        <param name="_Val">The key value to insert into the container.</param>
+        <summary>Adds the given element to the container.</summary>
+        <returns>An iterator.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::insert (STL/CLR)](http://msdn.microsoft.com/library/52926ec7-ad4e-4791-a043-46136ee40a69), [hash_multimap::insert (STL/CLR)](http://msdn.microsoft.com/library/51cd98b0-c959-4a44-b914-582c00681bd7), [hash_set::insert (STL/CLR)](http://msdn.microsoft.com/library/0a9bc9aa-012e-4101-9e8c-f1f4b6b76af7), and [hash_multiset::insert (STL/CLR)](http://msdn.microsoft.com/library/e7254f30-a514-4ddc-bf53-38aafbe9e8eb).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="key_comp">

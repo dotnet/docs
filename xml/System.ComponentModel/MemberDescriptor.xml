@@ -47,6 +47,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+    <altmember cref="T:System.ComponentModel.EventDescriptor" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -207,6 +209,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.MemberDescriptor.Attributes" />
       </Docs>
     </Member>
     <Member MemberName="Attributes">
@@ -242,6 +245,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.MemberDescriptor.AttributeArray" />
       </Docs>
     </Member>
     <Member MemberName="Category">
@@ -277,6 +281,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.MemberDescriptor.Description" />
+        <altmember cref="P:System.ComponentModel.MemberDescriptor.IsBrowsable" />
+        <altmember cref="P:System.ComponentModel.MemberDescriptor.Name" />
       </Docs>
     </Member>
     <Member MemberName="CreateAttributeCollection">
@@ -348,6 +355,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.MemberDescriptor.Category" />
+        <altmember cref="P:System.ComponentModel.MemberDescriptor.IsBrowsable" />
+        <altmember cref="P:System.ComponentModel.MemberDescriptor.Name" />
       </Docs>
     </Member>
     <Member MemberName="DesignTimeOnly">
@@ -384,6 +394,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.MemberDescriptor.DisplayName" />
       </Docs>
     </Member>
     <Member MemberName="DisplayName">
@@ -412,6 +423,7 @@
         <summary>Gets the name that can be displayed in a window, such as a Properties window.</summary>
         <value>The name to display for the member.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.ComponentModel.MemberDescriptor.DesignTimeOnly" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -745,6 +757,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.MemberDescriptor.Category" />
+        <altmember cref="P:System.ComponentModel.MemberDescriptor.Description" />
+        <altmember cref="P:System.ComponentModel.MemberDescriptor.Name" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -773,6 +788,9 @@
         <summary>Gets the name of the member.</summary>
         <value>The name of the member.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.ComponentModel.MemberDescriptor.Category" />
+        <altmember cref="P:System.ComponentModel.MemberDescriptor.Description" />
+        <altmember cref="P:System.ComponentModel.MemberDescriptor.IsBrowsable" />
       </Docs>
     </Member>
     <Member MemberName="NameHashCode">
@@ -803,5 +821,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.MemberDescriptor" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FindMethod">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Finds the given method through reflection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -22,6 +22,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.Animation.IEasingFunction" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -97,6 +98,7 @@
         <param name="easingFunction">The easing function.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.EasingThicknessKeyFrame" /> class with the specified <see cref="T:System.Windows.Thickness" /> value, key time, and easing function.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Animation.IEasingFunction" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceCore">
@@ -131,6 +133,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Animation.IEasingFunction" />
       </Docs>
     </Member>
     <Member MemberName="EasingFunction">
@@ -149,6 +152,7 @@
         <summary>Gets or sets the easing function applied to the key frame.</summary>
         <value>The easing function applied to the key frame.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Animation.IEasingFunction" />
       </Docs>
     </Member>
     <Member MemberName="EasingFunctionProperty">
@@ -166,6 +170,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Media.Animation.EasingThicknessKeyFrame.EasingFunction" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Animation.IEasingFunction" />
       </Docs>
     </Member>
     <Member MemberName="InterpolateValueCore">
@@ -190,7 +195,17 @@
         <summary>Interpolates, according to the easing function used, between the previous key frame value and the value of the current key frame, using the supplied progress increment.</summary>
         <returns>The output value of this key frame given the specified base value and progress.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Animation.IEasingFunction" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.EasingThicknessKeyFrame" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

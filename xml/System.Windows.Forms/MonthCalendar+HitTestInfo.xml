@@ -23,6 +23,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Windows.Forms.MonthCalendar.HitTest(System.Int32,System.Int32)" />
+    <altmember cref="T:System.Windows.Forms.MonthCalendar.HitArea" />
   </Docs>
   <Members>
     <Member MemberName="HitArea">
@@ -41,6 +43,7 @@
         <summary>Gets the <see cref="T:System.Windows.Forms.MonthCalendar.HitArea" /> that represents the area of the calendar evaluated by the hit-test operation.</summary>
         <value>One of the <see cref="T:System.Windows.Forms.MonthCalendar.HitArea" /> values. The default is <see cref="F:System.Windows.Forms.MonthCalendar.HitArea.Nowhere" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.MonthCalendar.HitArea" />
       </Docs>
     </Member>
     <Member MemberName="Point">
@@ -59,6 +62,7 @@
         <summary>Gets the point that was hit-tested.</summary>
         <value>A <see cref="T:System.Drawing.Point" /> containing the <see cref="P:System.Drawing.Point.X" /> and <see cref="P:System.Drawing.Point.Y" /> values tested.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Drawing.Point" />
       </Docs>
     </Member>
     <Member MemberName="Time">
@@ -84,6 +88,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="T:System.Windows.Forms.MonthCalendar.HitArea" />
       </Docs>
     </Member>
   </Members>

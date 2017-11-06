@@ -76,6 +76,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.IO.Packaging.PackageRelationship.RelationshipType" />
+        <altmember cref="P:System.IO.Packaging.PackageRelationship.SourceUri" />
+        <altmember cref="P:System.IO.Packaging.PackageRelationship.TargetUri" />
       </Docs>
     </Member>
     <Member MemberName="Package">
@@ -150,6 +153,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.IO.Packaging.PackageRelationship.Id" />
       </Docs>
     </Member>
     <Member MemberName="SourceUri">
@@ -182,6 +186,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.IO.Packaging.PackageRelationship.TargetUri" />
       </Docs>
     </Member>
     <Member MemberName="TargetMode">
@@ -218,6 +223,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.IO.Packaging.PackageRelationship.TargetUri" />
+        <altmember cref="P:System.IO.Packaging.PackageRelationship.SourceUri" />
       </Docs>
     </Member>
     <Member MemberName="TargetUri">
@@ -254,6 +261,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.IO.Packaging.PackageRelationship.SourceUri" />
+        <altmember cref="P:System.IO.Packaging.PackageRelationship.TargetMode" />
       </Docs>
     </Member>
   </Members>

@@ -23,6 +23,8 @@
     <summary>Defines methods for resolving scope. The global scope object of the <see cref="T:Microsoft.JScript.Vsa.VsaEngine" /> implements this interface.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.Vsa.VsaItemType" />
+    <altmember cref="T:Microsoft.JScript.VSAITEMTYPE2" />
   </Docs>
   <Members>
     <Member MemberName="AddItem">
@@ -48,6 +50,8 @@
         <returns>The new item, if it is successfully added.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.VSAITEMTYPE2" />
+        <altmember cref="T:Microsoft.JScript.Vsa.VsaEngine" />
       </Docs>
     </Member>
     <Member MemberName="CreateDynamicItem">
@@ -73,6 +77,7 @@
         <returns>The new item, if it is successfully added.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.VSAITEMTYPE2" />
       </Docs>
     </Member>
     <Member MemberName="GetItem">
@@ -96,6 +101,9 @@
         <returns>The item that is named <paramref name="itemName" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.Vsa.VsaItemType" />
+        <altmember cref="T:Microsoft.JScript.VSAITEMTYPE2" />
+        <altmember cref="T:Microsoft.JScript.Vsa.VsaEngine" />
       </Docs>
     </Member>
     <Member MemberName="GetItemAtIndex">
@@ -119,6 +127,9 @@
         <returns>The item at <paramref name="index" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.Vsa.VsaItemType" />
+        <altmember cref="T:Microsoft.JScript.VSAITEMTYPE2" />
+        <altmember cref="T:Microsoft.JScript.Vsa.VsaEngine" />
       </Docs>
     </Member>
     <Member MemberName="GetItemCount">
@@ -139,6 +150,10 @@
         <returns>The number of items in the scope.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.Vsa.IVsaItem" />
+        <altmember cref="T:Microsoft.Vsa.VsaItemType" />
+        <altmember cref="T:Microsoft.JScript.VSAITEMTYPE2" />
+        <altmember cref="T:Microsoft.JScript.Vsa.VsaEngine" />
       </Docs>
     </Member>
     <Member MemberName="GetObject">
@@ -159,6 +174,10 @@
         <returns>A reference to the global scope.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.Vsa.IVsaItem" />
+        <altmember cref="T:Microsoft.Vsa.VsaItemType" />
+        <altmember cref="T:Microsoft.JScript.VSAITEMTYPE2" />
+        <altmember cref="T:Microsoft.JScript.Vsa.VsaEngine" />
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -178,6 +197,10 @@
         <value>The parent scope.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.Vsa.IVsaItem" />
+        <altmember cref="T:Microsoft.Vsa.VsaItemType" />
+        <altmember cref="T:Microsoft.JScript.VSAITEMTYPE2" />
+        <altmember cref="T:Microsoft.JScript.Vsa.VsaEngine" />
       </Docs>
     </Member>
     <Member MemberName="RemoveItem">
@@ -200,6 +223,9 @@
         <summary>When implemented in a class, removes the specified <see cref="T:Microsoft.JScript.Vsa.IJSVsaItem" /> object from the scope.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.Vsa.VsaItemType" />
+        <altmember cref="T:Microsoft.JScript.VSAITEMTYPE2" />
+        <altmember cref="T:Microsoft.JScript.Vsa.VsaEngine" />
       </Docs>
     </Member>
     <Member MemberName="RemoveItem">
@@ -222,6 +248,10 @@
         <summary>When implemented in a class, removes the item that is designated by the specified name from the scope.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.Vsa.IVsaItem" />
+        <altmember cref="T:Microsoft.Vsa.VsaItemType" />
+        <altmember cref="T:Microsoft.JScript.VSAITEMTYPE2" />
+        <altmember cref="T:Microsoft.JScript.Vsa.VsaEngine" />
       </Docs>
     </Member>
     <Member MemberName="RemoveItemAtIndex">
@@ -244,7 +274,24 @@
         <summary>When implemented in a class, removes the item that is designated by the specified index value from the scope.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.Vsa.IVsaItem" />
+        <altmember cref="T:Microsoft.Vsa.VsaItemType" />
+        <altmember cref="T:Microsoft.JScript.VSAITEMTYPE2" />
+        <altmember cref="T:Microsoft.JScript.Vsa.VsaEngine" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="RemoveItem">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When implemented in a class, removes an item from the scope.</summary>
+        <altmember cref="T:Microsoft.Vsa.IVsaItem" />
+        <altmember cref="T:Microsoft.Vsa.VsaItemType" />
+        <altmember cref="T:Microsoft.JScript.VSAITEMTYPE2" />
+        <altmember cref="T:Microsoft.JScript.Vsa.VsaEngine" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

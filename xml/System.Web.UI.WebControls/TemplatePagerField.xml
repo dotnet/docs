@@ -39,6 +39,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DataPager" />
+    <altmember cref="T:System.Web.UI.WebControls.DataPagerField" />
+    <altmember cref="T:System.Web.UI.WebControls.IPageableItemContainer" />
+    <altmember cref="T:System.Web.UI.WebControls.ListView" />
+    <altmember cref="T:System.Web.UI.WebControls.NextPreviousPagerField" />
+    <altmember cref="T:System.Web.UI.WebControls.NumericPagerField" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -63,6 +69,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataPager" />
       </Docs>
     </Member>
     <Member MemberName="CopyProperties">
@@ -141,6 +148,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataPager.CreatePagerFields" />
+        <altmember cref="P:System.Web.UI.WebControls.DataPager.Fields" />
+        <altmember cref="T:System.Web.UI.WebControls.DataPagerFieldItem" />
       </Docs>
     </Member>
     <Member MemberName="CreateField">
@@ -170,6 +180,8 @@
         <block subset="none" type="overrides">
           <para>Override the <see cref="M:System.Web.UI.WebControls.TemplatePagerField.CreateField" /> method to return a new instance of the derived class. Do not call the <see cref="M:System.Web.UI.WebControls.TemplatePagerField.CreateField" /> method of the base class.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.DataPagerField.CloneField" />
+        <altmember cref="M:System.Web.UI.WebControls.TemplatePagerField.CopyProperties(System.Web.UI.WebControls.DataPagerField)" />
       </Docs>
     </Member>
     <Member MemberName="HandleEvent">
@@ -200,6 +212,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataPager" />
+        <altmember cref="M:System.Web.UI.WebControls.DataPager.OnBubbleEvent(System.Object,System.EventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.DataPager.SetPageProperties(System.Int32,System.Int32,System.Boolean)" />
+        <altmember cref="P:System.Web.UI.WebControls.DataPagerCommandEventArgs.NewStartRowIndex" />
       </Docs>
     </Member>
     <Member MemberName="OnPagerCommand">
@@ -236,6 +252,8 @@
         <block subset="none" type="overrides">
           <para>When you override <see cref="M:System.Web.UI.WebControls.TemplatePagerField.OnPagerCommand(System.Web.UI.WebControls.DataPagerCommandEventArgs)" /> in a derived class, call the base class’s <see cref="M:System.Web.UI.WebControls.TemplatePagerField.OnPagerCommand(System.Web.UI.WebControls.DataPagerCommandEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.DataPagerCommandEventArgs" />
+        <altmember cref="E:System.Web.UI.WebControls.TemplatePagerField.PagerCommand" />
       </Docs>
     </Member>
     <Member MemberName="PagerCommand">
@@ -273,6 +291,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.TemplatePagerField.OnPagerCommand(System.Web.UI.WebControls.DataPagerCommandEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="PagerTemplate">
@@ -324,6 +343,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataPager" />
+        <altmember cref="P:System.Web.UI.WebControls.DataPager.MaximumRows" />
+        <altmember cref="P:System.Web.UI.WebControls.DataPager.StartRowIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.DataPager.TotalRowCount" />
       </Docs>
     </Member>
   </Members>

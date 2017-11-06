@@ -57,6 +57,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XNode.Ancestors" />
+        <altmember cref="M:System.Xml.Linq.XElement.AncestorsAndSelf" />
+        <altmember cref="Overload:System.Xml.Linq.Extensions.AncestorsAndSelf" />
+        <altmember cref="Overload:System.Xml.Linq.Extensions.Descendants" />
+        <altmember cref="M:System.Xml.Linq.Extensions.Nodes``1(System.Collections.Generic.IEnumerable{``0})" />
       </Docs>
     </MemberGroup>
     <Member MemberName="Ancestors&lt;T&gt;">
@@ -303,6 +308,11 @@ Ancestors
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XNode.Ancestors" />
+        <altmember cref="M:System.Xml.Linq.XElement.AncestorsAndSelf" />
+        <altmember cref="Overload:System.Xml.Linq.Extensions.AncestorsAndSelf" />
+        <altmember cref="Overload:System.Xml.Linq.Extensions.Descendants" />
+        <altmember cref="M:System.Xml.Linq.Extensions.Nodes``1(System.Collections.Generic.IEnumerable{``0})" />
       </Docs>
     </Member>
     <Member MemberName="Ancestors&lt;T&gt;">
@@ -545,6 +555,11 @@ Ancestors
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XNode.Ancestors" />
+        <altmember cref="M:System.Xml.Linq.XElement.AncestorsAndSelf" />
+        <altmember cref="Overload:System.Xml.Linq.Extensions.AncestorsAndSelf" />
+        <altmember cref="Overload:System.Xml.Linq.Extensions.Descendants" />
+        <altmember cref="M:System.Xml.Linq.Extensions.Nodes``1(System.Collections.Generic.IEnumerable{``0})" />
       </Docs>
     </Member>
     <MemberGroup MemberName="AncestorsAndSelf">
@@ -565,6 +580,11 @@ Ancestors
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XNode.Ancestors" />
+        <altmember cref="M:System.Xml.Linq.XElement.AncestorsAndSelf" />
+        <altmember cref="Overload:System.Xml.Linq.Extensions.Ancestors" />
+        <altmember cref="Overload:System.Xml.Linq.Extensions.Descendants" />
+        <altmember cref="M:System.Xml.Linq.Extensions.Nodes``1(System.Collections.Generic.IEnumerable{``0})" />
       </Docs>
     </MemberGroup>
     <Member MemberName="AncestorsAndSelf">
@@ -809,6 +829,11 @@ Ancestors and Self
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XNode.Ancestors" />
+        <altmember cref="M:System.Xml.Linq.XElement.AncestorsAndSelf" />
+        <altmember cref="Overload:System.Xml.Linq.Extensions.Ancestors" />
+        <altmember cref="Overload:System.Xml.Linq.Extensions.Descendants" />
+        <altmember cref="M:System.Xml.Linq.Extensions.Nodes``1(System.Collections.Generic.IEnumerable{``0})" />
       </Docs>
     </Member>
     <Member MemberName="AncestorsAndSelf">
@@ -1042,6 +1067,11 @@ Ancestors and Self
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XNode.Ancestors" />
+        <altmember cref="M:System.Xml.Linq.XElement.AncestorsAndSelf" />
+        <altmember cref="Overload:System.Xml.Linq.Extensions.Ancestors" />
+        <altmember cref="Overload:System.Xml.Linq.Extensions.Descendants" />
+        <altmember cref="M:System.Xml.Linq.Extensions.Nodes``1(System.Collections.Generic.IEnumerable{``0})" />
       </Docs>
     </Member>
     <MemberGroup MemberName="Attributes">
@@ -1062,6 +1092,8 @@ Ancestors and Self
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XElement.Attributes" />
+        <altmember cref="Overload:System.Xml.Linq.Extensions.Elements" />
       </Docs>
     </MemberGroup>
     <Member MemberName="Attributes">
@@ -1248,6 +1280,8 @@ aw:Att2="content6"
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XElement.Attributes" />
+        <altmember cref="Overload:System.Xml.Linq.Extensions.Elements" />
       </Docs>
     </Member>
     <Member MemberName="Attributes">
@@ -1345,6 +1379,8 @@ Att1="content5"
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XElement.Attributes" />
+        <altmember cref="Overload:System.Xml.Linq.Extensions.Elements" />
       </Docs>
     </Member>
     <Member MemberName="DescendantNodes&lt;T&gt;">
@@ -1565,6 +1601,13 @@ Text: ddd
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XElement.DescendantsAndSelf" />
+        <altmember cref="M:System.Xml.Linq.XContainer.DescendantNodes" />
+        <altmember cref="M:System.Xml.Linq.XContainer.Descendants" />
+        <altmember cref="Overload:System.Xml.Linq.Extensions.Descendants" />
+        <altmember cref="Overload:System.Xml.Linq.Extensions.DescendantsAndSelf" />
+        <altmember cref="M:System.Xml.Linq.Extensions.DescendantNodesAndSelf(System.Collections.Generic.IEnumerable{System.Xml.Linq.XElement})" />
+        <altmember cref="M:System.Xml.Linq.Extensions.Nodes``1(System.Collections.Generic.IEnumerable{``0})" />
       </Docs>
     </Member>
     <Member MemberName="DescendantNodesAndSelf">
@@ -1607,6 +1650,14 @@ Text: ddd
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XElement.DescendantNodesAndSelf" />
+        <altmember cref="M:System.Xml.Linq.XElement.DescendantsAndSelf" />
+        <altmember cref="M:System.Xml.Linq.XContainer.DescendantNodes" />
+        <altmember cref="M:System.Xml.Linq.XContainer.Descendants" />
+        <altmember cref="Overload:System.Xml.Linq.Extensions.Descendants" />
+        <altmember cref="Overload:System.Xml.Linq.Extensions.DescendantsAndSelf" />
+        <altmember cref="M:System.Xml.Linq.Extensions.DescendantNodes``1(System.Collections.Generic.IEnumerable{``0})" />
+        <altmember cref="M:System.Xml.Linq.Extensions.Nodes``1(System.Collections.Generic.IEnumerable{``0})" />
       </Docs>
     </Member>
     <MemberGroup MemberName="Descendants&lt;T&gt;">
@@ -1627,6 +1678,13 @@ Text: ddd
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XElement.DescendantNodesAndSelf" />
+        <altmember cref="M:System.Xml.Linq.XElement.DescendantsAndSelf" />
+        <altmember cref="M:System.Xml.Linq.XContainer.DescendantNodes" />
+        <altmember cref="M:System.Xml.Linq.XContainer.Descendants" />
+        <altmember cref="M:System.Xml.Linq.Extensions.DescendantNodes``1(System.Collections.Generic.IEnumerable{``0})" />
+        <altmember cref="Overload:System.Xml.Linq.Extensions.DescendantsAndSelf" />
+        <altmember cref="M:System.Xml.Linq.Extensions.Nodes``1(System.Collections.Generic.IEnumerable{``0})" />
       </Docs>
     </MemberGroup>
     <Member MemberName="Descendants&lt;T&gt;">
@@ -1815,6 +1873,13 @@ End Module
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XElement.DescendantNodesAndSelf" />
+        <altmember cref="M:System.Xml.Linq.XElement.DescendantsAndSelf" />
+        <altmember cref="M:System.Xml.Linq.XContainer.DescendantNodes" />
+        <altmember cref="M:System.Xml.Linq.XContainer.Descendants" />
+        <altmember cref="M:System.Xml.Linq.Extensions.DescendantNodes``1(System.Collections.Generic.IEnumerable{``0})" />
+        <altmember cref="Overload:System.Xml.Linq.Extensions.DescendantsAndSelf" />
+        <altmember cref="M:System.Xml.Linq.Extensions.Nodes``1(System.Collections.Generic.IEnumerable{``0})" />
       </Docs>
     </Member>
     <Member MemberName="Descendants&lt;T&gt;">
@@ -2001,6 +2066,13 @@ This is some text where all of the text nodes must be concatenated. This is a se
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XElement.DescendantNodesAndSelf" />
+        <altmember cref="M:System.Xml.Linq.XElement.DescendantsAndSelf" />
+        <altmember cref="M:System.Xml.Linq.XContainer.DescendantNodes" />
+        <altmember cref="M:System.Xml.Linq.XContainer.Descendants" />
+        <altmember cref="M:System.Xml.Linq.Extensions.DescendantNodes``1(System.Collections.Generic.IEnumerable{``0})" />
+        <altmember cref="Overload:System.Xml.Linq.Extensions.DescendantsAndSelf" />
+        <altmember cref="M:System.Xml.Linq.Extensions.Nodes``1(System.Collections.Generic.IEnumerable{``0})" />
       </Docs>
     </Member>
     <MemberGroup MemberName="DescendantsAndSelf">
@@ -2021,6 +2093,13 @@ This is some text where all of the text nodes must be concatenated. This is a se
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XElement.DescendantNodesAndSelf" />
+        <altmember cref="M:System.Xml.Linq.XElement.DescendantsAndSelf" />
+        <altmember cref="M:System.Xml.Linq.XContainer.DescendantNodes" />
+        <altmember cref="M:System.Xml.Linq.XContainer.Descendants" />
+        <altmember cref="M:System.Xml.Linq.Extensions.DescendantNodes``1(System.Collections.Generic.IEnumerable{``0})" />
+        <altmember cref="Overload:System.Xml.Linq.Extensions.Descendants" />
+        <altmember cref="M:System.Xml.Linq.Extensions.Nodes``1(System.Collections.Generic.IEnumerable{``0})" />
       </Docs>
     </MemberGroup>
     <Member MemberName="DescendantsAndSelf">
@@ -2063,6 +2142,13 @@ This is some text where all of the text nodes must be concatenated. This is a se
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XElement.DescendantNodesAndSelf" />
+        <altmember cref="M:System.Xml.Linq.XElement.DescendantsAndSelf" />
+        <altmember cref="M:System.Xml.Linq.XContainer.DescendantNodes" />
+        <altmember cref="M:System.Xml.Linq.XContainer.Descendants" />
+        <altmember cref="M:System.Xml.Linq.Extensions.DescendantNodes``1(System.Collections.Generic.IEnumerable{``0})" />
+        <altmember cref="Overload:System.Xml.Linq.Extensions.Descendants" />
+        <altmember cref="M:System.Xml.Linq.Extensions.Nodes``1(System.Collections.Generic.IEnumerable{``0})" />
       </Docs>
     </Member>
     <Member MemberName="DescendantsAndSelf">
@@ -2107,6 +2193,13 @@ This is some text where all of the text nodes must be concatenated. This is a se
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XElement.DescendantNodesAndSelf" />
+        <altmember cref="M:System.Xml.Linq.XElement.DescendantsAndSelf" />
+        <altmember cref="M:System.Xml.Linq.XContainer.DescendantNodes" />
+        <altmember cref="M:System.Xml.Linq.XContainer.Descendants" />
+        <altmember cref="M:System.Xml.Linq.Extensions.DescendantNodes``1(System.Collections.Generic.IEnumerable{``0})" />
+        <altmember cref="Overload:System.Xml.Linq.Extensions.Descendants" />
+        <altmember cref="M:System.Xml.Linq.Extensions.Nodes``1(System.Collections.Generic.IEnumerable{``0})" />
       </Docs>
     </Member>
     <MemberGroup MemberName="Elements&lt;T&gt;">
@@ -2127,6 +2220,8 @@ This is some text where all of the text nodes must be concatenated. This is a se
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.Extensions.Attributes" />
+        <altmember cref="M:System.Xml.Linq.Extensions.Nodes``1(System.Collections.Generic.IEnumerable{``0})" />
       </Docs>
     </MemberGroup>
     <Member MemberName="Elements&lt;T&gt;">
@@ -2321,6 +2416,11 @@ End Module
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XElement.DescendantNodesAndSelf" />
+        <altmember cref="M:System.Xml.Linq.XElement.DescendantsAndSelf" />
+        <altmember cref="M:System.Xml.Linq.XContainer.DescendantNodes" />
+        <altmember cref="M:System.Xml.Linq.XContainer.Descendants" />
+        <altmember cref="Overload:System.Xml.Linq.Extensions.Attributes" />
       </Docs>
     </Member>
     <Member MemberName="Elements&lt;T&gt;">
@@ -2508,6 +2608,11 @@ End Module
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XElement.DescendantNodesAndSelf" />
+        <altmember cref="M:System.Xml.Linq.XElement.DescendantsAndSelf" />
+        <altmember cref="M:System.Xml.Linq.XContainer.DescendantNodes" />
+        <altmember cref="M:System.Xml.Linq.XContainer.Descendants" />
+        <altmember cref="Overload:System.Xml.Linq.Extensions.Attributes" />
       </Docs>
     </Member>
     <Member MemberName="InDocumentOrder&lt;T&gt;">
@@ -2633,6 +2738,7 @@ Next
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.Extensions.Nodes``1(System.Collections.Generic.IEnumerable{``0})" />
       </Docs>
     </Member>
     <Member MemberName="Nodes&lt;T&gt;">
@@ -2740,6 +2846,9 @@ Text: ddd
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XContainer.Nodes" />
+        <altmember cref="Overload:System.Xml.Linq.Extensions.Elements" />
+        <altmember cref="M:System.Xml.Linq.Extensions.InDocumentOrder``1(System.Collections.Generic.IEnumerable{``0})" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -2824,6 +2933,10 @@ Console.WriteLine(root)
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XElement.RemoveAttributes" />
+        <altmember cref="Overload:System.Xml.Linq.Extensions.Attributes" />
+        <altmember cref="M:System.Xml.Linq.XAttribute.Remove" />
+        <altmember cref="M:System.Xml.Linq.XNode.Remove" />
       </Docs>
     </Member>
     <Member MemberName="Remove&lt;T&gt;">
@@ -2926,6 +3039,10 @@ Console.WriteLine(root)
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XElement.RemoveAll" />
+        <altmember cref="Overload:System.Xml.Linq.Extensions.Attributes" />
+        <altmember cref="M:System.Xml.Linq.XAttribute.Remove" />
+        <altmember cref="M:System.Xml.Linq.XNode.Remove" />
       </Docs>
     </Member>
   </Members>

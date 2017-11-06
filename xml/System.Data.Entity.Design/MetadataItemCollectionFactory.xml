@@ -178,5 +178,32 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateStorageMappingItemCollection">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Data.Mapping.StorageMappingItemCollection" /> from the mapping information in the <see cref="T:System.Xml.XmlReader" /> objects and the metadata in the specified <see cref="T:System.Data.Metadata.Edm.EdmItemCollection" /> and <see cref="T:System.Data.Metadata.Edm.StoreItemCollection" /> objects.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateEdmItemCollection">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an <see cref="T:System.Data.Metadata.Edm.EdmItemCollection" /> and loads the metadata that is contained in the <see cref="T:System.Collections.IEnumerable" /> of <see cref="T:System.Xml.XmlReader" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateStoreItemCollection">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Constructs a <see cref="T:System.Data.Metadata.Edm.StoreItemCollection" /> and provides a list of errors and warnings.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

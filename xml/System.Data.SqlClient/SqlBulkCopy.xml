@@ -425,6 +425,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.SqlClient.SqlBulkCopyColumnMapping" />
       </Docs>
     </Member>
     <Member MemberName="DestinationTableName">
@@ -907,6 +908,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.DataRowState" />
       </Docs>
     </Member>
     <MemberGroup MemberName="WriteToServerAsync">
@@ -1408,5 +1410,15 @@
         <exception cref="T:System.Data.SqlClient.SqlException">Returned in the task object, any error returned by [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] that occurred while opening the connection.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.SqlClient.SqlBulkCopy" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

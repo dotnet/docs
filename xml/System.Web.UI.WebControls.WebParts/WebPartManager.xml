@@ -156,6 +156,7 @@
     <block subset="none" type="overrides">
       <para>The <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control is designed to be extended. Because it is so central to Web Parts applications, when you want to extend some specific type or control in the Web Parts control set, in many cases you must also extend the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> class, because it is likely to have some property or method that is required to make your custom type work in the context of a Web Parts application. The Web Parts reference documentation (see <see cref="N:System.Web.UI.WebControls.WebParts" />), when discussing how to extend a Web Parts type, frequently mentions what needs to be done to extend the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> class as well, or shows how to extend it in a code example.</para>
     </block>
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartManagerInternals" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -260,6 +261,7 @@
   
  <paramref name="webPart" /> is already in <paramref name="zone" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The value of <paramref name="zoneIndex" /> is less than zero.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.CreateWebPart(System.Web.UI.Control)" />
       </Docs>
     </Member>
     <Member MemberName="AuthorizeWebPart">
@@ -296,6 +298,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnAuthorizeWebPart(System.Web.UI.WebControls.WebParts.WebPartAuthorizationEventArgs)" />
+        <altmember cref="Overload:System.Web.UI.WebControls.WebParts.WebPartManager.IsAuthorized" />
       </Docs>
     </Member>
     <Member MemberName="AvailableTransformers">
@@ -373,6 +377,7 @@
         <block subset="none" type="overrides">
           <para>Developers who need to extend the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control might want to override this method in a derived class. One approach would be to call the base method, and then add some additional custom handling; or you might want to completely customize the process of starting a connection between controls. For example, you might want to verify that certain data is available before creating the connection.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.EndWebPartConnecting" />
       </Docs>
     </Member>
     <Member MemberName="BeginWebPartEditing">
@@ -414,6 +419,7 @@
  -or -  
   
  <paramref name="webPart" /> is equal to the <see cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.SelectedWebPart" /> control.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.EndWebPartEditing" />
       </Docs>
     </Member>
     <Member MemberName="BrowseDisplayMode">
@@ -450,6 +456,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayModes" />
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" />
       </Docs>
     </Member>
     <MemberGroup MemberName="CanConnectWebParts">
@@ -489,6 +497,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectWebParts" />
       </Docs>
     </MemberGroup>
     <Member MemberName="CanConnectWebParts">
@@ -632,6 +641,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayModes" />
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" />
       </Docs>
     </Member>
     <Member MemberName="CheckRenderClientScript">
@@ -651,6 +662,7 @@
         <summary>Checks the capabilities of the browser making the request, and the value of the <see cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.EnableClientScript" /> property, to determine whether to render client script.</summary>
         <returns>A Boolean value that indicates whether to render client script.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.EnableClientScript" />
       </Docs>
     </Member>
     <Member MemberName="CloseProviderWarning">
@@ -777,6 +789,9 @@
  \- or -  
   
  <paramref name="webPart" /> is a shared control and has already been closed by another user.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.AllowClose" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.DeleteWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.IsClosed" />
       </Docs>
     </Member>
     <Member MemberName="ConnectDisplayMode">
@@ -832,6 +847,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayModes" />
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" />
       </Docs>
     </Member>
     <Member MemberName="Connections">
@@ -889,6 +906,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartConnection" />
       </Docs>
     </Member>
     <Member MemberName="ConnectionsActivated">
@@ -917,6 +935,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnConnectionsActivated(System.EventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsConnected" />
+        <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectionsActivating" />
       </Docs>
     </Member>
     <Member MemberName="ConnectionsActivating">
@@ -945,6 +966,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnConnectionsActivating(System.EventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsConnecting" />
+        <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectionsActivated" />
       </Docs>
     </Member>
     <MemberGroup MemberName="ConnectWebParts">
@@ -978,6 +1002,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.WebControls.WebParts.WebPartManager.CanConnectWebParts" />
       </Docs>
     </MemberGroup>
     <Member MemberName="ConnectWebParts">
@@ -1028,6 +1053,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control's collection of dynamic collections is read-only.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.GetConsumerConnectionPoints(System.Web.UI.WebControls.WebParts.WebPart)" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.GetProviderConnectionPoints(System.Web.UI.WebControls.WebParts.WebPart)" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.Connections" />
       </Docs>
     </Member>
     <Member MemberName="ConnectWebParts">
@@ -1066,6 +1094,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Connections have already been activated in <see cref="E:System.Web.UI.Control.PreRender" />.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.GetConsumerConnectionPoints(System.Web.UI.WebControls.WebParts.WebPart)" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.GetProviderConnectionPoints(System.Web.UI.WebControls.WebParts.WebPart)" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.Connections" />
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" />
       </Docs>
     </Member>
     <Member MemberName="Controls">
@@ -1098,6 +1130,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.WebParts" />
       </Docs>
     </Member>
     <Member MemberName="CopyWebPart">
@@ -1140,6 +1173,7 @@
         <block subset="none" type="overrides">
           <para>The method is declared as <see langword="virtual" /> so that developers could inherit from the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> class, override the method, and provide for additional scenarios in which it could create copies of controls. For example, the method could optionally receive as input a control that has been serialized into an XML file. The method could deserialize the XML (if present), and then call the base method to handle the existing cases and to return a new instance of a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.AddWebPart(System.Web.UI.WebControls.WebParts.WebPart,System.Web.UI.WebControls.WebParts.WebPartZoneBase,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="CreateAvailableTransformers">
@@ -1162,6 +1196,7 @@
         <block subset="none" type="overrides">
           <para>This method can be overridden to add additional transformers that can be used by the application. For example, the method could be written to retrieve a list of available transformers from a Web service.</para>
         </block>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.AvailableTransformers" />
       </Docs>
     </Member>
     <Member MemberName="CreateControlCollection">
@@ -1295,6 +1330,8 @@
         <block subset="none" type="overrides">
           <para>Developers can override this method in a derived <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> class to change the implementation for generating a unique ID.</para>
         </block>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.DynamicConnections" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.CreateDynamicWebPartID(System.Type)" />
       </Docs>
     </Member>
     <Member MemberName="CreateDynamicWebPartID">
@@ -1374,6 +1411,7 @@
   
  You can also customize the behavior of the <see cref="T:System.Web.UI.WebControls.WebParts.ErrorWebPart" /> control itself, by inheriting from it. For example, you might want to override its <see cref="P:System.Web.UI.WebControls.WebParts.Part.Title" /> or <see cref="P:System.Web.UI.WebControls.WebParts.WebPart.AllowMinimize" /> property.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.ErrorWebPart" />
       </Docs>
     </Member>
     <Member MemberName="CreatePersonalization">
@@ -1444,6 +1482,7 @@
         <block subset="none" type="overrides">
           <para>This method can be overridden to use a derived <see cref="T:System.Web.UI.WebControls.WebParts.GenericWebPart" /> class instead of the base class provided with the Web Parts control set.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.AddWebPart(System.Web.UI.WebControls.WebParts.WebPart,System.Web.UI.WebControls.WebParts.WebPartZoneBase,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="DeleteWarning">
@@ -1505,6 +1544,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.DeleteWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
       </Docs>
     </Member>
     <Member MemberName="DeleteWebPart">
@@ -1546,6 +1586,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.IsClosed" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.IsStatic" />
       </Docs>
     </Member>
     <Member MemberName="DesignDisplayMode">
@@ -1582,6 +1624,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayModes" />
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" />
       </Docs>
     </Member>
     <Member MemberName="DisconnectWebPart">
@@ -1645,6 +1689,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.DisconnectWebParts(System.Web.UI.WebControls.WebParts.WebPartConnection)" />
       </Docs>
     </Member>
     <Member MemberName="DisconnectWebParts">
@@ -1727,6 +1772,7 @@
         <block subset="none" type="overrides">
           <para>You can override the <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.DisconnectWebParts(System.Web.UI.WebControls.WebParts.WebPartConnection)" /> method if you want to change the default implementation for disconnecting <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> controls. If you do override the method, and you simply want to add some implementation to the existing method, you can call the base method prior to executing your own code.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.DisconnectWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
       </Docs>
     </Member>
     <Member MemberName="DisplayMode">
@@ -1783,6 +1829,8 @@
  \- or -  
   
  The <see cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" /> object being assigned to the property is disabled.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayModes" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.CreateDisplayModes" />
       </Docs>
     </Member>
     <Member MemberName="DisplayModeChanged">
@@ -1810,6 +1858,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnDisplayModeChanged(System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="DisplayModeChanging">
@@ -1837,6 +1886,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnDisplayModeChanging(System.Web.UI.WebControls.WebParts.WebPartDisplayModeCancelEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="DisplayModes">
@@ -1884,6 +1934,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayMode" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.CreateDisplayModes" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.SupportedDisplayModes" />
       </Docs>
     </Member>
     <Member MemberName="DynamicConnections">
@@ -1914,6 +1967,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.CreateDynamicConnectionID" />
       </Docs>
     </Member>
     <Member MemberName="EditDisplayMode">
@@ -1952,6 +2006,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayModes" />
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" />
       </Docs>
     </Member>
     <Member MemberName="EnableClientScript">
@@ -2062,6 +2118,7 @@
         <block subset="none" type="overrides">
           <para>Developers who need to extend the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control might want to override this method in a derived class. One approach would be to call the base method and then add some additional custom handling, or you might want to completely customize the entire process of completing a connection between controls.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.BeginWebPartConnecting(System.Web.UI.WebControls.WebParts.WebPart)" />
       </Docs>
     </Member>
     <Member MemberName="EndWebPartEditing">
@@ -2093,6 +2150,7 @@
         <block subset="none" type="overrides">
           <para>Developers who need to extend the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control might want to override this method in a derived class. One approach would be to call the base method and then add some additional custom handling, or you might want to completely customize the entire process of completing the editing of a control. For example, in the override method, you could call the base method first, and then add some code that determines what editing changes were made, and displays the list of changes back to the end user as a confirmation.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.BeginWebPartEditing(System.Web.UI.WebControls.WebParts.WebPart)" />
       </Docs>
     </Member>
     <Member MemberName="ExportSensitiveDataWarning">
@@ -2143,6 +2201,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.ExportMode" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.ExportWebPart(System.Web.UI.WebControls.WebParts.WebPart,System.Xml.XmlWriter)" />
       </Docs>
     </Member>
     <Member MemberName="ExportWebPart">
@@ -2192,6 +2252,8 @@
  \- or -  
   
  The <see cref="P:System.Web.UI.WebControls.WebParts.WebPart.ExportMode" /> property of <paramref name="webPart" /> is set to a value of <see cref="F:System.Web.UI.WebControls.WebParts.WebPartExportMode.None" />, which means that export is disabled for <paramref name="webPart" />.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.ExportMode" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.ImportWebPart(System.Xml.XmlReader,System.String@)" />
       </Docs>
     </Member>
     <Member MemberName="Focus">
@@ -2282,6 +2344,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="webPart" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.GetProviderConnectionPoints(System.Web.UI.WebControls.WebParts.WebPart)" />
       </Docs>
     </Member>
     <Member MemberName="GetCurrentWebPartManager">
@@ -2373,6 +2437,7 @@
         <block subset="none" type="overrides">
           <para>This method can be overridden to change how the default display title is calculated.</para>
         </block>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.DisplayTitle" />
       </Docs>
     </Member>
     <Member MemberName="GetExportUrl">
@@ -2405,6 +2470,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.ExportWebPart(System.Web.UI.WebControls.WebParts.WebPart,System.Xml.XmlWriter)" />
       </Docs>
     </Member>
     <Member MemberName="GetGenericWebPart">
@@ -2446,6 +2512,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="control" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.GenericWebPart" />
       </Docs>
     </Member>
     <Member MemberName="GetProviderConnectionPoints">
@@ -2505,6 +2572,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="webPart" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.ProviderConnectionPoint" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.GetConsumerConnectionPoints(System.Web.UI.WebControls.WebParts.WebPart)" />
       </Docs>
     </Member>
     <Member MemberName="ImportWebPart">
@@ -2555,6 +2624,8 @@
  \- or -  
   
  <paramref name="reader" /> reached the end of the file without finding the XML element that contains the exported data.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.ImportCatalogPart" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.ExportWebPart(System.Web.UI.WebControls.WebParts.WebPart,System.Xml.XmlWriter)" />
       </Docs>
     </Member>
     <Member MemberName="Internals">
@@ -2630,6 +2701,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.AuthorizeWebPart" />
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartAuthorizationEventArgs" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnAuthorizeWebPart(System.Web.UI.WebControls.WebParts.WebPartAuthorizationEventArgs)" />
       </Docs>
     </MemberGroup>
     <Member MemberName="IsAuthorized">
@@ -2701,6 +2775,9 @@
         <block subset="none" type="usage">
           <para>This method is called directly from your code. If you want to gain greater programmatic control over the authorization process, you can override the <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.IsAuthorized(System.Type,System.String,System.String,System.Boolean)" /> overload method.</para>
         </block>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.AuthorizationFilter" />
+        <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.AuthorizeWebPart" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnAuthorizeWebPart(System.Web.UI.WebControls.WebParts.WebPartAuthorizationEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="IsAuthorized">
@@ -2783,6 +2860,9 @@ else
   
  For page developers who also want to check for authorization filters and provide custom handling, there is an option for doing this inline in an .aspx page, or in a code-behind file, without having to inherit from any classes. You can declare an alternate event handler in the page for the <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnAuthorizeWebPart(System.Web.UI.WebControls.WebParts.WebPartAuthorizationEventArgs)" /> method of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control. For more details and an example, see the <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnAuthorizeWebPart(System.Web.UI.WebControls.WebParts.WebPartAuthorizationEventArgs)" /> method.</para>
         </block>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.AuthorizationFilter" />
+        <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.AuthorizeWebPart" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnAuthorizeWebPart(System.Web.UI.WebControls.WebParts.WebPartAuthorizationEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="IsCustomPersonalizationStateDirty">
@@ -2813,6 +2893,9 @@ else
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.PersonalizationState.IsDirty" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.PersonalizationState.SetDirty" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.System#Web#UI#WebControls#WebParts#IPersonalizable#IsDirty" />
       </Docs>
     </Member>
     <Member MemberName="LoadControlState">
@@ -2843,6 +2926,7 @@ else
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="savedState" /> is not a valid <see cref="P:System.Web.UI.PageStatePersister.ControlState" />.</exception>
+        <altmember cref="M:System.Web.UI.Control.LoadControlState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="LoadCustomPersonalizationState">
@@ -2879,6 +2963,7 @@ else
         <block subset="none" type="overrides">
           <para>Developers can override the <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.LoadCustomPersonalizationState(System.Web.UI.WebControls.WebParts.PersonalizationDictionary)" /> method in a derived <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> class.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.System#Web#UI#WebControls#WebParts#IPersonalizable#Load(System.Web.UI.WebControls.WebParts.PersonalizationDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="MediumPermissionSet">
@@ -3009,6 +3094,8 @@ else
           <paramref name="webPart" /> or <paramref name="zone" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="zoneIndex" /> is less than zero.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartMoving(System.Web.UI.WebControls.WebParts.WebPartMovingEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartMoved(System.Web.UI.WebControls.WebParts.WebPartEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnAuthorizeWebPart">
@@ -3100,6 +3187,8 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.AuthorizeWebPart" />
+        <altmember cref="Overload:System.Web.UI.WebControls.WebParts.WebPartManager.IsAuthorized" />
       </Docs>
     </Member>
     <Member MemberName="OnConnectionsActivated">
@@ -3133,6 +3222,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         <block subset="none" type="overrides">
           <para>Developers can override the <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnConnectionsActivated(System.EventArgs)" /> method in a derived <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> class.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectionsActivated" />
       </Docs>
     </Member>
     <Member MemberName="OnConnectionsActivating">
@@ -3166,6 +3256,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         <block subset="none" type="overrides">
           <para>Developers can override the <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnConnectionsActivating(System.EventArgs)" /> method in a derived <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> class.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectionsActivating" />
       </Docs>
     </Member>
     <Member MemberName="OnDisplayModeChanged">
@@ -3261,6 +3352,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">There is another <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control on the page</exception>
+        <altmember cref="E:System.Web.UI.Control.Init" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -3289,6 +3381,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.Control.PreRender" />
       </Docs>
     </Member>
     <Member MemberName="OnSelectedWebPartChanged">
@@ -3322,6 +3415,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         <block subset="none" type="overrides">
           <para>There are several options related to the <see cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.SelectedWebPartChanged" /> event, to allow developers to customize the rendering that occurs after the selected control has changed. In declarative code, within the <see langword="&lt;asp:webpartmanager&gt;" /> element you could set the <see langword="OnSelectedWebPartChanged" /> attribute, and assign to it the name of a custom method. In the custom method, you could modify the rendering of the selected controls when the event occurs. Another option is to inherit from the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> class and override the method. A third option is to customize the rendering at the zone level; for example, you can inherit from the <see cref="T:System.Web.UI.WebControls.WebParts.EditorZoneBase" /> class, and override its <see cref="M:System.Web.UI.WebControls.WebParts.EditorZoneBase.OnSelectedWebPartChanged(System.Object,System.Web.UI.WebControls.WebParts.WebPartEventArgs)" /> method, to customize the rendering of controls selected and cleared during the editing process.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.SelectedWebPartChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnSelectedWebPartChanging">
@@ -3357,6 +3451,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.SelectedWebPartChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnUnload">
@@ -3408,6 +3503,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartAdded" />
       </Docs>
     </Member>
     <Member MemberName="OnWebPartAdding">
@@ -3441,6 +3537,9 @@ protected void mgr1_AuthorizeWebPart(object sender,
         <block subset="none" type="overrides">
           <para>Developers who create derived <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> classes can override the <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartAdding(System.Web.UI.WebControls.WebParts.WebPartAddingEventArgs)" /> method to customize the event handling.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartAdding" />
+        <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartAdded" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.AddWebPart(System.Web.UI.WebControls.WebParts.WebPart,System.Web.UI.WebControls.WebParts.WebPartZoneBase,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="OnWebPartClosed">
@@ -3473,6 +3572,8 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartClosed" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.CloseWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
       </Docs>
     </Member>
     <Member MemberName="OnWebPartClosing">
@@ -3506,6 +3607,9 @@ protected void mgr1_AuthorizeWebPart(object sender,
         <block subset="none" type="overrides">
           <para>Developers who create derived <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> classes can override the <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartClosing(System.Web.UI.WebControls.WebParts.WebPartCancelEventArgs)" /> method to customize the event handling.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartClosing" />
+        <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartClosed" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.CloseWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
       </Docs>
     </Member>
     <Member MemberName="OnWebPartDeleted">
@@ -3536,6 +3640,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartDeleted" />
       </Docs>
     </Member>
     <Member MemberName="OnWebPartDeleting">
@@ -3571,6 +3676,9 @@ protected void mgr1_AuthorizeWebPart(object sender,
         <block subset="none" type="overrides">
           <para>Developers who create derived <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> classes can override the <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartDeleting(System.Web.UI.WebControls.WebParts.WebPartCancelEventArgs)" /> method to customize the event handling.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartDeleting" />
+        <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartDeleted" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.DeleteWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
       </Docs>
     </Member>
     <Member MemberName="OnWebPartMoved">
@@ -3603,6 +3711,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartMoved" />
       </Docs>
     </Member>
     <Member MemberName="OnWebPartMoving">
@@ -3636,6 +3745,9 @@ protected void mgr1_AuthorizeWebPart(object sender,
         <block subset="none" type="overrides">
           <para>Developers who create derived <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> classes can override the <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartMoving(System.Web.UI.WebControls.WebParts.WebPartMovingEventArgs)" /> method to customize the event handling.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartMoving" />
+        <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartMoved" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.MoveWebPart(System.Web.UI.WebControls.WebParts.WebPart,System.Web.UI.WebControls.WebParts.WebPartZoneBase,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="OnWebPartsConnected">
@@ -3668,6 +3780,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsConnected" />
       </Docs>
     </Member>
     <Member MemberName="OnWebPartsConnecting">
@@ -3701,6 +3814,9 @@ protected void mgr1_AuthorizeWebPart(object sender,
         <block subset="none" type="overrides">
           <para>Developers who create derived <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> classes can override the <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartsConnecting(System.Web.UI.WebControls.WebParts.WebPartConnectionsCancelEventArgs)" /> method to customize the event handling.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsConnecting" />
+        <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsConnected" />
+        <altmember cref="Overload:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectWebParts" />
       </Docs>
     </Member>
     <Member MemberName="OnWebPartsDisconnected">
@@ -3733,6 +3849,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsDisconnected" />
       </Docs>
     </Member>
     <Member MemberName="OnWebPartsDisconnecting">
@@ -3766,6 +3883,9 @@ protected void mgr1_AuthorizeWebPart(object sender,
         <block subset="none" type="overrides">
           <para>Developers who create derived <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> classes can override the <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartsDisconnecting(System.Web.UI.WebControls.WebParts.WebPartConnectionsCancelEventArgs)" /> method to customize the event handling.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsDisconnecting" />
+        <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsDisconnected" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.DisconnectWebParts(System.Web.UI.WebControls.WebParts.WebPartConnection)" />
       </Docs>
     </Member>
     <Member MemberName="Personalization">
@@ -3856,6 +3976,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <Docs>
         <summary>Enables the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control to emit client-side script that is used for various personalization features, such as dragging <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> controls in a Web page.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.Page.RegisterClientScriptBlock(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -3936,6 +4057,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         <block subset="none" type="overrides">
           <para>Developers can override this method in a derived <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> class to customize the process of saving personalization data.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.System#Web#UI#WebControls#WebParts#IPersonalizable#Save(System.Web.UI.WebControls.WebParts.PersonalizationDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="SelectedWebPart">
@@ -3973,6 +4095,11 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.SetSelectedWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnSelectedWebPartChanged(System.Web.UI.WebControls.WebParts.WebPartEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnSelectedWebPartChanging(System.Web.UI.WebControls.WebParts.WebPartCancelEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.SelectedWebPartChanged" />
+        <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.SelectedWebPartChanging" />
       </Docs>
     </Member>
     <Member MemberName="SelectedWebPartChanged">
@@ -4000,6 +4127,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnSelectedWebPartChanged(System.Web.UI.WebControls.WebParts.WebPartEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="SelectedWebPartChanging">
@@ -4028,6 +4156,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnSelectedWebPartChanging(System.Web.UI.WebControls.WebParts.WebPartCancelEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="SetPersonalizationDirty">
@@ -4058,6 +4187,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         <block subset="none" type="overrides">
           <para>The method can be called by a derived <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> class. This would be useful if you want to customize the personalization components of the Web Parts control set, and thus need to control the process of setting flags for personalization data.</para>
         </block>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.System#Web#UI#WebControls#WebParts#IPersonalizable#IsDirty" />
       </Docs>
     </Member>
     <Member MemberName="SetSelectedWebPart">
@@ -4090,6 +4220,9 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnSelectedWebPartChanged(System.Web.UI.WebControls.WebParts.WebPartEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnSelectedWebPartChanging(System.Web.UI.WebControls.WebParts.WebPartCancelEventArgs)" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.SelectedWebPart" />
       </Docs>
     </Member>
     <Member MemberName="SkinID">
@@ -4127,6 +4260,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to set the property value.</exception>
+        <altmember cref="P:System.Web.UI.Control.SkinID" />
       </Docs>
     </Member>
     <Member MemberName="StaticConnections">
@@ -4192,6 +4326,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartConnection" />
       </Docs>
     </Member>
     <Member MemberName="SupportedDisplayModes">
@@ -4245,6 +4380,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayModes" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.WebParts.IPersonalizable.IsDirty">
@@ -4330,6 +4466,9 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.IPersonalizable" />
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.PersonalizationState" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.IsCustomPersonalizationStateDirty" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.WebParts.IPersonalizable.Load">
@@ -4364,6 +4503,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         <block subset="none" type="overrides">
           <para>One scenario in which developers would use this method is if they are developing a custom personalization framework to use in place of the one provided by the Web Parts control set. In such cases, developers could inherit from the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> class and override the <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.CreatePersonalization" /> method to return a custom implementation of a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" /> object. The custom <see cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" /> object would call the implementation of the <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.System#Web#UI#WebControls#WebParts#IPersonalizable#Load(System.Web.UI.WebControls.WebParts.PersonalizationDictionary)" /> method at the proper time to load custom personalization data.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.LoadCustomPersonalizationState(System.Web.UI.WebControls.WebParts.PersonalizationDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.WebParts.IPersonalizable.Save">
@@ -4398,6 +4538,8 @@ protected void mgr1_AuthorizeWebPart(object sender,
         <block subset="none" type="overrides">
           <para>One scenario in which developers would work with this method is if they are developing a custom personalization framework to use in place of the one provided by the Web Parts control set. In such cases, developers could inherit from the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> class and override the <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.CreatePersonalization" /> method to return a custom implementation of a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" /> object. The custom <see cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" /> object would call the implementation of the <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.System#Web#UI#WebControls#WebParts#IPersonalizable#Save(System.Web.UI.WebControls.WebParts.PersonalizationDictionary)" /> method at the proper time to save the custom personalization data.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.SaveCustomPersonalizationState(System.Web.UI.WebControls.WebParts.PersonalizationDictionary)" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.System#Web#UI#WebControls#WebParts#IPersonalizable#IsDirty" />
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -4491,6 +4633,8 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartAdded(System.Web.UI.WebControls.WebParts.WebPartEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartAdding" />
       </Docs>
     </Member>
     <Member MemberName="WebPartAdding">
@@ -4517,6 +4661,9 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartAdding(System.Web.UI.WebControls.WebParts.WebPartAddingEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.AddWebPart(System.Web.UI.WebControls.WebParts.WebPart,System.Web.UI.WebControls.WebParts.WebPartZoneBase,System.Int32)" />
+        <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartAdded" />
       </Docs>
     </Member>
     <Member MemberName="WebPartClosed">
@@ -4545,6 +4692,8 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartClosed(System.Web.UI.WebControls.WebParts.WebPartEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.CloseWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
       </Docs>
     </Member>
     <Member MemberName="WebPartClosing">
@@ -4573,6 +4722,9 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartClosing(System.Web.UI.WebControls.WebParts.WebPartCancelEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartClosed" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.CloseWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
       </Docs>
     </Member>
     <Member MemberName="WebPartDeleted">
@@ -4597,6 +4749,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartDeleted(System.Web.UI.WebControls.WebParts.WebPartEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="WebPartDeleting">
@@ -4623,6 +4776,9 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartDeleting(System.Web.UI.WebControls.WebParts.WebPartCancelEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartDeleted" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.DeleteWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
       </Docs>
     </Member>
     <Member MemberName="WebPartMoved">
@@ -4647,6 +4803,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartMoved(System.Web.UI.WebControls.WebParts.WebPartEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="WebPartMoving">
@@ -4675,6 +4832,9 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartMoving(System.Web.UI.WebControls.WebParts.WebPartMovingEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartMoved" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.MoveWebPart(System.Web.UI.WebControls.WebParts.WebPart,System.Web.UI.WebControls.WebParts.WebPartZoneBase,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="WebParts">
@@ -4757,6 +4917,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartsConnected(System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="WebPartsConnecting">
@@ -4783,6 +4944,9 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartsConnecting(System.Web.UI.WebControls.WebParts.WebPartConnectionsCancelEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsConnected" />
+        <altmember cref="Overload:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectWebParts" />
       </Docs>
     </Member>
     <Member MemberName="WebPartsDisconnected">
@@ -4809,6 +4973,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartsDisconnected(System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="WebPartsDisconnecting">
@@ -4841,6 +5006,9 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartsDisconnecting(System.Web.UI.WebControls.WebParts.WebPartConnectionsCancelEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsDisconnected" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.DisconnectWebParts(System.Web.UI.WebControls.WebParts.WebPartConnection)" />
       </Docs>
     </Member>
     <Member MemberName="Zones">

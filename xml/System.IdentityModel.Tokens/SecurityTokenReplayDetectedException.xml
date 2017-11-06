@@ -13,6 +13,7 @@
   <Docs>
     <summary>The exception that is thrown when a security token that has been replayed is received.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="M:System.IdentityModel.Tokens.SecurityTokenHandler.DetectReplayedToken(System.IdentityModel.Tokens.SecurityToken)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -88,5 +89,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SecurityTokenReplayDetectedException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

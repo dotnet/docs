@@ -42,6 +42,9 @@
  ]]></format>
     </remarks>
     <threadsafe>This type is safe for multithreaded read operations. You must synchronize any write operations.</threadsafe>
+    <altmember cref="T:System.Data.DataRow" />
+    <altmember cref="T:System.Data.DataTable" />
+    <altmember cref="M:System.Data.DataTable.NewRow" />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -93,6 +96,11 @@
         <exception cref="T:System.ArgumentException">The row either belongs to another table or already belongs to this table.</exception>
         <exception cref="T:System.Data.ConstraintException">The addition invalidates a constraint.</exception>
         <exception cref="T:System.Data.NoNullAllowedException">The addition tries to put a null in a <see cref="T:System.Data.DataColumn" /> where <see cref="P:System.Data.DataColumn.AllowDBNull" /> is false.</exception>
+        <altmember cref="M:System.Data.DataRowCollection.Clear" />
+        <altmember cref="T:System.Data.DataTable" />
+        <altmember cref="T:System.Data.DataRow" />
+        <altmember cref="M:System.Data.DataTable.NewRow" />
+        <altmember cref="M:System.Data.DataRowCollection.Remove(System.Data.DataRow)" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -151,6 +159,11 @@
         <exception cref="T:System.InvalidCastException">A value does not match its respective column type.</exception>
         <exception cref="T:System.Data.ConstraintException">Adding the row invalidates a constraint.</exception>
         <exception cref="T:System.Data.NoNullAllowedException">Trying to put a null in a column where <see cref="P:System.Data.DataColumn.AllowDBNull" /> is false.</exception>
+        <altmember cref="M:System.Data.DataRowCollection.Clear" />
+        <altmember cref="T:System.Data.DataTable" />
+        <altmember cref="T:System.Data.DataRow" />
+        <altmember cref="M:System.Data.DataTable.NewRow" />
+        <altmember cref="M:System.Data.DataRowCollection.Remove(System.Data.DataRow)" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -179,6 +192,8 @@
         <summary>Clears the collection of all rows.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Data.InvalidConstraintException">A <see cref="T:System.Data.ForeignKeyConstraint" /> is enforced on the <see cref="T:System.Data.DataRowCollection" />.</exception>
+        <altmember cref="M:System.Data.DataRowCollection.Add(System.Data.DataRow)" />
+        <altmember cref="M:System.Data.DataRowCollection.Remove(System.Data.DataRow)" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -228,6 +243,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Data.MissingPrimaryKeyException">The table does not have a primary key.</exception>
+        <altmember cref="P:System.Data.DataTable.PrimaryKey" />
+        <altmember cref="M:System.Data.DataRowCollection.Find(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -277,6 +294,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Data.MissingPrimaryKeyException">The table does not have a primary key.</exception>
+        <altmember cref="P:System.Data.DataTable.PrimaryKey" />
+        <altmember cref="M:System.Data.DataRowCollection.Find(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -415,6 +434,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Data.MissingPrimaryKeyException">The table does not have a primary key.</exception>
+        <altmember cref="T:System.Data.DataTable" />
+        <altmember cref="P:System.Data.DataTable.PrimaryKey" />
+        <altmember cref="M:System.Data.DataRowCollection.Contains(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Find">
@@ -463,6 +485,9 @@
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">No row corresponds to that index value.</exception>
         <exception cref="T:System.Data.MissingPrimaryKeyException">The table does not have a primary key.</exception>
+        <altmember cref="T:System.Data.DataTable" />
+        <altmember cref="P:System.Data.DataTable.PrimaryKey" />
+        <altmember cref="M:System.Data.DataRowCollection.Contains(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -610,6 +635,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">The index value is greater than the number of items in the collection.</exception>
+        <altmember cref="M:System.Data.DataRowCollection.Contains(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -658,6 +684,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.DataRowCollection.Add(System.Data.DataRow)" />
+        <altmember cref="M:System.Data.DataRowCollection.Clear" />
+        <altmember cref="M:System.Data.DataRowCollection.Contains(System.Object)" />
+        <altmember cref="M:System.Data.DataRowCollection.Find(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -704,7 +734,49 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.DataRowCollection.Clear" />
+        <altmember cref="M:System.Data.DataRowCollection.Add(System.Data.DataRow)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Find">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a specified <see cref="T:System.Data.DataRow" /> using the <see cref="P:System.Data.DataTable.PrimaryKey" /> index (performance should be an O(log n) operation).</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CopyTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies all the <see cref="T:System.Data.DataRow" /> objects from the collection into the given array, starting at the given destination array index.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Contains">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a value that indicates whether the primary key columns of any row in the collection contain the specified value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a <see cref="T:System.Data.DataRow" /> to the <see cref="T:System.Data.DataRowCollection" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -34,6 +34,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+    <altmember cref="T:System.Web.UI.WebControls.DetailsViewModeEventHandler" />
+    <altmember cref="T:System.ComponentModel.CancelEventArgs" />
+    <altmember cref="E:System.Web.UI.WebControls.DetailsView.ModeChanging" />
+    <altmember cref="P:System.ComponentModel.CancelEventArgs.Cancel" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsViewModeEventArgs.CancelingEdit" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsViewModeEventArgs.NewMode" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -72,6 +79,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewModeEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ModeChanging" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewModeEventArgs.CancelingEdit" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewModeEventArgs.NewMode" />
       </Docs>
     </Member>
     <Member MemberName="CancelingEdit">
@@ -106,6 +118,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewModeEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ModeChanging" />
       </Docs>
     </Member>
     <Member MemberName="NewMode">
@@ -139,6 +154,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewModeEventHandler" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewMode" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ModeChanging" />
       </Docs>
     </Member>
   </Members>

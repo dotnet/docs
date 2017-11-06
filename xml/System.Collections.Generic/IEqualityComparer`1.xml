@@ -52,6 +52,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Collections.Generic.EqualityComparer`1" />
+    <altmember cref="T:System.Collections.Generic.Dictionary`2" />
+    <altmember cref="Overload:System.Collections.Generic.Dictionary`2.#ctor" />
+    <altmember cref="T:System.Collections.Generic.IComparer`1" />
   </Docs>
   <Members>
     <Member MemberName="Equals">
@@ -148,6 +152,8 @@
         <block subset="none" type="overrides">
           <para>Implementations are required to ensure that if the <see cref="M:System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)" /> method returns <see langword="true" /> for two objects <c>x</c> and <c>y</c>, then the value returned by the <see cref="M:System.Collections.Generic.IEqualityComparer`1.GetHashCode(`0)" /> method for <c>x</c> must equal the value returned for <c>y</c>.</para>
         </block>
+        <altmember cref="M:System.Object.GetHashCode" />
+        <altmember cref="T:System.Collections.IHashCodeProvider" />
       </Docs>
     </Member>
   </Members>

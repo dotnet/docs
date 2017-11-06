@@ -46,6 +46,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Runtime.Versioning.FrameworkName" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -124,6 +125,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Runtime.Versioning.TargetFrameworkAttribute.FrameworkName" />
       </Docs>
     </Member>
     <Member MemberName="FrameworkName">
@@ -162,6 +164,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Runtime.Versioning.TargetFrameworkAttribute.FrameworkDisplayName" />
       </Docs>
     </Member>
   </Members>

@@ -64,6 +64,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.Design.AppSettingsExpressionEditor" />
+    <altmember cref="T:System.Configuration.ConfigurationManager" />
+    <altmember cref="P:System.Configuration.ConfigurationManager.AppSettings" />
+    <altmember cref="T:System.Web.UI.CompilationMode" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -114,6 +118,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.CompilationMode" />
+        <altmember cref="P:System.Configuration.ConfigurationManager.AppSettings" />
       </Docs>
     </Member>
     <Member MemberName="GetAppSetting">
@@ -144,6 +150,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The key is not found in Web.config.</exception>
+        <altmember cref="P:System.Configuration.ConfigurationManager.AppSettings" />
       </Docs>
     </Member>
     <Member MemberName="GetAppSetting">
@@ -182,6 +189,7 @@
  \- or -  
   
  The return value could not be converted.</exception>
+        <altmember cref="P:System.Configuration.ConfigurationManager.AppSettings" />
       </Docs>
     </Member>
     <Member MemberName="GetCodeExpression">
@@ -215,6 +223,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Configuration.ConfigurationManager.AppSettings" />
       </Docs>
     </Member>
     <Member MemberName="SupportsEvaluate">
@@ -241,7 +250,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.CompilationMode" />
+        <altmember cref="P:System.Configuration.ConfigurationManager.AppSettings" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetAppSetting">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value from the <see langword="&amp;lt;appSettings&amp;gt;" /> section of the Web.config file.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

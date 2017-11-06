@@ -43,6 +43,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Xml.XmlNodeList" />
   </Docs>
   <Members>
     <Member MemberName="Count">
@@ -389,5 +390,23 @@
         <exception cref="T:System.ArgumentException">The <paramref name="node" /> was created from a different <see cref="T:System.Xml.XmlDocument" /> than the one that created the <see langword="XmlNamedNodeMap" />; or the <see langword="XmlNamedNodeMap" /> is read-only.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetNamedItem">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the specified <see cref="T:System.Xml.XmlNode" /> from the collection of nodes in the <see cref="T:System.Xml.XmlNamedNodeMap" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RemoveNamedItem">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the specified node from the <see langword="XmlNamedNodeMap" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

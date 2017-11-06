@@ -597,6 +597,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.SqlDataSourceView" />
+    <altmember cref="T:System.Web.UI.WebControls.AccessDataSource" />
+    <altmember cref="T:System.Web.UI.DataSourceControl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -612,6 +615,9 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.SqlDataSourceView" />
+        <altmember cref="T:System.Web.UI.WebControls.AccessDataSource" />
+        <altmember cref="T:System.Web.UI.DataSourceControl" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -651,6 +657,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.ConnectionString" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.SelectCommand" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.SelectParameters" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -682,6 +691,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.ProviderName" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.ConnectionString" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.SelectCommand" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.SelectParameters" />
       </Docs>
     </Member>
     <Member MemberName="CacheDuration">
@@ -732,6 +745,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.CacheExpirationPolicy" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.EnableCaching" />
       </Docs>
     </Member>
     <Member MemberName="CacheExpirationPolicy">
@@ -777,6 +792,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.CacheDuration" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.EnableCaching" />
       </Docs>
     </Member>
     <Member MemberName="CacheKeyDependency">
@@ -816,6 +833,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.CacheDuration" />
       </Docs>
     </Member>
     <Member MemberName="CancelSelectOnNullParameter">
@@ -881,6 +899,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ConflictOptions" />
       </Docs>
     </Member>
     <Member MemberName="ConnectionString">
@@ -947,6 +966,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.ProviderName" />
       </Docs>
     </Member>
     <Member MemberName="CreateDataSourceView">
@@ -976,6 +996,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.GetView(System.String)" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.GetViewNames" />
+        <altmember cref="T:System.Web.UI.WebControls.SqlDataSourceView" />
+        <altmember cref="T:System.Web.UI.DataSourceView" />
       </Docs>
     </Member>
     <Member MemberName="DataSourceMode">
@@ -1023,6 +1047,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="P:System.Web.UI.WebControls.SqlDataSource.DataSourceMode" /> property is not one of the values defined in the <see cref="T:System.Web.UI.WebControls.SqlDataSourceMode" />.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.SqlDataSourceMode" />
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -1064,6 +1089,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> cannot establish a connection with the underlying data source.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.DeleteCommand" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.DeleteParameters" />
       </Docs>
     </Member>
     <Member MemberName="DeleteCommand">
@@ -1111,6 +1138,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.DeleteParameters" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Delete" />
       </Docs>
     </Member>
     <Member MemberName="DeleteCommandType">
@@ -1141,6 +1170,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.SqlDataSourceCommandType" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.DeleteCommand" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.DeleteParameters" />
       </Docs>
     </Member>
     <Member MemberName="Deleted">
@@ -1167,6 +1199,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.SqlDataSource.Deleting" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnDeleted(System.Web.UI.WebControls.SqlDataSourceStatusEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Delete" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.DeleteParameters" />
       </Docs>
     </Member>
     <Member MemberName="DeleteParameters">
@@ -1226,6 +1262,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.DeleteCommand" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Delete" />
       </Docs>
     </Member>
     <Member MemberName="Deleting">
@@ -1262,6 +1300,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.SqlDataSource.Deleted" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnDeleting(System.Web.UI.WebControls.SqlDataSourceCommandEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Delete" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.DeleteParameters" />
       </Docs>
     </Member>
     <Member MemberName="EnableCaching">
@@ -1307,6 +1349,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="P:System.Web.UI.WebControls.SqlDataSource.EnableCaching" /> property is set to <see langword="true" /> when caching is not supported by the <see cref="T:System.Web.UI.WebControls.SqlDataSource" />.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.CacheDuration" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.CacheExpirationPolicy" />
       </Docs>
     </Member>
     <Member MemberName="FilterExpression">
@@ -1354,6 +1398,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="P:System.Web.UI.WebControls.SqlDataSource.FilterExpression" /> property was set and the <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> is in <see cref="F:System.Web.UI.WebControls.SqlDataSourceMode.DataReader" /> mode.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.FilterParameters" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.DataSourceMode" />
       </Docs>
     </Member>
     <Member MemberName="Filtering">
@@ -1434,6 +1480,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.FilterExpression" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.DataSourceMode" />
       </Docs>
     </Member>
     <Member MemberName="GetDbProviderFactory">
@@ -1460,6 +1508,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.Common.DbProviderFactory" />
       </Docs>
     </Member>
     <Member MemberName="GetView">
@@ -1491,6 +1540,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="viewName" /> is <see langword="null" /> or something other than <c>Table</c>.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.SqlDataSourceView" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.GetViewNames" />
       </Docs>
     </Member>
     <Member MemberName="GetViewNames">
@@ -1517,6 +1568,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.GetView(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -1567,6 +1619,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> cannot establish a connection with the underlying data source.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.InsertCommand" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.InsertParameters" />
       </Docs>
     </Member>
     <Member MemberName="InsertCommand">
@@ -1636,6 +1690,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.InsertParameters" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Insert" />
       </Docs>
     </Member>
     <Member MemberName="InsertCommandType">
@@ -1678,6 +1734,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.SqlDataSourceCommandType" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.InsertCommand" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.InsertParameters" />
       </Docs>
     </Member>
     <Member MemberName="Inserted">
@@ -1721,6 +1780,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.SqlDataSource.Inserting" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnInserted(System.Web.UI.WebControls.SqlDataSourceStatusEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Insert" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.InsertParameters" />
       </Docs>
     </Member>
     <Member MemberName="Inserting">
@@ -1764,6 +1827,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.SqlDataSource.Inserted" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnInserting(System.Web.UI.WebControls.SqlDataSourceCommandEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Insert" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.InsertParameters" />
       </Docs>
     </Member>
     <Member MemberName="InsertParameters">
@@ -1824,6 +1891,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.InsertCommand" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Insert" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -1978,6 +2047,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.ConnectionString" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -1997,6 +2067,7 @@
         <summary>Saves the current view state of the <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> control.</summary>
         <returns>An object that contains the saved state of the <see cref="T:System.Web.UI.WebControls.SqlDataSource" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.IStateManager.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -2058,6 +2129,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> object cannot establish a connection with the underlying data source.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.SelectCommand" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.SelectParameters" />
       </Docs>
     </Member>
     <Member MemberName="SelectCommand">
@@ -2117,6 +2190,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.SelectParameters" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Select(System.Web.UI.DataSourceSelectArguments)" />
       </Docs>
     </Member>
     <Member MemberName="SelectCommandType">
@@ -2155,6 +2230,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.SqlDataSourceCommandType" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.SelectCommand" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.SelectParameters" />
       </Docs>
     </Member>
     <Member MemberName="Selected">
@@ -2181,6 +2259,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.SqlDataSource.Selecting" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnSelected(System.Web.UI.WebControls.SqlDataSourceStatusEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Select(System.Web.UI.DataSourceSelectArguments)" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.SelectParameters" />
       </Docs>
     </Member>
     <Member MemberName="Selecting">
@@ -2207,6 +2289,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.SqlDataSource.Selected" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnSelecting(System.Web.UI.WebControls.SqlDataSourceSelectingEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Select(System.Web.UI.DataSourceSelectArguments)" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.SelectParameters" />
       </Docs>
     </Member>
     <Member MemberName="SelectParameters">
@@ -2266,6 +2352,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.SelectCommand" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Select(System.Web.UI.DataSourceSelectArguments)" />
       </Docs>
     </Member>
     <Member MemberName="SortParameterName">
@@ -2298,6 +2386,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Select(System.Web.UI.DataSourceSelectArguments)" />
       </Docs>
     </Member>
     <Member MemberName="SqlCacheDependency">
@@ -2341,6 +2430,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Caching.SqlCacheDependency" />
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -2366,6 +2456,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IStateManager.TrackViewState" />
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -2417,6 +2508,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> cannot establish a connection with the underlying data source.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.UpdateCommand" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.UpdateParameters" />
       </Docs>
     </Member>
     <Member MemberName="UpdateCommand">
@@ -2474,6 +2567,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.UpdateParameters" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Update" />
       </Docs>
     </Member>
     <Member MemberName="UpdateCommandType">
@@ -2504,6 +2599,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.SqlDataSourceCommandType" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.UpdateCommand" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.UpdateParameters" />
       </Docs>
     </Member>
     <Member MemberName="Updated">
@@ -2538,6 +2636,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.SqlDataSource.Updating" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnUpdated(System.Web.UI.WebControls.SqlDataSourceStatusEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Update" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.UpdateParameters" />
       </Docs>
     </Member>
     <Member MemberName="UpdateParameters">
@@ -2597,6 +2699,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.UpdateCommand" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Update" />
       </Docs>
     </Member>
     <Member MemberName="Updating">
@@ -2634,7 +2738,23 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.SqlDataSource.Updated" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnUpdating(System.Web.UI.WebControls.SqlDataSourceCommandEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Update" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.UpdateParameters" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> class.</summary>
+        <altmember cref="T:System.Web.UI.WebControls.SqlDataSourceView" />
+        <altmember cref="T:System.Web.UI.WebControls.AccessDataSource" />
+        <altmember cref="T:System.Web.UI.DataSourceControl" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

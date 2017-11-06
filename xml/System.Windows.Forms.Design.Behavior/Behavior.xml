@@ -34,6 +34,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
+    <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
+    <altmember cref="T:System.ComponentModel.Design.MenuCommand" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -60,6 +63,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
+        <altmember cref="T:System.ComponentModel.Design.MenuCommand" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -146,6 +152,11 @@
         <block subset="none" type="overrides">
           <para>The default implementation always returns <see langword="false" />.</para>
         </block>
+        <altmember cref="Overload:System.ComponentModel.Design.MenuCommandService.FindCommand" />
+        <altmember cref="M:System.Windows.Forms.Design.Behavior.Behavior.FindCommand(System.ComponentModel.Design.CommandID)" />
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
+        <altmember cref="T:System.ComponentModel.Design.MenuCommand" />
       </Docs>
     </Member>
     <Member MemberName="FindCommand">
@@ -175,6 +186,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
+        <altmember cref="T:System.ComponentModel.Design.MenuCommand" />
       </Docs>
     </Member>
     <Member MemberName="OnDragDrop">
@@ -201,6 +215,9 @@
         <block subset="none" type="overrides">
           <para>You can override the <see cref="M:System.Windows.Forms.Design.Behavior.Behavior.OnDragDrop(System.Windows.Forms.Design.Behavior.Glyph,System.Windows.Forms.DragEventArgs)" /> method so that a <see cref="T:System.Windows.Forms.Design.Behavior.Behavior" /> can specify its own drag-and-drop rules.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
+        <altmember cref="T:System.ComponentModel.Design.MenuCommand" />
       </Docs>
     </Member>
     <Member MemberName="OnDragEnter">
@@ -227,6 +244,9 @@
         <block subset="none" type="overrides">
           <para>You can override the <see cref="M:System.Windows.Forms.Design.Behavior.Behavior.OnDragEnter(System.Windows.Forms.Design.Behavior.Glyph,System.Windows.Forms.DragEventArgs)" /> method so that a <see cref="T:System.Windows.Forms.Design.Behavior.Behavior" /> can specify its own drag-enter rules.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
+        <altmember cref="T:System.ComponentModel.Design.MenuCommand" />
       </Docs>
     </Member>
     <Member MemberName="OnDragLeave">
@@ -253,6 +273,9 @@
         <block subset="none" type="overrides">
           <para>You can override the <see cref="M:System.Windows.Forms.Design.Behavior.Behavior.OnDragLeave(System.Windows.Forms.Design.Behavior.Glyph,System.EventArgs)" /> method so that a <see cref="T:System.Windows.Forms.Design.Behavior.Behavior" /> can specify its own drag-leave rules.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
+        <altmember cref="T:System.ComponentModel.Design.MenuCommand" />
       </Docs>
     </Member>
     <Member MemberName="OnDragOver">
@@ -279,6 +302,9 @@
         <block subset="none" type="overrides">
           <para>You can override the <see cref="M:System.Windows.Forms.Design.Behavior.Behavior.OnDragOver(System.Windows.Forms.Design.Behavior.Glyph,System.Windows.Forms.DragEventArgs)" /> method so that a <see cref="T:System.Windows.Forms.Design.Behavior.Behavior" /> can specify its own drag-over rules.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
+        <altmember cref="T:System.ComponentModel.Design.MenuCommand" />
       </Docs>
     </Member>
     <Member MemberName="OnGiveFeedback">
@@ -305,6 +331,9 @@
         <block subset="none" type="overrides">
           <para>You can override the <see cref="M:System.Windows.Forms.Design.Behavior.Behavior.OnGiveFeedback(System.Windows.Forms.Design.Behavior.Glyph,System.Windows.Forms.GiveFeedbackEventArgs)" /> method so that a <see cref="T:System.Windows.Forms.Design.Behavior.Behavior" /> can specify its own drag-and-drop rules.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
+        <altmember cref="T:System.ComponentModel.Design.MenuCommand" />
       </Docs>
     </Member>
     <Member MemberName="OnLoseCapture">
@@ -343,6 +372,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
+        <altmember cref="T:System.ComponentModel.Design.MenuCommand" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseDoubleClick">
@@ -385,6 +417,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
+        <altmember cref="T:System.ComponentModel.Design.MenuCommand" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseDown">
@@ -419,6 +454,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
+        <altmember cref="T:System.ComponentModel.Design.MenuCommand" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseEnter">
@@ -451,6 +489,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
+        <altmember cref="T:System.ComponentModel.Design.MenuCommand" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseHover">
@@ -483,6 +524,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
+        <altmember cref="T:System.ComponentModel.Design.MenuCommand" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseLeave">
@@ -515,6 +559,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
+        <altmember cref="T:System.ComponentModel.Design.MenuCommand" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseMove">
@@ -549,6 +596,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
+        <altmember cref="T:System.ComponentModel.Design.MenuCommand" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseUp">
@@ -581,6 +631,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
+        <altmember cref="T:System.ComponentModel.Design.MenuCommand" />
       </Docs>
     </Member>
     <Member MemberName="OnQueryContinueDrag">
@@ -607,7 +660,19 @@
         <block subset="none" type="overrides">
           <para>You can override the <see cref="M:System.Windows.Forms.Design.Behavior.Behavior.OnQueryContinueDrag(System.Windows.Forms.Design.Behavior.Glyph,System.Windows.Forms.QueryContinueDragEventArgs)" /> method so that a <see cref="T:System.Windows.Forms.Design.Behavior.Behavior" /> can specify its own drag-and-drop rules.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
+        <altmember cref="T:System.ComponentModel.Design.MenuCommand" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.Behavior.Behavior" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

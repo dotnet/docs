@@ -107,6 +107,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Management.WebEventProvider" />
+    <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
+    <altmember cref="T:System.Web.Management.MailWebEventProvider" />
+    <altmember cref="T:System.Web.Management.MailEventNotificationInfo" />
   </Docs>
   <Members>
     <Member MemberName="CurrentNotification">
@@ -132,6 +136,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Management.MailEventNotificationInfo" />
       </Docs>
     </Member>
     <Member MemberName="Initialize">

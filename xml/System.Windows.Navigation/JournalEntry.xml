@@ -116,6 +116,7 @@
         <summary>Returns the <see cref="P:System.Windows.Navigation.JournalEntry.KeepAlive" /> attached property of the journal entry for the specified element.</summary>
         <returns>The value of the <see cref="P:System.Windows.Navigation.JournalEntry.KeepAlive" /> attached property of the journal entry for the specified element.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="F:System.Windows.Navigation.JournalEntry.KeepAliveProperty" />
       </Docs>
     </Member>
     <Member MemberName="GetName">
@@ -138,6 +139,7 @@
         <summary>Gets the <see cref="P:System.Windows.Navigation.JournalEntry.Name" /> attached property of the journal entry for the specified element.</summary>
         <returns>The <see cref="P:System.Windows.Navigation.JournalEntry.Name" /> attached property of the journal entry for the specified element.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="F:System.Windows.Navigation.JournalEntry.NameProperty" />
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -166,6 +168,7 @@
         <param name="context">The streaming context.</param>
         <summary>Called when this object is serialized.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Runtime.Serialization.ISerializable" />
       </Docs>
     </Member>
     <Member MemberName="KeepAliveProperty">
@@ -276,6 +279,7 @@
           <see langword="true" /> to keep the journal entry in memory; otherwise, <see langword="false" />.</param>
         <summary>Sets the <see cref="P:System.Windows.Navigation.JournalEntry.KeepAlive" /> attached property of the specified element.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Navigation.JournalEntry.KeepAlive" />
       </Docs>
     </Member>
     <Member MemberName="SetName">
@@ -299,6 +303,7 @@
         <param name="name">The name to be assigned to the attached property.</param>
         <summary>Sets the <see cref="P:System.Windows.Navigation.JournalEntry.Name" /> attached property of the specified element.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="F:System.Windows.Navigation.JournalEntry.NameProperty" />
       </Docs>
     </Member>
     <Member MemberName="Source">

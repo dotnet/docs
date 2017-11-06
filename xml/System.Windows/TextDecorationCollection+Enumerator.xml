@@ -17,6 +17,8 @@
   <Docs>
     <summary>Enumerates <see cref="T:System.Windows.TextDecoration" /> items in a <see cref="T:System.Windows.TextDecoration" />.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.TextDecoration" />
+    <altmember cref="T:System.Collections.IEnumerable" />
   </Docs>
   <Members>
     <Member MemberName="Current">
@@ -105,6 +107,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.TextDecorationCollection.Enumerator.Current" />
       </Docs>
     </Member>
     <Member MemberName="System.IDisposable.Dispose">

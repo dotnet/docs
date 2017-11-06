@@ -798,5 +798,42 @@
         <exception cref="T:System.InvalidOperationException">The callback contract is <see langword="null" /> but the service endpoint requires one that is non-<see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateChannelWithOnBehalfOfToken">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a channel that is used to send messages to a service with an on behalf of security token.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateChannelWithActAsToken">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a channel that is used to send messages to a service with an act as security token.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateChannelWithIssuedToken">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a channel that is used to send messages to a service with an issued security token.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ChannelFactory`1" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

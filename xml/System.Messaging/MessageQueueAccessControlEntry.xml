@@ -30,6 +30,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Messaging.MessageQueue.SetPermissions(System.String,System.Messaging.MessageQueueAccessRights)" />
+    <altmember cref="T:System.Messaging.Trustee" />
+    <altmember cref="T:System.Messaging.AccessControlList" />
+    <altmember cref="T:System.Messaging.AccessControlEntryType" />
+    <altmember cref="T:System.Messaging.MessageQueuePermission" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -59,6 +64,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Messaging.Trustee" />
+        <altmember cref="T:System.Messaging.MessageQueueAccessRights" />
+        <altmember cref="M:System.Messaging.MessageQueue.SetPermissions(System.String,System.Messaging.MessageQueueAccessRights)" />
+        <altmember cref="T:System.Messaging.AccessControlList" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -92,6 +101,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Messaging.Trustee" />
+        <altmember cref="T:System.Messaging.MessageQueueAccessRights" />
+        <altmember cref="M:System.Messaging.MessageQueue.SetPermissions(System.String,System.Messaging.MessageQueueAccessRights)" />
+        <altmember cref="T:System.Messaging.AccessControlList" />
       </Docs>
     </Member>
     <Member MemberName="MessageQueueAccessRights">
@@ -117,7 +130,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Messaging.MessageQueueAccessControlEntry.#ctor" />
+        <altmember cref="T:System.Messaging.MessageQueueAccessRights" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Messaging.MessageQueueAccessControlEntry" /> class with the specified trustee and Message Queuing access rights.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -22,6 +22,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Windows.Forms.FileDialog.CustomPlaces" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -55,6 +56,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.FileDialog.CustomPlaces" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -73,6 +75,7 @@
         <param name="path">A folder path to the custom place.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.FileDialogCustomPlace" /> class. with a specified folder path to a custom place.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.FileDialog.CustomPlaces" />
       </Docs>
     </Member>
     <Member MemberName="KnownFolderGuid">
@@ -91,6 +94,7 @@
         <summary>Gets or sets the [!INCLUDE[wiprlhext](~/includes/wiprlhext-md.md)] Known Folder GUID for the custom place.</summary>
         <value>A <see cref="T:System.Guid" /> that indicates the [!INCLUDE[wiprlhext](~/includes/wiprlhext-md.md)] Known Folder for the custom place. If the custom place was specified with a folder path, then an empty GUID is returned. For a list of the available [!INCLUDE[wiprlhext](~/includes/wiprlhext-md.md)] Known Folders, see [Known Folder GUIDs for File Dialog Custom Places](~/docs/framework/winforms/controls/known-folder-guids-for-file-dialog-custom-places.md) or the KnownFolders.h file in the [!INCLUDE[winSDK](~/includes/winsdk-md.md)].</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.FileDialog.CustomPlaces" />
       </Docs>
     </Member>
     <Member MemberName="Path">
@@ -109,6 +113,7 @@
         <summary>Gets or sets the folder path to the custom place.</summary>
         <value>A folder path to the custom place. If the custom place was specified with a [!INCLUDE[wiprlhext](~/includes/wiprlhext-md.md)] Known Folder GUID, then an empty string is returned.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.FileDialog.CustomPlaces" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -128,7 +133,18 @@
         <summary>Returns a string that represents this <see cref="T:System.Windows.Forms.FileDialogCustomPlace" /> instance.</summary>
         <returns>A string that represents this <see cref="T:System.Windows.Forms.FileDialogCustomPlace" /> instance.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.FileDialog.CustomPlaces" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.FileDialogCustomPlace" /> class.</summary>
+        <altmember cref="P:System.Windows.Forms.FileDialog.CustomPlaces" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

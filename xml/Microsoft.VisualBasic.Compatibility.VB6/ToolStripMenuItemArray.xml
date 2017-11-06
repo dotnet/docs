@@ -663,6 +663,7 @@ MsgBox(CStr(ToolStripMenuItemArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.MouseUp" />
       </Docs>
     </Member>
     <Member MemberName="MouseEnter">
@@ -702,6 +703,7 @@ MsgBox(CStr(ToolStripMenuItemArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.MouseEnter" />
       </Docs>
     </Member>
     <Member MemberName="MouseHover">
@@ -745,6 +747,7 @@ MsgBox(CStr(ToolStripMenuItemArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.MouseHover" />
       </Docs>
     </Member>
     <Member MemberName="MouseLeave">
@@ -784,6 +787,7 @@ MsgBox(CStr(ToolStripMenuItemArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.MouseLeave" />
       </Docs>
     </Member>
     <Member MemberName="MouseMove">
@@ -823,6 +827,7 @@ MsgBox(CStr(ToolStripMenuItemArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.MouseMove" />
       </Docs>
     </Member>
     <Member MemberName="MouseUp">
@@ -862,6 +867,7 @@ MsgBox(CStr(ToolStripMenuItemArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.MouseUp" />
       </Docs>
     </Member>
     <Member MemberName="OwnerChanged">
@@ -945,6 +951,7 @@ MsgBox(CStr(ToolStripMenuItemArray(1).Text))
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.QueryAccessibilityHelp" />
       </Docs>
     </Member>
     <Member MemberName="ResetIndex">
@@ -1146,5 +1153,14 @@ MsgBox(CStr(ToolStripMenuItemArray(1).Text))
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.ToolStripMenuItemArray" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

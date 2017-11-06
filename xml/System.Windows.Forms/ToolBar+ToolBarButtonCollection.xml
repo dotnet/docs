@@ -33,6 +33,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ToolBar" />
+    <altmember cref="T:System.Windows.Forms.ToolBarButton" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -58,6 +60,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ToolBarButton" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -98,6 +101,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Remove(System.Windows.Forms.ToolBarButton)" />
+        <altmember cref="M:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Clear" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -138,6 +143,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Remove(System.Windows.Forms.ToolBarButton)" />
+        <altmember cref="M:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Clear" />
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -179,6 +186,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Add(System.Windows.Forms.ToolBarButton)" />
+        <altmember cref="M:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Clear" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -217,6 +226,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Remove(System.Windows.Forms.ToolBarButton)" />
+        <altmember cref="T:System.Windows.Forms.ToolBarButton" />
+        <altmember cref="M:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Add(System.Windows.Forms.ToolBarButton)" />
+        <altmember cref="P:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Item(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -327,6 +340,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ToolBarButton" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -357,6 +371,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -395,6 +410,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ToolBarButtonClickEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="IndexOfKey">
@@ -469,6 +485,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Add(System.Windows.Forms.ToolBarButton)" />
+        <altmember cref="M:System.Windows.Forms.ToolBar.ToolBarButtonCollection.AddRange(System.Windows.Forms.ToolBarButton[])" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -543,6 +561,8 @@
  -or-  
   
  The <paramref name="index" /> value is greater than the number of buttons in the collection, and the collection of buttons is not <see langword="null" />.</exception>
+        <altmember cref="P:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Count" />
+        <altmember cref="T:System.Windows.Forms.ToolBarButton" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -613,6 +633,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Clear" />
+        <altmember cref="T:System.Windows.Forms.ToolBarButton" />
+        <altmember cref="M:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Add(System.Windows.Forms.ToolBarButton)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -651,6 +674,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> value is less than 0, or it is greater than the number of buttons in the collection.</exception>
+        <altmember cref="M:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Clear" />
+        <altmember cref="T:System.Windows.Forms.ToolBarButton" />
+        <altmember cref="M:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Add(System.Windows.Forms.ToolBarButton)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveByKey">
@@ -967,5 +993,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.Windows.Forms.ToolBarButton" /> within the collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a new toolbar button to the end of the toolbar button collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

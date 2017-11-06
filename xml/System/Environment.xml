@@ -94,6 +94,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">for read access to the PATH environment variable. Associated enumeration: <see cref="F:System.Security.Permissions.EnvironmentPermissionAccess.Read" /></permission>
+        <altmember cref="M:System.Environment.GetCommandLineArgs" />
       </Docs>
     </Member>
     <Member MemberName="CurrentDirectory">
@@ -544,6 +545,7 @@ goto :EOF
         </remarks>
         <exception cref="T:System.NotSupportedException">The system does not support command-line arguments.</exception>
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">for read access to the PATH environment variable. Associated enumeration: <see cref="F:System.Security.Permissions.EnvironmentPermissionAccess.Read" /></permission>
+        <altmember cref="P:System.Environment.CommandLine" />
       </Docs>
     </Member>
     <Member MemberName="GetEnvironmentVariable">
@@ -614,6 +616,9 @@ goto :EOF
           <paramref name="variable" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission to perform this operation.</exception>
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">for the ability to read the value of <paramref name="variable" />. Associated enumeration: <see cref="F:System.Security.Permissions.EnvironmentPermissionAccess.Read" /></permission>
+        <altmember cref="M:System.Environment.GetEnvironmentVariables" />
+        <altmember cref="M:System.Environment.SetEnvironmentVariable(System.String,System.String)" />
+        <altmember cref="T:System.EnvironmentVariableTarget" />
       </Docs>
     </Member>
     <Member MemberName="GetEnvironmentVariable">
@@ -677,6 +682,9 @@ goto :EOF
  or  
   
  for full access to environment variables if <paramref name="target" /> is <see cref="F:System.EnvironmentVariableTarget.User" /> or <see cref="F:System.EnvironmentVariableTarget.Machine" /> (Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />).</permission>
+        <altmember cref="M:System.Environment.SetEnvironmentVariable(System.String,System.String,System.EnvironmentVariableTarget)" />
+        <altmember cref="M:System.Environment.GetEnvironmentVariables" />
+        <altmember cref="T:System.EnvironmentVariableTarget" />
       </Docs>
     </Member>
     <Member MemberName="GetEnvironmentVariables">
@@ -726,6 +734,7 @@ goto :EOF
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission to perform this operation.</exception>
         <exception cref="T:System.OutOfMemoryException">The buffer is out of memory.</exception>
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">for the ability to read the names and values of environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.EnvironmentPermissionAccess.Read" /></permission>
+        <altmember cref="M:System.Environment.GetEnvironmentVariable(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetEnvironmentVariables">
@@ -783,6 +792,8 @@ goto :EOF
  or  
   
  for full access to environment variables if <paramref name="target" /> is <see cref="F:System.EnvironmentVariableTarget.User" /> or <see cref="F:System.EnvironmentVariableTarget.Machine" /> (Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />).</permission>
+        <altmember cref="M:System.Environment.SetEnvironmentVariable(System.String,System.String,System.EnvironmentVariableTarget)" />
+        <altmember cref="T:System.EnvironmentVariableTarget" />
       </Docs>
     </Member>
     <Member MemberName="GetFolderPath">
@@ -976,6 +987,7 @@ goto :EOF
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.AppDomain.IsFinalizingForUnload" />
       </Docs>
     </Member>
     <Member MemberName="Is64BitOperatingSystem">
@@ -1323,6 +1335,8 @@ goto :EOF
  An error occurred during the execution of this operation.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission to perform this operation.</exception>
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">for full access to environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="M:System.Environment.GetEnvironmentVariable(System.String)" />
+        <altmember cref="M:System.Environment.GetEnvironmentVariables" />
       </Docs>
     </Member>
     <Member MemberName="SetEnvironmentVariable">
@@ -1423,6 +1437,9 @@ goto :EOF
  An error occurred during the execution of this operation.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission to perform this operation.</exception>
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">for full access to environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="M:System.Environment.GetEnvironmentVariable(System.String,System.EnvironmentVariableTarget)" />
+        <altmember cref="M:System.Environment.GetEnvironmentVariables(System.EnvironmentVariableTarget)" />
+        <altmember cref="T:System.EnvironmentVariableTarget" />
       </Docs>
     </Member>
     <Member MemberName="StackTrace">
@@ -1670,6 +1687,7 @@ goto :EOF
         <exception cref="T:System.PlatformNotSupportedException">The operating system does not support retrieving the network domain name.</exception>
         <exception cref="T:System.InvalidOperationException">The network domain name cannot be retrieved.</exception>
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">for read access to the USERDOMAIN environment variable. Associated enumeration: <see cref="F:System.Security.Permissions.EnvironmentPermissionAccess.Read" /></permission>
+        <altmember cref="P:System.Environment.UserName" />
       </Docs>
     </Member>
     <Member MemberName="UserInteractive">
@@ -1714,6 +1732,7 @@ goto :EOF
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.SystemInformation" />
       </Docs>
     </Member>
     <Member MemberName="UserName">
@@ -1762,6 +1781,7 @@ goto :EOF
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">for read access to the USERNAME environment variable. Associated enumeration: <see cref="F:System.Security.Permissions.EnvironmentPermissionAccess.Read" /></permission>
+        <altmember cref="P:System.Environment.UserDomainName" />
       </Docs>
     </Member>
     <Member MemberName="Version">
@@ -1851,5 +1871,61 @@ goto :EOF
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">for full access to the resource protected by this permission. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetEnvironmentVariable">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the value of an environment variable.</summary>
+        <altmember cref="M:System.Environment.GetEnvironmentVariables" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetEnvironmentVariables">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves all environment variable names and their values.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetEnvironmentVariable">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates, modifies, or deletes an environment variable.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetFolderPath">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the path to the system special folder that is identified by the specified enumeration.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FailFast">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Immediately terminates a process after writing a message to the Windows Application event log, and then includes the message and optional exception information in error reporting to Microsoft.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

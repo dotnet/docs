@@ -30,6 +30,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission.Copy" />
+    <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission.FromXml(System.Security.SecurityElement)" />
+    <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermissionAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -61,6 +64,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission.IsUnrestricted" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermissionAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -91,6 +96,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission.Union(System.Security.IPermission)" />
       </Docs>
     </Member>
     <Member MemberName="FromXml">
@@ -131,6 +137,8 @@
   
 -   The parameter's version number is not supported.</exception>
         <exception cref="T:System.ArgumentNullException">The parameter is a <see langword="null" /> reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission.ToXml" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermissionAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Intersect">
@@ -173,6 +181,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The target parameter is not a <see langword="null" /> reference (<see langword="Nothing" /> in Visual Basic) and is not an instance of the same class as the current permission.</exception>
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission.IsSubsetOf(System.Security.IPermission)" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission.Union(System.Security.IPermission)" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermissionAttribute" />
       </Docs>
     </Member>
     <Member MemberName="IsSubsetOf">
@@ -218,6 +229,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The parameter is a <see langword="null" /> reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission.Intersect(System.Security.IPermission)" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission.Union(System.Security.IPermission)" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermissionAttribute" />
       </Docs>
     </Member>
     <Member MemberName="IsUnrestricted">
@@ -249,6 +263,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission.Copy" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission.Union(System.Security.IPermission)" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermissionAttribute" />
       </Docs>
     </Member>
     <Member MemberName="ToXml">
@@ -279,6 +296,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission.Copy" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission.FromXml(System.Security.SecurityElement)" />
       </Docs>
     </Member>
     <Member MemberName="Union">
@@ -321,6 +340,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The parameter is a <see langword="null" /> reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission.Intersect(System.Security.IPermission)" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission.IsSubsetOf(System.Security.IPermission)" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission.IsUnrestricted" />
       </Docs>
     </Member>
   </Members>

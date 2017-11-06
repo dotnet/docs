@@ -19,6 +19,7 @@
     <summary>Defines the methods that are used to create <see cref="T:System.Web.HttpWorkerRequest" /> objects in the .NET Framework.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:System.Web.Hosting.ISAPIRuntime" />
   </Docs>
   <Members>
     <Member MemberName="DoGCCollect">
@@ -38,6 +39,7 @@
         <summary>Forces garbage collection.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="M:System.GC.Collect" />
       </Docs>
     </Member>
     <Member MemberName="ProcessRequest">

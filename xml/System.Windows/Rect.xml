@@ -445,6 +445,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Rect.IsEmpty" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -487,6 +488,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Rect.op_Equality(System.Windows.Rect,System.Windows.Rect)" />
+        <altmember cref="M:System.Windows.Rect.op_Inequality(System.Windows.Rect,System.Windows.Rect)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -529,6 +532,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Rect.op_Equality(System.Windows.Rect,System.Windows.Rect)" />
+        <altmember cref="M:System.Windows.Rect.op_Inequality(System.Windows.Rect,System.Windows.Rect)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -573,6 +578,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Rect.op_Equality(System.Windows.Rect,System.Windows.Rect)" />
+        <altmember cref="M:System.Windows.Rect.op_Inequality(System.Windows.Rect,System.Windows.Rect)" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -648,6 +655,7 @@
           <see cref="P:System.Windows.Rect.Height" /> is set to a negative value.</exception>
         <exception cref="T:System.InvalidOperationException">
           <see cref="P:System.Windows.Rect.Height" /> is set on an <see cref="P:System.Windows.Rect.Empty" /> rectangle.</exception>
+        <altmember cref="P:System.Windows.Rect.Width" />
       </Docs>
     </Member>
     <Member MemberName="Inflate">
@@ -684,6 +692,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">This method is called on the <see cref="P:System.Windows.Rect.Empty" /> rectangle.</exception>
+        <altmember cref="M:System.Windows.Rect.Scale(System.Double,System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="Inflate">
@@ -724,6 +733,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">This method is called on the <see cref="P:System.Windows.Rect.Empty" /> rectangle.</exception>
+        <altmember cref="M:System.Windows.Rect.Scale(System.Double,System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="Inflate">
@@ -764,6 +774,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="rect" /> is an <see cref="P:System.Windows.Rect.Empty" /> rectangle.</exception>
+        <altmember cref="M:System.Windows.Rect.Scale(System.Double,System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="Inflate">
@@ -808,6 +819,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="rect" /> is an <see cref="P:System.Windows.Rect.Empty" /> rectangle.</exception>
+        <altmember cref="M:System.Windows.Rect.Scale(System.Double,System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="Intersect">
@@ -843,6 +855,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Rect.IntersectsWith(System.Windows.Rect)" />
       </Docs>
     </Member>
     <Member MemberName="Intersect">
@@ -876,6 +889,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Rect.IntersectsWith(System.Windows.Rect)" />
       </Docs>
     </Member>
     <Member MemberName="IntersectsWith">
@@ -934,6 +948,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Rect.Empty" />
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -966,6 +981,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Rect.X" />
       </Docs>
     </Member>
     <Member MemberName="Location">
@@ -1352,6 +1368,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Rect.Inflate(System.Double,System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="Size">
@@ -1426,6 +1443,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IFormattable" />
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -1458,6 +1476,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Rect.Y" />
       </Docs>
     </Member>
     <Member MemberName="TopLeft">
@@ -1665,6 +1684,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Rect.Contains(System.Windows.Point)" />
       </Docs>
     </Member>
     <Member MemberName="Union">
@@ -1695,6 +1715,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Rect.Contains(System.Windows.Rect)" />
       </Docs>
     </Member>
     <Member MemberName="Union">
@@ -1728,6 +1749,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Rect.Contains(System.Windows.Point)" />
       </Docs>
     </Member>
     <Member MemberName="Union">
@@ -1761,6 +1783,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Rect.Contains(System.Windows.Rect)" />
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -1803,6 +1826,7 @@
           <see cref="P:System.Windows.Rect.Width" /> is set to a negative value.</exception>
         <exception cref="T:System.InvalidOperationException">
           <see cref="P:System.Windows.Rect.Width" /> is set on an <see cref="P:System.Windows.Rect.Empty" /> rectangle.</exception>
+        <altmember cref="P:System.Windows.Rect.Height" />
       </Docs>
     </Member>
     <Member MemberName="X">
@@ -1843,6 +1867,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">
           <see cref="P:System.Windows.Rect.X" /> is set on an <see cref="P:System.Windows.Rect.Empty" /> rectangle.</exception>
+        <altmember cref="P:System.Windows.Rect.Y" />
       </Docs>
     </Member>
     <Member MemberName="Y">
@@ -1883,7 +1908,89 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">
           <see cref="P:System.Windows.Rect.Y" /> is set on an <see cref="P:System.Windows.Rect.Empty" /> rectangle.</exception>
+        <altmember cref="P:System.Windows.Rect.X" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Inflate">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a rectangle that results from expanding or shrinking a rectangle by the specified amount.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Offset">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Moves a rectangle by the specified amount.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Rect" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Contains">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether the rectangle contains the specified point or rectangle.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Intersect">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Finds the intersection of two rectangles.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Transform">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Transforms a rectangle by using the specified matrix.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a string representation of the rectangle.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether two rectangles are equal.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Union">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a rectangle that is exactly large enough to contain a given rectangle and a specified point or second rectangle.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -34,6 +34,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DateTimePicker" />
+    <altmember cref="T:System.DateTime" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -99,6 +101,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SelectionRange.Start" />
+        <altmember cref="P:System.Windows.Forms.SelectionRange.End" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -137,6 +141,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SelectionRange.Start" />
+        <altmember cref="P:System.Windows.Forms.SelectionRange.End" />
       </Docs>
     </Member>
     <Member MemberName="End">
@@ -166,6 +172,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SelectionRange.Start" />
       </Docs>
     </Member>
     <Member MemberName="Start">
@@ -195,6 +202,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SelectionRange.End" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -223,5 +231,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.SelectionRange" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

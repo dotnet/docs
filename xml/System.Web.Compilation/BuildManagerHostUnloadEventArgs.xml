@@ -20,6 +20,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.ApplicationShutdownReason" />
+    <altmember cref="T:System.Web.Compilation.ClientBuildManager" />
+    <altmember cref="T:System.Web.Compilation.BuildManagerHostUnloadEventHandler" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -70,6 +73,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.ApplicationShutdownReason" />
+        <altmember cref="T:System.Web.Compilation.ClientBuildManager" />
+        <altmember cref="T:System.Web.Compilation.BuildManagerHostUnloadEventHandler" />
       </Docs>
     </Member>
   </Members>

@@ -294,6 +294,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.FlowDocument.ColumnRuleBrush" />
+        <altmember cref="P:System.Windows.Documents.FlowDocument.ColumnRuleWidth" />
       </Docs>
     </Member>
     <Member MemberName="ColumnGapProperty">
@@ -358,6 +360,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.FlowDocument.ColumnGap" />
+        <altmember cref="P:System.Windows.Documents.FlowDocument.ColumnRuleWidth" />
       </Docs>
     </Member>
     <Member MemberName="ColumnRuleBrushProperty">
@@ -455,6 +459,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.FlowDocument.ColumnGap" />
+        <altmember cref="P:System.Windows.Documents.FlowDocument.ColumnRuleBrush" />
       </Docs>
     </Member>
     <Member MemberName="ColumnRuleWidthProperty">
@@ -611,6 +617,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.FlowDocument.ContentStart" />
       </Docs>
     </Member>
     <Member MemberName="ContentStart">
@@ -646,6 +653,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.FlowDocument.ContentEnd" />
       </Docs>
     </Member>
     <Member MemberName="FlowDirection">
@@ -2012,6 +2020,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.DependencyPropertyChangedEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="PageHeight">
@@ -2588,5 +2597,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.FlowDocument" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

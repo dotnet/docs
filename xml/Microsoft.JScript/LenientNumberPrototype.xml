@@ -14,6 +14,8 @@
     <summary>Stores objects that represent the static methods of the <see cref="T:Microsoft.JScript.NumberPrototype" /> class. The <see cref="T:Microsoft.JScript.LenientNumberPrototype" /> class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.NumberObject" />
+    <altmember cref="T:Microsoft.JScript.NumberConstructor" />
   </Docs>
   <Members>
     <Member MemberName="constructor">
@@ -32,6 +34,8 @@
         <summary>Stores a reference to a <see cref="T:Microsoft.JScript.NumberConstructor" /> object.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.NumberObject" />
+        <altmember cref="T:Microsoft.JScript.NumberPrototype" />
       </Docs>
     </Member>
     <Member MemberName="toExponential">
@@ -50,6 +54,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.NumberPrototype.toExponential(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.NumberPrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.NumberObject" />
+        <altmember cref="T:Microsoft.JScript.NumberConstructor" />
       </Docs>
     </Member>
     <Member MemberName="toFixed">
@@ -68,6 +74,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.NumberPrototype.toFixed(System.Object,System.Double)" /> method of the <see cref="T:Microsoft.JScript.NumberPrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.NumberObject" />
+        <altmember cref="T:Microsoft.JScript.NumberConstructor" />
       </Docs>
     </Member>
     <Member MemberName="toLocaleString">
@@ -86,6 +94,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.NumberPrototype.toLocaleString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.NumberPrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.NumberObject" />
+        <altmember cref="T:Microsoft.JScript.NumberConstructor" />
       </Docs>
     </Member>
     <Member MemberName="toPrecision">
@@ -104,6 +114,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.NumberPrototype.toPrecision(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.NumberPrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.NumberObject" />
+        <altmember cref="T:Microsoft.JScript.NumberConstructor" />
       </Docs>
     </Member>
     <Member MemberName="toString">
@@ -122,6 +134,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.NumberPrototype.toString(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.NumberPrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.NumberObject" />
+        <altmember cref="T:Microsoft.JScript.NumberConstructor" />
       </Docs>
     </Member>
     <Member MemberName="valueOf">
@@ -140,6 +154,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.NumberPrototype.valueOf(System.Object)" /> method of the <see cref="T:Microsoft.JScript.NumberPrototype" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.NumberObject" />
+        <altmember cref="T:Microsoft.JScript.NumberConstructor" />
       </Docs>
     </Member>
   </Members>

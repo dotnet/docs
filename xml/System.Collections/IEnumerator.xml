@@ -66,6 +66,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Collections.IEnumerable" />
+    <altmember cref="T:System.Collections.ICollection" />
+    <altmember cref="T:System.Collections.Generic.IEnumerator`1" />
   </Docs>
   <Members>
     <Member MemberName="Current">
@@ -120,6 +123,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.IEnumerator.MoveNext" />
+        <altmember cref="M:System.Collections.IEnumerator.Reset" />
       </Docs>
     </Member>
     <Member MemberName="MoveNext">
@@ -173,6 +178,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The collection was modified after the enumerator was created.</exception>
+        <altmember cref="P:System.Collections.IEnumerator.Current" />
+        <altmember cref="M:System.Collections.IEnumerator.Reset" />
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -225,6 +232,8 @@
         <block subset="none" type="overrides">
           <para>All calls to <see cref="M:System.Collections.IEnumerator.Reset" /> must result in the same state for the enumerator. The preferred implementation is to move the enumerator to the beginning of the collection, before the first element. This invalidates the enumerator if the collection has been modified since the enumerator was created, which is consistent with <see cref="M:System.Collections.IEnumerator.MoveNext" /> and <see cref="P:System.Collections.IEnumerator.Current" />.</para>
         </block>
+        <altmember cref="M:System.Collections.IEnumerator.MoveNext" />
+        <altmember cref="P:System.Collections.IEnumerator.Current" />
       </Docs>
     </Member>
   </Members>

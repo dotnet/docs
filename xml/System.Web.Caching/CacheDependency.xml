@@ -36,6 +36,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Caching.Cache" />
+    <altmember cref="M:System.Web.Caching.Cache.Insert(System.String,System.Object,System.Web.Caching.CacheDependency)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -65,6 +67,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Caching.Cache" />
+        <altmember cref="M:System.Web.Caching.Cache.Insert(System.String,System.Object,System.Web.Caching.CacheDependency)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -105,6 +109,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Caching.Cache" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -145,6 +150,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Caching.Cache" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -185,6 +191,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Caching.Cache" />
+        <altmember cref="M:System.Web.Caching.Cache.Insert(System.String,System.Object,System.Web.Caching.CacheDependency)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -225,6 +233,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Caching.Cache" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -262,6 +271,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Caching.Cache" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -304,6 +314,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Caching.Cache" />
+        <altmember cref="M:System.Web.Caching.Cache.Insert(System.String,System.Object,System.Web.Caching.CacheDependency)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -387,6 +399,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Caching.Cache" />
+        <altmember cref="M:System.Web.Caching.Cache.Insert(System.String,System.Object,System.Web.Caching.CacheDependency)" />
       </Docs>
     </Member>
     <Member MemberName="DependencyDispose">
@@ -419,6 +433,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Caching.Cache" />
+        <altmember cref="M:System.Web.Caching.Cache.Insert(System.String,System.Object,System.Web.Caching.CacheDependency)" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -465,6 +481,8 @@
         <block subset="none" type="overrides">
           <para>The <see cref="M:System.Web.Caching.CacheDependency.FinishInit" /> method must be called at the end of the constructor for derived classes to complete the initialization of the <see cref="T:System.Web.Caching.CacheDependency" /> object.</para>
         </block>
+        <altmember cref="T:System.Web.Caching.Cache" />
+        <altmember cref="M:System.Web.Caching.Cache.Insert(System.String,System.Object,System.Web.Caching.CacheDependency)" />
       </Docs>
     </Member>
     <Member MemberName="GetFileDependencies">
@@ -519,6 +537,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Caching.Cache" />
       </Docs>
     </Member>
     <Member MemberName="HasChanged">
@@ -553,6 +572,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Caching.Cache" />
+        <altmember cref="M:System.Web.Caching.Cache.Insert(System.String,System.Object,System.Web.Caching.CacheDependency)" />
       </Docs>
     </Member>
     <Member MemberName="ItemRemoved">
@@ -628,6 +649,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Caching.Cache" />
+        <altmember cref="M:System.Web.Caching.Cache.Insert(System.String,System.Object,System.Web.Caching.CacheDependency)" />
       </Docs>
     </Member>
     <Member MemberName="SetCacheDependencyChanged">
@@ -679,6 +702,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Caching.Cache" />
+        <altmember cref="M:System.Web.Caching.Cache.Insert(System.String,System.Object,System.Web.Caching.CacheDependency)" />
       </Docs>
     </Member>
     <Member MemberName="TakeOwnership">
@@ -739,7 +764,20 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Caching.Cache" />
+        <altmember cref="M:System.Web.Caching.Cache.Insert(System.String,System.Object,System.Web.Caching.CacheDependency)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Caching.CacheDependency" /> class.</summary>
+        <altmember cref="T:System.Web.Caching.Cache" />
+        <altmember cref="M:System.Web.Caching.Cache.Insert(System.String,System.Object,System.Web.Caching.CacheDependency)" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

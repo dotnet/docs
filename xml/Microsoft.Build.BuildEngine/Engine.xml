@@ -1018,5 +1018,14 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BuildProject">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Builds the specified project.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

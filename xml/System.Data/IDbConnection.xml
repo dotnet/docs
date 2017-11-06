@@ -205,6 +205,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.OleDb.OleDbConnection.Open" />
       </Docs>
     </Member>
     <Member MemberName="ConnectionString">
@@ -347,6 +348,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.IDbConnection.ChangeDatabase(System.String)" />
+        <altmember cref="P:System.Data.IDbConnection.ConnectionString" />
+        <altmember cref="P:System.Data.IDbConnection.ConnectionTimeout" />
       </Docs>
     </Member>
     <Member MemberName="Open">
@@ -424,5 +428,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BeginTransaction">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins a database transaction.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

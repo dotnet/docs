@@ -132,6 +132,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.DateTime" />
+    <altmember cref="T:System.DateTimeOffset" />
+    <altmember cref="T:System.Globalization.Calendar" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -179,6 +182,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.TimeSpan.Ticks" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -231,6 +235,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The parameters specify a <see cref="T:System.TimeSpan" /> value less than <see cref="F:System.TimeSpan.MinValue" /> or greater than <see cref="F:System.TimeSpan.MaxValue" />.</exception>
+        <altmember cref="T:System.Int64" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -285,6 +290,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The parameters specify a <see cref="T:System.TimeSpan" /> value less than <see cref="F:System.TimeSpan.MinValue" /> or greater than <see cref="F:System.TimeSpan.MaxValue" />.</exception>
+        <altmember cref="T:System.Int64" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -341,6 +347,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The parameters specify a <see cref="T:System.TimeSpan" /> value less than <see cref="F:System.TimeSpan.MinValue" /> or greater than <see cref="F:System.TimeSpan.MaxValue" />.</exception>
+        <altmember cref="T:System.Int64" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -394,6 +401,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.OverflowException">The resulting <see cref="T:System.TimeSpan" /> is less than <see cref="F:System.TimeSpan.MinValue" /> or greater than <see cref="F:System.TimeSpan.MaxValue" />.</exception>
+        <altmember cref="M:System.DateTime.Add(System.TimeSpan)" />
       </Docs>
     </Member>
     <Member MemberName="Compare">
@@ -459,6 +467,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.TimeSpan.CompareTo(System.Object)" />
+        <altmember cref="M:System.TimeSpan.Equals(System.Object)" />
       </Docs>
     </Member>
     <MemberGroup MemberName="CompareTo">
@@ -556,6 +566,9 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="value" /> is not a <see cref="T:System.TimeSpan" />.</exception>
+        <altmember cref="T:System.Object" />
+        <altmember cref="M:System.TimeSpan.Compare(System.TimeSpan,System.TimeSpan)" />
+        <altmember cref="M:System.TimeSpan.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="CompareTo">
@@ -674,6 +687,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.TimeSpan.TotalDays" />
+        <altmember cref="P:System.TimeSpan.Ticks" />
+        <altmember cref="P:System.TimeSpan.Milliseconds" />
+        <altmember cref="P:System.TimeSpan.Seconds" />
+        <altmember cref="P:System.TimeSpan.Minutes" />
+        <altmember cref="P:System.TimeSpan.Hours" />
       </Docs>
     </Member>
     <Member MemberName="Divide">
@@ -762,6 +781,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.OverflowException">The value of this instance is <see cref="F:System.TimeSpan.MinValue" />.</exception>
+        <altmember cref="P:System.TimeSpan.Ticks" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -809,6 +829,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Object" />
+        <altmember cref="M:System.TimeSpan.Compare(System.TimeSpan,System.TimeSpan)" />
+        <altmember cref="M:System.TimeSpan.CompareTo(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -861,6 +884,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.TimeSpan.Equals(System.Object)" />
+        <altmember cref="Overload:System.TimeSpan.CompareTo" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -910,6 +935,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Boolean" />
+        <altmember cref="M:System.TimeSpan.Compare(System.TimeSpan,System.TimeSpan)" />
+        <altmember cref="M:System.TimeSpan.CompareTo(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="FromDays">
@@ -976,6 +1004,12 @@
  <paramref name="value" /> is <see cref="F:System.Double.NegativeInfinity" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="value" /> is equal to <see cref="F:System.Double.NaN" />.</exception>
+        <altmember cref="T:System.Double" />
+        <altmember cref="M:System.TimeSpan.FromTicks(System.Int64)" />
+        <altmember cref="M:System.TimeSpan.FromMilliseconds(System.Double)" />
+        <altmember cref="M:System.TimeSpan.FromSeconds(System.Double)" />
+        <altmember cref="M:System.TimeSpan.FromMinutes(System.Double)" />
+        <altmember cref="M:System.TimeSpan.FromHours(System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="FromHours">
@@ -1042,6 +1076,12 @@
  <paramref name="value" /> is <see cref="F:System.Double.NegativeInfinity" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="value" /> is equal to <see cref="F:System.Double.NaN" />.</exception>
+        <altmember cref="T:System.Double" />
+        <altmember cref="M:System.TimeSpan.FromTicks(System.Int64)" />
+        <altmember cref="M:System.TimeSpan.FromMilliseconds(System.Double)" />
+        <altmember cref="M:System.TimeSpan.FromSeconds(System.Double)" />
+        <altmember cref="M:System.TimeSpan.FromMinutes(System.Double)" />
+        <altmember cref="M:System.TimeSpan.FromDays(System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="FromMilliseconds">
@@ -1108,6 +1148,12 @@
  <paramref name="value" /> is <see cref="F:System.Double.NegativeInfinity" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="value" /> is equal to <see cref="F:System.Double.NaN" />.</exception>
+        <altmember cref="T:System.Double" />
+        <altmember cref="M:System.TimeSpan.FromTicks(System.Int64)" />
+        <altmember cref="M:System.TimeSpan.FromSeconds(System.Double)" />
+        <altmember cref="M:System.TimeSpan.FromMinutes(System.Double)" />
+        <altmember cref="M:System.TimeSpan.FromHours(System.Double)" />
+        <altmember cref="M:System.TimeSpan.FromDays(System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="FromMinutes">
@@ -1174,6 +1220,12 @@
  <paramref name="value" /> is <see cref="F:System.Double.NegativeInfinity" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="value" /> is equal to <see cref="F:System.Double.NaN" />.</exception>
+        <altmember cref="T:System.Double" />
+        <altmember cref="M:System.TimeSpan.FromTicks(System.Int64)" />
+        <altmember cref="M:System.TimeSpan.FromMilliseconds(System.Double)" />
+        <altmember cref="M:System.TimeSpan.FromSeconds(System.Double)" />
+        <altmember cref="M:System.TimeSpan.FromHours(System.Double)" />
+        <altmember cref="M:System.TimeSpan.FromDays(System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="FromSeconds">
@@ -1240,6 +1292,12 @@
  <paramref name="value" /> is <see cref="F:System.Double.NegativeInfinity" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="value" /> is equal to <see cref="F:System.Double.NaN" />.</exception>
+        <altmember cref="T:System.Double" />
+        <altmember cref="M:System.TimeSpan.FromTicks(System.Int64)" />
+        <altmember cref="M:System.TimeSpan.FromMilliseconds(System.Double)" />
+        <altmember cref="M:System.TimeSpan.FromMinutes(System.Double)" />
+        <altmember cref="M:System.TimeSpan.FromHours(System.Double)" />
+        <altmember cref="M:System.TimeSpan.FromDays(System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="FromTicks">
@@ -1291,6 +1349,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Int64" />
+        <altmember cref="M:System.TimeSpan.FromMilliseconds(System.Double)" />
+        <altmember cref="M:System.TimeSpan.FromSeconds(System.Double)" />
+        <altmember cref="M:System.TimeSpan.FromMinutes(System.Double)" />
+        <altmember cref="M:System.TimeSpan.FromHours(System.Double)" />
+        <altmember cref="M:System.TimeSpan.FromDays(System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -1388,6 +1452,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.TimeSpan.TotalHours" />
+        <altmember cref="P:System.TimeSpan.Ticks" />
+        <altmember cref="P:System.TimeSpan.Milliseconds" />
+        <altmember cref="P:System.TimeSpan.Seconds" />
+        <altmember cref="P:System.TimeSpan.Minutes" />
+        <altmember cref="P:System.TimeSpan.Days" />
       </Docs>
     </Member>
     <Member MemberName="MaxValue">
@@ -1434,6 +1504,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Int64" />
+        <altmember cref="F:System.TimeSpan.MinValue" />
       </Docs>
     </Member>
     <Member MemberName="Milliseconds">
@@ -1483,6 +1555,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.TimeSpan.TotalMilliseconds" />
+        <altmember cref="P:System.TimeSpan.Ticks" />
+        <altmember cref="P:System.TimeSpan.Seconds" />
+        <altmember cref="P:System.TimeSpan.Minutes" />
+        <altmember cref="P:System.TimeSpan.Hours" />
+        <altmember cref="P:System.TimeSpan.Days" />
       </Docs>
     </Member>
     <Member MemberName="Minutes">
@@ -1532,6 +1610,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.TimeSpan.TotalMinutes" />
+        <altmember cref="P:System.TimeSpan.Ticks" />
+        <altmember cref="P:System.TimeSpan.Milliseconds" />
+        <altmember cref="P:System.TimeSpan.Seconds" />
+        <altmember cref="P:System.TimeSpan.Hours" />
+        <altmember cref="P:System.TimeSpan.Days" />
       </Docs>
     </Member>
     <Member MemberName="MinValue">
@@ -1578,6 +1662,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Int64" />
+        <altmember cref="F:System.TimeSpan.MaxValue" />
       </Docs>
     </Member>
     <Member MemberName="Multiply">
@@ -1694,6 +1780,7 @@
  The equivalent method for this operator is <xref:System.TimeSpan.Add%28System.TimeSpan%29?displayProperty=nameWithType>]]></format>
         </remarks>
         <exception cref="T:System.OverflowException">The resulting <see cref="T:System.TimeSpan" /> is less than <see cref="F:System.TimeSpan.MinValue" /> or greater than <see cref="F:System.TimeSpan.MaxValue" />.</exception>
+        <altmember cref="M:System.TimeSpan.Add(System.TimeSpan)" />
       </Docs>
     </Member>
     <Member MemberName="op_Division">
@@ -1791,6 +1878,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.TimeSpan.Equals(System.Object)" />
+        <altmember cref="M:System.TimeSpan.Compare(System.TimeSpan,System.TimeSpan)" />
+        <altmember cref="M:System.TimeSpan.CompareTo(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
@@ -1840,6 +1930,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.TimeSpan.Compare(System.TimeSpan,System.TimeSpan)" />
+        <altmember cref="M:System.TimeSpan.CompareTo(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
@@ -1889,6 +1981,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.TimeSpan.Compare(System.TimeSpan,System.TimeSpan)" />
+        <altmember cref="M:System.TimeSpan.CompareTo(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -1938,6 +2032,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.TimeSpan.Compare(System.TimeSpan,System.TimeSpan)" />
+        <altmember cref="M:System.TimeSpan.CompareTo(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
@@ -1987,6 +2083,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.TimeSpan.Compare(System.TimeSpan,System.TimeSpan)" />
+        <altmember cref="M:System.TimeSpan.CompareTo(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
@@ -2036,6 +2134,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.TimeSpan.Compare(System.TimeSpan,System.TimeSpan)" />
+        <altmember cref="M:System.TimeSpan.CompareTo(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
@@ -2571,6 +2671,7 @@
  -or-  
   
  At least one of the days, hours, minutes, or seconds components in <paramref name="input" /> is outside its valid range.</exception>
+        <altmember cref="M:System.TimeSpan.TryParseExact(System.String,System.String[],System.IFormatProvider,System.TimeSpan@)" />
       </Docs>
     </Member>
     <Member MemberName="ParseExact">
@@ -2792,6 +2893,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.TimeSpan.TotalSeconds" />
+        <altmember cref="P:System.TimeSpan.Ticks" />
+        <altmember cref="P:System.TimeSpan.Milliseconds" />
+        <altmember cref="P:System.TimeSpan.Minutes" />
+        <altmember cref="P:System.TimeSpan.Hours" />
+        <altmember cref="P:System.TimeSpan.Days" />
       </Docs>
     </Member>
     <Member MemberName="Subtract">
@@ -2844,6 +2951,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.OverflowException">The return value is less than <see cref="F:System.TimeSpan.MinValue" /> or greater than <see cref="F:System.TimeSpan.MaxValue" />.</exception>
+        <altmember cref="M:System.DateTime.Subtract(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="System.IComparable.CompareTo">
@@ -2916,6 +3024,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Int64" />
+        <altmember cref="P:System.TimeSpan.Milliseconds" />
+        <altmember cref="P:System.TimeSpan.Seconds" />
+        <altmember cref="P:System.TimeSpan.Minutes" />
+        <altmember cref="P:System.TimeSpan.Hours" />
+        <altmember cref="P:System.TimeSpan.Days" />
       </Docs>
     </Member>
     <Member MemberName="TicksPerDay">
@@ -2963,6 +3077,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Int64" />
+        <altmember cref="F:System.TimeSpan.TicksPerMillisecond" />
+        <altmember cref="F:System.TimeSpan.TicksPerSecond" />
+        <altmember cref="F:System.TimeSpan.TicksPerMinute" />
+        <altmember cref="F:System.TimeSpan.TicksPerHour" />
       </Docs>
     </Member>
     <Member MemberName="TicksPerHour">
@@ -3010,6 +3129,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Int64" />
+        <altmember cref="F:System.TimeSpan.TicksPerMillisecond" />
+        <altmember cref="F:System.TimeSpan.TicksPerSecond" />
+        <altmember cref="F:System.TimeSpan.TicksPerMinute" />
+        <altmember cref="F:System.TimeSpan.TicksPerDay" />
       </Docs>
     </Member>
     <Member MemberName="TicksPerMillisecond">
@@ -3057,6 +3181,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Int64" />
+        <altmember cref="F:System.TimeSpan.TicksPerSecond" />
+        <altmember cref="F:System.TimeSpan.TicksPerMinute" />
+        <altmember cref="F:System.TimeSpan.TicksPerHour" />
+        <altmember cref="F:System.TimeSpan.TicksPerDay" />
       </Docs>
     </Member>
     <Member MemberName="TicksPerMinute">
@@ -3104,6 +3233,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Int64" />
+        <altmember cref="F:System.TimeSpan.TicksPerMillisecond" />
+        <altmember cref="F:System.TimeSpan.TicksPerSecond" />
+        <altmember cref="F:System.TimeSpan.TicksPerHour" />
+        <altmember cref="F:System.TimeSpan.TicksPerDay" />
       </Docs>
     </Member>
     <Member MemberName="TicksPerSecond">
@@ -3151,6 +3285,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Int64" />
+        <altmember cref="F:System.TimeSpan.TicksPerMillisecond" />
+        <altmember cref="F:System.TimeSpan.TicksPerMinute" />
+        <altmember cref="F:System.TimeSpan.TicksPerHour" />
+        <altmember cref="F:System.TimeSpan.TicksPerDay" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -3217,6 +3356,9 @@
         <block subset="none" type="usage">
           <para>Support for formatting <see cref="T:System.TimeSpan" /> values was added in the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)]. However, the <see cref="M:System.TimeSpan.ToString" /> method overload remains culture-insensitive. Its behavior remains unchanged from previous versions of the .NET Framework. To control the formatting of a <see cref="T:System.TimeSpan" /> value, call the <see cref="M:System.TimeSpan.ToString(System.String)" /> or <see cref="M:System.TimeSpan.ToString(System.String,System.IFormatProvider)" /> overload.</para>
         </block>
+        <altmember cref="T:System.String" />
+        <altmember cref="M:System.TimeSpan.Parse(System.String)" />
+        <altmember cref="M:System.TimeSpan.TryParse(System.String,System.TimeSpan@)" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -3399,6 +3541,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.TimeSpan.Days" />
+        <altmember cref="P:System.TimeSpan.TotalMilliseconds" />
+        <altmember cref="P:System.TimeSpan.TotalSeconds" />
+        <altmember cref="P:System.TimeSpan.TotalMinutes" />
+        <altmember cref="P:System.TimeSpan.TotalHours" />
       </Docs>
     </Member>
     <Member MemberName="TotalHours">
@@ -3447,6 +3594,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.TimeSpan.Hours" />
+        <altmember cref="P:System.TimeSpan.TotalMilliseconds" />
+        <altmember cref="P:System.TimeSpan.TotalSeconds" />
+        <altmember cref="P:System.TimeSpan.TotalMinutes" />
+        <altmember cref="P:System.TimeSpan.TotalDays" />
       </Docs>
     </Member>
     <Member MemberName="TotalMilliseconds">
@@ -3495,6 +3647,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.TimeSpan.Milliseconds" />
+        <altmember cref="P:System.TimeSpan.TotalSeconds" />
+        <altmember cref="P:System.TimeSpan.TotalMinutes" />
+        <altmember cref="P:System.TimeSpan.TotalHours" />
+        <altmember cref="P:System.TimeSpan.TotalDays" />
       </Docs>
     </Member>
     <Member MemberName="TotalMinutes">
@@ -3543,6 +3700,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.TimeSpan.Minutes" />
+        <altmember cref="P:System.TimeSpan.TotalMilliseconds" />
+        <altmember cref="P:System.TimeSpan.TotalSeconds" />
+        <altmember cref="P:System.TimeSpan.TotalHours" />
+        <altmember cref="P:System.TimeSpan.TotalDays" />
       </Docs>
     </Member>
     <Member MemberName="TotalSeconds">
@@ -3591,6 +3753,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.TimeSpan.Seconds" />
+        <altmember cref="P:System.TimeSpan.TotalMilliseconds" />
+        <altmember cref="P:System.TimeSpan.TotalMinutes" />
+        <altmember cref="P:System.TimeSpan.TotalHours" />
+        <altmember cref="P:System.TimeSpan.TotalDays" />
       </Docs>
     </Member>
     <Member MemberName="TryParse">
@@ -4112,5 +4279,100 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Parse">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the string representation of a time interval to its <see cref="T:System.TimeSpan" /> equivalent.</summary>
+        <altmember cref="Overload:System.TimeSpan.TryParse" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value indicating whether two instances of <see cref="T:System.TimeSpan" /> are equal.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ParseExact">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the string representation of a time interval to its <see cref="T:System.TimeSpan" /> equivalent. The format of the string representation must match a specified format exactly.</summary>
+        <altmember cref="Overload:System.TimeSpan.TryParseExact" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the value of the current <see cref="T:System.TimeSpan" /> object to its equivalent string representation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.TimeSpan" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryParseExact">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the string representation of a time interval to its <see cref="T:System.TimeSpan" /> equivalent, and returns a value that indicates whether the conversion succeeded. The format of the string representation must match a specified format exactly.</summary>
+        <altmember cref="Overload:System.TimeSpan.ParseExact" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryParse">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the specified string representation of a time interval to its <see cref="T:System.TimeSpan" /> equivalent and returns a value that indicates whether the conversion succeeded.</summary>
+        <altmember cref="Overload:System.TimeSpan.Parse" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

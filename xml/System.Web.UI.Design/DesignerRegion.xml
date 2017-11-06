@@ -26,6 +26,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
+    <altmember cref="P:System.Web.UI.Design.ViewRendering.Regions" />
+    <altmember cref="T:System.Web.UI.Design.EditableDesignerRegion" />
+    <altmember cref="T:System.Web.UI.Design.TemplatedEditableDesignerRegion" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -335,5 +339,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.DesignerRegion" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

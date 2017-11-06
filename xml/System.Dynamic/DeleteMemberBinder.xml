@@ -263,5 +263,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FallbackDeleteMember">
+      <AssemblyInfo>
+        <AssemblyName>System.Dynamic.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Performs the binding of the dynamic delete member operation if the target dynamic object cannot bind.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

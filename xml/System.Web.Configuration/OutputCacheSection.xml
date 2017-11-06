@@ -20,6 +20,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Configuration.CacheSection" />
+    <altmember cref="T:System.Web.Configuration.OutputCacheSettingsSection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -114,6 +116,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.OutputCacheSettingsSection" />
+        <altmember cref="T:System.Web.Configuration.OutputCacheProfile" />
       </Docs>
     </Member>
     <Member MemberName="EnableKernelCacheForVaryByStar">
@@ -149,6 +153,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.OutputCacheSettingsSection" />
       </Docs>
     </Member>
     <Member MemberName="EnableOutputCache">
@@ -188,6 +193,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.OutputCacheSettingsSection" />
+        <altmember cref="T:System.Web.Configuration.OutputCacheProfile" />
       </Docs>
     </Member>
     <Member MemberName="OmitVaryStar">
@@ -227,6 +234,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.HttpCachePolicy.SetOmitVaryStar(System.Boolean)" />
+        <altmember cref="T:System.Web.Configuration.OutputCacheSettingsSection" />
+        <altmember cref="T:System.Web.Configuration.OutputCacheProfile" />
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -310,6 +320,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.OutputCacheSettingsSection" />
+        <altmember cref="T:System.Web.Configuration.OutputCacheProfile" />
       </Docs>
     </Member>
   </Members>

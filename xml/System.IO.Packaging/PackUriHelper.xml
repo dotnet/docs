@@ -72,6 +72,7 @@
  -or-  
   
  Either <paramref name="firstPackUri" /> or <paramref name="secondPackUri" /> do not begin with a "pack://" scheme.</exception>
+        <altmember cref="M:System.IO.Packaging.PackUriHelper.ComparePartUri(System.Uri,System.Uri)" />
       </Docs>
     </Member>
     <Member MemberName="ComparePartUri">
@@ -128,6 +129,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="firstPartUri" /> or <paramref name="secondPartUri" /> is not a valid part [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] syntax.</exception>
+        <altmember cref="M:System.IO.Packaging.PackUriHelper.ComparePackUri(System.Uri,System.Uri)" />
       </Docs>
     </Member>
     <MemberGroup MemberName="Create">
@@ -409,6 +411,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)" />
+        <altmember cref="M:System.IO.Packaging.PackUriHelper.ResolvePartUri(System.Uri,System.Uri)" />
       </Docs>
     </Member>
     <Member MemberName="GetNormalizedPartUri">
@@ -445,6 +449,11 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="partUri" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.String.Normalize" />
+        <altmember cref="T:System.Text.NormalizationForm" />
+        <altmember cref="M:System.IO.Packaging.PackUriHelper.ComparePartUri(System.Uri,System.Uri)" />
+        <altmember cref="M:System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)" />
+        <altmember cref="M:System.IO.Packaging.PackUriHelper.GetPackageUri(System.Uri)" />
       </Docs>
     </Member>
     <Member MemberName="GetPackageUri">
@@ -482,6 +491,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.IO.Packaging.PackUriHelper.Create" />
+        <altmember cref="M:System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)" />
       </Docs>
     </Member>
     <Member MemberName="GetPartUri">
@@ -521,6 +532,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IO.Packaging.PackUriHelper.CreatePartUri(System.Uri)" />
+        <altmember cref="M:System.IO.Packaging.PackUriHelper.GetNormalizedPartUri(System.Uri)" />
+        <altmember cref="M:System.IO.Packaging.PackUriHelper.GetPackageUri(System.Uri)" />
       </Docs>
     </Member>
     <Member MemberName="GetRelationshipPartUri">
@@ -620,6 +634,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="sourcePartUri" /> or <paramref name="targetPartUri" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.IO.Packaging.PackUriHelper.ResolvePartUri(System.Uri,System.Uri)" />
       </Docs>
     </Member>
     <Member MemberName="GetSourcePartUriFromRelationshipPartUri">
@@ -672,6 +687,7 @@
  -or-  
   
  The <see cref="P:System.IO.Packaging.PackageRelationship.SourceUri" /> of the relationship part references another relationship part (not valid).</exception>
+        <altmember cref="M:System.IO.Packaging.PackUriHelper.GetRelationshipPartUri(System.Uri)" />
       </Docs>
     </Member>
     <Member MemberName="IsRelationshipPartUri">
@@ -708,6 +724,8 @@
  -or-  
   
  <paramref name="partUri" /> is an invalid <see cref="T:System.IO.Packaging.PackagePart" /> syntax.</exception>
+        <altmember cref="M:System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)" />
+        <altmember cref="M:System.IO.Packaging.PackUriHelper.GetRelativeUri(System.Uri,System.Uri)" />
       </Docs>
     </Member>
     <Member MemberName="ResolvePartUri">
@@ -769,6 +787,8 @@
  -or-  
   
  <paramref name="targetUri" /> is not a valid relative URI.</exception>
+        <altmember cref="M:System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)" />
+        <altmember cref="M:System.IO.Packaging.PackUriHelper.GetRelativeUri(System.Uri,System.Uri)" />
       </Docs>
     </Member>
     <Member MemberName="UriSchemePack">

@@ -63,6 +63,25 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="P:System.Web.UI.WebControls.GridView.Columns" />
+    <altmember cref="E:System.Web.UI.WebControls.GridView.RowCommand" />
+    <altmember cref="P:System.Web.UI.WebControls.GridView.ShowHeader" />
+    <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+    <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemCommand" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsView.Rows" />
+    <altmember cref="T:System.Web.UI.WebControls.BoundField" />
+    <altmember cref="T:System.Web.UI.WebControls.ButtonFieldBase" />
+    <altmember cref="T:System.Web.UI.WebControls.CheckBoxField" />
+    <altmember cref="T:System.Web.UI.WebControls.CommandField" />
+    <altmember cref="T:System.Web.UI.WebControls.DataControlField" />
+    <altmember cref="T:System.Web.UI.WebControls.HyperLinkField" />
+    <altmember cref="T:System.Web.UI.WebControls.TemplateField" />
+    <altmember cref="P:System.Web.UI.WebControls.ButtonFieldBase.ButtonType" />
+    <altmember cref="P:System.Web.UI.WebControls.ButtonField.DataTextField" />
+    <altmember cref="P:System.Web.UI.WebControls.ButtonField.ImageUrl" />
+    <altmember cref="P:System.Web.UI.WebControls.ButtonField.Text" />
+    <altmember cref="P:System.Web.UI.WebControls.DataControlField.Visible" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -98,6 +117,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.Columns" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.Fields" />
       </Docs>
     </Member>
     <Member MemberName="CommandName">
@@ -197,6 +220,7 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.ButtonField.CopyProperties(System.Web.UI.WebControls.DataControlField)" /> method in a derived class, call the <see cref="M:System.Web.UI.WebControls.ButtonField.CopyProperties(System.Web.UI.WebControls.DataControlField)" /> method of the base class to ensure that all properties of the object are copied.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.ButtonFieldBase.CopyProperties(System.Web.UI.WebControls.DataControlField)" />
       </Docs>
     </Member>
     <Member MemberName="CreateField">
@@ -226,6 +250,8 @@
         <block subset="none" type="overrides">
           <para>Override the <see cref="M:System.Web.UI.WebControls.ButtonField.CreateField" /> method to return a new instance of the derived class. Do not call the <see cref="M:System.Web.UI.WebControls.ButtonField.CreateField" /> method of the base class.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.CloneField" />
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.CopyProperties(System.Web.UI.WebControls.DataControlField)" />
       </Docs>
     </Member>
     <Member MemberName="DataTextField">
@@ -274,6 +300,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ButtonField.DataTextFormatString" />
+        <altmember cref="P:System.Web.UI.WebControls.ButtonField.Text" />
       </Docs>
     </Member>
     <Member MemberName="DataTextFormatString">
@@ -378,6 +406,7 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.ButtonField" /> class, you can override the <see cref="M:System.Web.UI.WebControls.ButtonField.FormatDataTextValue(System.Object)" /> method to perform a custom formatting routine.</para>
         </block>
+        <altmember cref="P:System.Web.UI.WebControls.ButtonField.DataTextFormatString" />
       </Docs>
     </Member>
     <Member MemberName="ImageUrl">
@@ -462,6 +491,7 @@
         <block subset="none" type="overrides">
           <para>You should override the <see cref="M:System.Web.UI.WebControls.ButtonField.Initialize(System.Boolean,System.Web.UI.Control)" /> method and return <see langword="true" />, if the field requires that data binding be performed on postback in order for the field to work correctly.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.ButtonField.InitializeCell(System.Web.UI.WebControls.DataControlFieldCell,System.Web.UI.WebControls.DataControlCellType,System.Web.UI.WebControls.DataControlRowState,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="InitializeCell">
@@ -496,6 +526,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.InitializeCell(System.Web.UI.WebControls.DataControlFieldCell,System.Web.UI.WebControls.DataControlCellType,System.Web.UI.WebControls.DataControlRowState,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -546,6 +577,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ButtonField.DataTextField" />
       </Docs>
     </Member>
     <Member MemberName="ValidateSupportsCallback">

@@ -49,6 +49,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="adamInstance" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.AdamInstance" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -78,6 +79,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="adamInstances" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> specified is out of range of the destination array.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.AdamInstance" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -104,6 +106,7 @@
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="adamInstance" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.AdamInstance" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -128,6 +131,7 @@
         <value>The <see cref="T:System.DirectoryServices.ActiveDirectory.AdamInstance" /> object that exists at the specified index.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> specified is out of range of the collection.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.AdamInstance" />
       </Docs>
     </Member>
   </Members>

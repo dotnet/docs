@@ -50,6 +50,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.IO.File.Open(System.String,System.IO.FileMode)" />
+    <altmember cref="M:System.IO.FileInfo.Open(System.IO.FileMode)" />
+    <altmember cref="T:System.IO.FileStream" />
+    <altmember cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" />
   </Docs>
   <Members>
     <Member MemberName="Append">

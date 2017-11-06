@@ -26,6 +26,8 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="T:System.Web.UI.MobileControls.Adapters.HtmlSelectionListAdapter" />
+    <altmember cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,6 +43,7 @@
       <Docs>
         <summary>Creates a new instance of the <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlSelectionListAdapter" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.HtmlSelectionListAdapter" />
       </Docs>
     </Member>
     <Member MemberName="Control">
@@ -59,6 +62,7 @@
         <summary>Returns a strongly typed reference to the associated control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <value>A <see cref="T:System.Web.UI.MobileControls.SelectionList" /> object.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.HtmlSelectionListAdapter" />
       </Docs>
     </Member>
     <Member MemberName="LoadPostData">
@@ -89,6 +93,7 @@
         <returns>
           <see langword="true" /> if the adapter handles loading the postback data; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.HtmlSelectionListAdapter" />
       </Docs>
     </Member>
     <Member MemberName="Render">

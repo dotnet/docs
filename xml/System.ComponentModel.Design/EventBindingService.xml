@@ -30,6 +30,8 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
+    <altmember cref="T:System.IServiceProvider" />
+    <altmember cref="T:System.ComponentModel.EventDescriptor" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -50,6 +52,8 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="provider" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.IServiceProvider" />
+        <altmember cref="T:System.ComponentModel.EventDescriptor" />
       </Docs>
     </Member>
     <Member MemberName="CreateUniqueMethodName">
@@ -83,6 +87,9 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="component" /> or <paramref name="e" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.IServiceProvider" />
+        <altmember cref="T:System.ComponentModel.EventDescriptor" />
+        <altmember cref="T:System.ComponentModel.IComponent" />
       </Docs>
     </Member>
     <Member MemberName="FreeMethod">
@@ -115,6 +122,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IServiceProvider" />
+        <altmember cref="T:System.ComponentModel.EventDescriptor" />
+        <altmember cref="T:System.ComponentModel.IComponent" />
       </Docs>
     </Member>
     <Member MemberName="GetCompatibleMethods">
@@ -146,6 +156,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="e" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.IServiceProvider" />
+        <altmember cref="T:System.ComponentModel.EventDescriptor" />
       </Docs>
     </Member>
     <Member MemberName="GetService">
@@ -168,6 +180,7 @@
         <summary>Gets the requested service from the service provider.</summary>
         <returns>A reference to the service specified by <paramref name="serviceType" />, or <see langword="null" /> if the requested service is not available.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.IServiceProvider" />
       </Docs>
     </Member>
     <Member MemberName="ShowCode">
@@ -259,6 +272,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IServiceProvider" />
+        <altmember cref="T:System.ComponentModel.EventDescriptor" />
+        <altmember cref="T:System.ComponentModel.IComponent" />
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.Design.IEventBindingService.CreateUniqueMethodName">
@@ -316,6 +332,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="e" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.IServiceProvider" />
+        <altmember cref="T:System.ComponentModel.EventDescriptor" />
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.Design.IEventBindingService.GetEvent">
@@ -488,6 +506,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IServiceProvider" />
+        <altmember cref="T:System.ComponentModel.EventDescriptor" />
+        <altmember cref="T:System.ComponentModel.IComponent" />
       </Docs>
     </Member>
     <Member MemberName="ValidateMethodName">
@@ -518,5 +539,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="System.ComponentModel.Design.IEventBindingService.ShowCode">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Displays the user code for the designer.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ShowCode">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Displays user code.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

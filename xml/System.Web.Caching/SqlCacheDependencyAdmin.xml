@@ -41,6 +41,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Caching.SqlCacheDependency" />
   </Docs>
   <Members>
     <Member MemberName="DisableNotifications">
@@ -403,5 +404,23 @@
  The security context of the ASP.NET application does not have permission to disable notifications for the database.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="EnableTableForNotifications">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Connects to a SQL Server database and prepares a database table or tables for <see cref="T:System.Web.Caching.SqlCacheDependency" /> change notifications.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DisableTableForNotifications">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Disables <see cref="T:System.Web.Caching.SqlCacheDependency" /> change notifications on a SQL Server database table or an array of database tables.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

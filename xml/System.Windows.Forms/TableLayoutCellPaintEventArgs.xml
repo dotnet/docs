@@ -28,6 +28,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.TableLayoutPanel" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -54,6 +55,7 @@
         <param name="row">The row of the cell.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TableLayoutCellPaintEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.TableLayoutPanel" />
       </Docs>
     </Member>
     <Member MemberName="CellBounds">
@@ -82,6 +84,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TableLayoutPanel" />
       </Docs>
     </Member>
     <Member MemberName="Column">
@@ -110,6 +113,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TableLayoutPanel" />
       </Docs>
     </Member>
     <Member MemberName="Row">
@@ -138,6 +142,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TableLayoutPanel" />
       </Docs>
     </Member>
   </Members>

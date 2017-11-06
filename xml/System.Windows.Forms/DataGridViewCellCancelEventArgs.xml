@@ -23,6 +23,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.CellBeginEdit" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.RowValidating" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,6 +52,7 @@
  -or-  
   
  <paramref name="rowIndex" /> is less than -1.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="ColumnIndex">
@@ -77,6 +81,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="RowIndex">
@@ -105,6 +110,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
   </Members>

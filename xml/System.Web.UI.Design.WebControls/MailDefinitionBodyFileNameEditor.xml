@@ -26,6 +26,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.Design.UrlEditor" />
+    <altmember cref="T:System.Drawing.Design.UITypeEditor" />
+    <altmember cref="P:System.Web.UI.WebControls.MailDefinition.BodyFileName" />
+    <altmember cref="T:System.Web.UI.WebControls.MailDefinition" />
+    <altmember cref="T:System.Web.UI.WebControls.CreateUserWizard" />
+    <altmember cref="T:System.Web.UI.WebControls.ChangePassword" />
+    <altmember cref="T:System.Web.UI.WebControls.PasswordRecovery" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,6 +55,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.UrlEditor" />
+        <altmember cref="T:System.Drawing.Design.UITypeEditor" />
+        <altmember cref="T:System.Web.UI.WebControls.MailDefinition" />
+        <altmember cref="T:System.Web.UI.WebControls.CreateUserWizard" />
+        <altmember cref="T:System.Web.UI.WebControls.ChangePassword" />
+        <altmember cref="T:System.Web.UI.WebControls.PasswordRecovery" />
       </Docs>
     </Member>
     <Member MemberName="Caption">
@@ -76,6 +89,8 @@
         <block subset="none" type="overrides">
           <para>Override the <see cref="P:System.Web.UI.Design.WebControls.MailDefinitionBodyFileNameEditor.Caption" /> property to return a value that is different than the default. The default value is localized.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.MailDefinition" />
+        <altmember cref="P:System.Web.UI.WebControls.MailDefinition.BodyFileName" />
       </Docs>
     </Member>
     <Member MemberName="Filter">
@@ -118,6 +133,8 @@
         <block subset="none" type="overrides">
           <para>Override the <see cref="P:System.Web.UI.Design.WebControls.MailDefinitionBodyFileNameEditor.Filter" /> property to return a value that is different from the default.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.MailDefinition" />
+        <altmember cref="P:System.Web.UI.WebControls.MailDefinition.BodyFileName" />
       </Docs>
     </Member>
   </Members>

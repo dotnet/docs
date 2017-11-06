@@ -35,6 +35,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.TextBox" />
+    <altmember cref="T:System.Windows.Controls.RichTextBox" />
   </Docs>
   <Members>
     <Member MemberName="AcceptsReturn">
@@ -69,6 +71,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Primitives.TextBoxBase.VerticalScrollBarVisibility" />
+        <altmember cref="P:System.Windows.Controls.TextBox.TextWrapping" />
       </Docs>
     </Member>
     <Member MemberName="AcceptsReturnProperty">
@@ -267,6 +271,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.Undo" />
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.Redo" />
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.EndChange" />
       </Docs>
     </Member>
     <Member MemberName="CanRedo">
@@ -298,6 +305,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Primitives.TextBoxBase.CanUndo" />
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.Redo" />
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.Undo" />
       </Docs>
     </Member>
     <Member MemberName="CanUndo">
@@ -329,6 +339,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Primitives.TextBoxBase.CanRedo" />
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.Redo" />
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.Undo" />
       </Docs>
     </Member>
     <Member MemberName="CaretBrush">
@@ -417,6 +430,7 @@ TextBox with CaretBrush set to blue
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">for full trust for inheritors. This member cannot be inherited by partially trusted code.</permission>
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.Paste" />
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -456,6 +470,7 @@ TextBox with CaretBrush set to blue
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">for full trust for inheritors. This member cannot be inherited by partially trusted code.</permission>
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.Paste" />
       </Docs>
     </Member>
     <Member MemberName="DeclareChangeBlock">
@@ -482,6 +497,8 @@ TextBox with CaretBrush set to blue
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.Undo" />
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.Redo" />
       </Docs>
     </Member>
     <Member MemberName="EndChange">
@@ -517,6 +534,10 @@ TextBox with CaretBrush set to blue
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.BeginChange" />
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.Undo" />
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.Redo" />
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.LockCurrentUndoUnit" />
       </Docs>
     </Member>
     <Member MemberName="ExtentHeight">
@@ -549,6 +570,9 @@ TextBox with CaretBrush set to blue
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Primitives.TextBoxBase.ExtentWidth" />
+        <altmember cref="P:System.Windows.Controls.Primitives.TextBoxBase.HorizontalScrollBarVisibility" />
+        <altmember cref="P:System.Windows.Controls.Primitives.TextBoxBase.VerticalScrollBarVisibility" />
       </Docs>
     </Member>
     <Member MemberName="ExtentWidth">
@@ -581,6 +605,9 @@ TextBox with CaretBrush set to blue
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Primitives.TextBoxBase.ExtentWidth" />
+        <altmember cref="P:System.Windows.Controls.Primitives.TextBoxBase.HorizontalScrollBarVisibility" />
+        <altmember cref="P:System.Windows.Controls.Primitives.TextBoxBase.VerticalScrollBarVisibility" />
       </Docs>
     </Member>
     <Member MemberName="HorizontalOffset">
@@ -621,6 +648,11 @@ TextBox with CaretBrush set to blue
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">An attempt is made to set this property to a negative value.</exception>
+        <altmember cref="P:System.Windows.Controls.Primitives.TextBoxBase.VerticalOffset" />
+        <altmember cref="P:System.Windows.Controls.Primitives.TextBoxBase.HorizontalScrollBarVisibility" />
+        <altmember cref="P:System.Windows.Controls.Primitives.TextBoxBase.VerticalScrollBarVisibility" />
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.ScrollToEnd" />
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.ScrollToHome" />
       </Docs>
     </Member>
     <Member MemberName="HorizontalScrollBarVisibility">
@@ -918,6 +950,12 @@ TextBox with CaretBrush set to blue
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.DeclareChangeBlock" />
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.BeginChange" />
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.EndChange" />
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.LockCurrentUndoUnit" />
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.Undo" />
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.Redo" />
       </Docs>
     </Member>
     <Member MemberName="IsUndoEnabledProperty">
@@ -963,6 +1001,9 @@ TextBox with CaretBrush set to blue
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.LineLeft" />
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.LineRight" />
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.LineUp" />
       </Docs>
     </Member>
     <Member MemberName="LineLeft">
@@ -991,6 +1032,9 @@ TextBox with CaretBrush set to blue
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.LineDown" />
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.LineRight" />
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.LineUp" />
       </Docs>
     </Member>
     <Member MemberName="LineRight">
@@ -1019,6 +1063,9 @@ TextBox with CaretBrush set to blue
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.LineDown" />
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.LineLeft" />
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.LineUp" />
       </Docs>
     </Member>
     <Member MemberName="LineUp">
@@ -1047,6 +1094,8 @@ TextBox with CaretBrush set to blue
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.LineLeft" />
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.LineDown" />
       </Docs>
     </Member>
     <Member MemberName="LockCurrentUndoUnit">
@@ -1072,6 +1121,12 @@ TextBox with CaretBrush set to blue
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.Undo" />
+        <altmember cref="P:System.Windows.Controls.Primitives.TextBoxBase.CanRedo" />
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.BeginChange" />
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.EndChange" />
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.DeclareChangeBlock" />
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.LockCurrentUndoUnit" />
       </Docs>
     </Member>
     <Member MemberName="OnApplyTemplate">
@@ -1151,6 +1206,7 @@ TextBox with CaretBrush set to blue
         <param name="e">Provides data about the event.</param>
         <summary>Invoked whenever an unhandled <see cref="E:System.Windows.DragDrop.DragEnter" /> attached routed event reaches an element derived from this class in its route. Implement this method to add class handling for this event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.UIElement.OnDragEnter(System.Windows.DragEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnDragLeave">
@@ -1172,6 +1228,7 @@ TextBox with CaretBrush set to blue
         <param name="e">Provides data about the event.</param>
         <summary>Invoked whenever an unhandled <see cref="E:System.Windows.DragDrop.DragLeave" /> attached routed event reaches an element derived from this class in its route. Implement this method to add class handling for this event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.UIElement.OnDragLeave(System.Windows.DragEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnDragOver">
@@ -1193,6 +1250,7 @@ TextBox with CaretBrush set to blue
         <param name="e">Provides data about the event.</param>
         <summary>Invoked whenever an unhandled <see cref="E:System.Windows.DragDrop.DragOver" /> attached routed event reaches an element derived from this class in its route. Implement this method to add class handling for this event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.UIElement.OnDragOver(System.Windows.DragEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnDrop">
@@ -1214,6 +1272,7 @@ TextBox with CaretBrush set to blue
         <param name="e">Provides data about the event.</param>
         <summary>Invoked whenever an unhandled <see cref="E:System.Windows.DragDrop.DragEnter" /> attached routed event reaches an element derived from this class in its route. Implement this method to add class handling for this event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.UIElement.OnDrop(System.Windows.DragEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnGiveFeedback">
@@ -1235,6 +1294,7 @@ TextBox with CaretBrush set to blue
         <param name="e">Provides data about the event.</param>
         <summary>Invoked whenever an unhandled <see cref="E:System.Windows.DragDrop.GiveFeedback" /> attached routed event reaches an element derived from this class in its route. Implement this method to add class handling for this event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.UIElement.OnGiveFeedback(System.Windows.GiveFeedbackEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnGotKeyboardFocus">
@@ -1256,6 +1316,7 @@ TextBox with CaretBrush set to blue
         <param name="e">Provides data about the event.</param>
         <summary>Invoked whenever an unhandled <see cref="E:System.Windows.Input.Keyboard.GotKeyboardFocus" /> attached routed event reaches an element derived from this class in its route. Implement this method to add class handling for this event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.UIElement.OnGotKeyboardFocus(System.Windows.Input.KeyboardFocusChangedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnKeyDown">
@@ -1277,6 +1338,7 @@ TextBox with CaretBrush set to blue
         <param name="e">Provides data about the event.</param>
         <summary>Invoked whenever an unhandled <see cref="E:System.Windows.Input.Keyboard.KeyDown" /> attached routed event reaches an element derived from this class in its route. Implement this method to add class handling for this event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.UIElement.OnKeyDown(System.Windows.Input.KeyEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnKeyUp">
@@ -1298,6 +1360,7 @@ TextBox with CaretBrush set to blue
         <param name="e">Provides data about the event.</param>
         <summary>Invoked whenever an unhandled <see cref="E:System.Windows.Input.Keyboard.KeyUp" /> attached routed event reaches an element derived from this class in its route. Implement this method to add class handling for this event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.UIElement.OnKeyUp(System.Windows.Input.KeyEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnLostFocus">
@@ -1319,6 +1382,7 @@ TextBox with CaretBrush set to blue
         <param name="e">Provides data about the event.</param>
         <summary>Raises the <see cref="E:System.Windows.UIElement.LostFocus" /> event (using the provided arguments).</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.UIElement.OnLostFocus(System.Windows.RoutedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnLostKeyboardFocus">
@@ -1340,6 +1404,7 @@ TextBox with CaretBrush set to blue
         <param name="e">Provides data about the event.</param>
         <summary>Invoked whenever an unhandled <see cref="E:System.Windows.Input.Keyboard.LostKeyboardFocus" /> attached routed event reaches an element derived from this class in its route. Implement this method to add class handling for this event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.UIElement.OnLostKeyboardFocus(System.Windows.Input.KeyboardFocusChangedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseDown">
@@ -1361,6 +1426,7 @@ TextBox with CaretBrush set to blue
         <param name="e">Provides data about the event.</param>
         <summary>Invoked whenever an unhandled <see cref="E:System.Windows.Input.Mouse.MouseDown" /> attached routed event reaches an element derived from this class in its route. Implement this method to add class handling for this event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.UIElement.OnMouseDown(System.Windows.Input.MouseButtonEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseMove">
@@ -1382,6 +1448,7 @@ TextBox with CaretBrush set to blue
         <param name="e">Provides data about the event.</param>
         <summary>Invoked whenever an unhandled <see cref="E:System.Windows.Input.Mouse.MouseMove" /> attached routed event reaches an element derived from this class in its route. Implement this method to add class handling for this event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.UIElement.OnMouseMove(System.Windows.Input.MouseEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseUp">
@@ -1403,6 +1470,7 @@ TextBox with CaretBrush set to blue
         <param name="e">Arguments of the event. These arguments will include details about which mouse button was depressed, and the handled state.</param>
         <summary>Invoked whenever an unhandled <see cref="E:System.Windows.Input.Mouse.MouseUp" /> event reaches an element derived from this class in its route. Implement this method to add class handling for this event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.UIElement.OnMouseUp(System.Windows.Input.MouseButtonEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseWheel">
@@ -1505,6 +1573,7 @@ TextBox with CaretBrush set to blue
         <param name="e">Provides data about the event.</param>
         <summary>Invoked whenever an unhandled <see cref="E:System.Windows.Input.Mouse.QueryCursor" /> attached routed event reaches an element derived from this class in its route. Implement this method to add class handling for this event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.UIElement.OnQueryCursor(System.Windows.Input.QueryCursorEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnSelectionChanged">
@@ -1612,6 +1681,7 @@ TextBox with CaretBrush set to blue
         <param name="e">Provides data about the event.</param>
         <summary>Invoked whenever an unhandled <see cref="E:System.Windows.Input.TextCompositionManager.TextInput" /> attached routed event reaches an element derived from this class in its route. Implement this method to add class handling for this event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.UIElement.OnTextInput(System.Windows.Input.TextCompositionEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="PageDown">
@@ -1640,6 +1710,9 @@ TextBox with CaretBrush set to blue
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.PageLeft" />
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.PageRight" />
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.PageUp" />
       </Docs>
     </Member>
     <Member MemberName="PageLeft">
@@ -1668,6 +1741,9 @@ TextBox with CaretBrush set to blue
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.PageDown" />
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.PageRight" />
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.PageUp" />
       </Docs>
     </Member>
     <Member MemberName="PageRight">
@@ -1696,6 +1772,9 @@ TextBox with CaretBrush set to blue
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.PageLeft" />
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.PageDown" />
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.PageUp" />
       </Docs>
     </Member>
     <Member MemberName="PageUp">
@@ -1724,6 +1803,9 @@ TextBox with CaretBrush set to blue
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.PageLeft" />
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.PageRight" />
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.PageDown" />
       </Docs>
     </Member>
     <Member MemberName="Paste">
@@ -1752,6 +1834,8 @@ TextBox with CaretBrush set to blue
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.Cut" />
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.Copy" />
       </Docs>
     </Member>
     <Member MemberName="Redo">
@@ -1782,6 +1866,11 @@ TextBox with CaretBrush set to blue
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.Undo" />
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.BeginChange" />
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.EndChange" />
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.DeclareChangeBlock" />
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.LockCurrentUndoUnit" />
       </Docs>
     </Member>
     <Member MemberName="ScrollToEnd">
@@ -1810,6 +1899,7 @@ TextBox with CaretBrush set to blue
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.ScrollToHome" />
       </Docs>
     </Member>
     <Member MemberName="ScrollToHome">
@@ -1838,6 +1928,7 @@ TextBox with CaretBrush set to blue
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.ScrollToEnd" />
       </Docs>
     </Member>
     <Member MemberName="ScrollToHorizontalOffset">
@@ -1859,6 +1950,7 @@ TextBox with CaretBrush set to blue
         <param name="offset">A double value that specifies the horizontal offset to scroll to.</param>
         <summary>Scrolls the contents of the editing control to the specified horizontal offset.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.ScrollToVerticalOffset(System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="ScrollToVerticalOffset">
@@ -1880,6 +1972,7 @@ TextBox with CaretBrush set to blue
         <param name="offset">A double value that specifies the vertical offset to scroll to.</param>
         <summary>Scrolls the contents of the editing control to the specified vertical offset.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.ScrollToHorizontalOffset(System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="SelectAll">
@@ -2019,6 +2112,7 @@ Selected text in a TextBox with SelectionBrush set to red
       <Docs>
         <summary>Identifies the <see cref="E:System.Windows.Controls.Primitives.TextBoxBase.SelectionChanged" /> routed event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Windows.Controls.Primitives.TextBoxBase.SelectionChanged" />
       </Docs>
     </Member>
     <Member MemberName="SelectionOpacity">
@@ -2093,6 +2187,9 @@ Selected text in a TextBox with SelectionOpacity set to 0.5
   
  This property has no default value.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.SpellingError" />
+        <altmember cref="T:System.Windows.Controls.SpellingReform" />
+        <altmember cref="T:System.Windows.Controls.SpellCheck" />
       </Docs>
     </Member>
     <Member MemberName="TextChanged">
@@ -2126,6 +2223,7 @@ Selected text in a TextBox with SelectionOpacity set to 0.5
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.TextChangedEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="TextChangedEvent">
@@ -2143,6 +2241,7 @@ Selected text in a TextBox with SelectionOpacity set to 0.5
       <Docs>
         <summary>Identifies the <see cref="E:System.Windows.Controls.Primitives.TextBoxBase.TextChanged" /> routed event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Windows.Controls.Primitives.TextBoxBase.TextChanged" />
       </Docs>
     </Member>
     <Member MemberName="Undo">
@@ -2173,6 +2272,11 @@ Selected text in a TextBox with SelectionOpacity set to 0.5
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.Redo" />
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.BeginChange" />
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.EndChange" />
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.DeclareChangeBlock" />
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.LockCurrentUndoUnit" />
       </Docs>
     </Member>
     <Member MemberName="UndoLimit">
@@ -2266,6 +2370,11 @@ Selected text in a TextBox with SelectionOpacity set to 0.5
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">An attempt is made to set this property to a negative value.</exception>
+        <altmember cref="P:System.Windows.Controls.Primitives.TextBoxBase.HorizontalOffset" />
+        <altmember cref="P:System.Windows.Controls.Primitives.TextBoxBase.HorizontalScrollBarVisibility" />
+        <altmember cref="P:System.Windows.Controls.Primitives.TextBoxBase.VerticalScrollBarVisibility" />
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.ScrollToEnd" />
+        <altmember cref="M:System.Windows.Controls.Primitives.TextBoxBase.ScrollToHome" />
       </Docs>
     </Member>
     <Member MemberName="VerticalScrollBarVisibility">
@@ -2300,6 +2409,9 @@ Selected text in a TextBox with SelectionOpacity set to 0.5
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Primitives.TextBoxBase.AcceptsReturn" />
+        <altmember cref="P:System.Windows.Controls.TextBox.TextWrapping" />
+        <altmember cref="T:System.Windows.Controls.ScrollBarVisibility" />
       </Docs>
     </Member>
     <Member MemberName="VerticalScrollBarVisibilityProperty">
@@ -2349,6 +2461,9 @@ Selected text in a TextBox with SelectionOpacity set to 0.5
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Primitives.TextBoxBase.ViewportWidth" />
+        <altmember cref="P:System.Windows.Controls.Primitives.TextBoxBase.HorizontalScrollBarVisibility" />
+        <altmember cref="P:System.Windows.Controls.Primitives.TextBoxBase.VerticalScrollBarVisibility" />
       </Docs>
     </Member>
     <Member MemberName="ViewportWidth">
@@ -2381,6 +2496,9 @@ Selected text in a TextBox with SelectionOpacity set to 0.5
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Primitives.TextBoxBase.ViewportWidth" />
+        <altmember cref="P:System.Windows.Controls.Primitives.TextBoxBase.HorizontalScrollBarVisibility" />
+        <altmember cref="P:System.Windows.Controls.Primitives.TextBoxBase.VerticalScrollBarVisibility" />
       </Docs>
     </Member>
   </Members>

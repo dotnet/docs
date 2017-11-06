@@ -57,6 +57,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.StaticPartialCachingControl.#ctor(System.String,System.String,System.Int32,System.String,System.String,System.String,System.String,System.Web.UI.BuildMethod)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -96,6 +97,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.StaticPartialCachingControl.#ctor(System.String,System.String,System.Int32,System.String,System.String,System.String,System.Web.UI.BuildMethod)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -181,6 +183,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Caching.SqlCacheDependency" />
       </Docs>
     </Member>
     <Member MemberName="BuildCachedControl">
@@ -227,6 +230,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Caching.SqlCacheDependency" />
       </Docs>
     </Member>
     <Member MemberName="BuildCachedControl">
@@ -268,5 +272,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BuildCachedControl">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Builds a <see cref="T:System.Web.UI.StaticPartialCachingControl" /> object in the user control (.ascx file) and adds it to the containing server control.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates the <see cref="T:System.Web.UI.StaticPartialCachingControl" /> object to contain the cached server control content.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

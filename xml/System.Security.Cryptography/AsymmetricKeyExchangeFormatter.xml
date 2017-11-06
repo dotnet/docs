@@ -216,5 +216,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateKeyExchange">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, creates the encrypted key exchange data.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -52,6 +52,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.Configuration" />
+    <altmember cref="T:System.Configuration.ConfigurationSectionGroup" />
+    <altmember cref="T:System.Configuration.ConfigurationSection" />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -94,6 +97,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.Configuration" />
+        <altmember cref="T:System.Configuration.ConfigurationSectionGroup" />
+        <altmember cref="T:System.Configuration.ConfigurationSection" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -126,6 +132,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.Configuration" />
+        <altmember cref="T:System.Configuration.ConfigurationSectionGroup" />
+        <altmember cref="T:System.Configuration.ConfigurationSection" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -242,6 +251,9 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="name" /> is null or an empty string ("").</exception>
+        <altmember cref="T:System.Configuration.Configuration" />
+        <altmember cref="T:System.Configuration.ConfigurationSectionGroup" />
+        <altmember cref="T:System.Configuration.ConfigurationSection" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -275,6 +287,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.Configuration" />
+        <altmember cref="T:System.Configuration.ConfigurationSectionGroup" />
+        <altmember cref="T:System.Configuration.ConfigurationSection" />
       </Docs>
     </Member>
     <Member MemberName="GetKey">
@@ -311,6 +326,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.Configuration" />
+        <altmember cref="T:System.Configuration.ConfigurationSectionGroup" />
+        <altmember cref="T:System.Configuration.ConfigurationSection" />
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -388,6 +406,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.Configuration" />
+        <altmember cref="T:System.Configuration.ConfigurationSectionGroup" />
+        <altmember cref="T:System.Configuration.ConfigurationSection" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -431,6 +452,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.Configuration" />
+        <altmember cref="T:System.Configuration.ConfigurationSectionGroup" />
+        <altmember cref="T:System.Configuration.ConfigurationSection" />
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -463,6 +487,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.Configuration" />
+        <altmember cref="T:System.Configuration.ConfigurationSectionGroup" />
+        <altmember cref="T:System.Configuration.ConfigurationSection" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -498,6 +525,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.Configuration" />
+        <altmember cref="T:System.Configuration.ConfigurationSectionGroup" />
+        <altmember cref="T:System.Configuration.ConfigurationSection" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -525,5 +555,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Get">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Configuration.ConfigurationSection" /> object from this <see cref="T:System.Configuration.ConfigurationSectionCollection" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the specified <see cref="T:System.Configuration.ConfigurationSection" /> object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

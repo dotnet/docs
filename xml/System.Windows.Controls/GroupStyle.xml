@@ -36,6 +36,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Windows.Controls.ItemsControl.GroupStyle" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -155,6 +156,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.GroupStyle.ContainerStyleSelector" />
       </Docs>
     </Member>
     <Member MemberName="ContainerStyleSelector">
@@ -178,6 +180,8 @@
         <summary>Enables the application writer to provide custom selection logic for a style to apply to each generated <see cref="T:System.Windows.Controls.GroupItem" />.</summary>
         <value>An object that derives from <see cref="T:System.Windows.Controls.StyleSelector" />. The default is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataTemplateSelector" />
+        <altmember cref="P:System.Windows.Controls.GroupStyle.ContainerStyle" />
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -326,6 +330,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.GroupStyle.HeaderTemplateSelector" />
       </Docs>
     </Member>
     <Member MemberName="HeaderTemplateSelector">
@@ -349,6 +354,7 @@
         <summary>Enables the application writer to provide custom selection logic for a template that is used to display the group header.</summary>
         <value>An object that derives from <see cref="T:System.Windows.Controls.DataTemplateSelector" />. The default is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.GroupStyle.HeaderTemplate" />
       </Docs>
     </Member>
     <Member MemberName="HidesIfEmpty">
@@ -429,6 +435,7 @@
       <Docs>
         <summary>Occurs when a property value changes.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged" />
       </Docs>
     </Member>
   </Members>

@@ -37,6 +37,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The domain controller is not a global catalog server or the global catalog server has already been disabled.</exception>
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DomainController" />
       </Docs>
     </Member>
     <Member MemberName="EnableGlobalCatalog">
@@ -87,6 +88,8 @@
           <paramref name="context" /> is not valid.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="context" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.GlobalCatalogCollection" />
       </Docs>
     </Member>
     <Member MemberName="FindAll">
@@ -116,6 +119,8 @@
           <paramref name="context" /> or <paramref name="siteName" /> is not valid.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="context" /> or <paramref name="siteName" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.GlobalCatalogCollection" />
       </Docs>
     </Member>
     <Member MemberName="FindAllProperties">
@@ -159,6 +164,7 @@ foreach (GlobalCatalog gc in GlobalCatalog.FindAll(context))
         </remarks>
         <exception cref="T:System.InvalidOperationException">The domain controller is not a global catalog server or the global catalog server has been disabled.</exception>
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaPropertyCollection" />
       </Docs>
     </Member>
     <Member MemberName="FindOne">
@@ -187,6 +193,7 @@ foreach (GlobalCatalog gc in GlobalCatalog.FindAll(context))
           <paramref name="context" /> is not valid.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="context" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" />
       </Docs>
     </Member>
     <Member MemberName="FindOne">
@@ -217,6 +224,8 @@ foreach (GlobalCatalog gc in GlobalCatalog.FindAll(context))
           <paramref name="context" /> or <paramref name="flag" /> is not valid.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="context" /> is null.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.LocatorOptions" />
       </Docs>
     </Member>
     <Member MemberName="FindOne">
@@ -247,6 +256,7 @@ foreach (GlobalCatalog gc in GlobalCatalog.FindAll(context))
           <paramref name="context" /> or <paramref name="siteName" /> is not valid.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="context" /> or <paramref name="siteName" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" />
       </Docs>
     </Member>
     <Member MemberName="FindOne">
@@ -279,6 +289,8 @@ foreach (GlobalCatalog gc in GlobalCatalog.FindAll(context))
           <paramref name="context" />, <paramref name="siteName" />, or <paramref name="flag" /> is not valid.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="context" /> or <paramref name="siteName" /> is null.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.LocatorOptions" />
       </Docs>
     </Member>
     <Member MemberName="GetDirectorySearcher">
@@ -302,6 +314,7 @@ foreach (GlobalCatalog gc in GlobalCatalog.FindAll(context))
         <exception cref="T:System.InvalidOperationException">The global catalog server has been disabled.</exception>
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
+        <altmember cref="T:System.DirectoryServices.DirectorySearcher" />
       </Docs>
     </Member>
     <Member MemberName="GetGlobalCatalog">
@@ -330,6 +343,7 @@ foreach (GlobalCatalog gc in GlobalCatalog.FindAll(context))
           <paramref name="context" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="context" /> is not valid.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" />
       </Docs>
     </Member>
     <Member MemberName="IsGlobalCatalog">
@@ -356,5 +370,25 @@ foreach (GlobalCatalog gc in GlobalCatalog.FindAll(context))
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FindAll">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Finds all global catalog servers.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FindOne">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Finds a single global catalog server.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

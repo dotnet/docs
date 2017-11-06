@@ -26,6 +26,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Drawing.Printing.PrintDocument" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -68,6 +69,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Drawing.Printing.PrintingPermission">for safe printing from a restricted dialog box. Associated enumeration: <see cref="F:System.Drawing.Printing.PrintingPermissionLevel.SafePrinting" /></permission>
+        <altmember cref="T:System.Drawing.Printing.PreviewPageInfo" />
+        <altmember cref="T:System.Drawing.Printing.PrintDocument" />
       </Docs>
     </Member>
     <Member MemberName="IsPreview">
@@ -120,6 +123,12 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Drawing.Printing.PrintingPermission">for safe printing from a restricted dialog box. Associated enumeration: <see cref="F:System.Drawing.Printing.PrintingPermissionLevel.SafePrinting" /></permission>
+        <altmember cref="M:System.Drawing.Printing.PreviewPrintController.OnEndPrint(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintEventArgs)" />
+        <altmember cref="M:System.Drawing.Printing.PreviewPrintController.OnStartPage(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintPageEventArgs)" />
+        <altmember cref="M:System.Drawing.Printing.PreviewPrintController.OnStartPrint(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintEventArgs)" />
+        <altmember cref="T:System.Drawing.Printing.PrintDocument" />
+        <altmember cref="E:System.Drawing.Printing.PrintDocument.PrintPage" />
+        <altmember cref="T:System.Drawing.Printing.PrintPageEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnEndPrint">
@@ -153,6 +162,11 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Drawing.Printing.PrintingPermission">for safe printing from a restricted dialog box. Associated enumeration: <see cref="F:System.Drawing.Printing.PrintingPermissionLevel.SafePrinting" /></permission>
+        <altmember cref="M:System.Drawing.Printing.PreviewPrintController.OnEndPage(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintPageEventArgs)" />
+        <altmember cref="M:System.Drawing.Printing.PreviewPrintController.OnStartPage(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintPageEventArgs)" />
+        <altmember cref="M:System.Drawing.Printing.PreviewPrintController.OnStartPrint(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintEventArgs)" />
+        <altmember cref="T:System.Drawing.Printing.PrintDocument" />
+        <altmember cref="T:System.Drawing.Printing.PrintEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnStartPage">
@@ -190,6 +204,10 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Drawing.Printing.PrintingPermission">for safe printing from a restricted dialog box. Associated enumeration: <see cref="F:System.Drawing.Printing.PrintingPermissionLevel.SafePrinting" /></permission>
+        <altmember cref="M:System.Drawing.Printing.PreviewPrintController.OnEndPage(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintPageEventArgs)" />
+        <altmember cref="M:System.Drawing.Printing.PreviewPrintController.OnEndPrint(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintEventArgs)" />
+        <altmember cref="M:System.Drawing.Printing.PreviewPrintController.OnStartPrint(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintEventArgs)" />
+        <altmember cref="T:System.Drawing.Printing.PrintPageEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnStartPrint">
@@ -226,6 +244,11 @@
         </remarks>
         <exception cref="T:System.Drawing.Printing.InvalidPrinterException">The printer named in the <see cref="P:System.Drawing.Printing.PrinterSettings.PrinterName" /> property does not exist.</exception>
         <permission cref="T:System.Drawing.Printing.PrintingPermission">for safe printing from a restricted dialog box. Associated enumeration: <see cref="F:System.Drawing.Printing.PrintingPermissionLevel.SafePrinting" /></permission>
+        <altmember cref="M:System.Drawing.Printing.PreviewPrintController.OnEndPage(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintPageEventArgs)" />
+        <altmember cref="M:System.Drawing.Printing.PreviewPrintController.OnEndPrint(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintEventArgs)" />
+        <altmember cref="M:System.Drawing.Printing.PreviewPrintController.OnStartPage(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintPageEventArgs)" />
+        <altmember cref="T:System.Drawing.Printing.PrinterSettings" />
+        <altmember cref="T:System.Drawing.Printing.PrintEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="UseAntiAlias">

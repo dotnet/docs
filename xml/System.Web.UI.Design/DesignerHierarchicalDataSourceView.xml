@@ -23,6 +23,8 @@
     <block subset="none" type="overrides">
       <para>You inherit this class as part of a suite of classes to support your own custom data source control for hierarchical data, such as XML data. Override the <see cref="P:System.Web.UI.Design.DesignerHierarchicalDataSourceView.Schema" /> property to provide a custom object that is derived from the <see cref="T:System.Web.UI.Design.IDataSourceSchema" /> class. Override the <see cref="M:System.Web.UI.Design.DesignerHierarchicalDataSourceView.GetDesignTimeData(System.Boolean@)" /> method to provide sample data to the control designer at design time.</para>
     </block>
+    <altmember cref="T:System.Web.UI.HierarchicalDataSourceView" />
+    <altmember cref="T:System.Web.UI.Design.DataSourceDesigner" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,6 +51,7 @@
  -or-  
   
  <paramref name="viewPath" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.UI.HierarchicalDataSourceView" />
       </Docs>
     </Member>
     <Member MemberName="DataSourceDesigner">
@@ -67,6 +70,7 @@
         <summary>Gets the associated designer.</summary>
         <value>The parent <see cref="T:System.Web.UI.Design.IHierarchicalDataSourceDesigner" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.HierarchicalDataSourceView" />
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeData">
@@ -99,6 +103,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IHierarchicalEnumerable" />
+        <altmember cref="T:System.Web.UI.HierarchicalDataSourceView" />
       </Docs>
     </Member>
     <Member MemberName="Path">
@@ -124,6 +130,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HierarchicalDataSourceView" />
       </Docs>
     </Member>
     <Member MemberName="Schema">
@@ -154,6 +161,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.XmlDocumentSchema" />
+        <altmember cref="T:System.Web.UI.HierarchicalDataSourceView" />
       </Docs>
     </Member>
   </Members>

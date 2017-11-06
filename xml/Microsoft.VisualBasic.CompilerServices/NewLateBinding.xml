@@ -760,5 +760,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="LateSet">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Executes a late-bound property set or field write call. This helper method is not meant to be called directly from your code.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

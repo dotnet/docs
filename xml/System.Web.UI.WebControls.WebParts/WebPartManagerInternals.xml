@@ -33,6 +33,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" />
   </Docs>
   <Members>
     <Member MemberName="AddWebPart">
@@ -75,6 +76,7 @@
         <param name="webPart">A <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> that has been selected for closing.</param>
         <summary>Calls the <see cref="M:System.Web.UI.WebControls.WebParts.WebPart.OnClosing(System.EventArgs)" /> method of the specified control.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPart.OnClosing(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="CallOnConnectModeChanged">
@@ -96,6 +98,7 @@
         <param name="webPart">A <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> that has entered or exited the connect display mode.</param>
         <summary>Calls the <see cref="M:System.Web.UI.WebControls.WebParts.WebPart.OnConnectModeChanged(System.EventArgs)" /> method of the specified control.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPart.OnConnectModeChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="CallOnDeleting">
@@ -117,6 +120,7 @@
         <param name="webPart">A <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> that has been selected for deletion.</param>
         <summary>Calls the <see cref="M:System.Web.UI.WebControls.WebParts.WebPart.OnDeleting(System.EventArgs)" /> method of the specified control.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPart.OnDeleting(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="CallOnEditModeChanged">
@@ -138,6 +142,7 @@
         <param name="webPart">A <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> that has entered or exited edit display mode.</param>
         <summary>Calls the <see cref="M:System.Web.UI.WebControls.WebParts.WebPart.OnEditModeChanged(System.EventArgs)" /> method of the specified control.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPart.OnEditModeChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ConnectionDeleted">
@@ -160,6 +165,7 @@
         <summary>Indicates whether the specified <see cref="T:System.Web.UI.WebControls.WebParts.WebPartConnection" /> object has been deleted.</summary>
         <returns>A Boolean value that indicates whether the connection has been deleted.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManagerInternals.DeleteConnection(System.Web.UI.WebControls.WebParts.WebPartConnection)" />
       </Docs>
     </Member>
     <Member MemberName="CreateObjectFromType">
@@ -217,6 +223,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManagerInternals.ConnectionDeleted(System.Web.UI.WebControls.WebParts.WebPartConnection)" />
       </Docs>
     </Member>
     <Member MemberName="GetZoneID">
@@ -249,6 +256,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.Zone" />
       </Docs>
     </Member>
     <Member MemberName="LoadConfigurationState">
@@ -300,6 +308,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.DeleteWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
       </Docs>
     </Member>
     <Member MemberName="SaveConfigurationState">
@@ -329,6 +338,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManagerInternals.LoadConfigurationState(System.Web.UI.WebControls.WebParts.WebPartTransformer,System.Object)" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartTransformer.SaveConfigurationState" />
       </Docs>
     </Member>
     <Member MemberName="SetConnectErrorMessage">
@@ -361,6 +372,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.ConnectErrorMessage" />
       </Docs>
     </Member>
     <Member MemberName="SetHasSharedData">
@@ -391,6 +403,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.HasSharedData" />
       </Docs>
     </Member>
     <Member MemberName="SetHasUserData">
@@ -421,6 +434,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.HasUserData" />
       </Docs>
     </Member>
     <Member MemberName="SetIsClosed">
@@ -451,6 +465,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.IsClosed" />
       </Docs>
     </Member>
     <MemberGroup MemberName="SetIsShared">
@@ -471,6 +486,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.IsShared" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartConnection.IsShared" />
       </Docs>
     </MemberGroup>
     <Member MemberName="SetIsShared">
@@ -561,6 +578,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.IsStandalone" />
       </Docs>
     </Member>
     <MemberGroup MemberName="SetIsStatic">
@@ -581,6 +599,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.IsStatic" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartConnection.IsStatic" />
       </Docs>
     </MemberGroup>
     <Member MemberName="SetIsStatic">
@@ -673,6 +693,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectWebParts" />
       </Docs>
     </Member>
     <Member MemberName="SetZoneID">
@@ -703,6 +724,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.AddWebPart(System.Web.UI.WebControls.WebParts.WebPart,System.Web.UI.WebControls.WebParts.WebPartZoneBase,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="SetZoneIndex">
@@ -733,6 +755,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.ZoneIndex" />
       </Docs>
     </Member>
   </Members>

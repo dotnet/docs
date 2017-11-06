@@ -13,6 +13,7 @@
   <Docs>
     <summary>Provides data for the <see cref="E:System.Windows.Documents.DocumentPaginator.PagesChanged" /> event.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Documents.PagesChangedEventHandler" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,6 +34,8 @@
         <param name="count">The number of continuous pages that changed.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.PagesChangedEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Windows.Documents.DocumentPaginator.PagesChanged" />
+        <altmember cref="T:System.Windows.Documents.PagesChangedEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -58,6 +61,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Documents.DocumentPaginator.PagesChanged" />
       </Docs>
     </Member>
     <Member MemberName="Start">
@@ -83,6 +87,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Documents.DocumentPaginator.PagesChanged" />
       </Docs>
     </Member>
   </Members>

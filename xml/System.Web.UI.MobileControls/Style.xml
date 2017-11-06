@@ -55,6 +55,7 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="P:System.Web.UI.MobileControls.Style.Name" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -142,6 +143,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.Alignment" />
       </Docs>
     </Member>
     <Member MemberName="AlignmentKey">
@@ -346,6 +348,7 @@
         <summary>Gets or sets the DeviceSpecific/Choice construct associated with the control. The accessor returns <see langword="null" /> if no such construct exists. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <value>The DeviceSpecific/Choice construct associated with the control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.DeviceSpecific" />
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -389,6 +392,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.FontInfo" />
       </Docs>
     </Member>
     <Member MemberName="FontNameKey">
@@ -406,6 +410,7 @@
       <Docs>
         <summary>The key for retrieving the style from the embedded style sheet for the <see cref="P:System.Web.UI.MobileControls.FontInfo.Name" /> property of the <see cref="P:System.Web.UI.MobileControls.Style.Font" /> property. Used internally by ASP.NET. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.FontInfo" />
       </Docs>
     </Member>
     <Member MemberName="FontSizeKey">
@@ -423,6 +428,7 @@
       <Docs>
         <summary>The key for retrieving the style from the embedded style sheet for the <see cref="P:System.Web.UI.MobileControls.FontInfo.Size" /> property of the <see cref="P:System.Web.UI.MobileControls.Style.Font" /> property. Used internally by ASP.NET. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.FontInfo" />
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -544,6 +550,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.DeviceSpecific" />
       </Docs>
     </Member>
     <Member MemberName="IsTrackingViewState">
@@ -580,6 +587,7 @@
       <Docs>
         <summary>The key for retrieving the style from the embedded style sheet for the <see cref="P:System.Web.UI.MobileControls.FontInfo.Italic" /> property of the <see cref="P:System.Web.UI.MobileControls.Style.Font" /> property. Used internally by ASP.NET. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.DeviceSpecific" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -1021,5 +1029,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the style through the key parameter, with or without using inheritance. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

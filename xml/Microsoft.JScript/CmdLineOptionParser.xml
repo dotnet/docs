@@ -164,5 +164,23 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsBooleanOption">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the argument from a command-line option that accepts a <c>+</c> or <c>-</c> switch argument, such as <c>/debug[+|-]</c>.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IsArgumentOption">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the argument from a command-line option that accepts an argument, such as <c>/r[eference]:&amp;lt;file list&amp;gt;</c>.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -13,6 +13,9 @@
   <Docs>
     <summary>Specifies the collision type of a <see cref="T:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollision" /> object.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.DirectoryServices.ActiveDirectory.DomainCollisionOptions" />
+    <altmember cref="T:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollision" />
+    <altmember cref="T:System.DirectoryServices.ActiveDirectory.TopLevelNameCollisionOptions" />
   </Docs>
   <Members>
     <Member MemberName="Domain">

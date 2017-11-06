@@ -20,6 +20,7 @@
   <Docs>
     <summary>Specifies the values that define a peer-to-peer <see cref="T:System.Net.PeerToPeer.PeerName" /> object. A peer name is typically a string used to identify a peer resource.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="N:System.Net.PeerToPeer" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,6 +42,7 @@
         <exception cref="T:System.ArgumentException">The <see cref="T:System.String" /> provided is not a valid <see cref="T:System.Net.PeerToPeer.PeerName" />.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="remotePeerName" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Net.PeerToPeer.PeerName" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -69,6 +71,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">One or more parameters are <see langword="null" />.</exception>
+        <altmember cref="T:System.Net.PeerToPeer.PeerName" />
+        <altmember cref="N:System.Runtime.Serialization" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -110,6 +114,7 @@
         <exception cref="T:System.Net.PeerToPeer.PeerToPeerException">-   The Default Identity used as the basis of the <see cref="T:System.Net.PeerToPeer.PeerName" /> could not be retrieved.  
   
 -   The <see cref="T:System.Net.PeerToPeer.PeerName" /> could not be created.</exception>
+        <altmember cref="T:System.Net.PeerToPeer.PeerName" />
       </Docs>
     </Member>
     <Member MemberName="Authority">
@@ -140,6 +145,8 @@
         <block subset="none" type="usage">
           <para>Using a secured peer name does not ensure the overall security of the networking application. Security of the application is implementation-dependent.</para>
         </block>
+        <altmember cref="P:System.Net.PeerToPeer.PeerName.Classifier" />
+        <altmember cref="T:System.Net.PeerToPeer.PeerNameType" />
       </Docs>
     </Member>
     <Member MemberName="Classifier">
@@ -169,6 +176,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Net.PeerToPeer.PeerName.Authority" />
+        <altmember cref="P:System.Net.PeerToPeer.PeerName.IsSecured" />
+        <altmember cref="T:System.Net.PeerToPeer.PeerNameType" />
       </Docs>
     </Member>
     <Member MemberName="CreateFromPeerHostName">
@@ -209,6 +219,8 @@
         <exception cref="T:System.ArgumentNullException">
           <see cref="P:System.Net.PeerToPeer.PeerName.PeerHostName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Net.PeerToPeer.PeerToPeerException">A <see cref="T:System.Net.PeerToPeer.PeerName" /> could not be created from the supplied <see cref="P:System.Net.PeerToPeer.PeerName.PeerHostName" /></exception>
+        <altmember cref="M:System.Net.PeerToPeer.PeerName.CreateRelativePeerName(System.Net.PeerToPeer.PeerName,System.String)" />
+        <altmember cref="T:System.Net.PeerToPeer.PeerName" />
       </Docs>
     </Member>
     <Member MemberName="CreateRelativePeerName">
@@ -248,6 +260,9 @@
         <exception cref="T:System.ArgumentException">The <see cref="T:System.String" /> provided is not a valid peer name classifier.</exception>
         <exception cref="T:System.ArgumentNullException">One or more parameters are <see langword="null" />.</exception>
         <exception cref="T:System.Net.PeerToPeer.PeerToPeerException">A <see cref="T:System.Net.PeerToPeer.PeerName" /> could not be created from the supplied <see cref="P:System.Net.PeerToPeer.PeerName.PeerHostName" /></exception>
+        <altmember cref="M:System.Net.PeerToPeer.PeerName.CreateFromPeerHostName(System.String)" />
+        <altmember cref="P:System.Net.PeerToPeer.PeerName.PeerHostName" />
+        <altmember cref="T:System.Net.PeerToPeer.PeerName" />
       </Docs>
     </Member>
     <MemberGroup MemberName="Equals">
@@ -265,6 +280,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Net.PeerToPeer.PeerName.Authority" />
+        <altmember cref="P:System.Net.PeerToPeer.PeerName.Classifier" />
+        <altmember cref="T:System.Net.PeerToPeer.PeerName" />
       </Docs>
     </MemberGroup>
     <Member MemberName="Equals">
@@ -298,6 +316,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.PeerToPeer.PeerName" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -328,6 +347,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.PeerToPeer.PeerName" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -354,6 +374,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.PeerToPeer.PeerName" />
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -384,6 +405,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.PeerToPeer.PeerName" />
       </Docs>
     </Member>
     <Member MemberName="IsSecured">
@@ -416,6 +438,8 @@
         <block subset="none" type="usage">
           <para>Using a secured peer name does not ensure the overall security of the networking application. Security of the application is implementation-dependent.</para>
         </block>
+        <altmember cref="T:System.Net.PeerToPeer.PeerName" />
+        <altmember cref="N:System.Security.Permissions" />
       </Docs>
     </Member>
     <Member MemberName="PeerHostName">
@@ -448,6 +472,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Net.PeerToPeer.PeerName.CreateRelativePeerName(System.Net.PeerToPeer.PeerName,System.String)" />
+        <altmember cref="T:System.Net.PeerToPeer.PeerName" />
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
@@ -476,6 +502,7 @@
         <param name="context">Contains the destination for the serialized stream associated with the <see cref="T:System.Net.PeerToPeer.PeerName" /> object.</param>
         <summary>Implements the <see cref="T:System.Runtime.Serialization.ISerializable" /> interface and returns the data needed to serialize the <see cref="T:System.Net.PeerToPeer.PeerName" /> instance.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.PeerToPeer.PeerName" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -502,7 +529,20 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.PeerToPeer.PeerName" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.PeerToPeer.PeerName" /> class.</summary>
+        <altmember cref="M:System.Net.PeerToPeer.PeerName.CreateFromPeerHostName(System.String)" />
+        <altmember cref="M:System.Net.PeerToPeer.PeerName.CreateRelativePeerName(System.Net.PeerToPeer.PeerName,System.String)" />
+        <altmember cref="T:System.Net.PeerToPeer.PeerName" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

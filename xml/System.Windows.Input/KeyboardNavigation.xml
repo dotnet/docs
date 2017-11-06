@@ -34,6 +34,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Input.KeyboardNavigationMode" />
   </Docs>
   <Members>
     <Member MemberName="AcceptsReturnProperty">
@@ -124,6 +125,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="F:System.Windows.Input.KeyboardNavigation.AcceptsReturnProperty" />
       </Docs>
     </Member>
     <Member MemberName="GetControlTabNavigation">
@@ -153,6 +155,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="F:System.Windows.Input.KeyboardNavigation.ControlTabNavigationProperty" />
       </Docs>
     </Member>
     <Member MemberName="GetDirectionalNavigation">
@@ -182,6 +185,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="F:System.Windows.Input.KeyboardNavigation.DirectionalNavigationProperty" />
       </Docs>
     </Member>
     <Member MemberName="GetIsTabStop">
@@ -211,6 +215,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="F:System.Windows.Input.KeyboardNavigation.IsTabStopProperty" />
       </Docs>
     </Member>
     <Member MemberName="GetTabIndex">
@@ -240,6 +245,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="F:System.Windows.Input.KeyboardNavigation.TabIndexProperty" />
       </Docs>
     </Member>
     <Member MemberName="GetTabNavigation">
@@ -269,6 +275,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="F:System.Windows.Input.KeyboardNavigation.TabNavigationProperty" />
       </Docs>
     </Member>
     <Member MemberName="IsTabStopProperty">
@@ -311,6 +318,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="F:System.Windows.Input.KeyboardNavigation.AcceptsReturnProperty" />
       </Docs>
     </Member>
     <Member MemberName="SetControlTabNavigation">
@@ -336,6 +344,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="F:System.Windows.Input.KeyboardNavigation.ControlTabNavigationProperty" />
       </Docs>
     </Member>
     <Member MemberName="SetDirectionalNavigation">
@@ -361,6 +370,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="F:System.Windows.Input.KeyboardNavigation.DirectionalNavigationProperty" />
       </Docs>
     </Member>
     <Member MemberName="SetIsTabStop">
@@ -386,6 +396,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="F:System.Windows.Input.KeyboardNavigation.IsTabStopProperty" />
       </Docs>
     </Member>
     <Member MemberName="SetTabIndex">
@@ -411,6 +422,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="F:System.Windows.Input.KeyboardNavigation.TabIndexProperty" />
       </Docs>
     </Member>
     <Member MemberName="SetTabNavigation">
@@ -436,6 +448,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="F:System.Windows.Input.KeyboardNavigation.TabNavigationProperty" />
       </Docs>
     </Member>
     <Member MemberName="TabIndexProperty">

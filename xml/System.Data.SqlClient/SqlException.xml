@@ -88,6 +88,8 @@ catch (Exception ex) {
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Data.SqlClient.SqlError" />
+    <altmember cref="T:System.Data.SqlClient.SqlErrorCollection" />
   </Docs>
   <Members>
     <Member MemberName="Class">
@@ -137,6 +139,12 @@ catch (Exception ex) {
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.SqlClient.SqlException.Number" />
+        <altmember cref="P:System.Data.SqlClient.SqlException.Source" />
+        <altmember cref="P:System.Data.SqlClient.SqlException.State" />
+        <altmember cref="P:System.Data.SqlClient.SqlException.Server" />
+        <altmember cref="P:System.Data.SqlClient.SqlException.Procedure" />
+        <altmember cref="P:System.Data.SqlClient.SqlException.LineNumber" />
       </Docs>
     </Member>
     <Member MemberName="ClientConnectionId">
@@ -222,6 +230,8 @@ catch (Exception ex) {
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.SqlClient.SqlErrorCollection" />
+        <altmember cref="T:System.Data.SqlClient.SqlError" />
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -303,6 +313,12 @@ catch (Exception ex) {
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.SqlClient.SqlException.Number" />
+        <altmember cref="P:System.Data.SqlClient.SqlException.Source" />
+        <altmember cref="P:System.Data.SqlClient.SqlException.State" />
+        <altmember cref="P:System.Data.SqlClient.SqlException.Class" />
+        <altmember cref="P:System.Data.SqlClient.SqlException.Server" />
+        <altmember cref="P:System.Data.SqlClient.SqlException.Procedure" />
       </Docs>
     </Member>
     <Member MemberName="Message">
@@ -365,6 +381,12 @@ catch (Exception ex) {
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.SqlClient.SqlException.State" />
+        <altmember cref="P:System.Data.SqlClient.SqlException.Class" />
+        <altmember cref="P:System.Data.SqlClient.SqlException.Source" />
+        <altmember cref="P:System.Data.SqlClient.SqlException.Server" />
+        <altmember cref="P:System.Data.SqlClient.SqlException.Procedure" />
+        <altmember cref="P:System.Data.SqlClient.SqlException.LineNumber" />
       </Docs>
     </Member>
     <Member MemberName="Procedure">
@@ -408,6 +430,12 @@ catch (Exception ex) {
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.SqlClient.SqlException.Number" />
+        <altmember cref="P:System.Data.SqlClient.SqlException.State" />
+        <altmember cref="P:System.Data.SqlClient.SqlException.Class" />
+        <altmember cref="P:System.Data.SqlClient.SqlException.Server" />
+        <altmember cref="P:System.Data.SqlClient.SqlException.Source" />
+        <altmember cref="P:System.Data.SqlClient.SqlException.LineNumber" />
       </Docs>
     </Member>
     <Member MemberName="Server">
@@ -451,6 +479,12 @@ catch (Exception ex) {
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.SqlClient.SqlException.Number" />
+        <altmember cref="P:System.Data.SqlClient.SqlException.State" />
+        <altmember cref="P:System.Data.SqlClient.SqlException.Source" />
+        <altmember cref="P:System.Data.SqlClient.SqlException.Class" />
+        <altmember cref="P:System.Data.SqlClient.SqlException.Procedure" />
+        <altmember cref="P:System.Data.SqlClient.SqlException.LineNumber" />
       </Docs>
     </Member>
     <Member MemberName="Source">
@@ -494,6 +528,12 @@ catch (Exception ex) {
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.SqlClient.SqlException.Number" />
+        <altmember cref="P:System.Data.SqlClient.SqlException.State" />
+        <altmember cref="P:System.Data.SqlClient.SqlException.Class" />
+        <altmember cref="P:System.Data.SqlClient.SqlException.Server" />
+        <altmember cref="P:System.Data.SqlClient.SqlException.Procedure" />
+        <altmember cref="P:System.Data.SqlClient.SqlException.LineNumber" />
       </Docs>
     </Member>
     <Member MemberName="State">
@@ -537,6 +577,12 @@ catch (Exception ex) {
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.SqlClient.SqlException.Number" />
+        <altmember cref="P:System.Data.SqlClient.SqlException.Class" />
+        <altmember cref="P:System.Data.SqlClient.SqlException.Source" />
+        <altmember cref="P:System.Data.SqlClient.SqlException.Server" />
+        <altmember cref="P:System.Data.SqlClient.SqlException.Procedure" />
+        <altmember cref="P:System.Data.SqlClient.SqlException.LineNumber" />
       </Docs>
     </Member>
     <Member MemberName="ToString">

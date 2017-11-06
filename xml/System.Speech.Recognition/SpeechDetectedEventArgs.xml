@@ -43,6 +43,9 @@ _recognizer.SpeechDetected +=
   
  ]]></format>
     </remarks>
+    <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.AudioStateChanged" />
+    <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechDetected" />
+    <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected" />
   </Docs>
   <Members>
     <Member MemberName="AudioPosition">
@@ -82,6 +85,10 @@ _recognizer.SpeechDetected +=
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.SpeechDetectedEventArgs" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.AudioStateChanged" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechDetected" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected" />
       </Docs>
     </Member>
   </Members>

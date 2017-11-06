@@ -74,6 +74,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Nullable" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -266,6 +267,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Nullable`1.GetValueOrDefault(`0)" />
       </Docs>
     </Member>
     <Member MemberName="GetValueOrDefault">
@@ -316,6 +318,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Nullable`1.GetValueOrDefault" />
       </Docs>
     </Member>
     <Member MemberName="HasValue">
@@ -394,10 +397,25 @@
         <Parameter Name="value" Type="System.Nullable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">A nullable value.</param>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Nullable`1" /> instance to its underlying value.</summary>
+        <returns>The value of the <see cref="P:System.Nullable`1.Value" /> property for the <paramref name="value" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This operator supports the explicit conversion of the current <xref:System.Nullable%601> instance to type `T`, the type of <xref:System.Nullable%601.Value%2A>. The syntax for such explicit conversions is language-dependent. You may also be able to perform the conversion by calling the <xref:System.Convert.ChangeType%2A?displayProperty=fullName> method.  
+  
+ The equivalent method for this operator is <xref:System.Nullable%601.Value?displayProperty=fullName>  
+  
+## Examples  
+ The <xref:System.Nullable%601.op_Explicit%2A> operator enables code such as the following, which converts a `Nullable(Of Int32)` value to an <xref:System.Int32> value.  
+  
+ [!code-csharp[System.Nullable~1.Conversion#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.nullable~1.conversion/cs/explicit1.cs#1)]
+ [!code-vb[System.Nullable~1.Conversion#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.nullable~1.conversion/vb/explicit1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -429,10 +447,19 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">A value type.</param>
+        <summary>Creates a new <see cref="T:System.Nullable`1" /> object initialized to a specified value.</summary>
+        <returns>A <see cref="T:System.Nullable`1" /> object whose <see cref="P:System.Nullable`1.Value" /> property is initialized with the <paramref name="value" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the `value` parameter is not `null`, the <xref:System.Nullable%601.Value%2A> property of the new <xref:System.Nullable%601> value is initialized to the `value` parameter and the <xref:System.Nullable%601.HasValue%2A> property is initialized to `true`.  
+  
+ If the `value` parameter is `null`, the <xref:System.Nullable%601.Value%2A> property of the new <xref:System.Nullable%601> value is initialized to the default value, which is the value that is all binary zeroes, and the <xref:System.Nullable%601.HasValue%2A> property is initialized to `false`.  
+  
+ The equivalent method for this operator is <xref:System.Nullable%601.%23ctor%28%600%29?displayProperty=fullName>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -529,5 +556,18 @@
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Nullable`1.HasValue" /> property is <see langword="false" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetValueOrDefault">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the value of the current <see cref="T:System.Nullable`1" /> object, or a default value.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

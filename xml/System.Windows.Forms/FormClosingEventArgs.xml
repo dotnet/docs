@@ -34,6 +34,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.Form" />
+    <altmember cref="E:System.Windows.Forms.Form.FormClosing" />
+    <altmember cref="M:System.Windows.Forms.Form.Close" />
+    <altmember cref="M:System.Windows.Forms.Application.Exit" />
+    <altmember cref="T:System.Windows.Forms.CloseReason" />
+    <altmember cref="T:System.Windows.Forms.FormClosingEventHandler" />
+    <altmember cref="T:System.Windows.Forms.FormClosedEventArgs" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -62,6 +69,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.CloseReason" />
       </Docs>
     </Member>
     <Member MemberName="CloseReason">
@@ -97,6 +105,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Form" />
+        <altmember cref="T:System.Windows.Forms.CloseReason" />
       </Docs>
     </Member>
   </Members>

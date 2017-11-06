@@ -18,6 +18,9 @@
   <Docs>
     <summary>Defines the functionality required to support a shared-size group that is used by the <see cref="T:System.Windows.Controls.ColumnDefinitionCollection" /> and <see cref="T:System.Windows.Controls.RowDefinitionCollection" /> classes. This is an abstract class.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="P:System.Windows.Controls.Grid.IsSharedSizeScope" />
+    <altmember cref="T:System.Windows.Controls.ColumnDefinition" />
+    <altmember cref="T:System.Windows.Controls.RowDefinition" />
   </Docs>
   <Members>
     <Member MemberName="SharedSizeGroup">
@@ -61,6 +64,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Grid.IsSharedSizeScope" />
       </Docs>
     </Member>
     <Member MemberName="SharedSizeGroupProperty">
@@ -78,6 +82,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.DefinitionBase.SharedSizeGroup" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.DefinitionBase.SharedSizeGroup" />
       </Docs>
     </Member>
   </Members>

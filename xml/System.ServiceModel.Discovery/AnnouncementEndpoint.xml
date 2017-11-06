@@ -129,6 +129,10 @@
         <summary>Gets the discovery version this announcement endpoint supports.</summary>
         <value>A  <see cref="T:System.ServiceModel.Discovery.DiscoveryVersion" /> instance.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ServiceModel.Discovery.AnnouncementClient" />
+        <altmember cref="T:System.ServiceModel.Discovery.AnnouncementService" />
+        <altmember cref="T:System.ServiceModel.Discovery.DiscoveryProxy" />
+        <altmember cref="T:System.ServiceModel.Discovery.DiscoveryVersion" />
       </Docs>
     </Member>
     <Member MemberName="MaxAnnouncementDelay">
@@ -156,5 +160,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Discovery.AnnouncementEndpoint" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -14,6 +14,7 @@
     <summary>A hash table for the internal storage of items.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="M:System.Object.GetHashCode" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,6 +34,7 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.SimpleHashtable" /> class, using the specified threshold.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="M:System.Object.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -53,6 +55,7 @@
         <returns>An enumerator for the hash table.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="M:System.Object.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -76,6 +79,7 @@
         <value>The value of the item that has the specified <paramref name="key" />.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="M:System.Object.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -98,6 +102,7 @@
         <summary>Removes the item with the specified key from the hash table.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="M:System.Object.GetHashCode" />
       </Docs>
     </Member>
   </Members>

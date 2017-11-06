@@ -82,6 +82,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.ISite.DesignMode" />
       </Docs>
     </Member>
     <Member MemberName="FooterStyle">
@@ -126,6 +127,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DataGridColumn.HeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DataGridColumn.ItemStyle" />
       </Docs>
     </Member>
     <Member MemberName="FooterText">
@@ -167,6 +171,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.String.Empty" />
+        <altmember cref="P:System.Web.UI.WebControls.DataGridColumn.HeaderText" />
       </Docs>
     </Member>
     <Member MemberName="HeaderImageUrl">
@@ -211,6 +217,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.String.Empty" />
       </Docs>
     </Member>
     <Member MemberName="HeaderStyle">
@@ -255,6 +262,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DataGridColumn.FooterStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DataGridColumn.ItemStyle" />
       </Docs>
     </Member>
     <Member MemberName="HeaderText">
@@ -296,6 +306,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.String.Empty" />
+        <altmember cref="P:System.Web.UI.WebControls.DataGridColumn.FooterText" />
+        <altmember cref="P:System.Web.UI.WebControls.DataGridColumn.HeaderImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -326,6 +339,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataGridColumn.DesignMode" />
+        <altmember cref="P:System.ComponentModel.ISite.DesignMode" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
       </Docs>
     </Member>
     <Member MemberName="InitializeCell">
@@ -432,6 +448,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DataGridColumn.HeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DataGridColumn.FooterStyle" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -462,6 +481,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Object" />
       </Docs>
     </Member>
     <Member MemberName="OnColumnChanged">
@@ -487,6 +507,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.WebControls.DataGridDesigner.OnColumnsChanged" />
       </Docs>
     </Member>
     <Member MemberName="Owner">
@@ -512,6 +533,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -538,6 +560,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Object" />
       </Docs>
     </Member>
     <Member MemberName="SortExpression">
@@ -586,6 +609,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+        <altmember cref="M:System.Web.UI.WebControls.DataGrid.OnSortCommand(System.Web.UI.WebControls.DataGridSortCommandEventArgs)" />
+        <altmember cref="F:System.String.Empty" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.IsTrackingViewState">
@@ -724,6 +750,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.StateBag" />
       </Docs>
     </Member>
     <Member MemberName="ViewState">
@@ -749,6 +776,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.StateBag" />
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -788,6 +816,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
       </Docs>
     </Member>
   </Members>

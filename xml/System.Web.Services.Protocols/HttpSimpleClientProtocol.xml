@@ -45,6 +45,7 @@
  ]]></format>
     </remarks>
     <threadsafe>This type is thread safe.</threadsafe>
+    <altmember cref="T:System.Web.Services.Protocols.SoapHttpClientProtocol" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -118,6 +119,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">The request reached the server computer, but was not processed successfully.</exception>
+        <altmember cref="T:System.IAsyncResult" />
       </Docs>
     </Member>
     <Member MemberName="EndInvoke">
@@ -272,5 +274,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="InvokeAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invokes the specified method asynchronously.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

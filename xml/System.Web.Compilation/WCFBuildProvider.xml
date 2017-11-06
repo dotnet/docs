@@ -27,6 +27,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Compilation.BuildProvider" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -80,6 +81,8 @@
   
  For more information, see <see cref="T:System.Web.Compilation.BuildProvider" />.</para>
         </block>
+        <altmember cref="T:System.Web.Compilation.AssemblyBuilder" />
+        <altmember cref="T:System.Web.Compilation.BuildProvider" />
       </Docs>
     </Member>
   </Members>

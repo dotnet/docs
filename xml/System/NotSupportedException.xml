@@ -118,6 +118,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Exception" />
+    <altmember cref="T:System.IO.FileStream" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -284,7 +286,21 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Exception" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.NotSupportedException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

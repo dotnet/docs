@@ -50,6 +50,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.DependencyProperty" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -65,6 +66,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.DependencyObject" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.DependencyProperty" />
       </Docs>
     </Member>
     <Member MemberName="ClearValue">
@@ -102,6 +104,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Attempted to call <see cref="M:System.Windows.DependencyObject.ClearValue(System.Windows.DependencyProperty)" /> on a sealed <see cref="T:System.Windows.DependencyObject" />.</exception>
+        <altmember cref="M:System.Windows.DependencyObject.SetValue(System.Windows.DependencyProperty,System.Object)" />
+        <altmember cref="P:System.Windows.DependencyObject.IsSealed" />
+        <altmember cref="T:System.Windows.DependencyProperty" />
       </Docs>
     </Member>
     <Member MemberName="ClearValue">
@@ -133,6 +138,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Attempted to call <see cref="M:System.Windows.DependencyObject.ClearValue(System.Windows.DependencyProperty)" /> on a sealed <see cref="T:System.Windows.DependencyObject" />.</exception>
+        <altmember cref="M:System.Windows.DependencyObject.SetValue(System.Windows.DependencyProperty,System.Object)" />
+        <altmember cref="T:System.Windows.DependencyPropertyKey" />
       </Docs>
     </Member>
     <Member MemberName="CoerceValue">
@@ -174,6 +181,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The specified <paramref name="dp" /> or its value were invalid or do not exist.</exception>
+        <altmember cref="T:System.Windows.CoerceValueCallback" />
+        <altmember cref="M:System.Windows.DependencyObject.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="DependencyObjectType">
@@ -214,6 +223,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.DependencyProperty.GetMetadata(System.Type)" />
+        <altmember cref="T:System.Windows.DependencyObjectType" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -310,6 +321,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.LocalValueEntry" />
       </Docs>
     </Member>
     <Member MemberName="GetValue">
@@ -344,6 +356,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The specified <paramref name="dp" /> or its value was invalid, or the specified <paramref name="dp" /> does not exist.</exception>
+        <altmember cref="M:System.Windows.DependencyObject.InvalidateProperty(System.Windows.DependencyProperty)" />
+        <altmember cref="M:System.Windows.DependencyObject.SetValue(System.Windows.DependencyProperty,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="InvalidateProperty">
@@ -384,6 +398,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.DependencyProperty.UnsetValue" />
       </Docs>
     </Member>
     <Member MemberName="IsSealed">
@@ -410,6 +425,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.FrameworkElementFactory" />
       </Docs>
     </Member>
     <Member MemberName="OnPropertyChanged">
@@ -443,6 +459,7 @@
         <block subset="none" type="overrides">
           <para>Always call the base implementation. Failure to do this will significantly disable the entire [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] property system, causing incorrect values to be reported.</para>
         </block>
+        <altmember cref="T:System.Windows.FrameworkElement" />
       </Docs>
     </Member>
     <Member MemberName="ReadLocalValue">
@@ -478,6 +495,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.DependencyObject.GetLocalValueEnumerator" />
+        <altmember cref="M:System.Windows.DependencyObject.GetValue(System.Windows.DependencyProperty)" />
       </Docs>
     </Member>
     <Member MemberName="SetCurrentValue">
@@ -621,5 +640,23 @@
         </block>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetValue">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the local value of a dependency property.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ClearValue">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Clears the local value of a property.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

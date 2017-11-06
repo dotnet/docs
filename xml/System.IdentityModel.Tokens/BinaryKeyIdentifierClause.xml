@@ -113,6 +113,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IdentityModel.Tokens.BinaryKeyIdentifierClause.GetRawBuffer" />
       </Docs>
     </Member>
     <Member MemberName="GetRawBuffer">
@@ -141,6 +142,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IdentityModel.Tokens.BinaryKeyIdentifierClause.GetBuffer" />
       </Docs>
     </Member>
     <Member MemberName="Matches">
@@ -214,5 +216,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Matches">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether the key identifier for this instance matches the specified object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.BinaryKeyIdentifierClause" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

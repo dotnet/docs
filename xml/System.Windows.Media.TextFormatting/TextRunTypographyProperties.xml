@@ -92,6 +92,7 @@ Example of capitals
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.CapitalSpacing" />
       </Docs>
     </Member>
     <Member MemberName="CapitalSpacing">
@@ -121,6 +122,7 @@ Example of normal and capital spacing
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.Capitals" />
       </Docs>
     </Member>
     <Member MemberName="CaseSensitiveForms">
@@ -169,6 +171,7 @@ Example of random contextual alternates
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticAlternates" />
       </Docs>
     </Member>
     <Member MemberName="ContextualLigatures">
@@ -197,6 +200,9 @@ Example of random contextual alternates
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.DiscretionaryLigatures" />
+        <altmember cref="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.HistoricalLigatures" />
+        <altmember cref="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StandardLigatures" />
       </Docs>
     </Member>
     <Member MemberName="ContextualSwashes">
@@ -225,6 +231,7 @@ Example of a contextual swash
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StandardSwashes" />
       </Docs>
     </Member>
     <Member MemberName="DiscretionaryLigatures">
@@ -254,6 +261,9 @@ Example of discretionary set of ligatures
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.ContextualLigatures" />
+        <altmember cref="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.HistoricalLigatures" />
+        <altmember cref="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StandardLigatures" />
       </Docs>
     </Member>
     <Member MemberName="EastAsianExpertForms">
@@ -273,6 +283,8 @@ Example of discretionary set of ligatures
         <value>
           <see langword="true" /> if standard Japanese font forms have been replaced with the corresponding preferred typographic forms; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.EastAsianLanguage" />
+        <altmember cref="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.EastAsianWidths" />
       </Docs>
     </Member>
     <Member MemberName="EastAsianLanguage">
@@ -291,6 +303,8 @@ Example of discretionary set of ligatures
         <summary>Gets a value that indicates the version of glyphs to be used for a specific writing system or language.</summary>
         <value>One of the <see cref="T:System.Windows.FontEastAsianLanguage" /> values. The default is <see cref="F:System.Windows.FontEastAsianLanguage.Normal" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.EastAsianExpertForms" />
+        <altmember cref="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.EastAsianWidths" />
       </Docs>
     </Member>
     <Member MemberName="EastAsianWidths">
@@ -309,6 +323,8 @@ Example of discretionary set of ligatures
         <summary>Gets a value that indicates the proportional width to be used for Latin characters in an East Asian font.</summary>
         <value>One of the <see cref="T:System.Windows.FontEastAsianWidths" /> values. The default is <see cref="F:System.Windows.FontEastAsianWidths.Normal" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.EastAsianExpertForms" />
+        <altmember cref="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.EastAsianLanguage" />
       </Docs>
     </Member>
     <Member MemberName="Fraction">
@@ -368,6 +384,7 @@ Example of historical forms
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.HistoricalLigatures" />
       </Docs>
     </Member>
     <Member MemberName="HistoricalLigatures">
@@ -394,6 +411,10 @@ Example of historical forms
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.ContextualLigatures" />
+        <altmember cref="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.DiscretionaryLigatures" />
+        <altmember cref="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.HistoricalForms" />
+        <altmember cref="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StandardLigatures" />
       </Docs>
     </Member>
     <Member MemberName="Kerning">
@@ -476,6 +497,8 @@ Example of proportional and tabbed figures
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.NumeralStyle" />
+        <altmember cref="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.SlashedZero" />
       </Docs>
     </Member>
     <Member MemberName="NumeralStyle">
@@ -509,6 +532,8 @@ Example of standard and old-style numeral sets
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.NumeralAlignment" />
+        <altmember cref="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.SlashedZero" />
       </Docs>
     </Member>
     <Member MemberName="OnPropertiesChanged">
@@ -567,6 +592,8 @@ Example of slashed zero numerals
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.NumeralAlignment" />
+        <altmember cref="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.NumeralStyle" />
       </Docs>
     </Member>
     <Member MemberName="StandardLigatures">
@@ -608,6 +635,9 @@ Example of disabled standard ligatures
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.ContextualLigatures" />
+        <altmember cref="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.DiscretionaryLigatures" />
+        <altmember cref="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.HistoricalLigatures" />
       </Docs>
     </Member>
     <Member MemberName="StandardSwashes">
@@ -643,6 +673,7 @@ Example of swashes used for capital letters
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.ContextualSwashes" />
       </Docs>
     </Member>
     <Member MemberName="StylisticAlternates">
@@ -681,6 +712,7 @@ Example of other stylistic alternate glyphs
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.ContextualAlternates" />
       </Docs>
     </Member>
     <Member MemberName="StylisticSet1">

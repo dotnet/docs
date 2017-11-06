@@ -1829,5 +1829,32 @@
         <exception cref="T:System.Configuration.Provider.ProviderException">Role management is not enabled.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsUserInRole">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a value indicating whether a user is in the specified role.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetRolesForUser">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a list of the roles that a user is in.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DeleteRole">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes a role from the data source.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

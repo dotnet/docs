@@ -63,6 +63,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.WebZone" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -126,6 +127,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZone.ZoneTemplate" />
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -199,6 +201,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Registration of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> controls in the zone is already complete.</exception>
+        <altmember cref="T:System.Web.UI.ITemplate" />
       </Docs>
     </Member>
   </Members>

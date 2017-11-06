@@ -64,6 +64,8 @@
       <para>
         <see cref="T:System.Collections.Generic.IEnumerable`1" /> is included for parity with non-generic collections; implementing <see cref="T:System.Collections.Generic.IEnumerable`1" /> allows a generic collection to be passed to a method that expects an <see cref="T:System.Collections.IEnumerable" /> object.</para>
     </block>
+    <altmember cref="T:System.Collections.Generic.IEnumerator`1" />
+    <altmember cref="N:System.Collections" />
   </Docs>
   <Members>
     <Member MemberName="GetEnumerator">
@@ -123,6 +125,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Generic.IEnumerator`1" />
       </Docs>
     </Member>
   </Members>

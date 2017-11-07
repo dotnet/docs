@@ -39,7 +39,7 @@ Use the access modifiers, [public](../../../csharp/language-reference/keywords/p
 |`internal`|Access is limited to the current assembly.|  
 |`protected internal`|Access is limited to the current assembly or types derived from the containing class.|  
 |`private`|Access is limited to the containing type.|  
-|`private protected`|Access is limited to the containing class or types derived from th containing class within the current assembly.|  
+|`private protected`|Access is limited to the containing class or types derived from the containing class within the current assembly.|  
   
  Only one access modifier is allowed for a member or type, except when you use the `protected internal` or `private protected` combinations.  
   

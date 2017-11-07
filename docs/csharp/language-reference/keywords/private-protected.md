@@ -2,7 +2,7 @@
 The `private protected` keyword combination is a member access modifier. A private protected member is accessible by types derived from the containing class, but only within its containing assembly. For a comparison of `private protected` with the other access modifiers, see [Accessibility Levels](../../../csharp/language-reference/keywords/accessibility-levels.md). 
    
 ## Example  
- A private protected member of a base class is accessible from derived types in its containing assembly only if the access occurs through the derived class type. For example, consider the following code segment:  
+ A private protected member of a base class is accessible from derived types in its containing assembly only if the static type of the variable is the derived class type. For example, consider the following code segment:  
   
  ```
  // Assembly1.cs  
@@ -45,7 +45,7 @@ The `private protected` keyword combination is a member access modifier. A priva
  The first file contains a public base class, `BaseClass`, and a type derived from it, `DerivedClass1`. `BaseClass` owns a private protected member, `myValue`, which `DerivedClass1` tries to access in two ways. The first attempt to access `myValue` through an instance of `BaseClass` will produce an error. However, the attempt to use it as an inherited member in `DerivedClass1` will succeed.
  In the second file, an attempt to access `myValue` as an inherited member of `DerivedClass2` will produce an error, as it is only accessible by derived types in Assembly1. 
 
- Struct members cannot be private protected because the struct cannot be inherited.  
+ Struct members cannot be `private protected` because the struct cannot be inherited.  
   
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  

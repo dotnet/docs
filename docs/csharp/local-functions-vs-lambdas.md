@@ -81,7 +81,7 @@ assigned at the `return` statement.
 The analysis that enables that analysis enables the fourth difference.
 Depending on their use, local functions can avoid heap allocations that
 are always necessary for lambda expressions. If a local function is never
-converted to a delegate, and none of the variables captured by the local function are captured by other lambdas or local functions that are converted to delegates, the compiler can avoid heap allocations. 
+converted to a delegate, and none of the variables captured by the local function is captured by other lambdas or local functions that are converted to delegates, the compiler can avoid heap allocations. 
 
 Consider this async example:
 

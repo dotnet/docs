@@ -125,39 +125,39 @@ This tutorial explains how to create a localized application by using the LocBam
     > [!NOTE]
     >  If the input file, HelloApp.resources.dll, is not in the same directory as LocBaml.exe move one of the files so that both files are in the same directory.  
   
-3.  When you run LocBaml to parse files, the output consists of seven fields delimited by commas (.csv files) or tabs (.txt files). The following shows the parsed .csv file for the HelloApp.resources.dll:  
+3.  When you run LocBaml to parse files, the output consists of seven fields delimited by commas (.csv files) or tabs (.txt files). The following shows the parsed .csv file for the HelloApp.resources.dll:
+
+   | |
+   |-|
+   |HelloApp.g.en-US.resources:window1.baml,Stack1:System.Windows.Controls.StackPanel.$Content,Ignore,FALSE, FALSE,,#Text1;#Text2;|
+   |HelloApp.g.en-US.resources:window1.baml,Text1:System.Windows.Controls.TextBlock.$Content,None,TRUE, TRUE,,Hello World|
+   |HelloApp.g.en-US.resources:window1.baml,Text2:System.Windows.Controls.TextBlock.$Content,None,TRUE, TRUE,,Goodbye World|
+
+   The seven fields are:  
   
-   ||  
-   |-|  
-   |HelloApp.g.en-US.resources:window1.baml,Stack1:System.Windows.Controls.StackPanel.$Content,Ignore,FALSE, FALSE,,#Text1;#Text2;|  
-   |HelloApp.g.en-US.resources:window1.baml,Text1:System.Windows.Controls.TextBlock.$Content,None,TRUE, TRUE,,Hello World|  
-   |HelloApp.g.en-US.resources:window1.baml,Text2:System.Windows.Controls.TextBlock.$Content,None,TRUE, TRUE,,Goodbye World|  
+   1.  **BAML Name**. The name of the BAML resource with respect to the source language satellite assembly.  
   
-     The seven fields are:  
+   2.  **Resource Key**. The localized resource identifier.  
   
-    1.  **BAML Name**. The name of the BAML resource with respect to the source language satellite assembly.  
+   3.  **Category**. The value type. See [Localization Attributes and Comments](../../../../docs/framework/wpf/advanced/localization-attributes-and-comments.md).  
   
-    2.  **Resource Key**. The localized resource identifier.  
+   4.  **Readability**. Whether the value can be read by a localizer. See [Localization Attributes and Comments](../../../../docs/framework/wpf/advanced/localization-attributes-and-comments.md).  
   
-    3.  **Category**. The value type. See [Localization Attributes and Comments](../../../../docs/framework/wpf/advanced/localization-attributes-and-comments.md).  
+   5.  **Modifiability**. Whether the value can be modified by a localizer. See [Localization Attributes and Comments](../../../../docs/framework/wpf/advanced/localization-attributes-and-comments.md).  
   
-    4.  **Readability**. Whether the value can be read by a localizer. See [Localization Attributes and Comments](../../../../docs/framework/wpf/advanced/localization-attributes-and-comments.md).  
+   6.  **Comments**. Additional description of the value to help determine how a value is localized. See [Localization Attributes and Comments](../../../../docs/framework/wpf/advanced/localization-attributes-and-comments.md).  
   
-    5.  **Modifiability**. Whether the value can be modified by a localizer. See [Localization Attributes and Comments](../../../../docs/framework/wpf/advanced/localization-attributes-and-comments.md).  
+   7.  **Value**. The text value to translate to the desired culture.  
   
-    6.  **Comments**. Additional description of the value to help determine how a value is localized. See [Localization Attributes and Comments](../../../../docs/framework/wpf/advanced/localization-attributes-and-comments.md).  
+   The following table shows how these fields map to the delimited values of the .csv file:  
   
-    7.  **Value**. The text value to translate to the desired culture.  
+   |BAML name|Resource key|Category|Readability|Modifiability|Comments|Value|  
+   |---------------|------------------|--------------|-----------------|-------------------|--------------|-----------|
+   |HelloApp.g.en-US.resources:window1.baml|Stack1:System.Windows.Controls.StackPanel.$Content|Ignore|FALSE|FALSE||#Text1;#Text2|
+   |HelloApp.g.en-US.resources:window1.baml|Text1:System.Windows.Controls.TextBlock.$Content|None|TRUE|TRUE||Hello World|
+   |HelloApp.g.en-US.resources:window1.baml|Text2:System.Windows.Controls.TextBlock.$Content|None|TRUE|TRUE||Goodbye World|
   
-     The following table shows how these fields map to the delimited values of the .csv file:  
-  
-    |BAML name|Resource key|Category|Readability|Modifiability|Comments|Value|  
-    |---------------|------------------|--------------|-----------------|-------------------|--------------|-----------|  
-    |HelloApp.g.en-US.resources:window1.baml|Stack1:System.Windows.Controls.StackPanel.$Content|Ignore|FALSE|FALSE||#Text1;#Text2|  
-    |HelloApp.g.en-US.resources:window1.baml|Text1:System.Windows.Controls.TextBlock.$Content|None|TRUE|TRUE||Hello World|  
-    |HelloApp.g.en-US.resources:window1.baml|Text2:System.Windows.Controls.TextBlock.$Content|None|TRUE|TRUE||Goodbye World|  
-  
-     Notice that all the values for the **Comments** field contain no values; if a field doesn't have a value, it is empty. Also notice that the item in the first row is neither readable nor modifiable, and has "Ignore" as its **Category** value, all of which indicates that the value is not localizable.  
+   Notice that all the values for the **Comments** field contain no values; if a field doesn't have a value, it is empty. Also notice that the item in the first row is neither readable nor modifiable, and has "Ignore" as its **Category** value, all of which indicates that the value is not localizable.  
   
 4.  To facilitate discovery of localizable items in parsed files, particularly in large files, you can sort or filter the items by **Category**, **Readability**, and **Modifiability**. For example, you can filter out unreadable and unmodifiable values.  
   

@@ -76,7 +76,7 @@ The following values returned by this function are defined in the **WbemCli.h** 
 |Constant  |Value  |Description  |
 |---------|---------|---------|
 |`WBEM_E_FAILED` | 0x80041001 | There has been a general failure. |
-|`WBEM_E_INVALID_PARAMETER` | 0x80041008 | One or more parameters is not valid. |
+|`WBEM_E_INVALID_PARAMETER` | 0x80041008 | One or more parameters are not valid. |
 |`WBEM_E_NOT_FOUND` | 0x80041002 | The specified property was not found. |
 |`WBEM_E_OUT_OF_MEMORY` | 0x80041006 | Not enough memory is available to complete the operation. |
 |`WBEM_S_NO_ERROR` | 0 | The function call was successful.  |

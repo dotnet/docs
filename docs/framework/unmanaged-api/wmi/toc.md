@@ -20,5 +20,7 @@
 ## [Next](next.md)
 ## [NextMethod](nextmethod.md)
 ## [Put](put.md)
-
+## [PutMethod](putmethod.md)
+## [SpawnDerivedClass](spawnderivedclass.md)
+## [SpawnInstance](spawninstance.md)
 

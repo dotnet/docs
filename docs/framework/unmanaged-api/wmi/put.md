@@ -67,15 +67,15 @@ The following values returned by this function are defined in the **WbemCli.h** 
 |Constant  |Value  |Description  |
 |---------|---------|---------|
 |`WBEM_E_FAILED` | 0x80041001 | There has been a general failure. |
-|`WBEM_E_INVALID_PARAMETER` | 0x80041008 | One or more parameters is not valid. |
+|`WBEM_E_INVALID_PARAMETER` | 0x80041008 | One or more parameters are not valid. |
 |`WBEM_E_INVALID_PROPERTY_TYPE` | 0x8004102a | The property type is not recognized. This value is returned when creating class instances if the class already exists. |
 |`WBEM_E_OUT_OF_MEMORY` | 0x80041006 | Not enough memory is available to complete the operation. |
-| `WBEM_E_TYPE_MISMATCH` | 0x80041005 | For instances: Indicates that `pVal` points to a `VARIANT` of an incorrect type for the property. <br/> For class definitions: The property already exists in the parent class, and the new COM type is different from the old COM type. )
+| `WBEM_E_TYPE_MISMATCH` | 0x80041005 | For instances: Indicates that `pVal` points to a `VARIANT` of an incorrect type for the property. <br/> For class definitions: The property already exists in the parent class, and the new COM type is different from the old COM type. |
 |`WBEM_S_NO_ERROR` | 0 | The function call was successful. |
   
 ## Remarks
 
-This function wraps a call to the [IWbemClassObject::Put](https://msdn.microsoft.com/library/aa391455(v=vs.85).aspx
+This function wraps a call to the [IWbemClassObject::Put](https://msdn.microsoft.com/library/aa391455(v=vs.85).aspx) method.
 
 This function always overwrites the current property value with a new one. If the [IWbemClassObject](https://msdn.microsoft.com/library/aa391433%28v=vs.85%29.aspx) points to a class definition, `Put` creates or updates the property value. When [IWbemClassObject](https://msdn.microsoft.com/library/aa391433%28v=vs.85%29.aspx) points to a CIM instance, `Put` updates the property value only; `Put` cannot create a property value.
 

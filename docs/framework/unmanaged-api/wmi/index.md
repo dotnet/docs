@@ -41,6 +41,9 @@ The API includes the following functions:
 | [Next function](next.md) | Retrieves the next property in an enumeration. | 
 | [NextMethod function](nextmethod.md) | Retrieves the next method in an enumeration. |
 | [Put function](put.md) | Sets a named property to a new value. |
+| [PutMethod function](putmethod.md) | Creates a method. |
+| [SpawnDerivedClass function](spawnderivedclass.md) | Creates a newly derived class object from a specified object. | 
+| [SpawnInstance function](spawninstance.md) | Creates a new instance of a class. |   
 
 
  ## See also

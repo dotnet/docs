@@ -1,10 +1,7 @@
 ---
 title: "How to: Localize an Application"
-ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
@@ -17,7 +14,6 @@ helpviewer_keywords:
   - "LocBaml tool [WPF]"
   - "applications [WPF], localizing"
 ms.assetid: 5001227e-9326-48a4-9dcd-ba1b89ee6653
-caps.latest.revision: 37
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
@@ -27,8 +23,6 @@ This tutorial explains how to create a localized application by using the LocBam
   
 > [!NOTE]
 >  The LocBaml tool is not a production-ready application. It is presented as a sample that uses some of the localization APIs and illustrates how you might write a localization tool.  
->   
-  
   
 <a name="Introduction"></a>   
 ## Overview  
@@ -133,11 +127,11 @@ This tutorial explains how to create a localized application by using the LocBam
   
 3.  When you run LocBaml to parse files, the output consists of seven fields delimited by commas (.csv files) or tabs (.txt files). The following shows the parsed .csv file for the HelloApp.resources.dll:  
   
-    ||  
-    |-|  
-    |HelloApp.g.en-US.resources:window1.baml,Stack1:System.Windows.Controls.StackPanel.$Content,Ignore,FALSE, FALSE,,#Text1;#Text2;|  
-    |HelloApp.g.en-US.resources:window1.baml,Text1:System.Windows.Controls.TextBlock.$Content,None,TRUE, TRUE,,Hello World|  
-    |HelloApp.g.en-US.resources:window1.baml,Text2:System.Windows.Controls.TextBlock.$Content,None,TRUE, TRUE,,Goodbye World|  
+   ||  
+   |-|  
+   |HelloApp.g.en-US.resources:window1.baml,Stack1:System.Windows.Controls.StackPanel.$Content,Ignore,FALSE, FALSE,,#Text1;#Text2;|  
+   |HelloApp.g.en-US.resources:window1.baml,Text1:System.Windows.Controls.TextBlock.$Content,None,TRUE, TRUE,,Hello World|  
+   |HelloApp.g.en-US.resources:window1.baml,Text2:System.Windows.Controls.TextBlock.$Content,None,TRUE, TRUE,,Goodbye World|  
   
      The seven fields are:  
   
@@ -200,10 +194,9 @@ This tutorial explains how to create a localized application by using the LocBam
   
     -   In your application, add the following code to App.xaml.cs:  
   
-   [!code-xaml[LocBamlChangeCultureSnippets#LocBamlChangeCultureMARKUP](../../../../samples/snippets/csharp/VS_Snippets_Wpf/LocBamlChangeCultureSnippets/CSharp/App.xaml#locbamlchangeculturemarkup)]  
-  
-         [!code-csharp[LocBamlChangeCultureSnippets#LocBamlChangeCultureCODEBEHIND](../../../../samples/snippets/csharp/VS_Snippets_Wpf/LocBamlChangeCultureSnippets/CSharp/App.xaml.cs#locbamlchangeculturecodebehind)]
-         [!code-vb[LocBamlChangeCultureSnippets#LocBamlChangeCultureCODEBEHIND](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/LocBamlChangeCultureSnippets/VisualBasic/Application.xaml.vb#locbamlchangeculturecodebehind)]  
+   [!code-xaml[LocBamlChangeCultureSnippets#LocBamlChangeCultureMARKUP](../../../../samples/snippets/csharp/VS_Snippets_Wpf/LocBamlChangeCultureSnippets/CSharp/App.xaml#locbamlchangeculturemarkup)]
+   [!code-csharp[LocBamlChangeCultureSnippets#LocBamlChangeCultureCODEBEHIND](../../../../samples/snippets/csharp/VS_Snippets_Wpf/LocBamlChangeCultureSnippets/CSharp/App.xaml.cs#locbamlchangeculturecodebehind)]
+   [!code-vb[LocBamlChangeCultureSnippets#LocBamlChangeCultureCODEBEHIND](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/LocBamlChangeCultureSnippets/VisualBasic/Application.xaml.vb#locbamlchangeculturecodebehind)]  
   
 <a name="Some_Tips_for_Using_LocBaml"></a>   
 ## Some Tips for Using LocBaml  

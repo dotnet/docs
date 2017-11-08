@@ -250,7 +250,7 @@ The `var` case matches `null`, the empty string, or any string that contains
 only whitespace. Notice that the preceding code uses the `?.` operator to
 ensure that it does not accidentally throw a <xref:System.NullReferenceException>. The `default` case handles any other string values that are not understood by this command parser.
 
-This is one example shows one example where you may want to consider
+This is one example where you may want to consider
 a `var` case expression that is distinct from a `default` expression.
 
 ## Conclusions

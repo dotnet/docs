@@ -41,22 +41,22 @@ HRESULT GetNames (
 
 ## Parameters
 
-`vFunc`
+`vFunc`  
 [in] This parameter is unused.
 
-`ptr`
+`ptr`  
 [in] A pointer to an [IWbemClassObject](https://msdn.microsoft.com/library/aa391433%28v=vs.85%29.aspx) instance.
 
-`wszQualifierName`
+`wszQualifierName`  
 [in] A pointer to a valid `LPCWSTR` that specifies a qualifier name that operates as part of a filter. For more information, see the [Remarks](#remarks) section. This parameter can be `null`. 
 
-`lFlags`
+`lFlags`  
 [in] A combination of bit fields. For more information, see the [Remarks](#remarks) section.
 
-`pQualifierValue` 
+`pQualifierValue`   
 [in] A pointer to a valid `VARIANT` structure initialized to a filter value. This parameter can be `null`. 
 
-`pstrNames`
+`pstrNames`  
 [out] A `SAFEARRAY` structure that contains property names. On entry, this parameter must always be a pointer to `null`. See the [Remarks](#remarks) section for more information. 
 
 ## Return value

@@ -38,16 +38,16 @@ HRESULT SpawnInstance (
 
 ## Parameters
 
-`vFunc`
+`vFunc`  
 [in] This parameter is unused.
 
-`ptr`
+`ptr`  
 [in] A pointer to an [IWbemClassObject](https://msdn.microsoft.com/library/aa391433%28v=vs.85%29.aspx) instance.
 
-`lFlags`
+`lFlags`  
 [in] Reserved. This parameter must be 0.
 
-`ppNewInstance`
+`ppNewInstance`  
 [out] Receives the pointer to the new instance of the class. If an error occurs, a new object is not returned, and `ppNewInstance` is left unmodified.
 
 ## Return value
@@ -57,7 +57,7 @@ The following values returned by this function are defined in the **WbemCli.h** 
 |Constant  |Value  |Description  |
 |---------|---------|---------|
 | `WBEM_E_INCOMPLETE_CLASS` | 0x80041020 | `ptr` is not a valid class definition and cannot spawn new instances. Either it is incomplete or it has not been registered with Windows Management by calling [PutClassWmi](putclasswmi.md). |
-| `WBEM_E_OUT_OF_MEMORY` | 0x80041006 | Not enough memory is available to clone the object. |
+| `WBEM_E_OUT_OF_MEMORY` | 0x80041006 | Not enough memory is available to complete the operation. |
 | `WBEM_E_INVALID_PARAMETER` | 0x80041008 | `ppNewClass` is `null`. |
 | `WBEM_S_NO_ERROR` | 0 | The function call was successful.  |
   

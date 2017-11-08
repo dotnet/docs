@@ -41,22 +41,22 @@ HRESULT NextMethod (
 
 ## Parameters
 
-`vFunc`
+`vFunc`  
 [in] This parameter is unused.
 
-`ptr`
+`ptr`  
 [in] A pointer to an [IWbemClassObject](https://msdn.microsoft.com/library/aa391433%28v=vs.85%29.aspx) instance.
 
-`lFlags`
+`lFlags`  
 [in] Reserved. This parameter must be 0.
 
-`pName`
+`pName`  
 [out] A pointer that points to `null` prior to the call. When the function returns, the address of a new `BSTR` that contains the method name. 
 
-`ppSignatureIn`
+`ppSignatureIn`  
 [out] A pointer that receives a pointer to an [IWbemClassObject](https://msdn.microsoft.com/library/aa391433%28v=vs.85%29.aspx) that contains the `in` parameters for the method. 
 
-`ppSignatureOut`
+`ppSignatureOut`  
 [out] A pointer that receives a pointer to an [IWbemClassObject](https://msdn.microsoft.com/library/aa391433%28v=vs.85%29.aspx) that contains the `out` parameters for the method. 
 
 ## Return value

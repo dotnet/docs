@@ -41,22 +41,22 @@ HRESULT PutMethod (
 
 ## Parameters
 
-`vFunc`
+`vFunc`  
 [in] This parameter is unused.
 
-`ptr`
+`ptr`  
 [in] A pointer to an [IWbemClassObject](https://msdn.microsoft.com/library/aa391433%28v=vs.85%29.aspx) instance.
 
-`wszName`
+`wszName`  
 [in] The name of the method to create. 
 
-`lFlags`
+`lFlags`  
 [in] Reserved. This parameter must be 0.
 
-`pSignatureIn` 
+`pSignatureIn`  
 [in] A pointer to a copy of the [__Parameters system class](https://msdn.microsoft.com/library/aa394667(v=vs.85).aspx) that contains the `in` parameters for the method. This parameter is ignored if set to `null`.  
 
-`pSignatureOut`
+`pSignatureOut`  
 [in]  A pointer to a copy of the [__Parameters system class](https://msdn.microsoft.com/library/aa394667(v=vs.85).aspx) that contains the `out` parameters for the method. This parameter is ignored if set to `null`.
  
 

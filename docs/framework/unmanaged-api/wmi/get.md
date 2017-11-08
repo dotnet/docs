@@ -42,13 +42,13 @@ HRESULT Get (
 
 ## Parameters
 
-`vFunc`
+`vFunc`  
 [in] This parameter is unused.
 
-`ptr`
+`ptr`  
 [in] A pointer to an [IWbemClassObject](https://msdn.microsoft.com/library/aa391433%28v=vs.85%29.aspx) instance.
 
-`wszName`
+`wszName`  
 [in] The name of the property.
 
 `lFlags`

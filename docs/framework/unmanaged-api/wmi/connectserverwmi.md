@@ -42,7 +42,6 @@ HRESULT ConnectServerWmi (
    [in] DWORD              authLevel
 );
 ```  
-
 ## Parameters
 
 `strNetworkResource`
@@ -74,17 +73,17 @@ HRESULT ConnectServerWmi (
 | Kerberos:*principal name* | Kerberos authentication is used, and this parameter contains a Kerberos principal name. |
 | NTLMDOMAIN:*domain name* | NT LAN Manager authentication is used, and this parameter contains an NTLM domain name. |
 
-`pCtx`
+`pCtx`   
 [in] Typically, this parameter is is `null`. Otherwise, it is a pointer to an [IWbemContext](https://msdn.microsoft.com/library/aa391465%28v=vs.85%29.aspx) object required by one or more dynamic class providers. 
 
-`ppNamespace` 
-[out] When the function returns, receives a pointer to an [IWbemServices](https://msdn.microsoft.com/library/aa392093(v=vs.85).aspx) object bound to the specified namespace. This pointer has a positive reference count. It is set to point to `null` when there is an error.
+`ppNamespace`  
+[out] When the function returns, receives a pointer to an [IWbemServices](https://msdn.microsoft.com/library/aa392093(v=vs.85).aspx) object bound to the specified namespace. It is set to point to `null` when there is an error.
 
-`impLevel`
-[in] 
+`impLevel`  
+[in] The impersonation level.
 
-`authLevel`
-[in] 
+`authLevel`  
+[in] The authorization level.
 
 ## Return value
 
@@ -93,8 +92,8 @@ The following values returned by this function are defined in the **WbemCli.h** 
 |Constant  |Value  |Description  |
 |---------|---------|---------|
 | `WBEM_E_FAILED` | 0x80041001 | There has been a general failure. |
-| `WBEM_E_INVALID_PARAMETER` | 0x80041008 | `lEnnumFlags` is non-zero and is not one of the specified flags. |
-| `WBEM_E_OUT_OF_MEMORY` | 0x80041006 | Not enough memory is available to clone the object. |
+| `WBEM_E_INVALID_PARAMETER` | 0x80041008 | A parameter is not valid. |
+| `WBEM_E_OUT_OF_MEMORY` | 0x80041006 | Not enough memory is available to complete the operation. |
 | `WBEM_S_NO_ERROR` | 0 | The function call was successful.  |
   
 ## Remarks
@@ -103,7 +102,7 @@ This function wraps a call to the [IWbemLocator::ConnectServer](https://msdn.mic
 
  For local access to the default namespace, `strNetworkResource` can be a simple object path: "root\default" or "\\.\root\default". For access to the default namespace on a remote computer using COM or Microsoft-compatible networking, include the computer name: "\\myserver\root\default". The computer name also can be a DNS name or IP address. The `ConnectServerWmi` function can also connect with computers running IPv6 using an IPv6 address.
 
-`strUser` cannot be an empty string. If the domain is specified in `strAuthority`, it must not also be included in `strUsear`, or the function returns `WBEM_E_INVALID_PARAMETER`.
+`strUser` cannot be an empty string. If the domain is specified in `strAuthority`, it must not also be included in `strUser`, or the function returns `WBEM_E_INVALID_PARAMETER`.
 
 
 ## Requirements  

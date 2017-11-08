@@ -23,6 +23,9 @@ The API includes the following functions:
 | [BeginMethodEnumeration function](beginmethodenumeration.md) |  Begins an enumeration of the methods available for an object. |
 | [Clone function](clone.md) | Returns a new object that is a complete clone of the current object. |
 | [CompareTo function](compareto.md) | Compares an object to another Windows management object. |
+| [ConnectServerWmi function](connectserverwmi.md) | Creates a connection through DCOM to a WMI namespace on a specified computer. |
+| [CreateClassEnumWmi function](createclassenumwmi.md) | Returns an enumerator for all classes that satisfy the specified selection criteria. |
+| [CreateInstanceEnumWmi function](createinstanceenumwmi.md) | Returns an enumerator that returns the intances of a specified class that meet specified selection criteria. |
 | [Delete function](delete.md) | Deletes a specified property from a class definition and all of its qualifiers. |
 | [DeleteMethod function](deletemethod.md) | Deletes a specified method from a CIM class definition. |
 | [EndEnumeration function](endenumeration.md) | Terminates an enumeration sequence. | 

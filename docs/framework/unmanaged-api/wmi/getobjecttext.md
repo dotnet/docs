@@ -39,16 +39,16 @@ HRESULT GetObjectText (
 
 ## Parameters
 
-`vFunc`
+`vFunc`  
 [in] This parameter is unused.
 
-`ptr`
+`ptr`  
 [in] A pointer to an [IWbemClassObject](https://msdn.microsoft.com/library/aa391433%28v=vs.85%29.aspx) instance.
 
-`lFlags`
+`lFlags`  
 [in] Normally 0. If `WBEM_FLAG_NO_FLAVORS` (or 0x1) is specified, qualifiers are included without propagation or flavor information.
 
-`pstrObjectText` 
+`pstrObjectText`   
 [out] A pointer to a `null` on entry. On return, a newly allocated `BSTR` that contains a MOF syntax rendering of the object.  
 
 ## Return value

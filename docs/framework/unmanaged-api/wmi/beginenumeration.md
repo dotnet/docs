@@ -38,13 +38,13 @@ HRESULT BeginEnumeration (
 
 ## Parameters
 
-`vFunc`
+`vFunc`  
 [in] This parameter is unused.
 
 `ptr`
 [in] A pointer to an [IWbemClassObject](https://msdn.microsoft.com/library/aa391433%28v=vs.85%29.aspx) instance.
 
-`lEnumFlags`
+`lEnumFlags`  
 [in] A bitwise combination of the flags or values described in the [Remarks](#remarks) section that controls the properties included in the enumeration.
 
 ## Return value

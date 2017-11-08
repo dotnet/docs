@@ -38,13 +38,13 @@ HRESULT BeginMethodEnumeration (
 
 ## Parameters
 
-`vFunc`
+`vFunc`  
 [in] This parameter is unused.
 
-`ptr`
+`ptr`  
 [in] A pointer to an [IWbemClassObject](https://msdn.microsoft.com/library/aa391433%28v=vs.85%29.aspx) instance.
 
-`lEnumFlags`
+`lEnumFlags`  
 [in] Zero (0) for all methods, or a flag that specifies the scope of the enumeration. The following flags are defined in the **WbemCli.h** header file, or you can define them as constants in your code:
 
 Constant  |Value  |Description  |

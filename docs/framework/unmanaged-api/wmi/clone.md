@@ -37,13 +37,13 @@ HRESULT Clone (
 
 ## Parameters
 
-`vFunc`
+`vFunc`  
 [in] This parameter is unused.
 
-`ptr`
+`ptr`  
 [in] A pointer to an [IWbemClassObject](https://msdn.microsoft.com/library/aa391433%28v=vs.85%29.aspx) instance.
 
-`ppCopy`
+`ppCopy`  
 [out] A new object that is a complete lone of `ptr`. This argument cannot be `null` if it receives the copy of the current object.
 
 ## Return value

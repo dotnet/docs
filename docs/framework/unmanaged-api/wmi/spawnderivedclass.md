@@ -38,16 +38,16 @@ HRESULT SpawnDerivedClass (
 
 ## Parameters
 
-`vFunc`
+`vFunc`  
 [in] This parameter is unused.
 
-`ptr`
+`ptr`  
 [in] A pointer to an [IWbemClassObject](https://msdn.microsoft.com/library/aa391433%28v=vs.85%29.aspx) instance.
 
-`lFlags`
+`lFlags`  
 [in] Reserved. This parameter must be 0.
 
-`ppNewClass`
+`ppNewClass`  
 [out] Receives the pointer to the new class definition object. If an error occurs, a new object is not returned, and `ppNewClass` is left unmodified. Its value cannot be `null`.
 
 ## Return value
@@ -59,7 +59,7 @@ The following values returned by this function are defined in the **WbemCli.h** 
 | `WBEM_E_FAILED` | 0x80041001 | There has been a general failure. |
 | `WBEM_E_INVALID_OPERATION` | 0x80041016 | An invalid operation, such as spawning a class from an instance, was requested. |
 | `WBEM_E_INCOMPLETE_CLASS` | The source class was not completely defined or registered with Windows Management, so a new derived class is not permitted. |
-| `WBEM_E_OUT_OF_MEMORY` | 0x80041006 | Not enough memory is available to clone the object. |
+| `WBEM_E_OUT_OF_MEMORY` | 0x80041006 | Not enough memory is available to complete the operation. |
 | `WBEM_E_INVALID_PARAMETER` | 0x80041008 | `ppNewClass` is `null`. |
 | `WBEM_S_NO_ERROR` | 0 | The function call was successful.  |
   

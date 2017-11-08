@@ -41,22 +41,22 @@ HRESULT GetMethod (
 
 ## Parameters
 
-`vFunc`
+`vFunc`  
 [in] This parameter is unused.
 
-`ptr`
+`ptr`  
 [in] A pointer to an [IWbemClassObject](https://msdn.microsoft.com/library/aa391433%28v=vs.85%29.aspx) instance.
 
-`wszName`
+`wszName`  
 [in] The method name. This parameter cannot be `null` and must point to a valid `LPCWSTR`.
 
-`lFlags`
+`lFlags`  
 [in] Reserved. This parameter must be 0.
 
-`ppInSignature` 
+`ppInSignature`   
 [out] A pointer to the address of an [IWbemClassObject](https://msdn.microsoft.com/library/aa391433%28v=vs.85%29.aspx) instance that describes the in paramteers to the method. This parameter is ignored if it is set to `null`. 
 
-`ppOutSignature`
+`ppOutSignature`  
 [out] A pointer to the address of an [IWbemClassObject](https://msdn.microsoft.com/library/aa391433%28v=vs.85%29.aspx) instance that describes the out parameters to the method. This parameter is ignored if it is set to `null`. 
 
 ## Return value

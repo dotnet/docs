@@ -41,22 +41,22 @@ HRESULT Put (
 
 ## Parameters
 
-`vFunc`
+`vFunc`  
 [in] This parameter is unused.
 
-`ptr`
+`ptr`  
 [in] A pointer to an [IWbemClassObject](https://msdn.microsoft.com/library/aa391433%28v=vs.85%29.aspx) instance.
 
-`wszName`
+`wszName`  
 [in] The name of the property. This parameter cannot be `null`.
 
-`lFlags`
+`lFlags`  
 [in] Reserved. This parameter must be 0.
 
-`pVal` 
+`pVal`   
 [in] A pointer to a valid `VARIANT` that becomes the new property value. If `pVal` is `null` or points to a `VARIANT` of type `VT_NULL`, the property is set to `null`. 
 
-`vtType`
+`vtType`  
 [in] The type of `VARIANT` pointed to by `pVal`. See the [Remarks](#remarks) section for more information.
  
 

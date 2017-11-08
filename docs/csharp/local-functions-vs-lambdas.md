@@ -37,7 +37,7 @@ result in clearer code.
 Local functions have different rules for definite assignment
 than lambda expressions. A local function declaration can be referenced
 from any code location where it is in scope. A lambda expression must be
-assigned before it can be accessed (or called through a delgate
+assigned to a delegate variable before it can be accessed (or called through the delgate
 referencing the lambda expression.) Notice that the version using the
 lambda expression must declare and initialize the lambda expression,
 `nthFactorial` before defining it. Not doing so results in a compile
@@ -81,8 +81,7 @@ assigned at the `return` statement.
 The analysis that enables that analysis enables the fourth difference.
 Depending on their use, local functions can avoid heap allocations that
 are always necessary for lambda expressions. If a local function is never
-converted to a delegate and none of the variables captured by a locatl function
-are converted to delegates, the compiler can avoid heap allocations. 
+converted to a delegate, and none of the variables captured by the local function is captured by other lambdas or local functions that are converted to delegates, the compiler can avoid heap allocations. 
 
 Consider this async example:
 
@@ -91,12 +90,12 @@ Consider this async example:
 The closure for this lambda expression contains the `address`,
 `index` and `name` variables. In the case of local functions, the object
 that implements the closure may be a `struct` type. That struct type would
-be passed by reference to the local functionn. This difference in
+be passed by reference to the local function. This difference in
 implementation would save on
 an allocation.
 
 The instantiation necessary for lambda expressions means extra memory
-allocations, which may be a performance factor in time critical code paths.
+allocations, which may be a performance factor in time-critical code paths.
 Local functions do not incur this overhead. In the example above, the local
 functions version has 2 fewer allocations than the lambda expression version.
 

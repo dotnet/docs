@@ -17,19 +17,21 @@ ms.author: "wiwagn"
 All types and type members have an accessibility level, which controls whether they can be used from other code in your assembly or other assemblies. You can use the following access modifiers to specify the accessibility of a type or member when you declare it:  
   
  [public](../../../csharp/language-reference/keywords/public.md)  
- The type or member can be accessed by any other code in the same assembly or another assembly that references it.  
+ The type or member can be accessed by any other code in the same assembly or another assembly that references it. 
   
  [private](../../../csharp/language-reference/keywords/private.md)  
  The type or member can be accessed only by code in the same class or struct.  
   
  [protected](../../../csharp/language-reference/keywords/protected.md)  
- The type or member can be accessed only by code in the same class or struct, or in a class that is derived from that class.  
-  
+ The type or member can be accessed only by code in the same class, or in a class that is derived from that class.  
  [internal](../../../csharp/language-reference/keywords/internal.md)  
  The type or member can be accessed by any code in the same assembly, but not from another assembly.  
   
- `protected internal`  
- The type or member can be accessed by any code in the assembly in which it is declared, or from within a derived class in another assembly. Access from another assembly must take place within a class declaration that derives from the class in which the protected internal element is declared, and it must take place through an instance of the derived class type.  
+ [protected internal](../../../csharp/language-reference/keywords/protected-internal.md)
+ The type or member can be accessed by any code in the assembly in which it is declared, or from within a derived class in another assembly. 
+
+ [private protected](../../../csharp/language-reference/keywords/private-protected.md)
+ The type or member can be accessed only within its declaring assembly, by code in the same class or in a type that is derived from that class.
   
  The following examples demonstrate how to specify access modifiers on a type and member:  
   
@@ -82,6 +84,8 @@ All types and type members have an accessibility level, which controls whether t
  [public](../../../csharp/language-reference/keywords/public.md)   
  [internal](../../../csharp/language-reference/keywords/internal.md)   
  [protected](../../../csharp/language-reference/keywords/protected.md)   
+ [protected internal](../../../csharp/language-reference/keywords/protected-internal.md)   
+ [private protected](../../../csharp/language-reference/keywords/private-protected.md)   
  [class](../../../csharp/language-reference/keywords/class.md)   
  [struct](../../../csharp/language-reference/keywords/struct.md)   
  [interface](../../../csharp/language-reference/keywords/interface.md)

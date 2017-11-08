@@ -54,7 +54,7 @@
    
   
 ## Examples  
- The following example demonstrates how to throw and catch an <xref:System.ArgumentException>. It uses the [ArgumentException.GetType().Name](../Topic/Name%20Property.md) property to display the name of the exception object, and also uses the <xref:System.ArgumentException.Message%2A> property to display the text of the exception message.  
+ The following example demonstrates how to throw and catch an <xref:System.ArgumentException>. It uses the [ArgumentException.GetType().Name](xref:System.Type.Name%2A) property to display the name of the exception object, and also uses the <xref:System.ArgumentException.Message%2A> property to display the text of the exception message.  
   
  [!code-cpp[ArgumentException#3](~/samples/snippets/cpp/VS_Snippets_CLR/ArgumentException/cpp/argumentexception2.cpp#3)]
  [!code-csharp[ArgumentException#3](~/samples/snippets/csharp/VS_Snippets_CLR/ArgumentException/CS/argumentexception2.cs#3)]

@@ -531,7 +531,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Reflection.Assembly.DefinedTypes%2A> property is comparable to the <xref:System.Reflection.Assembly.GetTypes%2A?displayProperty=nameWithType> method, except that the <xref:System.Reflection.Assembly.DefinedTypes%2A> property returns a [collection](../Topic/IEnumerable\(T\)%20Interface.md) of <xref:System.Reflection.TypeInfo> objects, and the <xref:System.Reflection.Assembly.GetTypes%2A?displayProperty=nameWithType> method returns an array of <xref:System.Type> objects.  
+ The <xref:System.Reflection.Assembly.DefinedTypes%2A> property is comparable to the <xref:System.Reflection.Assembly.GetTypes%2A?displayProperty=nameWithType> method, except that the <xref:System.Reflection.Assembly.DefinedTypes%2A> property returns a collection of <xref:System.Reflection.TypeInfo> objects, and the <xref:System.Reflection.Assembly.GetTypes%2A?displayProperty=nameWithType> method returns an array of <xref:System.Type> objects.  
   
  The returned array includes nested types.  
   
@@ -1159,6 +1159,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The assembly is a dynamic assembly.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">Unable to load a dependent assembly.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetFile">

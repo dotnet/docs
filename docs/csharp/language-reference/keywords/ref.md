@@ -84,7 +84,7 @@ A reference return value is defined by using the `ref` keyword:
    ref return Decimal.Zero;
    ``` 
 
-In order for the caller to modify the an object's state, the reference return value must be stored to a variable that is explicitly defined as a [ref local](#ref-locals). 
+In order for the caller to modify the object's state, the reference return value must be stored to a variable that is explicitly defined as a [ref local](#ref-locals). 
 
 For an example, see [A ref returns and ref locals example](#a-ref-returns-and-ref-locals-example)
 

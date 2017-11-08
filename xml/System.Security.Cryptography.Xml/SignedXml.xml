@@ -604,8 +604,8 @@
 ## Examples  
  The following code example uses an X.509 certificate from a certificate store to sign and verify an XML document.  
   
- [!code-csharp[Security.Cryptography.Xml.SignedXml.CheckSignature(X509Certificate2,Boolean)#1](~/samples/snippets/csharp/VS_Snippets_CLR/Security.Cryptography.Xml.SignedXml.CheckSignature(X509Certificate2,Boolean)/cs/sample.cs#1)]
- [!code-vb[Security.Cryptography.Xml.SignedXml.CheckSignature(X509Certificate2,Boolean)#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Security.Cryptography.Xml.SignedXml.CheckSignature(X509Certificate2,Boolean)/vb/sample.vb#1)]  
+ [!code-csharp[Security.Cryptography.Xml.SignedXml.CheckSignature(X509Certificate2,Boolean)#1](~/samples/snippets/csharp/VS_Snippets_CLR/Security.Cryptography.Xml.SignedXml.CheckSignature/cs/sample.cs#1)]
+ [!code-vb[Security.Cryptography.Xml.SignedXml.CheckSignature(X509Certificate2,Boolean)#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Security.Cryptography.Xml.SignedXml.CheckSignature/vb/sample.vb#1)]  
   
  ]]></format>
         </remarks>

@@ -23,7 +23,7 @@ ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Handle a Loaded Event
-This example shows how handle the <xref:System.Windows.FrameworkElement.Loaded?displayProperty=nameWithType> event, and an appropriate scenario for handling that event. The handler  creates a <xref:System.Windows.Controls.Button> when the page loads .  
+This example shows how to handle the <xref:System.Windows.FrameworkElement.Loaded?displayProperty=nameWithType> event, and an appropriate scenario for handling that event. The handler  creates a <xref:System.Windows.Controls.Button> when the page loads.  
   
 ## Example  
  The following example uses [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] together with a code-behind file.  

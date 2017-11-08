@@ -27,6 +27,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.Page" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -67,6 +68,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.ResolveUrl(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ControlSkins">
@@ -92,6 +94,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IDictionary" />
       </Docs>
     </Member>
     <Member MemberName="CreateSkinKey">
@@ -228,6 +231,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Page" />
       </Docs>
     </Member>
     <Member MemberName="TestDeviceFilter">
@@ -280,6 +284,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.TemplateControl.XPath" />
+        <altmember cref="T:System.Web.UI.XPathBinder" />
       </Docs>
     </Member>
     <Member MemberName="XPath">
@@ -311,6 +317,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.TemplateControl.XPath" />
+        <altmember cref="T:System.Web.UI.XPathBinder" />
+        <altmember cref="T:System.Xml.XPath.XPathExpression" />
       </Docs>
     </Member>
     <Member MemberName="XPath">
@@ -342,6 +351,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.TemplateControl.XPath" />
+        <altmember cref="T:System.Xml.IXmlNamespaceResolver" />
+        <altmember cref="T:System.Xml.XPath.XPathExpression" />
+        <altmember cref="T:System.Web.UI.XPathBinder" />
       </Docs>
     </Member>
     <Member MemberName="XPath">
@@ -375,6 +388,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.TemplateControl.XPath" />
+        <altmember cref="T:System.Web.UI.XPathBinder" />
+        <altmember cref="T:System.Xml.IXmlNamespaceResolver" />
+        <altmember cref="T:System.Xml.XPath.XPathExpression" />
       </Docs>
     </Member>
     <Member MemberName="XPathSelect">
@@ -404,6 +421,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.TemplateControl.XPathSelect" />
+        <altmember cref="T:System.Xml.XPath.XPathExpression" />
       </Docs>
     </Member>
     <Member MemberName="XPathSelect">
@@ -435,7 +454,37 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.TemplateControl.XPathSelect" />
+        <altmember cref="T:System.Xml.XPath.XPathExpression" />
+        <altmember cref="T:System.Xml.IXmlNamespaceResolver" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="XPathSelect">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides run-time data binding against XML-based data in a theme skin file and returns a node collection that implements the <see cref="T:System.Collections.IEnumerable" /> interface.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="XPath">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides support for parsing and evaluating an XPath data-binding expression in theme skin files.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Eval">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Uses the <see cref="Overload:System.Web.UI.DataBinder.Eval" /> method of the <see cref="T:System.Web.UI.Page" /> control that the instance of the <see cref="T:System.Web.UI.PageTheme" /> class is associated with to evaluate a data-binding expression.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

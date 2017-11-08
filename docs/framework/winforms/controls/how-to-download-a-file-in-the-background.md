@@ -10,14 +10,15 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "BackgroundWorker component"
   - "background tasks"
   - "Asynchronous Pattern"
-  - "forms, multithreading"
+  - "forms [Windows Forms], multithreading"
   - "components [Windows Forms], asynchronous"
-  - "forms, background operations"
+  - "forms [Windows Forms], background operations"
   - "threading [Windows Forms], background operations"
   - "background operations"
 ms.assetid: 9b7bc5ae-051c-4904-9720-18f6667388bd

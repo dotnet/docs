@@ -10,11 +10,12 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "MenuStrip control [Windows Forms], merging"
   - "MenuStrip control [Windows Forms], appending"
-  - "MDI, merging menu items"
+  - "MDI [Windows Forms], merging menu items"
 ms.assetid: ab70c936-b452-4653-b417-17be57bb795b
 caps.latest.revision: 17
 author: dotnet-bot

@@ -9,12 +9,10 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "Windows Forms controls, NumericUpDown control"
-  - "spin button control, up-down controls"
-  - "up-down controls, spin button control"
+  - "spin button control [Windows Forms], up-down controls"
+  - "up-down controls [Windows Forms], spin button control"
   - "up-down controls"
   - "spin button control"
   - "NumericUpDown control [Windows Forms]"

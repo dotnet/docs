@@ -606,6 +606,7 @@
  \- or -  
   
  Calling code has attempted to set the property with a <see cref="T:System.Printing.PageResolution" /> object whose <see cref="P:System.Printing.PageResolution.X" /> or <see cref="P:System.Printing.PageResolution.Y" /> property is set to a value less than 1.</exception>
+        <altmember cref="T:System.Printing.PageResolution" />
       </Docs>
     </Member>
     <Member MemberName="PageScalingFactor">
@@ -868,5 +869,14 @@
         <exception cref="T:System.ArgumentOutOfRangeException">Calling code has attempted to set the property to a value that is not in the <see cref="T:System.Printing.TrueTypeFontMode" /> enumeration.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.PrintTicket" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

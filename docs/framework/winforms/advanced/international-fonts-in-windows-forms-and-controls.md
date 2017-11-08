@@ -9,12 +9,10 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "fonts, international"
+  - "fonts [Windows Forms], international"
   - "international applications [Windows Forms], character display"
-  - "fonts, globalization considerations"
+  - "fonts [Windows Forms], globalization considerations"
   - "localization [Windows Forms], fonts"
   - "Windows Forms controls, labels"
   - "font fallback in Windows Forms"

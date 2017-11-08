@@ -24,6 +24,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Speech.Recognition.Grammar" />
+    <altmember cref="T:System.Speech.Recognition.SrgsGrammar.SrgsGrammarCompiler" />
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -463,6 +465,7 @@ if (File.Exists(srgsDocumentFile))
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.SrgsGrammar.SrgsGrammarMode" />
       </Docs>
     </Member>
     <Member MemberName="Namespace">
@@ -552,6 +555,7 @@ document.Root = winnerRule;
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.SrgsGrammar.SrgsRule" />
       </Docs>
     </Member>
     <Member MemberName="Rules">
@@ -616,6 +620,7 @@ public void WorldSoccerWinners ()
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.SrgsGrammar.SrgsRulesCollection" />
       </Docs>
     </Member>
     <Member MemberName="Script">

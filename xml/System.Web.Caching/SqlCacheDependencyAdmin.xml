@@ -31,7 +31,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Caching.SqlCacheDependencyAdmin#10](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Caching.SqlCacheDependencyAdmin/CS/cacheDependencyAdmincs.aspx#10)]  -->  
+ [!code-aspx-csharp[System.Web.Caching.SqlCacheDependencyAdmin#10](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Caching.SqlCacheDependencyAdmin/CS/cacheDependencyAdmincs.aspx#10)]
+ [!code-aspx-vb[System.Web.Caching.SqlCacheDependencyAdmin#10](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Caching.SqlCacheDependencyAdmin/VB/cacheDependencyAdminvb.aspx#10)]
   
  The second sample is the code-behind file containing the source code for the page events.  
   
@@ -40,6 +41,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Caching.SqlCacheDependency" />
   </Docs>
   <Members>
     <Member MemberName="DisableNotifications">
@@ -402,5 +404,23 @@
  The security context of the ASP.NET application does not have permission to disable notifications for the database.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="EnableTableForNotifications">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Connects to a SQL Server database and prepares a database table or tables for <see cref="T:System.Web.Caching.SqlCacheDependency" /> change notifications.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DisableTableForNotifications">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Disables <see cref="T:System.Web.Caching.SqlCacheDependency" /> change notifications on a SQL Server database table or an array of database tables.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

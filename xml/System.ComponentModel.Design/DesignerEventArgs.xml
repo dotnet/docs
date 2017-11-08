@@ -38,6 +38,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.Design.IDesignerEventService" />
+    <altmember cref="T:System.ComponentModel.Design.DesignerEventHandler" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -65,6 +67,7 @@
         <param name="host">The <see cref="T:System.ComponentModel.Design.IDesignerHost" /> of the document.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.Design.DesignerEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="Designer">
@@ -92,6 +95,7 @@
         <summary>Gets the host of the document.</summary>
         <value>The <see cref="T:System.ComponentModel.Design.IDesignerHost" /> of the document.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.Design.IDesignerHost" />
       </Docs>
     </Member>
   </Members>

@@ -10,11 +10,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "shortcut menus, adding to TreeView controls"
+  - "shortcut menus [Windows Forms], adding to TreeView controls"
   - "TreeView control [Windows Forms], adding shortcut menus"
-  - "tree nodes in TreeView control, shortcut menus"
+  - "tree nodes in TreeView control [Windows Forms], shortcut menus"
 ms.assetid: a23c6752-fd8f-44ad-b781-bab37962fc7c
 caps.latest.revision: 11
 author: dotnet-bot

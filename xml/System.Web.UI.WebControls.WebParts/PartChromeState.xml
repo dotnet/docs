@@ -29,11 +29,12 @@
   
  Note that in the declarative markup for the Web page, the second instance of the `TextDisplayWebPart` control sets its <xref:System.Web.UI.WebControls.WebParts.Part.ChromeState%2A> property. After you load the page in a browser, the second control instance appears minimized.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_Part_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_Part_Overview/CS/partoverviewcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_Part_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_Part_Overview/VB/partoverviewvb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_Part_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_Part_Overview/CS/partoverviewcs.aspx#1)]
+ [!code-aspx-vb[WebParts_Part_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_Part_Overview/VB/partoverviewvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.WebControls.WebParts.Part.ChromeState" />
   </Docs>
   <Members>
     <Member MemberName="Minimized">

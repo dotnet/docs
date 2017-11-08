@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo::GetObjectSize"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetObjectSize method [.NET Framework profiling]"
   - "ICorProfilerInfo::GetObjectSize method [.NET Framework profiling]"

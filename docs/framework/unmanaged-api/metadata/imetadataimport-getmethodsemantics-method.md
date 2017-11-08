@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataImport::GetMethodSemantics"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetMethodSemantics method [.NET Framework metadata]"
   - "IMetaDataImport::GetMethodSemantics method [.NET Framework metadata]"

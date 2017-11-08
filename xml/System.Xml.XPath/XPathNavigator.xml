@@ -100,6 +100,10 @@
   
 -   <see cref="P:System.Xml.XPath.XPathItem.Value" /></para>
     </block>
+    <altmember cref="T:System.Xml.XPath.IXPathNavigable" />
+    <altmember cref="T:System.Xml.XPath.XPathDocument" />
+    <altmember cref="T:System.Xml.XmlDocument" />
+    <altmember cref="T:System.Xml.XmlNode" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -949,6 +953,7 @@ navigator.AppendChildElement(navigator.Prefix, "pages", LookupNamespaceURI(navig
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.IsSamePosition(System.Xml.XPath.XPathNavigator)" />
       </Docs>
     </Member>
     <Member MemberName="Compile">
@@ -1510,6 +1515,9 @@ nav.Evaluate("Price/text()*10");
         </remarks>
         <exception cref="T:System.ArgumentException">The return type of the XPath expression is a node set.</exception>
         <exception cref="T:System.Xml.XPath.XPathException">The XPath expression is not valid.</exception>
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.Compile(System.String)" />
+        <altmember cref="T:System.Xml.XPath.XPathExpression" />
+        <altmember cref="P:System.Xml.XPath.XPathExpression.ReturnType" />
       </Docs>
     </Member>
     <Member MemberName="Evaluate">
@@ -1606,6 +1614,8 @@ nav.Evaluate(expr);
         </remarks>
         <exception cref="T:System.ArgumentException">The return type of the XPath expression is a node set.</exception>
         <exception cref="T:System.Xml.XPath.XPathException">The XPath expression is not valid.</exception>
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.Compile(System.String)" />
+        <altmember cref="P:System.Xml.XPath.XPathExpression.ReturnType" />
       </Docs>
     </Member>
     <Member MemberName="Evaluate">
@@ -1848,6 +1858,10 @@ nav.Evaluate(expr);
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.MoveToAttribute(System.String,System.String)" />
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.MoveToFirstAttribute" />
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.MoveToNextAttribute" />
+        <altmember cref="P:System.Xml.XPath.XPathNavigator.HasAttributes" />
       </Docs>
     </Member>
     <Member MemberName="GetNamespace">
@@ -1886,7 +1900,7 @@ nav.Evaluate(expr);
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Namespaces `xml` and `xmlns` always return a value. If <xref:System.String?displayProperty=nameWithType> is specified as the `name` parameter, the <xref:System.Xml.XPath.XPathNavigator.GetNamespace%2A> method returns the default `xmlns` namespace.  
+ Namespaces `xml` and `xmlns` always return a value. If <xref:System.String.Empty?displayProperty=nameWithType> is specified as the `name` parameter, the <xref:System.Xml.XPath.XPathNavigator.GetNamespace%2A> method returns the default `xmlns` namespace.  
   
  For a definition of namespace nodes, see section 5.4 of the W3C XML Path Language (XPath) recommendation located at http://www.w3.org/TR/xpath#data-model.  
   
@@ -1894,6 +1908,9 @@ nav.Evaluate(expr);
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.MoveToNamespace(System.String)" />
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.MoveToFirstNamespace" />
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.MoveToNextNamespace" />
       </Docs>
     </Member>
     <Member MemberName="GetNamespacesInScope">
@@ -1973,6 +1990,10 @@ nav.Evaluate(expr);
         <summary>Gets a value indicating whether the current node has any attributes.</summary>
         <value>Returns <see langword="true" /> if the current node has attributes; returns <see langword="false" /> if the current node has no attributes, or if the <see cref="T:System.Xml.XPath.XPathNavigator" /> is not positioned on an element node.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.MoveToNextAttribute" />
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.MoveToFirstAttribute" />
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.MoveToAttribute(System.String,System.String)" />
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.GetAttribute(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="HasChildren">
@@ -2020,6 +2041,9 @@ nav.Evaluate(expr);
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.MoveToFirstChild" />
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.MoveToParent" />
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.MoveToNext" />
       </Docs>
     </Member>
     <Member MemberName="InnerXml">
@@ -3227,6 +3251,7 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.ComparePosition(System.Xml.XPath.XPathNavigator)" />
       </Docs>
     </Member>
     <Member MemberName="LocalName">
@@ -3317,6 +3342,8 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xml.XPath.XPathNavigator.Name" />
+        <altmember cref="P:System.Xml.XPath.XPathNavigator.Prefix" />
       </Docs>
     </Member>
     <Member MemberName="LookupNamespace">
@@ -3355,7 +3382,7 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If <xref:System.String?displayProperty=nameWithType> is specified as the `prefix` parameter, the currently assigned default namespace URI is returned. If no default namespace URI is explicitly assigned, and <xref:System.String?displayProperty=nameWithType> is specified as the `prefix` parameter, the blank prefix is associated with elements that are not in any namespace, and <xref:System.String?displayProperty=nameWithType> is returned.  
+ If <xref:System.String.Empty?displayProperty=nameWithType> is specified as the `prefix` parameter, the currently assigned default namespace URI is returned. If no default namespace URI is explicitly assigned, and <xref:System.String.Empty?displayProperty=nameWithType> is specified as the `prefix` parameter, the blank prefix is associated with elements that are not in any namespace, and <xref:System.String.Empty?displayProperty=nameWithType> is returned.  
   
 > [!NOTE]
 >  The prefix to namespace URI mappings can change from node to node in an XML document. As a result, the value of the <xref:System.Xml.XPath.XPathNavigator.LookupNamespace%2A> method may not be consistent from one node to the next.  
@@ -3641,6 +3668,9 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.MoveToFirstAttribute" />
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.MoveToNextAttribute" />
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.GetAttribute(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="MoveToChild">
@@ -3769,6 +3799,8 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
   
  If <see cref="M:System.Xml.XPath.XPathNavigator.MoveToFirst" /> returns <see langword="false" /> because there is no first sibling, or if <see cref="T:System.Xml.XPath.XPathNavigator" /> is currently positioned on an attribute, the position of the <see cref="T:System.Xml.XPath.XPathNavigator" /> is unchanged.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.MoveToNext" />
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.MoveToPrevious" />
       </Docs>
     </Member>
     <Member MemberName="MoveToFirstAttribute">
@@ -3854,6 +3886,10 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.MoveToAttribute(System.String,System.String)" />
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.MoveToNextAttribute" />
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.GetAttribute(System.String,System.String)" />
+        <altmember cref="P:System.Xml.XPath.XPathNavigator.HasAttributes" />
       </Docs>
     </Member>
     <Member MemberName="MoveToFirstChild">
@@ -3898,6 +3934,10 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XPath.XPathNodeType" />
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.MoveToNext" />
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.MoveToParent" />
+        <altmember cref="P:System.Xml.XPath.XPathNavigator.HasChildren" />
       </Docs>
     </Member>
     <Member MemberName="MoveToFirstNamespace">
@@ -3945,6 +3985,9 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.MoveToNextNamespace" />
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.GetNamespace(System.String)" />
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.MoveToNamespace(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="MoveToFirstNamespace">
@@ -4011,6 +4054,9 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.MoveToNextNamespace" />
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.GetNamespace(System.String)" />
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.MoveToNamespace(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="MoveToFollowing">
@@ -4474,6 +4520,9 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.MoveToNextNamespace" />
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.MoveToFirstNamespace" />
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.GetNamespace(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="MoveToNext">
@@ -4551,6 +4600,8 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.MoveToPrevious" />
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.MoveToFirst" />
       </Docs>
     </Member>
     <Member MemberName="MoveToNext">
@@ -4726,6 +4777,10 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.MoveToFirstAttribute" />
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.MoveToAttribute(System.String,System.String)" />
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.GetAttribute(System.String,System.String)" />
+        <altmember cref="P:System.Xml.XPath.XPathNavigator.HasAttributes" />
       </Docs>
     </Member>
     <Member MemberName="MoveToNextNamespace">
@@ -4773,6 +4828,9 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.MoveToFirstNamespace" />
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.GetNamespace(System.String)" />
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.MoveToNamespace(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="MoveToNextNamespace">
@@ -4823,6 +4881,9 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.MoveToFirstNamespace" />
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.GetNamespace(System.String)" />
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.MoveToNamespace(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="MoveToParent">
@@ -4913,6 +4974,8 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
         <summary>When overridden in a derived class, moves the <see cref="T:System.Xml.XPath.XPathNavigator" /> to the previous sibling node of the current node.</summary>
         <returns>Returns <see langword="true" /> if the <see cref="T:System.Xml.XPath.XPathNavigator" /> is successful moving to the previous sibling node; otherwise, <see langword="false" /> if there is no previous sibling node or if the <see cref="T:System.Xml.XPath.XPathNavigator" /> is currently positioned on an attribute node. If <see langword="false" />, the position of the <see cref="T:System.Xml.XPath.XPathNavigator" /> is unchanged.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.MoveToNext" />
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.MoveToFirst" />
       </Docs>
     </Member>
     <Member MemberName="MoveToRoot">
@@ -5046,6 +5109,8 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xml.XPath.XPathNavigator.LocalName" />
+        <altmember cref="P:System.Xml.XPath.XPathNavigator.Prefix" />
       </Docs>
     </Member>
     <Member MemberName="NamespaceURI">
@@ -5130,6 +5195,8 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XPath.XPathNodeType" />
+        <altmember cref="P:System.Xml.XPath.XPathNavigator.Prefix" />
       </Docs>
     </Member>
     <Member MemberName="NameTable">
@@ -5168,6 +5235,7 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlNameTable" />
       </Docs>
     </Member>
     <Member MemberName="NavigatorComparer">
@@ -6578,6 +6646,11 @@ while (iterator.MoveNext())
         </remarks>
         <exception cref="T:System.ArgumentException">The XPath expression contains an error or its return type is not a node set.</exception>
         <exception cref="T:System.Xml.XPath.XPathException">The XPath expression is not valid.</exception>
+        <altmember cref="M:System.Xml.XmlNode.SelectNodes(System.String)" />
+        <altmember cref="M:System.Xml.XmlNode.SelectSingleNode(System.String)" />
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.SelectDescendants(System.Xml.XPath.XPathNodeType,System.Boolean)" />
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.SelectChildren(System.Xml.XPath.XPathNodeType)" />
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.SelectAncestors(System.Xml.XPath.XPathNodeType,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -6728,6 +6801,11 @@ XPathNodeIterator ni = nav.Select(expr);
         </remarks>
         <exception cref="T:System.ArgumentException">The XPath expression contains an error or its return type is not a node set.</exception>
         <exception cref="T:System.Xml.XPath.XPathException">The XPath expression is not valid.</exception>
+        <altmember cref="M:System.Xml.XmlNode.SelectNodes(System.String)" />
+        <altmember cref="M:System.Xml.XmlNode.SelectSingleNode(System.String)" />
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.SelectDescendants(System.Xml.XPath.XPathNodeType,System.Boolean)" />
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.SelectChildren(System.Xml.XPath.XPathNodeType)" />
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.SelectAncestors(System.Xml.XPath.XPathNodeType,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -6860,6 +6938,9 @@ XPathNodeIterator ni = nav.Select(expr);
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.SelectChildren(System.Xml.XPath.XPathNodeType)" />
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.SelectDescendants(System.Xml.XPath.XPathNodeType,System.Boolean)" />
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.Select(System.Xml.XPath.XPathExpression)" />
       </Docs>
     </Member>
     <Member MemberName="SelectAncestors">
@@ -6902,7 +6983,7 @@ XPathNodeIterator ni = nav.Select(expr);
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If <xref:System.String?displayProperty=nameWithType> is specified as the `name` parameter, all ancestor nodes that belong to the specified namespace URI are selected. If <xref:System.String?displayProperty=nameWithType> is specified as the `namespaceURI` parameter, all ancestor nodes with the specified local name that belong to no namespace are selected. If <xref:System.String?displayProperty=nameWithType> is specified as both the local name and namespace URI, all ancestor nodes that belong to no namespace are selected.  
+ If <xref:System.String.Empty?displayProperty=nameWithType> is specified as the `name` parameter, all ancestor nodes that belong to the specified namespace URI are selected. If <xref:System.String.Empty?displayProperty=nameWithType> is specified as the `namespaceURI` parameter, all ancestor nodes with the specified local name that belong to no namespace are selected. If <xref:System.String.Empty?displayProperty=nameWithType> is specified as both the local name and namespace URI, all ancestor nodes that belong to no namespace are selected.  
   
  The <xref:System.Xml.XPath.XPathNavigator.SelectAncestors%2A> method has no effect on the state of the <xref:System.Xml.XPath.XPathNavigator>.  
   
@@ -6952,6 +7033,9 @@ XPathNodeIterator ni = nav.Select(expr);
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <see langword="null" /> cannot be passed as a parameter.</exception>
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.SelectChildren(System.Xml.XPath.XPathNodeType)" />
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.SelectDescendants(System.Xml.XPath.XPathNodeType,System.Boolean)" />
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.Select(System.Xml.XPath.XPathExpression)" />
       </Docs>
     </Member>
     <Member MemberName="SelectChildren">
@@ -6999,6 +7083,9 @@ XPathNodeIterator ni = nav.Select(expr);
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.SelectAncestors(System.Xml.XPath.XPathNodeType,System.Boolean)" />
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.SelectDescendants(System.Xml.XPath.XPathNodeType,System.Boolean)" />
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.Select(System.Xml.XPath.XPathExpression)" />
       </Docs>
     </Member>
     <Member MemberName="SelectChildren">
@@ -7039,7 +7126,7 @@ XPathNodeIterator ni = nav.Select(expr);
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If <xref:System.String?displayProperty=nameWithType> is specified as the `name` parameter, all child nodes that belong to the specified namespace URI are selected. If <xref:System.String?displayProperty=nameWithType> is specified as the `namespaceURI` parameter, all child nodes with the specified local name that belong to no namespace are selected. If both the local name and namespace URI parameters are <xref:System.String?displayProperty=nameWithType>, all child nodes that belong to no namespace are selected.  
+ If <xref:System.String.Empty?displayProperty=nameWithType> is specified as the `name` parameter, all child nodes that belong to the specified namespace URI are selected. If <xref:System.String.Empty?displayProperty=nameWithType> is specified as the `namespaceURI` parameter, all child nodes with the specified local name that belong to no namespace are selected. If both the local name and namespace URI parameters are <xref:System.String.Empty?displayProperty=nameWithType>, all child nodes that belong to no namespace are selected.  
   
  The <xref:System.Xml.XPath.XPathNavigator.SelectChildren%2A> method has no effect on the state of the <xref:System.Xml.XPath.XPathNavigator>.  
   
@@ -7052,6 +7139,9 @@ XPathNodeIterator ni = nav.Select(expr);
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <see langword="null" /> cannot be passed as a parameter.</exception>
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.SelectAncestors(System.Xml.XPath.XPathNodeType,System.Boolean)" />
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.SelectDescendants(System.Xml.XPath.XPathNodeType,System.Boolean)" />
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.Select(System.Xml.XPath.XPathExpression)" />
       </Docs>
     </Member>
     <Member MemberName="SelectDescendants">
@@ -7102,6 +7192,9 @@ XPathNodeIterator ni = nav.Select(expr);
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.SelectAncestors(System.Xml.XPath.XPathNodeType,System.Boolean)" />
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.SelectChildren(System.Xml.XPath.XPathNodeType)" />
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.Select(System.Xml.XPath.XPathExpression)" />
       </Docs>
     </Member>
     <Member MemberName="SelectDescendants">
@@ -7145,7 +7238,7 @@ XPathNodeIterator ni = nav.Select(expr);
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If <xref:System.String?displayProperty=nameWithType> is specified as the `name` parameter, all descendant nodes that belong to the specified namespace URI are selected. If <xref:System.String?displayProperty=nameWithType> is specified as the `namespaceURI` parameter, all descendant nodes with the specified local name that belong to no namespace are selected. If both the local name and namespace URI parameters are <xref:System.String?displayProperty=nameWithType>, all descendant nodes that belong to no namespace are selected.  
+ If <xref:System.String.Empty?displayProperty=nameWithType> is specified as the `name` parameter, all descendant nodes that belong to the specified namespace URI are selected. If <xref:System.String.Empty?displayProperty=nameWithType> is specified as the `namespaceURI` parameter, all descendant nodes with the specified local name that belong to no namespace are selected. If both the local name and namespace URI parameters are <xref:System.String.Empty?displayProperty=nameWithType>, all descendant nodes that belong to no namespace are selected.  
   
  A descendant is a child or a child of a child and so on; thus the selected nodes will never contain attribute or namespace nodes.  
   
@@ -7160,6 +7253,9 @@ XPathNodeIterator ni = nav.Select(expr);
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <see langword="null" /> cannot be passed as a parameter.</exception>
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.SelectAncestors(System.Xml.XPath.XPathNodeType,System.Boolean)" />
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.SelectChildren(System.Xml.XPath.XPathNodeType)" />
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.Select(System.Xml.XPath.XPathExpression)" />
       </Docs>
     </Member>
     <Member MemberName="SelectSingleNode">
@@ -8380,7 +8476,7 @@ XPathNodeIterator ni = nav.Select(expr);
 ## Remarks  
  The following are important notes to consider when using the <xref:System.Xml.XPath.XPathNavigator.XmlType%2A> property.  
   
--   The <xref:System.Xml.XPath.XPathNavigator.XmlType%2A> property is `null`, unless the <xref:System.Xml.Schema.IXmlSchemaInfo.Validity%2A> property of the <xref:System.Xml.XPath.XPathNavigator.SchemaInfo%2A> property of the <xref:System.Xml.XPath.XPathNavigator> is set to <xref:System.Xml.Schema.XmlSchemaValidity?displayProperty=nameWithType>.  
+-   The <xref:System.Xml.XPath.XPathNavigator.XmlType%2A> property is `null`, unless the <xref:System.Xml.Schema.IXmlSchemaInfo.Validity%2A> property of the <xref:System.Xml.XPath.XPathNavigator.SchemaInfo%2A> property of the <xref:System.Xml.XPath.XPathNavigator> is set to <xref:System.Xml.Schema.XmlSchemaValidity.Valid?displayProperty=nameWithType>.  
   
 -   If this node is valid, the <xref:System.Xml.XPath.XPathNavigator.XmlType%2A> property is the same as the <xref:System.Xml.Schema.IXmlSchemaInfo.SchemaType%2A> property of the <xref:System.Xml.XPath.XPathNavigator.SchemaInfo%2A> property of the <xref:System.Xml.XPath.XPathNavigator>, unless this node is a member of a union.  
   
@@ -8390,5 +8486,158 @@ XPathNodeIterator ni = nav.Select(expr);
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Evaluate">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XPath</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Evaluates the specified XPath expression and returns the typed result.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Select">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XPath</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Selects a node set, using the specified XPath expression.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="MoveToNext">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XPath</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Moves the <see cref="T:System.Xml.XPath.XPathNavigator" /> to the next sibling node of the current node.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SelectSingleNode">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XPath</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Selects a single node in the <see cref="T:System.Xml.XPath.XPathNavigator" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="MoveToFollowing">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XPath</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Moves the <see cref="T:System.Xml.XPath.XPathNavigator" /> to the specified element in document order.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SelectAncestors">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XPath</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Selects all the ancestor nodes of the current node that match the selection criteria.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SelectChildren">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XPath</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Selects all the child nodes of the current node that match the selection criteria.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AppendChild">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XPath</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new child node at the end of the list of child nodes of the current node.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="InsertBefore">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XPath</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new sibling node before the currently selected node.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="PrependChild">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XPath</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new child node at the beginning of the list of child nodes of the current node.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="InsertAfter">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XPath</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new sibling node after the currently selected node.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReplaceSelf">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XPath</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Replaces the current node with the content specified.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Matches">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XPath</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the current node matches the specified <see cref="N:System.Xml.XPath" /> expression.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SelectDescendants">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XPath</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Selects all the descendant nodes of the current node that match the selection criteria.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="MoveToFirstNamespace">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XPath</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Moves the <see cref="T:System.Xml.XPath.XPathNavigator" /> to the first namespace node of the current node.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="MoveToChild">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XPath</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Moves the <see cref="T:System.Xml.XPath.XPathNavigator" /> to the child node specified.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="MoveToNextNamespace">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XPath</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Moves the <see cref="T:System.Xml.XPath.XPathNavigator" /> to the next namespace node.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -162,10 +162,10 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- On Windows 2000 and below, the WMI service will request Connect level authentication, while on Windows XP and higher it will request Packet level authentication. If the client requires a specific authentication setting, this property can be used to control the authentication level on this particular connection. For example, the property can be set to <xref:System.Management.AuthenticationLevel?displayProperty=nameWithType> if the client requires all communication to be encrypted.  
+ On Windows 2000 and below, the WMI service will request Connect level authentication, while on Windows XP and higher it will request Packet level authentication. If the client requires a specific authentication setting, this property can be used to control the authentication level on this particular connection. For example, the property can be set to <xref:System.Management.AuthenticationLevel.PacketPrivacy?displayProperty=nameWithType> if the client requires all communication to be encrypted.  
   
 ## Property Value  
- The COM authentication level to be used for operations in this connection. The default value is <xref:System.Management.AuthenticationLevel?displayProperty=nameWithType>, which indicates that the client will use the authentication level requested by the server, according to the standard DCOM negotiation process.  
+ The COM authentication level to be used for operations in this connection. The default value is <xref:System.Management.AuthenticationLevel.Unchanged?displayProperty=nameWithType>, which indicates that the client will use the authentication level requested by the server, according to the standard DCOM negotiation process.  
   
 ## .NET Framework Security  
  Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
@@ -180,6 +180,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Management.AuthenticationLevel" />
       </Docs>
     </Member>
     <Member MemberName="Authority">
@@ -259,6 +260,7 @@ NTLMDOMAIN:<domain name>
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ICloneable.Clone" />
       </Docs>
     </Member>
     <Member MemberName="EnablePrivileges">
@@ -310,10 +312,10 @@ NTLMDOMAIN:<domain name>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Management.ImpersonationLevel?displayProperty=nameWithType> setting is advantageous when the provider is a trusted application or service. It eliminates the need for the provider to perform client identity and access checks for the requested operations. However, if for some reason the provider cannot be trusted, allowing it to impersonate the client may constitute a security threat. In such cases, we recommend that this property be set by the client to a lower value, such as <xref:System.Management.ImpersonationLevel?displayProperty=nameWithType>. Note that this may cause failure of the provider to perform the requested operations, for lack of sufficient permissions or inability to perform access checks.  
+ The <xref:System.Management.ImpersonationLevel.Impersonate?displayProperty=nameWithType> setting is advantageous when the provider is a trusted application or service. It eliminates the need for the provider to perform client identity and access checks for the requested operations. However, if for some reason the provider cannot be trusted, allowing it to impersonate the client may constitute a security threat. In such cases, we recommend that this property be set by the client to a lower value, such as <xref:System.Management.ImpersonationLevel.Identify?displayProperty=nameWithType>. Note that this may cause failure of the provider to perform the requested operations, for lack of sufficient permissions or inability to perform access checks.  
   
 ## Property Value  
- The COM impersonation level to be used for operations in this connection. The default value is <xref:System.Management.ImpersonationLevel?displayProperty=nameWithType>, which indicates that the WMI provider can impersonate the client when performing the requested operations in this connection.  
+ The COM impersonation level to be used for operations in this connection. The default value is <xref:System.Management.ImpersonationLevel.Impersonate?displayProperty=nameWithType>, which indicates that the WMI provider can impersonate the client when performing the requested operations in this connection.  
   
 ## .NET Framework Security  
  Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
@@ -459,5 +461,14 @@ NTLMDOMAIN:<domain name>
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new ConnectionOption.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

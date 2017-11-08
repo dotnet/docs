@@ -32,11 +32,14 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewPageEventArgs> object passed to the event-handling method to determine the index of the page selected by the user and to cancel the paging operation.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewPageIndexChanging#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewPageIndexChanging/CS/gridviewpageindexchangingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewPageIndexChanging#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewPageIndexChanging/VB/gridviewpageindexchangingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewPageIndexChanging#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewPageIndexChanging/CS/gridviewpageindexchangingcs.aspx#1)]
+ [!code-aspx-vb[GridViewPageIndexChanging#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewPageIndexChanging/VB/gridviewpageindexchangingvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="T:System.Web.UI.WebControls.GridViewPageEventHandler" />
+    <altmember cref="E:System.Web.UI.WebControls.GridView.PageIndexChanging" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -71,6 +74,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.GridViewPageEventArgs.NewPageIndex" />
       </Docs>
     </Member>
     <Member MemberName="NewPageIndex">
@@ -104,12 +108,14 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewPageEventArgs.NewPageIndex%2A> property to determine the index of the page selected by the user.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewPageIndexChanging#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewPageIndexChanging/CS/gridviewpageindexchangingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewPageIndexChanging#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewPageIndexChanging/VB/gridviewpageindexchangingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewPageIndexChanging#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewPageIndexChanging/CS/gridviewpageindexchangingcs.aspx#1)]
+ [!code-aspx-vb[GridViewPageIndexChanging#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewPageIndexChanging/VB/gridviewpageindexchangingvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="P:System.Web.UI.WebControls.GridViewPageEventArgs.NewPageIndex" /> property is less than zero.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.GridView.PageIndex" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.PageIndexChanging" />
       </Docs>
     </Member>
   </Members>

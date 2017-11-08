@@ -9,12 +9,10 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "transparent backgrounds, custom controls"
+  - "transparent backgrounds [Windows Forms], custom controls"
   - "custom controls [Windows Forms], transparent background"
-  - "transparency, Windows Forms custom controls"
+  - "transparency [Windows Forms], Windows Forms custom controls"
 ms.assetid: 32433e63-f4e9-4305-9857-6de3edeb944a
 caps.latest.revision: 23
 author: dotnet-bot

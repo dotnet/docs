@@ -67,6 +67,7 @@
         <summary>Arranges the content of a <see cref="T:System.Windows.Controls.Decorator" /> element.</summary>
         <returns>The <see cref="T:System.Windows.Size" /> that represents the arranged size of this <see cref="T:System.Windows.Controls.Decorator" /> element and its child.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.Decorator.ArrangeOverride(System.Windows.Size)" />
       </Docs>
     </Member>
     <Member MemberName="AttachVisuals">
@@ -189,6 +190,7 @@
         <summary>Gets the child <see cref="T:System.Windows.Media.Visual" /> element at the specified <paramref name="index" /> position.</summary>
         <returns>The child element at the specified <paramref name="index" /> position.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.Decorator.GetVisualChild(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="MeasureOverride">
@@ -211,6 +213,7 @@
         <summary>Measures the child element of a <see cref="T:System.Windows.Controls.Decorator" /> to prepare for arranging it during the <see cref="M:System.Windows.Controls.Decorator.ArrangeOverride(System.Windows.Size)" /> pass.</summary>
         <returns>The target <see cref="T:System.Windows.Size" /> of the element.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.Decorator.MeasureOverride(System.Windows.Size)" />
       </Docs>
     </Member>
     <Member MemberName="OnCreateAutomationPeer">
@@ -305,6 +308,7 @@
         <summary>Gets a value that is equal to the number of visual child elements of this instance of <see cref="T:System.Windows.Controls.Decorator" />.</summary>
         <value>The number of visual child elements.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.Decorator.VisualChildrenCount" />
       </Docs>
     </Member>
   </Members>

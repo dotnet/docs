@@ -412,6 +412,7 @@ DatePicker with dates that are not selectable
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified date is not in the range defined by <see cref="P:System.Windows.Controls.DatePicker.DisplayDateStart" />. and <see cref="P:System.Windows.Controls.DatePicker.DisplayDateEnd" />.</exception>
+        <altmember cref="P:System.Windows.Controls.Calendar.DisplayDate" />
       </Docs>
     </Member>
     <Member MemberName="DisplayDateEnd">
@@ -466,6 +467,7 @@ DatePicker with dates that are not selectable
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Calendar.DisplayDateEnd" />
       </Docs>
     </Member>
     <Member MemberName="DisplayDateEndProperty">
@@ -554,6 +556,7 @@ DatePicker with dates that are not selectable
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Calendar.DisplayDateStart" />
       </Docs>
     </Member>
     <Member MemberName="DisplayDateStartProperty">
@@ -767,6 +770,7 @@ DatePicker with dates that are not selectable
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Calendar.IsTodayHighlighted" />
       </Docs>
     </Member>
     <Member MemberName="IsTodayHighlightedProperty">
@@ -991,6 +995,7 @@ DatePicker with dates that are not selectable
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified date is not in the range defined by <see cref="P:System.Windows.Controls.DatePicker.DisplayDateStart" /> and <see cref="P:System.Windows.Controls.DatePicker.DisplayDateEnd" />, or the specified date is in the <see cref="P:System.Windows.Controls.DatePicker.BlackoutDates" /> collection.</exception>
+        <altmember cref="P:System.Windows.Controls.Calendar.SelectedDate" />
       </Docs>
     </Member>
     <Member MemberName="SelectedDateChanged">
@@ -1172,6 +1177,8 @@ DatePicker with dates that are not selectable
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.DatePicker.DateValidationError" />
+        <altmember cref="T:System.Windows.Controls.DatePickerDateValidationErrorEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="TextProperty">

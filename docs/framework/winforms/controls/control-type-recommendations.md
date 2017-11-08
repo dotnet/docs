@@ -9,10 +9,8 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "inheritance, Windows Forms custom controls"
+  - "inheritance [Windows Forms], Windows Forms custom controls"
   - "user controls [Windows Forms], when to use"
   - "custom controls [Windows Forms], types"
   - "controls [Windows Forms], creating"

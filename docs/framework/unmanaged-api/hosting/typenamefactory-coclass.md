@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "TypeNameFactory"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "TypeNameFactory coclass [.NET Framework hosting]"
 ms.assetid: c853bb58-c9c5-476b-8e80-608aa53ea18d

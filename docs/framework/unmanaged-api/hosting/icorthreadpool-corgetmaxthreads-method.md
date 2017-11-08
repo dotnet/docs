@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorGetMaxThreads"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorGetMaxThreads method [.NET Framework hosting]"
   - "ICorThreadpool::CorGetMaxThreads method [.NET Framework hosting]"

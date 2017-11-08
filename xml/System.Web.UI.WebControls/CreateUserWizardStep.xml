@@ -60,16 +60,16 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardCreatedUser#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardCreatedUser/CS/createuserwizardcreatedusercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardCreatedUser#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardCreatedUser/VB/createuserwizardcreateduservb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardCreatedUser#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardCreatedUser/CS/createuserwizardcreatedusercs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardCreatedUser#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardCreatedUser/VB/createuserwizardcreateduservb.aspx#1)]  
   
 > [!IMPORTANT]
 >  This control has a text box that accepts user input, which is a potential security threat. User input in a Web page can potentially contain malicious client script. By default, ASP.NET Web pages validate user input to ensure that the input does not contain HTML elements or script. As long as this validation is enabled, you do not need to explicitly check for script or HTML elements in user input. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  The second code example lists the complete <xref:System.Web.UI.WebControls.CreateUserWizardStep> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardStep#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardStep/CS/createuserwizardstepcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardStep#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardStep/VB/createuserwizardstepvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardStep#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardStep/CS/createuserwizardstepcs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardStep#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardStep/VB/createuserwizardstepvb.aspx#1)]  
   
 > [!IMPORTANT]
 >  This control has a text box that accepts user input, which is a potential security threat. User input in a Web page can potentially contain malicious client script. By default, ASP.NET Web pages validate user input to ensure that the input does not contain HTML elements or script. As long as this validation is enabled, you do not need to explicitly check for script or HTML elements in user input. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
@@ -173,6 +173,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt was made to set the <see cref="P:System.Web.UI.WebControls.CreateUserWizardStep.StepType" /> property to a value other than the <see langword="WizardStepType.Auto" /> enumeration value.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.WizardStepType" />
+        <altmember cref="T:System.Web.UI.WebControls.WizardStepBase" />
       </Docs>
     </Member>
     <Member MemberName="Title">

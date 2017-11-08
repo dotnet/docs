@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "message security [WCF], programming overview"
 ms.assetid: 739ec222-4eda-4cc9-a470-67e64a7a3f10

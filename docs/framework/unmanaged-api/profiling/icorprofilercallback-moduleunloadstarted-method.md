@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::ModuleUnloadStarted"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ModuleUnloadStarted method [.NET Framework profiling]"
   - "ICorProfilerCallback::ModuleUnloadStarted method [.NET Framework profiling]"

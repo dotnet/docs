@@ -53,6 +53,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.ServiceModel.OperationContext.Current" />
+    <altmember cref="T:System.ServiceModel.OperationContext" />
+    <altmember cref="T:System.IdentityModel.Claims.Claim" />
+    <altmember cref="T:System.IdentityModel.Claims.ClaimSet" />
+    <altmember cref="T:System.ServiceModel.ServiceAuthorizationManager" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -255,6 +260,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Security.Permissions.PrincipalPermissionAttribute" />
+        <altmember cref="T:System.Security.Principal.IPrincipal" />
       </Docs>
     </Member>
     <Member MemberName="WindowsIdentity">
@@ -289,5 +296,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ServiceSecurityContext" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

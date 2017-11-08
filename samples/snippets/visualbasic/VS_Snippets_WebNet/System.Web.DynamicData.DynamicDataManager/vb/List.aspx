@@ -1,9 +1,4 @@
-﻿
-<%-- 
-C:\_ricka08\code\DD\Snippet\DynamicControlParameter\vb_DynamicControlParameter\DynamicData\CustomPages\CustomerAddresses\List.aspx
-C:\sdtree\Orcas\Web.NET\System.Web.DynamicData.DynamicDataManager
- --%>
-<%-- <Snippet1> --%>
+﻿<!-- <Snippet1> -->
 <%@ Page Language="VB" MasterPageFile="~/Site.master" %>
 
 <script runat="server">
@@ -29,4 +24,4 @@ C:\sdtree\Orcas\Web.NET\System.Web.DynamicData.DynamicDataManager
     </asp:LinqDataSource>
     
 </asp:Content>
-<%-- </Snippet1>--%>
+<!-- </Snippet1> -->

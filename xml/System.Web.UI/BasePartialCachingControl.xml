@@ -39,6 +39,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.UserControl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -97,16 +98,17 @@
   
  The second part of the example shows a user control that is used with the previous example to demonstrate user control caching.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ControlCachePolicy#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ControlCachePolicy/CS/Logonformcs.ascx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ControlCachePolicy#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ControlCachePolicy/VB/Logonformvb.ascx#3)]  -->  
+ [!code-aspx-csharp[System.Web.UI.ControlCachePolicy#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ControlCachePolicy/CS/Logonformcs.ascx#3)]
+ [!code-aspx-vb[System.Web.UI.ControlCachePolicy#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ControlCachePolicy/VB/Logonformvb.ascx#3)]  
   
  The third part of the example demonstrates using the `LogOnControl` user control from a Web Forms page.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ControlCachePolicy#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ControlCachePolicy/CS/controlcachepolicy_loadcontrolcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ControlCachePolicy#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ControlCachePolicy/VB/controlcachepolicy_loadcontrolvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.ControlCachePolicy#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ControlCachePolicy/CS/controlcachepolicy_loadcontrolcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.ControlCachePolicy#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ControlCachePolicy/VB/controlcachepolicy_loadcontrolvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.UserControl.CachePolicy" />
       </Docs>
     </Member>
     <Member MemberName="Dependency">

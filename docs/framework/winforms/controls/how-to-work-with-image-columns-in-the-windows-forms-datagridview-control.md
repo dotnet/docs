@@ -10,10 +10,12 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "image columns"
-  - "image columns, Windows Forms"
+  - "image columns [Windows Forms], Windows Forms"
   - "DataGridView control [Windows Forms], image columns"
 ms.assetid: 8a37aa75-3c6e-4893-91d0-7a5f34bfe287
 caps.latest.revision: 12

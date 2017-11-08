@@ -9,10 +9,8 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "brushes, gradient brushes"
+  - "brushes [Windows Forms], gradient brushes"
   - "gradient brushes"
   - "examples [Windows Forms], gradient brushes"
 ms.assetid: 2c6037b9-05bd-44c0-a22a-19584b722524

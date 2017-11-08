@@ -21,8 +21,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "StrongNameFreeBuffer"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "StrongNameFreeBuffer function [.NET Framework strong naming]"
 ms.assetid: eda21ecf-4734-4f92-aaba-9f34884385db

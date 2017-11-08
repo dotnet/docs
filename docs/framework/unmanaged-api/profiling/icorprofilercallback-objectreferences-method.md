@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::ObjectReferences"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ObjectReferences method [.NET Framework profiling]"
   - "ICorProfilerCallback::ObjectReferences method [.NET Framework profiling]"

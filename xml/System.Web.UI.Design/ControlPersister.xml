@@ -32,6 +32,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.Control" />
+    <altmember cref="T:System.Web.UI.ITemplate" />
+    <altmember cref="T:System.Web.UI.Design.ControlParser" />
   </Docs>
   <Members>
     <Member MemberName="PersistControl">
@@ -199,6 +202,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.ControlParser" />
       </Docs>
     </Member>
     <Member MemberName="PersistInnerProperties">
@@ -262,6 +266,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.Design.ControlParser.ParseTemplate" />
+        <altmember cref="Overload:System.Web.UI.Design.ControlPersister.PersistControl" />
+        <altmember cref="T:System.Web.UI.Design.ControlParser" />
       </Docs>
     </Member>
     <Member MemberName="PersistTemplate">
@@ -294,7 +301,39 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.Design.ControlParser.ParseTemplate" />
+        <altmember cref="Overload:System.Web.UI.Design.ControlPersister.PersistControl" />
+        <altmember cref="T:System.Web.UI.Design.ControlParser" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="PersistInnerProperties">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a string of data that can persist the inner properties of the specified control.</summary>
+        <altmember cref="T:System.Web.UI.Design.ControlParser" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="PersistTemplate">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a string of data that represents the persisted form of a specified template.</summary>
+        <altmember cref="T:System.Web.UI.Design.ControlParser" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="PersistControl">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a string of data that represents the persisted form of the specified control.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

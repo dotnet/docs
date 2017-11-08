@@ -10,10 +10,11 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "printing [Windows Forms], printing multiple pages"
-  - "text, printing Windows Forms"
+  - "text [Windows Forms], printing Windows Forms"
   - "Windows Forms, printing text"
   - "printing [Windows Forms], text"
 ms.assetid: 362427f8-03d4-4826-b49f-60ab066ad322

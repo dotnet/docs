@@ -10,16 +10,18 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "context menus, removing items"
+  - "context menus [Windows Forms], removing items"
   - "ContextMenu component [Windows Forms], adding items"
-  - "shortcut menus, removing items"
-  - "shortcut menus, examples"
-  - "context menus, adding items"
-  - "shortcut menus, adding items"
+  - "shortcut menus [Windows Forms], removing items"
+  - "shortcut menus [Windows Forms], examples"
+  - "context menus [Windows Forms], adding items"
+  - "shortcut menus [Windows Forms], adding items"
   - "ContextMenu component [Windows Forms], removing items"
-  - "context menus, examples"
+  - "context menus [Windows Forms], examples"
   - "examples [Windows Forms], context menus"
 ms.assetid: 426d1eaf-7fb8-4b0b-8a33-5e8721786ea4
 caps.latest.revision: 16

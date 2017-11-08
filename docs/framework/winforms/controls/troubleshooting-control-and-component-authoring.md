@@ -10,10 +10,11 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "troubleshooting components"
-  - "troubleshooting controls"
+  - "troubleshooting controls [Windows Forms]"
   - "controls [Windows Forms], troubleshooting"
   - "components [Windows Forms], troubleshooting"
   - "Windows Forms controls, debugging"

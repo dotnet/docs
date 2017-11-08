@@ -23,6 +23,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:Microsoft.VisualBasic.FirstDayOfWeek" />
+    <altmember cref="T:Microsoft.VisualBasic.DateFormat" />
+    <altmember cref="M:Microsoft.VisualBasic.DateAndTime.DateDiff(Microsoft.VisualBasic.DateInterval,System.DateTime,System.DateTime,Microsoft.VisualBasic.FirstDayOfWeek,Microsoft.VisualBasic.FirstWeekOfYear)" />
+    <altmember cref="M:Microsoft.VisualBasic.DateAndTime.DatePart(Microsoft.VisualBasic.DateInterval,System.DateTime,Microsoft.VisualBasic.FirstDayOfWeek,Microsoft.VisualBasic.FirstWeekOfYear)" />
+    <altmember cref="M:Microsoft.VisualBasic.Strings.Format(System.Object,System.String)" />
+    <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Weekday(System.DateTime,Microsoft.VisualBasic.FirstDayOfWeek)" />
   </Docs>
   <Members>
     <Member MemberName="FirstFourDays">

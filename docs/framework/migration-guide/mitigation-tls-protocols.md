@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 ms.assetid: 33f97d13-3022-43da-8b18-cdb5c88df9c2
 caps.latest.revision: 4
 author: "rpetrusha"

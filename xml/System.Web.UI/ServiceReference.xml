@@ -51,8 +51,8 @@
 ## Examples  
  The following example demonstrates how to add a reference to a Web service in the page markup to call the Web service methods from script.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Script.Services.ScriptMethodAttribute#5](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.Script.Services.ScriptMethodAttribute/CS/Default.aspx#5)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Script.Services.ScriptMethodAttribute#5](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.Script.Services.ScriptMethodAttribute/VB/Default.aspx#5)]  -->  
+ [!code-aspx-csharp[System.Web.Script.Services.ScriptMethodAttribute#5](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.Script.Services.ScriptMethodAttribute/CS/Default.aspx#5)]
+ [!code-aspx-vb[System.Web.Script.Services.ScriptMethodAttribute#5](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.Script.Services.ScriptMethodAttribute/VB/Default.aspx#5)]  
   
  ]]></format>
     </remarks>
@@ -248,5 +248,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ServiceReference" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

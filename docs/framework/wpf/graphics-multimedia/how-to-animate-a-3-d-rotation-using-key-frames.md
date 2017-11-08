@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "animation, 3-D translations, with key frames (Rotation3DAnimation)"
-  - "key frames, Rotation3DAnimation"
-  - "3-D translations, animating, with key frames (Rotation3DAnimation)"
+  - "animation [WPF], 3-D translations [WPF], with key frames (Rotation3DAnimation)"
+  - "key frames [WPF], Rotation3DAnimation"
+  - "3-D translations [WPF], animating [WPF], with key frames (Rotation3DAnimation)"
 ms.assetid: 6f671b95-7f30-4836-9a4f-aeb7dc30121f
 caps.latest.revision: 8
 author: dotnet-bot

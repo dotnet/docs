@@ -33,6 +33,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.Binding" />
+    <altmember cref="T:System.Windows.Forms.BindingManagerBase" />
+    <altmember cref="T:System.Windows.Forms.BindingsCollection" />
+    <altmember cref="P:System.Windows.Forms.Control.DataBindings" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -125,6 +129,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Binding" />
       </Docs>
     </Member>
   </Members>

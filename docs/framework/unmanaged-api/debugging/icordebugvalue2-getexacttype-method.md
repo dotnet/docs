@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugValue2::GetExactType"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugValue2::GetExactType method [.NET Framework debugging]"
   - "GetExactType method [.NET Framework debugging]"

@@ -11,11 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "MenuStrip"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "MenuStrip control [Windows Forms], about MenuStrip control"
-  - "menus, creating"
+  - "menus [Windows Forms], creating"
 ms.assetid: f45516e5-bf01-4468-b851-d45f4c33c055
 caps.latest.revision: 10
 author: dotnet-bot

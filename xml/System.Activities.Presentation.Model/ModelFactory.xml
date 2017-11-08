@@ -131,5 +131,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateItem">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Activities.Presentation.Model.ModelItem" /> for the given item type.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

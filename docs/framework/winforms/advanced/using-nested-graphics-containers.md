@@ -10,11 +10,12 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "graphics, nested containers"
+  - "graphics [Windows Forms], nested containers"
   - "graphics [Windows Forms], clipping"
-  - "graphics, transformations in nested objects"
+  - "graphics [Windows Forms], transformations in nested objects"
 ms.assetid: a0d9f178-43a4-4323-bb5a-d3e3f77ae6c1
 caps.latest.revision: 13
 author: dotnet-bot

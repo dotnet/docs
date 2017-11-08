@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataImport::GetCustomAttributeProps"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetCustomAttributeProps method [.NET Framework metadata]"
   - "IMetaDataImport::GetCustomAttributeProps method [.NET Framework metadata]"

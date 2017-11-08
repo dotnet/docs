@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "EMemoryCriticalLevel"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "EMemoryCriticalLevel enumeration [.NET Framework hosting]"
 ms.assetid: 2ca8a7a2-7b54-4ba3-8e73-277c7df485f3

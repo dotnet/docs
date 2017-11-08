@@ -10,11 +10,12 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "domain names, retrieving"
+  - "domain names [Windows Forms], retrieving"
   - "SystemInformation class [Windows Forms]"
-  - "user names, retrieving"
+  - "user names [Windows Forms], retrieving"
   - "system information [Windows Forms]"
 ms.assetid: 30cf43a3-8cb2-4ff3-862b-6c34576616a8
 caps.latest.revision: 7

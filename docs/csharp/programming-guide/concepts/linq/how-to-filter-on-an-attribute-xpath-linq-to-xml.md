@@ -1,7 +1,7 @@
 ---
 title: "How to: Filter on an Attribute (XPath-LINQ to XML) (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: 208d6256-1bd7-4237-b2c9-909f26dfd0e2
 caps.latest.revision: 3
 author: "BillWagner"

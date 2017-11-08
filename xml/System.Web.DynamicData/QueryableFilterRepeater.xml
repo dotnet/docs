@@ -100,8 +100,8 @@
   
 -   A Dynamic Data Web site or a Dynamic Data Web application. For more information, see `Walkthrough: Creating a New Dynamic Data Web Site using Scaffolding`.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.DynamicData.QueryableFilterRepeater#1](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.dynamicdata.queryablefilterrepeater/cs/queryablefilterrepeater.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.DynamicData.QueryableFilterRepeater#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.dynamicdata.queryablefilterrepeater/vb/queryablefilterrepeater.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.DynamicData.QueryableFilterRepeater#1](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.dynamicdata.queryablefilterrepeater/cs/queryablefilterrepeater.aspx#1)]
+ [!code-aspx-vb[System.Web.DynamicData.QueryableFilterRepeater#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.dynamicdata.queryablefilterrepeater/vb/queryablefilterrepeater.aspx#1)]  
   
  [!code-csharp[System.Web.DynamicData.QueryableFilterRepeater#3](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.dynamicdata.queryablefilterrepeater/cs/queryablefilterrepeater.aspx.cs#3)]
  [!code-vb[System.Web.DynamicData.QueryableFilterRepeater#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.dynamicdata.queryablefilterrepeater/vb/queryablefilterrepeater.aspx.vb#3)]  
@@ -111,6 +111,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.DynamicData.DynamicFilter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -214,8 +215,8 @@
 ## Examples  
  The following example shows how to set the <xref:System.Web.DynamicData.QueryableFilterRepeater> control's <xref:System.Web.DynamicData.QueryableFilterRepeater.ItemTemplate%2A> property so that it contains <xref:System.Web.DynamicData.DynamicFilter> controls to create the UI for each supported column type.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.DynamicData.QueryableFilterRepeater#2](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.dynamicdata.queryablefilterrepeater/cs/queryablefilterrepeater.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.DynamicData.QueryableFilterRepeater#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.dynamicdata.queryablefilterrepeater/vb/queryablefilterrepeater.aspx#2)]  -->  
+ [!code-aspx-csharp[System.Web.DynamicData.QueryableFilterRepeater#2](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.dynamicdata.queryablefilterrepeater/cs/queryablefilterrepeater.aspx#2)]
+ [!code-aspx-vb[System.Web.DynamicData.QueryableFilterRepeater#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.dynamicdata.queryablefilterrepeater/vb/queryablefilterrepeater.aspx#2)]  
   
  ]]></format>
         </remarks>

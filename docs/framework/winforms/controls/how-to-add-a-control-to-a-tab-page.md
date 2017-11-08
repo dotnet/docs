@@ -10,11 +10,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "TabPage control"
-  - "tab controls, tab order"
-  - "tab pages, adding controls"
+  - "tab controls [Windows Forms], tab order"
+  - "tab pages [Windows Forms], adding controls"
 ms.assetid: b092532e-7346-469f-b9a1-897f9bea4fb7
 caps.latest.revision: 19
 author: dotnet-bot

@@ -11,12 +11,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "ApplicationsSettingsOverview"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "application settings [Windows Forms], about application settings"
   - "dynamic properties"
-  - "user preferences, tracking"
+  - "user preferences [Windows Forms], tracking"
 ms.assetid: 0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc
 caps.latest.revision: 24
 author: dotnet-bot

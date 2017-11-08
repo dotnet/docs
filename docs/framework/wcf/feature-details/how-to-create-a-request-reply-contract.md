@@ -31,23 +31,23 @@ A request-reply contract specifies a method that returns a reply. The reply must
 ## Example  
  The following sample defines a contract for a calculator service that provides `Add` and `Subtract` methods. The `Multiply` method is not part of the contract because it is not marked by the <xref:System.ServiceModel.OperationContractAttribute> class and so it is not accessible to clients.  
   
-```  
-using System.ServiceModel;   
-  
-[ServiceContract]   
-public interface ICalculator   
-{   
-[OperationContract]   
-// It would be equivalent to write explicitly:  
-// [OperationContract(IsOneWay=false)]   
-int Add(int a, int b);   
-  
-[OperationContract]   
-int Subtract(int a, int b);   
-  
-int Multiply(int a, int b)  
-}  
-```  
+```
+using System.ServiceModel;
+
+[ServiceContract]
+public interface ICalculator
+{
+    [OperationContract]
+    // It would be equivalent to write explicitly:
+    // [OperationContract(IsOneWay=false)]
+    int Add(int a, int b);
+    
+    [OperationContract]
+    int Subtract(int a, int b);
+    
+    int Multiply(int a, int b)
+}
+```
   
 -   [!INCLUDE[crabout](../../../../includes/crabout-md.md)] how to specify operation contracts, see the <xref:System.ServiceModel.OperationContractAttribute> class and the <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> property.  
   

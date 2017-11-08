@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::ExceptionSearchFunctionEnter"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ExceptionSearchFunctionEnter method [.NET Framework profiling]"
   - "ICorProfilerCallback::ExceptionSearchFunctionEnter method [.NET Framework profiling]"

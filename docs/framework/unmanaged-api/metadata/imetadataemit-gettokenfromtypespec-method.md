@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataEmit::GetTokenFromTypeSpec"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetTokenFromTypeSpec method [.NET Framework metadata]"
   - "IMetaDataEmit::GetTokenFromTypeSpec method [.NET Framework metadata]"

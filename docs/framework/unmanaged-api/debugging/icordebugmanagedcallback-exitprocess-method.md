@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugManagedCallback::ExitProcess"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ExitProcess method, ICorDebugManagedCallback interface [.NET Framework debugging]"
   - "ICorDebugManagedCallback::ExitProcess method [.NET Framework debugging]"

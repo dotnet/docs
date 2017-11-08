@@ -1,43 +1,24 @@
 ---
 title: "&gt;&gt;= Operator (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.>>="
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
-  - "assignment statements, compound"
+  - "assignment statements [Visual Basic], compound"
   - "statements [Visual Basic], compound assignment"
   - "operator >>= [Visual Basic]"
-  - "compound assignment statements"
+  - "compound assignment statements [Visual Basic]"
   - ">>= operator [Visual Basic]"
 ms.assetid: 2bcd9abb-7a8c-4229-b75d-8816ff1dc700
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # &gt;&gt;= Operator (Visual Basic)
 Performs an arithmetic right shift on the value of a variable or property and assigns the result back to the variable or property.  

@@ -37,6 +37,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.ValidationRule" />
+    <altmember cref="T:System.Windows.Controls.DataErrorValidationRule" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -76,6 +78,7 @@
         <summary>Performs validation checks on a value.</summary>
         <returns>A <see cref="T:System.Windows.Controls.ValidationResult" /> object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.ValidationRule.Validate(System.Object,System.Globalization.CultureInfo)" />
       </Docs>
     </Member>
   </Members>

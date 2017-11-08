@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugProcess::ClearCurrentException"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ClearCurrentException method, ICorDebugProcess interface [.NET Framework debugging]"
   - "ICorDebugProcess::ClearCurrentException method [.NET Framework debugging]"

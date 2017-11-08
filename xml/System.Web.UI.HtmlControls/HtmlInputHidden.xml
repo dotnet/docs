@@ -43,11 +43,12 @@
 ## Examples  
  The following code example demonstrates how to use an <xref:System.Web.UI.HtmlControls.HtmlInputHidden> control to store information on the Web page between posts to the server.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HtmlInputHidden Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputHidden Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HtmlInputHidden Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputHidden Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HtmlInputHidden Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputHidden Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HtmlInputHidden Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputHidden Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputControl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -79,8 +80,8 @@
 ## Examples  
  The following code example demonstrates how to create a new instance of the <xref:System.Web.UI.HtmlControls.HtmlInputHidden> control and place it on the Web page.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlInputHiddenCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputHiddenCtor/CS/htmlinputhiddenctorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlInputHiddenCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputHiddenCtor/VB/htmlinputhiddenctorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlInputHiddenCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputHiddenCtor/CS/htmlinputhiddenctorcs.aspx#1)]
+ [!code-aspx-vb[HtmlInputHiddenCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputHiddenCtor/VB/htmlinputhiddenctorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -149,14 +150,15 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.HtmlControls.HtmlInputHidden.OnPreRender%2A> method so that it applies HTML encoding to the input value in a custom <xref:System.Web.UI.HtmlControls.HtmlInputHidden> server control.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomHtmlInputHiddenOnPreRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlInputHiddenOnPreRender/CS/custom_htmlinputhidden_onprerendercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomHtmlInputHiddenOnPreRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlInputHiddenOnPreRender/VB/custom_htmlinputhidden_onprerendervb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomHtmlInputHiddenOnPreRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlInputHiddenOnPreRender/CS/custom_htmlinputhidden_onprerendercs.aspx#1)]
+ [!code-aspx-vb[CustomHtmlInputHiddenOnPreRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlInputHiddenOnPreRender/VB/custom_htmlinputhidden_onprerendervb.aspx#1)]  
   
  [!code-csharp[CustomHtmlInputHiddenOnPreRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlInputHiddenOnPreRender/CS/custom_htmlinputhidden_onprerender.cs#2)]
  [!code-vb[CustomHtmlInputHiddenOnPreRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlInputHiddenOnPreRender/VB/custom_htmlinputhidden_onprerender.vb#2)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.OnPreRender(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnServerChange">
@@ -195,6 +197,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.HtmlControls.HtmlInputHidden.OnServerChange(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.HtmlControls.HtmlInputHidden.OnServerChange(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.HtmlControls.HtmlInputHidden.ServerChange" />
       </Docs>
     </Member>
     <Member MemberName="RaisePostDataChangedEvent">
@@ -270,6 +273,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlInputHidden.OnServerChange(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">

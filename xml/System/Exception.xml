@@ -428,6 +428,8 @@ Stack Trace:
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is <see langword="null" /> or <see cref="P:System.Exception.HResult" /> is zero (0).</exception>
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -554,6 +556,7 @@ Stack Trace:
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.DictionaryEntry" />
       </Docs>
     </Member>
     <Member MemberName="GetBaseException">
@@ -664,6 +667,8 @@ Stack Trace:
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
       </Docs>
     </Member>
     <Member MemberName="GetType">
@@ -699,6 +704,8 @@ Stack Trace:
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Type" />
+        <altmember cref="T:System.Object" />
       </Docs>
     </Member>
     <Member MemberName="HelpLink">
@@ -1075,6 +1082,7 @@ Stack Trace:
   
  By default, the stack trace is captured immediately before an exception object is thrown. Use <see cref="P:System.Environment.StackTrace" /> to get stack trace information when no exception is being thrown.</para>
         </block>
+        <altmember cref="P:System.Environment.StackTrace" />
       </Docs>
     </Member>
     <Member MemberName="TargetSite">
@@ -1182,5 +1190,18 @@ Stack Trace:
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Exception" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

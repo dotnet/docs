@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorDebugExceptionCallbackType"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorDebugExceptionCallbackType enumeration [.NET Framework debugging]"
 ms.assetid: 4d946ad4-3c19-42cb-bec9-8633325ba769

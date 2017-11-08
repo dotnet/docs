@@ -411,6 +411,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Net.NetworkInformation.NetworkInterface.LoopbackInterfaceIndex" />
       </Docs>
     </Member>
     <Member MemberName="IsReceiveOnly">
@@ -490,6 +491,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Net.NetworkInformation.NetworkInformationException">This property is not valid on computers running only Ipv6.</exception>
+        <altmember cref="P:System.Net.NetworkInformation.NetworkInterface.IPv6LoopbackInterfaceIndex" />
       </Docs>
     </Member>
     <Member MemberName="Name">

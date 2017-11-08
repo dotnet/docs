@@ -66,11 +66,31 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.PagerSettings> object that is contained in the <xref:System.Web.UI.WebControls.GridView.PagerSettings%2A> property to customize the text of the buttons that are displayed in the pager row of a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[PagerSettingsText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PagerSettingsText/CS/PagerSettingsTextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[PagerSettingsText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PagerSettingsText/VB/PagerSettingsTextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[PagerSettingsText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PagerSettingsText/CS/PagerSettingsTextcs.aspx#1)]
+ [!code-aspx-vb[PagerSettingsText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PagerSettingsText/VB/PagerSettingsTextvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsView.AllowPaging" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsView.PagerSettings" />
+    <altmember cref="T:System.Web.UI.WebControls.FormView" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.AllowPaging" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.PagerSettings" />
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="P:System.Web.UI.WebControls.GridView.AllowPaging" />
+    <altmember cref="P:System.Web.UI.WebControls.GridView.PagerSettings" />
+    <altmember cref="P:System.Web.UI.WebControls.PagerSettings.Mode" />
+    <altmember cref="P:System.Web.UI.WebControls.PagerSettings.FirstPageText" />
+    <altmember cref="P:System.Web.UI.WebControls.PagerSettings.FirstPageImageUrl" />
+    <altmember cref="P:System.Web.UI.WebControls.PagerSettings.PreviousPageText" />
+    <altmember cref="P:System.Web.UI.WebControls.PagerSettings.PreviousPageImageUrl" />
+    <altmember cref="P:System.Web.UI.WebControls.PagerSettings.NextPageText" />
+    <altmember cref="P:System.Web.UI.WebControls.PagerSettings.LastPageText" />
+    <altmember cref="P:System.Web.UI.WebControls.PagerSettings.LastPageImageUrl" />
+    <altmember cref="P:System.Web.UI.WebControls.PagerSettings.PageButtonCount" />
+    <altmember cref="P:System.Web.UI.WebControls.PagerSettings.Position" />
+    <altmember cref="P:System.Web.UI.WebControls.PagerSettings.Visible" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -96,6 +116,15 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.AllowPaging" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.PagerSettings" />
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.AllowPaging" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerSettings" />
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AllowPaging" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.PagerSettings" />
       </Docs>
     </Member>
     <Member MemberName="FirstPageImageUrl">
@@ -143,11 +172,20 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.PagerSettings.FirstPageImageUrl%2A> property to display an image for the first-page button in the pager row of a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[PagerSettingsImages#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PagerSettingsImages/CS/PagerSettingsImagescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[PagerSettingsImages#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PagerSettingsImages/VB/PagerSettingsImagesvb.aspx#1)]  -->  
+ [!code-aspx-csharp[PagerSettingsImages#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PagerSettingsImages/CS/PagerSettingsImagescs.aspx#1)]
+ [!code-aspx-vb[PagerSettingsImages#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PagerSettingsImages/VB/PagerSettingsImagesvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.Mode" />
+        <altmember cref="T:System.Web.UI.WebControls.PagerButtons" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.FirstPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.LastPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.LastPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.NextPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.NextPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.PreviousPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.PreviousPageText" />
       </Docs>
     </Member>
     <Member MemberName="FirstPageText">
@@ -189,11 +227,20 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.PagerSettings.FirstPageText%2A> property to customize the text that is displayed for the first-page button of the pager row in a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[PagerSettingsText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PagerSettingsText/CS/PagerSettingsTextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[PagerSettingsText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PagerSettingsText/VB/PagerSettingsTextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[PagerSettingsText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PagerSettingsText/CS/PagerSettingsTextcs.aspx#1)]
+ [!code-aspx-vb[PagerSettingsText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PagerSettingsText/VB/PagerSettingsTextvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.Mode" />
+        <altmember cref="T:System.Web.UI.WebControls.PagerButtons" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.FirstPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.LastPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.LastPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.NextPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.NextPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.PreviousPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.PreviousPageText" />
       </Docs>
     </Member>
     <Member MemberName="LastPageImageUrl">
@@ -241,11 +288,20 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.PagerSettings.LastPageImageUrl%2A> property to display an image for the last-page button in the pager row of a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[PagerSettingsImages#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PagerSettingsImages/CS/PagerSettingsImagescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[PagerSettingsImages#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PagerSettingsImages/VB/PagerSettingsImagesvb.aspx#1)]  -->  
+ [!code-aspx-csharp[PagerSettingsImages#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PagerSettingsImages/CS/PagerSettingsImagescs.aspx#1)]
+ [!code-aspx-vb[PagerSettingsImages#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PagerSettingsImages/VB/PagerSettingsImagesvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.Mode" />
+        <altmember cref="T:System.Web.UI.WebControls.PagerButtons" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.FirstPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.FirstPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.LastPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.NextPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.NextPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.PreviousPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.PreviousPageText" />
       </Docs>
     </Member>
     <Member MemberName="LastPageText">
@@ -287,11 +343,20 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.PagerSettings.LastPageText%2A> property to customize the text that is displayed for the last-page button of the pager row in a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[PagerSettingsText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PagerSettingsText/CS/PagerSettingsTextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[PagerSettingsText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PagerSettingsText/VB/PagerSettingsTextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[PagerSettingsText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PagerSettingsText/CS/PagerSettingsTextcs.aspx#1)]
+ [!code-aspx-vb[PagerSettingsText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PagerSettingsText/VB/PagerSettingsTextvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.Mode" />
+        <altmember cref="T:System.Web.UI.WebControls.PagerButtons" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.FirstPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.FirstPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.LastPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.NextPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.NextPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.PreviousPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.PreviousPageText" />
       </Docs>
     </Member>
     <Member MemberName="Mode">
@@ -358,12 +423,21 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.PagerSettings.Mode%2A> property to specify that the pager row for a <xref:System.Web.UI.WebControls.GridView> control should display numeric buttons.  
   
- <!-- TODO: review snippet reference [!code-csharp[PagerSettingsNumeric#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PagerSettingsNumeric/CS/PagerSettingsNumericcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[PagerSettingsNumeric#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PagerSettingsNumeric/VB/PagerSettingsNumericvb.aspx#1)]  -->  
+ [!code-aspx-csharp[PagerSettingsNumeric#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PagerSettingsNumeric/CS/PagerSettingsNumericcs.aspx#1)]
+ [!code-aspx-vb[PagerSettingsNumeric#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PagerSettingsNumeric/VB/PagerSettingsNumericvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="P:System.Web.UI.WebControls.PagerSettings.Mode" /> is set to a value that is not one of the <see cref="T:System.Web.UI.WebControls.PagerButtons" /> values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.PagerButtons" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.FirstPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.FirstPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.LastPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.LastPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.NextPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.NextPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.PreviousPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.PreviousPageText" />
       </Docs>
     </Member>
     <Member MemberName="NextPageImageUrl">
@@ -411,11 +485,20 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.PagerSettings.NextPageImageUrl%2A> property to display an image for the next-page button in the pager row of a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[PagerSettingsImages#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PagerSettingsImages/CS/PagerSettingsImagescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[PagerSettingsImages#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PagerSettingsImages/VB/PagerSettingsImagesvb.aspx#1)]  -->  
+ [!code-aspx-csharp[PagerSettingsImages#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PagerSettingsImages/CS/PagerSettingsImagescs.aspx#1)]
+ [!code-aspx-vb[PagerSettingsImages#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PagerSettingsImages/VB/PagerSettingsImagesvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.Mode" />
+        <altmember cref="T:System.Web.UI.WebControls.PagerButtons" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.FirstPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.FirstPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.LastPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.LastPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.NextPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.PreviousPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.PreviousPageText" />
       </Docs>
     </Member>
     <Member MemberName="NextPageText">
@@ -457,11 +540,20 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.PagerSettings.NextPageText%2A> property to customize the text that is displayed for the next-page button of the pager row in a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[PagerSettingsText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PagerSettingsText/CS/PagerSettingsTextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[PagerSettingsText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PagerSettingsText/VB/PagerSettingsTextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[PagerSettingsText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PagerSettingsText/CS/PagerSettingsTextcs.aspx#1)]
+ [!code-aspx-vb[PagerSettingsText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PagerSettingsText/VB/PagerSettingsTextvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.Mode" />
+        <altmember cref="T:System.Web.UI.WebControls.PagerButtons" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.FirstPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.FirstPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.LastPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.LastPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.NextPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.PreviousPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.PreviousPageText" />
       </Docs>
     </Member>
     <Member MemberName="PageButtonCount">
@@ -500,12 +592,15 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.PagerSettings.PageButtonCount%2A> property to display five page buttons at a time in the pager row of a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[PagerSettingsNumeric#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PagerSettingsNumeric/CS/PagerSettingsNumericcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[PagerSettingsNumeric#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PagerSettingsNumeric/VB/PagerSettingsNumericvb.aspx#1)]  -->  
+ [!code-aspx-csharp[PagerSettingsNumeric#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PagerSettingsNumeric/CS/PagerSettingsNumericcs.aspx#1)]
+ [!code-aspx-vb[PagerSettingsNumeric#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PagerSettingsNumeric/VB/PagerSettingsNumericvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="P:System.Web.UI.WebControls.PagerSettings.PageButtonCount" /> is set to a value that is less than 1.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.Mode" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.Position" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.Visible" />
       </Docs>
     </Member>
     <Member MemberName="Position">
@@ -550,12 +645,15 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.PagerSettings.Position%2A> property to display the pager row at the bottom of a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[PagerSettingsText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PagerSettingsText/CS/PagerSettingsTextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[PagerSettingsText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PagerSettingsText/VB/PagerSettingsTextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[PagerSettingsText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PagerSettingsText/CS/PagerSettingsTextcs.aspx#1)]
+ [!code-aspx-vb[PagerSettingsText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PagerSettingsText/VB/PagerSettingsTextvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="P:System.Web.UI.WebControls.PagerSettings.Position" /> is set to a value that is not one of the <see cref="T:System.Web.UI.WebControls.PagerPosition" /> values.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.Mode" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.PageButtonCount" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.Visible" />
       </Docs>
     </Member>
     <Member MemberName="PreviousPageImageUrl">
@@ -603,11 +701,20 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.PagerSettings.PreviousPageImageUrl%2A> property to display an image for the previous-page button in the pager row of a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[PagerSettingsImages#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PagerSettingsImages/CS/PagerSettingsImagescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[PagerSettingsImages#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PagerSettingsImages/VB/PagerSettingsImagesvb.aspx#1)]  -->  
+ [!code-aspx-csharp[PagerSettingsImages#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PagerSettingsImages/CS/PagerSettingsImagescs.aspx#1)]
+ [!code-aspx-vb[PagerSettingsImages#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PagerSettingsImages/VB/PagerSettingsImagesvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.Mode" />
+        <altmember cref="T:System.Web.UI.WebControls.PagerButtons" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.FirstPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.FirstPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.LastPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.LastPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.NextPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.NextPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.PreviousPageText" />
       </Docs>
     </Member>
     <Member MemberName="PreviousPageText">
@@ -649,11 +756,20 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.PagerSettings.PreviousPageText%2A> property to customize the text that is displayed for the previous-page button of the pager row in a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[PagerSettingsText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PagerSettingsText/CS/PagerSettingsTextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[PagerSettingsText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PagerSettingsText/VB/PagerSettingsTextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[PagerSettingsText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PagerSettingsText/CS/PagerSettingsTextcs.aspx#1)]
+ [!code-aspx-vb[PagerSettingsText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PagerSettingsText/VB/PagerSettingsTextvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.Mode" />
+        <altmember cref="T:System.Web.UI.WebControls.PagerButtons" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.FirstPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.FirstPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.LastPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.LastPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.NextPageImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.NextPageText" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.PreviousPageImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="PropertyChanged">
@@ -711,6 +827,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IStateManager" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.LoadViewState">
@@ -742,6 +859,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Object" />
+        <altmember cref="M:System.Web.UI.IStateManager.LoadViewState(System.Object)" />
+        <altmember cref="T:System.Web.UI.IStateManager" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.SaveViewState">
@@ -771,6 +891,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Object" />
+        <altmember cref="M:System.Web.UI.IStateManager.SaveViewState" />
+        <altmember cref="T:System.Web.UI.IStateManager" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.TrackViewState">
@@ -799,6 +922,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.StateBag" />
+        <altmember cref="M:System.Web.UI.IStateManager.TrackViewState" />
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
+        <altmember cref="T:System.Web.UI.IStateManager" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -825,6 +952,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.ToString" />
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -864,11 +992,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.PagerSettings.Visible%2A> property to hide the pager row when a <xref:System.Web.UI.WebControls.GridView> control is in edit mode.  
   
- <!-- TODO: review snippet reference [!code-csharp[PagerSettingsVisible#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PagerSettingsVisible/CS/PagerSettingsVisiblecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[PagerSettingsVisible#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PagerSettingsVisible/VB/PagerSettingsVisiblevb.aspx#1)]  -->  
+ [!code-aspx-csharp[PagerSettingsVisible#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PagerSettingsVisible/CS/PagerSettingsVisiblecs.aspx#1)]
+ [!code-aspx-vb[PagerSettingsVisible#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PagerSettingsVisible/VB/PagerSettingsVisiblevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.Mode" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.PageButtonCount" />
+        <altmember cref="P:System.Web.UI.WebControls.PagerSettings.Position" />
       </Docs>
     </Member>
   </Members>

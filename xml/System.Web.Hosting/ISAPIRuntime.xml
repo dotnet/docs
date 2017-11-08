@@ -21,6 +21,9 @@
     <summary>Manages <see cref="T:System.Web.HttpWorkerRequest" /> objects in the .NET Framework. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:System.Web.Hosting.IISAPIRuntime" />
+    <altmember cref="T:System.MarshalByRefObject" />
+    <altmember cref="T:System.Web.Hosting.IRegisteredObject" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

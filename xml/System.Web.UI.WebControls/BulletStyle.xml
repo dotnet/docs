@@ -32,11 +32,14 @@
 ## Examples  
  The following example demonstrates how to create a <xref:System.Web.UI.WebControls.BulletedList> control. A <xref:System.Web.UI.WebControls.ListBox> control is populated with all available <xref:System.Web.UI.WebControls.BulletStyle> enumeration values. The bullet style changes based on the style that the user selects from the list box.  
   
- <!-- TODO: review snippet reference [!code-csharp[BulletedListStylesExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BulletedListStylesExample/CS/bulletedliststylescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[BulletedListStylesExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BulletedListStylesExample/VB/bulletedliststylesvb.aspx#1)]  -->  
+ [!code-aspx-csharp[BulletedListStylesExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BulletedListStylesExample/CS/bulletedliststylescs.aspx#1)]
+ [!code-aspx-vb[BulletedListStylesExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BulletedListStylesExample/VB/bulletedliststylesvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.BulletedList" />
+    <altmember cref="P:System.Web.UI.WebControls.BulletedList.BulletStyle" />
+    <altmember cref="P:System.Web.UI.WebControls.BulletedList.BulletImageUrl" />
   </Docs>
   <Members>
     <Member MemberName="Circle">

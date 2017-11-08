@@ -10,9 +10,10 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "INotifyPropertyChanged interface, implementing"
+  - "INotifyPropertyChanged interface [Windows Forms], implementing"
 ms.assetid: eac428af-b43b-46ac-80d9-1a5f88658725
 caps.latest.revision: 8
 author: dotnet-bot

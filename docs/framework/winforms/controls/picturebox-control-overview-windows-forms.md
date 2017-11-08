@@ -11,12 +11,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "PictureBox"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "PictureBox control [Windows Forms], about PictureBox controls"
-  - "picture controls, about picture controls"
-  - "image controls, about image controls"
+  - "picture controls [Windows Forms], about picture controls"
+  - "image controls [Windows Forms], about image controls"
 ms.assetid: e5befee7-dc29-4888-a7c4-3b177e394112
 caps.latest.revision: 8
 author: dotnet-bot

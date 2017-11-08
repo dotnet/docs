@@ -47,6 +47,9 @@
  ]]></format>
     </remarks>
     <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for the ability of inheritors to access unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />. This class cannot be inherited by partially trusted code.</permission>
+    <altmember cref="P:System.Exception.StackTrace" />
+    <altmember cref="P:System.Environment.StackTrace" />
+    <altmember cref="P:System.Runtime.Serialization.Formatters.ServerFault.StackTrace" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -176,6 +179,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.StackFrame" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -213,6 +217,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The parameter <paramref name="e" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Exception" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -289,6 +294,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The parameter <paramref name="e" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Exception" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -331,6 +337,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The parameter <paramref name="e" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="skipFrames" /> parameter is negative.</exception>
+        <altmember cref="T:System.Exception" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -417,6 +424,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Threading.ThreadStateException">The thread <paramref name="targetThread" /> is not suspended.</exception>
+        <altmember cref="T:System.Threading.Thread" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -460,6 +468,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The parameter <paramref name="e" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="skipFrames" /> parameter is negative.</exception>
+        <altmember cref="T:System.Exception" />
       </Docs>
     </Member>
     <Member MemberName="FrameCount">
@@ -545,6 +554,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.StackFrame" />
+        <altmember cref="M:System.Diagnostics.StackTrace.GetFrames" />
       </Docs>
     </Member>
     <Member MemberName="GetFrames">
@@ -599,6 +610,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.StackFrame" />
+        <altmember cref="M:System.Diagnostics.StackTrace.GetFrame(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="METHODS_TO_SKIP">
@@ -675,5 +688,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.StackTrace" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

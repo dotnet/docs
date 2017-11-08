@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "GetTypeArguments"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ITypeName::GetTypeArguments method [.NET Framework hosting]"
   - "GetTypeArguments method [.NET Framework hosting]"

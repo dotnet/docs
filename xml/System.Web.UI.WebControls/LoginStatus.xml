@@ -174,11 +174,12 @@
 ## Examples  
  The following code example attaches an event handler to the <xref:System.Web.UI.WebControls.LoginStatus.LoggedOut> event. The event handler in this example is empty.  
   
- <!-- TODO: review snippet reference [!code-csharp[LoginStatusAfterLogout#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginStatusAfterLogout/CS/loginstatusafterlogoutcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[LoginStatusAfterLogout#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginStatusAfterLogout/VB/loginstatusafterlogoutvb.aspx#1)]  -->  
+ [!code-aspx-csharp[LoginStatusAfterLogout#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginStatusAfterLogout/CS/loginstatusafterlogoutcs.aspx#1)]
+ [!code-aspx-vb[LoginStatusAfterLogout#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginStatusAfterLogout/VB/loginstatusafterlogoutvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.LoginStatus.OnLoggedOut(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="LoggingOut">
@@ -210,8 +211,8 @@
 ## Examples  
  The following code example attaches an event handler to the <xref:System.Web.UI.WebControls.LoginStatus.LoggingOut> event. The event handler updates a field on the form, and then cancels the logout attempt.  
   
- <!-- TODO: review snippet reference [!code-csharp[LoginStatusBeforeLogout#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginStatusBeforeLogout/CS/loginstatusbeforelogoutcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[LoginStatusBeforeLogout#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginStatusBeforeLogout/VB/loginstatusbeforelogoutvb.aspx#1)]  -->  
+ [!code-aspx-csharp[LoginStatusBeforeLogout#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginStatusBeforeLogout/CS/loginstatusbeforelogoutcs.aspx#1)]
+ [!code-aspx-vb[LoginStatusBeforeLogout#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginStatusBeforeLogout/VB/loginstatusbeforelogoutvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -256,11 +257,12 @@
 ## Examples  
  The following code example shows how to set the <xref:System.Web.UI.WebControls.LoginStatus.LoginImageUrl%2A> property to a specific image.  
   
- <!-- TODO: review snippet reference [!code-csharp[LoginStatusLoginImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginStatusLoginImageUrl/CS/loginstatusloginimageurlcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[LoginStatusLoginImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginStatusLoginImageUrl/VB/loginstatusloginimageurlvb.aspx#1)]  -->  
+ [!code-aspx-csharp[LoginStatusLoginImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginStatusLoginImageUrl/CS/loginstatusloginimageurlcs.aspx#1)]
+ [!code-aspx-vb[LoginStatusLoginImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginStatusLoginImageUrl/VB/loginstatusloginimageurlvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.LoginStatus.LoginText" />
       </Docs>
     </Member>
     <Member MemberName="LoginText">
@@ -298,11 +300,12 @@
 ## Examples  
  The following code example shows how to set the <xref:System.Web.UI.WebControls.LoginStatus.LoginText%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[LoginStatusLoginText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginStatusLoginText/CS/loginstatuslogintextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[LoginStatusLoginText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginStatusLoginText/VB/loginstatuslogintextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[LoginStatusLoginText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginStatusLoginText/CS/loginstatuslogintextcs.aspx#1)]
+ [!code-aspx-vb[LoginStatusLoginText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginStatusLoginText/VB/loginstatuslogintextvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.LoginStatus.LoginImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="LogoutAction">
@@ -349,12 +352,13 @@
 ## Examples  
  The following code example sets the <xref:System.Web.UI.WebControls.LoginStatus.LogoutAction%2A> property to the <xref:System.Web.UI.WebControls.LogoutAction.RedirectToLoginPage> value to send the user to the login page.  
   
- <!-- TODO: review snippet reference [!code-csharp[LoginStatusLogoutAction#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginStatusLogoutAction/CS/loginstatuslogoutactioncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[LoginStatusLogoutAction#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginStatusLogoutAction/VB/loginstatuslogoutactionvb.aspx#1)]  -->  
+ [!code-aspx-csharp[LoginStatusLogoutAction#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginStatusLogoutAction/CS/loginstatuslogoutactioncs.aspx#1)]
+ [!code-aspx-vb[LoginStatusLogoutAction#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginStatusLogoutAction/VB/loginstatuslogoutactionvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The property is set to an invalid <see cref="T:System.Web.UI.WebControls.LogoutAction" /> value.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.LogoutAction" />
       </Docs>
     </Member>
     <Member MemberName="LogoutImageUrl">
@@ -396,8 +400,8 @@
 ## Examples  
  The following code example sets the <xref:System.Web.UI.WebControls.LoginStatus.LogoutImageUrl%2A> property to a specific image.  
   
- <!-- TODO: review snippet reference [!code-csharp[LoginStatusLogoutImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginStatusLogoutImageUrl/CS/loginstatuslogoutimageurlcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[LoginStatusLogoutImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginStatusLogoutImageUrl/VB/loginstatuslogoutimageurlvb.aspx#1)]  -->  
+ [!code-aspx-csharp[LoginStatusLogoutImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginStatusLogoutImageUrl/CS/loginstatuslogoutimageurlcs.aspx#1)]
+ [!code-aspx-vb[LoginStatusLogoutImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginStatusLogoutImageUrl/VB/loginstatuslogoutimageurlvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -447,11 +451,12 @@
 ## Examples  
  The following code example sets the <xref:System.Web.UI.WebControls.LoginStatus.LogoutPageUrl%2A> property to a logout page and the <xref:System.Web.UI.WebControls.LoginStatus.LogoutAction%2A> property to <xref:System.Web.UI.WebControls.LogoutAction.Redirect> so that the user is redirected when logging out.  
   
- <!-- TODO: review snippet reference [!code-csharp[LoginStatusLogoutPageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginStatusLogoutPageUrl/CS/loginstatuslogoutpageurlcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[LoginStatusLogoutPageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginStatusLogoutPageUrl/VB/loginstatuslogoutpageurlvb.aspx#1)]  -->  
+ [!code-aspx-csharp[LoginStatusLogoutPageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginStatusLogoutPageUrl/CS/loginstatuslogoutpageurlcs.aspx#1)]
+ [!code-aspx-vb[LoginStatusLogoutPageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginStatusLogoutPageUrl/VB/loginstatuslogoutpageurlvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.LoginStatus.LogoutAction" />
       </Docs>
     </Member>
     <Member MemberName="LogoutText">
@@ -489,11 +494,12 @@
 ## Examples  
  The following code example shows how to set the <xref:System.Web.UI.WebControls.LoginStatus.LogoutText%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[LoginStatusLogoutText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginStatusLogoutText/CS/loginstatuslogouttextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[LoginStatusLogoutText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginStatusLogoutText/VB/loginstatuslogouttextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[LoginStatusLogoutText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginStatusLogoutText/CS/loginstatuslogouttextcs.aspx#1)]
+ [!code-aspx-vb[LoginStatusLogoutText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginStatusLogoutText/VB/loginstatuslogouttextvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.LoginStatus.LogoutImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="OnLoggedOut">
@@ -529,8 +535,8 @@
 ## Examples  
  The following code example attaches an event handler to the <xref:System.Web.UI.WebControls.LoginStatus.OnLoggedOut%2A> event. The event handler in this example is empty.  
   
- <!-- TODO: review snippet reference [!code-csharp[LoginStatusAfterLogout#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginStatusAfterLogout/CS/loginstatusafterlogoutcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[LoginStatusAfterLogout#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginStatusAfterLogout/VB/loginstatusafterlogoutvb.aspx#1)]  -->  
+ [!code-aspx-csharp[LoginStatusAfterLogout#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginStatusAfterLogout/CS/loginstatusafterlogoutcs.aspx#1)]
+ [!code-aspx-vb[LoginStatusAfterLogout#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginStatusAfterLogout/VB/loginstatusafterlogoutvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -572,8 +578,8 @@
 ## Examples  
  The following code example attaches an event handler to the <xref:System.Web.UI.WebControls.LoginStatus.OnLoggingOut%2A> event. The event handler updates a field on the form, and then cancels the logout attempt.  
   
- <!-- TODO: review snippet reference [!code-csharp[LoginStatusBeforeLogout#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginStatusBeforeLogout/CS/loginstatusbeforelogoutcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[LoginStatusBeforeLogout#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginStatusBeforeLogout/VB/loginstatusbeforelogoutvb.aspx#1)]  -->  
+ [!code-aspx-csharp[LoginStatusBeforeLogout#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginStatusBeforeLogout/CS/loginstatusbeforelogoutcs.aspx#1)]
+ [!code-aspx-vb[LoginStatusBeforeLogout#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginStatusBeforeLogout/VB/loginstatusbeforelogoutvb.aspx#1)]  
   
  ]]></format>
         </remarks>

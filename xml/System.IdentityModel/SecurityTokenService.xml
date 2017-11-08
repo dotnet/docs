@@ -47,6 +47,9 @@
     <block subset="none" type="overrides">
       <para>You must override both the <see cref="M:System.IdentityModel.SecurityTokenService.GetScope(System.Security.Claims.ClaimsPrincipal,System.IdentityModel.Protocols.WSTrust.RequestSecurityToken)" /> and the <see cref="M:System.IdentityModel.SecurityTokenService.GetOutputClaimsIdentity(System.Security.Claims.ClaimsPrincipal,System.IdentityModel.Protocols.WSTrust.RequestSecurityToken,System.IdentityModel.Scope)" /> methods.</para>
     </block>
+    <altmember cref="T:System.IdentityModel.Scope" />
+    <altmember cref="T:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration" />
+    <altmember cref="T:System.IdentityModel.Services.FederatedPassiveSecurityTokenServiceOperations" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -556,6 +559,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IdentityModel.SecurityTokenService.Issue(System.Security.Claims.ClaimsPrincipal,System.IdentityModel.Protocols.WSTrust.RequestSecurityToken)" />
       </Docs>
     </Member>
     <Member MemberName="GetOutputClaimsIdentity">
@@ -603,6 +607,8 @@
         <block subset="none" type="overrides">
           <para>You must override this method in your implementation of the <see cref="T:System.IdentityModel.SecurityTokenService" /> class.</para>
         </block>
+        <altmember cref="T:System.IdentityModel.Scope" />
+        <altmember cref="M:System.IdentityModel.SecurityTokenService.Issue(System.Security.Claims.ClaimsPrincipal,System.IdentityModel.Protocols.WSTrust.RequestSecurityToken)" />
       </Docs>
     </Member>
     <Member MemberName="GetProofToken">
@@ -642,6 +648,7 @@
  -or-  
   
  <paramref name="scope" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.IdentityModel.SecurityTokenService.Issue(System.Security.Claims.ClaimsPrincipal,System.IdentityModel.Protocols.WSTrust.RequestSecurityToken)" />
       </Docs>
     </Member>
     <Member MemberName="GetRequestorProofEncryptingCredentials">
@@ -715,6 +722,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IdentityModel.SecurityTokenService.Issue(System.Security.Claims.ClaimsPrincipal,System.IdentityModel.Protocols.WSTrust.RequestSecurityToken)" />
       </Docs>
     </Member>
     <Member MemberName="GetScope">
@@ -771,6 +779,8 @@
         <block subset="none" type="overrides">
           <para>You must override this method in your implementation of the <see cref="T:System.IdentityModel.SecurityTokenService" /> class.</para>
         </block>
+        <altmember cref="T:System.IdentityModel.Scope" />
+        <altmember cref="M:System.IdentityModel.SecurityTokenService.Issue(System.Security.Claims.ClaimsPrincipal,System.IdentityModel.Protocols.WSTrust.RequestSecurityToken)" />
       </Docs>
     </Member>
     <Member MemberName="GetSecurityTokenHandler">
@@ -802,6 +812,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IdentityModel.SecurityTokenService.Issue(System.Security.Claims.ClaimsPrincipal,System.IdentityModel.Protocols.WSTrust.RequestSecurityToken)" />
       </Docs>
     </Member>
     <Member MemberName="GetTokenLifetime">
@@ -840,6 +851,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IdentityModel.SecurityTokenService.Issue(System.Security.Claims.ClaimsPrincipal,System.IdentityModel.Protocols.WSTrust.RequestSecurityToken)" />
       </Docs>
     </Member>
     <Member MemberName="Issue">
@@ -1089,6 +1101,7 @@
   
  The <see cref="P:System.IdentityModel.Protocols.WSTrust.WSTrustMessage.KeyType" /> of the request is <see cref="F:System.IdentityModel.Protocols.WSTrust.KeyTypes.Bearer" /> and the <see langword="KeySize" /> element is present, but its value is not equal to zero.</exception>
         <exception cref="T:System.IdentityModel.UnsupportedTokenTypeBadRequestException">The STS does not support the request token type (based on the value of the <see cref="P:System.IdentityModel.Protocols.WSTrust.WSTrustMessage.TokenType" /> property of the request).</exception>
+        <altmember cref="M:System.IdentityModel.SecurityTokenService.Issue(System.Security.Claims.ClaimsPrincipal,System.IdentityModel.Protocols.WSTrust.RequestSecurityToken)" />
       </Docs>
     </Member>
   </Members>

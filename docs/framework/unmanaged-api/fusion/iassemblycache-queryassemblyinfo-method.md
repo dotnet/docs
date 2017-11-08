@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IAssemblyCache::QueryAssemblyInfo"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IAssemblyCache::QueryAssemblyInfo method [.NET Framework fusion]"
   - "QueryAssemblyInfo method [.NET Framework fusion]"

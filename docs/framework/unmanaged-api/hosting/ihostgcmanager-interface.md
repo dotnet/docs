@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostGCManager"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostGCManager interface [.NET Framework hosting]"
 ms.assetid: 820330a4-244c-4f67-ab5e-f24b0b3c2080

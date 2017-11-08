@@ -10,12 +10,14 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "status bars, updating at run time"
-  - "status bars, refreshing panels"
+  - "status bars [Windows Forms], updating at run time"
+  - "status bars [Windows Forms], refreshing panels"
   - "StatusBar control [Windows Forms], refreshing panels"
-  - "panels, refreshing status bar"
+  - "panels [Windows Forms], refreshing status bar"
 ms.assetid: cc2abb06-c082-49f7-a5a3-2fd1bbcb58d1
 caps.latest.revision: 18
 author: dotnet-bot

@@ -27,11 +27,18 @@
 ## Examples  
  The following code example demonstrates how to keep the <xref:System.Web.UI.WebControls.DetailsView> control in edit mode after an update operation by setting the <xref:System.Web.UI.WebControls.DetailsView.DefaultMode%2A> property to `DetailsViewMode.Edit`.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewDefaultMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewDefaultMode/CS/detailsviewdefaultmodecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewDefaultMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewDefaultMode/VB/detailsviewdefaultmodevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewDefaultMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewDefaultMode/CS/detailsviewdefaultmodecs.aspx#1)]
+ [!code-aspx-vb[DetailsViewDefaultMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewDefaultMode/VB/detailsviewdefaultmodevb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsView.CurrentMode" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsView.DefaultMode" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsViewModeEventArgs.NewMode" />
+    <altmember cref="M:System.Web.UI.WebControls.DetailsView.ChangeMode(System.Web.UI.WebControls.DetailsViewMode)" />
+    <altmember cref="E:System.Web.UI.WebControls.DetailsView.ModeChanged" />
+    <altmember cref="E:System.Web.UI.WebControls.DetailsView.ModeChanging" />
   </Docs>
   <Members>
     <Member MemberName="Edit">

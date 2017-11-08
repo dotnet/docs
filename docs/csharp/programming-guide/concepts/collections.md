@@ -1,26 +1,14 @@
 ---
 title: "Collections (C#)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "get-started-article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: 317d7dc3-8587-4873-8b3e-556f86497939
 caps.latest.revision: 6
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Collections (C#)
 For many applications, you want to create and manage groups of related objects. There are two ways to group objects: by creating arrays of objects, and by creating collections of objects.  
@@ -194,11 +182,11 @@ public class Galaxy
   
  Some of the common collection classes are described in this section:  
   
--   @System.Collections.Generic classes  
+-   <xref:System.Collections.Generic> classes  
   
--   @System.Collections.Concurrent classes  
+-   <xref:System.Collections.Concurrent> classes  
   
--   @System.Collections classes  
+-   <xref:System.Collections> classes  
   
 <a name="BKMK_Generic"></a>
 ### System.Collections.Generic Classes  
@@ -214,7 +202,7 @@ public class Galaxy
 |<xref:System.Collections.Generic.SortedList%602>|Represents a collection of key/value pairs that are sorted by key based on the associated <xref:System.Collections.Generic.IComparer%601> implementation.|  
 |<xref:System.Collections.Generic.Stack%601>|Represents a last in, first out (LIFO) collection of objects.|  
   
- For additional information, see [Commonly Used Collection Types](../../../standard/collections/commonly-used-collection-types.md), [Selecting a Collection Class](../../../standard/collections/selecting-a-collection-class.md), and @System.Collections.Generic.  
+ For additional information, see [Commonly Used Collection Types](../../../standard/collections/commonly-used-collection-types.md), [Selecting a Collection Class](../../../standard/collections/selecting-a-collection-class.md), and <xref:System.Collections.Generic>.  
   
 <a name="BKMK_Concurrent"></a>
 ### System.Collections.Concurrent Classes  

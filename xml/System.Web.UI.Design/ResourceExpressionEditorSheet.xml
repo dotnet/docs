@@ -45,12 +45,13 @@
   
  The visual designer uses the <xref:System.Web.UI.Design.ResourceExpressionEditor> object to assign the resource expression for the `Text` property. The following aspx source shows an example of a property value set using a resource expression:  
   
- <!-- TODO: review snippet reference [!code-csharp[ControlsUsingExpressions#3](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlsUsingExpressions/CS/controlsusingexpressionscs.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[ControlsUsingExpressions#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlsUsingExpressions/VB/controlsusingexpressionsvb.aspx#3)]  -->
+ [!code-aspx-csharp[ControlsUsingExpressions#3](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlsUsingExpressions/CS/controlsusingexpressionscs.aspx#3)]
+ [!code-aspx-vb[ControlsUsingExpressions#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlsUsingExpressions/VB/controlsusingexpressionsvb.aspx#3)]
  [!code-xml[ControlsUsingExpressions#3](~/samples/snippets/common/VS_Snippets_WebNet/ControlsUsingExpressions/Common/controlsusingexpressions.xml#3)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.Design.ResourceExpressionEditor" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -78,6 +79,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.ResourceExpressionEditor" />
       </Docs>
     </Member>
     <Member MemberName="ClassKey">
@@ -108,6 +110,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.ResourceExpressionEditor.GetExpressionEditorSheet(System.String,System.IServiceProvider)" />
       </Docs>
     </Member>
     <Member MemberName="GetExpression">
@@ -127,6 +130,7 @@
         <summary>Returns a resource expression that is formed by the expression editor sheet property values.</summary>
         <returns>The resource expression string for the current settings in the sheet.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.ResourceExpressionEditor" />
       </Docs>
     </Member>
     <Member MemberName="IsValid">
@@ -153,6 +157,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.ExpressionEditor" />
+        <altmember cref="M:System.Web.UI.Design.ResourceExpressionEditor.GetExpressionEditorSheet(System.String,System.IServiceProvider)" />
       </Docs>
     </Member>
     <Member MemberName="ResourceKey">
@@ -188,6 +194,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.ResourceExpressionEditor" />
       </Docs>
     </Member>
   </Members>

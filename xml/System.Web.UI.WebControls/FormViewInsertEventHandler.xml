@@ -33,15 +33,19 @@
 ## Examples  
  The following example demonstrates how to programmatically add a <xref:System.Web.UI.WebControls.FormViewInsertEventHandler> delegate to the <xref:System.Web.UI.WebControls.FormView.ItemInserting> event of a <xref:System.Web.UI.WebControls.FormView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewInsertedEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertedEventHandler/CS/formviewinsertedeventhandlercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewInsertedEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertedEventHandler/VB/formviewinsertedeventhandlervb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewInsertedEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertedEventHandler/CS/formviewinsertedeventhandlercs.aspx#1)]
+ [!code-aspx-vb[FormViewInsertedEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertedEventHandler/VB/formviewinsertedeventhandlervb.aspx#1)]  
   
  The following example demonstrates how to declaratively add a <xref:System.Web.UI.WebControls.FormViewInsertEventHandler> delegate to the <xref:System.Web.UI.WebControls.FormView.ItemInserting> event of a <xref:System.Web.UI.WebControls.FormView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewInsertEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertEventArgs/CS/formviewinserteventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewInsertEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertEventArgs/VB/formviewinserteventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewInsertEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertEventArgs/CS/formviewinserteventargscs.aspx#1)]
+ [!code-aspx-vb[FormViewInsertEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertEventArgs/VB/formviewinserteventargsvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.FormView" />
+    <altmember cref="T:System.Web.UI.WebControls.FormViewInsertEventArgs" />
+    <altmember cref="E:System.Web.UI.WebControls.FormView.ItemInserting" />
+    <altmember cref="M:System.Web.UI.WebControls.FormView.OnItemInserting(System.Web.UI.WebControls.FormViewInsertEventArgs)" />
   </Docs>
 </Type>

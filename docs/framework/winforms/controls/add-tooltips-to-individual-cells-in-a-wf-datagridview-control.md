@@ -10,11 +10,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "tooltips [Windows Forms], adding to data grids"
   - "DataGridView control [Windows Forms], adding tooltips"
-  - "data grids, adding tooltips"
+  - "data grids [Windows Forms], adding tooltips"
 ms.assetid: 2a81f9de-d58b-4ea8-bc0b-8d93c2f4cf78
 caps.latest.revision: 16
 author: dotnet-bot

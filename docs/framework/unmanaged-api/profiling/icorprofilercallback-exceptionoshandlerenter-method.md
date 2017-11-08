@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::ExceptionOSHandlerEnter"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ExceptionOSHandlerEnter method [.NET Framework profiling]"
   - "ICorProfilerCallback::ExceptionOSHandlerEnter method [.NET Framework profiling]"

@@ -33,6 +33,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Xml.XmlDocument.CreateXmlDeclaration(System.String,System.String,System.String)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -319,6 +320,7 @@
         <summary>Gets the type of the current node.</summary>
         <value>For <see langword="XmlDeclaration" /> nodes, this value is XmlNodeType.XmlDeclaration.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Xml.XmlNodeType" />
       </Docs>
     </Member>
     <Member MemberName="Standalone">

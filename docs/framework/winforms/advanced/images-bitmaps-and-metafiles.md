@@ -9,10 +9,8 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "metafiles, about metafiles"
+  - "metafiles [Windows Forms], about metafiles"
   - "bitmaps [Windows Forms], about bitmaps"
   - "images [Windows Forms], about images"
   - "Windows Forms, images"

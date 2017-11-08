@@ -24,13 +24,10 @@ Represents a default protocol mapping between a transport protocol scheme (e.g.,
   
 ## Syntax  
   
-```vb  
-   <protocolMapping>    <add binding="String"         bindingConfiguration="String"         scheme="http/net.msmq/net.pipe/net.tcp"/></protocolMapping>  
-```  
-  
-```csharp  
-```  
-  
+```xml
+   <protocolMapping>    <add binding="String"         bindingConfiguration="String"         scheme="http/net.msmq/net.pipe/net.tcp"/></protocolMapping>
+```
+
 ## Attributes and Elements  
  The following sections describe attributes, child elements, and parent elements.  
   

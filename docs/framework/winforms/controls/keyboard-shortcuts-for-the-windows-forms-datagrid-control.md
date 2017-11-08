@@ -9,10 +9,8 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "keyboard shortcuts, DataGrid control"
+  - "keyboard shortcuts [Windows Forms], DataGrid control"
   - "DataGrid control [Windows Forms], navigation keys"
 ms.assetid: a01780f9-20d5-4f5f-808f-c790c9a007a5
 caps.latest.revision: 9

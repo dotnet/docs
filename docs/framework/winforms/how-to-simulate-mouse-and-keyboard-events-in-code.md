@@ -10,13 +10,15 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "keyboards, event simulation"
-  - "user input, simulating"
-  - "SendKeys, using"
-  - "mouse clicks, simulating"
-  - "mouse, event simulation"
+  - "keyboards [Windows Forms], event simulation"
+  - "user input [Windows Forms], simulating"
+  - "SendKeys [Windows Forms], using"
+  - "mouse clicks [Windows Forms], simulating"
+  - "mouse [Windows Forms], event simulation"
 ms.assetid: 6abcb67e-3766-4af2-9590-bf5dabd17e41
 caps.latest.revision: 14
 author: dotnet-bot

@@ -29,6 +29,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.TypeConverter" />
+    <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetConverter" />
+    <altmember cref="T:System.ComponentModel.TypeConverterAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -53,6 +56,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.TypeConverter" />
       </Docs>
     </Member>
     <Member MemberName="CanConvertFrom">
@@ -87,6 +91,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.TypeConverter" />
       </Docs>
     </Member>
     <Member MemberName="ConvertFrom">
@@ -123,6 +128,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The conversion could not be performed.</exception>
+        <altmember cref="T:System.ComponentModel.TypeConverter" />
       </Docs>
     </Member>
     <Member MemberName="GetStandardValues">
@@ -154,6 +160,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.DataSetViewSchema.GetFields" />
+        <altmember cref="T:System.Web.UI.IDataSourceViewSchemaAccessor" />
+        <altmember cref="M:System.Web.UI.Design.DataSourceViewSchemaConverter.GetStandardValuesSupported(System.ComponentModel.ITypeDescriptorContext)" />
+        <altmember cref="M:System.Web.UI.Design.DataSourceViewSchemaConverter.GetStandardValuesExclusive(System.ComponentModel.ITypeDescriptorContext)" />
+        <altmember cref="T:System.ComponentModel.TypeConverter" />
       </Docs>
     </Member>
     <Member MemberName="GetStandardValues">
@@ -178,6 +189,7 @@
         <summary>Returns a list of available values that can be assigned to the associated control property.</summary>
         <returns>A <see cref="T:System.ComponentModel.TypeConverter.StandardValuesCollection" /> containing available values for assignment to the associated control property.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.TypeConverter" />
       </Docs>
     </Member>
     <Member MemberName="GetStandardValuesExclusive">
@@ -208,6 +220,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.Design.DataSourceViewSchemaConverter.GetStandardValuesSupported" />
+        <altmember cref="T:System.ComponentModel.TypeConverter" />
       </Docs>
     </Member>
     <Member MemberName="GetStandardValuesSupported">
@@ -240,7 +254,19 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.TypeConverter" />
+        <altmember cref="M:System.Web.UI.Design.DataSourceViewSchemaConverter.GetStandardValuesExclusive(System.ComponentModel.ITypeDescriptorContext)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetStandardValues">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a list of available values that can be assigned to a control property.</summary>
+        <altmember cref="T:System.ComponentModel.TypeConverter" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

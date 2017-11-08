@@ -10,10 +10,11 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "sorting data"
-  - "data sorting, ADO.NET"
+  - "data sorting [Windows Forms], ADO.NET"
   - "data [Windows Forms], filtering"
   - "BindingSource component [Windows Forms], sorting and filtering data"
   - "filtering [Windows Forms], ADO.NET"

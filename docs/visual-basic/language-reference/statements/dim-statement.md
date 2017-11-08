@@ -1,62 +1,43 @@
 ---
 title: "Dim Statement (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Dim"
   - "Dim"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
-  - "Public keyword, in Dim statement"
-  - "Dim statement"
-  - "fixed-length strings, declaring"
+  - "Public keyword [Visual Basic], in Dim statement"
+  - "Dim statement [Visual Basic]"
+  - "fixed-length strings [Visual Basic], declaring"
   - "variables [Visual Basic], declaring"
-  - "WithEvents keyword, Dim statement"
-  - "dynamic arrays, Dim statement"
+  - "WithEvents keyword [Visual Basic], Dim statement"
+  - "dynamic arrays [Visual Basic], Dim statement"
   - "variables [Visual Basic], initializing"
   - "{} braces"
-  - "fields, as member variables"
-  - "declarations, dynamic arrays"
-  - "member variables"
-  - "default values"
+  - "fields [Visual Basic], as member variables"
+  - "declarations [Visual Basic], dynamic arrays"
+  - "member variables [Visual Basic]"
+  - "default values [Visual Basic]"
   - "data types [Visual Basic], assigning"
   - "braces {}"
-  - "As keyword, in Dim statement"
+  - "As keyword [Visual Basic], in Dim statement"
   - "arrays [Visual Basic], declaring"
-  - "New keyword, Dim statement"
-  - "To keyword, in Dim statement"
-  - "storage, allocating"
-  - "local variables"
-  - "declaration statements"
-  - "Dim statement, syntax"
+  - "New keyword [Visual Basic], Dim statement"
+  - "To keyword [Visual Basic], in Dim statement"
+  - "storage [Visual Basic], allocating"
+  - "local variables [Visual Basic]"
+  - "declaration statements [Visual Basic]"
+  - "Dim statement [Visual Basic], syntax"
   - "variables [Visual Basic], member and local"
 ms.assetid: fae3eca1-f0b2-4400-994b-7aa58a848448
 caps.latest.revision: 72
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Dim Statement (Visual Basic)
 Declares and allocates storage space for one or more variables.  

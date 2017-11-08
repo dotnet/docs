@@ -10,7 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "Multithreaded Windows Forms Control sample [Windows Forms]"
   - "custom controls [Windows Forms], multithreading"

@@ -10,17 +10,18 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "composite transformations"
-  - "transformations, linear"
+  - "transformations [Windows Forms], linear"
   - "matrices"
   - "translations in matrix representation"
-  - "transformations, composite"
+  - "transformations [Windows Forms], composite"
   - "vectors"
   - "linear transformations"
-  - "transformations, matrix representation of"
-  - "transformations, translation"
+  - "transformations [Windows Forms], matrix representation of"
+  - "transformations [Windows Forms], translation"
   - "affine transformations"
 ms.assetid: 0659fe00-9e0c-41c4-9118-016f2404c905
 caps.latest.revision: 14

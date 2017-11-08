@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugAssembly2::IsFullyTrusted"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugAssembly2::IsFullyTrusted method [.NET Framework debugging]"
   - "IsFullyTrusted method [.NET Framework debugging]"

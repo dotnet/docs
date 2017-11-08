@@ -32,6 +32,7 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="E:System.Web.UI.MobileControls.Command.ItemCommand" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -59,6 +60,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.MobileControls.Command.ItemCommand" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -90,6 +92,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.MobileControls.Command.ItemCommand" />
       </Docs>
     </Member>
     <Member MemberName="CommandSource">
@@ -108,6 +111,7 @@
         <summary>Returns the control that raised the event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <value>The control that raised the event.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Web.UI.MobileControls.Command.ItemCommand" />
       </Docs>
     </Member>
     <Member MemberName="DefaultCommand">
@@ -140,10 +144,11 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[MobileCmdEventArgsSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileCmdEventArgsSample/cs/Default.aspx#1)]  -->  
+ [!code-aspx-csharp[MobileCmdEventArgsSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileCmdEventArgsSample/cs/Default.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.MobileControls.Command.ItemCommand" />
       </Docs>
     </Member>
     <Member MemberName="ListItem">
@@ -162,7 +167,18 @@
         <summary>Returns the list item that generated the event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <value>The list item that generated the event.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Web.UI.MobileControls.Command.ItemCommand" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.ListCommandEventArgs" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <altmember cref="E:System.Web.UI.MobileControls.Command.ItemCommand" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

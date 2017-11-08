@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorRuntimeHost::CreateEvidence"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CreateEvidence method [.NET Framework hosting]"
   - "ICorRuntimeHost::CreateEvidence method [.NET Framework hosting]"

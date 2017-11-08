@@ -54,6 +54,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Text.RegularExpressions.CaptureCollection" />
   </Docs>
   <Members>
     <Member MemberName="Index">
@@ -220,7 +221,7 @@
 |Pattern|Description|  
 |-------------|-----------------|  
 |`^`|Begin the match at the beginning of the string.|  
-|`([a-z]+)`|Match one or more occurrences of any character from a to z. Because the regular expression engine is passed the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType> option, this comparison is case-insensitive. This is the first capturing group.|  
+|`([a-z]+)`|Match one or more occurrences of any character from a to z. Because the regular expression engine is passed the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType> option, this comparison is case-insensitive. This is the first capturing group.|  
 |`(\d+)?`|Match zero or one occurrence of one or more decimal digits. This is the second capturing group.|  
 |`\.`|Match a literal period character.|  
 |`([a-z]+`|Match one or more occurrences of any character from a to z. The comparison is case-insensitive.|  

@@ -14,6 +14,7 @@
     <summary>Represents a stream that sends its data to an <see cref="T:Microsoft.JScript.IMessageReceiver" />. The data is stored in a buffer until the data is flushed or the stream is closed.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:System.IO.Stream" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,6 +34,7 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.COMCharStream" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.IO.Stream" />
       </Docs>
     </Member>
     <Member MemberName="CanRead">
@@ -53,6 +55,8 @@
           <see langword="false" /> in all cases.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.IMessageReceiver" />
+        <altmember cref="T:System.IO.Stream" />
       </Docs>
     </Member>
     <Member MemberName="CanSeek">
@@ -73,6 +77,8 @@
           <see langword="false" /> in all cases.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.IMessageReceiver" />
+        <altmember cref="T:System.IO.Stream" />
       </Docs>
     </Member>
     <Member MemberName="CanWrite">
@@ -93,6 +99,8 @@
           <see langword="true" /> in all cases.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.IMessageReceiver" />
+        <altmember cref="T:System.IO.Stream" />
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -112,6 +120,8 @@
         <summary>Sends this stream's data to the <see cref="T:Microsoft.JScript.IMessageReceiver" /> and clears its buffer.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="M:Microsoft.JScript.COMCharStream.Flush" />
+        <altmember cref="T:System.IO.Stream" />
       </Docs>
     </Member>
     <Member MemberName="Flush">
@@ -131,6 +141,8 @@
         <summary>Sends this stream's data to the <see cref="T:Microsoft.JScript.IMessageReceiver" /> and clears its buffer.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="M:Microsoft.JScript.COMCharStream.Close" />
+        <altmember cref="T:System.IO.Stream" />
       </Docs>
     </Member>
     <Member MemberName="Length">
@@ -150,6 +162,8 @@
         <value>The length of the stream.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.IMessageReceiver" />
+        <altmember cref="T:System.IO.Stream" />
       </Docs>
     </Member>
     <Member MemberName="Position">
@@ -169,6 +183,8 @@
         <value>The current position in the stream.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.IMessageReceiver" />
+        <altmember cref="T:System.IO.Stream" />
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -196,6 +212,8 @@
         <returns>Throws a <see cref="T:System.NotSupportedException" /> exception in all cases.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.IMessageReceiver" />
+        <altmember cref="T:System.IO.Stream" />
       </Docs>
     </Member>
     <Member MemberName="Seek">
@@ -221,6 +239,8 @@
         <returns>0 in all cases.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.IMessageReceiver" />
+        <altmember cref="T:System.IO.Stream" />
       </Docs>
     </Member>
     <Member MemberName="SetLength">
@@ -243,6 +263,8 @@
         <summary>Sets the length of the stream.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.IMessageReceiver" />
+        <altmember cref="T:System.IO.Stream" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -269,6 +291,8 @@
         <summary>Writes the specified byte data to the stream.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.IMessageReceiver" />
+        <altmember cref="T:System.IO.Stream" />
       </Docs>
     </Member>
   </Members>

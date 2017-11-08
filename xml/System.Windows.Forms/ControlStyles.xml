@@ -55,6 +55,8 @@ myControl.SetStyle(UserPaint Or AllPaintingInWmPaint Or DoubleBuffer, True)
     <block subset="none" type="overrides">
       <para>Inheriting from a standard Windows Forms control and changing the <see cref="F:System.Windows.Forms.ControlStyles.StandardClick" /> or <see cref="F:System.Windows.Forms.ControlStyles.StandardDoubleClick" /> bit values to <see langword="true" /> can cause unexpected behavior or can have no effect at all if the control does not support the <see cref="E:System.Windows.Forms.Control.Click" /> or <see cref="E:System.Windows.Forms.Control.DoubleClick" /> events.</para>
     </block>
+    <altmember cref="M:System.Windows.Forms.Control.SetStyle(System.Windows.Forms.ControlStyles,System.Boolean)" />
+    <altmember cref="M:System.Windows.Forms.Control.GetStyle(System.Windows.Forms.ControlStyles)" />
   </Docs>
   <Members>
     <Member MemberName="AllPaintingInWmPaint">

@@ -46,5 +46,15 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IO.FileSystemEventArgs" />
+    <altmember cref="T:System.IO.FileSystemEventHandler" />
+    <altmember cref="T:System.IO.FileSystemWatcher" />
+    <altmember cref="T:System.IO.InternalBufferOverflowException" />
+    <altmember cref="T:System.IO.NotifyFilters" />
+    <altmember cref="M:System.IO.FileSystemWatcher.OnRenamed(System.IO.RenamedEventArgs)" />
+    <altmember cref="E:System.IO.FileSystemWatcher.Renamed" />
+    <altmember cref="T:System.IO.RenamedEventArgs" />
+    <altmember cref="T:System.IO.WaitForChangedResult" />
+    <altmember cref="T:System.IO.WatcherChangeTypes" />
   </Docs>
 </Type>

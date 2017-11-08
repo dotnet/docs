@@ -11,10 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "LinkLabel"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "links, LinkLabel control"
+  - "links [Windows Forms], LinkLabel control"
   - "Label control [Windows Forms], about Label control"
   - "LinkLabel control [Windows Forms], about LinkLabel control"
 ms.assetid: 9e248549-10ca-43a3-bb5e-60f583d369f1

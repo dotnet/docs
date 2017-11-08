@@ -79,6 +79,7 @@
   
  The <paramref name="context" /> parameter can be used to extract additional information about the environment the converter is being invoked from. It might be <see langword="null" />, so you should always check. Also, properties of the <paramref name="context" /> object might also return <see langword="null" />.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
       </Docs>
     </Member>
     <Member MemberName="ConvertFrom">
@@ -111,6 +112,7 @@
   
  The <paramref name="context" /> parameter can be used to extract additional information about the environment the converter is being invoked from. It might be <see langword="null" />, so you should always check. Also, properties of the <paramref name="context" /> object might also return <see langword="null" />.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
       </Docs>
     </Member>
     <Member MemberName="GetStandardValues">
@@ -177,6 +179,7 @@
   
  The <paramref name="context" /> parameter can be used to extract additional information about the environment this converter is being invoked from. It might be <see langword="null" />, so you should always check. Also, properties of the <paramref name="context" /> object might also return <see langword="null" />.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
       </Docs>
     </Member>
     <Member MemberName="GetStandardValuesSupported">

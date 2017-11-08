@@ -10,12 +10,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "menu items, removing from MDI drop-down menus"
+  - "menu items [Windows Forms], removing from MDI drop-down menus"
   - "MenuStrip control [Windows Forms], merging"
   - "MenuStrip control [Windows Forms], removing"
-  - "MDI, merging menu items"
+  - "MDI [Windows Forms], merging menu items"
 ms.assetid: bdafe60d-82ee-45bc-97fe-eeefca6e54c1
 caps.latest.revision: 12
 author: dotnet-bot

@@ -33,10 +33,13 @@
 ## Examples  
  The following example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.Repeater.ItemCommand> event of the <xref:System.Web.UI.WebControls.Repeater>. Information about the button is displayed when a <xref:System.Web.UI.WebControls.Button> control within the <xref:System.Web.UI.WebControls.Repeater> is clicked.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic RepeaterCommandEventHandler Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RepeaterCommandEventHandler Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic RepeaterCommandEventHandler Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RepeaterCommandEventHandler Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic RepeaterCommandEventHandler Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RepeaterCommandEventHandler Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic RepeaterCommandEventHandler Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RepeaterCommandEventHandler Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Repeater" />
+    <altmember cref="E:System.Web.UI.WebControls.Repeater.ItemCommand" />
+    <altmember cref="T:System.Web.UI.WebControls.RepeaterCommandEventArgs" />
   </Docs>
 </Type>

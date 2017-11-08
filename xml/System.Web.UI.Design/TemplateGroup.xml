@@ -21,11 +21,14 @@
  To try it, compile the code, and then, in a design host such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)], look at the page in Design view. Select the control, click the action list to select a template to modify, and then use the drag-and-drop feature to move controls into the template.  
   
  [!code-csharp[DesignerTemplateGroupSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DesignerTemplateGroupSample/CS/TemplateGroupsSample.cs#1)]
+ [!code-aspx-csharp[DesignerTemplateGroupSample#2](~/samples/snippets/csharp/VS_Snippets_WebNet/DesignerTemplateGroupSample/CS/TemplateGroupsSample.aspx#2)]  
+
  [!code-vb[DesignerTemplateGroupSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DesignerTemplateGroupSample/VB/TemplateGroupsSample.vb#1)]  
-<!-- TODO: review snippet reference [!code-vb[DesignerTemplateGroupSample#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DesignerTemplateGroupSample/VB/TemplateGroupsSample.aspx#2)]  -->  
+ [!code-aspx-vb[DesignerTemplateGroupSample#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DesignerTemplateGroupSample/VB/TemplateGroupsSample.aspx#2)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.Design.ControlDesigner.TemplateGroups" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -140,6 +143,7 @@
         <value>
           <see langword="true" /> if there are no templates in the group; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.TemplateDefinition" />
       </Docs>
     </Member>
     <Member MemberName="Templates">
@@ -158,7 +162,18 @@
         <summary>Gets an array of all template definitions in the group.</summary>
         <value>An array of <see cref="T:System.Web.UI.Design.TemplateDefinition" /> objects.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.TemplateDefinition" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.TemplateGroup" /> class.</summary>
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.TemplateGroups" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

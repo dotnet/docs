@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRDataTarget::GetTLSValue"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetTLSValue method [.NET Framework debugging]"
   - "ICLRDataTarget::GetTLSValue method [.NET Framework debugging]"

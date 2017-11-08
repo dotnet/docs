@@ -27,11 +27,19 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItemStyleCollection> class to specify the style settings for the menu items in a <xref:System.Web.UI.WebControls.Menu> control based on the menu item's level. In this example, the <xref:System.Web.UI.WebControls.Menu.LevelMenuItemStyles%2A> property is created declaratively, and one <xref:System.Web.UI.WebControls.MenuItemStyle> object is removed and another added to the <xref:System.Web.UI.WebControls.MenuItemStyleCollection> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemStyleCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemStyleCollection/CS/menuitemstylecollectioncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemStyleCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemStyleCollection/VB/menuitemstylecollectionvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemStyleCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemStyleCollection/CS/menuitemstylecollectioncs.aspx#1)]
+ [!code-aspx-vb[MenuItemStyleCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemStyleCollection/VB/menuitemstylecollectionvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Menu" />
+    <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+    <altmember cref="T:System.Web.UI.WebControls.MenuItemStyle" />
+    <altmember cref="T:System.Web.UI.WebControls.StyleCollection" />
+    <altmember cref="T:System.Web.UI.WebControls.SubMenuStyle" />
+    <altmember cref="T:System.Web.UI.WebControls.SubMenuStyleCollection" />
+    <altmember cref="P:System.Web.UI.WebControls.Menu.LevelMenuItemStyles" />
+    <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSelectedStyles" />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -64,11 +72,19 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItemStyleCollection> class to specify the style settings for the menu items in a <xref:System.Web.UI.WebControls.Menu> control based on the menu item's level. In this example, the <xref:System.Web.UI.WebControls.Menu.LevelMenuItemStyles%2A> property is created declaratively, and one <xref:System.Web.UI.WebControls.MenuItemStyle> object is removed and another added to the <xref:System.Web.UI.WebControls.MenuItemStyleCollection> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemStyleCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemStyleCollection/CS/menuitemstylecollectioncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemStyleCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemStyleCollection/VB/menuitemstylecollectionvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemStyleCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemStyleCollection/CS/menuitemstylecollectioncs.aspx#1)]
+ [!code-aspx-vb[MenuItemStyleCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemStyleCollection/VB/menuitemstylecollectionvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.StyleCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.SubMenuStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.SubMenuStyleCollection" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelMenuItemStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSelectedStyles" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -99,6 +115,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.StyleCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.SubMenuStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.SubMenuStyleCollection" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelMenuItemStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSelectedStyles" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -129,6 +153,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.StyleCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.SubMenuStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.SubMenuStyleCollection" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelMenuItemStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSelectedStyles" />
       </Docs>
     </Member>
     <Member MemberName="CreateKnownType">
@@ -202,6 +234,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.StyleCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.SubMenuStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.SubMenuStyleCollection" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelMenuItemStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSelectedStyles" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -234,6 +274,15 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.StyleCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.SubMenuStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.SubMenuStyleCollection" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelMenuItemStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSelectedStyles" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemStyleCollection.Add(System.Web.UI.WebControls.MenuItemStyle)" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -263,6 +312,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.StyleCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.SubMenuStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.SubMenuStyleCollection" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelMenuItemStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSelectedStyles" />
       </Docs>
     </Member>
     <Member MemberName="OnInsert">
@@ -316,6 +373,15 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.StyleCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.SubMenuStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.SubMenuStyleCollection" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelMenuItemStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSelectedStyles" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemStyleCollection.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -349,11 +415,20 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItemStyleCollection> class to specify the style settings for the menu items in a <xref:System.Web.UI.WebControls.Menu> control based on the menu item's level. In this example, the <xref:System.Web.UI.WebControls.Menu.LevelMenuItemStyles%2A> property is created declaratively, and one <xref:System.Web.UI.WebControls.MenuItemStyle> object is removed and another added to the <xref:System.Web.UI.WebControls.MenuItemStyleCollection> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemStyleCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemStyleCollection/CS/menuitemstylecollectioncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemStyleCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemStyleCollection/VB/menuitemstylecollectionvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemStyleCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemStyleCollection/CS/menuitemstylecollectioncs.aspx#1)]
+ [!code-aspx-vb[MenuItemStyleCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemStyleCollection/VB/menuitemstylecollectionvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.StyleCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.SubMenuStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.SubMenuStyleCollection" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelMenuItemStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSelectedStyles" />
+        <altmember cref="M:System.Web.UI.WebControls.MenuItemStyleCollection.Remove(System.Web.UI.WebControls.MenuItemStyle)" />
       </Docs>
     </Member>
     <Member MemberName="SetDirtyObject">

@@ -34,6 +34,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.Control" />
+    <altmember cref="T:System.Web.UI.Page" />
+    <altmember cref="P:System.Web.UI.Control.Controls" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -63,6 +66,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">Occurs if the <paramref name="owner" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="P:System.Web.UI.Control.Controls" />
+        <altmember cref="T:System.Web.UI.Control" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -103,6 +108,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">Thrown if the <paramref name="child" /> parameter does not specify a control.</exception>
         <exception cref="T:System.Web.HttpException">Thrown if the <see cref="T:System.Web.UI.ControlCollection" /> is read-only.</exception>
+        <altmember cref="P:System.Web.UI.Control.Controls" />
+        <altmember cref="M:System.Web.UI.ControlCollection.AddAt(System.Int32,System.Web.UI.Control)" />
       </Docs>
     </Member>
     <Member MemberName="AddAt">
@@ -144,6 +151,8 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="child" /> parameter does not specify a control.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than zero or greater than the <see cref="P:System.Web.UI.ControlCollection.Count" /> property.</exception>
         <exception cref="T:System.Web.HttpException">The <see cref="T:System.Web.UI.ControlCollection" /> is read-only.</exception>
+        <altmember cref="P:System.Web.UI.Control.Controls" />
+        <altmember cref="M:System.Web.UI.ControlCollection.Add(System.Web.UI.Control)" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -177,6 +186,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.Controls" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -208,6 +218,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.Controls" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -233,6 +244,8 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.Web.HttpException">
           <paramref name="array" /> is not <see langword="null" /> and not one-dimensional.</exception>
+        <altmember cref="P:System.Web.UI.Control.Controls" />
+        <altmember cref="T:System.Array" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -261,6 +274,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.Controls" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -290,6 +304,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEnumerator" />
+        <altmember cref="P:System.Web.UI.Control.Controls" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -327,6 +343,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.Controls" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -356,6 +373,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.Controls" />
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -384,6 +402,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.Controls" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -411,12 +430,13 @@
 ## Examples  
  The following code example uses the <xref:System.Web.UI.ControlCollection.Item%2A> property to specify the index location of a child control that is removed in a <xref:System.Web.UI.ControlCollection.Remove%2A> method call. This is performed by the `myButton.Controls.Remove` syntax.  
   
- <!-- TODO: review snippet reference [!code-csharp[ControlCollection_ReSubmit_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlCollection_ReSubmit_2/CS/controlcollection_copyto.cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ControlCollection_ReSubmit_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlCollection_ReSubmit_2/VB/controlcollection_copyto.vb.aspx#1)]  -->  
+ [!code-aspx-csharp[ControlCollection_ReSubmit_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlCollection_ReSubmit_2/CS/controlcollection_copyto.cs.aspx#1)]
+ [!code-aspx-vb[ControlCollection_ReSubmit_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlCollection_ReSubmit_2/VB/controlcollection_copyto.vb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than zero or greater than or equal to <see cref="P:System.Web.UI.ControlCollection.Count" />.</exception>
+        <altmember cref="P:System.Web.UI.Control.Controls" />
       </Docs>
     </Member>
     <Member MemberName="Owner">
@@ -445,6 +465,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.Controls" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -481,6 +502,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.ControlCollection.RemoveAt(System.Int32)" />
+        <altmember cref="P:System.Web.UI.Control.Controls" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -518,6 +541,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">Thrown if the <see cref="T:System.Web.UI.ControlCollection" /> is read-only.</exception>
+        <altmember cref="P:System.Web.UI.Control.Controls" />
+        <altmember cref="M:System.Web.UI.ControlCollection.Remove(System.Web.UI.Control)" />
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -546,6 +571,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.Controls" />
       </Docs>
     </Member>
   </Members>

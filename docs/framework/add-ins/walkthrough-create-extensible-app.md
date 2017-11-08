@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "views [.NET Framework], add-in pipeline"
   - "host-side adapters for add-ins [.NET Framework]"
@@ -49,9 +52,6 @@ This walkthrough describes how to create a pipeline for an add-in that performs 
  The contract for this pipeline defines an object model of four arithmetic operations: add, subtract, multiply, and divide. The host provides the add-in with an equation to calculate, such as 2 + 2, and the add-in returns the result to the host.  
   
  Version 2 of the calculator add-in provides more calculating possibilities and demonstrates versioning. It is described in [Walkthrough: Enabling Backward Compatibility as Your Host Changes](http://msdn.microsoft.com/en-us/6fa15bb5-8f04-407d-bd7d-675dc043c848).  
-  
-> [!NOTE]
->  You can find additional sample code, and customer technology previews of tools for building add-in pipelines, at the [Managed Extensibility and Add-In Framework site on CodePlex](http://go.microsoft.com/fwlink/?LinkId=121190).  
   
 ## Prerequisites  
  You need the following to complete this walkthrough:  

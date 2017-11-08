@@ -38,6 +38,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Messaging.Message" />
+    <altmember cref="P:System.Messaging.MessageQueue.DefaultPropertiesToSend" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -107,6 +109,13 @@ myMessageQueue.DefaultPropertiesToSend.Label = "myLabel";
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Messaging.AcknowledgeTypes" />
+        <altmember cref="T:System.Messaging.EncryptionAlgorithm" />
+        <altmember cref="T:System.Messaging.HashAlgorithm" />
+        <altmember cref="T:System.Messaging.MessagePriority" />
+        <altmember cref="F:System.Messaging.Message.InfiniteTimeout" />
+        <altmember cref="P:System.Messaging.MessageQueue.DefaultPropertiesToSend" />
+        <altmember cref="T:System.Messaging.Message" />
       </Docs>
     </Member>
     <Member MemberName="AcknowledgeType">
@@ -140,6 +149,9 @@ myMessageQueue.DefaultPropertiesToSend.Label = "myLabel";
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.DefaultPropertiesToSend.AdministrationQueue" />
+        <altmember cref="P:System.Messaging.Message.AcknowledgeType" />
+        <altmember cref="T:System.Messaging.AcknowledgeTypes" />
       </Docs>
     </Member>
     <Member MemberName="AdministrationQueue">
@@ -175,6 +187,8 @@ myMessageQueue.DefaultPropertiesToSend.Label = "myLabel";
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.DefaultPropertiesToSend.AcknowledgeType" />
+        <altmember cref="P:System.Messaging.Message.AdministrationQueue" />
       </Docs>
     </Member>
     <Member MemberName="AppSpecific">
@@ -212,6 +226,8 @@ myMessageQueue.DefaultPropertiesToSend.Label = "myLabel";
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.DefaultPropertiesToSend.Extension" />
+        <altmember cref="P:System.Messaging.Message.AppSpecific" />
       </Docs>
     </Member>
     <Member MemberName="AttachSenderId">
@@ -248,6 +264,11 @@ myMessageQueue.DefaultPropertiesToSend.Label = "myLabel";
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.DefaultPropertiesToSend.UseAuthentication" />
+        <altmember cref="P:System.Messaging.MessageQueue.Authenticate" />
+        <altmember cref="P:System.Messaging.DefaultPropertiesToSend.HashAlgorithm" />
+        <altmember cref="P:System.Messaging.Message.AttachSenderId" />
+        <altmember cref="P:System.Messaging.Message.SenderId" />
       </Docs>
     </Member>
     <Member MemberName="EncryptionAlgorithm">
@@ -283,6 +304,11 @@ myMessageQueue.DefaultPropertiesToSend.Label = "myLabel";
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.DefaultPropertiesToSend.UseEncryption" />
+        <altmember cref="P:System.Messaging.MessageQueue.EncryptionRequired" />
+        <altmember cref="P:System.Messaging.DefaultPropertiesToSend.AcknowledgeType" />
+        <altmember cref="P:System.Messaging.Message.EncryptionAlgorithm" />
+        <altmember cref="T:System.Messaging.EncryptionAlgorithm" />
       </Docs>
     </Member>
     <Member MemberName="Extension">
@@ -322,6 +348,8 @@ myMessageQueue.DefaultPropertiesToSend.Label = "myLabel";
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.DefaultPropertiesToSend.AppSpecific" />
+        <altmember cref="P:System.Messaging.Message.Extension" />
       </Docs>
     </Member>
     <Member MemberName="HashAlgorithm">
@@ -357,6 +385,11 @@ myMessageQueue.DefaultPropertiesToSend.Label = "myLabel";
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.DefaultPropertiesToSend.UseAuthentication" />
+        <altmember cref="P:System.Messaging.DefaultPropertiesToSend.AttachSenderId" />
+        <altmember cref="P:System.Messaging.MessageQueue.Authenticate" />
+        <altmember cref="P:System.Messaging.Message.HashAlgorithm" />
+        <altmember cref="T:System.Messaging.HashAlgorithm" />
       </Docs>
     </Member>
     <Member MemberName="Label">
@@ -392,6 +425,8 @@ myMessageQueue.DefaultPropertiesToSend.Label = "myLabel";
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.Message.Label" />
+        <altmember cref="P:System.Messaging.MessageQueue.Label" />
       </Docs>
     </Member>
     <Member MemberName="Priority">
@@ -427,6 +462,9 @@ myMessageQueue.DefaultPropertiesToSend.Label = "myLabel";
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.MessageQueue.BasePriority" />
+        <altmember cref="P:System.Messaging.Message.Priority" />
+        <altmember cref="T:System.Messaging.MessagePriority" />
       </Docs>
     </Member>
     <Member MemberName="Recoverable">
@@ -465,6 +503,8 @@ myMessageQueue.DefaultPropertiesToSend.Label = "myLabel";
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.DefaultPropertiesToSend.UseTracing" />
+        <altmember cref="P:System.Messaging.Message.Recoverable" />
       </Docs>
     </Member>
     <Member MemberName="ResponseQueue">
@@ -500,6 +540,7 @@ myMessageQueue.DefaultPropertiesToSend.Label = "myLabel";
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.Message.ResponseQueue" />
       </Docs>
     </Member>
     <Member MemberName="TimeToBeReceived">
@@ -545,6 +586,9 @@ myMessageQueue.DefaultPropertiesToSend.Label = "myLabel";
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.DefaultPropertiesToSend.TimeToReachQueue" />
+        <altmember cref="F:System.Messaging.Message.InfiniteTimeout" />
+        <altmember cref="P:System.Messaging.Message.TimeToBeReceived" />
       </Docs>
     </Member>
     <Member MemberName="TimeToReachQueue">
@@ -584,6 +628,9 @@ myMessageQueue.DefaultPropertiesToSend.Label = "myLabel";
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.DefaultPropertiesToSend.TimeToBeReceived" />
+        <altmember cref="F:System.Messaging.Message.InfiniteTimeout" />
+        <altmember cref="P:System.Messaging.Message.TimeToReachQueue" />
       </Docs>
     </Member>
     <Member MemberName="TransactionStatusQueue">
@@ -621,6 +668,9 @@ myMessageQueue.DefaultPropertiesToSend.Label = "myLabel";
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.MessageQueue.Transactional" />
+        <altmember cref="T:System.Messaging.AcknowledgeTypes" />
+        <altmember cref="P:System.Messaging.Message.TransactionStatusQueue" />
       </Docs>
     </Member>
     <Member MemberName="UseAuthentication">
@@ -659,6 +709,10 @@ myMessageQueue.DefaultPropertiesToSend.Label = "myLabel";
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.MessageQueue.Authenticate" />
+        <altmember cref="P:System.Messaging.DefaultPropertiesToSend.AcknowledgeType" />
+        <altmember cref="P:System.Messaging.DefaultPropertiesToSend.AttachSenderId" />
+        <altmember cref="P:System.Messaging.Message.UseAuthentication" />
       </Docs>
     </Member>
     <Member MemberName="UseDeadLetterQueue">
@@ -699,6 +753,9 @@ myMessageQueue.DefaultPropertiesToSend.Label = "myLabel";
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.DefaultPropertiesToSend.UseJournalQueue" />
+        <altmember cref="P:System.Messaging.DefaultPropertiesToSend.UseTracing" />
+        <altmember cref="P:System.Messaging.Message.UseDeadLetterQueue" />
       </Docs>
     </Member>
     <Member MemberName="UseEncryption">
@@ -735,6 +792,9 @@ myMessageQueue.DefaultPropertiesToSend.Label = "myLabel";
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.DefaultPropertiesToSend.EncryptionAlgorithm" />
+        <altmember cref="P:System.Messaging.MessageQueue.EncryptionRequired" />
+        <altmember cref="P:System.Messaging.Message.UseEncryption" />
       </Docs>
     </Member>
     <Member MemberName="UseJournalQueue">
@@ -777,6 +837,11 @@ myMessageQueue.DefaultPropertiesToSend.Label = "myLabel";
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.DefaultPropertiesToSend.UseDeadLetterQueue" />
+        <altmember cref="P:System.Messaging.DefaultPropertiesToSend.UseTracing" />
+        <altmember cref="P:System.Messaging.MessageQueue.UseJournalQueue" />
+        <altmember cref="P:System.Messaging.MessageQueue.MaximumJournalSize" />
+        <altmember cref="P:System.Messaging.Message.UseJournalQueue" />
       </Docs>
     </Member>
     <Member MemberName="UseTracing">
@@ -813,6 +878,9 @@ myMessageQueue.DefaultPropertiesToSend.Label = "myLabel";
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.DefaultPropertiesToSend.UseDeadLetterQueue" />
+        <altmember cref="P:System.Messaging.DefaultPropertiesToSend.UseJournalQueue" />
+        <altmember cref="P:System.Messaging.Message.UseTracing" />
       </Docs>
     </Member>
   </Members>

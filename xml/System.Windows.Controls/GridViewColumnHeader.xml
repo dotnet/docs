@@ -41,6 +41,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.GridView" />
+    <altmember cref="T:System.Windows.Controls.GridViewColumn" />
+    <altmember cref="T:System.Windows.Controls.GridViewRowPresenter" />
+    <altmember cref="T:System.Windows.Controls.GridViewHeaderRowPresenter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -435,6 +439,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.GridViewColumnHeaderRole" />
       </Docs>
     </Member>
     <Member MemberName="RoleProperty">

@@ -38,7 +38,7 @@ This topic describes the format of trace data, how to view it, and approaches th
   
 -   Thread id.  
   
--   A unique trace identifier, which is a URL that points to a destination in the online MSDN library, from which you can obtain more information related to the trace.  
+-   A unique trace identifier, which is a URL that points to a destination in Microsoft Docs, from which you can obtain more information related to the trace.  
   
  All of these can be seen in the upper right panel in the Service Trace Viewer, or in the **Basic Information** section in the formatted view of the lower-right panel when selecting a trace.  
   

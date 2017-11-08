@@ -125,6 +125,7 @@
         <summary>The <see cref="P:System.Security.Cryptography.Pkcs.ContentInfo.Content" /> property  retrieves the content of the CMS/PKCS #7 message.</summary>
         <value>An array of byte values that represents the content data.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.ContentInfo.ContentType" />
       </Docs>
     </Member>
     <Member MemberName="ContentType">
@@ -149,6 +150,7 @@
         <summary>The <see cref="P:System.Security.Cryptography.Pkcs.ContentInfo.ContentType" /> property  retrieves the <see cref="T:System.Security.Cryptography.Oid" /> object that contains the <paramref name="object identifier" /> (OID)  of the content type of the inner content of the CMS/PKCS #7 message.</summary>
         <value>An <see cref="T:System.Security.Cryptography.Oid" /> object that contains the OID value that represents the content type.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.ContentInfo.Content" />
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -202,5 +204,15 @@
         <exception cref="T:System.Security.Cryptography.CryptographicException">An error occurred during a cryptographic operation.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an instance of the <see cref="T:System.Security.Cryptography.Pkcs.ContentInfo" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

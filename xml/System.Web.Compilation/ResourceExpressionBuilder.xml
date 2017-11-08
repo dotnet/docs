@@ -41,8 +41,8 @@
 ## Examples  
  The following code example retrieves the default currency from a resource file.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Compilation.ResourceExpressionBuilder#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Compilation.ResourceExpressionBuilder/CS/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Compilation.ResourceExpressionBuilder#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Compilation.ResourceExpressionBuilder/VB/Default.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.Compilation.ResourceExpressionBuilder#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Compilation.ResourceExpressionBuilder/CS/Default.aspx#1)]
+ [!code-aspx-vb[System.Web.Compilation.ResourceExpressionBuilder#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Compilation.ResourceExpressionBuilder/VB/Default.aspx#1)]
   
  This code reads the following value from a resource file named `Financial.resx` in the App_GlobalResources directory.  
   
@@ -52,6 +52,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Compilation.ExpressionBuilder" />
+    <altmember cref="T:System.Web.UI.Design.ResourceExpressionEditor" />
+    <altmember cref="T:System.Web.Compilation.BuildProvider" />
+    <altmember cref="T:System.Web.Compilation.BuildManager" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -102,6 +106,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.CompilationMode" />
       </Docs>
     </Member>
     <Member MemberName="GetCodeExpression">
@@ -224,7 +229,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.CompilationMode" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ParseExpression">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an object that represents the parsed expression.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

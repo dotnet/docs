@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRGCManager::Collect"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRGCManager::Collect method [.NET Framework hosting]"
   - "Collect method, ICLRGCManager interface [.NET Framework hosting]"

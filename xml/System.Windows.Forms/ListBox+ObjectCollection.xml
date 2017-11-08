@@ -46,6 +46,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ListBox.SelectedObjectCollection" />
+    <altmember cref="T:System.Windows.Forms.ListBox.SelectedIndexCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -207,6 +209,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ListBox.ObjectCollection.Add(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -237,6 +240,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ListBox.ObjectCollection.Add(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -294,6 +298,9 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="value" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Forms.ListBox.ObjectCollection.IndexOf(System.Object)" />
+        <altmember cref="M:System.Windows.Forms.ListBox.FindString(System.String)" />
+        <altmember cref="M:System.Windows.Forms.ListBox.FindStringExact(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -398,6 +405,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> parameter is null.</exception>
+        <altmember cref="M:System.Windows.Forms.ListBox.ObjectCollection.Contains(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -523,6 +531,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ListBox.ObjectCollection.Clear" />
+        <altmember cref="M:System.Windows.Forms.ListBox.ObjectCollection.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -561,6 +571,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than zero or greater than or equal to the value of the <see cref="P:System.Windows.Forms.ListBox.ObjectCollection.Count" /> property of the <see cref="T:System.Windows.Forms.ListBox.ObjectCollection" /> class.</exception>
+        <altmember cref="M:System.Windows.Forms.ListBox.ObjectCollection.Clear" />
+        <altmember cref="M:System.Windows.Forms.ListBox.ObjectCollection.Remove(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -704,5 +716,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddRange">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a group of items to the list of items for a <see cref="T:System.Windows.Forms.ListBox" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of <see cref="T:System.Windows.Forms.ListBox.ObjectCollection" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

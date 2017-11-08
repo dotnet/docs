@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataImport::GetPermissionSetProps"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetPermissionSetProps method [.NET Framework metadata]"
   - "IMetaDataImport::GetPermissionSetProps method [.NET Framework metadata]"

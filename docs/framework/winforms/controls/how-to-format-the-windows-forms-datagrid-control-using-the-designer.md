@@ -9,11 +9,9 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "columns [Windows Forms], DataGrid controls"
-  - "colors, applying to DataGrid controls"
+  - "colors [Windows Forms], applying to DataGrid controls"
   - "DataGrid control [Windows Forms], formatting"
   - "DataGrid control [Windows Forms], default styles"
   - "tables [Windows Forms], formatting in DataGrid control"

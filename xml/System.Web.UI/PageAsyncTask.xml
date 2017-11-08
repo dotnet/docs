@@ -45,8 +45,8 @@
 ## Examples  
  The following code example registers three asynchronous tasks to a page and executes them in parallel. Each task calls a method that merely causes the thread to sleep for 5 seconds.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.PageAsyncTask#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.PageAsyncTask/CS/page_asynctask.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.PageAsyncTask#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.PageAsyncTask/VB/page_asynctask.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.PageAsyncTask#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.PageAsyncTask/CS/page_asynctask.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.PageAsyncTask#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.PageAsyncTask/VB/page_asynctask.aspx#1)]  
   
  [!code-csharp[System.Web.UI.PageAsyncTask#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.PageAsyncTask/CS/App_Code/SlowTask.cs#2)]
  [!code-vb[System.Web.UI.PageAsyncTask#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.PageAsyncTask/VB/App_Code/SlowTask.vb#2)]  
@@ -198,8 +198,8 @@
 ## Examples  
  The following code example registers three asynchronous tasks to a page and executes them in parallel. Each task calls a method that merely causes the thread to sleep for 5 seconds. A <xref:System.Web.UI.PageAsyncTask.BeginHandler%2A> delegate is specified for each task.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.PageAsyncTask#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.PageAsyncTask/CS/page_asynctask.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.PageAsyncTask#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.PageAsyncTask/VB/page_asynctask.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.PageAsyncTask#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.PageAsyncTask/CS/page_asynctask.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.PageAsyncTask#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.PageAsyncTask/VB/page_asynctask.aspx#1)]  
   
  [!code-csharp[System.Web.UI.PageAsyncTask#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.PageAsyncTask/CS/App_Code/SlowTask.cs#2)]
  [!code-vb[System.Web.UI.PageAsyncTask#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.PageAsyncTask/VB/App_Code/SlowTask.vb#2)]  
@@ -234,8 +234,8 @@
 ## Examples  
  The following code example registers three asynchronous tasks to a page and executes them in parallel. Each task calls a method that merely causes the thread to sleep for 5 seconds. An <xref:System.Web.UI.PageAsyncTask.EndHandler%2A> delegate is specified for each task.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.PageAsyncTask#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.PageAsyncTask/CS/page_asynctask.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.PageAsyncTask#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.PageAsyncTask/VB/page_asynctask.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.PageAsyncTask#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.PageAsyncTask/CS/page_asynctask.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.PageAsyncTask#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.PageAsyncTask/VB/page_asynctask.aspx#1)]  
   
  [!code-csharp[System.Web.UI.PageAsyncTask#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.PageAsyncTask/CS/App_Code/SlowTask.cs#2)]
  [!code-vb[System.Web.UI.PageAsyncTask#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.PageAsyncTask/VB/App_Code/SlowTask.vb#2)]  
@@ -337,8 +337,8 @@
 ## Examples  
  The following code example registers three asynchronous tasks to a page and executes them in parallel. Each task calls a method that merely causes the thread to sleep for 5 seconds. A <xref:System.Web.UI.PageAsyncTask.TimeoutHandler%2A> delegate is specified for each task.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.PageAsyncTask#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.PageAsyncTask/CS/page_asynctask.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.PageAsyncTask#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.PageAsyncTask/VB/page_asynctask.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.PageAsyncTask#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.PageAsyncTask/CS/page_asynctask.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.PageAsyncTask#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.PageAsyncTask/VB/page_asynctask.aspx#1)]  
   
  [!code-csharp[System.Web.UI.PageAsyncTask#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.PageAsyncTask/CS/App_Code/SlowTask.cs#2)]
  [!code-vb[System.Web.UI.PageAsyncTask#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.PageAsyncTask/VB/App_Code/SlowTask.vb#2)]  
@@ -347,5 +347,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.PageAsyncTask" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

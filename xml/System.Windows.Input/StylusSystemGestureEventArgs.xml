@@ -13,6 +13,7 @@
   <Docs>
     <summary>Provides data for the <see cref="E:System.Windows.UIElement.StylusSystemGesture" /> event.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Input.StylusSystemGestureEventHandler" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,6 +36,7 @@
         <param name="systemGesture">The <see cref="T:System.Windows.Input.SystemGesture" /> that raises the event.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.StylusSystemGestureEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Input.StylusSystemGestureEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="InvokeEventHandler">
@@ -83,6 +85,7 @@
         <summary>Gets the <see cref="T:System.Windows.Input.SystemGesture" /> that raises the event.</summary>
         <value>The <see cref="T:System.Windows.Input.SystemGesture" /> that raises the event.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Input.StylusSystemGestureEventHandler" />
       </Docs>
     </Member>
   </Members>

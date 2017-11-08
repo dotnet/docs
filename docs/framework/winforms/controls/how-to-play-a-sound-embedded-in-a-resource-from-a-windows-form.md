@@ -10,12 +10,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "sounds, playing from resources"
+  - "sounds [Windows Forms], playing from resources"
   - "resources [Windows Forms], playing sounds"
-  - "playing sounds, from resources"
-  - "SoundPlayer class, playing sounds from resources"
+  - "playing sounds [Windows Forms], from resources"
+  - "SoundPlayer class [Windows Forms], playing sounds from resources"
 ms.assetid: 7d148bb6-8a1e-47d7-a08d-35828d2e688f
 caps.latest.revision: 17
 author: dotnet-bot

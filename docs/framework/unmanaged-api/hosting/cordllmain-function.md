@@ -17,8 +17,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "_CorDllMain"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "_CorDllMain function [.NET Framework hosting]"
 ms.assetid: bc7b51cf-39d3-48ec-a5cb-2f179fbefff8

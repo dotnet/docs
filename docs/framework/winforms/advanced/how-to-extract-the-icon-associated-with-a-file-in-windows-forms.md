@@ -10,7 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "displaying a file name and its file type icon in a ListView control [Windows Forms]"
   - "file name extension icons [Windows Forms], displaying in a ListView"

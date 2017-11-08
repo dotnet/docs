@@ -9,11 +9,9 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "ColorDialog component"
-  - "colors, dialog box"
+  - "colors [Windows Forms], dialog box"
   - "color dialog box"
 ms.assetid: 261793e0-8252-47c5-b76c-621857b8da44
 caps.latest.revision: 9

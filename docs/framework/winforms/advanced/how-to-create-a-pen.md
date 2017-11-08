@@ -10,10 +10,12 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "graphics, creating pens"
-  - "pens, creating"
+  - "graphics [Windows Forms], creating pens"
+  - "pens [Windows Forms], creating"
   - "Pen object"
 ms.assetid: 7fbea8b7-7ac1-4413-9c17-733a850381e3
 caps.latest.revision: 12

@@ -98,13 +98,13 @@
 ## Examples  
  The following example demonstrates how to populate a <xref:System.Web.UI.WebControls.Menu> control with static <xref:System.Web.UI.WebControls.MenuItem> objects using declarative syntax.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItem/CS/menuitemcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItem/VB/menuitemvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItem/CS/menuitemcs.aspx#1)]
+ [!code-aspx-vb[MenuItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItem/VB/menuitemvb.aspx#1)]  
   
  The following example demonstrates how to bind a <xref:System.Web.UI.WebControls.Menu> control to a <xref:System.Web.UI.WebControls.SiteMapDataSource> control. When bound to a data source, the <xref:System.Web.UI.WebControls.Menu> control automatically creates the <xref:System.Web.UI.WebControls.MenuItem> objects. For this example to work correctly, you must copy the sample site map data below to a file named Web.sitemap.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuDataBind#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuDataBind/CS/menudatabindcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuDataBind#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuDataBind/VB/menudatabindvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuDataBind#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuDataBind/CS/menudatabindcs.aspx#1)]
+ [!code-aspx-vb[MenuDataBind#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuDataBind/VB/menudatabindvb.aspx#1)]  
   
  The following is sample site map data for the previous example.  
   
@@ -174,6 +174,21 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Menu" />
+    <altmember cref="T:System.Web.UI.WebControls.MenuItemBinding" />
+    <altmember cref="T:System.Web.UI.WebControls.MenuItemCollection" />
+    <altmember cref="T:System.Web.UI.WebControls.MenuItemStyle" />
+    <altmember cref="P:System.Web.UI.WebControls.MenuItem.ChildItems" />
+    <altmember cref="P:System.Web.UI.WebControls.MenuItem.ImageUrl" />
+    <altmember cref="P:System.Web.UI.WebControls.Menu.Items" />
+    <altmember cref="P:System.Web.UI.WebControls.MenuItem.NavigateUrl" />
+    <altmember cref="P:System.Web.UI.WebControls.MenuItem.PopOutImageUrl" />
+    <altmember cref="P:System.Web.UI.WebControls.MenuItem.SeparatorImageUrl" />
+    <altmember cref="P:System.Web.UI.WebControls.Menu.Target" />
+    <altmember cref="P:System.Web.UI.WebControls.MenuItem.Target" />
+    <altmember cref="P:System.Web.UI.WebControls.MenuItem.Text" />
+    <altmember cref="P:System.Web.UI.WebControls.MenuItem.ToolTip" />
+    <altmember cref="P:System.Web.UI.WebControls.MenuItem.Value" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -204,11 +219,15 @@
 ## Examples  
  The following example demonstrates how to use this constructor to create a new instance of the <xref:System.Web.UI.WebControls.MenuItem> class. The <xref:System.Web.UI.WebControls.MenuItem> object is then used to dynamically populate the menu items in a <xref:System.Web.UI.WebControls.Menu> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemCtorDefault#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCtorDefault/CS/menuitemctordefaultcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemCtorDefault#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCtorDefault/VB/menuitemctordefaultvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemCtorDefault#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCtorDefault/CS/menuitemctordefaultcs.aspx#1)]
+ [!code-aspx-vb[MenuItemCtorDefault#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCtorDefault/VB/menuitemctordefaultvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemCollection" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.Items" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ChildItems" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -245,11 +264,15 @@
 ## Examples  
  The following example demonstrates how to use this constructor to create a new instance of the <xref:System.Web.UI.WebControls.MenuItem> class. The <xref:System.Web.UI.WebControls.MenuItem> object is then used to dynamically populate the menu items in a <xref:System.Web.UI.WebControls.Menu> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemCtor1Param#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCtor1Param/CS/menuitemctor1paramcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemCtor1Param#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCtor1Param/VB/menuitemctor1paramvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemCtor1Param#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCtor1Param/CS/menuitemctor1paramcs.aspx#1)]
+ [!code-aspx-vb[MenuItemCtor1Param#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCtor1Param/VB/menuitemctor1paramvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemCollection" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.Items" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ChildItems" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -289,11 +312,15 @@
 ## Examples  
  The following example demonstrates how to use this constructor to create a new instance of the <xref:System.Web.UI.WebControls.MenuItem> class. The <xref:System.Web.UI.WebControls.MenuItem> object is then used to dynamically populate the menu items in a <xref:System.Web.UI.WebControls.Menu> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemCtor2Param#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCtor2Param/CS/menuitemctor2paramcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemCtor2Param#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCtor2Param/VB/menuitemctor2paramvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemCtor2Param#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCtor2Param/CS/menuitemctor2paramcs.aspx#1)]
+ [!code-aspx-vb[MenuItemCtor2Param#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCtor2Param/VB/menuitemctor2paramvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemCollection" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.Items" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ChildItems" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -336,11 +363,15 @@
 ## Examples  
  The following example demonstrates how to use this constructor to create a new instance of the <xref:System.Web.UI.WebControls.MenuItem> class. The <xref:System.Web.UI.WebControls.MenuItem> object is then used to dynamically populate the menu items in a <xref:System.Web.UI.WebControls.Menu> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemCtor3Param#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCtor3Param/CS/menuitemctor3paramcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemCtor3Param#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCtor3Param/VB/menuitemctor3paramvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemCtor3Param#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCtor3Param/CS/menuitemctor3paramcs.aspx#1)]
+ [!code-aspx-vb[MenuItemCtor3Param#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCtor3Param/VB/menuitemctor3paramvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemCollection" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.Items" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ChildItems" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -386,11 +417,15 @@
 ## Examples  
  The following example demonstrates how to use this constructor to create a new instance of the <xref:System.Web.UI.WebControls.MenuItem> class. The <xref:System.Web.UI.WebControls.MenuItem> object is then used to dynamically populate the menu items in a <xref:System.Web.UI.WebControls.Menu> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemCtor4Param#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCtor4Param/CS/menuitemctor4paramcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemCtor4Param#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCtor4Param/VB/menuitemctor4paramvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemCtor4Param#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCtor4Param/CS/menuitemctor4paramcs.aspx#1)]
+ [!code-aspx-vb[MenuItemCtor4Param#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCtor4Param/VB/menuitemctor4paramvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemCollection" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.Items" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ChildItems" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -439,11 +474,15 @@
 ## Examples  
  The following example demonstrates how to use this constructor to create a new instance of the <xref:System.Web.UI.WebControls.MenuItem> class. The <xref:System.Web.UI.WebControls.MenuItem> object is then used to dynamically populate the menu items in a <xref:System.Web.UI.WebControls.Menu> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemCtor5Param#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCtor5Param/CS/menuitemctor5paramcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemCtor5Param#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCtor5Param/VB/menuitemctor5paramvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemCtor5Param#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCtor5Param/CS/menuitemctor5paramcs.aspx#1)]
+ [!code-aspx-vb[MenuItemCtor5Param#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCtor5Param/VB/menuitemctor5paramvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemCollection" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.Items" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ChildItems" />
       </Docs>
     </Member>
     <Member MemberName="ChildItems">
@@ -485,11 +524,15 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItem.ChildItems%2A> property to traverse the menu items in a <xref:System.Web.UI.WebControls.Menu> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItems#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItems/CS/menuitemscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItems#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItems/VB/menuitemsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItems#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItems/CS/menuitemscs.aspx#1)]
+ [!code-aspx-vb[MenuItems#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItems/VB/menuitemsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemCollection" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.Items" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.Parent" />
       </Docs>
     </Member>
     <Member MemberName="DataBound">
@@ -527,6 +570,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataBoundControl.DataSource" />
+        <altmember cref="P:System.Web.UI.WebControls.HierarchicalDataBoundControl.DataSourceID" />
+        <altmember cref="M:System.Web.UI.WebControls.BaseDataBoundControl.DataBind" />
       </Docs>
     </Member>
     <Member MemberName="DataItem">
@@ -563,6 +610,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
       </Docs>
     </Member>
     <Member MemberName="DataPath">
@@ -599,6 +648,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.HierarchicalDataSourceView" />
+        <altmember cref="M:System.Web.UI.IHierarchicalDataSource.GetHierarchicalView(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Depth">
@@ -635,11 +687,14 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItem.Depth%2A> property to determine the depth of a menu item.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemDepth#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemDepth/CS/menuitemdepthcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemDepth#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemDepth/VB/menuitemdepthvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemDepth#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemDepth/CS/menuitemdepthcs.aspx#1)]
+ [!code-aspx-vb[MenuItemDepth#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemDepth/VB/menuitemdepthvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.MaximumDynamicDisplayLevels" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticDisplayLevels" />
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -679,11 +734,12 @@
 ## Examples  
  The following example demonstrates how a menu item with the <xref:System.Web.UI.WebControls.MenuItem.Enabled%2A> property set to `false` appears and functions in a menu.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuSelectableEnabled#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuSelectableEnabled/CS/menuselectableenabledcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuSelectableEnabled#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuSelectableEnabled/VB/menuselectableenabledvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuSelectableEnabled#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuSelectableEnabled/CS/menuselectableenabledcs.aspx#1)]
+ [!code-aspx-vb[MenuSelectableEnabled#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuSelectableEnabled/VB/menuselectableenabledvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.Selectable" />
       </Docs>
     </Member>
     <Member MemberName="ImageUrl">
@@ -723,11 +779,19 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItem.ImageUrl%2A> property to display a custom image next to the text of a menu item.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItem/CS/menuitemcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItem/VB/menuitemvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItem/CS/menuitemcs.aspx#1)]
+ [!code-aspx-vb[MenuItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItem/VB/menuitemvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.PopOutImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.SeparatorImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.Target" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.Value" />
       </Docs>
     </Member>
     <Member MemberName="NavigateUrl">
@@ -769,11 +833,19 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItem.NavigateUrl%2A> property to specify the URL to navigate to when the user clicks a menu item.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItem/CS/menuitemcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItem/VB/menuitemvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItem/CS/menuitemcs.aspx#1)]
+ [!code-aspx-vb[MenuItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItem/VB/menuitemvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.PopOutImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.SeparatorImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.Target" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.Value" />
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -815,11 +887,13 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItem.Parent%2A> property to access the parent menu item of a child menu item.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemParent#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemParent/CS/menuitemparentcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemParent#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemParent/VB/menuitemparentvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemParent#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemParent/CS/menuitemparentcs.aspx#1)]
+ [!code-aspx-vb[MenuItemParent#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemParent/VB/menuitemparentvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.Items" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ChildItems" />
       </Docs>
     </Member>
     <Member MemberName="PopOutImageUrl">
@@ -866,11 +940,23 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItem.PopOutImageUrl%2A> property to specify a custom image to display in a menu item when the menu item has a dynamic submenu.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItem/CS/menuitemcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItem/VB/menuitemvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItem/CS/menuitemcs.aspx#1)]
+ [!code-aspx-vb[MenuItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItem/VB/menuitemvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicEnableDefaultPopOutImage" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicPopOutImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticEnableDefaultPopOutImage" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticPopOutImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.SeparatorImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.Target" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.Value" />
       </Docs>
     </Member>
     <Member MemberName="Selectable">
@@ -918,11 +1004,12 @@
 ## Examples  
  The following example demonstrates how a menu item with the <xref:System.Web.UI.WebControls.MenuItem.Selectable%2A> property set to `false` appears and functions in a menu.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuSelectableEnabled#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuSelectableEnabled/CS/menuselectableenabledcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuSelectableEnabled#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuSelectableEnabled/VB/menuselectableenabledvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuSelectableEnabled#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuSelectableEnabled/CS/menuselectableenabledcs.aspx#1)]
+ [!code-aspx-vb[MenuSelectableEnabled#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuSelectableEnabled/VB/menuselectableenabledvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.Enabled" />
       </Docs>
     </Member>
     <Member MemberName="Selected">
@@ -965,8 +1052,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItem.Selected%2A> property to select a specific menu item in a <xref:System.Web.UI.WebControls.Menu> control when the page is first loaded. For this example to work correctly, you must copy the sample site map data below to a file named Web.sitemap.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemSelected#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemSelected/CS/menuitemselectedcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemSelected#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemSelected/VB/menuitemselectedvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemSelected#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemSelected/CS/menuitemselectedcs.aspx#1)]
+ [!code-aspx-vb[MenuItemSelected#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemSelected/VB/menuitemselectedvb.aspx#1)]  
   
  The following is sample site map data for the previous example.  
   
@@ -1036,6 +1123,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.SelectedItem" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.SelectedValue" />
       </Docs>
     </Member>
     <Member MemberName="SeparatorImageUrl">
@@ -1075,11 +1164,23 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItem.SeparatorImageUrl%2A> property to specify a custom image to display at the bottom of a menu item to separate it from other menu items in a <xref:System.Web.UI.WebControls.Menu> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItem/CS/menuitemcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItem/VB/menuitemvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItem/CS/menuitemcs.aspx#1)]
+ [!code-aspx-vb[MenuItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItem/VB/menuitemvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicBottomSeparatorImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicTopSeparatorImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.PopOutImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticBottomSeparatorImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticTopSeparatorImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.Target" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.Value" />
       </Docs>
     </Member>
     <Member MemberName="System.ICloneable.Clone">
@@ -1106,6 +1207,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ICloneable.Clone" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.IsTrackingViewState">
@@ -1134,6 +1236,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
+        <altmember cref="M:System.Web.UI.Control.LoadViewState(System.Object)" />
+        <altmember cref="M:System.Web.UI.Control.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.LoadViewState">
@@ -1155,6 +1260,8 @@
         <param name="state">An <see cref="T:System.Object" /> that contains the saved view state values.</param>
         <summary>Loads the menu item's previously saved view state.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.StateBag" />
+        <altmember cref="T:System.Web.UI.StateItem" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.SaveViewState">
@@ -1174,6 +1281,8 @@
         <summary>Saves the view-state changes to an <see cref="T:System.Object" />.</summary>
         <returns>The <see cref="T:System.Object" /> that contains the view-state changes.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.StateBag" />
+        <altmember cref="T:System.Web.UI.StateItem" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.TrackViewState">
@@ -1199,6 +1308,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.StateBag" />
+        <altmember cref="T:System.Web.UI.StateItem" />
       </Docs>
     </Member>
     <Member MemberName="Target">
@@ -1248,11 +1359,20 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItem.Target%2A> property to specify a window or frame in which to display the Web content linked to a menu item when that menu item is clicked.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemTarget#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemTarget/CS/menuitemtargetcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemTarget#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemTarget/VB/menuitemtargetvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemTarget#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemTarget/CS/menuitemtargetcs.aspx#1)]
+ [!code-aspx-vb[MenuItemTarget#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemTarget/VB/menuitemtargetvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.PopOutImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.SeparatorImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.Target" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.Value" />
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -1294,11 +1414,19 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItem.Text%2A> property to specify the text to display in each menu item in a <xref:System.Web.UI.WebControls.Menu> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItem/CS/menuitemcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItem/VB/menuitemvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItem/CS/menuitemcs.aspx#1)]
+ [!code-aspx-vb[MenuItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItem/VB/menuitemvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.PopOutImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.SeparatorImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.Target" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.Value" />
       </Docs>
     </Member>
     <Member MemberName="ToolTip">
@@ -1337,11 +1465,20 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItem.ToolTip%2A> property to specify a ToolTip for each menu item in a <xref:System.Web.UI.WebControls.Menu> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItem/CS/menuitemcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItem/VB/menuitemvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItem/CS/menuitemcs.aspx#1)]
+ [!code-aspx-vb[MenuItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItem/VB/menuitemvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.PopOutImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.SeparatorImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.Target" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.ToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.Value" />
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -1388,11 +1525,19 @@
 ## Examples  
  The following example demonstrates how to display the <xref:System.Web.UI.WebControls.MenuItem.Value%2A> for a menu item and its parent when the user selects a menu item.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemValue#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemValue/CS/menuitemvaluecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemValue#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemValue/VB/menuitemvaluevb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemValue#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemValue/CS/menuitemvaluecs.aspx#1)]
+ [!code-aspx-vb[MenuItemValue#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemValue/VB/menuitemvaluevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.PopOutImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.SeparatorImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.Target" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.Text" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ToolTip" />
       </Docs>
     </Member>
     <Member MemberName="ValuePath">
@@ -1432,12 +1577,23 @@
 ## Examples  
  The following example demonstrates how to parse the value to the <xref:System.Web.UI.WebControls.MenuItem.ValuePath%2A> property for the individual menu item values.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemValuePath#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemValuePath/CS/menuitemvaluepathcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemValuePath#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemValuePath/VB/menuitemvaluepathvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemValuePath#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemValuePath/CS/menuitemvaluepathcs.aspx#1)]
+ [!code-aspx-vb[MenuItemValuePath#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemValuePath/VB/menuitemvaluepathvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.PathSeparator" />
+        <altmember cref="M:System.Web.UI.WebControls.Menu.FindItem(System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.MenuItem" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

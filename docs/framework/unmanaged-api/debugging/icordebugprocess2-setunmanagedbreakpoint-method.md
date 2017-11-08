@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugProcess2::SetUnmanagedBreakpoint"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugProcess2::SetUnmanagedBreakpoint method [.NET Framework debugging]"
   - "SetUnmanagedBreakpoint method [.NET Framework debugging]"

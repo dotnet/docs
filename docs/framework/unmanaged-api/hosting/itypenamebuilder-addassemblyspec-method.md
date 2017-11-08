@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "AddAssemblySpec"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ITypeNameBuilder::AddAssemblySpec method [.NET Framework hosting]"
   - "AddAssemblySpec method [.NET Framework hosting]"

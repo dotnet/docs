@@ -9,12 +9,10 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "TextBox control [Windows Forms], read-only"
   - "read-only text boxes"
-  - "text boxes, read-only"
+  - "text boxes [Windows Forms], read-only"
 ms.assetid: 60baa9ab-fa57-44ad-bb7c-61b05aa64296
 caps.latest.revision: 9
 author: dotnet-bot

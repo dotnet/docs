@@ -27,11 +27,14 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.ListViewDeleteEventArgs> object to cancel the delete operation if the user tries to remove the last item from a <xref:System.Web.UI.WebControls.ListView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListViewItemDeleting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemDeleting/CS/ListViewItemItemDeletingCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListViewItemDeleting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemDeleting/VB/ListViewItemItemDeletingVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListViewItemDeleting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemDeleting/CS/ListViewItemItemDeletingCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListViewItemDeleting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemDeleting/VB/ListViewItemItemDeletingVB.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ListView" />
+    <altmember cref="M:System.Web.UI.WebControls.ListView.DeleteItem(System.Int32)" />
+    <altmember cref="E:System.Web.UI.WebControls.ListView.ItemDeleting" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -66,6 +69,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListViewDeleteEventArgs.ItemIndex" />
       </Docs>
     </Member>
     <Member MemberName="ItemIndex">
@@ -91,6 +95,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.Items" />
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -123,6 +129,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListViewDeleteEventArgs.Values" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.DataKeyNames" />
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="T:System.Collections.DictionaryEntry" />
+        <altmember cref="P:System.Collections.DictionaryEntry.Key" />
+        <altmember cref="P:System.Collections.DictionaryEntry.Value" />
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -155,6 +167,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewDeleteEventArgs.Keys" />
+        <altmember cref="T:System.Collections.DictionaryEntry" />
+        <altmember cref="P:System.Collections.DictionaryEntry.Key" />
+        <altmember cref="P:System.Collections.DictionaryEntry.Value" />
       </Docs>
     </Member>
   </Members>

@@ -46,6 +46,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.CodeDom.CodeLabeledStatement" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -96,6 +97,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="Label" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.CodeDom.CodeLabeledStatement" />
       </Docs>
     </Member>
     <Member MemberName="Label">
@@ -128,7 +130,17 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The label cannot be set because <paramref name="value" /> is <see langword="null" /> or an empty string.</exception>
+        <altmember cref="T:System.CodeDom.CodeLabeledStatement" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeGotoStatement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

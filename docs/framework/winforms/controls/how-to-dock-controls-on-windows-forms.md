@@ -9,12 +9,9 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "Dock property"
   - "controls [Windows Forms], docking"
-  - "Explorer-style applications, creating"
+  - "Explorer-style applications [Windows Forms], creating"
   - "Windows Forms controls, filling client area"
 ms.assetid: bc11f2e4-e90a-4830-b0e2-f43b6e2b8bec
 caps.latest.revision: 12

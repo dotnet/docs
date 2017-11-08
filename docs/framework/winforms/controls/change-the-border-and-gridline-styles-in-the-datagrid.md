@@ -10,12 +10,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "gridlines, changing styles"
-  - "data grids, changing gridline styles"
+  - "gridlines [Windows Forms], changing styles"
+  - "data grids [Windows Forms], changing gridline styles"
   - "DataGridView control [Windows Forms], border styles"
-  - "data grids, changing border styles"
+  - "data grids [Windows Forms], changing border styles"
   - "DataGridView control [Windows Forms], gridline styles"
 ms.assetid: 2f413c7a-4025-4171-8e3a-66ef908ea583
 caps.latest.revision: 15

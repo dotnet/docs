@@ -79,16 +79,50 @@
 ## Examples  
  The following code example demonstrates how to use a <xref:System.Web.UI.WebControls.CommandField> field to display controls to edit a record in a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[CommandField2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CommandField2/CS/commandfield2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CommandField2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CommandField2/VB/commandfield2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[CommandField2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CommandField2/CS/commandfield2cs.aspx#1)]
+ [!code-aspx-vb[CommandField2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CommandField2/VB/commandfield2vb.aspx#1)]  
   
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.CommandField.CancelText%2A>, <xref:System.Web.UI.WebControls.CommandField.EditText%2A>, and <xref:System.Web.UI.WebControls.CommandField.UpdateText%2A> properties to customize the text for the editing controls.  
   
- <!-- TODO: review snippet reference [!code-csharp[CommandField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CommandField/CS/commandfieldcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CommandField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CommandField/VB/commandfieldvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CommandField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CommandField/CS/commandfieldcs.aspx#1)]
+ [!code-aspx-vb[CommandField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CommandField/VB/commandfieldvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="P:System.Web.UI.WebControls.GridView.Columns" />
+    <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsView.Fields" />
+    <altmember cref="T:System.Web.UI.WebControls.BoundField" />
+    <altmember cref="T:System.Web.UI.WebControls.ButtonField" />
+    <altmember cref="T:System.Web.UI.WebControls.ButtonFieldBase" />
+    <altmember cref="T:System.Web.UI.WebControls.CheckBoxField" />
+    <altmember cref="T:System.Web.UI.WebControls.DataControlField" />
+    <altmember cref="T:System.Web.UI.WebControls.HyperLinkField" />
+    <altmember cref="T:System.Web.UI.WebControls.TemplateField" />
+    <altmember cref="P:System.Web.UI.WebControls.ButtonFieldBase.ButtonType" />
+    <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelText" />
+    <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteImageUrl" />
+    <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteText" />
+    <altmember cref="P:System.Web.UI.WebControls.CommandField.EditImageUrl" />
+    <altmember cref="P:System.Web.UI.WebControls.CommandField.EditText" />
+    <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertImageUrl" />
+    <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertText" />
+    <altmember cref="P:System.Web.UI.WebControls.CommandField.NewImageUrl" />
+    <altmember cref="P:System.Web.UI.WebControls.CommandField.NewText" />
+    <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectImageUrl" />
+    <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectText" />
+    <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowCancelButton" />
+    <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowDeleteButton" />
+    <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowEditButton" />
+    <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowInsertButton" />
+    <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowSelectButton" />
+    <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateImageUrl" />
+    <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateText" />
+    <altmember cref="P:System.Web.UI.WebControls.DataControlField.ControlStyle" />
+    <altmember cref="P:System.Web.UI.WebControls.DataControlField.FooterStyle" />
+    <altmember cref="P:System.Web.UI.WebControls.DataControlField.HeaderStyle" />
+    <altmember cref="P:System.Web.UI.WebControls.DataControlField.ItemStyle" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -119,11 +153,15 @@
 ## Examples  
  The following code example demonstrates how to use the constructor to dynamically add a <xref:System.Web.UI.WebControls.CommandField> field column to a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[CommandFieldCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CommandFieldCtor/CS/commandfieldctorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CommandFieldCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CommandFieldCtor/VB/commandfieldctorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CommandFieldCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CommandFieldCtor/CS/commandfieldctorcs.aspx#1)]
+ [!code-aspx-vb[CommandFieldCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CommandFieldCtor/VB/commandfieldctorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.Columns" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.Fields" />
       </Docs>
     </Member>
     <Member MemberName="CancelImageUrl">
@@ -166,11 +204,28 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.CommandField.CancelImageUrl%2A> property to specify a custom image to display for a Cancel button in a <xref:System.Web.UI.WebControls.CommandField> field of a <xref:System.Web.UI.WebControls.GridView> control. The <xref:System.Web.UI.WebControls.ButtonFieldBase.ButtonType%2A> property must be set to `ButtonType.Image` for a Cancel button to display an image.  
   
- <!-- TODO: review snippet reference [!code-csharp[CommandFieldEditImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CommandFieldEditImageUrl/CS/commandfieldeditimageurlcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CommandFieldEditImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CommandFieldEditImageUrl/VB/commandfieldeditimageurlvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CommandFieldEditImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CommandFieldEditImageUrl/CS/commandfieldeditimageurlcs.aspx#1)]
+ [!code-aspx-vb[CommandFieldEditImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CommandFieldEditImageUrl/VB/commandfieldeditimageurlvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ButtonFieldBase.ButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowCancelButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowEditButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowInsertButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateText" />
       </Docs>
     </Member>
     <Member MemberName="CancelText">
@@ -209,11 +264,28 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.CommandField.CancelText%2A> property to specify a custom caption for a Cancel button displayed in a <xref:System.Web.UI.WebControls.CommandField> field of a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[CommandField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CommandField/CS/commandfieldcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CommandField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CommandField/VB/commandfieldvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CommandField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CommandField/CS/commandfieldcs.aspx#1)]
+ [!code-aspx-vb[CommandField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CommandField/VB/commandfieldvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ButtonFieldBase.ButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowCancelButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowEditButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowInsertButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateText" />
       </Docs>
     </Member>
     <Member MemberName="CausesValidation">
@@ -251,11 +323,13 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[CommandFieldCausesValidation#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CommandFieldCausesValidation/CS/commandfieldcausesvalidationcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CommandFieldCausesValidation#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CommandFieldCausesValidation/VB/commandfieldcausesvalidationvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CommandFieldCausesValidation#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CommandFieldCausesValidation/CS/commandfieldcausesvalidationcs.aspx#1)]
+ [!code-aspx-vb[CommandFieldCausesValidation#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CommandFieldCausesValidation/VB/commandfieldcausesvalidationvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ButtonFieldBase.ValidationGroup" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseValidator.ValidationGroup" />
       </Docs>
     </Member>
     <Member MemberName="CopyProperties">
@@ -284,6 +358,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.CloneField" />
+        <altmember cref="M:System.Web.UI.WebControls.CommandField.CreateField" />
       </Docs>
     </Member>
     <Member MemberName="CreateField">
@@ -310,6 +386,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.CloneField" />
+        <altmember cref="M:System.Web.UI.WebControls.CommandField.CopyProperties(System.Web.UI.WebControls.DataControlField)" />
       </Docs>
     </Member>
     <Member MemberName="DeleteImageUrl">
@@ -352,11 +430,26 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.CommandField.DeleteImageUrl%2A> property to specify a custom image to display for a Delete button in a <xref:System.Web.UI.WebControls.CommandField> field of a <xref:System.Web.UI.WebControls.GridView> control. The <xref:System.Web.UI.WebControls.ButtonFieldBase.ButtonType%2A> property must be set to `ButtonType.Image` for the Delete button to display an image.  
   
- <!-- TODO: review snippet reference [!code-csharp[CommandFieldDeleteImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CommandFieldDeleteImageUrl/CS/commandfielddeleteimageurlcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CommandFieldDeleteImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CommandFieldDeleteImageUrl/VB/commandfielddeleteimageurlvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CommandFieldDeleteImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CommandFieldDeleteImageUrl/CS/commandfielddeleteimageurlcs.aspx#1)]
+ [!code-aspx-vb[CommandFieldDeleteImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CommandFieldDeleteImageUrl/VB/commandfielddeleteimageurlvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ButtonFieldBase.ButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowDeleteButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateText" />
       </Docs>
     </Member>
     <Member MemberName="DeleteText">
@@ -395,11 +488,26 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.CommandField.DeleteText%2A> property to specify a custom caption for a Delete button displayed in a <xref:System.Web.UI.WebControls.CommandField> field of a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[CommandFieldDeleteText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CommandFieldDeleteText/CS/commandfielddeletetextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CommandFieldDeleteText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CommandFieldDeleteText/VB/commandfielddeletetextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CommandFieldDeleteText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CommandFieldDeleteText/CS/commandfielddeletetextcs.aspx#1)]
+ [!code-aspx-vb[CommandFieldDeleteText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CommandFieldDeleteText/VB/commandfielddeletetextvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ButtonFieldBase.ButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowDeleteButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateText" />
       </Docs>
     </Member>
     <Member MemberName="EditImageUrl">
@@ -442,11 +550,27 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.CommandField.EditImageUrl%2A> property to specify a custom image to display for an Edit button in a <xref:System.Web.UI.WebControls.CommandField> field of a <xref:System.Web.UI.WebControls.GridView> control. The <xref:System.Web.UI.WebControls.ButtonFieldBase.ButtonType%2A> property must be set to `ButtonType.Image` for an Edit button to display an image.  
   
- <!-- TODO: review snippet reference [!code-csharp[CommandFieldEditImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CommandFieldEditImageUrl/CS/commandfieldeditimageurlcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CommandFieldEditImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CommandFieldEditImageUrl/VB/commandfieldeditimageurlvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CommandFieldEditImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CommandFieldEditImageUrl/CS/commandfieldeditimageurlcs.aspx#1)]
+ [!code-aspx-vb[CommandFieldEditImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CommandFieldEditImageUrl/VB/commandfieldeditimageurlvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ButtonFieldBase.ButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowCancelButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowEditButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateText" />
       </Docs>
     </Member>
     <Member MemberName="EditText">
@@ -485,11 +609,27 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.CommandField.EditText%2A> property to specify a custom caption for an Edit button displayed in a <xref:System.Web.UI.WebControls.CommandField> field of a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[CommandField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CommandField/CS/commandfieldcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CommandField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CommandField/VB/commandfieldvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CommandField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CommandField/CS/commandfieldcs.aspx#1)]
+ [!code-aspx-vb[CommandField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CommandField/VB/commandfieldvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ButtonFieldBase.ButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowCancelButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowEditButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateText" />
       </Docs>
     </Member>
     <Member MemberName="InitializeCell">
@@ -526,6 +666,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.Initialize(System.Boolean,System.Web.UI.Control)" />
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.InitializeCell(System.Web.UI.WebControls.DataControlFieldCell,System.Web.UI.WebControls.DataControlCellType,System.Web.UI.WebControls.DataControlRowState,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="InsertImageUrl">
@@ -568,11 +710,27 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.CommandField.InsertImageUrl%2A> property to specify a custom image to display for an Insert button in a <xref:System.Web.UI.WebControls.CommandField> field of a <xref:System.Web.UI.WebControls.DetailsView> control. The <xref:System.Web.UI.WebControls.ButtonFieldBase.ButtonType%2A> property must be set to `ButtonType.Image` for an Insert button to display an image.  
   
- <!-- TODO: review snippet reference [!code-csharp[CommandFieldInsertImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CommandFieldInsertImageUrl/CS/commandfieldinsertimageurlcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CommandFieldInsertImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CommandFieldInsertImageUrl/VB/commandfieldinsertimageurlvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CommandFieldInsertImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CommandFieldInsertImageUrl/CS/commandfieldinsertimageurlcs.aspx#1)]
+ [!code-aspx-vb[CommandFieldInsertImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CommandFieldInsertImageUrl/VB/commandfieldinsertimageurlvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ButtonFieldBase.ButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowCancelButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowInsertButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateText" />
       </Docs>
     </Member>
     <Member MemberName="InsertText">
@@ -611,11 +769,27 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.CommandField.InsertText%2A> property to specify a custom caption for an Insert button displayed in a <xref:System.Web.UI.WebControls.CommandField> field of a <xref:System.Web.UI.WebControls.DetailsView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[CommandFieldInsertText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CommandFieldInsertText/CS/commandfieldinserttextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CommandFieldInsertText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CommandFieldInsertText/VB/commandfieldinserttextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CommandFieldInsertText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CommandFieldInsertText/CS/commandfieldinserttextcs.aspx#1)]
+ [!code-aspx-vb[CommandFieldInsertText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CommandFieldInsertText/VB/commandfieldinserttextvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ButtonFieldBase.ButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowCancelButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowInsertButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateText" />
       </Docs>
     </Member>
     <Member MemberName="NewImageUrl">
@@ -658,11 +832,27 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.CommandField.NewImageUrl%2A> property to specify a custom image to display for the New button in a <xref:System.Web.UI.WebControls.CommandField> column field of a <xref:System.Web.UI.WebControls.DetailsView> control. The <xref:System.Web.UI.WebControls.ButtonFieldBase.ButtonType%2A> property must be set to `ButtonType.Image` for the New button to display an image.  
   
- <!-- TODO: review snippet reference [!code-csharp[CommandFieldInsertImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CommandFieldInsertImageUrl/CS/commandfieldinsertimageurlcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CommandFieldInsertImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CommandFieldInsertImageUrl/VB/commandfieldinsertimageurlvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CommandFieldInsertImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CommandFieldInsertImageUrl/CS/commandfieldinsertimageurlcs.aspx#1)]
+ [!code-aspx-vb[CommandFieldInsertImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CommandFieldInsertImageUrl/VB/commandfieldinsertimageurlvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ButtonFieldBase.ButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowCancelButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowInsertButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateText" />
       </Docs>
     </Member>
     <Member MemberName="NewText">
@@ -701,11 +891,27 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.CommandField.NewText%2A> property to specify a custom caption for the New button displayed in a <xref:System.Web.UI.WebControls.CommandField> field of a <xref:System.Web.UI.WebControls.DetailsView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[CommandFieldInsertText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CommandFieldInsertText/CS/commandfieldinserttextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CommandFieldInsertText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CommandFieldInsertText/VB/commandfieldinserttextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CommandFieldInsertText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CommandFieldInsertText/CS/commandfieldinserttextcs.aspx#1)]
+ [!code-aspx-vb[CommandFieldInsertText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CommandFieldInsertText/VB/commandfieldinserttextvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ButtonFieldBase.ButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowCancelButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowInsertButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateText" />
       </Docs>
     </Member>
     <Member MemberName="SelectImageUrl">
@@ -748,11 +954,26 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.CommandField.SelectImageUrl%2A> property to specify a custom image to display for a Select button in a <xref:System.Web.UI.WebControls.CommandField> field of a <xref:System.Web.UI.WebControls.GridView> control. The <xref:System.Web.UI.WebControls.ButtonFieldBase.ButtonType%2A> property must be set to `ButtonType.Image` for a Select button to display an image.  
   
- <!-- TODO: review snippet reference [!code-csharp[CommandFieldSelectImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CommandFieldSelectImageUrl/CS/commandfieldselectimageurlcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CommandFieldSelectImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CommandFieldSelectImageUrl/VB/commandfieldselectimageurlvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CommandFieldSelectImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CommandFieldSelectImageUrl/CS/commandfieldselectimageurlcs.aspx#1)]
+ [!code-aspx-vb[CommandFieldSelectImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CommandFieldSelectImageUrl/VB/commandfieldselectimageurlvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ButtonFieldBase.ButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowSelectButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateText" />
       </Docs>
     </Member>
     <Member MemberName="SelectText">
@@ -791,11 +1012,26 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.CommandField.SelectText%2A> property to specify a custom caption for a Select button displayed in a <xref:System.Web.UI.WebControls.CommandField> field of a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[CommandFieldSelectText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CommandFieldSelectText/CS/commandfieldselecttextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CommandFieldSelectText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CommandFieldSelectText/VB/commandfieldselecttextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CommandFieldSelectText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CommandFieldSelectText/CS/commandfieldselecttextcs.aspx#1)]
+ [!code-aspx-vb[CommandFieldSelectText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CommandFieldSelectText/VB/commandfieldselecttextvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ButtonFieldBase.ButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowSelectButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateText" />
       </Docs>
     </Member>
     <Member MemberName="ShowCancelButton">
@@ -832,11 +1068,17 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.CommandField.ShowCancelButton%2A> property to hide the Cancel button displayed when a row in a <xref:System.Web.UI.WebControls.GridView> control is in edit mode.  
   
- <!-- TODO: review snippet reference [!code-csharp[CommandFieldShowCancelButton#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CommandFieldShowCancelButton/CS/commandfieldshowcancelbuttoncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CommandFieldShowCancelButton#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CommandFieldShowCancelButton/VB/commandfieldshowcancelbuttonvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CommandFieldShowCancelButton#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CommandFieldShowCancelButton/CS/commandfieldshowcancelbuttoncs.aspx#1)]
+ [!code-aspx-vb[CommandFieldShowCancelButton#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CommandFieldShowCancelButton/VB/commandfieldshowcancelbuttonvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowDeleteButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowEditButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowInsertButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowSelectButton" />
       </Docs>
     </Member>
     <Member MemberName="ShowDeleteButton">
@@ -876,11 +1118,17 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.CommandField.ShowDeleteButton%2A> property to display a Delete button for each record in a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[CommandFieldShowDeleteButton#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CommandFieldShowDeleteButton/CS/commandfieldshowdeletebuttoncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CommandFieldShowDeleteButton#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CommandFieldShowDeleteButton/VB/commandfieldshowdeletebuttonvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CommandFieldShowDeleteButton#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CommandFieldShowDeleteButton/CS/commandfieldshowdeletebuttoncs.aspx#1)]
+ [!code-aspx-vb[CommandFieldShowDeleteButton#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CommandFieldShowDeleteButton/VB/commandfieldshowdeletebuttonvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowCancelButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowEditButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowInsertButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowSelectButton" />
       </Docs>
     </Member>
     <Member MemberName="ShowEditButton">
@@ -922,11 +1170,19 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.CommandField.ShowEditButton%2A> property to display an Edit button for each record in a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[CommandFieldEditImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CommandFieldEditImageUrl/CS/commandfieldeditimageurlcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CommandFieldEditImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CommandFieldEditImageUrl/VB/commandfieldeditimageurlvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CommandFieldEditImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CommandFieldEditImageUrl/CS/commandfieldeditimageurlcs.aspx#1)]
+ [!code-aspx-vb[CommandFieldEditImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CommandFieldEditImageUrl/VB/commandfieldeditimageurlvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowCancelButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowDeleteButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowInsertButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowSelectButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateText" />
       </Docs>
     </Member>
     <Member MemberName="ShowInsertButton">
@@ -971,11 +1227,19 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.CommandField.ShowInsertButton%2A> property to display a New button in a <xref:System.Web.UI.WebControls.DetailsView> control, which allows the user to add a new record to the data source.  
   
- <!-- TODO: review snippet reference [!code-csharp[CommandFieldShowInsertButton#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CommandFieldShowInsertButton/CS/commandfieldshowinsertbuttoncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CommandFieldShowInsertButton#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CommandFieldShowInsertButton/VB/commandfieldshowinsertbuttonvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CommandFieldShowInsertButton#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CommandFieldShowInsertButton/CS/commandfieldshowinsertbuttoncs.aspx#1)]
+ [!code-aspx-vb[CommandFieldShowInsertButton#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CommandFieldShowInsertButton/VB/commandfieldshowinsertbuttonvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowCancelButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowDeleteButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowEditButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowSelectButton" />
       </Docs>
     </Member>
     <Member MemberName="ShowSelectButton">
@@ -1012,11 +1276,17 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.CommandField.ShowSelectButton%2A> property to display a Select button for each record in a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[CommandFieldShowSelectButton#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CommandFieldShowSelectButton/CS/commandfieldshowselectbuttoncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CommandFieldShowSelectButton#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CommandFieldShowSelectButton/VB/commandfieldshowselectbuttonvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CommandFieldShowSelectButton#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CommandFieldShowSelectButton/CS/commandfieldshowselectbuttoncs.aspx#1)]
+ [!code-aspx-vb[CommandFieldShowSelectButton#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CommandFieldShowSelectButton/VB/commandfieldshowselectbuttonvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowCancelButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowDeleteButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowEditButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowInsertButton" />
       </Docs>
     </Member>
     <Member MemberName="UpdateImageUrl">
@@ -1059,11 +1329,27 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.CommandField.UpdateImageUrl%2A> property to specify a custom image to display for an Update button in a <xref:System.Web.UI.WebControls.CommandField> field of a <xref:System.Web.UI.WebControls.GridView> control. The <xref:System.Web.UI.WebControls.ButtonFieldBase.ButtonType%2A> property must be set to `ButtonType.Image` for an Update button to display an image.  
   
- <!-- TODO: review snippet reference [!code-csharp[CommandFieldEditImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CommandFieldEditImageUrl/CS/commandfieldeditimageurlcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CommandFieldEditImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CommandFieldEditImageUrl/VB/commandfieldeditimageurlvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CommandFieldEditImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CommandFieldEditImageUrl/CS/commandfieldeditimageurlcs.aspx#1)]
+ [!code-aspx-vb[CommandFieldEditImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CommandFieldEditImageUrl/VB/commandfieldeditimageurlvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ButtonFieldBase.ButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowCancelButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowEditButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateText" />
       </Docs>
     </Member>
     <Member MemberName="UpdateText">
@@ -1102,11 +1388,27 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.CommandField.UpdateText%2A> property to specify a custom caption for an Update button displayed in a <xref:System.Web.UI.WebControls.CommandField> field of a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[CommandField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CommandField/CS/commandfieldcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CommandField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CommandField/VB/commandfieldvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CommandField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CommandField/CS/commandfieldcs.aspx#1)]
+ [!code-aspx-vb[CommandField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CommandField/VB/commandfieldvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ButtonFieldBase.ButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.CancelText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.DeleteText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.EditText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.InsertText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.NewText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.SelectText" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowCancelButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.ShowEditButton" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandField.UpdateImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="ValidateSupportsCallback">

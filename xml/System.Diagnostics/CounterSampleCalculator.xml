@@ -100,5 +100,14 @@
           <paramref name="newSample" /> counter type has a Performance Data Helper (PDH) error. For more information, see "Checking PDH Interface Return Values" in the Win32 and COM Development section of this documentation.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ComputeCounterValue">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Computes the calculated value of a raw counter sample.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -10,10 +10,11 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "data grids, disabling buttons"
-  - "buttons, disabling in button columns"
+  - "data grids [Windows Forms], disabling buttons"
+  - "buttons [Windows Forms], disabling in button columns"
   - "DataGridView control [Windows Forms], disabling button cells"
 ms.assetid: 5c344d01-013a-4a6b-8f8d-62ec9321d81e
 caps.latest.revision: 15

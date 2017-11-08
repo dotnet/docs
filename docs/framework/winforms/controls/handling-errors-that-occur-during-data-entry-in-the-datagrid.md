@@ -10,13 +10,14 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "error handling, DataGridView control"
-  - "data grids, error handling"
+  - "error handling [Windows Forms], dataGridView control"
+  - "data grids [Windows Forms], error handling"
   - "DataGridView control [Windows Forms], error handling"
-  - "data entry, error handling"
-  - "error handling, data entry"
+  - "data entry [Windows Forms], error handling"
+  - "error handling [Windows Forms], data entry"
   - "walkthroughs [Windows Forms], DataGridView control"
 ms.assetid: 30a68b85-d3af-4946-83c1-1e2d010d0511
 caps.latest.revision: 17

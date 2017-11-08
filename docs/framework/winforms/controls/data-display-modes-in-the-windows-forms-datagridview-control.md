@@ -9,11 +9,9 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "data [Windows Forms], display modes"
-  - "data grids, display modes"
+  - "data grids [Windows Forms], display modes"
   - "DataGridView control [Windows Forms], display modes"
 ms.assetid: 9755a030-3f3f-4705-a661-ba5a48a81875
 caps.latest.revision: 13

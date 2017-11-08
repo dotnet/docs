@@ -9,11 +9,9 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "Windows Forms, mouse input"
-  - "mouse, input"
+  - "mouse [Windows Forms], input"
 ms.assetid: 48fc5240-75a6-44bf-9fce-6aa21b49705a
 caps.latest.revision: 16
 author: dotnet-bot

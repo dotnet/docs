@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugManagedCallback2::CreateConnection"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CreateConnection method [.NET Framework debugging]"
   - "ICorDebugManagedCallback2::CreateConnection method [.NET Framework debugging]"

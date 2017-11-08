@@ -10,9 +10,10 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "interpolation mode, controlling image quality"
+  - "interpolation mode [Windows Forms], controlling image quality"
   - "images [Windows Forms], scaling"
   - "images [Windows Forms], controlling quality"
 ms.assetid: fde9bccf-8aa5-4b0d-ba4b-788740627b02

@@ -1,6 +1,6 @@
 ---
 title: "int (C# Reference)"
-ms.date: "2017-03-14"
+ms.date: 03/14/2017
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -8,28 +8,12 @@ ms.topic: "article"
 f1_keywords: 
   - "int_CSharpKeyword"
   - "int"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "int keyword [C#]"
 ms.assetid: 212447b4-5d2a-41aa-88ab-84fe710bdb52
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # int (C# Reference)
 
@@ -50,7 +34,11 @@ In the following example, integers equal to 90,946 that are represented as decim
 > [!NOTE] 
 > You use the prefix `0x` or `0X` to denote a hexadecimal literal and the prefix `0b` or `0B` to denote a binary literal. Decimal literals have no prefix. 
 
-Starting with C# 7, you can also use the underscore character, `_`, as a digit separator to enhance readability, as the following example shows.
+Starting with C# 7, a couple of features have been added to enhance readability. 
+ - C# 7.0 allows the usage of the underscore character, `_`, as a digit separator.
+ - C# 7.2 allows `_` to be used as a digit separator for a binary or hexadecimal literal, after the prefix. A decimal literal isn't permitted to have a leading underscore.
+
+Some examples are shown below.
 
 [!code-cs[int](../../../../samples/snippets/csharp/language-reference/keywords/numeric-literals.cs#IntS)]  
  

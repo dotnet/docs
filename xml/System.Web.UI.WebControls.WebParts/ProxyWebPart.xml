@@ -298,6 +298,7 @@
         <summary>Saves any server control state changes that have occurred since the time the page was posted back to the server.</summary>
         <returns>Returns the server control's current state. If there is no state associated with the control, this method returns <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.Control.SaveControlState" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -317,7 +318,17 @@
         <summary>Saves any state that was modified after the <see cref="M:System.Web.UI.WebControls.Style.TrackViewState" /> method was invoked.</summary>
         <returns>An object that contains the current view state of the control; otherwise, if there is no view state associated with the control, <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.SaveViewState" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.ProxyWebPart" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

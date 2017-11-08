@@ -42,17 +42,17 @@ creates the starter files for a basic "Hello World" application.
 
 Before you start making modifications, let’s go through the steps to run
 the simple Hello World application. After creating the application, type
-`dotnet restore` at the command prompt. This command runs the NuGet
+`dotnet restore` ([see note](#dotnet-restore-note)) at the command prompt. This command runs the NuGet
 package restore process. NuGet is a .NET package manager. This command
 downloads any of the missing dependencies for your project. As this is a
 new project, none of the dependencies are in place, so the first run will
 download the .NET Core framework. After this initial step, you will only
-need to run `dotnet restore` when you add new dependent packages, or update
+need to run `dotnet restore` ([see note](#dotnet-restore-note)) when you add new dependent packages, or update
 the versions of any of your dependencies. This process also creates the
 project lock file (project.lock.json) in your project directory. This file
 helps to manage the project dependencies. It contains the local location
 of all the project dependencies. You do not need to put the file in source
-control; it will be generated when you run `dotnet restore`. 
+control; it will be generated when you run `dotnet restore` ([see note](#dotnet-restore-note)). 
 
 After restoring packages, you run `dotnet build`. This executes the build
 engine and creates your application executable. Finally, you execute `dotnet run` to
@@ -105,7 +105,7 @@ using System.IO;
 ```
 
 The `IEnumerable<T>` interface is defined in the 
-`System.Collections.Generic` namespace. The @System.IO.File class is defined in the
+`System.Collections.Generic` namespace. The <xref:System.IO.File> class is defined in the
 `System.IO` namespace.
 
 This method is a special type of C# method called an *Enumerator method*. 
@@ -123,7 +123,7 @@ indicates that there are no more items.
 There are two other C# syntax elements that may be new to you. The `using` 
 statement in this method manages resource cleanup. The variable that is
 initialized in the `using` statement (`reader`, in this example) must
-implement the `IDisposable` interface. The @System.IDisposable interface
+implement the `IDisposable` interface. The <xref:System.IDisposable> interface
 defines a single method, `Dispose`, that should be called when the
 resource should be released. The compiler generates that call when
 execution reaches the closing brace of the `using` statement. The
@@ -134,8 +134,8 @@ statement.
 The `reader` variable is defined using the `var` keyword. `var` defines an
 *implicitly typed local variable*. That means the type of the variable is
 determined by the compile time type of the object assigned to the
-variable. Here, that is the return value from @System.IO.File.OpenText, which is
-a @System.IO.StreamReader object.
+variable. Here, that is the return value from the <xref:System.IO.File.OpenText(System.String)> method, which is
+a <xref:System.IO.StreamReader> object.
  
 Now, let’s fill in the code to read the file in the `Main` method: 
 
@@ -228,7 +228,7 @@ In this final step, you’ll add the code to write the output asynchronously
 in one task, while also running another task to read input from the user
 if they want to speed up or slow down the text display. This has a few
 steps in it and by the end, you’ll have all the updates that you need.
-The first step is to create an asynchronous @System.Threading.Tasks.Task returning method that
+The first step is to create an asynchronous <xref:System.Threading.Tasks.Task> returning method that
 represents the code you’ve created so far to read and display the file.
 
 Add this method to your `Program` class (it’s taken from the body of your
@@ -250,7 +250,7 @@ private static async Task ShowTeleprompter()
 ```
 
 You’ll notice two changes. First, in the body of the method, instead of
-calling @System.Threading.Tasks.Task.Wait to synchronously wait for a task to finish, this version
+calling <xref:System.Threading.Tasks.Task.Wait> to synchronously wait for a task to finish, this version
 uses the `await` keyword. In order to do that, you need to add the `async`
 modifier to the method signature. This method returns a `Task`. Notice that
 there are no return statements that return a `Task` object. Instead, that
@@ -300,9 +300,9 @@ private static async Task GetInput()
 }
 ```
 
-This creates a lambda expression to represent an @System.Action delegate that reads a key
+This creates a lambda expression to represent an <xref:System.Action> delegate that reads a key
 from the Console and modifies a local variable representing the delay when
-the user presses the ‘<’ or ‘>’ keys. This method uses @System.Console.ReadKey
+the user presses the ‘<’ or ‘>’ keys. This method uses <xref:System.Console.ReadKey>
 to block and wait for the user to press a key.
 
 To finish this feature, you need to create a new `async Task` returning
@@ -368,7 +368,7 @@ private static async Task RunTeleprompter()
 }
 ```
 
-The one new method here is the @System.Threading.Tasks.Task.WhenAny(System.Threading.Tasks.Task[]) call. That creates a `Task`
+The one new method here is the <xref:System.Threading.Tasks.Task.WhenAny(System.Threading.Tasks.Task[])> call. That creates a `Task`
 that finishes as soon as any of the tasks in its argument list completes.
 
 Next, you need to update both the `ShowTeleprompter` and `GetInput` methods to
@@ -437,3 +437,5 @@ I/O, blocking and non-blocking use of the Task based Asynchronous
 programming model, a tour of the C# language and how C# programs are
 organized and the .NET Core Command Line Interface and tools.
  
+<a name="dotnet-restore-note"></a>
+[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]

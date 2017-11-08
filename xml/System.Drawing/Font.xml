@@ -138,7 +138,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The resulting font has its <xref:System.Drawing.Font.Style%2A> property set to <xref:System.Drawing.FontStyle?displayProperty=nameWithType> and its <xref:System.Drawing.Font.Unit%2A> property set to <xref:System.Drawing.GraphicsUnit?displayProperty=nameWithType>. Windows Forms applications support TrueType fonts and have limited support for OpenType fonts. If the `familyName` parameter specifies a font that is not installed on the machine running the application or is not supported, Microsoft Sans Serif will be substituted.  
+ The resulting font has its <xref:System.Drawing.Font.Style%2A> property set to <xref:System.Drawing.FontStyle.Regular?displayProperty=nameWithType> and its <xref:System.Drawing.Font.Unit%2A> property set to <xref:System.Drawing.GraphicsUnit.Point?displayProperty=nameWithType>. Windows Forms applications support TrueType fonts and have limited support for OpenType fonts. If the `familyName` parameter specifies a font that is not installed on the machine running the application or is not supported, Microsoft Sans Serif will be substituted.  
   
    
   
@@ -219,7 +219,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The resulting font has its <xref:System.Drawing.Font.Style%2A> property set to <xref:System.Drawing.FontStyle?displayProperty=nameWithType>.  
+ The resulting font has its <xref:System.Drawing.Font.Style%2A> property set to <xref:System.Drawing.FontStyle.Regular?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -283,7 +283,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The resulting font has its <xref:System.Drawing.Font.Style%2A> property set to <xref:System.Drawing.FontStyle?displayProperty=nameWithType>.  
+ The resulting font has its <xref:System.Drawing.Font.Style%2A> property set to <xref:System.Drawing.FontStyle.Regular?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -433,6 +433,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="emSize" /> is less than or equal to 0, evaluates to infinity, or is not a valid number.</exception>
+        <altmember cref="P:System.Drawing.Font.GdiCharSet" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -511,6 +512,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="emSize" /> is less than or equal to 0, evaluates to infinity, or is not a valid number.</exception>
+        <altmember cref="P:System.Drawing.Font.GdiCharSet" />
       </Docs>
     </Member>
     <Member MemberName="Bold">
@@ -972,7 +974,7 @@
 ## Remarks  
  The line spacing of a <xref:System.Drawing.Font> is the vertical distance between the base lines of two consecutive lines of text. Thus, the line spacing includes the blank space between lines along with the height of the character itself.  
   
- If the <xref:System.Drawing.Font.Unit%2A> property of the font is set to anything other than <xref:System.Drawing.GraphicsUnit?displayProperty=nameWithType>, the height (in pixels) is calculated using the vertical resolution of the screen display. For example, suppose the font unit is inches and the font size is 0.3. Also suppose that for the corresponding font family, the em-height is 2048 and the line spacing is 2355. For a screen display that has a vertical resolution of 96 dots per inch, you can calculate the height as follows:  
+ If the <xref:System.Drawing.Font.Unit%2A> property of the font is set to anything other than <xref:System.Drawing.GraphicsUnit.Pixel?displayProperty=nameWithType>, the height (in pixels) is calculated using the vertical resolution of the screen display. For example, suppose the font unit is inches and the font size is 0.3. Also suppose that for the corresponding font family, the em-height is 2048 and the line spacing is 2355. For a screen display that has a vertical resolution of 96 dots per inch, you can calculate the height as follows:  
   
  2355*(0.3/2048)\*96 = 33.11719  
   
@@ -1005,11 +1007,11 @@
 ## Remarks  
  The line spacing of a <xref:System.Drawing.Font> is the vertical distance between the base lines of two consecutive lines of text. Thus, the line spacing includes the blank space between lines along with the height of the character itself.  
   
- If the <xref:System.Drawing.Font.Unit%2A> property of the font is set to anything other than <xref:System.Drawing.GraphicsUnit?displayProperty=nameWithType>, the height, in pixels, is calculated using the vertical resolution of the specified <xref:System.Drawing.Graphics> object. For example, suppose the font unit is inches and the font size is 0.3. Also suppose that for the corresponding font family, the em-height is 2048 and the line spacing is 2355. If the <xref:System.Drawing.Graphics> object has a <xref:System.Drawing.Font.Unit%2A> property value of <xref:System.Drawing.GraphicsUnit?displayProperty=nameWithType> and a <xref:System.Drawing.Graphics.DpiY%2A> property value of 96 dots per inch, the height is calculated as follows:  
+ If the <xref:System.Drawing.Font.Unit%2A> property of the font is set to anything other than <xref:System.Drawing.GraphicsUnit.Pixel?displayProperty=nameWithType>, the height, in pixels, is calculated using the vertical resolution of the specified <xref:System.Drawing.Graphics> object. For example, suppose the font unit is inches and the font size is 0.3. Also suppose that for the corresponding font family, the em-height is 2048 and the line spacing is 2355. If the <xref:System.Drawing.Graphics> object has a <xref:System.Drawing.Font.Unit%2A> property value of <xref:System.Drawing.GraphicsUnit.Pixel?displayProperty=nameWithType> and a <xref:System.Drawing.Graphics.DpiY%2A> property value of 96 dots per inch, the height is calculated as follows:  
   
  2355*(0.3/2048)\*96 = 33.1171875  
   
- Continuing with the same example, suppose the <xref:System.Drawing.Font.Unit%2A> property of the <xref:System.Drawing.Graphics> object is set to <xref:System.Drawing.GraphicsUnit?displayProperty=nameWithType> rather than <xref:System.Drawing.GraphicsUnit?displayProperty=nameWithType>. Then (using 1 inch = 25.4 millimeters) the height, in millimeters, is calculated as follows:  
+ Continuing with the same example, suppose the <xref:System.Drawing.Font.Unit%2A> property of the <xref:System.Drawing.Graphics> object is set to <xref:System.Drawing.GraphicsUnit.Millimeter?displayProperty=nameWithType> rather than <xref:System.Drawing.GraphicsUnit.Pixel?displayProperty=nameWithType>. Then (using 1 inch = 25.4 millimeters) the height, in millimeters, is calculated as follows:  
   
  2355*(0.3/2048)25.4 = 8.762256  
   
@@ -1059,7 +1061,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Drawing.Font.Unit%2A> property of the font is set to anything other than <xref:System.Drawing.GraphicsUnit?displayProperty=nameWithType>, the height (in pixels) is calculated using the vertical resolution of the screen display. For example, suppose the font unit is inches and the font size is 0.3. Also suppose that for the corresponding font family, the em-height is 2048 and the line spacing is 2355. If the specified vertical resolution is 96 dots per inch, the height is calculated as follows:  
+ If the <xref:System.Drawing.Font.Unit%2A> property of the font is set to anything other than <xref:System.Drawing.GraphicsUnit.Pixel?displayProperty=nameWithType>, the height (in pixels) is calculated using the vertical resolution of the screen display. For example, suppose the font unit is inches and the font size is 0.3. Also suppose that for the corresponding font family, the em-height is 2048 and the line spacing is 2355. If the specified vertical resolution is 96 dots per inch, the height is calculated as follows:  
   
  2355*(0.3/2048)\*96 = 33.1171875  
   
@@ -1093,7 +1095,7 @@
 ## Remarks  
  The line spacing is the vertical distance between the base lines of two consecutive lines of text. Thus, the line spacing includes the blank space between lines along with the height of the character itself.  
   
- If the <xref:System.Drawing.Font.Unit%2A> property of the font is set to anything other than <xref:System.Drawing.GraphicsUnit?displayProperty=nameWithType>, the height (in pixels) is calculated using the vertical resolution of the screen display. For example, suppose the font unit is inches and the font size is 0.3. Also suppose that for the corresponding font family, the em-height is 2048 and the line spacing is 2355. For a screen display that has a vertical resolution of 96 dots per inch, you can calculate the height as follows:  
+ If the <xref:System.Drawing.Font.Unit%2A> property of the font is set to anything other than <xref:System.Drawing.GraphicsUnit.Pixel?displayProperty=nameWithType>, the height (in pixels) is calculated using the vertical resolution of the screen display. For example, suppose the font unit is inches and the font size is 0.3. Also suppose that for the corresponding font family, the em-height is 2048 and the line spacing is 2355. For a screen display that has a vertical resolution of 96 dots per inch, you can calculate the height as follows:  
   
  2355*(0.3/2048)\*96 = 33.11719  
   
@@ -1156,6 +1158,7 @@
         <value>
           <see langword="true" /> to indicate this font has the italic style applied; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Drawing.Font.Style" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -1602,5 +1605,41 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetHeight">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the line spacing of this font.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToLogFont">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a GDI logical font (<c>LOGFONT</c>) structure from this <see cref="T:System.Drawing.Font" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new <see cref="T:System.Drawing.Font" /> that uses the specified existing <see cref="T:System.Drawing.Font" /> and <see cref="T:System.Drawing.FontStyle" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FromLogFont">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Drawing.Font" /> from the specified GDI logical font (<c>LOGFONT</c>) structure.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -48,6 +48,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.Primitives.Thumb" />
+    <altmember cref="T:System.Windows.Controls.Primitives.TickBarPlacement" />
+    <altmember cref="T:System.Windows.Controls.Primitives.TickPlacement" />
+    <altmember cref="T:System.Windows.Controls.Slider" />
+    <altmember cref="T:System.Windows.Controls.Primitives.ScrollBar" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -230,6 +235,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Slider.SelectionStart" />
+        <altmember cref="P:System.Windows.Controls.Slider.SelectionEnd" />
       </Docs>
     </Member>
     <Member MemberName="IsSelectionRangeEnabledProperty">
@@ -288,6 +295,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Primitives.TickBar.Minimum" />
       </Docs>
     </Member>
     <Member MemberName="MaximumProperty">
@@ -346,6 +354,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Primitives.TickBar.Maximum" />
       </Docs>
     </Member>
     <Member MemberName="MinimumProperty">
@@ -552,6 +561,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Primitives.TickBar.SelectionStart" />
+        <altmember cref="P:System.Windows.Controls.Primitives.TickBar.IsSelectionRangeEnabled" />
       </Docs>
     </Member>
     <Member MemberName="SelectionEndProperty">
@@ -610,6 +621,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Primitives.TickBar.SelectionEnd" />
+        <altmember cref="P:System.Windows.Controls.Primitives.TickBar.IsSelectionRangeEnabled" />
       </Docs>
     </Member>
     <Member MemberName="SelectionStartProperty">
@@ -668,6 +681,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Primitives.TickBar.Ticks" />
       </Docs>
     </Member>
     <Member MemberName="TickFrequencyProperty">
@@ -728,6 +742,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Primitives.TickBar.TickFrequency" />
       </Docs>
     </Member>
     <Member MemberName="TicksProperty">

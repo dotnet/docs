@@ -56,6 +56,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+    <altmember cref="T:System.ComponentModel.TypeDescriptor" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -84,6 +86,8 @@
         <param name="properties">An array of type <see cref="T:System.ComponentModel.PropertyDescriptor" /> that provides the properties for this collection.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+        <altmember cref="T:System.ComponentModel.TypeDescriptor" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -114,6 +118,8 @@
         <param name="readOnly">If <see langword="true" />, specifies that the collection cannot be modified.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> class, which is optionally read-only.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+        <altmember cref="T:System.ComponentModel.TypeDescriptor" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -286,6 +292,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+        <altmember cref="T:System.ComponentModel.TypeDescriptor" />
       </Docs>
     </Member>
     <Member MemberName="Empty">
@@ -359,6 +367,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+        <altmember cref="T:System.ComponentModel.TypeDescriptor" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -399,6 +409,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+        <altmember cref="T:System.ComponentModel.TypeDescriptor" />
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -496,6 +509,7 @@
         <param name="sorter">A comparer to use to sort the <see cref="T:System.ComponentModel.PropertyDescriptor" /> objects in this collection.</param>
         <summary>Sorts the members of this collection, using the specified <see cref="T:System.Collections.IComparer" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Collections.IComparer" />
       </Docs>
     </Member>
     <Member MemberName="InternalSort">
@@ -538,6 +552,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IComparer" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -587,6 +602,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">The <paramref name="index" /> parameter is not a valid index for <see cref="P:System.ComponentModel.PropertyDescriptorCollection.Item(System.Int32)" />.</exception>
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+        <altmember cref="T:System.ComponentModel.TypeDescriptor" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -635,6 +652,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+        <altmember cref="T:System.ComponentModel.TypeDescriptor" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -760,6 +779,7 @@
         <summary>Sorts the members of this collection, using the specified <see cref="T:System.Collections.IComparer" />.</summary>
         <returns>A new <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> that contains the sorted <see cref="T:System.ComponentModel.PropertyDescriptor" /> objects.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Collections.IComparer" />
       </Docs>
     </Member>
     <Member MemberName="Sort">
@@ -803,6 +823,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IComparer" />
       </Docs>
     </Member>
     <Member MemberName="Sort">
@@ -848,6 +869,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IComparer" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.Count">
@@ -1068,6 +1090,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+        <altmember cref="T:System.ComponentModel.TypeDescriptor" />
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.IsFixedSize">
@@ -1596,5 +1621,47 @@
         <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> class.</summary>
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+        <altmember cref="T:System.ComponentModel.TypeDescriptor" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Sort">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sorts the members of this collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="InternalSort">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sorts the members of this collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets the specified <see cref="T:System.ComponentModel.PropertyDescriptor" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

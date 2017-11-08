@@ -22,11 +22,12 @@
 ## Examples  
  The following code example demonstrates how the Server value is used to specify that the page should be cached on the Web server where the request is processed.  
   
- <!-- TODO: review snippet reference [!code-csharp[OutputCacheLocation_Resubmit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/OutputCacheLocation_Resubmit/CS/outputcachelocationcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[OutputCacheLocation_Resubmit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/OutputCacheLocation_Resubmit/VB/outputcachelocationvb.aspx#1)]  -->  
+ [!code-aspx-csharp[OutputCacheLocation_Resubmit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/OutputCacheLocation_Resubmit/CS/outputcachelocationcs.aspx#1)]
+ [!code-aspx-vb[OutputCacheLocation_Resubmit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/OutputCacheLocation_Resubmit/VB/outputcachelocationvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.Page" />
   </Docs>
   <Members>
     <Member MemberName="Any">

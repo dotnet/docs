@@ -29,11 +29,15 @@
   
  The following code example is an ASPX file that uses the `MyLoginView` control and demonstrates how to access a <xref:System.Web.UI.WebControls.Label> control that is inside the <xref:System.Web.UI.WebControls.LoginView.AnonymousTemplate%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.TemplateInstance#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.TemplateInstance/cs/templateinstance.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.TemplateInstance#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.TemplateInstance/vb/templateinstance.aspx#2)]  -->  
+ [!code-aspx-csharp[System.Web.UI.TemplateInstance#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.TemplateInstance/cs/templateinstance.aspx#2)]
+ [!code-aspx-vb[System.Web.UI.TemplateInstance#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.TemplateInstance/vb/templateinstance.aspx#2)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.TemplateInstanceAttribute" />
+    <altmember cref="P:System.Web.UI.WebControls.WebParts.EditorZone.ZoneTemplate" />
+    <altmember cref="P:System.Web.UI.WebControls.WebParts.CatalogZone.ZoneTemplate" />
+    <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZone.ZoneTemplate" />
   </Docs>
   <Members>
     <Member MemberName="Multiple">

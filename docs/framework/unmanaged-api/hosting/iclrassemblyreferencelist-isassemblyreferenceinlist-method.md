@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRAssemblyReferenceList::IsAssemblyReferenceInList"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRAssemblyReferenceList::IsAssemblyReferenceInList method [.NET Framework hosting]"
   - "IsAssemblyReferenceInList method [.NET Framework hosting]"

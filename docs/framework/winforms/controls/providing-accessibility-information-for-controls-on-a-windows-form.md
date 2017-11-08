@@ -9,12 +9,10 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "Windows Forms controls, accessibility"
   - "controls [Windows Forms], accessibility"
-  - "accessibility, Windows Forms controls"
+  - "accessibility [Windows Forms], Windows Forms controls"
 ms.assetid: 887dee6f-5059-4d57-957d-7c6fcd4acb10
 caps.latest.revision: 9
 author: dotnet-bot

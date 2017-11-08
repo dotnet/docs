@@ -13,6 +13,8 @@
   <Docs>
     <summary>Provides access and information for manipulating data stores in a <see cref="T:System.IO.Packaging.Package" />.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="M:System.IO.Packaging.StorageInfo.CreateSubStorage(System.String)" />
+    <altmember cref="P:System.IO.Packaging.EncryptedPackageEnvelope.StorageInfo" />
   </Docs>
   <Members>
     <Member MemberName="CreateStream">
@@ -42,6 +44,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IO.Packaging.StorageInfo.DeleteStream(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CreateStream">
@@ -68,6 +71,7 @@
         <summary>Creates a new stream with a given name, <see cref="T:System.IO.Packaging.CompressionOption" />, and <see cref="T:System.IO.Packaging.EncryptionOption" />.</summary>
         <returns>The new stream with the specified <paramref name="name" />, <paramref name="compressionOption" />, and <paramref name="encryptionOption" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.IO.Packaging.StorageInfo.DeleteStream(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CreateSubStorage">
@@ -91,6 +95,7 @@
         <returns>The new child data store.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="M:System.IO.Packaging.StorageInfo.DeleteSubStorage(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="DeleteStream">
@@ -113,6 +118,7 @@
         <summary>Deletes the stream with a specified name.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="Overload:System.IO.Packaging.StorageInfo.CreateStream" />
       </Docs>
     </Member>
     <Member MemberName="DeleteSubStorage">
@@ -142,6 +148,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="M:System.IO.Packaging.StorageInfo.CreateSubStorage(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetStreamInfo">
@@ -165,6 +172,7 @@
         <returns>The stream with the specified <paramref name="name" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="M:System.IO.Packaging.StorageInfo.GetStreams" />
       </Docs>
     </Member>
     <Member MemberName="GetStreams">
@@ -193,6 +201,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IO.Packaging.StorageInfo.GetStreamInfo(System.String)" />
+        <altmember cref="Overload:System.IO.Packaging.StorageInfo.CreateStream" />
+        <altmember cref="M:System.IO.Packaging.StorageInfo.DeleteStream(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetSubStorageInfo">
@@ -216,6 +227,9 @@
         <returns>The child sub-store with the specified <paramref name="name" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="M:System.IO.Packaging.StorageInfo.GetSubStorages" />
+        <altmember cref="M:System.IO.Packaging.StorageInfo.CreateSubStorage(System.String)" />
+        <altmember cref="M:System.IO.Packaging.StorageInfo.DeleteSubStorage(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetSubStorages">
@@ -244,6 +258,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IO.Packaging.StorageInfo.GetSubStorageInfo(System.String)" />
+        <altmember cref="M:System.IO.Packaging.StorageInfo.CreateSubStorage(System.String)" />
+        <altmember cref="M:System.IO.Packaging.StorageInfo.DeleteSubStorage(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -292,6 +309,8 @@
         <returns>
           <see langword="true" /> if a stream with the specified <paramref name="name" /> exists; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="Overload:System.IO.Packaging.StorageInfo.CreateStream" />
+        <altmember cref="M:System.IO.Packaging.StorageInfo.DeleteStream(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="SubStorageExists">
@@ -315,7 +334,19 @@
         <returns>
           <see langword="true" /> if a child sub-store with the specified <paramref name="name" /> exists; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.IO.Packaging.StorageInfo.CreateSubStorage(System.String)" />
+        <altmember cref="M:System.IO.Packaging.StorageInfo.DeleteSubStorage(System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateStream">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new I/O stream in the store.</summary>
+        <altmember cref="M:System.IO.Packaging.StorageInfo.DeleteStream(System.String)" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

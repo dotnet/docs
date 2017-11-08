@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugManagedCallback::CreateAppDomain"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CreateAppDomain method [.NET Framework debugging]"
   - "ICorDebugManagedCallback::CreateAppDomain method [.NET Framework debugging]"

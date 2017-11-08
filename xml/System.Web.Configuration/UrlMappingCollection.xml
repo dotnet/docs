@@ -42,6 +42,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Configuration.UrlMapping" />
+    <altmember cref="T:System.Web.Configuration.UrlMappingsSection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -97,6 +99,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.UrlMapping" />
+        <altmember cref="T:System.Web.Configuration.UrlMappingsSection" />
       </Docs>
     </Member>
     <Member MemberName="AllKeys">
@@ -140,7 +144,7 @@
   
  The following list describes the conditions that apply if you use the <xref:System.Configuration.Configuration.Save%2A> method to save the file:  
   
--   If you pass <xref:System.Configuration.ConfigurationSaveMode.Full> or <xref:System.Configuration.ConfigurationSaveMode?displayProperty=nameWithType> as the parameter value, a `clear` element is inserted into the `urlMappings` section of the configuration file at the current hierarchy level.  
+-   If you pass <xref:System.Configuration.ConfigurationSaveMode.Full> or <xref:System.Configuration.ConfigurationSaveMode.Modified?displayProperty=nameWithType> as the parameter value, a `clear` element is inserted into the `urlMappings` section of the configuration file at the current hierarchy level.  
   
 -   If you pass <xref:System.Configuration.ConfigurationSaveMode.Minimal> as the parameter value, a series of `remove` elements are added to the `urlMappings` of the configuration file at the current hierarchy level. These `remove` elements remove all references to the `add` elements defined in the parent configuration files at higher levels in the hierarchy. With the <xref:System.Configuration.ConfigurationSaveMode.Minimal> enumeration value, there is one additional property on the collection that affects what gets serialized to the configuration file. The property is <xref:System.Configuration.ConfigurationElementCollection.EmitClear%2A> and is `false` by default. One of the following conditions applies:  
   
@@ -162,6 +166,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.UrlMapping" />
+        <altmember cref="T:System.Web.Configuration.UrlMappingsSection" />
       </Docs>
     </Member>
     <Member MemberName="CreateNewElement">
@@ -325,6 +331,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.UrlMapping" />
+        <altmember cref="T:System.Web.Configuration.UrlMappingsSection" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -363,6 +371,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.UrlMapping" />
+        <altmember cref="T:System.Web.Configuration.UrlMappingsSection" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -401,7 +411,27 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.UrlMapping" />
+        <altmember cref="T:System.Web.Configuration.UrlMappingsSection" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes a <see cref="T:System.Web.Configuration.UrlMapping" /> object from the collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.Web.Configuration.UrlMapping" /> in the collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

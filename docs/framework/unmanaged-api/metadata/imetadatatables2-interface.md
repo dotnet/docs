@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataTables2"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataTables2 interface [.NET Framework metadata]"
 ms.assetid: c788bb7c-0212-4b6d-b840-22e8c8829028

@@ -12,11 +12,9 @@ ms.topic: "article"
 f1_keywords: 
   - "Size.Height"
   - "Size.Width"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "controls [Windows Forms], resizing"
-  - "size, controls"
+  - "size [Windows Forms], controls"
   - "Windows Forms controls, size"
 ms.assetid: d2dba441-a8c0-4705-b8e8-2e5d86d6e7ec
 caps.latest.revision: 13

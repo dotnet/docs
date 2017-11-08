@@ -31,11 +31,13 @@
 ## Examples  
  The following example demonstrates how to use a <xref:System.Web.UI.WebControls.BoundColumn> column type in the <xref:System.Web.UI.WebControls.DataGrid> control to display the fields in a data source.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic BoundColumn Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic BoundColumn Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic BoundColumn Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic BoundColumn Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic BoundColumn Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic BoundColumn Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic BoundColumn Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic BoundColumn Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -61,11 +63,12 @@
 ## Examples  
  The following example demonstrates how to create and initialize a new instance of the <xref:System.Web.UI.WebControls.BoundColumn> class and add it to the <xref:System.Web.UI.WebControls.DataGrid.Columns%2A> collection.  
   
- <!-- TODO: review snippet reference [!code-csharp[DataGridCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridCtor/CS/datagridctorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataGridCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridCtor/VB/datagridctorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataGridCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridCtor/CS/datagridctorcs.aspx#1)]
+ [!code-aspx-vb[DataGridCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridCtor/VB/datagridctorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataGrid.Columns" />
       </Docs>
     </Member>
     <Member MemberName="DataField">
@@ -99,11 +102,12 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.BoundColumn.DataField%2A> property to specify the name of the field in the data source to bind to the <xref:System.Web.UI.WebControls.BoundColumn>.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic BoundColumn Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic BoundColumn Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic BoundColumn Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic BoundColumn Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic BoundColumn Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic BoundColumn Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic BoundColumn Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic BoundColumn Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.String.Empty" />
       </Docs>
     </Member>
     <Member MemberName="DataFormatString">
@@ -166,11 +170,13 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.BoundColumn.DataFormatString%2A> property to specify various formats for the columns in the <xref:System.Web.UI.WebControls.DataGrid> control. The `Qty` column is formatted as an integer, the `Price` column is formatted as currency, the `Weight` column is formatted as a decimal number, and the `Expires` column is formatted as a short date and time string.  
   
- <!-- TODO: review snippet reference [!code-csharp[BoundColumnDataFormatString#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BoundColumnDataFormatString/cs/BoundColumnSampleCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[BoundColumnDataFormatString#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BoundColumnDataFormatString/vb/BoundColumnSampleVB.aspx#1)]  -->  
+ [!code-aspx-csharp[BoundColumnDataFormatString#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BoundColumnDataFormatString/cs/BoundColumnSampleCS.aspx#1)]
+ [!code-aspx-vb[BoundColumnDataFormatString#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BoundColumnDataFormatString/vb/BoundColumnSampleVB.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.String.Empty" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
       </Docs>
     </Member>
     <Member MemberName="FormatDataValue">
@@ -203,6 +209,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BoundColumn.DataFormatString" />
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -228,6 +235,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.BoundColumn.InitializeCell(System.Web.UI.WebControls.TableCell,System.Int32,System.Web.UI.WebControls.ListItemType)" />
       </Docs>
     </Member>
     <Member MemberName="InitializeCell">
@@ -260,6 +268,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.BoundColumn.Initialize" />
       </Docs>
     </Member>
     <Member MemberName="ReadOnly">
@@ -294,8 +303,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.BoundColumn.ReadOnly%2A> property to specify that a <xref:System.Web.UI.WebControls.BoundColumn> is read-only. The .aspx file defines three BoundColumn controls, and sets the Item column to read-only.  
   
- <!-- TODO: review snippet reference [!code-csharp[BoundColumnReadOnly#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BoundColumnReadOnly/CS/boundcolumnreadonlycs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[BoundColumnReadOnly#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BoundColumnReadOnly/VB/boundcolumnreadonlyvb.aspx#1)]  -->  
+ [!code-aspx-csharp[BoundColumnReadOnly#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BoundColumnReadOnly/CS/boundcolumnreadonlycs.aspx#1)]
+ [!code-aspx-vb[BoundColumnReadOnly#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BoundColumnReadOnly/VB/boundcolumnreadonlyvb.aspx#1)]  
   
  ]]></format>
         </remarks>

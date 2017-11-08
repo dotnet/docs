@@ -10,11 +10,12 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], accessing objects in combo box cells"
-  - "combo boxes, in DataGridView control"
-  - "combo boxes, accessing objects in DataGridViewComboBoxCell drop-down lists"
+  - "combo boxes [Windows Forms], in DataGridView control"
+  - "combo boxes [Windows Forms], accessing objects in DataGridViewComboBoxCell drop-down lists"
 ms.assetid: bcbe794a-d1fa-47f8-b5a3-5f085b32097d
 caps.latest.revision: 5
 author: dotnet-bot

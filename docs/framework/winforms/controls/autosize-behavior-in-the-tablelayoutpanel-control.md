@@ -9,14 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "AutoSize property, TableLayoutPanel control"
+  - "AutoSize property [Windows Forms], tableLayoutPanel control"
   - "controls [Windows Forms], sizing"
   - "localizing forms"
-  - "layout [Windows Forms],AutoSize"
-  - "sizing, automatic"
+  - "layout [Windows Forms], AutoSize"
+  - "sizing [Windows Forms], automatic"
   - "TableLayoutPanel control [Windows Forms], AutoSize behavior"
   - "automatic sizing"
   - "AutoSizeMode property"

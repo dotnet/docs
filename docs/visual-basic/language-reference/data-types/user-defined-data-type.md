@@ -1,13 +1,10 @@
 ---
 title: "User-Defined Data Type"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "UserDefined"
@@ -16,41 +13,24 @@ f1_keywords:
   - "User-Defined"
   - "vb.UserDefined"
   - "vb.User-Defined"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
-  - "user-defined data types, Visual Basic"
+  - "user-defined data types [Visual Basic], Visual Basic"
   - "user-defined types"
-  - "structures, as user-defined data types"
-  - "user-defined types, Visual Basic"
-  - "user-defined types, structure declaration"
-  - "user-defined types, structures in Visual Basic"
-  - "user-defined data types, structure declaration"
+  - "structures [Visual Basic], as user-defined data types"
+  - "user-defined types [Visual Basic], Visual Basic"
+  - "user-defined types [Visual Basic], structure declaration"
+  - "user-defined types [Visual Basic], structures in Visual Basic"
+  - "user-defined data types [Visual Basic], structure declaration"
   - "data types [Visual Basic], assigning"
-  - "Structure statement"
+  - "Structure statement [Visual Basic]"
   - "data types [Visual Basic], user-defined"
-  - "user-defined data types, structures in Visual Basic"
+  - "user-defined data types [Visual Basic], structures in Visual Basic"
   - "user-defined data types"
   - "types [Visual Basic], user-defined"
 ms.assetid: be913dca-a364-4a51-96a1-549a1b390b0a
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # User-Defined Data Type
 Holds data in a format you define. The `Structure` statement defines the format.  

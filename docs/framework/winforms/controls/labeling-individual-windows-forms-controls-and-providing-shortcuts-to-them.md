@@ -9,12 +9,10 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "controls [Windows Forms], access keys"
-  - "shortcuts, controls"
-  - "keyboard shortcuts, controls"
+  - "shortcuts [Windows Forms], controls"
+  - "keyboard shortcuts [Windows Forms], controls"
   - "Windows Forms controls, labels"
 ms.assetid: 6eaf868c-819f-4131-8f59-048e20c286f7
 caps.latest.revision: 11

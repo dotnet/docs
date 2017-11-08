@@ -20,6 +20,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.Animation.Clock" />
+    <altmember cref="P:System.Windows.Media.Animation.Clock.Controller" />
   </Docs>
   <Members>
     <Member MemberName="Begin">
@@ -49,6 +51,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.Timeline.BeginTime" />
+        <altmember cref="M:System.Windows.Media.Animation.ClockController.SkipToFill" />
+        <altmember cref="M:System.Windows.Media.Animation.ClockController.Stop" />
       </Docs>
     </Member>
     <Member MemberName="Clock">
@@ -96,6 +101,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Animation.ClockController.Resume" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -156,6 +162,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Animation.ClockController.Pause" />
       </Docs>
     </Member>
     <Member MemberName="Seek">
@@ -200,6 +207,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Animation.TimeSeekOrigin" />
+        <altmember cref="M:System.Windows.Media.Animation.ClockController.SeekAlignedToLastTick(System.TimeSpan,System.Windows.Media.Animation.TimeSeekOrigin)" />
       </Docs>
     </Member>
     <Member MemberName="SeekAlignedToLastTick">
@@ -306,6 +315,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.Timeline.SpeedRatio" />
       </Docs>
     </Member>
     <Member MemberName="Stop">

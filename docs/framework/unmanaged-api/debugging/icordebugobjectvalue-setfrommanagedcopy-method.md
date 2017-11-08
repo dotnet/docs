@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugObjectValue::SetFromManagedCopy"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugObjectValue::SetFromManagedCopy method [.NET Framework debugging]"
   - "SetFromManagedCopy method [.NET Framework debugging]"

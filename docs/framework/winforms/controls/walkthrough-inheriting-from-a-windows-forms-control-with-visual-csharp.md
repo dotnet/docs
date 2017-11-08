@@ -9,13 +9,11 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "inheritance, custom controls"
-  - "inheritance, control"
+  - "inheritance [Windows Forms], custom controls"
+  - "inheritance [Windows Forms], control"
   - "Windows Forms controls, inheritance"
-  - "inheritance, walkthroughs"
+  - "inheritance [Windows Forms], walkthroughs"
   - "custom controls [Windows Forms], inheritance"
 ms.assetid: 09476da0-8d4c-4a4c-b969-649519dfb438
 caps.latest.revision: 17

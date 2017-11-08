@@ -23,11 +23,21 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TemplateColumn> class to create a column in the <xref:System.Web.UI.WebControls.DataGrid> control with a custom layout.  
   
- <!-- TODO: review snippet reference [!code-csharp[TemplateColumnEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateColumnEdit/CS/templatecolumncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TemplateColumnEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateColumnEdit/VB/templatecolumnvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TemplateColumnEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateColumnEdit/CS/templatecolumncs.aspx#1)]
+ [!code-aspx-vb[TemplateColumnEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateColumnEdit/VB/templatecolumnvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+    <altmember cref="T:System.Web.UI.WebControls.DataGridColumn" />
+    <altmember cref="T:System.Web.UI.WebControls.BoundColumn" />
+    <altmember cref="T:System.Web.UI.WebControls.ButtonColumn" />
+    <altmember cref="T:System.Web.UI.WebControls.EditCommandColumn" />
+    <altmember cref="T:System.Web.UI.WebControls.HyperLinkColumn" />
+    <altmember cref="P:System.Web.UI.WebControls.TemplateColumn.HeaderTemplate" />
+    <altmember cref="P:System.Web.UI.WebControls.TemplateColumn.FooterTemplate" />
+    <altmember cref="P:System.Web.UI.WebControls.TemplateColumn.ItemTemplate" />
+    <altmember cref="P:System.Web.UI.WebControls.TemplateColumn.EditItemTemplate" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -92,11 +102,15 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TemplateColumn.EditItemTemplate%2A> property to control the appearance of the item being edited in the <xref:System.Web.UI.WebControls.TemplateColumn> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[TemplateColumnEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateColumnEdit/CS/templatecolumncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TemplateColumnEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateColumnEdit/VB/templatecolumnvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TemplateColumnEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateColumnEdit/CS/templatecolumncs.aspx#1)]
+ [!code-aspx-vb[TemplateColumnEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateColumnEdit/VB/templatecolumnvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ITemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateColumn.FooterTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateColumn.HeaderTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateColumn.ItemTemplate" />
       </Docs>
     </Member>
     <Member MemberName="FooterTemplate">
@@ -139,11 +153,15 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TemplateColumn.FooterTemplate%2A> property to control the appearance of the footer section in the <xref:System.Web.UI.WebControls.TemplateColumn> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[TemplateColumnEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateColumnEdit/CS/templatecolumncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TemplateColumnEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateColumnEdit/VB/templatecolumnvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TemplateColumnEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateColumnEdit/CS/templatecolumncs.aspx#1)]
+ [!code-aspx-vb[TemplateColumnEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateColumnEdit/VB/templatecolumnvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ITemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateColumn.HeaderTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateColumn.ItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateColumn.EditItemTemplate" />
       </Docs>
     </Member>
     <Member MemberName="HeaderTemplate">
@@ -186,11 +204,15 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TemplateColumn.HeaderTemplate%2A> property to control the appearance of the heading section in the <xref:System.Web.UI.WebControls.TemplateColumn> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[TemplateColumnEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateColumnEdit/CS/templatecolumncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TemplateColumnEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateColumnEdit/VB/templatecolumnvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TemplateColumnEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateColumnEdit/CS/templatecolumncs.aspx#1)]
+ [!code-aspx-vb[TemplateColumnEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateColumnEdit/VB/templatecolumnvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ITemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateColumn.FooterTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateColumn.ItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateColumn.EditItemTemplate" />
       </Docs>
     </Member>
     <Member MemberName="InitializeCell">
@@ -258,11 +280,15 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TemplateColumn.ItemTemplate%2A> property to control the appearance of a data item in the <xref:System.Web.UI.WebControls.TemplateColumn> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[TemplateColumnEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateColumnEdit/CS/templatecolumncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TemplateColumnEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateColumnEdit/VB/templatecolumnvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TemplateColumnEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateColumnEdit/CS/templatecolumncs.aspx#1)]
+ [!code-aspx-vb[TemplateColumnEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateColumnEdit/VB/templatecolumnvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ITemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateColumn.FooterTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateColumn.HeaderTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateColumn.EditItemTemplate" />
       </Docs>
     </Member>
   </Members>

@@ -1,7 +1,7 @@
 ---
 title: "Variable Declaration in Visual Basic"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,43 +9,25 @@ ms.technology:
   - "devlang-visual-basic"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "variables [Visual Basic], declaring"
-  - "member variables, declarations"
-  - "Dim statement, variable declaration"
-  - "declaring variables"
+  - "member variables [Visual Basic], declarations"
+  - "Dim statement [Visual Basic], variable declaration"
+  - "declaring variables [Visual Basic]"
   - "variables [Visual Basic], scope"
   - "variables [Visual Basic], data types"
   - "data types [Visual Basic], variable declarations"
-  - "lifetime, variables"
+  - "lifetime [Visual Basic], variables"
   - "variables [Visual Basic], lifetime"
-  - "access levels, variables"
-  - "scope, declaration statements"
+  - "access levels [Visual Basic], variables"
+  - "scope [Visual Basic], declaration statements"
   - "variables [Visual Basic], access level"
-  - "local variables, declarations"
-  - "scope, variables"
+  - "local variables [Visual Basic], declarations"
+  - "scope [Visual Basic], variables"
 ms.assetid: d8f10226-92b1-480f-9f53-df377b2d7e15
 caps.latest.revision: 31
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Variable Declaration in Visual Basic
 You declare a variable to specify its name and characteristics. The declaration statement for variables is the [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md). Its location and contents determine the variable's characteristics.  

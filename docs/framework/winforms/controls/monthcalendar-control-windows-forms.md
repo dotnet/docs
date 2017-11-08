@@ -9,12 +9,10 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "calendar controls"
   - "MonthCalendar control [Windows Forms]"
-  - "dates, controls"
+  - "dates [Windows Forms], controls"
   - "calendars"
 ms.assetid: 051c6518-e0ca-426b-855c-f9bf70972970
 caps.latest.revision: 11

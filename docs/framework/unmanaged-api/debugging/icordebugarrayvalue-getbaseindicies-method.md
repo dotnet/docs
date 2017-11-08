@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugArrayValue::GetBaseIndicies"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugArrayValue::GetBaseIndicies method [.NET Framework debugging]"
   - "GetBaseIndicies method [.NET Framework debugging]"

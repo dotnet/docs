@@ -24,6 +24,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.TabControl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,6 +44,7 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TabControl.TabPageCollection" /> class.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The specified <see cref="T:System.Windows.Forms.TabControl" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Forms.TabControl" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -106,6 +108,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The specified <paramref name="value" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Forms.TabControl.TabPageCollection.AddRange(System.Windows.Forms.TabPage[])" />
+        <altmember cref="M:System.Windows.Forms.TabControl.TabPageCollection.Remove(System.Windows.Forms.TabPage)" />
+        <altmember cref="M:System.Windows.Forms.TabControl.TabPageCollection.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -245,6 +250,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The value of pages equals <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Forms.TabControl.TabPageCollection.Add(System.Windows.Forms.TabPage)" />
+        <altmember cref="M:System.Windows.Forms.TabControl.TabPageCollection.Remove(System.Windows.Forms.TabPage)" />
+        <altmember cref="M:System.Windows.Forms.TabControl.TabPageCollection.RemoveAt(System.Int32)" />
+        <altmember cref="T:System.Windows.Forms.TabPage" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -276,6 +285,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TabControl.TabPageCollection.Remove(System.Windows.Forms.TabPage)" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -313,6 +323,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The value of <paramref name="page" /> is <see langword="null" />.</exception>
+        <altmember cref="P:System.Windows.Forms.TabControl.TabPageCollection.Item(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.TabControl.TabPageCollection.IndexOf(System.Windows.Forms.TabPage)" />
+        <altmember cref="M:System.Windows.Forms.TabControl.TabPageCollection.GetEnumerator" />
+        <altmember cref="T:System.Windows.Forms.TabPage" />
       </Docs>
     </Member>
     <Member MemberName="ContainsKey">
@@ -411,6 +425,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.IEnumerator.Current" />
+        <altmember cref="T:System.Collections.IEnumerator" />
+        <altmember cref="M:System.Collections.IEnumerator.MoveNext" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -447,6 +464,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The value of <paramref name="page" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Forms.TabControl.TabPageCollection.Contains(System.Windows.Forms.TabPage)" />
+        <altmember cref="P:System.Windows.Forms.TabControl.TabPageCollection.Item(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.TabControl.TabPageCollection.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="IndexOfKey">
@@ -703,6 +723,11 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than zero or greater than the highest available index.</exception>
+        <altmember cref="M:System.Windows.Forms.TabControl.TabPageCollection.Add(System.Windows.Forms.TabPage)" />
+        <altmember cref="M:System.Windows.Forms.TabControl.TabPageCollection.Contains(System.Windows.Forms.TabPage)" />
+        <altmember cref="M:System.Windows.Forms.TabControl.TabPageCollection.GetEnumerator" />
+        <altmember cref="M:System.Windows.Forms.TabControl.TabPageCollection.IndexOf(System.Windows.Forms.TabPage)" />
+        <altmember cref="M:System.Windows.Forms.TabControl.TabPageCollection.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -769,6 +794,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Forms.TabControl.TabPageCollection.Add(System.Windows.Forms.TabPage)" />
+        <altmember cref="M:System.Windows.Forms.TabControl.TabPageCollection.Clear" />
+        <altmember cref="M:System.Windows.Forms.TabControl.TabPageCollection.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -803,6 +831,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TabControl.TabPageCollection.Clear" />
+        <altmember cref="M:System.Windows.Forms.TabControl.TabPageCollection.IndexOf(System.Windows.Forms.TabPage)" />
+        <altmember cref="M:System.Windows.Forms.TabControl.TabPageCollection.Remove(System.Windows.Forms.TabPage)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveByKey">
@@ -1135,5 +1166,32 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets a tab page in the collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Insert">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Inserts a tab page into the collection at the specified index.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a tab page to the collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -10,10 +10,11 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "gradient brushes, gamma correction"
-  - "gradients, gamma correction"
+  - "gradient brushes [Windows Forms], gamma correction"
+  - "gradients [Windows Forms], gamma correction"
 ms.assetid: da4690e7-5fac-4fd2-b3f0-5cb35c165b92
 caps.latest.revision: 15
 author: dotnet-bot

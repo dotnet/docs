@@ -36,6 +36,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ToolStripDropDownItem" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -216,6 +217,35 @@
         <value>
           <see langword="true" /> to use the <see cref="P:System.Windows.Forms.Control.Text" /> property for the ToolTip; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateAccessibilityInstance">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Forms.AccessibleObject CreateAccessibilityInstance ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Forms.AccessibleObject CreateAccessibilityInstance() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripDropDownButton.CreateAccessibilityInstance" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AccessibleObject</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new accessibility object for this <see cref="T:System.Windows.Forms.ToolStripDropDownButton" /> instance.</summary>
+        <returns>A new accessibility object for this <see cref="T:System.Windows.Forms.ToolStripDropDownButton" /> instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+The <xref:System.Windows.Forms.AccessibleObject> instance returned by this method supports the UI Automation expand/collapse pattern. 
+However, it's only available in applications that are running on the .NET Framework 4.7.1 or later versions and are either recompiled to target the .NET Framework 4.7.1 or opt in to this .NET Framework accessibility enhancements by using an AppCompat switch. 
+For more information, see the [migration guide](~/docs/framework/migration-guide/retargeting/4.7-4.7.1.md#windows-forms). 
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateDefaultDropDown">
@@ -435,5 +465,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripDropDownButton" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

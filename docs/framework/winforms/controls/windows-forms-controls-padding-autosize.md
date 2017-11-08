@@ -15,12 +15,10 @@ f1_keywords:
   - "Margin.Top"
   - "Margin.All"
   - "Margin.Right"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "Margin property [Windows Forms], walkthroughs"
   - "walkthroughs [Windows Forms], layout"
-  - "AutoSize property, walkthroughs"
+  - "AutoSize property [Windows Forms], walkthroughs"
   - "Padding property [Windows Forms], walkthroughs"
   - "layout [Windows Forms], margins and padding"
   - "Windows Forms, layout"

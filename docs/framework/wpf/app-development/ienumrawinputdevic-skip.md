@@ -10,7 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "Skip method"
+  - "Skip method [WPF]"
 ms.assetid: c967b0f8-1c6a-459c-8c16-d4f08918ab65
 caps.latest.revision: 5
 author: dotnet-bot

@@ -55,6 +55,8 @@
     <block subset="none" type="overrides">
       <para>The implementing class must have a means to compare keys.</para>
     </block>
+    <altmember cref="T:System.Collections.ICollection" />
+    <altmember cref="T:System.Collections.IDictionary" />
   </Docs>
   <Members>
     <Member MemberName="GetEnumerator">
@@ -245,6 +247,7 @@
  -or-  
   
  <paramref name="index" /> is equal to or greater than <see cref="P:System.Collections.ICollection.Count" />.</exception>
+        <altmember cref="P:System.Collections.ICollection.Count" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">

@@ -41,6 +41,37 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="HandleDispatcherRequestProcessingFailure">
+      <MemberSignature Language="C#" Value="public static System.Windows.BaseCompatibilityPreferences.HandleDispatcherRequestProcessingFailureOptions HandleDispatcherRequestProcessingFailure { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.BaseCompatibilityPreferences/HandleDispatcherRequestProcessingFailureOptions HandleDispatcherRequestProcessingFailure" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.BaseCompatibilityPreferences.HandleDispatcherRequestProcessingFailure" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.BaseCompatibilityPreferences+HandleDispatcherRequestProcessingFailureOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Defines how the dispatcher reacts to failures encountered when it requests processing.</summary>
+        <value>A value that defines how the dispatcher reacts to failures.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+The Windows Presentation Foundation dispatcher reacts to failures that it encounters when requesting processing by setting a timer or posting messages to itself. 
+If these operations fail because the underlying operating system resource is exhausted, the dispatcher becomes unresponsive. 
+Typically, this failure is caused by an application posting messages faster than the dispatcher can handle them or by starving the dispatcher's message pump. 
+To aid in diagnosing the cause of the dispatcher's unresponsiveness, you can control how the dispatcher responds to these failures by setting this property.
+
+This property value can be changed at any time. If it is changed from multiple threads, the value is that set by the last writer ("last writer wins" behavior).
+
+]]></format>
+        </remarks>
+        <altmember cref="T:System.Windows.BaseCompatibilityPreferences.HandleDispatcherRequestProcessingFailureOptions" />
+      </Docs>
+    </Member>
     <Member MemberName="InlineDispatcherSynchronizationContextSend">
       <MemberSignature Language="C#" Value="public static bool InlineDispatcherSynchronizationContextSend { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property bool InlineDispatcherSynchronizationContextSend" />

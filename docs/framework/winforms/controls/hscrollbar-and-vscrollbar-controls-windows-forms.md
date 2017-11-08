@@ -9,12 +9,10 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "scroll bars"
   - "VScrollBar control [Windows Forms]"
-  - "scroll bars, Windows Forms"
+  - "scroll bars [Windows Forms], Windows Forms"
   - "HScrollBar control [Windows Forms]"
   - "Scroll Bar control [Windows Forms]"
 ms.assetid: f5e9cda7-d8f3-406b-b0e6-bdb4375d6eb0

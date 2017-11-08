@@ -71,8 +71,8 @@
   
  The second part of the example shows how to reference the custom part controls in an ASP.NET Web page. Notice that the various <xref:System.Web.UI.WebControls.WebParts.Part> properties are assigned declaratively to the custom control instances. Compare the declarative code that references the two instances on the page, and then load the page in a browser. Note how the various properties affect the appearance of the controls. For example, after you load the page in a browser, the second instance of the `TextDisplayWebPart` control appears minimized, because its <xref:System.Web.UI.WebControls.WebParts.Part.ChromeState%2A> property value is set to <xref:System.Web.UI.WebControls.WebParts.PartChromeState.Minimized>.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_Part_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_Part_Overview/CS/partoverviewcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_Part_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_Part_Overview/VB/partoverviewvb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_Part_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_Part_Overview/CS/partoverviewcs.aspx#1)]
+ [!code-aspx-vb[WebParts_Part_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_Part_Overview/VB/partoverviewvb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -114,8 +114,8 @@
   
  Note that in the declarative markup for the Web page, the second instance of the `TextDisplayWebPart` control sets its <xref:System.Web.UI.WebControls.WebParts.Part.ChromeState%2A> property. After you load the page in a browser, the second control instance appears minimized.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_Part_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_Part_Overview/CS/partoverviewcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_Part_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_Part_Overview/VB/partoverviewvb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_Part_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_Part_Overview/CS/partoverviewcs.aspx#1)]
+ [!code-aspx-vb[WebParts_Part_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_Part_Overview/VB/partoverviewvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -158,8 +158,8 @@
   
  In the declarative code for the Web page, the second instance of the `TextDisplayWebPart` control sets its <xref:System.Web.UI.WebControls.WebParts.Part.ChromeType%2A> property to have only a title, whereas the first instance has a title and a border. After you load the page in a browser, the second instance of the control appears minimized. If you maximize the control, it shows a title without a border.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_Part_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_Part_Overview/CS/partoverviewcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_Part_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_Part_Overview/VB/partoverviewvb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_Part_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_Part_Overview/CS/partoverviewcs.aspx#1)]
+ [!code-aspx-vb[WebParts_Part_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_Part_Overview/VB/partoverviewvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -194,6 +194,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.Controls" />
       </Docs>
     </Member>
     <Member MemberName="DataBind">
@@ -212,6 +213,7 @@
       <Docs>
         <summary>Binds a data source to the invoked server control and all its child controls.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.Control.DataBind" />
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -252,14 +254,16 @@
   
  After you load the page in a browser, if you position your mouse pointer over the title text of the first control instance, the description text appears in a ToolTip.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_Part_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_Part_Overview/CS/partoverviewcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_Part_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_Part_Overview/VB/partoverviewvb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_Part_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_Part_Overview/CS/partoverviewcs.aspx#1)]
+ [!code-aspx-vb[WebParts_Part_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_Part_Overview/VB/partoverviewvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>Derived classes such as <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> can override <see cref="P:System.Web.UI.WebControls.WebParts.Part.Description" /> to enable user personalization of the control's description.</para>
         </block>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.DisplayTitle" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.Part.Title" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.ICompositeControlDesignerAccessor.RecreateChildControls">
@@ -278,6 +282,7 @@
       <Docs>
         <summary>Allows the developer of a designer for a composite part control to recreate the control's child controls on the design surface.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.WebControls.ICompositeControlDesignerAccessor.RecreateChildControls" />
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -317,14 +322,16 @@
 ## Examples  
  The following code example illustrates the declarative use of the <xref:System.Web.UI.WebControls.WebParts.Part.Title%2A> property in a part control. This example requires the custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control `TextDisplayWebPart`, which can be found in the Example section of the <xref:System.Web.UI.WebControls.WebParts.Part> class summary.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_Part_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_Part_Overview/CS/partoverviewcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_Part_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_Part_Overview/VB/partoverviewvb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_Part_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_Part_Overview/CS/partoverviewcs.aspx#1)]
+ [!code-aspx-vb[WebParts_Part_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_Part_Overview/VB/partoverviewvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>Derived classes such as <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> can override <see cref="P:System.Web.UI.WebControls.WebParts.Part.Title" /> to enable user personalization of the title.</para>
         </block>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.DisplayTitle" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.Subtitle" />
       </Docs>
     </Member>
   </Members>

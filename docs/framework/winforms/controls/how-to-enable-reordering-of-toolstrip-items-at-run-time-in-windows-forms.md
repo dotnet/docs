@@ -10,10 +10,10 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "ToolStrip control [Windows Forms], examples"
-  - "AllowItemReorder property"
   - "examples [Windows Forms], toolbars"
   - "toolbars [Windows Forms], rearranging controls"
   - "ToolStrip control [Windows Forms], reordering items"

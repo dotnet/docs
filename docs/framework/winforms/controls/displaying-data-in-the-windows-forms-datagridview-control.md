@@ -9,12 +9,10 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "data [Windows Forms], displaying in tabular format"
-  - "data grids, displaying data"
-  - "displaying data, data grids"
+  - "data grids [Windows Forms], displaying data"
+  - "displaying data [Windows Forms], data grids"
   - "DataGridView control [Windows Forms], displaying data"
 ms.assetid: b170b52a-2ebd-4948-ac2f-e52d494cebb2
 caps.latest.revision: 12

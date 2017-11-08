@@ -10,7 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "controls, Popup"
+  - "controls [WPF], Popup"
   - "Popup control [WPF], about Popup control"
 ms.assetid: 774f53ca-bff8-470e-9ce9-3928b4cf3d4c
 caps.latest.revision: 34

@@ -186,6 +186,7 @@
           <see langword="true" /> if the object supports themes and control skins; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="instance" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="M:System.Web.UI.ThemeableAttribute.IsTypeThemeable(System.Type)" />
       </Docs>
     </Member>
     <Member MemberName="IsTypeThemeable">
@@ -217,6 +218,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="type" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="M:System.Web.UI.ThemeableAttribute.IsObjectThemeable(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="No">

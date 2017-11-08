@@ -1,47 +1,27 @@
 ---
 title: "Building from the Command Line (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "builds [Visual Basic], command-line"
   - "Visual Basic compiler, about Visual Basic compiler"
   - "command line [Visual Basic], compilers"
   - "command line [Visual Basic], building from"
   - "command line [Visual Basic], builds"
-  - "compilers, invoking from command line"
+  - "compilers [Visual Basic], invoking from command line"
   - "command-line builds"
   - "compiling source code"
-  - "command-line compilers, Visual Basic"
+  - "command-line compilers [Visual Basic], Visual Basic"
   - "command line [Visual Basic], Visual Basic"
 ms.assetid: e61947e9-a42e-4717-a699-5f70a98cdd03
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Building from the Command Line (Visual Basic)
 A [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] project is made up of one or more separate source files. During the process known as compilation, these files are brought together into one package—a single executable file that can be run as an application.  

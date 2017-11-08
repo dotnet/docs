@@ -27,14 +27,18 @@
 ## Examples  
  The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.DataGrid.PageIndexChanged> event. It displays pages on the <xref:System.Web.UI.WebControls.DataGrid> control in 10-item increments.  
   
- <!-- TODO: review snippet reference [!code-csharp[DataGridAllowPaging#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridAllowPaging/CS/datagridallowpagingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataGridAllowPaging#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridAllowPaging/VB/datagridallowpagingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataGridAllowPaging#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridAllowPaging/CS/datagridallowpagingcs.aspx#1)]
+ [!code-aspx-vb[DataGridAllowPaging#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridAllowPaging/VB/datagridallowpagingvb.aspx#1)]  
   
- <!-- TODO: review snippet reference [!code-csharp[PageIndexChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PageIndexChanged/CS/datagridpageindexchangedcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[PageIndexChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PageIndexChanged/VB/datagridpageindexchangedvb.aspx#1)]  -->  
+ [!code-aspx-csharp[PageIndexChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PageIndexChanged/CS/datagridpageindexchangedcs.aspx#1)]
+ [!code-aspx-vb[PageIndexChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PageIndexChanged/VB/datagridpageindexchangedvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DataGridPageChangedEventHandler" />
+    <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+    <altmember cref="E:System.Web.UI.WebControls.DataGrid.PageIndexChanged" />
+    <altmember cref="M:System.Web.UI.WebControls.DataGrid.OnPageIndexChanged(System.Web.UI.WebControls.DataGridPageChangedEventArgs)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -105,11 +109,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DataGridPageChangedEventArgs.CommandSource%2A> property to programmatically control the command source that raises the event.  
   
- <!-- TODO: review snippet reference [!code-csharp[DataGridAllowPaging#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridAllowPaging/CS/datagridallowpagingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataGridAllowPaging#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridAllowPaging/VB/datagridallowpagingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataGridAllowPaging#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridAllowPaging/CS/datagridallowpagingcs.aspx#1)]
+ [!code-aspx-vb[DataGridAllowPaging#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridAllowPaging/VB/datagridallowpagingvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+        <altmember cref="E:System.Web.UI.WebControls.DataGrid.PageIndexChanged" />
+        <altmember cref="M:System.Web.UI.WebControls.DataGrid.OnPageIndexChanged(System.Web.UI.WebControls.DataGridPageChangedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="NewPageIndex">
@@ -138,11 +145,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DataGridPageChangedEventArgs.NewPageIndex%2A> property to determine the index of the page selected by the user in the page selection element of the <xref:System.Web.UI.WebControls.DataGrid> control. This value is then used to set the <xref:System.Web.UI.WebControls.DataGrid.CurrentPageIndex%2A> property of the <xref:System.Web.UI.WebControls.DataGrid> control to display the selected page.  
   
- <!-- TODO: review snippet reference [!code-csharp[DataGridAllowPaging#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridAllowPaging/CS/datagridallowpagingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataGridAllowPaging#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridAllowPaging/VB/datagridallowpagingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataGridAllowPaging#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridAllowPaging/CS/datagridallowpagingcs.aspx#1)]
+ [!code-aspx-vb[DataGridAllowPaging#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridAllowPaging/VB/datagridallowpagingvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+        <altmember cref="E:System.Web.UI.WebControls.DataGrid.PageIndexChanged" />
+        <altmember cref="M:System.Web.UI.WebControls.DataGrid.OnPageIndexChanged(System.Web.UI.WebControls.DataGridPageChangedEventArgs)" />
       </Docs>
     </Member>
   </Members>

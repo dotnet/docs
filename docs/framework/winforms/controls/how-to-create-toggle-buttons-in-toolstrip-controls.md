@@ -10,9 +10,10 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "toggle buttons, creating"
+  - "toggle buttons [Windows Forms], creating"
   - "examples [Windows Forms], toolbars"
   - "ToolStrip control [Windows Forms], creating toggle buttons"
 ms.assetid: d9c197df-4c65-43f2-beee-b68b52b2befc

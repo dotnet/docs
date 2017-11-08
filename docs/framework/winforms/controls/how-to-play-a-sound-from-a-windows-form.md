@@ -10,13 +10,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "playing sounds, Windows Forms"
-  - "sounds, playing"
-  - "SoundPlayer class"
+  - "playing sounds [Windows Forms], Windows Forms"
+  - "sounds [Windows Forms], playing"
   - "sounds"
-  - "My.Computer.Audio object, playing sounds"
+  - "My.Computer.Audio object [Windows Forms], playing sounds"
   - "examples [Windows Forms], sounds"
 ms.assetid: 3d3350b7-1ebd-4e05-a738-48ca1160a19d
 caps.latest.revision: 15

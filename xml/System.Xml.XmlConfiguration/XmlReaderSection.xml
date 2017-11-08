@@ -38,6 +38,29 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="CollapseWhiteSpaceIntoEmptyStringString">
+      <MemberSignature Language="C#" Value="public string CollapseWhiteSpaceIntoEmptyStringString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CollapseWhiteSpaceIntoEmptyStringString" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlConfiguration.XmlReaderSection.CollapseWhiteSpaceIntoEmptyStringString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("CollapseWhiteSpaceIntoEmptyString", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the string that represents a boolean value indicating whether white spaces are collapsed into empty strings. The default value is "false".</summary>
+        <value>A string that represents a boolean value indicating whether white spaces are collapsed into empty strings.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ProhibitDefaultResolverString">
       <MemberSignature Language="C#" Value="public string ProhibitDefaultResolverString { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ProhibitDefaultResolverString" />

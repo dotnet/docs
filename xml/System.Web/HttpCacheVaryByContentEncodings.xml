@@ -37,11 +37,12 @@
 ## Examples  
  The following example shows how to enable a dynamically compressed response that can be served from the output cache. The encoding that is acceptable is "gzip" and is set by using the `VaryByContentEncodings` attribute of the  directive. If the Web server that hosts the page does not have dynamic compression enabled, the output cache will not have a cached response for the specified content encoding.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpCachePolicy.VaryByContentEncodings#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpCachePolicy.VaryByContentEncodings/CS/default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.HttpCachePolicy.VaryByContentEncodings#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpCachePolicy.VaryByContentEncodings/VB/default.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.HttpCachePolicy.VaryByContentEncodings#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpCachePolicy.VaryByContentEncodings/CS/default.aspx#1)]
+ [!code-aspx-vb[System.Web.HttpCachePolicy.VaryByContentEncodings#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpCachePolicy.VaryByContentEncodings/VB/default.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.HttpCachePolicy.VaryByContentEncodings" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

@@ -274,6 +274,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.CodeDom.Compiler.GeneratorSupport" />
+        <altmember cref="P:System.CodeDom.Compiler.CompilerParameters.LinkedResources" />
+        <altmember cref="P:System.CodeDom.Compiler.CompilerParameters.Win32Resource" />
       </Docs>
     </Member>
     <Member MemberName="Evidence">
@@ -298,6 +301,7 @@
         <value>An  object that represents the security policy permissions to grant the compiled assembly.</value>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability control evidence. Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" /> Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" /></permission>
+        <altmember cref="T:System.Security.Policy.Evidence" />
       </Docs>
     </Member>
     <Member MemberName="GenerateExecutable">
@@ -443,6 +447,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.CodeDom.Compiler.GeneratorSupport" />
+        <altmember cref="P:System.CodeDom.Compiler.CompilerParameters.EmbeddedResources" />
+        <altmember cref="P:System.CodeDom.Compiler.CompilerParameters.Win32Resource" />
       </Docs>
     </Member>
     <Member MemberName="MainClass">
@@ -552,6 +559,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Specialized.StringCollection" />
       </Docs>
     </Member>
     <Member MemberName="TempFiles">
@@ -716,7 +724,19 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.CodeDom.Compiler.GeneratorSupport" />
+        <altmember cref="P:System.CodeDom.Compiler.CompilerParameters.LinkedResources" />
+        <altmember cref="P:System.CodeDom.Compiler.CompilerParameters.EmbeddedResources" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.Compiler.CompilerParameters" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

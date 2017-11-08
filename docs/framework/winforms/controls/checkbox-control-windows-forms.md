@@ -9,13 +9,11 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "checked list items, Windows Forms controls"
+  - "checked list items [Windows Forms], Windows Forms controls"
   - "CheckBox control [Windows Forms]"
-  - "list controls, Windows Forms"
-  - "list items, Windows Forms controls that display"
+  - "list controls [Windows Forms], Windows Forms"
+  - "list items [Windows Forms], Windows Forms controls that display"
   - "checked list items"
   - "check boxes"
 ms.assetid: 0719d798-c307-40d3-9040-72a62679c227

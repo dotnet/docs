@@ -59,6 +59,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -407,6 +408,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Uri" />
       </Docs>
     </Member>
     <Member MemberName="StartListening">
@@ -475,5 +477,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Channels.Tcp.TcpChannel" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -124,6 +124,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Media3D.Point3D.op_Addition(System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Vector3D)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -166,6 +167,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Media3D.Point3D.op_Equality(System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Point3D)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -196,6 +198,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Media3D.Point3D.op_Equality(System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Point3D)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -238,6 +241,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Media3D.Point3D.op_Equality(System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Point3D)" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -291,6 +295,7 @@
         <summary>Transforms the specified <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure by the specified <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</summary>
         <returns>A transformed <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure, the result of transforming <paramref name="point" /> by <paramref name="matrix" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Media.Media3D.Point3D.op_Multiply(System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Matrix3D)" />
       </Docs>
     </Member>
     <Member MemberName="Offset">
@@ -372,6 +377,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Media3D.Point3D.Add(System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Vector3D)" />
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -414,6 +420,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Media.Media3D.Point3D.Equals" />
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -432,9 +439,9 @@
         <Parameter Name="point" Type="System.Windows.Media.Media3D.Point3D" />
       </Parameters>
       <Docs>
-        <param name="point">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="point">The point to convert.</param>
+        <summary>Converts a <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure into a <see cref="T:System.Windows.Media.Media3D.Point4D" /> structure.</summary>
+        <returns>The result of converting <paramref name="point" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -454,9 +461,9 @@
         <Parameter Name="point" Type="System.Windows.Media.Media3D.Point3D" />
       </Parameters>
       <Docs>
-        <param name="point">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="point">The point to convert.</param>
+        <summary>Converts a <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure into a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure.</summary>
+        <returns>The result of converting <paramref name="point" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -534,6 +541,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Media3D.Point3D.Multiply(System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Matrix3D)" />
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
@@ -568,6 +576,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Media.Media3D.Point3D.Subtract" />
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
@@ -602,6 +611,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Media.Media3D.Point3D.Subtract" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -668,6 +678,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Media.Media3D.Point3D.Subtract" />
       </Docs>
     </Member>
     <Member MemberName="Subtract">
@@ -702,6 +713,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Media.Media3D.Point3D.Subtract" />
       </Docs>
     </Member>
     <Member MemberName="System.IFormattable.ToString">
@@ -861,5 +873,50 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Subtract">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Subtracts a <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure or a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure from a <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="op_Explicit">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure into a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure or a <see cref="T:System.Windows.Media.Media3D.Point4D" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="op_Subtraction">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Subtracts a <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure or a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure from a <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares two <see cref="T:System.Windows.Media.Media3D.Point3D" /> structures for equality.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.String" /> representation of this <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

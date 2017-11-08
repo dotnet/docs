@@ -49,11 +49,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.HotSpotMode> enumeration values to set the <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=nameWithType> property. The page contains an <xref:System.Web.UI.WebControls.ImageMap> control that contains two <xref:System.Web.UI.WebControls.RectangleHotSpot> objects. The <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=nameWithType> property is set to `HotSpotMode.PostBack`, which causes the page to post back to the server each time a user clicks one of the hot spot regions. The <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A> property is not set on either of the <xref:System.Web.UI.WebControls.RectangleHotSpot> objects because they get their behavior from the <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=nameWithType> property. For this example to work correctly, you must supply your own image for the <xref:System.Web.UI.WebControls.Image.ImageUrl%2A> property and update the path to the image appropriately so that the application can locate it.  
   
- <!-- TODO: review snippet reference [!code-csharp[ImageMap.HotSpotMode1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageMap.HotSpotMode1/CS/imagemap.hotspotmode1cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ImageMap.HotSpotMode1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageMap.HotSpotMode1/VB/imagemap.hotspotmode1vb.aspx#1)]  -->  
+ [!code-aspx-csharp[ImageMap.HotSpotMode1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageMap.HotSpotMode1/CS/imagemap.hotspotmode1cs.aspx#1)]
+ [!code-aspx-vb[ImageMap.HotSpotMode1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageMap.HotSpotMode1/VB/imagemap.hotspotmode1vb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ImageMap" />
+    <altmember cref="P:System.Web.UI.WebControls.ImageMap.HotSpotMode" />
+    <altmember cref="P:System.Web.UI.WebControls.HotSpot.HotSpotMode" />
   </Docs>
   <Members>
     <Member MemberName="Inactive">

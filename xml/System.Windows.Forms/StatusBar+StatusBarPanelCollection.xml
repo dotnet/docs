@@ -42,6 +42,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.StatusBarPanel" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -96,6 +97,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.StatusBarPanel" />
+        <altmember cref="M:System.Windows.Forms.StatusBar.StatusBarPanelCollection.AddRange(System.Windows.Forms.StatusBarPanel[])" />
+        <altmember cref="M:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Insert(System.Int32,System.Windows.Forms.StatusBarPanel)" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -136,6 +140,9 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Windows.Forms.StatusBarPanel" /> being added to the collection was <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The parent of the <see cref="T:System.Windows.Forms.StatusBarPanel" /> specified in the <paramref name="value" /> parameter is not <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Forms.StatusBarPanel" />
+        <altmember cref="M:System.Windows.Forms.StatusBar.StatusBarPanelCollection.AddRange(System.Windows.Forms.StatusBarPanel[])" />
+        <altmember cref="M:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Insert(System.Int32,System.Windows.Forms.StatusBarPanel)" />
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -165,6 +172,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The array of <see cref="T:System.Windows.Forms.StatusBarPanel" /> objects being added to the collection was <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Forms.StatusBarPanel" />
+        <altmember cref="M:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Add(System.String)" />
+        <altmember cref="M:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Insert(System.Int32,System.Windows.Forms.StatusBarPanel)" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -190,6 +200,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Remove(System.Windows.Forms.StatusBarPanel)" />
+        <altmember cref="M:System.Windows.Forms.StatusBar.StatusBarPanelCollection.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -220,6 +232,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.StatusBar.StatusBarPanelCollection.IndexOf(System.Windows.Forms.StatusBarPanel)" />
       </Docs>
     </Member>
     <Member MemberName="ContainsKey">
@@ -333,6 +346,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Contains(System.Windows.Forms.StatusBarPanel)" />
       </Docs>
     </Member>
     <Member MemberName="IndexOfKey">
@@ -400,6 +414,8 @@
         <exception cref="T:System.ArgumentException">The <paramref name="value" /> parameter's parent is not <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than zero or greater than the value of the <see cref="P:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Count" /> property of the <see cref="T:System.Windows.Forms.StatusBar.StatusBarPanelCollection" /> class.</exception>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <see cref="P:System.Windows.Forms.StatusBarPanel.AutoSize" /> property of the <paramref name="value" /> parameter's panel is not a valid <see cref="T:System.Windows.Forms.StatusBarPanelAutoSize" /> value.</exception>
+        <altmember cref="M:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Add(System.String)" />
+        <altmember cref="M:System.Windows.Forms.StatusBar.StatusBarPanelCollection.AddRange(System.Windows.Forms.StatusBarPanel[])" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -457,6 +473,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than zero or greater than or equal to the value of the <see cref="P:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Count" /> property of the <see cref="T:System.Windows.Forms.StatusBar.StatusBarPanelCollection" /> class.</exception>
         <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Windows.Forms.StatusBarPanel" /> assigned to the collection was <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Forms.StatusBarPanel" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -517,6 +534,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Windows.Forms.StatusBarPanel" /> assigned to the <paramref name="value" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Forms.StatusBar.StatusBarPanelCollection.RemoveAt(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Clear" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -546,6 +565,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than zero or greater than or equal to the value of the <see cref="P:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Count" /> property of the <see cref="T:System.Windows.Forms.StatusBar.StatusBarPanelCollection" /> class.</exception>
+        <altmember cref="M:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Remove(System.Windows.Forms.StatusBarPanel)" />
+        <altmember cref="M:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Clear" />
       </Docs>
     </Member>
     <Member MemberName="RemoveByKey">
@@ -816,5 +837,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a <see cref="T:System.Windows.Forms.StatusBarPanel" /> to the collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets an item within the collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -86,6 +86,7 @@ private void btnGet_Click(object sender, EventArgs e)
  ]]></format>
     </remarks>
     <threadsafe>This type is thread safe.</threadsafe>
+    <altmember cref="T:System.Runtime.Caching.ObjectCache" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -1167,5 +1168,14 @@ private void btnGet_Click(object sender, EventArgs e)
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Caching</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the specified item from the cache.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

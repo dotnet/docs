@@ -28,11 +28,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.CompilationMode> page directive to indicate that a page should never be compiled.  
   
- <!-- TODO: review snippet reference [!code-csharp[CompilationMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CompilationMode/CS/compilationmode_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CompilationMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CompilationMode/VB/compilationmode_vb.aspx#1)]  -->  
+ [!code-aspx-csharp[CompilationMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CompilationMode/CS/compilationmode_cs.aspx#1)]
+ [!code-aspx-vb[CompilationMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CompilationMode/VB/compilationmode_vb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Configuration.PagesSection" />
+    <altmember cref="P:System.Web.Configuration.PagesSection.CompilationMode" />
   </Docs>
   <Members>
     <Member MemberName="Always">

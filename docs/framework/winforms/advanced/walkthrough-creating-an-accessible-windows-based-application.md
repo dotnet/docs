@@ -9,11 +9,9 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "accessibility, Windows applications"
-  - "Windows applications, accessibility"
+  - "accessibility [Windows Forms], Windows applications"
+  - "Windows applications [Windows Forms], accessibility"
   - "applications [Windows Forms], accessibility"
 ms.assetid: 654c7f2f-1586-480b-9f12-9d9b8f5cc32b
 caps.latest.revision: 15

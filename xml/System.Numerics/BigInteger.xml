@@ -16,11 +16,6 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
-  <AssemblyInfo>
-    <AssemblyName>FSharp.Core</AssemblyName>
-    <AssemblyVersion>2.3.98.1</AssemblyVersion>
-    <AssemblyVersion>3.98.4.0</AssemblyVersion>
-  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
   </Base>
@@ -237,6 +232,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="value" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Numerics.BigInteger.ToByteArray" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -359,11 +355,6 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>FSharp.Core</AssemblyName>
-        <AssemblyVersion>2.3.98.1</AssemblyVersion>
-        <AssemblyVersion>3.98.4.0</AssemblyVersion>
-      </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.Int32" />
       </Parameters>
@@ -410,11 +401,6 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>FSharp.Core</AssemblyName>
-        <AssemblyVersion>2.3.98.1</AssemblyVersion>
-        <AssemblyVersion>3.98.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.Int64" />
@@ -619,11 +605,6 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>FSharp.Core</AssemblyName>
-        <AssemblyVersion>2.3.98.1</AssemblyVersion>
-        <AssemblyVersion>3.98.4.0</AssemblyVersion>
-      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Numerics.BigInteger</ReturnType>
       </ReturnValue>
@@ -657,6 +638,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Math.Abs(System.SByte)" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -703,6 +685,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Numerics.BigInteger.op_Addition(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       </Docs>
     </Member>
     <Member MemberName="Compare">
@@ -765,6 +748,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Numerics.BigInteger.CompareTo" />
       </Docs>
     </Member>
     <Member MemberName="CompareTo">
@@ -900,6 +884,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Numerics.BigInteger.Compare(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
+        <altmember cref="T:System.IComparable`1" />
+        <altmember cref="M:System.Numerics.BigInteger.Equals(System.Numerics.BigInteger)" />
       </Docs>
     </Member>
     <Member MemberName="CompareTo">
@@ -972,6 +959,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="obj" /> is not a <see cref="T:System.Numerics.BigInteger" />.</exception>
+        <altmember cref="T:System.IComparable" />
       </Docs>
     </Member>
     <Member MemberName="CompareTo">
@@ -1080,6 +1068,9 @@
         </remarks>
         <exception cref="T:System.DivideByZeroException">
           <paramref name="divisor" /> is 0 (zero).</exception>
+        <altmember cref="M:System.Numerics.BigInteger.op_Division(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
+        <altmember cref="M:System.Numerics.BigInteger.DivRem(System.Numerics.BigInteger,System.Numerics.BigInteger,System.Numerics.BigInteger@)" />
+        <altmember cref="M:System.Numerics.BigInteger.Remainder(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       </Docs>
     </Member>
     <Member MemberName="DivRem">
@@ -1100,11 +1091,6 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>FSharp.Core</AssemblyName>
-        <AssemblyVersion>2.3.98.1</AssemblyVersion>
-        <AssemblyVersion>3.98.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Numerics.BigInteger</ReturnType>
@@ -1265,11 +1251,6 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>FSharp.Core</AssemblyName>
-        <AssemblyVersion>2.3.98.1</AssemblyVersion>
-        <AssemblyVersion>3.98.4.0</AssemblyVersion>
-      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -1374,11 +1355,6 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>FSharp.Core</AssemblyName>
-        <AssemblyVersion>2.3.98.1</AssemblyVersion>
-        <AssemblyVersion>3.98.4.0</AssemblyVersion>
-      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -1407,11 +1383,6 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>FSharp.Core</AssemblyName>
-        <AssemblyVersion>2.3.98.1</AssemblyVersion>
-        <AssemblyVersion>3.98.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Numerics.BigInteger</ReturnType>
@@ -1515,11 +1486,6 @@ value Mod 2 = 0
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>FSharp.Core</AssemblyName>
-        <AssemblyVersion>2.3.98.1</AssemblyVersion>
-        <AssemblyVersion>3.98.4.0</AssemblyVersion>
-      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -1535,6 +1501,7 @@ value Mod 2 = 0
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Numerics.BigInteger.One" />
       </Docs>
     </Member>
     <Member MemberName="IsPowerOfTwo">
@@ -1592,11 +1559,6 @@ value Mod 2 = 0
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>FSharp.Core</AssemblyName>
-        <AssemblyVersion>2.3.98.1</AssemblyVersion>
-        <AssemblyVersion>3.98.4.0</AssemblyVersion>
-      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -1612,6 +1574,7 @@ value Mod 2 = 0
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Numerics.BigInteger.Zero" />
       </Docs>
     </Member>
     <Member MemberName="Log">
@@ -1669,6 +1632,7 @@ value Mod 2 = 0
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The natural log of <paramref name="value" /> is out of range of the <see cref="T:System.Double" /> data type.</exception>
+        <altmember cref="M:System.Numerics.BigInteger.Log10(System.Numerics.BigInteger)" />
       </Docs>
     </Member>
     <Member MemberName="Log">
@@ -1713,13 +1677,13 @@ value Mod 2 = 0
 |`value` parameter|`baseValue` parameter|Return value|  
 |-----------------------|---------------------------|------------------|  
 |`value` > 0|(0 < `baseValue` < 1) -or-(`baseValue` > 1)|logbaseValue(`value`)|  
-|`value` < 0|(any value)|<xref:System.Double?displayProperty=nameWithType>|  
-|(any value)|`baseValue` < 0|<xref:System.Double?displayProperty=nameWithType>|  
-|`value` != 1|`baseValue` = 0|<xref:System.Double?displayProperty=nameWithType>|  
-|`value` != 1|`baseValue` = <xref:System.Double?displayProperty=nameWithType>|<xref:System.Double?displayProperty=nameWithType>|  
-|(any value)|`baseValue` = <xref:System.Double?displayProperty=nameWithType>|<xref:System.Double?displayProperty=nameWithType>|  
-|(any value)|`baseValue` = 1|<xref:System.Double?displayProperty=nameWithType>|  
-|`value` = 0|0 < `baseValue` < 1|<xref:System.Double?displayProperty=nameWithType>|  
+|`value` < 0|(any value)|<xref:System.Double.NaN?displayProperty=nameWithType>|  
+|(any value)|`baseValue` < 0|<xref:System.Double.NaN?displayProperty=nameWithType>|  
+|`value` != 1|`baseValue` = 0|<xref:System.Double.NaN?displayProperty=nameWithType>|  
+|`value` != 1|`baseValue` = <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>|<xref:System.Double.NaN?displayProperty=nameWithType>|  
+|(any value)|`baseValue` = <xref:System.Double.NaN?displayProperty=nameWithType>|<xref:System.Double.NaN?displayProperty=nameWithType>|  
+|(any value)|`baseValue` = 1|<xref:System.Double.NaN?displayProperty=nameWithType>|  
+|`value` = 0|0 < `baseValue` < 1|<xref:System.Double.PositiveInfinity?displayProperty=nameWithType>|  
 |`value` = 0|`baseValue` > 1|<xref:System.Double.PositiveInfinity?displayProperty=nameWithType>|  
 |`value` = 1|`baseValue` = 0|0|  
 |`value` = 1|`baseValue` = <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>|0|  
@@ -1731,6 +1695,7 @@ value Mod 2 = 0
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The log of <paramref name="value" /> is out of range of the <see cref="T:System.Double" /> data type.</exception>
+        <altmember cref="M:System.Numerics.BigInteger.Log10(System.Numerics.BigInteger)" />
       </Docs>
     </Member>
     <Member MemberName="Log10">
@@ -1773,8 +1738,8 @@ value Mod 2 = 0
 |Sign of value parameter|Return value|  
 |-----------------------------|------------------|  
 |Positive|The base 10 log of `value`; that is, log10`value`.|  
-|Zero|<xref:System.Double?displayProperty=nameWithType>.|  
-|Negative|<xref:System.Double?displayProperty=nameWithType>.|  
+|Zero|<xref:System.Double.NegativeInfinity?displayProperty=nameWithType>.|  
+|Negative|<xref:System.Double.NaN?displayProperty=nameWithType>.|  
   
  To calculate the natural logarithm of a <xref:System.Numerics.BigInteger> value, call the <xref:System.Numerics.BigInteger.Log%28System.Numerics.BigInteger%29?displayProperty=nameWithType> method. To calculate the logarithm of a number in another base, call the <xref:System.Numerics.BigInteger.Log%28System.Numerics.BigInteger%2CSystem.Double%29?displayProperty=nameWithType> method.  
   
@@ -1832,6 +1797,7 @@ value Mod 2 = 0
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Numerics.BigInteger.Min(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       </Docs>
     </Member>
     <Member MemberName="Min">
@@ -1881,6 +1847,7 @@ value Mod 2 = 0
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Numerics.BigInteger.Max(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       </Docs>
     </Member>
     <Member MemberName="MinusOne">
@@ -1916,6 +1883,8 @@ value Mod 2 = 0
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Numerics.BigInteger.One" />
+        <altmember cref="P:System.Numerics.BigInteger.IsOne" />
       </Docs>
     </Member>
     <Member MemberName="ModPow">
@@ -1975,6 +1944,7 @@ value Mod 2 = 0
           <paramref name="modulus" /> is zero.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="exponent" /> is negative.</exception>
+        <altmember cref="M:System.Numerics.BigInteger.Pow(System.Numerics.BigInteger,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Multiply">
@@ -2029,6 +1999,7 @@ value Mod 2 = 0
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Numerics.BigInteger.op_Multiply(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       </Docs>
     </Member>
     <Member MemberName="Negate">
@@ -2081,6 +2052,7 @@ value Mod 2 = 0
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Numerics.BigInteger.op_UnaryNegation(System.Numerics.BigInteger)" />
       </Docs>
     </Member>
     <Member MemberName="One">
@@ -2102,11 +2074,6 @@ value Mod 2 = 0
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>FSharp.Core</AssemblyName>
-        <AssemblyVersion>2.3.98.1</AssemblyVersion>
-        <AssemblyVersion>3.98.4.0</AssemblyVersion>
-      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Numerics.BigInteger</ReturnType>
       </ReturnValue>
@@ -2121,6 +2088,8 @@ value Mod 2 = 0
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Numerics.BigInteger.IsOne" />
+        <altmember cref="P:System.Numerics.BigInteger.MinusOne" />
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
@@ -2141,11 +2110,6 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>FSharp.Core</AssemblyName>
-        <AssemblyVersion>2.3.98.1</AssemblyVersion>
-        <AssemblyVersion>3.98.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Numerics.BigInteger</ReturnType>
@@ -2172,6 +2136,7 @@ value Mod 2 = 0
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Numerics.BigInteger.Add(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       </Docs>
     </Member>
     <Member MemberName="op_BitwiseAnd">
@@ -2330,6 +2295,7 @@ value Mod 2 = 0
   
  The equivalent method for this operator is <xref:System.Numerics.BigInteger.Subtract%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=nameWithType>.]]></format>
         </remarks>
+        <altmember cref="M:System.Numerics.BigInteger.op_Increment(System.Numerics.BigInteger)" />
       </Docs>
     </Member>
     <Member MemberName="op_Division">
@@ -2350,11 +2316,6 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>FSharp.Core</AssemblyName>
-        <AssemblyVersion>2.3.98.1</AssemblyVersion>
-        <AssemblyVersion>3.98.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Numerics.BigInteger</ReturnType>
@@ -2391,6 +2352,7 @@ value Mod 2 = 0
         </remarks>
         <exception cref="T:System.DivideByZeroException">
           <paramref name="divisor" /> is 0 (zero).</exception>
+        <altmember cref="M:System.Numerics.BigInteger.Divide(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -2440,6 +2402,7 @@ value Mod 2 = 0
   
  The equivalent method for this operator is <xref:System.Numerics.BigInteger.Equals%28System.Int64%29?displayProperty=nameWithType>.]]></format>
         </remarks>
+        <altmember cref="Overload:System.Numerics.BigInteger.op_Inequality" />
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -2489,6 +2452,7 @@ value Mod 2 = 0
   
  The equivalent method for this operator is <xref:System.Numerics.BigInteger.Equals%28System.Int64%29?displayProperty=nameWithType>.]]></format>
         </remarks>
+        <altmember cref="Overload:System.Numerics.BigInteger.op_Inequality" />
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -2509,11 +2473,6 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>FSharp.Core</AssemblyName>
-        <AssemblyVersion>2.3.98.1</AssemblyVersion>
-        <AssemblyVersion>3.98.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2541,6 +2500,8 @@ value Mod 2 = 0
   
  The equivalent method for this operator is <xref:System.Numerics.BigInteger.Equals%28System.Numerics.BigInteger%29?displayProperty=nameWithType>.]]></format>
         </remarks>
+        <altmember cref="Overload:System.Numerics.BigInteger.Equals" />
+        <altmember cref="Overload:System.Numerics.BigInteger.op_Inequality" />
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -2593,6 +2554,7 @@ value Mod 2 = 0
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Numerics.BigInteger.op_Inequality" />
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -2645,6 +2607,7 @@ value Mod 2 = 0
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Numerics.BigInteger.op_Inequality" />
       </Docs>
     </Member>
     <Member MemberName="op_ExclusiveOr">
@@ -2934,11 +2897,6 @@ value Mod 2 = 0
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>FSharp.Core</AssemblyName>
-        <AssemblyVersion>2.3.98.1</AssemblyVersion>
-        <AssemblyVersion>3.98.4.0</AssemblyVersion>
-      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
@@ -3045,11 +3003,6 @@ value Mod 2 = 0
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>FSharp.Core</AssemblyName>
-        <AssemblyVersion>2.3.98.1</AssemblyVersion>
-        <AssemblyVersion>3.98.4.0</AssemblyVersion>
-      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -3101,11 +3054,6 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>FSharp.Core</AssemblyName>
-        <AssemblyVersion>2.3.98.1</AssemblyVersion>
-        <AssemblyVersion>3.98.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
@@ -3197,6 +3145,7 @@ value Mod 2 = 0
  -or-  
   
  The value of <paramref name="value" /> is greater than <see cref="F:System.SByte.MaxValue" />.</exception>
+        <altCompliant cref="T:System.Int16" />
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -3310,6 +3259,7 @@ value Mod 2 = 0
  -or-  
   
  The value of <paramref name="value" /> is greater than <see cref="F:System.UInt16.MaxValue" />.</exception>
+        <altCompliant cref="T:System.Int32" />
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -3369,6 +3319,7 @@ value Mod 2 = 0
  -or-  
   
  The value of <paramref name="value" /> is greater than <see cref="F:System.UInt32.MaxValue" />.</exception>
+        <altCompliant cref="T:System.Int64" />
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -3428,6 +3379,7 @@ value Mod 2 = 0
  -or-  
   
  The value of <paramref name="value" /> is greater than <see cref="F:System.UInt64.MaxValue" />.</exception>
+        <altCompliant cref="T:System.Double" />
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -3538,6 +3490,7 @@ value Mod 2 = 0
   
  The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=nameWithType>.]]></format>
         </remarks>
+        <altmember cref="Overload:System.Numerics.BigInteger.op_GreaterThanOrEqual" />
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
@@ -3589,6 +3542,7 @@ value Mod 2 = 0
   
  The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=nameWithType>.]]></format>
         </remarks>
+        <altmember cref="Overload:System.Numerics.BigInteger.op_GreaterThanOrEqual" />
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
@@ -3609,11 +3563,6 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>FSharp.Core</AssemblyName>
-        <AssemblyVersion>2.3.98.1</AssemblyVersion>
-        <AssemblyVersion>3.98.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -3643,6 +3592,7 @@ value Mod 2 = 0
   
  The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo(System.Numerics.BigInteger)?displayProperty=nameWithType>.]]></format>
         </remarks>
+        <altmember cref="Overload:System.Numerics.BigInteger.op_GreaterThanOrEqual" />
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
@@ -3751,6 +3701,7 @@ value Mod 2 = 0
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Numerics.BigInteger.op_GreaterThanOrEqual" />
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
@@ -3802,6 +3753,7 @@ value Mod 2 = 0
   
  The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=nameWithType>.]]></format>
         </remarks>
+        <altmember cref="Overload:System.Numerics.BigInteger.op_GreaterThan" />
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
@@ -3853,6 +3805,7 @@ value Mod 2 = 0
   
  The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=nameWithType>.]]></format>
         </remarks>
+        <altmember cref="Overload:System.Numerics.BigInteger.op_GreaterThan" />
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
@@ -3873,11 +3826,6 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>FSharp.Core</AssemblyName>
-        <AssemblyVersion>2.3.98.1</AssemblyVersion>
-        <AssemblyVersion>3.98.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -3907,6 +3855,7 @@ value Mod 2 = 0
   
  The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo(System.Numerics.BigInteger)?displayProperty=nameWithType>.]]></format>
         </remarks>
+        <altmember cref="Overload:System.Numerics.BigInteger.op_GreaterThan" />
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
@@ -3961,6 +3910,7 @@ value Mod 2 = 0
   
  The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=nameWithType>.]]></format>
         </remarks>
+        <altmember cref="Overload:System.Numerics.BigInteger.op_GreaterThan" />
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
@@ -4015,6 +3965,7 @@ value Mod 2 = 0
   
  The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=nameWithType>.]]></format>
         </remarks>
+        <altmember cref="Overload:System.Numerics.BigInteger.op_GreaterThan" />
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -4244,6 +4195,7 @@ value Mod 2 = 0
 
  ]]></format>
         </remarks>
+        <altCompliant cref="M:System.Numerics.BigInteger.#ctor(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -4295,6 +4247,7 @@ value Mod 2 = 0
 
  ]]></format>
         </remarks>
+        <altCompliant cref="M:System.Numerics.BigInteger.op_Implicit(System.Int32)~System.Numerics.BigInteger" />
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -4346,6 +4299,7 @@ value Mod 2 = 0
 
  ]]></format>
         </remarks>
+        <altCompliant cref="M:System.Numerics.BigInteger.op_Implicit(System.Int64)~System.Numerics.BigInteger" />
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -4397,6 +4351,7 @@ value Mod 2 = 0
 
  ]]></format>
         </remarks>
+        <altCompliant cref="T:System.Double" />
       </Docs>
     </Member>
     <Member MemberName="op_Increment">
@@ -4444,6 +4399,7 @@ value Mod 2 = 0
   
  The equivalent method for this operator is <xref:System.Numerics.BigInteger.Add%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=nameWithType>.]]></format>
         </remarks>
+        <altmember cref="M:System.Numerics.BigInteger.op_Decrement(System.Numerics.BigInteger)" />
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -4497,6 +4453,7 @@ value Mod 2 = 0
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Numerics.BigInteger.op_Equality" />
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -4550,6 +4507,7 @@ value Mod 2 = 0
   
  The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=nameWithType>.]]></format>
         </remarks>
+        <altmember cref="Overload:System.Numerics.BigInteger.op_Equality" />
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -4570,11 +4528,6 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>FSharp.Core</AssemblyName>
-        <AssemblyVersion>2.3.98.1</AssemblyVersion>
-        <AssemblyVersion>3.98.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -4606,6 +4559,7 @@ value Mod 2 = 0
   
  The equivalent method for this operator is <xref:System.Numerics.BigInteger.Compare%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=nameWithType>.]]></format>
         </remarks>
+        <altmember cref="Overload:System.Numerics.BigInteger.op_Equality" />
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -4662,6 +4616,7 @@ value Mod 2 = 0
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Numerics.BigInteger.op_Equality" />
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -4718,6 +4673,7 @@ value Mod 2 = 0
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Numerics.BigInteger.op_Equality" />
       </Docs>
     </Member>
     <Member MemberName="op_LeftShift">
@@ -4770,6 +4726,7 @@ value Mod 2 = 0
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Numerics.BigInteger.op_RightShift(System.Numerics.BigInteger,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
@@ -4821,6 +4778,7 @@ value Mod 2 = 0
   
  The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=nameWithType>.]]></format>
         </remarks>
+        <altmember cref="Overload:System.Numerics.BigInteger.op_LessThanOrEqual" />
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
@@ -4872,6 +4830,7 @@ value Mod 2 = 0
   
  The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=nameWithType>.]]></format>
         </remarks>
+        <altmember cref="Overload:System.Numerics.BigInteger.op_LessThanOrEqual" />
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
@@ -4892,11 +4851,6 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>FSharp.Core</AssemblyName>
-        <AssemblyVersion>2.3.98.1</AssemblyVersion>
-        <AssemblyVersion>3.98.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -4926,6 +4880,7 @@ value Mod 2 = 0
   
  The equivalent method for this operator is <xref:System.Numerics.BigInteger.Compare%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=nameWithType>.]]></format>
         </remarks>
+        <altmember cref="Overload:System.Numerics.BigInteger.op_LessThanOrEqual" />
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
@@ -4980,6 +4935,7 @@ value Mod 2 = 0
   
  The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=nameWithType>.]]></format>
         </remarks>
+        <altmember cref="Overload:System.Numerics.BigInteger.op_LessThanOrEqual" />
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
@@ -5034,6 +4990,7 @@ value Mod 2 = 0
   
  The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=nameWithType>.]]></format>
         </remarks>
+        <altmember cref="Overload:System.Numerics.BigInteger.op_LessThanOrEqual" />
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
@@ -5085,6 +5042,7 @@ value Mod 2 = 0
   
  The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=nameWithType>.]]></format>
         </remarks>
+        <altmember cref="Overload:System.Numerics.BigInteger.op_LessThan" />
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
@@ -5136,6 +5094,7 @@ value Mod 2 = 0
   
  The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=nameWithType>.]]></format>
         </remarks>
+        <altmember cref="Overload:System.Numerics.BigInteger.op_LessThan" />
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
@@ -5156,11 +5115,6 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>FSharp.Core</AssemblyName>
-        <AssemblyVersion>2.3.98.1</AssemblyVersion>
-        <AssemblyVersion>3.98.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -5190,6 +5144,7 @@ value Mod 2 = 0
   
  The equivalent method for this operator is <xref:System.Numerics.BigInteger.Compare%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=nameWithType>.]]></format>
         </remarks>
+        <altmember cref="Overload:System.Numerics.BigInteger.op_LessThan" />
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
@@ -5244,6 +5199,7 @@ value Mod 2 = 0
   
  The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=nameWithType>.]]></format>
         </remarks>
+        <altmember cref="Overload:System.Numerics.BigInteger.op_LessThan" />
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
@@ -5298,6 +5254,7 @@ value Mod 2 = 0
   
  The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=nameWithType>.]]></format>
         </remarks>
+        <altmember cref="Overload:System.Numerics.BigInteger.op_LessThan" />
       </Docs>
     </Member>
     <Member MemberName="op_Modulus">
@@ -5318,11 +5275,6 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>FSharp.Core</AssemblyName>
-        <AssemblyVersion>2.3.98.1</AssemblyVersion>
-        <AssemblyVersion>3.98.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Numerics.BigInteger</ReturnType>
@@ -5353,6 +5305,8 @@ value Mod 2 = 0
         </remarks>
         <exception cref="T:System.DivideByZeroException">
           <paramref name="divisor" /> is 0 (zero).</exception>
+        <altmember cref="M:System.Numerics.BigInteger.op_Division(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
+        <altmember cref="M:System.Numerics.BigInteger.DivRem(System.Numerics.BigInteger,System.Numerics.BigInteger,System.Numerics.BigInteger@)" />
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
@@ -5373,11 +5327,6 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>FSharp.Core</AssemblyName>
-        <AssemblyVersion>2.3.98.1</AssemblyVersion>
-        <AssemblyVersion>3.98.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Numerics.BigInteger</ReturnType>
@@ -5402,6 +5351,7 @@ value Mod 2 = 0
   
  The equivalent method for this operator is <xref:System.Numerics.BigInteger.Multiply(System.Numerics.BigInteger,System.Numerics.BigInteger)?displayProperty=nameWithType>.]]></format>
         </remarks>
+        <altmember cref="M:System.Numerics.BigInteger.Multiply(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       </Docs>
     </Member>
     <Member MemberName="op_OnesComplement">
@@ -5499,6 +5449,7 @@ value Mod 2 = 0
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Numerics.BigInteger.op_LeftShift(System.Numerics.BigInteger,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
@@ -5519,11 +5470,6 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>FSharp.Core</AssemblyName>
-        <AssemblyVersion>2.3.98.1</AssemblyVersion>
-        <AssemblyVersion>3.98.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Numerics.BigInteger</ReturnType>
@@ -5550,6 +5496,7 @@ value Mod 2 = 0
   
  The equivalent method for this operator is <xref:System.Numerics.BigInteger.Subtract%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=nameWithType>.]]></format>
         </remarks>
+        <altmember cref="M:System.Numerics.BigInteger.Subtract(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       </Docs>
     </Member>
     <Member MemberName="op_UnaryNegation">
@@ -5570,11 +5517,6 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>FSharp.Core</AssemblyName>
-        <AssemblyVersion>2.3.98.1</AssemblyVersion>
-        <AssemblyVersion>3.98.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Numerics.BigInteger</ReturnType>
@@ -5623,11 +5565,6 @@ value Mod 2 = 0
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>FSharp.Core</AssemblyName>
-        <AssemblyVersion>2.3.98.1</AssemblyVersion>
-        <AssemblyVersion>3.98.4.0</AssemblyVersion>
-      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Numerics.BigInteger</ReturnType>
       </ReturnValue>
@@ -5667,11 +5604,6 @@ value Mod 2 = 0
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>FSharp.Core</AssemblyName>
-        <AssemblyVersion>2.3.98.1</AssemblyVersion>
-        <AssemblyVersion>3.98.4.0</AssemblyVersion>
-      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Numerics.BigInteger</ReturnType>
       </ReturnValue>
@@ -5699,7 +5631,7 @@ value Mod 2 = 0
 |*digits*|A sequence of digits ranging from 0 to 9. Any leading zeros are ignored.|  
   
 > [!NOTE]
->  The string specified by the `value` parameter is interpreted by using the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> style. It cannot contain any group separators or decimal separator, and it cannot have a decimal portion.  
+>  The string specified by the `value` parameter is interpreted by using the <xref:System.Globalization.NumberStyles.Integer?displayProperty=nameWithType> style. It cannot contain any group separators or decimal separator, and it cannot have a decimal portion.  
   
  The `value` parameter is parsed by using the formatting information in a <xref:System.Globalization.NumberFormatInfo?displayProperty=nameWithType> object that is initialized for the current system culture. For more information, see <xref:System.Globalization.NumberFormatInfo.CurrentInfo%2A?displayProperty=nameWithType>. To parse a string by using the formatting information of a specific culture, use the <xref:System.Numerics.BigInteger.Parse%28System.String%2CSystem.IFormatProvider%29> method.  
   
@@ -5720,6 +5652,7 @@ value Mod 2 = 0
           <paramref name="value" /> is <see langword="null" />.</exception>
         <exception cref="T:System.FormatException">
           <paramref name="value" /> is not in the correct format.</exception>
+        <altmember cref="Overload:System.Numerics.BigInteger.TryParse" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -5763,7 +5696,7 @@ value Mod 2 = 0
   
  [*ws*][*$*][*sign*][*digits*,]*digits*[.*fractional_digits*][E[*sign*]*exponential_digits*][*ws*]  
   
- If `style` includes <xref:System.Globalization.NumberStyles?displayProperty=nameWithType>, the `value` parameter may contain the following elements:  
+ If `style` includes <xref:System.Globalization.NumberStyles.AllowHexSpecifier?displayProperty=nameWithType>, the `value` parameter may contain the following elements:  
   
  [*ws*]*hexdigits*[*ws*]  
   
@@ -5771,16 +5704,16 @@ value Mod 2 = 0
   
 |Element|Description|  
 |-------------|-----------------|  
-|*ws*|Optional white space. White space can appear at the start of `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag, and it can appear at the end of `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
-|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyNegativePattern%2A?displayProperty=nameWithType> and <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A?displayProperty=nameWithType> properties of the current culture. The current culture's currency symbol can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
-|*sign*|An optional sign. The sign can appear at the start of `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag, and it can appear at the end of `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag. Parentheses can be used in `value` to indicate a negative value if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
+|*ws*|Optional white space. White space can appear at the start of `value` if `style` includes the <xref:System.Globalization.NumberStyles.AllowLeadingWhite?displayProperty=nameWithType> flag, and it can appear at the end of `value` if `style` includes the <xref:System.Globalization.NumberStyles.AllowTrailingWhite?displayProperty=nameWithType> flag.|  
+|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyNegativePattern%2A?displayProperty=nameWithType> and <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A?displayProperty=nameWithType> properties of the current culture. The current culture's currency symbol can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles.AllowCurrencySymbol?displayProperty=nameWithType> flag.|  
+|*sign*|An optional sign. The sign can appear at the start of `value` if `style` includes the <xref:System.Globalization.NumberStyles.AllowLeadingSign?displayProperty=nameWithType> flag, and it can appear at the end of `value` if `style` includes the <xref:System.Globalization.NumberStyles.AllowTrailingSign?displayProperty=nameWithType> flag. Parentheses can be used in `value` to indicate a negative value if `style` includes the <xref:System.Globalization.NumberStyles.AllowParentheses?displayProperty=nameWithType> flag.|  
 |*digits*<br /><br /> *fractional_digits*<br /><br /> *exponential_digits*|A sequence of digits from 0 through 9. For *fractional_digits*, only the digit 0 is valid.|  
-|*,*|A culture-specific group separator symbol. The current culture's group separator can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
-|*.*|A culture-specific decimal point symbol. The current culture's decimal point symbol can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag. Only the digit 0 can appear as a fractional digit for the parse operation to succeed; if *fractional_digits* includes any other digit, a <xref:System.FormatException> is thrown.|  
-|E|The "e" or "E" character, which indicates that the value is represented in exponential (scientific) notation. The `value` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
+|*,*|A culture-specific group separator symbol. The current culture's group separator can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles.AllowThousands?displayProperty=nameWithType> flag.|  
+|*.*|A culture-specific decimal point symbol. The current culture's decimal point symbol can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles.AllowDecimalPoint?displayProperty=nameWithType> flag. Only the digit 0 can appear as a fractional digit for the parse operation to succeed; if *fractional_digits* includes any other digit, a <xref:System.FormatException> is thrown.|  
+|E|The "e" or "E" character, which indicates that the value is represented in exponential (scientific) notation. The `value` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles.AllowExponent?displayProperty=nameWithType> flag.|  
 |*hexdigits*|A sequence of hexadecimal digits from 0 through f, or 0 through F.|  
   
- A string with digits only (which corresponds to the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> style) always parses successfully. Most of the remaining <xref:System.Globalization.NumberStyles> members control elements that may be present, but are not required to be present, in the input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> members affect the elements that may be present in `value`.  
+ A string with digits only (which corresponds to the <xref:System.Globalization.NumberStyles.None?displayProperty=nameWithType> style) always parses successfully. Most of the remaining <xref:System.Globalization.NumberStyles> members control elements that may be present, but are not required to be present, in the input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> members affect the elements that may be present in `value`.  
   
 |`NumberStyles` value|Elements permitted in `value` in addition to digits|  
 |--------------------------|---------------------------------------------------------|  
@@ -5802,7 +5735,7 @@ value Mod 2 = 0
 > [!IMPORTANT]
 >  If you use the <xref:System.Numerics.BigInteger.Parse%2A> method to round-trip the string representation of a <xref:System.Numerics.BigInteger> value that was output by the <xref:System.Numerics.BigInteger.ToString%2A> method, you should use the <xref:System.Numerics.BigInteger.ToString%28System.String%29?displayProperty=nameWithType> method with the "R" format specifier to generate the string representation of the <xref:System.Numerics.BigInteger> value. Otherwise, the string representation of the <xref:System.Numerics.BigInteger> preserves only the 50 most significant digits of the original value, and data may be lost when you use the <xref:System.Numerics.BigInteger.Parse%2A> method to restore the <xref:System.Numerics.BigInteger> value.  
   
- Unlike the other <xref:System.Globalization.NumberStyles> values, which allow for, but do not require, the presence of particular style elements in `value`, the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> style value means that the individual numeric characters in `value` are always interpreted as hexadecimal characters. Valid hexadecimal characters are 0-9, A-F, and a-f. The only other flags that can be combined with the `style` parameter are <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> and <xref:System.Globalization.NumberStyles?displayProperty=nameWithType>. (The <xref:System.Globalization.NumberStyles> enumeration includes a composite number style, <xref:System.Globalization.NumberStyles.HexNumber>, that includes both white-space flags.)  
+ Unlike the other <xref:System.Globalization.NumberStyles> values, which allow for, but do not require, the presence of particular style elements in `value`, the <xref:System.Globalization.NumberStyles.AllowHexSpecifier?displayProperty=nameWithType> style value means that the individual numeric characters in `value` are always interpreted as hexadecimal characters. Valid hexadecimal characters are 0-9, A-F, and a-f. The only other flags that can be combined with the `style` parameter are <xref:System.Globalization.NumberStyles.AllowLeadingWhite?displayProperty=nameWithType> and <xref:System.Globalization.NumberStyles.AllowTrailingWhite?displayProperty=nameWithType>. (The <xref:System.Globalization.NumberStyles> enumeration includes a composite number style, <xref:System.Globalization.NumberStyles.HexNumber>, that includes both white-space flags.)  
   
 > [!NOTE]
 >  If `value` is the string representation of a hexadecimal number, it cannot be preceded by any decoration (such as `0x` or `&h`) that differentiates it as a hexadecimal number. This causes the conversion to fail.  
@@ -5834,6 +5767,7 @@ value Mod 2 = 0
           <paramref name="value" /> is <see langword="null" />.</exception>
         <exception cref="T:System.FormatException">
           <paramref name="value" /> does not comply with the input pattern specified by <see cref="T:System.Globalization.NumberStyles" />.</exception>
+        <altmember cref="Overload:System.Numerics.BigInteger.TryParse" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -5884,7 +5818,7 @@ value Mod 2 = 0
 |*digits*|A sequence of digits ranging from 0 to 9. Any leading zeros are ignored.|  
   
 > [!NOTE]
->  The string specified by the `value` parameter is interpreted using the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> style. It cannot contain any group separators or decimal separator, and it cannot have a decimal portion.  
+>  The string specified by the `value` parameter is interpreted using the <xref:System.Globalization.NumberStyles.Integer?displayProperty=nameWithType> style. It cannot contain any group separators or decimal separator, and it cannot have a decimal portion.  
   
 > [!IMPORTANT]
 >  If you use the <xref:System.Numerics.BigInteger.Parse%2A> method to round-trip the string representation of a <xref:System.Numerics.BigInteger> value that was output by the <xref:System.Numerics.BigInteger.ToString%2A> method, you should use the <xref:System.Numerics.BigInteger.ToString%28System.String%29?displayProperty=nameWithType> method with the "R" format specifier to generate the string representation of the <xref:System.Numerics.BigInteger> value. Otherwise, the string representation of the <xref:System.Numerics.BigInteger> preserves only the 50 most significant digits of the original value, and data may be lost when you use the <xref:System.Numerics.BigInteger.Parse%2A> method to restore the <xref:System.Numerics.BigInteger> value.  
@@ -5925,6 +5859,7 @@ value Mod 2 = 0
           <paramref name="value" /> is <see langword="null" />.</exception>
         <exception cref="T:System.FormatException">
           <paramref name="value" /> is not in the correct format.</exception>
+        <altmember cref="Overload:System.Numerics.BigInteger.TryParse" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -5970,7 +5905,7 @@ value Mod 2 = 0
   
  [*ws*][*$*][*sign*][*digits*,]*digits*[*.fractional_digits*][E[*sign*]*exponential_digits*][*ws*]  
   
- If `style` includes <xref:System.Globalization.NumberStyles?displayProperty=nameWithType>, the `value` parameter may include the following elements:  
+ If `style` includes <xref:System.Globalization.NumberStyles.AllowHexSpecifier?displayProperty=nameWithType>, the `value` parameter may include the following elements:  
   
  [*ws*]*hexdigits*[*ws*]  
   
@@ -5978,16 +5913,16 @@ value Mod 2 = 0
   
 |Element|Description|  
 |-------------|-----------------|  
-|*ws*|Optional white space. White space can appear at the start of `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag, and it can appear at the end of `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
-|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyNegativePattern%2A?displayProperty=nameWithType> and <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A?displayProperty=nameWithType> properties of the culture indicated by the `provider` parameter. The current culture's currency symbol can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
-|*sign*|An optional sign. The sign can appear at the start of `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag, and it can appear at the end of `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag. Parentheses can be used in `value` to indicate a negative value if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
+|*ws*|Optional white space. White space can appear at the start of `value` if `style` includes the <xref:System.Globalization.NumberStyles.AllowLeadingWhite?displayProperty=nameWithType> flag, and it can appear at the end of `value` if `style` includes the <xref:System.Globalization.NumberStyles.AllowTrailingWhite?displayProperty=nameWithType> flag.|  
+|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyNegativePattern%2A?displayProperty=nameWithType> and <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A?displayProperty=nameWithType> properties of the culture indicated by the `provider` parameter. The current culture's currency symbol can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles.AllowCurrencySymbol?displayProperty=nameWithType> flag.|  
+|*sign*|An optional sign. The sign can appear at the start of `value` if `style` includes the <xref:System.Globalization.NumberStyles.AllowLeadingSign?displayProperty=nameWithType> flag, and it can appear at the end of `value` if `style` includes the <xref:System.Globalization.NumberStyles.AllowTrailingSign?displayProperty=nameWithType> flag. Parentheses can be used in `value` to indicate a negative value if `style` includes the <xref:System.Globalization.NumberStyles.AllowParentheses?displayProperty=nameWithType> flag.|  
 |*digits*<br /><br /> *fractional_digits*<br /><br /> *exponential_digits*|A sequence of digits from 0 through 9. For *fractional_digits*, only the digit 0 is valid.|  
-|*,*|A culture-specific group separator symbol. The group separator symbol of the culture specified by `provider` can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
-|*.*|A culture-specific decimal point symbol. The decimal point symbol of the culture designated by `provider` can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag. Only the digit 0 can appear as a fractional digit for the parse operation to succeed; if *fractional_digits* includes any other digit, a <xref:System.FormatException> is thrown.|  
-|E|The "e" or "E" character, which indicates that the value is represented in exponential (scientific) notation. The `value` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
+|*,*|A culture-specific group separator symbol. The group separator symbol of the culture specified by `provider` can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles.AllowThousands?displayProperty=nameWithType> flag.|  
+|*.*|A culture-specific decimal point symbol. The decimal point symbol of the culture designated by `provider` can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles.AllowDecimalPoint?displayProperty=nameWithType> flag. Only the digit 0 can appear as a fractional digit for the parse operation to succeed; if *fractional_digits* includes any other digit, a <xref:System.FormatException> is thrown.|  
+|E|The "e" or "E" character, which indicates that the value is represented in exponential (scientific) notation. The `value` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles.AllowExponent?displayProperty=nameWithType> flag.|  
 |*hexdigits*|A sequence of hexadecimal digits from 0 through f, or 0 through F.|  
   
- A string with digits only (which corresponds to the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> style) always parses successfully. Most of the remaining <xref:System.Globalization.NumberStyles> members control elements that may be present, but are not required to be present, in the input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> members affect the elements that may be present in `value`.  
+ A string with digits only (which corresponds to the <xref:System.Globalization.NumberStyles.None?displayProperty=nameWithType> style) always parses successfully. Most of the remaining <xref:System.Globalization.NumberStyles> members control elements that may be present, but are not required to be present, in the input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> members affect the elements that may be present in `value`.  
   
 |NumberStyles value|Elements permitted in value in addition to digits|  
 |------------------------|-------------------------------------------------------|  
@@ -6009,7 +5944,7 @@ value Mod 2 = 0
 > [!IMPORTANT]
 >  If you use the <xref:System.Numerics.BigInteger.Parse%2A> method to round-trip the string representation of a <xref:System.Numerics.BigInteger> value that was output by the <xref:System.Numerics.BigInteger.ToString%2A> method, you should use the <xref:System.Numerics.BigInteger.ToString%28System.String%29?displayProperty=nameWithType> method with the "R" format specifier to generate the string representation of the <xref:System.Numerics.BigInteger> value. Otherwise, the string representation of the <xref:System.Numerics.BigInteger> preserves only the 50 most significant digits of the original value, and data may be lost when you use the <xref:System.Numerics.BigInteger.Parse%2A> method to restore the <xref:System.Numerics.BigInteger> value.  
   
- Unlike the other <xref:System.Globalization.NumberStyles> values, which allow for but do not require the presence of particular style elements in `value`, the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> style value means that the individual numeric characters in `value` are always interpreted as hexadecimal characters. Valid hexadecimal characters are 0-9, A-F, and a-f. The only other flags that can be combined with the `style` parameter are <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> and <xref:System.Globalization.NumberStyles?displayProperty=nameWithType>. (The <xref:System.Globalization.NumberStyles> enumeration includes a composite number style, <xref:System.Globalization.NumberStyles.HexNumber>, that includes both white-space flags.)  
+ Unlike the other <xref:System.Globalization.NumberStyles> values, which allow for but do not require the presence of particular style elements in `value`, the <xref:System.Globalization.NumberStyles.AllowHexSpecifier?displayProperty=nameWithType> style value means that the individual numeric characters in `value` are always interpreted as hexadecimal characters. Valid hexadecimal characters are 0-9, A-F, and a-f. The only other flags that can be combined with the `style` parameter are <xref:System.Globalization.NumberStyles.AllowLeadingWhite?displayProperty=nameWithType> and <xref:System.Globalization.NumberStyles.AllowTrailingWhite?displayProperty=nameWithType>. (The <xref:System.Globalization.NumberStyles> enumeration includes a composite number style, <xref:System.Globalization.NumberStyles.HexNumber>, that includes both white-space flags.)  
   
 > [!NOTE]
 >  If `value` is the string representation of a hexadecimal number, it cannot be preceded by any decoration (such as `0x` or `&h`) that differentiates it as a hexadecimal number. This causes the conversion to fail.  
@@ -6054,6 +5989,7 @@ value Mod 2 = 0
           <paramref name="value" /> is <see langword="null" />.</exception>
         <exception cref="T:System.FormatException">
           <paramref name="value" /> does not comply with the input pattern specified by <paramref name="style" />.</exception>
+        <altmember cref="Overload:System.Numerics.BigInteger.TryParse" />
       </Docs>
     </Member>
     <Member MemberName="Pow">
@@ -6074,11 +6010,6 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>FSharp.Core</AssemblyName>
-        <AssemblyVersion>2.3.98.1</AssemblyVersion>
-        <AssemblyVersion>3.98.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Numerics.BigInteger</ReturnType>
@@ -6166,6 +6097,8 @@ value Mod 2 = 0
         </remarks>
         <exception cref="T:System.DivideByZeroException">
           <paramref name="divisor" /> is 0 (zero).</exception>
+        <altmember cref="M:System.Numerics.BigInteger.DivRem(System.Numerics.BigInteger,System.Numerics.BigInteger,System.Numerics.BigInteger@)" />
+        <altmember cref="M:System.Numerics.BigInteger.op_Modulus(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       </Docs>
     </Member>
     <Member MemberName="Sign">
@@ -6186,11 +6119,6 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>FSharp.Core</AssemblyName>
-        <AssemblyVersion>2.3.98.1</AssemblyVersion>
-        <AssemblyVersion>3.98.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -6270,6 +6198,7 @@ value Mod 2 = 0
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Numerics.BigInteger.op_Subtraction(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       </Docs>
     </Member>
     <Member MemberName="System.IComparable.CompareTo">
@@ -6370,11 +6299,6 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>FSharp.Core</AssemblyName>
-        <AssemblyVersion>2.3.98.1</AssemblyVersion>
-        <AssemblyVersion>3.98.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -6665,7 +6589,7 @@ value Mod 2 = 0
 > [!NOTE]
 >  The string specified by the `value` parameter cannot contain any group separators or decimal separator, and it cannot have a decimal portion.  
   
- The `value` parameter is interpreted by using the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> style. In addition to the decimal digits, only leading and trailing spaces with a leading sign are allowed. To explicitly define the style elements with the culture-specific formatting information that can be present in `value`, call the <xref:System.Numerics.BigInteger.TryParse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%2CSystem.Numerics.BigInteger%40%29> method.  
+ The `value` parameter is interpreted by using the <xref:System.Globalization.NumberStyles.Integer?displayProperty=nameWithType> style. In addition to the decimal digits, only leading and trailing spaces with a leading sign are allowed. To explicitly define the style elements with the culture-specific formatting information that can be present in `value`, call the <xref:System.Numerics.BigInteger.TryParse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%2CSystem.Numerics.BigInteger%40%29> method.  
   
  The `value` parameter is parsed by using the formatting information in a <xref:System.Globalization.NumberFormatInfo> object for the current culture. For more information, see <xref:System.Globalization.NumberFormatInfo.CurrentInfo%2A?displayProperty=nameWithType>.  
   
@@ -6683,6 +6607,7 @@ value Mod 2 = 0
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="value" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Numerics.BigInteger.ToString(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="TryParse">
@@ -6739,18 +6664,18 @@ value Mod 2 = 0
   
 |Element|Description|  
 |-------------|-----------------|  
-|*ws*|Optional white space. White space can appear at the start of `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag, or at the end of `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
-|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A> property of the <xref:System.Globalization.NumberFormatInfo> object returned by the <xref:System.IFormatProvider.GetFormat%2A> method of the `provider` parameter. The currency symbol can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
-|*sign*|An optional sign. The sign can appear at the start of `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag, and it can appear at the end of `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag. Parentheses can be used in `value` to indicate a negative value if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
+|*ws*|Optional white space. White space can appear at the start of `value` if `style` includes the <xref:System.Globalization.NumberStyles.AllowLeadingWhite?displayProperty=nameWithType> flag, or at the end of `value` if `style` includes the <xref:System.Globalization.NumberStyles.AllowTrailingWhite?displayProperty=nameWithType> flag.|  
+|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A> property of the <xref:System.Globalization.NumberFormatInfo> object returned by the <xref:System.IFormatProvider.GetFormat%2A> method of the `provider` parameter. The currency symbol can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles.AllowCurrencySymbol?displayProperty=nameWithType> flag.|  
+|*sign*|An optional sign. The sign can appear at the start of `value` if `style` includes the <xref:System.Globalization.NumberStyles.AllowLeadingSign?displayProperty=nameWithType> flag, and it can appear at the end of `value` if `style` includes the <xref:System.Globalization.NumberStyles.AllowTrailingSign?displayProperty=nameWithType> flag. Parentheses can be used in `value` to indicate a negative value if `style` includes the <xref:System.Globalization.NumberStyles.AllowParentheses?displayProperty=nameWithType> flag.|  
 |*digits*|A sequence of digits from 0 through 9.|  
-|*,*|A culture-specific group separator. The group separator of the culture specified by `provider` can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
-|*.*|A culture-specific decimal point symbol. The decimal point symbol of the culture specified by `provider` can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
-|*fractional_digits*|One or more occurrences of the digit 0. Fractional digits can appear in `value` only if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
-|E|The "e" or "E" character, which indicates that the value is represented in exponential (scientific) notation. The `value` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
-|*exponential_digits*|A sequence of digits from 0 through 9. The `value` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
+|*,*|A culture-specific group separator. The group separator of the culture specified by `provider` can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles.AllowThousands?displayProperty=nameWithType> flag.|  
+|*.*|A culture-specific decimal point symbol. The decimal point symbol of the culture specified by `provider` can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles.AllowDecimalPoint?displayProperty=nameWithType> flag.|  
+|*fractional_digits*|One or more occurrences of the digit 0. Fractional digits can appear in `value` only if `style` includes the <xref:System.Globalization.NumberStyles.AllowDecimalPoint?displayProperty=nameWithType> flag.|  
+|E|The "e" or "E" character, which indicates that the value is represented in exponential (scientific) notation. The `value` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles.AllowExponent?displayProperty=nameWithType> flag.|  
+|*exponential_digits*|A sequence of digits from 0 through 9. The `value` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles.AllowExponent?displayProperty=nameWithType> flag.|  
 |*hexdigits*|A sequence of hexadecimal digits from 0 through f, or 0 through F.|  
   
- A string with decimal digits only (which corresponds to the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag) always parses successfully. Most of the remaining <xref:System.Globalization.NumberStyles> members control elements that may be present, but are not required to be present, in this input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> members affect the elements that may be present in `value`.  
+ A string with decimal digits only (which corresponds to the <xref:System.Globalization.NumberStyles.None?displayProperty=nameWithType> flag) always parses successfully. Most of the remaining <xref:System.Globalization.NumberStyles> members control elements that may be present, but are not required to be present, in this input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> members affect the elements that may be present in `value`.  
   
 |Non-composite `NumberStyles` values|Elements permitted in value in addition to digits|  
 |------------------------------------------|-------------------------------------------------------|  
@@ -6772,7 +6697,7 @@ value Mod 2 = 0
 > [!IMPORTANT]
 >  If you use the <xref:System.Numerics.BigInteger.TryParse%2A> method to round-trip the string representation of a <xref:System.Numerics.BigInteger> value that was output by the <xref:System.Numerics.BigInteger.ToString%2A> method, you should use the <xref:System.Numerics.BigInteger.ToString%28System.String%29?displayProperty=nameWithType> method with the "R" format specifier to generate the string representation of the <xref:System.Numerics.BigInteger> value. Otherwise, the string representation of the <xref:System.Numerics.BigInteger> preserves only the 50 most significant digits of the original value, and data may be lost when you use the <xref:System.Numerics.BigInteger.TryParse%2A> method to restore the <xref:System.Numerics.BigInteger> value.  
   
- If the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag is used, `value` must be a hexadecimal value. The only other flags that can be present in `style` are <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> and <xref:System.Globalization.NumberStyles?displayProperty=nameWithType>. (The <xref:System.Globalization.NumberStyles> enumeration has a composite style, <xref:System.Globalization.NumberStyles.HexNumber>, that includes both white-space flags.)  
+ If the <xref:System.Globalization.NumberStyles.AllowHexSpecifier?displayProperty=nameWithType> flag is used, `value` must be a hexadecimal value. The only other flags that can be present in `style` are <xref:System.Globalization.NumberStyles.AllowLeadingWhite?displayProperty=nameWithType> and <xref:System.Globalization.NumberStyles.AllowTrailingWhite?displayProperty=nameWithType>. (The <xref:System.Globalization.NumberStyles> enumeration has a composite style, <xref:System.Globalization.NumberStyles.HexNumber>, that includes both white-space flags.)  
   
 > [!NOTE]
 >  If `value` is the string representation of a hexadecimal number, it cannot be preceded by any decoration (such as `0x` or `&h`) that differentiates it as a hexadecimal number. This causes the conversion to fail.  
@@ -6813,6 +6738,7 @@ value Mod 2 = 0
  -or-  
   
  <paramref name="style" /> includes the <see cref="F:System.Globalization.NumberStyles.AllowHexSpecifier" /> or <see cref="F:System.Globalization.NumberStyles.HexNumber" /> flag along with another value.</exception>
+        <altmember cref="Overload:System.Numerics.BigInteger.ToString" />
       </Docs>
     </Member>
     <Member MemberName="Zero">
@@ -6834,11 +6760,6 @@ value Mod 2 = 0
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>FSharp.Core</AssemblyName>
-        <AssemblyVersion>2.3.98.1</AssemblyVersion>
-        <AssemblyVersion>3.98.4.0</AssemblyVersion>
-      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Numerics.BigInteger</ReturnType>
       </ReturnValue>
@@ -6853,7 +6774,158 @@ value Mod 2 = 0
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Numerics.BigInteger.IsZero" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="op_Implicit">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Numerics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Defines an implicit conversion between a <see cref="T:System.Numerics.BigInteger" /> object and another type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Numerics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether two numeric values are equal.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Numerics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the numeric value of the current <see cref="T:System.Numerics.BigInteger" /> object to its equivalent string representation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Numerics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Numerics.BigInteger" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryParse">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Numerics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Tries to convert the string representation of a number to its <see cref="T:System.Numerics.BigInteger" /> equivalent, and returns a value that indicates whether the conversion succeeded.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="op_GreaterThan">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Numerics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether a specified value is greater than another specified value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="op_Explicit">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Numerics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Defines an explicit conversion between a <see cref="T:System.Numerics.BigInteger" /> object and another type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="op_Equality">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Numerics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether two values are equal.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Log">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Numerics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the logarithm of a specified number.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CompareTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Numerics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares the value of this instance with another value and returns an integer that indicates whether the value of this instance is less than, equal to, or greater than the other value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="op_LessThanOrEqual">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Numerics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether a specified value is less than or equal to another specified value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="op_LessThan">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Numerics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether a specified value is less than a second specified value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="op_GreaterThanOrEqual">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Numerics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether a specified value is greater than or equal to another specified value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Parse">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Numerics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the string representation of a number to its <see cref="T:System.Numerics.BigInteger" /> equivalent.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="op_Inequality">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Numerics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether two numeric values are not equal.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

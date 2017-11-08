@@ -1,7 +1,7 @@
 ---
 title: "Pure Functional Transformations of XML (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: 97e8e582-eb3d-4756-bbfb-0899eb688ae4
 caps.latest.revision: 3
 author: "BillWagner"

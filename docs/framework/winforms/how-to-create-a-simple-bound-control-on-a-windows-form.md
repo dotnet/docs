@@ -9,10 +9,8 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "data binding, simple data binding"
+  - "data binding [Windows Forms], simple data binding"
   - "Windows Forms controls, data binding"
 ms.assetid: 3bcaded8-0f1a-4cc0-8830-f59be253bf4e
 caps.latest.revision: 9

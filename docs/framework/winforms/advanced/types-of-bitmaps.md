@@ -9,8 +9,6 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "jpeg files"
   - "TIFF files"
@@ -25,7 +23,7 @@ helpviewer_keywords:
   - ".bmp files"
   - "EXIF file format"
   - "PNG files"
-  - "pictures, file formats"
+  - "pictures [Windows Forms], file formats"
   - "Tag Image File Format"
   - "bitmaps [Windows Forms], file format"
   - "Exchangeable Image File"

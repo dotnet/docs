@@ -9,9 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
 helpviewer_keywords: 
   - "implementing service contracts [WCF]"
 ms.assetid: aefb6f56-47e3-4f24-ab0a-9bc07bf9885f

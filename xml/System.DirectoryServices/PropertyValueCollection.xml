@@ -438,5 +438,15 @@ myUser.CommitChanges();
           <see cref="F:System.Security.Permissions.SecurityAction.Demand" /> is performed when an application sets this property if the <see cref="P:System.DirectoryServices.DirectoryEntry.UsePropertyCache" /> is <see langword="false" />.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddRange">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Appends a set of property values to this collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

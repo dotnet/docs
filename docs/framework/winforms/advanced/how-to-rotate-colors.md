@@ -10,9 +10,10 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "colors, rotating"
+  - "colors [Windows Forms], rotating"
   - "examples [Windows Forms], rotating colors"
 ms.assetid: e2e4c300-159c-4f4a-9b56-103b0f7cbc05
 caps.latest.revision: 13

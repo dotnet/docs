@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo3"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerInfo3 interface [.NET Framework profiling]"
 ms.assetid: 044a262f-0fa7-485d-b0c1-64cdc359c654

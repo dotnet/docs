@@ -9,12 +9,10 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "OpenFileDialog [Windows Forms], opt out of automatic upgrade"
   - "file dialog box [Windows Forms], opt out of automatic upgrade"
-  - "Windows Vista file dialog box, opt out of automatic upgrade"
+  - "Windows Vista file dialog box [Windows Forms], opt out of automatic upgrade"
   - "SaveFileDialog [Windows Forms], opt out of automatic upgrade"
   - "AutoUpgradeEnabled property"
 ms.assetid: 522e482e-cc01-48b1-8d59-9617dc2c4ac1

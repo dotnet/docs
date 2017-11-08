@@ -39,11 +39,23 @@
    
   
 ## Examples  
- <!-- TODO: review snippet reference [!code-csharp[DataListLayout#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListLayout/CS/datalistlayoutcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListLayout#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListLayout/VB/datalistlayoutvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListLayout#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListLayout/CS/datalistlayoutcs.aspx#1)]
+ [!code-aspx-vb[DataListLayout#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListLayout/VB/datalistlayoutvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
+    <altmember cref="P:System.Web.UI.WebControls.CheckBoxList.RepeatDirection" />
+    <altmember cref="P:System.Web.UI.WebControls.CheckBoxList.RepeatColumns" />
+    <altmember cref="T:System.Web.UI.WebControls.DataList" />
+    <altmember cref="P:System.Web.UI.WebControls.DataList.RepeatDirection" />
+    <altmember cref="P:System.Web.UI.WebControls.DataList.RepeatColumns" />
+    <altmember cref="T:System.Web.UI.WebControls.RadioButtonList" />
+    <altmember cref="P:System.Web.UI.WebControls.RadioButtonList.RepeatDirection" />
+    <altmember cref="P:System.Web.UI.WebControls.RadioButtonList.RepeatColumns" />
+    <altmember cref="T:System.Web.UI.WebControls.RepeatInfo" />
+    <altmember cref="P:System.Web.UI.WebControls.RepeatInfo.RepeatDirection" />
+    <altmember cref="P:System.Web.UI.WebControls.RepeatInfo.RepeatColumns" />
   </Docs>
   <Members>
     <Member MemberName="Horizontal">

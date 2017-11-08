@@ -33,6 +33,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.SessionState.SessionStateUtility" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -309,6 +310,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.SessionState.HttpSessionState.IsCookieless" />
       </Docs>
     </Member>
     <Member MemberName="IsNewSession">
@@ -654,5 +656,14 @@
  An attempt was made to set the <see cref="P:System.Web.SessionState.HttpSessionStateContainer.Timeout" /> value to an integer value greater than the maximum allowed when <see cref="P:System.Web.SessionState.HttpSessionState.Mode" /> is set to <see cref="F:System.Web.SessionState.SessionStateMode.InProc" /> or <see cref="F:System.Web.SessionState.SessionStateMode.StateServer" />. The maximum allowed is 525,600 (one year).</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets individual session values.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

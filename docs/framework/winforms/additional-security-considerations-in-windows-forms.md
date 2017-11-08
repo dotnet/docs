@@ -9,18 +9,11 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "Windows API, secure calls"
   - "Windows Forms, secure calls to Windows API"
-  - "Windows API, calling"
-  - "APIs, calling"
   - "security [Windows Forms]"
-  - "Windows API, Windows Forms security settings"
-  - "API calls, Windows Forms security settings"
   - "security [Windows Forms], calling APIs"
-  - "Clipboard, securing access"
+  - "Clipboard [Windows Forms], securing access"
 ms.assetid: 15abda8b-0527-47c7-aedb-77ab595f2bf1
 caps.latest.revision: 14
 author: dotnet-bot

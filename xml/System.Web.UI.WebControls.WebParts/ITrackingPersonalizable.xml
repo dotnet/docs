@@ -29,8 +29,8 @@
   
  The following .aspx page creates a Web Parts zone and adds the control to the zone. The page also references a login control that you should use to log on individual users so that personalization can be applied.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_IPersonalizable#10](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IPersonalizable/CS/defaultcs.aspx#10)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_IPersonalizable#10](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IPersonalizable/VB/Defaultvb.aspx#10)]  -->  
+ [!code-aspx-csharp[WebParts_IPersonalizable#10](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IPersonalizable/CS/defaultcs.aspx#10)]
+ [!code-aspx-vb[WebParts_IPersonalizable#10](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IPersonalizable/VB/Defaultvb.aspx#10)]  
   
  ]]></format>
     </remarks>

@@ -45,6 +45,9 @@
   
  The associated custom expression editor class creates an instance of the derived editor sheet in the <see cref="M:System.Web.UI.Design.ExpressionEditor.GetExpressionEditorSheet(System.String,System.IServiceProvider)" /> method, initializes that instance with the current expression string set for the control property, and returns the instance to the visual designer. The visual designer allows you to set the expression sheet properties, and then calls the <see cref="M:System.Web.UI.Design.ExpressionEditorSheet.GetExpression" /> method to form the expression string from the input expression sheet property values.</para>
     </block>
+    <altmember cref="T:System.Web.UI.Design.ExpressionEditor" />
+    <altmember cref="M:System.Web.UI.Design.ExpressionEditor.GetExpressionEditorSheet(System.String,System.IServiceProvider)" />
+    <altmember cref="T:System.Web.UI.Design.ResourceExpressionEditorSheet" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -75,6 +78,9 @@
   
  For example, a custom expression editor sheet class that implements additional expression properties can define the default values for the expression properties in the <see cref="M:System.Web.UI.Design.ExpressionEditorSheet.#ctor(System.IServiceProvider)" /> constructor. A custom expression editor sheet class can define additional public constructor overloads that use input parameter values to set the initial values for the expression properties.</para>
         </block>
+        <altmember cref="Overload:System.Web.UI.Design.ExpressionEditor.GetExpressionEditor" />
+        <altmember cref="T:System.Web.UI.Design.ExpressionEditor" />
+        <altmember cref="T:System.Web.UI.Design.ResourceExpressionEditorSheet" />
       </Docs>
     </Member>
     <Member MemberName="GetExpression">
@@ -114,6 +120,9 @@
   
  The associated custom expression editor class creates an instance of the derived editor sheet in the <see cref="M:System.Web.UI.Design.ExpressionEditor.GetExpressionEditorSheet(System.String,System.IServiceProvider)" /> method, initializes that instance with the current expression string set for the control property, and then returns the instance to the visual designer. The visual designer allows you to set the expression sheet properties, and then calls the <see cref="M:System.Web.UI.Design.ExpressionEditorSheet.GetExpression" /> method to form the expression string from the input expression sheet property values.</para>
         </block>
+        <altmember cref="T:System.Web.UI.Design.ExpressionEditor" />
+        <altmember cref="M:System.Web.UI.Design.ExpressionEditor.GetExpressionEditorSheet(System.String,System.IServiceProvider)" />
+        <altmember cref="T:System.Web.UI.Design.ResourceExpressionEditorSheet" />
       </Docs>
     </Member>
     <Member MemberName="IsValid">
@@ -145,6 +154,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.ExpressionEditor" />
+        <altmember cref="M:System.Web.UI.Design.ExpressionEditor.GetExpressionEditorSheet(System.String,System.IServiceProvider)" />
+        <altmember cref="T:System.Web.UI.Design.ResourceExpressionEditorSheet" />
       </Docs>
     </Member>
     <Member MemberName="ServiceProvider">
@@ -177,6 +189,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.ExpressionEditor.GetExpressionEditorSheet(System.String,System.IServiceProvider)" />
+        <altmember cref="M:System.Web.UI.Design.ExpressionEditorSheet.#ctor(System.IServiceProvider)" />
       </Docs>
     </Member>
   </Members>

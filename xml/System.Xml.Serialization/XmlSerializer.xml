@@ -354,6 +354,7 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.Serialization.XmlAttributes" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -444,6 +445,7 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.Serialization.XmlAttributes" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -490,6 +492,8 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.Serialization.XmlAttributeOverrides" />
+        <altmember cref="T:System.Xml.Serialization.XmlAttributes" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -595,6 +599,9 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.Serialization.XmlAttributeOverrides" />
+        <altmember cref="T:System.Xml.Serialization.XmlRootAttribute" />
+        <altmember cref="T:System.Xml.Serialization.XmlAttributes" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -719,6 +726,7 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Serialization.XmlSerializer.Deserialize(System.IO.Stream)" />
       </Docs>
     </Member>
     <Member MemberName="CreateReader">
@@ -853,6 +861,9 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.Serialization.XmlAttributes" />
+        <altmember cref="M:System.Xml.Serialization.XmlSerializer.CanDeserialize(System.Xml.XmlReader)" />
+        <altmember cref="M:System.Xml.Serialization.XmlSerializer.Serialize(System.IO.TextWriter,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Deserialize">
@@ -1004,6 +1015,9 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An error occurred during deserialization. The original exception is available using the <see cref="P:System.Exception.InnerException" /> property.</exception>
+        <altmember cref="T:System.Xml.Serialization.XmlAttributes" />
+        <altmember cref="M:System.Xml.Serialization.XmlSerializer.CanDeserialize(System.Xml.XmlReader)" />
+        <altmember cref="M:System.Xml.Serialization.XmlSerializer.Serialize(System.IO.TextWriter,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Deserialize">
@@ -1051,6 +1065,9 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An error occurred during deserialization. The original exception is available using the <see cref="P:System.Exception.InnerException" /> property.</exception>
+        <altmember cref="T:System.Xml.Serialization.XmlAttributes" />
+        <altmember cref="M:System.Xml.Serialization.XmlSerializer.CanDeserialize(System.Xml.XmlReader)" />
+        <altmember cref="M:System.Xml.Serialization.XmlSerializer.Serialize(System.IO.TextWriter,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Deserialize">
@@ -1285,6 +1302,7 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.Serialization.XmlAttributes" />
       </Docs>
     </Member>
     <MemberGroup MemberName="GenerateSerializer">
@@ -1532,6 +1550,8 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An error occurred during serialization. The original exception is available using the <see cref="P:System.Exception.InnerException" /> property.</exception>
+        <altmember cref="T:System.Xml.Serialization.XmlAttributes" />
+        <altmember cref="M:System.Xml.Serialization.XmlSerializer.Deserialize(System.IO.Stream)" />
       </Docs>
     </Member>
     <Member MemberName="Serialize">
@@ -1593,6 +1613,7 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.Serialization.XmlAttributes" />
       </Docs>
     </Member>
     <Member MemberName="Serialize">
@@ -1751,6 +1772,8 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An error occurred during serialization. The original exception is available using the <see cref="P:System.Exception.InnerException" /> property.</exception>
+        <altmember cref="T:System.Xml.Serialization.XmlAttributes" />
+        <altmember cref="M:System.Xml.Serialization.XmlSerializer.Deserialize(System.IO.Stream)" />
       </Docs>
     </Member>
     <Member MemberName="Serialize">
@@ -1815,6 +1838,7 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An error occurred during serialization. The original exception is available using the <see cref="P:System.Exception.InnerException" /> property.</exception>
+        <altmember cref="T:System.Xml.Serialization.XmlAttributes" />
       </Docs>
     </Member>
     <Member MemberName="Serialize">
@@ -2017,6 +2041,11 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.Serialization.XmlAnyAttributeAttribute" />
+        <altmember cref="M:System.Xml.Serialization.XmlSerializer.CanDeserialize(System.Xml.XmlReader)" />
+        <altmember cref="M:System.Xml.Serialization.XmlSerializer.Deserialize(System.IO.Stream)" />
+        <altmember cref="E:System.Xml.Serialization.XmlSerializer.UnknownNode" />
+        <altmember cref="T:System.Xml.Serialization.XmlAttributes" />
       </Docs>
     </Member>
     <Member MemberName="UnknownElement">
@@ -2072,6 +2101,10 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.Serialization.XmlAnyElementAttribute" />
+        <altmember cref="E:System.Xml.Serialization.XmlSerializer.UnknownNode" />
+        <altmember cref="E:System.Xml.Serialization.XmlSerializer.UnknownAttribute" />
+        <altmember cref="T:System.Xml.Serialization.XmlAttributes" />
       </Docs>
     </Member>
     <Member MemberName="UnknownNode">
@@ -2114,6 +2147,12 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.Serialization.XmlAnyElementAttribute" />
+        <altmember cref="T:System.Xml.Serialization.XmlAnyAttributeAttribute" />
+        <altmember cref="M:System.Xml.Serialization.XmlSerializer.CanDeserialize(System.Xml.XmlReader)" />
+        <altmember cref="M:System.Xml.Serialization.XmlSerializer.Deserialize(System.IO.Stream)" />
+        <altmember cref="E:System.Xml.Serialization.XmlSerializer.UnknownAttribute" />
+        <altmember cref="T:System.Xml.Serialization.XmlAttributes" />
       </Docs>
     </Member>
     <Member MemberName="UnreferencedObject">
@@ -2185,6 +2224,7 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.Serialization.XmlAttributes" />
       </Docs>
     </Member>
   </Members>

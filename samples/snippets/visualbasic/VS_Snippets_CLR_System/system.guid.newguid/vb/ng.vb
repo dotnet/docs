@@ -3,9 +3,9 @@
 Imports System
 
 Class Sample
-    Public Shared Sub Main() 
+    Public Shared Sub Main()
         Dim g As Guid
-' Create and display the value of two GUIDs.
+        ' Create and display the value of two GUIDs.
         g = Guid.NewGuid()
         Console.WriteLine(g)
         Console.WriteLine(Guid.NewGuid())

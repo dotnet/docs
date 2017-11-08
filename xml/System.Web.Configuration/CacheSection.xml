@@ -30,14 +30,19 @@
 ## Examples  
  The following code example shows a page and the related code file used to  access the  <xref:System.Web.Configuration.CacheSection> section attributes.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Configuration.CacheSection#11](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.CacheSection/CS/readwritecache.aspx#11)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Configuration.CacheSection#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.CacheSection/VB/readwritecache.aspx#11)]  -->  
+ [!code-aspx-csharp[System.Web.Configuration.CacheSection#11](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.CacheSection/CS/readwritecache.aspx#11)]
+ [!code-aspx-vb[System.Web.Configuration.CacheSection#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.CacheSection/VB/readwritecache.aspx#11)]
   
  [!code-csharp[System.Web.Configuration.CacheSection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.CacheSection/CS/readwritecache.aspx.cs#1)]
  [!code-vb[System.Web.Configuration.CacheSection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.CacheSection/VB/readwritecache.aspx.vb#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Configuration.OutputCacheSection" />
+    <altmember cref="T:System.Web.Configuration.OutputCacheSettingsSection" />
+    <altmember cref="T:System.Web.Configuration.SqlCacheDependencySection" />
+    <altmember cref="T:System.Web.Caching.Cache" />
+    <altmember cref="P:System.Web.HttpContext.Cache" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

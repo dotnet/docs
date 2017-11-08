@@ -38,8 +38,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuEventHandler> delegate to programmatically register an event handler for the <xref:System.Web.UI.WebControls.Menu.MenuItemClick> event of a <xref:System.Web.UI.WebControls.Menu> control. For this example to work correctly, you must copy the sample site map data below to a file named Web.sitemap.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuEventHandler/CS/menueventhandlercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuEventHandler/VB/menueventhandlervb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuEventHandler/CS/menueventhandlercs.aspx#1)]
+ [!code-aspx-vb[MenuEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuEventHandler/VB/menueventhandlervb.aspx#1)]  
   
  The following is sample site map data for the previous example.  
   
@@ -91,5 +91,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Menu" />
+    <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+    <altmember cref="T:System.Web.UI.WebControls.MenuEventArgs" />
+    <altmember cref="E:System.Web.UI.WebControls.Menu.MenuItemClick" />
+    <altmember cref="M:System.Web.UI.WebControls.Menu.OnMenuItemClick(System.Web.UI.WebControls.MenuEventArgs)" />
+    <altmember cref="E:System.Web.UI.WebControls.Menu.MenuItemDataBound" />
+    <altmember cref="M:System.Web.UI.WebControls.Menu.OnMenuItemDataBound(System.Web.UI.WebControls.MenuEventArgs)" />
   </Docs>
 </Type>

@@ -10,13 +10,14 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "controls [Windows Forms], making invisible at run time"
   - "invisible controls"
   - "user controls [Windows Forms], invisible"
   - "custom controls [Windows Forms], invisible"
-  - "run time, making controls invisible"
+  - "run time [Windows Forms], making controls invisible"
 ms.assetid: 69eb2e72-32f5-4f79-a157-c2c5f60c1628
 caps.latest.revision: 13
 author: dotnet-bot

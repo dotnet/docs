@@ -704,9 +704,9 @@
         <Parameter Name="x" Type="System.Data.OracleClient.OracleDateTime" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">An <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
+        <summary>Converts an <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure to a <see cref="T:System.DateTime" /> structure.</summary>
+        <returns>A <see cref="T:System.DateTime" /> structure whose <see cref="P:System.DateTime.Date" /> and <see cref="P:System.DateTime.TimeOfDay" /> properties contain the same date and time values as the <see cref="P:System.Data.OracleClient.OracleDateTime.Value" /> property of the supplied <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -726,9 +726,9 @@
         <Parameter Name="x" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">A <see langword="String" /> to be converted to an <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</param>
+        <summary>Converts a <see langword="String" /> to an <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</summary>
+        <returns>An <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure whose <see cref="P:System.Data.OracleClient.OracleDateTime.Value" /> is equal to the values contained in the <see langword="String" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -957,5 +957,32 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares the supplied object parameter to the <see cref="P:System.Data.OracleClient.OracleDateTime.Value" /> property of the <see cref="T:System.Data.OracleClient.OracleDateTime" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="op_Explicit">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Used for explicit <see cref="T:System.Data.OracleClient.OracleDateTime" /> conversion.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

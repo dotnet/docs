@@ -10,10 +10,10 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "synchronizing media playback with events"
-  - "playback of media, synchronizing with events"
-  - "media, synchronizing playback with events"
-  - "multimedia, synchronizing media playback with events"
+  - "synchronizing media playback with events [WPF]"
+  - "playback of media [WPF], synchronizing with events"
+  - "media [WPF], synchronizing playback with events"
+  - "multimedia [WPF], synchronizing media playback with events"
 ms.assetid: c4dbe632-6e7f-4d7f-9df5-98737a758bc3
 caps.latest.revision: 10
 author: dotnet-bot
@@ -24,7 +24,7 @@ manager: "wpickett"
 This example shows how to synchronize media playback with an event.  
   
 ## Example  
- The following example uses the                      <xref:System.Windows.Controls.MediaElement> control and the                      <xref:System.Windows.Media.MediaTimeline> class to play a sound that occurs when the user clicks a                      <xref:System.Windows.Controls.Button>.  
+ The following example uses the <xref:System.Windows.Controls.MediaElement> control and the <xref:System.Windows.Media.MediaTimeline> class to play a sound that occurs when the user clicks a <xref:System.Windows.Controls.Button>.  
   
  [!code-xaml[MediaGallery_snippet#SoundFromUserEventExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/MediaGallery_snippet/CSharp/SoundFromUserEventExample.xaml#soundfromusereventexamplewholepage)]  
   

@@ -9,11 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 ms.assetid: 62f121fd-3f2e-4033-bb39-48ae996bfbd9
 caps.latest.revision: 7
 author: "mcleblanc"

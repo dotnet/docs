@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo2::GetGenerationBounds"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerInfo2::GetGenerationBounds method [.NET Framework profiling]"
   - "GetGenerationBounds method [.NET Framework profiling]"

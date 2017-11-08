@@ -30,13 +30,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsViewCommandEventArgs> object passed to the event handler for the <xref:System.Web.UI.WebControls.DetailsView.ItemCommand> event to determine the command name of the button clicked by the user. This example uses the single-file coding model.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewCommandEventArgsCodeInline#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewCommandEventArgsCodeInline/CS/detailsviewcommandeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewCommandEventArgsCodeInline#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewCommandEventArgsCodeInline/VB/detailsviewcommandeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewCommandEventArgsCodeInline#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewCommandEventArgsCodeInline/CS/detailsviewcommandeventargscs.aspx#1)]
+ [!code-aspx-vb[DetailsViewCommandEventArgsCodeInline#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewCommandEventArgsCodeInline/VB/detailsviewcommandeventargsvb.aspx#1)]  
   
  The following code example shows a code-behind coding model version of the previous example. For this example to work, you must copy the code below into the associated code-behind file.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewCommandEventArgsCodeBehind2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewCommandEventArgsCodeBehind2/CS/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewCommandEventArgsCodeBehind2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewCommandEventArgsCodeBehind2/VB/DefaultVB.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewCommandEventArgsCodeBehind2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewCommandEventArgsCodeBehind2/CS/Default.aspx#1)]
+ [!code-aspx-vb[DetailsViewCommandEventArgsCodeBehind2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewCommandEventArgsCodeBehind2/VB/DefaultVB.aspx#1)]  
   
  The following code example shows the code-behind file for the previous example.  
   
@@ -45,6 +45,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+    <altmember cref="T:System.Web.UI.WebControls.DetailsViewCommandEventHandler" />
+    <altmember cref="T:System.Web.UI.WebControls.ButtonField" />
+    <altmember cref="T:System.Web.UI.WebControls.TemplateField" />
+    <altmember cref="T:System.Web.UI.WebControls.CommandEventArgs" />
+    <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemCommand" />
+    <altmember cref="M:System.Web.UI.WebControls.DetailsView.OnItemCommand(System.Web.UI.WebControls.DetailsViewCommandEventArgs)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -83,6 +90,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.CommandEventArgs" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandEventArgs.CommandArgument" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandEventArgs.CommandName" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewCommandEventArgs.CommandSource" />
+        <altmember cref="M:System.Web.UI.WebControls.DetailsView.OnItemCommand(System.Web.UI.WebControls.DetailsViewCommandEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="CommandSource">
@@ -111,11 +123,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsViewCommandEventArgs.CommandSource%2A> property to determine which of two <xref:System.Web.UI.WebControls.DetailsView> controls raised the <xref:System.Web.UI.WebControls.DetailsView.ItemCommand> event.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewCommandEventArgsCommandSource#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewCommandEventArgsCommandSource/CS/detailsviewcommandeventargscommandsourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewCommandEventArgsCommandSource#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewCommandEventArgsCommandSource/VB/detailsviewcommandeventargscommandsourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewCommandEventArgsCommandSource#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewCommandEventArgsCommandSource/CS/detailsviewcommandeventargscommandsourcecs.aspx#1)]
+ [!code-aspx-vb[DetailsViewCommandEventArgsCommandSource#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewCommandEventArgsCommandSource/VB/detailsviewcommandeventargscommandsourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
       </Docs>
     </Member>
     <Member MemberName="Handled">

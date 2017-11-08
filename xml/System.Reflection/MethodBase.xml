@@ -152,6 +152,7 @@
         <block subset="none" type="overrides">
           <para>Use the <see cref="P:System.Reflection.MethodBase.Attributes" /> property to determine whether a method is <see langword="public" />, <see langword="private" />, <see langword="final" />, <see langword="virtual" />, and so on.</para>
         </block>
+        <altmember cref="T:System.Reflection.MethodAttributes" />
       </Docs>
     </Member>
     <Member MemberName="CallingConvention">
@@ -185,6 +186,7 @@
         <summary>Gets a value indicating the calling conventions for this method.</summary>
         <value>The <see cref="T:System.Reflection.CallingConventions" /> for this method.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Reflection.CallingConventions" />
       </Docs>
     </Member>
     <Member MemberName="ContainsGenericParameters">
@@ -232,6 +234,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Reflection.MethodBase.IsGenericMethod" />
+        <altmember cref="P:System.Reflection.MethodBase.IsGenericMethodDefinition" />
+        <altmember cref="P:System.Reflection.MethodInfo.ContainsGenericParameters" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -377,6 +382,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The current object is a <see cref="T:System.Reflection.ConstructorInfo" />. Generic constructors are not supported in the .NET Framework version 2.0. This exception is the default behavior if this method is not overridden in a derived class.</exception>
+        <altmember cref="P:System.Reflection.MethodBase.IsGenericMethod" />
+        <altmember cref="P:System.Reflection.MethodBase.IsGenericMethodDefinition" />
+        <altmember cref="M:System.Reflection.MethodInfo.GetGenericArguments" />
+        <altmember cref="P:System.Reflection.MethodInfo.IsGenericMethod" />
+        <altmember cref="P:System.Type.IsGenericType" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -457,7 +467,7 @@
  The <xref:System.Reflection.MethodBody.LocalVariables%2A> property is used to obtain a list of <xref:System.Reflection.LocalVariableInfo> objects and display their types and index order. The <xref:System.Reflection.MethodBody.ExceptionHandlingClauses%2A> property is used to obtain a list of exception-handling clauses.  
   
 > [!NOTE]
->  Not all computer languages can generate <xref:System.Reflection.ExceptionHandlingClauseOptions?displayProperty=nameWithType> clauses. The Visual Basic example shows a filter clause, using a Visual Basic `When` expression, which is omitted from the examples for other languages.  
+>  Not all computer languages can generate <xref:System.Reflection.ExceptionHandlingClauseOptions.Filter?displayProperty=nameWithType> clauses. The Visual Basic example shows a filter clause, using a Visual Basic `When` expression, which is omitted from the examples for other languages.  
   
  [!code-cpp[MethodBody#1](~/samples/snippets/cpp/VS_Snippets_CLR/MethodBody/cpp/source.cpp#1)]
  [!code-csharp[MethodBody#1](~/samples/snippets/csharp/VS_Snippets_CLR/MethodBody/CS/source.cs#1)]
@@ -614,6 +624,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
+        <altmember cref="T:System.Reflection.MethodImplAttributes" />
       </Docs>
     </Member>
     <Member MemberName="GetParameters">
@@ -662,6 +673,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
+        <altmember cref="T:System.Reflection.ParameterInfo" />
       </Docs>
     </Member>
     <Member MemberName="Invoke">
@@ -721,7 +733,7 @@
 >  If this method overload is used to invoke an instance constructor, the object supplied for `obj` is reinitialized; that is, all instance initializers are executed. The return value is `null`. If a class constructor is invoked, the class is reinitialized; that is, all class initializers are executed. The return value is `null`.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=nameWithType> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
@@ -774,6 +786,9 @@
         <exception cref="T:System.InvalidOperationException">The type that declares the method is an open generic type. That is, the <see cref="P:System.Type.ContainsGenericParameters" /> property returns <see langword="true" /> for the declaring type.</exception>
         <exception cref="T:System.NotSupportedException">The current instance is a <see cref="T:System.Reflection.Emit.MethodBuilder" />.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
+        <altmember cref="T:System.Reflection.BindingFlags" />
+        <altmember cref="T:System.Reflection.Missing" />
+        <altmember cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />
       </Docs>
     </Member>
     <Member MemberName="Invoke">
@@ -840,7 +855,7 @@
  If the invoked method throws an exception, `TargetInvocationException.GetException` returns the exception. This implementation throws a `NotSupportedException`.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=nameWithType> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
@@ -870,6 +885,7 @@
         <exception cref="T:System.MethodAccessException">The caller does not have permission to execute the method or constructor that is represented by the current instance.</exception>
         <exception cref="T:System.InvalidOperationException">The type that declares the method is an open generic type. That is, the <see cref="P:System.Type.ContainsGenericParameters" /> property returns <see langword="true" /> for the declaring type.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
+        <altmember cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />
       </Docs>
     </Member>
     <Member MemberName="IsAbstract">
@@ -922,6 +938,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Boolean" />
+        <altmember cref="T:System.Reflection.BindingFlags" />
       </Docs>
     </Member>
     <Member MemberName="IsAssembly">
@@ -961,7 +979,7 @@
 ## Remarks  
  The actual visibility of a method is limited by the visibility of its type. The <xref:System.Reflection.MethodBase.IsAssembly%2A> property might be `true` for a method, but if it is a method of a private nested type then the method is not visible outside the containing type.  
   
- The visibility of a method or constructor is exactly described by <xref:System.Reflection.MethodAttributes?displayProperty=nameWithType> if the only visibility modifier is `internal` (`Friend` in Visual Basic). This property is `false` for methods that are `protected internal` in C# (`Protected Friend` in Visual Basic, `protected public` in C++); use the <xref:System.Reflection.MethodBase.IsFamilyOrAssembly%2A> property to identify such methods.  
+ The visibility of a method or constructor is exactly described by <xref:System.Reflection.MethodAttributes.Assembly?displayProperty=nameWithType> if the only visibility modifier is `internal` (`Friend` in Visual Basic). This property is `false` for methods that are `protected internal` in C# (`Protected Friend` in Visual Basic, `protected public` in C++); use the <xref:System.Reflection.MethodBase.IsFamilyOrAssembly%2A> property to identify such methods.  
   
    
   
@@ -969,7 +987,7 @@
  The following code example defines methods with varying levels of visibility, and displays the values of their <xref:System.Reflection.MethodBase.IsAssembly%2A>, <xref:System.Reflection.MethodBase.IsFamily%2A>, <xref:System.Reflection.MethodBase.IsFamilyOrAssembly%2A>, and <xref:System.Reflection.MethodBase.IsFamilyAndAssembly%2A> properties.  
   
 > [!NOTE]
->  The Visual Basic and C# languages cannot define methods with <xref:System.Reflection.MethodAttributes?displayProperty=nameWithType> visibility; that access level appears only in the C++ example.  
+>  The Visual Basic and C# languages cannot define methods with <xref:System.Reflection.MethodAttributes.FamANDAssem?displayProperty=nameWithType> visibility; that access level appears only in the C++ example.  
   
  [!code-cpp[Classic MethodBase.IsAssembly Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic MethodBase.IsAssembly Example/CPP/source.cpp#1)]
  [!code-csharp[Classic MethodBase.IsAssembly Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic MethodBase.IsAssembly Example/CS/source.cs#1)]
@@ -977,6 +995,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.MethodAttributes" />
+        <altmember cref="P:System.Reflection.MethodBase.IsFamily" />
+        <altmember cref="P:System.Reflection.MethodBase.IsFamilyOrAssembly" />
+        <altmember cref="P:System.Reflection.MethodBase.IsFamilyAndAssembly" />
       </Docs>
     </Member>
     <Member MemberName="IsConstructor">
@@ -1021,10 +1043,11 @@
 ## Remarks  
   
 > [!NOTE]
->  The <xref:System.Reflection.MethodBase.IsConstructor%2A> property returns `false` for a <xref:System.Reflection.Emit.ConstructorBuilder> object in a dynamic type, unless the <xref:System.Reflection.MethodAttributes?displayProperty=nameWithType> flag was included in the `attributes` parameter when the constructor was defined. Omitting the <xref:System.Reflection.MethodAttributes.RTSpecialName> flag does not affect the correctness of the emitted constructor.  
+>  The <xref:System.Reflection.MethodBase.IsConstructor%2A> property returns `false` for a <xref:System.Reflection.Emit.ConstructorBuilder> object in a dynamic type, unless the <xref:System.Reflection.MethodAttributes.RTSpecialName?displayProperty=nameWithType> flag was included in the `attributes` parameter when the constructor was defined. Omitting the <xref:System.Reflection.MethodAttributes.RTSpecialName> flag does not affect the correctness of the emitted constructor.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Boolean" />
       </Docs>
     </Member>
     <Member MemberName="IsFamily">
@@ -1062,7 +1085,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The visibility of a method or constructor is exactly described by <xref:System.Reflection.MethodAttributes?displayProperty=nameWithType> if the only visibility modifier is `protected`. This property is `false` for methods that are `protected internal` in C# (`Protected Friend` in Visual Basic, `protected public` in C++); use the <xref:System.Reflection.MethodBase.IsFamilyOrAssembly%2A> property to identify such methods.  
+ The visibility of a method or constructor is exactly described by <xref:System.Reflection.MethodAttributes.Family?displayProperty=nameWithType> if the only visibility modifier is `protected`. This property is `false` for methods that are `protected internal` in C# (`Protected Friend` in Visual Basic, `protected public` in C++); use the <xref:System.Reflection.MethodBase.IsFamilyOrAssembly%2A> property to identify such methods.  
   
    
   
@@ -1070,7 +1093,7 @@
  The following code example defines methods with varying levels of visibility, and displays the values of their <xref:System.Reflection.MethodBase.IsAssembly%2A>, <xref:System.Reflection.MethodBase.IsFamily%2A>, <xref:System.Reflection.MethodBase.IsFamilyOrAssembly%2A>, and <xref:System.Reflection.MethodBase.IsFamilyAndAssembly%2A> properties.  
   
 > [!NOTE]
->  The Visual Basic and C# languages cannot define methods with <xref:System.Reflection.MethodAttributes?displayProperty=nameWithType> visibility; that access level appears only in the C++ example.  
+>  The Visual Basic and C# languages cannot define methods with <xref:System.Reflection.MethodAttributes.FamANDAssem?displayProperty=nameWithType> visibility; that access level appears only in the C++ example.  
   
  [!code-cpp[Classic MethodBase.IsAssembly Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic MethodBase.IsAssembly Example/CPP/source.cpp#1)]
  [!code-csharp[Classic MethodBase.IsAssembly Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic MethodBase.IsAssembly Example/CS/source.cs#1)]
@@ -1078,6 +1101,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.MethodAttributes" />
+        <altmember cref="P:System.Reflection.MethodBase.IsAssembly" />
+        <altmember cref="P:System.Reflection.MethodBase.IsFamilyOrAssembly" />
+        <altmember cref="P:System.Reflection.MethodBase.IsFamilyAndAssembly" />
       </Docs>
     </Member>
     <Member MemberName="IsFamilyAndAssembly">
@@ -1115,7 +1142,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The visibility of a method or constructor is exactly described by <xref:System.Reflection.MethodAttributes?displayProperty=nameWithType> if the visibility modifier is `protected private` in C++. Methods with this visibility cannot be defined in Visual Basic or C#.  
+ The visibility of a method or constructor is exactly described by <xref:System.Reflection.MethodAttributes.FamANDAssem?displayProperty=nameWithType> if the visibility modifier is `protected private` in C++. Methods with this visibility cannot be defined in Visual Basic or C#.  
   
    
   
@@ -1123,7 +1150,7 @@
  The following code example defines methods with varying levels of visibility, and displays the values of their <xref:System.Reflection.MethodBase.IsAssembly%2A>, <xref:System.Reflection.MethodBase.IsFamily%2A>, <xref:System.Reflection.MethodBase.IsFamilyOrAssembly%2A>, and <xref:System.Reflection.MethodBase.IsFamilyAndAssembly%2A> properties.  
   
 > [!NOTE]
->  The Visual Basic and C# languages cannot define methods with <xref:System.Reflection.MethodAttributes?displayProperty=nameWithType> visibility; that access level appears only in the C++ example.  
+>  The Visual Basic and C# languages cannot define methods with <xref:System.Reflection.MethodAttributes.FamANDAssem?displayProperty=nameWithType> visibility; that access level appears only in the C++ example.  
   
  [!code-cpp[Classic MethodBase.IsAssembly Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic MethodBase.IsAssembly Example/CPP/source.cpp#1)]
  [!code-csharp[Classic MethodBase.IsAssembly Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic MethodBase.IsAssembly Example/CS/source.cs#1)]
@@ -1131,6 +1158,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.MethodAttributes" />
+        <altmember cref="P:System.Reflection.MethodBase.IsAssembly" />
+        <altmember cref="P:System.Reflection.MethodBase.IsFamilyOrAssembly" />
+        <altmember cref="P:System.Reflection.MethodBase.IsFamily" />
       </Docs>
     </Member>
     <Member MemberName="IsFamilyOrAssembly">
@@ -1168,11 +1199,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If a type member has <xref:System.Reflection.MethodAttributes?displayProperty=nameWithType> visibility, it can be called from any member in a derived class or any member in the same assembly, but not from any other type.  
+ If a type member has <xref:System.Reflection.MethodAttributes.FamORAssem?displayProperty=nameWithType> visibility, it can be called from any member in a derived class or any member in the same assembly, but not from any other type.  
   
  The actual visibility of a method is limited by the visibility of its type. The <xref:System.Reflection.MethodBase.IsFamilyOrAssembly%2A> property might be `true` for a method, but if it is a method of a private nested type then the method is not visible outside the containing type.  
   
- The visibility of a method or constructor is exactly described by <xref:System.Reflection.MethodAttributes?displayProperty=nameWithType> if the visibility modifier is `protected internal` in C# (`Protected Friend` in Visual Basic, `protected public` in C++).  
+ The visibility of a method or constructor is exactly described by <xref:System.Reflection.MethodAttributes.FamORAssem?displayProperty=nameWithType> if the visibility modifier is `protected internal` in C# (`Protected Friend` in Visual Basic, `protected public` in C++).  
   
    
   
@@ -1180,7 +1211,7 @@
  The following code example defines methods with varying levels of visibility, and displays the values of their <xref:System.Reflection.MethodBase.IsAssembly%2A>, <xref:System.Reflection.MethodBase.IsFamily%2A>, <xref:System.Reflection.MethodBase.IsFamilyOrAssembly%2A>, and <xref:System.Reflection.MethodBase.IsFamilyAndAssembly%2A> properties.  
   
 > [!NOTE]
->  The Visual Basic and C# languages cannot define methods with <xref:System.Reflection.MethodAttributes?displayProperty=nameWithType> visibility; that access level appears only in the C++ example.  
+>  The Visual Basic and C# languages cannot define methods with <xref:System.Reflection.MethodAttributes.FamANDAssem?displayProperty=nameWithType> visibility; that access level appears only in the C++ example.  
   
  [!code-cpp[Classic MethodBase.IsAssembly Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic MethodBase.IsAssembly Example/CPP/source.cpp#1)]
  [!code-csharp[Classic MethodBase.IsAssembly Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic MethodBase.IsAssembly Example/CS/source.cs#1)]
@@ -1188,6 +1219,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.MethodAttributes" />
+        <altmember cref="P:System.Reflection.MethodBase.IsAssembly" />
+        <altmember cref="P:System.Reflection.MethodBase.IsFamily" />
+        <altmember cref="P:System.Reflection.MethodBase.IsFamilyAndAssembly" />
       </Docs>
     </Member>
     <Member MemberName="IsFinal">
@@ -1244,6 +1279,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Boolean" />
       </Docs>
     </Member>
     <Member MemberName="IsGenericMethod">
@@ -1290,6 +1326,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Reflection.MethodBase.ContainsGenericParameters" />
+        <altmember cref="P:System.Reflection.MethodBase.IsGenericMethodDefinition" />
+        <altmember cref="P:System.Reflection.MethodInfo.IsGenericMethod" />
+        <altmember cref="P:System.Type.IsGenericType" />
       </Docs>
     </Member>
     <Member MemberName="IsGenericMethodDefinition">
@@ -1346,6 +1386,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Reflection.MethodInfo.IsGenericMethodDefinition" />
       </Docs>
     </Member>
     <Member MemberName="IsHideBySig">
@@ -1440,6 +1481,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Boolean" />
       </Docs>
     </Member>
     <Member MemberName="IsPublic">
@@ -1490,6 +1532,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Boolean" />
+        <altmember cref="T:System.Reflection.BindingFlags" />
       </Docs>
     </Member>
     <Member MemberName="IsSecurityCritical">
@@ -1538,6 +1582,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Reflection.MethodBase.IsSecuritySafeCritical" />
+        <altmember cref="P:System.Reflection.MethodBase.IsSecurityTransparent" />
       </Docs>
     </Member>
     <Member MemberName="IsSecuritySafeCritical">
@@ -1586,6 +1632,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Reflection.MethodBase.IsSecurityCritical" />
+        <altmember cref="P:System.Reflection.MethodBase.IsSecurityTransparent" />
       </Docs>
     </Member>
     <Member MemberName="IsSecurityTransparent">
@@ -1628,6 +1676,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Reflection.MethodBase.IsSecurityCritical" />
+        <altmember cref="P:System.Reflection.MethodBase.IsSecuritySafeCritical" />
       </Docs>
     </Member>
     <Member MemberName="IsSpecialName">
@@ -1678,6 +1728,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Boolean" />
+        <altmember cref="T:System.Reflection.MethodAttributes" />
       </Docs>
     </Member>
     <Member MemberName="IsStatic">
@@ -1719,6 +1771,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Boolean" />
+        <altmember cref="T:System.Reflection.MethodAttributes" />
       </Docs>
     </Member>
     <Member MemberName="IsVirtual">
@@ -2443,5 +2497,27 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Invoke">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invokes the method or constructor reflected by this <see langword="MethodInfo" /> instance.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetMethodFromHandle">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets method information using the specified handle.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

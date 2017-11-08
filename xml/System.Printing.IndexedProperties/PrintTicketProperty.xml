@@ -127,9 +127,9 @@
         <Parameter Name="attribRef" Type="System.Printing.IndexedProperties.PrintTicketProperty" />
       </Parameters>
       <Docs>
-        <param name="attribRef">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="attribRef">A pointer to the <see cref="T:System.Printing.IndexedProperties.PrintTicketProperty" /> that is converted.</param>
+        <summary>Provides implicit conversion to a <see cref="T:System.Printing.PrintTicket" /> value from a pointer to a <see cref="T:System.Printing.IndexedProperties.PrintTicketProperty" />.</summary>
+        <returns>A converted PrintTicketProperty object to a PrintTicket value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -159,5 +159,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.IndexedProperties.PrintTicketProperty" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="op_Implicit">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides implicit conversion from a <see cref="T:System.Printing.IndexedProperties.PrintTicketProperty" /> to a <see cref="T:System.Printing.PrintTicket" /> value.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

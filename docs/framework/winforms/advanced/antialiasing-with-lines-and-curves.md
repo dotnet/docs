@@ -10,10 +10,11 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "antialiasing"
-  - "antialiasing, smoothing modes"
+  - "antialiasing [Windows Forms], smoothing modes"
   - "GDI+, antialiasing"
 ms.assetid: 810da1a4-c136-4abf-88df-68e49efdd8d4
 caps.latest.revision: 16

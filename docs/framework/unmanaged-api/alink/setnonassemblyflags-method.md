@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "SetNonAssemblyFlags"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SetNonAssemblyFlags method"
 ms.assetid: f8ba6fc8-f5aa-4066-ac96-56332758f5ec

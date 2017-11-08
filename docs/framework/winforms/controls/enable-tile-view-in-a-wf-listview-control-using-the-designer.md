@@ -9,12 +9,10 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "tile view feature"
   - "ListView control [Windows Forms], tile view"
-  - "tiling, Windows Forms, controls"
+  - "tiling [Windows Forms], Windows Forms, controls"
 ms.assetid: 12f0816a-52b8-41ee-a6d9-ded3a8a5817a
 caps.latest.revision: 6
 author: dotnet-bot

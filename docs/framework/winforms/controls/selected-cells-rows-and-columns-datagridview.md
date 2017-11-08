@@ -10,11 +10,12 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "selection, DataGridView control [Windows Forms]"
+  - "selection [Windows Forms], DataGridView control [Windows Forms]"
   - "DataGridView control [Windows Forms], getting selection"
-  - "getting selection, DataGridView control [Windows Forms]"
+  - "getting selection [Windows Forms], DataGridView control [Windows Forms]"
 ms.assetid: d93c4b5b-498e-49bc-982a-2229d61778e4
 caps.latest.revision: 17
 author: dotnet-bot

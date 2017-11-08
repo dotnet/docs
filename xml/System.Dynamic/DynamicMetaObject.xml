@@ -29,7 +29,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see documentation on the [CodePlex](http://go.microsoft.com/fwlink/?LinkId=141028) Web site and the MSDN article [Implementing Dynamic Interfaces](http://go.microsoft.com/fwlink/?LinkID=198161).  
+ For more information, download the [Implementing Dynamic Interfaces](http://download.microsoft.com/download/5/4/B/54B83DFE-D7AA-4155-9687-B0CF58FF65D7/implementing-dynamic-interfaces.pdf) article available in PDF format.
   
  ]]></format>
     </remarks>
@@ -841,5 +841,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Dynamic.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Dynamic.DynamicMetaObject" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

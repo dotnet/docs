@@ -20,6 +20,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Windows.RoutedEventArgs.RoutedEvent" />
+    <altmember cref="T:System.Windows.EventManager" />
+    <altmember cref="M:System.Windows.UIElement.RaiseEvent(System.Windows.RoutedEventArgs)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -52,6 +55,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.RoutedEventArgs.RoutedEvent" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -93,6 +97,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.UIElement.RaiseEvent(System.Windows.RoutedEventArgs)" />
+        <altmember cref="P:System.Windows.RoutedEventArgs.RoutedEvent" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -244,6 +250,7 @@
   
  This method has no default implementation.</para>
         </block>
+        <altmember cref="P:System.Windows.RoutedEventArgs.Source" />
       </Docs>
     </Member>
     <Member MemberName="OriginalSource">
@@ -273,6 +280,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.RoutedEventArgs.Source" />
       </Docs>
     </Member>
     <Member MemberName="RoutedEvent">
@@ -338,7 +346,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.RoutedEventArgs.OriginalSource" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.RoutedEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

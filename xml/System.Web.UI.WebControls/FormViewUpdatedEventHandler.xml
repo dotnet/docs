@@ -33,15 +33,19 @@
 ## Examples  
  The following example demonstrates how to programmatically add a <xref:System.Web.UI.WebControls.FormViewUpdatedEventHandler> delegate to the <xref:System.Web.UI.WebControls.FormView.ItemUpdated> event of a <xref:System.Web.UI.WebControls.FormView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewUpdatedEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewUpdatedEventHandler/CS/formviewupdatedeventhandlercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewUpdatedEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewUpdatedEventHandler/VB/formviewupdatedeventhandlervb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewUpdatedEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewUpdatedEventHandler/CS/formviewupdatedeventhandlercs.aspx#1)]
+ [!code-aspx-vb[FormViewUpdatedEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewUpdatedEventHandler/VB/formviewupdatedeventhandlervb.aspx#1)]  
   
  The following example demonstrates how to declaratively add a <xref:System.Web.UI.WebControls.FormViewUpdatedEventHandler> delegate to the <xref:System.Web.UI.WebControls.FormView.ItemUpdated> event of a <xref:System.Web.UI.WebControls.FormView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewUpdatedEventArgs/CS/formviewupdatedeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewUpdatedEventArgs/VB/formviewupdatedeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewUpdatedEventArgs/CS/formviewupdatedeventargscs.aspx#1)]
+ [!code-aspx-vb[FormViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewUpdatedEventArgs/VB/formviewupdatedeventargsvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.FormView" />
+    <altmember cref="T:System.Web.UI.WebControls.FormViewUpdatedEventArgs" />
+    <altmember cref="E:System.Web.UI.WebControls.FormView.ItemUpdated" />
+    <altmember cref="M:System.Web.UI.WebControls.FormView.OnItemUpdated(System.Web.UI.WebControls.FormViewUpdatedEventArgs)" />
   </Docs>
 </Type>

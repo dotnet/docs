@@ -38,11 +38,15 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeNodeTypes> enumeration to indicate that the <xref:System.Web.UI.WebControls.TreeView> control should show a check box for each of the parent and leaf nodes only.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeViewShowCheckBoxes#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewShowCheckBoxes/CS/treeviewshowcheckboxescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeViewShowCheckBoxes#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewShowCheckBoxes/VB/treeviewshowcheckboxesvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeViewShowCheckBoxes#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewShowCheckBoxes/CS/treeviewshowcheckboxescs.aspx#1)]
+ [!code-aspx-vb[TreeViewShowCheckBoxes#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewShowCheckBoxes/VB/treeviewshowcheckboxesvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+    <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeView.ShowCheckBoxes" />
+    <altmember cref="T:System.FlagsAttribute" />
   </Docs>
   <Members>
     <Member MemberName="All">

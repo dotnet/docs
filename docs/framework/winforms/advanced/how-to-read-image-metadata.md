@@ -10,10 +10,11 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "metadata, property item"
-  - "metadata, reading image"
+  - "metadata [Windows Forms], property item"
+  - "metadata [Windows Forms], reading image"
 ms.assetid: 72ec0b31-0be7-444a-9575-1dbcb864e0be
 caps.latest.revision: 15
 author: dotnet-bot

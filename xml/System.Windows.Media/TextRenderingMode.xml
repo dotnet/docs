@@ -19,6 +19,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.TextFormatting.TextFormatter" />
+    <altmember cref="T:System.Windows.Media.TextFormattingMode" />
+    <altmember cref="T:System.Windows.Media.TextHintingMode" />
   </Docs>
   <Members>
     <Member MemberName="Aliased">
@@ -35,6 +38,9 @@
       </ReturnValue>
       <Docs>
         <summary>Text is rendered with bilevel anti-aliasing.</summary>
+        <altmember cref="T:System.Windows.Media.TextFormatting.TextFormatter" />
+        <altmember cref="T:System.Windows.Media.TextFormattingMode" />
+        <altmember cref="T:System.Windows.Media.TextHintingMode" />
       </Docs>
     </Member>
     <Member MemberName="Auto">
@@ -51,6 +57,9 @@
       </ReturnValue>
       <Docs>
         <summary>Text is rendered with the most appropriate rendering algorithm based on the layout mode that was used to format the text.</summary>
+        <altmember cref="T:System.Windows.Media.TextFormatting.TextFormatter" />
+        <altmember cref="T:System.Windows.Media.TextFormattingMode" />
+        <altmember cref="T:System.Windows.Media.TextHintingMode" />
       </Docs>
     </Member>
     <Member MemberName="ClearType">
@@ -67,6 +76,9 @@
       </ReturnValue>
       <Docs>
         <summary>Text is rendered with the most appropriate ClearType rendering algorithm based on the layout mode that was used to format the text.</summary>
+        <altmember cref="T:System.Windows.Media.TextFormatting.TextFormatter" />
+        <altmember cref="T:System.Windows.Media.TextFormattingMode" />
+        <altmember cref="T:System.Windows.Media.TextHintingMode" />
       </Docs>
     </Member>
     <Member MemberName="Grayscale">
@@ -83,6 +95,9 @@
       </ReturnValue>
       <Docs>
         <summary>Text is rendered with grayscale anti-aliasing.</summary>
+        <altmember cref="T:System.Windows.Media.TextFormatting.TextFormatter" />
+        <altmember cref="T:System.Windows.Media.TextFormattingMode" />
+        <altmember cref="T:System.Windows.Media.TextHintingMode" />
       </Docs>
     </Member>
   </Members>

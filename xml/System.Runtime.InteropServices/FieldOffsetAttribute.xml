@@ -39,7 +39,7 @@
 ## Remarks  
  You can apply this attribute to fields.  
   
- This attribute is used when <xref:System.Runtime.InteropServices.StructLayoutAttribute?displayProperty=nameWithType>, with <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=nameWithType> passed to its constructor, is applied to a class or structure to specify the offset of each non- `static` or constant member within the unmanaged representation of that class or structure.  
+ This attribute is used when <xref:System.Runtime.InteropServices.StructLayoutAttribute?displayProperty=nameWithType>, with <xref:System.Runtime.InteropServices.LayoutKind.Explicit?displayProperty=nameWithType> passed to its constructor, is applied to a class or structure to specify the offset of each non- `static` or constant member within the unmanaged representation of that class or structure.  
   
    
   
@@ -54,6 +54,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Runtime.InteropServices.LayoutKind" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

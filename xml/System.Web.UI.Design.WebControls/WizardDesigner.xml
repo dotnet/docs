@@ -13,6 +13,7 @@
   <Docs>
     <summary>Provides design-time support in a visual designer for the <see cref="T:System.Web.UI.WebControls.Wizard" /> control.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Wizard" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,6 +47,8 @@
         <summary>Gets the action list collection for the control designer.</summary>
         <value>An <see cref="T:System.ComponentModel.Design.DesignerActionListCollection" /> object that contains the custom <see cref="T:System.ComponentModel.Design.DesignerActionList" /> items for the control designer.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.Design.DesignerActionListCollection" />
+        <altmember cref="T:System.ComponentModel.Design.DesignerActionList" />
       </Docs>
     </Member>
     <Member MemberName="AddDesignerRegions">
@@ -167,6 +170,7 @@
         <value>
           <see langword="true" /> to display the sidebar; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.DisplaySideBar" />
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeHtml">
@@ -186,6 +190,7 @@
         <summary>Gets the HTML that is used to represent the control at design time.</summary>
         <returns>The HTML that is used to represent the control at design time.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.Design.WebControls.CompositeControlDesigner.GetDesignTimeHtml" />
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeHtml">
@@ -208,6 +213,7 @@
         <summary>Retrieves the HTML markup to display the control and populates the collection with the current control designer regions.</summary>
         <returns>The design-time HTML markup for the associated control, including all control designer regions.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.GetDesignTimeHtml(System.Web.UI.Design.DesignerRegionCollection)" />
       </Docs>
     </Member>
     <Member MemberName="GetEditableDesignerRegionContent">
@@ -423,5 +429,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetDesignTimeHtml">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the markup that is used to represent the control at design time.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

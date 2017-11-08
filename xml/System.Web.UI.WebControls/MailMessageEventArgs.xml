@@ -23,11 +23,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MailMessageEventArgs> class in an e-mail message event handler to change the contents of the message before it is sent.  
   
- <!-- TODO: review snippet reference [!code-csharp[PasswordRecoveryOnBeforeSendMail#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PasswordRecoveryOnBeforeSendMail/CS/passwordrecoveryonbeforesendmailcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[PasswordRecoveryOnBeforeSendMail#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PasswordRecoveryOnBeforeSendMail/VB/passwordrecoveryonbeforesendmailvb.aspx#1)]  -->  
+ [!code-aspx-csharp[PasswordRecoveryOnBeforeSendMail#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PasswordRecoveryOnBeforeSendMail/CS/passwordrecoveryonbeforesendmailcs.aspx#1)]
+ [!code-aspx-vb[PasswordRecoveryOnBeforeSendMail#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PasswordRecoveryOnBeforeSendMail/VB/passwordrecoveryonbeforesendmailvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Login" />
+    <altmember cref="T:System.Web.UI.WebControls.CreateUserWizard" />
+    <altmember cref="T:System.Web.UI.WebControls.PasswordRecovery" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -53,6 +56,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Login" />
+        <altmember cref="T:System.Web.UI.WebControls.CreateUserWizard" />
+        <altmember cref="T:System.Web.UI.WebControls.PasswordRecovery" />
       </Docs>
     </Member>
     <Member MemberName="Message">
@@ -81,11 +87,16 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MailMessageEventArgs.Message%2A> property in an e-mail message event handler to change the contents of the message before it is sent.  
   
- <!-- TODO: review snippet reference [!code-csharp[PasswordRecoveryOnBeforeSendMail#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PasswordRecoveryOnBeforeSendMail/CS/passwordrecoveryonbeforesendmailcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[PasswordRecoveryOnBeforeSendMail#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PasswordRecoveryOnBeforeSendMail/VB/passwordrecoveryonbeforesendmailvb.aspx#1)]  -->  
+ [!code-aspx-csharp[PasswordRecoveryOnBeforeSendMail#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PasswordRecoveryOnBeforeSendMail/CS/passwordrecoveryonbeforesendmailcs.aspx#1)]
+ [!code-aspx-vb[PasswordRecoveryOnBeforeSendMail#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PasswordRecoveryOnBeforeSendMail/VB/passwordrecoveryonbeforesendmailvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.MailMessageEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.PasswordRecovery.SendingMail" />
+        <altmember cref="T:System.Web.UI.WebControls.Login" />
+        <altmember cref="T:System.Web.UI.WebControls.CreateUserWizard" />
+        <altmember cref="T:System.Web.UI.WebControls.PasswordRecovery" />
       </Docs>
     </Member>
   </Members>

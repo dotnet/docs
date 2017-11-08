@@ -688,6 +688,15 @@
         <block subset="none" type="overrides">
           <para>The default implementation returns the accessible object's bounding rectangle if the object wraps a system control; otherwise, it returns <see cref="F:System.Drawing.Rectangle.Empty" />. All visible accessible objects must support this method. Sound objects do not support this method.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.DefaultAction" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Description" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Help" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.KeyboardShortcut" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Name" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Parent" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Role" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.State" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Value" />
       </Docs>
     </Member>
     <Member MemberName="DefaultAction">
@@ -717,6 +726,15 @@
         <block subset="none" type="overrides">
           <para>The default implementation returns the accessible object's default action if the object wraps a system control that has a default action; otherwise, it returns <see langword="null" />. Only controls that perform actions should support this method. Not all objects have default actions, and some objects might have a default action that is related to its <see cref="P:System.Windows.Forms.AccessibleObject.Value" /> property, such as in the following examples: A selected check box has a default action of "Uncheck" and a value of "Checked." A cleared check box has a default action of "Check" and a value of "Unchecked." A button labeled "Print" has a default action of "Press," with no value. A static text control or an edit control that shows "Printer" has no default action, but would have a value of "Printer." An object's <see cref="P:System.Windows.Forms.AccessibleObject.DefaultAction" /> property should be a verb or a short verb phrase.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Bounds" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Description" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Help" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.KeyboardShortcut" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Name" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Parent" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Role" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.State" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Value" />
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -746,6 +764,15 @@
         <block subset="none" type="overrides">
           <para>The default implementation returns the accessible object's description if the object wraps a system control; otherwise, it returns <see langword="null" />. The description is typically used to provide greater context for low-vision or blind users. It can also be used for context searching or other applications. Servers need to support the <see cref="P:System.Windows.Forms.AccessibleObject.Description" /> property if the description is not obvious, or if it is redundant based on the object's <see cref="P:System.Windows.Forms.AccessibleObject.Name" />, <see cref="P:System.Windows.Forms.AccessibleObject.Role" />, <see cref="P:System.Windows.Forms.AccessibleObject.State" />, and <see cref="P:System.Windows.Forms.AccessibleObject.Value" /> properties. For example, a button with "OK" does not need additional information, but a button that shows a picture of a cactus would. The <see cref="P:System.Windows.Forms.AccessibleObject.Name" />, <see cref="P:System.Windows.Forms.AccessibleObject.Role" />, and perhaps <see cref="P:System.Windows.Forms.AccessibleObject.Help" /> properties for the cactus button describe its purpose, but the <see cref="P:System.Windows.Forms.AccessibleObject.Description" /> property conveys information that is less tangible, like "A button that shows a picture of a cactus".</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Bounds" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.DefaultAction" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Help" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.KeyboardShortcut" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Name" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Parent" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Role" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.State" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Value" />
       </Docs>
     </Member>
     <Member MemberName="DoDefaultAction">
@@ -880,6 +907,7 @@
         <block subset="none" type="overrides">
           <para>All objects that can receive the keyboard focus must support this property.</para>
         </block>
+        <altmember cref="M:System.Windows.Forms.AccessibleObject.GetChild(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetHelpTopic">
@@ -913,6 +941,8 @@
         <block subset="none" type="overrides">
           <para>Not all objects need to support this property.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.Help" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Help" />
       </Docs>
     </Member>
     <Member MemberName="GetSelected">
@@ -958,6 +988,15 @@
         <block subset="none" type="overrides">
           <para>Not all objects need to support this property. Typically, this property contains ToolTip style information that is used either to describe what the object does or how to use it. For example, the <see cref="P:System.Windows.Forms.AccessibleObject.Help" /> property for a toolbar button that shows a printer might be "Prints the current document." The text for the <see cref="P:System.Windows.Forms.AccessibleObject.Help" /> property does not have to be unique within the user interface. Servers do not need to support the <see cref="P:System.Windows.Forms.AccessibleObject.Help" /> property if other properties provide sufficient information about the object's purpose and what actions the object might perform.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Bounds" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.DefaultAction" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Description" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.KeyboardShortcut" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Name" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Parent" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Role" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.State" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Value" />
       </Docs>
     </Member>
     <Member MemberName="HitTest">
@@ -1022,6 +1061,15 @@
         <block subset="none" type="overrides">
           <para>All objects that have a shortcut key or access key should support this property.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Bounds" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.DefaultAction" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Description" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Help" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Name" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Parent" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Role" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.State" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Value" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -1064,6 +1112,15 @@
   
  If you are using menu or button text for the <see cref="P:System.Windows.Forms.AccessibleObject.Name" /> property, strip out the ampersands (&amp;) that mark the keyboard access keys.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Bounds" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.DefaultAction" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Description" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Help" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.KeyboardShortcut" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Parent" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Role" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.State" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Value" />
       </Docs>
     </Member>
     <Member MemberName="Navigate">
@@ -1142,6 +1199,15 @@
         <block subset="none" type="overrides">
           <para>All objects should support this property.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Bounds" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.DefaultAction" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Description" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Help" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.KeyboardShortcut" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Name" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Role" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.State" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Value" />
       </Docs>
     </Member>
     <Member MemberName="Role">
@@ -1181,6 +1247,15 @@
         <block subset="none" type="overrides">
           <para>All objects should support this property.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Bounds" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.DefaultAction" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Description" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Help" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.KeyboardShortcut" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Name" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Parent" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.State" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Value" />
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -1211,12 +1286,12 @@
   
 |Operation|Flag Combination|  
 |---------------|----------------------|  
-|To simulate a click|<xref:System.Windows.Forms.AccessibleSelection?displayProperty=nameWithType> `OR` <xref:System.Windows.Forms.AccessibleSelection?displayProperty=nameWithType> **Note:**  This combination will not select the desired control if called from within your own application. It will have the desired effect, however, if called from an external application.|  
-|To select a target item by simulating CTRL + click|<xref:System.Windows.Forms.AccessibleSelection?displayProperty=nameWithType> `OR` <xref:System.Windows.Forms.AccessibleSelection?displayProperty=nameWithType>|  
-|To cancel selection of a target item by simulating CTRL + click|<xref:System.Windows.Forms.AccessibleSelection?displayProperty=nameWithType> `OR` <xref:System.Windows.Forms.AccessibleSelection?displayProperty=nameWithType>|  
-|To simulate SHIFT + click|<xref:System.Windows.Forms.AccessibleSelection?displayProperty=nameWithType> `OR` <xref:System.Windows.Forms.AccessibleSelection?displayProperty=nameWithType>|  
-|To select a range of objects and put focus on the last object|Specify <xref:System.Windows.Forms.AccessibleSelection?displayProperty=nameWithType> on the starting object to set the selection anchor. Then call <xref:System.Windows.Forms.AccessibleObject.Select%2A> again and specify <xref:System.Windows.Forms.AccessibleSelection?displayProperty=nameWithType>`OR`<xref:System.Windows.Forms.AccessibleSelection?displayProperty=nameWithType> on the last object.|  
-|To deselect all objects|Specify <xref:System.Windows.Forms.AccessibleSelection?displayProperty=nameWithType> on any object. This flag deselects all selected objects except the one just selected. Then call <xref:System.Windows.Forms.AccessibleObject.Select%2A> again and specify <xref:System.Windows.Forms.AccessibleSelection?displayProperty=nameWithType> on the same object.|  
+|To simulate a click|<xref:System.Windows.Forms.AccessibleSelection.TakeFocus?displayProperty=nameWithType> `OR` <xref:System.Windows.Forms.AccessibleSelection.TakeSelection?displayProperty=nameWithType> **Note:**  This combination will not select the desired control if called from within your own application. It will have the desired effect, however, if called from an external application.|  
+|To select a target item by simulating CTRL + click|<xref:System.Windows.Forms.AccessibleSelection.TakeFocus?displayProperty=nameWithType> `OR` <xref:System.Windows.Forms.AccessibleSelection.AddSelection?displayProperty=nameWithType>|  
+|To cancel selection of a target item by simulating CTRL + click|<xref:System.Windows.Forms.AccessibleSelection.TakeFocus?displayProperty=nameWithType> `OR` <xref:System.Windows.Forms.AccessibleSelection.RemoveSelection?displayProperty=nameWithType>|  
+|To simulate SHIFT + click|<xref:System.Windows.Forms.AccessibleSelection.TakeFocus?displayProperty=nameWithType> `OR` <xref:System.Windows.Forms.AccessibleSelection.ExtendSelection?displayProperty=nameWithType>|  
+|To select a range of objects and put focus on the last object|Specify <xref:System.Windows.Forms.AccessibleSelection.TakeFocus?displayProperty=nameWithType> on the starting object to set the selection anchor. Then call <xref:System.Windows.Forms.AccessibleObject.Select%2A> again and specify <xref:System.Windows.Forms.AccessibleSelection.TakeFocus?displayProperty=nameWithType>`OR`<xref:System.Windows.Forms.AccessibleSelection.ExtendSelection?displayProperty=nameWithType> on the last object.|  
+|To deselect all objects|Specify <xref:System.Windows.Forms.AccessibleSelection.TakeSelection?displayProperty=nameWithType> on any object. This flag deselects all selected objects except the one just selected. Then call <xref:System.Windows.Forms.AccessibleObject.Select%2A> again and specify <xref:System.Windows.Forms.AccessibleSelection.RemoveSelection?displayProperty=nameWithType> on the same object.|  
   
    
   
@@ -1269,6 +1344,15 @@
         <block subset="none" type="overrides">
           <para>All objects should support this property.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Bounds" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.DefaultAction" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Description" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Help" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.KeyboardShortcut" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Name" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Parent" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Role" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Value" />
       </Docs>
     </Member>
     <Member MemberName="System.Reflection.IReflect.GetField">
@@ -1326,7 +1410,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Each field must have a unique name. The <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> flag specifies that nonpublic fields are included in the search. The <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> flag specifies that public fields are included in the search.  
+ Each field must have a unique name. The <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> flag specifies that nonpublic fields are included in the search. The <xref:System.Reflection.BindingFlags.Public?displayProperty=nameWithType> flag specifies that public fields are included in the search.  
   
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.AccessibleObject> instance is cast to an <xref:System.Reflection.IReflect> interface.  
   
@@ -1781,7 +1865,25 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.InteropServices.COMException">The value cannot be set or retrieved.</exception>
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Bounds" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.DefaultAction" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Description" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Help" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.KeyboardShortcut" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Name" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Parent" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Role" />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.State" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="UseStdAccessibleObjects">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Associates an object with an instance of an <see cref="T:System.Windows.Forms.AccessibleObject" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -119,11 +119,12 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic Label Example 2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Label Example 2/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic Label Example 2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Label Example 2/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic Label Example 2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Label Example 2/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic Label Example 2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Label Example 2/VB/sourcevb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.WebControls.Label.Text" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -152,8 +153,8 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic Label.Label Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Label.Label Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic Label.Label Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Label.Label Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic Label.Label Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Label.Label Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic Label.Label Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Label.Label Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -221,8 +222,8 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.Label.AddParsedSubObject%2A> method in a custom <xref:System.Web.UI.WebControls.Label> server control so that it always sets the text property to the parsed object's text property, if the parsed object is a <xref:System.Web.UI.WebControls.Literal>, and to an empty string otherwise.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomLabelAddParsedSubObject#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomLabelAddParsedSubObject/CS/custom_label_addparsedsubobjectcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomLabelAddParsedSubObject#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomLabelAddParsedSubObject/VB/custom_label_addparsedsubobjectvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomLabelAddParsedSubObject#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomLabelAddParsedSubObject/CS/custom_label_addparsedsubobjectcs.aspx#1)]
+ [!code-aspx-vb[CustomLabelAddParsedSubObject#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomLabelAddParsedSubObject/VB/custom_label_addparsedsubobjectvb.aspx#1)]  
 [!code-csharp[CustomLabelAddParsedSubObject#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomLabelAddParsedSubObject/CS/custom_label_addparsedsubobject.cs#2)]
 [!code-vb[CustomLabelAddParsedSubObject#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomLabelAddParsedSubObject/VB/custom_label_addparsedsubobject.vb#2)]  
   
@@ -271,6 +272,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.AccessKey" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.TabIndex" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -327,8 +330,8 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.Label.RenderContents%2A> method in a custom server control so that some text is appended to the <xref:System.Web.UI.WebControls.Label>.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomLabelRenderContents#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomLabelRenderContents/CS/custom_label_rendercontentscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomLabelRenderContents#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomLabelRenderContents/VB/custom_label_rendercontentsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomLabelRenderContents#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomLabelRenderContents/CS/custom_label_rendercontentscs.aspx#1)]
+ [!code-aspx-vb[CustomLabelRenderContents#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomLabelRenderContents/VB/custom_label_rendercontentsvb.aspx#1)]  
 [!code-csharp[CustomLabelRenderContents#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomLabelRenderContents/CS/custom_label_rendercontents.cs#2)]
 [!code-vb[CustomLabelRenderContents#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomLabelRenderContents/VB/custom_label_rendercontents.vb#2)]  
   
@@ -360,6 +363,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.RenderingCompatibility" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.DisabledCssClass" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute" />
       </Docs>
     </Member>
     <Member MemberName="TagKey">
@@ -442,8 +448,8 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic Label.Text Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Label.Text Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic Label.Text Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Label.Text Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic Label.Text Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Label.Text Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic Label.Text Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Label.Text Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>

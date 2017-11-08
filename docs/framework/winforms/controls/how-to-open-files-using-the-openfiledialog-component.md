@@ -10,12 +10,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "OpenFileDialog component, opening files"
-  - "OpenFile method"
-  - "OpenFile method, OpenFileDialog component"
-  - "files, opening with OpenFileDialog component"
+  - "OpenFileDialog component [Windows Forms], opening files"
+  - "OpenFile method [Windows Forms], OpenFileDialog component"
+  - "files [Windows Forms], opening with OpenFileDialog component"
 ms.assetid: 9d88367a-cc21-4ffd-be74-89fd63767d35
 caps.latest.revision: 21
 author: dotnet-bot

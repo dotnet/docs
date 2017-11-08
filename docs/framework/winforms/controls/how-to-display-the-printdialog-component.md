@@ -9,10 +9,8 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "Print dialog box, displaying"
+  - "Print dialog box [Windows Forms], displaying"
   - "PrintDialog component [Windows Forms], displaying"
   - "printing [Windows Forms], displaying print dialog box"
 ms.assetid: 745a8db7-0526-4b21-b09d-18e13ed32014

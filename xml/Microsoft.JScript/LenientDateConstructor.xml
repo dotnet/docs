@@ -14,6 +14,8 @@
     <summary>Stores objects that represent the static methods of the <see cref="T:Microsoft.JScript.DateConstructor" /> class. The <see cref="T:Microsoft.JScript.LenientDateConstructor" /> class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.DateObject" />
+    <altmember cref="T:Microsoft.JScript.DatePrototype" />
   </Docs>
   <Members>
     <Member MemberName="parse">
@@ -32,6 +34,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.DateConstructor.parse(System.String)" /> method of the <see cref="T:Microsoft.JScript.DateConstructor" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
+        <altmember cref="T:Microsoft.JScript.DatePrototype" />
       </Docs>
     </Member>
     <Member MemberName="UTC">
@@ -50,6 +54,8 @@
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.DateConstructor.UTC(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.DateConstructor" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.DateObject" />
+        <altmember cref="T:Microsoft.JScript.DatePrototype" />
       </Docs>
     </Member>
   </Members>

@@ -9,14 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "Windows Forms, globalization"
   - "localization [Windows Forms]"
   - "globalization [Windows Forms]"
   - "world-ready applications"
-  - "global applications, creating Windows Forms"
+  - "global applications [Windows Forms], creating Windows Forms"
 ms.assetid: 72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5
 caps.latest.revision: 12
 author: dotnet-bot

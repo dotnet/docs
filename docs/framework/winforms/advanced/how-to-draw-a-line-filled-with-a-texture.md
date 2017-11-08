@@ -10,11 +10,12 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "drawing, lines"
-  - "lines, texture"
-  - "drawing lines, texture"
+  - "drawing [Windows Forms], lines"
+  - "lines [Windows Forms], texture"
+  - "drawing lines [Windows Forms], texture"
 ms.assetid: dc9118cc-f3c2-42e5-8173-f46d41d18fd5
 caps.latest.revision: 12
 author: dotnet-bot

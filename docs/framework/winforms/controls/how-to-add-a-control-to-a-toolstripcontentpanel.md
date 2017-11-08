@@ -10,7 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "ToolStripContentPanel [Windows Forms], adding controls"
 ms.assetid: fa410960-bf1a-42fc-80e8-f2e27fb3dbb8

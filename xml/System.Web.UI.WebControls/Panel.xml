@@ -98,11 +98,15 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic Panel Example 2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Panel Example 2/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic Panel Example 2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Panel Example 2/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic Panel Example 2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Panel Example 2/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic Panel Example 2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Panel Example 2/VB/sourcevb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.WebControl" />
+    <altmember cref="P:System.Web.UI.WebControls.Panel.Direction" />
+    <altmember cref="P:System.Web.UI.WebControls.Panel.BackImageUrl" />
+    <altmember cref="P:System.Web.UI.WebControls.Panel.ScrollBars" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -126,8 +130,8 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic Panel.Panel Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Panel.Panel Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic Panel.Panel Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Panel.Panel Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic Panel.Panel Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Panel.Panel Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic Panel.Panel Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Panel.Panel Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -162,8 +166,8 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.Panel.AddAttributesToRender%2A> method in a custom server control so that the <xref:System.Web.UI.WebControls.Panel> text always displays as bold.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomPanelAddAttributesToRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomPanelAddAttributesToRender/CS/custom_panel_addattributestorendercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomPanelAddAttributesToRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomPanelAddAttributesToRender/VB/custom_panel_addattributestorendervb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomPanelAddAttributesToRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomPanelAddAttributesToRender/CS/custom_panel_addattributestorendercs.aspx#1)]
+ [!code-aspx-vb[CustomPanelAddAttributesToRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomPanelAddAttributesToRender/VB/custom_panel_addattributestorendervb.aspx#1)]  
   
  [!code-csharp[CustomPanelAddAttributesToRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomPanelAddAttributesToRender/CS/custom_panel_addattributestorender.cs#2)]
  [!code-vb[CustomPanelAddAttributesToRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomPanelAddAttributesToRender/VB/custom_panel_addattributestorender.vb#2)]  
@@ -218,8 +222,8 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic Panel.BackImageUrl Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Panel.BackImageUrl Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic Panel.BackImageUrl Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Panel.BackImageUrl Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic Panel.BackImageUrl Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Panel.BackImageUrl Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic Panel.BackImageUrl Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Panel.BackImageUrl Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -296,6 +300,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.Button.OnClick(System.EventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.IButtonControl.Click" />
       </Docs>
     </Member>
     <Member MemberName="Direction">
@@ -343,10 +349,11 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-vb[Panel.Direction#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Panel.Direction/VB/panel.directionvb.aspx#1)]  -->  
+ [!code-aspx-vb[Panel.Direction#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Panel.Direction/VB/panel.directionvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ContentDirection" />
       </Docs>
     </Member>
     <Member MemberName="GroupingText">
@@ -420,12 +427,13 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic Panel.HorizontalAlign Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Panel.HorizontalAlign Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic Panel.HorizontalAlign Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Panel.HorizontalAlign Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic Panel.HorizontalAlign Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Panel.HorizontalAlign Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic Panel.HorizontalAlign Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Panel.HorizontalAlign Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The horizontal alignment is not one of the <see cref="T:System.Web.UI.WebControls.HorizontalAlign" /> values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.HorizontalAlign" />
       </Docs>
     </Member>
     <Member MemberName="RenderBeginTag">
@@ -531,19 +539,20 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[Panel.Scrollbars#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Panel.Scrollbars/CS/panel.scrollbarscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Panel.Scrollbars#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Panel.Scrollbars/VB/panel.scrollbarsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[Panel.Scrollbars#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Panel.Scrollbars/CS/panel.scrollbarscs.aspx#1)]
+ [!code-aspx-vb[Panel.Scrollbars#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Panel.Scrollbars/VB/panel.scrollbarsvb.aspx#1)]  
   
  The following code example demonstrates how to programmatically set the <xref:System.Web.UI.WebControls.Panel.ScrollBars%2A> property. A <xref:System.Web.UI.WebControls.ListBox> control is populated with the <xref:System.Web.UI.WebControls.ScrollBars> enumeration values. The scroll bars displayed in the panel change, based on the value the user selects from the list box.  
   
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[Panel.Scrollbars2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Panel.Scrollbars2/CS/panel.scrollbars2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Panel.Scrollbars2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Panel.Scrollbars2/VB/panel.scrollbars2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[Panel.Scrollbars2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Panel.Scrollbars2/CS/panel.scrollbars2cs.aspx#1)]
+ [!code-aspx-vb[Panel.Scrollbars2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Panel.Scrollbars2/VB/panel.scrollbars2vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ScrollBars" />
       </Docs>
     </Member>
     <Member MemberName="SupportsDisabledAttribute">
@@ -570,6 +579,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.RenderingCompatibility" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.DisabledCssClass" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Wrap">
@@ -607,8 +619,8 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic Panel.Wrap Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Panel.Wrap Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic Panel.Wrap Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Panel.Wrap Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic Panel.Wrap Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Panel.Wrap Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic Panel.Wrap Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Panel.Wrap Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>

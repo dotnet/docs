@@ -1,7 +1,7 @@
 ---
 title: "What&#39;s Obsolete in the .NET Framework Class Library"
 ms.custom: "updateeachrelease"
-ms.date: "03/30/2017"
+ms.date: "10/17/2017"
 ms.prod: ".net-framework"
 ms.technology: 
   - "dotnet-clr"
@@ -57,7 +57,7 @@ The .NET Framework changes over time. Each new version adds new types and type m
   
 |.NET Framework version|`version` string|
 |-|-|  
-|4.7|v4.0|  
+|4.7 (including 4.7.1)|v4.0|  
 |4.6 (including 4.6.1 and 4.6.2)|v4.0|  
 |4.5 (including 4.5.1 and 4.5.2)|v4.0|  
 |4|v4.0|  

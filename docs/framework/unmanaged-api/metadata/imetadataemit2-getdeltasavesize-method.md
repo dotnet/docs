@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataEmit2::GetDeltaSaveSize"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataEmit2::GetDeltaSaveSize method [.NET Framework metadata]"
   - "GetDeltaSaveSize method [.NET Framework metadata]"

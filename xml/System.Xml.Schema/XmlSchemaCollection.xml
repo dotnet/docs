@@ -206,6 +206,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.Schema.XmlSchema" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -453,6 +454,9 @@ schemaColl.Add("urn:author", "names.xsd");
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XmlException">The schema is not a valid schema.</exception>
+        <altmember cref="P:System.Xml.XmlResolver.Credentials" />
+        <altmember cref="T:System.Net.NetworkCredential" />
+        <altmember cref="T:System.Net.CredentialCache" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -504,6 +508,9 @@ schemaColl.Add("urn:author", "names.xsd");
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XmlException">The schema is not a valid schema.</exception>
+        <altmember cref="P:System.Xml.XmlUrlResolver.Credentials" />
+        <altmember cref="T:System.Net.NetworkCredential" />
+        <altmember cref="T:System.Net.CredentialCache" />
       </Docs>
     </Member>
     <MemberGroup MemberName="Contains">
@@ -738,6 +745,7 @@ schemaColl.Add("urn:author", "names.xsd");
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.Schema.XmlSchemaCollectionEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -823,6 +831,7 @@ schemaColl.Add("urn:author", "names.xsd");
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlNameTable" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">

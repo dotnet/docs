@@ -10,11 +10,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "TextBox control [Windows Forms], selecting text programmatically"
-  - "text boxes, selecting text programmatically"
-  - "text, selecting in text boxes programmatically"
+  - "text boxes [Windows Forms], selecting text programmatically"
+  - "text [Windows Forms], selecting in text boxes programmatically"
 ms.assetid: 8c591546-6a01-45c7-8e03-f78431f903b1
 caps.latest.revision: 24
 author: dotnet-bot

@@ -535,6 +535,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="version" /> is not of type <see cref="T:System.Version" />.</exception>
+        <altmember cref="M:System.Version.CompareTo(System.Version)" />
+        <altmember cref="Overload:System.Version.Equals" />
       </Docs>
     </Member>
     <Member MemberName="CompareTo">
@@ -656,6 +658,7 @@
         <returns>
           <see langword="true" /> if the current <see cref="T:System.Version" /> object and <paramref name="obj" /> are both <see cref="T:System.Version" /> objects, and every component of the current <see cref="T:System.Version" /> object matches the corresponding component of <paramref name="obj" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Version.CompareTo(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -699,6 +702,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Version.Equals(System.Object)" />
+        <altmember cref="Overload:System.Version.CompareTo" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -829,6 +834,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Version.MinorRevision" />
       </Docs>
     </Member>
     <Member MemberName="Minor">
@@ -923,6 +929,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Version.MajorRevision" />
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -963,6 +970,8 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Version.Equals%28System.Object%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <altmember cref="M:System.Version.Equals(System.Object)" />
+        <altmember cref="M:System.Version.CompareTo(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
@@ -1003,6 +1012,8 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Version.CompareTo%28System.Object%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <altmember cref="M:System.Version.Equals(System.Object)" />
+        <altmember cref="M:System.Version.CompareTo(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
@@ -1043,6 +1054,8 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Version.CompareTo%28System.Object%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <altmember cref="M:System.Version.Equals(System.Object)" />
+        <altmember cref="M:System.Version.CompareTo(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -1083,6 +1096,8 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Version.Equals%28System.Object%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <altmember cref="M:System.Version.Equals(System.Object)" />
+        <altmember cref="M:System.Version.CompareTo(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
@@ -1125,6 +1140,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="v1" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Version.Equals(System.Object)" />
+        <altmember cref="M:System.Version.CompareTo(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
@@ -1167,6 +1184,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="v1" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Version.Equals(System.Object)" />
+        <altmember cref="M:System.Version.CompareTo(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -1236,6 +1255,8 @@ major.minor[.build[.revision]]
         <exception cref="T:System.ArgumentOutOfRangeException">At least one component in <paramref name="input" /> is less than zero.</exception>
         <exception cref="T:System.FormatException">At least one component in <paramref name="input" /> is not an integer.</exception>
         <exception cref="T:System.OverflowException">At least one component in <paramref name="input" /> represents a number that is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
+        <altmember cref="Overload:System.Version.ToString" />
+        <altmember cref="M:System.Version.TryParse(System.String,System.Version@)" />
       </Docs>
     </Member>
     <Member MemberName="Revision">
@@ -1475,7 +1496,55 @@ major.minor[.build[.revision]]
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Version.Parse(System.String)" />
+        <altmember cref="Overload:System.Version.ToString" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="CompareTo">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares the current <see cref="T:System.Version" /> object to a specified object or <see cref="T:System.Version" /> and returns an indication of their relative values.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the value of the current <see cref="T:System.Version" /> object to its equivalent <see cref="T:System.String" /> representation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Version" /> class with the specified major, minor, build, and revision numbers.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value indicating whether two <see cref="T:System.Version" /> object represent the same value.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

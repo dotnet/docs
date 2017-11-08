@@ -22,11 +22,25 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.GridLines> enumeration to indicate that the gridlines in a <xref:System.Web.UI.WebControls.GridView> control should be hidden.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewGridLines#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewGridLines/CS/gridviewgridlinescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewGridLines#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewGridLines/VB/gridviewgridlinesvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewGridLines#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewGridLines/CS/gridviewgridlinescs.aspx#1)]
+ [!code-aspx-vb[GridViewGridLines#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewGridLines/VB/gridviewgridlinesvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.BaseDataList" />
+    <altmember cref="P:System.Web.UI.WebControls.BaseDataList.GridLines" />
+    <altmember cref="T:System.Web.UI.WebControls.DataList" />
+    <altmember cref="P:System.Web.UI.WebControls.DataList.GridLines" />
+    <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsView.GridLines" />
+    <altmember cref="T:System.Web.UI.WebControls.FormView" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.GridLines" />
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="P:System.Web.UI.WebControls.GridView.GridLines" />
+    <altmember cref="T:System.Web.UI.WebControls.Table" />
+    <altmember cref="P:System.Web.UI.WebControls.Table.GridLines" />
+    <altmember cref="T:System.Web.UI.WebControls.TableStyle" />
+    <altmember cref="P:System.Web.UI.WebControls.TableStyle.GridLines" />
   </Docs>
   <Members>
     <Member MemberName="Both">

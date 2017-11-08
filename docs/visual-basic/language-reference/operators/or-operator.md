@@ -1,48 +1,29 @@
 ---
 title: "Or Operator (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Or"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
-  - "Or operator"
+  - "Or operator [Visual Basic]"
   - "operators [Visual Basic], bitwise"
-  - "inclusive Or operator"
-  - "bitwise operators, OR operator"
-  - "Or keyword"
+  - "inclusive Or operator [Visual Basic]"
+  - "bitwise operators [Visual Basic], OR operator"
+  - "Or keyword [Visual Basic]"
   - "operators [Visual Basic], inclusive or"
   - "operators [Visual Basic], disjunction"
-  - "bitwise comparison"
+  - "bitwise comparison [Visual Basic]"
   - "logical disjunction"
-  - "disjunction operator"
+  - "disjunction operator [Visual Basic]"
 ms.assetid: 41ed6905-bf3d-468a-9e3b-03c10d461891
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Or Operator (Visual Basic)
 Performs a logical disjunction on two `Boolean` expressions, or a bitwise disjunction on two numeric expressions.  

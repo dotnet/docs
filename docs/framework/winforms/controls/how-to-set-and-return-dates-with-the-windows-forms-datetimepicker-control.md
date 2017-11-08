@@ -10,9 +10,11 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "dates, setting in DateTimePicker"
+  - "dates [Windows Forms], setting in DateTimePicker"
   - "DateTimePicker control [Windows Forms], setting and returning dates"
   - "examples [Windows Forms], DateTimePicker control"
 ms.assetid: a8a48d68-e4b5-426e-9764-51230fc9acd2

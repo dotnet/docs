@@ -10,7 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "Toolbox [Windows Forms], adding bitmaps for custom controls"
   - "custom controls [Windows Forms], Toolbox bitmaps"

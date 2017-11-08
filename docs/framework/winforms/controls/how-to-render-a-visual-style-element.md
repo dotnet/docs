@@ -10,11 +10,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "visual themes, applying to elements of Windows Forms applications"
-  - "professional appearance, applying to elements of Windows Forms applications"
-  - "visual styles, rendering Windows Forms controls"
+  - "visual themes [Windows Forms], applying to elements of Windows Forms applications"
+  - "professional appearance [Windows Forms], applying to elements of Windows Forms applications"
+  - "visual styles [Windows Forms], rendering Windows Forms controls"
 ms.assetid: a207781b-1baa-4ce9-b788-1e951bd4b5df
 caps.latest.revision: 9
 author: dotnet-bot

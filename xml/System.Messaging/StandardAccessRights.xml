@@ -28,6 +28,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Messaging.MessageQueueAccessRights" />
+    <altmember cref="T:System.Messaging.GenericAccessRights" />
+    <altmember cref="M:System.Messaging.MessageQueue.SetPermissions(System.String,System.Messaging.MessageQueueAccessRights)" />
   </Docs>
   <Members>
     <Member MemberName="All">

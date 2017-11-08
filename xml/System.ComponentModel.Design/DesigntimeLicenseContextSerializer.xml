@@ -32,6 +32,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.Design.DesigntimeLicenseContext" />
+    <altmember cref="T:System.ComponentModel.LicenseContext" />
   </Docs>
   <Members>
     <Member MemberName="Serialize">
@@ -66,6 +68,8 @@
         <param name="context">A <see cref="T:System.ComponentModel.Design.DesigntimeLicenseContext" /> indicating the license context.</param>
         <summary>Serializes the licenses within the specified design-time license context using the specified key and output stream.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.Design.DesigntimeLicenseContext" />
+        <altmember cref="T:System.ComponentModel.LicenseContext" />
       </Docs>
     </Member>
   </Members>

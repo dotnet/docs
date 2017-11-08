@@ -139,6 +139,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Insert(System.Int32,System.Windows.Forms.ColumnHeader)" />
+        <altmember cref="M:System.Windows.Forms.ListView.ColumnHeaderCollection.AddRange(System.Windows.Forms.ColumnHeader[])" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -263,6 +265,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Insert(System.Int32,System.Windows.Forms.ColumnHeader)" />
+        <altmember cref="M:System.Windows.Forms.ListView.ColumnHeaderCollection.AddRange(System.Windows.Forms.ColumnHeader[])" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -404,6 +408,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Add(System.String,System.Int32,System.Windows.Forms.HorizontalAlignment)" />
+        <altmember cref="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Insert(System.Int32,System.Windows.Forms.ColumnHeader)" />
+        <altmember cref="T:System.Windows.Forms.ColumnHeader" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -429,6 +436,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Remove(System.Windows.Forms.ColumnHeader)" />
+        <altmember cref="M:System.Windows.Forms.ListView.ColumnHeaderCollection.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -459,6 +468,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ListView.ColumnHeaderCollection.IndexOf(System.Windows.Forms.ColumnHeader)" />
       </Docs>
     </Member>
     <Member MemberName="ContainsKey">
@@ -521,6 +531,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ListView.View" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -569,6 +580,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Contains(System.Windows.Forms.ColumnHeader)" />
       </Docs>
     </Member>
     <Member MemberName="IndexOfKey">
@@ -668,6 +680,8 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than 0 or greater than or equal to the value of the <see cref="P:System.Windows.Forms.ListView.ColumnHeaderCollection.Count" /> property of the <see cref="T:System.Windows.Forms.ListView.ColumnHeaderCollection" />.</exception>
+        <altmember cref="M:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.Add(System.Windows.Forms.ListViewItem.ListViewSubItem)" />
+        <altmember cref="M:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.AddRange(System.Windows.Forms.ListViewItem.ListViewSubItem[])" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -770,6 +784,8 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than 0 or greater than or equal to the value of the <see cref="P:System.Windows.Forms.ListView.ColumnHeaderCollection.Count" /> property of the <see cref="T:System.Windows.Forms.ListView.ColumnHeaderCollection" />.</exception>
+        <altmember cref="M:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.Add(System.Windows.Forms.ListViewItem.ListViewSubItem)" />
+        <altmember cref="M:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.AddRange(System.Windows.Forms.ListViewItem.ListViewSubItem[])" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -943,6 +959,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than 0 or greater than or equal to the value of the <see cref="P:System.Windows.Forms.ListView.ColumnHeaderCollection.Count" /> property of the <see cref="T:System.Windows.Forms.ListView.ColumnHeaderCollection" />.</exception>
+        <altmember cref="M:System.Windows.Forms.ListView.ColumnHeaderCollection.IndexOf(System.Windows.Forms.ColumnHeader)" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -1000,6 +1017,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ListView.ColumnHeaderCollection.RemoveAt(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Clear" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -1030,6 +1049,8 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than 0 or greater than or equal to the value of the <see cref="P:System.Windows.Forms.ListView.ColumnHeaderCollection.Count" /> property of the <see cref="T:System.Windows.Forms.ListView.ColumnHeaderCollection" />.</exception>
+        <altmember cref="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Remove(System.Windows.Forms.ColumnHeader)" />
+        <altmember cref="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Clear" />
       </Docs>
     </Member>
     <Member MemberName="RemoveByKey">
@@ -1280,5 +1301,32 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a column header from the collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a column header to the collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Insert">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Inserts a column header into the collection at the specified index.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

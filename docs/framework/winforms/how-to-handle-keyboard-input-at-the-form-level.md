@@ -10,11 +10,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "keyboard input, at form level"
+  - "keyboard input [Windows Forms], at form level"
   - "Windows Forms, handling keyboard input"
-  - "keyboards, form-level input"
+  - "keyboards [Windows Forms], form-level input"
 ms.assetid: d7f8b390-dc91-42d2-ae0f-2ffa388127ad
 caps.latest.revision: 10
 author: dotnet-bot

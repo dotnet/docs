@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "ScrollBar control"
-  - "customizing thumb size"
-  - "thumb size"
+  - "ScrollBar control [WPF]"
+  - "customizing thumb size [WPF]"
+  - "thumb size [WPF]"
 ms.assetid: fa32b866-5ca1-4e73-85e7-2ac64b80d194
 caps.latest.revision: 5
 author: dotnet-bot

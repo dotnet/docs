@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "simple binding, creating"
-  - "data binding, creating simple bindings"
-  - "binding data, creating"
+  - "simple binding [WPF], creating"
+  - "data binding [WPF], creating simple bindings"
+  - "binding data [WPF], creating"
 ms.assetid: 69b80f72-6259-44cb-8294-5bdcebca1e08
 caps.latest.revision: 7
 author: dotnet-bot

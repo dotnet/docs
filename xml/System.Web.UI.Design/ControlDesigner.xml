@@ -96,11 +96,17 @@
   
  [!code-csharp[ControlDesignerSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlDesignerSample/cs/TextControlDesigner.cs#1)]
  [!code-vb[ControlDesignerSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlDesignerSample/vb/TextControlDesigner.vb#1)]  
-<!-- TODO: review snippet reference [!code-csharp[ControlDesignerSample#8](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlDesignerSample/cs/TextControlDesigner.aspx#8)]  -->
-<!-- TODO: review snippet reference [!code-vb[ControlDesignerSample#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlDesignerSample/vb/TextControlDesigner.aspx#8)]  -->  
+[!code-aspx-csharp[ControlDesignerSample#8](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlDesignerSample/cs/TextControlDesigner.aspx#8)]
+[!code-aspx-vb[ControlDesignerSample#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlDesignerSample/vb/TextControlDesigner.aspx#8)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.Design.TemplateGroup" />
+    <altmember cref="T:System.Web.UI.Design.DesignerAutoFormat" />
+    <altmember cref="T:System.ComponentModel.Design.DesignerActionList" />
+    <altmember cref="T:System.Web.UI.Design.DesignerRegion" />
+    <altmember cref="T:System.Web.UI.Design.ContainerControlDesigner" />
+    <altmember cref="T:System.Web.UI.Design.WebControls.CompositeControlDesigner" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -147,6 +153,7 @@
         <block subset="none" type="overrides">
           <para>To add an action list menu to a custom control in design view, your custom control designer must override the <see cref="P:System.Web.UI.Design.ControlDesigner.ActionLists" /> property to return a custom control class that is derived from the <see cref="T:System.ComponentModel.Design.DesignerActionList" /> class.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.Design.DesignerActionListCollection" />
       </Docs>
     </Member>
     <Member MemberName="AllowResize">
@@ -217,6 +224,8 @@
         <block subset="none" type="overrides">
           <para>Controls that automatically expose AutoFormats get a task list and context commands for their formats. When you are using automatic formats, use the <see cref="P:System.Web.UI.Design.ControlDesigner.ViewControl" /> property to set the properties in your callback function.</para>
         </block>
+        <altmember cref="T:System.Web.UI.Design.DesignerAutoFormat" />
+        <altmember cref="T:System.Web.UI.Design.DesignerAutoFormatCollection" />
       </Docs>
     </Member>
     <Member MemberName="CreateErrorDesignTimeHtml">
@@ -257,6 +266,7 @@
         <block subset="none" type="overrides">
           <para>The <see cref="M:System.Web.UI.Design.ControlDesigner.CreateErrorDesignTimeHtml(System.String)" /> overload is functionally equivalent to calling the <see cref="M:System.Web.UI.Design.ControlDesigner.CreateErrorDesignTimeHtml(System.String,System.Exception)" /> method with e set to <see langword="null" />.</para>
         </block>
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.GetErrorDesignTimeHtml(System.Exception)" />
       </Docs>
     </Member>
     <Member MemberName="CreateErrorDesignTimeHtml">
@@ -299,6 +309,7 @@
         <block subset="none" type="overrides">
           <para>The <see cref="M:System.Web.UI.Design.ControlDesigner.CreateErrorDesignTimeHtml(System.String,System.Exception)" /> method should be called from the <see cref="Overload:System.Web.UI.Design.ControlDesigner.GetViewRendering" /> or <see cref="M:System.Web.UI.Design.ControlDesigner.GetErrorDesignTimeHtml(System.Exception)" /> method when exceptions occur.</para>
         </block>
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.GetErrorDesignTimeHtml(System.Exception)" />
       </Docs>
     </Member>
     <Member MemberName="CreatePlaceHolderDesignTimeHtml">
@@ -396,6 +407,7 @@
         <value>
           <see langword="true" />, if the container for the control supports data binding; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.Design.EditableDesignerRegion.SupportsDataBinding" />
       </Docs>
     </Member>
     <Member MemberName="DesignerState">
@@ -490,6 +502,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.ViewFlags" />
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.SetViewFlags(System.Web.UI.Design.ViewFlags,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetBounds">
@@ -509,6 +523,8 @@
         <summary>Retrieves the coordinates of the rectangle representing the boundaries for the control as displayed on the design surface.</summary>
         <returns>A <see cref="T:System.Drawing.Rectangle" /> object representing the boundaries for the control on the design surface relative to the control, not the document.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.Design.IControlDesignerView.GetBounds(System.Web.UI.Design.DesignerRegion)" />
+        <altmember cref="M:System.Web.UI.Design.DesignerRegion.GetBounds" />
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeHtml">
@@ -541,6 +557,9 @@
         <block subset="none" type="overrides">
           <para>If you are creating a custom container control, make sure that you render the control and all child controls at design time, regardless of whether the <see cref="P:System.Web.UI.Control.Visible" /> property is set to <see langword="true" /> or <see langword="false" />.</para>
         </block>
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.GetEmptyDesignTimeHtml" />
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.GetErrorDesignTimeHtml(System.Exception)" />
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.GetDesignTimeHtml(System.Web.UI.Design.DesignerRegionCollection)" />
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeHtml">
@@ -580,6 +599,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.WebControls.GridViewDesigner" />
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeResourceProviderFactory">
@@ -611,6 +631,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.DesignTimeResourceProviderFactory" />
+        <altmember cref="T:System.Web.Compilation.ResourceProviderFactory" />
+        <altmember cref="T:System.Web.Compilation.IResourceProvider" />
+        <altmember cref="T:System.IServiceProvider" />
       </Docs>
     </Member>
     <Member MemberName="GetEditableDesignerRegionContent">
@@ -650,6 +674,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.SetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetEmptyDesignTimeHtml">
@@ -684,6 +709,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.GetErrorDesignTimeHtml(System.Exception)" />
+        <altmember cref="Overload:System.Web.UI.Design.ControlDesigner.GetDesignTimeHtml" />
       </Docs>
     </Member>
     <Member MemberName="GetErrorDesignTimeHtml">
@@ -724,6 +751,8 @@
         <block subset="none" type="overrides">
           <para>The typical design pattern is to try to get HTML markup through the associated control, and then if an error is encountered, call the <see cref="M:System.Web.UI.Design.ControlDesigner.GetErrorDesignTimeHtml(System.Exception)" /> method. If no markup is returned by the control, call the <see cref="M:System.Web.UI.Design.ControlDesigner.GetEmptyDesignTimeHtml" /> method, which if it is not overridden to provide specific markup, calls the <see cref="M:System.Web.UI.Design.ControlDesigner.CreatePlaceHolderDesignTimeHtml" /> method, which should contain information about the type and ID of the control.</para>
         </block>
+        <altmember cref="Overload:System.Web.UI.Design.ControlDesigner.GetDesignTimeHtml" />
+        <altmember cref="Overload:System.Web.UI.Design.ControlDesigner.CreateErrorDesignTimeHtml" />
       </Docs>
     </Member>
     <Member MemberName="GetPersistenceContent">
@@ -746,6 +775,7 @@
         <block subset="none" type="overrides">
           <para>Override the <see cref="M:System.Web.UI.Design.ControlDesigner.GetPersistenceContent" /> method to provide custom handling of the inner content persistence for the design host.</para>
         </block>
+        <altmember cref="T:System.Web.UI.Design.ControlPersister" />
       </Docs>
     </Member>
     <Member MemberName="GetPersistInnerHtml">
@@ -779,6 +809,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.Tag" />
       </Docs>
     </Member>
     <Member MemberName="GetViewRendering">
@@ -798,6 +829,7 @@
         <summary>Retrieves an object that contains the design-time markup for the content and regions of the associated control.</summary>
         <returns>A <see cref="T:System.Web.UI.Design.ViewRendering" /> object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.ViewRendering" />
       </Docs>
     </Member>
     <Member MemberName="GetViewRendering">
@@ -820,6 +852,7 @@
         <summary>Retrieves an object that contains the design-time markup for the content and regions of the specified control.</summary>
         <returns>A <see cref="T:System.Web.UI.Design.ViewRendering" /> object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.ViewRendering" />
       </Docs>
     </Member>
     <Member MemberName="GetViewRendering">
@@ -842,6 +875,7 @@
         <summary>Retrieves an object that contains the design-time markup for the content and regions of the associated control for the specified control designer.</summary>
         <returns>A <see cref="T:System.Web.UI.Design.ViewRendering" /> object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.ViewRendering" />
       </Docs>
     </Member>
     <Member MemberName="HidePropertiesInTemplateMode">
@@ -893,6 +927,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.ID" />
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -935,6 +970,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
       </Docs>
     </Member>
     <Member MemberName="InTemplateMode">
@@ -963,6 +999,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.TemplatedControlDesigner" />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.TemplateGroups" />
+        <altmember cref="M:System.Web.UI.Design.TemplatedControlDesigner.OnTemplateModeChanged" />
       </Docs>
     </Member>
     <MemberGroup MemberName="Invalidate">
@@ -980,6 +1019,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.OnPaint(System.Windows.Forms.PaintEventArgs)" />
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.UpdateDesignTimeHtml" />
       </Docs>
     </MemberGroup>
     <Member MemberName="Invalidate">
@@ -1087,6 +1128,8 @@
  -or-  
   
  <paramref name="callback" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.ComponentModel.Design.CheckoutException" />
+        <altmember cref="T:System.Web.UI.Design.TransactedChangeCallback" />
       </Docs>
     </Member>
     <Member MemberName="InvokeTransactedChange">
@@ -1136,6 +1179,9 @@
  -or-  
   
  <paramref name="callback" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.ComponentModel.EventDescriptor" />
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+        <altmember cref="T:System.Web.UI.Design.TransactedChangeCallback" />
       </Docs>
     </Member>
     <Member MemberName="InvokeTransactedChange">
@@ -1191,6 +1237,10 @@
  -or-  
   
  <paramref name="serviceProvider" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.IServiceProvider" />
+        <altmember cref="T:System.ComponentModel.EventDescriptor" />
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+        <altmember cref="T:System.Web.UI.Design.TransactedChangeCallback" />
       </Docs>
     </Member>
     <Member MemberName="IsDirty">
@@ -1224,6 +1274,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Design.IControlDesignerTag.IsDirty" />
+        <altmember cref="M:System.Web.UI.Design.IControlDesignerTag.SetDirty(System.Boolean)" />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.Tag" />
       </Docs>
     </Member>
     <Member MemberName="IsPropertyBound">
@@ -1261,6 +1314,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.DataBindingCollection.Contains(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Localize">
@@ -1319,6 +1373,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.DesignerAutoFormatStyle" />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.AutoFormats" />
+        <altmember cref="T:System.Web.UI.Design.DesignerAutoFormat" />
       </Docs>
     </Member>
     <Member MemberName="OnBindingsCollectionChanged">
@@ -1355,6 +1412,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.DataBindingCollection.Changed" />
       </Docs>
     </Member>
     <Member MemberName="OnClick">
@@ -1408,6 +1466,9 @@
         <block subset="none" type="overrides">
           <para>Override the <see cref="M:System.Web.UI.Design.ControlDesigner.OnClick(System.Web.UI.Design.DesignerRegionMouseEventArgs)" /> method in a class deriving from the <see cref="T:System.Web.UI.Design.ControlDesigner" /> class to handle design-time click events on the control. If <paramref name="e" /> is not null, the clicked region, if any, is specified in the <see cref="P:System.Web.UI.Design.DesignerRegionMouseEventArgs.Region" /> property.</para>
         </block>
+        <altmember cref="T:System.Web.UI.Design.ViewEventHandler" />
+        <altmember cref="T:System.Web.UI.Design.DesignerRegionMouseEventArgs" />
+        <altmember cref="T:System.Web.UI.Design.DesignerRegion" />
       </Docs>
     </Member>
     <Member MemberName="OnComponentChanged">
@@ -1443,6 +1504,7 @@
   
  When overriding the <see cref="M:System.Web.UI.Design.ControlDesigner.OnComponentChanged(System.Object,System.ComponentModel.Design.ComponentChangedEventArgs)" /> method in a derived class, make sure that you call the <see cref="M:System.Web.UI.Design.ControlDesigner.OnComponentChanged(System.Object,System.ComponentModel.Design.ComponentChangedEventArgs)" /> method for the base class so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.ComponentModel.Design.IComponentChangeService.ComponentChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnComponentChanging">
@@ -1473,6 +1535,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.Design.ControlDesigner.InvokeTransactedChange" />
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.Localize(System.Web.UI.Design.IDesignTimeResourceWriter)" />
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.OnComponentChanging(System.Object,System.ComponentModel.Design.ComponentChangingEventArgs)" />
+        <altmember cref="E:System.ComponentModel.Design.IComponentChangeService.ComponentChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnControlResize">
@@ -1507,6 +1573,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.OnComponentChanged(System.Object,System.ComponentModel.Design.ComponentChangedEventArgs)" />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.Tag" />
       </Docs>
     </Member>
     <Member MemberName="OnPaint">
@@ -1539,7 +1607,7 @@
   
 -   The user enters or exits template editing mode for the control.  
   
- The <xref:System.Web.UI.Design.ControlDesigner> class supplies a default delegate to handle the <xref:System.Web.UI.Design.IControlDesignerView.ViewEvent?displayProperty=nameWithType> event. Classes deriving from <xref:System.Web.UI.Design.ControlDesigner> should set the <xref:System.Web.UI.Design.ViewFlags?displayProperty=nameWithType> value and override the <xref:System.Web.UI.Design.ControlDesigner.OnPaint%2A> method to process events that are raised when the design host draws the control on the design surface.  
+ The <xref:System.Web.UI.Design.ControlDesigner> class supplies a default delegate to handle the <xref:System.Web.UI.Design.IControlDesignerView.ViewEvent?displayProperty=nameWithType> event. Classes deriving from <xref:System.Web.UI.Design.ControlDesigner> should set the <xref:System.Web.UI.Design.ViewFlags.CustomPaint?displayProperty=nameWithType> value and override the <xref:System.Web.UI.Design.ControlDesigner.OnPaint%2A> method to process events that are raised when the design host draws the control on the design surface.  
   
  The <xref:System.Web.UI.Design.ControlDesigner.OnPaint%2A> method allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1550,6 +1618,10 @@
         <block subset="none" type="overrides">
           <para>Override the <see cref="M:System.Web.UI.Design.ControlDesigner.OnPaint(System.Windows.Forms.PaintEventArgs)" /> method in a class deriving from the <see cref="T:System.Web.UI.Design.ControlDesigner" /> class to handle paint events for a control in the design surface. However, the event occurs only if the <see cref="F:System.Web.UI.Design.ViewFlags.CustomPaint" /> value has been set with the <see cref="M:System.Web.UI.Design.ControlDesigner.SetViewFlags(System.Web.UI.Design.ViewFlags,System.Boolean)" /> method.</para>
         </block>
+        <altmember cref="F:System.Web.UI.Design.ViewFlags.CustomPaint" />
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.SetViewFlags(System.Web.UI.Design.ViewFlags,System.Boolean)" />
+        <altmember cref="T:System.Web.UI.Design.ViewEventHandler" />
+        <altmember cref="T:System.Web.UI.Design.IControlDesignerView" />
       </Docs>
     </Member>
     <Member MemberName="PreFilterProperties">
@@ -1613,6 +1685,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.OnComponentChanged(System.Object,System.ComponentModel.Design.ComponentChangedEventArgs)" />
+        <altmember cref="M:System.ComponentModel.Design.ComponentDesigner.RaiseComponentChanged(System.ComponentModel.MemberDescriptor,System.Object,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ReadOnly">
@@ -1647,6 +1721,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
+        <altmember cref="T:System.Web.UI.Design.ContainerControlDesigner" />
       </Docs>
     </Member>
     <Member MemberName="RegisterClone">
@@ -1708,6 +1784,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.WebFormsRootDesigner" />
       </Docs>
     </Member>
     <Member MemberName="SetEditableDesignerRegionContent">
@@ -1746,6 +1823,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.GetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion)" />
+        <altmember cref="T:System.Web.UI.Design.EditableDesignerRegion" />
       </Docs>
     </Member>
     <Member MemberName="SetRegionContent">
@@ -1778,6 +1857,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Design.IControlDesignerView.SupportsRegions" />
+        <altmember cref="Overload:System.Web.UI.Design.ControlDesigner.GetViewRendering" />
       </Docs>
     </Member>
     <Member MemberName="SetViewFlags">
@@ -1817,6 +1898,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.ViewControl" />
+        <altmember cref="T:System.Web.UI.Design.ViewFlags" />
       </Docs>
     </Member>
     <Member MemberName="Tag">
@@ -1842,6 +1925,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.IControlDesignerTag" />
       </Docs>
     </Member>
     <Member MemberName="TemplateGroups">
@@ -1869,13 +1953,16 @@
   
  [!code-csharp[DesignerTemplateGroupSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DesignerTemplateGroupSample/CS/TemplateGroupsSample.cs#1)]
  [!code-vb[DesignerTemplateGroupSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DesignerTemplateGroupSample/VB/TemplateGroupsSample.vb#1)]  
-<!-- TODO: review snippet reference [!code-vb[DesignerTemplateGroupSample#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DesignerTemplateGroupSample/VB/TemplateGroupsSample.aspx#2)]  -->  
+[!code-aspx-vb[DesignerTemplateGroupSample#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DesignerTemplateGroupSample/VB/TemplateGroupsSample.aspx#2)]  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>You can modify the <see cref="P:System.Web.UI.Design.ControlDesigner.TemplateGroups" /> collection directly, or you can leave it unchanged. If you are overriding the <see cref="P:System.Web.UI.Design.ControlDesigner.TemplateGroups" /> property, call the base implementation before you add template groups to the collection.</para>
         </block>
+        <altmember cref="T:System.Web.UI.Design.TemplateGroup" />
+        <altmember cref="T:System.Web.UI.Design.TemplateDefinition" />
+        <altmember cref="T:System.Web.UI.Design.TemplatedControlDesigner" />
       </Docs>
     </Member>
     <Member MemberName="UpdateDesignTimeHtml">
@@ -1914,6 +2001,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.ComponentModel.Design.IComponentChangeService.ComponentChanged" />
       </Docs>
     </Member>
     <Member MemberName="UsePreviewControl">
@@ -1947,6 +2035,10 @@
         <block subset="none" type="overrides">
           <para>Custom designers that are derived from the <see cref="T:System.Web.UI.Design.ControlDesigner" /> class can override the <see cref="P:System.Web.UI.Design.ControlDesigner.UsePreviewControl" /> property and ignore the <see cref="T:System.Web.UI.Design.SupportsPreviewControlAttribute" /> object. Generally, to indicate that the <see cref="P:System.Web.UI.Design.ControlDesigner.ViewControl" /> property always returns a temporary copy of the control, override the <see cref="P:System.Web.UI.Design.ControlDesigner.UsePreviewControl" /> property to always return <see langword="true" />. To indicate that the <see cref="P:System.Web.UI.Design.ControlDesigner.ViewControl" /> property always returns an instance of the control, override the <see cref="P:System.Web.UI.Design.ControlDesigner.UsePreviewControl" /> property to always return <see langword="false" />. For example, the <see cref="T:System.Web.UI.Design.WebControls.PreviewControlDesigner" /> class derives from the <see cref="T:System.Web.UI.Design.ControlDesigner" /> and always returns <see langword="true" /> for the <see cref="P:System.Web.UI.Design.ControlDesigner.UsePreviewControl" /> property.</para>
         </block>
+        <altmember cref="T:System.Web.UI.Design.SupportsPreviewControlAttribute" />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.ViewControl" />
+        <altmember cref="Overload:System.Web.UI.Design.ControlDesigner.GetViewRendering" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.PreviewControlDesigner" />
       </Docs>
     </Member>
     <Member MemberName="ViewControl">
@@ -1986,6 +2078,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.SupportsPreviewControlAttribute" />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.UsePreviewControl" />
+        <altmember cref="Overload:System.Web.UI.Design.ControlDesigner.GetViewRendering" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.PreviewControlDesigner" />
       </Docs>
     </Member>
     <Member MemberName="ViewControlCreated">
@@ -2005,6 +2101,7 @@
         <value>
           <see langword="true" />, if a control has been created for viewing on the design surface; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.UsePreviewControl" />
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -2026,5 +2123,55 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreatePlaceHolderDesignTimeHtml">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides a simple rectangular placeholder representation that displays the type and ID of the control.</summary>
+        <block subset="none" type="overrides">
+          <para>The typical design pattern is to try to get HTML markup through the associated control, and then if an error is encountered, call the <see cref="M:System.Web.UI.Design.ControlDesigner.GetErrorDesignTimeHtml(System.Exception)" /> method. If no markup is returned by the control, call the <see cref="M:System.Web.UI.Design.ControlDesigner.GetEmptyDesignTimeHtml" /> method, which if it is not overridden to provide specific markup, calls the <see cref="M:System.Web.UI.Design.ControlDesigner.CreatePlaceHolderDesignTimeHtml" /> method, which should contain information about the type and ID of the control.</para>
+        </block>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateErrorDesignTimeHtml">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates HTML markup to display an error message at design time.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="InvokeTransactedChange">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Wraps a series of changes into a transaction, using the specified parameters that can be rolled back as a unit with the undo functionality of the design host.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetDesignTimeHtml">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the HTML markup that is used to represent the control at design time.</summary>
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.UpdateDesignTimeHtml" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetViewRendering">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves an object that contains the design-time markup for the content and regions of the associated control.</summary>
+        <altmember cref="T:System.Web.UI.Design.ViewRendering" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -413,6 +413,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.Common.DataAdapter.FillSchema(System.Data.DataSet,System.Data.SchemaType)" />
       </Docs>
     </Member>
     <Member MemberName="Fill">
@@ -612,6 +613,7 @@
         <summary>Gets or sets the <see cref="T:System.Data.LoadOption" /> that determines how the adapter fills the <see cref="T:System.Data.DataTable" /> from the <see cref="T:System.Data.Common.DbDataReader" />.</summary>
         <value>A <see cref="T:System.Data.LoadOption" /> value.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Data.LoadOption" />
       </Docs>
     </Member>
     <Member MemberName="FillSchema">
@@ -686,6 +688,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.Common.DataAdapter.Fill(System.Data.DataSet)" />
       </Docs>
     </Member>
     <Member MemberName="FillSchema">
@@ -868,6 +871,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The value set is not one of the <see cref="T:System.Data.MissingMappingAction" /> values.</exception>
+        <altmember cref="P:System.Data.Common.DataAdapter.MissingSchemaAction" />
       </Docs>
     </Member>
     <Member MemberName="MissingSchemaAction">
@@ -911,6 +915,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The value set is not one of the <see cref="T:System.Data.MissingSchemaAction" /> values.</exception>
+        <altmember cref="P:System.Data.Common.DataAdapter.MissingMappingAction" />
       </Docs>
     </Member>
     <Member MemberName="OnFillError">
@@ -1288,5 +1293,35 @@
         <exception cref="T:System.Data.DBConcurrencyException">An attempt to execute an INSERT, UPDATE, or DELETE statement resulted in zero records affected.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FillSchema">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a <see cref="T:System.Data.DataTable" /> to the specified <see cref="T:System.Data.DataSet" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Fill">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds or refreshes rows in the <see cref="T:System.Data.DataSet" /> to match those in the data source.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of a <see cref="T:System.Data.Common.DataAdapter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

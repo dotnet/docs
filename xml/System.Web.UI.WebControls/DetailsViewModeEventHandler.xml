@@ -33,15 +33,19 @@
 ## Examples  
  The following code example demonstrates how to programmatically add a <xref:System.Web.UI.WebControls.DetailsViewModeEventHandler> delegate to the <xref:System.Web.UI.WebControls.DetailsView.ModeChanging> event of a <xref:System.Web.UI.WebControls.DetailsView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewModeEventHandlerInline#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewModeEventHandlerInline/CS/detailsviewmodeeventhandlerinlinecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewModeEventHandlerInline#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewModeEventHandlerInline/VB/detailsviewmodeeventhandlerinlinevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewModeEventHandlerInline#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewModeEventHandlerInline/CS/detailsviewmodeeventhandlerinlinecs.aspx#1)]
+ [!code-aspx-vb[DetailsViewModeEventHandlerInline#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewModeEventHandlerInline/VB/detailsviewmodeeventhandlerinlinevb.aspx#1)]  
   
  The following code example demonstrates how to declaratively add a <xref:System.Web.UI.WebControls.DetailsViewModeEventHandler> delegate to the <xref:System.Web.UI.WebControls.DetailsView.ModeChanging> event of a <xref:System.Web.UI.WebControls.DetailsView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewModeEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewModeEventHandler/CS/detailsviewmodeeventhandlercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewModeEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewModeEventHandler/VB/detailsviewmodeeventhandlervb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewModeEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewModeEventHandler/CS/detailsviewmodeeventhandlercs.aspx#1)]
+ [!code-aspx-vb[DetailsViewModeEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewModeEventHandler/VB/detailsviewmodeeventhandlervb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+    <altmember cref="T:System.Web.UI.WebControls.DetailsViewModeEventArgs" />
+    <altmember cref="E:System.Web.UI.WebControls.DetailsView.ModeChanging" />
+    <altmember cref="M:System.Web.UI.WebControls.DetailsView.OnModeChanging(System.Web.UI.WebControls.DetailsViewModeEventArgs)" />
   </Docs>
 </Type>

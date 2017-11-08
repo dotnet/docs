@@ -198,6 +198,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ServiceModel.Description.PrincipalPermissionMode" />
       </Docs>
     </Member>
     <Member MemberName="RoleProvider">
@@ -237,6 +238,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Behavior is read-only.</exception>
+        <altmember cref="T:System.ServiceModel.Description.PrincipalPermissionMode" />
+        <altmember cref="T:System.Web.Security.RoleProvider" />
       </Docs>
     </Member>
     <Member MemberName="ServiceAuthorizationManager">
@@ -270,6 +273,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ServiceModel.ServiceAuthorizationManager" />
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeExternalAuthorizationPolicies">

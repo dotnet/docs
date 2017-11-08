@@ -42,8 +42,8 @@
   
  The following code example demonstrates how to declare a <xref:System.Web.UI.WebControls.Label> control with device-specific content.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.Adapters.HideDisabledControlAdapter#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.Adapters.HideDisabledControlAdapter/CS/implcs.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.Adapters.HideDisabledControlAdapter#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.Adapters.HideDisabledControlAdapter/VB/implvb.aspx#3)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.Adapters.HideDisabledControlAdapter#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.Adapters.HideDisabledControlAdapter/CS/implcs.aspx#3)]
+ [!code-aspx-vb[System.Web.UI.WebControls.Adapters.HideDisabledControlAdapter#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.Adapters.HideDisabledControlAdapter/VB/implvb.aspx#3)]  
   
  The following code example shows how to link the <xref:System.Web.UI.WebControls.Label> control to the custom adapter for browsers running on Windows CE .NET.  
   
@@ -51,6 +51,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Adapters.WebControlAdapter" />
+    <altmember cref="T:System.Web.UI.WebControls.WebControl" />
+    <altmember cref="T:System.Web.AspNetHostingPermission" />
+    <altmember cref="T:System.Web.HttpBrowserCapabilities" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -73,6 +77,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebControl" />
+        <altmember cref="T:System.Web.UI.WebControls.Adapters.WebControlAdapter" />
+        <altmember cref="T:System.Web.UI.Control" />
+        <altmember cref="P:System.Web.UI.Control.Adapter" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -115,6 +123,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebControl" />
+        <altmember cref="T:System.Web.UI.Control" />
+        <altmember cref="T:System.Web.UI.WebControls.Adapters.WebControlAdapter" />
+        <altmember cref="M:System.Web.UI.Adapters.ControlAdapter.OnPreRender(System.EventArgs)" />
       </Docs>
     </Member>
   </Members>

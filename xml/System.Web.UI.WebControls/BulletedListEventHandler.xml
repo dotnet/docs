@@ -31,10 +31,12 @@
 ## Examples  
  The following example demonstrates how to specify and code an event handler for the <xref:System.Web.UI.WebControls.BulletedList.Click> event of a <xref:System.Web.UI.WebControls.BulletedList> control. When a list item is clicked, a message is displayed in a <xref:System.Web.UI.WebControls.Label> control on the page.  
   
- <!-- TODO: review snippet reference [!code-csharp[BulletedListClickEvent#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BulletedListClickEvent/CS/bulletedlistclickeventcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[BulletedListClickEvent#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BulletedListClickEvent/VB/bulletedlistclickeventvb.aspx#1)]  -->  
+ [!code-aspx-csharp[BulletedListClickEvent#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BulletedListClickEvent/CS/bulletedlistclickeventcs.aspx#1)]
+ [!code-aspx-vb[BulletedListClickEvent#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BulletedListClickEvent/VB/bulletedlistclickeventvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.BulletedList" />
+    <altmember cref="T:System.Web.UI.WebControls.BulletedListEventArgs" />
   </Docs>
 </Type>

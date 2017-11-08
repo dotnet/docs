@@ -148,19 +148,20 @@
 > [!NOTE]
 >  The following code samples use the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[MultiView.ActiveViewIndex Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MultiView.ActiveViewIndex Example/cs/multiviewactiveviewindexcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MultiView.ActiveViewIndex Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MultiView.ActiveViewIndex Example/VB/multiviewactiveviewindexvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MultiView.ActiveViewIndex Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MultiView.ActiveViewIndex Example/cs/multiviewactiveviewindexcs.aspx#1)]
+ [!code-aspx-vb[MultiView.ActiveViewIndex Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MultiView.ActiveViewIndex Example/VB/multiviewactiveviewindexvb.aspx#1)]  
   
  The following code example demonstrates how to create a basic <xref:System.Web.UI.WebControls.MultiView> control that contains three <xref:System.Web.UI.WebControls.View> controls. The view that the user selects from the list box is set to the active view and displayed to the user. For a more detailed example of the <xref:System.Web.UI.WebControls.MultiView> control, see the other code examples provided in this topic.  
   
- <!-- TODO: review snippet reference [!code-vb[MultiView Class Example 2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MultiView Class Example 2/VB/multiviewclass2vb.aspx#1)]  -->  
+ [!code-aspx-vb[MultiView Class Example 2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MultiView Class Example 2/VB/multiviewclass2vb.aspx#1)]  
   
  The following code example demonstrates how to create a <xref:System.Web.UI.WebControls.MultiView> control that contains three <xref:System.Web.UI.WebControls.View> controls. A <xref:System.Web.UI.WebControls.View> control does not have any style properties. Therefore, each <xref:System.Web.UI.WebControls.View> control contains a <xref:System.Web.UI.WebControls.Panel> control to allow styles to be set on the <xref:System.Web.UI.WebControls.View> control. The first time the page is loaded, the `DefaultView` is set as the active view using the <xref:System.Web.UI.WebControls.MultiView.SetActiveView%2A> method. Each <xref:System.Web.UI.WebControls.View> control contains link buttons to allow the user to navigate to different views.  
   
- <!-- TODO: review snippet reference [!code-vb[MultiView Class Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MultiView Class Example/VB/multiviewclass1vb.aspx#1)]  -->  
+ [!code-aspx-vb[MultiView Class Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MultiView Class Example/VB/multiviewclass1vb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.View" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -215,11 +216,12 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[MultiView.ActiveViewChanged Event Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MultiView.ActiveViewChanged Event Example/cs/multiviewactiveviewchangedeventcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MultiView.ActiveViewChanged Event Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MultiView.ActiveViewChanged Event Example/VB/multiviewactiveviewchangedeventvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MultiView.ActiveViewChanged Event Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MultiView.ActiveViewChanged Event Example/cs/multiviewactiveviewchangedeventcs.aspx#1)]
+ [!code-aspx-vb[MultiView.ActiveViewChanged Event Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MultiView.ActiveViewChanged Event Example/VB/multiviewactiveviewchangedeventvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.MultiView.OnActiveViewChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ActiveViewIndex">
@@ -262,12 +264,15 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[MultiView.ActiveViewIndex Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MultiView.ActiveViewIndex Example/cs/multiviewactiveviewindexcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MultiView.ActiveViewIndex Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MultiView.ActiveViewIndex Example/VB/multiviewactiveviewindexvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MultiView.ActiveViewIndex Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MultiView.ActiveViewIndex Example/cs/multiviewactiveviewindexcs.aspx#1)]
+ [!code-aspx-vb[MultiView.ActiveViewIndex Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MultiView.ActiveViewIndex Example/VB/multiviewactiveviewindexvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified index was set to less than -1, or greater than or equal to the number of items on the list.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.View" />
+        <altmember cref="M:System.Web.UI.WebControls.MultiView.SetActiveView(System.Web.UI.WebControls.View)" />
+        <altmember cref="M:System.Web.UI.WebControls.MultiView.GetActiveView" />
       </Docs>
     </Member>
     <Member MemberName="AddParsedSubObject">
@@ -297,6 +302,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The specified <see cref="T:System.Object" /> is not a <see cref="T:System.Web.UI.WebControls.View" /> control.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.View" />
+        <altmember cref="M:System.Web.UI.Control.AddParsedSubObject(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="CreateControlCollection">
@@ -323,6 +330,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.View" />
+        <altmember cref="T:System.Web.UI.WebControls.ViewCollection" />
       </Docs>
     </Member>
     <Member MemberName="EnableTheming">
@@ -390,12 +399,15 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[MultiView.ActiveViewChanged Event Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MultiView.ActiveViewChanged Event Example/cs/multiviewactiveviewchangedeventcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MultiView.ActiveViewChanged Event Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MultiView.ActiveViewChanged Event Example/VB/multiviewactiveviewchangedeventvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MultiView.ActiveViewChanged Event Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MultiView.ActiveViewChanged Event Example/cs/multiviewactiveviewchangedeventcs.aspx#1)]
+ [!code-aspx-vb[MultiView.ActiveViewChanged Event Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MultiView.ActiveViewChanged Event Example/VB/multiviewactiveviewchangedeventvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">The <see cref="P:System.Web.UI.WebControls.MultiView.ActiveViewIndex" /> property is not set to a valid <see cref="T:System.Web.UI.WebControls.View" /> control within the <see cref="T:System.Web.UI.WebControls.MultiView" /> control.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.View" />
+        <altmember cref="M:System.Web.UI.WebControls.MultiView.SetActiveView(System.Web.UI.WebControls.View)" />
+        <altmember cref="P:System.Web.UI.WebControls.MultiView.ActiveViewIndex" />
       </Docs>
     </Member>
     <Member MemberName="LoadControlState">
@@ -446,11 +458,15 @@
 ## Examples  
  The following code example demonstrates how to use a <xref:System.Web.UI.WebControls.MultiView> control to create a basic survey. Each <xref:System.Web.UI.WebControls.View> control is a separate survey question. The <xref:System.Web.UI.WebControls.MultiView.PreviousViewCommandName> and <xref:System.Web.UI.WebControls.MultiView.NextViewCommandName> fields are used to provide automatic navigation between the previous and next <xref:System.Web.UI.WebControls.View> controls in the survey.  
   
- <!-- TODO: review snippet reference [!code-csharp[MultiView.NextViewCommandName#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MultiView.NextViewCommandName/CS/multiview.nextviewcommandnamecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MultiView.NextViewCommandName#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MultiView.NextViewCommandName/VB/multiview.nextviewcommandnamevb.aspx#1)]  -->  
+ [!code-aspx-csharp[MultiView.NextViewCommandName#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MultiView.NextViewCommandName/CS/multiview.nextviewcommandnamecs.aspx#1)]
+ [!code-aspx-vb[MultiView.NextViewCommandName#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MultiView.NextViewCommandName/VB/multiview.nextviewcommandnamevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.View" />
+        <altmember cref="F:System.Web.UI.WebControls.MultiView.PreviousViewCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.MultiView.SwitchViewByIDCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.MultiView.SwitchViewByIndexCommandName" />
       </Docs>
     </Member>
     <Member MemberName="OnActiveViewChanged">
@@ -489,14 +505,15 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[MultiView.ActiveViewChanged Event Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MultiView.ActiveViewChanged Event Example/cs/multiviewactiveviewchangedeventcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MultiView.ActiveViewChanged Event Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MultiView.ActiveViewChanged Event Example/VB/multiviewactiveviewchangedeventvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MultiView.ActiveViewChanged Event Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MultiView.ActiveViewChanged Event Example/cs/multiviewactiveviewchangedeventcs.aspx#1)]
+ [!code-aspx-vb[MultiView.ActiveViewChanged Event Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MultiView.ActiveViewChanged Event Example/VB/multiviewactiveviewchangedeventvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.MultiView.OnActiveViewChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.MultiView.OnActiveViewChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.MultiView.ActiveViewChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnBubbleEvent">
@@ -591,11 +608,15 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[MultiView.NextViewCommandName#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MultiView.NextViewCommandName/CS/multiview.nextviewcommandnamecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MultiView.NextViewCommandName#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MultiView.NextViewCommandName/VB/multiview.nextviewcommandnamevb.aspx#1)]  -->  
+ [!code-aspx-csharp[MultiView.NextViewCommandName#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MultiView.NextViewCommandName/CS/multiview.nextviewcommandnamecs.aspx#1)]
+ [!code-aspx-vb[MultiView.NextViewCommandName#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MultiView.NextViewCommandName/VB/multiview.nextviewcommandnamevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.View" />
+        <altmember cref="F:System.Web.UI.WebControls.MultiView.NextViewCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.MultiView.SwitchViewByIDCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.MultiView.SwitchViewByIndexCommandName" />
       </Docs>
     </Member>
     <Member MemberName="RemovedControl">
@@ -713,11 +734,14 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-vb[MultiView Class Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MultiView Class Example/VB/multiviewclass1vb.aspx#1)]  -->  
+ [!code-aspx-vb[MultiView Class Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MultiView Class Example/VB/multiviewclass1vb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The specified <paramref name="view" /> parameter value was not contained in the <see cref="T:System.Web.UI.WebControls.MultiView" /> control.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.MultiView.ActiveViewIndex" />
+        <altmember cref="M:System.Web.UI.WebControls.MultiView.GetActiveView" />
+        <altmember cref="T:System.Web.UI.WebControls.View" />
       </Docs>
     </Member>
     <Member MemberName="SwitchViewByIDCommandName">
@@ -750,11 +774,15 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[MultiView.NextViewCommandName#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MultiView.NextViewCommandName/CS/multiview.nextviewcommandnamecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MultiView.NextViewCommandName#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MultiView.NextViewCommandName/VB/multiview.nextviewcommandnamevb.aspx#1)]  -->  
+ [!code-aspx-csharp[MultiView.NextViewCommandName#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MultiView.NextViewCommandName/CS/multiview.nextviewcommandnamecs.aspx#1)]
+ [!code-aspx-vb[MultiView.NextViewCommandName#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MultiView.NextViewCommandName/VB/multiview.nextviewcommandnamevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.View" />
+        <altmember cref="F:System.Web.UI.WebControls.MultiView.PreviousViewCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.MultiView.NextViewCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.MultiView.SwitchViewByIndexCommandName" />
       </Docs>
     </Member>
     <Member MemberName="SwitchViewByIndexCommandName">
@@ -787,11 +815,15 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[MultiView.SwitchViewByIndexCommandName#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MultiView.SwitchViewByIndexCommandName/CS/multiview.switchviewbyindexcommandnamecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MultiView.SwitchViewByIndexCommandName#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MultiView.SwitchViewByIndexCommandName/VB/multiview.switchviewbyindexcommandnamevb.aspx#1)]  -->  
+ [!code-aspx-csharp[MultiView.SwitchViewByIndexCommandName#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MultiView.SwitchViewByIndexCommandName/CS/multiview.switchviewbyindexcommandnamecs.aspx#1)]
+ [!code-aspx-vb[MultiView.SwitchViewByIndexCommandName#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MultiView.SwitchViewByIndexCommandName/VB/multiview.switchviewbyindexcommandnamevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.View" />
+        <altmember cref="F:System.Web.UI.WebControls.MultiView.SwitchViewByIDCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.MultiView.PreviousViewCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.MultiView.NextViewCommandName" />
       </Docs>
     </Member>
     <Member MemberName="Views">
@@ -831,10 +863,11 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-vb[MultiView.Views Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MultiView.Views Example/VB/multiviewviewsvb.aspx#1)]  -->  
+ [!code-aspx-vb[MultiView.Views Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MultiView.Views Example/VB/multiviewviewsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ViewCollection" />
       </Docs>
     </Member>
   </Members>

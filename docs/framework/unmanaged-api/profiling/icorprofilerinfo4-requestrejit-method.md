@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo4::RequestReJIT"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "RequestReJIT method, ICorProfilerInfo4 interface [.NET Framework profiling]"
   - "ICorProfilerInfo4::RequestReJIT method [.NET Framework profiling]"

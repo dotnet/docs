@@ -9,11 +9,9 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "image encoders, using"
-  - "image decoders, using"
+  - "image encoders [Windows Forms], using"
+  - "image decoders [Windows Forms], using"
 ms.assetid: 0e838ea1-4e7e-4334-b882-ab25df607b8b
 caps.latest.revision: 7
 author: dotnet-bot

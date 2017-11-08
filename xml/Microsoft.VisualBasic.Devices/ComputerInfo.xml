@@ -168,6 +168,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Globalization.CultureInfo" />
       </Docs>
     </Member>
     <Member MemberName="OSFullName">
@@ -240,6 +241,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ExecutionEngineException">The application cannot obtain the operating-system platform information.</exception>
+        <altmember cref="P:System.OperatingSystem.Platform" />
+        <altmember cref="P:System.Environment.OSVersion" />
       </Docs>
     </Member>
     <Member MemberName="OSVersion">

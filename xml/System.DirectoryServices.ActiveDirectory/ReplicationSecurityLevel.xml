@@ -13,6 +13,9 @@
   <Docs>
     <summary>Specifies the Active Directory Lightweight Directory (AD LDS) Services replication authentication mode.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.DirectoryServices.ActiveDirectory.ConfigurationSet" />
+    <altmember cref="M:System.DirectoryServices.ActiveDirectory.ConfigurationSet.GetSecurityLevel" />
+    <altmember cref="M:System.DirectoryServices.ActiveDirectory.ConfigurationSet.SetSecurityLevel(System.DirectoryServices.ActiveDirectory.ReplicationSecurityLevel)" />
   </Docs>
   <Members>
     <Member MemberName="MutualAuthentication">

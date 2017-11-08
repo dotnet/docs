@@ -9,12 +9,10 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "snap to grid, Windows Forms Designer"
-  - "grids, options in Windows Forms"
-  - "snaplines, Windows Forms Designer"
+  - "snap to grid [Windows Forms], Windows Forms Designer"
+  - "grids [Windows Forms], options in Windows Forms"
+  - "snaplines [Windows Forms], Windows Forms Designer"
   - "Windows Forms, grid options in designer"
   - "Windows Forms Designer"
 ms.assetid: 36967466-1dfd-4fae-a7f1-7bf2cbc94048

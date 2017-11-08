@@ -9,10 +9,8 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "Windows Forms Designer, interoperability with WPF"
+  - "Windows Forms Designer [Windows Forms], interoperability with WPF"
   - "interoperability [WPF]"
 ms.assetid: 03c85dce-26ad-44cd-bc1d-8e0cb56de096
 caps.latest.revision: 7

@@ -28,11 +28,13 @@
   
  [!code-csharp[SimpleMultiRegionControlDesigner#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SimpleMultiRegionControlDesigner/CS/SimpleMultiRegionControlDesigner.cs#1)]
  [!code-vb[SimpleMultiRegionControlDesigner#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SimpleMultiRegionControlDesigner/VB/SimpleMultiRegionControlDesigner.vb#1)]  
-<!-- TODO: review snippet reference [!code-csharp[SimpleMultiRegionControlDesigner#8](~/samples/snippets/csharp/VS_Snippets_WebNet/SimpleMultiRegionControlDesigner/CS/SimpleMultiRegionControlDesigner.aspx#8)]  -->
-<!-- TODO: review snippet reference [!code-vb[SimpleMultiRegionControlDesigner#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SimpleMultiRegionControlDesigner/VB/SimpleMultiRegionControlDesigner.aspx#8)]  -->  
+[!code-aspx-csharp[SimpleMultiRegionControlDesigner#8](~/samples/snippets/csharp/VS_Snippets_WebNet/SimpleMultiRegionControlDesigner/CS/SimpleMultiRegionControlDesigner.aspx#8)]
+[!code-aspx-vb[SimpleMultiRegionControlDesigner#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SimpleMultiRegionControlDesigner/VB/SimpleMultiRegionControlDesigner.aspx#8)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
+    <altmember cref="M:System.Web.UI.Design.ControlDesigner.GetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -156,5 +158,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.EditableDesignerRegion" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -32,6 +32,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.ConnectionStringsSection" />
+    <altmember cref="T:System.Configuration.ConnectionStringSettingsCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,6 +53,8 @@
       <Docs>
         <summary>Initializes a new instance of a <see cref="T:System.Configuration.ConnectionStringSettings" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Configuration.ConnectionStringsSection" />
+        <altmember cref="T:System.Configuration.ConnectionStringSettingsCollection" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -75,6 +79,8 @@
         <param name="connectionString">The connection string.</param>
         <summary>Initializes a new instance of a <see cref="T:System.Configuration.ConnectionStringSettings" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Configuration.ConnectionStringsSection" />
+        <altmember cref="T:System.Configuration.ConnectionStringSettingsCollection" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -111,6 +117,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.ConnectionStringsSection" />
+        <altmember cref="T:System.Configuration.ConnectionStringSettingsCollection" />
       </Docs>
     </Member>
     <Member MemberName="ConnectionString">
@@ -148,6 +156,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.ConnectionStringsSection" />
+        <altmember cref="T:System.Configuration.ConnectionStringSettingsCollection" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -185,6 +195,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.ConnectionStringsSection" />
+        <altmember cref="T:System.Configuration.ConnectionStringSettingsCollection" />
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -244,6 +256,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.ConnectionStringsSection" />
+        <altmember cref="T:System.Configuration.ConnectionStringSettingsCollection" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -269,5 +283,16 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of a <see cref="T:System.Configuration.ConnectionStringSettings" /> class.</summary>
+        <altmember cref="T:System.Configuration.ConnectionStringsSection" />
+        <altmember cref="T:System.Configuration.ConnectionStringSettingsCollection" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

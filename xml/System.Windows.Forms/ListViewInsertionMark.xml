@@ -18,7 +18,7 @@
 ## Remarks  
  You can retrieve a <xref:System.Windows.Forms.ListViewInsertionMark> from the <xref:System.Windows.Forms.ListView.InsertionMark%2A> property of a <xref:System.Windows.Forms.ListView> control and use it to visually indicate the expected drop location in a drag-and-drop operation when an item is dragged to a new position.  
   
- This feature works only when the <xref:System.Windows.Forms.ListView.AutoArrange%2A?displayProperty=nameWithType> property is set to `true` and when the <xref:System.Windows.Forms.ListView> control does not sort the items automatically. To prevent automatic sorting, the <xref:System.Windows.Forms.ListView.Sorting%2A?displayProperty=nameWithType> property must be set to <xref:System.Windows.Forms.SortOrder?displayProperty=nameWithType> and the <xref:System.Windows.Forms.ListView.View%2A?displayProperty=nameWithType> property must be set to <xref:System.Windows.Forms.View?displayProperty=nameWithType>, <xref:System.Windows.Forms.View?displayProperty=nameWithType>, or <xref:System.Windows.Forms.View?displayProperty=nameWithType>. Additionally, the insertion mark feature cannot be used with the <xref:System.Windows.Forms.ListView> grouping feature because the grouping feature orders the items by group membership.  
+ This feature works only when the <xref:System.Windows.Forms.ListView.AutoArrange%2A?displayProperty=nameWithType> property is set to `true` and when the <xref:System.Windows.Forms.ListView> control does not sort the items automatically. To prevent automatic sorting, the <xref:System.Windows.Forms.ListView.Sorting%2A?displayProperty=nameWithType> property must be set to <xref:System.Windows.Forms.SortOrder.None?displayProperty=nameWithType> and the <xref:System.Windows.Forms.ListView.View%2A?displayProperty=nameWithType> property must be set to <xref:System.Windows.Forms.View.LargeIcon?displayProperty=nameWithType>, <xref:System.Windows.Forms.View.SmallIcon?displayProperty=nameWithType>, or <xref:System.Windows.Forms.View.Tile?displayProperty=nameWithType>. Additionally, the insertion mark feature cannot be used with the <xref:System.Windows.Forms.ListView> grouping feature because the grouping feature orders the items by group membership.  
   
  The <xref:System.Windows.Forms.ListViewInsertionMark> class is typically used in a handler for the <xref:System.Windows.Forms.Control.DragOver?displayProperty=nameWithType> or <xref:System.Windows.Forms.Control.MouseMove?displayProperty=nameWithType> event to update the position of the insertion mark as an item is dragged. It is also used in a handler for the <xref:System.Windows.Forms.Control.DragDrop?displayProperty=nameWithType> or <xref:System.Windows.Forms.Control.MouseUp?displayProperty=nameWithType> event to insert a dragged item at the correct location.  
   
@@ -66,6 +66,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ListView" />
   </Docs>
   <Members>
     <Member MemberName="AppearsAfterItem">
@@ -113,6 +114,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ListView" />
       </Docs>
     </Member>
     <Member MemberName="Bounds">
@@ -138,6 +140,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ListView" />
       </Docs>
     </Member>
     <Member MemberName="Color">
@@ -174,6 +177,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ListView" />
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -212,6 +216,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ListView" />
       </Docs>
     </Member>
     <Member MemberName="NearestIndex">
@@ -254,6 +259,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ListView" />
       </Docs>
     </Member>
   </Members>

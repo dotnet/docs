@@ -33,11 +33,16 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.DynamicData.DynamicQueryStringParameter> object as filter when displaying data in a <xref:System.Web.UI.WebControls.GridView> control. The <xref:System.Web.UI.WebControls.GridView> control contains a <xref:System.Web.UI.WebControls.TemplateField> object that creates a link that sets the query string value by using the foreign key value.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.DynamicData.DynamicQueryStringParameter#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.DynamicQueryStringParameter/CS/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.DynamicData.DynamicQueryStringParameter#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.DynamicQueryStringParameter/VB/Default.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.DynamicData.DynamicQueryStringParameter#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.DynamicQueryStringParameter/CS/Default.aspx#1)]
+ [!code-aspx-vb[System.Web.DynamicData.DynamicQueryStringParameter#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.DynamicQueryStringParameter/VB/Default.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.DynamicData.DynamicDataManager" />
+    <altmember cref="T:System.Web.UI.WebControls.LinqDataSource" />
+    <altmember cref="P:System.Web.UI.WebControls.LinqDataSource.WhereParameters" />
+    <altmember cref="T:System.Web.UI.WebControls.EntityDataSource" />
+    <altmember cref="P:System.Web.UI.WebControls.EntityDataSource.WhereParameters" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -88,6 +93,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.DynamicData.DynamicDataManager" />
       </Docs>
     </Member>
     <Member MemberName="GetWhereParameters">
@@ -117,6 +123,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Parameter" />
+        <altmember cref="T:System.Web.UI.WebControls.LinqDataSource" />
+        <altmember cref="P:System.Web.UI.WebControls.LinqDataSource.WhereParameters" />
+        <altmember cref="T:System.Web.UI.WebControls.EntityDataSource" />
+        <altmember cref="P:System.Web.UI.WebControls.EntityDataSource.WhereParameters" />
       </Docs>
     </Member>
   </Members>

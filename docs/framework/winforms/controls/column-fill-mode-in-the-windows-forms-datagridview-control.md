@@ -10,11 +10,12 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "data grids, automatically resizing columns"
+  - "data grids [Windows Forms], automatically resizing columns"
   - "DataGridView control [Windows Forms], column fill mode"
-  - "data grids, column fill mode"
+  - "data grids [Windows Forms], column fill mode"
 ms.assetid: b4ef7411-ebf4-4e26-bb33-aecec90de80c
 caps.latest.revision: 16
 author: dotnet-bot

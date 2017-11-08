@@ -9,13 +9,11 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "Windows Forms coordinates"
   - "screen coordinates"
   - "client coordinates"
-  - "coordinates, Windows Forms"
+  - "coordinates [Windows Forms], Windows Forms"
 ms.assetid: cc06e61f-43b6-4408-a676-2542dcfcd96e
 caps.latest.revision: 5
 author: dotnet-bot

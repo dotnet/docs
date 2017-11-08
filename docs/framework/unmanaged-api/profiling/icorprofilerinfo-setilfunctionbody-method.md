@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo::SetILFunctionBody"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerInfo::SetILFunctionBody method [.NET Framework profiling]"
   - "SetILFunctionBody method [.NET Framework profiling]"

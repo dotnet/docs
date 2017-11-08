@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugManagedCallback::CreateThread method"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugManagedCallback::CreateThread method [.NET Framework debugging]"
   - "CreateThread method [.NET Framework debugging]"

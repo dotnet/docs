@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedScope::GetStartOffset"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetStartOffset method, ISymUnmanagedScope interface [.NET Framework debugging]"
   - "ISymUnmanagedScope::GetStartOffset method [.NET Framework debugging]"

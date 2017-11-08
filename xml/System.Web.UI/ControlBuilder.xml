@@ -38,11 +38,18 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
   
  The following code example uses the previous custom control. In particular, it builds a table whose attributes and content are defined at run time. Notice that the values shown in the  directive reflect the previous command line.  
   
- <!-- TODO: review snippet reference [!code-csharp[SystemWebUI_ControlBuilder_2#2](~/samples/snippets/csharp/VS_Snippets_WebNet/SystemWebUI_ControlBuilder_2/CS/controlbuilder.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[SystemWebUI_ControlBuilder_2#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SystemWebUI_ControlBuilder_2/VB/controlbuilder.aspx#2)]  -->  
+ [!code-aspx-csharp[SystemWebUI_ControlBuilder_2#2](~/samples/snippets/csharp/VS_Snippets_WebNet/SystemWebUI_ControlBuilder_2/CS/controlbuilder.aspx#2)]
+ [!code-aspx-vb[SystemWebUI_ControlBuilder_2#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SystemWebUI_ControlBuilder_2/VB/controlbuilder.aspx#2)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.Control" />
+    <altmember cref="T:System.Web.UI.WebControls.WebControl" />
+    <altmember cref="T:System.Web.UI.Page" />
+    <altmember cref="T:System.Web.UI.ControlBuilderAttribute" />
+    <altmember cref="T:System.Web.UI.ParseChildrenAttribute" />
+    <altmember cref="T:System.Web.UI.PersistChildrenAttribute" />
+    <altmember cref="M:System.Web.UI.Control.AddParsedSubObject(System.Object)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -171,6 +178,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ControlBuilder" />
       </Docs>
     </Member>
     <Member MemberName="BindingContainerBuilder">
@@ -207,6 +215,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
         <summary>Gets the type of the binding container for the control that this builder creates.</summary>
         <value>A <see cref="T:System.Type" /> that represent the type of the binding container for the control that this builder creates.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.Control.BindingContainer" />
       </Docs>
     </Member>
     <Member MemberName="BuildObject">
@@ -304,6 +313,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Type" />
       </Docs>
     </Member>
     <Member MemberName="CreateBuilderFromType">
@@ -365,6 +375,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IFilterResolutionService" />
       </Docs>
     </Member>
     <Member MemberName="DeclareType">
@@ -494,6 +505,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
         <summary>Creates the <see cref="T:System.Web.UI.ObjectPersistData" /> object for this <see cref="T:System.Web.UI.ControlBuilder" /> object.</summary>
         <returns>The <see cref="T:System.Web.UI.ObjectPersistData" /> for this <see cref="T:System.Web.UI.ControlBuilder" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.ObjectPersistData" />
       </Docs>
     </Member>
     <Member MemberName="GetResourceKey">
@@ -513,6 +525,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
         <summary>Retrieves the resource key for this <see cref="T:System.Web.UI.ControlBuilder" /> object.</summary>
         <returns>The resource key for this <see cref="T:System.Web.UI.ControlBuilder" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.ControlBuilder.SetResourceKey(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="HasAspCode">
@@ -773,6 +786,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
         <summary>Gets the type of the naming container for the control that this builder creates.</summary>
         <value>A <see cref="T:System.Type" /> that represent the type of the naming container for the control that this builder creates.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.ControlBuilder.ControlType" />
       </Docs>
     </Member>
     <Member MemberName="NeedsTagInnerText">
@@ -884,6 +898,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.TemplateParser" />
       </Docs>
     </Member>
     <Member MemberName="ProcessGeneratedCode">
@@ -944,6 +959,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
         <summary>Gets the service object for this <see cref="T:System.Web.UI.ControlBuilder" /> object.</summary>
         <value>An <see cref="T:System.IServiceProvider" /> that represents the service object for this <see cref="T:System.Web.UI.ControlBuilder" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.ControlBuilder.SetServiceProvider(System.IServiceProvider)" />
       </Docs>
     </Member>
     <Member MemberName="SetResourceKey">
@@ -965,6 +981,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
         <param name="resourceKey">The resource key for this <see cref="T:System.Web.UI.ControlBuilder" />.</param>
         <summary>Sets the resource key for this <see cref="T:System.Web.UI.ControlBuilder" /> object.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.ControlBuilder.GetResourceKey" />
       </Docs>
     </Member>
     <Member MemberName="SetServiceProvider">
@@ -986,6 +1003,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
         <param name="serviceProvider">An <see cref="T:System.IServiceProvider" /> that represents the service object for the <see cref="T:System.Web.UI.ControlBuilder" />.</param>
         <summary>Sets the service object for this <see cref="T:System.Web.UI.ControlBuilder" /> object.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.IServiceProvider" />
       </Docs>
     </Member>
     <Member MemberName="SetTagInnerText">
@@ -1108,6 +1126,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IThemeResolutionService" />
       </Docs>
     </Member>
   </Members>

@@ -29,6 +29,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Xml.XmlDocument.CreateDocumentType(System.String,System.String,System.String,System.String)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -339,6 +340,7 @@
         <summary>Gets the type of the current node.</summary>
         <value>For DocumentType nodes, this value is XmlNodeType.DocumentType.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Xml.XmlNodeType" />
       </Docs>
     </Member>
     <Member MemberName="Notations">
@@ -386,6 +388,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlNotation" />
+        <altmember cref="T:System.Xml.XmlNamedNodeMap" />
       </Docs>
     </Member>
     <Member MemberName="PublicId">

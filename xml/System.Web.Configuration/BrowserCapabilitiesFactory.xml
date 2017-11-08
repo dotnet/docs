@@ -14,6 +14,7 @@
     <summary>Provides methods used internally by the configuration system to produce request-specific instances of the <see cref="T:System.Web.HttpBrowserCapabilities" /> class that are publicly accessed through the ASP.NET-intrinsic <see langword="Request.Browser" /> property.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:System.Web.HttpBrowserCapabilities" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,6 +31,7 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.BrowserCapabilitiesFactory" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="BlackberryProcessBrowsers">
@@ -108,6 +110,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Google Chrome browser making the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="ChromeProcessGateways">
@@ -132,6 +135,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Google Chrome gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="ConfigureBrowserCapabilities">
@@ -156,6 +160,7 @@
         <summary>Used internally by the configuration system to produce request-specific instances of the <see cref="T:System.Web.HttpBrowserCapabilities" /> class that are publicly accessed through the ASP.NET-intrinsic <see langword="Request.Browser" /> property.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="CpuProcessBrowsers">
@@ -234,6 +239,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Crawler browser making the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="CrawlerProcessGateways">
@@ -258,6 +264,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Crawler gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="DefaultDefaultProcessBrowsers">
@@ -285,6 +292,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the DefaultDefault browser making the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="DefaultProcessBrowsers">
@@ -312,6 +320,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Default browser making the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="DefaultProcessGateways">
@@ -336,6 +345,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Default gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="DefaultWmlProcessBrowsers">
@@ -363,6 +373,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the DefaultWml browser making the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="DefaultXhtmlmpProcessBrowsers">
@@ -390,6 +401,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the DefaultXhtmlmp browser making the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="Firefox35ProcessBrowsers">
@@ -417,6 +429,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Mozilla Firefox35 browser making the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="Firefox35ProcessGateways">
@@ -441,6 +454,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Firefox35 gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="Firefox3plusProcessBrowsers">
@@ -517,6 +531,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Mozilla Firefox 3 browser making the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="Firefox3ProcessGateways">
@@ -541,6 +556,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Mozilla Firefox3 gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="FirefoxProcessBrowsers">
@@ -568,6 +584,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Mozilla Firefox browser making the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="FirefoxProcessGateways">
@@ -592,6 +609,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Mozilla Firefox gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="GenericdownlevelProcessBrowsers">
@@ -619,6 +637,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Genericdownlevel browser making the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="GenericdownlevelProcessGateways">
@@ -643,6 +662,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Genericdownlevel gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="Ie10plusProcessBrowsers">
@@ -772,6 +792,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Ie6to9 browser making the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="Ie6to9ProcessGateways">
@@ -796,6 +817,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Ie6to9 gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="Ie7ProcessBrowsers">
@@ -823,6 +845,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the IE7 browser making the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="Ie7ProcessGateways">
@@ -847,6 +870,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the IE7 gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="Ie8ProcessBrowsers">
@@ -874,6 +898,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the IE8 browser making the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="Ie8ProcessGateways">
@@ -898,6 +923,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the IE8 gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="Ie9ProcessBrowsers">
@@ -976,6 +1002,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Iebeta browser making the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="IebetaProcessGateways">
@@ -1000,6 +1027,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Iebeta gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="IemobileProcessBrowsers">
@@ -1078,6 +1106,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Ie browser making the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="IeProcessGateways">
@@ -1102,6 +1131,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Ie gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="InternetexplorerProcessBrowsers">
@@ -1131,6 +1161,7 @@
  Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Internetexplorer browser making the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="InternetexplorerProcessGateways">
@@ -1157,6 +1188,7 @@
  Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Internetexplorer gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="IpadProcessBrowsers">
@@ -1412,6 +1444,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Mozilla gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="Opera10ProcessBrowsers">
@@ -1439,6 +1472,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Opera10 browser making the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="Opera10ProcessGateways">
@@ -1463,6 +1497,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Opera10 gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="Opera8plusProcessBrowsers">
@@ -1541,6 +1576,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Opera8to9 browser making the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="Opera8to9ProcessGateways">
@@ -1565,6 +1601,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Opera8to9 gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="OperaminiProcessBrowsers">
@@ -1694,6 +1731,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Opera browser making the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="OperaProcessGateways">
@@ -1718,6 +1756,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Opera gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="OSProcessBrowsers">
@@ -1847,6 +1886,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platformmac68k browser making the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="Platformmac68kProcessGateways">
@@ -1871,6 +1911,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platformmac68k gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="PlatformmacppcProcessBrowsers">
@@ -1898,6 +1939,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platformmacppc browser making the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="PlatformmacppcProcessGateways">
@@ -1922,6 +1964,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platformmacppc gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="PlatformProcessBrowsers">
@@ -1949,6 +1992,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platform browser making the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="PlatformProcessGateways">
@@ -1973,6 +2017,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platform gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="PlatformunixProcessBrowsers">
@@ -2000,6 +2045,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platformunix browser making the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="PlatformunixProcessGateways">
@@ -2024,6 +2070,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platformunix gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="PlatformwebtvProcessBrowsers">
@@ -2051,6 +2098,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platformwebtv browser making the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="PlatformwebtvProcessGateways">
@@ -2075,6 +2123,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platformwebtv gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="Platformwin16ProcessBrowsers">
@@ -2102,6 +2151,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platformwin16 browser making the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="Platformwin16ProcessGateways">
@@ -2126,6 +2176,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platformwin16 gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="Platformwin2000aProcessBrowsers">
@@ -2153,6 +2204,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platformwin2000a browser making the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="Platformwin2000aProcessGateways">
@@ -2177,6 +2229,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platformwin2000a gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="Platformwin2000bProcessBrowsers">
@@ -2204,6 +2257,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platformwin2000b browser making the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="Platformwin2000bProcessGateways">
@@ -2228,6 +2282,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platformwin2000b gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="Platformwin95ProcessBrowsers">
@@ -2255,6 +2310,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platformwin95 browser making the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="Platformwin95ProcessGateways">
@@ -2279,6 +2335,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platformwin95 gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="Platformwin98ProcessBrowsers">
@@ -2306,6 +2363,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platformwin98 browser making the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="Platformwin98ProcessGateways">
@@ -2330,6 +2388,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platformwin98 gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="PlatformwinceProcessBrowsers">
@@ -2357,6 +2416,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platformwince browser making the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="PlatformwinceProcessGateways">
@@ -2381,6 +2441,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platformwince gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="PlatformwinntProcessBrowsers">
@@ -2408,6 +2469,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platformwinnt browser making the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="PlatformwinntProcessGateways">
@@ -2432,6 +2494,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platformwinnt gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="PlatformwinxpProcessBrowsers">
@@ -2459,6 +2522,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platformwinxp browser making the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="PlatformwinxpProcessGateways">
@@ -2483,6 +2547,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Platformwinxp gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="PopulateBrowserElements">
@@ -2505,6 +2570,7 @@
         <summary>Used internally by the configuration system to produce request-specific instances of <see cref="T:System.Web.HttpBrowserCapabilities" /> that are publicly accessed through the ASP.NET-intrinsic <see langword="Request.Browser" /> property.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="PopulateMatchedHeaders">
@@ -2527,6 +2593,7 @@
         <summary>Used internally by the configuration system to produce request-specific instances of <see cref="T:System.Web.HttpBrowserCapabilities" /> that are publicly accessed through the ASP.NET-intrinsic <see langword="Request.Browser" /> property.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="Safari3plusProcessBrowsers">
@@ -2605,6 +2672,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Apple Safari3to4 browser making the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="Safari3to4ProcessGateways">
@@ -2629,6 +2697,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Apple Safari3to4 gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="Safari4ProcessBrowsers">
@@ -2656,6 +2725,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Apple Safari4 browser making the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="Safari4ProcessGateways">
@@ -2680,6 +2750,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Apple Safari4 gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="SafariProcessBrowsers">
@@ -2707,6 +2778,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Safari browser making the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="SafariProcessGateways">
@@ -2731,6 +2803,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Safari gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="UcbrowserProcessBrowsers">
@@ -2962,6 +3035,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Win16 browser making the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="Win16ProcessGateways">
@@ -2986,6 +3060,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Win16 gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="Win32ProcessBrowsers">
@@ -3013,6 +3088,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Win32 browser making the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="Win32ProcessGateways">
@@ -3037,6 +3113,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Win32 gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="WindowsphoneProcessBrowsers">
@@ -3115,6 +3192,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Win browser making the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="WinProcessGateways">
@@ -3139,6 +3217,7 @@
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Win gateway handling the current request.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
   </Members>

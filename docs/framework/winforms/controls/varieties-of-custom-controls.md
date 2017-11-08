@@ -9,13 +9,11 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "controls [Windows Forms], user controls"
   - "controls [Windows Forms], types of"
-  - "composite controls"
-  - "extended controls"
+  - "composite controls [Windows Forms]"
+  - "extended controls [Windows Forms]"
   - "controls [Windows Forms], extended"
   - "user controls [Windows Forms]"
   - "custom controls [Windows Forms]"

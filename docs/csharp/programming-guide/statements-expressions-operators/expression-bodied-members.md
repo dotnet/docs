@@ -1,12 +1,10 @@
 ---
 title: "Expression-bodied members (C# Programming Guide)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "expression-bodied members[C#]"
   - "C# language, expresion-bodied members"

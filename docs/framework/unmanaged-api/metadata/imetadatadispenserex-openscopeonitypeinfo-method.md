@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataDispenserEx::OpenScopeOnITypeInfo"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "OpenScopeOnITypeInfo method [.NET Framework metadata]"
   - "IMetaDataDispenserEx::OpenScopeOnITypeInfo method [.NET Framework metadata]"

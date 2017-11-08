@@ -1,48 +1,28 @@
 ---
 title: "#Const Directive"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.#Const"
   - "#vb.Const"
   - "#Const"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "#Const directive"
-  - "conditional compilation, directives"
+  - "conditional compilation [Visual Basic], directives"
   - "Const directive (#Const)"
   - "Visual Basic compiler, compiler directives"
-  - "constants, Const directive"
-  - "constants, declaring"
+  - "constants [Visual Basic], Const directive"
+  - "constants [Visual Basic], declaring"
   - "Const statement [Visual Basic], directive (#Const)"
-  - "declaring constants, #const directive"
+  - "declaring constants [Visual Basic], #const directive"
 ms.assetid: 707669e5-23f9-4f17-8622-a0d534429386
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # #Const Directive
 Defines conditional compiler constants for Visual Basic.  

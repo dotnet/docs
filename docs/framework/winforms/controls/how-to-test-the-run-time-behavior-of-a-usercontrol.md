@@ -9,14 +9,12 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "UserControl class, testing"
+  - "UserControl class [Windows Forms], testing"
   - "user controls [Windows Forms], testing"
-  - "composite controls, testing"
+  - "composite controls [Windows Forms], testing"
   - "UserControl Test Container"
-  - "UserControl class, run-time behavior"
+  - "UserControl class [Windows Forms], run-time behavior"
 ms.assetid: 4e4d5c49-1346-40ac-9d96-40211b573583
 caps.latest.revision: 12
 author: dotnet-bot

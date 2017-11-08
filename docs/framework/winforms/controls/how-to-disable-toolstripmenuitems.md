@@ -10,14 +10,16 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "ToolStripMenuItems, enabling"
-  - "ToolStripMenuItems, disabling"
-  - "menu items, disabling"
+  - "ToolStripMenuItems [Windows Forms], enabling"
+  - "ToolStripMenuItems [Windows Forms], disabling"
+  - "menu items [Windows Forms], disabling"
   - "disabling menu items"
-  - "menu items, enabling"
-  - "menus, disabling menu items"
+  - "menu items [Windows Forms], enabling"
+  - "menus [Windows Forms], disabling menu items"
 ms.assetid: bcc1da84-50fd-41d2-8475-103b581d5654
 caps.latest.revision: 15
 author: dotnet-bot

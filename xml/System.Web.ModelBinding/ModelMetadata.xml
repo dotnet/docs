@@ -184,6 +184,7 @@
         <summary>Gets or sets a format string that should be applied when the model is displayed in display mode (as opposed to in edit mode).</summary>
         <value>The format string.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.ModelBinding.ModelMetadata.EditFormatString" />
       </Docs>
     </Member>
     <Member MemberName="DisplayName">
@@ -220,6 +221,7 @@
         <summary>Gets or sets the format string to use in UI in edit mode.</summary>
         <value>The format string.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.ModelBinding.ModelMetadata.DisplayFormatString" />
       </Docs>
     </Member>
     <Member MemberName="GetDisplayName">
@@ -583,6 +585,7 @@
         <value>
           <see langword="true" /> if the model should be displayed in display mode; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.ModelBinding.ModelMetadata.ShowForEdit" />
       </Docs>
     </Member>
     <Member MemberName="ShowForEdit">
@@ -602,6 +605,7 @@
         <value>
           <see langword="true" /> if the property should be displayed in edit mode; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.ModelBinding.ModelMetadata.ShowForDisplay" />
       </Docs>
     </Member>
     <Member MemberName="SimpleDisplayText">

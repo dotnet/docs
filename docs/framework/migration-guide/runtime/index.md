@@ -1,5 +1,5 @@
 ---
-title: "Runtime Changes in the .NET Framework"
+title: Runtime Changes in the .NET Framework
 ms.date: "06/14/2017"
 ms.prod: ".net-framework"
 ms.technology:
@@ -16,7 +16,6 @@ manager: "wpickett"
 # Runtime Changes in the .NET Framework
 
 [!include[introduction](../../../../includes/migration-guide/runtime/introduction.md)]
-
 ## Usage
 Select the .NET Framework you are currently targeting and then the .NET Framework you wish to migrate to:
 

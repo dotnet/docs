@@ -11,10 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "PrintDialog"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "Print dialog box, displaying"
+  - "Print dialog box [Windows Forms], displaying"
   - "PrintDialog component [Windows Forms], about PrintDialog component"
 ms.assetid: 8327b8ac-1017-4b5e-a88b-fea9dd56999c
 caps.latest.revision: 11

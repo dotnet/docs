@@ -32,6 +32,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey" />
+    <altmember cref="T:System.IdentityModel.Tokens.SessionSecurityTokenHandler" />
+    <altmember cref="T:System.IdentityModel.Tokens.SessionSecurityTokenCache" />
+    <altmember cref="T:System.IdentityModel.Services.SessionAuthenticationModule" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -590,6 +594,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey" />
       </Docs>
     </Member>
     <Member MemberName="EndpointId">
@@ -720,6 +725,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IdentityModel.Tokens.SessionSecurityTokenCache" />
+        <altmember cref="T:System.IdentityModel.Tokens.SessionSecurityTokenHandler" />
+        <altmember cref="P:System.IdentityModel.Services.SessionAuthenticationModule.IsReferenceMode" />
       </Docs>
     </Member>
     <Member MemberName="KeyEffectiveTime">
@@ -785,6 +793,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey" />
       </Docs>
     </Member>
     <Member MemberName="SecureConversationVersion">
@@ -875,5 +884,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SessionSecurityToken" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

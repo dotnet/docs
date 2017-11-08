@@ -26,9 +26,9 @@ Configure a list of tracking participants that listen to the tracking records be
   
 ## Syntax  
   
-```vb  
+```xml
    <tracking>    <participants>       <add name="String"            profileName="String"           type="String" />    </participants> </tracking>   
-```  
+```
   
 ## Attributes and Elements  
  The following sections describe attributes, child elements, and parent elements.  

@@ -281,5 +281,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="StartAt">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Prepares the generator to generate items, starting at the specified <see cref="T:System.Windows.Controls.Primitives.GeneratorPosition" />, and in the specified <see cref="T:System.Windows.Controls.Primitives.GeneratorDirection" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GenerateNext">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the container element used to display the next item.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

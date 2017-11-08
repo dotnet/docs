@@ -9,11 +9,9 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "controls [Windows Forms], creating"
-  - "UserControl class, Windows Forms"
+  - "UserControl class [Windows Forms], Windows Forms"
   - "custom controls [Windows Forms], creating"
 ms.assetid: 7570e982-545b-4c3a-a7c7-55581d313400
 caps.latest.revision: 14

@@ -10,10 +10,10 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "toolbars [Windows Forms]"
-  - "ToolStripRenderer class"
   - "ToolStrip control [Windows Forms]"
 ms.assetid: c66fd3f7-2377-4553-8f1b-006527f08f32
 caps.latest.revision: 9

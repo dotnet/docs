@@ -9,11 +9,9 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "controls [Windows Forms], moving between"
-  - "TAB key, enabling"
+  - "TAB key [Windows Forms], enabling"
   - "ToolStrip control [Windows Forms], moving from"
 ms.assetid: 40f9e88b-09a3-428e-8da8-c00bb65079c6
 caps.latest.revision: 7

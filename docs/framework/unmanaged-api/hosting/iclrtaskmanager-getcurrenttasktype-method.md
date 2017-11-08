@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRTaskManager::GetCurrentTaskType"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetCurrentTaskType method [.NET Framework hosting]"
   - "ICLRTaskManager::GetCurrentTaskType method [.NET Framework hosting]"

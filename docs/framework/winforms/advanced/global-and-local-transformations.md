@@ -10,11 +10,12 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "matrices, using transformations"
-  - "transformations, global"
-  - "transformations, local"
+  - "matrices [Windows Forms], using transformations"
+  - "transformations [Windows Forms], global"
+  - "transformations [Windows Forms], local"
 ms.assetid: b601d66d-d572-4f11-9d2e-92f0dc8893f3
 caps.latest.revision: 13
 author: dotnet-bot

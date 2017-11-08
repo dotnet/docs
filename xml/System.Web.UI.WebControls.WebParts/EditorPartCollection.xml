@@ -37,8 +37,8 @@
   
  The first part of this code example is the user control that enables users to change display modes on a Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_EditorPartCollection_Overview#4](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_EditorPartCollection_Overview/CS/displaymodecs.ascx#4)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_EditorPartCollection_Overview#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_EditorPartCollection_Overview/VB/displaymodevb.ascx#4)]  -->  
+ [!code-aspx-csharp[WebParts_EditorPartCollection_Overview#4](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_EditorPartCollection_Overview/CS/displaymodecs.ascx#4)]
+ [!code-aspx-vb[WebParts_EditorPartCollection_Overview#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_EditorPartCollection_Overview/VB/displaymodevb.ascx#4)]  
   
  The second part of the code example is the `TextDisplayWebPart` control. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. For a walkthrough that demonstrates both methods of compiling, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
@@ -49,13 +49,14 @@
   
  The third part of the code example is the Web page. Notice that the `<asp:editorzone>` element for the page contains declarations for three <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls. Two of these controls become part of a custom <xref:System.Web.UI.WebControls.WebParts.EditorPartCollection> object that is created when the `Button1_Click` method executes.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_EditorPartCollection_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_EditorPartCollection_Overview/CS/editorpartcollectioncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_EditorPartCollection_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_EditorPartCollection_Overview/VB/editorpartcollectionvb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_EditorPartCollection_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_EditorPartCollection_Overview/CS/editorpartcollectioncs.aspx#1)]
+ [!code-aspx-vb[WebParts_EditorPartCollection_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_EditorPartCollection_Overview/VB/editorpartcollectionvb.aspx#1)]  
   
  When you load the page in a browser, you can switch the page into edit mode by selecting **Edit** in the **Display Mode** drop-down list control. You can click the verbs menu (the downward arrow) in the title bar of the `TextDisplayWebPart` control, and click **Edit** to edit the control. When the editing user interface (UI) is visible, you can see all the <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls. You click the **Create EditorPartCollection** button to see the effects on the <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls that are created by the code that is manipulating the <xref:System.Web.UI.WebControls.WebParts.EditorPartCollection> object. Also, notice that the <xref:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart> control allows you to edit the custom `TextDisplayWebPart.ContentText` property. This is possible because the property is marked with a `WebBrowsable` attribute in the source code for the control. If you update the property value in the editing UI, you must return the page to normal browse mode to see the effect of updating the `TextDisplayWebPart.ContentText` property.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.EditorPart" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -116,13 +117,15 @@
   
  The code in the `Button1_Click` event creates an <xref:System.Collections.ArrayList> object, adds two of the three <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls in the page to the object, and then creates a new <xref:System.Web.UI.WebControls.WebParts.EditorPartCollection> object using the <xref:System.Web.UI.WebControls.WebParts.EditorPartCollection.%23ctor%2A> constructor. It also demonstrates how you can make changes to the underlying <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls, even though the collection is read-only.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_EditorPartCollection_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_EditorPartCollection_Overview/CS/editorpartcollectioncs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_EditorPartCollection_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_EditorPartCollection_Overview/VB/editorpartcollectionvb.aspx#2)]  -->  
+ [!code-aspx-csharp[WebParts_EditorPartCollection_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_EditorPartCollection_Overview/CS/editorpartcollectioncs.aspx#2)]
+ [!code-aspx-vb[WebParts_EditorPartCollection_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_EditorPartCollection_Overview/VB/editorpartcollectionvb.aspx#2)]  
   
  You can load the page in a browser and switch the page into edit mode by selecting **Edit** in the **Display Mode** drop-down list control. You can click the verbs menu (the downward arrow) in the title bar of the `TextDisplayWebPart` control, and click **Edit** to edit the control. When the editing user interface (UI) is visible, you can see all the <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls. You click the **Create EditorPartCollection** button to see the effects on the two <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls that are added to the <xref:System.Web.UI.WebControls.WebParts.EditorPartCollection> object.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.IWebEditable" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.EditorZoneBase.EditorParts" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -177,8 +180,8 @@
   
  The code in the `Button1_Click` event does not add the `LayoutEditorPart1` control to the <xref:System.Web.UI.WebControls.WebParts.EditorPartCollection> object when it adds the other controls. To confirm that the `LayoutEditorPart1` control is not in the collection, the code uses the <xref:System.Web.UI.WebControls.WebParts.EditorPartCollection.Contains%2A> method.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_EditorPartCollection_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_EditorPartCollection_Overview/CS/editorpartcollectioncs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_EditorPartCollection_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_EditorPartCollection_Overview/VB/editorpartcollectionvb.aspx#2)]  -->  
+ [!code-aspx-csharp[WebParts_EditorPartCollection_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_EditorPartCollection_Overview/CS/editorpartcollectioncs.aspx#2)]
+ [!code-aspx-vb[WebParts_EditorPartCollection_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_EditorPartCollection_Overview/VB/editorpartcollectionvb.aspx#2)]  
   
  When you load the page in a browser, you can switch the page into edit mode by selecting **Edit** in the **Display Mode** drop-down list control. You can click the verbs menu (the downward arrow) in the title bar of the `TextDisplayWebPart` control, and click **Edit** to edit the control. When the editing user interface (UI) is visible, you can see the all the <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls. If you click the **Create EditorPartCollection** button, you will notice that the background color of the `LayoutEditorPart1` control is different from the other controls, because it is not part of the <xref:System.Web.UI.WebControls.WebParts.EditorPartCollection> object.  
   
@@ -219,8 +222,8 @@
   
  The code in the `Button1_Click` event creates an array of <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls, adds the `LayoutEditorPart1` control to the array, and then uses the <xref:System.Web.UI.WebControls.WebParts.EditorPartCollection.CopyTo%2A> method to copy the controls from the <xref:System.Web.UI.WebControls.WebParts.EditorPartCollection> object to the array.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_EditorPartCollection_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_EditorPartCollection_Overview/CS/editorpartcollectioncs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_EditorPartCollection_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_EditorPartCollection_Overview/VB/editorpartcollectionvb.aspx#2)]  -->  
+ [!code-aspx-csharp[WebParts_EditorPartCollection_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_EditorPartCollection_Overview/CS/editorpartcollectioncs.aspx#2)]
+ [!code-aspx-vb[WebParts_EditorPartCollection_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_EditorPartCollection_Overview/VB/editorpartcollectionvb.aspx#2)]  
   
  When you load the page in a browser, you can switch the page into edit mode by selecting **Edit** in the **Display Mode** drop-down list control. You can click the verbs menu (the downward arrow) in the title bar of the `TextDisplayWebPart` control, and click **Edit** to edit the control. When the editing user interface (UI) is visible, you can see all the <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls. If you click the **Create EditorPartCollection** button, you will notice that the titles of all the controls in the custom array are listed near the bottom of the page.  
   
@@ -284,8 +287,8 @@
   
  The code in the `Button1_Click` event creates an <xref:System.Web.UI.WebControls.WebParts.EditorPartCollection> object, and then uses the <xref:System.Web.UI.WebControls.WebParts.EditorPartCollection.IndexOf%2A> method to locate the `PropertyGridEditorPart1` control in the collection, and set its <xref:System.Web.UI.WebControls.WebParts.Part.ChromeType%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_EditorPartCollection_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_EditorPartCollection_Overview/CS/editorpartcollectioncs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_EditorPartCollection_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_EditorPartCollection_Overview/VB/editorpartcollectionvb.aspx#2)]  -->  
+ [!code-aspx-csharp[WebParts_EditorPartCollection_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_EditorPartCollection_Overview/CS/editorpartcollectioncs.aspx#2)]
+ [!code-aspx-vb[WebParts_EditorPartCollection_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_EditorPartCollection_Overview/VB/editorpartcollectionvb.aspx#2)]  
   
  When you load the page in a browser, you can switch the page into edit mode by selecting **Edit** in the **Display Mode** drop-down list control. You can click the verbs menu (the downward arrow) in the title bar of the `TextDisplayWebPart` control, and click **Edit** to edit the control. When the editing user interface (UI) is visible, you can see all the <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls. If you click the **Create EditorPartCollection** button, you will notice that the `PropertyGridEditorPart1` control, which is near the bottom of the page, has a title but no border.  
   
@@ -315,5 +318,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.EditorPartCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

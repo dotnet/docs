@@ -159,6 +159,7 @@
         <summary>Gets the <see cref="P:System.Windows.Automation.AutomationProperties.HelpText" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
         <returns>A string containing the help text for the specified element. The string that is returned generally is the same text that is provided in the tooltip for the control.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.GetHelpText" />
       </Docs>
     </Member>
     <Member MemberName="GetIsColumnHeader">
@@ -313,6 +314,32 @@
         <summary>Gets the <see cref="P:System.Windows.Automation.AutomationProperties.LabeledBy" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
         <returns>The element that is targeted by the label.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.GetLabeledBy" />
+      </Docs>
+    </Member>
+    <Member MemberName="GetLiveSetting">
+      <MemberSignature Language="C#" Value="public static System.Windows.Automation.AutomationLiveSetting GetLiveSetting (System.Windows.DependencyObject element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Automation.AutomationLiveSetting GetLiveSetting(class System.Windows.DependencyObject element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.GetLiveSetting(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationLiveSetting</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> to check.</param>
+        <summary>Gets the <see cref="P:System.Windows.Automation.AutomationProperties.LiveSetting" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <returns>The <see cref="T:System.Windows.Automation.AutomationLiveSetting" /> value for the <paramref name="element" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Automation.AutomationProperties.SetLiveSetting(System.Windows.DependencyObject,System.Windows.Automation.AutomationLiveSetting)" />
       </Docs>
     </Member>
     <Member MemberName="GetName">
@@ -470,6 +497,23 @@
       </ReturnValue>
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationProperties.LabeledBy" /> attached property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LiveSettingProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty LiveSettingProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty LiveSettingProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationProperties.LiveSettingProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationProperties.LiveSetting" /> attached property. </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -649,6 +693,7 @@
         <param name="value">The value to set; <see langword="true" /> if the element is meant to be required to be filled out on a form, otherwise <see langword="false" />.</param>
         <summary>Sets the <see cref="P:System.Windows.Automation.AutomationProperties.IsRequiredForForm" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.IsRequiredForForm" />
       </Docs>
     </Member>
     <Member MemberName="SetIsRowHeader">
@@ -741,6 +786,30 @@
         <param name="value">The labeled by value to set.</param>
         <summary>Sets the <see cref="P:System.Windows.Automation.AutomationProperties.LabeledBy" /> attached property.</summary>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetLiveSetting">
+      <MemberSignature Language="C#" Value="public static void SetLiveSetting (System.Windows.DependencyObject element, System.Windows.Automation.AutomationLiveSetting value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetLiveSetting(class System.Windows.DependencyObject element, valuetype System.Windows.Automation.AutomationLiveSetting value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.SetLiveSetting(System.Windows.DependencyObject,System.Windows.Automation.AutomationLiveSetting)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="value" Type="System.Windows.Automation.AutomationLiveSetting" />
+      </Parameters>
+      <Docs>
+        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> to check.</param>
+        <param name="value">The value to assign to the property.</param>
+        <summary>Sets the <see cref="P:System.Windows.Automation.AutomationProperties.LiveSetting" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Automation.AutomationProperties.GetLiveSetting(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetName">

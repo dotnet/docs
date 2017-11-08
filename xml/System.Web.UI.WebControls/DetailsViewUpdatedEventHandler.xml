@@ -33,15 +33,19 @@
 ## Examples  
  The following code example demonstrates how to programmatically add a <xref:System.Web.UI.WebControls.DetailsViewUpdatedEventHandler> delegate to the <xref:System.Web.UI.WebControls.DetailsView.ItemUpdated> event of a <xref:System.Web.UI.WebControls.DetailsView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewUpdatedEventHandlerDynamic#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewUpdatedEventHandlerDynamic/CS/detailsviewupdatedeventhandlerdynamiccs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewUpdatedEventHandlerDynamic#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewUpdatedEventHandlerDynamic/VB/detailsviewupdatedeventhandlerdynamicvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewUpdatedEventHandlerDynamic#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewUpdatedEventHandlerDynamic/CS/detailsviewupdatedeventhandlerdynamiccs.aspx#1)]
+ [!code-aspx-vb[DetailsViewUpdatedEventHandlerDynamic#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewUpdatedEventHandlerDynamic/VB/detailsviewupdatedeventhandlerdynamicvb.aspx#1)]  
   
  The following code example demonstrates how to declaratively add a <xref:System.Web.UI.WebControls.DetailsViewUpdatedEventHandler> delegate to the <xref:System.Web.UI.WebControls.DetailsView.ItemUpdated> event of a <xref:System.Web.UI.WebControls.DetailsView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewUpdatedEventHandlerDeclarative#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewUpdatedEventHandlerDeclarative/CS/detailsviewupdatedeventhandlerdeclarativecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewUpdatedEventHandlerDeclarative#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewUpdatedEventHandlerDeclarative/VB/detailsviewupdatedeventhandlerdeclarativevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewUpdatedEventHandlerDeclarative#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewUpdatedEventHandlerDeclarative/CS/detailsviewupdatedeventhandlerdeclarativecs.aspx#1)]
+ [!code-aspx-vb[DetailsViewUpdatedEventHandlerDeclarative#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewUpdatedEventHandlerDeclarative/VB/detailsviewupdatedeventhandlerdeclarativevb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+    <altmember cref="T:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs" />
+    <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemUpdated" />
+    <altmember cref="M:System.Web.UI.WebControls.DetailsView.OnItemUpdated(System.Web.UI.WebControls.DetailsViewUpdatedEventArgs)" />
   </Docs>
 </Type>

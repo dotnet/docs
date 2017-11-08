@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugCode::GetILToNativeMapping"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetILToNativeMapping method, ICorDebugCode interface [.NET Framework debugging]"
   - "ICorDebugCode::GetILToNativeMapping method [.NET Framework debugging]"

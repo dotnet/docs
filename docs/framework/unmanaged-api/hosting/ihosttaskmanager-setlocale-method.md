@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostTaskManager::SetLocale"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SetLocale method, IHostTaskManager interface [.NET Framework hosting]"
   - "IHostTaskManager::SetLocale method [.NET Framework hosting]"

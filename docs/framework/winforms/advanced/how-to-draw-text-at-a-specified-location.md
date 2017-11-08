@@ -10,11 +10,12 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "text, drawing at specified locations [Windows Forms]"
+  - "text [Windows Forms], drawing at specified locations [Windows Forms]"
   - "drawing text"
-  - "drawing text, specified locations [Windows Forms]"
+  - "drawing text [Windows Forms], specified locations [Windows Forms]"
   - "Windows Forms, drawing text a a specified location"
 ms.assetid: 60816423-1c38-465e-980d-2c2b64d74086
 caps.latest.revision: 19

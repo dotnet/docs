@@ -41,11 +41,30 @@
 ## Examples  
  The following code example demonstrates how to use a <xref:System.Web.UI.WebControls.BoundField> object to display the values of a field in a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[BoundField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BoundField/CS/boundfieldcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[BoundField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BoundField/VB/boundfieldvb.aspx#1)]  -->  
+ [!code-aspx-csharp[BoundField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BoundField/CS/boundfieldcs.aspx#1)]
+ [!code-aspx-vb[BoundField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BoundField/VB/boundfieldvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="P:System.Web.UI.WebControls.GridView.Columns" />
+    <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsView.Fields" />
+    <altmember cref="T:System.Web.UI.WebControls.ButtonField" />
+    <altmember cref="T:System.Web.UI.WebControls.CheckBoxField" />
+    <altmember cref="T:System.Web.UI.WebControls.CommandField" />
+    <altmember cref="T:System.Web.UI.WebControls.DataControlField" />
+    <altmember cref="T:System.Web.UI.WebControls.HyperLinkField" />
+    <altmember cref="T:System.Web.UI.WebControls.TemplateField" />
+    <altmember cref="P:System.Web.UI.WebControls.BoundField.ApplyFormatInEditMode" />
+    <altmember cref="P:System.Web.UI.WebControls.BoundField.DataField" />
+    <altmember cref="P:System.Web.UI.WebControls.BoundField.DataFormatString" />
+    <altmember cref="P:System.Web.UI.WebControls.DataControlField.InsertVisible" />
+    <altmember cref="P:System.Web.UI.WebControls.BoundField.NullDisplayText" />
+    <altmember cref="P:System.Web.UI.WebControls.BoundField.ReadOnly" />
+    <altmember cref="P:System.Web.UI.WebControls.CheckBoxField.Text" />
+    <altmember cref="P:System.Web.UI.WebControls.BoundField.ConvertEmptyStringToNull" />
+    <altmember cref="P:System.Web.UI.WebControls.DataControlField.Visible" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -76,11 +95,13 @@
 ## Examples  
  The following code example demonstrates how to use the constructor to dynamically add a <xref:System.Web.UI.WebControls.BoundField> object to a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[BoundFieldCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BoundFieldCtor/CS/boundfieldctorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[BoundFieldCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BoundFieldCtor/VB/boundfieldctorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[BoundFieldCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BoundFieldCtor/CS/boundfieldctorcs.aspx#1)]
+ [!code-aspx-vb[BoundFieldCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BoundFieldCtor/VB/boundfieldctorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.Columns" />
       </Docs>
     </Member>
     <Member MemberName="ApplyFormatInEditMode">
@@ -118,11 +139,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.BoundField.ApplyFormatInEditMode%2A> property to apply the formatting string to field values while a <xref:System.Web.UI.WebControls.GridView> control is in edit mode. The formatting is then programmatically removed before the value is updated in the data source.  
   
- <!-- TODO: review snippet reference [!code-csharp[BoundFieldApplyFormatInEditMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/boundfieldapplyformatineditmode/CS/boundfieldapplyformatineditmodecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[BoundFieldApplyFormatInEditMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/boundfieldapplyformatineditmode/VB/boundfieldapplyformatineditmodevb.aspx#1)]  -->  
+ [!code-aspx-csharp[BoundFieldApplyFormatInEditMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/boundfieldapplyformatineditmode/CS/boundfieldapplyformatineditmodecs.aspx#1)]
+ [!code-aspx-vb[BoundFieldApplyFormatInEditMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/boundfieldapplyformatineditmode/VB/boundfieldapplyformatineditmodevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BoundField.DataFormatString" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowUpdating" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemUpdating" />
       </Docs>
     </Member>
     <Member MemberName="ConvertEmptyStringToNull">
@@ -160,11 +184,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.BoundField.ConvertEmptyStringToNull%2A> property to specify that an empty string ("") field value should automatically be converted to null.  
   
- <!-- TODO: review snippet reference [!code-csharp[BoundFieldConvertEmptyStringToNull#1](~/samples/snippets/csharp/VS_Snippets_WebNet/boundfieldconvertemptystringtonull/CS/boundfieldconvertemptystingtonullcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[BoundFieldConvertEmptyStringToNull#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/boundfieldconvertemptystringtonull/VB/boundfieldconvertemptystingtonullvb.aspx#1)]  -->  
+ [!code-aspx-csharp[BoundFieldConvertEmptyStringToNull#1](~/samples/snippets/csharp/VS_Snippets_WebNet/boundfieldconvertemptystringtonull/CS/boundfieldconvertemptystingtonullcs.aspx#1)]
+ [!code-aspx-vb[BoundFieldConvertEmptyStringToNull#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/boundfieldconvertemptystringtonull/VB/boundfieldconvertemptystingtonullvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BoundField.DataField" />
+        <altmember cref="P:System.Web.UI.WebControls.BoundField.DataFormatString" />
+        <altmember cref="P:System.Web.UI.WebControls.BoundField.NullDisplayText" />
       </Docs>
     </Member>
     <Member MemberName="CopyProperties">
@@ -193,6 +220,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.CloneField" />
+        <altmember cref="M:System.Web.UI.WebControls.BoundField.CreateField" />
       </Docs>
     </Member>
     <Member MemberName="CreateField">
@@ -219,6 +248,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.CloneField" />
+        <altmember cref="M:System.Web.UI.WebControls.BoundField.CopyProperties(System.Web.UI.WebControls.DataControlField)" />
       </Docs>
     </Member>
     <Member MemberName="DataField">
@@ -258,11 +289,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.BoundField.DataField%2A> property to specify which field to display in a <xref:System.Web.UI.WebControls.BoundField> field column of a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[BoundField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BoundField/CS/boundfieldcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[BoundField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BoundField/VB/boundfieldvb.aspx#1)]  -->  
+ [!code-aspx-csharp[BoundField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BoundField/CS/boundfieldcs.aspx#1)]
+ [!code-aspx-vb[BoundField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BoundField/VB/boundfieldvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BoundField.DataFormatString" />
+        <altmember cref="P:System.Web.UI.WebControls.BoundField.NullDisplayText" />
       </Docs>
     </Member>
     <Member MemberName="DataFormatString">
@@ -360,6 +393,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BoundField.DataField" />
+        <altmember cref="P:System.Web.UI.WebControls.BoundField.ApplyFormatInEditMode" />
       </Docs>
     </Member>
     <Member MemberName="ExtractValuesFromCell">
@@ -403,6 +438,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IDictionary" />
+        <altmember cref="T:System.Web.UI.WebControls.TableCell" />
       </Docs>
     </Member>
     <Member MemberName="FormatDataValue">
@@ -473,6 +510,7 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.BoundField" /> class, you can override this method to return a different value to display for the field in a designer.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.BoundField.GetValue(System.Web.UI.Control)" />
       </Docs>
     </Member>
     <Member MemberName="GetValue">
@@ -517,6 +555,7 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.BoundField" /> class, you can override this method to provide a custom routine to determine a field's value.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.BoundField.GetDesignTimeValue" />
       </Docs>
     </Member>
     <Member MemberName="HeaderText">
@@ -542,6 +581,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BoundField.DataField" />
       </Docs>
     </Member>
     <Member MemberName="HtmlEncode">
@@ -579,11 +619,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.BoundField.HtmlEncode%2A> property to prevent field values from being HTML-encoded before being displayed in a <xref:System.Web.UI.WebControls.BoundField> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[BoundFieldHtmlEncode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BoundFieldHtmlEncode/CS/BoundFieldHtmlEncodecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[BoundFieldHtmlEncode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BoundFieldHtmlEncode/VB/BoundFieldHtmlEncodevb.aspx#1)]  -->  
+ [!code-aspx-csharp[BoundFieldHtmlEncode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BoundFieldHtmlEncode/CS/BoundFieldHtmlEncodecs.aspx#1)]
+ [!code-aspx-vb[BoundFieldHtmlEncode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BoundFieldHtmlEncode/VB/BoundFieldHtmlEncodevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.HttpServerUtility.HtmlEncode" />
+        <altmember cref="P:System.Web.UI.WebControls.BoundField.SupportsHtmlEncode" />
       </Docs>
     </Member>
     <Member MemberName="HtmlEncodeFormatString">
@@ -618,6 +660,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BoundField.HtmlEncode" />
+        <altmember cref="P:System.Web.UI.WebControls.BoundField.DataFormatString" />
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -653,6 +697,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableCell" />
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.Initialize(System.Boolean,System.Web.UI.Control)" />
+        <altmember cref="M:System.Web.UI.WebControls.BoundField.InitializeCell(System.Web.UI.WebControls.DataControlFieldCell,System.Web.UI.WebControls.DataControlCellType,System.Web.UI.WebControls.DataControlRowState,System.Int32)" />
+        <altmember cref="M:System.Web.UI.WebControls.BoundField.InitializeDataCell(System.Web.UI.WebControls.DataControlFieldCell,System.Web.UI.WebControls.DataControlRowState)" />
       </Docs>
     </Member>
     <Member MemberName="InitializeCell">
@@ -689,6 +737,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.BoundField.Initialize(System.Boolean,System.Web.UI.Control)" />
+        <altmember cref="M:System.Web.UI.WebControls.BoundField.InitializeDataCell(System.Web.UI.WebControls.DataControlFieldCell,System.Web.UI.WebControls.DataControlRowState)" />
       </Docs>
     </Member>
     <Member MemberName="InitializeDataCell">
@@ -722,6 +772,8 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.BoundField" /> class, you can override this method to perform a custom initialization routine.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.BoundField.Initialize(System.Boolean,System.Web.UI.Control)" />
+        <altmember cref="M:System.Web.UI.WebControls.BoundField.InitializeCell(System.Web.UI.WebControls.DataControlFieldCell,System.Web.UI.WebControls.DataControlCellType,System.Web.UI.WebControls.DataControlRowState,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -779,11 +831,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.BoundField.NullDisplayText%2A> property to specify a custom caption to display for null field values.  
   
- <!-- TODO: review snippet reference [!code-csharp[BoundFieldNullDisplayText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BoundFieldNullDisplayText/CS/boundfieldnulldisplaytextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[BoundFieldNullDisplayText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BoundFieldNullDisplayText/VB/boundfieldnulldisplaytextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[BoundFieldNullDisplayText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BoundFieldNullDisplayText/CS/boundfieldnulldisplaytextcs.aspx#1)]
+ [!code-aspx-vb[BoundFieldNullDisplayText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BoundFieldNullDisplayText/VB/boundfieldnulldisplaytextvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BoundField.DataField" />
+        <altmember cref="P:System.Web.UI.WebControls.BoundField.DataFormatString" />
+        <altmember cref="P:System.Web.UI.WebControls.BoundField.ConvertEmptyStringToNull" />
       </Docs>
     </Member>
     <Member MemberName="OnDataBindField">
@@ -818,6 +873,8 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.BoundField" /> class, you can override this method to perform a custom binding routine.</para>
         </block>
+        <altmember cref="T:System.EventArgs" />
+        <altmember cref="T:System.Web.HttpException" />
       </Docs>
     </Member>
     <Member MemberName="ReadOnly">
@@ -855,11 +912,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.BoundField.ReadOnly%2A> property to prevent the values of the key field displayed in a <xref:System.Web.UI.WebControls.BoundField> object from being modified in edit mode.  
   
- <!-- TODO: review snippet reference [!code-csharp[BoundField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BoundField/CS/boundfieldcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[BoundField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BoundField/VB/boundfieldvb.aspx#1)]  -->  
+ [!code-aspx-csharp[BoundField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BoundField/CS/boundfieldcs.aspx#1)]
+ [!code-aspx-vb[BoundField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BoundField/VB/boundfieldvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.AutoGenerateEditButton" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AutoGenerateEditButton" />
       </Docs>
     </Member>
     <Member MemberName="SupportsHtmlEncode">
@@ -888,6 +947,8 @@
         <block subset="none" type="overrides">
           <para>When deriving from the <see cref="T:System.Web.UI.WebControls.BoundField" /> class, you can override this property to indicate whether HTML encoding is supported by the class.</para>
         </block>
+        <altmember cref="P:System.Web.UI.WebControls.BoundField.HtmlEncode" />
+        <altmember cref="Overload:System.Web.HttpServerUtility.HtmlEncode" />
       </Docs>
     </Member>
     <Member MemberName="ThisExpression">
@@ -914,6 +975,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ValidateRequestMode">
@@ -968,6 +1030,7 @@
         <block subset="none" type="overrides">
           <para>Classes that derive from the <see cref="T:System.Web.UI.WebControls.BoundField" /> class can override this method to indicate whether the controls contained by the field support callbacks. To indicate that callbacks are supported, implement this method as an empty method that does not throw an exception; otherwise, throw an exception with a useful message describing why callbacks are not supported.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.ValidateSupportsCallback" />
       </Docs>
     </Member>
   </Members>

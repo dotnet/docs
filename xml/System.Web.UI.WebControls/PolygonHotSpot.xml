@@ -27,11 +27,13 @@
 ## Examples  
  The following code example demonstrates how to create an <xref:System.Web.UI.WebControls.ImageMap> control that contains three <xref:System.Web.UI.WebControls.PolygonHotSpot> objects. Each <xref:System.Web.UI.WebControls.PolygonHotSpot> object represents a geographical region on the map. When the user clicks a <xref:System.Web.UI.WebControls.PolygonHotSpot> object, it posts back to the server and the type and name of the hot spot are displayed in a label.  
   
- <!-- TODO: review snippet reference [!code-csharp[PolygonHotSpot.Class1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PolygonHotSpot.Class1/CS/polygonhotspot.class1cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[PolygonHotSpot.Class1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PolygonHotSpot.Class1/VB/polygonhotspot.class1vb.aspx#1)]  -->  
+ [!code-aspx-csharp[PolygonHotSpot.Class1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PolygonHotSpot.Class1/CS/polygonhotspot.class1cs.aspx#1)]
+ [!code-aspx-vb[PolygonHotSpot.Class1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PolygonHotSpot.Class1/VB/polygonhotspot.class1vb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ImageMap" />
+    <altmember cref="P:System.Web.UI.WebControls.PolygonHotSpot.Coordinates" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -57,8 +59,8 @@
 ## Examples  
  The following code example demonstrates how to programmatically create a <xref:System.Web.UI.WebControls.PolygonHotSpot> object and add it to an <xref:System.Web.UI.WebControls.ImageMap> control. The <xref:System.Web.UI.WebControls.ImageMap> control contains two other <xref:System.Web.UI.WebControls.PolygonHotSpot> objects that have been added declaratively. Each <xref:System.Web.UI.WebControls.PolygonHotSpot> object represents a geographical region on the map. When the user clicks a <xref:System.Web.UI.WebControls.PolygonHotSpot> object, it posts back to the server and the type and name of the hot spot are displayed in a label.  
   
- <!-- TODO: review snippet reference [!code-csharp[PolygonHotSpot.Cstr#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PolygonHotSpot.Cstr/CS/polygonhotspot.cstrcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[PolygonHotSpot.Cstr#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PolygonHotSpot.Cstr/VB/polygonhotspot.cstrvb.aspx#1)]  -->  
+ [!code-aspx-csharp[PolygonHotSpot.Cstr#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PolygonHotSpot.Cstr/CS/polygonhotspot.cstrcs.aspx#1)]
+ [!code-aspx-vb[PolygonHotSpot.Cstr#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PolygonHotSpot.Cstr/VB/polygonhotspot.cstrvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -95,11 +97,12 @@
 ## Examples  
  The following code example demonstrates how to programmatically create a <xref:System.Web.UI.WebControls.PolygonHotSpot> object and add it to an <xref:System.Web.UI.WebControls.ImageMap> control. The <xref:System.Web.UI.WebControls.PolygonHotSpot.Coordinates%2A> property is used to specify the coordinates of the vertexes of the <xref:System.Web.UI.WebControls.PolygonHotSpot> object. The <xref:System.Web.UI.WebControls.ImageMap> control contains two other <xref:System.Web.UI.WebControls.PolygonHotSpot> objects that have been added declaratively. Each <xref:System.Web.UI.WebControls.PolygonHotSpot> object represents a geographical region on the map. When the user clicks a <xref:System.Web.UI.WebControls.PolygonHotSpot> object, it posts back to the server and the type and name of the hot spot are displayed in a label.  
   
- <!-- TODO: review snippet reference [!code-csharp[PolygonHotSpot.Cstr#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PolygonHotSpot.Cstr/CS/polygonhotspot.cstrcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[PolygonHotSpot.Cstr#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PolygonHotSpot.Cstr/VB/polygonhotspot.cstrvb.aspx#1)]  -->  
+ [!code-aspx-csharp[PolygonHotSpot.Cstr#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PolygonHotSpot.Cstr/CS/polygonhotspot.cstrcs.aspx#1)]
+ [!code-aspx-vb[PolygonHotSpot.Cstr#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PolygonHotSpot.Cstr/VB/polygonhotspot.cstrvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ImageMap" />
       </Docs>
     </Member>
     <Member MemberName="GetCoordinates">
@@ -131,11 +134,13 @@
 ## Examples  
  The following code example demonstrates how to create an <xref:System.Web.UI.WebControls.ImageMap> control that contains three <xref:System.Web.UI.WebControls.PolygonHotSpot> objects. Each <xref:System.Web.UI.WebControls.PolygonHotSpot> object represents a geographical region on the map. When the user clicks a <xref:System.Web.UI.WebControls.PolygonHotSpot> object, it posts back to the server. The <xref:System.Web.UI.WebControls.PolygonHotSpot.GetCoordinates%2A> method retrieves the coordinates of the polygon's vertexes so that they can be displayed in a label.  
   
- <!-- TODO: review snippet reference [!code-csharp[PolygonHotSpot.GetCoordinates#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PolygonHotSpot.GetCoordinates/CS/polygonhotspot.getcoordinatescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[PolygonHotSpot.GetCoordinates#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PolygonHotSpot.GetCoordinates/VB/polygonhotspot.getcoordinatesvb.aspx#1)]  -->  
+ [!code-aspx-csharp[PolygonHotSpot.GetCoordinates#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PolygonHotSpot.GetCoordinates/CS/polygonhotspot.getcoordinatescs.aspx#1)]
+ [!code-aspx-vb[PolygonHotSpot.GetCoordinates#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PolygonHotSpot.GetCoordinates/VB/polygonhotspot.getcoordinatesvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ImageMap" />
+        <altmember cref="P:System.Web.UI.WebControls.PolygonHotSpot.Coordinates" />
       </Docs>
     </Member>
     <Member MemberName="MarkupName">

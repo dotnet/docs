@@ -50,6 +50,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.Design.UndoEngine.UndoUnit" />
+    <altmember cref="T:System.ComponentModel.Design.Serialization.ComponentSerializationService" />
+    <altmember cref="T:System.ComponentModel.Design.IDesignerHost" />
+    <altmember cref="T:System.ComponentModel.Design.IComponentChangeService" />
+    <altmember cref="T:System.IServiceProvider" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -78,6 +83,9 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="provider" /> is <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">A required service cannot be found. See <see cref="T:System.ComponentModel.Design.UndoEngine" /> for required services. If you have removed this service, ensure that you provide a replacement.</exception>
+        <altmember cref="T:System.ComponentModel.Design.UndoEngine.UndoUnit" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerHost" />
+        <altmember cref="T:System.IServiceProvider" />
       </Docs>
     </Member>
     <Member MemberName="AddUndoUnit">
@@ -106,6 +114,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.UndoEngine.UndoUnit" />
       </Docs>
     </Member>
     <Member MemberName="CreateUndoUnit">
@@ -168,6 +177,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.UndoEngine.UndoUnit" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -381,5 +391,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.ComponentModel.Design.UndoEngine" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

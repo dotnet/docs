@@ -16,14 +16,15 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- <!-- TODO: review snippet reference [!code-csharp[Classic HyperLink.Text Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HyperLink.Text Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HyperLink.Text Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HyperLink.Text Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HyperLink.Text Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HyperLink.Text Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HyperLink.Text Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HyperLink.Text Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
       <para>To create a custom control builder for a <see cref="T:System.Web.UI.WebControls.HyperLink" /> derived control, you need to inherit from this class.</para>
     </block>
+    <altmember cref="T:System.Web.UI.ControlBuilder" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,6 +40,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.HyperLinkControlBuilder" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.ControlBuilder" />
       </Docs>
     </Member>
     <Member MemberName="AllowWhitespaceLiterals">
@@ -65,6 +67,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.ControlBuilder.AllowWhitespaceLiterals" />
       </Docs>
     </Member>
   </Members>

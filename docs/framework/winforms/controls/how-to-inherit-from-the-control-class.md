@@ -9,11 +9,9 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "inheritance, Windows Forms custom controls"
-  - "Control class, inheriting from"
+  - "inheritance [Windows Forms], Windows Forms custom controls"
+  - "Control class [Windows Forms], inheriting from"
   - "custom controls [Windows Forms], inheritance"
   - "OnPaint method [Windows Forms]"
   - "custom controls [Windows Forms], creating"

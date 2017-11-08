@@ -228,6 +228,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Numerics.Complex.Magnitude" />
       </Docs>
     </Member>
     <Member MemberName="Acos">
@@ -279,6 +280,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Numerics.Complex.Cos(System.Numerics.Complex)" />
+        <altmember cref="M:System.Math.Acos(System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -334,6 +337,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Numerics.Complex.op_Addition(System.Numerics.Complex,System.Numerics.Complex)" />
       </Docs>
     </Member>
     <Member MemberName="Asin">
@@ -385,6 +389,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Numerics.Complex.Sin(System.Numerics.Complex)" />
+        <altmember cref="M:System.Math.Asin(System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="Atan">
@@ -436,6 +442,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Numerics.Complex.Tan(System.Numerics.Complex)" />
+        <altmember cref="M:System.Math.Atan(System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="Conjugate">
@@ -534,6 +542,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Numerics.Complex.Acos(System.Numerics.Complex)" />
+        <altmember cref="M:System.Math.Cos(System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="Cosh">
@@ -577,6 +587,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Math.Cosh(System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="Divide">
@@ -632,6 +643,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Numerics.Complex.op_Division(System.Numerics.Complex,System.Numerics.Complex)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -688,6 +700,7 @@
  [!code-csharp[System.Numerics.Complex.Equals#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.numerics.complex.equals/cs/precision1.cs#5)]
  [!code-vb[System.Numerics.Complex.Equals#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.numerics.complex.equals/vb/precision1.vb#5)]</para>
         </block>
+        <altmember cref="T:System.Double" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -796,6 +809,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Math.Exp(System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="FromPolarCoordinates">
@@ -849,6 +863,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Numerics.Complex.Magnitude" />
+        <altmember cref="P:System.Numerics.Complex.Phase" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -921,6 +937,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Numerics.Complex.Real" />
       </Docs>
     </Member>
     <Member MemberName="ImaginaryOne">
@@ -958,6 +975,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Numerics.Complex.One" />
+        <altmember cref="F:System.Numerics.Complex.Zero" />
       </Docs>
     </Member>
     <Member MemberName="Log">
@@ -1005,6 +1024,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Math.Log(System.Double)" />
+        <altmember cref="M:System.Numerics.Complex.Exp(System.Numerics.Complex)" />
       </Docs>
     </Member>
     <Member MemberName="Log">
@@ -1136,6 +1157,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Numerics.Complex.Abs(System.Numerics.Complex)" />
+        <altmember cref="P:System.Numerics.Complex.Phase" />
       </Docs>
     </Member>
     <Member MemberName="Multiply">
@@ -1191,6 +1214,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Numerics.Complex.op_Multiply(System.Numerics.Complex,System.Numerics.Complex)" />
       </Docs>
     </Member>
     <Member MemberName="Negate">
@@ -1240,6 +1264,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Numerics.Complex.op_UnaryNegation(System.Numerics.Complex)" />
       </Docs>
     </Member>
     <Member MemberName="One">
@@ -1277,6 +1302,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Numerics.Complex.ImaginaryOne" />
+        <altmember cref="F:System.Numerics.Complex.Zero" />
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
@@ -1337,6 +1364,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Numerics.Complex.Add(System.Numerics.Complex,System.Numerics.Complex)" />
       </Docs>
     </Member>
     <Member MemberName="op_Division">
@@ -1389,6 +1417,7 @@
   
  The equivalent method for this operator is <xref:System.Numerics.Complex.Divide%28System.Numerics.Complex%2CSystem.Numerics.Complex%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <altmember cref="M:System.Numerics.Complex.Divide(System.Numerics.Complex,System.Numerics.Complex)" />
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -2060,6 +2089,7 @@ This API is not CLS-compliant.</summary>
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Numerics.Complex.op_Equality(System.Numerics.Complex,System.Numerics.Complex)" />
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
@@ -2112,6 +2142,7 @@ This API is not CLS-compliant.</summary>
   
  The equivalent method for this operator is <xref:System.Numerics.Complex.Multiply%28System.Numerics.Complex%2CSystem.Numerics.Complex%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <altmember cref="M:System.Numerics.Complex.Multiply(System.Numerics.Complex,System.Numerics.Complex)" />
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
@@ -2164,6 +2195,7 @@ This API is not CLS-compliant.</summary>
   
  The equivalent method for this operator is <xref:System.Numerics.Complex.Subtract%28System.Numerics.Complex%2CSystem.Numerics.Complex%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <altmember cref="M:System.Numerics.Complex.Subtract(System.Numerics.Complex,System.Numerics.Complex)" />
       </Docs>
     </Member>
     <Member MemberName="op_UnaryNegation">
@@ -2208,6 +2240,7 @@ This API is not CLS-compliant.</summary>
   
  The equivalent method for this operator is <xref:System.Numerics.Complex.Negate%28System.Numerics.Complex%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <altmember cref="M:System.Numerics.Complex.Negate(System.Numerics.Complex)" />
       </Docs>
     </Member>
     <Member MemberName="Phase">
@@ -2257,6 +2290,7 @@ This API is not CLS-compliant.</summary>
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Numerics.Complex.Magnitude" />
       </Docs>
     </Member>
     <Member MemberName="Pow">
@@ -2294,7 +2328,7 @@ This API is not CLS-compliant.</summary>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `value` is <xref:System.Numerics.Complex?displayProperty=nameWithType>, the method returns <xref:System.Numerics.Complex?displayProperty=nameWithType>. For other values, if `power` is 0, the method returns <xref:System.Numerics.Complex?displayProperty=nameWithType>, and if `power` is 1, it returns `value`.  
+ If `value` is <xref:System.Numerics.Complex.Zero?displayProperty=nameWithType>, the method returns <xref:System.Numerics.Complex.Zero?displayProperty=nameWithType>. For other values, if `power` is 0, the method returns <xref:System.Numerics.Complex.One?displayProperty=nameWithType>, and if `power` is 1, it returns `value`.  
   
  This method corresponds to the <xref:System.Math.Pow%2A?displayProperty=nameWithType> method for primitive numeric types.  
   
@@ -2385,6 +2419,7 @@ This API is not CLS-compliant.</summary>
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Numerics.Complex.Imaginary" />
       </Docs>
     </Member>
     <Member MemberName="Reciprocal">
@@ -2420,14 +2455,14 @@ This API is not CLS-compliant.</summary>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The reciprocal, or multiplicative inverse, of a number *x* is a number *y* where *x* multiplied by *y* yields 1. The reciprocal of a complex number is the complex number that produces <xref:System.Numerics.Complex?displayProperty=nameWithType> when the two numbers are multiplied. If a complex number is represented by a +bi, its reciprocal is represented by the expression a/(a<sup>2</sup>+b<sup>2</sup>) + -b/(a<sup>2</sup> + b<sup>2</sup>).  
+ The reciprocal, or multiplicative inverse, of a number *x* is a number *y* where *x* multiplied by *y* yields 1. The reciprocal of a complex number is the complex number that produces <xref:System.Numerics.Complex.One?displayProperty=nameWithType> when the two numbers are multiplied. If a complex number is represented by a +bi, its reciprocal is represented by the expression a/(a<sup>2</sup>+b<sup>2</sup>) + -b/(a<sup>2</sup> + b<sup>2</sup>).  
   
- If value is <xref:System.Numerics.Complex?displayProperty=nameWithType>, the method returns <xref:System.Numerics.Complex?displayProperty=nameWithType>. Otherwise, it returns the result of the expression <xref:System.Numerics.Complex?displayProperty=nameWithType>/`value`.  
+ If value is <xref:System.Numerics.Complex.Zero?displayProperty=nameWithType>, the method returns <xref:System.Numerics.Complex.Zero?displayProperty=nameWithType>. Otherwise, it returns the result of the expression <xref:System.Numerics.Complex.One?displayProperty=nameWithType>/`value`.  
   
    
   
 ## Examples  
- The following example uses the <xref:System.Numerics.Complex.Reciprocal%2A> method to calculate the reciprocal values of several complex numbers. It also demonstrates that the result of multiplying a complex number by its reciprocal is <xref:System.Numerics.Complex?displayProperty=nameWithType>.  
+ The following example uses the <xref:System.Numerics.Complex.Reciprocal%2A> method to calculate the reciprocal values of several complex numbers. It also demonstrates that the result of multiplying a complex number by its reciprocal is <xref:System.Numerics.Complex.One?displayProperty=nameWithType>.  
   
  [!code-csharp[System.Numerics.Complex.Reciprocal#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.numerics.complex.reciprocal/cs/reciprocal1.cs#1)]
  [!code-vb[System.Numerics.Complex.Reciprocal#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.numerics.complex.reciprocal/vb/reciprocal1.vb#1)]  
@@ -2485,6 +2520,8 @@ This API is not CLS-compliant.</summary>
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Math.Asin(System.Double)" />
+        <altmember cref="M:System.Numerics.Complex.Sin(System.Numerics.Complex)" />
       </Docs>
     </Member>
     <Member MemberName="Sinh">
@@ -2528,6 +2565,7 @@ This API is not CLS-compliant.</summary>
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Math.Sinh(System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="Sqrt">
@@ -2626,6 +2664,7 @@ This API is not CLS-compliant.</summary>
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Numerics.Complex.op_Subtraction(System.Numerics.Complex,System.Numerics.Complex)" />
       </Docs>
     </Member>
     <Member MemberName="Tan">
@@ -2677,6 +2716,8 @@ This API is not CLS-compliant.</summary>
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Numerics.Complex.Atan(System.Numerics.Complex)" />
+        <altmember cref="M:System.Math.Tan(System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="Tanh">
@@ -2720,6 +2761,7 @@ This API is not CLS-compliant.</summary>
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Math.Tanh(System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -2856,7 +2898,7 @@ This API is not CLS-compliant.</summary>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The string representation of the complex number returned by this method displays the number using its Cartesian coordinates in the form `(`*a*`,` *b*`)`, where *a* is the real part of the complex number, and *b* is its imaginary part. Both *a* and *b* are formatted using the format string specified by `format`. The `format` parameter can be any valid standard numeric format specifier, or any combination of custom numeric format specifiers. If `format` is equal to <xref:System.String?displayProperty=nameWithType> or is `null`, the real and imaginary parts of the complex number are formatted with the general format specifier ("G"). If `format` is any other value, the method throws a <xref:System.FormatException>.  
+ The string representation of the complex number returned by this method displays the number using its Cartesian coordinates in the form `(`*a*`,` *b*`)`, where *a* is the real part of the complex number, and *b* is its imaginary part. Both *a* and *b* are formatted using the format string specified by `format`. The `format` parameter can be any valid standard numeric format specifier, or any combination of custom numeric format specifiers. If `format` is equal to <xref:System.String.Empty?displayProperty=nameWithType> or is `null`, the real and imaginary parts of the complex number are formatted with the general format specifier ("G"). If `format` is any other value, the method throws a <xref:System.FormatException>.  
   
  The .NET Framework provides extensive formatting support, which is described in greater detail in the following topics:  
   
@@ -2915,7 +2957,7 @@ This API is not CLS-compliant.</summary>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The string representation of the complex number returned by this method displays the number using its Cartesian coordinates in the form `(`*a*`,` *b*`)`, where *a* is the real part of the complex number, and *b* is its imaginary part. Both *a* and *b* are formatted using the format string specified by `format`. The `format` parameter can be any valid standard numeric format specifier, or any combination of custom numeric format specifiers. If `format` is equal to <xref:System.String?displayProperty=nameWithType> or is `null`, the real and imaginary parts of the complex number are formatted with the general format specifier ("G"). If `format` is any other value, the method throws a <xref:System.FormatException>.  
+ The string representation of the complex number returned by this method displays the number using its Cartesian coordinates in the form `(`*a*`,` *b*`)`, where *a* is the real part of the complex number, and *b* is its imaginary part. Both *a* and *b* are formatted using the format string specified by `format`. The `format` parameter can be any valid standard numeric format specifier, or any combination of custom numeric format specifiers. If `format` is equal to <xref:System.String.Empty?displayProperty=nameWithType> or is `null`, the real and imaginary parts of the complex number are formatted with the general format specifier ("G"). If `format` is any other value, the method throws a <xref:System.FormatException>.  
   
  The .NET Framework provides extensive formatting support, which is described in greater detail in the following topics:  
   
@@ -2987,7 +3029,70 @@ This API is not CLS-compliant.</summary>
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Numerics.Complex.ImaginaryOne" />
+        <altmember cref="F:System.Numerics.Complex.One" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Pow">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Numerics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a specified complex number raised to a specified power.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="op_Explicit">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Numerics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Defines an explicit conversion between a <see cref="T:System.Numerics.Complex" /> object and another type.</summary>
+        <altmember cref="Overload:System.Numerics.Complex.op_Implicit" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Numerics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether two complex numbers are equal.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Numerics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the value of a complex number to its equivalent string representation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="op_Implicit">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Numerics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Defines an implicit conversion between a <see cref="T:System.Numerics.Complex" /> object and another type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Log">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Numerics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the logarithm of a complex number.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

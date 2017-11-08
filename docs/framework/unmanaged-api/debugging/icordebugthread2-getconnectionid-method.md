@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugThread2::GetConnectionID"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugThread2::GetConnectionID method [.NET Framework debugging]"
   - "GetConnectionID method [.NET Framework debugging]"

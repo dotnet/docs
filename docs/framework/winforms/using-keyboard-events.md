@@ -9,11 +9,9 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "KeyPress event"
-  - "keyboards, keyboard events"
+  - "KeyPress event [Windows Forms]"
+  - "keyboards [Windows Forms], keyboard events"
   - "KeyUp event"
   - "KeyDown event"
   - "keyboard events"

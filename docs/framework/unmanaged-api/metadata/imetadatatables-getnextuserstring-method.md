@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataTables::GetNextUserString"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetNextUserString method [.NET Framework metadata]"
   - "IMetaDataTables::GetNextUserString method [.NET Framework metadata]"

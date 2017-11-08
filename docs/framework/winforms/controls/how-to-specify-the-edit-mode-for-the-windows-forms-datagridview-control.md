@@ -10,10 +10,11 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], edit mode"
-  - "data grids, edit mode"
+  - "data grids [Windows Forms], edit mode"
 ms.assetid: 93e117e8-94c4-411b-ba31-645e475ed85c
 caps.latest.revision: 17
 author: dotnet-bot

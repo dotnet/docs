@@ -11,10 +11,8 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "ImageList"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "collection controls, images"
+  - "collection controls [Windows Forms], images"
   - "icon list control"
   - "ImageList component [Windows Forms], about ImageList component"
 ms.assetid: 7e25d89b-5633-40c1-afc3-82e0e301ffa2

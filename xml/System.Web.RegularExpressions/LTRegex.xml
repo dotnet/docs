@@ -21,6 +21,7 @@
  ]]></format>
     </remarks>
     <forInternalUseOnly />
+    <altmember cref="T:System.Text.RegularExpressions.Regex" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -65,5 +66,14 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.RegularExpressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.RegularExpressions.LTRegex" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

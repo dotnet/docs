@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback4::ReJITError"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ReJITError method, ICorProfilerCallback4 interface [.NET Framework profiling]"
   - "ICorProfilerCallback4::ReJITError method [.NET Framework profiling]"

@@ -10,13 +10,14 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "layout engines, custom"
+  - "layout engines [Windows Forms], custom"
   - "TableLayoutPanel control [Windows Forms], layout engine"
-  - "layout engines, implementing"
+  - "layout engines [Windows Forms], implementing"
   - "FlowLayoutPanel control [Windows Forms], layout engine"
-  - "LayoutEngine class"
 ms.assetid: f91aa91c-29f4-4089-95ca-5d48b774b00e
 caps.latest.revision: 7
 author: dotnet-bot

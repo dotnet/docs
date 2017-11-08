@@ -10,10 +10,11 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "columns [Windows Forms], hiding column headers"
-  - "column headers, hiding"
+  - "column headers [Windows Forms], hiding"
   - "DataGridView control [Windows Forms], column headers"
 ms.assetid: e4ad5f68-50d2-4b9e-93ee-9d622423a8ab
 caps.latest.revision: 12

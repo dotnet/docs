@@ -9,11 +9,9 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "shortcut menus, attaching to TreeNodes"
-  - "TreeNode, attaching a shortcut menu using Designer"
+  - "shortcut menus [Windows Forms], attaching to TreeNodes"
+  - "TreeNode [Windows Forms], attaching a shortcut menu using Designer"
 ms.assetid: 8e45e184-1313-4f8f-90ff-2cd5789b2268
 caps.latest.revision: 9
 author: dotnet-bot

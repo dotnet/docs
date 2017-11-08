@@ -33,11 +33,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputReset> control to reset the values of a form on a Web page.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.HtmlControls.HtmlInputReset#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlInputReset/CS/htmlinputresetcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.HtmlControls.HtmlInputReset#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlInputReset/VB/htmlinputresetvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.HtmlControls.HtmlInputReset#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlInputReset/CS/htmlinputresetcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.HtmlControls.HtmlInputReset#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlInputReset/VB/htmlinputresetvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputButton" />
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputSubmit" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -67,8 +69,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputReset> control to reset the values of a Web page form.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.HtmlControls.HtmlInputReset#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlInputReset/CS/htmlinputresetcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.HtmlControls.HtmlInputReset#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlInputReset/VB/htmlinputresetvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.HtmlControls.HtmlInputReset#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlInputReset/CS/htmlinputresetcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.HtmlControls.HtmlInputReset#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlInputReset/VB/htmlinputresetvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -106,8 +108,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputReset> control to reset the values of a Web page form.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.HtmlControls.HtmlInputReset#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlInputReset/CS/htmlinputresetcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.HtmlControls.HtmlInputReset#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlInputReset/VB/htmlinputresetvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.HtmlControls.HtmlInputReset#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlInputReset/CS/htmlinputresetcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.HtmlControls.HtmlInputReset#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlInputReset/VB/htmlinputresetvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -145,6 +147,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlInputReset.ValidationGroup" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlInputButton.CausesValidation" />
       </Docs>
     </Member>
     <Member MemberName="ServerClick">
@@ -177,6 +181,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.HtmlControls.HtmlInputButton.ServerClick" />
       </Docs>
     </Member>
     <Member MemberName="ValidationGroup">
@@ -210,7 +215,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlInputReset.CausesValidation" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlInputButton.CausesValidation" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlInputReset" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

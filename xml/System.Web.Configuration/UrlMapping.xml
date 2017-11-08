@@ -29,11 +29,13 @@
  The following example uses the <xref:System.Web.Configuration.UrlMappingsSection> of the Web.config file to map two URLs, and adds a mapping for an additional URL. When you modify and save the Web.config file, your application restarts.  
   
   
-<!-- TODO: review snippet reference [!code-csharp[System.Web.Configuration.UrlMapping2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.UrlMapping2/cs/default.aspx#1)]  -->
-<!-- TODO: review snippet reference [!code-vb[System.Web.Configuration.UrlMapping2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.UrlMapping2/vb/default.aspx#1)]  -->  
+[!code-aspx-csharp[System.Web.Configuration.UrlMapping2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.UrlMapping2/cs/default.aspx#1)]
+[!code-aspx-vb[System.Web.Configuration.UrlMapping2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.UrlMapping2/vb/default.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Configuration.UrlMappingsSection" />
+    <altmember cref="T:System.Web.Configuration.UrlMappingCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -65,11 +67,13 @@
  The following example uses the <xref:System.Web.Configuration.UrlMappingsSection> of the Web.config file to map two URLs, and adds a mapping for an additional URL. When you modify and save the Web.config file, your application restarts.  
   
   
-<!-- TODO: review snippet reference [!code-csharp[System.Web.Configuration.UrlMapping2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.UrlMapping2/cs/default.aspx#1)]  -->
-<!-- TODO: review snippet reference [!code-vb[System.Web.Configuration.UrlMapping2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.UrlMapping2/vb/default.aspx#1)]  -->  
+[!code-aspx-csharp[System.Web.Configuration.UrlMapping2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.UrlMapping2/cs/default.aspx#1)]
+[!code-aspx-vb[System.Web.Configuration.UrlMapping2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.UrlMapping2/vb/default.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.UrlMappingsSection" />
+        <altmember cref="T:System.Web.Configuration.UrlMappingCollection" />
       </Docs>
     </Member>
     <Member MemberName="MappedUrl">
@@ -111,6 +115,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.UrlMappingsSection" />
+        <altmember cref="T:System.Web.Configuration.UrlMappingCollection" />
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -164,6 +170,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.UrlMappingsSection" />
+        <altmember cref="T:System.Web.Configuration.UrlMappingCollection" />
       </Docs>
     </Member>
   </Members>

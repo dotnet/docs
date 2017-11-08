@@ -10,12 +10,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "graphics, paths"
+  - "graphics [Windows Forms], paths"
   - "GDI+, drawing paths"
-  - "paths, drawing"
-  - "drawing, paths"
+  - "paths [Windows Forms], drawing"
+  - "drawing [Windows Forms], paths"
 ms.assetid: a5500dec-666c-41fd-9da3-2169dd89c5eb
 caps.latest.revision: 16
 author: dotnet-bot

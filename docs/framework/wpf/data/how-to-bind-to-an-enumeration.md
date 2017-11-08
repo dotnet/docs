@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "binding data, enumeration"
-  - "data binding, enumeration"
-  - "enumeration"
+  - "binding data [WPF], enumeration"
+  - "data binding [WPF], enumeration"
+  - "enumeration [WPF]"
 ms.assetid: b9091eba-1119-424e-868b-d1a4168b3732
 caps.latest.revision: 8
 author: dotnet-bot

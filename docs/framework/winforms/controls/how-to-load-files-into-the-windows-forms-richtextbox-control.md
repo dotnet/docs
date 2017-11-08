@@ -10,16 +10,18 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "text boxes, displaying files"
+  - "text boxes [Windows Forms], displaying files"
   - "examples [Windows Forms], text boxes"
-  - ".rtf files, opening in RichTextBox control"
-  - "RTF files, opening in RichTextBox control"
-  - "text files, displaying in RichTextBox control"
-  - ".rtf files, displaying in RichTextBox control"
+  - ".rtf files [Windows Forms], opening in RichTextBox control"
+  - "RTF files [Windows Forms], opening in RichTextBox control"
+  - "text files [Windows Forms], displaying in RichTextBox control"
+  - ".rtf files [Windows Forms], displaying in RichTextBox control"
   - "RichTextBox control [Windows Forms], opening files"
-  - "RTF files, displaying in RichTextBox control"
+  - "RTF files [Windows Forms], displaying in RichTextBox control"
 ms.assetid: c03451be-f285-4428-a71a-c41e002cc919
 caps.latest.revision: 13
 author: dotnet-bot

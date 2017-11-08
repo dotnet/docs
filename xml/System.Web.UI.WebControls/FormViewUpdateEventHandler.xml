@@ -36,15 +36,19 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewUpdatedEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewUpdatedEventHandler/CS/formviewupdatedeventhandlercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewUpdatedEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewUpdatedEventHandler/VB/formviewupdatedeventhandlervb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewUpdatedEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewUpdatedEventHandler/CS/formviewupdatedeventhandlercs.aspx#1)]
+ [!code-aspx-vb[FormViewUpdatedEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewUpdatedEventHandler/VB/formviewupdatedeventhandlervb.aspx#1)]  
   
  The following example demonstrates how to declaratively add a <xref:System.Web.UI.WebControls.FormViewUpdateEventHandler> delegate to the <xref:System.Web.UI.WebControls.FormView.ItemUpdating> event of a <xref:System.Web.UI.WebControls.FormView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewUpdateEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewUpdateEventArgs/CS/formviewupdateeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewUpdateEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewUpdateEventArgs/VB/formviewupdateeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewUpdateEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewUpdateEventArgs/CS/formviewupdateeventargscs.aspx#1)]
+ [!code-aspx-vb[FormViewUpdateEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewUpdateEventArgs/VB/formviewupdateeventargsvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.FormView" />
+    <altmember cref="T:System.Web.UI.WebControls.FormViewUpdateEventArgs" />
+    <altmember cref="E:System.Web.UI.WebControls.FormView.ItemUpdating" />
+    <altmember cref="M:System.Web.UI.WebControls.FormView.OnItemUpdated(System.Web.UI.WebControls.FormViewUpdatedEventArgs)" />
   </Docs>
 </Type>

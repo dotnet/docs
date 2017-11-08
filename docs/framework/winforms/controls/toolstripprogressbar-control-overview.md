@@ -11,11 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "ToolStripProgressBar"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "toolbars [Windows Forms], progress bars"
-  - "progress controls"
+  - "progress controls [Windows Forms]"
   - "ToolStripProgressBar control [Windows Forms], about ToolStripProgressBar control"
 ms.assetid: ec3ab522-5fe4-4b4d-a551-bc19e84f4774
 caps.latest.revision: 6

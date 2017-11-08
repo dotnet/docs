@@ -54,6 +54,7 @@
         <summary>Edits the specified object's value using the editor style indicated by the <see cref="M:System.Drawing.Design.UITypeEditor.GetEditStyle" /> method.</summary>
         <returns>The new value of the object. If the value of the object has not changed, this should return the same object it was passed.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Drawing.Design.UITypeEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetEditStyle">
@@ -76,6 +77,7 @@
         <summary>Retrieves the edit style that is used by the <see cref="Overload:System.Web.UI.Design.WebControls.TreeNodeCollectionEditor.EditValue" /> method.</summary>
         <returns>A <see cref="T:System.Drawing.Design.UITypeEditorEditStyle" /> value that indicates the style of editor used by the <see cref="Overload:System.Web.UI.Design.WebControls.TreeNodeCollectionEditor.EditValue" /> method. If the <see cref="T:System.Drawing.Design.UITypeEditor" /> does not support this method, then <see cref="Overload:System.Drawing.Design.UITypeEditor.GetEditStyle" /> will return <see cref="F:System.Drawing.Design.UITypeEditorEditStyle.None" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Drawing.Design.UITypeEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)" />
       </Docs>
     </Member>
   </Members>

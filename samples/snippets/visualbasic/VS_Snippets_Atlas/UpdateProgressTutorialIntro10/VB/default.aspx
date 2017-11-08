@@ -1,4 +1,4 @@
-<%-- <Snippet1> --%>
+<!-- <Snippet1> -->
 <%@ Page Language="VB" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
@@ -16,7 +16,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
     <title>UpdateProgress Tutorial</title>
-    <%-- <Snippet4> --%>
+    <!-- <Snippet4> -->
     <style type="text/css">    
     #UpdatePanel1 {
       width:200px; height:100px;
@@ -27,13 +27,13 @@
       bottom: 0%; left: 0px; position: absolute;
     }
     </style>
-    <%-- </Snippet4> --%>
+    <!-- </Snippet4> -->
 </head>
 <body>
     <form id="form1" runat="server">
     <div>
         <asp:ScriptManager ID="ScriptManager1" runat="server"/>
-        <%-- <Snippet3> --%>
+        <!-- <Snippet3> -->
         <script language="javascript" type="text/javascript">
         <!-- 
         var prm = Sys.WebForms.PageRequestManager.getInstance();
@@ -44,7 +44,7 @@
         }
         // -->
         </script>
-        <%-- </Snippet3> --%>
+        <!-- </Snippet3> -->
         <asp:UpdatePanel ID="UpdatePanel1" runat="server">
             <ContentTemplate>
                 <asp:Label ID="Label1" runat="server" Text="Panel rendered."></asp:Label><br />
@@ -56,15 +56,15 @@
         <asp:UpdateProgress ID="UpdateProgress1" runat="server">
             <ProgressTemplate>
                 Processing...
-                <%-- <Snippet5> --%>
+                <!-- <Snippet5> -->
                 <input id="Button2" 
                        type="button" 
                        value="cancel" 
                        onclick="CancelAsyncPostBack()" />
-                <%-- </Snippet5> --%>
+                <!-- </Snippet5> -->
             </ProgressTemplate>
         </asp:UpdateProgress>
     </form>
 </body>
 </html>
-<%-- </Snippet1> --%>
+<!-- </Snippet1> -->

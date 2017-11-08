@@ -9,12 +9,10 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "controls [Windows Forms], arranging with snaplines"
-  - "snaplines, arranging Windows Forms controls"
-  - "SnapLine class, walkthroughs"
+  - "snaplines [Windows Forms], arranging Windows Forms controls"
+  - "SnapLine class [Windows Forms], walkthroughs"
   - "Windows Forms controls, arranging"
 ms.assetid: d5c9edc7-cf30-4a97-8ebe-201d569340f8
 caps.latest.revision: 24

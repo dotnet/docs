@@ -20,11 +20,14 @@
    
   
 ## Examples  
- <!-- TODO: review snippet reference [!code-csharp[DataGridItemDataBound#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridItemDataBound/CS/datagriditemdataboundcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataGridItemDataBound#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridItemDataBound/VB/datagriditemdataboundvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataGridItemDataBound#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridItemDataBound/CS/datagriditemdataboundcs.aspx#1)]
+ [!code-aspx-vb[DataGridItemDataBound#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridItemDataBound/VB/datagriditemdataboundvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.WebControls.DataGridItem.ItemType" />
+    <altmember cref="P:System.Web.UI.WebControls.DataListItem.ItemType" />
+    <altmember cref="P:System.Web.UI.WebControls.RepeaterItem.ItemType" />
   </Docs>
   <Members>
     <Member MemberName="AlternatingItem">

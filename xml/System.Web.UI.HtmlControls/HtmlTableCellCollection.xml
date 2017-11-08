@@ -30,11 +30,16 @@
 ## Examples  
  The following code example demonstrates how to dynamically generate the contents of an <xref:System.Web.UI.HtmlControls.HtmlTable> control by adding cells to an <xref:System.Web.UI.HtmlControls.HtmlTableCellCollection> collection. Notice that the <xref:System.Web.UI.HtmlControls.HtmlTableRow.Cells%2A> property of a row, represented by an <xref:System.Web.UI.HtmlControls.HtmlTableRow> object, is the <xref:System.Web.UI.HtmlControls.HtmlTableCellCollection> collection.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTableCellCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableCellCollection/CS/htmltablecellcollectioncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTableCellCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableCellCollection/VB/htmltablecellcollectionvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTableCellCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableCellCollection/CS/htmltablecellcollectioncs.aspx#1)]
+ [!code-aspx-vb[HtmlTableCellCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableCellCollection/VB/htmltablecellcollectionvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlTable" />
+    <altmember cref="P:System.Web.UI.HtmlControls.HtmlTable.Rows" />
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlTableRow" />
+    <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.Cells" />
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlTableCell" />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -66,11 +71,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTableCellCollection.Add%2A> method to append a cell of a table, represented by an <xref:System.Web.UI.HtmlControls.HtmlTableCell> object, to the end of an <xref:System.Web.UI.HtmlControls.HtmlTableCellCollection> collection. Notice that the <xref:System.Web.UI.HtmlControls.HtmlTableRow.Cells%2A> property of a row represented by an <xref:System.Web.UI.HtmlControls.HtmlTableRow> object is the <xref:System.Web.UI.HtmlControls.HtmlTableCellCollection> collection.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTableCellCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableCellCollection/CS/htmltablecellcollectioncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTableCellCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableCellCollection/VB/htmltablecellcollectionvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTableCellCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableCellCollection/CS/htmltablecellcollectioncs.aspx#1)]
+ [!code-aspx-vb[HtmlTableCellCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableCellCollection/VB/htmltablecellcollectionvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlTableCell" />
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlTableRow" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.Cells" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -102,11 +110,15 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTableCellCollection.Clear%2A> method to remove all items from the <xref:System.Web.UI.HtmlControls.HtmlTableCellCollection> collection. New entries are then added to the collection and displayed in the <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTableCellCollectioncClear#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableCellCollectioncClear/CS/htmltablecellcollectionclearcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTableCellCollectioncClear#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableCellCollectioncClear/VB/htmltablecellcollectionclearvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTableCellCollectioncClear#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableCellCollectioncClear/CS/htmltablecellcollectionclearcs.aspx#1)]
+ [!code-aspx-vb[HtmlTableCellCollectioncClear#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableCellCollectioncClear/VB/htmltablecellcollectionclearvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlTableCell" />
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlTableRow" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.Cells" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableCellCollection.Count" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -143,11 +155,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTableCellCollection.CopyTo%2A> method to create an array that contains the same contents as the <xref:System.Web.UI.HtmlControls.HtmlTableCellCollection> collection. The array is then iterated through to display the contents of the <xref:System.Web.UI.HtmlControls.HtmlTableCellCollection> collection.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTableCellCollectionCopyTo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableCellCollectionCopyTo/CS/htmltablecellcollectioncopytocs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTableCellCollectionCopyTo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableCellCollectionCopyTo/VB/htmltablecellcollectioncopytovb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTableCellCollectionCopyTo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableCellCollectionCopyTo/CS/htmltablecellcollectioncopytocs.aspx#1)]
+ [!code-aspx-vb[HtmlTableCellCollectionCopyTo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableCellCollectionCopyTo/VB/htmltablecellcollectioncopytovb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Array" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -176,11 +189,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTableCellCollection.Count%2A> property to determine the number of cells in a row of the <xref:System.Web.UI.HtmlControls.HtmlTable> control. This value is then used as the upper bound of a loop to iterate through the cells of a row in the table.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTableCellCollectionCount#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableCellCollectionCount/CS/htmltablecellcollectioncountcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTableCellCollectionCount#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableCellCollectionCount/VB/htmltablecellcollectioncountvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTableCellCollectionCount#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableCellCollectionCount/CS/htmltablecellcollectioncountcs.aspx#1)]
+ [!code-aspx-vb[HtmlTableCellCollectionCount#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableCellCollectionCount/VB/htmltablecellcollectioncountvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlTableCell" />
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlTableRow" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.Cells" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -219,11 +235,16 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTableCellCollection.GetEnumerator%2A> method to create a <xref:System.Collections.IEnumerator?displayProperty=nameWithType>-implemented object. The object is then iterated through to display the contents of the <xref:System.Web.UI.HtmlControls.HtmlTableCellCollection> collection.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTableCellCollectionienumerator#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableCellCollectionienumerator/CS/htmltablecellcollectionienumeratorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTableCellCollectionienumerator#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableCellCollectionienumerator/VB/htmltablecellcollectionienumeratorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTableCellCollectionienumerator#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableCellCollectionienumerator/CS/htmltablecellcollectionienumeratorcs.aspx#1)]
+ [!code-aspx-vb[HtmlTableCellCollectionienumerator#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableCellCollectionienumerator/VB/htmltablecellcollectionienumeratorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEnumerator" />
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlTableCell" />
+        <altmember cref="P:System.Collections.IEnumerator.Current" />
+        <altmember cref="M:System.Collections.IEnumerator.MoveNext" />
+        <altmember cref="M:System.Collections.IEnumerator.Reset" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -257,11 +278,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTableCellCollection.Insert%2A> method to dynamically insert a cell of a table, represented by an <xref:System.Web.UI.HtmlControls.HtmlTableCell> object, in an <xref:System.Web.UI.HtmlControls.HtmlTableCellCollection> collection.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTableCellCollectionInsert#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableCellCollectionInsert/CS/htmltablecellcollectioninsertcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTableCellCollectionInsert#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableCellCollectionInsert/VB/htmltablecellcollectioninsertvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTableCellCollectionInsert#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableCellCollectionInsert/CS/htmltablecellcollectioninsertcs.aspx#1)]
+ [!code-aspx-vb[HtmlTableCellCollectionInsert#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableCellCollectionInsert/VB/htmltablecellcollectioninsertvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlTableCell" />
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlTableRow" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.Cells" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -316,6 +340,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="P:System.Collections.ICollection.IsSynchronized" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -351,11 +377,14 @@
 ## Examples  
  The following code example demonstrates how to use the indexer to retrieve a cell of a table, represented by an <xref:System.Web.UI.HtmlControls.HtmlTableCell> object, from the <xref:System.Web.UI.HtmlControls.HtmlTableCellCollection> collection. The cell is then updated with new content. Notice that the <xref:System.Web.UI.HtmlControls.HtmlTableRow.Cells%2A> property of a row represented by an <xref:System.Web.UI.HtmlControls.HtmlTableRow> object is the <xref:System.Web.UI.HtmlControls.HtmlTableCellCollection> collection.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTableCellCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableCellCollection/CS/htmltablecellcollectioncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTableCellCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableCellCollection/VB/htmltablecellcollectionvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTableCellCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableCellCollection/CS/htmltablecellcollectioncs.aspx#1)]
+ [!code-aspx-vb[HtmlTableCellCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableCellCollection/VB/htmltablecellcollectionvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlTableCell" />
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlTableRow" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.Cells" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -390,11 +419,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTableCellCollection.Remove%2A> method to remove the specified cell of a table, represented by an <xref:System.Web.UI.HtmlControls.HtmlTableCell> object, from the <xref:System.Web.UI.HtmlControls.HtmlTableCellCollection> collection. This example removes the cells from the first column of the <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTableCellCollectionRemove#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableCellCollectionRemove/CS/htmltablecellcollectionremovecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTableCellCollectionRemove#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableCellCollectionRemove/VB/htmltablecellcollectionremovevb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTableCellCollectionRemove#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableCellCollectionRemove/CS/htmltablecellcollectionremovecs.aspx#1)]
+ [!code-aspx-vb[HtmlTableCellCollectionRemove#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableCellCollectionRemove/VB/htmltablecellcollectionremovevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlTableCellCollection.RemoveAt(System.Int32)" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.Cells" />
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlTableRow" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -429,12 +461,15 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTableCellCollection.RemoveAt%2A> method to remove the item at the specified index from the <xref:System.Web.UI.HtmlControls.HtmlTableCellCollection> collection. This example removes the cells from the first column of the <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTableCellCollectionRemoveAt#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableCellCollectionRemoveAt/CS/htmltablecellcollectionremoveatcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTableCellCollectionRemoveAt#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableCellCollectionRemoveAt/VB/htmltablecellcollectionremoveatvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTableCellCollectionRemoveAt#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableCellCollectionRemoveAt/CS/htmltablecellcollectionremoveatcs.aspx#1)]
+ [!code-aspx-vb[HtmlTableCellCollectionRemoveAt#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableCellCollectionRemoveAt/VB/htmltablecellcollectionremoveatvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified index is outside the range of index values in the collection.</exception>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlTableCellCollection.Remove(System.Web.UI.HtmlControls.HtmlTableCell)" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.Cells" />
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlTableRow" />
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -462,6 +497,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="P:System.Collections.ICollection.SyncRoot" />
       </Docs>
     </Member>
   </Members>

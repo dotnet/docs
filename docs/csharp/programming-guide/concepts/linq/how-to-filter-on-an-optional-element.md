@@ -1,7 +1,7 @@
 ---
 title: "How to: Filter on an Optional Element (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: f99e2f93-fca5-403f-8a0c-770761d4905a
 caps.latest.revision: 4
 author: "BillWagner"

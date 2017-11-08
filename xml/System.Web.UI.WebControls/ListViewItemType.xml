@@ -22,11 +22,18 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.ListViewItemType> enumeration to check the type of a <xref:System.Web.UI.WebControls.ListViewItem> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.ItemDataBound#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemDataBound/CS/ListViewItemDataBoundCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.ItemDataBound#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemDataBound/VB/ListViewItemDataBoundVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListView.ItemDataBound#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemDataBound/CS/ListViewItemDataBoundCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListView.ItemDataBound#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemDataBound/VB/ListViewItemDataBoundVB.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ListViewItem" />
+    <altmember cref="T:System.Web.UI.WebControls.ListViewDataItem" />
+    <altmember cref="T:System.Web.UI.WebControls.ListView" />
+    <altmember cref="P:System.Web.UI.WebControls.ListView.EmptyDataTemplate" />
+    <altmember cref="P:System.Web.UI.WebControls.ListView.EmptyItemTemplate" />
+    <altmember cref="P:System.Web.UI.WebControls.ListView.InsertItemTemplate" />
+    <altmember cref="P:System.Web.UI.WebControls.ListView.ItemTemplate" />
   </Docs>
   <Members>
     <Member MemberName="DataItem">

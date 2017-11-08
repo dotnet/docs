@@ -10,10 +10,11 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "split windows, resizing"
-  - "splitter windows, resizing"
+  - "split windows [Windows Forms], resizing"
+  - "splitter windows [Windows Forms], resizing"
   - "SplitContainer control [Windows Forms], resizing"
 ms.assetid: 9bf73f36-ed2d-4a02-b15a-0770eff4fdfa
 caps.latest.revision: 13

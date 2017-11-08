@@ -29,6 +29,8 @@
 ## XAML Text Usage  
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Markup.Primitives.MarkupWriter" />
+    <altmember cref="T:System.DateTime" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -135,7 +137,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An empty string returns <xref:System.DateTime?displayProperty=nameWithType>.  
+ An empty string returns <xref:System.DateTime.MinValue?displayProperty=nameWithType>.  
   
  The current implementation uses <xref:System.DateTime.Parse%2A> internally, and also uses the following <xref:System.Globalization.DateTimeStyles>: `DateTimeStyles.RoundtripKind | DateTimeStyles.NoCurrentDateDefault | DateTimeStyles.AllowLeadingWhite | DateTimeStyles.AllowTrailingWhite`.  
   

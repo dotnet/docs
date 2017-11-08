@@ -10,10 +10,12 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "forms, drawing text"
-  - "text, drawing"
+  - "forms [Windows Forms], drawing text"
+  - "text [Windows Forms], drawing"
 ms.assetid: 5d2447a9-21a1-4adc-b954-5516f2bb9b2c
 caps.latest.revision: 11
 author: dotnet-bot

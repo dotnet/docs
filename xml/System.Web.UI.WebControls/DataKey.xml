@@ -40,11 +40,18 @@
 ## Examples  
  The following code example demonstrates how to determine the primary key value of a record in a <xref:System.Web.UI.WebControls.DetailsView> control using the <xref:System.Web.UI.WebControls.DataKey.Value%2A> property of a <xref:System.Web.UI.WebControls.DataKey> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[DataKeyValue#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataKeyValue/CS/DataKeyValuecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataKeyValue#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataKeyValue/VB/DataKeyValuevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataKeyValue#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataKeyValue/CS/DataKeyValuecs.aspx#1)]
+ [!code-aspx-vb[DataKeyValue#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataKeyValue/VB/DataKeyValuevb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DataKeyArray" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsView.DataKey" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.DataKey" />
+    <altmember cref="P:System.Web.UI.WebControls.GridView.DataKeys" />
+    <altmember cref="P:System.Web.UI.WebControls.DataKey.Values" />
+    <altmember cref="P:System.Web.UI.WebControls.DataKey.Item(System.Int32)" />
+    <altmember cref="P:System.Web.UI.WebControls.DataKey.Value" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -73,6 +80,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -100,6 +108,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -154,6 +163,7 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.DataKey" /> class, you can override this property to indicate whether view-state changes are tracked.</para>
         </block>
+        <altmember cref="P:System.Web.UI.IStateManager.IsTrackingViewState" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -189,11 +199,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DataKey.Item%28System.Int32%29> property to retrieve a key field value from a specific index in a <xref:System.Web.UI.WebControls.DataKey> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[DataKeyItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/datakeyitem/CS/DataKeyItemcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataKeyItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/datakeyitem/VB/DataKeyItemvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataKeyItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/datakeyitem/CS/DataKeyItemcs.aspx#1)]
+ [!code-aspx-vb[DataKeyItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/datakeyitem/VB/DataKeyItemvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataKey.Values" />
+        <altmember cref="P:System.Web.UI.WebControls.DataKey.Value" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -229,11 +241,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DataKey.Item%28System.String%29> property to retrieve a key field value from a specific index in a <xref:System.Web.UI.WebControls.DataKey> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[DataKeyItem_String#1](~/samples/snippets/csharp/VS_Snippets_WebNet/datakeyitem_string/CS/DataKeyItem_Stringcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataKeyItem_String#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/datakeyitem_string/VB/DataKeyItem_Stringvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataKeyItem_String#1](~/samples/snippets/csharp/VS_Snippets_WebNet/datakeyitem_string/CS/DataKeyItem_Stringcs.aspx#1)]
+ [!code-aspx-vb[DataKeyItem_String#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/datakeyitem_string/VB/DataKeyItem_Stringvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataKey.Values" />
+        <altmember cref="P:System.Web.UI.WebControls.DataKey.Value" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -269,6 +283,8 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.DataKey" /> class, you can override this method to implement your own routine to load the view state for the object.</para>
         </block>
+        <altmember cref="T:System.Object" />
+        <altmember cref="M:System.Web.UI.IStateManager.LoadViewState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -301,6 +317,8 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.DataKey" /> class, you can override this method to implement your own routine to save the view state for the object.</para>
         </block>
+        <altmember cref="T:System.Object" />
+        <altmember cref="M:System.Web.UI.IStateManager.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.IsTrackingViewState">
@@ -327,6 +345,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.IStateManager.IsTrackingViewState" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.LoadViewState">
@@ -355,6 +374,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Object" />
+        <altmember cref="M:System.Web.UI.IStateManager.LoadViewState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.SaveViewState">
@@ -381,6 +402,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Object" />
+        <altmember cref="M:System.Web.UI.IStateManager.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.TrackViewState">
@@ -406,6 +429,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.StateBag" />
+        <altmember cref="M:System.Web.UI.IStateManager.TrackViewState" />
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -434,6 +460,9 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.DataKey" /> class, you can override this method to implement your own routine to track the view state of the object.</para>
         </block>
+        <altmember cref="T:System.Web.UI.StateBag" />
+        <altmember cref="M:System.Web.UI.IStateManager.TrackViewState" />
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -465,11 +494,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DataKey.Value%2A> property to determine the primary key value of a record.  
   
- <!-- TODO: review snippet reference [!code-csharp[DataKeyValue#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataKeyValue/CS/DataKeyValuecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataKeyValue#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataKeyValue/VB/DataKeyValuevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataKeyValue#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataKeyValue/CS/DataKeyValuecs.aspx#1)]
+ [!code-aspx-vb[DataKeyValue#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataKeyValue/VB/DataKeyValuevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataKey.Values" />
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -498,12 +528,32 @@
 ## Examples  
  The following code example demonstrates how to iterate through the <xref:System.Collections.Specialized.IOrderedDictionary> object returned by the <xref:System.Web.UI.WebControls.DataKey.Values%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[DataKeyValues#1](~/samples/snippets/csharp/VS_Snippets_WebNet/datakeyvalues/CS/DataKeyValuescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataKeyValues#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/datakeyvalues/VB/DataKeyValuesvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataKeyValues#1](~/samples/snippets/csharp/VS_Snippets_WebNet/datakeyvalues/CS/DataKeyValuescs.aspx#1)]
+ [!code-aspx-vb[DataKeyValues#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/datakeyvalues/VB/DataKeyValuesvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="P:System.Web.UI.WebControls.DataKey.Value" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.DataKey" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the value of a key field from a <see cref="T:System.Web.UI.WebControls.DataKey" /> object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

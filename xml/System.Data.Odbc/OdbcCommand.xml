@@ -57,6 +57,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Data.Odbc.OdbcDataAdapter" />
+    <altmember cref="T:System.Data.Odbc.OdbcConnection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -90,6 +92,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.Odbc.OdbcDataAdapter" />
+        <altmember cref="T:System.Data.Odbc.OdbcConnection" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -316,6 +320,9 @@ SELECT * FROM Customers WHERE CustomerID = ?
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.Odbc.OdbcCommand.Connection" />
+        <altmember cref="P:System.Data.Odbc.OdbcCommand.CommandTimeout" />
+        <altmember cref="P:System.Data.Odbc.OdbcCommand.CommandType" />
       </Docs>
     </Member>
     <Member MemberName="CommandTimeout">
@@ -396,6 +403,8 @@ SELECT * FROM Customers WHERE CustomerID = ?
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The value was not a valid <see cref="T:System.Data.CommandType" />.</exception>
+        <altmember cref="P:System.Data.Odbc.OdbcCommand.CommandText" />
+        <altmember cref="P:System.Data.Odbc.OdbcCommand.UpdatedRowSource" />
       </Docs>
     </Member>
     <Member MemberName="Connection">
@@ -436,6 +445,9 @@ SELECT * FROM Customers WHERE CustomerID = ?
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Data.Odbc.OdbcCommand.Connection" /> property was changed while a transaction was in progress.</exception>
+        <altmember cref="P:System.Data.Odbc.OdbcCommand.CommandText" />
+        <altmember cref="P:System.Data.Odbc.OdbcCommand.CommandTimeout" />
+        <altmember cref="P:System.Data.Odbc.OdbcCommand.CommandType" />
       </Docs>
     </Member>
     <Member MemberName="CreateDbParameter">
@@ -832,6 +844,7 @@ SELECT * FROM Customers WHERE CustomerID = ?
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.Odbc.OdbcParameter" />
       </Docs>
     </Member>
     <Member MemberName="Prepare">
@@ -1004,5 +1017,23 @@ SELECT * FROM Customers WHERE CustomerID = ?
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Odbc.OdbcCommand" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ExecuteReader">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends the <see cref="P:System.Data.Odbc.OdbcCommand.CommandText" /> to the <see cref="P:System.Data.Odbc.OdbcCommand.Connection" /> and builds an <see cref="T:System.Data.Odbc.OdbcDataReader" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

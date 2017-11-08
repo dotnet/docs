@@ -1,43 +1,22 @@
 ---
 title: "CType Function (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.CType"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "expression conversion results"
-  - "explicit data type conversions"
+  - "explicit data type conversions [Visual Basic]"
   - "CType function"
-  - "conversions, expression"
+  - "conversions [Visual Basic], expression"
 ms.assetid: dd4b29e7-6fa1-428c-877e-69955420bb72
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # CType Function (Visual Basic)
 Returns the result of explicitly converting an expression to a specified data type, object, structure, class, or interface.  

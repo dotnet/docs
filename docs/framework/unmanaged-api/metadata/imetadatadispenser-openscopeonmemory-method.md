@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataDispenser::OpenScopeOnMemory"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "OpenScopeOnMemory method [.NET Framework metadata]"
   - "IMetaDataDispenser::OpenScopeOnMemory method [.NET Framework metadata]"

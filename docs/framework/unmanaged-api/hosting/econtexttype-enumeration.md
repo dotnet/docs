@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "EContextType"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "EContextType enumeration [.NET Framework hosting]"
 ms.assetid: 92b926a9-b87e-408a-9036-df7b752c9492

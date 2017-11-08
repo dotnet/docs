@@ -11,11 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "Timer"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "Timer component [Windows Forms], about Timer components"
-  - "timers, about timers"
+  - "timers [Windows Forms], about timers"
 ms.assetid: e672c05b-a8b6-4b26-9e4d-9223aa9e3873
 caps.latest.revision: 9
 author: dotnet-bot

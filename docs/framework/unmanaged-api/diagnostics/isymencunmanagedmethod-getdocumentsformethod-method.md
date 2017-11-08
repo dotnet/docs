@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymENCUnmanagedMethod::GetDocumentsForMethod"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetDocumentsForMethod method [.NET Framework debugging]"
   - "ISymENCUnmanagedMethod::GetDocumentsForMethod method [.NET Framework debugging]"

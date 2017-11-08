@@ -44,13 +44,14 @@
   
  The third part of the code example is the Web page. Notice that the `<asp:catalogzone>` element for the page contains declarations for two <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls. These controls become part of a custom <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection> object that is created when the `Button1_Click` method executes. The <xref:System.Web.UI.WebControls.WebParts.PageCatalogPart> control contains Web server controls that have been previously closed by a user at run time. Controls in the <xref:System.Web.UI.WebControls.WebParts.PageCatalogPart> control can be added back to a page. The <xref:System.Web.UI.WebControls.WebParts.DeclarativeCatalogPart> control contains a declaration of the custom `TextDisplayWebPart` control. When the page is in catalog mode, a user can add the `TextDisplayWebPart` control to the page so that it can be used in normal browse mode.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_CatalogPartCollection_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogPartCollection_Overview/CS/catalogpartcollectioncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_CatalogPartCollection_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogPartCollection_Overview/VB/catalogpartcollectionvb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_CatalogPartCollection_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogPartCollection_Overview/CS/catalogpartcollectioncs.aspx#1)]
+ [!code-aspx-vb[WebParts_CatalogPartCollection_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogPartCollection_Overview/VB/catalogpartcollectionvb.aspx#1)]  
   
  When you load the page in a browser, you can switch the page into catalog mode by selecting **Catalog** in the **Display Mode** drop-down list control. You can add the custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control to the page by selecting the check box next to it and clicking **Add**. Click **Close** to return the page to browse mode. On the control you just added, if you click the verbs menu (the down arrow that appears in the title bar) and then click **Close**, the control is removed from the page and added to the <xref:System.Web.UI.WebControls.WebParts.PageCatalogPart> control. Return the page to catalog mode, and click the **Page Catalog** link to view the contents of the <xref:System.Web.UI.WebControls.WebParts.PageCatalogPart> control. Notice that the control you closed now appears there. Clicking the **Display CatalogPart Properties** button accesses the <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection> object and displays certain properties of the contained <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" />
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -194,6 +195,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.IList.Contains(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -224,6 +226,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Empty">
@@ -289,6 +292,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.IList.IndexOf(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -373,5 +377,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a specific member of the collection according to its position or a unique identifier.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

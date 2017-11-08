@@ -41,5 +41,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.DirectoryServices.ActiveDirectory.SyncFromAllServersEvent" />
+    <altmember cref="T:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOperationException" />
+    <altmember cref="P:System.DirectoryServices.ActiveDirectory.DomainController.SyncFromAllServersCallback" />
+    <altmember cref="P:System.DirectoryServices.ActiveDirectory.ADAMInstance.SyncFromAllServersCallback" />
+    <altmember cref="M:System.DirectoryServices.ActiveDirectory.ADAMInstance.SyncReplicaFromAllServers(System.String,System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions)" />
+    <altmember cref="M:System.DirectoryServices.ActiveDirectory.DomainController.SyncReplicaFromAllServers(System.String,System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions)" />
   </Docs>
 </Type>

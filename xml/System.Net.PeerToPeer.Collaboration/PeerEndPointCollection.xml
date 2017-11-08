@@ -27,6 +27,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.PeerToPeer.Collaboration.Peer" />
   </Docs>
   <Members>
     <Member MemberName="Equals">
@@ -49,6 +50,8 @@
         <summary>Compares the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPointCollection" /> to the specified object.</summary>
         <returns>Returns <see langword="true" /> if the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPointCollection" /> is equal to the object specified.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.Peer" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" />
       </Docs>
     </Member>
     <Member MemberName="InsertItem">
@@ -80,6 +83,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="item" /> argument is <see langword="null" />.</exception>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.Peer" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" />
       </Docs>
     </Member>
     <Member MemberName="SetItem">
@@ -111,6 +116,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="item" /> argument is <see langword="null" />.</exception>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.Peer" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -130,6 +137,8 @@
         <summary>Returns a <see cref="T:System.String" /> representing the current value for each instance of <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" />, separated by commas.</summary>
         <returns>Unicode <see cref="T:System.String" /> representing the current value of each instance of <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.Peer" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" />
       </Docs>
     </Member>
   </Members>

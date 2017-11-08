@@ -39,11 +39,12 @@
 ## Examples  
  The following example shows how to add an <xref:System.Web.UI.AsyncPostBackTrigger> control declaratively. A <xref:System.Web.UI.WebControls.Button> control that is outside an <xref:System.Web.UI.UpdatePanel> control lets users enter a search term to find in the `Products` table of the Northwind database. A <xref:System.Web.UI.WebControls.GridView> control that is inside the <xref:System.Web.UI.UpdatePanel> control shows the results. The <xref:System.Web.UI.WebControls.Button> control is specified as an asynchronous trigger for the <xref:System.Web.UI.UpdatePanel> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.AsyncPostBackTrigger#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.AsyncPostBackTrigger/CS/AsyncPostBackTriggerCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.AsyncPostBackTrigger#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.AsyncPostBackTrigger/VB/AsyncPostBackTriggerVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.AsyncPostBackTrigger#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.AsyncPostBackTrigger/CS/AsyncPostBackTriggerCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.AsyncPostBackTrigger#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.AsyncPostBackTrigger/VB/AsyncPostBackTriggerVB.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.PostBackTrigger" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -91,6 +92,7 @@
         <summary>Gets or sets the name of the control that triggers an asynchronous postback for an <see cref="T:System.Web.UI.UpdatePanel" /> control.</summary>
         <value>A server control ID.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.AsyncPostBackTrigger.EventName" />
       </Docs>
     </Member>
     <Member MemberName="EventName">
@@ -135,6 +137,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.DefaultEventAttribute" />
       </Docs>
     </Member>
     <Member MemberName="HasTriggered">
@@ -189,6 +192,8 @@
  \- or -  
   
  The event that is named in the <see cref="P:System.Web.UI.AsyncPostBackTrigger.EventName" /> property for the control that is named in the <see cref="P:System.Web.UI.UpdatePanelControlTrigger.ControlID" /> property does not match a standard event handler signature.</exception>
+        <altmember cref="P:System.Web.UI.AsyncPostBackTrigger.EventName" />
+        <altmember cref="P:System.Web.UI.UpdatePanelControlTrigger.ControlID" />
       </Docs>
     </Member>
     <Member MemberName="OnEvent">

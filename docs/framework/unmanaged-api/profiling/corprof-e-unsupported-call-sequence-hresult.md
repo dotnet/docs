@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "CORPROF_E_UNSUPPORTED_CALL_SEQUENCE"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CORPROF_E_UNSUPPORTED_CALL_SEQUENCE HRESULT [.NET Framework profiling]"
 ms.assetid: f2fc441f-d62e-4f72-a011-354ea13c8c59

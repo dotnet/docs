@@ -9,12 +9,10 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "Windows Forms, graphics"
   - "Windows Forms, GDI+"
-  - "graphics, Windows Forms"
+  - "graphics [Windows Forms], Windows Forms"
   - "GDI+, Windows Forms"
   - "graphics"
 ms.assetid: 94084509-2c6f-477d-923b-d25d37a36b1c

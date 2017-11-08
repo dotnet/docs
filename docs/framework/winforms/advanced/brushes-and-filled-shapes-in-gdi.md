@@ -10,15 +10,16 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "brushes, GDI+"
-  - "filled shapes, GDI+"
-  - "shapes, GDI+"
+  - "brushes [Windows Forms], GDI+"
+  - "filled shapes [Windows Forms], GDI+"
+  - "shapes [Windows Forms], GDI+"
   - "GDI+, brushes"
   - "GDI+, filled shapes"
   - "gradient brushes"
-  - "brushes, gradient"
+  - "brushes [Windows Forms], gradient"
 ms.assetid: e863e2a7-0294-4130-99b6-f1ea3201e7cd
 caps.latest.revision: 15
 author: dotnet-bot

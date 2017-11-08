@@ -10,11 +10,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "ListView control [Windows Forms], drag operations"
-  - "graphics, insertion marks"
-  - "drop and drag, insertion marks"
+  - "graphics [Windows Forms], insertion marks"
+  - "drop and drag [Windows Forms], insertion marks"
   - "insertion marks"
 ms.assetid: 88d0a15b-25fd-4dc3-a685-297351311940
 caps.latest.revision: 18

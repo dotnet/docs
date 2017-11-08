@@ -1,7 +1,7 @@
 ---
 title: "Projecting XML in a Different Shape (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: 4cb6b14a-32dc-4a2a-813e-bf9368fa8d86
 caps.latest.revision: 3
 author: "BillWagner"

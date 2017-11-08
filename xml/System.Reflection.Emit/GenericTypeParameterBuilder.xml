@@ -49,6 +49,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Reflection.Emit.TypeBuilder.DefineGenericParameters(System.String[])" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -1963,6 +1964,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Reflection.Emit.GenericTypeParameterBuilder.MakeByRefType" />
+        <altmember cref="M:System.Reflection.Emit.GenericTypeParameterBuilder.MakePointerType" />
       </Docs>
     </Member>
     <Member MemberName="MakeArrayType">
@@ -2009,6 +2012,8 @@
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">
           <paramref name="rank" /> is not a valid number of dimensions. For example, its value is less than 1.</exception>
+        <altmember cref="M:System.Reflection.Emit.GenericTypeParameterBuilder.MakeByRefType" />
+        <altmember cref="M:System.Reflection.Emit.GenericTypeParameterBuilder.MakePointerType" />
       </Docs>
     </Member>
     <Member MemberName="MakeByRefType">
@@ -2050,6 +2055,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Reflection.Emit.GenericTypeParameterBuilder.MakeArrayType" />
+        <altmember cref="M:System.Reflection.Emit.GenericTypeParameterBuilder.MakePointerType" />
       </Docs>
     </Member>
     <Member MemberName="MakeGenericType">
@@ -2126,6 +2133,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Reflection.Emit.GenericTypeParameterBuilder.MakeByRefType" />
+        <altmember cref="M:System.Reflection.Emit.GenericTypeParameterBuilder.MakeArrayType" />
       </Docs>
     </Member>
     <Member MemberName="Module">
@@ -2521,5 +2530,54 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsAssignableFrom">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Throws a <see cref="T:System.NotSupportedException" /> exception in all cases.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="MakeArrayType">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the type of an array whose element type is the generic type parameter.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetCustomAttributes">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Not supported for incomplete generic type parameters.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetCustomAttribute">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets a custom attribute.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetEvents">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Not supported for incomplete generic type parameters.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

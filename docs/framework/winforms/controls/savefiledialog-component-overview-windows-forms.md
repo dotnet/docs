@@ -11,11 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "SaveFileDialog"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "Save File dialog box, displaying"
-  - "SaveFileDialog component, about SaveFileDialog"
+  - "Save File dialog box [Windows Forms], displaying"
+  - "SaveFileDialog component [Windows Forms], about SaveFileDialog"
 ms.assetid: be7a625f-46fd-4d06-9985-b613dcbf9bd2
 caps.latest.revision: 9
 author: dotnet-bot

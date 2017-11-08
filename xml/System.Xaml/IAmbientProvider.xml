@@ -33,6 +33,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Xaml.AmbientPropertyValue" />
   </Docs>
   <Members>
     <Member MemberName="GetAllAmbientValues">
@@ -211,5 +212,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetFirstAmbientValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a single ambient type or property information item from the requested set, based on which property is first encountered.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetAllAmbientValues">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an enumerable set of ambient type or property information items for the requested scope.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

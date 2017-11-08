@@ -14,6 +14,7 @@
     <summary>Provides static methods and properties for <see cref="T:Microsoft.JScript.EnumeratorObject" /> objects. All methods of this class are called by passing in a reference to the object that is requesting access to the method. This class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.EnumeratorConstructor" />
   </Docs>
   <Members>
     <Member MemberName="atEnd">
@@ -43,6 +44,8 @@
           <see langword="true" /> if the enumerator has passed the last item of the collection; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.EnumeratorObject" />
+        <altmember cref="T:Microsoft.JScript.EnumeratorConstructor" />
       </Docs>
     </Member>
     <Member MemberName="constructor">
@@ -62,6 +65,7 @@
         <value>A reference to a prototype-based object.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.EnumeratorObject" />
       </Docs>
     </Member>
     <Member MemberName="item">
@@ -90,6 +94,8 @@
         <returns>The current element in the collection.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.EnumeratorObject" />
+        <altmember cref="T:Microsoft.JScript.EnumeratorConstructor" />
       </Docs>
     </Member>
     <Member MemberName="moveFirst">
@@ -117,6 +123,8 @@
         <summary>Moves the enumerator to its initial position, which is before the first element in the collection.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.EnumeratorObject" />
+        <altmember cref="T:Microsoft.JScript.EnumeratorConstructor" />
       </Docs>
     </Member>
     <Member MemberName="moveNext">
@@ -144,6 +152,8 @@
         <summary>Advances the enumerator to the next element of the collection.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.EnumeratorObject" />
+        <altmember cref="T:Microsoft.JScript.EnumeratorConstructor" />
       </Docs>
     </Member>
   </Members>

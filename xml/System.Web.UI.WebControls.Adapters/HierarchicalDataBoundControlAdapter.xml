@@ -46,8 +46,8 @@
   
  The second code segment demonstrates how to declare a <xref:System.Web.UI.WebControls.TreeView> to bind to an XML data source.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.Adapters.HierarchicalDataBoundControlAdapter#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.Adapters.HierarchicalDataBoundControlAdapter/CS/implcs.aspx#4)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.Adapters.HierarchicalDataBoundControlAdapter#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.Adapters.HierarchicalDataBoundControlAdapter/VB/implvb.aspx#4)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.Adapters.HierarchicalDataBoundControlAdapter#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.Adapters.HierarchicalDataBoundControlAdapter/CS/implcs.aspx#4)]
+ [!code-aspx-vb[System.Web.UI.WebControls.Adapters.HierarchicalDataBoundControlAdapter#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.Adapters.HierarchicalDataBoundControlAdapter/VB/implvb.aspx#4)]  
   
  The third code segment shows how to link the <xref:System.Web.UI.WebControls.TreeView> control to the custom adapter for browsers running on Windows CE.  
   
@@ -59,6 +59,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Adapters.WebControlAdapter" />
+    <altmember cref="T:System.Web.UI.WebControls.HierarchicalDataBoundControl" />
+    <altmember cref="T:System.Web.UI.WebControls.XmlDataSource" />
+    <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+    <altmember cref="T:System.Web.AspNetHostingPermission" />
+    <altmember cref="T:System.Web.HttpBrowserCapabilities" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -81,6 +87,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.HierarchicalDataBoundControl" />
+        <altmember cref="T:System.Web.UI.WebControls.Adapters.WebControlAdapter" />
+        <altmember cref="T:System.Web.UI.Control" />
+        <altmember cref="P:System.Web.UI.Control.Adapter" />
       </Docs>
     </Member>
     <Member MemberName="Control">
@@ -114,6 +124,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.HierarchicalDataBoundControl" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
+        <altmember cref="T:System.Web.UI.Adapters.ControlAdapter" />
+        <altmember cref="T:System.Web.UI.WebControls.Adapters.WebControlAdapter" />
+        <altmember cref="T:System.Web.UI.Control" />
       </Docs>
     </Member>
     <Member MemberName="PerformDataBinding">
@@ -147,6 +162,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.HierarchicalDataBoundControl" />
+        <altmember cref="T:System.Web.UI.Adapters.ControlAdapter" />
+        <altmember cref="T:System.Web.UI.WebControls.Adapters.WebControlAdapter" />
+        <altmember cref="T:System.Web.UI.Control" />
       </Docs>
     </Member>
   </Members>

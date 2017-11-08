@@ -10,15 +10,16 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "CheckedListBox control [Windows Forms], creating lookup tables"
   - "lookup tables"
-  - "list boxes, lookup tables"
+  - "list boxes [Windows Forms], lookup tables"
   - "ListBox control [Windows Forms], lookup tables"
   - "ComboBox control [Windows Forms], lookup table"
-  - "lookup tables, creating for controls"
-  - "combo boxes, lookup tables"
+  - "lookup tables [Windows Forms], creating for controls"
+  - "combo boxes [Windows Forms], lookup tables"
   - "ListBox control [Windows Forms], creating lookup tables"
 ms.assetid: 4ce35f12-1f4e-4317-92d1-af8686a8cfaa
 caps.latest.revision: 16

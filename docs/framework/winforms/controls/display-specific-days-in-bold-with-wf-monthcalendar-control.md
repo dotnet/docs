@@ -10,9 +10,11 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "calendars, displaying dates in bold"
+  - "calendars [Windows Forms], displaying dates in bold"
   - "examples [Windows Forms], calendar controls"
   - "GetDayBold event"
   - "MonthCalendar control [Windows Forms], dates displayed in bold"

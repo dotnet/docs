@@ -1029,5 +1029,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the value of a specified column as an instance of <see cref="T:System.Object" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

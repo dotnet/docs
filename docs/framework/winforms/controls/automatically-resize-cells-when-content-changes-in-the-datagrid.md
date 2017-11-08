@@ -10,10 +10,12 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "data grids, resizing cells automatically"
-  - "cells, resizing automatically"
+  - "data grids [Windows Forms], resizing cells automatically"
+  - "cells [Windows Forms], resizing automatically"
   - "DataGridView control [Windows Forms], resizing cells"
 ms.assetid: 1d68934d-a04c-4b12-9e66-c856c6828131
 caps.latest.revision: 19

@@ -10,11 +10,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "Windows Forms, event handling"
-  - "event handling, Windows Forms"
-  - "event handlers, about event handlers"
+  - "event handling [Windows Forms], Windows Forms"
+  - "event handlers [Windows Forms], about event handlers"
 ms.assetid: 228112e1-1711-42ee-8ffa-ff3555bffe66
 caps.latest.revision: 13
 author: dotnet-bot

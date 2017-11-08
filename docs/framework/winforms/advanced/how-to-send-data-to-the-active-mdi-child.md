@@ -10,12 +10,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "child forms"
-  - "MDI, sending data to forms"
-  - "Clipboard, pasting"
-  - "Clipboard, getting data from"
+  - "MDI [Windows Forms], sending data to forms"
+  - "Clipboard [Windows Forms], pasting"
+  - "Clipboard [Windows Forms], getting data from"
 ms.assetid: 1047d2fe-1235-46db-aad9-563aea1d743b
 caps.latest.revision: 12
 author: dotnet-bot

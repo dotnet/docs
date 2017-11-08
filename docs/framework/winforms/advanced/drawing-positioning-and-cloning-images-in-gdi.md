@@ -10,12 +10,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "raster images"
+  - "raster images [Windows Forms]"
   - "images [Windows Forms], positioning"
-  - "drawing, images"
-  - "drawing, raster images"
+  - "drawing [Windows Forms], images"
+  - "drawing [Windows Forms], raster images"
   - "images [Windows Forms], cloning"
   - "images [Windows Forms], drawing"
   - "GDI+, drawing images"

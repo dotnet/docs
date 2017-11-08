@@ -23,11 +23,13 @@
 ## Examples  
  The following code example uses the <xref:System.Web.UI.WebControls.AuthenticateEventArgs> class to pass data to a custom authentication method.  
   
- <!-- TODO: review snippet reference [!code-csharp[LoginAuthenticate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginAuthenticate/CS/loginauthenticatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[LoginAuthenticate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginAuthenticate/VB/loginauthenticatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[LoginAuthenticate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginAuthenticate/CS/loginauthenticatecs.aspx#1)]
+ [!code-aspx-vb[LoginAuthenticate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginAuthenticate/VB/loginauthenticatevb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="E:System.Web.UI.WebControls.Login.Authenticate" />
+    <altmember cref="T:System.Web.UI.WebControls.Login" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -93,12 +95,21 @@
 ## Examples  
  The following code example uses the <xref:System.Web.UI.WebControls.AuthenticateEventArgs.Authenticated%2A> property with a custom authentication scheme to indicate the success or failure of a user's login attempt.  
   
- <!-- TODO: review snippet reference [!code-csharp[LoginAuthenticate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginAuthenticate/CS/loginauthenticatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[LoginAuthenticate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginAuthenticate/VB/loginauthenticatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[LoginAuthenticate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginAuthenticate/CS/loginauthenticatecs.aspx#1)]
+ [!code-aspx-vb[LoginAuthenticate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginAuthenticate/VB/loginauthenticatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.AuthenticateEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

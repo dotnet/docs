@@ -30,11 +30,15 @@
   
  The following is the .aspx file that can be used to run the preceding example.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.LoginCancelEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LoginCancelEventArgs/CS/logincanceleventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.LoginCancelEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LoginCancelEventArgs/VB/logincanceleventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.LoginCancelEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LoginCancelEventArgs/CS/logincanceleventargscs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.LoginCancelEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LoginCancelEventArgs/VB/logincanceleventargsvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Login" />
+    <altmember cref="T:System.Web.UI.WebControls.CreateUserWizard" />
+    <altmember cref="T:System.Web.UI.WebControls.PasswordRecovery" />
+    <altmember cref="E:System.Web.UI.WebControls.Login.LoggingIn" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -103,7 +107,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Login" />
+        <altmember cref="E:System.Web.UI.WebControls.Login.LoggingIn" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.LoginCancelEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

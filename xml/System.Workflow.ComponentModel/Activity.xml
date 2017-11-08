@@ -1612,5 +1612,41 @@ public class SendEmail : Activity
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TrackData">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Informs the run-time tracking infrastructure of pending tracking information.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Activity" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Invoke&lt;T&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Subscribes an <see cref="T:System.EventHandler" /> or an <see cref="T:System.Workflow.ComponentModel.IActivityEventListener`1" /> and invokes that delegate.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Save">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Saves a copy of the <see cref="T:System.Workflow.ComponentModel.Activity" /> to a <see cref="T:System.IO.Stream" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

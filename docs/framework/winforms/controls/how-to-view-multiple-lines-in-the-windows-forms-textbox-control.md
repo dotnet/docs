@@ -9,14 +9,11 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "newline"
   - "end of line"
-  - "ScrollBars property, in TextBox control"
+  - "ScrollBars property [Windows Forms], in TextBox control"
   - "CRLF"
-  - "WordWrap property"
   - "MultiLine property in TextBox control"
   - "line-feed"
   - "TextBox control [Windows Forms], viewing multiple lines"

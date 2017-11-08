@@ -18,8 +18,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CompareAssemblyIdentity"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CompareAssemblyIdentity function [.NET Framework fusion]"
 ms.assetid: 8b364ae1-8efa-4744-a7da-81fd093d84d6

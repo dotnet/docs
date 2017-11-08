@@ -10,9 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "PathGeometry class"
-  - "classes, PathGeometry"
-  - "shapes, creating with PathGeometry class"
+  - "shapes [WPF], creating with PathGeometry class"
   - "graphics [WPF], shapes"
 ms.assetid: 49a4a8b7-e738-45be-8dac-b54a6d8f5b21
 caps.latest.revision: 11

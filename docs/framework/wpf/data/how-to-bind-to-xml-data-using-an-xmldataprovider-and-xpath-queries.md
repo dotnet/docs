@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "XmlDataProvider, binding to XML data"
-  - "data binding, binding to XML data using XmlDataProvider queries"
-  - "binding, to XML data using XmlDataProvider queries"
+  - "XmlDataProvider [WPF], binding to XML data"
+  - "data binding [WPF], binding to XML data using XmlDataProvider queries"
+  - "binding [WPF], to XML data using XmlDataProvider queries"
 ms.assetid: 7dcd018f-16aa-4870-8e47-c1b4ea31e574
 caps.latest.revision: 22
 author: dotnet-bot

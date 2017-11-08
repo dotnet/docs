@@ -39,6 +39,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.LinqDataSource" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -94,6 +95,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.DataSourceSelectArguments" />
       </Docs>
     </Member>
     <Member MemberName="GroupByParameters">
@@ -119,6 +121,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.LinqDataSource.GroupByParameters" />
       </Docs>
     </Member>
     <Member MemberName="OrderByParameters">
@@ -146,6 +149,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.LinqDataSource.OrderByParameters" />
       </Docs>
     </Member>
     <Member MemberName="OrderGroupsByParameters">
@@ -220,6 +224,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.LinqDataSource.TableName" />
       </Docs>
     </Member>
     <Member MemberName="SelectParameters">
@@ -253,11 +258,12 @@
   
  The second part of the example shows the markup that defines the Select clause.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.LinqDataSourceSelectEventArgs#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSourceSelectEventArgs/cs/Default5.aspx#6)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.LinqDataSourceSelectEventArgs#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSourceSelectEventArgs/vb/Default5.aspx#6)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSourceSelectEventArgs#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSourceSelectEventArgs/cs/Default5.aspx#6)]
+ [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSourceSelectEventArgs#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSourceSelectEventArgs/vb/Default5.aspx#6)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.LinqDataSource.SelectParameters" />
       </Docs>
     </Member>
     <Member MemberName="WhereParameters">
@@ -288,11 +294,12 @@
 ## Examples  
  The following example shows how to add a parameter to the <xref:System.Web.UI.WebControls.LinqDataSourceSelectEventArgs.WhereParameters%2A> collection. The added parameter will limit the returned products to only those products with a value of "Bike" in the `Name` property. The <xref:System.Web.UI.WebControls.LinqDataSource.AutoGenerateWhereClause%2A> property is set to `true` so that the parameter is automatically included in the Where clause.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.LinqDataSourceSelectEventArgs#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSourceSelectEventArgs/cs/Default4.aspx#4)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.LinqDataSourceSelectEventArgs#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSourceSelectEventArgs/vb/Default4.aspx#4)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSourceSelectEventArgs#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSourceSelectEventArgs/cs/Default4.aspx#4)]
+ [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSourceSelectEventArgs#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSourceSelectEventArgs/vb/Default4.aspx#4)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.LinqDataSource.WhereParameters" />
       </Docs>
     </Member>
   </Members>

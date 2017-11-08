@@ -36,6 +36,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.SettingsProvider" />
+    <altmember cref="T:System.Configuration.SettingsBase" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -68,6 +70,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Configuration.SettingsProviderAttribute.ProviderTypeName" />
+        <altmember cref="T:System.Configuration.SettingsProvider" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -119,6 +123,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Configuration.SettingsProviderAttribute.#ctor(System.String)" />
       </Docs>
     </Member>
   </Members>

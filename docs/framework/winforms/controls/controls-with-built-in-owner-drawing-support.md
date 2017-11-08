@@ -9,11 +9,9 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "drawing, owner"
-  - "drawing, custom"
+  - "drawing [Windows Forms], owner"
+  - "drawing [Windows Forms], custom"
   - "controls [Windows Forms], changing appearance"
   - "custom drawing"
   - "owner drawing"

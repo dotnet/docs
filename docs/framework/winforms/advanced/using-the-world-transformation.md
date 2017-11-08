@@ -10,10 +10,11 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "graphics, world transformation"
-  - "world transformation, examples"
+  - "graphics [Windows Forms], world transformation"
+  - "world transformation [Windows Forms], examples"
 ms.assetid: 1e717711-1361-448e-aa49-0f3ec43110c9
 caps.latest.revision: 10
 author: dotnet-bot

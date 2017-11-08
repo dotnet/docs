@@ -331,6 +331,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="P:System.ResolveEventArgs.RequestingAssembly" />
       </Docs>
     </Member>
     <Member MemberName="BaseDirectory">
@@ -376,6 +377,7 @@
         </remarks>
         <exception cref="T:System.AppDomainUnloadedException">The operation is attempted on an unloaded application domain.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to the information in the path itself, including if the path is in the form "file://" or \\\UNC\dir or "c:\\". Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" />.</permission>
+        <altmember cref="P:System.AppDomainSetup.ApplicationBase" />
       </Docs>
     </Member>
     <Member MemberName="ClearPrivatePath">
@@ -430,6 +432,7 @@
         </remarks>
         <exception cref="T:System.AppDomainUnloadedException">The operation is attempted on an unloaded application domain.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="F:System.String.Empty" />
       </Docs>
     </Member>
     <Member MemberName="ClearShadowCopyPath">
@@ -473,6 +476,7 @@
         </remarks>
         <exception cref="T:System.AppDomainUnloadedException">The operation is attempted on an unloaded application domain.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="F:System.String.Empty" />
       </Docs>
     </Member>
     <Member MemberName="CreateComInstanceFrom">
@@ -539,6 +543,7 @@
         <exception cref="T:System.NullReferenceException">The COM object that is being referred to is <see langword="null" />.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermissionAccess">for the ability to read the file containing the assembly manifest. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
         <permission cref="T:System.Net.WebPermission">for the ability to access the location of the assembly if the assembly is not local.</permission>
+        <altmember cref="M:System.Activator.CreateComInstanceFrom(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CreateComInstanceFrom">
@@ -600,6 +605,7 @@
         <exception cref="T:System.NullReferenceException">The COM object that is being referred to is <see langword="null" />.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermissionAccess">for the ability to read the file containing the assembly manifest. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
         <permission cref="T:System.Net.WebPermission">for the ability to access the location of the assembly if the assembly is not local.</permission>
+        <altmember cref="M:System.Activator.CreateComInstanceFrom(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CreateDomain">
@@ -652,6 +658,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="friendlyName" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to provide evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" />.</permission>
+        <altmember cref="P:System.AppDomain.FriendlyName" />
       </Docs>
     </Member>
     <Member MemberName="CreateDomain">
@@ -971,6 +978,7 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to read from a file or directory, and for access to the information in the path itself. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" />.</permission>
         <permission cref="T:System.Net.WebPermission">for the ability to access the location of the assembly if the assembly is not local.</permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code when creating an instance of a delegate. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="M:System.Activator.CreateInstance(System.Type,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstance">
@@ -1033,6 +1041,7 @@
         <permission cref="T:System.Net.WebPermission">for the ability to access the location of the assembly if the assembly is not local.</permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code when creating an instance of a delegate. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">for the ability to invoke operations on all type members. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <altmember cref="M:System.Activator.CreateInstance(System.Type,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstance">
@@ -1103,6 +1112,7 @@
         <permission cref="T:System.Net.WebPermission">for the ability to access the location of the assembly if the assembly is not local.</permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code when creating an instance of a delegate. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">for the ability to invoke operations on all type members. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <altmember cref="M:System.Activator.CreateInstance(System.Type,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstance">
@@ -1184,6 +1194,7 @@
         <permission cref="T:System.Net.WebPermission">for the ability to access the location of the assembly if the assembly is not local.</permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to provide evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" />.</permission>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">for the ability to invoke operations on all type members. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <altmember cref="M:System.Activator.CreateInstance(System.Type,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceAndUnwrap">
@@ -1251,6 +1262,7 @@
         <exception cref="T:System.IO.FileLoadException">An assembly or module was loaded twice with two different evidences.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermissionAccess">for the ability to read the file containing the assembly manifest, or if you are creating a type from a module other than the manifest file. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
         <permission cref="T:System.Net.WebPermission">for the ability to access the location of the assembly if the assembly is not local.</permission>
+        <altmember cref="M:System.AppDomain.CreateInstance(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceAndUnwrap">
@@ -1320,6 +1332,7 @@
         <permission cref="T:System.Net.WebPermission">for the ability to access the location of the assembly if the assembly is not local.</permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code when creating an instance of a delegate. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">for the ability to invoke operations on all type members. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <altmember cref="M:System.AppDomain.CreateInstance(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceAndUnwrap">
@@ -1401,6 +1414,7 @@
         <permission cref="T:System.Net.WebPermission">for the ability to access the location of the assembly if the assembly is not local.</permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code when creating an instance of a delegate. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">for the ability to invoke operations on all type members. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <altmember cref="M:System.AppDomain.CreateInstance(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceAndUnwrap">
@@ -1489,6 +1503,7 @@
         <permission cref="T:System.Net.WebPermission">for the ability to access the location of the assembly if the assembly is not local.</permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to load an assembly with evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" />.</permission>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">for the ability to invoke operations on all type members. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <altmember cref="M:System.AppDomain.CreateInstance(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceFrom">
@@ -1576,6 +1591,7 @@
         <exception cref="T:System.NullReferenceException">This instance is <see langword="null" />.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermissionAccess">for the ability to read the file containing the assembly manifest. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
         <permission cref="T:System.Net.WebPermission">for the ability to access the location of the assembly if the assembly is not local.</permission>
+        <altmember cref="M:System.Activator.CreateInstanceFrom(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceFrom">
@@ -1640,6 +1656,7 @@
         <exception cref="T:System.NullReferenceException">This instance is <see langword="null" />.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermissionAccess">for the ability to read the file containing the assembly manifest. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
         <permission cref="T:System.Net.WebPermission">for the ability to access the location of the assembly if the assembly is not local.</permission>
+        <altmember cref="M:System.Activator.CreateInstanceFrom(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceFrom">
@@ -1716,6 +1733,7 @@
         <exception cref="T:System.NullReferenceException">This instance is <see langword="null" />.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermissionAccess">for the ability to read the file containing the assembly manifest. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
         <permission cref="T:System.Net.WebPermission">for the ability to access the location of the assembly if the assembly is not local.</permission>
+        <altmember cref="M:System.Activator.CreateInstanceFrom(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceFrom">
@@ -1804,6 +1822,7 @@
         <permission cref="T:System.Security.Permissions.FileIOPermissionAccess">for the ability to read the file containing the assembly manifest. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
         <permission cref="T:System.Net.WebPermission">for the ability to access the location of the assembly if the assembly is not local.</permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to provide evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" />.</permission>
+        <altmember cref="M:System.Activator.CreateInstanceFrom(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceFromAndUnwrap">
@@ -1860,6 +1879,7 @@
         <exception cref="T:System.IO.FileLoadException">An assembly or module was loaded twice with two different evidences.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermissionAccess">for the ability to read the file containing the assembly manifest. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
         <permission cref="T:System.Net.WebPermission">for the ability to access the location of the assembly if the assembly is not local.</permission>
+        <altmember cref="M:System.Activator.CreateInstanceFrom(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceFromAndUnwrap">
@@ -1921,6 +1941,7 @@
         <exception cref="T:System.IO.FileLoadException">An assembly or module was loaded twice with two different evidences.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermissionAccess">for the ability to read the file containing the assembly manifest. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
         <permission cref="T:System.Net.WebPermission">for the ability to access the location of the assembly if the assembly is not local.</permission>
+        <altmember cref="M:System.Activator.CreateInstanceFrom(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceFromAndUnwrap">
@@ -1992,6 +2013,7 @@
         <exception cref="T:System.IO.FileLoadException">An assembly or module was loaded twice with two different evidences.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermissionAccess">for the ability to read the file containing the assembly manifest. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
         <permission cref="T:System.Net.WebPermission">for the ability to access the location of the assembly if the assembly is not local.</permission>
+        <altmember cref="M:System.Activator.CreateInstanceFrom(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceFromAndUnwrap">
@@ -2070,6 +2092,7 @@
         <exception cref="T:System.IO.FileLoadException">An assembly or module was loaded twice with two different evidences.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermissionAccess">for the ability to read the file containing the assembly manifest. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
         <permission cref="T:System.Net.WebPermission">for the ability to access the location of the assembly if the assembly is not local.</permission>
+        <altmember cref="M:System.Activator.CreateInstanceFrom(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CurrentDomain">
@@ -2139,7 +2162,7 @@
  This method should only be used to define a dynamic assembly in the current application domain. For more information, see the <xref:System.AppDomain.Load%28System.Reflection.AssemblyName%29> method overload.  
   
 > [!NOTE]
->  During the development of code that emits dynamic assemblies, it is recommended that you use an overload of the <xref:System.AppDomain.DefineDynamicAssembly%2A> method that specifies evidence and permissions, supply the evidence you want the dynamic assembly to have, and include <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=nameWithType> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
+>  During the development of code that emits dynamic assemblies, it is recommended that you use an overload of the <xref:System.AppDomain.DefineDynamicAssembly%2A> method that specifies evidence and permissions, supply the evidence you want the dynamic assembly to have, and include <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification?displayProperty=nameWithType> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
   
    
   
@@ -2223,6 +2246,7 @@
   
  The <see langword="Name" /> property of <paramref name="name" /> starts with white space, or contains a forward or backward slash.</exception>
         <exception cref="T:System.AppDomainUnloadedException">The operation is attempted on an unloaded application domain.</exception>
+        <altmember cref="M:System.Reflection.Emit.AssemblyBuilder.SetCustomAttribute(System.Reflection.Emit.CustomAttributeBuilder)" />
       </Docs>
     </Member>
     <Member MemberName="DefineDynamicAssembly">
@@ -2265,7 +2289,7 @@
  This method should only be used to define a dynamic assembly in the current application domain. For more information, see the <xref:System.AppDomain.Load%28System.Reflection.AssemblyName%29> method overload.  
   
 > [!NOTE]
->  During the development of code that emits dynamic assemblies, it is recommended that you use an overload of the <xref:System.AppDomain.DefineDynamicAssembly%2A> method that specifies evidence and permissions, supply the evidence you want the dynamic assembly to have, and include <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=nameWithType> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
+>  During the development of code that emits dynamic assemblies, it is recommended that you use an overload of the <xref:System.AppDomain.DefineDynamicAssembly%2A> method that specifies evidence and permissions, supply the evidence you want the dynamic assembly to have, and include <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification?displayProperty=nameWithType> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
   
    
   
@@ -2324,7 +2348,7 @@
  This method should only be used to define a dynamic assembly in the current application domain. For more information, see the <xref:System.AppDomain.Load%28System.Reflection.AssemblyName%29> method overload.  
   
 > [!NOTE]
->  During the development of code that emits dynamic assemblies, it is recommended that you use an overload of the <xref:System.AppDomain.DefineDynamicAssembly%2A> method that specifies evidence and permissions, supply the evidence you want the dynamic assembly to have, and include <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=nameWithType> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
+>  During the development of code that emits dynamic assemblies, it is recommended that you use an overload of the <xref:System.AppDomain.DefineDynamicAssembly%2A> method that specifies evidence and permissions, supply the evidence you want the dynamic assembly to have, and include <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification?displayProperty=nameWithType> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
   
    
   
@@ -2438,7 +2462,7 @@
  This method should only be used to define a dynamic assembly in the current application domain. For more information, see the <xref:System.AppDomain.Load%28System.Reflection.AssemblyName%29> method overload.  
   
 > [!NOTE]
->  During the development of code that emits dynamic assemblies, it is recommended that you use an overload of the <xref:System.AppDomain.DefineDynamicAssembly%2A> method that specifies evidence and permissions, supply the evidence you want the dynamic assembly to have, and include <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=nameWithType> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
+>  During the development of code that emits dynamic assemblies, it is recommended that you use an overload of the <xref:System.AppDomain.DefineDynamicAssembly%2A> method that specifies evidence and permissions, supply the evidence you want the dynamic assembly to have, and include <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification?displayProperty=nameWithType> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
   
    
   
@@ -2504,7 +2528,7 @@
  The permission requests specified for `requiredPermissions`, `optionalPermissions`, and `refusedPermissions` are not used unless the dynamic assembly has been saved and reloaded into memory. To specify permission requests for a transient assembly that is never saved to disk, use an overload of the <xref:System.AppDomain.DefineDynamicAssembly%2A> method that specifies evidence as well as requested permissions, and supply an <xref:System.Security.Policy.Evidence> object.  
   
 > [!NOTE]
->  During the development of code that emits dynamic assemblies, it is recommended that you use an overload of the <xref:System.AppDomain.DefineDynamicAssembly%2A> method that specifies evidence and permissions, supply the evidence you want the dynamic assembly to have, and include <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=nameWithType> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
+>  During the development of code that emits dynamic assemblies, it is recommended that you use an overload of the <xref:System.AppDomain.DefineDynamicAssembly%2A> method that specifies evidence and permissions, supply the evidence you want the dynamic assembly to have, and include <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification?displayProperty=nameWithType> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
   
  This method should only be used to define a dynamic assembly in the current application domain. For more information, see the <xref:System.AppDomain.Load%28System.Reflection.AssemblyName%29> method overload .  
   
@@ -2578,6 +2602,7 @@
   
  The <see langword="Name" /> property of <paramref name="name" /> starts with white space, or contains a forward or backward slash.</exception>
         <exception cref="T:System.AppDomainUnloadedException">The operation is attempted on an unloaded application domain.</exception>
+        <altmember cref="M:System.Reflection.Emit.AssemblyBuilder.SetCustomAttribute(System.Reflection.Emit.CustomAttributeBuilder)" />
       </Docs>
     </Member>
     <Member MemberName="DefineDynamicAssembly">
@@ -2622,7 +2647,7 @@
  The permission requests specified for `requiredPermissions`, `optionalPermissions`, and `refusedPermissions` are used only if `evidence` is also supplied, or if the dynamic assembly is saved and reloaded into memory.  
   
 > [!NOTE]
->  During the development of code that emits dynamic assemblies, it is recommended that you include <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=nameWithType> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
+>  During the development of code that emits dynamic assemblies, it is recommended that you include <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification?displayProperty=nameWithType> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
   
  Only fully trusted callers can supply their `evidence` when defining a dynamic <xref:System.Reflection.Assembly>. The runtime will map the <xref:System.Security.Policy.Evidence> through the security policy to determine the granted permissions. Partially trusted callers must supply a null `evidence`. If `evidence` is `null`, the runtime copies the permission sets, that is, the current grant and deny sets, from the caller's <xref:System.Reflection.Assembly> to the dynamic <xref:System.Reflection.Assembly> being defined and marks policy as resolved.  
   
@@ -2696,7 +2721,7 @@
  The permission requests specified for `requiredPermissions`, `optionalPermissions`, and `refusedPermissions` are not used unless the dynamic assembly has been saved and reloaded into memory. To specify permission requests for a transient assembly that is never saved to disk, use an overload of the <xref:System.AppDomain.DefineDynamicAssembly%2A> method that specifies evidence as well as requested permissions, and supply an <xref:System.Security.Policy.Evidence> object.  
   
 > [!NOTE]
->  During the development of code that emits dynamic assemblies, it is recommended that you use an overload of the <xref:System.AppDomain.DefineDynamicAssembly%2A> method that specifies evidence and permissions, supply the evidence you want the dynamic assembly to have, and include <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=nameWithType> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
+>  During the development of code that emits dynamic assemblies, it is recommended that you use an overload of the <xref:System.AppDomain.DefineDynamicAssembly%2A> method that specifies evidence and permissions, supply the evidence you want the dynamic assembly to have, and include <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification?displayProperty=nameWithType> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
   
  This method should only be used to define a dynamic assembly in the current application domain. For more information, see the <xref:System.AppDomain.Load%28System.Reflection.AssemblyName%29> method overload.  
   
@@ -2767,7 +2792,7 @@
  The permission requests specified for `requiredPermissions`, `optionalPermissions`, and `refusedPermissions` are used only if `evidence` is also supplied, or if the dynamic assembly is saved and reloaded into memory.  
   
 > [!NOTE]
->  During the development of code that emits dynamic assemblies, it is recommended that you include <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=nameWithType> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
+>  During the development of code that emits dynamic assemblies, it is recommended that you include <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification?displayProperty=nameWithType> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
   
  Only fully trusted callers can supply their `evidence` when defining a dynamic <xref:System.Reflection.Assembly>. The runtime will map the <xref:System.Security.Policy.Evidence> through the security policy to determine the granted permissions. Partially trusted callers must supply a null `evidence`. If `evidence` is `null`, the runtime copies the permission sets, that is, the current grant and deny sets, from the caller's <xref:System.Reflection.Assembly> to the dynamic <xref:System.Reflection.Assembly> being defined and marks policy as resolved.  
   
@@ -2846,7 +2871,7 @@
  The permission requests specified for `requiredPermissions`, `optionalPermissions`, and `refusedPermissions` are used only if `evidence` is also supplied, or if the dynamic assembly is saved and reloaded into memory.  
   
 > [!NOTE]
->  During the development of code that emits dynamic assemblies, it is recommended that you include <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=nameWithType> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
+>  During the development of code that emits dynamic assemblies, it is recommended that you include <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification?displayProperty=nameWithType> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
   
  Only fully trusted callers can supply their evidence when defining a dynamic <xref:System.Reflection.Assembly>. The runtime will map the <xref:System.Security.Policy.Evidence> through the security policy to determine the granted permissions. Partially trusted callers must supply `null` for the `evidence` parameter. If `evidence` is `null`, the runtime copies the permission sets, that is, the current grant and deny sets, from the caller's <xref:System.Reflection.Assembly> to the dynamic <xref:System.Reflection.Assembly> being defined and marks policy as resolved.  
   
@@ -2929,7 +2954,7 @@
  The permission requests specified for the `requiredPermissions`, `optionalPermissions`, and `refusedPermissions` parameters are used only if the `evidence` parameter is also supplied, or if the dynamic assembly is saved and reloaded into memory.  
   
 > [!NOTE]
->  When you develop code that emits dynamic assemblies, we recommend that you include the <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=nameWithType> flag in the `refusedPermissions` parameter. The inclusion of this flag ensures that the Microsoft intermediate language (MSIL) will be verified. This technique will detect the unintentional generation of unverifiable code, which otherwise is very difficult to detect. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when it is used with code that demands full trust.  
+>  When you develop code that emits dynamic assemblies, we recommend that you include the <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification?displayProperty=nameWithType> flag in the `refusedPermissions` parameter. The inclusion of this flag ensures that the Microsoft intermediate language (MSIL) will be verified. This technique will detect the unintentional generation of unverifiable code, which otherwise is very difficult to detect. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when it is used with code that demands full trust.  
   
  Only fully trusted callers can supply evidence when defining a dynamic <xref:System.Reflection.Assembly>. The runtime maps the <xref:System.Security.Policy.Evidence> through the security policy to determine the granted permissions. Partially trusted callers must supply `null` for the `evidence` parameter. If `evidence` is `null`, the runtime copies the permission sets (that is, the current grant and deny sets) from the caller's assembly to the dynamic assembly that is being defined, and marks the policy as resolved.  
   
@@ -2950,6 +2975,7 @@
  The <see langword="Name" /> property of <paramref name="name" /> starts with white space, or contains a forward or backward slash.</exception>
         <exception cref="T:System.AppDomainUnloadedException">The operation is attempted on an unloaded application domain.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to load an assembly with evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" />.</permission>
+        <altmember cref="M:System.Reflection.Emit.AssemblyBuilder.SetCustomAttribute(System.Reflection.Emit.CustomAttributeBuilder)" />
       </Docs>
     </Member>
     <Member MemberName="DoCallBack">
@@ -3632,6 +3658,8 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to read from a file or directory, for access to the information in the path itself, and for redirecting a display name to a path. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" />.</permission>
         <permission cref="T:System.Net.WebPermission">for access to a Web site, when a display name is redirected to a URL.</permission>
         <permission cref="T:System.Security.Permissions.UIPermission">to execute a console application. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.Reflection.AssemblyName" />
+        <altmember cref="M:System.Reflection.Assembly.Load(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ExecuteAssemblyByName">
@@ -3753,6 +3781,7 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">to load an assembly with evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" />.</permission>
         <permission cref="T:System.Net.WebPermission">for access to a Web site, when a display name is redirected to a URL.</permission>
         <permission cref="T:System.Security.Permissions.UIPermission">to execute a console application. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.Security.Policy.Evidence" />
       </Docs>
     </Member>
     <Member MemberName="ExecuteAssemblyByName">
@@ -3884,6 +3913,7 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">to load an assembly with evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" />.</permission>
         <permission cref="T:System.Net.WebPermission">for access to a Web site, when a display name is redirected to a URL.</permission>
         <permission cref="T:System.Security.Permissions.UIPermission">to execute a console application. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.Security.Policy.Evidence" />
       </Docs>
     </Member>
     <Member MemberName="ExecuteAssemblyByName">
@@ -3953,6 +3983,7 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">to load an assembly with evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" />.</permission>
         <permission cref="T:System.Net.WebPermission">for access to a Web site, when a display name is redirected to a URL.</permission>
         <permission cref="T:System.Security.Permissions.UIPermission">to execute a console application. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="T:System.Security.Policy.Evidence" />
       </Docs>
     </Member>
     <Member MemberName="FirstChanceException">
@@ -4015,6 +4046,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="T:System.Runtime.ExceptionServices.FirstChanceExceptionEventArgs" />
+        <altmember cref="E:System.AppDomain.UnhandledException" />
       </Docs>
     </Member>
     <Member MemberName="FriendlyName">
@@ -4142,6 +4175,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />.</permission>
+        <altmember cref="T:System.Int32" />
+        <altmember cref="P:System.Threading.Thread.ManagedThreadId" />
       </Docs>
     </Member>
     <Member MemberName="GetData">
@@ -4221,6 +4256,7 @@
           <paramref name="name" /> is <see langword="null" />.</exception>
         <exception cref="T:System.AppDomainUnloadedException">The operation is attempted on an unloaded application domain.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to the information in the path itself, if the property applies to a path. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" />.</permission>
+        <altmember cref="M:System.AppDomain.SetData(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetType">
@@ -4362,6 +4398,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.AppDomainSetup.SetCompatibilitySwitches(System.Collections.Generic.IEnumerable{System.String})" />
       </Docs>
     </Member>
     <Member MemberName="IsDefaultAppDomain">
@@ -4455,6 +4492,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Environment.HasShutdownStarted" />
       </Docs>
     </Member>
     <Member MemberName="IsFullyTrusted">
@@ -4541,6 +4579,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.AppDomain.PermissionSet" />
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -5178,6 +5217,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="P:System.AppDomain.IsHomogenous" />
       </Docs>
     </Member>
     <Member MemberName="ProcessExit">
@@ -5265,6 +5305,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="P:System.ResolveEventArgs.RequestingAssembly" />
       </Docs>
     </Member>
     <Member MemberName="ReflectionOnlyGetAssemblies">
@@ -5310,6 +5351,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.AppDomainUnloadedException">An operation is attempted on an unloaded application domain.</exception>
+        <altmember cref="M:System.AppDomain.GetAssemblies" />
       </Docs>
     </Member>
     <Member MemberName="RelativeSearchPath">
@@ -5348,6 +5390,7 @@
         </remarks>
         <exception cref="T:System.AppDomainUnloadedException">The operation is attempted on an unloaded application domain.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to the path information. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" />.</permission>
+        <altmember cref="P:System.AppDomainSetup.PrivateBinPath" />
       </Docs>
     </Member>
     <Member MemberName="ResourceResolve">
@@ -5391,6 +5434,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="P:System.ResolveEventArgs.RequestingAssembly" />
       </Docs>
     </Member>
     <Member MemberName="SetAppDomainPolicy">
@@ -5485,6 +5529,7 @@
         </remarks>
         <exception cref="T:System.AppDomainUnloadedException">The operation is attempted on an unloaded application domain.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="P:System.AppDomainSetup.CachePath" />
       </Docs>
     </Member>
     <Member MemberName="SetData">
@@ -5539,6 +5584,7 @@
         </remarks>
         <exception cref="T:System.AppDomainUnloadedException">The operation is attempted on an unloaded application domain.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.AppDomain.GetData(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="SetData">
@@ -5634,6 +5680,7 @@
         </remarks>
         <exception cref="T:System.AppDomainUnloadedException">The operation is attempted on an unloaded application domain.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="P:System.AppDomainSetup.DynamicBase" />
       </Docs>
     </Member>
     <Member MemberName="SetPrincipalPolicy">
@@ -5893,6 +5940,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.AppDomainUnloadedException">The operation is attempted on an unloaded application domain.</exception>
+        <altmember cref="P:System.AppDomainSetup.ShadowCopyFiles" />
       </Docs>
     </Member>
     <Member MemberName="System._AppDomain.GetIDsOfNames">
@@ -6130,6 +6178,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="P:System.ResolveEventArgs.RequestingAssembly" />
       </Docs>
     </Member>
     <Member MemberName="UnhandledException">
@@ -6189,7 +6238,7 @@
 ## Other Events for Unhandled Exceptions  
  For certain application models, the <xref:System.AppDomain.UnhandledException> event can be preempted by other events if the unhandled exception occurs in the main application thread.  
   
- In applications that use Windows Forms, unhandled exceptions in the main application thread cause the <xref:System.Windows.Forms.Application.ThreadException?displayProperty=nameWithType> event to be raised. If this event is handled, the default behavior is that the unhandled exception does not terminate the application, although the application is left in an unknown state. In that case, the <xref:System.AppDomain.UnhandledException> event is not raised. This behavior can be changed by using the application configuration file, or by using the <xref:System.Windows.Forms.Application.SetUnhandledExceptionMode%2A?displayProperty=nameWithType> method to change the mode to <xref:System.Windows.Forms.UnhandledExceptionMode?displayProperty=nameWithType> before the <xref:System.Windows.Forms.Application.ThreadException> event handler is hooked up. This applies only to the main application thread. The <xref:System.AppDomain.UnhandledException> event is raised for unhandled exceptions thrown in other threads.  
+ In applications that use Windows Forms, unhandled exceptions in the main application thread cause the <xref:System.Windows.Forms.Application.ThreadException?displayProperty=nameWithType> event to be raised. If this event is handled, the default behavior is that the unhandled exception does not terminate the application, although the application is left in an unknown state. In that case, the <xref:System.AppDomain.UnhandledException> event is not raised. This behavior can be changed by using the application configuration file, or by using the <xref:System.Windows.Forms.Application.SetUnhandledExceptionMode%2A?displayProperty=nameWithType> method to change the mode to <xref:System.Windows.Forms.UnhandledExceptionMode.ThrowException?displayProperty=nameWithType> before the <xref:System.Windows.Forms.Application.ThreadException> event handler is hooked up. This applies only to the main application thread. The <xref:System.AppDomain.UnhandledException> event is raised for unhandled exceptions thrown in other threads.  
   
  Starting with Microsoft Visual Studio 2005, the Visual Basic application framework provides another event for unhandled exceptions in the main application thread. See the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UnhandledException?displayProperty=nameWithType> event. This event has an event arguments object with the same name as the event arguments object used by <xref:System.AppDomain.UnhandledException?displayProperty=nameWithType>, but with different properties. In particular, this event arguments object has an <xref:Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs.ExitApplication%2A> property that allows the application to continue running, ignoring the unhandled exception (and leaving the application in an unknown state). In that case, the <xref:System.AppDomain.UnhandledException?displayProperty=nameWithType> event is not raised.  
   
@@ -6272,5 +6321,114 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">to add an event handler for this event. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlAppDomain" />. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateComInstanceFrom">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of a specified COM type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateDomain">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new application domain.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ExecuteAssemblyByName">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Executes an assembly.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateInstanceFrom">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of a specified type defined in the specified assembly file.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateInstanceAndUnwrap">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of a specified type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ExecuteAssembly">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Executes the assembly contained in the specified file.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DefineDynamicAssembly">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Defines a dynamic assembly in the current application domain.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetData">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Assigns a value to an application domain property.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Load">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads an <see cref="T:System.Reflection.Assembly" /> into this application domain.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateInstanceFromAndUnwrap">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of a specified type defined in the specified assembly file.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateInstance">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of a specified type defined in a specified assembly.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

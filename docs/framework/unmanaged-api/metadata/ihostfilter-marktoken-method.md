@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostFilter::MarkToken"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "MarkToken method, IHostFilter interface [.NET Framework metadata]"
   - "IHostFilter::MarkToken method [.NET Framework metadata]"

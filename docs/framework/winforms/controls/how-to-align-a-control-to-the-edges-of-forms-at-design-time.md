@@ -9,11 +9,9 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "custom controls [Windows Forms], docking using designer"
-  - "Dock property, aligning controls (using designer)"
+  - "Dock property [Windows Forms], aligning controls (using designer)"
 ms.assetid: 51f08998-5e3b-4330-be58-a4edd0eb60f4
 caps.latest.revision: 8
 author: dotnet-bot

@@ -10,11 +10,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "mouse, click"
-  - "mouse, double-click"
-  - "mouse clicks, single versus double"
+  - "mouse [Windows Forms], click"
+  - "mouse [Windows Forms], double-click"
+  - "mouse clicks [Windows Forms], single versus double"
 ms.assetid: d836ac8c-85bc-4f3a-a761-8aee03dc682c
 caps.latest.revision: 13
 author: dotnet-bot

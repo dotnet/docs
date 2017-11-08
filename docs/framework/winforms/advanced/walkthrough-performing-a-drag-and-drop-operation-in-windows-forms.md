@@ -10,10 +10,11 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "Windows Forms, drag and drop operations"
-  - "drag and drop, Windows Forms"
+  - "drag and drop [Windows Forms], Windows Forms"
 ms.assetid: eb66f6bf-4a7d-4c2d-b276-40fefb2d3b6c
 caps.latest.revision: 15
 author: dotnet-bot

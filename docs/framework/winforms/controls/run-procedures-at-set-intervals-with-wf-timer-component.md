@@ -10,14 +10,16 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "examples [Windows Forms], timers"
-  - "timers, event intervals"
-  - "initialization, Timer components"
-  - "timers, Windows-based"
+  - "timers [Windows Forms], event intervals"
+  - "initialization [Windows Forms], Timer components"
+  - "timers [Windows Forms], Windows-based"
   - "Timer component [Windows Forms], initializing"
-  - "procedures, specific time intervals"
+  - "procedures [Windows Forms], specific time intervals"
 ms.assetid: 8025247a-2de4-4d86-b8ab-a8cb8aeab2ea
 caps.latest.revision: 20
 author: dotnet-bot

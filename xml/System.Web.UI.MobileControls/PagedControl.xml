@@ -45,6 +45,8 @@
       <Docs>
         <summary>Creates a new instance of the <see cref="T:System.Web.UI.MobileControls.PagedControl" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.List" />
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
       </Docs>
     </Member>
     <Member MemberName="FirstVisibleItemIndex">
@@ -105,6 +107,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.List" />
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
       </Docs>
     </Member>
     <Member MemberName="ItemCount">
@@ -140,6 +144,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.List" />
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
       </Docs>
     </Member>
     <Member MemberName="ItemsPerPage">
@@ -178,11 +184,13 @@
 ## Examples  
  The following code example shows how to use the <xref:System.Web.UI.MobileControls.PagedControl.ItemsPerPage%2A> property to render eight items of a 200-item list per page.  
   
- <!-- TODO: review snippet reference [!code-csharp[MobileLoadListEventArgsSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileLoadListEventArgsSample/cs/default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MobileLoadListEventArgsSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileLoadListEventArgsSample/vb/default.aspx#1)]  -->  
+ [!code-aspx-csharp[MobileLoadListEventArgsSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileLoadListEventArgsSample/cs/default.aspx#1)]
+ [!code-aspx-vb[MobileLoadListEventArgsSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileLoadListEventArgsSample/vb/default.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.List" />
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
       </Docs>
     </Member>
     <Member MemberName="ItemWeight">
@@ -211,11 +219,13 @@
 ## Examples  
  The following code example creates and uses a custom list control. The example demonstrates how to override the <xref:System.Web.UI.MobileControls.PagedControl.ItemWeight%2A> property of a <xref:System.Web.UI.MobileControls.List> class to specify a new control weight.  
   
- <!-- TODO: review snippet reference [!code-csharp[MobilePagedControlSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobilePagedControlSample/cs/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MobilePagedControlSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobilePagedControlSample/vb/Default.aspx#1)]  -->  
+ [!code-aspx-csharp[MobilePagedControlSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobilePagedControlSample/cs/Default.aspx#1)]
+ [!code-aspx-vb[MobilePagedControlSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobilePagedControlSample/vb/Default.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.List" />
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
       </Docs>
     </Member>
     <Member MemberName="LoadItems">
@@ -243,11 +253,13 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.MobileControls.PagedControl.ItemsPerPage%2A> property to render eight items of a 200-item list per page.  
   
- <!-- TODO: review snippet reference [!code-csharp[MobileLoadListEventArgsSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileLoadListEventArgsSample/cs/default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MobileLoadListEventArgsSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileLoadListEventArgsSample/vb/default.aspx#1)]  -->  
+ [!code-aspx-csharp[MobileLoadListEventArgsSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileLoadListEventArgsSample/cs/default.aspx#1)]
+ [!code-aspx-vb[MobileLoadListEventArgsSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileLoadListEventArgsSample/vb/default.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.List" />
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
       </Docs>
     </Member>
     <Member MemberName="LoadPrivateViewState">
@@ -297,6 +309,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.List" />
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
       </Docs>
     </Member>
     <Member MemberName="OnPageChange">
@@ -414,6 +428,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.List" />
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
       </Docs>
     </Member>
     <Member MemberName="VisibleWeight">

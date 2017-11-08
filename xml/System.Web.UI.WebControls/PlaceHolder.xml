@@ -56,11 +56,13 @@
 ## Examples  
  The following code example demonstrates how to dynamically add controls to the <xref:System.Web.UI.WebControls.PlaceHolder> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[PlaceHolder#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PlaceHolder/CS/placeholdercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[PlaceHolder#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PlaceHolder/VB/placeholdervb.aspx#1)]  -->  
+ [!code-aspx-csharp[PlaceHolder#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PlaceHolder/CS/placeholdercs.aspx#1)]
+ [!code-aspx-vb[PlaceHolder#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PlaceHolder/VB/placeholdervb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.Control" />
+    <altmember cref="P:System.Web.UI.Control.Controls" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -113,6 +115,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.SkinID" />
       </Docs>
     </Member>
   </Members>

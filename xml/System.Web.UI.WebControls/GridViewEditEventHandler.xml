@@ -33,15 +33,19 @@
 ## Examples  
  The following example demonstrates how to programmatically add a <xref:System.Web.UI.WebControls.GridViewEditEventHandler> delegate to the <xref:System.Web.UI.WebControls.GridView.RowEditing> event of a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewEditEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewEditEventHandler/CS/gridviewediteventhandlercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewEditEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewEditEventHandler/VB/gridviewediteventhandlervb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewEditEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewEditEventHandler/CS/gridviewediteventhandlercs.aspx#1)]
+ [!code-aspx-vb[GridViewEditEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewEditEventHandler/VB/gridviewediteventhandlervb.aspx#1)]  
   
  The following example demonstrates how to declaratively add a <xref:System.Web.UI.WebControls.GridViewEditEventHandler> delegate to the <xref:System.Web.UI.WebControls.GridView.RowEditing> event of a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowEditing#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowEditing/CS/gridviewroweditingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowEditing#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowEditing/VB/gridviewroweditingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRowEditing#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowEditing/CS/gridviewroweditingcs.aspx#1)]
+ [!code-aspx-vb[GridViewRowEditing#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowEditing/VB/gridviewroweditingvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="T:System.Web.UI.WebControls.GridViewEditEventArgs" />
+    <altmember cref="E:System.Web.UI.WebControls.GridView.RowEditing" />
+    <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowEditing(System.Web.UI.WebControls.GridViewEditEventArgs)" />
   </Docs>
 </Type>

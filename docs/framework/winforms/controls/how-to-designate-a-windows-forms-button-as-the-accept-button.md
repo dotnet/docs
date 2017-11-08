@@ -10,9 +10,11 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "buttons, default on Windows Forms"
+  - "buttons [Windows Forms], default on Windows Forms"
   - "Accept button on Windows Forms"
   - "Button control [Windows Forms], designating as default"
   - "Windows Forms controls, default button on form"

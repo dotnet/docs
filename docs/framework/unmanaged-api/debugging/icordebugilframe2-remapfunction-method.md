@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugILFrame2::RemapFunction"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugILFrame2::RemapFunction method [.NET Framework debugging]"
   - "RemapFunction method [.NET Framework debugging]"

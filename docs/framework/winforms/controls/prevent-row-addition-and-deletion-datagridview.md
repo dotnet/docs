@@ -10,11 +10,12 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], disabling data entry"
-  - "data entry, disabling in grids"
-  - "data grids, disabling data entry"
+  - "data entry [Windows Forms], disabling in grids"
+  - "data grids [Windows Forms], disabling data entry"
 ms.assetid: ef9539ce-539b-404e-84b6-ac282b64b88c
 caps.latest.revision: 14
 author: dotnet-bot

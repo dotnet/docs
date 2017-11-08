@@ -34,6 +34,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Data.Odbc.OdbcErrorCollection" />
+    <altmember cref="T:System.Data.Odbc.OdbcException" />
   </Docs>
   <Members>
     <Member MemberName="Message">
@@ -66,6 +68,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.Odbc.OdbcErrorCollection" />
+        <altmember cref="T:System.Data.Odbc.OdbcException" />
       </Docs>
     </Member>
     <Member MemberName="NativeError">
@@ -98,6 +102,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.Odbc.OdbcErrorCollection" />
+        <altmember cref="T:System.Data.Odbc.OdbcException" />
       </Docs>
     </Member>
     <Member MemberName="Source">
@@ -130,6 +136,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.Odbc.OdbcErrorCollection" />
+        <altmember cref="T:System.Data.Odbc.OdbcException" />
       </Docs>
     </Member>
     <Member MemberName="SQLState">
@@ -162,6 +170,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.Odbc.OdbcErrorCollection" />
+        <altmember cref="T:System.Data.Odbc.OdbcException" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -195,6 +205,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.Odbc.OdbcErrorCollection" />
+        <altmember cref="T:System.Data.Odbc.OdbcException" />
       </Docs>
     </Member>
   </Members>

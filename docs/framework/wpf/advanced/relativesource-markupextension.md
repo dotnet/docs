@@ -12,8 +12,8 @@ ms.topic: "article"
 f1_keywords: 
   - "RelativeSource"
 helpviewer_keywords: 
-  - "RelativeSource markup extensions"
-  - "XAML, RelativeSource markup extension"
+  - "RelativeSource markup extensions [WPF]"
+  - "XAML [WPF], RelativeSource markup extension"
 ms.assetid: 26be4721-49b5-4717-a92e-7d54ad0d3a81
 caps.latest.revision: 18
 author: dotnet-bot
@@ -99,7 +99,7 @@ Specifies properties of a <xref:System.Windows.Data.RelativeSource> binding sour
                     </TextBlock.Text>  
                 </TextBlock>  
             </StackPanel>  
-            </DataTemplate>  
+        </DataTemplate>  
     </ListBox.ItemTemplate>  
 ```  
   

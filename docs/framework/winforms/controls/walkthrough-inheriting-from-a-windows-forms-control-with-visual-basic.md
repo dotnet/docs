@@ -10,12 +10,12 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "vb"
 helpviewer_keywords: 
-  - "inheritance, custom controls"
-  - "inheritance, control"
+  - "inheritance [Windows Forms], custom controls"
+  - "inheritance [Windows Forms], control"
   - "Windows Forms controls, inheritance"
-  - "inheritance, walkthroughs"
+  - "inheritance [Windows Forms], walkthroughs"
   - "custom controls [Windows Forms], inheritance"
 ms.assetid: fb58d7c8-b702-4478-ad31-b00cae118882
 caps.latest.revision: 16

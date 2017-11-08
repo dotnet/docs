@@ -152,8 +152,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.AdRotator> control to display an advertisement banner on a Web page.  
   
- <!-- TODO: review snippet reference [!code-csharp[classic adrotator.advertisementfile example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic AdRotator.AdvertisementFile Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[classic adrotator.advertisementfile example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic AdRotator.AdvertisementFile Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[classic adrotator.advertisementfile example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic AdRotator.AdvertisementFile Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[classic adrotator.advertisementfile example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic AdRotator.AdvertisementFile Example/VB/sourcevb.aspx#1)]  
   
  The following code example demonstrates the file format for an XML file that contains advertisement information for the previous example. For more information on the file format, see the <xref:System.Web.UI.WebControls.AdRotator.AdvertisementFile%2A> member.  
   
@@ -182,6 +182,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.AdCreatedEventArgs" />
+    <altmember cref="T:System.Web.UI.WebControls.AdCreatedEventHandler" />
+    <altmember cref="P:System.Web.UI.WebControls.AdRotator.AdvertisementFile" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -210,11 +213,13 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[AdRotatorCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/AdRotatorCtor/CS/adrotatorctorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[AdRotatorCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/AdRotatorCtor/VB/adrotatorctorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[AdRotatorCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/AdRotatorCtor/CS/adrotatorctorcs.aspx#1)]
+ [!code-aspx-vb[AdRotatorCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/AdRotatorCtor/VB/adrotatorctorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.Controls" />
+        <altmember cref="T:System.Web.UI.WebControls.Literal" />
       </Docs>
     </Member>
     <Member MemberName="AdCreated">
@@ -252,8 +257,8 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic AdCreatedEventArgs Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic AdCreatedEventArgs Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic AdCreatedEventArgs Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic AdCreatedEventArgs Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic AdCreatedEventArgs Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic AdCreatedEventArgs Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic AdCreatedEventArgs Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic AdCreatedEventArgs Example/VB/sourcevb.aspx#1)]  
   
  The following code example demonstrates how to format the XML file that contains the advertisement information. For more information on the XML file, see the <xref:System.Web.UI.WebControls.AdRotator.AdvertisementFile%2A> property.  
   
@@ -285,11 +290,14 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[AdCreatedEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/AdCreatedEventHandler/CS/adcreatedeventhandlercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[AdCreatedEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/AdCreatedEventHandler/VB/adcreatedeventhandlervb.aspx#1)]  -->  
+ [!code-aspx-csharp[AdCreatedEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/AdCreatedEventHandler/CS/adcreatedeventhandlercs.aspx#1)]
+ [!code-aspx-vb[AdCreatedEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/AdCreatedEventHandler/VB/adcreatedeventhandlervb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.AdRotator.OnAdCreated(System.Web.UI.WebControls.AdCreatedEventArgs)" />
+        <altmember cref="T:System.Web.UI.WebControls.AdCreatedEventHandler" />
+        <altmember cref="T:System.Web.UI.WebControls.AdCreatedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="AdvertisementFile">
@@ -361,8 +369,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.AdRotator.AdvertisementFile%2A> property to specify the location of the XML file that contains advertisement information.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic AdRotator.AdvertisementFile Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic AdRotator.AdvertisementFile Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic AdRotator.AdvertisementFile Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic AdRotator.AdvertisementFile Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic AdRotator.AdvertisementFile Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic AdRotator.AdvertisementFile Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic AdRotator.AdvertisementFile Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic AdRotator.AdvertisementFile Example/VB/sourcevb.aspx#1)]  
   
  The following code example shows the file format of the XML advertisement file.  
   
@@ -393,6 +401,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.AdRotator.AdCreated" />
+        <altmember cref="T:System.Web.UI.WebControls.AdCreatedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="AlternateTextField">
@@ -426,8 +436,8 @@
 ## Examples  
  The following code example demonstrates using the <xref:System.Web.UI.WebControls.AdRotator.AlternateTextField%2A> property to specify a custom data field. The <xref:System.Web.UI.WebControls.AdRotator.NavigateUrlField%2A>, <xref:System.Web.UI.WebControls.AdRotator.ImageUrlField%2A>, and <xref:System.Web.UI.WebControls.AdRotator.AlternateTextField%2A> properties are used to dynamically select a custom field to use in place of the `NavigateUrl`, `ImageUrl`, and `AlternateText` attributes. This example uses a device filter to indicate that custom fields should be used for Wireless Application Protocol (WAP)-enabled devices.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.AdRotator.MobileExamples#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.AdRotator.MobileExamples/CS/defaultcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.AdRotator.MobileExamples#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.AdRotator.MobileExamples/VB/defaultvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.AdRotator.MobileExamples#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.AdRotator.MobileExamples/CS/defaultcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.AdRotator.MobileExamples#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.AdRotator.MobileExamples/VB/defaultvb.aspx#1)]  
   
  The following is the sample XML data for the previous example.  
   
@@ -462,6 +472,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.AdCreatedEventArgs.AlternateText" />
+        <altmember cref="P:System.Web.UI.WebControls.AdRotator.AdvertisementFile" />
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -524,8 +536,8 @@
 ## Examples  
  The following code example demonstrates using the <xref:System.Web.UI.WebControls.AdRotator.ImageUrlField%2A> property to specify a custom data field. The <xref:System.Web.UI.WebControls.AdRotator.NavigateUrlField%2A>, <xref:System.Web.UI.WebControls.AdRotator.ImageUrlField%2A>, and <xref:System.Web.UI.WebControls.AdRotator.AlternateTextField%2A> properties are used to dynamically select a custom field to use in place of the `NavigateUrl`, `ImageUrl`, and `AlternateText` attributes. This example uses a device filter to indicate that custom fields should be used for Wireless Application Protocol (WAP)-enabled devices.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.AdRotator.MobileExamples#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.AdRotator.MobileExamples/CS/defaultcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.AdRotator.MobileExamples#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.AdRotator.MobileExamples/VB/defaultvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.AdRotator.MobileExamples#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.AdRotator.MobileExamples/CS/defaultcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.AdRotator.MobileExamples#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.AdRotator.MobileExamples/VB/defaultvb.aspx#1)]  
   
  The following is the sample XML data for the previous example.  
   
@@ -561,6 +573,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.AdCreatedEventArgs.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.AdRotator.AdvertisementFile" />
       </Docs>
     </Member>
     <Member MemberName="KeywordFilter">
@@ -605,8 +619,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.AdRotator.KeywordFilter%2A> property to filter for game-related advertisements.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic AdRotator.KeywordFilter Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic AdRotator.KeywordFilter Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic AdRotator.KeywordFilter Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic AdRotator.KeywordFilter Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic AdRotator.KeywordFilter Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic AdRotator.KeywordFilter Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic AdRotator.KeywordFilter Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic AdRotator.KeywordFilter Example/VB/sourcevb.aspx#1)]  
   
  The following code example demonstrates how to specify a keyword for each advertisement in the XML advertisement file. For more information on the file format, see the <xref:System.Web.UI.WebControls.AdRotator.AdvertisementFile%2A> member.  
   
@@ -637,6 +651,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.AdRotator.AdvertisementFile" />
       </Docs>
     </Member>
     <Member MemberName="NavigateUrlField">
@@ -670,8 +685,8 @@
 ## Examples  
  The following code example demonstrates using the <xref:System.Web.UI.WebControls.AdRotator.NavigateUrlField%2A> property to specify a custom data field. The <xref:System.Web.UI.WebControls.AdRotator.NavigateUrlField%2A>, <xref:System.Web.UI.WebControls.AdRotator.ImageUrlField%2A>, and <xref:System.Web.UI.WebControls.AdRotator.AlternateTextField%2A> properties are used to dynamically select a custom field to use in place of the `NavigateUrl`, `ImageUrl`, and `AlternateText` attributes. This example uses a device filter to indicate that custom fields should be used for Wireless Application Protocol (WAP)-enabled devices.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.AdRotator.MobileExamples#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.AdRotator.MobileExamples/CS/defaultcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.AdRotator.MobileExamples#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.AdRotator.MobileExamples/VB/defaultvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.AdRotator.MobileExamples#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.AdRotator.MobileExamples/CS/defaultcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.AdRotator.MobileExamples#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.AdRotator.MobileExamples/VB/defaultvb.aspx#1)]  
   
  The following is the sample XML data for the previous example.  
   
@@ -706,6 +721,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.AdCreatedEventArgs.NavigateUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.AdRotator.AdvertisementFile" />
       </Docs>
     </Member>
     <Member MemberName="OnAdCreated">
@@ -739,8 +756,8 @@
 ## Examples  
  The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.AdRotator.AdCreated> event. It gets the URL associated with the advertisement when the <xref:System.Web.UI.WebControls.AdRotator> control is created and displays it below the control.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic AdCreatedEventArgs Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic AdCreatedEventArgs Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic AdCreatedEventArgs Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic AdCreatedEventArgs Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic AdCreatedEventArgs Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic AdCreatedEventArgs Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic AdCreatedEventArgs Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic AdCreatedEventArgs Example/VB/sourcevb.aspx#1)]  
   
  The following code example demonstrates how to format the XML file that contains the advertisement information. For more information on the XML file, see the <xref:System.Web.UI.WebControls.AdRotator.AdvertisementFile%2A> property.  
   
@@ -769,14 +786,17 @@
 </Advertisements>  
 ```  
   
- <!-- TODO: review snippet reference [!code-csharp[AdCreatedEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/AdCreatedEventHandler/CS/adcreatedeventhandlercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[AdCreatedEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/AdCreatedEventHandler/VB/adcreatedeventhandlervb.aspx#1)]  -->  
+ [!code-aspx-csharp[AdCreatedEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/AdCreatedEventHandler/CS/adcreatedeventhandlercs.aspx#1)]
+ [!code-aspx-vb[AdCreatedEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/AdCreatedEventHandler/VB/adcreatedeventhandlervb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.AdRotator.OnAdCreated(System.Web.UI.WebControls.AdCreatedEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.AdRotator.OnAdCreated(System.Web.UI.WebControls.AdCreatedEventArgs)" /> method.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.AdRotator.AdCreated" />
+        <altmember cref="T:System.Web.UI.WebControls.AdCreatedEventHandler" />
+        <altmember cref="T:System.Web.UI.WebControls.AdCreatedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -824,13 +844,14 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.AdRotator.OnPreRender%2A> method so that it always displays a border in a custom <xref:System.Web.UI.WebControls.AdRotator> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomADRotatorOnPreRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomADRotatorOnPreRender/CS/customadrotatoronprerendercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomADRotatorOnPreRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomADRotatorOnPreRender/VB/customadrotatoronprerendervb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomADRotatorOnPreRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomADRotatorOnPreRender/CS/customadrotatoronprerendercs.aspx#1)]
+ [!code-aspx-vb[CustomADRotatorOnPreRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomADRotatorOnPreRender/VB/customadrotatoronprerendervb.aspx#1)]  
 [!code-csharp[CustomADRotatorOnPreRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomADRotatorOnPreRender/CS/customadrotatoronprerender.cs#2)]
 [!code-vb[CustomADRotatorOnPreRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomADRotatorOnPreRender/VB/customadrotatoronprerender.vb#2)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.AdRotator.AdvertisementFile" />
       </Docs>
     </Member>
     <Member MemberName="PerformDataBinding">
@@ -861,6 +882,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.AdRotator.PerformSelect" />
+        <altmember cref="M:System.Web.UI.Control.OnDataBinding(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="PerformSelect">
@@ -921,13 +944,15 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.AdRotator.Render%2A> method in a custom server control so that the <xref:System.Web.UI.WebControls.AdRotator> displays a random advertisement, from an XML file, with a link and an image.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomADRotatorRender0#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomADRotatorRender0/CS/customadrotatorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomADRotatorRender0#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomADRotatorRender0/VB/customadrotatorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomADRotatorRender0#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomADRotatorRender0/CS/customadrotatorcs.aspx#1)]
+ [!code-aspx-vb[CustomADRotatorRender0#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomADRotatorRender0/VB/customadrotatorvb.aspx#1)]  
 [!code-csharp[CustomADRotatorRender0#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomADRotatorRender0/CS/customadrotator.cs#2)]
 [!code-vb[CustomADRotatorRender0#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomADRotatorRender0/VB/customadrotator.vb#2)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
+        <altmember cref="M:System.Web.UI.WebControls.AdRotator.OnPreRender(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="TagKey">
@@ -951,7 +976,7 @@
 ## Remarks  
  This property is used primarily by control developers.  
   
- Use the <xref:System.Web.UI.WebControls.AdRotator.TagKey%2A> property to determine the <xref:System.Web.UI.HtmlTextWriterTag> value associated with an <xref:System.Web.UI.WebControls.AdRotator> control. This property overrides the base implementation to always return <xref:System.Web.UI.HtmlTextWriterTag?displayProperty=nameWithType>.  
+ Use the <xref:System.Web.UI.WebControls.AdRotator.TagKey%2A> property to determine the <xref:System.Web.UI.HtmlTextWriterTag> value associated with an <xref:System.Web.UI.WebControls.AdRotator> control. This property overrides the base implementation to always return <xref:System.Web.UI.HtmlTextWriterTag.A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1010,8 +1035,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.AdRotator.Target%2A> property. It displays the contents of the Web page linked to when the <xref:System.Web.UI.WebControls.AdRotator> control is clicked in a new, unframed window.  
   
- <!-- TODO: review snippet reference [!code-csharp[classic adrotator.advertisementfile example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic AdRotator.AdvertisementFile Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[classic adrotator.advertisementfile example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic AdRotator.AdvertisementFile Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[classic adrotator.advertisementfile example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic AdRotator.AdvertisementFile Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[classic adrotator.advertisementfile example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic AdRotator.AdvertisementFile Example/VB/sourcevb.aspx#1)]  
   
  The following code example demonstrates the file format for an XML file that contains advertisement information. For more information on the file format, see the <xref:System.Web.UI.WebControls.AdRotator.AdvertisementFile%2A> member.  
   
@@ -1042,6 +1067,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.AdRotator.AdvertisementFile" />
       </Docs>
     </Member>
     <Member MemberName="UniqueID">
@@ -1067,6 +1093,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.UniqueID" />
+        <altmember cref="P:System.Web.UI.Control.NamingContainer" />
       </Docs>
     </Member>
   </Members>

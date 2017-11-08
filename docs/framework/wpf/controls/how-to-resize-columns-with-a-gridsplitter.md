@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "grid columns, resizing"
-  - "GridSplitter control, resizing grid columns"
-  - "resizing grid columns"
+  - "grid columns [WPF], resizing"
+  - "GridSplitter control [WPF], resizing grid columns"
+  - "resizing grid columns [WPF]"
 ms.assetid: 47b20fe6-7adc-4aa6-9693-b4e184eef74b
 caps.latest.revision: 13
 author: dotnet-bot

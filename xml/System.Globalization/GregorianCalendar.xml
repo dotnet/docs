@@ -68,6 +68,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Globalization.Calendar" />
+    <altmember cref="P:System.Globalization.CultureInfo.Calendar" />
+    <altmember cref="P:System.Globalization.CultureInfo.OptionalCalendars" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -112,6 +115,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Globalization.GregorianCalendarTypes" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -145,6 +149,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="type" /> is not a member of the <see cref="T:System.Globalization.GregorianCalendarTypes" /> enumeration.</exception>
+        <altmember cref="T:System.Globalization.GregorianCalendarTypes" />
       </Docs>
     </Member>
     <Member MemberName="AddMonths">
@@ -191,7 +196,7 @@
   
  If the value of the `months` parameter is negative, the resulting <xref:System.DateTime> is earlier than the specified <xref:System.DateTime>.  
   
- The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=nameWithType>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=nameWithType> method, as the following example shows.  
+ The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=nameWithType> method, as the following example shows.  
   
  [!code-csharp[System.Globalization.Calendar.AddMethods#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/cs/add1.cs#5)]
  [!code-vb[System.Globalization.Calendar.AddMethods#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/vb/add1.vb#5)]  
@@ -214,6 +219,13 @@
  -or-  
   
  <paramref name="months" /> is greater than 120000.</exception>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="M:System.Globalization.GregorianCalendar.AddYears(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddDays(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddHours(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddMinutes(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddSeconds(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddMilliseconds(System.DateTime,System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="AddYears">
@@ -260,7 +272,7 @@
   
  If `years` is negative, the resulting <xref:System.DateTime> is earlier than the specified <xref:System.DateTime>.  
   
- The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=nameWithType>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=nameWithType> method, as the following example shows.  
+ The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=nameWithType> method, as the following example shows.  
   
  [!code-csharp[System.Globalization.Calendar.AddMethods#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/cs/add1.cs#8)]
  [!code-vb[System.Globalization.Calendar.AddMethods#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/vb/add1.vb#8)]  
@@ -277,6 +289,13 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The resulting <see cref="T:System.DateTime" /> is outside the supported range.</exception>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="M:System.Globalization.GregorianCalendar.AddMonths(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddDays(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddHours(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddMinutes(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddSeconds(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddMilliseconds(System.DateTime,System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="ADEra">
@@ -311,6 +330,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Globalization.Calendar.CurrentEra" />
+        <altmember cref="P:System.Globalization.GregorianCalendar.Eras" />
       </Docs>
     </Member>
     <Member MemberName="AlgorithmType">
@@ -397,6 +418,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value specified in a set operation is not a member of the <see cref="T:System.Globalization.GregorianCalendarTypes" /> enumeration.</exception>
         <exception cref="T:System.InvalidOperationException">In a set operation, the current instance is read-only.</exception>
+        <altmember cref="T:System.Globalization.GregorianCalendarTypes" />
       </Docs>
     </Member>
     <Member MemberName="Eras">
@@ -435,6 +457,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Globalization.Calendar.CurrentEra" />
+        <altmember cref="F:System.Globalization.GregorianCalendar.ADEra" />
       </Docs>
     </Member>
     <Member MemberName="GetDayOfMonth">
@@ -481,6 +505,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.DateTime.Day" />
+        <altmember cref="M:System.Globalization.GregorianCalendar.GetEra(System.DateTime)" />
+        <altmember cref="M:System.Globalization.GregorianCalendar.GetYear(System.DateTime)" />
+        <altmember cref="M:System.Globalization.GregorianCalendar.GetMonth(System.DateTime)" />
+        <altmember cref="M:System.Globalization.GregorianCalendar.GetDayOfYear(System.DateTime)" />
+        <altmember cref="M:System.Globalization.GregorianCalendar.GetDayOfWeek(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetWeekOfYear(System.DateTime,System.Globalization.CalendarWeekRule,System.DayOfWeek)" />
       </Docs>
     </Member>
     <Member MemberName="GetDayOfWeek">
@@ -532,6 +563,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.DateTime.DayOfWeek" />
+        <altmember cref="T:System.DayOfWeek" />
+        <altmember cref="M:System.Globalization.GregorianCalendar.GetEra(System.DateTime)" />
+        <altmember cref="M:System.Globalization.GregorianCalendar.GetYear(System.DateTime)" />
+        <altmember cref="M:System.Globalization.GregorianCalendar.GetMonth(System.DateTime)" />
+        <altmember cref="M:System.Globalization.GregorianCalendar.GetDayOfYear(System.DateTime)" />
+        <altmember cref="M:System.Globalization.GregorianCalendar.GetDayOfMonth(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetWeekOfYear(System.DateTime,System.Globalization.CalendarWeekRule,System.DayOfWeek)" />
       </Docs>
     </Member>
     <Member MemberName="GetDayOfYear">
@@ -583,6 +622,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.DateTime.DayOfYear" />
+        <altmember cref="M:System.Globalization.GregorianCalendar.GetEra(System.DateTime)" />
+        <altmember cref="M:System.Globalization.GregorianCalendar.GetYear(System.DateTime)" />
+        <altmember cref="M:System.Globalization.GregorianCalendar.GetMonth(System.DateTime)" />
+        <altmember cref="M:System.Globalization.GregorianCalendar.GetDayOfMonth(System.DateTime)" />
+        <altmember cref="M:System.Globalization.GregorianCalendar.GetDayOfWeek(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetWeekOfYear(System.DateTime,System.Globalization.CalendarWeekRule,System.DayOfWeek)" />
       </Docs>
     </Member>
     <Member MemberName="GetDaysInMonth">
@@ -648,6 +694,11 @@
  -or-  
   
  <paramref name="month" /> is outside the range supported by the calendar.</exception>
+        <altmember cref="F:System.Globalization.Calendar.CurrentEra" />
+        <altmember cref="F:System.Globalization.GregorianCalendar.ADEra" />
+        <altmember cref="P:System.Globalization.GregorianCalendar.Eras" />
+        <altmember cref="M:System.Globalization.GregorianCalendar.GetMonthsInYear(System.Int32,System.Int32)" />
+        <altmember cref="M:System.Globalization.GregorianCalendar.GetDaysInYear(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetDaysInYear">
@@ -707,6 +758,11 @@
  -or-  
   
  <paramref name="year" /> is outside the range supported by the calendar.</exception>
+        <altmember cref="F:System.Globalization.Calendar.CurrentEra" />
+        <altmember cref="F:System.Globalization.GregorianCalendar.ADEra" />
+        <altmember cref="P:System.Globalization.GregorianCalendar.Eras" />
+        <altmember cref="M:System.Globalization.GregorianCalendar.GetMonthsInYear(System.Int32,System.Int32)" />
+        <altmember cref="M:System.Globalization.GregorianCalendar.GetDaysInMonth(System.Int32,System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetEra">
@@ -758,6 +814,20 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="F:System.Globalization.Calendar.CurrentEra" />
+        <altmember cref="F:System.Globalization.GregorianCalendar.ADEra" />
+        <altmember cref="P:System.Globalization.GregorianCalendar.Eras" />
+        <altmember cref="M:System.Globalization.GregorianCalendar.GetYear(System.DateTime)" />
+        <altmember cref="M:System.Globalization.GregorianCalendar.GetMonth(System.DateTime)" />
+        <altmember cref="M:System.Globalization.GregorianCalendar.GetDayOfYear(System.DateTime)" />
+        <altmember cref="M:System.Globalization.GregorianCalendar.GetDayOfMonth(System.DateTime)" />
+        <altmember cref="M:System.Globalization.GregorianCalendar.GetDayOfWeek(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetWeekOfYear(System.DateTime,System.Globalization.CalendarWeekRule,System.DayOfWeek)" />
+        <altmember cref="M:System.Globalization.Calendar.GetHour(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetMinute(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetSecond(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetMilliseconds(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="GetLeapMonth">
@@ -852,6 +922,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.DateTime.Month" />
+        <altmember cref="M:System.Globalization.GregorianCalendar.GetEra(System.DateTime)" />
+        <altmember cref="M:System.Globalization.GregorianCalendar.GetYear(System.DateTime)" />
+        <altmember cref="M:System.Globalization.GregorianCalendar.GetDayOfYear(System.DateTime)" />
+        <altmember cref="M:System.Globalization.GregorianCalendar.GetDayOfMonth(System.DateTime)" />
+        <altmember cref="M:System.Globalization.GregorianCalendar.GetDayOfWeek(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetWeekOfYear(System.DateTime,System.Globalization.CalendarWeekRule,System.DayOfWeek)" />
+        <altmember cref="M:System.Globalization.Calendar.GetHour(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetMinute(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetSecond(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetMilliseconds(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="GetMonthsInYear">
@@ -906,6 +987,11 @@
  -or-  
   
  <paramref name="year" /> is outside the range supported by the calendar.</exception>
+        <altmember cref="F:System.Globalization.Calendar.CurrentEra" />
+        <altmember cref="F:System.Globalization.GregorianCalendar.ADEra" />
+        <altmember cref="P:System.Globalization.GregorianCalendar.Eras" />
+        <altmember cref="M:System.Globalization.GregorianCalendar.GetDaysInYear(System.Int32,System.Int32)" />
+        <altmember cref="M:System.Globalization.GregorianCalendar.GetDaysInMonth(System.Int32,System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetYear">
@@ -952,6 +1038,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.DateTime.Year" />
+        <altmember cref="M:System.Globalization.GregorianCalendar.GetEra(System.DateTime)" />
+        <altmember cref="M:System.Globalization.GregorianCalendar.GetMonth(System.DateTime)" />
+        <altmember cref="M:System.Globalization.GregorianCalendar.GetDayOfYear(System.DateTime)" />
+        <altmember cref="M:System.Globalization.GregorianCalendar.GetDayOfMonth(System.DateTime)" />
+        <altmember cref="M:System.Globalization.GregorianCalendar.GetDayOfWeek(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetWeekOfYear(System.DateTime,System.Globalization.CalendarWeekRule,System.DayOfWeek)" />
+        <altmember cref="M:System.Globalization.Calendar.GetHour(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetMinute(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetSecond(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetMilliseconds(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="IsLeapDay">
@@ -1026,6 +1123,13 @@
  -or-  
   
  <paramref name="day" /> is outside the range supported by the calendar.</exception>
+        <altmember cref="F:System.Globalization.Calendar.CurrentEra" />
+        <altmember cref="F:System.Globalization.GregorianCalendar.ADEra" />
+        <altmember cref="P:System.Globalization.GregorianCalendar.Eras" />
+        <altmember cref="M:System.Globalization.GregorianCalendar.GetMonthsInYear(System.Int32,System.Int32)" />
+        <altmember cref="M:System.Globalization.GregorianCalendar.GetDaysInMonth(System.Int32,System.Int32,System.Int32)" />
+        <altmember cref="M:System.Globalization.GregorianCalendar.IsLeapYear(System.Int32,System.Int32)" />
+        <altmember cref="M:System.Globalization.GregorianCalendar.IsLeapMonth(System.Int32,System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="IsLeapMonth">
@@ -1093,6 +1197,12 @@
  -or-  
   
  <paramref name="month" /> is outside the range supported by the calendar.</exception>
+        <altmember cref="F:System.Globalization.Calendar.CurrentEra" />
+        <altmember cref="F:System.Globalization.GregorianCalendar.ADEra" />
+        <altmember cref="P:System.Globalization.GregorianCalendar.Eras" />
+        <altmember cref="M:System.Globalization.GregorianCalendar.GetMonthsInYear(System.Int32,System.Int32)" />
+        <altmember cref="M:System.Globalization.GregorianCalendar.IsLeapYear(System.Int32,System.Int32)" />
+        <altmember cref="M:System.Globalization.GregorianCalendar.IsLeapDay(System.Int32,System.Int32,System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="IsLeapYear">
@@ -1153,6 +1263,11 @@
  -or-  
   
  <paramref name="year" /> is outside the range supported by the calendar.</exception>
+        <altmember cref="F:System.Globalization.Calendar.CurrentEra" />
+        <altmember cref="F:System.Globalization.GregorianCalendar.ADEra" />
+        <altmember cref="P:System.Globalization.GregorianCalendar.Eras" />
+        <altmember cref="M:System.Globalization.GregorianCalendar.IsLeapMonth(System.Int32,System.Int32,System.Int32)" />
+        <altmember cref="M:System.Globalization.GregorianCalendar.IsLeapDay(System.Int32,System.Int32,System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="MaxSupportedDateTime">
@@ -1331,6 +1446,12 @@
  -or-  
   
  <paramref name="millisecond" /> is less than zero or greater than 999.</exception>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="F:System.Globalization.Calendar.CurrentEra" />
+        <altmember cref="F:System.Globalization.GregorianCalendar.ADEra" />
+        <altmember cref="P:System.Globalization.GregorianCalendar.Eras" />
+        <altmember cref="M:System.Globalization.GregorianCalendar.GetMonthsInYear(System.Int32,System.Int32)" />
+        <altmember cref="M:System.Globalization.GregorianCalendar.GetDaysInMonth(System.Int32,System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ToFourDigitYear">
@@ -1377,6 +1498,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="year" /> is outside the range supported by the calendar.</exception>
+        <altmember cref="P:System.Globalization.GregorianCalendar.TwoDigitYearMax" />
       </Docs>
     </Member>
     <Member MemberName="TwoDigitYearMax">
@@ -1425,7 +1547,17 @@
   
  The value specified in a set operation is greater than <see langword="MaxSupportedDateTime.Year" />.</exception>
         <exception cref="T:System.InvalidOperationException">In a set operation, the current instance is read-only.</exception>
+        <altmember cref="M:System.Globalization.GregorianCalendar.ToFourDigitYear(System.Int32)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization.Calendars</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Globalization.GregorianCalendar" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

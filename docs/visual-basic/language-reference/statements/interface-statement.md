@@ -1,35 +1,19 @@
 ---
 title: "Interface Statement (Visual Basic)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-visual-basic"
 ms.topic: "article"
 f1_keywords: 
   - "vb.Interface"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "interface statement [Visual Basic]"
-  - "interfaces, interface definition"
+  - "interfaces [Visual Basic], interface definition"
 ms.assetid: 8997af73-bda3-4f79-bd41-ca396b610260
 caps.latest.revision: 26
 author: dotnet-bot
 ms.author: dotnetcontent
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Interface Statement (Visual Basic)
 Declares the name of an interface and introduces the definitions of the members that the interface comprises.  

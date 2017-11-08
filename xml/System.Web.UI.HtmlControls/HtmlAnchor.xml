@@ -40,11 +40,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlAnchor.ServerClick> event to display a message when the <xref:System.Web.UI.HtmlControls.HtmlAnchor> control is clicked.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlAnchor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlAnchor/CS/htmlanchorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlAnchor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlAnchor/VB/htmlanchorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlAnchor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlAnchor/CS/htmlanchorcs.aspx#1)]
+ [!code-aspx-vb[HtmlAnchor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlAnchor/VB/htmlanchorvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlContainerControl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -76,8 +77,8 @@
 ## Examples  
  The following code example demonstrates how to dynamically add an <xref:System.Web.UI.HtmlControls.HtmlAnchor> control to the Web Forms page.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlAnchorConstructor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlAnchorConstructor/CS/htmlanchorconstructorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlAnchorConstructor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlAnchorConstructor/VB/htmlanchorconstructorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlAnchorConstructor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlAnchorConstructor/CS/htmlanchorconstructorcs.aspx#1)]
+ [!code-aspx-vb[HtmlAnchorConstructor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlAnchorConstructor/VB/htmlanchorconstructorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -114,6 +115,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlAnchor.ValidationGroup" />
       </Docs>
     </Member>
     <Member MemberName="HRef">
@@ -153,8 +155,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlAnchor.HRef%2A> property to specify a Web page to navigate to when the <xref:System.Web.UI.HtmlControls.HtmlAnchor> control is clicked.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HtmlAnchor.HRef Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlAnchor.HRef Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HtmlAnchor.HRef Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlAnchor.HRef Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HtmlAnchor.HRef Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlAnchor.HRef Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HtmlAnchor.HRef Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlAnchor.HRef Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -196,11 +198,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlAnchor.Name%2A> property to mark different sections on the Web page, and link to them from a table of contents.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HtmlAnchor.Name Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlAnchor.Name Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HtmlAnchor.Name Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlAnchor.Name Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HtmlAnchor.Name Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlAnchor.Name Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HtmlAnchor.Name Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlAnchor.Name Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlAnchor.HRef" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -227,8 +230,8 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.HtmlControls.HtmlAnchor.OnPreRender%2A> method so that it always displays a <xref:System.Web.UI.HtmlControls.HtmlAnchor.Title%2A> tag in a custom <xref:System.Web.UI.HtmlControls.HtmlAnchor> server control.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomHtmlAnchorOnPreRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlAnchorOnPreRender/CS/custom_htmlanchor_onprerendercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomHtmlAnchorOnPreRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlAnchorOnPreRender/VB/custom_htmlanchor_onprerendervb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomHtmlAnchorOnPreRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlAnchorOnPreRender/CS/custom_htmlanchor_onprerendercs.aspx#1)]
+ [!code-aspx-vb[CustomHtmlAnchorOnPreRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlAnchorOnPreRender/VB/custom_htmlanchor_onprerendervb.aspx#1)]  
   
  [!code-csharp[CustomHtmlAnchorOnPreRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlAnchorOnPreRender/CS/custom_htmlanchor_onprerender.cs#2)]
  [!code-vb[CustomHtmlAnchorOnPreRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlAnchorOnPreRender/VB/custom_htmlanchor_onprerender.vb#2)]  
@@ -270,19 +273,21 @@
 ## Examples  
  The following code example demonstrates how to declaratively specify and code an event handler for the <xref:System.Web.UI.HtmlControls.HtmlAnchor.ServerClick> event. When the <xref:System.Web.UI.HtmlControls.HtmlAnchor> control is clicked, a message is displayed.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlAnchorServerClickDeclarative#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlAnchorServerClickDeclarative/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlAnchorServerClickDeclarative#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlAnchorServerClickDeclarative/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlAnchorServerClickDeclarative#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlAnchorServerClickDeclarative/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[HtmlAnchorServerClickDeclarative#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlAnchorServerClickDeclarative/VB/sourcevb.aspx#1)]  
   
  The following code example modifies the preceding example to programmatically specify and code an event handler for the <xref:System.Web.UI.HtmlControls.HtmlAnchor.ServerClick> event.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlAnchorServerClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlAnchorServerClick/CS/htmlanchorserverclickcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlAnchorServerClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlAnchorServerClick/VB/htmlanchorserverclickvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlAnchorServerClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlAnchorServerClick/CS/htmlanchorserverclickcs.aspx#1)]
+ [!code-aspx-vb[HtmlAnchorServerClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlAnchorServerClick/VB/htmlanchorserverclickvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.HtmlControls.HtmlAnchor.OnServerClick(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.HtmlControls.HtmlAnchor.OnServerClick(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlForm" />
+        <altmember cref="E:System.Web.UI.HtmlControls.HtmlAnchor.ServerClick" />
       </Docs>
     </Member>
     <Member MemberName="RaisePostBackEvent">
@@ -344,8 +349,8 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.HtmlControls.HtmlAnchor.RenderAttributes%2A> method in a custom server control so that specific title text, accessible as a ToolTip, is always displayed for the <xref:System.Web.UI.HtmlControls.HtmlAnchor> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomHtmlAnchorRenderAttributes#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlAnchorRenderAttributes/CS/custom_htmlanchor_renderattributescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomHtmlAnchorRenderAttributes#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlAnchorRenderAttributes/VB/custom_htmlanchor_renderattributesvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomHtmlAnchorRenderAttributes#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlAnchorRenderAttributes/CS/custom_htmlanchor_renderattributescs.aspx#1)]
+ [!code-aspx-vb[CustomHtmlAnchorRenderAttributes#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlAnchorRenderAttributes/VB/custom_htmlanchor_renderattributesvb.aspx#1)]  
   
  [!code-csharp[CustomHtmlAnchorRenderAttributes#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlAnchorRenderAttributes/CS/custom_htmlanchor_renderattributes.cs#2)]
  [!code-vb[CustomHtmlAnchorRenderAttributes#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlAnchorRenderAttributes/VB/custom_htmlanchor_renderattributes.vb#2)]  
@@ -353,6 +358,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The <see cref="P:System.Web.UI.HtmlControls.HtmlAnchor.HRef" /> contains a malformed URL.</exception>
+        <altmember cref="M:System.Web.UI.Control.ResolveClientUrl(System.String)" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlAnchor.HRef" />
       </Docs>
     </Member>
     <Member MemberName="ServerClick">
@@ -382,16 +389,17 @@
 ## Examples  
  The following code example demonstrates how to declaratively specify and code an event handler for the <xref:System.Web.UI.HtmlControls.HtmlAnchor.ServerClick> event. When the <xref:System.Web.UI.HtmlControls.HtmlAnchor> control is clicked, a message is displayed.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlAnchorServerClickDeclarative#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlAnchorServerClickDeclarative/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlAnchorServerClickDeclarative#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlAnchorServerClickDeclarative/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlAnchorServerClickDeclarative#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlAnchorServerClickDeclarative/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[HtmlAnchorServerClickDeclarative#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlAnchorServerClickDeclarative/VB/sourcevb.aspx#1)]  
   
  The following code example modifies the previous example to programmatically specify and code an event handler for the <xref:System.Web.UI.HtmlControls.HtmlAnchor.ServerClick> event.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlAnchorServerClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlAnchorServerClick/CS/htmlanchorserverclickcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlAnchorServerClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlAnchorServerClick/VB/htmlanchorserverclickvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlAnchorServerClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlAnchorServerClick/CS/htmlanchorserverclickcs.aspx#1)]
+ [!code-aspx-vb[HtmlAnchorServerClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlAnchorServerClick/VB/htmlanchorserverclickvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlAnchor.OnServerClick(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackEventHandler.RaisePostBackEvent">
@@ -422,6 +430,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)" />
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlAnchor.RaisePostBackEvent(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Target">
@@ -476,8 +486,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlAnchor.Target%2A> property to display the page that is navigated to when the <xref:System.Web.UI.HtmlControls.HtmlAnchor> control is clicked in a new, unframed window.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HtmlAnchor.Target Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlAnchor.Target Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HtmlAnchor.Target Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlAnchor.Target Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HtmlAnchor.Target Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlAnchor.Target Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HtmlAnchor.Target Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlAnchor.Target Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -520,8 +530,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlAnchor.Title%2A> property to provide custom text for the ToolTip.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HtmlAnchor.Title Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlAnchor.Title Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HtmlAnchor.Title Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlAnchor.Title Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HtmlAnchor.Title Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlAnchor.Title Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HtmlAnchor.Title Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlAnchor.Title Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -557,6 +567,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlAnchor.CausesValidation" />
       </Docs>
     </Member>
   </Members>

@@ -76,6 +76,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.Primitives.Thumb" />
+    <altmember cref="T:System.Windows.Controls.Slider" />
+    <altmember cref="T:System.Windows.Controls.Primitives.RangeBase" />
+    <altmember cref="T:System.Windows.Controls.Primitives.ScrollBar" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -145,6 +149,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Primitives.Track.DecreaseRepeatButton" />
+        <altmember cref="T:System.Windows.Controls.Primitives.RepeatButton" />
       </Docs>
     </Member>
     <Member MemberName="GetVisualChild">
@@ -207,6 +213,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Primitives.Track.DecreaseRepeatButton" />
+        <altmember cref="T:System.Windows.Controls.Primitives.RepeatButton" />
       </Docs>
     </Member>
     <Member MemberName="IsDirectionReversed">
@@ -252,6 +260,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Primitives.Track.Orientation" />
+        <altmember cref="P:System.Windows.Controls.Slider.IsDirectionReversed" />
       </Docs>
     </Member>
     <Member MemberName="IsDirectionReversedProperty">
@@ -322,6 +332,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Primitives.Track.Minimum" />
+        <altmember cref="P:System.Windows.Controls.Primitives.Track.Value" />
       </Docs>
     </Member>
     <Member MemberName="MaximumProperty">
@@ -406,6 +418,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Primitives.Track.Maximum" />
+        <altmember cref="P:System.Windows.Controls.Primitives.Track.Value" />
       </Docs>
     </Member>
     <Member MemberName="MinimumProperty">
@@ -465,6 +479,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.Orientation" />
       </Docs>
     </Member>
     <Member MemberName="OrientationProperty">
@@ -545,6 +560,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.Primitives.Thumb" />
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -580,6 +596,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Primitives.Track.Maximum" />
+        <altmember cref="P:System.Windows.Controls.Primitives.Track.Minimum" />
       </Docs>
     </Member>
     <Member MemberName="ValueFromDistance">
@@ -689,6 +707,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.Primitives.Thumb" />
       </Docs>
     </Member>
     <Member MemberName="ViewportSizeProperty">

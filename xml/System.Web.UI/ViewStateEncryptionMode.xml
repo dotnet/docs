@@ -22,8 +22,8 @@
 ## Examples  
  The following code example demonstrates setting the view-state encryption mode for a <xref:System.Web.UI.Page> object and requesting encryption of the view-state information through the <xref:System.Web.UI.Page.RegisterRequiresViewStateEncryption%2A> method. In this example, the view-state information will be encrypted when customer information is retrieved from a database.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ViewStateEncryptionMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ViewStateEncryptionMode/CS/encryptViewState.cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ViewStateEncryptionMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ViewStateEncryptionMode/VB/encryptViewState.vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.ViewStateEncryptionMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ViewStateEncryptionMode/CS/encryptViewState.cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.ViewStateEncryptionMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ViewStateEncryptionMode/VB/encryptViewState.vb.aspx#1)]  
   
  ]]></format>
     </remarks>

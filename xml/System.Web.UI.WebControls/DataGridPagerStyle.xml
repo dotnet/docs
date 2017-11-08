@@ -25,11 +25,15 @@
 ## Examples  
  The following code example demonstrates how to use a <xref:System.Web.UI.WebControls.DataGridPagerStyle> object to represent the style of the pager element in the <xref:System.Web.UI.WebControls.DataGrid.PagerStyle%2A> property. The <xref:System.Web.UI.WebControls.DataGridPagerStyle> object sets the display mode and alignment of the paging element.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic DataGridPagerStyle Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataGridPagerStyle Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic DataGridPagerStyle Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataGridPagerStyle Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic DataGridPagerStyle Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataGridPagerStyle Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic DataGridPagerStyle Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataGridPagerStyle Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+    <altmember cref="P:System.Web.UI.WebControls.DataGrid.PagerStyle" />
+    <altmember cref="P:System.Web.UI.WebControls.DataGrid.AllowPaging" />
+    <altmember cref="P:System.Web.UI.WebControls.DataGrid.AllowCustomPaging" />
   </Docs>
   <Members>
     <Member MemberName="CopyFrom">
@@ -61,11 +65,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DataGridPagerStyle.CopyFrom%2A> method to copy the properties of a <xref:System.Web.UI.WebControls.Style> object to a <xref:System.Web.UI.WebControls.DataGridPagerStyle> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic DataGridPagerStyle.CopyFrom Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataGridPagerStyle.CopyFrom Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic DataGridPagerStyle.CopyFrom Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataGridPagerStyle.CopyFrom Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic DataGridPagerStyle.CopyFrom Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataGridPagerStyle.CopyFrom Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic DataGridPagerStyle.CopyFrom Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataGridPagerStyle.CopyFrom Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <altmember cref="M:System.Web.UI.WebControls.Style.CopyFrom(System.Web.UI.WebControls.Style)" />
       </Docs>
     </Member>
     <Member MemberName="MergeWith">
@@ -97,11 +103,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DataGridPagerStyle.MergeWith%2A> method to combine the properties of a <xref:System.Web.UI.WebControls.Style> object with a <xref:System.Web.UI.WebControls.DataGridPagerStyle> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic DataGridPagerStyle.MergeWith Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataGridPagerStyle.MergeWith Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic DataGridPagerStyle.MergeWith Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataGridPagerStyle.MergeWith Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic DataGridPagerStyle.MergeWith Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataGridPagerStyle.MergeWith Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic DataGridPagerStyle.MergeWith Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataGridPagerStyle.MergeWith Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <altmember cref="M:System.Web.UI.WebControls.Style.MergeWith(System.Web.UI.WebControls.Style)" />
       </Docs>
     </Member>
     <Member MemberName="Mode">
@@ -138,12 +146,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DataGridPagerStyle.Mode%2A> property to specify that the pager element is displayed as buttons that link to the next and previous page.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic DataGridPagerStyle.Mode Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataGridPagerStyle.Mode Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic DataGridPagerStyle.Mode Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataGridPagerStyle.Mode Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic DataGridPagerStyle.Mode Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataGridPagerStyle.Mode Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic DataGridPagerStyle.Mode Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataGridPagerStyle.Mode Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified value is not one of the <see cref="T:System.Web.UI.WebControls.PagerMode" /> values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+        <altmember cref="T:System.Web.UI.WebControls.PagerMode" />
       </Docs>
     </Member>
     <Member MemberName="NextPageText">
@@ -190,12 +200,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DataGridPagerStyle.NextPageText%2A> property to specify custom text for the next page navigation button of the pager element.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic DataGridPagerStyle.NextPageText Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataGridPagerStyle.NextPageText Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic DataGridPagerStyle.NextPageText Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataGridPagerStyle.NextPageText Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic DataGridPagerStyle.NextPageText Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataGridPagerStyle.NextPageText Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic DataGridPagerStyle.NextPageText Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataGridPagerStyle.NextPageText Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified value is less than <see langword="1" />.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.DataGridPagerStyle.Mode" />
       </Docs>
     </Member>
     <Member MemberName="PageButtonCount">
@@ -234,12 +245,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DataGridPagerStyle.PageButtonCount%2A> property to display five numeric page buttons concurrently in the pager element of a <xref:System.Web.UI.WebControls.DataGrid> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic DataGridPagerStyle.PageButtonCount Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataGridPagerStyle.PageButtonCount Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic DataGridPagerStyle.PageButtonCount Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataGridPagerStyle.PageButtonCount Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic DataGridPagerStyle.PageButtonCount Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataGridPagerStyle.PageButtonCount Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic DataGridPagerStyle.PageButtonCount Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataGridPagerStyle.PageButtonCount Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The selected value is less than <see langword="1" />.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+        <altmember cref="P:System.Web.UI.WebControls.DataGridPagerStyle.Mode" />
       </Docs>
     </Member>
     <Member MemberName="Position">
@@ -276,12 +289,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DataGridPagerStyle.Position%2A> property to specify that the pager is displayed at the upper edge of the <xref:System.Web.UI.WebControls.DataGrid> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic DataGridPagerStyle.Position Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataGridPagerStyle.Position Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic DataGridPagerStyle.Position Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataGridPagerStyle.Position Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic DataGridPagerStyle.Position Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataGridPagerStyle.Position Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic DataGridPagerStyle.Position Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataGridPagerStyle.Position Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified value is not one of the <see cref="T:System.Web.UI.WebControls.PagerPosition" /> values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+        <altmember cref="T:System.Web.UI.WebControls.PagerPosition" />
       </Docs>
     </Member>
     <Member MemberName="PrevPageText">
@@ -328,11 +343,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DataGridPagerStyle.PrevPageText%2A> property to specify custom text for the previous page navigation button of the pager element.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic DataGridPagerStyle.NextPageText Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataGridPagerStyle.NextPageText Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic DataGridPagerStyle.NextPageText Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataGridPagerStyle.NextPageText Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic DataGridPagerStyle.NextPageText Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataGridPagerStyle.NextPageText Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic DataGridPagerStyle.NextPageText Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataGridPagerStyle.NextPageText Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+        <altmember cref="P:System.Web.UI.WebControls.DataGridPagerStyle.Mode" />
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -361,11 +378,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DataGridPagerStyle.Reset%2A> method to restore the <xref:System.Web.UI.WebControls.DataGridPagerStyle> object to its default values.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic DataGridPagerStyle.Reset Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataGridPagerStyle.Reset Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic DataGridPagerStyle.Reset Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataGridPagerStyle.Reset Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic DataGridPagerStyle.Reset Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataGridPagerStyle.Reset Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic DataGridPagerStyle.Reset Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataGridPagerStyle.Reset Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <altmember cref="M:System.Web.UI.WebControls.Style.Reset" />
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -403,11 +422,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DataGridPagerStyle.Visible%2A> property to display and hide the pager element in the <xref:System.Web.UI.WebControls.DataGrid> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic DataGridPagerStyle.Visible Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataGridPagerStyle.Visible Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic DataGridPagerStyle.Visible Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataGridPagerStyle.Visible Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic DataGridPagerStyle.Visible Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataGridPagerStyle.Visible Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic DataGridPagerStyle.Visible Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataGridPagerStyle.Visible Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
       </Docs>
     </Member>
   </Members>

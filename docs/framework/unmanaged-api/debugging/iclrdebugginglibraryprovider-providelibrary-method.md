@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRDebuggingLibraryProvider::ProvideLibrary"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ProvideLibrary method [.NET Framework debugging]"
   - "ICLRDebuggingLibraryProvider::ProvideLibrary method [.NET Framework debugging]"

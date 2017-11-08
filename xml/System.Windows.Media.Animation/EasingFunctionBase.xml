@@ -33,6 +33,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.Animation.IEasingFunction" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,6 +49,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.EasingFunctionBase" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Animation.IEasingFunction" />
       </Docs>
     </Member>
     <Member MemberName="Ease">
@@ -77,6 +79,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Animation.IEasingFunction" />
       </Docs>
     </Member>
     <Member MemberName="EaseInCore">
@@ -108,6 +111,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Animation.IEasingFunction" />
       </Docs>
     </Member>
     <Member MemberName="EasingMode">
@@ -147,6 +151,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Animation.IEasingFunction" />
       </Docs>
     </Member>
     <Member MemberName="EasingModeProperty">
@@ -164,6 +169,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Media.Animation.EasingFunctionBase.EasingMode" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Animation.IEasingFunction" />
       </Docs>
     </Member>
   </Members>

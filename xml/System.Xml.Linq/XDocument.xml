@@ -106,6 +106,10 @@ Console.WriteLine(doc)
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Xml.Linq.XNamespace" />
+    <altmember cref="T:System.Xml.Linq.XDeclaration" />
+    <altmember cref="T:System.Xml.Linq.XElement" />
+    <altmember cref="T:System.Xml.Linq.XNode" />
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -199,6 +203,7 @@ Console.WriteLine(doc)
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -264,6 +269,7 @@ Console.WriteLine(doc)
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -379,6 +385,7 @@ Console.WriteLine(doc)
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -417,6 +424,7 @@ Console.WriteLine(doc)
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -538,6 +546,7 @@ Console.WriteLine(File.ReadAllText("Test.xml"))
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
       </Docs>
     </Member>
     <Member MemberName="Declaration">
@@ -607,6 +616,7 @@ Console.WriteLine(doc.Declaration)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.Linq.XDeclaration" />
       </Docs>
     </Member>
     <Member MemberName="DocumentType">
@@ -739,6 +749,8 @@ Console.WriteLine(doc)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.Linq.XDocumentType" />
+        <altmember cref="P:System.Xml.Linq.XDocument.NodeType" />
       </Docs>
     </Member>
     <MemberGroup MemberName="Load">
@@ -759,6 +771,9 @@ Console.WriteLine(doc)
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Save" />
+        <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
       </Docs>
     </MemberGroup>
     <Member MemberName="Load">
@@ -874,6 +889,9 @@ Console.WriteLine(doc)
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Save" />
+        <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -978,6 +996,9 @@ Console.WriteLine(doc)
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Save" />
+        <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -1076,6 +1097,9 @@ End Using
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Save" />
+        <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -1251,6 +1275,9 @@ Count of white space nodes (preserving whitespace): 3
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Save" />
+        <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -1343,6 +1370,9 @@ nodes if preserving whitespace: 82
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Save" />
+        <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -1482,6 +1512,9 @@ Root                1    2
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Save" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
       </Docs>
     </Member>
     <Member MemberName="LoadAsync">
@@ -1627,6 +1660,8 @@ Document
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlNodeType" />
+        <altmember cref="P:System.Xml.Linq.XDocument.DocumentType" />
       </Docs>
     </Member>
     <MemberGroup MemberName="Parse">
@@ -1686,6 +1721,9 @@ Console.WriteLine(doc)
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Save" />
+        <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
       </Docs>
     </MemberGroup>
     <Member MemberName="Parse">
@@ -1771,6 +1809,9 @@ Console.WriteLine(doc)
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Save" />
+        <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -1870,6 +1911,9 @@ nodes when not preserving whitespace: 4
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Save" />
+        <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
       </Docs>
     </Member>
     <Member MemberName="Root">
@@ -2085,6 +2129,9 @@ Console.WriteLine(sb.ToString())
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -2161,6 +2208,9 @@ Console.WriteLine(File.ReadAllText("Root.xml"))
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -2245,6 +2295,9 @@ Console.WriteLine(sb.ToString())
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -2393,6 +2446,9 @@ End Using
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -2478,6 +2534,9 @@ Console.WriteLine(File.ReadAllText("Root2.xml"))
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
       </Docs>
     </Member>
     <Member MemberName="SaveAsync">
@@ -2638,6 +2697,9 @@ Console.WriteLine(sb.ToString())
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Save" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
       </Docs>
     </Member>
     <Member MemberName="WriteToAsync">
@@ -2664,5 +2726,19 @@ Console.WriteLine(sb.ToString())
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Save">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Serializes this <see cref="T:System.Xml.Linq.XDocument" /> to a file, a <see cref="T:System.IO.TextWriter" />, or an <see cref="T:System.Xml.XmlWriter" />.</summary>
+        <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

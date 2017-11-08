@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataImport::FindField"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataImport::FindField method [.NET Framework metadata]"
   - "FindField method [.NET Framework metadata]"

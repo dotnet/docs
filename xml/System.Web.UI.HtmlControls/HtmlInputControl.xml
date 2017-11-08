@@ -27,6 +27,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputText" />
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputButton" />
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputRadioButton" />
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputCheckBox" />
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputImage" />
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputHidden" />
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputFile" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -76,6 +83,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputText" />
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputButton" />
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputRadioButton" />
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputCheckBox" />
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputImage" />
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputHidden" />
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputFile" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -117,11 +131,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputControl.Name%2A> property to determine the name of the <xref:System.Web.UI.HtmlControls.HtmlInputControl> that was clicked.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlInputControlName#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputControlName/CS/htmlinputcontrolnamecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlInputControlName#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputControlName/VB/htmlinputcontrolnamevb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlInputControlName#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputControlName/CS/htmlinputcontrolnamecs.aspx#1)]
+ [!code-aspx-vb[HtmlInputControlName#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputControlName/VB/htmlinputcontrolnamevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.UniqueID" />
       </Docs>
     </Member>
     <Member MemberName="RenderAttributes">
@@ -150,6 +165,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlInputControl.Name" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlInputControl.Type" />
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -201,8 +218,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputControl.Type%2A> property to determine the type of <xref:System.Web.UI.HtmlControls.HtmlInputControl> that was clicked.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlInputControlType#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputControlType/CS/htmlinputcontroltypecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlInputControlType#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputControlType/VB/htmlinputcontroltypevb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlInputControlType#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputControlType/CS/htmlinputcontroltypecs.aspx#1)]
+ [!code-aspx-vb[HtmlInputControlType#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputControlType/VB/htmlinputcontroltypevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -242,8 +259,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputControl.Value%2A> property to determine the text that the user entered into some text boxes.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlInputText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputText/CS/htmlinputtextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlInputText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputText/VB/htmlinputtextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlInputText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputText/CS/htmlinputtextcs.aspx#1)]
+ [!code-aspx-vb[HtmlInputText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputText/VB/htmlinputtextvb.aspx#1)]  
   
  ]]></format>
         </remarks>

@@ -9,10 +9,8 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "user interface, multipane"
+  - "user interface [Windows Forms], multipane"
   - "SplitContainer control [Windows Forms], using the designer"
   - "multipane user interface"
 ms.assetid: c3f9294d-a26c-4198-9242-f237f55f7573

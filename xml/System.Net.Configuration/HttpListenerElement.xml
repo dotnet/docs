@@ -83,6 +83,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.HttpListener" />
+    <altmember cref="P:System.Net.HttpListenerRequest.Url" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -141,6 +143,9 @@
   
  The timeout elements used for an <see cref="T:System.Net.HttpListener" /> object.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerTimeoutManager" />
+        <altmember cref="T:System.Net.Configuration.HttpListenerTimeoutsElement" />
       </Docs>
     </Member>
     <Member MemberName="UnescapeRequestUrl">
@@ -232,6 +237,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="P:System.Net.HttpListenerRequest.Url" />
       </Docs>
     </Member>
   </Members>

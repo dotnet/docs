@@ -10,9 +10,11 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "numeric values, Windows Forms"
+  - "numeric values [Windows Forms], Windows Forms"
   - "Windows Forms, numeric values"
   - "Windows Forms controls, NumericUpDown"
   - "NumericUpDown control [Windows Forms], setting and returning values"

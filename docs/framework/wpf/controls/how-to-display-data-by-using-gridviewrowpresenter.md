@@ -10,8 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "displaying data with GridViewRowPresenter"
-  - "GridViewRowPresenter"
+  - "displaying data with GridViewRowPresenter [WPF]"
+  - "GridViewRowPresenter [WPF]"
 ms.assetid: bdb785a5-a262-44d5-a517-ea14383e5f70
 caps.latest.revision: 9
 author: dotnet-bot

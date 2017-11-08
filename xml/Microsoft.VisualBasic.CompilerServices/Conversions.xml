@@ -1274,5 +1274,149 @@
         <altCompliant cref="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToShort(System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToULong">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the specified object to a <see langword="Ulong" /> value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToDouble">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts specified object to a <see cref="T:System.Double" /> value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToUInteger">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the specified object to a <see langword="Uint" /> value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToByte">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the specified object to a <see cref="T:System.Byte" /> value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToShort">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the specified object to a <see langword="Short" /> value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToUShort">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the specified object to a <see langword="Ushort" /> value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToDate">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts specified object to a <see cref="T:System.DateTime" /> value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the specified object to a <see cref="T:System.String" /> value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToChar">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the specified object to a <see cref="T:System.Char" /> value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToBoolean">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the specified object to a <see cref="T:System.Boolean" /> value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToLong">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the specified object to a <see langword="Long" /> value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToDecimal">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts specified object to a <see cref="T:System.Decimal" /> value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToCharArrayRankOne">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts specified object to a one-dimensional <see cref="T:System.Char" /> array.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToInteger">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the specified object to an integer value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToSByte">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the specified object to an <see cref="T:System.SByte" /> value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToSingle">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the specified object to a <see cref="T:System.Single" /> value.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

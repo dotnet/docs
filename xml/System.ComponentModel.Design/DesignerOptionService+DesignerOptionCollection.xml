@@ -41,6 +41,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.Design.IDesignerOptionService" />
+    <altmember cref="T:System.ComponentModel.Design.DesignerOptionService" />
+    <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
   </Docs>
   <Members>
     <Member MemberName="CopyTo">
@@ -73,6 +76,7 @@
         <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
         <summary>Copies the entire collection to a compatible one-dimensional <see cref="T:System.Array" />, starting at the specified index of the target array.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="Overload:System.Collections.ArrayList.CopyTo" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -128,6 +132,7 @@
         <summary>Returns an <see cref="T:System.Collections.IEnumerator" /> that can be used to iterate this collection.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> that can be used to iterate this collection.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Array.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -166,6 +171,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Collections.ArrayList.IndexOf" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -330,6 +336,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.IDesignerOptionService" />
+        <altmember cref="T:System.ComponentModel.Design.DesignerOptionService" />
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
       </Docs>
     </Member>
     <Member MemberName="ShowDialog">
@@ -716,5 +725,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the child collection at the given index.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

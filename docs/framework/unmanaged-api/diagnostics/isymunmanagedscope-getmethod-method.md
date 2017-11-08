@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedScope::GetMethod"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetMethod method, ISymUnmanagedScope interface [.NET Framework debugging]"
   - "ISymUnmanagedScope::GetMethod method [.NET Framework debugging]"

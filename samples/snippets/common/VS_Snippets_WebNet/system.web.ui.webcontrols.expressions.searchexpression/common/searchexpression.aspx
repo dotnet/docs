@@ -3,7 +3,7 @@
     <title>Filter Demo</title>
 </head>
 <body>
-<%--<Snippet1>--%>
+<!-- <Snippet1> -->
 <form id="form1" runat="server">
   Search: <asp:TextBox ID="SearchTextBox" runat="server" />
   <div>
@@ -29,7 +29,7 @@
 
 
 
-<%--</Snippet1>--%>
+<!-- </Snippet1> -->
 </body>
 </html>
 

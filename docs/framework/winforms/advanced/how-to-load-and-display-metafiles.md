@@ -10,10 +10,11 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "examples [Windows Forms], metafiles"
-  - "metafiles, displaying"
+  - "metafiles [Windows Forms], displaying"
 ms.assetid: 60af1714-f148-4d85-a739-0557965ffa73
 caps.latest.revision: 15
 author: dotnet-bot

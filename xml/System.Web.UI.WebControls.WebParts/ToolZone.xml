@@ -149,6 +149,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.SupportedDisplayModes" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartDisplayMode.AssociatedWithToolZone" />
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" />
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -193,6 +196,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ToolZone.AssociatedDisplayModes" />
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" />
       </Docs>
     </Member>
     <Member MemberName="EditUIStyle">
@@ -240,13 +245,13 @@
   
  The first part of the code example is a user control that is referenced in the page, and enables you to switch the page to different display modes. For more information on display modes and enabling users to switch among them, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_ToolZone_EditUIStyle#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ToolZone_EditUIStyle/CS/displaymodemenucs.ascx#5)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_ToolZone_EditUIStyle#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ToolZone_EditUIStyle/VB/displaymodemenuvb.ascx#5)]  -->  
+ [!code-aspx-csharp[WebParts_ToolZone_EditUIStyle#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ToolZone_EditUIStyle/CS/displaymodemenucs.ascx#5)]
+ [!code-aspx-vb[WebParts_ToolZone_EditUIStyle#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ToolZone_EditUIStyle/VB/displaymodemenuvb.ascx#5)]  
   
  The second part of the code example is the Web page. The page contains an <xref:System.Web.UI.WebControls.WebParts.EditorZone> control, which inherits from the <xref:System.Web.UI.WebControls.WebParts.ToolZone> class. The `Button1_Click` method in the page sets the <xref:System.Web.UI.WebControls.WebParts.ToolZone.EditUIStyle%2A> property. Note that after the page loads, you must switch the page into edit mode to see the effects of the <xref:System.Web.UI.WebControls.WebParts.ToolZone.EditUIStyle%2A> property on the <xref:System.Web.UI.WebControls.WebParts.EditorZone> control's UI. As you click the button that says **Change Edit UI Font**, notice that the font of the editable controls in the zone changes.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_ToolZone_EditUIStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ToolZone_EditUIStyle/CS/toolzone_edituistylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_ToolZone_EditUIStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ToolZone_EditUIStyle/VB/toolzone_edituistylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_ToolZone_EditUIStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ToolZone_EditUIStyle/CS/toolzone_edituistylecs.aspx#1)]
+ [!code-aspx-vb[WebParts_ToolZone_EditUIStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ToolZone_EditUIStyle/VB/toolzone_edituistylevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -294,18 +299,20 @@
   
  The first part of the code example is a user control that is referenced in the page, and enables you to switch the page to different display modes. For more information on display modes and enabling users to switch among them, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_ToolZone_HeaderCloseVerb#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ToolZone_HeaderCloseVerb/CS/displaymodemenucs.ascx#5)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_ToolZone_HeaderCloseVerb#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ToolZone_HeaderCloseVerb/VB/displaymodemenuvb.ascx#5)]  -->  
+ [!code-aspx-csharp[WebParts_ToolZone_HeaderCloseVerb#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ToolZone_HeaderCloseVerb/CS/displaymodemenucs.ascx#5)]
+ [!code-aspx-vb[WebParts_ToolZone_HeaderCloseVerb#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ToolZone_HeaderCloseVerb/VB/displaymodemenuvb.ascx#5)]  
   
  The second part of the code example is the Web page. The page contains an <xref:System.Web.UI.WebControls.WebParts.EditorZone> control, which inherits from the <xref:System.Web.UI.WebControls.WebParts.ToolZone> class. The `Button1_Click` method in the page sets the <xref:System.Web.UI.WebControls.WebParts.ToolZone.HeaderCloseVerb%2A> property value.  
   
  Note that after the page loads, you must switch the page into edit mode to see the effects of the code that uses the <xref:System.Web.UI.WebControls.WebParts.ToolZone.HeaderCloseVerb%2A> property on the <xref:System.Web.UI.WebControls.WebParts.EditorZone> control. As you click the **Enable/Disable Close Verb** button, the verb in the header of the zone should be alternately enabled and disabled.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_ToolZone_HeaderCloseVerb#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ToolZone_HeaderCloseVerb/CS/toolzone_headercloseverbcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_ToolZone_HeaderCloseVerb#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ToolZone_HeaderCloseVerb/VB/toolzone_headercloseverbvb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_ToolZone_HeaderCloseVerb#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ToolZone_HeaderCloseVerb/CS/toolzone_headercloseverbcs.aspx#1)]
+ [!code-aspx-vb[WebParts_ToolZone_HeaderCloseVerb#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ToolZone_HeaderCloseVerb/VB/toolzone_headercloseverbvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ToolZone.HeaderVerbStyle" />
       </Docs>
     </Member>
     <Member MemberName="HeaderVerbStyle">
@@ -350,18 +357,19 @@
   
  The first part of the code example is a user control that is referenced in the page, and enables you to switch the page to different display modes. For more information on display modes and enabling users to switch among them, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_ToolZone_HeaderVerbStyle#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ToolZone_HeaderVerbStyle/CS/displaymodemenucs.ascx#5)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_ToolZone_HeaderVerbStyle#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ToolZone_HeaderVerbStyle/VB/displaymodemenuvb.ascx#5)]  -->  
+ [!code-aspx-csharp[WebParts_ToolZone_HeaderVerbStyle#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ToolZone_HeaderVerbStyle/CS/displaymodemenucs.ascx#5)]
+ [!code-aspx-vb[WebParts_ToolZone_HeaderVerbStyle#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ToolZone_HeaderVerbStyle/VB/displaymodemenuvb.ascx#5)]  
   
  The second part of the code example is the Web page. The page contains an <xref:System.Web.UI.WebControls.WebParts.EditorZone> control, which inherits from the <xref:System.Web.UI.WebControls.WebParts.ToolZone> class. The `Button1_Click` method in the page sets the <xref:System.Web.UI.WebControls.WebParts.ToolZone.HeaderVerbStyle%2A> property value.  
   
  Note that after the page loads, you must switch the page into edit mode to see the effects of the code that uses the <xref:System.Web.UI.WebControls.WebParts.ToolZone.HeaderCloseVerb%2A> property on the <xref:System.Web.UI.WebControls.WebParts.EditorZone> control. As you click the **Toggle Header Verb Border** button, the border width around the zone should change.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_ToolZone_HeaderVerbStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ToolZone_HeaderVerbStyle/CS/toolzone_headerverbstylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_ToolZone_HeaderVerbStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ToolZone_HeaderVerbStyle/VB/toolzone_headerverbstylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_ToolZone_HeaderVerbStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ToolZone_HeaderVerbStyle/CS/toolzone_headerverbstylecs.aspx#1)]
+ [!code-aspx-vb[WebParts_ToolZone_HeaderVerbStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ToolZone_HeaderVerbStyle/VB/toolzone_headerverbstylevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ToolZone.HeaderCloseVerb" />
       </Docs>
     </Member>
     <Member MemberName="InstructionText">
@@ -399,8 +407,8 @@
   
  The first part of the code example is a user control that is referenced in the page, and enables you to switch the page to different display modes. For more information on display modes and enabling users to switch among them, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_ToolZone_Overview#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ToolZone_Overview/CS/displaymodemenucs.ascx#5)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_ToolZone_Overview#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ToolZone_Overview/VB/displaymodemenuvb.ascx#5)]  -->  
+ [!code-aspx-csharp[WebParts_ToolZone_Overview#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ToolZone_Overview/CS/displaymodemenucs.ascx#5)]
+ [!code-aspx-vb[WebParts_ToolZone_Overview#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ToolZone_Overview/VB/displaymodemenuvb.ascx#5)]  
   
  The second part of the code example shows a partial class that contains the code to update the property programmatically in the `Button1_Click` method.  
   
@@ -415,8 +423,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_ToolZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ToolZone_Overview/CS/Toolzone_overview_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_ToolZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ToolZone_Overview/VB/Toolzone_overview_vb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_ToolZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ToolZone_Overview/CS/Toolzone_overview_cs.aspx#1)]
+ [!code-aspx-vb[WebParts_ToolZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ToolZone_Overview/VB/Toolzone_overview_vb.aspx#1)]  
   
  You can load the page in a browser and switch among the various page display modes to see how the different tool zones behave. Switch the page into edit mode, enter some text into the text box, and click **Update Edit Zone Text** to see the effect of programmatically updating the <xref:System.Web.UI.WebControls.WebParts.ToolZone.InstructionText%2A> property. The instruction text appears near the top of the zone.  
   
@@ -425,6 +433,7 @@
         <block subset="none" type="overrides">
           <para>Tool zones in the Web Parts control set that derive from the <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> class (see the zones listed in the <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> class overview) override the <see cref="P:System.Web.UI.WebControls.WebParts.ToolZone.InstructionText" /> property to provide default instructions for end users.</para>
         </block>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ToolZone.InstructionTextStyle" />
       </Docs>
     </Member>
     <Member MemberName="InstructionTextStyle">
@@ -457,6 +466,7 @@
         <summary>Gets the style attributes for the instruction text that appears at the top of a <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> control.</summary>
         <value>A <see cref="T:System.Web.UI.WebControls.Style" /> that contains style attributes for the instruction text within a <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ToolZone.InstructionText" />
       </Docs>
     </Member>
     <Member MemberName="LabelStyle">
@@ -685,6 +695,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.ToolZone.RenderVerbs(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" />
       </Docs>
     </Member>
     <Member MemberName="RenderVerbs">
@@ -706,6 +718,7 @@
         <param name="writer">An <see cref="T:System.Web.UI.HtmlTextWriter" /> that renders the verbs in a zone.</param>
         <summary>Provides a base method declaration that derived <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> controls can override to customize the rendering of the verbs within a specialized zone.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.ToolZone.RenderVerb(System.Web.UI.HtmlTextWriter,System.Web.UI.WebControls.WebParts.WebPartVerb)" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -725,6 +738,7 @@
         <summary>Saves any view-state changes that have occurred after a page was posted back to the server.</summary>
         <returns>Returns the zone control's current view state. If no view state is associated with the zone, this method returns null.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebZone.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackEventHandler.RaisePostBackEvent">
@@ -764,6 +778,7 @@
       <Docs>
         <summary>Tracks changes to a zone control's view state.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebZone.TrackViewState" />
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -810,7 +825,18 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The caller attempts to set the property at run time.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.ToolZone.Display" />
+        <altmember cref="P:System.Web.UI.Control.Visible" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Associates one or more <see cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" /> objects with a particular type of <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> zone, enabling that zone to be displayed when a page is in the appropriate page display mode.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -30,6 +30,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.SqlDataSourceSelectingEventHandler" />
+    <altmember cref="T:System.Web.UI.WebControls.SqlDataSourceCommandEventArgs" />
+    <altmember cref="E:System.Web.UI.WebControls.SqlDataSource.Selecting" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -57,6 +60,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Select(System.Web.UI.DataSourceSelectArguments)" />
+        <altmember cref="T:System.Web.UI.WebControls.SqlDataSourceSelectingEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="Arguments">
@@ -84,6 +89,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.DataSourceSelectArguments" />
       </Docs>
     </Member>
   </Members>

@@ -1,7 +1,7 @@
 ---
 title: "How to: Project an Anonymous Type (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: 5cb9be13-5ac4-4373-a034-b3520a5b2dec
 caps.latest.revision: 3
 author: "BillWagner"

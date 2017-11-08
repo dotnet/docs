@@ -152,15 +152,15 @@
   
  The following example shows how to put controls inside an <xref:System.Web.UI.UpdatePanel> control to reduce screen flicker when you post to the server. In this example, a <xref:System.Web.UI.WebControls.Calendar> and a <xref:System.Web.UI.WebControls.DropDownList> control are inside an <xref:System.Web.UI.UpdatePanel> control. By default, the <xref:System.Web.UI.UpdatePanel.UpdateMode%2A> property is <xref:System.Web.UI.UpdatePanelUpdateMode.Always> and the <xref:System.Web.UI.UpdatePanel.ChildrenAsTriggers%2A> property is `true`. Therefore, child controls of the panel cause an asynchronous postback.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.UpdatePanel#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.UpdatePanel/CS/UpdatePanelExample1CS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.UpdatePanel#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.UpdatePanel/VB/UpdatePanelExample1VB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.UpdatePanel#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.UpdatePanel/CS/UpdatePanelExample1CS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.UpdatePanel#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.UpdatePanel/VB/UpdatePanelExample1VB.aspx#1)]  
   
  **Master/Detail Scenario with UpdatePanel Controls**  
   
  In the following example, an <xref:System.Web.UI.UpdatePanel> control is used in a master/detail scenario that shows orders and order details from the Northwind database. One <xref:System.Web.UI.UpdatePanel> control contains the <xref:System.Web.UI.WebControls.GridView> control that displays a list of orders. A second <xref:System.Web.UI.UpdatePanel> control contains a <xref:System.Web.UI.WebControls.DetailsView> control that displays the details of one order. When you select an order from the first table, details for that order are displayed in the second table. The second table is updated asynchronously based on the selection in the first table. The sorting and paging operations in the orders summary table also cause partial updates.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.UpdatePanel#2](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.UpdatePanel/CS/UpdatePanelExample2CS.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.UpdatePanel#2](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.UpdatePanel/VB/UpdatePanelExample2VB.aspx#2)]  -->  
+ [!code-aspx-csharp[System.Web.UI.UpdatePanel#2](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.UpdatePanel/CS/UpdatePanelExample2CS.aspx#2)]
+ [!code-aspx-vb[System.Web.UI.UpdatePanel#2](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.UpdatePanel/VB/UpdatePanelExample2VB.aspx#2)]  
   
  If you put a <xref:System.Web.UI.WebControls.GridView> control inside an <xref:System.Web.UI.UpdatePanel> control, setting the <xref:System.Web.UI.WebControls.GridView> control's <xref:System.Web.UI.WebControls.GridView.EnableSortingAndPagingCallbacks%2A> property to `true` is not supported. However, because the <xref:System.Web.UI.UpdatePanel> control supports asynchronous postbacks, any postbacks that change the <xref:System.Web.UI.WebControls.GridView> control inside an <xref:System.Web.UI.UpdatePanel> control cause the same behavior as sorting and paging callbacks.  
   
@@ -168,11 +168,12 @@
   
  In the following example, an <xref:System.Web.UI.UpdatePanel> control is used in the item template of a <xref:System.Web.UI.WebControls.GridView> control. <xref:System.Web.UI.UpdatePanel> controls in each data row are generated automatically. Each row's <xref:System.Web.UI.UpdatePanel> control contains a <xref:System.Web.UI.WebControls.Label> control to display the quantity of the item in that row and a <xref:System.Web.UI.WebControls.Button> control to decrease and increase the quantity.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.UpdatePanel#3](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.UpdatePanel/CS/UpdatePanelExample3CS.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.UpdatePanel#3](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.UpdatePanel/VB/UpdatePanelExample3VB.aspx#3)]  -->  
+ [!code-aspx-csharp[System.Web.UI.UpdatePanel#3](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.UpdatePanel/CS/UpdatePanelExample3CS.aspx#3)]
+ [!code-aspx-vb[System.Web.UI.UpdatePanel#3](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.UpdatePanel/VB/UpdatePanelExample3VB.aspx#3)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.ScriptManager" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -198,11 +199,12 @@
 ## Examples  
  The following example shows how to dynamically create an <xref:System.Web.UI.UpdatePanel> control and add it to a page. When you click the button inside the <xref:System.Web.UI.UpdatePanel> control, the message is refreshed with the date and time. Child controls are added by using the <xref:System.Web.UI.UpdatePanel.ContentTemplateContainer%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.UpdatePanel.Constructor#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.UpdatePanel.Constructor/CS/UpdatePanelConstructorCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.UpdatePanel.Constructor#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.UpdatePanel.Constructor/VB/UpdatePanelConstructorVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.UpdatePanel.Constructor#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.UpdatePanel.Constructor/CS/UpdatePanelConstructorCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.UpdatePanel.Constructor#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.UpdatePanel.Constructor/VB/UpdatePanelConstructorVB.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.UpdatePanel.UpdateMode" />
       </Docs>
     </Member>
     <Member MemberName="Attributes">
@@ -278,6 +280,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.UpdatePanel.UpdateMode" />
+        <altmember cref="M:System.Web.UI.UpdatePanel.OnPreRender(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ContentTemplate">
@@ -319,6 +323,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.UI.UpdatePanel.ContentTemplate" /> property of the <see cref="T:System.Web.UI.UpdatePanel" /> control is set after an instance of the template is created or after the content template container is created.</exception>
+        <altmember cref="P:System.Web.UI.UpdatePanel.ContentTemplateContainer" />
+        <altmember cref="T:System.Web.UI.TemplateInstanceAttribute" />
+        <altmember cref="T:System.Web.UI.ITemplate" />
       </Docs>
     </Member>
     <Member MemberName="ContentTemplateContainer">
@@ -352,11 +359,12 @@
 ## Examples  
  The following example shows how to programmatically specify the <xref:System.Web.UI.UpdatePanel.ContentTemplateContainer%2A> property of an <xref:System.Web.UI.UpdatePanel> control. The <xref:System.Web.UI.WebControls.Label.Text%2A> property of a <xref:System.Web.UI.WebControls.Label> control is set when `Button1` is clicked.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.UpdatePanel.Constructor#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.UpdatePanel.Constructor/CS/UpdatePanelConstructorCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.UpdatePanel.Constructor#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.UpdatePanel.Constructor/VB/UpdatePanelConstructorVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.UpdatePanel.Constructor#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.UpdatePanel.Constructor/CS/UpdatePanelConstructorCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.UpdatePanel.Constructor#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.UpdatePanel.Constructor/VB/UpdatePanelConstructorVB.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.UpdatePanel.ContentTemplate" />
       </Docs>
     </Member>
     <Member MemberName="Controls">
@@ -383,6 +391,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="M:System.Web.UI.ControlCollection.Add(System.Web.UI.Control)" />, <see cref="M:System.Web.UI.ControlCollection.AddAt(System.Int32,System.Web.UI.Control)" />, <see cref="M:System.Web.UI.ControlCollection.Clear" />, <see cref="M:System.Web.UI.ControlCollection.Remove(System.Web.UI.Control)" />, or <see cref="M:System.Web.UI.ControlCollection.RemoveAt(System.Int32)" /> method of the <see cref="T:System.Web.UI.ControlCollection" /> class has been called. To change the content of the <see cref="T:System.Web.UI.UpdatePanel" /> control, modify the child controls of the <see cref="P:System.Web.UI.UpdatePanel.ContentTemplateContainer" /> property.</exception>
+        <altmember cref="P:System.Web.UI.UpdatePanel.ContentTemplateContainer" />
       </Docs>
     </Member>
     <Member MemberName="CreateContentTemplateContainer">
@@ -419,11 +428,13 @@
   
  The custom <xref:System.Web.UI.UpdatePanel> control is used on the page just as the <xref:System.Web.UI.UpdatePanel> control is. The following example shows a page that contains the custom <xref:System.Web.UI.UpdatePanel> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.UpdatePanel.CreateContentTemplateContainer#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.UpdatePanel.CreateContentTemplateContainer/CS/UpdatePanelCreateContentTemplateContainerCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.UpdatePanel.CreateContentTemplateContainer#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.UpdatePanel.CreateContentTemplateContainer/VB/UpdatePanelCreateContentTemplateContainerVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.UpdatePanel.CreateContentTemplateContainer#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.UpdatePanel.CreateContentTemplateContainer/CS/UpdatePanelCreateContentTemplateContainerCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.UpdatePanel.CreateContentTemplateContainer#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.UpdatePanel.CreateContentTemplateContainer/VB/UpdatePanelCreateContentTemplateContainerVB.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.UpdatePanel.ContentTemplateContainer" />
+        <altmember cref="P:System.Web.UI.UpdatePanel.ContentTemplate" />
       </Docs>
     </Member>
     <Member MemberName="CreateControlCollection">
@@ -452,6 +463,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.UpdatePanel.ContentTemplateContainer" />
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -480,6 +492,8 @@
         <block subset="none" type="overrides">
           <para>When you override the <see cref="M:System.Web.UI.UpdatePanel.Initialize" /> method, make sure to call the base class so that triggers are registered if partial-page rendering is enabled.</para>
         </block>
+        <altmember cref="P:System.Web.UI.ScriptManager.EnablePartialRendering" />
+        <altmember cref="P:System.Web.UI.ScriptManager.SupportsPartialRendering" />
       </Docs>
     </Member>
     <Member MemberName="IsInPartialRendering">
@@ -511,6 +525,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.ScriptManager.IsInAsyncPostBack" />
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -569,6 +584,8 @@
         <block subset="none" type="overrides">
           <para>If you override the <see cref="M:System.Web.UI.UpdatePanel.OnLoad(System.EventArgs)" /> method, make sure to call the base class so that the <see cref="E:System.Web.UI.Control.Load" /> event will be raised.</para>
         </block>
+        <altmember cref="M:System.Web.UI.UpdatePanel.Initialize" />
+        <altmember cref="P:System.Web.UI.ScriptManager.EnablePartialRendering" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -598,6 +615,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.UI.UpdatePanel.ChildrenAsTriggers" /> property is set to <see langword="false" />, and the <see cref="P:System.Web.UI.UpdatePanel.UpdateMode" /> property is set to <see cref="F:System.Web.UI.UpdatePanelUpdateMode.Always" />.</exception>
+        <altmember cref="P:System.Web.UI.UpdatePanel.ChildrenAsTriggers" />
+        <altmember cref="P:System.Web.UI.UpdatePanel.UpdateMode" />
       </Docs>
     </Member>
     <Member MemberName="OnUnload">
@@ -722,11 +741,12 @@
 ## Examples  
  The following example shows how to set the <xref:System.Web.UI.UpdatePanel.RenderMode%2A> property declaratively. The <xref:System.Web.UI.UpdatePanel> control named `UpdatePanel1` is rendered in an HTML `<span>` element. If the <xref:System.Web.UI.UpdatePanel.RenderMode%2A> property were set to <xref:System.Web.UI.UpdatePanelRenderMode.Block>, the resulting paragraph would appear disjointed because of the way in which the HTML `<div>` element is rendered.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.UpdatePanel.RenderMode#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.UpdatePanel.RenderMode/CS/UpdatePanelRenderModeCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.UpdatePanel.RenderMode#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.UpdatePanel.RenderMode/VB/UpdatePanelRenderModeVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.UpdatePanel.RenderMode#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.UpdatePanel.RenderMode/CS/UpdatePanelRenderModeCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.UpdatePanel.RenderMode#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.UpdatePanel.RenderMode/VB/UpdatePanelRenderModeVB.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.UpdatePanelRenderMode" />
       </Docs>
     </Member>
     <Member MemberName="RequiresUpdate">
@@ -860,6 +880,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.UpdatePanelTriggerCollection" />
+        <altmember cref="T:System.Web.UI.UpdatePanelTrigger" />
+        <altmember cref="T:System.Web.UI.AsyncPostBackTrigger" />
+        <altmember cref="M:System.Web.UI.ScriptManager.RegisterAsyncPostBackControl(System.Web.UI.Control)" />
+        <altmember cref="M:System.Web.UI.ScriptManager.RegisterPostBackControl(System.Web.UI.Control)" />
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -892,8 +917,8 @@
 ## Examples  
  The following example uses the <xref:System.Web.UI.UpdatePanel.Update%2A> method to update the content of an <xref:System.Web.UI.UpdatePanel> control when more than five seconds have elapsed since the last update.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.UpdatePanel.UpdateMode#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.UpdatePanel.UpdateMode/CS/UpdatePanelUpdateModeCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.UpdatePanel.UpdateMode#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.UpdatePanel.UpdateMode/VB/UpdatePanelUpdateModeVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.UpdatePanel.UpdateMode#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.UpdatePanel.UpdateMode/CS/UpdatePanelUpdateModeCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.UpdatePanel.UpdateMode#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.UpdatePanel.UpdateMode/VB/UpdatePanelUpdateModeVB.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -902,6 +927,8 @@
  \- or –  
   
  The <see cref="M:System.Web.UI.UpdatePanel.Update" /> method is called during or after the page's <see cref="M:System.Web.UI.Page.Render(System.Web.UI.HtmlTextWriter)" /> event.</exception>
+        <altmember cref="P:System.Web.UI.UpdatePanel.ContentTemplate" />
+        <altmember cref="M:System.Web.UI.ScriptManager.RegisterAsyncPostBackControl(System.Web.UI.Control)" />
       </Docs>
     </Member>
     <Member MemberName="UpdateMode">
@@ -952,12 +979,15 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.UpdatePanel.UpdateMode%2A> property. The example declares two <xref:System.Web.UI.UpdatePanel> controls. In the first panel, the <xref:System.Web.UI.UpdatePanel.UpdateMode%2A> property is set to <xref:System.Web.UI.UpdatePanelUpdateMode.Conditional>. In the second panel, <xref:System.Web.UI.UpdatePanel.UpdateMode%2A> is set to <xref:System.Web.UI.UpdatePanelUpdateMode.Always>. A button outside both panels is registered as an asynchronous postback control by calling the <xref:System.Web.UI.ScriptManager.RegisterAsyncPostBackControl%2A> method of the <xref:System.Web.UI.ScriptManager> control. In the button's `Click` event handler, the <xref:System.Web.UI.UpdatePanel.Update%2A> method of the first panel is called if more than five seconds have elapsed since its last update. In this scenario, the panel’s content is updated only if the last panel refresh was more than five seconds ago. The content of the second panel is always updated.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.UpdatePanel.UpdateMode#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.UpdatePanel.UpdateMode/CS/UpdatePanelUpdateModeCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.UpdatePanel.UpdateMode#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.UpdatePanel.UpdateMode/VB/UpdatePanelUpdateModeVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.UpdatePanel.UpdateMode#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.UpdatePanel.UpdateMode/CS/UpdatePanelUpdateModeCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.UpdatePanel.UpdateMode#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.UpdatePanel.UpdateMode/VB/UpdatePanelUpdateModeVB.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified type is not one of the <see cref="T:System.Web.UI.UpdatePanelUpdateMode" /> values.</exception>
+        <altmember cref="T:System.Web.UI.UpdatePanelUpdateMode" />
+        <altmember cref="M:System.Web.UI.UpdatePanel.Update" />
+        <altmember cref="P:System.Web.UI.UpdatePanel.ChildrenAsTriggers" />
       </Docs>
     </Member>
   </Members>

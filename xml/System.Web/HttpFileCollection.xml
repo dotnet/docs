@@ -23,11 +23,13 @@
 ## Examples  
  The following example demonstrates how to access the <xref:System.Web.HttpFileCollection> collection returned from the <xref:System.Web.HttpRequest.Files%2A> property of the <xref:System.Web.HttpRequest> object. The <xref:System.Web.HttpFileCollection> collection is populated by two <xref:System.Web.UI.WebControls.FileUpload> controls on the Web page. Items in the file collection are displayed in a <xref:System.Web.UI.WebControls.BulletedList> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpFileCollection1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpFileCollection1/cs/HttpFileCollectionCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.HttpFileCollection1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpFileCollection1/vb/HttpFileCollectionVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.HttpFileCollection1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpFileCollection1/cs/HttpFileCollectionCS.aspx#1)]
+ [!code-aspx-vb[System.Web.HttpFileCollection1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpFileCollection1/vb/HttpFileCollectionVB.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.HttpPostedFile" />
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputFile" />
   </Docs>
   <Members>
     <Member MemberName="AllKeys">
@@ -56,6 +58,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.HttpFileCollection.GetKey(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -89,6 +92,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Array" />
       </Docs>
     </Member>
     <Member MemberName="Get">
@@ -121,6 +125,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.HttpFileCollection.Item" />
       </Docs>
     </Member>
     <Member MemberName="Get">
@@ -153,6 +158,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.HttpFileCollection.Item" />
       </Docs>
     </Member>
     <Member MemberName="GetKey">
@@ -246,6 +252,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.HttpFileCollection.Get" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -278,7 +285,26 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.HttpFileCollection.Get" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets an individual <see cref="T:System.Web.HttpPostedFile" /> object from the file collection. This property is overloaded to allow retrieval of objects by either name or numerical index.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Get">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an individual <see cref="T:System.Web.HttpPostedFile" /> object from a file collection. This property is overloaded to allow retrieval of objects by either name or numerical index.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

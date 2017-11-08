@@ -38,6 +38,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.ConfigurationSection" />
+    <altmember cref="T:System.Web.Configuration.TrustLevel" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -195,6 +197,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Configuration.SecurityPolicySection.TrustLevels" />
       </Docs>
     </Member>
     <Member MemberName="OriginUrl">

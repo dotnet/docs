@@ -10,11 +10,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "ColorDialog component, examples"
-  - "ColorDialog component, formatting appearance"
-  - "color dialog box, configuring appearance"
+  - "ColorDialog component [Windows Forms], examples"
+  - "ColorDialog component [Windows Forms], formatting appearance"
+  - "color dialog box [Windows Forms], configuring appearance"
 ms.assetid: bba4e262-1cd7-4f63-89cf-330a36f7b539
 caps.latest.revision: 13
 author: dotnet-bot

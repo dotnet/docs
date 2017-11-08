@@ -289,5 +289,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Bind">
+      <AssemblyInfo>
+        <AssemblyName>System.Dynamic.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in the derived class, performs the binding of the dynamic operation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Defer">
+      <AssemblyInfo>
+        <AssemblyName>System.Dynamic.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Defers the binding of the operation until later time when the runtime values of all dynamic operation arguments have been computed.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

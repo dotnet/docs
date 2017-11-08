@@ -153,6 +153,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Documents.DocumentStructures.StoryBreak" />
+    <altmember cref="T:System.Windows.Documents.DocumentStructures.StoryFragments" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -215,6 +217,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.DocumentStructures.StoryFragment.FragmentType" />
+        <altmember cref="P:System.Windows.Documents.DocumentStructures.StoryFragment.StoryName" />
       </Docs>
     </Member>
     <Member MemberName="FragmentType">
@@ -249,6 +253,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.DocumentStructures.StoryFragment.FragmentName" />
       </Docs>
     </Member>
     <Member MemberName="StoryName">
@@ -283,6 +288,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.DocumentStructures.StoryFragment.FragmentName" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IEnumerable&lt;System.Windows.Documents.DocumentStructures.BlockElement&gt;.GetEnumerator">

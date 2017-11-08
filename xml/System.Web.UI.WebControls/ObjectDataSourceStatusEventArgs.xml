@@ -41,8 +41,8 @@
   
  In this code example, some preprocessing and post-processing steps are also performed. The `NorthwindEmployeeDeleting` delegate is called to handle the <xref:System.Web.UI.WebControls.ObjectDataSource.Deleting> event before the <xref:System.Web.UI.WebControls.ObjectDataSource.Delete%2A> action is performed, and the `NorthwindEmployeeDeleted` delegate is called to handle the <xref:System.Web.UI.WebControls.ObjectDataSource.Deleted> event after the <xref:System.Web.UI.WebControls.ObjectDataSource.Delete%2A> action has completed, to handle any exceptions that might have occurred. The `NorthwindEmployeeDeleted` delegate accesses possible exceptions that are thrown by the business object that is using the <xref:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs> object. In this example, if a `NorthwindDataException` is thrown, it is handled by this delegate.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/CS/objds10cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/VB/objds10vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/CS/objds10cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/VB/objds10vb.aspx#1)]  
   
  The following code example provides an example middle-tier business object that the preceding code example uses. The following list describes the two major classes that are defined in the code example:  
   
@@ -59,6 +59,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ObjectDataSource" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -86,6 +87,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs.OutputParameters" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs.ReturnValue" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -115,6 +118,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs.OutputParameters" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs.ReturnValue" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs.Exception" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs.ExceptionHandled" />
       </Docs>
     </Member>
     <Member MemberName="AffectedRows">
@@ -140,6 +147,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.Selected" />
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.Inserted" />
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.Updated" />
+        <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.Deleted" />
       </Docs>
     </Member>
     <Member MemberName="Exception">
@@ -174,11 +185,12 @@
   
  To examine the implementation of the `EmployeeLogic` middle-tier business object that this code example uses, see the class overview in <xref:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs>.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/CS/objds10cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/VB/objds10vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/CS/objds10cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/VB/objds10vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs.ExceptionHandled" />
       </Docs>
     </Member>
     <Member MemberName="ExceptionHandled">
@@ -212,11 +224,12 @@
   
  To examine the implementation of the `EmployeeLogic` middle-tier business object that this code example uses, see the class overview in <xref:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs>.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/CS/objds10cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/VB/objds10vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/CS/objds10cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_10#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_10/VB/objds10vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs.Exception" />
       </Docs>
     </Member>
     <Member MemberName="OutputParameters">
@@ -269,5 +282,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

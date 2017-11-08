@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRPolicyManager::SetActionOnFailure"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SetActionOnFailure method [.NET Framework hosting]"
   - "ICLRPolicyManager::SetActionOnFailure method [.NET Framework hosting]"

@@ -376,6 +376,7 @@
         <param name="errors">Errors encountered during the call to <see cref="M:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.LoadDesignerLayout(System.Xml.XmlReader,System.Collections.IList@)" />.</param>
         <summary>Retrieves the specified resource and calls the <see cref="M:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.LoadDesignerLayout(System.Xml.XmlReader,System.Collections.IList@)" /> method that applies the serialized layout to the root designer in the current designer host.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Reflection.Assembly.GetManifestResourceStream(System.Type,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="OnEndLoad">

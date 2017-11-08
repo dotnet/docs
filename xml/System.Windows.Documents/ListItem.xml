@@ -173,6 +173,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.ListItem.BorderThickness" />
       </Docs>
     </Member>
     <Member MemberName="BorderBrushProperty">
@@ -277,6 +278,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.ListItem.BorderBrush" />
       </Docs>
     </Member>
     <Member MemberName="BorderThicknessProperty">
@@ -634,6 +636,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.ListItem.Padding" />
       </Docs>
     </Member>
     <Member MemberName="MarginProperty">
@@ -669,6 +672,8 @@
         <summary>Gets the next <see cref="T:System.Windows.Documents.ListItem" /> in the containing <see cref="T:System.Windows.Documents.List" />.</summary>
         <value>The next <see cref="T:System.Windows.Documents.ListItem" /> in the <see cref="T:System.Windows.Documents.List" />, or <see langword="null" /> if there is no next <see cref="T:System.Windows.Documents.ListItem" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Documents.ListItem.PreviousListItem" />
+        <altmember cref="P:System.Windows.Documents.ListItem.SiblingListItems" />
       </Docs>
     </Member>
     <Member MemberName="Padding">
@@ -757,6 +762,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.ListItem.Margin" />
       </Docs>
     </Member>
     <Member MemberName="PaddingProperty">
@@ -792,6 +798,8 @@
         <summary>Gets the previous <see cref="T:System.Windows.Documents.ListItem" /> in the containing <see cref="T:System.Windows.Documents.List" />.</summary>
         <value>The previous <see cref="T:System.Windows.Documents.ListItem" /> in the <see cref="T:System.Windows.Documents.List" />, or <see langword="null" /> if there is no previous <see cref="T:System.Windows.Documents.ListItem" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Documents.ListItem.NextListItem" />
+        <altmember cref="P:System.Windows.Documents.ListItem.SiblingListItems" />
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeBlocks">
@@ -847,6 +855,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.ListItem.NextListItem" />
+        <altmember cref="P:System.Windows.Documents.ListItem.PreviousListItem" />
       </Docs>
     </Member>
     <Member MemberName="TextAlignment">
@@ -922,5 +932,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.ListItem" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

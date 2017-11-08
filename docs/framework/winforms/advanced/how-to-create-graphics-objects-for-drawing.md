@@ -10,10 +10,11 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "graphics [Windows Forms], creating"
-  - "Graphics class"
   - "images [Windows Forms], creating"
   - "GDI+, creating images"
 ms.assetid: 162861f9-f050-445e-8abb-b2c43a918b8b

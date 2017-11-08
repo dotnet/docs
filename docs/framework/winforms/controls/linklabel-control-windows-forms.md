@@ -9,11 +9,9 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "Label control [Windows Forms]"
-  - "links, adding to Windows Forms"
+  - "links [Windows Forms], adding to Windows Forms"
   - "Windows Forms, adding links"
   - "Web page link control"
   - "LinkLabel control [Windows Forms]"

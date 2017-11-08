@@ -10,16 +10,17 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "GDI+, scaling images"
   - "GDI+, cropping images"
   - "images [Windows Forms], cropping"
-  - "compressing data, images"
+  - "compressing data [Windows Forms], images"
   - "images [Windows Forms], expansion"
   - "images [Windows Forms], scaling"
-  - "rectangles, source"
-  - "rectangles, destination"
+  - "rectangles [Windows Forms], source"
+  - "rectangles [Windows Forms], destination"
   - "images [Windows Forms], compression"
 ms.assetid: ad5daf26-005f-45bc-a2af-e0e97777a21a
 caps.latest.revision: 13

@@ -1,42 +1,22 @@
 ---
 title: "Performing Tasks with My.Application, My.Computer, and My.User (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
-  - "My.Application object, developing applications"
+  - "My.Application object [Visual Basic], developing applications"
   - "rapid application development (RAD), My.Application"
   - "rapid application development (RAD), My.Computer"
   - "rapid application development (RAD), My.User"
-  - "My.Computer object, developing applications"
-  - "My.User object, developing applications"
+  - "My.Computer object [Visual Basic], developing applications"
+  - "My.User object [Visual Basic], developing applications"
 ms.assetid: c8af61bd-4dd3-4a0f-9af5-795b594b240b
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Performing Tasks with My.Application, My.Computer, and My.User (Visual Basic)
 The three central `My` objects that provide access to information and commonly used functionality are `My.Application` (<xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase>), `My.Computer` (<xref:Microsoft.VisualBasic.Devices.Computer>), and `My.User` (<xref:Microsoft.VisualBasic.ApplicationServices.User>). You can use these objects to access information that is related to the current application, the computer that the application is installed on, or the current user of the application, respectively.  

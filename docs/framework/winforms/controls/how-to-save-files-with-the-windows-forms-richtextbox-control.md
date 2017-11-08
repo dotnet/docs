@@ -10,16 +10,18 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "saving files"
-  - "RTF files, saving in RichTextBox control"
+  - "RTF files [Windows Forms], saving in RichTextBox control"
   - "examples [Windows Forms], text boxes"
-  - "saving files, RichTextBox control"
-  - "files, saving with RichTextBox control"
+  - "saving files [Windows Forms], RichTextBox control"
+  - "files [Windows Forms], saving with RichTextBox control"
   - "RichTextBox control [Windows Forms], saving files"
-  - ".rtf files, saving in RichTextBox control"
-  - "text files, saving from RichTextBox control"
+  - ".rtf files [Windows Forms], saving in RichTextBox control"
+  - "text files [Windows Forms], saving from RichTextBox control"
 ms.assetid: 4a58ec19-84d1-4383-9110-298c06adcfca
 caps.latest.revision: 15
 author: dotnet-bot

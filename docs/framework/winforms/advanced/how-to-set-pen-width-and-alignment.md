@@ -10,10 +10,11 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "pens, setting width"
-  - "pens, setting alignment"
+  - "pens [Windows Forms], setting width"
+  - "pens [Windows Forms], setting alignment"
 ms.assetid: a202af36-4d31-4401-a126-b232f51db581
 caps.latest.revision: 16
 author: dotnet-bot

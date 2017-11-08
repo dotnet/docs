@@ -53,6 +53,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Text.EncoderFallbackBuffer" />
+    <altmember cref="T:System.Text.EncoderReplacementFallback" />
+    <altmember cref="T:System.Text.EncoderExceptionFallback" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -122,6 +125,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Text.DecoderFallbackBuffer" />
       </Docs>
     </Member>
     <Member MemberName="ExceptionFallback">

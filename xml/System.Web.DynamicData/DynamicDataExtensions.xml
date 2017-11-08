@@ -143,7 +143,7 @@
  The following example shows how to find the containing data source control. In the example, the Dynamic Data page templates are copied to the \DynamicData\CustomPages\ProductDescriptions folder to provide a custom display for the ProductDescription table of the AdventureWorksLT database. The Insert.aspx file markup is changed to add an `OnDataBound` event handler named `DetailsView1_DataBound`, in which the <xref:System.Web.DynamicData.DynamicDataExtensions.FindDataSourceControl%2A> method is called to find the data source control.  
   
  [!code-csharp[System.Web.DynamicData.DynamicDataExtensions#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.DynamicDataExtensions/cs/Insert.aspx.cs#1)]  
-<!-- TODO: review snippet reference [!code-csharp[System.Web.DynamicData.DynamicDataExtensions#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.DynamicDataExtensions/cs/Insert.aspx#2)]  -->  
+ [!code-aspx-csharp[System.Web.DynamicData.DynamicDataExtensions#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.DynamicDataExtensions/cs/Insert.aspx#2)]  
   
  ]]></format>
         </remarks>
@@ -177,7 +177,7 @@
  The following example shows how to find the text box control for a specified column name. In example, the Dynamic Data page templates are copied to the \DynamicData\CustomPages\ProductDescriptions folder to provide a custom display for the ProductDescription table of the AdventureWorksLT database. The Insert.aspx file markup is changed to add an `OnDataBound` event handler named `DetailsView1_DataBound`, in which the <xref:System.Web.DynamicData.DynamicDataExtensions.FindDataSourceControl%2A> method is called to find a text box control.  
   
  [!code-csharp[System.Web.DynamicData.DynamicDataExtensions#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.DynamicDataExtensions/cs/Insert.aspx.cs#1)]  
-<!-- TODO: review snippet reference [!code-csharp[System.Web.DynamicData.DynamicDataExtensions#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.DynamicDataExtensions/cs/Insert.aspx#2)]  -->  
+[!code-aspx-csharp[System.Web.DynamicData.DynamicDataExtensions#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.DynamicDataExtensions/cs/Insert.aspx#2)]  
   
  ]]></format>
         </remarks>
@@ -209,7 +209,7 @@
  The following example shows how to find the <xref:System.Web.DynamicData.MetaTable> object for a control. In the example, the Dynamic Data page templates are copied to the \DynamicData\CustomPages\ProductDescriptions folder to provide a custom display for the ProductDescription table of the AdventureWorksLT database. The Insert.aspx file markup is changed to add an `OnDataBound` event handler named `DetailsView1_DataBound`, in which the <xref:System.Web.DynamicData.DynamicDataExtensions.FindMetaTable%2A> method is called to find the <xref:System.Web.DynamicData.MetaTable> object.  
   
  [!code-csharp[System.Web.DynamicData.DynamicDataExtensions#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.DynamicDataExtensions/cs/Insert.aspx.cs#1)]  
-<!-- TODO: review snippet reference [!code-csharp[System.Web.DynamicData.DynamicDataExtensions#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.DynamicDataExtensions/cs/Insert.aspx#2)]  -->  
+[!code-aspx-csharp[System.Web.DynamicData.DynamicDataExtensions#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.DynamicDataExtensions/cs/Insert.aspx#2)]  
   
  ]]></format>
         </remarks>
@@ -620,5 +620,41 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetMetaTable">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the <see cref="T:System.Web.DynamicData.MetaTable" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetDefaultValues">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the default values.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetMetaTable">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets metadata for a table.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryGetMetaTable">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether table metadata is available.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -9,12 +9,10 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "WPF Designer, styling WPF content"
+  - "WPF Designer [Windows Forms], styling WPF content"
   - "interoperability [WDF]"
-  - "styles, WPF content"
+  - "styles [Windows Forms], WPF content"
 ms.assetid: e574aac7-7ea4-4cdb-8034-bab541f000df
 caps.latest.revision: 10
 author: dotnet-bot

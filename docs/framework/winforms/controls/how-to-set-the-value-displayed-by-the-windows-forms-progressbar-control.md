@@ -10,14 +10,11 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "Increment method"
-  - "Value property"
-  - "PerformStep method"
-  - "Step property"
   - "ProgressBar control [Windows Forms], setting value displayed"
-  - "progress controls, setting value displayed"
+  - "progress controls [Windows Forms], setting value displayed"
 ms.assetid: 0e5010ad-1e9a-4271-895e-5a3d24d37a26
 caps.latest.revision: 14
 author: dotnet-bot

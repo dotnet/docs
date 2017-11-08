@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataConverter::GetMetaDataFromTypeLib"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataConverter::GetMetaDataFromTypeLib method [.NET Framework metadata]"
   - "GetMetaDataFromTypeLib method [.NET Framework metadata]"

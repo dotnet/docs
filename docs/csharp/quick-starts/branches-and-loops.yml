@@ -8,6 +8,8 @@ metadata:
   level: Beginner
   displayType: two-column
   interactive: csharp
+  nextTutorialHref: arrays-and-collections
+  nextTutorialTitle: Arrays and collections in C#
 items:
 - durationInMinutes: 1
   content: |
@@ -150,7 +152,7 @@ items:
     int counter = 0;
     while (counter < 10)
     {
-      Console.WriteLine("Hello World! The counter is " + counter);
+      Console.WriteLine($"Hello World! The counter is {counter}");
       counter++;
     }
     ```
@@ -178,7 +180,7 @@ items:
     int counter = 0;
     do
     {
-      Console.WriteLine("Hello World! The counter is " + counter);
+      Console.WriteLine($"Hello World! The counter is {counter}");
       counter++;
     } while (counter < 10);
     ```
@@ -199,7 +201,7 @@ items:
     ```csharp
     for(int counter = 0; counter < 10; counter++)
     {
-      Console.WriteLine("Hello World! The counter is " + counter);
+      Console.WriteLine($"Hello World! The counter is {counter}");
     } 
     ```
 
@@ -259,7 +261,7 @@ items:
         sum = sum + number;
       }
     }
-    Console.WriteLine("The sum is " + sum);
+    Console.WriteLine($"The sum is {sum}");
     ```
 
     > [!NOTE]

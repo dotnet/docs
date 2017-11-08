@@ -9,13 +9,11 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "TableLayoutPanel control [Windows Forms]"
   - "layout [Windows Forms]"
-  - "controls [Windows Forms],sizing"
-  - "sizing, automatic"
+  - "controls [Windows Forms], sizing"
+  - "sizing [Windows Forms], automatic"
   - "layout [Windows Forms], TableLayoutPanel control"
   - "automatic sizing"
 ms.assetid: f55175c6-424e-4782-a86e-3f79c1550235

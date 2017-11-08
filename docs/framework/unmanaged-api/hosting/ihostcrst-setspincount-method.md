@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostCrst::SetSpinCount"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostCrst::SetSpinCount method [.NET Framework hosting]"
   - "SetSpinCount method [.NET Framework hosting]"

@@ -12,11 +12,9 @@ ms.topic: "article"
 f1_keywords: 
   - "Designer_System.Windows.Forms.Design.FormDocumentDesigner"
   - "vb.wfc.formdesigner"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "Windows Forms, getting started"
-  - "getting started, Windows Forms"
+  - "getting started [Windows Forms], Windows Forms"
 ms.assetid: a031aa58-5027-4082-b590-df7c12c77dec
 caps.latest.revision: 10
 author: dotnet-bot

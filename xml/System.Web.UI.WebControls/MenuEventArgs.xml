@@ -32,8 +32,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuEventArgs> object passed to the event handler for the <xref:System.Web.UI.WebControls.Menu.MenuItemDataBound> event to modify the properties of a menu item before it is displayed in a <xref:System.Web.UI.WebControls.Menu> control. The <xref:System.Web.UI.WebControls.MenuItem.ImageUrl%2A> property of the `Home` menu item is set to display an image in that menu item only. For this example to work correctly, you must copy the sample site map data below to a file named Web.sitemap.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuEventArgs/CS/menueventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuEventArgs/VB/menueventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuEventArgs/CS/menueventargscs.aspx#1)]
+ [!code-aspx-vb[MenuEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuEventArgs/VB/menueventargsvb.aspx#1)]  
   
  The following is sample site map data for the previous example.  
   
@@ -103,6 +103,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Menu" />
+    <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+    <altmember cref="T:System.Web.UI.WebControls.MenuEventHandler" />
+    <altmember cref="E:System.Web.UI.WebControls.Menu.MenuItemClick" />
+    <altmember cref="M:System.Web.UI.WebControls.Menu.OnMenuItemClick(System.Web.UI.WebControls.MenuEventArgs)" />
+    <altmember cref="E:System.Web.UI.WebControls.Menu.MenuItemDataBound" />
+    <altmember cref="M:System.Web.UI.WebControls.Menu.OnMenuItemDataBound(System.Web.UI.WebControls.MenuEventArgs)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -135,6 +142,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandEventArgs.CommandArgument" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandEventArgs.CommandName" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuEventArgs.CommandSource" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuEventArgs.Item" />
+        <altmember cref="E:System.Web.UI.WebControls.Menu.MenuItemClick" />
+        <altmember cref="E:System.Web.UI.WebControls.Menu.MenuItemDataBound" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -171,6 +185,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.CommandEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandEventArgs.CommandArgument" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandEventArgs.CommandName" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuEventArgs.CommandSource" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuEventArgs.Item" />
+        <altmember cref="E:System.Web.UI.WebControls.Menu.MenuItemClick" />
+        <altmember cref="E:System.Web.UI.WebControls.Menu.MenuItemDataBound" />
       </Docs>
     </Member>
     <Member MemberName="CommandSource">
@@ -196,6 +218,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.Menu.MenuItemClick" />
+        <altmember cref="E:System.Web.UI.WebControls.Menu.MenuItemDataBound" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -224,12 +248,22 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuEventArgs.Item%2A> property to access the properties of the menu item clicked by the user. The text of the selected menu item is displayed on the page.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuEventArgsItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuEventArgsItem/CS/menueventargsitemcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuEventArgsItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuEventArgsItem/VB/menueventargsitemvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuEventArgsItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuEventArgsItem/CS/menueventargsitemcs.aspx#1)]
+ [!code-aspx-vb[MenuEventArgsItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuEventArgsItem/VB/menueventargsitemvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.MenuEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

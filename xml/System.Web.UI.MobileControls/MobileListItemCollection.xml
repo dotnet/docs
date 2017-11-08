@@ -34,12 +34,13 @@
 ## Examples  
  The following code example shows how you manipulate items in the <xref:System.Web.UI.MobileControls.MobileListItem> object through the <xref:System.Web.UI.MobileControls.MobileListItemCollection> class. The code uses the selected item's index into the <xref:System.Web.UI.MobileControls.SelectionList.Items%2A?displayProperty=nameWithType> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[MobileListItemSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileListItemSample/cs/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MobileListItemSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileListItemSample/vb/Default.aspx#1)]  -->  
+ [!code-aspx-csharp[MobileListItemSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileListItemSample/cs/Default.aspx#1)]
+ [!code-aspx-vb[MobileListItemSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileListItemSample/vb/Default.aspx#1)]  
   
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="M:System.Web.UI.MobileControls.MobileListItemCollection.Clear" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -139,11 +140,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.MobileControls.MobileListItemCollection.Add%2A> method to add an item named `_ml` to the end of the <xref:System.Web.UI.MobileControls.MobileListItemCollection>.  
   
- <!-- TODO: review snippet reference [!code-csharp[MobileListItemSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileListItemSample/cs/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MobileListItemSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileListItemSample/vb/Default.aspx#1)]  -->  
+ [!code-aspx-csharp[MobileListItemSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileListItemSample/cs/Default.aspx#1)]
+ [!code-aspx-vb[MobileListItemSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileListItemSample/vb/Default.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.MobileListItemCollection.Clear" />
+        <altmember cref="M:System.Web.UI.MobileControls.MobileListItemCollection.Remove(System.String)" />
+        <altmember cref="M:System.Web.UI.MobileControls.MobileListItemCollection.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -244,6 +248,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.IObjectListFieldCollection.IndexOf(System.Web.UI.MobileControls.ObjectListField)" />
+        <altmember cref="M:System.Web.UI.MobileControls.ObjectListCommandCollection.IndexOf(System.String)" />
+        <altmember cref="M:System.Web.UI.MobileControls.ObjectListFieldCollection.IndexOf(System.Web.UI.MobileControls.ObjectListField)" />
+        <altmember cref="M:System.Web.UI.MobileControls.ObjectListItemCollection.IndexOf(System.Web.UI.MobileControls.ObjectListItem)" />
+        <altmember cref="M:System.Web.UI.MobileControls.MobileListItemCollection.IndexOf(System.Web.UI.MobileControls.MobileListItem)" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -274,6 +283,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.MobileListItem" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -345,6 +355,7 @@
         <summary>Gets a <see cref="T:System.Web.UI.MobileControls.MobileListItem" /> item in the collection by index. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <value>The <see cref="T:System.Web.UI.MobileControls.MobileListItem" /> item at the specified index.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.MobileListItem" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -387,6 +398,10 @@
         <param name="item">The value of the item to remove. The first item that matches this value in the collection is removed.</param>
         <summary>Removes the item with the specified value. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.DeviceSpecificChoiceCollection.Remove(System.Web.UI.MobileControls.DeviceSpecificChoice)" />
+        <altmember cref="M:System.Web.UI.MobileControls.ObjectListCommandCollection.Remove(System.String)" />
+        <altmember cref="M:System.Web.UI.MobileControls.ObjectListFieldCollection.Remove(System.Web.UI.MobileControls.ObjectListField)" />
+        <altmember cref="M:System.Web.UI.MobileControls.StyleSheet.Remove(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -408,6 +423,10 @@
         <param name="item">The value of the item to remove. The first item that matches this value in the collection is removed.</param>
         <summary>Removes the item with the specified value. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.DeviceSpecificChoiceCollection.Remove(System.Web.UI.MobileControls.DeviceSpecificChoice)" />
+        <altmember cref="M:System.Web.UI.MobileControls.ObjectListCommandCollection.Remove(System.String)" />
+        <altmember cref="M:System.Web.UI.MobileControls.ObjectListFieldCollection.Remove(System.Web.UI.MobileControls.ObjectListField)" />
+        <altmember cref="M:System.Web.UI.MobileControls.StyleSheet.Remove(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -429,6 +448,7 @@
         <param name="index">The index number of the item to remove.</param>
         <summary>Removes the item at the specified index. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListCommandCollection" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -495,6 +515,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.IStateManager.IsTrackingViewState" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.LoadViewState">
@@ -524,6 +545,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">the view state data has been modified or corrupted.</exception>
+        <altmember cref="M:System.Web.UI.IStateManager.LoadViewState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.SaveViewState">
@@ -550,6 +572,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IStateManager.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.TrackViewState">
@@ -575,6 +598,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IStateManager.TrackViewState" />
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -602,5 +626,41 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Insert">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds an item to the specified location in the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the item with the specified value. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds an item to the end of a collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.MobileListItemCollection" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

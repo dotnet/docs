@@ -1,37 +1,16 @@
 ---
 title: "Extending the Visual Basic Application Model"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Visual Basic Application Model, extending"
 ms.assetid: e91d3bed-4c27-40e3-871d-2be17467c72c
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Extending the Visual Basic Application Model
 You can add functionality to the application model by overriding the `Overridable` members of the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase> class. This technique allows you to customize the behavior of the application model and add calls to your own methods as the application starts up and shuts down.  
@@ -70,7 +49,7 @@ You can add functionality to the application model by overriding the `Overridabl
   
 2.  <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnStartup%2A>. Provides an extensibility point for raising the `Startup` event. The application startup sequence stops if this function returns `False`.  
   
-     By default, this method raises the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Startup> event. If the event handler sets the @System.ComponentModel.CancelEventArgs.Cancel property of the event argument to `True`, the method returns `False` to cancel the application startup.  
+     By default, this method raises the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Startup> event. If the event handler sets the <xref:System.ComponentModel.CancelEventArgs.Cancel> property of the event argument to `True`, the method returns `False` to cancel the application startup.  
   
 3.  <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnRun%2A>. Provides the starting point for when the main application is ready to start running, after the initialization is done.  
   

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRTask::SwitchIn"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRTask::SwitchIn method [.NET Framework hosting]"
   - "SwitchIn method [.NET Framework hosting]"

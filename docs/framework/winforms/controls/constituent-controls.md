@@ -10,11 +10,11 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "UserControl class"
   - "custom controls [Windows Forms], constituent controls"
-  - "constituent controls"
+  - "constituent controls [Windows Forms]"
   - "user controls [Windows Forms], constituent controls"
 ms.assetid: 5565e720-198b-4bbd-a2bd-c447ba641798
 caps.latest.revision: 16

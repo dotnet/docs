@@ -13,6 +13,8 @@
   <Docs>
     <summary>A bitmap effect that paints a drop shadow around the target texture.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Media.Effects.Effect" />
+    <altmember cref="T:System.Windows.Media.Effects.BlurEffect" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +30,8 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Effects.DropShadowEffect" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Effects.Effect" />
+        <altmember cref="T:System.Windows.Media.Effects.BlurEffect" />
       </Docs>
     </Member>
     <Member MemberName="BlurRadius">
@@ -46,6 +50,8 @@
         <summary>Gets or sets a value that indicates the radius of the shadow's blur effect.</summary>
         <value>A value that indicates the radius of the shadow's blur effect. The default is 5.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Effects.Effect" />
+        <altmember cref="T:System.Windows.Media.Effects.BlurEffect" />
       </Docs>
     </Member>
     <Member MemberName="BlurRadiusProperty">
@@ -63,6 +69,8 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Media.Effects.DropShadowEffect.BlurRadius" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Effects.Effect" />
+        <altmember cref="T:System.Windows.Media.Effects.BlurEffect" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -82,6 +90,8 @@
         <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.Effects.Effect" /> object, making deep copies of this object's values. When copying this object's dependency properties, this method copies resource references and data bindings (which may no longer resolve), but not animations or their current values.</summary>
         <returns>A modifiable clone of this instance. The returned clone is effectively a deep copy of the current object. The clone's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Effects.Effect" />
+        <altmember cref="T:System.Windows.Media.Effects.BlurEffect" />
       </Docs>
     </Member>
     <Member MemberName="CloneCurrentValue">
@@ -101,6 +111,8 @@
         <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.Effects.Effect" /> object, making deep copies of this object's current values. Resource references, data bindings, and animations are not copied, but their current values are copied.</summary>
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Effects.Effect" />
+        <altmember cref="T:System.Windows.Media.Effects.BlurEffect" />
       </Docs>
     </Member>
     <Member MemberName="Color">
@@ -119,6 +131,8 @@
         <summary>Gets or sets the color of the drop shadow.</summary>
         <value>The color of the drop shadow. The default is <see cref="P:System.Windows.Media.Colors.Black" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Effects.Effect" />
+        <altmember cref="T:System.Windows.Media.Effects.BlurEffect" />
       </Docs>
     </Member>
     <Member MemberName="ColorProperty">
@@ -136,6 +150,8 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Media.Effects.DropShadowEffect.Color" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Effects.Effect" />
+        <altmember cref="T:System.Windows.Media.Effects.BlurEffect" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceCore">
@@ -173,6 +189,8 @@
         <summary>Gets or sets the direction of the drop shadow.</summary>
         <value>The direction of the drop shadow, in degrees. The default is 315.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Effects.Effect" />
+        <altmember cref="T:System.Windows.Media.Effects.BlurEffect" />
       </Docs>
     </Member>
     <Member MemberName="DirectionProperty">
@@ -190,6 +208,8 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Media.Effects.DropShadowEffect.Direction" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Effects.Effect" />
+        <altmember cref="T:System.Windows.Media.Effects.BlurEffect" />
       </Docs>
     </Member>
     <Member MemberName="Opacity">
@@ -208,6 +228,8 @@
         <summary>Gets or sets the opacity of the drop shadow.</summary>
         <value>The opacity of the drop shadow. The default is 1.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Effects.Effect" />
+        <altmember cref="T:System.Windows.Media.Effects.BlurEffect" />
       </Docs>
     </Member>
     <Member MemberName="OpacityProperty">
@@ -225,6 +247,8 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Media.Effects.DropShadowEffect.Opacity" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Effects.Effect" />
+        <altmember cref="T:System.Windows.Media.Effects.BlurEffect" />
       </Docs>
     </Member>
     <Member MemberName="RenderingBias">
@@ -243,6 +267,8 @@
         <summary>Gets or sets a value that indicates whether the system renders the drop shadow with emphasis on speed or quality.</summary>
         <value>A <see cref="T:System.Windows.Media.Effects.RenderingBias" /> value that indicates whether the system renders the drop shadow with emphasis on speed or quality. The default is <see cref="F:System.Windows.Media.Effects.RenderingBias.Performance" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Effects.Effect" />
+        <altmember cref="T:System.Windows.Media.Effects.BlurEffect" />
       </Docs>
     </Member>
     <Member MemberName="RenderingBiasProperty">
@@ -260,6 +286,8 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Media.Effects.DropShadowEffect.RenderingBias" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Effects.Effect" />
+        <altmember cref="T:System.Windows.Media.Effects.BlurEffect" />
       </Docs>
     </Member>
     <Member MemberName="ShadowDepth">
@@ -278,6 +306,8 @@
         <summary>Gets or sets the distance of the drop shadow below the texture.</summary>
         <value>The distance of the drop shadow below the texture. The default is 5.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Effects.Effect" />
+        <altmember cref="T:System.Windows.Media.Effects.BlurEffect" />
       </Docs>
     </Member>
     <Member MemberName="ShadowDepthProperty">
@@ -295,6 +325,8 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Media.Effects.DropShadowEffect.ShadowDepth" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Effects.Effect" />
+        <altmember cref="T:System.Windows.Media.Effects.BlurEffect" />
       </Docs>
     </Member>
   </Members>

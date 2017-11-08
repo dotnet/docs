@@ -25,6 +25,7 @@
     <block subset="none" type="overrides">
       <para>See the [Custom Animations Overview](~/docs/framework/wpf/graphics-multimedia/custom-animations-overview.md) for information about extending animation classes.</para>
     </block>
+    <altmember cref="T:System.Windows.Media.Animation.ObjectAnimationUsingKeyFrames" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -162,6 +163,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Animation.AnimationClock" />
       </Docs>
     </Member>
     <Member MemberName="TargetPropertyType">

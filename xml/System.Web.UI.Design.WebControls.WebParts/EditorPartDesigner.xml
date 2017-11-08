@@ -30,8 +30,8 @@
   
  In order for the custom control to render, the page must have a <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control, an <xref:System.Web.UI.WebControls.WebParts.EditorZone> with a <xref:System.Web.UI.WebControls.WebParts.EditorZone.ZoneTemplate%2A> for the control to reside in, and a <xref:System.Web.UI.WebControls.WebParts.WebPartZone> containing a control for the custom <xref:System.Web.UI.WebControls.WebParts.EditorPart> to act on, as shown in the following code example.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebPartsDesigners_EditorPartDesigner_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebPartsDesigners_EditorPartDesigner_Overview/CS/Default.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebPartsDesigners_EditorPartDesigner_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebPartsDesigners_EditorPartDesigner_Overview/vb/default.aspx#2)]  -->  
+ [!code-aspx-csharp[WebPartsDesigners_EditorPartDesigner_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebPartsDesigners_EditorPartDesigner_Overview/CS/Default.aspx#2)]
+ [!code-aspx-vb[WebPartsDesigners_EditorPartDesigner_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebPartsDesigners_EditorPartDesigner_Overview/vb/default.aspx#2)]  
   
  For the <xref:System.Web.UI.WebControls.WebParts.EditorPart> to be usable at run time, edit mode must be enabled on the page. The following code example demonstrates how to do so with a code-behind file.  
   
@@ -40,6 +40,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.EditorPart" />
+    <altmember cref="T:System.Web.UI.Design.WebControls.WebParts.WebPartDesigner" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

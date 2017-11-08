@@ -13,6 +13,7 @@
   <Docs>
     <summary>Provides qualifying information to a callback method when a <see cref="E:System.Net.PeerToPeer.Collaboration.PeerContact.SubscribeCompleted" /> event is signaled.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="E:System.Net.PeerToPeer.Collaboration.PeerContact.SubscribeCompleted" />
   </Docs>
   <Members>
     <Member MemberName="PeerContact">
@@ -39,6 +40,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" />
       </Docs>
     </Member>
     <Member MemberName="PeerNearMe">
@@ -65,6 +68,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" />
       </Docs>
     </Member>
   </Members>

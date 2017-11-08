@@ -56,8 +56,8 @@
   
  The first part of this code example is the user control that enables users to change display modes on a Web page. Save the following source code to an .ascx file, giving it the file name that is assigned to the `Src` attribute of the `Register` directive for this user control, which is near the top of the hosting Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionPoint_Overview#6](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionPoint_Overview/CS/displaymodemenucs.ascx#6)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionPoint_Overview#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionPoint_Overview/VB/DisplayModeMenuVB.ascx#6)]  -->  
+ [!code-aspx-csharp[WebParts_ConnectionPoint_Overview#6](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionPoint_Overview/CS/displaymodemenucs.ascx#6)]
+ [!code-aspx-vb[WebParts_ConnectionPoint_Overview#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionPoint_Overview/VB/DisplayModeMenuVB.ascx#6)]  
   
  The second part of the code example is the source code for the interface and controls. The source file contains a simple interface named `IZipCode`. There is also a <xref:System.Web.UI.WebControls.WebParts.WebPart> class named `ZipCodeWebPart` that implements the interface and acts as the provider control. The other <xref:System.Web.UI.WebControls.WebParts.WebPart> class is named `WeatherWebPart`, and it acts as the consumer for the connection. This class has a method named `GetZipCode` that gets an instance of the `IZipCode` interface from the provider control. Note that this method is marked as the consumer's connection point method with a `ConnectionConsumer` attribute in its metadata. This is the mechanism for identifying the connection point method in the consumer control.  
   
@@ -68,8 +68,8 @@
   
  The third part of the code example is the Web page. Near the top are `Register` directives to register the custom controls that form the connection, and the user control that enables users to change display modes on the page. The connection itself is created declaratively within the `<staticconnections>` element on the page. This demonstrates one way of creating a connection--note the `ConsumerConnectionPointID` attribute in the `<asp:webpartconnection>` element. You can also create the connection programmatically; the code for doing that is in the `Button1_Click` method. In this case, a <xref:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint> object is created and then passed to a method that creates the actual connection. Whether the connection is created declaratively or programmatically, connection points must always be specified for both the provider and the consumer. The `Button2_Click` method accesses the <xref:System.Web.UI.WebControls.WebParts.ConnectionPoint> objects for both the provider and the consumer, and writes some of their property values to a label in the page.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionPoint_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionPoint_Overview/CS/connectionPointCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionPoint_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionPoint_Overview/VB/connectionPointVB.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_ConnectionPoint_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionPoint_Overview/CS/connectionPointCS.aspx#1)]
+ [!code-aspx-vb[WebParts_ConnectionPoint_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionPoint_Overview/VB/connectionPointVB.aspx#1)]  
   
  After you load the page in a browser, click the **Connection Point Details** button. Information about the provider and consumer connection points established in the declarative connection appears. Next, use the **Display Mode** drop-down control to switch the page into connect mode. On the verbs menu of the **ZIP Code Provider**<xref:System.Web.UI.WebControls.WebParts.WebPart> control (represented by a downward arrow in the title bar), click the connect verb. The connection UI appears, created automatically by the `<asp:connectionszone>` control declared in the page. This is another way of creating a connection (through the UI), along with the declarative and programmatic methods discussed earlier. Click the **Disconnect** button to terminate the existing static connection. Click the **Create a Connection to a Consumer** link. The UI now displays a drop-down control that lists the consumer connection point display name. Select the connection point in the drop-down list, and then click **Connect** to complete the connection. Next, click **Disconnect** again. Click the **Dynamic Connection** button to create a connection programmatically. Use the **Display Mode** control to return the page to browse mode. Click the **Connection Point Details** button again, to indicate details about the consumer connection point object once more.  
   
@@ -77,6 +77,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartConnection" />
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.ProviderConnectionPoint" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -133,7 +135,7 @@
   
  The second part of the code example is the Web page that hosts the custom controls in a static Web parts connection. At the top of the page is a `Register` directive to declare a prefix and the namespace for the custom controls. The connection is declared by using an `<asp:webpartconnection>` element, and the provider and consumer controls are declared within an `<asp:webpartzone>` element.  
   
- <!-- TODO: review snippet reference [!code-csharp[UI.WebControls.WebParts.ProviderConnectionPoint#3](~/samples/snippets/csharp/VS_Snippets_WebNet/UI.WebControls.WebParts.ProviderConnectionPoint/CS/defaultcs.aspx#3)]  -->  
+ [!code-aspx-csharp[UI.WebControls.WebParts.ProviderConnectionPoint#3](~/samples/snippets/csharp/VS_Snippets_WebNet/UI.WebControls.WebParts.ProviderConnectionPoint/CS/defaultcs.aspx#3)]  
   
  Load the page in a browser. The connection between the controls already exists, and the consumer displays the data from the provider, because the connection was declared as a static connection in the page.  
   
@@ -155,6 +157,7 @@
  <paramref name="displayName" /> is <see langword="null" /> or an empty string ("").</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="controlType" /> is not the same type as the consumer control (or a valid class derived from it).</exception>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.GetConsumerConnectionPoints(System.Web.UI.WebControls.WebParts.WebPart)" />
       </Docs>
     </Member>
     <Member MemberName="SetObject">

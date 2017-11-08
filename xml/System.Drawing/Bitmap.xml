@@ -46,6 +46,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.PictureBox" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -847,7 +848,7 @@
   
  When calling this method, you should use a member of the <xref:System.Drawing.Imaging.PixelFormat?displayProperty=nameWithType> enumeration that contains a specific bits-per-pixel (BPP) value. Using <xref:System.Drawing.Imaging.PixelFormat?displayProperty=nameWithType> values, such as <xref:System.Drawing.Imaging.PixelFormat.Indexed> and <xref:System.Drawing.Imaging.PixelFormat.Gdi>, will throw an <xref:System.ArgumentException?displayProperty=nameWithType>. Also, passing the incorrect pixel format for a bitmap will throw an <xref:System.ArgumentException?displayProperty=nameWithType>.  
   
- This version of the <xref:System.Drawing.Bitmap.LockBits%2A> method is intended to be used with a `flags` value of <xref:System.Drawing.Imaging.ImageLockMode?displayProperty=nameWithType>.  
+ This version of the <xref:System.Drawing.Bitmap.LockBits%2A> method is intended to be used with a `flags` value of <xref:System.Drawing.Imaging.ImageLockMode.UserInputBuffer?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1068,5 +1069,50 @@
         <exception cref="T:System.Exception">The operation failed.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetHbitmap">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a GDI bitmap object from a GDI+ <see cref="T:System.Drawing.Bitmap" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LockBits">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Locks a <see cref="T:System.Drawing.Bitmap" /> into system memory.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Clone">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a copy of the section of this <see cref="T:System.Drawing.Bitmap" /> defined with a specified <see cref="T:System.Drawing.Imaging.PixelFormat" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="MakeTransparent">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Makes the default transparent color transparent for this <see cref="T:System.Drawing.Bitmap" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Bitmap" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

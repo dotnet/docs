@@ -5,6 +5,8 @@ author: billwagner
 ms.author: wiwagn
 ms.date: 08/30/2017
 ms.topic: article
+dev_langs:
+ - "fsharp"
 ms.prod: .net-core
 ---
 # Unit testing F# libraries in .NET Core using dotnet test and MSTest

@@ -132,7 +132,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If you do not want to generate a strong name for your assembly, it is valid for `publicKey` and `keyPair` to be `null`, as long as `flags` does not equal <xref:System.Runtime.InteropServices.TypeLibImporterFlags?displayProperty=nameWithType>. Otherwise, at least one of these parameters must be specified. If `publicKey` is `null`, the public key in `keyPair` will be set in the target assembly's manifest metadata and a signature will be generated based on the contents of the assembly. If `keyPair` is `null`, `publicKey` will be set in the target assembly's manifest metadata and no signature will be generated. Specifying both parameters is not generally useful, and can result in an invalid signature.  
+ If you do not want to generate a strong name for your assembly, it is valid for `publicKey` and `keyPair` to be `null`, as long as `flags` does not equal <xref:System.Runtime.InteropServices.TypeLibImporterFlags.PrimaryInteropAssembly?displayProperty=nameWithType>. Otherwise, at least one of these parameters must be specified. If `publicKey` is `null`, the public key in `keyPair` will be set in the target assembly's manifest metadata and a signature will be generated based on the contents of the assembly. If `keyPair` is `null`, `publicKey` will be set in the target assembly's manifest metadata and no signature will be generated. Specifying both parameters is not generally useful, and can result in an invalid signature.  
   
  For more information on `ITypeLib`, please see its existing documentation in the MSDN library.  
   
@@ -207,7 +207,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If you do not want to generate a strong name for your assembly, it is valid for `publicKey` and `keyPair` to be `null`, as long as `flags` does not equal <xref:System.Runtime.InteropServices.TypeLibImporterFlags?displayProperty=nameWithType>. Otherwise, atleast one of these parameters must be specified. If `publicKey` is `null`, the public key in `keyPair` will be set in the target assembly's manifest metadata and a signature will be generated based on the contents of the assembly. If `keyPair` is `null`, `publicKey` will be set in the target assembly's manifest metadata and no signature will be generated. Specifying both parameters is not generally useful, and can result in an invalid signature.  
+ If you do not want to generate a strong name for your assembly, it is valid for `publicKey` and `keyPair` to be `null`, as long as `flags` does not equal <xref:System.Runtime.InteropServices.TypeLibImporterFlags.PrimaryInteropAssembly?displayProperty=nameWithType>. Otherwise, atleast one of these parameters must be specified. If `publicKey` is `null`, the public key in `keyPair` will be set in the target assembly's manifest metadata and a signature will be generated based on the contents of the assembly. If `keyPair` is `null`, `publicKey` will be set in the target assembly's manifest metadata and no signature will be generated. Specifying both parameters is not generally useful, and can result in an invalid signature.  
   
  For more information on `ITypeLib`, please see its existing documentation in the MSDN library.  
   
@@ -284,5 +284,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ConvertTypeLibToAssembly">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a COM type library to an assembly.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

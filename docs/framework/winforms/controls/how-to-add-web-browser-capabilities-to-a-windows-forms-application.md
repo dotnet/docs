@@ -10,7 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "WebBrowser control [Windows Forms], adding Web browser capabilities to your application"
   - "WebBrowser control [Windows Forms], examples"

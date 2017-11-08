@@ -10,11 +10,12 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "ITypedList interface"
   - "BindingList(Of T) class"
-  - "data binding, implementing"
+  - "data binding [Windows Forms], implementing"
   - "IBindingList interface"
 ms.assetid: 834cc15c-50bc-4a8b-a610-313d6a217357
 caps.latest.revision: 6

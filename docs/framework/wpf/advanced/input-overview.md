@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "commands [WPF]"
   - "input [WPF], overview"
@@ -22,7 +25,7 @@ helpviewer_keywords:
   - "stylus input [WPF]"
   - "text input [WPF]"
   - "input events [WPF], handling"
-  - "WPF, input overview"
+  - "WPF [WPF], input overview"
   - "manipulation events [WPF]"
   - "mouse input [WPF]"
   - "mouse capture [WPF]"

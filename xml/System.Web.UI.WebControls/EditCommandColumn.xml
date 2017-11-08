@@ -41,12 +41,17 @@
 ## Examples  
  The following code example demonstrates how to add an <xref:System.Web.UI.WebControls.EditCommandColumn> object to a <xref:System.Web.UI.WebControls.DataGrid> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[DataGridEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridEdit/CS/datagrideditcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataGridEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridEdit/VB/datagrideditvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataGridEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridEdit/CS/datagrideditcs.aspx#1)]
+ [!code-aspx-vb[DataGridEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridEdit/VB/datagrideditvb.aspx#1)]  
   
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+    <altmember cref="P:System.Web.UI.WebControls.DataGrid.EditItemIndex" />
+    <altmember cref="E:System.Web.UI.WebControls.DataGrid.EditCommand" />
+    <altmember cref="E:System.Web.UI.WebControls.DataGrid.UpdateCommand" />
+    <altmember cref="E:System.Web.UI.WebControls.DataGrid.CancelCommand" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -112,8 +117,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.EditCommandColumn.ButtonType%2A> property to display the `Edit` command buttons as push buttons.  
   
- <!-- TODO: review snippet reference [!code-csharp[DataGridEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridEdit/CS/datagrideditcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataGridEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridEdit/VB/datagrideditvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataGridEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridEdit/CS/datagrideditcs.aspx#1)]
+ [!code-aspx-vb[DataGridEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridEdit/VB/datagrideditvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -161,11 +166,13 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.EditCommandColumn.CancelText%2A> property to provide custom text for the `Cancel` command button.  
   
- <!-- TODO: review snippet reference [!code-csharp[DataGridEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridEdit/CS/datagrideditcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataGridEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridEdit/VB/datagrideditvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataGridEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridEdit/CS/datagrideditcs.aspx#1)]
+ [!code-aspx-vb[DataGridEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridEdit/VB/datagrideditvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.EditCommandColumn.EditText" />
+        <altmember cref="P:System.Web.UI.WebControls.EditCommandColumn.UpdateText" />
       </Docs>
     </Member>
     <Member MemberName="CausesValidation">
@@ -203,6 +210,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Page.Validate" />
+        <altmember cref="P:System.Web.UI.WebControls.EditCommandColumn.ValidationGroup" />
       </Docs>
     </Member>
     <Member MemberName="EditText">
@@ -246,11 +255,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.EditCommandColumn.EditText%2A> property to provide custom text for the `Edit` button.  
   
- <!-- TODO: review snippet reference [!code-csharp[DataGridEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridEdit/CS/datagrideditcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataGridEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridEdit/VB/datagrideditvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataGridEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridEdit/CS/datagrideditcs.aspx#1)]
+ [!code-aspx-vb[DataGridEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridEdit/VB/datagrideditvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.EditCommandColumn.CancelText" />
+        <altmember cref="P:System.Web.UI.WebControls.EditCommandColumn.UpdateText" />
       </Docs>
     </Member>
     <Member MemberName="InitializeCell">
@@ -319,11 +330,13 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.EditCommandColumn.UpdateText%2A> property to provide custom text for the `Update` command button.  
   
- <!-- TODO: review snippet reference [!code-csharp[DataGridEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridEdit/CS/datagrideditcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataGridEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridEdit/VB/datagrideditvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataGridEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridEdit/CS/datagrideditcs.aspx#1)]
+ [!code-aspx-vb[DataGridEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridEdit/VB/datagrideditvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.EditCommandColumn.CancelText" />
+        <altmember cref="P:System.Web.UI.WebControls.EditCommandColumn.EditText" />
       </Docs>
     </Member>
     <Member MemberName="ValidationGroup">
@@ -358,6 +371,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.EditCommandColumn.CausesValidation" />
+        <altmember cref="T:System.Web.UI.WebControls.RequiredFieldValidator" />
       </Docs>
     </Member>
   </Members>

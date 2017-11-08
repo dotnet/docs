@@ -20,7 +20,7 @@ The topics in this section pertain to concepts and procedures that extend beyond
   
  Follow these steps to find additional examples of [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] code and applications:  
   
--   Search the MSDN Library for specific issues.  
+-   Search Microsoft Docs for specific issues.  
   
 -   Participate in the [LINQ Forum](http://go.microsoft.com/fwlink/?LinkId=76488), where you can discuss more complex topics in detail with experts.  
   

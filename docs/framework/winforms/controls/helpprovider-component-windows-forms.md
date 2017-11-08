@@ -9,11 +9,9 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "forms, Help"
-  - "Help, displaying on Windows Forms"
+  - "forms [Windows Forms], Help"
+  - "Help [Windows Forms], displaying on Windows Forms"
   - "HelpProvider component [Windows Forms]"
 ms.assetid: a09a6e0b-79d8-457f-bb36-86fad2beeada
 caps.latest.revision: 17

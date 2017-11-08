@@ -10,12 +10,14 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "background colors, Windows Forms Panel controls"
-  - "background images, Windows Forms Panel controls"
+  - "background colors [Windows Forms], Windows Forms Panel controls"
+  - "background images [Windows Forms], Windows Forms Panel controls"
   - "Panel control [Windows Forms], background"
-  - "colors, Windows Forms Panel controls"
+  - "colors [Windows Forms], Windows Forms Panel controls"
 ms.assetid: 096cbd8d-45cc-47b8-b1ef-a27f60ea8be0
 caps.latest.revision: 13
 author: dotnet-bot

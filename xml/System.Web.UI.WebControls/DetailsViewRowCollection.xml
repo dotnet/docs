@@ -40,11 +40,22 @@
 ## Examples  
  The following code example demonstrates how to iterate through the <xref:System.Web.UI.WebControls.DetailsViewRow> objects in the <xref:System.Web.UI.WebControls.DetailsView.Rows%2A> collection of a <xref:System.Web.UI.WebControls.DetailsView> control. The value of each row is then displayed on the page.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewRowCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewRowCollection/CS/detailsviewrowcollectioncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewRowCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewRowCollection/VB/detailsviewrowcollectionvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewRowCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewRowCollection/CS/detailsviewrowcollectioncs.aspx#1)]
+ [!code-aspx-vb[DetailsViewRowCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewRowCollection/VB/detailsviewrowcollectionvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+    <altmember cref="T:System.Web.UI.WebControls.DetailsViewRow" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsView.Rows" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsView.HeaderRow" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsView.FooterRow" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsView.TopPagerRow" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsView.BottomPagerRow" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsViewRowCollection.Count" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsViewRowCollection.Item(System.Int32)" />
+    <altmember cref="M:System.Web.UI.WebControls.DetailsViewRowCollection.CopyTo(System.Web.UI.WebControls.DetailsViewRow[],System.Int32)" />
+    <altmember cref="M:System.Web.UI.WebControls.DetailsViewRowCollection.GetEnumerator" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -70,6 +81,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewRow" />
+        <altmember cref="T:System.Collections.ArrayList" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.Rows" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -106,11 +121,16 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsViewRowCollection.CopyTo%2A> method to copy the items in a <xref:System.Web.UI.WebControls.DetailsViewRowCollection> object to an array. The array is then iterated through and the value of each row is displayed on the page.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewRowCollectionCopyTo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewRowCollectionCopyTo/CS/detailsviewrowcollectioncopytocs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewRowCollectionCopyTo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewRowCollectionCopyTo/VB/detailsviewrowcollectioncopytovb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewRowCollectionCopyTo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewRowCollectionCopyTo/CS/detailsviewrowcollectioncopytocs.aspx#1)]
+ [!code-aspx-vb[DetailsViewRowCollectionCopyTo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewRowCollectionCopyTo/VB/detailsviewrowcollectioncopytovb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewRow" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.Rows" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewRowCollection.Item(System.Int32)" />
+        <altmember cref="M:System.Web.UI.WebControls.DetailsViewRowCollection.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -139,11 +159,15 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsViewRowCollection.Count%2A> property to determine whether a <xref:System.Web.UI.WebControls.DetailsViewRowCollection> object contains any items before iterating through the collection.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewRowCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewRowCollection/CS/detailsviewrowcollectioncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewRowCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewRowCollection/VB/detailsviewrowcollectionvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewRowCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewRowCollection/CS/detailsviewrowcollectioncs.aspx#1)]
+ [!code-aspx-vb[DetailsViewRowCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewRowCollection/VB/detailsviewrowcollectionvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewRow" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.Rows" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewRowCollection.Item(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -176,11 +200,20 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsViewRowCollection.GetEnumerator%2A> method to retrieve an enumerator that contains the items from the collection. The enumerator is then iterated through and the value of each row is displayed on the page.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewRowCollectionGetEnumerator#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewRowCollectionGetEnumerator/CS/detailsviewrowcollectiongetenumeratorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewRowCollectionGetEnumerator#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewRowCollectionGetEnumerator/VB/detailsviewrowcollectiongetenumeratorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewRowCollectionGetEnumerator#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewRowCollectionGetEnumerator/CS/detailsviewrowcollectiongetenumeratorcs.aspx#1)]
+ [!code-aspx-vb[DetailsViewRowCollectionGetEnumerator#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewRowCollectionGetEnumerator/VB/detailsviewrowcollectiongetenumeratorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewRow" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.Rows" />
+        <altmember cref="T:System.Collections.IEnumerator" />
+        <altmember cref="P:System.Collections.IEnumerator.Current" />
+        <altmember cref="M:System.Collections.IEnumerator.MoveNext" />
+        <altmember cref="M:System.Collections.IEnumerator.Reset" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewRowCollection.Item(System.Int32)" />
+        <altmember cref="M:System.Web.UI.WebControls.DetailsViewRowCollection.CopyTo(System.Web.UI.WebControls.DetailsViewRow[],System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -209,6 +242,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewRow" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.Rows" />
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -239,6 +275,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewRow" />
+        <altmember cref="P:System.Collections.ICollection.IsSynchronized" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.Rows" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -271,11 +311,16 @@
 ## Examples  
  The following code example demonstrates how to use the indexer to retrieve a <xref:System.Web.UI.WebControls.DetailsViewRow> object from the collection at a specific index.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewRowCollectionIndexer#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewRowCollectionIndexer/CS/detailsviewrowcollectionindexercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewRowCollectionIndexer#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewRowCollectionIndexer/VB/detailsviewrowcollectionindexervb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewRowCollectionIndexer#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewRowCollectionIndexer/CS/detailsviewrowcollectionindexercs.aspx#1)]
+ [!code-aspx-vb[DetailsViewRowCollectionIndexer#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewRowCollectionIndexer/VB/detailsviewrowcollectionindexervb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewRow" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.Rows" />
+        <altmember cref="M:System.Web.UI.WebControls.DetailsViewRowCollection.CopyTo(System.Web.UI.WebControls.DetailsViewRow[],System.Int32)" />
+        <altmember cref="M:System.Web.UI.WebControls.DetailsViewRowCollection.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -303,6 +348,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewRow" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.Rows" />
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="P:System.Collections.ICollection.SyncRoot" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -336,6 +386,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewRow" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.Rows" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewRowCollection.Item(System.Int32)" />
+        <altmember cref="M:System.Web.UI.WebControls.DetailsViewRowCollection.GetEnumerator" />
       </Docs>
     </Member>
   </Members>

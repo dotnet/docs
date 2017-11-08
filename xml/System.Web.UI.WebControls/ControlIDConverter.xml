@@ -30,11 +30,14 @@
   
  The following code example demonstrates how the `DebugInfoControl` can be used in a Web Form along with an <xref:System.Web.UI.WebControls.AccessDataSource> control to display information about the <xref:System.Web.UI.WebControls.AccessDataSource> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ControlIdConverter_1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ControlIdConverter_1/CS/debuginfocs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ControlIdConverter_1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ControlIdConverter_1/VB/debuginfovb.aspx#2)]  -->  
+ [!code-aspx-csharp[System.Web.UI.ControlIdConverter_1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ControlIdConverter_1/CS/debuginfocs.aspx#2)]
+ [!code-aspx-vb[System.Web.UI.ControlIdConverter_1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ControlIdConverter_1/VB/debuginfovb.aspx#2)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.TypeConverter" />
+    <altmember cref="T:System.Web.UI.WebControls.AssociatedControlConverter" />
+    <altmember cref="T:System.Web.UI.WebControls.ValidatedControlConverter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -114,6 +117,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
+        <altmember cref="M:System.Web.UI.WebControls.ControlIDConverter.FilterControl(System.Web.UI.Control)" />
       </Docs>
     </Member>
     <Member MemberName="GetStandardValuesExclusive">
@@ -149,6 +154,8 @@
   
  Use the <paramref name="context" /> parameter to extract additional information about the environment from which this converter is invoked. This parameter can be <see langword="null" />, and properties on the context object can return <see langword="null" />.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.ControlIDConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)" />
+        <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
       </Docs>
     </Member>
     <Member MemberName="GetStandardValuesSupported">
@@ -175,6 +182,9 @@
         <block subset="none" type="overrides">
           <para>Override this method if the type you want to convert supports standard values.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.ControlIDConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)" />
+        <altmember cref="M:System.Web.UI.WebControls.ControlIDConverter.GetStandardValuesExclusive(System.ComponentModel.ITypeDescriptorContext)" />
+        <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
       </Docs>
     </Member>
   </Members>

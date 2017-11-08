@@ -10,10 +10,11 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "Bezier splines"
-  - "splines, Bezier"
+  - "splines [Windows Forms], Bezier"
   - "GDI+, Bezier splines"
 ms.assetid: 5774ce1e-87d4-4bc7-88c4-4862052781b8
 caps.latest.revision: 16

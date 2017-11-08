@@ -11,6 +11,10 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Serialization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Interfaces />
   <Attributes>
     <Attribute>
@@ -18,7 +22,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides the methods needed to construct a serialization surrogate that extends the <see cref="T:System.Runtime.Serialization.DataContractSerializer" />. A serialization surrogate is used during serialization and deserialization to substitute one type for another.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -36,6 +40,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -44,10 +52,10 @@
         <Parameter Name="targetType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <param name="targetType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The deserialized object to be substituted.</param>
+        <param name="targetType">The <see cref="T:System.Type" /> that the substituted object should be assigned to.</param>
+        <summary>During deserialization, returns an object that is a substitute for the specified object.</summary>
+        <returns>The substituted deserialized object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,6 +73,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -73,10 +85,10 @@
         <Parameter Name="targetType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <param name="targetType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The object to substitute.</param>
+        <param name="targetType">The <see cref="T:System.Type" /> that the substituted object should be assigned to.</param>
+        <summary>During serialization, returns an object that substitutes the specified object.</summary>
+        <returns>The substituted object that will be serialized.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,6 +106,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
@@ -101,9 +117,9 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="type">The type to substitute.</param>
+        <summary>During serialization, deserialization, and schema import and export, returns a data contract type that substitutes the specified type.</summary>
+        <returns>The <see cref="T:System.Type" /> to substitute for the <paramref name="type" /> value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

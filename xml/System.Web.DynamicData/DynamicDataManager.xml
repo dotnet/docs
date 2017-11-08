@@ -83,8 +83,8 @@
 ## Examples  
  The following example shows how to use a <xref:System.Web.DynamicData.DynamicDataManager> control to enable dynamic behavior for an instance of the <xref:System.Web.UI.WebControls.GridView?displayProperty=nameWithType> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.DynamicData.DynamicDataManager#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.DynamicDataManager/cs/List.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.DynamicData.DynamicDataManager#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.DynamicDataManager/vb/List.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.DynamicData.DynamicDataManager#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.DynamicDataManager/cs/List.aspx#1)]
+ [!code-aspx-vb[System.Web.DynamicData.DynamicDataManager#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.DynamicDataManager/vb/List.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -202,6 +202,7 @@
         <summary>Gets the algorithm that is used to generate the value in the <see cref="P:System.Web.UI.Control.ClientID" /> property.</summary>
         <value>A value that indicates how the <see cref="P:System.Web.UI.Control.ClientID" /> property is generated. This property cannot be set.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.Control.ClientIDMode" />
       </Docs>
     </Member>
     <Member MemberName="DataControls">
@@ -332,8 +333,8 @@
 ## Examples  
  The following example shows how to register a <xref:System.Web.UI.WebControls.GridView?displayProperty=nameWithType> control in the `Page_Init` method of an ASP.NET Web page.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.DynamicData.DynamicDataManager#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.DynamicDataManager/cs/List.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.DynamicData.DynamicDataManager#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.DynamicDataManager/vb/List.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.DynamicData.DynamicDataManager#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.DynamicDataManager/cs/List.aspx#1)]
+ [!code-aspx-vb[System.Web.DynamicData.DynamicDataManager#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.DynamicDataManager/vb/List.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -407,5 +408,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RegisterControl">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Registers a <see cref="T:System.Web.DynamicData.DynamicDataManager" /> control.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -27,6 +27,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IO.Packaging.PackageRelationshipSelectorType" />
+    <altmember cref="T:System.IO.Packaging.PackageRelationship" />
+    <altmember cref="T:System.IO.Packaging.PackagePart" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -59,6 +62,9 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="selectorType" /> parameter is not valid.</exception>
         <exception cref="T:System.Xml.XmlException">The <paramref name="selectorType" /> parameter is <see cref="F:System.IO.Packaging.PackageRelationshipSelectorType.Id" /> but <paramref name="selectionCriteria" /> is not a valid [!INCLUDE[TLA#tla_xsd](~/includes/tlasharptla-xsd-md.md)] [!INCLUDE[TLA#tla_id](~/includes/tlasharptla-id-md.md)].</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="sourceUri" /> is not the <see cref="T:System.IO.Packaging.Package" /> root ("/") and is also not a valid <see cref="T:System.IO.Packaging.PackagePart" /> [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)].</exception>
+        <altmember cref="M:System.IO.Packaging.PackUriHelper.CreatePartUri(System.Uri)" />
+        <altmember cref="P:System.IO.Packaging.PackageRelationshipSelector.SelectionCriteria" />
+        <altmember cref="P:System.IO.Packaging.PackageRelationshipSelector.SelectorType" />
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -109,6 +115,8 @@
         <summary>Gets the selection criteria specified to the <see cref="M:System.IO.Packaging.PackageRelationshipSelector.#ctor(System.Uri,System.IO.Packaging.PackageRelationshipSelectorType,System.String)" /> constructor.</summary>
         <value>The selection criteria based on the <see cref="P:System.IO.Packaging.PackageRelationshipSelector.SelectorType" /> of <see cref="F:System.IO.Packaging.PackageRelationshipSelectorType.Id" /> or <see cref="F:System.IO.Packaging.PackageRelationshipSelectorType.Type" /> specified to the <see cref="M:System.IO.Packaging.PackageRelationshipSelector.#ctor(System.Uri,System.IO.Packaging.PackageRelationshipSelectorType,System.String)" /> constructor.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.IO.Packaging.PackageRelationshipSelector.SelectorType" />
+        <altmember cref="P:System.IO.Packaging.PackageRelationshipSelector.SourceUri" />
       </Docs>
     </Member>
     <Member MemberName="SelectorType">
@@ -132,6 +140,8 @@
         <summary>Gets the <see cref="T:System.IO.Packaging.PackageRelationshipSelectorType" /> specified to the <see cref="M:System.IO.Packaging.PackageRelationshipSelector.#ctor(System.Uri,System.IO.Packaging.PackageRelationshipSelectorType,System.String)" /> constructor.</summary>
         <value>The selector type of <see cref="F:System.IO.Packaging.PackageRelationshipSelectorType.Id" /> or <see cref="F:System.IO.Packaging.PackageRelationshipSelectorType.Type" /> specified to the <see cref="M:System.IO.Packaging.PackageRelationshipSelector.#ctor(System.Uri,System.IO.Packaging.PackageRelationshipSelectorType,System.String)" /> constructor.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.IO.Packaging.PackageRelationshipSelector.SelectionCriteria" />
+        <altmember cref="P:System.IO.Packaging.PackageRelationshipSelector.SourceUri" />
       </Docs>
     </Member>
     <Member MemberName="SourceUri">
@@ -155,6 +165,9 @@
         <summary>Gets the root package URI ("/") or part <see cref="P:System.IO.Packaging.PackagePart.Uri" /> specified to the <see cref="M:System.IO.Packaging.PackageRelationshipSelector.#ctor(System.Uri,System.IO.Packaging.PackageRelationshipSelectorType,System.String)" /> constructor as the owner of the relationship.</summary>
         <value>The root package URI ("/") or part <see cref="P:System.IO.Packaging.PackagePart.Uri" /> specified to the <see cref="M:System.IO.Packaging.PackageRelationshipSelector.#ctor(System.Uri,System.IO.Packaging.PackageRelationshipSelectorType,System.String)" /> constructor as the owner of the relationship.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.IO.Packaging.PackUriHelper.CreatePartUri(System.Uri)" />
+        <altmember cref="P:System.IO.Packaging.PackageRelationshipSelector.SelectionCriteria" />
+        <altmember cref="P:System.IO.Packaging.PackageRelationshipSelector.SelectorType" />
       </Docs>
     </Member>
   </Members>

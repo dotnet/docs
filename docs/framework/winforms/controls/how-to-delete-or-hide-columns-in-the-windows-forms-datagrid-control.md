@@ -10,11 +10,12 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "data grids, deleting columns"
+  - "data grids [Windows Forms], deleting columns"
   - "DataGrid control [Windows Forms], deleting columns"
-  - "data grids, hiding columns"
+  - "data grids [Windows Forms], hiding columns"
   - "columns [Windows Forms], hiding"
   - "columns [Windows Forms], deleting in data grids"
   - "DataGrid control [Windows Forms], hiding columns"

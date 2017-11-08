@@ -12,11 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime/developmentMode"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#developmentMode"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "developmentMode element"
   - "container tags, <developmentMode> element"

@@ -20,14 +20,14 @@ This topic provides links to the [!INCLUDE[vbprvb](../../../../../../includes/vb
   
 ## In This Section  
  [!INCLUDE[vbprvb](../../../../../../includes/vbprvb-md.md)] version of the SampleQueries solution  
- [Sample Queries (Visual Basic)](http://msdn.microsoft.com/en-us/c9de4619-45fb-4655-be8f-763ee4ed8abe)  
+ [Sample Queries (Visual Basic)](~/docs/visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
   
  C# version of the SampleQueries solution  
  [LINQ C# Samples Solution](http://msdn.microsoft.com/en-us/23852e6b-b9a9-4a06-aedb-b27a5930ed74)  
   
  Follow these steps to find additional examples of [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] code and applications:  
   
--   Search the MSDN Library for specific issues.  
+-   Search for specific issues on Microsoft Docs.  
   
 -   Participate in the [LINQ Forum](http://go.microsoft.com/fwlink/?LinkId=76488), where you can discuss more complex topics in detail with experts.  
   

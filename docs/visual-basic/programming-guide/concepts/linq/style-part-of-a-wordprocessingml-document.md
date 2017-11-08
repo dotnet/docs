@@ -1,7 +1,7 @@
 ---
 title: "Style Part of a WordprocessingML Document2"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 ms.assetid: 292cc094-9483-4192-ac3b-a5dc51fbac12
 caps.latest.revision: 3
 author: dotnet-bot

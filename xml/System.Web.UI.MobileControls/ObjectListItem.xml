@@ -29,6 +29,8 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
+    <altmember cref="T:System.Web.UI.MobileControls.ObjectListItemCollection" />
   </Docs>
   <Members>
     <Member MemberName="Equals">
@@ -52,6 +54,7 @@
         <returns>
           <see langword="true" /> if the specified <see langword="Object" /> is equal to the current <see langword="Object" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -71,6 +74,7 @@
         <summary>Returns the hash code for the current instance. This API is obsolete.  For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <returns>The hash code for the current instance.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.MobileListItem.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -93,6 +97,8 @@
         <summary>Gets or sets the specified field by index or name. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <value>The value of the field with the specified <paramref name="index" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListItemCollection" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -122,6 +128,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListItemCollection" />
       </Docs>
     </Member>
     <Member MemberName="OnBubbleEvent">
@@ -147,7 +155,19 @@
         <returns>
           <see langword="true" /> if the event is passed up the control hierarchy; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.MobileListItem.OnBubbleEvent(System.Object,System.EventArgs)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets the specified field by index or name. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListItemCollection" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

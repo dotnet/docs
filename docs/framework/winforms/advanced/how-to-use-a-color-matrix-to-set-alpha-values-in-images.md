@@ -10,11 +10,12 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "images [Windows Forms], using color matrices for semi-transparent"
-  - "transparency, color matrices"
-  - "matrices, alpha values"
+  - "transparency [Windows Forms], color matrices"
+  - "matrices [Windows Forms], alpha values"
   - "bitmaps [Windows Forms], using color matrices for semi-transparent"
 ms.assetid: a27121e6-f7e9-4c09-84e2-f05aa9d2a1bb
 caps.latest.revision: 13

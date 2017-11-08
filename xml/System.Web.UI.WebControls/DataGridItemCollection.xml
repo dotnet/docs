@@ -35,11 +35,17 @@
 ## Examples  
  The following code example shows how to iterate through <xref:System.Web.UI.WebControls.DataGridItem> objects in a <xref:System.Web.UI.WebControls.DataGridItemCollection> collection.  
   
- <!-- TODO: review snippet reference [!code-csharp[DataGridColumnVisible#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridColumnVisible/CS/datagridcolumnvisiblecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataGridColumnVisible#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridColumnVisible/VB/datagridcolumnvisiblevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataGridColumnVisible#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridColumnVisible/CS/datagridcolumnvisiblecs.aspx#1)]
+ [!code-aspx-vb[DataGridColumnVisible#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridColumnVisible/VB/datagridcolumnvisiblevb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DataGridItem" />
+    <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+    <altmember cref="P:System.Web.UI.WebControls.DataGrid.Items" />
+    <altmember cref="M:System.Web.UI.WebControls.DataGridItemCollection.CopyTo(System.Array,System.Int32)" />
+    <altmember cref="M:System.Web.UI.WebControls.DataGridItemCollection.GetEnumerator" />
+    <altmember cref="P:System.Web.UI.WebControls.DataGridItemCollection.Count" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -65,6 +71,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ArrayList" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -98,6 +105,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Array" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -123,6 +131,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataGridItem" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -158,6 +167,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEnumerator" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGridItem" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -212,6 +223,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.ICollection.IsSynchronized" />
+        <altmember cref="T:System.Collections.ICollection" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -241,6 +254,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataGridItem" />
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -268,6 +282,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Object" />
+        <altmember cref="P:System.Collections.ICollection.SyncRoot" />
+        <altmember cref="T:System.Collections.ICollection" />
       </Docs>
     </Member>
   </Members>

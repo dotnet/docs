@@ -36,13 +36,13 @@
 ## Examples  
  The following code example demonstrates how to programmatically add a <xref:System.Web.UI.WebControls.DetailsViewCommandEventHandler> delegate to the <xref:System.Web.UI.WebControls.DetailsView.ItemCommand> event of a <xref:System.Web.UI.WebControls.DetailsView> control. This example uses the single-file coding model.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewCommandEventHandlerCodeInline#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewCommandEventHandlerCodeInline/CS/DetailsViewCommandEventHandlerInlinecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewCommandEventHandlerCodeInline#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewCommandEventHandlerCodeInline/VB/DetailsViewCommandEventHandlerInlinevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewCommandEventHandlerCodeInline#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewCommandEventHandlerCodeInline/CS/DetailsViewCommandEventHandlerInlinecs.aspx#1)]
+ [!code-aspx-vb[DetailsViewCommandEventHandlerCodeInline#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewCommandEventHandlerCodeInline/VB/DetailsViewCommandEventHandlerInlinevb.aspx#1)]  
   
  The following code example shows a code-behind coding model version of the previous example. For this example to work, you must copy the code below into the associated code-behind file.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewCommandEventHandlerCodeBehind#1](~/samples/snippets/csharp/VS_Snippets_WebNet/detailsviewcommandeventhandlercodebehind/CS/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewCommandEventHandlerCodeBehind#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/detailsviewcommandeventhandlercodebehind/VB/DefaultVB.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewCommandEventHandlerCodeBehind#1](~/samples/snippets/csharp/VS_Snippets_WebNet/detailsviewcommandeventhandlercodebehind/CS/Default.aspx#1)]
+ [!code-aspx-vb[DetailsViewCommandEventHandlerCodeBehind#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/detailsviewcommandeventhandlercodebehind/VB/DefaultVB.aspx#1)]  
   
  The following code example shows the code-behind file for the previous example.  
   
@@ -51,10 +51,17 @@
   
  The following code example demonstrates how to declaratively add a <xref:System.Web.UI.WebControls.DetailsViewCommandEventHandler> delegate to the <xref:System.Web.UI.WebControls.DetailsView.ItemCommand> event of a <xref:System.Web.UI.WebControls.DetailsView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewItemCommand#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewItemCommand/CS/detailsviewitemcommandcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewItemCommand#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewItemCommand/VB/detailsviewitemcommandvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewItemCommand#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewItemCommand/CS/detailsviewitemcommandcs.aspx#1)]
+ [!code-aspx-vb[DetailsViewItemCommand#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewItemCommand/VB/detailsviewitemcommandvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+    <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemCommand" />
+    <altmember cref="M:System.Web.UI.WebControls.DetailsView.OnItemCommand(System.Web.UI.WebControls.DetailsViewCommandEventArgs)" />
+    <altmember cref="T:System.Web.UI.WebControls.DetailsViewCommandEventArgs" />
+    <altmember cref="T:System.Web.UI.WebControls.ButtonField" />
+    <altmember cref="T:System.Web.UI.WebControls.TemplateField" />
+    <altmember cref="T:System.Web.UI.WebControls.CommandEventArgs" />
   </Docs>
 </Type>

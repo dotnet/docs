@@ -9,11 +9,9 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "ActiveX controls [Windows Forms]"
-  - "COM interop, Windows Forms"
+  - "COM interop [Windows Forms], Windows Forms"
   - "COM [Windows Forms]"
   - "Windows Forms, unmanaged"
   - "Windows Forms, interop"

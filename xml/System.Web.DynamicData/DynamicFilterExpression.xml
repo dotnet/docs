@@ -46,6 +46,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.DynamicData.QueryableFilterRepeater" />
+    <altmember cref="T:System.Web.DynamicData.DynamicFilter" />
+    <altmember cref="T:System.Web.UI.WebControls.QueryExtender" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -100,6 +103,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.DynamicData.DynamicFilter" />
+        <altmember cref="T:System.Web.UI.WebControls.QueryExtender" />
       </Docs>
     </Member>
     <Member MemberName="GetQueryable">

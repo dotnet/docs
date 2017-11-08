@@ -47,12 +47,18 @@
   
  The following aspx source shows an example of a property value set using an application setting expression.  
   
- <!-- TODO: review snippet reference [!code-csharp[ControlsUsingExpressions#2](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlsUsingExpressions/CS/controlsusingexpressionscs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[ControlsUsingExpressions#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlsUsingExpressions/VB/controlsusingexpressionsvb.aspx#2)]  -->
+ [!code-aspx-csharp[ControlsUsingExpressions#2](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlsUsingExpressions/CS/controlsusingexpressionscs.aspx#2)]
+ [!code-aspx-vb[ControlsUsingExpressions#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlsUsingExpressions/VB/controlsusingexpressionsvb.aspx#2)]
  [!code-xml[ControlsUsingExpressions#2](~/samples/snippets/common/VS_Snippets_WebNet/ControlsUsingExpressions/Common/controlsusingexpressions.xml#2)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Configuration.Configuration.AppSettings" />
+    <altmember cref="T:System.Web.Compilation.AppSettingsExpressionBuilder" />
+    <altmember cref="T:System.Web.UI.Design.ExpressionEditorSheet" />
+    <altmember cref="T:System.Web.Compilation.ExpressionBuilder" />
+    <altmember cref="P:System.Web.UI.Design.HtmlControlDesigner.Expressions" />
+    <altmember cref="T:System.Web.Compilation.ExpressionEditorAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -75,6 +81,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Configuration.Configuration.AppSettings" />
+        <altmember cref="T:System.Web.Compilation.AppSettingsExpressionBuilder" />
+        <altmember cref="T:System.Web.UI.Design.ExpressionEditorSheet" />
+        <altmember cref="T:System.Web.Compilation.ExpressionBuilder" />
+        <altmember cref="P:System.Web.UI.Design.HtmlControlDesigner.Expressions" />
+        <altmember cref="T:System.Web.Compilation.ExpressionEditorAttribute" />
       </Docs>
     </Member>
     <Member MemberName="EvaluateExpression">
@@ -114,6 +126,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Configuration.Configuration.AppSettings" />
+        <altmember cref="T:System.Web.Compilation.AppSettingsExpressionBuilder" />
+        <altmember cref="T:System.Web.UI.Design.ExpressionEditorSheet" />
+        <altmember cref="T:System.Web.Compilation.ExpressionBuilder" />
+        <altmember cref="P:System.Web.UI.Design.HtmlControlDesigner.Expressions" />
+        <altmember cref="T:System.Web.Compilation.ExpressionEditorAttribute" />
       </Docs>
     </Member>
     <Member MemberName="GetExpressionEditorSheet">
@@ -145,6 +163,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Configuration.Configuration.AppSettings" />
+        <altmember cref="T:System.Web.Compilation.AppSettingsExpressionBuilder" />
+        <altmember cref="T:System.Web.UI.Design.ExpressionEditorSheet" />
+        <altmember cref="T:System.Web.Compilation.ExpressionBuilder" />
+        <altmember cref="P:System.Web.UI.Design.HtmlControlDesigner.Expressions" />
+        <altmember cref="T:System.Web.Compilation.ExpressionEditorAttribute" />
       </Docs>
     </Member>
   </Members>

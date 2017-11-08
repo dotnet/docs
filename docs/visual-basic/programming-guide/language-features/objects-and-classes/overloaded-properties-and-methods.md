@@ -1,45 +1,27 @@
 ---
 title: "Overloaded Properties and Methods (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "properties [Visual Basic], overloading"
   - "methods [Visual Basic], overloading"
   - "shadowing"
-  - "names, multiple procedures with same"
-  - "procedures, mulltiples with same name"
+  - "names [Visual Basic], multiple procedures with same"
+  - "procedures [Visual Basic], mulltiples with same name"
   - "classes [Visual Basic], properties"
   - "classes [Visual Basic], methods"
   - "method overloading"
-  - "Overloads keyword, overloaded members"
+  - "Overloads keyword [Visual Basic], overloaded members"
 ms.assetid: b686fb97-e7d7-4001-afaa-6650cba08f0d
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Overloaded Properties and Methods (Visual Basic)
 Overloading is the creation of more than one procedure, instance constructor, or property in a class with the same name but different argument types.  

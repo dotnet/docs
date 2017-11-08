@@ -1,48 +1,28 @@
 ---
 title: "MustOverride (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.MustOverride"
   - "MustOverride"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
-  - "virtual elements, pure"
-  - "elements, pure virtual"
+  - "virtual elements [Visual Basic], pure"
+  - "elements [Visual Basic], pure virtual"
   - "properties [Visual Basic], redefining"
-  - "procedures, overriding"
+  - "procedures [Visual Basic], overriding"
   - "overriding, MustOverride keyword"
-  - "procedures, redefining"
-  - "pure virtual elements"
-  - "MustOverride keyword"
+  - "procedures [Visual Basic], redefining"
+  - "pure virtual elements [Visual Basic]"
+  - "MustOverride keyword [Visual Basic]"
   - "properties [Visual Basic], overriding"
 ms.assetid: 6e9d9ad6-bb64-433f-b32b-3ef84293bf96
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # MustOverride (Visual Basic)
 Specifies that a property or procedure is not implemented in this class and must be overridden in a derived class before it can be used.  

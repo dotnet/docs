@@ -101,14 +101,15 @@
   
 -   A Dynamic Data Web site or a Dynamic Data Web application. This enables you to create the `AdventureWorksLTDataContext` data context for the database and to create the classes for the tables to access. For more information, see `Walkthrough: Creating a New Dynamic Data Web Site using Scaffolding`.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.DynamicData.DynamicFilter#1](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.dynamicdata.dynamicfilter/cs/dynamicfilter.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.DynamicData.DynamicFilter#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.dynamicdata.dynamicfilter/vb/dynamicfilter.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.DynamicData.DynamicFilter#1](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.dynamicdata.dynamicfilter/cs/dynamicfilter.aspx#1)]
+ [!code-aspx-vb[System.Web.DynamicData.DynamicFilter#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.dynamicdata.dynamicfilter/vb/dynamicfilter.aspx#1)]  
   
  [!code-csharp[System.Web.DynamicData.DynamicFilter#2](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.dynamicdata.dynamicfilter/cs/dynamicfilter.aspx.cs#2)]
  [!code-vb[System.Web.DynamicData.DynamicFilter#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.dynamicdata.dynamicfilter/vb/dynamicfilter.aspx.vb#2)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.DynamicData.QueryableFilterRepeater" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

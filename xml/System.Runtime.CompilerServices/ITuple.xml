@@ -6,10 +6,23 @@
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines a general-purpose Tuple implementation that allows acccess to Tuple instance members without knowing the underlying Tuple type.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You use the `ITuple` interface to access individual elements of a Tuple instance without knowing beforehand the number of elements in the Tuple. You determine the number of items in the Tuple by retrieving the value of the <xref:System.Runtime.CompilerServices.ITuple.Length%2A> property. You can then enumerate its elements by passing an index that ranges from zero to one less than value of the <xref:System.Runtime.CompilerServices.ITuple.Length%2A> property to the <xref:System.Runtime.CompilerServices.ITuple.Item%2A> property.  
+  
+ `ITuple` is an explicit interface implementation of the `Tuple` classes and the `ValueTuple` structures. You must cast the `Tuple` object to an `ITuple` interface object before you can access its properties.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Item">
@@ -21,6 +34,10 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -28,9 +45,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The index of the specified <see langword="Tuple" /> element. <c>index</c> can range from 0 for <see langword="Item1" /> of the <see langword="Tuple" /> to one less than the number of elements in the <see langword="Tuple" />.</param>
+        <summary>Returns the value of the specified <see langword="Tuple" /> element.</summary>
+        <value>The value of the specified <see langword="Tuple" /> element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,13 +60,18 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of elements in this <see langword="Tuple" /> instance.</summary>
+        <value>The number of elements in this <see langword="Tuple" /> instance.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Runtime.CompilerServices.ITuple.Item(System.Int32)" />
       </Docs>
     </Member>
   </Members>

@@ -29,8 +29,8 @@
 ## Examples  
  The following code example allows a user to search for profiles using the <xref:System.Web.Profile.SqlProfileProvider.FindProfilesByUserName%2A> and <xref:System.Web.Profile.SqlProfileProvider.FindInactiveProfilesByUserName%2A> methods. The user can pass the <xref:System.Web.Profile.ProfileInfoCollection> returned by the `find` methods to the <xref:System.Web.Profile.SqlProfileProvider.DeleteProfiles%2A> method to delete the associated profiles from the data source.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Profile.SqlProfileProvider#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.SqlProfileProvider/CS/DeleteInactiveProfilescs.aspx#4)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Profile.SqlProfileProvider#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.SqlProfileProvider/VB/DeleteInactiveProfilesvb.aspx#4)]  -->  
+ [!code-aspx-csharp[System.Web.Profile.SqlProfileProvider#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.SqlProfileProvider/CS/DeleteInactiveProfilescs.aspx#4)]
+ [!code-aspx-vb[System.Web.Profile.SqlProfileProvider#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.SqlProfileProvider/VB/DeleteInactiveProfilesvb.aspx#4)]  
   
  ]]></format>
     </remarks>
@@ -346,5 +346,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CopyTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies the <see cref="T:System.Web.Profile.ProfileInfoCollection" /> to a one-dimensional array.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

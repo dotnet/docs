@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "vb"
 helpviewer_keywords: 
-  - "COM interop, Windows Forms"
+  - "COM interop [Windows Forms], Windows Forms"
   - "COM [Windows Forms]"
   - "Windows Forms, unmanaged"
   - "ActiveX controls [Windows Forms], COM interop"

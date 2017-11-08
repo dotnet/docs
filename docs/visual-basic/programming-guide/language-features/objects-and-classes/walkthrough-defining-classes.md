@@ -1,48 +1,30 @@
 ---
 title: "Defining Classes (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
-  - "execution, ending"
+  - "execution [Visual Basic], ending"
   - "objects [Visual Basic], initializing"
-  - "Initialize event"
-  - "files, closing"
-  - "programs, quitting"
+  - "Initialize event [Visual Basic]"
+  - "files [Visual Basic], closing"
+  - "programs [Visual Basic], quitting"
   - "code, exiting"
   - "objects [Visual Basic], creating"
   - "program termination"
   - "classes [Visual Basic], walkthroughs"
   - "class modules, walkthroughs"
-  - "Terminate event"
-  - "execution, stopping"
+  - "Terminate event [Visual Basic]"
+  - "execution [Visual Basic], stopping"
 ms.assetid: 07018828-2d49-4cf5-a44b-19fb15d9efea
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Walkthrough: Defining Classes (Visual Basic)
 This walkthrough demonstrates how to define classes, which you can then use to create objects. It also shows you how to add properties and methods to the new class, and demonstrates how to initialize an object.  

@@ -575,5 +575,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TryGetObjectStateEntry">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Tries to return an <see cref="T:System.Data.Objects.ObjectStateEntry" /> object for a specific object or relationship entry.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetObjectStateEntry">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an <see cref="T:System.Data.Objects.ObjectStateEntry" /> for a specific object or relationship entry.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

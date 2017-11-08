@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostTask::SetPriority"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostTask::SetPriority method [.NET Framework hosting]"
   - "SetPriority method [.NET Framework hosting]"

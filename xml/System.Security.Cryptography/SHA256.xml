@@ -110,7 +110,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates an instance of the default implementation of <see cref="T:System.Security.Cryptography.SHA256" />. When this behavior is not overriden, the default implementation is <see cref="T:System.Security.Cryptography.SHA256Managed" /></summary>
+        <summary>Creates an instance of the default implementation of <see cref="T:System.Security.Cryptography.SHA256" />. When this behavior is not overriden, the default implementation is <see cref="T:System.Security.Cryptography.SHA256Managed" />.</summary>
         <returns>A new instance of <see cref="T:System.Security.Cryptography.SHA256" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Reflection.TargetInvocationException">The algorithm was used with Federal Information Processing Standards (FIPS) mode enabled, but is not FIPS compatible.</exception>
@@ -158,6 +158,17 @@
       </AssemblyInfo>
       <Docs>
         <summary>Allows specific implementations of this abstract class to be instantiated.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Out of the box, the valid implementations names, and their associated implementations, are the following : 
+ * SHA256, SHA-256 or System.Security.Cryptography.SHA256 : implementation is <see cref="T:System.Security.Cryptography.SHA256Managed" />   
+ * System.Security.Cryptography.SHA256Cng : implementation is <see cref="T:System.Security.Cryptography.SHA256Cng" />   
+ * System.Security.Cryptography.SHA256CryptoServiceProvider - implementation is <see cref="T:System.Security.Cryptography.SHA256CryptoServiceProvider" />   
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </MemberGroup>
   </Members>

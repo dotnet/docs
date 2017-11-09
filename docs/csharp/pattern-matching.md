@@ -244,8 +244,6 @@ The third rule introduces uses where a `var` case may be useful. Imagine
 that you are doing a pattern match where the input is a string and you are
 searching for known command values. You might write something like:
 
-[!code-csharp[VarCaseExpression](../../samples/csharp/PatternMatching/Program.cs#VarCaseExpression "use a var case expression to filter white space")]
-
 The `var` case matches `null`, the empty string, or any string that contains
 only whitespace. Notice that the preceding code uses the `?.` operator to
 ensure that it does not accidentally throw a <xref:System.NullReferenceException>. The `default` case handles any other string values that are not understood by this command parser.

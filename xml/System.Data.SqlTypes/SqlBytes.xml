@@ -474,8 +474,7 @@
         <summary>Converts a <see cref="T:System.Data.SqlTypes.SqlBinary" /> structure to a <see cref="T:System.Data.SqlTypes.SqlBytes" /> structure.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBytes" /> structure.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <see cref="M:System.Data.SqlTypes.SqlBytes.#ctor(System.Data.SqlTypes.SqlBinary)" />
->]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBytes.%23ctor(System.Data.SqlTypes.SqlBinary)?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>

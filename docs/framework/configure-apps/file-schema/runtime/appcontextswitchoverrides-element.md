@@ -23,63 +23,63 @@ manager: "wpickett"
 ---
 # &lt;AppContextSwitchOverrides&gt; Element
 
-Defines one or more switches used by the <xref:System.AppContext> class to provide an opt-out mechanism for new functionality.
-
- \<configuration>
- \<runtime>
-\<AppContextSwitchOverrides>
-
-## Syntax
-
-```xml
-<AppContextSwitchOverrides value="name1=value1[[;name2=value2];...]" />
-```
-
-## Attributes and Elements
-
- The following sections describe attributes, child elements, and parent elements.
-
-### Attributes
-
-|Attribute|Description|
-|---------------|-----------------|
-|`value`|Required attribute.<br /><br /> Defines one or more switch names and their associated Boolean values.|
-
-### value Attribute
-
-|Value|Description|
-|-----------|-----------------|
-|"name=value"|A predefined switch name along with its value (`true` or `false`). Multiple switch name/value pairs are separated by semicolons (";"). For a list of predefined switch names supported by the .NET Framework, see the Remarks section.|
-
-### Child Elements
-
- None.
-
-### Parent Elements
-
-|Element|Description|
-|-------------|-----------------|
-|`configuration`|The root element in every configuration file used by the common language runtime and .NET Framework applications.|
-|`runtime`|Contains information about runtime initialization options.|
-
-## Remarks
-
- Starting with the .NET Framework 4.6, the `<AppContextSwitchOverrides>` element in a configuration file allows callers of an API to determine whether their app can take advantage of new functionality or preserve compatibility with previous versions of a library. For example, if the behavior of an API has changed between two versions of a library, the `<AppContextSwitchOverrides>` element allows callers of that API to opt out of the new behavior on versions of the library that support the new functionality. For apps that call APIs in the .NET Framework, the `<AppContextSwitchOverrides>` element can also allow callers whose apps target an earlier version of the .NET Framework to opt into new functionality if their app is running on a version of the .NET Framework that includes that functionality.
-
- The `value` attribute of the `<AppContextSwitchOverrides>` element consists of a single string that consists of one or more semicolon-delimited name/value pairs.  Each name identifies a compatibility switch, and its corresponding value is a Boolean (`true` or `false`) that indicates whether the switch is set. By default, the switch is `false`, and libraries  provide the new functionality. They only provide the previous functionality if the switch is set (that is, its value is `true`). This allows libraries to provide new behavior for an existing API while allowing callers who depend on the previous behavior to opt out of the new functionality.
-
- The .NET Framework supports the following switches:
+Defines one or more switches used by the <xref:System.AppContext> class to provide an opt-out mechanism for new functionality.  
+ 
+ \<configuration>  
+ \<runtime>  
+\<AppContextSwitchOverrides>  
   
-|Switch name|Description|Introduced|
-|-----------------|-----------------|----------------|
+## Syntax  
+  
+```xml  
+<AppContextSwitchOverrides value="name1=value1[[;name2=value2];...]" />  
+```  
+  
+## Attributes and Elements  
+  
+ The following sections describe attributes, child elements, and parent elements.  
+  
+### Attributes  
+  
+|Attribute|Description|  
+|---------------|-----------------|  
+|`value`|Required attribute.<br /><br /> Defines one or more switch names and their associated Boolean values.|  
+  
+### value Attribute  
+  
+|Value|Description|  
+|-----------|-----------------|  
+|"name=value"|A predefined switch name along with its value (`true` or `false`). Multiple switch name/value pairs are separated by semicolons (";"). For a list of predefined switch names supported by the .NET Framework, see the Remarks section.|  
+  
+### Child Elements  
+  
+ None.  
+  
+### Parent Elements  
+  
+|Element|Description|  
+|-------------|-----------------|  
+|`configuration`|The root element in every configuration file used by the common language runtime and .NET Framework applications.|  
+|`runtime`|Contains information about runtime initialization options.|  
+  
+## Remarks  
+  
+ Starting with the .NET Framework 4.6, the `<AppContextSwitchOverrides>` element in a configuration file allows callers of an API to determine whether their app can take advantage of new functionality or preserve compatibility with previous versions of a library. For example, if the behavior of an API has changed between two versions of a library, the `<AppContextSwitchOverrides>` element allows callers of that API to opt out of the new behavior on versions of the library that support the new functionality. For apps that call APIs in the .NET Framework, the `<AppContextSwitchOverrides>` element can also allow callers whose apps target an earlier version of the .NET Framework to opt into new functionality if their app is running on a version of the .NET Framework that includes that functionality.  
+  
+ The `value` attribute of the `<AppContextSwitchOverrides>` element consists of a single string that consists of one or more semicolon-delimited name/value pairs.  Each name identifies a compatibility switch, and its corresponding value is a Boolean (`true` or `false`) that indicates whether the switch is set. By default, the switch is `false`, and libraries  provide the new functionality. They only provide the previous functionality if the switch is set (that is, its value is `true`). This allows libraries to provide new behavior for an existing API while allowing callers who depend on the previous behavior to opt out of the new functionality.  
+  
+ The .NET Framework supports the following switches:  
+  
+|Switch name|Description|Introduced|  
+|-----------------|-----------------|----------------|  
 |`Switch.MS.Internal.`<br/>`DoNotApplyLayoutRoundingToMarginsAndBorderThickness`|Controls whether Windows Presentation Foundation uses legacy a algorithm for control layout. For more information, see [Mitigation: WPF Layout](~/docs/framework/migration-guide/mitigation-wpf-layout.md).|.NET Framework 4.6|
 |`Switch.System.Activities.`<br/>`UseMD5CryptoServiceProviderForWFDebugger`|When set to `false`, allows debugging of XAML-based workflow projects with Visual Studio when FIPS is enabled. Without it, a <xref:System.NullReferenceException> is thrown in calls to methods in the System.Activities assembly.|.NET Framework 4.7|
-|`Switch.System.Drawing.`<br/>`DontSupportPngFramesInIcons`|Controls whether the <xref:System.Drawing.Icon.ToBitmap%2A?displayProperty=nameWithType> method throws an exception when an <xref:System.Drawing.Icon> object has PNG frames. For more information, see [Mitigation: PNG Frames in Icon Objects](~/docs/framework/migration-guide/mitigation-png-frames-in-icon-objects.md).|.NET Framework 4.6|
-|`Switch.System.Globalization.NoAsyncCurrentCulture`|Controls whether asynchronous operations do not flow from the calling thread's context. For more information, see [CurrentCulture and CurrentUICulture flow across tasks](~/docs/framework/migration-guide/retargeting/4.5.2-4.6.md#currentculture-and-currentuiculture-flow-across-tasks).|.NET Framework 4.6|
-|`Switch.System.IdentityModel.`<br/>`DisableMultipleDNSEntriesInSANCertificate`|Controls whether the <xref:System.IdentityModel.Claims.X509CertificateClaimSet.FindClaims%2A?displayProperty=nameWithType> method attempts to match the claim type only with the last DNS entry. For more information, see [Mitigation: X509CertificateClaimSet.FindClaims Method](~/docs/framework/migration-guide/mitigation-x509certificateclaimset-findclaims-method.md).|.NET Framework 4.6.1|
-|`Switch.System.IO.BlockLongPaths`|Controls whether paths longer than `MAX_PATH` (260 characters) throw a <xref:System.IO.PathTooLongException>. For more information, see [Long Path Support](~/docs/framework/migration-guide/retargeting/4.6.1-4.6.2.md#long-path-support).|.NET Framework 4.6.2|
-|`Switch.System.IO.Compression.ZipFile.`<br/>`UseBackslash`|Uses the backslash ("\\") rather than the forward slash ("/") as the path separator in the <xref:System.IO.Compression.ZipArchiveEntry.FullName%2A?displayProperty=nameWithType> property. For more information, see  [Mitigation: ZipArchiveEntry.FullName Path Separator](~/docs/framework/migration-guide/mitigation-ziparchiveentry-fullname-path-separator.md).|.NET Framework 4.6.1|
-|`Switch.System.IO.`<br/>`UseLegacyPathHandling`|Controls whether legacy path normalization is used and URI paths are supported by the <xref:System.IO.Path.GetDirectoryName%2A?displayProperty=nameWithType> and <xref:System.IO.Path.GetPathRoot%2A?displayProperty=nameWithType> methods. For more information, see [Mitigation: Path Normalization](~/docs/framework/migration-guide/mitigation-path-normalization.md) and [Mitigation: Path Colon Checks](~/docs/framework/migration-guide/mitigation-path-colon-checks.md).|.NET Framework 4.6.2|
+|`Switch.System.Drawing.`<br/>`DontSupportPngFramesInIcons`|Controls whether the <xref:System.Drawing.Icon.ToBitmap%2A?displayProperty=nameWithType> method throws an exception when an <xref:System.Drawing.Icon> object has PNG frames. For more information, see [Mitigation: PNG Frames in Icon Objects](~/docs/framework/migration-guide/mitigation-png-frames-in-icon-objects.md).|.NET Framework 4.6|  
+|`Switch.System.Globalization.NoAsyncCurrentCulture`|Controls whether asynchronous operations do not flow from the calling thread's context. For more information, see [CurrentCulture and CurrentUICulture flow across tasks](~/docs/framework/migration-guide/retargeting/4.5.2-4.6.md#currentculture-and-currentuiculture-flow-across-tasks).|.NET Framework 4.6|  
+|`Switch.System.IdentityModel.`<br/>`DisableMultipleDNSEntriesInSANCertificate`|Controls whether the <xref:System.IdentityModel.Claims.X509CertificateClaimSet.FindClaims%2A?displayProperty=nameWithType> method attempts to match the claim type only with the last DNS entry. For more information, see [Mitigation: X509CertificateClaimSet.FindClaims Method](~/docs/framework/migration-guide/mitigation-x509certificateclaimset-findclaims-method.md).|.NET Framework 4.6.1|  
+|`Switch.System.IO.BlockLongPaths`|Controls whether paths longer than `MAX_PATH` (260 characters) throw a <xref:System.IO.PathTooLongException>. For more information, see [Long Path Support](~/docs/framework/migration-guide/retargeting/4.6.1-4.6.2.md#long-path-support).|.NET Framework 4.6.2|  
+|`Switch.System.IO.Compression.ZipFile.`<br/>`UseBackslash`|Uses the backslash ("\\") rather than the forward slash ("/") as the path separator in the <xref:System.IO.Compression.ZipArchiveEntry.FullName%2A?displayProperty=nameWithType> property. For more information, see  [Mitigation: ZipArchiveEntry.FullName Path Separator](~/docs/framework/migration-guide/mitigation-ziparchiveentry-fullname-path-separator.md).|.NET Framework 4.6.1|  
+|`Switch.System.IO.`<br/>`UseLegacyPathHandling`|Controls whether legacy path normalization is used and URI paths are supported by the <xref:System.IO.Path.GetDirectoryName%2A?displayProperty=nameWithType> and <xref:System.IO.Path.GetPathRoot%2A?displayProperty=nameWithType> methods. For more information, see [Mitigation: Path Normalization](~/docs/framework/migration-guide/mitigation-path-normalization.md) and [Mitigation: Path Colon Checks](~/docs/framework/migration-guide/mitigation-path-colon-checks.md).|.NET Framework 4.6.2|  
 |`Switch.System.`<br/>`MemberDescriptorEqualsReturnsFalseIfEquivalent`|Controls whether a test for equality compares the <xref:System.ComponentModel.MemberDescriptor.Category%2A?displayProperty=nameWithType> property of one object with the <xref:System.ComponentModel.MemberDescriptor.Description%2A?displayProperty=nameWithType> property of the second object. For more information, see [Incorrect implementation of MemberDescriptor.Equals](~/docs/framework/migration-guide/retargeting/4.6.1-4.6.2.md#incorrect-implementation-of-memberdescriptorequals).|.NET Framework 4.6.2|  
  `Switch.System.Net.`<br/>`DontCheckCertificateEKUs`|Disables certificate enhanced key usage (EKU) object identifier (OID) validation. An enhanced key usage (EKU) extension is a collection of object identifiers (OIDs) that indicate the applications that use the key.|.NET Framework 4.6|
 |`Switch.System.Net.`<br/>`DontEnableSchSendAuxRecord`|Disables TLS1.0 Browser Exploit Against SSL/TLS (BEAST) mitigation by disabling the use of SCH_SEND_AUX_RECORD.|.NET Framework 4.6|
@@ -127,6 +127,6 @@ Defines one or more switches used by the <xref:System.AppContext> class to provi
 ```  
   
 ## See Also  
- <xref:System.AppContext>
+ <xref:System.AppContext>  
  [\<runtime> Element](runtime-element.md)   
- [\<configuration> Element](../configuration-element.md)
+ [\<configuration> Element](../configuration-element.md)  

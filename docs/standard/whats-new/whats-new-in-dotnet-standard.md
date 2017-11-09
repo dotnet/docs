@@ -37,7 +37,7 @@ The .NET Standard 2.0 includes the following new features:
 
 Through version 1.6, the .NET Standard included a comparatively small subset of APIs. Among those excluded were many APIs that were commonly used in the .NET Framework or Xamarin. This complicates development, since it requires that developers find suitable replacements for familiar APIs when they develop applications and libraries that target multiple .NET implementations. The .NET Standard 2.0 addresses this limitation by adding over 20,000 more APIs than were available in .NET Standard 1.6, the previous version of the standard. For a list of the APIs that have been added to the .NET Standard 2.0, see [.NET Standard 2.0 vs 1.6](https://raw.githubusercontent.com/dotnet/standard/master/docs/versions/netstandard2.0_diff.md). 
 
-Some of the more additions to the <xref:System> namespace in .NET Standard 2.0 include:
+Some of the additions to the <xref:System> namespace in .NET Standard 2.0 include:
 
 - Support for the <xref:System.AppDomain> class.
 - Better support for working with arrays from additional members in the <xref:System.Array> class.

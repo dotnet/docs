@@ -105,6 +105,7 @@ The following values returned by this function are defined in the **WbemCli.h** 
 
 This function wraps a call to the [IWbemServices::CreateClassEnum](https://msdn.microsoft.com/library/aa392095(v=vs.85).aspx) method.
 
+If the function call fails, you can obtain additional error information by calling the [GetErrorInfo](geterrorinfo.md) function.
 
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

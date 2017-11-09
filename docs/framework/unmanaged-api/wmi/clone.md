@@ -32,7 +32,8 @@ Returns a new object that is a complete clone of the current object.
 HRESULT Clone (
    [in] int                  vFunc, 
    [in] IWbemClassObject*    ptr, 
-   [out] IWbemClassObject**  ppCopy); 
+   [out] IWbemClassObject**  ppCopy
+); 
 ```  
 
 ## Parameters
@@ -53,7 +54,7 @@ The following values returned by this function are defined in the **WbemCli.h** 
 |Constant  |Value  |Description  |
 |---------|---------|---------|
 | `WBEM_E_FAILED` | 0x80041001 | There has been a general failure. |
-| `WBEM_E_INVALID_PARAMETER` | 0x80041008 | `lEnnumFlags` is non-zero and is not one of the specified flags. |
+| `WBEM_E_INVALID_PARAMETER` | 0x80041008 | `null` was specified as a parameter, and it is not legal in this usage. |
 | `WBEM_E_OUT_OF_MEMORY` | 0x80041006 | Not enough memory is available to clone the object. |
 | `WBEM_S_NO_ERROR` | 0 | The function call was successful.  |
   

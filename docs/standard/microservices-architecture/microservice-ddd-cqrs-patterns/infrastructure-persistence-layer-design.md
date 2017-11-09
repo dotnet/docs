@@ -4,7 +4,7 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/26/2017
+ms.date: 11/08/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.topic: article
@@ -121,6 +121,48 @@ We find repositories useful, but we acknowledge that they are not critical for y
 
 -   **Implementing the Repository and Unit of Work Patterns in an ASP.NET MVC Application**
     [*https://www.asp.net/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application*](https://www.asp.net/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application)
+
+
+<br>
+<br>
+<br>
+
+## The Specification pattern
+
+The Specification pattern (its full name would be Query-specification pattern) is a Domain-Driven Design pattern designed as the place where you can put the definition of a query with optional sorting and paging logic.
+
+The Specification pattern defines a query in an object. For example, in order to encapsulate a paged query that searches for some products you can create a PagedProduct specification which takes the necessary input paramaters (pageNumber, pageSize, filter, etc.). Then, within any Repository method (usually a List() overload) it would accept an ISpecification and run the expected query based on that specification.
+
+There are several benefits to this approach.
+-	The specification has a name (as opposed to just a bunch of LINQ expressions) that you can discuss about.
+-	 The specification can be unit tested in isolation to ensure it is right. IT can also easily be reused if you need similar behavior (say on an MVC View action and a Web API action, as well as in various services).
+-	A specification can also be used to describe the shape of the data to be returned, so that queries can return just the data they required. This eliminates the need for lazy loading in web applications (which is usually not a good idea) and helps keep repository implementations from becoming cluttered with these details.
+An example of a generic Specification interface is the following.
+
+An example of a generic Specification interface is the following code from [eShopOnWeb](https://github.com/dotnet-architecture/eShopOnWeb ). 
+```csharp
+// https://github.com/dotnet-architecture/eShopOnWeb 
+public interface ISpecification<T>
+{
+    Expression<Func<T, bool>> Criteria { get; }
+    List<Expression<Func<T, object>>> Includes { get; }
+    List<string> IncludeStrings { get; }
+}
+```
+
+In the upcoming sections it is explained how to implement the Specification pattern with Entity Framework Core 2.0 and how to use it from any Repository class.
+
+**Important note:** The specification pattern is an old pattern that can be implemented in many different ways, as in the additional resources below. As a pattern/idea, older approaches are good to know, but beaware of older implementations that are not taking advantage of modern language capabilities like Linq and expressions.
+
+#### Additional resources
+
+-   **The Specification pattern.**
+    [*http://deviq.com/specification-pattern/*](http://deviq.com/specification-pattern/)
+
+-   **Evans, Eric (2004). Domain Driven Design. Addison-Wesley. p. 224.**
+
+-   **Specifications. Martin Fowler**
+    [*https://www.martinfowler.com/apsupp/spec.pdf/*](https://www.martinfowler.com/apsupp/spec.pdf)
 
 
 >[!div class="step-by-step"]

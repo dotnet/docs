@@ -4,7 +4,7 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/26/2017
+ms.date: 11/09/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.topic: article
@@ -41,7 +41,7 @@ From a DDD point of view, an important capability of EF is the ability to use PO
 
 Per DDD patterns, you should encapsulate domain behavior and rules within the entity class itself, so it can control invariants, validations, and rules when accessing any collection. Therefore, it is not a good practice in DDD to allow public access to collections of child entities or value objects. Instead, you want to expose methods that control how and when your fields and property collections can be updated, and what behavior and actions should occur when that happens.
 
-In EF Core 1.1, to satisfy those DDD requirements you can have plain fields in your entities instead of properties with public and private setters. If you do not want an entity field to be externally accessible, you can just create the attribute or field instead of a property. There is no need to use private setters if you prefer this cleaner approach.
+Since EF Core 1.1, to satisfy those DDD requirements you can have plain fields in your entities instead of public properties. If you do not want an entity field to be externally accessible, you can just create the attribute or field instead of a property. You can also use private property setters.
 
 In a similar way, you can now have read-only access to collections by using a public property typed as IEnumerable&lt;T&gt;, which is backed by a private field member for the collection (like a List&lt;&gt;) in your entity that relies on EF for persistence. Previous versions of Entity Framework required collection properties to support ICollection&lt;T&gt;, which meant that any developer using the parent entity class could add or remove items from its property collections. That possibility would be against the recommended patterns in DDD.
 
@@ -53,8 +53,8 @@ public class Order : Entity
     // Using private fields, allowed since EF Core 1.1
     private DateTime _orderDate;
     // Other fields ...
-    private readonly List<OrderItem> _orderItems;
 
+    private readonly List<OrderItem> _orderItems;
     public IEnumerable<OrderItem> OrderItems => _orderItems.AsReadOnly();
 
     protected Order() { }

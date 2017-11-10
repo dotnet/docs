@@ -41,7 +41,7 @@
     <typeparam name="TOutput">The type the input object is to be converted to.</typeparam>
     <param name="input">The object to convert.</param>
     <summary>Represents a method that converts an object from one type to another type.</summary>
-    <returns>The <paramref name="TOutput" /> that represents the converted <paramref name="TInput" />.</returns>
+    <returns>The <typeparamref name="TOutput" /> that represents the converted <typeparamref name="TInput" />.</returns>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

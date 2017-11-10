@@ -4,7 +4,7 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/26/2017
+ms.date: 11/09/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.topic: article
@@ -99,7 +99,11 @@ A marker interface is sometimes considered as an anti-pattern; however, it is al
 
 Having an aggregate root means that most of the code related to consistency and business rules of the aggregate’s entities should be implemented as methods in the Order aggregate root class (for example, AddOrderItem when adding an OrderItem object to the aggregate). You should not create or update OrderItems objects independently or directly; the AggregateRoot class must keep control and consistency of any update operation against its child entities.
 
-Note that many attributes are read-only or private and only updatable by the class methods, so any update takes into account business domain invariants and logic specified within the class methods (logic).
+## Encapsulating data in the Domain Entities
+
+A common problem in entity models is that they expose collection navigation properties as publicly accessible list types. This allows any collaborator developer to manipulate the contents of these collection types, which may bypass important business rules related to the collection, possibly leaving the object in an invalid state. The solution to this is to expose read-only access to related collections, and explicitly provide methods defining ways in which clients can manipulate them.
+
+In the previous code, note that many attributes are read-only or private and only updatable by the class methods, so any update takes into account business domain invariants and logic specified within the class methods (logic).
 
 For example, following DDD patterns, you should *not* do the following from any command handler method or application layer class:
 

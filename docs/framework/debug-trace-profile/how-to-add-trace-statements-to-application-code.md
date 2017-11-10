@@ -76,13 +76,13 @@ The methods used most often for tracing are the methods for writing output to li
 1.  Call the <xref:System.Diagnostics.Trace.Assert%2A> method.  
   
     ```vb  
-    Dim I As Integer = 4  
-    Trace.Assert(I = 5, "I is not equal to 5.")  
+    Dim i As Integer = 4  
+    Trace.Assert(i = 5, "i is not equal to 5.")  
     ```  
   
     ```csharp  
-    int I = 4;  
-    System.Diagnostics.Trace.Assert(I == 5, "I is not equal to 5.");  
+    int i = 4;  
+    System.Diagnostics.Trace.Assert(i == 5, "i is not equal to 5.");  
     ```  
   
     > [!NOTE]

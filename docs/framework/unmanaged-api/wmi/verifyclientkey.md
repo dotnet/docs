@@ -1,44 +1,42 @@
 ---
-title: GetErrorInfo function
+title: VerifyClientKey function
 ms.date: "11/06/2017"
 ms.prod: ".net-framework"
 ms.technology: 
   - "dotnet-clr"
 ms.topic: "reference"
 api_name: 
-  - "GetErrorInfo"
+  - "VerifyClientKey"
 api_location: 
   - "WMINet_Utils.dll"
 api_type: 
   - "DLLExport"
 f1_keywords: 
-  - "GetErrorInfo"
+  - "VerifyClientKey"
 helpviewer_keywords: 
-  - "GetErrorInfo function [.NET WMI and performance counters]"
+  - "VerifyClientKey function [.NET WMI and performance counters]"
 topic_type: 
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
 ---
-# GetErrorInfo function
-Retrieves error information from the previous function call.  
+# VerifyClientKey function
+Ensures that the client key has the correct security.  
   
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
   
 ## Syntax  
   
 ```  
-IErrorInfo* GetErrorInfo(); 
+LONG VerifyClientKey(); 
 ```  
 
 ## Return value
 
-An pointer to an [IErrorInfo](https://msdn.microsoft.com/library/windows/desktop/ms221233(v=vs.85).aspx) object if the function call succeeds, or `null` if it fails.
-  
-## Remarks
+If the function succeeds, the return value is `ERROR_SUCCESS` (0).
 
-This function wraps a call to the [IComThreadingInfo::GetErrorInfo](https://msdn.microsoft.com/library/windows/desktop/ms683752(v=vs.85).aspx) method.
+If the function fails, the return value is a non-zero error code defined in **Winerror.h**.
 
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

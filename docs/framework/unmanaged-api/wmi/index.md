@@ -40,19 +40,28 @@ The API includes the following functions:
 | [GetMethodQualifierSet function](getmethodqualifierset.md) | Retrieves the qualifier set for a particular method. |
 | [GetNames function](getnames.md) | Retrieves either a subset or all of the names of the properties of an object. |
 | [GetObjectText function](getobjecttext.md) | Returns a textual rendering of an object in the MOF syntax. | 
+| [GetPropertyHandle function](getpropertyhandle.md) | Returns a unique handle that identifies a property. |
 | [GetPropertyOrigin function](getpropertyorigin.md) | Determines the class in which a property is declared. |
 | [GetPropertyQualifierSet function](getpropertyqualifierset.md) | Retrieves the qualifier set for a particular property.  |
 | [GetQualifierSet function](getqualifierset.md) | Retrieves the qualifier set for a class instance or a class definition. |
 | [InheritsFrom function](inheritsfrom.md) | Determines whether the current class or instance derives from a specified parent class. |
+| [Initialize function](initialize.md) | Performs WMI initialization. |
 | [Next function](next.md) | Retrieves the next property in an enumeration. | 
 | [NextMethod function](nextmethod.md) | Retrieves the next method in an enumeration. |
 | [Put function](put.md) | Sets a named property to a new value. |
 | [PutClassWmi function](putclasswmi.md) | Creates a new class or updates an existing one. |
 | [PutInstanceWmi function](putinstancewmi.md) | Creates or updates an instance of an existing class. The instance is written to the WMI repository. |
 | [PutMethod function](putmethod.md) | Creates a method. |
+| [QualifierSet_BeginEnumeration](qualifierset-beginenumeration.md) | Resets an enumerator of the qualifiers of an object to the beginning of the enumeration. |
+| [QualifierSet_Delete](qualifierset-delete) | Deletes a specified qualifier by name.  |
+| [QualifierSet_EndEnumeration](qualifierset-endenumeration.md) | Terminates the enumeration begun with a call to the `QualifierSet_BeginEnumeration` function. |
+| [QualifierSet_Get](qualifierset-get.md) | Gets the specified named qualifier.  |
+| [QualifierSet_GetNames](qualifierset-getnames.md) | Retrieves the names of all the qualifiers or of certain qualifiers that are available from the current object or property. |
+| [QualifierSet_Next](qualifierset-next.md) | Retrieves the next qualifier in an enumeration that started with a call to the [QualifierSet_BeginEnumeration](qualifierset-beginenumeration.md) function. |
 | [SpawnDerivedClass function](spawnderivedclass.md) | Creates a newly derived class object from a specified object. | 
 | [SpawnInstance function](spawninstance.md) | Creates a new instance of a class. |   
-
+| [VerifyClient function](verifyclient.md) | Ensures that the client key has the correct security. |
+| [WritePropertyValue function](writepropertyvalue.md) | Writes a specified number of bytes to a property identified by a property handle. |
 
  ## See also
 [Unmanaged API reference](../index.md) 

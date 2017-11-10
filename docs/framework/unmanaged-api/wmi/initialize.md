@@ -1,45 +1,46 @@
 ---
-title: GetErrorInfo function
+title: Initialize function
 ms.date: "11/06/2017"
 ms.prod: ".net-framework"
 ms.technology: 
   - "dotnet-clr"
 ms.topic: "reference"
 api_name: 
-  - "GetErrorInfo"
+  - "Initialize"
 api_location: 
   - "WMINet_Utils.dll"
 api_type: 
   - "DLLExport"
 f1_keywords: 
-  - "GetErrorInfo"
+  - "Initialize"
 helpviewer_keywords: 
-  - "GetErrorInfo function [.NET WMI and performance counters]"
+  - "Initialize function [.NET WMI and performance counters]"
 topic_type: 
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
 ---
-# GetErrorInfo function
-Retrieves error information from the previous function call.  
+# Initialize function
+Performs WMI initialization.  
   
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
   
-## Syntax  
-  
+## Syntax 
 ```  
-IErrorInfo* GetErrorInfo(); 
+HRESULT Initialize(
+   [in] boolean bAllowIManagementObjectQI
+); 
 ```  
+## Parameters
+
+`bAllowIManagementObjectQI`   
+[in] `true` to indicate that calls to QueryInterface on WMI objects are allowed; `false` otherwise.
 
 ## Return value
 
-An pointer to an [IErrorInfo](https://msdn.microsoft.com/library/windows/desktop/ms221233(v=vs.85).aspx) object if the function call succeeds, or `null` if it fails.
+The function always returns `S_OK` (0).
   
-## Remarks
-
-This function wraps a call to the [IComThreadingInfo::GetErrorInfo](https://msdn.microsoft.com/library/windows/desktop/ms683752(v=vs.85).aspx) method.
-
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   

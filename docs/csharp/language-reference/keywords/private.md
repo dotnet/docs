@@ -16,7 +16,11 @@ author: "BillWagner"
 ms.author: "wiwagn"
 ---
 # private (C# Reference)
-The `private` keyword is a member access modifier. Private access is the least permissive access level. Private members are accessible only within the body of the class or the struct in which they are declared, as in this example:  
+The `private` keyword is a member access modifier. 
+   
+ > This page covers `private` access. The `private` keyword is also part of the [`private protected`](./private-protected.md) access modifier.
+  
+Private access is the least permissive access level. Private members are accessible only within the body of the class or the struct in which they are declared, as in this example:  
   
 ```  
 class Employee  
@@ -25,7 +29,7 @@ class Employee
     double d;   // private access by default  
 }  
 ```  
-  
+
  Nested types in the same body can also access those private members.  
   
  It is a compile-time error to reference a private member outside the class or the struct in which it is declared.  

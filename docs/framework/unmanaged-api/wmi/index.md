@@ -22,7 +22,7 @@ The API includes the following functions:
 | [BeginEnumeration function](beginenumeration.md) | Resets the enumerator to the beginning of an enumeration of WMI object properties. |
 | [BeginMethodEnumeration function](beginmethodenumeration.md) |  Begins an enumeration of the methods available for an object. |
 | [Clone function](clone.md) | Returns a new object that is a complete clone of the current object. |
-| [CloneEnumWbemClassObject](cloneenumwbemclassobject.md) | Makes a logical copy of an enumerator, retaining its current position in an enumeration. |
+| [CloneEnumWbemClassObject function](cloneenumwbemclassobject.md) | Makes a logical copy of an enumerator, retaining its current position in an enumeration. |
 | [CompareTo function](compareto.md) | Compares an object to another Windows management object. |
 | [ConnectServerWmi function](connectserverwmi.md) | Creates a connection through DCOM to a WMI namespace on a specified computer. |
 | [CreateClassEnumWmi function](createclassenumwmi.md) | Returns an enumerator for all classes that satisfy the specified selection criteria. |
@@ -30,8 +30,9 @@ The API includes the following functions:
 | [Delete function](delete.md) | Deletes a specified property from a class definition and all of its qualifiers. |
 | [DeleteMethod function](deletemethod.md) | Deletes a specified method from a CIM class definition. |
 | [EndEnumeration function](endenumeration.md) | Terminates an enumeration sequence. | 
-| [EndMethodEnumeration function](endmethodenumeration.md) | Terminates an enumeration sequence started with a call to the  [BeginMethodEnumeration function](beginmethodenumeration.md). | [ExecNotificationQueryWmi function] | Executes a query to receive events. |
-| [ExecQueryWmi function] | Executes a query to retrieve objects. |
+| [EndMethodEnumeration function](endmethodenumeration.md) | Terminates an enumeration sequence started by calling the  [BeginMethodEnumeration function](beginmethodenumeration.md). |
+| [ExecNotificationQueryWmi function](execnotificcationquerywmi.md) | Executes a query to receive events. |
+| [ExecQueryWmi function](execquerywmi.md) | Executes a query to retrieve objects. |
 | [Get function](get.md) | Retrieves a specified property value if it exists. |
 | [GetCurrentApartmentType function](getcurrentapartmenttype.md) | Retrieves the type of apartment in which the caller is executing. |
 | [GetErrorInfo function](geterrorinfo.md) | Retrieves error information from the previous function call. | 
@@ -52,12 +53,15 @@ The API includes the following functions:
 | [PutClassWmi function](putclasswmi.md) | Creates a new class or updates an existing one. |
 | [PutInstanceWmi function](putinstancewmi.md) | Creates or updates an instance of an existing class. The instance is written to the WMI repository. |
 | [PutMethod function](putmethod.md) | Creates a method. |
-| [QualifierSet_BeginEnumeration](qualifierset-beginenumeration.md) | Resets an enumerator of the qualifiers of an object to the beginning of the enumeration. |
-| [QualifierSet_Delete](qualifierset-delete) | Deletes a specified qualifier by name.  |
-| [QualifierSet_EndEnumeration](qualifierset-endenumeration.md) | Terminates the enumeration begun with a call to the `QualifierSet_BeginEnumeration` function. |
-| [QualifierSet_Get](qualifierset-get.md) | Gets the specified named qualifier.  |
-| [QualifierSet_GetNames](qualifierset-getnames.md) | Retrieves the names of all the qualifiers or of certain qualifiers that are available from the current object or property. |
-| [QualifierSet_Next](qualifierset-next.md) | Retrieves the next qualifier in an enumeration that started with a call to the [QualifierSet_BeginEnumeration](qualifierset-beginenumeration.md) function. |
+| [QualifierSet_BeginEnumeration function](qualifierset-beginenumeration.md) | Resets an enumerator of the qualifiers of an object to the beginning of the enumeration. |
+| [QualifierSet_Delete function](qualifierset-delete) | Deletes a specified qualifier by name.  |
+| [QualifierSet_EndEnumeration function](qualifierset-endenumeration.md) | Terminates the enumeration begun with a call to the `QualifierSet_BeginEnumeration` function. |
+| [QualifierSet_Get function](qualifierset-get.md) | Gets the specified named qualifier.  |
+| [QualifierSet_GetNames function](qualifierset-getnames.md) | Retrieves the names of all qualifiers or of specified qualifiers that are available from the current object or property. |
+| [QualifierSet_Next function](qualifierset-next.md) | Retrieves the next qualifier in an enumeration that started with a call to the [QualifierSet_BeginEnumeration](qualifierset-beginenumeration.md) function. |
+| [QualifierSet_Put function](qualifierset-put.md) | Writes the named qualifier and value. |
+| [ResetSecurity function](resetsecurity.md) | Assigns the supplied impersonation token to the current thread. |
+| [SetSecurity function](setsecurity.md) | Retrieves the impersonation token associated with the current thread. |
 | [SpawnDerivedClass function](spawnderivedclass.md) | Creates a newly derived class object from a specified object. | 
 | [SpawnInstance function](spawninstance.md) | Creates a new instance of a class. |   
 | [VerifyClient function](verifyclient.md) | Ensures that the client key has the correct security. |

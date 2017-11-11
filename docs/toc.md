@@ -6,6 +6,7 @@
 ## [Tour of .NET](standard/tour.md)
 ## [.NET Architectural Components](standard/components.md)
 ## [.NET Standard](standard/net-standard.md)
+### [What's new in the .NET Standard](standard/whats-new/whats-new-in-dotnet-standard.md)
 ## [Target Frameworks](standard/frameworks.md)
 ## [.NET Glossary](standard/glossary.md)
 ## [Building documentation with mdoc](standard/mdoc/index.md)

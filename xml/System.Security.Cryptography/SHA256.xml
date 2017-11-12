@@ -37,7 +37,7 @@
   
  The hash size for the <xref:System.Security.Cryptography.SHA256> algorithm is 256 bits.  
   
- This is an abstract class. The .NET Framework provides 3 implementations derived from this class. 
+ This is an abstract class. 
   
 ## Examples  
  The following example calculates the SHA-256 hash for all files in a directory.  
@@ -162,11 +162,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Out of the box, the valid implementations names, and their associated implementations, are the following : 
- * SHA256, SHA-256 or System.Security.Cryptography.SHA256 : implementation is <see cref="T:System.Security.Cryptography.SHA256Managed" />   
- * System.Security.Cryptography.SHA256Cng : implementation is <see cref="T:System.Security.Cryptography.SHA256Cng" />   
- * System.Security.Cryptography.SHA256CryptoServiceProvider - implementation is <see cref="T:System.Security.Cryptography.SHA256CryptoServiceProvider" />   
-  
+The .NET Framework includes the implementations and their associated hashName values:
+| Implementation | hashName |
+|----------|---------|
+| <xref:System.Security.Cryptography.SHA256Managed> | SHA256 </br> SHA-256 <br /> System.Security.Cryptography.SHA256 |
+| <xref:System.Security.Cryptography.SHA256Cng> | System.Security.Cryptography.SHA256Cng |
+| <xref:System.Security.Cryptography.SHA256CryptoServiceProvider> | System.Security.Cryptography.SHA256CryptoServiceProvider |
+
  ]]></format>
         </remarks>
       </Docs>

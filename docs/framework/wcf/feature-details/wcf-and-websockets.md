@@ -1,7 +1,7 @@
 ---
 title: "WCF and WebSockets"
 ms.custom: ""
-ms.date: "03/302017"
+ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""

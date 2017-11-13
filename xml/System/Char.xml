@@ -82,7 +82,7 @@
  [!code-csharp[System.Char.Class#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.char.class/cs/GetUnicodeCategory3.cs#6)]
  [!code-vb[System.Char.Class#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.char.class/vb/GetUnicodeCategory3.vb#6)]  
   
- Internally, for characters outside the ASCII range (U+0000 through U+00FF), the <xref:System.Char.GetUnicodeCategory%2A> method depends on Unicode categories reported by the <xref:System.Globalization.CharUnicodeInfo> class. Starting with the [!INCLUDE[net_v462](~/includes/net-v462-md.md)], Unicode characters are classified based on [The Unix Standard, Version 8.0.0](http://www.unicode.org/versions/Unicode8.0.0/). In versions of the .NET Framework from the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)] to  the [!INCLUDE[net_v461](~/includes/net-v461-md.md)], they are classified based on [The Unix Standard, Version 6.3.0](http://www.unicode.org/versions/Unicode6.3.0/).  
+ Internally, for characters outside the ASCII range (U+0000 through U+00FF), the <xref:System.Char.GetUnicodeCategory%2A> method depends on Unicode categories reported by the <xref:System.Globalization.CharUnicodeInfo> class. Starting with the [!INCLUDE[net_v462](~/includes/net-v462-md.md)], Unicode characters are classified based on [The Unicode Standard, Version 8.0.0](http://www.unicode.org/versions/Unicode8.0.0/). In versions of the .NET Framework from the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)] to  the [!INCLUDE[net_v461](~/includes/net-v461-md.md)], they are classified based on [The Unicode Standard, Version 6.3.0](http://www.unicode.org/versions/Unicode6.3.0/).  
   
 <a name="Elements"></a>   
 ## Characters and text elements  

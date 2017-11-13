@@ -55,7 +55,7 @@ avoid unnecessary copying. You do not intend to modify the object used
 as that argument. The following code shows an example of a method
 that calculates the distance between two points in 3D space. 
 
-[!code-csharp[InArgument](../../samples/snippets/csharp/reference-semantics/Program.cs#InArgument "Specifying an In argument")]
+[!code-csharp[InArgument](../../samples/csharp/reference-semantics/Program.cs#InArgument "Specifying an In argument")]
 
 The arguments are two structures that each contain three doubles. A double is 8 bytes,
 so each argument is 24 bytes. By specifying the `in` modifier, you pass a
@@ -79,7 +79,7 @@ code shows you two examples of calling the `CalculateDistance` method. The
 first uses two local variables, passed by reference. The second include a
 temporary variable created as part of the method call. 
 
-[!code-csharp[UseInArgument](../../samples/snippets/csharp/reference-semantics/Program.cs#UseInArgument "Specifying an In argument")]
+[!code-csharp[UseInArgument](../../samples/csharp/reference-semantics/Program.cs#UseInArgument "Specifying an In argument")]
 
 There are several ways in which the compiler ensures that the readonly
 nature of an `in` argument is enforced.  First of all, the called method
@@ -93,7 +93,7 @@ can create a temporary for any `in` parameter, you can also specify default
 values for any `in` parameter. The follow code uses that to specify the origin
 as the default value for the second point:
 
-[!code-csharp[InArgumentDefault](../../samples/snippets/csharp/reference-semantics/Program.cs#InArgumentDefault "Specifying defaults for an in parameter")]
+[!code-csharp[InArgumentDefault](../../samples/csharp/reference-semantics/Program.cs#InArgumentDefault "Specifying defaults for an in parameter")]
 
 The `in` parameter designation can also be used with reference types, or built in
 numeric values. However, the benefits inn both cases are minimal if any.
@@ -122,12 +122,12 @@ the caller cannot modify the referenced storage. The following code
 defines a read-only property that returns a `readonly ref` to a `Point3D`
 that specifies the origin.
 
-[!code-csharp[OriginReference](../../samples/snippets/csharp/reference-semantics/Point3D.cs#OriginReference "Creating a readonly Origin reference")]
+[!code-csharp[OriginReference](../../samples/csharp/reference-semantics/Point3D.cs#OriginReference "Creating a readonly Origin reference")]
 
 When you assign a variable to a `ref return`, you can specify either a `ref readonly`
 variable, or a by-value copy of the readonly reference:
 
-[!code-csharp[AssignRefReadonly](../../samples/snippets/csharp/reference-semantics/Program.cs#AssignRefReadonly "Assigning a ref readonly")]
+[!code-csharp[AssignRefReadonly](../../samples/csharp/reference-semantics/Program.cs#AssignRefReadonly "Assigning a ref readonly")]
 
 The first assignment in the preceding code makes a copy of the `Origin` constant, and assigns
 that copy. The second assigns a reference. Notice that the `readonly` modifier
@@ -158,7 +158,7 @@ of a copy of the receiver, passed by value to the member method. This optimizati
 saves more copying when you use a `readonly struct`. The `Point3D` would be a great
 candidate for this change. The following code shows an update `ReadonlyPoint3D` structure:
 
-[!code-csharp[ReadonlyOnlyPoint3D](../../samples/snippets/csharp/reference-semantics/Point3D.cs#ReadonlyOnlyPoint3D "Defining an immutable structure")]
+[!code-csharp[ReadonlyOnlyPoint3D](../../samples/csharp/reference-semantics/Point3D.cs#ReadonlyOnlyPoint3D "Defining an immutable structure")]
 
 ## `ref struct` type
 

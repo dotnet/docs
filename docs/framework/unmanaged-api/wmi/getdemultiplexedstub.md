@@ -51,7 +51,7 @@ HRESULT GetDemultiplexedStub (
 
 If the function succeeds, the return value is `S_OK` (0).
 
-If the function fails, the return value is a non-zero error code. To get extended error information, call the [GetLastError](getlasterror.md) function.
+If the function fails, the return value is a non-zero error code. To get extended error information, call the [GetErrorInfo](geterrorinfo.md) function.
     
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

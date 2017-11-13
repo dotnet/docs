@@ -62,7 +62,7 @@ The following values returned by this function are defined in the **WbemCli.h** 
 
 This function wraps a call to the [IWbemQualifierSet::BeginEnumeration](https://msdn.microsoft.com/library/aa391861(v=vs.85).aspx) method.
 
-To enumerate all of the qualifiers on an object, this method must be called before the first call to [QualifierSet_Next](qualifierset-next). The order in which qualifiers are enumerated is guaranteed to be invariant for a given enumeration.
+To enumerate all of the qualifiers on an object, this method must be called before the first call to [QualifierSet_Next](qualifierset-next.md). The order in which qualifiers are enumerated is guaranteed to be invariant for a given enumeration.
 
 The flags that can be passed as the `lEnumFlags` argument are defined in the **WbemCli.h** header file, or you can define them as constants in your code.   
 

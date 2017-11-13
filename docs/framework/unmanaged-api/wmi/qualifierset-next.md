@@ -75,7 +75,7 @@ The following values returned by this function are defined in the **WbemCli.h** 
 
 This function wraps a call to the [IWbemQualifierSet::Next](https://msdn.microsoft.com/library/aa391870(v=vs.85).aspx) method.
 
-You call the `QualifierSet_Next` function repeatedly to enumerate all the qualifiers until the function return `WBEM_S_NO_MORE_DATA`. To terminate the enumeration early, call the [QualifierSet_EndEnumeration](QualifierSet_EndEnumeration.md) function.
+You call the `QualifierSet_Next` function repeatedly to enumerate all the qualifiers until the function return `WBEM_S_NO_MORE_DATA`. To terminate the enumeration early, call the [QualifierSet_EndEnumeration](qualifierset-endenumeration.md) function.
 
 The order of the qualifiers returned during the enumeration is undefined.
 

@@ -21,6 +21,8 @@ The API includes the following functions:
 |---------|---------|
 | [BeginEnumeration function](beginenumeration.md) | Resets the enumerator to the beginning of an enumeration of WMI object properties. |
 | [BeginMethodEnumeration function](beginmethodenumeration.md) |  Begins an enumeration of the methods available for an object. |
+| [BlessIWbemServices function](blessiwbemservices.md) | Indicates whether the user credentials permit access to a specified IWbemServices class. |
+| [BlessIWbemServicesObject function](blessiwbemservicesobject.md) | Indicates whether the user credentials permit access to a specified IWbem service object. |
 | [Clone function](clone.md) | Returns a new object that is a complete clone of the current object. |
 | [CloneEnumWbemClassObject function](cloneenumwbemclassobject.md) | Makes a logical copy of an enumerator, retaining its current position in an enumeration. |
 | [CompareTo function](compareto.md) | Compares an object to another Windows management object. |
@@ -31,10 +33,11 @@ The API includes the following functions:
 | [DeleteMethod function](deletemethod.md) | Deletes a specified method from a CIM class definition. |
 | [EndEnumeration function](endenumeration.md) | Terminates an enumeration sequence. | 
 | [EndMethodEnumeration function](endmethodenumeration.md) | Terminates an enumeration sequence started by calling the  [BeginMethodEnumeration function](beginmethodenumeration.md). |
-| [ExecNotificationQueryWmi function](execnotificcationquerywmi.md) | Executes a query to receive events. |
+| [ExecNotificationQueryWmi function](execnotificationquerywmi.md) | Executes a query to receive events. |
 | [ExecQueryWmi function](execquerywmi.md) | Executes a query to retrieve objects. |
 | [Get function](get.md) | Retrieves a specified property value if it exists. |
 | [GetCurrentApartmentType function](getcurrentapartmenttype.md) | Retrieves the type of apartment in which the caller is executing. |
+| [GetDemultiplexedStub function](getdemultiplexedstub.md) | Creates an object forwarder sink to assist a client in receiving asynchronous calls from Windows Management. |
 | [GetErrorInfo function](geterrorinfo.md) | Retrieves error information from the previous function call. | 
 | [GetMethod function](getmethod.md) | Retrieves information about the specified method. | 
 | [GetMethodOrigin function](getmethodorigin.md) | Determines the class in which a method is declared. |
@@ -54,7 +57,7 @@ The API includes the following functions:
 | [PutInstanceWmi function](putinstancewmi.md) | Creates or updates an instance of an existing class. The instance is written to the WMI repository. |
 | [PutMethod function](putmethod.md) | Creates a method. |
 | [QualifierSet_BeginEnumeration function](qualifierset-beginenumeration.md) | Resets an enumerator of the qualifiers of an object to the beginning of the enumeration. |
-| [QualifierSet_Delete function](qualifierset-delete) | Deletes a specified qualifier by name.  |
+| [QualifierSet_Delete function](qualifierset-delete.md) | Deletes a specified qualifier by name.  |
 | [QualifierSet_EndEnumeration function](qualifierset-endenumeration.md) | Terminates the enumeration begun with a call to the `QualifierSet_BeginEnumeration` function. |
 | [QualifierSet_Get function](qualifierset-get.md) | Gets the specified named qualifier.  |
 | [QualifierSet_GetNames function](qualifierset-getnames.md) | Retrieves the names of all qualifiers or of specified qualifiers that are available from the current object or property. |
@@ -64,7 +67,7 @@ The API includes the following functions:
 | [SetSecurity function](setsecurity.md) | Retrieves the impersonation token associated with the current thread. |
 | [SpawnDerivedClass function](spawnderivedclass.md) | Creates a newly derived class object from a specified object. | 
 | [SpawnInstance function](spawninstance.md) | Creates a new instance of a class. |   
-| [VerifyClient function](verifyclient.md) | Ensures that the client key has the correct security. |
+| [VerifyClient function](verifyclientkey.md) | Ensures that the client key has the correct security. |
 | [WritePropertyValue function](writepropertyvalue.md) | Writes a specified number of bytes to a property identified by a property handle. |
 
  ## See also

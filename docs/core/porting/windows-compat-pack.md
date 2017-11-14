@@ -48,7 +48,6 @@ APIs:
 * DirectoryServices
 * Drawing
 * EventLog
-* MEF
 * Odbc
 * Perf Counters
 * Permissions

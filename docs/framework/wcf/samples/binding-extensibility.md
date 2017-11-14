@@ -22,5 +22,5 @@ This section contains samples that demonstrate custom binding in [!INCLUDE[indig
  <xref:System.ServiceModel.NetHttpBinding>  
  Demonstrates how to implement a binding that stacks <xref:System.ServiceModel.Channels.HttpTransportBindingElement> or the <xref:System.ServiceModel.Channels.HttpsTransportBindingElement> on top of the <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement>.  
   
- <!--zz <xref:System.ServiceModel.WSStreamedHttpBinding> --> `System.ServiceModel.WSStreamedHttpBinding` 
+ <xref:System.ServiceModel.WSStreamedHttpBinding> 
  Demonstrates how to create a binding that is designed to support streaming scenarios when the HTTP transport is used.

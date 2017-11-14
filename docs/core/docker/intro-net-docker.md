@@ -34,7 +34,7 @@ The [relationship between Docker containers, images, and registries](https://doc
 * [Docker overview](https://docs.docker.com/engine/docker-overview/)
 * [Dockerfile on Windows Containers](https://docs.microsoft.com/virtualization/windowscontainers/manage-docker/manage-windows-dockerfile)
 * [Best practices for writing Dockerfiles](https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/)
-* [Building Docker Images for .NET Core applications](..\building-net-docker-images.md)
+* [Building Docker Images for .NET Core applications](../docker/building-net-docker-images.md)
 
 
 ### Getting .NET Docker Images

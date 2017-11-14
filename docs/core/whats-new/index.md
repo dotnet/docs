@@ -115,6 +115,8 @@ For a list of the APIs that have been added to the .NET Standard since its last 
 
 The total number of APIs available on .NET Core 2.0 has more than doubled in comparison with .NET Core 1.1. 
 
+And with the [Windows Compatibility Pack](core/porting/windows-compat-pack.md) porting from .NET Framework has also become much simpler.
+
 ### Support for .NET Framework libraries
 
 .NET Core code can reference existing .NET Framework libraries, including existing NuGet packages. Note that the libraries must use APIs that are found in .NET Standard.

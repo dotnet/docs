@@ -157,7 +157,7 @@ The .NET Framework includes the implementations and their associated hashName va
 
  ]]></format>
         </remarks>
-        <exception cref="T:System.Reflection.TargetInvocationException">On the .NET Framework only: FIPS mode is enabled, but `hashName` requests <xref:System.Security.Cryptography.SHA256Managed>, which is not FIPS compatible.</exception>
+        <exception cref="T:System.Reflection.TargetInvocationException">On the .NET Framework only: FIPS mode is enabled, but <paramref name="hashName" /> requests <see cref="T:System.Security.Cryptography.SHA256Managed" />, which is not FIPS compatible.</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="Create">

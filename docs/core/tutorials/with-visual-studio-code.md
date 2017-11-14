@@ -47,8 +47,6 @@ Let's get started with a simple "Hello World" program on .NET Core:
 
       ![The dotnet restore command](media/with-visual-studio-code/dotnetrestore.png)
 
-    * Starting with **.NET Core 2.0**, this step is optional. The `dotnet restore` command executes automatically when a new project is created.
-
       [!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
 
 4. Run the "Hello World" program:

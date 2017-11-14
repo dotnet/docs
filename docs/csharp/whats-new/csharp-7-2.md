@@ -13,7 +13,7 @@ ms.devlang: devlang-csharp
 
 C# 7.2 is another point release that adds a number of useful features.
 One theme for this release is working more efficiently with value types by
-avoiding unecessary copies or allocations. 
+avoiding unnecessary copies or allocations. 
 
 The remaining features are small, nice to have features.
 
@@ -33,16 +33,16 @@ The new language features in this release are:
 
 ## Reference semantics with value types
 
-A number of language features were introduced in 7.2 that enable scenarios
+Language features introduced in 7.2 enable scenarios
 for working with value types while using reference semantics. These features
 are designed to increase performance by minimize copying value types without
 incurring the memory allocations associated with using reference types. The
 features include:
 
  - The `in` modifier on parameters to specify that an argument is passed by reference, but not modified by the called method.
- - The `ref readonly` modifier on method returns indicates that a method returns its value by reference, and the [caller cannot directly modify that reference.
+ - The `ref readonly` modifier on method returns indicates that a method returns its value by reference but does not allow writes to that object.
  - The `readonly struct` declaration indicates that a struct is immutable and should be passed as an `in` parameter to its members methods.
- - The `ref struct` declarations indicates that a struct type accesses managed memory directly and must always be stack allocated.
+ - The `ref struct` declaration indicates that a struct type accesses managed memory directly and must always be stack allocated.
 
 You can read more about all these changes in [Using value types with reference semantics](../ref-locals-and-returns.md).
 
@@ -55,8 +55,8 @@ named arguments are in the correct positions. Read more in the updated content f
 ## Leading underscores in numeric literals
 
 The first implementation of allowing `_` characters in numeric literals did not allow the
-`_` to be the first character of the literal value. That has been fixed, and now numeric
-literals may begin with an `_`. 
+`_` to be the first character of the literal value. Numeric
+literals may now begin with an `_`. 
 
 For example:
 
@@ -68,9 +68,7 @@ int binaryValue = 0b_0101_0101;
 
 Finally, a new compound access modifier: `private protected`, indicates that a member may be
 accessed by derived classes that are declared in the same assembly. Where `protected internal`
-access allows access by derived classes or classes that are in the same assembly, this new
-more restrictive designation limits access to derived types declared in the same assembly.
+access allows access by derived classes or classes that are in the same assembly, `private protected`
+limits access to derived types declared in the same assembly.
 
 You can read more of the details in the language reference article on [access modifiers](../language-reference/keywords/access-modifiers.md).
-
-

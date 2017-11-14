@@ -702,9 +702,9 @@
         </remarks>
         <exception cref="T:System.Web.HttpException">The current <see cref="T:System.Web.HttpContext" /> is <see langword="null" />.
         
-        -or- 
+-or- 
         
-         <paramref name="path" /> is a physical path, but a virtual path was expected.</exception>        
+<paramref name="path" /> is a physical path, but a virtual path was expected.</exception>        
       </Docs>
     </Member>
     <Member MemberName="ScriptTimeout">

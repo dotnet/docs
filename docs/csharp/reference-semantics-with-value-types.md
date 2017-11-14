@@ -180,7 +180,7 @@ were it not constrained to a single stack frame. In addition, putting a
 managed pointer on the GC heap typically crashes at JIT time.
 
 You may have similar requirements working with memory created
-using [`stackalloc`](../language-reference/keywords/stackalloc.md) or
+using [`stackalloc`](language-reference/keywords/stackalloc.md) or
 when using memory from interop APIs. You can define your own `ref struct` types
 for those needs. In this article, you see examples
 using `Span<T>` for simplicity.

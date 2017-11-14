@@ -16,15 +16,15 @@ ms.custom: mvc
 An advantage to using value types is that they often avoid heap allocations.
 The corresponding disadvantage is that they are copied by value. This tradeoff
 makes it harder to optimize algorithms that operate on large amounts of
-data. New language features in C# 7.2 provide mechanisms that enable pass-by-refernce
-semantics with value types. Use these features wisely, and you can minimize both allocations
+data. New language features in C# 7.2 provide mechanisms that enable pass-by-reference
+semantics with value types. If you use these features wisely you can minimize both allocations
 and copy operations. This article explores those new features.
 
 Much of the sample code in this article demonstrates features added in C# 7.2. In order to
-use those features, you have to configure the compiler to use C# 7.2 or later in your
+use those features, you have to configure your project to use C# 7.2 or later in your
 project. You can use Visual Studio to select it. For each project, select **Project** from
 the menu, then **Properties**. Select the **Build** tab and click **Advanced**. From there,
-you can configure the language version. Choose either "7.2", or "latest".  Or, you can
+you can configure the language version. Choose either "7.2", or "latest".  Or you can
 edit the *csproj* file and add the following node:
 
 ```XML
@@ -43,7 +43,11 @@ by reference. The `in` keyword specifies that you are passing
 the parameter by reference and the called method does not modify
 the value passed to it. 
 
-This addition provides a full vocabulary to express your design intent:
+This addition provides a full vocabulary to express your design intent. 
+Value types are copied when passed to a called method when you do not
+specify any of the following modifiers. Each of these modifiers specify
+that a value type is passed by reference, avoiding the copy. Each modifier
+expresses a different intent:
 
 - `out`: This method sets the value of the argument used as this parameter.
 - `ref`: This method may set the value of the argument used as this parameter.
@@ -58,8 +62,8 @@ that calculates the distance between two points in 3D space.
 [!code-csharp[InArgument](../../samples/csharp/reference-semantics/Program.cs#InArgument "Specifying an In argument")]
 
 The arguments are two structures that each contain three doubles. A double is 8 bytes,
-so each argument is 24 bytes. By specifying the `in` modifier, you pass a
-reference to those arguments, either 4 bytes or 8 bytes each depending on the
+so each argument is 24 bytes. By specifying the `in` modifier, you pass 4-byte
+or 8-byte reference to those arguments, depending on the
 architecture of the machine. The difference in size is small, but it can quickly add
 up when your application calls this method in a tight loop using many different
 values.
@@ -76,12 +80,12 @@ Unlike `ref` and `out` arguments, you may use literal values or constants
 for the argument to an `in` parameter. Also, unlike a `ref` or `out` parameter,
 you don't need to apply the `in` modifier at the call site. The following
 code shows you two examples of calling the `CalculateDistance` method. The
-first uses two local variables, passed by reference. The second include a
+first uses two local variables passed by reference. The second includes a
 temporary variable created as part of the method call. 
 
 [!code-csharp[UseInArgument](../../samples/csharp/reference-semantics/Program.cs#UseInArgument "Specifying an In argument")]
 
-There are several ways in which the compiler ensures that the readonly
+There are several ways in which the compiler ensures that the read-only
 nature of an `in` argument is enforced.  First of all, the called method
 can't directly assign to an `in` parameter. It can't directly assign
 to any field of an `in` parameter. In addition, you cannot pass
@@ -89,14 +93,14 @@ an `in` parameter to any method demanding the `ref` or `out` modifier.
 The compiler enforces that the `in` argument is a readonly variable. You
 can call any instance method that uses pass-by-value semantics. In
 those instances, a copy of the `in` parameter is created. Because the compiler
-can create a temporary for any `in` parameter, you can also specify default
+can create a temporary variable for any `in` parameter, you can also specify default
 values for any `in` parameter. The follow code uses that to specify the origin
-as the default value for the second point:
+(point 0,0) as the default value for the second point:
 
 [!code-csharp[InArgumentDefault](../../samples/csharp/reference-semantics/Program.cs#InArgumentDefault "Specifying defaults for an in parameter")]
 
-The `in` parameter designation can also be used with reference types, or built in
-numeric values. However, the benefits inn both cases are minimal if any.
+The `in` parameter designation can also be used with reference types or built in
+numeric values. However, the benefits inn both cases are minimal, if any.
 
 ## `ref readonly` returns
 
@@ -107,44 +111,46 @@ that you are returning a reference to existing data, but not allowing
 modification. 
 
 The compiler enforces that the caller cannot modify the reference. Attempts
-to assign to the value directly generate a compile-time error. Calling member
-methods creates a defensive copy. 
-
-Creating a copy of a ref readonly return is easy: Just assign it to a variable
-not declared with the `ref readonly` modifier. The compiler generates code
-to copy the object as part of the assignment. 
+to assign to the value directly generate a compile-time error. However, the compiler cannot know if any member method modifies the state of the struct.
+To ensure that the object is not modified, the compiler creates a copy and
+calls member references using that copy. Any modifications are to that
+defensive copy. 
 
 It's likely that the library using `Point3D` would often use the origin
 throughout the code. Every instance creates a new object on the stack. It may
 be advantageous to create a constant and return it by reference. But, if you
-are returning a reference to internal storage, you may want to enforce that
+return a reference to internal storage, you may want to enforce that
 the caller cannot modify the referenced storage. The following code
 defines a read-only property that returns a `readonly ref` to a `Point3D`
 that specifies the origin.
 
 [!code-csharp[OriginReference](../../samples/csharp/reference-semantics/Point3D.cs#OriginReference "Creating a readonly Origin reference")]
 
-When you assign a variable to a `ref return`, you can specify either a `ref readonly`
+Creating a copy of a ref readonly return is easy: Just assign it to a variable
+not declared with the `ref readonly` modifier. The compiler generates code
+to copy the object as part of the assignment. 
+
+When you assign a variable to a `ref readonly return`, you can specify either a `ref readonly`
 variable, or a by-value copy of the readonly reference:
 
 [!code-csharp[AssignRefReadonly](../../samples/csharp/reference-semantics/Program.cs#AssignRefReadonly "Assigning a ref readonly")]
 
-The first assignment in the preceding code makes a copy of the `Origin` constant, and assigns
+The first assignment in the preceding code makes a copy of the `Origin` constant and assigns
 that copy. The second assigns a reference. Notice that the `readonly` modifier
 must be part of the declaration of the variable. The reference to which it refers
-cannot be modified. Attempts to do so results in a compile-time error.
+cannot be modified. Attempts to do so result in a compile-time error.
 
 ## `readonly struct` type
 
 Applying `ref readonly` to high-traffic uses of a struct may be sufficient.
-Other times, you may want to create an immutable struct. Then, you can
+Other times, you may want to create an immutable struct. Then you can
 always pass by readonly reference. That practice 
 removes the defensive copies
 that take place when you access methods of a struct used as an `in` parameter.
 
 You can do that by creating a `readonly struct` type. You can add the `readonly`
-modifier to a struct declaration. The language enforces that all members of
-the struct are `readonly`: the `struct` must be immutable.
+modifier to a struct declaration. The compiler enforces that all members of
+the struct are `readonly`; the `struct` must be immutable.
 
 There are other optimizations for a `readonly struct`. You can
 use the `in` modifier at every location where a `readonly struct` is an
@@ -153,10 +159,10 @@ you are returning an object whose lifetime extends beyond the scope of the metho
 returning the object.
 
 Finally, the compiler generates more efficient code when you call members of a
-`readonly struct`: The `this` reference is always an `in` parameter, instead
-of a copy of the receiver, passed by value to the member method. This optimization
-saves more copying when you use a `readonly struct`. The `Point3D` would be a great
-candidate for this change. The following code shows an update `ReadonlyPoint3D` structure:
+`readonly struct`: The `this` reference, instead of a copy of the receiver,
+is always an `in` parameter passed by reference to the member method. This optimization
+saves more copying when you use a `readonly struct`. The `Point3D` is a great
+candidate for this change. The following code shows an updated `ReadonlyPoint3D` structure:
 
 [!code-csharp[ReadonlyOnlyPoint3D](../../samples/csharp/reference-semantics/Point3D.cs#ReadonlyOnlyPoint3D "Defining an immutable structure")]
 
@@ -165,11 +171,7 @@ candidate for this change. The following code shows an update `ReadonlyPoint3D` 
 Another related language feature is the ability to declare a value type that
 must be stack allocated. In other words, these types can never be created on the
 heap as a member of another class. The primary motivation for this feature
-was `Span<T>` and related structures, but you can create `ref struct` types
-when you have similar requirements. In this article, you see examples
-using `Span<T>` for simplicity.
-
-`Span<T>` may contain a managed pointer as one of its members, the other being
+was `Span<T>` and related structures. `Span<T>` may contain a managed pointer as one of its members, the other being
 the length of the span. It's actually implemented a bit differently because C#
 doesn't support pointers to managed memory outside of an unsafe context. Any
 write that changes the pointer and the length is not atomic. That means a
@@ -177,12 +179,18 @@ write that changes the pointer and the length is not atomic. That means a
 were it not constrained to a single stack frame. In addition, putting a
 managed pointer on the GC heap typically crashes at JIT time.
 
+You may have similar requirements working with memory created
+using [`stackalloc`](../language-reference/keywords/stackalloc.md) or
+when using memory from interop APIs. You can define your own `ref struct` types
+for those needs. In this article, you see examples
+using `Span<T>` for simplicity.
+
 The `ref struct` declaration declares that a struct of this type must be
 on the stack. The language rules ensure the safe use of these types. Other
 types declared as `ref struct` include `ReadOnlySpan<T>`, `Memory<T>`, and
 `ReadOnlyMemory<T>`. 
 
-The goal of keeping a `ref struct` type as a stack allocated variable
+The goal of keeping a `ref struct` type as a stack-allocated variable
 introduces several rules that the compiler enforces for all `ref struct`
 types.
 
@@ -201,5 +209,5 @@ These enhancements to the C# language are designed for performance critical
 algorithms where memory allocations can be critical to achieving the
 necessary performance. You may find that you don't often use these features in
 the code you write. However, these enhancements have been adopted in many locations
-in the .NET framework. As more and more APIs make use of these features, you'll
+in the .NET Framework. As more and more APIs make use of these features, you'll
 see the performance of your own applications improve.

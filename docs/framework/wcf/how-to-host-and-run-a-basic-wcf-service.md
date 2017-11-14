@@ -170,7 +170,7 @@ This is the third of six tasks required to create a [!INCLUDE[indigo1](../../../
 ## Example  
  The following example includes the service contract and implementation from previous steps in the tutorial and hosts the service in a console application.  
   
- To compile this with a command-line compiler, compile IService1.cs and Service2.cs into a class library referencing `System.ServiceModel.dll`. And compile Program.cs to a console application.  
+ To compile this with a command-line compiler, compile IService1.cs and Service1.cs into a class library referencing `System.ServiceModel.dll`. And compile Program.cs to a console application.  
   
 ```csharp
 // IService1.cs  

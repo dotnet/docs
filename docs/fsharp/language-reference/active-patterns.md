@@ -121,7 +121,7 @@ The output of the previous code is as follows:
 
 Active patterns are not restricted only to pattern matching expressions, you can also use them on let-bindings.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet5006.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet5007.fs)]
 
 The output of the previous code is as follows:
 

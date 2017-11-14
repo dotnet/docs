@@ -1,5 +1,6 @@
 ---
-title: Put function
+title: Put function (Unmanaged API Reference)
+description: The Put function assigns a new value to a named property.
 ms.date: "11/06/2017"
 ms.prod: ".net-framework"
 ms.technology: 
@@ -62,7 +63,7 @@ HRESULT Put (
 
 ## Return value
 
-The following values returned by this function are defined in the **WbemCli.h** header file, or you can define them as constants in your code:
+The following values returned by this function are defined in the *WbemCli.h* header file, or you can define them as constants in your code:
 
 |Constant  |Value  |Description  |
 |---------|---------|---------|

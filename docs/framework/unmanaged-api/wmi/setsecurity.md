@@ -1,5 +1,6 @@
 ---
-title: SetSecurity function
+title: SetSecurity function (Unmanaged API Reference)
+description: The SetSecurity function retrieves the current thread's impersonation token.
 ms.date: "11/06/2017"
 ms.prod: ".net-framework"
 ms.technology: 

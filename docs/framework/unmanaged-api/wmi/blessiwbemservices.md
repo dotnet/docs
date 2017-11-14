@@ -1,5 +1,6 @@
 ---
-title: BlessIWbemServices function
+title: BlessIWbemServices function (Unmanaged API Reference) 
+description: The BlessIWbemServices function indicates whether user credentials permit access to an IWbemServices class.
 ms.date: "11/06/2017"
 ms.prod: ".net-framework"
 ms.technology: 
@@ -61,7 +62,7 @@ HRESULT BlessIWbemServices (
 
 ## Return value
 
-The following values returned by this function are defined in the **WinError.h** header file, or you can define them as constants in your code:
+The following values returned by this function are defined in the *WinError.h* header file, or you can define them as constants in your code:
 
 |Constant  |Value  |Description  |
 |---------|---------|---------|

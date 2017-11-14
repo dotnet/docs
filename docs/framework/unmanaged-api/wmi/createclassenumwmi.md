@@ -1,5 +1,6 @@
 ---
-title: CreateClassEnumWmi function
+title: CreateClassEnumWmi function (Unmanaged API Reference)
+description: The CreateClassEnumWmi function returns an enumerator for all classes that satisfy specified criteria.
 ms.date: "11/06/2017"
 ms.prod: ".net-framework"
 ms.technology: 
@@ -49,7 +50,7 @@ HRESULT CreateClassEnumWmi (
 [in] If not `null` or blank, specifies the name of a parent class; the enumerator returns only subclasses of this class. If it is `null` or blank and `lFlags` is WBEM_FLAG_SHALLOW, returns only top-level classes (classes with no parent class). If it is `null` or blank and `lFlags` is `WBEM_FLAG_DEEP`, returns all classes in the namespace.
 
 `lFlags`   
-[in] A combination of flags that affect the behavior of this function. The following values are defined in the **WbemCli.h** header file, or you can define them as constants in your code: 
+[in] A combination of flags that affect the behavior of this function. The following values are defined in the *WbemCli.h* header file, or you can define them as constants in your code: 
 
 |Constant  |Value  |Description  |
 |---------|---------|---------|
@@ -88,7 +89,7 @@ The recommended flags are `WBEM_FLAG_RETURN_IMMEDIATELY` and `WBEM_FLAG_FORWARD_
 
 ## Return value
 
-The following values returned by this function are defined in the **WbemCli.h** header file, or you can define them as constants in your code:
+The following values returned by this function are defined in the *WbemCli.h* header file, or you can define them as constants in your code:
 
 |Constant  |Value  |Description  |
 |---------|---------|---------|

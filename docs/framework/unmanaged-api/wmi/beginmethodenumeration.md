@@ -1,5 +1,6 @@
 ---
-title: BeginMethodEnumeration function
+title: BeginMethodEnumeration function (Unmanaged API Reference)
+description: The BeginMethodEnumeration function begins an enumeration of the object's methods
 ms.date: "11/06/2017"
 ms.prod: ".net-framework"
 ms.technology: 
@@ -45,7 +46,7 @@ HRESULT BeginMethodEnumeration (
 [in] A pointer to an [IWbemClassObject](https://msdn.microsoft.com/library/aa391433%28v=vs.85%29.aspx) instance.
 
 `lEnumFlags`  
-[in] Zero (0) for all methods, or a flag that specifies the scope of the enumeration. The following flags are defined in the **WbemCli.h** header file, or you can define them as constants in your code:
+[in] Zero (0) for all methods, or a flag that specifies the scope of the enumeration. The following flags are defined in the *WbemCli.h* header file, or you can define them as constants in your code:
 
 Constant  |Value  |Description  |
 |---------|---------|---------|
@@ -54,7 +55,7 @@ Constant  |Value  |Description  |
 
 ## Return value
 
-The following values returned by this function are defined in the **WbemCli.h** header file, or you can define them as constants in your code:
+The following values returned by this function are defined in the *WbemCli.h* header file, or you can define them as constants in your code:
 
 |Constant  |Value  |Description  |
 |---------|---------|---------|

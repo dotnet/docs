@@ -1,5 +1,6 @@
 ---
-title: CreateInstanceEnumWmi function
+title: CreateInstanceEnumWmi function (Unmanaged API Reference)
+description: The  CreateInstanceEnumWmi function returns an enumerator containing instances of a specified class that meet selection criteria.
 ms.date: "11/06/2017"
 ms.prod: ".net-framework"
 ms.technology: 
@@ -22,7 +23,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ---
 # CreateInstanceEnumWmi function
-Returns an enumerator that returns the intances of a specified class that meet specified selection criteria. 
+Returns an enumerator that returns the instances of a specified class that meet specified selection criteria. 
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
   
@@ -49,7 +50,7 @@ HRESULT CreateInstanceEnumWmi (
 [in] The name of the class for which instances are desired. This parameter cannot be `null`.
 
 `lFlags`   
-[in] A combination of flags that affect the behavior of this function. The following values are defined in the **WbemCli.h** header file, or you can define them as constants in your code: 
+[in] A combination of flags that affect the behavior of this function. The following values are defined in the *WbemCli.h* header file, or you can define them as constants in your code: 
 
 |Constant  |Value  |Description  |
 |---------|---------|---------|
@@ -88,7 +89,7 @@ The recommended flags are `WBEM_FLAG_RETURN_IMMEDIATELY` and `WBEM_FLAG_FORWARD_
 
 ## Return value
 
-The following values returned by this function are defined in the **WbemCli.h** header file, or you can define them as constants in your code:
+The following values returned by this function are defined in the *WbemCli.h* header file, or you can define them as constants in your code:
 
 |Constant  |Value  |Description  |
 |---------|---------|---------|

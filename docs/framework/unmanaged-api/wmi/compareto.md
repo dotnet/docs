@@ -1,5 +1,6 @@
 ---
-title: CompareTo function
+title: CompareTo function (Unmanaged API Reference)
+description: The CompareTo function compares an object to another WMI object.
 ms.date: "11/06/2017"
 ms.prod: ".net-framework"
 ms.technology: 
@@ -54,7 +55,7 @@ HRESULT CompareTo (
 
 ## Return value
 
-The following values returned by this function are defined in the **WbemCli.h** header file, or you can define them as constants in your code:
+The following values returned by this function are defined in the *WbemCli.h* header file, or you can define them as constants in your code:
 
 |Constant  |Value  |Description  |
 |---------|---------|---------|
@@ -69,7 +70,7 @@ The following values returned by this function are defined in the **WbemCli.h** 
 
 This function wraps a call to the [IWbemClassObject::CompareTo](https://msdn.microsoft.com/library/aa391437(v=vs.85).aspx) method.
 
-The flags that can be passed as the `lEnumFlags` argument are defined in the **WbemCli.h** header file, or you can define them as constants in your code. You can specify the individual characteristics involved in the comparison by specifying a bitwise combination of the following flags:
+The flags that can be passed as the `lEnumFlags` argument are defined in the *WbemCli.h* header file, or you can define them as constants in your code. You can specify the individual characteristics involved in the comparison by specifying a bitwise combination of the following flags:
 
 |Constant  |Value  |Description  |
 |---------|---------|---------|

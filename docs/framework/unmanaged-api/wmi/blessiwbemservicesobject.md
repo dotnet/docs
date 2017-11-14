@@ -1,5 +1,6 @@
 ---
-title: BlessIWbemServicesObject function
+title: BlessIWbemServicesObject function (Unmanaged API Reference)
+description: The BlessIWbemServicesObject function indicates whether user credentials permit access to an IWbemServices object
 ms.date: "11/06/2017"
 ms.prod: ".net-framework"
 ms.technology: 
@@ -22,7 +23,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ---
 # BlessIWbemServicesObject function
-Indicates whether the user credentials permit access to a specified IWbem service object.   
+Indicates whether the user credentials permit access to a specified [IWbemServices](https://msdn.microsoft.com/library/aa392093(v=vs.85).aspx) object.   
   
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
   
@@ -61,7 +62,7 @@ HRESULT BlessIWbemServicesObject (
 
 ## Return value
 
-The following values returned by this function are defined in the **WinError.h** header file, or you can define them as constants in your code:
+The following values returned by this function are defined in the *WinError.h* header file, or you can define them as constants in your code:
 
 |Constant  |Value  |Description  |
 |---------|---------|---------|

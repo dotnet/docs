@@ -1,5 +1,6 @@
 ---
-title: ExecQueryWmi function
+title: ExecQueryWmi function (Unmanaged API Reference)
+description: The ExecQueryWmi function executes a query to retrieve objects.
 ms.date: "11/06/2017"
 ms.prod: ".net-framework"
 ms.technology: 
@@ -53,7 +54,7 @@ HRESULT ExecQueryWmi (
 [in] The text of the query. This parameter cannot be `null`.
 
 `lFlags`   
-[in] A combination of flags that affect the behavior of this function. The following values are defined in the **WbemCli.h** header file, or you can define them as constants in your code: 
+[in] A combination of flags that affect the behavior of this function. The following values are defined in the *WbemCli.h* header file, or you can define them as constants in your code: 
 
 | Constant | Value  | Description  |
 |---------|---------|---------|
@@ -93,7 +94,7 @@ The recommended flags are `WBEM_FLAG_RETURN_IMMEDIATELY` and `WBEM_FLAG_FORWARD_
 
 ## Return value
 
-The following values returned by this function are defined in the **WbemCli.h** header file, or you can define them as constants in your code:
+The following values returned by this function are defined in the *WbemCli.h* header file, or you can define them as constants in your code:
 
 |Constant  |Value  |Description  |
 |---------|---------|---------|

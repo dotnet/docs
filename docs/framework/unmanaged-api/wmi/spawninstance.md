@@ -1,5 +1,6 @@
 ---
-title: SpawnInstance function
+title: SpawnInstance function (Unmanaged API Reference)
+description: The SpawnInstance function creates a new instance of a class.
 ms.date: "11/06/2017"
 ms.prod: ".net-framework"
 ms.technology: 
@@ -52,7 +53,7 @@ HRESULT SpawnInstance (
 
 ## Return value
 
-The following values returned by this function are defined in the **WbemCli.h** header file, or you can define them as constants in your code:
+The following values returned by this function are defined in the *WbemCli.h* header file, or you can define them as constants in your code:
 
 |Constant  |Value  |Description  |
 |---------|---------|---------|

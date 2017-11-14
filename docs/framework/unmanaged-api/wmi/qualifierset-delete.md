@@ -1,5 +1,6 @@
 ---
-title: QualifierSet_Delete function
+title: QualifierSet_Delete function (Unmanaged API Reference)
+description: The QualifierSet_Delete function deletes a qualifier by name.
 ms.date: "11/06/2017"
 ms.prod: ".net-framework"
 ms.technology: 
@@ -49,7 +50,7 @@ HRESULT QualifierSet_Delete (
 
 ## Return value
 
-The following values returned by this function are defined in the **WbemCli.h** header file, or you can define them as constants in your code:
+The following values returned by this function are defined in the *WbemCli.h* header file, or you can define them as constants in your code:
 
 |Constant  |Value  |Description  |
 |---------|---------|---------|

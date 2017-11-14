@@ -1,5 +1,6 @@
 ---
-title: PutClassWmi function
+title: PutClassWmi function (Unmanaged API Reference)
+description: The PutClassWmi function creates a new class or updates an existing one.
 ms.date: "11/06/2017"
 ms.prod: ".net-framework"
 ms.technology: 
@@ -43,7 +44,7 @@ HRESULT PutClassWmi (
 [in] A pointer to a valid class definition. It must be correctly initialized with all the required property values.
 
 `lFlags`   
-[in] A combination of flags that affect the behavior of this function. The following values are defined in the **WbemCli.h** header file, or you can define them as constants in your code: 
+[in] A combination of flags that affect the behavior of this function. The following values are defined in the *WbemCli.h* header file, or you can define them as constants in your code: 
 
 |Constant  |Value  |Description  |
 |---------|---------|---------|
@@ -65,7 +66,7 @@ HRESULT PutClassWmi (
 
 ## Return value
 
-The following values returned by this function are defined in the **WbemCli.h** header file, or you can define them as constants in your code:
+The following values returned by this function are defined in the *WbemCli.h* header file, or you can define them as constants in your code:
 
 |Constant  |Value  |Description  |
 |---------|---------|---------|

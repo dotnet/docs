@@ -1,5 +1,6 @@
 ---
-title: NextMethod function
+title: NextMethod function (Unmanaged API Reference)
+description: The NextMethod function retrieves the next method in an enumeration.
 ms.date: "11/06/2017"
 ms.prod: ".net-framework"
 ms.technology: 
@@ -61,7 +62,7 @@ HRESULT NextMethod (
 
 ## Return value
 
-The following values returned by this function are defined in the **WbemCli.h** header file, or you can define them as constants in your code:
+The following values returned by this function are defined in the *WbemCli.h* header file, or you can define them as constants in your code:
 
 |Constant  |Value  |Description  |
 |---------|---------|---------|

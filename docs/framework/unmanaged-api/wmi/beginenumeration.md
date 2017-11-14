@@ -1,5 +1,6 @@
 ---
-title: BeginEnumeration function
+title: BeginEnumeration function (Unmanaged API Reference)
+description: The BeginEnumeration function resets an enumerator to the beginning of the enumeration
 ms.date: "11/06/2017"
 ms.prod: ".net-framework"
 ms.technology: 
@@ -49,7 +50,7 @@ HRESULT BeginEnumeration (
 
 ## Return value
 
-The following values returned by this function are defined in the **WbemCli.h** header file, or you can define them as constants in your code:
+The following values returned by this function are defined in the *WbemCli.h* header file, or you can define them as constants in your code:
 
 |Constant  |Value  |Description  |
 |---------|---------|---------|
@@ -62,7 +63,7 @@ The following values returned by this function are defined in the **WbemCli.h** 
 
 This function wraps a call to the [IWbemClassObject::BeginEnumeration](https://msdn.microsoft.com/library/aa391433%28v=vs.85%29.aspx) method.
 
-The flags that can be passed as the `lEnumFlags` argument are defined in the **WbemCli.h** header file, or you can define them as constants in your code.  You can combine one flag from each group with any flag from any other group. However, flags from the same group are mutually exclusive. 
+The flags that can be passed as the `lEnumFlags` argument are defined in the *WbemCli.h* header file, or you can define them as constants in your code.  You can combine one flag from each group with any flag from any other group. However, flags from the same group are mutually exclusive. 
 
 **Group 1**
 

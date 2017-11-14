@@ -1,5 +1,6 @@
 ---
-title: EndEnumeration function
+title: EndEnumeration function (Unmanaged API Reference)
+description: The EndEnumeration function terminates an enumeration.
 ms.date: "11/06/2017"
 ms.prod: ".net-framework"
 ms.technology: 
@@ -46,7 +47,7 @@ HRESULT EndEnumeration (
 
 ## Return value
 
-The following values returned by this function are defined in the **WbemCli.h** header file, or you can define them as constants in your code:
+The following values returned by this function are defined in the *WbemCli.h* header file, or you can define them as constants in your code:
 
 |Constant  |Value  |Description  |
 |---------|---------|---------|

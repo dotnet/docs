@@ -1,5 +1,6 @@
 ---
-title: Initialize function
+title: Initialize function (Unmanaged API Reference)
+description: The Initialize function performs WMI initialization.
 ms.date: "11/06/2017"
 ms.prod: ".net-framework"
 ms.technology: 

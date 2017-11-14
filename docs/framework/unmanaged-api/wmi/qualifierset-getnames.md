@@ -1,5 +1,6 @@
 ---
-title: QualifierSet_GetNames function
+title: QualifierSet_GetNames function (Unmanaged API Reference)
+description: The QualifierSet_GetNames function retrieves the names of qualifiers from an object or property.
 ms.date: "11/06/2017"
 ms.prod: ".net-framework"
 ms.technology: 
@@ -59,7 +60,7 @@ HRESULT QualifierSet_GetNames (
 
 ## Return value
 
-The following values returned by this function are defined in the **WbemCli.h** header file, or you can define them as constants in your code:
+The following values returned by this function are defined in the *WbemCli.h* header file, or you can define them as constants in your code:
 
 |Constant  |Value  |Description  |
 |---------|---------|---------|

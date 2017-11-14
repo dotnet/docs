@@ -1,5 +1,6 @@
 ---
-title: GetObjectText function
+title: GetObjectText function (Unmanaged API Reference)
+description: The GetObjectText function returns a textual rendering of an object in MOF syntax.
 ms.date: "11/06/2017"
 ms.prod: ".net-framework"
 ms.technology: 
@@ -53,7 +54,7 @@ HRESULT GetObjectText (
 
 ## Return value
 
-The following values returned by this function are defined in the **WbemCli.h** header file, or you can define them as constants in your code:
+The following values returned by this function are defined in the *WbemCli.h* header file, or you can define them as constants in your code:
 
 |Constant  |Value  |Description  |
 |---------|---------|---------|

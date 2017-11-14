@@ -1,5 +1,6 @@
 ---
-title: GetNames function
+title: GetNames function (Unmanaged API Reference)
+description: The GetNames function retrieves the names of the properties of an object.
 ms.date: "11/06/2017"
 ms.prod: ".net-framework"
 ms.technology: 
@@ -61,7 +62,7 @@ HRESULT GetNames (
 
 ## Return value
 
-The following values returned by this function are defined in the **WbemCli.h** header file, or you can define them as constants in your code:
+The following values returned by this function are defined in the *WbemCli.h* header file, or you can define them as constants in your code:
 
 |Constant  |Value  |Description  |
 |---------|---------|---------|
@@ -79,7 +80,7 @@ The named returned are controlled by a combination of flags and parameters. For 
 The flag values in `lFlags` are bit fields
 
 
-The flags that can be passed as the `lEnumFlags` argument are bit fields that are defined in the **WbemCli.h** header file, or you can define them as constants in your code.  You can combine one flag from each group with any flag from any other group. However, flags from the same group are mutually exclusive. 
+The flags that can be passed as the `lEnumFlags` argument are bit fields that are defined in the *WbemCli.h* header file, or you can define them as constants in your code.  You can combine one flag from each group with any flag from any other group. However, flags from the same group are mutually exclusive. 
 
 | Group 1 flags |Value  |Description  |
 |---------|---------|---------|

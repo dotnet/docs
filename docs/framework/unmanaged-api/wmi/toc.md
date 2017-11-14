@@ -1,5 +1,5 @@
 # [ WMI and Performance Counters ](index.md)
-## [BeginEnumeration function]beginenumeration.md)
+## [BeginEnumeration function](beginenumeration.md)
 ## [BeginMethodEnumeration function](beginmethodenumeration.md)
 ## [BlessIWbemServices function](blessiwbemservices.md)
 ## [BlessIWbemServicesObject function](blessiwbemservicesobject.md)

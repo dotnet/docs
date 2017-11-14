@@ -1,5 +1,6 @@
 ---
-title: GetPropertyHandle function
+title: GetPropertyHandle function (Unmanaged API Reference)
+description: The GetPropertyHandle function returns a unique handle that identies a property.
 ms.date: "11/06/2017"
 ms.prod: ".net-framework"
 ms.technology: 
@@ -57,7 +58,7 @@ HRESULT GetPropertyHandle (
 
 ## Return value
 
-The following values returned by this function are defined in the **WbemCli.h** header file, or you can define them as constants in your code:
+The following values returned by this function are defined in the *WbemCli.h* header file, or you can define them as constants in your code:
 
 |Constant  |Value  |Description  |
 |---------|---------|---------|

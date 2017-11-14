@@ -1,5 +1,6 @@
 ---
-title: QualifierSet_BeginEnumeration function
+title: QualifierSet_BeginEnumeration function (Unmanaged API Reference)
+description: The QualifierSet_BeginEnumeration function resets an enumerator of the qualifiers of an object.
 ms.date: "11/06/2017"
 ms.prod: ".net-framework"
 ms.technology: 
@@ -49,7 +50,7 @@ HRESULT QualifierSet_BeginEnumeration (
 
 ## Return value
 
-The following values returned by this function are defined in the **WbemCli.h** header file, or you can define them as constants in your code:
+The following values returned by this function are defined in the *WbemCli.h* header file, or you can define them as constants in your code:
 
 |Constant  |Value  |Description  |
 |---------|---------|---------|
@@ -64,7 +65,7 @@ This function wraps a call to the [IWbemQualifierSet::BeginEnumeration](https://
 
 To enumerate all of the qualifiers on an object, this method must be called before the first call to [QualifierSet_Next](qualifierset-next.md). The order in which qualifiers are enumerated is guaranteed to be invariant for a given enumeration.
 
-The flags that can be passed as the `lEnumFlags` argument are defined in the **WbemCli.h** header file, or you can define them as constants in your code.   
+The flags that can be passed as the `lEnumFlags` argument are defined in the *WbemCli.h* header file, or you can define them as constants in your code.   
 
 |Constant  |Value  |Description  |
 |---------|---------|---------|

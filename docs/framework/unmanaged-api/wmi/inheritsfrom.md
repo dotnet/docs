@@ -1,5 +1,6 @@
 ---
-title: InheritsFrom function
+title: InheritsFrom function (Unmanaged API Reference)
+description: The InheritsFrom function determines whether a class or instance derives from a particular parent class.
 ms.date: "11/06/2017"
 ms.prod: ".net-framework"
 ms.technology: 
@@ -49,7 +50,7 @@ HRESULT InheritsFrom (
 
 ## Return value
 
-The following values returned by this function are defined in the **WbemCli.h** header file, or you can define them as constants in your code:
+The following values returned by this function are defined in the *WbemCli.h* header file, or you can define them as constants in your code:
 
 |Constant  |Value  |Description  |
 |---------|---------|---------|

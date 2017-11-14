@@ -1,5 +1,6 @@
 ---
-title: QualifierSet_EndEnumeration function
+title: QualifierSet_EndEnumeration function (Unmanaged API Reference)
+description: The QualifierSet_EndEnumeration function terminates an enumeration.
 ms.date: "11/06/2017"
 ms.prod: ".net-framework"
 ms.technology: 
@@ -45,7 +46,7 @@ HRESULT QualifierSet_EndEnumeration (
 
 ## Return value
 
-The following value returned by this function is defined in the **WbemCli.h** header file, or you can define it as a constant in your code:
+The following value returned by this function is defined in the *WbemCli.h* header file, or you can define it as a constant in your code:
 
 |Constant  |Value  |Description  |
 |---------|---------|---------|

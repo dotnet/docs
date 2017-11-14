@@ -1,5 +1,6 @@
 ---
-title: Get function
+title: Get function (Unmanaged API Reference)
+description: The Get function retrieves the specified property value.
 ms.date: "11/06/2017"
 ms.prod: ".net-framework"
 ms.technology: 
@@ -61,7 +62,7 @@ HRESULT Get (
 [out] If the function returns successfully, contains a [CIM-type constant](https://msdn.microsoft.com/library/aa386309(v=vs.85).aspx) that indicates the property type. Its value can also be `null`. 
 
 `plFlavor`
-[out] If the function returns successfully, receives information about the origin of the property. Its value can be `null`, or one of the following WBEM_FLAVOR_TYPE constants defined in the **Wbemcli.h** header file: 
+[out] If the function returns successfully, receives information about the origin of the property. Its value can be `null`, or one of the following WBEM_FLAVOR_TYPE constants defined in the *WbemCli.h* header file: 
 
 |Constant  |Value  |Description  |
 |---------|---------|---------|
@@ -71,7 +72,7 @@ HRESULT Get (
 
 ## Return value
 
-The following values returned by this function are defined in the **WbemCli.h** header file, or you can define them as constants in your code:
+The following values returned by this function are defined in the *WbemCli.h* header file, or you can define them as constants in your code:
 
 |Constant  |Value  |Description  |
 |---------|---------|---------|

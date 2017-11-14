@@ -1,5 +1,6 @@
 ---
-title: VerifyClientKey function
+title: VerifyClientKey function (Unmanaged API Reference)
+description: The VerifyClientKey function ensures the client key has the correct security.
 ms.date: "11/06/2017"
 ms.prod: ".net-framework"
 ms.technology: 
@@ -36,7 +37,7 @@ LONG VerifyClientKey();
 
 If the function succeeds, the return value is `ERROR_SUCCESS` (0).
 
-If the function fails, the return value is a non-zero error code defined in **Winerror.h**.
+If the function fails, the return value is a non-zero error code defined in *WinError.h*.
 
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

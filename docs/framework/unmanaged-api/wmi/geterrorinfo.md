@@ -1,5 +1,6 @@
 ---
-title: GetErrorInfo function
+title: GetErrorInfo function (Unmanaged API Reference)
+description: The GetErrorInfo function retrieves error information from the previous function call.
 ms.date: "11/06/2017"
 ms.prod: ".net-framework"
 ms.technology: 

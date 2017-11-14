@@ -44,7 +44,7 @@ features include:
  - The `readonly struct` declaration, to indicate that a struct is immutable and should be passed as an `in` parameter to its member methods.
  - The `ref struct` declaration, to indicate that a struct type accesses managed memory directly and must always be stack allocated.
 
-You can read more about all these changes in [Using value types with reference semantics](../ref-locals-and-returns.md).
+You can read more about all these changes in [Using value types with reference semantics](../reference-semantics-with-value-types.md).
 
 ## Non-trailing named arguments
 

@@ -139,7 +139,7 @@ items:
     Console.WriteLine($"[{trimmedMessage}]");
 
     trimmedMessage = message.Trim();
-    Console.WriteLine("[{trimmedMessage}]");
+    Console.WriteLine($"[{trimmedMessage}]");
     ```
 
     This sample reinforces a couple of important concepts for working with strings. The methods that manipulate strings return new string objects rather than making modifications in place. You can see that each call to any of the `Trim` methods returns a new string, but does not change the original message.

@@ -437,6 +437,7 @@ ms.technology:
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+langs: ["csharp", "vb", "powershell"]
 ---
 
 ---

@@ -1159,6 +1159,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The assembly is a dynamic assembly.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">Unable to load a dependent assembly.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetFile">

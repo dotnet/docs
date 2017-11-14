@@ -216,6 +216,43 @@ checked the type, you don't need an additional null check. You can see that from
 the fact that there are no null checks in any of the case blocks of the samples above:
 they are not necessary, since matching the type pattern guarantees a non-null value.
 
+## `var` declarations in `case` expressions
+
+The introduction of `var` as one of the match expressions introduces new
+rules to the pattern match.
+
+The first rule is that the `var` declaration
+follows the normal type inference rules: The type is inferred to be the
+static type of the switch expression. From that rule, the type always
+matches.
+
+The second rule is that a `var` declaration does not have the null check
+that other type pattern expressions include. That means the variable
+may be null, and a null check is necessary in that case.
+
+Those two rules mean that in many instances, a `var` declaration
+in a `case` expression matches the same conditions as a `default` expression.
+Because any non-default case is preferred to the `default` case, the `default`
+case will never execute.
+
+> [!NOTE]
+> The compiler does not emit a warning in those cases where a `default` case
+> has been written but will never execute. This is consistent with current
+> `switch` statement behavior where all possible cases have been listed.
+
+The third rule introduces uses where a `var` case may be useful. Imagine
+that you are doing a pattern match where the input is a string and you are
+searching for known command values. You might write something like:
+
+[!code-csharp[VarCaseExpression](../../samples/csharp/PatternMatching/Program.cs#VarCaseExpression "use a var case expression to filter white space")]
+
+The `var` case matches `null`, the empty string, or any string that contains
+only whitespace. Notice that the preceding code uses the `?.` operator to
+ensure that it does not accidentally throw a <xref:System.NullReferenceException>. The `default` case handles any other string values that are not understood by this command parser.
+
+This is one example where you may want to consider
+a `var` case expression that is distinct from a `default` expression.
+
 ## Conclusions
 
 *Pattern Matching constructs* enable you to easily manage control flow

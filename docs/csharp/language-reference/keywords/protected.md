@@ -16,7 +16,13 @@ author: "BillWagner"
 ms.author: "wiwagn"
 ---
 # protected (C# Reference)
-The `protected` keyword is a member access modifier. A protected member is accessible within its class and by derived class instances. For a comparison of `protected` with the other access modifiers, see [Accessibility Levels](../../../csharp/language-reference/keywords/accessibility-levels.md).  
+The `protected` keyword is a member access modifier. 
+
+ > This page covers `protected` access. The `protected` keyword is also part of the [`protected internal`](./protected-internal.md) and [`private protected`](./private-protected.md) access modifiers. 
+
+A protected member is accessible within its class and by derived class instances. 
+
+For a comparison of `protected` with the other access modifiers, see [Accessibility Levels](../../../csharp/language-reference/keywords/accessibility-levels.md). 
   
 ## Example  
  A protected member of a base class is accessible in a derived class only if the access occurs through the derived class type. For example, consider the following code segment:  

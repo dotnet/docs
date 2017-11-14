@@ -68,7 +68,7 @@ In addition to ASP.NET Core, traditional ASP.NET 4.x continues to be a robust an
 > - **Introduction to ASP.NET Core**  
 > <https://docs.microsoft.com/aspnet/core/>
 > - **Six Key Benefits of ASP.NET Core which make it Different and Better**  
-> <http://www.trigent.com/blog/six-key-benefits-of-asp-net-core-1-0-which-make-it-different-better/>
+> <https://blog.trigent.com/six-key-benefits-of-asp-net-core-1-0-which-make-it-different-better/>
 > - **Testing in ASP.NET Core**  
 > <https://docs.microsoft.com/aspnet/core/testing/>
 

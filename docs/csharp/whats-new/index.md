@@ -4,7 +4,7 @@ description: How is the C# language evolving
 keywords: C#, Latest Features, What's New, Roslyn
 author: BillWagner
 ms.author: wiwagn
-ms.date: 03/21/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: .net
 ms.technology: devlang-csharp
@@ -21,8 +21,12 @@ major features added in each release.
 > [!IMPORTANT]
 > The C# language relies on types and methods in a *standard library* for some of the features. One example is exception processing. Every `throw` statement or expression is checked to ensure the object being thrown is derived from <xref:System.Exception>. Similarly, every `catch` is checked to ensure that the type being caught is derived from <xref:System.Exception>. Each version may add new requirements. To use the latest language features in older environments, you may need to install specific libraries. These are documented in the page for each specific version. You can learn more about the [relationships between language and library](relationships-between-language-and-library.md) for background on this dependency. 
 
+
+* [C# 7.2](csharp-7-2.md):
+    - This page describes the latest features in the C# language. This covers C# 7.2, currently available in [Visual Studio 2017 version 15.5](https://www.visualstudio.com/vs/whatsnew/), and in the [.NET Core 2.0 SDK](../../core/whats-new/index.md).
+
 * [C# 7.1](csharp-7-1.md):
-    - This page describes the latest features in the C# language. This covers C# 7.1, currently available in [Visual Studio 2017 version 15.3](https://www.visualstudio.com/vs/whatsnew/), and in the [.NET Core 2.0 SDK](../../core/whats-new/index.md).
+    - This page describes the features in C# 7.1. These were added in [Visual Studio 2017 version 15.3](https://www.visualstudio.com/vs/whatsnew/), and in the [.NET Core 2.0 SDK](../../core/whats-new/index.md).
 
 * [C# 7](csharp-7.md):
     - This page describes the features added in C# 7. These were added in [Visual Studio 2017](https://www.visualstudio.com/vs/whatsnew/) and [.NET Core 1.0](../../core/whats-new/index.md) and later

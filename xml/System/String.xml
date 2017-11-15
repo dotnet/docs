@@ -4308,11 +4308,15 @@
   
  If you are new to the String.Format method, see the [Getting started with the String.Format method](#Starting) section for a quick overview.  
   
- See the [Remarks](#Starting) section for general documentation for the String.Format method.</summary>
+ See the [Remarks](#remarks-top) section for general documentation for the String.Format method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
+<a name="remarks-top"></a>   
 ## Remarks  
+
+[!INCLUDE[interpolated-strings](~/includes/interpolated-strings.md)] 
+ 
  In this section:  
   
  [Getting started with the String.Format method](#Starting)   
@@ -4323,14 +4327,7 @@
  [Format items that have the same index](#SameIndex)   
  [Formatting and culture](#Format_Culture)   
  [Custom formatting operations](#Format_Custom)   
- Examples:   
- [Formatting three arguments](#Format3_Example)  
- [Formatting more than three arguments](#Format4_Example)  
- [Culture-sensitive formatting](#Format5_Example)  
- [A custom formatting operation](#Format6_Example)  
- [An intercept provider and Roman numeral formatter](#Format7_Example)  
-[Version information](#Format_Versions)  
-[String.Format Q & A](#QA)  
+ [String.Format Q & A](#QA)  
   
 <a name="Starting"></a>   
 ## Getting started with the String.Format method  
@@ -4498,37 +4495,14 @@
   
  For more information about providing custom formatting solutions, see [How to: Define and Use Custom Numeric Format Providers](~/docs/standard/base-types/how-to-define-and-use-custom-numeric-format-providers.md) and <xref:System.ICustomFormatter>. For an example that converts integers to formatted custom numbers, see [Example 6: A custom formatting operation](#Format6_Example). For an example that converts unsigned bytes to Roman numerals, see [Example 7: An intercept provider and Roman numeral formatter](#Format7_Example).  
   
-<a name="Format4_Example"></a>   
-## Example 4: Formatting more than three arguments  
- This example creates a string that contains data on the high and low temperature on a particular date. The composite format string has five format items in the C# example and six in the Visual Basic example. Two of the format items define the width of their corresponding value's string representation, and the first format item also includes a standard date and time format string.  
-  
- [!code-cpp[System.String.Format#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/format5.cpp#5)]
- [!code-csharp[System.String.Format#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/format5.cs#5)]
- [!code-vb[System.String.Format#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/format5.vb#5)]  
-  
- You can also pass the objects to be formatted as an array rather than a an argument list.  
-  
- [!code-cpp[System.String.Format#10](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/format_paramarray1.cpp#10)]
- [!code-csharp[System.String.Format#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/format_paramarray1.cs#10)]
- [!code-vb[System.String.Format#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/format_paramarray1.vb#10)]  
-  
-<a name="Format5_Example"></a>   
-## Example 5: Culture-sensitive formatting  
- This example uses the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> method to display the string representation of some date and time values and numeric values by using several different cultures.  
-  
- [!code-csharp[System.String.Format2#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format2/cs/Example2.cs#2)]
- [!code-vb[System.String.Format2#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format2/vb/Example2.vb#2)]  
-  
-<a name="Format6_Example"></a>   
-## Example 6: A custom formatting operation  
+### Example: A custom formatting operation  
  This example defines a format provider that formats an integer value as a customer account number in the form x-xxxxx-xx.  
   
  [!code-cpp[System.String.Format#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/formatexample2.cpp#2)]
  [!code-csharp[System.String.Format#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/FormatExample2.cs#2)]
  [!code-vb[System.String.Format#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/FormatExample2.vb#2)]  
   
-<a name="Format7_Example"></a>   
-## Example 7: An intercept provider and Roman numeral formatter  
+### Example: An intercept provider and Roman numeral formatter  
  This example defines a custom format provider that implements the <xref:System.ICustomFormatter> and <xref:System.IFormatProvider> interfaces to do two things:  
   
 -   It displays the parameters passed to its <xref:System.ICustomFormatter.Format%2A?displayProperty=nameWithType> implementation. This enables us to see what parameters the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> method is passing to the custom formatting implementation for each object that it tries to format. This can be useful when you're debugging your application.  
@@ -4539,28 +4513,14 @@
  [!code-csharp[System.String.Format#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/interceptor2.cs#11)]
  [!code-vb[System.String.Format#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/interceptor2.vb#11)]  
   
-<a name="Format_Versions"></a>   
-## Version information  
- .NET Framework  
- All overloads are supported in: 4.5, 4, 3.5, 3.0, 2.0, 1.1, 1.0  
-  
- .NET Framework Client Profile  
- All overloads are supported in: 4, 3.5 SP1  
-  
- Portable Class Library  
- Only <xref:System.String.Format%28System.String%2CSystem.Object%5B%5D%29> and <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> are supported  
-  
- .NET for Windows Store apps  
- Only <xref:System.String.Format%28System.String%2CSystem.Object%5B%5D%29> and <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> are supported in Windows 8  
-  
 <a name="QA"></a>   
 ## String.Format Q & A  
   
 ### Where can I find a list of the predefined format strings that can be used with format items?  
   
--   For all integral and floating-point types, see                                                  [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and                                                  [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).  
+-   For all integral and floating-point types, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).  
   
--   For date and time values, see                                                  [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) and                                                  [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md).  
+-   For date and time values, see [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) and [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md).  
   
 -   For enumeration values, see [Enumeration Format Strings](~/docs/standard/base-types/enumeration-format-strings.md).  
   
@@ -4674,9 +4634,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+
+[!INCLUDE[interpolated-strings](~/includes/interpolated-strings.md)] 
   
-> [!NOTE]
->  For examples and comprehensive usage information about this and other overloads of the `Format` method, see the <xref:System.String.Format%2A> overload summary.  
+This method uses the [composite formatting feature](~/docs/standard/base-types/composite-formatting.md) to convert the value of an expression to its string representation and to embed that representation in a string. 
+
+[!INCLUDE[simple-string-format](~/includes/simple-string-format.md)]
 
 ## Example: Formatting a single argument  
  
@@ -4741,10 +4704,27 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+
+[!INCLUDE[interpolated-strings](~/includes/interpolated-strings.md)] 
   
-> [!NOTE]
->  For examples and comprehensive usage information about this and other overloads of the `Format` method, see the <xref:System.String.Format%2A> overload summary.  
+This method uses the [composite formatting feature](~/docs/standard/base-types/composite-formatting.md) to convert the value of four or more expressions to their string representations and to embed those representations in a string. Since the `args` parameter is marked with the <xref:System.ParamArrayAttribute?displayProperty=nameWithType> attribute, you can pass the objects to the method as individual arguments or as an <xref:System.Object> array. 
+
+[!INCLUDE[simple-string-format](~/includes/simple-string-format.md)]
+
+## Example: Formatting more than three arguments  
+ 
+ This example creates a string that contains data on the high and low temperature on a particular date. The composite format string has five format items in the C# example and six in the Visual Basic example. Two of the format items define the width of their corresponding value's string representation, and the first format item also includes a standard date and time format string.  
   
+ [!code-cpp[System.String.Format#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/format5.cpp#5)]
+ [!code-csharp[System.String.Format#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/format5.cs#5)]
+ [!code-vb[System.String.Format#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/format5.vb#5)]  
+  
+ You can also pass the objects to be formatted as an array rather than a an argument list.  
+  
+ [!code-cpp[System.String.Format#10](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/format_paramarray1.cpp#10)]
+ [!code-csharp[System.String.Format#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/format_paramarray1.cs#10)]
+ [!code-vb[System.String.Format#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/format_paramarray1.vb#10)]  
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -4795,9 +4775,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+
+[!INCLUDE[interpolated-strings](~/includes/interpolated-strings.md)] 
   
-> [!NOTE]
->  For examples and comprehensive usage information about this and other overloads of the `Format` method, see the <xref:System.String.Format%2A> overload summary.  
+This method uses the [composite formatting feature](~/docs/standard/base-types/composite-formatting.md) to convert the value of an expression to its string representation and to embed that representation in a string. In performing the conversion, the method uses culture-sensitive formatting or a custom formatter. The method converts `arg0` to its string representation by calling its **ToString(IFormatProvider)** method or, if the object's corresponding format item includes a format string, by calling its **ToString(String,IFormatProvider)** method. If these methods don't exist, it calls the object's parameterless **ToString** method.  
+
+[!INCLUDE[provider-string-format](~/includes/provider-string-format.md)]
   
  ]]></format>
         </remarks>
@@ -4857,10 +4840,19 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+
+[!INCLUDE[interpolated-strings](~/includes/interpolated-strings.md)] 
   
-> [!NOTE]
->  For examples and comprehensive usage information about this and other overloads of the `Format` method, see the <xref:System.String.Format%2A> overload summary.  
+This method uses the [composite formatting feature](~/docs/standard/base-types/composite-formatting.md) to convert four or more expressions to their string representations and to embed those representations in a string. In performing the conversion, the method uses culture-sensitive formatting or a custom formatter. The method converts each <xref:System.Object> argument to its string representation by calling its **ToString(IFormatProvider)** method or, if the object's corresponding format item includes a format string, by calling its **ToString(String,IFormatProvider)** method. If these methods don't exist, it calls the object's parameterless **ToString** method.  
+
+[!INCLUDE[provider-string-format](~/includes/provider-string-format.md)]
   
+## Example: Culture-sensitive formatting  
+ This example uses the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> method to display the string representation of some date and time values and numeric values by using several different cultures.  
+  
+ [!code-csharp[System.String.Format2#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format2/cs/Example2.cs#2)]
+ [!code-vb[System.String.Format2#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format2/vb/Example2.vb#2)]  
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -4915,9 +4907,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+
+[!INCLUDE[interpolated-strings](~/includes/interpolated-strings.md)] 
   
-> [!NOTE]
->  For examples and comprehensive usage information about this and other overloads of the `Format` method, see the <xref:System.String.Format%2A> overload summary.  
+This method uses the [composite formatting feature](~/docs/standard/base-types/composite-formatting.md) to convert the value of two expressions to their string representations and to embed those representations in a string. 
+
+[!INCLUDE[simple-string-format](~/includes/simple-string-format.md)]
 
 ## Example: Formatting two arguments  
  
@@ -4979,10 +4974,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+
+[!INCLUDE[interpolated-strings](~/includes/interpolated-strings.md)] 
   
-> [!NOTE]
->  For examples and comprehensive usage information about this and other overloads of the `Format` method, see the <xref:System.String.Format%2A> overload summary.  
-  
+This method uses the [composite formatting feature](~/docs/standard/base-types/composite-formatting.md) to convert two expressions to their string representations and to embed those representations in a string. In performing the conversion, the method uses culture-sensitive formatting or a custom formatter. The method converts each <xref:System.Object> argument to its string representation by calling its **ToString(IFormatProvider)** method or, if the object's corresponding format item includes a format string, by calling its **ToString(String,IFormatProvider)** method. If these methods don't exist, it calls the object's parameterless **ToString** method.  
+
+[!INCLUDE[provider-string-format](~/includes/provider-string-format.md)]
+    
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -5035,11 +5033,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  For examples and comprehensive usage information about this and other overloads of the `Format` method, see the <xref:System.String.Format%2A> overload summary.  
 
-<a name="Format3_Example"></a>   
+[!INCLUDE[interpolated-strings](~/includes/interpolated-strings.md)] 
+  
+This method uses the [composite formatting feature](~/docs/standard/base-types/composite-formatting.md) to convert the value of three expressions to their string representations and to embed those representations in a string. 
+
+[!INCLUDE[simple-string-format](~/includes/simple-string-format.md)]
 
 ## Example: Formatting three arguments  
  
@@ -5103,10 +5102,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+
+[!INCLUDE[interpolated-strings](~/includes/interpolated-strings.md)] 
   
-> [!NOTE]
->  For examples and comprehensive usage information about this and other overloads of the `Format` method, see the <xref:System.String.Format%2A> overload summary.  
-  
+This method uses the [composite formatting feature](~/docs/standard/base-types/composite-formatting.md) to convert three expressions to their string representations and to embed those representations in a string. In performing the conversion, the method uses culture-sensitive formatting or a custom formatter. The method converts each <xref:System.Object> argument to its string representation by calling its **ToString(IFormatProvider)** method or, if the object's corresponding format item includes a format string, by calling its **ToString(String,IFormatProvider)** method. If these methods don't exist, it calls the object's parameterless **ToString** method.  
+
+[!INCLUDE[provider-string-format](~/includes/provider-string-format.md)]
+    
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

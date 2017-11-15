@@ -25,7 +25,7 @@ When implementing a service, you define a number of contracts that describe the 
   
 -   <xref:System.ServiceModel.Activities.Receive.ServiceContractName%2A>  
   
--   <xref:System.ServiceModel.Activities.Receive.OperationContractName%2A>
+-   <xref:System.ServiceModel.Activities.Receive.OperationName%2A>
   
 -   <xref:System.ServiceModel.Activities.Receive.Action%2A>  
   

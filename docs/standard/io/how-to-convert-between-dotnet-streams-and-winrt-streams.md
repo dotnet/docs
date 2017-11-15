@@ -20,23 +20,26 @@ manager: "wpickett"
 # How to: Convert Between .NET Framework Streams and Windows Runtime Streams
 The .NET Framework for Windows Store apps is a subset of the full .NET Framework. Because of security and other requirements for Windows Store apps, you cannot use the full set of .NET Framework APIs to open and read files. For more information, see [.NET for Windows Store apps overview](http://msdn.microsoft.com/library/windows/apps/br230302.aspx). However, you may want to use .NET Framework APIs for other stream manipulation operations. To manipulate these streams, you may find it necessary to convert between a .NET Framework stream type such as <xref:System.IO.MemoryStream> or <xref:System.IO.FileStream>, and a Windows Runtime stream such as [IInputStream](http://msdn.microsoft.com/library/windows/apps/windows.storage.streams.iinputstream.aspx), [IOutputStream](http://msdn.microsoft.com/library/windows/apps/windows.storage.streams.ioutputstream.aspx), or [IRandomAccessStream](http://msdn.microsoft.com/library/windows/apps/windows.storage.streams.irandomaccessstream.aspx).  
   
- The <xref:System.IO.WindowsRuntimeStreamExtensions> class contains methods that make these conversions easy. However, there are underlying differences between streams in the .NET Framework and the Windows Runtime that will affect the results of using these methods. The details are described in the following sections.  
+ The <!--zz <xref:System.IO.WindowsRuntimeStreamExtensions>--> `System.IO.WindowsRuntimeStreamExtensions` class contains methods that make these conversions easy. However, there are underlying differences between streams in the .NET Framework and the Windows Runtime that will affect the results of using these methods. The details are described in the following sections.  
   
 <a name="BKMK_ConvertingfromaWindowsRuntimestreamtoaNETFrameworkstream"></a>   
 ## Converting from a Windows Runtime stream to a .NET Framework stream  
- You can convert from a Windows Runtime stream to a .NET Framework stream by using one of the following <xref:System.IO.WindowsRuntimeStreamExtensions> methods:  
+ You can convert from a Windows Runtime stream to a .NET Framework stream by using one of the following <!--zz <xref:System.IO.WindowsRuntimeStreamExtensions>--> `System.IO.WindowsRuntimeStreamExtensions` methods:  
   
--   <xref:System.IO.WindowsRuntimeStreamExtensions.AsStream%2A> Converts a random-access stream in the Windows Runtime to a managed stream in the .NET for Windows Store apps subset.  
+ <!--zz <xref:System.IO.WindowsRuntimeStreamExtensions.AsStream%2A> --> `System.IO.WindowsRuntimeStreamExtensions.AsStream`  
+ Converts a random-access stream in the Windows Runtime to a managed stream in the .NET for Windows Store apps subset.  
   
--   <xref:System.IO.WindowsRuntimeStreamExtensions.AsStreamForWrite%2A> Converts an output stream in the Windows Runtime to a managed stream in the .NET for Windows Store apps subset.  
+ <!--zz <xref:System.IO.WindowsRuntimeStreamExtensions.AsStreamForWrite%2A> --> `System.IO.WindowsRuntimeStreamExtensions.AsStreamForWrite`
+ Converts an output stream in the Windows Runtime to a managed stream in the .NET for Windows Store apps subset.  
   
--   <xref:System.IO.WindowsRuntimeStreamExtensions.AsStreamForRead%2A> Converts an input stream in the Windows Runtime to a managed stream in the .NET for Windows Store apps subset.  
+ <!--zz <xref:System.IO.WindowsRuntimeStreamExtensions.AsStreamForRead%2A> --> `System.IO.WindowsRuntimeStreamExtensions.AsStreamForRead`  
+ Converts an input stream in the Windows Runtime to a managed stream in the .NET for Windows Store apps subset.  
   
  The Windows Runtime offers stream types that support reading only, writing only or reading and writing, and these capabilities are maintained when you convert a Windows Runtime stream to a .NET Framework stream. Furthermore, if you convert a Windows Runtime stream to a .NET Framework stream and back, you get the original Windows Runtime instance back. It’s best practice to use the conversion method that matches the capabilities of the Windows Runtime stream you would like to convert. However, since [IRandomAccessStream](http://msdn.microsoft.com/library/windows/apps/windows.storage.streams.irandomaccessstream.aspx) is readable and writeable (it implements both [IOutputStream](http://msdn.microsoft.com/library/windows/apps/windows.storage.streams.ioutputstream.aspx) and [IInputStream](http://msdn.microsoft.com/library/windows/apps/windows.storage.streams.iinputstream.aspx)), you can use any of the conversion methods and the capabilities of the original stream are maintained. For example, using <!--zz <xref:System.IO.WindowsRuntimeStreamExtensions.AsStreamForRead%2A> --> `System.IO.WindowsRuntimeStreamExtensions.AsStreamForRead` to convert an [IRandomAccessStream](http://msdn.microsoft.com/library/windows/apps/windows.storage.streams.irandomaccessstream.aspx) will not limit the converted .NET Framework stream to being readable only; it will also be writable.  
   
 #### To convert from a Windows Runtime random-access stream to a .NET Framework stream  
   
--   Use the <xref:System.IO.WindowsRuntimeStreamExtensions.AsStream%2A> method.  
+-   Use the <!--zz <xref:System.IO.WindowsRuntimeStreamExtensions.AsStream%2A> --> `System.IO.WindowsRuntimeStreamExtensions.AsStream` method.  
   
      The following code example shows how to prompt the user to select a file, open it with Windows Runtime APIs, and then convert it to a .NET Framework stream, which is read and output to a text block. In this scenario, you would typically manipulate the stream with .NET Framework APIs before outputting the results.  
   
@@ -49,11 +52,13 @@ The .NET Framework for Windows Store apps is a subset of the full .NET Framework
   
 <a name="BKMK_ConvertingfromaNETFrameworkstreamtoaWindowsRuntimestream"></a>   
 ## Converting from a .NET Framework stream to a Windows Runtime stream  
- You can convert from a .NET Framework stream to a Windows Runtime stream by using one of the following <xref:System.IO.WindowsRuntimeStreamExtensions> methods:  
+ You can convert from a .NET Framework stream to a Windows Runtime stream by using one of the following <!--zz <xref:System.IO.WindowsRuntimeStreamExtensions>--> `System.IO.WindowsRuntimeStreamExtensions` methods:  
   
--   <xref:System.IO.WindowsRuntimeStreamExtensions.AsInputStream%2A> Converts a managed stream in the .NET for Windows Store apps subset to an input stream in the Windows Runtime.  
+ <!--zz <xref:System.IO.WindowsRuntimeStreamExtensions.AsInputStream%2A> --> `System.IO.WindowsRuntimeStreamExtensions.AsInputStream`  
+ Converts a managed stream in the .NET for Windows Store apps subset to an input stream in the Windows Runtime.  
   
--   <xref:System.IO.WindowsRuntimeStreamExtensions.AsOutputStream%2A> Converts a managed stream in the .NET for Windows Store apps subset to an output stream in the Windows Runtime.  
+<!--zz <xref:System.IO.WindowsRuntimeStreamExtensions.AsOutputStream%2A>  --> `System.IO.WindowsRuntimeStreamExtensions.AsOutputStream`
+ Converts a managed stream in the .NET for Windows Store apps subset to an output stream in the Windows Runtime.  
   
  [AsRandomAccessStream](../../../docs/standard/cross-platform/windowsruntimestreamextensions-asrandomaccessstream-method.md)  
  Converts a managed stream in the .NET for Windows Store apps subset to a random-access stream that can be used for reading or writing in the Windows Runtime.  

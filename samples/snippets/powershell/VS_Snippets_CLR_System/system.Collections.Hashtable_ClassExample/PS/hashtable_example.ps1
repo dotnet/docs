@@ -3,7 +3,7 @@
 # Create as ordered
 $OpenWith = @{}
 
-# Add some elements to the hash table. Therea re no
+# Add some elements to the hash table. There are no
 # duplicate keys but some of the values are duplicated
 $OpenWith.Add('txt', 'notepad.exe')
 $openWith.Add('dib', 'paint.exe')

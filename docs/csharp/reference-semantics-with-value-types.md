@@ -100,7 +100,7 @@ values for any `in` parameter. The follow code uses that to specify the origin
 [!code-csharp[InArgumentDefault](../../samples/csharp/reference-semantics/Program.cs#InArgumentDefault "Specifying defaults for an in parameter")]
 
 The `in` parameter designation can also be used with reference types or built in
-numeric values. However, the benefits inn both cases are minimal, if any.
+numeric values. However, the benefits in both cases are minimal, if any.
 
 ## `ref readonly` returns
 

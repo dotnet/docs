@@ -95,5 +95,5 @@ For more information, see the [spec of the compatibility pack](https://github.co
     }
     ```
 
-For a demo, check out the [Channel 9 video of the Windows Compatibility Pack](https://channel9.msdn.com).
+For a demo, check out the [Channel 9 video of the Windows Compatibility Pack](https://channel9.msdn.com/Events/Connect/2017/T123).
 

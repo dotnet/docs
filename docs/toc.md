@@ -150,6 +150,7 @@
 ### [Organizing projects for .NET Core](core/porting/project-structure.md)
 ### [Analyzing third-party dependencies](core/porting/third-party-deps.md)
 ### [Porting libraries](core/porting/libraries.md)
+### [Using the Windows Compatibility Pack](core/porting/windows-compat-pack.md)
 <!--### [🔧 NuGet packages](core/porting/nuget-packages.md)-->
 ## [Build .NET Core from source](core/build/index.md)
 ### [.NET Core distribution packaging](core/build/distribution-packaging.md)

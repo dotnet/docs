@@ -204,6 +204,7 @@
 <!-- The "What's New" section is short, and one level
     deep, so leave it in the main TOC -->
 ## [What's new in C#](csharp/whats-new/index.md) 
+### [What's new in C# 7.2](csharp/whats-new/csharp-7-2.md)
 ### [What's new in C# 7.1](csharp/whats-new/csharp-7-1.md)
 ### [What's new in C# 7](csharp/whats-new/csharp-7.md)
 ### [What's new in C# 6](csharp/whats-new/csharp-6.md)
@@ -242,6 +243,7 @@
 ### [Asynchronous programming](csharp/async.md)
 <!--### [🔧 Parallel programming](csharp/parallel.md)-->
 ### [Pattern Matching](csharp/pattern-matching.md)
+### [Reference semantics with value types](csharp/reference-semantics-with-value-types.md)
 ### [Expression Trees](csharp/expression-trees.md)
 #### [Expression Trees Explained](csharp/expression-trees-explained.md)
 #### [Framework Types Supporting Expression Trees](csharp/expression-classes.md)

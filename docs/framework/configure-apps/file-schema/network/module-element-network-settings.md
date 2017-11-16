@@ -32,8 +32,8 @@ Adds a new proxy module to the application.
 ## Syntax  
   
 ```xml  
-      <module   
-   type = "name", System, Version="version number", Culture="culture", PublicKeyToken="token" "   
+<module   
+  type="name, System, Version=version number, Culture=culture, PublicKeyToken=token"   
 />  
 ```  
   
@@ -71,7 +71,7 @@ Adds a new proxy module to the application.
   <system.net>  
     <defaultProxy>  
       <module  
-        type = "Test.CustomWebProxy, System, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"  
+        type="Test.CustomWebProxy, System, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"  
       />  
     </defaultProxy>  
   </system.net>  

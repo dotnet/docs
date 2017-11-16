@@ -32,7 +32,7 @@ Describes whether FTP caching is active and describes the default caching policy
 ## Syntax  
   
 ```xml  
-< defaultFtpCachePolicy  
+<defaultFtpCachePolicy  
   policyLevel="BypassCache|Default|CacheOnly|CacheIfAvailable|Revalidate|Reload|NoCacheNoStore|Revalidate"  
 />  
 ```  
@@ -78,7 +78,7 @@ Describes whether FTP caching is active and describes the default caching policy
   <system.net>  
     <requestCaching>  
       <defaultFtpCachePolicy  
-        Level="NoCacheNoStore">  
+        policyLevel="NoCacheNoStore">  
       </defaultFtpCachePolicy>  
     </requestCaching>  
   </system.net>  

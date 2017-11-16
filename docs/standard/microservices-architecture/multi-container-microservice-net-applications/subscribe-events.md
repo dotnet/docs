@@ -312,6 +312,9 @@ If the “redelivered” flag is set, the receiver must take that into account, 
 
 ### Additional resources
 
+-   **Forked eShopOnContainers using NServiceBus (Particular Software)**
+    [*http://go.particular.net/eShopOnContainers*](http://go.particular.net/eShopOnContainers)
+
 -   **Event Driven Messaging**
     [*http://soapatterns.org/design\_patterns/event\_driven\_messaging*](http://soapatterns.org/design_patterns/event_driven_messaging)
 

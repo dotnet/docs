@@ -4,7 +4,7 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 10/30/2017
+ms.date: 11/16/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.topic: article
@@ -13,7 +13,9 @@ ms.topic: article
 
 We should start by saying that if you create your custom event bus based on RabbitMQ running in a container, as the eShopOnContainers application does, it should be used only for your development and test environments. You should not use it for your production environment, unless you are building it as a part of a production-ready service bus. A simple custom event bus might be missing many production-ready critical features that a commercial service bus has.
 
-The eShopOnContainers custom implementation of an event bus is basically a library using the RabbitMQ API. The implementation lets microservices subscribe to events, publish events, and receive events, as shown in Figure 8-21.
+One of the event bus custom implementation in eShopOnContainers is basically a library using the RabbitMQ API (There’s another implementation based on Azure Service Bus). 
+
+The event bus implementation lets microservices subscribe to events, publish events, and receive events, as shown in Figure 8-21.
 
 ![](./media/image22.png)
 

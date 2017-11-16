@@ -32,11 +32,11 @@ Specifies whether socket operations use completion ports.
 ## Syntax  
   
 ```xml  
-      <socket  
+<socket  
   alwaysUseCompletionPortsForConnect="true|false"  
   alwaysUseCompletionPortsForAccept="true|false"  
-  ipProtectionLevel ="EdgeRestricted|Restricted|Unrestricted|Unspecified"  
-/socket>  
+  ipProtectionLevel="EdgeRestricted|Restricted|Unrestricted|Unspecified"  
+/>  
 ```  
   
 ## Attributes and Elements  

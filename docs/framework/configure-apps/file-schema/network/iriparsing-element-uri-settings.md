@@ -30,7 +30,7 @@ Specifies if International Resource Identifier (IRI) parsing is applied to a <xr
 ```xml  
 <idn  
   enabled="true|false"  
-/idn>  
+/>  
 ```  
   
 ## Attributes and Elements  

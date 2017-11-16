@@ -187,8 +187,7 @@ using `Span<T>` for simplicity.
 
 The `ref struct` declaration declares that a struct of this type must be
 on the stack. The language rules ensure the safe use of these types. Other
-types declared as `ref struct` include `ReadOnlySpan<T>`, `Memory<T>`, and
-`ReadOnlyMemory<T>`. 
+types declared as `ref struct` include `ReadOnlySpan<T>`. 
 
 The goal of keeping a `ref struct` type as a stack-allocated variable
 introduces several rules that the compiler enforces for all `ref struct`

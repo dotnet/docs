@@ -1,4 +1,4 @@
----
+--
 title: "&lt;ipv6&gt; Element (Network Settings)"
 ms.custom: ""
 ms.date: "03/30/2017"
@@ -32,9 +32,9 @@ Enables Internet Protocol version 6 (IPv6) responses from obsolete members of th
 ## Syntax  
   
 ```xml  
-<ipv6>  
+<ipv6  
   enabled="true|false"  
-</ipv6>  
+/>  
 ```  
   
 ## Attributes and Elements  

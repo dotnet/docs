@@ -32,7 +32,7 @@ Customizes Web request parameters.
 ## Syntax  
   
 ```xml  
-      <httpWebRequest  
+<httpWebRequest  
   maximumResponseHeadersLength="size"  
   maximumErrorResponseLength="size"  
   maximumUnauthorizedUploadLength="size"  

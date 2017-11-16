@@ -26,8 +26,8 @@ Customizes parameters used by the <xref:System.Net.HttpListener> class.
 ## Syntax  
   
 ```xml  
-      <httpListener  
-  unescapeRequestUrl ="true|false"  
+<httpListener  
+  unescapeRequestUrl="true|false"  
 />  
 ```  
   

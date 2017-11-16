@@ -35,7 +35,7 @@ Removes a custom Web request module from the application.
   
 ```xml  
 <remove   
-  name="URI prefix"   
+  prefix="URI prefix"   
 />  
 ```  
   
@@ -46,7 +46,7 @@ Removes a custom Web request module from the application.
   
 |**Attribute**|**Description**|  
 |-------------------|---------------------|  
-|`name`|The URI prefix for requests handled by this Web request module.|  
+|`prefix`|The URI prefix for requests handled by this Web request module.|  
   
 ### Child Elements  
  None.  

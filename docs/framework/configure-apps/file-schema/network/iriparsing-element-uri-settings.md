@@ -28,7 +28,7 @@ Specifies if International Resource Identifier (IRI) parsing is applied to a <xr
 ## Syntax  
   
 ```xml  
-<idn  
+<iriParsing  
   enabled="true|false"  
 />  
 ```  

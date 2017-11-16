@@ -33,7 +33,7 @@ Configures the local directory for a Simple Mail Transport Protocol (SMTP) serve
 ## Syntax  
   
 ```xml  
-      <specifiedPickupDirectory  
+<specifiedPickupDirectory  
   pickupDirectoryLocation="directory"   
 />  
 ```  

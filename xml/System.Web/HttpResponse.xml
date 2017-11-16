@@ -1619,7 +1619,7 @@
         <Parameter Name="url" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="url">The target location.</param>
+        <param name="url">The target location. This may be an application-relative virtual path.</param>
         <summary>Redirects a request to a new URL and specifies the new URL.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

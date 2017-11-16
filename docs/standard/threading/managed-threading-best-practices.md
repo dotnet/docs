@@ -40,7 +40,7 @@ If Monitor.TryEnter(lockObject, 300) Then
     Try  
         ' Place code protected by the Monitor here.  
     Finally  
-        Monitor.Exit(Me)  
+        Monitor.Exit(lockObject)  
     End Try  
 Else  
     ' Code to execute if the attempt times out.  

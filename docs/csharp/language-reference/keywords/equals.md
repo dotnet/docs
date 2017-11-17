@@ -21,7 +21,7 @@ The `equals` contextual keyword is used in a `join` clause in a query expression
 ## Example  
  The following example shows the use of the `equals` keyword in a `join` clause.  
   
- [!code-cs[csrefKeywordsContextual#12](../../../csharp/language-reference/keywords/codesnippet/CSharp/equals_1.cs)]  
+ [!code-csharp[csrefKeywordsContextual#12](../../../csharp/language-reference/keywords/codesnippet/CSharp/equals_1.cs)]  
   
 ## See Also  
  [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)

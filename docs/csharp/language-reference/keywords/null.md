@@ -20,7 +20,7 @@ The `null` keyword is a literal that represents a null reference, one that does 
   
  The following example demonstrates some behaviors of the null keyword:  
   
- [!code-cs[csrefKeywordsLiteral#1](../../../csharp/language-reference/keywords/codesnippet/CSharp/null_1.cs)]  
+ [!code-csharp[csrefKeywordsLiteral#1](../../../csharp/language-reference/keywords/codesnippet/CSharp/null_1.cs)]  
   
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  

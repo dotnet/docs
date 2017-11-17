@@ -23,7 +23,7 @@ Binary `|` operators are predefined for the integral types and `bool`. For integ
  User-defined types can overload the `|` operator (see [operator](../../../csharp/language-reference/keywords/operator.md)).  
   
 ## Example  
- [!code-cs[csRefOperators#31](../../../csharp/language-reference/operators/codesnippet/CSharp/or-operator_1.cs)]  
+ [!code-csharp[csRefOperators#31](../../../csharp/language-reference/operators/codesnippet/CSharp/or-operator_1.cs)]  
   
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   

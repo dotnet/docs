@@ -16,5 +16,5 @@ All these orchestrators are mature environments if you are using Linux Docker co
 For example, in Kubernetes, support for containers is native (first-class citizen), so using Windows Containers on Kubernetes is also very effective and reliable (in preview until early fall 2017).
 
 >[!div class="step-by-step"]
-[Previous](when-to-deploy-windows-containers-to-service-fabric.md)  
+[Previous](when-to-deploy-windows-containers-to-service-fabric.md)
 [Next](build-resilient-services-ready-for-the-cloud-embrace-transient-failures-in-the-cloud.md)

@@ -122,5 +122,5 @@ The primary compute environments in Azure (in general availability, as of mid-20
 You also can deploy Windows Containers to other orchestrators, like Kubernetes, Docker Swarm, or DC/OS. Currently (early fall 2017), these platforms are in preview in Azure Container Service for using Windows Containers.
 
 >[!div class="step-by-step"]
-[Previous](microsoft-technologies-in-cloud-devops-ready-applications.md)  
+[Previous](microsoft-technologies-in-cloud-devops-ready-applications.md)
 [Next](how-to-deploy-existing-net-apps-to-azure-app-service.md)

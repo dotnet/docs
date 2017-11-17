@@ -17,5 +17,5 @@ Partially modernizing an app doesn't necessarily mean a full migration and re-ar
 > **Figure 4-1.** Positioning Cloud DevOps-Ready applications
 
 >[!div class="step-by-step"]
-[Previous](../migrate-your-relational-databases-to-azure.md)  
+[Previous](../migrate-your-relational-databases-to-azure.md)
 [Next](reasons-to-lift-and-shift-existing-net-apps-to-cloud-devops-ready-applications.md)

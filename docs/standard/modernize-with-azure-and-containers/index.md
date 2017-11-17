@@ -191,4 +191,5 @@ Both sample apps have a second version, with modernized code, and which are fair
 
 We wrote this guide to help you understand your options for improving and modernizing existing .NET web applications. The guide and related sample applications are evolving. We welcome your feedback! If you have comments about how this guide might be more helpful, please send them to [dotnet-architecture-ebooks-feedback@service.microsoft.com](mailto:dotnet-architecture-ebooks-feedback@service.microsoft.com?subject=Feedback%20for%20.NET%20Container%20&%20Microservices%20Architecture%20book).
 
+>[!div class="step-by-step"]
 [Next](lift-and-shift-existing-apps-azure-iaas.md)

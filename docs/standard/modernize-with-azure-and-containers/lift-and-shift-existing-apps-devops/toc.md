@@ -1,4 +1,4 @@
-# [lift and shift existing apps devops](index.md)
+# [Lift and shift existing apps DevOps](index.md)
 ## [Reasons to lift and shift existing .NET apps to Cloud DevOps-Ready applications](reasons-to-lift-and-shift-existing-net-apps-to-cloud-devops-ready-applications.md)
 ## [Microsoft technologies in Cloud DevOps-Ready applications](microsoft-technologies-in-cloud-devops-ready-applications.md)
 ## [What about Cloud-Optimized applications?](what-about-cloud-optimized-applications.md)

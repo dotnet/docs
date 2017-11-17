@@ -38,7 +38,7 @@ x = x + y
  The `+=` operator is also used to specify a method that will be called in response to an event; such methods are called event handlers. The use of the `+=` operator in this context is referred to as *subscribing to an event*. For more information, see [How to: Subscribe to and Unsubscribe from Events](../../../csharp/programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md). and [Delegates](../../../csharp/programming-guide/delegates/index.md).  
   
 ## Example  
- [!code-cs[csRefOperators#35](../../../csharp/language-reference/operators/codesnippet/CSharp/addition-assignment-operator_1.cs)]  
+ [!code-csharp[csRefOperators#35](../../../csharp/language-reference/operators/codesnippet/CSharp/addition-assignment-operator_1.cs)]  
   
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   

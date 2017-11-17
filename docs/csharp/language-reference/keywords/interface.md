@@ -20,7 +20,7 @@ An interface contains only the signatures of [methods](../../../csharp/programmi
  For more information and examples, see [Interfaces](../../../csharp/programming-guide/interfaces/index.md).  
   
 ## Example  
- [!code-cs[csrefKeywordsTypes#14](../../../csharp/language-reference/keywords/codesnippet/CSharp/interface_1.cs)]  
+ [!code-csharp[csrefKeywordsTypes#14](../../../csharp/language-reference/keywords/codesnippet/CSharp/interface_1.cs)]  
   
  An interface can be a member of a namespace or a class and can contain signatures of the following members:  
   
@@ -43,7 +43,7 @@ An interface contains only the signatures of [methods](../../../csharp/programmi
 ## Example  
  The following example demonstrates interface implementation. In this example, the interface contains the property declaration and the class contains the implementation. Any instance of a class that implements `IPoint` has integer properties `x` and `y`.  
   
- [!code-cs[csrefKeywordsTypes#15](../../../csharp/language-reference/keywords/codesnippet/CSharp/interface_2.cs)]  
+ [!code-csharp[csrefKeywordsTypes#15](../../../csharp/language-reference/keywords/codesnippet/CSharp/interface_2.cs)]  
   
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  

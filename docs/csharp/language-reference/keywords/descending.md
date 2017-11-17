@@ -21,7 +21,7 @@ The `descending` contextual keyword is used in the [orderby clause](../../../csh
 ## Example  
  The following example shows the use of `descending` in an [orderby clause](../../../csharp/language-reference/keywords/orderby-clause.md).  
   
- [!code-cs[csrefKeywordsContextual#11](../../../csharp/language-reference/keywords/codesnippet/CSharp/descending_1.cs)]  
+ [!code-csharp[csrefKeywordsContextual#11](../../../csharp/language-reference/keywords/codesnippet/CSharp/descending_1.cs)]  
   
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   

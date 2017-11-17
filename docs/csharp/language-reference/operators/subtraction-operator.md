@@ -28,7 +28,7 @@ The `-` operator can function as either a unary or a binary operator.
  User-defined types can overload the unary `-` and binary `-` operators. For more information, see [operator (C# Reference)](../../../csharp/language-reference/keywords/operator.md).  
   
 ## Example  
- [!code-cs[csRefOperators#40](../../../csharp/language-reference/operators/codesnippet/CSharp/subtraction-operator_1.cs)]  
+ [!code-csharp[csRefOperators#40](../../../csharp/language-reference/operators/codesnippet/CSharp/subtraction-operator_1.cs)]  
   
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   

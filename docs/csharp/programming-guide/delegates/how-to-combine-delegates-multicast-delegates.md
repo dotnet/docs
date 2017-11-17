@@ -19,7 +19,7 @@ This example demonstrates how to create multicast delegates. A useful property o
  The `-` operator can be used to remove a component delegate from a multicast delegate.  
   
 ## Example  
- [!code-cs[csProgGuideDelegates#11](../../../csharp/programming-guide/delegates/codesnippet/CSharp/how-to-combine-delegates-multicast-delegates_1.cs)]  
+ [!code-csharp[csProgGuideDelegates#11](../../../csharp/programming-guide/delegates/codesnippet/CSharp/how-to-combine-delegates-multicast-delegates_1.cs)]  
   
 ## See Also  
  <xref:System.MulticastDelegate>   

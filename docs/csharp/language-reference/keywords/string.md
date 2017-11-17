@@ -95,7 +95,7 @@ Console.WriteLine(a);
  For more information about strings in C#, see [Strings](../../../csharp/programming-guide/strings/index.md).  
   
 ## Example  
- [!code-cs[csrefKeywordsTypes#17](../../../csharp/language-reference/keywords/codesnippet/CSharp/string_1.cs)]  
+ [!code-csharp[csrefKeywordsTypes#17](../../../csharp/language-reference/keywords/codesnippet/CSharp/string_1.cs)]  
   
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  

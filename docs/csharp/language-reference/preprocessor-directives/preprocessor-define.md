@@ -16,8 +16,10 @@ ms.author: "wiwagn"
 ---
 # #define (C# Reference)
 You use `#define` to define a symbol. When you use the symbol as the expression that's passed to the [#if](../../../csharp/language-reference/preprocessor-directives/preprocessor-if.md) directive, the expression will evaluate to `true`, as the following example shows:  
-  
- `#`  `define`   `DEBUG`  
+ 
+ ```csharp
+ #define DEBUG
+ ```
   
 ## Remarks  
   

@@ -56,4 +56,5 @@ For a comparison of `protected` with the other access modifiers, see [Accessibil
  [Modifiers](../../../csharp/language-reference/keywords/modifiers.md)   
  [public](../../../csharp/language-reference/keywords/public.md)   
  [private](../../../csharp/language-reference/keywords/private.md)   
- [internal](../../../csharp/language-reference/keywords/internal.md)
+ [internal](../../../csharp/language-reference/keywords/internal.md)   
+ [Security concerns for internal virtual keywords](https://msdn.microsoft.com/library/heyd8kky(v=vs.110))

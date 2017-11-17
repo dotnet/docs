@@ -1,3 +1,13 @@
+---
+title: "private protected (C# Reference)"
+ms.date: 11/15/2017
+ms.prod: .net
+ms.technology: 
+  - "devlang-csharp"
+ms.topic: "article"
+author: "sputier"
+ms.author: "wiwagn"
+---
 # private protected (C# Reference)
 The `private protected` keyword combination is a member access modifier. A private protected member is accessible by types derived from the containing class, but only within its containing assembly. For a comparison of `private protected` with the other access modifiers, see [Accessibility Levels](../../../csharp/language-reference/keywords/accessibility-levels.md). 
    
@@ -59,4 +69,5 @@ The `private protected` keyword combination is a member access modifier. A priva
  [Modifiers](../../../csharp/language-reference/keywords/modifiers.md)   
  [public](../../../csharp/language-reference/keywords/public.md)   
  [private](../../../csharp/language-reference/keywords/private.md)   
- [internal](../../../csharp/language-reference/keywords/internal.md)
+ [internal](../../../csharp/language-reference/keywords/internal.md)   
+ [Security concerns for internal virtual keywords](https://msdn.microsoft.com/library/heyd8kky(v=vs.110))

@@ -24,7 +24,7 @@ A left outer join is a join in which each element of the first collection is ret
 > [!NOTE]
 >  The default value for a reference type is `null`; therefore, the example checks for a null reference before accessing each element of each `Pet` collection.  
   
- [!code-cs[CsLINQProgJoining#7](../../../samples/snippets/csharp/concepts/linq/how-to-perform-left-outer-joins_1.cs)]  
+ [!code-csharp[CsLINQProgJoining#7](../../../samples/snippets/csharp/concepts/linq/how-to-perform-left-outer-joins_1.cs)]  
  
 ## See also  
  <xref:System.Linq.Enumerable.Join%2A>   

@@ -27,7 +27,7 @@ The `??` operator is called the null-coalescing operator.  It returns the left-h
  The result of a ?? operator is not considered to be a constant even if both its arguments are constants.  
   
 ## Example  
- [!code-cs[csRefOperators#53](../../../csharp/language-reference/operators/codesnippet/CSharp/null-conditional-operator_1.cs)]  
+ [!code-csharp[csRefOperators#53](../../../csharp/language-reference/operators/codesnippet/CSharp/null-conditional-operator_1.cs)]  
   
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   

@@ -38,7 +38,7 @@ x & y
 ## Example  
  In the following example, the conditional expression in the second `if` statement evaluates only the first operand because the operand returns `false`.  
   
- [!code-cs[csRefOperators#48](../../../csharp/language-reference/operators/codesnippet/CSharp/conditional-and-operator_1.cs)]  
+ [!code-csharp[csRefOperators#48](../../../csharp/language-reference/operators/codesnippet/CSharp/conditional-and-operator_1.cs)]  
   
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  

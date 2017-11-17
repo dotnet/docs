@@ -27,7 +27,7 @@ For generic type parameters, the `out` keyword specifies that the type parameter
 ## Example  
  The following example shows how to declare, extend, and implement a covariant generic interface. It also shows how to use implicit conversion for classes that implement a covariant interface.  
   
- [!code-cs[csVarianceKeywords#3](../../../csharp/language-reference/keywords/codesnippet/CSharp/out-generic-modifier_1.cs)]  
+ [!code-csharp[csVarianceKeywords#3](../../../csharp/language-reference/keywords/codesnippet/CSharp/out-generic-modifier_1.cs)]  
   
  In a generic interface, a type parameter can be declared covariant if it satisfies the following conditions:  
   
@@ -41,7 +41,7 @@ For generic type parameters, the `out` keyword specifies that the type parameter
 ## Example  
  The following example shows how to declare, instantiate, and invoke a covariant generic delegate. It also shows how to implicitly convert delegate types.  
   
- [!code-cs[csVarianceKeywords#4](../../../csharp/language-reference/keywords/codesnippet/CSharp/out-generic-modifier_2.cs)]  
+ [!code-csharp[csVarianceKeywords#4](../../../csharp/language-reference/keywords/codesnippet/CSharp/out-generic-modifier_2.cs)]  
   
  In a generic delegate, a type can be declared covariant if it is used only as a method return type and not used for method arguments.  
   

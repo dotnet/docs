@@ -32,9 +32,9 @@ Enables Internet Protocol version 6 (IPv6) responses from obsolete members of th
 ## Syntax  
   
 ```xml  
-      <ipv6  
+<ipv6  
   enabled="true|false"  
-/ipv6>  
+/>  
 ```  
   
 ## Attributes and Elements  

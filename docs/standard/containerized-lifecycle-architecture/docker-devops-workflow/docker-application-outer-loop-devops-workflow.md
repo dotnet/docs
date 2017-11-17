@@ -1,5 +1,5 @@
 ---
-title: Steps in the outer-loop DevOps workflow for a Docker application | Microsoft Docs 
+title: Steps in the outer-loop DevOps workflow for a Docker application
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

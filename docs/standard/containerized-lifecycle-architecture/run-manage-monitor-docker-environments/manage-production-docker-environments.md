@@ -1,5 +1,5 @@
 ---
-title: Manage production Docker environments | Microsoft Docs 
+title: Manage production Docker environments
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

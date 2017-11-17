@@ -19,7 +19,7 @@ Copyright © 2017 by Microsoft Corporation
 
 All rights reserved. No part of the contents of this book may be reproduced in any form or by any means without the written permission of the publisher.
 
-This book is available for free in the form of an electronic book (eBook) available through multiple channels at Microsoft such as <http://dot.net/architecture>
+This book is available for free in the form of an electronic book (e-book) available through multiple channels at Microsoft such as <http://dot.net/architecture>
 
 If you have questions related to this book, email at [dotnet-architecture-ebooks-feedback@service.microsoft.com](mailto:dotnet-architecture-ebooks-feedback@service.microsoft.com?subject=Feedback%20for%20.NET%20Container%20&%20Microservices%20Architecture%20book)
 
@@ -159,15 +159,15 @@ This guide covers a specific subset of the example scenarios, as shown in Figure
 
 The focus of this guide is specific. We show you the path you can take to achieve a lift and shift of your existing .NET applications, without re-architecting, and with no code changes. Ultimately, we show you how to make your application Cloud DevOps-Ready.
 
-This guide doesn't show you how to work with cloud-native applications, such as how to evolve to a microservices architectures. To re-architect your applications or to create brand-new applications that are based on microservices, see the eBook [.NET Microservices: Architecture for containerized .NET applications](https://aka.ms/microservicesebook).
+This guide doesn't show you how to work with cloud-native applications, such as how to evolve to a microservices architectures. To re-architect your applications or to create brand-new applications that are based on microservices, see the e-book [.NET Microservices: Architecture for containerized .NET applications](https://aka.ms/microservicesebook).
 
 ### Additional resources
 
--   **Containerized Docker application lifecycle with Microsoft platform and tools** (downloadable eBook): [*https://aka.ms/dockerlifecycleebook*](https://aka.ms/dockerlifecycleebook)
+-   **Containerized Docker application lifecycle with Microsoft platform and tools** (downloadable e-book): [*https://aka.ms/dockerlifecycleebook*](https://aka.ms/dockerlifecycleebook)
 
--   **.NET Microservices: Architecture for containerized .NET applications** (downloadable eBook): [*https://aka.ms/microservicesebook*](https://aka.ms/microservicesebook)
+-   **.NET Microservices: Architecture for containerized .NET applications** (downloadable e-book): [*https://aka.ms/microservicesebook*](https://aka.ms/microservicesebook)
 
--   **Architecting modern web applications with ASP.NET Core and Azure** (downloadable eBook): [*https://aka.ms/webappebook*](https://aka.ms/webappebook)
+-   **Architecting modern web applications with ASP.NET Core and Azure** (downloadable e-book): [*https://aka.ms/webappebook*](https://aka.ms/webappebook)
 
 ## Who should use this guide
 

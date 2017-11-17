@@ -1,5 +1,5 @@
 ---
-title: Docker terminology | Microsoft Docs 
+title: Docker terminology
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

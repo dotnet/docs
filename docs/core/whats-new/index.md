@@ -151,7 +151,7 @@ You can now install the .NET Core SDK independently of Visual Studio. This makes
 
 ### .NET Application Architecture
 
-[.NET Application Architecture](https://www.microsoft.com/net/learn/architecture) gives you access to a set of eBooks that provide guidance, best practices, and sample applications when using .NET to build:
+[.NET Application Architecture](https://www.microsoft.com/net/learn/architecture) gives you access to a set of e-books that provide guidance, best practices, and sample applications when using .NET to build:
 
 - Microservices and Docker containers.
 - Web applications with ASP.NET.

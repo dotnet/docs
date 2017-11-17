@@ -1,5 +1,5 @@
 ---
-title: Introduction to containers and docker | Microsoft Docs 
+title: Introduction to containers and Docker
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

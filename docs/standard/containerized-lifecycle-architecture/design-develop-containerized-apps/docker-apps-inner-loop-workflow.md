@@ -1,5 +1,5 @@
 ---
-title: Inner-loop development workflow for Docker apps | Microsoft Docs 
+title: Inner-loop development workflow for Docker apps
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

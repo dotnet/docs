@@ -1,5 +1,5 @@
 ---
-title: Monolithic applications | Microsoft Docs 
+title: Monolithic applications
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
@@ -38,13 +38,13 @@ You can deploy monolithic applications in Azure by using dedicated VMs for each 
 
 Figure 4-3: Multiple hosts scaling-out a single Docker application apps/containers
 
-You can manage the deployment to the various hosts via traditional deployment techniques. You can manage Docker hosts by using commands like docker run manually, through automation such as Continuous Delivery (CD) pipelines, which we explain later in this ebook.
+You can manage the deployment to the various hosts via traditional deployment techniques. You can manage Docker hosts by using commands like `docker run` manually, through automation such as Continuous Delivery (CD) pipelines, which we explain later in this e-book.
 
 ## Monolithic application deployed as a container
 
 There are benefits to using containers to manage monolithic deployments. Scaling the instances of containers is far faster and easier than deploying additional VMs. Although VM Scale Sets are a great feature to scale VMs, which are required to host your Docker containers, they take time to set up. When deployed as app instances, the configuration of the app is managed as part of the VM.
 
-Deploying updates as Docker images is far faster and network efficient. The Vn instances can be set up on the same hosts as your Vn-1 instances, eliminating added costs resulting from additional VMs. Docker images typically start in seconds, speeding rollouts. Tearing down a Docker instance is as easy as invoking the docker stop command, typically completing in less than a second.
+Deploying updates as Docker images is far faster and network efficient. The Vn instances can be set up on the same hosts as your Vn-1 instances, eliminating added costs resulting from additional VMs. Docker images typically start in seconds, speeding rollouts. Tearing down a Docker instance is as easy as invoking the `docker stop` command, typically completing in less than a second.
 
 Because containers are inherently immutable, by design, you never need to worry about corrupted VMs because an update script forgot to account for some specific configuration or file left on disk.
 

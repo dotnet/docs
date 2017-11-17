@@ -1,5 +1,5 @@
 ---
-title: Introduction to the microsoft platform and tools for containerized apps
+title: Introduction to the Microsoft platform and tools for containerized apps
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

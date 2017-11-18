@@ -10,5 +10,6 @@
 ## [Metadata](metadata/)
 ## [Profiling](profiling/)
 ## [Strong Naming](strong-naming/)
+## [WMI and Performance Counters](wmi/)
 ## [Tlbexp Helper Functions](tlbexp/)
 ## [GUID_ManagedName Attribute](guid-managedname-attribute.md)

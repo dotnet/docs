@@ -21,7 +21,7 @@ In C#, arguments can be passed to parameters either by value or by reference. Pa
   
  The following example illustrates the difference between value and reference parameters.  
   
- [!code-cs[csProgGuideParameters#10](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/passing-parameters_1.cs)]  
+ [!code-csharp[csProgGuideParameters#10](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/passing-parameters_1.cs)]  
   
  For more information, see the following topics:  
   

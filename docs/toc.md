@@ -6,6 +6,7 @@
 ## [Tour of .NET](standard/tour.md)
 ## [.NET Architectural Components](standard/components.md)
 ## [.NET Standard](standard/net-standard.md)
+### [What's new in the .NET Standard](standard/whats-new/whats-new-in-dotnet-standard.md)
 ## [Target Frameworks](standard/frameworks.md)
 ## [.NET Glossary](standard/glossary.md)
 ## [Building documentation with mdoc](standard/mdoc/index.md)
@@ -149,6 +150,7 @@
 ### [Organizing projects for .NET Core](core/porting/project-structure.md)
 ### [Analyzing third-party dependencies](core/porting/third-party-deps.md)
 ### [Porting libraries](core/porting/libraries.md)
+### [Using the Windows Compatibility Pack](core/porting/windows-compat-pack.md)
 <!--### [🔧 NuGet packages](core/porting/nuget-packages.md)-->
 ## [Build .NET Core from source](core/build/index.md)
 ### [.NET Core distribution packaging](core/build/distribution-packaging.md)
@@ -203,6 +205,7 @@
 <!-- The "What's New" section is short, and one level
     deep, so leave it in the main TOC -->
 ## [What's new in C#](csharp/whats-new/index.md) 
+### [What's new in C# 7.2](csharp/whats-new/csharp-7-2.md)
 ### [What's new in C# 7.1](csharp/whats-new/csharp-7-1.md)
 ### [What's new in C# 7](csharp/whats-new/csharp-7.md)
 ### [What's new in C# 6](csharp/whats-new/csharp-6.md)
@@ -241,6 +244,7 @@
 ### [Asynchronous programming](csharp/async.md)
 <!--### [🔧 Parallel programming](csharp/parallel.md)-->
 ### [Pattern Matching](csharp/pattern-matching.md)
+### [Reference semantics with value types](csharp/reference-semantics-with-value-types.md)
 ### [Expression Trees](csharp/expression-trees.md)
 #### [Expression Trees Explained](csharp/expression-trees-explained.md)
 #### [Framework Types Supporting Expression Trees](csharp/expression-classes.md)

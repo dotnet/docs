@@ -12,7 +12,7 @@
   <Interfaces />
   <Docs>
     <summary>Represents the base class to be extended by custom configuration builder implementations.</summary>
-    <remarks>To be added.</remarks>
+    <remarks>Derive from this class to read configuration from an external source that you would like to consume in your .NET Framework application using the standard ConfigurationManager API.  ConfigurationBuilders are available on NuGet.org to read from environment variables, Azure key vault, and a number of other sources.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

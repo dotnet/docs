@@ -19,7 +19,7 @@ ms.author: "wiwagn"
 # :: Operator (C# Reference)
 The namespace alias qualifier (`::`) is used to look up identifiers. It is always positioned between two identifiers, as in this example:  
   
- [!code-cs[csRefOperators#27](../../../csharp/language-reference/operators/codesnippet/CSharp/namespace-alias-qualifer_1.cs)]  
+ [!code-csharp[csRefOperators#27](../../../csharp/language-reference/operators/codesnippet/CSharp/namespace-alias-qualifer_1.cs)]  
   
 ## Remarks  
  The namespace alias qualifier can be `global`. This invokes a lookup in the global namespace, rather than an aliased namespace.  

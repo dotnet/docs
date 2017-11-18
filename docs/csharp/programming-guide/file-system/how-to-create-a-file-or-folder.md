@@ -19,7 +19,7 @@ ms.author: "wiwagn"
 You can programmatically create a folder on your computer, create a subfolder, create a file in the subfolder, and write data to the file.  
   
 ## Example  
- [!code-cs[csFilesandFolders#10](../../../csharp/programming-guide/file-system/codesnippet/CSharp/how-to-create-a-file-or-folder_1.cs)]  
+ [!code-csharp[csFilesandFolders#10](../../../csharp/programming-guide/file-system/codesnippet/CSharp/how-to-create-a-file-or-folder_1.cs)]  
   
  If the folder already exists, <xref:System.IO.Directory.CreateDirectory%2A> does nothing, and no exception is thrown. However, <xref:System.IO.File.Create%2A?displayProperty=nameWithType> replaces an existing file with a new file. The example uses an `if`-`else` statement to prevent an existing file from being replaced.  
   

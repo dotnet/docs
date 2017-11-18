@@ -21,7 +21,7 @@ The following code example demonstrates how a string can be parsed using the <xr
  This example uses spaces, commas, periods, colons, and tabs, all passed in an array containing these separating characters to <xref:System.String.Split%2A>.  Each word in the target string's sentence displays separately from the resulting array of strings.  
   
 ## Example  
- [!code-cs[csProgGuideStrings#16](../../../csharp/programming-guide/strings/codesnippet/CSharp/how-to-parse-strings-using-string-split_1.cs)]  
+ [!code-csharp[csProgGuideStrings#16](../../../csharp/programming-guide/strings/codesnippet/CSharp/how-to-parse-strings-using-string-split_1.cs)]  
   
 ## Example  
  By default, String.Split returns empty strings when two separating characters appear contiguously in the target string.  You can pass an optional StringSplitOptions.RemoveEmptyEntries parameter to exclude any empty strings in the output.  

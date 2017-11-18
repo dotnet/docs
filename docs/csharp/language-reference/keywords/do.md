@@ -21,7 +21,7 @@ The `do` statement executes a statement or a block of statements repeatedly unti
 ## Example  
  In the following example, the `do-while` loop statements execute as long as the variable `x` is less than 5.  
   
- [!code-cs[csrefKeywordsIteration#1](../../../csharp/language-reference/keywords/codesnippet/CSharp/do_1.cs)]  
+ [!code-csharp[csrefKeywordsIteration#1](../../../csharp/language-reference/keywords/codesnippet/CSharp/do_1.cs)]  
   
  Unlike the [while](../../../csharp/language-reference/keywords/while.md) statement, a `do-while` loop is executed one time before the conditional expression is evaluated.  
   

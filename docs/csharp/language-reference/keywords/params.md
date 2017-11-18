@@ -26,7 +26,7 @@ By using the `params` keyword, you can specify a [method parameter](../../../csh
 ## Example  
  The following example demonstrates various ways in which arguments can be sent to a `params` parameter.  
   
- [!code-cs[csrefKeywordsMethodParams#5](../../../csharp/language-reference/keywords/codesnippet/CSharp/params_1.cs)]  
+ [!code-csharp[csrefKeywordsMethodParams#5](../../../csharp/language-reference/keywords/codesnippet/CSharp/params_1.cs)]  
   
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  

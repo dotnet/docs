@@ -21,7 +21,7 @@ The `global` contextual keyword, when it comes before the [:: operator](../../..
 ## Example  
  The following example shows how to use the `global` contextual keyword to specify that the class `TestApp` is defined in the global namespace:  
   
- [!code-cs[csrefKeywordsContextual#13](../../../csharp/language-reference/keywords/codesnippet/CSharp/global_1.cs)]  
+ [!code-csharp[csrefKeywordsContextual#13](../../../csharp/language-reference/keywords/codesnippet/CSharp/global_1.cs)]  
   
 ## See Also  
  [Namespaces](../../../csharp/programming-guide/namespaces/index.md)

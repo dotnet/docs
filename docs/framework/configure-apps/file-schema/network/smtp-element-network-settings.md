@@ -33,12 +33,12 @@ Configures the delivery format, delivery method, and from address for sending e-
   
 ```xml  
       <smtp  
-  deliveryFormat="format"   
-  deliveryMethod="method"   
-  from="from address"   
-  <specifiedPickupDirectory> … </ specifiedPickupDirectory >  
-  <network> … </network>  
-/smtp>  
+        deliveryFormat="format"   
+        deliveryMethod="method"   
+        from="from address">
+          <specifiedPickupDirectory> … </ specifiedPickupDirectory >  
+          <network> … </network>  
+      </smtp>  
 ```  
   
 ## Attributes and Elements  

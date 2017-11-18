@@ -17,7 +17,7 @@ ms.author: "wiwagn"
 The following sample provides a basic overview of a type that has been documented.  
   
 ## Example  
- [!code-cs[csProgGuideDocComments#15](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/how-to-use-the-xml-documentation-features_1.cs)]  
+ [!code-csharp[csProgGuideDocComments#15](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/how-to-use-the-xml-documentation-features_1.cs)]  
   
  **// This .xml file was generated with the previous code sample.**  
 **\<?xml version="1.0"?>**  

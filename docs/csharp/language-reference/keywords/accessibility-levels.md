@@ -23,8 +23,9 @@ Use the access modifiers, [public](../../../csharp/language-reference/keywords/p
 |`internal`|Access is limited to the current assembly.|  
 |`protected internal`|Access is limited to the current assembly or types derived from the containing class.|  
 |`private`|Access is limited to the containing type.|  
+|`private protected`|Access is limited to the containing class or types derived from the containing class within the current assembly.|  
   
- Only one access modifier is allowed for a member or type, except when you use the `protected internal` combination.  
+ Only one access modifier is allowed for a member or type, except when you use the `protected internal` or `private protected` combinations.  
   
  Access modifiers are not allowed on namespaces. Namespaces have no access restrictions.  
   
@@ -37,7 +38,7 @@ Use the access modifiers, [public](../../../csharp/language-reference/keywords/p
 |Members of|Default member accessibility|Allowed declared accessibility of the member|  
 |----------------|----------------------------------|--------------------------------------------------|  
 |`enum`|`public`|None|  
-|`class`|`private`|`public`<br /><br /> `protected`<br /><br /> `internal`<br /><br /> `private`<br /><br /> `protected internal`|  
+|`class`|`private`|`public`<br /><br /> `protected`<br /><br /> `internal`<br /><br /> `private`<br /><br /> `protected internal` <br /><br />`private protected`|  
 |`interface`|`public`|None|  
 |`struct`|`private`|`public`<br /><br /> `internal`<br /><br /> `private`|  
   

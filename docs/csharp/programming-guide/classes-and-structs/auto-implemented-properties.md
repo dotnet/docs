@@ -19,7 +19,7 @@ In C# 3.0 and later, auto-implemented properties make property-declaration more 
 ## Example  
  The following example shows a simple class that has some auto-implemented properties:  
   
- [!code-cs[csProgGuideLINQ#28](../../../csharp/programming-guide/arrays/codesnippet/CSharp/auto-implemented-properties_1.cs)]  
+ [!code-csharp[csProgGuideLINQ#28](../../../csharp/programming-guide/arrays/codesnippet/CSharp/auto-implemented-properties_1.cs)]  
   
  In C# 6 and later, you can initialize auto-implemented properties similarly to fields:  
   

@@ -96,10 +96,8 @@ INSERT INTO dbo.Categories (CategoryID, CategoryName)
   
 ```csharp  
 // Configure the command and parameter.  
-SqlCommand insertCommand = new SqlCommand(  
-    sqlInsert, connection);  
-SqlParameter tvpParam = insertCommand.Parameters.AddWithValue(  
-    "@tvpNewCategories", addedCategories);  
+SqlCommand insertCommand = new SqlCommand(sqlInsert, connection);  
+SqlParameter tvpParam = insertCommand.Parameters.AddWithValue("@tvpNewCategories", addedCategories);  
 tvpParam.SqlDbType = SqlDbType.Structured;  
 tvpParam.TypeName = "dbo.CategoryTableType";  
 ```  
@@ -118,12 +116,9 @@ tvpParam.TypeName = "dbo.CategoryTableType"
   
 ```csharp  
 // Configure the SqlCommand and table-valued parameter.  
-SqlCommand insertCommand = new SqlCommand(  
-  "usp_InsertCategories", connection);  
+SqlCommand insertCommand = new SqlCommand("usp_InsertCategories", connection);  
 insertCommand.CommandType = CommandType.StoredProcedure;  
-SqlParameter tvpParam =   
-   insertCommand.Parameters.AddWithValue(  
-   "@tvpNewCategories", dataReader);  
+SqlParameter tvpParam = insertCommand.Parameters.AddWithValue("@tvpNewCategories", dataReader);  
 tvpParam.SqlDbType = SqlDbType.Structured;  
 ```  
   
@@ -144,20 +139,17 @@ tvpParam.SqlDbType = SqlDbType.Structured
 // Assumes connection is an open SqlConnection object.  
 using (connection)  
 {  
-// Create a DataTable with the modified rows.  
-DataTable addedCategories =  
-  CategoriesDataTable.GetChanges(DataRowState.Added);  
-  
-// Configure the SqlCommand and SqlParameter.  
-SqlCommand insertCommand = new SqlCommand(  
-    "usp_InsertCategories", connection);  
-insertCommand.CommandType = CommandType.StoredProcedure;  
-SqlParameter tvpParam = insertCommand.Parameters.AddWithValue(  
-    "@tvpNewCategories", addedCategories);  
-tvpParam.SqlDbType = SqlDbType.Structured;  
-  
-// Execute the command.  
-insertCommand.ExecuteNonQuery();  
+  // Create a DataTable with the modified rows.  
+  DataTable addedCategories = CategoriesDataTable.GetChanges(DataRowState.Added);  
+
+  // Configure the SqlCommand and SqlParameter.  
+  SqlCommand insertCommand = new SqlCommand("usp_InsertCategories", connection);  
+  insertCommand.CommandType = CommandType.StoredProcedure;  
+  SqlParameter tvpParam = insertCommand.Parameters.AddWithValue("@tvpNewCategories", addedCategories);  
+  tvpParam.SqlDbType = SqlDbType.Structured;  
+
+  // Execute the command.  
+  insertCommand.ExecuteNonQuery();  
 }  
 ```  
   
@@ -192,26 +184,23 @@ End Using
 // Assumes connection is an open SqlConnection.  
 using (connection)  
 {  
-// Create a DataTable with the modified rows.  
-DataTable addedCategories = CategoriesDataTable.GetChanges(  
-    DataRowState.Added);  
-  
-// Define the INSERT-SELECT statement.  
-string sqlInsert =   
-    "INSERT INTO dbo.Categories (CategoryID, CategoryName)"  
-    + " SELECT nc.CategoryID, nc.CategoryName"  
-    + " FROM @tvpNewCategories AS nc;"  
-  
-// Configure the command and parameter.  
-SqlCommand insertCommand = new SqlCommand(  
-    sqlInsert, connection);  
-SqlParameter tvpParam = insertCommand.Parameters.AddWithValue(  
-    "@tvpNewCategories", addedCategories);  
-tvpParam.SqlDbType = SqlDbType.Structured;  
-tvpParam.TypeName = "dbo.CategoryTableType";  
-  
-// Execute the command.  
-insertCommand.ExecuteNonQuery();  
+  // Create a DataTable with the modified rows.  
+  DataTable addedCategories = CategoriesDataTable.GetChanges(DataRowState.Added);  
+
+  // Define the INSERT-SELECT statement.  
+  string sqlInsert =   
+      "INSERT INTO dbo.Categories (CategoryID, CategoryName)"  
+      + " SELECT nc.CategoryID, nc.CategoryName"  
+      + " FROM @tvpNewCategories AS nc;"  
+
+  // Configure the command and parameter.  
+  SqlCommand insertCommand = new SqlCommand(sqlInsert, connection);  
+  SqlParameter tvpParam = insertCommand.Parameters.AddWithValue("@tvpNewCategories", addedCategories);  
+  tvpParam.SqlDbType = SqlDbType.Structured;  
+  tvpParam.TypeName = "dbo.CategoryTableType";  
+
+  // Execute the command.  
+  insertCommand.ExecuteNonQuery();  
 }  
 ```  
   

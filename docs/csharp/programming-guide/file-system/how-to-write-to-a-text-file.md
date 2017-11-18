@@ -22,7 +22,7 @@ These examples show various ways to write text to a file.  The first two example
  These examples all write string literals to files, but more likely you will want to use the <xref:System.String.Format%2A> method, which has many controls for writing different types of values  right or left justified in a field, with or without padding, and so on.  You can also use the C# [string interpolation](../../../csharp/language-reference/keywords/interpolated-strings.md) feature.  
   
 ## Example  
- [!code-cs[csFilesandFolders#3](../../../csharp/programming-guide/file-system/codesnippet/CSharp/how-to-write-to-a-text-file_1.cs)]  
+ [!code-csharp[csFilesandFolders#3](../../../csharp/programming-guide/file-system/codesnippet/CSharp/how-to-write-to-a-text-file_1.cs)]  
   
  These examples all write string literals to files, but more likely you will want to use the <xref:System.String.Format%2A> method, which has many controls for writing different types of values  right or left justified in a field, with or without padding, and so on.  You can also use the C# [string interpolation](../../../csharp/language-reference/keywords/interpolated-strings.md) feature.  
   

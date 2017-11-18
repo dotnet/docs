@@ -32,12 +32,12 @@ Configures the Hypertext Transfer Protocol (HTTP) proxy server.
   
 ```xml  
       <defaultProxy  
-  enabled="true|false"  
-  useDefaultCredentials="true|false"  
-  <bypasslist> … </bypasslist>  
-  <proxy> … </proxy>  
-  <module> … </module>  
-/>  
+        enabled="true|false"  
+        useDefaultCredentials="true|false">  
+           <bypasslist> … </bypasslist>  
+           <proxy> … </proxy>  
+           <module> … </module>  
+      </defaultProxy>
 ```  
   
 ## Attributes and Elements  

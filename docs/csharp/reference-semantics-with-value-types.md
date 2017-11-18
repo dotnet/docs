@@ -53,7 +53,7 @@ expresses a different intent:
 - `ref`: This method may set the value of the argument used as this parameter.
 - `in`: This method does not modify the value of the argument used as this parameter.
 
-When you add the `in` modify to pass an argument by reference, you declare
+When you add the `in` modifier to pass an argument by reference, you declare
 your design intent is to pass arguments by reference to
 avoid unnecessary copying. You do not intend to modify the object used
 as that argument. The following code shows an example of a method

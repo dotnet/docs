@@ -27,10 +27,10 @@ You'll next see a list of Workloads. You can install F# through any of the follo
 | .NET Core cross-platform development | No action - F# is installed by default |
 | ASP.NET and web development | No action - F# is installed by default |
 | Azure development | No action - F# is installed by default |
-| Mobile development with .NET |No action - F# is installed by default|
-| Data science and analytical applications | None. F# is installed by default |
-| .NET desktop development |Select **F# desktop language support** from the right-hand side|
-| Data storage and processing |Select **F# desktop language support** from the right-hand side|
+| Mobile development with .NET | No action - F# is installed by default |
+| Data science and analytical applications | No action - F# is installed by default |
+| .NET desktop development | Select **F# desktop language support** from the right-hand side |
+| Data storage and processing | Select **F# desktop language support** from the right-hand side |
 
 Next, click **Modify** in the lower right-hand side.  This will install everything you have selected.  You can then open Visual Studio 2017 with F# language support by clicking **Launch**.
 

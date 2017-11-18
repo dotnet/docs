@@ -183,13 +183,13 @@ This article demonstrates how to create a simple Windows Service application in 
       [StructLayout(LayoutKind.Sequential)]  
       public struct ServiceStatus  
       {  
-          public long dwServiceType;  
+          public int dwServiceType;  
           public ServiceState dwCurrentState;  
-          public long dwControlsAccepted;  
-          public long dwWin32ExitCode;  
-          public long dwServiceSpecificExitCode;  
-          public long dwCheckPoint;  
-          public long dwWaitHint;  
+          public int dwControlsAccepted;  
+          public int dwWin32ExitCode;  
+          public int dwServiceSpecificExitCode;  
+          public int dwCheckPoint;  
+          public int dwWaitHint;  
       };  
     ```  
   

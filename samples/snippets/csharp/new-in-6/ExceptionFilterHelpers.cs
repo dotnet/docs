@@ -7,7 +7,7 @@ namespace NewStyle
         // <ExceptionFilterLogging>
         public static bool LogException(this Exception e)
         {
-            Console.Error.WriteLine(@"Exceptions happen: {e}");
+            Console.Error.WriteLine($"Exceptions happen: {e}");
             return false;
         } 
         // </ExceptionFilterLogging>

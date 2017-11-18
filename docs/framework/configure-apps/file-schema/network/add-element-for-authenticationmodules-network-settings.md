@@ -46,7 +46,7 @@ Adds an authentication module to the application.
   
 |**Attribute**|**Description**|  
 |-------------------|---------------------|  
-|`type`|The fully qualified type name (indicated by the <xref:System.Type.FullName%2A> property) and the assembly name (indicated by the <xref:System.Reflection.Assembly.FullName%2A> property, separated by a comma.|  
+|`type`|The fully qualified type name (indicated by the <xref:System.Type.FullName%2A> property) and the assembly name (indicated by the <xref:System.Reflection.Assembly.FullName%2A> property), separated by a comma.|  
   
 ### Child Elements  
  None.  

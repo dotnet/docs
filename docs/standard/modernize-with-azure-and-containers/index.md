@@ -89,7 +89,7 @@ Table 1-1 describes the main benefits of and reasons for choosing each migration
 > | **Cloud Infrastructure-Ready** <br /> *Lift and shift* | **Cloud DevOps-Ready** <br /> *Lift and shift* | **Cloud-Optimized** *Modernize/refactor/rewrite* |
 > |---|---|---|
 > | **Application's compute target** |
-> | Applications deployed to VMs in Azure | Containerized monolithic or N-Tier apps deployed to VMs, Azure Service Fabric, or Azure Container Service (i.e. Kubernetes) | Containerized microservices or regular applications based on PaaS on Azure App Service, Azure Service Fabric, Azure Container Service (i.e. Kubernetes) |
+> | Applications deployed to VMs in Azure | Containerized monolithic or N-Tier apps deployed to VMs, Azure Service Fabric, or Azure Container Service (that is, Kubernetes) | Containerized microservices or regular applications based on PaaS on Azure App Service, Azure Service Fabric, Azure Container Service (that is, Kubernetes) |
 > | **Data target** |
 > | SQL or any relational database on a VM | Azure SQL Database Managed Instance | Azure SQL Database, Azure Cosmos DB, or other NoSQL |
 > | **Advantages**|

@@ -8,7 +8,7 @@
 ## [When to deploy Windows Containers in your on-premises IaaS VM infrastructure](when-to-deploy-windows-containers-in-your-on-premises-iaas-vm-infrastructure.md)
 ## [When to deploy Windows Containers to Azure VMs (IaaS cloud)](when-to-deploy-windows-containers-to-azure-vms-iaas-cloud.md)
 ## [When to deploy Windows Containers to Service Fabric](when-to-deploy-windows-containers-to-service-fabric.md)
-## [When to deploy Windows Containers to Azure Container Service (i.e., Kubernetes)](when-to-deploy-windows-containers-to-azure-container-service-kubernetes.md)
+## [When to deploy Windows Containers to Azure Container Service](when-to-deploy-windows-containers-to-azure-container-service-kubernetes.md)
 ## [Build resilient services ready for the cloud: Embrace transient failures in the cloud ](build-resilient-services-ready-for-the-cloud-embrace-transient-failures-in-the-cloud.md)
 ## [Modernize your apps with monitoring and telemetry](modernize-your-apps-with-monitoring-and-telemetry.md)
 ## [Modernize your app's lifecycle with CI/CD pipelines and DevOps tools in the cloud](modernize-your-apps-lifecycle-with-ci-cd-pipelines-and-devops-tools-in-the-cloud.md)

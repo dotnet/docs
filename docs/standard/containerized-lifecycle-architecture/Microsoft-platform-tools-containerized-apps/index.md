@@ -23,7 +23,7 @@ Table 3-1: Open DevOps workflow to any technology
 
 | Host | Microsoft technologies | Third-party—Azure pluggable |
 | ---------------------------| ----------------------------------------------------| --------------------------------------------------------------------------------|
-| Platform for Docker apps   | • Microsoft Visual Studio and Visual Studio Code<br /> • .NET<br /> • Microsoft Azure Container Service<br /> • Azure Service Fabric<br /> • Azure Container Registry<br /> | • Any code editor (e.g., Sublime)<br /> • Any language (Node.js, Java, Go, etc.)<br /> • Any orchestrator and scheduler<br /> • Any Docker registry<br /> |
+| Platform for Docker apps   | • Microsoft Visual Studio and Visual Studio Code<br /> • .NET<br /> • Microsoft Azure Container Service<br /> • Azure Service Fabric<br /> • Azure Container Registry<br /> | • Any code editor (for example, Sublime)<br /> • Any language (Node.js, Java, Go, etc.)<br /> • Any orchestrator and scheduler<br /> • Any Docker registry<br /> |
 | DevOps for Docker apps     | • Visual Studio Team Services<br /> • Microsoft Team Foundation Server<br /> • Azure Container Service<br /> • Azure Service Fabric<br /> | • GitHub, Git, Subversion, etc.<br /> • Jenkins, Chef, Puppet, Velocity, CircleCI, TravisCI, etc.<br /> • On-premises Docker Datacenter, Docker Swarm, Mesos DC/OS, Kubernetes, etc.<br /> |
 | Management and monitoring  | • Operations Management Suite<br /> • Applications Insights<br /> | • Marathon, Chronos, etc.<br />
 

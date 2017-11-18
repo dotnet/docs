@@ -1,11 +1,11 @@
 ---
-title: When to deploy Windows Containers to Azure Container Service (i.e., Kubernetes) 
-description: .NET Microservices Architecture for Containerized .NET Applications | When to deploy Windows Containers to Azure Container Service (i.e., Kubernetes)
+title: When to deploy Windows Containers to Azure Container Service (that is, Kubernetes) 
+description: .NET Microservices Architecture for Containerized .NET Applications | When to deploy Windows Containers to Azure Container Service (that is, Kubernetes)
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/26/2017
 ---
-# When to deploy Windows Containers to Azure Container Service (i.e., Kubernetes)
+# When to deploy Windows Containers to Azure Container Service (that is, Kubernetes)
 
 Azure Container Service optimizes the configuration of popular open-source tools and technologies specifically for Azure. You get an open solution that offers portability both for your containers and for your application configuration. You select the size, the number of hosts, and the orchestrator tools. Azure Container Service handles the infrastructure for you.
 

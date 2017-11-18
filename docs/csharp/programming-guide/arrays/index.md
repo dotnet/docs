@@ -20,7 +20,7 @@ You can store multiple variables of the same type in an array data structure. Yo
   
  The following examples create single-dimensional, multidimensional, and jagged arrays:  
   
- [!code-cs[csProgGuideArrays#1](../../../csharp/programming-guide/arrays/codesnippet/CSharp/index_1.cs)]  
+ [!code-csharp[csProgGuideArrays#1](../../../csharp/programming-guide/arrays/codesnippet/CSharp/index_1.cs)]  
   
 ## Array Overview  
  An array has the following properties:  

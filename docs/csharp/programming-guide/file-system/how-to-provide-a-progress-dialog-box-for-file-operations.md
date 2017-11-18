@@ -30,7 +30,7 @@ You can provide a standard dialog box that shows progress on file operations in 
 ## Example  
  The following code copies the directory that `sourcePath` specifies into the directory that `destinationPath` specifies. This code also provides a standard dialog box that shows the estimated amount of time remaining before the operation finishes.  
   
- [!code-cs[csFilesandFolders#11](../../../csharp/programming-guide/file-system/codesnippet/CSharp/how-to-provide-a-progress-dialog-box-for-file-operations_1.cs)]  
+ [!code-csharp[csFilesandFolders#11](../../../csharp/programming-guide/file-system/codesnippet/CSharp/how-to-provide-a-progress-dialog-box-for-file-operations_1.cs)]  
   
 ## See Also  
  [File System and the Registry (C# Programming Guide)](../../../csharp/programming-guide/file-system/index.md)

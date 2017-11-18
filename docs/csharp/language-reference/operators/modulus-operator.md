@@ -22,7 +22,7 @@ The `%` operator computes the remainder after dividing its first operand by its 
  User-defined types can overload the `%` operator (see [operator](../../../csharp/language-reference/keywords/operator.md)). When a binary operator is overloaded, the corresponding assignment operator, if any, is also implicitly overloaded.  
   
 ## Example  
- [!code-cs[csRefOperators#9](../../../csharp/language-reference/operators/codesnippet/CSharp/modulus-operator_1.cs)]  
+ [!code-csharp[csRefOperators#9](../../../csharp/language-reference/operators/codesnippet/CSharp/modulus-operator_1.cs)]  
   
 ## Comments  
  Note the round-off errors associated with the double type.  

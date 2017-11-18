@@ -56,7 +56,7 @@ named arguments are in the correct positions. For more information see
 
 The implementation of support for digit separators in C# 7.0
 didn't allow the `_` to be the first character of the literal value. Hex
-and binary numeric literals for may now begin with an `_`. 
+and binary numeric literals may now begin with an `_`. 
 
 For example:
 

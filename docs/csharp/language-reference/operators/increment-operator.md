@@ -26,7 +26,7 @@ The increment operator (`++`) increments its operand by 1. The increment operato
  Numeric and enumeration types have predefined increment operators. User-defined types can overload the `++` operator. Operations on integral types are generally allowed on enumeration.  
   
 ## Example  
- [!code-cs[csRefOperators#3](../../../csharp/language-reference/operators/codesnippet/CSharp/increment-operator_1.cs)]  
+ [!code-csharp[csRefOperators#3](../../../csharp/language-reference/operators/codesnippet/CSharp/increment-operator_1.cs)]  
   
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   

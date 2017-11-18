@@ -29,7 +29,7 @@ You can declare and initialize a `long` variable by assigning a decimal literal,
 
 In the following example, integers equal to 4,294,967,296 that are represented as decimal, hexadecimal, and binary literals are assigned to `long` values.  
   
-[!code-cs[long](../../../../samples/snippets/csharp/language-reference/keywords/numeric-literals.cs#Long)]  
+[!code-csharp[long](../../../../samples/snippets/csharp/language-reference/keywords/numeric-literals.cs#Long)]  
 
 > [!NOTE] 
 > You use the prefix `0x` or `0X` to denote a hexadecimal literal and the prefix `0b` or `0B` to denote a binary literal. Decimal literals have no prefix. 
@@ -40,7 +40,7 @@ Starting with C# 7, a couple of features have been added to enhance readability.
 
 Some examples are shown below.
 
-[!code-cs[long](../../../../samples/snippets/csharp/language-reference/keywords/numeric-literals.cs#LongS)]  
+[!code-csharp[long](../../../../samples/snippets/csharp/language-reference/keywords/numeric-literals.cs#LongS)]  
  
  Integer literals can also include a suffix that denotes the type. The suffix `L` denotes a `long`. The following example uses the `L` suffix to denote a long integer:
  

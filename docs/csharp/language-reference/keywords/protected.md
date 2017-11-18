@@ -27,7 +27,7 @@ For a comparison of `protected` with the other access modifiers, see [Accessibil
 ## Example  
  A protected member of a base class is accessible in a derived class only if the access occurs through the derived class type. For example, consider the following code segment:  
   
- [!code-cs[csrefKeywordsModifiers#11](../../../csharp/language-reference/keywords/codesnippet/CSharp/protected_1.cs)]  
+ [!code-csharp[csrefKeywordsModifiers#11](../../../csharp/language-reference/keywords/codesnippet/CSharp/protected_1.cs)]  
   
  The statement `a.x = 10` generates an error because it is made within the static method Main, and not an instance of class B.  
   
@@ -36,7 +36,7 @@ For a comparison of `protected` with the other access modifiers, see [Accessibil
 ## Example  
  In this example, the class `DerivedPoint` is derived from `Point`. Therefore, you can access the protected members of the base class directly from the derived class.  
   
- [!code-cs[csrefKeywordsModifiers#12](../../../csharp/language-reference/keywords/codesnippet/CSharp/protected_2.cs)]  
+ [!code-csharp[csrefKeywordsModifiers#12](../../../csharp/language-reference/keywords/codesnippet/CSharp/protected_2.cs)]  
   
  If you change the access levels of `x` and `y` to [private](../../../csharp/language-reference/keywords/private.md), the compiler will issue the error messages:  
   
@@ -56,4 +56,5 @@ For a comparison of `protected` with the other access modifiers, see [Accessibil
  [Modifiers](../../../csharp/language-reference/keywords/modifiers.md)   
  [public](../../../csharp/language-reference/keywords/public.md)   
  [private](../../../csharp/language-reference/keywords/private.md)   
- [internal](../../../csharp/language-reference/keywords/internal.md)
+ [internal](../../../csharp/language-reference/keywords/internal.md)   
+ [Security concerns for internal virtual keywords](https://msdn.microsoft.com/library/heyd8kky(v=vs.110))

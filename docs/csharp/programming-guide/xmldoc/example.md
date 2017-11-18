@@ -33,7 +33,7 @@ ms.author: "wiwagn"
  Compile with [/doc](../../../csharp/language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.  
   
 ## Example  
- [!code-cs[csProgGuideDocComments#3](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/example_1.cs)]  
+ [!code-csharp[csProgGuideDocComments#3](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/example_1.cs)]  
   
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   

@@ -36,7 +36,7 @@ x->y
  The `->` operator cannot be overloaded.  
   
 ## Example  
- [!code-cs[csRefOperators#15](../../../csharp/language-reference/operators/codesnippet/CSharp/dereference-operator_1.cs)]  
+ [!code-csharp[csRefOperators#15](../../../csharp/language-reference/operators/codesnippet/CSharp/dereference-operator_1.cs)]  
   
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   

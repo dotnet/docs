@@ -53,7 +53,7 @@ expresses a different intent:
 - `ref`: This method may set the value of the argument used as this parameter.
 - `in`: This method does not modify the value of the argument used as this parameter.
 
-When you add the `in` modify to pass an argument by reference, you declare
+When you add the `in` modifier to pass an argument by reference, you declare
 your design intent is to pass arguments by reference to
 avoid unnecessary copying. You do not intend to modify the object used
 as that argument. The following code shows an example of a method
@@ -171,11 +171,11 @@ candidate for this change. The following code shows an updated `ReadonlyPoint3D`
 Another related language feature is the ability to declare a value type that
 must be stack allocated. In other words, these types can never be created on the
 heap as a member of another class. The primary motivation for this feature
-was `Span<T>` and related structures. `Span<T>` may contain a managed pointer as one of its members, the other being
+was <xref:System.Span%601> and related structures. <xref:System.Span%601> may contain a managed pointer as one of its members, the other being
 the length of the span. It's actually implemented a bit differently because C#
 doesn't support pointers to managed memory outside of an unsafe context. Any
 write that changes the pointer and the length is not atomic. That means a
-`Span<T>` would be subject to out of range errors or other type safety violations
+<xref:System.Span%601> would be subject to out of range errors or other type safety violations
 were it not constrained to a single stack frame. In addition, putting a
 managed pointer on the GC heap typically crashes at JIT time.
 
@@ -187,8 +187,7 @@ using `Span<T>` for simplicity.
 
 The `ref struct` declaration declares that a struct of this type must be
 on the stack. The language rules ensure the safe use of these types. Other
-types declared as `ref struct` include `ReadOnlySpan<T>`, `Memory<T>`, and
-`ReadOnlyMemory<T>`. 
+types declared as `ref struct` include <xref:System.ReadOnlySpan%601>. 
 
 The goal of keeping a `ref struct` type as a stack-allocated variable
 introduces several rules that the compiler enforces for all `ref struct`

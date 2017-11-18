@@ -44,7 +44,7 @@ Adds a new proxy module to the application.
   
 |**Attribute**|**Description**|  
 |-------------------|---------------------|  
-|`type`|The fully qualified type name (indicated by the <xref:System.Type.FullName%2A> property) and the assembly name (indicated by the <xref:System.Reflection.Assembly.FullName%2A> property, separated by a comma, that implements the proxy.|  
+|`type`|The fully qualified type name (indicated by the <xref:System.Type.FullName%2A> property) and the assembly name (indicated by the <xref:System.Reflection.Assembly.FullName%2A> property), separated by a comma, that implements the proxy.|  
   
 ### Child Elements  
  None.  

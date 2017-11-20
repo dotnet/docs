@@ -5,7 +5,7 @@ Friend Class SyncResource
     ' Use a monitor to enforce synchronization.
     Public Sub Access()
         SyncLock Me
-        Console.WriteLine("Starting synchronized resource access on thread #{0}",
+            Console.WriteLine("Starting synchronized resource access on thread #{0}",
                               Thread.CurrentThread.ManagedThreadId)
             If Thread.CurrentThread.ManagedThreadId Mod 2 = 0 Then
                 Thread.Sleep(2000)

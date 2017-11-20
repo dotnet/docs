@@ -25,7 +25,7 @@ Specifies how a <xref:System.Uri> will be parsed for specific schemes.
 ## Syntax  
   
 ```xml  
-      <schemeSettings>   
+<schemeSettings>   
 </schemeSettings>  
 ```  
   

@@ -31,14 +31,14 @@ Configures basic network options for the <xref:System.Net?displayProperty=nameWi
 ## Syntax  
   
 ```xml  
-      <settings>  
-..<httpListener> … </httpListener>  
-..<httpWebRequest> … </httpWebRequest>  
-..<ipv6> … </ipv6>  
-..<performanceCounters> … </performanceCounters>  
+<settings>  
+  <httpListener> … </httpListener>  
+  <httpWebRequest> … </httpWebRequest>  
+  <ipv6> … </ipv6>  
+  <performanceCounters> … </performanceCounters>  
   <servicePointManager> … </servicePointManager>  
-..<socket> … </socket>  
-..<webProxyScript> … </webProxyScript>  
+  <socket> … </socket>  
+  <webProxyScript> … </webProxyScript>  
 </settings>  
 ```  
   

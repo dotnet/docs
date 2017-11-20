@@ -32,7 +32,7 @@ Configures connections to network resources.
 ## Syntax  
   
 ```xml  
-      <servicePointManager  
+<servicePointManager  
   checkCertificateName="true|false"  
   checkCertificateRevocationList="true|false"  
   encryptionPolicy="AllowNoEncryption|NoEncryption|RequireEncryption"  

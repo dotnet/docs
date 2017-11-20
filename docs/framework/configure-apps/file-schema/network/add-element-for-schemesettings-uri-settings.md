@@ -26,8 +26,9 @@ Adds a scheme setting for a scheme name.
 ## Syntax  
   
 ```xml  
-      <add   
-   name = "http|https" genericUriParserOptions="DontUnescapePathDotsAndSlashes"  
+<add
+  name="http|https"
+  genericUriParserOptions="DontUnescapePathDotsAndSlashes"
 />  
 ```  
   

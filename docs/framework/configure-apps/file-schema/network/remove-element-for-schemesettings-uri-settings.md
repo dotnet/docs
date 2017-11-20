@@ -26,9 +26,9 @@ Removes a scheme setting for a scheme name.
 ## Syntax  
   
 ```xml  
-      <remove   
-   <name = "http|https"/>  
-/>  
+<remove
+  name="http|https"
+/>
 ```  
   
 ## Attributes and Elements  

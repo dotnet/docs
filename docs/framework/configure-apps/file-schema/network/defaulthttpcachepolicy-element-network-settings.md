@@ -32,11 +32,11 @@ Describes whether HTTP caching is active and describes the default caching polic
 ## Syntax  
   
 ```xml  
-< defaultHttpCachePolicy  
+<defaultHttpCachePolicy  
   policyLevel="BypassCache|Default"  
-  minimumFresh="d.hh:mm:ss"|"minValue"  
-  maximumAge  ="d.hh:mm:ss"|"maxValue"  
-  maximumStale="d.hh:mm:ss"|"maxValue"  
+  minimumFresh="d.hh:mm:ss|minValue|maxValue"  
+  maximumAge="d.hh:mm:ss|minValue|maxValue"  
+  maximumStale="d.hh:mm:ss|minValue|maxValue"  
 />  
 ```  
   
@@ -76,11 +76,11 @@ Describes whether HTTP caching is active and describes the default caching polic
 <configuration>  
   <system.net>  
     <requestCaching>  
-      <defaultHttpCachePolicy>  
-        <set minimumFresh="0.06:00:00" />  
-        <set maximumAge  ="2.00:00:00" />  
-        <set maximumStale="0.04:00:00" />  
-      </defaultHttpCachePolicy>  
+      <defaultHttpCachePolicy  
+        minimumFresh="0.06:00:00"  
+        maximumAge="2.00:00:00"  
+        maximumStale="0.04:00:00"
+      />  
     </requestCaching>  
   </system.net>  
 </configuration>  

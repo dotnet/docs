@@ -55,6 +55,6 @@ To learn how to implement strategies for handling partial failures in the cloud,
 
     https://github.com/App-vNext/Polly
 
-
-> [Previous](when-to-deploy-windows-containers-to-azure-container-service-kubernetes.md)  
+>[!div class="step-by-step"]
+[Previous](when-to-deploy-windows-containers-to-azure-container-service-kubernetes.md)
 [Next](modernize-your-apps-with-monitoring-and-telemetry.md)

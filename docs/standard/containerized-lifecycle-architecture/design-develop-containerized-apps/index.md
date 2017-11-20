@@ -1,5 +1,5 @@
 ---
-title: Design and develop containerized apps using docker and microsoft azure | Microsoft Docs 
+title: Design and develop containerized apps using Docker and Microsoft Azure
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

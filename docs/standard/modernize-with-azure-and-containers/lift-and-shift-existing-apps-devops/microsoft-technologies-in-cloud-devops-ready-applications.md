@@ -31,6 +31,6 @@ It's important to highlight that monolithic applications (applications that are 
 
 Similarly, if monolithic applications can be Cloud DevOps-Ready applications, other, more complex architectures like N-Tier applications also can be modernized as Cloud DevOps-Ready applications.
 
-
-> [Previous](reasons-to-lift-and-shift-existing-net-apps-to-cloud-devops-ready-applications.md)  
+>[!div class="step-by-step"]
+[Previous](reasons-to-lift-and-shift-existing-net-apps-to-cloud-devops-ready-applications.md)
 [Next](what-about-cloud-optimized-applications.md)

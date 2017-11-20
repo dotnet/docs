@@ -1,5 +1,5 @@
 ---
-title: Orchestrating microservices and multicontainer applications for high scalability and availability | Microsoft Docs 
+title: Orchestrating microservices and multicontainer applications for high scalability and availability
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

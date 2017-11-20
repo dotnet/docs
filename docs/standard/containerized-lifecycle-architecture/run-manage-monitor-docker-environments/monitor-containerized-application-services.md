@@ -1,5 +1,5 @@
 ---
-title: Monitor containerized application services | Microsoft Docs 
+title: Monitor containerized application services
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
@@ -16,7 +16,7 @@ It is critical for applications split into multiple containers and microservices
 
 ### Analyzing Docker apps in QA environments using Application Insights
 
-As it pertains to Docker, you can chart life-cycle events and performance counters from Docker containers on Application Insights. You just need to run the [Application Insights Docker image](https://hub.docker.com/r/microsoft/applicationinsights/) as a container in your host, and it will display performance counters for the host as well as for the other Docker images. This Application Insights Docker image (Figure 6-1) helps you to monitor your containerized applications by collecting telemetry about the performance and activity of your Docker host (i.e., your Linux VMs), Docker containers and the applications running within them.
+As it pertains to Docker, you can chart life-cycle events and performance counters from Docker containers on Application Insights. You just need to run the [Application Insights Docker image](https://hub.docker.com/r/microsoft/applicationinsights/) as a container in your host, and it will display performance counters for the host as well as for the other Docker images. This Application Insights Docker image (Figure 6-1) helps you to monitor your containerized applications by collecting telemetry about the performance and activity of your Docker host (that is, your Linux VMs), Docker containers and the applications running within them.
 
 ![example](./media/image1.png)
 

@@ -1,5 +1,5 @@
 ---
-title: Docker containers, images, and registries | Microsoft Docs 
+title: Docker containers, images, and registries
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

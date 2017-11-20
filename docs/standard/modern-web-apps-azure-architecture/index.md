@@ -44,7 +44,7 @@ This guide provides end-to-end guidance on building monolithic web applications 
 This guide is complementary to the "*Architecting and Developing Containerized and Microservice-based Applications with .NET*" which focuses more on Docker, Microservices, and Deployment of Containers to host enterprise applications.
 
 > ### Architecting and Developing Containerized Microservice Based Apps in .NET
-> - **eBook**  
+> - **e-book**  
 > <http://aka.ms/MicroservicesEbook>
 > - **Sample Application**  
 > <http://aka.ms/microservicesarchitecture>

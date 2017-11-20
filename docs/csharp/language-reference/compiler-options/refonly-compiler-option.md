@@ -16,7 +16,7 @@ ms.author: "wiwagn"
 
 # /refonly (C# Compiler Options)
 
-The **/refonly** The /refonly option indicates that a reference assembly should be output instead of an implementation assembly, as the primary output. The `/refonly` parameter silently disables outputting PDBs, as reference assemblies cannot be executed.
+The **/refonly** option indicates that a reference assembly should be output instead of an implementation assembly, as the primary output. The `/refonly` parameter silently disables outputting PDBs, as reference assemblies cannot be executed.
 
 ## Syntax
 

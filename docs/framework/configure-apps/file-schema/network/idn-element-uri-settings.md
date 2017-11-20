@@ -30,7 +30,7 @@ Specifies if Internationalized Domain Name (IDN) parsing is applied to a domain 
 ```xml  
 <idn  
   enabled="All|AllExceptIntranet|None"  
-/idn>  
+/>  
 ```  
   
 ## Attributes and Elements  

@@ -34,8 +34,8 @@ Removes an IP address or DNS name from the connection management list.
 ## Syntax  
   
 ```xml  
-      <remove   
-   name = "server name or IP address"   
+<remove   
+  address="server name or IP address"   
 />  
 ```  
   
@@ -72,9 +72,9 @@ Removes an IP address or DNS name from the connection management list.
 <configuration>  
   <system.net>  
     <connectionManagement>  
-      <remove address = "http://www.adventure-works.com"/>  
-      <add address = "http://www.contoso.com" maxconnection = "4" />  
-      <add address = "*" maxconnection = "2" />  
+      <remove address="http://www.adventure-works.com" />  
+      <add address="http://www.contoso.com" maxconnection="4" />  
+      <add address="*" maxconnection="2" />  
     </connectionManagement>  
   </system.net>  
 </configuration>  

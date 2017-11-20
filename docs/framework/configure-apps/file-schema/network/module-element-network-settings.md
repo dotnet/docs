@@ -32,8 +32,8 @@ Adds a new proxy module to the application.
 ## Syntax  
   
 ```xml  
-      <module   
-   type = "name", System, Version="version number", Culture="culture", PublicKeyToken="token" "   
+<module   
+  type="type_fullname, assembly_fullname"   
 />  
 ```  
   
@@ -44,7 +44,7 @@ Adds a new proxy module to the application.
   
 |**Attribute**|**Description**|  
 |-------------------|---------------------|  
-|`type`|The name and specifics of the module that implements the proxy.|  
+|`type`|The fully qualified type name (indicated by the <xref:System.Type.FullName%2A> property) and the assembly name (indicated by the <xref:System.Reflection.Assembly.FullName%2A> property), separated by a comma, that implements the proxy.|  
   
 ### Child Elements  
  None.  
@@ -58,7 +58,7 @@ Adds a new proxy module to the application.
 ## Remarks  
  The `module` element registers proxy classes that implement the <xref:System.Net.IWebProxy> interface. After registering the proxy class, `module` can be used to request information through the supported proxy.  
   
- The value for the `type` attribute should be the name of a valid Dynamic Link Library (DLL) and the class name of the module.  
+ The value for the `type` attribute should be the class name of the module and the name of its corresponding Dynamic Link Library (DLL).  
   
 ## Configuration Files  
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
@@ -71,7 +71,7 @@ Adds a new proxy module to the application.
   <system.net>  
     <defaultProxy>  
       <module  
-        type = "Test.CustomWebProxy, System, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"  
+        type="Test.CustomWebProxy, TestProxy, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b23a5c561934e385"  
       />  
     </defaultProxy>  
   </system.net>  

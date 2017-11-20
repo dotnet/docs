@@ -34,8 +34,8 @@ Removes an authentication module from the application.
 ## Syntax  
   
 ```xml  
-      <remove   
-   name = "authentication module name"   
+<remove   
+   type="authentication module name"   
 />  
 ```  
   
@@ -46,7 +46,7 @@ Removes an authentication module from the application.
   
 |**Attribute**|**Description**|  
 |-------------------|---------------------|  
-|**name**|The name of the authentication module to remove.|  
+|**type**|The name of the authentication module to remove.|  
   
 ### Child Elements  
  None.  
@@ -60,7 +60,7 @@ Removes an authentication module from the application.
 ## Remarks  
  The `remove` element removes authentication modules that were defined earlier in the configuration file or at a higher level in the configuration hierarchy.  
   
- The value for the `name` attribute should be a valid class name.  
+ The value for the `type` attribute should be a valid class name.  
   
 ## Configuration Files  
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
@@ -72,7 +72,7 @@ Removes an authentication module from the application.
 <configuration>  
   <system.net>  
     <authenticationModules>  
-      <remove name = "System.Net.NtlmClient" />  
+      <remove type="System.Net.NtlmClient" />  
     </authenticationModules>  
   </system.net>  
 </configuration>  

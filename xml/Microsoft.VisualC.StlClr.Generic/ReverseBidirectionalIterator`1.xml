@@ -301,7 +301,7 @@
         <returns>
           <see langword="true" /> if the two iterators are the same object; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.%2A> Gene ric.ReverseBidirectionalIterator`1.Equals(Microsoft.VisualC.StlClr. Gene ric.IInputIterator{`0})?qualifyHint=True&autoUpgrade=False]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -331,7 +331,7 @@
         <returns>
           <see langword="true" /> if the two iterators are the same object; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.%2A> Gene ric.ReverseBidirectionalIterator`1.Equals(Microsoft.VisualC.StlClr. Gene ric.ReverseBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)?qualifyHint=True&autoUpgrade=False]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -421,7 +421,7 @@
         <returns>
           <see langword="true" /> if the two iterators are different objects; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.%2A> Gene ric.ReverseBidirectionalIterator`1.Compare(Microsoft.VisualC.StlClr. Gene ric.IInputIterator{`0})?qualifyHint=True&autoUpgrade=False]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1.Compare(Microsoft.VisualC.StlClr.Generic.IInputIterator{`0})?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -446,7 +446,7 @@
         <returns>
           <see langword="true" /> if the two iterators are different objects; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.%2A> Gene ric.ReverseBidirectionalIterator`1.Compare(Microsoft.VisualC.StlClr. Gene ric.ReverseBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)?qualifyHint=True&autoUpgrade=False]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1.Compare(Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>

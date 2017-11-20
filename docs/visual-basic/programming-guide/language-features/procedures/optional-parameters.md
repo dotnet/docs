@@ -34,8 +34,8 @@ You can specify that a procedure parameter is optional and no argument has to be
   
  The following syntax shows a procedure declaration with an optional parameter:  
   
-```  
-Sub sub name(ByVal parameter1 As datatype1, Optional ByVal parameter2 As datatype2 = defaultvalue)  
+```vb  
+Sub name(ByVal parameter1 As datatype1, Optional ByVal parameter2 As datatype2 = defaultvalue)  
 ```  
   
 ## Calling Procedures with Optional Parameters  
@@ -43,8 +43,8 @@ Sub sub name(ByVal parameter1 As datatype1, Optional ByVal parameter2 As datatyp
   
  When you omit one or more optional arguments in the argument list, you use successive commas to mark their positions. The following example call supplies the first and fourth arguments but not the second or third:  
   
-```  
-sub name(argument 1, , , argument 4)  
+```vb  
+Sub name(argument 1, , , argument 4)  
 ```  
   
  The following example makes several calls to the `MsgBox` function. `MsgBox` has one required parameter and two optional parameters.  

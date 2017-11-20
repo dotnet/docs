@@ -33,7 +33,7 @@ Multithreading requires careful programming. For most tasks, you can reduce comp
 ### Deadlocks  
  A deadlock occurs when each of two threads tries to lock a resource the other has already locked. Neither thread can make any further progress.  
   
- Many methods of the managed threading classes provide time-outs to help you detect deadlocks. For example, the following code attempts to acquire a lock on the current instance. If the lock is not obtained in 300 milliseconds, <xref:System.Threading.Monitor.TryEnter%2A?displayProperty=nameWithType> returns **false**.  
+ Many methods of the managed threading classes provide time-outs to help you detect deadlocks. For example, the following code attempts to acquire a lock on an object named `lockObject`. If the lock is not obtained in 300 milliseconds, <xref:System.Threading.Monitor.TryEnter%2A?displayProperty=nameWithType> returns `false`.  
   
 ```vb  
 If Monitor.TryEnter(lockObject, 300) Then  
@@ -53,7 +53,7 @@ if (Monitor.TryEnter(lockObject, 300)) {
         // Place code protected by the Monitor here.  
     }  
     finally {  
-        Monitor.Exit(this);  
+        Monitor.Exit(lockObject);  
     }  
 }  
 else {  

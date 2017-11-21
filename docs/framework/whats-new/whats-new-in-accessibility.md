@@ -6,6 +6,9 @@ ms.prod: ".net-framework"
 ms.technology: 
   - "dotnet-clr"
 ms.topic: "article"
+dev_langs:
+- "csharp"
+- "vb"
 helpviewer_keywords: 
   - "what's new [.NET Framework]"
 author: "rpetrusha"
@@ -17,7 +20,7 @@ manager: "wpickett"
 
 The .NET Framework aims at making applications more accessibile for your users. Accessibility features allow an application to provide an appropriate experience for users of Assistive Technology. Starting with the .NET Framework 4.7.1, the .NET Framework includes a large number of accessibility improvements that allow developers to create accessible applications. 
 
-The new accessibility features are enabled by default for applications that target the .NET Framework 4.7.1 or later. In addition, applications that target an earlier version of the .NET Framework but are running on the .NET Framework 4.7.1 or later can opt out of legacy accessibility behaviors (and thereby opt in to the accessibility improvement in the .NET Framework 4.7.1) by adding the following switch to the [`<AppContextSwitchOverrides>`](~/docs/framework/configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) element in the [`<runtime>`](~/docs/framework/configure-apps/file-schema/runtime/index.md) section of the application's configuration file. 
+The new accessibility features are enabled by default for applications that target the .NET Framework 4.7.1 or later. In addition, applications that target an earlier version of the .NET Framework but are running on the .NET Framework 4.7.1 or later can opt out of legacy accessibility behaviors (and thereby opt in to the accessibility improvements in the .NET Framework 4.7.1) by adding the following switch to the [`<AppContextSwitchOverrides>`](~/docs/framework/configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) element in the [`<runtime>`](~/docs/framework/configure-apps/file-schema/runtime/index.md) section of the application's configuration file. 
 
 ```xml
 <runtime>
@@ -93,7 +96,6 @@ var peer = FrameworkElementAutomationPeer.FromElement(myTextBlock);
 
 peer.RaiseAutomationEvent(AutomationEvents.LiveRegionChanged);
 ```
-
 ```vb
 Dim peer = FrameworkElementAutomationPeer.FromElement(myTextBlock)
 peer.RaiseAutomationEvent(AutomationEvents.LiveRegionChanged)
@@ -102,7 +104,7 @@ peer.RaiseAutomationEvent(AutomationEvents.LiveRegionChanged)
 
 **High contrast**
 
-Starting with the .NET Framework 4.7.1, improvements in high conrast have been made to various WPF controls. They are now visible when the <xref:System.Windows.SystemParameters.HighContrast%2A> theme is set. These include:
+Starting with the .NET Framework 4.7.1, improvements in high contrast have been made to various WPF controls. They are now visible when the <xref:System.Windows.SystemParameters.HighContrast%2A> theme is set. These include:
 
 - <xref:System.Windows.Controls.Expander> control
 

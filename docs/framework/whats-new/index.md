@@ -60,7 +60,7 @@ The .NET Framework 4.7.1 includes new features in the following areas:
 - [Networking](#net471)
 - [ASP.NET](#asp-net471) 
 
-In addition, a major focus in the .NET Framework 4.7.1 is improved accessibility, so that apps are able to work well with a variety of devices and form factors. For information on accessibility improvements in the .NET Framework 4.7.1, see [What's new in accessibility in the .NET Framework](whats-new-in-accessibility.md). 
+In addition, a major focus in the .NET Framework 4.7.1 is improved accessibility, which allows an application to provide an appropriate experience for users of Assistive Technology. For information on accessibility improvements in the .NET Framework 4.7.1, see [What's new in accessibility in the .NET Framework](whats-new-in-accessibility.md). 
 
 <a name="core471" />
 #### Core
@@ -1501,6 +1501,7 @@ For more information on the <xref:System.TimeZoneInfo> structure and time zone a
 
 ## See Also
  [The .NET Framework and Out-of-Band Releases](../../../docs/framework/get-started/the-net-framework-and-out-of-band-releases.md)   
+ [What's new in accessibility in the .NET Framework](whats-new-in-accessibility.md)   
  [What's New in Visual Studio 2017](/visualstudio/ide/whats-new-in-visual-studio)   
  [ASP.NET](/aspnet)   
  [What’s New in Visual C++](/cpp/what-s-new-for-visual-cpp-in-visual-studio) 

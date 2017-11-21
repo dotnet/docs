@@ -49,8 +49,8 @@ This example shows how to create a custom <xref:System.Windows.Controls.ListView
  For the complete sample, see [ListView with Multiple Views Sample](http://go.microsoft.com/fwlink/?LinkID=160013).  
   
 ## See Also  
- <xref:System.Windows.Controls.ListView>   
- <xref:System.Windows.Controls.GridView>   
- [How-to Topics](../../../../docs/framework/wpf/controls/listview-how-to-topics.md)   
- [ListView Overview](../../../../docs/framework/wpf/controls/listview-overview.md)   
+ <xref:System.Windows.Controls.ListView>  
+ <xref:System.Windows.Controls.GridView>  
+ [How-to Topics](../../../../docs/framework/wpf/controls/listview-how-to-topics.md)  
+ [ListView Overview](../../../../docs/framework/wpf/controls/listview-overview.md)  
  [GridView Overview](../../../../docs/framework/wpf/controls/gridview-overview.md)

@@ -73,6 +73,6 @@ Uniquely identifies XAML-defined elements in a XAML namescope. XAML namescopes a
  `x:Name` for Silverlight is documented separately. For more information, see [XAML Namespace (x:) Language Features (Silverlight)](http://go.microsoft.com/fwlink/?LinkId=199081).  
   
 ## See Also  
- <xref:System.Windows.FrameworkElement.Name%2A?displayProperty=nameWithType>   
- <xref:System.Windows.FrameworkContentElement.Name%2A?displayProperty=nameWithType>   
+ <xref:System.Windows.FrameworkElement.Name%2A?displayProperty=nameWithType>  
+ <xref:System.Windows.FrameworkContentElement.Name%2A?displayProperty=nameWithType>  
  [Trees in WPF](../../../docs/framework/wpf/advanced/trees-in-wpf.md)

@@ -99,12 +99,12 @@ Specifying a binding that provides context for the <xref:System.ServiceModel.Bas
  This binding element provides a protection level and an exchange mechanism as part of the context for a `BasicHttpBinding`.  
   
 ## See Also  
- <xref:System.ServiceModel.BasicHttpBinding>   
- <xref:System.ServiceModel.BasicHttpContextBinding>   
- <xref:System.ServiceModel.Configuration.BasicHttpContextBindingElement>   
- <xref:System.ServiceModel.Channels.ContextBindingElement>   
- [Bindings](../../../../../docs/framework/wcf/bindings.md)   
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)   
- [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/en-us/bd8b277b-932f-472f-a42a-b02bb5257dfb)   
- [\<binding>](../../../../../docs/framework/misc/binding.md)   
+ <xref:System.ServiceModel.BasicHttpBinding>  
+ <xref:System.ServiceModel.BasicHttpContextBinding>  
+ <xref:System.ServiceModel.Configuration.BasicHttpContextBindingElement>  
+ <xref:System.ServiceModel.Channels.ContextBindingElement>  
+ [Bindings](../../../../../docs/framework/wcf/bindings.md)  
+ [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
+ [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/en-us/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
+ [\<binding>](../../../../../docs/framework/misc/binding.md)  
  [\<basicHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md)

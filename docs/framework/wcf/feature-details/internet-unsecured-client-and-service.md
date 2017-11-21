@@ -116,6 +116,6 @@ The following illustration shows an example of a public, unsecured [!INCLUDE[ind
 ```  
   
 ## See Also  
- [Common Security Scenarios](../../../../docs/framework/wcf/feature-details/common-security-scenarios.md)   
- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)   
+ [Common Security Scenarios](../../../../docs/framework/wcf/feature-details/common-security-scenarios.md)  
+ [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
  [Security Model for Windows Server App Fabric](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

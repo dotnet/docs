@@ -30,6 +30,6 @@ This example shows how to handle possible null values in source collections. An 
  [!code-csharp[csProgGuideLINQ#83](../../../samples/snippets/csharp/concepts/linq/how-to-handle-null-values-in-query-expressions_2.cs)]  
   
 ## See also  
- <xref:System.Nullable%601>   
- [LINQ query expressions](index.md)   
+ <xref:System.Nullable%601>  
+ [LINQ query expressions](index.md)  
  [Nullable types](../programming-guide/nullable-types/index.md)

@@ -37,9 +37,9 @@ The group join is useful for producing hierarchical data structures. It pairs ea
  [!code-csharp[CsLINQProgJoining#6](../../../samples/snippets/csharp/concepts/linq/how-to-perform-grouped-joins_2.cs)]  
  
 ## See also  
- <xref:System.Linq.Enumerable.Join%2A>   
- <xref:System.Linq.Enumerable.GroupJoin%2A>   
- [Perform inner joins](perform-inner-joins.md)   
- [Perform left outer joins](perform-left-outer-joins.md)   
- [Anonymous types](../programming-guide/classes-and-structs/anonymous-types.md)   
+ <xref:System.Linq.Enumerable.Join%2A>  
+ <xref:System.Linq.Enumerable.GroupJoin%2A>  
+ [Perform inner joins](perform-inner-joins.md)  
+ [Perform left outer joins](perform-left-outer-joins.md)  
+ [Anonymous types](../programming-guide/classes-and-structs/anonymous-types.md)  
  

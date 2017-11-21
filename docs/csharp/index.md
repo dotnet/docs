@@ -73,5 +73,5 @@ There are several sections in the C# Guide. You can read them in order, or jump 
     - Links to the latest version of the C# Specifications in Microsoft Word format.  
   
 ## See Also  
- [Getting Started with Visual C# and Visual Basic](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)   
+ [Getting Started with Visual C# and Visual Basic](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)  
  [.NET Development](https://msdn.microsoft.com/library/ff361664)

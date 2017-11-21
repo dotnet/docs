@@ -29,8 +29,8 @@ manager: "wpickett"
  A set of articles showing how to use the new print path and [!INCLUDE[TLA#tla_api#plural](../../../../includes/tlasharptla-apisharpplural-md.md)].  
   
 ## See Also  
- <xref:System.Printing>   
- <xref:System.Printing.IndexedProperties>   
- <xref:System.Printing.Interop>   
- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)   
+ <xref:System.Printing>  
+ <xref:System.Printing.IndexedProperties>  
+ <xref:System.Printing.Interop>  
+ [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
  [XPS](http://www.microsoft.com/xps)

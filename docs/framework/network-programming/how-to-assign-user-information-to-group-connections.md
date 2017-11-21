@@ -113,5 +113,5 @@ MyWebResponse.Close()
 ```  
   
 ## See Also  
- [Managing Connections](../../../docs/framework/network-programming/managing-connections.md)   
+ [Managing Connections](../../../docs/framework/network-programming/managing-connections.md)  
  [Connection Grouping](../../../docs/framework/network-programming/connection-grouping.md)

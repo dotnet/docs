@@ -78,7 +78,7 @@ The following compiler options are sorted alphabetically. For a categorical list
 |[/win32res](../../../csharp/language-reference/compiler-options/win32res-compiler-option.md)|Specifies the win32 resource file (.res).|  
   
 ## See Also  
- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
- [C# Compiler Options Listed by Category](../../../csharp/language-reference/compiler-options/listed-by-category.md)   
- [How to: Set Environment Variables for the Visual Studio Command Line](../../../csharp/language-reference/compiler-options/how-to-set-environment-variables-for-the-visual-studio-command-line.md)   
+ [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
+ [C# Compiler Options Listed by Category](../../../csharp/language-reference/compiler-options/listed-by-category.md)  
+ [How to: Set Environment Variables for the Visual Studio Command Line](../../../csharp/language-reference/compiler-options/how-to-set-environment-variables-for-the-visual-studio-command-line.md)  
  [\<compiler> Element](../../../framework/configure-apps/file-schema/compiler/compiler-element.md)

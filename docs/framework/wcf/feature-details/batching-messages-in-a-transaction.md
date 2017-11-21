@@ -89,5 +89,5 @@ using (ServiceHost serviceHost = new ServiceHost(typeof(OrderProcessorService)))
 ```  
   
 ## See Also  
- [Queues Overview](../../../../docs/framework/wcf/feature-details/queues-overview.md)   
+ [Queues Overview](../../../../docs/framework/wcf/feature-details/queues-overview.md)  
  [Queuing in WCF](../../../../docs/framework/wcf/feature-details/queuing-in-wcf.md)

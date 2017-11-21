@@ -34,6 +34,6 @@ This example shows how to apply a <xref:System.Windows.Media.GuidelineSet> to a 
  [!code-xaml[DrawingMiscSnippets_snip#GraphicsMMDrawingGroupGuidelineSetExampleWholePage](../../../../samples/snippets/xaml/VS_Snippets_Wpf/DrawingMiscSnippets_snip/XAML/DrawingGroupGuidelineSetExample.xaml#graphicsmmdrawinggroupguidelinesetexamplewholepage)]  
   
 ## See Also  
- <xref:System.Windows.Media.DrawingGroup>   
- <xref:System.Windows.Media.GuidelineSet>   
+ <xref:System.Windows.Media.DrawingGroup>  
+ <xref:System.Windows.Media.GuidelineSet>  
  [Drawing Objects Overview](../../../../docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md)

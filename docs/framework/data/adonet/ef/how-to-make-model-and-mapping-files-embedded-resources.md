@@ -45,7 +45,7 @@ The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] enables you t
   
   
 ## See Also  
- [Modeling and Mapping](../../../../../docs/framework/data/adonet/ef/modeling-and-mapping.md)   
- [How to: Define the Connection String](../../../../../docs/framework/data/adonet/ef/how-to-define-the-connection-string.md)   
- [How to: Build an EntityConnection Connection String](../../../../../docs/framework/data/adonet/ef/how-to-build-an-entityconnection-connection-string.md)   
+ [Modeling and Mapping](../../../../../docs/framework/data/adonet/ef/modeling-and-mapping.md)  
+ [How to: Define the Connection String](../../../../../docs/framework/data/adonet/ef/how-to-define-the-connection-string.md)  
+ [How to: Build an EntityConnection Connection String](../../../../../docs/framework/data/adonet/ef/how-to-build-an-entityconnection-connection-string.md)  
  [ADO.NET Entity Data Model  Tools](http://msdn.microsoft.com/en-us/91076853-0881-421b-837a-f582f36be527)

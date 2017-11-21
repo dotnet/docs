@@ -224,5 +224,5 @@ In [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], behaviors modify run
 ```  
   
 ## See Also  
- [Auditing](../../../../docs/framework/wcf/feature-details/auditing-security-events.md)   
+ [Auditing](../../../../docs/framework/wcf/feature-details/auditing-security-events.md)  
  [Security Model for Windows Server App Fabric](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

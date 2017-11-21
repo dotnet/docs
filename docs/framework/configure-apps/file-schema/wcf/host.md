@@ -58,6 +58,6 @@ Specifies settings for a service host.
 |[\<service>](../../../../../docs/framework/configure-apps/file-schema/wcf/service.md)|Specifies the settings for a [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] service.|  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.HostElement>   
- <xref:System.ServiceModel.ServiceHost>   
+ <xref:System.ServiceModel.Configuration.HostElement>  
+ <xref:System.ServiceModel.ServiceHost>  
  [Hosting](../../../../../docs/framework/wcf/feature-details/hosting.md)

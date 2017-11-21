@@ -39,5 +39,5 @@ This example shows one way to use the <xref:System.Windows.Controls.TextBox.Sele
  [!code-vb[TextBox_MiscCode#_SelectText](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/TextBox_MiscCode/VisualBasic/Window1.xaml.vb#_selecttext)]  
   
 ## See Also  
- [TextBox Overview](../../../../docs/framework/wpf/controls/textbox-overview.md)   
+ [TextBox Overview](../../../../docs/framework/wpf/controls/textbox-overview.md)  
  [RichTextBox Overview](../../../../docs/framework/wpf/controls/richtextbox-overview.md)

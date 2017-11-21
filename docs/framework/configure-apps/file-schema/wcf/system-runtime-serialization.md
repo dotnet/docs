@@ -58,6 +58,6 @@ Represents the root element for the <xref:System.Runtime.Serialization> namespac
 |[\<configuration> Element](../../../../../docs/framework/configure-apps/file-schema/configuration-element.md)|The top level element for configuration.|  
   
 ## See Also  
- <xref:System.Runtime.Serialization>   
- [Using Data Contracts](../../../../../docs/framework/wcf/feature-details/using-data-contracts.md)   
+ <xref:System.Runtime.Serialization>  
+ [Using Data Contracts](../../../../../docs/framework/wcf/feature-details/using-data-contracts.md)  
  [Data Contract Known Types](../../../../../docs/framework/wcf/feature-details/data-contract-known-types.md)

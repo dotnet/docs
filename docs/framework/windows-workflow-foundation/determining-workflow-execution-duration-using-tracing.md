@@ -37,6 +37,6 @@ This topic demonstrates how to determine the time it takes for a successfully co
  **WorkflowInstance Id: '1bbac57b-3322-498e-9e27-8833fda3a5bf' has completed in the Closed state.**  
   
 ## See Also  
- [Workflow Tracing](../../../docs/framework/windows-workflow-foundation/workflow-tracing.md)   
- [Windows Server App Fabric Monitoring](http://go.microsoft.com/fwlink/?LinkId=201273)   
+ [Workflow Tracing](../../../docs/framework/windows-workflow-foundation/workflow-tracing.md)  
+ [Windows Server App Fabric Monitoring](http://go.microsoft.com/fwlink/?LinkId=201273)  
  [Monitoring Applications with App Fabric](http://go.microsoft.com/fwlink/?LinkId=201275)

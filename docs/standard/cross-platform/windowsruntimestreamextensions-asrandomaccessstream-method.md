@@ -26,7 +26,7 @@ manager: "wpickett"
   
  Converts the specified stream to a random access stream.  
   
- **Namespace:** <xref:System.IO?displayProperty=nameWithType>   
+ **Namespace:** <xref:System.IO?displayProperty=nameWithType>  
  **Assembly:** System.Runtime.WindowsRuntime (in System.Runtime.WindowsRuntime.dll)  
   
 ## Syntax  
@@ -72,5 +72,5 @@ A [!INCLUDE[wrt](../../../includes/wrt-md.md)] random access stream, which repre
  Supported in: Windows 8.1  
   
 ## See Also  
- <!--zz <xref:System.IO.WindowsRuntimeStreamExtensions>--> `System.IO.WindowsRuntimeStreamExtensions`   
+ <!--zz <xref:System.IO.WindowsRuntimeStreamExtensions>--> `System.IO.WindowsRuntimeStreamExtensions`  
  [How to: Convert Between .NET Framework Streams and Windows Runtime Streams](../../../docs/standard/io/how-to-convert-between-dotnet-streams-and-winrt-streams.md)

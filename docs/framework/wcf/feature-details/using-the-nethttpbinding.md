@@ -65,7 +65,7 @@ ServiceHost svchost = new ServiceHost(typeof(Service1), baseAddress);
 ```  
   
 ## See Also  
- [Configuring Bindings for Services](../../../../docs/framework/wcf/configuring-bindings-for-wcf-services.md)   
- [Bindings](../../../../docs/framework/wcf/feature-details/bindings.md)   
- [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md)   
+ [Configuring Bindings for Services](../../../../docs/framework/wcf/configuring-bindings-for-wcf-services.md)  
+ [Bindings](../../../../docs/framework/wcf/feature-details/bindings.md)  
+ [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md)  
  [Duplex Services](../../../../docs/framework/wcf/feature-details/duplex-services.md)

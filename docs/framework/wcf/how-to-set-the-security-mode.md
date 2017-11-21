@@ -120,12 +120,12 @@ manager: "mbaldwin"
  [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [How to: Use Transport Security and Message Credentials](../../../docs/framework/wcf/feature-details/how-to-use-transport-security-and-message-credentials.md).  
   
 ## See Also  
- [How to: Configure a Port with an SSL Certificate](../../../docs/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate.md)   
- [How to: Use Transport Security and Message Credentials](../../../docs/framework/wcf/feature-details/how-to-use-transport-security-and-message-credentials.md)   
- [Transport Security](../../../docs/framework/wcf/feature-details/transport-security.md)   
- [Message Security](../../../docs/framework/wcf/feature-details/message-security-in-wcf.md)   
- [Security Overview](../../../docs/framework/wcf/feature-details/security-overview.md)   
- [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md)   
- [\<security>](../../../docs/framework/configure-apps/file-schema/wcf/security-of-wshttpbinding.md)   
- [\<security>](../../../docs/framework/configure-apps/file-schema/wcf/security-of-basichttpbinding.md)   
+ [How to: Configure a Port with an SSL Certificate](../../../docs/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate.md)  
+ [How to: Use Transport Security and Message Credentials](../../../docs/framework/wcf/feature-details/how-to-use-transport-security-and-message-credentials.md)  
+ [Transport Security](../../../docs/framework/wcf/feature-details/transport-security.md)  
+ [Message Security](../../../docs/framework/wcf/feature-details/message-security-in-wcf.md)  
+ [Security Overview](../../../docs/framework/wcf/feature-details/security-overview.md)  
+ [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md)  
+ [\<security>](../../../docs/framework/configure-apps/file-schema/wcf/security-of-wshttpbinding.md)  
+ [\<security>](../../../docs/framework/configure-apps/file-schema/wcf/security-of-basichttpbinding.md)  
  [\<security>](../../../docs/framework/configure-apps/file-schema/wcf/security-of-nettcpbinding.md)

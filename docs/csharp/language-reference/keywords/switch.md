@@ -59,7 +59,7 @@ Starting with C# 7, the match expression can be any non-null expression.
 
  [!code-csharp[switch#2](../../../../samples/snippets/csharp/language-reference/keywords/switch/switch2.cs#1)]  
 
- Only one switch section in a switch statement executes. C# does not allow execution to continue from one switch section to the next. Because of this, the following code generates a compiler error, CS0163: "Control cannot fall through from one case label (<case label>) to another."   
+ Only one switch section in a switch statement executes. C# does not allow execution to continue from one switch section to the next. Because of this, the following code generates a compiler error, CS0163: "Control cannot fall through from one case label (<case label>) to another."  
 
 ```csharp  
 switch (caseSwitch)  
@@ -190,11 +190,11 @@ Note that the `when` clause in the example that attempts to test whether a `Shap
   
 ## See Also  
 
- [C# Reference](../index.md)   
- [C# Programming Guide](../../programming-guide/index.md)   
- [C# Keywords](index.md)   
- [if-else](if-else.md)   
- [Pattern Matching](../../pattern-matching.md)   
+ [C# Reference](../index.md)  
+ [C# Programming Guide](../../programming-guide/index.md)  
+ [C# Keywords](index.md)  
+ [if-else](if-else.md)  
+ [Pattern Matching](../../pattern-matching.md)  
  
 
  

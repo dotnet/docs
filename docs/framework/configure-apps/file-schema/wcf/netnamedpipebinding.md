@@ -149,9 +149,9 @@ Defines a binding that is secure, reliable, optimized for on-machine cross proce
 ```  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.NetNamedPipeBindingElement>   
- <xref:System.ServiceModel.NetNamedPipeBinding>   
- [\<binding>](../../../../../docs/framework/misc/binding.md)   
- [Bindings](../../../../../docs/framework/wcf/bindings.md)   
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)   
+ <xref:System.ServiceModel.Configuration.NetNamedPipeBindingElement>  
+ <xref:System.ServiceModel.NetNamedPipeBinding>  
+ [\<binding>](../../../../../docs/framework/misc/binding.md)  
+ [Bindings](../../../../../docs/framework/wcf/bindings.md)  
+ [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
  [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/en-us/bd8b277b-932f-472f-a42a-b02bb5257dfb)

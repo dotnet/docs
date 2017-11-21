@@ -23,7 +23,7 @@ manager: "jhubbard"
   
  The following example gets all the online orders from the SalesOrderHeader table and outputs the order ID, order date, and order number to the console.  
   
- [!code-csharp[DP LINQ to DataSet Examples#Where1](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/CS/Program.cs#where1)]   
+ [!code-csharp[DP LINQ to DataSet Examples#Where1](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/CS/Program.cs#where1)]  
  [!code-vb[DP LINQ to DataSet Examples#Where1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/VB/Module1.vb#where1)] 
   
  The local variable query is initialized with a query expression, which operates on one or more information sources by applying one or more query operators from either the standard query operators or, in the case of [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)], operators specific to the <xref:System.Data.DataSet> class. The query expression in the previous example uses two of the standard query operators: `Where` and `Select`.  
@@ -37,6 +37,6 @@ manager: "jhubbard"
  Note that the data type specified in the generic parameter `T` of the <xref:System.Data.DataRowExtensions.Field%2A> method and <xref:System.Data.DataRowExtensions.SetField%2A> method must match the type of the underlying value or an <xref:System.InvalidCastException> will be thrown. The specified column name must also match the name of a column in the <xref:System.Data.DataSet> or an <xref:System.ArgumentException> will be thrown. In both cases, the exception is thrown at run time data enumeration when the query is executed.  
   
 ## See Also  
- [Cross-Table Queries](../../../../docs/framework/data/adonet/cross-table-queries-linq-to-dataset.md)   
- [Querying Typed DataSets](../../../../docs/framework/data/adonet/querying-typed-datasets.md)   
+ [Cross-Table Queries](../../../../docs/framework/data/adonet/cross-table-queries-linq-to-dataset.md)  
+ [Querying Typed DataSets](../../../../docs/framework/data/adonet/querying-typed-datasets.md)  
  [Generic Field and SetField Methods](../../../../docs/framework/data/adonet/generic-field-and-setfield-methods-linq-to-dataset.md)

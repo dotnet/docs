@@ -76,7 +76,7 @@ When you want to display large quantities of tabular data in a <xref:Microsoft.V
      [!code-csharp[VbPowerPacksDataRepeaterVirtualMode#6](../../../visual-basic/developing-apps/windows-forms/codesnippet/CSharp/virtual-mode-in-the-datarepeater-control-visual-studio_6.cs)]  
   
 ## See Also  
- <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.ItemValuePushed>   
- <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.NewItemNeeded>   
- <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.ItemValueNeeded>   
+ <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.ItemValuePushed>  
+ <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.NewItemNeeded>  
+ <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.ItemValueNeeded>  
  [Introduction to the DataRepeater Control](../../../visual-basic/developing-apps/windows-forms/introduction-to-the-datarepeater-control-visual-studio.md)

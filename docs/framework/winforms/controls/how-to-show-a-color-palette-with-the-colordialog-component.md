@@ -83,5 +83,5 @@ The [ColorDialog](../../../../docs/framework/winforms/controls/colordialog-compo
     ```  
   
 ## See Also  
- <xref:System.Windows.Forms.ColorDialog>   
+ <xref:System.Windows.Forms.ColorDialog>  
  [ColorDialog Component](../../../../docs/framework/winforms/controls/colordialog-component-windows-forms.md)

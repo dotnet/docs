@@ -119,6 +119,6 @@ The following illustration depicts a simple [!INCLUDE[indigo1](../../../../inclu
 ```  
   
 ## See Also  
- <xref:System.ServiceModel.NetTcpBinding>   
- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)   
+ <xref:System.ServiceModel.NetTcpBinding>  
+ [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
  [Security Model for Windows Server App Fabric](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

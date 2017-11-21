@@ -57,6 +57,6 @@ manager: "jhubbard"
  [!code-vb[DLinqGettingStarted#4](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqGettingStarted/vb/Module1.vb#4)]  
   
 ## See Also  
- [Programming Guide](../../../../../../docs/framework/data/adonet/sql/linq/programming-guide.md)   
- [The LINQ to SQL Object Model](../../../../../../docs/framework/data/adonet/sql/linq/the-linq-to-sql-object-model.md)   
+ [Programming Guide](../../../../../../docs/framework/data/adonet/sql/linq/programming-guide.md)  
+ [The LINQ to SQL Object Model](../../../../../../docs/framework/data/adonet/sql/linq/the-linq-to-sql-object-model.md)  
  [Getting Started](../../../../../../docs/framework/data/adonet/sql/linq/getting-started.md)

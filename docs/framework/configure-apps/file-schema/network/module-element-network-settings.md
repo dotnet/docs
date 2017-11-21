@@ -79,5 +79,5 @@ Adds a new proxy module to the application.
 ```  
   
 ## See Also  
- <xref:System.Net.IWebProxy?displayProperty=nameWithType>   
+ <xref:System.Net.IWebProxy?displayProperty=nameWithType>  
  [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

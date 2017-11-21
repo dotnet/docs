@@ -69,6 +69,6 @@ int? i2 = (int?)iBoxed;
     ```  
   
 ## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Nullable Types](../../../csharp/programming-guide/nullable-types/index.md)   
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Nullable Types](../../../csharp/programming-guide/nullable-types/index.md)  
  [How to: Identify a Nullable Type](../../../csharp/programming-guide/nullable-types/how-to-identify-a-nullable-type.md)

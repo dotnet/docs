@@ -36,7 +36,7 @@ You can customize the behavior of your <xref:System.Windows.Forms.ContextMenuStr
  Set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A?displayProperty=nameWithType> property to `true` to prevent the menu from opening.  
   
 ## See Also  
- <xref:System.Windows.Forms.ContextMenuStrip>   
- <xref:System.ComponentModel.CancelEventArgs.Cancel%2A>   
- <xref:System.Windows.Forms.ToolStripDropDown>   
+ <xref:System.Windows.Forms.ContextMenuStrip>  
+ <xref:System.ComponentModel.CancelEventArgs.Cancel%2A>  
+ <xref:System.Windows.Forms.ToolStripDropDown>  
  [ToolStrip Control](../../../../docs/framework/winforms/controls/toolstrip-control-windows-forms.md)

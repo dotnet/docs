@@ -475,7 +475,7 @@ This code modifies the **ImagePath** registry key, which typically contains the 
  You can use an installer to create an event log when the application is installed instead of creating the event log when the application runs. Additionally, the event log will be deleted by the installer when the application is uninstalled. For more information, see the <xref:System.Diagnostics.EventLogInstaller> reference page.  
   
 ## See Also  
- [Windows Service Applications](../../../docs/framework/windows-services/index.md)   
- [Introduction to Windows Service Applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)   
- [How to: Debug Windows Service Applications](../../../docs/framework/windows-services/how-to-debug-windows-service-applications.md)   
+ [Windows Service Applications](../../../docs/framework/windows-services/index.md)  
+ [Introduction to Windows Service Applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)  
+ [How to: Debug Windows Service Applications](../../../docs/framework/windows-services/how-to-debug-windows-service-applications.md)  
  [Services (Windows)](http://msdn.microsoft.com/library/windows/desktop/ms685141.aspx)

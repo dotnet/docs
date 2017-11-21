@@ -58,5 +58,5 @@ The <xref:System.Drawing.Text.PrivateFontCollection> class inherits from the <xr
  The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of <xref:System.Windows.Forms.PaintEventHandler>.  
   
 ## See Also  
- <xref:System.Drawing.Text.PrivateFontCollection>   
+ <xref:System.Drawing.Text.PrivateFontCollection>  
  [Using Fonts and Text](../../../../docs/framework/winforms/advanced/using-fonts-and-text.md)

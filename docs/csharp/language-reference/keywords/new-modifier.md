@@ -53,10 +53,10 @@ The keyword new is required on 'MyDerivedC.x' because it hides inherited member 
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
- [Operator Keywords](../../../csharp/language-reference/keywords/operator-keywords.md)   
- [Modifiers](../../../csharp/language-reference/keywords/modifiers.md)   
- [Versioning with the Override and New Keywords](../../../csharp/programming-guide/classes-and-structs/versioning-with-the-override-and-new-keywords.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+ [Operator Keywords](../../../csharp/language-reference/keywords/operator-keywords.md)  
+ [Modifiers](../../../csharp/language-reference/keywords/modifiers.md)  
+ [Versioning with the Override and New Keywords](../../../csharp/programming-guide/classes-and-structs/versioning-with-the-override-and-new-keywords.md)  
  [Knowing When to Use Override and New Keywords](../../../csharp/programming-guide/classes-and-structs/knowing-when-to-use-override-and-new-keywords.md)

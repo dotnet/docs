@@ -49,5 +49,5 @@ This configuration element is used to specify run-time behavior for receiving me
  Use this behavior to instruct the channel listener to use a synchronous receive rather than the default, asynchronous. [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] issues a new thread to pump for each accepted channel. If there are a lot of channels, there is the possibility of running out of threads.  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.SynchronousReceiveElement>   
+ <xref:System.ServiceModel.Configuration.SynchronousReceiveElement>  
  <xref:System.ServiceModel.Description.SynchronousReceiveBehavior>

@@ -53,11 +53,11 @@ Console.WriteLine(myVariable.GetType());
  You can also use the [typeof](../../../csharp/language-reference/keywords/typeof.md) operator.  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
- [Value Types](../../../csharp/language-reference/keywords/value-types.md)   
- [Default Values Table](../../../csharp/language-reference/keywords/default-values-table.md)   
- [Formatting Numeric Results Table](../../../csharp/language-reference/keywords/formatting-numeric-results-table.md)   
- [dynamic](../../../csharp/language-reference/keywords/dynamic.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+ [Value Types](../../../csharp/language-reference/keywords/value-types.md)  
+ [Default Values Table](../../../csharp/language-reference/keywords/default-values-table.md)  
+ [Formatting Numeric Results Table](../../../csharp/language-reference/keywords/formatting-numeric-results-table.md)  
+ [dynamic](../../../csharp/language-reference/keywords/dynamic.md)  
  [Reference Tables for Types](../../../csharp/language-reference/keywords/reference-tables-for-types.md)

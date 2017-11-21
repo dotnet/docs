@@ -42,5 +42,5 @@ ms.author: "wiwagn"
  See [\<summary>](../../../csharp/programming-guide/xmldoc/summary.md) for an example of using \<seealso>.  
   
 ## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
  [Recommended Tags for Documentation Comments](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)

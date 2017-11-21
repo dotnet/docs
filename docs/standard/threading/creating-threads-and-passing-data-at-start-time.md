@@ -58,9 +58,9 @@ When an operating-system process is created, the operating system injects a thre
  [!code-vb[System.Threading.ThreadStart2#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Threading.ThreadStart2/VB/source4.vb#4)]  
   
 ## See Also  
- <xref:System.Threading.Thread>   
- <xref:System.Threading.ThreadStart>   
- <xref:System.Threading.ParameterizedThreadStart>   
- <xref:System.Threading.Thread.Start%2A?displayProperty=nameWithType>   
- [Threading](../../../docs/standard/threading/index.md)   
+ <xref:System.Threading.Thread>  
+ <xref:System.Threading.ThreadStart>  
+ <xref:System.Threading.ParameterizedThreadStart>  
+ <xref:System.Threading.Thread.Start%2A?displayProperty=nameWithType>  
+ [Threading](../../../docs/standard/threading/index.md)  
  [Using Threads and Threading](../../../docs/standard/threading/using-threads-and-threading.md)

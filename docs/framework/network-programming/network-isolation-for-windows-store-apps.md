@@ -30,9 +30,9 @@ Classes in the <xref:System.Net>,  <xref:System.Net.Http>, and <xref:System.Net.
  For more detailed information on how to configure network capabilities and isolation tools used for troubleshooting network isolation, see [How to configure network isolation capabilities](http://go.microsoft.com/fwlink/?LinkID=228265) in the [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] developer documentation.  
   
 ## See Also  
- [Connecting to a web service](http://go.microsoft.com/fwlink/?LinkID=245696)   
- [Guidelines and checklist for network isolation](http://go.microsoft.com/fwlink/?LinkID=228265)   
- [Quickstart: Connecting using HttpClient](http://go.microsoft.com/fwlink/?LinkId=245697)   
- [How to use HttpClient handlers](http://go.microsoft.com/fwlink/?LinkId=245699)   
- [How to secure HttpClient connections](http://go.microsoft.com/fwlink/?LinkId=245698)   
+ [Connecting to a web service](http://go.microsoft.com/fwlink/?LinkID=245696)  
+ [Guidelines and checklist for network isolation](http://go.microsoft.com/fwlink/?LinkID=228265)  
+ [Quickstart: Connecting using HttpClient](http://go.microsoft.com/fwlink/?LinkId=245697)  
+ [How to use HttpClient handlers](http://go.microsoft.com/fwlink/?LinkId=245699)  
+ [How to secure HttpClient connections](http://go.microsoft.com/fwlink/?LinkId=245698)  
  [HttpClient Sample](http://go.microsoft.com/fwlink/?LinkId=242550)

@@ -52,5 +52,5 @@ In [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] applications, a service 
  [!code-vb[C_SyncAsyncClient#1](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_syncasyncclient/vb/services.vb#1)]  
   
 ## See Also  
- [Designing Service Contracts](../../../docs/framework/wcf/designing-service-contracts.md)   
+ [Designing Service Contracts](../../../docs/framework/wcf/designing-service-contracts.md)  
  [Synchronous and Asynchronous Operations](../../../docs/framework/wcf/synchronous-and-asynchronous-operations.md)

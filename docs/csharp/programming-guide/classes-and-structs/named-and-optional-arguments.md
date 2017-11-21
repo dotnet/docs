@@ -130,7 +130,7 @@ AutoFormat parameters
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- [How to: Use Named and Optional Arguments in Office Programming](../../../csharp/programming-guide/classes-and-structs/how-to-use-named-and-optional-arguments-in-office-programming.md)   
- [Using Type dynamic](../../../csharp/programming-guide/types/using-type-dynamic.md)   
- [Using Constructors](../../../csharp/programming-guide/classes-and-structs/using-constructors.md)   
+ [How to: Use Named and Optional Arguments in Office Programming](../../../csharp/programming-guide/classes-and-structs/how-to-use-named-and-optional-arguments-in-office-programming.md)  
+ [Using Type dynamic](../../../csharp/programming-guide/types/using-type-dynamic.md)  
+ [Using Constructors](../../../csharp/programming-guide/classes-and-structs/using-constructors.md)  
  [Using Indexers](../../../csharp/programming-guide/indexers/using-indexers.md)

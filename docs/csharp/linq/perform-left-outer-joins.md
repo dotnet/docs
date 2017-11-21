@@ -27,9 +27,9 @@ A left outer join is a join in which each element of the first collection is ret
  [!code-csharp[CsLINQProgJoining#7](../../../samples/snippets/csharp/concepts/linq/how-to-perform-left-outer-joins_1.cs)]  
  
 ## See also  
- <xref:System.Linq.Enumerable.Join%2A>   
- <xref:System.Linq.Enumerable.GroupJoin%2A>   
- [Perform inner joins](perform-inner-joins.md)   
- [Perform grouped joins](perform-grouped-joins.md)   
- [Anonymous types](../programming-guide/classes-and-structs/anonymous-types.md)   
+ <xref:System.Linq.Enumerable.Join%2A>  
+ <xref:System.Linq.Enumerable.GroupJoin%2A>  
+ [Perform inner joins](perform-inner-joins.md)  
+ [Perform grouped joins](perform-grouped-joins.md)  
+ [Anonymous types](../programming-guide/classes-and-structs/anonymous-types.md)  
  

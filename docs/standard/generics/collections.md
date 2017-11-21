@@ -54,8 +54,8 @@ This topic provides an overview of the generic collection classes and other gene
  [!code-vb[Conceptual.Generics.Overview#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.generics.overview/vb/source2.vb#7)]  
   
 ## See Also  
- <xref:System.Collections.Generic?displayProperty=nameWithType>   
- <xref:System.Collections.ObjectModel?displayProperty=nameWithType>   
- [Generics](../../../docs/standard/generics/index.md)   
- [Generic Delegates for Manipulating Arrays and Lists](../../../docs/standard/generics/delegates-for-manipulating-arrays-and-lists.md)   
+ <xref:System.Collections.Generic?displayProperty=nameWithType>  
+ <xref:System.Collections.ObjectModel?displayProperty=nameWithType>  
+ [Generics](../../../docs/standard/generics/index.md)  
+ [Generic Delegates for Manipulating Arrays and Lists](../../../docs/standard/generics/delegates-for-manipulating-arrays-and-lists.md)  
  [Generic Interfaces](../../../docs/standard/generics/interfaces.md)

@@ -136,7 +136,7 @@ In applications, it is possible that handlers that are attached to event sources
     ```  
   
 ## See Also  
- <xref:System.Windows.WeakEventManager>   
- <xref:System.Windows.IWeakEventListener>   
- [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)   
+ <xref:System.Windows.WeakEventManager>  
+ <xref:System.Windows.IWeakEventListener>  
+ [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)  
  [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)

@@ -139,5 +139,5 @@ This sample demonstrates how to enable tracing and message logging. The resultin
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\TracingAndLogging`  
   
 ## See Also  
- [Tracing](../../../../docs/framework/wcf/diagnostics/tracing/index.md)   
+ [Tracing](../../../../docs/framework/wcf/diagnostics/tracing/index.md)  
  [AppFabric Monitoring Samples](http://go.microsoft.com/fwlink/?LinkId=193959)

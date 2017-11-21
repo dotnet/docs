@@ -197,5 +197,5 @@ The [C# Language Specification](http://go.microsoft.com/fwlink/?LinkId=199552) d
  Follow the guidelines in [Secure Coding Guidelines](../../../standard/security/secure-coding-guidelines.md).  
   
 ## See Also  
- [Visual Basic Coding Conventions](../../../visual-basic/programming-guide/program-structure/coding-conventions.md)   
+ [Visual Basic Coding Conventions](../../../visual-basic/programming-guide/program-structure/coding-conventions.md)  
  [Secure Coding Guidelines](../../../standard/security/secure-coding-guidelines.md)

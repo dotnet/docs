@@ -24,8 +24,8 @@ manager: "wpickett"
 The <xref:System.Windows.Controls.FlowDocumentReader> control is used to view <xref:System.Windows.Documents.FlowDocument> content. It supports multiple viewing modes.  
   
 ## See Also  
- <xref:System.Windows.Controls.FlowDocumentReader>   
- <xref:System.Windows.Controls.FlowDocumentPageViewer>   
- <xref:System.Windows.Controls.FlowDocumentScrollViewer>   
- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)   
+ <xref:System.Windows.Controls.FlowDocumentReader>  
+ <xref:System.Windows.Controls.FlowDocumentPageViewer>  
+ <xref:System.Windows.Controls.FlowDocumentScrollViewer>  
+ [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
  [Flow Document Overview](../../../../docs/framework/wpf/advanced/flow-document-overview.md)

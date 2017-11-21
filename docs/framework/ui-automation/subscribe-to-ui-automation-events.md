@@ -42,7 +42,7 @@ manager: "markl"
  [!code-vb[UIAClient_snip#102](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#102)]  
   
 ## See Also  
- <xref:System.Windows.Automation.Automation.AddAutomationEventHandler%2A>   
- <xref:System.Windows.Automation.Automation.RemoveAllEventHandlers%2A>   
- <xref:System.Windows.Automation.Automation.RemoveAutomationEventHandler%2A>   
+ <xref:System.Windows.Automation.Automation.AddAutomationEventHandler%2A>  
+ <xref:System.Windows.Automation.Automation.RemoveAllEventHandlers%2A>  
+ <xref:System.Windows.Automation.Automation.RemoveAutomationEventHandler%2A>  
  [UI Automation Events Overview](../../../docs/framework/ui-automation/ui-automation-events-overview.md)

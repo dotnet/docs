@@ -67,6 +67,6 @@ Parsing methods convert the string representation of a date and time to an equiv
  [!code-vb[Parsing.DateAndTime#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Parsing.DateAndTime/vb/Example4.vb#4)]  
   
 ## See Also  
- [Parsing Strings](../../../docs/standard/base-types/parsing-strings.md)   
- [Formatting Types](../../../docs/standard/base-types/formatting-types.md)   
+ [Parsing Strings](../../../docs/standard/base-types/parsing-strings.md)  
+ [Formatting Types](../../../docs/standard/base-types/formatting-types.md)  
  [Type Conversion in .NET](../../../docs/standard/base-types/type-conversion.md)

@@ -92,7 +92,7 @@ vbc /out:myCodeLibrary.dll /t:library myCode.vb
 ```  
   
 ## See Also  
- [Creating Assemblies](../../../docs/framework/app-domains/create-assemblies.md)   
- [Multifile Assemblies](../../../docs/framework/app-domains/multifile-assemblies.md)   
- [How to: Build a Multifile Assembly](../../../docs/framework/app-domains/how-to-build-a-multifile-assembly.md)   
+ [Creating Assemblies](../../../docs/framework/app-domains/create-assemblies.md)  
+ [Multifile Assemblies](../../../docs/framework/app-domains/multifile-assemblies.md)  
+ [How to: Build a Multifile Assembly](../../../docs/framework/app-domains/how-to-build-a-multifile-assembly.md)  
  [Programming with Assemblies](../../../docs/framework/app-domains/programming-with-assemblies.md)

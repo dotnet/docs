@@ -65,7 +65,7 @@ The topics contained in this section are intended to give you quick exposure to 
  [Basic Programming Lifecycle](../../../docs/framework/wcf/basic-programming-lifecycle.md)  
   
 ## See Also  
- [Conceptual Overview](../../../docs/framework/wcf/conceptual-overview.md)   
- [Guide to the Documentation](../../../docs/framework/wcf/guide-to-the-documentation.md)   
- [What Is Windows Communication Foundation](../../../docs/framework/wcf/whats-wcf.md)   
+ [Conceptual Overview](../../../docs/framework/wcf/conceptual-overview.md)  
+ [Guide to the Documentation](../../../docs/framework/wcf/guide-to-the-documentation.md)  
+ [What Is Windows Communication Foundation](../../../docs/framework/wcf/whats-wcf.md)  
  [WCF Feature Details](../../../docs/framework/wcf/feature-details/index.md)

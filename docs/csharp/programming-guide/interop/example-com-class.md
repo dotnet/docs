@@ -38,6 +38,6 @@ The following is an example of a class that you would expose as a COM object. Af
  [!code-csharp[csProgGuideInterop#8](../../../csharp/programming-guide/interop/codesnippet/CSharp/example-com-class_1.cs)]  
   
 ## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Interoperability](../../../csharp/programming-guide/interop/index.md)   
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Interoperability](../../../csharp/programming-guide/interop/index.md)  
  [Build Page, Project Designer (C#)](/visualstudio/ide/reference/build-page-project-designer-csharp)

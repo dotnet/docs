@@ -43,5 +43,5 @@ event EventHandler IDrawingObject.OnDraw
 ```  
   
 ## See Also  
- [Events](../../../csharp/programming-guide/events/index.md)   
+ [Events](../../../csharp/programming-guide/events/index.md)  
  [event](../../../csharp/language-reference/keywords/event.md)

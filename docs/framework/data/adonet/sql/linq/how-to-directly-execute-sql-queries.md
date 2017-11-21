@@ -42,5 +42,5 @@ manager: "jhubbard"
  The parameters are expressed in the query text by using the same curly notation used by `Console.WriteLine()` and `String.Format()`. In fact, `String.Format()` is actually called on the query string you provide, substituting the curly braced parameters with generated parameter names such as @p0, @p1 …, @p(n).  
   
 ## See Also  
- [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)   
+ [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)  
  [Querying the Database](../../../../../../docs/framework/data/adonet/sql/linq/querying-the-database.md)

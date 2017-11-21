@@ -71,5 +71,5 @@ HRESULT CreateValue (
   
 ## See Also  
     
- [CreateValueForType Method](../../../../docs/framework/unmanaged-api/debugging/icordebugeval2-createvaluefortype-method.md)   
+ [CreateValueForType Method](../../../../docs/framework/unmanaged-api/debugging/icordebugeval2-createvaluefortype-method.md)  
  ICorDebugValue

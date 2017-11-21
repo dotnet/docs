@@ -335,7 +335,7 @@ Workflow tracking provides visibility into the status of workflow execution. The
     > [!NOTE]
     >  If you switch to a workflow that was started before tracking was enabled no status is displayed. However if you make additional guesses, their status is saved because tracking is now enabled.  
   
- **Please enter a number between 1 and 10**   
+ **Please enter a number between 1 and 10**  
 **Your guess is too high.**   
 **Please enter a number between 1 and 10**    
     > [!NOTE]
@@ -345,7 +345,7 @@ Workflow tracking provides visibility into the status of workflow execution. The
   
 4.  Open Windows Explorer and navigate to the **NumberGuessWorkflowHost\bin\debug** folder (or **bin\release** depending on your project settings). Note that in addition to the project executable files there are files with guid filenames. Identify the one that corresponds to the workflow instance id from the completed workflow in the previous step and open it in Notepad. The tracking information contains information similar to the following.  
   
- **Please enter a number between 1 and 10**   
+ **Please enter a number between 1 and 10**  
 **Your guess is too high.**   
 **Please enter a number between 1 and 10**   
 **Your guess is too high.**   

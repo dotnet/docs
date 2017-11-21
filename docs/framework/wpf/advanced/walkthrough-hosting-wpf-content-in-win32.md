@@ -235,5 +235,5 @@ manager: "wpickett"
  [!code-cpp[Win32HostingWPFPage#WPFPageSetFontFamily](../../../../samples/snippets/cpp/VS_Snippets_Wpf/Win32HostingWPFPage/CPP/WPFPage.cpp#wpfpagesetfontfamily)]  
   
 ## See Also  
- <xref:System.Windows.Interop.HwndSource>   
+ <xref:System.Windows.Interop.HwndSource>  
  [WPF and Win32 Interoperation](../../../../docs/framework/wpf/advanced/wpf-and-win32-interoperation.md)

@@ -109,5 +109,5 @@ Types of isolated storage
  [!code-vb[Conceptual.IsolatedStorage#12](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.isolatedstorage/vb/source9.vb#12)]  
   
 ## See Also  
- <xref:System.IO.IsolatedStorage.IsolatedStorageScope>   
+ <xref:System.IO.IsolatedStorage.IsolatedStorageScope>  
  [Isolated Storage](../../../docs/standard/io/isolated-storage.md)

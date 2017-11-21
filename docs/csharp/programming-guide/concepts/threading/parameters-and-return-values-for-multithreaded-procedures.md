@@ -122,10 +122,10 @@ private void BackgroundWorker1_RunWorkerCompleted(
  You can provide parameters and return values to thread-pool threads by using the optional `ByVal` state-object variable of the <xref:System.Threading.ThreadPool.QueueUserWorkItem%2A> method. Thread-timer threads also support a state object for this purpose. For information on thread pooling and thread timers, see [Thread Pooling (C#)](../../../../csharp/programming-guide/concepts/threading/thread-pooling.md) and [Thread Timers (C#)](../../../../csharp/programming-guide/concepts/threading/thread-timers.md).  
   
 ## See Also  
- [Walkthrough: Multithreading with the BackgroundWorker Component (C#)](../../../../csharp/programming-guide/concepts/threading/walkthrough-multithreading-with-the-backgroundworker-component.md)   
- [Thread Pooling (C#)](../../../../csharp/programming-guide/concepts/threading/thread-pooling.md)   
- [Thread Synchronization (C#)](../../../../csharp/programming-guide/concepts/threading/thread-synchronization.md)   
- [Events](../../../../csharp/programming-guide/events/index.md)   
- [Multithreaded Applications (C#)](../../../../csharp/programming-guide/concepts/threading/multithreaded-applications.md)   
- [Delegates](../../../../csharp/programming-guide/delegates/index.md)   
+ [Walkthrough: Multithreading with the BackgroundWorker Component (C#)](../../../../csharp/programming-guide/concepts/threading/walkthrough-multithreading-with-the-backgroundworker-component.md)  
+ [Thread Pooling (C#)](../../../../csharp/programming-guide/concepts/threading/thread-pooling.md)  
+ [Thread Synchronization (C#)](../../../../csharp/programming-guide/concepts/threading/thread-synchronization.md)  
+ [Events](../../../../csharp/programming-guide/events/index.md)  
+ [Multithreaded Applications (C#)](../../../../csharp/programming-guide/concepts/threading/multithreaded-applications.md)  
+ [Delegates](../../../../csharp/programming-guide/delegates/index.md)  
  [Multithreading in Components](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)

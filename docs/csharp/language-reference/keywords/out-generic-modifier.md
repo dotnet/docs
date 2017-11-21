@@ -49,6 +49,6 @@ For generic type parameters, the `out` keyword specifies that the type parameter
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- [Variance in Generic Interfaces](../../programming-guide/concepts/covariance-contravariance/variance-in-generic-interfaces.md)   
- [in](../../../csharp/language-reference/keywords/in-generic-modifier.md)   
+ [Variance in Generic Interfaces](../../programming-guide/concepts/covariance-contravariance/variance-in-generic-interfaces.md)  
+ [in](../../../csharp/language-reference/keywords/in-generic-modifier.md)  
  [Modifiers](../../../csharp/language-reference/keywords/modifiers.md)

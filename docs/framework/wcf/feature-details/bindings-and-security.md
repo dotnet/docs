@@ -230,9 +230,9 @@ The system-provided bindings included with [!INCLUDE[indigo1](../../../../includ
 |IssuedToken|Allows the service to use a security token service to supply a custom token.|  
   
 ## See Also  
- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)   
- [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)   
- [Selecting a Credential Type](../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md)   
- [Security Capabilities with Custom Bindings](../../../../docs/framework/wcf/feature-details/security-capabilities-with-custom-bindings.md)   
- [Security Behaviors](../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)   
+ [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
+ [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
+ [Selecting a Credential Type](../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md)  
+ [Security Capabilities with Custom Bindings](../../../../docs/framework/wcf/feature-details/security-capabilities-with-custom-bindings.md)  
+ [Security Behaviors](../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)  
  [Security Model for Windows Server App Fabric](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

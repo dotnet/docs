@@ -49,7 +49,7 @@ The three SkewTransform examples illustrated
  For the complete sample, see [2-D Transforms Sample](http://go.microsoft.com/fwlink/?LinkID=158252).  
   
 ## See Also  
- <xref:System.Windows.Media.Transform>   
- <xref:System.Windows.Media.SkewTransform>   
- [Transforms Overview](../../../../docs/framework/wpf/graphics-multimedia/transforms-overview.md)   
+ <xref:System.Windows.Media.Transform>  
+ <xref:System.Windows.Media.SkewTransform>  
+ [Transforms Overview](../../../../docs/framework/wpf/graphics-multimedia/transforms-overview.md)  
  [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/transformations-how-to-topics.md)

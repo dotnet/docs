@@ -268,6 +268,6 @@ The ServiceModel Metadata Utility tool is used to generate service model code fr
  Finally, you should not use the tool in the middle-tier of your application, as it may cause denial-of-service to the current process.  
   
 ## See Also  
- <xref:System.Runtime.Serialization.DataContractAttribute>   
- <xref:System.Runtime.Serialization.DataMemberAttribute>   
+ <xref:System.Runtime.Serialization.DataContractAttribute>  
+ <xref:System.Runtime.Serialization.DataMemberAttribute>  
  [How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md)

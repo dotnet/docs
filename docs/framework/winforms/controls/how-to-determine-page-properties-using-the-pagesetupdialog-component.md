@@ -94,6 +94,6 @@ The [PageSetupDialog](../../../../docs/framework/winforms/controls/pagesetupdial
     ```  
   
 ## See Also  
- <xref:System.Windows.Forms.PageSetupDialog>   
- [How to: Create Standard Windows Forms Print Jobs](../../../../docs/framework/winforms/advanced/how-to-create-standard-windows-forms-print-jobs.md)   
+ <xref:System.Windows.Forms.PageSetupDialog>  
+ [How to: Create Standard Windows Forms Print Jobs](../../../../docs/framework/winforms/advanced/how-to-create-standard-windows-forms-print-jobs.md)  
  [PageSetupDialog Component](../../../../docs/framework/winforms/controls/pagesetupdialog-component-windows-forms.md)

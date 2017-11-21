@@ -100,5 +100,5 @@ You can use the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] client c
  The [\<metadata>](../../../../docs/framework/configure-apps/file-schema/wcf/metadata.md) element is used to specify settings used to register metadata import extensions. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] extending the metadata system, see[Extending the Metadata System](../../../../docs/framework/wcf/extending/extending-the-metadata-system.md).  
   
 ## See Also  
- [Endpoints: Addresses, Bindings, and Contracts](../../../../docs/framework/wcf/feature-details/endpoints-addresses-bindings-and-contracts.md)   
+ [Endpoints: Addresses, Bindings, and Contracts](../../../../docs/framework/wcf/feature-details/endpoints-addresses-bindings-and-contracts.md)  
  [Configuring Client Behaviors](../../../../docs/framework/wcf/configuring-client-behaviors.md)

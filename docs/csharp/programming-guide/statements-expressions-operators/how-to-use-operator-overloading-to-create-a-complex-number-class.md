@@ -23,7 +23,7 @@ This example shows how you can use operator overloading to create a complex numb
  [!code-csharp[csProgGuideStatements#16](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-use-operator-overloading-to-create-a-complex-number-class_1.cs)]  
   
 ## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [C# Operators](../../../csharp/language-reference/operators/index.md)   
- [operator (C# Reference)](../../../csharp/language-reference/keywords/operator.md)   
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [C# Operators](../../../csharp/language-reference/operators/index.md)  
+ [operator (C# Reference)](../../../csharp/language-reference/keywords/operator.md)  
  [Why are overloaded operators always static in C#?](http://go.microsoft.com/fwlink/?LinkId=112383)

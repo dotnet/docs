@@ -39,5 +39,5 @@ A property, procedure, or event in an interface is marked as `<CLSCompliant(True
 -   If you require that this member remain within its current interface, remove the <xref:System.CLSCompliantAttribute> from its definition or mark it as `<CLSCompliant(False)>`.  
   
 ## See Also  
- [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)   
+ [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)  
  [\<PAVE OVER> Writing CLS-Compliant Code](http://msdn.microsoft.com/en-us/4c705105-69a2-4e5e-b24e-0633bc32c7f3)

@@ -95,14 +95,14 @@ To host a service inside a managed application, embed the code for the service i
  [!code-vb[CFX_SelfHost4#5](../../../samples/snippets/visualbasic/VS_Snippets_CFX/cfx_selfhost4/vb/module1.vb#5)]  
   
 ## See Also  
- <xref:System.Uri>   
- <xref:System.Configuration.ConfigurationManager.AppSettings%2A>   
- <xref:System.Configuration.ConfigurationManager>   
- [How to: Host a WCF Service in IIS](../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-iis.md)   
- [Self-Host](../../../docs/framework/wcf/samples/self-host.md)   
- [Hosting Services](../../../docs/framework/wcf/hosting-services.md)   
- [How to: Define a Service Contract](../../../docs/framework/wcf/how-to-define-a-wcf-service-contract.md)   
- [How to: Implement a Service Contract](../../../docs/framework/wcf/how-to-implement-a-wcf-contract.md)   
- [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)   
- [Using Bindings to Configure Services and Clients](../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)   
+ <xref:System.Uri>  
+ <xref:System.Configuration.ConfigurationManager.AppSettings%2A>  
+ <xref:System.Configuration.ConfigurationManager>  
+ [How to: Host a WCF Service in IIS](../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-iis.md)  
+ [Self-Host](../../../docs/framework/wcf/samples/self-host.md)  
+ [Hosting Services](../../../docs/framework/wcf/hosting-services.md)  
+ [How to: Define a Service Contract](../../../docs/framework/wcf/how-to-define-a-wcf-service-contract.md)  
+ [How to: Implement a Service Contract](../../../docs/framework/wcf/how-to-implement-a-wcf-contract.md)  
+ [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)  
+ [Using Bindings to Configure Services and Clients](../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
  [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md)

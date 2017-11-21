@@ -83,11 +83,11 @@ using System.Linq;
  For a class library that you implemented, you shouldn't use extension methods to avoid incrementing the version number of an assembly. If you want to add significant functionality to a library for which you own the source code, you should follow the standard .NET Framework guidelines for assembly versioning. For more information, see [Assembly Versioning](https://msdn.microsoft.com/library/51ket42z).  
   
 ## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Parallel Programming Samples (these include many example extension methods)](http://code.msdn.microsoft.com/Samples-for-Parallel-b4b76364)   
- [Lambda Expressions](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)   
- [Standard Query Operators Overview](http://msdn.microsoft.com/library/24cda21e-8af8-4632-b519-c404a839b9b2)   
- [Conversion rules for Instance parameters and their impact](http://go.microsoft.com/fwlink/?LinkId=112385)   
- [Extension methods Interoperability between languages](http://go.microsoft.com/fwlink/?LinkId=112386)   
- [Extension methods and Curried Delegates](http://go.microsoft.com/fwlink/?LinkId=112387)   
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Parallel Programming Samples (these include many example extension methods)](http://code.msdn.microsoft.com/Samples-for-Parallel-b4b76364)  
+ [Lambda Expressions](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)  
+ [Standard Query Operators Overview](http://msdn.microsoft.com/library/24cda21e-8af8-4632-b519-c404a839b9b2)  
+ [Conversion rules for Instance parameters and their impact](http://go.microsoft.com/fwlink/?LinkId=112385)  
+ [Extension methods Interoperability between languages](http://go.microsoft.com/fwlink/?LinkId=112386)  
+ [Extension methods and Curried Delegates](http://go.microsoft.com/fwlink/?LinkId=112387)  
  [Extension method Binding and Error reporting](http://go.microsoft.com/fwlink/?LinkId=112388)

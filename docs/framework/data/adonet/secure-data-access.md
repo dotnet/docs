@@ -97,9 +97,9 @@ To write secure ADO.NET code, you have to understand the security mechanisms ava
 |[Advanced COM Interoperability](http://msdn.microsoft.com/en-us/3ada36e5-2390-4d70-b490-6ad8de92f2fb)|Contains advanced topics such as primary interop assemblies, threading and custom marshaling.|  
   
 ## See Also  
- [Securing ADO.NET Applications](../../../../docs/framework/data/adonet/securing-ado-net-applications.md)   
- [SQL Server Security](../../../../docs/framework/data/adonet/sql/sql-server-security.md)   
- [Recommendations for Data Access Strategies](http://msdn.microsoft.com/en-us/72411f32-d12a-4de8-b961-e54fca7faaf5)   
- [Protecting Connection Information](../../../../docs/framework/data/adonet/protecting-connection-information.md)   
- [Connection String Builders](../../../../docs/framework/data/adonet/connection-string-builders.md)   
+ [Securing ADO.NET Applications](../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  
+ [SQL Server Security](../../../../docs/framework/data/adonet/sql/sql-server-security.md)  
+ [Recommendations for Data Access Strategies](http://msdn.microsoft.com/en-us/72411f32-d12a-4de8-b961-e54fca7faaf5)  
+ [Protecting Connection Information](../../../../docs/framework/data/adonet/protecting-connection-information.md)  
+ [Connection String Builders](../../../../docs/framework/data/adonet/connection-string-builders.md)  
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

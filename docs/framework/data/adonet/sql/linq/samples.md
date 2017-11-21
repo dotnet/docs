@@ -34,5 +34,5 @@ This topic provides links to the [!INCLUDE[vbprvb](../../../../../../includes/vb
 -   Study the white paper that details [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] technology, complete with [!INCLUDE[vbprvb](../../../../../../includes/vbprvb-md.md)] and C# code examples. For more information, see [LINQ to SQL: .NET Language-Integrated Query for Relational Data](http://go.microsoft.com/fwlink/?LinkId=93205).  
   
 ## See Also  
- [LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/index.md)   
+ [LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/index.md)  
  [LINQ to SQL Walkthroughs](http://msdn.microsoft.com/en-us/308e66ac-f704-4e00-9b4e-7af0045a2374)

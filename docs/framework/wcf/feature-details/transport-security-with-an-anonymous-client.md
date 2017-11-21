@@ -121,7 +121,7 @@ This [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] scenario uses trans
 ```  
   
 ## See Also  
- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)   
- [WS Transport Security](../../../../docs/framework/wcf/samples/ws-transport-security.md)   
- [Transport Security Overview](../../../../docs/framework/wcf/feature-details/transport-security-overview.md)   
+ [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
+ [WS Transport Security](../../../../docs/framework/wcf/samples/ws-transport-security.md)  
+ [Transport Security Overview](../../../../docs/framework/wcf/feature-details/transport-security-overview.md)  
  [Security Model for Windows Server App Fabric](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

@@ -187,5 +187,5 @@ Console.WriteLine("Result: {0}", result);
   
  When the workflow is invoked, the following output is displayed to the console:  
   
- **Squaring the value: 5**   
+ **Squaring the value: 5**  
 **Result: 25**

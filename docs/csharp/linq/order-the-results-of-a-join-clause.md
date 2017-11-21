@@ -20,6 +20,6 @@ This example shows how to order the results of a join operation. Note that the o
  [!code-csharp[csProgGuideLINQ#81](../../../samples/snippets/csharp/concepts/linq/how-to-order-the-results-of-a-join-clause_1.cs)]  
  
 ## See also  
- [LINQ query expressions](index.md)   
- [orderby clause](../language-reference/keywords/orderby-clause.md)   
+ [LINQ query expressions](index.md)  
+ [orderby clause](../language-reference/keywords/orderby-clause.md)  
  [join clause](../language-reference/keywords/join-clause.md) 

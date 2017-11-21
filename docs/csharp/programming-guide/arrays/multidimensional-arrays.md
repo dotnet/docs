@@ -48,7 +48,7 @@ Arrays can have more than one dimension. For example, the following declaration 
  [!code-csharp[csProgGuideArrays#17](../../../csharp/programming-guide/arrays/codesnippet/CSharp/multidimensional-arrays_8.cs)]  
   
 ## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Arrays](../../../csharp/programming-guide/arrays/index.md)   
- [Single-Dimensional Arrays](../../../csharp/programming-guide/arrays/single-dimensional-arrays.md)   
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Arrays](../../../csharp/programming-guide/arrays/index.md)  
+ [Single-Dimensional Arrays](../../../csharp/programming-guide/arrays/single-dimensional-arrays.md)  
  [Jagged Arrays](../../../csharp/programming-guide/arrays/jagged-arrays.md)

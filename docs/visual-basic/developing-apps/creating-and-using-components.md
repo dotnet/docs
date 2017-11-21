@@ -78,6 +78,6 @@ A *component* is a class that implements the <xref:System.ComponentModel.ICompon
  Explains how to fix common problems.  
   
 ## See Also  
- [How to: Access Design-Time Support in Windows Forms](http://msdn.microsoft.com/library/a84f8579-1f47-41b9-ba37-69030b0aff09)   
- [How to: Extend the Appearance and Behavior of Controls in Design Mode](http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b)   
+ [How to: Access Design-Time Support in Windows Forms](http://msdn.microsoft.com/library/a84f8579-1f47-41b9-ba37-69030b0aff09)  
+ [How to: Extend the Appearance and Behavior of Controls in Design Mode](http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b)  
  [How to: Perform Custom Initialization for Controls in Design Mode](http://msdn.microsoft.com/library/914eaa03-092f-4556-9160-b8a2a40641d9)

@@ -88,9 +88,9 @@ The *identity* feature of [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)
  [!code-vb[c_HowToSetCustomClientIdentity#6](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_howtosetcustomclientidentity/vb/source.vb#6)]  
   
 ## See Also  
- <xref:System.ServiceModel.ServiceAuthorizationManager>   
- <xref:System.ServiceModel.EndpointIdentity>   
- <xref:System.ServiceModel.Security.IdentityVerifier>   
- [Service Identity Sample](../../../../docs/framework/wcf/samples/service-identity-sample.md)   
- [Authorization Policy](../../../../docs/framework/wcf/samples/authorization-policy.md)   
+ <xref:System.ServiceModel.ServiceAuthorizationManager>  
+ <xref:System.ServiceModel.EndpointIdentity>  
+ <xref:System.ServiceModel.Security.IdentityVerifier>  
+ [Service Identity Sample](../../../../docs/framework/wcf/samples/service-identity-sample.md)  
+ [Authorization Policy](../../../../docs/framework/wcf/samples/authorization-policy.md)  
  [Authorization Policy](../../../../docs/framework/wcf/samples/authorization-policy.md)

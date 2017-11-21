@@ -34,5 +34,5 @@ This example shows how to use the get and set methods that are defined on <xref:
  [!code-vb[gridGetSetMethods#2](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/gridGetSetMethods/VisualBasic/Window1.xaml.vb#2)]  
   
 ## See Also  
- <xref:System.Windows.Controls.Grid>   
+ <xref:System.Windows.Controls.Grid>  
  [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)

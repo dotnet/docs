@@ -25,7 +25,7 @@ The following example uses pointers to copy bytes from one array to another.
  [!code-csharp[csProgGuidePointers#18](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/how-to-use-pointers-to-copy-an-array-of-bytes_2.cs)]  
   
 ## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Unsafe Code and Pointers](../../../csharp/programming-guide/unsafe-code-pointers/index.md)   
- [/unsafe (C# Compiler Options)](../../../csharp/language-reference/compiler-options/unsafe-compiler-option.md)   
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Unsafe Code and Pointers](../../../csharp/programming-guide/unsafe-code-pointers/index.md)  
+ [/unsafe (C# Compiler Options)](../../../csharp/language-reference/compiler-options/unsafe-compiler-option.md)  
  [Garbage Collection](../../../standard/garbage-collection/index.md)

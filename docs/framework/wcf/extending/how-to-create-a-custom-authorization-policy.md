@@ -82,7 +82,7 @@ The Identity Model infrastructure in [!INCLUDE[indigo1](../../../../includes/ind
  [!code-vb[c_CustomAuthPol#5](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customauthpol/vb/source.vb#5)]  
   
 ## See Also  
- <xref:System.ServiceModel.ServiceAuthorizationManager>   
- [How to: Compare Claims](../../../../docs/framework/wcf/extending/how-to-compare-claims.md)   
- [How to: Create a Custom Authorization Manager for a Service](../../../../docs/framework/wcf/extending/how-to-create-a-custom-authorization-manager-for-a-service.md)   
+ <xref:System.ServiceModel.ServiceAuthorizationManager>  
+ [How to: Compare Claims](../../../../docs/framework/wcf/extending/how-to-compare-claims.md)  
+ [How to: Create a Custom Authorization Manager for a Service](../../../../docs/framework/wcf/extending/how-to-create-a-custom-authorization-manager-for-a-service.md)  
  [Authorization Policy](../../../../docs/framework/wcf/samples/authorization-policy.md)

@@ -48,7 +48,7 @@ The following example shows many usages of the `default` literal in a default va
 ## See also
 
  <xref:System.Collections.Generic>
- [C# Programming Guide](../index.md)   
- [Generics](../generics/index.md)   
- [Generic Methods](../generics/generic-methods.md)   
- [Generics](~/docs/standard/generics/index.md)   
+ [C# Programming Guide](../index.md)  
+ [Generics](../generics/index.md)  
+ [Generic Methods](../generics/generic-methods.md)  
+ [Generics](~/docs/standard/generics/index.md)  

@@ -28,8 +28,8 @@ MSMQ rejected the message.
  See [MQMarkMessageRejected](http://go.microsoft.com/fwlink/?LinkID=99548) for more details on what a rejected message means in MSMQ.  
   
 ## See Also  
- [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)   
- [Using Tracing to Troubleshoot Your Application](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)   
- [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)   
- [Poison-Message Handling](http://go.microsoft.com/fwlink/?LinkID=99546)   
+ [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)  
+ [Using Tracing to Troubleshoot Your Application](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)  
+ [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)  
+ [Poison-Message Handling](http://go.microsoft.com/fwlink/?LinkID=99546)  
  [MQMarkMessageRejected](http://go.microsoft.com/fwlink/?LinkID=99548)

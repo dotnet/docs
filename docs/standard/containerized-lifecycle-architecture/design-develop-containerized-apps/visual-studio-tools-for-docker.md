@@ -61,11 +61,9 @@ You could deploy a multicontainer application by using a single docker-compose.y
 
 **More info:** For further details on the services implementation and use of Visual Studio Tools for Docker, read the following articles:
 
-Build, debug, update, and refresh apps in a local Docker container: [https://azure.microsoft.com/\
-documentation/articles/vs-azure-tools-docker-edit-and-refresh/](https://azure.microsoft.com/documentation/articles/vs-azure-tools-docker-edit-and-refresh/)
+Build, debug, update, and refresh apps in a local Docker container: [https://docs.microsoft.com/azure/vs-azure-tools-docker-edit-and-refresh/](https://docs.microsoft.com/azure/vs-azure-tools-docker-edit-and-refresh)
 
-Deploy an ASP&period;NET container to a remote Docker host: [https://azure.microsoft.com/\
-documentation/articles/vs-azure-tools-docker-hosting-web-apps-in-docker/](https://azure.microsoft.com/documentation/articles/vs-azure-tools-docker-hosting-web-apps-in-docker/)
+Deploy an ASP&period;NET container to a remote Docker host: [https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker/](https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker)
 
 
 >[!div class="step-by-step"]

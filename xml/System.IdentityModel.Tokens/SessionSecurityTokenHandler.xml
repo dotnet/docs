@@ -160,7 +160,7 @@
 ## Remarks  
  When encoding a cookie transforms are applied in the order in which they appear in the <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler.Transforms%2A> property. When decoding a cookie, they are applied in the reverse order.  
   
- Called from the <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler.WriteToken%2A> and ?qualifyHint=False&autoUpgrade=True methods to encode and decode the cookie material.  
+ Called from the <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler.WriteToken%2A> and <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken%2A> methods to encode and decode the cookie material.  
   
  ]]></format>
         </remarks>

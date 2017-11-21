@@ -639,14 +639,14 @@ private void stopButton_Click(object sender, System.EventArgs e)
 -   Control how your controls are serialized and how code is generated for them. For more information, see [Dynamic Source Code Generation and Compilation](../../../../docs/framework/reflection-and-codedom/dynamic-source-code-generation-and-compilation.md).  
   
 ## See Also  
- <xref:System.Windows.Forms.UserControl>   
- <xref:System.Windows.Forms.Design.ParentControlDesigner>   
- <xref:System.Windows.Forms.Design.DocumentDesigner>   
- <xref:System.ComponentModel.Design.IRootDesigner>   
- <xref:System.ComponentModel.Design.DesignerVerb>   
- <xref:System.Drawing.Design.UITypeEditor>   
- <xref:System.ComponentModel.BackgroundWorker>   
- [How to: Create a Windows Forms Control That Takes Advantage of Design-Time Features](http://msdn.microsoft.com/library/8e0bad0e-56f3-43d2-bf63-a945c654d97c)   
- [Extending Design-Time Support](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)   
- [Custom Designers](http://msdn.microsoft.com/library/ca11988e-d38e-44d8-a05d-71362ae7844d)   
+ <xref:System.Windows.Forms.UserControl>  
+ <xref:System.Windows.Forms.Design.ParentControlDesigner>  
+ <xref:System.Windows.Forms.Design.DocumentDesigner>  
+ <xref:System.ComponentModel.Design.IRootDesigner>  
+ <xref:System.ComponentModel.Design.DesignerVerb>  
+ <xref:System.Drawing.Design.UITypeEditor>  
+ <xref:System.ComponentModel.BackgroundWorker>  
+ [How to: Create a Windows Forms Control That Takes Advantage of Design-Time Features](http://msdn.microsoft.com/library/8e0bad0e-56f3-43d2-bf63-a945c654d97c)  
+ [Extending Design-Time Support](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)  
+ [Custom Designers](http://msdn.microsoft.com/library/ca11988e-d38e-44d8-a05d-71362ae7844d)  
  [.NET Shape Library: A Sample Designer](http://windowsforms.net/articles/shapedesigner.aspx)

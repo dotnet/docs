@@ -31,5 +31,5 @@ ms.author: dotnetcontent
 |<xref:Microsoft.VisualBasic.VBMath>|Contains members perform mathematical operations.|  
   
 ## See Also  
- [Visual Basic Language Reference](../../visual-basic/language-reference/index.md)   
+ [Visual Basic Language Reference](../../visual-basic/language-reference/index.md)  
  [Visual Basic](../../visual-basic/index.md)

@@ -33,5 +33,5 @@ manager: "wpickett"
  [!code-vb[TextWrapProperty#2](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/TextWrapProperty/VisualBasic/Pane1.xaml.vb#2)]  
   
 ## See Also  
- <xref:System.Windows.Controls.TextBlock.TextWrapping%2A>   
+ <xref:System.Windows.Controls.TextBlock.TextWrapping%2A>  
  <xref:System.Windows.TextWrapping>

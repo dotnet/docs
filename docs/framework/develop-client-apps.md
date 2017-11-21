@@ -56,8 +56,8 @@ There are multiple ways to develop Windows-based applications with the .NET fram
  Describes the ways you can develop web apps using ASP.NET.  
   
 ## See Also  
- [Portable Class Library](../../docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md)   
- [Overview](../../docs/framework/get-started/overview.md)   
- [Development Guide](../../docs/framework/development-guide.md)   
- [How to: Create a Windows Desktop Application](http://msdn.microsoft.com/library/47021403-eaca-4c34-946a-a26c42a64148)   
+ [Portable Class Library](../../docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md)  
+ [Overview](../../docs/framework/get-started/overview.md)  
+ [Development Guide](../../docs/framework/development-guide.md)  
+ [How to: Create a Windows Desktop Application](http://msdn.microsoft.com/library/47021403-eaca-4c34-946a-a26c42a64148)  
  [Windows Service Applications](../../docs/framework/windows-services/index.md)

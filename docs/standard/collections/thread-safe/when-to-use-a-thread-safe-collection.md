@@ -65,6 +65,6 @@ The [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)] introduces
  When bounding and blocking semantics are required, <xref:System.Collections.Concurrent.BlockingCollection%601?displayProperty=nameWithType> will probably perform faster than any custom implementation. It also supports rich cancellation, enumeration, and exception handling.  
   
 ## See Also  
- <xref:System.Collections.Concurrent?displayProperty=nameWithType>   
- [Thread-Safe Collections](../../../../docs/standard/collections/thread-safe/index.md)   
+ <xref:System.Collections.Concurrent?displayProperty=nameWithType>  
+ [Thread-Safe Collections](../../../../docs/standard/collections/thread-safe/index.md)  
  [Parallel Programming](../../../../docs/standard/parallel-programming/index.md)

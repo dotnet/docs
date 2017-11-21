@@ -65,5 +65,5 @@ Beginning in [!INCLUDE[ssNoVersion](../../../../../includes/ssnoversion-md.md)] 
 -   Use the `AttachDBFilename` connection string keyword to specify the .MDF file.  
   
 ## See Also  
- [SQL Server Features and ADO.NET](../../../../../docs/framework/data/adonet/sql/sql-server-features-and-adonet.md)   
+ [SQL Server Features and ADO.NET](../../../../../docs/framework/data/adonet/sql/sql-server-features-and-adonet.md)  
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

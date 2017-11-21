@@ -37,5 +37,5 @@ End If
 ```  
   
 ## See Also  
- [Nullable Value Types](../../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md)   
+ [Nullable Value Types](../../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md)  
  [IsNot Operator](../../../visual-basic/language-reference/operators/isnot-operator.md)

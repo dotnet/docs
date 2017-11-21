@@ -31,7 +31,7 @@ This example shows how to create a <xref:System.Windows.Controls.Slider> control
  [!code-xaml[Slider#4](../../../../samples/snippets/xaml/VS_Snippets_Wpf/Slider/xaml/window1.xaml#4)]  
   
 ## See Also  
- <xref:System.Windows.Controls.Slider>   
- <xref:System.Windows.Controls.Primitives.TickBar>   
- <xref:System.Windows.Controls.Slider.TickPlacement%2A>   
+ <xref:System.Windows.Controls.Slider>  
+ <xref:System.Windows.Controls.Primitives.TickBar>  
+ <xref:System.Windows.Controls.Slider.TickPlacement%2A>  
  [Slider How-to Topics](http://msdn.microsoft.com/en-us/534be86c-afb2-425d-8186-631278a9925e)

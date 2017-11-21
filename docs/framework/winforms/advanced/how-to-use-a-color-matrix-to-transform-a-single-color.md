@@ -70,5 +70,5 @@ manager: "wpickett"
  The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler.  
   
 ## See Also  
- [Recoloring Images](../../../../docs/framework/winforms/advanced/recoloring-images.md)   
+ [Recoloring Images](../../../../docs/framework/winforms/advanced/recoloring-images.md)  
  [Coordinate Systems and Transformations](../../../../docs/framework/winforms/advanced/coordinate-systems-and-transformations.md)

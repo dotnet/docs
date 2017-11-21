@@ -156,6 +156,6 @@ void OnLoaded(object sender, RoutedEventArgs e)
  ![Glass Frame Extended into a WPF application.](../../../../docs/framework/wpf/graphics-multimedia/media/wpfextendedglassintoclient.PNG "WPFextendedGlassIntoClient")  
   
 ## See Also  
- [Desktop Window Manager Overview](https://msdn.microsoft.com/library/aa969540.aspx)   
- [Desktop Window Manager Blur Overview](https://msdn.microsoft.com/library/aa969537.aspx)   
+ [Desktop Window Manager Overview](https://msdn.microsoft.com/library/aa969540.aspx)  
+ [Desktop Window Manager Blur Overview](https://msdn.microsoft.com/library/aa969537.aspx)  
  [DwmExtendFrameIntoClientArea](https://msdn.microsoft.com/library/aa969512.aspx)

@@ -96,5 +96,5 @@ This example shows how to create an add-in that returns a [!INCLUDE[TLA#tla_wpf]
  [!code-vb[SimpleAddInReturnsAUISample#GetUICode](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/SimpleAddInReturnsAUISample/VisualBasic/Host/MainWindow.xaml.vb#getuicode)]  
   
 ## See Also  
- [Add-ins and Extensibility](../../../../docs/framework/add-ins/index.md)   
+ [Add-ins and Extensibility](../../../../docs/framework/add-ins/index.md)  
  [WPF Add-Ins Overview](../../../../docs/framework/wpf/app-development/wpf-add-ins-overview.md)

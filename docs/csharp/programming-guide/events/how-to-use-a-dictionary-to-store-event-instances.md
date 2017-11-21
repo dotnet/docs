@@ -16,9 +16,9 @@ ms.author: "wiwagn"
 One use for `accessor-declarations` is to expose many events without allocating a field for each event, but instead using a Dictionary to store the event instances. This is only useful if you have many events, but you expect most of the events will not be implemented.  
   
 ## Example  
- [!code-cs[csProgGuideEvents#9](../../../csharp/programming-guide/events/codesnippet/CSharp/how-to-use-a-dictionary-to-store-event-instances_1.cs)]  
+ [!code-csharp[csProgGuideEvents#9](../../../csharp/programming-guide/events/codesnippet/CSharp/how-to-use-a-dictionary-to-store-event-instances_1.cs)]  
   
 ## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Events](../../../csharp/programming-guide/events/index.md)   
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Events](../../../csharp/programming-guide/events/index.md)  
  [Delegates](../../../csharp/programming-guide/delegates/index.md)

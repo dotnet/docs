@@ -122,7 +122,7 @@ manager: "wpickett"
     ```  
   
 ## See Also  
- <xref:System.Windows.Forms.ToolBar>   
- [How to: Trigger Menu Events for Toolbar Buttons](../../../../docs/framework/winforms/controls/how-to-trigger-menu-events-for-toolbar-buttons.md)   
- [ToolBar Control](../../../../docs/framework/winforms/controls/toolbar-control-windows-forms.md)   
+ <xref:System.Windows.Forms.ToolBar>  
+ [How to: Trigger Menu Events for Toolbar Buttons](../../../../docs/framework/winforms/controls/how-to-trigger-menu-events-for-toolbar-buttons.md)  
+ [ToolBar Control](../../../../docs/framework/winforms/controls/toolbar-control-windows-forms.md)  
  [ImageList Component](../../../../docs/framework/winforms/controls/imagelist-component-windows-forms.md)

@@ -102,6 +102,6 @@ A proxy server handles client requests for resources. A proxy can return a reque
 ```  
   
 ## See Also  
- <xref:System.Net.WebProxy>   
- <xref:System.Net.GlobalProxySelection>   
+ <xref:System.Net.WebProxy>  
+ <xref:System.Net.GlobalProxySelection>  
  [Automatic Proxy Detection](../../../docs/framework/network-programming/automatic-proxy-detection.md)

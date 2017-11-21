@@ -160,6 +160,6 @@ manager: "wpickett"
  Finally, set `handled` to `true` to indicate that the message has been handled.  
   
 ## See Also  
- <xref:System.Windows.Interop.HwndHost>   
- [WPF and Win32 Interoperation](../../../../docs/framework/wpf/advanced/wpf-and-win32-interoperation.md)   
+ <xref:System.Windows.Interop.HwndHost>  
+ [WPF and Win32 Interoperation](../../../../docs/framework/wpf/advanced/wpf-and-win32-interoperation.md)  
  [Walkthrough: My first WPF desktop application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)

@@ -90,10 +90,10 @@ The <xref:System.Windows.Controls.ListView> control provides the infrastructure 
  For an example of a custom view mode, see [ListView with Multiple Views Sample](http://go.microsoft.com/fwlink/?LinkID=160013).  
   
 ## See Also  
- <xref:System.Windows.Controls.GridView>   
- <xref:System.Windows.Controls.ListView>   
- <xref:System.Windows.Controls.ListViewItem>   
- <xref:System.Windows.Data.Binding>   
- [GridView Overview](../../../../docs/framework/wpf/controls/gridview-overview.md)   
- [How-to Topics](../../../../docs/framework/wpf/controls/listview-how-to-topics.md)   
+ <xref:System.Windows.Controls.GridView>  
+ <xref:System.Windows.Controls.ListView>  
+ <xref:System.Windows.Controls.ListViewItem>  
+ <xref:System.Windows.Data.Binding>  
+ [GridView Overview](../../../../docs/framework/wpf/controls/gridview-overview.md)  
+ [How-to Topics](../../../../docs/framework/wpf/controls/listview-how-to-topics.md)  
  [Controls](../../../../docs/framework/wpf/advanced/optimizing-performance-controls.md)

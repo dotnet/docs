@@ -162,5 +162,5 @@ End Sub
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\CustomActivities\CustomActivityDesigners\WorkflowItemsPresenter`  
   
 ## See Also  
- <xref:System.Activities.Presentation.WorkflowItemsPresenter>   
+ <xref:System.Activities.Presentation.WorkflowItemsPresenter>  
  [Developing Applications with the Workflow Designer](/visualstudio/workflow-designer/developing-applications-with-the-workflow-designer)

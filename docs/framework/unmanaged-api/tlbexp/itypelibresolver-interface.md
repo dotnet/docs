@@ -46,5 +46,5 @@ Provides the [ResolveTypeLib method](../../../../docs/framework/unmanaged-api/tl
  **.NET Framework Version:** 4, 3.5, 3.0, 2.0  
   
 ## See Also  
- [Tlbexp Helper Functions](../../../../docs/framework/unmanaged-api/tlbexp/index.md)   
+ [Tlbexp Helper Functions](../../../../docs/framework/unmanaged-api/tlbexp/index.md)  
  [LoadTypeLibEx function](https://msdn.microsoft.com/library/windows/desktop/ms221249\(v=vs.85\).aspx)

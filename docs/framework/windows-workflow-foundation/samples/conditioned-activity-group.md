@@ -40,7 +40,7 @@ The sample demonstrates a travel booking application. The <xref:System.Workflow.
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Rules\SimpleCAG`  
   
 ## See Also  
- <xref:System.Workflow.Activities.ConditionedActivityGroup>   
- <xref:System.Workflow.Activities.ConditionedActivityGroup.WhenConditionProperty>   
- <xref:System.Workflow.Activities.CodeCondition>   
+ <xref:System.Workflow.Activities.ConditionedActivityGroup>  
+ <xref:System.Workflow.Activities.ConditionedActivityGroup.WhenConditionProperty>  
+ <xref:System.Workflow.Activities.CodeCondition>  
  <xref:System.Workflow.Activities.ConditionedActivityGroup.UntilCondition%2A>

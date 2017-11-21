@@ -84,6 +84,6 @@ public class FlashTrackBar : Control {
 ```  
   
 ## See Also  
- [Events in Windows Forms Controls](../../../../docs/framework/winforms/controls/events-in-windows-forms-controls.md)   
- [Events](../../../../docs/standard/events/index.md)   
+ [Events in Windows Forms Controls](../../../../docs/framework/winforms/controls/events-in-windows-forms-controls.md)  
+ [Events](../../../../docs/standard/events/index.md)  
  [Events](../../../../docs/standard/events/index.md)

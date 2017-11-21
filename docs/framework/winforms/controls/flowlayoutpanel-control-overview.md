@@ -34,6 +34,6 @@ The <xref:System.Windows.Forms.FlowLayoutPanel> control arranges its contents in
  Also see [Walkthrough: Arranging Controls on Windows Forms Using a FlowLayoutPanel](http://msdn.microsoft.com/library/z9w7ek2f\(v=vs.110\)).  
   
 ## See Also  
- <xref:System.Windows.Forms.FlowLayoutPanel.FlowDirection%2A>   
- <xref:System.Windows.Forms.TableLayoutPanel>   
+ <xref:System.Windows.Forms.FlowLayoutPanel.FlowDirection%2A>  
+ <xref:System.Windows.Forms.TableLayoutPanel>  
  [FlowLayoutPanel Control](../../../../docs/framework/winforms/controls/flowlayoutpanel-control-windows-forms.md)

@@ -237,6 +237,6 @@ ray`|0 or more EIIs|A begin-array (left square bracket) as in section 2.3 of the
  `["myValue1",2,[true,null]]`  
   
 ## See Also  
- <xref:System.Runtime.Serialization.Json.JsonReaderWriterFactory>   
- <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>   
+ <xref:System.Runtime.Serialization.Json.JsonReaderWriterFactory>  
+ <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>  
  [Stand-Alone JSON Serialization](../../../../docs/framework/wcf/feature-details/stand-alone-json-serialization.md)

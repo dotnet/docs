@@ -116,5 +116,5 @@ The strong naming API enables a client to administer strong name signing for ass
  Represents the public key of a public/private key pair in binary format.  
   
 ## See Also  
- [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)   
+ [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)  
  [Unmanaged API Reference](../../../../docs/framework/unmanaged-api/index.md)

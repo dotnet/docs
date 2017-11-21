@@ -30,5 +30,5 @@ Gets the <xref:System.Web.HttpRequest> object for the requested page.
  [!code-vb[VbVbalrMyWeb#1](../../../visual-basic/language-reference/objects/codesnippet/VisualBasic/my-request-object_1.aspx)]  
   
 ## See Also  
- <xref:System.Web.HttpRequest>   
+ <xref:System.Web.HttpRequest>  
  [My.Response Object](../../../visual-basic/language-reference/objects/my-response-object.md)

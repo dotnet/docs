@@ -26,5 +26,5 @@ Id: 156
  This event indicates that The identity certificate with the specified subject name and thumbprint does not provide a specific data among its KeyUsages. It also lists the process name and process ID.  
   
 ## See Also  
- [Event Logging](../../../../../docs/framework/wcf/diagnostics/event-logging/index.md)   
+ [Event Logging](../../../../../docs/framework/wcf/diagnostics/event-logging/index.md)  
  [Events General Reference](../../../../../docs/framework/wcf/diagnostics/event-logging/events-general-reference.md)

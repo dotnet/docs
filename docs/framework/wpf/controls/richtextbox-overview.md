@@ -101,5 +101,5 @@ The <xref:System.Windows.Controls.RichTextBox> control enables you to display or
  [!code-vb[RichTextBoxMiscSnippets_snip#SaveLoadPrintRTBCodeExampleWholePage](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxMiscSnippets_snip/VisualBasic/SaveLoadPrintRTB.xaml.vb#saveloadprintrtbcodeexamplewholepage)]  
   
 ## See Also  
- [How-to Topics](../../../../docs/framework/wpf/controls/richtextbox-how-to-topics.md)   
+ [How-to Topics](../../../../docs/framework/wpf/controls/richtextbox-how-to-topics.md)  
  [TextBox Overview](../../../../docs/framework/wpf/controls/textbox-overview.md)

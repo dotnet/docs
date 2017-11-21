@@ -33,5 +33,5 @@ Assemblies can be private or shared: by default, most simple programs consist of
   
 ## See Also  
  [Programming Concepts](../../../../visual-basic/programming-guide/concepts/index.md)
- [Assemblies and the Global Assembly Cache (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)   
+ [Assemblies and the Global Assembly Cache (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)  
  [Programming with Assemblies](../../../../framework/app-domains/programming-with-assemblies.md)

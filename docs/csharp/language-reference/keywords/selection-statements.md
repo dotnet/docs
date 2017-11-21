@@ -28,7 +28,7 @@ A selection statement causes the program control to be transferred to a specific
 -   [default](../../../csharp/language-reference/keywords/switch.md)  
 
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
  [Statement Keywords](../../../csharp/language-reference/keywords/statement-keywords.md)

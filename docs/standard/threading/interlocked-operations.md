@@ -60,7 +60,7 @@ The <xref:System.Threading.Interlocked> class provides methods that synchronize 
  [!code-vb[Conceptual.Interlocked#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.interlocked/vb/source2.vb#2)]  
   
 ## See Also  
- <xref:System.Threading.Interlocked>   
- <xref:System.Threading.Monitor>   
- [Threading](../../../docs/standard/threading/index.md)   
+ <xref:System.Threading.Interlocked>  
+ <xref:System.Threading.Monitor>  
+ [Threading](../../../docs/standard/threading/index.md)  
  [Threading Objects and Features](../../../docs/standard/threading/threading-objects-and-features.md)

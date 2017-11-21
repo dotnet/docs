@@ -177,8 +177,8 @@ To program [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] security, X.5
  In the first release of [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], mapping is done without consulting the domain policy. Therefore it is possible that older applications that used to work when running under the first release, fails if the mapping is enabled and the X.509 certificate does not satisfy the domain policy.  
   
 ## See Also  
- <xref:System.ServiceModel.Channels>   
- <xref:System.ServiceModel.Security>   
- <xref:System.ServiceModel>   
- <xref:System.Security.Cryptography.X509Certificates.X509FindType>   
+ <xref:System.ServiceModel.Channels>  
+ <xref:System.ServiceModel.Security>  
+ <xref:System.ServiceModel>  
+ <xref:System.Security.Cryptography.X509Certificates.X509FindType>  
  [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)

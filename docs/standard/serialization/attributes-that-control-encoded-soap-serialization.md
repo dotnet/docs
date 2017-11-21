@@ -36,10 +36,10 @@ The World Wide Web Consortium (www.w3.org) document named "Simple Object Access 
 |<xref:System.Xml.Serialization.SoapTypeAttribute>|Public class declarations.|The class should be serialized as an XML type.|  
   
 ## See Also  
- [XML and SOAP Serialization](../../../docs/standard/serialization/xml-and-soap-serialization.md)   
- [How to: Serialize an Object as a SOAP-Encoded XML Stream](../../../docs/standard/serialization/how-to-serialize-an-object-as-a-soap-encoded-xml-stream.md)   
- [How to: Override Encoded SOAP XML Serialization](../../../docs/standard/serialization/how-to-override-encoded-soap-xml-serialization.md)   
- [Attributes](../../../docs/standard/attributes/index.md)   
- <xref:System.Xml.Serialization.XmlSerializer>   
- [How to: Serialize an Object](../../../docs/standard/serialization/how-to-serialize-an-object.md)   
+ [XML and SOAP Serialization](../../../docs/standard/serialization/xml-and-soap-serialization.md)  
+ [How to: Serialize an Object as a SOAP-Encoded XML Stream](../../../docs/standard/serialization/how-to-serialize-an-object-as-a-soap-encoded-xml-stream.md)  
+ [How to: Override Encoded SOAP XML Serialization](../../../docs/standard/serialization/how-to-override-encoded-soap-xml-serialization.md)  
+ [Attributes](../../../docs/standard/attributes/index.md)  
+ <xref:System.Xml.Serialization.XmlSerializer>  
+ [How to: Serialize an Object](../../../docs/standard/serialization/how-to-serialize-an-object.md)  
  [How to: Deserialize an Object](../../../docs/standard/serialization/how-to-deserialize-an-object.md)

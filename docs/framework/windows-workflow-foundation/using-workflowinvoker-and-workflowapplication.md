@@ -88,7 +88,7 @@ manager: "erikre"
   
  The following code example is like the previous example except that the active bookmarks are enumerated before the bookmark is resumed. The workflow is started, and once the <xref:System.Activities.Bookmark> is created and the workflow goes idle, <xref:System.Activities.WorkflowApplication.GetBookmarks%2A> is called. When the workflow is completed, the following output is displayed to the console.  
   
- **What is your name?**   
+ **What is your name?**  
 **BookmarkName: UserName - OwnerDisplayName: ReadLine**   
 **Steve**   
 **Hello, Steve**

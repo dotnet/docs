@@ -1,7 +1,7 @@
 ---
 title: "Unmanaged API Reference"
 ms.custom: ""
-ms.date: "03/30/2017"
+ms.date: "11/06/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
@@ -15,7 +15,6 @@ helpviewer_keywords:
   - "native API reference [.NET Framework]"
   - "unmanaged API reference [.NET Framework]"
 ms.assetid: 9aa000ee-c04c-492c-ae4f-83ecdf4fdbbe
-caps.latest.revision: 24
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
@@ -59,6 +58,9 @@ This section includes information on unmanaged APIs that can be used by managed-
   
  [Strong Naming](../../../docs/framework/unmanaged-api/strong-naming/index.md)  
  Describes the strong naming API, which enables a client to administer strong name signing for assemblies.  
+
+ [WMI and Performance Counters](wmi/index.md)  
+ Describes the APIs that wrap calls to Windows Management Instrumentation (WMI) libraries.
   
  [Tlbexp Helper Functions](../../../docs/framework/unmanaged-api/tlbexp/index.md)  
  Describes the two helper functions and interface used by the Type Library Exporter (Tlbexp.exe) during the assembly-to-type-library conversion process.  

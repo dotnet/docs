@@ -197,6 +197,6 @@ Data Source=Oracle9i;User ID=*****;Password=*****;
  For more information on ODBC connection string syntax, see <xref:System.Data.OracleClient.OracleConnection.ConnectionString%2A>.  
   
 ## See Also  
- [Connection Strings](../../../../docs/framework/data/adonet/connection-strings.md)   
- [Connecting to a Data Source](../../../../docs/framework/data/adonet/connecting-to-a-data-source.md)   
+ [Connection Strings](../../../../docs/framework/data/adonet/connection-strings.md)  
+ [Connecting to a Data Source](../../../../docs/framework/data/adonet/connecting-to-a-data-source.md)  
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

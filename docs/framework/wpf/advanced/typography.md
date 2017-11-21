@@ -35,7 +35,7 @@ manager: "wpickett"
  [How-to Topics](../../../../docs/framework/wpf/advanced/typography-how-to-topics.md)  
   
 ## See Also  
- <xref:System.Windows.Documents.Typography>   
- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)   
- [OpenType Font Features](../../../../docs/framework/wpf/advanced/opentype-font-features.md)   
+ <xref:System.Windows.Documents.Typography>  
+ [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
+ [OpenType Font Features](../../../../docs/framework/wpf/advanced/opentype-font-features.md)  
  [Optimizing WPF Application Performance](../../../../docs/framework/wpf/advanced/optimizing-wpf-application-performance.md)

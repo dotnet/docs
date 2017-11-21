@@ -466,12 +466,12 @@ class Compilation { /*...*/
 -   It's all about allocations – that is where the compiler platform team spent most of their time improving the performance of the new compilers.  
   
 ## See Also  
- [Video of presentation of this topic](http://channel9.msdn.com/Events/TechEd/NorthAmerica/2013/DEV-B333)   
- [Beginners Guide to Performance Profiling](/visualstudio/profiling/beginners-guide-to-performance-profiling)   
- [Performance](../../../docs/framework/performance/index.md)   
- [.NET Performance Tips](http://msdn.microsoft.com/library/ms973839.aspx)   
- [Windows Phone Performance Analysis Tool](http://msdn.microsoft.com/magazine/hh781024.aspx)   
- [Find Application Bottlenecks with Visual Studio Profiler](http://msdn.microsoft.com/magazine/cc337887.aspx)   
- [Channel 9 PerfView tutorials](http://channel9.msdn.com/Series/PerfView-Tutorial)   
- [High-level Performance Tips](http://curah.microsoft.com/4604/improving-your-net-apps-startup-performance)   
+ [Video of presentation of this topic](http://channel9.msdn.com/Events/TechEd/NorthAmerica/2013/DEV-B333)  
+ [Beginners Guide to Performance Profiling](/visualstudio/profiling/beginners-guide-to-performance-profiling)  
+ [Performance](../../../docs/framework/performance/index.md)  
+ [.NET Performance Tips](http://msdn.microsoft.com/library/ms973839.aspx)  
+ [Windows Phone Performance Analysis Tool](http://msdn.microsoft.com/magazine/hh781024.aspx)  
+ [Find Application Bottlenecks with Visual Studio Profiler](http://msdn.microsoft.com/magazine/cc337887.aspx)  
+ [Channel 9 PerfView tutorials](http://channel9.msdn.com/Series/PerfView-Tutorial)  
+ [High-level Performance Tips](http://curah.microsoft.com/4604/improving-your-net-apps-startup-performance)  
  [dotnet/roslyn repo on GitHub](https://github.com/dotnet/roslyn)

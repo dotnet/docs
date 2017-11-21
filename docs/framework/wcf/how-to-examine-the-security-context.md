@@ -61,5 +61,5 @@ When programming [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] services, 
 -   <xref:System.IdentityModel.Claims>  
   
 ## See Also  
- [Securing Services](../../../docs/framework/wcf/securing-services.md)   
+ [Securing Services](../../../docs/framework/wcf/securing-services.md)  
  [Service Identity and Authentication](../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)

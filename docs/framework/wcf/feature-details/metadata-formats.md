@@ -30,5 +30,5 @@ manager: "erikre"
 |WS Addressing Binding for WSDL|[Web Services Addressing 1.0 - WSDL Binding](http://go.microsoft.com/fwlink/?LinkId=94869)<br /><br /> [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] implements WS-Addressing Binding for WSDL to attach addressing information in WSDL.|  
   
 ## See Also  
- [Web Services Protocols Supported by System-Provided Interoperability Bindings](../../../../docs/framework/wcf/feature-details/web-services-protocols-supported-by-system-provided-interoperability-bindings.md)   
+ [Web Services Protocols Supported by System-Provided Interoperability Bindings](../../../../docs/framework/wcf/feature-details/web-services-protocols-supported-by-system-provided-interoperability-bindings.md)  
  [WSDL and Policy](../../../../docs/framework/wcf/feature-details/wsdl-and-policy.md)

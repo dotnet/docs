@@ -262,5 +262,5 @@ The Microsoft .NET Framework Data Provider for SQL Server supports additional sc
 |Permission_set_desc|String|The friendly name for the permission-set/security-level for the assembly.|  
   
 ## See Also  
- [Retrieving Database Schema Information](../../../../docs/framework/data/adonet/retrieving-database-schema-information.md)   
+ [Retrieving Database Schema Information](../../../../docs/framework/data/adonet/retrieving-database-schema-information.md)  
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

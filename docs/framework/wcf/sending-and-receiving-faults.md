@@ -111,8 +111,8 @@ SOAP faults convey error condition information from a service to a client and in
  [!code-vb[FaultContractAttribute#3](../../../samples/snippets/visualbasic/VS_Snippets_CFX/faultcontractattribute/vb/client.vb#3)]  
   
 ## See Also  
- <xref:System.ServiceModel.FaultException>   
- <xref:System.ServiceModel.FaultException%601>   
- <xref:System.ServiceModel.CommunicationException?displayProperty=nameWithType>   
- [Expected Exceptions](../../../docs/framework/wcf/samples/expected-exceptions.md)   
+ <xref:System.ServiceModel.FaultException>  
+ <xref:System.ServiceModel.FaultException%601>  
+ <xref:System.ServiceModel.CommunicationException?displayProperty=nameWithType>  
+ [Expected Exceptions](../../../docs/framework/wcf/samples/expected-exceptions.md)  
  [Avoiding Problems with the Using Statement](../../../docs/framework/wcf/samples/avoiding-problems-with-the-using-statement.md)

@@ -62,6 +62,6 @@ The Internet Protocol version 6 (IPv6) is a new suite of standard protocols for 
  You can also find IPv6-related information on the [IPv6 area on Technet](http://go.microsoft.com/fwlink/?LinkID=179658).  
   
 ## See Also  
- [IPv6 Sockets Sample](http://go.microsoft.com/fwlink/?LinkID=179568)   
- [Network Programming Samples](../../../docs/framework/network-programming/network-programming-samples.md)   
+ [IPv6 Sockets Sample](http://go.microsoft.com/fwlink/?LinkID=179568)  
+ [Network Programming Samples](../../../docs/framework/network-programming/network-programming-samples.md)  
  [Sockets](../../../docs/framework/network-programming/sockets.md)

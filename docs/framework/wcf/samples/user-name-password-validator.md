@@ -208,10 +208,10 @@ try
 ```  
 public class CustomUserNameValidator : UserNamePasswordValidator  
 {  
- // This method validates users. It allows in two users,   
+ // This method validates users. It allows in two users,  
  // test1 and test2 with passwords 1tset and 2tset respectively.  
- // This code is for illustration purposes only and   
- // MUST NOT be used in a production environment because it   
+ // This code is for illustration purposes only and  
+ // MUST NOT be used in a production environment because it  
  // is NOT secure.  
  public override void Validate(string userName, string password)  
  {  

@@ -49,6 +49,6 @@ SQL Server 2005 introduced the integration of the common language runtime (CLR) 
  Describes the SQL Server in-process specific extensions to ADO.NET, and the context connection. Provides links to additional topics.  
   
 ## See Also  
- [SQL Server and ADO.NET](../../../../../docs/framework/data/adonet/sql/index.md)   
- [Creating SQL Server 2005 Objects In Managed Code](http://msdn.microsoft.com/en-us/5358a825-e19b-49aa-8214-674ce5fed1da)   
+ [SQL Server and ADO.NET](../../../../../docs/framework/data/adonet/sql/index.md)  
+ [Creating SQL Server 2005 Objects In Managed Code](http://msdn.microsoft.com/en-us/5358a825-e19b-49aa-8214-674ce5fed1da)  
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

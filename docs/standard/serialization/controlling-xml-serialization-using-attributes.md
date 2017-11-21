@@ -312,10 +312,10 @@ public class Group{
  There might be situations when a public property or field does not need to be serialized. For example, a field or property could be used to contain metadata. In such cases, apply the <xref:System.Xml.Serialization.XmlIgnoreAttribute> to the field or property and the <xref:System.Xml.Serialization.XmlSerializer> will skip over it.  
   
 ## See Also  
- [Attributes That Control XML Serialization](../../../docs/standard/serialization/attributes-that-control-xml-serialization.md)   
- [Attributes That Control Encoded SOAP Serialization](../../../docs/standard/serialization/attributes-that-control-encoded-soap-serialization.md)   
- [Introducing XML Serialization](../../../docs/standard/serialization/introducing-xml-serialization.md)   
- [Examples of XML Serialization](../../../docs/standard/serialization/examples-of-xml-serialization.md)   
- [How to: Specify an Alternate Element Name for an XML Stream](../../../docs/standard/serialization/how-to-specify-an-alternate-element-name-for-an-xml-stream.md)   
- [How to: Serialize an Object](../../../docs/standard/serialization/how-to-serialize-an-object.md)   
+ [Attributes That Control XML Serialization](../../../docs/standard/serialization/attributes-that-control-xml-serialization.md)  
+ [Attributes That Control Encoded SOAP Serialization](../../../docs/standard/serialization/attributes-that-control-encoded-soap-serialization.md)  
+ [Introducing XML Serialization](../../../docs/standard/serialization/introducing-xml-serialization.md)  
+ [Examples of XML Serialization](../../../docs/standard/serialization/examples-of-xml-serialization.md)  
+ [How to: Specify an Alternate Element Name for an XML Stream](../../../docs/standard/serialization/how-to-specify-an-alternate-element-name-for-an-xml-stream.md)  
+ [How to: Serialize an Object](../../../docs/standard/serialization/how-to-serialize-an-object.md)  
  [How to: Deserialize an Object](../../../docs/standard/serialization/how-to-deserialize-an-object.md)

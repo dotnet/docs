@@ -37,5 +37,5 @@ Applications that provide authentication services must be able to replace the **
  [!code-vb[SetCurrentPrincipal#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/SetCurrentPrincipal/VB/program.vb#1)]  
   
 ## See Also  
- <xref:System.Security.Permissions.SecurityPermission?displayProperty=nameWithType>   
+ <xref:System.Security.Permissions.SecurityPermission?displayProperty=nameWithType>  
  [Principal and Identity Objects](../../../docs/standard/security/principal-and-identity-objects.md)

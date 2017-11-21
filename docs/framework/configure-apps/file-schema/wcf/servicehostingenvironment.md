@@ -97,7 +97,7 @@ This element defines the type the service hosting environment instantiates for a
 ```  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection>   
- <xref:System.ServiceModel.ServiceHostingEnvironment>   
- [Hosting](../../../../../docs/framework/wcf/feature-details/hosting.md)   
+ <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection>  
+ <xref:System.ServiceModel.ServiceHostingEnvironment>  
+ [Hosting](../../../../../docs/framework/wcf/feature-details/hosting.md)  
  [WCF Services and ASP.NET](../../../../../docs/framework/wcf/feature-details/wcf-services-and-aspnet.md)

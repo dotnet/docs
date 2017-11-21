@@ -103,6 +103,6 @@ The .NET Framework makes it easy to determine the ordinal day of the week for a 
  [!code-vb[Formatting.HowTo.WeekdayName#8](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.HowTo.WeekdayName/vb/Howto1.vb#8)]  
   
 ## See Also  
- [Performing Formatting Operations](../../../docs/standard/base-types/performing-formatting-operations.md)   
- [Standard Date and Time Format Strings](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)   
+ [Performing Formatting Operations](../../../docs/standard/base-types/performing-formatting-operations.md)  
+ [Standard Date and Time Format Strings](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)  
  [Custom Date and Time Format Strings](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)

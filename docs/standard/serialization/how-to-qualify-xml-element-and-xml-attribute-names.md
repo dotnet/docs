@@ -174,11 +174,11 @@ public class Book
 ```  
   
 ## See Also  
- <xref:System.Xml.Serialization.XmlSerializer>   
- [The XML Schema Definition Tool and XML Serialization](../../../docs/standard/serialization/the-xml-schema-definition-tool-and-xml-serialization.md)   
- [Introducing XML Serialization](../../../docs/standard/serialization/introducing-xml-serialization.md)   
- [XmlSerializer Class](xref:System.Xml.Serialization.XmlSerializer)   
- [Attributes That Control XML Serialization](../../../docs/standard/serialization/attributes-that-control-xml-serialization.md)   
- [How to: Specify an Alternate Element Name for an XML Stream](../../../docs/standard/serialization/how-to-specify-an-alternate-element-name-for-an-xml-stream.md)   
- [How to: Serialize an Object](../../../docs/standard/serialization/how-to-serialize-an-object.md)   
+ <xref:System.Xml.Serialization.XmlSerializer>  
+ [The XML Schema Definition Tool and XML Serialization](../../../docs/standard/serialization/the-xml-schema-definition-tool-and-xml-serialization.md)  
+ [Introducing XML Serialization](../../../docs/standard/serialization/introducing-xml-serialization.md)  
+ [XmlSerializer Class](xref:System.Xml.Serialization.XmlSerializer)  
+ [Attributes That Control XML Serialization](../../../docs/standard/serialization/attributes-that-control-xml-serialization.md)  
+ [How to: Specify an Alternate Element Name for an XML Stream](../../../docs/standard/serialization/how-to-specify-an-alternate-element-name-for-an-xml-stream.md)  
+ [How to: Serialize an Object](../../../docs/standard/serialization/how-to-serialize-an-object.md)  
  [How to: Deserialize an Object](../../../docs/standard/serialization/how-to-deserialize-an-object.md)

@@ -64,14 +64,14 @@ msmqIntegrationBinding
 |[\<binding>](../../../../../docs/framework/misc/binding.md)|The binding element of the [\<msmqIntegrationBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/msmqintegrationbinding.md).|  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.MsmqIntegrationSecurityElement>   
- <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding.Security%2A>   
- <xref:System.ServiceModel.Configuration.MsmqIntegrationBindingElement.Security%2A>   
- <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurity>   
- [Queues in WCF](../../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)   
- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)   
- [Bindings](../../../../../docs/framework/wcf/bindings.md)   
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)   
- [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/en-us/bd8b277b-932f-472f-a42a-b02bb5257dfb)   
- [\<binding>](../../../../../docs/framework/misc/binding.md)   
+ <xref:System.ServiceModel.Configuration.MsmqIntegrationSecurityElement>  
+ <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding.Security%2A>  
+ <xref:System.ServiceModel.Configuration.MsmqIntegrationBindingElement.Security%2A>  
+ <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurity>  
+ [Queues in WCF](../../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)  
+ [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
+ [Bindings](../../../../../docs/framework/wcf/bindings.md)  
+ [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
+ [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/en-us/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
+ [\<binding>](../../../../../docs/framework/misc/binding.md)  
  [\<msmqIntegrationBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/msmqintegrationbinding.md)

@@ -29,5 +29,5 @@ The following example shows how to use arrays of <xref:System.Collections.Concur
  [!code-vb[CDS_BlockingCollection#07](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/cds_blockingcollection/vb/bcpipeline.vb#07)]  
   
 ## See Also  
- <xref:System.Collections.Concurrent?displayProperty=nameWithType>   
+ <xref:System.Collections.Concurrent?displayProperty=nameWithType>  
  [Thread-Safe Collections](../../../../docs/standard/collections/thread-safe/index.md)

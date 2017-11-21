@@ -86,5 +86,5 @@ All apps that host the common language runtime (CLR) need to start, or *activate
  \* For more information about this error message and ways to avoid it, see [.NET Framework Initialization Errors: Managing the User Experience](../../../docs/framework/deployment/initialization-errors-managing-the-user-experience.md).  
   
 ## See Also  
- [Migrating from the .NET Framework 1.1](../../../docs/framework/migration-guide/migrating-from-the-net-framework-1-1.md)   
+ [Migrating from the .NET Framework 1.1](../../../docs/framework/migration-guide/migrating-from-the-net-framework-1-1.md)  
  [Migration Guide](../../../docs/framework/migration-guide/index.md)

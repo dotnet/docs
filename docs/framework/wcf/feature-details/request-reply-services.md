@@ -37,5 +37,5 @@ public interface IRequestReplyCalculator
  You do not have to set the  <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> property to `false` because this is the default behavior.  
   
 ## See Also  
- [One-Way Services](../../../../docs/framework/wcf/feature-details/one-way-services.md)   
+ [One-Way Services](../../../../docs/framework/wcf/feature-details/one-way-services.md)  
  [Duplex Services](../../../../docs/framework/wcf/feature-details/duplex-services.md)

@@ -422,5 +422,5 @@ End Module
  Now the service is running. Proceed to [How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md). For troubleshooting information, see [Troubleshooting the Getting Started Tutorial](../../../docs/framework/wcf/troubleshooting-the-getting-started-tutorial.md).  
   
 ## See Also  
- [Getting Started](../../../docs/framework/wcf/samples/getting-started-sample.md)   
+ [Getting Started](../../../docs/framework/wcf/samples/getting-started-sample.md)  
  [Self-Host](../../../docs/framework/wcf/samples/self-host.md)

@@ -31,6 +31,6 @@ You can choose to use [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] fo
  For a complete analysis on how to migrate existing ASP.NET Web Services to WCF please see [ASP.NET Web Services and the Windows Communication Foundation](http://go.microsoft.com/fwlink/?LinkID=71761). This section describes how to implement a compliant WCF service from the metadata for you ASP.NET Web Service, and how to migrate ASP.NET Web service and client code to [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  
   
 ## See Also  
- [How to: Retrieve Metadata and Implement a Compliant Service](../../../../docs/framework/wcf/feature-details/how-to-retrieve-metadata-and-implement-a-compliant-service.md)   
- [How to: Migrate ASP.NET Web Service Code to the Windows Communication Foundation](../../../../docs/framework/wcf/feature-details/migrate-asp-net-web-service-to-wcf.md)   
+ [How to: Retrieve Metadata and Implement a Compliant Service](../../../../docs/framework/wcf/feature-details/how-to-retrieve-metadata-and-implement-a-compliant-service.md)  
+ [How to: Migrate ASP.NET Web Service Code to the Windows Communication Foundation](../../../../docs/framework/wcf/feature-details/migrate-asp-net-web-service-to-wcf.md)  
  [How to: Migrate ASP.NET Web Service Client Code to the Windows Communication Foundation](../../../../docs/framework/wcf/feature-details/migrate-asp-net-web-service-client-to-wcf.md)

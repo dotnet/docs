@@ -27,5 +27,5 @@ The [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)] introduces
  Provides one of three interfaces: [ICLRMetaHost](../../../../docs/framework/unmanaged-api/hosting/iclrmetahost-interface.md), [ICLRMetaHostPolicy](../../../../docs/framework/unmanaged-api/hosting/iclrmetahostpolicy-interface.md), or [ICLRDebugging](../../../../docs/framework/unmanaged-api/debugging/iclrdebugging-interface.md).  
   
 ## See Also  
- [Hosting Global Static Functions](../../../../docs/framework/unmanaged-api/hosting/hosting-global-static-functions.md)   
+ [Hosting Global Static Functions](../../../../docs/framework/unmanaged-api/hosting/hosting-global-static-functions.md)  
  [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)

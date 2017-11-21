@@ -23,11 +23,11 @@ The following table shows the precision and approximate ranges for the floating-
 |[double](double.md)|±5.0e−324 to ±1.7e308|15-16 digits|  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Default Values Table](default-values-table.md)   
- [Built-In Types Table](built-in-types-table.md)   
- [Integral Types Table](integral-types-table.md)   
- [Formatting Numeric Results Table](formatting-numeric-results-table.md)   
- [Reference Tables for Types](reference-tables-for-types.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Default Values Table](default-values-table.md)  
+ [Built-In Types Table](built-in-types-table.md)  
+ [Integral Types Table](integral-types-table.md)  
+ [Formatting Numeric Results Table](formatting-numeric-results-table.md)  
+ [Reference Tables for Types](reference-tables-for-types.md)  
  [decimal](decimal.md)

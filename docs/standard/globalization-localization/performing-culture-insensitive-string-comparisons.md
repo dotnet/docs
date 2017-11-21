@@ -42,7 +42,7 @@ By default, the <xref:System.String.Compare%2A?displayProperty=nameWithType> met
  [!code-vb[Conceptual.Strings.CultureInsensitiveComparison#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.strings.cultureinsensitivecomparison/vb/cultureinsensitive1.vb#1)]  
   
 ## See Also  
- <xref:System.String.Compare%2A?displayProperty=nameWithType>   
- <xref:System.String.CompareTo%2A?displayProperty=nameWithType>   
- [Performing Culture-Insensitive String Operations](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md)   
+ <xref:System.String.Compare%2A?displayProperty=nameWithType>  
+ <xref:System.String.CompareTo%2A?displayProperty=nameWithType>  
+ [Performing Culture-Insensitive String Operations](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md)  
  [Best Practices for Using Strings](../../../docs/standard/base-types/best-practices-strings.md)

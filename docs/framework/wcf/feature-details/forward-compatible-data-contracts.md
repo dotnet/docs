@@ -48,7 +48,7 @@ A feature of the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] data co
  The round-tripping feature may be turned off, either by setting `ignoreExtensionDataObject` to `true` in the <xref:System.Runtime.Serialization.DataContractSerializer> constructor or by setting the <xref:System.ServiceModel.ServiceBehaviorAttribute.IgnoreExtensionDataObject%2A> property to `true` on the <xref:System.ServiceModel.ServiceBehaviorAttribute>. When this feature is off, the deserializer will not populate the <xref:System.Runtime.Serialization.IExtensibleDataObject.ExtensionData%2A> property, and the serializer will not emit the contents of the property.  
   
 ## See Also  
- <xref:System.Runtime.Serialization.IExtensibleDataObject>   
- <xref:System.Runtime.Serialization.ExtensionDataObject>   
- [Data Contract Versioning](../../../../docs/framework/wcf/feature-details/data-contract-versioning.md)   
+ <xref:System.Runtime.Serialization.IExtensibleDataObject>  
+ <xref:System.Runtime.Serialization.ExtensionDataObject>  
+ [Data Contract Versioning](../../../../docs/framework/wcf/feature-details/data-contract-versioning.md)  
  [Best Practices: Data Contract Versioning](../../../../docs/framework/wcf/best-practices-data-contract-versioning.md)

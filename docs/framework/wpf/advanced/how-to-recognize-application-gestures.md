@@ -29,6 +29,6 @@ The following example demonstrates how to erase ink when a user makes a <xref:Sy
  [!code-vb[HowToRecognizeGestures#1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/HowToRecognizeGestures/VisualBasic/Window1.xaml.vb#1)]  
   
 ## See Also  
- <xref:System.Windows.Ink.ApplicationGesture>   
- <xref:System.Windows.Controls.InkCanvas>   
+ <xref:System.Windows.Ink.ApplicationGesture>  
+ <xref:System.Windows.Controls.InkCanvas>  
  <xref:System.Windows.Controls.InkCanvas.Gesture>

@@ -43,5 +43,5 @@ You can delete directories and files within an isolated storage file. Within a s
  [!code-vb[Conceptual.IsolatedStorage#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.isolatedstorage/vb/source4.vb#4)]  
   
 ## See Also  
- <xref:System.IO.IsolatedStorage.IsolatedStorageFile?displayProperty=nameWithType>   
+ <xref:System.IO.IsolatedStorage.IsolatedStorageFile?displayProperty=nameWithType>  
  [Isolated Storage](../../../docs/standard/io/isolated-storage.md)

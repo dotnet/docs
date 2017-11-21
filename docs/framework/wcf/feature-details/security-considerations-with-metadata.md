@@ -45,5 +45,5 @@ When using the metadata features in [!INCLUDE[indigo1](../../../../includes/indi
  A service's application configuration file may control how and if metadata is published. It is a good idea to protect the application configuration file with appropriate access control lists (ACLs) to ensure an attacker cannot modify such settings.  
   
 ## See Also  
- [How to: Secure Metadata Endpoints](../../../../docs/framework/wcf/feature-details/how-to-secure-metadata-endpoints.md)   
+ [How to: Secure Metadata Endpoints](../../../../docs/framework/wcf/feature-details/how-to-secure-metadata-endpoints.md)  
  [Security](../../../../docs/framework/wcf/feature-details/security.md)

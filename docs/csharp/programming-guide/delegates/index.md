@@ -18,7 +18,7 @@ A [delegate](../../../csharp/language-reference/keywords/delegate.md) is a type 
   
  Delegates are used to pass methods as arguments to other methods. Event handlers are nothing more than methods that are invoked through delegates. You create a custom method, and a class such as a windows control can call your method when a certain event occurs. The following example shows a delegate declaration:  
   
- [!code-cs[csProgGuideDelegates#20](../../../csharp/programming-guide/delegates/codesnippet/CSharp/index_1.cs)]  
+ [!code-csharp[csProgGuideDelegates#20](../../../csharp/programming-guide/delegates/codesnippet/CSharp/index_1.cs)]  
   
  Any method from any accessible class or struct that matches the delegate type can be assigned to the delegate. The method can be either static or an instance method. This makes it possible to programmatically change method calls, and also plug new code into existing classes.  
   
@@ -67,6 +67,6 @@ A [delegate](../../../csharp/language-reference/keywords/delegate.md) is a type 
  [Delegates and Events](http://go.microsoft.com/fwlink/?LinkId=195418) in [Learning C# 3.0: Master the fundamentals of C# 3.0](http://go.microsoft.com/fwlink/?LinkId=195412)  
   
 ## See Also  
- <xref:System.Delegate>   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
+ <xref:System.Delegate>  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
  [Events](../../../csharp/programming-guide/events/index.md)

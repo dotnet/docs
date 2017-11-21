@@ -93,5 +93,5 @@ Specifies whether transaction batching is supported for receive operations.
 ```  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.TransactedBatchingElement>   
+ <xref:System.ServiceModel.Configuration.TransactedBatchingElement>  
  <xref:System.ServiceModel.Description.TransactedBatchingBehavior>

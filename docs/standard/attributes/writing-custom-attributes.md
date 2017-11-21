@@ -159,6 +159,6 @@ To design your own custom attributes, you do not need to master many new concept
  The first example shows the attribute applied with only the required named parameters, while the second example shows the attribute applied with both the required and optional parameters.  
   
 ## See Also  
- <xref:System.Attribute?displayProperty=nameWithType>   
- <xref:System.AttributeUsageAttribute>   
+ <xref:System.Attribute?displayProperty=nameWithType>  
+ <xref:System.AttributeUsageAttribute>  
  [Attributes](../../../docs/standard/attributes/index.md)

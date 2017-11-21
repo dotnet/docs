@@ -45,5 +45,5 @@ This sample demonstrates how to implement a HTTP-based service using the [!INCLU
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Web\BasicResourceService`  
   
 ## See Also  
- [Basic HTTP Service](../../../../docs/framework/wcf/samples/basic-http-service.md)   
+ [Basic HTTP Service](../../../../docs/framework/wcf/samples/basic-http-service.md)  
  [Automatic Format Selection](../../../../docs/framework/wcf/samples/automatic-format-selection.md)

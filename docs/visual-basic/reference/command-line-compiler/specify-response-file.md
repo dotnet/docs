@@ -64,6 +64,6 @@ vbc @file1.rsp
 ```  
   
 ## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)   
- [/noconfig](../../../visual-basic/reference/command-line-compiler/noconfig.md)   
+ [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
+ [/noconfig](../../../visual-basic/reference/command-line-compiler/noconfig.md)  
  [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

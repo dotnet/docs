@@ -39,5 +39,5 @@ A <xref:System.Windows.Forms.ToolStripContainer> has panels on its left, right, 
 |<xref:System.Windows.Forms.ToolStripContainer.TopToolStripPanelVisible%2A>|Gets or sets a value indicating whether the top panel of the <xref:System.Windows.Forms.ToolStripContainer> is visible.|  
   
 ## See Also  
- <xref:System.Windows.Forms.ToolStripContainer>   
+ <xref:System.Windows.Forms.ToolStripContainer>  
  <xref:System.Windows.Forms.ToolStripContentPanel>

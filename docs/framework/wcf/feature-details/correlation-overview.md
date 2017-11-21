@@ -32,7 +32,7 @@ Correlation is the mechanism for relating workflow service messages to each othe
  Content-based correlation uses some piece of information in the message to associate it to a particular instance. Unlike protocol-based correlation, content-based correlation requires the application author to explicitly state where this data can be found in each related message. Activities that use content-based correlation specify this message data by using a <xref:System.ServiceModel.MessageQuerySet>. Content-based correlation is useful when communicating with services that do not use one of the context bindings such as <xref:System.ServiceModel.BasicHttpContextBinding>. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] content-based correlation, see [Content Based](../../../../docs/framework/wcf/feature-details/content-based-correlation.md). For sample code, see the [Content-Based Correlation](../../../../docs/framework/windows-workflow-foundation/samples/content-based-correlation.md) and [Correlated Calculator](../../../../docs/framework/windows-workflow-foundation/samples/correlated-calculator.md) samples.  
   
 ## See Also  
- [Content-Based Correlation](../../../../docs/framework/windows-workflow-foundation/samples/content-based-correlation.md)   
- [Correlated Calculator](../../../../docs/framework/windows-workflow-foundation/samples/correlated-calculator.md)   
- [Durable Duplex &#91;WF Samples&#93;](../../../../docs/framework/windows-workflow-foundation/samples/durable-duplex.md)   
+ [Content-Based Correlation](../../../../docs/framework/windows-workflow-foundation/samples/content-based-correlation.md)  
+ [Correlated Calculator](../../../../docs/framework/windows-workflow-foundation/samples/correlated-calculator.md)  
+ [Durable Duplex &#91;WF Samples&#93;](../../../../docs/framework/windows-workflow-foundation/samples/durable-duplex.md)  
  [NetContextExchangeCorrelation](http://msdn.microsoft.com/en-us/93c74a1a-b9e2-46c6-95c0-c9b0e9472caf)

@@ -120,8 +120,8 @@ This topic will explain how to configure a custom WS-Metadata exchange binding. 
     ```  
   
 ## See Also  
- [Metadata Publishing Behavior](../../../../docs/framework/wcf/samples/metadata-publishing-behavior.md)   
- [Retrieve Metadata](../../../../docs/framework/wcf/samples/retrieve-metadata.md)   
- [Metadata](../../../../docs/framework/wcf/feature-details/metadata.md)   
- [Publishing Metadata](../../../../docs/framework/wcf/feature-details/publishing-metadata.md)   
+ [Metadata Publishing Behavior](../../../../docs/framework/wcf/samples/metadata-publishing-behavior.md)  
+ [Retrieve Metadata](../../../../docs/framework/wcf/samples/retrieve-metadata.md)  
+ [Metadata](../../../../docs/framework/wcf/feature-details/metadata.md)  
+ [Publishing Metadata](../../../../docs/framework/wcf/feature-details/publishing-metadata.md)  
  [Publishing Metadata Endpoints](../../../../docs/framework/wcf/publishing-metadata-endpoints.md)

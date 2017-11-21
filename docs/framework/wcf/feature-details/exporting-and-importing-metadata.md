@@ -75,5 +75,5 @@ In [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], exporting metadata i
  <xref:System.ServiceModel.Description.WsdlImporter>  
   
 ## See Also  
- [Exporting Custom Metadata for a WCF Extension](../../../../docs/framework/wcf/extending/exporting-custom-metadata-for-a-wcf-extension.md)   
+ [Exporting Custom Metadata for a WCF Extension](../../../../docs/framework/wcf/extending/exporting-custom-metadata-for-a-wcf-extension.md)  
  [Importing Custom Metadata for a WCF Extension](../../../../docs/framework/wcf/extending/importing-custom-metadata-for-a-wcf-extension.md)

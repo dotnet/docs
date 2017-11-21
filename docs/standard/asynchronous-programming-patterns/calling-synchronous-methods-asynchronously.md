@@ -113,5 +113,5 @@ The .NET Framework enables you to call any method asynchronously. To do this you
  [!code-vb[AsyncDelegateExamples#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/AsyncDelegateExamples/VB/callback.vb#5)]  
   
 ## See Also  
- <xref:System.Delegate>   
+ <xref:System.Delegate>  
  [Event-based Asynchronous Pattern (EAP)](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md)

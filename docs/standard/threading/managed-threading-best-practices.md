@@ -1,7 +1,7 @@
 ---
 title: "Managed Threading Best Practices"
 ms.custom: ""
-ms.date: "03/30/2017"
+ms.date: "11/30/2017"
 ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
@@ -25,7 +25,7 @@ manager: "wpickett"
 Multithreading requires careful programming. For most tasks, you can reduce complexity by queuing requests for execution by thread pool threads. This topic addresses more difficult situations, such as coordinating the work of multiple threads, or handling threads that block.  
   
 > [!NOTE]
->  In the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)], the Task Parallel Library and PLINQ provide APIs that reduce some of the complexity and risks of multi-threaded programming. For more information, see [Parallel Programming](../../../docs/standard/parallel-programming/index.md).  
+> Starting with the .NET Framework 4, the Task Parallel Library and PLINQ provide APIs that reduce some of the complexity and risks of multi-threaded programming. For more information, see [Parallel Programming in .NET](../../../docs/standard/parallel-programming/index.md).  
   
 ## Deadlocks and Race Conditions  
  Multithreading solves problems with throughput and responsiveness, but in doing so it introduces new problems: deadlocks and race conditions.  
@@ -33,14 +33,14 @@ Multithreading requires careful programming. For most tasks, you can reduce comp
 ### Deadlocks  
  A deadlock occurs when each of two threads tries to lock a resource the other has already locked. Neither thread can make any further progress.  
   
- Many methods of the managed threading classes provide time-outs to help you detect deadlocks. For example, the following code attempts to acquire a lock on the current instance. If the lock is not obtained in 300 milliseconds, <xref:System.Threading.Monitor.TryEnter%2A?displayProperty=nameWithType> returns **false**.  
+ Many methods of the managed threading classes provide time-outs to help you detect deadlocks. For example, the following code attempts to acquire a lock on an object named `lockObject`. If the lock is not obtained in 300 milliseconds, <xref:System.Threading.Monitor.TryEnter%2A?displayProperty=nameWithType> returns `false`.  
   
 ```vb  
 If Monitor.TryEnter(lockObject, 300) Then  
     Try  
         ' Place code protected by the Monitor here.  
     Finally  
-        Monitor.Exit(Me)  
+        Monitor.Exit(lockObject)  
     End Try  
 Else  
     ' Code to execute if the attempt times out.  
@@ -53,7 +53,7 @@ if (Monitor.TryEnter(lockObject, 300)) {
         // Place code protected by the Monitor here.  
     }  
     finally {  
-        Monitor.Exit(this);  
+        Monitor.Exit(lockObject);  
     }  
 }  
 else {  
@@ -199,5 +199,5 @@ else {
 -   Avoid providing static methods that alter static state. In common server scenarios, static state is shared across requests, which means multiple threads can execute that code at the same time. This opens up the possibility of threading bugs. Consider using a design pattern that encapsulates data into instances that are not shared across requests. Furthermore, if static data are synchronized, calls between static methods that alter state can result in deadlocks or redundant synchronization, adversely affecting performance.  
   
 ## See Also  
- [Threading](../../../docs/standard/threading/index.md)   
+ [Threading](../../../docs/standard/threading/index.md)  
  [Threads and Threading](../../../docs/standard/threading/threads-and-threading.md)

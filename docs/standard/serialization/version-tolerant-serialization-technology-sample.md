@@ -50,5 +50,5 @@ manager: "erikre"
 >  The sample builds console applications. You must launch and run them in a Command Prompt window to view their output.  
   
 ## See Also  
- <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>   
+ <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>  
  <xref:System.IO.FileStream>

@@ -589,9 +589,9 @@ ngen executeQueuedItems
  In the .NET Framework version 2.0, the only interaction with the native image service is through the command-line tool Ngen.exe. Use the command-line tool in installation scripts to queue actions for the native image service and to interact with the service.  
   
 ## See Also  
- [Native Image Service](http://msdn.microsoft.com/en-us/b15e0e32-59cb-4ae4-967c-6c9527781309)   
- [Native Image Task](http://msdn.microsoft.com/en-us/9b1f7590-4e0d-4737-90ef-eaf696932afb)   
- [Tools](../../../docs/framework/tools/index.md)   
- [Managed Execution Process](../../../docs/standard/managed-execution-process.md)   
- [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)   
+ [Native Image Service](http://msdn.microsoft.com/en-us/b15e0e32-59cb-4ae4-967c-6c9527781309)  
+ [Native Image Task](http://msdn.microsoft.com/en-us/9b1f7590-4e0d-4737-90ef-eaf696932afb)  
+ [Tools](../../../docs/framework/tools/index.md)  
+ [Managed Execution Process](../../../docs/standard/managed-execution-process.md)  
+ [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)  
  [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

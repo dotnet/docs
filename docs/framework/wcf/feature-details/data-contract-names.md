@@ -78,10 +78,10 @@ Sometimes a client and a service do not share the same types. They can still pas
  In this case, the type `Drawing<Square,RegularRedBrush>` has the data contract name "Drawing_using_RedBrush_brush_and_Square_shape". Note that because there is a "{#}" in the <xref:System.Runtime.Serialization.DataContractAttribute.Name%2A> property, the hash is not a part of the name, and thus the type is susceptible to naming collisions; for example, the type `Drawing<Square,SpecialRedBrush>` would have exactly the same data contract name.  
   
 ## See Also  
- <xref:System.Runtime.Serialization.DataContractAttribute>   
- <xref:System.Runtime.Serialization.DataMemberAttribute>   
- <xref:System.Runtime.Serialization.ContractNamespaceAttribute>   
- [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)   
- [Data Contract Equivalence](../../../../docs/framework/wcf/feature-details/data-contract-equivalence.md)   
- [Data Contract Names](../../../../docs/framework/wcf/feature-details/data-contract-names.md)   
+ <xref:System.Runtime.Serialization.DataContractAttribute>  
+ <xref:System.Runtime.Serialization.DataMemberAttribute>  
+ <xref:System.Runtime.Serialization.ContractNamespaceAttribute>  
+ [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)  
+ [Data Contract Equivalence](../../../../docs/framework/wcf/feature-details/data-contract-equivalence.md)  
+ [Data Contract Names](../../../../docs/framework/wcf/feature-details/data-contract-names.md)  
  [Data Contract Versioning](../../../../docs/framework/wcf/feature-details/data-contract-versioning.md)

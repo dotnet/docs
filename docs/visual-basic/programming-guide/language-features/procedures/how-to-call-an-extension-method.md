@@ -99,6 +99,6 @@ End Module
 ```  
   
 ## See Also  
- [How to: Write an Extension Method](./how-to-write-an-extension-method.md)   
- [Extension Methods](./extension-methods.md)   
+ [How to: Write an Extension Method](./how-to-write-an-extension-method.md)  
+ [Extension Methods](./extension-methods.md)  
  [Scope in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/scope.md)

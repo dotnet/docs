@@ -45,5 +45,5 @@ The data type specified for this member is not part of the [Language Independenc
 -   If you are interfacing with Automation or COM objects, keep in mind that some types have different data widths than in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For example, `uint` is often 16 bits in other environments. If you are passing a 16-bit argument to such a component, declare it as `UShort` instead of `UInteger` in your managed [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] code.  
   
 ## See Also  
- [Reflection](../../../framework/reflection-and-codedom/reflection.md)   
+ [Reflection](../../../framework/reflection-and-codedom/reflection.md)  
  [\<PAVE OVER> Writing CLS-Compliant Code](http://msdn.microsoft.com/en-us/4c705105-69a2-4e5e-b24e-0633bc32c7f3)

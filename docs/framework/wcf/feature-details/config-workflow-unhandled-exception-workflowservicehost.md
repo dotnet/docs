@@ -58,5 +58,5 @@ The <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionB
      [!INCLUDE[crabout](../../../../includes/crabout-md.md)] <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionBehavior>, see [Workflow Service Host Extensibility](../../../../docs/framework/wcf/feature-details/workflow-service-host-extensibility.md).  
   
 ## See Also  
- [Workflow Service Host Extensibility](../../../../docs/framework/wcf/feature-details/workflow-service-host-extensibility.md)   
+ [Workflow Service Host Extensibility](../../../../docs/framework/wcf/feature-details/workflow-service-host-extensibility.md)  
  [Workflow Services](../../../../docs/framework/wcf/feature-details/workflow-services.md)

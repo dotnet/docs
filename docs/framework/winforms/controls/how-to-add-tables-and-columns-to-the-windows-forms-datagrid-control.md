@@ -102,5 +102,5 @@ manager: "wpickett"
     ```  
   
 ## See Also  
- [DataGrid Control](../../../../docs/framework/winforms/controls/datagrid-control-windows-forms.md)   
+ [DataGrid Control](../../../../docs/framework/winforms/controls/datagrid-control-windows-forms.md)  
  [How to: Delete or Hide Columns in the Windows Forms DataGrid Control](../../../../docs/framework/winforms/controls/how-to-delete-or-hide-columns-in-the-windows-forms-datagrid-control.md)

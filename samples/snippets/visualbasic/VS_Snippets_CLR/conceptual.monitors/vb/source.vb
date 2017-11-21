@@ -5,7 +5,7 @@ Friend Class SyncResource
     ' Use a monitor to enforce synchronization.
     Public Sub Access()
         SyncLock Me
-            Console.WriteLine("Staring synchronized resource access on thread #{0}",
+            Console.WriteLine("Starting synchronized resource access on thread #{0}",
                               Thread.CurrentThread.ManagedThreadId)
             If Thread.CurrentThread.ManagedThreadId Mod 2 = 0 Then
                 Thread.Sleep(2000)
@@ -20,7 +20,7 @@ End Class
 Friend Class UnSyncResource
     ' Do not enforce synchronization.
     Public Sub Access()
-        Console.WriteLine("Starting unsynchronized esource access on Thread #{0}",
+        Console.WriteLine("Starting unsynchronized resource access on Thread #{0}",
                           Thread.CurrentThread.ManagedThreadId)
         If Thread.CurrentThread.ManagedThreadId Mod 2 = 0 Then
             Thread.Sleep(2000)
@@ -82,24 +82,24 @@ Public Module App
     End Sub
 End Module
 ' The example displays output like the following:
-'    Staring synchronized resource access on thread #6
+'    Starting synchronized resource access on thread #6
 '    Stopping synchronized resource access on thread #6
-'    Staring synchronized resource access on thread #7
+'    Starting synchronized resource access on thread #7
 '    Stopping synchronized resource access on thread #7
-'    Staring synchronized resource access on thread #3
+'    Starting synchronized resource access on thread #3
 '    Stopping synchronized resource access on thread #3
-'    Staring synchronized resource access on thread #4
+'    Starting synchronized resource access on thread #4
 '    Stopping synchronized resource access on thread #4
-'    Staring synchronized resource access on thread #5
+'    Starting synchronized resource access on thread #5
 '    Stopping synchronized resource access on thread #5
 '
 '    All synchronized operations have completed.
 '
-'    Starting unsynchronized esource access on Thread #7
-'    Starting unsynchronized esource access on Thread #9
-'    Starting unsynchronized esource access on Thread #10
-'    Starting unsynchronized esource access on Thread #6
-'    Starting unsynchronized esource access on Thread #3
+'    Starting unsynchronized resource access on Thread #7
+'    Starting unsynchronized resource access on Thread #9
+'    Starting unsynchronized resource access on Thread #10
+'    Starting unsynchronized resource access on Thread #6
+'    Starting unsynchronized resource access on Thread #3
 '    Stopping unsynchronized resource access on thread #7
 '    Stopping unsynchronized resource access on thread #9
 '    Stopping unsynchronized resource access on thread #3

@@ -46,6 +46,6 @@ A region is a portion of the display area of an output device. Regions can be si
  [!code-vb[LinesCurvesAndShapes#61](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/LinesCurvesAndShapes/VB/Class1.vb#61)]  
   
 ## See Also  
- <xref:System.Drawing.Region?displayProperty=nameWithType>   
- [Lines, Curves, and Shapes](../../../../docs/framework/winforms/advanced/lines-curves-and-shapes.md)   
+ <xref:System.Drawing.Region?displayProperty=nameWithType>  
+ [Lines, Curves, and Shapes](../../../../docs/framework/winforms/advanced/lines-curves-and-shapes.md)  
  [Using Regions](../../../../docs/framework/winforms/advanced/using-regions.md)

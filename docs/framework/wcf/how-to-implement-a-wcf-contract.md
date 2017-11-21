@@ -275,5 +275,5 @@ End Namespace
  If you are using Visual Studio, on the Build menu click Build Solution (or press CTRL+SHIFT+B).  
   
 ## See Also  
- [Getting Started](../../../docs/framework/wcf/samples/getting-started-sample.md)   
+ [Getting Started](../../../docs/framework/wcf/samples/getting-started-sample.md)  
  [Self-Host](../../../docs/framework/wcf/samples/self-host.md)

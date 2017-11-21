@@ -51,5 +51,5 @@ Queues and reliable sessions are the [!INCLUDE[indigo1](../../../includes/indigo
  The separation, coupled with reliable message transfers between queues, enables applications that are loosely coupled to communicate reliably. Unlike reliable sessions, the source and destination do not have to be running at the same time. This implicitly enables scenarios where queues are, in effect, used as a load-leveling mechanism when the source's rate of message production and the destination's rate of the message consumption do not match. [!INCLUDE[crabout](../../../includes/crabout-md.md)] queues, see [Queues in WCF](../../../docs/framework/wcf/feature-details/queues-in-wcf.md).  
   
 ## See Also  
- [Reliable Sessions Overview](../../../docs/framework/wcf/feature-details/reliable-sessions-overview.md)   
+ [Reliable Sessions Overview](../../../docs/framework/wcf/feature-details/reliable-sessions-overview.md)  
  [Queuing in WCF](../../../docs/framework/wcf/feature-details/queuing-in-wcf.md)

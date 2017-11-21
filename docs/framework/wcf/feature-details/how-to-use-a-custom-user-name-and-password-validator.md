@@ -124,6 +124,6 @@ By default, when a user name and password is used for authentication, [!INCLUDE[
 [!code-vb[C_CustomUsernameAndPasswordValidator#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customusernameandpasswordvalidator/vb/service.vb#2)]  
   
 ## See Also  
- <xref:System.IdentityModel.Selectors.UserNamePasswordValidator>   
- [How to: Use the ASP.NET Membership Provider](../../../../docs/framework/wcf/feature-details/how-to-use-the-aspnet-membership-provider.md)   
+ <xref:System.IdentityModel.Selectors.UserNamePasswordValidator>  
+ [How to: Use the ASP.NET Membership Provider](../../../../docs/framework/wcf/feature-details/how-to-use-the-aspnet-membership-provider.md)  
  [Authentication](../../../../docs/framework/wcf/feature-details/authentication-in-wcf.md)

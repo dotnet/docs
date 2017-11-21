@@ -25,11 +25,11 @@ A default value expression produces the default value for a type. Default value 
 
 The `default(T)` expression is not limited to generic classes and methods. Default value expressions can be used with any managed type. Any of these expressions are valid:
 
- [!code-cs[csProgGuideGenerics#1](../../../../samples/snippets/csharp/programming-guide/statements-expressions-operators/default-value-expressions.cs)]
+ [!code-csharp[csProgGuideGenerics#1](../../../../samples/snippets/csharp/programming-guide/statements-expressions-operators/default-value-expressions.cs)]
 
  The following example from the `GenericList<T>` class shows how to use the `default(T)` operator in a generic class. For more information, see [Generics Overview](../generics/introduction-to-generics.md).
 
- [!code-cs[csProgGuideGenerics#2](../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideGenerics/CS/Generics.cs#Snippet41)]
+ [!code-csharp[csProgGuideGenerics#2](../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideGenerics/CS/Generics.cs#Snippet41)]
 
 ## default literal and type inference
 
@@ -43,12 +43,12 @@ Beginning with C# 7.1, the `default` literal can be used for default value expre
 
 The following example shows many usages of the `default` literal in a default value expression:
 
-[!code-cs[csProgGuideGenerics#3](../../../../samples/snippets/csharp/programming-guide/statements-expressions-operators/default-literal.cs)]
+[!code-csharp[csProgGuideGenerics#3](../../../../samples/snippets/csharp/programming-guide/statements-expressions-operators/default-literal.cs)]
 
 ## See also
 
  <xref:System.Collections.Generic>
- [C# Programming Guide](../index.md)   
- [Generics](../generics/index.md)   
- [Generic Methods](../generics/generic-methods.md)   
- [Generics](~/docs/standard/generics/index.md)   
+ [C# Programming Guide](../index.md)  
+ [Generics](../generics/index.md)  
+ [Generic Methods](../generics/generic-methods.md)  
+ [Generics](~/docs/standard/generics/index.md)  

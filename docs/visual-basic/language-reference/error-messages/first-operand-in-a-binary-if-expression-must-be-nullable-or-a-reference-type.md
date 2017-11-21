@@ -57,6 +57,6 @@ Console.WriteLine(If(booleanVar, "Test returns True.", "Test returns False."))
 ```  
   
 ## See Also  
- [If Operator](../../../visual-basic/language-reference/operators/if-operator.md)   
- [If...Then...Else Statement](../../../visual-basic/language-reference/statements/if-then-else-statement.md)   
+ [If Operator](../../../visual-basic/language-reference/operators/if-operator.md)  
+ [If...Then...Else Statement](../../../visual-basic/language-reference/statements/if-then-else-statement.md)  
  [Nullable Value Types](../../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md)

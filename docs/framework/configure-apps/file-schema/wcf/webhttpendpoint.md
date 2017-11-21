@@ -58,5 +58,5 @@ This configuration element defines a standard endpoint with a fixed [\<webHttpBi
 |[\<standardEndpoints>](../../../../../docs/framework/configure-apps/file-schema/wcf/standardendpoints.md)|A collection of standard endpoints that are pre-defined endpoints with one or more of their properties (address, binding, contract) fixed.|  
   
 ## See Also  
- <xref:System.ServiceModel.Description.WebHttpEndpoint>   
+ <xref:System.ServiceModel.Description.WebHttpEndpoint>  
  <xref:System.ServiceModel.Configuration.WebHttpEndpointElement>

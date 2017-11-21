@@ -30,7 +30,7 @@ class SampleClass
 ## Example  
  In the following example, two classes are declared, `PointTest` and `MainClass`. The public members `x` and `y` of `PointTest` are accessed directly from `MainClass`.  
   
- [!code-cs[csrefKeywordsModifiers#13](../../../csharp/language-reference/keywords/codesnippet/CSharp/public_1.cs)]  
+ [!code-csharp[csrefKeywordsModifiers#13](../../../csharp/language-reference/keywords/codesnippet/CSharp/public_1.cs)]  
   
  If you change the `public` access level to [private](../../../csharp/language-reference/keywords/private.md) or [protected](../../../csharp/language-reference/keywords/protected.md), you will get the error message:  
   
@@ -40,13 +40,13 @@ class SampleClass
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Access Modifiers](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)   
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
- [Access Modifiers](../../../csharp/language-reference/keywords/access-modifiers.md)   
- [Accessibility Levels](../../../csharp/language-reference/keywords/accessibility-levels.md)   
- [Modifiers](../../../csharp/language-reference/keywords/modifiers.md)   
- [private](../../../csharp/language-reference/keywords/private.md)   
- [protected](../../../csharp/language-reference/keywords/protected.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Access Modifiers](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)  
+ [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+ [Access Modifiers](../../../csharp/language-reference/keywords/access-modifiers.md)  
+ [Accessibility Levels](../../../csharp/language-reference/keywords/accessibility-levels.md)  
+ [Modifiers](../../../csharp/language-reference/keywords/modifiers.md)  
+ [private](../../../csharp/language-reference/keywords/private.md)  
+ [protected](../../../csharp/language-reference/keywords/protected.md)  
  [internal](../../../csharp/language-reference/keywords/internal.md)

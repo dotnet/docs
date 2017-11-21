@@ -52,6 +52,6 @@ This section provides guidelines for designing libraries that extend and interac
  *Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](http://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*  
   
 ## See Also  
- [Overview](../../../docs/framework/get-started/overview.md)   
- [Roadmap for the .NET Framework](http://msdn.microsoft.com/en-us/0b46b7c6-9163-4f99-8e58-0d1ee7da8c67)   
+ [Overview](../../../docs/framework/get-started/overview.md)  
+ [Roadmap for the .NET Framework](http://msdn.microsoft.com/en-us/0b46b7c6-9163-4f99-8e58-0d1ee7da8c67)  
  [Development Guide](../../../docs/framework/development-guide.md)

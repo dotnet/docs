@@ -82,6 +82,6 @@ This sample extends the Simple Policy sample. In addition to the residential dis
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Rules\Policy\AdvancedPolicy`  
   
 ## See Also  
- <xref:System.Workflow.Activities.Rules.RuleSet>   
- <xref:System.Workflow.Activities.PolicyActivity>   
+ <xref:System.Workflow.Activities.Rules.RuleSet>  
+ <xref:System.Workflow.Activities.PolicyActivity>  
  [Simple Policy](../../../../docs/framework/windows-workflow-foundation/samples/simple-policy.md)

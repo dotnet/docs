@@ -84,5 +84,5 @@ Specifies a trace source that initiates tracing messages.
 ```  
   
 ## See Also  
- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)   
+ [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)  
  [Trace Switches](../../../../../docs/framework/debug-trace-profile/trace-switches.md)

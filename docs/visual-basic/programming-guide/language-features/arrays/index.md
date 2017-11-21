@@ -277,6 +277,6 @@ Dim prices(3, 4, 5) As Long
 |[Troubleshooting Arrays](../../../../visual-basic/programming-guide/language-features/arrays/troubleshooting-arrays.md)|Discusses some common problems that arise when working with arrays.|  
   
 ## See Also  
- <xref:System.Array>   
- [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md)   
+ <xref:System.Array>  
+ [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md)  
  [ReDim Statement](../../../../visual-basic/language-reference/statements/redim-statement.md)

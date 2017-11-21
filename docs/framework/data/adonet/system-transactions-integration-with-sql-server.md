@@ -235,5 +235,5 @@ End Function
 ```  
   
 ## See Also  
- [Transactions and Concurrency](../../../../docs/framework/data/adonet/transactions-and-concurrency.md)   
+ [Transactions and Concurrency](../../../../docs/framework/data/adonet/transactions-and-concurrency.md)  
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

@@ -72,6 +72,6 @@ This section shows you how to define and implement [!INCLUDE[indigo1](../../../.
  This additive requirement process is important to keep in mind while designing, implementing, configuring, and hosting your [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service application. For example, the contract can specify that it needs to support a session. If so, then you must configure the binding to support that contractual requirement, or the service implementation will not work. Or if your service requires Integrated Windows authentication and is hosted in Internet Information Services (IIS), the Web application in which the service resides must have Integrated Windows authentication turned on and anonymous support turned off. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the features and impact of the different service host application types, see [Hosting](../../../../docs/framework/wcf/feature-details/hosting.md).  
   
 ## See Also  
- [Endpoints: Addresses, Bindings, and Contracts](../../../../docs/framework/wcf/feature-details/endpoints-addresses-bindings-and-contracts.md)   
- [Designing Service Contracts](../../../../docs/framework/wcf/designing-service-contracts.md)   
+ [Endpoints: Addresses, Bindings, and Contracts](../../../../docs/framework/wcf/feature-details/endpoints-addresses-bindings-and-contracts.md)  
+ [Designing Service Contracts](../../../../docs/framework/wcf/designing-service-contracts.md)  
  [Implementing Service Contracts](../../../../docs/framework/wcf/implementing-service-contracts.md)

@@ -108,5 +108,5 @@ In this walkthrough, you retrieve data from a SQL Server database and display th
 ## Next Steps  
   
 ## See Also  
- <xref:System.Windows.Controls.DataGrid>   
+ <xref:System.Windows.Controls.DataGrid>  
  [How Do I: Get Started with Entity Framework in WPF Applications?](http://go.microsoft.com/fwlink/?LinkId=159868)

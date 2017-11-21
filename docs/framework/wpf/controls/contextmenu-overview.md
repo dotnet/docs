@@ -69,10 +69,10 @@ The <xref:System.Windows.Controls.ContextMenu> class represents the element that
 ```  
   
 ## See Also  
- <xref:System.Windows.Controls.ContextMenu>   
- <xref:System.Windows.Style>   
- <xref:System.Windows.Controls.Menu>   
- <xref:System.Windows.Controls.MenuItem>   
- [ContextMenu](../../../../docs/framework/wpf/controls/contextmenu.md)   
- [ContextMenu Styles and Templates](../../../../docs/framework/wpf/controls/contextmenu-styles-and-templates.md)   
+ <xref:System.Windows.Controls.ContextMenu>  
+ <xref:System.Windows.Style>  
+ <xref:System.Windows.Controls.Menu>  
+ <xref:System.Windows.Controls.MenuItem>  
+ [ContextMenu](../../../../docs/framework/wpf/controls/contextmenu.md)  
+ [ContextMenu Styles and Templates](../../../../docs/framework/wpf/controls/contextmenu-styles-and-templates.md)  
  [WPF Controls Gallery Sample](http://go.microsoft.com/fwlink/?LinkID=160053)

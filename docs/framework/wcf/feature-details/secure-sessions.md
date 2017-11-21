@@ -41,6 +41,6 @@ A feature of [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] is reliable
  [Designing and Implementing Services](../../../../docs/framework/wcf/designing-and-implementing-services.md)  
   
 ## See Also  
- [How to: Enable Message Replay Detection](../../../../docs/framework/wcf/feature-details/how-to-enable-message-replay-detection.md)   
- [Replay Attacks](../../../../docs/framework/wcf/feature-details/replay-attacks.md)   
+ [How to: Enable Message Replay Detection](../../../../docs/framework/wcf/feature-details/how-to-enable-message-replay-detection.md)  
+ [Replay Attacks](../../../../docs/framework/wcf/feature-details/replay-attacks.md)  
  [How to: Create a Service That Requires Sessions](../../../../docs/framework/wcf/feature-details/how-to-create-a-service-that-requires-sessions.md)

@@ -93,7 +93,7 @@ By adding an <xref:System.Windows.Ink.IncrementalLassoHitTester> to your custom 
  [!code-vb[HowToSelectInk#1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/HowToSelectInk/VisualBasic/InkSelector.vb#1)]  
   
 ## See Also  
- <xref:System.Windows.Ink.IncrementalLassoHitTester>   
- <xref:System.Windows.Ink.StrokeCollection>   
- <xref:System.Windows.Input.StylusPointCollection>   
+ <xref:System.Windows.Ink.IncrementalLassoHitTester>  
+ <xref:System.Windows.Ink.StrokeCollection>  
+ <xref:System.Windows.Input.StylusPointCollection>  
  [Creating an Ink Input Control](../../../../docs/framework/wpf/advanced/creating-an-ink-input-control.md)

@@ -31,13 +31,13 @@ An anonymous function is an "inline" statement or expression that can be used wh
   
  The following example demonstrates the evolution of delegate creation from C# 1.0 to C# 3.0:  
   
- [!code-cs[csProgGuideLINQ#65](../../../csharp/programming-guide/arrays/codesnippet/CSharp/anonymous-functions_1.cs)]  
+ [!code-csharp[csProgGuideLINQ#65](../../../csharp/programming-guide/arrays/codesnippet/CSharp/anonymous-functions_1.cs)]  
   
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- [Statements, Expressions, and Operators](../../../csharp/programming-guide/statements-expressions-operators/index.md)   
- [Lambda Expressions](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)   
- [Delegates](../../../csharp/programming-guide/delegates/index.md)   
+ [Statements, Expressions, and Operators](../../../csharp/programming-guide/statements-expressions-operators/index.md)  
+ [Lambda Expressions](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)  
+ [Delegates](../../../csharp/programming-guide/delegates/index.md)  
  [Expression Trees](http://msdn.microsoft.com/library/fb1d3ed8-d5b0-4211-a71f-dd271529294b)

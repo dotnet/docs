@@ -26,8 +26,8 @@ This topic compares how [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] and the [!IN
  For an example of a zero-based [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] function, consider the `Split` function. It splits a string and returns an array containing the substrings. The [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] <xref:System.String.Split%2A?displayProperty=nameWithType> method also splits a string and returns an array containing the substrings. Because the `Split` function and <xref:System.String.Split%2A> method return [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] arrays, they must be zero-based.  
   
 ## See Also  
- <xref:Microsoft.VisualBasic.Strings.Mid%2A>   
- <xref:Microsoft.VisualBasic.Strings.Split%2A>   
- <xref:System.String.Substring%2A>   
- <xref:System.String.Split%2A>   
+ <xref:Microsoft.VisualBasic.Strings.Mid%2A>  
+ <xref:Microsoft.VisualBasic.Strings.Split%2A>  
+ <xref:System.String.Substring%2A>  
+ <xref:System.String.Split%2A>  
  [Introduction to Strings in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)

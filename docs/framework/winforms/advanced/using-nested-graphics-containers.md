@@ -63,5 +63,5 @@ manager: "wpickett"
  ![Nested Containers](../../../../docs/framework/winforms/advanced/media/nestedcontainers3.png "nestedcontainers3")  
   
 ## See Also  
- <xref:System.Drawing.Graphics>   
+ <xref:System.Drawing.Graphics>  
  [Managing the State of a Graphics Object](../../../../docs/framework/winforms/advanced/managing-the-state-of-a-graphics-object.md)

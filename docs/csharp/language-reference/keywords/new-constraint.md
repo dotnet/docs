@@ -18,12 +18,12 @@ The `new` constraint specifies that any type argument in a generic class declara
 ## Example  
  Apply the `new` constraint to a type parameter when your generic class creates new instances of the type, as shown in the following example:  
   
- [!code-cs[csrefKeywordsOperator#5](../../../csharp/language-reference/keywords/codesnippet/CSharp/new-constraint_1.cs)]  
+ [!code-csharp[csrefKeywordsOperator#5](../../../csharp/language-reference/keywords/codesnippet/CSharp/new-constraint_1.cs)]  
   
 ## Example  
  When you use the `new()` constraint with other constraints, it must be specified last:  
   
- [!code-cs[csrefKeywordsOperator#6](../../../csharp/language-reference/keywords/codesnippet/CSharp/new-constraint_2.cs)]  
+ [!code-csharp[csrefKeywordsOperator#6](../../../csharp/language-reference/keywords/codesnippet/CSharp/new-constraint_2.cs)]  
   
  For more information, see [Constraints on Type Parameters](../../../csharp/programming-guide/generics/constraints-on-type-parameters.md).  
   
@@ -31,9 +31,9 @@ The `new` constraint specifies that any type argument in a generic class declara
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- <xref:System.Collections.Generic>   
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
- [Operator Keywords](../../../csharp/language-reference/keywords/operator-keywords.md)   
+ <xref:System.Collections.Generic>  
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+ [Operator Keywords](../../../csharp/language-reference/keywords/operator-keywords.md)  
  [Generics](../../../csharp/programming-guide/generics/index.md)

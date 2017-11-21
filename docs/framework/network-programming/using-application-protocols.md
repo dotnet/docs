@@ -28,6 +28,6 @@ manager: "markl"
 The .NET Framework supports commonly used Internet application protocols. This section includes information on using the [HTTP](../../../docs/framework/network-programming/http.md), "TCP", and "UDP" protocols, as well as information on using the [Windows Sockets](../../../docs/framework/network-programming/sockets.md) interface to implement custom protocols.  
   
 ## See Also  
- [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)   
- [Network Programming Samples](../../../docs/framework/network-programming/network-programming-samples.md)   
+ [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)  
+ [Network Programming Samples](../../../docs/framework/network-programming/network-programming-samples.md)  
  [Networking Samples for .NET on MSDN Code Gallery](http://code.msdn.microsoft.com/Wiki/View.aspx?ProjectName=nclsamples)

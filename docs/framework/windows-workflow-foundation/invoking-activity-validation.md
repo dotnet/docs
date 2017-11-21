@@ -80,7 +80,7 @@ else
   
  When <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A> is called on this sample workflow, two validation errors are returned.  
   
- **Error: Value for a required activity argument 'Operand2' was not supplied.**   
+ **Error: Value for a required activity argument 'Operand2' was not supplied.**  
 **Error: Value for a required activity argument 'Operand1' was not supplied.**  If this workflow was invoked, an <xref:System.Activities.InvalidWorkflowException> would be thrown, as shown in the following example.  
   
 ```csharp  
@@ -94,7 +94,7 @@ catch (Exception ex)
 }  
 ```  
   
- **System.Activities.InvalidWorkflowException:**   
+ **System.Activities.InvalidWorkflowException:**  
 **The following errors were encountered while processing the workflow tree:**   
 **'Add': Value for a required activity argument 'Operand2' was not supplied.**   
 **'Add': Value for a required activity argument 'Operand1' was not supplied.**  For this example workflow to be valid, the two required arguments of the `Add` activity must be bound. In the following example, the two required arguments are bound to workflow variables along with the result value. In this example the <xref:System.Activities.Activity%601.Result%2A> argument is bound along with the two required arguments. The <xref:System.Activities.Activity%601.Result%2A> argument is not required to be bound and does not cause a validation error if it is not. It is the responsibility of the workflow author to bind <xref:System.Activities.Activity%601.Result%2A> if its value is used elsewhere in the workflow.  
@@ -127,7 +127,7 @@ catch (Exception ex)
 }  
 ```  
   
- **System.ArgumentException: The root activity's argument settings are incorrect.**   
+ **System.ArgumentException: The root activity's argument settings are incorrect.**  
 **Either fix the workflow definition or supply input values to fix these errors:**   
 **'Add': Value for a required activity argument 'Operand2' was not supplied.**   
 **'Add': Value for a required activity argument 'Operand1' was not supplied.**  After the correct arguments are passed, the workflow completes successfully, as shown in the following example.  
@@ -231,7 +231,7 @@ else
 }  
 ```  
   
- **Error: The Cost must be less than or equal to the Price.**   
+ **Error: The Cost must be less than or equal to the Price.**  
 **Error: Value for a required activity argument 'Description' was not supplied.**    
 > [!NOTE]
 >  Custom activity authors can provide validation logic in an activity's <xref:System.Activities.CodeActivity.CacheMetadata%2A> override. Any exceptions that are thrown from <xref:System.Activities.CodeActivity.CacheMetadata%2A> are not treated as validation errors. These exceptions will escape from the call to <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A> and must be handled by the caller.  

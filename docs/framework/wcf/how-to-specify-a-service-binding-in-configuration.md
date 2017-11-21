@@ -99,5 +99,5 @@ In this example, an `ICalculator` contract is defined for a basic calculator ser
     ```  
   
 ## See Also  
- [Using Bindings to Configure Services and Clients](../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)   
+ [Using Bindings to Configure Services and Clients](../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
  [Specifying an Endpoint Address](../../../docs/framework/wcf/specifying-an-endpoint-address.md)

@@ -39,5 +39,5 @@ manager: "erikre"
  [!code-vb[Astoria Northwind Client#GetCustomersPagedNested](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/source.vb#getcustomerspagednested)]  
   
 ## See Also  
- [Loading Deferred Content](../../../../docs/framework/data/wcf/loading-deferred-content-wcf-data-services.md)   
+ [Loading Deferred Content](../../../../docs/framework/data/wcf/loading-deferred-content-wcf-data-services.md)  
  [How to: Load Related Entities](../../../../docs/framework/data/wcf/how-to-load-related-entities-wcf-data-services.md)

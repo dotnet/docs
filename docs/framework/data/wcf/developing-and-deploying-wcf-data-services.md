@@ -126,6 +126,6 @@ This topic provides information about developing and deploying [!INCLUDE[ssAstor
 -   Because [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] includes a basic [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] implementation, you can use Windows Server AppFabric to monitor a data service deployed to IIS running on Windows Server. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] using Windows Server AppFabric to monitor a data service, see the post [Tracking WCF Data Services with Windows Server AppFabric](http://go.microsoft.com/fwlink/?LinkID=202005).  
   
 ## See Also  
- [Hosting the Data Service](../../../../docs/framework/data/wcf/hosting-the-data-service-wcf-data-services.md)   
- [Securing WCF Data Services](../../../../docs/framework/data/wcf/securing-wcf-data-services.md)   
+ [Hosting the Data Service](../../../../docs/framework/data/wcf/hosting-the-data-service-wcf-data-services.md)  
+ [Securing WCF Data Services](../../../../docs/framework/data/wcf/securing-wcf-data-services.md)  
  [Defining WCF Data Services](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)

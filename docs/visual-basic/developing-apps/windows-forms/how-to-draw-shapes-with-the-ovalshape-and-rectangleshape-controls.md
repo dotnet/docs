@@ -56,7 +56,7 @@ using Microsoft.VisualBasic.PowerPacks;
   
 4.  Add the following code in an `Event` procedure:  
   
-     [!code-cs[VbPowerpacksShape#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/CSharp/how-to-draw-shapes-with-the-ovalshape-and-rectangleshape-controls_1.cs)]
+     [!code-csharp[VbPowerpacksShape#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/CSharp/how-to-draw-shapes-with-the-ovalshape-and-rectangleshape-controls_1.cs)]
      [!code-vb[VbPowerpacksShape#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/VisualBasic/how-to-draw-shapes-with-the-ovalshape-and-rectangleshape-controls_1.vb)]  
   
 ## Customizing Shapes  
@@ -135,7 +135,7 @@ using Microsoft.VisualBasic.PowerPacks;
 5.  Click **OK** to insert the image.  
   
 ## See Also  
- <xref:Microsoft.VisualBasic.PowerPacks.OvalShape>   
- <xref:Microsoft.VisualBasic.PowerPacks.RectangleShape>   
- [Introduction to the Line and Shape Controls](../../../visual-basic/developing-apps/windows-forms/introduction-to-the-line-and-shape-controls-visual-studio.md)   
+ <xref:Microsoft.VisualBasic.PowerPacks.OvalShape>  
+ <xref:Microsoft.VisualBasic.PowerPacks.RectangleShape>  
+ [Introduction to the Line and Shape Controls](../../../visual-basic/developing-apps/windows-forms/introduction-to-the-line-and-shape-controls-visual-studio.md)  
  [How to: Draw Lines with the LineShape Control](../../../visual-basic/developing-apps/windows-forms/how-to-draw-lines-with-the-lineshape-control-visual-studio.md)

@@ -42,5 +42,5 @@ The following example creates a simple [!INCLUDE[TLA#tla_ui](../../../../include
  ![A typical DockPanel scenario.](../../../../docs/framework/wpf/controls/media/panel-intro-dockpanel.PNG "panel_intro_dockpanel")  
   
 ## See Also  
- <xref:System.Windows.Controls.DockPanel>   
+ <xref:System.Windows.Controls.DockPanel>  
  [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)

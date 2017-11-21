@@ -66,6 +66,6 @@ This topic describes how to configure the SQL Workflow Instance Store feature to
      For an example of how to configure persistence programmatically see [How to: Enable Persistence for Workflows and Workflow Services](../../../../docs/framework/windows-workflow-foundation/how-to-enable-persistence-for-workflows-and-workflow-services.md).  
   
 ## See Also  
- [Workflow Services](../../../../docs/framework/wcf/feature-details/workflow-services.md)   
- [Workflow Persistence](../../../../docs/framework/windows-workflow-foundation/workflow-persistence.md)   
+ [Workflow Services](../../../../docs/framework/wcf/feature-details/workflow-services.md)  
+ [Workflow Persistence](../../../../docs/framework/windows-workflow-foundation/workflow-persistence.md)  
  [Windows Server App Fabric Persistence](http://go.microsoft.com/fwlink/?LinkId=193121)

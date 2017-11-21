@@ -217,5 +217,5 @@ Although you can set an object's properties to default values at design time, an
  At this point, you can again build and run the application. Initially, the default values appear in the text boxes. Try to change the values and enter a name in the fourth text box. Close the application and then run it again. Note that the new values now appear in the text boxes.  
   
 ## See Also  
- [Serialization (C# )](../../../../csharp/programming-guide/concepts/serialization/index.md)   
+ [Serialization (C# )](../../../../csharp/programming-guide/concepts/serialization/index.md)  
  [C# Programming Guide](../../../../csharp/programming-guide/index.md)

@@ -52,8 +52,8 @@ If you intend to expose types in an assembly to COM applications, consider the r
  When exported to COM, the inheritance hierarchy of a managed type is flattened. Versioning also differs between managed and unmanaged environments. Types exposed to COM do not have the same versioning characteristics as other managed types.  
   
 ## See Also  
- <xref:System.Runtime.InteropServices.ComVisibleAttribute>   
- [Exposing .NET Framework Components to COM](../../../docs/framework/interop/exposing-dotnet-components-to-com.md)   
- [Introducing the Class Interface](http://msdn.microsoft.com/en-us/733c0dd2-12e5-46e6-8de1-39d5b25df024)   
- [Applying Interop Attributes](../../../docs/framework/interop/applying-interop-attributes.md)   
+ <xref:System.Runtime.InteropServices.ComVisibleAttribute>  
+ [Exposing .NET Framework Components to COM](../../../docs/framework/interop/exposing-dotnet-components-to-com.md)  
+ [Introducing the Class Interface](http://msdn.microsoft.com/en-us/733c0dd2-12e5-46e6-8de1-39d5b25df024)  
+ [Applying Interop Attributes](../../../docs/framework/interop/applying-interop-attributes.md)  
  [Packaging an Assembly for COM](../../../docs/framework/interop/packaging-an-assembly-for-com.md)

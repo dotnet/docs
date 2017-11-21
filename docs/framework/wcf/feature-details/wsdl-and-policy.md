@@ -79,6 +79,6 @@ This topic covers [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] WSDL 1
 |mssp:RequireClientCertificate|Nested|This optional element specifies a requirement for a client certificate to be provided as part of the TLSNEGO protocol. If this assertion is present, then a client certificate must be provided. If this assertion is not present, then a client certificate must not be provided. This assertion must not be used outside of mssp:SslContextToken.|  
   
 ## See Also  
- [Custom WSDL Publication](../../../../docs/framework/wcf/samples/custom-wsdl-publication.md)   
- [How to: Export Custom WSDL](../../../../docs/framework/wcf/extending/how-to-export-custom-wsdl.md)   
+ [Custom WSDL Publication](../../../../docs/framework/wcf/samples/custom-wsdl-publication.md)  
+ [How to: Export Custom WSDL](../../../../docs/framework/wcf/extending/how-to-export-custom-wsdl.md)  
  [How to: Import Custom WSDL](../../../../docs/framework/wcf/extending/how-to-import-custom-wsdl.md)

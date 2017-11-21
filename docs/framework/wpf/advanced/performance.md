@@ -35,5 +35,5 @@ Achieving optimal application performance requires forethought in application de
  <xref:System.Diagnostics.PresentationTraceSources>  
   
 ## See Also  
- [Layout](../../../../docs/framework/wpf/advanced/layout.md)   
+ [Layout](../../../../docs/framework/wpf/advanced/layout.md)  
  [Animation Tips and Tricks](../../../../docs/framework/wpf/graphics-multimedia/animation-tips-and-tricks.md)

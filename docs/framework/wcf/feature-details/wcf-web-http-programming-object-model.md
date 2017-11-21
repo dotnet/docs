@@ -106,9 +106,9 @@ The WCF WEB HTTP  Programming Model allows developers to expose [!INCLUDE[indigo
  Because the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] WEB HTTP  Programming Model does not support the WS-* protocols the only way to secure a Web service built on the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] WEB HTTP  Programming Model is to expose your service using SSL. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] setting up SSL with [!INCLUDE[iisver](../../../../includes/iisver-md.md)] see [How to implement SSL in IIS](http://go.microsoft.com/fwlink/?LinkId=131613)  
   
 ## See Also  
- <xref:System.ServiceModel.WebHttpBinding>   
- <xref:System.ServiceModel.Web.WebGetAttribute>   
- <xref:System.ServiceModel.Web.WebInvokeAttribute>   
- <xref:System.ServiceModel.Description.WebHttpBehavior>   
- <xref:System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector>   
+ <xref:System.ServiceModel.WebHttpBinding>  
+ <xref:System.ServiceModel.Web.WebGetAttribute>  
+ <xref:System.ServiceModel.Web.WebInvokeAttribute>  
+ <xref:System.ServiceModel.Description.WebHttpBehavior>  
+ <xref:System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector>  
  [WCF Web HTTP Programming Model Overview](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model-overview.md)

@@ -83,6 +83,6 @@ The [Windows Presentation Foundation](../../../../docs/framework/wpf/index.md) p
  Notice how the <xref:System.Windows.Controls.StackPanel> places the buttons on top of the <xref:System.Windows.Controls.InkCanvas>. If you try to ink over the top of the buttons, the <xref:System.Windows.Controls.InkCanvas> collects and renders the ink behind the buttons. This is because the buttons are siblings of the <xref:System.Windows.Controls.InkCanvas> as opposed to children. Also, the buttons are higher in the z-order, so the ink is rendered behind them.  
   
 ## See Also  
- <xref:System.Windows.Ink.DrawingAttributes>   
- <xref:System.Windows.Controls.InkCanvas.DefaultDrawingAttributes%2A>   
+ <xref:System.Windows.Ink.DrawingAttributes>  
+ <xref:System.Windows.Controls.InkCanvas.DefaultDrawingAttributes%2A>  
  <xref:System.Windows.Ink>

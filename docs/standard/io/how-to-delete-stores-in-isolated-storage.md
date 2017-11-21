@@ -41,5 +41,5 @@ The <xref:System.IO.IsolatedStorage.IsolatedStorageFile> class supplies two meth
  [!code-vb[Conceptual.IsolatedStorage#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.isolatedstorage/vb/source3.vb#3)]  
   
 ## See Also  
- <xref:System.IO.IsolatedStorage.IsolatedStorageFile>   
+ <xref:System.IO.IsolatedStorage.IsolatedStorageFile>  
  [Isolated Storage](../../../docs/standard/io/isolated-storage.md)

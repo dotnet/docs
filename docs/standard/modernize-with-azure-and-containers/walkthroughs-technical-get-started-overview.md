@@ -7,7 +7,7 @@ ms.date: 10/26/2017
 ---
 # Walkthroughs and technical get started overview 
 
-To limit the size of this eBook, we've made additional technical documentation and the full walkthroughs available in a GitHub repo. The online series of walkthroughs that is described in this chapter covers the step-by-step setup of the multiple environments that are based on Windows Containers, and deployment to Azure.
+To limit the size of this e-book, we've made additional technical documentation and the full walkthroughs available in a GitHub repo. The online series of walkthroughs that is described in this chapter covers the step-by-step setup of the multiple environments that are based on Windows Containers, and deployment to Azure.
 
 The following sections explain what each walkthrough is about-its objectives, its high-level vision-and provides a diagram of the tasks that are involved. You can get the walkthroughs themselves in the *eShopModernizing* apps GitHub repo wiki at [https://github.com/dotnet-architecture/eShopModernizing/wiki](https://github.com/dotnet-architecture/eShopModernizing/wiki).
 
@@ -308,5 +308,6 @@ Explore this content more in-depth on the GitHub wiki:
 
 [https://github.com/dotnet-architecture/eShopModernizing/wiki/05.-How-to-deploy-your-Windows-Containers-based-apps-into-Azure-Service-Fabric-(Including-CI-CD)](https://github.com/dotnet-architecture/eShopModernizing/wiki/05.-How-to-deploy-your-Windows-Containers-based-apps-into-Azure-Service-Fabric-(Including-CI-CD))
 
-> [Previous](lift-and-shift-existing-apps-devops/migrate-to-hybrid-cloud-scenarios.md)  
+>[!div class="step-by-step"]
+[Previous](lift-and-shift-existing-apps-devops/migrate-to-hybrid-cloud-scenarios.md)
 [Next](conclusions.md)

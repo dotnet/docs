@@ -44,5 +44,5 @@ The [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] infrastructure uses 
  [Data Transfer and Serialization](../../../../docs/framework/wcf/feature-details/data-transfer-and-serialization.md)  
   
 ## See Also  
- [Data Contract Schema Reference](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md)   
+ [Data Contract Schema Reference](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md)  
  [Specifying Data Transfer in Service Contracts](../../../../docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md)

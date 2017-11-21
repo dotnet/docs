@@ -64,8 +64,8 @@ public class MyClass
 }  
 ```  
   
- **DEBUG and MYTEST are defined**   
+ **DEBUG and MYTEST are defined**  
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
  [C# Preprocessor Directives](../../../csharp/language-reference/preprocessor-directives/index.md)

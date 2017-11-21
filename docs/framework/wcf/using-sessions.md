@@ -152,5 +152,5 @@ In [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] applications, a *session
 >  MaxConcurrentSessions have no effect in this case because there is only one "session" available.  
   
 ## See Also  
- <xref:System.ServiceModel.OperationContractAttribute.IsInitiating%2A>   
+ <xref:System.ServiceModel.OperationContractAttribute.IsInitiating%2A>  
  <xref:System.ServiceModel.OperationContractAttribute.IsTerminating%2A>

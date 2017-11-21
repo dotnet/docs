@@ -42,6 +42,6 @@ Use the <xref:System.ServiceModel.Description.MetadataExchangeClient> class to d
  To compile this code example, you must reference the System.ServiceModel.dll assembly and import the <xref:System.ServiceModel.Description> namespace.  
   
 ## See Also  
- <xref:System.ServiceModel.Description.MetadataResolver>   
- <xref:System.ServiceModel.Description.MetadataExchangeClient>   
+ <xref:System.ServiceModel.Description.MetadataResolver>  
+ <xref:System.ServiceModel.Description.MetadataExchangeClient>  
  <xref:System.ServiceModel.Description.WsdlImporter>

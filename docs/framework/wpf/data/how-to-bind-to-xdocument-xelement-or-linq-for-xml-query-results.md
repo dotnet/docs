@@ -46,7 +46,7 @@ This example demonstrates how to bind XML data to an <xref:System.Windows.Contro
  [!code-vb[XLinqExample#BindToResults](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/XLinqExample/visualbasic/window1.xaml.vb#bindtoresults)]  
   
 ## See Also  
- [Binding Sources Overview](../../../../docs/framework/wpf/data/binding-sources-overview.md)   
- [WPF Data Binding with LINQ to XML Overview](/visualstudio/designers/wpf-data-binding-with-linq-to-xml-overview)   
- [WPF Data Binding Using LINQ to XML Example](/visualstudio/designers/wpf-data-binding-using-linq-to-xml-example)   
+ [Binding Sources Overview](../../../../docs/framework/wpf/data/binding-sources-overview.md)  
+ [WPF Data Binding with LINQ to XML Overview](/visualstudio/designers/wpf-data-binding-with-linq-to-xml-overview)  
+ [WPF Data Binding Using LINQ to XML Example](/visualstudio/designers/wpf-data-binding-using-linq-to-xml-example)  
  [LINQ to XML Dynamic Properties](/visualstudio/designers/linq-to-xml-dynamic-properties)

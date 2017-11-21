@@ -31,5 +31,5 @@ Assemblies can be private or shared: by default, most simple programs consist of
 5.  Access the types contained in the assembly from the other applications. For more information, see [How to: Reference a Strong-Named Assembly](http://msdn.microsoft.com/library/4c6a406a-b5eb-44fa-b4ed-4e95bb95a813).  
   
 ## See Also  
- [C# Programming Guide](../../../../csharp/programming-guide/index.md)   
+ [C# Programming Guide](../../../../csharp/programming-guide/index.md)  
  [Programming with Assemblies](../../../../framework/app-domains/programming-with-assemblies.md)

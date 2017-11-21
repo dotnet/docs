@@ -82,5 +82,5 @@ XML namespaces associate element and attribute names in an XML document with cus
 |Get the name table used to look up prefixes and URIs|<xref:System.Xml.XmlNamespaceManager.NameTable%2A> property|  
   
 ## See Also  
- <xref:System.Xml.XmlNamespaceManager>   
+ <xref:System.Xml.XmlNamespaceManager>  
  [XML Documents and Data](../../../../docs/standard/data/xml/index.md)

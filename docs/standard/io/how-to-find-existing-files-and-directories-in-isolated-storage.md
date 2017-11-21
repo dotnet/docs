@@ -43,5 +43,5 @@ To search for a directory in isolated storage, use the <xref:System.IO.IsolatedS
  [!code-vb[Conceptual.IsolatedStorage#9](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.isolatedstorage/vb/source8.vb#9)]  
   
 ## See Also  
- <xref:System.IO.IsolatedStorage.IsolatedStorageFile>   
+ <xref:System.IO.IsolatedStorage.IsolatedStorageFile>  
  [Isolated Storage](../../../docs/standard/io/isolated-storage.md)

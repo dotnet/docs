@@ -84,5 +84,5 @@ The following web sites provide guidance and can help you find answers to common
 |[vb.dotnet.technical](http://go.microsoft.com/fwlink/?LinkId=145986)|Provides a forum for discussion of new features in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] in the DevX forums.|  
   
 ## See Also  
- [Getting Started](../../visual-basic/getting-started/index.md)   
+ [Getting Started](../../visual-basic/getting-started/index.md)  
  [Talk to Us](/visualstudio/ide/talk-to-us)

@@ -20,9 +20,9 @@ Because objects are polymorphic, it is possible for a variable of a base class t
 ## Example  
  The following examples show how to use the `is` and `as` operators to cast from one reference type to another without the risk of throwing an exception. The example also shows how to use the `as` operator with nullable value types.  
   
- [!code-cs[csProgGuideTypes#40](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/how-to-safely-cast-by-using-as-and-is-operators_1.cs)]  
+ [!code-csharp[csProgGuideTypes#40](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/how-to-safely-cast-by-using-as-and-is-operators_1.cs)]  
   
 ## See Also  
- [Types](../../../csharp/programming-guide/types/index.md)   
- [Casting and Type Conversions](../../../csharp/programming-guide/types/casting-and-type-conversions.md)   
+ [Types](../../../csharp/programming-guide/types/index.md)  
+ [Casting and Type Conversions](../../../csharp/programming-guide/types/casting-and-type-conversions.md)  
  [Nullable Types](../../../csharp/programming-guide/nullable-types/index.md)

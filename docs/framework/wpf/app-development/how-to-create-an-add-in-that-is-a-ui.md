@@ -111,5 +111,5 @@ This example shows how to create an add-in that is a [!INCLUDE[TLA#tla_wpf](../.
  This activity is completely isolated from the host application.  
   
 ## See Also  
- [Add-ins and Extensibility](../../../../docs/framework/add-ins/index.md)   
+ [Add-ins and Extensibility](../../../../docs/framework/add-ins/index.md)  
  [WPF Add-Ins Overview](../../../../docs/framework/wpf/app-development/wpf-add-ins-overview.md)

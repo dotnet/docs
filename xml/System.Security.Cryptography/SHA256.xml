@@ -37,9 +37,7 @@
   
  The hash size for the <xref:System.Security.Cryptography.SHA256> algorithm is 256 bits.  
   
- This is an abstract class. The only implementation of this class is <xref:System.Security.Cryptography.SHA256Managed>.  
-  
-   
+ This is an abstract class. 
   
 ## Examples  
  The following example calculates the SHA-256 hash for all files in a directory.  
@@ -113,9 +111,9 @@
       <Parameters />
       <Docs>
         <summary>Creates an instance of the default implementation of <see cref="T:System.Security.Cryptography.SHA256" />.</summary>
-        <returns>A new instance of <see cref="T:System.Security.Cryptography.SHA256" />.</returns>
+        <returns>A new instance of <see cref="T:System.Security.Cryptography.SHA256"/>. On the .NET Framework, this method creates an instance of the <see cref="T:System.Security.Cryptography.SHA256Managed" /> class if FIPS mode is not active; if FIPS mode is active, it creates an instance of the <see cref="T:System.Security.Cryptography.SHA256Cng"/> class. On .NET Core, it returns an instance of a private class derived from <see cref="T:System.Security.Cryptography.SHA256"/>.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.Reflection.TargetInvocationException">The algorithm was used with Federal Information Processing Standards (FIPS) mode enabled, but is not FIPS compatible.</exception>
+        <exception cref="T:System.Reflection.TargetInvocationException">On the .NET Framework 4.6.1 and earlier versions only: The algorithm was used with Federal Information Processing Standards (FIPS) mode enabled, but is not FIPS compatible.</exception>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -146,8 +144,20 @@
         <param name="hashName">The name of the specific implementation of <see cref="T:System.Security.Cryptography.SHA256" /> to be used.</param>
         <summary>Creates an instance of a specified implementation of <see cref="T:System.Security.Cryptography.SHA256" />.</summary>
         <returns>A new instance of <see cref="T:System.Security.Cryptography.SHA256" /> using the specified implementation.</returns>
-        <remarks>To be added.</remarks>
-        <exception cref="T:System.Reflection.TargetInvocationException">The algorithm described by the <paramref name="hashName" /> parameter was used with Federal Information Processing Standards (FIPS) mode enabled, but is not FIPS compatible.</exception>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+The .NET Framework includes the implementations and their associated hashName values:
+| Implementation | hashName |
+|----------|---------|
+| <xref:System.Security.Cryptography.SHA256Managed> | SHA256 </br> SHA-256 <br /> System.Security.Cryptography.SHA256 |
+| <xref:System.Security.Cryptography.SHA256Cng> | System.Security.Cryptography.SHA256Cng |
+| <xref:System.Security.Cryptography.SHA256CryptoServiceProvider> | System.Security.Cryptography.SHA256CryptoServiceProvider |
+
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Reflection.TargetInvocationException">On the .NET Framework only: FIPS mode is enabled, but <paramref name="hashName" /> requests <see cref="T:System.Security.Cryptography.SHA256Managed" />, which is not FIPS compatible.</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="Create">
@@ -160,6 +170,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Allows specific implementations of this abstract class to be instantiated.</summary>
+        <remarks></remarks>
       </Docs>
     </MemberGroup>
   </Members>

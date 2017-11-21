@@ -1,6 +1,6 @@
 ---
 title: "How to: Determine which .NET Framework security updates and hotfixes are installed"
-description: "Learn how to determine which .NET Framework security updates and hotfixes are installed in your machine."
+description: "Learn how to determine which .NET Framework security updates and hotfixes are installed on a computer."
 ms.date: "11/21/2017"
 ms.prod: ".net-framework"
 ms.technology: 

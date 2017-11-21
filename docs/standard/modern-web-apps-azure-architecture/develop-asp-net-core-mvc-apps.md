@@ -263,10 +263,10 @@ public class ValidateModelAttribute : ActionFilterAttribute
 Likewise, a filter can be used to check if a record exists and return a 404 before the action is executed, eliminating the need to perform these checks in the action. Once you've pulled out common conventions and organized your solution to separate infrastructure code and business logic from your UI, your MVC action methods should be extremely thin:
 
 ```csharp
-// PUT api/authors2/5
+// PUT api/authors/2/5
 [HttpPut("{id}")]
-[ValidateAuthorExists\]
-public async Task&lt;IActionResult&gt; Put(int id, [FromBody]Author author)
+[ValidateAuthorExists]
+public async Task<IActionResult> Put(int id, [FromBody]Author author)
 {
     await _authorRepository.UpdateAsync(author);
     return Ok();

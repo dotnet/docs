@@ -35,6 +35,7 @@ The API includes the following functions:
 | [EndMethodEnumeration function](endmethodenumeration.md) | Terminates an enumeration sequence started by calling the  [BeginMethodEnumeration function](beginmethodenumeration.md). |
 | [ExecNotificationQueryWmi function](execnotificationquerywmi.md) | Executes a query to receive events. |
 | [ExecQueryWmi function](execquerywmi.md) | Executes a query to retrieve objects. |
+| [FormatFromRawValue function](formatfromrawvalue.md) | Converts one raw performance data value to the specified format, or two raw performance data values if the format conversion is time-based. | 
 | [Get function](get.md) | Retrieves a specified property value if it exists. |
 | [GetCurrentApartmentType function](getcurrentapartmenttype.md) | Retrieves the type of apartment in which the caller is executing. |
 | [GetDemultiplexedStub function](getdemultiplexedstub.md) | Creates an object forwarder sink to assist a client in receiving asynchronous calls from Windows Management. |

@@ -15,6 +15,7 @@
 ## [EndMethodEnumeration function](endmethodenumeration.md)
 ## [ExecQueryWmi function](execquerywmi.md)
 ## [ExecNotificationQueryWmi function](execnotificationquerywmi.md)
+## [FormatFromRawValue function](formatfromrawvalue.md)
 ## [Get function](get.md)
 ## [GetCurrentApartmentType](getcurrentapartmenttype.md)
 ## [GetDemultiplexedStub](getdemultiplexedstub.md)

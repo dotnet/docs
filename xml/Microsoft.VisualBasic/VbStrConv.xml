@@ -200,7 +200,7 @@
         <ReturnType>Microsoft.VisualBasic.VbStrConv</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Converts narrow (single-byte) characters in the string to wide (double-byte) characters. Applies to Asian locales. This member is equivalent to the Visual Basic constant <see langword="vbWide" />.</summary>
+        <summary>Converts narrow (single-byte) characters in the string to wide (double-byte) characters. Applies to Asian locales. This member is equivalent to the Visual Basic constant <see langword="vbWide" />. [!INCLUDE[vbstrconv-wide](~/includes/vbstrconv-wide-md.md)]</summary>
       </Docs>
     </Member>
   </Members>

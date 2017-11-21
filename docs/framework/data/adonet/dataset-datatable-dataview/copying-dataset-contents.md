@@ -101,7 +101,7 @@ foreach (DataRow copyRow in copyRows)
 ```  
   
 ## See Also  
- <xref:System.Data.DataSet>   
- <xref:System.Data.DataTable>   
- [DataSets, DataTables, and DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)   
+ <xref:System.Data.DataSet>  
+ <xref:System.Data.DataTable>  
+ [DataSets, DataTables, and DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)  
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

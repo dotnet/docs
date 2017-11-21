@@ -172,8 +172,8 @@ This walkthrough shows you how to localize [!INCLUDE[TLA2#tla_winclient](../../.
      The application shows the localized strings instead of the English strings.  
   
 ## See Also  
- <xref:System.Windows.Forms.Integration.ElementHost>   
- <xref:System.Windows.Forms.Integration.WindowsFormsHost>   
- [Localize an Application](../../../../docs/framework/wpf/advanced/how-to-localize-an-application.md)   
- [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5)   
+ <xref:System.Windows.Forms.Integration.ElementHost>  
+ <xref:System.Windows.Forms.Integration.WindowsFormsHost>  
+ [Localize an Application](../../../../docs/framework/wpf/advanced/how-to-localize-an-application.md)  
+ [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5)  
  [WPF Designer](http://msdn.microsoft.com/en-us/c6c65214-8411-4e16-b254-163ed4099c26)

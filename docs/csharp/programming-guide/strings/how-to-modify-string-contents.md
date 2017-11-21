@@ -31,5 +31,5 @@ Because strings are *immutable*, it is not possible (without using unsafe code) 
  [!code-csharp[csProgGuideStrings#29](../../../csharp/programming-guide/strings/codesnippet/CSharp/how-to-modify-string-contents_3.cs)]  
   
 ## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
  [Strings](../../../csharp/programming-guide/strings/index.md)

@@ -32,5 +32,5 @@ manager: "wpickett"
  Describes this class and has links to all its members.  
   
 ## See Also  
- <xref:System.Windows.Forms.MenuStrip>   
+ <xref:System.Windows.Forms.MenuStrip>  
  <xref:System.Windows.Forms.ContextMenuStrip>

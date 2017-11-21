@@ -47,5 +47,5 @@ HRESULT ExceptionCLRCatcherExecute();
  **.NET Framework Versions:** 1.1, 1.0  
   
 ## See Also  
- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)   
+ [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)  
  [ExceptionCLRCatcherFound Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-exceptionclrcatcherfound-method.md)

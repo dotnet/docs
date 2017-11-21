@@ -105,6 +105,6 @@ You can use the .NET Framework [Portable Class Library](../../../docs/standard/c
  [!code-vb[Conceptual.Resources.PortableMetroLoc#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.portablemetroloc/vb/blankpage.xaml.vb#1)]  
   
 ## See Also  
- <xref:System.Resources.ResourceManager>   
- [Resources in Desktop Apps](../../../docs/framework/resources/index.md)   
+ <xref:System.Resources.ResourceManager>  
+ [Resources in Desktop Apps](../../../docs/framework/resources/index.md)  
  [Packaging and Deploying Resources](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md)

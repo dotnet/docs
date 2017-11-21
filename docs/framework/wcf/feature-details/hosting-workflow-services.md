@@ -60,5 +60,5 @@ A workflow service must be hosted for it to respond to incoming messages. Workfl
  The Web Deployment tool has been created to make the job of deployment easier. The tool allows you to migrate applications between IIS 6.0 and IIS 7.0, synchronize server farms, and package, archive and deploy Web applications. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [MS Deployment Tool](http://go.microsoft.com/fwlink/?LinkId=178690)  
   
 ## See Also  
- [Workflow Service Host Internals](../../../../docs/framework/wcf/feature-details/workflow-service-host-internals.md)   
+ [Workflow Service Host Internals](../../../../docs/framework/wcf/feature-details/workflow-service-host-internals.md)  
  [Configuring WorkflowServiceHost](../../../../docs/framework/wcf/feature-details/configuring-workflowservicehost.md)

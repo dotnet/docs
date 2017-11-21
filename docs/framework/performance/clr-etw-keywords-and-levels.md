@@ -127,6 +127,6 @@ manager: "wpickett"
  0x0 - LogAlways  
   
 ## See Also  
- [CLR ETW Providers](../../../docs/framework/performance/clr-etw-providers.md)   
- [CLR ETW Events](../../../docs/framework/performance/clr-etw-events.md)   
+ [CLR ETW Providers](../../../docs/framework/performance/clr-etw-providers.md)  
+ [CLR ETW Events](../../../docs/framework/performance/clr-etw-events.md)  
  [ETW Events in the Common Language Runtime](../../../docs/framework/performance/etw-events-in-the-common-language-runtime.md)

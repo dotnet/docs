@@ -77,11 +77,11 @@ A `Sub` procedure is a series of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] sta
  [!code-vb[VbVbcnProcedures#3](./codesnippet/VisualBasic/sub-procedures_2.vb)]  
   
 ## See Also  
- [Procedures](./index.md)   
- [Function Procedures](./function-procedures.md)   
- [Property Procedures](./property-procedures.md)   
- [Operator Procedures](./operator-procedures.md)   
- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)   
- [Sub Statement](../../../../visual-basic/language-reference/statements/sub-statement.md)   
- [How to: Call a Procedure that Does Not Return a Value](./how-to-call-a-procedure-that-does-not-return-a-value.md)   
+ [Procedures](./index.md)  
+ [Function Procedures](./function-procedures.md)  
+ [Property Procedures](./property-procedures.md)  
+ [Operator Procedures](./operator-procedures.md)  
+ [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
+ [Sub Statement](../../../../visual-basic/language-reference/statements/sub-statement.md)  
+ [How to: Call a Procedure that Does Not Return a Value](./how-to-call-a-procedure-that-does-not-return-a-value.md)  
  [How to: Call an Event Handler in Visual Basic](./how-to-call-an-event-handler.md)

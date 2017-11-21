@@ -98,5 +98,5 @@ HRESULT LoadTypeLibWithResolver(
  **.NET Framework Version:** 3.5, 3.0, 2.0  
   
 ## See Also  
- [Tlbexp Helper Functions](../../../../docs/framework/unmanaged-api/tlbexp/index.md)   
+ [Tlbexp Helper Functions](../../../../docs/framework/unmanaged-api/tlbexp/index.md)  
  [LoadTypeLibEx Function](https://msdn.microsoft.com/library/windows/desktop/ms221249\(v=vs.85\).aspx)

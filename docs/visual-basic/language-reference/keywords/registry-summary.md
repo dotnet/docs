@@ -25,6 +25,6 @@ ms.author: dotnetcontent
 |Save program settings.|<xref:Microsoft.VisualBasic.Interaction.SaveSetting%2A>|  
   
 ## See Also  
- [Keywords](../../../visual-basic/language-reference/keywords/index.md)   
- [Visual Basic Runtime Library Members](../../../visual-basic/language-reference/runtime-library-members.md)   
+ [Keywords](../../../visual-basic/language-reference/keywords/index.md)  
+ [Visual Basic Runtime Library Members](../../../visual-basic/language-reference/runtime-library-members.md)  
  [Reading from and Writing to the Registry](../../../visual-basic/developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md)

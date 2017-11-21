@@ -26,5 +26,5 @@ Id: 109
  This event indicates that a WebHost unhandled exception occurred. The event lists the Sender Information, exception, process name and process ID.  
   
 ## See Also  
- [Event Logging](../../../../../docs/framework/wcf/diagnostics/event-logging/index.md)   
+ [Event Logging](../../../../../docs/framework/wcf/diagnostics/event-logging/index.md)  
  [Events General Reference](../../../../../docs/framework/wcf/diagnostics/event-logging/events-general-reference.md)

@@ -69,5 +69,5 @@ ADO.NET is a set of classes that expose data access services for .NET Framework 
  Provides complete listings of all samples and QuickStart samples associated with the .NET Framework.  
   
 ## See Also  
- [Accessing data in Visual Studio](/visualstudio/data-tools/accessing-data-in-visual-studio)   
+ [Accessing data in Visual Studio](/visualstudio/data-tools/accessing-data-in-visual-studio)  
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

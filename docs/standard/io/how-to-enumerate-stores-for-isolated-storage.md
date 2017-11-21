@@ -34,5 +34,5 @@ You can enumerate all isolated stores for the current user by using the  <xref:S
  [!code-vb[Conceptual.IsolatedStorage#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.isolatedstorage/vb/source2.vb#2)]  
   
 ## See Also  
- <xref:System.IO.IsolatedStorage.IsolatedStorageFile>   
+ <xref:System.IO.IsolatedStorage.IsolatedStorageFile>  
  [Isolated Storage](../../../docs/standard/io/isolated-storage.md)

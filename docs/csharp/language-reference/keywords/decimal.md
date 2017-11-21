@@ -86,12 +86,12 @@ Console.WriteLine((double)dec + dub);
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- <xref:System.Decimal>   
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
- [Integral Types Table](../../../csharp/language-reference/keywords/integral-types-table.md)   
- [Built-In Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md)   
- [Implicit Numeric Conversions Table](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)   
- [Explicit Numeric Conversions Table](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)   
+ <xref:System.Decimal>  
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+ [Integral Types Table](../../../csharp/language-reference/keywords/integral-types-table.md)  
+ [Built-In Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md)  
+ [Implicit Numeric Conversions Table](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)  
+ [Explicit Numeric Conversions Table](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)  
  [Standard Numeric Format Strings](../../../standard/base-types/standard-numeric-format-strings.md)

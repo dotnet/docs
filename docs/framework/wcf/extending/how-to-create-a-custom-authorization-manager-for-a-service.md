@@ -124,6 +124,6 @@ The Identity Model infrastructure in [!INCLUDE[indigo1](../../../../includes/ind
  [!code-vb[c_CustomAuthMgr#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customauthmgr/vb/c_customauthmgr.vb#2)]  
   
 ## See Also  
- <xref:System.ServiceModel.ServiceAuthorizationManager>   
- [Authorization Policy](../../../../docs/framework/wcf/samples/authorization-policy.md)   
+ <xref:System.ServiceModel.ServiceAuthorizationManager>  
+ [Authorization Policy](../../../../docs/framework/wcf/samples/authorization-policy.md)  
  [Authorization Policy](../../../../docs/framework/wcf/samples/authorization-policy.md)

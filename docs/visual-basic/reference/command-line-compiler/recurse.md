@@ -52,6 +52,6 @@ vbc /target:library /out:Test.ABC.dll /recurse:Test\ABC\*.vb
 ```  
   
 ## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)   
- [/out (Visual Basic)](../../../visual-basic/reference/command-line-compiler/out.md)   
+ [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
+ [/out (Visual Basic)](../../../visual-basic/reference/command-line-compiler/out.md)  
  [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

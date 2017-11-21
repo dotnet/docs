@@ -74,8 +74,8 @@ If a property has both a `get` and a `set` accessor, both must be auto-implement
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See also
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Using Properties](../../../csharp/programming-guide/classes-and-structs/using-properties.md)   
- [Indexers](../../../csharp/programming-guide/indexers/index.md)   
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Using Properties](../../../csharp/programming-guide/classes-and-structs/using-properties.md)  
+ [Indexers](../../../csharp/programming-guide/indexers/index.md)  
  [get keyword](../../../csharp/language-reference/keywords/get.md)    
  [set keyword](../../../csharp/language-reference/keywords/set.md)    

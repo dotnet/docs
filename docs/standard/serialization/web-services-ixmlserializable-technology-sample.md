@@ -47,12 +47,12 @@ manager: "erikre"
 2.  Type **http://localhost/IXmlSerializable/Service.asmx**.  
   
 ## See Also  
- <xref:System.Xml.Serialization.IXmlSerializable>   
- <xref:System.Xml.Serialization>   
- <xref:System.Xml.XmlConvert>   
- <xref:System.Xml.XmlQualifiedName>   
- <xref:System.Xml.XmlReader>   
- <xref:System.Xml.Schema.XmlSchema>   
- <xref:System.Xml.Schema.XmlSchemaSet>   
- <xref:System.Xml.XmlUrlResolver>   
+ <xref:System.Xml.Serialization.IXmlSerializable>  
+ <xref:System.Xml.Serialization>  
+ <xref:System.Xml.XmlConvert>  
+ <xref:System.Xml.XmlQualifiedName>  
+ <xref:System.Xml.XmlReader>  
+ <xref:System.Xml.Schema.XmlSchema>  
+ <xref:System.Xml.Schema.XmlSchemaSet>  
+ <xref:System.Xml.XmlUrlResolver>  
  <xref:System.Xml.XmlWriter>

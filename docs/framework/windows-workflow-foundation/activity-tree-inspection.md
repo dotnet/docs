@@ -27,27 +27,27 @@ Activity tree inspection is used by workflow application authors to inspect the 
   
  This sample code provides the following output.  
   
- **List Item 1**   
+ **List Item 1**  
 **List Item 2**   
 **List Item 3**   
 **List Item 4**   
 **List Item 5**   
 **Items added to collection.**   
 **Sequence**   
- **Literal<List\<String>>**   
- **While**   
- **AddToCollection\<String>**   
- **VariableValue<ICollection\<String>>**   
- **LambdaValue\<String>**   
- **LocationReferenceValue<List\<String>>**   
- **LambdaValue\<Boolean>**   
- **LocationReferenceValue<List\<String>>**   
- **ForEach\<String>**   
- **VariableValue<IEnumerable\<String>>**   
- **WriteLine**   
- **DelegateArgumentValue\<String>**   
- **Sequence**   
- **WriteLine**   
+ **Literal<List\<String>>**  
+ **While**  
+ **AddToCollection\<String>**  
+ **VariableValue<ICollection\<String>>**  
+ **LambdaValue\<String>**  
+ **LocationReferenceValue<List\<String>>**  
+ **LambdaValue\<Boolean>**  
+ **LocationReferenceValue<List\<String>>**  
+ **ForEach\<String>**  
+ **VariableValue<IEnumerable\<String>>**  
+ **WriteLine**  
+ **DelegateArgumentValue\<String>**  
+ **Sequence**  
+ **WriteLine**  
  **Literal\<String>**  To retrieve a specific activity instead of enumerating all of the activities, <xref:System.Activities.WorkflowInspectionServices.Resolve%2A> is used. Both <xref:System.Activities.WorkflowInspectionServices.Resolve%2A> and <xref:System.Activities.WorkflowInspectionServices.GetActivities%2A> perform metadata caching if `WorkflowInspectionServices.CacheMetadata` has not been previously called. If <xref:System.Activities.WorkflowInspectionServices.CacheMetadata%2A> has been called then <xref:System.Activities.WorkflowInspectionServices.GetActivities%2A> is based on the existing metadata. Therefore, if tree changes have been made since the last call to <xref:System.Activities.WorkflowInspectionServices.CacheMetadata%2A>, <xref:System.Activities.WorkflowInspectionServices.GetActivities%2A> might give unexpected results. If changes have been made to the workflow after calling <xref:System.Activities.WorkflowInspectionServices.GetActivities%2A>, metadata can be re-cached by calling the <xref:System.Activities.Validation.ActivityValidationServices> <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A> method. Caching metadata is discussed in the next section.  
   
 ### Caching Metadata  

@@ -57,6 +57,6 @@ sr = New StreamReader(resp.GetResponseStream(), Encoding.ASCII)
 ```  
   
 ## See Also  
- [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)   
- [How to: Request a Web Page and Retrieve the Results as a Stream](../../../docs/framework/network-programming/how-to-request-a-web-page-and-retrieve-the-results-as-a-stream.md)   
+ [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)  
+ [How to: Request a Web Page and Retrieve the Results as a Stream](../../../docs/framework/network-programming/how-to-request-a-web-page-and-retrieve-the-results-as-a-stream.md)  
  [How to: Retrieve a Protocol-Specific WebResponse that Matches a WebRequest](../../../docs/framework/network-programming/how-to-retrieve-a-protocol-specific-webresponse-that-matches-a-webrequest.md)

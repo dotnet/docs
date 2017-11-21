@@ -41,6 +41,6 @@ This example shows how to perform join operations that are not possible with the
  [!code-csharp[csProgGuideLINQ#13](../../../samples/snippets/csharp/concepts/linq/how-to-perform-custom-join-operations_2.cs)]  
   
 ## See also  
- [LINQ query expressions](index.md)   
- [join clause](../language-reference/keywords/join-clause.md)   
+ [LINQ query expressions](index.md)  
+ [join clause](../language-reference/keywords/join-clause.md)  
  [Order the results of a join clause](order-the-results-of-a-join-clause.md)

@@ -68,8 +68,8 @@ The identity element allows a client developer to specify at design time the exp
 |[\<localIssuer>](../../../../../docs/framework/configure-apps/file-schema/wcf/localissuer.md)|Specifies a local Security Token Service (STS).|  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.IdentityElement>   
- <xref:System.ServiceModel.EndpointAddress>   
- <xref:System.ServiceModel.EndpointAddress.Identity%2A>   
- [Service Identity and Authentication](../../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)   
+ <xref:System.ServiceModel.Configuration.IdentityElement>  
+ <xref:System.ServiceModel.EndpointAddress>  
+ <xref:System.ServiceModel.EndpointAddress.Identity%2A>  
+ [Service Identity and Authentication](../../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)  
  [Endpoints: Addresses, Bindings, and Contracts](../../../../../docs/framework/wcf/feature-details/endpoints-addresses-bindings-and-contracts.md)

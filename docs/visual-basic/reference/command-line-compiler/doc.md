@@ -57,5 +57,5 @@ Processes documentation comments to an XML file.
  See [Documenting Your Code with XML](../../../visual-basic/programming-guide/program-structure/documenting-your-code-with-xml.md) for a sample.  
   
 ## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)   
+ [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
  [Documenting Your Code with XML](../../../visual-basic/programming-guide/program-structure/documenting-your-code-with-xml.md)

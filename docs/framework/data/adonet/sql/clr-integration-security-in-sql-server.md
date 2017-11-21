@@ -29,7 +29,7 @@ Microsoft SQL Server provides the integration of the common language runtime (CL
 |[CLR Integration Security](http://go.microsoft.com/fwlink/?LinkId=59998)|Discusses the security model for managed code executing inside of SQL Server.|  
   
 ## See Also  
- [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)   
- [Application Security Scenarios in SQL Server](../../../../../docs/framework/data/adonet/sql/application-security-scenarios-in-sql-server.md)   
- [SQL Server Common Language Runtime Integration](../../../../../docs/framework/data/adonet/sql/sql-server-common-language-runtime-integration.md)   
+ [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  
+ [Application Security Scenarios in SQL Server](../../../../../docs/framework/data/adonet/sql/application-security-scenarios-in-sql-server.md)  
+ [SQL Server Common Language Runtime Integration](../../../../../docs/framework/data/adonet/sql/sql-server-common-language-runtime-integration.md)  
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

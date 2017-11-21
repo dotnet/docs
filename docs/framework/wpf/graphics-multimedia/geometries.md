@@ -31,8 +31,8 @@ manager: "wpickett"
  [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/geometries-how-to-topics.md)  
   
 ## See Also  
- <xref:System.Windows.Media.Brushes>   
- <xref:System.Windows.Shapes.Shape>   
- [2D Graphics and Imaging](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)   
- [Shapes and Basic Drawing in WPF Overview](../../../../docs/framework/wpf/graphics-multimedia/shapes-and-basic-drawing-in-wpf-overview.md)   
+ <xref:System.Windows.Media.Brushes>  
+ <xref:System.Windows.Shapes.Shape>  
+ [2D Graphics and Imaging](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)  
+ [Shapes and Basic Drawing in WPF Overview](../../../../docs/framework/wpf/graphics-multimedia/shapes-and-basic-drawing-in-wpf-overview.md)  
  [Graphics and Multimedia](../../../../docs/framework/wpf/graphics-multimedia/index.md)

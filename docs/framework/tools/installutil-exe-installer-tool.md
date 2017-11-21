@@ -166,6 +166,6 @@ installutil /LogFile=myLog.InstallLog myAssembly.exe /LogFile=myTestLog.InstallL
 ```  
   
 ## See Also  
- <xref:System.Configuration.Install>   
- [Tools](../../../docs/framework/tools/index.md)   
+ <xref:System.Configuration.Install>  
+ [Tools](../../../docs/framework/tools/index.md)  
  [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

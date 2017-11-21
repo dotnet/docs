@@ -90,10 +90,10 @@ Events in the .NET Framework are based on the delegate model. The delegate model
 |[How to: Consume Events in a Web Forms Application](../../../docs/standard/events/how-to-consume-events-in-a-web-forms-application.md)|Shows how to handle an event that is raised by a Web Forms control.|  
   
 ## See Also  
- <xref:System.EventHandler>   
- <xref:System.EventHandler%601>   
- <xref:System.EventArgs>   
- <xref:System.Delegate>   
- [Events and routed events overview (Windows store apps)](http://go.microsoft.com/fwlink/?LinkId=261485)   
- [Events (Visual Basic)](../../visual-basic/programming-guide/language-features/events/index.md)   
+ <xref:System.EventHandler>  
+ <xref:System.EventHandler%601>  
+ <xref:System.EventArgs>  
+ <xref:System.Delegate>  
+ [Events and routed events overview (Windows store apps)](http://go.microsoft.com/fwlink/?LinkId=261485)  
+ [Events (Visual Basic)](../../visual-basic/programming-guide/language-features/events/index.md)  
  [Events (C# Programming Guide)](../../csharp/programming-guide/events/index.md)

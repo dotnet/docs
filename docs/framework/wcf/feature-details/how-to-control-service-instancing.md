@@ -37,7 +37,7 @@ Setting the instance mode of a service enables you to specify when a <xref:Syste
  [!code-vb[c_ControlServiceInstancing#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_controlserviceinstancing/vb/source.vb#2)]  
   
 ## See Also  
- <xref:System.ServiceModel.ServiceBehaviorAttribute>   
- <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A>   
- <xref:System.ServiceModel.InstanceContextMode>   
+ <xref:System.ServiceModel.ServiceBehaviorAttribute>  
+ <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A>  
+ <xref:System.ServiceModel.InstanceContextMode>  
  [Service: Behaviors Samples](http://msdn.microsoft.com/en-us/4e3c6513-a7ff-4b35-8dcf-b5506c6f39a7)

@@ -70,13 +70,13 @@ Defines the security settings of the [\<netPeerTcpBinding>](../../../../../docs/
  Security can be either message- or transport-specific.  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.PeerSecurityElement>   
- <xref:System.ServiceModel.NetPeerTcpBinding.Security%2A>   
- <xref:System.ServiceModel.Configuration.NetPeerTcpBindingElement.Security%2A>   
- <xref:System.ServiceModel.PeerSecuritySettings>   
- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)   
- [Selecting a Credential Type](../../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md)   
- [Bindings](../../../../../docs/framework/wcf/bindings.md)   
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)   
- [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/en-us/bd8b277b-932f-472f-a42a-b02bb5257dfb)   
+ <xref:System.ServiceModel.Configuration.PeerSecurityElement>  
+ <xref:System.ServiceModel.NetPeerTcpBinding.Security%2A>  
+ <xref:System.ServiceModel.Configuration.NetPeerTcpBindingElement.Security%2A>  
+ <xref:System.ServiceModel.PeerSecuritySettings>  
+ [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
+ [Selecting a Credential Type](../../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md)  
+ [Bindings](../../../../../docs/framework/wcf/bindings.md)  
+ [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
+ [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/en-us/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
  [\<binding>](../../../../../docs/framework/misc/binding.md)

@@ -173,13 +173,13 @@ public string MyToken;
 -   <xref:System.Xml.Serialization.XmlRootAttribute>  
   
 ## See Also  
- <xref:System.Xml.Serialization.XmlSerializer>   
- <xref:System.Runtime.Serialization.DataContractSerializer>   
- <xref:System.IO.FileStream>   
- [XML and SOAP Serialization](../../../docs/standard/serialization/xml-and-soap-serialization.md)   
- [Binary Serialization](../../../docs/standard/serialization/binary-serialization.md)   
- [Serialization](../../../docs/standard/serialization/index.md)   
- <xref:System.Xml.Serialization.XmlSerializer>   
- [Examples of XML Serialization](../../../docs/standard/serialization/examples-of-xml-serialization.md)   
- [How to: Serialize an Object](../../../docs/standard/serialization/how-to-serialize-an-object.md)   
+ <xref:System.Xml.Serialization.XmlSerializer>  
+ <xref:System.Runtime.Serialization.DataContractSerializer>  
+ <xref:System.IO.FileStream>  
+ [XML and SOAP Serialization](../../../docs/standard/serialization/xml-and-soap-serialization.md)  
+ [Binary Serialization](../../../docs/standard/serialization/binary-serialization.md)  
+ [Serialization](../../../docs/standard/serialization/index.md)  
+ <xref:System.Xml.Serialization.XmlSerializer>  
+ [Examples of XML Serialization](../../../docs/standard/serialization/examples-of-xml-serialization.md)  
+ [How to: Serialize an Object](../../../docs/standard/serialization/how-to-serialize-an-object.md)  
  [How to: Deserialize an Object](../../../docs/standard/serialization/how-to-deserialize-an-object.md)

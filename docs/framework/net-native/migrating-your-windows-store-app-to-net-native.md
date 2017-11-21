@@ -679,7 +679,7 @@ manager: "wpickett"
  Enabling [!INCLUDE[net_native](../../../includes/net-native-md.md)] on a Unit Test Library for a Windows Store apps project isn't supported and causes the project to fail to build.  
   
 ## See Also  
- [Getting Started](../../../docs/framework/net-native/getting-started-with-net-native.md)   
- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)   
- [.NET For Windows Store apps overview](http://msdn.microsoft.com/library/windows/apps/br230302.aspx)   
+ [Getting Started](../../../docs/framework/net-native/getting-started-with-net-native.md)  
+ [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)  
+ [.NET For Windows Store apps overview](http://msdn.microsoft.com/library/windows/apps/br230302.aspx)  
  [.NET Framework Support for Windows Store Apps and Windows Runtime](../../../docs/standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md)

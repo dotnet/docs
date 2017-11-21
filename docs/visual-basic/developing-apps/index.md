@@ -24,7 +24,7 @@ This section covers conceptual documentation for the Visual Basic language.
  Discusses a new feature called `My`, which provides access to information and default object instances that are related to an application and its run-time environment.  
   
  [Accessing Data in Visual Basic Applications](../../visual-basic/developing-apps/accessing-data.md)  
- Contains Help on accessing data in Visual Basic.   
+ Contains Help on accessing data in Visual Basic.  
   
  [Creating and Using Components in Visual Basic](../../visual-basic/developing-apps/creating-and-using-components.md)  
  Defines the term *component* and discusses how and when to create components.  

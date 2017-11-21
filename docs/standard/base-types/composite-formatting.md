@@ -159,13 +159,13 @@ The .NET Framework composite formatting feature takes a list of objects and a co
  [!code-vb[Formatting.Composite#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Composite/vb/Composite1.vb#6)]  
   
 ## See Also  
- <xref:System.Console.WriteLine%2A>   
- <xref:System.String.Format%2A?displayProperty=nameWithType>   
- [Formatting Types](../../../docs/standard/base-types/formatting-types.md)   
- [Standard Numeric Format Strings](../../../docs/standard/base-types/standard-numeric-format-strings.md)   
- [Custom Numeric Format Strings](../../../docs/standard/base-types/custom-numeric-format-strings.md)   
- [Standard Date and Time Format Strings](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)   
- [Custom Date and Time Format Strings](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)   
- [Standard TimeSpan Format Strings](../../../docs/standard/base-types/standard-timespan-format-strings.md)   
- [Custom TimeSpan Format Strings](../../../docs/standard/base-types/custom-timespan-format-strings.md)   
+ <xref:System.Console.WriteLine%2A>  
+ <xref:System.String.Format%2A?displayProperty=nameWithType>  
+ [Formatting Types](../../../docs/standard/base-types/formatting-types.md)  
+ [Standard Numeric Format Strings](../../../docs/standard/base-types/standard-numeric-format-strings.md)  
+ [Custom Numeric Format Strings](../../../docs/standard/base-types/custom-numeric-format-strings.md)  
+ [Standard Date and Time Format Strings](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)  
+ [Custom Date and Time Format Strings](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)  
+ [Standard TimeSpan Format Strings](../../../docs/standard/base-types/standard-timespan-format-strings.md)  
+ [Custom TimeSpan Format Strings](../../../docs/standard/base-types/custom-timespan-format-strings.md)  
  [Enumeration Format Strings](../../../docs/standard/base-types/enumeration-format-strings.md)

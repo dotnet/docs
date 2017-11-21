@@ -98,6 +98,6 @@ An important part of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] is the ability 
 |Learn more about Windows Forms security|[Security in Windows Forms Overview](https://msdn.microsoft.com/library/90k49ccb.aspx)|  
   
 ## See Also  
- <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase>   
- [Windows Forms Overview](https://msdn.microsoft.com/library/8bxxy49h.aspx)   
+ <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase>  
+ [Windows Forms Overview](https://msdn.microsoft.com/library/8bxxy49h.aspx)  
  [My.Forms Object](../../../visual-basic/language-reference/objects/my-forms-object.md)

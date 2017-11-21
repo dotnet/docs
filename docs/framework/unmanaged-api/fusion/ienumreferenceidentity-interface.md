@@ -47,5 +47,5 @@ Serves as an enumerator for a collection of `IReferenceIdentity` objects.
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See Also  
- [Fusion Interfaces](../../../../docs/framework/unmanaged-api/fusion/fusion-interfaces.md)   
+ [Fusion Interfaces](../../../../docs/framework/unmanaged-api/fusion/fusion-interfaces.md)  
  [IReferenceIdentity Interface](../../../../docs/framework/unmanaged-api/fusion/ireferenceidentity-interface.md)

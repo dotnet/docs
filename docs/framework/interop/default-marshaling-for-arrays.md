@@ -377,7 +377,7 @@ public struct MyStruct {
 ```  
   
 ## See Also  
- [Default Marshaling Behavior](../../../docs/framework/interop/default-marshaling-behavior.md)   
- [Blittable and Non-Blittable Types](../../../docs/framework/interop/blittable-and-non-blittable-types.md)   
- [Directional Attributes](http://msdn.microsoft.com/en-us/241ac5b5-928e-4969-8f58-1dbc048f9ea2)   
+ [Default Marshaling Behavior](../../../docs/framework/interop/default-marshaling-behavior.md)  
+ [Blittable and Non-Blittable Types](../../../docs/framework/interop/blittable-and-non-blittable-types.md)  
+ [Directional Attributes](http://msdn.microsoft.com/en-us/241ac5b5-928e-4969-8f58-1dbc048f9ea2)  
  [Copying and Pinning](../../../docs/framework/interop/copying-and-pinning.md)

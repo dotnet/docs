@@ -26,6 +26,6 @@ The following example uses the `$` character to define an interpolated string.
 For more information on interpolated strings, see the [Interpolated Strings](../keywords/interpolated-strings.md) topic.
 
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
  [C# Special Characters](../../../csharp/language-reference/tokens/index.md)

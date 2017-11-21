@@ -31,5 +31,5 @@ The Windows Forms <xref:System.Windows.Forms.OpenFileDialog> component is a pre-
  When it is added to a form, the <xref:System.Windows.Forms.OpenFileDialog> component appears in the tray at the bottom of the Windows Forms Designer.  
   
 ## See Also  
- <xref:System.Windows.Forms.OpenFileDialog>   
+ <xref:System.Windows.Forms.OpenFileDialog>  
  [OpenFileDialog Component](../../../../docs/framework/winforms/controls/openfiledialog-component-windows-forms.md)

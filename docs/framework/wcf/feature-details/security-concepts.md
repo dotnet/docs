@@ -43,6 +43,6 @@ This section briefly explains the concepts associated with [!INCLUDE[indigo1](..
  [Extending Security](../../../../docs/framework/wcf/extending/extending-security.md)  
   
 ## See Also  
- [Security](../../../../docs/framework/wcf/feature-details/security.md)   
- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)   
+ [Security](../../../../docs/framework/wcf/feature-details/security.md)  
+ [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
  [Security Model for Windows Server App Fabric](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

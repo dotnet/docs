@@ -22,6 +22,6 @@ The specified transaction for the specified operation remains attached to the In
  Traced when a ServiceOperation finishes but the transaction is not set to complete.  
   
 ## See Also  
- [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)   
- [Using Tracing to Troubleshoot Your Application](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)   
+ [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)  
+ [Using Tracing to Troubleshoot Your Application](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)  
  [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)

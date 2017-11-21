@@ -174,11 +174,11 @@ Interaction between application and TextFormatter
  For more details on creating custom text layout, see [Advanced Text Formatting](../../../../docs/framework/wpf/advanced/advanced-text-formatting.md).  
   
 ## See Also  
- <xref:System.Windows.Media.FormattedText>   
- <xref:System.Windows.Media.TextFormatting.TextFormatter>   
- [ClearType Overview](../../../../docs/framework/wpf/advanced/cleartype-overview.md)   
- [OpenType Font Features](../../../../docs/framework/wpf/advanced/opentype-font-features.md)   
- [Drawing Formatted Text](../../../../docs/framework/wpf/advanced/drawing-formatted-text.md)   
- [Advanced Text Formatting](../../../../docs/framework/wpf/advanced/advanced-text-formatting.md)   
- [Text](../../../../docs/framework/wpf/advanced/optimizing-performance-text.md)   
+ <xref:System.Windows.Media.FormattedText>  
+ <xref:System.Windows.Media.TextFormatting.TextFormatter>  
+ [ClearType Overview](../../../../docs/framework/wpf/advanced/cleartype-overview.md)  
+ [OpenType Font Features](../../../../docs/framework/wpf/advanced/opentype-font-features.md)  
+ [Drawing Formatted Text](../../../../docs/framework/wpf/advanced/drawing-formatted-text.md)  
+ [Advanced Text Formatting](../../../../docs/framework/wpf/advanced/advanced-text-formatting.md)  
+ [Text](../../../../docs/framework/wpf/advanced/optimizing-performance-text.md)  
  [Microsoft Typography](http://www.microsoft.com/typography/default.mspx)

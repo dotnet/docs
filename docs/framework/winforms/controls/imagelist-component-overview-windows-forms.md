@@ -33,5 +33,5 @@ The Windows Forms <xref:System.Windows.Forms.ImageList> component is used to sto
  If you are using [!INCLUDE[vsprvslong](../../../../includes/vsprvslong-md.md)], you have access to a large library of standard images that you can use in your applications.  
   
 ## See Also  
- <xref:System.Windows.Forms.ImageList>   
+ <xref:System.Windows.Forms.ImageList>  
  [How to: Add or Remove Images with the Windows Forms ImageList Component](../../../../docs/framework/winforms/controls/how-to-add-or-remove-images-with-the-windows-forms-imagelist-component.md)

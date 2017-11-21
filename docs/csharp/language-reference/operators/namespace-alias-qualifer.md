@@ -33,9 +33,9 @@ The namespace alias qualifier (`::`) is used to look up identifiers. It is alway
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [C# Operators](../../../csharp/language-reference/operators/index.md)   
- [Namespace Keywords](../../../csharp/language-reference/keywords/namespace-keywords.md)   
- [. Operator](../../../csharp/language-reference/operators/member-access-operator.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [C# Operators](../../../csharp/language-reference/operators/index.md)  
+ [Namespace Keywords](../../../csharp/language-reference/keywords/namespace-keywords.md)  
+ [. Operator](../../../csharp/language-reference/operators/member-access-operator.md)  
  [extern alias](../../../csharp/language-reference/keywords/extern-alias.md)

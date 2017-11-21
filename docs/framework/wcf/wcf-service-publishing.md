@@ -77,6 +77,6 @@ manager: "erikre"
  Publishing to local IIS requires administrator privilege, because IIS requires running in Administrator account. If a user without administrator privilege opens [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] Service Publishing, IIS is not available as a target location. Publishing to File System, or FTP Site works without administrator privilege.  
   
 ## See Also  
- [WCF Visual Studio Templates](../../../docs/framework/wcf/wcf-vs-templates.md)   
- [WCF Service Host (WcfSvcHost.exe)](../../../docs/framework/wcf/wcf-service-host-wcfsvchost-exe.md)   
+ [WCF Visual Studio Templates](../../../docs/framework/wcf/wcf-vs-templates.md)  
+ [WCF Service Host (WcfSvcHost.exe)](../../../docs/framework/wcf/wcf-service-host-wcfsvchost-exe.md)  
  [WCF Test Client (WcfTestClient.exe)](../../../docs/framework/wcf/wcf-test-client-wcftestclient-exe.md)

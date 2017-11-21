@@ -55,12 +55,12 @@ Assemblies form the fundamental unit of deployment, version control, reuse, acti
 >  To build an assembly in Visual Studio, on the **Build** menu choose **Build**.  
   
 ## See Also  
- [C# Programming Guide](../../../../csharp/programming-guide/index.md)   
- [Assemblies in the Common Language Runtime](https://msdn.microsoft.com/library/k3677y81)   
- [Friend Assemblies (C#)](friend-assemblies.md)   
- [How to: Share an Assembly with Other Applications (C#)](how-to-share-an-assembly-with-other-applications.md)   
- [How to: Load and Unload Assemblies (C#)](how-to-load-and-unload-assemblies.md)   
- [How to: Determine If a File Is an Assembly (C#)](how-to-determine-if-a-file-is-an-assembly.md)   
- [How to: Create and Use Assemblies Using the Command Line (C#)](how-to-create-and-use-assemblies-using-the-command-line.md)   
- [Walkthrough: Embedding Types from Managed Assemblies in Visual Studio (C#)](walkthrough-embedding-types-from-managed-assemblies-in-visual-studio.md)   
+ [C# Programming Guide](../../../../csharp/programming-guide/index.md)  
+ [Assemblies in the Common Language Runtime](https://msdn.microsoft.com/library/k3677y81)  
+ [Friend Assemblies (C#)](friend-assemblies.md)  
+ [How to: Share an Assembly with Other Applications (C#)](how-to-share-an-assembly-with-other-applications.md)  
+ [How to: Load and Unload Assemblies (C#)](how-to-load-and-unload-assemblies.md)  
+ [How to: Determine If a File Is an Assembly (C#)](how-to-determine-if-a-file-is-an-assembly.md)  
+ [How to: Create and Use Assemblies Using the Command Line (C#)](how-to-create-and-use-assemblies-using-the-command-line.md)  
+ [Walkthrough: Embedding Types from Managed Assemblies in Visual Studio (C#)](walkthrough-embedding-types-from-managed-assemblies-in-visual-studio.md)  
  [Walkthrough: Embedding Type Information from Microsoft Office Assemblies in Visual Studio (C#)](walkthrough-embedding-type-information-from-microsoft-office-assemblies.md)

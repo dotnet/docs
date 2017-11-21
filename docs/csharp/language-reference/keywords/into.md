@@ -28,6 +28,6 @@ The `into` contextual keyword can be used to create a temporary identifier to st
  For an example of the use of `into` in a `join` clause, see [join clause](../../../csharp/language-reference/keywords/join-clause.md).  
   
 ## See Also  
- [Query Keywords (LINQ)](../../../csharp/language-reference/keywords/query-keywords.md)   
- [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)   
+ [Query Keywords (LINQ)](../../../csharp/language-reference/keywords/query-keywords.md)  
+ [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)  
  [group clause](../../../csharp/language-reference/keywords/group-clause.md)

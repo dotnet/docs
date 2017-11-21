@@ -36,10 +36,10 @@ int* p = &number; //address-of operator &
  [!code-csharp[csProgGuidePointers#8](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/how-to-obtain-the-address-of-a-variable_2.cs)]  
   
 ## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Pointer Expressions](../../../csharp/programming-guide/unsafe-code-pointers/pointer-expressions.md)   
- [Pointer types](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md)   
- [Types](../../../csharp/language-reference/keywords/types.md)   
- [unsafe](../../../csharp/language-reference/keywords/unsafe.md)   
- [fixed Statement](../../../csharp/language-reference/keywords/fixed-statement.md)   
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Pointer Expressions](../../../csharp/programming-guide/unsafe-code-pointers/pointer-expressions.md)  
+ [Pointer types](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md)  
+ [Types](../../../csharp/language-reference/keywords/types.md)  
+ [unsafe](../../../csharp/language-reference/keywords/unsafe.md)  
+ [fixed Statement](../../../csharp/language-reference/keywords/fixed-statement.md)  
  [stackalloc](../../../csharp/language-reference/keywords/stackalloc.md)

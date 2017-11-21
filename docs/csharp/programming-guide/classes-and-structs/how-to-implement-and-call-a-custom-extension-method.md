@@ -37,18 +37,18 @@ This topic shows how to implement your own extension methods for any type in the
  [!code-csharp[csProgGuideExtensionMethods#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-implement-and-call-a-custom-extension-method_1.cs)]  
   
 ## Compiling the Code  
- To run this code, copy and paste it into a Visual C# console application project that has been created in [!INCLUDE[vs_current_short](~/includes/vs-current-short-md.md)]. By default, this project targets version 3.5 of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], and it has a reference to System.Core.dll and a `using` directive for System.Linq. If one or more of these requirements are missing from the project, you can add them manually.   
+ To run this code, copy and paste it into a Visual C# console application project that has been created in [!INCLUDE[vs_current_short](~/includes/vs-current-short-md.md)]. By default, this project targets version 3.5 of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], and it has a reference to System.Core.dll and a `using` directive for System.Linq. If one or more of these requirements are missing from the project, you can add them manually.  
   
 ## .NET Framework Security  
  Extension methods present no specific security vulnerabilities. They can never be used to impersonate existing methods on a type, because all name collisions are resolved in favor of the instance or static method defined by the type itself. Extension methods cannot access any private data in the extended class.  
   
 ## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Extension Methods](../../../csharp/programming-guide/classes-and-structs/extension-methods.md)   
- [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)   
- [Static Classes and Static Class Members](../../../csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members.md)   
- [protected](../../../csharp/language-reference/keywords/protected.md)   
- [internal](../../../csharp/language-reference/keywords/internal.md)   
- [public](../../../csharp/language-reference/keywords/public.md)   
- [this](../../../csharp/language-reference/keywords/this.md)   
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Extension Methods](../../../csharp/programming-guide/classes-and-structs/extension-methods.md)  
+ [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)  
+ [Static Classes and Static Class Members](../../../csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members.md)  
+ [protected](../../../csharp/language-reference/keywords/protected.md)  
+ [internal](../../../csharp/language-reference/keywords/internal.md)  
+ [public](../../../csharp/language-reference/keywords/public.md)  
+ [this](../../../csharp/language-reference/keywords/this.md)  
  [namespace](../../../csharp/language-reference/keywords/namespace.md)

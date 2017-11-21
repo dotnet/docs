@@ -44,7 +44,7 @@ if((bool)test) //now this cast is safe
 ```  
   
 ## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Literal Keywords](../../../csharp/language-reference/keywords/literal-keywords.md)   
- [Nullable Types](../../../csharp/programming-guide/nullable-types/index.md)   
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Literal Keywords](../../../csharp/language-reference/keywords/literal-keywords.md)  
+ [Nullable Types](../../../csharp/programming-guide/nullable-types/index.md)  
  [?? Operator](../../../csharp/language-reference/operators/null-conditional-operator.md)

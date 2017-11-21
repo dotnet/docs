@@ -86,5 +86,5 @@ textBox1.Font = new System.Drawing.Font(this.Font, textBox1.Font.Style);
 ```  
   
 ## See Also  
- [Globalizing Windows Forms](../../../../docs/framework/winforms/advanced/globalizing-windows-forms.md)   
+ [Globalizing Windows Forms](../../../../docs/framework/winforms/advanced/globalizing-windows-forms.md)  
  [Using Fonts and Text](../../../../docs/framework/winforms/advanced/using-fonts-and-text.md)

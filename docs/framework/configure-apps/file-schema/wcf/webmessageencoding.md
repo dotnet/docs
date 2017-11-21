@@ -82,13 +82,13 @@ writeEncoding="UnicodeFffeTextEncoding/Utf16TextEncoding/Utf8TextEncoding" />
 ```  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.WebMessageEncodingElement>   
- <xref:System.ServiceModel.Channels.CustomBinding>   
- <xref:System.ServiceModel.Channels.MessageEncodingBindingElement>   
- <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement>   
- [Message Encoding](../../../../../docs/framework/configure-apps/file-schema/wcf/message-encoding.md)   
- [Choosing a Message Encoder](../../../../../docs/framework/wcf/feature-details/choosing-a-message-encoder.md)   
- [Bindings](../../../../../docs/framework/wcf/bindings.md)   
- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)   
- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)   
+ <xref:System.ServiceModel.Configuration.WebMessageEncodingElement>  
+ <xref:System.ServiceModel.Channels.CustomBinding>  
+ <xref:System.ServiceModel.Channels.MessageEncodingBindingElement>  
+ <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement>  
+ [Message Encoding](../../../../../docs/framework/configure-apps/file-schema/wcf/message-encoding.md)  
+ [Choosing a Message Encoder](../../../../../docs/framework/wcf/feature-details/choosing-a-message-encoder.md)  
+ [Bindings](../../../../../docs/framework/wcf/bindings.md)  
+ [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)  
+ [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)  
  [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)

@@ -47,5 +47,5 @@ This option causes the compiler to reserve space in the output file so that a di
  For information on how to set this compiler option programmatically, see <xref:VSLangProj80.ProjectProperties3.DelaySign%2A>.  
   
 ## See Also  
- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
+ [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
  [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

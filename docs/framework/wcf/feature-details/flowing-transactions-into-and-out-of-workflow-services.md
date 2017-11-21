@@ -319,6 +319,6 @@ Workflow services and clients can participate in transactions.  For a service op
     ```  
   
 ## See Also  
- [Workflow Services](../../../../docs/framework/wcf/feature-details/workflow-services.md)   
- [Windows Communication Foundation Transactions Overview](../../../../docs/framework/wcf/feature-details/transactions-overview.md)   
+ [Workflow Services](../../../../docs/framework/wcf/feature-details/workflow-services.md)  
+ [Windows Communication Foundation Transactions Overview](../../../../docs/framework/wcf/feature-details/transactions-overview.md)  
  [Use of TransactedReceiveScope](../../../../docs/framework/windows-workflow-foundation/samples/use-of-transactedreceivescope.md)

@@ -31,5 +31,5 @@ This example converts a hexadecimal string to an integer using the <xref:System.
      [!code-vb[VbVbalrStrings#62](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/how-to-convert-hexadecimal-strings-to-numbers_1.vb)]  
   
 ## See Also  
- <xref:Microsoft.VisualBasic.Conversion.Hex%2A>   
+ <xref:Microsoft.VisualBasic.Conversion.Hex%2A>  
  <xref:System.Convert.ToInt32%2A>

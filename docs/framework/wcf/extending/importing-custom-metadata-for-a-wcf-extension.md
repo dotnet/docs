@@ -55,6 +55,6 @@ In [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], metadata import is t
 >  Invalid or improper metadata can be passed to the importer. Ensure that custom importers are robust to all forms of XML.  
   
 ## See Also  
- [How to: Import Custom WSDL](../../../../docs/framework/wcf/extending/how-to-import-custom-wsdl.md)   
- [How to: Import Custom Policy Assertions](../../../../docs/framework/wcf/extending/how-to-import-custom-policy-assertions.md)   
+ [How to: Import Custom WSDL](../../../../docs/framework/wcf/extending/how-to-import-custom-wsdl.md)  
+ [How to: Import Custom Policy Assertions](../../../../docs/framework/wcf/extending/how-to-import-custom-policy-assertions.md)  
  [How to: Write an Extension for the ServiceContractGenerator](../../../../docs/framework/wcf/extending/how-to-write-an-extension-for-the-servicecontractgenerator.md)

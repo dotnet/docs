@@ -73,6 +73,6 @@ public int this [int index]   // Indexer declaration
 -   Set the accessibility of the `get` and [set](../../../csharp/language-reference/keywords/set.md) accessors to be as restrictive as is reasonable. This is important for the `set` accessor in particular. For more information, see [Restricting Accessor Accessibility](../../../csharp/programming-guide/classes-and-structs/restricting-accessor-accessibility.md).  
   
 ## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Indexers](../../../csharp/programming-guide/indexers/index.md)   
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Indexers](../../../csharp/programming-guide/indexers/index.md)  
  [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)

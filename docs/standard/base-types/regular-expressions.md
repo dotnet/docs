@@ -55,7 +55,7 @@ Regular expressions provide a powerful, flexible, and efficient method for proce
   
  For more information about the regular expression language, see [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md) or download and print one of these brochures:  
   
- [Quick Reference in Word (.docx) format](http://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.docx)   
+ [Quick Reference in Word (.docx) format](http://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.docx)  
  [Quick Reference in PDF (.pdf) format](http://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.pdf)  
   
 ## Regular Expression Examples  
@@ -121,7 +121,7 @@ Regular expressions provide a powerful, flexible, and efficient method for proce
 |[Regular Expression Examples](../../../docs/standard/base-types/regular-expression-examples.md)|Provides code examples that illustrate typical uses of regular expressions.|  
   
 ## Reference  
- <xref:System.Text.RegularExpressions?displayProperty=nameWithType>   
- <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType>   
- [Regular Expressions - Quick Reference (download in Word format)](http://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.docx)   
+ <xref:System.Text.RegularExpressions?displayProperty=nameWithType>  
+ <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType>  
+ [Regular Expressions - Quick Reference (download in Word format)](http://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.docx)  
  [Regular Expressions - Quick Reference (download in PDF format)](http://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.pdf)

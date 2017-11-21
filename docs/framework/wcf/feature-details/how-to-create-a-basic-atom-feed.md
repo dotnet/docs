@@ -103,5 +103,5 @@ manager: "erikre"
  When compiling the preceding code, reference System.ServiceModel.dll and System.ServiceModel.Web.dll.  
   
 ## See Also  
- <xref:System.ServiceModel.WebHttpBinding>   
+ <xref:System.ServiceModel.WebHttpBinding>  
  <xref:System.ServiceModel.Web.WebGetAttribute>

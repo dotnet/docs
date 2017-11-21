@@ -147,13 +147,13 @@ This topic describes how to use the [!INCLUDE[vsprvs](../../../includes/vsprvs-m
     ```  
   
 ## See Also  
- [Client Application Services](../../../docs/framework/common-client-technologies/client-application-services.md)   
- [Client Application Services Overview](../../../docs/framework/common-client-technologies/client-application-services-overview.md)   
- [Services Page, Project Designer](https://msdn.microsoft.com/library/bb398109)   
- [Advanced Settings for Services Dialog Box](/visualstudio/ide/reference/advanced-settings-for-services-dialog-box)   
- [How to: Implement User Login with Client Application Services](../../../docs/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services.md)   
- [Walkthrough: Using Client Application Services](../../../docs/framework/common-client-technologies/walkthrough-using-client-application-services.md)   
- [Implementing a Membership Provider](http://msdn.microsoft.com/library/d8658b8e-c962-4f64-95e1-4acce35e4582)   
- [Implementing a Role Provider](http://msdn.microsoft.com/library/851671ce-bf9b-43f2-aba4-bc9d28b11c7d)   
- [Application Settings Architecture](../../../docs/framework/winforms/advanced/application-settings-architecture.md)   
+ [Client Application Services](../../../docs/framework/common-client-technologies/client-application-services.md)  
+ [Client Application Services Overview](../../../docs/framework/common-client-technologies/client-application-services-overview.md)  
+ [Services Page, Project Designer](https://msdn.microsoft.com/library/bb398109)  
+ [Advanced Settings for Services Dialog Box](/visualstudio/ide/reference/advanced-settings-for-services-dialog-box)  
+ [How to: Implement User Login with Client Application Services](../../../docs/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services.md)  
+ [Walkthrough: Using Client Application Services](../../../docs/framework/common-client-technologies/walkthrough-using-client-application-services.md)  
+ [Implementing a Membership Provider](http://msdn.microsoft.com/library/d8658b8e-c962-4f64-95e1-4acce35e4582)  
+ [Implementing a Role Provider](http://msdn.microsoft.com/library/851671ce-bf9b-43f2-aba4-bc9d28b11c7d)  
+ [Application Settings Architecture](../../../docs/framework/winforms/advanced/application-settings-architecture.md)  
  [Creating and Configuring the Application Services Database for SQL Server](http://msdn.microsoft.com/library/ab894e83-7e2f-4af8-a116-b1bff8f815b2)

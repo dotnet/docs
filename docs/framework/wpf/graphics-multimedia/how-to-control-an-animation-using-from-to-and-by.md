@@ -44,6 +44,6 @@ A "From/To/By" or "basic animation" creates a transition between two target valu
  [!code-xaml[BasicAnimations_snippet#AnimationTargetValuesWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/BasicAnimations_snippet/CS/AnimationTargetValuesExample.xaml#animationtargetvalueswholepage)]  
   
 ## See Also  
- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)   
- [Key-Frame Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)   
+ [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
+ [Key-Frame Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)  
  [From, To, and By Animation Target Values Sample](http://go.microsoft.com/fwlink/?LinkID=159988)

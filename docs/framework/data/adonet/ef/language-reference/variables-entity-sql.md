@@ -27,6 +27,6 @@ from LOB.customers as c
 ```  
   
 ## See Also  
- [Identifiers](../../../../../../docs/framework/data/adonet/ef/language-reference/identifiers-entity-sql.md)   
- [Parameters](../../../../../../docs/framework/data/adonet/ef/language-reference/parameters-entity-sql.md)   
+ [Identifiers](../../../../../../docs/framework/data/adonet/ef/language-reference/identifiers-entity-sql.md)  
+ [Parameters](../../../../../../docs/framework/data/adonet/ef/language-reference/parameters-entity-sql.md)  
  [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)

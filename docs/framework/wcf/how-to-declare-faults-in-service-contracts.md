@@ -51,5 +51,5 @@ In managed code, exceptions are thrown when error conditions occur. In [!INCLUDE
  [!code-vb[FaultContractAttribute#1](../../../samples/snippets/visualbasic/VS_Snippets_CFX/faultcontractattribute/vb/services.vb#1)]  
   
 ## See Also  
- <xref:System.ServiceModel.FaultContractAttribute?displayProperty=nameWithType>   
+ <xref:System.ServiceModel.FaultContractAttribute?displayProperty=nameWithType>  
  <xref:System.ServiceModel.FaultException%601?displayProperty=nameWithType>

@@ -29,8 +29,8 @@ In a query expression, it is sometimes useful to store the result of a sub-expre
  [!code-csharp[cscsrefQueryKeywords#28](../../../csharp/language-reference/keywords/codesnippet/CSharp/let-clause_1.cs)]  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [Query Keywords (LINQ)](../../../csharp/language-reference/keywords/query-keywords.md)   
- [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)   
- [Getting Started with LINQ in C#](../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [Query Keywords (LINQ)](../../../csharp/language-reference/keywords/query-keywords.md)  
+ [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)  
+ [Getting Started with LINQ in C#](../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md)  
  [How to: Handle Exceptions in Query Expressions](../../../csharp/programming-guide/linq-query-expressions/how-to-handle-exceptions-in-query-expressions.md)

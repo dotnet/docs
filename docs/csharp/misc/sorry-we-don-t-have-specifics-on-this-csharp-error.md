@@ -909,7 +909,7 @@ We’re sorry, but we don’t have any specific information about this error. Yo
  [Additional Resources for Visual C# Programmers](../../csharp/getting-started/additional-resources.md)  
   
 ## See Also  
- [C# Programming Guide](../../csharp/programming-guide/index.md)   
- [C# Reference](../../csharp/language-reference/index.md)   
- [Talk to Us](/visualstudio/ide/talk-to-us)   
+ [C# Programming Guide](../../csharp/programming-guide/index.md)  
+ [C# Reference](../../csharp/language-reference/index.md)  
+ [Talk to Us](/visualstudio/ide/talk-to-us)  
  [Talk to Us](/visualstudio/ide/talk-to-us)

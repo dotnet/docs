@@ -97,7 +97,7 @@ Configures the <xref:System.IdentityModel.Services.WSFederationAuthenticationMod
 ```  
   
 ## See Also  
- <xref:System.IdentityModel.Services.WSFederationAuthenticationModule>   
- <xref:System.IdentityModel.Services.SessionAuthenticationModule>   
- <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration%2A?displayProperty=nameWithType>   
+ <xref:System.IdentityModel.Services.WSFederationAuthenticationModule>  
+ <xref:System.IdentityModel.Services.SessionAuthenticationModule>  
+ <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration%2A?displayProperty=nameWithType>  
  [\<identityConfiguration>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/identityconfiguration.md)

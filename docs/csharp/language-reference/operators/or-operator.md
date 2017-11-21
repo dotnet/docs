@@ -26,6 +26,6 @@ Binary `|` operators are predefined for the integral types and `bool`. For integ
  [!code-csharp[csRefOperators#31](../../../csharp/language-reference/operators/codesnippet/CSharp/or-operator_1.cs)]  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
  [C# Operators](../../../csharp/language-reference/operators/index.md)

@@ -37,6 +37,6 @@ join...on new {Name = o.CustomerName, ID = o.CustID} equals
  Composite keys can be also used in a `group` clause.  
 
 ## See also  
- [LINQ query expressions](index.md)   
- [join clause](../language-reference/keywords/join-clause.md)   
+ [LINQ query expressions](index.md)  
+ [join clause](../language-reference/keywords/join-clause.md)  
  [group clause](../language-reference/keywords/group-clause.md)

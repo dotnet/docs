@@ -46,7 +46,7 @@ The subset of [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] features s
  [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] can be used to communicate with remote servers from within partially trusted applications deployed by either [ClickOnce Deployment](http://go.microsoft.com/fwlink/?LinkId=83712) or XBAP. The Internet Zone permission set includes <xref:System.Net.WebPermission> for the originating host, which allows these applications to communicate with their origin server using any of the supported [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] bindings described in [Partial Trust Feature Compatibility](../../../../docs/framework/wcf/feature-details/partial-trust-feature-compatibility.md).  
   
 ## See Also  
- [Code Access Security](http://go.microsoft.com/fwlink/?LinkId=83717)   
- [Windows Presentation Foundation Browser-Hosted Applications Overview](http://go.microsoft.com/fwlink/?LinkId=98397)   
- [Partial Trust](../../../../docs/framework/wcf/feature-details/partial-trust.md)   
+ [Code Access Security](http://go.microsoft.com/fwlink/?LinkId=83717)  
+ [Windows Presentation Foundation Browser-Hosted Applications Overview](http://go.microsoft.com/fwlink/?LinkId=98397)  
+ [Partial Trust](../../../../docs/framework/wcf/feature-details/partial-trust.md)  
  [ASP.Net Medium Trust](http://go.microsoft.com/fwlink/?LinkId=69328)

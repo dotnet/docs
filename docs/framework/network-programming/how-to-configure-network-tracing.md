@@ -101,7 +101,7 @@ The application or computer configuration file holds the settings that determine
 |`Tracemode`|Optional <xref:System.String> attribute. Set to `includehex` to show protocol traces in hexadecimal and text format. Set to `protocolonly` to show only text. The default value is `includehex`.<br /><br /> This attribute must be set on the \<switches> element as shown in the example. An exception is thrown if this attribute is set on an element under the \<source> element.|  
   
 ## See Also  
- [Interpreting Network Tracing](../../../docs/framework/network-programming/interpreting-network-tracing.md)   
- [Network Tracing in the .NET Framework](../../../docs/framework/network-programming/network-tracing.md)   
- [Enabling Network Tracing](../../../docs/framework/network-programming/enabling-network-tracing.md)   
+ [Interpreting Network Tracing](../../../docs/framework/network-programming/interpreting-network-tracing.md)  
+ [Network Tracing in the .NET Framework](../../../docs/framework/network-programming/network-tracing.md)  
+ [Enabling Network Tracing](../../../docs/framework/network-programming/enabling-network-tracing.md)  
  [Introduction to Instrumentation and Tracing](http://msdn.microsoft.com/en-us/e924e57c-33cf-4b0e-9e7f-a45d13e38f2c)

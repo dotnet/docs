@@ -62,5 +62,5 @@ A configuration element for creating a custom binding that enables a client appl
 |[\<binding>](../../../../../docs/framework/misc/binding.md)|Defines all binding capabilities of the custom binding.|  
   
 ## See Also  
- <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement>   
+ <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement>  
  <xref:System.ServiceModel.Discovery.Configuration.DiscoveryClientElement>

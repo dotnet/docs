@@ -117,6 +117,6 @@ keyObject
  `x:Key` for Silverlight is documented separately. For more information, see [XAML Namespace (x:) Language Features (Silverlight)](http://go.microsoft.com/fwlink/?LinkId=199081).  
   
 ## See Also  
- [XAML Resources](../../../docs/framework/wpf/advanced/xaml-resources.md)   
- [Resources and Code](../../../docs/framework/wpf/advanced/resources-and-code.md)   
+ [XAML Resources](../../../docs/framework/wpf/advanced/xaml-resources.md)  
+ [Resources and Code](../../../docs/framework/wpf/advanced/resources-and-code.md)  
  [StaticResource Markup Extension](../../../docs/framework/wpf/advanced/staticresource-markup-extension.md)

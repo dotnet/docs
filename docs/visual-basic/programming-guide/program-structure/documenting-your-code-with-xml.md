@@ -51,5 +51,5 @@ In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], you can document your code using
 -   [XML Tools in Visual Studio](/visualstudio/xml-tools/xml-tools-in-visual-studio)  
   
 ## See Also  
- [Developing Applications with Visual Basic](../../../visual-basic/developing-apps/index.md)   
+ [Developing Applications with Visual Basic](../../../visual-basic/developing-apps/index.md)  
  [Visual Basic Programming Guide](../../../visual-basic/programming-guide/index.md)

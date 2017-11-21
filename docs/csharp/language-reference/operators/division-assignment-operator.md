@@ -39,6 +39,6 @@ x = x / y
  [!code-csharp[csRefOperators#5](codesnippet/CSharp/division-assignment-operator_1.cs)]  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
  [C# Operators](../../../csharp/language-reference/operators/index.md)

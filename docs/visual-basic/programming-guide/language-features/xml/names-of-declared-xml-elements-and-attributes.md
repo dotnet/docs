@@ -50,5 +50,5 @@ This topic provides [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] guidelines for n
  When creating an XML element literal, you can specify the XML namespace prefix for the element name. For more information, see [XML Element Literal](../../../../visual-basic/language-reference/xml-literals/xml-element-literal.md).  
   
 ## See Also  
- [Creating XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)   
+ [Creating XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)  
  [XML Element Literal](../../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)

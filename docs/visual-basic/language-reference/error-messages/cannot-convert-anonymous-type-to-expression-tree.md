@@ -50,6 +50,6 @@ End Module
     ```  
   
 ## See Also  
- [Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)   
- [Expression Trees](http://msdn.microsoft.com/library/fb1d3ed8-d5b0-4211-a71f-dd271529294b)   
+ [Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)  
+ [Expression Trees](http://msdn.microsoft.com/library/fb1d3ed8-d5b0-4211-a71f-dd271529294b)  
  [How to: Use Expression Trees to Build Dynamic Queries](http://msdn.microsoft.com/library/1e37e0cc-eef3-48bb-8b69-3adabf322735)

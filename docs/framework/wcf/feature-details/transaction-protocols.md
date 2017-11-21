@@ -185,7 +185,7 @@ manager: "erikre"
 </a:ReplyTo>   
 <a:To>https://...</a:To>   
 <wsse:Security>  
- <u:Timestamp>   
+ <u:Timestamp>  
 <wsu:Created>2005-12-15T23:36:09.921Z</u:Created>  
 <wsu:Expires>2005-12-15T23:41:09.921Z</u:Expires>  
 </u:Timestamp>   
@@ -195,7 +195,7 @@ manager: "erikre"
 <wscoor:CreateCoordinationContext>  
 <wscoor:CoordinationType>...</wscoor:CoordinationType>  
 </wscoor:CreateCoordinationContext>  
- </s:Body>   
+ </s:Body>  
 </s11:Envelope>  
 ```  
   

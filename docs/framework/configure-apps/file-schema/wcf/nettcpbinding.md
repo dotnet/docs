@@ -149,9 +149,9 @@ algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes
 ```  
   
 ## See Also  
- <xref:System.ServiceModel.NetTcpBinding>   
- <xref:System.ServiceModel.Configuration.NetTcpBindingElement>   
- [Bindings](../../../../../docs/framework/wcf/bindings.md)   
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)   
- [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/en-us/bd8b277b-932f-472f-a42a-b02bb5257dfb)   
+ <xref:System.ServiceModel.NetTcpBinding>  
+ <xref:System.ServiceModel.Configuration.NetTcpBindingElement>  
+ [Bindings](../../../../../docs/framework/wcf/bindings.md)  
+ [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
+ [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/en-us/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
  [\<binding>](../../../../../docs/framework/misc/binding.md)

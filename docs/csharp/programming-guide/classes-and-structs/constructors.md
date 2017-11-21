@@ -57,8 +57,8 @@ For more information and examples, see [Static Constructors](../../../csharp/pro
  [How to: Write a Copy Constructor](../../../csharp/programming-guide/classes-and-structs/how-to-write-a-copy-constructor.md)  
   
 ## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)   
- [Finalizers](../../../csharp/programming-guide/classes-and-structs/destructors.md)   
- [static](../../../csharp/language-reference/keywords/static.md)   
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)  
+ [Finalizers](../../../csharp/programming-guide/classes-and-structs/destructors.md)  
+ [static](../../../csharp/language-reference/keywords/static.md)  
  [Why Do Initializers Run In The Opposite Order As Constructors? Part One](http://go.microsoft.com/fwlink/?LinkId=112374)

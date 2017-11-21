@@ -99,5 +99,5 @@ manager: "erikre"
  For more information, see [Data Service Versioning](../../../../docs/framework/data/wcf/data-service-versioning-wcf-data-services.md).  
   
 ## See Also  
- [Reflection Provider](../../../../docs/framework/data/wcf/reflection-provider-wcf-data-services.md)   
+ [Reflection Provider](../../../../docs/framework/data/wcf/reflection-provider-wcf-data-services.md)  
  [Entity Framework Provider](../../../../docs/framework/data/wcf/entity-framework-provider-wcf-data-services.md)

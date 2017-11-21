@@ -169,9 +169,9 @@ The next project that you create in this walkthrough accesses a library that is 
 9. Save the file and press CTRL+F5 to build and run the application.  
   
 ## See Also  
- <xref:System.Dynamic?displayProperty=nameWithType>   
- <xref:System.Dynamic.DynamicObject?displayProperty=nameWithType>   
- [Using Type dynamic](../../../csharp/programming-guide/types/using-type-dynamic.md)   
- [Early and Late Binding](../../../visual-basic/programming-guide/language-features/early-late-binding/index.md)   
- [dynamic](../../../csharp/language-reference/keywords/dynamic.md)   
+ <xref:System.Dynamic?displayProperty=nameWithType>  
+ <xref:System.Dynamic.DynamicObject?displayProperty=nameWithType>  
+ [Using Type dynamic](../../../csharp/programming-guide/types/using-type-dynamic.md)  
+ [Early and Late Binding](../../../visual-basic/programming-guide/language-features/early-late-binding/index.md)  
+ [dynamic](../../../csharp/language-reference/keywords/dynamic.md)  
  [Implementing Dynamic Interfaces (external blog)](http://go.microsoft.com/fwlink/?LinkId=230895)

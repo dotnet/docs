@@ -123,6 +123,6 @@ Defines one or more switches used by the <xref:System.AppContext> class to provi
 ```  
   
 ## See Also  
- [AppContext](xref:System.AppContext?qualifyHint=False&autoUpgrade=True)   
- [\<runtime> Element](runtime-element.md)   
+ [AppContext](xref:System.AppContext?qualifyHint=False&autoUpgrade=True)  
+ [\<runtime> Element](runtime-element.md)  
  [\<configuration> Element](../configuration-element.md)

@@ -37,6 +37,6 @@ manager: "jhubbard"
  <xref:System.Data.DataRowComparer>  
   
 ## See Also  
- [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)   
- [LINQ and ADO.NET](../../../../docs/framework/data/adonet/linq-and-ado-net.md)   
+ [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)  
+ [LINQ and ADO.NET](../../../../docs/framework/data/adonet/linq-and-ado-net.md)  
  [ADO.NET](../../../../docs/framework/data/adonet/index.md)

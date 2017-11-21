@@ -228,7 +228,7 @@ CREATE TABLE [dbo].[Course]([CourseID] [nvarchar](10) NOT NULL,
 [Title] [nvarchar](100) NOT NULL,  
 [Credits] [int] NOT NULL,  
 [DepartmentID] [int] NOT NULL,  
- CONSTRAINT [PK_Course] PRIMARY KEY CLUSTERED   
+ CONSTRAINT [PK_Course] PRIMARY KEY CLUSTERED  
 (  
 [CourseID] ASC,  
 [Year] ASC  
@@ -245,7 +245,7 @@ CREATE TABLE [dbo].[Department]([DepartmentID] [int] IDENTITY(1,1) NOT NULL,
 [Budget] [money] NOT NULL,  
 [StartDate] [datetime] NOT NULL,  
 [Administrator] [int] NULL,  
- CONSTRAINT [PK_Department] PRIMARY KEY CLUSTERED   
+ CONSTRAINT [PK_Department] PRIMARY KEY CLUSTERED  
 (  
 [DepartmentID] ASC  
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]) ON [PRIMARY]  
@@ -264,7 +264,7 @@ CREATE TABLE [dbo].[Person]([PersonID] [int] IDENTITY(1,1) NOT NULL,
 [HireDate] [datetime] NULL,  
 [EnrollmentDate] [datetime] NULL,  
 [Picture] [varbinary](max) NULL,  
- CONSTRAINT [PK_School.Student] PRIMARY KEY CLUSTERED   
+ CONSTRAINT [PK_School.Student] PRIMARY KEY CLUSTERED  
 (  
 [PersonID] ASC  
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]  
@@ -279,7 +279,7 @@ CREATE TABLE [dbo].[StudentGrade]([EnrollmentID] [int] IDENTITY(1,1) NOT NULL,
 [CourseID] [nvarchar](10) NOT NULL,  
 [StudentID] [int] NOT NULL,  
 [Grade] [decimal](3, 2) NOT NULL,  
- CONSTRAINT [PK_StudentGrade] PRIMARY KEY CLUSTERED   
+ CONSTRAINT [PK_StudentGrade] PRIMARY KEY CLUSTERED  
 (  
 [EnrollmentID] ASC  
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]) ON [PRIMARY]  
@@ -536,10 +536,10 @@ class Program {
 ```  
   
 ## See Also  
- [Retrieving and Modifying Data in ADO.NET](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)   
- [DataAdapters and DataReaders](../../../../docs/framework/data/adonet/dataadapters-and-datareaders.md)   
- [Row States and Row Versions](../../../../docs/framework/data/adonet/dataset-datatable-dataview/row-states-and-row-versions.md)   
- [AcceptChanges and RejectChanges](../../../../docs/framework/data/adonet/dataset-datatable-dataview/acceptchanges-and-rejectchanges.md)   
- [Merging DataSet Contents](../../../../docs/framework/data/adonet/dataset-datatable-dataview/merging-dataset-contents.md)   
- [Updating Data Sources with DataAdapters](../../../../docs/framework/data/adonet/updating-data-sources-with-dataadapters.md)   
+ [Retrieving and Modifying Data in ADO.NET](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)  
+ [DataAdapters and DataReaders](../../../../docs/framework/data/adonet/dataadapters-and-datareaders.md)  
+ [Row States and Row Versions](../../../../docs/framework/data/adonet/dataset-datatable-dataview/row-states-and-row-versions.md)  
+ [AcceptChanges and RejectChanges](../../../../docs/framework/data/adonet/dataset-datatable-dataview/acceptchanges-and-rejectchanges.md)  
+ [Merging DataSet Contents](../../../../docs/framework/data/adonet/dataset-datatable-dataview/merging-dataset-contents.md)  
+ [Updating Data Sources with DataAdapters](../../../../docs/framework/data/adonet/updating-data-sources-with-dataadapters.md)  
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

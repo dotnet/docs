@@ -200,5 +200,5 @@ Purchase Order 28fc457a-1a56-4fe0-9dde-156965c21ed6 is canceled
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\MSMQIntegration\CustomDemux`  
   
 ## See Also  
- [Queuing in WCF](../../../../docs/framework/wcf/feature-details/queuing-in-wcf.md)   
+ [Queuing in WCF](../../../../docs/framework/wcf/feature-details/queuing-in-wcf.md)  
  [Message Queuing](http://go.microsoft.com/fwlink/?LinkId=95143)

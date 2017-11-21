@@ -52,7 +52,7 @@ Impersonating a client on a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)]
      [!code-vb[c_SimpleImpersonation#1](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_simpleimpersonation/vb/source.vb#1)]  
   
 ## See Also  
- <xref:System.ServiceModel.OperationBehaviorAttribute>   
- <xref:System.Security.Principal.TokenImpersonationLevel>   
- [Impersonating the Client](../../../docs/framework/wcf/samples/impersonating-the-client.md)   
+ <xref:System.ServiceModel.OperationBehaviorAttribute>  
+ <xref:System.Security.Principal.TokenImpersonationLevel>  
+ [Impersonating the Client](../../../docs/framework/wcf/samples/impersonating-the-client.md)  
  [Delegation and Impersonation](../../../docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md)

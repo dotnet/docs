@@ -132,8 +132,8 @@ The following illustration shows an [!INCLUDE[indigo1](../../../../includes/indi
 ```  
   
 ## See Also  
- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)   
- [Message Security User Name](../../../../docs/framework/wcf/samples/message-security-user-name.md)   
- [Service Identity and Authentication](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)   
- [\<identity>](../../../../docs/framework/configure-apps/file-schema/wcf/identity.md)   
+ [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
+ [Message Security User Name](../../../../docs/framework/wcf/samples/message-security-user-name.md)  
+ [Service Identity and Authentication](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)  
+ [\<identity>](../../../../docs/framework/configure-apps/file-schema/wcf/identity.md)  
  [Security Model for Windows Server App Fabric](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

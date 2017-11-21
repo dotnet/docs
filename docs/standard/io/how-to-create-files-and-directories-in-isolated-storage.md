@@ -41,6 +41,6 @@ After you have obtained an isolated store, you can create directories and files 
  [!code-vb[Conceptual.IsolatedStorage#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.isolatedstorage/vb/source.vb#1)]  
   
 ## See Also  
- <xref:System.IO.IsolatedStorage.IsolatedStorageFile>   
- <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream>   
+ <xref:System.IO.IsolatedStorage.IsolatedStorageFile>  
+ <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream>  
  [Isolated Storage](../../../docs/standard/io/isolated-storage.md)

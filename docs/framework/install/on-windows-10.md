@@ -41,11 +41,11 @@ You need to upgrade to a later Windows 10 version if you are using Windows 10 15
 
 The [.NET Framework 4.7.1](https://www.microsoft.com/en-us/download/details.aspx?id=56115&desc=dotnet47) can be used to run applications built for .NET Framework 4.0 or later.
 
-## .NET Framework 4.6.1
+## .NET Framework 4.6.2
 
-The [.NET Framework 4.6.1](https://www.microsoft.com/en-us/download/details.aspx?id=49981) is the latest supported .NET Framework version on Windows 10 1507 and 1511.
+The [.NET Framework 4.6.2](https://www.microsoft.com/en-us/download/details.aspx?id=53345) is the latest supported .NET Framework version on Windows 10 1507 and 1511.
 
-The .NET Framework 4.6.1 supports apps built for .NET Framework 4.0 through 4.6.1.
+The .NET Framework 4.6.2 supports apps built for .NET Framework 4.0 through 4.6.2.
 
 ## .NET Framework 3.5
 

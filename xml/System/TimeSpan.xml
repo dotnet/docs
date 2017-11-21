@@ -2,7 +2,7 @@
   <TypeSignature Language="C#" Value="public struct TimeSpan : IComparable, IComparable&lt;TimeSpan&gt;, IEquatable&lt;TimeSpan&gt;, IFormattable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit TimeSpan extends System.ValueType implements class System.IComparable, class System.IComparable`1&lt;valuetype System.TimeSpan&gt;, class System.IEquatable`1&lt;valuetype System.TimeSpan&gt;, class System.IFormattable" />
   <TypeSignature Language="DocId" Value="T:System.TimeSpan" />
-  <AssemblyInfo>
+  <AssemblyInfo>cs/structure1.cs#1)]
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -128,7 +128,8 @@
  The following example instantiates a <xref:System.TimeSpan> object that represents the difference between two dates. It then displays the <xref:System.TimeSpan> object's properties.  
   
  [!code-csharp[System.TimeSpan.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.timespan.class/cs/structure1.cs#1)]
- [!code-vb[System.TimeSpan.Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.timespan.class/vb/structure1.vb#1)]  
+ [!code-vb[System.TimeSpan.Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.timespan.class/vb/structure1.vb#1)]
+ [!code-powershell[System.Timespan.Class#1](~/samples/snippetspowershell/VS_Snippets_CLR_System/system.timespan.class/ps/structure1.ps1]
   
  ]]></format>
     </remarks>

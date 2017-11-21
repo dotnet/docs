@@ -13,7 +13,7 @@ ms.custom: mvc
 
 # Numbers in C# quick start #
 
-This quick start teaches you about the number types in C# interactively. You'll write small amountes of code, then you'll compile and run that code. It contains a series of lessons that explore numbers and math operations in C#. These lessons teach you the fundamentals of the C# language.
+This quick start teaches you about the number types in C# interactively. You'll write small amounts of code, then you'll compile and run that code. The quick start contains a series of lessons that explore numbers and math operations in C#. These lessons teach you the fundamentals of the C# language.
 
 This quick start expects you to have a machine you can use for development. The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting up your local development environment on Mac, PC or Linux.
 
@@ -51,17 +51,17 @@ Console.WriteLine(c);
 
 Run this code by typing `dotnet run` in your command window. 
     
-You can also experiment by performing multiple mathematics operations in the same line, if you'd like.
+You can also experiment by performing multiple mathematics operations in the same line, if you'd like. Try `c = a + b - 12 * 17;` for example. Mixing variables and constant numbers is allowed.
 
 > [!TIP]
 > As you explore C# (or any programming language), you'll
 > make mistakes when you write code. The **compiler** will
 > find those errors and report them to you. When the output
-> contains error messages, look closely at the example code,
-> and the code in the interactive window to see what to fix.
+> contains error messages, look closely at the example code
+> and the code in your window to see what to fix.
 > That exercise will help you learn the structure of C# code.     
 
-You've finished the first step. Before you start the next section, let's move the current code into a separate method. That makes it easier to start working with a new example. Rename your `Main` method to `WorkWithIntegers` and write a new `Main` method that calls `WorkWithIntegers`. When you have finished, your code should look like this:
+You've finished the first step. Before you start the next section, let's move the current code into a separate method. That makes it easier to start working with a new example. Rename your `Main` method to `WorkingWithIntegers` and write a new `Main` method that calls `WorkingWithIntegers`. When you have finished, your code should look like this:
 
 ```csharp
 using System;
@@ -100,7 +100,7 @@ Comment out the call to `WorkingWithIntegers()`. It will make the output less cl
 //WorkingWithIntegers();
 ```
 
-The `//` starts a **comment** in C#. Comments are any text you want to keep in your source code, but not execute as code. The compiler does not generate any executable code from comments.
+The `//` starts a **comment** in C#. Comments are any text you want to keep in your source code but not execute as code. The compiler does not generate any executable code from comments.
 
 The C# language defines the precedence of different mathematics operations
 with rules consistent with the rules you learned in mathematics.
@@ -136,8 +136,7 @@ Console.WriteLine(d);
 ```
 
 You may have noticed an interesting behavior for integers. Integer
-division always produces an integer result, even when the mathematical
-result would include a decimal or fraction portion.
+division always produces an integer result, even when you'd expect the result to include a decimal or fractional portion.
 
 If you haven't seen this behavior, try the following code at the end
 of your `Main` method:
@@ -258,11 +257,11 @@ Once again, let's move the code you wrote in this section into a separate method
 
 The `double` numeric type represents a double-precision floating point
 number. Those terms may be new to you. A **floating point** number is
-useful to represent non-integral numbers that may be very large, or small
+useful to represent non-integral numbers that may be very large or small
 in magnitude. **Double-precision** means that these numbers are stored
 using greater precision than **single-precision**. On modern computers,
 it is more common to use double precision than single precision numbers.
-Let's explore. Try the following code in the interactive window and see the result:
+Let's explore. Add the following code and see the result:
 
 ```csharp
 double a = 5;
@@ -292,12 +291,9 @@ double min = double.MinValue;
 Console.WriteLine($"The range of double is {min} to {max}");
 ```
 
-These values are printed out to represent scientific notation. The number to
-the left of the `E` is the significant. The number to the right is the exponent,
-as a power of 10. Internally, these numbers are represented similarly, but in 
-a binary form. One part represents the significant binary digits.
-Another part represents where to place the binary point (analogous to a decimal point) relative to
-those significant digits.
+These values are printed out in scientific notation. The number to
+the left of the `E` is the significand. The number to the right is the exponent,
+as a power of 10. 
 
 Just like decimal numbers in math, doubles in C# can have rounding errors. Try this code:
 
@@ -320,7 +316,7 @@ and place it in a new method. Name that new method `WorkWithDoubles`.
 
 You've seen the basic numeric types in C#: integers and doubles.  There is one
 other type to learn: the `decimal` type. The `decimal` type has a smaller
-range, but greater precision than `double`. The term **fixed point** means
+range but greater precision than `double`. The term **fixed point** means
 that the decimal point (or binary point) doesn't move. Let's take a look:
 
 ```csharp
@@ -353,7 +349,7 @@ of the decimal point.
 Now that you've seen the different numeric types, write code that calculates
 the area of a circle whose radius is 2.50 inches. Remember that the area of a circle
 is the radius squared multiplied by PI. One hint: C# contains a constant
-for PI: `Math.PI` that you can use for that value. 
+for PI, <xref:System.Math.PI?displayProperty=nameWithType> that you can use for that value. 
 
 You can check your answer by [looking at the finished sample code on GitHub](https://github.com/dotnet/docs/tree/master/samples/csharp/numbers-quickstart/Program.cs#L104-L106)
 

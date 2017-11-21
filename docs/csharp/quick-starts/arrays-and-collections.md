@@ -18,7 +18,7 @@ class.
 
 This quick start expects you to have a machine you can use for development. The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting up your local development environment on Mac, PC or Linux.
 
-## A simple list example.
+## A basic list example.
 
 Create a directory named **list-quickstart**. Make that the current directory and run `dotnet new console`.
 

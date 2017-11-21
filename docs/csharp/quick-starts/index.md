@@ -23,7 +23,7 @@ within minutes. These first lessons assume no prior knowledge of
 programming or the C# language. 
 
 All the quick starts following the Hello World lesson are available using
-the online browser experience, or on your own development
+the online browser experience or on your own development
 environment. At the end of each lesson, you decide if you want to continue
 with the next quick start online or on your own machine. There are links
 to help you setup your environment and continue with the next quick start
@@ -32,7 +32,7 @@ on your machine.
 ## [Hello world](hello-world.yml)
 
 In the [Hello world](hello-world.yml) quick start, you'll create the most basic
-C#. You'll explore the `string` type and how to work with text.
+C# program. You'll explore the `string` type and how to work with text.
 
 ## [Numbers in C#](numbers-in-csharp.yml)
 
@@ -46,9 +46,9 @@ This quick start assumes that you have finished the [Hello world](hello-world.ym
 
 ## [Branches and loops](branches-and-loops.yml)
 
-The [Branches and loops](branches-and-loops.yml) lesson teaches the basics of selecting
+The [Branches and loops](branches-and-loops.yml) quick start teaches the basics of selecting
 different paths of code based on the values stored in variables. You'll learn the
-basics of control flow, which is the basics of how programs make decisions and choose
+basics of control flow, which is the basis of how programs make decisions and choose
 different actions. This quick start is also available
 [to run locally on your machine](branches-and-loops-local.md).
 

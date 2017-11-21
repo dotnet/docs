@@ -34,13 +34,13 @@ The .NET Framework Portable Class Library project type in Visual Studio helps yo
   
  In this topic:  
   
- [Visual Studio support](#vs_support)   
- [Creating a Portable Class Library project](#create_pcl)   
- [Target options](#platforms)   
- [Changing targets](#change_targets)   
- [Supported features](#features)   
- [Supported types and members](#members)   
- [API differences in the Portable Class Library](#API_diff)   
+ [Visual Studio support](#vs_support)  
+ [Creating a Portable Class Library project](#create_pcl)  
+ [Target options](#platforms)  
+ [Changing targets](#change_targets)  
+ [Supported features](#features)  
+ [Supported types and members](#members)  
+ [API differences in the Portable Class Library](#API_diff)  
  [Using the Portable Class Library](#using)  
   
 <a name="vs_support"></a>   
@@ -222,8 +222,8 @@ Version Information example
 ```  
   
 ## See Also  
- [Using Portable Class Library with MVVM](../../../docs/standard/cross-platform/using-portable-class-library-with-model-view-view-model.md)   
- [App Resources for Libraries That Target Multiple Platforms](../../../docs/standard/cross-platform/app-resources-for-libraries-that-target-multiple-platforms.md)   
- [.NET Portability Analyzer](http://visualstudiogallery.msdn.microsoft.com/1177943e-cfb7-4822-a8a6-e56c7905292b)   
- [.NET Framework Support for Windows Store Apps and Windows Runtime](../../../docs/standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md)   
+ [Using Portable Class Library with MVVM](../../../docs/standard/cross-platform/using-portable-class-library-with-model-view-view-model.md)  
+ [App Resources for Libraries That Target Multiple Platforms](../../../docs/standard/cross-platform/app-resources-for-libraries-that-target-multiple-platforms.md)  
+ [.NET Portability Analyzer](http://visualstudiogallery.msdn.microsoft.com/1177943e-cfb7-4822-a8a6-e56c7905292b)  
+ [.NET Framework Support for Windows Store Apps and Windows Runtime](../../../docs/standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md)  
  [Deployment](../../../docs/framework/deployment/net-framework-applications.md)

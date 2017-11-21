@@ -104,9 +104,9 @@ Windows Forms now uses the following logic to automatically scale forms and thei
     - The <xref:System.Windows.Forms.Control.ScaleControl%2A> method can be overridden to change the scaling logic for the current control.
 
 ## See also
- <xref:System.Windows.Forms.ContainerControl.AutoScaleMode%2A>   
- <xref:System.Windows.Forms.Control.Scale%2A>   
- <xref:System.Windows.Forms.ContainerControl.PerformAutoScale%2A>   
- <xref:System.Windows.Forms.ContainerControl.AutoScaleDimensions%2A>   
- [Rendering Controls with Visual Styles](./controls/rendering-controls-with-visual-styles.md)   
+ <xref:System.Windows.Forms.ContainerControl.AutoScaleMode%2A>  
+ <xref:System.Windows.Forms.Control.Scale%2A>  
+ <xref:System.Windows.Forms.ContainerControl.PerformAutoScale%2A>  
+ <xref:System.Windows.Forms.ContainerControl.AutoScaleDimensions%2A>  
+ [Rendering Controls with Visual Styles](./controls/rendering-controls-with-visual-styles.md)  
  [How to: Improve Performance by Avoiding Automatic Scaling](./advanced/how-to-improve-performance-by-avoiding-automatic-scaling.md)

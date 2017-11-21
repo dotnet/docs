@@ -141,7 +141,7 @@ Console.WriteLine("The average calculated using the code activity is = " + resul
 ## Command line arguments  
  This sample accepts command line arguments. Users can provide a list of numbers for the activity to calculate their average. The list of numbers to be used is passed as a list of numbers separated by a space. For example, to calculate the average of 5, 10, and 32 invoke the sample using the following command line.  
   
- **DynamicActivityCreation 5 10 32**   
+ **DynamicActivityCreation 5 10 32**  
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
 >   

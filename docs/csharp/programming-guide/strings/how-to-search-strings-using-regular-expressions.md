@@ -27,8 +27,8 @@ The <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> cla
  [!code-csharp[csProgGuideStrings#18](../../../csharp/programming-guide/strings/codesnippet/CSharp/how-to-search-strings-using-regular-expressions_2.cs)]  
   
 ## See Also  
- <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType>   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Strings](../../../csharp/programming-guide/strings/index.md)   
- [.NET Framework Regular Expressions](https://msdn.microsoft.com/library/hs600312)   
+ <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType>  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Strings](../../../csharp/programming-guide/strings/index.md)  
+ [.NET Framework Regular Expressions](https://msdn.microsoft.com/library/hs600312)  
  [Regular Expression Language - Quick Reference](http://msdn.microsoft.com/library/930653a6-95d2-4697-9d5a-52d11bb6fd4c)

@@ -63,6 +63,6 @@ public  class MyMessageContract
 ```  
   
 ## See Also  
- [Default Message Contract](../../../../docs/framework/wcf/samples/default-message-contract.md)   
- [Message Contracts](../../../../docs/framework/wcf/samples/message-contracts.md)   
+ [Default Message Contract](../../../../docs/framework/wcf/samples/default-message-contract.md)  
+ [Message Contracts](../../../../docs/framework/wcf/samples/message-contracts.md)  
  [Using Message Contracts](../../../../docs/framework/wcf/feature-details/using-message-contracts.md)

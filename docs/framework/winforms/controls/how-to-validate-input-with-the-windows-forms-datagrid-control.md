@@ -90,7 +90,7 @@ manager: "wpickett"
     ```  
   
 ## See Also  
- <xref:System.Windows.Forms.DataGrid>   
- <xref:System.Data.DataTable.ColumnChanging>   
- <xref:System.Data.DataRow.SetColumnError%2A>   
+ <xref:System.Windows.Forms.DataGrid>  
+ <xref:System.Data.DataTable.ColumnChanging>  
+ <xref:System.Data.DataRow.SetColumnError%2A>  
  [DataGrid Control](../../../../docs/framework/winforms/controls/datagrid-control-windows-forms.md)

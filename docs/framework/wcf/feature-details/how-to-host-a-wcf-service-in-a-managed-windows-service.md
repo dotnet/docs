@@ -141,7 +141,7 @@ This topic outlines the basic steps required to create a [!INCLUDE[indigo1](../.
  Like the "Self-Hosting" option, the Windows service hosting environment requires that some hosting code be written as part of the application. The service is implemented as a console application and contains its own hosting code. In other hosting environments, such as Windows Process Activation Service (WAS) hosting in Internet Information Services (IIS), it is not necessary for developers to write hosting code.  
   
 ## See Also  
- [Simplified Configuration](../../../../docs/framework/wcf/simplified-configuration.md)   
- [Hosting in a Managed Application](../../../../docs/framework/wcf/feature-details/hosting-in-a-managed-application.md)   
- [Hosting Services](../../../../docs/framework/wcf/hosting-services.md)   
+ [Simplified Configuration](../../../../docs/framework/wcf/simplified-configuration.md)  
+ [Hosting in a Managed Application](../../../../docs/framework/wcf/feature-details/hosting-in-a-managed-application.md)  
+ [Hosting Services](../../../../docs/framework/wcf/hosting-services.md)  
  [Windows Server App Fabric Hosting Features](http://go.microsoft.com/fwlink/?LinkId=201276)

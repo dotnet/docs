@@ -395,5 +395,5 @@ A <xref:System.TimeSpan> format string defines the string representation of a <x
  [Back to table](#table)  
   
 ## See Also  
- [Formatting Types](../../../docs/standard/base-types/formatting-types.md)   
+ [Formatting Types](../../../docs/standard/base-types/formatting-types.md)  
  [Standard TimeSpan Format Strings](../../../docs/standard/base-types/standard-timespan-format-strings.md)

@@ -114,6 +114,6 @@ Console.WriteLine("Add({0},{1}) = {2}", value1, value2, result);
 ```  
   
 ## See Also  
- [Discovery with Scopes](../../../../docs/framework/wcf/samples/discovery-with-scopes-sample.md)   
- [Asynchronous Find](../../../../docs/framework/wcf/samples/asynchronous-find-sample.md)   
+ [Discovery with Scopes](../../../../docs/framework/wcf/samples/discovery-with-scopes-sample.md)  
+ [Asynchronous Find](../../../../docs/framework/wcf/samples/asynchronous-find-sample.md)  
  [Basic](../../../../docs/framework/wcf/samples/basic-sample.md)

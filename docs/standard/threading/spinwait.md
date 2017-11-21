@@ -32,5 +32,5 @@ manager: "wpickett"
  [!code-vb[CDS_SpinWait#05](../../../samples/snippets/visualbasic/VS_Snippets_Misc/cds_spinwait/vb/cds_spinwait1.vb#05)]  
   
 ## See Also  
- <xref:System.Threading.Thread.SpinWait%2A>   
+ <xref:System.Threading.Thread.SpinWait%2A>  
  [Threading Objects and Features](../../../docs/standard/threading/threading-objects-and-features.md)

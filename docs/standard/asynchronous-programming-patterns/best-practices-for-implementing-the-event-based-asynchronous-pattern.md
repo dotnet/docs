@@ -148,14 +148,14 @@ private void Form1_MethodNameCompleted(object sender, MethodNameCompletedEventAr
 -   When you use multithreading of any sort, you potentially expose yourself to very serious and complex bugs. Before implementing any solution that uses multithreading, see [Managed Threading Best Practices](../../../docs/standard/threading/managed-threading-best-practices.md).  
   
 ## See Also  
- <xref:System.ComponentModel.AsyncOperation>   
- <xref:System.ComponentModel.AsyncOperationManager>   
- <xref:System.ComponentModel.AsyncCompletedEventArgs>   
- <xref:System.ComponentModel.ProgressChangedEventArgs>   
- <xref:System.ComponentModel.BackgroundWorker>   
- [Implementing the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/implementing-the-event-based-asynchronous-pattern.md)   
- [Multithreaded Programming with the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/multithreaded-programming-with-the-event-based-asynchronous-pattern.md)   
- [Deciding When to Implement the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/deciding-when-to-implement-the-event-based-asynchronous-pattern.md)   
- [Best Practices for Implementing the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/best-practices-for-implementing-the-event-based-asynchronous-pattern.md)   
- [How to: Use Components That Support the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/how-to-use-components-that-support-the-event-based-asynchronous-pattern.md)   
+ <xref:System.ComponentModel.AsyncOperation>  
+ <xref:System.ComponentModel.AsyncOperationManager>  
+ <xref:System.ComponentModel.AsyncCompletedEventArgs>  
+ <xref:System.ComponentModel.ProgressChangedEventArgs>  
+ <xref:System.ComponentModel.BackgroundWorker>  
+ [Implementing the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/implementing-the-event-based-asynchronous-pattern.md)  
+ [Multithreaded Programming with the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/multithreaded-programming-with-the-event-based-asynchronous-pattern.md)  
+ [Deciding When to Implement the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/deciding-when-to-implement-the-event-based-asynchronous-pattern.md)  
+ [Best Practices for Implementing the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/best-practices-for-implementing-the-event-based-asynchronous-pattern.md)  
+ [How to: Use Components That Support the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/how-to-use-components-that-support-the-event-based-asynchronous-pattern.md)  
  [Walkthrough: Implementing a Component That Supports the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/component-that-supports-the-event-based-asynchronous-pattern.md)

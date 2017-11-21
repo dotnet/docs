@@ -48,6 +48,6 @@ Code that uses isolated storage is constrained by a [quota](../../../docs/standa
  [!code-vb[Conceptual.IsolatedStorage#8](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.isolatedstorage/vb/source7.vb#8)]  
   
 ## See Also  
- <xref:System.IO.IsolatedStorage.IsolatedStorageFile>   
- [Isolated Storage](../../../docs/standard/io/isolated-storage.md)   
+ <xref:System.IO.IsolatedStorage.IsolatedStorageFile>  
+ [Isolated Storage](../../../docs/standard/io/isolated-storage.md)  
  [How to: Obtain Stores for Isolated Storage](../../../docs/standard/io/how-to-obtain-stores-for-isolated-storage.md)

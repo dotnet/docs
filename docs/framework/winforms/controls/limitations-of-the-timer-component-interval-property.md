@@ -35,6 +35,6 @@ The Windows Forms <xref:System.Windows.Forms.Timer> component has an <xref:Syste
 -   The precision of the <xref:System.Windows.Forms.Timer.Interval%2A> property is in milliseconds. Some computers provide a high-resolution counter that has a resolution higher than milliseconds. The availability of such a counter depends on the processor hardware of your computer. For more information, see article 172338, "How To Use QueryPerformanceCounter to Time Code," in the Microsoft Knowledge Base at http://support.microsoft.com.  
   
 ## See Also  
- <xref:System.Windows.Forms.Timer>   
- [Timer Component](../../../../docs/framework/winforms/controls/timer-component-windows-forms.md)   
+ <xref:System.Windows.Forms.Timer>  
+ [Timer Component](../../../../docs/framework/winforms/controls/timer-component-windows-forms.md)  
  [Timer Component Overview](../../../../docs/framework/winforms/controls/timer-component-overview-windows-forms.md)

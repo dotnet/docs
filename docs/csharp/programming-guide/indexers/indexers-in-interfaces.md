@@ -60,7 +60,7 @@ public string ICitizen.this
  implements the indexer on the `ICitizen` interface.  
   
 ## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Indexers](../../../csharp/programming-guide/indexers/index.md)   
- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)   
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Indexers](../../../csharp/programming-guide/indexers/index.md)  
+ [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)  
  [Interfaces](../../../csharp/programming-guide/interfaces/index.md)

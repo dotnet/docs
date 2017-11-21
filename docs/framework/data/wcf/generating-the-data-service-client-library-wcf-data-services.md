@@ -59,5 +59,5 @@ A data service that implements the [!INCLUDE[ssODataFull](../../../../includes/s
  For more information, see [OData: Primitive Data Types](http://go.microsoft.com/fwlink/?LinkId=186072).  
   
 ## See Also  
- [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)   
+ [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)  
  [Quickstart](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md)

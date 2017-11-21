@@ -29,6 +29,6 @@ ms.author: dotnetcontent
 |Perform numeric conversions.|<xref:Microsoft.VisualBasic.Conversion.Fix%2A>, <xref:Microsoft.VisualBasic.Conversion.Int%2A>|  
   
 ## See Also  
- [Derived Math Functions](../../../visual-basic/language-reference/keywords/derived-math-functions.md)   
- [Keywords](../../../visual-basic/language-reference/keywords/index.md)   
+ [Derived Math Functions](../../../visual-basic/language-reference/keywords/derived-math-functions.md)  
+ [Keywords](../../../visual-basic/language-reference/keywords/index.md)  
  [Visual Basic Runtime Library Members](../../../visual-basic/language-reference/runtime-library-members.md)

@@ -37,7 +37,7 @@ This section explains how to create, configure, debug, secure, and deploy your .
  Describes how to use Windows Communication Foundation (WCF) to build service-oriented apps that are secure and reliable.  
   
  [Building workflows with Windows Workflow Foundation](windows-workflow-foundation/index.md)     
- Provides information about the programming model, samples, and tools for using Windows Workflow Foundation (WF).   
+ Provides information about the programming model, samples, and tools for using Windows Workflow Foundation (WF).  
 
  [Windows Service Applications](../../docs/framework/windows-services/index.md)  
  Explains how you can use Visual Studio and the .NET Framework to create an app that is installed as a service, and start, stop, and otherwise control its behavior.  

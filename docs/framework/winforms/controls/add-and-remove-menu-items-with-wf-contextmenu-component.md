@@ -81,6 +81,6 @@ Explains how to add and remove shortcut menu items in Windows Forms.
     ```  
   
 ## See Also  
- <xref:System.Windows.Forms.ContextMenu>   
- [ContextMenu Component](../../../../docs/framework/winforms/controls/contextmenu-component-windows-forms.md)   
+ <xref:System.Windows.Forms.ContextMenu>  
+ [ContextMenu Component](../../../../docs/framework/winforms/controls/contextmenu-component-windows-forms.md)  
  [ContextMenu Component Overview](../../../../docs/framework/winforms/controls/contextmenu-component-overview-windows-forms.md)

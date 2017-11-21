@@ -52,5 +52,5 @@ The following graphic illustrates the major layers of the [!INCLUDE[indigo1](../
  Services can also be *hosted*, or run in an executable managed by an external agent, such as IIS or Windows Activation Service (WAS). WAS enables [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] applications to be activated automatically when deployed on a computer running WAS. Services can also be manually run as executables (.exe files). A service can also be run automatically as a Windows service. COM+ components can also be hosted as [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] services.  
   
 ## See Also  
- [What Is Windows Communication Foundation](../../../docs/framework/wcf/whats-wcf.md)   
+ [What Is Windows Communication Foundation](../../../docs/framework/wcf/whats-wcf.md)  
  [Fundamental Windows Communication Foundation Concepts](../../../docs/framework/wcf/fundamental-concepts.md)

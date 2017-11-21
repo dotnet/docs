@@ -69,5 +69,5 @@ The .NET Framework provides access to the data protection API (DPAPI), which all
 -   Include the <xref:System>, <xref:System.IO>, <xref:System.Security.Cryptography>, and <xref:System.Text> namespace.  
   
 ## See Also  
- <xref:System.Security.Cryptography.ProtectedMemory>   
+ <xref:System.Security.Cryptography.ProtectedMemory>  
  <xref:System.Security.Cryptography.ProtectedData>

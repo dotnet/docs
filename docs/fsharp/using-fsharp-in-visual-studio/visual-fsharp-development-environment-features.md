@@ -117,5 +117,5 @@ The following table summarizes the support for F# in Visual Studio tools.
 |Toolbox|Displays tabs that contain draggable objects such as controls and sections of text or code.|Yes|
 
 ## See Also
- [Get Started with F# in Visual Studio](../get-started/get-started-visual-studio.md)   
- [Configuring Projects](configuring-projects.md)   
+ [Get Started with F# in Visual Studio](../get-started/get-started-visual-studio.md)  
+ [Configuring Projects](configuring-projects.md)  

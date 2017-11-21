@@ -34,5 +34,5 @@ This example shows you how to draw lines by using the <xref:System.Windows.Shape
  This example is part of a larger sample; for the complete sample, see [Shape Elements Sample](http://go.microsoft.com/fwlink/?LinkID=160037).  
   
 ## See Also  
- <xref:System.Windows.Shapes.Line>   
+ <xref:System.Windows.Shapes.Line>  
  [Shape Elements Sample](http://go.microsoft.com/fwlink/?LinkID=160037)

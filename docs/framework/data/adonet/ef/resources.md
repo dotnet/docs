@@ -34,7 +34,7 @@ The following external resources provide information and support for creating En
  Blog containing frequently asked questions about the Entity Framework.  
   
 ## See Also  
- [Entity Framework Overview](../../../../../docs/framework/data/adonet/ef/overview.md)   
- [Getting Started](../../../../../docs/framework/data/adonet/ef/getting-started.md)   
- [Entity Framework Terminology](../../../../../docs/framework/data/adonet/ef/terminology.md)   
+ [Entity Framework Overview](../../../../../docs/framework/data/adonet/ef/overview.md)  
+ [Getting Started](../../../../../docs/framework/data/adonet/ef/getting-started.md)  
+ [Entity Framework Terminology](../../../../../docs/framework/data/adonet/ef/terminology.md)  
  [ADO.NET Entity Data Model  Tools](http://msdn.microsoft.com/en-us/91076853-0881-421b-837a-f582f36be527)

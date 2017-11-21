@@ -37,9 +37,9 @@ The following table lists the C# value types by category.
 |[ushort](../../../csharp/language-reference/keywords/ushort.md)|Unsigned, numeric, integral||  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Default Values Table](../../../csharp/language-reference/keywords/default-values-table.md)   
- [Value Types](../../../csharp/language-reference/keywords/value-types.md)   
- [Formatting Numeric Results Table](../../../csharp/language-reference/keywords/formatting-numeric-results-table.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Default Values Table](../../../csharp/language-reference/keywords/default-values-table.md)  
+ [Value Types](../../../csharp/language-reference/keywords/value-types.md)  
+ [Formatting Numeric Results Table](../../../csharp/language-reference/keywords/formatting-numeric-results-table.md)  
  [Reference Tables for Types](../../../csharp/language-reference/keywords/reference-tables-for-types.md)

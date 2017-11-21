@@ -117,5 +117,5 @@ The following tables describe how users can interact with the <xref:System.Windo
  If <xref:System.Windows.Forms.DataGridView.MultiSelect%2A> is set to `true` and <xref:System.Windows.Forms.DataGridView.SelectionMode%2A> is set to <xref:System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect> or <xref:System.Windows.Forms.DataGridViewSelectionMode.FullColumnSelect>, clicking a cell while pressing SHIFT or CTRL behaves the same way except that only full rows and columns are affected.  
   
 ## See Also  
- <xref:System.Windows.Forms.DataGridView>   
+ <xref:System.Windows.Forms.DataGridView>  
  [DataGridView Control](../../../../docs/framework/winforms/controls/datagridview-control-windows-forms.md)

@@ -30,5 +30,5 @@ ms.author: dotnetcontent
 2.  Specify the location of the project's startup object in the **Startup form** box of the **Project Designer**.  
   
 ## See Also  
- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)   
+ [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
  [Main Procedure in Visual Basic](../../../visual-basic/programming-guide/program-structure/main-procedure.md)

@@ -78,6 +78,6 @@ Describes how the <xref:System.Xml.Schema.XmlSchemaInference> class infers the d
 |`xsi:noNamespaceSchemaLocation`|If `xsi:noNamespaceSchemaLocation` is encountered, it is ignored.|  
   
 ## See Also  
- [XML Schema Object Model (SOM)](../../../../docs/standard/data/xml/xml-schema-object-model-som.md)   
- [Inferring Schemas from XML Documents](../../../../docs/standard/data/xml/inferring-schemas-from-xml-documents.md)   
+ [XML Schema Object Model (SOM)](../../../../docs/standard/data/xml/xml-schema-object-model-som.md)  
+ [Inferring Schemas from XML Documents](../../../../docs/standard/data/xml/inferring-schemas-from-xml-documents.md)  
  [Rules for Inferring Schema Node Types and Structure](../../../../docs/standard/data/xml/rules-for-inferring-schema-node-types-and-structure.md)

@@ -83,5 +83,5 @@ The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] allows strings 
  [!code-vb[Strings.Creating#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Strings.Creating/vb/Example.vb#5)]  
   
 ## See Also  
- [Basic String Operations](../../../docs/standard/base-types/basic-string-operations.md)   
+ [Basic String Operations](../../../docs/standard/base-types/basic-string-operations.md)  
  [Composite Formatting](../../../docs/standard/base-types/composite-formatting.md)

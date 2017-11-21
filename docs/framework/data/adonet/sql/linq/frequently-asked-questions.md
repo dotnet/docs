@@ -206,6 +206,6 @@ dlo.LoadWith<Order>(o => o.OrderDetails);
  A. Read-only mode turns off the ability of the context to track changes.  
   
 ## See Also  
- [Reference](../../../../../../docs/framework/data/adonet/sql/linq/reference.md)   
- [Troubleshooting](../../../../../../docs/framework/data/adonet/sql/linq/troubleshooting.md)   
+ [Reference](../../../../../../docs/framework/data/adonet/sql/linq/reference.md)  
+ [Troubleshooting](../../../../../../docs/framework/data/adonet/sql/linq/troubleshooting.md)  
  [Security in LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/security-in-linq-to-sql.md)

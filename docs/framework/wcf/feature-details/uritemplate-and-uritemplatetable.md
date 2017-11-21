@@ -339,8 +339,8 @@ Console.WriteLine("Bound URI: {0}", boundUri);
 >  The characters á and Á are considered to be different characters when they appear as part of a URI path or <xref:System.UriTemplate> path segment literal (but the characters a and A are considered to be the same). The characters á and Á are considered to be the same characters when they appear as part of a <xref:System.UriTemplate> {variableName} or a query string (and a and A are also considered to be the same characters).  
   
 ## See Also  
- [WCF Web HTTP Programming Model Overview](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model-overview.md)   
- [WCF Web HTTP Programming Object Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-object-model.md)   
- [UriTemplate](../../../../docs/framework/wcf/samples/uritemplate-sample.md)   
- [UriTemplate Table](../../../../docs/framework/wcf/samples/uritemplate-table-sample.md)   
+ [WCF Web HTTP Programming Model Overview](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model-overview.md)  
+ [WCF Web HTTP Programming Object Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-object-model.md)  
+ [UriTemplate](../../../../docs/framework/wcf/samples/uritemplate-sample.md)  
+ [UriTemplate Table](../../../../docs/framework/wcf/samples/uritemplate-table-sample.md)  
  [UriTemplate Table Dispatcher](../../../../docs/framework/wcf/samples/uritemplate-table-dispatcher-sample.md)

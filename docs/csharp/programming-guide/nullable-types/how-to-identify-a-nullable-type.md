@@ -48,5 +48,5 @@ if (type.IsGenericType && type.GetGenericTypeDefinition() == typeof(Nullable<>))
 ```  
   
 ## See Also  
- [Nullable Types](../../../csharp/programming-guide/nullable-types/index.md)   
+ [Nullable Types](../../../csharp/programming-guide/nullable-types/index.md)  
  [Boxing Nullable Types](../../../csharp/programming-guide/nullable-types/boxing-nullable-types.md)

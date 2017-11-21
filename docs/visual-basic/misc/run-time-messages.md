@@ -555,5 +555,5 @@ This section contains the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] error mess
  [You must specify a path that is under the current folder or one of its sub-folders](../../visual-basic/misc/you-must-specify-path-that-is-under-the-current-folder-or-one-of-sub-folders.md)  
   
 ## See Also  
- [NOTINBUILD How to: Get Information about Visual Basic Run-Time Errors](http://msdn.microsoft.com/en-us/22a7d0a6-b7d7-4c5d-971c-52ff0583c656)   
+ [NOTINBUILD How to: Get Information about Visual Basic Run-Time Errors](http://msdn.microsoft.com/en-us/22a7d0a6-b7d7-4c5d-971c-52ff0583c656)  
  [Error Messages](../../visual-basic/language-reference/error-messages/index.md)

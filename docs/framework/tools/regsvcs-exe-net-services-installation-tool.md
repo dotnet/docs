@@ -91,6 +91,6 @@ regsvcs /appname:myTargetApp /tlb:newTest.tlb myTest.dll
 ```  
   
 ## See Also  
- [Tools](../../../docs/framework/tools/index.md)   
- [How to: Sign an Assembly with a Strong Name](../../../docs/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name.md)   
+ [Tools](../../../docs/framework/tools/index.md)  
+ [How to: Sign an Assembly with a Strong Name](../../../docs/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name.md)  
  [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

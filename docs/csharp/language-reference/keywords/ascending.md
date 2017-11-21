@@ -24,6 +24,6 @@ The `ascending` contextual keyword is used in the [orderby clause](../../../csha
  [!code-csharp[csrefKeywordsContextual#14](../../../csharp/language-reference/keywords/codesnippet/CSharp/ascending_1.cs)]  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)  
  [descending](../../../csharp/language-reference/keywords/descending.md)

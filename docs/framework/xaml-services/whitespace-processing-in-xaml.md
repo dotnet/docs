@@ -81,6 +81,6 @@ The language rules for XAML state that significant whitespace must be processed 
  Also, certain inline elements that connote a linebreak in a flow document model should deliberately not introduce an extra space even in a whitespace significant collection. For example, the <xref:System.Windows.Documents.LineBreak> element has the same purpose as the \<BR/> tag in [!INCLUDE[TLA2#tla_html](../../../includes/tla2sharptla-html-md.md)], and for readability in markup, typically a <xref:System.Windows.Documents.LineBreak> is separated from any subsequent text by an authored linefeed. That linefeed should not be normalized to become a leading space in the subsequent line. To enable that behavior, the class definition for the <xref:System.Windows.Documents.LineBreak> element applies the <xref:System.Windows.Markup.TrimSurroundingWhitespaceAttribute>, which is then interpreted by the [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] processor to mean that whitespace surrounding <xref:System.Windows.Documents.LineBreak> is always trimmed.  
   
 ## See Also  
- [XAML Overview (WPF)](../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)   
- [XML Character Entities and XAML](../../../docs/framework/xaml-services/xml-character-entities-and-xaml.md)   
+ [XAML Overview (WPF)](../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)  
+ [XML Character Entities and XAML](../../../docs/framework/xaml-services/xml-character-entities-and-xaml.md)  
  [xml:space Handling in XAML](../../../docs/framework/xaml-services/xml-space-handling-in-xaml.md)

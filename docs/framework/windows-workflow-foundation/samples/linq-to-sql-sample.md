@@ -93,5 +93,5 @@ new FindInSqlTable<Employee>
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Scenario\ActivityLibrary\Liiinq\LinqToSql`  
   
 ## See Also  
- [LINQ to SQL](http://go.microsoft.com/fwlink/?LinkId=150376)   
+ [LINQ to SQL](http://go.microsoft.com/fwlink/?LinkId=150376)  
  [Getting Started (LINQ to SQL)](http://go.microsoft.com/fwlink/?LinkId=150377)

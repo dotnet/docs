@@ -69,5 +69,5 @@ manager: "erikre"
  Note that the time-out value used is the smaller value between this `transactionTimeout` configuration setting and any <xref:System.ServiceModel.ServiceBehaviorAttribute.TransactionTimeout%2A> property.  
   
 ## See Also  
- [\<binding>](../../../../docs/framework/misc/binding.md)   
+ [\<binding>](../../../../docs/framework/misc/binding.md)  
  [WCF Configuration Schema](../../../../docs/framework/configure-apps/file-schema/wcf/index.md)

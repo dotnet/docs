@@ -84,6 +84,6 @@ manager: "wpickett"
  The `MissingInteropDataException` class contains a single unique member, the `MissingType` property, that indicates the type whose metadata is needed for a successful method call. All remaining members are inherited from the base class, <xref:System.Exception?displayProperty=nameWithType>.  
   
 ## See Also  
- <xref:System.Exception?displayProperty=nameWithType>   
- [MissingMetadataException Class](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md)   
+ <xref:System.Exception?displayProperty=nameWithType>  
+ [MissingMetadataException Class](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md)  
  [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)

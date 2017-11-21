@@ -54,9 +54,9 @@ Remember that using uninitialized variables in C# is not allowed.
 |[ushort](../../../csharp/language-reference/keywords/ushort.md)|0|
 
 ## See also
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Value Types Table](../../../csharp/language-reference/keywords/value-types-table.md)   
- [Value Types](../../../csharp/language-reference/keywords/value-types.md)   
- [Built-In Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Value Types Table](../../../csharp/language-reference/keywords/value-types-table.md)  
+ [Value Types](../../../csharp/language-reference/keywords/value-types.md)  
+ [Built-In Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md)  
  [Reference Tables for Types](../../../csharp/language-reference/keywords/reference-tables-for-types.md)

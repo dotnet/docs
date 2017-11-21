@@ -31,5 +31,5 @@ This example shows how to define a resource and reference it by using an attribu
  [!code-xaml[FEResource#XAML](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FEResource/CS/default.xaml#xaml)]  
   
 ## See Also  
- [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md)   
+ [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md)  
  [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)

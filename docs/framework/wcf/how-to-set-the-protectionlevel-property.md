@@ -95,9 +95,9 @@ You can set the protection level by applying an appropriate attribute and settin
  [!code-vb[C_ProtectionLevel#0](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_protectionlevel/vb/source.vb#0)]  
   
 ## See Also  
- <xref:System.ServiceModel.ServiceContractAttribute>   
- <xref:System.ServiceModel.OperationContractAttribute>   
- <xref:System.ServiceModel.FaultContractAttribute>   
- <xref:System.ServiceModel.MessageContractAttribute>   
- <xref:System.ServiceModel.MessageBodyMemberAttribute>   
+ <xref:System.ServiceModel.ServiceContractAttribute>  
+ <xref:System.ServiceModel.OperationContractAttribute>  
+ <xref:System.ServiceModel.FaultContractAttribute>  
+ <xref:System.ServiceModel.MessageContractAttribute>  
+ <xref:System.ServiceModel.MessageBodyMemberAttribute>  
  [Understanding Protection Level](../../../docs/framework/wcf/understanding-protection-level.md)

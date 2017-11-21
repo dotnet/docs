@@ -131,5 +131,5 @@ Tasks illustrated in this walkthrough include:
     ```  
   
 ## See Also  
- <xref:System.Windows.Forms.MaskedTextBox>   
+ <xref:System.Windows.Forms.MaskedTextBox>  
  [MaskedTextBox Control](../../../../docs/framework/winforms/controls/maskedtextbox-control-windows-forms.md)

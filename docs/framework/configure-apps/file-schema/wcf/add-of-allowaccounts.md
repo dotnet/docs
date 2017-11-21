@@ -65,7 +65,7 @@ Specifies a user account for processes that host [!INCLUDE[indigo2](../../../../
 ```  
   
 ## See Also  
- <xref:System.ServiceModel.Activation.Configuration.NetTcpSection.AllowAccounts%2A>   
- <xref:System.ServiceModel.Activation.Configuration.NetPipeSection.AllowAccounts%2A>   
- <xref:System.ServiceModel.Activation.Configuration.SecurityIdentifierElementCollection>   
+ <xref:System.ServiceModel.Activation.Configuration.NetTcpSection.AllowAccounts%2A>  
+ <xref:System.ServiceModel.Activation.Configuration.NetPipeSection.AllowAccounts%2A>  
+ <xref:System.ServiceModel.Activation.Configuration.SecurityIdentifierElementCollection>  
  <xref:System.ServiceModel.Activation.Configuration.SecurityIdentifierElement>

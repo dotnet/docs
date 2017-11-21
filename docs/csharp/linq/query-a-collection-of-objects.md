@@ -25,5 +25,5 @@ This example shows how to perform a simple query over a list of `Student` object
   
 
 ## See also  
- [LINQ Query Expressions](index.md)   
+ [LINQ Query Expressions](index.md)  
  [Interpolated Strings](../language-reference/keywords/interpolated-strings.md)

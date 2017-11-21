@@ -34,5 +34,5 @@ The topics in this section demonstrate how to use the <xref:System.Windows.Contr
  <xref:System.Windows.Controls.ScrollViewer>  
   
 ## See Also  
- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)   
+ [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)  
  [Layout](../../../../docs/framework/wpf/advanced/layout.md)

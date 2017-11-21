@@ -63,5 +63,5 @@ public interface ICalculator
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Contract\Service\XmlSerializerFaults`  
   
 ## See Also  
- <xref:System.ServiceModel.XmlSerializerFormatAttribute>   
+ <xref:System.ServiceModel.XmlSerializerFormatAttribute>  
  <xref:System.ServiceModel.XmlSerializerFormatAttribute.SupportFaults%2A>

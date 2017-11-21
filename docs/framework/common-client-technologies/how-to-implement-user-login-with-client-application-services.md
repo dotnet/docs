@@ -61,8 +61,8 @@ You can use client application services to validate users through an existing [!
  The example code in this topic demonstrates the simplest usages of authentication in a Windows client application. When you call the `static` <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=nameWithType> method with client application services and forms authentication, however, your code can throw a <xref:System.Net.WebException>. This indicates that the authentication service is unavailable. For an example of how to handle this exception, see [Walkthrough: Using Client Application Services](../../../docs/framework/common-client-technologies/walkthrough-using-client-application-services.md).  
   
 ## See Also  
- [Client Application Services](../../../docs/framework/common-client-technologies/client-application-services.md)   
- [Client Application Services Overview](../../../docs/framework/common-client-technologies/client-application-services-overview.md)   
- [How to: Configure Client Application Services](../../../docs/framework/common-client-technologies/how-to-configure-client-application-services.md)   
- [Walkthrough: Using Client Application Services](../../../docs/framework/common-client-technologies/walkthrough-using-client-application-services.md)   
+ [Client Application Services](../../../docs/framework/common-client-technologies/client-application-services.md)  
+ [Client Application Services Overview](../../../docs/framework/common-client-technologies/client-application-services-overview.md)  
+ [How to: Configure Client Application Services](../../../docs/framework/common-client-technologies/how-to-configure-client-application-services.md)  
+ [Walkthrough: Using Client Application Services](../../../docs/framework/common-client-technologies/walkthrough-using-client-application-services.md)  
  [Using Forms Authentication with Microsoft Ajax](http://msdn.microsoft.com/library/c50f7dc5-323c-4c63-b4f3-96edfc1e815e)

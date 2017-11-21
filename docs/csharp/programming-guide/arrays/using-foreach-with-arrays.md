@@ -25,9 +25,9 @@ C# also provides the [foreach](../../../csharp/language-reference/keywords/forea
  However, with multidimensional arrays, using a nested [for](../../../csharp/language-reference/keywords/for.md) loop gives you more control over the array elements.  
   
 ## See Also  
- <xref:System.Array>   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Arrays](../../../csharp/programming-guide/arrays/index.md)   
- [Single-Dimensional Arrays](../../../csharp/programming-guide/arrays/single-dimensional-arrays.md)   
- [Multidimensional Arrays](../../../csharp/programming-guide/arrays/multidimensional-arrays.md)   
+ <xref:System.Array>  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Arrays](../../../csharp/programming-guide/arrays/index.md)  
+ [Single-Dimensional Arrays](../../../csharp/programming-guide/arrays/single-dimensional-arrays.md)  
+ [Multidimensional Arrays](../../../csharp/programming-guide/arrays/multidimensional-arrays.md)  
  [Jagged Arrays](../../../csharp/programming-guide/arrays/jagged-arrays.md)

@@ -127,6 +127,6 @@ This topic describes how to use the [!INCLUDE[indigo1](../../../../includes/indi
      This also enables [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] tracing, as [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] also utilizes the <xref:System.Transactions> infrastructure.  
   
 ## See Also  
- [Administration and Diagnostics](../../../../docs/framework/wcf/diagnostics/index.md)   
- [Configuring Tracing](../../../../docs/framework/wcf/diagnostics/tracing/configuring-tracing.md)   
+ [Administration and Diagnostics](../../../../docs/framework/wcf/diagnostics/index.md)  
+ [Configuring Tracing](../../../../docs/framework/wcf/diagnostics/tracing/configuring-tracing.md)  
  [WS-AtomicTransaction Configuration Utility (wsatConfig.exe)](../../../../docs/framework/wcf/ws-atomictransaction-configuration-utility-wsatconfig-exe.md)

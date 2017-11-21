@@ -142,5 +142,5 @@ XPathMessageFilter xpath1=new XPathMessageFilter("//ns:element");
  [!INCLUDE[crabout](../../../../includes/crabout-md.md)] designing XPath queries, see [XPath Syntax](http://go.microsoft.com/fwlink/?LinkId=164592).  
   
 ## See Also  
- [Message Filters](../../../../docs/framework/wcf/feature-details/message-filters.md)   
+ [Message Filters](../../../../docs/framework/wcf/feature-details/message-filters.md)  
  [How To: Use Filters](../../../../docs/framework/wcf/feature-details/how-to-use-filters.md)

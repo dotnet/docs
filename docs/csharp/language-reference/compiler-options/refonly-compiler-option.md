@@ -41,5 +41,5 @@ Reference assemblies further remove metadata (private members) from metadata-onl
 The `/refonly` and [`/refout`](refout-compiler-option.md) options are mutually exclusive.
 
 ## See also
- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
+ [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
  [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

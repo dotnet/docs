@@ -47,5 +47,5 @@ Transactions provide a way to group a set of actions or operations into a single
  [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [ServiceModel Transaction Attributes](../../../../docs/framework/wcf/feature-details/servicemodel-transaction-attributes.md).  
   
 ## See Also  
- [ServiceModel Transaction Attributes](../../../../docs/framework/wcf/feature-details/servicemodel-transaction-attributes.md)   
+ [ServiceModel Transaction Attributes](../../../../docs/framework/wcf/feature-details/servicemodel-transaction-attributes.md)  
  [Enabling Transaction Flow](../../../../docs/framework/wcf/feature-details/enabling-transaction-flow.md)

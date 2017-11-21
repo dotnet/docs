@@ -93,5 +93,5 @@ Controls the caching mechanism for network requests.
 ```  
   
 ## See Also  
- <xref:System.Net.Cache?displayProperty=nameWithType>   
+ <xref:System.Net.Cache?displayProperty=nameWithType>  
  [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

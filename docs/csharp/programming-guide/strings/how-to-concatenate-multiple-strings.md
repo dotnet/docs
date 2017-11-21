@@ -37,7 +37,7 @@ ms.author: "wiwagn"
  [!code-csharp[csProgGuideStrings#22](../../../csharp/programming-guide/strings/codesnippet/CSharp/how-to-concatenate-multiple-strings_3.cs)]  
   
 ## See Also  
- <xref:System.String>   
- <xref:System.Text.StringBuilder>   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
+ <xref:System.String>  
+ <xref:System.Text.StringBuilder>  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
  [Strings](../../../csharp/programming-guide/strings/index.md)

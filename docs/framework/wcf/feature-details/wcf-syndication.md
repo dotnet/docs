@@ -47,5 +47,5 @@ manager: "erikre"
 ## Related Sections  
   
 ## See Also  
- [WCF Web HTTP Programming Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)   
+ [WCF Web HTTP Programming Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)  
  [Partial Trust](../../../../docs/framework/wcf/feature-details/partial-trust.md)

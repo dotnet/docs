@@ -80,7 +80,7 @@ Enables or disables networking performance counters.
 ```  
   
 ## See Also  
- <xref:System.Net.Configuration.PerformanceCountersElement?displayProperty=nameWithType>   
- <xref:System.Net.Configuration.PerformanceCountersElement.Enabled%2A?displayProperty=nameWithType>   
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)   
+ <xref:System.Net.Configuration.PerformanceCountersElement?displayProperty=nameWithType>  
+ <xref:System.Net.Configuration.PerformanceCountersElement.Enabled%2A?displayProperty=nameWithType>  
+ [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)  
  [Networking Performance Counters](http://msdn.microsoft.com/en-us/d1860235-f643-46ae-846c-ff0ed8b0e3cd)

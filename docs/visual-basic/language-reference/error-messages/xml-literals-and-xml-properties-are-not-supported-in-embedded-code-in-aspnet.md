@@ -29,6 +29,6 @@ XML literals and XML properties are not supported in embedded code within ASP.NE
 -   Move the code that includes the XML literal or XML axis property to an ASP.NET code-behind file.  
   
 ## See Also  
- [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)   
- [XML Axis Properties](../../../visual-basic/language-reference/xml-axis/xml-axis-properties.md)   
+ [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)  
+ [XML Axis Properties](../../../visual-basic/language-reference/xml-axis/xml-axis-properties.md)  
  [XML](../../../visual-basic/programming-guide/language-features/xml/index.md)

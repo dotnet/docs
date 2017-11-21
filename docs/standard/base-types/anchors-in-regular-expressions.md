@@ -177,5 +177,5 @@ manager: "wpickett"
 |`\w+`|Match one or more word characters.|  
   
 ## See Also  
- [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)   
+ [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)  
  [Regular Expression Options](../../../docs/standard/base-types/regular-expression-options.md)

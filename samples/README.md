@@ -63,7 +63,7 @@ To create a sample:
         {
             WhereClause1.QuerySyntaxExample();
 
-			// Add the method syntax as an example.
+            // Add the method syntax as an example.
             WhereClause1.MethodSyntaxExample();
         }
     }

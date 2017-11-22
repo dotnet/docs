@@ -109,7 +109,16 @@ This article demonstrates how to create a simple Windows Service application in 
     AddHandler timer.Elapsed, AddressOf Me.OnTimer  
     timer.Start()  
     ```  
-  
+     Add a member variable to the class. It will contain the identifier of the next event to write into the event log.
+
+    ```csharp
+    private int eventId = 1;
+    ```
+
+    ```vb
+    Private eventId As Integer = 1
+    ```
+
      Add code to handle the timer event:  
   
     ```csharp  

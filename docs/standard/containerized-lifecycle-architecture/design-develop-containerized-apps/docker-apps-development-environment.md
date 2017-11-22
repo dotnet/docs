@@ -32,7 +32,7 @@ When you're using Visual Studio 2015 you can install the add-on tools "Docker To
 
 You can develop Docker applications and Microsoft tools with most modern languages. The following is an initial list, but you are not limited to it:
 
--   .NET Core and ASP&period;NET Core
+-   .NET Core and ASP.NET Core
 
 -   Node.js
 

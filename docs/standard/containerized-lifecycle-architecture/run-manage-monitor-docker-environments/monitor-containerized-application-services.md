@@ -39,7 +39,7 @@ To create an Application Insights resource, follow the instructions in the artic
 -   **Application Insights Docker image at Docker Hub and Github:**  
 [https://hub.docker.com/r/microsoft/applicationinsights/](https://hub.docker.com/r/microsoft/applicationinsights/) and <https://github.com/Microsoft/ApplicationInsights-Docker>
 
--   **Set up Application Insights for ASP&period;NET:**  
+-   **Set up Application Insights for ASP.NET:**  
 [https://docs.microsoft.com/azure/application-insights/app-insights-asp-net](https://docs.microsoft.com/azure/application-insights/app-insights-asp-net)
 
 -   **Application Insights for web pages:**  

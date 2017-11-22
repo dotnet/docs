@@ -130,7 +130,7 @@ As shown in Figure 4-10, and thinking from a logical/business microservice persp
 
 Figure 4-10: Business microservice with several stateful and stateless services in Service Fabric
 
-In any case, when you use Service Fabric Stateful Reliable Services, you also have a logical or business microservice (Bounded Context) that is usually composed of multiple physical services. Each of them, the Gateway service, and Partition service could be implemented as ASP&period;NET Web API services, as shown in Figure 4-10.
+In any case, when you use Service Fabric Stateful Reliable Services, you also have a logical or business microservice (Bounded Context) that is usually composed of multiple physical services. Each of them, the Gateway service, and Partition service could be implemented as ASP.NET Web API services, as shown in Figure 4-10.
 
 In Service Fabric, you can group and deploy groups of services as a [Service Fabric Application](https://docs.microsoft.com/azure/service-fabric/service-fabric-application-model), which is the unit of packaging and deployment for the orchestrator or cluster. Therefore, the Service Fabric Application could be mapped to this autonomous business and logical microservice boundary or Bounded Context, as well.
 

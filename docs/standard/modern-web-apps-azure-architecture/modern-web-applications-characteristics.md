@@ -36,7 +36,7 @@ ASP.NET Core is optimized for the cloud (public cloud, private cloud, any cloud)
 
 ## Cross Platform
 
-ASP.NET Core is cross-platform, and can run on Linux and MacOS as well as Windows. This opens up many new options for both development and deployment of apps built with ASP.NET Core. Docker containers, which typically run Linux today, can host ASP.NET Core applications, allowing them to take advantage of the benefits of [containers and microservices](../microservices-architecture).
+ASP.NET Core is cross-platform, and can run on Linux and MacOS as well as Windows. This opens up many new options for both development and deployment of apps built with ASP.NET Core. Docker containers, which typically run Linux today, can host ASP.NET Core applications, allowing them to take advantage of the benefits of [containers and microservices](../microservices-architecture/index.md).
 
 ## Modular and Loosely Coupled
 

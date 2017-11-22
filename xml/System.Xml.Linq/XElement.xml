@@ -3812,7 +3812,7 @@ Element
 ## Remarks  
  When converting to <xref:System.Boolean> from an attribute or element, allowed values are "0", "1", and any string that produces "true" or "false" after trimming and conversion to lower case.  
   
- The equivalent method for this operator is ?qualifyHint=True&autoUpgrade=False  
+ The equivalent method for this operator is <xref:System.Xml.XmlConvert.ToBoolean(System.String)?displayProperty=fullName>.
   
 ## Examples  
  The following example creates some elements with boolean values. It then casts them to <xref:System.Boolean>.  
@@ -3899,16 +3899,15 @@ Console.WriteLine("(bool)BoolValue2={0}", bool2)
   
  Behavior is lax when casting to a <xref:System.DateTime> from an attribute or element. Even if the attribute or element value is not formatted exactly per the W3C specification, the value is appropriately converted to a <xref:System.DateTime>.  
   
- This conversion operator uses <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName> to convert from a <xref:System.DateTime>.  
-  
- The equivalent method for this operator is [Explicit Conversion (XElement to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XElement>  --> element)?qualifyHint=True&autoUpgrade=False)  
-  
+ This conversion operator uses <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName> to convert from a <xref:System.DateTime>.
+
+ The equivalent method for this operator is <xref:System.DateTime.Parse(System.String,System.IFormatProvider,System.Globalization.DateTimeStyles)?displayProperty=fullName>.
+
 ## Examples  
  The following example creates an element with date and time content. It then casts it to <xref:System.DateTime> to retrieve the value.  
   
 ```csharp  
-  
-                // Behavior is strict when formatting an XML element or attribute from a DateTime,  
+// Behavior is strict when formatting an XML element or attribute from a DateTime,  
 // but behavior is lax when casting to a DateTime from an element or attribute.  
 XElement root = new XElement("Root", new DateTime(2006, 10, 6, 12, 30, 0));  
 Console.WriteLine(root);  
@@ -3926,8 +3925,7 @@ Console.WriteLine("orderDate={0:d}", orderDate);
 ```  
   
 ```vb  
-  
-                ' Behavior is strict when formatting an XML element or attribute from a DateTime,  
+' Behavior is strict when formatting an XML element or attribute from a DateTime,  
 ' but behavior is lax when casting to a DateTime from an element or attribute.  
 Dim root As XElement = <Root><%= New DateTime(2006, 10, 6, 12, 30, 0) %></Root>  
 Console.WriteLine(root)  
@@ -3949,7 +3947,7 @@ Console.WriteLine("orderDate={0:d}", orderDate)
   
 ```  
   
-                <Root>2006-10-06T12:30:00</Root>  
+<Root>2006-10-06T12:30:00</Root>  
 dt=10/6/2006 12:30:00 PM  
 -----  
 <OrderDate>October 6, 2006</OrderDate>  
@@ -4003,7 +4001,7 @@ orderDate=10/6/2006
 ## Remarks  
  This conversion operator uses the <xref:System.Xml.XmlConvert> class to do the conversion.  
   
- The equivalent method for this operator is [Explicit Conversion (XElement to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(XAttribute>  --> attribute)?qualifyHint=True&autoUpgrade=False)  
+ The equivalent method for this operator is <xref:System.Xml.XmlConvert.ToDateTimeOffset(System.String)?displayProperty=fullName>. 
   
 ## Examples  
  The following example creates an element with date and time content. It then casts to <xref:System.DateTimeOffset> to retrieve the value.  
@@ -4083,7 +4081,7 @@ dt=10/6/2006 12:30:00 PM -07:00
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XElement" /> to a <see cref="T:System.Decimal" />.</summary>
         <returns>A <see cref="T:System.Decimal" /> that contains the content of this <see cref="T:System.Xml.Linq.XElement" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is ?qualifyHint=True&autoUpgrade=False  
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Xml.XmlConvert.ToDecimal(System.String)?displayProperty=fullName>. 
   
 ## Examples  
  The following example creates an element with a decimal value. It then retrieves the value of the attribute by casting to <xref:System.Decimal>.  
@@ -4152,7 +4150,7 @@ value=79228162514264337593543950335
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XElement" /> to a <see cref="T:System.Double" />.</summary>
         <returns>A <see cref="T:System.Double" /> that contains the content of this <see cref="T:System.Xml.Linq.XElement" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is ?qualifyHint=True&autoUpgrade=False  
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Xml.XmlConvert.ToDouble(System.String)?displayProperty=fullName>.
   
 ## Examples  
  The following example creates an attribute with `double` content. It then retrieves the value by casting to <xref:System.Double>.  
@@ -4220,7 +4218,7 @@ value=1.79769313486231E+308
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XElement" /> to a <see cref="T:System.Guid" />.</summary>
         <returns>A <see cref="T:System.Guid" /> that contains the content of this <see cref="T:System.Xml.Linq.XElement" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is ?qualifyHint=True&autoUpgrade=False  
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Xml.XmlConvert.ToGuid(System.String)?displayProperty=fullName>.
   
 ## Examples  
  The following example creates an element with a guid as content. It then retrieves the value by casting to <xref:System.Guid>.  
@@ -4288,7 +4286,7 @@ value=3c1cc55b-baff-4b7a-9d17-077af3aa5730
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XElement" /> to an <see cref="T:System.Int32" />.</summary>
         <returns>A <see cref="T:System.Int32" /> that contains the content of this <see cref="T:System.Xml.Linq.XElement" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is ?qualifyHint=True&autoUpgrade=False  
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Xml.XmlConvert.ToInt32(System.String)?displayProperty=fullName>.
   
 ## Examples  
  The following example creates an element with an integer as content. It then retrieves the value by casting to <xref:System.Int32>.  
@@ -4356,7 +4354,7 @@ value=2147483647
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XElement" /> to an <see cref="T:System.Int64" />.</summary>
         <returns>A <see cref="T:System.Int64" /> that contains the content of this <see cref="T:System.Xml.Linq.XElement" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is ?qualifyHint=True&autoUpgrade=False  
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Xml.XmlConvert.ToInt64(System.String)?displayProperty=fullName>
   
 ## Examples  
  The following example creates an element with a long integer as content. It then retrieves the value of the element by casting to <xref:System.Int64>.  
@@ -4429,7 +4427,7 @@ value=9223372036854775807
 ## Remarks  
  When converting to <xref:System.Nullable%601> of <xref:System.Boolean> from an attribute or element, allowed values are "0", "1", and any string that produces "true" or "false" after trimming and conversion to lower case.  
   
- The equivalent method for this operator is ?qualifyHint=True&autoUpgrade=False  
+ The equivalent method for this operator is <xref:System.Xml.XmlConvert.ToBoolean(System.String)?displayProperty=fullName>.
   
 ## Examples  
  The following example creates an element with boolean content. It then retrieves the value by casting to <xref:System.Nullable%601> of <xref:System.Boolean>.  
@@ -4516,7 +4514,7 @@ Nullable Boolean: value2=False
   
  This conversion operator uses <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName> to convert from a <xref:System.DateTime>.  
   
- The equivalent method for this operator is ?qualifyHint=True&autoUpgrade=False  
+ The equivalent method for this operator is <xref:System.DateTime.Parse(System.String,System.IFormatProvider,System.Globalization.DateTimeStyles)?displayProperty=fullName>.
   
 ## Examples  
  The following example creates an element with a date and time as content. It then retrieves the value by casting to <xref:System.Nullable%601> of <xref:System.DateTime>.  
@@ -4592,7 +4590,7 @@ Nullable DateTime: value=10/6/2006 12:30:00 PM
 ## Remarks  
  This conversion operator uses the <xref:System.Xml.XmlConvert> class to do the conversion.  
   
- The equivalent method for this operator is [Explicit Conversion (XElement to](<!-- TODO: review code entity reference <xref:assetId:///op_Explicit(X>  --> Element element )?qualifyHint=True&autoUpgrade=False)  
+ The equivalent method for this operator is <xref:System.Xml.XmlConvert.ToDateTimeOffset(System.String)?displayProperty=fullName>.
   
 ## Examples  
  The following example creates an element with date and time content. It then casts to <xref:System.Nullable%601> of <xref:System.DateTimeOffset> to retrieve the value.  
@@ -4671,7 +4669,7 @@ dt=10/6/2006 12:30:00 PM -07:00
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XElement" /> to a <see cref="T:System.Nullable`1" /> of <see cref="T:System.Decimal" />.</summary>
         <returns>A <see cref="T:System.Nullable`1" /> of <see cref="T:System.Decimal" /> that contains the content of this <see cref="T:System.Xml.Linq.XElement" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is ?qualifyHint=True&autoUpgrade=False  
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Xml.XmlConvert.ToDecimal(System.String)?displayProperty=fullName>.
   
 ## Examples  
  The following example creates an element with decimal content. It then retrieves the value by casting to <xref:System.Nullable%601> of <xref:System.Decimal>.  
@@ -4742,7 +4740,7 @@ Nullable decimal: value=79228162514264337593543950335
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XElement" /> to a <see cref="T:System.Nullable`1" /> of <see cref="T:System.Double" />.</summary>
         <returns>A <see cref="T:System.Nullable`1" /> of <see cref="T:System.Double" /> that contains the content of this <see cref="T:System.Xml.Linq.XElement" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is ?qualifyHint=True&autoUpgrade=False  
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Xml.XmlConvert.ToDouble(System.String)?displayProperty=fullName>.
   
 ## Examples  
  The following example creates an element with double precision floating point content. It then retrieves the value by casting to <xref:System.Nullable%601> of <xref:System.Double>.  
@@ -4814,7 +4812,7 @@ Nullable double: value=1.79769313486231E+308
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XElement" /> to a <see cref="T:System.Nullable`1" /> of <see cref="T:System.Guid" />.</summary>
         <returns>A <see cref="T:System.Nullable`1" /> of <see cref="T:System.Guid" /> that contains the content of this <see cref="T:System.Xml.Linq.XElement" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is ?qualifyHint=True&autoUpgrade=False  
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Xml.XmlConvert.ToGuid(System.String)?displayProperty=fullName>.
   
 ## Examples  
  The following example creates an element with guid content. It then retrieves the value by casting to <xref:System.Nullable%601> of <xref:System.Guid>.  
@@ -4885,7 +4883,7 @@ Nullable Guid: value=3c1cc55b-baff-4b7a-9d17-077af3aa5730
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XElement" /> to a <see cref="T:System.Nullable`1" /> of <see cref="T:System.Int32" />.</summary>
         <returns>A <see cref="T:System.Nullable`1" /> of <see cref="T:System.Int32" /> that contains the content of this <see cref="T:System.Xml.Linq.XElement" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is ?qualifyHint=True&autoUpgrade=False  
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Xml.XmlConvert.ToInt32(System.String)?displayProperty=fullName>.
   
 ## Examples  
  The following example creates an element with unsigned integer content. It then retrieves the value by casting to <xref:System.Nullable%601> of <xref:System.Int32>.  
@@ -4957,7 +4955,7 @@ Nullable integer: value=2147483647
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XElement" /> to a <see cref="T:System.Nullable`1" /> of <see cref="T:System.Int64" />.</summary>
         <returns>A <see cref="T:System.Nullable`1" /> of <see cref="T:System.Int64" /> that contains the content of this <see cref="T:System.Xml.Linq.XElement" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is ?qualifyHint=True&autoUpgrade=False  
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Xml.XmlConvert.ToInt64(System.String)?displayProperty=fullName>.
   
 ## Examples  
  The following example creates an element with long integer content. It then retrieves the value by casting to <xref:System.Nullable%601> of <xref:System.Int64>.  
@@ -5028,7 +5026,7 @@ Nullable ulong: value=9223372036854775807
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XElement" /> to a <see cref="T:System.Nullable`1" /> of <see cref="T:System.Single" />.</summary>
         <returns>A <see cref="T:System.Nullable`1" /> of <see cref="T:System.Single" /> that contains the content of this <see cref="T:System.Xml.Linq.XElement" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is ?qualifyHint=True&autoUpgrade=False  
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Xml.XmlConvert.ToSingle(System.String)?displayProperty=fullName>.
   
 ## Examples  
  The following example creates an element with single precision floating point content. It then retrieves the value by casting to <xref:System.Nullable%601> of <xref:System.Single>.  
@@ -5106,7 +5104,7 @@ Nullable Single: value=3.402823E+38
   
  Behavior is lax when casting to a <xref:System.Nullable%601> of <xref:System.TimeSpan> from an attribute or element. Even if the attribute or element value is not formatted exactly per the W3C specification, the value is appropriately converted to a <xref:System.Nullable%601> of <xref:System.TimeSpan>.  
   
- The equivalent method for this operator is ?qualifyHint=True&autoUpgrade=False  
+ The equivalent method for this operator is <xref:System.Xml.XmlConvert.ToTimeSpan(System.String)?displayProperty=fullName>.
   
 ## Examples  
  The following example creates an element with time span content. It then retrieves the value by casting to <xref:System.Nullable%601> of <xref:System.TimeSpan>.  
@@ -5177,7 +5175,7 @@ Nullable TimeSpan: value=01:05:30
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XElement" /> to a <see cref="T:System.Nullable`1" /> of <see cref="T:System.UInt32" />.</summary>
         <returns>A <see cref="T:System.Nullable`1" /> of <see cref="T:System.UInt32" /> that contains the content of this <see cref="T:System.Xml.Linq.XElement" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is ?qualifyHint=True&autoUpgrade=False  
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Xml.XmlConvert.ToUInt32(System.String)?displayProperty=fullName>.
   
 ## Examples  
  The following example creates an element with unsigned integer content. It then retrieves the value by casting to <xref:System.Nullable%601> of <xref:System.UInt32>.  
@@ -5248,7 +5246,7 @@ Nullable uint: value=4294967295
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XElement" /> to a <see cref="T:System.Nullable`1" /> of <see cref="T:System.UInt64" />.</summary>
         <returns>A <see cref="T:System.Nullable`1" /> of <see cref="T:System.UInt64" /> that contains the content of this <see cref="T:System.Xml.Linq.XElement" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is ?qualifyHint=True&autoUpgrade=False  
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Xml.XmlConvert.ToUInt64(System.String)?displayProperty=fullName>.
   
 ## Examples  
  The following example creates an element with unsigned long integer content. It then retrieves the value by casting to <xref:System.Nullable%601> of <xref:System.UInt64>.  
@@ -5320,7 +5318,7 @@ Nullable ulong: value=9223372036854775807
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XElement" /> to a <see cref="T:System.Single" />.</summary>
         <returns>A <see cref="T:System.Single" /> that contains the content of this <see cref="T:System.Xml.Linq.XElement" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is ?qualifyHint=True&autoUpgrade=False  
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Xml.XmlConvert.ToSingle(System.String)?displayProperty=fullName>.
   
 ## Examples  
  The following example creates an element with single precision floating point content. It then retrieves the value by casting to <xref:System.Single>.  
@@ -5393,8 +5391,6 @@ value=3.402823E+38
 ## Remarks  
  If the <xref:System.Xml.Linq.XElement> has children, the concatenated string value of all of the element's text and descendant's text is returned.  
   
- The equivalent method for this operator is ?qualifyHint=True&autoUpgrade=False  
-  
 ## Examples  
  The following example creates an element with string content. It then retrieves the value by casting to <xref:System.String>.  
   
@@ -5464,7 +5460,7 @@ Console.WriteLine("(string)root={0}", root.Value)
   
  Behavior is lax when casting to a <xref:System.TimeSpan> from an attribute or element. Even if the attribute or element value is not formatted exactly per the W3C specification, the value is appropriately converted to a <xref:System.TimeSpan>.  
   
- The equivalent method for this operator is ?qualifyHint=True&autoUpgrade=False  
+ The equivalent method for this operator is <xref:System.Xml.XmlConvert.ToTimeSpan(System.String)?displayProperty=fullName>.
   
 ## Examples  
  The following example creates an element with time span content. It then retrieves the value by casting to <xref:System.TimeSpan>.  
@@ -5532,7 +5528,7 @@ value=01:05:30
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XElement" /> to a <see cref="T:System.UInt32" />.</summary>
         <returns>A <see cref="T:System.UInt32" /> that contains the content of this <see cref="T:System.Xml.Linq.XElement" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is ?qualifyHint=True&autoUpgrade=False  
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Xml.XmlConvert.ToUint32(System.String)?displayProperty=fullName>.
   
 ## Examples  
  The following example creates an element with unsigned integer content. It then retrieves the value by casting to <xref:System.UInt32>.  
@@ -5600,7 +5596,7 @@ value=4294967295
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XElement" /> to a <see cref="T:System.UInt64" />.</summary>
         <returns>A <see cref="T:System.UInt64" /> that contains the content of this <see cref="T:System.Xml.Linq.XElement" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is ?qualifyHint=True&autoUpgrade=False  
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Xml.XmlConvert.ToUInt64(System.String)?displayProperty=fullName>.
   
 ## Examples  
  The following example creates an element with unsigned long integer content. It then retrieves the value by casting to <xref:System.UInt64>.  

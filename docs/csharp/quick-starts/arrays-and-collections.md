@@ -9,15 +9,16 @@ ms.topic: article
 ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
+ms.custom: mvc
 ---
 # C# Quick start: Collections #
 
-This tutorial provides an introduction to the C# language and the basics of the <xref:System.Collections.Generic.List%601>
+This quick start provides an introduction to the C# language and the basics of the <xref:System.Collections.Generic.List%601>
 class.
 
-## A simple list example.
+This quick start expects you to have a machine you can use for development. The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting up your local development environment on Mac, PC or Linux.
 
-This lesson assumes you've finished the online quick starts and you've installed the [.NET Core SDK](http://dot.net/core). You also need a code editor. If you don't have one, we recommend [Visual Studio](https://www.visualstudio.com/). You can choose Visual Studio for Mac or Windows. Visual Studio Code is available for Linux, Mac and Windows. 
+## A basic list example.
 
 Create a directory named **list-quickstart**. Make that the current directory and run `dotnet new console`.
 
@@ -209,11 +210,13 @@ See if you can put together some of the lessons from this and earlier lessons. E
 
 ## Complete challenge
 
-You can see an example solution by [looking at the finished sample code on GitHub](https://github.com/dotnet/docs/tree/master/samples/csharp/list-quickstart/Program.cs)
+You can see an example solution by [looking at the finished sample code on GitHub](https://github.com/dotnet/docs/tree/master/samples/csharp/list-quickstart/Program.cs#L13-L23)
 
 With each iteration of the loop, you're taking the last two integers in the list, summing them, and adding that value to the list. The loop repeats until you've added 20 items to the list.
 
-Congratulations, you've completed the list tutorial.
+Congratulations, you've completed the list quick start. You can continue with
+the [Introduction to classes](introduction-to-classes.md) quick start in
+your own development environment.
 
 You can learn more about working with the `List` type in the
 [.NET Guide](../../standard/index.md) topic on [collections](../../standard/collections/index.md). You'll also learn about many other collection types.

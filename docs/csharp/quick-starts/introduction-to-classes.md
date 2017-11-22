@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
+ms.custom: mvc
 ---
 # Introduction to classes
 

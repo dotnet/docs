@@ -9,6 +9,7 @@ ms.topic: article
 ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
+ms.custom: mvc
 ---
 # C# Quick starts #
 
@@ -19,28 +20,37 @@ The first lessons explain C# concepts using small snippets of code. You'll
 learn the basics of C# syntax and how to work with data types like strings,
 numbers, and booleans. It's all interactive, and you'll be writing code
 within minutes. These first lessons assume no prior knowledge of
-programming or the C# language.
+programming or the C# language. 
+
+All the quick starts following the Hello World lesson are available using
+the online browser experience or on your own development
+environment. At the end of each lesson, you decide if you want to continue
+with the next quick start online or on your own machine. There are links
+to help you setup your environment and continue with the next quick start
+on your machine.
 
 ## [Hello world](hello-world.yml)
 
-In the [Hello world](hello-world.yml) lesson, you'll create the most basic
-C#. You'll explore the `string` type and how to work with text.
+In the [Hello world](hello-world.yml) quick start, you'll create the most basic
+C# program. You'll explore the `string` type and how to work with text.
 
 ## [Numbers in C#](numbers-in-csharp.yml)
 
-In the [Numbers in C#](numbers-in-csharp.yml) lesson, you'll learn
+In the [Numbers in C#](numbers-in-csharp.yml) quick start, you'll learn
 how computers store numbers and how to perform calculations with different
 number types. You'll learn the basics of rounding, and how to perform
-mathematical calculations using C#.
+mathematical calculations using C#. This quick start is also available
+[to run locally on your machine](numbers-in-csharp-local.md).
 
-This lesson assumes that you have finished the [Hello world](hello-world.yml) tutorial.
+This quick start assumes that you have finished the [Hello world](hello-world.yml) tutorial.
 
 ## [Branches and loops](branches-and-loops.yml)
 
-The [Branches and loops](branches-and-loops.yml) lesson teaches the basics of selecting
+The [Branches and loops](branches-and-loops.yml) quick start teaches the basics of selecting
 different paths of code based on the values stored in variables. You'll learn the
-basics of control flow, which is the basics of how programs make decisions and choose
-different actions.
+basics of control flow, which is the basis of how programs make decisions and choose
+different actions. This quick start is also available
+[to run locally on your machine](branches-and-loops-local.md).
 
 This beginning lesson assumes that you have finished the [Hello World](hello-world.yml) and
 [Numbers in C#](numbers-in-csharp.yml) lessons.
@@ -48,15 +58,14 @@ This beginning lesson assumes that you have finished the [Hello World](hello-wor
 ## [List collection](list-collection.yml)
 
 The [List collection](list-collection.yml) lesson gives you
-a tour of the List collection type that stores sequences of data. You'll learn how to add and remove items, search for items, and remove items and sort the lists. You'll explore different kinds of lists.
+a tour of the List collection type that stores sequences of data. You'll learn how to add and remove items, search for items, and remove items and sort the lists. You'll explore different kinds of lists. This quick start is also
+available [to run locally on your machine](arrays-and-collections.md).
 
-This beginning lesson assumes that you have finished the quick starts listed above.
-
-You can also try this lesson [using the develoment environment on your machine](arrays-and-collections.md).
+This beginning quick start assumes that you have finished the quick starts listed above.
 
 ## [Introduction to classes](introduction-to-classes.md)
 
-This final quickstart runs on your machine, using your own local development environment and .NET Core.
+This final quickstart is only available to run on your machine, using your own local development environment and .NET Core.
 You'll build a console application and see the basic object-oriented features that are part of the C# language.
 
-This lesson assumes you've finished the online quick starts, and you've installed [.NET Core SDK](http://dot.net/core) and [Visual Studio Code](https://code.visualstudio.com/).
+This quick start assumes you've finished the online quick starts, and you've installed [.NET Core SDK](http://dot.net/core) and [Visual Studio Code](https://code.visualstudio.com/).

@@ -5528,7 +5528,7 @@ value=01:05:30
         <summary>Cast the value of this <see cref="T:System.Xml.Linq.XElement" /> to a <see cref="T:System.UInt32" />.</summary>
         <returns>A <see cref="T:System.UInt32" /> that contains the content of this <see cref="T:System.Xml.Linq.XElement" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Xml.XmlConvert.ToUint32(System.String)?displayProperty=fullName>.
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Xml.XmlConvert.ToUInt32(System.String)?displayProperty=fullName>.
   
 ## Examples  
  The following example creates an element with unsigned integer content. It then retrieves the value by casting to <xref:System.UInt32>.  

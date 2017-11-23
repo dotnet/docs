@@ -12,10 +12,10 @@ Public Class GetUpdateHistory
                             Using kbKey As RegistryKey = updateKey.OpenSubKey(kbKeyName)
                                 Console.WriteLine("  " & kbKeyName)
                             End Using
-                        Next kbKeyName
+                        Next
                     End Using
                 End If
-            Next baseKeyName
+            Next
         End Using
     End Sub
 End Class

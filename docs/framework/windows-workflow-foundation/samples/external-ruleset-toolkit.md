@@ -138,6 +138,4 @@ Normally when rules are used within a workflow application, the rules are part o
 10. You can now run the `RuleSetToolkitUsageSample` project as you would any other workflow console application. Press F5 or Ctrl+F5 within [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] or run the RuleSetToolkitUsageSample.exe file directly.  
   
     > [!NOTE]
-    >  You must close the RuleSet tool to recompile the usage sample, because the tool loads the usage sample assembly.  
-  
-## See Also
+    >  You must close the RuleSet tool to recompile the usage sample, because the tool loads the usage sample assembly.

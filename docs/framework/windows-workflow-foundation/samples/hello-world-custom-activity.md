@@ -54,6 +54,4 @@ This sample demonstrates several key features of [!INCLUDE[wf](../../../../inclu
   
 2.  To build the solution, press CTRL+SHIFT+B.  
   
-3.  To run the solution, press F5.  
-  
-## See Also
+3.  To run the solution, press F5.

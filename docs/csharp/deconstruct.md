@@ -45,7 +45,7 @@ There are three ways to deconstruct a tuple:
 
     This is cumbersome and is not recommended.
 
-- Lastly, you may deconstruct the typle into variables that have already been declared.
+- Lastly, you may deconstruct the tuple into variables that have already been declared.
 
     [!code-csharp[Deconstruction-Declared](../../samples/snippets/csharp/programming-guide/deconstructing-tuples/deconstruct-tuple5.cs#1)]
 

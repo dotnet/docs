@@ -40,7 +40,7 @@ Remember that using uninitialized variables in C# is not allowed.
 |[bool](../../../csharp/language-reference/keywords/bool.md)|`false`|
 |[byte](../../../csharp/language-reference/keywords/byte.md)|0|
 |[char](../../../csharp/language-reference/keywords/char.md)|'\0'|
-|[decimal](../../../csharp/language-reference/keywords/decimal.md)|0.0M|
+|[decimal](../../../csharp/language-reference/keywords/decimal.md)|0M|
 |[double](../../../csharp/language-reference/keywords/double.md)|0.0D|
 |[enum](../../../csharp/language-reference/keywords/enum.md)|The value produced by the expression (E)0, where E is the enum identifier.|
 |[float](../../../csharp/language-reference/keywords/float.md)|0.0F|

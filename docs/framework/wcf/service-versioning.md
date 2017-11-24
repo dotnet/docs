@@ -163,14 +163,15 @@ public class PurchaseOrderV1 : IPurchaseOrderV1
 public interface IPurchaseOrderV2  
 {  
     DateTime OrderDate { get; set; }  
-}  
+}
+
 [DataContract(   
-Name = "PurchaseOrder ",  
+Name = "PurchaseOrder",  
 Namespace = "http://examples.microsoft.com/WCF/2006/02/PurchaseOrder")]  
 public class PurchaseOrderV2 : IPurchaseOrderV1, IPurchaseOrderV2  
 {  
     [DataMember(...)]  
-    public DateTime OrderId {...}  
+    public string OrderId {...}  
     [DataMember(...)]  
     public string CustomerId {...}  
     [DataMember(...)]  

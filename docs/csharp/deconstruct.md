@@ -54,7 +54,7 @@ same type. This generates compiler error CS8136, "Deconstruction 'var (...)' for
 
 Note that you must also assign each element of the tuple to a variable. If you omit any elements, the compiler generates error CS8132, "Cannot deconstruct a tuple of 'x' elements into 'y' variables."
 
-Note that you cannot mix declarations and assignments to existing variables on the left-hand side of a deconstruction. If you try to deconstruct a tuple into newly declared variables as well as variables that have already been declared, the compiler generates error CS8184, "A deconstruction cannot mix declarations and expressions on the left-hand-side."
+Note that you cannot mix declarations and assignments to existing variables on the left-hand side of a deconstruction. The compiler generates error CS8184, "a deconstruction cannot mix declarations and expressions on the left-hand-side." when the members include newly declared and existing variables.
 
 ## Deconstructing tuple elements with discards
 

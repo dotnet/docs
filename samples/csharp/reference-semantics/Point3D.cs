@@ -28,7 +28,7 @@ namespace reference_semantics
         public double Y { get; }
         public double Z { get; }
 
-        private static ReadonlyPoint3D origin = new ReadonlyPoint3D();
+        private static readonly ReadonlyPoint3D origin = new ReadonlyPoint3D();
         public static ref readonly ReadonlyPoint3D Origin => ref origin;
     }
 #endregion    

@@ -337,7 +337,9 @@
 ## Remarks  
  The cancellation token returned by this property cannot be canceled; that is, its <xref:System.Threading.CancellationToken.CanBeCanceled%2A> property is `false`.  
   
- You can also use the C#  [default(CancellationToken)](~/docs/csharp/language-reference/keywords/default.md) statement to create an empty cancellation token.  
+ You can also use the C#  [default(CancellationToken)](~/docs/csharp/language-reference/keywords/default.md) statement to create an empty cancellation token. 
+
+ Two empty cancellation tokens are always equal.
   
  ]]></format>
         </remarks>

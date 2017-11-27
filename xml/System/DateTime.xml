@@ -46,6 +46,12 @@
     <summary>Represents an instant in time, typically expressed as a date and time of day.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
+## Examples  
+ The following example demonstrates how to compare roughly equivalent <xref:System.DateTime> values, accepting a small margin of difference when declaring them equal.  
+  
+ [!code-cpp[DateTime Equivalency Example#1](~/samples/snippets/cpp/VS_Snippets_CLR/DateTime Equivalency Example/CPP/datetimesample.cpp#1)]
+ [!code-csharp[DateTime Equivalency Example#1](~/samples/snippets/csharp/VS_Snippets_CLR/DateTime Equivalency Example/CS/datetimesample.cs#1)]
+ [!code-vb[DateTime Equivalency Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/DateTime Equivalency Example/VB/datetimesample.vb#1)]  
   
 ## Remarks  
   
@@ -381,16 +387,7 @@
  When only a time is passed from the .NET Framework to COM, special processing is performed that converts the time to the format used by COM. When only a time is passed from COM to the .NET Framework, no special processing is performed because that would corrupt legitimate dates and times on or before December 30, 1899. This also means if a date starts its round-trip from COM, the .NET Framework and COM preserve the date.  
   
  The behavior of the .NET Framework and COM means that if your application round-trips a <xref:System.DateTime> that only specifies a time, your application must remember to modify or ignore the erroneous date from the final <xref:System.DateTime> object.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to compare roughly equivalent <xref:System.DateTime> values, accepting a small margin of difference when declaring them equal.  
-  
- [!code-cpp[DateTime Equivalency Example#1](~/samples/snippets/cpp/VS_Snippets_CLR/DateTime Equivalency Example/CPP/datetimesample.cpp#1)]
- [!code-csharp[DateTime Equivalency Example#1](~/samples/snippets/csharp/VS_Snippets_CLR/DateTime Equivalency Example/CS/datetimesample.cs#1)]
- [!code-vb[DateTime Equivalency Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/DateTime Equivalency Example/VB/datetimesample.vb#1)]  
-  
+     
  ]]></format>
     </remarks>
     <threadsafe>All members of this type are thread safe. Members that appear to modify instance state actually return a new instance initialized with the new value. As with any other type, reading and writing to a shared variable that contains an instance of this type must be protected by a lock to guarantee thread safety.</threadsafe>

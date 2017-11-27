@@ -26,7 +26,7 @@ This sample consists of an activity (`CreateLocation`), which has two interestin
   
 -   `[OverloadGroup]` puts together a set of arguments, so that the user of the activity can choose between using one set or another. The user cannot use arguments from different Overload Groups in the same instance.  
   
- After setting up different workflows, call <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A> which returns a <xref:System.Activities.Validation.ValidationResults> collection of <!--zz <xref:System.Activities.Validation.ConstraintViolation>--> `System.Activities.Validation.ConstraintViolation`. Print the <!--zz <xref:System.Activities.Validation.ConstraintViolation>--> `System.Activities.Validation.ConstraintViolation` objects to the console.  
+ After setting up different workflows, call <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A> which returns a <xref:System.Activities.Validation.ValidationResults> collection of <xref:System.Activities.Validation.Constraint>. Print the <xref:System.Activities.Validation.Constraint> objects to the console.  
   
 ### To set up, build, and run the sample  
   

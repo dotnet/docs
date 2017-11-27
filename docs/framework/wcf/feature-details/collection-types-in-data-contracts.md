@@ -161,7 +161,7 @@ A *collection* is a list of items of a certain type. In the [!INCLUDE[dnprdnshor
   
 ```xml  
 <CustomerList4>  
-    <customer>...</ customer>  
+    <customer>...</customer>  
     <customer>...</customer>  
     <customer>...</customer>  
     ...  

@@ -474,7 +474,7 @@
         <summary>Converts a <see cref="T:System.Data.SqlTypes.SqlBinary" /> structure to a <see cref="T:System.Data.SqlTypes.SqlBytes" /> structure.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBytes" /> structure.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is ?qualifyHint=True&autoUpgrade=False]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBytes.%23ctor(System.Data.SqlTypes.SqlBinary)?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -511,7 +511,7 @@
         <summary>Converts a <see cref="T:System.Data.SqlTypes.SqlBytes" /> structure to a <see cref="T:System.Data.SqlTypes.SqlBinary" /> structure.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBinary" /> structure.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is ?qualifyHint=True&autoUpgrade=False]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBytes.ToSqlBinary?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>

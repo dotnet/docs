@@ -68,9 +68,13 @@ namespace Microsoft.Security.Samples
 
 
     // <Snippet11>
-    [DataContract] public class Student {
-        [DataMember] public string name;
-        [DataMember] public IList<int> testMarks;
+    [DataContract]
+    public class Student
+    {
+        [DataMember]
+        public string name;
+        [DataMember]
+        public IList<int> testMarks;
     }
     public class Marks1 : List<int> {}
     [CollectionDataContract(ItemName="mark")]
@@ -142,7 +146,6 @@ namespace Microsoft.Security.Samples
             Test t = new Test();
             Console.WriteLine("Starting....");
             t.Run();
-
         }
 
         private void Run()
@@ -202,16 +205,22 @@ namespace Microsoft.Security.Samples
 
 
     // <Snippet1>
-    [DataContract(Name="Customer")] public class Customer1
+    [DataContract(Name="Customer")]
+    public class Customer1
     {
-        [DataMember] public string customerName;
-        [DataMember] public Collection<Address> addresses;
+        [DataMember]
+        public string customerName;
+        [DataMember]
+        public Collection<Address> addresses;
     }
 
-    [DataContract(Name="Customer")] public class Customer2
+    [DataContract(Name="Customer")]
+    public class Customer2
     {
-        [DataMember] public string customerName;
-        [DataMember] public ICollection<Address> addresses;
+        [DataMember]
+        public string customerName;
+        [DataMember]
+        public ICollection<Address> addresses;
     }
     // </Snippet1>
 
@@ -222,7 +231,7 @@ namespace Microsoft.Security.Samples
     // </Snippet2>
 
     // <Snippet3>
-     [CollectionDataContract(Name="cust_list")]
+    [CollectionDataContract(Name="cust_list")]
     public class CustomerList3 : Collection<string> {}
     // </Snippet3>
 
@@ -244,9 +253,12 @@ namespace Microsoft.Security.Samples
     [DataContract]
     public class Employee
     {
-        [DataMember] public string name = "John Doe";
-        [DataMember] public Payroll payrollRecord;
-        [DataMember] public Training trainingRecord;
+        [DataMember]
+        public string name = "John Doe";
+        [DataMember]
+        public Payroll payrollRecord;
+        [DataMember]
+        public Training trainingRecord;
     }
 
     [DataContract]
@@ -254,10 +266,13 @@ namespace Microsoft.Security.Samples
     [KnownType(typeof(ArrayList))] //required because ArrayList is used polymorphically
     public class Payroll
     {
-        [DataMember] public object salaryPayments = new int[12];
+        [DataMember]
+        public object salaryPayments = new int[12];
         //float[] not needed in known types because polymorphic assignment is to another collection type
-        [DataMember] public IEnumerable<float> stockAwards = new float[12];
-        [DataMember] public object otherPayments = new ArrayList();
+        [DataMember]
+        public IEnumerable<float> stockAwards = new float[12];
+        [DataMember]
+        public object otherPayments = new ArrayList();
     }
 
     [DataContract]
@@ -269,15 +284,20 @@ namespace Microsoft.Security.Samples
     [KnownType(typeof(OutsideTraining))] //Required if OutsideTraining can be used in the collection
     public class Training
     {
-        [DataMember] public object training = new List<object>();
+        [DataMember]
+        public object training = new List<object>();
     }
 
-    [DataContract] public class InHouseTraining {
-        //code omitted…
+    [DataContract]
+    public class InHouseTraining
+    {
+        //code omitted
     }
 
-    [DataContract] public class OutsideTraining {
-        //code omitted…
+    [DataContract]
+    public class OutsideTraining
+    {
+        //code omitted
     }
     // </Snippet6>
 
@@ -351,7 +371,6 @@ namespace Microsoft.Security.Samples
     [CollectionDataContract(Name = "Cities", ItemName = "city", KeyName = "cityName", ValueName = "population")]
     public class CityList : IDictionary<string, int>, IEnumerable<System.Collections.Generic.KeyValuePair<string, int>>
     {
-
         private Person[] _people = null;
 
         public bool ContainsKey(string s) { return true; }
@@ -413,11 +432,8 @@ namespace Microsoft.Security.Samples
 
         public IEnumerator GetEnumerator()
         {
-
             return new PeopleEnum(_people);
-
         }
-
     }
 
     // </Snippet7>

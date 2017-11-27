@@ -175,6 +175,4 @@ This sample shows how to create a very basic Request for Proposals (RFP) based p
   
 -   **View RFP**: Shows the content of an existing RFP. Vendors can submit their proposals (if invited or the RFP is not finished)  
   
--   **Connect As**: The user can access the RFP using different identities by selecting the desired participant in the **View as** combo box in the active RFPs grid.  
-  
-## See Also
+-   **Connect As**: The user can access the RFP using different identities by selecting the desired participant in the **View as** combo box in the active RFPs grid.

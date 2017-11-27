@@ -237,6 +237,4 @@ This sample demonstrates how to implement a business process using messaging act
   
 1.  Delete the SQL Server instance store by running Cleanup.bat, located in DbSetup folder.  
   
-2.  Delete the source code form your hard drive.  
-  
-## See Also
+2.  Delete the source code form your hard drive.

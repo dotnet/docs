@@ -150,6 +150,4 @@ This sample demonstrates the use of many [!INCLUDE[wf](../../../../includes/wf-m
   
 ##### To clean up  
   
-1.  From a [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)] command prompt, navigate to the DocumentApprovalProcess folder and run Cleanup.cmd.  
-  
-## See Also
+1.  From a [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)] command prompt, navigate to the DocumentApprovalProcess folder and run Cleanup.cmd.

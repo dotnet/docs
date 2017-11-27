@@ -41,8 +41,8 @@
       </Parameters>
       <Docs>
         <typeparam name="T">The type of reference.</typeparam>
-        <param name="source">TThe reference to add the offset to.</param>
-        <param name="elementOffset">TThe offset to add.</param>
+        <param name="source">The reference to add the offset to.</param>
+        <param name="elementOffset">The offset to add.</param>
         <summary>
           Adds an element offset to the given reference.
         </summary>
@@ -130,12 +130,12 @@
       </Parameters>
       <Docs>
         <typeparam name="T">The type of reference.</typeparam>
-        <param name="left">TThe first reference to compare.</param>
+        <param name="left">The first reference to compare.</param>
         <param name="right">The second reference to compare.</param>
         <summary>
           Determines whether the specified references point to the same location.
         </summary>
-        <returns><c>true</c> if <paramref name="left"/> and <paramref name="right"/> point to the same location; otherwise <c>false</c>.</returns>
+        <returns><<see langword="true" /> if <paramref name="left"/> and <paramref name="right"/> point to the same location; otherwise, <see langword=false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -67,7 +67,7 @@ ms.assetid: 027db1f8-346f-44d2-a16e-043fcea3a4e0
   
  [!code-csharp[csrefQueryExpBasics#50](../../../samples/snippets/csharp/concepts/linq/query-expression-basics_6.cs)]  
   
- On the other hand, the following two examples show variables that are not query variables even through each is initialized with a query. They are not query variables because they store results:  
+ On the other hand, the following two examples show variables that are not query variables even though each is initialized with a query. They are not query variables because they store results:  
   
  [!code-csharp[csrefQueryExpBasics#51](../../../samples/snippets/csharp/concepts/linq/query-expression-basics_7.cs)]  
   

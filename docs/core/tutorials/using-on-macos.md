@@ -32,6 +32,17 @@ In this tutorial, you create three projects: a library project, tests for that l
 
 Start Visual Studio Code. Press <kbd>Ctrl</kbd>+<kbd>\`</kbd> (the backquote or backtick character) or select **View > Integrated Terminal** from the menu to open an embedded terminal in Visual Studio Code. You can still open an external shell with the Explorer **Open in Command Prompt** command (**Open in Terminal** on Mac or Linux) if you prefer to work outside of Visual Studio Code.
 
+### Launching Visual Studio Code from the command line
+You can also run VS Code from the terminal by typing 'code .' after adding it to the PATH:
+
+1. Launch VS Code.
+Open the Command Palette (Command+Shift+P) and type 'shell command' to find the Shell Command: Install 'code' command in PATH command.
+
+2. Restart the terminal for the new $PATH value to take effect. You'll be able to type 'code .' in any folder to start editing files in that folder.
+
+3. Note: If you still have the old code alias in your .bash_profile (or equivalent) from an early VS Code version, remove it and replace it by executing the Shell Command: Install 'code' command in PATH command.
+
+### Create a solution file
 Begin by creating a solution file, which serves as a container for one or more .NET Core projects. In the terminal, create a *golden* folder and open the folder. This folder is the root of your solution. Run the [`dotnet new`](../tools/dotnet-new.md) command to create a new solution, *golden.sln*:
 
 ```console

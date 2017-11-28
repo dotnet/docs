@@ -49,6 +49,7 @@ The .NET Standard does not expose the entire functionality of the .NET Framework
 The following platforms support .NET Standard libraries:
 
 *   .NET Core
+*   Universal Windows Platform (UWP), Fall Creators Update or newer
 *   ASP.NET Core
 *   .NET Framework 4.5+
 *   Windows Store Apps

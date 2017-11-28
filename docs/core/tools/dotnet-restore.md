@@ -39,6 +39,9 @@ dotnet restore [-h|--help]
 
 The `dotnet restore` command uses NuGet to restore dependencies as well as project-specific tools that are specified in the project file. By default, the restoration of dependencies and tools are performed in parallel.
 
+> [!NOTE]
+> Starting with .NET Core 2.0, you don't have to run [`dotnet restore`](~/docs/core/tools/dotnet-restore.md) because it's run implicitly as part of commands like `dotnet build` and `dotnet run`. It's still a valid command in certain scenarios where doing an explicit restore makes sense, such as [continuous integration builds in Visual Studio Team Services](/vsts/build-release/apps/aspnet/build-aspnet-core).
+ 
 [!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
 
 In order to restore the dependencies, NuGet needs the feeds where the packages are located. Feeds are usually provided via the *NuGet.config* configuration file. A default configuration file is provided when the CLI tools are installed. You specify additional feeds by creating your own *NuGet.config* file in the project directory. You also specify additional feeds per invocation at a command prompt.
@@ -48,6 +51,18 @@ For dependencies, you specify where the restored packages are placed during the 
 For project-specific tooling, `dotnet restore` first restores the package in which the tool is packed, and then proceeds to restore the tool's dependencies as specified in its project file.
 
 The behavior of the `dotnet restore` command is affected by some of the settings in the *Nuget.Config* file, if present. For example, setting the `globalPackagesFolder` in *NuGet.Config* places the restored NuGet packages in the specified folder. This is an alternative to specifying the `--packages` option on the `dotnet restore` command. For more information, see the [NuGet.Config reference](/nuget/schema/nuget-config-file).
+
+## Implicit `dotnet restore`
+
+Starting with .NET Core 2.x, `dotnet restore` is run implicitly if necessary when you issue the following commands:
+
+- `dotnet new`
+- `dotnet build`
+- `dotnet run`
+- `dotnet publish`
+- `dotnet pack`
+
+In most cases, you no longer need to explicitly issue the `dotnet restore` command. 
 
 ## Arguments
 

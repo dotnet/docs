@@ -135,6 +135,6 @@ Defines one or more switches used by the <xref:System.AppContext> class to provi
 ```  
   
 ## See Also  
- [AppContext](xref:System.AppContext?qualifyHint=False&autoUpgrade=True)  
+ <xref:System.AppContext?displayProperty=nameWithType>  
  [\<runtime> Element](runtime-element.md)  
  [\<configuration> Element](../configuration-element.md)

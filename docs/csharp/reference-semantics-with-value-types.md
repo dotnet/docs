@@ -149,7 +149,7 @@ removes the defensive copies
 that take place when you access methods of a struct used as an `in` parameter.
 
 You can do that by creating a `readonly struct` type. You can add the `readonly`
-modifier to a struct declaration. The compiler enforces that all members of
+modifier to a struct declaration. The compiler enforces that all instance members of
 the struct are `readonly`; the `struct` must be immutable.
 
 There are other optimizations for a `readonly struct`. You can

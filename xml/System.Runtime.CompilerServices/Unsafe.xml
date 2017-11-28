@@ -135,7 +135,7 @@
         <summary>
           Determines whether the specified references point to the same location.
         </summary>
-        <returns><see langword="true" /> if <paramref name="left"/> and <paramref name="right"/> point to the same location; otherwise, <see langword=false" />.</returns>
+        <returns><see langword="true" /> if <paramref name="left"/> and <paramref name="right"/> point to the same location; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -686,7 +686,7 @@
       <Parameters />
       <Docs>
         <typeparam name="T">The type of object whose size is retrieved.</typeparam>
-        <summary>TReturns the size of an object of the given type parameter.</summary>
+        <summary>Returns the size of an object of the given type parameter.</summary>
         <returns>The size of an object of type <typeparamref name="T"/>.</returns>
         <remarks>To be added.</remarks>
       </Docs>

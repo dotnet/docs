@@ -39,9 +39,6 @@ dotnet restore [-h|--help]
 
 The `dotnet restore` command uses NuGet to restore dependencies as well as project-specific tools that are specified in the project file. By default, the restoration of dependencies and tools are performed in parallel.
 
-> [!NOTE]
-> Starting with .NET Core 2.0, you don't have to run [`dotnet restore`](~/docs/core/tools/dotnet-restore.md) because it's run implicitly as part of commands like `dotnet build` and `dotnet run`. It's still a valid command in certain scenarios where doing an explicit restore makes sense, such as [continuous integration builds in Visual Studio Team Services](/vsts/build-release/apps/aspnet/build-aspnet-core).
- 
 [!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
 
 In order to restore the dependencies, NuGet needs the feeds where the packages are located. Feeds are usually provided via the *NuGet.config* configuration file. A default configuration file is provided when the CLI tools are installed. You specify additional feeds by creating your own *NuGet.config* file in the project directory. You also specify additional feeds per invocation at a command prompt.

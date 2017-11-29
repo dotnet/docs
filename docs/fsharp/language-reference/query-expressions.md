@@ -803,7 +803,7 @@ query {
 }
 </code></pre>
 
-</td></tr><tr><td>`LEFT JOIN` with two tables.<br/>
+</td></tr><tr><td><code>LEFT JOIN</code> with two tables.<br/>
 
 <pre><code class="lang-sql">SELECT * FROM Student
 LEFT JOIN CourseSelection

@@ -51,13 +51,14 @@ The behavior of the `dotnet restore` command is affected by some of the settings
 
 ## Implicit `dotnet restore`
 
-Starting with .NET Core 2.x, `dotnet restore` is run implicitly if necessary when you issue the following commands:
+Starting with .NET Core 2.0, `dotnet restore` is run implicitly if necessary when you issue the following commands:
 
-- `dotnet new`
-- `dotnet build`
-- `dotnet run`
-- `dotnet publish`
-- `dotnet pack`
+- [`dotnet new`](dotnet-new.md)
+- [`dotnet build`](dotnet-build.md)
+- [`dotnet run`](dotnet-run.md)
+- [`dotnet test`](dotnet-test.md)
+- [`dotnet publish`](dotnet-publish.md)
+- [`dotnet pack`](dotnet-pack.md)
 
 In most cases, you no longer need to explicitly issue the `dotnet restore` command. 
 

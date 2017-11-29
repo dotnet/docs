@@ -73,7 +73,7 @@ The following procedure creates a C# version of the traditional "Hello World!" p
   
      [!code-csharp[csProgGuideMain#19](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/hello-world-your-first-program_6.cs)]  
   
-     -or-  
+-or-  
   
      [!code-csharp[csProgGuideMain#18](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/hello-world-your-first-program_7.cs)]  
   
@@ -126,6 +126,39 @@ The following procedure creates a C# version of the traditional "Hello World!" p
      `Hello`  
   
  For more information about the C# compiler and its options, see [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md).
+  
+  ### International Hello World!
+
+public class HelloWorldWide
+//gets the appropiate string in the language of the locale to say "Hello World"
+{
+    public CultureInfo CultureInfo { get; private set; }
+
+    public HelloWorldWide()
+    {
+        CultureInfo = CultureInfo.CurrentCulture;
+	//Gets or sets the CultureInfo object that represents the culture used by the current thread
+    }
+
+    public HelloWorldWide(string culture)
+    {
+        CultureInfo = CultureInfo.GetCultureInfo(culture);
+	//Retrieves a cached, read-only instance of a culture
+    }
+
+    public string SayHelloWorldWide()
+    {
+        return Resources.ResourceManager.GetString("HelloWorld", CultureInfo);
+	//Gets the string from a resource manager that provides the specified culture-specific resources
+    }
+}
+
+### [CultureInfo Class](https://docs.microsoft.com/en-us/javascript/api/sp-page-context/cultureinfo)
+
+### [ResourceManager Class](https://msdn.microsoft.com/en-us/library/system.resources.resourcemanager(v=vs.110).aspx)
+  
+  
+  
   
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)  

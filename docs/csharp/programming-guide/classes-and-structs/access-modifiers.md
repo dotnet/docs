@@ -49,7 +49,7 @@ All types and type members have an accessibility level, which controls whether t
  You can enable specific other assemblies to access your internal types by using the InternalsVisibleToAttribute. For more information, see [Friend Assemblies](http://msdn.microsoft.com/library/df0c70ea-2c2a-4bdc-9526-df951ad2d055).  
   
 ## Class and Struct Member Accessibility  
- Class members (including nested classes and structs) can be declared with any of the five types of access. Struct members cannot be declared as protected because structs do not support inheritance.  
+ Class members (including nested classes and structs) can be declared with any of the six types of access. Struct members cannot be declared as protected because structs do not support inheritance.  
   
  Normally, the accessibility of a member is not greater than the accessibility of the type that contains it. However, a public member of an internal class might be accessible from outside the assembly if the member implements interface methods or overrides virtual methods that are defined in a public base class.  
   

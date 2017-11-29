@@ -17,13 +17,11 @@ Module Example
                                    DateTimeStyles.AllowWhiteSpaces Or
                                    DateTimeStyles.AdjustToUniversal,
                                    parsedDate)
-            Console.WriteLine("{0} --> {1:g}", dateString, parsedDate)
+            Console.WriteLine($"{dateString} --> {parsedDate:g}")
          Else
-            Console.WriteLine("Cannot convert {0}", dateString)
+            Console.WriteLine($"Cannot convert {dateString}")
          End If                                         
       Next
-   End Sub
-End Module
 ' The example displays the following output:
 '       20130816 --> 8/16/2013 12:00 AM
 '       Cannot convert 20131608
@@ -32,3 +30,13 @@ End Module
 '       Cannot convert 521116
 '         115216   --> 4/22/2013 11:52 AM
 ' </Snippet2>
+
+      ' <Snippet3>
+      Dim iso8601String As String = "20080501T08:30:52Z"
+      Dim dateISO8602 As DateTime = DateTime.ParseExact(iso8601String, "yyyyMMddTHH:mm:ssZ")
+      Console.WriteLine($"{iso8601String} --> {dateISO8602:g}")
+      ' </Snippet3>
+      }
+      
+   End Sub
+End Module

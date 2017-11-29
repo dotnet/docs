@@ -37,6 +37,11 @@ Module modMain
       Dim dateString As String = "5/1/2008 8:30:52 AM"
       Dim date1 As Date = Date.Parse(dateString, _
                                System.Globalization.CultureInfo.InvariantCulture) 
+      Dim iso8601String As String = "20080501T08:30:52Z"
+      Dim dateISO8602 As Date = DateTime.ParseExact(iso8601String, "yyyyMMddTHH:mm:ssZ", 
+                                      System.Globalization.CultureInfo.InvariantCulture);
+      Console.WriteLine(dateISO8602)
+                               
       ' </Snippet4>
       Console.WriteLine(date1)
    End Sub

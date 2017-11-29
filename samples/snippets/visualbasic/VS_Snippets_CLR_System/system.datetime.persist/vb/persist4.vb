@@ -22,10 +22,8 @@ Module Example
                               #1/10/2015 1:16AM#, #12/20/2014 9:45PM#,
                               #6/2/2014 3:14PM# }
  
-      Console.WriteLine("Current Time Zone: {0}",
-                        TimeZoneInfo.Local.DisplayName)
-      Console.WriteLine("The dates on an {0} system:", 
-                        Thread.CurrentThread.CurrentCulture.Name)
+      Console.WriteLine($"Current Time Zone: {TimeZoneInfo.Local.DisplayName}")
+      Console.WriteLine($"The dates on an {Thread.CurrentThread.CurrentCulture.Name} system:")
       Dim ticks(dates.Length - 1) As Long
       For ctr As Integer = 0 To dates.Length - 1 
          Console.WriteLine(dates(ctr).ToString("f"))
@@ -43,8 +41,7 @@ Module Example
 
    Private Sub RestoreDates()
       TimeZoneInfo.ClearCachedData()
-      Console.WriteLine("Current Time Zone: {0}",
-                        TimeZoneInfo.Local.DisplayName)
+      Console.WriteLine($"Current Time Zone: {TimeZoneInfo.Local.DisplayName}")
       Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-GB")
       Dim fs As New FileStream(filename, FileMode.Open)
       Dim br As New BinaryReader(fs)
@@ -72,8 +69,7 @@ Module Example
          br.Close()   
       End Try   
       
-      Console.WriteLine("The dates on an {0} system:", 
-                        Thread.CurrentThread.CurrentCulture.Name)
+      Console.WriteLine($"The dates on an {Thread.CurrentThread.CurrentCulture.Name} system:")
       For Each value In dates
          Console.WriteLine(value.ToString("f"))
       Next

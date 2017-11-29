@@ -15,6 +15,7 @@ public class Class1
    {
       // <Snippet1>
       DateTime date1 = new DateTime(2008, 5, 1, 8, 30, 52);
+      Console.WriteLine(date1);
       // </Snippet1>
    }
 
@@ -33,6 +34,9 @@ public class Class1
       string dateString = "5/1/2008 8:30:52 AM";
       DateTime date1 = DateTime.Parse(dateString, 
                                 System.Globalization.CultureInfo.InvariantCulture); 
+      string iso8601String = "20080501T08:30:52Z";
+      DateTime dateISO8602 = DateTime.ParseExact(iso8601String, "yyyyMMddTHH:mm:ssZ", 
+                                      System.Globalization.CultureInfo.InvariantCulture);
       // </Snippet4>
    } 
 

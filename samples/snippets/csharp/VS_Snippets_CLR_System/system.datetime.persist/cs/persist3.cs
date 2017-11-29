@@ -27,10 +27,8 @@ class Example
       FileStream fs = new FileStream(filename, FileMode.Create);
       BinaryFormatter bin = new BinaryFormatter();
       
-      Console.WriteLine("Current Time Zone: {0}",
-                        TimeZoneInfo.Local.DisplayName);
-      Console.WriteLine("The dates on an {0} system:", 
-                        Thread.CurrentThread.CurrentCulture.Name);
+      Console.WriteLine($"Current Time Zone: {TimeZoneInfo.Local.DisplayName}");
+      Console.WriteLine("The dates on an {Thread.CurrentThread.CurrentCulture.Name} system:");
       for (int ctr = 0; ctr < dates.Length; ctr++) { 
          Console.WriteLine(dates[ctr].ToString("f"));
          dates[ctr] = dates[ctr].ToUniversalTime();
@@ -43,8 +41,7 @@ class Example
    private static void RestoreDates()
    {
       TimeZoneInfo.ClearCachedData();
-      Console.WriteLine("Current Time Zone: {0}",
-                        TimeZoneInfo.Local.DisplayName);
+      Console.WriteLine("Current Time Zone: {TimeZoneInfo.Local.DisplayName}");
       Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-GB");
 
       FileStream fs = new FileStream(filename, FileMode.Open);
@@ -52,8 +49,7 @@ class Example
       DateTime[] dates = (DateTime[]) bin.Deserialize(fs);
       fs.Close();
       
-      Console.WriteLine("The dates on an {0} system:", 
-                        Thread.CurrentThread.CurrentCulture.Name);
+      Console.WriteLine("The dates on an {Thread.CurrentThread.CurrentCulture.Name} system:");
       foreach (var value in dates)
          Console.WriteLine(value.ToLocalTime().ToString("f"));
 

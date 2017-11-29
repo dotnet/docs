@@ -1,24 +1,24 @@
 ' Visual Basic .NET Document
 Option Strict On
 
-' <Snippet1>
 Imports System.Collections.Generic
 Imports System.Globalization
 Imports System.Threading
 
 Module Example
    Public Sub Main()
+' <Snippet1>
       Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-GB")
 
       Dim date1 As DateTime = New DateTime(2013, 6, 1, 12, 32, 30)
       Dim badFormats As New List(Of String)
       
-      Console.WriteLine("{0,-37} {1,-19}", "Date String", "Date")
+      Console.WriteLine($"{"Date String",-37} {"Date",-19}")
       Console.WriteLine()
       For Each dateString As String In date1.GetDateTimeFormats()
          Dim parsedDate As DateTime
          If DateTime.TryParse(dateString, parsedDate) Then
-            Console.WriteLine("{0,-37} {1,-19:g}", dateString, DateTime.Parse(dateString))
+            Console.WriteLine($"{dateString,-37} {DateTime.Parse(dateString),-19:g}")
          Else
             badFormats.Add(dateString)
          End If   
@@ -29,11 +29,9 @@ Module Example
          Console.WriteLine()
          Console.WriteLine("Strings that could not be parsed: ")
          For Each badFormat In badFormats
-            Console.WriteLine("   {0}", badFormat)         
+            Console.WriteLine($"   {badFormat}")         
          Next
       End If
-   End Sub
-End Module
 ' The example displays the following output:
 '       Date String                           Date               
 '       
@@ -127,3 +125,5 @@ End Module
 '       June 2013                             01/06/2013 00:00:00
 '       June 2013                             01/06/2013 00:00:00
 ' </Snippet1>
+   End Sub
+End Module

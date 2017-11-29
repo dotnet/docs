@@ -1,4 +1,3 @@
-// <Snippet1>
 using System;
 using System.Threading;
 
@@ -6,9 +5,10 @@ public class Example
 {
    public static void Main()
    {
+// <Snippet1>
       String output = "";
       for (int ctr = 0; ctr <= 20; ctr++) {
-         output += String.Format("{0}\n", DateTime.Now.Millisecond);
+         output += String.Format($"{DateTime.Now.Millisecond}\n");
          // Introduce a delay loop.
          for (int delay = 0; delay <= 1000; delay++)
          {}
@@ -19,8 +19,6 @@ public class Example
          }
       }
       Console.WriteLine(output);
-   }
-}
 // The example displays the following output:
 //       111
 //       111
@@ -45,3 +43,5 @@ public class Example
 //       143
 //       143
 // </Snippet1>
+   }
+}

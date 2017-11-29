@@ -25,10 +25,8 @@ Module Example
       Dim fs As New FileStream(filename, FileMode.Create)
       Dim bin As New BinaryFormatter()
       
-      Console.WriteLine("Current Time Zone: {0}",
-                        TimeZoneInfo.Local.DisplayName)
-      Console.WriteLine("The dates on an {0} system:", 
-                        Thread.CurrentThread.CurrentCulture.Name)
+      Console.WriteLine($"Current Time Zone: {TimeZoneInfo.Local.DisplayName}")
+      Console.WriteLine("The dates on an {Thread.CurrentThread.CurrentCulture.Name} system:")
       For ctr As Integer = 0 To dates.Length - 1 
          Console.WriteLine(dates(ctr).ToString("f"))
          dates(ctr) = dates(ctr).ToUniversalTime()
@@ -40,8 +38,7 @@ Module Example
 
    Private Sub RestoreDates()
       TimeZoneInfo.ClearCachedData()
-      Console.WriteLine("Current Time Zone: {0}",
-                        TimeZoneInfo.Local.DisplayName)
+      Console.WriteLine("Current Time Zone: {TimeZoneInfo.Local.DisplayName}")
       Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-GB")
 
       Dim fs As New FileStream(filename, FileMode.Open)
@@ -49,8 +46,7 @@ Module Example
       Dim dates() As DateTime = DirectCast(bin.Deserialize(fs), Date())
       fs.Close()
       
-      Console.WriteLine("The dates on an {0} system:", 
-                        Thread.CurrentThread.CurrentCulture.Name)
+      Console.WriteLine("The dates on an {Thread.CurrentThread.CurrentCulture.Name} system:")
       For Each value In dates
          Console.WriteLine(value.ToLocalTime().ToString("f"))
       Next

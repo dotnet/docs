@@ -25,10 +25,8 @@ class Example
                            new DateTime(2014, 12, 20, 21, 45, 0), 
                            new DateTime(2014, 6, 2, 15, 14, 0) }; 
  
-      Console.WriteLine("Current Time Zone: {0}",
-                        TimeZoneInfo.Local.DisplayName);
-      Console.WriteLine("The dates on an {0} system:", 
-                        Thread.CurrentThread.CurrentCulture.Name);
+      Console.WriteLine($"Current Time Zone: {TimeZoneInfo.Local.DisplayName}");
+      Console.WriteLine($"The dates on an {Thread.CurrentThread.CurrentCulture.Name} system:");
       long[] ticks = new long[dates.Length];
       for (int ctr = 0; ctr < dates.Length; ctr++) { 
          Console.WriteLine(dates[ctr].ToString("f"));
@@ -47,8 +45,7 @@ class Example
    private static void RestoreDates()
    {
       TimeZoneInfo.ClearCachedData();
-      Console.WriteLine("Current Time Zone: {0}",
-                        TimeZoneInfo.Local.DisplayName);
+      Console.WriteLine($"Current Time Zone: {TimeZoneInfo.Local.DisplayName}");
       Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-GB");
       FileStream fs = new FileStream(filename, FileMode.Open);
       BinaryReader br = new BinaryReader(fs);
@@ -81,8 +78,7 @@ class Example
          br.Close();
       }   
       
-      Console.WriteLine("The dates on an {0} system:", 
-                        Thread.CurrentThread.CurrentCulture.Name);
+      Console.WriteLine($"The dates on an {Thread.CurrentThread.CurrentCulture.Name} system:");
       foreach (var value in dates)
          Console.WriteLine(value.ToString("f"));
 

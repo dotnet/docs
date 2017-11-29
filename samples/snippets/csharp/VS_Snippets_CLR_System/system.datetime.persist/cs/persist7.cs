@@ -24,13 +24,11 @@ public class Example
          // Display dates.
          foreach (var date in dates) {
             TimeZoneInfo tz = date.TimeZone;
-            Console.WriteLine("{0} {1}", date.DateTime, 
-                              tz.IsDaylightSavingTime(date.DateTime) ? 
-                              tz.DaylightName : tz.StandardName);      
+            Console.WriteLine($"{date.DateTime} {(tz.IsDaylightSavingTime(date.DateTime) ? tz.DaylightName : tz.StandardName)}");      
          }
       }
       catch (SerializationException e) {
-         Console.WriteLine("Serialization failed. Reason: {0}", e.Message);
+         Console.WriteLine($"Serialization failed. Reason: {e.Message}");
       }   
       finally {
          if (fs != null) fs.Close();

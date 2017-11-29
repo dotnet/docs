@@ -23,10 +23,8 @@ Module Example
                               #6/2/2014 3:14PM# }
       Dim output As String = Nothing
  
-      Console.WriteLine("Current Time Zone: {0}",
-                        TimeZoneInfo.Local.DisplayName)
-      Console.WriteLine("The dates on an {0} system:", 
-                        Thread.CurrentThread.CurrentCulture.Name)
+      Console.WriteLine($"Current Time Zone: {TimeZoneInfo.Local.DisplayName}")
+      Console.WriteLine($"The dates on an {Thread.CurrentThread.CurrentCulture.Name} system:")
       For ctr As Integer = 0 To dates.Length - 1 
          Console.WriteLine(dates(ctr).ToString("f"))
          output += dates(ctr).ToString() + If(ctr <> dates.Length - 1, "|", "")
@@ -39,20 +37,18 @@ Module Example
 
    Private Sub RestoreDates()
       TimeZoneInfo.ClearCachedData()
-      Console.WriteLine("Current Time Zone: {0}",
-                        TimeZoneInfo.Local.DisplayName)
+      Console.WriteLine($"Current Time Zone: {TimeZoneInfo.Local.DisplayName}")
       Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-GB")
       Dim sr As New StreamReader(filename)
       Dim inputValues() As String = sr.ReadToEnd().Split( {"|"c} , StringSplitOptions.RemoveEmptyEntries)
       sr.Close()
-      Console.WriteLine("The dates on an {0} system:", 
-                        Thread.CurrentThread.CurrentCulture.Name)
+      Console.WriteLine($"The dates on an {Thread.CurrentThread.CurrentCulture.Name} system:")
       For Each inputValue In inputValues
          Dim dateValue As Date
          If DateTime.TryParse(inputValue, dateValue) Then
-            Console.WriteLine("'{0}' --> {1:f}", inputValue, dateValue)
+            Console.WriteLine($"'{inputValue}' --> {dateValue:f}")
          Else
-            Console.WriteLine("Cannot parse '{0}'", inputValue)   
+            Console.WriteLine($"Cannot parse '{inputValue}'")   
          End If
       Next
       Console.WriteLine("Restored dates...")   

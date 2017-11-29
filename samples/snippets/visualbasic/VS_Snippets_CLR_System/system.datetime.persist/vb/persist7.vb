@@ -22,16 +22,14 @@ Module Example
       Try
          formatter.Serialize(fs, dates)
       Catch e As SerializationException
-         Console.WriteLine("Serialization failed. Reason: {0}", e.Message)
+         Console.WriteLine($"Serialization failed. Reason: {e.Message}")
       Finally
          If fs IsNot Nothing Then fs.Close()
       End Try      
       ' Display dates.
       For Each dateInfo In dates
          Dim tz As TimeZoneInfo = dateInfo.TimeZone
-         Console.WriteLine("{0} {1}", dateInfo.DateTime, 
-                           If(tz.IsDaylightSavingTime(dateInfo.DateTime), 
-                           tz.DaylightName, tz.StandardName))      
+         Console.WriteLine($"{dateInfo.DateTime} {If(tz.IsDaylightSavingTime(dateInfo.DateTime), tz.DaylightName, tz.StandardName)}")      
       Next
    End Sub
 End Module

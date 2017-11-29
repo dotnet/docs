@@ -39,11 +39,10 @@ class Example
       } 
       
       // Display the dates.
-      Console.WriteLine("Leap year days from 2000-2100 on an {0} system:",
-                        Thread.CurrentThread.CurrentCulture.Name);
+      Console.WriteLine($"Leap year days from 2000-2100 on an {Thread.CurrentThread.CurrentCulture.Name} system:");
       int nItems = 0;
       foreach (var dat in deserializedDates) {
-         Console.Write("   {0:d}     ", dat);
+         Console.Write("   {dat:d}     ");
          nItems++;
          if (nItems % 5 == 0) 
                Console.WriteLine(); 

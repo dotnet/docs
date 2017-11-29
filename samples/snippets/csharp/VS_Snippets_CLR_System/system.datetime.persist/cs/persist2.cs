@@ -25,10 +25,8 @@ public class Example
                            new DateTime(2014, 6, 2, 15, 14, 0) }; 
       string output = null;
  
-      Console.WriteLine("Current Time Zone: {0}",
-                        TimeZoneInfo.Local.DisplayName);
-      Console.WriteLine("The dates on an {0} system:", 
-                        Thread.CurrentThread.CurrentCulture.Name);
+      Console.WriteLine($"Current Time Zone: {TimeZoneInfo.Local.DisplayName}");
+      Console.WriteLine($"The dates on an {Thread.CurrentThread.CurrentCulture.Name} system:");
       for (int ctr = 0; ctr < dates.Length; ctr++) { 
          Console.WriteLine(dates[ctr].ToString("f"));
          output += dates[ctr].ToUniversalTime().ToString("O", CultureInfo.InvariantCulture) 
@@ -56,8 +54,7 @@ public class Example
          DateTime dateValue;
          if (DateTime.TryParseExact(inputValue, "O", CultureInfo.InvariantCulture, 
                                DateTimeStyles.RoundtripKind, out dateValue)) {
-            Console.WriteLine("'{0}' --> {1:f}", 
-                              inputValue, dateValue.ToLocalTime());
+            Console.WriteLine($"'{inputValue}' --> {dateValue.ToLocalTime():f}");
          }
          else {
             Console.WriteLine("Cannot parse '{0}'", inputValue);   

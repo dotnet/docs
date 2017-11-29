@@ -1,4 +1,3 @@
-// <Snippet1>
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -8,16 +7,17 @@ public class Example
 {
    public static void Main()
    {
+// <Snippet1>
       Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-GB");
 
       DateTime date1 = new DateTime(2013, 6, 1, 12, 32, 30);
       List<string> badFormats = new List<String>();
       
-      Console.WriteLine("{0,-37} {1,-19}\n", "Date String", "Date");
+      Console.WriteLine($"{"Date String",-37} {"Date",-19}\n");
       foreach (var dateString in date1.GetDateTimeFormats()) {
          DateTime parsedDate;
          if (DateTime.TryParse(dateString, out parsedDate))
-            Console.WriteLine("{0,-37} {1,-19}", dateString, DateTime.Parse(dateString));
+            Console.WriteLine($"{dateString,-37} {DateTime.Parse(dateString),-19}");
          else
             badFormats.Add(dateString);
       } 
@@ -26,10 +26,7 @@ public class Example
       if (badFormats.Count > 0) {
          Console.WriteLine("\nStrings that could not be parsed: ");
          foreach (var badFormat in badFormats)
-            Console.WriteLine("   {0}", badFormat);         
-      }
-   }
-}
+            Console.WriteLine($"   {badFormat}");         
 // The example displays the following output:
 //       Date String                           Date               
 //       
@@ -123,3 +120,6 @@ public class Example
 //       June 2013                             01/06/2013 00:00:00
 //       June 2013                             01/06/2013 00:00:00
 // </Snippet1>
+      }
+   }
+}

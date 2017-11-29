@@ -38,11 +38,10 @@ Module Example
       End Using 
       
       ' Display the dates.
-      Console.WriteLine("Leap year days from 2000-2100 on an {0} system:",
-                        Thread.CurrentThread.CurrentCulture.Name)
+      Console.WriteLine($"Leap year days from 2000-2100 on an {Thread.CurrentThread.CurrentCulture.Name} system:")
       Dim nItems As Integer
       For Each dat In deserializedDates
-         Console.Write("   {0:d}     ", dat)
+         Console.Write($"   {dat:d}     ")
          nItems += 1
          If nItems Mod 5 = 0 Then Console.WriteLine() 
       Next

@@ -56,7 +56,7 @@ public class Example
 //     
 //     Executing the delegate synchronously:
 //     Formatting using the fr-FR culture on thread 1.
-//     163 025 412,32 €   18 905 365,59 €
+//     163 025 412,32 â‚¬   18 905 365,59 â‚¬
 //     
 //     Executing a task asynchronously:
 //     Formatting using the en-US culture on thread 3.
@@ -64,7 +64,7 @@ public class Example
 //     
 //     Executing a task synchronously:
 //     Formatting using the fr-FR culture on thread 1.
-//     163 025 412,32 €   18 905 365,59 €
+//     163 025 412,32 â‚¬   18 905 365,59 â‚¬
 // </Snippet2>
 
 

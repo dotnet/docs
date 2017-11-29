@@ -22,7 +22,6 @@
         "src": "docs",
         "dest": ".",
         "exclude": [
-          "toc.md",
           "api/overwrites/**",
           "samples/**/*.*",
           "**/includes/**",
@@ -61,10 +60,12 @@
       },
       {
         "files": [
-          "docs/toc.md",
-          "toc.yml",
           "index.md"
         ]
+      },
+      {
+        "files": "toc.yml",
+        "dest": "breadcrumb"
       }
     ],
     "resource": [
@@ -108,7 +109,7 @@
       },
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "/dotnet/toc.json",
+      "breadcrumb_path": "/dotnet/breadcrumb/toc.json",
       "_displayLangs": [
         "csharp"
       ],

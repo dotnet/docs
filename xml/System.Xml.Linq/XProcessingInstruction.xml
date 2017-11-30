@@ -106,14 +106,12 @@
  The following example creates an <xref:System.Xml.Linq.XProcessingInstruction>, and specifies a target and the string data for the processing instruction.  
   
 ```csharp  
-  
-                XProcessingInstruction pi = new XProcessingInstruction("xml-stylesheet", "type='text/xsl' href='hello.xsl'");  
+XProcessingInstruction pi = new XProcessingInstruction("xml-stylesheet", "type='text/xsl' href='hello.xsl'");  
 Console.WriteLine(pi);  
 ```  
   
 ```vb  
-  
-                Dim pi As XProcessingInstruction = <?xml-stylesheet type='text/xsl' href='hello.xsl'?>  
+Dim pi As XProcessingInstruction = <?xml-stylesheet type='text/xsl' href='hello.xsl'?>  
 Console.WriteLine(pi)  
 ```  
   
@@ -167,8 +165,7 @@ Console.WriteLine(pi)
  The following example uses the <xref:System.Xml.Linq.XProcessingInstruction.Data%2A> property to retrieve the string value of a processing instruction.  
   
 ```csharp  
-  
-                XProcessingInstruction pi =  
+XProcessingInstruction pi =  
     new XProcessingInstruction("xml-stylesheet", "type='text/xsl' href='hello.xsl'");  
 Console.WriteLine(pi.Data);  
 pi.Data = "type='text/xsl' href='xform.xsl'";  
@@ -176,8 +173,7 @@ Console.WriteLine(pi.Data);
 ```  
   
 ```vb  
-  
-                Dim pi As XProcessingInstruction = <?xml-stylesheet type='text/xsl' href='hello.xsl'?>  
+Dim pi As XProcessingInstruction = <?xml-stylesheet type='text/xsl' href='hello.xsl'?>  
 Console.WriteLine(pi.Data)  
 pi.Data = "type='text/xsl' href='xform.xsl'"  
 Console.WriteLine(pi.Data)  
@@ -233,15 +229,13 @@ type='text/xsl' href='xform.xsl'
  The following example creates a processing instruction, and then prints its node type.  
   
 ```csharp  
-  
-                XProcessingInstruction pi =  
+XProcessingInstruction pi =  
     new XProcessingInstruction("xml-stylesheet", "type=\"text/xsl\" href=\"hello.xsl\"");  
 Console.WriteLine(pi.NodeType);  
 ```  
   
 ```vb  
-  
-                Dim pi As XProcessingInstruction = _  
+Dim pi As XProcessingInstruction = _  
     <?xml-stylesheet type="text/xsl" href="hello.xsl"?>  
 Console.WriteLine(pi.NodeType.ToString)  
 ```  
@@ -289,15 +283,13 @@ ProcessingInstruction
  The following example uses the <xref:System.Xml.Linq.XProcessingInstruction.Target%2A> property to retrieve the target application for a processing instruction.  
   
 ```csharp  
-  
-                XProcessingInstruction pi =  
+XProcessingInstruction pi =  
     new XProcessingInstruction("xml-stylesheet", "type=\"text/xsl\" href=\"hello.xsl\"");  
 Console.WriteLine(pi.Target);  
 ```  
   
 ```vb  
-  
-                Dim pi As XProcessingInstruction = _  
+Dim pi As XProcessingInstruction = _  
     <?xml-stylesheet type="text/xsl" href="hello.xsl"?>  
 Console.WriteLine(pi.Target)  
 ```  

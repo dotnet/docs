@@ -357,9 +357,7 @@
         <param name="_Right">The number of elements to increment.</param>
         <summary>Increments the reverse iterator by the given number of elements. The integer parameter is specified on the right side of the addition operator.</summary>
         <returns>An iterator.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.%2A> Gene ric.ReverseRandomAccessIterator`1.Add(Microsoft.VisualC.StlClr. Gene ric.ReverseRandomAccessIterator{`0}@,System.Int32)?qualifyHint=True&autoUpgrade=False]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
@@ -390,9 +388,7 @@
         <param name="_Right">The iterator to increment.</param>
         <summary>Increments the reverse iterator by the given number of elements. The integer parameter is specified on the left side of the addition operator.</summary>
         <returns>An iterator.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.%2A> Gene ric.ReverseRandomAccessIterator`1.Add(Microsoft.VisualC.StlClr. Gene ric.ReverseRandomAccessIterator{`0}@,System.Int32,Microsoft.VisualC.StlClr. Gene ric.ReverseRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)?qualifyHint=True&autoUpgrade=False]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Assign">
@@ -489,7 +485,7 @@
         <returns>
           <see langword="true" /> if the two iterators are the same object; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.%2A> Gene ric.ReverseRandomAccessIterator`1.Equals(Microsoft.VisualC.StlClr. Gene ric.ReverseRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)?qualifyHint=True&autoUpgrade=False]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1.equal_to(Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -518,9 +514,7 @@
         <summary>Determines whether the position of the left-side iterator is greater than the position of the given right-side iterator.</summary>
         <returns>
           <see langword="true" /> if the left-side iterator is greater than the given right-side iterator; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.%2A> Gene ric.ReverseRandomAccessIterator`1.Compare(Microsoft.VisualC.StlClr. Gene ric.ReverseRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)?qualifyHint=True&autoUpgrade=False]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
@@ -543,9 +537,7 @@
         <summary>Determines whether the position of the left-side iterator is greater than or equal to the position of the given right-side iterator.</summary>
         <returns>
           <see langword="true" /> if the left-side iterator is greater than or equal to the given right-side iterator; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.%2A> Gene ric.ReverseRandomAccessIterator`1.Compare(Microsoft.VisualC.StlClr. Gene ric.ReverseRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)?qualifyHint=True&autoUpgrade=False]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -633,9 +625,7 @@
         <summary>Determines whether the given <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1" /> object differs from the current <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1" /> object.</summary>
         <returns>
           <see langword="true" /> if the two iterators are different objects; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.%2A> Gene ric.ReverseRandomAccessIterator`1.Compare(Microsoft.VisualC.StlClr. Gene ric.ReverseRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)?qualifyHint=True&autoUpgrade=False]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
@@ -664,7 +654,7 @@
         <returns>
           <see langword="true" /> if the left-side iterator is less than the given right-side iterator; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.%2A> Gene ric.ReverseRandomAccessIterator`1.Compare(Microsoft.VisualC.StlClr. Gene ric.ReverseRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)?qualifyHint=True&autoUpgrade=False]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1.less_than(Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator{`0})?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -688,9 +678,7 @@
         <summary>Determines whether the position of the left-side iterator is less than or equal to the position of the given right-side iterator.</summary>
         <returns>
           <see langword="true" /> if the left-side iterator is less than or equal to the given right-side iterator; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.%2A> Gene ric.ReverseRandomAccessIterator`1.Compare(Microsoft.VisualC.StlClr. Gene ric.ReverseRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)?qualifyHint=True&autoUpgrade=False]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_MemberSelection">
@@ -777,9 +765,7 @@
         <param name="_Right">The <see cref="T:Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator`1" /> to be subtracted from the current <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1" /> object.</param>
         <summary>Determines the difference between two iterators.</summary>
         <returns>The difference, in number of elements, between the two iterators.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.%2A> Gene ric.ReverseRandomAccessIterator`1.Subtract(Microsoft.VisualC.StlClr. Gene ric.IRandomAccessIterator{`0})?qualifyHint=True&autoUpgrade=False]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
@@ -803,9 +789,7 @@
         <param name="_Right">The number of elements to decrement.</param>
         <summary>Decrements the iterator by the given number of elements. The integer parameter is specified on the right side of the subtraction operator.</summary>
         <returns>An iterator.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.%2A> Gene ric.ReverseRandomAccessIterator`1.Subtract(Microsoft.VisualC.StlClr. Gene ric.ReverseRandomAccessIterator{`0}@,System.Int32)?qualifyHint=True&autoUpgrade=False]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="prev">

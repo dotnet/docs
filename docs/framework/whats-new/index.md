@@ -60,9 +60,7 @@ The .NET Framework 4.7.1 includes new features in the following areas:
 - [Networking](#net471)
 - [ASP.NET](#asp-net471) 
 
-In addition, a major focus in the .NET Framework 4.7.1 is improved accessibility, so that apps are able to work well with a variety of devices and form factors. For information on accessibility improvements in the .NET Framework 4.7.1, see 
-<!-- [What's new in accessibility in the .NET Framework](whats-new-in-accessibility.md). -->
-the [.NET Framework 4.7.1 Accessibility and WPF Improvements](https://blogs.msdn.microsoft.com/dotnet/2017/09/21/net-framework-4-7-1-accessibility-and-wpf-improvements/) blog post.
+In addition, a major focus in the .NET Framework 4.7.1 is improved accessibility, which allows an application to provide an appropriate experience for users of Assistive Technology. For information on accessibility improvements in the .NET Framework 4.7.1, see [What's new in accessibility in the .NET Framework](whats-new-in-accessibility.md). 
 
 <a name="core471" />
 #### Core
@@ -1502,7 +1500,8 @@ For more information on the <xref:System.TimeZoneInfo> structure and time zone a
  The Portable Class Library project in [!INCLUDE[vs_dev11_long](../../../includes/vs-dev11-long-md.md)] (and later versions) enables you to write and build managed assemblies that work on multiple .NET Framework platforms. Using a Portable Class Library project, you choose the platforms (such as Windows Phone and [!INCLUDE[net_win8_profile](../../../includes/net-win8-profile-md.md)]) to target. The available types and members in your project are automatically restricted to the common types and members across these platforms. For more information, see [Portable Class Library](../../../docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md).
 
 ## See Also
- [The .NET Framework and Out-of-Band Releases](../../../docs/framework/get-started/the-net-framework-and-out-of-band-releases.md)  
- [What's New in Visual Studio 2017](/visualstudio/ide/whats-new-in-visual-studio)  
- [ASP.NET](/aspnet)  
+ [The .NET Framework and Out-of-Band Releases](../../../docs/framework/get-started/the-net-framework-and-out-of-band-releases.md)   
+ [What's new in accessibility in the .NET Framework](whats-new-in-accessibility.md)   
+ [What's New in Visual Studio 2017](/visualstudio/ide/whats-new-in-visual-studio)   
+ [ASP.NET](/aspnet)   
  [What’s New in Visual C++](/cpp/what-s-new-for-visual-cpp-in-visual-studio) 

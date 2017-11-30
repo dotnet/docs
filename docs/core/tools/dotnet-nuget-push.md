@@ -40,7 +40,7 @@ Prints out a short help for the command.
 
 Specifies the server URL. This option is required unless `DefaultPushSource` config value is set in the NuGet config file.
 
-`--symbols-source <SOURCE>`
+`--symbol-source <SOURCE>`
 
 Specifies the symbol server URL.
 

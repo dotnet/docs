@@ -45,7 +45,7 @@ Figure 4-26: Turning on Docker Solution support in a Visual Studio 2017 project
 
 This action not only adds the DockerFile to your project, it also adds the required configuration lines of code to a global docker-compose.yml set at the solution level.
 
-You also can turn on Docker support when creating an ASP&period;NET Core project in Visual Studio 2017, as shown in Figure 4-27.
+You also can turn on Docker support when creating an ASP.NET Core project in Visual Studio 2017, as shown in Figure 4-27.
 
 ![](./media/image33.png)
 
@@ -63,7 +63,7 @@ You could deploy a multicontainer application by using a single docker-compose.y
 
 Build, debug, update, and refresh apps in a local Docker container: [https://docs.microsoft.com/azure/vs-azure-tools-docker-edit-and-refresh/](https://docs.microsoft.com/azure/vs-azure-tools-docker-edit-and-refresh)
 
-Deploy an ASP&period;NET container to a remote Docker host: [https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker/](https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker)
+Deploy an ASP.NET container to a remote Docker host: [https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker/](https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker)
 
 
 >[!div class="step-by-step"]

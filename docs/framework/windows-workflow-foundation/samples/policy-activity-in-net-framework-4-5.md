@@ -82,6 +82,4 @@ public class Policy4Activity<TResult>: NativeActivity<TResult>
   
 3.  To compile the project, press CTRL+SHIFT+B.  
   
-4.  To run the project, press CTRL+F5.  
-  
-## See Also
+4.  To run the project, press CTRL+F5.

@@ -45,10 +45,10 @@ The .NET Framework requires administrator privileges for installation. If you do
 | Operating system | Supported editions | Preinstalled with the OS | Installable separately |
 | ---------------- | ------------------ | ------------------------ | ---------------------- |
 | Windows 10 Fall Creators Update | 32-bit and 64-bit | .NET Framework 4.7.1 | |
-| Windows 10 Creators Update | 32-bit and 64-bit | .NET Framework 4.7 | .Net Framework 4.7.1 | 
+| Windows 10 Creators Update | 32-bit and 64-bit | .NET Framework 4.7 | .NET Framework 4.7.1 | 
 | Windows 10 Anniversary Update | 32-bit and 64-bit | [!INCLUDE[net_v462](../../../includes/net-v462-md.md)]|.NET Framework 4.7<br/><br/>.NET Framework 4.7.1 |
-| Windows 10 November Update | 32-bit and 64-bit | [!INCLUDE[net_v461](../../../includes/net-v461-md.md)] | |
-| Windows 10 | 32-bit and 64-bit | [!INCLUDE[net_v46](../../../includes/net-v46-md.md)] | [!INCLUDE[net_v461](../../../includes/net-v461-md.md)] |
+| Windows 10 November Update | 32-bit and 64-bit | .NET Framework 4.6.1 | .NET Framework 4.6.2 |
+| Windows 10 | 32-bit and 64-bit | .NET Framework 4.6 | .NET Framework 4.6.1 <br/><br/> .NET Framework 4.6.2 |
 | [!INCLUDE[win81](../../../includes/win81-md.md)] | 32-bit, 64-bit, and ARM | [!INCLUDE[net_v451](../../../includes/net-v451-md.md)] | [!INCLUDE[net_v452](../../../includes/net-v452-md.md)]<br /><br /> [!INCLUDE[net_v46](../../../includes/net-v46-md.md)]<br /><br /> [!INCLUDE[net_v461](../../../includes/net-v461-md.md)]<br /><br /> [!INCLUDE[net_v462](../../../includes/net-v462-md.md)]<br /><br />.NET Framework 4.7<br/><br/>.NET Framework 4.7.1 |
 | [!INCLUDE[win8](../../../includes/win8-md.md)] | 32-bit, 64-bit, and ARM | [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] | [!INCLUDE[net_v451](../../../includes/net-v451-md.md)]<br /><br /> [!INCLUDE[net_v452](../../../includes/net-v452-md.md)]<br /><br /> [!INCLUDE[net_v46](../../../includes/net-v46-md.md)]<br /><br /> [!INCLUDE[net_v461](../../../includes/net-v461-md.md)] |
 | Windows 7 SP1|32-bit and 64-bit | -- | .NET Framework 4<br /><br /> [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]<br /><br /> [!INCLUDE[net_v451](../../../includes/net-v451-md.md)]<br /><br /> [!INCLUDE[net_v452](../../../includes/net-v452-md.md)]<br /><br /> [!INCLUDE[net_v46](../../../includes/net-v46-md.md)]<br /><br /> [!INCLUDE[net_v461](../../../includes/net-v461-md.md)]<br /><br /> [!INCLUDE[net_v462](../../../includes/net-v462-md.md)]<br /><br />.NET Framework 4.7<br/><br/>.NET Framework 4.7.1|

@@ -4,7 +4,7 @@ description: Learn how to restore dependencies and project-specific tools with t
 keywords: dotnet-restore, CLI, CLI command, .NET Core
 author: mairaw
 ms.author: mairaw
-ms.date: 08/14/2017
+ms.date: 11/30/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli

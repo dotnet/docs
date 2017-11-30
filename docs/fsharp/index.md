@@ -1,7 +1,7 @@
 ---
 title: F# Guide
 description: Learn about the F# programming language, an open-source language for .NET that provides first-class support for functional programming.
-keywords: .NET, .NET Core
+keywords: F#, Visual F#, F# Guide, F# Tutorial, F# Programming, Functional Programming, .NET, .NET Core
 author: jackfoxy
 ms.author: phcart
 ms.date: 06/20/2016

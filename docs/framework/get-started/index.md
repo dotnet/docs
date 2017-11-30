@@ -85,7 +85,7 @@ For more information on developing apps that target the .NET Framework, see the 
 | [System Requirements](../../../docs/framework/get-started/system-requirements.md) | Lists the hardware and software requirements for running the .NET Framework. |
 | [.NET Core and Open-Source](../../../docs/framework/get-started/net-core-and-open-source.md) | Describes .NET Core in relation to the .NET Framework and how to access the open-source .NET Core projects. |
 | [.NET Core documentation](https://docs.microsoft.com/dotnet/) | Provides the conceptual and API reference documentation for .NET Core. |
-| [.NET Standard]((~/docs/standard/net-standard.md)) | Discusses .NET Standard, a versioned specification that individual .NET implementations support to guarantee that a consistent set of APIs are available on multiple platforms.
+| [.NET Standard](~/docs/standard/net-standard.md) | Discusses .NET Standard, a versioned specification that individual .NET implementations support to guarantee that a consistent set of APIs are available on multiple platforms.
 
 ## See also
 

@@ -20,7 +20,7 @@ manager: "wpickett"
 The .NET Framework is a runtime execution environment that manages apps that target the .NET Framework. It consists of the common language runtime, which provides memory management and other system services, and an extensive class library, which enables programmers to take advantage of robust, reliable code for all major areas of app development.
 
 > [!NOTE] 
-> The .NET Framework is available on Windows systems only. You can use [.NET Core](../../core/index.md) to build an app that runs on Windows, MacOS, and Linux. 
+> The .NET Framework is available on Windows systems only. You can use [.NET Core](../../core/index.md) to run apps on Windows, MacOS, and Linux. 
 
 <a name="Introducing"></a>
 ## What is the .NET Framework?

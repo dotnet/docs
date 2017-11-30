@@ -60,7 +60,9 @@ Starting with .NET Core 2.0, `dotnet restore` is run implicitly if necessary whe
 - [`dotnet publish`](dotnet-publish.md)
 - [`dotnet pack`](dotnet-pack.md)
 
-In most cases, you no longer need to explicitly issue the `dotnet restore` command. 
+In most cases, you no longer need to explicitly use the `dotnet restore` command. 
+
+In some cases, it is inconvenient for `dotnet restore` to run implicitly. For example, some automated systems, such as build systems, need to call `dotnet restore` explicitly to control when the restore occurs so that they can control network usage. To prevent `dotnet restore` from running implicitly, you can use the `--no-restore` switch with any of these commands to disable implicit restore.
 
 ## Arguments
 

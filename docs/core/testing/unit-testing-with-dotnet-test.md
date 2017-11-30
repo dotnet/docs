@@ -158,7 +158,7 @@ Instead of creating new tests, apply these two attributes, `[Theory]` and `[Inli
 
 [!code-csharp[Sample_TestCode](../../../samples/core/getting-started/unit-testing-using-dotnet-test/PrimeService.Tests/PrimeService_IsPrimeShould.cs?name=Sample_TestCode)]
 
-Run `dotnet test` again, and two of these tests should fail. To make all of the tests pass, change the `if` clause at the beginning of the method:
+Run `dotnet test` again, and two of these tests should fail. To make all of the tests pass, change the `if` clause at the beginning of the `IsPrime` method in the *PrimeService.cs* file:
 
 ```csharp
 if (candidate < 2)

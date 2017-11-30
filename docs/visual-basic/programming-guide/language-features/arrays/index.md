@@ -3,8 +3,6 @@ title: "Arrays in Visual Basic"
 ms.custom: ""
 ms.date: 07/20/2015
 ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
 ms.topic: "article"
@@ -14,94 +12,94 @@ helpviewer_keywords:
   - "arrays [Visual Basic]"
   - "Visual Basic, arrays"
 ms.assetid: dbf29737-b589-4443-bee6-a27588d9c67e
-caps.latest.revision: 47
-author: dotnet-bot
-ms.author: dotnetcontent
+author: rpetrusha
+ms.author: ronpet
+ms.manager: wpickett
 ---
 # Arrays in Visual Basic
-An array is a set of values that are logically related to each other, such as the number of students in each grade in a grammar school.  If you are looking for help on arrays in Visual Basic for Applications (VBA), see the [language reference](https://msdn.microsoft.com/library/office/gg264383\(v=office.14\).aspx).  
+An array is a set of values, which are termed *elements*, that are logically related to each other. For example, an array may consist of the number of students in each grade in a grammar school; each element of the array is the number of students in a single grade. Similarly, an array may consist of a student's grades for a class; each element of the array is a single grade.    
   
- By using an array, you can refer to these related values by the same name, and use a number that’s called an index or subscript to tell them apart. The individual values are called the elements of the array. They’re contiguous from index 0 through the highest index value.  
-  
- In contrast to an array, a variable that contain a single value is called a *scalar* variable.  
+ By using an array, you can refer to these related values by the same name, and use a number that’s called an *index* or *subscript* to identify an individual element based on its position in the array. The indexes of an array range from 0 to one less than the total number of elements in the array. 
   
  Some quick examples before explanation:  
   
 ```vb  
-'Declare a single-dimension array of 5 values  
+' Declare a single-dimension array of 5 numbers.  
 Dim numbers(4) As Integer   
   
-'Declare a single-dimension array and set array element values  
+'Declare a single-dimension array and set its 4 values.  
 Dim numbers = New Integer() {1, 2, 4, 8}  
   
-'Redefine the size of an existing array retaining the current values  
-ReDim Preserve numbers(15)  
+' Change the size of an existing array to 16 elements and retain the current values.
+ReDim Preserve numbers(15)
   
-'Redefine the size of an existing array, resetting the values  
+' Redefine the size of an existing array and reset the values.
 ReDim numbers(15)  
   
-'Declare a multi-dimensional array  
+' Declare a 6 x 6 multi-dimensional array.
 Dim matrix(5, 5) As Double  
   
-'Declare a multi-dimensional array and set array element values  
-Dim matrix = New Integer(4, 4) {{1, 2}, {3, 4}, {5, 6}, {7, 8}}  
+' Declare a 4 x 3 multi-dimensional array and set array element values.  
+Dim matrix = New Integer(3, 2) {{1, 2, 3}, {2, 3, 4}, {3, 4, 5}, {4, 5, 6}}  
   
-'Declare a jagged array  
+' Declare a jagged array  
 Dim sales()() As Double = New Double(11)() {}  
 ```  
   
- **In this topic**  
+ ## In this article
   
--   [Array Elements in a Simple Array](#BKMK_ArrayElements)  
+- [Array elements in a simple array](#array-elements-in-a-simple-array)  
   
--   [Creating an Array](#BKMK_CreatingAnArray)  
+- [Creating an Array](#creating-an-array)  
   
--   [Storing Values in an Array](#BKMK_StoringValues)  
+- [Storing Values in an Array](#BKMK_StoringValues)  
   
--   [Populating an Array with Initial Values](#BKMK_Populating)  
+- [Populating an Array with Initial Values](#BKMK_Populating)  
   
     -   [Nested Array Literals](#BKMK_NestedArrayLiterals)  
   
--   [Iterating Through an Array](#BKMK_Iterating)  
+- [Iterating Through an Array](#BKMK_Iterating)  
   
--   [Arrays as Return Values and Parameters](#BKMK_ReturnValues)  
+- [Arrays as Return Values and Parameters](#BKMK_ReturnValues)  
   
--   [Jagged Arrays](#BKMK_JaggedArrays)  
+- [Jagged Arrays](#BKMK_JaggedArrays)  
   
--   [Zero-Length Arrays](#BKMK_ZeroLength)  
+- [Zero-Length Arrays](#BKMK_ZeroLength)  
   
--   [Array Size](#BKMK_ArraySize)  
+- [Array Size](#BKMK_ArraySize)  
   
--   [Array Types and Other Types](#BKMK_ArrayTypes)  
+- [Array Types and Other Types](#BKMK_ArrayTypes)  
   
--   [Collections as an Alternative to Arrays](#BKMK_Collections)  
+- [Collections as an Alternative to Arrays](#BKMK_Collections)  
   
-##  <a name="BKMK_ArrayElements"></a> Array Elements in a Simple Array  
- The following example declares an array variable to hold the number of students in each grade in a grammar school.  
+##  Array elements in a simple array  
+
+Let's create an array named `students` to store the number of students in each grade in a grammar school. The indexes of the elements will range from 0 through 6. Using this array is simpler than declaring seven variables.
+
+The following illustration shows the `students` array. For each element of the array:  
   
- [!code-vb[VbVbalrArrays#2](../../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrArrays/VB/Class1.vb#2)]  
+-   The index of the element represents the grade (index 0 represents kindergarten).
   
- The array `students` in the preceding example contains seven elements. The indexes of the elements range from 0 through 6. Having this array is simpler than declaring seven variables.  
-  
- The following illustration shows the array `students`. For each element of the array:  
-  
--   The index of the element represents the grade (index 0 represents kindergarten).  
-  
--   The value that’s contained in the element represents the number of students in that grade.  
+-   The value that’s contained in the element represents the number of students in that grade.
   
  ![Picture of array showing numbers of students](../../../../visual-basic/programming-guide/language-features/arrays/media/arrayexampleschool.gif "ArrayExampleSchool")  
 Elements of the "students" array  
+ 
+The following example contains the Visual Basic code that creates and uses the array:
+
+ [!code-vb[simple-array](../../../../../samples/snippets/visualbasic/programming-guide/language-features/arrays/simple-array.vb)]  
+
+The example does three things:
+
+- It declares a `students` array with seven elements. The number `6` in the array declaration indicates the last index in the array; it is one less than the number of elements in the array.
+- It assigns values to each element in the array. Array elements are accessed by using the array name and including the index of the individual element in parentheses.
+- It lists each value of the array. The example uses a [For](../../../language-reference/statements/for-next-statement.md) statement to access each element of the array by its index number.
   
- The following example shows how to refer to the first, second, and last element of the array `students`.  
+ The `students` array in the preceding example is a one-dimensional array because it uses one index. An array that uses more than one index or subscript is called multidimensional. For more information, see the rest of this topic and [Array Dimensions in Visual Basic](../../../../visual-basic/programming-guide/language-features/arrays/array-dimensions.md).  
   
- [!code-vb[VbVbalrArrays#3](../../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrArrays/VB/Class1.vb#3)]  
-  
- You can refer to the array as a whole by using just the array variable name without indexes.  
-  
- The array `students` in the preceding example uses one index and is said to be one-dimensional. An array that uses more than one index or subscript is called multidimensional. For more information, see the rest of this topic and [Array Dimensions in Visual Basic](../../../../visual-basic/programming-guide/language-features/arrays/array-dimensions.md).  
-  
-##  <a name="BKMK_CreatingAnArray"></a> Creating an Array  
- You can define the size of an array several ways. You can supply the size when the array is declared, as the following example shows.  
+##  Creating an Array  
+ 
+You can define the size of an array in several ways. You can supply the size when the array is declared, as the following example shows.  
   
  [!code-vb[VbVbalrArrays#12](../../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrArrays/VB/Class1.vb#12)]  
   
@@ -277,6 +275,6 @@ Dim prices(3, 4, 5) As Long
 |[Troubleshooting Arrays](../../../../visual-basic/programming-guide/language-features/arrays/troubleshooting-arrays.md)|Discusses some common problems that arise when working with arrays.|  
   
 ## See Also  
- <xref:System.Array>  
+ <xref:System.Array?displayProperty=nameWithType>  
  [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md)  
  [ReDim Statement](../../../../visual-basic/language-reference/statements/redim-statement.md)

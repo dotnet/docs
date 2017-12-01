@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 09240dce-9e62-4f00-9f37-9dbe90a09af2
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.IdentityModel.Selectors.StoreRollbackTransaction
 System.IdentityModel.Selectors.StoreRollbackTransaction  

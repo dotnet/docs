@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 1e40b5c9-0df2-4d66-afc5-a99d0e4ae7a4
 caps.latest.revision: 12
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;wsHttpContextBinding&gt;
 Provides a context for the <xref:System.ServiceModel.WSHttpBinding> that requires that the protection level be signed.  

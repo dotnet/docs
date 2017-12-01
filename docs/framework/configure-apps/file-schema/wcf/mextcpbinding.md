@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 01baba8d-d784-4255-9ea2-7afff1482bf0
 caps.latest.revision: 8
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;mexTcpBinding&gt;
 Specifies the settings for a binding used for the WS-MetadataExchange (WS-MEX) message exchange over TCP.  

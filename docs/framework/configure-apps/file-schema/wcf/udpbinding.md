@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: fa291901-8340-45c6-9c44-5d9281c70bc3
 caps.latest.revision: 3
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;udpBinding&gt;
 A configuration element used to configure the <xref:System.ServiceModel.UdpBinding> binding.  

@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 9a827e0f-fb91-46bb-bd54-926d4b74d8a6
 caps.latest.revision: 6
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.Channels.FailedPipeConnect
 An attempt to connect to the named pipe endpoint failed. Another attempt is made within the specified timeout period.  

@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: e4ae3cd4-6b67-4ce1-af4b-9400e0a38dba
 caps.latest.revision: 14
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;binaryMessageEncoding&gt;
 Defines a binary message encoder that encodes Windows Communication Foundation (WCF) messages in binary on the wire.  

@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "metadata [WCF], overview"
 ms.assetid: 1d37645e-086d-4d68-a358-f3c5b6e8205e
 caps.latest.revision: 24
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Metadata Architecture Overview
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] provides a rich infrastructure for exporting, publishing, retrieving, and importing service metadata. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services use metadata to describe how to interact with the service's endpoints so that tools, such as Svcutil.exe, can automatically generate client code for accessing the service.  

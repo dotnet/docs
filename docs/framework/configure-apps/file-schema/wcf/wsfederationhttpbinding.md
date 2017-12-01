@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "wsFederationBinding element"
 ms.assetid: 9c3312b4-2137-4e71-bf3f-de1cf8e9be79
 caps.latest.revision: 28
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;wsFederationHttpBinding&gt;
 Defines a binding that supports WS-Federation.  

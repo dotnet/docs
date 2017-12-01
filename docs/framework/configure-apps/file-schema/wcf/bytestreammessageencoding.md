@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: bbadd8dd-60a2-4007-b959-89373a8a7d60
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;byteStreamMessageEncoding&gt;
 Specifies the message encoding as a stream of bytes, with the option to specify the character encoding.  

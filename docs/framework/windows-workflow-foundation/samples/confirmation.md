@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 8637aeaf-ac9e-49b8-93f4-da15dee45277
 caps.latest.revision: 7
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Confirmation
 This sample shows four common scenarios surrounding the use of <xref:System.Activities.Statements.CompensableActivity> and confirmation. The sample runs four workflows to show confirmation. This sample is available in declarative and imperative versions.  

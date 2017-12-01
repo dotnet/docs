@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 39c5c338-b316-43d6-b7fe-a543281dd1ec
 caps.latest.revision: 10
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Using CancellationScope
 This sample demonstrates how to use the <xref:System.Activities.Statements.CancellationScope> activity to cancel work in an application.  

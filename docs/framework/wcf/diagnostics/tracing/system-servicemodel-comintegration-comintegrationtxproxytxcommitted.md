@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: f9f5d2aa-04db-4d4d-b802-3bf5d4626e59
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.ComIntegration.ComIntegrationTxProxyTxCommitted
 System.ServiceModel.ComIntegration.ComIntegrationTxProxyTxCommitted  

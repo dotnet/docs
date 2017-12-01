@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: db6d8cdb-0d25-4bfb-8963-eff465733d70
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.Channels.HttpChannelConcurrentReceiveQuotaReached
 System.ServiceModel.Channels.HttpChannelConcurrentReceiveQuotaReached  

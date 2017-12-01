@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 1a0f22f1-1b08-4b10-ac08-b109209eda8b
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.WarnHelpPageEnabledNoBaseAddress
 System.ServiceModel.WarnHelpPageEnabledNoBaseAddress  

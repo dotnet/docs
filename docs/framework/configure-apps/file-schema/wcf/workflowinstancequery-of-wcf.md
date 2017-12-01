@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 35c73f9d-474e-42eb-874d-ddc04b1987f3
 caps.latest.revision: 3
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;workflowInstanceQuery&gt; of WCF
 Represents a query that tracks workflow instance life cycle changes such as a started or completed event.  

@@ -17,9 +17,9 @@ helpviewer_keywords:
   - "XsdDataContractImporter class"
 ms.assetid: b9170583-8c34-43bd-97bb-6c0c8dddeee0
 caps.latest.revision: 15
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Importing Schema to Generate Classes
 To generate classes from schemas that are usable with [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], use the <xref:System.Runtime.Serialization.XsdDataContractImporter> class. This topic describes the process and variations.  

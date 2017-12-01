@@ -18,9 +18,9 @@ helpviewer_keywords:
   - "ClientCredentialsSecurityTokenManager class"
 ms.assetid: 0b06ce4e-7835-4d82-8baf-d525c71a0e49
 caps.latest.revision: 11
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # How to: Use Separate X.509 Certificates for Signing and Encryption
 This topic shows how to configure [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] to use different certificates for message signing and encryption on both the client and service.  

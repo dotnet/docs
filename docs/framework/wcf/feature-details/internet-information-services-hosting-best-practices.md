@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 0834768e-9665-46bf-86eb-d4b09ab91af5
 caps.latest.revision: 22
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Internet Information Services Hosting Best Practices
 This topic outlines some best practices for hosting [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] services.  

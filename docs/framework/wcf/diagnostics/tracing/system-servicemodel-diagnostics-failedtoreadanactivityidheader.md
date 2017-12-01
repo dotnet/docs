@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: dba7f15e-b8f5-4c96-9c02-a3a49723ebb2
 caps.latest.revision: 6
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.Diagnostics.FailedToReadAnActivityIdHeader
 System.ServiceModel.Diagnostics.FailedToReadAnActivityIdHeader  

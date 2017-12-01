@@ -17,9 +17,9 @@ helpviewer_keywords:
   - "federation"
 ms.assetid: 15263371-514e-4ea6-90fb-14b4939154cd
 caps.latest.revision: 11
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # How to: Configure a Local Issuer
 This topic describes how to configure a client to use a local issuer for issued tokens.  

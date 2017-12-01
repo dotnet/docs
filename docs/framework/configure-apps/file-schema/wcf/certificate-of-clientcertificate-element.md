@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 00297efb-a7f2-4e03-bc2b-943d545610fc
 caps.latest.revision: 9
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;certificate&gt; of &lt;clientCertificate&gt; Element
 Specifies an X.509 certificate used to sign and encrypt messages.  

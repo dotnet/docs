@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 7676b9bb-cbd1-41fd-9a93-cc615af6e2d0
 caps.latest.revision: 11
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Using Tracing to Troubleshoot Your Application
 This section contains various topics that describe how you can use tracing to troubleshoot your application.  

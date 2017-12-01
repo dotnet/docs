@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ed96b5fc-ca2c-4b0d-bdba-d06b77c3cb2a
 caps.latest.revision: 40
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # WCF Web HTTP Programming Object Model
 The WCF WEB HTTP  Programming Model allows developers to expose [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] Web services through basic HTTP requests without requiring SOAP. The WCF WEB HTTP  Programming Model is built on top of the existing [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] extensibility model. It defines the following classes:  

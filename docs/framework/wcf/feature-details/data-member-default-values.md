@@ -17,9 +17,9 @@ helpviewer_keywords:
   - "data members [WCF]"
 ms.assetid: 53a3b505-4b27-444b-b079-0eb84a97cfd8
 caps.latest.revision: 10
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Data Member Default Values
 In the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)], types have a concept of *default values*. For example, for any reference type the default value is `null`, and for an integer type it is zero. It is occasionally desirable to omit a data member from serialized data when it is set to its default value. Because the member has a default value, an actual value need not be serialized; this has a performance advantage.  

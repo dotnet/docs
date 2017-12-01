@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 4abe01f0-6398-4fba-b2f3-c054b7f7e971
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Microsoft.Transactions.TransactionBridge.CommitMessageRetry
 A commit message retry was sent to an unresponsive participant.  

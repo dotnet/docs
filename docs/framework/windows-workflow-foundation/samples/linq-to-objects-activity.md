@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 403c82e8-7f2b-42f6-93cd-95c35bc76ead
 caps.latest.revision: 11
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # LINQ to Objects Activity
 This sample demonstrates how to create an activity to use LINQ to Objects to query elements in a collection.  

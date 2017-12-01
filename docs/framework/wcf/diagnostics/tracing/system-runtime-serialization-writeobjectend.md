@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 586d2b65-d8eb-4186-9400-40ae4e163161
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.Runtime.Serialization.WriteObjectEnd
 System.Runtime.Serialization.WriteObjectEnd  

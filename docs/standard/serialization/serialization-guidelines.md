@@ -11,9 +11,9 @@ helpviewer_keywords:
   - "binary serialization, guidelines"
 ms.assetid: ebbeddff-179d-443f-bf08-9c373199a73a
 caps.latest.revision: 11
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Serialization guidelines
 This document lists the guidelines to consider when designing an API to be serialized.  

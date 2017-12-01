@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 1bd7426f-5f4f-43fc-b8e9-de842219aa32
 caps.latest.revision: 7
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;add&gt; of &lt;baseAddresses&gt;
 Represents a configuration element that specifies the base addresses used by the service host.  

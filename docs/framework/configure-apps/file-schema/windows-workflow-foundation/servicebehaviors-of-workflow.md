@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 51aba42d-0674-4726-a313-af6ed3aaa8f2
 caps.latest.revision: 2
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;serviceBehaviors&gt; of workflow
 This configuration section represents all the behaviors defined for a specific service.  

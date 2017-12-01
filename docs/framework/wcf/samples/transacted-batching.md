@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ecd328ed-332e-479c-a894-489609bcddd2
 caps.latest.revision: 23
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Transacted Batching
 This sample demonstrates how to batch transacted reads by using Message Queuing (MSMQ). Transacted Batching is a performance optimization feature for transacted reads in queued communication.  

@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "temporary certificates [WCF]"
 ms.assetid: bc5f6637-5513-4d27-99bb-51aad7741e4a
 caps.latest.revision: 14
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # How to: Create Temporary Certificates for Use During Development
 When developing a secure service or client using [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], it is often necessary to supply an X.509 certificate to be used as a credential. The certificate typically is part of a chain of certificates with a root authority found in the Trusted Root Certification Authorities store of the computer. Having a certificate chain enables you to scope a set of certificates where typically the root authority is from your organization or business unit. To emulate this at development time, you can create two certificates to satisfy the security requirements. The first is a self-signed certificate that is placed in the Trusted Root Certification Authorities store, and the second certificate is created from the first and is placed in either the Personal store of the Local Machine location, or the Personal store of the Current User location. This topic walks through the steps to create these two certificates using the [Certificate Creation Tool (MakeCert.exe)](http://go.microsoft.com/fwlink/?LinkId=248185), which is provided by the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] SDK.  

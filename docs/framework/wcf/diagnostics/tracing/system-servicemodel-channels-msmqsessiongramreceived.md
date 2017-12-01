@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 66cfc20b-3bf0-48f6-a715-d82d88f5e71e
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.Channels.MsmqSessiongramReceived
 System.ServiceModel.Channels.MsmqSessiongramReceived  

@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 128aaabe-3f1a-4c3b-b59f-898d0f02910f
 caps.latest.revision: 14
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;add&gt; of &lt;knownCertificates&gt;
 Adds an X.509 certificate to the collection of known certificates.  

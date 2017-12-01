@@ -16,9 +16,9 @@ helpviewer_keywords:
   - "service contracts [WCF], implementing"
 ms.assetid: d5ab51ba-61ae-403e-b3c8-e2669e326806
 caps.latest.revision: 38
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # How to: Implement a Windows Communication Foundation Service Contract
 This is the second of six tasks required to create a basic [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service and a client that can call the service. For an overview of all six tasks, see the [Getting Started Tutorial](../../../docs/framework/wcf/getting-started-tutorial.md) topic.  

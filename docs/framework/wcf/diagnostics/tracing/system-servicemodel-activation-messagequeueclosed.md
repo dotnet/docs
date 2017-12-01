@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 92c40c72-4f0d-4d8a-bde0-1731aaaeaf89
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.Activation.MessageQueueClosed
 System.ServiceModel.Activation.MessageQueueClosed  

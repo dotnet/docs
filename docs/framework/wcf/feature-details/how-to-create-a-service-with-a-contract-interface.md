@@ -14,9 +14,9 @@ dev_langs:
  - "vb"
 ms.assetid: 7b6803f6-d6f9-4cc2-9f1b-6f4c920475d5
 caps.latest.revision: 9
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # How to: Create a Service with a Contract Interface
 The preferred way to create a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] contract is by using an interface. This contract specifies the collection and structure of messages required to access the operations the service offers. This interface defines the input and output types by applying the <xref:System.ServiceModel.ServiceContractAttribute> class to the interface and the <xref:System.ServiceModel.OperationContractAttribute> class to the methods that you want to expose.  

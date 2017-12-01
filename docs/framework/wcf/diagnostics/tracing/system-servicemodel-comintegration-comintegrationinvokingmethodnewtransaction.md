@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 0ece8905-f151-4b92-ba45-0437db314297
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.ComIntegration.ComIntegrationInvokingMethodNewTransaction
 System.ServiceModel.ComIntegration.ComIntegrationInvokingMethodNewTransaction  

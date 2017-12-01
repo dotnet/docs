@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: ab483c7f-a091-4933-ba6b-708d96846d38
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;state&gt; of &lt;states&gt;
 A configuration element that contains the state of the subscribed activity for which a tracking record should be emitted.  

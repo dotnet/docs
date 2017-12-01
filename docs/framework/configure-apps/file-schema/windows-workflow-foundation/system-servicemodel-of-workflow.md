@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 6a8eb2bf-f925-40e1-ba5c-a49b1d3a3ac6
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;system.serviceModel&gt; of workflow
 This configuration section contains all the workflow configuration elements.  

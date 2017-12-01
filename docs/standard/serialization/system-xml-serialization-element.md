@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "<system.xml.serialization> element"
 ms.assetid: 3ce45919-388a-418c-8968-6df0372c73ec
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;system.xml.serialization&gt; Element
 The top-level element for controlling XML serialization. For more information about configuration files, see [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md).  

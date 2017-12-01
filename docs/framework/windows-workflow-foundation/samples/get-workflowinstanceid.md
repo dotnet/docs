@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: bd7eea3b-1c28-4b84-9a67-003bc553aa81
 caps.latest.revision: 6
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Get WorkflowInstanceId
 This sample demonstrates how to use the custom activity, `GetWorkflowInstanceId` to return the workflow instance ID.  

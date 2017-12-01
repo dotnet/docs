@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 8d979dfc-a6f9-42ec-96d5-7fbc13a48118
 caps.latest.revision: 6
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;messageSenderAuthentication&gt; element
 Specifies authentication options for peer-to-peer message senders.  

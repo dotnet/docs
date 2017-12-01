@@ -18,9 +18,9 @@ helpviewer_keywords:
   - "WCF Data Services, accessing data"
 ms.assetid: 62997821-e0c6-4c4d-9fb7-1273fb5e5d18
 caps.latest.revision: 2
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # How to: Execute Data Service Queries (WCF Data Services)
 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] enables you to query a data service from a .NET Framework-based client application by using the generated client data service classes. You can execute queries by using one of these methods:  

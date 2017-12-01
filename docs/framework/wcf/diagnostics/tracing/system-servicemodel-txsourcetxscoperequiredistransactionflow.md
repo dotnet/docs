@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 41a3a5d7-bb16-4d16-bb51-db7ac0cfb748
 caps.latest.revision: 6
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.TxSourceTxScopeRequiredIsTransactionFlow
 The specified transaction was flowed to the specified operation.  

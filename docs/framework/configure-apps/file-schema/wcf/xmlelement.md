@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 395205c2-d8c0-4a5e-90f3-7ce3c085fccd
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;xmlElement&gt;
 Specifies an XML element that is sent in the message body to the Security Token Service when requesting a token.  

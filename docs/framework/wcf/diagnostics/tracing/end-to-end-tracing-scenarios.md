@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: f83b7d53-6061-4362-a9a3-ee1daf6542be
 caps.latest.revision: 6
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # End-To-End Tracing Scenarios
 This section contains topics that describe different scenarios for using tracing.  

@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: e4fc924f-3b9e-44f5-97e4-b3a4bb855d89
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.IdentityModel.IdentityModelAsyncCallbackThrewException
 System.IdentityModel.IdentityModelAsyncCallbackThrewException  

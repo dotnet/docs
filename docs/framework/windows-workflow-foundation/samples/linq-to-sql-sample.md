@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 5f39db9e-0e62-42c9-8c98-bb8b54cec98c
 caps.latest.revision: 9
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # LINQ to SQL Sample
 This sample demonstrates how to create an activity to use LINQ to SQL query entities from tables in SQL Server databases.  

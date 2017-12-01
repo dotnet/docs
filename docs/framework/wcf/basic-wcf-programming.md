@@ -17,9 +17,9 @@ helpviewer_keywords:
   - "Windows Communication Foundation [WCF], programming"
 ms.assetid: 3ae3d498-f43c-4ecc-8cc0-6cbe36b62593
 caps.latest.revision: 31
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Basic WCF Programming
 This section presents the fundamentals for creating [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] applications.  

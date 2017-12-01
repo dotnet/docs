@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: a89ab9b8-4429-4df0-ab62-7db4c58684cc
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.PerformanceCountersFailedDuringUpdate
 System.ServiceModel.PerformanceCountersFailedDuringUpdate  

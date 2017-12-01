@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 9087bf09-cb15-41ec-bd7a-6338789953d0
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.IdentityModel.Selectors.StoreSignatureNotValid
 System.IdentityModel.Selectors.StoreSignatureNotValid  

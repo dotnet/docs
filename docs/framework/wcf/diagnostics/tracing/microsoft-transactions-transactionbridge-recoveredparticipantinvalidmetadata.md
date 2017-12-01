@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 5d38eb27-bb00-4d7e-a234-50de8d90a0f9
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Microsoft.Transactions.TransactionBridge.RecoveredParticipantInvalidMetadata
 The endpoint reference found in a participant recovery log entry contained invalid or incompatible metadata.  

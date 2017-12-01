@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: d1d547d2-f5fb-4de3-a959-ee6139a4f1ad
 caps.latest.revision: 9
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # OverloadGroups
 This sample consists of an activity (`CreateLocation`), which has two interesting characteristics:  

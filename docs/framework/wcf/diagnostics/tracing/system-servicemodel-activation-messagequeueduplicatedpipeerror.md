@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ebfe9af1-76f7-4416-abf9-1d777708e0f1
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.Activation.MessageQueueDuplicatedPipeError
 System.ServiceModel.Activation.MessageQueueDuplicatedPipeError  

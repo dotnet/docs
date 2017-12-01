@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: cb5bdc6b-4281-452d-bc42-1181f2966e2a
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.Activation.WebHostProtocolMisconfigured
 The protocol is incorrectly configured in Windows Process Activation Service (WAS).  

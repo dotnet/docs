@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 57adeab5-f06a-44b2-916b-0e177cf0f4a6
 caps.latest.revision: 3
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;workflowUnhandledException&gt;
 A service behavior that enables you to specify the action to take when an unhandled exception occurs within a workflow service.  

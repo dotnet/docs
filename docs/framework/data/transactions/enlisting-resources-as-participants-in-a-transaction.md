@@ -12,9 +12,9 @@ dev_langs:
  - "vb"
 ms.assetid: 786a12c2-d530-49f4-9c59-5c973e15a11d
 caps.latest.revision: 3
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Enlisting Resources as Participants in a Transaction
 Each resource participating in a transaction is managed by a resource manager, whose actions are coordinated by a transaction manager. The coordination is done through notifications given to subscribers who have enlisted in a transaction through the transaction manager.  

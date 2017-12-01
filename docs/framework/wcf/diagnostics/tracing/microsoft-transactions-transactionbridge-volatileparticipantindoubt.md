@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 3e8fc825-9f22-47e7-9c16-d64ef291c932
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Microsoft.Transactions.TransactionBridge.VolatileParticipantInDoubt
 The WS-AT protocol service received a Prepared or Replay message from an unrecognized volatile participant. A fault was returned to the participant, declares that the transaction's outcome is in doubt.  

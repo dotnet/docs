@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 13d15194-a04f-4a5a-9d85-23ad350fdc7e
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.Channels.MaxAcceptedChannelsReached
 System.ServiceModel.Channels.MaxAcceptedChannelsReached  

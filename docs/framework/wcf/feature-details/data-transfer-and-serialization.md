@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "data transfer [WCF]"
 ms.assetid: 0f03c635-f3e7-4c5c-9463-3cb0135e221e
 caps.latest.revision: 12
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Data Transfer and Serialization
 In a connected system, services and clients depend on the exchange of data to accomplish any task. As a developer of a service or client, you must also understand how [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] handles data and data serialization in order to create applications that are efficient and easy to maintain.  

@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: e471b042-d5e3-491c-bc81-758655016a3a
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # WCF Directive Syntax
 Specifies settings used by the [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] directives in the .svc files to direct the compilers. Each directive can contain one or more attributes (paired with values) that are specific to that directive. [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] has only the [@ServiceHost](../../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md) directive.  

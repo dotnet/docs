@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 97c4e6a3-6673-4eb7-a8b2-fc8c6d782ddf
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.Activation.MessageQueueDuplicatedPipe
 System.ServiceModel.Activation.MessageQueueDuplicatedPipe  

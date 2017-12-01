@@ -17,9 +17,9 @@ helpviewer_keywords:
   - "WCF, security"
 ms.assetid: 2424c137-c7c2-4aa9-8d5d-a066e12fefda
 caps.latest.revision: 11
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # How to: Set Up a Signature Confirmation
 *Signature confirmation* is a mechanism for a message initiator to ensure that a received reply was generated in response to the sender's original message. Signature confirmation is defined in the WS-Security 1.1 specification. If an endpoint supports WS-Security 1.0, you cannot use signature confirmation.  

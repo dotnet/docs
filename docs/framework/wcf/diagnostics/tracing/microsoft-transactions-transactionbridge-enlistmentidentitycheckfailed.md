@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 74aeb3e7-f9eb-4491-9e78-5f8c9cbcb434
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Microsoft.Transactions.TransactionBridge.EnlistmentIdentityCheckFailed
 The identity of the incoming message sender did not match the identity derived from the enlistment's endpoint reference.  

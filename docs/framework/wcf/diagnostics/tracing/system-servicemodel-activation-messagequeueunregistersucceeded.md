@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: c2e344a4-3b10-430b-bdf3-b065777861bb
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.Activation.MessageQueueUnregisterSucceeded
 System.ServiceModel.Activation.MessageQueueUnregisterSucceeded  

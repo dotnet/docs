@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "certificates [WCF], obtaining"
 ms.assetid: d53762fd-15ea-42dc-b0ea-6a6597aa23f7
 caps.latest.revision: 8
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # How to: Obtain a Certificate (WCF)
 To use any of the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] features of that use X.509 certificates, you just first obtain certificates.  

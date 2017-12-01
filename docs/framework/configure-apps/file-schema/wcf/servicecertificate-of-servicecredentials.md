@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 597ae6d5-4938-4950-9f5e-b2280e816182
 caps.latest.revision: 14
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;serviceCertificate&gt; of &lt;serviceCredentials&gt;
 Specify an X.509 certificate that will be used to authenticate the service to clients using Message security mode.  

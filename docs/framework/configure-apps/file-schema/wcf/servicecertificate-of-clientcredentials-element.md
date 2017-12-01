@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: e50c0ac5-f0df-4c90-b54b-fc602c1f84ea
 caps.latest.revision: 13
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;serviceCertificate&gt; of &lt;clientCredentials&gt; Element
 Specifies a certificate to use when authenticating a service to the client.  

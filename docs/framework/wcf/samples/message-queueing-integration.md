@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 8d2b47a0-5d51-45b5-9633-b62e064e8ea4
 caps.latest.revision: 3
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Message Queueing Integration
 This section contains samples that demonstrate integration between Message Queuing and [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  

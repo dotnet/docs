@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 0bc74839-6e28-449b-80c9-b62ad7e58207
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.ElementTypeDoesntMatchConfiguredType
 System.ServiceModel.ElementTypeDoesntMatchConfiguredType  

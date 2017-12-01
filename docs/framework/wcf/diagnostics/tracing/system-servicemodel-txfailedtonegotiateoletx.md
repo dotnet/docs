@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 3f0f0b4b-a1ad-4704-8329-455daf54892d
 caps.latest.revision: 7
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.TxFailedToNegotiateOleTx
 The OleTransactions protocol negotiation failed to complete for the specified coordination context.  

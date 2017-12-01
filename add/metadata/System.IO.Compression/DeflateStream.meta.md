@@ -65,7 +65,7 @@ manager: "wpickett"
 uid: System.IO.Compression.DeflateStream.ReadAsync
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -198,14 +198,14 @@ manager: "wpickett"
 uid: System.IO.Compression.DeflateStream.Dispose
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.Compression.DeflateStream.WriteAsync
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

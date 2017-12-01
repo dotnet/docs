@@ -1,13 +1,13 @@
 ---
 uid: System.Workflow.Runtime.Tracking.TrackingWorkflowSuspendedEventArgs
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Workflow.Runtime.Tracking.TrackingWorkflowSuspendedEventArgs.Error
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---

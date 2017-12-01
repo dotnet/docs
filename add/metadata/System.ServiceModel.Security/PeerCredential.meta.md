@@ -3,7 +3,7 @@ uid: System.ServiceModel.Security.PeerCredential
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -11,7 +11,7 @@ uid: System.ServiceModel.Security.PeerCredential.SetCertificate(System.String,Sy
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -19,7 +19,7 @@ uid: System.ServiceModel.Security.PeerCredential.MeshPassword
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -27,7 +27,7 @@ uid: System.ServiceModel.Security.PeerCredential.MessageSenderAuthentication
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -35,7 +35,7 @@ uid: System.ServiceModel.Security.PeerCredential.PeerAuthentication
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -43,7 +43,7 @@ uid: System.ServiceModel.Security.PeerCredential.SetCertificate(System.Security.
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -51,7 +51,7 @@ uid: System.ServiceModel.Security.PeerCredential.SetCertificate
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -59,5 +59,5 @@ uid: System.ServiceModel.Security.PeerCredential.Certificate
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
-manager: "ghogen"
+manager: "wpickett"
 ---

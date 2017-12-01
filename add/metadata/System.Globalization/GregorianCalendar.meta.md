@@ -11,7 +11,7 @@ manager: "wpickett"
 uid: System.Globalization.GregorianCalendar.GetMonthsInYear
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -63,7 +63,7 @@ manager: "wpickett"
 uid: System.Globalization.GregorianCalendar.GetLeapMonth
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -133,7 +133,7 @@ manager: "wpickett"
 uid: System.Globalization.GregorianCalendar.IsLeapMonth
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -185,7 +185,7 @@ manager: "wpickett"
 uid: System.Globalization.GregorianCalendar.ToDateTime
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -219,14 +219,14 @@ manager: "wpickett"
 uid: System.Globalization.GregorianCalendar.IsLeapYear
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Globalization.GregorianCalendar.GetDaysInYear
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -278,7 +278,7 @@ manager: "wpickett"
 uid: System.Globalization.GregorianCalendar.GetDaysInMonth
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -294,5 +294,5 @@ manager: "wpickett"
 uid: System.Globalization.GregorianCalendar.IsLeapDay
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---

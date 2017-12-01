@@ -236,5 +236,5 @@ manager: "wpickett"
 uid: System.Text.UTF8Encoding.GetString
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---

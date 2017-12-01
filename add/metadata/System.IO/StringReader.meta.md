@@ -20,7 +20,7 @@ manager: "wpickett"
 uid: System.IO.StringReader.Dispose
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

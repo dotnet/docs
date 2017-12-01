@@ -101,7 +101,7 @@ manager: "wpickett"
 uid: System.ServiceProcess.ServiceBase.Dispose
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

@@ -11,7 +11,7 @@ manager: "wpickett"
 uid: System.Reflection.TypeDelegator.GetInterface
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -45,21 +45,21 @@ manager: "wpickett"
 uid: System.Reflection.TypeDelegator.GetNestedType
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.TypeDelegator.GetMember
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.TypeDelegator.GetNestedTypes
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -84,7 +84,7 @@ manager: "wpickett"
 uid: System.Reflection.TypeDelegator.GetMembers
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -190,7 +190,7 @@ manager: "wpickett"
 uid: System.Reflection.TypeDelegator.GetField
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -224,21 +224,21 @@ manager: "wpickett"
 uid: System.Reflection.TypeDelegator.GetMethods
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.TypeDelegator.IsAssignableFrom
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.TypeDelegator.GetFields
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -254,7 +254,7 @@ manager: "wpickett"
 uid: System.Reflection.TypeDelegator.InvokeMember
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -342,14 +342,14 @@ manager: "wpickett"
 uid: System.Reflection.TypeDelegator.GetProperties
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.TypeDelegator.GetEvent
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -374,7 +374,7 @@ manager: "wpickett"
 uid: System.Reflection.TypeDelegator.GetConstructors
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

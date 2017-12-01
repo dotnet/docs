@@ -2,16 +2,16 @@
 uid: System.Windows.ThemeInfoAttribute
 ms.technology: 
   - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
+ms.author: "dotnet-bot"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.ThemeInfoAttribute.#ctor(System.Windows.ResourceDictionaryLocation,System.Windows.ResourceDictionaryLocation)
 ms.technology: 
   - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---
 
@@ -19,8 +19,8 @@ manager: "wpickett"
 uid: System.Windows.ThemeInfoAttribute.GenericDictionaryLocation
 ms.technology: 
   - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---
 
@@ -28,6 +28,6 @@ manager: "wpickett"
 uid: System.Windows.ThemeInfoAttribute.ThemeDictionaryLocation
 ms.technology: 
   - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
+ms.author: "dotnet-bot"
+manager: "wpickett"
 ---

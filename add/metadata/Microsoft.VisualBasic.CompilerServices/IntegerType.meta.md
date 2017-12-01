@@ -1,20 +1,20 @@
 ---
 uid: Microsoft.VisualBasic.CompilerServices.IntegerType
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.CompilerServices.IntegerType.FromString(System.String)
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.CompilerServices.IntegerType.FromObject(System.Object)
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---

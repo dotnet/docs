@@ -101,7 +101,7 @@ manager: "wpickett"
 uid: System.IO.StreamWriter.Dispose
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

@@ -36,7 +36,7 @@ manager: "wpickett"
 uid: System.Xml.Xsl.Runtime.XmlQueryNodeSequence.System#Collections#Generic#IList{System#Xml#XPath#XPathItem}#Insert
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -106,7 +106,7 @@ manager: "wpickett"
 uid: System.Xml.Xsl.Runtime.XmlQueryNodeSequence.System#Collections#Generic#ICollection{System#Xml#XPath#XPathItem}#Add
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -122,14 +122,14 @@ manager: "wpickett"
 uid: System.Xml.Xsl.Runtime.XmlQueryNodeSequence.System#Collections#Generic#ICollection{System#Xml#XPath#XPathItem}#Remove
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Xsl.Runtime.XmlQueryNodeSequence.System#Collections#Generic#IList{System#Xml#XPath#XPathItem}#RemoveAt
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

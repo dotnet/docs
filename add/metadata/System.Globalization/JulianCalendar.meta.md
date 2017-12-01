@@ -20,7 +20,7 @@ manager: "wpickett"
 uid: System.Globalization.JulianCalendar.IsLeapMonth
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -54,7 +54,7 @@ manager: "wpickett"
 uid: System.Globalization.JulianCalendar.IsLeapDay
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -88,7 +88,7 @@ manager: "wpickett"
 uid: System.Globalization.JulianCalendar.ToDateTime
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -104,7 +104,7 @@ manager: "wpickett"
 uid: System.Globalization.JulianCalendar.GetLeapMonth
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -129,7 +129,7 @@ manager: "wpickett"
 uid: System.Globalization.JulianCalendar.GetDaysInMonth
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -190,7 +190,7 @@ manager: "wpickett"
 uid: System.Globalization.JulianCalendar.GetDaysInYear
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -206,7 +206,7 @@ manager: "wpickett"
 uid: System.Globalization.JulianCalendar.GetMonthsInYear
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -249,7 +249,7 @@ manager: "wpickett"
 uid: System.Globalization.JulianCalendar.IsLeapYear
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

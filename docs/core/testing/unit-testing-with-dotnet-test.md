@@ -14,9 +14,9 @@ This tutorial takes you through an interactive experience building a sample solu
 ## Creating the source project
 
 Open a shell window. Create a directory called *unit-testing-using-dotnet-test* to hold the solution.
-Inside this new directory, run [`dotnet new sln`](../tools/dotnet-new.md) to create a new solution. This
+Inside this new directory, run [`dotnet new sln`](../tools/dotnet-new.md) to create a new solution. Having a solution 
 makes it easier to manage both the class library and the unit test project.
-Inside the solution directory, create a *PrimeService* directory. The directory and file structure thus far is shown below:
+Inside the solution directory, create a *PrimeService* directory. The directory and file structure thus far should be as follows:
 
 ```
 /unit-testing-using-dotnet-test
@@ -24,7 +24,7 @@ Inside the solution directory, create a *PrimeService* directory. The directory 
     /PrimeService
 ```
 
-Make *PrimeService* the current directory and run [`dotnet new classlib`](../tools/dotnet-new.md) to create the source project. Rename *Class1.cs* to *PrimeService.cs*. To use test-driven development (TDD), you'll create a failing implementation of the `PrimeService` class:
+Make *PrimeService* the current directory and run [`dotnet new classlib`](../tools/dotnet-new.md) to create the source project. Rename *Class1.cs* to *PrimeService.cs*. To use test-driven development (TDD), you first create a failing implementation of the `PrimeService` class:
 
 ```csharp
 using System;
@@ -33,15 +33,15 @@ namespace Prime.Services
 {
     public class PrimeService
     {
-        public bool IsPrime(int candidate) 
+        public bool IsPrime(int candidate)
         {
             throw new NotImplementedException("Please create a test first");
-        } 
+        }
     }
 }
 ```
 
-Change the directory back to the *unit-testing-using-dotnet-test* directory. 
+Change the directory back to the *unit-testing-using-dotnet-test* directory.
 
 Run the [dotnet sln](../tools/dotnet-sln.md) command to add the class library project to the solution:
 
@@ -62,7 +62,7 @@ Next, create the *PrimeService.Tests* directory. The following outline shows the
     /PrimeService.Tests
 ```
 
-Make the *PrimeService.Tests* directory the current directory and create a new project using [`dotnet new xunit`](../tools/dotnet-new.md). This creates a test project that uses xUnit as the test library. The generated template configures the test runner in the *PrimeServiceTests.csproj* file similar to the following code:
+Make the *PrimeService.Tests* directory the current directory and create a new project using [`dotnet new xunit`](../tools/dotnet-new.md). This command creates a test project that uses xUnit as the test library. The generated template configures the test runner in the *PrimeServiceTests.csproj* file similar to the following code:
 
 ```xml
 <ItemGroup>
@@ -93,7 +93,7 @@ The following shows the final solution layout:
         PrimeServiceTests.csproj
 ```
 
-Run the [dotnet sln](../tools/dotnet-sln.md) command in the *unit-testing-using-dotnet-test* directory to add the test project to the solution:
+To add the test project to the solution, run the [dotnet sln](../tools/dotnet-sln.md) command in the *unit-testing-using-dotnet-test* directory:
 
 ```
 dotnet sln add .\PrimeService.Tests\PrimeService.Tests.csproj
@@ -149,14 +149,16 @@ In the *PrimeService.Tests* directory, run `dotnet test` again. The `dotnet test
 ## Adding more features
 
 Now that you've made one test pass, it's time to write more. There are a few other simple cases for prime numbers: 0, -1. You could add those cases as new tests with the `[Fact]` attribute, but that quickly becomes tedious. There are other xUnit attributes that enable you to write a suite of similar tests:
-- `[Theory]` represents a suite of tests that execute the same code but have different input arguments. 
+
+- `[Theory]` represents a suite of tests that execute the same code but have different input arguments.
+
 - `[InlineData]` attribute specifies values for those inputs.
 
 Instead of creating new tests, apply these two attributes, `[Theory]` and `[InlineData]`, to create a single theory in the *PrimeService_IsPrimeShould.cs* file. The theory is a method that tests several values less than two, which is the lowest prime number:
 
 [!code-csharp[Sample_TestCode](../../../samples/core/getting-started/unit-testing-using-dotnet-test/PrimeService.Tests/PrimeService_IsPrimeShould.cs?name=Sample_TestCode)]
 
-Run `dotnet test`, and two of these tests fail. To make all of the tests pass, change the `if` clause at the beginning of the method:
+Run `dotnet test` again, and two of these tests should fail. To make all of the tests pass, change the `if` clause at the beginning of the `IsPrime` method in the *PrimeService.cs* file:
 
 ```csharp
 if (candidate < 2)
@@ -166,4 +168,4 @@ Continue to iterate by adding more tests, more theories, and more code in the ma
 
 ### Additional resources
 
-[Testing controller logic in ASP.NET Core](https://docs.microsoft.com/aspnet/core/mvc/controllers/testing)
+[Testing controller logic in ASP.NET Core](/aspnet/core/mvc/controllers/testing)

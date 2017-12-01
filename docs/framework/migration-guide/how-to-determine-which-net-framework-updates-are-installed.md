@@ -1,7 +1,7 @@
 ---
 title: "How to: Determine which .NET Framework security updates and hotfixes are installed"
 description: "Learn how to determine which .NET Framework security updates and hotfixes are installed on a computer."
-ms.date: "11/21/2017"
+ms.date: "11/27/2017"
 ms.prod: ".net-framework"
 ms.technology: 
   - "dotnet-clr"
@@ -71,39 +71,38 @@ Microsoft .NET Framework 4 Extended
 The following example shows how to determine the .NET Framework security updates and hotfixes that are installed on a computer using PowerShell:
 
 ```powershell
- Get-ChildItem "HKLM:SOFTWARE\Wow6432Node\Microsoft\Updates\*" -Recurse | Where-Object {$_.name -like
+$DotNetVersions = Get-ChildItem HKLM:\SOFTWARE\WOW6432Node\Microsoft\Updates | Where-Object {$_.name -like
  "*.NET Framework*"}
+
+ForEach($Version in $DotNetVersions){
+    
+   $Updates = Get-ChildItem $Version.PSPath
+    $Version.PSChildName
+    ForEach ($Update in $Updates){
+       $Update.PSChildName
+       }
+}
 ```
 
 The example produces an output that's similar to the following one:
 
 ```console
-    Hive: HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Updates\Microsoft .NET Framework 4 Client Profile
-
-
-Name                           Property
-----                           --------
-KB2468871                      ThisVersionInstalled : Y
-KB2468871v2                    ThisVersionInstalled : Y
-KB2478063                      ThisVersionInstalled : Y
-KB2533523                      ThisVersionInstalled : Y
-KB2544514                      ThisVersionInstalled : Y
-KB2600211                      ThisVersionInstalled : Y
-KB2600217                      ThisVersionInstalled : Y
-
-
-    Hive: HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Updates\Microsoft .NET Framework 4 Extended
-
-
-Name                           Property
-----                           --------
-KB2468871                      ThisVersionInstalled : Y
-KB2468871v2                    ThisVersionInstalled : Y
-KB2478063                      ThisVersionInstalled : Y
-KB2533523                      ThisVersionInstalled : Y
-KB2544514                      ThisVersionInstalled : Y
-KB2600211                      ThisVersionInstalled : Y
-KB2600217                      ThisVersionInstalled : Y
+Microsoft .NET Framework 4 Client Profile
+KB2468871
+KB2468871v2
+KB2478063
+KB2533523
+KB2544514
+KB2600211
+KB2600217
+Microsoft .NET Framework 4 Extended
+KB2468871
+KB2468871v2
+KB2478063
+KB2533523
+KB2544514
+KB2600211
+KB2600217
 ```
 
 ## See also

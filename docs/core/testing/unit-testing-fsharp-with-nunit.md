@@ -105,10 +105,10 @@ type TestClass () =
 
     [<Test>]
     member this.TestMethodPassing() =
-        Assert.IsTrue(true)
+        Assert.True(true)
 
     [<Test>]
-     member this.FailEveryTime() = Assert.IsTrue(false)
+     member this.FailEveryTime() = Assert.True(false)
 ```
 
 The `[<TestFixture>]` attribute denotes a class that contains tests. The `[<Test>]` attribute denotes a test method that is run by the test runner. From the *unit-testing-with-fsharp* directory, execute [`dotnet test`](../tools/dotnet-test.md) to build the tests and the class library and then run the tests. The NUnit test runner contains the program entry point to run your tests. `dotnet test` starts the test runner using the unit test project you've created.
@@ -122,7 +122,7 @@ The simplest test we can write is to call `sumOfSquares` with all even numbers, 
 member this.TestEvenSequence() =
     let expected = Seq.empty<int> |> Seq.toList
     let actual = MyMath.sumOfSquares [2; 4; 6; 8; 10]
-    Assert.AreEqual(expected, actual)
+    Assert.That(actual, Is.EqualTo(expected))
 ```
 
 Notice that the `expected` sequence has been converted to a list. The NUnit framework relies on many standard .NET types. That dependency means that your public interface and expected results support <xref:System.Collections.ICollection> rather than <xref:System.Collections.IEnumerable>.
@@ -145,7 +145,7 @@ Now that you've made one test pass, it's time to write more. The next simple cas
 member public this.SumOnesAndEvens() =
     let expected = [1; 1; 1; 1]
     let actual = MyMath.sumOfSquares [2; 1; 4; 1; 6; 1; 8; 1; 10]
-    Assert.AreEqual(expected, actual)
+    Assert.That(actual, Is.EqualTo(expected))
 ```
 
 Executing `dotnet test` fails the new test. You must update the `sumOfSquares` method to handle this new test. You must filter all the even numbers out of the sequence to make this test pass. You can do that by writing a small filter function and using `Seq.filter`:
@@ -167,7 +167,7 @@ There's one more step to go: square each of the odd numbers. Start by writing a 
 member public this.TestSquaresOfOdds() =
     let expected = [1; 9; 25; 49; 81]
     let actual = MyMath.sumOfSquares [1; 2; 3; 4; 5; 6; 7; 8; 9; 10]
-    Assert.AreEqual(expected, actual)
+    Assert.That(actual, Is.EqualTo(expected))
 ```
 
 You can fix the test by piping the filtered sequence through a map operation to compute the square of each odd number:

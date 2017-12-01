@@ -1,17 +1,26 @@
-// <Snippet1>
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
-class DateTimeTester 
+namespace SystemDateTimeReference
 {
-      static bool RoughlyEquals(DateTime time, DateTime timeWithWindow, int windowInSeconds, int frequencyInSeconds)
-      {
-         long delta = (long)((TimeSpan)(timeWithWindow - time)).TotalSeconds % frequencyInSeconds;
-         delta = delta > windowInSeconds ? frequencyInSeconds - delta : delta;
-            return Math.Abs(delta) < windowInSeconds;
-      }
+    public static class DateTimeComparisons
+    {
+        public static void Snippets()
+        {
+            TestRoughlyEquals();
+        }
 
-	public static void Main() 
-	{
+        // <Snippet1>
+        public static bool RoughlyEquals(DateTime time, DateTime timeWithWindow, int windowInSeconds, int frequencyInSeconds)
+        {
+            long delta = (long)((TimeSpan)(timeWithWindow - time)).TotalSeconds % frequencyInSeconds;
+            delta = delta > windowInSeconds ? frequencyInSeconds - delta : delta;
+            return Math.Abs(delta) < windowInSeconds;
+        }
+
+        public static void TestRoughlyEquals()
+        {
             int window = 10;
             int freq = 60 * 60 * 2; // 2 hours;
 
@@ -37,17 +46,17 @@ class DateTimeTester
             Console.WriteLine($"d1 ({d1}) ~= d7 ({d7}): {RoughlyEquals(d1, d7, window, freq)}");
             Console.WriteLine($"d1 ({d1}) ~= d8 ({d8}): {RoughlyEquals(d1, d8, window, freq)}");
             Console.WriteLine($"d1 ({d1}) ~= d9 ({d9}): {RoughlyEquals(d1, d9, window, freq)}");
-	}
+        }
+        // The example displays output similar to the following:
+        //    d1 (1/28/2010 9:01:26 PM) ~= d1 (1/28/2010 9:01:26 PM): True
+        //    d1 (1/28/2010 9:01:26 PM) ~= d2 (1/28/2010 9:01:46 PM): False
+        //    d1 (1/28/2010 9:01:26 PM) ~= d3 (1/28/2010 9:01:06 PM): False
+        //    d1 (1/28/2010 9:01:26 PM) ~= d4 (1/28/2010 9:01:31 PM): True
+        //    d1 (1/28/2010 9:01:26 PM) ~= d5 (1/28/2010 9:01:21 PM): True
+        //    d1 (1/28/2010 9:01:26 PM) ~= d6 (1/28/2010 11:01:46 PM): False
+        //    d1 (1/28/2010 9:01:26 PM) ~= d7 (1/28/2010 11:01:06 PM): False
+        //    d1 (1/28/2010 9:01:26 PM) ~= d8 (1/28/2010 11:01:31 PM): True
+        //    d1 (1/28/2010 9:01:26 PM) ~= d9 (1/28/2010 11:01:21 PM): True
+        // </Snippet1>
+    }
 }
-// The example displays output similar to the following:
-//    d1 (1/28/2010 9:01:26 PM) ~= d1 (1/28/2010 9:01:26 PM): True
-//    d1 (1/28/2010 9:01:26 PM) ~= d2 (1/28/2010 9:01:46 PM): False
-//    d1 (1/28/2010 9:01:26 PM) ~= d3 (1/28/2010 9:01:06 PM): False
-//    d1 (1/28/2010 9:01:26 PM) ~= d4 (1/28/2010 9:01:31 PM): True
-//    d1 (1/28/2010 9:01:26 PM) ~= d5 (1/28/2010 9:01:21 PM): True
-//    d1 (1/28/2010 9:01:26 PM) ~= d6 (1/28/2010 11:01:46 PM): False
-//    d1 (1/28/2010 9:01:26 PM) ~= d7 (1/28/2010 11:01:06 PM): False
-//    d1 (1/28/2010 9:01:26 PM) ~= d8 (1/28/2010 11:01:31 PM): True
-//    d1 (1/28/2010 9:01:26 PM) ~= d9 (1/28/2010 11:01:21 PM): True
-// </Snippet1>
-

@@ -314,15 +314,15 @@ By using the `DateWithTimeZone` structure , you can then persist date and time a
 
 The following example then calls the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize%2A?displayProperty=nameWithType> method to deserialize it.  
   
-[!code-csharp-interactive[System.DateTime.Persistence#7](~/samples/snippets/csharp/System.DateTime/Persistence.cs#8)]
-[!code-vb[System.DateTime.Persistence#7](~/samples/snippets/visualbasic/System.DateTime/Persistence.vb#8)]  
+[!code-csharp-interactive[System.DateTime.Persistence#8](~/samples/snippets/csharp/System.DateTime/Persistence.cs#8)]
+[!code-vb[System.DateTime.Persistence#8](~/samples/snippets/visualbasic/System.DateTime/Persistence.vb#8)]  
 
 ### Comparing for equality within tolerance
 
 The following example demonstrates how to compare roughly equivalent <xref:System.DateTime> values, accepting a small margin of difference when declaring them equal.  
   
-[!code-csharp[DateTime Equivalency Example#1](~/samples/snippets/csharp/VS_Snippets_CLR/DateTime Equivalency Example/CS/datetimesample.cs#1)]
-[!code-vb[DateTime Equivalency Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/DateTime Equivalency Example/VB/datetimesample.vb#1)]  
+[!code-csharp-interactive[System.DateTime.Comparisons#1](~/samples/snippets/csharp/System.DateTime/DateTimeComparisons.cs#1)]
+[!code-vb[System.DateTime.Comparisons#1](~/samples/snippets/visualbasic/System.DateTime/DateTimeComparisons.vb#1)]  
 
 ## Remarks  
 

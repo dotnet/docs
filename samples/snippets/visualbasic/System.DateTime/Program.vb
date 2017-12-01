@@ -8,5 +8,6 @@ Module Program
         Resolution.Snippets()
         CalendarSamples.Snippets()
         Persistence.Snippets()
+        DateTimeComparisons.Snippets()
     End Sub
 End Module

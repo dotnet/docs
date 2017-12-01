@@ -10,6 +10,7 @@
             Resolution.Snippets();
             CalendarSamples.Snippets();
             Persistence.Snippets();
+            DateTimeComparisons.Snippets();
         }
     }
 }

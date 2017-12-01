@@ -28,7 +28,7 @@ manager: "wpickett"
  [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] also includes a companion serializer, the <xref:System.Runtime.Serialization.NetDataContractSerializer>. The <xref:System.Runtime.Serialization.NetDataContractSerializer> is similar to the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> and <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter> serializers because it also emits [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] type names as part of the serialized data. It is used when the same types are shared on the serializing and the deserializing ends. Both the <xref:System.Runtime.Serialization.DataContractSerializer> and the <xref:System.Runtime.Serialization.NetDataContractSerializer> derive from a common base class, the <xref:System.Runtime.Serialization.XmlObjectSerializer>.  
   
 > [!WARNING]
->  The <xref:System.Runtime.Serialization.DataContractSerializer> serializes strings containing control characters with a hexadecimal value below 20 as XML entities. This may cause a problem with a non-WCF client went sending such data to a WCF service.  
+>  The <xref:System.Runtime.Serialization.DataContractSerializer> serializes strings containing control characters with a hexadecimal value below 20 as XML entities. This may cause a problem with a non-WCF client when sending such data to a WCF service.  
   
 ## Creating a DataContractSerializer Instance  
  Constructing an instance of the <xref:System.Runtime.Serialization.DataContractSerializer> is an important step. After construction, you cannot change any of the settings.  

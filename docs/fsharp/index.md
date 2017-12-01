@@ -1,10 +1,10 @@
 ---
 title: F# Guide
-description: Learn about F#, a functional programming language which runs on .NET.
+description: Learn about F#, a functional programming language that runs on .NET.
 keywords: .NET, .NET Core
 author: jackfoxy
 ms.author: phcart
-ms.date: 06/20/2016
+ms.date: 12/01/2016
 ms.topic: article
 ms.prod: .net
 ms.technology: devlang-fsharp
@@ -22,9 +22,9 @@ If you're new to F#, begin with the [Tour of F#](tour.md) to get an overview of 
 
 ## If You're Experienced with F# #
 
-If you know your way around F#, or want to learn more about a specific language construct, you'll find a lot of use in the [Language Reference](language-reference/index.md).  It is a thorough guide of all F# language capabilities.
+If you know your way around F#, or want to learn more about a specific language construct, see the [Language Reference](language-reference/index.md).  It's a thorough guide of all F# language capabilities.
 
-You'll also find a lot of use in the [F# Core Library Reference](https://msdn.microsoft.com/visualfsharpdocs/conceptual/fsharp-core-library-reference) when programming in F#.
+Additionally, the [F# Core Library Reference](https://msdn.microsoft.com/visualfsharpdocs/conceptual/fsharp-core-library-reference) is a great resource for learning about FSharp.Core, the core library which is a part of F#.
 
 ## The F# Software Foundation
 

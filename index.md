@@ -603,7 +603,7 @@ description: Learn how to use .NET to create a variety of applications on any pl
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="http://docs.cryengine.com/display/CEPROG/CE%23+Programming">
+                                                <a href="http://docs.cryengine.com/display/CEPROG/C%23+Programming">
                                                 <h3>CRYENGINE</h3>
                                                 <p>Learn how to use CRYENGINE to build games with C#.</p>
                                                 </a>

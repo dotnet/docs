@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 0fd35dff-e1ff-4902-a89b-093f0e34466f
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.ComIntegration.ComIntegrationMexMonikerMetadataExchangeComplete
 System.ServiceModel.ComIntegration.ComIntegrationMexMonikerMetadataExchangeComplete  

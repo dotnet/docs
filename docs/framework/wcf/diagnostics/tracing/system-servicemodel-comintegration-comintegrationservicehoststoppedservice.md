@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: c388f68d-2c6d-4d68-bc2b-0d63b99fccf1
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.ComIntegration.ComIntegrationServiceHostStoppedService
 System.ServiceModel.ComIntegration.ComIntegrationServiceHostStoppedService  

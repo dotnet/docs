@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ef1c72d7-35c4-4886-80bb-b0a368da77e2
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.ConfiguredExtensionTypeNotFound
 System.ServiceModel.ConfiguredExtensionTypeNotFound  

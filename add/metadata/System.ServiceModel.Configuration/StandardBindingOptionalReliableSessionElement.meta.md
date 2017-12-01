@@ -2,18 +2,18 @@
 uid: System.ServiceModel.Configuration.StandardBindingOptionalReliableSessionElement
 ms.technology: 
   - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.StandardBindingOptionalReliableSessionElement.InitializeFrom(System.ServiceModel.OptionalReliableSession)
 ms.technology: 
   - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 
 ---
@@ -27,9 +27,9 @@ manager: "ghogen"
 uid: System.ServiceModel.Configuration.StandardBindingOptionalReliableSessionElement.#ctor
 ms.technology: 
   - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 
 ---
@@ -43,16 +43,16 @@ manager: "ghogen"
 uid: System.ServiceModel.Configuration.StandardBindingOptionalReliableSessionElement.ApplyConfiguration(System.ServiceModel.OptionalReliableSession)
 ms.technology: 
   - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.StandardBindingOptionalReliableSessionElement.Enabled
 ms.technology: 
   - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---

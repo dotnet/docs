@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 6fa7fa65-2c6e-4eab-b8cf-7690112c0be5
 caps.latest.revision: 6
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;connectionPoolSettings&gt;
 Specifies additional connection pool settings for a Named Pipe binding.  

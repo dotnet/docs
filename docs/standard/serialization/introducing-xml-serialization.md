@@ -19,9 +19,9 @@ helpviewer_keywords:
   - "XML Schema, serializing"
 ms.assetid: 8c63200d-db63-4a03-a93d-21641623df62
 caps.latest.revision: 8
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Introducing XML Serialization
 Serialization is the process of converting an object into a form that can be readily transported. For example, you can serialize an object and transport it over the Internet using HTTP between a client and a server. On the other end, deserialization reconstructs the object from the stream.  

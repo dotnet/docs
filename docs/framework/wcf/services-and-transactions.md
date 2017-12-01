@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "service contracts [WCF], designing services and transactions"
 ms.assetid: 864813ff-2709-4376-912d-f5c8d318c460
 caps.latest.revision: 10
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Services and Transactions
 [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] applications can initiate a transaction from within a client and coordinate the transaction within the service operation. Clients can initiate a transaction and invoke several service operations and ensure that the service operations are either committed or rolled back as a single unit.  

@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: e7a1aca3-7585-4e83-be9e-c2010424647e
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.PortSharing.TransportListenerSessionsReceived
 System.ServiceModel.PortSharing.TransportListenerSessionsReceived  

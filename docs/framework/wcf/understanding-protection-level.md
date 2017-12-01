@@ -17,9 +17,9 @@ helpviewer_keywords:
   - "ProtectionLevel property"
 ms.assetid: 0c034608-a1ac-4007-8287-b1382eaa8bf2
 caps.latest.revision: 22
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Understanding Protection Level
 The `ProtectionLevel` property is found on many different classes, such as the <xref:System.ServiceModel.ServiceContractAttribute> and the <xref:System.ServiceModel.OperationContractAttribute> classes. The property controls how a part (or whole) of a message is protected. This topic explains the [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] feature and how it works.  

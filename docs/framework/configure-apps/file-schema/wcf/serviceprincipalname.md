@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 3f3b85d3-20f2-4cd8-8a6a-ee18befbd165
 caps.latest.revision: 6
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;servicePrincipalName&gt;
 Specifies the identity of a service by its Service Principal Name (SPN).  

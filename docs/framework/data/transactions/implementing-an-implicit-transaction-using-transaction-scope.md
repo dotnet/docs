@@ -12,9 +12,9 @@ dev_langs:
  - "vb"
 ms.assetid: 49d1706a-1e0c-4c85-9704-75c908372eb9
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Implementing an Implicit Transaction using Transaction Scope
 The <xref:System.Transactions.TransactionScope> class provides a simple way to mark a block of code as participating in a transaction, without requiring you to interact with the transaction itself. A transaction scope can select and manage the ambient transaction automatically. Due to its ease of use and efficiency, it is recommended that you use the <xref:System.Transactions.TransactionScope> class when developing a transaction application.  

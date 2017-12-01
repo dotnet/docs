@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 31e1b8c2-7f74-458a-b2e2-fddc5b10eac1
 caps.latest.revision: 3
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Built-in Activities
 This section contains samples that demonstrate built-in [!INCLUDE[wf](../../../../includes/wf-md.md)] activities.  

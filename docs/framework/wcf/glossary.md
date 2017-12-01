@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "WCF [WCF], glossary"
 ms.assetid: 39cd36f4-8a28-4d0b-a830-98d55c9d30ae
 caps.latest.revision: 243
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Windows Communication Foundation Glossary for .NET Framework 4.5
 The following terms are defined for Windows Communication Foundation documentation.  

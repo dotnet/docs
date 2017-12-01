@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 4d54c015-226e-40c6-8c54-1773b342a9b6
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.Activation.MessageQueueDuplicatedSocket
 System.ServiceModel.Activation.MessageQueueDuplicatedSocket  

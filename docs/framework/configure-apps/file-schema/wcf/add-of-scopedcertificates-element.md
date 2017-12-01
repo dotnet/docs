@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: e21c1ef8-d6d6-4bca-ac5a-6fbf4bd77412
 caps.latest.revision: 8
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;add&gt; of &lt;scopedCertificates&gt; Element
 Adds an X.509 certificate to the collection of scoped certificates.  

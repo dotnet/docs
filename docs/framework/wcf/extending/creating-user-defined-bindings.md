@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "user-defined bindings [WCF]"
 ms.assetid: c4960675-d701-4bc9-b400-36a752fdd08b
 caps.latest.revision: 19
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Creating User-Defined Bindings
 There are several ways to create bindings not provided by the system:  

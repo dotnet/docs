@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 1d2690ae-0afb-4cb1-ab62-a1a0ceba8521
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.ComIntegration.ComIntegrationInvokingMethodContextTransaction
 System.ServiceModel.ComIntegration.ComIntegrationInvokingMethodContextTransaction  

@@ -1,20 +1,20 @@
 ---
 uid: Microsoft.Build.Tasks.Xaml.XamlBuildTypeInspectionExtensionContext
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.XamlBuildTypeInspectionExtensionContext.MarkupItemsByTypeName
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.XamlBuildTypeInspectionExtensionContext.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---

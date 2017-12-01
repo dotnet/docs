@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "extending [WF]"
 ms.assetid: d6861f28-9c8c-4225-872d-9a80e2e59034
 caps.latest.revision: 10
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Extending Windows Workflow Foundation
 The following section describes how to extend [!INCLUDE[wf](../../../includes/wf-md.md)] with custom activities and designers in rehosted environments outside [!INCLUDE[vs2010](../../../includes/vs2010-md.md)].  

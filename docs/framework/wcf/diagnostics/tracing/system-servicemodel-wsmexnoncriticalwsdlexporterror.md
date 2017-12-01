@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: bb0e7ab9-2918-49d8-8aee-bb186f457658
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.WsmexNonCriticalWsdlExportError
 System.ServiceModel.WsmexNonCriticalWsdlExportError  

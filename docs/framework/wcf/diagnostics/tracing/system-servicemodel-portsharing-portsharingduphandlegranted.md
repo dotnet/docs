@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: dde8a393-f31a-4e6d-b483-001b389e2df9
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.PortSharing.PortSharingDupHandleGranted
 System.ServiceModel.PortSharing.PortSharingDupHandleGranted  

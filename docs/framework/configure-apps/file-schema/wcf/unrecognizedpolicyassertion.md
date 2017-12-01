@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 043c3c8f-f263-4ac7-a1af-945d03413f0b
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;unrecognizedPolicyAssertion&gt;
 Represents a binding element that specifies policy assertion. This element has no attribute and is present as an empty switch.  

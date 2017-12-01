@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: a7cc2018-2b79-44f1-825a-bb7ca08690a3
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;states&gt; of &lt;activityStateQuery&gt;
 A collection of configuration elements that contain the states of the subscribed activity for which a tracking record should be emitted.  

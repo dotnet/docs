@@ -2,8 +2,8 @@
 uid: System.Windows.Forms.Design.FileNameEditor
 ms.technology: 
   - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---
 
@@ -11,23 +11,23 @@ manager: "wpickett"
 uid: System.Windows.Forms.Design.FileNameEditor.GetEditStyle
 ms.technology: 
   - "dotnet-winforms"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.FileNameEditor.InitializeDialog(System.Windows.Forms.OpenFileDialog)
 ms.technology: 
   - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
+ms.author: "dotnet-bot"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.FileNameEditor.#ctor
 ms.technology: 
   - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---
 
@@ -35,8 +35,8 @@ manager: "wpickett"
 uid: System.Windows.Forms.Design.FileNameEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)
 ms.technology: 
   - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---
 
@@ -44,8 +44,8 @@ manager: "wpickett"
 uid: System.Windows.Forms.Design.FileNameEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)
 ms.technology: 
   - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---
 
@@ -53,5 +53,5 @@ manager: "wpickett"
 uid: System.Windows.Forms.Design.FileNameEditor.EditValue
 ms.technology: 
   - "dotnet-winforms"
-manager: "ghogen"
+manager: "wpickett"
 ---

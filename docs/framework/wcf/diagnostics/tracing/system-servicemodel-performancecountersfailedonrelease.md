@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ec1a7bb1-c787-45ec-8292-73d104f3d7bb
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.PerformanceCountersFailedOnRelease
 System.ServiceModel.PerformanceCountersFailedOnRelease  

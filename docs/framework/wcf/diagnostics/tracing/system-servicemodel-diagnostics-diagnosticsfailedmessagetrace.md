@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 8c1de25c-7e1e-4986-9c32-fc47a604f373
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.Diagnostics.DiagnosticsFailedMessageTrace
 System.ServiceModel.Diagnostics.DiagnosticsFailedMessageTrace  

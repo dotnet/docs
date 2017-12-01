@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "service contracts [WCF], defining"
 ms.assetid: 67bf05b7-1d08-4911-83b7-a45d0b036fc3
 caps.latest.revision: 58
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # How to: Define a Windows Communication Foundation Service Contract
 This is the first of six tasks required to create a basic [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] application. For an overview of all six of the tasks, see the [Getting Started Tutorial](../../../docs/framework/wcf/getting-started-tutorial.md) topic.  

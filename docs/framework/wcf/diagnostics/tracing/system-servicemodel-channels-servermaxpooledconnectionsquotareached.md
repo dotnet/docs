@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 0c189f09-887d-459e-b7ab-529110437254
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.Channels.ServerMaxPooledConnectionsQuotaReached
 System.ServiceModel.Channels.ServerMaxPooledConnectionsQuotaReached  

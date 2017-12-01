@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 067f27ba-4d9e-4efb-8fa7-c23d2654d967
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.Diagnostics.FilterNotMatchedNodeQuotaExceeded
 System.ServiceModel.Diagnostics.FilterNotMatchedNodeQuotaExceeded  

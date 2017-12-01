@@ -15,9 +15,9 @@ helpviewer_keywords:
   - "WCF [WCF], endpoints"
 ms.assetid: 9ddc46ee-1883-4291-9926-28848c57e858
 caps.latest.revision: 14
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Endpoints: Addresses, Bindings, and Contracts
 All communication with a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service occurs through the *endpoints* of the service. Endpoints provide clients access to the functionality offered by a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service.  

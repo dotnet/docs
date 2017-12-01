@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 2f9638ec-620c-477b-a6fc-2228aea1f875
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.PortSharing.SharedManagerServiceEndpointNotExist
 System.ServiceModel.PortSharing.SharedManagerServiceEndpointNotExist  

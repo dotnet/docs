@@ -14,9 +14,9 @@ manager: "ghogen"
 
 ---
 uid: System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#Channels#IOutputChannel#Via
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 
 ---
@@ -28,9 +28,9 @@ manager: "ghogen"
 
 ---
 uid: System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#Channels#IRequestChannel#Via
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 
 ---
@@ -42,16 +42,16 @@ manager: "ghogen"
 
 ---
 uid: System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#IClientChannel#Via
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#IContextChannel#SessionId
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 
 ---
@@ -91,9 +91,9 @@ manager: "ghogen"
 
 ---
 uid: System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#IContextChannel#OperationTimeout
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 
 ---
@@ -112,9 +112,9 @@ manager: "ghogen"
 
 ---
 uid: System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#IContextChannel#OutputSession
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 
 ---
@@ -133,9 +133,9 @@ manager: "ghogen"
 
 ---
 uid: System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#IContextChannel#RemoteAddress
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 
 ---
@@ -175,16 +175,16 @@ manager: "ghogen"
 
 ---
 uid: System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#ICommunicationObject#State
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#IClientChannel#AllowInitializationUI
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 
 ---
@@ -238,16 +238,16 @@ manager: "ghogen"
 
 ---
 uid: System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#IContextChannel#InputSession
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#IExtensibleObject{System#ServiceModel#IContextChannel}#Extensions
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 
 ---
@@ -273,9 +273,9 @@ manager: "ghogen"
 
 ---
 uid: System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#IContextChannel#LocalAddress
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 
 ---
@@ -287,9 +287,9 @@ manager: "ghogen"
 
 ---
 uid: System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#IContextChannel#AllowOutputBatching
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 
 ---
@@ -329,9 +329,9 @@ manager: "ghogen"
 
 ---
 uid: System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#Channels#IOutputChannel#RemoteAddress
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 
 ---
@@ -350,14 +350,14 @@ manager: "ghogen"
 
 ---
 uid: System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#IClientChannel#DidInteractiveInitialization
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#Channels#IRequestChannel#RemoteAddress
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---

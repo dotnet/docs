@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 7fd7a35d-3ade-44c2-b40e-2236c3ff18c5
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.PortSharing.PortSharingDuplicatedSocket
 System.ServiceModel.PortSharing.PortSharingDuplicatedSocket  

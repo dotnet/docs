@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 4a55eea2-1826-4026-b911-b7cc9e9c8bfe
 caps.latest.revision: 16
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;authentication&gt; of &lt;clientCertificate&gt; Element
 Specifies authentication behaviors for client certificates used by a service.  

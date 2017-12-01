@@ -15,9 +15,9 @@ helpviewer_keywords:
   - "architecture [WCF]"
 ms.assetid: a3bcb0a1-56ea-4ba6-9736-d260d90dade5
 caps.latest.revision: 7
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Windows Communication Foundation Architecture
 The following graphic illustrates the major layers of the [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] architecture.  

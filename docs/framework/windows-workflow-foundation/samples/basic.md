@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 84a315b6-3f96-4959-8306-49be37936a23
 caps.latest.revision: 9
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Basic
 This section provides samples that demonstrate basic [!INCLUDE[wf](../../../../includes/wf-md.md)] functionality.  

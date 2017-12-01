@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "claims [WCF], denying access to resources"
 ms.assetid: 145ebb41-680e-4256-b14c-1efb4af1e982
 caps.latest.revision: 8
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Claims and Denying Access to Resources
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] supports a claims-based authorization mechanism. As well as allowing access to resources based on the presence of claims, systems often deny access to resources based on the presence of claims. Such systems should examine the <xref:System.IdentityModel.Policy.AuthorizationContext> for claims that result in access being denied before looking for claims that result in access being allowed.  

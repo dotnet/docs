@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 40d7b227-ee00-4b2c-a04c-1cd28b103f94
 caps.latest.revision: 6
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.TxSourceTxScopeRequiredIsAttachedTransaction
 The specified transaction was received for the specified operation from an InstanceContext transaction.  

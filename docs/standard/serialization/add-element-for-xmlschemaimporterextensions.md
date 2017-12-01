@@ -12,9 +12,9 @@ helpviewer_keywords:
   - "<add> element for <xmlSchemaImporterExtensions> element"
 ms.assetid: c828a558-094b-441e-9065-790b87315fa0
 caps.latest.revision: 3
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;add&gt; Element for &lt;xmlSchemaImporterExtensions&gt;
 Adds types used by the <xref:System.Xml.Serialization.XmlSchemaImporter> for mapping XSD types to .NET Framework types. For more information about configuration files, see [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md).  

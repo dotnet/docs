@@ -18,9 +18,9 @@ helpviewer_keywords:
   - "data contracts [WCF], creating for a class or structure"
 ms.assetid: bc464889-3070-4a2f-91d2-e788a0f686a7
 caps.latest.revision: 25
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # How to: Create a Basic Data Contract for a Class or Structure
 This topic shows the basic steps to create a data contract using a class or structure. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] data contracts and how they are used, see [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md).  

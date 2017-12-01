@@ -2,6 +2,6 @@
 uid: System.Printing.PrintServerIndexedProperty
 ms.technology: 
   - "dotnet-standard"
-ms.author: "kempb"
+ms.author: "dotnet-bot"
 manager: "ghogen"
 ---

@@ -7,9 +7,9 @@ manager: "ghogen"
 
 ---
 uid: System.Runtime.Serialization.SerializationInfoEnumerator.System#Collections#IEnumerator#Current
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 
 ---

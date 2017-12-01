@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "message logging [WCF]"
 ms.assetid: 0ff4c857-8f09-4b85-9dc0-89084706e4c9
 caps.latest.revision: 40
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Configuring Message Logging
 This topic describes how you can configure message logging for different scenarios.  

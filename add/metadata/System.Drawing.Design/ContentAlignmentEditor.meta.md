@@ -2,8 +2,8 @@
 uid: System.Drawing.Design.ContentAlignmentEditor
 ms.technology: 
   - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---
 
@@ -18,8 +18,8 @@ manager: "ghogen"
 uid: System.Drawing.Design.ContentAlignmentEditor.#ctor
 ms.technology: 
   - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---
 
@@ -34,8 +34,8 @@ manager: "ghogen"
 uid: System.Drawing.Design.ContentAlignmentEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)
 ms.technology: 
   - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---
 
@@ -43,7 +43,7 @@ manager: "wpickett"
 uid: System.Drawing.Design.ContentAlignmentEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)
 ms.technology: 
   - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---

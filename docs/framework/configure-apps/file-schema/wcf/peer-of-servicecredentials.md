@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: b134e21d-e5b5-458e-9309-626dbf8db4ed
 caps.latest.revision: 7
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;peer&gt; of &lt;serviceCredentials&gt;
 Specifies the current credentials for a peer node.  

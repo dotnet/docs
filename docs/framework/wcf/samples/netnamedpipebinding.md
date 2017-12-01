@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "Net Profile Named Pipe"
 ms.assetid: e78e845f-c325-46e2-927d-81616f97f7d5
 caps.latest.revision: 34
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # NetNamedPipeBinding
 This sample demonstrates the `netNamedPipeBinding` binding, which provides cross-process communication on the same machine. Named pipes do not work across machines. This sample is based on The [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) calculator service.  

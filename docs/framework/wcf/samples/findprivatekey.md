@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "FindPrivateKey"
 ms.assetid: 16b54116-0ceb-4413-af0c-753bb2a785a6
 caps.latest.revision: 14
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # FindPrivateKey
 It can be difficult to find the location and name of the private key file associated with a specific X.509 certificate in the certificate store. The FindPrivateKey.exe tool facilitates this process.  

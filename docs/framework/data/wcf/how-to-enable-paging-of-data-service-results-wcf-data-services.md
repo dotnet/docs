@@ -16,9 +16,9 @@ helpviewer_keywords:
   - "paging output [WCF Data Services]"
 ms.assetid: 9a316cbd-9612-4482-a541-a10bc78b2635
 caps.latest.revision: 2
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # How to: Enable Paging of Data Service Results (WCF Data Services)
 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] enables you to limit the number of entities returned by a data service query. Page limits are defined in the method that is called when the service is initialized and can be set separately for each entity set.  

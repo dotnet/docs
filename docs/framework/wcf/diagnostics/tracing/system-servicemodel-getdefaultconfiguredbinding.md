@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: da8e6c84-38b1-4c3b-b619-baca34f31691
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.GetDefaultConfiguredBinding
 System.ServiceModel.GetDefaultConfiguredBinding  

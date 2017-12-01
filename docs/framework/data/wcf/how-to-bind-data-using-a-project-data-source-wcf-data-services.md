@@ -17,9 +17,9 @@ helpviewer_keywords:
   - "WCF Data Services, data binding"
 ms.assetid: 2477af0a-676f-44f7-b73d-e66208785509
 caps.latest.revision: 2
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # How to: Bind Data Using a Project Data Source (WCF Data Services)
 You can create data sources that are based on the generated data objects in an [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client application. When you add a reference to a data service by using the **Add Service Reference** dialog, a project data source is created along with the generated client data classes. One data source is created for each entity set that the data service exposes. You can create forms that display data from the service by dragging these data source items from the **Data Sources** window onto the designer. These items become controls that are bound to the data source. During execution, this data source is bound to an instance of the <xref:System.Data.Services.Client.DataServiceCollection%601> class, which is filled with objects that are returned by a query to the data service. For more information, see [Binding Data to Controls](../../../../docs/framework/data/wcf/binding-data-to-controls-wcf-data-services.md).  

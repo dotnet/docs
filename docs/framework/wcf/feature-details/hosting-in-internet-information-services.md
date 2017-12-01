@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "hosting services [WCF], IIS"
 ms.assetid: ddae14e8-143c-442d-b660-2046809b2d43
 caps.latest.revision: 13
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Hosting in Internet Information Services
 One option for hosting [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] services is inside of an Internet Information Services (IIS) application. This hosting model is similar to the model used by [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] and ASP.NET Web services (ASMX) Web Services.  

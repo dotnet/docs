@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "queues [WCF], MSMQ integration"
 ms.assetid: b8757992-ffce-40ad-9e9b-3243f6d0fce1
 caps.latest.revision: 28
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Queues Overview
 This section introduces the general and core concepts behind queued communication. Subsequent sections go into details about how the queuing concepts described here are manifested in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  

@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 4aeccaf7-8f23-495c-aa5f-5bd8b5d4a10c
 caps.latest.revision: 8
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;certificate&gt; for &lt;identity&gt;
 Specifies an X.509 certificate used to validate a server to a client.  

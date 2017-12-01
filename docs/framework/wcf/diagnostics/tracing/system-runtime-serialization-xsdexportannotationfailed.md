@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 93407f44-8c09-4c23-97a4-b3e5f409d3d5
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.Runtime.Serialization.XsdExportAnnotationFailed
 System.Runtime.Serialization.XsdExportAnnotationFailed  

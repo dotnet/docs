@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 5b236bdd-38e8-4c42-9ea5-ac7e5575ebf8
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.Channels.MsmqMessageLockedUnderTheTransaction
 System.ServiceModel.Channels.MsmqMessageLockedUnderTheTransaction  

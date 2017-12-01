@@ -16,9 +16,9 @@ helpviewer_keywords:
   - "binary serialization, examples"
 ms.assetid: 22f1b818-7e0d-428a-8680-f17d6ebdd185
 caps.latest.revision: 3
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # How to: chunk serialized data
 

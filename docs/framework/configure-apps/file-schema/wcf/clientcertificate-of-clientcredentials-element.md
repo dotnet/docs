@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 3b3fa000-3434-4142-a178-11903bdd2c5d
 caps.latest.revision: 14
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;clientCertificate&gt; of &lt;clientCredentials&gt; Element
 Defines an X.509 certificate used to authenticate a client to a service.  

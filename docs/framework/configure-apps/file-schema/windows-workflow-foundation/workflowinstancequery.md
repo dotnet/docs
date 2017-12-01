@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 9096e812-626a-409a-9eda-c31a60b84c55
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;workflowInstanceQuery&gt;
 Represents a query that tracks workflow instance life cycle changes such as a started or completed event.  

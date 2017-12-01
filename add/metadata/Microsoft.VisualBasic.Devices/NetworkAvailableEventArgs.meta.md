@@ -1,20 +1,20 @@
 ---
 uid: Microsoft.VisualBasic.Devices.NetworkAvailableEventArgs
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Devices.NetworkAvailableEventArgs.IsNetworkAvailable
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Devices.NetworkAvailableEventArgs.#ctor(System.Boolean)
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---

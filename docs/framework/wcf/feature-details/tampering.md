@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 3bad93be-60bb-4f89-96ab-a1c3dc7c0fad
 caps.latest.revision: 6
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Tampering
 *Tampering* is the act of altering a message, or the delivery of a message, and using the altered message for a purpose other than what it was intended for.  

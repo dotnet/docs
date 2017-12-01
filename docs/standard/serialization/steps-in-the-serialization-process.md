@@ -8,9 +8,9 @@ helpviewer_keywords:
   - "serialization, steps"
 ms.assetid: 4bcbc883-2a91-418f-b968-6c86a25e9737
 caps.latest.revision: 6
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Steps in the serialization process
 When the <xref:System.Runtime.Serialization.Formatter.Serialize*> method is called on a [formatter](xref:System.Runtime.Serialization.Formatter), object serialization proceeds according to the following sequence of rules:

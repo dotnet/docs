@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "access control [WCF]"
 ms.assetid: 9d576122-3f55-4425-9acf-b23d0781e966
 caps.latest.revision: 13
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Access Control Mechanisms
 You can control access in several way with [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)]. This topic briefly discusses the various mechanisms and provides suggestions on when to use each; it is intended to help you select the correct mechanism to use. The access technologies are listed in order of complexity. The simplest is the <xref:System.Security.Permissions.PrincipalPermissionAttribute>; the most complex is the Identity Model.  

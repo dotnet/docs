@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 6cf60298-dccf-4587-b92c-ae3edb75c331
 caps.latest.revision: 6
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # System.ServiceModel.TxSourceTxScopeRequiredIsTransactedTransport
 The specified transaction was received for the specified operation from a transacted transport, such as MSMQ.  

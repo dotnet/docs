@@ -2,8 +2,8 @@
 uid: System.Windows.Automation.Peers.DateTimeAutomationPeer
 ms.technology: 
   - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---
 
@@ -11,8 +11,8 @@ manager: "wpickett"
 uid: System.Windows.Automation.Peers.DateTimeAutomationPeer.System#Windows#Automation#Provider#ITableItemProvider#GetRowHeaderItems
 ms.technology: 
   - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---
 
@@ -20,8 +20,8 @@ manager: "wpickett"
 uid: System.Windows.Automation.Peers.DateTimeAutomationPeer.System#Windows#Automation#Provider#IInvokeProvider#Invoke
 ms.technology: 
   - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---
 
@@ -35,8 +35,8 @@ manager: "markl"
 uid: System.Windows.Automation.Peers.DateTimeAutomationPeer.System#Windows#Automation#Provider#ISelectionItemProvider#RemoveFromSelection
 ms.technology: 
   - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---
 
@@ -44,8 +44,8 @@ manager: "wpickett"
 uid: System.Windows.Automation.Peers.DateTimeAutomationPeer.System#Windows#Automation#Provider#ISelectionItemProvider#Select
 ms.technology: 
   - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---
 
@@ -53,8 +53,8 @@ manager: "wpickett"
 uid: System.Windows.Automation.Peers.DateTimeAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)
 ms.technology: 
   - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---
 
@@ -68,8 +68,8 @@ manager: "markl"
 uid: System.Windows.Automation.Peers.DateTimeAutomationPeer.System#Windows#Automation#Provider#ITableItemProvider#GetColumnHeaderItems
 ms.technology: 
   - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
+ms.author: "dotnet-bot"
+manager: "wpickett"
 ---
 
 ---
@@ -94,8 +94,8 @@ manager: "markl"
 uid: System.Windows.Automation.Peers.DateTimeAutomationPeer.System#Windows#Automation#Provider#IVirtualizedItemProvider#Realize
 ms.technology: 
   - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---
 
@@ -109,8 +109,8 @@ manager: "markl"
 uid: System.Windows.Automation.Peers.DateTimeAutomationPeer.System#Windows#Automation#Provider#ISelectionItemProvider#AddToSelection
 ms.technology: 
   - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---
 

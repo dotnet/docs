@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "msmqIntegrationBinding Element"
 ms.assetid: edf277f3-e3bf-4ed8-9f55-83b5788430a7
 caps.latest.revision: 34
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;msmqIntegrationBinding&gt;
 Defines a binding that provides queuing support by routing messages through MSMQ.  

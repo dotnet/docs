@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 17a0dd77-af54-41db-a9d0-4b17ff42878f
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # &lt;useManagedPresentation&gt;
 A binding element used to communicate with a CardSpace Security Token Service that supports the CardSpace profile of WS-Trust. This element has no attribute and is present as an empty switch.  

@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 4360063e-cc8c-4648-846e-c05a5af51a7a
 caps.latest.revision: 8
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 # Basic Resource Service
 This sample demonstrates how to implement a HTTP-based service using the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] REST Programming model that exposes a collection of customers that supports the retrieve, add, delete and replace operations. This sample consists of 2 components - a self-hosted [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] HTTP service (Service.cs) and a console application (program.cs) that creates the service and makes calls to it.  

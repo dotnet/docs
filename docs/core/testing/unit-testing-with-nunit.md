@@ -154,18 +154,6 @@ Now that you've made one test pass, it's time to write more. There are a few oth
 
 Instead of creating new tests, apply this attribute to create a single data driven test. The data driven test is a method that tests several values less than two, which is the lowest prime number:
 
-```C#
-[TestCase(-1)]
-[TestCase(0)]
-[TestCase(1)]
-public void ReturnFalseGivenValuesLessThan2(int value)
-{
-    var result = _primeService.IsPrime(value);
-
-    Assert.IsFalse(result, $"{value} should not be prime");
-}
-```
-
 [!code-csharp[Sample_TestCode](../../../samples/core/getting-started/unit-testing-using-nunit/PrimeService.Tests/PrimeService_IsPrimeShould.cs?name=Sample_TestCode)]
 
 Run `dotnet test`, and two of these tests fail. To make all of the tests pass, change the `if` clause at the beginning of the method:

@@ -1,13 +1,9 @@
 ---
 title: "Qualifying .NET Types for Interoperation"
-ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "exposing .NET Framework components to COM"
@@ -17,7 +13,6 @@ helpviewer_keywords:
   - "interoperation with unmanaged code, exposing .NET Framework components"
   - "COM interop, exposing COM components"
 ms.assetid: 4b8afb52-fb8d-4e65-b47c-fd82956a3cdd
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
@@ -27,9 +22,9 @@ If you intend to expose types in an assembly to COM applications, consider the r
   
 -   Classes should implement interfaces explicitly.  
   
-     Although COM interop provides a mechanism to automatically generate an interface containing all members of the class and the members of its base class, it is far better to provide explicit interfaces. The automatically generated interface is called the class interface. For guidelines, see [Introducing the Class Interface](http://msdn.microsoft.com/en-us/733c0dd2-12e5-46e6-8de1-39d5b25df024).  
+     Although COM interop provides a mechanism to automatically generate an interface containing all members of the class and the members of its base class, it is far better to provide explicit interfaces. The automatically generated interface is called the class interface. For guidelines, see [Introducing the class interface](com-callable-wrapper.md#introducing-the-class-interface).  
   
-     You can use [!INCLUDE[vbprvblong](../../../includes/vbprvblong-md.md)], C#, and C++ to incorporate interface definitions in your code, instead of having to use Interface Definition Language (IDL) or its equivalent. For syntax details, see your language documentation.  
+     You can use Visual Basic, C#, and C++ to incorporate interface definitions in your code, instead of having to use Interface Definition Language (IDL) or its equivalent. For syntax details, see your language documentation.  
   
 -   Managed types must be public.  
   
